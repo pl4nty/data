@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Campaign materials - IaaS BCDR",
+    "downloadDescription": "This zipped folder includes campaign materials like banner ads, search keywords, print ad templates, email templates etc. for CSP partners interested in launching BCDR offers on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Campaign materials - IaaS BCDR.zip",
+            "url": "https://download.microsoft.com/download/0/7/5/075037fb-ce54-43a9-bfdf-0dd98b56e105/Campaign materials - IaaS BCDR.zip",
+            "size": "20943428",
+            "version": "January 2014",
+            "datePublished": "11/15/2023 4:09:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes campaign materials like banner ads, search keywords, print ad templates, email templates etc. for CSP partners interested in launching BCDR offers on Azure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Campaign materials - IaaS BCDR.zip"
+    ],
+    "detailsSection_file_size": [
+        "20.0 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "all",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50824",
+    "downloadPreload": true
+}

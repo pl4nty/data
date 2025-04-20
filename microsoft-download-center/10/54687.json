@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2016 Client",
+    "downloadDescription": "Host Integration Server 2016 Client installation packages",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HISClient32_With_CU1.msi",
+            "url": "https://download.microsoft.com/download/5/4/9/54909e57-4114-4106-92d6-f90ae83dacc0/HISClient32_With_CU1.msi",
+            "size": "22843392",
+            "version": "10.0.2372.0",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HISClient64.msi",
+            "url": "https://download.microsoft.com/download/5/4/9/54909e57-4114-4106-92d6-f90ae83dacc0/HISClient64.msi",
+            "size": "30158848",
+            "version": "10.0.2372.0",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Host Integration Server 2016 Client enables applications to access IBM mainframe and midrange systems via the SNA Gateway in Host Integration Server 2016.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.2372.0",
+    "detailsSection_file_name": [
+        "HISClient32_With_CU1.msi",
+        "HISClient64.msi"
+    ],
+    "detailsSection_file_size": [
+        "21.8 MB",
+        "28.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This release is supported on the following operating systems:</b>\r\n<ul>\r\n<li>Windows 10</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Virtualization with Azure and Hyper-V</li>\r\n</ul>\r\n\r\n<b>This release requires the following version of the Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.6</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54687",
+    "downloadPreload": true
+}

@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Management Framework 3.0",
+    "downloadDescription": "Includes Windows PowerShell 3.0, WMI, WinRM, Management OData IIS Extension, and Server Manager CIM Provider",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WMF 3 Release Notes.docx",
+            "url": "https://download.microsoft.com/download/e/7/6/e76850b8-da6e-4ff5-8cce-a24fc513fd16/WMF 3 Release Notes.docx",
+            "size": "53973",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:07:41 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB2506143-x64.msu",
+            "url": "https://download.microsoft.com/download/e/7/6/e76850b8-da6e-4ff5-8cce-a24fc513fd16/Windows6.1-KB2506143-x64.msu",
+            "size": "16558542",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:07:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2506146-x64.msu",
+            "url": "https://download.microsoft.com/download/e/7/6/e76850b8-da6e-4ff5-8cce-a24fc513fd16/Windows6.0-KB2506146-x64.msu",
+            "size": "15058915",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:07:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2506143-x86.msu",
+            "url": "https://download.microsoft.com/download/e/7/6/e76850b8-da6e-4ff5-8cce-a24fc513fd16/Windows6.1-KB2506143-x86.msu",
+            "size": "12292093",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:07:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2506146-x86.msu",
+            "url": "https://download.microsoft.com/download/e/7/6/e76850b8-da6e-4ff5-8cce-a24fc513fd16/Windows6.0-KB2506146-x86.msu",
+            "size": "10993379",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:07:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>IMPORTANT:</b>  Review the <b>System Requirements</b> section before you install Windows Management Framework 3.0. Some server applications are not yet compatible with Windows Management Framework 3.0.\r\n<br/><br/>Windows Management Framework 3.0 makes some updated management functionality available for installation on Windows 7 SP1, Windows Server 2008 R2 SP1, and Windows Server 2008 SP2. Windows Management Framework 3.0 contains Windows PowerShell 3.0, Windows Management Instrumentation (WMI), Windows Remote Management (WinRM), Management OData IIS Extension, and the Server Manager CIM Provider.\r\n<br/><br/>\r\n<b>Windows PowerShell 3.0</b><br/>\r\nSome of the new features in Windows PowerShell 3.0 include:\r\n<ul>\r\n<li>\r\nWindows PowerShell Workflow\r\n<br/>\r\nWindows PowerShell Workflow lets IT pros and developers apply the benefits of Windows Workflow Foundation to the automation capabilities of Windows PowerShell. Workflows allow administrators to perform long-running tasks which can be made repeatable, frequent, parallelizable, interruptible, or restartable. When invoked over Windows PowerShell remote management, workflows can manage multiple remote computers or devices at the same time. \r\n</li>\r\n<li>\r\nDisconnected Sessions\r\n<br/>\r\nWindows PowerShell sessions can be disconnected from the remote computer, and reconnected later from the same computer or a different computer without losing state or causing running commands to fail.\r\n</li>\r\n<li>\r\nRobust Session Connectivity \r\n<br/>\r\nRemote sessions are resilient to network failures and attempt to reconnect for several minutes. If connectivity cannot be reestablished, the session automatically disconnects, so that it can be reconnected after network connectivity is restored.\r\n</li>\r\n<li>\r\nScheduled Jobs \r\n<br/>\r\nWindows PowerShell jobs can work with Task Scheduler to create jobs that run on a regular schedule, or in response to an event.\r\n</li>\r\n<li>\r\nDelegated Administration\r\n<br/>\r\nCommands can be run with a delegated set of credentials, so that users with limited permissions can run critical jobs.\r\n</li>\r\n<li>\r\nSimplified Language Syntax\r\n<br/>\r\nSimplified language syntax makes commands and scripts look a lot less like code and a lot more like natural language.\r\n</li>\r\n<li>\r\nCmdlet Discovery \r\n<br/>\r\nImproved cmdlet discovery and automatic module loading make it easier to find and run any of the cmdlets installed on your computer.\r\n</li>\r\n<li>\r\nShow-Command\r\n<br/>\r\nShow-Command, a cmdlet and ISE Add-On, helps users find the right cmdlet, view its parameters in a dialog box, and run it.\r\n</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<b>Windows Management Instrumentation (WMI)</b><br/>\r\nWMI in Windows Management Framework 3.0 introduces:\r\n<ul>\r\n<li>\r\nA simplified provider development model\r\n<br/>\r\nThis new model brings down the cost of provider development and removes the dependency on COM.\r\n</li>\r\n<li>\r\nA new Management Infrastructure (MI) Client API to perform standard CIM operations\r\n<br/>\r\nThis API can be used to interact with any standard CIM implementation over WS-Management, allowing management applications on Windows to manage non-Windows computers and devices.\r\n</li>\r\n<li>\r\nThe ability to write Windows PowerShell cmdlets in native code\r\n<br/>\r\nThe new WMI Provider APIs support Windows PowerShell semantics, allowing developers to provide familiar cmdlet behaviors such as Verbose, Error, Warning, WhatIf, Confirm, Progress, etc.\r\n</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<b>Windows Remote Management (WinRM)</b><br/>\r\nImprovements in WinRM include:\r\n<ul>\r\n<li>\r\nConnections are more robust \r\n<br/>\r\nRemote connections communicating over WinRM are more robust to transient network failures such as an inconsistent WAN connection. In the case of a complete network failure, connections are gracefully disconnected, and can be reconnected when network connectivity is restored.\r\n</li>\r\n<li>\r\nRemoting is more Standards-compliant\r\n<br/>\r\nStandard WS-Management operations, including Create and Delete, can be performed over WMI. Remoting for cmdlets written in native code using the new WMI provider development model uses WS-Management instead of DCOM.\r\n</li>\r\n<li>\r\nMultiple Windows PowerShell sessions can be shared in the same process\r\n<br/>\r\nWindows PowerShell sessions from the same user to the same session configuration (WinRM plug-in) can run in a single shared process instead of separate processes. This improves scalability and performance by allowing multiple sessions to share memory and other server resources.\r\n</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<b>Management OData IIS Extension</b>\r\n<br/>\r\nManagement OData IIS Extension enables an administrator to expose a set of Windows PowerShell cmdlets as a RESTful web endpoint accessible via the Open Data Protocol (OData). This enables Windows and non-Windows clients to discover and invoke Windows PowerShell cmdlets remotely over standard web protocols and interfaces.<br/>\r\n<br/>\r\n<br/>\r\n\r\n<br/><br/>\r\n<b>Server Manager CIM Provider</b>\r\n<br/>\r\nThe Server Manager CIM provider packaged with Windows Management Framework 3.0 allows you to manage your Windows Server 2008 R2 SP1 and Windows Server 2008 SP2 servers from Server Manager in Windows Server 2012, or Server Manager that is available with <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=238560\">Remote Server Administration Tools for Windows 8</a>.\r\n<br/>\r\n<br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "WMF 3 Release Notes.docx",
+        "Windows6.1-KB2506143-x64.msu",
+        "Windows6.0-KB2506146-x64.msu",
+        "Windows6.1-KB2506143-x86.msu",
+        "Windows6.0-KB2506146-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "52.7 KB",
+        "15.8 MB",
+        "14.4 MB",
+        "11.7 MB",
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>IMPORTANT:</b>  Windows Management Framework 3.0 is not currently compatible with the following applications:\r\n<ul><li>System Center 2012 Configuration Manager. For more information, see <a href=\"http://support.microsoft.com/kb/2796086\">KB 2796086</a>.</li>\r\n<li>System Center Virtual Machine Manager. For more information, see <a href=\"http://support.microsoft.com/kb/2795043\">KB 2795043</a>.</li>\r\n<li>Microsoft Exchange Server 2007 and Microsoft Exchange Server 2010. For more information, see <a href=\"http://blogs.technet.com/b/exchange/archive/2012/12/14/windows-management-framework-3-0-on-exchange-2007-and-exchange-2010.aspx\">Windows Management Framework 3.0 on Exchange 2007 and Exchange 2010</a>.</li>\r\n<li>Microsoft SharePoint 2010. For more information, see <a href=\"http://connect.microsoft.com/PowerShell/feedback/details/746908/powershell-3-0-and-sharepoint-2010\">Windows PowerShell 3.0 and SharePoint 2010</a>.</li>\r\n<li>Windows Small Business Server 2008 and Windows Small Business Server 2011. For more information, see <a href=\"http://blogs.technet.com/b/sbs/archive/2012/12/15/windows-management-framework-3-0-applicability-on-windows-small-business-server-2008-2011-standard.aspx\">Windows Management Framework 3.0 applicability on Windows Small Business Server 2008/2011 Standard</a>.</li>\r\n</ul>\r\n<br/><b>Systems that are running the above server applications should not run Windows Management Framework 3.0 at this time.</b> WMF 3.0 is otherwise supported on Windows 7 SP1, Windows Server 2008 R2 SP1, and Windows Server 2008 SP2.\r\n<br/><br/>Windows Management Framework 3.0 requires Microsoft .NET Framework 4.0. You can install Microsoft .NET Framework 4.0 at <a href=\"http://go.microsoft.com/fwlink/?LinkID=212547\">http://go.microsoft.com/fwlink/?LinkID=212547</a>\r\n<br/><br/>\r\nIn addition, the following requirements apply:\r\n<ol>\r\n<li>\r\nTo install Windows PowerShell Integrated Scripting Environment (ISE) for Windows PowerShell 3.0 on computers running Windows Server 2008 R2 with Service Pack 1, before installing Windows Management Framework 3.0, use Server Manager to add the optional Windows PowerShell ISE feature.\r\n</li>\r\n<li>\r\nBefore installing Windows Management Framework 3.0 on Windows Server 2008, you must download and install the version of Windows Management Framework which includes Windows PowerShell 2.0, WinRM 2.0, and BITS 4.0 as a prerequisite. This version of Windows Management Framework is available at <a href=\"http://support.microsoft.com/kb/968929\">http://support.microsoft.com/kb/968929</a>.\r\n</li>\r\n<li>\r\nWindows 7 Service Pack 1 (SP1) must be installed as a prerequisite on computers running Windows 7. To install SP1, go to <a href=\"http://windows.microsoft.com/installwindows7sp1\">http://windows.microsoft.com/installwindows7sp1</a>\r\n</li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To install Windows Management Framework 3.0:</b>\r\n<ol>\r\n  <li>Download the correct package for your operating system and architecture. \r\n    <ul>\r\n      <li>Windows 7 Service Pack 1\r\n       <ul>\r\n         <li>64-bit versions: Windows6.1-KB2506143-x64.msu</li>\r\n         <li>32-bit versions: Windows6.1-KB2506143-x86.msu</li>\r\n       </ul>\r\n      </li>\r\n      <li>Windows Server 2008 R2 SP1\r\n        <ul>\r\n         <li>64-bit versions: Windows6.1-KB2506143-x64.msu</li>\r\n       </ul>\r\n      </li>\r\n      <li>Windows Server 2008 Service Pack 2\r\n       <ul>\r\n         <li>64-bit versions: Windows6.0-KB2506146-x64.msu</li>\r\n         <li>32-bit versions: Windows6.0-KB2506146-x86.msu</li>\r\n       </ul>\r\n      </li>\r\n    </ul>\r\n  </li>\r\n  <li>Close all Windows PowerShell windows. </li>\r\n  <li>Uninstall any other versions of Windows Management Framework 3.0. </li>\r\n  <li>Run the MSU file that you downloaded. </li>\r\n</ol>\r\nFor information about troubleshooting the installation, see the Release Notes.\r\n<br/><br/>\r\n<b>To uninstall Windows Management Framework 3.0:</b>\r\n<br/>\r\n<ol><li>In <b>Control Panel/Programs/Uninstall a program/View installed updates</b>, locate and uninstall the following installed Windows Update:\r\n<ul>\r\n<li>KB2506143 - for Windows 7 SP1 and Windows Server 2008 R2 SP1</li>\r\n<li>KB2506146 - for Windows Server 2008 SP2</li>\r\n</ul></li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Management Framework 3.0 Compatibility Update",
+            "url": "http://blogs.msdn.com/b/powershell/archive/2012/12/20/windows-management-framework-3-0-compatibility-update.aspx"
+        },
+        {
+            "title": "kb 2506143:  Description of Windows Management Framework 3.0 for Windows 7 SP1 and Windows Server 2008 R2 SP1",
+            "url": "http://support.microsoft.com/kb/2506143"
+        },
+        {
+            "title": "kb 2506146: Description of Windows Management Framework 3.0 for Windows Server 2008 SP2",
+            "url": "http://support.microsoft.com/kb/2506146"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34595",
+    "downloadPreload": true
+}

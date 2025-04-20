@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "IntelliSense Definition Files for Mobile Services JavaScript in Visual Studio",
+    "downloadDescription": "Using the instructions from http://blogs.msdn.com/b/visualstudio/archive/2013/07/25/windows-azure-mobile-services-in-visual-studio-2013.aspx, you can enable IntelliSense on your Mobile Services script in Visual Studio",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "README.docx",
+            "url": "https://download.microsoft.com/download/f/6/2/f6204d2d-3407-4c05-860e-1f751c4c8efa/README.docx",
+            "size": "19472",
+            "version": "July 2013",
+            "datePublished": "7/15/2024 3:27:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mobileservices.intellisense.js",
+            "url": "https://download.microsoft.com/download/f/6/2/f6204d2d-3407-4c05-860e-1f751c4c8efa/mobileservices.intellisense.js",
+            "size": "96528",
+            "version": "July 2013",
+            "datePublished": "7/15/2024 3:27:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Using the instructions from <a href=\"http://blogs.msdn.com/b/visualstudio/archive/2013/07/25/windows-azure-mobile-services-in-visual-studio-2013.aspx\">this blog post</a> , you can easily enable IntelliSense on your Mobile Services scripts in Visual Studio. This is a capability that isn\u2019t integrated in Visual Studio 2013 Preview.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2013",
+    "detailsSection_file_name": [
+        "README.docx",
+        "mobileservices.intellisense.js"
+    ],
+    "detailsSection_file_size": [
+        "19.0 KB",
+        "94.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 8.1 Preview",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Simply follow the instructions posted <a href=\"http://blogs.msdn.com/b/visualstudio/archive/2013/07/25/windows-azure-mobile-services-in-visual-studio-2013.aspx\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39692",
+    "downloadPreload": true
+}

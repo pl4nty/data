@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Performance Planning and Deployment with Content Management Server 2002",
+    "downloadDescription": "Demonstrates how to plan your MCMS 2002 deployment to maximize performance. Additionally, it provides troubleshooting tips and answers frequently asked questions about installing and using MCMS 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MCMS2002_Perf_Deploy.exe",
+            "url": "https://download.microsoft.com/download/4/9/b/49b05eff-a540-4edd-97b0-a5280324a867/MCMS2002_Perf_Deploy.exe",
+            "size": "3150336",
+            "version": "2002",
+            "datePublished": "6/13/2024 11:51:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Demonstrates how to plan your MCMS 2002 deployment to maximize performance, how to estimate site capacity with transaction cost analysis, and provides best practices and instructions for installing an MCMS 2002, 13-computer, 3-tier, sample, secure deployment that can easily be scaled out to meet the needs of your enterprise. Additionally, it provides troubleshooting tips and answers frequently asked questions about installing and using MCMS 2002.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2002",
+    "detailsSection_file_name": [
+        "MCMS2002_Perf_Deploy.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Office</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "newsgroups About Content Management Server",
+            "url": "http://msdn.microsoft.com/newsgroups/?url=/newsgroups/loadframes.asp?icp=msdn&slcid=us&newsgroup=microsoft.public.cmserver.general"
+        },
+        {
+            "title": "microsoft Content Management Server Web Site",
+            "url": "http://www.microsoft.com/cmserver"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17122",
+    "downloadPreload": true
+}

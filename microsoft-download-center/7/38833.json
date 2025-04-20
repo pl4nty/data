@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Office Web Apps Server: Office Web Apps deployment simplified ",
+    "downloadDescription": "Use Office Web Apps Server to provide browser-based file viewing and editing services for Office files.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "oit-2013-poster-office-web-apps-overview.vsd",
+            "url": "https://download.microsoft.com/download/d/9/5/d950063f-bc91-4eec-93cd-6fe419849cfa/oit-2013-poster-office-web-apps-overview.vsd",
+            "size": "2356736",
+            "version": "Mar2014",
+            "datePublished": "7/15/2024 3:34:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit-2013-poster-office-web-apps-overview.pdf",
+            "url": "https://download.microsoft.com/download/d/9/5/d950063f-bc91-4eec-93cd-6fe419849cfa/oit-2013-poster-office-web-apps-overview.pdf",
+            "size": "729005",
+            "version": "Mar2014",
+            "datePublished": "7/15/2024 3:34:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use Office Web Apps Server to provide browser-based file viewing and editing services for Office files. Office Web Apps Server works with products and services that support WOPI, such as SharePoint 2013, Lync Server 2013, and Exchange Server 2013. An Office Web Apps Server farm can provide services to multiple on-premises hosts, and you can scale out the farm as your organization's needs grow. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2014",
+    "detailsSection_file_name": [
+        "oit-2013-poster-office-web-apps-overview.vsd",
+        "oit-2013-poster-office-web-apps-overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "711.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010; Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38833",
+    "downloadPreload": true
+}

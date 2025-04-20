@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "License Agreement for Microsoft HPC Pack and SDK",
+    "downloadDescription": "The HPC Pack License Agreement provides the license terms for using the HPC Pack software.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HPC_Pack_2019_EULA_enu.rtf",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/HPC_Pack_2019_EULA_enu.rtf",
+            "size": "243719",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC_Pack_2019_EULA_chs.rtf",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/HPC_Pack_2019_EULA_chs.rtf",
+            "size": "287868",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC_Pack_2019_EULA_jpn.rtf",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/HPC_Pack_2019_EULA_jpn.rtf",
+            "size": "337384",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA_jpn.rtf",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/EULA_jpn.rtf",
+            "size": "347934",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA_enu.rtf",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/EULA_enu.rtf",
+            "size": "213860",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA_chs.rtf",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/EULA_chs.rtf",
+            "size": "282323",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC Pack SDK EULA.docx",
+            "url": "https://download.microsoft.com/download/9/9/1/991bbbf1-1a22-4562-94c5-69987d48d033/HPC Pack SDK EULA.docx",
+            "size": "45609",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft HPC Pack License Agreement provides the software license terms and conditions for using the Microsoft HPC Pack software.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "HPC_Pack_2019_EULA_enu.rtf",
+        "HPC_Pack_2019_EULA_chs.rtf",
+        "HPC_Pack_2019_EULA_jpn.rtf",
+        "EULA_jpn.rtf",
+        "EULA_enu.rtf",
+        "EULA_chs.rtf",
+        "HPC Pack SDK EULA.docx"
+    ],
+    "detailsSection_file_size": [
+        "238.0 KB",
+        "281.1 KB",
+        "329.5 KB",
+        "339.8 KB",
+        "208.8 KB",
+        "275.7 KB",
+        "44.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The License Agreement can be viewed using Microsoft Word or a standard text editior.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43972",
+    "downloadPreload": true
+}

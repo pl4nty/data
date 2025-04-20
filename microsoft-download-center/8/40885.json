@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "App-V 5.0 and Citrix Integration Overview",
+    "downloadDescription": "This paper provides administrators with guidance for combining Microsoft Application Virtualization 5.0 (App-V 5.0) and Citrix solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "App-V-5-and-Citrix-Integration.pdf",
+            "url": "https://download.microsoft.com/download/c/4/1/c416f9fd-1b51-4e1d-9dbe-87c12ab329a2/App-V-5-and-Citrix-Integration.pdf",
+            "size": "632075",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:19:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper is designed to provide administrators with guidance for combining Microsoft Application Virtualization 5.0 (App-V 5.0) and Citrix solutions. It discusses the benefits of App-V 5.0 and Citrix, recommendations for Citrix images, App-V cache management, App-V management with Citrix, factors that impact user experience and administrative effort, and the Citrix XenApp Connector for System Center Configuration Manger 2012 SP1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "App-V-5-and-Citrix-Integration.pdf"
+    ],
+    "detailsSection_file_size": [
+        "617.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in .docx format. To access the file. you will need Microsoft Word or a compatible program.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40885",
+    "downloadPreload": true
+}

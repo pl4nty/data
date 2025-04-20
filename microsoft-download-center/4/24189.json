@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 Enterprise Search Evaluation Guide",
+    "downloadDescription": "Describes the enterprise search features provided by Microsoft\u00ae SharePoint\u00ae Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePointServer2010_SearchEvalGuide.xps",
+            "url": "https://download.microsoft.com/download/3/5/9/3590430c-72e2-459d-913a-c52c30936ac8/SharePointServer2010_SearchEvalGuide.xps",
+            "size": "2687845",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointServer2010_SearchEvalGuide.pdf",
+            "url": "https://download.microsoft.com/download/3/5/9/3590430c-72e2-459d-913a-c52c30936ac8/SharePointServer2010_SearchEvalGuide.pdf",
+            "size": "1962400",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePointServer2010_SearchEvalGuide.docx",
+            "url": "https://download.microsoft.com/download/3/5/9/3590430c-72e2-459d-913a-c52c30936ac8/SharePointServer2010_SearchEvalGuide.docx",
+            "size": "3677414",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The overall goal of this guide is to help technical decision makers, IT professionals, and developers perform a thorough and effective evaluation of the search features provided by SharePoint Server 2010. This guide includes the following:\r\ndescriptions of the new and improved enterprise search features and technologies provided by SharePoint Server 2010; details about the indexing and query architecture implemented by SharePoint Server 2010; tours and walkthroughs of the main search features provided by SharePoint Server 2010.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePointServer2010_SearchEvalGuide.xps",
+        "SharePointServer2010_SearchEvalGuide.pdf",
+        "SharePointServer2010_SearchEvalGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "1.9 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24189",
+    "downloadPreload": true
+}

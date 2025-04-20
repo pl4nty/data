@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Microsoft Azure - CTP Release",
+    "downloadDescription": "System Center Management Pack for Microsoft Azure - CTP Release",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Microsoft Azure.msi",
+            "url": "https://download.microsoft.com/download/8/b/3/8b322826-b080-4c6a-9c62-db0f42010039/Microsoft System Center Management Pack for Microsoft Azure.msi",
+            "size": "3588096",
+            "version": "1.8.0.9",
+            "datePublished": "7/15/2024 3:05:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureManagementPackGuide v1.8.0.9 CTP.docx",
+            "url": "https://download.microsoft.com/download/8/b/3/8b322826-b080-4c6a-9c62-db0f42010039/AzureManagementPackGuide v1.8.0.9 CTP.docx",
+            "size": "3645193",
+            "version": "1.8.0.9",
+            "datePublished": "7/15/2024 3:05:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the CTP version 1.8.0.9 of the Azure MP which includes new features and improvements over the last released version 1.8.0.8. \r\nThis version has a fix for following bugs - \r\n\r\nADAL Deprecation - update latest MSAL binaries.\r\nAuto SPN creation is not working in Azure MP.\r\nRemoval of Azure MP Silverlight changes.\r\nNot receiving alerts for Azure Web tests in SCOM while alerts are seen in Azure Portal.\r\nSome SQR alerts are not changing its state from Healthy to Critical.\r\nAzure MP - SCOM console is getting crashed while creating template.\r\n\r\nThe CTP guide has details about new feature and improvements offered in this version of management pack. \r\nMicrosoftAzureMPFullGuide can help you with detailed steps to setup Azure MP and the existing capabilities that this MP provides. This version is released so our customers can try our new features and share feedback. Please share your feedback with us at SCOM User Voice.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.0.9",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Microsoft Azure.msi",
+        "AzureManagementPackGuide v1.8.0.9 CTP.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "SCOM 2016\r\nSCOM 2019\r\nSCOM 2022",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Please refer the MP guide for instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58013",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 Autopilot deployment process",
+    "downloadDescription": "A two-page, 11x17 poster in portrait mode that shows the deployment process flow for Windows Autopilot",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows10AutopilotFlowchart.pdf",
+            "url": "https://download.microsoft.com/download/8/4/b/84b5e640-8f66-4b43-81a9-1c3b9ea18eda/Windows10AutopilotFlowchart.pdf",
+            "size": "110527",
+            "version": "1",
+            "datePublished": "7/15/2024 4:32:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This PDF depicts the Windows 10 autopilot deployment process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows10AutopilotFlowchart.pdf"
+    ],
+    "detailsSection_file_size": [
+        "107.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requires a PDF viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Android",
+        "iOS"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this file to disk</b>.</li>\r\n<li>Select <b>Open file</b>, or find the file on your device and open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104496",
+    "downloadPreload": true
+}

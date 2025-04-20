@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Image Processing Language",
+    "downloadDescription": "An image processing language implemented entirely in C# using the new Vector SIMD class. Generates multithreaded and SIMD optimized code from a high level language input.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Samples.zip",
+            "url": "https://download.microsoft.com/download/7/9/c/79c29e5e-703f-481f-8385-d7f349f7cdfa/Samples.zip",
+            "size": "11694275",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:58:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An image processing language implemented entirely in C# using the new Vector SIMD class. Generates multithreaded and SIMD optimized code from a high level language input. Has primitives for per pixel and convolution operations and includes 7 working examples illustrating the features of the language: RGB filtering, saturation lightness adjustment, unsharp masking, highlight shadow adjustment, and several others. Quad core i7 desktop machines should achieve up to 1GPixel/sec. for RGB floating point images and modern laptops up to 400MPixels/sec.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Samples.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Windows 8.1, Windows 10 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": " Click <B>Download</B> and follow the instructions. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52760",
+    "downloadPreload": true
+}

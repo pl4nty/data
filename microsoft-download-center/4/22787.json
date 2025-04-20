@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "For IT professionals: Technical reference for Microsoft Office 2010",
+    "downloadDescription": "Technical reference information about Microsoft Office 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ORKTechRef.pdf",
+            "url": "https://download.microsoft.com/download/f/5/b/f5b74ffb-0e5c-4037-9b94-b2433c0dc8a9/ORKTechRef.pdf",
+            "size": "2070015",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ORKTechRef.doc",
+            "url": "https://download.microsoft.com/download/f/5/b/f5b74ffb-0e5c-4037-9b94-b2433c0dc8a9/ORKTechRef.doc",
+            "size": "2568704",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ORKTechRef.xps",
+            "url": "https://download.microsoft.com/download/f/5/b/f5b74ffb-0e5c-4037-9b94-b2433c0dc8a9/ORKTechRef.xps",
+            "size": "2670241",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This includes information about Setup properties and tools, file formats, changes in application functionality, multilingual features, Office Migration Planning Manager settings, messaging file types, and security settings. The audience for this book includes IT generalists, IT operations, help desk and deployment staff, IT messaging administrators, consultants, and other IT professionals.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ORKTechRef.pdf",
+        "ORKTechRef.doc",
+        "ORKTechRef.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "2.4 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2003, Windows Server 2008, Windows XP, Windows Vista",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22787",
+    "downloadPreload": true
+}

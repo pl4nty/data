@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2013 CU11 (KB3150501)",
+    "downloadDescription": "Security Update For Exchange Server 2013 CU11 (KB3150501)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2013-KB3150501-x64-en.msp",
+            "url": "https://download.microsoft.com/download/e/e/b/eeb93c1e-8960-48a5-a74d-af31d6bfa9c5/Exchange2013-KB3150501-x64-en.msp",
+            "size": "34004992",
+            "version": "15.00.1156.010",
+            "datePublished": "7/15/2024 5:02:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  A security issue has been identified that could allow an attacker to run programs and access data on a computer running Microsoft\u00ae Exchange Server 2013. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3150501",
+        "name": "KB3150501"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-079",
+        "name": "MS16-079"
+    },
+    "detailsSection_file_version": "15.00.1156.010",
+    "detailsSection_file_name": [
+        "Exchange2013-KB3150501-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "32.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "We recommend restarting your computer before installing a security update. Then follow these steps: <br/>\r\n<ol>\r\n<li> Disable the anti-virus software. </li>\r\n<li> Open an elevated Command Prompt window (not PowerShell) as an administrator, like this: </li>\r\n<ul>\r\n<li> Select <b> Start </b> and then enter <b> cmd </b>. </li>\r\n<li> Right-click <b> Command Prompt </b> in the results and select <b> Run as administrator </b>. </li>\r\n<li> If the <b> User Account Control </b> dialog box appears, select <b> Yes </b> and then <b> Next </b>. </li>\r\n</ul>\r\n<li> At the command prompt, enter the full path to the folder that contains the 'MSP file', then press 'Enter'. <br />\r\n<b> Note: </b> Do not double-click the 'MSP file' to run it. </li>\r\n<li> When the installation is complete, re-enable the antivirus software and restart your computer. (The installation program may prompt you to restart\r\nprompted.) </li>\r\n</ol>\r\n<br/> If problems occur during or after this installation, please refer to <a href=\"https://aka.ms/exupdatefaq\"> Repair failed installations of Exchange Cumulative and Security updates </a> before contacting Microsoft Support.",
+    "relatedResourcesSection": [
+        {
+            "title": "more Information About This Download",
+            "url": "http://support.microsoft.com/kb/2859928"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52768",
+    "downloadPreload": true
+}

@@ -1,0 +1,298 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 7 Dil Interfe\u00fds Paketi",
+    "downloadDescription": "\nWindows 7 Dil Interfe\u00fds Paketi (LIP) Windows 7-ni\u0148 gi\u0148den ulanyl\u00fdan \u00fderlerinde b\u00f6lekle\u00fdin \u00fderli Ulanyjy Interfe\u00fdsi bilen \u00fcpjin ed\u00fd\u00e4r\n",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LIP_tk-TM-32bit.mlc",
+            "url": "https://download.microsoft.com/download/1/c/5/1c54c6a9-ff45-4b9c-bdba-8dc109934619/LIP_tk-TM-32bit.mlc",
+            "size": "1911577",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LIP_tk-TM-64bit.mlc",
+            "url": "https://download.microsoft.com/download/1/c/5/1c54c6a9-ff45-4b9c-bdba-8dc109934619/LIP_tk-TM-64bit.mlc",
+            "size": "2795263",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "hy-am",
+            "name": "Armenian"
+        },
+        {
+            "cultureCode": "iu-latn-ca",
+            "name": "Inuktitut (Latin)"
+        },
+        {
+            "cultureCode": "bn-bd",
+            "name": "Bangla (Bangledsh) - Bangladesh"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "lb-lu",
+            "name": "Luxembourgish"
+        },
+        {
+            "cultureCode": "kok-in",
+            "name": "Konkani"
+        },
+        {
+            "cultureCode": "tt-ru",
+            "name": "Tatar"
+        },
+        {
+            "cultureCode": "nso-za",
+            "name": "Sesotho sa Leboa"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "gu-in",
+            "name": "Gujarati"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "mr-in",
+            "name": "Marathi"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "zu-za",
+            "name": "isiZulu"
+        },
+        {
+            "cultureCode": "tn-za",
+            "name": "Setswana (South Africa)"
+        },
+        {
+            "cultureCode": "bs-cyrl-ba",
+            "name": "Bosnian (Cyrillic)"
+        },
+        {
+            "cultureCode": "ur-in",
+            "name": "Urdu"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "mt-mt",
+            "name": "Maltese"
+        },
+        {
+            "cultureCode": "ta-in",
+            "name": "Tamil"
+        },
+        {
+            "cultureCode": "pa-in",
+            "name": "Punjabi"
+        },
+        {
+            "cultureCode": "xh-za",
+            "name": "isiXhosa"
+        },
+        {
+            "cultureCode": "km-kh",
+            "name": "Khmer"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "fil-ph",
+            "name": "Filipino"
+        },
+        {
+            "cultureCode": "tk-tm",
+            "name": "Turkmen (Latin) - Turkmenistan"
+        },
+        {
+            "cultureCode": "or-in",
+            "name": "Oriya"
+        },
+        {
+            "cultureCode": "ms-bn",
+            "name": "Malay (Brunei Darussalam)"
+        },
+        {
+            "cultureCode": "quz-pe",
+            "name": "Quechua (Peru)"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "mi-nz",
+            "name": "M\u0101ori"
+        },
+        {
+            "cultureCode": "bn-in",
+            "name": "Bengali (India)"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "mn-cyrl-mn",
+            "name": "Mongolian (Cyrillic) - Mongolia"
+        },
+        {
+            "cultureCode": "ml-in",
+            "name": "Malayalam"
+        },
+        {
+            "cultureCode": "prs-af",
+            "name": "Dari"
+        },
+        {
+            "cultureCode": "ka-ge",
+            "name": "Georgian"
+        },
+        {
+            "cultureCode": "as-in",
+            "name": "Assamese"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "kn-in",
+            "name": "Kannada"
+        },
+        {
+            "cultureCode": "ky-kg",
+            "name": "Kyrgyz"
+        },
+        {
+            "cultureCode": "ha-latn-ng",
+            "name": "Hausa"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sw-ke",
+            "name": "Kiswahili"
+        },
+        {
+            "cultureCode": "yo-ng",
+            "name": "Yoruba"
+        },
+        {
+            "cultureCode": "sq-al",
+            "name": "Albanian"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        },
+        {
+            "cultureCode": "am-et",
+            "name": "Amharic"
+        },
+        {
+            "cultureCode": "ig-ng",
+            "name": "Igbo"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        }
+    ],
+    "detailsSection": "\nWindows Dil Interfe\u00fds Paketi (LIP), Windows-y\u0148 gi\u0148den ulanyl\u00fdan \u00fderlerinde b\u00f6lekle\u00fdin terjime edilen wersi\u00fdalary bilen \u00fcpjin ed\u00fd\u00e4r. LIP gurnalandan so\u0148 ussatlardaky, geple\u015fik gutularyndaky, men\u00fdulardaky we K\u00f6mek hem-de \u00ddardam temalaryndaky tekst LIP dilinde g\u00f6rkeziler. Gurnalmadyk tekst Windows 7-ni\u0148 esasy dilinde bolar. Mysal \u00fc\u00e7in, eger siz Windows 7-ni\u0148 Ispan\u00e7a wersi\u00fdasyny satyn alan bolsa\u0148yz we Katalan dilinde LIP gurnan bolsa\u0148yz k\u00e4bir tekstler Ispan dilinde galar. Bir esasy dile birden k\u00f6p LIP gurnap bilersi\u0148iz. Windows LIP-ler \u00e4hli Windows 7 ne\u015firlerinde gurnalyp biliner.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LIP_tk-TM-32bit.mlc",
+        "LIP_tk-TM-64bit.mlc"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n  \u2022 Microsoft Windows 7 SP1\n  <br /> \n  \u2022 Windows 7 \u00fc\u00e7in gerekli esasy dil gurnamasy: Rus\u00e7a, I\u0148lis\u00e7e \n  <br /> \n  \u2022 \u00dd\u00fcklemek \u00fc\u00e7in 4.63 Mb bo\u015f \u00fder  \n  <br /> \n  \u2022 Gurmak \u00fc\u00e7in 15 Mb bo\u015f \u00fder \n  <br /> \n  <br /> \n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "\nDU\u00ddDURY\u015e: BitLocker kodla\u015fdyrmasyny i\u015fje\u0148le\u015fdiren bolsa\u0148yz LIP gurnamazdan \u00f6\u0148 ony sakla\u0148. <B>\u041f\u0430\u043d\u0435\u043b\u044c \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f</B> a\u00e7y\u0148, <B>\u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0438 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c</B> sa\u00fdla\u0148, so\u0148ra <B>\u0428\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0434\u0438\u0441\u043a\u0430 BitLocker</B> a\u00e7y\u0148 we  <B>\u041f\u0440\u0438\u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0437\u0430\u0449\u0438\u0442\u0443</B> d\u00fcwmesine basy\u0148.\n<br />\n<br />\nWindows 7 LIP-ni\u0148 32-bit we 64-bit wersi\u00fdalary \u00fc\u00e7in a\u00fdratyn \u00fd\u00fcklemeleri bardygy seb\u00e4pli y\u00fcklemegi ba\u015flatmazdan \u00f6\u0148,  Windows 7-ni\u0148 ha\u00fdsy wersi\u00fdasyny gurnajagy\u0148yzy bili\u0148: \nHa\u00fdsy Windows 7 wersi\u00fdasyny\u0148 gurnalandygyny bu \u00fderde bilip bolar: <br /> \n<br /> \n<B>\u0417\u0430\u043f\u0443\u0441\u0442\u0438\u0442\u044c</B> d\u00fcwmesine basy\u0148 so\u0148ra Komp\u00fdutere sag basyp <B>\u0421\u0432\u043e\u0439\u0441\u0442\u0432\u0430</B> sa\u00fdla\u0148. Bu komp\u00fduteri\u0148iz hakynda esasy informasi\u00fdany g\u00f6rkezer. <br /> \nUlgam tipi \u00fc\u00e7in Ulgam b\u00f6l\u00fcmine ser saly\u0148. Bu Windows 7 Operasi\u00fda Ulgamy\u0148yzy\u0148 32-bit \u00fda-da 64-bit Operasi\u00fda Ulgamydygyny g\u00f6rkez\u00fd\u00e4r. <br />\n  <br /> \n  32-bit wersi\u00fdasyny gurnamak \u00fc\u00e7in:\n  <br /><br />  \n  <OL>\n  <LI><B>Gar\u015fydan \u00fd\u00fckle</B> d\u00fcwmesine basy\u0148, so\u0148ra LIP gurnamak \u00fc\u00e7in <B>\u041e\u0442\u043a\u0440\u044b\u0442\u044c</B> basy\u0148</LI>\n  <br /><br />\n  \u00fda-da\n  <br /><br />\n  <LI><B>Gar\u015fydan \u00fd\u00fckle</B> d\u00fcwmesine basy\u0148</LI>\n  <UL>\n  <LI>Fa\u00fdly\u0148 nusgasyny komp\u00fduteri\u0148ize g\u00f6\u00e7\u00fcrmek \u00fc\u00e7in <B>\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c</B> basy\u0148,</LI>\n  <LI>Gar\u015fydan \u00fd\u00fcklenen fa\u00fdla gidi\u0148 we LIP gurnamak \u00fc\u00e7in o\u0148a go\u015fa basy\u0148</LI>\n  </UL>\n  </OL>\n  <br />\n  64-bit wersi\u00fdasyny gurnamak \u00fc\u00e7in \u00fdokardaky 2-nji opsi\u00fdasyny ulanmalysy\u0148yz.\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft \u00dderli Dil Programmasy",
+            "url": "http://go.microsoft.com/?linkid=663944"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17036",
+    "downloadPreload": true
+}

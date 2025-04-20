@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Azure DevOps Server to Azure DevOps Services Data Migration Tool",
+    "downloadDescription": "Tool for helping Azure DevOps Server customers migrate their databases to Azure DevOps Services",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DataMigrationTool_AzureDevOps2022.1_19.225.29538986.zip",
+            "url": "https://download.microsoft.com/download/7/c/9/7c903cec-839a-415e-bbd4-5f84b876a291/DataMigrationTool_AzureDevOps2022.1_19.225.29538986.zip",
+            "size": "28865485",
+            "version": "2025.3",
+            "datePublished": "3/4/2025 8:37:26 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DataMigrationTool_AzureDevOps2022.2_19.235.29659439.zip",
+            "url": "https://download.microsoft.com/download/7/c/9/7c903cec-839a-415e-bbd4-5f84b876a291/DataMigrationTool_AzureDevOps2022.2_19.235.29538985.zip",
+            "size": "28753801",
+            "version": "2025.3",
+            "datePublished": "3/4/2025 8:37:26 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Azure DevOps Data Migration Tool is a set of utilities provided by Microsoft to facilitate the migration of data from Azure DevOps Server to Azure DevOps Services. These tools offer a streamlined approach to migrate various artifacts, including source code, work items, test cases, and other project-related data.\n\nBefore you initiate the migration process, the tools can perform a premigration analysis to assess the readiness of the source environment and identify potential issues or dependencies that might affect the migration. Assess readiness, so you can plan and mitigate potential challenges beforehand.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2025.3",
+    "detailsSection_file_name": [
+        "DataMigrationTool_AzureDevOps2022.1_19.225.29538986.zip",
+        "DataMigrationTool_AzureDevOps2022.2_19.235.29659439.zip"
+    ],
+    "detailsSection_file_size": [
+        "27.5 MB",
+        "27.4 MB"
+    ],
+    "detailsSection_file_date": "3/4/2025",
+    "systemRequirementsSection": "Azure DevOps Server 2022.1 or 2022.2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download two zip files and follow the guidance published on https://learn.microsoft.com/azure/devops/migrate/migration-overview",
+    "relatedResourcesSection": [
+        {
+            "title": "azure DevOps Roadmap and Release Notes",
+            "url": "https://aka.ms/vstsfeaturestimeline"
+        },
+        {
+            "title": "azure DevOps Migration Documentation",
+            "url": "https://learn.microsoft.com/azure/devops/migrate/migration-overview"
+        },
+        {
+            "title": "find a DevOps Partner",
+            "url": "https://aka.ms/finddevopspartner"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54274",
+    "downloadPreload": true
+}

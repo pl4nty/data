@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SQLCopy Utility",
+    "downloadDescription": "Partition aware, parallel copy utility to transfer SQL data between SQL DB and SQL MI in either direction.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLCopy 1.5.zip",
+            "url": "https://download.microsoft.com/download/a/a/d/aad2a3c8-eec7-4f3e-bf56-f4dc7b105f79/SQLCopy 1.5.zip",
+            "size": "5614409",
+            "version": "1.5.0",
+            "datePublished": "6/15/2024 4:25:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A utility that automatically copies tables in parallel from one SQL PaaS Service to another (i.e. SQL DB to SQL MI or SQL MI to SQL DB). If tables are already partitioned or if the number of rows is above a configured size, the table is copied in multiple parallel activities. Tables are copied in dependency order so foreign keys ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5.0",
+    "detailsSection_file_name": [
+        "SQLCopy 1.5.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a zipped folder that contains Database Compare Utility Tool and associated documentation.\r\n</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ol> \r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n<li>Do the following:</li> \r\n<ul> \r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n</ul> \r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104135",
+    "downloadPreload": true
+}

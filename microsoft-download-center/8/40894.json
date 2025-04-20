@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 Installation Guide for Cumulative Update 7",
+    "downloadDescription": "This document explains how to install cumulative update 7 for Microsoft Dynamics AX 2012 R2 (CU 7). ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallGuide_CU7_AX2012R2.pdf",
+            "url": "https://download.microsoft.com/download/3/0/a/30a5fd89-b0a9-4060-9d1c-3ad8bcd2a836/InstallGuide_CU7_AX2012R2.pdf",
+            "size": "327875",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The installation guide describes the following methods for installing CU 7:\r\n<UL><LI>In an existing Microsoft Dynamics AX 2012 R2 installation, apply CU 7 as an update.</LI>\r\n<LI>For a new Microsoft Dynamics AX 2012 R2 installation, use slipstreaming to install CU 7 along with the rest of the product.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "InstallGuide_CU7_AX2012R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "320.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "apply updates and hotfixes [AX 2012]",
+            "url": "http://technet.microsoft.com/en-us/library/hh335183.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40894",
+    "downloadPreload": true
+}

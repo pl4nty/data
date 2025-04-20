@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 R2 Data Protection Manager (DPM) with Update Rollup 4 - Evaluation VHD",
+    "downloadDescription": "This download consists of a single pre-configured VHD file for System Center DPM component. The VHD enables you to create a virtual machine to evaluate Data Protection Manager (DPM) 2012 R2 and use Cloud Integrated Backup to Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Win2012R2Svr_DPM_EVAL_Sysprepped.zip",
+            "url": "https://download.microsoft.com/download/b/b/2/bb2e515a-5af3-4bea-b9e4-45b141f87058/Win2012R2Svr_DPM_EVAL_Sysprepped.zip",
+            "size": "9790058267",
+            "version": "2012 R2",
+            "datePublished": "7/15/2024 3:58:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Readme.txt",
+            "url": "https://download.microsoft.com/download/b/b/2/bb2e515a-5af3-4bea-b9e4-45b141f87058/Readme.txt",
+            "size": "2307",
+            "version": "2012 R2",
+            "datePublished": "7/15/2024 3:58:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center 2012 R2 Data Protection Manager (DPM) with Update Rollup 4, Windows Azure Backup, SQL Server 2012 and Windows Server 2012 R2. <br/>\r\nThe software contained in this download will also enable you to configure and use cloud integrated protection to Azure Backup using DPM. <br/>\r\nFor detailed information about each component included with these download files, see the individual component documentation.<br />\n<br/>\r\nSystem Center 2012R2 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=671edc00-630a-4149-bee6-37b6ebff392c\">System Center 2012 R2 Configuration Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=528a396f-e60c-4755-9521-75e98e6415de\">System Center 2012 R2 App Controller \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=50196236-ae84-4a97-9229-50d6b463642e\">System Center 2012 R2 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=ceaae8d1-0ace-408d-8175-8d3275e28e6a\">System Center 2012 R2 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=932e8f1b-5865-428d-839e-b5c686cca6ce\">System Center 2012 R2 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=8ecf0717-e666-4880-ab43-c8392542c8b7\">System Center 2012 R2 Service Manager Data Warehouse\u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d2396ffd-762d-4925-80ac-8fd346d99054\">System Center 2012 R2 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>\r\n* IMPORTANT Security Warning :  Do NOT use VHDs which have not been downloaded from www.microsoft.com or those that have been edited after download. Use of software not approved by Microsoft may contain malicious content leading to possible security and vulnerability risks.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012 R2",
+    "detailsSection_file_name": [
+        "Win2012R2Svr_DPM_EVAL_Sysprepped.zip",
+        "Readme.txt"
+    ],
+    "detailsSection_file_size": [
+        "9.1 GB",
+        "2.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Recommended <br/>\r\n- Windows Server 2012 R2 (any version of Windows Server 2012 R2 with Hyper-V role installed). [Recommended]<br/>\r\n- Windows Server 2012 (any version of Windows Server 2012 with Hyper-V role installed). <br/>\r\n<br/>\r\n<li><b>Important Note</b></li>\r\n- Hyper-V role is required to use this VHD as the primary hard disk of a guest virtual machine running on the host operating system. <br/>\r\n- Windows Server 2012 R2 (64Bit OS) is the guest OS in the VHD and the host operating system must support Windows Server 2012 R2 to work as the guest OS. <br/>\r\n<br/>\r\n<li><b>System Physical Memory (RAM) Hardware Requirements</b></li>\r\n- Minimum : 2 GB <br/>\r\n- Recommended : 4 GB <br/>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Release Candidate"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>Download the VHD file in this download and save it to a designated location on your local drive.</li>\r\n<li>To run DPM in a VM from Windows Azure follow the instructions given <a href=\"http://azure.microsoft.com/en-in/documentation/articles/virtual-machines-create-upload-vhd-windows-server/#createstorage\">here</a></li>\r\n<li>To run DPM on premises perform the steps 1, 2 and 3 as given below.</li>\r\n<li>1) Create a new Hyper-V VM.</li>\r\n<li>2) Attach this VHD to the VM as its primary disk.</li>\r\n<li>3) Start the VM and follow the steps below.</li>\r\n</ul>\r\n<b>Steps To Follow once the VM is up and running (for both On-Premises and Azure VMs) </b>\r\n<ol>\r\n<li>Start the VM with this VHD attached as its primary disk. Do not change the language settings on first boot. The default app language is \"English - United States\". You may change the language settings once Setup completes.</li>\r\n<li>Join it to the requisite domain.</li>\r\n<li>Add a domain user to the local machine \u201cAdministrators\u201d group and log in with that user.</li>\r\n<li>(Optional) Disable \u201cUser Account Control\u201d since it may pop up warning messages during installation phase. This is optional. </li>\r\n<li>Right-click \u201cC:\\Install.cmd\u201d and Click \u201cRun as Administrator\u201d. </li>\r\n<li>Follow the instructions on screen. </li>\r\n</ol>\r\n* IMPORTANT Security Warning :  Do NOT use VHDs which have not been downloaded from www.microsoft.com or those that have been edited after download. Use of software not approved by Microsoft may contain malicious content leading to possible security and vulnerability risks.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45346",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Jay Franklin is a Java Programmer!",
+    "downloadDescription": "Brother Jay makes his debut on .NET Rocks! with stories of his experiences as a Java developer from the early days in VB class through MUMPS and landing finally in Java land. Also, be listening for a special musical performance at the end of the show.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080320JFranklin.zip",
+            "url": "https://download.microsoft.com/download/a/9/c/a9c18206-461a-4497-95ae-30c039918e13/20080320JFranklin.zip",
+            "size": "46453218",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Jay Franklin is a Senior Java Developer for Trivin, where he develops software to bring car dealerships and the DMV closer together to provide instant online vehicle registration. Jay is also a pianist, singer, songwriter, bassist, brother to Carl, husband to Melissa, and father to three young Franklins.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080320JFranklin.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.3 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5129",
+    "downloadPreload": true
+}

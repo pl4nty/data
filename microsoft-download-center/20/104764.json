@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DRAppliance_9.52.6522.1",
+    "downloadDescription": "DRAppliance_9.52.6522.1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DRAppliance.zip",
+            "url": "https://download.microsoft.com/download/5/e/e/5eeaea21-2e01-40dd-92ce-091c5dc1098d/DRAppliance.zip",
+            "size": "3060725526",
+            "version": "9.52",
+            "datePublished": "6/15/2023 4:37:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DRAppliance_9.52.6522.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.52",
+    "detailsSection_file_name": [
+        "DRAppliance.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.9 GB"
+    ],
+    "detailsSection_file_date": "6/15/2023",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104764",
+    "downloadPreload": true
+}

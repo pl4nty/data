@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Operations on-premises, Enterprise edition Provisioning Guide",
+    "downloadDescription": "The entity purchasing Dynamics 365 for Operations on-premises, Enterprise edition for production use is required to use a Microsoft Online Services ID. The Microsoft Online Services ID is required to provision and register Microsoft Dynamics 365 for Operations on-premises, Enterprise edition into entity owned hardware and environment. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SignupExperienceCommunication.pdf",
+            "url": "https://download.microsoft.com/download/6/4/6/6468cd7c-c190-4015-91d2-cb33bf81db09/SignupExperienceCommunication.pdf",
+            "size": "596682",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "View the posted document above, and follow the steps to complete the provisioning and registration process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SignupExperienceCommunication.pdf"
+    ],
+    "detailsSection_file_size": [
+        "582.7 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101968",
+    "downloadPreload": true
+}

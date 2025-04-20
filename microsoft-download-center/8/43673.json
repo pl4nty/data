@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Azure RMS SDK 4.2 for Android",
+    "downloadDescription": "Azure RMS SDK 4.2 for Android is a SDK for creating rights-enabled applications. By downloading the software, you agree to the license terms provided for this software. If you do not agree to the license terms, please do not download the software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RMSSDK-Android-4.2.6- April2020.zip",
+            "url": "https://download.microsoft.com/download/5/0/b/50b7d334-ed70-4d0d-a305-bc0513ae75da/RMSSDK-Android-4.2.6- April2020.zip",
+            "size": "602603",
+            "version": "4.2.6",
+            "datePublished": "7/15/2024 3:05:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA.rtf",
+            "url": "https://download.microsoft.com/download/5/0/b/50b7d334-ed70-4d0d-a305-bc0513ae75da/EULA.rtf",
+            "size": "96087",
+            "version": "4.2.6",
+            "datePublished": "7/15/2024 3:05:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure RMS SDK 4.2.6 for Android is an SDK for creating rights-enabled applications.\r\n<UL>\r\n<li> Starting this update of the SDK the android SDK will be delivered in the *.aar format instead of the past *.jar format </li>\r\n<li> SDK now returns error for a null access token </li>\r\n<li> Added revocation API to revoke published content in the UserPolicy class:  </li>\r\n                Usage is just like register API\r\n                 public IAsyncControl revokeUserPolicy(final String userId, \r\n                            final AuthenticationRequestCallback authenticationContext,\r\n                            CreationCallback&ltBoolean&gt callback) throws ProtectionException\r\n                  public Boolean revokeUserPolicy(final String userId, \r\n                        final AuthenticationRequestCallback authenticationContext,\r\n                        final Context applicationContext) throws ProtectionException\r\n<li>Updated telemetry pipeline </li>\r\n<li> Enforce HTTPS and support future changes for cloud service discovery </li>\r\n<li> Compatibility for Android Oreo (8.0) and above </li>\r\n<li> Other bug fixes and performance requirements </li>\r\n<li> Performance improvements </li>\r\n<li> Bug fixes </li>\r\n </UL>\r\nOur documentation has been updated - you can download the new SDKs, read about the new features, share your feedback, and find everything you need on our page here\r\nhttps://docs.microsoft.com/en-us/information-protection/develop/active-directory-rights-management-services-multi-platform-thin-client-sdk-portal3 <br/> <br/>\r\n\r\nBy downloading the software, you agree to the license terms provided for this software. If you do not agree to the license terms, please do not download the software.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.2.6",
+    "detailsSection_file_name": [
+        "RMSSDK-Android-4.2.6- April2020.zip",
+        "EULA.rtf"
+    ],
+    "detailsSection_file_size": [
+        "588.5 KB",
+        "93.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI> Windows or Mac development enviroment to run Eclipse. </LI>\r\n<LI> This guide assumes that you are using the Eclipse SDK beginning with Eclipse Juno 4.2, by using a default installation. </LI>\r\n<LI> Java starting with Java 1.6. </LI>\r\n<LI> Android Developer Tools (ADT) Plugin. </LI>\r\n</UL>\r\nNote: You might be asked to restart Eclipse to complete the installation.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 8",
+        "Windows 10",
+        "Android",
+        "Linux"
+    ],
+    "installInstructionSection": "<a>Getting started guide is available here: https://docs.microsoft.com/en-us/information-protection/develop/get-started</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43673",
+    "downloadPreload": true
+}

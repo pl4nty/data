@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Space Planning sample diagram for Visio 2010",
+    "downloadDescription": "Help organize your office space by incorporating individual employee information into a space plan using this Visio 2010 sample diagram.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Space Planning.vst",
+            "url": "https://download.microsoft.com/download/1/2/c/12c7d62d-33f9-4c41-abd6-5a9a482f7ef2/Space Planning.vst",
+            "size": "1436672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Space Planning Data.xlsx",
+            "url": "https://download.microsoft.com/download/1/2/c/12c7d62d-33f9-4c41-abd6-5a9a482f7ef2/Space Planning Data.xlsx",
+            "size": "18188",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 sample diagram to help organize the space in your office. This sample shows how you can create a space plan for your office and incorporate individual employee information, such as office number, occupant, capacity, department, and phone number. The template uses standard shapes for resources from the Visio 2010 library that have been linked to sample external data. This sample could be extended to add more information about the physical assets assigned to each office, such as desks, chairs, and IT equipment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Space Planning.vst",
+        "Space Planning Data.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "17.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the sample diagram to your computer.\r\n\r\nTo customize the data linked to the template, download Space Planning Data.xlsx and populate it with your own space plan data.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26523",
+    "downloadPreload": true
+}

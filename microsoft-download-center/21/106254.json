@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Templates (.admx) for Windows 11 2024 Update (24H2)",
+    "downloadDescription": "This page provides complete set of Administrative Templates (.admx) for Windows 11 2024 Update (24H2)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Administrative Templates (.admx) for Windows 11 Sep 2024 Update.msi",
+            "url": "https://download.microsoft.com/download/9/5/b/95be347e-c49e-4ede-a205-467c85eb1674/Administrative Templates (.admx) for Windows 11 Sep 2024 Update.msi",
+            "size": "14753792",
+            "version": "1.0",
+            "datePublished": "9/30/2024 11:10:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\nGroup Policy tools use Administrative template files to populate policy settings in the user interface. This allows administrators to manage registry-based policy settings. <br/>\nThis download includes the Administrative Templates (.admx) for Windows 11 2024 Update (24H2) in the following languages: <br/>\n<ul>\n<li>cs-CZ Czech - Czech Republic</li>\n<li>da-DK Danish - Denmark</li>\n<li>de-DE German - Germany</li>\n<li>el-GR Greek - Greece</li>\n<li>en-US English - United States</li>\n<li>es-ES Spanish - Spain</li>\n<li>fi-FL Finnish - Finland</li>\n<li>fr-FR French - France</li>\n<li>hu-HU Hungarian - Hungary</li>\n<li>it-IT Italian - Italy</li>\n<li>ja-JP Japanese - Japan</li>\n<li>ko-KR Korean - Korea</li>\n<li>nb-NO Norwegian (Bokm\u00e5l) - Norway</li>\n<li>nl-NL Dutch - The Netherlands</li>\n<li>pl-PL Polish - Poland</li>\n<li>pt-BR Portuguese - Brazil</li>\n<li>pt-PT Portuguese - Portugal</li>\n<li>ru-RU Russian - Russia</li>\n<li>sv-SE Swedish - Sweden</li>\n<li>tr-TR Turkish - Turkey</li>\n<li>zh-CN Chinese - China</li>\n<li>zh-TW Chinese - Taiwan</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Administrative Templates (.admx) for Windows 11 Sep 2024 Update.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.1 MB"
+    ],
+    "detailsSection_file_date": "9/30/2024",
+    "systemRequirementsSection": "<ul>\n<br/>\n<li>User rights to run the Group Policy Management Editor (gpme.msc) or the Group Policy Object Editor (gpedit.msc). </li> <br/>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 7",
+        "Windows Server 2022",
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "To download the .msi file that contains the .admx files: <br/>\n<ol><br/>\n<li> Click the <b>download</b> button. </li> <br/>\n<li> In the File Download dialog box, click <b>Save </b>. </li> <br/>\n<li> In the Save As dialog box, browse to the directory on your computer to which you want to save the .msi file. </li> <br/>\n<li> To start downloading the .msi file, click <b> Save </b>. </li> <br/>\n</ol><br/>\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "how to create and manage the Central Store for Group Policy Administrative Templates in Windows",
+            "url": "https://docs.microsoft.com/en-US/troubleshoot/windows-client/group-policy/create-and-manage-central-store"
+        },
+        {
+            "title": "administrative Templates (.admx) for Windows 11 2023 Update (23H2) - v2.0",
+            "url": "https://www.microsoft.com/en-us/download/106066"
+        },
+        {
+            "title": "group Policy Settings Reference Spreadsheet for Windows 11 2023 Update (23H2) - v2.0",
+            "url": "https://www.microsoft.com/en-us/download/106067"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "106254",
+    "downloadPreload": true
+}

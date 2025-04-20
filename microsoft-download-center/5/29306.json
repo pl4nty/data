@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "WCF Data Services 5.0 for OData V3",
+    "downloadDescription": "WCF Data Services 5.0 enables creation and consumption of data services for the Web according to version 3 of the Open Data Protocol (OData), which facilitates data access and change via standard HTTP verbs.  WCF Data Services 5.0 includes .NET Framework server and client libraries as well as Silverlight client libraries.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WcfDataServices.exe",
+            "url": "https://download.microsoft.com/download/8/f/9/8f93dbbd-896b-4760-ac81-646f61363a6d/WcfDataServices.exe",
+            "size": "5599520",
+            "version": "5.0",
+            "datePublished": "7/15/2024 5:04:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "WCF Data Services 5.0 enables creation and consumption of data services for the Web according to version 3 of the Open Data Protocol (OData), which facilitates data access and change via standard HTTP verbs. WCF Data Services 5.0 includes .NET Framework server and client libraries as well as Silverlight client libraries. In addition, this release of WCF Data Services also includes the ODataLib and EDMLib libraries for flexible low-level serialization/deserialization according to the OData and EDM specifications. WCF Data Services 5.0 adds support for the following features: <br/><br/>\r\n<ul>\r\n<li> Any/All</li>\r\n<li> Actions</li>\r\n<li> Collections</li>\r\n<li> Named Streams/Stream Properties</li>\r\n<li> PATCH Verb</li>\r\n<li> Prefer Headers</li>\r\n<li> Properties on Derived Types</li>\r\n<li> Support for DateTimeOffset and TimeSpan Data Types</li>\r\n<li> Support for DbContext as the DataService Source</li>\r\n<li> Spatial</li>\r\n<li> Vocabularies</li></ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "WcfDataServices.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> Microsoft .NET Framework 4</li>\r\n<li> Microsoft Visual Studio 2010 or Microsoft Visual Web Developer 2010 Express Edition</li>\r\n<li> Microsoft Silverlight 4 SDK and Microsoft Silverlight Tools for Visual Studio 2010 (both optional)</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3",
+        "Windows Vista Service Pack 2",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 1",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download and run the installer to put WCF Data Services 5.0 on your computer.<br/>\r\n<ul>\r\n<li>Please make sure Visual Studio is closed before running the installer.</li>\r\n<li>This is a side-by-side release with the assemblies shipped with .NET Framework 4 and Silverlight 4.</li>\r\n<li> The WCF Data Services 5.0 installer will update the \"Add Service Reference\" tooling integration in Visual Studio 2010 if it\u2019s already installed, hence it will generate code based on WCF Data Services 5.0.</li>\r\n<li> The KB2502836 update for Visual Studio 2010 and Visual Web Developer (that gets delivered as a part of <a href=\"http://www.microsoft.com/download/en/details.aspx?id=28358\"> this update</a> for Silverlight 5 development) reverts the \"Add Service Reference\" behavior to generate code based on the assemblies that shipped in the .NET Framework 4. Running the WCF Data Services Installer and repairing the installation fixes this problem.</li>\r\n</ul>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29306",
+    "downloadPreload": true
+}

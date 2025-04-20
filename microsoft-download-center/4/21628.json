@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mobile App Stars",
+    "downloadDescription": "Windows Mobile App Stars",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "114_contactcard.vcf",
+            "url": "https://download.microsoft.com/download/f/a/2/fa2439fa-6f7f-40bf-9b2d-9c96883152db/114_contactcard.vcf",
+            "size": "3425",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "101_contactcard.vcf",
+            "url": "https://download.microsoft.com/download/f/a/2/fa2439fa-6f7f-40bf-9b2d-9c96883152db/101_contactcard.vcf",
+            "size": "3173",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Mobile App Stars",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "114_contactcard.vcf",
+        "101_contactcard.vcf"
+    ],
+    "detailsSection_file_size": [
+        "3.3 KB",
+        "3.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Mobile App Stars",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Windows Mobile App Stars",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21628",
+    "downloadPreload": true
+}

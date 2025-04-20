@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Compliance Manager 4.0",
+    "downloadDescription": "This tool provides centralized security baseline management features, a baseline portfolio, customization capabilities, and security baseline export flexibility to accelerate your organization\u2019s ability to efficiently manage the security and compliance process for the most widely used Microsoft technologies.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Security_Compliance_Manager_Setup.exe",
+            "url": "https://download.microsoft.com/download/a/5/0/a50f33ad-842e-43e8-ae99-3af984a67a52/Security_Compliance_Manager_Setup.exe",
+            "size": "137352272",
+            "version": "4.0.00.1",
+            "datePublished": "7/15/2024 4:18:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Security Compliance Manager takes our extensive guidance and documentation\u2014including the previously stand-alone product-specific security guides\u2014and incorporates it into one tool, enabling you to access and automate all of your organization\u2019s security baselines in a centralized location. <br/><br/>\r\n\r\nTo access the security guidance for Windows client and server operating systems and Microsoft applications, simply download the tool, and select the \"Attachments \\ Guides\" node within each product baseline tree. <br/><br/>\r\n\r\nTake advantage of the experience of Microsoft security professionals, and reduce the time and money required to harden your environment. This tool will help you plan, and manage your security baselines for Windows client and server operating systems, and Microsoft applications. Access the complete database of Microsoft recommended security settings, customize your baselines, and then choose from multiple formats\u2014Group Policy objects (GPOs), Desired Configuration Management (DCM) 2007 packs, or Security Content Automation Protocol (SCAP)\u2014to export the baselines to your environment to automate the security baseline deployment and compliance verification process. Use the Security Compliance Manager to achieve a secure, reliable, and centralized IT environment that will help you better balance your organization\u2019s needs for security and functionality. <br/><br/>\r\n\r\n<b>Key Features & Benefits</b><br/><br/> \r\n<ul>\r\n<li><b> Gold master support </b>: Import and take advantage of your existing Group Policy. </li>\r\n<li><b> Configure stand-alone machines</b>:  Deploy your configurations to non-domain joined computers using the GPO Pack feature. </li>\r\n<li><b> Updated security guidance </b>: Take advantage of the deep security expertise and best practices in the updated security guides and the attack surface reference workbooks to help reduce the security risks that you consider to be the most important. </li>\r\n<li><b> Centralized Management of Your Baseline Portfolio </b>:  The centralized management console of the Security Compliance Manager provides you with a unified, end-to-end user experience to plan, customize, and export security baselines. The tool gives you full access to a complete portfolio of recommended baselines for Windows client and server operating systems, and Microsoft applications. The Security Compliance Manager also enables you to quickly update the latest Microsoft baseline releases and take advantage of baseline version control. </li>\r\n<li><b> Security Baseline Customization </b>:  Customizing, comparing, merging, and reviewing your baselines policy configurations just got easier. Use the customization capabilities of the Security Compliance Manager to duplicate any of the recommended baselines from Microsoft and quickly modify security settings to meet the standards of your organization\u2019s environment. </li>\r\n<li><b> Multiple Export Capabilities </b>:  Export baselines in formats like Group Policy objects (GPOs), Desired Configuration Management (DCM) packs, or Security Content Automation Protocol (SCAP) to enable automation of deployment and monitoring baseline compliance. </li>\r\n<li>Available policy configuration baselines include Windows Server 2012, Windows Server 2008 R2 SP1, Windows Server 2008 SP2, Windows Server 2003 SP2, Hyper-V, Windows 8, Windows 7 SP1, Windows Vista SP2, Windows XP SP3, BitLocker Drive Encryption, Windows Internet Explorer 10, Windows Internet Explorer 9, Windows Internet Explorer 8, Microsoft Office 2010 SP1, Microsoft Office 2007 SP2, Exchange Server 2010 SP2 and Exchange Server 2007 SP3. </li>\r\n</ul>\r\n<b>Supporting Resources</b><br/><br/>\r\n\r\nAdditional information and supporting resources for SCM are available on the TechNet Wiki site: <br/><br/>\r\n<ul>\r\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=16776\"> SCM 3.0.60 download </a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=207307\">SCM Overview</a></li>\r\n<li><a href=\"https://technet.microsoft.com/en-us/itpro/windows/keep-secure/windows-security-baselines\"> Windows Security Baselines </a></li>\r\n<li><a href=\"https://blogs.technet.microsoft.com/secguide/\"> Security Baselines Blog</a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=207246\">SCM Frequently Asked Questions (FAQ) </a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=179814\">SCM Release Notes</a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=206717\">SCM Baseline Download Help</a></li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.00.1",
+    "detailsSection_file_name": [
+        "Security_Compliance_Manager_Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "131.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Microsoft Word Viewer </a>(available as a free download) can be used to view Word documents.</li>\r\n<li> SQL Express 2008 </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button next to the file you would like to download to start the download.</li>\r\n<li>Do one of the following:</li>\r\n<ul> \r\n<li>To immediately start the installation, click <b>Open</b>, <b>Run</b> or <b>Run this program from its current location</b>. Then extract the files to your preferred location on your computer. </li>\r\n<li>To save the download to your preferred location on your computer for use at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li></ul></ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Configuration Manager",
+            "url": "http://www.microsoft.com/configmgr"
+        },
+        {
+            "title": "configuration Management for Nano Server",
+            "url": "https://blogs.technet.microsoft.com/grouppolicy/2016/05/09/configuration-management-on-servers"
+        },
+        {
+            "title": "operations Management Suite",
+            "url": "https://www.microsoft.com/en-us/cloud-platform/operations-management-suite"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "53353",
+    "downloadPreload": true
+}

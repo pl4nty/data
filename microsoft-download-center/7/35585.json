@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2013 Client Components SDK",
+    "downloadDescription": "The SharePoint Server 2013 Client Components SDK can be used to enable remote and local development with SharePoint Server 2013",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sharepointclientcomponents_15-4711-1001_x64_en-us.msi",
+            "url": "https://download.microsoft.com/download/e/1/9/e1987f6c-4d0a-4918-aefe-12105b59ff6a/sharepointclientcomponents_15-4711-1001_x64_en-us.msi",
+            "size": "2314240",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sharepointclientcomponents_15-4711-1001_x86_en-us.msi",
+            "url": "https://download.microsoft.com/download/e/1/9/e1987f6c-4d0a-4918-aefe-12105b59ff6a/sharepointclientcomponents_15-4711-1001_x86_en-us.msi",
+            "size": "1933312",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointClientComponents_License.rtf",
+            "url": "https://download.microsoft.com/download/e/1/9/e1987f6c-4d0a-4918-aefe-12105b59ff6a/SharePointClientComponents_License.rtf",
+            "size": "24404",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nThis easy-to-use, redistributable package of the Microsoft Silverlight and Microsoft .NET managed client object models in Microsoft SharePoint 2013 enables developers to reference the client object model.\u200b The package includes a comprehensive collection of client-side object model (CSOM) DLLs. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sharepointclientcomponents_15-4711-1001_x64_en-us.msi",
+        "sharepointclientcomponents_15-4711-1001_x86_en-us.msi",
+        "SharePointClientComponents_License.rtf"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "1.8 MB",
+        "23.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and run the file on this page. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35585",
+    "downloadPreload": true
+}

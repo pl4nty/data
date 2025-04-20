@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3: Changes for Packing Material for Austria",
+    "downloadDescription": "Microsoft Dynamics AX 2012 R3: Changes for Packing Material for Austria\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AX2012R3ChangesforpackingmaterialfeesAustria.pdf",
+            "url": "https://download.microsoft.com/download/1/6/e/16e1b1dd-2021-4eea-85df-d5b704b27f95/AX2012R3ChangesforpackingmaterialfeesAustria.pdf",
+            "size": "300075",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In Microsoft Dynamics AX 2012 R3 for Austria, the process that supports the calculation of packing material fees has changed. To support the new classification of packing materials, a new master data packing material class was implemented in the system. This download explains the new process for calculating packing material fees in Austria. This functionality is available if you have installed hotfix 3066291 for Austria (AUT). See the download for more details. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "AX2012R3ChangesforpackingmaterialfeesAustria.pdf"
+    ],
+    "detailsSection_file_size": [
+        "293.0 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101858",
+    "downloadPreload": true
+}

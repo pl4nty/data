@@ -1,0 +1,221 @@
+{
+    "error": "",
+    "downloadTitle": "Service Pack 1 for Microsoft SharePoint Server 2013 Language Pack (KB2880554) ",
+    "downloadDescription": "Service Pack 1 for Microsoft SharePoint Server 2013 Language Pack  contains new updates which improve security, performance, and stability.  Additionally, the SP is a roll-up of all previously released updates.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "serverlpksp2013-kb2880554-fullfile-x64-en-us.exe",
+            "url": "https://download.microsoft.com/download/4/1/e/41efdc4c-c254-4b3c-8638-da83062634f6/serverlpksp2013-kb2880554-fullfile-x64-en-us.exe",
+            "size": "136548296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:37:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2880554\">Service Pack 1 for Microsoft SharePoint Server 2013 Language Pack (KB2880554) </a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2880554",
+        "name": "KB2880554"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "serverlpksp2013-kb2880554-fullfile-x64-en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "130.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\nFor information about supported service packs and Windows Installer versions, please see \r\n<a href=\"http://support.microsoft.com/kb/967543\">Microsoft Office Supported Service Packs and Windows Installer (KB967543).</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<br />\r\n\r\nTo start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li>\r\n</ul>\r\n<br />\r\n<br />\r\n\r\n<b>IT professional resources</b><br />\r\nIT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"http://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"http://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42543",
+    "downloadPreload": true
+}

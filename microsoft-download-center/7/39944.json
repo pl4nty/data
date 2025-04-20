@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Book Download: Dependency Injection with Unity",
+    "downloadDescription": "Unity is a dependency injection container. It is full-featured, with support for instance and type interception and custom extensions. Unity 3 also supports Windows Store apps.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DependencyInjectionWithUnity.epub",
+            "url": "https://download.microsoft.com/download/4/d/b/4dbc771d-9e24-4211-adc5-65812115e52d/DependencyInjectionWithUnity.epub",
+            "size": "1066452",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DependencyInjectionWithUnity.pdf",
+            "url": "https://download.microsoft.com/download/4/d/b/4dbc771d-9e24-4211-adc5-65812115e52d/DependencyInjectionWithUnity.pdf",
+            "size": "3461204",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Authors: <i>Dominic Betts, Grigori  Melnik, Fernando Simonazzi, Mani Subramanian</i>.<br/>\r\nForeword by <i>Chris Tavares</i>.\r\n<br/><br/>\r\nOver the years software systems have evolutionarily become more and more complex. One of the techniques for dealing with this inherent complexity of software systems is dependency injection \u2013 a design pattern that allows the removal of hard-coded dependencies and makes it possible to assemble a service by changing dependencies easily, whether at run-time or compile-time. It promotes code reuse and loosely-coupled design which leads to more easily maintainable and flexible code. <br/><br/>\r\nThe guide you are holding in your hands is a primer on using dependency injection with Unity \u2013 a lightweight extensible dependency injection container built by the Microsoft patterns & practices team. It covers various styles of dependency injection and also additional capabilities of Unity container, such as object lifetime management, interception, and registration by convention. It also discusses the advanced topics of enhancing Unity with your custom extensions. <br/><br/>\r\nThe guide contains plenty of trade-off discussions and tips and tricks for managing your application cross-cutting concerns and making the most out of both dependency injection and Unity. These are accompanied by a real world example that will help you master the techniques. Keep in mind that Unity can be used in a wide range of application types such as desktop, web, services, and cloud. We encourage you to experiment with the sample code and think beyond the scenarios discussed in the guide. <br/><br/>\r\nIn addition, the guide includes the Tales from the Trenches \u2013 a collection of case studies that offer a different perspective through the eyes of developers working on the real world projects and sharing their experiences. These chapters make clear the range of scenarios in which you can use Unity, and also highlight its ease of use and flexibility. <br/><br/>\r\nWhether you are a seasoned developer or just starting your development journey, we hope this guide will be worth your time studying it. We hope you discover that Unity container adds significant benefits to your applications and helps you to achieve the goals of maintainability, testability, flexibility, and extensibility in your own projects. Happy coding!\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "DependencyInjectionWithUnity.epub",
+        "DependencyInjectionWithUnity.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <li>A document reader capable of displaying PDF format documents</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "FreeBSD",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Macintosh",
+        "TabletPC",
+        "Unix",
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the document format appropriate to your reader software.",
+    "additionalInformationSection": "For help and support visit <a href=\"http://msdn.com/unity\">Unity</a> on MSDN or the <a href=\"http://www.codeplex.com/unity\">Unity community site</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "enterprise Library 6 on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dn169621.aspx"
+        },
+        {
+            "title": "unity 3 on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dn170416.aspx"
+        },
+        {
+            "title": "unity 3 Download",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=38788"
+        },
+        {
+            "title": "enterprise Library 6 Download",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=38789"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39944",
+    "downloadPreload": true
+}

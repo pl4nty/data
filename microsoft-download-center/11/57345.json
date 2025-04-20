@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_1806_hotfix",
+    "downloadDescription": "MARS_1806_hotfix",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/d/4/b/d4b9695b-12a7-466c-bc79-dce91f65099f/MARSAgentInstaller.exe",
+            "size": "41015784",
+            "version": "WIN2K12-R2",
+            "datePublished": "7/15/2024 4:55:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MARS_1806_hotfix  Build Version 9140",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57345",
+    "downloadPreload": true
+}

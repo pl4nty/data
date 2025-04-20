@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 OEM Appliance OOBE Four-Node Cluster Setup Guide",
+    "downloadDescription": "Setup guide for extending the OEM Appliance OOBE for Windows Server 2012 to support a 4-node cluster or cluster-in-a-box, and deploy an HA Active Directory domain controller.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WS2012_OEMOOBE_4NodeSetupGuide-KB2769588.docx",
+            "url": "https://download.microsoft.com/download/6/d/f/6dfa9f4d-4011-4320-a2d7-f42ae62e3ebf/WS2012_OEMOOBE_4NodeSetupGuide-KB2769588.docx",
+            "size": "100230",
+            "version": "March 2013",
+            "datePublished": "7/15/2024 3:33:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide helps IT professionals extend the OEM Appliance OOBE and Initial Configuration Tasks (ICT) for Windows Server 2012 or Windows Storage Server 2012 to support a 4-node cluster or cluster-in-a-box configuration, and deploy a highly available Active Directory domain controller for use with the appliance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2769588",
+        "name": "KB2769588"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2013",
+    "detailsSection_file_name": [
+        "WS2012_OEMOOBE_4NodeSetupGuide-KB2769588.docx"
+    ],
+    "detailsSection_file_size": [
+        "97.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": " Microsoft Word or Word Viewer\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Storage Server 2012"
+    ],
+    "installInstructionSection": "Click the Download button to open or save the file.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Storage Server 2012 Planning and Deployment",
+            "url": "http://technet.microsoft.com/en-us/library/jj643306.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "38766",
+    "downloadPreload": true
+}

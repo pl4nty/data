@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ESL 123 Mass Noun Examples",
+    "downloadDescription": "The ESL_123_MASS_NOUN dataset is a set of 123 sentences, found on the World Wide Web, that apparently were written by native speakers of languages spoken in China. Last published: July 18, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MassNouns123.msi",
+            "url": "https://download.microsoft.com/download/5/2/8/528a4f70-e2e0-48d0-b897-f1a5c96b9398/MassNouns123.msi",
+            "size": "207872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The ESL_123_MASS_NOUN dataset is a set of 123 sentences, found on the World Wide Web, that apparently were written by native speakers of languages spoken in China. Each sentence contains an example of at least one of a set of 14 mass nouns. Not all sentences contain errors specifically relating to these words. These data are being made available to the research community for non-commercial, scholarly purposes only and must not be used for any other purpose. Each sentence is accompanied by the targeted word, the source URL, the sentence, and a minimally edited human \"translation\" into more appropriate English. These are separated by tab spaces.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MassNouns123.msi"
+    ],
+    "detailsSection_file_size": [
+        "203.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52550",
+    "downloadPreload": true
+}

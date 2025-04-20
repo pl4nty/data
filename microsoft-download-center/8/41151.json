@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Visual C++ Compiler November 2013 CTP",
+    "downloadDescription": "This compiler CTP contains preview versions of various C++11, C++14, and C++/CX language features.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vc_CompilerCTP.Nov2013.exe",
+            "url": "https://download.microsoft.com/download/3/c/2/3c271b79-6354-4b66-9014-c6cebc14c5c4/vc_CompilerCTP.Nov2013.exe",
+            "size": "34646088",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Breaking Changes.docx",
+            "url": "https://download.microsoft.com/download/3/c/2/3c271b79-6354-4b66-9014-c6cebc14c5c4/Breaking Changes.docx",
+            "size": "24640",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visual C++ Compiler November 2013 CTP contains a preview release of the Visual C++ compiler that adds the following C++11, C++14, and C++/CX features to the set of features already supported by the Visual C++ compiler shipped in Visual Studio 2013:\r\n\r\n\u2022 Implicit move special member function generation (thus also completing =default)\r\n\u2022 Reference qualifiers on member functions (a.k.a. \"& and && for *this\")\r\n\u2022 Thread-safe function local static initialization (a.k.a. \"magic statics\")\r\n\u2022 Inheriting constructors\r\n\u2022 alignof/alignas\r\n\u2022 __func__\r\n\u2022 Extended sizeof\r\n\u2022 constexpr (except for constructors)\r\n\u2022 noexcept (unconditional)\r\n\u2022 C++14 decltype(auto)\r\n\u2022 C++14 auto function return type deduction\r\n\u2022 C++14 generic lambdas (with explicit lambda capture list)\r\n\u2022 (Proposed for C++17) Resumable functions and await\r\n\r\nA tour of these features is available on Channel 9: http://channel9.msdn.com/Series/C9-Lectures-Stephan-T-Lavavej-Core-C-/Core-Cpp-10\r\n\r\nMore details about this release are available from the Visual C++ Blog: http://blogs.msdn.com/b/vcblog/archive/2013/11/18/announcing-the-visual-c-compiler-november-2013-ctp.aspx",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "vc_CompilerCTP.Nov2013.exe",
+        "Breaking Changes.docx"
+    ],
+    "detailsSection_file_size": [
+        "33.0 MB",
+        "24.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This package requires VIsual Studio 2013 to be pre-installed on the machine.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "After downloading and installing the program, you can launch Visual Studio 2013 and switch to use the new compiler in your C++ projects. We recommend that you create a separate project configuration and modify it for projects that utilize the CTP compiler. To do so:\r\n\r\n1. Open the \"Build\" menu and then select the \"Configuration Manager\" option.\r\n2. In the Configuration Manager, duplicate your existing configuration.\r\n3. Open the project's Property Pages by pressing F7 or right clicking the project in Solution Explorer and selecting \"Properties\".\r\n4. In the \"General\" tab, change \"Platform Toolset\" from \"Visual Studio 2013 (v120)\" to \"Visual C++ Compiler Nov 2013 CTP (CTP_Nov2013)\".\r\n5. Rebuild your project.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41151",
+    "downloadPreload": true
+}

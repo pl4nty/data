@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Diagnostics (Preview)",
+    "downloadDescription": "SQL Server Management Studio extension for Diagnostics",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server Diagnostics Setup.msi",
+            "url": "https://download.microsoft.com/download/f/f/e/ffeb7ded-6b56-459b-a064-7c7e7f8fe799/SQL Server Diagnostics Setup.msi",
+            "size": "2097152",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:43:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server Diagnostics is a collection of micro-services which enables SQL Server customers to self-help and debug SQL Server issues related to memory dumps and receive recommended fixes for their issues.\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>Note</b>\r\n<br/>\r\n<br/>\r\nInstalling SQL Server Diagnostics for SSMS 2016, will create following folders:\r\n<ul>\r\n<li>%PROGRAMFILES(x86)%\\Microsoft Corporation\\SQL Server Diagnostics\\SSMS 2016</li>\r\n<li>%PROGRAMFILES(x86)%\\Microsoft SQL Server\\130\\Tools\\Binn\\ManagementStudio\\Extensions\\SQL Server Diagnostics </li>\r\n</ul>\r\n\r\nInstalling SQL Server Diagnostics for SSMS 2017, will create following folders: \r\n<ul>\r\n<li>%PROGRAMFILES(x86)%\\Microsoft Corporation\\SQL Server Diagnostics\\SSMS 2017</li>\r\n<li>%PROGRAMFILES(x86)%\\Microsoft SQL Server\\140\\Tools\\Binn\\ManagementStudio\\Extensions\\SQL Server Diagnostics</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server Diagnostics Setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n        <li>Microsoft SQL Server Management Studio (SSMS) 2016  or a later version. If you don't have SSMS installed, please install it from: <a target='_blank' href='https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms'>SQL Server Management Studio</a></li>\r\n        <li>If SSMS is running on server machine (e.g. 2008 R2, 2012 R2):\n          <ul>\n              <li>Add <b>https://ecs.microsoft.com/</b> to trusted sites</li>\n              <li>In IE Settings, on the <b>Advanced</b> tab, deselect the <b>Do not save encrypted pages to disk</b> setting under the Security section</li>\n          </ul>\n        </li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2003",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\n<li>The download is a .msi file. To start the download, click <b>Download</b></li>\n<li>Close all the running SSMS instances</li> \n<li>Run the .msi to install the extension</li>\n<li>Select the product on which you need to install the extension. At present SQL Server Diagnostics is supported for SSMS 2016 and SSMS 2017</li>\n<li>After installation is complete, Open SSMS and navigate to the <b>Tools - SQL Server Diagnostics </b> menu</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55516",
+    "downloadPreload": true
+}

@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Accelerator for SWIFT - Message Pack 2015",
+    "downloadDescription": "BizTalk Server Accelerator for SWIFT - Message Pack 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Installing Microsoft BizTalk Accelerator for SWIFT 2015 Message Pack.doc",
+            "url": "https://download.microsoft.com/download/3/a/c/3ac323b7-9b80-4df1-b49c-19a94a5b54be/Installing Microsoft BizTalk Accelerator for SWIFT 2015 Message Pack.doc",
+            "size": "135680",
+            "version": "4.3.710.0",
+            "datePublished": "7/15/2024 3:46:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP2015Sample.zip",
+            "url": "https://download.microsoft.com/download/3/a/c/3ac323b7-9b80-4df1-b49c-19a94a5b54be/MP2015Sample.zip",
+            "size": "955",
+            "version": "4.3.710.0",
+            "datePublished": "7/15/2024 3:46:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP_2015.exe",
+            "url": "https://download.microsoft.com/download/3/a/c/3ac323b7-9b80-4df1-b49c-19a94a5b54be/MP_2015.exe",
+            "size": "8533584",
+            "version": "4.3.710.0",
+            "datePublished": "7/15/2024 3:46:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server Accelerator for SWIFT - Message Pack 2015",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.710.0",
+    "detailsSection_file_name": [
+        "Installing Microsoft BizTalk Accelerator for SWIFT 2015 Message Pack.doc",
+        "MP2015Sample.zip",
+        "MP_2015.exe"
+    ],
+    "detailsSection_file_size": [
+        "132.5 KB",
+        "955 bytes",
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 \r\nBizTalk Accelerator for SWIFT - Message Pack 2015 does not contain any components other than schemas and business rules. Supported Operating Systems: Windows 7, Windows Server 2008 R2, Windows 8, Windows Server 2012, Windows 8.1, Windows Server 2012 R2 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "BizTalk Accelerator for SWIFT Message Pack 2015 requires installation of Microsoft BizTalk Accelerator 2013 R2 for SWIFT or Microsoft BizTalk Accelerator 2013 for SWIFT or Microsoft BizTalk Accelerator 2010 for SWIFT as appropriate for the version of BizTalk Accelerator for SWIFT that you deployed.<br/>\r\nBefore installing the BizTalk Accelerator for SWIFT - Message Pack 2015, we recommend that you download and review the Installation Guide. This guide contains important information about how to install and configure the message pack to help reduce downtime in the Microsoft BizTalk Server environment. See the download section above to obtain this guide.<br/>\r\nPlease uninstall any prior versions of this Message Pack 2015 before attempting to install this latest version.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48219",
+    "downloadPreload": true
+}

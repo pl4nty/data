@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2022 Express",
+    "downloadDescription": "Microsoft\u00ae SQL Server\u00ae 2022 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL2022-SSEI-Expr.exe",
+            "url": "https://download.microsoft.com/download/5/1/4/5145fe04-4d30-4b85-b0d1-39533663a2f1/SQL2022-SSEI-Expr.exe",
+            "size": "4290992",
+            "version": "16.0.1000.6",
+            "datePublished": "7/15/2024 4:33:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2022 Express is a free, feature-rich editions of SQL Server that is ideal for learning, developing, powering desktop, web & small server applications, and for redistribution by ISVs.\r\n\r\n<br />\r\n<br />\r\n<b>LocalDB (SqlLocalDB)</b>\r\n<ul>\r\n<li>LocalDB is a lightweight version of Express that has all its programmability features, yet runs in user mode and has a fast, zero-configuration installation and short list of pre-requisites. Use this if you need a simple way to create and work with databases from code. It can be bundled with Application and Database Development tools like Visual Studio and or embedded with an application that needs local databases.</li>\r\n</ul>\r\n<b>Express (SQLEXPR)</b>\r\n<ul>\r\n  <li>\r\n    Express edition includes the SQL Server database engine only. Best suited to accept remote connections or administer remotely.\r\n  </li>\r\n</ul>\r\n    <b>Express with Advanced Services (SQLEXPRADV)</b>\r\n<ul>\r\n  <li>This package contains Polybase and Full Text Search features in addition to SQL Database Engine. </li>\r\n  <br />\r\n</ul>\r\n<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.1000.6",
+    "detailsSection_file_name": [
+        "SQL2022-SSEI-Expr.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>\r\n  <b>Processor</b> \r\n  </li>\r\n <ul>\r\n  <li>Intel - compatible processor with a minimum speed of 1 GHz or a faster processor</li> \r\n  </ul>\r\n <li>\r\n  <b>RAM</b> \r\n  </li>\r\n <ul>\r\n  <li>Minimum 512MB</li> \r\n  </ul>\r\n <li>\r\n  <b>Hard Disk Space</b> \r\n  </li>\r\n <ul>\r\n  <li>4.2 GB of Disk Space</li> \r\n  </ul>\r\n  </ul>\r\n  <br /> \r\n  <b>Limitations :</b> \r\n  Microsoft SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the SQL Server 2022 Express installer (SQLServer2022-SSEI-Expr) on this page that, when executed, will present options to perform an installation or download media only.",
+    "additionalInformationSection": "\r\n<br /><br />\r\n- If you have questions about SQL Server Express, visit  <a href=\" https://learn.microsoft.com/en-us/answers/topics/sql-server-general.html\"> Microsoft Q&A </a>.\r\n<br /><br />\r\n- Help improve SQL Server by <a href=\" https://feedback.azure.com/d365community/forum/04fe6ee0-3b25-ec11-b6e6-000d3a4f0da0\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104781",
+    "downloadPreload": true
+}

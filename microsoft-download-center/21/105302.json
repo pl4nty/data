@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Surface app",
+    "downloadDescription": "Migrated from DMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SurfaceHub_75.3170.114.0_Desktop_X64.Arm64.msixbundle",
+            "url": "https://download.microsoft.com/download/1a91fe3e-b6be-465d-bda0-b8f12fd0fca7/Microsoft.SurfaceHub_75.3170.114.0_Desktop_X64.Arm64.msixbundle",
+            "size": "265316673",
+            "version": "1",
+            "datePublished": "3/27/2025 11:03:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<a href=\"https://apps.microsoft.com/store/detail/surface/9WZDNCRFJB8P\">https://apps.microsoft.com/store/detail/surface/9WZDNCRFJB8P</a>\r\n<br></br>\r\nGet the most out of your Surface. The Surface app provides you with customization options and opportunity to learn more about your Surface device. Give feedback on your experience so we can keep making it better. Safety, warranty, and regulatory info is there whenever you need it.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft.SurfaceHub_75.3170.114.0_Desktop_X64.Arm64.msixbundle"
+    ],
+    "detailsSection_file_size": [
+        "253.0 MB"
+    ],
+    "detailsSection_file_date": "3/27/2025",
+    "systemRequirementsSection": "<ul>\r\n</ul>\r\n<b>Available on</b>: PC, Surface Hub\r\n<ul>\r\n</ul>\r\n<b>OS</b>: Windows 10 version 18362.0 or higher\r\n<ul>\r\n</ul>\r\n<b>Architecture</b>: x64, Arm64",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 11"
+    ],
+    "installInstructionSection": "...",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105302",
+    "downloadPreload": true
+}

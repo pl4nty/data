@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-Specific Update for Mexico - Electronic Invoices",
+    "downloadDescription": "This white paper describes the country-specific updates to electronic invoicing that are released for Mexico in Cumulative Update 3 (CU-3) for Microsoft Dynamics AX 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country specific update for Mexico_AX2012_Electronic invoices.pdf",
+            "url": "https://download.microsoft.com/download/6/8/3/68380081-92c4-467d-8124-c34620e16571/Country specific update for Mexico_AX2012_Electronic invoices.pdf",
+            "size": "419187",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An electronic invoice is a legally accepted digital tax receipt that your organization submits to the Servicio de Administraci\u00f3n Tributaria (SAT). By using Microsoft Dynamics AX to generate either CFD or CFDI electronic invoices, you help make sure that the electronic invoices that your organization generates are secure, confidential, authentic, and legally acceptable. You can also make sure that international standards are applied to your electronic invoices. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country specific update for Mexico_AX2012_Electronic invoices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "409.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38836",
+    "downloadPreload": true
+}

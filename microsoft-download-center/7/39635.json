@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for  VMM Fabric Dashboard 2012 R2",
+    "downloadDescription": "A close integration between System Center 2012 R2 Virtual Machine Manager and System Center 2012 R2 Operations Manager introduces System Center cloud hybrid monitoring of physical and virtual layers for hybrid private cloud environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Virtual Machine Manager Fabric Dashboard.msi",
+            "url": "https://download.microsoft.com/download/1/a/6/1a6fc909-3987-4a6c-98a7-7ce17752506d/Virtual Machine Manager Fabric Dashboard.msi",
+            "size": "602112",
+            "version": "2012 R2",
+            "datePublished": "7/15/2024 4:26:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Fabric Health Dashboard \u2013 Monitoring the Health of Private Clouds</b><br/>\r\nThe Fabric Health Dashboard shows a detailed overview of the health of your private clouds and the fabric that services those clouds. The dashboard helps you answer questions like \u201cWhat is the health of my clouds and the fabric serving those clouds?\u201d<br/>\r\n<br/>\r\nTo view the Fabric Health Dashboard, after you import the management pack, click <b>Monitoring</b>, and in <b>Cloud Health Dashboard</b>, click <b>Cloud Health</b>. Select the cloud you want to investigate, and then, in the <b>Tasks</b> pane, click <b>Fabric Health Dashboard</b>.<br/>\r\n<b>Feature Summary</b><br/>\r\nFor each cloud, the Fabric Health Dashboard displays these aspects of the fabric:<br/>\r\n<ul>\r\n<li><b>Host State:</b> monitors the health state of the hosting groups or the computing aspects of the cloud, such as CPU, memory, disks, and network adapters</li>\r\n<li><b>Storage Pools State File Share and LUN State: </b>monitors the health state of the storage aspect of fabric for issues, such as disk space capacity and allocation</li>\r\n<li><b>Network Node State:</b> utilizes network monitoring in Operations Manager and displays the health state of network nodes (devices) that are relevant for the cloud you selected. Only physical network devices within one hop from the hosts are shown. To see the physical network devices, you must enable the Network Monitoring feature of Operations Manager and monitor the physical network devices connected to the hosts. Virtual networks are not shown in the dashboard. </li>\r\n</ul><br/>\r\nThe<b> Active Alerts </b>and <b>Number of VMs </b>fields on this dashboard help indicate which issues are having the greatest impact on your cloud and can help you prioritize your work. <br/>\r\n<br/>\r\n<b>Fabric Monitoring Diagram View \u2013 Displays Health States of Cloud and On-Premise Environments</b><br/>\r\nThe Diagram view gives you a diagram of the entire infrastructure and shows the health state of each part of the fabric. The Diagram view helps you answer questions, such as \u201cWhat is the health of my entire fabric?\u201d Improvements to the diagram ensure that health rolls up and that the relevant fabric components are part of the Diagram View.<br/>\r\n<br/>\r\nTo Open Diagram View, click <b>Monitoring</b>, and in <b>Microsoft System Center Virtual Machine Manager Views</b>, click <b>Diagram View</b> for the environment you want to see displayed as a diagram.<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012 R2",
+    "detailsSection_file_name": [
+        "Virtual Machine Manager Fabric Dashboard.msi"
+    ],
+    "detailsSection_file_size": [
+        "588.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center 2012 R2</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "For detailed installation instructions please utilize the guide for System Center Monitoring Pack for System Center 2012- Virtual Machine Manager <br/>\r\n<br/>\r\n<b>Note: </b>This updated management pack release requires a mandatory configuration identified in the mandatory configuration section of the Management guide.<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39635",
+    "downloadPreload": true
+}

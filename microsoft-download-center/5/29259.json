@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Brazil",
+    "downloadDescription": "This white paper describes the country-specific update released for Brazil in hotfix rollup 8 for Microsoft Dynamics AX 2009 SP1. See Microsoft Knowledge Base article 2677618 for hotfix download information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RU8 Country_specific update for Brazil.pdf",
+            "url": "https://download.microsoft.com/download/f/9/4/f94332c5-4dab-4245-809c-8104a0167f78/RU8 Country_specific update for Brazil.pdf",
+            "size": "314197",
+            "version": "2009",
+            "datePublished": "6/13/2024 12:10:39 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes a Microsoft Dynamics AX 2009 feature, released in hotfix rollup 8, that is specific to users in Brazil.<br /><br />\r\nFor more information about other features that apply to Brazil, refer to the Help. Information that is specific to Brazil includes (BRA) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "RU8 Country_specific update for Brazil.pdf"
+    ],
+    "detailsSection_file_size": [
+        "306.8 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29259",
+    "downloadPreload": true
+}

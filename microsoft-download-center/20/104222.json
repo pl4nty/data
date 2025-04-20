@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server\u00ae 2016 Service Pack 3 Azure Connect Pack",
+    "downloadDescription": "SQL Server 2016 Service Pack 3 Azure Connect Pack - KB5014242",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016-KB5014242-x64.exe",
+            "url": "https://download.microsoft.com/download/1/9/7/197fcbdb-bf21-42e9-99a4-02048b000099/SQLServer2016-KB5014242-x64.exe",
+            "size": "483033520",
+            "version": "13.0.7000.253",
+            "datePublished": "7/15/2024 4:31:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "\n<b>Microsoft\u00ae SQL Server\u00ae 2016 Service Pack 3 Azure Connect Pack</b>\n<br />\n<ul>\n  <li><a name=\"KB5014242\"></a><a href=\"http://support.microsoft.com/help/5014242 \">KB5014242</a></li>\n    </ul><br />\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.7000.253",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB5014242-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "460.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n      For complete system requirements, please reference the detailed <a name=\"ms143506\"></a><a href=\"https://msdn.microsoft.com/en-us/library/ms143506.aspx\">Systems Requirements</a> page.\n<br />\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "\n<br />\nAfter the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions.\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104222",
+    "downloadPreload": true
+}

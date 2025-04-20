@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Service Contracts for Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Service Contracts module in Microsoft Dynamics SL 2015.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_SN.zip",
+            "url": "https://download.microsoft.com/download/b/7/7/b7735744-9cb7-4a1f-84a7-ec9b609bea0b/SL2015_ENUS_SN.zip",
+            "size": "7463335",
+            "version": "NA.",
+            "datePublished": "11/15/2023 4:40:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience\r\n      <b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Service Contracts module in Microsoft Dynamics SL. At Training Material Completion\r\n   After reviewing this training, individuals will have:<ul style=\"font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;line-height:16px;\"><li>Understand the integration of Service Contracts with other Microsoft Dynamics SL modules</li><li>Explain the setup screens available in the Service Contracts module.</li><li>Understand the process for entering and reporting on a service contract.</li><li>How to process service contract revenue and invoicing</li><li>How to generate preventative maintenance schedules for equipment assigned to a contract</li></ul> Prerequisites\r\n   \r\n      <b></b>Before reviewing this training, it is recommended that individuals have:<ul style=\"font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;line-height:16px;\"><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li></ul>\r\n   \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_SN.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101764",
+    "downloadPreload": true
+}

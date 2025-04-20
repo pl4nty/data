@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Udi Dahan Scales Web Applications!",
+    "downloadDescription": "Udi Dahan is back to talk to the guys about scaling web applications. This is an area of expertise for Richard as well as Udi, so you know you'll get your money's worth out of this one!",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080812UDahan.zip",
+            "url": "https://download.microsoft.com/download/c/3/0/c3059aaa-6b60-41db-80d1-478f27efc8dd/20080812UDahan.zip",
+            "size": "48921354",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Udi Dahan is The Software Simplist, recognized by Microsoft Corporation with the coveted Most Valuable Professional award for Solutions Architecture now 3 years running. Udi is a Connected Technologies Advisor working with Microsoft on WCF, WF, and Oslo. He also serves on the Advisory Boards of the Microsoft Software Factories Initiative and the Patterns & Practices\u2019 Prism Project. He provides clients all over the world with training, mentoring and high-end architecture consulting services, specializing in Service-Oriented, scalable and secure .NET architecture design. Udi is a member of the European Speakers Bureau of the International .NET Association, a founding member of the Architect Training Committee of the International Association of Software Architects, a Dr. Dobb\u2019s sponsored expert on Web Services, SOA, & XML, a frequent conference presenter, and a regularly published author.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080812UDahan.zip"
+    ],
+    "detailsSection_file_size": [
+        "46.7 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24800",
+    "downloadPreload": true
+}

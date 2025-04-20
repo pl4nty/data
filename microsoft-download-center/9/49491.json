@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server, Real-Time Statistics Manager (64-bit)",
+    "downloadDescription": "This download includes the three (3) packages necessary to deploy Skype for Business Server, StatsMan.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Update-StatsMan.ps1",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9da9d3-5e28-414d-9f1c-4852055bc5b4/Update-StatsMan.ps1",
+            "size": "24068",
+            "version": "7.0.1104.2",
+            "datePublished": "7/15/2024 4:51:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StatsManWebSite.msi",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9da9d3-5e28-414d-9f1c-4852055bc5b4/StatsManWebSite.msi",
+            "size": "3239936",
+            "version": "7.0.1104.2",
+            "datePublished": "7/15/2024 4:51:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StatsManPerfAgentListener.msi",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9da9d3-5e28-414d-9f1c-4852055bc5b4/StatsManPerfAgentListener.msi",
+            "size": "2871296",
+            "version": "7.0.1104.2",
+            "datePublished": "7/15/2024 4:51:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StatsManPerfAgent.msi",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9da9d3-5e28-414d-9f1c-4852055bc5b4/StatsManPerfAgent.msi",
+            "size": "1245184",
+            "version": "7.0.1104.2",
+            "datePublished": "7/15/2024 4:51:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype for Business Server, Real-Time Statistics Manager (StatsMan) makes it possible to monitor key performance indicators for Skype for Business Server in real-time.  This download includes the StatsMan Agent, Listener and Website installation packages necessary for a functional StatsMan deployment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.1104.2",
+    "detailsSection_file_name": [
+        "Update-StatsMan.ps1",
+        "StatsManWebSite.msi",
+        "StatsManPerfAgentListener.msi",
+        "StatsManPerfAgent.msi"
+    ],
+    "detailsSection_file_size": [
+        "23.5 KB",
+        "3.1 MB",
+        "2.7 MB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Skype for Business Server, StatsMan has the following additional requirements:</b>\r\n<ul>\r\n<li><b>Support Skype for Business Server and Lync Server installations:</b></li>\r\n<ul>\r\n<li>Skype for Business Server 2015</li>\r\n<li>Lync Server 2013</li>\r\n<li>Lync Server 2010</li>\r\n</ul></ul>\r\n<ul>\r\n<li><b>Listener/Website computer, with the following requirements:</b></li>\r\n<ul>\r\n<li>Windows Server 2012 R2 or later</li>\r\n<li>redis 2.8 or later</li>\r\n</ul></ul>\r\n<ul>\r\n<li><b>Agent computer, with the following requirements:</b></li>\r\n<ul>\r\n<li>Windows Server 2008 R2 or later</li>\r\n<li>.NET 4.0 or later</li>\r\n</ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Refer to planning documentation here: <a href=\"https://technet.microsoft.com/EN-US/library/mt604835.aspx\">Plan for Statistics Manager in Skype for Business Server 2015</a>\r\n<br/>\r\n<br/>\r\nRefer to deployment documentation here:  <a href=\"https://technet.microsoft.com/EN-US/library/mt604837.aspx\">Deploy Statistics Manager in Skype for Business Server 2015</a>\r\n<br/>\r\n<br/>\r\nRefer to upgrade documentation here: <a href=\"https://technet.microsoft.com/en-us/library/mt703766.aspx\">Upgrade Statistics Manager in Skype for Business Server 2015</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49491",
+    "downloadPreload": true
+}

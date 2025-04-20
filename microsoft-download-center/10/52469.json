@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Volume Rendering SDK",
+    "downloadDescription": "COM components which provides scalable implementation of real-time volume rendering intended for server-based GPUs. Last published: May 15, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VolumeRenderingSDK Setup.zip",
+            "url": "https://download.microsoft.com/download/6/b/0/6b00ebfd-39e7-4987-8e29-aa93aaf3c0a6/VolumeRenderingSDK Setup.zip",
+            "size": "187922120",
+            "version": "1.0.7",
+            "datePublished": "5/15/2024 4:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "COM components which provides scalable implementation of real-time volume rendering intended for server-based GPUs. It could also be accessed from .Net clients using the provided Runtime Callable Wrapper (RCW)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.7",
+    "detailsSection_file_name": [
+        "VolumeRenderingSDK Setup.zip"
+    ],
+    "detailsSection_file_size": [
+        "179.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52469",
+    "downloadPreload": true
+}

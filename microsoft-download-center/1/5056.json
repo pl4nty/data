@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "2007 Office System Demo: Sales and Inventory Tracking Application Comparison",
+    "downloadDescription": "This click-through flash demo shows a custom suite of Lotus Domino applications developed for a sales organization, and compares that with a Microsoft Office SharePoint Server 2007 sales and inventory tracking application with the same functionality.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeSystem2007_SalesInventoryTrackingAppComparisonDemo.msi",
+            "url": "https://download.microsoft.com/download/1/f/2/1f256a0f-2493-4986-bf8e-725fe582b81e/OfficeSystem2007_SalesInventoryTrackingAppComparisonDemo.msi",
+            "size": "19634688",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This click-through flash demo shows a custom suite of Lotus Domino applications developed for a sales organization, and compares that with an Office SharePoint Server 2007 sales and inventory tracking application with the same functionality.  The demo highlights the integrated capabilities of the Microsoft platform using SharePoint Server 2007, Microsoft SQL Server and Microsoft Office InfoPath 2007.  In addition, the SharePoint application showcased in the demo utilizes special reporting capabilities that are part of the \"Business Intelligence\" feature set for business scorecards and Microsoft Office Excel services.  The demo also walks through a mobile scenario to showcase how documents can be synchronized via Microsoft Office Groove 2007 and how a remote sales person can access the SharePoint sales portal, check inventory, and place orders using a mobile phone.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "OfficeSystem2007_SalesInventoryTrackingAppComparisonDemo.msi"
+    ],
+    "detailsSection_file_size": [
+        "18.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download relates with the following Office program:</b>\n<br/>\n<ul>\n<li>2007 Microsoft Office system</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/><br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>OfficeSystem2007_SalesInventoryTrackingAppComparisonDemo.msi</b> program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n\n<b>Instructions for use:</b>\n<br/><br/>\n<ul>\n<li>To launch this demo, click the <b>Start</b> menu, point to <b>All Programs</b>, point to <b>Microsoft Office System Demos</b>, point to this demo, and then click <b>Launch Demo</b>.</li>\n</ul>\n<br/>\n<b>To remove this download:</b>\n<br/><br/>\n<ul>\n<li>On the <b>Start</b> menu, point to <b>All Programs</b>, point to <b>Microsoft Office System Demos</b>, point to this demo, and then click <b>Uninstall Demo</b>.</li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Microsoft Office Downloads",
+            "url": "http://office.microsoft.com/downloads/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5056",
+    "downloadPreload": true
+}

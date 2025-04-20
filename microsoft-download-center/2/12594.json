@@ -1,0 +1,176 @@
+{
+    "error": "",
+    "downloadTitle": "Articles on Parallel Programming with the .NET Framework 4",
+    "downloadDescription": "A set of articles that provide information on parallel programming with the .NET Framework 4.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PLINQOrderingModel.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/PLINQOrderingModel.pdf",
+            "size": "1071781",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UsingCancellationinNET4.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/UsingCancellationinNET4.pdf",
+            "size": "1119825",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PerformanceCharacteristicsOfSyncPrimitives.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/PerformanceCharacteristicsOfSyncPrimitives.pdf",
+            "size": "818450",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WhenToUseParallelForEachOrPLINQ.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/WhenToUseParallelForEachOrPLINQ.pdf",
+            "size": "538882",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UsingPLINQinOfficeAddins.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/UsingPLINQinOfficeAddins.pdf",
+            "size": "778546",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowAndParallelExtensionsinNET4.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/WorkflowAndParallelExtensionsinNET4.pdf",
+            "size": "663500",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PerformanceCharacteristicsOfThreadSafeCollection.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/PerformanceCharacteristicsOfThreadSafeCollection.pdf",
+            "size": "697996",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ParentChildTPLTasksRelationship.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/ParentChildTPLTasksRelationship.pdf",
+            "size": "804902",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OptimizingUsingConcurrencyVisualizer.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/OptimizingUsingConcurrencyVisualizer.pdf",
+            "size": "2232056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ParallelProgramsinNET4_CodingGuidelines.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/ParallelProgramsinNET4_CodingGuidelines.pdf",
+            "size": "986879",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Using Net4ToAchieveDataParallelism.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/Using Net4ToAchieveDataParallelism.pdf",
+            "size": "946669",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TPLOptionsTour.pdf",
+            "url": "https://download.microsoft.com/download/b/c/f/bcfd4868-1354-45e3-b71b-b851cd78733d/TPLOptionsTour.pdf",
+            "size": "1188992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4 includes extended support for writing parallel applications, through enhancements to the CLR itself as well as through new libraries commonly referred to as \"Parallel Extensions to the .NET Framework.\"  The set of articles available in this download provides detailed information on Parallel Extension, including the Task Parallel Library (TPL), Parallel LINQ (PLINQ), and a set of new coordination primitives and thread-safe data structures. These articles provide insights into performance characteristics, usage patterns, best practices, integration of parallelism with other programming frameworks, and more.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PLINQOrderingModel.pdf",
+        "UsingCancellationinNET4.pdf",
+        "PerformanceCharacteristicsOfSyncPrimitives.pdf",
+        "WhenToUseParallelForEachOrPLINQ.pdf",
+        "UsingPLINQinOfficeAddins.pdf",
+        "WorkflowAndParallelExtensionsinNET4.pdf",
+        "PerformanceCharacteristicsOfThreadSafeCollection.pdf",
+        "ParentChildTPLTasksRelationship.pdf",
+        "OptimizingUsingConcurrencyVisualizer.pdf",
+        "ParallelProgramsinNET4_CodingGuidelines.pdf",
+        "Using Net4ToAchieveDataParallelism.pdf",
+        "TPLOptionsTour.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "1.1 MB",
+        "799.3 KB",
+        "526.3 KB",
+        "760.3 KB",
+        "647.9 KB",
+        "681.6 KB",
+        "786.0 KB",
+        "2.1 MB",
+        "963.7 KB",
+        "924.5 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 98",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the 'Download' link to commence the download.",
+    "relatedResourcesSection": [
+        {
+            "title": "parallel Programming with .NET Team Blog",
+            "url": "http://blogs.msdn.com/pfxteam"
+        },
+        {
+            "title": "patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=86b3d32b-ad26-4bb8-a3ae-c1637026c3ee&displaylang=en"
+        },
+        {
+            "title": "parallel Computing Developer Center",
+            "url": "http://msdn.microsoft.com/concurrency"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12594",
+    "downloadPreload": true
+}

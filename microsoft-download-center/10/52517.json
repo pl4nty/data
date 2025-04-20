@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Gyro: Generics for the SSCLI",
+    "downloadDescription": "Gyro is a set of files that convert an existing installation of the Microsoft Shared Source CLI 1.0 to support generic type definitions and generic methods. Last published: April 22, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "gyro1.0-1826042003.tgz",
+            "url": "https://download.microsoft.com/download/9/5/5/955b28f7-3e30-41f4-8076-ca00c242a195/gyro1.0-1826042003.tgz",
+            "size": "3358943",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:10:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Gyro is a set of files that convert an existing installation of the Microsoft Shared Source CLI 1.0 to support generic type definitions and generic methods. These generic constructs take types as parameters, and are primarily intended to better support typed containers such as lists, stacks, and dictionaries. Microsoft's research work on generics is an ongoing project. This release is intended to allow you to familiarise yourself with the current state of the research, and to provide feedback where appropriate. Certain aspects of the design of generics for the SSCLI will change in future releases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "gyro1.0-1826042003.tgz"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52517",
+    "downloadPreload": true
+}

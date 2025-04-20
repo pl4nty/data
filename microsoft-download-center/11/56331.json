@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2016 CU7 (KB4045655)",
+    "downloadDescription": "Security Update For Exchange Server 2016 CU7 (KB4045655)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB4045655-x64-en.msp",
+            "url": "https://download.microsoft.com/download/1/d/4/1d436cbc-5925-484c-a9c0-9b7040e15fd8/Exchange2016-KB4045655-x64-en.msp",
+            "size": "165871616",
+            "version": "15.01.1261.037",
+            "datePublished": "7/15/2024 4:55:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  A spoofing vulnerability exists in Microsoft Exchange Server when Outlook Web Access (OWA) fails to properly handle web requests. An attacker who successfully exploited the vulnerabilities could perform script or content injection attacks, and attempt to trick the user into disclosing sensitive information. An attacker could also redirect the user to a malicious website that could spoof content or be used as a pivot to chain an attack with other vulnerabilities in web services.  You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4045655",
+        "name": "KB4045655"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.1261.037",
+    "detailsSection_file_name": [
+        "Exchange2016-KB4045655-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "158.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56331",
+    "downloadPreload": true
+}

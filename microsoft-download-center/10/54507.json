@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2016",
+    "downloadDescription": "HPC Pack 2016 provides enterprise-class tools, performance and scalability for a highly productive HPC on premise, HPC Hybrid and HPC IaaS environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HPC Pack 2016.zip",
+            "url": "https://download.microsoft.com/download/1/f/7/1f740a75-2ace-4710-a356-753c66088658/HPC Pack 2016.zip",
+            "size": "912029065",
+            "version": "5.0.5826",
+            "datePublished": "7/15/2024 4:35:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "HPC Pack 2016 delivers enterprise-class tools, performance and scalability for a highly productive HPC environment, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface v2 (MPI2) and Service-Oriented Architecture (SOA) interactive application support, cluster management & monitoring tools.<br/>\r\nHPC Pack 2016 also delivers cloud ready HPC Hybrid and HPC IaaS solutions based on Microsoft Azure.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.5826",
+    "detailsSection_file_name": [
+        "HPC Pack 2016.zip"
+    ],
+    "detailsSection_file_size": [
+        "869.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2016 supported Operating Systems</b>\r\n<li>Head nodes: Windows Server 2016, Windows Server 2012 R2</li>\r\n<li>Compute nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Broker nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 8.1 Pro or Enterprise, windows 10</li>\r\n<li>Unmanaged server nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Linux Compute nodes: SUSE Linux Enterprise Server 12, Red Hat Enterprise Linux 7.1, CentOS-based 6.7, Ubuntu Server 14.04 LTS and 16.04 LTS</li>\r\n<li>Client: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1 </li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 4GB<br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Prior to installation, please review the '<a href=\"https://technet.microsoft.com/en-us/library/mt744886(v=ws.11).aspx\">Release Notes</a>' available on the <a href=\"http://go.microsoft.com/fwlink/?LinkID=263697\">Windows HPC TechNet site</a>.<br/><br/>\r\nDownload the Microsoft HPC Pack 2016'.zip' archive, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack installation wizard on a supported Windows Server based computer.<br/><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC TechNet site",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=263697"
+        },
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54507",
+    "downloadPreload": true
+}

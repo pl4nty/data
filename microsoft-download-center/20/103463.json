@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Replication as a tool to migrate very large databases",
+    "downloadDescription": "SQL Server Replication as a tool to migrate very large databases",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL Server Replication as a tool to migrate very large databases.pdf",
+            "url": "https://download.microsoft.com/download/4/0/0/400dcd96-5317-4685-b5b6-0f6fbdb787be/SQL Server Replication as a tool to migrate very large databases.pdf",
+            "size": "865082",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Replication can be used as a viable tool for some migration scenarios, \r\nespecially when there is a need to move transactions from the source database to \r\nthe target continuously. There are heterogeneous sources involved, and the target \r\ndatabase must accept updates while data is still migrating. This paper will discuss how to utilize SQL Server Transactional replication to \r\nmigrate an extensive (5-10 TB) database to the cloud.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server Replication as a tool to migrate very large databases.pdf"
+    ],
+    "detailsSection_file_size": [
+        "844.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Readable Document download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103463",
+    "downloadPreload": true
+}

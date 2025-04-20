@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Backup in Azure Blob Storage - Service Offer",
+    "downloadDescription": "This zipped folder contains sample offerings with service catalog and guidance for partners interested in launching backup and long-term retention offerings on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Backup in Azure Blob Storage - Service Offer.zip",
+            "url": "https://download.microsoft.com/download/9/f/e/9fed6b91-0cc6-47d4-8a06-7696012cf560/SQL Backup in Azure Blob Storage - Service Offer.zip",
+            "size": "790523",
+            "version": "January 2014",
+            "datePublished": "12/15/2023 4:08:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains sample offerings with service catalog and guidance for partners interested in launching backup and long-term retention offerings on Azure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "SQL Backup in Azure Blob Storage - Service Offer.zip"
+    ],
+    "detailsSection_file_size": [
+        "772.0 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50781",
+    "downloadPreload": true
+}

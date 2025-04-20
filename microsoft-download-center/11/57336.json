@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SystemCenter Tool : Migrate GSM Tests from SCOM to Azure Application Insights",
+    "downloadDescription": "This tool will migrate all Global Service Monitor tests from SCOM Server to Application Insights and create corresponding alerts for these tests",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MigrateGSMToAI.ps1",
+            "url": "https://download.microsoft.com/download/a/e/5/ae547cb6-8f9f-424b-8949-dbe21977765a/MigrateGSMToAI.ps1",
+            "size": "54992",
+            "version": "1.0.0.2",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GSM Tests Migration Guide.docx",
+            "url": "https://download.microsoft.com/download/a/e/5/ae547cb6-8f9f-424b-8949-dbe21977765a/GSM Tests Migration Guide.docx",
+            "size": "579556",
+            "version": "1.0.0.2",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As of November 07, 2018, we will retire the Global Service Monitor and recommend our customers  to migrate GSM tests to Azure Application Insights well before that date. The migration script will provision your tests with the same configuration in Application Insights as you have in GSM. The migration script will also provision alert rules based on what you are currently using in SCOM.  This tool will create new Ping tests and Web tests in Application Insights. This tool will not impact customer's SCOM GSM environment and GSM tests in SCOM will continue to work till November 7th 2018. Post November 7th 2018, we recommend deleting GSM MP from the SCOM server. \r\nIf customers want to bring the Alerts data back in SCOM, they can use Azure MP at https://www.microsoft.com/en-us/download/details.aspx?id=50013 \r\nWe recommend customers to run this tool well before November 07, 2018.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.2",
+    "detailsSection_file_name": [
+        "MigrateGSMToAI.ps1",
+        "GSM Tests Migration Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "53.7 KB",
+        "566.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This tool requires Azure Subscription.\r\nAny location which is supported by Application Insights is supported. Complete list of supported location is at:\r\nhttps://azure.microsoft.com/en-us/global-infrastructure/services/?products=monitor ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "Please see the attached guide for instructions.\r\n[Note] Any test which be migrated without this tool, will be charged as per Azure pricing. This tool will enable the test so they are not charged in Azure.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57336",
+    "downloadPreload": true
+}

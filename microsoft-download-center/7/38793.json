@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Workbook Size Optimizer",
+    "downloadDescription": "The workbook size optimizer inspects the composition of the data model within your PowerPivot or PowerView enabled workbook, sees if the data in it can take less space and if possible, enables better compression.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Workbook Size Optimizer_x86_windows_8_server_2012.msi",
+            "url": "https://download.microsoft.com/download/f/8/9/f89d3500-d9f4-4ba3-afc5-68c27236c1a3/Workbook Size Optimizer_x86_windows_8_server_2012.msi",
+            "size": "3309568",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Workbook Size Optimizer_amd64_windows_8_server_2012.msi",
+            "url": "https://download.microsoft.com/download/f/8/9/f89d3500-d9f4-4ba3-afc5-68c27236c1a3/Workbook Size Optimizer_amd64_windows_8_server_2012.msi",
+            "size": "3316224",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workbook Size Optimizer_amd64_Windows_7_Server_2008_and_below.msi",
+            "url": "https://download.microsoft.com/download/f/8/9/f89d3500-d9f4-4ba3-afc5-68c27236c1a3/Workbook Size Optimizer_amd64_Windows_7_Server_2008_and_below.msi",
+            "size": "3313664",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workbook Size Optimizer_x86_Windows_7_Server_2008_and_below.msi",
+            "url": "https://download.microsoft.com/download/f/8/9/f89d3500-d9f4-4ba3-afc5-68c27236c1a3/Workbook Size Optimizer_x86_Windows_7_Server_2008_and_below.msi",
+            "size": "3307008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA - MS Workbook Size Optimizer.docx",
+            "url": "https://download.microsoft.com/download/f/8/9/f89d3500-d9f4-4ba3-afc5-68c27236c1a3/EULA - MS Workbook Size Optimizer.docx",
+            "size": "42201",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Workbook Size optimizer for Excel can better compress data inside workbooks that use PowerPivot or PowerView if this data comes from external data sources. The best size compression can be achieved for workbooks based on SQL Server databases and there are a few tricks we can do for other SQL datasources as well.\r\nThe optimizer will install as an add in to excel and will provide you with a nice wizard to better compress the size of your workbook.\r\nUsing the optimizer you can often get more than 1,000,000 rows datasets in a workbook under 10 MB, share it in SharePointOnline and interact withit using the Excel Web App in any browser.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Workbook Size Optimizer_x86_windows_8_server_2012.msi",
+        "Workbook Size Optimizer_amd64_windows_8_server_2012.msi",
+        "Workbook Size Optimizer_amd64_Windows_7_Server_2008_and_below.msi",
+        "Workbook Size Optimizer_x86_Windows_7_Server_2008_and_below.msi",
+        "EULA - MS Workbook Size Optimizer.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB",
+        "3.2 MB",
+        "3.2 MB",
+        "3.2 MB",
+        "41.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7,8 Server 2008 or Server 2012\r\nExcel 2013 32bit or 64 bit version",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8 Pro",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "install and launch from Excel 2013",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38793",
+    "downloadPreload": true
+}

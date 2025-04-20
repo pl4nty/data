@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "StorSimple Deployment Configuration Checklist",
+    "downloadDescription": "Describes the information and steps required before StorSimple deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StorSimple Deployment Configuration Checklist.pdf",
+            "url": "https://download.microsoft.com/download/5/d/1/5d19aa82-a4c6-493d-aa5c-56be55d3e65a/StorSimple Deployment Configuration Checklist.pdf",
+            "size": "276590",
+            "version": "1",
+            "datePublished": "7/15/2024 4:06:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This checklist describes the information that you need to collect before and as you configure the software on your StorSimple device. Preparing some of this information ahead of time will help streamline the process of deploying the StorSimple device in your environment. You can also use this checklist to note down the configuration details as you deploy your device.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "StorSimple Deployment Configuration Checklist.pdf"
+    ],
+    "detailsSection_file_size": [
+        "270.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "StorSimple 8000 series storage array\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and open in any PDF viewer.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49159",
+    "downloadPreload": true
+}

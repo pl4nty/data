@@ -1,0 +1,157 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Purview Integration Runtime",
+    "downloadDescription": "Microsoft Purview Integration Runtime is a customer managed infrastructure used to power data scan across different network environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IntegrationRuntime_5.48.9089.1.msi",
+            "url": "https://download.microsoft.com/download/1/a/b/1abce8bb-2ecd-4941-9266-0344602ec6db/IntegrationRuntime_5.48.9089.1.msi",
+            "size": "1309700096",
+            "version": "5.48.9089.1",
+            "datePublished": "4/7/2025 5:54:55 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IntegrationRuntime_5.47.9073.1.msi",
+            "url": "https://download.microsoft.com/download/1/a/b/1abce8bb-2ecd-4941-9266-0344602ec6db/IntegrationRuntime_5.47.9073.1.msi",
+            "size": "1617752064",
+            "version": "5.48.9089.1",
+            "datePublished": "4/7/2025 5:54:55 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IntegrationRuntime_5.49.9210.1.msi",
+            "url": "https://download.microsoft.com/download/IntegrationRuntime_5.49.9210.1.msi",
+            "size": "1690734592",
+            "version": "5.48.9089.1",
+            "datePublished": "4/7/2025 5:54:55 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Release Notes.docx",
+            "url": "https://download.microsoft.com/download/Release Notes.docx",
+            "size": "104342",
+            "version": "5.48.9089.1",
+            "datePublished": "4/7/2025 5:54:55 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "The integration runtime is capable of scanning data sources within private network. You can install a self-hosted integration runtime on an on-premises machine or a virtual machine inside a private network. An integration runtime can be registered with an instance in Microsoft Purview.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.48.9089.1",
+    "detailsSection_file_name": [
+        "IntegrationRuntime_5.48.9089.1.msi",
+        "IntegrationRuntime_5.47.9073.1.msi",
+        "IntegrationRuntime_5.49.9210.1.msi",
+        "Release Notes.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 GB",
+        "1.5 GB",
+        "1.6 GB",
+        "101.9 KB"
+    ],
+    "detailsSection_file_date": "4/7/2025",
+    "systemRequirementsSection": "Microsoft Purview Integration Runtime (Self-hosted) requires a 64-bit Operating System with .NET Framework 4.7.2 or above.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download and run the IntergrationRuntime.msi (64-bit) to install the Integration Runtime on your computer. You may also save IntegrationRuntime.msi to your local disk to install later.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Purview",
+            "url": "https://docs.microsoft.com/azure/purview"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "105539",
+    "downloadPreload": true
+}

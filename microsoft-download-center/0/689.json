@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Data Protection Manager 2006 Service Pack 1",
+    "downloadDescription": "Microsoft\u00ae System Center Data Protection Manager (DPM) 2006 Service Pack 1 (SP1) enables you to protect more types of file servers, provides an interface for configuring your Microsoft Update selection, and includes updates previously released as individual hot fixes plus several bug fixes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB923706.zip",
+            "url": "https://download.microsoft.com/download/8/c/5/8c5df98a-2869-4181-a20a-7c2833751391/KB923706.zip",
+            "size": "46144757",
+            "version": "DPM",
+            "datePublished": "4/15/2024 3:07:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae System Center Data Protection Manager (DPM) 2006 Service Pack 1 (SP1) enables you to protect more types of file servers, provides an interface for configuring your Microsoft Update selection, and includes updates previously released as individual hot fixes plus several bug fixes. The DPM product team recommends that every installation of DPM take advantage of these improvements by installing DPM SP1.\n<br/>\n<br/>\n<b>Feature Bullet Summary: </b>\n<br/>\n<br/>\n\u2022\tSupport for 64-bit Protection\n<br/>\n\u2022\tProtection for Clustered File Server nodes\n<br/>\n\u2022\tProtection for SIS-enabled Servers\n<br/>\n\n\u2022\tMicrosoft Update Opt-In\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB923706; KB926996",
+        "name": "KB923706; KB926996"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "DPM",
+    "detailsSection_file_name": [
+        "KB923706.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.0 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<br/>\n<b>The DPM server must be running one of the following operating systems:</b>\n<br/>\n\u2022\tWindows Server 2003 with Service Pack 1\n<br/>\n\u2022\tWindows Storage Server 2003 with Service Pack 1\n<br/>\n\u2022\tWindows Server 2003 R2\n<br/>\n\u2022\tWindows Storage Server 2003 R2\n<br/>\n<br/>\n<b>Protected servers must be running one of the following operating systems:</b>\n<br/>\n\u2022\tWindows 2000 Server with SP4 and Windows 2000 Update Rollup Pack 1, including Windows Powered Network Attached Storage (NAS) Devices\n<br/>\n\u2022\tWindows Server 2003 with SP1\n<br/>\n\u2022\tWindows Storage Server 2003 with SP1\n<br/>\n\u2022\tWindows Server 2003 R2\n<br/>\n\u2022\tWindows Storage Server 2003 R2\n<br/>\n\u2022\tWindows Server 2003 x64 Editions\n<br/>\n\u2022\tWindows Storage Server 2003 x64 Editions",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<br/>\n<b>Download Instructions</b>\n<br/>\n1.\tClick the Download button on this page to start the download.\n<br/>\n2.\tDo one of the following: \n<br/>\no\tTo start the installation immediately, click Run. \n<br/>\no\tTo save the download to your computer for installation at a later time, click Save. \n<br/>\no\tTo cancel the installation, click Cancel.\n<br/>\n<br/>\n<b>Installation Instructions</b>\n<br/>\n1.\tClose DPM Administrator Console before you install DPM 2006 SP1.\n<br/>\n2.\tRun DataProtectionManager2006-KB923706.exe, which you downloaded from the location provided above.\n<br/>\n3.\tUpdate the DPM file agent on each protected server. For instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=51974\">How to update a file agent</a> in DPM Help.\n<br/>\n4.\tSynchronize the replica for each protection group member by performing a synchronization with consistency check. For instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=51910\">How to synchronize a replica</a> in DPM Help. \n<br/>\n<br/>\n<b>Important:</b>  Some DPM customers are running pre-release versions of DPM SP1. These customers should ensure that all pre-release versions of DPM SP1 are uninstalled from the DPM server, and then follow the steps mentioned in the KB article.  For instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=76014 \">How to uninstall pre-release versions of SP1</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "689",
+    "downloadPreload": true
+}

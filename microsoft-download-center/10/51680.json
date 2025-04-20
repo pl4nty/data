@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MITT Test Tool ",
+    "downloadDescription": "Test tools for validating SPB controllers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MITT.msi",
+            "url": "https://download.microsoft.com/download/7/7/0/7703f03c-9d1f-45fc-a625-9647dc495ee2/MITT.msi",
+            "size": "21114880",
+            "version": "8.02",
+            "datePublished": "7/15/2024 4:52:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test tools for validating SPB controllers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.02",
+    "detailsSection_file_name": [
+        "MITT.msi"
+    ],
+    "detailsSection_file_size": [
+        "20.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Detailed instructions are included in readme.pdf in the package.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51680",
+    "downloadPreload": true
+}

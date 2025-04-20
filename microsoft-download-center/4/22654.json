@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Integrating a Third Party Version Control System into Microsoft Dynamics AX 2009",
+    "downloadDescription": "This white paper describes how to add support for a third party version control system to Microsoft Dynamics AX 2009 by using Team Foundation Server as a case study.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IntegrateThirdPartyVCS_ax2009_wp.xps",
+            "url": "https://download.microsoft.com/download/6/3/3/633d9111-f9d0-40e7-a17a-cc58d03e3fa8/IntegrateThirdPartyVCS_ax2009_wp.xps",
+            "size": "481014",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "IntegrateThirdPartyVCS_ax2009_wp.pdf",
+            "url": "https://download.microsoft.com/download/6/3/3/633d9111-f9d0-40e7-a17a-cc58d03e3fa8/IntegrateThirdPartyVCS_ax2009_wp.pdf",
+            "size": "304360",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The MorphX Integrated Development Environment (IDE) can integrate various Version Control Systems (VCS). Team Foundation Server (TFS) is a newly integrated VCS with the MorphX IDE in Microsoft Dynamics AX 2009. This document provides detailed step-by-step instructions to integrate a VCS with the MorphX IDE, by using how TFS was included in Microsoft Dynamics AX 2009 as an example.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "IntegrateThirdPartyVCS_ax2009_wp.xps",
+        "IntegrateThirdPartyVCS_ax2009_wp.pdf"
+    ],
+    "detailsSection_file_size": [
+        "469.7 KB",
+        "297.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "sysVersionControlFilebasedBackEnd Interface",
+            "url": "http://msdn.microsoft.com/en-us/library/cc634457.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22654",
+    "downloadPreload": true
+}

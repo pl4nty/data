@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft RMS SDK 4.1 for Windows Phone",
+    "downloadDescription": "Microsoft RMS SDK 4.1 for Windows Phone is a lightweight SDK for creating rights-enabled applications. By downloading the software, you agree to the license terms provided for this software. If you do not agree to the license terms, please do not download the software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EULA.RTF",
+            "url": "https://download.microsoft.com/download/b/9/9/b995ee3a-77fb-438b-8eee-f5e834620543/EULA.RTF",
+            "size": "177503",
+            "version": "4.1",
+            "datePublished": "5/15/2024 3:04:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WP Microsoft RMS SDK v4.1.zip",
+            "url": "https://download.microsoft.com/download/b/9/9/b995ee3a-77fb-438b-8eee-f5e834620543/WP Microsoft RMS SDK v4.1.zip",
+            "size": "1267341",
+            "version": "4.1",
+            "datePublished": "5/15/2024 3:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft RMS SDK 4.1 for Windows Phone is a lightweight SDK for creating rights-enabled applications.\r\n\r\nWhat's new in SDK v4.1?\r\n\r\n\u2022 AD RMS support - IT admins can use RMS enabled applications on mobile devices with the new AD RMS server's mobile device extensions. \r\n\u2022 Offline Consumption - end-users can access RMS protected data offline.\r\n\u2022 Segregated Auth - developers can use their own authentication library for Azure RMS and AD RMS (or use the recommended Azure Active Directory Auth Library).\r\n\u2022 Segregated UI - developers can build their user interface to protect and consume RMS protected documents.\r\n\u2022 Re-designed API - developers can now enjoy simple and transparent encryption and decryption API, which provides consistent RMS behaviors and user experience, in minimum efforts.\r\n\u2022 AD RMS URLs consent - this API callback was added to provide URLs to developers, to ask users for consent when accessing AD RMS servers.\r\n \r\nOur documentation has been updated - you can download the new SDKs, read about the new features, share your feedback, and find everything you need on our new MSDN page here:\r\nhttp://msdn.microsoft.com/en-us/library/hh552972(v=vs.85).aspx\r\n\r\nBy downloading the software, you agree to the license terms provided for this software. If you do not agree to the license terms, please do not download the software.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1",
+    "detailsSection_file_name": [
+        "EULA.RTF",
+        "WP Microsoft RMS SDK v4.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "173.3 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "1. Windows 8.1 operating system. \r\n2. Windows Phone 8.1 Development Tools (SDK) \r\n3. Microsoft Visual Studio 2012 or above, or Visual Studio Express 2012, which is included in the Windows Phone SDK 8.0/8.1 \r\n4. The MS RMS SDK 4.1 package for Windows Phone.\r\n5. Authentication library: We recommend that you use the Azure AD Authentication Library (http://msdn.microsoft.com/en-us/library/azure/jj573266.aspx). \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Phone 8.1"
+    ],
+    "installInstructionSection": "Getting started guide is available here: http://msdn.microsoft.com/en-us/library/hh552972(v=vs.85).aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45487",
+    "downloadPreload": true
+}

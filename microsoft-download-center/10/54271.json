@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Distributed Transaction Coordinator (MSDTC) 2016 and above Management Pack for Microsoft System Center",
+    "downloadDescription": "This management pack provides monitoring on local MSDTC service and clustered MSDTC.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_msdtc2016 and above.docx",
+            "url": "https://download.microsoft.com/download/e/9/e/e9efd5fa-6d95-4627-bdcf-7cd7764d61ce/MPGuide_msdtc2016 and above.docx",
+            "size": "79537",
+            "version": "10.0.0.1",
+            "datePublished": "7/15/2024 4:36:41 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center MP for MSDTC 2016 and above.msi",
+            "url": "https://download.microsoft.com/download/e/9/e/e9efd5fa-6d95-4627-bdcf-7cd7764d61ce/Microsoft System Center MP for MSDTC 2016 and above.msi",
+            "size": "622592",
+            "version": "10.0.0.1",
+            "datePublished": "7/15/2024 4:36:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\r\n<li>Version 10.0.0.1</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.0.1",
+    "detailsSection_file_name": [
+        "MPGuide_msdtc2016 and above.docx",
+        "Microsoft System Center MP for MSDTC 2016 and above.msi"
+    ],
+    "detailsSection_file_size": [
+        "77.7 KB",
+        "608.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>This management pack is supported to run in System Center 2016 Operation Manager, System Center 2019 Operation Manager and System Center 2022 Operation Manager</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Please refer to MP guide for instruction.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54271",
+    "downloadPreload": true
+}

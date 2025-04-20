@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Streets and Trips 2011 and MapPoint 2011 Construction Data Update",
+    "downloadDescription": "Download the latest construction data to keep your maps current",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConstructionB0120705.dat",
+            "url": "https://download.microsoft.com/download/2/8/1/2812a96e-9c2f-4345-b41e-4e15c819fac4/ConstructionB0120705.dat",
+            "size": "115168",
+            "version": "2011",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download to show the latest road construction data on Streets and Trips and MapPoint 2011 maps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2011",
+    "detailsSection_file_name": [
+        "ConstructionB0120705.dat"
+    ],
+    "detailsSection_file_size": [
+        "112.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Close Streets & Trips and/or MapPoint.</LI>\n<LI>Click the <b>download</b> link to start the download.</LI>\n<LI>Click <b>Save</b>  or <b>Save this program to disk</b>.</LI>\n<LI>Save the file in the Data folder</LI>\n <UL>\n  <LI>For XP <br />\n  <b>C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Microsoft Streets & Trips\\18.0\\Data</b><br />\n  or <br />\n  <b>C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Microsoft MapPoint\\18.0\\Data</b><br /></LI>\n  <LI>For Vista and Windows 7 <br />\n  <b>C:\\ProgramData\\Microsoft\\Microsoft Streets & Trips\\18.0\\Data </b><br />\n  or <br />\n  <b>C:\\ProgramData\\Microsoft\\Microsoft MapPoint\\18.0\\Data </b></LI>\n </UL>\n<LI>Restart Streets & Trips and/or MapPoint.</LI></OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "mapPoint Home Page",
+            "url": "http://www.microsoft.com/mappoint"
+        },
+        {
+            "title": "streets & Trips Home Page",
+            "url": "http://www.microsoft.com/streets"
+        },
+        {
+            "title": "microsoft Office Compatibility Pack ",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=941B3470-3AE9-4AEE-8F43-C6BB74CD1466&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6983",
+    "downloadPreload": true
+}

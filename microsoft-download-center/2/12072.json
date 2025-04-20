@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Traditional Chinese ClearType fonts for Windows XP",
+    "downloadDescription": "Microsoft JhengHei Regular and Bold Version 5.00 for Windows XP to improve rendering of Traditional Chinese text in Windows Presentation Foundation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VistaFont_CHT.EXE",
+            "url": "https://download.microsoft.com/download/7/6/b/76bd7a77-be02-47f3-8472-fa1de7eda62f/VistaFont_CHT.EXE",
+            "size": "17059840",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:15:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Traditional Chinese Fonts shipped with Windows XP use embedded bitmaps to provide legibility at small sizes on the screen. Windows Presentation Foundation (WPF) does not display these bitmaps but instead renders the outlines. These outlines are not instructed (hinted) for good legibility and the results are poor. Microsoft JhengHei Regular and Bold Version 5.00 have been properly instructed for legibility at 9 point size and above in ClearType environments such as WPF.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "VistaFont_CHT.EXE"
+    ],
+    "detailsSection_file_size": [
+        "16.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Double click the installer package and follow the instructions on screen.",
+    "additionalInformationSection": "ClearType works best on LCD monitors. For optimal results set your display to the native resolution of your monitor and run the ClearType tuner after installation. This will optimize your on-screen legibility. For more information on your monitor\u2019s native resolution see the ClearType faq at http://www.microsoft.com/typography/ClearTypeFAQ.mspx. For more information about the ClearType tuner see http://www.microsoft.com/typography/ClearTypeInfo.mspx",
+    "relatedResourcesSection": [
+        {
+            "title": "clearType information and ClearType Tuner download",
+            "url": "http://www.microsoft.com/typography/ClearTypeInfo.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12072",
+    "downloadPreload": true
+}

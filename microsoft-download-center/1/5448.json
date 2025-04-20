@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Planning Guide for Microsoft Advanced Group Policy Management",
+    "downloadDescription": "This guide provides administrators with an in-depth description of the processes, procedures, and decisions for planning the deployment of Microsoft Advanced Group Policy Management (AGPM) in a production environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AGPM Planning Guide.docx",
+            "url": "https://download.microsoft.com/download/c/9/3/c934b5be-5641-4eb0-89cd-d1aeeb9559ab/AGPM Planning Guide.docx",
+            "size": "158391",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide provides administrators with an in-depth description of the processes, procedures, and decisions for planning the deployment of Microsoft Advanced Group Policy Management (AGPM) in a production environment.\r\n\r\nAGPM, part of the Microsoft Desktop Optimization Pack (MDOP), provides comprehensive change control and enhanced management for Group Policy objects (GPOs). AGPM extends the capabilities of the Group Policy Management Console (GPMC) to provide GPO change control workflow, GPO version control, and role-based delegation of GPO administration. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AGPM Planning Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "154.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "group Policy Home Page",
+            "url": "http://www.microsoft.com/grouppolicy"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5448",
+    "downloadPreload": true
+}

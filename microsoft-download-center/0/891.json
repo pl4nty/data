@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Analysis Services Distinct Count Optimization",
+    "downloadDescription": "This whitepaper provides optimization techniques for Analysis Services Distinct Count",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSASDistinctCountOpt.docx",
+            "url": "https://download.microsoft.com/download/9/5/c/95c9d41a-6a96-49f0-beb4-29c98e9ef8f3/SSASDistinctCountOpt.docx",
+            "size": "287428",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Distinct count (such as unique visitor counts on a Web site) calculations provide valuable information but come with a number of performance challenges. This white paper describes tests that were performed to determine how best to optimize these calculations and includes best practices based on the test results.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SSASDistinctCountOpt.docx"
+    ],
+    "detailsSection_file_size": [
+        "280.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click Save to save the document to your hard disk<br />\nClick Open to open the document immediately",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "891",
+    "downloadPreload": true
+}

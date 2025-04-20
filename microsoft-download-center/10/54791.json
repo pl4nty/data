@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for Visual Studio Team Foundation Server 2017",
+    "downloadDescription": "The Microsoft System Center Management Pack for Visual Studio Team Foundation Server 2017 provides monitoring of Team Foundation Server 2017. It monitors TFS components such as application tier servers, data tier servers, and team project collections.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TFS 2017 Management Pack.msi",
+            "url": "https://download.microsoft.com/download/5/f/f/5ff3b6a5-e545-448e-96a0-8d23d6f66ee8/TFS 2017 Management Pack.msi",
+            "size": "1990656",
+            "version": "15.113.26130.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_TFS2017.docx",
+            "url": "https://download.microsoft.com/download/5/f/f/5ff3b6a5-e545-448e-96a0-8d23d6f66ee8/MPGuide_TFS2017.docx",
+            "size": "3671876",
+            "version": "15.113.26130.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft System Center Management Pack for Visual Studio Team Foundation Server 2017 provides monitoring of Team Foundation Server 2017. It monitors TFS components such as application tier servers, data tier servers, and team project collections.\r\n<br/><br/>\r\n<b>Feature Summary:</b>\r\nThe monitoring performed by this management pack includes availability and configuration monitoring, performance data collection, and default thresholds. You can integrate the monitoring of Team Foundation Server components into your service-oriented monitoring scenarios.\r\n\u2022 Performs auto discovery of TFS components <br/>\r\n\u2022 Implements a hierarchical health model, reflecting the logical architecture of TFS <br/>\r\n\u2022 Contains tasks, diagnostics and recovery for certain failures <br/>\r\n\u2022 Provides events that indicate service outages <br/>\r\n\u2022 Provides alerts that show configuration issues and connected data source changes <br/>\r\n\u2022 Verifies that all dependent services are running <br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.113.26130.0",
+    "detailsSection_file_name": [
+        "TFS 2017 Management Pack.msi",
+        "MPGuide_TFS2017.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "1. Team Foundation Server 2017 <br/>\r\n2. System Center Operations Manager 2012, System Center Operations Manager 2012 R2, or System Center Operations Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please see the management pack guide, MPGuide_TFS2017.docx, for complete installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54791",
+    "downloadPreload": true
+}

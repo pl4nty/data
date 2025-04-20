@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Forefront UAG DirectAccess",
+    "downloadDescription": "Create a test lab that enables you to test Forefront UAG DirectAccess features and capabilities",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_DemonstrateUAG_DA.docx",
+            "url": "https://download.microsoft.com/download/e/0/2/e02d060b-e3eb-44ff-bc75-049bf558c5cd/TestLabGuide_DemonstrateUAG_DA.docx",
+            "size": "1591187",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Test Lab Guide (TLG) allows you to create a Test Lab that you can use to test UAG DirectAccess features and capabilities. This Test Lab Guide contains instructions on how to build a single UAG DirectAccess server environment and test remote access to intranet resources. In addition, instructions are included that enable you to test DirectAccess features unique to UAG DirectAccess, including NAT64/DNS64.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_DemonstrateUAG_DA.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1770",
+    "downloadPreload": true
+}

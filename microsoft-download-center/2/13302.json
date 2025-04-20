@@ -1,0 +1,263 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server Network Load Balancing",
+    "downloadDescription": "The Windows Server Network Load Balancing Management Pack monitors the health of the Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 NLB clusters and improves the availability, performance, and security of your Windows Server 2008 and Windows Server 2008 R2 NLB deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.TRK.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.TRK.msi",
+            "size": "638976",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.SVE.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.SVE.msi",
+            "size": "638976",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.RUS.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.RUS.msi",
+            "size": "688128",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.PTG.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.PTG.msi",
+            "size": "602112",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.PTB.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.PTB.msi",
+            "size": "643072",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.PLK.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.PLK.msi",
+            "size": "634880",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.NLD.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.NLD.msi",
+            "size": "602112",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.KOR.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.KOR.msi",
+            "size": "815104",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.JPN.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.JPN.msi",
+            "size": "634880",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.ITA.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.ITA.msi",
+            "size": "651264",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.HUN.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.HUN.msi",
+            "size": "638976",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.FRA.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.FRA.msi",
+            "size": "626688",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.ESN.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.ESN.msi",
+            "size": "610304",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.DEU.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.DEU.msi",
+            "size": "614400",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.CSY.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.CSY.msi",
+            "size": "643072",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.CHT.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.CHT.msi",
+            "size": "638976",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for NLB.CHS.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/System Center Management Pack for NLB.CHS.msi",
+            "size": "659456",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Network Load Balancing 2012 R2.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/SC Management Pack for Network Load Balancing 2012 R2.msi",
+            "size": "831488",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2012_MP_NLB.doc",
+            "url": "https://download.microsoft.com/download/1/6/9/169650e2-53f9-47d1-8280-ce2b0fe77060/OM2012_MP_NLB.doc",
+            "size": "256512",
+            "version": "6.0.7221.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "The Windows Server Network Load Balancing (NLB) Management Pack provides discoveries, monitors, alerts, and warnings to help the operator understand the state of NLB clusters and NLB servers running Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2. The Windows Server NLB Management Pack can provide early warnings that an operator can use to proactively monitor the state of the NLB servers in the computing environment.<br/>\r\n<br/>\r\n<b>Feature Summary</b> <br/>\r\n<ul>\r\n<li> Monitor the NLB Node status. </li>\r\n<li> Based on the status of individual cluster nodes, determine the overall state of the cluster. </li>\r\n<li> Where an integration management pack exists, determine the health state of a cluster node by looking at the health state of the load balanced application, such as IIS. </li>\r\n<li> Alert on errors and warnings that are reported by the NLB driver, such as an incorrectly configured NLB cluster. </li>\r\n<li> Take the node out of the NLB cluster if the underlying load-balanced application becomes unhealthy, and add the node back to the cluster when the application becomes healthy again. </li>\r\n</ul> <br/>\r\n<b>Release History</b> <br/>\r\n<ul>\r\n<li> 4/27/2009 - Initial release of the English version, version 6.0.6573.0  </li>\r\n<li> 10/22/2009 - Updated release, version 6.0.6726.0, with added support for Windows 2008 R2. Please see the Management Pack Guide for details.</li>\r\n<li> 2/27/2013 - Updated release, version 6.0.7004.0, with added support for Windows Server 2012. Please see the Management Pack Guide for details.</li>\r\n<li> 10/18/2013 - version 6.0.7055.0</li>\r\n<li> 10/22/2014 - Added Missing IIS NLB files</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.7221.0",
+    "detailsSection_file_name": [
+        "System Center Management Pack for NLB.TRK.msi",
+        "System Center Management Pack for NLB.SVE.msi",
+        "System Center Management Pack for NLB.RUS.msi",
+        "System Center Management Pack for NLB.PTG.msi",
+        "System Center Management Pack for NLB.PTB.msi",
+        "System Center Management Pack for NLB.PLK.msi",
+        "System Center Management Pack for NLB.NLD.msi",
+        "System Center Management Pack for NLB.KOR.msi",
+        "System Center Management Pack for NLB.JPN.msi",
+        "System Center Management Pack for NLB.ITA.msi",
+        "System Center Management Pack for NLB.HUN.msi",
+        "System Center Management Pack for NLB.FRA.msi",
+        "System Center Management Pack for NLB.ESN.msi",
+        "System Center Management Pack for NLB.DEU.msi",
+        "System Center Management Pack for NLB.CSY.msi",
+        "System Center Management Pack for NLB.CHT.msi",
+        "System Center Management Pack for NLB.CHS.msi",
+        "SC Management Pack for Network Load Balancing 2012 R2.msi",
+        "OM2012_MP_NLB.doc"
+    ],
+    "detailsSection_file_size": [
+        "624.0 KB",
+        "624.0 KB",
+        "672.0 KB",
+        "588.0 KB",
+        "628.0 KB",
+        "620.0 KB",
+        "588.0 KB",
+        "796.0 KB",
+        "620.0 KB",
+        "636.0 KB",
+        "624.0 KB",
+        "612.0 KB",
+        "596.0 KB",
+        "600.0 KB",
+        "628.0 KB",
+        "624.0 KB",
+        "644.0 KB",
+        "812.0 KB",
+        "250.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<br/>\r\nThe Windows Server Network Load Balancing (NLB) Management Pack supports monitoring NLB clusters on all editions of the Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 operating systems, including Windows Server Core installations. <br/><br/>\r\nThe management pack is not intended to monitor mixed-mode NLB clusters (those that include Windows Server 2003 NLB clusters). Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2 NLB clusters can be monitored. <br/><br/>\r\n</ul> \r\n<ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1, and System Center 2012 Operations Manager R2</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please refer to MP guide.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13302",
+    "downloadPreload": true
+}

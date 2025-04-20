@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Advanced Group Policy Management Overview",
+    "downloadDescription": "This white paper is an overview of Microsoft Advanced Group Policy Management (AGPM), and describes its benefits, how it works, and the next steps for evaluating it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Advanced Group Policy Management Overview.docx",
+            "url": "https://download.microsoft.com/download/0/1/a/01ad46a1-ba48-4967-bb09-2d895473597e/Advanced Group Policy Management Overview.docx",
+            "size": "845705",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper is an overview of Microsoft Advanced Group Policy Management (AGPM), and describes its benefits, how it works, and the next steps for evaluating it. AGPM helps you better manage Group Policy objects (GPOs) in your environment by providing change control, offline editing, and role-based delegation. AGPM is a key component of the Microsoft Desktop Optimization Pack (MDOP).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Advanced Group Policy Management Overview.docx"
+    ],
+    "detailsSection_file_size": [
+        "825.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Longhorn (Windows Code Name) "
+    ],
+    "installInstructionSection": "<b>To view this document:</b><br />\n <br />\nSave the document to a directory on your computer and open the document. <br />\n<br />\n<b>To remove this document: </b><br />\n<br />\nTo remove the document, delete the file <b>Advanced Group Policy Management Overview.docx</b> from the directory where you saved it.",
+    "relatedResourcesSection": [
+        {
+            "title": "group Policy Resources on TechNet",
+            "url": "http://www.microsoft.com/grouppolicy"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8645",
+    "downloadPreload": true
+}

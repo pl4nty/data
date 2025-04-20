@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Operations guide for Microsoft SharePoint Foundation 2010 Beta ",
+    "downloadDescription": "Contains information about the basic fundamentals of how to operate and maintain SharePoint Foundation 2010 Beta. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundOps.doc",
+            "url": "https://download.microsoft.com/download/6/c/8/6c8a8054-733f-4e38-b331-98668c01d82f/SharePointFoundOps.doc",
+            "size": "2084864",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document supports a preliminary release of Microsoft SharePoint Foundation 2010 Beta. The  content in this book covers information about how to operate and maintain your servers, server farms, sites, and solutions in SharePoint Foundation 2010 Beta.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePointFoundOps.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6795",
+    "downloadPreload": true
+}

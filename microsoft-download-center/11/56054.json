@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "MSR Inertial Motion Capture Dataset",
+    "downloadDescription": "MSR Inertial Motion Capture Dataset",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIMC17_Dataset.zip",
+            "url": "https://download.microsoft.com/download/6/a/6/6a6033fa-9471-4fd9-8b5c-13a81bada198/MIMC17_Dataset.zip",
+            "size": "468670498",
+            "version": "0.1",
+            "datePublished": "5/15/2024 4:54:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MSR Inertial Motion Capture Dataset",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "MIMC17_Dataset.zip"
+    ],
+    "detailsSection_file_size": [
+        "447.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL> ",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56054",
+    "downloadPreload": true
+}

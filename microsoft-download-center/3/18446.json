@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "The Wide Range of Abilities and Its Impact on Computer Technology",
+    "downloadDescription": "In 2003, Microsoft Corporation commissioned Forrester Research, Inc., to conduct a study to measure the potential market of people in the United States who are most likely to benefit from the use of accessible technology for computers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ResearchReport-Phase2.doc",
+            "url": "https://download.microsoft.com/download/0/1/f/01f506eb-2d1e-42a6-bc7b-1f33d25fd40f/ResearchReport-Phase2.doc",
+            "size": "573952",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ResearchReport.doc",
+            "url": "https://download.microsoft.com/download/0/1/f/01f506eb-2d1e-42a6-bc7b-1f33d25fd40f/ResearchReport.doc",
+            "size": "623104",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ResearchReport.pdf",
+            "url": "https://download.microsoft.com/download/0/1/f/01f506eb-2d1e-42a6-bc7b-1f33d25fd40f/ResearchReport.pdf",
+            "size": "567480",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In 2003, Microsoft Corporation commissioned Forrester Research, Inc., to conduct a study to measure the potential market of people in the United States who are most likely to benefit from the use of accessible technology for computers. Accessible technology enables individuals to adjust their computers to meet their visual, hearing, dexterity, cognitive, and speech needs. It includes both accessibility options built into products as well as specialty hardware and software products (assistive technology products ) that help individuals interact with a computer. <br>\n<br>\nThe goals of this study were to identify the range of physical and cognitive abilities among working-age adults and current computer users in the United States, the types of difficulties and impairments that limit the scope of activities and their degree of severity, and the number of people who could potentially benefit from using accessible technology. This information, coupled with aging population trends, can help to explain the aging population's impact on computer use and need for accessible technology.<br>\n<br>\nThis report contains a summary of the study and presents its findings about individuals who are likely to benefit from the use of accessible technology. It also includes findings about working-age adults and computer users and presents data about the aging population in the US and its impact on computer use. This report concludes with statements about how these findings affect the information technology (IT) industry. <br>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ResearchReport-Phase2.doc",
+        "ResearchReport.doc",
+        "ResearchReport.pdf"
+    ],
+    "detailsSection_file_size": [
+        "560.5 KB",
+        "608.5 KB",
+        "554.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "FreeBSD",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Macintosh",
+        "MS-DOS",
+        "Solaris",
+        "TabletPC",
+        "Unix",
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 3.1",
+        "Windows 3.11",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows CE",
+        "Windows CE .NET",
+        "Windows ME",
+        "Windows Mobile 2002 software for Pocket PCs",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Embedded",
+        "Windows XP Media Center Edition",
+        "Xenix"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18446",
+    "downloadPreload": true
+}

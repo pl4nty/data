@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Forecaster 7.0 Hot Fix 2",
+    "downloadDescription": "Microsoft Forecaster 7.0 is a financial budgeting and planning product focused on the needs of the middle market.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FC073HF2.zip",
+            "url": "https://download.microsoft.com/download/8/3/a/83a36437-9378-45da-ba47-a0dd6b98ba6a/FC073HF2.zip",
+            "size": "1935752",
+            "version": "7.0 HF",
+            "datePublished": "6/13/2024 11:55:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Forecaster works with a variety of general ledgers\u2014including Microsoft Dynamics products\u2014to automate and simplify the budgeting and planning process. In addition, this intuitive budgeting software looks like and integrates with the productivity software your people already use, making the budgeting and planning process accessible to more key players in your organization.<br/>For more information, go to: <A href=\"http://www.microsoft.com/forecaster/product/default.mspx\">Microsoft Forecaster 7.0</A>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0 HF",
+    "detailsSection_file_name": [
+        "FC073HF2.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "SERVER REQUIREMENTS<br/>\r\nOperating systems compatible with Oracle: Windows Server 2008, Windows Server 2003 R2, or Windows 2000 Server Service Pack 4 (SP4). Both x86-64 and x86-32 are supported.<br/><br/>\r\nDATABASE<br/>\r\nMicrosoft SQL Server 2005 Service Pack 2 (SP2), x86-64 and x86-32<br/>\r\nMicrosoft SQL Server 2005 Express Edition, x86-64 and x86-32<br/>\r\nMicrosoft SQL Server 2000 Service Pack 3 (SP3) preferred<br/><br/>\r\nOracle 10g Standard Edition and Enterprise Edition<br/>\r\nNote: Microsoft Forecaster ExpressLink and Microsoft FRx DirectLink are not supported on Oracle platforms.<br/>\r\nOracle 9i Standard Edition and Enterprise Edition<br/>\r\nNote: Microsoft Forecaster ExpressLink and Microsoft FRx DirectLink are not supported on Oracle platforms.<br/><br/>\r\nFor more details, please see: <A href=\"http://www.microsoft.com/forecaster/product/systemrequirements.mspx\">Microsoft Forecaster 7.0 Requirements</A>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Install the Hot Fix on the servers and workstations where Microsoft Forecaster is currently installed. Administrative rights are required to update the Microsoft Forecaster program.  It is strongly advised that a database backup is made before completing the steps below.<br/>\r\nMicrosoft Forecaster Desktop Client Installation Steps:<br/><br/>\r\n1) Download the service pack by clicking the Download button (above) and then save the \r\nfile to your hard disk.<br/>\r\n2) Double-click FC073HF2.zip to run the extraction process. You will be \r\nprompted to choose a location for your files. <br/>\r\n3) To start the extraction, click Unzip. <br/>\r\n4) After the extraction has completed, click OK.<br/>\r\n5) Go to the location of the Hot Fix files. <br/>\r\n1. Close all running instances of Microsoft Forecaster. <br/>\r\n2. Launch the FC073HF2.exe file on the client machine for which you want to apply the updates. <br/>\r\n3. If prompted, click Run on the Security Window that opens to begin to apply the updates.<br/>\r\n4. Follow the prompts in the Setup Wizard to install the Hot Fix.<br/> \r\n5. Click Finish once the installation completes. <br/><br/><br/>\r\n\r\n\r\nMicrosoft Forecaster Web Access Installation Steps:<br/><br/>\r\nHot Fix updates for Microsoft Forecaster Web Access client machines are deployed from the Web server when the user makes their initial connection to Microsoft Forecaster.<br/><br/>\r\n1. Close all running instances of Microsoft Forecaster and stop the Web server instance. <br/>\r\nCaution: A reboot may be required if you do not stop the Internet Information Server service prior to installing this service pack on the web server. <br/>\r\n2. Launch the FC073HF2.exe file on the Web server for which you want to apply the updates. <br/>\r\n3. If prompted, click Run on the Security Window that opens to begin to apply the updates. <br/>\r\n4. Follow the prompts in the Setup Wizard to install the Hot Fix.<br/>\r\n5. Click Finish once the installation completes. <br/>\r\n6. The next time the user connects to Microsoft Forecaster Web Access from their Web browser they will be prompted to install the updated components. <br/>\r\nNote: To update the web components on the user\u2019s workstations be sure that the shortcut they use does not have a specific ASP page in the URL.  For example, the URL should be https://servername/Forecaster7 not https://servername/Forecaster7/Forecaster.asp.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3813",
+    "downloadPreload": true
+}

@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded NavReady - Cumulative Product Update Rollup Package  (through 12/31/2009)",
+    "downloadDescription": "Download the full set of updates for Windows Embedded NavReady. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded NavReady_Product_Update_Rollup_2009.htm",
+            "url": "https://download.microsoft.com/download/f/b/1/fb105b90-0299-4ee7-82f8-475051ac33a3/Windows Embedded NavReady_Product_Update_Rollup_2009.htm",
+            "size": "12503",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:04 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WinCEPB50_NavReady-091231-Product-Update-Rollup-Armv4I.msi",
+            "url": "https://download.microsoft.com/download/f/b/1/fb105b90-0299-4ee7-82f8-475051ac33a3/WinCEPB50_NavReady-091231-Product-Update-Rollup-Armv4I.msi",
+            "size": "9127424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a full set of updates for Windows Embedded NavReady.  Please see the associated Readme for a list of the included updates. \n<br/>\n<br/>\nFor complete details regarding the updates in this release, please download the Windows Embedded NavReady_Product_Update_Rollup_2009.htm file below.\r\n<br/>\n<br/>\r\nThis rollup contains all updates released for Windows Embedded NavReady up through 12/31/2009.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows Embedded NavReady_Product_Update_Rollup_2009.htm",
+        "WinCEPB50_NavReady-091231-Product-Update-Rollup-Armv4I.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.2 KB",
+        "8.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows Embedded NavReady</LI><LI>75 MB of disk space required to download, install, and operate per processor</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "<b>Important Download Details:</b><BR /><UL><LI>Each update is contained in a compressed file along with instructions.  All of the updates have been separated to make the download quicker.</LI><LI>Updates are cumulative; we suggest that you download all of them.  The setup will replace files in your Windows CE Platform Builder installation.</LI><LI>If you experience any problems in the download or installation of these updates e-mail qfeadmin@microsoft.com.</LI></UL><OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\nThis site provides critical stand-alone updates and monthly rollups of all Windows CE updates available for evaluation customers only. All licensed OEMs should visit the OEM Windows Embedded Web site for updates. <br />",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Books",
+            "url": "http://msdn.microsoft.com/embedded/community/community/books/default.aspx"
+        },
+        {
+            "title": "windows CE Documentation",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/windowsce.asp"
+        },
+        {
+            "title": "windows Embedded Community",
+            "url": "http://msdn.microsoft.com/embedded/community/default.aspx"
+        },
+        {
+            "title": "windows CE Home Page",
+            "url": "http://msdn.microsoft.com/embedded/windowsce/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23495",
+    "downloadPreload": true
+}

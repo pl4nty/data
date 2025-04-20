@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 Performance Counters",
+    "downloadDescription": "This document provides information about the Microsoft Dynamics CRM 2011 performance counters available for use in Windows Performance Monitor.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics CRM 2011 Performance Counters.pdf",
+            "url": "https://download.microsoft.com/download/2/e/5/2e545a3e-f64a-4c24-b834-4bf6a453ba5b/Microsoft Dynamics CRM 2011 Performance Counters.pdf",
+            "size": "539685",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:15:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Server 2008 R2 includes a tool named Windows Performance Monitor. You can configure Windows Performance Monitor to obtain and display performance data as system components run on a Microsoft Dynamics CRM deployment.<br/><br/>\r\nPerformance objects provide sets of counters that generate data about how various components perform as they run in a Microsoft Dynamics CRM environment. Many performance objects are built into the operating system, and more are installed with software applications and services. <br/><br/>\r\nThe following are the performance counters provided with Microsoft Dynamics CRM 2011:\r\n<ul>\r\n<li>Microsoft Dynamics CRM Client counters</li>\r\n<li>Microsoft Dynamics CRM Server counters</li>\r\n<li>Microsoft Dynamics CRM Authentication counters</li>\r\n<li>Microsoft Dynamics CRM OutlookSync counters</li>\r\n<li>Microsoft Dynamics CRM Discovery counters</li>\r\n<li>Microsoft Dynamics CRM LocatorService counters</li>\r\n<li>Microsoft Dynamics CRM Platform counters</li>\r\n<li>Microsoft Dynamics CRM Service counters</li>\r\n<li>Microsoft Dynamics CRM Sandbox Client counters</li>\r\n<li>Microsoft Dynamics CRM Sandbox Host counters</li>\r\n<li>Microsoft Dynamics CRM Async Service counters</li>\r\n<li>Microsoft Dynamics CRM E-mail Router counters</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM 2011 Performance Counters.pdf"
+    ],
+    "detailsSection_file_size": [
+        "527.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </li>\r\n<li>For information about the system requirements for Microsoft Dynamics CRM 2011, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=181018\">System Requirements and Required Components</a></li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol><li>Click <b>Download</b> to download the document in PDF file format.</li>\r\n<li>Save the file to your computer.</li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27119",
+    "downloadPreload": true
+}

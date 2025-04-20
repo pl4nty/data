@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Team System 2008 Team Foundation Server MSSCCI Provider",
+    "downloadDescription": "Enables integrated use of Team Foundation Version Control with products that do not support Team Explorer integration.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visual Studio Team Foundation Server MSSCCI Provider.msi",
+            "url": "https://download.microsoft.com/download/0/8/5/08556c39-366c-4fa8-9d51-d2a6e4323981/Visual Studio Team Foundation Server MSSCCI Provider.msi",
+            "size": "1161728",
+            "version": "2.1",
+            "datePublished": "7/15/2024 3:10:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visual Studio Team System 2008 Team Foundation Server MSSCCI Provider enables integrated use of Team Foundation Version Control with products that do not support Team Explorer integration.<br /><br />\nThis version (2.0) includes:\n<ul><br />\n<li>Updated provider to link against VS 2008 TFS assemblies (i.e. version 9.0.0.0)</li><br />\n<li>Enabled support for MSSCCI BeginBatch/EndBatch in VS 2003 and SQL Server  Management Studio during Check In operations.  This should alleviate the \"multiple Check In dialog\" issue by showing all pending changes in the workspace in the first dialog that appears and permitting the user to check in all changes from that first dialog.</li><br />\n<li>Changed Open From Source Control in VS 2003 to validate a project file\n   exists in the selected server folder before leaving the dialog.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1",
+    "detailsSection_file_name": [
+        "Visual Studio Team Foundation Server MSSCCI Provider.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio Team System 2008 Team Foundation Server<br />\nVisual Studio Team System 2005 Team Foundation Server<br />\nVisual Studio Team System 2008 Team Explorer<br />\n.NET Framework 2.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download and run Visual Studio Team Foundation Server MSSCCI Provider.msi on a computer with one of the following products:<br />\n<ul>\n<li>Visual Studio .NET 2003 </li>\n<li>Visual C++ 6 SP6 </li>\n<li>Visual Visual Basic 6 SP6</li>\n<li>Visual FoxPro 9 SP1</li>\n<li>Microsoft Access 2003 SP2</li>\n<li>SQL Server Management Studio</li>\n<li>Sparx Systems Enterprise Architect 6.1</li>\n<li>Sybase PowerBuilder 10.5 </li>\n<li>Toad for SQL Server 2.0</li>\n</ul>",
+    "additionalInformationSection": "For support, please visit the <a href=\"http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=478&SiteID=1\">Team Foundation Server - Version Control Forum</a>.<br/>\nTo provide feedback, contact <a href=\"mailto:tfmsscci@microsoft.com\">TFMSSCCI@Microsoft.com</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "team Foundation Server Developer Center",
+            "url": "http://msdn2.microsoft.com/en-us/tfs2008/"
+        },
+        {
+            "title": "support",
+            "url": "http://msdn2.microsoft.com/en-us/tfs2008/bb964347.aspx"
+        },
+        {
+            "title": "team Foundation Server - Version Control Forum",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=478&SiteID=1"
+        },
+        {
+            "title": "downloads",
+            "url": "http://msdn2.microsoft.com/en-us/tfs2008/bb964394.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12128",
+    "downloadPreload": true
+}

@@ -1,0 +1,137 @@
+{
+    "error": "",
+    "downloadTitle": "Agent_9.43.5994.1",
+    "downloadDescription": "Agent_9.43.5994.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-20.04-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/UBUNTU-20.04-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "size": "5240515",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES12-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/SLES12-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "size": "4623220",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL8-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/RHEL8-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "size": "4875549",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL7-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/OL7-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "size": "4630893",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.43.5994.1_UBUNTU-20.04-64_GA_31May2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/Microsoft-ASR_UA_9.43.5994.1_UBUNTU-20.04-64_GA_31May2021_release.tar.gz",
+            "size": "95901936",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.43.5994.1_SLES12-64_GA_31May2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/Microsoft-ASR_UA_9.43.5994.1_SLES12-64_GA_31May2021_release.tar.gz",
+            "size": "79006382",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.43.5994.1_RHEL8-64_GA_31May2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/Microsoft-ASR_UA_9.43.5994.1_RHEL8-64_GA_31May2021_release.tar.gz",
+            "size": "100444421",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.43.5994.1_OL7-64_GA_31May2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/Microsoft-ASR_UA_9.43.5994.1_OL7-64_GA_31May2021_release.tar.gz",
+            "size": "107313334",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.43.5994.1_DEBIAN8-64_GA_31May2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/Microsoft-ASR_UA_9.43.5994.1_DEBIAN8-64_GA_31May2021_release.tar.gz",
+            "size": "169776178",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DEBIAN8-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "url": "https://download.microsoft.com/download/6/7/6/6764f655-88b1-497a-9499-4b476ff1d57c/DEBIAN8-64_pushinstallclient_9.43.5994.1.tar.gz",
+            "size": "4830925",
+            "version": "9.43.5994.1",
+            "datePublished": "6/15/2024 4:58:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Agent_9.43.5994.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.43.5994.1",
+    "detailsSection_file_name": [
+        "UBUNTU-20.04-64_pushinstallclient_9.43.5994.1.tar.gz",
+        "SLES12-64_pushinstallclient_9.43.5994.1.tar.gz",
+        "RHEL8-64_pushinstallclient_9.43.5994.1.tar.gz",
+        "OL7-64_pushinstallclient_9.43.5994.1.tar.gz",
+        "Microsoft-ASR_UA_9.43.5994.1_UBUNTU-20.04-64_GA_31May2021_release.tar.gz",
+        "Microsoft-ASR_UA_9.43.5994.1_SLES12-64_GA_31May2021_release.tar.gz",
+        "Microsoft-ASR_UA_9.43.5994.1_RHEL8-64_GA_31May2021_release.tar.gz",
+        "Microsoft-ASR_UA_9.43.5994.1_OL7-64_GA_31May2021_release.tar.gz",
+        "Microsoft-ASR_UA_9.43.5994.1_DEBIAN8-64_GA_31May2021_release.tar.gz",
+        "DEBIAN8-64_pushinstallclient_9.43.5994.1.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB",
+        "4.4 MB",
+        "4.6 MB",
+        "4.4 MB",
+        "91.5 MB",
+        "75.3 MB",
+        "95.8 MB",
+        "102.3 MB",
+        "161.9 MB",
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103131",
+    "downloadPreload": true
+}

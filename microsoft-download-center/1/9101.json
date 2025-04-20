@@ -1,0 +1,1956 @@
+{
+    "error": "",
+    "downloadTitle": "Open Specifications Preview Specifications",
+    "downloadDescription": "From time to time, Microsoft may publish preview or pre-release versions of Open Specifications for community review and feedback. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[MS-OUTSPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OUTSPS].pdf",
+            "size": "3002938",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DWSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-DWSS].pdf",
+            "size": "2549477",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPSCRWL].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPSCRWL].pdf",
+            "size": "1521340",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BDCWPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BDCWPS].pdf",
+            "size": "16981527",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-TSCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-TSCSOM].pdf",
+            "size": "1281664",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPSETWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPSETWS].pdf",
+            "size": "2192306",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-APDS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-APDS-Diff].pdf",
+            "size": "643254",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPEMAWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPEMAWS].pdf",
+            "size": "2307929",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-NFPS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-NFPS-Diff].pdf",
+            "size": "645352",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-USPSWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-USPSWS].pdf",
+            "size": "4552646",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-COMMCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-COMMCSOM].pdf",
+            "size": "1378674",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EMMWCF].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EMMWCF].pdf",
+            "size": "5775323",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EDCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EDCSOM].pdf",
+            "size": "1413247",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SLIDELI].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SLIDELI].pdf",
+            "size": "1360388",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OAUTH2EX].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OAUTH2EX].pdf",
+            "size": "699038",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPDIAG].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPDIAG].pdf",
+            "size": "980083",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSDWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSDWS].pdf",
+            "size": "4285768",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PUBCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PUBCSOM].pdf",
+            "size": "3574587",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSWPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SSWPS].pdf",
+            "size": "5273611",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VGSFF].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-VGSFF].pdf",
+            "size": "6885150",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-AXL2].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-AXL2].pdf",
+            "size": "3857843",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OSALER].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OSALER].pdf",
+            "size": "1026266",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ACCDT].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ACCDT].pdf",
+            "size": "1441871",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-IPFF2].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-IPFF2].pdf",
+            "size": "14285132",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OSCO].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OSCO].pdf",
+            "size": "3496343",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WDVMODUU].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WDVMODUU].pdf",
+            "size": "980290",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ESP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ESP].pdf",
+            "size": "4697473",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DHA-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-DHA-Preview].pdf",
+            "size": "681038",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPS2SAUTH].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPS2SAUTH].pdf",
+            "size": "928527",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WORDSWCF].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WORDSWCF].pdf",
+            "size": "3228112",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ADMINS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ADMINS].pdf",
+            "size": "1211894",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-STSSYN].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-STSSYN].pdf",
+            "size": "681329",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WEBDAVE].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WEBDAVE].pdf",
+            "size": "1179040",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OFFICIALFILE].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OFFICIALFILE].pdf",
+            "size": "1620939",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OCSP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-OCSP-Diff].pdf",
+            "size": "407806",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPWCFWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPWCFWS].pdf",
+            "size": "1421121",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DSEXPORT].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/OfficeFileFormats/[MS-DSEXPORT].pdf",
+            "size": "755788",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ADS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ADS].pdf",
+            "size": "3408798",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WMS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WMS].pdf",
+            "size": "1763506",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ADTS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-ADTS-Diff].pdf",
+            "size": "7579295",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSHP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSHP].pdf",
+            "size": "1290003",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BDCMP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BDCMP].pdf",
+            "size": "1763873",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPACSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPACSOM].pdf",
+            "size": "849259",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EDSA].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EDSA].pdf",
+            "size": "1847937",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-TMPLDISC].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-TMPLDISC].pdf",
+            "size": "853483",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DMCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-DMCSOM].pdf",
+            "size": "1100113",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPAFWI].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPAFWI].pdf",
+            "size": "1187965",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BDCMFFS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BDCMFFS].pdf",
+            "size": "3958363",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RDPEGFX-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-RDPEGFX-Diff].pdf",
+            "size": "2653007",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EDINTWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EDINTWS].pdf",
+            "size": "1354957",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSLDAP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSLDAP].pdf",
+            "size": "1322781",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DSCPM-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-DSCPM-Diff].pdf",
+            "size": "1234312",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSDAP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FSDAP].pdf",
+            "size": "3453231",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UGS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UGS].pdf",
+            "size": "5062427",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DVRD-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-DVRD-Diff].pdf",
+            "size": "551377",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OMS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OMS].pdf",
+            "size": "2106775",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-NOTESWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-NOTESWS].pdf",
+            "size": "1882204",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PLSP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PLSP].pdf",
+            "size": "1006353",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-CSOM].pdf",
+            "size": "4256903",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSMC-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-RSMC-Diff].pdf",
+            "size": "6382883",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WUSP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-WUSP-Diff].pdf",
+            "size": "2476519",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ASWS].pdf",
+            "size": "1999292",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VIEWSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-VIEWSS].pdf",
+            "size": "2014831",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-MEETS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-MEETS].pdf",
+            "size": "2000777",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PPSEC-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-PPSEC-Diff].pdf",
+            "size": "1050406",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-KQL].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-KQL].pdf",
+            "size": "1148042",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-IPAMM2-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-IPAMM2-Diff].pdf",
+            "size": "12181884",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SRCHCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SRCHCSOM].pdf",
+            "size": "3226929",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OCSPA-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-OCSPA-Diff].pdf",
+            "size": "620926",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ABTP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-ABTP-Diff].pdf",
+            "size": "605530",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ECS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-ECS-Diff].pdf",
+            "size": "1581835",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPO].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPO].pdf",
+            "size": "5415880",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PPSDECO].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PPSDECO].pdf",
+            "size": "1624459",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ADR].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ADR].pdf",
+            "size": "7521733",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSMODS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSMODS].pdf",
+            "size": "2295763",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSCDS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSCDS].pdf",
+            "size": "3935637",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PASCWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PASCWS].pdf",
+            "size": "1303541",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASDT].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ASDT].pdf",
+            "size": "1106348",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SNTP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-SNTP-Diff].pdf",
+            "size": "932757",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPSTWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPSTWS].pdf",
+            "size": "1380780",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WOPI].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Office/[MS-WOPI].pdf",
+            "size": "1899975",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ECTPWPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ECTPWPS].pdf",
+            "size": "1292100",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PRSTFR].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PRSTFR].pdf",
+            "size": "1124942",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-AUTHWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-AUTHWS].pdf",
+            "size": "1064015",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSFDP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FSFDP].pdf",
+            "size": "1123169",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VSDX].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-VSDX].pdf",
+            "size": "18680229",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-NCNBI-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-NCNBI-Preview].pdf",
+            "size": "7967300",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PERMS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PERMS].pdf",
+            "size": "1461321",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VAPR-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-VAPR-Preview].pdf",
+            "size": "441354",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VERSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-VERSS].pdf",
+            "size": "1326065",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-APPMWSP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-APPMWSP].pdf",
+            "size": "993638",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CDEPLOY].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-CDEPLOY].pdf",
+            "size": "1757015",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-METAWEB].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-METAWEB].pdf",
+            "size": "889080",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SAMS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-SAMS-Diff].pdf",
+            "size": "634104",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ADA2-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-ADA2-Diff].pdf",
+            "size": "2829069",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CONATB].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-CONATB].pdf",
+            "size": "1096663",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OAPX-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-OAPX-Diff].pdf",
+            "size": "714819",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VHDX-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-VHDX-Preview].pdf",
+            "size": "1137255",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ADSC-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-ADSC-Diff].pdf",
+            "size": "1542865",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SOCCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SOCCSOM].pdf",
+            "size": "3499886",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EXSPXML3].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EXSPXML3].pdf",
+            "size": "3793601",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CSOMREST].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-CSOMREST].pdf",
+            "size": "1467093",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ALERTSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ALERTSS].pdf",
+            "size": "1156994",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSSCXPP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSSCXPP].pdf",
+            "size": "997929",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPASA].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPASA].pdf",
+            "size": "2981244",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-IMAGS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-IMAGS].pdf",
+            "size": "2088595",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSSHTTPB].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FSSHTTPB].pdf",
+            "size": "4359641",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPIEWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPIEWS].pdf",
+            "size": "1874457",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SAMR-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-SAMR-Diff].pdf",
+            "size": "3148358",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FORMS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FORMS].pdf",
+            "size": "1117098",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EMMCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EMMCSOM].pdf",
+            "size": "4104862",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-TLSP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-TLSP-Diff].pdf",
+            "size": "369884",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DNSP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-DNSP-Diff].pdf",
+            "size": "4763331",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-KPP-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-KPP-Preview].pdf",
+            "size": "473008",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-HVRS-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-HVRS-Preview].pdf",
+            "size": "285241",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ART].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ART].pdf",
+            "size": "1830055",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EXSPWS3].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EXSPWS3].pdf",
+            "size": "16497067",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PUBWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PUBWS].pdf",
+            "size": "2465549",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SHDACCWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SHDACCWS].pdf",
+            "size": "964844",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SSP].pdf",
+            "size": "817432",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSUSAR-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-WSUSAR-Diff].pdf",
+            "size": "7480793",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPRSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPRSS].pdf",
+            "size": "955246",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WMCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WMCSOM].pdf",
+            "size": "2681108",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSCAML].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSCAML].pdf",
+            "size": "4164711",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-IPFFX].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-IPFFX].pdf",
+            "size": "1959191",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DSPSTSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-DSPSTSS].pdf",
+            "size": "1532823",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPTWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPTWS].pdf",
+            "size": "1276733",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-COPYS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-COPYS].pdf",
+            "size": "1434148",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-USRPCH].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-USRPCH].pdf",
+            "size": "1740214",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSFOB].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSFOB].pdf",
+            "size": "6073665",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSREST].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSREST].pdf",
+            "size": "1909443",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-NFPB-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-NFPB-Diff].pdf",
+            "size": "1187561",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSFO3].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSFO3].pdf",
+            "size": "11610251",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-VGSP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-VGSP].pdf",
+            "size": "3097164",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-QSSWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-QSSWS].pdf",
+            "size": "6082012",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSTS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSTS].pdf",
+            "size": "2148558",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FPSE].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FPSE].pdf",
+            "size": "2043249",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SMB2-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-SMB2-Diff].pdf",
+            "size": "4381348",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UDCX].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Office/[MS-UDCX].pdf",
+            "size": "1336105",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WWSP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WWSP].pdf",
+            "size": "2470018",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSSCAP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WSSCAP].pdf",
+            "size": "1892020",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WFDPE-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-WFDPE-Diff].pdf",
+            "size": "593990",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPFCWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPFCWS].pdf",
+            "size": "2693371",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSCWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSCWS].pdf",
+            "size": "1614340",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPPTC].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPPTC].pdf",
+            "size": "2577414",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-INFODCF].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Office/[MS-INFODCF].pdf",
+            "size": "1016832",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BCSDPFFS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BCSDPFFS].pdf",
+            "size": "1312941",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DVRJ-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-DVRJ-Preview].pdf",
+            "size": "549054",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OIDCE-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-OIDCE-Preview].pdf",
+            "size": "536609",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DOCSWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-DOCSWS].pdf",
+            "size": "2493515",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSSHTTP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FSSHTTP].pdf",
+            "size": "4110329",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PPSAS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PPSAS].pdf",
+            "size": "14974833",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CPSWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-CPSWS].pdf",
+            "size": "2330855",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WDVME].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WDVME].pdf",
+            "size": "1119951",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WEBSS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WEBSS].pdf",
+            "size": "3136495",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WSUSSS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-WSUSSS-Diff].pdf",
+            "size": "2483263",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-UPSCP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-UPSCP].pdf",
+            "size": "3248063",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSCC-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-FSCC-Diff].pdf",
+            "size": "2998187",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BCSDWPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BCSDWPS].pdf",
+            "size": "1233556",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OBPAS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Office/[MS-OBPAS].pdf",
+            "size": "1677231",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSVD-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-RSVD-Diff].pdf",
+            "size": "2014007",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-LISTSWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-LISTSWS].pdf",
+            "size": "5469850",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RDPERP-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-RDPERP-Diff].pdf",
+            "size": "1794597",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ESREST].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ESREST].pdf",
+            "size": "1706149",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SQOS-Diff].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-SQOS-Diff].pdf",
+            "size": "683957",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-NCNBIS-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-NCNBIS-Preview].pdf",
+            "size": "7987657",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPWFCSOM].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPWFCSOM].pdf",
+            "size": "1498045",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ESURL].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ESURL].pdf",
+            "size": "968186",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-IPDSP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-IPDSP].pdf",
+            "size": "1092948",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CSOMSPT].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-CSOMSPT].pdf",
+            "size": "15874709",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-HRL-Preview].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-HRL-Preview].pdf",
+            "size": "523036",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OFBA].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-OFBA].pdf",
+            "size": "732642",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-TSWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-TSWS].pdf",
+            "size": "2800724",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PRIMEPF].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PRIMEPF].pdf",
+            "size": "6194893",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FQL2].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FQL2].pdf",
+            "size": "1149961",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSPP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FSPP].pdf",
+            "size": "1180459",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-FSSHTTPD].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-FSSHTTPD].pdf",
+            "size": "1660938",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SITESS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SITESS].pdf",
+            "size": "1825052",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BDCDP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BDCDP].pdf",
+            "size": "979125",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSVD-Diff_2015_1105].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/Windows/[MS-RSVD-Diff_2015_1105].pdf",
+            "size": "1756530",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PPSAPP].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PPSAPP].pdf",
+            "size": "8841136",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-EMMWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-EMMWS].pdf",
+            "size": "1773260",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SPLCHK].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SPLCHK].pdf",
+            "size": "1044522",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-AXL].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-AXL].pdf",
+            "size": "8348273",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-WPPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-WPPS].pdf",
+            "size": "5328239",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SITEDATS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SITEDATS].pdf",
+            "size": "4652625",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SEARCH].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-SEARCH].pdf",
+            "size": "4017430",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PEOPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-PEOPS].pdf",
+            "size": "1345263",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-AADT].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-AADT].pdf",
+            "size": "3487581",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ACMAUDWS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-ACMAUDWS].pdf",
+            "size": "1020277",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BDCRAWPS].pdf",
+            "url": "https://download.microsoft.com/download/c/6/c/c6c3c6f1-e84a-44ef-82a9-49bd3aad8f58/SharePoint/[MS-BDCRAWPS].pdf",
+            "size": "16543494",
+            "version": "Preview Release",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "From time to time, Microsoft may publish preview or pre-release versions of Open Specifications for community review and feedback. The preview periods for each specification presented in this way are determined by the individual teams responsible for the documentation. Not every specification will be published for preview. \r\n\r\nAfter the preview period, the preview specifications will be published in the appropriate location in the overall Open Specifications library for further reference. \r\n\r\nTo provide feedback for any preview specification, please follow the instructions for the specific document as outlined. You can always provide feedback for published Open Specifications by using the Open Specification forums at: http://social.msdn.microsoft.com/Forums/en-US/category/openspecifications. \r\n\r\nWe look forward to your feedback.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Preview Release",
+    "detailsSection_file_name": [
+        "[MS-OUTSPS].pdf",
+        "[MS-DWSS].pdf",
+        "[MS-SPSCRWL].pdf",
+        "[MS-BDCWPS].pdf",
+        "[MS-TSCSOM].pdf",
+        "[MS-SPSETWS].pdf",
+        "[MS-APDS-Diff].pdf",
+        "[MS-SPEMAWS].pdf",
+        "[MS-NFPS-Diff].pdf",
+        "[MS-USPSWS].pdf",
+        "[MS-COMMCSOM].pdf",
+        "[MS-EMMWCF].pdf",
+        "[MS-EDCSOM].pdf",
+        "[MS-SLIDELI].pdf",
+        "[MS-OAUTH2EX].pdf",
+        "[MS-SPDIAG].pdf",
+        "[MS-UPSDWS].pdf",
+        "[MS-PUBCSOM].pdf",
+        "[MS-SSWPS].pdf",
+        "[MS-VGSFF].pdf",
+        "[MS-AXL2].pdf",
+        "[MS-OSALER].pdf",
+        "[MS-ACCDT].pdf",
+        "[MS-IPFF2].pdf",
+        "[MS-OSCO].pdf",
+        "[MS-WDVMODUU].pdf",
+        "[MS-ESP].pdf",
+        "[MS-DHA-Preview].pdf",
+        "[MS-SPS2SAUTH].pdf",
+        "[MS-WORDSWCF].pdf",
+        "[MS-ADMINS].pdf",
+        "[MS-STSSYN].pdf",
+        "[MS-WEBDAVE].pdf",
+        "[MS-OFFICIALFILE].pdf",
+        "[MS-OCSP-Diff].pdf",
+        "[MS-UPWCFWS].pdf",
+        "[MS-DSEXPORT].pdf",
+        "[MS-ADS].pdf",
+        "[MS-WMS].pdf",
+        "[MS-ADTS-Diff].pdf",
+        "[MS-WSSHP].pdf",
+        "[MS-BDCMP].pdf",
+        "[MS-SPACSOM].pdf",
+        "[MS-EDSA].pdf",
+        "[MS-TMPLDISC].pdf",
+        "[MS-DMCSOM].pdf",
+        "[MS-SPAFWI].pdf",
+        "[MS-BDCMFFS].pdf",
+        "[MS-RDPEGFX-Diff].pdf",
+        "[MS-EDINTWS].pdf",
+        "[MS-UPSLDAP].pdf",
+        "[MS-DSCPM-Diff].pdf",
+        "[MS-FSDAP].pdf",
+        "[MS-UGS].pdf",
+        "[MS-DVRD-Diff].pdf",
+        "[MS-OMS].pdf",
+        "[MS-NOTESWS].pdf",
+        "[MS-PLSP].pdf",
+        "[MS-CSOM].pdf",
+        "[MS-RSMC-Diff].pdf",
+        "[MS-WUSP-Diff].pdf",
+        "[MS-ASWS].pdf",
+        "[MS-VIEWSS].pdf",
+        "[MS-MEETS].pdf",
+        "[MS-PPSEC-Diff].pdf",
+        "[MS-KQL].pdf",
+        "[MS-IPAMM2-Diff].pdf",
+        "[MS-SRCHCSOM].pdf",
+        "[MS-OCSPA-Diff].pdf",
+        "[MS-ABTP-Diff].pdf",
+        "[MS-ECS-Diff].pdf",
+        "[MS-SPO].pdf",
+        "[MS-PPSDECO].pdf",
+        "[MS-ADR].pdf",
+        "[MS-UPSMODS].pdf",
+        "[MS-UPSCDS].pdf",
+        "[MS-PASCWS].pdf",
+        "[MS-ASDT].pdf",
+        "[MS-SNTP-Diff].pdf",
+        "[MS-SPSTWS].pdf",
+        "[MS-WOPI].pdf",
+        "[MS-ECTPWPS].pdf",
+        "[MS-PRSTFR].pdf",
+        "[MS-AUTHWS].pdf",
+        "[MS-FSFDP].pdf",
+        "[MS-VSDX].pdf",
+        "[MS-NCNBI-Preview].pdf",
+        "[MS-PERMS].pdf",
+        "[MS-VAPR-Preview].pdf",
+        "[MS-VERSS].pdf",
+        "[MS-APPMWSP].pdf",
+        "[MS-CDEPLOY].pdf",
+        "[MS-METAWEB].pdf",
+        "[MS-SAMS-Diff].pdf",
+        "[MS-ADA2-Diff].pdf",
+        "[MS-CONATB].pdf",
+        "[MS-OAPX-Diff].pdf",
+        "[MS-VHDX-Preview].pdf",
+        "[MS-ADSC-Diff].pdf",
+        "[MS-SOCCSOM].pdf",
+        "[MS-EXSPXML3].pdf",
+        "[MS-CSOMREST].pdf",
+        "[MS-ALERTSS].pdf",
+        "[MS-UPSSCXPP].pdf",
+        "[MS-SPASA].pdf",
+        "[MS-IMAGS].pdf",
+        "[MS-FSSHTTPB].pdf",
+        "[MS-UPIEWS].pdf",
+        "[MS-SAMR-Diff].pdf",
+        "[MS-FORMS].pdf",
+        "[MS-EMMCSOM].pdf",
+        "[MS-TLSP-Diff].pdf",
+        "[MS-DNSP-Diff].pdf",
+        "[MS-KPP-Preview].pdf",
+        "[MS-HVRS-Preview].pdf",
+        "[MS-ART].pdf",
+        "[MS-EXSPWS3].pdf",
+        "[MS-PUBWS].pdf",
+        "[MS-SHDACCWS].pdf",
+        "[MS-SSP].pdf",
+        "[MS-WSUSAR-Diff].pdf",
+        "[MS-SPRSS].pdf",
+        "[MS-WMCSOM].pdf",
+        "[MS-WSSCAML].pdf",
+        "[MS-IPFFX].pdf",
+        "[MS-DSPSTSS].pdf",
+        "[MS-SPTWS].pdf",
+        "[MS-COPYS].pdf",
+        "[MS-USRPCH].pdf",
+        "[MS-WSSFOB].pdf",
+        "[MS-WSSREST].pdf",
+        "[MS-NFPB-Diff].pdf",
+        "[MS-WSSFO3].pdf",
+        "[MS-VGSP].pdf",
+        "[MS-QSSWS].pdf",
+        "[MS-WSSTS].pdf",
+        "[MS-FPSE].pdf",
+        "[MS-SMB2-Diff].pdf",
+        "[MS-UDCX].pdf",
+        "[MS-WWSP].pdf",
+        "[MS-WSSCAP].pdf",
+        "[MS-WFDPE-Diff].pdf",
+        "[MS-UPFCWS].pdf",
+        "[MS-UPSCWS].pdf",
+        "[MS-SPPTC].pdf",
+        "[MS-INFODCF].pdf",
+        "[MS-BCSDPFFS].pdf",
+        "[MS-DVRJ-Preview].pdf",
+        "[MS-OIDCE-Preview].pdf",
+        "[MS-DOCSWS].pdf",
+        "[MS-FSSHTTP].pdf",
+        "[MS-PPSAS].pdf",
+        "[MS-CPSWS].pdf",
+        "[MS-WDVME].pdf",
+        "[MS-WEBSS].pdf",
+        "[MS-WSUSSS-Diff].pdf",
+        "[MS-UPSCP].pdf",
+        "[MS-FSCC-Diff].pdf",
+        "[MS-BCSDWPS].pdf",
+        "[MS-OBPAS].pdf",
+        "[MS-RSVD-Diff].pdf",
+        "[MS-LISTSWS].pdf",
+        "[MS-RDPERP-Diff].pdf",
+        "[MS-ESREST].pdf",
+        "[MS-SQOS-Diff].pdf",
+        "[MS-NCNBIS-Preview].pdf",
+        "[MS-SPWFCSOM].pdf",
+        "[MS-ESURL].pdf",
+        "[MS-IPDSP].pdf",
+        "[MS-CSOMSPT].pdf",
+        "[MS-HRL-Preview].pdf",
+        "[MS-OFBA].pdf",
+        "[MS-TSWS].pdf",
+        "[MS-PRIMEPF].pdf",
+        "[MS-FQL2].pdf",
+        "[MS-FSPP].pdf",
+        "[MS-FSSHTTPD].pdf",
+        "[MS-SITESS].pdf",
+        "[MS-BDCDP].pdf",
+        "[MS-RSVD-Diff_2015_1105].pdf",
+        "[MS-PPSAPP].pdf",
+        "[MS-EMMWS].pdf",
+        "[MS-SPLCHK].pdf",
+        "[MS-AXL].pdf",
+        "[MS-WPPS].pdf",
+        "[MS-SITEDATS].pdf",
+        "[MS-SEARCH].pdf",
+        "[MS-PEOPS].pdf",
+        "[MS-AADT].pdf",
+        "[MS-ACMAUDWS].pdf",
+        "[MS-BDCRAWPS].pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB",
+        "2.4 MB",
+        "1.5 MB",
+        "16.2 MB",
+        "1.2 MB",
+        "2.1 MB",
+        "628.2 KB",
+        "2.2 MB",
+        "630.2 KB",
+        "4.3 MB",
+        "1.3 MB",
+        "5.5 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "682.7 KB",
+        "957.1 KB",
+        "4.1 MB",
+        "3.4 MB",
+        "5.0 MB",
+        "6.6 MB",
+        "3.7 MB",
+        "1002.2 KB",
+        "1.4 MB",
+        "13.6 MB",
+        "3.3 MB",
+        "957.3 KB",
+        "4.5 MB",
+        "665.1 KB",
+        "906.8 KB",
+        "3.1 MB",
+        "1.2 MB",
+        "665.4 KB",
+        "1.1 MB",
+        "1.5 MB",
+        "398.2 KB",
+        "1.4 MB",
+        "738.1 KB",
+        "3.3 MB",
+        "1.7 MB",
+        "7.2 MB",
+        "1.2 MB",
+        "1.7 MB",
+        "829.4 KB",
+        "1.8 MB",
+        "833.5 KB",
+        "1.0 MB",
+        "1.1 MB",
+        "3.8 MB",
+        "2.5 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.2 MB",
+        "3.3 MB",
+        "4.8 MB",
+        "538.5 KB",
+        "2.0 MB",
+        "1.8 MB",
+        "982.8 KB",
+        "4.1 MB",
+        "6.1 MB",
+        "2.4 MB",
+        "1.9 MB",
+        "1.9 MB",
+        "1.9 MB",
+        "1.0 MB",
+        "1.1 MB",
+        "11.6 MB",
+        "3.1 MB",
+        "606.4 KB",
+        "591.3 KB",
+        "1.5 MB",
+        "5.2 MB",
+        "1.5 MB",
+        "7.2 MB",
+        "2.2 MB",
+        "3.8 MB",
+        "1.2 MB",
+        "1.1 MB",
+        "910.9 KB",
+        "1.3 MB",
+        "1.8 MB",
+        "1.2 MB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.1 MB",
+        "17.8 MB",
+        "7.6 MB",
+        "1.4 MB",
+        "431.0 KB",
+        "1.3 MB",
+        "970.3 KB",
+        "1.7 MB",
+        "868.2 KB",
+        "619.2 KB",
+        "2.7 MB",
+        "1.0 MB",
+        "698.1 KB",
+        "1.1 MB",
+        "1.5 MB",
+        "3.3 MB",
+        "3.6 MB",
+        "1.4 MB",
+        "1.1 MB",
+        "974.5 KB",
+        "2.8 MB",
+        "2.0 MB",
+        "4.2 MB",
+        "1.8 MB",
+        "3.0 MB",
+        "1.1 MB",
+        "3.9 MB",
+        "361.2 KB",
+        "4.5 MB",
+        "461.9 KB",
+        "278.6 KB",
+        "1.7 MB",
+        "15.7 MB",
+        "2.4 MB",
+        "942.2 KB",
+        "798.3 KB",
+        "7.1 MB",
+        "932.9 KB",
+        "2.6 MB",
+        "4.0 MB",
+        "1.9 MB",
+        "1.5 MB",
+        "1.2 MB",
+        "1.4 MB",
+        "1.7 MB",
+        "5.8 MB",
+        "1.8 MB",
+        "1.1 MB",
+        "11.1 MB",
+        "3.0 MB",
+        "5.8 MB",
+        "2.0 MB",
+        "1.9 MB",
+        "4.2 MB",
+        "1.3 MB",
+        "2.4 MB",
+        "1.8 MB",
+        "580.1 KB",
+        "2.6 MB",
+        "1.5 MB",
+        "2.5 MB",
+        "993.0 KB",
+        "1.3 MB",
+        "536.2 KB",
+        "524.0 KB",
+        "2.4 MB",
+        "3.9 MB",
+        "14.3 MB",
+        "2.2 MB",
+        "1.1 MB",
+        "3.0 MB",
+        "2.4 MB",
+        "3.1 MB",
+        "2.9 MB",
+        "1.2 MB",
+        "1.6 MB",
+        "1.9 MB",
+        "5.2 MB",
+        "1.7 MB",
+        "1.6 MB",
+        "667.9 KB",
+        "7.6 MB",
+        "1.4 MB",
+        "945.5 KB",
+        "1.0 MB",
+        "15.1 MB",
+        "510.8 KB",
+        "715.5 KB",
+        "2.7 MB",
+        "5.9 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.6 MB",
+        "1.7 MB",
+        "956.2 KB",
+        "1.7 MB",
+        "8.4 MB",
+        "1.7 MB",
+        "1020.0 KB",
+        "8.0 MB",
+        "5.1 MB",
+        "4.4 MB",
+        "3.8 MB",
+        "1.3 MB",
+        "3.3 MB",
+        "996.4 KB",
+        "15.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Macintosh",
+        "Unix",
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "1. Underscore characters are not always visible in code in the PDF files depending on the magnification selected by the user. Those characters are present in printed versions. \r\n\r\n2. Information in a table row may split across two pages.\r\n\r\n3. Table borders are not always visible depending upon the magnification selected by the user. Borders are present in printed versions of the PDF. 4.Cross-protocol links are only functional when the PDF files for the protocols are in the same folder. \r\n\r\nNote: Links in the PDFs don\u2019t resolve in Adobe Reader 9 because Adobe has changed the default setting for view mode in Adobe Reader 9. To access links, perform the following procedure: \r\n\r\n1. In Adobe Reader 9, go to the Edit menu and click Preferences. \r\n\r\n2. In the Categories list, click Documents. \r\n\r\n3. Under PDF/A View Mode, change the selection from Only for PDF/A documents to Never, and click OK. \r\n\r\nAdditional details on changing the setting can be located via the Adobe help site: http://help.adobe.com/en_US/Acrobat/9.0/Standard/WS3E0E8467-B787-4020-A1D3-6BC762A42DF2.w.html",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9101",
+    "downloadPreload": true
+}

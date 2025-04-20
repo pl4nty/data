@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2015 Third Party Notices",
+    "downloadDescription": "Third party notice for Microsoft Dynamics NAV 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsNAV2015ThirdPartyNotices.zip",
+            "url": "https://download.microsoft.com/download/7/1/c/71c5cd7b-5633-4cb4-958c-dd8777b76315/MicrosoftDynamicsNAV2015ThirdPartyNotices.zip",
+            "size": "387768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:36:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Third party notice for Microsoft Dynamics NAV 2015.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsNAV2015ThirdPartyNotices.zip"
+    ],
+    "detailsSection_file_size": [
+        "378.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows RT",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download and then open to view the third party notice.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44224",
+    "downloadPreload": true
+}

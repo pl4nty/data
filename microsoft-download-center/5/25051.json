@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Adoption and Training Downloads",
+    "downloadDescription": "Lync Adoption and Training Downloads",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_2010_Downloads_All.zip",
+            "url": "https://download.microsoft.com/download/1/3/b/13bb04b4-f898-42ee-8709-e0d5c8ecb4a8/Lync_2010_Downloads_All.zip",
+            "size": "67671543",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:27:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains a variety of user education and training resources for Microsoft Lync, including What's New articles and videos, Quick Start Guides, Work Smart Guides, Short Videos, and Training PowerPoint Presentations. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_2010_Downloads_All.zip"
+    ],
+    "detailsSection_file_size": [
+        "64.5 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:Windows 2000;Windows Vista;Windows XP; Windows 7\r\nThis download works with the following Office applications: Microsoft Office Word 2007, Microsoft Office Word 2003, Microsoft Office Word 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer. After you save the file, extract the .zip file to a folder. Instructions for modifying the documents are provided with the download. To remove this download, delete the file from the directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25051",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Update Health Tools",
+    "downloadDescription": "This package will enable you to expedite Windows 10 and Windows 11 quality updates in Microsoft Intune.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Expedite_packages.zip",
+            "url": "https://download.microsoft.com/download/d/7/e/d7e9fd79-e6fe-4036-85df-c60254f50d90/Expedite_packages.zip",
+            "size": "2677780",
+            "version": "1.1",
+            "datePublished": "7/15/2024 5:04:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package will enable you to expedite Windows 10 and windows 11 quality updates in Microsoft Intune. Learn more about expediting updates here: https://docs.microsoft.com/mem/intune/protect/windows-10-expedite-updates",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Expedite_packages.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "These tools are available in .zip format. To unzip the files, open File Explorer and find the zipped folder. To unzip the entire folder, right-click to select Extract All, and then follow the instructions. To unzip a single file or folder, double-click the zipped folder to open it. Then, drag or copy the item from the zipped folder to a new location.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Select the Download button and save the zip file to your local machine, then extract the files for your desired operating system and architecture.",
+    "relatedResourcesSection": [
+        {
+            "title": "expedite Windows 10 quality updates in Microsoft Intune",
+            "url": "https://docs.microsoft.com/mem/intune/protect/windows-10-expedite-updates"
+        },
+        {
+            "title": "get the most out of expedited Windows quality updates - Microsoft Community Hub",
+            "url": "https://techcommunity.microsoft.com/t5/windows-it-pro-blog/get-the-most-out-of-expedited-windows-quality-updates/ba-p/3659741"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103324",
+    "downloadPreload": true
+}

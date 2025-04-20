@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Subprocessors and Data Privacy Whitepaper",
+    "downloadDescription": "How Microsoft subprocessors handle customer data in the Microsoft Cloud",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Subprocessors and Data Privacy Whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/5/e/0/5e0f9012-9cbc-4796-9930-4b74da918bad/Subprocessors and Data Privacy Whitepaper.pdf",
+            "size": "488937",
+            "version": "Published",
+            "datePublished": "10/18/2024 6:40:10 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The purpose of this document is to outline the common security, privacy, and compliance questions customers have related to how Microsoft handles data that customers share and store in the Microsoft Cloud, specific to the use of third parties.  \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Published",
+    "detailsSection_file_name": [
+        "Subprocessors and Data Privacy Whitepaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "477.5 KB"
+    ],
+    "detailsSection_file_date": "10/18/2024",
+    "systemRequirementsSection": "Any device that can download and view PDF files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download PDF to review.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106293",
+    "downloadPreload": true
+}

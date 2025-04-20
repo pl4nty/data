@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Management of Access Control in the Enterprise",
+    "downloadDescription": "This tool enables administrators to collect data from one or more data servers and then visualize this information and understand who has access to what\u2014more specifically, which user or security group has read/write access or is denied read/write access, to which resources, such as folders, shares, and File Classification Infrastructure files. Last published: October 23, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MACE.zip",
+            "url": "https://download.microsoft.com/download/4/8/8/488351b0-1809-43e0-a5c9-6ea0faa19d45/MACE.zip",
+            "size": "2687580",
+            "version": "1.0.0",
+            "datePublished": "5/15/2024 4:10:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool enables administrators to collect data from one or more data servers and then visualize this information and understand who has access to what\u2014more specifically, which user or security group has read/write access or is denied read/write access, to which resources, such as folders, shares, and File Classification Infrastructure files.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "MACE.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52293",
+    "downloadPreload": true
+}

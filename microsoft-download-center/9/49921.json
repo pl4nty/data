@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Update 3 SDK",
+    "downloadDescription": "The Microsoft HPC Pack 2012 R2 Update 3 SDK is designed to provide the tools and content necessary to write parallel applications for the HPC Pack platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sdk_x64.msi",
+            "url": "https://download.microsoft.com/download/7/b/5/7b582b17-af1e-454a-b86b-e6733010eb47/sdk_x64.msi",
+            "size": "1474560",
+            "version": "4.5.5079.0",
+            "datePublished": "7/15/2024 4:30:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sdk_x86.msi",
+            "url": "https://download.microsoft.com/download/7/b/5/7b582b17-af1e-454a-b86b-e6733010eb47/sdk_x86.msi",
+            "size": "1474560",
+            "version": "4.5.5079.0",
+            "datePublished": "7/15/2024 4:30:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft HPC Pack 2012 R2 Update 3 SDK is designed to provide the tools and content necessary to write parallel applications for the HPC Pack platform.\r\n<br/>\r\nThe Development Kit consists of several components:\r\n<ul><li><i>Required:</i> The <b>Microsoft HPC Pack 2012 SDK</b> core package can be used to write client applications that interact with the HPC Pack job scheduler. Install this from sdk_x64.msi or sdk_x86.msi. You will also need to install the HPC Pack 2012 R2 Update 3 Client Utilities, which are available through the full HPC Pack 2012 R2 Update 3 installer or through the Client Utilities redistributable package available in the related downloads. </li>\r\n<ul><li>Files: sdk_x64.msi, sdk_x86.msi</li></ul>\r\n </ul>\r\n<br/>\r",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.5079.0",
+    "detailsSection_file_name": [
+        "sdk_x64.msi",
+        "sdk_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Minimum Hardware Required: At least one industry standard personal computer (either 32-bit or 64-bit) with at least 128MB RAM.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1) Download the appropriate SDK msi installer(s) to your workstation based on processor architecture, run it, and the installer will walk you through the setup process.<br/>\r\n2) If you are developing applications that interact with the HPC Pack job scheduler, you will also need to install the HPC Pack 2012 R2 Update 3 Client utilities. <br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack 2012 R2 Update 3",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=49922"
+        },
+        {
+            "title": "hpc Pack 2012 R2 Update 3 Client Utilities",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=49923"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49921",
+    "downloadPreload": true
+}

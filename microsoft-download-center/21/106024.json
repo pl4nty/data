@@ -1,0 +1,687 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvc_613_9.61.7055.1",
+    "downloadDescription": "ASRMobSvc_613_9.61.7055.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_pushinstallclient_9.61.7055.1.exe",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Windows_pushinstallclient_9.61.7055.1.exe",
+            "size": "4942864",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows_pushinstallclient.exe",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Windows_pushinstallclient.exe",
+            "size": "4942864",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-22.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-22.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "4530287",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-22.04-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-22.04-64_pushinstallclient.tar.gz",
+            "size": "4530287",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-20.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-20.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "4352594",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-20.04-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-20.04-64_pushinstallclient.tar.gz",
+            "size": "4352594",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-18.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-18.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6384523",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-18.04-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-18.04-64_pushinstallclient.tar.gz",
+            "size": "6384523",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-16.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-16.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6164691",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-16.04-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-16.04-64_pushinstallclient.tar.gz",
+            "size": "6164691",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-14.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-14.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "5849385",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-14.04-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/UBUNTU-14.04-64_pushinstallclient.tar.gz",
+            "size": "5849385",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES15-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/SLES15-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6020738",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES15-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/SLES15-64_pushinstallclient.tar.gz",
+            "size": "6020738",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES12-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/SLES12-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "5904181",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES12-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/SLES12-64_pushinstallclient.tar.gz",
+            "size": "5904181",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL9-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL9-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6283478",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL9-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL9-64_pushinstallclient.tar.gz",
+            "size": "6283478",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL8-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL8-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6140213",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL8-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL8-64_pushinstallclient.tar.gz",
+            "size": "6140213",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL7-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL7-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "5820421",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL7-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL7-64_pushinstallclient.tar.gz",
+            "size": "5820421",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL6-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL6-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6073376",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL6-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/RHEL6-64_pushinstallclient.tar.gz",
+            "size": "6073376",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL9-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL9-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6283896",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL9-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL9-64_pushinstallclient.tar.gz",
+            "size": "6283896",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL8-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL8-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6142057",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL8-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL8-64_pushinstallclient.tar.gz",
+            "size": "6142057",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL7-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL7-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "5814179",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL7-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL7-64_pushinstallclient.tar.gz",
+            "size": "5814179",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL6-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL6-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6058508",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL6-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/OL6-64_pushinstallclient.tar.gz",
+            "size": "6058508",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_Windows_GA_26Apr2024_release.exe",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_Windows_GA_26Apr2024_release.exe",
+            "size": "231657064",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-22.04-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_UBUNTU-22.04-64_GA_26Apr2024_release.tar.gz",
+            "size": "81676408",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-20.04-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_UBUNTU-20.04-64_GA_26Apr2024_release.tar.gz",
+            "size": "88816512",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-18.04-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_UBUNTU-18.04-64_GA_26Apr2024_release.tar.gz",
+            "size": "124264560",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-16.04-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_UBUNTU-16.04-64_GA_26Apr2024_release.tar.gz",
+            "size": "126237724",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-14.04-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_UBUNTU-14.04-64_GA_26Apr2024_release.tar.gz",
+            "size": "112538932",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_SLES15-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_SLES15-64_GA_26Apr2024_release.tar.gz",
+            "size": "112141226",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_SLES12-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_SLES12-64_GA_26Apr2024_release.tar.gz",
+            "size": "109146057",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_RHEL9-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_RHEL9-64_GA_26Apr2024_release.tar.gz",
+            "size": "153778345",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_RHEL8-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_RHEL8-64_GA_26Apr2024_release.tar.gz",
+            "size": "124434540",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_RHEL7-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_RHEL7-64_GA_26Apr2024_release.tar.gz",
+            "size": "128306083",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_RHEL6-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_RHEL6-64_GA_26Apr2024_release.tar.gz",
+            "size": "134301534",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_OL9-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_OL9-64_GA_26Apr2024_release.tar.gz",
+            "size": "123452584",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_OL8-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_OL8-64_GA_26Apr2024_release.tar.gz",
+            "size": "125246115",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_OL7-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_OL7-64_GA_26Apr2024_release.tar.gz",
+            "size": "119472518",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_OL6-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_OL6-64_GA_26Apr2024_release.tar.gz",
+            "size": "126706175",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_DEBIAN9-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_DEBIAN9-64_GA_26Apr2024_release.tar.gz",
+            "size": "173914264",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_DEBIAN8-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_DEBIAN8-64_GA_26Apr2024_release.tar.gz",
+            "size": "154135433",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_DEBIAN7-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_DEBIAN7-64_GA_26Apr2024_release.tar.gz",
+            "size": "146377726",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_DEBIAN12-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_DEBIAN12-64_GA_26Apr2024_release.tar.gz",
+            "size": "116214496",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_DEBIAN11-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_DEBIAN11-64_GA_26Apr2024_release.tar.gz",
+            "size": "178644799",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7055.1_DEBIAN10-64_GA_26Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/Microsoft-ASR_UA_9.61.7055.1_DEBIAN10-64_GA_26Apr2024_release.tar.gz",
+            "size": "135246018",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN9-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN9-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6269542",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN9-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN9-64_pushinstallclient.tar.gz",
+            "size": "6269542",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN8-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN8-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6002839",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN8-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN8-64_pushinstallclient.tar.gz",
+            "size": "6002839",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN7-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN7-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "5861097",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN12-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN12-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6546218",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN12-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN12-64_pushinstallclient.tar.gz",
+            "size": "6546218",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN11-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN11-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "6567321",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN11-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN11-64_pushinstallclient.tar.gz",
+            "size": "6567321",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEBIAN10-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN10-64_pushinstallclient_9.61.7055.1.tar.gz",
+            "size": "4284949",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DEBIAN10-64_pushinstallclient.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/1/cd1d1b56-81b4-469e-b0d7-781928eb766f/DEBIAN10-64_pushinstallclient.tar.gz",
+            "size": "4284949",
+            "version": "9.61.7055.1",
+            "datePublished": "4/26/2024 5:24:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvc_613_9.61.7055.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.61.7055.1",
+    "detailsSection_file_name": [
+        "Windows_pushinstallclient_9.61.7055.1.exe",
+        "Windows_pushinstallclient.exe",
+        "UBUNTU-22.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "UBUNTU-22.04-64_pushinstallclient.tar.gz",
+        "UBUNTU-20.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "UBUNTU-20.04-64_pushinstallclient.tar.gz",
+        "UBUNTU-18.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "UBUNTU-18.04-64_pushinstallclient.tar.gz",
+        "UBUNTU-16.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "UBUNTU-16.04-64_pushinstallclient.tar.gz",
+        "UBUNTU-14.04-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "UBUNTU-14.04-64_pushinstallclient.tar.gz",
+        "SLES15-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "SLES15-64_pushinstallclient.tar.gz",
+        "SLES12-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "SLES12-64_pushinstallclient.tar.gz",
+        "RHEL9-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "RHEL9-64_pushinstallclient.tar.gz",
+        "RHEL8-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "RHEL8-64_pushinstallclient.tar.gz",
+        "RHEL7-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "RHEL7-64_pushinstallclient.tar.gz",
+        "RHEL6-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "RHEL6-64_pushinstallclient.tar.gz",
+        "OL9-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "OL9-64_pushinstallclient.tar.gz",
+        "OL8-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "OL8-64_pushinstallclient.tar.gz",
+        "OL7-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "OL7-64_pushinstallclient.tar.gz",
+        "OL6-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "OL6-64_pushinstallclient.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_Windows_GA_26Apr2024_release.exe",
+        "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-22.04-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-20.04-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-18.04-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-16.04-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_UBUNTU-14.04-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_SLES15-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_SLES12-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_RHEL9-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_RHEL8-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_RHEL7-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_RHEL6-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_OL9-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_OL8-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_OL7-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_OL6-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_DEBIAN9-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_DEBIAN8-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_DEBIAN7-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_DEBIAN12-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_DEBIAN11-64_GA_26Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7055.1_DEBIAN10-64_GA_26Apr2024_release.tar.gz",
+        "DEBIAN9-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "DEBIAN9-64_pushinstallclient.tar.gz",
+        "DEBIAN8-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "DEBIAN8-64_pushinstallclient.tar.gz",
+        "DEBIAN7-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "DEBIAN12-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "DEBIAN12-64_pushinstallclient.tar.gz",
+        "DEBIAN11-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "DEBIAN11-64_pushinstallclient.tar.gz",
+        "DEBIAN10-64_pushinstallclient_9.61.7055.1.tar.gz",
+        "DEBIAN10-64_pushinstallclient.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB",
+        "4.7 MB",
+        "4.3 MB",
+        "4.3 MB",
+        "4.2 MB",
+        "4.2 MB",
+        "6.1 MB",
+        "6.1 MB",
+        "5.9 MB",
+        "5.9 MB",
+        "5.6 MB",
+        "5.6 MB",
+        "5.7 MB",
+        "5.7 MB",
+        "5.6 MB",
+        "5.6 MB",
+        "6.0 MB",
+        "6.0 MB",
+        "5.9 MB",
+        "5.9 MB",
+        "5.6 MB",
+        "5.6 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "6.0 MB",
+        "6.0 MB",
+        "5.9 MB",
+        "5.9 MB",
+        "5.5 MB",
+        "5.5 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "220.9 MB",
+        "77.9 MB",
+        "84.7 MB",
+        "118.5 MB",
+        "120.4 MB",
+        "107.3 MB",
+        "106.9 MB",
+        "104.1 MB",
+        "146.7 MB",
+        "118.7 MB",
+        "122.4 MB",
+        "128.1 MB",
+        "117.7 MB",
+        "119.4 MB",
+        "113.9 MB",
+        "120.8 MB",
+        "165.9 MB",
+        "147.0 MB",
+        "139.6 MB",
+        "110.8 MB",
+        "170.4 MB",
+        "129.0 MB",
+        "6.0 MB",
+        "6.0 MB",
+        "5.7 MB",
+        "5.7 MB",
+        "5.6 MB",
+        "6.2 MB",
+        "6.2 MB",
+        "6.3 MB",
+        "6.3 MB",
+        "4.1 MB",
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "4/26/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106024",
+    "downloadPreload": true
+}

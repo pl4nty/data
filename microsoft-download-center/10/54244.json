@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Teams Customer Success Kit",
+    "downloadDescription": "The Microsoft Teams Customer Success Kit provides resources that IT Pros, Administrators, and Trainers can use to roll out Microsoft Teams to end users in their organization. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSTeams_Customer_Success_Kit.zip",
+            "url": "https://download.microsoft.com/download/7/b/e/7be7dd9d-f6b3-4b80-9705-0b6438cb231a/MSTeams_Customer_Success_Kit.zip",
+            "size": "34542062",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Teams Customer Success Kit includes templates for announcements, flyers, posters, and countdown and tips and tricks email. It also includes Getting Started Guides for Team Leaders and IT Administrators. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSTeams_Customer_Success_Kit.zip"
+    ],
+    "detailsSection_file_size": [
+        "32.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Microsoft Teams Customer Success Kit consists of Word 2016 documents. Word 2010 or later is required to open and view the documents.",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Macintosh",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Click Download and save the .zip file to a folder, then extract the contents of the .zip file. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54244",
+    "downloadPreload": true
+}

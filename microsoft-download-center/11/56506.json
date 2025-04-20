@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Active Directory single sign-on for JIRA",
+    "downloadDescription": "Use your Microsoft Azure Active Directory account with Atlassian JIRA server to enable single sign-on. This way all your organization users can use the Azure AD credentials to login into the JIRA application. This plugin uses SAML 2.0 for federation.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftJIRASSO6x7x8x.obr",
+            "url": "https://download.microsoft.com/download/3/c/9/3c94c886-0c89-4182-a758-6db982e1f398/MicrosoftJIRASSO6x7x8x.obr",
+            "size": "3393393",
+            "version": "1.1.9",
+            "datePublished": "10/30/2024 4:19:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "JIRA plugin supports version 6.0 to 7.13.3, 8.0, 8.1.1, 8.2.1, 8.2.4, 8.5.4 , 8.8.1, 8.11.0 to 8.22.1 and 9.0 to\r\n\r\n9.17.4<br/>Support for JIRA Service Desk 3.0.0 to 4.13<br/>JIRA Service Management 4.14 to 4.22.1<br/>Support for Azure US\r\n\r\nGovernment Cloud with .us URLs<br/>Force login option in the plugin so that users dont see the username and password\r\n\r\noption and they are automatically redirected to Azure AD for authentication.<br /> <br /> Use your Microsoft Azure Active\r\n\r\nDirectory account with Atlassian JIRA server to enable single sign-on. This way all your organization users can use the\r\n\r\nAzure AD credentials to login into the JIRA application. This plugin uses SAML 2.0 for federation. Here is the article which\r\n\r\nprovides step by step guide for configuring single sign-on. https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/jiramicrosoft-tutorial<br /><br /><b>Feature Added</b><br />\r\n\r\n<ul>\r\n    <li>Application Proxy Support - Added checkbox on the configure plugin screen to toggle the App Proxy mode so as to make the Reply URL editable as per the need to point it to the proxy server URL</li>\r\n</ul>Detailed intructions to configure the plugin are mentioned in this document. https://learn.microsoft.com/en-us/azure/active-directory/saas-apps/jiramicrosoft-tutorial",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.9",
+    "detailsSection_file_name": [
+        "MicrosoftJIRASSO6x7x8x.obr"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "10/30/2024",
+    "systemRequirementsSection": "JIRA Core and Software 6.0 - 7.13.3, 8.0 , 8.1.1, 8.2.1, 8.2.4, 8.5.4, 8.8.1, 8.11.0  to 8.22.1 and 9.0 to\r\n\r\n9.17.4 <br/>JIRA Service Desk 3.0 to 4.13 should installed and configured on Windows 64-bit version or on Ubuntu Linux 16.04\r\n\r\nSupported Versions:<ul>\r\n<li>JIRA Core and Software: 6.0 to 7.13.3, 8.0, 8.1.1, 8.2.1, 8.2.4, 8.5.4 , 8.8.1, 8.11.0 to 8.22.1 and 9.0 to 9.17.4</li>\r\n<li>JIRA Service Desk 3.0.0 to 4.13 and JIRA Service Management 4.14 to 4.22.1</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Linux",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Following are the installation requirements for this plugin.\r\n<ul>\r\n<li> JIRA should be installed on a Windows 64-bit version </li>\r\n<li>JIRA version should be HTTPS enabled </li>\r\n<li>Note the supported version for Plugin in \u201cSupported Versions\u201d section below. </li>\r\n<li>JIRA server should be reachable on internet. </li>\r\n<li>Admin credentials for JIRA server</li>\r\n<li>Global admin credentials for Azure AD </li>\r\n<li>WebSudo should be disabled in JIRA </li>\r\n</ul>\r\n\r\nSupported Versions: <ul>\r\n<li>JIRA Core and Software: 6.0 to 7.13.3, 8.0, 8.1.1, 8.2.1, 8.2.4, 8.5.4 , 8.8.1, 8.11.0 to 8.22.1 and 9.0 to 9.17.4</li>\r\n<li>JIRA Service Desk 3.0.0 to 4.13 and JIRA Service Management 4.14 to 4.22.1</li>\r\n</ul>\r\n",
+    "additionalInformationSection": "This is Microsoft proprietory add-on for AtlassianJIRA Core and Software: 6.0 to 7.13.3, 8.0, 8.1.1, 8.2.1, 8.2.4, 8.5.4 , 8.8.1, 8.11.0 to 8.22.1 and 9.0 to 9.17.4 or JIRA Service Desk 3.0.0 to 4.13 and JIRA Service Management 4.14 to 4.221",
+    "relatedResourcesSection": [
+        {
+            "title": "azure AD and JIRA SSO Configuration Tutorial",
+            "url": "https://docs.microsoft.com/azure/active-directory/active-directory-saas-jiramicrosoft-tutorial"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56506",
+    "downloadPreload": true
+}

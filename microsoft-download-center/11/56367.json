@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Workshop: Plan, Deliver, & Operate Microsoft Teams",
+    "downloadDescription": "PowerPoint deck to lead a planning workshop for Microsoft Teams deployment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftTeams-Planning-Workshop-Dec2017.pptx",
+            "url": "https://download.microsoft.com/download/a/a/d/aad74246-790d-4e61-8da0-865742cb42db/MicrosoftTeams-Planning-Workshop-Dec2017.pptx",
+            "size": "5320718",
+            "version": "Dec2017",
+            "datePublished": "7/15/2024 4:49:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this PowerPoint deck to lead a workshop with your organization to plan your Microsoft Teams rollout. The workshop introduces Teams and guides your team through decision points and next steps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Dec2017",
+    "detailsSection_file_name": [
+        "MicrosoftTeams-Planning-Workshop-Dec2017.pptx"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\u00a0\r\n<LI>The file is a Microsoft PowerPoint file. Users who do not have Microsoft PowerPoint can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=320727\"> PowerPoint Viewer</A>.</LI>\u00a0\u00a0\r\n</UL>\u00a0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\u00a0\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\u00a0\r\n<li>Do one of the following:</li>\u00a0\r\n<ul>\u00a0\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\u00a0\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\u00a0\r\n</ul>\u00a0\r\n</ol>\u00a0\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "quick start: Successfully enable Teams",
+            "url": "https://docs.microsoft.com/en-us/MicrosoftTeams/quick-start-enable-teams"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56367",
+    "downloadPreload": true
+}

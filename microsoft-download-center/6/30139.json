@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Information Protection and Control (IPC) in Microsoft Exchange Online with AD RMS whitepaper",
+    "downloadDescription": "Information Protection and Control (IPC) in Microsoft Exchange Online with AD RMS whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IPC-in-Exchange-Online-with-AD-RMS.docx",
+            "url": "https://download.microsoft.com/download/3/8/9/3895ce7c-aeda-41e3-8c3b-09c7fd79b84a/IPC-in-Exchange-Online-with-AD-RMS.docx",
+            "size": "1912442",
+            "version": "1.0b",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nDue to increased regulation, the consumerization of IT  (CoIT) and the \u201cBring Your Own Device\u201d (BYOD), enterprises of all sizes are  facing growing needs to protect sensitive information. At the same time,  enterprises have a need to share that same information amongst appropriate employees  within and outside the corporate network. <br /><br />\r\n\r\nMicrosoft Active Directory Right Management  Services (AD RMS) provides the capability on-premise to create and consume  protected content such as e-mail and documents. As of today, such a capability  is also leveraged by the Microsoft Exchange Online services through the  Information Protection and Control (IPC) features to apply persistent  protection to e-mail messages and attachments.<br /><br />\r\n\r\nBuilt  on existing Microsoft documentation and knowledge base articles, this paper  presents how to leverage the corporate on-premise AD RMS infrastructure in the  organization\u2019s Office 365 tenant, and more especially with Microsoft Exchange  Online.<br /><br />\r\n\r\nThis  document is intended for system architects and IT professionals who are  interested in understanding the basics of cross-premise support for AD RMS  on-premise and Exchange Online along with planning and deploying such a  deployment model in their environment. It also provides basic instructions for  setting up and configuring an AD RMS single-node cluster in a test lab  environment for the cross-premise deployment with Exchange Online.<br /><br />\r\n\r\nThis  paper is part of a series of documents on the identity and security features of  Office 365, and more especially is the second guide of the series.  It  indeed completes a first whitepaper entitled <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28971\">Microsoft Office 365 Single Sign-On  (SSO) with AD FS 2.0</a> also available on the Microsoft Download Center. This  first whitepaper of the series is intended to provide a better understanding of  the different single sign-on deployment options for the services in Office 365,  how to enable single sign-on using corporate Active Directory credentials and  AD FS 2.0 to the services in Office 365, and the different configuration  elements to be aware of for such deployment.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0b",
+    "detailsSection_file_name": [
+        "IPC-in-Exchange-Online-with-AD-RMS.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "\r\n<ul>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=36391\">Active Directory from on-premises to the cloud</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28971\">Office 365 Single Sign-On with AD FS  2.0 whitepaper</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-hk/download/details.aspx?id=35464\">Office 365 Single Sign-On with  Shibboleth 2 whitepaper</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=34768\">Information  Protection and Control (IPC) in Office 365 Preview with Windows Azure AD Rights  Management whitepaper</a></li>\r\n\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30139",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 White Paper: Microsoft Dynamics GP Architecture",
+    "downloadDescription": "This white paper describes the architecture for Microsoft Dynamics GP and how it can scale with your organization in the future.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftDynamicsGPArchitecture.pdf",
+            "url": "https://download.microsoft.com/download/0/9/c/09cdfba7-d659-43e7-8223-5e870dba1958/MicrosoftDynamicsGPArchitecture.pdf",
+            "size": "2041350",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsGPArchitecture.xps",
+            "url": "https://download.microsoft.com/download/0/9/c/09cdfba7-d659-43e7-8223-5e870dba1958/MicrosoftDynamicsGPArchitecture.xps",
+            "size": "2482689",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document explains how the architecture\u2019s features make Microsoft Dynamics GP an ideal solution for organizations that are implementing a business management system today, and how the system will grow with you tomorrow. The product architecture is a key element that makes Microsoft Dynamics GP an outstanding solution for an organization today and into the future.\n This document discusses the following topics: <br />\n<UL><LI>The structure of the Microsoft Dynamics GP application, which is composed of the Dexterity runtime engine, the Dynamics application dictionary, and the Microsoft SQL Server database</LI>\n<LI>How Microsoft Dynamics GP efficiently uses system resources for both client workstations and servers</LI>\n<LI>The customization tools that are built into the software and are accessible to all users, and the tools that system administrators can use to customize Microsoft Dynamics GP, such as Modifier, Report Writer, and Visual Basic for Applications (VBA)</LI>\n<LI>The tools that are available for importing and exporting Microsoft Dynamics GP data, such as eConnect, Web Services, and Integration Manager</LI>\n<LI>The features that provide platform enhancements, such as flexible account numbers, lists, data-driven scrolling windows, security, international support, macro capabilities, named printers, the mail API, and error reporting</LI>\n<LI>The reporting and analytics tools that are available for Microsoft Dynamics GP, including Report Writer, SmartList, FRx, SQL Reporting Services, Excel Reports, and Crystal Reports</LI>\n<LI>How the workflow capabilities in Microsoft Dynamics GP control the flow of documents through the accounting system</LI> \n<LI>The architecture and features of Business Portal, which you can use as your company intranet or as an extension to it to provide Web-based access to Microsoft Dynamics GP data</LI>\n<LI> The additional industry- or market-specific capabilities that are included with Microsoft Dynamics GP, such as multidictionary architecture, the trigger system, and available development options</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsGPArchitecture.pdf",
+        "MicrosoftDynamicsGPArchitecture.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Vista Business",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24469",
+    "downloadPreload": true
+}

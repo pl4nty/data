@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2022 Integration Services Feature Pack for Azure",
+    "downloadDescription": "Microsoft SQL Server 2022 Integration Services (SSIS) Feature Pack for Azure provides SSIS the capability of connecting to Azure Blob Storage, Azure HDInsight, Azure Data Lake Store and Azure SQL Data Warehouse. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SsisAzureFeaturePack_SQL2022.msi",
+            "url": "https://download.microsoft.com/download/f/6/b/f6bc1a27-6c43-460b-a841-9cc0a4d2fa3e/SsisAzureFeaturePack_SQL2022.msi",
+            "size": "52011008",
+            "version": "16.1.21.0",
+            "datePublished": "7/15/2024 4:33:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2022 Integration Services (SSIS) Feature Pack for Azure provides SSIS the capability of connecting to Azure Blob Storage, Azure HDInsight, Azure Data Lake Store and Azure SQL Data Warehouse. It enables you to create SSIS packages that transfer data between an Azure Blob Storage, Azure Data Lake Store and on-premises data sources, and process data using Azure HDInsight.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.1.21.0",
+    "detailsSection_file_name": [
+        "SsisAzureFeaturePack_SQL2022.msi"
+    ],
+    "detailsSection_file_size": [
+        "49.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<ul>\r\n<li>Windows 10</li>\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2019</li>\n</ul>\n<br />\n<li><b>Supported architectures:</b></li>\n<ul>\n<li>32-bit (x86)</li>\n<li>64-bit (x64)</li>\n</ul>\n<br />\n<li><b>Hardware requirements:</b></li>\n<ul>\n<li>1.6 GHz or faster processor</li>\n<li>1 GB of RAM (1.5 GB if running on a virtual machine)</li>\n<li>10 GB (NTFS) of available hard disk space</li>\n<li>5400 RPM hard drive</li>\n<li>DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\n</ul>\n<br />\n<li><b>Prerequisites:</b></li>\n<ul>\n<li>Microsoft .NET Framework 4.7.2</li>\n<li>Microsoft SQL Server 2022 Integration Services</li>\n</ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<br />\n1. On this page, click Download to start the download. \n<br />\n2. To save the download on your computer so that you can install it later, click Save.\n<br />\n3. To cancel the installation, click Cancel.\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft SQL Server 2012 Integration Services Feature Pack for Azure",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=47367"
+        },
+        {
+            "title": "microsoft SQL Server 2014 Integration Services Feature Pack for Azure",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=47366"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104811",
+    "downloadPreload": true
+}

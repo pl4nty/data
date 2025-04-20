@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server Jetstress 2013 Tool",
+    "downloadDescription": "Simulate Exchange 2013 and Exchange 2016 disk I/O load on a server to verify the performance and stability of your disk subsystem before putting your server into a production environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Jetstress.msi",
+            "url": "https://download.microsoft.com/download/c/2/4/c2484c53-5251-4278-a7c2-95739bfdd7ce/Jetstress.msi",
+            "size": "1773568",
+            "version": "15.2.1805.0",
+            "datePublished": "11/13/2024 7:16:16 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use Jetstress to verify the performance and stability of a disk subsystem prior to putting an Exchange 2013 or Exchange 2016 server into production. Jetstress helps verify disk performance by simulating Exchange disk Input/Output (I/O) load. Specifically, Jetstress simulates the Exchange database and log file loads produced by a specific number of users. You use Performance Monitor, Event Viewer, and ESEUTIL in conjunction with Jetstress to verify that your disk subsystem meets or exceeds the performance criteria you establish. After a successful completion of the Jetstress Disk Performance and Stress Tests in a non-production environment, you will have ensured that your Exchange disk subsystem is adequately sized (in terms of performance criteria you establish) for the user count and user profiles you have established. It is highly recommended that the Jetstress user read through the tool documentation before using the tool.<br />\n<BR />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.2.1805.0",
+    "detailsSection_file_name": [
+        "Jetstress.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "11/13/2024",
+    "systemRequirementsSection": "<BR />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click the <b>Download</b> button on this page to start the download</LI>\r\n<LI>Do one of the following: </LI>\r\n<UL>\r\n<LI>To start the installation immediately, click <B>Run</B>.</LI>\r\n<LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI>\r\n<LI>To cancel the installation, click <B>Cancel</B>.</LI>\r\n</UL>\r\n</OL>\r\n",
+    "additionalInformationSection": "Your use of the Jetstress Utility Tool is governed by the terms and conditions of the end user license agreement which can be found in the self-extract package.<BR /><BR />If you do not agree with those terms and conditions, do not use the software.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36849",
+    "downloadPreload": true
+}

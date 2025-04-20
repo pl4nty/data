@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 Guides: Business Portal Implementation",
+    "downloadDescription": "These guides provide information about implementing Business Portal for Microsoft Dynamics GP 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BPImplementationGuide50.xps",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/BPImplementationGuide50.xps",
+            "size": "605339",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BPImplementationGuide51.xps",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/BPImplementationGuide51.xps",
+            "size": "673325",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BPImplementationGuide51.pdf",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/BPImplementationGuide51.pdf",
+            "size": "1695437",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BPImplementationGuide50.pdf",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/BPImplementationGuide50.pdf",
+            "size": "962276",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ImplementationChecklist.doc",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/ImplementationChecklist.doc",
+            "size": "135168",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContentInventory.xls",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/ContentInventory.xls",
+            "size": "16384",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UsersAndRoles.xls",
+            "url": "https://download.microsoft.com/download/0/8/0/0801e2fd-641b-4105-bd62-a8bc250368e7/UsersAndRoles.xls",
+            "size": "136192",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use these guides to help walk you through the major stages in the implementation process. The version that you should download depends on your Business Portal environment:<br /> \r\n<UL><LI><b>Business Portal Implementation Guide (Release 5.0)</b> BPImplementationGuide50.pdf or BPImplementationGuide50.xps): Use this document if you're using Business Portal on Windows SharePoint Services or Microsoft Office SharePoint Server 2007.</LI> \r\n<LI><b>Business Portal Implementation Guide (Release 5.1)</b> (BPImplementationGuide51.pdf or BPImplementationGuide51.xps): Use this document if you're using Business Portal on Windows SharePoint Foundation or Microsoft SharePoint Server 2010.</LI></UL><br /><br />\r\nYou can also download the following supplemental components: <br />\r\n<ul><li><b>Business Portal Implementation Checklist</b> (ImplementationChecklist.doc): A template that can be tailored to your specific implementation project. It lists the steps involved in implementing and deploying Business Portal. You can use this template to identify who is responsible to make sure that the tasks are completed, and also to identify any risks and dependencies.</li>\r\n<li><b>Content Inventory template</b> (ContentInventory.xls): A spreadsheet that provides an example of a content inventory. This includes a list of 1) where documents are located, 2) what format documents were created in, 3) who is responsible for maintaining the documents, and 4) where the information will be stored within the portal.</li>\r\n<li><b>Users and Roles template</b> (UsersAndRoles.xls): A spreadsheet to help you set up users and assign them to SharePoint groups, MBF roles, and web service roles. Complete the template before adding users to Business Portal.</li></ul> ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "BPImplementationGuide50.xps",
+        "BPImplementationGuide51.xps",
+        "BPImplementationGuide51.pdf",
+        "BPImplementationGuide50.pdf",
+        "ImplementationChecklist.doc",
+        "ContentInventory.xls",
+        "UsersAndRoles.xls"
+    ],
+    "detailsSection_file_size": [
+        "591.2 KB",
+        "657.5 KB",
+        "1.6 MB",
+        "939.7 KB",
+        "132.0 KB",
+        "16.0 KB",
+        "133.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download each of the documents.</LI>\r\n<LI>Save the file to your computer. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the document, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14080",
+    "downloadPreload": true
+}

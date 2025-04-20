@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Regression Tree Fields",
+    "downloadDescription": "Source code implementing the regression tree fields method for computer vision and image processing applications. Last published: September 13, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RTF-1.0.zip",
+            "url": "https://download.microsoft.com/download/5/0/2/502cac60-2a87-4095-983c-4cfd17707532/RTF-1.0.zip",
+            "size": "353827",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:10:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Source code implementing the regression tree fields method for computer vision and image processing applications.  The release includes two example applications, image denoising and multi-label classification.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "RTF-1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "345.5 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52441",
+    "downloadPreload": true
+}

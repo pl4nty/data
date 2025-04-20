@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 R2 Management Pack for JEE Application Servers (2014/10)",
+    "downloadDescription": "The Management Packs for JEE Application Servers enable discovering, monitoring, and managing JEE Application Servers with System Center 2012 R2 - Operations Manager.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center 2012 R2 Management Packs for Java EE.msi",
+            "url": "https://download.microsoft.com/download/4/d/e/4dec2163-cdf0-4f27-a8d0-85592736778c/System Center 2012 R2 Management Packs for Java EE.msi",
+            "size": "1470464",
+            "version": "7.5.1038.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgrR2_MP_WebLogic.docx",
+            "url": "https://download.microsoft.com/download/4/d/e/4dec2163-cdf0-4f27-a8d0-85592736778c/OpsMgrR2_MP_WebLogic.docx",
+            "size": "101570",
+            "version": "7.5.1038.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgrR2_MP_JBoss.docx",
+            "url": "https://download.microsoft.com/download/4/d/e/4dec2163-cdf0-4f27-a8d0-85592736778c/OpsMgrR2_MP_JBoss.docx",
+            "size": "109601",
+            "version": "7.5.1038.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgrR2_MP_WebSphere.docx",
+            "url": "https://download.microsoft.com/download/4/d/e/4dec2163-cdf0-4f27-a8d0-85592736778c/OpsMgrR2_MP_WebSphere.docx",
+            "size": "99656",
+            "version": "7.5.1038.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgrR2_MP_Tomcat.docx",
+            "url": "https://download.microsoft.com/download/4/d/e/4dec2163-cdf0-4f27-a8d0-85592736778c/OpsMgrR2_MP_Tomcat.docx",
+            "size": "93778",
+            "version": "7.5.1038.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2OM_JEE_Readme.txt",
+            "url": "https://download.microsoft.com/download/4/d/e/4dec2163-cdf0-4f27-a8d0-85592736778c/SC2012R2OM_JEE_Readme.txt",
+            "size": "15614",
+            "version": "7.5.1038.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Management Packs for JEE application servers enable discovering, monitoring, and managing JEE application servers with System Center 2012 R2 \u2013 Operations Manager.\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nSystem Center 2012 R2 Management Packs for JEE Application Servers <br/>\r\n<ul>\r\n<li> Apache Tomcat 5, Apache Tomcat 6, Apache Tomcat 7, Apache Tomcat 8 </li>\r\n<li> Red Hat JBoss 4, Red Hat JBoss 5, Red Hat JBoss 6, Red Hat JBoss EAP 6, JBoss Application Server 7, Wildfly Application Server 8</li>\r\n<li> IBM WebSphere 7.0, and IBM WebSphere 8.0 </li>\r\n<li> Oracle WebLogic 10gR3, Oracle WebLogic 11, Oracle WebLogic 12cR1</li>\r\n</ul>\r\n<br/>\r\n\r\n<b> Release History </b><br/>\r\n<ul>\r\n<li> System Center 2012 R2 </li>\r\n<ul>\r\n<li> 10/28/2014 - Initial Release - version 7.5.1038.0 for System Center 2012 R2 </li>\r\n</ul>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.1038.0",
+    "detailsSection_file_name": [
+        "System Center 2012 R2 Management Packs for Java EE.msi",
+        "OpsMgrR2_MP_WebLogic.docx",
+        "OpsMgrR2_MP_JBoss.docx",
+        "OpsMgrR2_MP_WebSphere.docx",
+        "OpsMgrR2_MP_Tomcat.docx",
+        "SC2012R2OM_JEE_Readme.txt"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "99.2 KB",
+        "107.0 KB",
+        "97.3 KB",
+        "91.6 KB",
+        "15.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> System Center 2012 R2 - Operations Manager or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download and install the latest Update Rollup for System Center 2012 R2 \u2013 Operations Manager</li>\r\n<li> Download and install the latest UNIX and Linux management packs for the UNIX and Linux versions you are using. These management packs are located here http://www.microsoft.com/en-us/download/details.aspx?id=29696</li>\r\n<li> Download and install the updated management packs for the JEE Application Server you are using</li>\r\n<li> Follow the quick start instructions in the SCOMR2OM_JEE_Readme.txt</li>\r\n<li> Follow the configuration options located in the JEE MP guide</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44576",
+    "downloadPreload": true
+}

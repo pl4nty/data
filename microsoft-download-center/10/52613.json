@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Enron Stimuli for Text-Entry Experiments",
+    "downloadDescription": "This download contains sets of 10, 20, 50, 100, 200, and 500 representative phrases from the Enron corpus. Last published: May 4, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EnronSimuli.zip",
+            "url": "https://download.microsoft.com/download/a/3/f/a3f225b3-9960-483a-866f-8b3bc7210153/EnronSimuli.zip",
+            "size": "24214",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:54:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains sets of 10, 20, 50, 100, 200, and 500 representative phrases from the Enron corpus. The phrases contain four words. The original Enron data source comes from a data set collected and prepared by the CALO (A Cognitive Assistant that Learns and Organizes) Project. It contains data from about 150 users, mostly Enron senior management, organized into folders. The corpus contains about a half-million messages. This data originally was made public and posted to the web by the Federal Energy Regulatory Commission during its investigation of Enron. The data set does not include attachments, and some messages have been deleted \u201cas part of a redaction effort due to requests from affected employees.\u201d To make the stimuli more representative of \u201cgeneral email,\u201d as opposed to emails common in an Enron setting, we filtered the data to remove all email addresses and phone numbers. Furthermore, because a large portion of the emails contained replies quoting the original message, we removed duplicate sentences. This might have inadvertently removed duplicate sentences that were not quotations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "EnronSimuli.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.6 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52613",
+    "downloadPreload": true
+}

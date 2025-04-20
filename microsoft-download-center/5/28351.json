@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-Specific Update for Italy",
+    "downloadDescription": "This white paper describes the country-specific update that was released for Italy in Cumulative Update 2 (CU\u20132) for Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country_specific update for Italy_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/2/e/7/2e749035-0886-41c4-95ed-8658c0774a35/Country_specific update for Italy_AX2012.pdf",
+            "size": "435854",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:16:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In accordance with Italian legislation, legal entities must generate and submit a Modello 770 report electronically to the Italian government. You must generate the Modello 770 report electronically and export the report as an ASCII file to the Italian Revenue Agency website.<br /><br />\r\nThis paper describes the following information: <br />\r\n<UL><LI>Setting up withholding tax and address information to generate the Modello 770 report</LI>\r\n<LI>Creating and exporting the Modello 770 report as an ASCII file</LI>\r\n<LI>Forms</LI>\r\n<LI>Modified forms</LI></UL><br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2606916. For more information about other features that apply to Italy, refer to the Help. Information that is specific to Italy includes (ITA) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country_specific update for Italy_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "425.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28351",
+    "downloadPreload": true
+}

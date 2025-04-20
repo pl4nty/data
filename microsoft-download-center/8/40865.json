@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Software License Terms: Microsoft Dynamics Business Analyzer and Third Party Notices",
+    "downloadDescription": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (Attribution) - Business Analyzer Third Party Notices _ July 2014.pdf",
+            "url": "https://download.microsoft.com/download/0/1/4/0149bd77-f8ff-42a6-885d-394833b4fb52/MBS (Attribution) - Business Analyzer Third Party Notices _ July 2014.pdf",
+            "size": "439478",
+            "version": "2.0",
+            "datePublished": "6/13/2024 12:18:57 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBS (EULA) - Business Analyzer - RTM SLT (Final - 8.5.2014) old.pdf",
+            "url": "https://download.microsoft.com/download/0/1/4/0149bd77-f8ff-42a6-885d-394833b4fb52/MBS (EULA) - Business Analyzer - RTM SLT (Final - 8.5.2014) old.pdf",
+            "size": "164434",
+            "version": "2.0",
+            "datePublished": "6/13/2024 12:18:57 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MBS (Attribution) - Business Analyzer Third Party Notices _ July 2014.pdf",
+        "MBS (EULA) - Business Analyzer - RTM SLT (Final - 8.5.2014) old.pdf"
+    ],
+    "detailsSection_file_size": [
+        "429.2 KB",
+        "160.6 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40865",
+    "downloadPreload": true
+}

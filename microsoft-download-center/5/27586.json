@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "File Based Write Filter Management Tool for Windows Embedded POSReady 7",
+    "downloadDescription": "File Based Write Filter Management Tool for Windows Embedded POSReady 7",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FBWFMgmtToolInstall_x86.EXE",
+            "url": "https://download.microsoft.com/download/c/8/e/c8ec4b66-0286-4754-8249-cf6591c6edf0/FBWFMgmtToolInstall_x86.EXE",
+            "size": "1090008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FBWFMgmtToolInstall_x64.EXE",
+            "url": "https://download.microsoft.com/download/c/8/e/c8ec4b66-0286-4754-8249-cf6591c6edf0/FBWFMgmtToolInstall_x64.EXE",
+            "size": "1155032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This out\u2013of-band feature provides an application to monitor and configure the \u201cFile Based Write Filter (FBWF)\u201d. By default the application will start on system start and will register a notification area icon. The settings, however, allow suppressing the automatic starting. The tool can be started with a command line parameter to open either the overview dialog or (for users with administrative privileges) the configuration dialog. If the tool is started with a command line parameter, the tool will exit as soon as the respective dialog is closed. \r\n<br></br>\r\nIf the tool has registered a tray icon, hovering over the icon will show a tooltip containing the protected volumes. If a command is pending for a volume, it will be shown as well. Left-clicking on the icon or selecting \u201cStatus\u2026\u201d from its context menu opens the overview dialog with more detailed information about the file based write filter configuration. Users with administrative privileges or credentials can open the configuration dialog by selecting \u201cConfigure\u2026\u201d from the icons context menu.\r\n<br></br>\r\nThe File Based Write Filter Management Tool has a dependency on the File Based Write Filter Provider. This Provider ships with all versions of POSReady7. However there is an update to the originally shipped Provider that must be installed.\r\n<br></br>\r\nSpecifically, the File Based Write Filter Management Tool has a dependency on version 6.1.7601.21769 or greater of the File Based Write Filter Provider.  Version 6.1.7601.21769 of the File Based Write Filter Provider is available from the download center via <A href=\"http://www.microsoft.com/download/en/details.aspx?id=27144\">KB2570814</A>. KB2570814 was also released in the July-2011 Optional Update Supplement for Windows Embedded Standard 7, Windows Embedded Standard 7 SP1 and Windows Embedded POSReady7.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FBWFMgmtToolInstall_x86.EXE",
+        "FBWFMgmtToolInstall_x64.EXE"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded POSReady 7",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed as follows on a <b>POSReady7 image</b>: \r\n<br></br>\r\nExecuting the appropriate .exe file\r\n<br></br>\r\n<ul>\r\n<li>32bit FBWFMgmtToolInstall_x86.exe</li>\r\n<li>64bit FBWFMgmtToolInstall_x64.exe</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27586",
+    "downloadPreload": true
+}

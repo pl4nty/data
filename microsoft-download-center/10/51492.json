@@ -1,0 +1,245 @@
+{
+    "error": "",
+    "downloadTitle": "Language Packs for SharePoint Server 2016",
+    "downloadDescription": "Language packs enable creation of sites and site collections in multiple languages without requiring separate installations of SharePoint Server 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "serverlanguagepack.exe",
+            "url": "https://download.microsoft.com/download/9/f/8/9f86f455-3912-4873-a891-8c007cdbb66a/serverlanguagepack.exe",
+            "size": "60896216",
+            "version": "16.0.4351.1000",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "prs-af",
+            "name": "Dari"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        }
+    ],
+    "detailsSection": "Language packs enable creation of sites and site collections in multiple languages without requiring separate installations of SharePoint Server 2016. Multiple language packs can be installed on the same server. Application of a Language Pack will not change the language of the installed Microsoft Server product, or the language of the administrative features.<br/><br/>\r\n<b>Note:</b> You do not need to download a language pack for the language you installed. These language packs are to support creation of additional languages.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4351.1000",
+    "detailsSection_file_name": [
+        "serverlanguagepack.exe"
+    ],
+    "detailsSection_file_size": [
+        "58.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This download works with the following programs:</b><br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\u2022 <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=ea52c748-d13f-4a6e-8ea1-d82c6d2b46a2\" target=\"_blank\">Microsoft SharePoint Server 2016</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<b>To start the download:</b><br/><br/>\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Select the desired installation language from <b>Select Language.</b><br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Click the <b>Download</b> button.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Click Save to copy the language pack setup program to your computer.<br/><br/>\r\n\r\n<b>To install the Language Pack for SharePoint Server 2016:</b><br/><br/>\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Run the language pack setup program.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. On the <b>Read the Microsoft Software License Terms</b> page, review the terms, select the <b>I accept the terms of this agreement</b> check box, and then click <b>Continue</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. The setup wizard runs and installs the language pack.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Run the <b>SharePoint 2016 Products Configuration Wizard</b>, using the default settings.<br/><br/>\r\n\r\n<b>Note:</b> If you do not run the <b>SharePoint 2016 Products Configuration Wizard</b> after you install a language pack, the language pack will not be installed properly.<br/><br/>\r\n\r\n<b>To run the SharePoint 2016 Products Configuration Wizard:</b><br/><br/>\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Click <b>Start</b>, point to <b>All apps</b>, point to <b>Microsoft SharePoint 2016 Products</b>, and then click <b>SharePoint 2016 Products Configuration Wizard</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. On the <b>Welcome to SharePoint Products</b> page, click <b>Next</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Click <b>Yes</b> in the dialog box that alerts you that some services might need to be restarted during configuration.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. If the <b>Modify Server Farm Settings</b> page appears, click <b>Do not disconnect from this server farm</b>, and then click <b>Next</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. If the <b>Modify SharePoint Central Administration Web Application Settings</b> page appears, do not modify any of the default settings, and then click <b>Next</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. If the <b>Completing the SharePoint Products Configuration Wizard</b> page appears, click <b>Next</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7. On the <b>Configuration Successful</b> page, click <b>Finish</b>.<br/><br/>\r\n\r\n<b>Instructions for use:</b><br/><br/>\r\n\r\nReview <a href=\"http://go.microsoft.com/fwlink/?LinkID=733681\" target=\"_blank\"> Install or uninstall language packs for SharePoint Server 2016</a> for detailed setup instructions.<br/><br/>\r\n\r\n<b>To remove a language pack for SharePoint Server 2016:</b><br/><br/>\r\n\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. On the <b>Start</b> menu, click <b>Control Panel</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Click <b>Uninstall a program</b>.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. In the list of currently installed programs, select <b>Language Pack for SharePoint and Project Server 2016 \u2013 [Language]</b> and then click Uninstall.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Click <b>Yes</b> to confirm that you want to remove the program.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5. Click <b>OK</b> in the dialog box alerting you that this might result in partial loss of functionality for sites that depend on this language pack.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6. After the language pack has been successfully uninstalled, click <b>Close</b>.<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51492",
+    "downloadPreload": true
+}

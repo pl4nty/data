@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Solution for Hosted Messaging and Collaboration 3.5",
+    "downloadDescription": "Microsoft Solution for Hosted Messaging and Collaboration 3.5 hosting service providers with tools, tested best practices, scripts, and code samples designed to efficiently deploy messaging and collaboration services on multi tenant servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HMC-3.5.447.0.zip",
+            "url": "https://download.microsoft.com/download/d/2/0/d208b5e7-aabe-4381-b681-95f664283917/HMC-3.5.447.0.zip",
+            "size": "176799888",
+            "version": "3.5.447.0",
+            "datePublished": "5/15/2024 3:31:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hosted Solutions Operations Guide.zip",
+            "url": "https://download.microsoft.com/download/d/2/0/d208b5e7-aabe-4381-b681-95f664283917/Hosted Solutions Operations Guide.zip",
+            "size": "1958530",
+            "version": "3.5.447.0",
+            "datePublished": "5/15/2024 3:31:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hosted Messaging and Collaboration Disaster Recovery Guide.zip",
+            "url": "https://download.microsoft.com/download/d/2/0/d208b5e7-aabe-4381-b681-95f664283917/Hosted Messaging and Collaboration Disaster Recovery Guide.zip",
+            "size": "645297",
+            "version": "3.5.447.0",
+            "datePublished": "5/15/2024 3:31:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Solution for Hosted Messaging and Collaboration 3.5 offers hosting service providers with tools, tested best practices, scripts, and code samples designed to efficiently deploy messaging and collaboration services on multi tenant servers. The solution provides both automated and manual procedures for deploying, running and operating a hosted environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.447.0",
+    "detailsSection_file_name": [
+        "HMC-3.5.447.0.zip",
+        "Hosted Solutions Operations Guide.zip",
+        "Hosted Messaging and Collaboration Disaster Recovery Guide.zip"
+    ],
+    "detailsSection_file_size": [
+        "168.6 MB",
+        "1.9 MB",
+        "630.2 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "To install this download<br />\nClick the Download button and follow directions on your screen.<br />\nFurther installation requirements will depend on what you choose to deploy and on how you deploy. Please see the documentation for Microsoft Solution for Hosted Messaging and Collaboration 3.5 for further information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32746",
+    "downloadPreload": true
+}

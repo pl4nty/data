@@ -1,0 +1,238 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Advanced Threat Analytics 1.7 Management Pack",
+    "downloadDescription": "This management pack includes monitors and rules to effectively monitor Advanced Threat Analytics 1.7 on its performance, availability, and reliability of its roles.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CHS).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CHS).msi",
+            "size": "1007616",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (SVE).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (SVE).msi",
+            "size": "1032192",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CHT).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CHT).msi",
+            "size": "1019904",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (KOR).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (KOR).msi",
+            "size": "1044480",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (DEU).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (DEU).msi",
+            "size": "1003520",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (FRA).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (FRA).msi",
+            "size": "1044480",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (TRK).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (TRK).msi",
+            "size": "1015808",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (ESN).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (ESN).msi",
+            "size": "1015808",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_ATA_Library.pdf",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/OpsMgr_MP_ATA_Library.pdf",
+            "size": "387141",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_ATA_17.pdf",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/OpsMgr_MP_ATA_17.pdf",
+            "size": "697155",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CSY).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CSY).msi",
+            "size": "1011712",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (HUN).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (HUN).msi",
+            "size": "1044480",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PLK).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PLK).msi",
+            "size": "1036288",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PTG).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PTG).msi",
+            "size": "1032192",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for Advanced Threat Analytics.msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center MP for Advanced Threat Analytics.msi",
+            "size": "438272",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (NLD).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (NLD).msi",
+            "size": "1028096",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (RUS).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (RUS).msi",
+            "size": "1036288",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PTB).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PTB).msi",
+            "size": "1019904",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (ITA).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (ITA).msi",
+            "size": "1036288",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (JPN).msi",
+            "url": "https://download.microsoft.com/download/d/1/2/d1299e38-f495-4692-87c1-c8abcb657fe7/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (JPN).msi",
+            "size": "1019904",
+            "version": "1.7.1.1",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Advanced Threat Analytics 1.7 Management Pack</b>\r\n<b>Overview</b>\r\n<ul></ul>\r\nThe Microsoft Advanced Threat Analytics 1.7 Management Pack provides comprehensive service health information for your ATA deployment.<ul></ul>\r\nThe Advanced Threat Analytics 1.7 Management Pack is engineered for organizations that include servers running ATA 1.7. <ul></ul>\r\n<ul></ul>\r\n\r\n<b>Version History</b>\r\n<ul>\r\n<li>7th June 2017 - Initial release of version 1.7.1.1</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.7.1.1",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CHS).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (SVE).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CHT).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (KOR).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (DEU).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (FRA).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (TRK).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (ESN).msi",
+        "OpsMgr_MP_ATA_Library.pdf",
+        "OpsMgr_MP_ATA_17.pdf",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (CSY).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (HUN).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PLK).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PTG).msi",
+        "Microsoft System Center MP for Advanced Threat Analytics.msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (NLD).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (RUS).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (PTB).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (ITA).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics 1.7 Loc (JPN).msi"
+    ],
+    "detailsSection_file_size": [
+        "984.0 KB",
+        "1008.0 KB",
+        "996.0 KB",
+        "1020.0 KB",
+        "980.0 KB",
+        "1020.0 KB",
+        "992.0 KB",
+        "992.0 KB",
+        "378.1 KB",
+        "680.8 KB",
+        "988.0 KB",
+        "1020.0 KB",
+        "1012.0 KB",
+        "1008.0 KB",
+        "428.0 KB",
+        "1004.0 KB",
+        "1012.0 KB",
+        "996.0 KB",
+        "1012.0 KB",
+        "996.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul></ul>\r\n<b>You have one of the following versions of System Center Operations Manager deployed: </b>\r\n<ul></ul>\r\n<li>System Center Operations Manager 2012 R2 or later</li>\r\n<ul></ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To use the English version of the Advanced Threat Analytics 1.7 Management Pack, you only need to download and import the English (EN) version of the Advanced Threat Analytics 1.7 Management Pack. <ul></ul>\r\nIf you want to use a localized version of the management pack, you must first download and import the English version of the management pack. Then, you must download and import the language pack for your respective language. The English version of the management pack is a prerequisite for all localized versions of the management pack. <ul></ul> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55323",
+    "downloadPreload": true
+}

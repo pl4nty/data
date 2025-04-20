@@ -1,0 +1,1919 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Explorer 11 Language Packs for Windows 7 and Windows Server 2008 R2",
+    "downloadDescription": "Download the latest version of Internet Explorer 11 Language Packs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-bn-bd.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-bn-bd.msu",
+            "size": "1048170",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ca-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ca-es.msu",
+            "size": "950090",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-zh-cn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-zh-cn.msu",
+            "size": "1044016",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-fa-ir.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-fa-ir.msu",
+            "size": "1121343",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ca-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ca-es.msu",
+            "size": "1545795",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-hr-hr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-hr-hr.msu",
+            "size": "1651394",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-lv-lv.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-lv-lv.msu",
+            "size": "1126961",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-lt-lt.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-lt-lt.msu",
+            "size": "1067446",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-mn-mn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-mn-mn.msu",
+            "size": "1511163",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-yo-ng.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-yo-ng.msu",
+            "size": "1054616",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-bg-bg.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-bg-bg.msu",
+            "size": "1638687",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-az-latn-az.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-az-latn-az.msu",
+            "size": "933915",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-tn-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-tn-za.msu",
+            "size": "1639731",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-fil-ph.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-fil-ph.msu",
+            "size": "1048994",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-or-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-or-in.msu",
+            "size": "1050522",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-eu-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-eu-es.msu",
+            "size": "948568",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ta-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ta-in.msu",
+            "size": "1049496",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-xh-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-xh-za.msu",
+            "size": "1636847",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-mt-mt.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-mt-mt.msu",
+            "size": "1045275",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-nb-no.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-nb-no.msu",
+            "size": "1036688",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-he-il.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-he-il.msu",
+            "size": "1075051",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-zh-tw.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-zh-tw.msu",
+            "size": "1583686",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ig-ng.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ig-ng.msu",
+            "size": "1682965",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-cs-cz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-cs-cz.msu",
+            "size": "1120772",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sw-ke.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sw-ke.msu",
+            "size": "1675986",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ro-ro.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ro-ro.msu",
+            "size": "1043296",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sv-se.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sv-se.msu",
+            "size": "1040654",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sl-si.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sl-si.msu",
+            "size": "1688909",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-nl-nl.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-nl-nl.msu",
+            "size": "1128136",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-kok-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-kok-in.msu",
+            "size": "1643288",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ja-jp.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ja-jp.msu",
+            "size": "1650868",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-te-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-te-in.msu",
+            "size": "1636602",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-th-th.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-th-th.msu",
+            "size": "1055969",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-xh-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-xh-za.msu",
+            "size": "1050200",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sq-al.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sq-al.msu",
+            "size": "1673726",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ha-latn-ng.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ha-latn-ng.msu",
+            "size": "1048502",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-cy-gb.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-cy-gb.msu",
+            "size": "1065992",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-is-is.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-is-is.msu",
+            "size": "1044695",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-it-it.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-it-it.msu",
+            "size": "1121893",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ig-ng.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ig-ng.msu",
+            "size": "1070935",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ml-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ml-in.msu",
+            "size": "1648861",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-nn-no.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-nn-no.msu",
+            "size": "928594",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-bn-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-bn-in.msu",
+            "size": "1049754",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-el-gr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-el-gr.msu",
+            "size": "1092092",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-fi-fi.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-fi-fi.msu",
+            "size": "1084582",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-bs-latn-ba.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-bs-latn-ba.msu",
+            "size": "952544",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-bs-cyrl-ba.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-bs-cyrl-ba.msu",
+            "size": "935080",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-gu-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-gu-in.msu",
+            "size": "1629425",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-km-kh.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-km-kh.msu",
+            "size": "1643390",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-bn-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-bn-in.msu",
+            "size": "1640743",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ar-sa.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ar-sa.msu",
+            "size": "1641061",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-mr-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-mr-in.msu",
+            "size": "1641163",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ur-pk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ur-pk.msu",
+            "size": "1772977",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-uz-latn-uz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-uz-latn-uz.msu",
+            "size": "1504234",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-yo-ng.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-yo-ng.msu",
+            "size": "1672759",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-hy-am.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-hy-am.msu",
+            "size": "1637403",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ml-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ml-in.msu",
+            "size": "1054279",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sq-al.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sq-al.msu",
+            "size": "1067131",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-gl-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-gl-es.msu",
+            "size": "975655",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-te-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-te-in.msu",
+            "size": "1048865",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ru-ru.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ru-ru.msu",
+            "size": "1147281",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-hu-hu.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-hu-hu.msu",
+            "size": "1122999",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-lt-lt.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-lt-lt.msu",
+            "size": "1675716",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-zh-hk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-zh-hk.msu",
+            "size": "1024158",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-th-th.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-th-th.msu",
+            "size": "1094544",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-hy-am.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-hy-am.msu",
+            "size": "1048379",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-quz-pe.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-quz-pe.msu",
+            "size": "932038",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-kn-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-kn-in.msu",
+            "size": "1110078",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-el-gr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-el-gr.msu",
+            "size": "1133098",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-az-latn-az.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-az-latn-az.msu",
+            "size": "1507295",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-kk-kz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-kk-kz.msu",
+            "size": "937821",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-de-de.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-de-de.msu",
+            "size": "1133911",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-hi-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-hi-in.msu",
+            "size": "1636958",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ms-bn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ms-bn.msu",
+            "size": "1632647",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ky-kg.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ky-kg.msu",
+            "size": "938190",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-nb-no.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-nb-no.msu",
+            "size": "1619740",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-cs-cz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-cs-cz.msu",
+            "size": "1057150",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-it-it.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-it-it.msu",
+            "size": "1062483",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-af-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-af-za.msu",
+            "size": "1043189",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-pt-pt.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-pt-pt.msu",
+            "size": "1107004",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-bg-bg.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-bg-bg.msu",
+            "size": "1050073",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-kok-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-kok-in.msu",
+            "size": "1052141",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-nl-nl.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-nl-nl.msu",
+            "size": "1068098",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-id-id.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-id-id.msu",
+            "size": "1080477",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-es-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-es-es.msu",
+            "size": "1064064",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-pt-br.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-pt-br.msu",
+            "size": "1046183",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-bn-bd.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-bn-bd.msu",
+            "size": "1639885",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-hr-hr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-hr-hr.msu",
+            "size": "1045674",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-lv-lv.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-lv-lv.msu",
+            "size": "1063891",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ms-my.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ms-my.msu",
+            "size": "1043248",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ar-sa.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ar-sa.msu",
+            "size": "1056814",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ga-ie.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ga-ie.msu",
+            "size": "1046786",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-am-et.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-am-et.msu",
+            "size": "1640538",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-mt-mt.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-mt-mt.msu",
+            "size": "1631332",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sr-latn-cs.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sr-latn-cs.msu",
+            "size": "1129197",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-et-ee.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-et-ee.msu",
+            "size": "1061608",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-da-dk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-da-dk.msu",
+            "size": "1040830",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ur-pk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ur-pk.msu",
+            "size": "1127689",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-pt-pt.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-pt-pt.msu",
+            "size": "1066821",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-uk-ua.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-uk-ua.msu",
+            "size": "1069676",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-pa-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-pa-in.msu",
+            "size": "1049873",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-km-kh.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-km-kh.msu",
+            "size": "1051681",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-mi-nz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-mi-nz.msu",
+            "size": "1631467",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ka-ge.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ka-ge.msu",
+            "size": "1049151",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ga-ie.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ga-ie.msu",
+            "size": "1637820",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-tk-tm.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-tk-tm.msu",
+            "size": "931409",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-tr-tr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-tr-tr.msu",
+            "size": "1065806",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-si-lk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-si-lk.msu",
+            "size": "1642140",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-uk-ua.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-uk-ua.msu",
+            "size": "1133152",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ta-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ta-in.msu",
+            "size": "1636901",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-mr-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-mr-in.msu",
+            "size": "1049558",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-uz-latn-uz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-uz-latn-uz.msu",
+            "size": "929076",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-zh-hk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-zh-hk.msu",
+            "size": "1584938",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-de-de.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-de-de.msu",
+            "size": "1074199",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-tt-ru.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-tt-ru.msu",
+            "size": "984655",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-zh-tw.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-zh-tw.msu",
+            "size": "1021882",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-pl-pl.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-pl-pl.msu",
+            "size": "1646423",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ha-latn-ng.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ha-latn-ng.msu",
+            "size": "1637534",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-zu-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-zu-za.msu",
+            "size": "1049900",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-vi-vn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-vi-vn.msu",
+            "size": "1105484",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sw-ke.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sw-ke.msu",
+            "size": "1065724",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-fil-ph.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-fil-ph.msu",
+            "size": "1633962",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-cy-gb.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-cy-gb.msu",
+            "size": "1674583",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-nso-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-nso-za.msu",
+            "size": "1046658",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-nn-no.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-nn-no.msu",
+            "size": "1494612",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-tn-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-tn-za.msu",
+            "size": "1048566",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-fr-fr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-fr-fr.msu",
+            "size": "1069552",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-lb-lu.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-lb-lu.msu",
+            "size": "1506453",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sk-sk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sk-sk.msu",
+            "size": "1072037",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ky-kg.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ky-kg.msu",
+            "size": "1516754",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-si-lk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-si-lk.msu",
+            "size": "1051459",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-or-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-or-in.msu",
+            "size": "1641954",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sl-si.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sl-si.msu",
+            "size": "1067588",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-prs-af.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-prs-af.msu",
+            "size": "1657717",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-he-il.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-he-il.msu",
+            "size": "1035338",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-hi-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-hi-in.msu",
+            "size": "1048832",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ja-jp.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ja-jp.msu",
+            "size": "1048705",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ru-ru.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ru-ru.msu",
+            "size": "1081875",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-as-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-as-in.msu",
+            "size": "1640013",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-zh-cn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-zh-cn.msu",
+            "size": "1622976",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-da-dk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-da-dk.msu",
+            "size": "1099243",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ne-np.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ne-np.msu",
+            "size": "1639098",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-gl-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-gl-es.msu",
+            "size": "929408",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-quz-pe.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-quz-pe.msu",
+            "size": "1503544",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-as-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-as-in.msu",
+            "size": "1049836",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-kn-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-kn-in.msu",
+            "size": "1049181",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-zu-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-zu-za.msu",
+            "size": "1639256",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-gu-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-gu-in.msu",
+            "size": "1047318",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sr-cyrl-cs.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sr-cyrl-cs.msu",
+            "size": "1506590",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sv-se.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sv-se.msu",
+            "size": "1080064",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-pl-pl.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-pl-pl.msu",
+            "size": "1056256",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-fr-fr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-fr-fr.msu",
+            "size": "1108566",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-bs-latn-ba.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-bs-latn-ba.msu",
+            "size": "1551731",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-tt-ru.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-tt-ru.msu",
+            "size": "934610",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-id-id.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-id-id.msu",
+            "size": "1039671",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-mn-mn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-mn-mn.msu",
+            "size": "933505",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-mk-mk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-mk-mk.msu",
+            "size": "1047960",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-am-et.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-am-et.msu",
+            "size": "1049881",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-sk-sk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-sk-sk.msu",
+            "size": "1114729",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-kk-kz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-kk-kz.msu",
+            "size": "1513234",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-tr-tr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-tr-tr.msu",
+            "size": "1689291",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sr-cyrl-cs.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sr-cyrl-cs.msu",
+            "size": "931729",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-vi-vn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-vi-vn.msu",
+            "size": "1047236",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-mi-nz.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-mi-nz.msu",
+            "size": "1045333",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ko-kr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ko-kr.msu",
+            "size": "1044484",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ne-np.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ne-np.msu",
+            "size": "1048662",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-fa-ir.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-fa-ir.msu",
+            "size": "1770801",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ms-my.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ms-my.msu",
+            "size": "1632090",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-mk-mk.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-mk-mk.msu",
+            "size": "1637396",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-nso-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-nso-za.msu",
+            "size": "1636667",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-sr-latn-cs.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-sr-latn-cs.msu",
+            "size": "1067135",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ko-kr.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ko-kr.msu",
+            "size": "1631248",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-prs-af.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-prs-af.msu",
+            "size": "1065118",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-bs-cyrl-ba.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-bs-cyrl-ba.msu",
+            "size": "1511773",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-eu-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-eu-es.msu",
+            "size": "1541909",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-pt-br.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-pt-br.msu",
+            "size": "1644108",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-af-za.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-af-za.msu",
+            "size": "1627940",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-es-es.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-es-es.msu",
+            "size": "1123996",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-et-ee.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-et-ee.msu",
+            "size": "1123250",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-ms-bn.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-ms-bn.msu",
+            "size": "1043613",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-is-is.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-is-is.msu",
+            "size": "1085012",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-lb-lu.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-lb-lu.msu",
+            "size": "931679",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-tk-tm.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-tk-tm.msu",
+            "size": "1521902",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-fi-fi.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-fi-fi.msu",
+            "size": "1048049",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ka-ge.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ka-ge.msu",
+            "size": "1638961",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-ro-ro.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-ro-ro.msu",
+            "size": "1108595",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x64-pa-in.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x64-pa-in.msu",
+            "size": "1641223",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-LanguagePack-x86-hu-hu.msu",
+            "url": "https://download.microsoft.com/download/3/9/f/39f783c9-fd20-4796-a8ad-62447af3182c/IE11-Windows6.1-LanguagePack-x86-hu-hu.msu",
+            "size": "1057755",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\n      The Internet Explorer 11 Language Packs install language specific resource files, allowing users to view the user interface (UI) of Internet explorer 11 in a different supported language.  \n      To use these language packs, you must install the matching OS language pack on Windows before proceeding. <br /><br />\n\n      Visit the <a href=\"http://windowshelp.microsoft.com/Windows/en-US/help/35a1b021-d96c-49a5-8d8f-5e9d64ab5ecc1033.mspx\">Windows MUI/LIP Knowledge Center</a> for more information. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2841134",
+        "name": "KB2841134"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.0.0",
+    "detailsSection_file_name": [
+        "IE11-Windows6.1-LanguagePack-x86-bn-bd.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ca-es.msu",
+        "IE11-Windows6.1-LanguagePack-x86-zh-cn.msu",
+        "IE11-Windows6.1-LanguagePack-x86-fa-ir.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ca-es.msu",
+        "IE11-Windows6.1-LanguagePack-x64-hr-hr.msu",
+        "IE11-Windows6.1-LanguagePack-x64-lv-lv.msu",
+        "IE11-Windows6.1-LanguagePack-x86-lt-lt.msu",
+        "IE11-Windows6.1-LanguagePack-x64-mn-mn.msu",
+        "IE11-Windows6.1-LanguagePack-x86-yo-ng.msu",
+        "IE11-Windows6.1-LanguagePack-x64-bg-bg.msu",
+        "IE11-Windows6.1-LanguagePack-x86-az-latn-az.msu",
+        "IE11-Windows6.1-LanguagePack-x64-tn-za.msu",
+        "IE11-Windows6.1-LanguagePack-x86-fil-ph.msu",
+        "IE11-Windows6.1-LanguagePack-x86-or-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-eu-es.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ta-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-xh-za.msu",
+        "IE11-Windows6.1-LanguagePack-x86-mt-mt.msu",
+        "IE11-Windows6.1-LanguagePack-x86-nb-no.msu",
+        "IE11-Windows6.1-LanguagePack-x64-he-il.msu",
+        "IE11-Windows6.1-LanguagePack-x64-zh-tw.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ig-ng.msu",
+        "IE11-Windows6.1-LanguagePack-x64-cs-cz.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sw-ke.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ro-ro.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sv-se.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sl-si.msu",
+        "IE11-Windows6.1-LanguagePack-x64-nl-nl.msu",
+        "IE11-Windows6.1-LanguagePack-x64-kok-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ja-jp.msu",
+        "IE11-Windows6.1-LanguagePack-x64-te-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-th-th.msu",
+        "IE11-Windows6.1-LanguagePack-x86-xh-za.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sq-al.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ha-latn-ng.msu",
+        "IE11-Windows6.1-LanguagePack-x86-cy-gb.msu",
+        "IE11-Windows6.1-LanguagePack-x86-is-is.msu",
+        "IE11-Windows6.1-LanguagePack-x64-it-it.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ig-ng.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ml-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-nn-no.msu",
+        "IE11-Windows6.1-LanguagePack-x86-bn-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-el-gr.msu",
+        "IE11-Windows6.1-LanguagePack-x64-fi-fi.msu",
+        "IE11-Windows6.1-LanguagePack-x86-bs-latn-ba.msu",
+        "IE11-Windows6.1-LanguagePack-x86-bs-cyrl-ba.msu",
+        "IE11-Windows6.1-LanguagePack-x64-gu-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-km-kh.msu",
+        "IE11-Windows6.1-LanguagePack-x64-bn-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ar-sa.msu",
+        "IE11-Windows6.1-LanguagePack-x64-mr-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ur-pk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-uz-latn-uz.msu",
+        "IE11-Windows6.1-LanguagePack-x64-yo-ng.msu",
+        "IE11-Windows6.1-LanguagePack-x64-hy-am.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ml-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sq-al.msu",
+        "IE11-Windows6.1-LanguagePack-x64-gl-es.msu",
+        "IE11-Windows6.1-LanguagePack-x86-te-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ru-ru.msu",
+        "IE11-Windows6.1-LanguagePack-x64-hu-hu.msu",
+        "IE11-Windows6.1-LanguagePack-x64-lt-lt.msu",
+        "IE11-Windows6.1-LanguagePack-x86-zh-hk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-th-th.msu",
+        "IE11-Windows6.1-LanguagePack-x86-hy-am.msu",
+        "IE11-Windows6.1-LanguagePack-x86-quz-pe.msu",
+        "IE11-Windows6.1-LanguagePack-x64-kn-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-el-gr.msu",
+        "IE11-Windows6.1-LanguagePack-x64-az-latn-az.msu",
+        "IE11-Windows6.1-LanguagePack-x86-kk-kz.msu",
+        "IE11-Windows6.1-LanguagePack-x64-de-de.msu",
+        "IE11-Windows6.1-LanguagePack-x64-hi-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ms-bn.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ky-kg.msu",
+        "IE11-Windows6.1-LanguagePack-x64-nb-no.msu",
+        "IE11-Windows6.1-LanguagePack-x86-cs-cz.msu",
+        "IE11-Windows6.1-LanguagePack-x86-it-it.msu",
+        "IE11-Windows6.1-LanguagePack-x86-af-za.msu",
+        "IE11-Windows6.1-LanguagePack-x64-pt-pt.msu",
+        "IE11-Windows6.1-LanguagePack-x86-bg-bg.msu",
+        "IE11-Windows6.1-LanguagePack-x86-kok-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-nl-nl.msu",
+        "IE11-Windows6.1-LanguagePack-x64-id-id.msu",
+        "IE11-Windows6.1-LanguagePack-x86-es-es.msu",
+        "IE11-Windows6.1-LanguagePack-x86-pt-br.msu",
+        "IE11-Windows6.1-LanguagePack-x64-bn-bd.msu",
+        "IE11-Windows6.1-LanguagePack-x86-hr-hr.msu",
+        "IE11-Windows6.1-LanguagePack-x86-lv-lv.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ms-my.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ar-sa.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ga-ie.msu",
+        "IE11-Windows6.1-LanguagePack-x64-am-et.msu",
+        "IE11-Windows6.1-LanguagePack-x64-mt-mt.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sr-latn-cs.msu",
+        "IE11-Windows6.1-LanguagePack-x86-et-ee.msu",
+        "IE11-Windows6.1-LanguagePack-x86-da-dk.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ur-pk.msu",
+        "IE11-Windows6.1-LanguagePack-x86-pt-pt.msu",
+        "IE11-Windows6.1-LanguagePack-x86-uk-ua.msu",
+        "IE11-Windows6.1-LanguagePack-x86-pa-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-km-kh.msu",
+        "IE11-Windows6.1-LanguagePack-x64-mi-nz.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ka-ge.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ga-ie.msu",
+        "IE11-Windows6.1-LanguagePack-x86-tk-tm.msu",
+        "IE11-Windows6.1-LanguagePack-x86-tr-tr.msu",
+        "IE11-Windows6.1-LanguagePack-x64-si-lk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-uk-ua.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ta-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-mr-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-uz-latn-uz.msu",
+        "IE11-Windows6.1-LanguagePack-x64-zh-hk.msu",
+        "IE11-Windows6.1-LanguagePack-x86-de-de.msu",
+        "IE11-Windows6.1-LanguagePack-x64-tt-ru.msu",
+        "IE11-Windows6.1-LanguagePack-x86-zh-tw.msu",
+        "IE11-Windows6.1-LanguagePack-x64-pl-pl.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ha-latn-ng.msu",
+        "IE11-Windows6.1-LanguagePack-x86-zu-za.msu",
+        "IE11-Windows6.1-LanguagePack-x64-vi-vn.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sw-ke.msu",
+        "IE11-Windows6.1-LanguagePack-x64-fil-ph.msu",
+        "IE11-Windows6.1-LanguagePack-x64-cy-gb.msu",
+        "IE11-Windows6.1-LanguagePack-x86-nso-za.msu",
+        "IE11-Windows6.1-LanguagePack-x64-nn-no.msu",
+        "IE11-Windows6.1-LanguagePack-x86-tn-za.msu",
+        "IE11-Windows6.1-LanguagePack-x86-fr-fr.msu",
+        "IE11-Windows6.1-LanguagePack-x64-lb-lu.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sk-sk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ky-kg.msu",
+        "IE11-Windows6.1-LanguagePack-x86-si-lk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-or-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sl-si.msu",
+        "IE11-Windows6.1-LanguagePack-x64-prs-af.msu",
+        "IE11-Windows6.1-LanguagePack-x86-he-il.msu",
+        "IE11-Windows6.1-LanguagePack-x86-hi-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ja-jp.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ru-ru.msu",
+        "IE11-Windows6.1-LanguagePack-x64-as-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-zh-cn.msu",
+        "IE11-Windows6.1-LanguagePack-x64-da-dk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ne-np.msu",
+        "IE11-Windows6.1-LanguagePack-x86-gl-es.msu",
+        "IE11-Windows6.1-LanguagePack-x64-quz-pe.msu",
+        "IE11-Windows6.1-LanguagePack-x86-as-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-kn-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-zu-za.msu",
+        "IE11-Windows6.1-LanguagePack-x86-gu-in.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sr-cyrl-cs.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sv-se.msu",
+        "IE11-Windows6.1-LanguagePack-x86-pl-pl.msu",
+        "IE11-Windows6.1-LanguagePack-x64-fr-fr.msu",
+        "IE11-Windows6.1-LanguagePack-x64-bs-latn-ba.msu",
+        "IE11-Windows6.1-LanguagePack-x86-tt-ru.msu",
+        "IE11-Windows6.1-LanguagePack-x86-id-id.msu",
+        "IE11-Windows6.1-LanguagePack-x86-mn-mn.msu",
+        "IE11-Windows6.1-LanguagePack-x86-mk-mk.msu",
+        "IE11-Windows6.1-LanguagePack-x86-am-et.msu",
+        "IE11-Windows6.1-LanguagePack-x64-sk-sk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-kk-kz.msu",
+        "IE11-Windows6.1-LanguagePack-x64-tr-tr.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sr-cyrl-cs.msu",
+        "IE11-Windows6.1-LanguagePack-x86-vi-vn.msu",
+        "IE11-Windows6.1-LanguagePack-x86-mi-nz.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ko-kr.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ne-np.msu",
+        "IE11-Windows6.1-LanguagePack-x64-fa-ir.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ms-my.msu",
+        "IE11-Windows6.1-LanguagePack-x64-mk-mk.msu",
+        "IE11-Windows6.1-LanguagePack-x64-nso-za.msu",
+        "IE11-Windows6.1-LanguagePack-x86-sr-latn-cs.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ko-kr.msu",
+        "IE11-Windows6.1-LanguagePack-x86-prs-af.msu",
+        "IE11-Windows6.1-LanguagePack-x64-bs-cyrl-ba.msu",
+        "IE11-Windows6.1-LanguagePack-x64-eu-es.msu",
+        "IE11-Windows6.1-LanguagePack-x64-pt-br.msu",
+        "IE11-Windows6.1-LanguagePack-x64-af-za.msu",
+        "IE11-Windows6.1-LanguagePack-x64-es-es.msu",
+        "IE11-Windows6.1-LanguagePack-x64-et-ee.msu",
+        "IE11-Windows6.1-LanguagePack-x86-ms-bn.msu",
+        "IE11-Windows6.1-LanguagePack-x64-is-is.msu",
+        "IE11-Windows6.1-LanguagePack-x86-lb-lu.msu",
+        "IE11-Windows6.1-LanguagePack-x64-tk-tm.msu",
+        "IE11-Windows6.1-LanguagePack-x86-fi-fi.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ka-ge.msu",
+        "IE11-Windows6.1-LanguagePack-x64-ro-ro.msu",
+        "IE11-Windows6.1-LanguagePack-x64-pa-in.msu",
+        "IE11-Windows6.1-LanguagePack-x86-hu-hu.msu"
+    ],
+    "detailsSection_file_size": [
+        "1023.6 KB",
+        "927.8 KB",
+        "1019.5 KB",
+        "1.1 MB",
+        "1.5 MB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.4 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "912.0 KB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "926.3 KB",
+        "1.0 MB",
+        "1.6 MB",
+        "1020.8 KB",
+        "1012.4 KB",
+        "1.0 MB",
+        "1.5 MB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.6 MB",
+        "1018.8 KB",
+        "1016.3 KB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1023.9 KB",
+        "1.0 MB",
+        "1020.2 KB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "906.8 KB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "930.2 KB",
+        "913.2 KB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.7 MB",
+        "1.4 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "952.8 KB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.6 MB",
+        "1000.2 KB",
+        "1.0 MB",
+        "1023.8 KB",
+        "910.2 KB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.4 MB",
+        "915.8 KB",
+        "1.1 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "916.2 KB",
+        "1.5 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1018.7 KB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1021.7 KB",
+        "1.6 MB",
+        "1021.2 KB",
+        "1.0 MB",
+        "1018.8 KB",
+        "1.0 MB",
+        "1022.3 KB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.0 MB",
+        "1016.4 KB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "909.6 KB",
+        "1.0 MB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "907.3 KB",
+        "1.5 MB",
+        "1.0 MB",
+        "961.6 KB",
+        "997.9 KB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1022.1 KB",
+        "1.4 MB",
+        "1024.0 KB",
+        "1.0 MB",
+        "1.4 MB",
+        "1.0 MB",
+        "1.4 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1011.1 KB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1.5 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "907.6 KB",
+        "1.4 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1022.8 KB",
+        "1.4 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.5 MB",
+        "912.7 KB",
+        "1015.3 KB",
+        "911.6 KB",
+        "1023.4 KB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.4 MB",
+        "1.6 MB",
+        "909.9 KB",
+        "1022.7 KB",
+        "1020.8 KB",
+        "1020.0 KB",
+        "1.0 MB",
+        "1.7 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.6 MB",
+        "1.0 MB",
+        "1.4 MB",
+        "1.5 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "1019.2 KB",
+        "1.0 MB",
+        "909.8 KB",
+        "1.5 MB",
+        "1023.5 KB",
+        "1.6 MB",
+        "1.1 MB",
+        "1.6 MB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      <UL>\n        <LI>Windows 7 Service Pack 1 and higher Service pack</LI>\n        <LI>Windows Server 2008 R2 Service Pack 1 and higher Service Pack</LI>\n      </UL>\n      <OL>\n        <LI>The OS Language Pack for the desired language must be installed. </LI>\n        <LI> Internet Explorer 11 must be installed. </LI>\n      </OL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "\n      <OL>\n        <LI>\n          Click the <b>Download</b> button for your Language Pack to start the download, or choose a different language from the list of available Language Packs below and click <B>Go</B>.\n        </LI>\n        <LI>Do one of the following:</LI>\n        <UL>\n          <LI>\n            To start the installation immediately, click <B>Open</B>.\n          </LI>\n          <LI>\n            To copy the download to your computer for installation at a later time, click <B>Save</B>\n          </LI>\n        </UL>\n      </OL>",
+    "additionalInformationSection": "<b>Internet Explorer 11 language Codes: </b>\r\n<LI>af-ZA - Afrikaans</LI>\r\n<LI>am-ET - Amharic</LI>\r\n<LI>ar-SA - Arabic</LI>\r\n<LI>as-IN - Assamese</LI>\r\n<LI>az-Latn-AZ - Azerbaijani (Latin)</LI>\r\n<LI>bg-BG - Bulgarian</LI>\r\n<LI>bn-BD - Bangla (Bangledsh)</LI>\r\n<LI>bn-IN - Bengali (India)</LI>\r\n<LI>bs-BA - Bosnian</LI>\r\n<LI>ca-ES - Catalan</LI>\r\n<LI>cs-CZ - Czech</LI>\r\n<LI>cy-GB - Welsh</LI>\r\n<LI>da-DK - Danish</LI>\r\n<LI>de-DE - German</LI>\r\n<LI>el-GR - Greek</LI>\r\n<LI>en-US - English</LI>\r\n<LI>es-ES - Spanish (Traditional Sort)</LI>\r\n<LI>et-EE - Estonian</LI>\r\n<LI>eu-ES - Basque</LI>\r\n<LI>fa-IR - Persian</LI>\r\n<LI>fi-FI - Finnish</LI>\r\n<LI>fil-PH - Filipino</LI>\r\n<LI>fr-FR - French</LI>\r\n<LI>ga-IE - Irish</LI>\r\n<LI>gl-ES - Galician</LI>\r\n<LI>gu-IN - Gujarati</LI>\r\n<LI>ha-Latn-NG - Hausa</LI>\r\n<LI>he-IL - Hebrew</LI>\r\n<LI>hi-IN - Hindi</LI>\r\n<LI>hr-HR - Croatian</LI>\r\n<LI>hu-HU - Hungarian</LI>\r\n<LI>hy-AM - Armenian</LI>\r\n<LI>id-ID - Indonesian</LI>\r\n<LI>ig-NG - Igbo</LI>\r\n<LI>is-IS - Icelandic</LI>\r\n<LI>it-IT - Italian</LI>\r\n<LI>ja-JP - Japanese</LI>\r\n<LI>ka-GE - Georgian</LI>\r\n<LI>kk-KZ - Kazakh</LI>\r\n<LI>km-KH - Khmer</LI>\r\n<LI>kn-IN - Kannada</LI>\r\n<LI>kok-IN - Konkani</LI>\r\n<LI>ko-KR - Korean</LI>\r\n<LI>ky-KG - Kyrgyz</LI>\r\n<LI>lb-LU - Luxembourgish</LI>\r\n<LI>lt-LT - Lithuanian</LI>\r\n<LI>lv-LV - Latvian</LI>\r\n<LI>mi-NZ - Maori</LI>\r\n<LI>mk-MK - Macedonian</LI>\r\n<LI>ml-IN - Malayalam</LI>\r\n<LI>mn-Cyrl-MN - Mongolian (Cyrillic)</LI>\r\n<LI>mr-IN - Marathi</LI>\r\n<LI>ms-BN - Malay (Brunei Darussalam)</LI>\r\n<LI>ms-MY - Malay (Malaysia)</LI>\r\n<LI>mt-MT - Maltese</LI>\r\n<LI>nb-NO - Norwegian (Bokm?l)</LI>\r\n<LI>ne-NP - Nepali</LI>\r\n<LI>nl-NL - Dutch</LI>\r\n<LI>nn-NO - Norwegian (Nynorsk)</LI>\r\n<LI>nso-ZA - Sesotho sa Leboa</LI>\r\n<LI>or-IN - Odia</LI>\r\n<LI>pa-IN - Punjabi (Gurmukhi)</LI>\r\n<LI>pl-PL - Polish</LI>\r\n<LI>prs-AF - Dari</LI>\r\n<LI>pt-BR - Portuguese</LI>\r\n<LI>pt-PT - Portuguese</LI>\r\n<LI>quz-PE - Quechua</LI>\r\n<LI>ro-RO - Romanian</LI>\r\n<LI>ru-RU - Russian</LI>\r\n<LI>si-LK - Sinhala</LI>\r\n<LI>sk-SK - Slovak</LI>\r\n<LI>sl-SI - Slovenian</LI>\r\n<LI>sq-AL - Albanian</LI>\r\n<LI>sr-Cyrl-BA - Serbian (Cyrillic)</LI>\r\n<LI>sr-Cyrl-RS - Serbian (Cyrillic)</LI>\r\n<LI>sr-Latn-RS - Serbian (Latin)</LI>\r\n<LI>sv-SE - Swedish</LI>\r\n<LI>sw-KE - Swahili</LI>\r\n<LI>ta-IN - Tamil</LI>\r\n<LI>te-IN - Telugu</LI>\r\n<LI>th-TH - Thai</LI>\r\n<LI>tk-TM - Turkmen (Latin)</LI>\r\n<LI>tn-ZA - Setswana (South Africa)</LI>\r\n<LI>tr-TR - Turkish</LI>\r\n<LI>tt-RU - Tatar</LI>\r\n<LI>uk-UA - Ukrainian</LI>\r\n<LI>ur-PK - Urdu</LI>\r\n<LI>uz-Latn-UZ - Uzbek (Latin)</LI>\r\n<LI>vi-VN - Vietnamese</LI>\r\n<LI>xh-ZA - isiXhosa</LI>\r\n<LI>yo-NG - Yoruba</LI>\r\n<LI>zh-CN - Chinese</LI>\r\n<LI>zh-HK - Chinese</LI>\r\n<LI>zh-TW - Chinese</LI>\r\n<LI>zu-ZA - isiZu</LI>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40904",
+    "downloadPreload": true
+}

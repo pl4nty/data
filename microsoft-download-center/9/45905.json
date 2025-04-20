@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2015 and Microsoft Dynamics CRM 2016 Performance and Scalability Documentation",
+    "downloadDescription": "These documents contain information about benchmark testing and how to improve performance and scalability with Dynamics CRM. This information is useful for IT professionals, CRM administrators and customizers, technical architects, and technical decision makers who plan, design, and customize CRM.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ScalableDynamicsCRMCustomizations.docx",
+            "url": "https://download.microsoft.com/download/d/6/6/d66e61ba-3d18-49e8-b042-8434e64fafca/ScalableDynamicsCRMCustomizations.docx",
+            "size": "2334596",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:56:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Scalable Security Modeling with Microsoft Dynamics CRM 2015.pdf",
+            "url": "https://download.microsoft.com/download/d/6/6/d66e61ba-3d18-49e8-b042-8434e64fafca/Scalable Security Modeling with Microsoft Dynamics CRM 2015.pdf",
+            "size": "2876254",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:56:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics CRM 2016 SP1 Performance Benchmark on Azure IaaS.pdf",
+            "url": "https://download.microsoft.com/download/d/6/6/d66e61ba-3d18-49e8-b042-8434e64fafca/Microsoft Dynamics CRM 2016 SP1 Performance Benchmark on Azure IaaS.pdf",
+            "size": "1153551",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:56:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PerformanceBenchmarkforCRMOnline2016Update1.pdf",
+            "url": "https://download.microsoft.com/download/d/6/6/d66e61ba-3d18-49e8-b042-8434e64fafca/PerformanceBenchmarkforCRMOnline2016Update1.pdf",
+            "size": "943837",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:56:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\r\n<li><b>ScalableDynamicsCRMCustomizations.docx</b>. The <i>Dynamics CRM Scalable Customizations</i> white paper describes how SQL Server platform-level issues can occur that create slow Microsoft Dynamics CRM application performance or error messages returned to the end-user. It also provides information about how to optimize a custom implementation and enable better performance that results in better end-user experience. Applies to Microsoft Dynamics CRM Online, Microsoft Dynamics CRM 2015, and Microsoft Dynamics CRM 2013.  </li>\r\n<li><b>Scalable Security Modeling with Microsoft Dynamics CRM 2015.pdf.</b> Microsoft Dynamics CRM 2015 and Microsoft Dynamics CRM 2016 offer a wide range of security modeling features, and it is important to choose the most appropriate approach to implementing a particular solution. This white paper describes how security modeling features in Microsoft Dynamics CRM 2015 and Microsoft Dynamics CRM 2016 related to authorization work at scale, the associated implications, and guidance on common and recommended usage patterns for modeling Microsoft Dynamics CRM 2015 and Microsoft Dynamics CRM 2016 security at scale, incorporating teams as appropriate.</li>\r\n<li><b>Microsoft Dynamics CRM 2016 SP1 Performance Benchmark on Azure IaaS.pdf</b>. This performance paper provides a benchmark for the performance of Microsoft Dynamics CRM 2016 (on-premises) Service Pack 1 running on Azure Virtual Machines.</li>\r\n<li><b>Performance Benchmark for Microsoft Dynamics CRM Online 2016 Update 1</b>. This performance paper provides a benchmark for the performance of a  Microsoft Dynamics CRM 2016 (online) Update 1 organization instance running on Azure Virtual Machines.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1",
+    "detailsSection_file_name": [
+        "ScalableDynamicsCRMCustomizations.docx",
+        "Scalable Security Modeling with Microsoft Dynamics CRM 2015.pdf",
+        "Microsoft Dynamics CRM 2016 SP1 Performance Benchmark on Azure IaaS.pdf",
+        "PerformanceBenchmarkforCRMOnline2016Update1.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "2.7 MB",
+        "1.1 MB",
+        "921.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word or Word reader\r\nAdobe PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download link to download this document. ",
+    "relatedResourcesSection": [
+        {
+            "title": "customize your CRM system",
+            "url": "https://technet.microsoft.com/en-us/library/dn531158.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45905",
+    "downloadPreload": true
+}

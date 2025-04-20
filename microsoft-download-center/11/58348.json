@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Intune Adoption Kit",
+    "downloadDescription": "Templates for Intune adoption",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftIntuneCustomerAdoptionKit.zip",
+            "url": "https://download.microsoft.com/download/f/8/c/f8c50d17-63a9-4a3b-b933-3ceefab04e5e/MicrosoftIntuneCustomerAdoptionKit.zip",
+            "size": "1315253",
+            "version": "2405",
+            "datePublished": "5/21/2024 7:58:09 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Intune Adoption Kit includes customizable email templates, a customizable Intune enrollment guide, a poster, and links to instructional videos and demos to help users enroll their iOS/iPadOS and Android devices to Intune.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2405",
+    "detailsSection_file_name": [
+        "MicrosoftIntuneCustomerAdoptionKit.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "5/21/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the zip file to access the Intune Adoption Kit materials.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58348",
+    "downloadPreload": true
+}

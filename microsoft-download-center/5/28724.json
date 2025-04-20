@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 365 Enterprise Volume License Activation Guide (Enterprise Agreement)",
+    "downloadDescription": "The guides include step-by-step instruction to activate Office 365 licenses purchased through Enterprise Agreement.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "EA - Office365 Activation Guide.pdf",
+            "url": "https://download.microsoft.com/download/b/a/4/ba46a8e7-32b4-4d78-90d5-730c9d91a034/EA - Office365 Activation Guide.pdf",
+            "size": "4610814",
+            "version": "March 2012",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EA-Online Services-Office 365 Volume Licensing Activation Guide.docx",
+            "url": "https://download.microsoft.com/download/b/a/4/ba46a8e7-32b4-4d78-90d5-730c9d91a034/EA-Online Services-Office 365 Volume Licensing Activation Guide.docx",
+            "size": "2654441",
+            "version": "March 2012",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The guides include step-by-step instruction to activate Office 365 licenses purchased through Enterprise Agreement.<br/>\r\n<ul>\r\n<li><b>EA - Office365 Activation Guide.pdf</b>: Includes step-by-step instruction to activate Office 365 licenses purchased through Enterprise Agreement.</li>\r\n<li><b>EA-Online Services-Office 365 Volume Licensing Activation Guide.docx</b>: This guide is intended to provide Microsoft Office 365 for Enterprises customers with a thorough understanding of the basic activation process when purchasing their online services using their Microsoft Volume Licensing Agreement. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2012",
+    "detailsSection_file_name": [
+        "EA - Office365 Activation Guide.pdf",
+        "EA-Online Services-Office 365 Volume Licensing Activation Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "4.4 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The files are Microsoft Word documents. Users who do not have Microsoft Word can view this document through the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\">Word Viewer</a>.</li>\r\n<li>The PDF files require Adobe Reader to read.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run</b> this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office 365 Guides for midsize businesses and enterprises",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=26123"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28724",
+    "downloadPreload": true
+}

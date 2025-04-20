@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 Guides: Project Accounting",
+    "downloadDescription": "This page includes links to the project accounting documentation resources for Microsoft Dynamics GP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PDK.xps",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/PDK.xps",
+            "size": "1719525",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctAccountingControl.xps",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctAccountingControl.xps",
+            "size": "1237607",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctCostManagement.xps",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctCostManagement.xps",
+            "size": "5575596",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctBilling.xps",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctBilling.xps",
+            "size": "1482026",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctAdministration.pdf",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctAdministration.pdf",
+            "size": "485470",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PDK.pdf",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/PDK.pdf",
+            "size": "1548257",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctBilling.pdf",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctBilling.pdf",
+            "size": "1367149",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctAdministration.xps",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctAdministration.xps",
+            "size": "353746",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAcctCostManagement.pdf",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctCostManagement.pdf",
+            "size": "3910286",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ProjAcctAccountingControl.pdf",
+            "url": "https://download.microsoft.com/download/2/a/c/2ac900ee-0197-4784-8b6d-8b73af90f871/ProjAcctAccountingControl.pdf",
+            "size": "1339403",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components: <br />\n<UL><LI><b>Personal Data Keeper</b> (PDK.pdf or PDK.xps): Explains how to install, upgrade, and set up Personal Data Keeper, which you can use to enter and submit Project Accounting timesheets and expense reports, regardless of whether you're connected to the corporate network. Also describes how to enter transactions and complete inquiry and reporting procedures.</LI>\n<LI><b>Project Accounting Accounting Control Guide</b> (ProjAcctAccountingControl.pdf or ProjAcctAccountingControl.xps): Describes how accounting managers can use Project Accounting to set up and control how credits and debits are posted, and how to recognize revenue for projects.</LI>\r\n<LI><b>Project Accounting Administrator's Guide</b> (ProjAcctAdministration.pdf or ProjAcctAdministration.pdf): Contains information for system administrators about how to set up user security and maintain company databases for Project Accounting.</LI>\r\n<LI><b>Project Accounting Billing Guide</b> (ProjAcctBilling.pdf or ProjAcctBilling.pdf): Explains how accounts receivable administrators can use Project Accounting to bill customers for projects.</LI>\r\n<LI><b>Project Accounting Cost Management Guide</b> (ProjAcctCostManagement.pdf or ProjAcctCostManagement.xps): Describes how project managers can use Project Accounting to estimate and track project costs.</LI>\r\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "PDK.xps",
+        "ProjAcctAccountingControl.xps",
+        "ProjAcctCostManagement.xps",
+        "ProjAcctBilling.xps",
+        "ProjAcctAdministration.pdf",
+        "PDK.pdf",
+        "ProjAcctBilling.pdf",
+        "ProjAcctAdministration.xps",
+        "ProjAcctCostManagement.pdf",
+        "ProjAcctAccountingControl.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "1.2 MB",
+        "5.3 MB",
+        "1.4 MB",
+        "474.1 KB",
+        "1.5 MB",
+        "1.3 MB",
+        "345.5 KB",
+        "3.7 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF or XPS file format.</LI>\r\n<LI>Save the files to your computer. When prompted for a location for the files, save them to the Documentation folder in your Microsoft Dynamics GP 2010 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2010\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing files, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the manuals, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3496",
+    "downloadPreload": true
+}

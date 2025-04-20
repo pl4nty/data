@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Overview of Service-Oriented Architecture Programming Model and Runtime System for Windows HPC Server 2008",
+    "downloadDescription": "Developers, users, and administrators face increasing challenges in meeting time-to-result goals. Applications must be developed quickly, run efficiently on the cluster, and be effectively managed so that performance, reliability, and resource utilization are optimized. Learn how Windows HPC Server 2008 can help meet these challenges.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Overview of SOA for Windows HPC Server 2008.doc",
+            "url": "https://download.microsoft.com/download/4/6/0/4608aadc-ccca-46f5-8244-8f37824c82b7/Overview of SOA for Windows HPC Server 2008.doc",
+            "size": "2237440",
+            "version": "May 2010",
+            "datePublished": "7/15/2024 3:10:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows HPC Server 2008 provides a platform for Service-Oriented Architecture (SOA)-based applications. The SOA programming model allows solution developers and architects to rapidly develop new high performance computing cluster-enabled interactive applications and easily modify existing distributed computing applications. With Windows HPC Server 2008, the developer build/debug/deploy experience is streamlined, the speed of processing is accelerated, and the management of the applications and systems is simplified.<br />\n<br />\nThis white paper provides a technical overview of SOA applications and the Windows HPC Server 2008 functions that support the SOA model; including building and deploying SOA applications; their architecture, runtime system, scaling, and performance considerations; and monitoring and troubleshooting.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May 2010",
+    "detailsSection_file_name": [
+        "Overview of SOA for Windows HPC Server 2008.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>.</li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Server Technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=119594"
+        },
+        {
+            "title": "c# Cluster-SOA Debugger for Windows HPC 2008",
+            "url": "http://msdn.microsoft.com/en-us/library/ee945374.aspx"
+        },
+        {
+            "title": "walkthrough: Debugging an SOA-based Application on a Cluster",
+            "url": "http://msdn.microsoft.com/en-us/library/ee945380.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19480",
+    "downloadPreload": true
+}

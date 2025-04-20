@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ClueWeb 09 Labeled Near-Duplicate News Articles",
+    "downloadDescription": "This data release is a companion to the paper Duplicate News Story Detection Revisited by Omar Alonso, Dennis Fetterly, and Mark Manasse published at The Ninth Asia Information Retrieval Societies Conference (AIRS 2013) in December 2013. Last published: August 28, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "news-dedupe-data.zip",
+            "url": "https://download.microsoft.com/download/6/6/0/660074f5-c619-43f9-b1bb-7f953a51eb38/news-dedupe-data.zip",
+            "size": "14776106",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:09:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This data release is a companion to the paper Duplicate News Story Detection Revisited by Omar Alonso, Dennis Fetterly, and Mark Manasse published at The Ninth Asia Information Retrieval Societies Conference (AIRS 2013) in December 2013.  The package provides approximately 5.5 million document identifiers of a subset of the ClueWeb\u201909 \u201cCategory A English\u201d documents that are likely to be from news sources. The package also contains two sets of human generated labels.  The first set of labels is the assessment of 456 pairs of documents by the authors as near-duplicate, non-duplicate, containment, near-duplicate irrelevant, or non-duplicate irrelevant.    The second set of labels is 710 labels obtained via a crowdsourcing system where the pairs of articles are labeled as near-duplicate or non-duplicate articles.  Finally, the data release contains the experimental design templates used for the crowdsourced assessments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "news-dedupe-data.zip"
+    ],
+    "detailsSection_file_size": [
+        "14.1 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52626",
+    "downloadPreload": true
+}

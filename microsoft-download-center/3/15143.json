@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Update Servicing with Write Filter (WUS-WF) Solution",
+    "downloadDescription": "This file contains the Windows Update Servicing with Write Filter (WUS-WF) solution.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WUS-WF.zip",
+            "url": "https://download.microsoft.com/download/c/5/3/c53408a6-6c25-4b68-914a-1baecdd812b4/WUS-WF.zip",
+            "size": "7818",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This solution allows you to implement a Windows Update Servicing with Write Filter (WUS-WF) for File-Based Write Filter (FBWF) and Enhanced Write Filter (EWF)-enabled Windows Embedded Standard 7 images.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WUS-WF.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A web browser and an utility that extracts ZIP files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 7"
+    ],
+    "installInstructionSection": "Click Download and follow the instructions",
+    "additionalInformationSection": "PLEASE NOTE:  Microsoft Corporation (or based on where you live, one of its affiliates) licenses this supplemental software (\u201cthe supplement\u201d) to you.  You may use a copy of this supplement with each validly licensed copy of Microsoft Windows Embedded 7 (the \u201csoftware\u201d).  You may not use the supplement if you do not have a license for the software.  The license terms for the software apply to your use of this supplement. Microsoft does not provide support services for the supplement.\r\n\r\nDISCLAIMER OF WARRANTY.   The supplement is licensed \u201cas-is.\u201d  You bear the risk of using it.  Microsoft gives no express warranties, guarantees or conditions.  You may have additional consumer rights under your local laws which this agreement cannot change.  To the extent permitted under your local laws, Microsoft excludes the implied warranties of merchantability, fitness for a particular purpose and non-infringement.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15143",
+    "downloadPreload": true
+}

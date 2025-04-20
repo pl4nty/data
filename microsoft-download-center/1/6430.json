@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio .NET 2002 MFC70.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise a computer running Visual Studio .NET 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs7.0-kb924641-x86.exe",
+            "url": "https://download.microsoft.com/download/9/8/0/980abbac-26af-42b9-959e-e104e2ef6579/VS7.0-KB924641-X86.exe",
+            "size": "66568080",
+            "version": "7.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise a computer running Visual Studio .NET 2002 and gain access to confidential data. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB924641",
+        "name": "KB924641"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-012",
+        "name": "MS07-012"
+    },
+    "detailsSection_file_version": "7.0",
+    "detailsSection_file_name": [
+        "vs7.0-kb924641-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "63.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Professional Edition ",
+        "Windows XP Professional Edition ",
+        "Windows NT",
+        "Windows 2000 Server",
+        "Windows XP Home Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?linkid=74615\">KB924641</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 924641",
+            "url": "http://go.microsoft.com/fwlink/?linkid=74615"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6430",
+    "downloadPreload": true
+}

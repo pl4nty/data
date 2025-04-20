@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Security Architecture For Big Data Platform on Azure",
+    "downloadDescription": "Security Architecture For Big Data Platform on Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Security Architecture For Big Data Platform on Azure.pdf",
+            "url": "https://download.microsoft.com/download/b/5/1/b517ad99-2268-4a51-ab18-7b758bc18a94/Security Architecture For Big Data Platform on Azure.pdf",
+            "size": "716636",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper outlines general guidelines for application and data security in Microsoft Azure \r\nPlatform for organizations looking to leverage benefits of big data on Microsoft Cloud Platform \r\nofferings such as Azure HDInsight, Azure Cosmos DB, Azure Databricks, Azure SQL Data\r\nWarehouse, Azure SQL MI and Azure SQL DB.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Security Architecture For Big Data Platform on Azure.pdf"
+    ],
+    "detailsSection_file_size": [
+        "699.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103460",
+    "downloadPreload": true
+}

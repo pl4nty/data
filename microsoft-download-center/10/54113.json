@@ -1,0 +1,367 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2016 Management Pack for Virtual Machine Manager",
+    "downloadDescription": "System Center 2016 Management Pack for Virtual Machine Manager 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - PLK.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - PLK.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - NOR.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - NOR.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - PTG.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - PTG.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - JPN.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - JPN.msi",
+            "size": "2379776",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - ZHH.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - ZHH.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - KOR.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - KOR.msi",
+            "size": "2408448",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - CHT.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - CHT.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - ITA.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - ITA.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - ELL.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - ELL.msi",
+            "size": "2326528",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - ESN.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - ESN.msi",
+            "size": "2367488",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - CSY.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - CSY.msi",
+            "size": "2363392",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - PTB.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - PTB.msi",
+            "size": "2375680",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - HUN.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - HUN.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - ROM.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - ROM.msi",
+            "size": "2383872",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - NLD.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - NLD.msi",
+            "size": "2379776",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - DEU.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - DEU.msi",
+            "size": "2351104",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - DAN.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - DAN.msi",
+            "size": "2379776",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - TRK.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - TRK.msi",
+            "size": "2375680",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - CHS.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - CHS.msi",
+            "size": "2371584",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - FIN.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - FIN.msi",
+            "size": "2318336",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - RUS.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - RUS.msi",
+            "size": "2412544",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - ENU.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - ENU.msi",
+            "size": "2371584",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - FRA.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - FRA.msi",
+            "size": "2400256",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center 2016 VMM MP Guide.docx",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/System Center 2016 VMM MP Guide.docx",
+            "size": "134076",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for SCVMM - SVE.msi",
+            "url": "https://download.microsoft.com/download/2/7/1/27199c5e-a74c-4301-9d8a-30275be7f040/Microsoft System Center 2016 Management Pack for SCVMM - SVE.msi",
+            "size": "2392064",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This link contains System Center 2016 Management Pack for Virtual Machine Manager for 2016 release.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.6.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2016 Management Pack for SCVMM - PLK.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - NOR.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - PTG.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - JPN.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - ZHH.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - KOR.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - CHT.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - ITA.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - ELL.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - ESN.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - CSY.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - PTB.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - HUN.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - ROM.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - NLD.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - DEU.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - DAN.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - TRK.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - CHS.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - FIN.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - RUS.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - ENU.msi",
+        "Microsoft System Center 2016 Management Pack for SCVMM - FRA.msi",
+        "System Center 2016 VMM MP Guide.docx",
+        "Microsoft System Center 2016 Management Pack for SCVMM - SVE.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.2 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.2 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.2 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "2.3 MB",
+        "130.9 KB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows Server 2016\r\nThis management pack is designed for the following versions of System Center Operations Manager: \u2022 System Center 2016 Operations Manager Update Rollup 1 (UR1) and above",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "See MP Guide that comes with this download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54113",
+    "downloadPreload": true
+}

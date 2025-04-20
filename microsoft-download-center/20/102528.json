@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Teams with security isolation poster in PowerPoint",
+    "downloadDescription": "Get the Microsoft Teams with security isolation poster as a PowerPoint slide for you to print or repurpose.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "team-security-isolation-poster.pptx",
+            "url": "https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx",
+            "size": "116955",
+            "version": "1",
+            "datePublished": "7/15/2024 4:29:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Teams with Security Isolation scenario provides detailed guidance to configure a private team in Microsoft Teams and use a unique sensitivity label to encrypt files so that only team members can decrypt them. The corresponding poster provides a visual summary of the steps and how the sensitivity label works for a file leaked from the team. This download is the poster in PowerPoint form.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "team-security-isolation-poster.pptx"
+    ],
+    "detailsSection_file_size": [
+        "114.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Android, iOS, or Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n\r\n<li>The download should start automatically. If prompted, select <b>Save</b>  or <b>Save this program to disk</b> .</li> \r\n\r\n<li>Select <b> Open file</b>,  or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [
+        {
+            "title": "configure a team with security isolation",
+            "url": "https://docs.microsoft.com/microsoft-365/solutions/secure-teams-security-isolation"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102528",
+    "downloadPreload": true
+}

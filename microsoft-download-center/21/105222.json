@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft OneLake file explorer for Windows",
+    "downloadDescription": "The OneLake file explorer application seamlessly integrates Microsoft OneLake, the data lake for Microsoft Fabric, with the Windows File Explorer.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OneLake_PuPr_1.0.13.0.msix",
+            "url": "https://download.microsoft.com/download/f/1/c/f1cdbc6e-588d-49ef-a164-4964657b6bce/OneLake_PuPr_1.0.13.0.msix",
+            "size": "80396536",
+            "version": "1.0.13.0",
+            "datePublished": "7/15/2024 4:58:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This application automatically syncs all Microsoft OneLake items that you have access to in Windows File Explorer.  See more information on OneLake file explorer <a href = \"https://go.microsoft.com/fwlink/?linkid=2231052\">here</a>\r\n<br/>\r\nFor information about this release, see\u202f<a href = \"https://go.microsoft.com/fwlink/?linkid=2243138\">release notes for OneLake file explorer.</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.13.0",
+    "detailsSection_file_name": [
+        "OneLake_PuPr_1.0.13.0.msix"
+    ],
+    "detailsSection_file_size": [
+        "76.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: Windows 10 version 1709 and above, Windows 11.\r\n<br/>Microsoft Fabric OneLake file explorer is supported on 64-bit (x64) platform.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download OneLake file explorer MSIX and run the installer.\u00a0\r\n<br/>\r\nBy installing this application, you agree to the <a href = \"https://go.microsoft.com/fwlink/?linkid=2234557\"> Terms and Conditions</a> and <a href = \"https://go.microsoft.com/fwlink/?linkid=2234558\">Preview Supplemental Terms.</a> <a href = \"https://go.microsoft.com/fwlink/?linkid=521839\">Microsoft Privacy statement</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105222",
+    "downloadPreload": true
+}

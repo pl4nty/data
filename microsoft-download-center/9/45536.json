@@ -1,0 +1,136 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 5 for System Center 2012 R2 Service Manager",
+    "downloadDescription": "This update contains a number of fixes for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme - UR9 now available.docx",
+            "url": "https://download.microsoft.com/download/7/f/d/7fd5cd9e-738b-4fe0-afeb-b1cb5effd2a9/Readme - UR9 now available.docx",
+            "size": "13381",
+            "version": "7.5.3079.315",
+            "datePublished": "7/15/2024 3:57:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b style=\"color:red\">\r\n[Update]\r\n<br/>\r\n<u>Note: </u>Update Rollup 9 for Service Manager 2012 R2 is now available for download, you can get it from here - <a href=\"http://aka.ms/sm2012R2ur7\">http://aka.ms/smr2ur9</a>\r\n<br/>\r\n<br/>\r\nThe Service Manager update rollups are cumulative, UR9 contains new updates in addition to all the payload which was shipped in <a href=\"https://support.microsoft.com/en-us/kb/3063263\">UR7</a>,<a href=\"https://support.microsoft.com/en-us/kb/3039363\">UR6</a>, <a href=\"https://support.microsoft.com/en-us/kb/3009517\">UR5</a>, <a href=\"https://support.microsoft.com/kb/2989601\">UR4</a>, <a href=\"https://support.microsoft.com/kb/2962041\">UR3</a>, and <a href=\"https://support.microsoft.com/kb/2904710\">UR2</a>. You can directly patch SM 2012 R2 deployment with UR9 to get all the fixes together.\r\n<b>Please be aware</b> that UR9 release does not contain the payload of Update Rollup 8 (https://support.microsoft.com/kb/3124091), because UR8 contains the new HTML based Self Service Portal and requires separate installation.\r\n<br/>\r\n<br/>\r\nHence, now we are removing the Update Rollup 5 files from this Download Center page and those files will be available for on-demand in special cases only. Feel free to reach us at <u>ServiceManager@microsoft.com</u> in case of any queries or concerns.\r\n<br/>\r\n</b>\r\n----------------------------\r\n<br/>\r\n<br/>\r\n<b style=\"color:red\">\r\n[Update - March 16th, 2015]<br/>\r\n<u>Note:</u> After installing this update, you may experience the following issue:<br/>\r\n<br/>\r\nIf your Data Warehouse server does not use Month-Date-Year time format, then an event \u201cThe conversion of a nvarchar data type to a datetime data type resulted in an out-of-range value\u201d is logged in your Service Manager Data Warehouse, and the Extract job no longer runs. <br/>\r\n<br/>\r\nA hotfix for this problem is now available. If you are facing this issue, then you can <a href=\"https://www.microsoft.com/en-in/download/details.aspx?id=46368\">download the hotfix from here</a>.<br/>\r\n</b>\r\n-----------------------------------<br/>\r\n<br/>\r\nThis update contains a set of bug fixes to the System Center 2012 R2 Service Manager release. It should be applied to all Service Manager 2012 R2 server installations. <br/>\r\nThere are two executable files available: <br/>\r\nSCSM2012R2_CU_KB3009517_AMD64_7.5.3079.315.exe <br/>\r\nSCSM2012R2_CU_KB3009517_i386_7.5.3079.315.exe<br/>\r\n<br/>\r\nBug fixes included in this update:\r\n<br/>\r\n<b>Note:</b> The System Center 2012 R2 Service Manager Update Rollups are cumulative, hence this UR5 contains new fixes for the following issues along with fixes shipped with System Center 2012 R2 Service Manager UR4, UR3, and UR2. \r\n<br/>\r\n<ol>\r\n<li>Change request still stays \"in progress\" when last activity is skipped and all previous activities are completed.</li>\r\n<li>ActualStartDate and ActualEndDate field values for Change Request and Release Request do not set.</li>\r\n<li>Multiple System Center Service Manager Connectors to System Center Configuration Manager execute and complete successfully. However, the start, finish and status property values are not updated in the Service Manager Console under the \"Connectors\" view and event 3334 is logged.</li>\r\n<li>Trying to delete a Service Request template that is being used by a Request Offering causes a cryptic and non-user friendly error message.</li>\r\n<li>The \"Group By\" functionality in a View does not work correctly when \"Group By\" column has empty fields.</li>\r\n<li>The Console crashes when the user tries to open an already opened attachment from a Work Item form.</li>\r\n<li>Opening the Views for Groups takes a long if there are large number of explicit members in the groups.</li>\r\n<li>The OM CI connector fails if one tries to import a distributed application that contains an instance of the 'Hyper-V Virtual Network Adapter' class.</li>\r\n<li>Monitoring Host process crashes if there exists a Notification after the user who created it was deleted or has moved to a hidden organizational unit (OU) in the Active Directory.</li>\r\n<li>An exception is raised if the user tries to open a sorted View which is created by using TypeProjection on custom Class that is neither Abstract and nor a first Concrete class.</li>\r\n<li>An Exception is thrown when a user tries to open the \"Service Components\" tab on the Service Maps form, when there are large number of services in CMDB.</li>\r\n\r\n<li>\r\nEnhanced in event logging for DW jobs.\r\n<br/>\r\nLogging the batch start and completion events for all DW job categories in event log. The start and completion event will include the following: \r\n<br/>\r\nProcess Category \r\n<ol> \r\n<li>Process Name</li>\r\n<li>Batch Id</li>\r\n<li>Batch Start or completion Time</li>\r\n</ol>\r\n</li>\r\n<li>\r\nEnhanced in event logging for DW cube processing. \r\n<ol>\r\n<li>Time taken by Cube\u2019s batch id to complete will be logged in seconds. </li>\r\n<li>Information whether the cube is processed under Analysis Services that are running in SQL Server Standard Edition or the SQL Server Enterprise Edition. </li>\r\n<li>Event logs will be added during processing of each Dimension and Measure Group for each partition (if applicable) for both enterprise and standard SQL editions. </li>\r\n</ol>\r\n</li>\r\n<li>\r\nAdded a new PowerShell cmdlet Get-SCDWInfraLocations Cmdlet on the Service Manager management server to retrieve the following location information about its data warehouse infrastructure: \r\n<ol>\r\n<li>Service Manager database</li>\r\n<li>Service Manager data warehouse database</li>\r\n<li>Service Manager Analysis server database</li>\r\n<li>Data Warehouse Reporting Server database and Report Server URL</li>\r\n</ol>\r\n</li>\r\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3009517",
+        "name": "KB3009517"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.315",
+    "detailsSection_file_name": [
+        "Readme - UR9 now available.docx"
+    ],
+    "detailsSection_file_size": [
+        "13.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 Service Manager ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Before you update:\r\n<ol>\r\n<li>Exit all Service Manager-related applications before you apply this cumulative update. For example, exit the Service Manager Console, the Self-Service Portal links, and the authoring tool</li>\r\n<li>Ensure that the Data Warehouse Server has successfully synchronized with the Management Server at least once</li>\r\n<li>Ensure that the update is first installed on Service Manager components in the following order:\r\n<ol>\r\n<li>DataWarehouse Server</li>\r\n<li>Primary Management Server</li>\r\n<li>Secondary Management Servers</li>\r\n<li>All Analyst consoles</li>\r\n<li>Self-Service Portal</li>\r\n</ol>\r\n</li>\r\n<li>It is important to restart all the consoles once the update has been installed</li>\r\n</ol>\r\n<br/>\r\n<b>To install this cumulative update, follow these steps: </b>\r\n<ol>\r\n<li>Download the cumulative update to a target folder. This cumulative update contains both the x86 version and the x64 version. Download the appropriate version for your system.</li>\r\n<li>Open the target folder and right-click the SCSM2012R2_CU_KB3009517_AMD64_7.5.3079.315.exe file or the SCSM2012R2_CU_KB3009517_i386_7.5.3079.315.exe file, and then click Run as administrator</li>\r\n<li>Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard</li>\r\n</ol>\r\n<br/>\r\n<b>How to verify a successful installation of this cumulative update</b>\r\n<ol> \r\n<li>In Control Panel, open Programs and Features.</li>\r\n<li>Click View installed updates.</li>\r\n<li>The following item is listed: Hotfix for Microsoft System Center Service 2012 R2 Service Manager (KB3009517)</li>\r\n</ol>\r\n<br/>\r\n<b>Steps to be followed post application of the UR to resynchronize SCOM (Operations Manager) mount points data:</b>\r\n<ol>\r\n<li>Disable all the OM CI Connector(s) in SM console</li>\r\n<li>In Windows PowerShell, check the current execution policy by executing \"Get-ExecutionPolicy\"</li>\r\n<li>If the current execution policy is Restricted then set to Remotesigned by executing \"Set-ExecutionPolicy \u2013force RemoteSigned\"</li>\r\n<li>Find the PowerShell script \"OMCIConnector_SyncMetadata_UpdateTimestamp.ps1\" in your System Center 2012 R2 installation directory. You should get this file under \"Microsoft System Center 2012 R2\\Service Manager\\PowerShell\".</li>\r\n<li>Execute \"PowerShell .\\OMCIConnector_SyncMetadata_UpdateTimestamp.ps1\" from Primary Management server</li>\r\n<li>Change the execution policy back to the value that you noted in step 2</li>\r\n<li>Enable and Synchronize the relevant OM CI Connector(s)</li>\r\n<li>All the Mount Points data should be populated in SCSM</li>\r\n</ol>\r\n<br/>\u3000\r\n<b>Steps to be followed post application of the UR to configure the timeout period for DataWarehouse Transform jobs:</b><br/>\r\nWith this Update Rollup, the timeout for DataWarehouse Transform jobs is now configurable with the Windows registry. Also now the default timeout has increased to 3 hours (180 minutes).<br/>\r\n<br/>\r\nTo override this, create \r\n<ol>\r\n<li>Key is under \"SOFTWARE\\Microsoft\\System Center\\2010\\Common\\DAL\" and the name should be \"SqlCommandTimeout\" of type DWORD</li>\r\n<li>The value is in seconds and can vary from 0 up to the max integer value, which is 2,147,483,647.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45536",
+    "downloadPreload": true
+}

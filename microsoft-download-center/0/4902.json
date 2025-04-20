@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "What's New in SQL Server 2008 R2 November Community Technology Preview (CTP)",
+    "downloadDescription": "This document describes what's new in the November CTP of Microsoft SQL Server\u00ae 2008 R2. Analysis Services, Database Engine, Reporting Services, and Service Broker all have new or enhanced features in this release. Master Data Services is a new component in this release.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WhatsNewNovemberCTP.doc",
+            "url": "https://download.microsoft.com/download/d/4/a/d4a55224-5904-4363-af36-70ee62c5951f/WhatsNewNovemberCTP.doc",
+            "size": "76288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "SQL Server 2008 R2 November CTP has numerous new and enhanced features. This document provides the information you need to fully take advantage of these features. <br /><br />\r\nFor Analysis Services, numerous enhancements have been added to the PowerPivot field list. These include automatic relationship detection when columns from unrelated tables are used in a PivotTable; support for searching fields by name; and support for named sets. Targeted support for additional data sources has also been added. <br /><br />\r\nFor the Database Engine, manageability enhancements have been made. These include the ability to connect to SQL Azure; data-tier application upgrades; enhanced functionality for SQL Server Utility features; and deprecation of the VIA protocol. \r\nFor Reporting Services, SharePoint integration has several new features. Additional enhancements include shared datasets and cache refresh plans; new data visualization report items; enhancements to Reporting Services features that were included in previous releases of SQL Server 2008; Business Intelligence Development Studio support for SQL Server 2008 reports and report server objects; and a new Web Service endpoint that can support management operations of the report server in both native mode and SharePoint integrated mode.<br /><br />\r\nFor Service Broker, you now have the option to turn poison message handling on and off. <br /><br />\r\nMaster Data Services is a new component. You use Master Data Services to manage your organization's master data, and to maintain a record of that data.  \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WhatsNewNovemberCTP.doc"
+    ],
+    "detailsSection_file_size": [
+        "74.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Supported Operating Systems: Windows 7; Windows Server 2003 Service Pack 2; Windows Server 2008; Windows Server 2008 R2; Windows Vista Service Pack 2; Windows XP Service Pack 3<br /><br />\r\n\u2022 Microsoft Word 2003 or a later version.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to open the File Download dialog box.\r\n<br />\r\n2. To open the file immediately, click Open. To save the file to a location on your hard disk, click Save.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4902",
+    "downloadPreload": true
+}

@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2016 CU1 (KB3150501)",
+    "downloadDescription": "Security Update For Exchange Server 2016 CU1 (KB3150501)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB3150501-x64-en.msp",
+            "url": "https://download.microsoft.com/download/8/e/9/8e93f059-814d-4680-ba22-285798e3da66/Exchange2016-KB3150501-x64-en.msp",
+            "size": "124256256",
+            "version": "15.01.0396.033",
+            "datePublished": "7/15/2024 4:13:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  A security issue has been identified that could allow an attacker to run programs and access data on a computer running Microsoft\u00ae Exchange Server 2016. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3150501",
+        "name": "KB3150501"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-079",
+        "name": "MS16-079"
+    },
+    "detailsSection_file_version": "15.01.0396.033",
+    "detailsSection_file_name": [
+        "Exchange2016-KB3150501-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "118.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        },
+        {
+            "title": "more Information About This Download",
+            "url": "http://support.microsoft.com/kb/2859928"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52771",
+    "downloadPreload": true
+}

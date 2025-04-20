@@ -1,0 +1,927 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server  2016 Easy Installer for Developer",
+    "downloadDescription": "Microsoft\u00ae SQL Server\u00ae 2016 Easy Installer for Developer",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-CHT.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLServer2016SP3-FullSlipstream-x64-CHT.exe",
+            "size": "149000",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-CHT.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLServer2016SP3-FullSlipstream-x64-CHT.box",
+            "size": "3235170516",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-CHT-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLServer2016SP3-FullSlipstream-x64-CHT-DEV.iso",
+            "size": "3777470464",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-CHT.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLServer2016SP3-FullSlipstream-DEV-x64-CHT.exe",
+            "size": "149016",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-CHT.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLServer2016SP3-FullSlipstream-DEV-x64-CHT.box",
+            "size": "3235170445",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SqlLocalDB.msi",
+            "size": "46817280",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_CHT.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLEXPR_x64_CHT.exe",
+            "size": "593052568",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_CHT.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-tw/SQLEXPRADV_x64_CHT.exe",
+            "size": "1879901104",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-CHS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLServer2016SP3-FullSlipstream-x64-CHS.exe",
+            "size": "149016",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-CHS.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLServer2016SP3-FullSlipstream-x64-CHS.box",
+            "size": "3235091852",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-CHS-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLServer2016SP3-FullSlipstream-x64-CHS-DEV.iso",
+            "size": "3777265664",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-CHS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLServer2016SP3-FullSlipstream-DEV-x64-CHS.exe",
+            "size": "149008",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-CHS.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLServer2016SP3-FullSlipstream-DEV-x64-CHS.box",
+            "size": "3235091791",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SqlLocalDB.msi",
+            "size": "46813184",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLEXPR_x64_CHS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLEXPR_x64_CHS.exe",
+            "size": "592972920",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_CHS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/zh-cn/SQLEXPRADV_x64_CHS.exe",
+            "size": "1879815976",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-RUS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLServer2016SP3-FullSlipstream-x64-RUS.exe",
+            "size": "151048",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-RUS.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLServer2016SP3-FullSlipstream-x64-RUS.box",
+            "size": "3240338736",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-RUS-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLServer2016SP3-FullSlipstream-x64-RUS-DEV.iso",
+            "size": "3786817536",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-RUS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLServer2016SP3-FullSlipstream-DEV-x64-RUS.exe",
+            "size": "151056",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-RUS.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLServer2016SP3-FullSlipstream-DEV-x64-RUS.box",
+            "size": "3240338657",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SqlLocalDB.msi",
+            "size": "46862336",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_RUS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLEXPR_x64_RUS.exe",
+            "size": "595741920",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_RUS.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ru-ru/SQLEXPRADV_x64_RUS.exe",
+            "size": "1883562248",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-PTB.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLServer2016SP3-FullSlipstream-x64-PTB.exe",
+            "size": "151048",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-PTB.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLServer2016SP3-FullSlipstream-x64-PTB.box",
+            "size": "3237187425",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-PTB-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLServer2016SP3-FullSlipstream-x64-PTB-DEV.iso",
+            "size": "3781457920",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-PTB.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLServer2016SP3-FullSlipstream-DEV-x64-PTB.exe",
+            "size": "151056",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-PTB.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLServer2016SP3-FullSlipstream-DEV-x64-PTB.box",
+            "size": "3237187462",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SqlLocalDB.msi",
+            "size": "46817280",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_PTB.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLEXPR_x64_PTB.exe",
+            "size": "593800496",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_PTB.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/pt-br/SQLEXPRADV_x64_PTB.exe",
+            "size": "1881157920",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-KOR.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLServer2016SP3-FullSlipstream-x64-KOR.exe",
+            "size": "149512",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-KOR.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLServer2016SP3-FullSlipstream-x64-KOR.box",
+            "size": "3237468379",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-KOR-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLServer2016SP3-FullSlipstream-x64-KOR-DEV.iso",
+            "size": "3785332736",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-KOR.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLServer2016SP3-FullSlipstream-DEV-x64-KOR.exe",
+            "size": "149520",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-KOR.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLServer2016SP3-FullSlipstream-DEV-x64-KOR.box",
+            "size": "3237468410",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SqlLocalDB.msi",
+            "size": "47058944",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_KOR.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLEXPR_x64_KOR.exe",
+            "size": "594577504",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_KOR.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ko-kr/SQLEXPRADV_x64_KOR.exe",
+            "size": "1881588080",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-JPN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLServer2016SP3-FullSlipstream-x64-JPN.exe",
+            "size": "149528",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-JPN.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLServer2016SP3-FullSlipstream-x64-JPN.box",
+            "size": "3239414348",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-JPN-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLServer2016SP3-FullSlipstream-x64-JPN-DEV.iso",
+            "size": "3784273920",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-JPN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLServer2016SP3-FullSlipstream-DEV-x64-JPN.exe",
+            "size": "149544",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-JPN.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLServer2016SP3-FullSlipstream-DEV-x64-JPN.box",
+            "size": "3239414355",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SqlLocalDB.msi",
+            "size": "46882816",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_JPN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLEXPR_x64_JPN.exe",
+            "size": "594472272",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_JPN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/ja-jp/SQLEXPRADV_x64_JPN.exe",
+            "size": "1881591072",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ITA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLServer2016SP3-FullSlipstream-x64-ITA.exe",
+            "size": "151048",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ITA.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLServer2016SP3-FullSlipstream-x64-ITA.box",
+            "size": "3237148353",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ITA-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLServer2016SP3-FullSlipstream-x64-ITA-DEV.iso",
+            "size": "3781804032",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-ITA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLServer2016SP3-FullSlipstream-DEV-x64-ITA.exe",
+            "size": "151056",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-ITA.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLServer2016SP3-FullSlipstream-DEV-x64-ITA.box",
+            "size": "3237148346",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SqlLocalDB.msi",
+            "size": "46821376",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ITA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLEXPR_x64_ITA.exe",
+            "size": "593791672",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_ITA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/it-it/SQLEXPRADV_x64_ITA.exe",
+            "size": "1881142832",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-FRA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLServer2016SP3-FullSlipstream-x64-FRA.exe",
+            "size": "151416",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-FRA.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLServer2016SP3-FullSlipstream-x64-FRA.box",
+            "size": "3242441983",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-FRA-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLServer2016SP3-FullSlipstream-x64-FRA-DEV.iso",
+            "size": "3787143168",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-FRA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLServer2016SP3-FullSlipstream-DEV-x64-FRA.exe",
+            "size": "151416",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-FRA.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLServer2016SP3-FullSlipstream-DEV-x64-FRA.box",
+            "size": "3242442046",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SqlLocalDB.msi",
+            "size": "46833664",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_FRA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLEXPR_x64_FRA.exe",
+            "size": "594375744",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_FRA.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/fr-fr/SQLEXPRADV_x64_FRA.exe",
+            "size": "1881875536",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ESN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLServer2016SP3-FullSlipstream-x64-ESN.exe",
+            "size": "151048",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ESN.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLServer2016SP3-FullSlipstream-x64-ESN.box",
+            "size": "3244701237",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ESN-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLServer2016SP3-FullSlipstream-x64-ESN-DEV.iso",
+            "size": "3789361152",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-ESN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLServer2016SP3-FullSlipstream-DEV-x64-ESN.exe",
+            "size": "151056",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-ESN.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLServer2016SP3-FullSlipstream-DEV-x64-ESN.box",
+            "size": "3244701258",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SqlLocalDB.msi",
+            "size": "46825472",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ESN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLEXPR_x64_ESN.exe",
+            "size": "593924904",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_ESN.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/es-es/SQLEXPRADV_x64_ESN.exe",
+            "size": "1881284944",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLServer2016SP3-FullSlipstream-x64-ENU.exe",
+            "size": "151048",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ENU.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLServer2016SP3-FullSlipstream-x64-ENU.box",
+            "size": "3185391452",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-ENU-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLServer2016SP3-FullSlipstream-x64-ENU-DEV.iso",
+            "size": "3536168960",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLServer2016SP3-FullSlipstream-DEV-x64-ENU.exe",
+            "size": "151056",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-ENU.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLServer2016SP3-FullSlipstream-DEV-x64-ENU.box",
+            "size": "3185391509",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLRules_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLRules_x64_ENU.exe",
+            "size": "8015240",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SqlLocalDB.msi",
+            "size": "46800896",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLEXPR_x64_ENU.exe",
+            "size": "564016512",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/en-us/SQLEXPRADV_x64_ENU.exe",
+            "size": "1841345976",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-DEU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLServer2016SP3-FullSlipstream-x64-DEU.exe",
+            "size": "151560",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-DEU.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLServer2016SP3-FullSlipstream-x64-DEU.box",
+            "size": "3246427794",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-x64-DEU-DEV.iso",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLServer2016SP3-FullSlipstream-x64-DEU-DEV.iso",
+            "size": "3790735360",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-DEU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLServer2016SP3-FullSlipstream-DEV-x64-DEU.exe",
+            "size": "151576",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016SP3-FullSlipstream-DEV-x64-DEU.box",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLServer2016SP3-FullSlipstream-DEV-x64-DEU.box",
+            "size": "3246427789",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlLocalDB.msi",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SqlLocalDB.msi",
+            "size": "46821376",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_DEU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLEXPR_x64_DEU.exe",
+            "size": "594516912",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_DEU.exe",
+            "url": "https://download.microsoft.com/download/f/9/8/f982347c-fee3-4b3e-a8dc-c95383aa3020/sql16_sp3_dlc/de-de/SQLEXPRADV_x64_DEU.exe",
+            "size": "1882084368",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server Easy Intaller for Developer streamlines the download process for SQL Server 2016 Developer edition down to three clicks. <br/>\r\n<br/>\r\nIt also enables the end user to complete a download on the media for installation at a later time. \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.6300.2",
+    "detailsSection_file_name": [
+        "SQLServer2016SP3-FullSlipstream-x64-CHT.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-CHT.box",
+        "SQLServer2016SP3-FullSlipstream-x64-CHT-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-CHT.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-CHT.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_CHT.exe",
+        "SQLEXPRADV_x64_CHT.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-CHS.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-CHS.box",
+        "SQLServer2016SP3-FullSlipstream-x64-CHS-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-CHS.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-CHS.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_CHS.exe",
+        "SQLEXPRADV_x64_CHS.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-RUS.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-RUS.box",
+        "SQLServer2016SP3-FullSlipstream-x64-RUS-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-RUS.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-RUS.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_RUS.exe",
+        "SQLEXPRADV_x64_RUS.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-PTB.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-PTB.box",
+        "SQLServer2016SP3-FullSlipstream-x64-PTB-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-PTB.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-PTB.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_PTB.exe",
+        "SQLEXPRADV_x64_PTB.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-KOR.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-KOR.box",
+        "SQLServer2016SP3-FullSlipstream-x64-KOR-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-KOR.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-KOR.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_KOR.exe",
+        "SQLEXPRADV_x64_KOR.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-JPN.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-JPN.box",
+        "SQLServer2016SP3-FullSlipstream-x64-JPN-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-JPN.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-JPN.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_JPN.exe",
+        "SQLEXPRADV_x64_JPN.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-ITA.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-ITA.box",
+        "SQLServer2016SP3-FullSlipstream-x64-ITA-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-ITA.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-ITA.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_ITA.exe",
+        "SQLEXPRADV_x64_ITA.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-FRA.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-FRA.box",
+        "SQLServer2016SP3-FullSlipstream-x64-FRA-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-FRA.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-FRA.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_FRA.exe",
+        "SQLEXPRADV_x64_FRA.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-ESN.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-ESN.box",
+        "SQLServer2016SP3-FullSlipstream-x64-ESN-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-ESN.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-ESN.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_ESN.exe",
+        "SQLEXPRADV_x64_ESN.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-ENU.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-ENU.box",
+        "SQLServer2016SP3-FullSlipstream-x64-ENU-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-ENU.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-ENU.box",
+        "SQLRules_x64_ENU.exe",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_ENU.exe",
+        "SQLEXPRADV_x64_ENU.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-DEU.exe",
+        "SQLServer2016SP3-FullSlipstream-x64-DEU.box",
+        "SQLServer2016SP3-FullSlipstream-x64-DEU-DEV.iso",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-DEU.exe",
+        "SQLServer2016SP3-FullSlipstream-DEV-x64-DEU.box",
+        "SqlLocalDB.msi",
+        "SQLEXPR_x64_DEU.exe",
+        "SQLEXPRADV_x64_DEU.exe"
+    ],
+    "detailsSection_file_size": [
+        "145.5 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "145.5 KB",
+        "3.0 GB",
+        "44.6 MB",
+        "565.6 MB",
+        "1.8 GB",
+        "145.5 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "145.5 KB",
+        "3.0 GB",
+        "44.6 MB",
+        "565.5 MB",
+        "1.8 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "44.7 MB",
+        "568.1 MB",
+        "1.8 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "44.6 MB",
+        "566.3 MB",
+        "1.8 GB",
+        "146.0 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "146.0 KB",
+        "3.0 GB",
+        "44.9 MB",
+        "567.0 MB",
+        "1.8 GB",
+        "146.0 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "146.0 KB",
+        "3.0 GB",
+        "44.7 MB",
+        "566.9 MB",
+        "1.8 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "44.7 MB",
+        "566.3 MB",
+        "1.8 GB",
+        "147.9 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "147.9 KB",
+        "3.0 GB",
+        "44.7 MB",
+        "566.8 MB",
+        "1.8 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "44.7 MB",
+        "566.4 MB",
+        "1.8 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "3.3 GB",
+        "147.5 KB",
+        "3.0 GB",
+        "7.6 MB",
+        "44.6 MB",
+        "537.9 MB",
+        "1.7 GB",
+        "148.0 KB",
+        "3.0 GB",
+        "3.5 GB",
+        "148.0 KB",
+        "3.0 GB",
+        "44.7 MB",
+        "567.0 MB",
+        "1.8 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\nThe Easy Installer requires that your device is connected to the Internet. \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the SQL Server 2016 installer (SSEI_Developer.exe) on this page. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103438",
+    "downloadPreload": true
+}

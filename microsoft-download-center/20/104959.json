@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (21H2 et al)",
+    "downloadDescription": "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (21H2 et al)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (21H2 et al).pdf",
+            "url": "https://download.microsoft.com/download/9/1/7/9178ce6a-8117-42e7-be0d-186fc4a89ca6/Microsoft Windows, Windows Server, Azure Stack Administrative Guide (21H2 et al).pdf",
+            "size": "1429115",
+            "version": "1",
+            "datePublished": "7/15/2024 5:06:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Administrative Guide (21H2 et al) for Microsoft Windows, Windows Server, Azure Stack For Common criteria November 2022",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (21H2 et al).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Browser and pdf reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Azure Stack HCI"
+    ],
+    "installInstructionSection": "download and open the document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104959",
+    "downloadPreload": true
+}

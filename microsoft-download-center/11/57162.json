@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "NewsQA Dataset",
+    "downloadDescription": "With massive volumes of written text being produced every second, how do we make sure that we have the most recent and relevant information available to us? Microsoft is tackling this problem by building AI systems that can read and comprehend large volumes of complex text in real-time.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "newsqa-data-v1.zip",
+            "url": "https://download.microsoft.com/download/1/d/8/1d830cee-f8d1-4807-9224-de35a8f08dc4/newsqa-data-v1.zip",
+            "size": "7639830",
+            "version": "July 2018",
+            "datePublished": "7/15/2024 4:47:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With massive volumes of written text being produced every second, how do we make sure that we have the most recent and relevant information available to us? Microsoft is tackling this problem by building AI systems that can read and comprehend large volumes of complex text in real-time.  The purpose of Microsoft\u2019s NewsQA dataset is to help the research community build algorithms that are capable of answering questions requiring human-level comprehension and reasoning skills.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2018",
+    "detailsSection_file_name": [
+        "newsqa-data-v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  ",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57162",
+    "downloadPreload": true
+}

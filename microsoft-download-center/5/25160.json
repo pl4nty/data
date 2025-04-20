@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics Partner Registration Agreement (PRA)",
+    "downloadDescription": "The Microsoft Dynamics\u00ae PRA provides partners that do not resell directly to customers with access to PartnerSource, to the development and demonstrations licenses, and to the Microsoft Dynamics Partner Revenue Recognition Program.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsPartnerRegistrationAgreementENG_SPLA.DOCX",
+            "url": "https://download.microsoft.com/download/0/2/f/02f1e17f-828d-41f2-8285-582b23c6924b/MicrosoftDynamicsPartnerRegistrationAgreementENG_SPLA.DOCX",
+            "size": "69096",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsPartnerRegistrationAgreementENG.DOCX",
+            "url": "https://download.microsoft.com/download/0/2/f/02f1e17f-828d-41f2-8285-582b23c6924b/MicrosoftDynamicsPartnerRegistrationAgreementENG.DOCX",
+            "size": "71069",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsPartnerRegistrationAgreementENG_ISV.DOCX",
+            "url": "https://download.microsoft.com/download/0/2/f/02f1e17f-828d-41f2-8285-582b23c6924b/MicrosoftDynamicsPartnerRegistrationAgreementENG_ISV.DOCX",
+            "size": "68056",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics Partner Registration Agreement provides partners that do not resell or intend to resell Microsoft Dynamics\u00ae products to end customers with access to PartnerSource, to development and demonstration licenses for their choice of Microsoft Dynamics NAV, Microsoft Dynamics AX, or Microsoft C5 and to Microsoft Dynamics Partner Revenue Recognition Program. This agreement primarily addresses the following partner categories: ISVs, Hosting partners with the SPLA, CPLS and System Integrators.<br />\n<br />\nFor Microsoft Dynamics NAV: you also need to sign the Partner Registration Add-on addendum for your region.<br />\n<br />\nFor Microsoft Dynamics GP, Microsoft Dynamics SL, and Microsoft Dynamics CRM: Licenses and SDKs for are available at the MSDN Premium Subscription level. Use this agreement only to obtain access to PartnerSource. <br />\n<br />\nIf you resell or intend to resell Microsoft Dynamics products directly to end customers, do not use this form. You need to sign the Solution Provider Agreement and related Product Addenda.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsPartnerRegistrationAgreementENG_SPLA.DOCX",
+        "MicrosoftDynamicsPartnerRegistrationAgreementENG.DOCX",
+        "MicrosoftDynamicsPartnerRegistrationAgreementENG_ISV.DOCX"
+    ],
+    "detailsSection_file_size": [
+        "67.5 KB",
+        "69.4 KB",
+        "66.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Microsoft C5</li><br />\n<li>Microsoft Dynamics AX</li><br />\n<li>Microsoft Dynamics CRM</li><br />\n<li>Microsoft Dynamics GP</li><br />\n<li>Microsoft Dynamics NAV</li><br />\n<li>Microsoft Dynamics SL</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click on a file name to download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25160",
+    "downloadPreload": true
+}

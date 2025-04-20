@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Content Series - Array Design and Deployment Guides",
+    "downloadDescription": "Forefront UAG Content Series - Array Design and Deployment Guides",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ArrayPlanning.docx",
+            "url": "https://download.microsoft.com/download/9/6/a/96aa7294-1e04-4586-aa58-e1520f93baec/ArrayPlanning.docx",
+            "size": "154284",
+            "version": "February 2010",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ArrayDeployment.docx",
+            "url": "https://download.microsoft.com/download/9/6/a/96aa7294-1e04-4586-aa58-e1520f93baec/ArrayDeployment.docx",
+            "size": "63717",
+            "version": "February 2010",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can deploy a single Forefront UAG server, or an array of Forefront UAG servers that share the same configuration. Array server traffic can be load balanced using a hardware load balancer, or using Windows Network Load Balancing (NLB) integrated into Forefront UAG. This download contains an array planning and design guide, and a deployment guide. The array design guide helps you to understand array and load balancing concepts, identify array deployment goals, and understand the planning required for each deployment goal. After identifying your array design, use the array deployment guide as a step-by-step companion as you configure load balanced arrays.\r\n\r\nThe planning guide is available from the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd861476.aspx). The deployment guide is also available from the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd857305.aspx). \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2010",
+    "detailsSection_file_name": [
+        "ArrayPlanning.docx",
+        "ArrayDeployment.docx"
+    ],
+    "detailsSection_file_size": [
+        "150.7 KB",
+        "62.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12114",
+    "downloadPreload": true
+}

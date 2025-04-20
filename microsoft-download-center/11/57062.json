@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure IP Ranges and Service Tags \u2013 China Cloud",
+    "downloadDescription": "Azure IP Ranges and Service Tags \u2013 China Cloud",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ServiceTags_China_20250331.json",
+            "url": "https://download.microsoft.com/download/9/d/0/9d03b7e2-4b80-4bf3-9b91-da8c7d3ee9f9/ServiceTags_China_20250331.json",
+            "size": "255353",
+            "version": "2025.03.31",
+            "datePublished": "4/1/2025 9:27:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains the IP address ranges for Public Azure as a whole, each Azure region within Public, and ranges for several Azure Services (Service Tags) such as Storage, SQL and AzureTrafficManager in Public. This file currently includes only IPv4 address ranges but a schema extension in the near future will enable us to support IPv6 address ranges as well. Service Tags are each expressed as one set of cloud-wide ranges and broken out by region within that cloud.  This file is updated weekly. New ranges appearing in the file will not be used in Azure for at least one week. Please download the new json file every week and perform the necessary changes at your site to correctly identify services running in Azure. These service tags can also be used to simplify the Network Security Group rules for your Azure deployments though some service tags might not be available in all clouds and regions.  Customers viewing the Effective Security Rules for their network adapters may note the presence of the \u201cspecial\u201d Azure platform addresses ( 168.63.129.16, FE80::1234:5678:9ABC/128) which are part of the Azure platform and NOT included in the JSON files.  These platform addresses are described in more detail here:   https://docs.microsoft.com/en-us/azure/virtual-network/what-is-ip-address-168-63-129-16. For more information on Service Tags please visit http://aka.ms/servicetags.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2025.03.31",
+    "detailsSection_file_name": [
+        "ServiceTags_China_20250331.json"
+    ],
+    "detailsSection_file_size": [
+        "249.4 KB"
+    ],
+    "detailsSection_file_date": "4/1/2025",
+    "systemRequirementsSection": "Json reader recommended",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "This file contains the IP address ranges for China Azure as a whole, each Azure region within China, and ranges for several Azure Services (Service Tags) such as Storage, SQL and AzureTrafficManager in China.\u00a0 \nService Tags are each expressed as one set of cloud-wide ranges and broken out by region within that cloud.\u00a0 This file is updated weekly. New ranges appearing in the file will not be used in Azure for at least one week. Please download the new json file every week and perform the necessary changes at your site to correctly identify services running in Azure. These service tags can also be used to simplify the Network Security Group rules for your Azure deployments though some service tags might not be available in all clouds and regions.\u00a0 For more information please visit\u00a0http://aka.ms/servicetags",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57062",
+    "downloadPreload": true
+}

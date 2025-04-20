@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR Identity Toolbox (With Binaries)",
+    "downloadDescription": "This is the MSR Identity Toolbox: A MATLAB toolbox for speaker-recognition research. Last published: October 17, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR Identity Toolkit v1.0.zip",
+            "url": "https://download.microsoft.com/download/d/6/0/d60054e7-9ce5-44ce-a3b5-5cf6c5087a18/MSR Identity Toolkit v1.0.zip",
+            "size": "54061494",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the MSR Identity Toolbox: A MATLAB toolbox for speaker-recognition research. This toolbox contains a collection of MATLAB tools and routines that can be used for research and development in speaker recognition. Version 1.0 of the Identity Toolbox provides code to implement both the conventional GMM-UBM and the state-of-the-art i-vector-PLDA based speaker-recognition strategies. It provides researchers with a test bed for developing new front-end and back-end techniques, allowing replicable evaluation of new advancements. It will also help newcomers in the field by lowering the \"barrier to entry,\" enabling them to quickly build baseline systems for their experiments. Although the focus of this toolbox is on speaker recognition, it can also be used for other speech related applications such as language, dialect, and accent identification. A more complete description of the toolbox is available in this Signal Processing Society article that is listed to the right, and in the documentation within the toolbox. This download contains the entire toolbox (Matlab sources, documentation, and windows executables). These binaries are useful if you want to run the toolbox routines across many machines in a cluster. If you want a smaller download, without the binary executables, it is available as a download with the name \"MSR Identity Toolbox (With Binaries). \"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSR Identity Toolkit v1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "51.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52279",
+    "downloadPreload": true
+}

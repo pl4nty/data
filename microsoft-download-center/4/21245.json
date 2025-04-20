@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "MSMQ Activation for WCF Workflow Service Application",
+    "downloadDescription": "This article describes how to set up MSMQ activation for WCF Workflow Service Application hosted in Windows Activation Service (WAS).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HowToSetUpMSMQActivation.docx",
+            "url": "https://download.microsoft.com/download/0/4/5/04591c66-201c-44b2-bebe-9edb741aa07b/HowToSetUpMSMQActivation.docx",
+            "size": "742038",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In .NET Framework 4 and Visual Studio 2010, you can build pure Windows Communication Foundation (WCF) services, pure Workflow Foundation (WF) applications, or a workflow service, which is a workflow application exposed as a WCF service. The out-of-box messaging activities, e.g. Send and Receive activities, come with implicit WCF endpoints, which can be employed for external communication to the workflow, including WCF activation of the workflow instance when the first message arrives.   \r\nA workflow service, like any application with a communication component, can benefit from the advantages of queuing technologies. Adding a queue element to application design can improve robustness. The queue can also provide load-balancing support and improve scalability. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HowToSetUpMSMQActivation.docx"
+    ],
+    "detailsSection_file_size": [
+        "724.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21245",
+    "downloadPreload": true
+}

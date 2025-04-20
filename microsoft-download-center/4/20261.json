@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2010 User Resources - XPS",
+    "downloadDescription": "Documents related Office 2010, including an overview, product guide, getting started, and new features.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Office 2010 User Resources - XPS.zip",
+            "url": "https://download.microsoft.com/download/3/7/1/37189b65-f02f-4bfd-958b-38d31b163468/Office 2010 User Resources - XPS.zip",
+            "size": "57892250",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Documents related Office 2010, including an overview, product guide, getting started, and new features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Office 2010 User Resources - XPS.zip"
+    ],
+    "detailsSection_file_size": [
+        "55.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Download the document format that works best for you: PDF, XPS, or DOCX",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the documents individually or the entire pack to help your users learn about the new features in Office 2010",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20261",
+    "downloadPreload": true
+}

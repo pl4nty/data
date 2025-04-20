@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "EPS English - Windows Server 2008 w/ SQL Server 2005",
+    "downloadDescription": "This download comes as a pre-configured VHD. This download enables testing of application designs on the Windows Server Platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EN_Windows_Server_2008.part01.exe",
+            "url": "https://download.microsoft.com/download/6/7/1/671374e4-a32f-40fc-9639-5fddab7d9625/EN_Windows_Server_2008.part01.exe",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EN_Windows_Server_2008.part04.rar",
+            "url": "https://download.microsoft.com/download/6/7/1/671374e4-a32f-40fc-9639-5fddab7d9625/EN_Windows_Server_2008.part04.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EN_Windows_Server_2008.part05.rar",
+            "url": "https://download.microsoft.com/download/6/7/1/671374e4-a32f-40fc-9639-5fddab7d9625/EN_Windows_Server_2008.part05.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EN_Windows_Server_2008.part03.rar",
+            "url": "https://download.microsoft.com/download/6/7/1/671374e4-a32f-40fc-9639-5fddab7d9625/EN_Windows_Server_2008.part03.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EN_Windows_Server_2008.part02.rar",
+            "url": "https://download.microsoft.com/download/6/7/1/671374e4-a32f-40fc-9639-5fddab7d9625/EN_Windows_Server_2008.part02.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "EN_Windows_Server_2008.part06.rar",
+            "url": "https://download.microsoft.com/download/6/7/1/671374e4-a32f-40fc-9639-5fddab7d9625/EN_Windows_Server_2008.part06.rar",
+            "size": "100279767",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As design gets more closely integrated into the process of building websites and web applications it becomes more critical to have all the necessary software installed on your machine to enable you to preview and review the designs you are working on. Often this is the only way of ensuring your designs will remain intact and look as intended when the finished project goes live on the web.<br />\n<br />\nWorking on a web based project today generally involves multiple technologies, databases and web servers, all of which need to be installed on your machine if you want to see exactly how your designs will look out in the real world.<br />\n<br />\nWhy waste valuable time installing, configuring, uninstalling and reconfiguring the server environments today\u2019s projects depend on, when a VHD gives you an instant and perfect solution.<br />\n<br />\nA VHD is simply a self contained environment, a virtual machine, with all the software you need already installed, configured and ready for use. Simply run the VHD and you immediately have access to all the software you need to run, build and test your designs in the real live environment and when you\u2019re done, simply close the VHD and the software is gone until you need it again.<br />\n<br />\nUtilizing multiple VHDs preconfigured for different client projects and different configurations gives you maximum flexibility without compromising the stability of your main machine and without repeated and time consuming installs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "EN_Windows_Server_2008.part01.exe",
+        "EN_Windows_Server_2008.part04.rar",
+        "EN_Windows_Server_2008.part05.rar",
+        "EN_Windows_Server_2008.part03.rar",
+        "EN_Windows_Server_2008.part02.rar",
+        "EN_Windows_Server_2008.part06.rar"
+    ],
+    "detailsSection_file_size": [
+        "700.0 MB",
+        "700.0 MB",
+        "700.0 MB",
+        "700.0 MB",
+        "700.0 MB",
+        "95.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A virtualization product that supports the VHD format is required to use this virtual machine.  Microsoft <a href=\"http://www.microsoft.com/windows/products/winfamily/virtualpc/default.mspx\">Virtual PC</a> or Microsoft <a href=\"http://www.microsoft.com/windowsserversystem/virtualserver/default.mspx\">Virtual Server</a> are provided for free and can be used with these VHD based virtual machines. <br />\n <br />\nIn addition to the System Requirements for the virtualization product, you will need additional disk and memory resources for running the virtual machine.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "This VHD is composed of a self-extracting RAR archive.  The RAR archive is a collection of multiple files as a precautionary measure against the potential of download failures of very large files.<br />\n<br />\nThe VHD image does not require product key activation and does not have an expiration date.  Access to this VHD is restricted to active subscribers of the Expression Professional Subscription.  Per the use rights agreement of the subscription, subscribers are restricted from sharing the download URL of these VHD images<br />\n<br />\nIn order to better ensure ease of use, this Virtual Machine is preconfigured with the following default password: pass2word1.  <br />\n<br />\nWE STRONGLY ENCOURAGE YOU TO CHANGE THE PASSWORD AFTER SETTING UP YOUR SERVER.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1367",
+    "downloadPreload": true
+}

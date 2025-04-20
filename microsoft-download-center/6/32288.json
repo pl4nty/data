@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Business Solutions Event -- Agenda",
+    "downloadDescription": "download the agenda",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "techbrief.wmv",
+            "url": "https://download.microsoft.com/download/f/4/5/f45253d2-c720-407a-8ff9-a46718df0339/techbrief.wmv",
+            "size": "262327171",
+            "version": "3.4",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "See the full agenda for all tracks of this event",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.4",
+    "detailsSection_file_name": [
+        "techbrief.wmv"
+    ],
+    "detailsSection_file_size": [
+        "250.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32288",
+    "downloadPreload": true
+}

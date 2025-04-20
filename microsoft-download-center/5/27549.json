@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Windows Event Tracing",
+    "downloadDescription": "This paper describes how to use the Windows Event Tracing infrastructure in Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Event Tracing in Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/1/3/0/1309cc08-80db-4d2a-87fe-40db4e05531a/Windows Event Tracing in Microsoft Dynamics AX 2012.pdf",
+            "size": "661399",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:26:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In Microsoft Dynamics AX 2012, functionality to support tracing throughout the product has been added. This functionality makes it easier for administrators and developers to investigate, analyze, and address potential problems by providing insight into what is happening in the lower layers of the product when user scenarios are running.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Windows Event Tracing in Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "645.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27549",
+    "downloadPreload": true
+}

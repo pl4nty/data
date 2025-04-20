@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Silverlight Tools",
+    "downloadDescription": "Tools to develop Silverlight applications for Windows Embedded Compact 7",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsEmbeddedSilverlightTools.exe",
+            "url": "https://download.microsoft.com/download/3/a/9/3a9b3dab-acff-428c-93e8-863515c0be82/WindowsEmbeddedSilverlightTools.exe",
+            "size": "1979120",
+            "version": "3.1.2869",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Embedded Silverlight Tools enables Silverlight developers to build Windows Embedded Compact 7 applications",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.2869",
+    "detailsSection_file_name": [
+        "WindowsEmbeddedSilverlightTools.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Visual Studio 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Enterprise",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows XP Professional 64-Bit Edition (Itanium) ",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "Download and execute.\r\n<br />\r\nIf you are using an up to date (as of Jan 2016) version of Internet Explorer, you will receive a warning about the <i>signature of the .EXE file being corrupt or invalid</i> once the download has completed. This is because the file is only signed with SHA-1; the file can be safely used to update your system.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Compact 7 Evaluation Edition",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=38794"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26227",
+    "downloadPreload": true
+}

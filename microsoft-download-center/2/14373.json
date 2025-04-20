@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Platform - Software Development Kit (SDK) (Version 10.2)",
+    "downloadDescription": "Software Development Kit (SDK) for the Microsoft Speech Platform Server Runtime 10.2.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSpeechPlatformSDK.msi",
+            "url": "https://download.microsoft.com/download/1/7/7/177963e6-9f59-4497-ab55-1dcbb7139acf/x64/MicrosoftSpeechPlatformSDK.msi",
+            "size": "9272320",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SpeechSDK 10.2 Release Notes.htm",
+            "url": "https://download.microsoft.com/download/1/7/7/177963e6-9f59-4497-ab55-1dcbb7139acf/SpeechSDK 10.2 Release Notes.htm",
+            "size": "22857",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSpeechSDK.chm",
+            "url": "https://download.microsoft.com/download/1/7/7/177963e6-9f59-4497-ab55-1dcbb7139acf/MicrosoftSpeechSDK.chm",
+            "size": "4845303",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSpeechPlatformSDK.msi",
+            "url": "https://download.microsoft.com/download/1/7/7/177963e6-9f59-4497-ab55-1dcbb7139acf/x86/MicrosoftSpeechPlatformSDK.msi",
+            "size": "8925696",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "license.rtf",
+            "url": "https://download.microsoft.com/download/1/7/7/177963e6-9f59-4497-ab55-1dcbb7139acf/license.rtf",
+            "size": "175514",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Update:</b> Microsoft Speech Platform has been updated.  See <a href=\"http://go.microsoft.com/fwlink/?LinkID=223570&clcid=0x409\">Microsoft Speech Platform - Software Development Kit (SDK) 11</a> for more information.\r\n<br/><br/>\r\n\r\nThis software development kit contains the documentation, development resources, tools and samples for development of speech applications that utilize the Microsoft Speech Platform Server Runtime 10.2.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.2",
+    "detailsSection_file_name": [
+        "MicrosoftSpeechPlatformSDK.msi",
+        "SpeechSDK 10.2 Release Notes.htm",
+        "MicrosoftSpeechSDK.chm",
+        "MicrosoftSpeechPlatformSDK.msi",
+        "license.rtf"
+    ],
+    "detailsSection_file_size": [
+        "8.8 MB",
+        "22.3 KB",
+        "4.6 MB",
+        "8.5 MB",
+        "171.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\nDevelopment is supported on:\r\n<ul>\r\n    <li>Windows Vista or later</li>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n<br></br>\r\nDeployment is supported on:\r\n<ul>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>Click the file you want to download from the list below.</li>\r\n    <li>Do one of the following:</li>\r\n    <ul>\r\n        <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n        <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n    </ul>\r\n</ul>\r\n\r\n<b>Important File Download Details</b>\r\n<ul>\r\n    <li>The <a href=\"http://go.microsoft.com/fwlink/?LinkID=198424\">SDK documentation </a> is currently available as a separate download from the Software Development Kit.  </li>\r\n    <li>Please review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=198425\">release notes</a> for additional information</li>\r\n</ul>\r\n\r\n",
+    "additionalInformationSection": "<b>Note: </b>On computers with <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, downloaded Compiled Help Module (CHM) files cannot be opened. For more information, see <a href=\"http://support.microsoft.com/kb/902225/\">KB902225</a>.\n<br /><br />\nAfter saving the file locally, you can view the contents using one of the following methods:\n<br /><br />\n<b>Method 1</b>\n<ol>\n<li>Double-click the .chm file.</li>\n<li>In the <b>Open File-Security Warning</b> dialog box, click to clear the <b>Always ask before opening this file</b> check box.</li>\n<li>Click <b>Open</b>.</li>\n</ol>\n<b>Method 2</b> \n<ol>\n<li>Right-click the CHM file, and then click <b>Properties</b>.</li>\n<li>Click <b>Unblock</b>.</li>\n<li>Double-click the .chm file to open the file.</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Speech Technologies",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=187246"
+        },
+        {
+            "title": "microsoft Speech Platform - Server Runtime Languages 10.2",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=189279"
+        },
+        {
+            "title": "microsoft Speech Platform - Server Runtime 10.2",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=189278"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14373",
+    "downloadPreload": true
+}

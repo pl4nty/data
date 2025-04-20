@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research WikiQA Code Package",
+    "downloadDescription": "We are releasing the code of some models used in our EMNLP-2015 paper, \u201cWikiQA: A Challenge Dataset for Open-Domain Question Answering.\u201d The code includes implementation of two models: Convolutional Neural Networks (CNN), and Logistic regression with CNN and count features (CNN-Cnt). Last published: October 30, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WikiQACodePackage.zip",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9c9802-b448-4361-89e0-dbf24d5a5c2c/WikiQACodePackage.zip",
+            "size": "2072275",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We are releasing the code of some models used in our EMNLP-2015 paper, \u201cWikiQA: A Challenge Dataset for Open-Domain Question Answering.\u201d  The code includes implementation of two models: Convolutional Neural Networks (CNN), and Logistic regression with CNN and count features (CNN-Cnt).  The models intend to judge whether a given sentence can be used to answer the input question.  Please refer to the README.txt file in the download and also the paper for detail.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WikiQACodePackage.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52355",
+    "downloadPreload": true
+}

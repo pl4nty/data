@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment guide for SharePoint Foundation 2010",
+    "downloadDescription": "Deployment guide for Microsoft SharePoint Foundation 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundDeplo.xps",
+            "url": "https://download.microsoft.com/download/f/d/d/fddf5ab0-a0d7-42cf-9f4b-a7646c0981aa/SharePointFoundDeplo.xps",
+            "size": "2951828",
+            "version": "2",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundDeplo.pdf",
+            "url": "https://download.microsoft.com/download/f/d/d/fddf5ab0-a0d7-42cf-9f4b-a7646c0981aa/SharePointFoundDeplo.pdf",
+            "size": "3137866",
+            "version": "2",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePointFoundDeplo.doc",
+            "url": "https://download.microsoft.com/download/f/d/d/fddf5ab0-a0d7-42cf-9f4b-a7646c0981aa/SharePointFoundDeplo.doc",
+            "size": "3240448",
+            "version": "2",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book provides deployment instructions for Microsoft SharePoint Foundation 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePointFoundDeplo.xps",
+        "SharePointFoundDeplo.pdf",
+        "SharePointFoundDeplo.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB",
+        "3.0 MB",
+        "3.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13852",
+    "downloadPreload": true
+}

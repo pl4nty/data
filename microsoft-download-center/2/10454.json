@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Anne Geddes Expands Web Presence to Amazon.com with Web Services and C#",
+    "downloadDescription": "Geddes Group contracted with development partner Personify Design to build a Web services interface to tie Amazon.com's Apache-based platform to Geddes' existing Microsoft Windows\u2013based back-end infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Anne Geddes.doc",
+            "url": "https://download.microsoft.com/download/7/7/4/774407b8-93a2-4a6e-b49a-64b59a8bbb3a/Anne Geddes.doc",
+            "size": "99840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "International baby photographer and designer Anne Geddes had a Web site, and wanted to add an Amazon.com storefront to increase sales. Unfortunately, the technology used on the two sites was not directly compatible. Geddes Group contracted with development partner Personify Design to build a Web services interface to tie Amazon.com's Apache-based platform to Geddes' existing Microsoft Windows\u2013based back-end infrastructure. <br />\n<br />\nAfter considering IBM Alphaworks and Systinet WASP, Personify chose to implement the interface with Microsoft  Visual C# .NET and the .NET Framework. The product was brought to market in three months, which met Geddes' aggressive schedule, and the interface tested out at over 100 transactions per second.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Anne Geddes.doc"
+    ],
+    "detailsSection_file_size": [
+        "97.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the Download button on this page to start the download.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Mid Market Advisor Site",
+            "url": "http://www.microsoft.com/nz/advisor/"
+        },
+        {
+            "title": "more Case Studies",
+            "url": "http://www.microsoft.com/nz/casestudies/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10454",
+    "downloadPreload": true
+}

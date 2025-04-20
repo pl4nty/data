@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Administration Guide for Microsoft Exchange Server 2003",
+    "downloadDescription": "This guide will help you make the most of Microsoft\u00ae Exchange Server 2003 by explaining the core concepts of Exchange administration.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3AdminGuide.doc",
+            "url": "https://download.microsoft.com/download/8/a/0/8a024b83-b003-47bd-b4dc-d4c46071d479/E2k3AdminGuide.doc",
+            "size": "4227072",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:14:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This guide explains how features work in the Exchange Server architecture, and how to configure and manage these features for optimal results. This content ranges from configuring global settings at an organizational level, to managing individual servers, to managing Exchange clusters. After reading this guide, you will have a solid understanding of what it takes to configure and manage your Exchange Server 2003 organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3AdminGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "administration Guide for Exchange Server 2003",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47617"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8114",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "MapPoint 2002 and Streets and Trips 2002 Construction Update",
+    "downloadDescription": "Download the construction information update to keep your maps current.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConstructionA1031413.dat",
+            "url": "https://download.microsoft.com/download/b/7/5/b757f283-76e9-462b-9cd3-764dc90151c7/ConstructionA1031413.dat",
+            "size": "151",
+            "version": "2002",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the construction information update to keep your maps current.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2002",
+    "detailsSection_file_name": [
+        "ConstructionA1031413.dat"
+    ],
+    "detailsSection_file_size": [
+        "151 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT"
+    ],
+    "installInstructionSection": "<OL><LI> Close MapPoint or Streets & Trips.</LI><br>\n<LI>Click the <b>Download</b> link to start the download.<LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\n<LI>Save the file in the folder where you installed the program files for MapPoint or Streets & Trips.  I.e. <b>C:\\Program Files\\Microsoft MapPoint\\Data\\</b>.</LI>\n<LI>Restart MapPoint or Streets &  Trips.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "33023",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 4.0 SP2 and 2009 SP1 White Paper: Country-Specific Update for India - Service Tax Liability",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that is specific to users in India.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country_specific_update_for_India_Service_tax_liability.pdf",
+            "url": "https://download.microsoft.com/download/4/3/6/436e2679-de60-4a91-ba41-34785062ed9a/Country_specific_update_for_India_Service_tax_liability.pdf",
+            "size": "409743",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes a country-specific update released for India for Microsoft Dynamics AX 4.0 SP2 and Microsoft Dynamics AX 2009 SP1.<br /><br />\r\nService providers who provide taxable services or registered manufacturers who are eligible for service tax credit must comply with the PoT rules. For services that are provided or invoices that are created through June 30, 2011, assessees can optionally continue to use cash basis accounting or use PoT accounting. The PoT rules are not applicable for Goods Transport Agency (GTA) transactions. The PoT rules do not apply to services that are provided or invoices that are created before April 1, 2011.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2554055 . For more information about other features that apply to India, refer to the Applications and Business Processes Help. Information that is specific to India includes (IND) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Country_specific_update_for_India_Service_tax_liability.pdf"
+    ],
+    "detailsSection_file_size": [
+        "400.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26534",
+    "downloadPreload": true
+}

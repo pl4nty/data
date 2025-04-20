@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 Service Pack 2 and Windows Vista Service Pack 2 - Five Language Standalone DVD ISO (KB948465)",
+    "downloadDescription": "Service Pack 2, the latest service pack for both Windows Server 2008 and Windows Vista, supports new types of hardware and emerging hardware standards, includes all of the updates that have been delivered since SP1, and simplifies deployment, for consumers, developers, and IT professionals.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_iso_update_sp_wave0-RTMSP2.0_DVD.iso",
+            "url": "https://download.microsoft.com/download/0/a/f/0af6a5d0-6b5b-4629-bdc9-38cd41d7655b/6002.18005.090410-1830_iso_update_sp_wave0-RTMSP2.0_DVD.iso",
+            "size": "1443663872",
+            "version": "948465",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Service Pack 2 for Windows Server 2008 and Windows Vista (SP2) is an update to Windows Vista and Windows Server 2008 that supports new kinds of hardware and emerging hardware standards, and includes all updates delivered since SP1.  SP2 simplifies administration by enabling IT administrators to deploy and support a single service pack for clients and servers. Please see the Windows Server SP2/Windows Vista SP2 page on TechNet/MSDN for additional details and documentation. \n<br /> \n<br />\n<a href=\"http://technet.microsoft.com/windows/dd262148\"> Windows Vista SP2 TechNet </a><br />\n\n<a href=\"http://technet.microsoft.com/windowserver/dd262148\"> Windows Server 2008 SP2 TechNet </a>\n<br />\n<br />\nSP2 is an update to Windows Server 2008 and Windows Vista that incorporates improvements discovered through automated feedback, as well as updates that have been delivered since SP1. By providing these fixes integrated into a single service pack for both client and server, Microsoft provides a single high-quality update that minimizes deployment and testing complexity for customers.\n<br />\n<br />\nService Pack 1 is a prerequisite for installing Service Pack 2. Please make sure that your system is running Service Pack 1 before you install Service Pack 2.\n<br />\n<br />\nNote: Windows Server 2008 released with Service Pack 1 included.  Windows Vista SP1 information and downloads can be found on the Windows Vista SP1 TechNet page.\n<br />\n<br />\nThis is a DVD ISO image that contains Service Pack 2 for Windows Server 2008 SP2 for x86, x64, IA-64 and Windows Vista for x86, x64. This image is only applicable to computers that have one or more of the following languages: English, German, French, Japanese, or Spanish. \n<br />\n<br />\nIf your system has additional languages please use the <a \rhref=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f25f9c49-1a3a-4336-ade6-32e34a448608\">All Language Standalone DVD</a>to install SP2.\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB948465",
+        "name": "KB948465"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "948465",
+    "detailsSection_file_name": [
+        "6002.18005.090410-1830_iso_update_sp_wave0-RTMSP2.0_DVD.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.3 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ol>Windows Server 2008, Windows Vista</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Vista",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Ultimate 64-bit edition"
+    ],
+    "installInstructionSection": "<ol>\n<li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li>\n<ul>\n<li>Click <b>Run</b> to start the installation immediately.</li>\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li>\n</ul>\n</ol>\n",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/948465"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24212",
+    "downloadPreload": true
+}

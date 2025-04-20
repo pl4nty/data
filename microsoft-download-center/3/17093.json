@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 Reference: Tables and Table Groups",
+    "downloadDescription": "This worksheet lists all core Microsoft Dynamics AX 2012 data tables.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Dynamics_AX_2012_Tables_and_Table_Groups.xlsx",
+            "url": "https://download.microsoft.com/download/1/e/2/1e2b531f-bdff-4b15-954e-753a757127e5/Microsoft_Dynamics_AX_2012_Tables_and_Table_Groups.xlsx",
+            "size": "3053415",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:10:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This spreadsheet includes the name, table group, table type, whether the table is a system table, whether the table is visible in the Application Object Tree (AOT), and whether the table is shared. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_AX_2012_Tables_and_Table_Groups.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17093",
+    "downloadPreload": true
+}

@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Studio 2 Drivers and Firmware",
+    "downloadDescription": "This device has reached the End of Servicing. The following packages are no longer being updated with newer drivers and firmware.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SurfaceStudio2_Win10_19045_24.093.36096.0.msi",
+            "url": "https://download.microsoft.com/download/2/e/a/2ea15c93-3aee-4627-a6b9-b2906a1ad192/SurfaceStudio2_Win10_19045_24.093.36096.0.msi",
+            "size": "937521152",
+            "version": "1.0",
+            "datePublished": "10/3/2024 12:14:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceStudio2_Win11_22621_24.093.36095.0.msi",
+            "url": "https://download.microsoft.com/download/2/e/a/2ea15c93-3aee-4627-a6b9-b2906a1ad192/SurfaceStudio2_Win11_22621_24.093.36095.0.msi",
+            "size": "937529344",
+            "version": "1.0",
+            "datePublished": "10/3/2024 12:14:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following packages will continue to be updated with the latest drivers and firmware until the date listed in the <a href=\"https://learn.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-driver-and-firmware-lifecycle-period\">Surface Driver and Firmware Support Lifecycle Policy.</a>\r\n<br></br>\r\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\r\n<br></br>\r\nCumulative and current drivers and firmware for the Surface Studio 2. This package contains drivers for all of the components in the Surface Studio 2, as well as updates to the system firmware that have been released via Windows Update. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n________________________________________________________________________________________________________________________________________\r\n<br></br>\r\n<b>Archive Section</b>\r\n<br></br>\r\n Consistent with our build lifecycle support, the following packages are no longer being updated with newer drivers and firmware. \r\n<ul>\r\n<li><a href=\"https://download.microsoft.com/download/2/E/A/2EA15C93-3AEE-4627-A6B9-B2906A1AD192/SurfaceStudio2_Win10_17134_19.082.19473.0.msi\">SurfaceStudio2_Win10_17134_19.082.19473.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/2/E/A/2EA15C93-3AEE-4627-A6B9-B2906A1AD192/SurfaceStudio2_Win10_17763_20.052.18796.0.msi\">SurfaceStudio2_Win10_17763_20.052.18796.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/2/E/A/2EA15C93-3AEE-4627-A6B9-B2906A1AD192/SurfaceStudio2_Win10_18362_21.111.6920.0.msi\">SurfaceStudio2_Win10_18362_21.111.6920.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/2/E/A/2EA15C93-3AEE-4627-A6B9-B2906A1AD192/SurfaceStudio2_Win10_19041_22.020.2939.0.msi\">SurfaceStudio2_Win10_19041_22.020.2939.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/2/E/A/2EA15C93-3AEE-4627-A6B9-B2906A1AD192/SurfaceStudio2_Win10_19044_24.062.18332.0.msi\">SurfaceStudio2_Win10_19044_24.062.18332.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/2/E/A/2EA15C93-3AEE-4627-A6B9-B2906A1AD192/SurfaceStudio2_Win11_22000_24.062.18332.0.msi\">SurfaceStudio2_Win11_22000_24.062.18332.0.msi</a></li>\r\n</ul>\r\n<br></br>\r\nPlease refer to end of lifecycle support:\r\n<br></br>\r\n<a href=\"https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support\">End of Servicing Date</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_10_version_history\">Windows 10 version history</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_11_version_history\">Windows 11 version history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceStudio2_Win10_19045_24.093.36096.0.msi",
+        "SurfaceStudio2_Win11_22621_24.093.36095.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "894.1 MB",
+        "894.1 MB"
+    ],
+    "detailsSection_file_date": "10/3/2024",
+    "systemRequirementsSection": "Surface Studio 2 required for compatibility with these drivers. These drivers and firmware are compatible with Windows 10 and Windows 11, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface Studio 2. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [
+        {
+            "title": "surface Studio 2 Update History",
+            "url": "https://support.microsoft.com/en-us/help/4477038/surface-studio-2-update-history"
+        },
+        {
+            "title": "supported Operating Systems",
+            "url": "https://support.microsoft.com/en-us/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1"
+        },
+        {
+            "title": "end of Servicing Date",
+            "url": "https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57593",
+    "downloadPreload": true
+}

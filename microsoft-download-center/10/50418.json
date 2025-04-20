@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Send to Sway Add-In for OneNote (Preview)",
+    "downloadDescription": "An Add-In for OneNote that allows users to send their content to Sway",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SendToSwayx64.msi",
+            "url": "https://download.microsoft.com/download/5/a/3/5a36b46a-6bdc-4a24-8f61-fe770d4af1db/SendToSwayx64.msi",
+            "size": "1617920",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:05:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SendToSwayx86.msi",
+            "url": "https://download.microsoft.com/download/5/a/3/5a36b46a-6bdc-4a24-8f61-fe770d4af1db/SendToSwayx86.msi",
+            "size": "1617920",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:05:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The \u201cSend to Sway\u201d Add-in lets you easily create a new Sway from the images and text of the selected OneNote page. This turns the thoughts you\u2019ve organized in OneNote into an interactive, visually compelling digital story in one click\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SendToSwayx64.msi",
+        "SendToSwayx86.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating System: Windows 7, 8, 8.1, or 10.\r\nMicrosoft OneNote 2013 or 2016 must be installed.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Select the platform version of the add-in that corresponds to your OneNote installation. If you have an x86 (or 32-bit) version of OneNote, then download the x86 version. If you have an x64 version of OneNote, download the x64 version. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50418",
+    "downloadPreload": true
+}

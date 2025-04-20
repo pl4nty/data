@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Requisitions in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Requisitions module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_RQ.zip",
+            "url": "https://download.microsoft.com/download/1/7/5/175c5677-5d88-4fb6-b5ec-687565fd1fa6/SL2015_ENUS_RQ.zip",
+            "size": "3088299",
+            "version": "NA.",
+            "datePublished": "3/15/2024 4:23:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b> </b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Requisitions module in Microsoft Dynamics SL. At Training Material Completion<b> </b>After completing this course, students should be able to: <ul><li>Understand and set up approval levels and policies based on department, project or material type.</li><li>Enter an item request and/or requisition and submit it for approval.</li><li>Submit a requisition to the bid process and use it to determine the appropriate vendor for a purchase.</li><li>Determine the required approvals for a request and process those approvals.</li><li>Convert item requests to requisitions.</li><li>Convert requisitions to purchase orders.</li><li>Enter purchase order change requests.</li><li>Run Budget/Status update to keep project and budget numbers up to date.</li></ul><b></b> Prerequisites<b> </b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>Completion of Purchasing training course required. Attendance at Accounts Payable is recommended.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_RQ.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101763",
+    "downloadPreload": true
+}

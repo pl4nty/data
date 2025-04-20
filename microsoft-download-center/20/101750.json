@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Currency Manager and Financial Statement Translation in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Currency Manager and Financial Statement Translation modules in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_CM.zip",
+            "url": "https://download.microsoft.com/download/0/7/2/072b6034-9e23-4ba5-875e-05512e49ee04/SL2015_ENUS_CM.zip",
+            "size": "6338020",
+            "version": "NA.",
+            "datePublished": "5/15/2024 4:26:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Currency Manager and Financial Statement Translation modules in Microsoft Dynamics SL. At Training Material CompletionAfter reviewing this training, individuals will have: <ul><li>A solid understanding how to setup and maintain the Currency Manager module including entering foreign currency transactions, setting up new currencies, and maintaining exchange rates.</li><li>An understanding of how the Currency Manager module interacts with the other Microsoft Dynamics SL modules.</li><li>An understanding of how to use the Financial Statement Translation module to translate your balance sheet into another currency.</li></ul><b></b> Prerequisites<b></b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>Reviewed the General Ledger training course.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_CM.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101750",
+    "downloadPreload": true
+}

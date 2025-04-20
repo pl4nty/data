@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 and 2016 Management Pack for Java Application Performance Monitoring",
+    "downloadDescription": "Management Pack for Java Application Performance Monitoring for System Center 2012 and System Center 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "JavaAPMManagementPack.msi",
+            "url": "https://download.microsoft.com/download/8/c/7/8c7dae58-7f13-4d4d-a611-04508f5a64c8/JavaAPMManagementPack.msi",
+            "size": "1089536",
+            "version": "7.1.10227.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Management Pack for Java Application Performance Monitoring for use with System Center Operations Manager 2012 R2 or System Center Operations Manager 2016.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10227.0",
+    "detailsSection_file_name": [
+        "JavaAPMManagementPack.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Operations Manager 2012 R2\r\nSystem Center Operations Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Refer to Management Pack Guide: http://technet.microsoft.com/en-us/library/dn502605.aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39709",
+    "downloadPreload": true
+}

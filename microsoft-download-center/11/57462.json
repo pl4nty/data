@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2019",
+    "downloadDescription": "SharePoint Server 2019 is designed to help you achieve new levels of reliability and performance, delivering features and capabilities that simplify administration, protect communications and information, and empower users to work across devices and screens.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "officeserver.img",
+            "url": "https://download.microsoft.com/download/c/b/a/cba01793-1c8a-4671-be0d-38c9e5bbd0e9/officeserver.img",
+            "size": "3872045056",
+            "version": "16.0.10337.12109",
+            "datePublished": "7/15/2024 4:53:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "SharePoint Server 2019 is designed to help you achieve new levels of reliability and performance, delivering features and capabilities that simplify administration, protect communications and information, and empower users to work across devices and screens.<br/>\r\n<br/>\r\nSharePoint Server 2019 is the next-generation server product, building on the solid foundation delivered with SharePoint Server 2016 and investments in Microsoft Office 365 to:<br/>\r\n<ul>\r\n  <li>Enable productive experiences across desktop and mobile</li>\r\n  <li>Provide a scalable and flexible collaboration and communications platform</li>\r\n  <li>Increase productivity with an intuitive user experience</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.10337.12109",
+    "detailsSection_file_name": [
+        "officeserver.img"
+    ],
+    "detailsSection_file_size": [
+        "3.6 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"https://go.microsoft.com/fwlink/?LinkID=866806\" target=\"_blank\">Hardware and software requirements for SharePoint Server 2019</a><br/>\r\n<a href=\"https://go.microsoft.com/fwlink/?LinkID=2005600\" target=\"_blank\">Software requirements for Project Server 2019</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To start the download:</b><br/>\r\n<ol>\r\n  <li>Click the <b>Download</b> button.</li>\r\n  <li>Select the check box for the desired installation language from the available choices.</li>\r\n  <li>Click <b>Next</b>.</li>\r\n  <li>Click <b>Save</b> to copy the disc image file to your computer.</li>\r\n</ol>\r\n<br/>\r\n<b>To install SharePoint Server 2019:</b><br/>\r\n<ol>\r\n  <li>Double click the disc image file to mount it as a drive on your computer.</li>\r\n  <li>Navigate to the mounted drive.</li>\r\n  <li>Run <b>splash.hta</b> to launch the SharePoint Server 2019 Start page.</li>\r\n  <li>Click <b>Install software prerequisites</b> to launch the Microsoft SharePoint 2019 Products Preparation Tool.</li>\r\n  <li>Follow the instructions in the tool to complete the installation of the software prerequisites.</li>\r\n  <li>On the <b>SharePoint Server 2019 Start</b> page, click <b>Install SharePoint Server</b> to launch Microsoft SharePoint Server 2019 Setup.</li>\r\n  <li>When prompted, provide a product key. You can use one of the following trial product keys. The trial period is 180 days. You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate product key in Central Administration.</li>\r\n</ol>\r\n<ul style=\"margin-left: 20px\">\r\n  <li>Enterprise trial product key: M692G-8N2JP-GG8B2-2W2P7-YY7J6</li>\r\n  <li>Standard trial product key: F2DPD-HPNPV-WHKMK-G7C38-2G22J</li>\r\n  <li>Note: You must use an Enterprise product key for SharePoint to enable Project Server 2019.</li>\r\n</ul>\r\n<br/>\r\nReview <a href=\"https://go.microsoft.com/fwlink/?LinkID=866802\" target=\"_blank\">Install SharePoint Server 2019</a> for detailed setup instructions.<br/>\r\n<br/>\r\n\r\n<b>To enable Project Server 2019:</b><br/>\r\n<ol>\r\n  <li>Install SharePoint Server 2019 using an Enterprise product key.</li>\r\n  <li>Create a SharePoint Server 2019 farm.</li>\r\n  <li>Launch the SharePoint 2019 Management Shell.</li>\r\n  <li>Execute the following command in the SharePoint 2019 Management Shell: Enable-ProjectServerLicense -Key &ltProject Server License Key&gt</li>\r\n</ol>\r\n<ul style=\"margin-left: 20px\">\r\n  <li>You can use the following trial license key. The trial period is 180 days. You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate license key with this command.</li>\r\n  <li>Project Server trial license key: R9946-QXNHR-62JPQ-3H3QC-TMWJT</li>\r\n  <li>Review <a href=\"https://go.microsoft.com/fwlink/?LinkID=761497\" target=\"_blank\">Enable-ProjectServerLicense</a> for detailed setup instructions.</li>\r\n</ul>\r\n<br/>\r\nReview <a href=\"https://go.microsoft.com/fwlink/?LinkID=2005601\" target=\"_blank\">Deploy Project Server 2019</a> for detailed setup instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "language Packs for SharePoint Server 2019",
+            "url": "https://www.microsoft.com/download/details.aspx?id=57463"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57462",
+    "downloadPreload": true
+}

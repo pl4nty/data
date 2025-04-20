@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Azure for your Linux and open source components",
+    "downloadDescription": "This whitepaper introduces Azure key services to consider (along with their core associated concepts, principles, and considerations) to migrate, develop, deploy and operate your applications based on Linux and open source components.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure-for-your-Linux-and-open-source-components.pdf",
+            "url": "https://download.microsoft.com/download/f/0/a/f0a93e09-74ab-464c-bb7d-9af9ea675f94/Azure-for-your-Linux-and-open-source-components.pdf",
+            "size": "3573260",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:28:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The cloud emerges as a major disruptive force in shaping the nature of business and plays a major opportunity and allowing dramatic global growth. The cloud brings breakthrough change, and thus represents (for incumbents) a major opportunity and plays a determining role.\r\n\r\nAn increasing number of people recognize the benefits of locating existing applications or building new ones in the public cloud to reduce infrastructure and ongoing datacenter operational costs, along with the technical debt, maximize availability, simplify management, take advantage of a predictable pricing model \u2013 provided that the resource consumption is also predictable, rapidly deliver to the market, elastically scale in respect to the demand, but also to build and leverage key competitive advantages, open multichannel access for their own business, etc.\r\n\r\nIn such a context, <a href=\"https://azure.microsoft.com/\">Microsoft Azure</a> is an open, flexible, enterprise-grade cloud computing platform that provides an ever growing collection of integrated Infrastructure-as-a-Service (IaaS), Platform-as-a-Services (PaaS) cloud services - compute, storage, networking, data lake, not only SQL (NoSQL) and relational (SQL) database, advanced analytics, Machine Learning, Internet of Things (IoT), mobile, web, API, etc. - that allow organizations of any size to move faster, achieve more, and save money.\r\n\r\nAs a direct translation of Microsoft\u2019s strategy that consists in:\r\n<li>\r\n<ul>Meeting where customers are - devices, operating systems (OS), languages, and hybrid.</ul>\r\n<ul>Delivering the most productive and trustworthy cloud services platform that enables developers using any framework on any device or OS to create and power the world's applications and services that run anywhere.</ul>\r\n<ul>Providing the best cloud platform for partners to succeed.</ul>\r\n</li>\r\n\r\n<b>Microsoft Azure supports <a href=\"https://azure.microsoft.com/en-us/overview/choose-azure-opensource/\">Linux and the open source technologies</a> millions of users already rely on and trust. Customers thus have suitable choices that help them maximize their existing investments or the ones they target for the future.</b>\r\n\r\nThis whitepaper introduces the key IaaS services to consider along with their core associated concepts, principles, and considerations. In addition, wherever relevant, additional managed PaaS services will be also highlighted.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure-for-your-Linux-and-open-source-components.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Open the white-paper with you PDF reader of choice",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Azure",
+            "url": "https://azure.microsoft.com/en-us/overview/"
+        },
+        {
+            "title": "open Source on Microsoft Azure",
+            "url": "https://azure.microsoft.com/en-us/overview/choose-azure-opensource/"
+        },
+        {
+            "title": "cloud-native applications on Microsoft Azure",
+            "url": "https://azure.microsoft.com/en-us/overview/cloudnative/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100435",
+    "downloadPreload": true
+}

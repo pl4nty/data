@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Sender ID: Sender ID Overview",
+    "downloadDescription": "The print-ready brochure describes the benefits of authenticated e-mail and of Sender ID implementation to both senders and recipients.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "senderid_overview.pdf",
+            "url": "https://download.microsoft.com/download/9/c/f/9cf82def-4e0e-42f9-8629-bc5120043fef/senderid_overview.pdf",
+            "size": "1913472",
+            "version": "1-2007",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "en_sidf.pdf",
+            "url": "https://download.microsoft.com/download/9/c/f/9cf82def-4e0e-42f9-8629-bc5120043fef/en_sidf.pdf",
+            "size": "571985",
+            "version": "1-2007",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The print-ready brochure describes the benefits of authenticated e-mail and of Sender ID implementation to both senders and recipients.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1-2007",
+    "detailsSection_file_name": [
+        "senderid_overview.pdf",
+        "en_sidf.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "558.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat 4.0 or later.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13619",
+    "downloadPreload": true
+}

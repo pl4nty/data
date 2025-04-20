@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "STS Integration Paper using WS-* Protocols",
+    "downloadDescription": "These documents detail the agreement for STSs to Interop with Azure Active Directory using the WS-Federation and WS-Trust protocols",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "STS Integration Interoperability Scenario Requirements July 2015.pdf",
+            "url": "https://download.microsoft.com/download/3/7/9/379ff864-ac01-4cf1-8130-b34708c713bd/STS Integration Interoperability Scenario Requirements July 2015.pdf",
+            "size": "485352",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "STS Integration Paper using WS Protocols Feb 2016.docx",
+            "url": "https://download.microsoft.com/download/3/7/9/379ff864-ac01-4cf1-8130-b34708c713bd/STS Integration Paper using WS Protocols Feb 2016.docx",
+            "size": "212907",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "There are three documents in this download associated with interoperability for the Works with Office 365 - Identity program. First is the paper that details the agreement for STSs to Interop with Azure Active Directory using the WS-Federation and WS-Trust protocols. The second is the paper which specifies the scenarios for STS testing that Microsoft use for qualification in the Works with Office 365 - Identity program. The third is the program guide for partners for the Works with Office 365 - Identity program. This enables use of a third party Identity Provider to be used for authentication by Office 365 and other Microsoft services that use Azure Active Directory.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "STS Integration Interoperability Scenario Requirements July 2015.pdf",
+        "STS Integration Paper using WS Protocols Feb 2016.docx"
+    ],
+    "detailsSection_file_size": [
+        "474.0 KB",
+        "207.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word is required to view the papers and to download the embedded sample XML files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and read the documents. Implement the required protocols. Obtain qualification from the Works with Office 365 - Identity program for the Identity Provider.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41185",
+    "downloadPreload": true
+}

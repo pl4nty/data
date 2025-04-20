@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "HIS Designer for Logic Apps",
+    "downloadDescription": "Development tool for the HostFile, IMS and CICS Standard Connectors for Logic Apps",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HIS_Designer_EN.msi",
+            "url": "https://download.microsoft.com/download/1/1/f/11f63cea-ea52-49f3-a298-a66195231f8c/HIS_Designer_EN.msi",
+            "size": "6156288",
+            "version": "12.0.1068.0",
+            "datePublished": "7/15/2024 5:00:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The HIS Designer for Logic Apps is a desktop application used to create .HIDX (Host Integration Designer XML) file, which is a XML representation of a COBOL copybook. This file is required by the HostFile, CICS and IMS Standard Logic Apps connectors.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0.1068.0",
+    "detailsSection_file_name": [
+        "HIS_Designer_EN.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2019, Windows Server 2022, Windows 10, Windows 11\r\n\r\nThis release requires the following version of the Microsoft .NET Framework:\r\n\r\n    Microsoft .NET Framework 4.8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download, or select a different language from the Change language drop-down list and click Go.\r\n2. Do one of the following: \r\n        o To start the installation immediately, click Run.\r\n        o To save the download to your computer for installation at a later time, click Save.\r\n        o To cancel the installation, click Cancel.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105661",
+    "downloadPreload": true
+}

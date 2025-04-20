@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "APS to SQL DW Migration - PolyBase",
+    "downloadDescription": "APS to SQL DW Migration - PolyBase",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "APS to SQL DW Migration - PolyBase.zip",
+            "url": "https://download.microsoft.com/download/a/6/b/a6baf977-23fb-478b-b9f7-4faa9477188d/APS to SQL DW Migration - PolyBase.zip",
+            "size": "1464276",
+            "version": "1.0",
+            "datePublished": "12/15/2023 4:42:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "APS to Azure SQL Data Warehouse Migration \u2013 Schema and Data Migration with PolyBase, ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "APS to SQL DW Migration - PolyBase.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "This document talks about Script Generation Automation Framework which can help you dynamically generate scripts for exporting table schema as well as data from APS to blob storage and then to create corresponding tables and import data back in SQL DW from the blob storage. The Script Generation Automation Framework also generates scripts for other types of objects, like views, stored procedures etc. The generated scripts then can be executed sequentially or in parallel by running them in multiple query windows. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103230",
+    "downloadPreload": true
+}

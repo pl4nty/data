@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Exposition of the Rubber Band Method",
+    "downloadDescription": "This code is a nonstandard combination of an expository article, an algorithm animation, and a research tool. Last published: April 22, 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Tutte.zip",
+            "url": "https://download.microsoft.com/download/5/5/0/550766e3-29ff-4976-a5f0-c143777bd5df/Tutte.zip",
+            "size": "293692",
+            "version": "1.1",
+            "datePublished": "5/15/2024 4:10:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This code is a nonstandard combination of an expository article, an algorithm animation, and a research tool. It describes the common idea behind algorithms solving three basic graph theory problems, planarity, connectivity, and maximum cut. The reader can experiment by creating his/her own graphs, or modifying those from a library, to see the behavior of these algorithms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Tutte.zip"
+    ],
+    "detailsSection_file_size": [
+        "286.8 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52609",
+    "downloadPreload": true
+}

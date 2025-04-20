@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Communications API Map for 2007",
+    "downloadDescription": "The Unified Communications API Map for 2007 describes the APIs that can be used in Unified Communications development and provides links to the SDKs or documentation for these APIs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UCAPIMap2007text.doc",
+            "url": "https://download.microsoft.com/download/b/c/a/bca233b7-2397-41d3-aab1-1195ee5f649b/UCAPIMap2007text.doc",
+            "size": "95232",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Unified Communications API Map for 2007 describes the APIs that can be used in Unified Communications development and provides links to the SDKs or documentation for these APIs. The APIs described in this document include:<br />\n<ul><br />\n<li>Microsoft Exchange Server 2007 SP1 SDK</li><br />\n<li>Microsoft Office Communications Server 2007 Server SDK</li><br />\n<li>Communications Server 2007 Speech Server Documentation</li><br />\n<li>Microsoft Office Communicator Automation API</li><br />\n<li>Live Meeting 2007 API Reference Guide</li><br />\n<li>Microsoft Office Live Meeting Service Portal API Documentation</li><br />\n<li>Unified Communications Managed API V1.0 SDK</li><br />\n<li>Microsoft Unified Communications Client 1.0 SDK</li><br />\n<li>Microsoft Unified Communications AJAX SDK</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "UCAPIMap2007text.doc"
+    ],
+    "detailsSection_file_size": [
+        "93.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n\t<li>\n\t<b>This download works with the following Office applications:</b>\n\t<br/>\n\t\t<ul>\n\t\t<li>Microsoft Office Word 2007</li>\n\t\t<li>Microsoft Office Word 2003</li>\n\t\t<li>Microsoft Office Word 2002</li>\n\t\t</ul>\n\t</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/><br/>\nSave the file to a directory on your computer.\n<br/><br/>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you save the file, open the document as you typically would.\n<br/><br/>\n<b>To remove this download:</b>\n<br/><br/>\nDelete the file from the directory where you saved it.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office Communications Server 2007 SDK",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=7f4ce9c5-9e02-4b99-aa09-360d920d3ee0&DisplayLang=en"
+        },
+        {
+            "title": "microsoft Unified Communications Managed API SDK",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=b30306e4-7dc1-44d2-9a68-9b4a6fc5c2df&DisplayLang=en"
+        },
+        {
+            "title": "microsoft Office Communicator 2007 SDK",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=ed1cce45-cc22-46e1-bd50-660fe6d2c98c&DisplayLang=en"
+        },
+        {
+            "title": "microsoft Office Communications Server 2007 Speech Server Developer Edition",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=70208"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6254",
+    "downloadPreload": true
+}

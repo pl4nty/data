@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Server Update Services 3.0 SP2 Operations Guide",
+    "downloadDescription": "This guide describes the major tasks involved in administering and troubleshooting Windows Server Update Services 3.0 SP2 (WSUS 3.0 SP2).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WSUS30SP2OpsGuide.pdf",
+            "url": "https://download.microsoft.com/download/3/4/f/34f1f24f-4a0f-4d41-bc05-084d10ba6a48/WSUS30SP2OpsGuide.pdf",
+            "size": "2062162",
+            "version": "3.0 SP2",
+            "datePublished": "7/15/2024 3:14:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WSUS30SP2OpsGuide.doc",
+            "url": "https://download.microsoft.com/download/3/4/f/34f1f24f-4a0f-4d41-bc05-084d10ba6a48/WSUS30SP2OpsGuide.doc",
+            "size": "1462272",
+            "version": "3.0 SP2",
+            "datePublished": "7/15/2024 3:14:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide describes how to manage Microsoft Windows Server Update Services 3.0 SP2 (WSUS 3.0 SP2). You will find best practices and instructions for managing updates, maintaining client computers and groups, and running reports. This guide also offers server and client troubleshooting information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0 SP2",
+    "detailsSection_file_name": [
+        "WSUS30SP2OpsGuide.pdf",
+        "WSUS30SP2OpsGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Small Business Server 2011 Essentials",
+        "Windows Small Business Server 2011 Standard",
+        "Windows Vista",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server Update Services Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=117694"
+        },
+        {
+            "title": "downloads for Microsoft Windows Server Update Services",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=148066"
+        },
+        {
+            "title": "windows Server Update Services TechNet Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=94242"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7328",
+    "downloadPreload": true
+}

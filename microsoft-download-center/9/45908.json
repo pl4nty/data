@@ -1,0 +1,190 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Service Bus Server 1.1 (KB3030966)",
+    "downloadDescription": "This update addresses the issue described in KB3030966",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-RU.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-RU.exe",
+            "size": "1906664",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-FR.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-FR.exe",
+            "size": "1906152",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-JA.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-JA.exe",
+            "size": "1904616",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-ES.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-ES.exe",
+            "size": "1905128",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-DE.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-DE.exe",
+            "size": "1903592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-ZH-CHS.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-ZH-CHS.exe",
+            "size": "1903592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-IT.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-IT.exe",
+            "size": "1904104",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-PT-BR.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-PT-BR.exe",
+            "size": "1905640",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-ZH-CHT.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-ZH-CHT.exe",
+            "size": "1904104",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-KO.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-KO.exe",
+            "size": "1905128",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppServer-KB3030966-x64-EN.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3619a8-e921-4139-8d4c-093a605db355/AppServer-KB3030966-x64-EN.exe",
+            "size": "1905128",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update addresses an issue with .NET clients using AMQP to send messages which causes intermittent failures. <BR></BR> Please refer to the Knowledge base article for additional details: \n<A href=\"http://support.microsoft.com/kb/3030966\">KB3030966</A>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "AppServer-KB3030966-x64-RU.exe",
+        "AppServer-KB3030966-x64-FR.exe",
+        "AppServer-KB3030966-x64-JA.exe",
+        "AppServer-KB3030966-x64-ES.exe",
+        "AppServer-KB3030966-x64-DE.exe",
+        "AppServer-KB3030966-x64-ZH-CHS.exe",
+        "AppServer-KB3030966-x64-IT.exe",
+        "AppServer-KB3030966-x64-PT-BR.exe",
+        "AppServer-KB3030966-x64-ZH-CHT.exe",
+        "AppServer-KB3030966-x64-KO.exe",
+        "AppServer-KB3030966-x64-EN.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR></BR>\n<B>Privilege Requirements: </B>Before running the executable, you must have administrative privilege on the computer where you are installing the software. Please refer to <A href=\"http://msdn.microsoft.com/en-us/library/dn282144.aspx\">Service Bus 1.1 Documentation</A> for more information. <BR></BR>\n<B>Software Requirements: </B><BR></BR>\n<OL>\n<LI>Must have Service Bus 1.1 installed on the computer where you are installing the update</LI>\n</OL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<B>To install the update for Service Bus Server 1.1 (KB3030966):</B>\n<BR></BR>\n<OL>\n<LI>Click the Download button on this page to start the download, or select a different language from the \"Change language\" drop-down list. <BR></BR>\n    Alternatively, you can click Save to download the .exe installer file to your computer. Then, navigate to the location at which you saved the .exe file, double-click the .exe file, and follow the instructions shown in the installer. </LI>\n</OL>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45908",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Administration Guide for Microsoft Visual Studio 2010 Team Foundation Server",
+    "downloadDescription": "This download contains a compiled help file (.chm) version of the administration guide for Team Foundation Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TFSAdmin-March2011.chm",
+            "url": "https://download.microsoft.com/download/7/6/b/76bc5238-2c5a-4f66-9db3-0c00afaba173/TFSAdmin-March2011.chm",
+            "size": "2208384",
+            "version": "B1, B2, RTM",
+            "datePublished": "7/15/2024 3:14:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Effective administration of Team Foundation Server is important to the success of your team projects.  You can use this downloadable version of the administration content available on MSDN for local review of critical administration concepts, procedures, and walkthroughs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "B1, B2, RTM",
+    "detailsSection_file_name": [
+        "TFSAdmin-March2011.chm"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "If you download the administration guide (or any other compiled help file) and see nothing but blank pages when you open it, you should review the content of this KB article (http://support.microsoft.com/kb/902225/).  You should also verify whether the content is being blocked from display by the security settings of Internet Explorer 7 and Windows Vista; some security settings will block the display of compiled help file content.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Save the download to a local folder, and then click it to open the compiled help file.\r\n\r\nAfter you save the file locally, you can view its contents by using one of the following methods: \n\nMethod 1: 1) Double-click the file. 2) In the Open File-Security Warning dialog box, clear the Always ask before opening this file check box. 3) Click Open. \n\nMethod 2: 1) Right-click the file, and then click Properties. 2) Click Unblock. 3) Double-click the file to open the file.",
+    "relatedResourcesSection": [
+        {
+            "title": "installation Guide for Team Foundation",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=127730"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8175",
+    "downloadPreload": true
+}

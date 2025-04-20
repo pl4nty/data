@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Templates (.admx) for Windows Vista",
+    "downloadDescription": "This page provides the complete set of Administrative Template (.admx) files for Windows Vista",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VistaADMX.msi",
+            "url": "https://download.microsoft.com/download/c/7/3/c732e513-15c1-41b7-baf2-f0db703acf34/VistaADMX.msi",
+            "size": "12024832",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Group Policy tools use Administrative template files to populate policy settings in the user interface. This allows administrators to manage registry-based policy settings.<br />This download \nincludes the Administrative template released for Windows Vista, in the \nfollowing languages:<br />\n<ul>\n<li>ar-SA Arabic - Saudi Arabia</li>\n<li>bg-BG Bulgarian - Bulgaria</li>\n<li>cs-CZ Czech - Czech Republic</li>\n<li>da-DK Danish - Denmark</li>\n<li>de-DE German - Germany</li>\n<li>el-GR Greek - Greece</li>\n<li>en-US English - United States</li>\n<li>es-ES Spanish - Spain</li>\n<li>et-EE Estonian - Estonia</li>\n<li>fi-FI Finnish - Finland</li>\n<li>fr-FR French - France</li>\n<li>he-IL Hebrew - Israel</li>\n<li>hi-IN Hindi - India</li>\n<li>hr-HR Croatian - Croatia</li> \n<li>hu-HU Hungarian - Hungary</li>\n<li>ja-JP Japanese - Japan</li>\n<li>ko-KR Korean - Korea</li>\n<li>lt-LT Lithuanian - Lithuania</li>\n<li>lv-LV Latvian - Latvia</li>\n<li>nb-NO Norwegian (Bokm\u00e5l) - Norway</li>\n<li>nl-NL Dutch - The Netherlands</li>\n<li>pl-PL Polish - Poland</li>\n<li>pt-BR Portuguese - Brazil</li>\n<li>pt-PT Portuguese - Portugal</li>\n<li>ro-RO Romanian - Romania</li>\n<li>ru-RU Russian - Russia</li>\n<li>sk-SK Slovak - Slovakia</li>\n<li>sl-SI Slovenian - Slovenia</li>\n<li>sv-SE Swedish - Sweden</li>\n<li>th-TH Thai - Thailand</li>\n<li>tr-TR Turkish - Turkey</li>\n<li>uk-UA Ukrainian - Ukraine</li>\n<li>zh-CN Chinese - China</li>\n<li>zh-HK Chinese - Hong Kong SAR</li>\n<li>zh-TW Chinese - Taiwan</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VistaADMX.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>User rights to run Group Policy Object Editor (gpedit.msc).</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To download the .msi file that contains the .admx files:<br />\n<ol><br />\n<li>Click the <b>download</b> button</li>.<br />\n<li>In the File Download dialog box, click <b>Save</b>.</li><br />\n<li>In the Save As dialog box, browse to the directory on your computer to which you want to save the .msi file.</li><br />\n<li>To start downloading the .msi file, click <b>Save</b>.</li><br />\n</ol><br />\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "step by Step guide for Managing ADMX files",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=75124"
+        },
+        {
+            "title": "deploying Group Policy using Windows Vista",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=77080"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17835",
+    "downloadPreload": true
+}

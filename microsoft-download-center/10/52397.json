@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Powergrading Short Answer Grading Corpus",
+    "downloadDescription": "This corpus contains the original data analyzed in the following paper: Basu, Jacobs, and Vanderwende, \"Powergrading: a Clustering Approach to Amplify Human Effort for Short Answer Grading,\u201d Transactions of the ACL, 2013. Last published: October 4, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Powergrading-1.0-Corpus.zip",
+            "url": "https://download.microsoft.com/download/e/1/d/e1da2458-1af3-41c9-9515-7c9a8697e0cd/Powergrading-1.0-Corpus.zip",
+            "size": "208339",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This corpus contains the original data analyzed in the following paper: Basu, Jacobs, and Vanderwende, \"Powergrading: a Clustering Approach to Amplify Human Effort for Short Answer Grading,\u201d Transactions of the ACL, 2013. It consists of responses from 100 + 698 crowdsourced workers to each of 20 short-answer questions. These questions are taken from the 100 questions published by the United States Citizenship and Immigration Services as preparation for the citizenship test. It also contains labels of response correctness (grades) from three judges for a subset of 10 questions for the set of 698 responses (3 x 6980 labels).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Powergrading-1.0-Corpus.zip"
+    ],
+    "detailsSection_file_size": [
+        "203.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52397",
+    "downloadPreload": true
+}

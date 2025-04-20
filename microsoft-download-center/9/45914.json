@@ -1,0 +1,122 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix for known issue with Update Rollup 5 for System Center 2012 R2 Data Protection Manager",
+    "downloadDescription": "We found an issue with DPM 2012 R2 UR5 update resulting in Data Protection Manager console being unresponsive. If you are facing this issue please install this hotfix",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DataProtectionManager2012R2-KB3040326.exe",
+            "url": "https://download.microsoft.com/download/b/d/5/bd5bef63-f123-4b28-8f3e-77df89e7604b/DataProtectionManager2012R2-KB3040326.exe",
+            "size": "529453816",
+            "version": "4.2.1297.0",
+            "datePublished": "7/15/2024 3:58:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "After installing Update Rollup 5 for System Center 2012 R2 Data Protection Manager and performing inquiry on either the local DPM server itself or on another attached DPM server (for secondary protection),  you notice that the console crashes, and upon starting it again it is unresponsive and hung. You notice that cmdlets are also unresponsive. Please install this update to fix the issue.\r\nThe update has pre-requisite on System Center 2012 R2 Data Protection Manager UR5\r\nPlease refer to KB3040326 for more details.\r\n\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.2.1297.0",
+    "detailsSection_file_name": [
+        "DataProtectionManager2012R2-KB3040326.exe"
+    ],
+    "detailsSection_file_size": [
+        "504.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 Data Protection Manager UR5",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "To install this update for Data Protection Manager, follow the below steps:\r\n1. Before you install this update, make a backup of the Data Protection Manager database.\r\n2. Download the hotfix on server that is running System Center 2012 R2 Data Protection Manager using the above download link, double click on the patch and follow the regular installation steps. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45914",
+    "downloadPreload": true
+}

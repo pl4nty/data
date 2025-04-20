@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Visual C++ Redistributable Packages for Visual Studio 2013",
+    "downloadDescription": "The Visual C++ Redistributable Packages install run-time components that are required to run C++ applications that are built by using Visual Studio 2013. For an updated version of these redistributable packages, see KB 3138367.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vcredist_arm.exe",
+            "url": "https://download.microsoft.com/download/2/e/6/2e61cfa4-993b-4dd4-91da-3737cd5cd6e3/vcredist_arm.exe",
+            "size": "1420840",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_x86.exe",
+            "url": "https://download.microsoft.com/download/2/e/6/2e61cfa4-993b-4dd4-91da-3737cd5cd6e3/vcredist_x86.exe",
+            "size": "6503984",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_x64.exe",
+            "url": "https://download.microsoft.com/download/2/e/6/2e61cfa4-993b-4dd4-91da-3737cd5cd6e3/vcredist_x64.exe",
+            "size": "7194312",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:01:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The Visual C++ Redistributable Packages install run-time components that are required to run applications that are developed by using Visual Studio 2013, on computers that don't have Visual Studio 2013 installed. These packages install run-time components of these libraries: C Runtime (CRT), Standard C++, ATL, MFC, C++ AMP, and OpenMP.\r\nFor an updated version of these redistributable packages, see <a href=\"https://support.microsoft.com/help/3138367\">KB 3138367</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "vcredist_arm.exe",
+        "vcredist_x86.exe",
+        "vcredist_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "6.2 MB",
+        "6.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>900 MHz or faster processor</li>\n<li>512 MB of RAM</li>\n<li>50 MB of available hard disk space</li>\n<li>5400 RPM hard drive</li>\n<li>DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\n</ul>\n<br/>\n<br/>\n<b>Additional Requirements:</b>\n<ul>\n<li>For Windows 8.1 and Windows Server 2012 R2, KB2883200 (available through Windows Update) is required.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To download all files and then install:\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. (The computer does not have to be connected to the Internet.)</li>\n</ul>\n</ul>",
+    "additionalInformationSection": "For important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=323490\">Visual Studio 2013 Readme</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40784",
+    "downloadPreload": true
+}

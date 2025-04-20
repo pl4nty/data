@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft 365 Intermediate Certificate Bundle - Worldwide",
+    "downloadDescription": "Certificate bundle containing intermediate certificates for endpoint security and TLS authentication for Microsoft 365 Worldwide customers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "m365_intermediate_certs_20201013.p7b",
+            "url": "https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b",
+            "size": "60830",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Certificate bundle containing intermediate certificates for endpoint security and TLS authentication for Microsoft 365 Worldwide customers. This bundle is an aggregate of the Office 365 Certificate Chain bundles at https://docs.microsoft.com/microsoft-365/compliance/encryption-office-365-certificate-chains.\r\n\r\nLast updated: 9/29/2020",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "m365_intermediate_certs_20201013.p7b"
+    ],
+    "detailsSection_file_size": [
+        "59.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows, Mac OS, Linux, UNIX",
+    "systemRequirementsSection_supportedOS": [
+        "Linux And Unix",
+        "Macintosh",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Install the certificate bundle to computers used to connect to Microsoft 365 endpoints.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102266",
+    "downloadPreload": true
+}

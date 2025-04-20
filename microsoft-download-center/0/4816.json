@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Enterprise Voice Deployment Guide",
+    "downloadDescription": "This download contains two documents: Deploying Enterprise Voice at Central sites and Deploying Branch Sites",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LS_DeployVoiceBrResil.doc",
+            "url": "https://download.microsoft.com/download/8/0/0/80030043-7558-45cf-9fff-4ab3bbc30134/LS_DeployVoiceBrResil.doc",
+            "size": "264192",
+            "version": "Dec2011",
+            "datePublished": "7/15/2024 3:14:24 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "LS_Deploy_Voice.doc",
+            "url": "https://download.microsoft.com/download/8/0/0/80030043-7558-45cf-9fff-4ab3bbc30134/LS_Deploy_Voice.doc",
+            "size": "1147904",
+            "version": "Dec2011",
+            "datePublished": "7/15/2024 3:14:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This download contains two documents: \r\n<ul>\r\n<li>Deploying Enterprise Voice at Central sites guides you through the process of deploying voice over IP (VoIP for Lync Server 2010 in a central site.</li>\r\n<li>Deploying Branch Sites guides you through the process of deploying survivable branch office appliance or branch office servers for branch office resiliency.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Dec2011",
+    "detailsSection_file_name": [
+        "LS_DeployVoiceBrResil.doc",
+        "LS_Deploy_Voice.doc"
+    ],
+    "detailsSection_file_size": [
+        "258.0 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</a>.</li> \r\n</ul>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4816",
+    "downloadPreload": true
+}

@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "A series of guides to demo Azure Arc for servers",
+    "downloadDescription": "Designed as step-by-step walkthroughs, this series of guides document contains all the necessary information to help you get started on your own journey to organize and govern across environments your Linux and Windows in the nowadays hybrid and multi-cloud environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deploy VM extensions on Azure Arc for servers.pdf",
+            "url": "https://download.microsoft.com/download/8/2/8/8283dcf2-1ebb-4f8b-852d-f857c1032ee7/Deploy VM extensions on Azure Arc for servers.pdf",
+            "size": "1295156",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:23:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Azure Arc for servers Demo (Windows Server).pdf",
+            "url": "https://download.microsoft.com/download/8/2/8/8283dcf2-1ebb-4f8b-852d-f857c1032ee7/Azure Arc for servers Demo (Windows Server).pdf",
+            "size": "1046775",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:23:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Manage credentials on Azure Arc for servers.pdf",
+            "url": "https://download.microsoft.com/download/8/2/8/8283dcf2-1ebb-4f8b-852d-f857c1032ee7/Manage credentials on Azure Arc for servers.pdf",
+            "size": "548086",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:23:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Azure Arc for Servers Demo (Windows Admin Center).pdf",
+            "url": "https://download.microsoft.com/download/8/2/8/8283dcf2-1ebb-4f8b-852d-f857c1032ee7/Azure Arc for Servers Demo (Windows Admin Center).pdf",
+            "size": "2167402",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:23:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Azure Arc for servers Demo (Linux).pdf",
+            "url": "https://download.microsoft.com/download/8/2/8/8283dcf2-1ebb-4f8b-852d-f857c1032ee7/Azure Arc for servers Demo (Linux).pdf",
+            "size": "892176",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:23:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Designed as step-by-step walkthroughs, this series of guides document contains all the necessary information to help you get started on your own journey to organize & govern across environments your Linux and Windows in the nowadays hybrid and multi-cloud environments.\r\n\r\n<a href=\"https://azure.microsoft.com/en-us/services/azure-arc/\">Azure Arc</a> is a set of technologies that extends Azure management and enables Azure services to run on-premises, multi-cloud, and the edge. Azure Arc brings Azure management, Azure services, Azure security, and cloud practices like DevOps to any infrastructure in local data centers on-premises, cloud services from multiple providers and edge locations.\r\n<a href=\"https://docs.microsoft.com/en-us/azure/azure-arc/\">Azure Arc for servers</a> is one of Azure Arc technologies to centrally control in Azure the sprawling evolution of Linux and Windows server environments from anywhere. It works with both virtual machines, bare-metal servers, and other clouds.\r\n\r\nThis series of demo guides intended for IT professionals helps you better understand the Azure Arc for servers use cases, get started with Azure Arc for servers and onboard your Linux and Windows Server environments in a step-by-step approach.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0a",
+    "detailsSection_file_name": [
+        "Deploy VM extensions on Azure Arc for servers.pdf",
+        "Azure Arc for servers Demo (Windows Server).pdf",
+        "Manage credentials on Azure Arc for servers.pdf",
+        "Azure Arc for Servers Demo (Windows Admin Center).pdf",
+        "Azure Arc for servers Demo (Linux).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "1022.2 KB",
+        "535.2 KB",
+        "2.1 MB",
+        "871.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux, Windows 10, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the PDF file(s) and open it/them with the PDF reader of your choices.",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Arc",
+            "url": "https://azure.microsoft.com/en-us/services/azure-arc/"
+        },
+        {
+            "title": "azure Arc for servers",
+            "url": "https://docs.microsoft.com/en-us/azure/azure-arc/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101320",
+    "downloadPreload": true
+}

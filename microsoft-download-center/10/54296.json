@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Search architectures for Internet sites for SharePoint Server 2016",
+    "downloadDescription": "Download this poster to learn about search architecture for Internet sites.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP_2016_Internet_Site_Search_Model.pdf",
+            "url": "https://download.microsoft.com/download/d/9/4/d947d942-6bb5-4f28-a51b-1fae16334c51/SP_2016_Internet_Site_Search_Model.pdf",
+            "size": "286255",
+            "version": "Nov2016",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP_2016_Internet_Site_Search_Model.vsdx",
+            "url": "https://download.microsoft.com/download/d/9/4/d947d942-6bb5-4f28-a51b-1fae16334c51/SP_2016_Internet_Site_Search_Model.vsdx",
+            "size": "234118",
+            "version": "Nov2016",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This poster shows a medium-size search topology for Internet sites, hardware requirements, and performance considerations.\r\n\r\nThe poster is available in .VSDX and .PDF versions. Once you click on the \"Download\" button, you're prompted to select the files you need. Download the .VSDX if you have Visio, otherwise download the .PDF for the Adobe Acrobat Reader version.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2016",
+    "detailsSection_file_name": [
+        "SP_2016_Internet_Site_Search_Model.pdf",
+        "SP_2016_Internet_Site_Search_Model.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "279.5 KB",
+        "228.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio or Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol> \r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n<li>Choose <b>Save</b> or <b>Save this program to disk</b> to copy the download to your computer.</li> \r\n</ol> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54296",
+    "downloadPreload": true
+}

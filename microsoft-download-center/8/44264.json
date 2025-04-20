@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded 8 Industry (KB2996822)",
+    "downloadDescription": "Resolves an issue with the Unified Write Filter (UWF)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2996822-x86.msu",
+            "url": "https://download.microsoft.com/download/4/6/4/464dfa74-4d31-4d26-8a33-0ddbd1a4d58c/Windows8-RT-KB2996822-x86.msu",
+            "size": "417494",
+            "version": "8",
+            "datePublished": "7/15/2024 3:24:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2996822-x64.cab",
+            "url": "https://download.microsoft.com/download/4/6/4/464dfa74-4d31-4d26-8a33-0ddbd1a4d58c/Windows8-RT-KB2996822-x64.cab",
+            "size": "341097",
+            "version": "8",
+            "datePublished": "7/15/2024 3:24:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2996822-x64.msu",
+            "url": "https://download.microsoft.com/download/4/6/4/464dfa74-4d31-4d26-8a33-0ddbd1a4d58c/Windows8-RT-KB2996822-x64.msu",
+            "size": "515085",
+            "version": "8",
+            "datePublished": "7/15/2024 3:24:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2996822-x86.cab",
+            "url": "https://download.microsoft.com/download/4/6/4/464dfa74-4d31-4d26-8a33-0ddbd1a4d58c/Windows8-RT-KB2996822-x86.cab",
+            "size": "243119",
+            "version": "8",
+            "datePublished": "7/15/2024 3:24:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This KB resolves a handle leak issue in uwfwmi.dll, when UWF WMI APIs are called periodically (e.g. to check the UWF overlay consumption) and the following error message is shown:\r\n<br></br>\r\n\u201cWindows Management Instrumentation has stopped WMIPRVSE.EXE because a quota reached a warning value. Quota: HandleCount, Value: 4257, Maximum value: 4096, WMIPRVSE PID: 3716, Providers hosted in this process: %SystemRoot%\\system32\\wbem\\uwfwmi.dll\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8",
+    "detailsSection_file_name": [
+        "Windows8-RT-KB2996822-x86.msu",
+        "Windows8-RT-KB2996822-x64.cab",
+        "Windows8-RT-KB2996822-x64.msu",
+        "Windows8-RT-KB2996822-x86.cab"
+    ],
+    "detailsSection_file_size": [
+        "407.7 KB",
+        "333.1 KB",
+        "503.0 KB",
+        "237.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded 8 Industry",
+    "systemRequirementsSection_supportedOS": [
+        "Embedded 8 Industry"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>Windows Embedded 8 Industry image</b>: \r\n<br></br>\r\nA) Executing the appropriate msu file\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows8-RT-KB2996822-x86.msu</li>\r\n<li>64bit Windows8-RT-KB2996822-x64.msu</li>\r\n</ul>\r\nOR\r\n<br></br>\r\nB) Installing the cab file via the command line with administrator privileges via.\r\n<br></br>\r\n\"DISM /online /add-package /packagepath:&ltLocation&gt\\&ltfilename.cab&gt\"\r\n<ul>\r\n<li>32bit Windows8-RT-KB2996822-x86.cab</li>\r\n<li>64bit Windows8-RT-KB2996822-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44264",
+    "downloadPreload": true
+}

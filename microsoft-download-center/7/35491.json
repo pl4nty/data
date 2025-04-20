@@ -1,0 +1,113 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Designer 2013",
+    "downloadDescription": "SharePoint Designer 2013 is the tool of choice for the rapid development of SharePoint applications. Please make sure your installation of SharePoint Designer is up to date by using Microsoft Update, or installing Service Pack 1 [see Details for more info].",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sharepointdesigner_32bit.exe",
+            "url": "https://download.microsoft.com/download/3/e/3/3e383bc4-c6ec-4dea-a86a-c0e99f0f3bd9/sharepointdesigner_32bit.exe",
+            "size": "295923120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:32:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sharepointdesigner_64bit.exe",
+            "url": "https://download.microsoft.com/download/3/e/3/3e383bc4-c6ec-4dea-a86a-c0e99f0f3bd9/sharepointdesigner_64bit.exe",
+            "size": "339799344",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:32:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "<b>Please make sure your installation of SharePoint Designer is up to date by using Microsoft Update, or installing Service Pack 1 from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=42015\">here</a></b>\r\n<br/><br/>\r\nSharePoint Designer 2013 is the tool of choice for the rapid development of SharePoint applications. Using SharePoint Designer, advanced users and developers alike can rapidly create SharePoint solutions in response to business needs. Advanced users can compose no-code solutions that encompass a variety of common scenarios, from collaborative sites and web publishing to Line-Of-Business data integration, business intelligence solutions, and human workflows, leveraging the building blocks available in SharePoint in an easy to use environment. In addition, developers can use SharePoint Designer 2013 to get a quick start on SharePoint development projects.\u200b \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sharepointdesigner_32bit.exe",
+        "sharepointdesigner_64bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "282.2 MB",
+        "324.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li> Microsoft .NET 4.0 Framework or higher</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To install this download:\r\n <li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\r\n<li>To use the 32-bit version of the files, double-click the <b>SharePointDesigner_32bit.exe</b> program file on your hard disk to start the Setup program.</li>\r\n<li>To use the 64-bit version of the files, double-click the <b>SharePointDesigner_64bit.exe</b> program file on your hard disk to start the Setup program.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n <br/>\r\n<br/>\r\nTo remove this download: <br/>\r\n<br/>\r\n1. On the Start menu, point to Settings and then click Control Panel.<br/>\r\n2. Double-click Add/Remove Programs <br/>\r\n3. In the list of currently installed programs, select Microsoft SharePoint Designer 2013 and then click Remove or Add/Remove. If a dialog box appears, follow the instructions to remove the program. <br/>\r\n4. Click Yes or OK to confirm that you want to remove the program. <br/><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35491",
+    "downloadPreload": true
+}

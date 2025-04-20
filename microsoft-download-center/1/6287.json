@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "DPM 2010 datasheet - Product Overview",
+    "downloadDescription": "Overview of DPM 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPM2010_datasheet_product-overview.docx",
+            "url": "https://download.microsoft.com/download/9/3/9/93931a62-3654-45b4-9787-b3688bdc4c81/DPM2010_datasheet_product-overview.docx",
+            "size": "392624",
+            "version": "DPM 2010 RTM",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Overview of System Center Data Protection Manager 2010",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "DPM 2010 RTM",
+    "detailsSection_file_name": [
+        "DPM2010_datasheet_product-overview.docx"
+    ],
+    "detailsSection_file_size": [
+        "383.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "http://technet.microsoft.com/en-us/library/ff399554.aspx",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "dpm TechCenter on TechNet",
+            "url": "http://technet.microsoft.com/DPM"
+        },
+        {
+            "title": "dpm website",
+            "url": "http://www.microsoft.com/DPM"
+        },
+        {
+            "title": "dpm product team blog",
+            "url": "http://blogs.technet.com/DPM"
+        },
+        {
+            "title": "dpm on Twitter",
+            "url": "http://twitter.com/SCDPM"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6287",
+    "downloadPreload": true
+}

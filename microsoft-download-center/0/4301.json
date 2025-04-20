@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Vista, Windows Server 2008 Common Criteria Guide",
+    "downloadDescription": "This is the supplemental administrator guidance documentation that was used in the Common Criteria evaluation of Windows Vista and Windows Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Common Criteria Supplemental Admin Guidance.docx",
+            "url": "https://download.microsoft.com/download/f/9/f/f9f25d62-a9fa-4234-9553-d868627e8a0f/Common Criteria Supplemental Admin Guidance.docx",
+            "size": "147833",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Vista, Windows Server 2008 Common Criteria Guide describes how to setup Windows Vista and Windows Server 2008 to meet the same security conditions used by the Common Criteria (CC) evaluation. It supplements the Windows Vista Security Guide and Windows Server 2008 Security Guide published by Microsoft. These guides are available in the Microsoft Security Compliance Manager (http://go.microsoft.com/fwlink/?LinkId=113939). The Windows Vista, Windows Server 2008 Common Criteria Guide is primarily for IT professionals, security specialists, network architects, computer engineers, and other IT consultants who plan application or infrastructure development and deployments of Windows Server 2008 for servers in an enterprise environment. It is not intended for home users.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Common Criteria Supplemental Admin Guidance.docx"
+    ],
+    "detailsSection_file_size": [
+        "144.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows Vista Enterprise Edition (32-bit and 64-bit versions)<br />\r\nMicrosoft Windows Server 2008 Standard Edition (32-bit and 64-bit versions)<br />\r\nMicrosoft Windows Server 2008 Enterprise Edition (32-bit and 64-bit versions)<br />\r\nMicrosoft Windows Server 2008 Datacenter\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Datacenter without Hyper-V",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 Enterprise without Hyper-V",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Server 2008 Standard",
+        "Windows Server 2008 Standard without Hyper-V",
+        "Windows Vista",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.<br />\r\n2. Do one of the following:<br />\r\n     a. To read the file immediately, click the Open button.<br />\r\n     b. To copy the file to your computer for later use, click the Save button.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Platform Common Criteria Certification",
+            "url": "http://technet.microsoft.com/en-us/library/dd229319.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4301",
+    "downloadPreload": true
+}

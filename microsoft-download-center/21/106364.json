@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "VAMT- ESU Configuration March 2025",
+    "downloadDescription": "Update to the VAMT Configuration files",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "pkconfig_win10_esu.xrm-ms",
+            "url": "https://download.microsoft.com/download/9/f/1/9f130d6c-00ce-4594-a944-5d3e10cd03b6/pkconfig_win10_esu.xrm-ms",
+            "size": "681576",
+            "version": "1.0",
+            "datePublished": "1/9/2025 5:57:26 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update enables the VAMT tool to deploy and activate keys for Windows 10 22H2 Extended Security Update programs",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "pkconfig_win10_esu.xrm-ms"
+    ],
+    "detailsSection_file_size": [
+        "665.6 KB"
+    ],
+    "detailsSection_file_date": "1/9/2025",
+    "systemRequirementsSection": "Latest ADK/VAMT and SQL server installed on the machine  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Get the latest ADK/VAMT here: https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install\r\n\r\nFor VAMT Setup and Activation, Refer to: https://docs.microsoft.com/en-us/windows/deployment/volume-activation/introduction-vamt\r\n\r\n1) After installing the VAMT tool and SQL Server, download the pkconfig_win10_esu.xrm-ms configuration file.\r\n\r\n2) Replace the file here: C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\VAMT3\\pkconfig with the new file\r\n\r\n\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106364",
+    "downloadPreload": true
+}

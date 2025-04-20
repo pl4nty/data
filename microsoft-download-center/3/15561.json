@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Banjo Movies",
+    "downloadDescription": "Promotional movies for Xbox 360 Banjo title",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Banjo-Kazooie_X06_High.wmv",
+            "url": "https://download.microsoft.com/download/1/5/e/15eb703c-2513-43c6-9d5d-fdaccf36cc0c/Banjo-Kazooie_X06_High.wmv",
+            "size": "48293432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Banjo-Kazooie_X06_Med.wmv",
+            "url": "https://download.microsoft.com/download/1/5/e/15eb703c-2513-43c6-9d5d-fdaccf36cc0c/Banjo-Kazooie_X06_Med.wmv",
+            "size": "13501978",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Movie highlights from Xbox 360 instalment in Rare's long-running Banjo-Kazooie series, due for release in 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Banjo-Kazooie_X06_High.wmv",
+        "Banjo-Kazooie_X06_Med.wmv"
+    ],
+    "detailsSection_file_size": [
+        "46.1 MB",
+        "12.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select movie in either High-Def or Standard file quality, then use Windows Media Player to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15561",
+    "downloadPreload": true
+}

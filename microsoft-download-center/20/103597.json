@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Synapse Pathway 0.5",
+    "downloadDescription": "Azure Synapse Pathway (ASP) helps you upgrade to a modern cloud data warehouse platform by automating the code translation of your existing data warehouse to T-SQL for Azure Synapse SQL. Synapse Pathway translates Data Definition Language (DDL) and Data Manipulation Language (DML) statements into T-SQL compliant language, implementing best practices to reduce migration costs and eliminate errors.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AzureSynapsePathway.msi",
+            "url": "https://download.microsoft.com/download/a/0/a/a0a5ea88-ea47-4897-bb68-3e9483673523/AzureSynapsePathway.msi",
+            "size": "5918720",
+            "version": "0.5",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Synapse Pathway (ASP) helps you upgrade to a modern cloud data warehouse platform by automating the code translation of your existing data warehouse to T-SQL for Azure Synapse SQL. Synapse Pathway translates Data Definition Language (DDL) and Data Manipulation Language (DML) statements into T-SQL compliant language and implementing best practices to reduce migration costs, eliminate human code translation errors, and to quickly migrate some or all your existing solution.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.5",
+    "detailsSection_file_name": [
+        "AzureSynapsePathway.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 10, Windows 7, Windows 8, Windows 8.1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019\r\n\r\nSupported Operating System Windows Server 2016, Windows 10, Windows Server 2012, Windows 7, Windows 8, Windows 8.1 Windows 7 64-bit (or Windows Server 2012) and above .NET Framework 4.7.2 64-bit or above",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 7",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download and run the AzureSynapsePathway.msi package.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103597",
+    "downloadPreload": true
+}

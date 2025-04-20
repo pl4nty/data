@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Server 2008 R2 Hyper-V Common Criteria Guide",
+    "downloadDescription": "Supplemental Common Criteria Administrator Guidance Documentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2008 Hyper-V R2 Common Criteria Guide.pdf",
+            "url": "https://download.microsoft.com/download/8/d/5/8d52cc8e-22c1-48b5-b77d-2144dfc1159a/Microsoft Windows Server 2008 Hyper-V R2 Common Criteria Guide.pdf",
+            "size": "961850",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the supplemental administrator guidance documentation that was used in the Common Criteria evaluation of Microsoft Windows Server 2008 R2 Hyper-V.\r\n\r\nThe Microsoft Windows Server 2008 R2 Hyper-V Common Criteria Guide describes how to setup Windows Server 2008 R2 Hyper-V to meet the same security conditions used by the Common Criteria (CC) evaluation. This guide is a supplement to the Hyper-V Security Guide (http://technet.microsoft.com/en-us/library/dd569113.aspx) and the Windows Server 2008 Security Guide (http://www.microsoft.com/download/en/details.aspx?id=17606) published by Microsoft. The Windows Server 2008 Security Guide is also available in the Microsoft Security Compliance Manager (http://www.microsoft.com/download/en/details.aspx?id=16776). \r\n\r\nThe Microsoft Windows Server 2008 R2 Hyper-V Common Criteria Guide is primarily for IT professionals, security specialists, network architects, computer engineers, and other IT consultants who plan application or infrastructure development and deployments of Windows Server 2008 R2 Hyper-V in an enterprise environment. It is not intended for home users.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Windows Server 2008 Hyper-V R2 Common Criteria Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "939.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Product: Microsoft Hyper-V Server 2008 R2 (6.1.7600)<br />\r\nLanguage: English<br />\r\nUnderlying processors: Hardware-assisted virtualization.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "Instructions:\r\n1. Click the Download button on this page to start the download.<br />\r\n2. Do one of the following:<br />\r\n     a. To read the file immediately, click the Open button.<br />\r\n     b. To copy the file to your computer for later use, click the Save button.",
+    "relatedResourcesSection": [
+        {
+            "title": "common Criteria",
+            "url": "http://technet.microsoft.com/en-us/dd229319.aspx"
+        },
+        {
+            "title": "hyper-V Security Guide",
+            "url": "http://technet.microsoft.com/en-us/library/dd569113.aspx"
+        },
+        {
+            "title": "microsoft Security Compliance Manager",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=16776"
+        },
+        {
+            "title": "windows Server 2008 Security Guide",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=17606"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29308",
+    "downloadPreload": true
+}

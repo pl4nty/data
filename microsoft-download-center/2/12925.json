@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Tools for Applications 2.0 Fact Sheet",
+    "downloadDescription": "This fact sheet describes Visual Studio Tools for Applications 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VSTAFactSheet.pdf",
+            "url": "https://download.microsoft.com/download/9/4/a/94a816ee-9320-4dbe-a666-527904013ea1/VSTAFactSheet.pdf",
+            "size": "385088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "VSTAFactSheet.xps",
+            "url": "https://download.microsoft.com/download/9/4/a/94a816ee-9320-4dbe-a666-527904013ea1/VSTAFactSheet.xps",
+            "size": "389977",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This fact sheet describes Visual Studio Tools for Applications 2.0, which provides a development framework and a light-weight version of the Visual Studio IDE that you can integrate into your application. Customers can use the IDE to add their own custom features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VSTAFactSheet.pdf",
+        "VSTAFactSheet.xps"
+    ],
+    "detailsSection_file_size": [
+        "376.1 KB",
+        "380.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "XPS or PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and view.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Tools for Applications 2.0",
+            "url": "http://msdn.microsoft.com/en-us/library/cc175562(VS.90).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12925",
+    "downloadPreload": true
+}

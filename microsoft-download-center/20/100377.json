@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server Accelerator for SWIFT - Message Pack 2019",
+    "downloadDescription": "Microsoft BizTalk Server A4Swift Message Pack 2019",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MP2019Sample.zip",
+            "url": "https://download.microsoft.com/download/c/0/c/c0ce6d6a-01e2-4cea-a7f6-99686b9494ed/MP2019Sample.zip",
+            "size": "1040",
+            "version": "4.3.966.0s",
+            "datePublished": "7/15/2024 4:28:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MP_2019.exe",
+            "url": "https://download.microsoft.com/download/c/0/c/c0ce6d6a-01e2-4cea-a7f6-99686b9494ed/MP_2019.exe",
+            "size": "9514352",
+            "version": "4.3.966.0s",
+            "datePublished": "7/15/2024 4:28:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing Microsoft BizTalk Accelerator for SWIFT 2019 Message Pack.doc",
+            "url": "https://download.microsoft.com/download/c/0/c/c0ce6d6a-01e2-4cea-a7f6-99686b9494ed/Installing Microsoft BizTalk Accelerator for SWIFT 2019 Message Pack.doc",
+            "size": "150528",
+            "version": "4.3.966.0s",
+            "datePublished": "7/15/2024 4:28:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Accelerator for SWIFT Message Pack 2019.<br/>\r\nThis release updates the flat-file (MT) messaging schemas used by Microsoft BizTalk Accelerator for SWIFT to correspond to the SWIFT messaging standards for Service Release 2019.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.966.0s",
+    "detailsSection_file_name": [
+        "MP2019Sample.zip",
+        "MP_2019.exe",
+        "Installing Microsoft BizTalk Accelerator for SWIFT 2019 Message Pack.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.0 KB",
+        "9.1 MB",
+        "147.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "1. Common Language runtime (CLR) Version 4.0 or .Net Framework version 4.0 or higher.\r\n\r\n2. Microsoft BizTalk Server 2016 with Microsoft BizTalk Server Accelerator for SWIFT 2016,\r\n    or Microsoft BizTalk Server 2013 R2 with Microsoft BizTalk Server Accelerator for SWIFT 2013 R2,\r\n    or Microsoft BizTalk Server 2013 with Microsoft BizTalk Server Accelerator for SWIFT 2013.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2012",
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Before installing the BizTalk Accelerator for SWIFT - Message Pack 2019, we recommend that you download and review the Installation Guide. This guide contains important information about how to install and configure the message pack to help reduce downtime in the Microsoft BizTalk Server environment. See the download section above to obtain this guide.<br/>\r\nPlease uninstall any prior versions of this Message Pack 2019 before installing this latest version.<br/>\r\nDownload the self-extracting archive, then execute it to extract the setup program to a temporary directory.  From the temporary location, execute the setup.exe program, which will install the Message Pack.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100377",
+    "downloadPreload": true
+}

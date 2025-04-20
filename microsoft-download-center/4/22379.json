@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Documentation for Composite Application Guidance for WPF\u2013June 2008",
+    "downloadDescription": "The Composite Application Guidance for WPF is designed to help you more easily build enterprise-level Windows Presentation Foundation (WPF) client applications. This guidance will help you design and build flexible composite WPF client applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "M92-00005download.pdf",
+            "url": "https://download.microsoft.com/download/8/0/a/80a2359e-5d79-4751-8fc2-793f84152268/M92-00005download.pdf",
+            "size": "6070337",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Composite Application Guidance for WPF is designed to help you more easily build enterprise-level Windows Presentation Foundation (WPF) client applications. It will help you design and build flexible composite WPF client applications\u2014composite applications use loosely coupled, independently evolvable pieces that work together in the overall application.<br>\n</br>\nWhat this guide covers:\n<ul>\n<li>Key challenges in building composite applications and guidance on the solutions to solve these challenges</li>\n<li>Software design patterns applied in the Composite Application Library</li>\n<li>Candidate composite architecture that you can use to create your own baseline architecture</li>\n<li>Stock Trader Reference Implementation, which demonstrates an implementation of the baseline architecture</li>\n<li>Technical implementation details of the Composite Application Library</li>\n<li>How to design a UI for applications using the Composite Application Library</li>\n<li>Pointers to the Hands-On Lab, QuickStarts, and How-to topics on MSDN</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "M92-00005download.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Adobe Acrobat PDF Reader</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click the \u2018Download\u2019 button to commence the download. </li><br />\n<li>Once the download dialog appears, do one of the following:</li> <br />\n<ol type=\"a\"><li>To start the installation immediately, click Open or Run this program from its current location.</li> <br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk. Once you are ready to install Documentation for Composite Application Guidance for WPF--June 2008, double-click on the saved file.</li><br />\n</ol> <br />\n<li>Follow the instructions in the installer program, including accepting the End User Licensing Agreement.</li> <br />\n</ol>",
+    "additionalInformationSection": "Download the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=6DD3D0C1-D5B4-453B-B827-98E162E1BD8D&displaylang=en\" target=\"blank\">Composite Application Guidance for WPF source code</a>.\n<br>\n</br>\nFor more information, see the <a href=\"http://www.microsoft.com/CompositeWpf\" target=\"blank\">Compsite Application Landing Page</a>, and <a href=\"http://www.codeplex.com/compositewpf\" target=\"blank\">Compsite Application for WPF Community Site</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "smart Client Software Factory",
+            "url": "http://msdn.microsoft.com/en-us/library/aa480482.aspx"
+        },
+        {
+            "title": "enterprise Library 4.0\u2013May 2008",
+            "url": "http://msdn.microsoft.com/en-us/library/cc512464.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22379",
+    "downloadPreload": true
+}

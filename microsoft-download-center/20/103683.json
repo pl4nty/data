@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack (Community Technology Preview) for Azure SQL Managed Instance",
+    "downloadDescription": "Microsoft System Center Management Pack (Community Technology Preview) for Azure SQL Managed Instance provides capabilities to discover, monitor, and manage Azure SQL Managed Instance.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.Azure.ManagedInstance.ManagementPack.CTP.msi",
+            "url": "https://download.microsoft.com/download/7/0/0/7008fcb8-f064-46de-8de4-b70b9d1ff3b1/Microsoft.Azure.ManagedInstance.ManagementPack.CTP.msi",
+            "size": "10141696",
+            "version": "7.5.11.0",
+            "datePublished": "7/15/2024 5:05:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack (Community Technology Preview) for Azure SQL Managed Instance is designed to monitor Azure SQL Managed Instance and the corresponding entities by means of T-SQL queries. Azure SQL Managed Instance is an automatically managed cloud instance running within Azure SQL Database cloud service.<br/>\r\n<br/>\r\n<b>Managed Instance Supported Configurations and Features</b>\r\n<ul>\r\n    <li>Supported Tiers</li>\r\n    <ul>\r\n        <li>General Purpose</li>\r\n        <li>Business Critical</li>\r\n    </ul>\r\n    <li>Managed Instance Features</li>\r\n    <ul>\r\n        <li>Database Engine</li>\r\n        <li>Database</li>\r\n        <li>Agent and Jobs</li>\r\n        <li>Memory-Optimized Data (In-Memory OLTP)</li>\r\n        <li>Failover Groups, including secondary read-only replicas</li>\r\n        <li>Authentication Mode \u2014 both SQL Server Authentication and Azure AD Authentication are supported</li>\r\n    </ul>\r\n</ul>\r\n<br/>\r\n\r\nFor more information about this management pack, see the <a href=\"https://docs.microsoft.com/system-center/scom/managed-instance-management-pack-changes-history\">Azure SQL Managed Instance Management Pack Operations Guide</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.11.0",
+    "detailsSection_file_name": [
+        "Microsoft.Azure.ManagedInstance.ManagementPack.CTP.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/managed-instance-management-pack-changes-history\">Azure SQL Managed Instance Management Pack Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/managed-instance-management-pack-changes-history\">Azure SQL Managed Instance Management Pack Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103683",
+    "downloadPreload": true
+}

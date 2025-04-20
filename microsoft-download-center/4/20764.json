@@ -1,0 +1,113 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Release Notes",
+    "downloadDescription": "Microsoft Lync Server 2010 Release Notes",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Server_2010_RTM_Relnotes.htm",
+            "url": "https://download.microsoft.com/download/9/c/3/9c3d9698-51b3-42ba-adcc-280134a0f0e0/Lync_Server_2010_RTM_Relnotes.htm",
+            "size": "113123",
+            "version": "Mar2011",
+            "datePublished": "6/13/2024 11:52:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This document provides Microsoft Server Lync 2010 Release Notes. Refer to this file for information regarding known issues regarding Lync Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2011",
+    "detailsSection_file_name": [
+        "Lync_Server_2010_RTM_Relnotes.htm"
+    ],
+    "detailsSection_file_size": [
+        "110.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Web browser or other application that allows you to view htm files.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 Standard",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201687"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201688"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20764",
+    "downloadPreload": true
+}

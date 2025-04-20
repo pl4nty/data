@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "ASRAdapter.msi_9.52.6522.1",
+    "downloadDescription": "ASRAdapter.msi_9.52.6522.1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ASRAdapter.msi",
+            "url": "https://download.microsoft.com/download/6/8/1/68183f2d-24ae-432d-9c19-b299b57d9dd3/ASRAdapter.msi",
+            "size": "11657216",
+            "version": "9.52.0",
+            "datePublished": "7/15/2024 4:33:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRAdapter.msi_9.52.6522.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.52.0",
+    "detailsSection_file_name": [
+        "ASRAdapter.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104782",
+    "downloadPreload": true
+}

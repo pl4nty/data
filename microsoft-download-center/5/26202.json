@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows HPC Server 2008 Head Node Performance Tuning",
+    "downloadDescription": "This whitepaper seeks to simplify this process, providing you with the information that you need to plan and configure the Windows HPC Server 2008 cluster deployments best suited to running your workload.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Head_Node_Performance_Tuning_final.docx",
+            "url": "https://download.microsoft.com/download/8/3/8/838ad2ed-981a-4fb3-89be-9dfe61dc9b02/Head_Node_Performance_Tuning_final.docx",
+            "size": "505195",
+            "version": "HPC",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper seeks to simplify the process of performance tuning a Windows Server\u00ae 2008 head node, providing you with the information that you need to plan and configure the Windows\u00ae HPC Server 2008 cluster deployments best suited to running your workload.  This paper will focus on issues related to the Windows HPC Server 2008 components that run on the cluster\u2019s head node, enabling you to plan, monitor, and tune the performance of these components.   This paper includes information about database configuration, disk space requirements, monitoring performance, and best practices.\r\n<br /><br />\r\nThis paper will focus on issues related to the Windows HPC Server 2008 components, and not on the performance of applications running on the Windows HPC Server 2008 platform.  For information on performance analysis and tuning of HPC applications, please see the whitepaper entitled Performance Tuning a Windows HPC Cluster.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "HPC",
+    "detailsSection_file_name": [
+        "Head_Node_Performance_Tuning_final.docx"
+    ],
+    "detailsSection_file_size": [
+        "493.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Server Technical Library",
+            "url": "http://technet.microsoft.com/library/cc514029.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26202",
+    "downloadPreload": true
+}

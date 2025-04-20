@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Cross-Browser, Coded UI Testing with Visual Studio 2013",
+    "downloadDescription": "Learn how new testing features in Visual Studio 2013 let you not only test your UI against all modern browsers, but also search for specific UI elements.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VBCode_Zapart.Testing.1213.zip",
+            "url": "https://download.microsoft.com/download/8/2/d/82d134f1-58e7-4e14-9e81-c186f0ce9f4f/VBCode_Zapart.Testing.1213.zip",
+            "size": "796080",
+            "version": "1",
+            "datePublished": "2/15/2024 3:17:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Code_Zapart.Testing.1213.zip",
+            "url": "https://download.microsoft.com/download/8/2/d/82d134f1-58e7-4e14-9e81-c186f0ce9f4f/Code_Zapart.Testing.1213.zip",
+            "size": "18446",
+            "version": "1",
+            "datePublished": "2/15/2024 3:17:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how new testing features in Visual Studio 2013 let you not only test your UI against all modern browsers, but also search for specific UI elements.\n\nIn the past few years web based applications become most wanted solutions in the IT market. New approach for modern web based solutions required modern techniques for testing it in fully automated way. Visual Studio 2013 meets market needs by offering end-to-end framework to make UI test automations in kind and understandable way.\r\n\r\n<a href=\"http://msdn.microsoft.com/magazine/dn532204\">Read the article online</a>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VBCode_Zapart.Testing.1213.zip",
+        "Code_Zapart.Testing.1213.zip"
+    ],
+    "detailsSection_file_size": [
+        "777.4 KB",
+        "18.0 KB"
+    ],
+    "detailsSection_file_date": "2/15/2024",
+    "systemRequirementsSection": "See sample for details",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "See sample for details",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Magazine home page",
+            "url": "http://msdn.microsoft.com/magazine/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41201",
+    "downloadPreload": true
+}

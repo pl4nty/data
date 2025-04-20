@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 white paper: Timesheet audit trail and absence reporting for DCAA",
+    "downloadDescription": "This document describes the timesheet audit trail and absence reporting features in Microsoft Dynamics AX 2012 R3 that help organizations meet requirements of the Defense Contract Audit Agency. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Timesheet audit trail and absence reporting for DCAA.pdf",
+            "url": "https://download.microsoft.com/download/2/c/b/2cbf2284-ebf4-4cf8-81e6-6085214af74d/Timesheet audit trail and absence reporting for DCAA.pdf",
+            "size": "899181",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:24:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics AX 2012 R3 includes support for absence reporting and audit trails for timesheets. These features help organizations meet certain requirements of the Defense Contract Audit Agency (DCAA). <br /><br />\r\n\r\nAn absence project is used exclusively for workers to report the hours that they are absent from work. Instead of including timesheet categories for absences in all other projects, all absences are reported in the absence project. <br /><br />\r\n\r\nAn audit trail for timesheets provides a history of any changes that are made to a timesheet. These changes can include both updates to a timesheet and deletion of a timesheet. With an audit trail, the timesheet administrator or auditor can trace the history of all updates made to a timesheet. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Timesheet audit trail and absence reporting for DCAA.pdf"
+    ],
+    "detailsSection_file_size": [
+        "878.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43111",
+    "downloadPreload": true
+}

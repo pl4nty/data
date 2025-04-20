@@ -1,0 +1,128 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Standard 2009",
+    "downloadDescription": "Windows Embedded Standard 2009 delivers the power, familiarity, and reliability of the Windows operating system in componentized form, helping device makers to easily create smart connected devices requiring rich applications, services, and end-user experiences.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WES2009Eval.part5.rar",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part5.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WES2009Eval.part2.rar",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part2.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WES2009Eval.part7.rar",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part7.rar",
+            "size": "208235196",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WES2009Eval.part4.rar",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part4.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WES2009Eval.part1.exe",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part1.exe",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WES2009Eval.part6.rar",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part6.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WES2009Eval.part3.rar",
+            "url": "https://download.microsoft.com/download/6/9/8/69830981-366d-4a3e-92d3-1d7eeaaf0a3f/WES2009Eval.part3.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Embedded Standard delivers the power, familiarity, and reliability of the Windows operating system in componentized form, helping device makers to easily create smart connected devices requiring rich applications, services, and end-user experiences.\r\n<br /><br />\r\nFeaturing technologies that easily connect with many common industry standards plus several Microsoft desktop and server technologies leading to lower costs in application development, operating system deployment, servicing, and maintenance. With Windows Embedded Standard, developers get access to a mature technology portfolio of embedded specific tools that work in the familiar developer environment of Visual Studio allowing them to rapidly configure, build, and deploy devices that are more secure, reliable, and manageable.\r\n<br /><br />\r\nSupport for all the PC architecture processor families; compatibility with thousands of certified, production-quality, off-the-shelf applications, drivers, and services; and a global ecosystem of Windows Embedded Standard experts help ensure that device makers have flexibility and access to the skills to develop the next generation of smart connected devices with confidence.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WES2009Eval.part5.rar",
+        "WES2009Eval.part2.rar",
+        "WES2009Eval.part7.rar",
+        "WES2009Eval.part4.rar",
+        "WES2009Eval.part1.exe",
+        "WES2009Eval.part6.rar",
+        "WES2009Eval.part3.rar"
+    ],
+    "detailsSection_file_size": [
+        "700.0 MB",
+        "700.0 MB",
+        "198.6 MB",
+        "700.0 MB",
+        "700.0 MB",
+        "700.0 MB",
+        "700.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Requirements for Tools Only<br />\n<br />\nTo install Windows Embedded Studio, also called tools, you must first meet the following requirements:<br />\nWindows XP Professional SP2 or Windows Server 2003 Standard<br />\n  - 728 MHz or greater CPU <br />\n  - 512 MB of RAM minimum; 1 GB or more recommended<br />\nWindows Vista or Windows Server 2008 Standard<br />\n  - 1 GHz or greater CPU <br />\n  - 1 GB of RAM minimum<br />\n<br />\nMicrosoft Internet Explorer 6 or later versions recommended<br />\nNetwork connection to shared component database<br />\nDVD drive <br />\nVGA or higher resolution monitor; 1024 x 768 resolution recommended<br />\n70 MB free disk space<br />\n<br />\n System Requirements for Component Database Only<br />\n<br />\nTo install Windows Embedded Database, also called the component database, you must first meet the following requirements:<br />\nWindows XP Professional SP2 or Windows Server 2003 Standard<br />\n  - 728 MHz or greater CPU <br />\n  - 512 MB of RAM minimum; 1 GB or more recommended<br />\n <br />\nWindows Vista or Windows Server 2008 Standard<br />\n  - 1 GHz or greater CPU <br />\n  - 1 GB of RAM minimum<br />\n<br />\nMicrosoft Internet Explorer 6 or later versions recommended<br />\nNetwork connection to shared component database<br />\nDVD drive <br />\nVGA or higher resolution monitor; 1024 x 768 resolution recommended<br />\n<br />\nSystem Requirements for Tools and Component Database on a Single Computer<br />\nTo install both Windows Embedded Studio, also called tools, and Windows Embedded Database, also called the component database, you must first meet the following requirements:<br />\n<br />\nWindows XP Professional SP2 or Windows Server 2003 Standard<br />\n  - 728 MHz or greater CPU <br />\n  - 512 MB of RAM minimum; 1 GB or more recommended<br />\n  <br />\nWindows Vista or Windows Server 2008 Standard<br />\n  - 1 GHz or greater CPU<br />\n  - 1 GB of RAM minimum<br />\n<br />\nMicrosoft Internet Explorer 6 or later versions recommended<br />\nDVD drive <br />\nVGA or higher resolution monitor; 1024 x 768 resolution recommended",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To extract the download and build the .ISO file put the 7 downloaded files in the same directory and execute the self extracting .exe file.  This will combine the files into an ISO image you can burn onto a DVD.<br />\n<br />\nNote that mounting an ISO over 4GB does not work in Microsoft Virtual PC.<br />\n<br />\n<b>Installation Prerequisites</b>\r\n<br />\nAn updated version of the Windows Installer must exist for the Windows Embedded Standard installation to succeed.<br />\n<br />\nWindows Installer 3.1 can be installed on Windows XP SP2 or Windows Server 2003 systems. Windows Vista and Windows Server 2008 already contain an updated version of the Windows Installer. Windows Installer 3.1 can be installed from the Windows Embedded Standard installation DVD by clicking the Prepare link in the Windows Embedded Standard splash screen.<br />\nMicrosoft SQL Server Express 2005 (SP1 or newer), SQL Server 2005 (SP1 or newer), SQL Server Express 2008, or SQL Server 2008 must be present to install or migrate to a Windows Embedded Standard component database.<br />\n<br />\r\nKey Points:\r\n<ul>\r\n<li>To resolve a performance issue with this evaluation software you should install <a href=\"http://download.microsoft.com/download/c/6/2/c622b665-8072-4735-a6f6-4701e1154434/windowsxp-kb981792-v4-x86-enu.exe\">kb981792</a>, see the <a href=\"http://support.microsoft.com/kb/981792\">support page</a> for more information.</li>\r\n<li>The installation DVD includes the integrated version of SQL Server 2005 Express, which is the installable database platform for the Windows Embedded Standard suite of tools. This version will run/install on both 32-bit and 64-bit platforms.</li>\n<li>For instructions on migrating from MSDE to SQL Server 2005 Express, see this Microsoft Web site. This link will immediately open a Microsoft Word document.</li>\n<li>For instructions on how to verify the version of the SQL Server product installed on your machine, see this Microsoft Web site.</li>\r\n</ul>",
+    "additionalInformationSection": "To register and obtain a product key necessary to install the evaluation software, go to:  http://www.microsoft.com/windowsembedded/en-us/downloads/default.mspx",
+    "relatedResourcesSection": [
+        {
+            "title": "registration and Product Key",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/downloads/default.mspx"
+        },
+        {
+            "title": "product Documentation",
+            "url": "http://msdn.microsoft.com/en-us/library/ms376738.aspx"
+        },
+        {
+            "title": "windows Embedded Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/windowsembedded/default"
+        },
+        {
+            "title": "microsoft Windows Embedded Standard 2009 Resource Kit",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=14674"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14947",
+    "downloadPreload": true
+}

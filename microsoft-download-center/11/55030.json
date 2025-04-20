@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Host Integration Server 2016 Management Pack for System Center",
+    "downloadDescription": "The Host Integration Server 2016 management pack for System Center Operations Manager provides monitoring of Host Integration Server 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Host Integration Server 2016 MP Guide.doc",
+            "url": "https://download.microsoft.com/download/8/f/2/8f2d9534-021f-4cea-ba39-c41af48948e0/Microsoft Host Integration Server 2016 MP Guide.doc",
+            "size": "1085952",
+            "version": "10.0.2306.0",
+            "datePublished": "7/15/2024 4:43:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Host Integration Server 2016 MP for System Center.msi",
+            "url": "https://download.microsoft.com/download/8/f/2/8f2d9534-021f-4cea-ba39-c41af48948e0/Microsoft Host Integration Server 2016 MP for System Center.msi",
+            "size": "634880",
+            "version": "10.0.2306.0",
+            "datePublished": "7/15/2024 4:43:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Host Integration Server 2016  management pack provides the capabilities for Operations Manager to discover and monitor the availability of Host Integration Server 2016 server components and applications. <br />\r\n<br />\r\n<br />\r\n<br />\r\n<b>Feature Summary</b><br />\r\nThe following list gives an overview of the features introduced by Microsoft System Center Operations Manager Management Pack for Host Integration Server 2016. Please refer to Microsoft Host Integration Server 2016 Management Pack Guide for more details.\r\n<li>Support for Microsoft System Center Operations Manager 2016</li>\r\n<li>Discovery and monitoring for SNA Gateway Servers</li>\r\n<li>Discovery and monitoring for Microsoft Service for DRDA</li>\r\n<li>Discovery and monitoring for Transaction Integrator HIP and WIP applications </li>\r\n<li>Discovery and monitoring MQChannel WAS listener</li>\r\n<br />\r\n<b>Release History </b>\r\n<li>4/6/2017 - Original release of the English version, version 10.0.2306.0</li>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.2306.0",
+    "detailsSection_file_name": [
+        "Microsoft Host Integration Server 2016 MP Guide.doc",
+        "Microsoft Host Integration Server 2016 MP for System Center.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "620.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>You have one of the following versions of System Center Operations Manager deployed:</B>\r\n<LI>System Center Operations Manager 2012</LI>\r\n<LI>System Center Operations Manager 2016</LI>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55030",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Managing Multi-Terabyte Content Databases with Microsoft SharePoint 2010",
+    "downloadDescription": "This white paper provides guidance about capacity management, performance, and data protection for SharePoint environments that have large content databases.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "managing-multi-terabyte-databases-SharePoint-2010.xps",
+            "url": "https://download.microsoft.com/download/0/3/e/03e118bc-b686-440b-8c54-e46cc7043d53/managing-multi-terabyte-databases-SharePoint-2010.xps",
+            "size": "528015",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "managing-multi-terabyte-databases-SharePoint-2010.pdf",
+            "url": "https://download.microsoft.com/download/0/3/e/03e118bc-b686-440b-8c54-e46cc7043d53/managing-multi-terabyte-databases-SharePoint-2010.pdf",
+            "size": "383128",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "managing-multi-terabyte-databases-SharePoint-2010.docx",
+            "url": "https://download.microsoft.com/download/0/3/e/03e118bc-b686-440b-8c54-e46cc7043d53/managing-multi-terabyte-databases-SharePoint-2010.docx",
+            "size": "92643",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Managing large content databases with SharePoint 2010 requires careful planning and consideration, including capacity management, performance, and data protection. This white paper provides an overview of managing content databases in three size ranges: up to 200 GB, 200 GB - 4 TB, and above 4 TB. For all ranges, the size includes both structured data (that is, metadata) and unstructured data (that is, BLOBs) both in the database and/or externalized to the file system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "managing-multi-terabyte-databases-SharePoint-2010.xps",
+        "managing-multi-terabyte-databases-SharePoint-2010.pdf",
+        "managing-multi-terabyte-databases-SharePoint-2010.docx"
+    ],
+    "detailsSection_file_size": [
+        "515.6 KB",
+        "374.1 KB",
+        "90.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": " <OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26700",
+    "downloadPreload": true
+}

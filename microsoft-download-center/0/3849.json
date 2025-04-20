@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Donald Belcham and Kyle Baley on Brownfield Applications",
+    "downloadDescription": "Donald Belcham and Kyle Baley talk to Carl and Richard about inheriting existing (brownfield) applications. The focus of this talk is on setting up the environment before tackling the code with a special focus on testing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080626BelchamBaley.zip",
+            "url": "https://download.microsoft.com/download/6/8/d/68df19a9-84ef-4c18-b008-55d0386d9422/20080626BelchamBaley.zip",
+            "size": "46595980",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Kyle Baley is an independent consultant of ten years experience most of which is in the Microsoft world. He has developed Web and Smart Client applications for companies of all sizes and in a variety of industries, adding a little more to his knowledge base with every project. Kyle currently makes his home base in the Bahamas waiting patiently for the day when wireless internet access reaches the beaches of the Caribbean Sea. Until then, he uses his experience as a speaker at user groups and developer conferences to preside over the Bahamas .NET User Group, the first of its kind in the country. <br />\n<br />\nDonald Belcham is an independent contractor in Edmonton, Alberta Canada who specializes in software development with the .NET platform. With more than 7 years experience delivering Web and Smart Client applications to government and Fortune 100 clients in North America and the South Pacific, he has experience and knowledge in the entire software development life cycle. Combining that experience with his passion for agile development practices and solid OO fundamentals, Donald works to provide the client with software that works for their business. Recognized by Microsoft for his technical skill and community contribution with the Microsoft MVP award in C#, Donald is a notable leader in the developer community. In addition to being a founding member, and current President, of the Edmonton .NET User Group, Donald regularly speaks for .NET User Groups, Code Camps and conferences around the world on topics ranging from development practices to the intricacies of different technologies. His thoughts on software development can be found on his blog at <a href=\"http://www.igloocoder\">www.igloocoder.com</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080626BelchamBaley.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3849",
+    "downloadPreload": true
+}

@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Migrating to Microsoft Excel 2010",
+    "downloadDescription": "Contains information to consider when you plan a migration to Microsoft Excel 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrating to Excel 2010.docx",
+            "url": "https://download.microsoft.com/download/2/c/4/2c44d34c-bdf0-4a64-9241-3f9e0fea7b5e/Migrating to Excel 2010.docx",
+            "size": "84112",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This document contains information to consider when you plan a migration to Microsoft Excel 2010 from an earlier version of Excel. Included are descriptions of the primary functional differences and how the differences might affect workbooks; information about and solutions for some of the common issues that might arise during migration; and resources to help diagnose additional migration issues.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Migrating to Excel 2010.docx"
+    ],
+    "detailsSection_file_size": [
+        "82.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Office 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20009",
+    "downloadPreload": true
+}

@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Azure Data Sync Agent",
+    "downloadDescription": "This download is for the on-premises Data Sync Agent that works in conjunction with the SQL Azure Data Sync service. It enables on-premises SQL Server data to be synchronized with SQL Azure databases. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLDataSyncAgent-2.0-x64-ENU.msi",
+            "url": "https://download.microsoft.com/download/c/b/3/cb35f695-5a32-4458-acdb-e701250cea1e/SQLDataSyncAgent-2.0-x64-ENU.msi",
+            "size": "10579968",
+            "version": "16.0.417.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DataSyncAgent_LicenseTerms.rtf",
+            "url": "https://download.microsoft.com/download/c/b/3/cb35f695-5a32-4458-acdb-e701250cea1e/DataSyncAgent_LicenseTerms.rtf",
+            "size": "220023",
+            "version": "16.0.417.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLDataSyncAgent-2.0-x86-ENU.msi",
+            "url": "https://download.microsoft.com/download/c/b/3/cb35f695-5a32-4458-acdb-e701250cea1e/SQLDataSyncAgent-2.0-x86-ENU.msi",
+            "size": "11288576",
+            "version": "16.0.417.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Azure Data Sync is a Microsoft\u00ae Windows Azure\u2122 web service that provides data synchronization capabilities for SQL Azure databases.  SQL Azure Data Sync allows data to be synchronized between on-premises SQL Server databases and SQL Azure databases; in addition, it can also keep multiple SQL Azure databases in sync.<br/>\r\n<br/>\r\nThe Data Sync Agent is installed on a local server and runs as a Windows service.  It can be installed on a database server or on any server that can communicate with the SQL Server databases.  The SQL Server databases to be synchronized are registered with the Agent; it then securely transfers data changes between the SQL Server databases and the SQL Azure Data Sync service.\r\n<br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.417.0",
+    "detailsSection_file_name": [
+        "SQLDataSyncAgent-2.0-x64-ENU.msi",
+        "DataSyncAgent_LicenseTerms.rtf",
+        "SQLDataSyncAgent-2.0-x86-ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "10.1 MB",
+        "214.9 KB",
+        "10.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n            <li class=\"style1\">x64 computer</li>\r\n            <li class=\"style1\">On-premise Database of SQL Server 2005 SP2 or higher</li>\r\n            <li class=\"style1\"><b>Note:</b> SQL Azure Data Sync works best with SQL Server 2008 R2 and later including SQL Server 2012 as support for SQL Azure was added to the SQL Server Management Studio since SQL Server 2008 R2. If you do not have SQL Server 2017 you can download a free trial from\r\n <a href=\"http://www.microsoft.com/sqlserver/en/us/get-sql-server/try-it.aspx\">SQL Server 2017 Trial</a>.\r\n                </li>\r\n                    <li class=\"style1\">The local agent enables synchronizing instances of on-premises \r\n                        SQL Servers. The local agent can be installed on any machine that meets \r\n                        the hardware and OS requirements whether or not it has an instance of SQL Server \r\n                        installed. </li>\r\n</ul>\r\n \r\n    <b>Prerequisites</b>\r\n  <ul>\r\n        <li>.Net 4.6.2 Framework<ul>\r\n            <li>Download for .Net 4.6.2 Framework can be found <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=53344\">here</a>.</li>\r\n            </ul>\r\n        </li>\r\n    </ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<br/>\r\n<br/>\r\n<b>This is the SQL Azure Data Sync Agent.  If you have previously installed the Preview version of the Data Sync Agent, follow the \"How to Upgrade\" steps below.  Otherwise, follow the New Installation instructions.</b> <br/>\r\n<br/>\r\n<b>NEW INSTALLATION INSTRUCTIONS</b>\r\n <ol><li>Click <b>Download</b>.</li>\r\n        <li>When asked whether to Save or Run select <b>Run</b>. </li>\r\n         <li>Complete the installation steps detailed <a href=\"https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started-sql-data-sync#add-on-prem\" Target=\"_blank\">here</a>.</li>     \r\n</ol> \r\n<br/>\r\n<b>HOW TO UPGRADE</b>\r\n<ol>\r\n<li>Follow the upgrade steps detailed <a href=\"https://azure.microsoft.com/en-us/blog/migrating-to-azure-data-sync-2-0/\" Target=\"_blank\">here</a>.</li>     \r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "documentation Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223310&clcid=0x409"
+        },
+        {
+            "title": "forum",
+            "url": "http://social.msdn.microsoft.com/forums/en-US/ssdsgetstarted/threads/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27693",
+    "downloadPreload": true
+}

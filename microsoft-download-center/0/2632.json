@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Command Reference",
+    "downloadDescription": "This download describes the use of the command-line tools used to perform various tasks related to Windows Server 2008 R2, Windows Server 2008, Windows Server 2003, Windows 7, and Windows Vista.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WinCmdRef.chm",
+            "url": "https://download.microsoft.com/download/7/2/9/729bb069-c0b9-4c68-9245-0ed23c11b6ed/WinCmdRef.chm",
+            "size": "1877623",
+            "version": "February 2011",
+            "datePublished": "7/15/2024 3:13:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows command-line tools are used to perform various tasks related to Windows Server 2008 R2, Windows Server 2008, Windows Server 2003, Windows 7, and Windows Vista. You can use the command reference to familiarize yourself with new and enhanced command-line tools, to learn about the command shell, and to automate command-line tasks by using batch files or scripting tools.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2011",
+    "detailsSection_file_name": [
+        "WinCmdRef.chm"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul><li><b>Important:</b> If you download the CHM file and it does not open properly on your computer, you might need to unblock it. To unblock the CHM file, first save the file to your computer, right-click the file, click <b>Properties</b>, and then click <b>Unblock</b>.</li></ul>\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2632",
+    "downloadPreload": true
+}

@@ -1,0 +1,138 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative update CU38 for Microsoft Dynamics NAV 2013 R2",
+    "downloadDescription": "Monthly cumulative update for \u200b\u200b\u200b\u200bMicrosoft Dynamics NAV 2013 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NAV.7.1.47442.NZ.DVD.zip",
+            "url": "https://download.microsoft.com/download/2/3/9/2393f45b-7544-4278-9e7c-a6321dc836ff/NAV.7.1.47442.NZ.DVD.zip",
+            "size": "842594564",
+            "version": "7.1.47442",
+            "datePublished": "6/15/2024 4:34:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NAV.7.1.47442.AU.DVD.zip",
+            "url": "https://download.microsoft.com/download/2/3/9/2393f45b-7544-4278-9e7c-a6321dc836ff/NAV.7.1.47442.AU.DVD.zip",
+            "size": "843103795",
+            "version": "7.1.47442",
+            "datePublished": "6/15/2024 4:34:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NAV.7.1.47442.W1.DVD.zip",
+            "url": "https://download.microsoft.com/download/2/3/9/2393f45b-7544-4278-9e7c-a6321dc836ff/NAV.7.1.47442.W1.DVD.zip",
+            "size": "816604725",
+            "version": "7.1.47442",
+            "datePublished": "6/15/2024 4:34:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NAV.7.1.47442.NA.DVD.zip",
+            "url": "https://download.microsoft.com/download/2/3/9/2393f45b-7544-4278-9e7c-a6321dc836ff/NAV.7.1.47442.NA.DVD.zip",
+            "size": "900163354",
+            "version": "7.1.47442",
+            "datePublished": "6/15/2024 4:34:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "To learn more about what is included in this cumulative update please visit this kb article: 3209074\nTo learn more about other cumulative updates already release for Microsoft Dynamics NAV 2013 R2 please see this kb article: \u200b\u200b\u200b\u200b3209074",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.47442",
+    "detailsSection_file_name": [
+        "NAV.7.1.47442.NZ.DVD.zip",
+        "NAV.7.1.47442.AU.DVD.zip",
+        "NAV.7.1.47442.W1.DVD.zip",
+        "NAV.7.1.47442.NA.DVD.zip"
+    ],
+    "detailsSection_file_size": [
+        "803.6 MB",
+        "804.0 MB",
+        "778.8 MB",
+        "858.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Requirements can be found at \n https://msdn.microsoft.com/en-us/dynamics-nav/system-requirements-for-microsoft-dynamics-nav",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "NAV 2016: https://mbs2.microsoft.com/Knowledgebase/kbdisplay.aspx?scid=kb,en-us,3209074",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54318",
+    "downloadPreload": true
+}

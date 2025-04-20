@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Visual FoxPro 8.0 Samples",
+    "downloadDescription": "This download contains different projects which are designed to show how new features in Visual FoxPro 8.0 can be used.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VFP8_Samples.exe",
+            "url": "https://download.microsoft.com/download/0/e/f/0ef9e4df-8c06-4163-9528-4ae5e874f7da/VFP8_Samples.exe",
+            "size": "101376",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains different projects which are designed to show how new features in Visual FoxPro 8.0 can be used.  Each project is self-contained and can be run independently of any other.  There is a readme text file contained in each project that describes each sample program.  The samples were created in a folder called C:\\Demo\\VFP8_Samples for reference, but the files can be installed in any directory to open and run.<br />\n<br />\nAutoIncrement: Visual FoxPro 8.0 has the ability to create tables that support Auto Increment.<br />\n<br />\nCollections: How to add, remove, sort, and find items in the new Collection class.<br />\n<br />\nEmptyClass: Visual FoxPro 8.0 has a new class called Empty which is the lightest weight class available. This project demonstrates how to use this new class with adding properties and using the enhanced Gather and Insert Into functions.<br />\n<br />\nEventBinding: Visual FoxPro 8.0 extended the event handling support to also include native Visual FoxPro objects.. This project demonstrates how to use these new functions.<br />\n<br />\nFormsUI: Visual FoxPro 8.0 made many enhancements to the user interface for Forms. This project demonstrates many of these enhancements.<br />\n<br />\nGrid: Enhancements made to the Grid control. These enhancements include the ability to auto fit columns, hide columns, center checkboxes, highlighting features, lock columns, and more.<br />\n<br />\nSubClassMember: Visual FoxPro 8.0 offers the ability to use custom pages in a Pageframe, custom command buttons inside of Command Groups, custom option buttons inside of Option Groups, use custom columns inside of a Grid, as well as using custom headers inside of columns.<br />\n<br />\nTryCatch: Using Structured Error Handling with Try/Catch.<br />\n<br />\nXMLAdapter: Visual FoxPro 8.0 introduces a whole new way to work with eXtensible Markup Language (XML). This addition, called the XMLAdapter class, provides an alternative and more modern way to work with XML. XMLAdapter class works with hierarchical XML, which greatly enhances support for XML. The XMLAdapter class provides an object-oriented approach of working with XML data and leverages your familiarity with working on tables and fields to expose the XML contents.<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VFP8_Samples.exe"
+    ],
+    "detailsSection_file_size": [
+        "99.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual FoxPro 8.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 2",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual FoxPro Developer Center",
+            "url": "http://msdn.microsoft.com/vfoxpro/"
+        },
+        {
+            "title": "inside the Visual FoxPro 8.0 Toolbox",
+            "url": "http://msdn.microsoft.com/vfoxpro/using/understand/v8/?pull=/library/en-us/dnfoxgen8/html/vfp8_toolbox.asp?frame=true"
+        },
+        {
+            "title": "download Visual FoxPro 8.0 Service Pack 1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=018705e6-df6a-4695-965e-459fe5a761f7&displaylang=en"
+        },
+        {
+            "title": "download the Visual FoxPro 8.0 Evaluation Guide",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=90c78d7b-3740-43ed-9f9c-ea85fe2ec653&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24095",
+    "downloadPreload": true
+}

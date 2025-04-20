@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows SDK for Windows 7 and .NET Framework 4 (ISO)",
+    "downloadDescription": "The Windows SDK provides tools, compilers, headers, libraries, code samples, and a new help system that developers can use to create applications that run on Microsoft Windows. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "GRMSDK_EN_DVD.iso",
+            "url": "https://download.microsoft.com/download/f/1/0/f10113f5-b750-4969-a255-274341ac6bce/GRMSDK_EN_DVD.iso",
+            "size": "594841600",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:14:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GRMSDKX_EN_DVD.iso",
+            "url": "https://download.microsoft.com/download/f/1/0/f10113f5-b750-4969-a255-274341ac6bce/GRMSDKX_EN_DVD.iso",
+            "size": "598589440",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:14:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GRMSDKIAI_EN_DVD.iso",
+            "url": "https://download.microsoft.com/download/f/1/0/f10113f5-b750-4969-a255-274341ac6bce/GRMSDKIAI_EN_DVD.iso",
+            "size": "597039104",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:14:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows SDK provides tools, compilers, headers, libraries, code samples, and a new help system that developers can use to create applications that run on Microsoft Windows.  You can use the Windows SDK to write applications using the native (Win32/COM) or managed (.NET Framework) programming model.\r\n<br></br>\r\nPlease see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=186826\">Release Notes</a> for the full list of supported platforms, compilers, and Visual Studio versions and any late breaking issues. For detailed information about the content in this SDK, including a description of new content, please see the Welcome to the Windows SDK section in the documentation.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1",
+    "detailsSection_file_name": [
+        "GRMSDK_EN_DVD.iso",
+        "GRMSDKX_EN_DVD.iso",
+        "GRMSDKIAI_EN_DVD.iso"
+    ],
+    "detailsSection_file_size": [
+        "567.3 MB",
+        "570.9 MB",
+        "569.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Platform architecture: </b> Install this SDK on and/or create applications for platform chipsets X86, X64, and Itanium.</li>\r\n<li><b>.NET Framework:</b>  Create applications that target .NET Framework versions 2.0, 3.0, 3.5, 4.</li>\r\n<li><b>Visual Studio:</b>  Use the resources in this SDK with Visual Studio versions 2005, 2008, and 2010, including Express editions (Not all features work with all versions of Visual Studio. For example, you cannot use the .NET 4 tools with Visual Studio 2008.)</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "The Windows SDK is available as a DVD ISO image file so that you can burn your own DVD.  If you do not need to burn a DVD the SDK is also available via a <a href=\"http://go.microsoft.com/fwlink/?LinkID=191420\">Web Setup</a> that enables you to selectively download and install individual SDK components.  To verify that you are downloading the correct ISO file, please refer to the table below to select the ISO file to download based upon your CPU architecture.  Additionally, you can use the CRC and SHA1 to validate that the ISO file download was successful.\r\n<br></br>\r\n================================================\r\n<br></br>\r\n<b>x86 ISO File Name:</b>  <a href=\"http://download.microsoft.com/download/F/1/0/F10113F5-B750-4969-A255-274341AC6BCE/GRMSDK_EN_DVD.iso\">GRMSDK_EN_DVD.iso</a>\r\n<br></br>\r\n<b>CRC#:</b> 0xBD8F1237\r\n<br></br>\r\n<b>SHA1:</b>  0xCDE254E83677C34C8FD509D6B733C32002FE3572\r\n<br></br>\r\n================================================\r\n<br></br>\r\n<b>x64 ISO File Name:</b>  <a href=\"http://download.microsoft.com/download/F/1/0/F10113F5-B750-4969-A255-274341AC6BCE/GRMSDKX_EN_DVD.iso\">GRMSDKX_EN_DVD.iso</a>\r\n<br></br>\r\n<b>CRC#: </b> 0x04F59E55\r\n<br></br>\r\n<b>SHA1:</b>  0x9203529F5F70D556A60C37F118A95214E6D10B5A\r\n<br></br>\r\n================================================\r\n<br></br>\r\n<b>Itanium ISO File Name:</b>  <a href=\"http://download.microsoft.com/download/F/1/0/F10113F5-B750-4969-A255-274341AC6BCE/GRMSDKIAI_EN_DVD.iso\">GRMSDKIAI_EN_DVD.iso</a>\r\n<br></br>\r\n<b>CRC#:</b> 0x50EFE61D\r\n<br></br>\r\n<b>SHA1:</b> 0x2093EE439193EF79A1629FD9A826CE8D4DE9A93D\r\n<br></br>\r\n================================================",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/netframework/default.aspx"
+        },
+        {
+            "title": "windows SDK MSDN Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/windowsserver/bb980924.aspx"
+        },
+        {
+            "title": "windows Server Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/windowsserver/default.aspx"
+        },
+        {
+            "title": "windows Client Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/windows/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8442",
+    "downloadPreload": true
+}

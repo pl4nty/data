@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Speedy Bus-Mastering PCI Express",
+    "downloadDescription": "This is a bus-mastering PCIe FPGA design for the Xilinx ML605 development board that acts as an interface between a PC host's main memory and the DDR3 SODIMM on the ML605 board. Last published: August 24, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SpeedyPCIExpress.msi",
+            "url": "https://download.microsoft.com/download/8/3/c/83cdae99-3ad7-4922-a619-d65018f33b6a/SpeedyPCIExpress.msi",
+            "size": "52011008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a bus-mastering PCIe FPGA design for the Xilinx ML605 development board that acts as an interface between a PC host's main memory and the DDR3 SODIMM on the ML605 board.  An accompanying WDM driver and test application demonstrate how to access the hardware and provide speed and memory tests running at up to 1.5 gigabytes per second.  The accompanying paper may be found in the proceedings of FPL 2012.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SpeedyPCIExpress.msi"
+    ],
+    "detailsSection_file_size": [
+        "49.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52405",
+    "downloadPreload": true
+}

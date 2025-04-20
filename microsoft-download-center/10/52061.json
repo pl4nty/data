@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Update 3 (KB3144617) for System Center 2012 R2 Service Manager Self Service Portal",
+    "downloadDescription": "Update 3 (KB3144617) for System Center 2012 R2 Service Manager Self Service Portal",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SelfServicePortal_CU_KB3144617_amd64_7.5.3079.572.EXE",
+            "url": "https://download.microsoft.com/download/a/e/2/ae2b9bc0-afc6-4e3d-8838-6b5e956fac8f/SelfServicePortal_CU_KB3144617_amd64_7.5.3079.572.EXE",
+            "size": "45325312",
+            "version": "7.5.3079.572",
+            "datePublished": "7/15/2024 4:04:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n  <br />\r\nThis article describes the new features that are included and the issues that are fixed in Update 3 (KB3144617) for Microsoft System Center 2012 R2 Service Manager Self Service Portal. Additionally, this article contains the installation instructions for this update.<br />\r\n  <br />\r\n  <b>Important</b>: This update is only applicable for deployments that are running\r\n  Microsoft System Center 2012 R2 Service Manager together with new HTML Self Service\r\n  Portal installed.<br />\r\n  <br />\r\n  <b><u>Other updates that are included</u></b><br />\r\n  System Center 2012 R2 Service Manager Self Service Portal updates are cumulative.\r\n  Therefore, this update contains a new payload along with the payload from the following\r\n  previous update:<br />\r\n\r\n  <ul>\r\n    <li>\r\n<a href=\"https://support.microsoft.com/en-us/kb/3134286\">3134286</a> Update 3134286 is available for the System Center 2012 R2 Service Manager Self-Service Portal \r\n</li>\r\n<li><a href=\"https://support.microsoft.com/en-us/kb/3124091\">3124091</a> A\r\n    hotfix (build 7.5.3079.523) is available for the System Center 2012 R2 Service\r\n    Manager Self-Service Portal</li>\r\n  </ul><br />\r\n  <br />\r\n  <b><u>New features that re included in this release</u></b><br />\r\n  <ul>\r\n<li>Attachments are now included in the Action log and can be downloaded.</li>\r\n<li>The Must Vote and Has Veto information is added for reviewers in Review activities.</li>\r\n<li>By default, the portal puts custom enumerations for My Request (incident & Service Requests) states in the Closed filter category. Now the portal allows for customization to map required custom states to the Active filter category also.</li>\r\n  </ul><br />\r\n\r\n  <b><u>Issues which are fixed in this release</u></b><br />\r\n<br/>\r\n<ul>\r\n<li>Multiple selections across pages in the Query UI do not work.</li>\r\n<li>Enums in list don't appear in the same order as they are shown in the console.</li>\r\n<li>Cannot scroll to last item in Internet Explorer 10.</li>\r\n<li>Selections of optional query element in a request offering is not being mapped to work item fields.</li>\r\n<li>The Resolved Date property for an incident is not being set while resolving an incident from the Self Service Portal.</li>\r\n<li>When you author the request offering, custom properties cannot be mapped to an activity which is part of another activity.</li>\r\n<li>The portal is not setting Actual End Date or Decision Date values for manual and review activities.</li>\r\n<li>The portal displays an incorrect time when the server uses the 12 Hr (AM/PM) time format.</li>\r\n<li>Request offerings and Service offerings are unsorted (now are shown alphabetically).</li>\r\n<li>Page load fails with a JavaScript error when you click the Share icon for an item which has a single quotation mark (') in the title.</li>\r\n<li>Marking a manual activity as failed takes it to the Completed state.</li>\r\n<li>The Date Picker in a request offering form keeps the date only in U.S. format.</li>\r\n<li>A request offering form crashes if it contains an empty Simple list form element.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3144617",
+        "name": "KB3144617"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.572",
+    "detailsSection_file_name": [
+        "SelfServicePortal_CU_KB3144617_amd64_7.5.3079.572.EXE"
+    ],
+    "detailsSection_file_size": [
+        "43.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please note that this update in only applicable for deployments running Microsoft System Center 2012 R2 Service Manager with <a href=\"https://support.microsoft.com/en-us/kb/3096383\">new HTML self service portal</a> installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b><u>Before you apply this update, follow these steps:</u></b>\r\n<br/>\r\n<ol>\r\n<li>\r\nIf any customizations are made in the portal sidebar with the steps mentioned in \"Customizing the left menu bar\" section of this document - <a href=\"https://technet.microsoft.com/en-US/library/mt622142.aspx\">https://technet.microsoft.com/en-US/library/mt622142.aspx</a>, then please <b>take backup of Views\\Shared\\Sidebar.cshtml file</b>. \r\n</li>\r\n</ol>\r\n\r\n<br/><br/>\r\n<b><u>To install this update, follow these steps:</u></b>\r\n<br/>\r\n<ol>\r\n<li>Download the update \"SelfServicePortal_CU_KB3144617_amd64_7.5.3079.572.EXE \" on the server machine which hosting your Self Service Portal</li>\r\n<li>Click <b>Run as administrator</b></li>\r\n<li>Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard</li>\r\n</ol>\r\n\r\n<br/><br/>\r\n<b><u>To verify the successful installation of this update, follow these steps</u></b>\r\n<br/>\r\n<ol>\r\n<li>In Control Panel, open <b>Programs and Features</b></li>\r\n<li>Click <b>View Installed Updates</b></li>\r\n<li>The installation succeeded if the following is listed on your Self Service Portal server: <b>Hotfix for Microsoft System Center Service Manager R2 Self Service Portal (KB3144617)</b></li>\r\n</ol>\r\n\r\n<br/><br/>\r\n<b><u>After the installation</u></b>\r\n<br/>\r\n<ol>\r\n<li>\r\nIf any customizations were backed up for portal sidebar (as mentioned in Before the installation steps), then merge the required changes in the updated Views\\Shared\\Sidebar.cshtml file</li>\r\n<li>Restart the machine which is hosting your portal IIS server</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52061",
+    "downloadPreload": true
+}

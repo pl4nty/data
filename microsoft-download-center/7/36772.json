@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Hanword HWP document convertor for Microsoft Word",
+    "downloadDescription": "Hanword HWP document converter for Microsoft Word is a tool which allows you to convert and open HWP files in Word as DOCX files.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HwpConverter_x64_en-us.exe",
+            "url": "https://download.microsoft.com/download/1/1/a/11a1df9c-d310-498e-b213-53758bfbf168/HwpConverter_x64_en-us.exe",
+            "size": "7962264",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:16:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HwpConverter_x86_en-us.exe",
+            "url": "https://download.microsoft.com/download/1/1/a/11a1df9c-d310-498e-b213-53758bfbf168/HwpConverter_x86_en-us.exe",
+            "size": "7095232",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:16:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Hanword HWP document converter for Microsoft Word is a tool which allows you to convert and open HWP files in Microsoft Word as DOCX files. Each valid HWP 5.0 file can be opened in Microsoft Word and bulk converting by folder-bases is also allowed with a stand-alone bulk converter.<br/>\r\nNote : This converter is for Microsoft Word 32-bit Edition. For Microsoft Word 64-bit Edition, please install Hanword HWP document converter for Microsoft Word 64-bit Edition. The version is not dependent on operating system\u2019s platform.<br/>\r\nNote : Uninstalling previous version Hanword HWP document converter for Microsoft Word is recommended before installing new version Hanword HWP document converter for Microsoft Word.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "HwpConverter_x64_en-us.exe",
+        "HwpConverter_x86_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.6 MB",
+        "6.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\n<ul><li>\r\nSupported Microsoft Word program: Microsoft Word 2007 with at least Service Pack 2, Microsoft Word 2010, Microsoft Word 2013\r\n</li><li>\r\nAdditional Operating System Details: Microsoft Word 2013 works with Windows 7 or Windows 8 only\r\n</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br />\r\n<ol><li>\r\nDownload <b>HwpConverter.exe</b> by clicking the <b>Download</b> button (above) and save the file to your hard disk.\r\n</li><li>\r\nRun <b>HwpConverter.exe</b>. The files will be extracted to %Program Files%\\Microsoft Office\\Office15.\r\n</li><li>\r\nTo open and edit a HWP file, open a supported Microsoft Word program, choose <b>HWP 5.0</b> type in file open filter, and select a HWP file.\r\n</li><li>\r\nTo convert a HWP file to a DOCX file, run <b>BATCHHWPCONV.exe</b>, choose <b>File</b> option, source and target files, and press <b>Convert</b> button.\r\n</li><li>\r\nTo convert all HWP files in a folder to DOCX files, run <b>BATCHHWPCONV.exe</b>, choose Folder option, source and target folders, and press <b>Convert</b> button.\r\n</li></ol>\r\n<br/>\r\n\r\n<b>To remove this download:</b><br />\r\n<ol><li>\r\nOn the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>.\r\n</li><li>\r\nDouble-click <b>Uninstall a Program</b>.\r\n</li><li>\r\nIn the list of currently installed programs, select <b>Hanword HWP document converter for Microsoft Word (x86)</b> and the click <b>Uninstall</b>. If a dialog box appears, follow the instructions to remove the program.\r\n</li><li>\r\nClick <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program.\r\n</li></ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36772",
+    "downloadPreload": true
+}

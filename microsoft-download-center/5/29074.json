@@ -1,0 +1,155 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 SP1 PowerPivot for Microsoft Excel\u00ae 2010",
+    "downloadDescription": "Microsoft PowerPivot for Microsoft Excel 2010 provides ground-breaking technology; fast manipulation of large data sets, streamlined integration of data, and the ability to effortlessly share your analysis through Microsoft SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ReadMe_PowerPivot.htm",
+            "url": "https://download.microsoft.com/download/7/c/5/7c514257-287c-49a9-bf50-f86bb3d4e60c/1033/ReadMe_PowerPivot.htm",
+            "size": "11512",
+            "version": "11.0.3129.0",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerPivot_for_Excel_x86.msi",
+            "url": "https://download.microsoft.com/download/7/c/5/7c514257-287c-49a9-bf50-f86bb3d4e60c/1033/x86/PowerPivot_for_Excel_x86.msi",
+            "size": "103305216",
+            "version": "11.0.3129.0",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerPivot_for_Excel_amd64.msi",
+            "url": "https://download.microsoft.com/download/7/c/5/7c514257-287c-49a9-bf50-f86bb3d4e60c/1033/x64/PowerPivot_for_Excel_amd64.msi",
+            "size": "136355840",
+            "version": "11.0.3129.0",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft PowerPivot for Microsoft Excel 2010 provides ground-breaking technology, such as fast manipulation of large data sets (often millions of rows), streamlined integration of data, and the ability to effortlessly share your analysis through Microsoft SharePoint 2010.<br/>\r\n<br/>\r\nMicrosoft PowerPivot for Microsoft Excel 2010 is a data analysis tool that delivers unmatched computational power directly within the software users already know and love \u2014 Microsoft Excel. You can transform mass quantities of data with incredible speed into meaningful information to get the answers you need in seconds. You can effortlessly share your findings with others. You can:\n\n<br /><br />\n\n<ul>\n<li>Process large data sets (often millions of rows) with about the same performance as processing a few hundred rows by leveraging the PowerPivot in-memory engine and its efficient compression algorithms</li>\n<li>Use PowerPivot to directly access trusted premium and public domain data from DataMarket section of Windows Azure Marketplace</li>\n<li>Integrate data from a multitude of sources, including corporate databases, spreadsheets, reports, text files, and Internet data feeds</li>\n<li>Go beyond standard Excel expressions and use PowerPivot\u2019s Data Analysis Expressions (DAX) language to perform powerful data manipulations. Follow relationships between tables as in a database and define sophisticated calculations using familiar and intuitive expressions</li>\r\n<li>Interactively explore, analyze, and create reports without depending on expert knowledge and specialty training by using native Excel 2010 functionality such as PivotTables, slicers, and other familiar analysis features</li>\n\n</ul><br /><br />\r\n\r\n<b>Note: </b>Windows Azure Marketplace DataMarket is one stop shop for, trusted premium and public domain data. The DataMarket section brings data, imagery and real-time services from leading commercial data providers and authoritative public data sources. Information workers can use DataMarket to easily discover, purchase and manage premium data subscriptions. Information workers can also preview datasets in DataMarket through rich visualizations and discover 3rd party applications built on top of these datasets. \r\n<br/><br/>\r\n\nThe most recent version of the PowerPivot documentation is available from <a href=\"http://go.microsoft.com/fwlink/?LinkId=259807\"> PowerPivot for Excel Online Help.</a> \nYou can access additional articles, blogs, and other community content on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=185233\"> PowerPivot TechNet page.</a>\n\n<br /><br />\n\n<b>Important: </b> <br /><br/>\nPlease note that the PowerPivot for Microsoft Excel works only with the latest version of Microsoft Office 2010. To download or buy the Microsoft Office 2010, please go \n<a href=\"http://go.microsoft.com/fwlink/?LinkId=204860\"> here.</a><br /><br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.3129.0",
+    "detailsSection_file_name": [
+        "ReadMe_PowerPivot.htm",
+        "PowerPivot_for_Excel_x86.msi",
+        "PowerPivot_for_Excel_amd64.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.2 KB",
+        "98.5 MB",
+        "130.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n<ul>\r\nWindows 8<b>**</b><br/>\nWindows 7<br/>\r\nWindows Server 2008 R2 (64-bit)<br />\nWindows Vista with SP2 (32-bit or 64-bit)<b>*</b>  <br />\nWindows Server 2008 with SP2 (32-bit or 64-bit)<b>*</b> <br />\r\nWindows XP with SP3 (32-bit) <br />\nWindows Server 2003 R2 (32-bit or 64-bit) with MSXML 6.0 installed<b>+</b> <br />\nTerminal Server and windows on Windows (WOW)-- which allow you to instal 32-bit versions of Office 2010 on 64-bit operating system are supported<br /><br />\r\n<ul>\r\n<b>**</b>Also requires <a href=\"http://go.microsoft.com/fwlink/?LinkId=245484\"> .NET Framework 4.5</a><br />\n<b>* </b>Also requires <a href=\"http://go.microsoft.com/fwlink/?LinkId=186051\"> Platform Update for Windows Vista/Windows Server 2008.</a><br />\n<b>+</b> Only 32-bit Microsoft\u00aeOffice 2010/PowerPivot for Microsoft\u00ae Excel 2010 is supported on 64-bit Windows Server 2003 R2.\n</ul>\n </ul> \n<ul> \n  <li>500 MHz 32-bit or 64-bit processor or higher  </li>\n  <li>Minimum of 1 GB of RAM (2 GB or more is recommended.)</li>\n  <li>3.5 GB of available hard disk space</li><br />\n  <li>Internet access </li> <br />\n</ul>\n <br />\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "To install and use Microsoft SQL Server 2012 PowerPivot for Microsoft Excel, complete the following steps in this order:<br/>\r\n<br/>\n<ul>\n<b>1. </b>Install <a href=\"http://go.microsoft.com/fwlink/?LinkID=526809\"> .NET Framework 4.0 </a> and <a href=\"http://go.microsoft.com/fwlink/?LinkId=526810\"> Visual Studio 2010 Tools for Office Runtime</a>. <br /><br/>\n<b>2. </b>If you are running Windows Vista or Windows Server 2008, install the <a href=\"http://go.microsoft.com/fwlink/?LinkId=186051\"> platform update.</a><br /><br/>\n<b>3. </b>Install <a href=\"http://go.microsoft.com/fwlink/?LinkId=186053\"> Microsoft\u00ae Office 2010</a>.<br /><br/>\n<b>4. </b> Install <b>PowerPivot for Microsoft Excel </b> <br /> <br/><br/>\n<B>Important :</B> If you install the 32-bit version of Excel, you must use the 32-bit version of PowerPivot. \nIf you install the 64-bit version of Excel, you must use the 64-bit version of PowerPivot.<br />\n\n</ul>\n<br />After PowerPivot for Microsoft Excel is installed, you can access documentation from the PowerPivot \nwindow by clicking the Help button or by pressing F1. We recommend that you use the most recent version of the documentation, \nwhich is available from <a href=\"http://go.microsoft.com/fwlink/?LinkId=259807\"> PowerPivot for Microsoft Excel Online Help.</a> \nYou can access additional articles, blogs, and other community content on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=185233\"> PowerPivot TechNet page.</a>.<br /><br/>\n\n<b>Note:</b><br />\n\nWhen you start Microsoft Office 2010 Excel for the first time, you will be prompted for permission for Excel to load SQL Server 2012 PowerPivot for Microsoft Excel 2010.<br />\n",
+    "additionalInformationSection": "Your feedback is important. Help improve SQL Server 2012 by <a href=\"http://go.microsoft.com/fwlink/?LinkID=168586\">submitting bugs to Microsoft\u00ae Connect</a>.<br /><br />\r\n\r\n<br/>The new version (11.0.3129.0) of these msi's have been released to address the issue mentioned in <a href=\"http://support.microsoft.com/kb/2793634\"> KB2793634</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29074",
+    "downloadPreload": true
+}

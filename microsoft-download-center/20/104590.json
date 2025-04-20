@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Storage Mover Agent",
+    "downloadDescription": "The Azure Storage Mover agent enables the migration of files and folders into Azure Storage.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AzureStorageMover_3.3.760_amd64_VMware.ova",
+            "url": "https://download.microsoft.com/download/9b55b40c-962d-4368-aee3-fa031b628d4d/AzureStorageMover_3.3.760_amd64_VMware.ova",
+            "size": "1715133440",
+            "version": "3.3.760",
+            "datePublished": "4/10/2025 7:00:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureStorageMover_3.3.760_amd64_Hyper-V.vhdx.zip.sha256",
+            "url": "https://download.microsoft.com/download/9b55b40c-962d-4368-aee3-fa031b628d4d/AzureStorageMover_3.3.760_amd64_Hyper-V.vhdx.zip.sha256",
+            "size": "115",
+            "version": "3.3.760",
+            "datePublished": "4/10/2025 7:00:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureStorageMover_3.3.760_amd64_Hyper-V.vhdx.zip",
+            "url": "https://download.microsoft.com/download/a/6/f/a6fb8dd4-4d9c-4fde-8574-fee02039c444/AzureStorageMover_3.3.760_amd64_Hyper-V.vhdx.zip",
+            "size": "1569476216",
+            "version": "3.3.760",
+            "datePublished": "4/10/2025 7:00:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureStorageMover_3.3.760_amd64_VMware.ova.sha256",
+            "url": "https://download.microsoft.com/download/9b55b40c-962d-4368-aee3-fa031b628d4d/AzureStorageMover_3.3.760_amd64_VMware.ova.sha256",
+            "size": "66",
+            "version": "3.3.760",
+            "datePublished": "4/10/2025 7:00:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Storage Mover enables organizations to efficiently migrate:\n<ul>\n<li>SMB file shares to Azure Files.</li>\n<li>NFS file shares to Azure blob containers.</li>\n<li>NFS file shares to Azure Data Lake Storage Gen2.</li>\n<li>Convenient tracking and reporting for large scale migrations.</li>\n<li>Minimize downtime and of your workloads through repeated source/target migrations.</li>\n</ul>\n<br />\nThe Azure Storage Mover agent is a Linux appliance in the form of a VM image for Windows Hyper-V and VMware hypervisors. \n<br />\nTo learn more:\n<ul>\n<li><a href=\"https://aka.ms/StorageMover/agent/deploy\">Agent deployment guide</a></li>\n<li><a href=\"https://docs.microsoft.com/azure/storage-mover/\">Azure Storage Mover overview</a></li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.3.760",
+    "detailsSection_file_name": [
+        "AzureStorageMover_3.3.760_amd64_VMware.ova",
+        "AzureStorageMover_3.3.760_amd64_Hyper-V.vhdx.zip.sha256",
+        "AzureStorageMover_3.3.760_amd64_Hyper-V.vhdx.zip",
+        "AzureStorageMover_3.3.760_amd64_VMware.ova.sha256"
+    ],
+    "detailsSection_file_size": [
+        "1.6 GB",
+        "115 bytes",
+        "1.5 GB",
+        "66 bytes"
+    ],
+    "detailsSection_file_date": "4/10/2025",
+    "systemRequirementsSection": "Recommended, minimal virtual machine configuration:\n<br />\n<ul>\n<li>virtual CPUs: 4</li>\n<li>RAM: 8 GB</li>\n<li>Disk Space: 20GB</li>\n</ul>\n<br />\nVM resource requirements increase with the scale of a migration. Refer to the agent deployment guide for more details.\nThis agent image is currently supported for running on a Windows Hyper-V and VMWare ESXi 6.7 hypervisor.",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Ubuntu"
+    ],
+    "installInstructionSection": "<ol>\n<li>Download and unpack the agent package.</li>\n<li>Create a new VM from the unpacked VM disk image. <br />Refer to the <a href=\"https://aka.ms/StorageMover/agent/deploy\">agent deployment guide</a> for details.</li>\n<li>Register the agent with your storage mover cloud resource. <br />Refer to the <a href=\"https://aka.ms/StorageMover/agent/register\">agent registration guide</a> for details.</li>\n</ol>\n<br />\nYou can now manage the agent and your migrations from the Azure portal and Azure PowerShell.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104590",
+    "downloadPreload": true
+}

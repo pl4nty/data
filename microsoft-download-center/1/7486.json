@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Regional Dialect Dictionaries for the United Kingdom",
+    "downloadDescription": "Seven different dictionaries for UK regional dialects.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MS Regional Dialect Yorkshire Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect Yorkshire Dictionary.msi",
+            "size": "190976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MS Regional Dialect Irish Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect Irish Dictionary.msi",
+            "size": "190464",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MS Regional Dialect West Country Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect West Country Dictionary.msi",
+            "size": "190976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MS Regional Dialect Lancashire Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect Lancashire Dictionary.msi",
+            "size": "191488",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MS Regional Dialect North East Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect North East Dictionary.msi",
+            "size": "190976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MS Regional Dialect Scottish Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect Scottish Dictionary.msi",
+            "size": "190976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MS Regional Dialect Midlands Dictionary.msi",
+            "url": "https://download.microsoft.com/download/2/4/3/24329290-b5d8-4137-8a7e-abaa86c62cec/MS Regional Dialect Midlands Dictionary.msi",
+            "size": "190976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Seven different dictionaries for UK regional dialects. Download and install these add-ins for Word.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MS Regional Dialect Yorkshire Dictionary.msi",
+        "MS Regional Dialect Irish Dictionary.msi",
+        "MS Regional Dialect West Country Dictionary.msi",
+        "MS Regional Dialect Lancashire Dictionary.msi",
+        "MS Regional Dialect North East Dictionary.msi",
+        "MS Regional Dialect Scottish Dictionary.msi",
+        "MS Regional Dialect Midlands Dictionary.msi"
+    ],
+    "detailsSection_file_size": [
+        "186.5 KB",
+        "186.0 KB",
+        "186.5 KB",
+        "187.0 KB",
+        "186.5 KB",
+        "186.5 KB",
+        "186.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select \"Run\" to start the installation wizard which will guide you through the install of the Regional Dialect dictionary.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7486",
+    "downloadPreload": true
+}

@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2016 CU9 (KB4340731)",
+    "downloadDescription": "Security Update For Exchange Server 2016 CU9 (KB4340731)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB4340731-x64-en.msp",
+            "url": "https://download.microsoft.com/download/5/4/2/5428dc72-4929-459d-b8e5-78f155bf9081/Exchange2016-KB4340731-x64-en.msp",
+            "size": "190345216",
+            "version": "15.01.1466.010",
+            "datePublished": "7/15/2024 4:55:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4092041",
+        "name": "KB4092041"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.1466.010",
+    "detailsSection_file_name": [
+        "Exchange2016-KB4340731-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "181.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2016 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2016 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2016 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2016 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2016 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57215",
+    "downloadPreload": true
+}

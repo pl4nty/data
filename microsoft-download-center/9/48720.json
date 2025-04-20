@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio Team Foundation Server 2012 Update 4 (KB2989277)",
+    "downloadDescription": "TFS 2012 QU4 Update - KB2989277",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TFS2012-KB2989277.exe",
+            "url": "https://download.microsoft.com/download/0/b/5/0b523c6f-4b2c-4f3e-80b8-f8d7fe69a3ea/TFS2012-KB2989277.exe",
+            "size": "6758824",
+            "version": "11.0",
+            "datePublished": "7/15/2024 3:44:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This article describes an issue that could cause data loss in Microsoft Visual Studio Team Foundation Server 2012 Update 4. An update is available to resolve this issue. The update can only be applied to Microsoft Visual Studio Team Foundation Server 2012 Update 4. Previous releases of Microsoft Visual Studio Team Foundation Server 2012 should first be upgraded to Update 4 and then this update can be applied.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0",
+    "detailsSection_file_name": [
+        "TFS2012-KB2989277.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 Service Pack 1, Windows 8, Windows 8.1, Windows Server 2008 R2 SP1, Windows Server 2008 Service Pack 2, Windows Server 2012, Windows Small Business Server 2011<br/><br/>\r\n<b>Hardware Requirements: </b><br/>\r\n<ul>\r\n<li>2.2 GHz or faster processor </li>\r\n<li>1 GB RAM \u2013 Basic installation</li>\r\n<li>2 GB RAM \u2013 Standard installation (no SharePoint) </li>\r\n<li>10 GB RAM \u2013 Full installation (includes SharePoint) </li>\r\n<li>8 GB of available hard disk space</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On this page, click Download to start the download. </li>\r\n<li>To save the download on  your computer so that you can install it later, click Save. </li>\r\n<li>Open the self-extracting update (TFS2013-KB2989277.exe) and follow the steps in the wizard. </li>\r\n<li>To cancel the installation, click Cancel. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2989277",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=529798"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48720",
+    "downloadPreload": true
+}

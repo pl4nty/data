@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Compact 7 Monthly Update June 2016",
+    "downloadDescription": "Download this set of updates for Windows Embedded Compact 7 released during the period of June 1 - 30, 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsEmbeddedCompact7.exe",
+            "url": "https://download.microsoft.com/download/a/5/0/a503cbbd-8fea-41c8-bad6-bbb0a01c6a47/WindowsEmbeddedCompact7.exe",
+            "size": "3674056",
+            "version": "7.2.2870.0",
+            "datePublished": "7/15/2024 4:18:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded Compact 7_Update60.htm",
+            "url": "https://download.microsoft.com/download/a/5/0/a503cbbd-8fea-41c8-bad6-bbb0a01c6a47/Windows Embedded Compact 7_Update60.htm",
+            "size": "253840",
+            "version": "7.2.2870.0",
+            "datePublished": "7/15/2024 4:18:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a set of updates for Windows Embedded Compact 7 released during the period of June 1 - 30, 2016. These updates are fixes for problems you may run into during the development and maintenance of your custom platform. To qualify for consideration for an update, a problem needs to cause an excessive amount of work and not have a reasonable workaround.\r\n<br /><br />\r\nFor complete details regarding the updates in this release, please download the HTM file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3173567; KB3173515; KB3173556; KB3173579; KB3173361; KB3173598; KB3174130; KB3174880",
+        "name": "KB3173567; KB3173515; KB3173556; KB3173579; KB3173361; KB3173598; KB3174130; KB3174880"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS15-126; MS15-112; MS15-108; MS09-056; MS13-006",
+        "name": "MS15-126; MS15-112; MS15-108; MS09-056; MS13-006"
+    },
+    "detailsSection_file_version": "7.2.2870.0",
+    "detailsSection_file_name": [
+        "WindowsEmbeddedCompact7.exe",
+        "Windows Embedded Compact 7_Update60.htm"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB",
+        "247.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Vista, Windows XP Service Pack 3\r\n<br />\r\n<br />\r\nYour computer must have the following software installed: \r\n<ul>\r\n<li>Windows Embedded Compact 7 or <a href=\"http://go.microsoft.com/fwlink/?LinkId=298632\">Windows Embedded Compact 7 Evaluation Edition</a></li>\r\n<li>Visual Studio\u00ae 2008 Professional or Team Edition (including the Smart Device Programmability for Visual C++)</li>\r\n<li>Visual Studio 2008 Service Pack 1</li>\r\n<li>Microsoft .NET Framework 3.5</li>\r\n</ul>\r\nTo develop with Windows\u00ae Embedded Compact 7, your computer should meet the following hardware requirements: \r\n<ul>\r\n<li>Approximately 100 GB of free hard disk space</li>\r\n<li>2.4 GHz or higher CPU, 1024 MB or more RAM, 1280x1024 display, 7200 RPM or higher hard disk</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "Click on the Download button and follow the instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Compact 7 prior monthly update",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=52949"
+        },
+        {
+            "title": "windows Embedded Technical references",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/developers.aspx"
+        },
+        {
+            "title": "windows Embedded Compact 7 Documentation",
+            "url": "http://msdn.microsoft.com/en-US/library/gg154201(v=winembedded.70).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "53309",
+    "downloadPreload": true
+}

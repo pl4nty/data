@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer 8 for Windows Server 2003 x64 Edition (KB2936068)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS14-018. To find out if other security updates are available for you, see the Additional Information section at the bottom of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE8-WindowsServer2003.WindowsXP-KB2936068-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/4/c/5/4c5b97ea-8e28-4cbb-af27-0ab0d386f4e9/IE8-WindowsServer2003.WindowsXP-KB2936068-x64-ENU.exe",
+            "size": "22947064",
+            "version": "2936068",
+            "datePublished": "7/15/2024 3:37:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2936068",
+        "name": "KB2936068"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-018",
+        "name": "MS14-018"
+    },
+    "detailsSection_file_version": "2936068",
+    "detailsSection_file_name": [
+        "IE8-WindowsServer2003.WindowsXP-KB2936068-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "21.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer 8 with the following operating systems:<br /><ul><li>Windows Server 2003, Datacenter Edition(x64-bit)</li><li>Windows Server 2003, Enterprise Edition(x64-bit)</li><li>Windows Server 2003, Standard Edition(x64-bit)</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2 x64 Edition"
+    ],
+    "installInstructionSection": "\n            <ol>\n                <li>Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.</li>\n                <li>Do one of the following:</li>\n                <ul>\n                    <li>To start the installation immediately, click <b>Run</b>.</li>\n                    <li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li>\n                    <li>To cancel the installation, click <b>Cancel</b>.</li>\n                </ul>\n            </ol>\n        ",
+    "additionalInformationSection": "\n            <b>Other critical security updates are available:</b> To find the latest security updates for you visit <a href=\"http://go.microsoft.com/?LinkID=275655 \">Windows Update</a> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <a href=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</a> and follow the 3 easy steps to ensure youre protected.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "internet Explorer 8 Homepage",
+            "url": "http://www.microsoft.com/windows/Internet-explorer/default.aspx"
+        },
+        {
+            "title": "stay up to Speed on PC Security",
+            "url": "http://go.microsoft.com/?LinkID=997684"
+        },
+        {
+            "title": "microsoft Security Bulletin MS14-018",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=393743"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42415",
+    "downloadPreload": true
+}

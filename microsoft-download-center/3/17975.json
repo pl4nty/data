@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Basic 2005 Keyboard Shortcut Reference Poster",
+    "downloadDescription": "This poster contains the default key bindings for Visual Basic 2005, and is available as a PDF download in either color or grayscale for you to print.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VB_2005_grayscale.pdf",
+            "url": "https://download.microsoft.com/download/d/6/5/d65efda0-cf25-4720-8013-b3080586c5bb/VB_2005_grayscale.pdf",
+            "size": "1063385",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "VB_2005.zip",
+            "url": "https://download.microsoft.com/download/d/6/5/d65efda0-cf25-4720-8013-b3080586c5bb/VB_2005.zip",
+            "size": "2437109",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VB_2005_color.pdf",
+            "url": "https://download.microsoft.com/download/d/6/5/d65efda0-cf25-4720-8013-b3080586c5bb/VB_2005_color.pdf",
+            "size": "1577774",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Keyboard shortcuts can help increase productivity when performing certain tasks within the Visual Studio 2005 IDE (Integrated Development Environment). This wall poster provides the shortcut and associated description for the default key bindings setup in the Visual Basic 2005 profile. The poster is provided here in both color and grayscale for you to print locally as a PDF file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VB_2005_grayscale.pdf",
+        "VB_2005.zip",
+        "VB_2005_color.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "2.3 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "The poster is best printed landscape on paper size A3 (297mm/11.7\u201d x 420mm/16.5\u201d) or larger.<br />\n<br />\nNote: If you have difficulty downloading a PDF file, download the ZIP file, which contains both PDF files.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17975",
+    "downloadPreload": true
+}

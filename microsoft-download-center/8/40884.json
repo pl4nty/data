@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 R2 Integration Pack for HP Operations Manager",
+    "downloadDescription": "The Integration Pack for HP Operations Manager is an add-on for System Center 2012 R2 Orchestrator that enables you to create activities within runbooks that make requests to the HP Operations Manager product to get data or perform functions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_2012_R2_Integration_Pack_for_HP_Operations_Manager.exe",
+            "url": "https://download.microsoft.com/download/3/8/c/38cca7a0-8ae9-43b2-9693-9075b7080818/System_Center_2012_R2_Integration_Pack_for_HP_Operations_Manager.exe",
+            "size": "811712",
+            "version": "7.2.81.0",
+            "datePublished": "7/15/2024 3:16:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for HP Operations Manager is an add-on for System Center 2012 R2 Orchestrator that enables you to create activities within runbooks that make requests to the HP Operations Manager product to get data or perform functions.<br />\n<br />\n<b>Feature Summary </b><br />\nThis integration pack adds the HP Operations Manager category to the Activity pane in the Runbook Designer. This category contains the following activities: <br />\n<ul>\n<li> Acknowledge Message</li> \n<li> Add Annotation</li> \n<li> Create Message</li> \n<li> Delete Annotation</li> \n<li> Delete Custom Attribute</li> \n<li> Get Annotation</li> \n<li> Get Message</li> \n<li> Launch Tool</li> \n<li> Monitor Message</li> \n<li> Own/Disown Message</li> \n<li> Set Custom Attribute</li> \n<li> Update Annotation</li> \n<li> Update Message</li> \n</ul><br />\n<b>Release History </b><br />\n<ul>\n<li> 06/27/2016 - Update 1 (version 7.2.81.0) -  Included fixes to allow conversion of this Integration Pack to PowerShell module via <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=47323\">System Center Orchestrator Migration Toolkit</a>. The generated PowerShell modules can be used with Azure Automation or Service Management Automation.</li>\n<br/>\n<li> 10/29/2013 - Original English release, version 7.2.48.0 .</li>\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.81.0",
+    "detailsSection_file_name": [
+        "System_Center_2012_R2_Integration_Pack_for_HP_Operations_Manager.exe"
+    ],
+    "detailsSection_file_size": [
+        "792.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 2012 R2 - Orchestrator \r\n<ul>\r\n<li> RAM \u2013 minimum 1GB recommended 2GB </li>\r\n<li> Disk space minimum 200MB</li>\r\n<li> CPU Dual Core or better</li>\r\n<li> .Net 3.5</li>\r\n</ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe.  <br/>\r\nThen follow the instruction on this page to install Integration Packs: <a href=\"http://technet.microsoft.com/en-us/library/hh420346.aspx\">http://technet.microsoft.com/en-us/library/hh420346.aspx</a>\r\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40884",
+    "downloadPreload": true
+}

@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "SDL Quick Security References",
+    "downloadDescription": "The SDL Quick Security References will help you better understand and address common attacks that may be affecting your software, Web sites, and users. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Quick Security Reference - Exposure of Sensitive Information.docx",
+            "url": "https://download.microsoft.com/download/e/e/7/ee7b9cf4-6a59-4832-8ede-b018175f4610/Quick Security Reference - Exposure of Sensitive Information.docx",
+            "size": "683557",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick Security Reference - SQL Injection.docx",
+            "url": "https://download.microsoft.com/download/e/e/7/ee7b9cf4-6a59-4832-8ede-b018175f4610/Quick Security Reference - SQL Injection.docx",
+            "size": "541527",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick Security Reference - Cross-Site Scripting.docx",
+            "url": "https://download.microsoft.com/download/e/e/7/ee7b9cf4-6a59-4832-8ede-b018175f4610/Quick Security Reference - Cross-Site Scripting.docx",
+            "size": "940881",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "With the SDL Quick Security References (QSR), the Security Development Lifecycle (SDL) team introduces a series of basic guidance papers designed to address common vulnerabilities from the perspective of multiple business roles - business decision maker, architect, developer, and tester/QA. These papers will help you address a critical business problem now while moving you toward SDL adoption in the future.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Quick Security Reference - Exposure of Sensitive Information.docx",
+        "Quick Security Reference - SQL Injection.docx",
+        "Quick Security Reference - Cross-Site Scripting.docx"
+    ],
+    "detailsSection_file_size": [
+        "667.5 KB",
+        "528.8 KB",
+        "918.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 2000; Windows 2000 Server; Windows Server 2003; Windows Server 2008; Windows Vista; Windows XP; Windows 7 \r\nThis release includes documentation MS Word format. You can download a MS Word reader for free if you do not have MS Word installed. \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "1. Download the file by clicking on the \"Download\" button. \r\n2. Select \"Save\u201d and specify a directory on your local disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13759",
+    "downloadPreload": true
+}

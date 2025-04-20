@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office LTSC 2021 Volume License Pack",
+    "downloadDescription": "This download is needed for administrators to set up activation for volume license editions of Office LTSC 2021, Project 2021, or Visio LTSC 2021 by using either the Key Management Service (KMS) or Active Directory.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2021VolumeLicensePack_x86.exe",
+            "url": "https://download.microsoft.com/download/8/e/e/8eef6160-396a-4c26-830d-9e2a24c00309/Office2021VolumeLicensePack_x86.exe",
+            "size": "413320",
+            "version": "16.0.14326.20066",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Office2021VolumeLicensePack_x64.exe",
+            "url": "https://download.microsoft.com/download/8/e/e/8eef6160-396a-4c26-830d-9e2a24c00309/Office2021VolumeLicensePack_x64.exe",
+            "size": "426000",
+            "version": "16.0.14326.20066",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This download is needed for administrators to set up activation for volume license editions of Office LTSC 2021, Project 2021, or Visio LTSC 2021 by using either the Key Management Service (KMS) or Active Directory.\r\nLong Description:\r\nVolume license editions of Office LTSC 2021, Project 2021, and Visio LTSC 2021 require activation. If you want to activate any of these products by using KMS or Active Directory, you must first download and install the Office LTSC 2021 Volume License Pack. This download contains an executable file that extracts and installs KMS host license files. These license files are required for the KMS host service to recognize KMS host keys for Office LTSC 2021, Project 2021, and Visio LTSC 2021. You can use the same KMS host key to set up Active Directory-based activation. <br/>\r\n<br/>\r\nFor more information about volume activation, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2009339\">this article</a>. <br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.14326.20066",
+    "detailsSection_file_name": [
+        "Office2021VolumeLicensePack_x86.exe",
+        "Office2021VolumeLicensePack_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "403.6 KB",
+        "416.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n- <b>KMS Host:</b> At least Windows Server 2016 or Windows 10 (volume editions).<br/>\r\n- <b>Active Directory-Based Activation:</b><br/>\r\n<ul>\r\n   <li><b>Set-up and Configuration:</b> At least Windows Server 2016 or Windows 10 (volume editions).</li>\r\n   <li><b>Domain controller:</b> Active Directory Domain Services with at least the Windows Server 2016 schema installed.</li>\r\n</ul>\r\n<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<br/>\r\n1. Download and run the executable file on this page on the KMS host computer.<br/>\r\n2. Enter your Office LTSC 2021 KMS host key when prompted.<br/>\r\n3. Activate the product key online.<br/>\r\n4. If setting up a KMS host, open port 1688 to allow the KMS host service through the firewall:<br/>\r\n<ol>\r\n <li>Go to Control Panel > System and Security > Windows Firewall.</li> \r\n <li>Click the \u201cAllow an app or feature through Windows Firewall\u201d link.</li>\r\n <li>Click the Change Settings button.</li>\r\n <li>Select the check box for Key Management Service.</li>\r\n</ol>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103446",
+    "downloadPreload": true
+}

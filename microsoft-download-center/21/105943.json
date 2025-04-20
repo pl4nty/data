@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Power BI Report Server - January 2025",
+    "downloadDescription": "Power BI Report Server, available as part of Power BI Premium, enables on-premises web and mobile viewing of Power BI reports, plus the enterprise reporting capabilities of SQL Server Reporting Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PowerBIReportServer.exe",
+            "url": "https://download.microsoft.com/download/2/7/3/2739a88a-4769-4700-8748-1a01ddf60974/PowerBIReportServer.exe",
+            "size": "579379064",
+            "version": "15.0.1117.98",
+            "datePublished": "1/22/2025 6:07:12 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PBIDesktopSetupRS_x64.exe",
+            "url": "https://download.microsoft.com/download/2/7/3/2739a88a-4769-4700-8748-1a01ddf60974/PBIDesktopSetupRS_x64.exe",
+            "size": "571165784",
+            "version": "15.0.1117.98",
+            "datePublished": "1/22/2025 6:07:12 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PBIDesktopSetupRS.exe",
+            "url": "https://download.microsoft.com/download/2/7/3/2739a88a-4769-4700-8748-1a01ddf60974/PBIDesktopSetupRS.exe",
+            "size": "529410808",
+            "version": "15.0.1117.98",
+            "datePublished": "1/22/2025 6:07:12 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Power BI Report Server, available as part of Power BI Premium, enables on-premises web and mobile viewing of Power BI reports, plus the enterprise reporting capabilities of SQL Server Reporting Services.\r\n\r\n      In this version of Power BI Report Server, you can\r\n      <ul>\r\n        <li>Connect \u201clive\u201d to Analysis Services models \u2013 both Tabular and Multidimensional (cubes)</li>\r\n        <li>Visually explore data and create an interactive report</li>\r\n        <li>Use custom visuals in your Power BI Report</li>\r\n        <li>Save that report to your report server running the preview</li>\r\n        <li>View and interact with the report in your web browser</li>\r\n        <li>Add and view comments about the report in the web browser</li>\r\n        <li>View and interact with the report in the Power BI Mobile App</li>\r\n      </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.1117.98",
+    "detailsSection_file_name": [
+        "PowerBIReportServer.exe",
+        "PBIDesktopSetupRS_x64.exe",
+        "PBIDesktopSetupRS.exe"
+    ],
+    "detailsSection_file_size": [
+        "552.5 MB",
+        "544.7 MB",
+        "504.9 MB"
+    ],
+    "detailsSection_file_date": "1/22/2025",
+    "systemRequirementsSection": "     You'll need\r\n      <ul>\r\n        <li>.NET Framework 4.8 or later</li>\r\n        <li>SQL Server Database Engine (2014 SP3 or later), to store the report server database</li>\r\n        <li>SQL Server Analysis Services (2014 SP3 or later), for your Live Analysis Services data sources</li>\r\n      </ul>\r\n\r\n      Links:\r\n      <ul>\r\n        <li>\r\n          Get <a href=\"https://www.microsoft.com/en-us/sql-server/sql-server-2019\">SQL Server 2019 Evaluation</a>\r\n        </li>\r\n      </ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": " <ol>\r\n        <li>Install Power BI Report Server (PowerBIReportServer.exe)</li>\r\n        <li>Configure your report server using Report Server Configuration Manager</li>\r\n        <li>Install Power BI Desktop (PBIDesktopRS_x64.msi)</li>\r\n      </ol>",
+    "additionalInformationSection": " <ul>\r\n        <li>\r\n          <a href=\"https://powerbi.microsoft.com/en-us/report-server/\">Home Page for Power BI Report Server</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://go.microsoft.com/fwlink/?linkid=847000\">Power BI Report Server Documentation</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://community.powerbi.com/\">Power BI Forums</a>\r\n        </li>\r\n      </ul>\r\n\r\n      <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105943",
+    "downloadPreload": true
+}

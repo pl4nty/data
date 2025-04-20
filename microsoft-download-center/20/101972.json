@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Previously Undocumented Solomon.ini Settings for Microsoft Dynamics SL",
+    "downloadDescription": "Download documentation detailing previously undocumented Solomon.ini settings. This is a supplement to the existing Solomon.ini documentation found in Appendix A of the System Manager User Manual. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SolomonINISettings.pdf",
+            "url": "https://download.microsoft.com/download/b/0/c/b0c7533f-849e-4e0e-8304-6eda6f4e477e/SolomonINISettings.pdf",
+            "size": "598112",
+            "version": "Installation",
+            "datePublished": "7/15/2024 4:25:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Settings include methods of controlling the menu display, Quick Query functionality, various SQL flags, timeouts, error logging, and reporting tweaks. This is a must have reference for any implementer or power user of Microsoft Dynamics SL.  This document is intended for version 2011 Feature Pack 1, though many of the settings will work on prior versions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Installation",
+    "detailsSection_file_name": [
+        "SolomonINISettings.pdf"
+    ],
+    "detailsSection_file_size": [
+        "584.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101972",
+    "downloadPreload": true
+}

@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Downloadable eBook: Deployment guide for SharePoint 2013",
+    "downloadDescription": "Download this free ebook to learn how to install and configure SharePoint Server and SharePoint Foundation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-SharePoint-2013.epub",
+            "url": "https://download.microsoft.com/download/1/f/6/1f6d3be4-1174-4320-a1d1-c0e2681cccf3/Deployment-guide-for-SharePoint-2013.epub",
+            "size": "3511967",
+            "version": "Nov2014",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Deployment-guide-for-SharePoint-2013.doc",
+            "url": "https://download.microsoft.com/download/1/f/6/1f6d3be4-1174-4320-a1d1-c0e2681cccf3/Deployment-guide-for-SharePoint-2013.doc",
+            "size": "13231616",
+            "version": "Nov2014",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-SharePoint-2013.pdf",
+            "url": "https://download.microsoft.com/download/1/f/6/1f6d3be4-1174-4320-a1d1-c0e2681cccf3/Deployment-guide-for-SharePoint-2013.pdf",
+            "size": "9469417",
+            "version": "Nov2014",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-SharePoint-2013.mobi",
+            "url": "https://download.microsoft.com/download/1/f/6/1f6d3be4-1174-4320-a1d1-c0e2681cccf3/Deployment-guide-for-SharePoint-2013.mobi",
+            "size": "7088299",
+            "version": "Nov2014",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book provides deployment instructions for SharePoint 2013. The audiences for this book include application specialists, line-of-business application specialists, and IT administrators who are ready to deploy SharePoint 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2014",
+    "detailsSection_file_name": [
+        "Deployment-guide-for-SharePoint-2013.epub",
+        "Deployment-guide-for-SharePoint-2013.doc",
+        "Deployment-guide-for-SharePoint-2013.pdf",
+        "Deployment-guide-for-SharePoint-2013.mobi"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB",
+        "12.6 MB",
+        "9.0 MB",
+        "6.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007 or 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li>\r\n<li>Click <b>Save</b> or <b>Save this program to disk</b>. </li>\r\n<li>Find the file on your hard disk and double-click it to open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30384",
+    "downloadPreload": true
+}

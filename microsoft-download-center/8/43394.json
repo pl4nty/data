@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Custom SharePoint 2013 Search Report Examples",
+    "downloadDescription": "PowerShell example scripts to extract and process search usage data from a SharePoint 2013 installation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "README.txt",
+            "url": "https://download.microsoft.com/download/d/1/9/d197df5b-6588-4f1a-a3c5-c6918e15aee2/README.txt",
+            "size": "932",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AnalyzeSearchCmdlets.ps1",
+            "url": "https://download.microsoft.com/download/d/1/9/d197df5b-6588-4f1a-a3c5-c6918e15aee2/AnalyzeSearchCmdlets.ps1",
+            "size": "74948",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Example PowerShell scripts for extracting search usage data from a SharePoint 2013 installation. Search usage data includes:\r\n\r\n- Queries\r\n- Result Clicks\r\n- Result Sources and Site Origin\r\n- Refiner Usage\r\n- Client Type\r\n\r\nThe downloadable example script extracts this information as common .NET objects that can then be consumed for report creation. There are a number of example reports provided in the downloadable script as well.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "README.txt",
+        "AnalyzeSearchCmdlets.ps1"
+    ],
+    "detailsSection_file_size": [
+        "932 bytes",
+        "73.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "- SharePoint 2013\r\n- PowerShell 2.0 or higher",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Once the PowerShell script is extracted, open a PowerShell prompt in the script directory and run the following commands:\r\n\r\nImport-Module .\\AnalyzeSearchCmdlets.ps1\r\nGet-SPAnalyticsReports -SearchServiceApplication \"SSA Name\" -WholeMonth -StartDay \"2014-03-01\"\r\n\r\nThis will generate a number of reports in the current directory for the month of March, 2014.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43394",
+    "downloadPreload": true
+}

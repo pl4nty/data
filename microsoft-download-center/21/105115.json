@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Thunderbolt 4 Dock Firmware and Drivers",
+    "downloadDescription": "All current software, firmware, and drivers for the Surface Thunderbolt 4 Dock",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_x64_19041_23.033.35296.0.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_x64_19041_23.033.35296.0.msi",
+            "size": "1204224",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_arm64_19041_23.033.35295.0.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_arm64_19041_23.033.35295.0.msi",
+            "size": "1159168",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_x64.msi",
+            "size": "557056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceThunderbolt4DockDrivers_Win10_x64_19041_23.033.35229.0.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win10_x64_19041_23.033.35229.0.msi",
+            "size": "1585152",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceThunderbolt4DockDrivers_Win10_arm64_19041_23.033.35210.0.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win10_arm64_19041_23.033.35210.0.msi",
+            "size": "1560576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SurfaceThunderbolt4DockDrivers_Win11_x64_22000_23.033.35236.0.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win11_x64_22000_23.033.35236.0.msi",
+            "size": "1589248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceThunderbolt4DockDrivers_Win11_arm64_22000_23.033.35231.0.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win11_arm64_22000_23.033.35231.0.msi",
+            "size": "1581056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_arm64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_arm64.msi",
+            "size": "516096",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "(WMI support) Compatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_arm64.msi\">SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_arm64.msi</a>\r\n<ul>\r\n<b>Windows 10 and 11</b>\r\n<li>Surface Pro 9 with 5G</li>\r\n<li>Surface Pro X</li>\r\n</ul>\r\n\r\n<br></br>\r\n(WMI support) Compatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_x64.msi\">SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_x64.msi</a>\r\n<ul>\r\n<b>Windows 10 and 11</b>\r\n<li>Surface Pro 7 and later</li>\r\n<li>Surface Laptop 3 and later</li>\r\n<li>Surface Laptop Studio and later</li>\r\n<li>Surface Go (all generations)</li>\r\n<li>Surface Laptop Go (all generations)</li>\r\n<li>Surface Book 3</li>\r\n</ul>\r\n\r\n<br></br>\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win10_arm64_19041_23.033.35210.0.msi\">SurfaceThunderbolt4DockDrivers_Win10_arm64_19041_23.033.35210.0.msi</a>\r\n<ul>\r\n<b>Windows 10</b>\r\n<li>Surface Pro 9 with 5G</li>\r\n<li>Surface Pro X</li>\r\n</ul>\r\n\r\n<br></br>\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win11_arm64_22000_23.033.35231.0.msi\">SurfaceThunderbolt4DockDrivers_Win11_arm64_22000_23.033.35231.0.msi</a>\r\n<ul>\r\n<b>Windows 11</b>\r\n<li>Surface Pro 9 with 5G</li>\r\n<li>Surface Pro X</li>\r\n</ul>\r\n\r\n<br></br>\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win10_x64_19041_23.033.35229.0.msi\">SurfaceThunderbolt4DockDrivers_Win10_x64_19041_23.033.35229.0.msi</a>\r\n<ul>\r\n<b>Windows 10</b>\r\n<li>Surface Pro 7 and later</li>\r\n<li>Surface Laptop 3 and later</li>\r\n<li>Surface Laptop Studio and later</li>\r\n<li>Surface Go (all generations)</li>\r\n<li>Surface Laptop Go (all generations)</li>\r\n<li>Surface Book 3</li>\r\n</ul>\r\n\r\n<br></br>\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockDrivers_Win11_x64_22000_23.033.35236.0.msi\">SurfaceThunderbolt4DockDrivers_Win11_x64_22000_23.033.35236.0.msi</a>\r\n<ul>\r\n<b>Windows 11</b>\r\n<li>Surface Pro 7 and later</li>\r\n<li>Surface Laptop 3 and later</li>\r\n<li>Surface Laptop Studio and later</li>\r\n<li>Surface Go (all generations)</li>\r\n<li>Surface Laptop Go (all generations)</li>\r\n<li>Surface Book 3</li>\r\n</ul>\r\n\r\n<br></br>\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_arm64_19041_23.033.35295.0.msi\">SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_arm64_19041_23.033.35295.0.msi</a>\r\n<ul>\r\n<b>Windows 10 and 11</b>\r\n<li>Surface Pro 9 with 5G</li>\r\n<li>Surface Pro X</li>\r\n</ul>\r\n\r\n<br></br>\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/2/b/1/2b147aac-b4b5-4656-8d28-21368fa5602f/SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_x64_19041_23.033.35296.0.msi\">SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_x64_19041_23.033.35296.0.msi</a>\r\n<ul>\r\n<b>Windows 10 and 11</b>\r\n<li>Surface Pro 7 and later</li>\r\n<li>Surface Laptop 3 and later</li>\r\n<li>Surface Laptop Studio and later</li>\r\n<li>Surface Go 3 and later</li>\r\n<li>Surface Laptop Go 2 and later</li>\r\n<li>Surface Book 3</li>\r\n</ul>\r\n\r\n<br></br>\r\nCumulative and current firmware and drivers for the Surface Thunderbolt 4 Dock. This firmware and driver package contains drivers for all of the components in the Surface Thunderbolt 4 Dock, as well as updates to the system firmware that have been released via Windows Update. These drivers and firmware are compatible with Windows 10 and Windows 11, including Enterprise versions. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\r\n\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n<br>\r\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\r\n</br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_x64_19041_23.033.35296.0.msi",
+        "SurfaceThunderbolt4DockSEMMforDock_Win10_Win11_arm64_19041_23.033.35295.0.msi",
+        "SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_x64.msi",
+        "SurfaceThunderbolt4DockDrivers_Win10_x64_19041_23.033.35229.0.msi",
+        "SurfaceThunderbolt4DockDrivers_Win10_arm64_19041_23.033.35210.0.msi",
+        "SurfaceThunderbolt4DockDrivers_Win11_x64_22000_23.033.35236.0.msi",
+        "SurfaceThunderbolt4DockDrivers_Win11_arm64_22000_23.033.35231.0.msi",
+        "SurfaceDock_WmiInstanceProvider_Win10_Win11_19041_23.021.21048.0_arm64.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.1 MB",
+        "544.0 KB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "504.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Surface Thunderbolt 4 Dock required for compatibility with these drivers. These drivers and firmware are compatible with Windows 10 and Windows 11, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to enable support for Surface Thunderbolt 4 Dock offline, without internet access or Windows Update. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [
+        {
+            "title": "what\u2019s new in Surface Dock",
+            "url": "https://docs.microsoft.com/en-us/surface/surface-dock-whats-new"
+        },
+        {
+            "title": "manage Surface Docks with WMI",
+            "url": "https://learn.microsoft.com/en-us/surface/surface-dock-wmi"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "105115",
+    "downloadPreload": true
+}

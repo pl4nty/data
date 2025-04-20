@@ -1,0 +1,212 @@
+{
+    "error": "",
+    "downloadTitle": "July 2007 Security Releases ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on July 10th, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200707.iso",
+            "url": "https://download.microsoft.com/download/5/b/5/5b570062-d405-4d36-a356-a6fb57cf21c3/Windows-KB913086-200707.iso",
+            "size": "246700032",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:26:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on \nWindows Update on July 10th, 2007. The image does not contain security updates \nfor other Microsoft products. This DVD5 ISO image is intended for administrators \nthat need to download multiple individual language versions of each security \nupdate and that do not use an automated solution such as Windows Server Update \nServices (WSUS). You can use this ISO image to download multiple updates in all \nlanguages at the same time.<br /><br />\n\n<b>Important</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at \n<a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />\n\nThis DVD5 image contains the following updates: <br />\n\n<B><a href=\"http://support.microsoft.com/kb/923689\">KB923689</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=76487\">(MS06-078)</a></B>\n<UL>\n<LI>Windows XP - 24 languages</LI > \n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/925398\">KB925398</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=76487\">(MS06-078)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/926122\">KB926122</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=93365\">(MS07-039)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/935807\">KB935807</a> / \n<a href=\"http://go.microsoft.com/fwlink/?LinkId=91033\">(MS07-038)</a></B>\n<UL>\n<LI>Windows Vista - 36 languages</LI>\n<LI>Windows Vista for x64-based Systems - 36 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/939373\">KB939373</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=93706\">(MS07-041)</a></B>\n<UL>\n<LI>Windows XP - 24 languages</LI >\n\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB923689; KB925398; KB926122; KB935807; KB939373",
+        "name": "KB923689; KB925398; KB926122; KB935807; KB939373"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS06-078; MS07-038; MS07-039; MS07-041; MS07-042",
+        "name": "MS06-078; MS07-038; MS07-039; MS07-041; MS07-042"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200707.iso"
+    ],
+    "detailsSection_file_size": [
+        "235.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Vista",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Select a file to download at the top of this page, or choose a different language from the drop-down list and then click <b>Change</b>.</LI>\n<LI>To download the DVD5 ISO image to your computer and burn a DVD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI>\n<LI>Use the directions for your DVD burner to create a DVD from the image.</LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21415",
+    "downloadPreload": true
+}

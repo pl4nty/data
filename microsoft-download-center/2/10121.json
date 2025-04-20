@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Speech SDK 5.1",
+    "downloadDescription": "The Microsoft Speech SDK 5.1 adds Automation support to the features of the previous version of the Speech SDK. You can now use the Win32 Speech API (SAPI) to develop speech applications with Visual Basic \u00ae, ECMAScript and other Automation languages.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SpeechSDK51MSM.exe",
+            "url": "https://download.microsoft.com/download/b/4/3/b4314928-7b71-4336-9de7-6fa4cf00b7b3/SpeechSDK51MSM.exe",
+            "size": "137901464",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SpeechSDK51LangPack.exe",
+            "url": "https://download.microsoft.com/download/b/4/3/b4314928-7b71-4336-9de7-6fa4cf00b7b3/SpeechSDK51LangPack.exe",
+            "size": "85498776",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SpeechSDK51.exe",
+            "url": "https://download.microsoft.com/download/b/4/3/b4314928-7b71-4336-9de7-6fa4cf00b7b3/SpeechSDK51.exe",
+            "size": "71278472",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Sp5TTIntXP.exe",
+            "url": "https://download.microsoft.com/download/b/4/3/b4314928-7b71-4336-9de7-6fa4cf00b7b3/Sp5TTIntXP.exe",
+            "size": "3668912",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msttss22L.exe",
+            "url": "https://download.microsoft.com/download/b/4/3/b4314928-7b71-4336-9de7-6fa4cf00b7b3/msttss22L.exe",
+            "size": "2069096",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sapi.chm",
+            "url": "https://download.microsoft.com/download/b/4/3/b4314928-7b71-4336-9de7-6fa4cf00b7b3/sapi.chm",
+            "size": "2393795",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Speech SDK 5.1 adds Automation support to the features of the previous version of the Speech SDK. You can now use the Win32 Speech API (SAPI) to develop speech applications with Visual Basic \u00ae, ECMAScript and other Automation languages. The SDK also includes freely distributable text-to-speech (TTS) engines (in U.S. English and Simplified Chinese) and speech recognition (SR) engines (in U.S. English, Simplified Chinese, and Japanese).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1",
+    "detailsSection_file_name": [
+        "SpeechSDK51MSM.exe",
+        "SpeechSDK51LangPack.exe",
+        "SpeechSDK51.exe",
+        "Sp5TTIntXP.exe",
+        "msttss22L.exe",
+        "sapi.chm"
+    ],
+    "detailsSection_file_size": [
+        "131.5 MB",
+        "81.5 MB",
+        "68.0 MB",
+        "3.5 MB",
+        "2.0 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows XP Professional or Home Edition</LI><br>\n<LI>Microsoft Windows 2000, all versions</LI><br>\n<LI>Microsoft Windows Millennium Edition</LI><br>\n<LI>Microsoft Windows 98, all versions</LI><br>\n<LI>Microsoft Windows NT 4.0 Workstation or Server, Service Pack 6a, English, Japanese, or Simplified Chinese versions</LI><br>\n<LI>Microsoft Internet Explorer \u00ae 5.0 or later. Users of Windows NT  4.0 require Microsoft Internet Explorer 5.5 or later.</LI><br>\n<LI>Microsoft Visual C++ \u00ae 6.0 (Service Pack 3 or later version is needed to run the SAPI 5 SDK samples)</LI><br>\n<LI>Microsoft Visual Studio.NET is required to compile the C# examples</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL><BR /><br>\n<b>Important File Download Details</b><br>\n<UL><LI>If you want to download sample code, documentation, SAPI, and the U.S. English Speech engines for development purposes, download the Speech SDK 5.1 file (SpeechSDK51.exe).</LI><br>\n<LI>If you want to use the Japanese and Simplified Chinese engines for development purposes, download the Speech SDK 5.1 Language Pack file (SpeechSDK51LangPack.exe) in addition to the Speech SDK 5.1 file.</LI><br>\n<LI>If you want to redistribute the Speech API and/or the Speech engines to integrate and ship as a part of your product,  download the Speech 5.1 SDK Redistributables file (SpeechSDK51MSM.exe).</LI><br>\n<LI>If you want to get only the Mike and Mary voices redistributable for Windows XP,  download Mike and Mary redistributables (Sp5TTIntXP.exe).</LI><br>\n<LI> If you only want the documentation,  download the Documentation file (sapi.chm).</LI></UL>",
+    "additionalInformationSection": "<b>Note: </b>On computers with <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, downloaded Compiled Help Module (CHM) files cannot be opened. For more information, see <a href=\"http://support.microsoft.com/kb/902225/\">KB902225</a>.\n<br /><br />\nAfter saving the file locally, you can view the contents using one of the following methods:\n<br /><br />\n<b>Method 1</b>\n<ol>\n<li>Double-click the .chm file.</li>\n<li>In the <b>Open File-Security Warning</b> dialog box, click to clear the <b>Always ask before opening this file</b> check box.</li>\n<li>Click <b>Open</b>.</li>\n</ol>\n<b>Method 2</b> \n<ol>\n<li>Right-click the CHM file, and then click <b>Properties</b>.</li>\n<li>Click <b>Unblock</b>.</li>\n<li>Double-click the .chm file to open the file.</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "download the Speech Recognition Profile Manager tool",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=cd72250f-2e02-430e-8f99-e1acae760564&DisplayLang=en"
+        },
+        {
+            "title": "home Page for Microsoft .NET Speech Technologies",
+            "url": "http://go.microsoft.com/?linkid=664738"
+        },
+        {
+            "title": "overview of Speech Application Language Tags (SALT)",
+            "url": "http://go.microsoft.com/?linkid=664739"
+        },
+        {
+            "title": "download the Microsoft Speech Application SDK",
+            "url": "http://go.microsoft.com/?linkid=664740"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10121",
+    "downloadPreload": true
+}

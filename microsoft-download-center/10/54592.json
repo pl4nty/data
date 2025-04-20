@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Learning from Everyday Analog Pen Use to Improve Digital Ink Experiences Dataset",
+    "downloadDescription": "This is the data released with the CHI 2017 paper: As We May Ink? Learning from Everyday Analog Pen Use to Improve Digital Ink Experiences. It contains the 493 entries of a diary study with 26 participants on their use of analog pen and the 178 entries of a follow-up diary study with 30 participants on their use of digital pen.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "analog-pen-diary-study.zip",
+            "url": "https://download.microsoft.com/download/f/5/f/f5fb6c2d-613a-4019-a2be-b0f2894dfe8b/analog-pen-diary-study.zip",
+            "size": "207620943",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:43:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the data released with the CHI 2017 paper: As We May Ink? Learning from Everyday Analog Pen Use to Improve Digital Ink Experiences. It contains the 493 entries of a diary study with 26 participants on their use of analog pen and the 178 entries of a follow-up diary study with 30 participants on their use of digital pen.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "analog-pen-diary-study.zip"
+    ],
+    "detailsSection_file_size": [
+        "198.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8, Windows 10, Android, Apple Mac OS X",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download and follow instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54592",
+    "downloadPreload": true
+}

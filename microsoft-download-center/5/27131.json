@@ -1,0 +1,195 @@
+{
+    "error": "",
+    "downloadTitle": "The Microsoft Service Pack Uninstall Tool for Microsoft Office 2010 Client Applications",
+    "downloadDescription": "The Office 2010 SP Uninstall Tool assists with uninstalling the Office 2010 SP patches.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Office2010SPUninstall.exe",
+            "url": "https://download.microsoft.com/download/e/e/2/ee214a05-5d01-4110-835b-1aa1b6e09a9b/Office2010SPUninstall.exe",
+            "size": "431488",
+            "version": "14",
+            "datePublished": "7/15/2024 3:05:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft Service Pack Uninstall Tool for Microsoft Office 2010 Client Applications is a command line tool which will assist with uninstalling client patches installed by Office 2010 service packs.\r\n<br/>\r\n<br/>\r\n<b>Important Note:</b>  This download is only available in English, however it will work with any language version of the service pack.\r\n<br/>\r\n<br/>\r\nBefore using the Office 2010 SP Uninstall Tool, you are strongly encouraged to read the following:\r\n<ul>\r\n<li>For more complete technical details, see \"Microsoft Service Pack Uninstall Tool for Office 2010\" in the <a href=\"http://technet.microsoft.com/en-us/library/ee942199.aspx\"> Apply Updates</a> section of the <a href=\"http://technet.microsoft.com/en-us/library/cc303401.aspx\"> Office 2010 Resource Kit</a>, which contains additional information on using the tool.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14",
+    "detailsSection_file_name": [
+        "Office2010SPUninstall.exe"
+    ],
+    "detailsSection_file_size": [
+        "421.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\n<ul>\n<br /><br /><br /><li><b>Supported Windows Installer Version:</b> Windows Installer 3.1 or greater</li><br/>\n<ul>\n<li>Windows Server 2003 Service Pack 1 includes Windows Installer 3.1. Windows Installer 3.1 is also available as a separate download at the following location:</li><br/>\n<ul>\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=889482FC-5F56-4A38-B838-DE776FD4138C&displaylang=en\">Windows Installer 3.1 Redistributable (v2)</a></li>\n</ul>\n</ul>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>Installation</b>\r\n<br/>\r\n<br/>\r\nThe Office 2010 SP Uninstall Tool is contained in a package called Office2010SPUninstall.exe which is a self-extracting executable file. The tool itself is a single file called OARPMan.exe. There is no installation for the tool. OARPMan.exe, the Microsoft Software License Terms (previously known as End User Licensing Agreement or EULA), and the Readme.txt files will be extracted to the location you specify. \r\n<br/>\r\n<br/>\r\nNote that you must use a subfolder such as C:\\subdir to expand the tool. You cannot expand the tool into the root directory of the hard drive (for example, C:\\). \r\n<br/>\r\n<br/>\r\n<b>Using the Tool</b>\r\n<br/>\r\n<br/>\r\nOnce the tool has been extracted to a folder on the computer, it may be run from a command line. For information on the workflow, refer to the readme.txt file, which should be extracted to the same location as the tool.  Also, as noted above, before using the Office 2010 SP Uninstall Tool, you are strongly encouraged to read the following:\r\n<ul>\r\n<li>For more complete technical details, see \"Microsoft Service Pack Uninstall Tool for Office 2010\" in the <a href=\"http://technet.microsoft.com/en-us/library/ee942199.aspx\"> Apply Updates</a> section of the <a href=\"http://technet.microsoft.com/en-us/library/cc303401.aspx\"> Office 2010 Resource Kit</a>, which contains additional information on using the tool.</li>\r\n</ul>\r\n<br/>\r\n<b>Removing the Tool</b>\r\n<br/>\r\n<br/>\r\nTo remove this download, delete the following files:\r\n<ul>\r\n<li>office2010spuninstall.exe</li>\r\n<li>eula.txt</li>\r\n<li>oarpman.exe</li>\r\n<li>readme.txt</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27131",
+    "downloadPreload": true
+}

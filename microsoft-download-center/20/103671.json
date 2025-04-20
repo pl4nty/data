@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "ADLS-Notification-and-Alerting-Guidelines",
+    "downloadDescription": "ADLS-Notification-and-Alerting-Guidelines",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ADLS-Notification-and-Alerting-Guidelines.pdf",
+            "url": "https://download.microsoft.com/download/6/f/1/6f19fa8a-12bf-4b07-af8c-3f8348421471/ADLS-Notification-and-Alerting-Guidelines.pdf",
+            "size": "2554531",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:05:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Data Lake Storage (ADLS) is a secure, durable, cost-effective and highly scalable cloud data lake offering from Microsoft. Besides providing file based I/O operations, it offers a deep integration with Azure PaaS and SaaS offerings such as Azure Data Factory, Azure Databricks, Azure HDInsight, Azure SQL Datawarehouse and PowerBI. To ensure security, ADLS is well integrated with Azure Active Directory service that allow customers to configure ACL-based roles that match their functional requirements.\r\nThis document is primarily focused on one of the key operational requirements \u2013 be able to receive notifications and alerts whenever things change on ADLS, using one of the following solution approaches:\r\n\u2022 Event Notification & Metrics from ADLS using Log Analytics\r\n\u2022 Event Notification & Metrics from ADLS using Event Hub\r\n\u2022 Event Notification & Metrics from ADLS using Event Grid",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ADLS-Notification-and-Alerting-Guidelines.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "This document is primarily focused on one of the key operational requirements \u2013 be able to receive notifications and alerts whenever things change on ADLS, using one of the following solution approaches:\r\n\u2022 Event Notification & Metrics from ADLS using Log Analytics\r\n\u2022 Event Notification & Metrics from ADLS using Event Hub\r\n\u2022 Event Notification & Metrics from ADLS using Event Grid",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103671",
+    "downloadPreload": true
+}

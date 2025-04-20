@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project Server 2010 Reporting with Excel Services",
+    "downloadDescription": "This document is part of a series of papers covering Microsoft Project Server 2010 Reporting",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Project Server 2010 Reporting with Excel Services.xps",
+            "url": "https://download.microsoft.com/download/7/7/6/7769f459-8d80-4338-a4e0-e06abc83c1fe/Microsoft Project Server 2010 Reporting with Excel Services.xps",
+            "size": "4403818",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Project Server 2010 Reporting with Excel Services.pdf",
+            "url": "https://download.microsoft.com/download/7/7/6/7769f459-8d80-4338-a4e0-e06abc83c1fe/Microsoft Project Server 2010 Reporting with Excel Services.pdf",
+            "size": "3401620",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The purpose of this document is to provide enough detail to be able to create and deploy reports that support the deployment of a Microsoft Enterprise Project Management (EPM) Solution. Microsoft EPM Solution relies on Microsoft SharePoint Server 2010, Microsoft SQL Server 2008 or 2008 R2, Microsoft Project Server 2010, and Microsoft Project Professional 2010. Although each individual component of the solution is well documented on TechNet and MSDN (for Business Intelligence), little documentation exists, as of today, that describes a step-by-step approach to building reports specific to Project Server 2010 data with Excel and Excel Services.  For related information, see the <a href=\"http://technet.microsoft.com/en-US/projectserver/ff513702.aspx\">Business Intelligence Resource Center</a> for Project Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Project Server 2010 Reporting with Excel Services.xps",
+        "Microsoft Project Server 2010 Reporting with Excel Services.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB",
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Adobe Reader or XPS Viewer. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26556",
+    "downloadPreload": true
+}

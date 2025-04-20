@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Code Metrics Powertool for Visual Studio 2013",
+    "downloadDescription": "Command line utility to calculate code metrics for your .NET code",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS_CodeMetrics.exe",
+            "url": "https://download.microsoft.com/download/6/2/6/6267adc2-e33b-4a97-8ce2-87363c9a145b/VS_CodeMetrics.exe",
+            "size": "572496",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Code Metrics PowerTool is a command line utility that calculates code metrics for your managed code and saves them to an XML file. This tool enables teams to collect and report code metrics as part of their build process. The code metrics calculated are: \r\n<ul>\r\n<li>Maintainability Index</li>\r\n<li>Cyclomatic Complexity</li>\r\n<li>Depth of Inheritance</li>\r\n<li>Class Coupling</li>\r\n<li>Lines Of Code (LOC)</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "VS_CodeMetrics.exe"
+    ],
+    "detailsSection_file_size": [
+        "559.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported architectures:</b>\r\n<ul>\r\n<li>32-Bit (x86)</li>\r\n<li>64-Bit (x64) (WOW)</li>\r\n</ul>\r\n\r\n<b>Prerequisites:</b>\r\n<ul>\r\n<li>Visual Studio 2013 Ultimate or Visual Studio 2013 Premium or Visual Studio 2013 Professional</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the download button on this page to start the download</li>\r\n<li>Run the VS_CodeMetrics.exe installer</li>\r\n<li>Open the command line and navigate to ...\\Microsoft Visual Studio 12.0\\Team Tools\\Static Analysis Tools\\FxCop</li>\r\n<li>Run metrics.exe /? to view the documentation for the tool</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41647",
+    "downloadPreload": true
+}

@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2008 Product Comparison Guide",
+    "downloadDescription": "This guide provides a comprehensive product comparison of the Visual Studio 2008 IDE products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VisualStudio2008-ProductComparison-v1.08.xps",
+            "url": "https://download.microsoft.com/download/5/f/e/5feb6914-bcdf-432f-81c7-e386812b086a/VisualStudio2008-ProductComparison-v1.08.xps",
+            "size": "1530374",
+            "version": "1.08",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "VisualStudio2008-ProductComparison-v1.08.docx",
+            "url": "https://download.microsoft.com/download/5/f/e/5feb6914-bcdf-432f-81c7-e386812b086a/VisualStudio2008-ProductComparison-v1.08.docx",
+            "size": "290170",
+            "version": "1.08",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VisualStudio2008-ProductComparison-v1.08.pdf",
+            "url": "https://download.microsoft.com/download/5/f/e/5feb6914-bcdf-432f-81c7-e386812b086a/VisualStudio2008-ProductComparison-v1.08.pdf",
+            "size": "1426829",
+            "version": "1.08",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide provides a comprehensive product comparison of the Visual Studio 2008 IDE products. It does not provide data about Visual Studio Team System 2008 Team Foundation Server, Visual Studio Team System 2008 Team Explorer, or Visual Studio Team System 2008 Test Load Agent. This guide is provided for illustrative purposes only.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.08",
+    "detailsSection_file_name": [
+        "VisualStudio2008-ProductComparison-v1.08.xps",
+        "VisualStudio2008-ProductComparison-v1.08.docx",
+        "VisualStudio2008-ProductComparison-v1.08.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "283.4 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the Word document, you'll need a copy of Microsoft Office Word 2007, or Microsoft Word 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.<br />\nTo view the PDF file, you'll need a PDF reader, such as the free Adobe Acrobat Reader.<br />\nTo view the XPS file, you'll need Windows Vista, or the Microsoft XML Paper Specification Essentials Pack.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download this guide in your choice of the following formats: Microsoft Word document (DOCX), PDF file or XPS file.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio 2008",
+            "url": "http://www.microsoft.com/vstudio"
+        },
+        {
+            "title": "microsoft XML Paper Specification Essentials Pack",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=b8dcffdd-e3a5-44cc-8021-7649fd37ffee"
+        },
+        {
+            "title": "microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=941b3470-3ae9-4aee-8f43-c6bb74cd1466"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7940",
+    "downloadPreload": true
+}

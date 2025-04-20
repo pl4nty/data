@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Make Bing Your Search Engine",
+    "downloadDescription": "Make Bing Your Search Engine",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DefaultPack.exe",
+            "url": "https://download.microsoft.com/download/8/3/d/83d7cfcc-5790-4068-8b4e-c3a3eaaeeda1/InProduct/U239/DefaultPack.exe",
+            "size": "7997360",
+            "version": "1.7.57.1",
+            "datePublished": "7/15/2024 4:56:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This installer makes Bing your default search engine. The installation applies to Internet Explorer, Firefox, Chrome and Safari.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.7.57.1",
+    "detailsSection_file_name": [
+        "DefaultPack.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 10;Windows 8.1; Windows 8; Windows 7; Windows Vista; Windows XP with Service Pack (SP) 3</li><br />\r\n<li>Internet Explorer 7 till 10 ; Mozilla Firefox 3 or later; Google Chrome 3 or later; Apple Safari 5.1.4 or later</li><br />\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "To install, click <b>Download</b> then follow the instructions. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41702",
+    "downloadPreload": true
+}

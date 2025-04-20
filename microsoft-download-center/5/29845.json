@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Creating Excel 2010 Bubble Charts for Use with Excel Services",
+    "downloadDescription": "This Excel 2010 sample workbook accompanies the MSDN article \"Creating Excel 2010 Bubble Charts for Use with Excel Services.\" The workbook uses built-in Excel functions to generate the series data dynamically and is completely compatible with Excel Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicBubbleChart.xlsx",
+            "url": "https://download.microsoft.com/download/9/f/d/9fd9fe55-06f3-4a10-abfb-44bfc865b035/DynamicBubbleChart.xlsx",
+            "size": "34058",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The DynamicBubbleChart.xlsx file is a custom Excel 2010 workbook sample that contains the data, PivotTable, and Bubble chart described in the article \"Creating Excel 2010 Bubble Charts for Use with Excel Services.\" <br />\r\n<br />\r\nA Bubble chart is a variation of a Scatter chart in which the data points are replaced with bubbles. You can use a Bubble chart if your data has three data series, each of which contains a set of values. The article presents an example of creating a Bubble chart that can be changed dynamically by applying filters. By avoiding the use of macros, the chart is compatible with Excel Services.<br />\r\n<br />\r\nThere are various examples on the web that provide macros and scripts to create Bubble charts dynamic series by using macros; however, those methods are seldom sufficient when you want to publish the Excel sheets by using Excel Services because Excel Services doesn\u2019t support macros. The example provided uses built-in Excel functions to generate the series data dynamically, and hence, because it doesn't use macros, it is completely compatible with Excel Services.<br />\r\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DynamicBubbleChart.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "33.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Excel 2010<br />\r\nWindows 7, Windows Vista\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To download the sample file, click <b>Download</b>, and save the .xlsx file to your hard disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29845",
+    "downloadPreload": true
+}

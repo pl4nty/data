@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics Simulation and Geometric Modeling Using D* Symbolic Differentiation",
+    "downloadDescription": "D* is a program for efficiently computing symbolic derivatives. Last published: September 1, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DStar.zip",
+            "url": "https://download.microsoft.com/download/f/1/0/f101e6f1-ed64-492b-8ecb-af2393af0c58/DStar.zip",
+            "size": "30136542",
+            "version": "0.28",
+            "datePublished": "6/13/2024 12:54:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "D* is a program for efficiently computing symbolic derivatives. This release includes source code tutorials showing basic D* usage, source code for Lagrangian dynamics, and source code for a simple geometric modeler.\r\n\r\nThis version has a new linear time dynamics algorithm which is much faster than the algorithm used in previous releases, especially for systems with many degrees of freedom.\r\n\r\nThe FAQ has been expanded with more details on techniques for optimizing performance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.28",
+    "detailsSection_file_name": [
+        "DStar.zip"
+    ],
+    "detailsSection_file_size": [
+        "28.7 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52567",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "RcmReplicationsToCleanup_20220509T122439",
+    "downloadDescription": "RcmReplicationsToCleanup_20220509T122439",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmReplicationsToCleanup.json",
+            "url": "https://download.microsoft.com/download/e/0/e/e0ecdcae-4a89-4157-a09e-397536d6e736/RcmReplicationsToCleanup.json",
+            "size": "486802",
+            "version": "20220509T122439",
+            "datePublished": "3/15/2024 4:29:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RcmReplicationsToCleanup_20220509T122439",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20220509T122439",
+    "detailsSection_file_name": [
+        "RcmReplicationsToCleanup.json"
+    ],
+    "detailsSection_file_size": [
+        "475.4 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Rcm service will consume the file internally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104157",
+    "downloadPreload": true
+}

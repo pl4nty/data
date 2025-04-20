@@ -1,0 +1,208 @@
+{
+    "error": "",
+    "downloadTitle": "February 2012 Security Release ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on February 14, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-201202.iso",
+            "url": "https://download.microsoft.com/download/a/8/2/a82d57d7-b096-403a-a229-364f6d879116/Windows-KB913086-201202.iso",
+            "size": "3366459392",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on February 14, 2012. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://technet.microsoft.com/en-us/security/bulletin\">http://technet.microsoft.com/en-us/security/bulletin</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />  The below Operating Systems will contain the following number of languages unless otherwise noted: <br /><ul><li>Windows XP - 24 languages</li><li>Windows XP x64 Edition - 2 languages</li><li>Windows Server 2003 - 18 languages</li><li>Windows Server 2003 x64 Edition - 11 languages</li><li>Windows Server 2003 for Itanium-based Systems - 4 languages</li><li>Windows Vista - 36 languages</li><li>Windows Vista for x64-based Systems - 36 languages</li><li>Windows Server 2008 - 19 languages</li><li>Windows Server 2008 x64 Edition - 19 languages</li><li>Windows Server 2008 for Itanium-based Systems - 4 languages</li><li>Windows Server 2008 R2 x64 Edition - 19 languages</li><li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li><li>Windows 7 - 36 languages</li><li>Windows 7 for x64-based Systems - 36 languages</li></ul><br /><br />    This DVD5 image contains the following updates: <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2633870; KB2633873; KB2633874; KB2633879; KB2633880; KB2643719; KB2645640; KB2647516; KB2654428; KB2660465; KB2661637",
+        "name": "KB2633870; KB2633873; KB2633874; KB2633879; KB2633880; KB2643719; KB2645640; KB2647516; KB2654428; KB2660465; KB2661637"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-008; MS12-009; MS12-010; MS12-012; MS12-013; MS12-014; MS12-016",
+        "name": "MS12-008; MS12-009; MS12-010; MS12-012; MS12-013; MS12-014; MS12-016"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-201202.iso"
+    ],
+    "detailsSection_file_size": [
+        "3.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Service Pack 1",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28924",
+    "downloadPreload": true
+}

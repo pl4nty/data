@@ -1,0 +1,140 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.7.1 Language Pack for Windows RT 8.1",
+    "downloadDescription": "The .NET Framework 4.7.1 Language Pack contains localized resources for supported languages. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB4033369-arm.msu",
+            "url": "https://download.microsoft.com/download/c/b/2/cb2a5e97-d623-4b0b-99ff-16e0cd87693b/Windows8.1-KB4033369-arm.msu",
+            "size": "26163486",
+            "version": "4.7.1",
+            "datePublished": "7/15/2024 4:45:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.7.1 Language Pack contains translated error messages and other UI text for languages other than English. If you don't install a language pack, this text is displayed in English. You can install multiple language packs on one computer, each for a different language. \r\nYou need to download and install the .NET Framework 4.7.1 prior to installing the language packs. You can find the .NET Framework 4.7.1 <a href=\"http://go.microsoft.com/fwlink/?LinkId=852089\"> here</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4033417",
+        "name": "KB4033417"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.7.1",
+    "detailsSection_file_name": [
+        "Windows8.1-KB4033369-arm.msu"
+    ],
+    "detailsSection_file_size": [
+        "25.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating Systems:</b>   \r\n<ul> \r\n <li>Windows RT 8.1</li>\r\n</ul>\r\n<b>Minimum Hardware Requirements:</b>\r\n<ul>  \r\n<li>1 GHz or faster processor</li>   \r\n<li>512 MB of RAM</li>     \r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ul>On this page, choose the <b>Download</b> button.\r\n <ul>\r\n <li>To install the software now, choose the <b>Run</b> button.</li>\r\n <li>To install the software later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\r\n </ul>\r\n</ul>\r\n",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=852113\">KB4033417</a> for more information.\r\n<br/>\r\n\r\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=852108\"> Known issues for the .NET Framework 4.7.1 </a>.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56118",
+    "downloadPreload": true
+}

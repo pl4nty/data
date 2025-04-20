@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "MetaLWOz: A Dataset of Multi-Domain Dialogues for the Fast Adaptation of Conversation Models",
+    "downloadDescription": "MetaLWOz: A Dataset of Multi-Domain Dialogues for the Fast Adaptation of Conversation Models",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "metalwoz-v1.zip",
+            "url": "https://download.microsoft.com/download/e/b/8/eb84cb1a-d57d-455f-b905-3abde80404e5/metalwoz-v1.zip",
+            "size": "5639228",
+            "version": "June 2019",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We introduce the Meta-Learning Wizard of Oz (MetaLWOz) dialogue dataset for developing fast adaptation methods for conversation models. This data can be used to train task-oriented dialogue models, specifically to develop methods to quickly simulate user responses with a small amount of data. Such fast-adaptation models fall into the research areas of transfer learning and meta learning.  The dataset consists of 37,884 crowdsourced dialogues recorded between two human users in a Wizard of Oz setup, in which one was instructed to behave like a bot, and the other a true human user. The users are assigned a task belonging to a particular domain, for example booking a reservation at a particular restaurant, and work together to complete the task.  Our dataset spans 47 domains having 227 tasks total. Dialogues are a minimum of 10 turns long",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2019",
+    "detailsSection_file_name": [
+        "metalwoz-v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58389",
+    "downloadPreload": true
+}

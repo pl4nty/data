@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone 8.1 Security Overview",
+    "downloadDescription": "Get an overview of the enterprise-level security features available in Windows Phone 8.1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-Phone-8-1-Security-Overview.pdf",
+            "url": "https://download.microsoft.com/download/b/9/a/b9a00269-28d5-4aca-9e8e-e2e722b35a7d/Windows-Phone-8-1-Security-Overview.pdf",
+            "size": "728852",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:45:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "From highly secure identity features, such as Multi-Factor Authentication (MFA) with virtual smart cards and PINs to its defense-in-depth, multilayered approach that addresses organizational security requirements in numerous ways, Windows Phone 8.1 is designed with security in mind. Explore these features in more detail and learn why, because Windows Phone 8.1 shares many of the same underlying components, including those related to security, as Windows 8.1 and Windows Server 2012 R2 operating systems, it offers predictability, reliability, and commonality in how Windows Phone 8.1 devices can be used and managed in an enterprise environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows-Phone-8-1-Security-Overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "711.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Phone 8.1 TechCenter",
+            "url": "http://technet.microsoft.com/windows/dn632466.aspx?ocid=wc-mscom-dlc"
+        },
+        {
+            "title": "windows Phone 8.1 Technical Library",
+            "url": "http://technet.microsoft.com/library/dn643717.aspx?ocid=wc-mscom-dlc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42509",
+    "downloadPreload": true
+}

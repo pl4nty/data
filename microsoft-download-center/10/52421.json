@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Proximal-Gradient Homotopy Method for Sparse Least Squares",
+    "downloadDescription": "Proximal-gradient homotopy is an efficient numerical method for solving the L1-regularized least-squares problem\u2014minimize_x (1/2) ||A*x-b||_2^2 + lambda*||x||_1\u2014where A is an m-by-n matrix, and lambda is a positive regularization parameter. Last published: March 23, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PGH4SLS.zip",
+            "url": "https://download.microsoft.com/download/b/d/6/bd651606-d965-4b9c-83ad-fda42eedad79/PGH4SLS.zip",
+            "size": "20251",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Proximal-gradient homotopy is an efficient numerical method for solving the L1-regularized least-squares problem\u2014minimize_x  (1/2) ||A*x-b||_2^2 + lambda*||x||_1\u2014where A is an m-by-n matrix, and lambda is a positive regularization parameter. This method is especially effective for sparse recovery applications in which the dimensions satisfies m &lt; n and the optimal solution x* is provably sparse. The implementation in MATLAB can solve the more general problem\u2014minimize_x  f(x) + lambda*R(x)\u2014where f(x) is a differentiable convex function and R(x) is a simple convex function whose proximal mapping can be computed efficiently.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PGH4SLS.zip"
+    ],
+    "detailsSection_file_size": [
+        "19.8 KB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52421",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Hosting Guide: Overview and Planning",
+    "downloadDescription": "Overview of planning for a hosted deployment of Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Dynamics_AX2009_Hosting_Guide_Overview_and_Planning.xps",
+            "url": "https://download.microsoft.com/download/7/3/a/73a025f7-2b8c-4afc-b7ea-d3bb0b989a5c/Microsoft_Dynamics_AX2009_Hosting_Guide_Overview_and_Planning.xps",
+            "size": "1148387",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:27:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft_Dynamics_AX2009_Hosting_Guide_Overview_and_Planning.pdf",
+            "url": "https://download.microsoft.com/download/7/3/a/73a025f7-2b8c-4afc-b7ea-d3bb0b989a5c/Microsoft_Dynamics_AX2009_Hosting_Guide_Overview_and_Planning.pdf",
+            "size": "1505090",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:27:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the concept of a hosted deployment of Microsoft Dynamics AX and discusses the factors that partners should consider when planning for one. Factors include the customer's IT infrastructure, the components of the business application, deployment options, and server and data management in the context of a hosted infrastructure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_AX2009_Hosting_Guide_Overview_and_Planning.xps",
+        "Microsoft_Dynamics_AX2009_Hosting_Guide_Overview_and_Planning.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25015",
+    "downloadPreload": true
+}

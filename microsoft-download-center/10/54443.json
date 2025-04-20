@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "OMS Gateway (GA)",
+    "downloadDescription": "The OMS Gateway is a proxy server that sends data from services with no internet connectivity to OMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OMS Gateway.msi",
+            "url": "https://download.microsoft.com/download/b/7/8/b78d4346-e25e-4923-ab71-3824e2480929/OMS Gateway.msi",
+            "size": "2465792",
+            "version": "GA",
+            "datePublished": "7/15/2024 4:36:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "The OMS Gateway enables customers send data to a central server which has internet access. It is a HTTP forward proxy that supports HTTP tunneling via the HTTP CONNECT command. The Gateway can handle up to 1000 OMS concurrent connected devices, if run on a 4 core CPU, 8 GB Windows Server with a 1Gbps network connection. In order to use the OMS Gateway, you need to install the OMS agent on the Gateway server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "GA",
+    "detailsSection_file_name": [
+        "OMS Gateway.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "- Client SKU: Windows 7, Windows 8.1, Windows 10\r\n\r\n- Server SKU: W2008, W2012, W2012R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "1. Install the OMS agent on the server on which you will be installing the Gateway.\r\n\r\n2. Install the OMS Gateway.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54443",
+    "downloadPreload": true
+}

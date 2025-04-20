@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Hybrid Hiring",
+    "downloadDescription": "A large-scale user study leveraging a re-created dataset of real bios from prior work, where humans predict the ground truth occupation of given candidates with and without the help of three different NLP classifiers (random, bag-of-words, and deep neural network).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "hybridhiring.zip",
+            "url": "https://download.microsoft.com/download/f/2/e/f2e0d694-7b0f-4fa6-a436-2e4421796ef3/hybridhiring.zip",
+            "size": "951538",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:59:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In AI-assisted decision-making, effective hybrid (human-AI) teamwork is not solely dependent on AI performance alone, but also on its impact on human decision-making. We consider the domain of ML-assisted hiring, where humans -- operating in a constrained selection setting -- can choose whether they wish to utilize a trained model's inferences to help select candidates from written biographies. We conduct a large-scale user study leveraging a re-created dataset of real bios from prior work, where humans predict the ground truth occupation of given candidates with and without the help of three different NLP classifiers (random, bag-of-words, and deep neural network). Our results demonstrate that while high-performance models significantly improve human performance in a hybrid setting, some models mitigate hybrid bias while others accentuate it. We examine these findings through the lens of decision conformity and observe that our model architecture choices have an impact on human-AI conformity and bias, motivating the explicit need to assess these complex dynamics prior to deployment. We introduce our full experimental data as Hybrid Hiring, a large-scale dataset for studying human AI decision-making that is collected and evaluated on real world candidates. Comprised of 38,400 human judgements over 9,600 unique prediction tasks across seven conditions, our dataset represents a first of its kind released to study human decision-making in the loop utilizing trained ML inferences. See our paper https://arxiv.org/abs/2202.11812 for more details.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "hybridhiring.zip"
+    ],
+    "detailsSection_file_size": [
+        "929.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows 10 or Windows 11</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ul><li>Click <b>Download</b> and follow the instructions.</li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105296",
+    "downloadPreload": true
+}

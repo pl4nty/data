@@ -1,0 +1,293 @@
+{
+    "error": "",
+    "downloadTitle": "Storage Spaces Direct Management Pack for Windows Server 2016 and above",
+    "downloadDescription": "Storage Spaces Direct Management Pack for Windows Server 2016 and above",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Storage Spaces Direct MP Guide.docx",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Storage Spaces Direct MP Guide.docx",
+            "size": "508872",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for StorageSpacesDirect.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft System Center Management Pack for StorageSpacesDirect.msi",
+            "size": "1560576",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.TRK.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.TRK.msi",
+            "size": "552960",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.SVE.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.SVE.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.RUS.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.RUS.msi",
+            "size": "557056",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.PTG.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.PTG.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.PTB.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.PTB.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.PLK.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.PLK.msi",
+            "size": "557056",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.NLD.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.NLD.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.KOR.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.KOR.msi",
+            "size": "565248",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.JPN.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.JPN.msi",
+            "size": "557056",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.ITA.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.ITA.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.HUN.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.HUN.msi",
+            "size": "557056",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.FRA.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.FRA.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.ESN.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.ESN.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.DEU.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.DEU.msi",
+            "size": "552960",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.CSY.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.CSY.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.CHT.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.CHT.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Storage Spaces Direct.CHS.msi",
+            "url": "https://download.microsoft.com/download/7/0/5/70509486-2d0f-4e53-a99f-f6db413e7df6/Microsoft SC MP for Storage Spaces Direct.CHS.msi",
+            "size": "548864",
+            "version": "1.0.47.4",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "The System Center Operations Manager (SCOM) Management Pack for Storage Spaces Direct on Windows Server 2016 and above that provides a straightforward monitoring solution for your Storage Spaces Direct configurations. It\u2019s designed for use with Windows Server 2016 and later versions, extending SCOM's monitoring capabilities to various components of your storage infrastructure.<br/><br/>\r\nKey Features:<br/><br/>\r\n<ol>\r\n<li><b>Storage Pool Monitoring:</b> Track the health and performance of storage pools.</li>\r\n<li><b>Storage Node Monitoring:</b> Monitor the operational status of storage nodes.</li>\r\n<li><b>Physical Disk Monitoring:</b> Keep an eye on the health and availability of physical disks.</li>\r\n<li><b>File Shares Monitoring:</b> Ensure file shares are accessible and performing well.</li>\r\n<li><b>Volumes Monitoring:</b> Monitor the status and performance of volumes.</li>\r\n<li><b>Storage Subsystems Monitoring:</b> Gain an overview of the storage subsystems\u2019 performance and health.</li>\r\n</ol>\r\n<br/><br/>This Management Pack integrates seamlessly with System Center Operations Manager (SCOM), aiding administrators in keeping Storage Spaces Direct environments well-monitored and managed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.47.4",
+    "detailsSection_file_name": [
+        "Storage Spaces Direct MP Guide.docx",
+        "Microsoft System Center Management Pack for StorageSpacesDirect.msi",
+        "Microsoft SC MP for Storage Spaces Direct.TRK.msi",
+        "Microsoft SC MP for Storage Spaces Direct.SVE.msi",
+        "Microsoft SC MP for Storage Spaces Direct.RUS.msi",
+        "Microsoft SC MP for Storage Spaces Direct.PTG.msi",
+        "Microsoft SC MP for Storage Spaces Direct.PTB.msi",
+        "Microsoft SC MP for Storage Spaces Direct.PLK.msi",
+        "Microsoft SC MP for Storage Spaces Direct.NLD.msi",
+        "Microsoft SC MP for Storage Spaces Direct.KOR.msi",
+        "Microsoft SC MP for Storage Spaces Direct.JPN.msi",
+        "Microsoft SC MP for Storage Spaces Direct.ITA.msi",
+        "Microsoft SC MP for Storage Spaces Direct.HUN.msi",
+        "Microsoft SC MP for Storage Spaces Direct.FRA.msi",
+        "Microsoft SC MP for Storage Spaces Direct.ESN.msi",
+        "Microsoft SC MP for Storage Spaces Direct.DEU.msi",
+        "Microsoft SC MP for Storage Spaces Direct.CSY.msi",
+        "Microsoft SC MP for Storage Spaces Direct.CHT.msi",
+        "Microsoft SC MP for Storage Spaces Direct.CHS.msi"
+    ],
+    "detailsSection_file_size": [
+        "496.9 KB",
+        "1.5 MB",
+        "540.0 KB",
+        "536.0 KB",
+        "544.0 KB",
+        "536.0 KB",
+        "536.0 KB",
+        "544.0 KB",
+        "536.0 KB",
+        "552.0 KB",
+        "544.0 KB",
+        "536.0 KB",
+        "544.0 KB",
+        "536.0 KB",
+        "536.0 KB",
+        "540.0 KB",
+        "536.0 KB",
+        "536.0 KB",
+        "536.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\r\n<ul>\r\n<li>System Center Operations Manager 2022</li>\r\n<li>System Center Operations Manager 2019</li>\r\n<li>System Center Operations Manager 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100782",
+    "downloadPreload": true
+}

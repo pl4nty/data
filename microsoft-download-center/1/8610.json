@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Denmark - OIOUBL Electronic Invoicing",
+    "downloadDescription": "This white paper describes a country-specific update released for Denmark in rollup 8 for Microsoft Dynamics AX 2009 SP1. See Microsoft Knowledge Base article 2677618 for hotfix download information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country_specific_update_for_Denmark_OIOUBL_electronic_invoicing.pdf",
+            "url": "https://download.microsoft.com/download/0/d/e/0de387ed-29d1-4761-bb2f-b848e56eafa3/Country_specific_update_for_Denmark_OIOUBL_electronic_invoicing.pdf",
+            "size": "360811",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For more information about other features that apply to Denmark, refer to the Help. Information that is specific to Denmark includes (DNK) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Country_specific_update_for_Denmark_OIOUBL_electronic_invoicing.pdf"
+    ],
+    "detailsSection_file_size": [
+        "352.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8610",
+    "downloadPreload": true
+}

@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Team System Web Access 2008 Scalability Limits White Paper",
+    "downloadDescription": "This document explains the scalability limits of Team System Web Access 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Team System Web Access 2008 Scalability Limits.xps",
+            "url": "https://download.microsoft.com/download/1/f/8/1f8ff5a6-c1ee-4702-abfd-118b662c0cae/Team System Web Access 2008 Scalability Limits.xps",
+            "size": "551466",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Team System Web Access 2008 Scalability Limits.docx",
+            "url": "https://download.microsoft.com/download/1/f/8/1f8ff5a6-c1ee-4702-abfd-118b662c0cae/Team System Web Access 2008 Scalability Limits.docx",
+            "size": "50661",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DeleteTSWACache.zip",
+            "url": "https://download.microsoft.com/download/1/f/8/1f8ff5a6-c1ee-4702-abfd-118b662c0cae/DeleteTSWACache.zip",
+            "size": "2124",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Team System Web Access 2008 Scalability Limits.pdf",
+            "url": "https://download.microsoft.com/download/1/f/8/1f8ff5a6-c1ee-4702-abfd-118b662c0cae/Team System Web Access 2008 Scalability Limits.pdf",
+            "size": "465979",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document explains the scalability limits of Team System Web Access 2008 power tool and provides workarounds to improve the total number of concurrent users that Web Access can support.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Team System Web Access 2008 Scalability Limits.xps",
+        "Team System Web Access 2008 Scalability Limits.docx",
+        "DeleteTSWACache.zip",
+        "Team System Web Access 2008 Scalability Limits.pdf"
+    ],
+    "detailsSection_file_size": [
+        "538.5 KB",
+        "49.5 KB",
+        "2.1 KB",
+        "455.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n\r\n<li>To view the DOCX file, you will need Microsoft Office Word 2007. </li>\r\n<li>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </li>\r\n<li>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack.</li>\r\n\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click Download to download the document in DOCX, PDF or XPS file format.</li>\r\n<li>Save the file to your computer.</li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "hakan Eskici's Blog",
+            "url": "http://blogs.msdn.com/hakane/"
+        },
+        {
+            "title": "forum - Team System Web Access",
+            "url": "http://social.msdn.microsoft.com/forums/en-US/tfswebaccess/threads/"
+        },
+        {
+            "title": "ed Hintz's Blog",
+            "url": "http://blogs.msdn.com/edhintz/"
+        },
+        {
+            "title": "download - Team System Web Access 2008 SP1",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=136577"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15930",
+    "downloadPreload": true
+}

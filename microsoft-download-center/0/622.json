@@ -1,0 +1,219 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2008 R2 Reporting Services Add-in for Microsoft SharePoint\u00ae Technologies 2010",
+    "downloadDescription": "The Microsoft\u00ae SQL Server\u00ae 2008 R2 Reporting Services Add-in for Microsoft SharePoint\u00ae Technologies allows you to integrate your reporting environment with SharePoint to experience the benefits of using the collaborative environment provided by SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rsSharePoint.msi",
+            "url": "https://download.microsoft.com/download/1/0/f/10f1c44b-6607-41ed-9e82-df7003bfbc40/rsSharePoint.msi",
+            "size": "38600704",
+            "version": "10.50.6000.34",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "readme_rsaddin.htm",
+            "url": "https://download.microsoft.com/download/1/0/f/10f1c44b-6607-41ed-9e82-df7003bfbc40/1033/x64/readme_rsaddin.htm",
+            "size": "36835",
+            "version": "10.50.6000.34",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae SQL Server\u00ae 2008 R2 Reporting Services Add-in for Microsoft SharePoint\u00ae Technologies 2010 allows you to integrate your reporting environment with SharePoint to experience the benefits of using the collaborative environment provided by SharePoint.  Once you install the Reporting Services Add-in and configure your servers for integration, you can publish Reporting Services content to a SharePoint library and then view and manage those documents directly from a SharePoint site.  \n<br />\n<ul>\nThis download provides a Report Viewer Web part, Web application pages, and supports SharePoint 2010.  New capabilities delivered include:\n<br />\n<li>Multizone support. Use the alternate access mapping functionality in your SharePoint environment to access report server items from one or more SharePoint zones (default, internet, intranet, extranet, or custom).  This is useful when you have a SharePoint environment that can be accessed by users from multiple zones</li>\n<br />\n<li>SharePoint list support.  Access SharePoint lists as data sources for building reports in Report Builder</li>\n<br />\n<li>Ribbon user experience. Group reports in a more logical manner through the extension of the SharePoint ribbon, making content much easier to find</li><br />\n<br />\n</ul>\r\n\r\n<b>Distribution of RSSharePoint.msi:</b> Use of RSSharePoint.msi is subject to the license terms included in the \u201cRSSharePoint\u201d download file. Those terms do not include rights to distribute RSSharePoint.msi.  If you wish to distribute RSSharePoint.msi with your programs, you must:<br/>\r\n<br/>\r\n<ul>\r\n<li>Download the above \u201cRSSharePoint.msi - Supplemental Redist License.rtf\u201d  and review the enclosed Microsoft Software Supplemental License Terms for Microsoft SQL Server 2008 R2 Reporting Services Add-in for Microsoft SharePoint Technologies 2010 with additional use terms for Distributable Code (Supplemental Terms)</li>\r\n<li>Print and retain a copy of the Supplemental Terms for your records</li>\r\n<li><b>By Downloading and Printing the Supplemental Terms located in the RSSharePoint.msi - Supplemental Redist License.rtf, you (i) acknowledge you have read the Supplemental Terms, and (ii) agree to the terms as stated in the Supplemental Terms.  If you do not accept them, you do not have any rights under these Supplemental Terms.</b> </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.50.6000.34",
+    "detailsSection_file_name": [
+        "rsSharePoint.msi",
+        "readme_rsaddin.htm"
+    ],
+    "detailsSection_file_size": [
+        "36.8 MB",
+        "36.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>25 MB of available hard disk space is needed for the Add-in.</li>\n  <li>Review the Windows SharePoint Services or Office SharePoint Services 2010 documentation for relevant system requirements.</li>\n  </ul>\n<br />\nThe computer must meet the following software requirements:\n<ul>\n  <li>Microsoft Office SharePoint Server 2010 or Windows SharePoint Services 2010 with .NET Programmability Support. </li>\n  <li>If running on Microsoft Windows Server 2003, have the latest service packs (x86 only) installed, and configure the server to run as an Application Server with ASP.NET 2.0 enabled. </li>\n  <li>SQL Server 2008 R2 Reporting Services (Supported SQL Server editions include Standard, Evaluation, Developer, and Enterprise.) </li>\n  <li>The Web sites cannot be enabled for Anonymous access.</li>\n  <li>Microsoft Internet Explorer 6.0 with SP2 or later. Microsoft Internet Explorer 7.0 is strongly recommended.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\nYou can install and configure the servers in any order, but integrated operations will not be available until the configuration steps are complete for both servers. For detailed information on the installation steps, see the Readme for the existing Reporting Services Add-in.<br /><br />\n<ul>\n  <b>Step 1:</b> Install a SharePoint technology instance.<br /><br />\n  <b>Step 2:</b> Install SQL Server 2008 R2 Reporting Services and specify that the report server use SharePoint Integrated mode.<br /><br />\n  <b>Step 3:</b> Configure Reporting Services.<br /><br />\n  <b>Step 4:</b> Download the Reporting Services Add-in by clicking the rsSharePoint.msi link later on this page. To start the installation immediately, click <b>Run</b>. To install at a later time, click <b>Save</b>.<br /><br />\n  <b>Step 5:</b> Install the Reporting Services Add-in and configure the report server on the SharePoint technology instance.<br /><br />\n  <b>Step 6:</b> Set permissions and add Reporting Services content types.<br /><br />\n  <b>Step 7:</b> Verify the installation.\n</ul><br />",
+    "additionalInformationSection": "<ul>\n  <li>If you have questions about the Reporting Services Add-in, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=82743\">SQL Server Reporting Services Forum on MSDN</a>.</li><br /><br />\n  <li>Help improve the Reporting Services Add-in by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul>\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Tech Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=28107"
+        },
+        {
+            "title": "home Page for SQL Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=8504"
+        },
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=26339"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "622",
+    "downloadPreload": true
+}

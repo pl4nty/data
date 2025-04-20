@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 Upgrade Script Reference ",
+    "downloadDescription": "This file provides reference information that describes the functionality of the data upgrade scripts.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UpgradeScripts.exe",
+            "url": "https://download.microsoft.com/download/7/7/f/77f63de5-2b19-4459-b28c-3d5fdbb8993a/UpgradeScripts.exe",
+            "size": "5230187",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:14:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the UpgradeScripts.chm file, which describes the functionality of the data upgrade scripts implemented by Microsoft Dynamics AX 2012 within the Microsoft layer (sys, gls). Data upgrade scripts are executed as part of the data upgrade process to upgrade data from a source Microsoft Dynamics AX database to Microsoft Dynamics AX 2012. The documentation contains script information organized by class and method name. You might find the following cross-reference topics useful when upgrading your data: <br />\r\n<br />\r\n<UL><LI>Affected tables, listed by table </LI>\n<LI>Affected tables, listed by script </LI>\n<LI>Affected modules, listed by module </LI>\r\n<LI>Affected modules, listed by script </LI></UL><br />\r\nMost of the data upgrade scripts apply to all Microsoft Dynamics AX 2012 installations. To find the scripts specific to an affected layer, use the search tab and search for the layer. For example, GLS Cons for the consolidated Brazil, China, Japan, Thailand, and India, or GLS EE for Eastern Europe.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "UpgradeScripts.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to save the file to your computer.</LI>\r\n<LI>Double-click the <b>UpgradeScripts.exe</b> file on your computer and follow the instructions on the screens to extract the .chm file.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6433",
+    "downloadPreload": true
+}

@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Azure AD Identity Provider Compatibility Docs",
+    "downloadDescription": "Azure AD Identity Provider Compatibility Docs",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "STS Integration Paper using WS Protocols Feb 2017.docx",
+            "url": "https://download.microsoft.com/download/1/3/3/13367719-6538-4a97-a1a6-579c2c4c8d90/STS Integration Paper using WS Protocols Feb 2017.docx",
+            "size": "214144",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "STS Integration Interoperability Scenario Requirements Mar 2018.docx",
+            "url": "https://download.microsoft.com/download/1/3/3/13367719-6538-4a97-a1a6-579c2c4c8d90/STS Integration Interoperability Scenario Requirements Mar 2018.docx",
+            "size": "36582",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3rd Party Identity Providers Compatibility with AAD as of May 2018.pdf",
+            "url": "https://download.microsoft.com/download/1/3/3/13367719-6538-4a97-a1a6-579c2c4c8d90/3rd Party Identity Providers Compatibility with AAD as of May 2018.pdf",
+            "size": "244740",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Azure Active Directory federation compatibility list Program Description July 2015.pdf",
+            "url": "https://download.microsoft.com/download/1/3/3/13367719-6538-4a97-a1a6-579c2c4c8d90/Azure Active Directory federation compatibility list Program Description July 2015.pdf",
+            "size": "631715",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft no longer provides validation testing to independent identity providers for compatibility with Azure AD.  Microsoft encourages identity providers to use this self-service documentation to validate compatibilty with Azure AD.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "STS Integration Paper using WS Protocols Feb 2017.docx",
+        "STS Integration Interoperability Scenario Requirements Mar 2018.docx",
+        "3rd Party Identity Providers Compatibility with AAD as of May 2018.pdf",
+        "Azure Active Directory federation compatibility list Program Description July 2015.pdf"
+    ],
+    "detailsSection_file_size": [
+        "209.1 KB",
+        "35.7 KB",
+        "239.0 KB",
+        "616.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56843",
+    "downloadPreload": true
+}

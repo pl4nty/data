@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "A Day in Exchange Support Engineering",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "A Day in Exchange Support Engineering.pdf",
+            "url": "https://download.microsoft.com/download/e/9/1/e91a8bde-7ede-4d58-96fe-1edb70df6ed6/A Day in Exchange Support Engineering.pdf",
+            "size": "653847",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The session provides insight into what happens when you open a case with Microsoft Support. We'll talk about the lifecycle of cases, including scenarios where cases are escalated within to the product team for resolution.\r\n\r\nRecording of presentation by Nasir Ali and Akash Bhargava is at https://youtu.be/mrWp-zG4UFw.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "A Day in Exchange Support Engineering.pdf"
+    ],
+    "detailsSection_file_size": [
+        "638.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file in PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104604",
+    "downloadPreload": true
+}

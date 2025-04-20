@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "FaST-LMM - Factored Spectrally Transformed Linear Mixed Models - Windows Binary Files",
+    "downloadDescription": "Download Windows Binary files Only - FaST-LMM (Factored Spectrally Transformed Linear Mixed Models) is a program for performing genome-wide association studies (GWAS) on large data sets. Last published: November 12, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FaSTLMM.207.Win.zip",
+            "url": "https://download.microsoft.com/download/e/0/3/e035627b-c2b2-4fa1-9b79-b3c9d972a8cf/FaSTLMM.207.Win.zip",
+            "size": "9753194",
+            "version": "v2.07",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download Windows Binary files Only - FaST-LMM (Factored Spectrally Transformed Linear Mixed Models) is a program for performing genome-wide association studies (GWAS) on large data sets. It runs on both Windows and Linux system, and has been tested on data sets with over 120,000 individuals.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v2.07",
+    "detailsSection_file_name": [
+        "FaSTLMM.207.Win.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Linux</LI><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52614",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2013 Help Files: Office Fluent User Interface Control Identifiers",
+    "downloadDescription": "This download contains files for and information about each of the control IDs for built-in UI commands and menu items in all applications that use the Office 2013 Fluent UI.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2013FluentUserInterfaceControlIdentifiers.zip",
+            "url": "https://download.microsoft.com/download/b/4/4/b44d1925-9840-4831-b6e3-74a34cc7fc68/Office2013FluentUserInterfaceControlIdentifiers.zip",
+            "size": "2572552",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:33:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These names are also accessible within the 2013 products by hovering over controls in the QAT customization dialog box, and looking at the screenTip of the control. Now updated with SharePoint Designer control IDs. Updated for Service Pack 1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "Office2013FluentUserInterfaceControlIdentifiers.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>This download contains Excel files with the relevant information. After downloading, you will need one of the following to read the files:\r\n<LI>Microsoft Excel 2013</LI>\r\n<LI>Microsoft Excel 2010</LI>\r\n<LI>Microsoft Office Excel 2007</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download the .zip file, open or save it, and then view any of the Excel files contained in it.\r\n<br/><br/>\r\n<b>Instructions for use:</b><br/>\r\nOpen any of the files that are contained in Office2013ControlIDS.zip and view them by using Excel 2013, Excel 2010, or Excel 2007 as you normally would. \r\n<br/>\r\n<br/>\r\n<b>Remove of this download:</b>\r\n<br/>\r\nThere is no removal feature for this download.",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36798",
+    "downloadPreload": true
+}

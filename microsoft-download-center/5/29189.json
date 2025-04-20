@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 Hyper-V Component Architecture Poster and Companion References",
+    "downloadDescription": "Provides a visual reference for understanding key Hyper-V technologies in Windows Server 2012 and focuses on Hyper-V Replica, networking, virtual machine mobility (live migration), storage, failover clustering, and scalability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Poster Companion Reference - Hyper-V Replica.pdf",
+            "url": "https://download.microsoft.com/download/f/6/9/f6932d74-4add-4366-b2be-22ce4d94e54f/Poster Companion Reference - Hyper-V Replica.pdf",
+            "size": "1835984",
+            "version": "February 2013",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Poster Companion Reference - Hyper-V Storage.pdf",
+            "url": "https://download.microsoft.com/download/f/6/9/f6932d74-4add-4366-b2be-22ce4d94e54f/Poster Companion Reference - Hyper-V Storage.pdf",
+            "size": "1497264",
+            "version": "February 2013",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Poster Companion Reference - Hyper-V Networking.pdf",
+            "url": "https://download.microsoft.com/download/f/6/9/f6932d74-4add-4366-b2be-22ce4d94e54f/Poster Companion Reference - Hyper-V Networking.pdf",
+            "size": "1907881",
+            "version": "February 2013",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Poster Companion Reference - Hyper-V and Failover Clustering.pdf",
+            "url": "https://download.microsoft.com/download/f/6/9/f6932d74-4add-4366-b2be-22ce4d94e54f/Poster Companion Reference - Hyper-V and Failover Clustering.pdf",
+            "size": "1245784",
+            "version": "February 2013",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Poster Companion Reference - Hyper-V Virtual Machine Mobility.pdf",
+            "url": "https://download.microsoft.com/download/f/6/9/f6932d74-4add-4366-b2be-22ce4d94e54f/Poster Companion Reference - Hyper-V Virtual Machine Mobility.pdf",
+            "size": "1889572",
+            "version": "February 2013",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows Server 2012 Hyper-V Component Architecture Poster.pdf",
+            "url": "https://download.microsoft.com/download/f/6/9/f6932d74-4add-4366-b2be-22ce4d94e54f/Windows Server 2012 Hyper-V Component Architecture Poster.pdf",
+            "size": "6508341",
+            "version": "February 2013",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster and and the companion references provide an understanding about key Hyper-V technologies in Windows Server 2012. The Hyper-V poster focuses on Hyper-V Replica, networking, virtual machine mobility (live migration), storage, failover clustering, and scalability. \r\nFor posters related to earlier operating systems, see: <ul>\r\n<li>Windows Server 2008 R2 with SP1 Hyper-V Component Architecture (http://www.microsoft.com/en-us/download/details.aspx?id=2688)</li>\r\n<li>Windows Server 2008 R2 Hyper-V Component Architecture (http://www.microsoft.com/en-us/download/details.aspx?id=3501)</li>\r\n<li>Windows Server 2008 R2 Feature Component Poster (http://www.microsoft.com/en-us/download/details.aspx?id=7002)</li>\r\n<li>Windows Server 2008 Component Posters (http://www.microsoft.com/en-us/download/details.aspx?id=17881)</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2013",
+    "detailsSection_file_name": [
+        "Poster Companion Reference - Hyper-V Replica.pdf",
+        "Poster Companion Reference - Hyper-V Storage.pdf",
+        "Poster Companion Reference - Hyper-V Networking.pdf",
+        "Poster Companion Reference - Hyper-V and Failover Clustering.pdf",
+        "Poster Companion Reference - Hyper-V Virtual Machine Mobility.pdf",
+        "Windows Server 2012 Hyper-V Component Architecture Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.4 MB",
+        "1.8 MB",
+        "1.2 MB",
+        "1.8 MB",
+        "6.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Web browser and any application capable of displaying PDF files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29189",
+    "downloadPreload": true
+}

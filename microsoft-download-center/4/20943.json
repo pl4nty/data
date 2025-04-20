@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Compact Framework 2.0 Service Pack 1 Patch",
+    "downloadDescription": "The Microsoft\u00ae .NET Compact Framework 2.0 Service Pack 1 Patch includes everything you need to update the .NET Compact Framework 2.0 to the .NET Compact Framework 2.0 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NETCFSetupv2.msp",
+            "url": "https://download.microsoft.com/download/8/8/6/8864fd04-e316-48b9-b2ab-cd94290a1ca8/NETCFSetupv2.msp",
+            "size": "17524224",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae .NET Compact Framework 2.0 SP1 patch contains the updated common language runtime and class libraries built for the .NET Compact Framework SP1. The patch will update the installation of .NET Compact Framework 2.0 installed with the following products:<ul><br />\n\t<li>Visual Studio 2005 Standard Edition</li><br />\n\t<li>Visual Studio 2005 Professions Edition</li><br />\n\t<li>Visual Studio 2005 Team System</li><br />\n\t<li>.NET Framework 2.0 SDK</li><br />\n\t<li>Windows Vista SDK</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB921591",
+        "name": "KB921591"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "NETCFSetupv2.msp"
+    ],
+    "detailsSection_file_size": [
+        "16.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Supported Device Operating Systems:</b> Windows Mobile Software for Pocket PC 2003, Windows Mobile 5.0 for PocketPC and Smartphone,  Windows CE .NET 5.0 and higher.</LI></UL><BR /><b>Important:</b> This download utilities Microsoft\u00ae Windows\u00ae Installer technology. Windows 98 and Windows ME users should install the <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=CEBBACD8-C094-4255-B702-DE3BB768148F\">Microsoft\u00ae Windows\u00ae Installer 2.0</a> before proceeding with this download.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE .NET",
+        "Windows Mobile 2003 SE software for Pocket PC",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows Mobile 5.0",
+        "Windows Mobile 5.0 software for Smartphone",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": ".NET Compact Framework 2.0 Service Pack 1 details: <br />\n\t<ul></ul><br />\n\t<b>Added Features:</b><br />\n\t<br />\n\t<ul><br />\n\t\t<li>Added support for WindowsCE 4.2 in both the CAB <br />\n\t\tinstallation and a Platform Builder Update (For more information on the <br />\n\t\tPlatform Builder Update, see<br />\n\t\t<a title=\"http://msdn.microsoft.com/embedded/windowsce/default.aspx\" style=\"color: blue; text-decoration: underline\" href=\"http://msdn.microsoft.com/embedded/windowsce/default.aspx\">Windows CE Download Center</a>.)<br />\n\t\t</li><br />\n\t\t<li>Added the option to install the &nbsp;global assembly <br />\n\t\tcache to the storage card.<br />\n\t\t</li><br />\n\t\t<li>Allow DataGrid cell drawing to be overridden </li><br />\n\t\t<li>Added support for headless Windows CE 5.0 devices <br />\n\t\tby adding a Headless catalog item in Platform Builder. (For more <br />\n\t\tinformation on the Platform Builder Update, see<br />\n\t\t<a title=\"http://msdn.microsoft.com/embedded/windowsce/default.aspx\" style=\"color: blue; text-decoration: underline\" href=\"http://msdn.microsoft.com/embedded/windowsce/default.aspx\">Windows CE Download Center</a>.)<br />\n\t\t</li><br />\n\t\t<li>Added System SR files to the Windows CE 5.0 <br />\n\t\tPlatform Builder catalog item.&nbsp; (For more information on the Platform <br />\n\t\tBuilder Update, see<br />\n\t\t<a title=\"http://msdn.microsoft.com/embedded/windowsce/default.aspx\" style=\"color: blue; text-decoration: underline\" href=\"http://msdn.microsoft.com/embedded/windowsce/default.aspx\">Windows CE Download Center</a>)<br />\n\t\t</li><br />\n\t\t<li>Enabled device debugging using mdbg. </li><br />\n\t\t<li>Included LogViewer tools to monitor network <br />\n\t\ttraffic. </li><br />\n\t\t<li>Included the .NET Compact Framework Remote <br />\n\t\tPerformance Monitor. (For more information, see Steven Pratschner\u2019s<br />\n\t\t<a title=\"http://blogs.msdn.com/stevenpr/archive/2006/04/17/577636.aspx\" style=\"color: blue; text-decoration: underline\" href=\"http://blogs.msdn.com/stevenpr/archive/2006/04/17/577636.aspx\">BLOG</a>.)<br />\n\t\t</li><br />\n\t\t<li>Added the Serializable attribute. </li><br />\n\t</ul><br />\n\t<b>Fixed Issues:</b><br />\n\t<br />\n\t<ul type=\"disc\" style=\"margin-bottom: 0in\"><br />\n\t\t<li>Changing VT_BYREF Variants in managed code could <br />\n\t\tlead to a memory leak.<br />\n\t\t</li><br />\n\t\t<li>Inappropriate caching of current UI culture even <br />\n\t\tafter CultureInfo.ClearCachedData is called.<br />\n\t\t</li><br />\n\t\t<li>For the HttpWebRequest method, an uncatchable <br />\n\t\tObjectDisposedException could occur when exiting an application with <br />\n\t\tasynchronous requests.<br />\n\t\t</li><br />\n\t\t<li>Visual Studio hangs on setting a Breakpoint in a <br />\n\t\tfunction with an infinite loop when it is called from the Immediate <br />\n\t\tWindow.<br />\n\t\t</li><br />\n\t\t<li>Breakpoints do not work if the cached, managed <br />\n\t\tdlls in the bcl directory differ from the ones on the device.<br />\n\t\t</li><br />\n\t\t<li>Environment.GetFolderPath returns an <br />\n\t\tInvalidOperationException.<br />\n\t\t</li><br />\n\t\t<li>An access violation occurs when accessing .the <br />\n\t\tControls or .Controls.Count property of a control once it has begun the <br />\n\t\tdisposing process.<br />\n\t\t</li><br />\n\t\t<li>The WebBrowser.DocumentCompleted event is fired in <br />\n\t\ta loop when the DocumentText property contains an image inside of a <br />\n\t\ttable.<br />\n\t\t</li><br />\n\t\t<li>Files should be extracted to the main storage as a <br />\n\t\tworkaround to avoid hardware issues on some storage cards.<br />\n\t\t</li><br />\n\t\t<li>For the HttpWebRequest method, an <br />\n\t\tArgumentOutOfRangeException occurs when accessing some https:// URLs.<br />\n\t\t</li><br />\n\t\t<li>Timer breaks after GetTickCount wraps around (49.7 <br />\n\t\tdays).<br />\n\t\t</li><br />\n\t\t<li>Error occurs when loading the .NET Compact <br />\n\t\tFramework version 2.0 on a device using an ActiveSync push.<br />\n\t\t</li><br />\n\t\t<li>Memory leaks occur when using Com marshaling.<br />\n\t\t</li><br />\n\t\t<li>Installer should check for ActiveSync version and <br />\n\t\tdisable deployment if version is older than ActiveSync 4.0 build 4343.<br />\n\t\t</li><br />\n\t\t<li>For the SerialPort class, an IOException is thrown <br />\n\t\twhen opening a serial port on the IPAQ 4150.<br />\n\t\t</li><br />\n\t\t<li>A call to HttpWebRequest over SSL with a payload <br />\n\t\tgreater than 32 KB hangs on the client when SendChunked returns false.<br />\n\t\t</li><br />\n\t\t<li>For the SerialPort class,an uncatchable exception <br />\n\t\toccurs when Bluetooth is turned off.<br />\n\t\t</li><br />\n\t\t<li>A finalizer for the FileStream class will cause <br />\n\t\tthe application to crash if a previous IO operation failed.<br />\n\t\t</li><br />\n\t\t<li>Installation of the .NET Compact Framework fails <br />\n\t\ton low memory devices.<br />\n\t\t</li><br />\n\t\t<li>PInvoke return types of UIntPtr throw a <br />\n\t\tNotSupportedException.<br />\n\t\t</li><br />\n\t\t<li>The Debug.WriteLine method in the .NET Compact <br />\n\t\tframework version 2.0 is not working.<br />\n\t\t</li><br />\n\t\t<li>For the SerialPort class, virtual serial ports are <br />\n\t\tnot reported by the SerialPort.GetPortNames method.<br />\n\t\t</li><br />\n\t\t<li>When using COM Interop, a VARIANT_BOOL type is <br />\n\t\tpassed incorrectly on ARMV4I.<br />\n\t\t</li><br />\n\t\t<li>The .NET Compact Framework incorrectly performs <br />\n\t\tversion comparison when loading assemblies.<br />\n\t\t</li><br />\n\t\t<li>ARMV4I runtime should be removed from ARMV4 Pocket <br />\n\t\tPC CAB to reduce the size of the CAB.<br />\n\t\t</li><br />\n\t\t<li>Corrections needed for Http Abort semantics.<br />\n\t\t</li><br />\n\t\t<li>The DateTime.Now method throws an <br />\n\t\tArgumentOutOfRangeException.<br />\n\t\t</li><br />\n\t\t<li>Crash caused by using CurrentTimeZone.GetDaylightTime and <br />\n\t\tCurrentTimeZone.GetStandardTime in certain rare stress conditions.</li><br />\n\t</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Downloads",
+            "url": "http://msdn.microsoft.com/isapi/gomscom.asp?target=/downloads/results.aspx?productID=&freetext=.net+framework&DisplayLang=en"
+        },
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://msdn.microsoft.com/netframework/default.aspx"
+        },
+        {
+            "title": ".Net Framework Communities",
+            "url": "http://msdn.microsoft.com/netframework/community/default.aspx"
+        },
+        {
+            "title": "books about .NET Framework",
+            "url": "http://www.microsoft.com/learning/books/net/framework/default.asp"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20943",
+    "downloadPreload": true
+}

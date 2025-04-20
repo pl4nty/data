@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Talent extensibility solution: Referral App",
+    "downloadDescription": "The Referral App can be used to add candidates to a shared talent pool. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReferralApp_20190717023115.zip",
+            "url": "https://download.microsoft.com/download/c/8/7/c874e938-1ed1-4488-a634-b477aa642b5e/ReferralApp_20190717023115.zip",
+            "size": "3341767",
+            "version": "1",
+            "datePublished": "6/13/2024 11:58:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Referral App can be used to add candidates to a shared talent pool. The referrer can enter Firstname, Lastname, Email, and Linkedln URL when submitting a candidate. The candidate source metadata is then populated with the referrer\u2019s information.\r\n\r\nThe app can be embedded into Employee self-service (ESS) for submitting referrals or can be used as a hyperlink in the Corporate Portal and run as a stand-alone app.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ReferralApp_20190717023115.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Dynamics 365 for Talent",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Files will then need to be extracted.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58497",
+    "downloadPreload": true
+}

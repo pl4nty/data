@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Workspace 2010 Deployment Essentials",
+    "downloadDescription": "This document provides guidance for deploying SharePoint Workspace 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "spwEssentialswhitepaper.docx",
+            "url": "https://download.microsoft.com/download/f/8/6/f86c8722-a1ff-493b-8a7c-00ce64edfd8e/spwEssentialswhitepaper.docx",
+            "size": "137371",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This paper describes how SharePoint Workspace 2010 can be deployed to SharePoint clients so that SharePoint users can easily syncrhonize local contributions with designated SharePoint sites. The paper also explains how to use SharePoint Workspace for peer collaboration and how to manage a SharePoint Workspace deployment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "spwEssentialswhitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "134.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Professional Plus 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> link to save this document to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1933",
+    "downloadPreload": true
+}

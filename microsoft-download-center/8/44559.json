@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows Runtime 2.0",
+    "downloadDescription": "The Kinect for Windows Runtime provides the drivers and runtime environment required by Kinect for Windows applications using Kinect sensor technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KinectRuntime-v2.0_1409-Setup.exe",
+            "url": "https://download.microsoft.com/download/a/7/4/a74239eb-22c2-45a1-996c-2f8e564b28ed/KinectRuntime-v2.0_1409-Setup.exe",
+            "size": "93314296",
+            "version": "2.0.1410.19000",
+            "datePublished": "7/15/2024 3:55:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Kinect for Windows Runtime only includes the Kinect for Windows driver and runtime environment. To start developing Kinect for Windows 2.0 applications, visit us <a href=\"http://www.microsoft.com/en-us/kinectforwindows/develop/\" target=\"_blank\">here</a>. The Kinect for Windows Runtime is provided for IT professionals for the purpose of pre-installing Kinect 2.0 support on system images. All other users will be provided the current driver and runtime environment on first plugin of their Kinect v2 sensor through Microsoft Windows Update.<br/><br/>\r\n\r\nFor versions of the Kinect for Windows Runtime that are compatible with Kinect for Windows v1.0 , v1.5, v1.6, v1.7, and v1.8 applications, please go <a href=\"http://www.microsoft.com/en-us/kinectforwindows/develop/downloads-docs.aspx\" target=\"_blank\">here</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.1410.19000",
+    "detailsSection_file_name": [
+        "KinectRuntime-v2.0_1409-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "89.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\n<ul>\r\n<li><b>Recommended Hardware Configuration</b></li>\r\n<ul>\r\n<li>64-bit (x64) processor</li>\r\n<li>4 GB Memory (or more)</li>\r\n<li>Physical dual-core 3.1 GHz (2 logical cores per physical) or faster processor</li>\r\n<li>USB 3.0 controller dedicated to the Kinect for Windows v2 sensor*</li>\r\n<li>DX11 capable graphics adapter**</li>\r\n<li>A Microsoft Kinect v2 sensor, which includes a power hub and USB cabling</li>\r\n</ul><br/>\r\n* If you're adding USB 3.0 functionality to your exisiting PC through a USB 3.0 host controller adapter, please ensure that it is a Windows 8 compliant device and that it supports Gen-2. See the <a href=\"http://go.microsoft.com/fwlink/?LinkID=403901\" target=\"_blank\">release notes</a> for additional information regarding USB 3.0 compatibility.<br/>\r\n** For the current list of good known adapters click <a href=\"http://go.microsoft.com/fwlink/?LinkID=517722\" target=\"_blank\">here</a>\r\n\r\n<br/><br/>\r\n\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30653\" target=\"_blank\">.NET Framework 4.5</a></li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Embedded 8 Standard",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install the Kinect for Windows Runtime:<br/>\r\n<ol>\r\n<li>Make sure the Kinect sensor is not plugged into any of the USB ports on the computer.</li>\r\n<li>From the download location, double-click on <b>KinectRuntime-v2.0_1409-Setup.exe</b></li>\r\n<li>Once the Kinect for Windows Runtime has completed installing successfully, ensure the Kinect sensor is connected to the power hub and the power hub is plugged into an outlet. Plug the USB cable from the power hub into a USB 3.0 port on your computer. The drivers will load automatically. </li>\r\n<li><b>Note:</b>On first plugin, the firmware on the device will be updated. This may result in the device enumeration happening several times in the first minute.</li>\r\n<li>Installation is now complete. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44559",
+    "downloadPreload": true
+}

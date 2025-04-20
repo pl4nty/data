@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Behind the Scenes: Implementing Filtering for Windows Forms Data Binding",
+    "downloadDescription": "Shows how to extend the generic BindingList and implement the filtering functionality of the IBindingListView.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BindingFiltering.zip",
+            "url": "https://download.microsoft.com/download/e/4/e/e4eb7075-d148-49ca-b7d7-e0521bdab86e/BindingFiltering.zip",
+            "size": "224927",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When you bind Windows Forms controls to an ADO.NET data source, specifically with a BindingSource as an intermediary, the searching, sorting, and filtering capabilities built in to a DataView are automatically exposed by the BindingSource. However, when you want to bind to a list of business objects, you have to implement these features yourself. A good solution is a generic implementation that can be reused with various business objects. This article describes how to extend the generic BindingList and implement the filtering functionality of the IBindingListView. This implementation enables you to store custom business objects in a list that you can search, sort, and filter.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BindingFiltering.zip"
+    ],
+    "detailsSection_file_size": [
+        "219.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2005 or Visual Studio 2008<br />\n.NET Framework 2.0<br />\nMicrosoft Windows Forms",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To download the <i>Behind the Scenes: Implementing Filtering for Windows Forms Data Binding</i> document and associated code sample, click the <b>Download</b> button above.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17914",
+    "downloadPreload": true
+}

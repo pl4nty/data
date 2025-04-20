@@ -1,0 +1,212 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Office SharePoint Server 2010 (KB2494022)",
+    "downloadDescription": "A security vulnerability exists in Microsoft SharePoint Server 2010 that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "officeserver2010-kb2494022-fullfile-x64-glb.exe",
+            "url": "https://download.microsoft.com/download/1/7/3/1733d492-b92f-46f8-a997-aa1862d492b8/officeserver2010-kb2494022-fullfile-x64-glb.exe",
+            "size": "152208760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2494022\">Security Update for Microsoft Office SharePoint Server 2010 (KB2494022)</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2494022",
+        "name": "KB2494022"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-074",
+        "name": "MS11-074"
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "officeserver2010-kb2494022-fullfile-x64-glb.exe"
+    ],
+    "detailsSection_file_size": [
+        "145.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This update applies to the following product: </b></li> \n<ul>\n<li>Microsoft MOSS 2010, 64-bit Edition (with <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=1E2ADD71-E4AD-462A-AC05-E143BD3F6C85&displaylang=en\">2007 Microsoft Office Servers Service Pack 1 (SP1), 64-bit edition</a>)</li>\n</ul>\n<br /><li><b>Supported Windows Installer Version:</b> Microsoft Windows Installer version 2.0 or later.</li><ul>\n<li>Microsoft Windows 2000 Service Pack 4 and Microsoft Windows XP include this version of the Windows Installer. Otherwise, the latest version of Windows Installer is available as a separate download at the following location:</li>\n<ul><li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=4b6140f9-2d36-4977-8fa1-6f8a0f5dca8f&DisplayLang=en\">Windows Installer for Windows NT 4.0 and 2000</a></li>\n</ul></ul></ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<b>Note</b>: IT professionals should refer to the <b>IT professional resources</b> section.<br />\n<br /><b>Installation instructions</b><br />\nIf you have Microsoft MOSS 2010, 64-bit Edition, do one of the following:<br />\n<br />\n<ul><li>Install <b>Security Update for Microsoft Office SharePoint Server 2010 (KB2494022).</b> To do this, follow these steps:</li><ol><li>Download one of the two .exe files by using the links at the bottom of the page, and then save the file to your hard disk drive.</li>\n<li>It is recommended that you quit any programs you are running.</li><br />\n<li>In Windows Explorer, double-click the .exe file that you saved to your hard disk drive, and follow the instructions on the screen.</li><br />\n</ol></ul><br />\n<b>IT professional resources</b><br />\nIT professionals working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"http://technet.microsoft.com/en-us/office/desktop/default.aspx\">Office System Suites and Programs TechCenter</a>.<br /><br />\nThe downloads for this update are under the <b>Files in this Download</b> section below. You can double-click the executable package to begin installation, or extract the patch files by using a command line. The command line and instructions are included in the Knowledge Base article <a href=\"http://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.<br /><br />\nSee the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2494022\">Description of the Security Update for Microsoft Office SharePoint Server 2010 (KB2494022)</a> for further information about this update.<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27323",
+    "downloadPreload": true
+}

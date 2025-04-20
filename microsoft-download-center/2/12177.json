@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - John Lam Updates Us on IronRuby!",
+    "downloadDescription": "John Lam talks about his work with the DLR and Iron Ruby at Microsoft.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080603JLam.zip",
+            "url": "https://download.microsoft.com/download/b/a/c/bac94be8-dd07-416e-a032-7268f40575ce/20080603JLam.zip",
+            "size": "45503002",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "John recently emigrated from Canada to the Microsoft Republic to join the Dynamic Language Runtime team. He works on the IronRuby implementation, and pitches in where necessary on the DLR, and on integration with partners like the Silverlight team. Before he joined Microsoft, he created RubyCLR, an innovative high performance open-source bridge between the Ruby interpreter and the CLR. You can track what John is doing with IronRuby and the DLR via his blog: http://www.iunknown.com.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080603JLam.zip"
+    ],
+    "detailsSection_file_size": [
+        "43.4 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12177",
+    "downloadPreload": true
+}

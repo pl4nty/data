@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Third Party Notices for Microsoft Dynamics AX 2012 R2 for Windows 8 Approvals, Expenses, and Timesheets",
+    "downloadDescription": "These notices are provided for informational purposes only and are not the license terms under which Microsoft distributes these Third Party Materials.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TPN_Dynamics_AX_2012_Expenses.pdf",
+            "url": "https://download.microsoft.com/download/4/1/2/41297ee0-4f6c-4066-9c46-f4d9bb6af83d/TPN_Dynamics_AX_2012_Expenses.pdf",
+            "size": "295901",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:47:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TPN_Dynamics_AX_2012_Approvals.pdf",
+            "url": "https://download.microsoft.com/download/4/1/2/41297ee0-4f6c-4066-9c46-f4d9bb6af83d/TPN_Dynamics_AX_2012_Approvals.pdf",
+            "size": "295511",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:47:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TPN_Dynamics_AX_2012_Timesheets.pdf",
+            "url": "https://download.microsoft.com/download/4/1/2/41297ee0-4f6c-4066-9c46-f4d9bb6af83d/TPN_Dynamics_AX_2012_Timesheets.pdf",
+            "size": "295512",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:47:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These notices are provided for informational purposes only and are not the license terms under which Microsoft distributes these Third Party Materials.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "TPN_Dynamics_AX_2012_Expenses.pdf",
+        "TPN_Dynamics_AX_2012_Approvals.pdf",
+        "TPN_Dynamics_AX_2012_Timesheets.pdf"
+    ],
+    "detailsSection_file_size": [
+        "289.0 KB",
+        "288.6 KB",
+        "288.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39361",
+    "downloadPreload": true
+}

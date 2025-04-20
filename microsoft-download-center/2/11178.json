@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - David Aiken on Bridging the Gap between Dev and IT",
+    "downloadDescription": "Carl and Richard talk with David Aiken about how developers can work more productively with IT professionals.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080110DAiken.zip",
+            "url": "https://download.microsoft.com/download/2/0/1/20171551-2dd7-44bf-87f4-f5497b4967c8/20080110DAiken.zip",
+            "size": "49263697",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:08:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "David Aiken is an Architect Evangelist working for Windows Server Evangelism in Redmond. His role, amongst other things, is to promote and evangelize Microsoft's Design for Operations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080110DAiken.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11178",
+    "downloadPreload": true
+}

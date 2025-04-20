@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "MICROSOFT\u00ae REPORT VIEWER 2012 RUNTIME",
+    "downloadDescription": "The Microsoft Report Viewer 2012 Runtime redistributable package, includes controls for viewing reports designed using Microsoft reporting technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReportViewer.msi",
+            "url": "https://download.microsoft.com/download/f/b/7/fb728406-a1ee-4ab5-9c56-74eb8bddf2ff/ReportViewer.msi",
+            "size": "7622656",
+            "version": "11.0.3452.0",
+            "datePublished": "7/15/2024 3:31:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "The Microsoft Report Viewer control enables applications that run on the .NET Framework to display reports designed using Microsoft reporting technology. This redistributable package contains Windows and Web versions of the Report Viewer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.3452.0",
+    "detailsSection_file_name": [
+        "ReportViewer.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Pre-requisites:</b><br/>\r\n<br/>\r\n<ul>\r\n    <li>\r\n       Microsoft SQL Server 2008 Reporting Services or higher for server processing mode.\r\n    </li>\r\n    <li>\r\n            NET Framework 3.5 SP1 or .NET Framework 4.0.\r\n    </li>\r\n</ul>\r\n<ul>\r\n</ul>\r\n<ol>\r\n    <li>\r\n            Check C:\\Windows\\Microsoft.NET\\Framework64\r\n        <ol>\r\n            <li>\r\nNET Framework 3.5 is there if we see a folder named v3.5. Further, use the registry to see whether SP1 for v3.5 is there -                    <a href=\"http://support.microsoft.com/kb/318785\">http://support.microsoft.com/kb/318785</a> -\r\n            </li>\r\n        </ol>\r\n    </li>\r\n</ol>\r\n<ul>\r\n    <li>\r\n            HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v3.5 needs to have DWORD named Install with value 1\r\n    </li>\r\n    <li>\r\nIf SP1 is not installed, it can be installed from            <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=22\">http://www.microsoft.com/en-us/download/details.aspx?id=22</a>\r\n    </li>\r\n</ul>\r\n<ul>\r\n</ul>\r\n<ol>\r\n    <ol>\r\n        <li>\r\n                NET Framework 4.0 is there if we see a folder named v4.0\r\n        </li>\r\n    </ol>\r\n    <li>\r\n            Microsoft SQL Server System CLR Types package\r\n        <ol>\r\n            <li>\r\nIt is available in the Install Instructions section of Microsoft\u00ae SQL Server\u00ae 2012 Feature Pack on                    <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=29065\">http://www.microsoft.com/en-us/download/details.aspx?id=29065</a> -\r\n            </li>\r\n        </ol>\r\n    </li>\r\n</ol>\r\n    Microsoft\u00ae System CLR Types for Microsoft\u00ae SQL Server\u00ae 2012\r\n   \r\n The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy id types in SQL Server 2012. This\r\n    component can be installed separately from the server to allow client applications to use these types outside of the server. Note: This\r\n    component also requires <a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">Windows Installer 4.5</a>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=239643&amp;clcid=0x409\">X86 Package</a>\r\n    (SQLSysClrTypes.msi)\r\n    <br/>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=239644&amp;clcid=0x409\">X64 Package</a>\r\n    (SQLSysClrTypes.msi)\r\n<ul>\r\n    <li>\r\n            Microsoft SQL Server System CLR Types package.\r\n    </li>\r\n    <li>\r\n            Ensure this order of setup\r\n    </li>\r\n</ul>\r\n<ol>\r\n    <li>\r\n            Ensure we have the required .NET Framework version per step 1a.\r\n    </li>\r\n    <li>\r\n            Run the SQL Server System CLR Types setup from step 1b.\r\n    </li>\r\n    <li>\r\n            Run the Report Viewer 2010 runtime setup\r\n    </li>\r\n</ol>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On this page, click Download to start the download. </li>\r\n<li>Save the download on your device by clicking, \"Save\".</li>\r\n<li>To cancel the installation, click Cancel.</li>\r\n</ol>\r\n\r\n",
+    "additionalInformationSection": "<ul>\n    <li>Help improve the Reporting Services Add-in by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul>\n<br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "x86 - SQLSysClrTypes",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=239643&clcid=0x409"
+        },
+        {
+            "title": "x64 - SQLSysClrTypes",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=239644&clcid=0x409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35747",
+    "downloadPreload": true
+}

@@ -1,0 +1,156 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.5.2 Language Pack (Offline Installer) for Windows Vista SP2, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2008 SP2, Windows Server 2008 R2 SP1, Windows Server 2012 and Windows Server 2012 R2",
+    "downloadDescription": "The .NET Framework 4.5.2 Language Pack contains localized resources for supported languages. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/5/b/a/5ba7181e-ce60-4ea2-8a0e-bf6c36a7811c/Readme.htm",
+            "size": "758",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:52:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.5.2 Language Pack contains translated error messages and other UI text for languages other than English. If you don't install a language pack, this text is displayed in English. You can install multiple language packs on one computer, each for a different language. \r\n<br/>\r\nYou need to download and install the .NET Framework 4.5.2 (offline installer) prior to installing the language packs. You can find the .NET Framework 4.5.2 (offline installer) <a href=\"http://go.microsoft.com/fwlink/?LinkId=328856\">here</a>.\r\n<br/>\r\n<br/>\r\nThis version of the .NET Framework language pack installs side-by-side with the .NET Framework 3.5 SP1 language pack and earlier versions, but performs an in-place update for the .NET Framework 4, .NET Framework 4.5 and .NET Framework 4.5.1 language packs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "758 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM (1.5 GB if running on a virtual machine)</li>\n<li>850 MB of available hard disk space (x86)</li>\n<li>2 GB of available hard disk space (x64)</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ul>\n<li>Before you install a Language Pack, install the corresponding language version of the product.</li>\n<li>To download all files and then install:\n</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button.</li>\n</ul>\n</ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=397419\">KB2901905</a> for more information.\r\n<br />\r\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=397423\">.NET Framework 4.5.2 Readme File</a>.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=245422"
+        },
+        {
+            "title": "microsoft .NET Framework 4.5.2",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=328856"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42641",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "EMM GTM materials",
+    "downloadDescription": "This zipped folder contains GTM materials for Enterprise Mobility Management in EMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EMM GTM materials.zip",
+            "url": "https://download.microsoft.com/download/c/9/b/c9b201a9-48f5-4001-8199-f761ac51ebac/EMM GTM materials.zip",
+            "size": "26771911",
+            "version": "July 2016",
+            "datePublished": "11/15/2023 4:33:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains GTM materials for Enterprise Mobility Management in EMS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "EMM GTM materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "25.5 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53145",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Designing .Net Class Libraries - Enabling Development Tools",
+    "downloadDescription": "Enabling Development Tools  By: Brian Pepin",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Develop_100k.exe",
+            "url": "https://download.microsoft.com/download/7/e/d/7edf9379-0def-405d-ba63-80943e8ab786/Develop_100k.exe",
+            "size": "76760064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Develop_300k.exe",
+            "url": "https://download.microsoft.com/download/7/e/d/7edf9379-0def-405d-ba63-80943e8ab786/Develop_300k.exe",
+            "size": "154387968",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how to enable a rich development experience for your users by writing code that exploits the capabilities of Visual Studio. Covers extending and augmenting the development, debugging, and design environments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Develop_100k.exe",
+        "Develop_300k.exe"
+    ],
+    "detailsSection_file_size": [
+        "73.2 MB",
+        "147.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 55 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click and save locally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32229",
+    "downloadPreload": true
+}

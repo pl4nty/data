@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Cloud Design Patterns \u2013 Book Download",
+    "downloadDescription": "This guide contains twenty-four design patterns and ten related guidance topics that articulate the benefits of applying patterns by showing how each piece can fit into the big picture of cloud application architectures. It includes code samples and general advice on using each pattern.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CloudDesignPatternsBook-PDF.pdf",
+            "url": "https://download.microsoft.com/download/b/b/6/bb69622c-ab5d-4d5f-9a12-b81b952c1169/CloudDesignPatternsBook-PDF.pdf",
+            "size": "6048943",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CloudDesignPatternsEPUBebook.epub",
+            "url": "https://download.microsoft.com/download/b/b/6/bb69622c-ab5d-4d5f-9a12-b81b952c1169/CloudDesignPatternsEPUBebook.epub",
+            "size": "3603669",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Containing twenty-four design patterns and ten related guidance topics, this guide articulates the benefit of applying patterns by showing how each piece can fit into the big picture of cloud application architectures. It also discusses the benefits and considerations for each pattern. Most of the patterns have code samples or snippets that show how to implement the patterns using the features of Windows Azure. However the majority of topics described in this guide are equally relevant to all kinds of distributed systems, whether hosted on Windows Azure or on other cloud platforms. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CloudDesignPatternsBook-PDF.pdf",
+        "CloudDesignPatternsEPUBebook.epub"
+    ],
+    "detailsSection_file_size": [
+        "5.8 MB",
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The book requires a document reader capable of displaying PDF or epub format documents.\r\n<br />\r\nThe sample code requires the following:\r\n<ul>\r\n<li><a href=\" http://www.microsoft.com/net/ \">Microsoft .NET Framework version 4.5</a></li>\r\n<li><a href=\"http://www.visualstudio.com/en-us \">Microsoft Visual Studio 2012</a>or <a href=\"http://www.visualstudio.com/en-us \">Microsoft Visual Studio 2013</a></li>\r\n<li><a href=\"http://www.windowsazure.com/en-us/develop/downloads/\">Windows Azure SDK for .NET</a>  (includes the Visual Studio Tools for Windows Azure) </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button to start the download. ",
+    "relatedResourcesSection": [
+        {
+            "title": "project Community ",
+            "url": "http://wag.codeplex.com"
+        },
+        {
+            "title": "cloud Development guides",
+            "url": "http://msdn.microsoft.com/en-us/library/ff921345.aspx"
+        },
+        {
+            "title": "sample code for this guide",
+            "url": "http://aka.ms/Cloud-Design-Patterns-Sample"
+        },
+        {
+            "title": "online version of the guide",
+            "url": "http://aka.ms/Cloud-Design-Patterns"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42026",
+    "downloadPreload": true
+}

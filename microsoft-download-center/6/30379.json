@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure Intranet and Team Sites with SharePoint Server 2013",
+    "downloadDescription": "This paper explains how to set up multiple web applications, site collections, subsites, and pages for intranet departments and teams.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-SP2013-intranet-team-sites.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb24f6-f987-4581-97bf-6e099827768e/tlg-SP2013-intranet-team-sites.pdf",
+            "size": "559300",
+            "version": "3",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-SP2013-intranet-team-sites.docx",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb24f6-f987-4581-97bf-6e099827768e/tlg-SP2013-intranet-team-sites.docx",
+            "size": "187340",
+            "version": "3",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint Server 2013 and step-by-step instructions for configuring intranet and team sites based on the SharePoint Server 2013 Three-Tier Farm test lab guide (http://go.microsoft.com/fwlink/p/?LinkId=255045).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "tlg-SP2013-intranet-team-sites.pdf",
+        "tlg-SP2013-intranet-team-sites.docx"
+    ],
+    "detailsSection_file_size": [
+        "546.2 KB",
+        "182.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\nopen it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30379",
+    "downloadPreload": true
+}

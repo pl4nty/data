@@ -1,0 +1,143 @@
+{
+    "error": "",
+    "downloadTitle": "SQL 2008 and 2008 R2 TLS 1.2 SQL Native Client updates not available in Windows Catalog",
+    "downloadDescription": "SQL 2008 and 2008 R2 TLS 1.2 SQL Native Client updates not available in Windows Catalog",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/2/4/f/24fe862d-7d32-47f2-b91d-22dafa270bbc/2008 R2 ENU-1033/IA64/sqlncli.msi",
+            "size": "11280384",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/2/4/f/24fe862d-7d32-47f2-b91d-22dafa270bbc/2008 R2 ENU-1033/x64/sqlncli.msi",
+            "size": "8204288",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/2/4/f/24fe862d-7d32-47f2-b91d-22dafa270bbc/2008 ENU-1033/IA64/sqlncli.msi",
+            "size": "11313152",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/2/4/f/24fe862d-7d32-47f2-b91d-22dafa270bbc/2008 R2 ENU-1033/x86/sqlncli.msi",
+            "size": "4800512",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/2/4/f/24fe862d-7d32-47f2-b91d-22dafa270bbc/2008 ENU-1033/x64/sqlncli.msi",
+            "size": "8200192",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/2/4/f/24fe862d-7d32-47f2-b91d-22dafa270bbc/2008 ENU-1033/x86/sqlncli.msi",
+            "size": "4706304",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "This page contains updates providing TLS 1.2 support for <b>SQL Server 2008 and SQL Server 2008 R2</b> SNAC (SQL Native Client) drivers.\r\nThese updates were prioviously only available on the Microsoft Hotfix server which has since been decommissioned.\r\n<br/><br/>\r\nFor other TLS 1.2 support updates for SQL Server 2008 and 2008 R2, please see: <b><a href=\"https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server\">TLS 1.2 support for Microsoft SQL Server</a></b>\r\n<br/><br/>\r\nNote: The x86/x64 versions of the SQL Native Client Drivers available are from the following cumulative CU Security Update releases:\r\n<br/><br/>\nSQL 2008 SP4:  <b><a href=\"https://support.microsoft.com/en-us/help/4057114/security-update-for-vulnerabilities-in-sql-server\">Description of the security update for SQL Server 2008 SP4 GDR: January 6, 2018</a></b>\r\n<br/>\nVersion 10.0.6556.0\r\n<br/><br/>\r\nSQL 2008 R2 SP3: <b><a href=\"https://support.microsoft.com/en-us/help/4057113/security-update-for-vulnerabilities-in-sql-server\">Description of the security update for SQL Server 2008 R2 SP3 GDR: January 6, 2018</a></b>\r\n<br/>\r\nVersion 10.50.6560<br/>\r\n<br/><br/>\r\nThe IA64 versions of the SQL Native Client Drivers available are from the following Service Pack/CU releases:\r\n<br/><br/>\r\nSQL 2008 SP3  10.0.5896.0<br/>\r\nSQL 2008 R2 SP2  10.50.4344.0<br/>\n<br/>Please reference the Instructions section of this page to learn more about each update.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Multiple",
+    "detailsSection_file_name": [
+        "sqlncli.msi",
+        "sqlncli.msi",
+        "sqlncli.msi",
+        "sqlncli.msi",
+        "sqlncli.msi",
+        "sqlncli.msi"
+    ],
+    "detailsSection_file_size": [
+        "10.8 MB",
+        "7.8 MB",
+        "10.8 MB",
+        "4.6 MB",
+        "7.8 MB",
+        "4.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><br/>\r\n<b>Note:</b> \r\nWhen an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and execute the update for your version of SQL Server and platform/Operating System<br/>\r\n\r\n\r\n",
+    "additionalInformationSection": "- If you have questions about SQL Server, visit the <b><a href=\"https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home\">SQL Server forums on MSDN .</a></b>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57606",
+    "downloadPreload": true
+}

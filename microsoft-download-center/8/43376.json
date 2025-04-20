@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Cost Estimator Tool",
+    "downloadDescription": "DEPRECATED: The Azure Cost Estimator is now deprecated and may show incorrect pricing. Please use the Azure Pricing Calculator instead. If you are an Enterprise Agreement customer/partner or a Cloud Solution Provider (CSP) then you may obtain access to the Azure Channel Pricing Calculator via your Microsoft representative. Please review the details section for more information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure Cost Estimator Tool.msi",
+            "url": "https://download.microsoft.com/download/9/9/b/99bf012d-7a92-43d6-8a2d-318a63a1f7c6/Microsoft Azure Cost Estimator Tool.msi",
+            "size": "12668928",
+            "version": "2.25",
+            "datePublished": "7/15/2024 3:53:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>DEPRECATED:</b> The Azure Cost Estimator is being retired and will be removed from the site shortly. Please use the <a href=\"https://azure.microsoft.com/en-us/pricing/calculator/\">Azure Pricing Calculator</a> instead. If you are an Enterprise Agreement customer/partner or a Cloud Solution Provider (CSP) then you may obtain access to the <a href=\"https://azure.microsoft.com/en-us/pricing/calculator/channel/\">Azure Channel Pricing Calculator</a> via your Microsoft representative.\r\n<br />\r\n<br />\r\nThe Azure Cost Estimator has been designed keeping in mind the need to provide the IT manager of next generation organizations the ability to quickly assess running cost of the existing on-premises workload on Azure. \r\n<br />\r\n<br />\r\n<b>About the tool</b><br />\r\n<ol style=\"list-style-type: disc\">\r\n    <li>The tool provides real world machine hardware usage</li>\r\n    <li>It recommends appropriate Azure instance to match the scanned workload</li>\r\n    <li>It also generates 31-day cost estimates of running such an Azure instance</li>\r\n</ol>\r\n<br />\r\n<b>Features</b>\r\n<ol style=\"list-style-type: disc\">\r\n    <li>The tool supports<ol style=\"list-style-type: circle\">\r\n        <li>Microsoft technologies (Hyper-V, SCVMM)</li>\r\n        <li>VMware technologies (vCenter, ESXi)</li>\r\n        <li>Physical environments (Windows, Linux)</li>\r\n    </ol>\r\n    </li>\r\n     <li> Support to A series, D-series and G-series Virtual Machines</li>\r\n     <li> Support to all regions apart from US</li>\r\n     <li> Price conversion in 24 currencies with the latest prices.</li>\r\n    <li> It is able to export to Excel/.csv that can be used for discussions with Systems Integration partner or a Microsoft representative</li>\r\n    <li> Create Cost Estimates and My Scenarios from the available Services</li>\r\n    <li> Cost Estimates can be generated using Scan tool results</li>\r\n    <li> Support for IP Range Feature in the Scan Your Environment Functionality</li>\r\n    <li>  Import and Export functionality in \"Scenarios\"</li>\r\n     <li> Updated Sample Scenarios</li>\r\n    <li> New services added in tool - Unlimited Data Plan, Metered Data Plan, Data Catalog, Data Lake Store, Data Lake Analytics, SQL Data Warehouse, IoT Hub, Application Gateways, Active Directory B2C, Active Directory Domain Services, Dev Test Lab, Service Fabric, Security Center\r\n</li>\r\n    <li> No data is sent to Microsoft at any time. All report and profile information resides on the machine where the tool is installed</li>\r\n</ol>\r\n<br />\r\n<b>Value Proposition</b><br />\r\n<ol style=\"list-style-type: disc\">\r\n    <li>Can be Installed and a profile scan completed within 15 minutes (can be deployed on a Windows client)</li>\r\n    <li>Enables a comparison with on-premises running costs (e.g. hardware, power, cooling, building, security, and systems management among others)</li>\r\n</ol>\r\n<br />\r\nIf you have any questions about the tool, or would like to send us your valuable feedback/comments, please write to us at <a href=\"feedbackAzureCalc@microsoft.com\">feedbackAzureCalc@microsoft.com</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.25",
+    "detailsSection_file_name": [
+        "Microsoft Azure Cost Estimator Tool.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Client:</b> The tool can be installed on the following versions of the Windows Operating System:\r\n<ol>\r\n    <li>Windows Server 2012 R2</li>\r\n    <li>Windows Server 2012</li>\r\n    <li>Windows Server 2008 R2 SP1</li>\r\n    <li>Windows Server 2008 SP2</li>\r\n    <li>Windows 8.1</li>\r\n    <li>Windows 8</li>\r\n    <li>Windows 7 SP1</li>\r\n    <li>Windows Vista SP2</li>\r\n</ol>\r\n<br />\r\nThe minimum configuration required for the tool installation is .NET 4.0 that can be download from <a href=\"http://go.microsoft.com/fwlink/?LinkID=212547\">http://go.microsoft.com/fwlink/?LinkID=212547</a> and Windows Management framework 3.0 that can be downloaded from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=34595\">http://www.microsoft.com/en-us/download/details.aspx?id=34595</a>\r\n<ol></ol>\r\n<br />\r\n<b>Remote:</b> Once installed this tool can be connected to the following machine types to profile on-premises infrastructure:<br />\r\n<ol>\r\n    <li>SCVMM (Windows Server 2012 R2 Standard, Windows Server 2012 Standard, Windows Server 2008 R2 Standard, Windows Server 2008 Standard)</li>\r\n    <li>Hyper-V (Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008)</li>\r\n    <li>vCenter (5.1, 5.5)</li>\r\n    <li>ESX (4.1, 5.0, 5.1, 5.5)</li>\r\n    <li>Windows Physical Machines (All Clients listed above, Windows Server 2003, Windows XP)</li>\r\n    <li>Linux Physical Machines (SSH and Keyboard authentication supported)</li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>To install \u201cMicrosoft Azure Cost Estimator\u201d:</b>\r\n<ol style=\"list-style-type: disc\">\r\n    <li>Download the installer \u201cMicrosoft Azure Cost Estimator\u201d</li>\r\n    <li>Run the \u201cMicrosoft Azure Cost Estimator Tool.msi\u201d that you have downloaded</li>\r\n</ol>\r\n<br />\r\n<b>To uninstall \u201cMicrosoft Azure Cost Estimator\u201d:</b><br />\r\nIn Control Panel/Programs/Uninstall a program/Uninstall or change a program, locate \"Microsoft Azure Cost Estimator\" and uninstall the tool.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43376",
+    "downloadPreload": true
+}

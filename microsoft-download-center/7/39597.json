@@ -1,0 +1,142 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Silverlight (KB2847559)",
+    "downloadDescription": "This security update to Silverlight includes fixes outlined in Security update KB2847559. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_Developer_x64.exe",
+            "url": "https://download.microsoft.com/download/b/3/c/b3cf6815-40b1-4e36-8746-c4a0381ad260/20513.00/runtime/Silverlight_Developer_x64.exe",
+            "size": "17842888",
+            "version": "5.1.20513.0",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_x64.exe",
+            "url": "https://download.microsoft.com/download/b/3/c/b3cf6815-40b1-4e36-8746-c4a0381ad260/20513.00/runtime/Silverlight_x64.exe",
+            "size": "13078152",
+            "version": "5.1.20513.0",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_Developer.exe",
+            "url": "https://download.microsoft.com/download/b/3/c/b3cf6815-40b1-4e36-8746-c4a0381ad260/20513.00/runtime/Silverlight_Developer.exe",
+            "size": "9337544",
+            "version": "5.1.20513.0",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Silverlight.exe",
+            "url": "https://download.microsoft.com/download/b/3/c/b3cf6815-40b1-4e36-8746-c4a0381ad260/20513.00/runtime/Silverlight.exe",
+            "size": "6953096",
+            "version": "5.1.20513.0",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_Developer.dmg",
+            "url": "https://download.microsoft.com/download/b/3/c/b3cf6815-40b1-4e36-8746-c4a0381ad260/20513.00/runtime/Silverlight_Developer.dmg",
+            "size": "20589821",
+            "version": "5.1.20513.0",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight.dmg",
+            "url": "https://download.microsoft.com/download/b/3/c/b3cf6815-40b1-4e36-8746-c4a0381ad260/20513.00/runtime/Silverlight.dmg",
+            "size": "15203960",
+            "version": "5.1.20513.0",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This security update to Silverlight includes fixes outlined in Security update <a href=\"http://support.microsoft.com/kb/2847559\">KB2847559</a>.  Non-security related changes are also included in this release and have been documented in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=92598\">Silverlight Release History</a>.  This update is backward compatible with web applications built using previous versions of Silverlight.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2847559",
+        "name": "KB2847559"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-052",
+        "name": "MS13-052"
+    },
+    "detailsSection_file_version": "5.1.20513.0",
+    "detailsSection_file_name": [
+        "Silverlight_Developer_x64.exe",
+        "Silverlight_x64.exe",
+        "Silverlight_Developer.exe",
+        "Silverlight.exe",
+        "Silverlight_Developer.dmg",
+        "Silverlight.dmg"
+    ],
+    "detailsSection_file_size": [
+        "17.0 MB",
+        "12.5 MB",
+        "8.9 MB",
+        "6.6 MB",
+        "19.6 MB",
+        "14.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See the \"System Requirements\" section of http://www.microsoft.com/getsilverlight/ \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012 Essentials",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Install the appropriate runtime from the choices below.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39597",
+    "downloadPreload": true
+}

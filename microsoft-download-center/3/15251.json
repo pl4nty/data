@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio International Pack 1.0 SR1",
+    "downloadDescription": "The Visual Studio International Pack contains a set of class libraries designed to help .NET developers create world-ready applications. SR1 contains bug fixes for the Japanese Kana Conversion Library and the Japanese Yomi Auto-completion Library.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vsintlpack1.zip",
+            "url": "https://download.microsoft.com/download/5/7/3/57345088-acf8-4e9b-a9a7-eba35452def2/vsintlpack1.zip",
+            "size": "5236958",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Visual Studio International Pack contains a set of class libraries designed for .NET developers to create world-ready applications. The Visual Studio International Pack 1.0 release provides the following seven components to enhance the globalization features provided by .NET Framework. <br />\n<br />\n    <ul>\n        <li>East Asia Numeric Formatting Library - Format numeric data into Traditional Chinese, Simplified Chinese, Japanese and Korean capital style string.</li>\n        <li>Japanese Kana Conversion Library - Convert one Kana character set to another character representation in Japanese.</li>\n        <li>Japanese Text Alignment Library - Enable applications to render strings in Japanese-specific alignment style.</li>\n        <li>Japanese Yomi Auto-Completion Library - Provide class library and TextBox control sample that support Japanese IME-aware auto-complete.</li>\n        <li>Korean Auto Complete TextBox Control - Provide TextBox control that supports auto-complete and the Intellisense feature with Korean input.</li>\n        <li>Simplified Chinese Pin-Yin Conversion Library - Retrieve Simplified Chinese characters' properties such as polyphone, homophone, Pinyin or number of strokes.</li>\n        <li>Traditional Chinese to Simplified Chinese Conversion Library and Add-In Tool - Convert text in Traditional Chinese into Simplified Chinese or vice versa. This component also includes an add-in tool to the in VS IDE that can convert between Simplified and Traditional Chinese resource files.</li>\n  </ul>\n<br />\nThe SR1 release fixes bugs in the Japanese Kana Conversion Library and the Japanese Yomi Auto-Completion Library.  Other libraries are unchanged.\n  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "vsintlpack1.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\n<LI><b>Required Software: </b>Microsoft Visual Studio 2005 or Microsoft Visual Studio 2008,\nMicrosoft .NET Framework 2.0,\nMicrosoft Office 2007 (Optional for Traditional Chinese to Simplified Chinese Conversion Library )<br /></LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "1. Please download the zip file of Visual Studio International Pack 1.0 SR1, and you will find seven MSI installer files after unpacking.<br />\n2. Run the MSI installer file to install the components you need.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15251",
+    "downloadPreload": true
+}

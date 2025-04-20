@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud Identity for Enterprise Architects",
+    "downloadDescription": "What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "5594928a.pdf",
+            "url": "https://download.microsoft.com/download/3/6/a/36a7c1ba-fe48-414f-92c9-9c9ddba323cd/5594928a.pdf",
+            "size": "769373",
+            "version": "1",
+            "datePublished": "7/15/2024 5:05:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Managing and securing identities is crucial to migrating to the cloud. This 11 x 17 multi-page model takes you through the technical considerations to deploy and manage cloud and hybrid-based identity infrastructures.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "5594928a.pdf"
+    ],
+    "detailsSection_file_size": [
+        "751.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not applicable.",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103684",
+    "downloadPreload": true
+}

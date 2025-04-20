@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "ASL STEM Wiki",
+    "downloadDescription": "ASL STEM Wiki: Dataset and Benchmark for Interpreting STEM Articles",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ASL_STEM_Wiki.zip",
+            "url": "https://download.microsoft.com/download/4/c/f/4cfec788-7478-4e47-9a15-ace9b6a96198/ASL_STEM_Wiki.zip",
+            "size": "201193250549",
+            "version": "1.0",
+            "datePublished": "10/15/2024 11:09:02 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For details about the dataset, the associated license, and accompanying research results, please see the ASL Citizen project page at https://www.microsoft.com/en-us/research/project/asl-stem-wiki/.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ASL_STEM_Wiki.zip"
+    ],
+    "detailsSection_file_size": [
+        "187.4 GB"
+    ],
+    "detailsSection_file_date": "10/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106253",
+    "downloadPreload": true
+}

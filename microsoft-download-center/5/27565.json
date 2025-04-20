@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Testing Best Practices",
+    "downloadDescription": "This paper outlines testing best practices provided by the Microsoft Dynamics AX 2012 internal development team.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Testing best practices for Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/1/6/4/164fbd0d-3836-43e0-9315-e97ccfb157e1/Testing best practices for Microsoft Dynamics AX 2012.pdf",
+            "size": "584482",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:16:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These best practices apply to the development of product extensions built by independent software vendors (ISVs), as well as Microsoft Dynamics AX implementation partners and customers who are customizing Microsoft Dynamics AX for specific ERP deployments. <br /><br />\r\n\r\nMicrosoft\u2019s Sure Step Methodology provides basic testing guidance that scales for five different project types. The terminology and process steps in Sure Step are the foundation of this document. The best practices presented here will supplement the Sure Step guidance for testing efforts in the Microsoft Dynamics AX ecosystem. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Testing best practices for Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "570.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27565",
+    "downloadPreload": true
+}

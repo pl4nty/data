@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise-scale farms for SharePoint Server 2013",
+    "downloadDescription": "The architecture represented in this model is an example enterprise-scale farm based on a customer with 90,000 users and 100 million search items.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sps-2013-enterprise farm-model.pdf",
+            "url": "https://download.microsoft.com/download/b/e/c/bec6e62f-6de0-4048-89ea-ce7fff2e8cfb/sps-2013-enterprise farm-model.pdf",
+            "size": "350174",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sps-2013-enterprise farm-model.vsd",
+            "url": "https://download.microsoft.com/download/b/e/c/bec6e62f-6de0-4048-89ea-ce7fff2e8cfb/sps-2013-enterprise farm-model.vsd",
+            "size": "2519552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This architecture can be used as a reference point for planning an enterprise-scale farm. Actual numbers of servers and components depends on many variables such as usage, services, size of documents, rates of change and freshness requirements for search results, and many others.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sps-2013-enterprise farm-model.pdf",
+        "sps-2013-enterprise farm-model.vsd"
+    ],
+    "detailsSection_file_size": [
+        "342.0 KB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35569",
+    "downloadPreload": true
+}

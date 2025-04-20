@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Channel 9 MSDN Video Interview - Tetsuo Seto",
+    "downloadDescription": "Tetsuo Seto demonstrates tablet pc multi-language features",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tetsuo_seto_2004_tablet_pc_mui_demo_english.wmv",
+            "url": "https://download.microsoft.com/download/4/8/c/48c62a34-02d1-46e8-a220-5a9e19632934/tetsuo_seto_2004_tablet_pc_mui_demo_english.wmv",
+            "size": "14672468",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tetsuo_seto_2004_tablet_pc_mui_demo_japanese.wmv",
+            "url": "https://download.microsoft.com/download/4/8/c/48c62a34-02d1-46e8-a220-5a9e19632934/tetsuo_seto_2004_tablet_pc_mui_demo_japanese.wmv",
+            "size": "16406228",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tetsuo Seto demonstrates tablet pc multi-language features",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "tetsuo_seto_2004_tablet_pc_mui_demo_english.wmv",
+        "tetsuo_seto_2004_tablet_pc_mui_demo_japanese.wmv"
+    ],
+    "detailsSection_file_size": [
+        "14.0 MB",
+        "15.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space 5MB, Windows Media Player 9.x or greater",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Longhorn (Windows Code Name) ",
+        "TabletPC",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy download to your machine for installation at a later time. <br /><br /> - Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": "channel 9",
+            "url": "http://channel9.msdn.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18176",
+    "downloadPreload": true
+}

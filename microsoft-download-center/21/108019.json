@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Public IP Space",
+    "downloadDescription": "This file contains MSFT Public IP Address blocks for both IPv4 and IPv6.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "msft-public-ips_20250225.csv",
+            "url": "https://download.microsoft.com/download/9e613dcd-c139-4368-bd0b-53a8c591c646/msft-public-ips_20250225.csv",
+            "size": "22522",
+            "version": "20250225",
+            "datePublished": "3/4/2025 4:29:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains MSFT Public IP Address blocks.  Updates will only occur when the list changes so please check the Data Published date.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20250225",
+    "detailsSection_file_name": [
+        "msft-public-ips_20250225.csv"
+    ],
+    "detailsSection_file_size": [
+        "22.0 KB"
+    ],
+    "detailsSection_file_date": "3/4/2025",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "This file contains MSFT Public IP Address blocks.  Updates will only occur when the list changes so please check the Data Published date.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108019",
+    "downloadPreload": true
+}

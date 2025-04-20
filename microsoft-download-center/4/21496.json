@@ -1,0 +1,218 @@
+{
+    "error": "",
+    "downloadTitle": "June 2008 Security Releases ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on June 10th, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200806.iso",
+            "url": "https://download.microsoft.com/download/d/6/d/d6d99906-69c2-47c9-9c48-51e6c2cc2ed7/Windows-KB913086-200806.iso",
+            "size": "2574698496",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:26:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on\nWindows Update on June 10th, 2008. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all\nlanguages at the same time.<br /><br />\n\n<b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at\n<a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />\n\nThis DVD5 image contains the following updates: <br/>\n<b>\n  <a href=\"http://support.microsoft.com/kb/951376\">KB951376</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=119619\">(MS08-030)</a>\n</b><ul>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows Vista - 36 languages</LI>\n<LI>Windows Vista for x64-based Systems - 36 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/950759\">KB950759</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=110557\">(MS08-031)</a>\n</b><ul>\n<LI>Windows 2000 - 24 languages</LI>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows Vista - 36 languages</LI>\n<LI>Windows Vista for x64-based Systems - 36 languages</LI>\n<LI>Windows Server 2008 - 19 languages</LI>\n<LI>Windows Server 2008 x64 Edition - 19 languages</LI>\n<LI>Windows Server 2008 for Itanium-based Systems - 4 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/951698\">KB951698</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=118655\">(MS08-033)</a>\n</b><ul>\n<LI>Windows 2000 - 24 languages</LI>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows Vista - 36 languages</LI>\n<LI>Windows Vista for x64-based Systems - 36 languages</LI>\n<LI>Windows Server 2008 - 19 languages</LI>\n<LI>Windows Server 2008 x64 Edition - 19 languages</LI>\n<LI>Windows Server 2008 for Itanium-based Systems - 4 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/948745\">KB948745</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=111957\">(MS08-034)</a>\n</b><ul>\n<LI>Windows 2000 - 24 languages</LI>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/949014\">KB949014</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=111953\">(MS08-035)</a>\n</b><ul>\n<LI>Windows 2000 - 24 languages</LI>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2008 - 19 languages</LI>\n<LI>Windows Server 2008 x64 Edition - 19 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/949269\">KB949269</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=111953\">(MS08-035)</a>\n</b><ul>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/950762\">KB950762</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=117297\">(MS08-036)</a>\n</b><ul>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows Vista - 36 languages</LI>\n<LI>Windows Vista for x64-based Systems - 36 languages</LI>\n<LI>Windows Server 2008 - 19 languages</LI>\n<LI>Windows Server 2008 x64 Edition - 19 languages</LI>\n<LI>Windows Server 2008 for Itanium-based Systems - 4 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/950760\">KB950760</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=112366\">(MS08-037)</a>\n</b><ul>\n<LI>Windows 2000 - 24 languages</LI>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows Vista - 36 languages</LI>\n<LI>Windows Vista for x64-based Systems - 36 languages</LI>\n<LI>Windows Server 2008 - 19 languages</LI>\n<LI>Windows Server 2008 x64 Edition - 19 languages</LI>\n<LI>Windows Server 2008 for Itanium-based Systems - 4 languages</LI>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB948745; KB949014; KB949269; KB950759; KB950760; KB950762; KB951376; KB951698",
+        "name": "KB948745; KB949014; KB949269; KB950759; KB950760; KB950762; KB951376; KB951698"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS08-034; MS08-035; MS08-035; MS08-031; MS08-032; MS08-036; MS08-030; MS08-033",
+        "name": "MS08-034; MS08-035; MS08-035; MS08-031; MS08-032; MS08-036; MS08-030; MS08-033"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200806.iso"
+    ],
+    "detailsSection_file_size": [
+        "2.4 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Datacenter without Hyper-V",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 Enterprise without Hyper-V",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Server 2008 Standard",
+        "Windows Server 2008 Standard without Hyper-V",
+        "Windows Vista",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows Web Server 2008",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Select a file to download at the top of this page, or choose a different language from the drop-down list and then click <b>Change</b>.</LI>\n<LI>To download the DVD5 ISO image to your computer and burn a DVD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI>\n<LI>Use the directions for your DVD burner to create a DVD from the image.</LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21496",
+    "downloadPreload": true
+}

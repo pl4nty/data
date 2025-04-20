@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Endpoint Manager: Windows 10 in cloud configuration built-in app removal script",
+    "downloadDescription": "Removes built-in apps as part of recommended deployment for cloud config",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows10cloudconfig-BuiltinAppxRemoval.ps1",
+            "url": "https://download.microsoft.com/download/c/f/c/cfc724af-470a-40f4-a27a-b314c05b5a75/Windows10cloudconfig-BuiltinAppxRemoval.ps1",
+            "size": "15006",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows 10 in cloud configuration simplifies devices and device management with a Microsoft-recommended way to optimize your Windows 10 devices for the cloud. This script is provided by Microsoft to help IT pros deploy cloud config using Microsoft Endpoint Manager, as defined in the Windows 10 in cloud configuration overview and setup guide. It removes built-in apps in Windows 10 to simplify the device experience. \r\n\r\nNote: This script also removes the Microsoft Store app. If you want to remove built-in apps but keep the Microsoft Store app, download the alternate cloud config app removal script at https://go.microsoft.com/fwlink/?linkid=2157781\r\n\r\nLearn more about cloud config and download the guide at at https://aka.ms/cloud-config.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows10cloudconfig-BuiltinAppxRemoval.ps1"
+    ],
+    "detailsSection_file_size": [
+        "14.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 Pro, Windows 10 Enterprise, or Windows 10 Education",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Follow the instructions in the cloud config overview and setup guide to deploy this script using Microsoft Endpoint Manager. Learn more about cloud config and download the guide at https://aka.ms/cloud-config.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102905",
+    "downloadPreload": true
+}

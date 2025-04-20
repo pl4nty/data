@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Upgrading Microsoft Visual Basic 6.0 to Microsoft Visual Basic .NET",
+    "downloadDescription": "Upgrading Microsoft Visual Basic 6.0 to Microsoft Visual Basic .NET is the complete technical guide to upgrading Visual Basic 6 applications to Visual Basic .NET, covering all upgrade topics from APIs to ZOrders.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UpgradingVB6toVBNET.msi",
+            "url": "https://download.microsoft.com/download/7/e/5/7e5146a5-6670-42ea-b810-6a4c1e0b6ac1/UpgradingVB6toVBNET.msi",
+            "size": "91933184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Upgrading Microsoft Visual Basic 6.0 to Microsoft Visual Basic .NET is the complete technical guide to upgrading Visual Basic 6 applications to Visual Basic .NET, covering all upgrade topics from APIs to ZOrders. It shows how to fix upgrade issues with forms, language, data access, and COM+ Services, and how to upgrade applications with XML Web services, ADO.NET, and .NET remoting. It also provides big-picture architectural advice, a reference of function and object model changes, and hundreds of before-and-after code samples.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "UpgradingVB6toVBNET.msi"
+    ],
+    "detailsSection_file_size": [
+        "87.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Visual Basic 6</LI><LI>Microsoft Visual Basic .NET</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Basic Downloads",
+            "url": "http://msdn.microsoft.com/isapi/gomscom.asp?target=/downloads/results.aspx?sortCriteria=popularity&OSID=&productID=&CategoryID=&freetext=visual+basic&DisplayLang=en&DisplayEnglishAlso="
+        },
+        {
+            "title": "visual Basic Developer Center",
+            "url": "http://msdn.microsoft.com/vbasic/"
+        },
+        {
+            "title": "visual Basic 6.0 Resource Center",
+            "url": "http://msdn.microsoft.com/vbrun/"
+        },
+        {
+            "title": "visual Studio Home Page",
+            "url": "http://msdn.microsoft.com/vstudio/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3696",
+    "downloadPreload": true
+}

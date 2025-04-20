@@ -1,0 +1,279 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Multi-Tenant RemoteAccess 2012",
+    "downloadDescription": "System Center Management Pack for Multi-Tenant Remote Access helps you monitor the health and availability of the Multi-Tenant Remote Access Server role on computers running Windows Server 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.TRK.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.TRK.msi",
+            "size": "634880",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.SVE.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.SVE.msi",
+            "size": "638976",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.RUS.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.RUS.msi",
+            "size": "684032",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.PTG.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.PTG.msi",
+            "size": "606208",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.PTB.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.PTB.msi",
+            "size": "647168",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.PLK.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.PLK.msi",
+            "size": "638976",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.NLD.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.NLD.msi",
+            "size": "606208",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for MultiTenant RA.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.msi",
+            "size": "692224",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.KOR.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.KOR.msi",
+            "size": "819200",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.JPN.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.JPN.msi",
+            "size": "643072",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.ITA.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.ITA.msi",
+            "size": "651264",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.HUN.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.HUN.msi",
+            "size": "634880",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.FRA.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.FRA.msi",
+            "size": "630784",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.ESN.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.ESN.msi",
+            "size": "610304",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.DEU.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.DEU.msi",
+            "size": "618496",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.CSY.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.CSY.msi",
+            "size": "647168",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.CHT.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.CHT.msi",
+            "size": "643072",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MultiTenant RA.CHS.msi",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/SC Management Pack for MultiTenant RA.CHS.msi",
+            "size": "675840",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2012R2_MgtPack_Multi-tenantRAS Guide.docx",
+            "url": "https://download.microsoft.com/download/2/0/1/201c2711-9f1e-48db-97e2-45d71ad617a0/OM2012R2_MgtPack_Multi-tenantRAS Guide.docx",
+            "size": "145205",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "System Center Management Pack for Multi-Tenant Remote Access helps you monitor the health and availability of the Multi-Tenant Remote Access Server role on computers running Windows Server 2012 R2.<br/>\r\n<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>10/18/2013 - version 7.1.10100.0</li>\r\n<li>3/04/2014 - updated management pack guide for added details</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10100.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for MultiTenant RA.TRK.msi",
+        "SC Management Pack for MultiTenant RA.SVE.msi",
+        "SC Management Pack for MultiTenant RA.RUS.msi",
+        "SC Management Pack for MultiTenant RA.PTG.msi",
+        "SC Management Pack for MultiTenant RA.PTB.msi",
+        "SC Management Pack for MultiTenant RA.PLK.msi",
+        "SC Management Pack for MultiTenant RA.NLD.msi",
+        "SC Management Pack for MultiTenant RA.msi",
+        "SC Management Pack for MultiTenant RA.KOR.msi",
+        "SC Management Pack for MultiTenant RA.JPN.msi",
+        "SC Management Pack for MultiTenant RA.ITA.msi",
+        "SC Management Pack for MultiTenant RA.HUN.msi",
+        "SC Management Pack for MultiTenant RA.FRA.msi",
+        "SC Management Pack for MultiTenant RA.ESN.msi",
+        "SC Management Pack for MultiTenant RA.DEU.msi",
+        "SC Management Pack for MultiTenant RA.CSY.msi",
+        "SC Management Pack for MultiTenant RA.CHT.msi",
+        "SC Management Pack for MultiTenant RA.CHS.msi",
+        "OM2012R2_MgtPack_Multi-tenantRAS Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "620.0 KB",
+        "624.0 KB",
+        "668.0 KB",
+        "592.0 KB",
+        "632.0 KB",
+        "624.0 KB",
+        "592.0 KB",
+        "676.0 KB",
+        "800.0 KB",
+        "628.0 KB",
+        "636.0 KB",
+        "620.0 KB",
+        "616.0 KB",
+        "596.0 KB",
+        "604.0 KB",
+        "632.0 KB",
+        "628.0 KB",
+        "660.0 KB",
+        "141.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to the MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40807",
+    "downloadPreload": true
+}

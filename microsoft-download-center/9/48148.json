@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Modeling SDK for Microsoft Visual Studio 2015",
+    "downloadDescription": "The Modeling SDK for Visual Studio 2015 contains Domain Specific Languages (DSL Tools) and the Architecture Tools SDK for Visual Studio 2015. This SDK provides tools and templates for building Domain Specific Language designers and extending UML. You can build your own graphical or form-based designers for Visual Studio 2015 and extend existing tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vs_vmsdk.exe",
+            "url": "https://download.microsoft.com/download/0/b/0/0b05ce52-5c57-46e9-8c27-c5c4df10c8c0/vs_vmsdk.exe",
+            "size": "4961432",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:52:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Modeling SDK for Visual Studio 2015 provides: \n<ul>\n<li>MSBuild tasks that enable the indexing of assemblies and PDB files as part of a build or on the command line. The code index is used by Code Map, but it can be used on its own as well.</li>\n<li>Project templates that help developers create graphical or form-based (Windows Forms and WPF) designers for use in Visual Studio to view and modify models for a custom domain-specific language.</li>\n<li>Project templates that help developers create extensions for the Architecture Tools in Visual Studio Ultimate 2015.</li>\n<li>MSBuild tasks that enable the generation of textual artifacts at build time for any use of T4.</li>\n<li>Reference assemblies and IntelliSense documentation for the DSL Tools runtime, which is included in Visual Studio 2015.</li>\n<li>A migration tool that helps DSL authors migrate designers from Visual Studio 2013 VsVmSdk SDK to work with Visual Studio 2015.</li>\n<li>Header files that contain Command IDs for the graphical designers and the architecture tools (UML designers, Layer designer).</li>\n</ul>\nBefore this SDK can be installed, the Visual Studio 2015 SDK (VSSDK) must be installed first.\n\nTo find out what's new in Visual Studio 2015, see the <a href=\"http://www.visualstudio.com/news/vs2015-vs\">Visual Studio 2015 Release Notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=613260\">Visual Studio 2015 KB Article</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "vs_vmsdk.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For additional information on Operating System support, see the <a href=\"https://www.visualstudio.com/en-us/visual-studio-2015-compatibility-vs\">Visual Studio 2015 Compatibility page</a>.\n\n<b>Hardware Requirements:</b>\n<ul>\n<li>1.6 GHz or faster processor</li>\n<li>1 GB of RAM (1.5 GB if running on a virtual machine)</li>\n<li>10 MB of available hard disk space</li>\n<li>5400 RPM hard drive</li>\n<li>DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\n</ul>\n<b>Other Requirements:</b>\n<ul>\n<li>Visual Studio Community 2015 or higher</li>\n<li>Visual Studio 2015 SDK</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. </li>\n</ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center:",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48148",
+    "downloadPreload": true
+}

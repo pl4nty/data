@@ -1,0 +1,1391 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server Protocol Documentation",
+    "downloadDescription": "The Microsoft Exchange protocol documentation provides detailed technical specifications for the Microsoft protocols that are implemented and used by Microsoft Exchange to interoperate or communicate with other products. It also provides technical specifications for extensions to industry-standard and other published protocols that are used by Microsoft Exchange.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSLVID].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSLVID].pdf",
+            "size": "2593617",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCMAIL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCMAIL].pdf",
+            "size": "3038041",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-XOAUTH].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-XOAUTH].pdf",
+            "size": "861422",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOCFG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOCFG].pdf",
+            "size": "3003427",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSGTRM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSGTRM].pdf",
+            "size": "1064754",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOTASK].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOTASK].pdf",
+            "size": "1408906",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXSHARE].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXSHARE].pdf",
+            "size": "1306825",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXPROPS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXPROPS].pdf",
+            "size": "6317711",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASMS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASMS].pdf",
+            "size": "866418",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXGLOS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXGLOS].pdf",
+            "size": "2433202",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXDSCLI].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXDSCLI].pdf",
+            "size": "1706964",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASHTTP].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASHTTP].pdf",
+            "size": "1230960",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWOAB].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWOAB].pdf",
+            "size": "727522",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCSPAM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCSPAM].pdf",
+            "size": "924317",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-XJRNL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-XJRNL].pdf",
+            "size": "765065",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXSMTP].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXSMTP].pdf",
+            "size": "790538",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSDLGM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSDLGM].pdf",
+            "size": "1531937",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXPROTO].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXPROTO].pdf",
+            "size": "5627226",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCROPS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCROPS].pdf",
+            "size": "9397019",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSURPT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSURPT].pdf",
+            "size": "1021148",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXORMMS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXORMMS].pdf",
+            "size": "1159465",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSPOST].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSPOST].pdf",
+            "size": "1127065",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOMSG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOMSG].pdf",
+            "size": "2869628",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSBTRF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSBTRF].pdf",
+            "size": "1146947",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSMSHR].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSMSHR].pdf",
+            "size": "1344897",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCEXT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCEXT].pdf",
+            "size": "1500906",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCEXT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCEXT].pdf",
+            "size": "1852530",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSFOLD].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSFOLD].pdf",
+            "size": "2464425",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCDATA].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCDATA].pdf",
+            "size": "4216042",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOABK].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOABK].pdf",
+            "size": "1919284",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSSRCH].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSSRCH].pdf",
+            "size": "2372650",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCTABL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCTABL].pdf",
+            "size": "1703234",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOABKT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOABKT].pdf",
+            "size": "1624634",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSTASK].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSTASK].pdf",
+            "size": "1273295",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASEMAIL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASEMAIL].pdf",
+            "size": "3146641",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCONT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCONT].pdf",
+            "size": "2209256",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-XWDCAL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-XWDCAL].pdf",
+            "size": "2328171",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOJRNL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOJRNL].pdf",
+            "size": "907049",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOAB].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOAB].pdf",
+            "size": "2431132",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSGNI].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSGNI].pdf",
+            "size": "1109663",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXABREF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXABREF].pdf",
+            "size": "811841",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSDLIST].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSDLIST].pdf",
+            "size": "1149977",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-PATCH].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-PATCH].pdf",
+            "size": "1149328",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXPSVAL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXPSVAL].pdf",
+            "size": "734307",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCFXICS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCFXICS].pdf",
+            "size": "5244602",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSPED].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSPED].pdf",
+            "size": "845830",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSOLPS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSOLPS].pdf",
+            "size": "1490870",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASAIRS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASAIRS].pdf",
+            "size": "2129125",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSUSRCFG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSUSRCFG].pdf",
+            "size": "1402218",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASCON].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASCON].pdf",
+            "size": "959034",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXORMDR].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXORMDR].pdf",
+            "size": "1404490",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXTNEF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXTNEF].pdf",
+            "size": "1447783",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCMAPIHTTP].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCMAPIHTTP].pdf",
+            "size": "3451487",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASRM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASRM].pdf",
+            "size": "1315356",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASCMD].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASCMD].pdf",
+            "size": "13529906",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOPOST].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOPOST].pdf",
+            "size": "763985",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXVCARD].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXVCARD].pdf",
+            "size": "921255",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXPHISH].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXPHISH].pdf",
+            "size": "700247",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWCONFIG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWCONFIG].pdf",
+            "size": "2743994",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCVTID].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCVTID].pdf",
+            "size": "1031622",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCRPC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCRPC].pdf",
+            "size": "2811393",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASWBXML].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASWBXML].pdf",
+            "size": "1524047",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOSRCH].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOSRCH].pdf",
+            "size": "1252130",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSPSNTIF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSPSNTIF].pdf",
+            "size": "879303",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCFOLD].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCFOLD].pdf",
+            "size": "1801362",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCDATA].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCDATA].pdf",
+            "size": "6066792",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXODLGT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXODLGT].pdf",
+            "size": "1279214",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSRSLNM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSRSLNM].pdf",
+            "size": "971397",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[[ReadmefirstExProto]].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[[ReadmefirstExProto]].pdf",
+            "size": "194899",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSMTGS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSMTGS].pdf",
+            "size": "2751768",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSSYNC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSSYNC].pdf",
+            "size": "1379991",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSARCH].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSARCH].pdf",
+            "size": "1012870",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOSMIME].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOSMIME].pdf",
+            "size": "767826",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSMTRK].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSMTRK].pdf",
+            "size": "1441354",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWUMS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWUMS].pdf",
+            "size": "2676836",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASPROV].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASPROV].pdf",
+            "size": "2195194",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXORULE].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXORULE].pdf",
+            "size": "1876481",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCPRPT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCPRPT].pdf",
+            "size": "1736070",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-XLOGIN].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-XLOGIN].pdf",
+            "size": "901032",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXDISCO].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXDISCO].pdf",
+            "size": "1002027",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXIMAP4].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXIMAP4].pdf",
+            "size": "1108716",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSPERS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSPERS].pdf",
+            "size": "1503125",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXLDAP].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXLDAP].pdf",
+            "size": "900035",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOSFLD].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOSFLD].pdf",
+            "size": "1213451",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-XWDVSEC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-XWDVSEC].pdf",
+            "size": "1180908",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWMT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWMT].pdf",
+            "size": "1029703",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOFLAG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOFLAG].pdf",
+            "size": "1400228",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXORSS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXORSS].pdf",
+            "size": "889930",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASCAL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASCAL].pdf",
+            "size": "2208749",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOCAL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOCAL].pdf",
+            "size": "5322796",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOSMMS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOSMMS].pdf",
+            "size": "911888",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOCNTC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOCNTC].pdf",
+            "size": "2140799",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCPERM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCPERM].pdf",
+            "size": "1064259",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSPHOTO].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSPHOTO].pdf",
+            "size": "664540",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCONV].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCONV].pdf",
+            "size": "1643963",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXSHRMSG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXSHRMSG].pdf",
+            "size": "789370",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCSTOR].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCSTOR].pdf",
+            "size": "1570375",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXPFOAB].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXPFOAB].pdf",
+            "size": "846277",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXRTFEX].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXRTFEX].pdf",
+            "size": "969754",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOUM].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOUM].pdf",
+            "size": "1173317",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXPOP3].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXPOP3].pdf",
+            "size": "1286344",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASTASK].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASTASK].pdf",
+            "size": "1498333",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASDTYPE].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASDTYPE].pdf",
+            "size": "812177",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCNOTIF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCNOTIF].pdf",
+            "size": "1155806",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXRTFCP].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXRTFCP].pdf",
+            "size": "1200753",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXNSPI].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXNSPI].pdf",
+            "size": "2050145",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCORE].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCORE].pdf",
+            "size": "3677107",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXONOTE].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXONOTE].pdf",
+            "size": "802594",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSXPROP].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSXPROP].pdf",
+            "size": "843254",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-MCI].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-MCI].pdf",
+            "size": "606845",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSSMBX].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSSMBX].pdf",
+            "size": "958000",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSITEMID].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSITEMID].pdf",
+            "size": "705962",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCMSG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCMSG].pdf",
+            "size": "2672371",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXOPFFB].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXOPFFB].pdf",
+            "size": "1062987",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXODOC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXODOC].pdf",
+            "size": "926115",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASDOC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASDOC].pdf",
+            "size": "938440",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXMSG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXMSG].pdf",
+            "size": "1175918",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSGTZ].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSGTZ].pdf",
+            "size": "1278133",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSRULES].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSRULES].pdf",
+            "size": "1920414",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSCOS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSCOS].pdf",
+            "size": "2125464",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWOOF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWOOF].pdf",
+            "size": "1137784",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSATT].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSATT].pdf",
+            "size": "1537070",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSMSG].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSMSG].pdf",
+            "size": "1232777",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSADISC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSADISC].pdf",
+            "size": "2608760",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASNOTE].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASNOTE].pdf",
+            "size": "890840",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXCICAL].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXCICAL].pdf",
+            "size": "5141151",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Exchange_Protocols.zip",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/Exchange_Protocols.zip",
+            "size": "127428434",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSNTIF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSNTIF].pdf",
+            "size": "1578883",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWAVLS].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWAVLS].pdf",
+            "size": "1754042",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXWSEDISC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXWSEDISC].pdf",
+            "size": "1886225",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASCNTC].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-ASCNTC].pdf",
+            "size": "1980931",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXREF].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXREF].pdf",
+            "size": "719070",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OXBBODY].pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd33fdf-91f5-496d-9884-0a0b0ee698bb/[MS-OXBBODY].pdf",
+            "size": "751052",
+            "version": "0315",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Exchange protocol documentation provides detailed technical specifications for the Microsoft protocols and extensions to industry-standard and other published protocols that are implemented and used by Microsoft Exchange.\r\n<br/><br/>\r\nThe documentation is designed to describe each protocol in detail as it is used by Microsoft Exchange. Each specification documents technical requirements, limitations, dependencies, and specific protocol behavior.\r\n<br/><br/>\r\nThe documentation includes companion overview and reference documents that supplement the technical specifications with conceptual background information, overviews of inter-protocol relationships and interactions, and technical reference information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0315",
+    "detailsSection_file_name": [
+        "[MS-OXWSLVID].pdf",
+        "[MS-OXCMAIL].pdf",
+        "[MS-XOAUTH].pdf",
+        "[MS-OXOCFG].pdf",
+        "[MS-OXWSGTRM].pdf",
+        "[MS-OXOTASK].pdf",
+        "[MS-OXSHARE].pdf",
+        "[MS-OXPROPS].pdf",
+        "[MS-ASMS].pdf",
+        "[MS-OXGLOS].pdf",
+        "[MS-OXDSCLI].pdf",
+        "[MS-ASHTTP].pdf",
+        "[MS-OXWOAB].pdf",
+        "[MS-OXCSPAM].pdf",
+        "[MS-XJRNL].pdf",
+        "[MS-OXSMTP].pdf",
+        "[MS-OXWSDLGM].pdf",
+        "[MS-OXPROTO].pdf",
+        "[MS-OXCROPS].pdf",
+        "[MS-OXWSURPT].pdf",
+        "[MS-OXORMMS].pdf",
+        "[MS-OXWSPOST].pdf",
+        "[MS-OXOMSG].pdf",
+        "[MS-OXWSBTRF].pdf",
+        "[MS-OXWSMSHR].pdf",
+        "[MS-OXWSCEXT].pdf",
+        "[MS-OXCEXT].pdf",
+        "[MS-OXWSFOLD].pdf",
+        "[MS-OXCDATA].pdf",
+        "[MS-OXOABK].pdf",
+        "[MS-OXWSSRCH].pdf",
+        "[MS-OXCTABL].pdf",
+        "[MS-OXOABKT].pdf",
+        "[MS-OXWSTASK].pdf",
+        "[MS-ASEMAIL].pdf",
+        "[MS-OXWSCONT].pdf",
+        "[MS-XWDCAL].pdf",
+        "[MS-OXOJRNL].pdf",
+        "[MS-OXOAB].pdf",
+        "[MS-OXWSGNI].pdf",
+        "[MS-OXABREF].pdf",
+        "[MS-OXWSDLIST].pdf",
+        "[MS-PATCH].pdf",
+        "[MS-OXPSVAL].pdf",
+        "[MS-OXCFXICS].pdf",
+        "[MS-OXWSPED].pdf",
+        "[MS-OXWSOLPS].pdf",
+        "[MS-ASAIRS].pdf",
+        "[MS-OXWSUSRCFG].pdf",
+        "[MS-ASCON].pdf",
+        "[MS-OXORMDR].pdf",
+        "[MS-OXTNEF].pdf",
+        "[MS-OXCMAPIHTTP].pdf",
+        "[MS-ASRM].pdf",
+        "[MS-ASCMD].pdf",
+        "[MS-OXOPOST].pdf",
+        "[MS-OXVCARD].pdf",
+        "[MS-OXPHISH].pdf",
+        "[MS-OXWCONFIG].pdf",
+        "[MS-OXWSCVTID].pdf",
+        "[MS-OXCRPC].pdf",
+        "[MS-ASWBXML].pdf",
+        "[MS-OXOSRCH].pdf",
+        "[MS-OXWSPSNTIF].pdf",
+        "[MS-OXCFOLD].pdf",
+        "[MS-OXWSCDATA].pdf",
+        "[MS-OXODLGT].pdf",
+        "[MS-OXWSRSLNM].pdf",
+        "[[ReadmefirstExProto]].pdf",
+        "[MS-OXWSMTGS].pdf",
+        "[MS-OXWSSYNC].pdf",
+        "[MS-OXWSARCH].pdf",
+        "[MS-OXOSMIME].pdf",
+        "[MS-OXWSMTRK].pdf",
+        "[MS-OXWUMS].pdf",
+        "[MS-ASPROV].pdf",
+        "[MS-OXORULE].pdf",
+        "[MS-OXCPRPT].pdf",
+        "[MS-XLOGIN].pdf",
+        "[MS-OXDISCO].pdf",
+        "[MS-OXIMAP4].pdf",
+        "[MS-OXWSPERS].pdf",
+        "[MS-OXLDAP].pdf",
+        "[MS-OXOSFLD].pdf",
+        "[MS-XWDVSEC].pdf",
+        "[MS-OXWMT].pdf",
+        "[MS-OXOFLAG].pdf",
+        "[MS-OXORSS].pdf",
+        "[MS-ASCAL].pdf",
+        "[MS-OXOCAL].pdf",
+        "[MS-OXOSMMS].pdf",
+        "[MS-OXOCNTC].pdf",
+        "[MS-OXCPERM].pdf",
+        "[MS-OXWSPHOTO].pdf",
+        "[MS-OXWSCONV].pdf",
+        "[MS-OXSHRMSG].pdf",
+        "[MS-OXCSTOR].pdf",
+        "[MS-OXPFOAB].pdf",
+        "[MS-OXRTFEX].pdf",
+        "[MS-OXOUM].pdf",
+        "[MS-OXPOP3].pdf",
+        "[MS-ASTASK].pdf",
+        "[MS-ASDTYPE].pdf",
+        "[MS-OXCNOTIF].pdf",
+        "[MS-OXRTFCP].pdf",
+        "[MS-OXNSPI].pdf",
+        "[MS-OXWSCORE].pdf",
+        "[MS-OXONOTE].pdf",
+        "[MS-OXWSXPROP].pdf",
+        "[MS-MCI].pdf",
+        "[MS-OXWSSMBX].pdf",
+        "[MS-OXWSITEMID].pdf",
+        "[MS-OXCMSG].pdf",
+        "[MS-OXOPFFB].pdf",
+        "[MS-OXODOC].pdf",
+        "[MS-ASDOC].pdf",
+        "[MS-OXMSG].pdf",
+        "[MS-OXWSGTZ].pdf",
+        "[MS-OXWSRULES].pdf",
+        "[MS-OXWSCOS].pdf",
+        "[MS-OXWOOF].pdf",
+        "[MS-OXWSATT].pdf",
+        "[MS-OXWSMSG].pdf",
+        "[MS-OXWSADISC].pdf",
+        "[MS-ASNOTE].pdf",
+        "[MS-OXCICAL].pdf",
+        "Exchange_Protocols.zip",
+        "[MS-OXWSNTIF].pdf",
+        "[MS-OXWAVLS].pdf",
+        "[MS-OXWSEDISC].pdf",
+        "[MS-ASCNTC].pdf",
+        "[MS-OXREF].pdf",
+        "[MS-OXBBODY].pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "2.9 MB",
+        "841.2 KB",
+        "2.9 MB",
+        "1.0 MB",
+        "1.3 MB",
+        "1.2 MB",
+        "6.0 MB",
+        "846.1 KB",
+        "2.3 MB",
+        "1.6 MB",
+        "1.2 MB",
+        "710.5 KB",
+        "902.7 KB",
+        "747.1 KB",
+        "772.0 KB",
+        "1.5 MB",
+        "5.4 MB",
+        "9.0 MB",
+        "997.2 KB",
+        "1.1 MB",
+        "1.1 MB",
+        "2.7 MB",
+        "1.1 MB",
+        "1.3 MB",
+        "1.4 MB",
+        "1.8 MB",
+        "2.4 MB",
+        "4.0 MB",
+        "1.8 MB",
+        "2.3 MB",
+        "1.6 MB",
+        "1.5 MB",
+        "1.2 MB",
+        "3.0 MB",
+        "2.1 MB",
+        "2.2 MB",
+        "885.8 KB",
+        "2.3 MB",
+        "1.1 MB",
+        "792.8 KB",
+        "1.1 MB",
+        "1.1 MB",
+        "717.1 KB",
+        "5.0 MB",
+        "826.0 KB",
+        "1.4 MB",
+        "2.0 MB",
+        "1.3 MB",
+        "936.6 KB",
+        "1.3 MB",
+        "1.4 MB",
+        "3.3 MB",
+        "1.3 MB",
+        "12.9 MB",
+        "746.1 KB",
+        "899.7 KB",
+        "683.8 KB",
+        "2.6 MB",
+        "1007.4 KB",
+        "2.7 MB",
+        "1.5 MB",
+        "1.2 MB",
+        "858.7 KB",
+        "1.7 MB",
+        "5.8 MB",
+        "1.2 MB",
+        "948.6 KB",
+        "190.3 KB",
+        "2.6 MB",
+        "1.3 MB",
+        "989.1 KB",
+        "749.8 KB",
+        "1.4 MB",
+        "2.6 MB",
+        "2.1 MB",
+        "1.8 MB",
+        "1.7 MB",
+        "879.9 KB",
+        "978.5 KB",
+        "1.1 MB",
+        "1.4 MB",
+        "878.9 KB",
+        "1.2 MB",
+        "1.1 MB",
+        "1005.6 KB",
+        "1.3 MB",
+        "869.1 KB",
+        "2.1 MB",
+        "5.1 MB",
+        "890.5 KB",
+        "2.0 MB",
+        "1.0 MB",
+        "649.0 KB",
+        "1.6 MB",
+        "770.9 KB",
+        "1.5 MB",
+        "826.4 KB",
+        "947.0 KB",
+        "1.1 MB",
+        "1.2 MB",
+        "1.4 MB",
+        "793.1 KB",
+        "1.1 MB",
+        "1.1 MB",
+        "2.0 MB",
+        "3.5 MB",
+        "783.8 KB",
+        "823.5 KB",
+        "592.6 KB",
+        "935.5 KB",
+        "689.4 KB",
+        "2.5 MB",
+        "1.0 MB",
+        "904.4 KB",
+        "916.4 KB",
+        "1.1 MB",
+        "1.2 MB",
+        "1.8 MB",
+        "2.0 MB",
+        "1.1 MB",
+        "1.5 MB",
+        "1.2 MB",
+        "2.5 MB",
+        "870.0 KB",
+        "4.9 MB",
+        "121.5 MB",
+        "1.5 MB",
+        "1.7 MB",
+        "1.8 MB",
+        "1.9 MB",
+        "702.2 KB",
+        "733.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The specifications are available as Adobe Portable Document Format (.pdf) files, which you can open by using Adobe Reader. You can download Adobe Reader from <a href=\"http://www.adobe.com\">http://www.adobe.com</a>.<br />\n<br />\n<b>Note</b>: For optimal readability, Adobe Reader 8.0 or later is recommended.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To help ensure that links between documents work correctly, store all the PDF files in the documentation set in the same directory. If you download additional protocol or standards support documents by Microsoft, you should store those files in that directory too.\r\n<br />\r\n<br />\r\nThe self-extracting Exchange_Protocols.zip file contains all the specification and companion overview and reference documents that are included in the documentation set. The [[ReadmefirstExProto]].pdf file in the .zip file contains late-breaking information about the documentation.",
+    "additionalInformationSection": "<b>Audience</b><br /><br />\nThe Microsoft Exchange protocol documentation is intended for use in conjunction with publicly available standard specifications and network programming art, and assumes that the reader either is familiar with the aforementioned material or has immediate access to it.<br />\n<br />\nThe technical documentation provides information that is useful to the following audiences:<br /><br />\r\n<ul>\n<li><b>Implementers</b>: Sufficient conceptual and reference information for a successful implementation of one or more protocol specifications for a given task or scenario.</li>\n<li><b>Reviewers</b>: A definitive resource for readers who want to evaluate or understand one or more protocols.</li>\r\n</ul>\r\n<br />\r\n<br />\r\nThis package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server protocol documentation on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=198982"
+        },
+        {
+            "title": "exchange and Outlook standards documentation on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=191060"
+        },
+        {
+            "title": "microsoft Open Specifications program",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=198983"
+        },
+        {
+            "title": "exchange and Outlook standards documentation download",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=6fa94dc9-d4b6-402b-8c22-8a52acea2284"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15779",
+    "downloadPreload": true
+}

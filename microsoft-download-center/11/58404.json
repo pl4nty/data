@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Omnichannel Intraday Supervisor Insights Reports",
+    "downloadDescription": "Download the Power BI template (.pbit) files for Intraday Supervisor Insights for Omnichannel for Customer Service app.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Intraday Monitoring.zip",
+            "url": "https://download.microsoft.com/download/0/4/4/044d5cca-7857-4b7d-ae4e-8098f9bc7036/Intraday Monitoring.zip",
+            "size": "454209",
+            "version": "1.0",
+            "datePublished": "1/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Live Conversations.zip",
+            "url": "https://download.microsoft.com/download/0/4/4/044d5cca-7857-4b7d-ae4e-8098f9bc7036/Live Conversations.zip",
+            "size": "573170",
+            "version": "1.0",
+            "datePublished": "1/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The intraday insights reports provide KPIs that helps supervisors or customer service managers to keep track of the work that their agents do. Also, helps in managing the work of agents who work with customers to resolve queries every day through various service channels. These reports perform the following tasks: \r\n<ul>\r\n<li>Monitor key performance indicators (KPIs)</li>\r\n<li>Monitor workload of agent</li>\r\n<li>Monitor unassigned workload</li>\r\n</ul>\r\nTo learn more, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2098224\">Configure intraday insights dashboard</a> and <a href=\"https://go.microsoft.com/fwlink/?linkid=2098225\">Introduction to intraday supervisor experiences</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Intraday Monitoring.zip",
+        "Live Conversations.zip"
+    ],
+    "detailsSection_file_size": [
+        "443.6 KB",
+        "559.7 KB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "To learn more, see  <a href=\"https://go.microsoft.com/fwlink/?linkid=2098226\">Pre-requisites and system requirements of Omnichannel for Customer Service</a>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Open the Power BI Desktop and sign in with your credentials.</li>\r\n<li>Go to your workspace > File > Import > Powers BI template and select the downloaded pbit file.</li>\r\n<li>Select Edit on the message.</li>\r\n<li>Choose your workspace and select the dataset.</li>\r\n<li>Change to your organization created workspace and select the dataset.</li>\r\n       Note: The dataset creation may take up to 15 minutes to appear in the created workspace. \r\n<li>Publish and save the pbix file to the created workspace. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58404",
+    "downloadPreload": true
+}

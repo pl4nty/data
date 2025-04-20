@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "KB4013818 - Edit job list is updating the resource on all jobs instead of just the operation that was selected.",
+    "downloadDescription": "Edit job list is updating the resource on all jobs instead of just the operation that was selected.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB4013818-6.3.5000.2805.zip",
+            "url": "https://download.microsoft.com/download/c/5/a/c5a07b7e-0514-4e0e-ae92-2636a5895265/KB4013818-6.3.5000.2805.zip",
+            "size": "17951326",
+            "version": "6.3.5000.2805",
+            "datePublished": "2/15/2024 3:03:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Edit job list is updating the resource on all jobs instead of just the operation that was selected.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4013818",
+        "name": "KB4013818"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.3.5000.2805",
+    "detailsSection_file_name": [
+        "KB4013818-6.3.5000.2805.zip"
+    ],
+    "detailsSection_file_size": [
+        "17.1 MB"
+    ],
+    "detailsSection_file_date": "2/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54793",
+    "downloadPreload": true
+}

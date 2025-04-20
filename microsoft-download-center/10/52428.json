@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Extraction from Binary Volumes with Higher-Order Smoothness",
+    "downloadDescription": "This code extracts the separating triangulated surface from binary volumes, such as those obtained by 3-D image-segmentation algorithms. Last published: August 13, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceExtraction.zip",
+            "url": "https://download.microsoft.com/download/9/b/6/9b6664c1-cbb0-476a-9184-f58440cbbe8e/SurfaceExtraction.zip",
+            "size": "26954",
+            "version": "1.1",
+            "datePublished": "4/15/2024 4:09:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This code extracts the separating triangulated surface from binary volumes, such as those obtained by 3-D image-segmentation algorithms. The algorithm is described in \u201cSurface Extraction from Binary Volumes with Higher-Order Smoothness\u201d (MSR-TR-2009-31), by Victor Lempitsky.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "SurfaceExtraction.zip"
+    ],
+    "detailsSection_file_size": [
+        "26.3 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52428",
+    "downloadPreload": true
+}

@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dexterity 12.0 Sample Applications",
+    "downloadDescription": "Use these sample applications as examples of code that you can use in your Dexterity applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Mail - Mapi Samples.zip",
+            "url": "https://download.microsoft.com/download/b/f/3/bf3f85f0-db38-41e7-90a6-4a5cf11f6bce/Mail - Mapi Samples.zip",
+            "size": "42788",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:19:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SOP2013Weight.zip",
+            "url": "https://download.microsoft.com/download/b/f/3/bf3f85f0-db38-41e7-90a6-4a5cf11f6bce/SOP2013Weight.zip",
+            "size": "435780",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:19:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlcnvex2013.zip",
+            "url": "https://download.microsoft.com/download/b/f/3/bf3f85f0-db38-41e7-90a6-4a5cf11f6bce/sqlcnvex2013.zip",
+            "size": "163575",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:19:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains various sample applications and downloads created and tested for use with Dexterity 12.0. Each .zip file contains a readme that explains what is supported with the sample and instructions about how to effectively use the sample.\n<br />\n<br />\nThe following samples are included:\n<UL><LI><b>Mail - Mapi Samples.zip</b> \u2013 Shows Dexterity's for sending email.</LI>\n<LI><b>SOP2013Weight.zip</b> \u2013 Shows an integration to Sales Order Processing (SOP) for Microsoft Dynamics GP 2013. This sample uses Dexterity triggers to calculate the total shipping weight for the sales document as each line item is entered or changed, and includes code to calculate the freight amount for SOP documents using a UPS shipping method. Three alternate SOP reports also are included. These reports show three methods for adding the additional shipping weight information to the report.</LI>\n<LI><b>sqlcnvex2013.zip</b> \u2013 Shows how to perform a SQL table conversion in sanScript for a table where both a field length and column name have changed.</LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "Mail - Mapi Samples.zip",
+        "SOP2013Weight.zip",
+        "sqlcnvex2013.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.8 KB",
+        "425.6 KB",
+        "159.7 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Dexterity for Microsoft Dynamics GP 2013 must be installed.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "All sample code used in production applications will need to be fully understood and maintained by the application developer.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39969",
+    "downloadPreload": true
+}

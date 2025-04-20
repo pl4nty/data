@@ -1,0 +1,124 @@
+{
+    "error": "",
+    "downloadTitle": "Rules Update for RRAS Best Practice Analyzer for Windows Server 2012 R2 (KB2928193)",
+    "downloadDescription": "You can use the RRAS Rules update for Best Practices Analyzer to scan a server that is running the RRAS role.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2928193-x64.msu",
+            "url": "https://download.microsoft.com/download/3/6/f/36f9ccc7-c9fd-4591-bc39-53fad567a3ec/Windows8.1-KB2928193-x64.msu",
+            "size": "552612",
+            "version": "2928193",
+            "datePublished": "7/15/2024 3:25:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "You can use the RRAS Rules update for Best Practices Analyzer to scan a server that is running the RRAS role. BPA scan results are displayed as a list of issues that you can sort by severity, and results include recommendations for fixing issues and links to instructions. No configuration changes are made by running the scan. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2928193",
+        "name": "KB2928193"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2928193",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2928193-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "539.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2928193"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42324",
+    "downloadPreload": true
+}

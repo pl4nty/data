@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Weather Conditions mashup for Visio 2010",
+    "downloadDescription": "Create a map-based live web drawing for checking the current weather conditions using Visio 2010.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Weather Detail.vst",
+            "url": "https://download.microsoft.com/download/2/a/a/2aaea2b4-e110-42df-8062-472c2902e1b8/Weather Detail.vst",
+            "size": "358912",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "USA America.vst",
+            "url": "https://download.microsoft.com/download/2/a/a/2aaea2b4-e110-42df-8062-472c2902e1b8/USA America.vst",
+            "size": "728064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VisioWeatherMashup_Data.xlsx",
+            "url": "https://download.microsoft.com/download/2/a/a/2aaea2b4-e110-42df-8062-472c2902e1b8/VisioWeatherMashup_Data.xlsx",
+            "size": "21724",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 weather mashup to create a compelling, data-linked visual that others can intuitively interact with to check current weather conditions. This mashup brings together two live, interactive diagrams rendered as web drawings in Visio Services on Microsoft SharePoint 2010. It uses the Link Data to Shapes and Data Graphics capabilities in Visio to bind the weather map and console diagrams to values in the public MSN weather data source. The mashup can be published to a SharePoint site directly from Visio. Some minor JavaScript coding establishes the interaction between the two web parts, so that clicking on an individual state in the map diagram automatically updates the weather information in the console diagram. This sample mashup shows how you can offer web-based navigation of public and private data sources, such as stock information or census data, using visual diagrams created with Visio. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Weather Detail.vst",
+        "USA America.vst",
+        "VisioWeatherMashup_Data.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "350.5 KB",
+        "711.0 KB",
+        "21.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click Download for each of the templates and the data file to save them to your computer. \r\n\r\nTo see the stencil used in the diagram, select the Document Stencil box on the Developer tab (on the ribbon).\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27736",
+    "downloadPreload": true
+}

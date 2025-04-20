@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Developing a Streaming Pipeline Component for BizTalk Server",
+    "downloadDescription": "This paper shows how to address issues with high memory consumption and latency by taking a streaming approach to pipeline component development. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DevelopingAStreamingPipelineComponent.docx",
+            "url": "https://download.microsoft.com/download/0/7/3/073b05ef-e629-4425-9851-295b98cde699/DevelopingAStreamingPipelineComponent.docx",
+            "size": "164042",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamingPipelineComponent.exe",
+            "url": "https://download.microsoft.com/download/0/7/3/073b05ef-e629-4425-9851-295b98cde699/StreamingPipelineComponent.exe",
+            "size": "499200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Orchestrations are often the first port of call for most BizTalk developers and are the feature most identified with the product. However, many scenarios can be implemented very well using messaging alone, harnessing the power of port configuration and pipelines.\r\nAny serious messaging implementation is bound to involve one or more custom pipeline components, and these are not difficult to develop. Nonetheless, too often developers ignore the streaming fashion of the pipeline and write components that read the entire message into memory. \r\nAlthough this approach does work, and admittedly is somewhat easier to grasp, it has two significant downsides:<br></br>\r\n<ul><li>Higher memory consumption \u2013 the entire message has to be loaded into memory, whatever the message size is. In addition, if the  .NET XML DOM is used (via the XmlDocument class, for example) the memory footprint of the component can be considerably bigger than the message size.</li><br></br>\r\n<li> Latency \u2013 any further processing of the message has to wait until the current component has finished processing the entire message.</li></ul><br></br>\r\nBoth of these downsides can be addressed by taking a \"streaming\" approach to pipeline component development, which is what this paper attempts to demonstrate.  The sample provided with this paper is designed to demonstrate both the non-streaming and the streaming ways of achieving the solution.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DevelopingAStreamingPipelineComponent.docx",
+        "StreamingPipelineComponent.exe"
+    ],
+    "detailsSection_file_size": [
+        "160.2 KB",
+        "487.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the document, use Microsoft Word. To run the sample, see the directions in Appendix B of the paper. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20375",
+    "downloadPreload": true
+}

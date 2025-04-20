@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2017 Express",
+    "downloadDescription": "Microsoft\u00ae SQL Server\u00ae 2017 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2017-SSEI-Expr.exe",
+            "url": "https://download.microsoft.com/download/5/e/9/5e9b18cc-8fd5-467e-b5bf-bade39c51f73/SQLServer2017-SSEI-Expr.exe",
+            "size": "5744056",
+            "version": "14.0.1000.169",
+            "datePublished": "7/15/2024 4:53:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\nMicrosoft SQL Server 2017 Express is a free, feature-rich editions of SQL Server that is ideal for learning, developing, powering desktop, web & small server applications, and for redistribution by ISVs. \r\n\n<br />\n<br />\n<b>LocalDB (SqlLocalDB)</b>\n<ul>\n<li>LocalDB is a lightweight version of Express that has all its programmability features, yet runs in user mode and has a fast, zero-configuration installation and short list of pre-requisites. Use this if you need a simple way to create and work with databases from code. It can be bundled with Application and Database Development tools like Visual Studio and or embedded with an application that needs local databases.</li>\n</ul>\n<b>Express (SQLEXPR)</b>\n<ul>\n  <li>\n    Express edition includes the SQL Server database engine only. Best suited to accept remote connections or administer remotely.\n  </li>\n</ul>\n    <b>Express with Advanced Services (SQLEXPRADV)</b>\n<ul>\n  <li>This package contains Polybase and Full Text Search features in addition to SQL Database Engine. </li>\n  <br />\n</ul>\n<br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.1000.169",
+    "detailsSection_file_name": [
+        "SQLServer2017-SSEI-Expr.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n <li>\n  <b>Processor</b> \n  </li>\n <ul>\n  <li>Intel - compatible processor with a minimum speed of 1 GHz or a faster processor</li> \n  </ul>\n <li>\n  <b>RAM</b> \n  </li>\n <ul>\n  <li>Minimum 512MB</li> \n  </ul>\n <li>\n  <b>Hard Disk Space</b> \n  </li>\n <ul>\n  <li>4.2 GB of Disk Space</li> \n  </ul>\n  </ul>\n  <br /> \n  <b>Limitations :</b> \n  Microsoft SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the SQL Server 2017 Express installer (SQLServer2017-SSEI-Expr) on this page that, when executed, will present options to perform an installation or download media only.",
+    "additionalInformationSection": "If you have a specific technical question about Microsoft\u00ae SQL Server\u00ae 2017 Express please visit <a href=\" http://go.microsoft.com/fwlink/?LinkId=186769\">the SQL Server Express Forum </a>.\n<br /><br />\n- If you have questions about SQL Server Express, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\n<br /><br />\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55994",
+    "downloadPreload": true
+}

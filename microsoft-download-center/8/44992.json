@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "VLSC Software Assurance Guide",
+    "downloadDescription": "VLSC Software Assurance Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VLSC-Software-Assurance-Guide_en-US.pdf",
+            "url": "https://download.microsoft.com/download/a/7/d/a7d04694-1b1e-4b18-918f-0edcd43ba2e5/VLSC-Software-Assurance-Guide_en-US.pdf",
+            "size": "168867",
+            "version": "December 2016",
+            "datePublished": "7/15/2024 3:01:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Software Assurance for Volume Licensing offers a range of tools and resources to help your company deploy, manage, and maximize your Volume Licensing purchases. The program covers Microsoft technologies and services and includes new product version rights, technical and end-user training, deployment planning, and support. This guide will show you how to administer your Software Assurance benefit activation, download, and implementation procedures.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "December 2016",
+    "detailsSection_file_name": [
+        "VLSC-Software-Assurance-Guide_en-US.pdf"
+    ],
+    "detailsSection_file_size": [
+        "164.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You must have Adobe Reader installed on your computer to view this file.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to open the file or save it to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44992",
+    "downloadPreload": true
+}

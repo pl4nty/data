@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer 7 for Windows XP x64 Edition (KB2862772)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-059. To find out if other security updates are available for you, see the Additional Information section at the bottom of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE7-WindowsServer2003.WindowsXP-KB2862772-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/6/8/e/68ec339f-5656-4955-815c-5443666b9fc3/IE7-WindowsServer2003.WindowsXP-KB2862772-x64-ENU.exe",
+            "size": "20428960",
+            "version": "2862772",
+            "datePublished": "6/13/2024 12:18:47 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2862772",
+        "name": "KB2862772"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-059",
+        "name": "MS13-059"
+    },
+    "detailsSection_file_version": "2862772",
+    "detailsSection_file_name": [
+        "IE7-WindowsServer2003.WindowsXP-KB2862772-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "19.5 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "\n      This update applies to Internet Explorer 7 with the following operating systems:<br /><ul>\n        <li>Windows XP Pro SP2 (x64-bit)</li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP 64-bit"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.\n        </li>\n        <li>Do one of the following:</li>\n        <ul>\n          <li>\n            To start the installation immediately, click <b>Run</b>.\n          </li>\n          <li>\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\n          </li>\n          <li>\n            To cancel the installation, click <b>Cancel</b>.\n          </li>\n        </ul>\n      </ol>\n    ",
+    "additionalInformationSection": "\n      <b>Other critical security updates are available:</b> To find the latest security updates for you visit <a href=\"http://go.microsoft.com/?LinkID=275655 \">Windows Update</a> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <a href=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</a> and follow the 3 easy steps to ensure you\u2019re protected.<br />\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "stay up to Speed on PC Security",
+            "url": "http://go.microsoft.com/?LinkID=997684"
+        },
+        {
+            "title": "microsoft Security Bulletin MS13-059",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=313330"
+        },
+        {
+            "title": "maintain Security with Internet Explorer",
+            "url": "http://www.microsoft.com/windows/products/winfamily/ie/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39758",
+    "downloadPreload": true
+}

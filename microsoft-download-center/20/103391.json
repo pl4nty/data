@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Version of Microsoft Support and Recovery Assistant",
+    "downloadDescription": "SaRA Enterprise Version is a client tool that enables Microsoft customers to troubleshoot and diagnose their issues",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SaRACmd_17_01_2877_000.zip",
+            "url": "https://download.microsoft.com/download/13eaffaa-0961-4a6a-863b-26d1f8b0ca15/SaRACmd_17_01_2877_000.zip",
+            "size": "30362750",
+            "version": "17.01.2546.000",
+            "datePublished": "3/20/2025 7:16:12 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Support and Recovery Assistant works by running tests to figure out what's wrong and offers the best solution for the identified problem. It can currently fix Office, Office 365, Outlook, and Windows problems. If the Microsoft Support and Recovery Assistant can't fix a problem for you, it will suggest next steps and help you get in touch with Microsoft support.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17.01.2546.000",
+    "detailsSection_file_name": [
+        "SaRACmd_17_01_2877_000.zip"
+    ],
+    "detailsSection_file_size": [
+        "29.0 MB"
+    ],
+    "detailsSection_file_date": "3/20/2025",
+    "systemRequirementsSection": "Outlook in any of the following Office versions can be scanned:<br/><br/>\r\n\r\nMicrosoft Office 365 (2019, 2016, or 2013, 32-bit or 64-bit)<br/>\r\nMicrosoft Office 2019 (32-bit or 64-bit; Click-to-Run or MSI installations)<br/>\r\nMicrosoft Office 2016 (32-bit or 64-bit; Click-to-Run or MSI installations)<br/>\r\nMicrosoft Office 2013 (32-bit or 64-bit; Click-to-Run or MSI installations)<br/>\r\nMicrosoft Office 2010 (32-bit or 64-bit)<br/><br/>\r\n\r\nIf you are running any edition of Windows 7, you must also have .NET Framework 4.5 installed. Windows 8 and later versions of Windows include at least .NET Framework 4.5.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Important Note:<br/><br/>\r\nThe primary and recommended method for installing SaRA is through the following Download link.<br/>\r\nhttps://aka.ms/SaRASetup<br/><br/>\r\n\r\nThis version of Microsoft Support and Recovery Assistant (SaRA) is a self-contained version that is scriptable (i.e., run from a command-line or PowerShell script). The idea behind this effort is to create an enterprise-ready diagnostic tool to target specific client issues.<br/>\r\nThe Enterprise version of SaRA is useful in situations where administrators need to remotely run a diagnostic tool on machines in their organization.<br/>\r\n\r\n1. Download the .zip file.<br />\r\n2. In the downloaded file, extract the files from the DONE folder to the computer where you are going to run the Enterprise version of SaRA.<br />\r\n3. Follow the steps in this article to <a href=\"https://docs.microsoft.com/en-us/office365/troubleshoot/administration/sara-command-line-version\">run the command-line version of SaRA.</a><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103391",
+    "downloadPreload": true
+}

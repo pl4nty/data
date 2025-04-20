@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Troubleshooting Group Policy in Microsoft\u00ae Windows\u00ae Server",
+    "downloadDescription": "This white paper helps you troubleshoot the most common problems affecting the deployment of Group Policy in a Windows Server 2003 or Windows Server 2000 environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "gp_troubleshooting.doc",
+            "url": "https://download.microsoft.com/download/5/f/9/5f949309-c0f8-4a92-bd65-64ce312e2a92/gp_troubleshooting.doc",
+            "size": "620032",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper helps you troubleshoot the most common problems affecting the deployment of Group Policy in a Windows Server 2003 or Windows Server 2000 environment. This white paper discusses the likely sources for problems with Group Policy application and administration, and suggests ways to identify the source of problems you might encounter. It also summarizes many of the tools (such as Group Policy Management Console and GPupdate.exe), log files, and other resources that you can use to troubleshoot problems with Group Policy.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "gp_troubleshooting.doc"
+    ],
+    "detailsSection_file_size": [
+        "605.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Word or Word Viewer</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003: Resources for IT Pros",
+            "url": "http://www.microsoft.com/technet/treeview/default.asp?url=/technet/prodtechnol/windowsserver2003/default.asp"
+        },
+        {
+            "title": "community Resources for Windows Server",
+            "url": "http://www.microsoft.com/windowsserver2003/community/default.asp"
+        },
+        {
+            "title": "home Page for Windows Server 2003",
+            "url": "http://www.microsoft.com/windowsserver2003/default.mspx"
+        },
+        {
+            "title": "get the Windows Server 2003 Evaluation Kit",
+            "url": "http://www.microsoft.com/windowsserver2003/evaluation/trial/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23086",
+    "downloadPreload": true
+}

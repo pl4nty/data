@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "PA-DSS Implementation Guide",
+    "downloadDescription": "\u200bThis document explains how to implement Microsoft Dynamics 365 for Retail 8.0 (April 2018) or Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 8.0 (April 2018) in a way that complies with the Payment Card Industry (PCI) Data Security Standard version 3.2. \u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PA-DSSImplGuidefor36580_2019.pdf",
+            "url": "https://download.microsoft.com/download/d/c/e/dce87f25-c1b4-4305-8860-a1591ced7d28/PA-DSSImplGuidefor36580_2019.pdf",
+            "size": "1080115",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bThis document is intended for customers, Microsoft Certified Partners, resellers, and integrators who are deploying Retail or Finance and Operations in a retail organization where electronic credit card and debit card payments are accepted, and where Retail or Finance and Operations is used as the payment application.\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "PA-DSSImplGuidefor36580_2019.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101950",
+    "downloadPreload": true
+}

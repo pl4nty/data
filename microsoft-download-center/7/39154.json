@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Server 2008 for Itanium-based Systems (KB2808679)",
+    "downloadDescription": "Install this update to resolve issues in Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2808679-ia64.msu",
+            "url": "https://download.microsoft.com/download/5/7/4/5740c4e1-2f8b-46d5-a925-7f514786d3d7/Windows6.0-KB2808679-ia64.msu",
+            "size": "1833789",
+            "version": "2808679",
+            "datePublished": "7/15/2024 3:27:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Install this update to resolve issues in Windows. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article for more information. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2808679",
+        "name": "KB2808679"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2808679",
+    "detailsSection_file_name": [
+        "Windows6.0-KB2808679-ia64.msu"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2808679"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39154",
+    "downloadPreload": true
+}

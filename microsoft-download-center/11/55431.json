@@ -1,0 +1,123 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Windows XP SP3 for XPe and WEPOS (KB3197835)",
+    "downloadDescription": "A security issue has been identified in a Microsoft software product that could affect your system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB3197835-x86-Embedded-Custom-ENU.exe",
+            "url": "https://download.microsoft.com/download/6/8/0/680fbdf4-7645-4db8-a779-e76c411c8fb5/WindowsXP-KB3197835-x86-Embedded-Custom-ENU.exe",
+            "size": "620784",
+            "version": "3197835",
+            "datePublished": "7/15/2024 4:41:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in a Microsoft software product that could affect your system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3197835",
+        "name": "KB3197835"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-143",
+        "name": "MS16-143"
+    },
+    "detailsSection_file_version": "3197835",
+    "detailsSection_file_name": [
+        "WindowsXP-KB3197835-x86-Embedded-Custom-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "606.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Embedded"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55431",
+    "downloadPreload": true
+}

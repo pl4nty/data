@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics AX 2009 Process Industries",
+    "downloadDescription": "Dynamics AX 2009 Process Industries",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB2678990-SP1-PI31-BUP.EXE",
+            "url": "https://download.microsoft.com/download/1/e/1/1e1507fe-849d-435f-857d-b4f6856c9f6c/DynamicsAX2009-KB2678990-SP1-PI31-BUP.EXE",
+            "size": "80379904",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:35:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProcessIndustries_5.1.3.1_AX2009sp1_x32.zip",
+            "url": "https://download.microsoft.com/download/1/e/1/1e1507fe-849d-435f-857d-b4f6856c9f6c/ProcessIndustries_5.1.3.1_AX2009sp1_x32.zip",
+            "size": "5665381",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:35:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProcessIndustries_5.1.3.1_AX2009sp1_x64.zip",
+            "url": "https://download.microsoft.com/download/1/e/1/1e1507fe-849d-435f-857d-b4f6856c9f6c/ProcessIndustries_5.1.3.1_AX2009sp1_x64.zip",
+            "size": "5665405",
+            "version": "5.1",
+            "datePublished": "7/15/2024 4:35:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the release for Dynamics AX 2009 Process Industries",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB2678990-SP1-PI31-BUP.EXE",
+        "ProcessIndustries_5.1.3.1_AX2009sp1_x32.zip",
+        "ProcessIndustries_5.1.3.1_AX2009sp1_x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "76.7 MB",
+        "5.4 MB",
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "AX 2009 installed prior to downloading this add-on pack.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the files for Dynamics AX 2009 Process Industries",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54510",
+    "downloadPreload": true
+}

@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Microsoft Visual Studio Team Foundation Server 2010 Work Item Synchronization",
+    "downloadDescription": "This management pack synchronizes System Center 2012 - Operations Manager Application Performance Monitoring (APM) alerts and Team Foundation Server (TFS) work items. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.TFSWISynchronization_MPGuide.docx",
+            "url": "https://download.microsoft.com/download/6/6/c/66cd154f-19b6-48d7-be0d-fa30f9a8f033/Microsoft.SystemCenter.TFSWISynchronization_MPGuide.docx",
+            "size": "61969",
+            "version": "7.0.8561.0",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SystemCenter.TFSWISynchronization.msi",
+            "url": "https://download.microsoft.com/download/6/6/c/66cd154f-19b6-48d7-be0d-fa30f9a8f033/Microsoft.SystemCenter.TFSWISynchronization.msi",
+            "size": "598016",
+            "version": "7.0.8561.0",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack synchronizes System Center 2012 - Operations Manager Application Performance Monitoring (APM) alerts and Team Foundation Server (TFS) work items. After importing this management pack, operators can manually assign APM alerts to the engineering team. Assigning an APM alert to engineering creates a new work item in Team Foundation Server. The management pack workflow tracks and synchronizes changes made to TFS work items and changes made to associated Operations Manager APM alerts. <br/>\r\n<br/>\r\n<b>Important:</b><br/>\r\nOnly APM alerts that are directly linked to events in Application Diagnostics can be linked to TFS work items. If you assign any other type of alerts to engineering, they will not synchronize with TFS work items. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nAfter importing this management pack, operators can:<br/>\r\n<ul>\r\n<li> Manually assign APM alerts to the engineering team which results in the creation of a new work item in Team Foundation Server. </li>\r\n<li> Track and synchronize changes made to TFS work items and changes made to associated Operations Manager APM alerts. </li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>April 13, 2012  - Original English release, version 7.0.8561.0</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8561.0",
+    "detailsSection_file_name": [
+        "Microsoft.SystemCenter.TFSWISynchronization_MPGuide.docx",
+        "Microsoft.SystemCenter.TFSWISynchronization.msi"
+    ],
+    "detailsSection_file_size": [
+        "60.5 KB",
+        "584.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u200b\r\n<ul>\r\n<li><b>Other Software: </b>\r\n<ul>\r\n<li>System Center 2012 - Operations Manager running on any supported OS. A dedicated Operations Manager management group is not required. </li>\r\n<li>Microsoft Visual Studio Team Foundation Server 2010</li>\r\n</ul></li>\r\n <br/>\r\n<li><b>Prerequisites</b><br/></li>\r\nOne of the following requirements must be met to run this management pack:<br/>\r\n<ul>\r\n<li> The Team Foundation Server (TFS) Object Model must be installed on the servers designated for TFS work item synchronization.  </li>\r\nOr <br/>\r\n<li> Microsoft Visual Studio Team Explorer 2010 must be installed on the servers designated for TFS work item synchronization. </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Follow \"<a href=\"http://go.microsoft.com/fwlink/p/?LinkID=219431\">How to Import an Operations Manager Management Pack</a>\" (<a href=\"http://go.microsoft.com/fwlink/p/?LinkID=219431\">http://go.microsoft.com/fwlink/p/?LinkID=219431</a>) section of System Center 2012 - Operations Manager user guide.<br/>\r\n<br/> \r\n<b>Using the TFS Work Item Synchronization Template</b><br/>\r\n<ol>\r\n<li> In the Operations Manager console, in the navigation pane, click the Authoring button, click Management Pack Templates, and then, in the tasks pane, click the Add Monitoring Wizard. </li>\r\n<li> To open the TFS Work Item Synchronization template, in the Add Monitoring Wizard on the Monitoring Type page, select TFS Work Item Synchronization. </li>\r\n<li> On the General Properties page enter the synchronization name and description of the connection, and select a target management pack. </li>\r\n<li> On the Server Settings page, enter the TFS server URL to the collection, select the Operations Manager target resource pool, and choose the Run As account to be used for the TFS access. These credentials will be used to manage work items, so they should have the rights to create a new work item type. On the first synchronization the work item type is also imported, so TFS administrator credentials are also required. </li>\r\n<li> On the Project Settings page, click Add to add application components previously configured for monitoring with .NET Application Performance Monitoring. </li>\r\n<li> Map the selected application components to a TFS project (discovered at the TFS server through connection and populated). This enables escalation of alerts to the mapped project in TFS. </li>\r\n<li> Complete the management pack configuration.  </li>\r\n <br/>\r\nFor additional information, see Guide for System Center Management Pack for Microsoft Visual Studio Team Foundation Server 2010 Work Item Synchronization.<br/>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Home Page",
+            "url": "http://www.microsoft.com/systemcenter/en/us/default.aspx"
+        },
+        {
+            "title": "visual Studio Team Foundation Server 2010",
+            "url": "http://www.microsoft.com/visualstudio/en-us/products/2010-editions/team-foundation-server/overview"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29422",
+    "downloadPreload": true
+}

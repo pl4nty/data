@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "ASR_RcmProxyAgent_1.32.8143.8973",
+    "downloadDescription": "ASR_RcmProxyAgent_1.32.8143.8973",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmProxyAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/0/1/0/0106e478-4d8b-4b6c-8673-8e1e0d47950e/RcmProxyAgentSetup.msi",
+            "size": "13320192",
+            "version": "1.32.8143.8973",
+            "datePublished": "3/15/2024 5:03:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASR_RcmProxyAgent_1.32.8143.8973",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.32.8143.8973",
+    "detailsSection_file_name": [
+        "RcmProxyAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.7 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103566",
+    "downloadPreload": true
+}

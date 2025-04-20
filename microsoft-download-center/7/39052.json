@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Enabling Hybrid Cloud Today with Microsoft Technologies whitepaper",
+    "downloadDescription": "Enabling Hybrid Cloud Today with Microsoft Technologies whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Enabling-Hybrid-Cloud-Today-with-Microsoft-Technologies.docx",
+            "url": "https://download.microsoft.com/download/4/0/d/40df3976-7055-4d1b-9a13-a0e297b209ec/Enabling-Hybrid-Cloud-Today-with-Microsoft-Technologies.docx",
+            "size": "1436840",
+            "version": "1.21",
+            "datePublished": "7/15/2024 3:11:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With the ambient credo to \u201cdo more with  less, with a better agility and time to market\u201d, IT inevitably becomes a  service provider for its enterprise and need to run like a business. The  undertaking also requires a step further in the way the IT delivers its  services to its customers: internal businesses and beyond. IT has indeed to  deliver the services in an industrialized way for greater speed and lower cost.  This requires increasing their overall core infrastructure operational maturity  in two main areas.<br/>\r\n  <br/>\r\n  The first one aims at improving the  management of their own on-premises IT landscape and traditional services by  evolving towards a private cloud, i.e. an optimized and more automated way to  provision and operate (a catalog of) services for businesses. The second one  consists in enhancing their service offerings by utilizing off-premises public  cloud augmentations (for acceptable cases of use) as (lower-cost) add-ons to  existing services in the catalog.<br/>\r\n  <br/>\r\n  The combination and interaction of these  two cloud paradigms results in the emergence of the hybrid cloud which meets  the demands and the expectations of the business. Hybrid cloud spans the two  above implementations. A service request can be instantiated in either  implementation, or moved from one to another, or can horizontally grow between  the two implementations (cloud bursting for instance).<br/>\r\n  <br/>\r\n  This paper discusses how Microsoft can  help your organization achieve a successful hybrid cloud strategy and present  the enabling technologies from on-premises, cross-premises, and off-premises  implementation of (parts of) the services. Several typical patterns and common  scenarios are illustrated throughout this paper.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.21",
+    "detailsSection_file_name": [
+        "Enabling-Hybrid-Cloud-Today-with-Microsoft-Technologies.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the Download button on this page  to start the download, or choose a different language from the drop-down list  and click Go.<br/>\r\n  Do one of the following:<br/>\r\n  <ul>\r\n   <li>To start the installation immediately,  click Open or Run this program from its current location.</li>\r\n  <li>To copy the download to your computer  for installation at a later time, click Save or Save this program to disk.</li>\r\n  </ul>\r\n\r\n<b>Related Resources</b><br/>\r\n  Microsoft Cloud OS : <a href=\"http://www.microsoft.com/en-us/server-cloud/cloud-os/\">http://www.microsoft.com/en-us/server-cloud/cloud-os/</a> <br/>\r\n  Microsoft Windows Server : <a href=\"http://www.microsoft.com/en-us/server-cloud/windows-server/\">http://www.microsoft.com/en-us/server-cloud/windows-server/</a> <br/>\r\n  Microsoft System Center : <a href=\"http://www.microsoft.com/en-us/server-cloud/system-center/\">http://www.microsoft.com/en-us/server-cloud/system-center/</a> <br/>\r\n  Microsoft Azure : <a href=\"http://azure.microsoft.com/en-us/overview/what-is-azure/\">http://azure.microsoft.com/en-us/overview/what-is-azure/</a><br/>\r\n  Microsoft Office 365 : <a href=\"http://office.microsoft.com/en-us/\">http://office.microsoft.com/en-us/</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Azure",
+            "url": "http://azure.microsoft.com/en-us/overview/what-is-azure/"
+        },
+        {
+            "title": "microsoft System Center ",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/"
+        },
+        {
+            "title": "microsoft Windows Server",
+            "url": "http://www.microsoft.com/en-us/server-cloud/windows-server/"
+        },
+        {
+            "title": " Microsoft Cloud OS",
+            "url": "https://www.microsoft.com/en-us/server-cloud/cloud-os/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39052",
+    "downloadPreload": true
+}

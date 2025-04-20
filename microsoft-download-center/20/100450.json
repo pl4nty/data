@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2019 Feature Pack",
+    "downloadDescription": "The Microsoft SQL Server 2019 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ReadMe.txt",
+            "url": "https://download.microsoft.com/download/e/2/1/e21249d1-d0d8-40d9-8d6c-54b900adb827/ReadMe.txt",
+            "size": "416",
+            "version": "15.0.2000.5",
+            "datePublished": "7/15/2024 4:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2019 Feature Pack was a collection of stand-alone packages which provide additional value for Microsoft SQL Server. It includes pointers to the latest versions of:<br />\n<ul>\n  <li>Tool and components for Microsoft\u00ae SQL Server 2019</li>\n  <li>Add-on providers for Microsoft SQL Server 2019</li>\n  </ul><br />\n\n<br/>Starting in 2019, all ancillary SQL Server components can be found at the \r\n<a href=\"https://go.microsoft.com/fwlink/?linkid=2104206\">\r\n    Download SQL Server extended features and tools\r\n  </a> page.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.5",
+    "detailsSection_file_name": [
+        "ReadMe.txt"
+    ],
+    "detailsSection_file_size": [
+        "416 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "  <br/>Starting in 2019, all ancillary SQL Server components can be found at the \r\n<a href=\"https://go.microsoft.com/fwlink/?linkid=2104206\">\r\n    Download SQL Server extended features and tools\r\n  </a> page.",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<br/>Starting in 2019, all ancillary SQL Server components can be found at the \r\n<a href=\"https://go.microsoft.com/fwlink/?linkid=2104206\">\r\n    Download SQL Server extended features and tools\r\n  </a> page.",
+    "additionalInformationSection": "- If you have questions about SQL Server 2017, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100450",
+    "downloadPreload": true
+}

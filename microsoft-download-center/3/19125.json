@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Troubleshooting Microsoft Exchange Server Performance",
+    "downloadDescription": "This guide provides Exchange administrators with information on how to isolate performance degradations and make use of existing tools and procedures for that purpose.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TrblshtE2k3Perf.doc",
+            "url": "https://download.microsoft.com/download/2/9/4/2942eff4-bd01-4174-aba4-905e3b147275/TrblshtE2k3Perf.doc",
+            "size": "769536",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Having one or more subsystems that are underperforming alters the responses and behaviors of a server. Usually, this means that the server becomes unresponsive or falls below what is considered acceptable operational behavior. This diminished performance puts the service level agreement (SLA) at risk, which ultimately means the organization itself can suffer.<br />\n<br />\nThis technical article provides administrators of Microsoft\u00ae Exchange Server 2003 with information about how to isolate performance degradations and how to use existing tools and products, such as Performance, Load Simulator, Exchange Stress and Performance 2003, Network Monitor, and Filemon, for this purpose. The information in this article can also be used to ensure that a server is not degrading over time because of hardware issues or malfunctions. <br />\n<br />\nNote that it is beyond the scope of this article to ensure that a server is healthy, or to diagnose or solve user experience problems. Although performance issues with the server generally translate to a poor user experience (such as slow client response), this is not always true and the reverse does not necessarily hold. Before concluding that a poor user experience results from a poorly performing server, it is important to correlate the user issues with observed degradations on the server.<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "TrblshtE2k3Perf.doc"
+    ],
+    "detailsSection_file_size": [
+        "751.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "troubleshooting Microsoft Exchange Server Performance",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47588"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19125",
+    "downloadPreload": true
+}

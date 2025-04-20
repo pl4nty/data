@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business \u2013 App SDK for iOS",
+    "downloadDescription": "The Skype for Business App SDK enables apps to seamlessly integrate messaging, audio, and video experiences.  See http://aka.ms/skypeappsdk to learn more.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeForBusinessAppSDKiOS-1.4.0.0.zip",
+            "url": "https://download.microsoft.com/download/6/e/3/6e37b1ac-4519-435f-aad7-dc1f794b8077/SkypeForBusinessAppSDKiOS-1.4.0.0.zip",
+            "size": "24811886",
+            "version": "1.4",
+            "datePublished": "7/15/2024 4:58:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download was originally released on December 8th, 2016.\r\n<br/>\r\nThe Skype for Business App SDK enables apps to seamlessly integrate messaging, audio, and video experiences. \r\nThe initial focus of the SDK is to enable consumer apps to embed communications from \u201cguests\u201d to Skype for Business users within an organization, via the \"guest meeting join\" capability.  Over time, the SDK's capabilities will expand to cover other scenarios.\r\nSee http://aka.ms/skypeappsdk for background information, tutorials and samples.\r\n<br/>\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4",
+    "detailsSection_file_name": [
+        "SkypeForBusinessAppSDKiOS-1.4.0.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See: http://aka.ms/skypeappsdk",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "See: http://aka.ms/skypeappsdk",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51962",
+    "downloadPreload": true
+}

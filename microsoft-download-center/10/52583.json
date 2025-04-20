@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Fast computation of seamless video loops",
+    "downloadDescription": "Demonstration code of the project presented at SIGGRAPH Asia 2015: a fast automatic technique for converting a short (5-second) input video to a seamless loop that can play forever without spatial or temporal artifacts. Last published: November 13, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "fastloops_demo_v1.1.zip",
+            "url": "https://download.microsoft.com/download/4/9/f/49fadeb0-4db6-4efe-b666-4de9a3fbbfa7/fastloops_demo_v1.1.zip",
+            "size": "34117017",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Demonstration code of the project presented at SIGGRAPH Asia 2015: a fast automatic technique for converting a short (5-second) input video to a seamless loop that can play forever without spatial or temporal artifacts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "fastloops_demo_v1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "32.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52583",
+    "downloadPreload": true
+}

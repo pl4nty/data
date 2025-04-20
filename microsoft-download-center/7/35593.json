@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013 hybrid resources",
+    "downloadDescription": "These resources can help you learn about SharePoint hybrid scenarios and about how to configure your environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "spc-2013-bcs-hybrid-model.vsd",
+            "url": "https://download.microsoft.com/download/6/4/4/644ba525-96cb-4739-b08f-18949a9bdadc/spc-2013-bcs-hybrid-model.vsd",
+            "size": "805888",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:30:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "spc-2013-bcs-hybrid-model.pdf",
+            "url": "https://download.microsoft.com/download/6/4/4/644ba525-96cb-4739-b08f-18949a9bdadc/spc-2013-bcs-hybrid-model.pdf",
+            "size": "346168",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:30:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The SharePoint 2013 Business Connectivity Services Hybrid Model (spc-2013-bcs-hybrid-model) illustrates the flow of data and authentication in a BCS Hybrid environment.\r\n\r\nAdditional information about hybrid deployments is available in the TechNet library.\r\n\r\n<ul><li><a href=\"http://technet.microsoft.com/library/dn197173.aspx\">Display hybrid search results in SharePoint Server 2013</a> describes how to configure search in a hybrid SharePoint environment so that users can get search results in SharePoint Server 2013 from the SharePoint Server 2013 and SharePoint Online search indexes.</li>\r\n\r\n<li><a href=\"http://technet.microsoft.com/library/dn197174.aspx\">Display hybrid search results in SharePoint Online</a> describes how to configure search in a hybrid SharePoint environment so that users can get search results in SharePoint Online from the SharePoint Server 2013 and SharePoint Online search indexes.</li>\r\n\r\n<li><a href=\"http://technet.microsoft.com/library/dn197239.aspx\">Deploy a Business Connectivity Services hybrid solution in SharePoint 2013</a> describes how to configure the Business Connectivity Services hybrid scenario to access on-premises data through SharePoint Online.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "spc-2013-bcs-hybrid-model.vsd",
+        "spc-2013-bcs-hybrid-model.pdf"
+    ],
+    "detailsSection_file_size": [
+        "787.0 KB",
+        "338.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35593",
+    "downloadPreload": true
+}

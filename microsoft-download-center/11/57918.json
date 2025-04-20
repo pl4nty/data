@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Managed Desktop - get started with your device",
+    "downloadDescription": "An end user walkthrough of the first-run experience for a new MMD device",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Managed Desktop - Get started with your device_1910.docx",
+            "url": "https://download.microsoft.com/download/5/8/1/581457d1-9c48-41b6-9fcc-5a4915acfe56/Microsoft Managed Desktop - Get started with your device_1910.docx",
+            "size": "1183629",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:06:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "A downloadable guide for end users that details each step in the out-of-box-experience for a new MMD device, and also provides contact details for the MMD support team.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Microsoft Managed Desktop - Get started with your device_1910.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "MMD enrollment",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Admins should save a copy and provide to end users as part of rolling out MMD devices.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57918",
+    "downloadPreload": true
+}

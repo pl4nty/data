@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Password Change Notification Service",
+    "downloadDescription": "The Password Change Notification Service synchronizes user passwords across multiple identity stores in an enterprise environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Password Change Notification Service x86.zip",
+            "url": "https://download.microsoft.com/download/d/a/2/da291539-6726-492e-9cdf-9a5331b452f9/Password Change Notification Service x86.zip",
+            "size": "1134965",
+            "version": "4.6.34.0",
+            "datePublished": "11/7/2024 9:10:12 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Password Change Notification Service x64.zip",
+            "url": "https://download.microsoft.com/download/d/a/2/da291539-6726-492e-9cdf-9a5331b452f9/Password Change Notification Service x64.zip",
+            "size": "1189395",
+            "version": "4.6.34.0",
+            "datePublished": "11/7/2024 9:10:12 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Password Change Notification Service enables synchronization of password changes in Active Directory to Microsoft Identity Manager 2016 SP2, or the Microsoft Enterprise Single Sign-On (ENTSSO) service. These components simplify password management in organizations with multiple user identity repositories.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.34.0",
+    "detailsSection_file_name": [
+        "Password Change Notification Service x86.zip",
+        "Password Change Notification Service x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "11/7/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Windows Server 2008 R2</LI>\r\n<LI>Windows Server 2012</LI>\r\n<LI>Windows Server 2012 R2</LI>\r\n<LI>Windows Server 2016</LI>\r\n<LI>Windows Server 2019</LI>\r\n</UL><br />\r\n<B>Minimum Hardware Requirements</B>\r\nThe following hardware is suggested for an installation of Microsoft Password Change Notification Service: \r\n<UL>\r\n<LI>Server with 1 GHz (for x86 processors) or 1.4 GHz (for x64 processors).</LI>\r\n<LI>512 MB of RAM or higher recommended.</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows Server 2008 R2",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Save the file to a local drive.</LI><LI>Extract the files to the domain controller(s) on which you want to install PCNS.</LI><LI>Follow the installation instructions in the <a href=\"http://technet.microsoft.com/en-us/library/cc720654(WS.10).aspx\"> PCNS Step-by-Step Guide.</a></LI></OL>",
+    "additionalInformationSection": "The Password Change Notification filter and service components must be installed on all Domain Controllers in a domain that is synchronizing with the configured targets. If the Password Change Notification Service is not installed and running on a domain controller, then any password changes that originate on that domain controller will not be synchronized.<br />\n<br />\nFor more information visit the <a href=\"http://technet.microsoft.com/en-us/library/cc720654(WS.10).aspx\"> PCNS Step-by-Step Guide.</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "pcns Step-by-Step Guide",
+            "url": "http://technet.microsoft.com/en-us/library/cc720654(WS.10).aspx"
+        },
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19495",
+    "downloadPreload": true
+}

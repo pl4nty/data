@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 7 (KB2728894)",
+    "downloadDescription": "Resolves an issue that might occur with the Dialog Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2728894-v2-x86.msu",
+            "url": "https://download.microsoft.com/download/a/6/f/a6f9c927-eac5-4ff6-9ff5-da99579513ee/Windows6.1-KB2728894-v2-x86.msu",
+            "size": "285668",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB2728894-v2-x64.cab",
+            "url": "https://download.microsoft.com/download/a/6/f/a6f9c927-eac5-4ff6-9ff5-da99579513ee/Windows6.1-KB2728894-v2-x64.cab",
+            "size": "137654",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2728894-v2-x64.msu",
+            "url": "https://download.microsoft.com/download/a/6/f/a6f9c927-eac5-4ff6-9ff5-da99579513ee/Windows6.1-KB2728894-v2-x64.msu",
+            "size": "310473",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2728894-v2-x86.cab",
+            "url": "https://download.microsoft.com/download/a/6/f/a6f9c927-eac5-4ff6-9ff5-da99579513ee/Windows6.1-KB2728894-v2-x86.cab",
+            "size": "112415",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2728894 fixes the following issue:\r\n<br></br>\r\nWhere occasionally customer applications stop responding due to a conflict in the Dialog Filter.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2728894",
+        "name": "KB2728894"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2728894-v2-x86.msu",
+        "Windows6.1-KB2728894-v2-x64.cab",
+        "Windows6.1-KB2728894-v2-x64.msu",
+        "Windows6.1-KB2728894-v2-x86.cab"
+    ],
+    "detailsSection_file_size": [
+        "279.0 KB",
+        "134.4 KB",
+        "303.2 KB",
+        "109.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded POSReady 7",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>POSReady7 image</b>: \r\n<br></br>\r\nA) Executing the appropriate msu file\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2728894-v2-x86.msu</li>\r\n<li>64bit Windows6.1-KB2728894-v2-x64.msu</li>\r\n</ul>\r\nOR\r\n<br></br>\r\nB) Installing the cab file via the command line with administrator privileges: \u201cDISM /online /add-package\"\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2728894-v2-x86.cab</li>\r\n<li>64bit Windows6.1-KB2728894-v2-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34786",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Device Guard and Credential Guard hardware readiness tool",
+    "downloadDescription": "Use this tool to see if your hardware is ready for Device Guard and Credential Guard. You can also use this to enable Device Guard or Credential Guard.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dgreadiness_v3.6.zip",
+            "url": "https://download.microsoft.com/download/b/d/8/bd821b1f-05f2-4a7e-aa03-df6c4f687b07/dgreadiness_v3.6.zip",
+            "size": "32429",
+            "version": "3.6",
+            "datePublished": "7/15/2024 4:54:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this tool to see if your hardware is ready for <a href=\"https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control\">Device Guard</a> and <a href=\"https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard\">Credential Guard</a>. You can also use this to enable Device Guard or Credential Guard.\r\n<br/>\r\nThis tool is a Windows PowerShell script that needs to run with elevated permissions. It will work with Windows 10 (beginning with version 1607) and Windows Server 2016.\r\n<br/>\r\nYou can use this tool in the following ways:\r\n<br/>\r\n<OL>\r\n<li>Check if the device can run Device Guard or Credential Guard</li>\r\n<li>Check if the device is compatible with the Hardware Lab Kit tests that are ran by partners</li>\r\n<li>Enable and disable Device Guard or Credential Guard</li>\r\n<li>Check the status of Device Guard or Credential Guard on the device</li>\r\n<li>Integrate with System Center Configuration Manager or any other deployment mechanism to configure registry settings that reflect the device capabilities</li>\r\n<li>Use an embedded ConfigCI policy in audit mode that can be used by default to enable Device Guard when a custom policy is not provided</li>\r\n</OL>\r\n\r\nUsage:\r\n<br/>\r\nDG_Readiness.ps1 \u2013[Enable/Disable/Capable/Ready] \u2013[DG/CG/HVCI/HLK] -Path &lt;ConfigCI policy&gt; -AutoReboot\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.6",
+    "detailsSection_file_name": [
+        "dgreadiness_v3.6.zip"
+    ],
+    "detailsSection_file_size": [
+        "31.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 or Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow the instructions in the readme.txt file that's included with the zip file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53337",
+    "downloadPreload": true
+}

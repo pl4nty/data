@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Intelligence Report volume 6 (July - December 2008)",
+    "downloadDescription": "This is the sixth volume of the Microsoft Security Intelligence Report (SIR).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Security Intelligence Report volume 6 - Key Findings Summary - English.xps",
+            "url": "https://download.microsoft.com/download/a/1/0/a100794f-d763-450a-97da-3ff0ddeb5a60/Microsoft Security Intelligence Report volume 6 - Key Findings Summary - English.xps",
+            "size": "2660913",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Security Intelligence Report volume 6 (July through December 2008).pdf",
+            "url": "https://download.microsoft.com/download/a/1/0/a100794f-d763-450a-97da-3ff0ddeb5a60/Microsoft Security Intelligence Report volume 6 (July through December 2008).pdf",
+            "size": "9000133",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Security Intelligence Report volume 6 - Key Findings Summary - English.pdf",
+            "url": "https://download.microsoft.com/download/a/1/0/a100794f-d763-450a-97da-3ff0ddeb5a60/Microsoft Security Intelligence Report volume 6 - Key Findings Summary - English.pdf",
+            "size": "2129742",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:49 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Security Intelligence Report volume 6 (July through December 2008).xps",
+            "url": "https://download.microsoft.com/download/a/1/0/a100794f-d763-450a-97da-3ff0ddeb5a60/Microsoft Security Intelligence Report volume 6 (July through December 2008).xps",
+            "size": "24850425",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Volume 6 of the SIR focuses on the second half of 2008 (from July - December) and builds upon the data published in the previously released volumes of the SIR. Using data derived from hundreds of millions of computers worldwide, and some of the busiest online services on the Internet, this report provides an in-depth perspective on trends in software vulnerability disclosures as well as trends in the malicious and potentially unwanted software landscape, and an update on trends in software vulnerability exploits. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Security Intelligence Report volume 6 - Key Findings Summary - English.xps",
+        "Microsoft Security Intelligence Report volume 6 (July through December 2008).pdf",
+        "Microsoft Security Intelligence Report volume 6 - Key Findings Summary - English.pdf",
+        "Microsoft Security Intelligence Report volume 6 (July through December 2008).xps"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "8.6 MB",
+        "2.0 MB",
+        "23.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the SIR and/or the Key Findings Summary. Both are available as a PDF or an XPS. In order to view the XPS document, you will need to install the reader (included in Windows Vista).",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/security/msec/default.mspx"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/security/msrc/default.mspx"
+        },
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/security/portal"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22513",
+    "downloadPreload": true
+}

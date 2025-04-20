@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Field Service and Project Service Automation Sample Data v3",
+    "downloadDescription": "The Field and Project Service sample data package installs the \"Fabrikam Manufacturing Master Data\" v(3.0.0.0) solution along with approximately 4.5k records across 48 entities",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "v902FPSMasterData_3_0_0_6.exe",
+            "url": "https://download.microsoft.com/download/6/c/d/6cd10cde-4124-47fd-bc8a-73a556a9b82a/v902FPSMasterData_3_0_0_6.exe",
+            "size": "14846064",
+            "version": "3.0.0.0",
+            "datePublished": "7/15/2024 4:52:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To become familiar with Dynamics 265 for Field Service and Project Service Automation, it's useful to have a small, pre-configured dataset that makes it easy to trace through end to end scenarios.\r\n\r\nFor this purpose, we've created seperate sample data installation packages(English-language only at this time) that makes it easier to explore and learn about these applications.\r\nRunning this install installation package will provide:\r\n1)  Setup data which will default the behaviour of Field and Project Service\r\n2) sample data such as Bookable Resources, Roles, Sales and Cost Price lists, Org Units and other reference data\r\n\r\nIMPORTANT: This package should only be used on demonstration, evaluation, training and test systems. There is no way to un-install this sample data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.0.0",
+    "detailsSection_file_name": [
+        "v902FPSMasterData_3_0_0_6.exe"
+    ],
+    "detailsSection_file_size": [
+        "14.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics 365 (v9.0) with Field Service (v8+) and Project Service Automation(v3+)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Please visit \"https://aka.ms/fpsrefdata\" for the latest and greatest instructions.\r\nDownload the self-extracting file, extract the contents to a working folder and update necessary configuration files in the PkgFolder sub-folder following the instructions from the above link.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57350",
+    "downloadPreload": true
+}

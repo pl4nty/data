@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Elevation of Privilege (EoP) Threat Modeling Card Game",
+    "downloadDescription": "Elevation of Privilege (EoP) is the easy way to get started threat modeling. It is a card game that developers, architects or security experts can play.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EoP_Whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/f/a/e/fae1434f-6d22-4581-9804-8b60c04354e4/EoP_Whitepaper.pdf",
+            "size": "276836",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "EoP_Card Game Images.pdf",
+            "url": "https://download.microsoft.com/download/f/a/e/fae1434f-6d22-4581-9804-8b60c04354e4/EoP_Card Game Images.pdf",
+            "size": "6283803",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EoP_Cards_Box_Native_files.zip",
+            "url": "https://download.microsoft.com/download/f/a/e/fae1434f-6d22-4581-9804-8b60c04354e4/EoP_Cards_Box_Native_files.zip",
+            "size": "90115890",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EoP_Score Card.pdf",
+            "url": "https://download.microsoft.com/download/f/a/e/fae1434f-6d22-4581-9804-8b60c04354e4/EoP_Score Card.pdf",
+            "size": "365031",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EoP_Instructions.pdf",
+            "url": "https://download.microsoft.com/download/f/a/e/fae1434f-6d22-4581-9804-8b60c04354e4/EoP_Instructions.pdf",
+            "size": "578309",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Elevation of Privilege (EoP) is the easy way to get started threat modeling. It is designed to make threat modeling easy and accessible for developers and architects. Threat modeling is a core security practice during the design phase of the Microsoft Security Development Lifecycle (SDL). The EoP card game helps examine possible threats to software and computer system. This game is licensed under the Creative Commons Attribution 3.0 United States License. Native files of the game are made available to allow editing, localization, and printing of the game. To view the full content of this license, visit http://creativecommons.org/licenses/by/3.0/us/",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "EoP_Whitepaper.pdf",
+        "EoP_Card Game Images.pdf",
+        "EoP_Cards_Box_Native_files.zip",
+        "EoP_Score Card.pdf",
+        "EoP_Instructions.pdf"
+    ],
+    "detailsSection_file_size": [
+        "270.3 KB",
+        "6.0 MB",
+        "85.9 MB",
+        "356.5 KB",
+        "564.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20303",
+    "downloadPreload": true
+}

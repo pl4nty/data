@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 Guides: Analytics and Reporting",
+    "downloadDescription": "This page includes links to the analytics and reporting documentation resources for Microsoft Dynamics GP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BusinessAnalyzer.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/BusinessAnalyzer.pdf",
+            "size": "571881",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReportScheduler.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/ReportScheduler.pdf",
+            "size": "498903",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerReportingServicesGuide.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/SQLServerReportingServicesGuide.pdf",
+            "size": "1079467",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SmartlistBuilderUsersGuide.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/SmartlistBuilderUsersGuide.pdf",
+            "size": "4489750",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EnhancedIntrastat.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/EnhancedIntrastat.pdf",
+            "size": "1165538",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ReportWriter.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/ReportWriter.pdf",
+            "size": "2817705",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AdvancedFinancialAnalysis.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/AdvancedFinancialAnalysis.pdf",
+            "size": "1030624",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AnalysisCubes.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/AnalysisCubes.pdf",
+            "size": "916674",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AnalyticalAccounting.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/AnalyticalAccounting.pdf",
+            "size": "4051093",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VATDaybook.pdf",
+            "url": "https://download.microsoft.com/download/6/1/6/616ff1a6-9269-4a0b-83f8-d9024aa39fa5/VATDaybook.pdf",
+            "size": "990628",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components: <br />\n<UL><LI><b>Advanced Financial Analysis</b> (AdvancedFinancialAnalysis.pdf): Explains how to create, modify, and format financial statements and reports. You can use Advanced Financial Analysis to modify the Balance Sheet, Profit and Loss Statement, Statement of Retained Earnings, and Statement of Cash Flows, and create custom reports.</LI>\n<LI><b>Analysis Cubes (Microsoft SQL Server 2005 and 2008)</b> (AnalysisCubes.pdf): Explains how to install, set up, and use Analysis Cubes, which you can view and customize to analyze your Microsoft Dynamics GP data. Also describes the dimensions, attributes, and measures of the cubes, and explains how to create Excel worksheets with PivotTable reports using the cubes.</LI>\r\n<LI><b>Analytical Accounting</b> (AnalyticalAccounting.pdf): Explains how to set up Analytical Accounting, which you can use to create, interpret, and analyze reports based on your company's chart of accounts. Also explains how to enter and use analysis information for transactions, including non-monetary information.</LI>\r\n<LI><b>Business Analyzer</b> (BusinessAnalyzer.pdf): Describes how to set up Business Analyzer to access reports from your desktop.</LI>\r\n<LI><b>Enhanced Intrastat</b> (EnhancedIntrastat.pdf): Explains how to set up your system to collect statistics on the trade of goods between countries/regions of the European Union, and to generate Intrastat returns specific to various countries/regions.</LI>\r\n<LI><b>Report Scheduler</b> (ReportScheduler.pdf): Explains how to set up and use the Report Scheduler to schedule and publish Report Writer reports. Also includes Report Catalog maintenance information.</LI>\r\n<LI><b>Report Writer User's Guide</b> (ReportWriter.pdf): Introduces the functions of Report Writer and explains how to complete tasks such as creating calculations and restrictions. Contains reference information, including mathematical functions and variables.</LI>\r\n<LI><b>SmartList Builder User's Guide With Excel Report Builder</b> (SmartListBuilderUsersGuide.pdf): Provides an in-depth understanding of how to create and maintain SmartLists and use Excel Report Builder, including security information.</LI>\r\n<LI><b>SQL Server Reporting Services Guide</b> (SQLServerReportingServicesGuide.pdf): Explains how to install and set up Microsoft SQL Server Reporting Services for use with Microsoft Dynamics GP reports.</LI>\r\n<LI><b>VAT Daybook</b> (VATDaybook.pdf): Explains how to set up and use the VAT Daybook to create Value-added Tax (VAT) reports based on the reporting requirements of the European Union customs agencies. Includes information about additional features for users in Spain, Belgium, and The Netherlands.</LI>\r\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "BusinessAnalyzer.pdf",
+        "ReportScheduler.pdf",
+        "SQLServerReportingServicesGuide.pdf",
+        "SmartlistBuilderUsersGuide.pdf",
+        "EnhancedIntrastat.pdf",
+        "ReportWriter.pdf",
+        "AdvancedFinancialAnalysis.pdf",
+        "AnalysisCubes.pdf",
+        "AnalyticalAccounting.pdf",
+        "VATDaybook.pdf"
+    ],
+    "detailsSection_file_size": [
+        "558.5 KB",
+        "487.2 KB",
+        "1.0 MB",
+        "4.3 MB",
+        "1.1 MB",
+        "2.7 MB",
+        "1006.5 KB",
+        "895.2 KB",
+        "3.9 MB",
+        "967.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF file format.</LI>\r\n<LI>Save the files to your computer. When prompted for a location for the files, save them to the Documentation folder in your Microsoft Dynamics GP 2010 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2010\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing files, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the manuals, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18981",
+    "downloadPreload": true
+}

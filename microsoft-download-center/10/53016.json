@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Logic Apps Enterprise Integration Tools for Visual Studio 2015 2.0",
+    "downloadDescription": "Azure App Service is a fully managed PaaS (Platform as a Service) for developers that makes it easier to build web, mobile, and integration apps. Logic Apps are a part of this suite and allow any technical user or developer to automate business process execution and workflow using an easy-to-use visual designer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure Logic Apps Enterprise Integration Tools.msi",
+            "url": "https://download.microsoft.com/download/1/a/b/1ab774e8-8d1f-4e04-a4d1-f1d140c3d59c/Azure Logic Apps Enterprise Integration Tools.msi",
+            "size": "3125248",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure App Service is a fully managed PaaS (Platform as a Service) for developers that makes it easier to build web, mobile, and integration apps. Logic Apps are a part of this suite and allow any technical user or developer to automate business process execution and workflow using an easy-to-use visual designer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Azure Logic Apps Enterprise Integration Tools.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 8, Windows 8.1, Windows 10, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2\r\n\r\nSupport Visual Studio versions\r\nProfessional, Premium and Ultimate editions of Microsoft Visual Studio 2015\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To install:\r\nOn this page, click Download, then click Run.\r\nAlternatively, click Save to download the installer file to your computer. Then navigate to the location at which you saved the file, double-click the file, and then follow the wizard instructions.\r\n\r\nTo uninstall/repair:\r\nPlease use Add/Remove Programs to uninstall or repair the appropriate component.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53016",
+    "downloadPreload": true
+}

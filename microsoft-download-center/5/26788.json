@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Mitigating Software Vulnerabilities",
+    "downloadDescription": "How exploit mitigation technologies can help reduce or eliminate risk, prevent attacks and minimize operational disruption due to software vulnerabilities..",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Mitigating_Software_Vulnerabilities.xps",
+            "url": "https://download.microsoft.com/download/5/0/5/505646ed-5edf-4e23-8e84-6119e4bf82e0/Mitigating_Software_Vulnerabilities.xps",
+            "size": "656058",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Mitigating_Software_Vulnerabilities.pdf",
+            "url": "https://download.microsoft.com/download/5/0/5/505646ed-5edf-4e23-8e84-6119e4bf82e0/Mitigating_Software_Vulnerabilities.pdf",
+            "size": "537456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper describes how exploit mitigation technologies can help reduce or eliminate risk, prevent attacks and minimize operational disruption due to software vulnerabilities.\r\n\r\nThe whitepaper explores the exploit mitigation technologies provided by Microsoft and also provides a business case for the value of these technologies. The concept of an exploit mitigation is then solidified by introducing the fundamental tactics and technologies that are used to break exploitation techniques. This information forms the basis for providing guidance on how software development teams and IT administrators can use these technologies to protect the applications they develop and deploy.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Mitigating_Software_Vulnerabilities.xps",
+        "Mitigating_Software_Vulnerabilities.pdf"
+    ],
+    "detailsSection_file_size": [
+        "640.7 KB",
+        "524.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported operating system",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the Mitigating Software Vulnerabilities whitepaper. This document is available in PDF and XPS format.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26788",
+    "downloadPreload": true
+}

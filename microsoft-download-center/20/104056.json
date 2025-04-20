@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Azure AD Connect Health Agent for Sync",
+    "downloadDescription": "Install Azure AD Connect Health Agent for Sync",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AadConnectHealthAadSyncSetup.exe",
+            "url": "https://download.microsoft.com/download/0/c/0/0c08512e-c93f-4f95-9a55-610254dc5e68/AadConnectHealthAadSyncSetup.exe",
+            "size": "10683240",
+            "version": "4.5.2487.0",
+            "datePublished": "7/15/2024 4:31:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure AD Connect Health Agent for Sync helps monitor and provides insight into your Azure AD Connect server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2487.0",
+    "detailsSection_file_name": [
+        "AadConnectHealthAadSyncSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Azure AD Connect is installed",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "The Azure AD Connect Agent for Sync is included with Azure AD Connect. By default, the Azure AD Connect Agent for Sync is automatically installed/upgraded whenever Azure AD Connect is installed/upgraded. \r\nThe Azure AD Connect Agent for Sync is automatically upgraded when a new version of the agent is released.\r\nThere is no need for you to manually download and install the Azure AD Connect Agent for Sync unless you are trying to manually resolve a technical issue based on guidance/documentation provided by Microsoft.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104056",
+    "downloadPreload": true
+}

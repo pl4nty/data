@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Foundation 2010 Client Object Model Redistributable",
+    "downloadDescription": "This is a redistributable package of the Microsoft Silverlight and Microsoft .NET managed client object models in Microsoft SharePoint Foundation 2010, intended for use by developers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SPClient_x86.msi",
+            "url": "https://download.microsoft.com/download/f/f/9/ff9a51b6-69e7-481d-b599-e8e94422fddf/SPClient_x86.msi",
+            "size": "477184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:02:16 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SPClient_x64.msi",
+            "url": "https://download.microsoft.com/download/f/f/9/ff9a51b6-69e7-481d-b599-e8e94422fddf/SPClient_x64.msi",
+            "size": "477184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:02:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This easy-to-use, redistributable package of the Microsoft Silverlight and Microsoft .NET managed client object models in Microsoft SharePoint Foundation 2010 enables developers to reference the client object model without requiring SharePoint Foundation 2010.\u200b The package includes all client-side object model (CSOM) DLLs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SPClient_x86.msi",
+        "SPClient_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "466.0 KB",
+        "466.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "  Windows Server 2008 Service Pack 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Download the files. Run the installer that matches your system architecture, either x86 or x64.",
+    "relatedResourcesSection": [
+        {
+            "title": "client Object Model Resource Center",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/ff770207.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21786",
+    "downloadPreload": true
+}

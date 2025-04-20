@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvcSpec_9.52.6522.1",
+    "downloadDescription": "ASRMobSvcSpec_9.52.6522.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ASRMobSvcSpecProd_9.52.6522.1.json",
+            "url": "https://download.microsoft.com/download/0/5/b/05bec4dc-ef7c-44ae-a477-ce1645e55788/ASRMobSvcSpecProd_9.52.6522.1.json",
+            "size": "541682",
+            "version": "9.52.6522.1",
+            "datePublished": "11/19/2022 10:46:14 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ASRMobSvcSpecCan_9.52.6522.1.json",
+            "url": "https://download.microsoft.com/download/0/5/b/05bec4dc-ef7c-44ae-a477-ce1645e55788/ASRMobSvcSpecCan_9.52.6522.1.json",
+            "size": "583398",
+            "version": "9.52.6522.1",
+            "datePublished": "11/19/2022 10:46:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvcSpec_9.52.6522.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.52.6522.1",
+    "detailsSection_file_name": [
+        "ASRMobSvcSpecProd_9.52.6522.1.json",
+        "ASRMobSvcSpecCan_9.52.6522.1.json"
+    ],
+    "detailsSection_file_size": [
+        "529.0 KB",
+        "569.7 KB"
+    ],
+    "detailsSection_file_date": "11/19/2022",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Windows Server 2016",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104732",
+    "downloadPreload": true
+}

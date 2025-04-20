@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Services on server install workseet for streamlined SharePoint Server 2013 topologies",
+    "downloadDescription": "This worksheet helps you plan for and indicate which services will run on farm servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "services-on-server-install-worksheet-streamlined.xlsx",
+            "url": "https://download.microsoft.com/download/e/a/8/ea86f21d-ae34-4224-ac84-81b8225d3ec9/services-on-server-install-worksheet-streamlined.xlsx",
+            "size": "28142",
+            "version": "1",
+            "datePublished": "7/15/2024 3:33:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As you plan a SharePoint environment, you'll consider the services that you plan to run on various web servers or application servers in a streamlined topology. Use this worksheet to record the services that you plan to assign to servers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "services-on-server-install-worksheet-streamlined.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "27.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Excel 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "37001",
+    "downloadPreload": true
+}

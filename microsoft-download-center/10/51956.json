@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Platinum: Targeted attacks in South and Southeast Asia",
+    "downloadDescription": "This article describes the history, behavior, and tactics of a newly discovered targeted activity group, which Microsoft has code-named PLATINUM. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Platinum feature article - Targeted attacks in South and Southeast Asia April 2016.pdf",
+            "url": "https://download.microsoft.com/download/2/2/5/225bfe3e-e1de-4f5b-a77b-71200928d209/Platinum feature article - Targeted attacks in South and Southeast Asia April 2016.pdf",
+            "size": "1149579",
+            "version": "1",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article includes in-depth analysis of the PLATINUM targeted activity group, including a case study of a recent attack. \r\nTargeted activity groups are skilled at covering their tracks and evading detection, and it can be very difficult to definitively associate an activity group with a specific nation-state or group of individuals. \r\nLike many such groups, PLATINUM seeks to steal sensitive intellectual property related to government interests, but its range of preferred targets is consistently limited to specific governmental organizations, defense institutes, intelligence agencies, diplomatic institutions, and telecommunication providers in South and Southeast Asia. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Platinum feature article - Targeted attacks in South and Southeast Asia April 2016.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview"
+    ],
+    "installInstructionSection": "This article is in PDF format and requires a PDF reader. Microsoft Edge and Microsoft Reader can be used to read the article.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51956",
+    "downloadPreload": true
+}

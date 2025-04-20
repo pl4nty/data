@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Search architectures for SharePoint Server 2016",
+    "downloadDescription": "Download this poster to learn about search architectures in SharePoint Server 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP_2016_Search_Architecture_Model.pdf",
+            "url": "https://download.microsoft.com/download/2/0/8/2081e053-4e56-4b87-87a4-9380d042b95d/SP_2016_Search_Architecture_Model.pdf",
+            "size": "930743",
+            "version": "Nov2016",
+            "datePublished": "7/15/2024 4:40:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP_2016_Search_Architecture_Model.vsdx",
+            "url": "https://download.microsoft.com/download/2/0/8/2081e053-4e56-4b87-87a4-9380d042b95d/SP_2016_Search_Architecture_Model.vsdx",
+            "size": "515215",
+            "version": "Nov2016",
+            "datePublished": "7/15/2024 4:40:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This poster shows the logical architecture and interaction of search components, and an example of a fault-tolerant server farm that provides enterprise search. \r\n\r\nThe poster is available in .VSDX and .PDF versions. Once you click on the \"Download\" button, you're prompted to select the files you need. Download the .VSDX if you have Visio, otherwise download the .PDF for the Adobe Acrobat Reader version.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2016",
+    "detailsSection_file_name": [
+        "SP_2016_Search_Architecture_Model.pdf",
+        "SP_2016_Search_Architecture_Model.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "908.9 KB",
+        "503.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio or Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol> \r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n<li>Choose <b>Save</b> or <b>Save this program to disk</b> to copy the download to your computer.</li> \r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54295",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Project Server 2010 Demand Management Webcast Series slide presentations",
+    "downloadDescription": "PowerPoint slides for the Microsoft Project Server 2010 Demand Management Webcast Series training videos.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ProjectServer2010DemandManSlides.zip",
+            "url": "https://download.microsoft.com/download/4/d/a/4dae6b2a-4aaf-42c0-9511-76719ac5e719/ProjectServer2010DemandManSlides.zip",
+            "size": "9471947",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:11:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains four Microsoft PowerPoint presentations for the Project Server 2010 Demand Management Webcast Series of training presentations. The presentations included in this download are: \r\n<ul>\r\n <li>Project Server 2010 - Demand Management Part 1</li>\r\n <li>Project Server 2010 - Demand Management Part 2</li>\r\n <li>Project Server 2010 - Demand Management Part 3</li>\r\n <li>Project Server 2010 - Demand Management Part 4</li>\r\n</ul>\r\n\r\nThe Project 2010 IT-Professional Webcast Series is a set of Project Server 2010 training videos presented by Microsoft product managers and architects that are targeted for the IT-Professional audience. These videos are available to view on-demand through the <a href=\"http://www.microsoft.com/events/series/epm.aspx?tab=webcasts\">Microsoft Events and Webcast site</a>.  Download and use the corresponding slide presentations to assist in your understanding of the training videos.  For a comprehensive description of each of the videos in the series, see the TechNet article <a href=\"http://technet.microsoft.com/library/0fd2b8d0-4a39-4738-9afa-65b461a33dbc(office.14).aspx\">Project Server 2010 Demand Management Webcast Series</a>. For additional technical information referenced in the slides, see the <a href=\"http://technet.microsoft.com/projectserver/ee263909.aspx\">Project Server 2010 TechCenter (TechNet)</a> or <a href=\"http://office2010.microsoft.com/en-us/project-help/project-help-and-how-to-FX101817044.aspx\">Project 2010 How-to and Help</a>.  For more information about Project 2010, see the <a href=\"http://www.microsoft.com/project/2010\">Project 2010 Web site</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ProjectServer2010DemandManSlides.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "To download and read this file, you must have Microsoft Office PowerPoint 2007 or <a href=\"http://go.microsoft.com/fwlink/?LinkId=181980\">PowerPoint Viewer 2007</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to transfer the compressed file to your computer. Decompress the file, then you can open the individual .pptx files. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13813",
+    "downloadPreload": true
+}

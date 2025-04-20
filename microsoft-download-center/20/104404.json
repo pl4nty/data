@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "RcmReprotectAgent_1.36.8433.24288",
+    "downloadDescription": "RcmReprotectAgent_1.36.8433.24288",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmReprotectAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/f/e/0/fe0dddcc-79f4-4203-bde9-3b51704c09f6/RcmReprotectAgentSetup.msi",
+            "size": "17375232",
+            "version": "1.36.8433.24288",
+            "datePublished": "7/15/2024 4:32:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RcmReprotectAgent_1.36.8433.24288",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.36.8433.24288",
+    "detailsSection_file_name": [
+        "RcmReprotectAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "16.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Follow wizard instructions RcmReprotectAgent installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104404",
+    "downloadPreload": true
+}

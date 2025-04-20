@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Visual FoxPro 8.0 Service Pack 1 GDIPLUS.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Visual FoxPro 8.0 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vfp8.0sp1-kb971104-x86-enu.exe",
+            "url": "https://download.microsoft.com/download/2/1/c/21c598e3-0aeb-4790-b280-5e1113166733/VFP8.0sp1-KB971104-X86-Enu.exe",
+            "size": "2011416",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Visual FoxPro 8.0 Service Pack 1 and gain control over it. You can help protect your computer by installing this update from Microsoft. <br />\n<br />\nThis update uses Windows Installer technology which uses an internal database for recording the installation state for any products and patches based on Windows Installer technology. Under certain conditions the Windows Installer database may contain invalid file hashes for un-versioned files, and when you try to install an update you may see a prompt for providing the source CD or other media that was used for installing the original product. Running the update may result in an update to the Windows Installer database on your PC to rectify this problem.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB971104",
+        "name": "KB971104"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS09-062",
+        "name": "MS09-062"
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vfp8.0sp1-kb971104-x86-enu.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<B>Note:</B> More information about Service Pack levels currently supported for the platforms listed above can be found in the following page: <a href=\"http://go.microsoft.com/fwlink/?LinkId=164675\">Microsoft Product Support Lifecycle</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 2000",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<ol><br />\n<LI>  Click the <b>Download</b> button on this page to start the download.</LI><br />\n<li>  To start the installation immediately, click <b>Run</b>. To save the download to your computer for installation at a later time, click <b>Save</b>.  To cancel the installation, click <b>Cancel</b>.</li><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual FoxPro 8.0 SP1",
+            "url": "http://support.microsoft.com/kb/971104"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2776",
+    "downloadPreload": true
+}

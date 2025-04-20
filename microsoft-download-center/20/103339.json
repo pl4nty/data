@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "ASR_PushInstallAgent_1.30.8056.17651",
+    "downloadDescription": "ASR_PushInstallAgent_1.30.8056.17651",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PushInstallAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/2/e/e/2eeb4ffe-6c9e-407a-9f8c-700a5c98353e/PushInstallAgentSetup.msi",
+            "size": "17911808",
+            "version": "1.30.8056.17651",
+            "datePublished": "5/15/2024 5:05:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASR_PushInstallAgent_1.30.8056.17651",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.30.8056.17651",
+    "detailsSection_file_name": [
+        "PushInstallAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "17.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103339",
+    "downloadPreload": true
+}

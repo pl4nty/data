@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2016 Software Defined Networking Deployment Validator",
+    "downloadDescription": "SDN deployment validator",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SDNValidtionTool.EXE",
+            "url": "https://download.microsoft.com/download/7/0/e/70ebeba5-46ed-48c1-9f17-fa442e54f04b/SDNValidtionTool.EXE",
+            "size": "1674752",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:37:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SDN deployment validator",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SDNValidtionTool.EXE"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016 Datacenter",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Note: the validation tool currently only works if you run it on Windows 10. It will be updated to support Windows Server 2016 very soon. \r\n1. Extract the SDN deployment validation tool\r\n2. Run \"NetworkControllerValidator.exe\" \r\n3. Follow the wizard to start the validation\r\n4. On \"Host Credentials\" page, Input the accounts which has administrator previleage on the SDN managed hosts. If your current user has the administrator previleage of the SDN managed hosts, then you can simply check \"Use Integrated Windows Authentication\" checkbox and go next.\r\n5. Input the Network Controller REST address in the \"REST Connection Address\" text field.  For example: NetworkController.CONTOSO.COM You don't need to put \"HTTPS://\" as a part of the Network Controller REST Address. \r\n6. Input the Network Controller credentials, the account you provide should be as a member of the Network Controller management AD security group. If your current account is the member of Network Controller management AD security group, you can simply check \"Use Integrated Windows Authentication\" checkbox and go next.\r\n7. On the \"Select Hosts\" page, you can click \"Import\" button to import all SDN managed hosts automatically. It will take about 5 seconds to see the imported hosts list. If importing SDN managed servers is working, it means you are ready to run the SDN validation tests.\r\n8. On the \"Validation Options\" page, you can choose to Run all the tests or run the tests you selected.\r\n9. If you choose run the tests you select only, then you will have a \"Test Selection\" page, to finish the selection of your tests.\r\n10. On the \"Confirmation\" page, it will display all the testing that will be run. You can click on Next to trigger the testing.\r\n11. On the \"Summary\" page, all the testing result will be displayed in the list. And you can click on \"View Report\" to get the detail information of all the testing results. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55708",
+    "downloadPreload": true
+}

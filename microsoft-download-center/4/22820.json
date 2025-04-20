@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Silverlight 2 DataGrid December 2008 Release",
+    "downloadDescription": "This download contains an updated version of the Silverlight 2 DataGrid control.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SL2DataGridDec08.exe",
+            "url": "https://download.microsoft.com/download/4/a/9/4a9e770c-0929-48aa-a066-666ed18ee308/SL2DataGridDec08.exe",
+            "size": "144896",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:11:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This version of the DataGrid contains the following improvements over the version that was released in the  Silverlight 2 SDK:\r\n<ul>\r\n<li>Almost 30 bugs have been fixed.</li>\r\n<li>Rows containing focus no longer disappear when the ItemsSource changes</li>\r\n<li>Selection is now preserved when sorting</li>\r\n<li>ComboBox and other controls opening a popup no longer end editing mode for the DataGrid</li>\r\n<li>Buttons outside the DataGrid work as expected when they are clicked while the DataGrid is in editing mode</li>\r\n<li>Improved FrozenColumn behavior.</li>\r\n<li>Improved cell currency.</li>\r\n<li>Selection is updated at the time when the CurrentCellChanged event is raised</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "SL2DataGridDec08.exe"
+    ],
+    "detailsSection_file_size": [
+        "141.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visual Studio 2008 SP1<br />\r\nMicrosoft Silverlight 2 <br />\r\nMicrosoft Silverlight 2 SDK<br />\r\nMicrosoft Silverlight Tools for Visual Studio 2008 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install the Silverlight 2 DataGrid December 2008 Release:</b>\r\n<ol>\r\n  <li>Close all instances of Microsoft Visual Studio.</li>\r\n  <li>Delete all cached toolbox items by removing all files beginning with \"toolbox\" from %LocalAppData%\\Microsoft\\VisualStudio\\9.0.\r\n    <ul>\r\n      <li>On Microsoft Windows XP, %LocalAppData% is Documents and Settings\\<i>UserName</i>\\Local Settings\\Application Data.</li>\r\n      <li>On Microsoft Windows Vista, %LocalAppData% is Users\\<i>UserName</i>\\AppData\\Local.</li>\r\n    </ul>\r\n  </li>\r\n  <li>Replace the following assemblies with the ones in this package:\r\n    <ul>\r\n      <li>%ProgramFiles%\\Microsoft SDKs\\Silverlight\\v2.0\\Libraries\\Client\\System.Windows.Controls.Data.dll</li>\r\n      <li>%ProgramFiles%\\Microsoft SDKs\\Silverlight\\v2.0\\Libraries\\Client\\System.Windows.Controls.Data.Design.dll</li>\r\n    </ul>\r\n  </li>\r\n  <li>For any existing projects, delete the reference to System.Windows.Controls.Data.dll and then re-add the reference.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22820",
+    "downloadPreload": true
+}

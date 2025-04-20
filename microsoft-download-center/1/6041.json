@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 2.0 Service Pack 1 (x64)",
+    "downloadDescription": "Service Pack 1 for .NET Framework 2.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NetFx20SP1_x64.exe",
+            "url": "https://download.microsoft.com/download/9/8/6/98610406-c2b7-45a4-bdc3-9db1b1c5f7e2/NetFx20SP1_x64.exe",
+            "size": "49196040",
+            "version": "SP1",
+            "datePublished": "7/15/2024 3:14:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft .NET Framework 2.0 Service Pack 1 provides cumulative roll-up updates for customer reported issues found after the release of Microsoft .NET Framework 2.0. In addition, this release provides security improvements, and prerequisite feature support for .NET Framework 3.0 Service Pack 1, and .NET Framework 3.5.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP1",
+    "detailsSection_file_name": [
+        "NetFx20SP1_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "46.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\n<LI><b>Software:</b> Install <a href=\"http://www.microsoft.com/technet/security/bulletin/ms04-011.mspx\">KB 835732</a> before installing .NET Framework 2.0 Service Pack 1.</LI>\n<LI><b>Processor: </b>400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)<br/></LI>\n<LI><b>RAM:</b> 96 MB (Minimum); 256 MB (Recommended)<br/></LI>\n<LI> <b>Hard Disk: </b>Up to 500 MB of available space may be required<br/></LI>\n<LI> <b>CD or DVD Drive: </b> Not required<br/></LI>\n<LI> <b>Display:</b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)<br/></LI>\n\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI> <b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. In addition, make sure you have <a href=\"http://support.microsoft.com/kb/893803\">Windows Installer 3.1</a> installed before you install this service pack.</LI><br />\n<LI>Click the <b>Download</b> button on this page to start the download </LI><br />\n<LI>To save the download to your computer for installation at a later time, click <b>Save</b>.</LI><br />\n<LI>To cancel the installation, click <b>Cancel</b>. </LI><br />\n\n<br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 2.0 Service Pack 1 (IA64)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=32E77AE0-96EF-4ECD-A157-9BF61A7C8DAA&displaylang=en"
+        },
+        {
+            "title": "microsoft .NET Framework 2.0 Service Pack 1 (x64) LangPack",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=1CC39FFE-A2AA-4548-91B3-855A2DE99304&displaylang=en"
+        },
+        {
+            "title": "kb Articles",
+            "url": "http://support.microsoft.com/kb/945757"
+        },
+        {
+            "title": "microsoft .NET Framework 2.0 Service Pack 1 (x86)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=79BC3B77-E02C-4AD3-AACF-A7633F706BA5&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6041",
+    "downloadPreload": true
+}

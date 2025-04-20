@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Bing: New Features Relevant to Webmasters white paper",
+    "downloadDescription": "This white paper is an overview of the key features in Bing of interest to webmasters",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Bing--NewFeaturesForWebmasters.xps",
+            "url": "https://download.microsoft.com/download/0/d/9/0d94eecb-c767-445e-b708-9c829275995f/Bing--NewFeaturesForWebmasters.xps",
+            "size": "1407537",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Bing--NewFeaturesForWebmasters.pdf",
+            "url": "https://download.microsoft.com/download/0/d/9/0d94eecb-c767-445e-b708-9c829275995f/Bing--NewFeaturesForWebmasters.pdf",
+            "size": "1291281",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper discusses the key new features of the Bing search engine results page (SERP) presentation that are relevant to webmasters and web publishers. It also discusses search engine optimization (SEO) considerations needed for Bing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Bing--NewFeaturesForWebmasters.xps",
+        "Bing--NewFeaturesForWebmasters.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A web browser that supports Portable Document Format (PDF) documents, such as Microsoft Internet Explorer or other, third party web browsers equipped with a PDF plug-in. An XPS version of the white paper is also provided for users of Microsoft Windows Vista and Microsoft Office System 2007.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Double-click the link to the document in your PDF plug-in-enabled web browser.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22140",
+    "downloadPreload": true
+}

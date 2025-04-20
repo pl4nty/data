@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud Networking for Enterprise Architects",
+    "downloadDescription": "Understand the fundamental change in network traffic for cloud services and optimize your on-premises network and Internet connectivity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_networking.vsd",
+            "url": "https://download.microsoft.com/download/a/9/3/a93dbac9-e6de-479c-a62b-a460633f84db/MSFT_cloud_architecture_networking.vsd",
+            "size": "4131328",
+            "version": "Sept2016",
+            "datePublished": "7/15/2024 3:05:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_networking.pdf",
+            "url": "https://download.microsoft.com/download/a/9/3/a93dbac9-e6de-479c-a62b-a460633f84db/MSFT_cloud_architecture_networking.pdf",
+            "size": "947826",
+            "version": "Sept2016",
+            "datePublished": "7/15/2024 3:05:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Migrating your productivity and computing workloads to Microsoft cloud services and platforms requires a new approach to optimize network traffic on your intranet and to Microsoft cloud services on the Internet. This poster takes you through the design steps to optimize your network traffic to Microsoft's cloud offerings, including Office 365, Azure, Intune, and Dynamics 365.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Sept2016",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_networking.vsd",
+        "MSFT_cloud_architecture_networking.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.9 MB",
+        "925.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This poster is available in Visio (VSD or VSDX) and PDF versions in 11x17 (tabloid) format for easy printing. \r\n\r\nYou will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. \r\n\r\nYou will need the Adobe Acrobat reader for the PDF version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources"
+        },
+        {
+            "title": "article version of this poster",
+            "url": "https://docs.microsoft.com/office365/enterprise/microsoft-cloud-networking-for-enterprise-architects"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54425",
+    "downloadPreload": true
+}

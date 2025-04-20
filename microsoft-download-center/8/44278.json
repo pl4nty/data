@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 Service Pack 4",
+    "downloadDescription": "Download SQL Server 2008 SP4",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008SP4-KB2979596-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/5/e/7/5e7a89f7-c013-4090-901e-1a0f86b6a94c/ENU/SQLServer2008SP4-KB2979596-x86-ENU.exe",
+            "size": "326047912",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:24:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008SP4-KB2979596-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/5/e/7/5e7a89f7-c013-4090-901e-1a0f86b6a94c/ENU/SQLServer2008SP4-KB2979596-x64-ENU.exe",
+            "size": "396782240",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:24:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2008 Service Pack 4 (SP4) is now available for download. While keeping product changes contained, we have made significant investments to ease deployment and management of Service Packs. A few key enhancements for customers in Microsoft SQL Server 2008 Service Pack 4 are : \n<ul>\n   <li>Enhanced upgrade experience from previous versions of SQL Server to SQL Server 2008 SP4. In addition, we have increased the performance & reliability of the setup experience.</li>\n   <li>In SQL Server Integration Services logs will now show the total number of rows sent in Data Flows.</li>\n   <li>Enhanced warning messages when creating the maintenance plan if the Shrink Database option is enabled.</li>\n   <li>Resolving database issue with transparent data encryption enabled and making it available even if certificate is dropped. </li>\n   <li>Optimized query outcomes when indexed Spatial Data Type column is referenced by DTA (Database Tuning Advisor). </li>\n   <li>Superior user experience with Sequence Functions (e.g Row_Numbers()) in a Parallel execution plan. </li>\n  </ul>\n<br />\n\nMicrosoft SQL Server 2008 Service Pack 3 is not a prerequisite for installing SQL Server 2008 Service Pack 4. These packages may be used to upgrade any of the following editions of SQL Server 2008:\n  <ul>\n   <li>Enterprise </li>\n   <li>Standard </li>\n   <li>Evaluation </li>\n   <li>Developer  </li>\n   <li>Workgroup </li>\r\n   <li>Express</li>\n  </ul>\n<br />\n\nSQL Server 2008 SP4 contains the cumulative updates of SQL Server 2008 SP3 cumulative update package 1 to 17, and fixes to issues that have been reported through our customer feedback platforms.  These include supportability enhancements and issues that have been reported through Windows Error Reporting.\n<br />\n<br />\n<br />\n<br />\nFor a detailed list of new features and improvements that are included in SQL Server 2008 SP4, review the  <a href=\"http://go.microsoft.com/fwlink/?LinkId=229295\">Release Notes.  </a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2979596",
+        "name": "KB2979596"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.6000.29",
+    "detailsSection_file_name": [
+        "SQLServer2008SP4-KB2979596-x86-ENU.exe",
+        "SQLServer2008SP4-KB2979596-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "310.9 MB",
+        "378.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>Windows 7; Windows8, Windows Server 2003 Service Pack 2 and R2;Windows Server 2008 Service Pack 1 and Service Pack 2;Windows Server 2008 R2;Windows Vista Service Pack 1 and Service Pack2;Windows XP Service Pack 3</li>\n</ul>\n<ul>  <li>32-bit systems (x86)</li>\n  <ul>\n    <li>PC with Intel or compatible Pentium III 600 MHz or higher processor (1 GHz or faster recommended)</li>\n  </ul>\n  <li>64-bit systems (x64)</li>\n  <ul>\n    <li>1GHz or faster processor</li>\n  </ul>\n  <li>Minimum of 512 MB of RAM (1 GB or more recommended)</li>\n  <li>675 MB of available hard disk space</li>\n</ul><br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "\n    <b>Note: </b>You must have administrative rights on the computer to install SQL Server 2008 SP4. \nWe recommend that you read the <a href=\" http://go.microsoft.com/fwlink/?LinkId=229295\">Release Notes</a> and <a href=\"http://go.microsoft.com/fwlink/?LinkId=229521\">Readme</a> before installing SQL Server 2008 SP4.<BR /><BR />\n<b>Step 1:</b> Download and review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=229519&clcid=0x409\">Setup Documentation.</a>\n<ul>\n<li><b>To view the SQL Server 2008 SP4 Setup documentation on the local computer, do the following: </b></li>\n<ul>\n<li>Download and run SqlSP4_setuphelp.exe. </li>\n<li>Follow the instructions to extract the Help file. </li>\n<li>Find the location on the local computer where you saved the SqlSP4_setuphelp.chm file. </li>\n<li>Double-click SqlSP4_setuphelp.chm to open the Help file. </li>\n</ul>\n</ul>\n\n<b>Step 2:</b> Download the appropriate package by clicking one of the links below.\n<br />\n<ul>\n<li>To start the installation immediately, click <b>Run</b>. </li>\n<li>To install SP4 at a later time, click <b>Save</b>.</li>\n</ul>",
+    "additionalInformationSection": "\n<li> If you have questions about SQL Server 2008 SP4, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=202377\"> SQL Server 2008 forums on MSDN. </a></li>\n<li> Get system and sample database information from <a href=\"http://go.microsoft.com/fwlink/?LinkId=202386\"> MSDN. </a></li>\n<li> Help improve SQL Server 2008 by  <a href=\"http://go.microsoft.com/fwlink/?LinkId=202387\"> submitting bugs to the Connect Feedback Center </a> </li>\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/sqlserver/default.aspx"
+        },
+        {
+            "title": "how to obtain the latest service pack for SQL Server 2008",
+            "url": "http://support.microsoft.com/kb/2979596"
+        },
+        {
+            "title": "home Page for Microsoft SQL Server",
+            "url": "http://www.microsoft.com/sqlserver/2008/en/us/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44278",
+    "downloadPreload": true
+}

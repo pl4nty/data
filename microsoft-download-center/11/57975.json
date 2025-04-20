@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "An overview of password-less authentication",
+    "downloadDescription": "A practical guide to the key benefits of FIDO2/Webauthn authentication",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "An overview of password-less authentication - v2.0.docx",
+            "url": "https://download.microsoft.com/download/9/6/b/96b0a995-938c-40c1-a47c-a1e39ca449ed/An overview of password-less authentication - v2.0.docx",
+            "size": "5033655",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:06:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft is committed to providing a future without passwords. This document is an overview of the key benefits of password-less authentication using Windows Hello for Business, FIDO2 Security Keys and the Microsoft Authenticator App.\r\nThis document is intended for IT professionals, security professionals CISOs who are interested in understanding how Microsoft can help develop a robust approach to go beyond passwords and deploy next generation authentication credentials.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "An overview of password-less authentication - v2.0.docx"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The whitepaper is a Microsoft Word document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Users who do not have Microsoft Word can download the <a href=\"https://go.microsoft.com/fwlink/?linkid=826241\">Word mobile app </a> from the Microsoft Store.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57975",
+    "downloadPreload": true
+}

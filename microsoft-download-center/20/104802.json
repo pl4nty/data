@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvchf_9.52.6535.1",
+    "downloadDescription": "ASRMobSvchf_9.52.6535.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-20.04-64_pushinstallclient_9.52.6535.1.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/9/789b9159-96a7-4987-9131-51f4cde56bb7/UBUNTU-20.04-64_pushinstallclient_9.52.6535.1.tar.gz",
+            "size": "5853820",
+            "version": "9.52.6535.1",
+            "datePublished": "3/15/2024 4:31:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHEL8-64_pushinstallclient_9.52.6535.1.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/9/789b9159-96a7-4987-9131-51f4cde56bb7/RHEL8-64_pushinstallclient_9.52.6535.1.tar.gz",
+            "size": "5506794",
+            "version": "9.52.6535.1",
+            "datePublished": "3/15/2024 4:31:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL8-64_pushinstallclient_9.52.6535.1.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/9/789b9159-96a7-4987-9131-51f4cde56bb7/OL8-64_pushinstallclient_9.52.6535.1.tar.gz",
+            "size": "5516884",
+            "version": "9.52.6535.1",
+            "datePublished": "3/15/2024 4:31:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.52.6535.1_UBUNTU-20.04-64_GA_23Nov2022_release.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/9/789b9159-96a7-4987-9131-51f4cde56bb7/Microsoft-ASR_UA_9.52.6535.1_UBUNTU-20.04-64_GA_23Nov2022_release.tar.gz",
+            "size": "118122668",
+            "version": "9.52.6535.1",
+            "datePublished": "3/15/2024 4:31:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.52.6535.1_RHEL8-64_GA_23Nov2022_release.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/9/789b9159-96a7-4987-9131-51f4cde56bb7/Microsoft-ASR_UA_9.52.6535.1_RHEL8-64_GA_23Nov2022_release.tar.gz",
+            "size": "110694307",
+            "version": "9.52.6535.1",
+            "datePublished": "3/15/2024 4:31:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.52.6535.1_OL8-64_GA_23Nov2022_release.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/9/789b9159-96a7-4987-9131-51f4cde56bb7/Microsoft-ASR_UA_9.52.6535.1_OL8-64_GA_23Nov2022_release.tar.gz",
+            "size": "111287971",
+            "version": "9.52.6535.1",
+            "datePublished": "3/15/2024 4:31:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvchf_9.52.6535.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.52.6535.1",
+    "detailsSection_file_name": [
+        "UBUNTU-20.04-64_pushinstallclient_9.52.6535.1.tar.gz",
+        "RHEL8-64_pushinstallclient_9.52.6535.1.tar.gz",
+        "OL8-64_pushinstallclient_9.52.6535.1.tar.gz",
+        "Microsoft-ASR_UA_9.52.6535.1_UBUNTU-20.04-64_GA_23Nov2022_release.tar.gz",
+        "Microsoft-ASR_UA_9.52.6535.1_RHEL8-64_GA_23Nov2022_release.tar.gz",
+        "Microsoft-ASR_UA_9.52.6535.1_OL8-64_GA_23Nov2022_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "5.6 MB",
+        "5.3 MB",
+        "5.3 MB",
+        "112.7 MB",
+        "105.6 MB",
+        "106.1 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104802",
+    "downloadPreload": true
+}

@@ -1,0 +1,119 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 SP2 (KB4599279)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 SP2 (KB4599279)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIMSyncService_x64_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMSyncService_x64_KB4599279.msp",
+            "size": "25907200",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMServiceLP_x64_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMServiceLP_x64_KB4599279.msp",
+            "size": "12886016",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIMService_x64_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMService_x64_KB4599279.msp",
+            "size": "98660352",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x86_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMAddinsExtensionsLP_x86_KB4599279.msp",
+            "size": "2940928",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x64_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMAddinsExtensionsLP_x64_KB4599279.msp",
+            "size": "4026368",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x86_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMAddinsExtensions_x86_KB4599279.msp",
+            "size": "4587520",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x64_KB4599279.msp",
+            "url": "https://download.microsoft.com/download/b/3/1/b319cdc2-6e1c-46b5-b9f4-fdb34f806470/MIMAddinsExtensions_x64_KB4599279.msp",
+            "size": "11542528",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a hotfix for Microsoft Identity Manager 2016 Service Pack 2. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016. Additionally, this update contains stability and performance improvements outlined in <a href=\"http://support.microsoft.com/?kbid=4599279\">Knowledge Base Article 4599279</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4599279",
+        "name": "KB4599279"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.421.0",
+    "detailsSection_file_name": [
+        "MIMSyncService_x64_KB4599279.msp",
+        "MIMServiceLP_x64_KB4599279.msp",
+        "MIMService_x64_KB4599279.msp",
+        "MIMAddinsExtensionsLP_x86_KB4599279.msp",
+        "MIMAddinsExtensionsLP_x64_KB4599279.msp",
+        "MIMAddinsExtensions_x86_KB4599279.msp",
+        "MIMAddinsExtensions_x64_KB4599279.msp"
+    ],
+    "detailsSection_file_size": [
+        "24.7 MB",
+        "12.3 MB",
+        "94.1 MB",
+        "2.8 MB",
+        "3.8 MB",
+        "4.4 MB",
+        "11.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016 Service Pack 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/microsoft-identity-manager/"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release History",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102786",
+    "downloadPreload": true
+}

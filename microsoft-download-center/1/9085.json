@@ -1,0 +1,149 @@
+{
+    "error": "",
+    "downloadTitle": "Automated Installation Kit (AIK) for Windows Vista SP1 and Windows Server 2008",
+    "downloadDescription": "The Windows Automated Installation Kit (Windows AIK) is designed to help corporate IT professionals customize and deploy the Windows Vista and Windows Server 2008 family of operation systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6001.18000.080118-1840-kb3aikl_en.iso",
+            "url": "https://download.microsoft.com/download/9/c/d/9cdfa30e-5901-40e4-b6bf-4a0086ea0a6a/6001.18000.080118-1840-kb3aikl_en.iso",
+            "size": "1442787328",
+            "version": "936330AIK",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        }
+    ],
+    "detailsSection": "The Windows Automated Installation Kit (Windows AIK) is designed to help corporate IT professionals customize and deploy the Windows Vista and Windows Server 2008 family of operation systems.  By using Windows AIK, you can perform unattended Windows installations, capture Windows images with ImageX, and create Windows PE images.\n<br/>\n<br/>\nThis update is provided to you and licensed under the Windows Vista License Terms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "936330AIK",
+    "detailsSection_file_name": [
+        "6001.18000.080118-1840-kb3aikl_en.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.3 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Windows Vista</LI><br />\n<LI>Windows Vista Service Pack 1</LI><br />\n<LI>Windows Server 2008</LI><br />\n<LI>Windows Server 2003 Service Pack 1 with KB926044</LI><br />\n<LI>Windows Server 2003 Service Pack 2</LI><br />\n<LI>Windows XP Service Pack 2 with KB926044</LI><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the Download button on this page to start the download.</LI><br />\n<LI>Click Save or Save this program to your computer.  Windows AIK is distributed as an .img file.</LI><br />\n<LI>Burn the saved img to a DVD.</LI><br />\n<LI>Insert the DVD into the machine.</LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/926044/"
+        },
+        {
+            "title": "desktop Deployment",
+            "url": "http://microsoft.com/desktopdeployment/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9085",
+    "downloadPreload": true
+}

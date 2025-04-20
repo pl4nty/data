@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Frames Dataset",
+    "downloadDescription": "Frames is meant to encourage research towards conversational agents which can support decision-making in complex settings, in this case - booking a vacation including flights and a hotel. More than just searching a database, we believe the next generation of conversational agents will need to help users explore a database, compare items, and reach a decision.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Frames-dataset.zip",
+            "url": "https://download.microsoft.com/download/4/b/f/4bf15895-4152-4008-8e68-605912cf7a65/Frames-dataset.zip",
+            "size": "3548851",
+            "version": "July 2018",
+            "datePublished": "7/15/2024 4:57:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The dialogues in Frames were collected in a Wizard-of-Oz fashion. Two humans talked to each other via a chat interface. One was playing the role of the user and the other one was playing the role of the conversational agent. We call the latter a wizard as a reference to the Wizard of Oz, the man behind the curtain. The wizards had access to a database of 250+ packages, each composed of a hotel and round-trip flights. We gave users a few constraints for each dialogue and we asked them to find the best deal. This resulted in complex dialogues where a user would often consider different options, compare packages, and progressively build the description of her ideal trip.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2018",
+    "detailsSection_file_name": [
+        "Frames-dataset.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57160",
+    "downloadPreload": true
+}

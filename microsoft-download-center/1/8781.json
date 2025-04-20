@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "TCP/IP Fundamentals for Microsoft Windows",
+    "downloadDescription": "This online book describes the fundamentals of TCP/IP in Windows Vista, Windows Server 2008, Windows XP, and Windows Server 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TCPIP_Fund.pdf",
+            "url": "https://download.microsoft.com/download/9/4/6/946958ef-7b86-4ddc-bfdb-c7ed2af4ce51/TCPIP_Fund.pdf",
+            "size": "5534769",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This online book is a structured, introductory approach to the basic concepts and principles of the Transmission Control Protocol/Internet Protocol (TCP/IP) protocol suite, how the most important protocols function, and their basic configuration in the Microsoft Windows Vista, Windows Server 2008, Windows XP, and Windows Server 2003 families of operating systems. This book is primarily a discussion of concepts and principles to lay a conceptual foundation for the TCP/IP protocol suite and provides an integrated discussion of both Internet Protocol version 4 (IPv4) and Internet Protocol version 6 (IPv6).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "TCPIP_Fund.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader at http://www.adobe.com/products/reader/.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click \"Download\" to download the file.",
+    "relatedResourcesSection": [
+        {
+            "title": "tcP/IP Fundamentals for Microsoft Windows: Overview",
+            "url": "http://technet.microsoft.com/en-us/library/bb758873.aspx"
+        },
+        {
+            "title": "next Generation TCP/IP Stack",
+            "url": "http://technet.microsoft.com/en-us/network/bb545475.aspx"
+        },
+        {
+            "title": "microsoft Windows Server 2003 TCP/IP Implementation Details",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=06c60bfe-4d37-4f50-8587-8b68d32fa6ee&displaylang=en"
+        },
+        {
+            "title": "microsoft IPv6 Web page",
+            "url": "http://technet.microsoft.com/en-us/network/bb530961.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8781",
+    "downloadPreload": true
+}

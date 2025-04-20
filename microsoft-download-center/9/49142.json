@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Backup",
+    "downloadDescription": "Coming Soon",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReadMe.txt",
+            "url": "https://download.microsoft.com/download/0/4/a/04a6ed4f-f292-4f16-a856-d9b6f0ac3856/ReadMe.txt",
+            "size": "39",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:06:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Coming Soon",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ReadMe.txt"
+    ],
+    "detailsSection_file_size": [
+        "39 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Coming Soon",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Datacenter"
+    ],
+    "installInstructionSection": "Coming Soon",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49142",
+    "downloadPreload": true
+}

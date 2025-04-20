@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Adapters 2010 for Enterprise Applications Installation Guide",
+    "downloadDescription": "Installation guide for Microsoft BizTalk Adapters 2010 for Enterprise Applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Installation Guide.htm",
+            "url": "https://download.microsoft.com/download/e/2/c/e2ce7633-5324-4a97-94e5-c689bba3eccf/Installation Guide.htm",
+            "size": "108869",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The installation guide explains how to install Microsoft BizTalk Adapters 2010 for Enterprise Applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Installation Guide.htm"
+    ],
+    "detailsSection_file_size": [
+        "106.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For HTM files: Microsoft Internet Explorer or other HTML viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button to start the download.</li><br />\r\n<li>Do one of the following:<br />\r\n</li><ul><li>To start the installation immediately, click <b>Open</b>.<br />\r\n</li><li>To copy the download to your computer for installation at a later time, click <b>Save</b>.<br />\r\n</li><li>To cancel the installation, click <b>Cancel</b>.</li></ul></ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10396",
+    "downloadPreload": true
+}

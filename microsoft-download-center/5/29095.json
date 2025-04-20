@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Windows SharePoint Services 3.0 Developer Resource Centers",
+    "downloadDescription": "Find links to SDK documentation, code samples, videos, blogs, and other Windows SharePoint Services 3.0 developer content in this download.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Developer_Resource_Centers_Windows_SharePoint_Services_3.xps",
+            "url": "https://download.microsoft.com/download/8/e/2/8e21f716-6dbf-4220-89be-b42141f46f24/Developer_Resource_Centers_Windows_SharePoint_Services_3.xps",
+            "size": "250969",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Developer_Resource_Centers_Windows_SharePoint_Services_3.pdf",
+            "url": "https://download.microsoft.com/download/8/e/2/8e21f716-6dbf-4220-89be-b42141f46f24/Developer_Resource_Centers_Windows_SharePoint_Services_3.pdf",
+            "size": "269891",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Looking for Microsoft Windows SharePoint Services 3.0 developer resources by feature or theme? Find links to SDK documentation, code samples, videos, blogs, and other developer content in this combined resource centers download. \r\n<ul>\r\n<li>Administration</li>\r\n<li>Application Lifecycle Management</li>\r\n<li>Development Environment Best Practices</li>\r\n<li>Pages and User Interfaces</li>\r\n<li>Provisioning</li>\r\n<li>Security</li>\r\n<li>Web Parts</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Developer_Resource_Centers_Windows_SharePoint_Services_3.xps",
+        "Developer_Resource_Centers_Windows_SharePoint_Services_3.pdf"
+    ],
+    "detailsSection_file_size": [
+        "245.1 KB",
+        "263.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<ol>\r\n<li>Download the file you want by clicking the Download link (above) and saving the file to your hard disk.</li>\r\n<li>Double-click the file you downloaded on your hard disk to view the file.</li>\r\n</ol><br />\r\nNote:  After you have installed this download, you can use any PDF viewer, such as Adobe Reader, to view the document. The SharePoint Server 2007 Developer Resource Centers document is also available in XPS format. \r\n<br /><br />\r\n<b>Removal of this download: </b><br />\r\nThere is no removal feature for this download. \r\n",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/default.aspx"
+        },
+        {
+            "title": "windows SharePoint Services 3.0 Developer Hub",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/ff458126.aspx"
+        },
+        {
+            "title": "sharePoint Server 2007 Developer Hub",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/hh850378"
+        },
+        {
+            "title": "sharePoint Designer Developer Hub",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/hh850380"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29095",
+    "downloadPreload": true
+}

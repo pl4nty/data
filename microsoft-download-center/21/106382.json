@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Script SQL DB Entra Logins and Users",
+    "downloadDescription": "Script drops and creates of Entra logins and users on Azure SQL DB",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ScriptLoginsAndUsersV1.0.1.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/2751bf62-7f74-48e0-952e-2414fdc4d32f/ScriptLoginsAndUsersV1.0.1.zip",
+            "size": "5603023",
+            "version": "1.0.1",
+            "datePublished": "2/13/2025 5:07:15 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A utility that creates a TSQL script that drops and creates logins (in the logical master) and users in the SQL DB. Statements to create user defined roles, add users and groups to roles, and grant and deny object permissions are also part of the script produced.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "ScriptLoginsAndUsersV1.0.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "2/13/2025",
+    "systemRequirementsSection": "<UL>\r\n<li>Download the zip file to a Windows machine and unzip it into a local folder. Edit the app.config and run the utility.</li>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. </li>\r\n<li>Do the following:</li> \r\n<ul> \r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n</ul> \r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106382",
+    "downloadPreload": true
+}

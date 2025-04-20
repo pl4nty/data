@@ -1,0 +1,126 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange 2010/2013/2016/EXO Public Folders to Office365 Groups Migration Scripts ",
+    "downloadDescription": "User these scripts to migrate from Exchange 2010/2013/2016/EXO Public Folders to Office365 Groups ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UnlockAndRestorePublicFolderProperties.strings.psd1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/UnlockAndRestorePublicFolderProperties.strings.psd1",
+            "size": "6904",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UnlockAndRestorePublicFolderProperties.ps1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/UnlockAndRestorePublicFolderProperties.ps1",
+            "size": "33236",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LockAndSavePublicFolderProperties.strings.psd1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/LockAndSavePublicFolderProperties.strings.psd1",
+            "size": "7692",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LockAndSavePublicFolderProperties.ps1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/LockAndSavePublicFolderProperties.ps1",
+            "size": "39842",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AddMembersToGroups.strings.psd1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/AddMembersToGroups.strings.psd1",
+            "size": "7254",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AddMembersToGroups.ps1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/AddMembersToGroups.ps1",
+            "size": "38964",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WriteLog.ps1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/WriteLog.ps1",
+            "size": "13134",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RetryScriptBlock.ps1",
+            "url": "https://download.microsoft.com/download/2/e/6/2e6af162-3330-43f4-a218-29949dde2216/RetryScriptBlock.ps1",
+            "size": "14134",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "User these scripts to migrate from Exchange 2010/2013/2016/EXO Public Folders to Office365 Groups ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.0184.006",
+    "detailsSection_file_name": [
+        "UnlockAndRestorePublicFolderProperties.strings.psd1",
+        "UnlockAndRestorePublicFolderProperties.ps1",
+        "LockAndSavePublicFolderProperties.strings.psd1",
+        "LockAndSavePublicFolderProperties.ps1",
+        "AddMembersToGroups.strings.psd1",
+        "AddMembersToGroups.ps1",
+        "WriteLog.ps1",
+        "RetryScriptBlock.ps1"
+    ],
+    "detailsSection_file_size": [
+        "6.7 KB",
+        "32.5 KB",
+        "7.5 KB",
+        "38.9 KB",
+        "7.1 KB",
+        "38.1 KB",
+        "12.8 KB",
+        "13.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Exchange Server 2010 or Exchange Server 2013 or Exchange Server 2016 to be installed on the server where the script will be run</LI>\r\n<LI>PowerShell 3.0 or later</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2008 R2",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2 Datacenter"
+    ],
+    "installInstructionSection": "Please refer to one of the following articles for instructions on how to use the scripts: ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55985",
+    "downloadPreload": true
+}

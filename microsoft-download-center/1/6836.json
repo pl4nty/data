@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Enterprise Library 5.0 Optional Update 1",
+    "downloadDescription": "This package contains Enterprise Library 5.0 with fixes for Unity Interception and file configuration source. This update is required if you are using the Silverlight Integration Pack and need WCF RIA Services Integration or configuration tool support.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Enterprise Library 5.0 Optional Update 1.msi",
+            "url": "https://download.microsoft.com/download/f/6/4/f64b7080-3465-49af-90b7-d6a4224a8d1f/Enterprise Library 5.0 Optional Update 1.msi",
+            "size": "11584512",
+            "version": "5.0 Update 1",
+            "datePublished": "7/15/2024 5:02:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Enterprise Library 5.0 Optional Update 1 - Source Code.msi",
+            "url": "https://download.microsoft.com/download/f/6/4/f64b7080-3465-49af-90b7-d6a4224a8d1f/Enterprise Library 5.0 Optional Update 1 - Source Code.msi",
+            "size": "5563904",
+            "version": "5.0 Update 1",
+            "datePublished": "7/15/2024 5:02:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.Practices.EnterpriseLibrary.ConfigConsole.vsix",
+            "url": "https://download.microsoft.com/download/f/6/4/f64b7080-3465-49af-90b7-d6a4224a8d1f/Microsoft.Practices.EnterpriseLibrary.ConfigConsole.vsix",
+            "size": "2634030",
+            "version": "5.0 Update 1",
+            "datePublished": "7/15/2024 5:02:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package contains Enterprise Library 5.0 with fixes for Unity Interception and file configuration source. This update is required if you are using the Silverlight Integration Pack and need WCF RIA Services Integration or configuration tool support.\r\n<br/><br/>\r\nMicrosoft Enterprise Library is a collection of reusable application blocks designed to assist software developers with common enterprise development challenges. This release includes: Caching Application Block, Cryptography Application Block, Data Access Application Block, Exception Handling Application Block, Logging Application Block, Policy Injection Application Block, Security Application Block, Validation Application Block, and Unity Application Block.<br/>\r\n<br/>\r\nEnterprise Library 5.0 contains many compelling features and updates that will make developers more productive. These include:\r\n<ul>\r\n<li>Major architectural refactoring that provides improved testability and maintainability through full support of the dependency injection style of development</li>\r\n<li>Dependency injection container independence (Unity ships with Enterprise Library, but you can replace it with a container of your choice)</li>\r\n<li>Programmatic configuration support, including a fluent configuration interface and an XSD schema to enable IntelliSense</li>\r\n<li>Redesign of the configuration tool to provide:</li>\r\n  <ul>\r\n     <li>A more usable and intuitive look and feel </li>\r\n     <li>Extensibility  improvements through meta-data driven configuration visualizations that replace the requirement to write design time code</li>\r\n     <li>A wizard framework that can help to simplify complex configuration tasks</li>\r\n  </ul>\r\n<li>Data accessors for more intuitive processing of data query results </li>\r\n<li>Asynchronous data access support</li>\r\n<li>Honoring validation attributes between Validation Application Block and DataAnnotations</li>\r\n<li>Integration with Windows Presentation Foundation (WPF) validation mechanisms</li>\r\n<li>Support for complex configuration scenarios, including additive merge from multiple configuration sources and hierarchical merge</li>\r\n<li>Optimized cache scavenging</li>\r\n<li>Better performance when logging</li>\r\n<li>A reduction of the number of assemblies</li>\r\n<li>Support for the .NET 4.0 Framework and integration with Microsoft Visual Studio 2010</li>\r\n<li>Improvements to Unity</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0 Update 1",
+    "detailsSection_file_name": [
+        "Enterprise Library 5.0 Optional Update 1.msi",
+        "Enterprise Library 5.0 Optional Update 1 - Source Code.msi",
+        "Microsoft.Practices.EnterpriseLibrary.ConfigConsole.vsix"
+    ],
+    "detailsSection_file_size": [
+        "11.0 MB",
+        "5.3 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported architectures: x86 and x64.<br/><br/>\r\nOperating system: \r\n<ul>\r\n  <li>Microsoft Windows\u00ae 7 Professional, Enterprise or Ultimate</li>\r\n  <li>Windows Vista with Service Pack 2</li>\r\n  <li>Windows Server 2008 R2</li>\r\n  <li>Windows Server 2008 with Service Pack 2</li>\r\n  <li>Windows Server 2003 R2</li>\r\n  <li>Windows XP with Service Pack 3</li>\r\n</ul>\r\nFramework: \r\n<ul>\r\n<li>Microsoft .NET Framework 3.5 with Service Pack 1</li>\r\n<li>Microsoft .NET Framework 4.0.</li>\r\n</ul>\r\n\r\nFor a <i>rich development environment</i>, the following are recommended:\r\n  <ul>\r\n    <li> Microsoft Visual Studio 2008 Development System with Service Pack 1 (any edition) or Visual Studio 2010 Development System (any edition).</li>\r\n  </ul>\r\n\r\nTo run the <i>unit tests</i>, the following are also required:\r\n  <ul>\r\n    <li>Microsoft Visual Studio 2008 Professional, Visual Studio 2008 Team Edition, Visual Studio 2010 Premium, Visual Studio 2010 Professional, or Visual Studio 2010 Ultimate edition. </li>\r\n    <li>Moq v3.1 assemblies.</li>\r\n  </ul>\r\n\r\nFor the <i>Data Access Application Block</i>, the following is also required:\r\n<ul><li>A database server running a database that is supported by a .NET Framework 3.5 with Service Pack 1 or .NET Framework 4.0 data provider. This includes SQL Server\u00ae 2000 or later, SQL Server 2005 Compact Edition, and Oracle 9i or later. The database server can also run a database that is supported by the .NET Framework 3.5 with Service Pack 1 or the .NET Framework 4.0 data providers for OLE DB or ODBC. </li></ul>\r\n\r\nFor the <i>Logging Application Block</i>, the following are also required:\r\n<ul><li>Stores to maintain log messages. If you are using the Message Queuing (MSMQ) Trace Listener to store log messages, you need the Microsoft Message Queuing (MSMQ) components installed. If you are using the Database Trace Listener to store log messages, you need access to a database server. If you are using the E-mail Trace Listener to store log messages, you need access to an SMTP server.</li></ul>\r\n\r\nIf these dependencies are not met, you may not be able to use certain Enterprise Library features.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 x64 editions",
+        "Windows XP Service Pack 3",
+        "Windows 7 Professional",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows 7 Ultimate",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7 Enterprise"
+    ],
+    "installInstructionSection": "<u>Note:</u>This update is included if you install Enterprise Library 5.0 application blocks using <a href=\"http://nuget.org/List/Search?packageType=Packages&searchCategory=All+Categories&searchTerm=Enterprise+Library&sortOrder=sort-by-relevance&pageSize=50\">NuGet</a>. To get the optional configuration tool,  install it from the <a href=\"http://visualstudiogallery.msdn.microsoft.com/029292f0-6e66-424f-8381-3454c8222f9a?SRC=Home\">Visual Studio gallery</a> or download the VSIX package from this page (Microsoft.Practices.EnterpriseLibrary.ConfigConsole.vsix).\r\n<br/><br/>\r\nFor new installation, download the MSI and install.\r\n<br/><br/>\r\nWhen upgrading from Enterprise Library 5.0, you have two options:\r\n<ol>\r\n<li>Uninstall Enterprise Library 5.0 and then execute a clean installation. </li>\r\n<li>Upgrade Enterprise Library 5.0 to Optional Update 1 from the command prompt by: (a)renaming the Enterprise Library 5.0 Optional Update 1.msi file to Enterprise Library 5.0.msi and (b) executing the following command from the command prompt:<br/><br/>\r\nmsiexec /i \"Enterprise Library 5.0.msi\" REINSTALLMODE=vomus REINSTALL=ALL\r\n</li>\r\n</ol>\r\n\r\n",
+    "additionalInformationSection": "For help and support visit the <a href=\"http://entlib.codeplex.com\">Enterprise Library Codeplex community site</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Enterprise Library on MSDN",
+            "url": "http://msdn.microsoft.com/entlib"
+        },
+        {
+            "title": "microsoft Enterprise Library 5.0 Documentation",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=188874"
+        },
+        {
+            "title": "silverlight Integration Pack for Microsoft Enterprise Library 5.0",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=211683"
+        },
+        {
+            "title": "enterprise Library Codeplex community",
+            "url": "http://entlib.codeplex.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6836",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Telemetry Dashboard Administration Tool ",
+    "downloadDescription": "This is a command line tool that helps you to manage the Telemetry Dashboard database.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TDadmSetUp.msi",
+            "url": "https://download.microsoft.com/download/6/0/c/60cc12ab-5140-4fb1-91c7-c0b4464e8288/TDadmSetUp.msi",
+            "size": "389120",
+            "version": "2",
+            "datePublished": "7/15/2024 5:04:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If you are using the Telemetry Dashboard, this command-line tool will help you to manage your Telemetry Dashboard database. The tool will perform the following tasks:\r\n<ul><li>Archive the Telemetry Dashboard database</li>\r\n<li>Manage the size of the Telemetry Dashboard database</li>\r\n<li>Apply Telemetry Dashboard database settings</li>\r\n<li>Obfuscate selected data</li></ul><br/>\r\nClick <a href=\"http://go.microsoft.com/fwlink/?LinkID=275509\">here</a> to learn about further usage.<br/>\r\n<br/>\r\nClick <a href=\"http://go.microsoft.com/fwlink/?LinkId=277096\">here</a> for more information about Telemetry Dashboard<br/><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "TDadmSetUp.msi"
+    ],
+    "detailsSection_file_size": [
+        "380.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows 8.1",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36499",
+    "downloadPreload": true
+}

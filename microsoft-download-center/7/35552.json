@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Installation Guides Related to BizTalk Server 2013 and 2013 R2",
+    "downloadDescription": "This page provides the installation guides for various products shipped with BizTalk Server 2013 and 2013 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "InstallGuides2013_EN.exe",
+            "url": "https://download.microsoft.com/download/e/9/7/e97e3b84-1c1e-4d95-a1b8-feb0a814cfbb/InstallGuides2013_EN.exe",
+            "size": "1271360",
+            "version": "1",
+            "datePublished": "7/15/2024 3:32:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This page provides the installation guides for various products shipped with BizTalk Server 2013 and 2013 R2. To read the installation guide for BizTalk Server, refer to <a href=\"http://msdn.microsoft.com/en-us/library/jj248688(v=bts.80).aspx\">http://msdn.microsoft.com/en-us/library/jj248688(v=bts.80).aspx</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "InstallGuides2013_EN.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>For CHM files: No special software needed.</li>\r\n<li>For HTM files: Microsoft Internet Explorer or other HTM vierew.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click the Download button next to the desired file.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click Open.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save.</li>\r\n<li>To cancel the installation, click Cancel.</li>\r\n</ul></li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35552",
+    "downloadPreload": true
+}

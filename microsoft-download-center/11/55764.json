@@ -1,0 +1,159 @@
+{
+    "error": "",
+    "downloadTitle": "Bing Maps AJAX Upgrade for Dynamics 365",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics 365 (on-premises) Bing Maps AJAX upgrade.  This is a tested update for Microsoft Dynamics 365. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Server-KB4037855-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/0/6/b/06b089e5-1b6d-498b-b696-a344f4eee2f3/CRM2016-Server-KB4037855-ENU-Amd64.exe",
+            "size": "184049416",
+            "version": "8.2.1.0342",
+            "datePublished": "6/15/2024 4:31:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "Microsoft has released Bing Maps AJAX upgrade for Microsoft Dynamics 365 Server (on-premises).<br />\r\nThis update replaces the Bing Maps AJAX Control Version 7, which has reached its end-of-life. To continue to use Bing Maps with Dynamics 365 (on-premises), you must apply this update.\n<br />\nFor more information about this release, see Microsoft Knowledge Base article 4038205:<br /><br /><a HREF=\"http://support.microsoft.com/kb/4038205\">Bing Maps AJAX Upgrade for Dynamics 365</a> <br />\n<br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3205084",
+        "name": "KB3205084"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.2.1.0342",
+    "detailsSection_file_name": [
+        "CRM2016-Server-KB4037855-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "175.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<b>Prerequisites:</b>\n<br />\n<ul>\r\n<li>This update must be installed on a computer that is running Microsoft Dynamics 365. </li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Click Download, and then select the file you want to download from the list.<br /><br />\n\nTo install this update, do one of the following:<br />\n<ul><li>To start the installation immediately, click <b>Run</b>.</li>\n<li>To save the download to your computer for installation later, click <b>Save</b>. </li>\n<li>To cancel the download, click <b>Cancel</b>.</li></ul>",
+    "additionalInformationSection": "\n<b>Hotfixes and updates that you have to manually enable or configure</b><br />\n<br />\nThis Microsoft Dynamics 365 update may contain hotfixes and updates that have to be manually enabled or configured. To enable or configure these hotfixes on the server that is running Microsoft Dynamics 365, see the \"Hotfixes and updates that you must enable or configure manually\" section of the following Microsoft Knowledge Base article: <br />\n<br />\r\n<a HREF=\"http://support.microsoft.com/kb/4038205\">Bing Maps AJAX Upgrade for Dynamics 365 (KB 4038205)</a>\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "microsoft Dynamics 365 Report Authoring Extension",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=50375"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55764",
+    "downloadPreload": true
+}

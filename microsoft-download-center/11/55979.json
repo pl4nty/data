@@ -1,0 +1,123 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2003 Retired Technical documentation",
+    "downloadDescription": "The content you requested has already been retired. It is available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS2003_JScript_en-us.pdf",
+            "url": "https://download.microsoft.com/download/9/3/9/9391bdd7-0167-48a4-b60e-8da512ea5a57/VS2003_JScript_en-us.pdf",
+            "size": "3310351",
+            "version": "2003",
+            "datePublished": "7/15/2024 4:50:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VS2003_CPP_en-us.pdf",
+            "url": "https://download.microsoft.com/download/9/3/9/9391bdd7-0167-48a4-b60e-8da512ea5a57/VS2003_CPP_en-us.pdf",
+            "size": "99032525",
+            "version": "2003",
+            "datePublished": "7/15/2024 4:50:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VS2003_General_en-us.pdf",
+            "url": "https://download.microsoft.com/download/9/3/9/9391bdd7-0167-48a4-b60e-8da512ea5a57/VS2003_General_en-us.pdf",
+            "size": "54427196",
+            "version": "2003",
+            "datePublished": "7/15/2024 4:50:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VS2003_VB_en-us.pdf",
+            "url": "https://download.microsoft.com/download/9/3/9/9391bdd7-0167-48a4-b60e-8da512ea5a57/VS2003_VB_en-us.pdf",
+            "size": "25009845",
+            "version": "2003",
+            "datePublished": "7/15/2024 4:50:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VS2003_JSharp_en-us.pdf",
+            "url": "https://download.microsoft.com/download/9/3/9/9391bdd7-0167-48a4-b60e-8da512ea5a57/VS2003_JSharp_en-us.pdf",
+            "size": "11007891",
+            "version": "2003",
+            "datePublished": "7/15/2024 4:50:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Visual Studio\u00a0.NET is the tool for rapidly building enterprise-scale ASP.NET Web applications and high performance desktop applications. Visual Studio includes component-based development tools, such as Visual C#, Visual J#, Visual Basic, and Visual C++, as well as a number of additional technologies to simplify team-based design, development, and deployment of your solutions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2003",
+    "detailsSection_file_name": [
+        "VS2003_JScript_en-us.pdf",
+        "VS2003_CPP_en-us.pdf",
+        "VS2003_General_en-us.pdf",
+        "VS2003_VB_en-us.pdf",
+        "VS2003_JSharp_en-us.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB",
+        "94.4 MB",
+        "51.9 MB",
+        "23.9 MB",
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 2",
+        "Windows ME",
+        "Windows Server 2003",
+        "Windows XP Home Edition ",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "<OL>\n  <LI>The download is a pdf file. To start the download, click Download.</LI>\n<LI>If the File Download dialog box appears, do one of the following:</LI>\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <UL><LI>To start the download immediately, click Open.</LI>\n\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55979",
+    "downloadPreload": true
+}

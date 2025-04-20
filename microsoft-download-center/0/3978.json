@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory / Domain Naming System Convergence Check Utility",
+    "downloadDescription": "This cmd file provides a means of verifying that a newly created DNS server has completed the replication of AD content from an assumed/known-good 'source' DNS server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DNSconvergeCheck.zip",
+            "url": "https://download.microsoft.com/download/b/5/7/b5787c60-3aa8-448a-9c14-7910e6326e54/DNSconvergeCheck.zip",
+            "size": "2601",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This cmd file provides a means of verifying that a newly created DNS server has completed the replication of AD content from an assumed/known-good 'source' DNS server.  Directions for using this utility can be found in the Active Directory Domain Services and Domain Name System (DNS) Server Migration Guide (http://go.microsoft.com/fwlink/?LinkId=134771).  The migration documentation and tools ease the process of migrating the Active Directory Domain Services and Domain Name System roles, operating system settings, and data from an existing server that is running Windows Server\u00ae 2003, Windows Server\u00ae 2008, or Windows Server\u00ae 2008 R2 to a computer that is running Windows Server 2008 R2.  By using the migration guide to migrate roles, you can simplify deployment of new servers, reduce migration downtime, increase accuracy of the migration process, and help eliminate conflicts that could otherwise occur during the migration process.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DNSconvergeCheck.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 or greater Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Complete directions for using this utility can be found in the Active Directory Domain Services and Domain Name System (DNS) Server Migration Guide (http://go.microsoft.com/fwlink/?LinkId=134771). ",
+    "relatedResourcesSection": [
+        {
+            "title": "active Directory Domain Services and Domain Name System (DNS) Server Migration Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=134771"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3978",
+    "downloadPreload": true
+}

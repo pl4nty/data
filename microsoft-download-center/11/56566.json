@@ -1,0 +1,237 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Virtual Machine Manager, version 1801 \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-12.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-11.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-2.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHDEVAL.DOCX",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHDEVAL.DOCX",
+            "size": "63836",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-1.bin",
+            "size": "735486976",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-15.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-15.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-3.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-8.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-10.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-5.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-17.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-17.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-9.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-18.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-18.bin",
+            "size": "590713273",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-14.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-14.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-16.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-16.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-13.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-7.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD.exe",
+            "size": "528768",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-6.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_1801_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1136be-1cf9-400d-a2e2-7374d8ca7537/SCVMM_1801_VHD-4.bin",
+            "size": "736000000",
+            "version": "1801",
+            "datePublished": "7/15/2024 4:52:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center 1801 and Windows Server 2016. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center, version 1801 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f83aabf4-102a-49e3-83d3-45b4c57eb753\">System Center Data Protection Manager, version 1801 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=60f58a9e-2eb2-4415-ae5a-b9a474ae969c\">System Center Operations Manager, version 1801 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=e9f78765-5a1e-4f42-b73d-0a8440d73dd5\">System Center Orchestrator, version 1801 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=118315ed-9cb0-4701-8bfb-2e9088bd87bd\">System Center Service Manager, version 1801 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d5f0aaf3-7992-4920-bd58-10f602fbbdc4\">System Center Virtual Machine Manager, version 1801 \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1801",
+    "detailsSection_file_name": [
+        "SCVMM_1801_VHD-12.bin",
+        "SCVMM_1801_VHD-11.bin",
+        "SCVMM_1801_VHD-2.bin",
+        "SCVMM_1801_VHDEVAL.DOCX",
+        "SCVMM_1801_VHD-1.bin",
+        "SCVMM_1801_VHD-15.bin",
+        "SCVMM_1801_VHD-3.bin",
+        "SCVMM_1801_VHD-8.bin",
+        "SCVMM_1801_VHD-10.bin",
+        "SCVMM_1801_VHD-5.bin",
+        "SCVMM_1801_VHD-17.bin",
+        "SCVMM_1801_VHD-9.bin",
+        "SCVMM_1801_VHD-18.bin",
+        "SCVMM_1801_VHD-14.bin",
+        "SCVMM_1801_VHD-16.bin",
+        "SCVMM_1801_VHD-13.bin",
+        "SCVMM_1801_VHD-7.bin",
+        "SCVMM_1801_VHD.exe",
+        "SCVMM_1801_VHD-6.bin",
+        "SCVMM_1801_VHD-4.bin"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "62.3 KB",
+        "701.4 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "563.3 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "516.4 KB",
+        "701.9 MB",
+        "701.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cSCVMM_1801_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCVMM_1801_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56566",
+    "downloadPreload": true
+}

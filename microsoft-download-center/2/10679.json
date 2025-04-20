@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2005 Samples and Sample Databases",
+    "downloadDescription": "Download samples and sample databases from CodePlex.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server Samples Have Moved.pdf",
+            "url": "https://download.microsoft.com/download/d/8/6/d865cf0c-c44b-401b-b426-b3bf5c628112/SQL Server Samples Have Moved.pdf",
+            "size": "47081",
+            "version": "9.00.3042",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server code samples and sample databases are now hosted on CodePlex. Codeplex is the project hosting site for Microsoft SQL Server Samples and Community Projects. The portal page for SQL Server on Codeplex catalogs samples included with Product Releases, samples from the community, and independent SQL Server Community projects.\n<br /><br />\nVisit the SQL Server Samples and Community Projects page on CodePlex at:\n<br /><br />\n<a href=\"http://codeplex.com/SqlServerSamples\">http://codeplex.com/SqlServerSamples</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.3042",
+    "detailsSection_file_name": [
+        "SQL Server Samples Have Moved.pdf"
+    ],
+    "detailsSection_file_size": [
+        "46.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "For the latest SQL Server Samples, visit <a href=\"http://codeplex.com/SqlServerSamples\">http://codeplex.com/SqlServerSamples</a>.",
+    "additionalInformationSection": "For the latest news and information on SQL Server 2005 Samples, visit the <a href=\"http://blogs.msdn.com/bonniefe/default.aspx\">SQL Server Samples blog on MSDN</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Forums on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47890"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://www.microsoft.com/technet/prodtechnol/sql/default.mspx"
+        },
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://msdn.microsoft.com/sql/"
+        },
+        {
+            "title": "microsoft SQL Server Home Page",
+            "url": "http://www.microsoft.com/sql/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10679",
+    "downloadPreload": true
+}

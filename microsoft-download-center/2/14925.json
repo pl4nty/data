@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk LoadGen 2007 Tool",
+    "downloadDescription": "Microsoft BizTalk LoadGen 2007 is a tool that is used to run performance and stress tests.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LoadGen2007.msi",
+            "url": "https://download.microsoft.com/download/4/7/c/47c28d08-8e7e-4f25-8010-ae99870fb6b5/LoadGen2007.msi",
+            "size": "1010176",
+            "version": "R2",
+            "datePublished": "6/15/2024 5:00:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft LoadGen 2007 generates message transmission loads to run performance and stress tests for your Microsoft BizTalk Server applications, and provides performance counters to monitor the performance of the infrastructure running BizTalk Server.<br />\n<br />\nThis tool is intended for developers and IT professionals to simulate load on a BizTalk Server. Using this tool, you can simulate load to instrument performance and stress against a BizTalk deployment. In addition, this tool may also be extended by developers to simulate load for custom transports. This tool should be used in a test environment only, and should not be used in a production environment. This tool is provided \"as-is\" and is not supported.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "R2",
+    "detailsSection_file_name": [
+        "LoadGen2007.msi"
+    ],
+    "detailsSection_file_size": [
+        "986.5 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "The minimum software requirements for a complete installation of this tool on a single computer include the following: <br />\n<br />\n<br />\n- Microsoft .NET Framework <br />\n<br />\nOptionally, you may install the following: <br />\n<br />\n- Visual Studio for the purpose of extensibility. <br />\n<br />\n- IBM WebSphere MQ Client for Windows if you plan to use the MQSeries Transport<br />\n<br />\n- .NET Framework if you plan to use the WCF Transport <br />\n<br />\n- Web Services Enhancements 2.0, if you want to use the native WSE transport component.<br />\n<br />\n- Windows SharePoint Services, if you want to use the native WSS transport. <br />\n<br />\n- Microsoft Message Queuing, if you want to use the native MSMQ transport, MSMQLarge transport, and MSMQ monitor components.<br />\n<br />\n- The mqrtlarge.dll included in BizTalk Server, if you want to use the native MSMQLarge transport component. The mqrtlarge.dll file is located in the  (BizTalk Installation Path)\\ SDK\\ folder on the computer where BizTalk Server is installed. You can copy the mqrtlarge.dll file to the  (LoadGen Installation Path)\\ Bins folder.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP Service Pack 2",
+        "Windows Vista",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To install this tool, download the LoadGen2007.msi from the site and choose Save to provide a location to save the file to. <br />\n<br />\n- Once the file has been saved, double-click the LoadGen2007.msi, and then follow the instructions in the Installation Wizard.",
+    "relatedResourcesSection": [
+        {
+            "title": "bizTalk Server Home Page",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=2&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=c2ee632b-41c2-42b4-b865-34077f483c9e&u=http%3a%2f%2fwww.microsoft.com%2fbiztalk%2f"
+        },
+        {
+            "title": "it Resources for Microsoft BizTalk Server",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=c2ee632b-41c2-42b4-b865-34077f483c9e&u=http%3a%2f%2fwww.microsoft.com%2ftechnet%2fprodtechnol%2fbiztalk%2fdefault.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14925",
+    "downloadPreload": true
+}

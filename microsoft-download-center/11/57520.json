@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Azure Backup Server v3",
+    "downloadDescription": "Microsoft Azure Backup provides backup for application workloads like Microsoft SQL Server, Hyper-V and VMware VMs, SharePoint Server, Exchange and Windows clients with support for both Disk to Disk backup for local copies and Disk to Disk to Cloud backup for long term retention.  Azure Backup Server now supports Windows Server 2016 workloads as well as Modern Backup Storage as documented below.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-7.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-7.bin",
+            "size": "92931933",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-6.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-6.bin",
+            "size": "736000000",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-5.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-5.bin",
+            "size": "736000000",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-4.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-4.bin",
+            "size": "736000000",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-3.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-3.bin",
+            "size": "736000000",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-2.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-2.bin",
+            "size": "736000000",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3-1.bin",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3-1.bin",
+            "size": "735407104",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "System_Center_Microsoft_Azure_Backup_Server_v3.exe",
+            "url": "https://download.microsoft.com/download/d/6/3/d6390a13-1bae-4745-8bc9-7eaef26c41e9/System_Center_Microsoft_Azure_Backup_Server_v3.exe",
+            "size": "602888",
+            "version": "13.0.415.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With Microsoft Azure Backup, you can protect application workloads such as Hyper-V VMs, Microsoft SQL Server, SharePoint Server, Microsoft Exchange and Windows clients to:<br />\n- Disk (D2D), giving high RTOs for tier 1 workloads<br />\n- Azure (D2D2C) for long term retention.<br />\nAlso, now with MABS v3, VMware is supported in production when Azure Backup Server is deployed on Windows 2016 or Windows 2019 <br />\r\n<br /><br />\r\nYou can deploy Microsoft Azure Backup server (MABS) as:<br />\n- A physical standalone server.<br />\n- A Hyper-V virtual machine - You can run MABS as a virtual machine hosted on an on-premises Hyper-V host server, to back up on-premises data.<br />\n- A Windows virtual machine in VMWare - You can deploy MABS to provide protection for Microsoft workloads running on Windows virtual machines in VMWare. In this scenario MABS can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMWare.<br />\n- An Azure virtual machine - You can run MABS as a virtual machine in Azure to back up cloud workloads running as Azure virtual machines.<br /><br />\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4457852",
+        "name": "KB4457852"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.415.0",
+    "detailsSection_file_name": [
+        "System_Center_Microsoft_Azure_Backup_Server_v3-7.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3-6.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3-5.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3-4.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3-3.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3-2.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3-1.bin",
+        "System_Center_Microsoft_Azure_Backup_Server_v3.exe"
+    ],
+    "detailsSection_file_size": [
+        "88.6 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.3 MB",
+        "588.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\nProcessor:<br />\nMinimum: 1 GHz, dual-core CPU<br />\nRecommended: 2.33 GHz quad-core CPU<br /><br />\n\nRAM:<br />\nMinimum: 8GB<br />\nRecommended: 10GB<br /><br />\n\nHard Drive Space:<br />\nMinimum: 5GB<br />\nRecommended: 10GB<br /><br />\n\nDisks for backup storage pool: 1.5 times size of data to be protected\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Step 1: Click on download and select all the files. All the files should be in the same folder post successful download.<br />\nStep 2: Run MicrosoftAzureBackupInstaller.exe from the download folder with elevated privileges.<br />\nStep 3: Ensure Microsoft .Net 3.5, Microsoft .Net 3.5 SP1 and Microsoft Net 4.0/4.5/4.6.1 is installed. If you are installing agent on Windows Server 2008 R2 SP1, install Windows Management Framework 4.0<br />\nStep 4: Refer to detailed documentation for configuring your Microsoft Azure Backup server for workload backup (http://go.microsoft.com/fwlink/?LinkID=617319&clcid=0x409)<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57520",
+    "downloadPreload": true
+}

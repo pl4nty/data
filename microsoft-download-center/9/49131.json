@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Installation Guide for CU9 for Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "Installation instructions for CU9 for AX 2012 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallGuide_CU9_AX2012R2.pdf",
+            "url": "https://download.microsoft.com/download/4/f/f/4ff36da5-7d45-4954-a5a4-035ad9671a5e/InstallGuide_CU9_AX2012R2.pdf",
+            "size": "563821",
+            "version": "1",
+            "datePublished": "7/15/2024 3:59:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Installation Guide walks you through the process of accessing the Knowledge Base article and completing the installation steps needed to install the content of the most recent cumulative update for Microsoft Dynamics AX 2012 R2. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "InstallGuide_CU9_AX2012R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "550.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 7, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2012",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "1.Click Download to download the manual in PDF file format.\r\n2.Save the file to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49131",
+    "downloadPreload": true
+}

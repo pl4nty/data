@@ -1,0 +1,199 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 Service pack 2 and Windows Vista Service Pack 2 -\u00a0 All Language Standalone DVD ISO (KB948465)",
+    "downloadDescription": "Service Pack 2, the latest service pack for both Windows Server 2008 and Windows Vista, supports new types of hardware and emerging hardware standards, includes all of the updates that have been delivered since SP1, and simplifies deployment, for consumers, developers, and IT professionals.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830-1_iso_update_sp_wave1-RTMSP2.1_DVD.iso",
+            "url": "https://download.microsoft.com/download/8/1/4/81442c44-4793-4473-b6aa-6735ace203ca/6002.18005.090410-1830-1_iso_update_sp_wave1-RTMSP2.1_DVD.iso",
+            "size": "1777418240",
+            "version": "948465",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Service Pack 2 for Windows Server 2008 and Windows Vista (SP2) is an update to Windows Vista and Windows Server 2008 that supports new kinds of hardware and emerging hardware standards, and includes all updates delivered since SP1.  SP2 simplifies administration by enabling IT administrators to deploy and support a single service pack for clients and servers. Please see the Windows Server SP2/Windows Vista SP2 page on TechNet/MSDN for additional details and documentation.  <br /> \r\n<br />\r\n<a href=\"http://technet.microsoft.com/windows/dd262148\"> Windows Vista SP2 TechNet </a><br />\r\n\r\n<a href=\"http://technet.microsoft.com/windowserver/dd262148\"> Windows Server 2008 SP2 TechNet </a><br /><br />\r\nSP2 is an update to Windows Server 2008 and Windows Vista that incorporates improvements discovered through automated feedback, as well as updates that have been delivered since SP1. By providing these fixes integrated into a single service pack for both client and server, Microsoft provides a single high-quality update that minimizes deployment and testing complexity for customers.<br />\r\n<br />\r\nService Pack 1 is a prerequisite for installing Service Pack 2. Please make sure that your system is running Service Pack 1 before you install Service Pack 2.\r\n<br />\r\n<br />\r\nNote: Windows Server 2008 released with Service Pack 1 included. Windows Vista SP1 information and downloads can be found on the <a href=\"http://technet.microsoft.com/en-us/windows/bb738089.aspx\">Windows Vista SP1 TechNet </a> page.<br />\r\n<br />\r\nThis is a DVD ISO image that contains Service Pack 2 for Windows Server 2008 SP2 for x86, x64, IA-64 and Windows Vista for x86, x64. This image will work with all Windows Server 2008/Windows Vista languages.<br />\r\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB948465",
+        "name": "KB948465"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "948465",
+    "detailsSection_file_name": [
+        "6002.18005.090410-1830-1_iso_update_sp_wave1-RTMSP2.1_DVD.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.7 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ol>Windows Server 2008, Windows Vista</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Vista",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Ultimate 64-bit edition"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>To start the download, click the <B>Download</B> button and then do one of the following, or select another language from <B>Change Language</B> and then click <B>Change</B>.</LI><br />\n<UL><br />\n<LI>Click <B>Run</B> to start the installation immediately.</LI><br />\n<LI>Click <B>Save</B> to copy the download to your computer for installation at a later time.</LI><br />\n</UL><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/948465"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5104",
+    "downloadPreload": true
+}

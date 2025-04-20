@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Azure Hyper-V Recovery Manager Provider (3.3.140)",
+    "downloadDescription": "The Windows Azure Hyper-V Recovery Manager Provider needs to be installed by the user in order to connect to the Windows Azure Hyper-V Recovery Manager Service",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VMMHRMProvider_x64.exe",
+            "url": "https://download.microsoft.com/download/5/3/5/535c8101-0720-4349-8eb1-11b65c98d96e/VMMHRMProvider_x64.exe",
+            "size": "5330408",
+            "version": "3.3.140.0",
+            "datePublished": "7/15/2024 3:23:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Azure Hyper-V Recovery Manager Provider needs to be installed by the user on the Virtual Machine Manager server in order to connect to the Windows Azure Hyper-V Recovery Manager Service.\r\n<br/>\r\n<br/>\r\nThe Windows Azure Hyper-V Recovery Manager provider is now Generally Available. Download and install this provider version to enable the VMM server to communicate to the Azure service to\r\n<ul>\r\n<li>Enable Replication between the VMs on the primary site to the secondary site.</li>\r\n<li>Seamlessly failover virtual machines from the primary site to the recovery site in the event of a disaster.</li>\r\n<li>Make use of Recovery Plans and other features of the Windows Azure Hyper-V Recovery Manager service.</li>\r\n</ul>\r\n<br/>\r\nPrevious Provider Version (Pre-release) : Windows Azure Hyper-V Recovery Manager Provider ( Version 3.3.100.0) is available at <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=35ac9a9c-4315-4bbe-9297-b792903e7666\">http://www.microsoft.com/downloads/details.aspx?FamilyID=35ac9a9c-4315-4bbe-9297-b792903e7666</a>\r\n\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.3.140.0",
+    "detailsSection_file_name": [
+        "VMMHRMProvider_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The following are the system requirements for the provider to be installed:<br/>\r\nSystem Center 2012 R2 Virtual Machine Manager along with Windows Server 2012 R2 installed on primary and secondary hosts or Windows Server 2012 installed on primary and secondary hosts. <br/>\r\nOr<br/>\r\nSystem Center Virtual Machine Manager 2012 SP1 CU3 or above needs to be installed along with Windows Server 2012 with latest updates.<br/>\r\n<br/>\r\nPlease refer to prerequisites and support matrix for Windows Azure Hyper-V Recovery Manager Service to ensure that all the pre-requisites for Hyper-V Recovery Manager environment are met.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the Windows Azure Hyper-V Recovery Manager Provider setup on the host with a supported version of System Center Virtual Machine Manager installed and run it.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42285",
+    "downloadPreload": true
+}

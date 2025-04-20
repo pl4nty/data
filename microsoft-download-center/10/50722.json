@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Basic 6.0 Service Pack 6 Security Rollup Update",
+    "downloadDescription": "A security issue has been identified that could compromise your Windows-based system running Microsoft Visual Basic 6.0 Service Pack 6. You can help protect your computer by installing this update from Microsoft.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vb60sp6-kb3096896-x86-enu.msi",
+            "url": "https://download.microsoft.com/download/b/a/5/ba51304f-1dfb-4dae-bc4f-f54323018562/VB60SP6-KB3096896-x86-ENU.msi",
+            "size": "10335744",
+            "version": "9846",
+            "datePublished": "7/15/2024 4:01:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This package updates the Microsoft Windows Common Controls, mscomctl.ocx and comctl32.ocx, found in Microsoft Visual Basic 6.0 Service Pack 6. This package will not install these Common Controls if the Visual Basic 6.0 IDE is not installed. This package cannot be uninstalled. Please refer to the security bulletin for additional details. <br />\n<br />\nThe Visual Basic 6.0 IDE is no longer supported as of April 8, 2008, however, the Visual Basic team is committed to \u201cIt Just Works\u201d compatibility for Visual Basic 6.0 applications. Please refer to this Support Statement for Visual Basic 6.0: http://msdn.microsoft.com/en-us/vstudio/ms788708.<br />\n<br />\nTo ensure you have the latest update, please check http://support.microsoft.com/kb/957924.\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3096896",
+        "name": "KB3096896"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9846",
+    "detailsSection_file_name": [
+        "vb60sp6-kb3096896-x86-enu.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Basic 6.0 IDE",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows 98",
+        "Windows 2000 Professional Edition ",
+        "Windows 10",
+        "Windows Server 2008 Standard",
+        "Windows Server 2012 R2",
+        "Windows 2000",
+        "Windows ME",
+        "Windows XP Tablet PC Edition ",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows 2000 Server",
+        "Windows 2000 Advanced Server",
+        "Windows Server 2008 R2",
+        "Windows 98 Second Edition",
+        "Windows XP Home Edition ",
+        "Windows Server 2012 Standard",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://support.microsoft.com/en-us/kb/3096896\">KB3096896</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "support Statement for Visual Basic 6.0",
+            "url": "http://msdn.microsoft.com/en-us/vstudio/ms788708"
+        },
+        {
+            "title": "knowledge Base Article 3096896",
+            "url": "http://support.microsoft.com/en-us/kb/3096896"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50722",
+    "downloadPreload": true
+}

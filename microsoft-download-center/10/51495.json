@@ -1,0 +1,265 @@
+{
+    "error": "",
+    "downloadTitle": "Connectors for Microsoft Identity Manager 2016",
+    "downloadDescription": "The Connectors helps you synchronize identity information, easily provision and deprovision accounts, manage identity information and provides password management capabilities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIM-WebServiceConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-WebServiceConnector.msi",
+            "size": "1888256",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIM-PowerShellConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-PowerShellConnector.msi",
+            "size": "1183744",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIM-LotusConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-LotusConnector.msi",
+            "size": "1744896",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIM-GraphConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-GraphConnector.msi",
+            "size": "2850816",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIM-GenericSqlConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-GenericSqlConnector.msi",
+            "size": "1265664",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIM-GenericLdapConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-GenericLdapConnector.msi",
+            "size": "1253376",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIM-GenericCSVConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2057.0/MIM-GenericCSVConnector.msi",
+            "size": "1187840",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIM-GenericSQLConnector.msi",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.2038.0/MIM-GenericSQLConnector.msi",
+            "size": "1261568",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sapecc.wsconfig",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/ECMA2Host SAP ECC7/sapecc.wsconfig",
+            "size": "991377",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Deploying SAP NetWeaver AS ABAP 7.pdf",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/ECMA2Host SAP ECC7/Deploying SAP NetWeaver AS ABAP 7.pdf",
+            "size": "2679515",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Authoring SAP ECC 7 Template for ECMA2Host.pdf",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/ECMA2Host SAP ECC7/Authoring SAP ECC 7 Template for ECMA2Host.pdf",
+            "size": "1944620",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connector for WebServices.docx",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/docs/Connector for WebServices.docx",
+            "size": "3050030",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connector for SAP.docx",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/docs/Connector for SAP.docx",
+            "size": "3457165",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connector for Oracle PeopeSoft.docx",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/docs/Connector for Oracle PeopeSoft.docx",
+            "size": "5405790",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connector for Oracle EBS.docx",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/docs/Connector for Oracle EBS.docx",
+            "size": "1830041",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SAPECC6DefaultProjectWithUser.exe",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/WS MA Samples/SAPECC6DefaultProjectWithUser.exe",
+            "size": "219512",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SAPECC6DefaultProject.exe",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/WS MA Samples/SAPECC6DefaultProject.exe",
+            "size": "151416",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SAPECC5DefaultProjectWithUser.exe",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/WS MA Samples/SAPECC5DefaultProjectWithUser.exe",
+            "size": "187768",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SAPECC5DefaultProject.exe",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/WS MA Samples/SAPECC5DefaultProject.exe",
+            "size": "144760",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PSDefaultProject.exe",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/WS MA Samples/PSDefaultProject.exe",
+            "size": "723832",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EBSDefaultProject.exe",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/WS MA Samples/EBSDefaultProject.exe",
+            "size": "361336",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Script and Readme  to pull Azure AD B2B users on-prem_v1.0.3.zip",
+            "url": "https://download.microsoft.com/download/7/2/f/72f87d63-81ea-45d2-8d42-d7d45cc621fa/1.1.953.0/Script and Readme  to pull Azure AD B2B users on-prem_v1.0.3.zip",
+            "size": "459205",
+            "version": "1.1.2057.0",
+            "datePublished": "1/28/2025 5:18:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Connectors helps you synchronize identity information, easily provision and deprovision accounts, manage identity information and provides password management capabilities.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.2057.0",
+    "detailsSection_file_name": [
+        "MIM-WebServiceConnector.msi",
+        "MIM-PowerShellConnector.msi",
+        "MIM-LotusConnector.msi",
+        "MIM-GraphConnector.msi",
+        "MIM-GenericSqlConnector.msi",
+        "MIM-GenericLdapConnector.msi",
+        "MIM-GenericCSVConnector.msi",
+        "MIM-GenericSQLConnector.msi",
+        "sapecc.wsconfig",
+        "Deploying SAP NetWeaver AS ABAP 7.pdf",
+        "Authoring SAP ECC 7 Template for ECMA2Host.pdf",
+        "Connector for WebServices.docx",
+        "Connector for SAP.docx",
+        "Connector for Oracle PeopeSoft.docx",
+        "Connector for Oracle EBS.docx",
+        "SAPECC6DefaultProjectWithUser.exe",
+        "SAPECC6DefaultProject.exe",
+        "SAPECC5DefaultProjectWithUser.exe",
+        "SAPECC5DefaultProject.exe",
+        "PSDefaultProject.exe",
+        "EBSDefaultProject.exe",
+        "Script and Readme  to pull Azure AD B2B users on-prem_v1.0.3.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.1 MB",
+        "1.7 MB",
+        "2.7 MB",
+        "1.2 MB",
+        "1.2 MB",
+        "1.1 MB",
+        "1.2 MB",
+        "968.1 KB",
+        "2.6 MB",
+        "1.9 MB",
+        "2.9 MB",
+        "3.3 MB",
+        "5.2 MB",
+        "1.7 MB",
+        "214.4 KB",
+        "147.9 KB",
+        "183.4 KB",
+        "141.4 KB",
+        "706.9 KB",
+        "352.9 KB",
+        "448.4 KB"
+    ],
+    "detailsSection_file_date": "1/28/2025",
+    "systemRequirementsSection": "<BR/><B>Minimum Requirements </B><BR/>\r\n<UL>\r\n<LI>Microsoft Identity Manager 2016 SP2 (MIM2016SP2)</LI>\r\n  <UL>\r\n  <LI>Must use hotfix 4.6.34.0 or later (KB4512924).</LI>\r\n  </UL>\r\n<LI>Microsoft .NET 4.6.2 Framework or later</LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Click on the download link to start the download. Save the downloaded MSI to your server.<BR/>\r\nFor version release history for the Connectors, please see:<BR/>\r\n<a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-version-history\">Connector Version history</a>\r\n<BR/>\r\nFor more information on the Connectors, please see:\r\n<UL>\r\n<LI> <a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-genericcsv\">Generic CSV Connector</a> </LI>\r\n<LI><a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-genericldap\">Generic LDAP Connector</a></LI>\r\n<LI><a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-genericsql\">Generic SQL Connector</a></LI>\r\n<LI><a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-ma-ws/\">WebServices Connector</a></LI>\r\n<LI><a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-powershell\">PowerShell Connector</a></LI>\r\n<LI><a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-domino\">Lotus Domino Connector</a></LI>\r\n<LI><a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/microsoft-identity-manager-2016-connector-graph\">Graph Connector</a></LI>\r\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "connectors Version History",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/microsoft-identity-manager-2016-connector-version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51495",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Deploy the Microsoft Dynamics AX 2012 R3 Client as an Azure RemoteApp Program",
+    "downloadDescription": "\u200bMicrosoft Azure RemoteApp brings the functionality of the on-premises Microsoft RemoteApp program, which is backed by Remote Desktop Services, to Azure. Azure RemoteApp helps you provide secure, remote access to applications from many different user devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RemoteAppDeploy.zip",
+            "url": "https://download.microsoft.com/download/3/3/3/333f38ae-e7a1-4d64-8c2a-458401c8fa82/RemoteAppDeploy.zip",
+            "size": "846",
+            "version": "NA.",
+            "datePublished": "3/15/2024 4:23:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DeploytheclientasanAzureRemoteAppprogram.pdf",
+            "url": "https://download.microsoft.com/download/3/3/3/333f38ae-e7a1-4d64-8c2a-458401c8fa82/DeploytheclientasanAzureRemoteAppprogram.pdf",
+            "size": "1724357",
+            "version": "NA.",
+            "datePublished": "3/15/2024 4:23:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "One of the great features of Azure RemoteApp is that you can plug it into your infrastructure and deploy the Microsoft Dynamics AX client. This white paper walks you through the process of deploying the AX 2012 R3 client as an Azure RemoteApp application\u200b\u200b.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "RemoteAppDeploy.zip",
+        "DeploytheclientasanAzureRemoteAppprogram.pdf"
+    ],
+    "detailsSection_file_size": [
+        "846 bytes",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101951",
+    "downloadPreload": true
+}

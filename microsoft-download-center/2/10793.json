@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Server Update Services 3.0 SP2 Release Notes",
+    "downloadDescription": "These release notes describe the Windows\u00ae Server Update Services 3.0 Service Pack 2 (WSUS 3.0 SP2) release, including system requirements, upgrade requirements, and known issues.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WSUS30SP2ReleaseNotes.pdf",
+            "url": "https://download.microsoft.com/download/a/b/6/ab6da82d-f0c4-4b1c-85e3-4e79acc7a2e7/WSUS30SP2ReleaseNotes.pdf",
+            "size": "321709",
+            "version": "3.0 SP2",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WSUS30SP2ReleaseNotes.doc",
+            "url": "https://download.microsoft.com/download/a/b/6/ab6da82d-f0c4-4b1c-85e3-4e79acc7a2e7/WSUS30SP2ReleaseNotes.doc",
+            "size": "142336",
+            "version": "3.0 SP2",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These release notes describe the Windows\u00ae Server Update Services 3.0 Service Pack 2 (WSUS 3.0 SP2) release. This document contains the following sections:\r\nWhat\u2019s New in This Release\r\nSystem Requirements for the WSUS 3.0 SP2 Server Installation\r\nConfiguration Prerequisites and Best Practice Recommendations for the WSUS Server\r\nWindows Small Business Server Prerequisites\r\nSystem Requirements for the WSUS 3.0 SP2 Remote Console Installation\r\nSystem Requirements for Client Installation\r\nUpgrade Requirements and Recommendations\r\nInstalling WSUS 3.0 SP2\r\nSetup Command-line Parameters for Unattended WSUS 3.0 SP2 Installations\r\nKnown Issues\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0 SP2",
+    "detailsSection_file_name": [
+        "WSUS30SP2ReleaseNotes.pdf",
+        "WSUS30SP2ReleaseNotes.doc"
+    ],
+    "detailsSection_file_size": [
+        "314.2 KB",
+        "139.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Small Business Server 2011 Essentials",
+        "Windows Small Business Server 2011 Standard",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server Update Services Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=148066"
+        },
+        {
+            "title": "windows Server Update Services TechNet Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=117694"
+        },
+        {
+            "title": "downloads for Microsoft Windows Server Update Services",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=94242"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10793",
+    "downloadPreload": true
+}

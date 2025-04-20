@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 1801+ Integration Pack for VMware vSphere",
+    "downloadDescription": "The Integration Pack for VMware vSphere is an add-on for System Center 1801+ - Orchestrator that enables you to connect System Center Orchestrator to your VMware vSphere server to automate actions in VMware vSphere to enable full management of the virtualized computing infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Integration_Pack_for_VMware_vSphere.EXE",
+            "url": "https://download.microsoft.com/download/f/f/4/ff473960-86e4-4fa2-ad98-1e44600a79aa/System_Center_Integration_Pack_for_VMware_vSphere.EXE",
+            "size": "2234032",
+            "version": "7.4.7.0",
+            "datePublished": "7/15/2024 4:53:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for VMware vSphere is an add-on for System Center 1801+ - Orchestrator that enables you to connect System Center 1801 - Orchestrator to your VMware vSphere server to automate actions in VMware vSphere to enable full management of the virtualized computing infrastructure.<br />\n<br />\n<b>Feature Summary</b><br />\nThe Integration Pack includes the following activities:<br />\n<ul>\n<li> Add Network Adapter  </li>\n<li> Add VM Disk  </li>\n<li> Clone Linux VM  </li>\n<li> Clone Windows VM  </li>\n<li> Create VM  </li>\n<li> Customize VM  </li>\n<li> Delete VM  </li>\n<li> Get Cluster Properties  </li>\n<li> Get Datastore Capacity  </li>\n<li> Get Hosts  </li>\n<li> Get Resource Pool Runtime Info  </li>\n<li> Get Resource Pools  </li>\n<li> Get VM List  </li>\n<li> Get VM Properties  </li>\n<li> Get VM Status  </li>\n<li> Migrate VM  </li>\n<li> Move VM  </li>\n<li> Reconfigure VM  </li>\n<li> Reset VM  </li>\n<li> Revert VM Snapshot  </li>\n<li> Set Guest Info Variables  </li>\n<li> Set VM CD/DVD to ISO Image  </li>\n<li> Set VM Networks  </li>\n<li> Start VM  </li>\n<li> Stop VM  </li>\n<li> Suspend VM  </li>\n<li> Take VM Snapshot  </li>\n<li> Maintenance Mode  </li>\n<li> Get Host Properties  </li>\n<li> Get Host Datastores </li>\n</ul><br />\n<b>Release History </b><br />\n<ul>\n<li>12 February 2018 - Original English release, version 7.3.26.0. </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.4.7.0",
+    "detailsSection_file_name": [
+        "System_Center_Integration_Pack_for_VMware_vSphere.EXE"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 1801 - Orchestrator and future releases\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe. <br/>\r\n<br/>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Homepage",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "vMware vSphere Integration Pack",
+            "url": "https://technet.microsoft.com/en-us/system-center-docs/orch/manage/vsphere-integration-pack"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56604",
+    "downloadPreload": true
+}

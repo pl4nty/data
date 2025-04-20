@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 Help Templates",
+    "downloadDescription": "This zip file contains HTML and Microsoft Word templates that can be used to create documentation files for the Microsoft Dynamics AX 2012 Help system. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 Help Templates.zip",
+            "url": "https://download.microsoft.com/download/e/5/7/e579a52b-25e8-4fbc-82b9-d163b1c1f412/Microsoft Dynamics AX 2012 Help Templates.zip",
+            "size": "74318",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:23:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These HTML and Microsoft Word templates can be used to create documentation files for the Microsoft Dynamics AX 2012 Help system. For information about using these templates, see <a href=\"http://technet.microsoft.com/en-us/library/hh209595.aspx\">Templates for Help Documentation</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 Help Templates.zip"
+    ],
+    "detailsSection_file_size": [
+        "72.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to save the file to your computer.</LI> \n<LI>Double-click the <b>Microsoft Dynamics AX 2012 Help Templates.zip</b> file on your computer and follow the instructions on the screen to extract the files.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42946",
+    "downloadPreload": true
+}

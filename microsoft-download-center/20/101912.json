@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Release Notes for Microsoft Dynamics AX 2012 R3",
+    "downloadDescription": "\u200bThe Release Notes for Microsoft Dynamics AX 2012 R3 contain known issues and workarounds, if available, for partners and customers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ReleasenotesAX2012R3.pdf",
+            "url": "https://download.microsoft.com/download/0/3/0/030314e5-9da6-457c-961c-794b8eb06132/ReleasenotesAX2012R3.pdf",
+            "size": "202314",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bThe Release Notes for Microsoft Dynamics AX 2012 R3 contain references to existing documentation, corrections and addendums to existing documentation as well as technical issues that may not be documented anywhere else.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "ReleasenotesAX2012R3.pdf"
+    ],
+    "detailsSection_file_size": [
+        "197.6 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101912",
+    "downloadPreload": true
+}

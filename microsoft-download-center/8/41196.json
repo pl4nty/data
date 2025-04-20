@@ -1,0 +1,423 @@
+{
+    "error": "",
+    "downloadTitle": "Cmdlet Reference Download for System Center 2012",
+    "downloadDescription": "This page lists the Cmdlet Reference downloads that are available for System Center 2012 components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_AppController_Cmdlets.doc",
+            "size": "518144",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_SPF_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_SPF_Cmdlets.pdf",
+            "size": "1172956",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ServiceMgr_Cmdlets_DW.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ServiceMgr_Cmdlets_DW.doc",
+            "size": "869376",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ServiceMgr_Cmdlets_Group2.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ServiceMgr_Cmdlets_Group2.doc",
+            "size": "2584576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ServiceMgr_Cmdlets_Group1.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ServiceMgr_Cmdlets_Group1.pdf",
+            "size": "1444702",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_SMA_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_SMA_Cmdlets.doc",
+            "size": "1623552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_VMM_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_VMM_Cmdlets.pdf",
+            "size": "17936715",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ServiceMgr_Cmdlets_Group1.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ServiceMgr_Cmdlets_Group1.doc",
+            "size": "1113088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_VMM_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_VMM_Cmdlets.doc",
+            "size": "30108160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_AppController_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_AppController_Cmdlets.doc",
+            "size": "641024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_MMA_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_MMA_Cmdlets.pdf",
+            "size": "374605",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ConfigMgr_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ConfigMgr_Cmdlets.pdf",
+            "size": "24267535",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_DPM_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_DPM_Cmdlets.pdf",
+            "size": "3784249",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_DPM_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_DPM_Cmdlets.doc",
+            "size": "3954176",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_DPM_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_DPM_Cmdlets.doc",
+            "size": "3764224",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_SMA_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_SMA_Cmdlets.pdf",
+            "size": "1664629",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_SPF_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_SPF_Cmdlets.doc",
+            "size": "938496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_OpsMgr_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_OpsMgr_Cmdlets.doc",
+            "size": "5250560",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_DPM_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_DPM_Cmdlets.pdf",
+            "size": "4080903",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012SP1_AppController_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012SP1_AppController_Cmdlets.doc",
+            "size": "596480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_OpsMgr_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_OpsMgr_Cmdlets.pdf",
+            "size": "5482388",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012SP1_VMM_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012SP1_VMM_Cmdlets.pdf",
+            "size": "24375904",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012SP1_SPF_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012SP1_SPF_Cmdlets.doc",
+            "size": "763904",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_VMM_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_VMM_Cmdlets.doc",
+            "size": "18820096",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_AppController_Cmdlets.pdf",
+            "size": "814571",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_OpsMgr_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_OpsMgr_Cmdlets.doc",
+            "size": "5434368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_VMM_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_VMM_Cmdlets.pdf",
+            "size": "29367499",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ConfigMgr_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ConfigMgr_Cmdlets.doc",
+            "size": "26158592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012SP1_VMM_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012SP1_VMM_Cmdlets.doc",
+            "size": "26027008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_OpsMgr_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012_OpsMgr_Cmdlets.pdf",
+            "size": "5244786",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_MMA_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_MMA_Cmdlets.doc",
+            "size": "180736",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012SP1_SPF_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012SP1_SPF_Cmdlets.pdf",
+            "size": "1005574",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ServiceMgr_Cmdlets_DW.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ServiceMgr_Cmdlets_DW.pdf",
+            "size": "1189882",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_OpsMgr_XPlat_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_OpsMgr_XPlat_Cmdlets.doc",
+            "size": "377856",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_ServiceMgr_Cmdlets_Group2.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_ServiceMgr_Cmdlets_Group2.pdf",
+            "size": "2724656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_OpsMgr_XPlat_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_OpsMgr_XPlat_Cmdlets.pdf",
+            "size": "631529",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012SP1_AppController_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012SP1_AppController_Cmdlets.pdf",
+            "size": "842970",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_AppController_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/a/0/b/a0bb6495-3010-43a8-b06c-6b0f0e8f92d9/SC2012R2_AppController_Cmdlets.pdf",
+            "size": "922444",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The downloadable files listed on this page contain the Cmdlet Reference documentation for System Center 2012. They are all available in doc and pdf format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SC2012_AppController_Cmdlets.doc",
+        "SC2012R2_SPF_Cmdlets.pdf",
+        "SC2012R2_ServiceMgr_Cmdlets_DW.doc",
+        "SC2012R2_ServiceMgr_Cmdlets_Group2.doc",
+        "SC2012R2_ServiceMgr_Cmdlets_Group1.pdf",
+        "SC2012R2_SMA_Cmdlets.doc",
+        "SC2012_VMM_Cmdlets.pdf",
+        "SC2012R2_ServiceMgr_Cmdlets_Group1.doc",
+        "SC2012R2_VMM_Cmdlets.doc",
+        "SC2012R2_AppController_Cmdlets.doc",
+        "SC2012R2_MMA_Cmdlets.pdf",
+        "SC2012R2_ConfigMgr_Cmdlets.pdf",
+        "SC2012_DPM_Cmdlets.pdf",
+        "SC2012R2_DPM_Cmdlets.doc",
+        "SC2012_DPM_Cmdlets.doc",
+        "SC2012R2_SMA_Cmdlets.pdf",
+        "SC2012R2_SPF_Cmdlets.doc",
+        "SC2012_OpsMgr_Cmdlets.doc",
+        "SC2012R2_DPM_Cmdlets.pdf",
+        "SC2012SP1_AppController_Cmdlets.doc",
+        "SC2012R2_OpsMgr_Cmdlets.pdf",
+        "SC2012SP1_VMM_Cmdlets.pdf",
+        "SC2012SP1_SPF_Cmdlets.doc",
+        "SC2012_VMM_Cmdlets.doc",
+        "SC2012_AppController_Cmdlets.pdf",
+        "SC2012R2_OpsMgr_Cmdlets.doc",
+        "SC2012R2_VMM_Cmdlets.pdf",
+        "SC2012R2_ConfigMgr_Cmdlets.doc",
+        "SC2012SP1_VMM_Cmdlets.doc",
+        "SC2012_OpsMgr_Cmdlets.pdf",
+        "SC2012R2_MMA_Cmdlets.doc",
+        "SC2012SP1_SPF_Cmdlets.pdf",
+        "SC2012R2_ServiceMgr_Cmdlets_DW.pdf",
+        "SC2012R2_OpsMgr_XPlat_Cmdlets.doc",
+        "SC2012R2_ServiceMgr_Cmdlets_Group2.pdf",
+        "SC2012R2_OpsMgr_XPlat_Cmdlets.pdf",
+        "SC2012SP1_AppController_Cmdlets.pdf",
+        "SC2012R2_AppController_Cmdlets.pdf"
+    ],
+    "detailsSection_file_size": [
+        "506.0 KB",
+        "1.1 MB",
+        "849.0 KB",
+        "2.5 MB",
+        "1.4 MB",
+        "1.5 MB",
+        "17.1 MB",
+        "1.1 MB",
+        "28.7 MB",
+        "626.0 KB",
+        "365.8 KB",
+        "23.1 MB",
+        "3.6 MB",
+        "3.8 MB",
+        "3.6 MB",
+        "1.6 MB",
+        "916.5 KB",
+        "5.0 MB",
+        "3.9 MB",
+        "582.5 KB",
+        "5.2 MB",
+        "23.2 MB",
+        "746.0 KB",
+        "17.9 MB",
+        "795.5 KB",
+        "5.2 MB",
+        "28.0 MB",
+        "24.9 MB",
+        "24.8 MB",
+        "5.0 MB",
+        "176.5 KB",
+        "982.0 KB",
+        "1.1 MB",
+        "369.0 KB",
+        "2.6 MB",
+        "616.7 KB",
+        "823.2 KB",
+        "900.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI>\r\n<LI>Microsoft Word 2013</LI>\r\n<LI>Microsoft Word 2010</LI>\r\n<LI>Microsoft Word 2007</LI>\r\n<LI>Microsoft Word 2003</LI>\r\n<LI>Microsoft Word 2002</LI>\r\n<LI>Microsoft Word 2000</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Automation with Windows PowerShell",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=331519"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41196",
+    "downloadPreload": true
+}

@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Multi-Factor Authentication Server",
+    "downloadDescription": "Azure Multi-Factor Authentication Server enables you to add MFA to your resources",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MultiFactorAuthenticationServerSetup_8.1.18.1_Server_2019_and_2022.exe",
+            "url": "https://download.microsoft.com/download/9/e/0/9e006c56-bfde-4802-8683-201a35c3ed68/MultiFactorAuthenticationServerSetup_8.1.18.1_Server_2019_and_2022.exe",
+            "size": "156213816",
+            "version": "8.1.18",
+            "datePublished": "10/7/2024 8:45:33 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MultiFactorAuthenticationServerSetup_8.1.17.1_Server_2012_and_2016.exe",
+            "url": "https://download.microsoft.com/download/9/e/0/9e006c56-bfde-4802-8683-201a35c3ed68/MultiFactorAuthenticationServerSetup_8.1.17.1_Server_2012_and_2016.exe",
+            "size": "152970808",
+            "version": "8.1.18",
+            "datePublished": "10/7/2024 8:45:33 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "release_notes.txt",
+            "url": "https://download.microsoft.com/download/9/e/0/9e006c56-bfde-4802-8683-201a35c3ed68/release_notes.txt",
+            "size": "54899",
+            "version": "8.1.18",
+            "datePublished": "10/7/2024 8:45:33 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Multi-Factor Authentication Server provides a way to secure resources with MFA capabilities.\r\n\r\nIn September 2022, Microsoft announced deprecation of Azure AD Multi-Factor Authentication Server. Beginning September 30, 2024, Azure AD Multi-Factor Authentication Server deployments will no longer service requests from multifactor authentication (MFA). To ensure uninterrupted authentication services and to remain in a supported state, organizations should start planning now and migrate their users\u2019 authentication data to the cloud-based Azure MFA service by using the latest Migration Utility included with MFA Server. For more information, see https://learn.microsoft.com/en-us/azure/active-directory/authentication/how-to-migrate-mfa-server-to-azure-mfa.\r\n\r\nTo see the release notes, select \"download\" above and download the release_notes text file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.1.18",
+    "detailsSection_file_name": [
+        "MultiFactorAuthenticationServerSetup_8.1.18.1_Server_2019_and_2022.exe",
+        "MultiFactorAuthenticationServerSetup_8.1.17.1_Server_2012_and_2016.exe",
+        "release_notes.txt"
+    ],
+    "detailsSection_file_size": [
+        "149.0 MB",
+        "145.9 MB",
+        "53.6 KB"
+    ],
+    "detailsSection_file_date": "10/7/2024",
+    "systemRequirementsSection": "To learn about the system requirements, review the \"Plan your deployment\" section\r\nhttps://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2022",
+        "Windows 11"
+    ],
+    "installInstructionSection": "To install and configure the Azure Multi-Factor Authentication Server, review the steps here:\r\nhttps://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfaserver-deploy#install-and-configure-the-mfa-server",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55849",
+    "downloadPreload": true
+}

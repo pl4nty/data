@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure IP Ranges and Service Tags \u2013 Germany Cloud",
+    "downloadDescription": "Azure IP Ranges and Service Tags \u2013 Germany Cloud",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ServiceTags_AzureGermany_20220307.json",
+            "url": "https://download.microsoft.com/download/0/7/6/076274ab-4b0b-4246-a422-4baf1e03f974/ServiceTags_AzureGermany_20220307.json",
+            "size": "44365",
+            "version": "2022.03.07",
+            "datePublished": "7/15/2024 3:07:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains the IP address ranges for Public Azure as a whole, each Azure region within Public, and ranges for several Azure Services (Service Tags) such as Storage, SQL and AzureTrafficManager in Public. This file currently includes only IPv4 address ranges but a schema extension in the near future will enable us to support IPv6 address ranges as well. Service Tags are each expressed as one set of cloud-wide ranges and broken out by region within that cloud.  This file is updated weekly. New ranges appearing in the file will not be used in Azure for at least one week. Please download the new json file every week and perform the necessary changes at your site to correctly identify services running in Azure. These service tags can also be used to simplify the Network Security Group rules for your Azure deployments though some service tags might not be available in all clouds and regions.  Customers viewing the Effective Security Rules for their network adapters may note the presence of the \u201cspecial\u201d Azure platform addresses ( 168.63.129.16, FE80::1234:5678:9ABC/128) which are part of the Azure platform and NOT included in the JSON files.  These platform addresses are described in more detail here:   https://docs.microsoft.com/en-us/azure/virtual-network/what-is-ip-address-168-63-129-16. For more information on Service Tags please visit http://aka.ms/servicetags.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2022.03.07",
+    "detailsSection_file_name": [
+        "ServiceTags_AzureGermany_20220307.json"
+    ],
+    "detailsSection_file_size": [
+        "43.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Json reader recommended",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "This file contains the IP address ranges for Germany Azure as a whole, each Azure region within Germany, and ranges for several Azure Services (Service Tags) such as Storage, SQL and AzureTrafficManager in Germany.\u00a0 \r\nService Tags are each expressed as one set of cloud-wide ranges and broken out by region within that cloud.\u00a0 This file is updated weekly. New ranges appearing in the file will not be used in Azure for at least one week. Please download the new json file every week and perform the necessary changes at your site to correctly identify services running in Azure. These service tags can also be used to simplify the Network Security Group rules for your Azure deployments though some service tags might not be available in all clouds and regions.\u00a0 For more information please visit\u00a0http://aka.ms/servicetags\u00a0 \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57064",
+    "downloadPreload": true
+}

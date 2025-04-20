@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 21: Validate diagrams against standards in Visio 2010",
+    "downloadDescription": "Watch a brief demonstration of how to use validation rules for process diagrams and flowcharts in Visio 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Session_21_Validate_diagrams_against_standards_8000k.wmv",
+            "url": "https://download.microsoft.com/download/7/2/6/726391a6-0db1-4327-86e6-d2fd20fdaaae/Session_21_Validate_diagrams_against_standards_8000k.wmv",
+            "size": "138867441",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Session_21_Validate_diagrams_against_standards_1000k.wmv",
+            "url": "https://download.microsoft.com/download/7/2/6/726391a6-0db1-4327-86e6-d2fd20fdaaae/Session_21_Validate_diagrams_against_standards_1000k.wmv",
+            "size": "23262459",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn about working with validation rules for Business Process Modeling Notation (BPMN) and other process diagrams and flowcharts in Microsoft Visio 2010. This video reviews how to check a diagram against the built-in rule sets, identify shapes with problems, and resolve or ignore issues. It also covers importing rule sets from other diagrams. \r\nThis video is part of a series covering the basics of how to use Visio features and capabilities. Visit http://visio.microsoft.com/MVPSessions to learn more and view other videos in this series.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Session_21_Validate_diagrams_against_standards_8000k.wmv",
+        "Session_21_Validate_diagrams_against_standards_1000k.wmv"
+    ],
+    "detailsSection_file_size": [
+        "132.4 MB",
+        "22.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "The video has two downloadable resolution: 1000k/lowest and 8000k/highest. Click Download to save the video to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30143",
+    "downloadPreload": true
+}

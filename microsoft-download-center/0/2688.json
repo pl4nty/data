@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 R2 Hyper-V Component Architecture (with Service Pack 1)",
+    "downloadDescription": "Hyper-V Architecture Documentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2008 R2 Hyper-V Component Architecture RTM COMPLETED SP1 RTM for Printing.pdf",
+            "url": "https://download.microsoft.com/download/5/4/3/543baa10-927c-4f21-a453-fa8b1e7e22b6/Windows Server 2008 R2 Hyper-V Component Architecture RTM COMPLETED SP1 RTM for Printing.pdf",
+            "size": "3908238",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster provides a visual reference for understanding key Hyper-V technologies in Windows Server 2008 R2 Service Pack 1. It focuses on architecture, snapshots, live migration, virtual networking, storage, RemoteFX and Dynamic Memory. You can use this poster in conjunction with the previously published Windows Server 2008  Hyper-v Component Architecture, Windows Server 2008 and Windows Server 2008 R2 component posters (see http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=5567b22a-8c47-4840-a88d-23146fd93151, http://go.microsoft.com/fwlink/?LinkId=193499 and http://go.microsoft.com/fwlink/?LinkId=179116).\r\n \r\nThis poster has been updated for Windows Server 2008 R2 Service Pack 1 with Dynamic Memory and RemoteFX. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows Server 2008 R2 Hyper-V Component Architecture RTM COMPLETED SP1 RTM for Printing.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Web browser and any application capable of displaying PDF files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "<ul>\n  <li>To start the download, click the <b>Download</b> button, and then do one of the following:</li>\n  <ul>\n    <li>To start the download immediately, click <b>Open</b>.</li>\n    <li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li>\n    <li>To cancel the download, click <b>Cancel</b>.</li>\n  </ul>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2688",
+    "downloadPreload": true
+}

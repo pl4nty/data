@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 2 for System Center 2012 R2 Service Manager",
+    "downloadDescription": "This update contains a number of fixes for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme - UR9 now available.docx",
+            "url": "https://download.microsoft.com/download/1/6/a/16a55195-aa6a-4210-a780-0403d7f7d6ee/Readme - UR9 now available.docx",
+            "size": "13381",
+            "version": "7.5.3079",
+            "datePublished": "7/15/2024 3:53:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b style=\"color:red\">\r\n[Update]\r\n<br/>\r\n<u>Note: </u>Update Rollup 9 for Service Manager 2012 R2 is now available for download, you can get it from here - <a href=\"http://aka.ms/sm2012R2ur7\">http://aka.ms/smr2ur9</a>\r\n<br/>\r\n<br/>\r\nThe Service Manager update rollups are cumulative, UR9 contains new updates in addition to all the payload which was shipped in <a href=\"https://support.microsoft.com/en-us/kb/3063263\">UR7</a>,<a href=\"https://support.microsoft.com/en-us/kb/3039363\">UR6</a>, <a href=\"https://support.microsoft.com/en-us/kb/3009517\">UR5</a>, <a href=\"https://support.microsoft.com/kb/2989601\">UR4</a>, <a href=\"https://support.microsoft.com/kb/2962041\">UR3</a>, and <a href=\"https://support.microsoft.com/kb/2904710\">UR2</a>. You can directly patch SM 2012 R2 deployment with UR9 to get all the fixes together.\r\n<b>Please be aware</b> that UR9 release does not contain the payload of Update Rollup 8 (https://support.microsoft.com/kb/3124091), because UR8 contains the new HTML based Self Service Portal and requires separate installation.\r\n<br/>\r\n<br/>\r\nHence, now we are removing the Update Rollup 2 files from this Download Center page and those files will be available for on-demand in special cases only. Feel free to reach us at <u>ServiceManager@microsoft.com</u> in case of any queries or concerns.\r\n<br/>\r\n</b>\r\n----------------------------\r\n<br/>\r\n<br/>This update contains a set of bug fixes to the System Center 2012 R2 Service Manager release. It should be applied to all Service Manager 2012 R2 server installations. There are two executable files available: <br/>\r\n<br/>\r\nSCSM2012R2_CU_KB2904710_AMD64_7.5.3079.61.exe <br/>\r\nSCSM2012R2_CU_KB2904710_i386_7.5.3079.61.exe<br/>\r\n<br/>\r\n<br/>\r\nBug fixes included in this update: <br/>\r\n<ol>\r\n<li> For users who have both smpt and sip endpoints, Service Manager picks up the Lync \u201csip\u201d endpoint even when emailing users from the console</li>\r\n<li> After selecting \"Service Requests with Service Level Warning\", an error occurs about one hour later</li>\r\n<li> After selecting the \"Assigned to me\" view, a FullAdapter Exception occurs about one hour later</li>\r\n<li> Service Manager console maximized mode fixes</li>\r\n<ul>\r\n<li> The console when maximized is slow / laggy and constantly has upwards of 30% CPU utilization when running in maximized mode</li>\r\n<li> Context menus in the SM console don\u2019t render where expected and instead show up at the top-right hand corner of the main window</li>\r\n<li> Scroll bars for the work items preview pane do not render when running in full screen mode, and even if they do, they are inactive and cannot be used (the slider refuses to move)</li>\r\n<li> Forms/Wizards don\u2019t always render properly and only have the left navigation pane rendered with the right area blank</li>\r\n<li> When editing / creating Request Offerings User Prompts are not rendered properly</li>\r\n</ul>\r\n<li> Concurrent PowerShell workflows fail to run, although they show as successful in the Console</li>\r\n<li> An exception is raised in the console when the user attempts to open an already opened attachment from a work item form</li>\r\n<li> The attachment and associated details of the Release Record cannot be retrieved after it is marked as \u2018Closed\u2019</li>\r\n<li> Request Offerings form takes a long time to render when creating Service Requests from Request Offerings</li>\r\n<li> Console crashes when attempting to create a Service Request from a template on which the analyst is set using the \"Assign to Analyst\" task</li>\r\n<li> When creating a Service Request using a request offering that maps user input to a property on an activity, the Service  Manager console encounters an error and closes</li>\r\n<li> SM console shows a generic SQL exception instead of the detailed Data Collision exception when running in a non-English environment</li>\r\n<li> The Configuration Manager Connector does not handle updates to DeviceHasSoftwareItemInstalled correctly causing a divergence in the data synchronized between the SM and CM databases</li>\r\n<li> When grooming a call to the p_DataPurging sproc results in an 8623 error with message: The query processor ran out of internal resources and could not produce a query plan</li>\r\n<li> Adding multiple RegEx's to a group definition causes a SQL exception when adding / executing the group</li>\r\n<li> MPImporter does not import MPs from OM if SM has any MPs from a previous version already present when importing Chargeback MPs </li>\r\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079",
+    "detailsSection_file_name": [
+        "Readme - UR9 now available.docx"
+    ],
+    "detailsSection_file_size": [
+        "13.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Other Software:</b> System Center 2012 R2 Service Manager <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>Before you update:</b><br/>\r\n<ol>\r\n<li> Exit all Service Manager-related applications before you apply this cumulative update. For example, exit the Service Manager Console, the Self-Service Portal links, and the authoring tool</li>\r\n<li> Ensure that the DataWarehouse Server has successfully synchronized with the Management Server at least once</li>\r\n<li> Ensure that the update is first installed on Service Manager components in the following order:</li>\r\n<ol>\r\n<li> DataWarehouse Server </li> \r\n<li> Primary Management Server </li> \r\n<li> Secondary Management Servers </li> \r\n<li> All analyst consoles </li> \r\n<li> Self-Service Portal </li> \r\n</ol>\r\n<li> It is important to restart all the consoles once the update has been installed</li>\r\n</ol><br/>\r\n\r\n<b>To install this cumulative update, follow these steps:    </b><br/>\r\n<ol>\r\n<li> Download the cumulative update to a target folder. This cumulative update contains both the x86 version and the x64 version. Download the appropriate version for your system.</li>\r\n<li> Open the target folder and right-click the SCSM2012R2_CU_KB2904710_AMD64_7.5.3079.61.exe file or the SCSM2012R2_CU_KB2904710_i386_7.5.3079.61.exe file, and then click Run as administrator</li>\r\n<li> Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard</li>\r\n</ol><br/>\r\n<b>How to verify a successful installation of this cumulative update</b><br/>\r\n<ol>\r\n<li> In Control Panel, open Programs and Features.</li>\r\n<li> Click View installed updates.</li>\r\n<li> The following item is listed: Hotfix for Microsoft System Center Service Manager (SCSM2012R2_CU_KB2904710) </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42551",
+    "downloadPreload": true
+}

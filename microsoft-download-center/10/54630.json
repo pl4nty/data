@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Stream Analytics Tools for Visual Studio",
+    "downloadDescription": "Plug-in for Azure Stream Analytics development using Visual Studio",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.Azure.DataLakeAndStreamAnalyticsToolsForVS2015.msi",
+            "url": "https://download.microsoft.com/download/3/2/d/32d19d0c-772e-4b01-8590-7017b2ad739a/Microsoft.Azure.DataLakeAndStreamAnalyticsToolsForVS2015.msi",
+            "size": "214679552",
+            "version": "2.3.4000.3",
+            "datePublished": "7/15/2024 4:45:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This plug-in works with Visual Studio to enable easy authoring, debugging and tuning of Azure Stream Analytics jobs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.3.4000.3",
+    "detailsSection_file_name": [
+        "Microsoft.Azure.DataLakeAndStreamAnalyticsToolsForVS2015.msi"
+    ],
+    "detailsSection_file_size": [
+        "204.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 and above.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Enterprise",
+        "Windows 7 Enterprise N",
+        "Windows 7 Home Basic",
+        "Windows 7 Home Basic 64-bit",
+        "Windows 7 Home Premium",
+        "Windows 7 Home Premium 64-bit",
+        "Windows 7 Home Premium E 64-bit",
+        "Windows 7 Home Premium N",
+        "Windows 7 Home Premium N 64-bit",
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Professional E 64-bit",
+        "Windows 7 Professional K 64-bit",
+        "Windows 7 Professional KN 64-bit",
+        "Windows 7 Professional N",
+        "Windows 7 Professional N 64-bit",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Starter",
+        "Windows 7 Starter 64-bit",
+        "Windows 7 Starter N",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 7 Ultimate E 64-bit",
+        "Windows 7 Ultimate K 64-bit",
+        "Windows 7 Ultimate KN 64-bit",
+        "Windows 7 Ultimate N",
+        "Windows 7 Ultimate N 64-bit",
+        "Windows 8",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8 Release Preview",
+        "Windows 8.1",
+        "Windows 8.1 Preview",
+        "Windows Server 2012",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Release Candidate",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "Install the Azure SDK version 2.7.1 or higher and then download and install this package.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54630",
+    "downloadPreload": true
+}

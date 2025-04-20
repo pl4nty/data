@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Dynamic Cache Service",
+    "downloadDescription": "Dynamically manage the size of the Windows System File Cache.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynCache.zip",
+            "url": "https://download.microsoft.com/download/e/b/4/eb4d83b1-6b8e-4892-bd99-95da07407640/DynCache.zip",
+            "size": "1288384",
+            "version": "1.0.3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Windows Dynamic Cache Service will manage the working set size of the Windows System File Cache.  For 64 bit systems this service helps to address the problem of excessive cached read I/O that could eventually consume all of physical memory.  Sample source code and compiled files are included in the compressed file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.3",
+    "detailsSection_file_name": [
+        "DynCache.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Vista\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Standard",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Ultimate 64-bit edition"
+    ],
+    "installInstructionSection": "Installation and configuration documentation is included in the compressed file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9258",
+    "downloadPreload": true
+}

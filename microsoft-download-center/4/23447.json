@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Defined Contribution Pension Site and Application is Streamlined",
+    "downloadDescription": "Aided by partner twentysix New York, InvestLink built a new system, TSM.NET, using SQL Server 2005, Visual Studio 2005, and .NET Framework 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InvestLink Case Study Final_Aug_2007.doc",
+            "url": "https://download.microsoft.com/download/c/6/6/c66923e9-7254-4892-afad-2f96fad1f4f1/InvestLink Case Study Final_Aug_2007.doc",
+            "size": "865280",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "InvestLink, a major technology provider to the Defined Contribution industry, was outgrowing its existing system, and decided on a redesign to meet its immediate and long-term needs. After finding that an Oracle-based solution would have cost more than twice as much as a SQL Server 2005 and .NET Framework 2.0-based solution, InvestLink contracted with Microsoft partner twentysix New York to jointly build a solution around the Microsoft Application Platform. This solution was brought to market successfully in 18 months. The new solution boasts better scalability and security, lower ongoing costs, and higher productivity for programmers and users alike.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "InvestLink Case Study Final_Aug_2007.doc"
+    ],
+    "detailsSection_file_size": [
+        "845.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23447",
+    "downloadPreload": true
+}

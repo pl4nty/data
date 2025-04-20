@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Infer.NET Fun: An F# Library for Probabilistic Programming",
+    "downloadDescription": "Infer.NET Fun turns the simple succinct syntax of F# into an executable modeling language. Last published: March 21, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dist120321.zip",
+            "url": "https://download.microsoft.com/download/7/2/1/7210376e-9cb2-4a5f-8c45-293042d2501b/dist120321.zip",
+            "size": "2720712",
+            "version": "1.0.20321",
+            "datePublished": "11/15/2023 4:20:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Infer.NET Fun turns the simple succinct syntax of F# into an executable modeling language. You can code up the conditional probability distributions of Bayes\u2019 rule using F# array comprehensions with constraints. Write your model in F#. Run it directly to synthesize test datasets and to debug models. Or compile it with the Infer.NET compiler and runtime for efficient statistical inference.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.20321",
+    "detailsSection_file_name": [
+        "dist120321.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52435",
+    "downloadPreload": true
+}

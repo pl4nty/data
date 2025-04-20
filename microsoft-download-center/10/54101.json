@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2016 Integration Pack for HP Service Manager ",
+    "downloadDescription": "The Integration Pack for HP Service Manager is an add-on for System Center 2016 Orchestrator that enables you to create activities within runbooks that make requests to the HP Service Manager product to get data or perform functions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_2016_Integration_pack_for_HP_Service_Manager.exe",
+            "url": "https://download.microsoft.com/download/8/2/0/82007240-ba0e-453c-8926-e98f8d7681fa/System_Center_2016_Integration_pack_for_HP_Service_Manager.exe",
+            "size": "734400",
+            "version": "7.3.22.0",
+            "datePublished": "7/15/2024 4:39:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for HP Service Manager is an add-on for System Center 2016 Orchestrator that enables you to create activities within runbooks that make requests to the HP Service Manager product to get data or perform functions. <br />\n<br />\n<b>Feature Summary</b><br />\nThis integration pack adds the HP Service Manager category to the Activity pane in the Runbook Designer. This category contains the following activities:<br />\n<ul>\n<li> Close Entry </li>\n<li> Create Entry </li>\n<li> Get Entry </li>\n<li> Monitor Entry </li>\n<li> Update Entry </li>\n</ul><br />\n<b>Release History</b><br />\n<ul>\n<li>10/20/2016 - Original English release, version 7.3.22.0</li>\n</ul>\n\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.3.22.0",
+    "detailsSection_file_name": [
+        "System_Center_2016_Integration_pack_for_HP_Service_Manager.exe"
+    ],
+    "detailsSection_file_size": [
+        "717.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 2016 - Orchestrator \n</ul><br/>\r\n<ul>\r\n<b>Other Requirements:</b> <br/>\r\n<ul>\r\n<li> RAM \u2013 minimum 1GB recommended 2GB </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n<li> .Net 3.5 </li>\r\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe. <br/><br/>\r\n\r\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Homepage",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "hp SM Integration Pack",
+            "url": "https://technet.microsoft.com/en-us/system-center-docs/orch/manage/hp-service-manager-integration-pack"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54101",
+    "downloadPreload": true
+}

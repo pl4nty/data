@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "SSIS Database Sharding and Azure Blob Storage components ",
+    "downloadDescription": "The Sharding Catalog Setup Scripts contain scripts to setup the schema needed for the Sharding Catalog for the Database Sharding Destination.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sharding Catalog Setup Scripts.zip",
+            "url": "https://download.microsoft.com/download/6/9/f/69f68cfa-f278-4555-8a25-fdbcbc24118c/Sharding Catalog Setup Scripts.zip",
+            "size": "4808",
+            "version": "1",
+            "datePublished": "5/15/2024 3:17:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSIS Database Sharding Components.zip",
+            "url": "https://download.microsoft.com/download/6/9/f/69f68cfa-f278-4555-8a25-fdbcbc24118c/SSIS Database Sharding Components.zip",
+            "size": "2152628",
+            "version": "1",
+            "datePublished": "5/15/2024 3:17:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Sharding Catalog Setup Scripts contain scripts to setup the schema needed for the Sharding Catalog for the Database Sharding Destination. It also contains examples of how to use the stored procedures to develop a sharding catalog. This sharding catalog will contain the details on how to shard a destination data set, and can be used in conjunction with the Database Sharding Destination to create a dynamic sharded destination for SSIS packages which must send data to sharded ADO.NET destinations such as Windows Azure SQL Database, or Microsoft SQL Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Sharding Catalog Setup Scripts.zip",
+        "SSIS Database Sharding Components.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.7 KB",
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "SQL Server 2012",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "The SSISDatabaseSharding64.MSI file installs four components onto a machine with Microsoft SQL Server 2012 with the SSIS components installed. \r\n\u2022 Database Sharding Destination \r\n\u2022 Database Sharding Destination Connection manager \r\n\u2022 Blob Storage Destination \r\n\u2022 Blob Storage Source \r\nOnce installed, these components will appear in the list of available components in the SSIS Development Tools, and will be usable for design and execution in SSIS. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40743",
+    "downloadPreload": true
+}

@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "TypeScript for Visual Studio 2013",
+    "downloadDescription": "TypeScript is a language for application-scale JavaScript development. It is included in Visual Studio 2013 Update 2 or later.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TypeScript_Dev12.exe",
+            "url": "https://download.microsoft.com/download/4/4/3/443f86b7-a89f-48e6-ac96-0aac2a910a29/TS1.8.5-VSUOOB.50301.00/TypeScript_Dev12.exe",
+            "size": "10905992",
+            "version": "1.8.5",
+            "datePublished": "7/15/2024 3:44:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "TypeScript is a language for application-scale JavaScript. TypeScript adds optional types, classes, and modules to JavaScript. TypeScript supports tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to clean, readable, standards-based JavaScript. Try it out at <a href = \"http://www.typescriptlang.org/playground\">http://www.typescriptlang.org/playground</a>.  The source code for the compiler is available at <a href = \"https://github.com/Microsoft/TypeScript\">https://github.com/Microsoft/TypeScript</a>.\r\n\r\nFor Visual Studio 2013, install <a href = \"http://support.microsoft.com/kb/2829760\">Update 2 or later</a>.\r\n\r\nPlease note: If you choose to move from the standalone TypeScript power tool to the supported update, please uninstall standalone versions of the TypeScript Visual Studio plugin before installing Visual Studio 2013 Update 2 or later.\r\n\r\n<b>Releases</b><br/>\r\n<ul>\r\n\r\n<li>TypeScript 1.8.5 for Visual Studio 2013 \u2014 March 1, 2016 (<a href=\"https://github.com/Microsoft/TypeScript/releases/tag/v1.8.7\">release notes</a>) [<a href=\"http://download.microsoft.com/download/4/4/3/443F86B7-A89F-48E6-AC96-0AAC2A910A29/TS1.8.5-VSUOOB.50301.00/TypeScript_Dev12.exe\">Download</a>]</li>\r\n<li>TypeScript 1.8.2 for Visual Studio 2013 \u2014 February 22, 2016 (<a href=\"https://github.com/Microsoft/TypeScript/releases/tag/v1.8.2\">release notes</a>) [<a href=\"http://download.microsoft.com/download/4/4/3/443F86B7-A89F-48E6-AC96-0AAC2A910A29/TS1.8.2-VSUOOB.50218.00/TypeScript_Dev12.exe\">Download</a>]</li>\r\n<li>TypeScript 1.7.5 for Visual Studio 2013 \u2014 December 14, 2015 (<a href=\"https://github.com/Microsoft/TypeScript/releases/tag/v1.7.5\">release notes</a>) [<a href=\"http://download.microsoft.com/download/4/4/3/443F86B7-A89F-48E6-AC96-0AAC2A910A29/TS1.7.5-VSUOOB.41209.00/TypeScript_Dev12.exe\">Download</a>]</li>\r\n<li>TypeScript 1.7.3 for Visual Studio 2013 \u2014 November 30, 2015 (<a href=\"https://github.com/Microsoft/TypeScript/releases/tag/v1.7.3\">release notes</a>) [<a href=\"http://download.microsoft.com/download/4/4/3/443F86B7-A89F-48E6-AC96-0AAC2A910A29/TS1.7.3-VSUOOB.41125.00/TypeScript_Dev12.exe\">Download</a>]</li>\r\n<li>TypeScript 1.6.2 for Visual Studio 2013 \u2014 September 16, 2015 (<a href=\"https://github.com/Microsoft/TypeScript/releases/tag/v1.6.2\">release notes</a>) [<a href=\"http://download.microsoft.com/download/4/4/3/443F86B7-A89F-48E6-AC96-0AAC2A910A29/TS1.6.2-VUOOB.40914.00/TypeScript_Dev12.exe\">Download</a>]</li>\r\n<li>TypeScript 1.6.0 Beta for Visual Studio 2013 \u2014 September 2, 2015 (<a href=\"https://github.com/Microsoft/TypeScript/releases/tag/v1.6.0-beta\">release notes</a>) [<a href=\"http://download.microsoft.com/download/4/4/3/443F86B7-A89F-48E6-AC96-0AAC2A910A29/TS1.6-Beta-VUOOB.40831.00/TypeScript_Dev12.exe\r\n\">Download</a>]</li>\r\n<li>TypeScript 1.0RTM for Visual Studio 2013 &mdash; April 2, 2014 (<a href='http://blogs.msdn.com/b/typescript/archive/2014/04/02/announcing-typescript-1-0.aspx'>release notes</a>) [<a href=\"http://go.microsoft.com/fwlink/?LinkId=390521\">Download</a>]</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.5",
+    "detailsSection_file_name": [
+        "TypeScript_Dev12.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 Update 2 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Install <a href = \"http://support.microsoft.com/kb/2829760\">Visual Studio 2013 Update 2 or later</a>.\r\n\r\nFor instructions on using TypeScript, see <a href = \"http://www.typescriptlang.org/tutorial\">the TypeScript tutorial</a>.\r\n\r\n The source code for the compiler is available at <a href = \"https://github.com/Microsoft/TypeScript\">https://github.com/Microsoft/TypeScript</a>.\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48739",
+    "downloadPreload": true
+}

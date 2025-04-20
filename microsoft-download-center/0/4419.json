@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint 2010 Products Management Pack for System Center Operations Manager 2007",
+    "downloadDescription": "This Management Pack enables operators and administrators to manage Microsoft SharePoint 2010 Products; this includes SharePoint Server 2010, Project Server 2010, Search Server 2010, and Office Web Apps.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SharePoint 2010 Products OpsMgr 2007 MP en-us.msi",
+            "url": "https://download.microsoft.com/download/d/b/7/db7e1ffd-fcf4-4adf-841d-aeaad7af5558/Microsoft SharePoint 2010 Products OpsMgr 2007 MP en-us.msi",
+            "size": "1150976",
+            "version": "14.0.4745.1000",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SharePoint Server 2010 Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/d/b/7/db7e1ffd-fcf4-4adf-841d-aeaad7af5558/Microsoft SharePoint Server 2010 Management Pack Guide.docx",
+            "size": "123372",
+            "version": "14.0.4745.1000",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SharePoint Foundation 2010 Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/d/b/7/db7e1ffd-fcf4-4adf-841d-aeaad7af5558/Microsoft SharePoint Foundation 2010 Management Pack Guide.docx",
+            "size": "286986",
+            "version": "14.0.4745.1000",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "The Microsoft SharePoint 2010 Products management pack is designed to be used for monitoring SharePoint 2010 Products events, collecting SharePoint component-specific performance counters in one central location, and for raising alerts for operator intervention as necessary. By detecting, sending alerts, and automatically correlating critical events, this management pack helps indicate, correct, and prevent possible service outages or configuration problems, allowing you to proactively manage SharePoint servers and identify issues before they become critical. The management pack monitors and provides alerts for automatic notification of events indicating service outages, performance degradation, and health monitoring. <br/>\r\n<br/>\r\nThis Management Pack monitors: <br/>\r\n<ul>\r\n<li> Access Services </li>\r\n<li> Document Conversions Launcher Service </li>\r\n<li> Document Conversions Load Balancer </li>\r\n<li> Excel Calculation Services </li>\r\n<li> InfoPath Forms Service </li>\r\n<li> Managed Metadata Web Service </li>\r\n<li> One Note Service </li>\r\n<li> PerformancePoint Service </li>\r\n<li> PowerPoint Web Service </li>\r\n<li> Project Server Service </li>\r\n<li> Project Server Events Service </li>\r\n<li> Project Server Queuing Service </li>\r\n<li> Secure Store Service </li>\r\n<li> SharePoint Server Search </li>\r\n<li> User Profile Service </li>\r\n<li> Visio Graphics Service </li>\r\n<li> Word Conversion Service </li>\r\n<li> Word Viewing Service </li>\r\n</ul>\r\n<b>Feature Summary</b> <br/>\r\nThe SharePoint 2010 Products Management Pack is built to detect, diagnose, and alert on software and hardware incidents discovered by agents installed on SharePoint machines. <br/>\r\n<ul>\r\n<li> Health monitoring of SharePoint Server 2010, Project Server 2010, Search Server 2010, and Office Web Apps </li>\r\n<li> Monitors Events and Services and alerts when service outages are detected </li>\r\n<li> Monitors Performance and warns users when SharePoint performance is at risk </li>\r\n<li> Forwards users to up-to-date TechNet knowledge articles </li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 4/27/2010 - Original release, version 14.0.4744.1000 </li>\r\n<li> 01/07/2015 - Version 14.0.7135.5000 - Changed design to use Powershell 2.0 explicitly when 2.0 and higher versions are installed side by side </li>\r\n<li> 10/16/2015 - Version 14.0.7137.5000 - SharePoint 2010 MP had a PS1 file with syntax error causing the shared service discovery to fail. This fix resolves the issue. </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.4745.1000",
+    "detailsSection_file_name": [
+        "Microsoft SharePoint 2010 Products OpsMgr 2007 MP en-us.msi",
+        "Microsoft SharePoint Server 2010 Management Pack Guide.docx",
+        "Microsoft SharePoint Foundation 2010 Management Pack Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "120.5 KB",
+        "280.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center Operations Manager 2007 SP1 or later.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download the MSI. </li>\r\n<li> Double click the MSI to install. </li>\r\n<li> View the Management Pack Guide for importing and configuration instructions. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        },
+        {
+            "title": "microsoft SharePoint Home Page",
+            "url": "http://sharepoint.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4419",
+    "downloadPreload": true
+}

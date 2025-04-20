@@ -1,0 +1,317 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Technical Preview Data Protection Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-23.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-23.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-9.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-9.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-22.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-22.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-14.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-14.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD.exe",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD.exe",
+            "size": "351408",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-21.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-21.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-25.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-25.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-11.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-11.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-2.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-2.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-3.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-3.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-17.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-17.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-4.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-4.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-6.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-6.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-26.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-26.bin",
+            "size": "470076576",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-20.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-20.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-13.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-13.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-8.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-8.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-10.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-10.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-18.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-18.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-1.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-1.bin",
+            "size": "735664640",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-16.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-16.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-5.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-5.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-15.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-15.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-7.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-7.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-19.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-19.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-12.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-12.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP_SCDPM_EVALVHD-24.bin",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/SCTP_SCDPM_EVALVHD-24.bin",
+            "size": "736000000",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DPM2012TP_VHDEVAL_final.docx",
+            "url": "https://download.microsoft.com/download/6/e/9/6e9d48d7-e385-4cee-9eec-99c4ca71a00e/DPM2012TP_VHDEVAL_final.docx",
+            "size": "45069",
+            "version": "threshold M1",
+            "datePublished": "7/15/2024 3:41:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nThis VHD enables System Center customers to jointly evaluate System Center Technical Preview and Windows Server Technical Preview. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center Technical Preview components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=0a0b5663-405f-43d7-84b8-b5eeef5ea0d4\">System Center Technical Preview Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=7c2f5524-da90-45fe-afbe-1a5826cddb6b\">System Center Technical Preview Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=0327665a-105a-466f-bc34-58dfe02f2eb0\">System Center Technical Preview Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f463d1cd-e626-4b1f-9ff8-c7d4db79608e\">System Center Technical Preview Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=1a79bd3f-0101-4a08-be28-678d6a11e18e\">System Center Technical Preview Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "threshold M1",
+    "detailsSection_file_name": [
+        "SCTP_SCDPM_EVALVHD-23.bin",
+        "SCTP_SCDPM_EVALVHD-9.bin",
+        "SCTP_SCDPM_EVALVHD-22.bin",
+        "SCTP_SCDPM_EVALVHD-14.bin",
+        "SCTP_SCDPM_EVALVHD.exe",
+        "SCTP_SCDPM_EVALVHD-21.bin",
+        "SCTP_SCDPM_EVALVHD-25.bin",
+        "SCTP_SCDPM_EVALVHD-11.bin",
+        "SCTP_SCDPM_EVALVHD-2.bin",
+        "SCTP_SCDPM_EVALVHD-3.bin",
+        "SCTP_SCDPM_EVALVHD-17.bin",
+        "SCTP_SCDPM_EVALVHD-4.bin",
+        "SCTP_SCDPM_EVALVHD-6.bin",
+        "SCTP_SCDPM_EVALVHD-26.bin",
+        "SCTP_SCDPM_EVALVHD-20.bin",
+        "SCTP_SCDPM_EVALVHD-13.bin",
+        "SCTP_SCDPM_EVALVHD-8.bin",
+        "SCTP_SCDPM_EVALVHD-10.bin",
+        "SCTP_SCDPM_EVALVHD-18.bin",
+        "SCTP_SCDPM_EVALVHD-1.bin",
+        "SCTP_SCDPM_EVALVHD-16.bin",
+        "SCTP_SCDPM_EVALVHD-5.bin",
+        "SCTP_SCDPM_EVALVHD-15.bin",
+        "SCTP_SCDPM_EVALVHD-7.bin",
+        "SCTP_SCDPM_EVALVHD-19.bin",
+        "SCTP_SCDPM_EVALVHD-12.bin",
+        "SCTP_SCDPM_EVALVHD-24.bin",
+        "DPM2012TP_VHDEVAL_final.docx"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "343.2 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "448.3 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.6 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "44.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cDPM2012TP_VHDEVAL_final.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCTP_SCDPM_EVALVHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44304",
+    "downloadPreload": true
+}

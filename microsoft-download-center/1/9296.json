@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server Operating System",
+    "downloadDescription": "System Center Management Pack for Windows Server Operating System",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server Operating System Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/f/7/b/f7b960c9-7392-4c5a-bab4-efbb8a66ec2a/Windows Server Operating System Management Pack Guide.docx",
+            "size": "210706",
+            "version": "6.0.7323.0",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Windows Server Operating System.msi",
+            "url": "https://download.microsoft.com/download/f/7/b/f7b960c9-7392-4c5a-bab4-efbb8a66ec2a/SC Management Pack for Windows Server Operating System.msi",
+            "size": "2043904",
+            "version": "6.0.7323.0",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System Center Management Pack for Windows Server Operating System",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.7323.0",
+    "detailsSection_file_name": [
+        "Windows Server Operating System Management Pack Guide.docx",
+        "SC Management Pack for Windows Server Operating System.msi"
+    ],
+    "detailsSection_file_size": [
+        "205.8 KB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows Server Operating System Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager:\r\n<br/>\r\n<ul>\r\n<li>System Center Operations Manager 2007 R2 </li>\r\n<li> System Center Operations Manager 2012 </li>\r\n<li> System Center Operations Manager 2012 SP1 </li>\r\n<li> System Center Operations Manager 2012 R2 </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "See MP Guide for installation and usage instructions\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9296",
+    "downloadPreload": true
+}

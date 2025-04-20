@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Windows\u00ae Software Development Kit Update for Windows Vista\u2122",
+    "downloadDescription": "The Microsoft\u00ae Windows\u00ae Software Development Kit (SDK) Update for Windows Vista provides documentation, samples, header files, libraries, and tools designed to help you develop Windows applications using both native (Win32) and managed (.NET Framework) technologies. This release of the SDK supplies",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6.1.6000.16384.10.WindowsSDK_Vista_Feb2007Update_rtm.DVD.Rel.iso",
+            "url": "https://download.microsoft.com/download/4/2/6/42684501-9ec5-43dd-9dfe-c8c9dfa6a66f/6.1.6000.16384.10.WindowsSDK_Vista_Feb2007Update_rtm.DVD.Rel.iso",
+            "size": "1237436416",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\n==========\n<br/>\n<b>NOTE:</b> An updated version of the Windows SDK that supports Windows Server 2008, .NET Framework 3.5, as well as Windows Vista is now available and also contains the Visual Studio 2008 C++ command line compiler.  The updated Windows SDK is available as either a \n<ul>\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en\">Web Install</a> or\n</li>\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=F26B1AA4-741A-433A-9BE5-FA919850BDBF&displaylang=en\">DVD ISO image</a>\n</li>\n</ul>\n<br/>\n<b>NOTE:</b> The C++ compilers in this SDK release are the same that shipped with Visual Studio 2005 Service Pack 1, however it does not support the /analyze switch.  If you need that capability and do not wish to upgrade to the latest Windows SDK, you can obtain that functionality by installing the C++ compiler from the older \n<a href=\"http://download.microsoft.com/download/a/7/7/a7767f09-0136-4a96-a1f8-276bf0ee31fa/Setup.exe\">Microsoft Windows Software Development Kit for Windows Vista and .NET Framework 3.0 Runtime Components</a>.\n<br/>\n==========\n<br/>\n<br/>\n\n<br />\nThe Microsoft\u00ae Windows\u00ae Software Development Kit (SDK) Update for Windows Vista provides documentation, samples, header files, libraries, and tools you need to develop applications that run on Windows. This release of the SDK supplies updated compilers and documentation. The updated compilers are the same ones that recently shipped in Visual Studio 2005 Service Pack 1. This SDK also includes the samples, tools, headers, and libraries that shipped in the Windows SDK for Vista in November, 2006. <br/><br/>\n\nThis download contains the SDK only. To build .NET Framework 3.0 applications, you must have \n\n<a \nhref=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=10CC340B-F857-4A14-83F5-25634\n\nC3BF043&displaylang=en \"> .NET \nFramework 3.0 Runtime Components</a>.<br /><br />\n\n\nThis release of the SDK is intended to replace the Windows SDK for Vista. If you have \n\nalready installed the Windows SDK for Vista and you want to install the Windows SDK Update \n\nfor Vista, you will need to first uninstall the Windows SDK for Vista. <br /> <br /> \n\nThe Windows SDK Update for Vista includes content for application development with the APIs in Windows Vista, including the .NET Framework 3.0 technologies: .NET Framework 2.0, Windows\u00ae Presentation Foundation, Windows\u00ae Communication Foundation, Windows\u00ae Workflow Foundation, and Windows CardSpace\u2122. This SDK is designed for use with Windows Vista (which includes Framework 3.0). The Windows SDK Update for Vista also supports creating applications for Windows XP, Windows Server\u00ae 2003 SP1, and Windows Server 2003 R2. This release of the Windows SDK is compatible with Microsoft\u00ae Visual Studio\u00ae 2005 and the Visual Studio 2005 extensions for .NET Framework 3.0 (WCF & WPF), November 2006 CTP.   <br /> <br /> <br />\n\n\n\n=================================================== <br />\n<br />\nNOTE: A number of known issues exist with this release.  Please see the\n<a href=\"http://download.microsoft.com/download/6/2/2/622d5f37-9510-463a-8760-08f8e030d807/ReleaseNotes.Htm\"> Release Notes</a> \nwith this download for more information. <br />\n<br />\n=================================================== <br />\n <br />\n<b>Documentation:</b> The Windows SDK documentation contains task-based how-to documentation, API reference topics, and \n\nfeature overviews to help you develop applications using Win32 and .NET Framework 3.0 APIs.  Specific features such as Search, Index, \n\nTable of Contents, and  navigational topics in the documentation viewer are all available to help users locate necessary topics. <br />  <br \n\n/>\n<br />\n\n\n<b>Samples:</b>  Two sets of samples are included by default.<br />  <br />\n<br />\n\n\n<li>Microsoft .NET Framework 3.0 samples: <br/> <br/> </li>\nThe .NET Framework 3.0 samples are included in the documentation. If you want to install samples separately, you can find them in these .zip files: \n\nWCFSamples.zip, CrossTechnologySamples.zip, FrameworkSamples.zip, WFSamples.zip, and WPFSamples.zip. They install to \\Program \n\nFiles\\Microsoft SDKs\\Windows\\v6.0\\samples.  These zip files contain all of the Microsoft .NET Framework 3.0 \n\nsamples.<br /><br> </br>\n\n<li>Win32 samples:<br/> <br/> </li> The Win32 samples are not included in the documentation. If you choose to install them, they are \n\ninstalled as subdirectories of \\Program Files\\Microsoft SDKs\\Windows\\v6.0\\samples. they are not available in a .zip file.<br /> <br /><br />\n\n<b>Tools and Build Environments:</b> In addition to the headers and libraries used to build Windows applications, the Windows SDK includes more than 100 GUI and command-line tools to aid in the development of native (Win32) and managed (.NET Framework) systems for the Windows platform. The tools include command-line compilers (both x86 and x64), debuggers, performance monitoring applications, security management utilities, and  more. <br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "6.1.6000.16384.10.WindowsSDK_Vista_Feb2007Update_rtm.DVD.Rel.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.2 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \n\n<li>The .NET Framework 3.0 tools and samples contained in this SDK are designed to work on \n\nWindows Vista or on Windows XP SP2 and Windows Server 2003 SP1 with the .NET Framework 3.0 \n\nRuntime Components installed.  If you do not have the .NET Framework 3.0 components  \n\ninstalled, some samples, tools, \nand other SDK functionality will not work properly on the down-level operating \n\nsystems.<br/><br/> </li>\n\n<li>Hard disk space.  Choose a disk drive with a minimum of 2.0 GB of free space. \n\n<br/><br/></li>\n<li>We highly recommend you have your machine fully patched through Microsoft Update before beginning Setup.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "For this release, the Windows SDK is available as either a  <a href=\"http://download.microsoft.com/download/4/2/6/42684501-9ec5-43dd-9dfe-c8c9dfa6a66f/6.1.6000.16384.10.WindowsSDK_Vista_Feb2007Update_rtm.DVD.Rel.iso\n\">DVD ISO image</a>\nso that you can burn your own DVD or as a <a href=\"http://download.microsoft.com/download/c/a/1/ca145d10-e254-475c-85f9-1439f4cd2a9e/Setup.exe\">Web Install</a> \nthat enables you to launch Setup over the Web to install and download only the components you select during setup.<br/> <br/>\n<B>NOTE:</B> Please be aware that the Windows SDK is about 1.2 GB, which will take considerable time to download depending on your connection speed. To improve the download run the Web Setup and select only the individual components you need.<BR/>\n\n\n<ul><li>  If you need additional information or assistance with installing or using the Windows SDK, please visit the <a href=\"http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=121&SiteID=1\">Windows SDK Forum</a> or <a href=\"http://blogs.msdn.com/windowssdk\">the Windows SDK team blog</a>.<br/><br/></li> </ul>",
+    "additionalInformationSection": "To verify that your download of the ISO file for the Windows SDK is not corrupt, here is some verification information:<br />\nAutoCRC: 0x9863D5EC<br />\nSize: 1.15 GB (1,237,436,416 bytes)<br />\nSHA-1 hash: 0x5D28463DAAA755450D697C850DD622D1F8B580AE <br></br>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft\u00ae Windows\u00ae PowerShell RC2",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=73813"
+        },
+        {
+            "title": "microsoft\u00ae Windows\u00ae Software Development Kit Privacy Statement",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=30B7D554-7610-4114-8B78-55D52BA2EDC1&displaylang=en"
+        },
+        {
+            "title": "windows SDK Team Blog",
+            "url": "http://blogs.msdn.com/windowssdk"
+        },
+        {
+            "title": "forums and Newsgroups for Developers",
+            "url": "http://msdn2.microsoft.com/en-us/windowsvista/aa904946.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14477",
+    "downloadPreload": true
+}

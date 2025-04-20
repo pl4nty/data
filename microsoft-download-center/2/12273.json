@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Assessment Tool 4.0",
+    "downloadDescription": "The Microsoft Security Assessment Tool (MSAT) is a risk-assessment application designed to provide information and recommendations about best practices for security within an information technology (IT) infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSATEnglish.zip",
+            "url": "https://download.microsoft.com/download/9/1/1/911d5cb1-2885-4925-a1a5-8ae500781081/MSATEnglish.zip",
+            "size": "8781659",
+            "version": "4.0.2.35",
+            "datePublished": "7/15/2024 3:10:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "The Microsoft Security Assessment Tool 4.0 is the revised version of the original Microsoft Security Risk Self-Assessment Tool (MSRSAT), released in 2004 and the Microsoft Security Assessment Tool 2.0 released in 2006. Security issues have evolved since 2004 so additional questions and answers were needed to ensure you had a comprehensive toolset to become more aware of the evolving security threat landscape that could impact your organization.<br /><br />\nThe tool employs a holistic approach to measuring your security posture by covering topics across people, process, and technology. Findings are coupled with prescriptive guidance and recommended mitigation efforts, including links to more information for additional industry guidance. These resources may assist you in keeping you aware of specific tools and methods that can help change the security posture of your IT environment.<br /><br />There are two assessments that define the Microsoft Security Assessment Tool:<br /><br />\n<ul>\n<li>Business Risk Profile Assessment</li>\n<li>Defense in Depth Assessment (UPDATED)</li>\n</ul>\nThe questions identified in the survey portion of the tool and the associated answers are derived from commonly accepted best practices around security, both general and specific. The questions and the recommendations that the tool offers are based on standards such as ISO 17799 and NIST-800.x, as well as recommendations and prescriptive guidance from Microsoft\u2019s Trustworthy Computing Group and additional security resources valued in the industry.<br /><br />After completing an Assessment, you will gain access to a detailed report of your results. You may also compare your results with those of your peers (by industry and company size), provided that you upload your results anonymously to the secure MSAT Web server. When you upload your data the application will simultaneously retrieve the most recent data available. To be able to provide this comparative data, we need customers such as you to upload their information. All information is kept strictly confidential and no personally identifiable information whatsoever will be sent. For more information on Microsoft's privacy policy, please visit: <a href=\"http://www.microsoft.com/info/privacy.mspx\">http://www.microsoft.com/info/privacy.mspx</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.2.35",
+    "detailsSection_file_name": [
+        "MSATEnglish.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 2000 Professional Edition; Windows Vista; Windows XP Professional Edition SP2, Windows 7</li>\n<li>.NET Framework Version 3.5</li>\n<li>Internet Explorer 6.0</li>\n<li>SQL Server CE 3.5</li>\n</ul>\nYou should have the latest service packs installed for your operating system and browser.<br /><br />\nThe MSAT does not require an Internet connection for you to use it. But to upload your results and to check for updates, you will need an Internet connection.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Business",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "1. Click the <b>Download</b> button on this page to start the download.<br />\n2. Do one of the following:\n<ul>\n<li>To start the installation immediately, click <b>Setup.exe</b></li>\n<li>To save the download to your computer for installation at a later time, click <b>Save</b></li>\n<li>To cancel the installation, click <b>Cancel</b></li>\n</ul>",
+    "additionalInformationSection": "<b>Attention Previous MSAT Users</b><br/><br />Changes to the tool have been made that would invalidate your previous assessments. We recommend that you <b>CREATE A NEW BASELINE</b> due to the evolving threat landscape and changes made to the assessments.<br /><br />",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Center",
+            "url": "http://www.microsoft.com/security"
+        },
+        {
+            "title": "microsoft Security Intelligence Report",
+            "url": "http://www.microsoft.com/sir"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12273",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Sales Order Management and Catch Weight",
+    "downloadDescription": "This document describes the design and intended use of catch weight in the sales order management process for target industries. It also describes the parameters and processes that work out of box, and the parameters that might be needed.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sales order management and catch weight for Microsoft Dynamics AX 2O12.pdf",
+            "url": "https://download.microsoft.com/download/f/f/1/ff11c919-c43d-47d7-81dd-dd7478582e8b/Sales order management and catch weight for Microsoft Dynamics AX 2O12.pdf",
+            "size": "1996945",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:53:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the design and intended use of catch weight in the sales order management process in Microsoft Dynamics AX 2012 R2. The information in this document is intended for small to large manufacturing and distribution companies within industries where items are ordered by a piece unit and invoiced by the weight/volume/area of the item. These are primarily companies within the food industry. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Sales order management and catch weight for Microsoft Dynamics AX 2O12.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42563",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Fault Tree Analysis sample diagram for Visio 2010",
+    "downloadDescription": "Analyze information systems failures with this Visio 2010 sample diagram.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FaultTreeAnalysis 2010.vst",
+            "url": "https://download.microsoft.com/download/2/2/f/22ff8b03-5762-4929-bda0-4ad6592b7982/FaultTreeAnalysis 2010.vst",
+            "size": "235520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 sample diagram to analyze the primary causes of information systems failures. This sample diagram uses the built-in Fault Tree Analysis shapes in Visio to present an example of how Visio can be used to assess information systems failures stemming from a database failure, software failure, or insufficient permissions. This sample diagram could also be adapted to monitor or analyze other business processes, including Six Sigma and International Organization for Standardization (ISO) 9000 processes .",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FaultTreeAnalysis 2010.vst"
+    ],
+    "detailsSection_file_size": [
+        "230.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the sample diagram to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26520",
+    "downloadPreload": true
+}

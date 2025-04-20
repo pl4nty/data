@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Migrate from Product Builder to Product Configurator",
+    "downloadDescription": "\u200b\u200bProduct Configurator is scheduled to replace Product Builder in the next major release after Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MigratefromProductBuildertoProductConfigurator1.pdf",
+            "url": "https://download.microsoft.com/download/6/a/c/6acb6ed6-f4ad-4087-8f2c-704fd1628907/MigratefromProductBuildertoProductConfigurator1.pdf",
+            "size": "837191",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides information for \r\npartners and customers who want to migrate product models in Product Builder to \r\nproduct configuration models in Product Configurator. The White Paper applies to Microsoft Dynamics AX 2012 R3 CU8.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "MigratefromProductBuildertoProductConfigurator1.pdf"
+    ],
+    "detailsSection_file_size": [
+        "817.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101859",
+    "downloadPreload": true
+}

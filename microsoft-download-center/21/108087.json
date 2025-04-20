@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Fabric One Pager",
+    "downloadDescription": "Microsoft Fabric One Pager",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Fabric_OnePager.pdf",
+            "url": "https://download.microsoft.com/download/63c98ed2-9e30-43bf-b86b-2b55890767a5/Fabric_OnePager.pdf",
+            "size": "146359",
+            "version": "2.0",
+            "datePublished": "3/26/2025 6:30:02 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Product one-pager for Microsoft Fabric",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Fabric_OnePager.pdf"
+    ],
+    "detailsSection_file_size": [
+        "142.9 KB"
+    ],
+    "detailsSection_file_date": "3/26/2025",
+    "systemRequirementsSection": "PDF",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download PDF",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108087",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Oracle to Azure Database for PostgreSQL Migration Workarounds",
+    "downloadDescription": "Oracle to Azure Database for PostgreSQL Migration Workarounds",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Oracle to Azure Database for PostgreSQL Migration Workarounds.pdf",
+            "url": "https://download.microsoft.com/download/6/5/d/65d03647-03a0-4eb0-9c98-402e757e3844/Oracle to Azure Database for PostgreSQL Migration Workarounds.pdf",
+            "size": "226743",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document's purpose is to provide Architects, Consultants, DBAs and related roles with a guide for quick fixing / \r\nworking around common issues while migrating workloads from Oracle to Azure Database for PostgreSQL.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Oracle to Azure Database for PostgreSQL Migration Workarounds.pdf"
+    ],
+    "detailsSection_file_size": [
+        "221.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103474",
+    "downloadPreload": true
+}

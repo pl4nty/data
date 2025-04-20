@@ -1,0 +1,129 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 4 for Workflow Manager 1.0 (KB4019220)",
+    "downloadDescription": "Cumulative Update 4 for Workflow Manager 1.0 (KB4019220)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB4019220-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/c/5/3c529935-bee8-4c5c-81a1-3adc12d3f548/WorkflowManager-KB4019220-x64-ENU.exe",
+            "size": "2980552",
+            "version": "1.0 CU4",
+            "datePublished": "7/15/2024 4:43:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/3/c/5/3c529935-bee8-4c5c-81a1-3adc12d3f548/WorkflowManagerTools_x86.msi",
+            "size": "2736128",
+            "version": "1.0 CU4",
+            "datePublished": "7/15/2024 4:43:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/3/c/5/3c529935-bee8-4c5c-81a1-3adc12d3f548/WorkflowManagerClient_x86.msi",
+            "size": "520192",
+            "version": "1.0 CU4",
+            "datePublished": "7/15/2024 4:43:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/3/c/5/3c529935-bee8-4c5c-81a1-3adc12d3f548/WorkflowManagerClient_x64.msi",
+            "size": "520192",
+            "version": "1.0 CU4",
+            "datePublished": "7/15/2024 4:43:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/3/c/5/3c529935-bee8-4c5c-81a1-3adc12d3f548/WorkflowManagerTools_x64.msi",
+            "size": "2740224",
+            "version": "1.0 CU4",
+            "datePublished": "7/15/2024 4:43:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This update contains fixes for Workflow Manager 1.0, Workflow Manager Client 1.0, and Workflow Manager Tools 1.0. <BR></BR>\r\n\r\nPlease refer to the Knowledge base article for additional details: <A href=\"http://support.microsoft.com/kb/4019220\">KB4019220</A>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0 CU4",
+    "detailsSection_file_name": [
+        "WorkflowManager-KB4019220-x64-ENU.exe",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManagerTools_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB",
+        "2.6 MB",
+        "508.0 KB",
+        "508.0 KB",
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR></BR>\r\nThis update can be applied to machines that have Workflow Manager 1.0 installed. If the machine has Workflow Manger 1.0 installed, only Workflow Manager will be updated. To update the Workflow Manager Client 1.0, you have to install Workflow Manager Client 1.0 CU4. Workflow Manager Client 1.0 CU4 and Workflow Manager Tools 1.0 CU4 are MSIs that can be installed on a fresh computer or in addition to Workflow Manager Client 1.0 or Workflow Manager Tools 1.0 respectively\r\n<BR></BR><BR></BR><B>Software Requirements:  </B><BR></BR>\r\n<OL>\r\n  <LI> Must have <A href=\"http://go.microsoft.com/fwlink/?LinkId=282734\">PowerShell 3.0</A> installed on the computer where you are installing this update </LI>\r\n   <LI> For machines with Workflow Manager 1.0 installed, one of the following additional requirements applies:</LI>\r\n    <UL>\r\n  <LI> Must have the <A href=\"http://go.microsoft.com/fwlink/?LinkId=282733\">Cumulative Update for Service Bus 1.0 (KB2799752)</A> installed on the entire computer farm before installing this update for Workflow Manager 1.0</LI>\r\n  <LI> Must have Service Bus 1.1 installed on the computer where you are installing this update</LI>\r\n  </UL>\r\n</OL><BR></BR>\r\n<B>Supported Operating Systems: </B> Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2<BR></BR>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To install the update for Workflow Manager 1.0 (KB4019220)\r\n<OL>\r\n<LI>Click the Download button on this page to start the download, or select a different language from the \"Change language\" drop-down list. <BR></BR>\r\n\r\n    Alternatively, you can click Save to download the .exe or .msi installer file to your computer. Then, navigate to the location at which you saved the .exe file, double-click the .exe file, and follow the instructions shown in the installer. </LI>\r\n\r\n<LI>If the computer has Workflow Manager 1.0 installed, you have to install Workflow Manager 1.0 CU4 after you install Workflow Manager Client 1.0 CU4.</LI>\r\n\r\n<LI>This Cumulative Update for Workflow Manager 1.0 can also be installed directly from the Web Platform Installer. This update can be obtained by downloading and using the Web Platform Installer (WebPI), you agree to the license terms and privacy statement for WebPI. This installer will contact Microsoft over the Internet to retrieve product information.</LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55643",
+    "downloadPreload": true
+}

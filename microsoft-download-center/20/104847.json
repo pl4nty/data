@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "CsDev16-221214.1.60953583",
+    "downloadDescription": "WindowsAppSDK MSIX and Installer",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WindowsAppSDK.Cs.Extension.Dev16.vsix",
+            "url": "https://download.microsoft.com/download/6/8/7/68741006-e84e-42ba-b4fd-6ebc2ba83557/WindowsAppSDK.Cs.Extension.Dev16.vsix",
+            "size": "102426973",
+            "version": "1.2.221209.1",
+            "datePublished": "1/15/2024 4:33:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WindowsAppSDK MSIX and Installer",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.221209.1",
+    "detailsSection_file_name": [
+        "WindowsAppSDK.Cs.Extension.Dev16.vsix"
+    ],
+    "detailsSection_file_size": [
+        "97.7 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "17763/RS5 and above",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX"
+    ],
+    "installInstructionSection": "This zipped file contains the MSIX and Installer for WindowsAppSDK",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104847",
+    "downloadPreload": true
+}

@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Prism for the Windows Runtime - Book Download",
+    "downloadDescription": "This is a PDF version of the on-line guidance \"Developing a Windows Store business app using C#, XAML, and Prism for the Windows Runtime.\" There are two PDF files associated with this download. One version supports Windows 8.1 and the other version supports Windows 8. Download the version appropriate for your platform development.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "2013 Prism for the Windows Runtime for Windows 8.pdf",
+            "url": "https://download.microsoft.com/download/c/c/a/cca25c0f-7b54-4c89-ad3d-cde033f28880/2013 Prism for the Windows Runtime for Windows 8.pdf",
+            "size": "3192637",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "2014 Prism for the Windows Runtime for Windows 8-1.pdf",
+            "url": "https://download.microsoft.com/download/c/c/a/cca25c0f-7b54-4c89-ad3d-cde033f28880/2014 Prism for the Windows Runtime for Windows 8-1.pdf",
+            "size": "3590653",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This PDF provides guidance to developers who want to create a Windows 8.1 Store business app using C#, Extensible Application Markup Language (XAML), the Windows Runtime, and modern development practices. The guide comes with source code for <a href=\"http://aka.ms/prism-winrt-code\">Prism for the Windows Runtime</a>, source code for the AdventureWorks Shopper product catalog and shopping cart reference implementation, and documentation. The PDF provides guidance on how to implement MVVM with navigation and app lifecycle management, validation, manage application data, implement controls, accessible and localizable pages, touch, search, tiles, and tile notifications. It also provides guidance on testing your app and tuning its performance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "2013 Prism for the Windows Runtime for Windows 8.pdf",
+        "2014 Prism for the Windows Runtime for Windows 8-1.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li> To run the sample described in this document, you need Windows  8.1 or Windows 8. </li>\r\n  <li>To read the PDF, you will need a document reader capable of displaying PDF format documents. Download the PDF version that is applicable to your development environment: Windows 8.1 or Windows 8.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "To read the PDF, you will need a document reader capable of displaying PDF format documents. Download the PDF version that is applicable to your development environment: Windows 8.1 or Windows 8.\r\n<br/><br/>\r\nThe sample code and library can be found here: <a href=\"http://aka.ms/prism-winrt-code\">Prism for the Windows Runtime Library and AdventureWorks Shopper sample app</a>.\r\n\r\n",
+    "additionalInformationSection": "The sample code can be found here: <a href=\"http://aka.ms/prism-winrt-code\">Prism for the Windows Runtime Library and AdventureWorks Shopper sample app</a>.\r\n<br/><br/>\r\nThe online documentation can be found here: <a href=\"http://aka.ms/prism-winrt-doc\">Developing a Windows Store business app using C#, XAML, and Prism for the Windows Runtime</a>.\r\n<br/><br/>\r\nFor help and support visit the <a href=\"http://prismwindowsruntime.codeplex.com/\">Prism community site</a>.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "prism for the Windows Runtime Library and AdventureWorks Shopper sample app",
+            "url": "http://aka.ms/prism-winrt-code"
+        },
+        {
+            "title": "developing a Windows Store business app using C#, XAML, and Prism for the Windows Runtime Online documentation",
+            "url": "http://aka.ms/prism-winrt-doc"
+        },
+        {
+            "title": "prism community site",
+            "url": "http://prismwindowsruntime.codeplex.com/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39042",
+    "downloadPreload": true
+}

@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "[RETIRED] Web Client Contextual AutoComplete Application Block for .NET Framework 3.5",
+    "downloadDescription": "RETIRED DOWNLOAD: This project is retired. No future releases are planned.     This application block provides guidance on how to provide a list of suggested values to the end user of your application during data input.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AutoCompleteBundle-2008.3.20.1.zip",
+            "url": "https://download.microsoft.com/download/e/b/d/ebdba688-4712-4166-acbc-144cc59ccb78/AutoCompleteBundle-2008.3.20.1.zip",
+            "size": "609009",
+            "version": "2.0",
+            "datePublished": "3/15/2024 3:07:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>RETIRED DOWNLOAD</b><br />\r\nThis project is retired. No future releases are planned.<br />\r\n<br />\r\n<br />\r\nThis application block provides guidance on how to provide a list of suggested values to the end user of your application during data input. The application block includes a QuickStart, How-to topics, and patterns.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "AutoCompleteBundle-2008.3.20.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "594.7 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Microsoft .NET Framework 3.5</li><br />\n<li><a href=\"http://www.codeplex.com/AtlasControlToolkit/Release/ProjectReleases.aspx?ReleaseId=8513\" target=\"_blank\">AJAX Control Toolkit Version 3.0.11119.0</a></li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "This download offers you the benefits of registering with Microsoft. Click the <b>Continue</b> button near the top of this page to register. After you have gone through the registration process, you will be returned to this page to begin the download.",
+    "relatedResourcesSection": [
+        {
+            "title": "web Client Software Factory",
+            "url": "http://msdn.microsoft.com/webclientfactory"
+        },
+        {
+            "title": "ajax Control Toolkit",
+            "url": "http://www.codeplex.com/AtlasControlToolkit/Release/ProjectReleases.aspx"
+        },
+        {
+            "title": "web Client Software Factory on CodePlex",
+            "url": "http://www.codeplex.com/websf/Wiki/View.aspx?title=bundles&referringTitle=Home"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11688",
+    "downloadPreload": true
+}

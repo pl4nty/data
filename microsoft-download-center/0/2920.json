@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Kevin McNeish on DSLs and Software Factories",
+    "downloadDescription": "Carl and Richard talk to Kevin McNeish about Domain Specific Languages (DSL), Software Factories, and the like.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080401KMcNeish.zip",
+            "url": "https://download.microsoft.com/download/7/7/a/77ad1373-1ec1-4516-9fb9-352b7b18386d/20080401KMcNeish.zip",
+            "size": "39678874",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:48:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Kevin McNeish is President and Chief Software Architect of Oak Leaf Enterprises, Inc, and a Microsoft C# MVP. He is co-author of the book \"Professional UML with Visual Studio .NET\", author of the book \".NET for Visual FoxPro Developers\", and has authored several articles for CoDe magazine and other developer journals. He is the Chief Software Architect of the Mere Mortals Framework for .NET and is also a well known speaker and trainer throughout North America and Europe. He spends about half his time on the road training and mentoring companies to build well-designed, high-performance .NET desktop, Internet and Smart Device applications. You can contact Kevin by e-mail at kevinm@oakleafsd.com, on the web at www.oakleafsd.com or by phone at 434-979-2417.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080401KMcNeish.zip"
+    ],
+    "detailsSection_file_size": [
+        "37.8 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2920",
+    "downloadPreload": true
+}

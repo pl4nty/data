@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2016 Cumulative Update 5",
+    "downloadDescription": "Host Integration Server 2016 CU5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2016-Client-CU5-KB5012477-x64-EN.msp",
+            "url": "https://download.microsoft.com/download/c/6/a/c6af3dfe-8f6c-468e-9a07-0a4a82e12b57/HIS2016-Client-CU5-KB5012477-x64-EN.msp",
+            "size": "14188544",
+            "version": "10.0.9999.0",
+            "datePublished": "7/15/2024 4:32:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HIS2016-Server-CU5-KB5012477-x64-EN.msp",
+            "url": "https://download.microsoft.com/download/c/6/a/c6af3dfe-8f6c-468e-9a07-0a4a82e12b57/HIS2016-Server-CU5-KB5012477-x64-EN.msp",
+            "size": "22036480",
+            "version": "10.0.9999.0",
+            "datePublished": "7/15/2024 4:32:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cumulative Update 5 for Microsoft Host Integration Server 2016 contains hotfixes for issues that were fixed after the release of Host Integration Server 2016.  We recommend that you test the cumulative update before you deploy it in a production environment. \r\n\r\nThis cumulative update (CU) is a rollup update that contains the following items:\r\n<UL><LI>All previously released hotfixes for Host Integration Server 2016.</LI>\r\n<LI>Accessibility-related improvements.</LI></UL>\r\n\r\nNotes: \r\n<ul><li>This cumulative update does not contain fixes for Microsoft Enterprise Single Sign-On (SSO).  Therefore, this update does not apply to stand-alone SSO servers.</li></ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.9999.0",
+    "detailsSection_file_name": [
+        "HIS2016-Client-CU5-KB5012477-x64-EN.msp",
+        "HIS2016-Server-CU5-KB5012477-x64-EN.msp"
+    ],
+    "detailsSection_file_size": [
+        "13.5 MB",
+        "21.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "These cumulative updates require that Host Integration Server 2016, or a Host Integration 2016 Client be installed on the system.   These updates can also be applied on top of previous updates.  They are supported on the same operating systems as Host Integration Server 2016.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, and click <B>Next</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the download, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104485",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Networked Embedded Sensing Toolkit",
+    "downloadDescription": "The MSR Networked Embedded Sensing Toolkit (MSR Sense) is a collection of software tools that allow users to collect, process, archive, and visualize data from a sensor network. Last published: November 1, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msrsense-1.0.msi",
+            "url": "https://download.microsoft.com/download/2/9/1/2914e40e-a694-4693-ac1a-f70ce725490b/msrsense-1.0.msi",
+            "size": "1654272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The MSR Networked Embedded Sensing Toolkit (MSR Sense) is a collection of software tools that allow users to collect, process, archive, and visualize data from a sensor network. The current version contains: a reconfigurable microserver execution environment (miuSEE), a small library implementing signal processing and event detection algorithms, an extension to Excel 2003 to import, visualize and processing sensor data, and interface to SQL server to archive and retrieve data, and a microserver interaction console miuSIC) for users to configure and control microservers. All software is implemented in C# under visual studio 2005 and .NET framework 2.0. Please refer to http://research.microsoft.com/nec/msrsense for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "msrsense-1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52389",
+    "downloadPreload": true
+}

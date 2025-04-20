@@ -1,0 +1,145 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Intelligence Report Volume 13 (January - June 2012)",
+    "downloadDescription": "This is the thirteenth volume of the Microsoft Security Intelligence Report.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_13_Regional_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f6a2b2-f45f-45f7-b788-32d2cca48d29/Microsoft_Security_Intelligence_Report_Volume_13_Regional_Threat_Assessment_English.pdf",
+            "size": "10350374",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_13_English.pdf",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f6a2b2-f45f-45f7-b788-32d2cca48d29/Microsoft_Security_Intelligence_Report_Volume_13_English.pdf",
+            "size": "3456262",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_13_Worldwide_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f6a2b2-f45f-45f7-b788-32d2cca48d29/Microsoft_Security_Intelligence_Report_Volume_13_Worldwide_Threat_Assessment_English.pdf",
+            "size": "3064647",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_13_Key_Findings_Summary_English.pdf",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f6a2b2-f45f-45f7-b788-32d2cca48d29/Microsoft_Security_Intelligence_Report_Volume_13_Key_Findings_Summary_English.pdf",
+            "size": "1012392",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_13_Deceptive_Downloads_English.pdf",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f6a2b2-f45f-45f7-b788-32d2cca48d29/Microsoft_Security_Intelligence_Report_Volume_13_Deceptive_Downloads_English.pdf",
+            "size": "576057",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Volume 13 of the Microsoft\u00ae Security Intelligence Report provides an in-depth perspective on malicious and potentially unwanted software, software exploits, security breaches and software vulnerabilities (both in Microsoft software and in third-party software). Microsoft developed these perspectives based on detailed analysis over the past several years, with a focus on the first half of 2012.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_Security_Intelligence_Report_Volume_13_Regional_Threat_Assessment_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_13_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_13_Worldwide_Threat_Assessment_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_13_Key_Findings_Summary_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_13_Deceptive_Downloads_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "9.9 MB",
+        "3.3 MB",
+        "2.9 MB",
+        "988.7 KB",
+        "562.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the full SIR, Worldwide Threat Assessment, Key Findings Summary and Regional Threat Assessments.  All are available as a PDF.\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        },
+        {
+            "title": "microsoft Security Intelligence Report",
+            "url": "http://www.microsoft.com/security/sir/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34955",
+    "downloadPreload": true
+}

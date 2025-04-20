@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "The Manycore Shift White Paper",
+    "downloadDescription": "Microsoft Parallel Computing Initiative Ushers Computing into the Next Era",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TheManycoreShiftWhitePaper.xps",
+            "url": "https://download.microsoft.com/download/c/f/8/cf822ad4-e824-4396-8b12-9f0927ae94e3/TheManycoreShiftWhitePaper.xps",
+            "size": "695106",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TheManycoreShiftWhitePaper.pdf",
+            "url": "https://download.microsoft.com/download/c/f/8/cf822ad4-e824-4396-8b12-9f0927ae94e3/TheManycoreShiftWhitePaper.pdf",
+            "size": "811092",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TheManycoreShiftWhitePaper.docx",
+            "url": "https://download.microsoft.com/download/c/f/8/cf822ad4-e824-4396-8b12-9f0927ae94e3/TheManycoreShiftWhitePaper.docx",
+            "size": "1155470",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The computational power of manycore processors, new programming models and platform, and advanced research in usability promise to change the way people interact with computers. This paper describes how Microsoft and industry partners are working together to enable businesses, software and hardware vendors, and individuals to take advantage of the \u201cmanycore shift\u201d.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TheManycoreShiftWhitePaper.xps",
+        "TheManycoreShiftWhitePaper.pdf",
+        "TheManycoreShiftWhitePaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "678.8 KB",
+        "792.1 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the Word document, you'll need a copy of Microsoft Office Word 2007, or Microsoft Word 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.<br />\nTo view the PDF file, you'll need a PDF reader, such as the free Adobe Acrobat Reader.<br />\nTo view the XPS file, you'll need Windows Vista, or the Microsoft XML Paper Specification Essentials Pack.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download this white paper in your choice of the following formats: Microsoft Word document (DOCX), PDF file or XPS file.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=941b3470-3ae9-4aee-8f43-c6bb74cd1466"
+        },
+        {
+            "title": "microsoft XML Paper Specification Essentials Pack",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=b8dcffdd-e3a5-44cc-8021-7649fd37ffee"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17702",
+    "downloadPreload": true
+}

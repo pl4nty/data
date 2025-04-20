@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Services on server install workseet for traditional SharePoint Server 2013 topologies",
+    "downloadDescription": "This worksheet helps you plan for and indicate which services will run on farm servers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "services-on-server-install-worksheet.xlsx",
+            "url": "https://download.microsoft.com/download/4/4/e/44e496d9-af98-4ca4-a74d-ccb62728956f/services-on-server-install-worksheet.xlsx",
+            "size": "14792",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "As you plan a SharePoint environment, you'll consider the services that you plan to run on various web servers or application servers in a traditional topology. Use this worksheet to record the services that you plan to assign to servers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "services-on-server-install-worksheet.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "14.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30367",
+    "downloadPreload": true
+}

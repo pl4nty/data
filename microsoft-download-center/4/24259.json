@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Micro Framework 4.0 Porting Kit",
+    "downloadDescription": "The .NET Micro Framework Porting Kit allows you to adapt the Version 4.0 runtime to your specific hardware in the supported toolchains",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NETMF4PK.zip",
+            "url": "https://download.microsoft.com/download/8/d/d/8dd3b0a4-71f0-44f4-bc5b-881cc9608ff6/NETMF4PK.zip",
+            "size": "41305330",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:15:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nThe Microsoft\u00ae .NET Micro Framework is a platform that enables developers to more quickly develop embedded systems that are smart, securely connected, and easier to manage. With the version 4.0 release, the .NET Micro Framework enables developers to create powerful embedded systems that are more securely connected through a variety of wired and wireless protocols.   The 4.0 release is also the first release under the Apache 2.0 license.\r\n\r\nWith this Porting Kit you will be able to create, modify, and build Micro Framework firmware images that are customized to your needs. Using the Solution Wizard, you can select the right set of features, libraries, and memory settings to provide the optimal image size for your needs. You can then write new drivers, leverage native code routines through interop, and deploy them on your device hardware.\r\nTo get started, please read the introductory material in the Porting Kit documentation. The documentation contains a lot of useful information on the Micro Framework architecture, build system, driver model, libraries, and how you these are used to create a new firmware image for your hardware. In addition, we are extending our very successful newsgroups to include groups specific to porting as well as the SDK so that you can exchange information with other engaged in the same process.  You can find links to these newsgroups and other useful information at http://microsoft.com/netmf. \r\n\r\nThe Micro Framework Porting Kit supports the adaptation of the platform to specific hardware for processors using the RealView, Keil and GCC toolchains for the ARM processors (including Cortex) and the VisualDSP++ toolchain for the ADI Blackfin processors.  This package comes with sample port for the following development boards:\r\n<ul>\r\n<li>     Atmel SAM9261_EK development board (Atmel AT91SAM9261 processor) </li>\r\n<li>     Atmel SAM9RL64_EK development board (Atmel AT91SAM9RL64 processor) </li>\r\n<li>     Atmel SAM7X_EK development board (with the latest 512KB flash processor part)</li>\r\n<li>     Embedded Artists EA_LPC2478 (NXP LPC2478 processor)</li>\r\n<li>     Phytec Rapid Development Kit PCM023 (NXP LPC2294 processor)</li>\r\n<li>     Crossbow MOTE2 platform from Crossbow (Marvell PXA271 processor)</li>\r\n<li>     Freescale i.MXS development kit (Freescale MC9328MXS processor) </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "NETMF4PK.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: Windows Server 2008; Windows Vista; Windows XP; Windows 7\r\nSupported Tool Chains: ARM RVDS 3.1, Keil MDK 3.1,  GCC (CodeSourcery Distribution based on 4.2.1 version) ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\r\nSimply run the installer package named 'MicroFrameworkPK.msi' found in the Zip file. \r\nOnce Installed, use the product key found in the Zip file in a file named 'Product Key for V3.0 Porting Kit'  \r\nInstall the Service Pack of this release: <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=55ac4944-be1e-4fd6-850f-1ccd602d4816\">NETMF Porting Kit v 3.0 SP1</a>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24259",
+    "downloadPreload": true
+}

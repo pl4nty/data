@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Origami Experience Pack",
+    "downloadDescription": "Origami Experience Pack is a combination of three programs that make your Ultra-Mobile PC (UMPC) running Windows Vista even easier to use. Upgrade your UMPC to Windows Vista, and then install Origami Experience Pack.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OrigamiExperiencePack.msi",
+            "url": "https://download.microsoft.com/download/7/9/2/792053f2-2557-4ae2-87c4-00f72be0b42f/OrigamiExperiencePack.msi",
+            "size": "15830528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Origami Experience Pack contains these three programs for an Ultra-Mobile PC (UMPC) running Windows Vista:<br />\n<br />\n<b>Origami Experience</b><br />\nAccess your music, videos, pictures, and favorite programs.<br />\n<br />\n<b>Sudoku</b><br />\nPlay this popular game using a touch screen.<br />\n<br />\n<b>Touch Settings</b><br />\nEasily view and interact with the touch screen on a UMPC.<br />\n<br />\nAnd, don\u2019t forget to download Microsoft Reader, so you can read e-books on your UMPC. It\u2019s available separately for download. See <b>Related Resources</b> on the right side of this page to download Microsoft Reader.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OrigamiExperiencePack.msi"
+    ],
+    "detailsSection_file_size": [
+        "15.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>Supported Hardware:</b> UMPC</li><br />\n<li>100 MB of available hard disk space</li><br />\n<li>One of these language editions of Windows Vista: English, Korean, German, Japanese, Chinese (Simplified), Chinese (Traditional), French, Italian, Spanish</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. Tap <b>Download</b> in the upper-right area of this page. <br />\n<br />\n2. Do one of the following: <br />\n<ul><li>To start installing Origami Experience Pack immediately, tap <b>Download</b>, tap <b>Save</b>, tap <b>Run</b>, and then follow the instructions.</li><br />\n<li>To install Origami Experience Pack later, tap <b>Save</b>, and then select a location on your hard disk where you want to copy the installation package.</li></ul><br />\nAfter installation is completed, tap the <b>Start</b> menu, tap <b>All Programs</b>, tap <b>Microsoft Origami Experience Pack</b>, and then tap a program to run it.",
+    "relatedResourcesSection": [
+        {
+            "title": "origami Project Community Website",
+            "url": "http://go.microsoft.com/fwlink?LinkID=56723"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6546",
+    "downloadPreload": true
+}

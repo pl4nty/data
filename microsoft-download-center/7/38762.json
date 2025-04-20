@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-Specific Update for Spain",
+    "downloadDescription": "This white paper describes the country-specific update that is released for Spain in Cumulative Update 4 (CU\u20134) for Microsoft Dynamics AX 2012. See Microsoft Knowledge Base article 2765124 for hotfix download information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country specific update for Spain_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/8/0/4/804eb346-c1d4-4b06-88cc-55c1224f063b/Country specific update for Spain_AX2012.pdf",
+            "size": "323561",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:34:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes an update to Microsoft Dynamics AX 2012 that is included in the Cumulative Update 4 (CU\u20134) and that is specific to users in Spain. For more information that is specific to Spain, refer to the Microsoft Dynamics AX Help on TechNet. Information that is specific to Spain includes (ESP) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country specific update for Spain_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "316.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38762",
+    "downloadPreload": true
+}

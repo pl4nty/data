@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project 2010 \u201cIgnite\u201d training slide presentations",
+    "downloadDescription": "PowerPoint slides for a three-day training program to prepare EPM professionals for deployment, operations and customization of Project Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Project2010IgniteTraining.zip",
+            "url": "https://download.microsoft.com/download/e/e/b/eeb2cff4-2a32-417e-93c0-2135515133b6/Project2010IgniteTraining.zip",
+            "size": "26678522",
+            "version": "2.0",
+            "datePublished": "4/15/2024 3:14:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains 13 Microsoft PowerPoint presentations from the Project 2010 \u201cIgnite\u201d training program. The presentations included in this download are:\r\n<ul>\r\n<li>Project 2010 Ignite Introduction</li>\r\n<li>Project 2010 Overview</li>\r\n<li>Project 2010 Planning, Design, and Deployment</li>\r\n<li>Project 2010 Upgrade and Migration</li>\r\n<li>Project 2010 Demand Management</li>\r\n<li>Project 2010 Portfolio Strategy</li>\r\n<li>Project 2010 Timesheets and Statusing</li>\r\n<li>Project 2010 Reporting, Part 1</li>\r\n<li>Project 2010 Reporting, Part 2</li>\r\n<li>Project 2010 Administration</li>\r\n<li>Project 2010 Operations</li>\r\n<li>Project 2010 Developer</li>\r\n<li>Project 2010 Ignite Conclusion</li>\r\n</ul>\r\nThe Project 2010 \u201cIgnite\u201d training program is a three-day, instructor-led training program for Enterprise Project Management 2007 partners and the Microsoft field in technical roles. The goal for the Project 2010 \"Ignite\" Program is to prepare EPM professionals for deployment, operations, and customization of Project Server 2010, hence to build skilled EPM partners by RTM.\r\nThe \"Ignite\" curriculum is targeted towards EPM consultants, IT Professionals, Admin Professionals and Developers that have experience deploying, operating, and customizing Project Server 2007.  Content will be technical and will range from 300 to 400 levels (Experienced to Advanced/Expert). With this in mind, the \"Ignite\" content will not be designed to cover all Project Server functionality, only the new functionality of Project Server 2010 will be presented.  In other words the goal is to help better understand the differences, deltas and new features. The content will be a combination of instructor-led training, product demonstrations and hands-on labs. The Project 2010 \"Ignite\" training will be delivered in English by EPM experts from Microsoft.\r\nYou can view video presentations of each Ignite training mode on the <a href=\"http://www.microsoft.com/project/en/us/quick-start-training.aspx\">Microsoft Project 2010 Ignite Online Recordings page in the Project 2010 web site</a>.  \r\nFor additional technical information referenced in the slides, see the <a href=\"http://technet.microsoft.com/en-us/projectserver/ee263909.aspx\">Project Server 2010 TechCenter (TechNet)</a> or the <a href=\"http://msdn.microsoft.com/en-us/office/ee695847.aspx\">Project 2010 Resource Center (MSDN)</a>. \r\nFor more information about Project 2010, see the <a href=\"http://www.microsoft.com/project/2010\">Project 2010 Web site</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Project2010IgniteTraining.zip"
+    ],
+    "detailsSection_file_size": [
+        "25.4 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "To download and read this file, you must have Microsoft Office PowerPoint 2007 or <a href=\"http://go.microsoft.com/fwlink/?LinkId=181980\">PowerPoint Viewer 2007</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to transfer the compressed file to your computer. Decompress the file, then you can open the individual .pptx files. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9830",
+    "downloadPreload": true
+}

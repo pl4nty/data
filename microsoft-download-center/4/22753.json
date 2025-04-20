@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Content Deployment in SharePoint Server 2010",
+    "downloadDescription": "This model describes the content deployment feature in Microsoft SharePoint Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ContentDeployment_SharePointServer2010.pdf",
+            "url": "https://download.microsoft.com/download/c/e/3/ce3d4b96-ac35-4c42-82ba-990db30d99cb/ContentDeployment_SharePointServer2010.pdf",
+            "size": "174081",
+            "version": "2",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContentDeployment_SharePointServer2010.xps",
+            "url": "https://download.microsoft.com/download/c/e/3/ce3d4b96-ac35-4c42-82ba-990db30d99cb/ContentDeployment_SharePointServer2010.xps",
+            "size": "329885",
+            "version": "2",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ContentDeployment_SharePointServer2010.vsd",
+            "url": "https://download.microsoft.com/download/c/e/3/ce3d4b96-ac35-4c42-82ba-990db30d99cb/ContentDeployment_SharePointServer2010.vsd",
+            "size": "1426432",
+            "version": "2",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model includes the following items:\r\n*Overview of content deployment\r\n*Description of content deployment paths and jobs\r\n*When to use content deployment\r\n*Alternatives to content deployment\r\n*Common content deployment toplogies\r\n*Illustration and explanation of the overall content deployment process\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "ContentDeployment_SharePointServer2010.pdf",
+        "ContentDeployment_SharePointServer2010.xps",
+        "ContentDeployment_SharePointServer2010.vsd"
+    ],
+    "detailsSection_file_size": [
+        "170.0 KB",
+        "322.2 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: Windows Server 2003; Windows Server 2008; Windows Vista; Windows XP; Windows Vista; Windows 7;\r\nTo edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the Visio 2007 Viewer to view the model. \r\nTo view the PDF version of the model, you must have a PDF viewer, such as Adobe Reader\r\nTo view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or XPS Essentials Pack.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click Download, and then save the file to your computer. Use an appropriate application to open the file.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22753",
+    "downloadPreload": true
+}

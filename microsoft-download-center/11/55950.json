@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Manager 2016 SP1 (Microsoft BHOLD Suite)",
+    "downloadDescription": "Microsoft Identity Manager BHOLD Suite",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BholdReporting 6.0.62.0_Release.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/BholdReporting 6.0.62.0_Release.msi",
+            "size": "2105344",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BholdAttestation 6.0.62.0_Release.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/BholdAttestation 6.0.62.0_Release.msi",
+            "size": "3825664",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BholdFIMIntegration 6.0.62.0_Release.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/BholdFIMIntegration 6.0.62.0_Release.msi",
+            "size": "4796416",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BholdModelGenerator 6.0.62.0_Release.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/BholdModelGenerator 6.0.62.0_Release.msi",
+            "size": "4321280",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BholdCore 6.0.62.0_Release.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/BholdCore 6.0.62.0_Release.msi",
+            "size": "5279744",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BholdAnalytics 6.0.62.0_Release.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/BholdAnalytics 6.0.62.0_Release.msi",
+            "size": "5005312",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AccessManagementConnector.msi",
+            "url": "https://download.microsoft.com/download/f/4/0/f401c4c0-751f-4b8d-a841-ee7979a5c658/AccessManagementConnector.msi",
+            "size": "589824",
+            "version": "6.0.62.0",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BHOLD Suite extends these capabilities of MIM 2016 SP1 by adding role-based access control to MIM 2016 SP1, enabling organizations to define user roles and to control access to sensitive data and applications in a way that is appropriate for those roles. BHOLD Suite includes services and tools that simplify the modeling of the role relationships within the organization, map those roles to rights, and to verify that the role definitions and associated rights are correctly applied to users. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.62.0",
+    "detailsSection_file_name": [
+        "BholdReporting 6.0.62.0_Release.msi",
+        "BholdAttestation 6.0.62.0_Release.msi",
+        "BholdFIMIntegration 6.0.62.0_Release.msi",
+        "BholdModelGenerator 6.0.62.0_Release.msi",
+        "BholdCore 6.0.62.0_Release.msi",
+        "BholdAnalytics 6.0.62.0_Release.msi",
+        "AccessManagementConnector.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "3.6 MB",
+        "4.6 MB",
+        "4.1 MB",
+        "5.0 MB",
+        "4.8 MB",
+        "576.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/><B>Minimum Requirements </B><BR/>\r\n<UL>\r\n<LI>Microsoft Identity Manager 2016 SP1 (MIM2016SP1) Service</LI>\r\n<LI>Microsoft .NET 4.0 Framework</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<LI><a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-bhold-history\">Microsoft BHOLD Suite Release History</a></LI>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55950",
+    "downloadPreload": true
+}

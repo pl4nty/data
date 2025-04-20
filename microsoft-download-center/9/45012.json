@@ -1,0 +1,157 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Server 2015",
+    "downloadDescription": "Download Microsoft Dynamics CRM Server 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Server-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/1/3/b/13b7af09-f921-4fd5-81d0-9f58697c2003/CRM2015-Server-ENU-amd64.exe",
+            "size": "346314464",
+            "version": "07.00.0000.3543",
+            "datePublished": "7/15/2024 3:56:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        }
+    ],
+    "detailsSection": "Download Microsoft Dynamics CRM Server 2015. This download also includes Microsoft Dynamics CRM Reporting Extensions.<br /><br/>\r\nAfter the download is complete, run Microsoft Dynamics CRM Server Setup. During the setup, you may insert a valid commercial product key or use one of the following 90-day trial keys. <br/><br/>\n<ul><li>Microsoft Dynamics CRM Workgroup Server 2015 (5 CAL limit): XY8GN-DF2MC-FV482-YM9YP-HH6H2 </li>\n<li>Microsoft Dynamics CRM Server 2015 (no CAL limit): C6BDP-T6NK9-8TXJP-36WTB-TXW7V </li></ul><br/><br/>\r\nNotice that, if you use a 90-day trial key, you can enter a valid commercial product key at any time during the trial period to continue to use the product.<br/><br/>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "07.00.0000.3543",
+    "detailsSection_file_name": [
+        "CRM2015-Server-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "330.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For the latest information about Microsoft Dynamics CRM 2015 hardware and software requirements, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=512318\">Microsoft Dynamics CRM 2015 system requirements and required technologies</a>. <br/>\r\nFor Microsoft Dynamics CRM Server 2015 installation instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=512319\">Install or upgrade Microsoft Dynamics CRM Server 2015</a>.\n\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>. </li>\n<li>When the File Download dialog box appears, click <b>Save</b> to save the file to your computer. </li>\n<li>When you're ready to install the product, double-click the executable file, and then follow the instructions on the screen. </li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "install or upgrade Microsoft Dynamics CRM Server",
+            "url": "http://technet.microsoft.com/en-us/library/hh699706(v=crm.7).aspx"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2015 Readme",
+            "url": "http://www.microsoft.com/en-us/dynamics/crm-customer-center/Microsoft_Dynamics_CRM_2015_CRM_Online_Readme.htm"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2015 SDK",
+            "url": "http://msdn.microsoft.com/en-us/library/hh547453(v=crm.7).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45012",
+    "downloadPreload": true
+}

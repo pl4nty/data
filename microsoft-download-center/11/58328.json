@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Stack: Sample Emails for Customers",
+    "downloadDescription": "Example on how an engaging email can look ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sample email for customers.zip",
+            "url": "https://download.microsoft.com/download/f/9/2/f923a236-dd24-4523-abe6-d3086276633d/Sample email for customers.zip",
+            "size": "260468",
+            "version": "1.0",
+            "datePublished": "7/15/2023 3:02:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Example on how an engaging email can look ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Sample email for customers.zip"
+    ],
+    "detailsSection_file_size": [
+        "254.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2023",
+    "systemRequirementsSection": "Windows 7, 8 or 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "download and install",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58328",
+    "downloadPreload": true
+}

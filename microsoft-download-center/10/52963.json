@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Cloud Connector Edition",
+    "downloadDescription": "Skype for Business Cloud Connector Edition is software used to connect customer\u2019s telephony environments with Office 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CloudConnector.msi",
+            "url": "https://download.microsoft.com/download/e/d/7/ed79e40e-e0ac-490d-8667-7c68546fd810/CloudConnector.msi",
+            "size": "1695744",
+            "version": "2.1.0",
+            "datePublished": "7/15/2024 3:09:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Skype for Business Cloud Connector Edition is a set of packaged virtual machines for deployment on-premises which connect a customer\u2019s existing Public Switched Telephone Network (PSTN) service provider circuits with Skype for Business Cloud PBX operating in Office 365.   This allows for the user\u2019s phone capability to be managed out of Office 365 while their phone calls continue to use their existing phone number, circuits and PSTN provider contract.    \r\n\r\nMicrosoft respects your privacy, please read the <a href=\"https://go.microsoft.com/fwlink/?LinkId=510643\" >\u201cSkype for Business Privacy Statement\u201d</a> to learn how Cloud Connector collects and uses data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1.0",
+    "detailsSection_file_name": [
+        "CloudConnector.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><ul><li> Windows Server 2012 R2 Datacenter Edition</li></ul></ul>\r\n<br/>\r\n<ul>\r\n<li><b>Physical Requirements</b></li></ul>\r\n<ul><ul><li> For the Cloud Connector Edition requirements, please see <a href=\"https://technet.microsoft.com/en-us/library/mt605227.aspx\" >\u201cPlan for Skype for Business Cloud Connector Edition\u201d</a></li></ul>\r\n</ul> \r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Datacenter"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<ol>\r\n<li>Download the file by clicking the Download button and saving the file to the hard disk of the machine you wish to run Skype for Business Cloud Connector Edition on. </li>\r\n<li>Double-click the program file on your hard disk to start the Setup program </li>\r\n<li>To configure Cloud Connector Edition with Cloud PBX in your Office 365 tenant, please see <a href=\"https://technet.microsoft.com/en-us/library/mt605227.aspx\" >\u201cConfigure Skype for Business Cloud Connector edition\u201d</a>  </li>\r\n</ol>\r\n\r\n<b>To uninstall this download: </b>\r\n<ol>\r\n<li>On the Start menu, point to Settings and then click Control Panel</li>\r\n<li>Double-click Add/Remove Programs </li>\r\n<li>In the list of currently installed programs, select Skype for Business Cloud Connector Edition and then click Remove or Add/Remove. If a dialog box appears, follow the instructions to remove the program </li>\r\n<li>Click Yes or OK to confirm that you want to remove the program </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52963",
+    "downloadPreload": true
+}

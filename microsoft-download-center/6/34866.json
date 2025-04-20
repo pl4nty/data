@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 Essentials Assessment and Deployment Kit",
+    "downloadDescription": "The Windows\u00ae Server 2012 Essentials Assessment and Deployment Kit (ADK) is a collection of tools and binaries that you can use to customize, assess, and deploy Windows Server 2012 Essentials on new computers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2012 Essentials Assessment and Deployment Kit_EULA 8-28-12.rtf",
+            "url": "https://download.microsoft.com/download/4/7/d/47daa480-604a-4dc0-a185-1e735ab4ccd0/Windows Server 2012 Essentials Assessment and Deployment Kit_EULA 8-28-12.rtf",
+            "size": "196983",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WindowsServer2012Essentials-ADK.iso",
+            "url": "https://download.microsoft.com/download/4/7/d/47daa480-604a-4dc0-a185-1e735ab4ccd0/WindowsServer2012Essentials-ADK.iso",
+            "size": "4046741504",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows\u00ae Server 2012 Essentials Assessment and Deployment Kit (ADK) is a collection of tools and binaries that you can use to customize, assess, and deploy Windows Server 2012 Essentials on new computers.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows Server 2012 Essentials Assessment and Deployment Kit_EULA 8-28-12.rtf",
+        "WindowsServer2012Essentials-ADK.iso"
+    ],
+    "detailsSection_file_size": [
+        "192.4 KB",
+        "3.8 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Applicable\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 Essentials"
+    ],
+    "installInstructionSection": "Please download and save the Windows Server 2012 Essentials Assessment and Deployment Kit to your local hard disk. You must review the  <a href=\"http://download.microsoft.com/download/4/7/D/47DAA480-604A-4DC0-A185-1E735AB4CCD0/Windows Server 2012 Essentials Assessment and Deployment Kit_EULA 8-28-12.rtf\">license terms</a>.  You must download, read, and agree to the enclosed license terms before installing and using the software.<br/> <br/>\r\n\r\nFor more information, please see the following: <br/>\r\n<a href=\"http://go.microsoft.com/fwlink/p/?LinkId=249124\">Windows Server 2012 Essentials ADK documentation</a><br/>\r\n<a href=\"http://technet.microsoft.com/en-us/sbs/jj159331\">Windows Server 2012 Tech Center</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34866",
+    "downloadPreload": true
+}

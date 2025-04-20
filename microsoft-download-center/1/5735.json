@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2010 How-to Training Tool",
+    "downloadDescription": "The Lync 2010 How-to provides customizable How-to content and short training videos",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync2010_HowTo_Download.zip",
+            "url": "https://download.microsoft.com/download/b/b/6/bb6b492e-36b8-4549-9d29-2ba521035f05/Lync2010_HowTo_Download.zip",
+            "size": "37630459",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Lync How-to Training Tool provides step-by-step instructions and short videos for common Lync tasks. The How-to training tool content can be fully customized by editing a rolodex.xml file that is provided with the How-to download package. Categories, subcategories, and topic content can be added, removed or modified. Videos can be easily added or removed from topics. In addition, the How-to training tool provides the capability to customize URLs to Related Links, Training, and Feedback. It also enables you to customize the branding so you can include the branding of your organization. The How-to training tool can be implemented as an HTML or SilverLight solution on your Web site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync2010_HowTo_Download.zip"
+    ],
+    "detailsSection_file_size": [
+        "35.9 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "The How-to application is delivered as a web solution. Ensure that your system meets the following requirements before you deploy the How-to Training Tool. If you are implementing the SilverLight version of the How-to, the desktop client must have a Web Browser with the SilverLight 2 client or greater installed. The host server must have a web server configured to host Microsoft .NET sites. NOTE: Silverlight is a cross-browser, cross-platform implementation of the Microsoft .NET Framework for building and delivering the next generation of media experiences and Rich Interactive Applications (RIA) for the web. It runs in all popular browsers, including Windows Internet Explorer, Mozilla Firefox, Apple Safari, and Opera.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the Lync 2010 How-to Training Tool package and then follow the instructions provided in the Lync 2010 How-to Training Tool Admininistrator's Guide, which is included in the download package.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5735",
+    "downloadPreload": true
+}

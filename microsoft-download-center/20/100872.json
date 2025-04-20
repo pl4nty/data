@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "BTP Test Tool",
+    "downloadDescription": "Tool for testing bluetooth radios and the bluetooth driver stack.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BluetoothTestPlatformPack-1.14.0.msi",
+            "url": "https://download.microsoft.com/download/e/e/e/eeed3cd5-bdbd-47db-9b8e-ca9d2df2cd29/BluetoothTestPlatformPack-1.14.0.msi",
+            "size": "43446272",
+            "version": "1.14.0",
+            "datePublished": "7/15/2024 4:21:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tool for testing bluetooth radios and the bluetooth driver stack.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.14.0",
+    "detailsSection_file_name": [
+        "BluetoothTestPlatformPack-1.14.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "41.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Instructions can be found in the ReadMe included in the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100872",
+    "downloadPreload": true
+}

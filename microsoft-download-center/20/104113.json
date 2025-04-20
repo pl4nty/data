@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Connector for Oracle V1.2",
+    "downloadDescription": "Download the Microsoft Connector for Oracle V1.2 that provide additional value for SQL Server Integration Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSSISOracleConnector-SQL22-x86.msi",
+            "url": "https://download.microsoft.com/download/1/7/e/17ea1538-4eaa-4f1a-95fe-6f62dc944acf/MicrosoftSSISOracleConnector-SQL22-x86.msi",
+            "size": "9162752",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:31:11 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftSSISOracleConnector-SQL22-x64.msi",
+            "url": "https://download.microsoft.com/download/1/7/e/17ea1538-4eaa-4f1a-95fe-6f62dc944acf/MicrosoftSSISOracleConnector-SQL22-x64.msi",
+            "size": "17698816",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:31:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSSISOracleConnector-SQL19-x86.msi",
+            "url": "https://download.microsoft.com/download/1/7/e/17ea1538-4eaa-4f1a-95fe-6f62dc944acf/MicrosoftSSISOracleConnector-SQL19-x86.msi",
+            "size": "9121792",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:31:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSSISOracleConnector-SQL19-x64.msi",
+            "url": "https://download.microsoft.com/download/1/7/e/17ea1538-4eaa-4f1a-95fe-6f62dc944acf/MicrosoftSSISOracleConnector-SQL19-x64.msi",
+            "size": "17600512",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:31:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b> Microsoft Connector for Oracle V1.2</b> - The Oracle source and destination components are written to achieve optimal performance when loading data into Oracle or unloading data from Oracle in the context of Microsoft SSIS.<br />\r\n<br />\r\nMicrosoft Connector for Oracle V1.2 is a minor release. It supports SQL Server 2019/2022 Integration Services and includes bug fixes and support for updated Oracle product releases. <br/> <br />\r\nThe following changes and enhancements were made:\r\n<ul>\r\n<li>Microsoft Connector for Oracle will not be included in SSDT. To use Microsoft Connector for Oracle in SSDT, you need to install it separately.<br/></li>\r\n<li>Microsoft Connector for Oracle does not support the version lower than 15.0.4003.23 in SQL Server 2019. Please installed the latest CU patch for SQL Server 2019 in order to use Microsoft Connector for Oracle. Link for <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=100809\">SQL Server 2019 CU1</a><br/></li>\r\n<li>Bug fix - Fixed ODBC incorrect binding when output column sequence is different from external column sequence.<br/></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "MicrosoftSSISOracleConnector-SQL22-x86.msi",
+        "MicrosoftSSISOracleConnector-SQL22-x64.msi",
+        "MicrosoftSSISOracleConnector-SQL19-x86.msi",
+        "MicrosoftSSISOracleConnector-SQL19-x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.7 MB",
+        "16.9 MB",
+        "8.7 MB",
+        "16.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b> Required operating environment  </b>: Enterprise or Developer edition of SQL Server 2019 Integration Services, SQL Server 2022 Integration Services </li></ul>\r\n\r\n<ul><li><b> Supported Oracle databases </b>: Oracle Database 10.x; Oracle Database 11.x; Oracle Database 12c; Oracle Database 18c; Oracle Database 19c; Oracle Database 21c</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ul><li>Download the appropriate file by clicking the correct DOWNLOAD button as outlined below, then run the downloaded file to install that package.<br></br>\r\n</li></ul>\r\n\r\n<ul><li><b>Microsoft Connector for Oracle V1.2</b>\r\n    The Microsoft Connector for Oracle V1.2 is a set of managed components for transferring data from or to an Oracle database. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2019 Integration Services, SQL Server 2022 Integration Services and will only operate in those environments. To install the component, run the platform-specific installer for x86 or x64 computers respectively. Read the installation topic in the Help file for installation prerequisites and additional information.\r\n    <br></br>\r\n    SSIS 2019 x86 Package (MicrosoftSSISOracleConnector-SQL19-x86.msi)  \r\n    <br></br>\r\n    SSIS 2019 x64 Package (MicrosoftSSISOracleConnector-SQL19-x64.msi)\r\n    <br></br>\r\n    SSIS 2022 x86 Package (MicrosoftSSISOracleConnector-SQL22-x86.msi)  \r\n    <br></br>\r\n    SSIS 2022 x64 Package (MicrosoftSSISOracleConnector-SQL22-x64.msi)\r\n</li></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Connector for Oracle V1.0 ",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=58228"
+        },
+        {
+            "title": "microsoft Connector for Oracle V1.1",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=104023"
+        },
+        {
+            "title": "attunity v4.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=52950"
+        },
+        {
+            "title": "attunity v5.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=55179"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104113",
+    "downloadPreload": true
+}

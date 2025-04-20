@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2016 Management Pack for UNIX and Linux Operating Systems ",
+    "downloadDescription": "The Management Packs for UNIX and Linux Operating Systems enable discovering, monitoring, and managing UNIX and Linux computers with System Center Operations Manager.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center 2016 MP for Unix and Linux.msi",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/Microsoft System Center 2016 MP for Unix and Linux.msi",
+            "size": "524242944",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPUXMPGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/HPUXMPGuide.doc",
+            "size": "566272",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SolarisMPGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/SolarisMPGuide.doc",
+            "size": "745984",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLESMPGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/SLESMPGuide.doc",
+            "size": "926720",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AIXMPGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/AIXMPGuide.doc",
+            "size": "708608",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHELMPGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/RHELMPGuide.doc",
+            "size": "946688",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UniversalLinuxMPGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/3/f73e4510-453b-4856-8969-fcfe58bdec34/UniversalLinuxMPGuide.doc",
+            "size": "458240",
+            "version": "7.6.1203.0",
+            "datePublished": "9/20/2024 9:40:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SCOM 2016 has been updated to utilize a key-size of 3072 for communication with Linux workloads monitored by SCOM. This enhancement aligns SCOM 2016 with modern cryptographic standards, enhancing the security posture of communication channels between SCOM and monitored Linux systems and ensure compatibility with Linux agent >=1.9.0-0.\r\n<br/>\r\nIt's essential to apply <a href='https://support.microsoft.com/en-us/topic/system-center-operations-manager-2019-and-2022-now-support-crypto-policies-in-fips-mode-for-monitoring-linux-workloads-kb-5037360-a8529afb-d34a-4439-9282-0572958a129f'>this</a> hotfix in addition to updating Linux/Unix MPs.\r\n<br/><br/>\r\n\u200bThe UNIX and Linux Operating Systems Management Packs enable discovering, monitoring, and managing UNIX and Linux computers with System Center 2016 Operations Manager. They provide both proactive and reactive monitoring of UNIX and Linux operating systems. The management packs monitor components such as processes, resources, and server agents. The monitoring provided by the management packs includes availability and configuration monitoring, performance data collection, and default thresholds. You can integrate the monitoring of UNIX and Linux components into your service-oriented monitoring scenarios. In addition to health monitoring capabilities, the management packs include reports, diagnostics, tasks, and views that enable near real-time diagnosis and resolution of detected issues. The management packs also enable the installation of the Audit Collection Services for UNIX/Linux Management Packs.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nSystem Center Management Pack for Unix and Linux Operating Systems\r\n<ul>\r\n<li> Provides monitoring of the AIX 5.3, AIX 6.1, and AIX 7 operating systems. </li>\r\n<li> Provides monitoring of the HP-UX 11iv2 and HP-UX 11iv3 operating systems. </li>\r\n<li> Provides monitoring of the Red Hat Enterprise Linux Server 4, Red Hat Enterprise Linux Server 5, Red Hat Enterprise Linux Server 6, and Red Hat Enterprise Linux 7 operating systems. </li>\r\n<li> Provides monitoring of the Red Hat Enterprise Linux 7 support on Power 8 systems with System Center 2012 Operations Manager R2. </li>\r\n<li> Provides monitoring of Solaris 9, Solaris 10, and Solaris 11 operating systems. </li>\r\n<li> Provides monitoring of SUSE Linux Enterprise Server 9, SUSE Linux Enterprise Server 10 SP1, SUSE Linux Enterprise Server 11, and SUSE Linux Enterprise Server 12 operating systems.</li>\r\n<li> Provides monitoring of CentOS 5, CentOS 6, and CentOS 7 operating systems </li>\r\n<li> Provides monitoring of Debian GNU/Linux 5, Debian GNU/Linux 6, Debian GNU/Linux 7, and Debian GNU/Linux 8 operating systems</li>\r\n<li> Provides monitoring of Oracle Linux 5, Oracle Linux 6, and Oracle Linux 7 operating systems </li>\r\n<li> Provides monitoring of Ubuntu Linux Server 10.04, 12.04, 14.04, and 16.04 operating systems </li>\r\n<li> Enables the installation of the Audit Collection Services for UNIX/Linux Management Packs </li>\r\n</ul><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.6.1203.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2016 MP for Unix and Linux.msi",
+        "HPUXMPGuide.doc",
+        "SolarisMPGuide.doc",
+        "SLESMPGuide.doc",
+        "AIXMPGuide.doc",
+        "RHELMPGuide.doc",
+        "UniversalLinuxMPGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "500.0 MB",
+        "553.0 KB",
+        "728.5 KB",
+        "905.0 KB",
+        "692.0 KB",
+        "924.5 KB",
+        "447.5 KB"
+    ],
+    "detailsSection_file_date": "9/20/2024",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\r\n<ul>\r\n<li> System Center Operations Manager 2012 through 2016.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download and install the latest Update Rollup for System Center 2016 Operations Manager</li>\r\n<li> Download and install the updated management packs </li>\r\n<li> Import the management packs for the monitored UNIX and Linux server types. </li>\r\n<li> Use the Operations Console to upgrade the UNIX and Linux agents in the Administration\\UNIX/Linux computers view.</li>\r\n</ol>\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29696",
+    "downloadPreload": true
+}

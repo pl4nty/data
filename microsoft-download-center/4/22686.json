@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Miguel de Icaza and Geoff Norton on Mono",
+    "downloadDescription": "Miguel is back to talk Mono with Geoff Norton. Many things have changed since we last talked to Miguel about the Mono project, an open-source port of the .NET Framework that runs on Windows, Linux, and the Mac. The focus is mostly about running .NET apps on the Mac.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080205IcazaNorton.zip",
+            "url": "https://download.microsoft.com/download/c/2/8/c28b19b4-5f47-4d2f-b628-ac7796e1e17b/20080205IcazaNorton.zip",
+            "size": "43545777",
+            "version": "1.0",
+            "datePublished": "2/15/2024 3:07:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Miguel de Icaza is the creator and owner of the Mono project. Mono is an open-source implementation of the .NET Framework for Linux and MacOS (as well as Windows). <br />\n<br />\nGeoff Norton is a developer for Novell working on the Mono Project. He's a founder of the Cocoa# and Objective-C# projects and is in charge of the Mac specific development for the Mono project, including a native System.Windows.Forms driver and native Gtk# support. Prior to working for Novell Geoff had been a Mono project contributor for about 3.5 years.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080205IcazaNorton.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.5 MB"
+    ],
+    "detailsSection_file_date": "2/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22686",
+    "downloadPreload": true
+}

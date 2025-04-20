@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 Migration White Papers",
+    "downloadDescription": "Read white papers for guidance on how to migrate to Microsoft SQL Server 2008 from other database products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MigrateSybaseASAtoSQLServer2008.docx",
+            "url": "https://download.microsoft.com/download/7/c/2/7c20b070-bff8-44b4-bd7d-1b03df50f924/MigrateSybaseASAtoSQLServer2008.docx",
+            "size": "82367",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MigrateSybaseASEtoSQLServer2008.docx",
+            "url": "https://download.microsoft.com/download/7/c/2/7c20b070-bff8-44b4-bd7d-1b03df50f924/MigrateSybaseASEtoSQLServer2008.docx",
+            "size": "308546",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MigrateInformixtoSQLServer2008.docx",
+            "url": "https://download.microsoft.com/download/7/c/2/7c20b070-bff8-44b4-bd7d-1b03df50f924/MigrateInformixtoSQLServer2008.docx",
+            "size": "76389",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MigrateOracletoSQLServer2008.docx",
+            "url": "https://download.microsoft.com/download/7/c/2/7c20b070-bff8-44b4-bd7d-1b03df50f924/MigrateOracletoSQLServer2008.docx",
+            "size": "290161",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MigrateMySQLtoSQLServer2008.docx",
+            "url": "https://download.microsoft.com/download/7/c/2/7c20b070-bff8-44b4-bd7d-1b03df50f924/MigrateMySQLtoSQLServer2008.docx",
+            "size": "333754",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server 2008 delivers exceptional value in database management and business intelligence causing many customers to choose SQL Server over other database solutions. The white papers available here will help you find the resources needed to migrate your data to SQL Server 2008.\r\n<br /><br />\r\n<b>Guide to Migrating from MySQL to SQL Server 2008</b><br />\r\nIn this migration guide you will learn the differences between the MySQL and SQL Server 2008 database platforms, and the steps necessary to convert a MySQL database to SQL Server.\r\n<br /><br />\r\n<b>Guide to Migrating from Oracle to SQL Server 2008</b><br />\r\nThis white paper explores challenges that arise when you migrate from an Oracle 7.3 database or later to SQL Server 2008. It describes the implementation differences of database objects, SQL dialects, and procedural code between the two platforms. The entire migration process using SQL Server Migration Assistant (SSMA) 2008 for Oracle is explained in depth, with a special focus on converting database objects and PL/SQL code.\r\n<br /><br />\r\n<b>Guide to Migrating from Informix to SQL Server 2008</b><br />\r\nThis white paper explores challenges that arise when you migrate from an Informix 11 database to SQL Server 2008. It describes the implementation differences of database objects and procedural code between the two platforms. Emulation of system functions is also discussed.\r\n<br /><br />\r\n<b>Guide to Migrating from Sybase ASA to SQL Server 2008</b><br />\r\nThis white paper explores challenges that arise when you migrate from a Sybase Adaptive Server Anywhere (ASA) database of version 9 or later to SQL Server 2008. It describes the implementation differences of database objects, SQL dialects, and procedural code between the two platforms.\r\n<br /><br />\r\n<b>Guide to Migrating from Sybase ASE to SQL Server 2008</b><br />\r\nThis white paper covers known issues for migrating Sybase Adaptive Server Enterprise database to SQL Server 2008. Instructions for handling the differences between the two platforms are included. The paper describes how SQL Server Migration Assistant, the best tool for this type of migration, can help resolve various migration issues.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MigrateSybaseASAtoSQLServer2008.docx",
+        "MigrateSybaseASEtoSQLServer2008.docx",
+        "MigrateInformixtoSQLServer2008.docx",
+        "MigrateOracletoSQLServer2008.docx",
+        "MigrateMySQLtoSQLServer2008.docx"
+    ],
+    "detailsSection_file_size": [
+        "80.4 KB",
+        "301.3 KB",
+        "74.6 KB",
+        "283.4 KB",
+        "325.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "1. Download one or more of the documents on this page.<br />\r\n2. Read them in Microsoft Word 2007 or print them.",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Migration",
+            "url": "http://www.microsoft.com/sqlserver/2008/en/us/migration.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24662",
+    "downloadPreload": true
+}

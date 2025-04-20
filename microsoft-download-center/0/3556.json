@@ -1,0 +1,177 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4 KB2468871",
+    "downloadDescription": "Update to .NET Framework 4.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP40-KB2468871-v2-IA64.exe",
+            "url": "https://download.microsoft.com/download/2/b/f/2bf4d7d1-e781-4ee0-9e4f-fdd44a2f8934/NDP40-KB2468871-v2-IA64.exe",
+            "size": "30455504",
+            "version": "KB2468871",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "NDP40-KB2468871-v2-x86.exe",
+            "url": "https://download.microsoft.com/download/2/b/f/2bf4d7d1-e781-4ee0-9e4f-fdd44a2f8934/NDP40-KB2468871-v2-x86.exe",
+            "size": "19556328",
+            "version": "KB2468871",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NDP40-KB2468871-v2-x64.exe",
+            "url": "https://download.microsoft.com/download/2/b/f/2bf4d7d1-e781-4ee0-9e4f-fdd44a2f8934/NDP40-KB2468871-v2-x64.exe",
+            "size": "28640160",
+            "version": "KB2468871",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4 update provides cumulative roll-up updates for customer reported issues found after the release of the .NET Framework 4.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2468871",
+        "name": "KB2468871"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "KB2468871",
+    "detailsSection_file_name": [
+        "NDP40-KB2468871-v2-IA64.exe",
+        "NDP40-KB2468871-v2-x86.exe",
+        "NDP40-KB2468871-v2-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "29.0 MB",
+        "18.7 MB",
+        "27.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <ul>\r\n    <li>Windows XP SP3</li>\r\n    <li>Windows Server 2003 SP2</li>\r\n    <li>Windows Vista SP1 or later</li>\r\n    <li>Windows 7</li>\r\n    <li>Windows Server 2008 (not supported on Server Core)</li>\r\n    <li>Windows 7 SP1</li>\r\n    <li>Windows Server 2008 R2 SP1</li>\r\n  </ul>\r\n  <li><b>Supported Architectures:</b></li>\r\n  <ul>\r\n    <li>x86, x64, ia64</li>\r\n  </ul>\r\n  <li><b>Hardware Requirements:</b></li>\r\n  <ul>\r\n    <li>Recommended Minimum: Pentium 1 GHz or higher with 512 MB RAM or more</li>\r\n    <li>Minimum disk space:</li>\r\n    <ul>\r\n      <li>x86 \u2013 850 MB</li>\r\n      <li>x64 \u2013 2 GB</li>\r\n    </ul>\r\n  </ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2 SP1",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\r\n  <li>Important: Make sure that your computer has the latest Windows service pack and critical updates. To find security updates, visit <a href=\"windowsupdate.microsoft.com\">Windows Update</a>.</li>\r\n  <li>On this page, locate the Download button and then click it to start the download.</li>\r\n  <li>To start the installation immediately, click Run.</li>\r\n  <li>To save the download to your computer so that you can install it later, click Save.</li>\r\n  <li>To cancel the installation, click Cancel.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio 2010 SP1",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=209902"
+        },
+        {
+            "title": ".NET Framework 4 (Web Installer)",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=186913"
+        },
+        {
+            "title": "knowledge Base Article 2468871",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=211658"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3556",
+    "downloadPreload": true
+}

@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Advanced Threat Analytics Management Pack",
+    "downloadDescription": "This management pack includes monitors and rules to effectively monitor Advanced Threat Analytics on its performance, availability, and reliability of its roles.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics.msi",
+            "url": "https://download.microsoft.com/download/7/8/2/782ef8f2-cae5-435d-8f6f-8b118c1a3278/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics.msi",
+            "size": "1130496",
+            "version": "1.9.2.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (JPN).msi",
+            "url": "https://download.microsoft.com/download/7/8/2/782ef8f2-cae5-435d-8f6f-8b118c1a3278/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (JPN).msi",
+            "size": "1064960",
+            "version": "1.9.2.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (FRA).msi",
+            "url": "https://download.microsoft.com/download/7/8/2/782ef8f2-cae5-435d-8f6f-8b118c1a3278/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (FRA).msi",
+            "size": "1089536",
+            "version": "1.9.2.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (ESN).msi",
+            "url": "https://download.microsoft.com/download/7/8/2/782ef8f2-cae5-435d-8f6f-8b118c1a3278/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (ESN).msi",
+            "size": "1064960",
+            "version": "1.9.2.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (DEU).msi",
+            "url": "https://download.microsoft.com/download/7/8/2/782ef8f2-cae5-435d-8f6f-8b118c1a3278/Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (DEU).msi",
+            "size": "1048576",
+            "version": "1.9.2.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Advanced Threat Analytics Management Pack Guide.pdf",
+            "url": "https://download.microsoft.com/download/7/8/2/782ef8f2-cae5-435d-8f6f-8b118c1a3278/Microsoft Advanced Threat Analytics Management Pack Guide.pdf",
+            "size": "861619",
+            "version": "1.9.2.0",
+            "datePublished": "7/15/2024 4:47:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Advanced Threat Analytics Management Pack</b>\r\n<b>Overview</b>\r\n<ul></ul>\r\nThe Microsoft Advanced Threat Analytics Management Pack provides comprehensive service health information for your ATA deployment.<ul></ul>\r\nThe Advanced Threat Analytics Management Pack is engineered for organizations that include servers running ATA. <ul></ul>\r\n<ul></ul>\r\n\r\n<b>Version History</b>\r\n<ul>\r\n<li>14th May 2018 - Initial release of version 1.9.1.0</li>\r\n<li>27th September 2017 - Initial release of version 1.8.1.1</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.9.2.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics.msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (JPN).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (FRA).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (ESN).msi",
+        "Microsoft System Center Management Pack for Microsoft Advanced Threat Analytics Loc (DEU).msi",
+        "Microsoft Advanced Threat Analytics Management Pack Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "841.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul></ul>\r\n<b>You have one of the following versions of System Center Operations Manager deployed: </b>\r\n<ul></ul>\r\n<li>System Center Operations Manager 2012 R2 or later</li>\r\n<ul></ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To use the English version of the Advanced Threat Analytics Management Pack, you only need to download and import the English (EN) version of the Advanced Threat Analytics Management Pack. <ul></ul>\r\nIf you want to use a localized version of the management pack, you must first download and import the English version of the management pack. Then, you must download and import the language pack for your respective language. The English version of the management pack is a prerequisite for all localized versions of the management pack. <ul></ul> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56033",
+    "downloadPreload": true
+}

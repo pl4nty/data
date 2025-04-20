@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Triggers Admin Utility (for MSMQ 3.0 on Windows XP)",
+    "downloadDescription": "Utility to manage triggers in MSMQ 3.0 in Windows XP from the command line",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "trigadm_xp.zip",
+            "url": "https://download.microsoft.com/download/6/e/6/6e6f28eb-e3c3-4327-8692-4b15cd5cf1a6/trigadm_xp.zip",
+            "size": "19905",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Utility to manage triggers for MSMQ 3.0 in Windows XP from the command line",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "trigadm_xp.zip"
+    ],
+    "detailsSection_file_size": [
+        "19.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP computers running MSMQ 3.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Unzip trigadm_XP.zip. Read the instructions in the readme file, located in the Trigadm folder.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9867",
+    "downloadPreload": true
+}

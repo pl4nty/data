@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Demo System for Probabilistic Predicates",
+    "downloadDescription": "Demo System for Probabilistic Predicates",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PPdemo_v0.11.zip",
+            "url": "https://download.microsoft.com/download/7/2/2/722c1512-4023-4df1-8578-37f54141a7aa/PPdemo_v0.11.zip",
+            "size": "1245638426",
+            "version": "March 2019",
+            "datePublished": "7/15/2024 3:07:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Demonstration system for the paper entitled Interactive Demonstration of Probabilistic Predicates, SIGMOD 2018",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2019",
+    "detailsSection_file_name": [
+        "PPdemo_v0.11.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.2 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58082",
+    "downloadPreload": true
+}

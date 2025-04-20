@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Manager 2016 SP2 for Azure AD Premium customers",
+    "downloadDescription": "Microsoft Identity Manager 2016 SP2 for Azure AD Premium customers",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Service and Portal.zip",
+            "url": "https://download.microsoft.com/download/0/c/b/0cb989d8-486d-4507-80ff-c8b7314b242a/Service and Portal.zip",
+            "size": "35138554",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Scripts.zip",
+            "url": "https://download.microsoft.com/download/0/c/b/0cb989d8-486d-4507-80ff-c8b7314b242a/Scripts.zip",
+            "size": "82133",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "readme.txt",
+            "url": "https://download.microsoft.com/download/0/c/b/0cb989d8-486d-4507-80ff-c8b7314b242a/readme.txt",
+            "size": "407",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Synchronization Service.zip",
+            "url": "https://download.microsoft.com/download/0/c/b/0cb989d8-486d-4507-80ff-c8b7314b242a/Synchronization Service.zip",
+            "size": "14419902",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Language Packs.zip",
+            "url": "https://download.microsoft.com/download/0/c/b/0cb989d8-486d-4507-80ff-c8b7314b242a/Language Packs.zip",
+            "size": "116983805",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Add-ins and extensions.zip",
+            "url": "https://download.microsoft.com/download/0/c/b/0cb989d8-486d-4507-80ff-c8b7314b242a/Add-ins and extensions.zip",
+            "size": "34289118",
+            "version": "4.6.421.0",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released Microsoft Identity Manager 2016 with Service Pack 2 for Azure AD Premium customers. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.421.0",
+    "detailsSection_file_name": [
+        "Service and Portal.zip",
+        "Scripts.zip",
+        "readme.txt",
+        "Synchronization Service.zip",
+        "Language Packs.zip",
+        "Add-ins and extensions.zip"
+    ],
+    "detailsSection_file_size": [
+        "33.5 MB",
+        "80.2 KB",
+        "407 bytes",
+        "13.8 MB",
+        "111.6 MB",
+        "32.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server, SQL Server, Sharepoint Server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msi from an administrative command prompt. Visit the documentation site for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/microsoft-identity-manager/"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release History",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102887",
+    "downloadPreload": true
+}

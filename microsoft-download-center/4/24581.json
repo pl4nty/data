@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment Guide For Microsoft Sharepoint Server 2010 Beta",
+    "downloadDescription": "The book covers information about the basic fundamentals of deploying Microsoft SharePoint Server 2010 Beta",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePtServDeployment--.doc",
+            "url": "https://download.microsoft.com/download/8/1/0/810ea793-6395-4920-aacd-64909c1b48c3/SharePtServDeployment--.doc",
+            "size": "3038720",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document supports a preliminary release of Microsoft SharePoint Server 2010 Beta. The content in the book covers information about installing, configuring, and upgrading to SharePoint Server 2010 Beta.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePtServDeployment--.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24581",
+    "downloadPreload": true
+}

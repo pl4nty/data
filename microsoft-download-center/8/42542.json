@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2013 SP1 Architecture Poster",
+    "downloadDescription": "Technical Architecture of Exchange Server 2013 Service Pack 1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ex2013SP1Architecture.pdf",
+            "url": "https://download.microsoft.com/download/0/4/a/04a69474-c580-4b71-9081-222b6fea3759/Ex2013SP1Architecture.pdf",
+            "size": "583470",
+            "version": "April 2014",
+            "datePublished": "7/15/2024 3:37:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This PDF poster illustrates the technical architecture of Exchange Server 2013 Service Pack 1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2014",
+    "detailsSection_file_name": [
+        "Ex2013SP1Architecture.pdf"
+    ],
+    "detailsSection_file_size": [
+        "569.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requires PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the PDF file and open on any system that supports PDF format",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42542",
+    "downloadPreload": true
+}

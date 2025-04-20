@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Accelerator for SWIFT - Message Pack 2015 CU2",
+    "downloadDescription": "Cumulative Update 2 for BizTalk A4Swift Message Pack 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MP_2015CU2.exe",
+            "url": "https://download.microsoft.com/download/1/6/5/165e6307-8922-4cce-86f5-2653eeaac55c/MP_2015CU2.exe",
+            "size": "587800",
+            "version": "4.3.720.0",
+            "datePublished": "7/15/2024 4:13:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This cumulative update contains hotfixes for issues that were resolved after the final, production release of Microsoft BizTalk Accelerator for SWIFT Message Pack 2015.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3143782",
+        "name": "KB3143782"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.720.0",
+    "detailsSection_file_name": [
+        "MP_2015CU2.exe"
+    ],
+    "detailsSection_file_size": [
+        "574.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2008 R2, Windows 8, Windows Server 2012, Windows 8.1, Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "The Microsoft BizTalk Accelerator for SWIFT Message Pack 2015 should be downloaded and installed successfully before installing this Cumulative Update.<br/>\r\n<br/>\r\nDownload the self-extracting archive, then execute it to extract the setup program to a temporary directory.  From the temporary location, execute the setup.exe program, which will install the update.",
+    "relatedResourcesSection": [
+        {
+            "title": "kb article KB3143782",
+            "url": "https://support.microsoft.com/en-us/kb/3143782"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51198",
+    "downloadPreload": true
+}

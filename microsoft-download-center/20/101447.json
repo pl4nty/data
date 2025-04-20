@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2019, Stress and Performance Tool",
+    "downloadDescription": "This download includes the Skype for Business Server 2019, Stress and Performance Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CapacityPlanningTool.msi",
+            "url": "https://download.microsoft.com/download/a/e/c/aec1c8c5-f986-4d28-8210-500573bc12f1/CapacityPlanningTool.msi",
+            "size": "149118976",
+            "version": "2436.33",
+            "datePublished": "7/15/2024 4:24:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Skype for Business Server 2019 Stress and Performance Tool includes tools that simplify capacity planning for Skype for Business Server 2019. The Skype for Business Server 2019 Stress and Performance Tool will help you to:\r\n<br/>\r\n<ul>\r\n<li>Simplify your hardware planning for Skype for Business Server 2019</li>\r\n<li>Provide you with increased knowledge and best practices for performance tuning</li>\r\n<li>Measure the performance of your intended Skype for Business Server 2019 deployments</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2436.33",
+    "detailsSection_file_name": [
+        "CapacityPlanningTool.msi"
+    ],
+    "detailsSection_file_size": [
+        "142.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<ul>\r\n<li><b>Your client computer must meet the following software requirements:</b></li>\r\n<ul>\r\n<li>You must have the Microsoft .NET Framework 4.7 runtime installed </li>\r\n<li>On Windows Server 2016/Windows Server 2019, Desktop Experience feature must be enabled</li>\r\n<li>You must have the Microsoft Visual C++ 2013 redistributable package (x64) installed. You can download Microsoft Visual C++ 2013 Redistributable Package (x64)  <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=40784\">here</a></li>\r\n<li>A fully configured Skype for Business Server 2019 deployment</li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\n<br />\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation. </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101447",
+    "downloadPreload": true
+}

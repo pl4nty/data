@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Developing ISV Applications using Microsoft Dynamics CRM 4.0",
+    "downloadDescription": "How to create business applications for Microsoft Dynamics CRM 4.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Dynamics CRM ISV Platform Whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/3/b/1/3b180320-6afc-465f-a3c8-1bb6b9b1403b/Dynamics CRM ISV Platform Whitepaper.pdf",
+            "size": "1927075",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics CRM supports a wide range of business applications with the essentials required for building, delivering, and maintaining these applications in a multi-tenant SaaS environment. In this white paper we explore how, with Microsoft Dynamics CRM, an ISV can quickly build, deploy, and manage line-of-business applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Dynamics CRM ISV Platform Whitepaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<OL/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM Developer Center",
+            "url": "http://msdn2.microsoft.com/en-us/dynamics/crm/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17414",
+    "downloadPreload": true
+}

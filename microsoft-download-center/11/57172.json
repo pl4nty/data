@@ -1,0 +1,218 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 2016 Operations Manager Management Pack to configure Operations Management Suite ",
+    "downloadDescription": "Microsoft System Center 2016 Operations Manager Management Pack for configuring new connections or reconfiguring existing connections to Operations Management Suite ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_PT-PT.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_PT-PT.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_TR.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_TR.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_KO.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_KO.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_NL.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_NL.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_SV.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_SV.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_FR.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_FR.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_HU.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_HU.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_JA.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_JA.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_CN.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_CN.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_RU.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_RU.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_PL.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_PL.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_CS.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_CS.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_DE.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_DE.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_TW.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_TW.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_PT-BR.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_PT-BR.mpb",
+            "size": "598016",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_ES.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_ES.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor_IT.mpb",
+            "url": "https://download.microsoft.com/download/0/3/a/03a05d33-4e93-4b9f-a4c3-73b1cf815ffd/Microsoft.SystemCenter.Advisor_IT.mpb",
+            "size": "593920",
+            "version": "7.2.12074.0 ",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Overview:</u></b><br />\r\n  <br />\r\nFor configuring new connections to Operations Management Suite with Microsoft System Center 2016 Operations Manager, you need to import \"Microsoft.SystemCenter.Advisor.mpb\" management pack available in this download. If you have already confirgured connection to OMS with SC 2016 OM then you do not need to import this management pack, however if you reconfigure your exisitng connection then you need to import this management pack.\r\n\r\nThis management pack uses the new APIs to configure connections to Operations Management Suite.\r\n\r\n<b>Feature Summary</b><br/>\r\nThis Management Pack bundle contains one Management packs: <br/>\r\n<ul>\r\n<li> Microsoft.SystemCenter.Advisor.mpb </li>\r\n</ul> <br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.12074.0 ",
+    "detailsSection_file_name": [
+        "Microsoft.SystemCenter.Advisor_PT-PT.mpb",
+        "Microsoft.SystemCenter.Advisor_TR.mpb",
+        "Microsoft.SystemCenter.Advisor_KO.mpb",
+        "Microsoft.SystemCenter.Advisor_NL.mpb",
+        "Microsoft.SystemCenter.Advisor_SV.mpb",
+        "Microsoft.SystemCenter.Advisor_FR.mpb",
+        "Microsoft.SystemCenter.Advisor_HU.mpb",
+        "Microsoft.SystemCenter.Advisor_JA.mpb",
+        "Microsoft.SystemCenter.Advisor.mpb",
+        "Microsoft.SystemCenter.Advisor_CN.mpb",
+        "Microsoft.SystemCenter.Advisor_RU.mpb",
+        "Microsoft.SystemCenter.Advisor_PL.mpb",
+        "Microsoft.SystemCenter.Advisor_CS.mpb",
+        "Microsoft.SystemCenter.Advisor_DE.mpb",
+        "Microsoft.SystemCenter.Advisor_TW.mpb",
+        "Microsoft.SystemCenter.Advisor_PT-BR.mpb",
+        "Microsoft.SystemCenter.Advisor_ES.mpb",
+        "Microsoft.SystemCenter.Advisor_IT.mpb"
+    ],
+    "detailsSection_file_size": [
+        "580.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "580.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "580.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft System Center 2016 Operations Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To configure new connections or reconfigure your exisitng connections to Operations Management Suite with Microsoft System Center 2016 Operations Manager, import \"Microsoft.SystemCenter.Advisor.mpb\" management pack available in this download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57172",
+    "downloadPreload": true
+}

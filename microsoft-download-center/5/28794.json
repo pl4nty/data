@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "EA Signature Deployment Kit",
+    "downloadDescription": "The Signature Deployment Kit offers a one-stop shop for all of your deployment and training needs. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ms-office-deployment-kit.zip",
+            "url": "https://download.microsoft.com/download/e/d/e/ede29cd2-dd0a-4a33-b89d-5b7dbbb99ad8/ms-office-deployment-kit.zip",
+            "size": "136324784",
+            "version": "1/2012",
+            "datePublished": "7/15/2024 3:28:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft offers a vast number of valuable tools and resources to help you deploy our software, train your people, and manage your investments. The Signature Deployment Kit offers a one-stop shop for all of your deployment and training needs. From physical to digital resources, you'll find all the technical and user-focused support to help you plan, prepare, pilot, deploy, and manage your software investment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1/2012",
+    "detailsSection_file_name": [
+        "ms-office-deployment-kit.zip"
+    ],
+    "detailsSection_file_size": [
+        "130.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the zip file. Once downloaded, unzip and run the \u201cwelcome.html\u201d file to view the contents.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28794",
+    "downloadPreload": true
+}

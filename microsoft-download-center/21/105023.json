@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Capacity calculator for forensic evidence in Microsoft Purview Insider Risk Management",
+    "downloadDescription": "The spreadsheet can help organizations estimate the amount of GBs needed for their forensic evidence policies configured by admins with appropriate permissions, based on the inputs, such as the number of users, devices, and virtual machines, etc.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Capacity calculator for Forensic evidence in Microsoft Purview Insider Risk Management (1).xlsx",
+            "url": "https://download.microsoft.com/download/0/9/a/09a87a42-12a7-41e2-bfad-eb4365f926b8/Capacity calculator for Forensic evidence in Microsoft Purview Insider Risk Management (1).xlsx",
+            "size": "11038",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The spreadsheet can help organizations estimate the amount of GBs needed for their forensic evidence policies configured by admins with appropriate permissions, based on the inputs, such as the number of users, devices, and virtual machines, etc.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Capacity calculator for Forensic evidence in Microsoft Purview Insider Risk Management (1).xlsx"
+    ],
+    "detailsSection_file_size": [
+        "10.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ul><li>Select the Download button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select Save or Save this program to disk.</li>\r\n<li>Select Open file or find the file on your device and open it</li></ul>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105023",
+    "downloadPreload": true
+}

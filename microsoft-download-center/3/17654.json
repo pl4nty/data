@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Remote Access Quarantine Agent (RQS.exe)",
+    "downloadDescription": "Remote Access Quarantine Agent (RQS) is a tool that works as part of Windows Server 2003 Network Access Quarantine Control, which restricts remote access clients from full access to a network until they meet the requirements of the network.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "rqs.msi",
+            "url": "https://download.microsoft.com/download/c/e/e/ceecc566-d0f8-41d6-bf8d-c86990bc8214/rqs.msi",
+            "size": "295936",
+            "version": "5.2.3790.2112",
+            "datePublished": "7/15/2024 3:10:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Resource Kit Tools include two components that work as part of Windows Server 2003 Network Access Quarantine Control: RQS and Remote Access Quarantine Client (RQC). RQS works on the remote access server as a listener component. It informs the remote access server when a client can be taken out of quarantine mode. RQC works on the remote access client as a notification component. It verifies to the listener component that the remote access client has met network requirements.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.2.3790.2112",
+    "detailsSection_file_name": [
+        "rqs.msi"
+    ],
+    "detailsSection_file_size": [
+        "289.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/><B>NOTE:  You must have Windows Server 2003 Resource Kit Tools previously installed to install this patch for RQS.exe.</B><BR/><BR/>You can install and use RQS.exe on any of the following operating systems:<UL><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/><BR/>The following are additional system requirements for RQS.exe:<UL><LI>Windows Server 2003 Resource Kit Tools installed</LI><LI>Server running Windows Server 2003 Routing and Remote Access service, configured with dial-in ports. The dial-in ports can be any valid media (for example, modem, ISDN, PPTP, or L2TP), as long as the user can make a remote access connection to the server.</LI><LI>Remote Access Policy with authorization and connection constraints for remote access connections.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. You must install this patch in the Resource Kit directory to ensure the patch is applied correctly. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&displaylang=en"
+        },
+        {
+            "title": "windows Server 2003 Resources for IT Pros",
+            "url": "http://www.microsoft.com/technet/treeview/default.asp?url=/technet/prodtechnol/windowsserver2003/default.asp"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://www.microsoft.com/windowsserver2003/techinfo/reskit/resourcekit.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17654",
+    "downloadPreload": true
+}

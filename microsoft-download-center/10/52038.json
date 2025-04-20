@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Azure  Throughput Analyzer",
+    "downloadDescription": "The Microsoft Research eXtreme Computing Group cloud-research engagement team supports researchers in the field who use Windows Azure to conduct their research. Last published: August 19, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AzureThroughputAnalyzer-V1-1.zip",
+            "url": "https://download.microsoft.com/download/6/4/2/642e4ce6-b559-41a4-876b-08a4c9cfdcea/AzureThroughputAnalyzer-V1-1.zip",
+            "size": "1196640",
+            "version": "1.1.0.0",
+            "datePublished": "7/15/2024 4:04:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Research eXtreme Computing Group cloud-research engagement team supports researchers in the field who use Windows Azure to conduct their research. As part of this effort, we have built a desktop utility that measures the upload and download throughput achievable from your on-premise client machine to Azure cloud storage (blobs, tables and queue). The download contains the desktop utility and an accompanying user guide. You simply install this tool on your on-premise machine, select a data center for the evaluation, and enter the account details of any storage service created within it.  The utility will perform a series of data-upload and -download tests using sample data and collect measurements of throughput, which are displayed at the end of the test, along with other statistics. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.0.0",
+    "detailsSection_file_name": [
+        "AzureThroughputAnalyzer-V1-1.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52038",
+    "downloadPreload": true
+}

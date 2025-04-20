@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 7 (KB2654644)",
+    "downloadDescription": "Embedded USB driver update rollup.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2654644-v2-x86.msu",
+            "url": "https://download.microsoft.com/download/6/a/2/6a296ec0-3886-42ca-bd0a-e1024178440a/Windows6.1-KB2654644-v2-x86.msu",
+            "size": "515907",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB2654644-v2-x64.msu",
+            "url": "https://download.microsoft.com/download/6/a/2/6a296ec0-3886-42ca-bd0a-e1024178440a/Windows6.1-KB2654644-v2-x64.msu",
+            "size": "592289",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2654644 includes the latest Embedded USB boot drivers. Binaries included are:\r\n<br></br>\r\nusb.inf\r\n<ul>\r\n <li>usb.inf</li>\r\n <li>usbccgp.sys</li> \r\n <li>usbhub.sys</li>\r\n</ul>\r\n<br></br>\r\nusbport.inf \r\n<ul>\r\n <li>usbd.sys</li>\r\n <li>usbehci.sys</li>\r\n <li>usbhub.sys</li>\r\n <li>usbohci.sys</li>\r\n <li>usbport.inf </li>\r\n <li>usbport.sys</li>\r\n <li>usbuhci.sys</li>\r\n</ul>\r\n<br></br>\r\nusbstor.inf\r\n<ul>\r\n <li>usbstor.sys</li>\r\n</ul>\r\n<br></br>\r\nWindows <A href=\"http://support.microsoft.com/kb/2533552\">KB2533552</A> is a pre-requisite for this KB.\r\n<i>This KB solution is comprised of the following KB update package <A href=\"http://support.microsoft.com/kb/2529073\">KB2529073</A>.</i>\r\n<br></br>\r\nThis package is only applicable to systems that are using the Embedded USB boot binaries. i.e. when Embedded package WinEmb-USBBOOT is present. Images that are using the Standard USB stack(WinEmb-USB) should install the Windows KB package mentioned above (KB2529073) instead.\r\n<br></br>\r\nInstallation using DISM is not a supported scenario for this update. If DISM install has to be used, installer should manually make sure the above criteria is met, i.e. Embedded USB boot(WinEmb-USBBOOT) is present. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2654644-v2-x86.msu",
+        "Windows6.1-KB2654644-v2-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "503.8 KB",
+        "578.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded POSReady 7",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed on a <b>POSReady7 image</b> as follows:\r\n<br></br>\r\nExecuting the appropriate msu file\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2654644-v2-x86.msu</li>\r\n<li>64bit Windows6.1-KB2654644-v2-x64.msu</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30473",
+    "downloadPreload": true
+}

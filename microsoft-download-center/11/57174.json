@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2016 Update 1 fixes",
+    "downloadDescription": "This Update Fixes some issues of HPC Pack 2016 Update 1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB4342793_x86.exe",
+            "url": "https://download.microsoft.com/download/c/d/f/cdfb4586-3e2d-4720-9561-00aa90619f9d/KB4342793_x86.exe",
+            "size": "6200632",
+            "version": "5.1.6125.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB4342793_x64.exe",
+            "url": "https://download.microsoft.com/download/c/d/f/cdfb4586-3e2d-4720-9561-00aa90619f9d/KB4342793_x64.exe",
+            "size": "10605560",
+            "version": "5.1.6125.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HpcApplicationType.sfpkg",
+            "url": "https://download.microsoft.com/download/c/d/f/cdfb4586-3e2d-4720-9561-00aa90619f9d/HpcApplicationType.sfpkg",
+            "size": "76528308",
+            "version": "5.1.6125.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hpcnodeagent.tar.gz",
+            "url": "https://download.microsoft.com/download/c/d/f/cdfb4586-3e2d-4720-9561-00aa90619f9d/hpcnodeagent.tar.gz",
+            "size": "4384571",
+            "version": "5.1.6125.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrade-HpcApplication.ps1",
+            "url": "https://download.microsoft.com/download/c/d/f/cdfb4586-3e2d-4720-9561-00aa90619f9d/Upgrade-HpcApplication.ps1",
+            "size": "18361",
+            "version": "5.1.6125.0",
+            "datePublished": "7/15/2024 4:50:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update fixes some known issues of HPC Pack 2016 update 1 as described below<br/>\r\n<br/>\r\n- Fix an issue caused local user can\u2019t be created on non-domain joined compute nodes in a domain joined cluster; <br/>\r\n- Add ability to read common data through Azure Blob Storage to non-domain joined compute node; <br/>\r\n- Fix an Azure IaaS node deployment failure due to deployment template file not found in HA cluster; <br/>\r\n- Support operating system with French  for broker/compute/workstation node; <br/>\r\n- Allow the node action \u201cMaintain\u201d for domain joined Azure IaaS nodes; <br/>\r\n- Linux extension is updated, the \u201cLinux not showing up in Azure\u201d issue is resolved; <br/>\r\n- Add option to disable the windows compute node from syncing hpc cluster admin to local administrator group, to do this, you need to add following value on the target node under registry HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\HPC <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspName: DisableSyncWithAdminGroup <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspType: REG_DWORD <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspData: 1 <br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1.6125.0",
+    "detailsSection_file_name": [
+        "KB4342793_x86.exe",
+        "KB4342793_x64.exe",
+        "HpcApplicationType.sfpkg",
+        "hpcnodeagent.tar.gz",
+        "Upgrade-HpcApplication.ps1"
+    ],
+    "detailsSection_file_size": [
+        "5.9 MB",
+        "10.1 MB",
+        "73.0 MB",
+        "4.2 MB",
+        "17.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2016 Update 1 with QFE KB4135110 (build 5.1.6114.0) installed</b>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<b>Installation Instructions</b><br/>\r\nThis update needs to be run on all head nodes, broker nodes, workstation nodes, compute nodes (Windows and Linux), Azure IaaS nodes and clients<br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2016 Update 1 is installed. The version number (in HPC Cluster Manager, click Help-&gtAbout) should be 5.1.6114.0. Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure PaaS Nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB4342793_x64.exe for the 64-bit version, KB4342793-x86.exe for the 32_bit version) and then:<br/>\r\n<br/>\r\n<b>Applying the update on Single Headnode</b><br/>\r\n1. Click Save to copy the download to your computer;<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows;<br/>\r\n&nbsp&nbspNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update;<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node;<br/>\r\n4. The version number (Start HPC Cluster Manager, click Help-&gtAbout) now should be 5.1.6125.0;<br/>\r\n5. If you want to revert the patching, please go to Control Panel --&gtPrograms and Features --&gtView installed updates, un-install below updates in order (Please don\u2019t reboot in the middle): KB4342793 under \u201cMicrosoft \u00ae HPC Pack 2016 Web Components\u201d, \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d and then \u201cMicrosoft \u00ae HPC Pack 2016 Server Components, then reboot;<br/>\r\n<br/>\r\nKnown Issue: During patching sometime \"HPC Web Service\" may stuck in \"Starting\" status as its dependency HPCScheduler Service is not started. You may need to manually start the HPCScheduler service so that the patching will continue. We will address this issue in Update 2. <br/>\r\n<br/>\r\n<b>Applying the update on Three Headnodes</b><br/>\r\nNote: If you have at least three head nodes, you need to download HpcApplicationType.sfpkg and Upgrade-HpcApplication.ps1 as well and put them together on one of the headnode, for example, c:\\5.1.6125.0. And run through below steps:<br/>\r\n1. To upgrade service fabric application, please open an elevated powershell command prompt window, run: <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <I>Upgrade-HpcApplication.ps1 -ApplicationPackagePath C:\\5.1.6125.0\\HpcApplicationType.sfpkg</I><br/>\r\n2. After the service fabric application upgrade done, you then need to run theKB4342793_x64.exe on headnode one by one;<br/>\r\n3. Reboot the headnode one by one (Please check https://localhost:10400 to make sure the original reboot headnode back to health state before you reboot a new headnode, so that your service will keep available);<br/>\r\n4. The version number (Start HPC Cluster Manager, click Help-&gtAbout) now should be 5.1.6125.0 on all headnodes;<br/>\r\n5. If you want to revert the patching, for every headnode please go to Control Panel --&gt Programs and Features --&gt View installed updates, un-install below updates in order (Please don\u2019t reboot in the middle): KB4342793 under \u201cMicrosoft \u00ae HPC Pack 2016 Web Components\u201d, \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d and then \u201cMicrosoft \u00ae HPC Pack 2016 Server Components; then downgrade service fabric application through below command; <br/>\r\n<I>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Connect-ServiceFabricCluster<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   $hpcApplication = Get-ServiceFabricApplication -ApplicationName fabric:/HpcApplication<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   $appParameters = @{}<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   foreach($appParam in $hpcApplication.ApplicationParameters)<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   {<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       $appParameters[$appParam.Name] = $appParam.Value<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   }<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   Start-ServiceFabricApplicationUpgrade -ApplicationName fabric:/HpcApplication -ApplicationTypeVersion 1.1.1 -ApplicationParameter $appParameters -HealthCheckStableDurationSec 60 -UpgradeDomainTimeoutSec 1800 -UpgradeTimeout 3000 -FailureAction Rollback -Monitored | Out-Null<br/></I>\r\nYou can run \"<I>Get-ServiceFabricApplicationUpgrade -ApplicationName fabric:/HpcApplication</I>\" to track the upgrade status. If you find it is stuck at \"PreUpgradeSafetyCheck\" due to some service fail to cancel, you could try to manually kill the corresponding process on the right node. When if finished, reboot headnode one by one (you need wait the original rebooted node fully healthy in the service fabric cluster before you reboot the next one.<br/>\r\n<br/>\r\nYou can open \"Service Fabric Explorer\" at \"https://localhost:10400\" to monitor the service fabric cluster upgrade progress (You need to import the pfx certificate used during cluster setup to CurrentUser\\My to avaid HTTP 403 error). There is little possibility that some service is stuck on the headnode during patching. If that happens, you could manually kill the process on that node. <br/>\r\n<br/>\r\n<b>Applying the update on Windows nodes</b><br/>\r\n1. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes, Azure IaaS nodes and workstation nodes;<br/>\r\n If you want to use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, Azure IaaS nodes and workstation nodes:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  a. Copy the appropriate version of the update to a shared folder such as \\\\headnodename\\HPCUpdates<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  b. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <I>clusrun /nodegroup:ComputeNodes \\\\&ltheadnodname&gt\\HPCUpdates\\KB4342793-x64.exe -unattend -SystemReboot</I><br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <I>clusrun /nodegroup:BrokerNodes \\\\&ltheadnodname&gt\\HPCUpdates\\KB4342793-x64.exe -unattend -SystemReboot</I><br/>\r\nNote: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\nNote: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\n2. If you want to revert the patching, please go to Control Panel --&gt Programs and Features --&gt View installed updates, un-install below updates in order (Please don\u2019t reboot in the middle): KB4342793 under \u201cMicrosoft \u00ae HPC Pack 2016 Web Components\u201d, \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d and then \u201cMicrosoft \u00ae HPC Pack 2016 Server Components, then reboot;<br/>\r\n<br/>\r\n<b>Applying the update on Linux nodes</b><br/>\r\n1. For 3-headnode Cluster, download and Copy \u201chpcnodeagent.tar.gz\u201d to the remote install share of the HPC Cluster (Default should be \\\\&ltHN&gt\\REMINST\\LinuxNodeAgent ); while for single headnode cluster, this package will be replaced during headnode patching. Thus please back up the existing one so that you could downgrade to original version<br/>\r\n2. Mount the share on linux node (Suppose you already created /mnt/share on all linux node): <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <I> Clusrun /env:CCP_MAP_ADMIN_USER=0 /user:system /NodeGroup:LinuxNodes mkdir /mnt/share ^& mount -t cifs //&ltyourheadnode&gt/REMINST/LinuxNodeAgent /mnt/share -o vers=2.1,domain=&ltdomainname>,username=&ltusername&gt,password='&ltpassword&gt',dir_mode=0777,file_mode=0777</I><br/>\r\n3. Clusrun with root on all linux node to update the package:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <I>Clusrun /env:CCP_MAP_ADMIN_USER=0 /user:system /NodeGroup:LinuxNodes /workdir:/mnt/share echo \u201cpython /mnt/share/setup.py -update\u201d ^| at now + 1 minute</I><br/>\r\n4. Wait for clusrun completion and the real update will start in a minute on the linux node; After the update completes, you can run Clusrun command to check the linux agent version by running below command (the version now will be 2.3.5.0):<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <I>Clusrun /env:CCP_MAP_ADMIN_USER=0 /user:system /NodeGroup:LinuxNodes /workdir:/opt/hpcnodemanager ./nodemanager -v</I><br/>\r\n5. If you want to revert back to the original linux agent version, you could restore the \"hpcnodeagent.tar.gz\" to the old version and apply the same above steps;<br/>\r\n<br/>\r\n<b>Applying the update on Linux nodes on Azure</b><br/>\r\nIf your linux node is on azure and deployed through our ARM template, the linux node will update its Linux Agent Extension automatically.<br/>\r\n<br/>\r\n<b>Applying the update on Client</b><br/>\r\n1. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  a. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager;<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  b. Run the update executable;<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  c. Reboot your client computer;<br/>\r\n2. If you want to revert the patching, please go to Control Panel --&gt Programs and Features --&gt View installed updates, un-install KB4342793 under \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d then reboot;<br/>\r\n\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC TechNet site",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=263697"
+        },
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        },
+        {
+            "title": "hpc Pack Forum",
+            "url": "https://social.microsoft.com/Forums/en-US/home?category=windowshpc"
+        },
+        {
+            "title": "kB4135110",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=56964"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57174",
+    "downloadPreload": true
+}

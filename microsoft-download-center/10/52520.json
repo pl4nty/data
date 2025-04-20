@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Memoir",
+    "downloadDescription": "Memoir is a framework for building trusted modules with state continuity. Last published: April 5, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Memoir.zip",
+            "url": "https://download.microsoft.com/download/f/6/4/f6450d8c-3939-499d-b9f4-c7db3c41e9b6/Memoir.zip",
+            "size": "186921",
+            "version": "1.0.0",
+            "datePublished": "6/13/2024 12:55:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Memoir is a framework for building trusted modules with state continuity. The framework is described in our paper, Memoir: Practical State Continuity for Protected Modules.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "Memoir.zip"
+    ],
+    "detailsSection_file_size": [
+        "182.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52520",
+    "downloadPreload": true
+}

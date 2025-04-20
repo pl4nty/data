@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Deploy Microsoft Project Server 2010",
+    "downloadDescription": "Five videos about aspects of deploying Project Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Add App Server to Farm.wmv",
+            "url": "https://download.microsoft.com/download/c/9/9/c997cbe9-0f5f-4dc4-a3fa-f4b6a588c59e/Add App Server to Farm.wmv",
+            "size": "22788795",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Install Multi App Server.wmv",
+            "url": "https://download.microsoft.com/download/c/9/9/c997cbe9-0f5f-4dc4-a3fa-f4b6a588c59e/Install Multi App Server.wmv",
+            "size": "40244609",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Install Single App Server.wmv",
+            "url": "https://download.microsoft.com/download/c/9/9/c997cbe9-0f5f-4dc4-a3fa-f4b6a588c59e/Install Single App Server.wmv",
+            "size": "26139617",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Create PWA Site.wmv",
+            "url": "https://download.microsoft.com/download/c/9/9/c997cbe9-0f5f-4dc4-a3fa-f4b6a588c59e/Create PWA Site.wmv",
+            "size": "18215748",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Configure Reporting.wmv",
+            "url": "https://download.microsoft.com/download/c/9/9/c997cbe9-0f5f-4dc4-a3fa-f4b6a588c59e/Configure Reporting.wmv",
+            "size": "49597390",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These videos describe how to install Microsoft Project Server 2010, including how to install in single- and multi-server farms, how to create a Project Web App site, how to configure reporting, and how to add a server to an existing farm.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Add App Server to Farm.wmv",
+        "Install Multi App Server.wmv",
+        "Install Single App Server.wmv",
+        "Create PWA Site.wmv",
+        "Configure Reporting.wmv"
+    ],
+    "detailsSection_file_size": [
+        "21.7 MB",
+        "38.4 MB",
+        "24.9 MB",
+        "17.4 MB",
+        "47.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To download a .wmv file to your local computer, click <b>Download</b>. Then, once the .wmv file is stored on your computer, you can play it by using Windows Media Player. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12412",
+    "downloadPreload": true
+}

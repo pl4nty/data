@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 SP3 Latest Cumulative Update",
+    "downloadDescription": "Cumulative Update Package 10 for SQL Server 2012 SP3 - KB4025925",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB4025925-x86.exe",
+            "url": "https://download.microsoft.com/download/3/0/d/30d98783-31d6-4123-9f87-5058ba9fc977/SQL2012SP3CU10/x86/SQLServer2012-KB4025925-x86.exe",
+            "size": "353830080",
+            "version": "11.0.6607.3",
+            "datePublished": "7/15/2024 3:59:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB4025925-x64.exe",
+            "url": "https://download.microsoft.com/download/3/0/d/30d98783-31d6-4123-9f87-5058ba9fc977/SQL2012SP3CU10/x64/SQLServer2012-KB4025925-x64.exe",
+            "size": "642342080",
+            "version": "11.0.6607.3",
+            "datePublished": "7/15/2024 3:59:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "<b>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2012 Service Pack 3 </b>\n<br />\n<ul>\n  <li>This update contains fixes for issues that were fixed after the release of SQL Server 2012 SP3</li> \n  <li>The Latest 2012 SP3 update is <a name=\"KB4025925\"></a><a href=\"http://support.microsoft.com/help/4025925 \">CU10 - KB4025925</a></li>  \n  </ul><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.6607.3",
+    "detailsSection_file_name": [
+        "SQLServer2012-KB4025925-x86.exe",
+        "SQLServer2012-KB4025925-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "337.4 MB",
+        "612.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n      Please refer to <a name=\"KB4025925\"></a><a href=\"http://support.microsoft.com/kb/4025925 \">KB4025925</a> for system requirements.\n<br />\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<br />\nAfter the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions<br />",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50733",
+    "downloadPreload": true
+}

@@ -1,0 +1,123 @@
+{
+    "error": "",
+    "downloadTitle": "SQL 2008 and 2008 R2 TLS 1.2 updates not available in Windows Catalog",
+    "downloadDescription": "SQL 2008 and 2008 R2 TLS 1.2 updates not available in Windows Catalog",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB3145755-IA64.exe",
+            "url": "https://download.microsoft.com/download/c/1/e/c1e8d731-98bf-4e6e-b9da-48f262bdc97f/SQLServer2008-KB3145755-IA64.exe",
+            "size": "91588280",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB3145758-IA64.exe",
+            "url": "https://download.microsoft.com/download/c/1/e/c1e8d731-98bf-4e6e-b9da-48f262bdc97f/SQLServer2008R2-KB3145758-IA64.exe",
+            "size": "363137736",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB3145756-IA64.exe",
+            "url": "https://download.microsoft.com/download/c/1/e/c1e8d731-98bf-4e6e-b9da-48f262bdc97f/SQLServer2008R2-KB3145756-IA64.exe",
+            "size": "357373128",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB3145757-IA64.exe",
+            "url": "https://download.microsoft.com/download/c/1/e/c1e8d731-98bf-4e6e-b9da-48f262bdc97f/SQLServer2008-KB3145757-IA64.exe",
+            "size": "223573176",
+            "version": "Multiple",
+            "datePublished": "7/15/2024 3:07:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This page contains updates providing TLS 1.2 support for <b>SQL Server 2008 and SQL Server 2008 R2</b> running on the <b>Titanium</b> platform (IA64).\r\nThese updates were prioviously only available on the Microsoft Hotfix server which has since been decommissioned.\r\n<br/><br/>For TLS 1.2 support updates for other platforms and releases, please see: <b><a href=\"https://support.microsoft.com/en-us/help/3135244/tls-1-2-support-for-microsoft-sql-server\">TLS 1.2 support for Microsoft SQL Server</a></b>\r\n<br/><br/>\r\nNote: The IA64 platform for SQL Server only supports SQL Server 2008 <b>SP3</b> and SQL Server 2008 R2 <b>SP2</b>.  These updates will only apply to SQL instances at these SP levels.\r\n<br/>\r\nSQL 2008 SP3 IA64 Update:    CU Version 10.0.5896.0   GDR Version 10.0.5545.0<br/>\r\nSQL 2008 R2 SP2 Update:  CU Version 10.50.4344.0   GDR Version 10.50.4047.0<br/>\r\n\n<br/>Please reference the Instructions section of this page to learn more about each update.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Multiple",
+    "detailsSection_file_name": [
+        "SQLServer2008-KB3145755-IA64.exe",
+        "SQLServer2008R2-KB3145758-IA64.exe",
+        "SQLServer2008R2-KB3145756-IA64.exe",
+        "SQLServer2008-KB3145757-IA64.exe"
+    ],
+    "detailsSection_file_size": [
+        "87.3 MB",
+        "346.3 MB",
+        "340.8 MB",
+        "213.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System requirements vary based on IA64 Configuration\r\n<br/><br/>\r\n<b>Note:</b> \r\nWhen an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>For SQL instances that receive Cumulative Updates (CUs):</b>\r\n<br/><br/>\r\nFor SQL Server 2008:       Download and execute <b>SQLServer2008-KB3145757-IA64.exe</b><br/>\r\nFor SQL Server 2008 R2:  Download and execute <b>SQLServer2008R2-KB3145758-IA64.exe</b>\r<br/><br/>\r\n<b>For SQL instances that only receive security updates (GDRs):</b>\r\n<br/><br/>\r\nFor SQL Server 2008:       Download and execute <b>SQLServer2008-KB3145755-IA64.exe</b><br/>\r\nFor SQL Server 2008 R2:  Download and execute <b>SQLServer2008R2-KB3145756-IA64.exe</b>\r\n<br/>\r\n",
+    "additionalInformationSection": "- If you have questions about SQL Server 2016, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57605",
+    "downloadPreload": true
+}

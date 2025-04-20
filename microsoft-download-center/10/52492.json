@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Lambda-Omega Equations Simulator",
+    "downloadDescription": "This tool has been developed to assist readers of the paper \u201cExplaining spatiotemporal dynamics in lambda-omega reaction-diffusion equations using absolute stability spectra of wavetrains\u201d\u2014written by Matthew J. Last published: December 13, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LOPTW.msi",
+            "url": "https://download.microsoft.com/download/1/0/a/10a1f456-cf3c-459e-a70a-9d57578c37f5/LOPTW.msi",
+            "size": "970240",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool has been developed to assist readers of the paper \u201cExplaining spatiotemporal dynamics in lambda-omega reaction-diffusion equations using absolute stability spectra of wavetrains\u201d\u2014written by Matthew J. Smith, Jens D. M. Rademacher, and Jonathan A. Sherratt and submitted to \u201cPhysica D: Nonlinear Phenomena\u201d\u2014in understanding the numerical dynamics illustrated and to encourage readers to experiment with changes to boundary conditions and parameter values.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "LOPTW.msi"
+    ],
+    "detailsSection_file_size": [
+        "947.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52492",
+    "downloadPreload": true
+}

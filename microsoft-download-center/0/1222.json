@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Code Advisor for Visual Basic 6.0",
+    "downloadDescription": "This application plugs-in to Visual Basic 6.0 to analyze your code and suggest possible improvements.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "code advisor for visual basic 6.exe",
+            "url": "https://download.microsoft.com/download/9/5/e/95ee0a71-034e-4eba-ada7-f20ecd2b6a24/code advisor for visual basic 6.exe",
+            "size": "5028080",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "If you are programming in Visual Basic 6.0 and planning to move to Visual Basic .NET, then the Visual Basic 6.0 Code Advisor is for you.<br></br>\nThe Code Advisor for Visual Basic 6 is an add-in used to review your code to ensure that it meets predetermined coding standards. The coding standards are based on best practices developed by Microsoft to produce robust and easy-to-maintain code.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "code advisor for visual basic 6.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "In order to install the Code Advisor, you must be running Windows\u00ae 98 or later, Internet Explorer 6.0 or later, and Visual Basic 6.0. Note that the Code Advisor relies on the VBScript and MSXML components distributed in Internet Explorer 6.0. Internet Explorer is not required to be the default browser.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 98",
+        "Windows 2000",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows 98 Second Edition"
+    ],
+    "installInstructionSection": "Download this executable to your local machine and double click it to install the add-in into your Visual Basic 6.0 environment.",
+    "additionalInformationSection": "<b>Known Issue:</b> Setup fails with Unicode characters in the installation path on non-English operating systems<br/>\n      <br/>\n      <b>Details:</b>During setup, specifying an installation path that contains certain Unicode characters can cause the setup to fail. To fix this problem either accept the default installation path or enter an installation path that does not contain Unicode characters.<br/>\n      <br/>\n      <b>Known Issue:</b> Uninstall fails to remove registry keys<br/>\n      <br/>\n      <b>Details:</b> When the Code Advisor is uninstalled, registry keys for the FixIt Filter settings are not removed. If you subsequently re-install the Code Advisor, your previous FixIt Filter settings will be restored instead of reverting to the default settings. In order to revert to the default settings, open Regedit.exe and delete the following keys before re-installing:<br/>\n      <br/>\n      HKEY_USERS\\{\u2026.}\\Software\\VB and VBA Program Settings\\Code Advisor for Visual Basic 6\\1\\<br/>\n      HKEY_USERS\\{\u2026.}\\Software\\VB and VBA Program Settings\\Code Advisor for Visual Basic 6\\2\\<br/>\n      HKEY_USERS\\{\u2026.}\\Software\\VB and VBA Program Settings\\Code Advisor for Visual Basic 6\\3\\<br/>\n      HKEY_USERS\\{\u2026.}\\Software\\VB and VBA Program Settings\\Code Advisor for Visual Basic 6\\State\\<br/>\n      <br/>\n      Where {\u2026.} is a unique identifier for each user.",
+    "relatedResourcesSection": [
+        {
+            "title": "stay Current and Subscribe to MSDN",
+            "url": "http://go.microsoft.com/?linkid=3534158"
+        },
+        {
+            "title": "more Information on Upgrading to Visual Basic .NET",
+            "url": "http://go.microsoft.com/?linkid=3534161"
+        },
+        {
+            "title": "visual Basic Developer Center",
+            "url": "http://go.microsoft.com/?linkid=3534159"
+        },
+        {
+            "title": "features Overview for Visual Basic .NET 2003",
+            "url": "http://go.microsoft.com/?linkid=3534160"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1222",
+    "downloadPreload": true
+}

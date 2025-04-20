@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone SDK 8.0",
+    "downloadDescription": "The Windows Phone Software Development Kit (SDK) 8.0 provides you with the tools that you need to develop apps and games for Windows Phone 8 and Windows Phone 7.5.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WPexpress_full.exe",
+            "url": "https://download.microsoft.com/download/9/3/8/938a5074-461f-4e3d-89f4-5ce2f42c1e36/WPexpress_full.exe",
+            "size": "1078912",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:30:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Phone 8 Release Notes.htm",
+            "url": "https://download.microsoft.com/download/9/3/8/938a5074-461f-4e3d-89f4-5ce2f42c1e36/Windows Phone 8 Release Notes.htm",
+            "size": "31339",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:30:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "The Windows Phone SDK 8.0 is a full-featured development environment to use for building apps and games for Windows Phone 8.0 and Windows Phone 7.5.  The Windows Phone SDK provides a stand-alone Visual Studio Express 2012 edition for Windows Phone or works as an add-in to Visual Studio 2012 Professional, Premium or Ultimate editions. With the SDK, you can use your existing programming skills and code to build managed or native code apps. In addition, the SDK includes multiple emulators and additional tools for profiling and testing your Windows Phone app under real-world conditions.\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "WPexpress_full.exe",
+        "Windows Phone 8 Release Notes.htm"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "30.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>Operating system type:</b><ul><li>Windows 8 64-bit (x64) client versions</li></ul></li></ul>\r\n<ul>\r\n<li><b>Hardware:</b>\r\n<ul>\r\n<li>6.5 GB of free hard disk space</li>\r\n<li>4 GB RAM</li>\r\n<li>64-bit (x64) CPU</li>\r\n</ul>\r\n</li>\r\n<li><b>Windows Phone 8 Emulator: </b>\r\n<ul><li>Windows 8 Pro edition or greater</li>\r\n<li>Requires a processor that supports Second Level Address Translation (SLAT)</li>\r\n</ul>\r\nIf your computer meets the hardware and operating system requirements, but does not meet the requirements for the Windows Phone 8 Emulator, the Windows Phone SDK 8.0 will install and run. However, the Windows Phone 8 Emulator will not function and you will not be able to deploy or test apps on the Windows Phone 8 Emulator.\r\n</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8 Pro"
+    ],
+    "installInstructionSection": "<b>Installing the Windows Phone SDK</b>\r\n<ul><li>Choose the language version you want to install and click the Download button for the WPexpress_full.exe file. Follow the instructions to install the SDK. Note that each localized version of Windows Phone SDK 8.0 is designed to function with the corresponding localized operating system and localized version of Visual Studio 2012. <br/><i>Note - Windows Phone SDK 8.0 installs side-by-side with previous versions of the Windows Phone SDK. You don't need to uninstall previous versions before beginning this installation.</i></li>\r\n<li>Download the release notes which are in a separate file.  For Windows Phone SDK 8.0 documentation and samples, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=255551\">Windows Phone Dev Center</a>.</li>\r\n<li>Important Installation Notes/Warnings\r\n <ul>\r\n <li>When installing the WPSDK 8.0 on <b>a computer with a Gigabyte motherboard and the USB 3.0 host controller enabled</b> in the BIOS, the computer might stop responding when it boots. For details on impacted Gigabyte motherboad models, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=272018\">Installing Hyper-V on Gigabyte systems</a>. To resolve this, disable USB 3.0 support in computer's BIOS.</li>\r\n <li>When installing the WPSDK 8.0 on <b>Windows 8.1</b>, the Windows Phone 8 emulator does not work on Windows 8.1. To fix the emulator, install <a href=\"http://go.microsoft.com/fwlink/?LinkId=290979\">Visual Studio 2012 Update 3</a> <i>after installing the Windows Phone SDK 8.0</i>.</li>\r\n </ul>\r\n</li>\r\n</ul>\r\n<b>Using the Windows Phone SDK</b>\r\n<ul>\r\n<li>If you have Visual Studio Professional, Premium or Ultimate installed on the computer, the Windows Phone SDK will install everything you need into your existing installation. Start your Visual Studio instance as usual and use it to create your Windows Phone 8.0 apps using the installed Windows Phone templates.</li>\r\n<li>Otherwise, the Windows Phone SDK will install and create a shortcut for Visual Studio Express for Windows Phone, you can click the application in the Apps list to launch it and create your Windows Phone 8.0 app. </li>\r\n<li>If you try to run a project in Windows Phone Emulator and Hyper-V is not enabled, you will be prompted to turn on Hyper-V. Turning on Hyper-V requires you to restart your computer.</li>\r\n</ul>\r\n\r\n<br/>\r\nNote: <b>this release is also available in <a href=\"http://go.microsoft.com/fwlink/?LinkID=257234&clcid=0x409\">.iso</a> format.</b>\r\nChoose one of the following options for handling downloaded ISO images:\r\n<UL>\r\n<LI>(Recommended) Write the image file to a blank DVD.</LI>\r\n<LI>(Alternative) Mount the image file virtually as DVD devices.</LI>\r\n</UL>\r\nFor more information about these options, see \"What are ISO image files and how do I use them?\" on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=95676\">FAQ</a> page.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35471",
+    "downloadPreload": true
+}

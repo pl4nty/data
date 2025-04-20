@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-Specific Update for the United Kingdom",
+    "downloadDescription": "This white paper describes the country-specific update that was released for the United Kingdom in Cumulative Update 3 (CU\u20133) for Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for the United Kingdom.pdf",
+            "url": "https://download.microsoft.com/download/3/b/f/3bf22796-402a-4efd-b51a-f69f6d923a34/Country-specific update for the United Kingdom.pdf",
+            "size": "348994",
+            "version": "2012",
+            "datePublished": "6/13/2024 12:10:33 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Construction Industry Scheme (CIS) is a scheme issued by Her Majesty\u2019s Revenue & Customs (HMRC) in the United Kingdom. CIS specifies the rules that contractors or deemed contractors in the construction industry must follow when they make payments to construction work subcontractors. Deemed contractors are organizations whose core business is not construction, but whose annual spending on construction is high.<br /><br />\r\nThis paper describes the following information: <br />\r\n<UL><LI>Setup for CIS deductions from subcontractor payments</LI>\r\n<LI>Working with CIS</LI>\r\n<LI>Modified forms</LI>\r\n<LI>Reports</LI></UL><br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2617966. For more information about other features that apply to the United Kingdom, refer to the Help. Information that is specific to the United Kingdom includes (GBR) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country-specific update for the United Kingdom.pdf"
+    ],
+    "detailsSection_file_size": [
+        "340.8 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28155",
+    "downloadPreload": true
+}

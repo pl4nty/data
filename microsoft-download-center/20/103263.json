@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Initiating a Zero Trust transformation project",
+    "downloadDescription": "Initiating a Zero Trust project",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Initiating a Zero Trust transformation project.pdf",
+            "url": "https://download.microsoft.com/download/a/4/3/a437a41f-a488-45ac-9b24-c62ae6c820ac/Initiating a Zero Trust transformation project.pdf",
+            "size": "1188001",
+            "version": "V1.0",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Organizations must face new challenges such as the opening of the information system, the increasing use of the cloud and, more recently, the generalization of remote work due to the health crisis. In addition, the model based on a perimeter security and the stacking of security solutions no longer protect against the proliferation of attacks and their greater complexity. <br /><br />\r\n\r\nA new security model called Zero Trust has emerged, which is based on the principle that one can no longer blindly trust when a user requests access to an application or service. It is necessary to dynamically verify the access context (identity of the accessing user, status of the device, location, etc.) before possibly and conditionally authorizing access to the resource. <br /><br />\r\n\r\nOnce convinced by the principles of Zero Trust, the questions that arise are where to start, what will be the benefits and how to carry out this project towards this new Zero Trust security model? Indeed, its implementation must be progressive by taking into account the existing environment and without wanting to call into question all existing security solutions. <br /><br />\r\n\r\nThe objective of this white paper is to guide you in structuring your Zero Trust project based on feedback. It is about helping you to start \"your\" own Zero Trust project by taking into account your existing environment, the points to be solved in priority and the scenarios that you would like to favor.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V1.0",
+    "detailsSection_file_name": [
+        "Initiating a Zero Trust transformation project.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read the PDF file, you will need a free PDF reader such as Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the pdf file and open it with your PDF reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103263",
+    "downloadPreload": true
+}

@@ -1,0 +1,256 @@
+{
+    "error": "",
+    "downloadTitle": "Version 8.2.2.137 Update for Dynamics 365 for Microsoft Outlook",
+    "downloadDescription": "Microsoft has released version 8.2.2.137 update for Dynamics 365 for Microsoft Outlook.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Client-KB4054414-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/f/0/3/f03db00c-74eb-4db6-bcda-ddd02342331b/CRM2016-Client-KB4054414-ENU-I386.exe",
+            "size": "74098624",
+            "version": "08.02.0002.0137",
+            "datePublished": "7/15/2024 4:51:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Client-KB4054414-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/f/0/3/f03db00c-74eb-4db6-bcda-ddd02342331b/CRM2016-Client-KB4054414-ENU-Amd64.exe",
+            "size": "86571760",
+            "version": "08.02.0002.0137",
+            "datePublished": "7/15/2024 4:51:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft has released Dynamics 365 for Microsoft Outlook version 8.2.2.137 update. This update includes support for Transport Layer Security (TLS) 1.2, which is required for connecting Dynamics 365 for Outlook with Dynamics 365 (online), version 9.0. <br/><br/>\r\nFor more information about this update, see these articles: <br/><br/>\r\n<a href=\"https://support.microsoft.com/en-us/help/4054414/\">Microsoft Knowledge Base article 4054414</a> <br/>\r\n<a href=\"https://blogs.msdn.microsoft.com/crm/2017/09/28/updates-coming-to-dynamics-365-customer-engagement-connection-security/\">Updates coming to Dynamics 365 Customer Engagement connection security</a>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.02.0002.0137",
+    "detailsSection_file_name": [
+        "CRM2016-Client-KB4054414-ENU-I386.exe",
+        "CRM2016-Client-KB4054414-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "70.7 MB",
+        "82.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "      \n      <ul>\n        <li>\n          This update must be installed on a computer that is running Dynamics 365 for Outlook (online and on-premises) Update 2.1.\n        </li>   \n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Click Download, and then select the file you want to download from the list.\n      \r\n<ol>\n        <li>\n          To start the installation immediately, click <b>Run</b>.\n        </li>\n        <li>\n          To save the download to your computer for installation later, click <b>Save</b>.\n        </li>\n        <li>\n          To cancel the download, click <b>Cancel</b>.\n        </li>\n      </ol>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics 365 (online and on-premises) Update 2.1",
+            "url": "https://support.microsoft.com/en-us/help/4013759/microsoft-dynamics-365-online-and-on-premises-update-2-1"
+        },
+        {
+            "title": "dynamics 365 for Outlook",
+            "url": "https://technet.microsoft.com/library/dn832129.aspx"
+        },
+        {
+            "title": "upgrade CRM for Outlook",
+            "url": "https://technet.microsoft.com/library/hh699711.aspx"
+        },
+        {
+            "title": "install CRM for Outlook ",
+            "url": "https://technet.microsoft.com/library/hh699760.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56327",
+    "downloadPreload": true
+}

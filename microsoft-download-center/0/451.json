@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Designing Applications using CAB & the Smart Client Software Factory",
+    "downloadDescription": "This white paper, originally created for RACON Software GmbH, which is a Software house of the Raiffeisen Banking Group in Austria and provides architectural guidance for designing and implementing composite smart clients based on the Composite UI Application Block and the Smart Client Software Factory from the Microsoft patterns & practices group.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CAB SCSF - Architecture Guidance - Raiffeisen.pdf",
+            "url": "https://download.microsoft.com/download/1/0/3/103adb7f-1e45-42f8-8696-63e513875258/CAB SCSF - Architecture Guidance - Raiffeisen.pdf",
+            "size": "1318908",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper was created to support the architects and lead developers of RACON Software GmbH for designing and implementing a new bank desktop composite client application based on the Composite UI Application Block and the Smart Client Software Factory. It documents real world experiences using these framework and tools.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CAB SCSF - Architecture Guidance - Raiffeisen.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader or other PDF Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the download link and view the pdf file using Adobe Reader 5.0 or later.",
+    "relatedResourcesSection": [
+        {
+            "title": "composite UI Application Block",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag2/html/cab.asp"
+        },
+        {
+            "title": "smart Client Software Factory",
+            "url": "http://msdn.microsoft.com/smartclientfactory"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "451",
+    "downloadPreload": true
+}

@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Application Insights Tools for Visual Studio 2015 Update 1  v4.2.0",
+    "downloadDescription": "Application Insights Tools for Visual Studio add-in,  v4.2.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VWDExpress.msi",
+            "url": "https://download.microsoft.com/download/2/e/e/2ee1cced-bf0c-4265-95b4-e0bfca76dc21/AppInsights_VWDExpress.msi",
+            "size": "6045696",
+            "version": "4.2.0",
+            "datePublished": "7/15/2024 4:01:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VisualStudio.msi",
+            "url": "https://download.microsoft.com/download/2/e/e/2ee1cced-bf0c-4265-95b4-e0bfca76dc21/AppInsights_VisualStudio.msi",
+            "size": "6045696",
+            "version": "4.2.0",
+            "datePublished": "7/15/2024 4:01:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VSWinExpress.msi",
+            "url": "https://download.microsoft.com/download/2/e/e/2ee1cced-bf0c-4265-95b4-e0bfca76dc21/AppInsights_VSWinExpress.msi",
+            "size": "6045696",
+            "version": "4.2.0",
+            "datePublished": "7/15/2024 4:01:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Application Insights Tools for Visual Studio 2015 Update 1  v4.2.0.  It includes the following new features:\r\nUser can jump/find to the code where the telemetry event property is emitted\r\n0 - click logging experience\r\nNew screen for not-signed in user in SearchWindow\r\nUser can see all telemetry events associated with the event\r\nFix issue causing high failure rate adding AI SDK\r\nAdd Forward/Back history in Search\r\nVarious bug fixes\r\nSee Release Notes for more details: \r\nhttp://go.microsoft.com/fwlink/?LinkID=723141&clcid=0x409",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.2.0",
+    "detailsSection_file_name": [
+        "AppInsights_VWDExpress.msi",
+        "AppInsights_VisualStudio.msi",
+        "AppInsights_VSWinExpress.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See Visual Studio 2015",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This is installed via Visual Studio 2015 tools->Extensions and Update dialog. Customers should not need to download and install this directly",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50829",
+    "downloadPreload": true
+}

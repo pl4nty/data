@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Instructions to create your own 3D printed Surface Pro 3 Docking Station Adapter ",
+    "downloadDescription": "Find instructions and files to 3D print an adapter for a Surface Pro 3 docking station so it can accomodate your Surface Pro 4 device.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Surface Pro 3 Docking Station Adapter 3D printing instructions.docx",
+            "url": "https://download.microsoft.com/download/1/8/a/18aa7bda-d728-4df1-92b0-71d980efd093/Surface Pro 3 Docking Station Adapter 3D printing instructions.docx",
+            "size": "1677786",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:05:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3D-Print-Docking-Station-Adapter-EN.STP",
+            "url": "https://download.microsoft.com/download/1/8/a/18aa7bda-d728-4df1-92b0-71d980efd093/3D-Print-Docking-Station-Adapter-EN.STP",
+            "size": "177113",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:05:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3D-Print-Docking-Station-Adapter-EN.STL",
+            "url": "https://download.microsoft.com/download/1/8/a/18aa7bda-d728-4df1-92b0-71d980efd093/3D-Print-Docking-Station-Adapter-EN.STL",
+            "size": "298484",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:05:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "With the introduction of the Surface Pro 4 and Surface Book, a new Surface Dock is now available and the current Surface Pro 3 Docking Station will be discontinued as the new Surface Dock is also compatible with Surface Pro 3. \r\nIf you decide that you don\u2019t want to purchase the new Surface Dock, but instead use your existing Surface Pro 3 Docking Station with your new Surface Pro 4 (which has changed dimensions), we have made available an adapter that attaches to your Surface Pro 3 Docking Station so your Surface Pro 4 can snugly hold your new Surface Pro 4. You can get this adapter at no charge (plus shipping and handling) through Microsoft\u2019s Customer Support or through your commercial reseller. \r\nHowever, if you don\u2019t want to wait for this to be shipped to you or you want to avoid the shipping and handling, you can print out your own adapter with a 3D printer. See downloads page for instructions and schematics. \r\nPlease note that the quality of the 3D printing will depend on the printer used to make these and your 3D printer must be able to accommodate a build volume of 10.3mm x 100.8mm x 285.4 mm. \r\nThe Surface Pro 3 Docking Station Adapter schematics is available in two different file formats, .STP and .STL. Please choose the format best suited for your 3D printer. \r\nPlease note that these instructions are for informational purposes only.  MICROSOFT MAKES NO WARRANTIES, EXPRESS OR IMPLIED, IN THIS SUMMARY.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Surface Pro 3 Docking Station Adapter 3D printing instructions.docx",
+        "3D-Print-Docking-Station-Adapter-EN.STP",
+        "3D-Print-Docking-Station-Adapter-EN.STL"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "173.0 KB",
+        "291.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the instructions and the 3D printer file to print your docking station adapter",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50006",
+    "downloadPreload": true
+}

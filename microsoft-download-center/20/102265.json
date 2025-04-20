@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Accelerator for SWIFT - Message Pack 2020 Update",
+    "downloadDescription": "2020 Update for BizTalk A4Swift Message Pack 2019",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MP2019-KB4583002-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/e/3/fe31d6d6-379a-42f2-84ca-3b30645dfd9e/MP2019-KB4583002-ENU.exe",
+            "size": "1375096",
+            "version": "4.3.971.0",
+            "datePublished": "6/15/2024 4:20:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "2020 Update for BizTalk A4Swift Message Pack 2019.<br /><br />\r\nThis update installs the flat-file (MT) messaging schemas and policies used by Microsoft BizTalk Accelerator for SWIFT to correspond to the SWIFT messaging standards for Service Release 2020.<br />\r\nThis update also includes the fixes of Message Pack 2019 CU1.<br /><br />\r\n\r\n<b>Microsoft BizTalk Accelerator for SWIFT \u2013 Message Pack</b><br />\r\n<b>Important Announcement</b><br /><br />\r\nGoing forward, Microsoft is planning to make the code for Message Pack publicly available on GitHub. We will encourage collaboration among the users and community in updating the schemas and validation policies as applicable. More details and specifics will be posted on https://techcommunity.microsoft.com/t5/biztalk-server/ct-p/BizTalkServer.<br />\r\nIn this context, it is important to note that Message Pack 2020 is the last release driven and delivered by Microsoft. <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.971.0",
+    "detailsSection_file_name": [
+        "MP2019-KB4583002-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Microsoft BizTalk Accelerator for SWIFT Message Pack 2019.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 8.1",
+        "Windows 10"
+    ],
+    "installInstructionSection": "The Microsoft BizTalk Accelerator for SWIFT Message Pack 2019 should be downloaded and installed successfully before installing this Update.\r\n\r\nRun the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102265",
+    "downloadPreload": true
+}

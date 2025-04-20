@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Project Server 2010 deployment planning podcast",
+    "downloadDescription": "Project Server experrts discuss planning considerations for Microsoft Project Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DeploymentPlanningPodcastChefetz.mp3",
+            "url": "https://download.microsoft.com/download/2/e/8/2e8c9e42-7684-42ea-a661-f2e9ffdb6abc/DeploymentPlanningPodcastChefetz.mp3",
+            "size": "42573590",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:10:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In this podcast, Microsoft Program Manager Treb Gatte and consultant, author, and Microsoft MVP Gary Chefetz discuss planning considerations for Microsoft Project Server 2010. Topics of discussion include organizational readiness, organizational culture shift, defining business goals, and identifying and working with stakeholders.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DeploymentPlanningPodcastChefetz.mp3"
+    ],
+    "detailsSection_file_size": [
+        "40.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Internet connection",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14403",
+    "downloadPreload": true
+}

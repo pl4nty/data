@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: How to Configure Reporting Services and Analysis Services to Support Enterprise Portal Sites in the Extranet",
+    "downloadDescription": "This paper describes the additional steps that are required to make business intelligence functionality based on Microsoft SQL Server Reporting Services and Microsoft SQL Server Analysis Services available for Enterprise Portal for Microsoft Dynamics AX 2009 sites in an extranet.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "How to configure Reporting Services and Analysis Services to support Enterprise Portal sites in the extranet_AX2009.pdf",
+            "url": "https://download.microsoft.com/download/4/0/5/405302a8-37b9-46b9-a417-3008c7b75718/How to configure Reporting Services and Analysis Services to support Enterprise Portal sites in the extranet_AX2009.pdf",
+            "size": "442008",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper describes the additional steps that are required to make business intelligence functionality based on Microsoft SQL Server Reporting Services and Microsoft SQL Server Analysis Services available for Enterprise Portal for Microsoft Dynamics AX 2009 sites in an extranet.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "How to configure Reporting Services and Analysis Services to support Enterprise Portal sites in the extranet_AX2009.pdf"
+    ],
+    "detailsSection_file_size": [
+        "431.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30430",
+    "downloadPreload": true
+}

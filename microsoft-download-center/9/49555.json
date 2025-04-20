@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Orchestrator Integration Modules",
+    "downloadDescription": "Integration Modules converted from Microsoft supported Integration Packs for Orchestrator",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Orchestrator_Integration_Modules.exe",
+            "url": "https://download.microsoft.com/download/2/0/f/20f8891f-2230-44db-91cc-b74d1dc5a7f1/System_Center_Orchestrator_Integration_Modules.exe",
+            "size": "4968040",
+            "version": "Beta",
+            "datePublished": "7/15/2024 4:04:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Orchestrator Integration Modules are converted from the Microsoft supported <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=39622\">Integration Packs</a> for Orchestrator.  They support the migration of Orchestrator runbooks to Azure Automation and Service Management Automation.  The modules include activities to connect against:\r\n<ul>\r\n<li>System Center Virtual Machine Manager</li>\r\n<li>System Center Data Protection Manager</li>\r\n<li>FTP</li>\r\n<li>Exchange Admin</li>\r\n<li>Exchange User</li>\r\n<li>SharePoint</li>\r\n<li>REST</li>\r\n<li>Active Directory</li>\r\n<li>Azure</li>\r\n<li>VMware vSphere</li>\r\n<li>HP Operations Manager</li>\r\n</ul>\r\nFor more information, please refer to the <a href=\"http://azure.microsoft.com/en-us/documentation/articles/automation-orchestrator-migration/\">documentation</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Beta",
+    "detailsSection_file_name": [
+        "System_Center_Orchestrator_Integration_Modules.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>RAM \u2013 minimum 1GB recommended 2GB</li>\r\n<li>Disk space minimum 200MB</li>\r\n<li>CPU Dual Core or better</li>\r\n<li>Windows Server 2012 R2</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard "
+    ],
+    "installInstructionSection": "Download the exe, extract and import the integration modules.",
+    "additionalInformationSection": "The SharePoint Integration module requires the 64-bit (x64) version of <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=35585\">SharePoint Server 2013 Client Components SDK</a> to be installed on any runbook workers.  \r\n<ul>\r\n<li>For Service Management Automation, install the SDK on any runbook worker computers.</li>\r\n<li>For Azure Automation, install the SDK on any Hybrid Runbook Workers.  The SDK is not available on Azure Automation workers in the cloud, so runbooks that use this integration module must be run on Hybrid Runbook Workers.</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49555",
+    "downloadPreload": true
+}

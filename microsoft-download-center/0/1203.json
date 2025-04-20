@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft ASP.NET 3.5 Extensions Preview (Dec 2007) \u2013 ADO.NET Data Services Silverlight Add-On",
+    "downloadDescription": "This add-on provides an ADO.NET Data Services client library to run inside Microsoft Silverlight 1.1 Alpha September Refresh applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ADONETDataServices_SilverlightAddOn.exe",
+            "url": "https://download.microsoft.com/download/7/9/6/7968fc29-cccd-4ac7-bb70-be8c37f82856/ADONETDataServices_SilverlightAddOn.exe",
+            "size": "96768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft ASP.NET 3.5 Extensions Preview CTP shipped in Dec of 2007 and included a client library to facilitate access to ADO.NET Data Services from applications built using the .NET Framework.<br />\n<br />\nThis add-on extends that CTP by introducing a version of the client library that can run inside the Microsoft Silverlight 1.1 environment. Like the .NET Framework version, this library also allows developers to execute queries asynchronously, providing a more natural interaction model for a web-centric application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ADONETDataServices_SilverlightAddOn.exe"
+    ],
+    "detailsSection_file_size": [
+        "94.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Silverlight 1.1 Alpha September Refresh<br />\nMicrosoft ASP.NET 3.5 Extensions Preview Dec 2007 CTP (optional)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the self-extracting archive file and extract the Microsoft.Data.WebClient.dll assembly from it. The assembly can be used as a \"user assembly\"; simply add a reference to it from your Silverlight project in Visual Studio. The use of the API is identical to the existing (.NET) client library, as documented in the \"Using ADO.NET Data Services\" document.",
+    "additionalInformationSection": "For additional information, updates and for details go to the ADO.NET Data Services web site at http://astoria.mslivelabs.com.",
+    "relatedResourcesSection": [
+        {
+            "title": "asP.NET 3.5 Extensions Preview (Dec 2007)",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=105029"
+        },
+        {
+            "title": "msdn Data Access and Storage Developer Center",
+            "url": "http://msdn2.microsoft.com/en-us/data/default.aspx"
+        },
+        {
+            "title": "microsoft ADO.NET Data Services",
+            "url": "http://astoria.mslivelabs.com/"
+        },
+        {
+            "title": "silverlight",
+            "url": "http://www.silverlight.net/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1203",
+    "downloadPreload": true
+}

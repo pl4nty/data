@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Multi-Tenancy and Hosting Guidance for Exchange Server 2013",
+    "downloadDescription": "This document provides information and offers advice and direction to help ensure the Exchange multi-tenant environment that you build can be supported by Microsoft.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Multi-Tenancy_and_Hosting_Guidance_For_Exchange_Server_2013.docx",
+            "url": "https://download.microsoft.com/download/0/3/5/0357f1c1-8dbc-4cc8-873e-d38e0d0855a0/Multi-Tenancy_and_Hosting_Guidance_For_Exchange_Server_2013.docx",
+            "size": "104056",
+            "version": "Feb2013",
+            "datePublished": "7/15/2024 3:31:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A multi-tenant Exchange deployment is defined in this document as one where the system has been configured to host multiple and discrete organizations or business units (the tenants) that ordinarily do not share e-mail, data, users, global address lists, or any of the other commonly used objects in Exchange.<br/>\r\n<br/>\r\nThis document does not provide step-by-step instructions about how to configure multi-tenancy with Exchange 2013. It provides information and offers advice and direction to help ensure the Exchange environment that you build can be supported by Microsoft.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2013",
+    "detailsSection_file_name": [
+        "Multi-Tenancy_and_Hosting_Guidance_For_Exchange_Server_2013.docx"
+    ],
+    "detailsSection_file_size": [
+        "101.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36790",
+    "downloadPreload": true
+}

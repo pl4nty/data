@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Delivering Business-Critical Solutions with SharePoint 2010",
+    "downloadDescription": "Siloed information and processes can limit business performance and consume IT resources.  This white paper discusses how SharePoint 2010 can connect users to business data that currently resides in disparate systems, allowing solutions that streamline processes and result in better, faster decisions by your organization. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Delivering Business-Critical Solutions with SharePoint 2010 TDM.docx",
+            "url": "https://download.microsoft.com/download/1/b/6/1b640a39-8f20-4441-8ae4-40cc9fef9665/Delivering Business-Critical Solutions with SharePoint 2010 TDM.docx",
+            "size": "2731005",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Delivering Business-Critical Solutions with SharePoint 2010 TDM.pdf",
+            "url": "https://download.microsoft.com/download/1/b/6/1b640a39-8f20-4441-8ae4-40cc9fef9665/Delivering Business-Critical Solutions with SharePoint 2010 TDM.pdf",
+            "size": "954660",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Delivering Business-Critical Solutions with SharePoint 2010 TDM.xps",
+            "url": "https://download.microsoft.com/download/1/b/6/1b640a39-8f20-4441-8ae4-40cc9fef9665/Delivering Business-Critical Solutions with SharePoint 2010 TDM.xps",
+            "size": "1124523",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Business users at every level of your organization should have access to important data and be connected to processes that enable them to support operations. However, critical business data often is stored in disparate systems and ad hoc processes block efficiencies. Users call on IT to assist them in reaching and reconciling this business data, which can divert important IT resources away from strategic work that positions IT as a business partner, rather than a cost center.\r\nThis white paper is intended for Chief Information Officers, Chief Technical Officers, infrastructure managers and information system managers who want to deliver business-critical solutions while driving business value and reducing business risk. These solutions can be implemented across the organization and empower business users to get more value out of line-of-business (LOB) systems, thus extending the reach of important business data and improving business processes. This can be accomplished by connecting LOB applications to Microsoft SharePoint 2010 to organize and facilitate broad access to previously siloed information.\r\nThis white paper explains how to: \r\n - Increase access to critical backend business data by surfacing it in SharePoint 2010.\r\n - Enhance the effectiveness of business processes by building on SharePoint 2010 and using its platform capabilities.\r\n - Deliver fast return on investment (ROI) by lowering business risk, decreasing training costs and enhancing compliance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Delivering Business-Critical Solutions with SharePoint 2010 TDM.docx",
+        "Delivering Business-Critical Solutions with SharePoint 2010 TDM.pdf",
+        "Delivering Business-Critical Solutions with SharePoint 2010 TDM.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "932.3 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required Software:\r\n - Microsoft Word, Word Reader, XPS file reader or Adobe PDF file reader: The documents in this download is provided in DOCX file format, XPS file format, and PDF file format, and requires the appropriate file reader for the format you choose.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the white paper and read with appropriate file viewer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28133",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ConferenceXP Source Code",
+    "downloadDescription": "The ConferenceXP research platform enables researchers and developers to create distributed applications that take advantage of ConferenceXP technology, as well as Tablet PCs and wireless networks. Last published: January 8, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CXPSourceSetup.msi",
+            "url": "https://download.microsoft.com/download/4/8/4/484c14c7-e60e-4d6f-8f3d-a2200aa44994/CXPSourceSetup.msi",
+            "size": "7811072",
+            "version": "4.0",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The ConferenceXP research platform enables researchers and developers to create distributed applications that take advantage of ConferenceXP technology, as well as Tablet PCs and wireless networks. The platform also enables users to develop the collaborative tools and applications they need without having to build them from scratch. By partnering with research organizations and universities, the ConferenceXP project combines the academic community\u2019s expertise in the learning sciences with Microsoft\u2019s expertise in technology.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "CXPSourceSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52601",
+    "downloadPreload": true
+}

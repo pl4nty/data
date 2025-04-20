@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Planner admin tenant",
+    "downloadDescription": "Zip file of cmdlets to use with Microsoft Planner admin tenant",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "plannertenantadmin.zip",
+            "url": "https://download.microsoft.com/download/8/4/d/84d8ccb8-387e-4817-a5a2-2d0acd4d7477/plannertenantadmin.zip",
+            "size": "173623",
+            "version": "1",
+            "datePublished": "6/15/2024 4:57:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the zip file of cmdlets to use with Microsoft Planner admin tenant.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "plannertenantadmin.zip"
+    ],
+    "detailsSection_file_size": [
+        "169.6 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "iOS",
+        "Android",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102902",
+    "downloadPreload": true
+}

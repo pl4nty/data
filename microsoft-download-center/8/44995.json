@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "BinScope 2014",
+    "downloadDescription": "BinScope is a Microsoft verification tool that analyzes binaries on a project-wide level to ensure that they have been built in compliance with Microsoft\u2019s Security Development Lifecycle (SDL) requirements and recommendations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Binscope 2014 User Guide.docx",
+            "url": "https://download.microsoft.com/download/5/6/0/56027be0-3a1f-4326-b966-bc99a15856aa/Binscope 2014 User Guide.docx",
+            "size": "51520",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:56:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BinScope_x86.msi",
+            "url": "https://download.microsoft.com/download/5/6/0/56027be0-3a1f-4326-b966-bc99a15856aa/BinScope_x86.msi",
+            "size": "1196032",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:56:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Binscope 2014 Getting Started Guide.docx",
+            "url": "https://download.microsoft.com/download/5/6/0/56027be0-3a1f-4326-b966-bc99a15856aa/Binscope 2014 Getting Started Guide.docx",
+            "size": "177206",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:56:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BinScope_x64.msi",
+            "url": "https://download.microsoft.com/download/5/6/0/56027be0-3a1f-4326-b966-bc99a15856aa/BinScope_x64.msi",
+            "size": "1282048",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:56:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BinScope Binary Analyzer is a verification tool that analyzes binaries to ensure that they have been built in compliance with the SDL requirements and recommendations. Microsoft BinScope was designed in order to help detect potential vulnerabilities that can be introduced into Binary files. The tests implemented in BinScope examine application binary files to identify coding and building practices that can potentially render the application vulnerable to attack or to being used as an attack vector.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2014",
+    "detailsSection_file_name": [
+        "Binscope 2014 User Guide.docx",
+        "BinScope_x86.msi",
+        "Binscope 2014 Getting Started Guide.docx",
+        "BinScope_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "50.3 KB",
+        "1.1 MB",
+        "173.1 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 4.0 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<U>To set up BinScope: </U><br /><br />\r\n1. Ensure that .NET Framework 4.0 or later is installed on your computer.<br /><br />\r\n2. Navigate to http://go.microsoft.com/?linkid=9678113 and download BinScope_x64.msi or BinScope_x86.msi. <br /><br />\r\n3. Run BinScope_x64.msi or BinScope_x86.msi.<br /><br />\r\n4. Click Next and follow menu instructions to complete the installation. <br /><br /><br />\r\nSee the Help documentation included in the BinScope application for further details on configuring and using BinScope.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44995",
+    "downloadPreload": true
+}

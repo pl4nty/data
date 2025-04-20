@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "DR for SQL Server - Service Offers",
+    "downloadDescription": "This zipped folder includes sample service offers including service catalog and guidance for CSP partners interested in launching SQL Disaster Recovery for hosted or on-premises data in Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DR for SQL Server - Service Offers.zip",
+            "url": "https://download.microsoft.com/download/6/c/b/6cb45742-fd76-4b8d-97e3-433721ee8511/DR for SQL Server - Service Offers.zip",
+            "size": "2224573",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:59:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes sample service offers including service catalog and guidance for CSP partners interested in launching SQL Disaster Recovery for hosted or on-premises data in Azure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "DR for SQL Server - Service Offers.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50786",
+    "downloadPreload": true
+}

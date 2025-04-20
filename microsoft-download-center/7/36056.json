@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Using multi-tenancy in Microsoft Dynamics CRM 2013 to address challenges in enterprise business environments",
+    "downloadDescription": "This white paper discusses scenarios in which using multiple Microsoft Dynamics CRM 2013 instances to separate areas of functionality can assist in addressing business challenges in the Enterprise. It also describes some common approaches for integrating multiple, separate instances of Microsoft Dynamics CRM 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Using multi-tenancy in Microsoft Dynamics CRM 2013 to address challenges in enterprise business environments.pdf",
+            "url": "https://download.microsoft.com/download/8/3/c/83cefb76-cd62-496c-869c-df9b157ef525/Using multi-tenancy in Microsoft Dynamics CRM 2013 to address challenges in enterprise business environments.pdf",
+            "size": "2153551",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "There are a number of complexities associated with implementing large-scale CRM projects in Enterprise business scenarios. In these situations, using multiple tenants in Microsoft Dynamics CRM 2013 can help to address several typical challenges, which include:<br />\r\n\r\n- Functional localization, for organizations with different business units or areas that have varying business requirements or processes<br />\r\n\r\n- Master data management, for organizations that need to distribute but maintain control of business data in certain ways<br />\r\n\r\n- Physical distribution, for organizations with user base that is physically distributed in ways that introduce challenges such as distance of connections<br />\r\n\r\n- Security and privacy, for organizations that need complex control of distribution or access to data<br />\r\n\r\n- Scalability, for organizations with workload requirements that exceed or are prohibitively costly to host within a single system<br />\r\n<br />\r\nMicrosoft Dynamics CRM offers a variety of capabilities that allow customers to implement rich solutions to address complicated business requirements, which tend to have an even higher degree of complexity for customers in the Enterprise. For solutions that incorporate multiple instances of Microsoft Dynamics CRM 2013, a second major consideration is any potential need for integration or interaction between the different instances in the overall business solution.<br />\r\n<br />\r\nThis white paper discusses scenarios in which using multiple instances of Microsoft Dynamics CRM 2013 to separate areas of functionality can assist in addressing business challenges in the Enterprise. The paper also describes some common approaches for integrating multiple, separate instances of Microsoft Dynamics CRM 2013.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Using multi-tenancy in Microsoft Dynamics CRM 2013 to address challenges in enterprise business environments.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe\u00a9 Reader.</LI><br />\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36056",
+    "downloadPreload": true
+}

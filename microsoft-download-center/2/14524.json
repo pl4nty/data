@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "SSO Configuration Application MMC Snap-In",
+    "downloadDescription": "This tool provides the ability to add and manage applications, add and manage key value pairs, as well as import and export configuration applications so that they can be deployed to different environments. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSO Configuration Application MMC Snap-In.docx",
+            "url": "https://download.microsoft.com/download/5/b/1/5b1e3e58-ecdf-42aa-87b7-78622b628672/SSO Configuration Application MMC Snap-In.docx",
+            "size": "14454",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SSOConfigurationMMCSnapIn.zip",
+            "url": "https://download.microsoft.com/download/5/b/1/5b1e3e58-ecdf-42aa-87b7-78622b628672/SSOConfigurationMMCSnapIn.zip",
+            "size": "533926",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Currently in Enterprise Single Sign-On (SSO), there are three utilities to perform SSO-based tasks: <UL><LI>SSOConfig</LI><LI>SSOManage</LI><LI>SSOClient</LI></UL> All these tools focus on managing credentials.  There has been a lack of tooling for ability to create and manage configuration-based applications. This has now changed with the creation of the SSO Configuration Application MMC Snap-In. \r\n\r\nThis tool provides the ability to add and manage applications, add and manage key value pairs, as well as import and export configuration applications so that they can be deployed to different environments. Also provided is a client-side class that makes accessing the SSO system to retrieve your key/value pairs easy. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SSO Configuration Application MMC Snap-In.docx",
+        "SSOConfigurationMMCSnapIn.zip"
+    ],
+    "detailsSection_file_size": [
+        "14.1 KB",
+        "521.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003, Windows Server 2008, Windows Vista, Windows XP<br></br>\r\n\r\nTo view the Word document: Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14524",
+    "downloadPreload": true
+}

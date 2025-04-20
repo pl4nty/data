@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "paraF: Parametric flow algorithm implementation",
+    "downloadDescription": "This is an implementation of the Gallo-Grigoriadis-Tarjan algorithm and its variations used in an experimental study described in MSR-TR-2006-77. Last published: December 22, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "paraF.zip",
+            "url": "https://download.microsoft.com/download/c/b/9/cb91db93-807d-4126-a5c6-002319066dbc/paraF.zip",
+            "size": "23704",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is an implementation of the Gallo-Grigoriadis-Tarjan algorithm and its variations used in an experimental study described in MSR-TR-2006-77.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "paraF.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.1 KB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52400",
+    "downloadPreload": true
+}

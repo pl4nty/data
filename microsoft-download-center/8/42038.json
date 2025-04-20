@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Online Client Components SDK",
+    "downloadDescription": "The SharePoint Online Client Components SDK can be used to enable development with SharePoint Online. Notice that we do recommend using rather NuGet packages than installing CSOM assemblies to GAC.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sharepointclientcomponents_16-6518-1200_x86-en-us.msi",
+            "url": "https://download.microsoft.com/download/b/3/d/b3da6839-b852-41b3-a9df-0afa926242f2/sharepointclientcomponents_16-6518-1200_x86-en-us.msi",
+            "size": "2179072",
+            "version": "16.0.6906.1200",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sharepointclientcomponents_16-6906-1200_x64-en-us.msi",
+            "url": "https://download.microsoft.com/download/b/3/d/b3da6839-b852-41b3-a9df-0afa926242f2/sharepointclientcomponents_16-6906-1200_x64-en-us.msi",
+            "size": "2215936",
+            "version": "16.0.6906.1200",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sharepointclientcomponents_16-6518-1200_x64-en-us.msi",
+            "url": "https://download.microsoft.com/download/b/3/d/b3da6839-b852-41b3-a9df-0afa926242f2/sharepointclientcomponents_16-6518-1200_x64-en-us.msi",
+            "size": "2187264",
+            "version": "16.0.6906.1200",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sharepointclientcomponents_16-6906-1200_x86-en-us.msi",
+            "url": "https://download.microsoft.com/download/b/3/d/b3da6839-b852-41b3-a9df-0afa926242f2/sharepointclientcomponents_16-6906-1200_x86-en-us.msi",
+            "size": "2215936",
+            "version": "16.0.6906.1200",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nThis easy-to-use, redistributable package of the Microsoft Silverlight and Microsoft .NET managed client object models in Microsoft SharePoint Online enables developers to reference the client object model. The package includes a comprehensive collection of client-side object model (CSOM) DLLs including the portable libraries, enabling development on devices. Notice that we do recommend using rather NuGet packages in your customizations than referencing assemblies from Global Assembly Cache (GAC). You can find SharePoint Online CSOM NuGet package from following location - https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/. All new releases are being communicated at http://dev.office.com/blogs. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.6906.1200",
+    "detailsSection_file_name": [
+        "sharepointclientcomponents_16-6518-1200_x86-en-us.msi",
+        "sharepointclientcomponents_16-6906-1200_x64-en-us.msi",
+        "sharepointclientcomponents_16-6518-1200_x64-en-us.msi",
+        "sharepointclientcomponents_16-6906-1200_x86-en-us.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and run the file on this page. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42038",
+    "downloadPreload": true
+}

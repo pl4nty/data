@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "January 2007 Security Releases ISO Image",
+    "downloadDescription": "This ISO-9660 CD image file contains the security updates for Windows released on Windows Update on January 9th, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200701-1.iso",
+            "url": "https://download.microsoft.com/download/5/9/4/5946b4de-07a6-43b3-80c4-bba0a6a9a7fe/Windows-KB913086-200701-1.iso",
+            "size": "171587584",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:15:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This ISO-9660 CD image file contains the security updates for Windows released on Windows Update on January 9th, 2007. It does not contain security updates for other Microsoft products. This CD image is intended for corporate administrators who manage large multinational organizations, who need to download multiple individual language versions of each security update and who do not use an automated solution such as WSUS. Use this image to download multiple updates in all languages at the same time. <br /><br />\n\nCaution: Be sure to check the individual security bulletins at http://www.microsoft.com/technet/security prior to deployment of these updates to ensure that the files have not been updated at a later date.  <br /><br />\n\nThis CD image contain the following update: <br />\n<B><a href=\"http://support.microsoft.com/kb/929969\">KB929969</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=73174\">(MS07-004)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages </LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages </LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition - 2 languages </LI>\n<LI>Windows 2000 - 24 languages </LI>\n<LI>Windows Vista RC1 - English </LI>\n<LI>Windows Vista RC1 for Itanium-based Systems - English </LI>\n<LI>Windows Vista RC1 for x64-based Systems - English </LI>\n\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB929969",
+        "name": "KB929969"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-004",
+        "name": "MS07-004"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200701-1.iso"
+    ],
+    "detailsSection_file_size": [
+        "163.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Vista",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B></LI>.<br />\n<LI>To copy the ISO Image download to your computer to burn a CD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI><br /><LI>Use the directions for your CD burner to create a CD from the ISO Image.</LI><br />\n<br />\n<B>Download Information</B> <br/> \n<UL>\n<LI>Windows-KB913086-200701-1.iso contains KB929969 for Windows Vista RC1, \nWindows XP and Windows Server 2003; KB929969 for IE for Windows XP, Windows 2000 \nand Windows Server 2003.</LI><br/>\n</UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11953",
+    "downloadPreload": true
+}

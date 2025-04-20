@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Debug Diagnostic Tool v2 Update 2",
+    "downloadDescription": "The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DebugDiagx86.msi",
+            "url": "https://download.microsoft.com/download/d/c/9/dc98bd0e-5a9a-4d8a-b313-22bc3604fb05/DebugDiagx86.msi",
+            "size": "18157568",
+            "version": "2.2.0.14",
+            "datePublished": "7/15/2024 5:02:38 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DebugDiagx64.msi",
+            "url": "https://download.microsoft.com/download/d/c/9/dc98bd0e-5a9a-4d8a-b313-22bc3604fb05/DebugDiagx64.msi",
+            "size": "23175168",
+            "version": "2.2.0.14",
+            "datePublished": "7/15/2024 5:02:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process. The tool includes built-in analysis rules focused on Internet Information Services (IIS) applications, web data access components, COM+, SharePoint and related Microsoft technologies. Debugdiag 2.0 introduces a new analysis engine host with built-in reporting framework that can be accessed from .NET.  This new analysis engine simplifies analysis rule development in .NET.  Starting with Debugdiag 2.0, the analysis engine relies on Microsoft.Diagnostics.Runtime for .NET analysis.\r\n<ul>\r\n<li>DebugDiag 1.0 released as part of the IIS Diagnostic Toolkit and as a standalone tool (x86 only). </li>\r\n<li> DebugDiag 1.1 released as a standalone tool only (x86 and limited x64 support). </li>\r\n<li> DebugDiag 1.2 released as a standalone tool only (x86 and full x64 support).</li>\r\n<li> DebugDiag 2.0 released as a standalone tool only (x86 and full x64 support).</li>\r\n</ul>\r\n<br> </br>\r\n<br>DebugDiag 2 Update 2 addressed a number of issues that were reported in version 2.0 and 2.1  in both the collection and analysis modules. Below is a summary of fixes and features:</br>\r\n\r\n<br> </br>\r\nSummary of Fixes:\r\n<br>===============</br>\r\n<br> </br>\r\n<ul>\r\n<li>Resolved issue with memory leak in dbghost due to bug in sos.dll</li>\r\n<li>Resolved issue with high CPU in dbghost due to exception monitoring when the target throws high rate of exceptions</li>\r\n<li>Added Autoupdate security enhancements</li>\r\n<li>Fixes in leaktrack native memory tracking</li>\r\n<li>A number of exceptions during analysis are resolved</li>\r\n</ul>\r\n\r\n\r\n<br> </br>\r\nSummary of Features: \r\n<br>=================</br>\r\n<br> </br>\r\n<ul>\r\n<li>New report format with greatly improved organization and filtering </li>\r\n<li>Introduced latest Microsoft.Diagnostics.Runtime.dll  </li>\r\n<li>A number of new analysis checks are added </li>\r\n<li>Added support for analysis of .net 4.6 targets</li>\r\n\r\n</ul>\r\n\r\n \r\n\r\n<br> </br>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2.0.14",
+    "detailsSection_file_name": [
+        "DebugDiagx86.msi",
+        "DebugDiagx64.msi"
+    ],
+    "detailsSection_file_size": [
+        "17.3 MB",
+        "22.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Collection Module: \r\n<br>============</br>\r\n<ul>\r\n<li>Windows 2008</li>\r\n<li>Windows Vista</li>\r\n<li>Windows 2008 R2</li>\r\n<li>Windows 7</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n</ul>\r\n<br></br>\r\nAnalysis Module:\r\n<br>============</br>\r\n<ul>\r\n<li>.NET 4.0 </li>\r\n<li>Windows 2008</li>\r\n<li>Windows Vista</li>\r\n<li>Windows 2008 R2</li>\r\n<li>Windows 7</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "- Remove any previous version\r\n- Run the MSI",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49924",
+    "downloadPreload": true
+}

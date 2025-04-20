@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics Security Synchronization Utility White Paper: Integrating with the ApplicationRoleProvider Framework",
+    "downloadDescription": "This document describes how to use the ApplicationRoleProvider class to develop and configure standalone applications, and create application providers compatible with the Microsoft Dynamics Security Synchronization Utility.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MDSSU_Integration_WhitePaper.pdf",
+            "url": "https://download.microsoft.com/download/b/0/7/b070f64c-6a83-4f5c-9a9a-df9ffc9f8588/MDSSU_Integration_WhitePaper.pdf",
+            "size": "201156",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MDSSU_Integration_WhitePaper.xps",
+            "url": "https://download.microsoft.com/download/b/0/7/b070f64c-6a83-4f5c-9a9a-df9ffc9f8588/MDSSU_Integration_WhitePaper.xps",
+            "size": "493538",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics Security Synchronization Utility is a standalone executable application that enables the synchronization of users across applications. The application supports various Microsoft applications, including Windows SharePoint Services, Web Services for Microsoft Dynamics GP, Microsoft Dynamics GP, and Business Portal for Microsoft Dynamics GP.<br /><br />\nThe utility is also a framework made up of a suite of APIs that can be used to generically and simply interact with the security subsystems of applications. The utility reads from and writes to a configuration file that stores the property values that are specific to each application provider. These properties vary by application. The utility\u2019s user interface allows you to specify values for these properties and writes them to the configuration file.<br /><br />\nThis document describes the ApplicationRoleProvider class and explains how to develop assemblies that will allow third-party applications to work with the synchronization utility, customize property validation, and deploy the assembly. Code samples are included for all the classes mentioned, and a comprehensive example of creating a provider also is included.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "MDSSU_Integration_WhitePaper.pdf",
+        "MDSSU_Integration_WhitePaper.xps"
+    ],
+    "detailsSection_file_size": [
+        "196.4 KB",
+        "482.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "security Synchronization Utility",
+            "url": "https://mbs.microsoft.com/customersource/downloads/servicepacks/mdgp10sl70_bpsecuritysynchronizationutility.htm?printpage=false"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12902",
+    "downloadPreload": true
+}

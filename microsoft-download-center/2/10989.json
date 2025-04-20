@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 White Paper: Using a .NET Assembly from a Dexterity-based Application",
+    "downloadDescription": "This paper describes how to create a .NET assembly and use it in a Microsoft Dexterity-based application.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DotNetFromDexterity.pdf",
+            "url": "https://download.microsoft.com/download/9/2/2/922f2626-f911-40d1-b85f-5ec5ca9ba6a4/DotNetFromDexterity.pdf",
+            "size": "278167",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DotNetFromDexterity.xps",
+            "url": "https://download.microsoft.com/download/9/2/2/922f2626-f911-40d1-b85f-5ec5ca9ba6a4/DotNetFromDexterity.xps",
+            "size": "394657",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the steps to write a C# class and compile it into a .NET assembly that can be called via COM from a Dexterity-based application such as Microsoft Dynamics GP. After the .NET assembly is created, a Dexterity script is created that calls and tests the code in the assembly. <br /><br />\nThe C# class created for this example is a simple. However, more complex projects can be created and used successfully. <br /><br />\nThis example was created and tested using the following:\n<UL><LI>Microsoft Dynamics GP 10.0 SP2</LI>\n<LI>Microsoft Dexterity 10.0.313</LI>\n<LI>Microsoft Visual Studio 2005 SP1</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "DotNetFromDexterity.pdf",
+        "DotNetFromDexterity.xps"
+    ],
+    "detailsSection_file_size": [
+        "271.6 KB",
+        "385.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "This document assumes that you have some experience with Microsoft Dynamics GP, Microsoft Dexterity, and Microsoft Visual C#.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10989",
+    "downloadPreload": true
+}

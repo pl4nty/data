@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Setup Guide: Server-side synchronization for CRM Online and Exchange Server",
+    "downloadDescription": "Learn how to set up the server-side synchronization connection between Microsoft Dynamics CRM Online and Microsoft Exchange email servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Setup Guide Server-side synchronization for CRM Online and Exchange Server.pdf",
+            "url": "https://download.microsoft.com/download/e/d/0/ed05ca70-190f-4bae-9f6a-0bb2f0010b81/Setup Guide Server-side synchronization for CRM Online and Exchange Server.pdf",
+            "size": "886475",
+            "version": "1",
+            "datePublished": "7/15/2024 4:07:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Server-side synchronization is a component in Microsoft Dynamics CRM that is used to integrate CRM with Microsoft Exchange email servers. Server-side synchronization is the preferred option for organizations with users who run CRM in a web browser or on a mobile device, such as a tablet or smartphone. In CRM Online 2016 Update, we have added a hybrid server-side synchronization capability: the support of CRM Online with Exchange Server (on-premises).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Setup Guide Server-side synchronization for CRM Online and Exchange Server.pdf"
+    ],
+    "detailsSection_file_size": [
+        "865.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For docx files, Microsoft Office Word 2003 or later versions, or a compatible viewer. For pdf files, an Adobe PDF reader is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button to start the download.</li>\r\n<li>To copy the file to your computer, click Save to save this file to disk.</li>\r\n<li>To extract the document, double-click the compressed file.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49534",
+    "downloadPreload": true
+}

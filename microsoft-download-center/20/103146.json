@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Salesforce App and Microsoft Intune",
+    "downloadDescription": "This document addresses how the Salesforce app works with Microsoft Intune and describes the app's built-in data protection policies. Salesforce has emphasized supporting mobile configuration and data protection in their app.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Salesforce App and Intune for external.pdf",
+            "url": "https://download.microsoft.com/download/8/7/c/87cd750b-6c39-4d67-94d4-40434f248b3c/Salesforce App and Intune for external.pdf",
+            "size": "143868",
+            "version": "App V11.0+",
+            "datePublished": "7/15/2024 4:30:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document addresses how the Salesforce app works with Microsoft Intune and describes the app's built-in data protection policies. Salesforce has emphasized supporting mobile configuration and data protection in their app. The Salesforce app supports several configuration settings that can be passed through MDM app config channels. With version 11.0 or later, Salesforce provides additional security and compliance configurations. These settings can be configured in the Salesforce site by and administrator. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "App V11.0+",
+    "detailsSection_file_name": [
+        "Salesforce App and Intune for external.pdf"
+    ],
+    "detailsSection_file_size": [
+        "140.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS"
+    ],
+    "installInstructionSection": "Download and view PDF file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103146",
+    "downloadPreload": true
+}

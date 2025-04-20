@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visio 2010 Developer Training",
+    "downloadDescription": "This is a three-volumne training series for Microsoft Visio 2010 developers.  The trainings cover Shapes and ShapeSheet fundamentals, diagramming solutions and publishing for process management, and programming with the Visio object model.  Each volumne describes the new features and provides some code samples.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visio 2010 Developer Training 02 - Solutions and Publishing.docx",
+            "url": "https://download.microsoft.com/download/f/0/0/f00e7198-cd99-40a9-a3b0-48e2ee0eab34/Visio 2010 Developer Training 02 - Solutions and Publishing.docx",
+            "size": "4338930",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Visio 2010 Developer Training 03 - Programming with the Visio Object Model.docx",
+            "url": "https://download.microsoft.com/download/f/0/0/f00e7198-cd99-40a9-a3b0-48e2ee0eab34/Visio 2010 Developer Training 03 - Programming with the Visio Object Model.docx",
+            "size": "2957419",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Visio 2010 Developer Training 01 - Shapes and ShapeSheet Fundamentals.docx",
+            "url": "https://download.microsoft.com/download/f/0/0/f00e7198-cd99-40a9-a3b0-48e2ee0eab34/Visio 2010 Developer Training 01 - Shapes and ShapeSheet Fundamentals.docx",
+            "size": "2530495",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The developer trainings highlight the new featurs available for developers in Visio 2010.  The new developer features parallel new features available through the user interface.  So just as there are new tools for validating process drawings through the user interface, there are tools for the developer to accomplish the same tasks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visio 2010 Developer Training 02 - Solutions and Publishing.docx",
+        "Visio 2010 Developer Training 03 - Programming with the Visio Object Model.docx",
+        "Visio 2010 Developer Training 01 - Shapes and ShapeSheet Fundamentals.docx"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB",
+        "2.8 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio Premium 2010\r\nMicrosoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download individual training volumne by selecting the \"Download\" button (above).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27198",
+    "downloadPreload": true
+}

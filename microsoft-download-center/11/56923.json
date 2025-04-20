@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2016 CU8 (KB4092041)",
+    "downloadDescription": "Security Update For Exchange Server 2016 CU8 (KB4092041)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB4092041-x64-en.msp",
+            "url": "https://download.microsoft.com/download/9/e/1/9e1d1a10-79c0-4599-bd51-a9e4c5c0ab8b/Exchange2016-KB4092041-x64-en.msp",
+            "size": "219394048",
+            "version": "15.01.1415.007",
+            "datePublished": "7/15/2024 4:56:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b> This security update resolves a vulnerability in Microsoft Exchange Outlook Web Access (OWA). The vulnerability could allow elevation of privilege or spoofing in Microsoft Exchange Server if an attacker sends an email message that has a specially crafted attachment to a vulnerable server that is running Exchange Server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4092041",
+        "name": "KB4092041"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.1415.007",
+    "detailsSection_file_name": [
+        "Exchange2016-KB4092041-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "209.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2016 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2016 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2016 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2016 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2016 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56923",
+    "downloadPreload": true
+}

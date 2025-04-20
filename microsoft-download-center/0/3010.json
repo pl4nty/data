@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Belgium for Hotfix Rollup 7",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 7, and that is specific to users in Belgium.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RU7_Country_specific_update_for_Belgium.pdf",
+            "url": "https://download.microsoft.com/download/0/3/4/03483cda-3013-4527-92a1-2bb51279edb6/RU7_Country_specific_update_for_Belgium.pdf",
+            "size": "294327",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RU7_Country_specific_update_for_Belgium.xps",
+            "url": "https://download.microsoft.com/download/0/3/4/03483cda-3013-4527-92a1-2bb51279edb6/RU7_Country_specific_update_for_Belgium.xps",
+            "size": "392137",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Belgium in hotfix rollup 7 for Microsoft Dynamics AX 2009 SP1.<br /><br />\r\nThe Single Euro Payment Area (SEPA) is an initiative in the European Union (EU) to provide common euro-based electronic banking to transfer payments within the SEPA region. With the SEPA Credit Transfer (CT), companies can make euro-based electronic credit transfers to their vendors within the SEPA region for single or bulk payments. The Belgian Generic ISO 20022 format is a similar format used to support non-SEPA and/or non-euro credit transfers. In Belgium, you can use the Belgian Generic ISO 20022 electronic payment format to support the following transactions:<br /><br />\r\n<UL><LI>Credit transfers in currencies other than euros</LI>\r\n<LI>Credit transfers outside the SEPA region (for example, a payment from a company in Belgium to a vendor company in the United States)</LI></UL><br /><br />\r\nAfter you generate the credit transfer initiation file in the Belgian Generic ISO 20022 format, you can integrate with the electronic banking application Isabel 6 to electronically transfer the generated file to the debtor\u2019s bank. Microsoft Dynamics AX can communicate with the Isabel 6 application programming interface (API) to upload and download banking files. Isabel Go offers the Client Isabel Synchronizer (CIS) integration mode, which is also referred to as Attended mode. You can enter an email address to receive feedback about the status of the payment files.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2503850. For more information about other features that apply to Belgium, refer to the Applications and Business Processes Help. Information that is specific to Belgium includes (BEL) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "RU7_Country_specific_update_for_Belgium.pdf",
+        "RU7_Country_specific_update_for_Belgium.xps"
+    ],
+    "detailsSection_file_size": [
+        "287.4 KB",
+        "382.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3010",
+    "downloadPreload": true
+}

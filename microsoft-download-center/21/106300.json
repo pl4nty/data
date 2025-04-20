@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Secure by default with Microsoft Purview and address oversharing",
+    "downloadDescription": "Presentation and deployment blueprint to address oversharing with Microsoft Purview",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Secure by default with Microsoft Purview.pptx",
+            "url": "https://download.microsoft.com/download/7/2/3/72318187-a0cb-4b5c-bfe6-1d9d399080fe/Secure by default with Microsoft Purview.pptx",
+            "size": "207878",
+            "version": "1.0",
+            "datePublished": "12/10/2024 10:55:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Secure by default with Microsoft Purview.pdf",
+            "url": "https://download.microsoft.com/download/7/2/3/72318187-a0cb-4b5c-bfe6-1d9d399080fe/Secure by default with Microsoft Purview.pdf",
+            "size": "251378",
+            "version": "1.0",
+            "datePublished": "12/10/2024 10:55:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This presentation contains the Purview deployment blueprint and storyboard for the 'Secure by default with Microsoft Purview and address oversharing' scenario.\r\n\r\nRead the detailed guide for this model at https://aka.ms/PurviewDeploymentModels/SecureByDefault \r\nLearn more about our Microsoft Purview Deployment models at https://aka.ms/PurviewDeploymentModels \r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Secure by default with Microsoft Purview.pptx",
+        "Secure by default with Microsoft Purview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "203.0 KB",
+        "245.5 KB"
+    ],
+    "detailsSection_file_date": "12/10/2024",
+    "systemRequirementsSection": "Microsoft Purview",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "PowerPoint and Adobe Acrobat reader of the presentation",
+    "relatedResourcesSection": [
+        {
+            "title": "detailed guide for this scenario",
+            "url": "https://aka.ms/PurviewDeploymentModels/SecureByDefault"
+        },
+        {
+            "title": "purview deployment models",
+            "url": "https://aka.ms/PurviewDeploymentModels"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "106300",
+    "downloadPreload": true
+}

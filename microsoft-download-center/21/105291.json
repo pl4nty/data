@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Hippocorpus",
+    "downloadDescription": "This dataset includes 6,854 English diary-like short stories about recalled and imagined events as well as sentence-level event annotations on a set of 240 stories.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "hippocorpus-u20220112.zip",
+            "url": "https://download.microsoft.com/download/3/c/3/3c388755-ac68-4858-8343-9acfb33c631d/hippocorpus-u20220112.zip",
+            "size": "10398286",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:59:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To examine the cognitive processes of remembering and imagining and their traces in language, we introduce Hippocorpus, a dataset of 6,854 English diary-like short stories about recalled and imagined events. Using a crowdsourcing framework, we first collect recalled stories and summaries from workers, then provide these summaries to other workers who write imagined stories. Finally, months later, we collect a retold version of the recalled stories from a subset of recalled authors. Our dataset comes paired with author demographics (age, gender, race), their openness to experience, as well as some variables regarding the author's relationship to the event (e.g., how personal the event is, how often they tell its story, etc.). **New to V3**: We expand the Hippocorpus by releasing sentence-level event annotations on a set of 240 stories. 8 crowdworkers went through an imagined, a recalled, and a retold story about the same event, sentence by sentence, and annotated whether the sentence marked the beginning of a new minor or major event, and if so, whether the event was surprising or expected. \r\n\r\nFor more information, please see our ACL 2020 papers: M. Sap, E. Horvitz, Y. Choi, N.A. Smith, J.W. Pennebaker. Recollection versus Imagination: Exploring Human Memory and Cognition via Neural Language Models, ACL 2020 available at http://erichorvitz.com/cognitive_studies_narrative.pdf. M. Sap, A. Jafarpour, Y. Choi, N.A. Smith, J.W. Pennebaker, E. Horvitz. Computational Lens on Cognition: Study of Autobiographical versus Imagined Stories with Large-Scale Language Models, arXiv, January 2022.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "hippocorpus-u20220112.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows 7, Windows 8, Windows 10, or Windows 11</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 10",
+        "Windows 11",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<ul><li>Click <b>Download</b> and follow the instructions.</li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105291",
+    "downloadPreload": true
+}

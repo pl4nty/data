@@ -1,0 +1,164 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 Server, v9.1 (on-premises) Update 1.6",
+    "downloadDescription": "Dynamics 365 Server, v9.1 (on-premises) Update 1.6",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM9.1-Tools-KB4618798-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/1/f/8/1f841fc0-a020-4a8b-bd01-9417f8d9b6d2/CRM9.1-Tools-KB4618798-ENU-amd64.exe",
+            "size": "4367256",
+            "version": "09.01.0006.0003",
+            "datePublished": "7/15/2024 5:05:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.1-Srs-KB4618798-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/1/f/8/1f841fc0-a020-4a8b-bd01-9417f8d9b6d2/CRM9.1-Srs-KB4618798-ENU-Amd64.exe",
+            "size": "75191112",
+            "version": "09.01.0006.0003",
+            "datePublished": "7/15/2024 5:05:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM9.1-Server-KB4618798-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/1/f/8/1f841fc0-a020-4a8b-bd01-9417f8d9b6d2/CRM9.1-Server-KB4618798-ENU-Amd64.exe",
+            "size": "1079443112",
+            "version": "09.01.0006.0003",
+            "datePublished": "7/15/2024 5:05:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        }
+    ],
+    "detailsSection": "\r\n      Microsoft has released Update 1.6 for Dynamics 365 Server, v9.1 (on-premises) and Dynamics 365 Reporting Extensions, v9.1 (on-premises). It includes performance enhancements that are packaged together for easy deployment. <br /> <br />\r\n\r\n      For more information about this release, see Microsoft Knowledge Base article 3142345: <br /> <br />\r\n      <a href=\"https://support.microsoft.com/help/3142345\">Service Update 1.6 for Microsoft Dynamics 365 Server, v9.1</a>\r\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3142345",
+        "name": "KB3142345"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.01.0006.0003",
+    "detailsSection_file_name": [
+        "CRM9.1-Tools-KB4618798-ENU-amd64.exe",
+        "CRM9.1-Srs-KB4618798-ENU-Amd64.exe",
+        "CRM9.1-Server-KB4618798-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB",
+        "71.7 MB",
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update must be installed on a computer that is running Dynamics 365 Server, v9.1 (on-premises), or Dynamics 365 Reporting Extensions, v9.1 (on-premises).",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "\r\n      To install this update, do one of the following:\r\n      <ol>\r\n        <li>\r\n          Select <b>Download</b>, select the update(s) you want, and then select <b>Next</b>.\r\n        </li>\r\n        <li>\r\n          To start the installation immediately, select <b>Run</b>.\r\n        </li>\r\n        <li>\r\n          To save the update to your computer for installation later, select <b>Save</b>.\r\n        </li>\r\n        <li>\r\n          To cancel the download, select <b>Cancel</b>.\r\n        </li>\r\n      </ol>\r\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "dynamics 365 Server, version 9.1 ",
+            "url": "https://www.microsoft.com/download/details.aspx?id=57478"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103648",
+    "downloadPreload": true
+}

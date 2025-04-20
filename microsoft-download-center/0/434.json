@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "HPC - Technical Overview of Windows HPC Server 2008 R2 ",
+    "downloadDescription": "Overview of new features and capabilites in the Windows HPC Server 2008 R2 solution, including SP1, SP2, and SP3.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsHPCServer2008R2TechnicalOverview_final.docx",
+            "url": "https://download.microsoft.com/download/a/2/c/a2c6ab4c-50e4-4af0-aef8-55040eb18d1f/WindowsHPCServer2008R2TechnicalOverview_final.docx",
+            "size": "1235509",
+            "version": "February 2012",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper provides an overview of Windows\u00ae HPC Server 2008 R2, including a list of new features, an overview of the Microsoft\u00ae HPC solution (including hardware and software requirements), and an overview of key capabilities in the areas of deployment, system management, job scheduler, runtime for Service Oriented Architectures (SOA), message-passing interface (MPI) and networking, Microsoft Office Excel\u00ae 2010 support, and security.\r\n<br /><br />\r\nThis paper includes updates for features that were added in Service Pack 1, Service Pack 2, and Service Pack 3.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2012",
+    "detailsSection_file_name": [
+        "WindowsHPCServer2008R2TechnicalOverview_final.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008 R2"
+    ],
+    "installInstructionSection": "To start the download, click the Download button.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "434",
+    "downloadPreload": true
+}

@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 R2 - Orchestrator  Component Add-ons and Extensions ",
+    "downloadDescription": "A collection of tools including the System Center 2012 R2 - Orchestrator Integration Toolkit, and the System Center 2012 R2 - Orchestrator Integration Packs",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe",
+            "url": "https://download.microsoft.com/download/9/c/f/9cf8ae30-5a81-4576-8a58-69d11b3863b5/System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe",
+            "size": "3138264",
+            "version": "2012 R2 ",
+            "datePublished": "7/15/2024 4:31:18 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC2012_R2_IPs.EXE",
+            "url": "https://download.microsoft.com/download/9/c/f/9cf8ae30-5a81-4576-8a58-69d11b3863b5/SC2012_R2_IPs.EXE",
+            "size": "11504896",
+            "version": "2012 R2 ",
+            "datePublished": "7/15/2024 4:31:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Orchestrator Integration Toolkit will work will future versions of Orchestrator. For the Integration Packs please choose integration packs for the specific version.\r\n<br/><br/>\r\n\r\nThe following System Center 2012 R2 - Orchestrator  add-ons and extensions are available for download: \r\n<br/><br/>\r\n<b>System Center 2012 R2 Orchestrator Integration Toolkit </b><br/>\r\nThis toolkit contains wizard-based utilities for creating new activities and integration packs for System Center 2012 SP1 Orchestrator . It also allows developers utilizing the Orchestrator SDK to create new custom integration packs for System Center 2012 SP1 Orchestrator . New feature in this release- Cascading Dependencies: <br/>\r\n<ul>Allow the user to have a progressive disclosure of information based on settings they make within the activity- the choice users make in one property affects the available choices in another property. </ul><br/>\r\n\r\n<b>System Center 2012 R2 Integration Pack for Microsoft .Net Framework</b><br/>\r\nThis integration pack is part of the installation package for the Orchestrator Integration Toolkit. <br/><br/>\r\n\r\n<b>System Center 2012 R2 Orchestrator Integration Packs </b><br/>\r\nSystem Center 2012 SP1 - Orchestrator Integration Packs extend the core System Center 2012 SP1 - Orchestrator component to enable the authoring of datacenter automation using System Center 2012 SP1 components as well as other Microsoft server products. <br/><br/>\r\nThis download includes Integration Packs for the following System Center 2012 SP1 Components: <br/><br/>\r\n<ul>\r\n<li> System Center 2012 Integration Pack for System Center 2012 R2 Configuration Manager </li>\r\n<li> System Center 2012 Integration Pack for System Center 2012 R2 Data Protection Manager</li>\r\n<li> System Center 2012 Integration Pack for System Center 2012 R2 Operations Manager</li>\r\n<li> System Center 2012 Integration Pack for System Center 2012 R2 Service Manager</li>\r\n<li> System Center 2012 Integration Pack for System Center 2012 R2 Virtual Machine Manager</li>\r\n</ul><br/>\r\nThe following Integration Packs are also included in this download. <br/>\r\n<ul>\r\n<li> System Center 2012 R2 Integration Pack for REST </li><br/>\r\nThe Integration Pack for REST is an add-on for System Center 2012 R2 Orchestrator that enables you to create activities within runbooks that make requests to REST web services to get data or perform functions. \r\nThe Invoke REST Service activity is used in a runbook to make requests to RESTful web services and retrieve data or execute functions. <br/><br/>\r\n<li> System Center 2012 R2 Integration Pack for Exchange User </li><br/>\r\nThe Integration Pack for Exchange Users is an add-on for System Center 2012 R2 Orchestrator that enables you to facilitate the automation of user centric tasks, such as sending e-mail messages, creating appointments and updating tasks<br/><br/>\r\n<li> System Center 2012 R2 Integration Pack for Exchange Admin</li><br/>\r\nThe Integration Pack for Exchange Admin is an add-on for System Center 2012 R2 Orchestrator that enables you to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote or cloud based environments in Microsoft Exchange and Office 365.<br/><br/>\r\n<li> System Center 2012 R2 Integration Pack for File Transfer Protocol (FTP)</li><br/>\r\nThe Integration Pack for FTP enables you to automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.<br/><br/>\r\n<li> System Center 2012 R2  Integration Pack for Active Directory</li><br/>\r\nThe Integration Pack for Active Directory is an add-on for System Center 2012 Orchestrator that enables you to connect Orchestrator to your Active Directory Server to automate its management.<br/><br/>\r\n<li> System Center 2012 R2  Integration Pack for Windows Azure </li><br/>\r\nThe Integration Pack for Windows Azure is an add-on for System Center 2012 R2 Orchestrator that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines. <br/><br/>\r\n<li> System Center 2012 R2  Integration Pack for Microsoft SharePoint 2013</li><br/>\r\nThe System Center Integration Pack for Microsoft SharePoint is a compliant integration pack that enables integration with Microsoft SharePoint to facilitate the automation of SharePoint tasks.<br/><br/>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n\r\n<li> 05/25/2016 - Updated release for System Center 2012 R2 </li>\r\n<b>Note: </b> \r\n<br/>Fixes for the following are included in the release: <br/>\r\n<ul>\r\n<li>\u201cMonitor Alerts\u201d activity in System Center Operations Manager Integration Pack is periodically missing alerts</li>\r\n<li>\u201cUpdate User\u201d activity in Active Directory Integration Pack deletes the user account while updating manager field</li>\r\n<li>\u201cRemove User from Group\u201d activity in Active Directory Integration Pack fails for groups with more than 1500 members</li>\r\n<li>\"Azure Virtual Machines\" activity from the System Center Integration Pack for Windows Azure is unable to start a virtual machine that is in the \"Stopped (deallocated)\" state using \"Start VM Instance\" action</li>\r\n<li>System Center Service Manager Integration Pack fails when an object property is updated with a negative integer value</li>\r\n</ul>\r\nFollowing Integration Packs have been modified to enable their conversion to PowerShell modules via the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=47323\">System Center Orchestrator Migration Toolkit</a>. These modules can then be used in Azure Automation or Service Management Automation.\r\n<br/>\r\n<ul>\r\n<li>System Center Orchestrator 2012 R2 Integration Pack for Active Directory</li>\r\n<li>System Center Orchestrator 2012 R2 Integration Pack for Azure</li>\r\n<li>System Center Orchestrator 2012 Integration Pack for System Center 2012 R2 Data Protection Manager</li>\r\n<li>System Center Orchestrator 2012 R2 Integration Pack for Exchange Admin</li>\r\n<li>System Center Orchestrator 2012 R2 Integration Pack for Exchange User</li>\r\n<li>System Center Orchestrator 2012 R2 Integration Pack for File Transfer Protocol</li>\r\n<li>System Center Orchestrator 2012 R2 Integration Pack for REST</li>\r\n<li>System Center 2012 R2 Integration Pack for Microsoft SharePoint 2013</li>\r\n<li>System Center 2012 Integration Pack for System Center 2012 R2 Virtual Machine Manager</li>\r\n</ul>\r\n\r\n\r\n<br/>\r\n<li> 10/7/2015 - Updated release for System Center 2012 R2 </li>\r\n<b>Note: </b> Fixes for the following are included in the release: <br/>\r\n<ul>\r\n<li>NullReferenceException is thrown while using \"Get VM Instance\" activity to get an Azure VM instance which is configured one virtual network.</li>\r\n<li>Support for Windows Authentication(Kerberos) in the System Center Integration Pack for Exchange Admin</li>\r\n<li>XCeed SFTP binaries send SSH_FXF_BLOCK_WRITE when writing a file but don't handle SSH_FX_OP_UNSUPPORTED if the server doesn't support SSH_FXF_BLOCK_WRITE resulting in failures to upload data.</li>\r\n</ul>\r\n<br/>\r\n<li> 4/3/2014 - Updated release for System Center 2012 R2 </li>\r\n<b>Note: </b> Following are the fixes in this release: <br/>\r\n<ul>\r\n<li> The System Center Operations Manager Monitor Alerts activity can get an out of memory exception when processing a large amount of alerts. </li>\r\n<li> The Exchange Administration activities will fail when using Exchange Online with redirection enabled.</li>\r\n<li> The Configuration Manager Deploy Task Sequence can incorrectly set the remote client flags if you set the Download locally when needed property. This will cause the client to incorrectly evaluate it and will not run.</li>\r\n<li> The Configuration Mangager integration pack will cause the Configuration Manager Console to fail when opened.</li>\r\n<li> The Invoke REST Service activity was incorrectly setting the header information when using basic authentication that resulted in a 401 - Unauthorized</li>\r\n<li> The SharePoint Integration pack will not connect sucessfully to SharePoint online if it is configured to use Active Directory Federated Services.</li>\r\n<li> The SharePoint Integration pack Get List Items will fail to return values for column types of Choice.</li>\r\n</ul>\r\n<br/>\r\n<li> 10/24/2013 - Original release, version 7.1 </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012 R2 ",
+    "detailsSection_file_name": [
+        "System_Center_2012_R2_Orchestrator_Integration_ToolKit.exe",
+        "SC2012_R2_IPs.EXE"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "11.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Recommended Configuration for System Center 2012 R2 Orchestrator  Integration Toolkit </b><br/>\r\n<ul>\r\n<li>RAM \u2013 minimum 1GB recommended 2GB</li>\r\n<li>Disk space minimum 200MB</li>\r\n<li>CPU Dual Core or better</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>.Net 3.5</li>\r\n</ul><br/>\r\nSystem Center 2012 R2 - Orchestrator  should be installed prior to installing the System Center Integration Packs.\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe.",
+    "relatedResourcesSection": [
+        {
+            "title": "orchestrator Integration Toolkit",
+            "url": "http://msdn.microsoft.com/en-us/library/hh855853"
+        },
+        {
+            "title": "integration Pack Guide",
+            "url": "http://technet.microsoft.com/en-us/library/hh295851.aspx"
+        },
+        {
+            "title": "system Center 2012 Home Page",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "release Notes",
+            "url": "http://technet.microsoft.com/en-us/library/hh204684.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39622",
+    "downloadPreload": true
+}

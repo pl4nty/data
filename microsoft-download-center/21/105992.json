@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Compare Query Performance and Result (CQPR) Utility",
+    "downloadDescription": "Compare query result sets run against OLEDB and SQL Server databases.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CQPR-V1.0.8.zip",
+            "url": "https://download.microsoft.com/download/c/0/0/c00b9150-9c75-4062-b93a-3086f5e2c89c/CQPR-V1.0.8.zip",
+            "size": "6364783",
+            "version": "1.0.8",
+            "datePublished": "2/13/2025 5:06:53 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A utility that reads two queries per row from a SQL Server database table and runs each queries in multiple threads against two different database engines",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.8",
+    "detailsSection_file_name": [
+        "CQPR-V1.0.8.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.1 MB"
+    ],
+    "detailsSection_file_date": "2/13/2025",
+    "systemRequirementsSection": "A utility that reads two queries per row from a SQL Server database table and runs the queries in each row against an OLEDB and a SQL Server database. Each row can run in multiple threads. The utility captures query response times and compares the result sets returned from each database engine.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the .zip and extract it. Review the documentation, run the SQL Script to create the source table, Edit the config file and run the utility.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105992",
+    "downloadPreload": true
+}

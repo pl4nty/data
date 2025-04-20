@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Forefront Client Security Product Documentation",
+    "downloadDescription": "This download provides product documentation for Microsoft Forefront Client Security.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FCS_Docs.zip",
+            "url": "https://download.microsoft.com/download/5/8/e/58e5e803-adba-4322-92f0-bdce163b526b/FCS_Docs.zip",
+            "size": "987655",
+            "version": "Release",
+            "datePublished": "7/15/2024 3:11:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Download the product documentation for Forefront Client Security. Documentation includes guidelines and information from the Microsoft Forefront Client Security team, including deployment instructions and more.<br />\nThe June 2007 release contains:<br />\n\u2022\tMicrosoft Forefront Client Security Getting Started Guide <br />\n\u2022\tMicrosoft Forefront Client Security Planning and Architecture Guide <br />\n\u2022\tMicrosoft Forefront Client Security Deployment Guide <br />\n\u2022\tMicrosoft Forefront Client Security Administrator's Guide <br/>\n\u2022\tMicrosoft Forefront Client Security Performance and Scalability Guide <br />\n\u2022\tMicrosoft Forefront Client Security Disaster Recovery Guide <br />\n\u2022\tMicrosoft Forefront Client Security Security Guide <br />\n\u2022\tMicrosoft Forefront Client Security Troubleshooting Guide <br />\n\u2022\tMicrosoft Forefront Client Security Technical Reference Guide <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Release",
+    "detailsSection_file_name": [
+        "FCS_Docs.zip"
+    ],
+    "detailsSection_file_size": [
+        "964.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download the .zip file and extract the enclosed .doc files.",
+    "relatedResourcesSection": [
+        {
+            "title": "forefront Client Security TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=86795"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23256",
+    "downloadPreload": true
+}

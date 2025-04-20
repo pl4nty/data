@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Probabilistic Z3",
+    "downloadDescription": "Probabilistic Z3 is a solver for the bounded reachability problem that uses the symbolic approximation technique described in the following paper: Markus N. Last published: February 10, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ProbabilisticZ3 1.0.zip",
+            "url": "https://download.microsoft.com/download/5/7/6/576290d9-8f87-42c4-9a3b-57113200e422/ProbabilisticZ3 1.0.zip",
+            "size": "117225",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Probabilistic Z3 is a solver for the bounded reachability problem that uses the symbolic approximation technique described in the following paper: Markus N. Rabe, Christoph M. Wintersteiger, Hillel Kugler, Boyan Yordanov, and Youssef Hamadi, Symbolic Approximation of the Bounded Reachability Probability in Large Markov Chains, QEST\u201914, Springer, 2014",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ProbabilisticZ3 1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "114.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52359",
+    "downloadPreload": true
+}

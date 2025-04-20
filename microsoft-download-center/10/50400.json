@@ -1,0 +1,142 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Mobile Report Publisher",
+    "downloadDescription": "SQL Server Mobile Report Publisher is an authoring tool for mobile reports for SQL Server 2016 Reporting Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SSRS.MobileReportPublisher.Installer.msi",
+            "url": "https://download.microsoft.com/download/7/3/8/73806360-39f4-4efa-8369-27f4488c764c/SSRS.MobileReportPublisher.Installer.msi",
+            "size": "45719552",
+            "version": "1.0.4831.86",
+            "datePublished": "7/15/2024 3:01:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "As of February 2022, SQL Server Mobile Report Publisher has been deprecated.<br /><br />\r\n\r\nSQL Server Mobile Report Publisher is an authoring tool for mobile reports for SQL Server 2016 Reporting Services. Design mobile-optimized BI reports using charts, gauges, maps and grids bound with Excel data or Reporting Services shared datasets and publish them locally or to your Reporting Services server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.4831.86",
+    "detailsSection_file_name": [
+        "SSRS.MobileReportPublisher.Installer.msi"
+    ],
+    "detailsSection_file_size": [
+        "43.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>.NET Framework 4.5.2 (or later)</li>\r\n<li>Visual C++ Redistributable for Visual Studio 2013 (x86)</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click Download.</li>\r\n<li>When the File Download dialog box appears, click Save to save the file to your computer.</li>\r\n<li>When you are ready to install the product, double-click the downloaded file, and then follow the instructions on the screen.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "visual C++ Redistributable for Visual Studio 2013 (x86)",
+            "url": "https://go.microsoft.com/fwlink/?linkid=844113"
+        },
+        {
+            "title": ".NET 4.5.2",
+            "url": "https://go.microsoft.com/fwlink/?linkid=844112"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50400",
+    "downloadPreload": true
+}

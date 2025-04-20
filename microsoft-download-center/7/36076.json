@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: Workflow Administrator's Guide",
+    "downloadDescription": "This document describes how to set up the Workflow system, and how to create individual workflows, or approval processes. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WorkflowAdministration.pdf",
+            "url": "https://download.microsoft.com/download/3/d/f/3df5fd6a-d443-4800-9739-309174c64802/WorkflowAdministration.pdf",
+            "size": "1227844",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:32:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A workflow defines how a document or batch flows through the system by indicating the users who must approve the document or batch, and the conditions under which those users must approve the document or batch. The document also explains how to set up approval workflows for purchase orders, sales quotes, credit limit overrides, and financial batches. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "WorkflowAdministration.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer. When prompted for a location for the file, save the file to the Documentation folder in your Microsoft Dynamics GP 2013 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2013\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing file, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36076",
+    "downloadPreload": true
+}

@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Windows SteadyState 2.5 Technical FAQ",
+    "downloadDescription": "Windows SteadyState 2.5 Technical FAQ provides answers to technical questions or issues that you may encounter when using Windows SteadyState 2.5.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SteadyState_2.5_Technical FAQ_updated.pdf",
+            "url": "https://download.microsoft.com/download/f/c/6/fc6955de-0765-46fc-b2a9-47b4d4bcd160/SteadyState_2.5_Technical FAQ_updated.pdf",
+            "size": "183077",
+            "version": "v2.5",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SteadyState_2.5_Technical FAQ_updated.xps",
+            "url": "https://download.microsoft.com/download/f/c/6/fc6955de-0765-46fc-b2a9-47b4d4bcd160/SteadyState_2.5_Technical FAQ_updated.xps",
+            "size": "258363",
+            "version": "v2.5",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        }
+    ],
+    "detailsSection": "You can find answers to commonly asked questions about SteadyState 2.5 in the Windows SteadyState 2.5 Technical FAQ. The FAQ includes topics that range from 'Do I still need a firewall or antivirus program?' to 'Can I use the System Preparation Tool with Windows SteadyState?'. These questions and answers, that were originally submitted by other people who use SteadyState 2.5, are now compiled in a single document for quick reference by everyone.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v2.5",
+    "detailsSection_file_name": [
+        "SteadyState_2.5_Technical FAQ_updated.pdf",
+        "SteadyState_2.5_Technical FAQ_updated.xps"
+    ],
+    "detailsSection_file_size": [
+        "178.8 KB",
+        "252.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP Professional, Windows XP Home Edition, Windows XP Tablet PC Edition with Windows XP Service Pack 2 (SP2) installed or Service Pack 3 installed, Windows Vista Enterprise, Windows Vista Business, Windows Vista Ultimate, Windows Vista Home Basic, Windows Vista Home Premium, Windows Vista Starter, or Windows Vista with Service Pack 1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><li>Download the FAQ in the file format for which you have a reader. The FAQ is available in XPS or PDF file format.</li><br />\n<li>If you do not have a reader for either file format, you must download and install an XPS reader or a PDF reader before downloading the FAQ.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "get XPS Viewer for Windows XP",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=106913"
+        },
+        {
+            "title": "windows SteadyState Web site",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=46755"
+        },
+        {
+            "title": "get Adobe Reader",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=57398&clcid=0x409"
+        },
+        {
+            "title": "download Windows SteadyState 2.5 Handbook",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=F829BB8B-C7A9-426B-A7A4-2B504A6238D2&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6692",
+    "downloadPreload": true
+}

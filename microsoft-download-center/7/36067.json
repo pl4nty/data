@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: GST and Australian Taxes",
+    "downloadDescription": "This document explains how to install the Australian tax features, and how to set up and use Goods and Services Tax (GST), Pay As You Go, Business Activity Statement reports, and Pay As You Go reports.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GSTAndAustralianTaxes.pdf",
+            "url": "https://download.microsoft.com/download/6/0/0/6008da76-6b5a-431e-b705-2c32e288a55e/GSTAndAustralianTaxes.pdf",
+            "size": "2314943",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:32:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The document also explains how to enter and view tax information. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "GSTAndAustralianTaxes.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer. When prompted for a location for the file, save the file to the Documentation folder in your Microsoft Dynamics GP 2013 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2013\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing file, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36067",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Sample Invoices",
+    "downloadDescription": "Microsoft Azure Sample Invoices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure Detailed Usage - Sample CSV.xlsx",
+            "url": "https://download.microsoft.com/download/8/6/8/868702b9-4750-4cf6-8254-fcb8f178ea57/Microsoft Azure Detailed Usage - Sample CSV.xlsx",
+            "size": "35088",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:34:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure MSDN- Sample Invoice.pdf",
+            "url": "https://download.microsoft.com/download/8/6/8/868702b9-4750-4cf6-8254-fcb8f178ea57/Microsoft Azure MSDN- Sample Invoice.pdf",
+            "size": "237856",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:34:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure PAYG - Sample Invoice.pdf",
+            "url": "https://download.microsoft.com/download/8/6/8/868702b9-4750-4cf6-8254-fcb8f178ea57/Microsoft Azure PAYG - Sample Invoice.pdf",
+            "size": "258977",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:34:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Azure Sample Invoices",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6",
+    "detailsSection_file_name": [
+        "Microsoft Azure Detailed Usage - Sample CSV.xlsx",
+        "Microsoft Azure MSDN- Sample Invoice.pdf",
+        "Microsoft Azure PAYG - Sample Invoice.pdf"
+    ],
+    "detailsSection_file_size": [
+        "34.3 KB",
+        "232.3 KB",
+        "252.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office, Microsoft Windows Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select the file you wish to view and click \"Download\".",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38805",
+    "downloadPreload": true
+}

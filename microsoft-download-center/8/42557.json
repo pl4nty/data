@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Product Documentation for Microsoft SQL Server 2014 for firewall and proxy restricted environments",
+    "downloadDescription": "The Microsoft SQL Server 2014 setup installs only the Help Viewer and related components for managing Help settings. Setup does not directly install any documentation. All of the SQL Server documentation is available online. For more information on installing SQL Server product documentation behind a firewall, see the Overview and Instructions sections below. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLSERVER2014DOCUMENTATION_AUGUST2014_EN.exe",
+            "url": "https://download.microsoft.com/download/f/8/c/f8c66565-ff7e-4f9d-b32f-8bfc8887a0ab/SQLSERVER2014DOCUMENTATION_AUGUST2014_EN.exe",
+            "size": "218153040",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Users who want a local help experience can download the documentation in one of two ways after using SQL Server Setup to install the help viewer and related components: <br />\r\n<br />\r\n<b>For systems that are behind a firewall or proxy and have no access to the Internet</b> go to a computer that has an internet connection and download the self-extracting EXE package on this page that contains the product documentation. Follow the instructions at the bottom of this page to extract the documentation and then use Help Library Manager to add the documentation to your local help collections. <br />\r\n<br />\r\n<b>For systems that have an Internet connection</b> you do not need to use this download. Instead, launch Help Library Manager to configure the Help Viewer to use local help and download the Help collections. For more information about using the Help Library Manager to configure help options and download content, see  <a href=\"http://msdn.microsoft.com/en-us/library/ms166022(v=sql.120).aspx/css\">Adding and Removing Help Collections</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQLSERVER2014DOCUMENTATION_AUGUST2014_EN.exe"
+    ],
+    "detailsSection_file_size": [
+        "208.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "There are no system requirements to download these components. However, to install and view the product documentation, Microsoft Help Viewer components must be installed. The Help Viewer components are installed by selecting \u201cDocumentation Components\u201d from the Feature Selection page in SQL Server 2014 setup, or by installing either SQL Server Management Studio or SQL Server Data Tools. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Instructions for getting SQL Server product documentation into secured environments<br />\r\n<br />\r\n<ol>\r\n<li>Click the Download button on this page to start the download.</li>\r\n<li>Click Save to save the download to a USB drive or other portable media that can be carried into the firewalled environment.</li>\r\n<li>Double-click the self-extracting EXE to unpack the contents.</li>\r\n<li>Specify a location of your choice to extract the contents to. For example, a network share that is accessible to your destination server.</li>\r\n<li>Launch Help Library Manager by going to Start, All Programs, SQL Server 2014, Help & Community, and clicking Manage Help Settings or by launching SQL Server Management Studio, clicking the Help menu, and then selecting Manage Help Settings.</li>\r\n<li>In Help Library Manager, click Choose online or local help.</li>\r\n<li>Select I want to use local help and click OK.</li>\r\n<li>Click Install content from disk and browse to the directory where you unpacked the downloaded EXE.</li>\r\n<li>Select the HelpContentSetup.msha file and click Open.</li> \r\n<li>Click Next.</li>\r\n<li>Click Add next to the documentation you want to install.</li>\r\n<li>Click Update.</li>\r\n<li>Exit Help Library Manager.</li>\r\n</ol>\r\n<br />\r\n For more information about enabling SQL Server documentation in Visual Studio or SQL Server Data Tools, go to the  <a href=\"http://msdn.microsoft.com/en-us/sqlserver/hh272029\">Books Online News page</a>.<br />\r\n For more information about Microsoft SQL Server 2014, go to the  <a href=\"http://technet.microsoft.com/en-us/sqlserver/dn135309\">SQL Server Resource Center</a>.<br />\r\n To download a self-extracting EXE package of PowerShell scripts to enable Help Viewer to use IPv6, go to the  <a href= \"http://www.microsoft.com/en-us/download/details.aspx?id=27429\">Scripts to Enable Microsoft Help Viewer for Microsoft SQL Server 2012 and Microsoft SQL Server 2014</a> download center page.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42557",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Help Desk Flow template for Visio 2010",
+    "downloadDescription": "Get a high-level view of your help desk process flow and a summary of help desk call activity and performance with this Visio 2010 template. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Help Desk-Flow.vst",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9147c9-031f-4ce3-8c3f-53663804e08d/Help Desk-Flow.vst",
+            "size": "928768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Help Desk Flow Data2.xlsx",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9147c9-031f-4ce3-8c3f-53663804e08d/Help Desk Flow Data2.xlsx",
+            "size": "16840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Help Desk Flow Data.xlsx",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9147c9-031f-4ce3-8c3f-53663804e08d/Help Desk Flow Data.xlsx",
+            "size": "19557",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft 2010 Visio template to document your help desk process flow and measure activity. This template provides a basic overview of a typical help desk process, from the point of problem identification to resolution. By mapping call data to the process flow, this template also shows how you can get a summary view of actual help desk activity and performance each month, including total number of calls, average wait per call, average time on call, and total percentage of calls resolved. This template could also be customized for similar customer-facing processes, such as telemarketing, order processing, and field service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Help Desk-Flow.vst",
+        "Help Desk Flow Data2.xlsx",
+        "Help Desk Flow Data.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "907.0 KB",
+        "16.4 KB",
+        "19.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the template to your computer.\r\n\r\nTo customize the data linked to the template, download either Help Desk Flow Data.xlsx or Help Desk Flow Data2.xlsx and populate it with your own call data.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26524",
+    "downloadPreload": true
+}

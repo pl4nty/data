@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Storage Server 2012 Evaluation Editions",
+    "downloadDescription": "Windows Storage Server 2012 is an advanced storage and file serving solution for any size organization that offers new levels of performance and reliability on a proven and reliable server platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "9200.16384.WIN8_RTM.120725-1247_X64FRE_SERVERSTORAGE_EVAL_EN-US-HRM_SSTO_X64FREE_EN-US_DV5.ISO",
+            "url": "https://download.microsoft.com/download/6/4/2/642b27d8-ad1e-4f2d-9eab-e69e765d268c/9200.16384.WIN8_RTM.120725-1247_X64FRE_SERVERSTORAGE_EVAL_EN-US-HRM_SSTO_X64FREE_EN-US_DV5.ISO",
+            "size": "3507279872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Windows Storage Server 2012 is built on the Windows Server 2012 operating system to provide a platform for Network Attached Storage (NAS) appliances. Windows Storage Server 2012 NAS appliances can help reduce the storage costs associated with building modern datacenters and private clouds. Windows Storage Server 2012 delivers excellent economics for a shared storage solution by leveraging industry standard hardware matched with robust storage capabilities. It delivers continuous availability that is designed to protect from a range of failures and prevent downtime in a scalable and reliable manner.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "9200.16384.WIN8_RTM.120725-1247_X64FRE_SERVERSTORAGE_EVAL_EN-US-HRM_SSTO_X64FREE_EN-US_DV5.ISO"
+    ],
+    "detailsSection_file_size": [
+        "3.3 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Minimum system requirements for Windows Server 2012 \r\n<br/><br/>\r\n\r\nArchitecture<br/>\r\nx64 (64-bit) <br/><br/>\r\n\r\nProcessor<br/>\r\n1.4 GHz <br/><br/>\r\n\r\nMemory (RAM)<br/>\r\n512 MB <br/><br/>\r\n\r\nHDD free space<br/>\r\n32 GB (more if there is 16 GB of RAM or more)\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Storage Server 2012"
+    ],
+    "installInstructionSection": "Install and evaluate.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Storage Server Technet Page ",
+            "url": "http://blogs.technet.com/storageserver"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34592",
+    "downloadPreload": true
+}

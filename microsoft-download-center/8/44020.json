@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "ULS Viewer",
+    "downloadDescription": "ULS Viewer is a Windows application that provides a simplified view of ULS log files in SharePoint 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ulsviewer.zip",
+            "url": "https://download.microsoft.com/download/f/1/7/f17e2780-9456-479a-8faa-803cebf74b6a/ulsviewer.zip",
+            "size": "200599",
+            "version": "Aug2014",
+            "datePublished": "7/15/2024 3:20:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ULS Viewer is a Windows application that provides a simplified view of ULS log files in SharePoint 2013 that supports aggregation, filtering, sorting, highlighting, append, and more.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug2014",
+    "detailsSection_file_name": [
+        "ulsviewer.zip"
+    ],
+    "detailsSection_file_size": [
+        "195.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is in a compressed (zipped) folder. Download and uncompress the folder to get to the ulsviewer.exe file.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint for Developers",
+            "url": "http://msdn.microsoft.com/en-us/office/dn448478.aspx"
+        },
+        {
+            "title": "sharePoint for IT Pros",
+            "url": "http://technet.microsoft.com/en-us/office/dn788776.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44020",
+    "downloadPreload": true
+}

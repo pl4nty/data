@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Information Card Icon",
+    "downloadDescription": "Information Card Icon",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "infocard_icon.zip",
+            "url": "https://download.microsoft.com/download/1/7/7/17712158-0057-446a-8fee-011a4fd17be3/infocard_icon.zip",
+            "size": "625303",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This icon is intended to provide a common visual cue that Information Cards can be used to provide information to a site or program, similarly to how the RSS icon is used to indicate the availability of syndicated content.  It is intended for use by all.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "infocard_icon.zip"
+    ],
+    "detailsSection_file_size": [
+        "610.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This icon is applicable to all operating systems and platforms.",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Macintosh",
+        "Solaris",
+        "Unix",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "The downloadable zip file contains usage guidelines, frequently asked questions, .png renderings of the icon in multiple sizes, and the original Illustrator version of the icon.  The icon may be used in accordance with the guidelines in the \"Information Card Guidelines\" document.",
+    "relatedResourcesSection": [
+        {
+            "title": "identity Selector Interoperability Profile",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=B94817FC-3991-4DD0-8E85-B73E626F6764&displaylang=en"
+        },
+        {
+            "title": "cardSpace MSDN Site",
+            "url": "http://msdn.microsoft.com/cardspace/"
+        },
+        {
+            "title": "cardSpace Community Site",
+            "url": "http://cardspace.netfx3.com/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9657",
+    "downloadPreload": true
+}

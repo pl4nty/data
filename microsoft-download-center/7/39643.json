@@ -1,0 +1,202 @@
+{
+    "error": "",
+    "downloadTitle": "Service Pack 2 for Microsoft Access 2010 Runtime (KB2687444) 32-Bit Edition",
+    "downloadDescription": "Service Pack 2 (SP2) for Microsoft Access 2010 Runtime 32-Bit Edition contains new updates which improve security, performance, and stability.  Additionally, the SP is a roll-up of all previously released updates.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "accessrtsp2010-kb2687444-fullfile-x86-en-us.exe",
+            "url": "https://download.microsoft.com/download/c/c/2/cc28bc00-1af0-44b9-8a5d-9d8c8e4899bb/accessrtsp2010-kb2687444-fullfile-x86-en-us.exe",
+            "size": "88751840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2687444\">Service Pack 2 for Microsoft Access 2010 Runtime (KB2687444) 32-Bit Edition</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2687444",
+        "name": "KB2687444"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "accessrtsp2010-kb2687444-fullfile-x86-en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "84.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\nFor information about supported service packs and Windows Installer versions, please see \r\n<a href=\"http://support.microsoft.com/kb/967543\">Microsoft Office Supported Service Packs and Windows Installer (KB967543).</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<br />\r\n\r\nTo start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li>\r\n</ul>\r\n<br />\r\n<br />\r\n\r\n<b>IT professional resources</b><br />\r\nIT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"http://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"http://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39643",
+    "downloadPreload": true
+}

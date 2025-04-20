@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Perfect Dark Zero DLC Movie",
+    "downloadDescription": "DLC promo movie for Perfect Dark Zero",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PDZ_DLC_Med.wmv",
+            "url": "https://download.microsoft.com/download/2/9/2/29223510-c8d3-4407-95e6-6dc03d353fb6/PDZ_DLC_Med.wmv",
+            "size": "9509691",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PDZ_DLC_High.wmv",
+            "url": "https://download.microsoft.com/download/2/9/2/29223510-c8d3-4407-95e6-6dc03d353fb6/PDZ_DLC_High.wmv",
+            "size": "47773715",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable content promo movie for Xbox 360 title Perfect Dark Zero, created by Rare Ltd. and published by Microsoft Game Studios in 2005.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PDZ_DLC_Med.wmv",
+        "PDZ_DLC_High.wmv"
+    ],
+    "detailsSection_file_size": [
+        "9.1 MB",
+        "45.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Choose either High-Def or Standard file quality, then use Windows Media Player to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9601",
+    "downloadPreload": true
+}

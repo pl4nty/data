@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Communications Managed API 5.0 Runtime",
+    "downloadDescription": "Unified Communications Managed API (UCMA) 5.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UcmaRuntimeSetup.exe",
+            "url": "https://download.microsoft.com/download/b/d/7/bd7bad4f-1d91-4b1b-9f7b-9eea67381bcc/UcmaRuntimeSetup.exe",
+            "size": "310693592",
+            "version": "6.0.9319.0",
+            "datePublished": "7/15/2024 3:46:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "UCMA provides a flexible managed-code platform for unified communication and collaboration that allows developers to implement communication- and collaboration-enabled middle tier services which take advantage of the fact that you have made investment in Skype for Business Server. It allows you to enable same/similar or better UC scenarios as we could do.\n<br /><br />\nAn administrator who is preparing to install a third-party UCMA-enabled application on a deployment computer must download and install UcmaRuntimeSetup.exe. Installing UCMA 5.0 Runtime provides all of the UCMA-related functionality needed by a UCMA-enabled application.\n<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.9319.0",
+    "detailsSection_file_name": [
+        "UcmaRuntimeSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "296.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>UCMA 5.0 Runtime Requirements</b>\n<br />\n<br />\nThe following are the hardware and software requirements for installing UCMA 5.0 Runtime.\n<ul>\n<li>The target platform must be a 64-bit computer.</li>\n<li>Microsoft .NET Framework 4.5 or later service packs.</li>\n<ul>\n<li>Windows Server 2008 R2 SP1 and Windows 7 SP1: UcmaRuntimeSetup.exe requires Microsoft .NET Framework 4.5 to be installed before launching UCMARuntimeSetup.exe.</li>\n<li>Windows Server 2012, Windows Server 2012 R2 and Windows 8 comes with Microsoft .NET Framework 4.5.</li>\n</ul>\n<li>Antivirus software </li>\n<ul>\n<li>Antivirus software is not recommended for computers running Microsoft Lync Server 2013 or Skype for Business Server 2015. For optimal performance for a server that must run antivirus software, include all Lync Server/Skype for Business Server computers in the antivirus software's exception list. </li>\n</ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>Installing UCMA 5.0 Runtime and Skype for Business Server 2015 Components</b>\n<br /><br />\n<ul>\n<b>Installing UCMA 5.0 Runtime</b>\n<br /><br />\nYou must have elevated permissions to install UCMA 5.0 Runtime.\n<br /><br />\n<ul>\n<b>To install UCMA 5.0 Runtime</b>\n<ol>\n<li>Download UcmaRuntimeSetup.exe.</li>\n<li>Launch UcmaRuntimeSetup.exe and follow the screens to accept the End-User License Agreement (EULA). The setup wizard will install all the necessary components.</li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Note</b>: UcmaRuntimeSetup.exe installs the English versions of the Speech Recognition and Text-to-Speech engines. The final screen of the installer provides a link that can be used to download additional engines for other languages.\n<br /><br />\n<b>Note</b>: Additional steps are required to install Skype for Business Server 2015, Core Components (OCSCore.msi). These steps are described later in this topic.\n</ul>\n<br /><br />\n<b>UCMA 5.0 Runtime Components</b>\n<br /><br />\nUcmaRuntimeSetup.exe installs the following components.\n<ul>\n<li>o Microsoft VC ++ 11 Redistributable -x64 package</li>\n<ul>\n<li>Microsoft Unified Communications Managed API 5.0 Runtime is built on Microsoft .NET Framework 4.5 and Visual C++ 11 Redistributable Package (x64).</li>\n</ul>\n<li>Microsoft Server Speech Platform Runtime (x64) package</li>\n<li>Microsoft Server Speech Recognition Language - TELE (en-US)</li>\n<li>Microsoft Server Speech Text To Speech Voice (en-US, Helen)</li>\n<li>Microsoft Server Speech Platform VXML Runtime (x64)</li>\n<li>Skype for Business Server 2015, Bootstrapper Prerequisites Installer Package</li>\n<ul>\n<li>Copies Skype for Business Server 2015, Core Components MSI (OCSCore.msi) and its prerequisites. OCSCore.msi enables running Skype for Business Server -specific PowerShell cmdlets from the local computer. OCSCore.msi also enables the installation of the local Central Management Store replica, which is required by auto-provisioned UCMA applications. </li>\n</ul>\n</ul>\n<b>Note</b>: Side-by-side installations of UCMA 4.0 and UCMA 5.0 are not supported.\n<br /><br />\n<b>Installing SKype for Business Server Components</b>\n<br /><br />\nOCSCore.msi must be installed either by using Bootstrapper Prerequisites Installer Package installed by UcmaRuntimeSetup.exe (recommended) or by installing the Admin Tools available on the Skype for Business Server DVD.\n<br /><br />\n<ul>\n<b>To install Skype for Business Server 2015, Core Components</b>\n<ol>\n<li>Confirm that Microsoft PowerShell 4.0 is installed on the deployment computer.</li>\n<ol>\n<li>Windows 8 and Windows Server 2012</li>\n<ul>\n<li>This operating system version comes with PowerShell 3.0</li>\n</ul>\n<li>Windows Server 2008 R2 SP1 and Windows 7 SP1</li>\n<ul>\n<li>Download <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=266540\">Windows Management Framework 3.0</A> .</li>\n</ul>\n</ol>\n<li>Find OCSCore.msi by navigating to %Installation drive%\\ProgramData\\Microsoft\\Skype for Business Server\\Deployment\\cache\\[Build version]\\Setup\\.</li>\n<br /><br />\n<b>Note</b>: By default, the ProgramData folder is hidden, so it might not appear in Windows Explorer.\n<br /><br />\n<li>Launch OCSCore.msi and use the default settings in the wizard.</li>\n</ol>\nFor information about activating a UCMA application, see \u201cActivating a UCMA 5.0 Core Trusted Application\u201d in the Unified Managed API 5.0 Core SDK documentation.\n</ul>\n<br /><br />\n<b>Uninstalling UCMA 5.0 Runtime and Bootstrapper Prerequisites Installer</b>\n<br /><br />\nWhen a customer application is uninstalled, the application uninstall procedure must not automatically uninstall any of the required components (such as .NET Framework 4.5, Visual C++ 11 Redistributable Package, or UCMA 5.0 Runtime), because other applications might require them. An administrator who has ensured that there are no dependencies can follow the instructions in the following procedure to uninstall UCMA 5.0 Runtime.\n<br /><br />\n<ul>\n<b>To uninstall UCMA 5.0 Runtime and Bootstrapper Prerequisites Installer</b>\n<ol>\n<li>Navigate to Programs and Features in Control Panel. </li>\n<li>On the right-click menu for the <b>Microsoft Unified Communications Managed API 5.0, Runtime</b> entry, select Uninstall.  </li>\n<li>A wizard titled \"Unified Communications Managed API 5.0, Runtime Uninstallation\" appears. Follow the instructions on the screen to complete uninstallation.</li>\n<li>On the right-click menu for the Skype for Business Server 2015, Bootstrapper Prerequisites Installer Package entry, select Uninstall to remove the installer package.</li>\n</ol>\n<b>Note</b>: Uninstalling the Bootstrapper Prerequisites Installer Package does not automatically uninstall software components that are individually installed by the user, such as Skype for Business Server 2015, Core Components (OCSCore.msi) and others.\n<br /><br />\n</ul>\n</ul>\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47344",
+    "downloadPreload": true
+}

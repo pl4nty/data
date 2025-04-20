@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Azure AD Password Protection for Windows Server Active Directory",
+    "downloadDescription": "Azure AD Password Protection for Windows Server Active Directory is used to prevent weak passwords being used in the organization using Windows Server Active Directory",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AzureADPasswordProtectionProxySetup.exe",
+            "url": "https://download.microsoft.com/download/9/7/0/970f8006-9599-4d5a-aa4a-0c66a3a78fe8/AzureADPasswordProtectionProxySetup.exe",
+            "size": "5590296",
+            "version": "1.2.177.1",
+            "datePublished": "7/15/2024 3:03:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureADPasswordProtectionDCAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/9/7/0/970f8006-9599-4d5a-aa4a-0c66a3a78fe8/AzureADPasswordProtectionDCAgentSetup.msi",
+            "size": "2707456",
+            "version": "1.2.177.1",
+            "datePublished": "7/15/2024 3:03:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure AD Password Protection helps you establish comprehensive defense against weak passwords in your on-premises environment.  With Azure AD Password Protection you will be able to:\r\n<ul>\r\n<li>Protect all password set and reset operations in Azure and Windows Server Active Directory by ensuring they do not contain weak or leaked password strings.</li>\r\n<li>Control Azure AD Password Protection for both Azure AD and on-premises Windows Server Active Directory from a unified control panel in Azure AD portal.</li>\r\n<li>Generate informative insights by using simple PowerShell cmdlet.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.177.1",
+    "detailsSection_file_name": [
+        "AzureADPasswordProtectionProxySetup.exe",
+        "AzureADPasswordProtectionDCAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB",
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 or newer\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 Standard",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please see the full documentation located at https://aka.ms/aadpasswordprotectiondocs",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57071",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP Capabilities Guide 2015",
+    "downloadDescription": "Capabilities Guide for Microsoft Dynamics GP 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics GP Capabilities Guide 2015_CA.pdf",
+            "url": "https://download.microsoft.com/download/b/7/9/b79429a9-7939-4280-99db-4d32abc6cc38/Microsoft Dynamics GP Capabilities Guide 2015_CA.pdf",
+            "size": "667322",
+            "version": "GP 2015",
+            "datePublished": "7/15/2024 3:56:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Whether you are considering Microsoft Dynamics GP as your organization\u2019s new business management solution, or are an existing customer looking to expand your solution with additional modules, this guide provides an overview of the product modules available within Microsoft Dynamics GP, grouped by the functional area they address across your business, and how those modules are licensed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "GP 2015",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics GP Capabilities Guide 2015_CA.pdf"
+    ],
+    "detailsSection_file_size": [
+        "651.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "read",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45000",
+    "downloadPreload": true
+}

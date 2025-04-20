@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Hanword HWP document converter for Microsoft Word 2016",
+    "downloadDescription": "Hanword HWP document converter for Microsoft Word 2016 is a tool which allows you to convert and open HWP files in Word as DOCX files. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "hwpconverter_x86_en-us.exe",
+            "url": "https://download.microsoft.com/download/1/8/d/18d83826-2f32-4535-8c6a-686149b39df8/hwpconverter_x86_en-us.exe",
+            "size": "7424784",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:06:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hwpconverter_x64_en-us.exe",
+            "url": "https://download.microsoft.com/download/1/8/d/18d83826-2f32-4535-8c6a-686149b39df8/hwpconverter_x64_en-us.exe",
+            "size": "8473688",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:06:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Hanword HWP document converter for Microsoft Word is a tool which allows you to convert and open HWP files in Microsoft Word 2016 as DOCX files. Each valid HWP 5.0 file can be opened in Microsoft Word and bulk converting by folder-bases is also allowed with a stand-alone bulk converter.\r\n Note : This converter is for Microsoft Word 32-bit Edition. For Microsoft Word 64-bit Edition, please install Hanword HWP document converter for Microsoft Word 64-bit Edition. The version is not dependent on operating system\u2019s platform.\r\n Note : Uninstalling previous version Hanword HWP document converter for Microsoft Word is recommended before installing new version Hanword HWP document converter for Microsoft Word. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "hwpconverter_x86_en-us.exe",
+        "hwpconverter_x64_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.1 MB",
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008, Windows Server 2012 \r\n\u2022 Supported Microsoft Word program: Microsoft Word 2016\r\n\u2022 Additional Operating System Details: Microsoft Word 2016 works with Windows 7 or above only \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To install this download:\r\n1. Download HwpConverter.exe by clicking the Download button (above) and save the file to your hard disk. \r\n2. Run HwpConverter.exe. The files will be extracted to %Program Files%\\Microsoft Office\\Office16. \r\n3. To open and edit a HWP file, open a supported Microsoft Word program, choose HWP 5.0 type in file open filter, and select a HWP file. \r\n4. To convert a HWP file to a DOCX file, run BATCHHWPCONV.exe, choose File option, source and target files, and press Convert button. \r\n5. To convert all HWP files in a folder to DOCX files, run BATCHHWPCONV.exe, choose Folder option, source and target folders, and press Convert button. \r\n\r\nTo remove this download:\r\n1. On the Start menu, point to Settings and then click Control Panel. \r\n2. Double-click Uninstall a Program. \r\n3. In the list of currently installed programs, select Hanword HWP document converter for Microsoft Word (x86) and the click Uninstall. If a dialog box appears, follow the instructions to remove the program. \r\n4. Click Yes or OK to confirm that you want to remove the program. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49152",
+    "downloadPreload": true
+}

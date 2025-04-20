@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "HealthVault Device Driver Development Package",
+    "downloadDescription": "Development kit contains documentation and sample drivers to help you build drivers for your health and fitness devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HealthVaultDDP.zip",
+            "url": "https://download.microsoft.com/download/0/0/7/0078a600-df11-4442-adb2-df24b368d4d0/HealthVaultDDP.zip",
+            "size": "1821685",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:09:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This kit contains various components intended to help development of a device driver for Microsoft Health Solutions.  It is intended for use by HealthVault Partner software developers.  The following is a general description of the contents:<br />\n\u2022\tCode: Contains code for enabling HealthVault Partner devices to interact with the HealthVault ecosystem, such as the HealthVault Partner WPD driver.<br />\n\u2022\t Docs: Contains general documentation for building WPD drivers for HealthVault Connection Center.<br />\n\u2022\tTools: Contains useful driver development tools, such as WpdInfo, which can be used to interact with and test WPD drivers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HealthVaultDDP.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Visual Studios 2005, 2008<br />\nWindows Driver Development Kit",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "This device driver development kit requires that Visual Studio 2005 SP1 or Visual Studio 2008 and Windows Driver Development Kit in order for the sample drivers to compile.",
+    "relatedResourcesSection": [
+        {
+            "title": "healthVault Consumer Site",
+            "url": "http://www.healthvault.com"
+        },
+        {
+            "title": "healthVault SDK",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=95E14343-FB98-4549-BD29-225A59423CC9&displaylang=en"
+        },
+        {
+            "title": "msdn HealthVault Dev Center",
+            "url": "http://msdn.microsoft.com/healthvault"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26801",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Preparing Users for an Office 2010 Deployment",
+    "downloadDescription": "This poster shows the steps needed to prepare end users for a rollout of Office 2010 in their environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "itpro-poster-enduser-readiness.vsd",
+            "url": "https://download.microsoft.com/download/c/6/7/c676cfb9-68da-44d7-acd2-8011de37c897/itpro-poster-enduser-readiness.vsd",
+            "size": "2597376",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "itpro-poster-enduser-readiness.pdf",
+            "url": "https://download.microsoft.com/download/c/6/7/c676cfb9-68da-44d7-acd2-8011de37c897/itpro-poster-enduser-readiness.pdf",
+            "size": "535852",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "itpro-poster-enduser-readiness.xps",
+            "url": "https://download.microsoft.com/download/c/6/7/c676cfb9-68da-44d7-acd2-8011de37c897/itpro-poster-enduser-readiness.xps",
+            "size": "735597",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster, which is arranged according to life cycle, provides a list of steps necessary at each phase of the cycle to prepare end users for a deplopyment of Microsoft Office 2010. It contains links to resources on TechNet that provide additional information and assistance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "itpro-poster-enduser-readiness.vsd",
+        "itpro-poster-enduser-readiness.pdf",
+        "itpro-poster-enduser-readiness.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "523.3 KB",
+        "718.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010\r\nAdobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26827",
+    "downloadPreload": true
+}

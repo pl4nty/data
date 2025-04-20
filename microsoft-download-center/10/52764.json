@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Guarded Fabric 2016 and above",
+    "downloadDescription": "The Windows Server 2016 and above Guarded Fabric Management Pack enables discovery and monitoring of guarded hosts and Host Guardian Service instances in your environment with System Center Operations Manager.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_GuardedFabric.docx",
+            "url": "https://download.microsoft.com/download/d/2/3/d23454ee-1b51-4ce6-a1eb-7dbcc8f15773/MPGuide_GuardedFabric.docx",
+            "size": "113348",
+            "version": "10.0.1.2",
+            "datePublished": "7/15/2024 4:13:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SCMP for Server Guarded Fabric 2016 and above.msi",
+            "url": "https://download.microsoft.com/download/d/2/3/d23454ee-1b51-4ce6-a1eb-7dbcc8f15773/Microsoft SCMP for Server Guarded Fabric 2016 and above.msi",
+            "size": "532480",
+            "version": "10.0.1.2",
+            "datePublished": "7/15/2024 4:13:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "The Windows Server 2016 and above Guarded Fabric Management Pack enables discovery and monitoring of guarded hosts and Host Guardian Service instances in your environment with System Center Operations Manager. The alerts surfaced by this management pack will help you quickly detect and remediate service availability issues with the Host Guardian Service and Hyper-V host misconfigurations that could prevent you from succesfully starting up shielded VMs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.1.2",
+    "detailsSection_file_name": [
+        "MPGuide_GuardedFabric.docx",
+        "Microsoft SCMP for Server Guarded Fabric 2016 and above.msi"
+    ],
+    "detailsSection_file_size": [
+        "110.7 KB",
+        "520.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016\r\nWIndows Server 2019\r\nWindows Server 2022\r\nSystem Center 2016 - Operations Manager\r\nSystem Center 2019 - Operations Manager\r\nSystem Center 2022 - Operations Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ol><li>Download and install System Center 2016 or above version - Operations Manager and all available updates</li>\r\n<li>Download and install the Windows Server 2016 and above Guarded Fabric Management Pack</li>\r\n<li>Follow the configuration recommendations located in the guarded fabric MP guide</li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "guarded Fabric Documentation",
+            "url": "http://aka.ms/ShieldedVMs"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52764",
+    "downloadPreload": true
+}

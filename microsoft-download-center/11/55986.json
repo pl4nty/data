@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "XNA Game Studio 3.1 Retired Technical documentation",
+    "downloadDescription": "The content you requested has already been retired. It is available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "XNA_Game_Studio_3.1_enus.pdf",
+            "url": "https://download.microsoft.com/download/e/5/e/e5e0c8aa-42f2-4825-bc27-9f7b94108073/XNA_Game_Studio_3.1_enus.pdf",
+            "size": "38468913",
+            "version": "3.1",
+            "datePublished": "7/15/2024 4:50:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft XNA Game Studio 3.1 is a set of tools based on supported versions of Microsoft Visual Studio tools that allow students and hobbyists to build games for Microsoft Windows, the Microsoft Xbox 360 video game and entertainment system, and Microsoft Zune. XNA Game Studio also includes the XNA Framework, which is a set of managed libraries based on the Microsoft .NET Framework 2.0 that are designed for game development. This documentation collection contains technology overviews, tutorials, and reference material related to XNA Game Studio.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1",
+    "detailsSection_file_name": [
+        "XNA_Game_Studio_3.1_enus.pdf"
+    ],
+    "detailsSection_file_size": [
+        "36.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\r\n  <LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55986",
+    "downloadPreload": true
+}

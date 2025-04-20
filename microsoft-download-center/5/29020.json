@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate IP Address Management (IPAM) in Windows Server \"8\" Beta ",
+    "downloadDescription": "This paper contains an introduction to Windows Server \"8\" Beta IP Address Management (IPAM), and step-by-step instructions for extending the Windows Server \"8\" Beta Base Configuration test lab to demonstrate IPAM setup.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_Server_8_Beta_Test_Lab_Guide_Demonstrate_IPAM.docx",
+            "url": "https://download.microsoft.com/download/d/9/a/d9afb562-646d-42cf-b3ac-5a1c8bfe2396/Windows_Server_8_Beta_Test_Lab_Guide_Demonstrate_IPAM.docx",
+            "size": "148428",
+            "version": "February 2012",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Internet Protocol Address Management (IPAM) is a framework for discovering, monitoring, auditing, and managing the Internet Protocol (IP) address space used in a network. IPAM in Windows Server \"8\" Beta provides components for IP address space management, audit of configuration changes, monitoring and management of DHCP and DNS services, and IP address usage tracking.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2012",
+    "detailsSection_file_name": [
+        "Windows_Server_8_Beta_Test_Lab_Guide_Demonstrate_IPAM.docx"
+    ],
+    "detailsSection_file_size": [
+        "144.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 8 Beta"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server \u201c8\u201d Beta Test Lab Guides",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=243062"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29020",
+    "downloadPreload": true
+}

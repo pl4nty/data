@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "Software and Database Shapes for Microsoft Visio",
+    "downloadDescription": "A set of Microsoft Visio stencils containing shapes for creating Express-G, ORM, Jackson, and ROOM notation diagrams.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SWDB_U.zip",
+            "url": "https://download.microsoft.com/download/8/9/2/89241265-49bb-4756-bd0e-e594e58093af/SWDB_U.zip",
+            "size": "170003",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SWDB_M.zip",
+            "url": "https://download.microsoft.com/download/8/9/2/89241265-49bb-4756-bd0e-e594e58093af/SWDB_M.zip",
+            "size": "169751",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Create software and database diagrams using this set of shapes from the Express-G, Object Role Modeling (ORM), Jackson, and Real-Time Object-Oriented Modeling (ROOM) notations. Note: These shapes were included with Visio 2003 Professional and Visio 2007 Professional, so if you are using either of these versions, there is no need to download them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SWDB_U.zip",
+        "SWDB_M.zip"
+    ],
+    "detailsSection_file_size": [
+        "166.0 KB",
+        "165.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use these stencils, you must have Microsoft Visio 2003 or a later version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the .zip file. The SWDB_U.zip file contains shapes designed for U.S. measurement units. The shapes in the SWDB_M.zip file are in metric units.</li>\n<li>Extract the stencil files (*.vss) from the .zip file to a folder on your computer. </li>\n</ol>\r\n<br/>\n<b>To access these shapes from Visio:</b> \n<br/>\n<ol>\n<li>Copy the stencil files to the \"My Shapes\" folder in your \"Documents\" or \"My Documents\" folder, which will be located on a path that looks similar to this: </li><br/>\r\nC:\\Documents and Settings\\yourname\\My Documents\\My Shapes<br/>\r\n<br/>\r\nor:<br/>\r\nC:\\Users\\yourname\\Documents\\My Shapes<br/>\r\n<br/>\r\nYou can place them in a folder inside of the My Shapes folder if desired.<br/>\r\n<br/>\r\n<li>In Visio 2003 or 2007, with a drawing open, go to the <b>File</b> menu, point to <b>Shapes</b>, and then point to <b>My Shapes</b>. In Visio 2010, click on <b>More Shapes</b> in the Shapes window, and then point to <b>My Shapes</b>. The stencils will be listed in the My Shapes menu. </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25110",
+    "downloadPreload": true
+}

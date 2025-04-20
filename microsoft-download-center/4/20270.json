@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Michael Isard on Dryad",
+    "downloadDescription": "Richard and Carl talk to Michael Isard about Dryad, a grid computing and clustering project from Microsoft.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080918MIsard.zip",
+            "url": "https://download.microsoft.com/download/b/3/2/b329bdd2-a568-40fe-bb81-a9777a1682ec/20080918MIsard.zip",
+            "size": "40752368",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:07:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Michael Isard received his D.Phil in computer vision from the Oxford University Engineering Science Department in 1998. In 1999  has worked for Microsoft Research in Silicon Valley since 2002. The majority of his early research was in the field of visual tracking and sequential filtering, and he helped to introduce particle filters to the computer vision community with the Condensation algorithm. Current research projects cover a range from inference methods for Bayesian networks with applications in visual tracking and dense stereo estimation; to programming models for large-scale distributed systems and many-core processor architectures. Michael led the Dryad project to build a large-scale distributed execution platform for datacenters that is now widely used internally by Microsoft product groups. He has recently started working with several colleagues on AME, a new concurrent programming model that makes use of transactional memory without explicit atomic blocks. He has also been collaborating with Andrew Zisserman's Visual Geometry Group in Oxford on various aspects of object retrieval from large databases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080918MIsard.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.9 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20270",
+    "downloadPreload": true
+}

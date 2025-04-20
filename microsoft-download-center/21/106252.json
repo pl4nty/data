@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Convert Queries with SSMA at Scale",
+    "downloadDescription": "A set of SQL and Powershell scripts to to help with the bulk conversion of competitive database queries to SQL Server TSQL using SSMA.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ConvertQueriesWithSSMAatScale.zip",
+            "url": "https://download.microsoft.com/download/2/3/2/2329e80d-9ebd-43d3-9ff9-935a2b8fcbff/ConvertQueriesWithSSMAatScale.zip",
+            "size": "57244",
+            "version": "1.0",
+            "datePublished": "9/27/2024 3:33:32 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In some cases, customers have captures of application generated queries that were run against the source database engine and want to convert them into TSQL to help the migration effort and/or understand the types of errors development teams will encounter. \r\n\r\nTo help with this requirement, our team put together a set of PowerShell scripts to enable customers to use SSMA to convert queries and harvest the warnings and errors produced at scale. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ConvertQueriesWithSSMAatScale.zip"
+    ],
+    "detailsSection_file_size": [
+        "55.9 KB"
+    ],
+    "detailsSection_file_date": "9/27/2024",
+    "systemRequirementsSection": "The file is a zipped folder that contains the scripts. Follow the instructions in the User Guide to set up the environment and run the scripts.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Choose the Download button on this page to start the download. Unzip the folder on a Windows machine and customize the PowerShell (.ps1) scripts as required for your local environment. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106252",
+    "downloadPreload": true
+}

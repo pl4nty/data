@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Update to Team Foundation Server Update 1 (KB2803625)",
+    "downloadDescription": "This updates addresses issues in Team Foundation Server 2012 Update 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "patch_KB2803625.exe",
+            "url": "https://download.microsoft.com/download/e/c/b/ecbb1f31-9699-434b-b62c-658000ad49f0/patch_KB2803625.exe",
+            "size": "5787448",
+            "version": "2012.1",
+            "datePublished": "7/15/2024 3:31:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update fixes eight issues in Team Foundation Server 2012 Update 1.\n<br />\nIssues addressed in this patch:<br />\n<ol>\n<li>Collections that are attached to a server that is running TFS 2012 Update 1 may lose permissions</li>\n<li>Group scopes may incorrectly cause permission errors</li> \n<li>Severe decrease in performance after TFS 2012 Update 1 is installed</li>\n<li>Identity sync jobs may fail repeatedly</li>\n<li>Warehouse is not updated correctly, or fields that represent a person are not filled</li>\n<li>Users can see names of collections of which they are not a member</li> \n<li>You cannot remove a user or a group after you attach a collection to a TFS 2012 Update 1 server</li>\n<li>You cannot view artifacts that reference an identity that is no longer a part of a collection</li>\n</ol>\n<br />\n<b>Note:</b> After installing the patch, you will need to manually initiate a rebuild of the warehouse in order to correctly populate the fields which reference people for the latest revisions of work items. Please see <a href=\"http://go.microsoft.com/fwlink/?LinkId=224873\">this article</a> for more information on how to rebuild the warehouse.<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2803625",
+        "name": "KB2803625"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012.1",
+    "detailsSection_file_name": [
+        "patch_KB2803625.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Team Foundation Server 2012 Update 1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "On this page, choose the <b>Download</b> button.\n<ul>\n<li>To install the software now, choose the <b>Run</b> button.</li>\n<li>To install the software later, choose the <b>Save</b> button.</li>\n</ul>",
+    "additionalInformationSection": "Before you install the update:<br />\n<ul>\n<li>Close any instances of Event Viewer that are running (EventVwr.exe).</li>\n<li>Close any instances of Server Manager that are running (ServerManager.exe).</li>\n<li>Close the Team Foundation Administration Console (tfsmgmt.exe).</li>\n</ul>\n<br />\n<br />\nDownload and run patch_kb2803625.exe<br />\n<b>Note:</b> This patch is only targeted for the Team Foundation Server Application Tier, it does not need to be run on stand-alone build servers, remote SharePoint servers, or proxy servers.\n<br />\n<br />\nIf you have multiple load-balanced application tiers (ATs):\n<br />\n<ol>\n<li>Shut down all the ATs except for the one on which you will install the update. Make sure that you close the Admin Console on all these ATs.</li>\n<li>Remove the AT from the load balancer.</li>\n<li>Install the update (as discussed earlier).</li>\n<li>After you install the update to the first AT, install the update on the other ATs one at a time.</li>\n<li>Add the ATs back to the load balancer.</li>\n</ol>\n<br />\n<br />\nIf you are using SQL Mirroring or SQL AlwaysOn features for your databases:\n<br />\n<br />\nThis update requires your SQL Databases to be set to simple recovery mode. To make sure that the update can set simple recovery mode for your databases, do the following before you apply the update:\n<br />\n<ul>\n<li>If your databases are in a SQL AlwaysOn Availability group, you must remove them from the availability group before you apply the update.</li> \n<li>If the databases are part of a SQL Server database mirroring, you must remove (break) the mirror before you apply the update.</li> \n</ul>\n<br />\nAs soon as the update process is complete, you may return the databases to the AlwaysOn group or re-enable database mirroring.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2803625",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=275584"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36392",
+    "downloadPreload": true
+}

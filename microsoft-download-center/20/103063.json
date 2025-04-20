@@ -1,0 +1,211 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Excel 2016 (KB5001918) 64-Bit Edition",
+    "downloadDescription": "A security vulnerability exists in Microsoft Excel 2016 64-Bit Edition that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "excel2016-kb5001918-fullfile-x64-glb.exe",
+            "url": "https://download.microsoft.com/download/0/5/3/05325b6c-2011-4fe5-861f-46bd22bf3560/excel2016-kb5001918-fullfile-x64-glb.exe",
+            "size": "142891376",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"https://support.microsoft.com/kb/5001918\">Security Update for Microsoft Excel 2016 (KB5001918) 64-Bit Edition</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5001918",
+        "name": "KB5001918"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "excel2016-kb5001918-fullfile-x64-glb.exe"
+    ],
+    "detailsSection_file_size": [
+        "136.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2012",
+        "Windows 8.1",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<br />\r\n\r\nTo start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li>\r\n</ul>\r\n<br />\r\n<br />\r\n\r\n<b>IT professional resources</b><br />\r\nIT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"https://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"https://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103063",
+    "downloadPreload": true
+}

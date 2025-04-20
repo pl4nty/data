@@ -1,0 +1,149 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server Subscription Edition",
+    "downloadDescription": "Organizations require collaboration, communication, and productivity solutions to be both cost-effective and flexible. SharePoint Server Subscription Edition can help you achieve new levels of reliability and performance, delivering features and capabilities that simplify administration, protect communications and information, and empower people in your organization to achieve more.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OfficeServer.iso",
+            "url": "https://download.microsoft.com/download/3/f/5/3f5f8a7e-462b-41ff-a5b2-04bdf5821ceb/OfficeServer.iso",
+            "size": "1476198400",
+            "version": "16.0.14326.20450",
+            "datePublished": "7/15/2024 5:05:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        }
+    ],
+    "detailsSection": "Organizations require collaboration, communication, and productivity solutions to be both cost-effective and flexible. SharePoint Server Subscription Edition can help you achieve new levels of reliability and performance, delivering features and capabilities that simplify administration, protect communications and information, and empower people in your organization to achieve more.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.14326.20450",
+    "detailsSection_file_name": [
+        "OfficeServer.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.4 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"https://go.microsoft.com/fwlink/?LinkID=2155801\" target=\"_blank\">System requirements for SharePoint Server Subscription Edition</a><br/>\r\n<a href=\"https://go.microsoft.com/fwlink/?LinkID=2167956\" target=\"_blank\">Software requirements for Project Server Subscription Edition</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To start the download:</b><br/>\r\n<ol>\r\n  <li>Select the desired installation language from the available choices in the <b>Select Language</b> drop-down list.</li>\r\n  <li>Click the <b>Download</b> button.</li>\r\n  <li>If prompted, click <b>Save</b> to copy the disc image file to your computer.</li>\r\n</ol>\r\n<br/>\r\n\r\n<b>Product Keys:</b><br/>\r\nThe following product keys install the product in trial mode. The trial period is 180 days. You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate product key in Central Administration.\r\n<ul style=\"margin-left: 0px\">\r\n  <li>SharePoint Server Standard Trial: KGN4V-82BMC-H383V-QJVFT-VCHJ7</li>\r\n  <li>SharePoint Server Enterprise Trial: VW2FM-FN9FT-H22J4-WV9GT-H8VKF</li>\r\n  <li>Project Server Trial: WD6NX-PGRBH-3FQ88-BRBVC-8XFTV</li>\r\n</ul>\r\n<br/>\r\n\r\n<b>To install SharePoint Server Subscription Edition on Windows Server with Desktop Experience:</b><br/>\r\n<ol>\r\n  <li>Mount the ISO disc image as a drive on your computer by double clicking on it, or by specifying it as a virtual drive in your virtual machine manager.</li>\r\n  <li>Launch the SharePoint Server Subscription Edition installation splash page by double clicking on the mounted drive, or by navigating to the mounted drive and running <b>splash.hta</b>.</li>\r\n  <li>Click <b>Install software prerequisites</b> to launch the Microsoft SharePoint Products Preparation Tool.</li>\r\n  <li>Follow the instructions in the tool to complete the installation of the software prerequisites.</li>\r\n  <li>On the SharePoint Server Subscription Edition installation splash page, click <b>Install SharePoint Server</b> to launch Microsoft SharePoint Server Subscription Edition Setup.</li>\r\n  <li>When prompted, provide a SharePoint Server product key.</li>\r\n</ol>\r\nReview <a href=\"https://go.microsoft.com/fwlink/?LinkID=2155802\" target=\"_blank\">Installation overview for SharePoint Server Subscription Edition</a> for detailed setup instructions.<br/>\r\n<br/>\r\n\r\n<b>To install SharePoint Server Subscription Edition on Windows Server Core:</b><br/>\r\n<ol>\r\n  <li>Mount the ISO disc image as a drive on your computer by using the <a href=\"https://docs.microsoft.com/powershell/module/storage/mount-diskimage\" target=\"_blank\">Mount-DiskImage</a> cmdlet, or by specifying it as a virtual drive in your virtual machine manager.<br/><br/>For example: Mount-DiskImage -ImagePath \"C:\\SharePoint Files\\OfficeServer.iso\"<br/><br/></li>\r\n  <li>Run <b>PrerequisiteInstaller.exe</b> to launch the Microsoft SharePoint Products Preparation Tool.</li>\r\n  <li>Follow the instructions in the tool to complete the installation of the software prerequisites.</li>\r\n  <li>Copy the \"\\Files\\SetupSilent\\config.xml\" file from your mounted ISO disc image to a writable location.<br/><br/>For example: Copy-Item -Path \"D:\\Files\\SetupSilent\\config.xml\" -Destination \"C:\\SharePoint Files\"<br/><br/></li>\r\n  <li>If the config.xml file in your writable location has a read-only file attribute, remove it.<br/><br/>For example: Set-ItemProperty -Path \"C:\\SharePoint Files\\config.xml\" -Name IsReadOnly -Value $false<br/><br/></li>\r\n  <li>Open the config.xml file in your writable location with a text editor.<br/><br/>For example: notepad.exe \"C:\\SharePoint Files\\config.xml\"<br/><br/></li>\r\n  <li>Find and remove the \"&lt;!--\" and \"--&gt;\" text strings within the file. Do not remove the text in between those two text strings.</li>\r\n  <li>Replace the \"Enter Product Key Here\" text string in the file with your SharePoint Server product key.</li>\r\n  <li>Save your changes to the config.xml file.</li>\r\n  <li>Run Microsoft SharePoint Server Subscription Edition Setup (setup.exe) on your computer in command line mode. This is done by adding the following command line parameters when launching setup.exe:</li>\r\n</ol>\r\n  <ul style=\"margin-left: 20px\">\r\n    <li><b>/config &lt;config file&gt;</b> (Where &lt;config file&gt; is the path to your writable config.xml file)</li>\r\n    <li><b>/IAcceptTheLicenseTerms</b> (Specifying this parameter signifies that you have read, understand, and agree to the license terms of SharePoint Server Subscription Edition and Project Server Subscription Edition.)</li>\r\n  </ul>\r\n  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For example: D:\\setup.exe /config \"C:\\SharePoint Files\\config.xml\" /IAcceptTheLicenseTerms<br/>\r\n<ol start=\"11\">\r\n  <li>Once Microsoft SharePoint Server Subscription Edition Setup has completed, reboot your computer.</li>\r\n</ol>\r\nReview <a href=\"https://go.microsoft.com/fwlink/?LinkID=2155802\" target=\"_blank\">Installation overview for SharePoint Server Subscription Edition</a> for detailed setup instructions.<br/>\r\n<br/>\r\n\r\n<b>To enable Project Server Subscription Edition:</b><br/>\r\n<ol>\r\n  <li>Install SharePoint Server Subscription Edition using a SharePoint Server Enterprise product key.</li>\r\n  <li>Create a SharePoint Server farm.</li>\r\n  <li>Launch the SharePoint Management Shell.</li>\r\n  <li>Use the <a href=\"https://go.microsoft.com/fwlink/?LinkID=761497\" target=\"_blank\">Enable-ProjectServerLicense</a> cmdlet in the SharePoint Management Shell to enable Project Server Subscription Edition.<br/><br/>For example: Enable-ProjectServerLicense -Key &ltProject Server product key&gt</li>\r\n</ol>\r\nReview <a href=\"https://go.microsoft.com/fwlink/?LinkID=2168059\" target=\"_blank\">Deploy Project Server Subscription Edition</a> for detailed setup instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "language Packs for SharePoint Server Subscription Edition",
+            "url": "https://www.microsoft.com/download/details.aspx?id=103600"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103599",
+    "downloadPreload": true
+}

@@ -1,0 +1,435 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Sync Framework 1.0 SP1",
+    "downloadDescription": "Microsoft Sync Framework is a comprehensive synchronization platform for enabling collaboration and offline scenarios for applications, services and devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_zh-CHT.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_zh-CHT.x64.zip",
+            "size": "13139000",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_es.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_es.x64.zip",
+            "size": "13128620",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_zh-CHS.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_zh-CHS.x86.zip",
+            "size": "12569425",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_en.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_en.x64.zip",
+            "size": "12976271",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_zh-CHT.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_zh-CHT.x86.zip",
+            "size": "12567666",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ja.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ja.x86.zip",
+            "size": "12580988",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_fr.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_fr.x64.zip",
+            "size": "13127911",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_fr.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_fr.ia64.zip",
+            "size": "15415224",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ru.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ru.x86.zip",
+            "size": "12662962",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_zh-CHS.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_zh-CHS.ia64.zip",
+            "size": "15426314",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ko.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ko.ia64.zip",
+            "size": "15482762",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_es.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_es.x86.zip",
+            "size": "12559287",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_pt-BR.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_pt-BR.ia64.zip",
+            "size": "15408927",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_de.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_de.x64.zip",
+            "size": "13158924",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_en.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_en.ia64.zip",
+            "size": "15262637",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_pt-BR.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_pt-BR.x86.zip",
+            "size": "12550750",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_de.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_de.x86.zip",
+            "size": "12588898",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SyncSetup_en.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_en.x86.zip",
+            "size": "12407000",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_it.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_it.x64.zip",
+            "size": "13127233",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ko.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ko.x86.zip",
+            "size": "12627101",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_zh-CHT.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_zh-CHT.ia64.zip",
+            "size": "15423292",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_it.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_it.x86.zip",
+            "size": "12558651",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ja.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ja.x64.zip",
+            "size": "13151894",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_es.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_es.ia64.zip",
+            "size": "15416462",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_pt-BR.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_pt-BR.x64.zip",
+            "size": "13121203",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_it.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_it.ia64.zip",
+            "size": "15416968",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_zh-CHS.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_zh-CHS.x64.zip",
+            "size": "13136991",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_fr.x86.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_fr.x86.zip",
+            "size": "12556901",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ru.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ru.ia64.zip",
+            "size": "15521781",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_de.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_de.ia64.zip",
+            "size": "15445941",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ko.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ko.x64.zip",
+            "size": "13195520",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ja.ia64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ja.ia64.zip",
+            "size": "15439148",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSetup_ru.x64.zip",
+            "url": "https://download.microsoft.com/download/b/9/d/b9d6e014-c949-4a1e-ba6b-2e0deba23e54/SyncSetup_ru.x64.zip",
+            "size": "13232407",
+            "version": "v1 sp1",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Sync Framework is a comprehensive synchronization platform that enables collaboration and offline scenarios for applications, services, and devices. Developers can build synchronization ecosystems that integrate any application and any type of data, using any protocol over any network. This service pack is intended to fix a handful of bugs as well as to transition to a public-facing change tracking API that is new in SQL Compact 3.5 SP2. In SQL Compact, the change tracking feature is used to track information about all changes that occur in a given database and is used to retrieve metadata related to these changes. In previous versions of SQL Compact, this change tracking feature was automatically enabled the first time a synchronization operation was initiated in a SQL Compact database, and developers did not have the ability to interact directly with this API themselves. SQL Compact 3.5 SP2 makes this API public and Sync Framework 1.0 SP1 is updated to leverage this new public API surface.  SQL Compact 3.5 SP2 makes this API public and Sync Framework 1.0 SP1 is updated to leverage the new public API surface. Making this API surface public provides developers with a finer grain of control and insight into the tracking of changes within SQL Compact.  In some cases, making this change tracking feature public has resulted in performance degradation because there are more layers to interact with when accessing change tracking information. <b>Because of this, before you upgrade to Sync Framework 1.0 SP1 you must carefully consider whether your need for this public change tracking feature outweighs the performance impact of leveraging this new API.</b> <br />\r\n\r\n\r\n<br>As mentioned above, a handful of bugs are fixed in this release:</br>\r\n\r\n\r\n<li>An access violation error occurred when you synchronized a deleted folder that contained a Desktop.ini file or a Thumbs.db file by using the file sync provider in Microsoft Sync Framework 1.0; KB961221.</li>\r\n<li>Uninstall or repair of Sync Framework on the Windows Vista operating system failed with the following message: \"This setup requires .NET Framework 2.0\" even though .NET Framework 2.0 was installed.</li>\r\n<li>Prerequisite check for .NET framework failed when .NET Framework 4.0 was the only version installed; KB962229.</li>\r\n<li> Sync Framework assemblies were disabled in the Visual Studio 2010 Add References dialog box; KB970102.</li>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v1 sp1",
+    "detailsSection_file_name": [
+        "SyncSetup_zh-CHT.x64.zip",
+        "SyncSetup_es.x64.zip",
+        "SyncSetup_zh-CHS.x86.zip",
+        "SyncSetup_en.x64.zip",
+        "SyncSetup_zh-CHT.x86.zip",
+        "SyncSetup_ja.x86.zip",
+        "SyncSetup_fr.x64.zip",
+        "SyncSetup_fr.ia64.zip",
+        "SyncSetup_ru.x86.zip",
+        "SyncSetup_zh-CHS.ia64.zip",
+        "SyncSetup_ko.ia64.zip",
+        "SyncSetup_es.x86.zip",
+        "SyncSetup_pt-BR.ia64.zip",
+        "SyncSetup_de.x64.zip",
+        "SyncSetup_en.ia64.zip",
+        "SyncSetup_pt-BR.x86.zip",
+        "SyncSetup_de.x86.zip",
+        "SyncSetup_en.x86.zip",
+        "SyncSetup_it.x64.zip",
+        "SyncSetup_ko.x86.zip",
+        "SyncSetup_zh-CHT.ia64.zip",
+        "SyncSetup_it.x86.zip",
+        "SyncSetup_ja.x64.zip",
+        "SyncSetup_es.ia64.zip",
+        "SyncSetup_pt-BR.x64.zip",
+        "SyncSetup_it.ia64.zip",
+        "SyncSetup_zh-CHS.x64.zip",
+        "SyncSetup_fr.x86.zip",
+        "SyncSetup_ru.ia64.zip",
+        "SyncSetup_de.ia64.zip",
+        "SyncSetup_ko.x64.zip",
+        "SyncSetup_ja.ia64.zip",
+        "SyncSetup_ru.x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.5 MB",
+        "12.5 MB",
+        "12.0 MB",
+        "12.4 MB",
+        "12.0 MB",
+        "12.0 MB",
+        "12.5 MB",
+        "14.7 MB",
+        "12.1 MB",
+        "14.7 MB",
+        "14.8 MB",
+        "12.0 MB",
+        "14.7 MB",
+        "12.5 MB",
+        "14.6 MB",
+        "12.0 MB",
+        "12.0 MB",
+        "11.8 MB",
+        "12.5 MB",
+        "12.0 MB",
+        "14.7 MB",
+        "12.0 MB",
+        "12.5 MB",
+        "14.7 MB",
+        "12.5 MB",
+        "14.7 MB",
+        "12.5 MB",
+        "12.0 MB",
+        "14.8 MB",
+        "14.7 MB",
+        "12.6 MB",
+        "14.7 MB",
+        "12.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 2000 Service Pack 3; Windows Vista Business; Windows Vista Business 64-bit edition; Windows Vista Enterprise; Windows Vista Enterprise 64-bit edition; Windows Vista Home Basic; Windows Vista Home Basic 64-bit edition; Windows Vista Home Premium; Windows Vista Home Premium 64-bit edition; Windows Vista Starter; Windows Vista Ultimate; Windows Vista Ultimate 64-bit edition; Windows XP Service Pack 2;Windows 7\r\n<br /><br />\r\nNote that SQL Server 2005 SP2 or greater is required when using the Sync Services for ADO.NET.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows Vista Business",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Starter",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Please ensure that you download and install the SyncSetup install appropriate for your system.  For example,  SyncSetup_en.x86.zip includes the installation package for x86 machines.\n<br /><br /> \r\nClick the Download button on this page to start the download<br />\r\nDo one of the following: <br />\r\nTo start the installation immediately, click Run.<br />\r\nTo save the download to your computer for installation at a later time, click Save. <br />\r\nTo cancel the installation, click Cancel.<br /><br />\r\n\r\n<b>Note</b> You may not have to apply all of the packages that are included in this hotfix:<br />\r\n<li>If Microsoft Sync Framework Runtime v1.0 is installed, run the Synchronization.msi file. </li>\r\n<li>If Microsoft Sync Framework SDK v1.0 is installed, run the SyncSDK.msi file. </li>\r\n<li>If Microsoft Sync Services for ADO.NET v2.0 is installed, run the SyncServicesADO.msi file. </li>\r\n<li>If Microsoft Sync Framework Services v1.0 is installed, run the ProviderServices.msi file. </li>\r\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Sync Framework Documentation",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=2e9bec3b-9deb-4620-a955-266e656d8fa4&displaylang=en"
+        },
+        {
+            "title": "sync Blog",
+            "url": "http://blogs.msdn.com/sync"
+        },
+        {
+            "title": "sync MSDN Developer Center",
+            "url": "http://msdn.microsoft.com/sync"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17616",
+    "downloadPreload": true
+}

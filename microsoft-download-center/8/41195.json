@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Cmdlet Reference Download for Microsoft Desktop Optimization Pack (MDOP)",
+    "downloadDescription": "This page lists the Cmdlet Reference downloads that are available for Microsoft Desktop Optimization Pack (MDOP) technologies.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UEV_v2_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5197b2-8490-4964-a46d-aa02849b7771/UEV_v2_Cmdlets.pdf",
+            "size": "886106",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM_25_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5197b2-8490-4964-a46d-aa02849b7771/MBAM_25_Cmdlets.doc",
+            "size": "682496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM_25_Cmdlets.pdf",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5197b2-8490-4964-a46d-aa02849b7771/MBAM_25_Cmdlets.pdf",
+            "size": "886428",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UEV_v2_Cmdlets.doc",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5197b2-8490-4964-a46d-aa02849b7771/UEV_v2_Cmdlets.doc",
+            "size": "708608",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The downloadable files listed on this page contain the Cmdlet Reference documentation for Microsoft Desktop Optimization Pack (MDOP) technologies.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "UEV_v2_Cmdlets.pdf",
+        "MBAM_25_Cmdlets.doc",
+        "MBAM_25_Cmdlets.pdf",
+        "UEV_v2_Cmdlets.doc"
+    ],
+    "detailsSection_file_size": [
+        "865.3 KB",
+        "666.5 KB",
+        "865.7 KB",
+        "692.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI>\r\n<LI>Microsoft Word 2013</LI>\r\n<LI>Microsoft Word 2010</LI>\r\n<LI>Microsoft Word 2007</LI>\r\n<LI>Microsoft Word 2003</LI>\r\n<LI>Microsoft Word 2002</LI>\r\n<LI>Microsoft Word 2000</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Desktop Optimization Pack Automation with Windows PowerShell",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=331522"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41195",
+    "downloadPreload": true
+}

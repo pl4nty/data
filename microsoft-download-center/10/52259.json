@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Network Logic Solver",
+    "downloadDescription": "Network Logic Solver is a Datalog solver that supports non-stratifiable negation and aggregation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "nls-0.1.zip",
+            "url": "https://download.microsoft.com/download/6/f/e/6feb637c-8574-4b74-94dd-2e1553a480a1/nls-0.1.zip",
+            "size": "980247",
+            "version": "0.1",
+            "datePublished": "1/15/2024 4:14:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Network Logic Solver is a Datalog solver that supports non-stratifiable negation and aggregation.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "nls-0.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "957.3 KB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52259",
+    "downloadPreload": true
+}

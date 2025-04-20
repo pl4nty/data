@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 Single Sign-On with Shibboleth 2 whitepaper ",
+    "downloadDescription": "Through its support for the SAML 2.0 protocol, Internet2 Shibboleth 2 provides claims-based (Web) single sign-on (also known as identity federation) with the Microsoft Office 365 offering and its Web application and e-mail rich client applications (like Outlook). ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office365-Single-Sign-On-with-Shibboleth-2.docx",
+            "url": "https://download.microsoft.com/download/2/d/d/2dddbc06-9b6b-425f-8dcb-98e5bd50606c/Office365-Single-Sign-On-with-Shibboleth-2.docx",
+            "size": "5028210",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Through its support for the SAML 2.0 protocol,  Internet2 Shibboleth 2 provides claims-based (Web) single sign-on (also known  as identity federation) with the Microsoft Office 365 offering and its Web  application and e-mail rich client applications (like Outlook). <br />\r\n  Building on existing documentation, this document is  intended to provide a better understanding of the different single sign-on  deployment options for Windows Azure Active Directory and the services in  Office 365, how to enable single sign-on using corporate credentials and the  Shibboleth 2 Identity Provider to Windows Azure Active Directory and the  services in Office 365, and the different configuration elements to be aware of  for such deployment.<br />\r\n  This document is intended for system architects and IT professionals who  are interested in understanding the basics of the single sign-on feature of  Windows Azure Active Directory/Office 365 with Shibboleth 2 along with  planning and deploying such a system in their environment.<br />\r\n  This document is part of a series of documents on the  identity and security features of Office 365. It indeed completes a previous <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28971\">Office 365 Single Sign-On with AD FS  2.0 whitepaper</a>. It has the exact same objectives of this paper but with the Shibboleth 2  technology instead of the AD FS 2.0 one. <br />\r\n  As of the date published, AD FS 2.0, Shibboleth 2,  along with Optimal IDM Virtual Identity Server Federation Services and  PingFederate 6.10, are the only supported technologies to enable the single  sign-on feature.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Office365-Single-Sign-On-with-Shibboleth-2.docx"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2008 R2, Windows Vista, Windows XP ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul>\r\n <li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=36391\">Active Directory from on-premises to the cloud</a></li>\r\n <li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28971\">Office 365 Single Sign-On with AD FS  2.0 whitepaper</a></li>\r\n\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30139\">Information  Protection and Control (IPC) in Microsoft Exchange Online with AD RMS  whitepaper</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=34768\">Information  Protection and Control (IPC) in Office 365 Preview with Windows Azure AD Rights  Management whitepaper</a></li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35464",
+    "downloadPreload": true
+}

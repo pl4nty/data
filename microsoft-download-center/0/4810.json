@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Sue Mosher On Outlook",
+    "downloadDescription": "Sue Discusses her work in Outlook and Exchange issues as well as the coding of Outlook and the new features of Outlook 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071106SMosher.zip",
+            "url": "https://download.microsoft.com/download/a/4/2/a42ae8de-3b3e-4f9e-a2c6-ad7fde87e313/20071106SMosher.zip",
+            "size": "45322758",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sue Mosher is the acclaimed author of books and articles on Microsoft Outlook and Exchange and founder of the award-winning Slipstick Systems Outlook & Exchange Solutions Center web site (http://www.slipstick.com). Her company, Turtleflock, LLC, is dedicated to helping individuals and organizations get the most out of their desktop programs.<br />\n<br />\nShe is married to military philosopher Robert Mosher. They have lived with their daughter, Annie, in Kinshasa, Congo, and in Moscow, and currently reside in Arlington, VA.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071106SMosher.zip"
+    ],
+    "detailsSection_file_size": [
+        "43.2 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4810",
+    "downloadPreload": true
+}

@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Platform - Server Runtime (Version 10.2)",
+    "downloadDescription": "Allows developers to build and deploy Speech Recognition and Text-to-Speech applications ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SpeechPlatformRuntime.msi",
+            "url": "https://download.microsoft.com/download/3/5/1/351b3c70-b7f4-4f86-94ea-5aecc3ab6b5c/x86/SpeechPlatformRuntime.msi",
+            "size": "3287552",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SpeechRuntime 10.2 Release Notes.htm",
+            "url": "https://download.microsoft.com/download/3/5/1/351b3c70-b7f4-4f86-94ea-5aecc3ab6b5c/SpeechRuntime 10.2 Release Notes.htm",
+            "size": "6784",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "license.rtf",
+            "url": "https://download.microsoft.com/download/3/5/1/351b3c70-b7f4-4f86-94ea-5aecc3ab6b5c/license.rtf",
+            "size": "172951",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SpeechPlatformRuntime.msi",
+            "url": "https://download.microsoft.com/download/3/5/1/351b3c70-b7f4-4f86-94ea-5aecc3ab6b5c/x64/SpeechPlatformRuntime.msi",
+            "size": "3633152",
+            "version": "10.2",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Update:</b> Microsoft Speech Platform has been updated.  See <a href=\"http://go.microsoft.com/fwlink/?LinkID=223568&clcid=0x409\">Microsoft Speech Platform - Runtime 11</a> for more information.\r\n<br/><br/>\r\n\r\nThe Microsoft Speech Platform Runtime contains both a managed (.NET) and native (COM) API for developing Server based speech applications. <br/>\r\n<br/>\r\nUse of the Microsoft Speech Platform Runtime is governed by the <a href=\"http://go.microsoft.com/fwlink/?LinkID=201166\"> MICROSOFT SPEECH PLATFORM SERVER RUNTIME 10.2 LICENSE AGREEMENT</a>. By downloading the SpeechPlatformRuntime.msi, you accept the <a href=\"http://go.microsoft.com/fwlink/?LinkID=201166\"> MICROSOFT SPEECH PLATFORM SERVER RUNTIME 10.2 LICENSE AGREEMENT</a>.\r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.2",
+    "detailsSection_file_name": [
+        "SpeechPlatformRuntime.msi",
+        "SpeechRuntime 10.2 Release Notes.htm",
+        "license.rtf",
+        "SpeechPlatformRuntime.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "6.6 KB",
+        "168.9 KB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\nDevelopment is supported on:\r\n<ul>\r\n    <li>Windows Vista or later</li>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n<br></br>\r\nDeployment is supported on:\r\n<ul>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>Click the file you want to download from the list below.</li>\r\n    <li>Do one of the following:</li>\r\n    <ul>\r\n        <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n        <li>To copy the download to your computer for installation at a later time, click<b>Save</b> or <b>Save this program to disk</b>.</li>\r\n    </ul>\r\n</ul>\r\n\r\n<b>Important File Download Details</b>\r\n<ul>\r\n    <li>Please review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=198426\">release notes</a> for additional information.</li>\r\n    <li>This download is only the runtime installer, for the software development kit, please download the <a href=\"http://go.microsoft.com/fwlink/?LinkID=189280\"> Microsoft Speech Platform - Server SDK. </a></li>\r\n</ul>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Speech Technologies",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=187246"
+        },
+        {
+            "title": "microsoft Speech Platform - Server Runtime Languages 10.2",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=189279"
+        },
+        {
+            "title": "microsoft Speech Platform - Software Development Kit (SDK) 10.2",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=189280"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10208",
+    "downloadPreload": true
+}

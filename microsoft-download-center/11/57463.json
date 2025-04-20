@@ -1,0 +1,250 @@
+{
+    "error": "",
+    "downloadTitle": "Language Packs for SharePoint Server 2019",
+    "downloadDescription": "Language packs enable creation of sites and site collections in multiple languages without requiring separate installations of SharePoint Server 2019.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "serverlanguagepack.exe",
+            "url": "https://download.microsoft.com/download/2/5/0/250cf23f-12a3-4c43-89c7-cf9c84c6a488/serverlanguagepack.exe",
+            "size": "77245888",
+            "version": "16.0.10337.12109",
+            "datePublished": "7/15/2024 4:56:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "prs-af",
+            "name": "Dari"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "Language packs enable creation of sites and site collections in multiple languages without requiring separate installations of SharePoint Server 2019. Multiple language packs can be installed on the same server. Application of a language pack will not change the language of the installed Microsoft Server product, or the language of the administrative features.\r\n<br/><br/>\r\n<b>Note:</b> You do not need to download a language pack for the language you installed. These language packs are to support creation of additional languages.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.10337.12109",
+    "detailsSection_file_name": [
+        "serverlanguagepack.exe"
+    ],
+    "detailsSection_file_size": [
+        "73.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This download works with the following programs:</b>\r\n<ul>\r\n  <li><a href=\"https://www.microsoft.com/download/details.aspx?id=57462\" target=\"_blank\">Microsoft SharePoint Server 2019</a></li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To start the download:</b><br/>\r\n<ol>\r\n  <li>Click the <b>Download</b> button.</li>\r\n  <li>Select the check box for the desired installation language from the available choices.</li>\r\n  <li>Click <b>Next</b>.</li>\r\n  <li>Click <b>Save</b> to copy the language pack setup program to your computer.</li>\r\n</ol>\r\n<br/>\r\n<b>To install the Language Pack for SharePoint Server 2019:</b><br/>\r\n<ol>\r\n  <li>Run the language pack setup program.</li>\r\n  <li>On the <b>Read the Microsoft Software License Terms</b>, review the terms, select the <b>I accept the terms of this agreement</b>, and then click <b>Continue</b>.</li>\r\n  <li>The setup wizard runs and installs the language pack.</li>\r\n  <li>Run the <b>SharePoint 2019 Products Configuration Wizard</b> using the default settings.</li>\r\n</ol>\r\n<br/>\r\n<b>Note:</b> If you do not run the <b>SharePoint 2019 Products Configuration Wizard</b> after you install a language pack, the language pack will not be installed properly.<br/>\r\n<br/>\r\n<b>To run the SharePoint 2019 Products Configuration Wizard:</b>\r\n<ol>\r\n  <li>Click <b>Start</b>, click <b>Microsoft SharePoint 2019 Products</b>, and then click <b>SharePoint 2019 Products Configuration Wizard</b>.</li>\r\n  <li>On the <b>Welcome to SharePoint Products</b> page, click <b>Next</b>.</li>\r\n  <li>Click <b>Yes</b> in the dialog box that alerts you that some services might need to be restarted during configuration.</li>\r\n  <li>If the <b>Modify Server Farm Settings</b> page appears, click <b>Do not disconnect from this server farm</b>, and then click <b>Next</b>.</li>\r\n  <li>If the <b>Modify SharePoint Central Administration Web Application Settings</b> page appears, do not modify any of the default settings, and then click <b>Next</b>.</li>\r\n  <li>If the <b>Completing the SharePoint Products Configuration Wizard</b> page appears, click <b>Next</b>.</li>\r\n  <li>On the <b>Configuration Successful</b> page, click <b>Finish</b>.</li>\r\n</ol>\r\n<br/>\r\n<b>Instructions for use:</b><br/>\r\n<br/>\r\nReview <a href=\"https://go.microsoft.com/fwlink/?LinkID=2005700\" target=\"_blank\">Install or uninstall language packs for SharePoint Server 2019</a> for detailed setup instructions.<br/>\r\n<br/>\r\n<b>To remove a language pack for SharePoint Server 2019:</b>\r\n<ol>\r\n  <li>On the <b>Start</b> menu, click <b>Control Panel</b>.</li>\r\n  <li>Click <b>Uninstall a program</b>.</li>\r\n  <li>In the list of currently installed programs, select <b>Language Pack for SharePoint and Project Server 2019 - [Language]</b> and then click <b>Uninstall</b> .</li>\r\n  <li>Click <b>Yes</b> to confirm that you want to remove the program.</li>\r\n  <li>Click <b>OK</b> in the dialog box alerting you that this might result in partial loss of functionality for sites that depend on this language pack.</li>\r\n  <li>After the language pack has been successfully uninstalled, click <b>Close</b>.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Server 2019",
+            "url": "https://www.microsoft.com/download/details.aspx?id=57462"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57463",
+    "downloadPreload": true
+}

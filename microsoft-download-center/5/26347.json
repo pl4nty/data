@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package MFC Security Update",
+    "downloadDescription": "A security issue has been identified leading to a vulnerability in MFC applications that are built with Visual Studio 2005 and ship the Microsoft Visual C++ 2005 Service Pack 1 Redistributable Package.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vcredist_x86.exe",
+            "url": "https://download.microsoft.com/download/8/b/4/8b42259f-5d70-43f4-ac2e-4b208fd8d66a/vcredist_x86.EXE",
+            "size": "2710520",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_x64.exe",
+            "url": "https://download.microsoft.com/download/8/b/4/8b42259f-5d70-43f4-ac2e-4b208fd8d66a/vcredist_x64.EXE",
+            "size": "3179000",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_ia64.exe",
+            "url": "https://download.microsoft.com/download/8/b/4/8b42259f-5d70-43f4-ac2e-4b208fd8d66a/vcredist_IA64.EXE",
+            "size": "6618104",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "A security issue has been identified leading to MFC application vulnerability in DLL planting due to MFC not specifying the full path to system/localization DLLs.  You can protect your computer by installing this update from Microsoft.  After you install this item, you may have to restart.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2538242",
+        "name": "KB2538242"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-025",
+        "name": "MS11-025"
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vcredist_x86.exe",
+        "vcredist_x64.exe",
+        "vcredist_ia64.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "3.0 MB",
+        "6.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkId=216804\">KB2538242</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2538242",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=216804"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26347",
+    "downloadPreload": true
+}

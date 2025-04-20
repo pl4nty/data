@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 Centralized Deployment PowerShell",
+    "downloadDescription": "PowerShell Cmdlets for Office 365 Centralized Deployment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OrganizationAddInPowerShellModule.msi",
+            "url": "https://download.microsoft.com/download/2/1/8/2181301c-5d4e-4c1e-9b9f-b24f0ac5982b/OrganizationAddInPowerShellModule.msi",
+            "size": "614400",
+            "version": "1.2.0.0",
+            "datePublished": "7/15/2024 4:50:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "As an Office 365 admin, you can deploy Office add-ins for the users in your organization. You can do this using the Centralized Deployment feature in the Office 365 admin center. \r\nCentralized Deployment is the recommended and most feature-rich way for most admins to deploy add-ins to users and groups within your organization.\r\nYou can upload, assign and modify Add-Ins using Centralized Deployment via Office 365 Admin Center or using PowerShell. \r\nThis download includes the PowerShell cmdlets that you can use to perform such actions.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.0.0",
+    "detailsSection_file_name": [
+        "OrganizationAddInPowerShellModule.msi"
+    ],
+    "detailsSection_file_size": [
+        "600.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 10 , Windows 7 Service Pack 1, Windows 8, Windows Server 2008 R2 SP1, Windows Server 2008 Service Pack 2, Windows Server 2012, Windows Server 2016 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download and install the MSI",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55267",
+    "downloadPreload": true
+}

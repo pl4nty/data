@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Virtualization Overview, Methods, and Models",
+    "downloadDescription": "Describes and illustrates how to plan virtualization for your organization.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "1_VirtualizationOverview.vsd",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/1_VirtualizationOverview.vsd",
+            "size": "1645056",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "2_VirtualizationDeliveryMethods.vsd",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/2_VirtualizationDeliveryMethods.vsd",
+            "size": "1522688",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "1_VirtualizationOverview.xps",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/1_VirtualizationOverview.xps",
+            "size": "1209629",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3_VirtualizationMobileUser.vsd",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/3_VirtualizationMobileUser.vsd",
+            "size": "1416704",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "1_VirtualizationOverview.pdf",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/1_VirtualizationOverview.pdf",
+            "size": "1022531",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "2_VirtualizationDeliveryMethods.xps",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/2_VirtualizationDeliveryMethods.xps",
+            "size": "732210",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3_VirtualizationMobileUser.pdf",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/3_VirtualizationMobileUser.pdf",
+            "size": "698371",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3_VirtualizationMobileUser.xps",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/3_VirtualizationMobileUser.xps",
+            "size": "903789",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "2_VirtualizationDeliveryMethods.pdf",
+            "url": "https://download.microsoft.com/download/c/b/6/cb60925d-426b-4cdd-84a6-c4de945146d1/2_VirtualizationDeliveryMethods.pdf",
+            "size": "623200",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These three models describe and illustrate how to plan virtualization for your organization.\r\n<ul><li>Model 1 (VirtualizationOverview) contains an architectural overview of the virtualization technology and the different models that are possible.</li>\r\n<li>Model 2 (VirtualizationDeliveryMethods) contains the delivery methods that are available by using virtualization. </li>\r\n<li>Model 3 (VirtualizationMobileUser) contains the stand-alone delivery method for mobile users of virtualized applications.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "1_VirtualizationOverview.vsd",
+        "2_VirtualizationDeliveryMethods.vsd",
+        "1_VirtualizationOverview.xps",
+        "3_VirtualizationMobileUser.vsd",
+        "1_VirtualizationOverview.pdf",
+        "2_VirtualizationDeliveryMethods.xps",
+        "3_VirtualizationMobileUser.pdf",
+        "3_VirtualizationMobileUser.xps",
+        "2_VirtualizationDeliveryMethods.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "1.5 MB",
+        "1.2 MB",
+        "1.4 MB",
+        "998.6 KB",
+        "715.0 KB",
+        "682.0 KB",
+        "882.6 KB",
+        "608.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista</li>\r\n<li>Windows XP</li>\r\n<li>Windows 7</li>\r\n</ul>\r\n</ul>\r\n<br></br>\r\n<ul><li><b>Additional Information:</b></li></ul>\r\n<ul><ul>\r\n<li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Tips for using posters</b>\r\n<br></br>\r\nIf you have a plotter, you can print these posters in their full size. If you don\u2019t have plotter, use the following steps to print on smaller paper.\r\n<br></br>\r\n<b>To print posters on smaller paper</b>\r\n<br></br>\r\n<ol>\r\n<li>Open the poster in Office Visio.</li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>. </li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down.</li>\r\n\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>. </li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Print</b>. </li>\r\n</ol>\r\n<br></br>\r\nIf you want to create posters that use the same symbols as these posters, you can download <a href=\"http://go.microsoft.com/fwlink/?LinkId=148756\">Visio stencils for Office IT Pro posters</a> (http://go.microsoft.com/fwlink/?LinkId=148756).\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9157",
+    "downloadPreload": true
+}

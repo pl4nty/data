@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Application Initialization 1.0 for IIS 7.5 (x86)",
+    "downloadDescription": "Application Initialization 1.0 for IIS 7.5 enables website administrators to configure IIS to proactively perform initialization tasks for one or more web applications. While an application is being initialized, IIS can also be configured to return an alternate response such as static content as a placeholder or \"splash page\" until an application has completed its initialization tasks.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "appwarmup_x86.msi",
+            "url": "https://download.microsoft.com/download/d/0/2/d02b30de-ddc5-409a-89f4-6204a89bba94/appwarmup_x86.msi",
+            "size": "1859584",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Application Initialization 1.0 for IIS 7.5 enables website administrators to configure IIS to proactively perform initialization tasks for one or more web applications. While an application is being initialized, IIS can also be configured to return an alternate response such as static content as a placeholder or \"splash page\" until an application has completed its initialization tasks. The module includes the following features:\r\n<ul>\r\n  <li>Introduces the concept of a \"warmup period\" to the server.</li>\r\n  <li>Enables developers to control the behavior of their applications during the warmup period.</li>\r\n  <li>Enables server administrators to \"pre-load\" important applications by initializing them as soon as the worker process starts.</li>\r\n  <li>Allows seamless recycling of pre-loaded application pools with no user-perceptible impact.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "appwarmup_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Internet Information Services 7.5 must be installed</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "You will need to run the installation package as an administrator. This can be accomplished by one of the following methods:\r\n<ul>\r\n<li>Logging in to your server using the actual account named \"Administrator\". </li>\r\n<li>Logging on using an account with administrator privileges and opening a command-prompt by right-clicking the <b>Command Prompt</b> menu item that is located in the <b>Accessories</b> menu for Windows programs and selecting \"Run as administrator\", then typing the appropriate command listed below for your version of Windows to run the installation: <br/><b>msiexec /I msi_name</b></li>\r\n</ul>\r\n<b>Installation on a machine with IIS Application Warmup Beta</b><br/>\r\nIf the Beta version of IIS Application Warmup has been installed, you need to uninstall it before proceeding with this installation. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30434",
+    "downloadPreload": true
+}

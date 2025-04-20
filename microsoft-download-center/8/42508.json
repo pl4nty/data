@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone 8.1 Mobile Device Management Overview",
+    "downloadDescription": "Explore the built-in mobile device management client in Windows Phone 8.1 that lets you manage the handsets with the mobile device management system of your choice.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-Phone-8-1-MDM-Overview.pdf",
+            "url": "https://download.microsoft.com/download/b/6/c/b6c2b6e7-0e9a-427d-8869-ca2d381f49a6/Windows-Phone-8-1-MDM-Overview.pdf",
+            "size": "854480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:46:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mobile device management (MDM) in Windows Phone 8.1 is based on the Synchronization Markup Language (SyncML) version 1.2, which is the Open Mobile Alliance Client Provisioning standard for device management. Windows Phone 8.1 builds on this standard to create an integrated MDM client that allows MDM system vendors to manage Windows Phone devices. This overview will show you how you can manage Windows Phone 8.1 by using an on premises, off premises, or hybrid MDM solution, such as those that System Center 2012 R2 Configuration Manager and Windows Intune provide. It also covers the use of MDM solutions in conjunction with Exchange Server, which allow you to not only manage the device and configuration settings, but also protect the email messages users send and receive on their Windows Phone 8.1 devices.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows-Phone-8-1-MDM-Overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "834.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Phone 8.1 TechCenter",
+            "url": "http://technet.microsoft.com/windows/dn632466.aspx?ocid=wc-mscom-dlc"
+        },
+        {
+            "title": "windows Phone 8.1 Technical Library",
+            "url": "http://technet.microsoft.com/library/dn643717.aspx?ocid=wc-mscom-dlc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42508",
+    "downloadPreload": true
+}

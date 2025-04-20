@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Managing Large and Structured Meetings with Lync 2013",
+    "downloadDescription": "Describes how to configure your Lync Server 2013 environment to host large and structured meetings.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Lync_Server_2013_Large_Meeting_Support.doc",
+            "url": "https://download.microsoft.com/download/3/1/4/3144c489-95b4-42bf-aa31-6132201cfc79/Microsoft_Lync_Server_2013_Large_Meeting_Support.doc",
+            "size": "10623488",
+            "version": "May2014",
+            "datePublished": "5/15/2024 3:38:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to configure your Lync Server 2013 environment to host and participate in large and structured meetings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May2014",
+    "detailsSection_file_name": [
+        "Microsoft_Lync_Server_2013_Large_Meeting_Support.doc"
+    ],
+    "detailsSection_file_size": [
+        "10.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "mike Jorden Blogs",
+            "url": "http://blogs.technet.com/b/mikejorden/"
+        },
+        {
+            "title": "managing Large and Structured Meetings with Lync 2010",
+            "url": "http://blogs.technet.com/b/nexthop/archive/2014/02/06/managing-large-and-structured-meetings-with-lync-2010-whitepaper-now-available-for-download.aspx"
+        },
+        {
+            "title": "support for Large Meetings",
+            "url": "http://technet.microsoft.com/en-us/library/jj205090.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42652",
+    "downloadPreload": true
+}

@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "PerfInsights v3.4.61",
+    "downloadDescription": "PerfInsights is a self-help diagnostics tool that collects & analyzes the diagnostic data, and provides a report to help troubleshoot Windows virtual machine performance problems in Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PerfInsights.zip",
+            "url": "https://download.microsoft.com/download/b8aecfb1-161d-4e63-9d5c-4d8b992a7d86/PerfInsights.zip",
+            "size": "11771222",
+            "version": "3.4.61",
+            "datePublished": "4/8/2025 3:20:11 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PerfInsights is a self-help diagnostics tool that collects & analyzes the diagnostic data, and provides a report to help troubleshoot Windows virtual machine performance problems in Azure. PerfInsights can be run on virtual machines as a standalone tool, or directly from the portal by installing Azure Performance Diagnostics VM Extension.<br/><br/>\nIf you are experiencing performance problems with virtual machines, before contacting support, run this tool. PerfInsights collects various information about the virtual machine, disks/storage pools configuration and performance logs such as: <br/>\n<ul>\n<li>System event logs</li>\n<li>Network status for all incoming and outgoing connections</li>\n<li>Task list for all applications currently running on the system</li>\n<li>SQL Server database configuration settings and error logs (if the VM is identified as a server that is running SQL Server)</li>\n<li>Storage reliability counters</li>\n<li>Important Windows hotfixes</li>\n<li>Installed filter drivers</li>\n<li>Firewall Rules</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.4.61",
+    "detailsSection_file_name": [
+        "PerfInsights.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.2 MB"
+    ],
+    "detailsSection_file_date": "4/8/2025",
+    "systemRequirementsSection": "This version of PerfInsights has the following requirements :\n<ol>\n<li>PerfInsights must be executed on the VM that has the performance issue.  </li>\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\n<li>Decompress the zip file into your temporary drive (usually D: by default)</li>\n<li>Open Windows command window in elevated mode, and then run PerfInsights.<br/>\n    <ul>\n        <li>C:\\> d:</li>\n        <li>D:\\> cd PerfInsights</li>\n        <li>D:\\> PerfInsights.exe</li>\n     </ul>\n   </li>\n</ol>\n\nFor more detailed instructions and additional information, please visit <a href='http://aka.ms/perfinsights'  target='_blank'>http://aka.ms/PerfInsights</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54915",
+    "downloadPreload": true
+}

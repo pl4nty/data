@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MONTI 3.2 Configuration Guide",
+    "downloadDescription": "Microsoft Online Notes Inspector (MONTI) was designed to assist customers in collecting specific data in regards to their Lotus Notes Domino mailbox storage data set to assist in migration planning.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MONTI.exe",
+            "url": "https://download.microsoft.com/download/f/f/d/ffd6c34a-c9db-4be5-8504-2f912ab820c3/MONTI.exe",
+            "size": "9983040",
+            "version": "April 2012",
+            "datePublished": "7/15/2024 5:03:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Online Notes Inspector (MONTI) was designed to assist customers in collecting specific data in regards to their Lotus Notes Domino mailbox storage data set.  MONTI was developed as a Lotus Notes application to allow customers to collect this data leveraging their current messaging expertise and skill sets.  Additionally, all the underlying code in MONTI is exposed and can be reviewed by the customer\u2019s current Domino Administration/Development team to ensure they fully understand MONTI.\r\n<br/><br/>\r\nMONTI collects the following information\r\n<UL>\r\n<LI>Domino directory information on each user</LI>\r\n<LI>Total mailbox size excluding database whitespace</LI>\r\n<LI>Total calendar items size</LI>\r\n<LI>Total contact items size</LI>\r\n<LI>Total group items size</LI>\r\n<LI>Optional mail item size (number of  days specified by customer)</LI>\r\n</UL>\r\nMONTI Requirements\r\n<UL>\r\n<LI>User account requirements</LI>\r\n<UL>\r\n<LI>Reader access to the Domino Directory</LI>\r\n<LI>The ability to create replicas on the Domino servers</LI>\r\n<LI>The ability to issue remote console commands to the Domino servers</LI>\r\n</UL>\r\n<LI>Signed by Notes ID requirements</LI>\r\n<UL>\r\n<LI>Reader access to all user mailboxes to be examined</LI>\r\n</UL>\r\n<LI>Lotus Notes and Domino support requirements</LI>\r\n<UL>\r\n<LI>MONTI was developed to run on Lotus Notes / Domino 6.x or later</LI>\r\n</UL>\r\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2012",
+    "detailsSection_file_name": [
+        "MONTI.exe"
+    ],
+    "detailsSection_file_size": [
+        "9.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</a>.</li> \r\n</ul>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29567",
+    "downloadPreload": true
+}

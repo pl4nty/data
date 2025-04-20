@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Deploying Customizations Across Microsoft Dynamics AX 2012 Environments ",
+    "downloadDescription": "This white paper discusses best practices for migrating data during the deployment of Microsoft Dynamics AX 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deploying customizations across Microsoft Dynamics AX 2012 environments.pdf",
+            "url": "https://download.microsoft.com/download/7/9/6/7964c5ad-2a28-4acc-92d5-2bcc72b70c69/Deploying customizations across Microsoft Dynamics AX 2012 environments.pdf",
+            "size": "1409814",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides tips and best practices for developers seeking to deploy Microsoft Dynamics AX 2012 between environments. A successful deployment includes the following steps: <br />\r\n<OL><LI>Importing metadata</LI>\r\n<LI>Importing data</LI>\r\n<LI>Compiling the application</LI></OL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Deploying customizations across Microsoft Dynamics AX 2012 environments.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26571",
+    "downloadPreload": true
+}

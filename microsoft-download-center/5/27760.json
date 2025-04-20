@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Application Virtualization (App-V) Documentation Resources Download Page",
+    "downloadDescription": "Downloadable App-V technical documentation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Application Virtualization Server Sizing Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/7/8/f784a197-73be-48ff-83da-4102c05a6d44/Application Virtualization Server Sizing Guide.pdf",
+            "size": "1238091",
+            "version": "Oct2008",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "App-V  5.0 Trial Guide.docx",
+            "url": "https://download.microsoft.com/download/f/7/8/f784a197-73be-48ff-83da-4102c05a6d44/App-V  5.0 Trial Guide.docx",
+            "size": "1634958",
+            "version": "Oct2008",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "App-V 5.0 Sequencing Guide.docx",
+            "url": "https://download.microsoft.com/download/f/7/8/f784a197-73be-48ff-83da-4102c05a6d44/App-V 5.0 Sequencing Guide.docx",
+            "size": "1460973",
+            "version": "Oct2008",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable App-V technical documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Oct2008",
+    "detailsSection_file_name": [
+        "Application Virtualization Server Sizing Guide.pdf",
+        "App-V  5.0 Trial Guide.docx",
+        "App-V 5.0 Sequencing Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "1.6 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".docx or .pdf file type viewer. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008 Enterprise",
+        "Windows Vista",
+        "Windows Vista Enterprise",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select the document you would like to download and read.",
+    "relatedResourcesSection": [
+        {
+            "title": "app-V Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/cc843848.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27760",
+    "downloadPreload": true
+}

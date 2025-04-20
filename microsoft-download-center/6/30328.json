@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MDI to TIFF File Converter",
+    "downloadDescription": "MDI to TIFF File Converter is a command line tool, which allows you to convert one or more MDI files to TIFF. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MDI2TIFConverter.exe",
+            "url": "https://download.microsoft.com/download/8/e/0/8e055361-8cc8-4dd5-93d6-09c85c8df21e/MDI2TIFConverter.exe",
+            "size": "2003848",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MDI to TIFF File Converter is a command line tool, which allows you to convert one or more MDI files to TIFF. MDI is a proprietary file format of MODI (Microsoft Office Document Imaging), which was deprecated as part of Office 2010. This conversion tool will allow you to view MDI files after they are converted to TIFF. TIFF files may be viewed using a variety of image viewing programs, such as the Windows Fax and Image Viewer. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MDI2TIFConverter.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported operating systems:</b>Windows 7, Windows Server 2003 R2 (32-Bit x86), Windows Server 2003 R2 x64 editions, Windows Server 2008, Windows Server 2008 R2, Windows Vista Service Pack 1, Windows XP Service Pack 3 <br/>\r\n<ul>\r\n<li><b>Computer and processor:</b> 500 MHz processor or higher.</li>\r\n<li><b>Memory:</b> 256 megabytes (MB) of RAM or higher. </li>\r\n<li><b>Hard disk:</b> 6MB, a portion of the disk space will be freed after installation if the original download package is removed from the hard drive. </li>\r\n<li><b>Additional Operating System Details:</b> Terminal Server and Windows on Windows (WOW) (which allows installing 32-bit versions of Office 2010 on 64-bit operating systems) are supported. </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/>\r\n<ol><li>Download the file by clicking the <b>Download</b> button (above) and save the file to your hard disk. </li>\r\n<li> Download MDI2TIFConverter.exe to a temporary directory</li>\r\n<li> Run MDI2TIFConverter.exe. The files will be extracted to  %ProgramFiles(x86)%\\modiconv</li>\r\n<li> To run the program, open a command prompt and navigate to the modiconv directory. Run \u201cmdi2tif \u2013help\u201d to get started</li>\r\n</ol>\r\n<b>To remove this download:</b> <br/>\r\n<ol><li>On the <b>Start</b> menu, point to Settings and then click <b>Control Panel</b>.</li>\r\n<li>Double-click <b>Add/Remove Programs</b> </li>\r\n<li>In the list of currently installed programs, select <b>MDI to TIFF File Converter</b> and then click <b>Remove</b> or <b>Add/Remove</b>. \r\r\nIf a dialog box appears, follow the instructions to remove the program. </li>\r\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program.</li>\r\n</ol>\r\n<b>Note:</b> If the converter is not running with administrator privileges, we recommend you set the -log and -dest properties to a directory that is not in a protected folder.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30328",
+    "downloadPreload": true
+}

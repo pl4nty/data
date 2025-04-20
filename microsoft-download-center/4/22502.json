@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft IPTV WES Adapter 3.0 Management Pack for MOM 2005",
+    "downloadDescription": "Microsoft IPTV WES Adapter 3.0 Management Pack monitors IPTV WES Adapter 3.0 services and their availability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft IPTV WES Adapter 3.0 MOM 2005 MP.msi",
+            "url": "https://download.microsoft.com/download/e/d/2/ed29c352-59d5-4809-84c9-f8556842934b/Microsoft IPTV WES Adapter 3.0 MOM 2005 MP.msi",
+            "size": "1284608",
+            "version": "03.0.0000.0000",
+            "datePublished": "6/13/2024 12:09:22 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Internet Protocol Television (IPTV) Well Enabled Services (WES) Adapter 3.0 Management Pack for MOM monitors the IPTV WES Adapter 3.0 services application event log. This management pack is build for monitoring both IPTV WES Adapter 3.0 Web and Windows services generated events. It includes event rules for the IPTV Adapter Poller and IPTV Usage Event Monitor windows services and IPTV WES Adapter web service. The events collected from each individual service indicate critical issues, informational events and error events generated during various IPTV WES Adapter 3.0 configurations and process flows. In addition different monitoring and corrective tasks allows detection and curing of service outages.\n<br/>\n<br/> \n<b>Feature Summary:</b>\n<br/>\n<br/>\nIPTV WES Adapter 3.0 services generated Error and Informational events.\n<br/>\nIPTV WES Adapter 3.0 service monitoring events indicating services health status.\n<br/>\nAlerts indicating configuration issues for services\n<br/>\nState monitoring view for various component services health status\n<br/>\nTasks to facilitate monitoring and control IPTV WES Adapter 3.0 services \n<br/>\nNotification if windows services outrage\n<br/>\n<br/> \n<b>Release and Update History:</b>\n<br/>\n<br/> \n<b>7/14/2006</b>    Original product release date (Version 03.0.0000.0000)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "03.0.0000.0000",
+    "detailsSection_file_name": [
+        "Microsoft IPTV WES Adapter 3.0 MOM 2005 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Microsoft Windows Server\u2122 2003 Enterprise Edition Service Pack 1 (SP1)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003, Enterprise Edition (32-bit x86)"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22502",
+    "downloadPreload": true
+}

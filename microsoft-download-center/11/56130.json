@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP Software License Terms and Third Party Notices",
+    "downloadDescription": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (Attribution) - Third Party Notice - Dynamics GP.pdf",
+            "url": "https://download.microsoft.com/download/e/6/8/e685081d-647f-432a-aff3-20aa95353798/MBS (Attribution) - Third Party Notice - Dynamics GP.pdf",
+            "size": "231142",
+            "version": "GP",
+            "datePublished": "7/15/2024 4:46:49 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "GP - English.pdf",
+            "url": "https://download.microsoft.com/download/e/6/8/e685081d-647f-432a-aff3-20aa95353798/GP - English.pdf",
+            "size": "264469",
+            "version": "GP",
+            "datePublished": "7/15/2024 4:46:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GP - 3rd party license folder.zip",
+            "url": "https://download.microsoft.com/download/e/6/8/e685081d-647f-432a-aff3-20aa95353798/GP - 3rd party license folder.zip",
+            "size": "485297",
+            "version": "GP",
+            "datePublished": "7/15/2024 4:46:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "GP",
+    "detailsSection_file_name": [
+        "MBS (Attribution) - Third Party Notice - Dynamics GP.pdf",
+        "GP - English.pdf",
+        "GP - 3rd party license folder.zip"
+    ],
+    "detailsSection_file_size": [
+        "225.7 KB",
+        "258.3 KB",
+        "473.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56130",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Publishing Outlook Anywhere Using NTLM Authentication With Forefront TMG or Forefront UAG",
+    "downloadDescription": "This white paper provides detailed information about publishing Microsoft Exchange Server 2010 using Forefront TMG or Forefront UAG to secure access for Outlook Anywhere when using NTLM Authentication.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UsingTMGandUAGtoSecurelyPublishExchangeOutlookAnywhereWithNTLM.docx",
+            "url": "https://download.microsoft.com/download/c/f/c/cfc88031-46ac-4562-bdeb-45f9aeeb32f7/UsingTMGandUAGtoSecurelyPublishExchangeOutlookAnywhereWithNTLM.docx",
+            "size": "5162097",
+            "version": "Jan2011",
+            "datePublished": "7/15/2024 3:15:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When you publish Exchange, Microsoft offers two software-based options: Microsoft Forefront Threat Management Gateway 2010 and Microsoft Forefront Unified Access Gateway 2010. Both options offer publishing wizards and security features to provide secure access to Exchange when it's accessed from outside the safety of the corporate network. \r\nThis white paper provides detailed information about publishing Microsoft Exchange Server 2010 using Forefront TMG or Forefront UAG, including how to choose between them for different scenarios, and provides specific steps you can take to configure Forefront TMG and Forefront UAG to publish Exchange 2010 while using NTLM authentication for Outlook Anywhere access. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jan2011",
+    "detailsSection_file_name": [
+        "UsingTMGandUAGtoSecurelyPublishExchangeOutlookAnywhereWithNTLM.docx"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22723",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Error Lookup Tool",
+    "downloadDescription": "The Error Lookup Tool, also known as \"ERR\", is a command-line tool to decode many Microsoft error codes.  It does not require elevation and is very easy to use.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Err_6.4.5.exe",
+            "url": "https://download.microsoft.com/download/4/3/2/432140e8-fb6c-4145-8192-25242838c542/Err_6.4.5/Err_6.4.5.exe",
+            "size": "2294520",
+            "version": "6.4.5",
+            "datePublished": "7/15/2024 4:28:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Error Lookup Tool looks up constants in all known Windows products error headers through a large set of tables built into the tool at compile time.  Run the app with no arguments for command line help and a list of header files currently indexed. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.4.5",
+    "detailsSection_file_name": [
+        "Err_6.4.5.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Error Lookup tool runs on any supported Windows operating system.  There is one version availble for download, which runs on 32-bit and 64-bit Windows:\r\n\r\n-  Err_6.4.5.exe",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "1.  Download the compressed package for the appropriate operating system\r\n2.  Extract the contents to any folder of your choosing.\r\n\r\nNOTE: If you extract the application to a folder in either the user or system path, you can subsequently run the tool without having to change directory.",
+    "additionalInformationSection": "Version 6.4.5",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100432",
+    "downloadPreload": true
+}

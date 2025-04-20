@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "PerformancePoint Services and Dashboard Designer help",
+    "downloadDescription": "Compiled help file for PerformancePoint Services in SharePoint Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PerformancePoint.chm",
+            "url": "https://download.microsoft.com/download/9/3/c/93c524f9-404f-49d0-990b-f5b3ea1a9562/PerformancePoint.chm",
+            "size": "313312",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:44:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "PerformancePoint Services lets you create rich dashboards, aggregating content from multiple sources and displaying it in a web browser in an understandable and collaborative environment. This compiled help file (CHM) provides an overview of PerformancePoint Services and detailed help for using Dashboard Designer to create PerformancePoint Services dashboards.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PerformancePoint.chm"
+    ],
+    "detailsSection_file_size": [
+        "306.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file and save it to your local disk. Right-click the file and select properties. Select Unblock and click OK.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55772",
+    "downloadPreload": true
+}

@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Native Client - QFE",
+    "downloadDescription": "Latest servicing update available for the Microsoft\u00ae SQL Server\u00ae 2012 Native Client",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/b/e/d/bed73aac-3c8a-43f5-af4f-eb4fea6c8f3a/ENU/x64/sqlncli.msi",
+            "size": "5083136",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:51:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/b/e/d/bed73aac-3c8a-43f5-af4f-eb4fea6c8f3a/ENU/x86/sqlncli.msi",
+            "size": "3133440",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:51:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae SQL Server\u00ae 2012 Native Client is available as part of Microsoft\u00ae SQL Server\u00ae 2012 Feature Pack, which is updated at each SQL Server 2012 Service Pack. <br/>\r\n<br/>\r\nThis download is the latest cumulative servicing (QFE) update made to the most recent 2012 Feature Pack release of the SQL Server\u00ae 2012 Native Client.  Please reference SQL Server 2012 Native Client support Knowledge Base articles for servicing update details. <br/>\r\n<br/>\r\nNote that Microsoft will not be releasing a SQL Server 2014 or later version of the SQL Server Native Client.  The SQL Server 2012 Native Client (v11, e.g. sqlncli11.dll), can continue to be utilized by SQL Server 2014 and later versions.\r\n<br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.7001.0",
+    "detailsSection_file_name": [
+        "sqlncli.msi",
+        "sqlncli.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB",
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "         <br />\r\n      <b>Note:</b>\r\n      This site currently contains only the English servicing release. Please check back soon for other languages. \r\n      <br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please see <a href=\"https://technet.microsoft.com/library/ms131321(v=sql.110).aspx\">Installing SQL Server Native Client</a> for complete installation instructions.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50402",
+    "downloadPreload": true
+}

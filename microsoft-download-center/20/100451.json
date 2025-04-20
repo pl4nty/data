@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQLSysCLRTypes",
+    "downloadDescription": "Microsoft SQLSysCLRTypes",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/d/d/1/dd194c5c-d859-49b8-ad64-5cbdcbb9b7bd/SQLSysClrTypes.msi",
+            "size": "4263936",
+            "version": "15.0.2000.5",
+            "datePublished": "7/15/2024 4:28:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy ID types in SQL Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.5",
+    "detailsSection_file_name": [
+        "SQLSysClrTypes.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Note: This component also requires <a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">\r\n    Windows Installer 4.5\r\n  </a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<br />\r\nRun the self-extracting download package to create an installation folder.  <br />\r\n  <ul>\r\n    <b>Filename: x64 Package</b> (SQLSysClrTypes.msi)<br />\r\n  </ul>",
+    "additionalInformationSection": "- This package is for legacy versions of SQL Server and Windows (2019 and earlier). For newer versions, please download the latest <a href=\"https://go.microsoft.com/fwlink/?linkid=2238415\">NuGet package</a>.<br/><br/>\r\n- If you have questions about SQL Server, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "nuGet package for latest Microsoft.SqlServer.Types",
+            "url": "https://go.microsoft.com/fwlink/?linkid=2238415"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100451",
+    "downloadPreload": true
+}

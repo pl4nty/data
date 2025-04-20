@@ -1,0 +1,133 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Intune Company Portal App for Windows 8.1",
+    "downloadDescription": "The Microsoft Intune Company Portal app helps users search, browse and install apps made available to them by their company.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WinSSPBootstrapper.exe",
+            "url": "https://download.microsoft.com/download/1/f/a/1fa06e1f-09b9-45ef-a275-64728e328706/WinSSPBootstrapper.exe",
+            "size": "9225968",
+            "version": "4.250.2\u200b\u200b\u200b",
+            "datePublished": "7/15/2024 3:56:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b>Beginning in October 2020, the Company Portal app for Windows 8.1 is no longer supported.</b>\r\n<br/>\r\n<br/>\r\nThe Microsoft Intune Company Portal app helps users search, browse and install apps made available to them by their company, through the Microsoft Intune online service from Microsoft. Apps can be installed without requiring a connection to the corporate network. Users can also add their personal computers and devices to the service and locate contact information for their IT team.<br/>\r\n<br/>\r\n The Microsoft Intune Company Portal app is available from the Windows Store to allow end users to download and install the app to their own device. It is available from the Download Center to allow administrators to deploy the app to end users who do not have access to the Windows Store. <br/>\r\n<br/>\r\nFor details about what\u2019s new in the latest update, see <a href=\" http://aka.ms/intuneupdates \"> http://aka.ms/intuneupdates </a>.\r\n<br/>\r\n<br/>\r\n<b>IMPORTANT: Use of this software requires an organizational account and connectivity to the company\u2019s valid subscription to Microsoft Intune\u2122. Updates to the service may be required for proper performance. Some functionality may not be available in all countries. See the <a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">Microsoft Online Services Privacy Statement</a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">http://go.microsoft.com/fwlink/?LinkID=240296</a>). </b><br/>\r\n<br/>\r\n<b>Feature Summary </b>\r\n<ul>\r\n<li> Company apps \u2013 Browse, search and install apps made available by the IT team </li> \r\n<li> Computer/device enrollment \u2013 Manage enrollment with Windows Intune for computer and devices, as well as the ability to remote wipe certain device types</li> \r\n<li> Contact IT \u2013 Easily locate contact information</li> \r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.250.2\u200b\u200b\u200b",
+    "detailsSection_file_name": [
+        "WinSSPBootstrapper.exe"
+    ],
+    "detailsSection_file_size": [
+        "8.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Note: </b>You must run WinSSPBootstrapper.exe on a 64-bit computer to extract the CompanyPortal.appx file. <br/>\r\n<br/>\r\n<b>Other Requirements: </b>A MIcrosoft Intune subscription or System Center 2012 R2 Configuration Manager with a Windows Intune subscription. <br/>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows RT 8.1"
+    ],
+    "installInstructionSection": "When not installed directly from the Windows Store, installation of the Company Portal app requires sideloading keys on target machines. See <a href=\"http://go.microsoft.com/fwlink/?LinkID=290705\">http://go.microsoft.com/fwlink/?LinkID=290705</a> for details on how to deploy sideloading keys. <br/>\r\n<br/>\r\n Once sideloading keys have been installed on target machines, the following steps can be used to manually deploy the Company Portal to these machines: <br/>\r\n<br/>\r\n<ul>\r\n<li> Download the CompanyPortal.appx file from the Download Center and place it on an accessible share or folder (\u2039path\u203a) </li> \r\n<li> From an elevated command line, run the following command:  </li>\r\n<ul>\r\n<li> Powershell add-appxpackage \u2013path \u201c\u2039path\u203a\u201d  </li>\r\n</ul>\r\n<li> Verify that the \u201cCompany Portal\u201d tile is available on in the app list on the target machine (on Windows 8.1 or Windows RT 8.1 devices a tile will be created on the Start screen automatically)  </li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44997",
+    "downloadPreload": true
+}

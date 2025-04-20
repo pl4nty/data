@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Message Queuing",
+    "downloadDescription": "System Center 2012 Management Pack for Message Queuing",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Message Queuing.msi",
+            "url": "https://download.microsoft.com/download/4/8/1/481a7ddf-0ad9-4f9a-82fb-ab49612001bd/SC Management Pack for Message Queuing.msi",
+            "size": "602112",
+            "version": "7.0.8608.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for MSMQ 6.0.docx",
+            "url": "https://download.microsoft.com/download/4/8/1/481a7ddf-0ad9-4f9a-82fb-ab49612001bd/Management Pack Guide for MSMQ 6.0.docx",
+            "size": "88542",
+            "version": "7.0.8608.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System Center 2012 Management Pack for Message Queuing",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8608.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for Message Queuing.msi",
+        "Management Pack Guide for MSMQ 6.0.docx"
+    ],
+    "detailsSection_file_size": [
+        "588.0 KB",
+        "86.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows Server Operating System Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager:\r\n\u2022 System Center Operations Manager 2012\r\n\u2022 System Center Operations Manager 2012 SP1\r\n\u2022 System Center Operations Manager 2012 R2\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows 8"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36775",
+    "downloadPreload": true
+}

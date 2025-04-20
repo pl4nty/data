@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Product Terms Explained",
+    "downloadDescription": "Information about licensing basics and why Microsoft uses different models for licensing its products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Product_Terms_Explained.pdf",
+            "url": "https://download.microsoft.com/download/e/8/e/e8edae36-cbc6-4123-bc5a-f651d174fd6c/Microsoft_Product_Terms_Explained.pdf",
+            "size": "491084",
+            "version": "August 2015",
+            "datePublished": "7/15/2024 3:01:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "The <a href=\" http://www.microsoft.com/licensing/about-licensing/product-licensing.aspx\">Product Terms (PT)</a> provides information regarding the acquisition of licenses available through Microsoft Volume Licensing programs (formerly provided through the Product List) and the terms and conditions governing software deployment and use (formerly provided through the Product Use Rights (PUR)).<br/><br/>\r\nIn this introductory guide to Product Terms, you will learn how you can use the Product Terms to find licensing information for specific Microsoft products and services. You will also review the basics of licensing and learn why Microsoft uses different licensing models for its many products. The Product Terms is a vital legal document and part of your Microsoft Volume Licensing agreement, and we know that it takes time to read and understand the full document. To help you, we have created a licensing story that walks you through examples of how the Microsoft licensing models are applied when using various \u201creal-world\u201d technology solutions. We invite you to follow the director of IT for a midsize company as she finds the best way to license the Microsoft products and services her company needs for a series of IT initiatives.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2015",
+    "detailsSection_file_name": [
+        "Microsoft_Product_Terms_Explained.pdf"
+    ],
+    "detailsSection_file_size": [
+        "479.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You must have Microsoft Office Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac&displaylang=en\">Word Viewer</a> installed to open this file.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "In the <b>Change Language</b> list, select the language that you want, and then click <b>Download</b> to open the file or save it to your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Volume Licensing Web Site",
+            "url": "http://www.microsoft.com/licensing"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3497",
+    "downloadPreload": true
+}

@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Azure Backup Server v4",
+    "downloadDescription": "Microsoft Azure Backup provides backup for application workloads like Microsoft SQL Server, Hyper-V, Azure Stack HCI and VMware VMs, SharePoint Server, Exchange and Windows clients with support for both Disk to Disk backup for local copies and Disk to Disk to Cloud backup for long term retention.  Azure Backup Server now supports Windows Server 2022 workloads as well.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MABS_V4-4.bin",
+            "url": "https://download.microsoft.com/download/a/7/1/a715bcae-5cf5-48bf-9da5-85c4db4fdf2c/MABS_V4-4.bin",
+            "size": "426241302",
+            "version": "14.0.30.0",
+            "datePublished": "7/15/2024 4:58:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MABS_V4-3.bin",
+            "url": "https://download.microsoft.com/download/a/7/1/a715bcae-5cf5-48bf-9da5-85c4db4fdf2c/MABS_V4-3.bin",
+            "size": "736000000",
+            "version": "14.0.30.0",
+            "datePublished": "7/15/2024 4:58:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MABS_V4-2.bin",
+            "url": "https://download.microsoft.com/download/a/7/1/a715bcae-5cf5-48bf-9da5-85c4db4fdf2c/MABS_V4-2.bin",
+            "size": "736000000",
+            "version": "14.0.30.0",
+            "datePublished": "7/15/2024 4:58:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MABS_V4-1.bin",
+            "url": "https://download.microsoft.com/download/a/7/1/a715bcae-5cf5-48bf-9da5-85c4db4fdf2c/MABS_V4-1.bin",
+            "size": "735645696",
+            "version": "14.0.30.0",
+            "datePublished": "7/15/2024 4:58:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MABS_V4.exe",
+            "url": "https://download.microsoft.com/download/a/7/1/a715bcae-5cf5-48bf-9da5-85c4db4fdf2c/MABS_V4.exe",
+            "size": "364328",
+            "version": "14.0.30.0",
+            "datePublished": "7/15/2024 4:58:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With Microsoft Azure Backup, you can protect application workloads such as Hyper-V VMs, VMware VMs, Azure Stack HCI VMs, Microsoft SQL Server, SharePoint Server, Microsoft Exchange and Windows clients to:<br />\r\n- Disk (D2D), giving high RTOs for tier 1 workloads<br />\r\n- Azure (D2D2C) for long term retention.<br />\r\n<br /><br />\r\nYou can deploy Microsoft Azure Backup server (MABS) as:<br />\r\n- A physical standalone server.<br />\r\n- A Hyper-V virtual machine - You can run MABS as a virtual machine hosted on an on-premises Hyper-V host server, to back up on-premises data.<br />\r\n- An Azure Stack HCI virtual machine - You can run MABS as a virtual machine hosted on an on-premises Azure Stack HCI host server, to back up on-premises data.<br />\r\n- A Windows virtual machine in VMWare - You can deploy MABS to provide protection for Microsoft workloads running on Windows virtual machines in VMWare. In this scenario MABS can be deployed as a physical standalone server, as a Hyper-V virtual machine, or as a Windows virtual machine in VMWare.<br />\r\n- An Azure virtual machine - You can run MABS as a virtual machine in Azure to back up cloud workloads running as Azure virtual machines.<br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5024199",
+        "name": "KB5024199"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.30.0",
+    "detailsSection_file_name": [
+        "MABS_V4-4.bin",
+        "MABS_V4-3.bin",
+        "MABS_V4-2.bin",
+        "MABS_V4-1.bin",
+        "MABS_V4.exe"
+    ],
+    "detailsSection_file_size": [
+        "406.5 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.6 MB",
+        "355.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Processor:<br />\r\nMinimum: 1 GHz, dual-core CPU<br />\r\nRecommended: 2.33 GHz quad-core CPU<br /><br />\r\n\r\nRAM:<br />\r\nMinimum: 8GB<br />\r\nRecommended: 10GB<br /><br />\r\n\r\nHard Drive Space:<br />\r\nMinimum: 5GB<br />\r\nRecommended: 10GB<br /><br />\r\nOS: Windows Server 2019 or 2022 <br /><br />\r\n\r\nDisks for backup storage pool: 1.5x \u2013 2x times size of data to be protected.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Step 1: Click on download and select all the files. All the files should be in the same folder post successful download.<br />\r\nStep 2: Run MicrosoftAzureBackupInstaller.exe from the download folder with elevated privileges.<br />\r\nStep 3: Ensure Microsoft .Net 3.5, Microsoft .Net 3.5 SP1 and Microsoft Net 4.0/4.5/4.6.1 is installed.<br />\r\nStep 4: Refer to detailed documentation for configuring your Microsoft Azure Backup server for workload backup (http://go.microsoft.com/fwlink/?LinkID=617319&clcid=0x409)<br />\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105164",
+    "downloadPreload": true
+}

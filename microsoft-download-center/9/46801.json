@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "ContosoSalesForPowerBI",
+    "downloadDescription": "This download includes the Contoso Sales for Power BI Designer.pbix sample Power BI Designer file.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Contoso Sales Sample for Power BI Desktop.zip",
+            "url": "https://download.microsoft.com/download/4/6/a/46ab5e74-50f6-4761-8edb-5ae077fd603c/Contoso Sales Sample for Power BI Desktop.zip",
+            "size": "47505199",
+            "version": "1",
+            "datePublished": "7/15/2024 3:41:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes the Contoso Sales for Power BI Designer.pbix sample Power BI Designer file. This file includes over two million rows of sales data for the fictitious company, Contoso Inc.. You will not be able to access the actual data source. All data is stored within the file's model and can only be viewed in Power BI Designer.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Contoso Sales Sample for Power BI Desktop.zip"
+    ],
+    "detailsSection_file_size": [
+        "45.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Power BI Designer Preview ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46801",
+    "downloadPreload": true
+}

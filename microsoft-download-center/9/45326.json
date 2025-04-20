@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2013 Update 4 (KB3023577)",
+    "downloadDescription": "Fix for Git clients issue",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB3023577.exe",
+            "url": "https://download.microsoft.com/download/f/8/b/f8b14e50-80da-4e34-9cbb-dfb047783338/VS12-KB3023577.exe",
+            "size": "2623800",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:57:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This download is to install a fix for Git clients issue that was discovered by the core Git maintainers.  The vulnerability allows an attacker to introduce a file into a Git repo named in such a way that when a user downloads the changes in a remote repository the attacker's file silently replaces the user's config file which resides outside of the repository.  By replacing this file with a bad file, the attacker can re-map git commands to execute arbitrary commands that run under the user's credentials. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "VS12-KB3023577.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 with Update 4 applied.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Small Business Server 2011 Standard"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 3023577",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=523729"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45326",
+    "downloadPreload": true
+}

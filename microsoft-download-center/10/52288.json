@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "FingerPaint Dataset",
+    "downloadDescription": "The FingerPaint Dataset contains video-sequences of several individuals performing hand gestures, as captured by a depth camera. Last published: August 28, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FingerPaint.zip",
+            "url": "https://download.microsoft.com/download/5/5/6/556d451c-b1e6-4bd3-99bb-c8fba588e4be/FingerPaint.zip",
+            "size": "3447384423",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The FingerPaint Dataset contains video-sequences of several individuals performing hand gestures, as captured by a depth camera. The ground truth locations of the fingertips are included as an annotation for each frame of the video. This dataset was developed for the paper: \nT. Sharp et al. \"Accurate, Robust, and Flexible Real-time Hand Tracking.\" In Proc. CHI, vol. 8. 2015. http://research.microsoft.com/apps/pubs/default.aspx?id=238453\nUsers of the dataset are requested to cite this paper. \n\nNote: The hand poses shown in these images were chosen at random and are not intended to convey any meaning or cause any offence.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FingerPaint.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.2 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52288",
+    "downloadPreload": true
+}

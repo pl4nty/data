@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Automated disaster recovery solution using ASR for file shares hosted on StorSimple",
+    "downloadDescription": "Describes how to configure an automated disaster recovery solution for StorSimple file shares",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StorSimple DR Solution using ASR - Guidance _2015-12-16.pdf",
+            "url": "https://download.microsoft.com/download/7/7/5/775b1d68-bf20-4b3e-ad54-d12846ccdb38/StorSimple DR Solution using ASR - Guidance _2015-12-16.pdf",
+            "size": "1117036",
+            "version": "1",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Explains how you can create a disaster recovery solution for your file shares hosted on StorSimple storage, and perform planned, unplanned, and test failovers using a one-click recovery plan. In addition, it describes supported configurations and prerequisites. This document assumes that you are familiar with the basics of Azure Site Recovery and StorSimple architectures.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "StorSimple DR Solution using ASR - Guidance _2015-12-16.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download PDF and open in any PDF viewer.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50363",
+    "downloadPreload": true
+}

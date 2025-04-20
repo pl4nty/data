@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Expression\u00ae Studio Quick Start Guides",
+    "downloadDescription": "This download contains Quick Start Guides for Expression Studio 3 and Expression Studio 4. The Expression Studio Quick Start Guides provide you with introductory information about Expression Studio 3 and Expression Studio 4 features. You will need Adobe Reader to view these files. The download itself is packaged as a compressed (zipped) folder.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Expression_QuickStarts_EN.zip",
+            "url": "https://download.microsoft.com/download/8/b/3/8b35d9a4-dc81-4175-9376-5ed6159b3bac/Expression_QuickStarts_EN.zip",
+            "size": "13450077",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The Expression Studio Quick Start Guides provide information about features in Expression Studio 3, as well as what is new in the latest release of Expression Studio. \r\n\r\nFor more information about what else is new in the latest release of Expression Studio, see <a href=\"http://www.microsoft.com/expression/products/Studio_Overview.aspx\" target=\"_blank\">Expression Studio 4 Ultimate Overview</a>.\r\n<br /><br />\r\nHelp us improve Expression Studio by\n<a title=\"report an issue\" href=\"http://connect.microsoft.com/expression\">\nreporting any technical issues</a>.\r\n<br/><br/>\r\nFor more insight into Expression Studio, \nplease see the\n<a title=\"Expression team blog\" href=\"http://blogs.msdn.com/expression/\">\nExpression team blog</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Expression_QuickStarts_EN.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe\u00ae Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click <b>Download</b> (above). </li>\r\n<li>In the <b>Install</b> dialog box, click <b>Save</b>. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Expression Studio website",
+            "url": "http://www.microsoft.com/expression/default.aspx"
+        },
+        {
+            "title": "report an issue",
+            "url": "http://connect.microsoft.com/expression"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4599",
+    "downloadPreload": true
+}

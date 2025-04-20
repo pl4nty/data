@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Productivity Pack for Microsoft Dynamics",
+    "downloadDescription": "Use the Productivity Pack for Microsoft Dynamics to enhance integration between Microsoft Dynamics GP 2010 and Microsoft Dynamics CRM 2011 using the Connector for Microsoft Dynamics.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Productivity Pack for Microsoft Dynamics License.rtf",
+            "url": "https://download.microsoft.com/download/6/0/4/604f1727-0b8f-4368-910f-8c39def88fdf/Productivity Pack for Microsoft Dynamics License.rtf",
+            "size": "101704",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ProductivityPackForMicrosoftDynamics.zip",
+            "url": "https://download.microsoft.com/download/6/0/4/604f1727-0b8f-4368-910f-8c39def88fdf/ProductivityPackForMicrosoftDynamics.zip",
+            "size": "223550",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ConfigurationPage.htm",
+            "url": "https://download.microsoft.com/download/6/0/4/604f1727-0b8f-4368-910f-8c39def88fdf/ConfigurationPage.htm",
+            "size": "14561",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Productivity Pack for Microsoft Dynamics, used in conjunction with Connector for Microsoft Dynamics, helps you integrate data between Microsoft Dynamics GP 2010 and Microsoft Dynamics CRM 2011, and improves current integrations between these applications. <br /><br />\r\n\r\nThe Productivity Pack for Microsoft Dynamics improves workflow in the following areas:\r\n\r\n<ul><li>For Accounts Receivable, it improves Past due Receivables Invoice workflow, credit application dialogue and related workflows (contact and account), and includes Receivables Invoice Integration.</li>\r\n<li>For Accounts Payable, it improves vendor integration and payables invoice integration.</li>\r\n<li>For purchase orders from Microsoft Dynamics GP, it enables richer promised delivery dates for customer service.</li></ul><br /><br />\r\n\r\nThis Productivity Pack includes integration maps, software solutions, and a new adapter for Connector for Microsoft Dynamics for use with Microsoft Dynamics GP 2010. <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Productivity Pack for Microsoft Dynamics License.rtf",
+        "ProductivityPackForMicrosoftDynamics.zip",
+        "ConfigurationPage.htm"
+    ],
+    "detailsSection_file_size": [
+        "99.3 KB",
+        "218.3 KB",
+        "14.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Requirements: <a href=\"http://download.microsoft.com/download/6/0/4/604F1727-0B8F-4368-910F-8C39DEF88FDF/ConfigurationPage.htm\">Configuration page</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the files.</LI>\r\n<LI>Save the files to your computer.</LI>\r\n<LI>Repeat these steps on each computer where you want to save the files, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29881",
+    "downloadPreload": true
+}

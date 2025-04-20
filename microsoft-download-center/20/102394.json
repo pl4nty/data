@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Migration Manager bulk upload template",
+    "downloadDescription": "Migration Manager lets you bulk upload your migration task information, which is especially helpful if you are migrating content from a large number of file shares. This template shows the correct format for you to follow.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "mm-example_csv_bulk_upload.csv",
+            "url": "https://download.microsoft.com/download/b/1/9/b1925e76-010c-4db5-aa44-64055f8f3efe/mm-example_csv_bulk_upload.csv",
+            "size": "219",
+            "version": "1",
+            "datePublished": "7/15/2024 4:27:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Migration Manager lets you bulk upload your migration task information, which is especially helpful if you are migrating content from a large number of file shares. This template shows the correct format for you to follow. There are six columns needed in your CSV file. The first three are your source values, each providing detail about where your data is currently located. The remaining three columns indicate the site, document library, and optional sub-folder to where you are migrating your data. All six columns must be accounted for in the file, even if you do not need a value for a given field.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "mm-example_csv_bulk_upload.csv"
+    ],
+    "detailsSection_file_size": [
+        "219 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li>Select <b>Open file</b> or find the file on your device and open it.</li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102394",
+    "downloadPreload": true
+}

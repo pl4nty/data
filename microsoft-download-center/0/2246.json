@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2009 Runtime Architecture Poster",
+    "downloadDescription": "The poster depicts message flow, data flow, and references that occur at runtime in BizTalk Server 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Server 2009 Runtime Architecture Poster.pdf",
+            "url": "https://download.microsoft.com/download/3/c/d/3cd49e24-2d7b-4433-80d1-1ecc7ec8b907/BizTalk Server 2009 Runtime Architecture Poster.pdf",
+            "size": "6690352",
+            "version": "April 2009",
+            "datePublished": "7/15/2024 3:08:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The poster depicts the modules and components of a BizTalk Server 2009 runtime environment, including message flow, data flow, and references that occur at runtime. It can be used to show how the capabilities listed in the BizTalk Server 2009 Capabilities Poster are actually implemented. The poster is intended to be printed and measures 35\"X32\".",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2009",
+    "detailsSection_file_name": [
+        "BizTalk Server 2009 Runtime Architecture Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Adobe Reader</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Before you click <b>Download</b>, you must configure the Adobe Reader to not open a PDF file in your browser. To do this:</li><ol><li>Open <b>Adobe Reader</b>.</li><li>On the Edit menu, click <b>Preferences</b>.</li><li> Under <b>Categories</b>, select <b>Internet</b>.</li><li>Clear the <b>Display PDF in browser</b> option.</li><li>Click <b>OK</b>.</li><li>Close Adobe Reader.</li></ol>\r\n\r\n<br><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li></br><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>.</li></ul></ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft BizTalk Server 2009 Beta Help",
+            "url": "http://msdn.microsoft.com/en-us/library/dd407654.aspx"
+        },
+        {
+            "title": "bizTalk Server 2009 Posters",
+            "url": "http://msdn.microsoft.com/en-us/library/dd450982.aspx"
+        },
+        {
+            "title": "bizTalk Server 2006 R2 Posters",
+            "url": "http://msdn.microsoft.com/en-us/library/dd431686.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2246",
+    "downloadPreload": true
+}

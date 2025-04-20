@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft FAST Search Server 2010 for SharePoint Enterprise Search Evaluation Guide",
+    "downloadDescription": "Use this guide to help you evaluate the enterprise search features provided by FAST Search Server 2010 for SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FASTSearchServer2010_SearchEvalGuide.pdf",
+            "url": "https://download.microsoft.com/download/8/9/1/891e924f-2b96-4d1f-baca-633eee5054cc/FASTSearchServer2010_SearchEvalGuide.pdf",
+            "size": "2025424",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "FASTSearchServer2010_SearchEvalGuide.docx",
+            "url": "https://download.microsoft.com/download/8/9/1/891e924f-2b96-4d1f-baca-633eee5054cc/FASTSearchServer2010_SearchEvalGuide.docx",
+            "size": "2633293",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FASTSearchServer2010_SearchEvalGuide.xps",
+            "url": "https://download.microsoft.com/download/8/9/1/891e924f-2b96-4d1f-baca-633eee5054cc/FASTSearchServer2010_SearchEvalGuide.xps",
+            "size": "2783953",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This evaluation guide is designed to give business decision makers and IT professionals an understanding of the design goals and the details of the enterprise search features provided by Microsoft\u00ae FAST\u2122 Search Server 2010 for SharePoint\u00ae. This guide is also designed to familiarize you with how to implement enterprise search by using FAST Search Server 2010 for SharePoint.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FASTSearchServer2010_SearchEvalGuide.pdf",
+        "FASTSearchServer2010_SearchEvalGuide.docx",
+        "FASTSearchServer2010_SearchEvalGuide.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "2.5 MB",
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24972",
+    "downloadPreload": true
+}

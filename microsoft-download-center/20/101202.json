@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Explore the world one photo at a time | Bing Wallpaper",
+    "downloadDescription": "Bring your desktop to life with a new background each day when you download Bing Wallpaper",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BingWallpaper.exe",
+            "url": "https://download.microsoft.com/download/8/1/e/81e79f82-9ba4-494e-b3cf-df20679a4856/Bing_W015/BingWallpaper.exe",
+            "size": "13830176",
+            "version": "1.0",
+            "datePublished": "1/21/2025 8:21:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Discover a new place each day</b><br/><br/>\r\nBing Wallpaper includes a collection of beautiful images from around the world that have been featured on the Bing homepage. Not only will you see a new image on your desktop each day, but you can also browse images and learn where they're from.<br/><br/><br/>\r\n<b>Intelligent and beautiful search</b><br/><br/>\r\nFind what you need to bring your ideas to life. Tap into trending news and intelligent answers when you search on Bing. Plus, if available in your market, sign up for Microsoft Rewards to earn points\u2014just for searching\u2014and redeem them for gift cards, sweepstakes entries, nonprofit donations, and more.<br/><br/>\r\n<ul>\r\n<li><b>Note: </b>By clicking <b>Download</b> you agree to the <a href=\"https://go.microsoft.com/fwlink/?linkid=530144\">Microsoft Service Agreement</a> and <a href=\"https://go.microsoft.com/fwlink/?LinkId=521839\">Privacy Statement.</a>This software may also download and install some updates automatically.  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BingWallpaper.exe"
+    ],
+    "detailsSection_file_size": [
+        "13.2 MB"
+    ],
+    "detailsSection_file_date": "1/21/2025",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 10</li><br />\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<b>Install Bing Wallpaper in 6 easy steps</b><br/><br/>\r\n<ul>\r\n<li>Download the Bing Wallpaper app</li><br />\r\n<li>Run BingWallpaper.exe</li><br />\r\n<li>Click Install now</li><br />\r\n<li>Click Finish</li><br />\r\n<li>If prompted from your browser, add the extension</li><br />\r\n<li>Explore the Bing Wallpaper app in the system tray</li><br />\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "about Bing Wallpaper",
+            "url": "https://www.microsoft.com/bing/bing-wallpaper"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101202",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 R2 Products and Editions Comparison",
+    "downloadDescription": "Illustrates the differences among the various Windows Server 2012 R2 products and editions, including information about locks and limits and supported server roles and features.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2012 R2 Products and Editions Comparison.pdf",
+            "url": "https://download.microsoft.com/download/d/4/6/d464eb09-9999-48dc-82f0-c82db6a4a091/Windows Server 2012 R2 Products and Editions Comparison.pdf",
+            "size": "226463",
+            "version": "February 2014",
+            "datePublished": "7/15/2024 3:20:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This chart illustrates the differences among the various Windows Server 2012 R2 products and editions, including the various editions of Windows Server, Microsoft Hyper-V Server, Storage Server, and MultiPoint Server. The chart includes information about locks and limits (such as the maximum number of connections of various kinds, domain-joining capability, and CPU and RAM limits), which server roles are supported, and which server features are available.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2014",
+    "detailsSection_file_name": [
+        "Windows Server 2012 R2 Products and Editions Comparison.pdf"
+    ],
+    "detailsSection_file_size": [
+        "221.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "window Server 2012 Products and Editions Comparison",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=38809"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41703",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Orchestrator 2019 Web Console & Web API",
+    "downloadDescription": "New Web console for SCO 2019 that has no dependency on SilverLight and works well with all modern web-browsers. The components can be installed along-side the old WebService and WebConsole.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SCO2019_WebConsole_v10.19.350.0.zip",
+            "url": "https://download.microsoft.com/download/3/7/1/37131c83-6533-471f-babb-b93c58228a8a/SCO2019_WebConsole_v10.19.350.0.zip",
+            "size": "10983198",
+            "version": "SCO 2019",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The download package includes\r\n<br/>\r\n<ul>\r\n<li>New WebConsole that works in modern browsers without Silverlight.</li>\r\n<li> New WebApi that is primarily used only by the new WebConsole. </li>\r\n<li> The WebApi uses Windows Authentication for all endpoints. Additionally, Folder and Runbook permissions set using the RunbookDesigner are honoured.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SCO 2019",
+    "detailsSection_file_name": [
+        "SCO2019_WebConsole_v10.19.350.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The web console requires installation of SC Orchestrator 2019 (RTM or later).",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Follow the instructions given <a href=\"https://learn.microsoft.com/en-us/system-center/orchestrator/console-overview?view=sc-orch-2019&tabs=Start\">here</a> to install and host the Web Console. <br/>\r\nTo upgrade from previous versions, follow the steps mentioned <a href=\"https://learn.microsoft.com/en-us/system-center/orchestrator/console-overview?view=sc-orch-2019&tabs=html%2Cnet%2CStart#migrate-to-html5-web-components\">here </a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103552",
+    "downloadPreload": true
+}

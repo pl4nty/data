@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Improving Fault Tolerance in BizTalk Server by Using a Windows Server 2008 Failover Cluster or Windows Server 2003 Server Cluster",
+    "downloadDescription": "Describes how to implement high availability for BizTalk Server components and dependencies using Windows Server Clustering technology",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalkClustering.pdf",
+            "url": "https://download.microsoft.com/download/b/3/a/b3a682cf-e06e-4140-854a-72778d134023/BizTalkClustering.pdf",
+            "size": "602570",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalkClustering.chm",
+            "url": "https://download.microsoft.com/download/b/3/a/b3a682cf-e06e-4140-854a-72778d134023/BizTalkClustering.chm",
+            "size": "178801",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BizTalkClustering.docx",
+            "url": "https://download.microsoft.com/download/b/3/a/b3a682cf-e06e-4140-854a-72778d134023/BizTalkClustering.docx",
+            "size": "157214",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Describes how to use a Windows Server 2008 failover cluster or Windows Server 2003 server cluster to provide high availability for key BizTalk Server components and dependencies.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "BizTalkClustering.pdf",
+        "BizTalkClustering.chm",
+        "BizTalkClustering.docx"
+    ],
+    "detailsSection_file_size": [
+        "588.4 KB",
+        "174.6 KB",
+        "153.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>Required software for viewing the downloads:</B> Microsoft Word or Word Viewer for the docx version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2290",
+    "downloadPreload": true
+}

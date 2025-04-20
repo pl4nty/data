@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "MFC Hierarchy Charts",
+    "downloadDescription": "Class hierarchy diagrams for MFC",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MFC_Hierarchy_Chart1of3.xps",
+            "url": "https://download.microsoft.com/download/8/5/6/8566947a-2215-4854-989b-95039f1aa3b9/MFC_Hierarchy_Chart1of3.xps",
+            "size": "170681",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MFC_Hierarchy_Chart3of3.pdf",
+            "url": "https://download.microsoft.com/download/8/5/6/8566947a-2215-4854-989b-95039f1aa3b9/MFC_Hierarchy_Chart3of3.pdf",
+            "size": "114875",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MFC_Hierarchy_Chart3of3.xps",
+            "url": "https://download.microsoft.com/download/8/5/6/8566947a-2215-4854-989b-95039f1aa3b9/MFC_Hierarchy_Chart3of3.xps",
+            "size": "126280",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MFC_Hierarchy_Chart1of3.pdf",
+            "url": "https://download.microsoft.com/download/8/5/6/8566947a-2215-4854-989b-95039f1aa3b9/MFC_Hierarchy_Chart1of3.pdf",
+            "size": "144911",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MFC_Hierarchy_Chart2of3.pdf",
+            "url": "https://download.microsoft.com/download/8/5/6/8566947a-2215-4854-989b-95039f1aa3b9/MFC_Hierarchy_Chart2of3.pdf",
+            "size": "159685",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MFC_Hierarchy_Chart2of3.xps",
+            "url": "https://download.microsoft.com/download/8/5/6/8566947a-2215-4854-989b-95039f1aa3b9/MFC_Hierarchy_Chart2of3.xps",
+            "size": "151185",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These diagrams show the relationship of classes within the MFC, including the original classes released with Visual Studio 2008 plus the additional classes provided with the Visual C++ 2008 Feature Pack.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MFC_Hierarchy_Chart1of3.xps",
+        "MFC_Hierarchy_Chart3of3.pdf",
+        "MFC_Hierarchy_Chart3of3.xps",
+        "MFC_Hierarchy_Chart1of3.pdf",
+        "MFC_Hierarchy_Chart2of3.pdf",
+        "MFC_Hierarchy_Chart2of3.xps"
+    ],
+    "detailsSection_file_size": [
+        "166.7 KB",
+        "112.2 KB",
+        "123.3 KB",
+        "141.5 KB",
+        "155.9 KB",
+        "147.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "The PDF Files require Adobe Acrobat to view.  The XPS files require a viewer, which is available with IE 7, .NET Framework 3.0 or Windows Vista.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual C++ 2008 Feature Pack",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=D466226B-8DAB-445F-A7B4-448B326C48E7&displaylang=en"
+        },
+        {
+            "title": "mfc Feature Pack Documentation",
+            "url": "http://msdn2.microsoft.com/en-us/library/bb982354.aspx"
+        },
+        {
+            "title": "mfc Documentation",
+            "url": "http://msdn2.microsoft.com/en-us/library/d06h2x6e.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5045",
+    "downloadPreload": true
+}

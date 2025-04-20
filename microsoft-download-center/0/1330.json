@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Improving Web Application Security:  Threats and Countermeasures",
+    "downloadDescription": "Download guidelines for architecting, designing,  building,  reviewing, and configuring secure to build hack resilient ASP.NET Web applications across the application tiers, technology, and servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Threats_Countermeasures.pdf",
+            "url": "https://download.microsoft.com/download/d/8/c/d8c02f31-64af-438c-a9f4-e31acb8e3333/Threats_Countermeasures.pdf",
+            "size": "7034401",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:08:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains guidelines for architecting, designing,  building,  reviewing, and configuring secure to build hack resilient ASP.NET Web applications across the application tiers, technology, and servers.  Topics include Threats and Countermeasures; Threat Modeling; security review for architecture, design, code and deployment; Hosting web applications; CAS; securing web, application and database servers; ASP.NET, Enterprise Services (COM+), Web Services, Remoting, and data access (including ADO.NET and SQL Server).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "Threats_Countermeasures.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Adobe Acrobat 4.0 or later</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1330",
+    "downloadPreload": true
+}

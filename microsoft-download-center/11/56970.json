@@ -1,0 +1,243 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Customer Engagement, version 9.0 Language Packs",
+    "downloadDescription": "Install a Dynamics 365 (online), version 9.0 Language Pack. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Mui-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/a/6/9/a6981e93-6432-45be-a39e-fd929c1f076f/CRM9.0-Mui-ENU-i386.exe",
+            "size": "39505448",
+            "version": "9.00.0015.0010",
+            "datePublished": "7/15/2024 4:45:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM9.0-Mui-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/a/6/9/a6981e93-6432-45be-a39e-fd929c1f076f/CRM9.0-Mui-ENU-amd64.exe",
+            "size": "86644456",
+            "version": "9.00.0015.0010",
+            "datePublished": "7/15/2024 4:45:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        }
+    ],
+    "detailsSection": "Dynamics 365 for Customer Engagement, version 9.0 Language Packs contain translated text such as labels, error messages, and Help. This lets you view Dynamics 365 for Customer Engagement in a language other than the base language. <br/>\r\nThis version works with the following Dynamics 365 for Customer Engagement versions: \r\n<ul>\r\n<li>Dynamics 365 for Customer Engagement (online), version 9.0 or later version </li>\r\n<li>Dynamics 365 for Customer Engagement on-premises, version 9.0.15.9 or later version </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.0015.0010",
+    "detailsSection_file_name": [
+        "CRM9.0-Mui-ENU-i386.exe",
+        "CRM9.0-Mui-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "37.7 MB",
+        "82.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Customer Engagement",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          To view this information in another language and to select a language pack for that language, select the language from the list.\n        </li>\n        <li>\n          Select <b>Download</b> next to the language pack with the file name that includes the locale that you want.\n        </li>\n        <li>\n          Save the download to your computer by selecting <b>Save</b>.\n        </li>\n        <li>To install the language pack, double-click the download file and then follow the instructions that are on your screen.</li>\n      </ol>\n    ",
+    "additionalInformationSection": "\n      Files are platform-specific, where <i>i386</i> is intended for 32-bit platforms and <i>amd64</i> is intended for 64-bit platforms. <br />\n\n\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "install language packs for Microsoft Dynamics CRM",
+            "url": "http://technet.microsoft.com/en-us/library/hh699674.aspx"
+        },
+        {
+            "title": "microsoft Dynamics 365 Server, v9.0 (on-premises) Update 0.15",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=101087"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56970",
+    "downloadPreload": true
+}

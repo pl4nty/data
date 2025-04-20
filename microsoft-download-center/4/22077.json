@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 R2 with Service Pack 1 for Itanium-Based Systems Evaluation (180 days)",
+    "downloadDescription": "Windows Server 2008 R2 builds on the award-winning foundation of Windows Server 2008, expanding existing technology and adding new features to enable organizations to increase the reliability and flexibility of their server infrastructures. Windows Server 2008 R2 with Service Pack 1 (SP1) includes previously released updates for Windows Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "7601.17514.101119-1850_ia64fre_serverenterpriseia64_eval_en-us-GRMSIAiEVAL_EN_DVD.iso",
+            "url": "https://download.microsoft.com/download/d/7/e/d7e49421-6d66-4656-9d16-1de8fe8acc7b/7601.17514.101119-1850_ia64fre_serverenterpriseia64_eval_en-us-GRMSIAiEVAL_EN_DVD.iso",
+            "size": "2634254336",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Note: Windows Server 2008 R2 will be the last major iteration to support the Intel Itanium processor and associated OEM server platforms. For further information please visit the <a href=\"http://www.microsoft.com/windowsserver2008/en/us/2008-IA.aspx\">Windows Server 2008 R2 for Itanium-Based Systems page</a>. Windows Server 2008 R2 with Service Pack 1 (SP1) includes previously released updates for Windows Server 2008 R2. All documentation referenced in this download applies to both Windows Server 2008 R2 and Windows Server 2008 R2 SP1 unless otherwise noted.<br/>\r\n<br/>\r\nThis software is for evaluation and testing purposes. The evaluation is available in ISO format. Evaluating any version of Windows Server 2008 R2 SP1 software does not require entering a product key, however will require activation within 10 days. Failing to activate the evaluation will cause the licensing service to shut the machine down every hour (The 10 day activation period can be reset five (5) times by using the rearm command. See below for further information on activation rearm). Once activated, the evaluation will run for 180 days. After this time, you will need to uninstall the evaluation software and reinstall a fully-licensed version of Windows Server 2008 R2 SP1 for Itanium-Based Systems.<br/>\r\n<br/>\r\n<b>This download is also available through our new Download Manager.  This will ensure 100% completion rate, and accelerate download times on slower links.</b><br/>\r\n<br/>\r\n<b>To start this download via the Download Manager, please <a href=\"http://care.dlservice.microsoft.com/download/D/7/E/D7E49421-6D66-4656-9D16-1DE8FE8ACC7B/7600.16385.090713-1255_ia64fre_serverenterpriseia64_eval_en-us-GRMSIAiEVAL_EN_DVD.iso\">click here</a>.</b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "7601.17514.101119-1850_ia64fre_serverenterpriseia64_eval_en-us-GRMSIAiEVAL_EN_DVD.iso"
+    ],
+    "detailsSection_file_size": [
+        "2.5 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please refer to the <a href=\"http://www.microsoft.com/windowsserver2008/en/us/system-requirements.aspx\">Windows Server 2008 R2 System Requirements page</a>. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 for Itanium-based Systems"
+    ],
+    "installInstructionSection": "Please refer to the documents below for further information<br/>\r\n<br/>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=139360\">Installing Windows Server 2008 R2</a></li><br/>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=139362 \">Windows Server 2008 R2 Release Notes</a></li><br/>\r\n<br/>\r\n<br/>\r\n<b>How to manually rearm the 10 day activation grace period</b>\r\n<br/>\r\nWhen the initial 10-day activation period nears its end, you can run the Slmgr.vbs script to reset it back to 10 days. To do this, follow these steps: <br/>\r\n<li>1. Click <b>Start</b>, and then click <b>Command Prompt</b>. </li><br/>\r\n<li>2. Type <b>slmgr.vbs -dli</b>, and then press ENTER to check the current status of your activation period. </li><br/>\r\n<li>3. To reset the activation period, type <b>slmgr.vbs \u2013rearm</b>, and then press ENTER. </li><br/>\r\n<li>4. Restart the computer.</li><br/>\r\n<br/>\r\nThis resets the activation period to 10 days, and can be used up to five times.  After this you will need to either activate or reinstall the evaluation.",
+    "additionalInformationSection": "Please refer to the documents below for further information<br/>\r\n<br/>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=139360\">Installing Windows Server 2008 R2</a></li><br/>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=139362 \">Windows Server 2008 R2 Release Notes</a></li><br/>\r\n<br/>\r\n<br/>\r\n<b>How to manually rearm the 10 day activation grace period</b>\r\n<br/>\r\nWhen the initial 10-day activation period nears its end, you can run the Slmgr.vbs script to reset it back to 10 days. To do this, follow these steps: <br/>\r\n<li>1. Click <b>Start</b>, and then click <b>Command Prompt</b>. </li><br/>\r\n<li>2. Type <b>slmgr.vbs -dli</b>, and then press ENTER to check the current status of your activation period. </li><br/>\r\n<li>3. To reset the activation period, type <b>slmgr.vbs \u2013rearm</b>, and then press ENTER. </li><br/>\r\n<li>4. Restart the computer.</li><br/>\r\n<br/>\r\nThis resets the activation period to 10 days, and can be used up to five times.  After this you will need to either activate or reinstall the evaluation.<br/><br/>\r\nNote that the files are language-specific, where \u201cEN\u201d is English, \"FR\" is French, \u201cDE\u201d is German, and \u201cJP\u201d is Japanese.  Further languages are supported through the Windows Server Language Packs, please visit the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=03831393-eef7-48a5-a69f-0ce72b883df2&displaylang=en\">Windows Server 2008 R2 Multilingual User Interface Language</a> site for further information.<br/>\r\n<br/>\r\nIf you are a TechNet subscriber, please visit the <a href=\"http://technet.microsoft.com/en-us/subscriptions/downloads/default.aspx?PV=36:351\">Windows Server 2008 R2  TechNet Subscriber download page</a>.<br/>\r\nIf you are a MSDN subscriber, please visit the <a href=\"http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx?PV=36:351\">Windows Server 2008 R2 MSDN Subscriber download page</a>.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2008 Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/subscriptions/downloads/default.aspx?PV=36:351"
+        },
+        {
+            "title": "windows Server 2008 TechCenter",
+            "url": "http://technet.microsoft.com/en-us/dd362341.aspx"
+        },
+        {
+            "title": "microsoft.com Windows Server 2008 R2 Site",
+            "url": "http://www.microsoft.com/windowsserver2008/en/us/R2.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22077",
+    "downloadPreload": true
+}

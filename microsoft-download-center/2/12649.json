@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Achieving Immutability with Exchange Online and Exchange Server 2013",
+    "downloadDescription": "With Exchange Server and Exchange Online, Microsoft enables organizations to immutably preserve mailbox items for eDiscovery using an in-place strategy.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange Immutability White Paper.docx",
+            "url": "https://download.microsoft.com/download/5/1/b/51b966be-1085-4e3d-a50c-5aeb094803f6/Exchange Immutability White Paper.docx",
+            "size": "117364",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "With Exchange Server and Exchange Online, Microsoft enables organizations to immutably preserve mailbox items for discovery using an in-place strategy, keeping those items within the Exchange infrastructure. The technology used to achieve immutability with Exchange is different than sending items to a separate, read-only archive. The Exchange approach achieves the same or better results\u2014preserving all inbox data in a way that is tamper-proof and discoverable\u2014while at the same time conserving more of the relevant data, reducing IT complexity, and delivering a seamless user experience. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Exchange Immutability White Paper.docx"
+    ],
+    "detailsSection_file_size": [
+        "114.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Do the following:</li>\r\n<ul>\r\n<li>To open the document immediately, click Open.</li>\r\n<li>To copy the download to your computer for use at a later time, click Save.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12649",
+    "downloadPreload": true
+}

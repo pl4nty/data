@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Simple Encrypted Arithmetic Library ",
+    "downloadDescription": "The Simple Encrypted Arithmetic Library is an easy-to-use homomorphic encryption library, developed by researchers in the Cryptography Research Group at Microsoft Research. SEAL is written in standard C++ and has no external dependencies, so it is easy to compile in many different environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SEAL_3.0.tar.gz",
+            "url": "https://download.microsoft.com/download/b/3/7/b3720f6b-4f4a-4b54-9c6c-751ef194cbe7/SEAL_3.0.tar.gz",
+            "size": "297893",
+            "version": "10/2018",
+            "datePublished": "7/15/2024 4:57:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SEAL_3.0.zip",
+            "url": "https://download.microsoft.com/download/b/3/7/b3720f6b-4f4a-4b54-9c6c-751ef194cbe7/SEAL_3.0.zip",
+            "size": "367269",
+            "version": "10/2018",
+            "datePublished": "7/15/2024 4:57:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Simple Encrypted Arithmetic Library (SEAL) uses the Microsoft Research License Agreement, and is free for research use. <br /> \r\nProject website: <a href=\"http://sealcrypto.org\">http://sealcrypto.org</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10/2018",
+    "detailsSection_file_name": [
+        "SEAL_3.0.tar.gz",
+        "SEAL_3.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "290.9 KB",
+        "358.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Apple Mac OS X, Linux, Windows 10</LI></UL>  \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56202",
+    "downloadPreload": true
+}

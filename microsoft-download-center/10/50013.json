@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager Management Pack for Microsoft Azure ",
+    "downloadDescription": "The Management Pack for SCOM enables you to monitor the availability and performance of Azure resources that are running on Microsoft Azure. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftAzureManagementPackFullGuide.docx",
+            "url": "https://download.microsoft.com/download/0/f/7/0f70e823-fff3-4270-8f49-a947b89837bc/MicrosoftAzureManagementPackFullGuide.docx",
+            "size": "6030978",
+            "version": "1.8.0.9",
+            "datePublished": "7/15/2024 3:02:31 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Microsoft Azure.msi",
+            "url": "https://download.microsoft.com/download/0/f/7/0f70e823-fff3-4270-8f49-a947b89837bc/Microsoft System Center Management Pack for Microsoft Azure.msi",
+            "size": "3588096",
+            "version": "1.8.0.9",
+            "datePublished": "7/15/2024 3:02:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Management Pack for Microsoft Azure enables you to monitor the availability and performance of Azure resources that are running on Microsoft Azure. The management pack runs on a specified server pool and then uses Microsoft Azure REST APIs to remotely discover and collect performance information about the specified Microsoft Azure resources.\r\n\r\nThis management pack focuses on the collection of performance metrics made available by Azure Services that use Azure Resource Manager.\r\n\r\nAzure Active Directory is used for authentication to the Azure REST APIs.\r\n\r\nThis management pack queries the Azure REST APIs to enumerate the resources running in an Azure subscription and the performance metrics that are available for each resource.\r\nVirtual machines, web roles, and worker roles are able to store events and performance counters into Azure table storage using Azure diagnostics. If these resources are configured to use Azure diagnostics, this Management Pack can collect these events and performance counters. \r\nAs soon as new Azure services are released (and older services are moved to the new Azure Resource Manager), they will be discovered automatically. As soon as the services expose performance counters via the metrics API, they will become available for collection.\r\nThe MP guide includes information about what's new in this version of the MP.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.0.9",
+    "detailsSection_file_name": [
+        "MicrosoftAzureManagementPackFullGuide.docx",
+        "Microsoft System Center Management Pack for Microsoft Azure.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.8 MB",
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This management pack is designed for the following versions of System Center Operations Manager:\r\n<br/>\r\n<ul>\r\n<li>System Center Operations Manager 2016 </li>\r\n<li> System Center Operations Manager 2019 </li>\r\n<li> System Center Operations Manager 2022 </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See MP Guide for installation and usage instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50013",
+    "downloadPreload": true
+}

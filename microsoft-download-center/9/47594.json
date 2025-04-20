@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Entra Connect",
+    "downloadDescription": "Microsoft Entra Connect allows you to quickly onboard to Entra ID and Office 365",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AzureADConnect.msi",
+            "url": "https://download.microsoft.com/download/b/0/0/b00291d0-5a83-4de7-86f5-980bc00de05a/AzureADConnect.msi",
+            "size": "152727552",
+            "version": "2.4.131.0",
+            "datePublished": "3/28/2025 7:58:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can also download the latest version from the <a href=\"https://entra.microsoft.com/#view/Microsoft_AAD_Connect_Provisioning/AADConnectMenuBlade/%7E/GetStarted\">Microsoft Entra Admin Center</a> under <b>Manage</b>. We will soon stop publishing new download files here and only publish in the <a href=\"https://entra.microsoft.com/#view/Microsoft_AAD_Connect_Provisioning/AADConnectMenuBlade/%7E/GetStarted\">Microsoft Entra Admin Center</a>. <br><br>\n\nIntegrating your on-premises directories with Entra ID makes your users more productive by providing a common identity for accessing both cloud and on-premises resources. With this integration users and organizations can take advantage of the following :\n<UL>\n <LI>Organizations can provide users with a common hybrid identity across on-premises or cloud-based services leveraging Windows Server Active Directory and then connecting to Entra ID. </LI>\n <LI>Administrators can provide conditional access based on application resource, device and user identity, network location and multifactor authentication.</LI>\n <LI>Users can leverage their common identity through accounts in Entra ID to Office 365, Intune, SaaS apps and third-party applications.</LI>\n <LI>Developers can build applications that leverage the common identity model, integrating applications into Active Directory on-premises or Azure for cloud-based applications</LI>\n</UL>\nMicrosoft Entra Connect makes this integration easy and simplifies the management of your on-premises and cloud identity infrastructure.\nTo find information about the Microsoft Entra Connect version release history, please refer to <a href=\"https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history\">https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-version-history</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.4.131.0",
+    "detailsSection_file_name": [
+        "AzureADConnect.msi"
+    ],
+    "detailsSection_file_size": [
+        "145.7 MB"
+    ],
+    "detailsSection_file_date": "3/28/2025",
+    "systemRequirementsSection": "For more information about Microsoft Entra Connect, please refer to <a href=\"https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites\">https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "To learn how to install Microsoft Entra Connect, please refer to <a href=\"https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap#install-azure-ad-connect\">https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-roadmap#install-azure-ad-connect</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47594",
+    "downloadPreload": true
+}

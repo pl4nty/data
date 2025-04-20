@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for ActiveX Killbits for Windows Server 2003 for Itanium-based Systems (KB2736233)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Advisory KB2736233. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003-KB2736233-ia64-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/f/a/3fa038bd-2f58-4ca7-985d-c9243efc0bd7/WindowsServer2003-KB2736233-ia64-ENU.exe",
+            "size": "1025048",
+            "version": "2736233",
+            "datePublished": "7/15/2024 3:11:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in Active X controls that could allow an attacker to compromise a system running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.\n\n<br /><br />\n<b>Other critical security updates are available:</b> To find the latest security releases for you visit <A HREF=\"http://go.microsoft.com/?LinkID=275655\">Windows Update</A> and click \"Scan for updates.\" And visit the <A HREF=\"http://go.microsoft.com/?LinkID=263669\">Protect your PC site</A> to learn how to have the latest security updates delivered directly to your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2736233",
+        "name": "KB2736233"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-000",
+        "name": "MS12-000"
+    },
+    "detailsSection_file_version": "2736233",
+    "detailsSection_file_name": [
+        "WindowsServer2003-KB2736233-ia64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1001.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer with the following operating system:<BR /><UL><LI>Windows Server 2003 Family Itanium 64-bit</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\n    <LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI>\n  </UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Advisory KB2736233",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=260919"
+        },
+        {
+            "title": "windows Server 2003 Home Page",
+            "url": "http://www.microsoft.com/windowsserver2003/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34650",
+    "downloadPreload": true
+}

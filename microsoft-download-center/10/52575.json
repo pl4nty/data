@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "C# package for language identification",
+    "downloadDescription": "This package implements several algorithms for language identification, and includes two sets of pre-compiled language profiles. Last published: August 8, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LanguageIdentifier.zip",
+            "url": "https://download.microsoft.com/download/7/5/7/757e6be6-fb97-4f10-b8b0-f322b4657569/LanguageIdentifier.zip",
+            "size": "97986",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package implements several algorithms for language identification, and includes two sets of pre-compiled language profiles. One set covers 52 languages and was trained on Wikipedia (i.e. a well-written corpus); the other covers 26 languages and was constructed from Twitter (i.e. a highly colloquial corpus). The language identifiers are packaged up as a C# library, and be easily embedded into other C# projects.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LanguageIdentifier.zip"
+    ],
+    "detailsSection_file_size": [
+        "95.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52575",
+    "downloadPreload": true
+}

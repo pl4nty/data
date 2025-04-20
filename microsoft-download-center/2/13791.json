@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Edge Server Reference Architecture Diagrams",
+    "downloadDescription": "The Lync_Server_2010_Edge_Server_ReferenceArch_Diagrams.zip file contains diagrams for the Single Consolidated Edge, Scaled Consolidated Edge (DNS Load Balanced), and Scaled Consolidated Edge (Hardware Load Balanced) topologies. You must have Microsoft Visio installed to view these files. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Server_2010_Edge_Server_ReferenceArch_Diagrams.zip",
+            "url": "https://download.microsoft.com/download/6/7/1/671f753d-f6fa-48d8-9ae5-2f398c1589ed/Lync_Server_2010_Edge_Server_ReferenceArch_Diagrams.zip",
+            "size": "19069664",
+            "version": "Mar2011",
+            "datePublished": "4/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Lync_Server_2010_Edge_Server_ReferenceArch_Diagrams.zip file contains diagrams for the following:\r\n<ul>\r\n<li>Reference Architecture 1: Single Consolidated Edge</li>\r\n<li>Reference Architecture 2: Scaled Consolidated Edge (DNS Load Balanced)</li>\r\n<li>Reference Architecture 3: Scaled Consolidated Edge (Hardware Load Balanced)</li>\r\n</ul>\r\nYou must have Microsoft Visio installed to view these files.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2011",
+    "detailsSection_file_name": [
+        "Lync_Server_2010_Edge_Server_ReferenceArch_Diagrams.zip"
+    ],
+    "detailsSection_file_size": [
+        "18.2 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<li>This download works with the following Office applications: Microsoft Office Visio 2007 or later. </li>\r\n<li>Users who don\u2019t have Microsoft Visio 2010 can view this document using the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=205698\">Visio 2010: Visio Viewer</a>.</li>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "planning for External User Access",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=205565"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13791",
+    "downloadPreload": true
+}

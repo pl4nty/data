@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual PC 2007 SP1 Release Notes",
+    "downloadDescription": "What\u2019s new in Virtual PC 2007 SP1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "relnotes.htm",
+            "url": "https://download.microsoft.com/download/8/f/4/8f44a346-1f62-4bb2-b957-7508ea1f7d80/relnotes.htm",
+            "size": "28840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These release notes contain important information about the new features included with this release of Microsoft\u00ae Virtual PC 2007 Service Pack 1 (SP1), installing the software, and known issues. We recommend that you review all of the information in this document before you install this version of Virtual PC.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "relnotes.htm"
+    ],
+    "detailsSection_file_size": [
+        "28.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23123",
+    "downloadPreload": true
+}

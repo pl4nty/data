@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Project Portfolio Server 2007 Migration Guide",
+    "downloadDescription": "This document will help you understand the approaches for migrating from Microsoft Office Project Portfolio Server 2007 to Microsoft Project Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Portfolio Server Migration Guide.pdf",
+            "url": "https://download.microsoft.com/download/9/0/4/9046a443-ea69-4b9b-8988-dbeae3e2179a/Portfolio Server Migration Guide.pdf",
+            "size": "1600491",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Portfolio Server Migration Guide.xps",
+            "url": "https://download.microsoft.com/download/9/0/4/9046a443-ea69-4b9b-8988-dbeae3e2179a/Portfolio Server Migration Guide.xps",
+            "size": "2080341",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is intended for for both IT professionals and business users that use Microsoft Office Project Portfolio Server 2007 today and are considering an upgrade to Microsoft Project Server 2010. This document outlines the various approaches and points out the useful resources in this area.\r\n<br />\r\n<br />\r\nFor more Upgrade and Migration resources to Project 2010, please visit our dedicated <B>Project 2010 Upgrade nad Migration Center on Microsoft TechNet</B> - <a title=\"http://go.microsoft.com/?linkid=9676814\" href=\"http://go.microsoft.com/?linkid=9676814\">http://go.microsoft.com/?linkid=9676814</a>.\r\n<br />\r\n<br />\r\nFor all other information about <b>Microsoft Project 2010</b> - please visit <a title=\"http://www.microsoft.com/project\" href=\"http://www.microsoft.com/project\">http://www.microsoft.com/project</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Portfolio Server Migration Guide.pdf",
+        "Portfolio Server Migration Guide.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have XPS Viewer or Adobe Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in the appropriate viewer to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20815",
+    "downloadPreload": true
+}

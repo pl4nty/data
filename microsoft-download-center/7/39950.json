@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2013 Evaluation",
+    "downloadDescription": "Microsoft Host Integration Server 2013 technologies and tools enable enterprise organizations to integrate existing IBM host systems, programs, messages and data with new Microsoft server applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2013_Evaluation_EN.exe",
+            "url": "https://download.microsoft.com/download/b/7/9/b79c04ac-4493-4bd1-97d9-cc78e96977fe/HIS2013_Evaluation_EN.exe",
+            "size": "109274544",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Host Integration Server 2013 technologies and tools enable enterprise organizations to integrate existing IBM host systems, programs, messages and data with new Microsoft server applications based on Windows 8, Windows Server 2012, Visual Studio 2012, .NET Framework 4, SQL Server 2012, and BizTalk Server 2013. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "HIS2013_Evaluation_EN.exe"
+    ],
+    "detailsSection_file_size": [
+        "104.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Windows\u00ae 8.1</li>\r\n<li>Microsoft Windows 8</li>\r\n<li>Microsoft Windows 7 SP1</li>\r\n<li>Microsoft Windows Server\u00ae 2012 R2</li>\r\n<li>Microsoft Windows Server 2012</li>\r\n<li>Microsoft Windows Server 2008 R2 SP1</li>\r\n<li>Virtualization with Hyper-V\u00ae</li>\r\n<li>Virtualization with Windows Azure\u2122</li>\r\n</ul>\r\n<br/>\r\nYou must also have the following software installed to install Host Integration Server.\r\n<br /> \r\n<ul>\r\n<li>Microsoft .NET Framework 4</li>\r\n</ul>\r\n<br/>\r\n<br/>\r\nNote : You can use setup to install redistributable prerequisites automatically from the Web or from a pre-downloaded CAB file. Automatically installing from the Web or downloading the CAB file requires internet access. You can download the CAB file from http://go.microsoft.com/fwlink/?LinkId=268119. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>Click the Download button to download the file. </li>\r\n<li>Run the downloaded .EXE from your hard drive and choose the directory from which to install the downloaded product. </li>\r\n<li>From the directory where you extracted your files, run Setup.exe and follow the instructions to complete the installation.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39950",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Host Integration Server 2013 Best Practices Analyzer",
+    "downloadDescription": "The Host Integration Server Best Practices Analyzer performs configuration-level verification by reading and reporting only. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2013BPA.msi",
+            "url": "https://download.microsoft.com/download/f/a/4/fa47262a-c203-4795-a059-712fcb3624f3/HIS2013BPA.msi",
+            "size": "1487360",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Host Integration Server Best Practices Analyzer performs configuration-level verification by reading and reporting only. The Best Practices Analyzer gathers data from different information sources, such as Windows Management Instrumentation (WMI) classes, registry entries and other HIS configuration stores. The Best Practices Analyzer uses the data to evaluate the deployment configuration. The Best Practices Analyzer does not modify any system settings, and is not a self-tuning tool.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "HIS2013BPA.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>Required Software</B>\r\n<LI>Microsoft Host Integration Server 2013</LI>\r\n<LI>Microsoft Baseline Configuration Analyzer 2.0</LI>\r\n<LI>Windows PowerShell 3.0</LI>\r\n\r\n<br></br>Note: You must be a local administrator to run the HISBPA tool. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40325",
+    "downloadPreload": true
+}

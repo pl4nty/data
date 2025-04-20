@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Journaling with Microsoft Exchange Server 2003",
+    "downloadDescription": "This guide discusses how the enhancements to the Journaling feature in Microsoft Exchange Server 2003 Service Pack 1 (SP1) (and Exchange 2000 Server SP3, with the envelope journaling software update) makes messaging data more manageable for a broader compliance solution.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3Journal.doc",
+            "url": "https://download.microsoft.com/download/0/7/3/0730fa29-1a77-43a0-87de-2f97e059fec8/E2k3Journal.doc",
+            "size": "332800",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:08:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Regulatory compliance is an important issue for most companies in the financial and health care industries. For example, corporate officers in some financial sectors are responsible for the claims made by their employees to their customers. In the context of an enterprise messaging environment where large amounts of information are exchanged on a daily basis, supervising data is a complex but required task. However, e-mail is only one type of data that is regulated and is, therefore, one data source that a full-compliance solution has to manage. Microsoft Exchange Server 2003 Service Pack 1 (SP1) (and Exchange 2000 Server SP3, with the envelope journaling software update) includes enhancements to the Journaling feature that help make messaging data more manageable for a broader compliance solution.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3Journal.doc"
+    ],
+    "detailsSection_file_size": [
+        "325.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Embedded",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><LI>\nClick the <b>Download</b> button on this page to start the download.\n</LI><br />\n<LI>Do one of the following:</LI></OL>\n<UL>\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<br />\n</LI><br />\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n</LI>\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "supporting Regulatory Compliance with Exchange Server 2003",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=29257"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1189",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Speedy DDR2 Controller for FPGAs",
+    "downloadDescription": "The Speedy DDR2 controller is intended as an improvement on the Xilinx MIG controller for Virtex 5 FPGAs. Last published: March 18, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SpeedyDDR2ControllerForFPGAs_1_1.msi",
+            "url": "https://download.microsoft.com/download/d/6/3/d63b5b8f-aca4-4f50-88f3-937bb50297f1/SpeedyDDR2ControllerForFPGAs_1_1.msi",
+            "size": "426496",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Speedy DDR2 controller is intended as an improvement on the Xilinx MIG controller for Virtex 5 FPGAs. Designed entirely from scratch on the ML505 development board, it achieves better performance at the same clock rate than the MIG controller while consuming comparable resources. The tight timing constraints imposed by high-speed DDR2 clash with the worst-case timing constraint style of FPGA design in a way that presents unique challenges. This paper discusses the primary design problems resulting from that paradox and contrasts approaches to their solutions. Performance then is compared between the Speedy DDR2 controller and the Xilinx MIG controller. The source code has been written to be more readable, maintainable, and modifiable than the MIG design and is freely downloadable from the Web.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "SpeedyDDR2ControllerForFPGAs_1_1.msi"
+    ],
+    "detailsSection_file_size": [
+        "416.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52544",
+    "downloadPreload": true
+}

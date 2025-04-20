@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Intune Company Portal for Android",
+    "downloadDescription": "The Company Portal provides access to corporate apps and resources from almost any network.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "com.microsoft.windowsintune.companyportal.apk",
+            "url": "https://download.microsoft.com/download/2f1157ff-c775-44cc-a80a-b328603a8ab9/com.microsoft.windowsintune.companyportal.apk",
+            "size": "79687164",
+            "version": "5.0.6558.0",
+            "datePublished": "3/23/2025 3:59:48 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        }
+    ],
+    "detailsSection": "The Company Portal provides access to corporate apps and resources from almost any network. Your company must already subscribe to Microsoft Intune, and your IT admin must set up your account before you can use this app.<br/>\n<br/>\nThe Microsoft Intune Company Portal for Android app is available from the Google Play Store to allow end users to download and install the app to their own device. For devices without access to the Google Play Store, administrators can download and deploy the Microsoft Intune Company Portal for Android. Note: if users are able to access the Google Play Store to download the Company Portal app, you do not need to deploy this version of the app. Functionality is identical between versions. <br/>\n<br/>\n<b>IMPORTANT: Use of this software requires an organizational account and connectivity to the company\u2019s valid subscription to Microsoft Intune\u2122. Updates to the service may be required for proper performance. Some functionality may not be available in all countries. See the <a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">Microsoft Online Services Privacy Statement </a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">http://go.microsoft.com/fwlink/?LinkID=240296</a>). </b><br/>\n<br/>\n<b>Before you install and use the Microsoft Intune Company Portal for Android you must:\n<ol>\n<li> Review the Microsoft Intune Company Portal for Android license terms by clicking here <a href=\"http://go.microsoft.com/fwlink/?LinkId=518266&clcid=0x409\">Microsoft Application License Terms</a>.</li>\n<li> Print and retain a copy of the license terms for your records.</li>\n</ol><br/>\n<br/>\nBy downloading and using Microsoft Intune Company Portal for Android you agree to such license terms. If you do not accept them, do not use the software.</b><br/>\n<br/>\n<b>Features: </b>\n<ul>\n<li> Enroll to access corporate resources </li> \n<li> Browse and install company apps</li> \n<li> View and manage all your enrolled devices</li> \n<li> View IT department contact information</li> \n<li> Change your work account password</li> \n<li> Unenroll or remotely wipe devices</li> \n</ul>\n<br/>\nFor details about what\u2019s new in the latest update, see <a href=\" http://aka.ms/intuneupdates \"> http://aka.ms/intuneupdates </a>. \n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.6558.0",
+    "detailsSection_file_name": [
+        "com.microsoft.windowsintune.companyportal.apk"
+    ],
+    "detailsSection_file_size": [
+        "76.0 MB"
+    ],
+    "detailsSection_file_date": "3/23/2025",
+    "systemRequirementsSection": "<b>Note: </b>Download the com.microsoft.windowsintune.companyportal.apk to a local share and side-load the Company Portal app onto the Android device. <br/>\n<br/>\n<b>Other Requirements: </b>\n<ul>\n<li> A Microsoft Intune subscription or System Center 2012 R2 Configuration Manager with a Microsoft Intune subscription</li> \n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "After downloading the Company Portal APK, you will need to side-load it onto the Android device.  Doing this will require allowing installation of apps from unknown sources on the device, since the APK is not coming from the Play Store.\n<br/>\n<ul>\n<li> Connect your device to a computer using USB and copy the APK to the device</li> \n<li> In the device Settings menu, browse to Security, and check the box next to \"Unknown sources\"</li> \n<li> On the device, browse to the APK that you copied and tap on it.  This will start the installation. </li> \n</ul>\n<br/>\nFor more information about using the app in a Microsoft Intune environment, see <a href=\"https://technet.microsoft.com/en-US/library/dn764960.aspx\">Set up Android management with Microsoft Intune</a> (<a href=\"https://technet.microsoft.com/en-US/library/dn764960.aspx\">https://technet.microsoft.com/en-US/library/dn764960.aspx</a>)<br/>\n<br/> \nFor more information about using the app in an environment with both Configuration Manager and Microsoft Intune, see <a href=\"http://technet.microsoft.com/en-us/library/jj884158.aspx\">How to Manage Mobile Devices by Using Configuration Manager and Microsoft Intune</a> (<a href=\"http://technet.microsoft.com/en-us/library/jj884158.aspx\">http://technet.microsoft.com/en-us/library/jj884158.aspx</a>)<br/>\n<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49140",
+    "downloadPreload": true
+}

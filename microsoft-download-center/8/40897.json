@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Local Security Authority (LSA) Protected Process Opt-out",
+    "downloadDescription": "An efi tool to disable LSA's protected process setting on machines with secure boot.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LsaPplConfig.efi",
+            "url": "https://download.microsoft.com/download/c/a/8/ca89bac2-1863-43c2-8fe9-1945a42f3345/LSAPPLConfig/x64/LsaPplConfig.efi",
+            "size": "1427800",
+            "version": "9600.16415.13092",
+            "datePublished": "7/15/2024 3:35:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LsaPplConfig.efi",
+            "url": "https://download.microsoft.com/download/c/a/8/ca89bac2-1863-43c2-8fe9-1945a42f3345/LSAPPLConfig/x86/LsaPplConfig.efi",
+            "size": "1222488",
+            "version": "9600.16415.13092",
+            "datePublished": "7/15/2024 3:35:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "IT Administrators who enable additional LSA Protection to mitigate pass-the-hash (PtH) threats on x86-based or x64-based devices that use Secure Boot and UEFI, a UEFI variable is set in the UEFI firmware when LSA protection is enabled by using the registry key. When the setting is stored in the firmware, the UEFI variable cannot be deleted or changed in the registry key. The UEFI variable must be reset.\r\n\r\nThe Local Security Authority (LSA) Protected Process Opt-out is a UEFI tool can be used to reset the UEFI variable.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9600.16415.13092",
+    "detailsSection_file_name": [
+        "LsaPplConfig.efi",
+        "LsaPplConfig.efi"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows 8.1 (x86 or x64) / Microsoft Windows Server 2012 R2 (x86 or x64) and later <br></br>\r\nSecure Boot Enabled Device",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n <li>Disable the registry key (GP for the registry key, if applicable) and wait for the change to propagate to clients.<br></br>The corresponding registry key is HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\Lsa\\RunAsPPL.<br></br> </li>\r\n <li>Download the Local Security Authority (LSA) Protected Process Opt-out / LSAPPLConfig.efi tool files from the download center and store the efi tool that corresponds to your machines architecture on a local disk, for example at C: drive's root<br></br></li>\r\n <li>Open a Command Prompt as an Administrator and run the following commands to bootstrap the tool:<br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mountvol X: /s <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; copy C:\\LSAPPLConfig.efi X:\\EFI\\Microsoft\\Boot\\LSAPPLConfig.efi /Y <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bcdedit /create {0cb3b571-2f2e-4343-a879-d86a476d7215} /d \"DebugTool\" /application osloader <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} path \"\\EFI\\Microsoft\\Boot\\LSAPPLConfig.efi\" <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bcdedit /set {bootmgr} bootsequence {0cb3b571-2f2e-4343-a879-d86a476d7215} <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} loadoptions %1 <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bcdedit /set {0cb3b571-2f2e-4343-a879-d86a476d7215} device partition=X: <br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mountvol X: /d<br></br>\r\n </li>\r\n <li>Restart the machine, the EFI application will start after the restart.<br></br></li>\r\n <li>Accept the prompt to disable LSA's protection. Windows will continue to launch and LSA protection will be disabled.<br></br></li>\r\n <li> Verify LSA protection is disabled, search for the following WinInit event in the System log under Windows Logs, and ensure that it does not exist:<br></br>\r\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 12: LSASS.exe was started as a protected process with level: 4</li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "configuring Additional LSA Protection",
+            "url": "http://technet.microsoft.com/en-us/library/dn408187.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40897",
+    "downloadPreload": true
+}

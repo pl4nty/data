@@ -1,0 +1,226 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Power BI Desktop (Optimized for Power BI Report Server - January 2025)",
+    "downloadDescription": "Microsoft Power BI Desktop (Optimized for Power BI Report Server - January 2025)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PBIDesktopSetupRS_x64.exe",
+            "url": "https://download.microsoft.com/download/d/e/e/dee9a9a2-46a4-4aa9-a8d3-bc318325399e/PBIDesktopSetupRS_x64.exe",
+            "size": "571165784",
+            "version": "2.138.2255.0",
+            "datePublished": "1/13/2025 10:03:34 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PBIDesktopSetupRS.exe",
+            "url": "https://download.microsoft.com/download/d/e/e/dee9a9a2-46a4-4aa9-a8d3-bc318325399e/PBIDesktopSetupRS.exe",
+            "size": "529410808",
+            "version": "2.138.2255.0",
+            "datePublished": "1/13/2025 10:03:34 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        }
+    ],
+    "detailsSection": "      This version of Power BI Desktop is optimized for use with <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=55329\">Microsoft Power BI Report Server \u2013 January 2025</a>:\r\n      <ul>\r\n        <li>Stay on the version compatible with your report server, with no prompts to update</li>\r\n        <li>Open Power BI reports from - or save them to - your report server, directly within Power BI Desktop</li>\r\n      </ul>\r\n\r\n      With Power BI Desktop, you can:\r\n      <ul>\r\n        <li>Connect to SQL Server Analysis Services or Azure Analysis Services</li>\r\n        <li>Create reports</li>\r\n        <li>Visualize data using the Report View. Select the fields you want, add filters, choose from dozens of visualizations, format your reports with custom colors, gradients and several other options.</li>\r\n        <li>Save your reports as Power BI Desktop files. Power BI Desktop files have a .pbix extension.</li>\r\n        <li>Upload or publish your reports. You can upload the reports you created and saved in the Desktop to Power BI Report Server. You can also save them to Power BI Report Server right from Power BI Desktop.</li>\r\n      </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.138.2255.0",
+    "detailsSection_file_name": [
+        "PBIDesktopSetupRS_x64.exe",
+        "PBIDesktopSetupRS.exe"
+    ],
+    "detailsSection_file_size": [
+        "544.7 MB",
+        "504.9 MB"
+    ],
+    "detailsSection_file_date": "1/13/2025",
+    "systemRequirementsSection": "Microsoft Power BI Desktop (Optimized for Power BI Report Server) requires Internet Explorer 9 or greater.\r\n      <br />\r\n      <br />\r\nMicrosoft Power BI Desktop (Optimized for Power BI Report Server) is available for 32-bit (x86) and 64-bit (x64) platforms.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the version of Power BI Desktop (Optimized for Power BI Report Server) that matches the architecture (x86 or x64) of your Windows OS. Run the MSI installer and follow the setup steps.",
+    "additionalInformationSection": "<ul>\r\n        <li>\r\n          <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=55253\">Power BI Report Server - January 2023</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://powerbi.microsoft.com/en-us/report-server/\">Home Page for Power BI Report Server</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://go.microsoft.com/fwlink/?linkid=847000\">Power BI Report Server Documentation</a>\r\n        </li>\r\n        <li>\r\n          <a href=\"https://community.powerbi.com/\">Power BI Forums</a>\r\n        </li>\r\n      </ul>\r\n      <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106035",
+    "downloadPreload": true
+}

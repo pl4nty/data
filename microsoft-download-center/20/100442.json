@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Servicing Update for SQL Server 2019 RTM (KB4517790)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2019 RTM ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2019-KB4517790-x64.exe",
+            "url": "https://download.microsoft.com/download/a/2/f/a2ff1afa-a7bc-431f-bb9f-834774bc68cf/SQLServer2019-KB4517790-x64.exe",
+            "size": "474280688",
+            "version": "15.0.2070.41",
+            "datePublished": "7/15/2024 4:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This Servicing Update for SQL Server 2019 RTM is a Non-Security GDR release.<br/><br />\r\nThe payload mainly contains additional fixes required for the new SQL Server 2019 Big Data Cluster feature and there is a critical fix for SQL Server Failover Cluster named instance.<br/><br />\r\nMore information about this Servicing Update can be found here: \r\n<a name=\"KB4517790\"></a><a href=\"https://support.microsoft.com/help/4517790\">KB4517790</a> <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2070.41",
+    "detailsSection_file_name": [
+        "SQLServer2019-KB4517790-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "452.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2019 RTM instances. <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "SQL Server 2019 RTM Servicing Update may be removed by selecting KB4517790 from \"View Installed Updates\" in the Programs and Features section of the Control Panel, under SQL Server 2019. <br/>",
+    "additionalInformationSection": "Additional Info",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100442",
+    "downloadPreload": true
+}

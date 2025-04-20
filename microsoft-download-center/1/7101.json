@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Group Policy ADMX Syntax Reference Guide",
+    "downloadDescription": "This reference document describes the new Group Policy ADMX format. The intent of this document is to teach you how to create .admx and .adml files for custom Group Policy administrative template settings.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Group Policy ADMX Syntax Reference Guide.doc",
+            "url": "https://download.microsoft.com/download/5/0/8/5081217f-4a2a-470e-a7fa-5976e40b0839/Group Policy ADMX Syntax Reference Guide.doc",
+            "size": "1559552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This reference document describes the new Group Policy ADMX format. The intent of this document is to teach you how to create .admx and .adml files for custom Group Policy administrative template settings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Group Policy ADMX Syntax Reference Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Longhorn (Windows Code Name) ",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server Group Policy Home Page",
+            "url": "http://technet.microsoft.com/en-us/windowsserver/grouppolicy/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7101",
+    "downloadPreload": true
+}

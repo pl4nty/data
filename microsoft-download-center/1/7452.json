@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Brazil",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 6, and that is specific to users in Brazil.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for Brazil.xps",
+            "url": "https://download.microsoft.com/download/4/a/f/4afe582d-96c0-4c1a-81df-38d47d47cb2a/Country-specific update for Brazil.xps",
+            "size": "411722",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Country-specific update for Brazil.pdf",
+            "url": "https://download.microsoft.com/download/4/a/f/4afe582d-96c0-4c1a-81df-38d47d47cb2a/Country-specific update for Brazil.pdf",
+            "size": "310158",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Brazil in hotfix rollup 6 for Microsoft Dynamics AX 2009 SP1.<br /><br />\r\nIn accordance with Brazilian legislation, companies must generate sales orders and free text invoices that itemize all miscellaneous charges, such as freight, insurance, or other applicable charges made to the customer. This ensures that the information will be reported correctly in Nota Fiscal Electr\u00f4nica (NF-e) and Sistema P\u00fablico de Escritura\u00e7\u00e3o Digital or Digital Reporting Public System (SPED), if applicable.<br /><br />\r\nYou must specify the customer miscellaneous charges in the invoice lines and the internal miscellaneous charges in either the invoice header or invoice lines in a sales order or free text invoice. You can validate the tax information included in the miscellaneous charges, such as the sales tax group, item sales tax group, fiscal value, and taxation code.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article <a href=\"https://mbs2.microsoft.com/Knowledgebase/KBDisplay.aspx?scid=kb$en-us$2405516\">2405516</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Country-specific update for Brazil.xps",
+        "Country-specific update for Brazil.pdf"
+    ],
+    "detailsSection_file_size": [
+        "402.1 KB",
+        "302.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7452",
+    "downloadPreload": true
+}

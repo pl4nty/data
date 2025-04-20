@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Sites in Microsoft Azure using SharePoint Server 2013",
+    "downloadDescription": "Public-facing Internet sites benefit from cloud elasticity and Microsoft Azure Active Directory for customer accounts",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Internet Sites in Azure using SP2013 - Solution Model.vsd",
+            "url": "https://download.microsoft.com/download/a/1/8/a18876d7-2105-44d9-b4a4-ea58daa13df7/Internet Sites in Azure using SP2013 - Solution Model.vsd",
+            "size": "1398784",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:25:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Internet Sites in Azure using SP2013 - Solution Model.pdf",
+            "url": "https://download.microsoft.com/download/a/1/8/a18876d7-2105-44d9-b4a4-ea58daa13df7/Internet Sites in Azure using SP2013 - Solution Model.pdf",
+            "size": "551396",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:25:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Internet sites that use SharePoint 2013 benefit by being hosted in Microsoft Azure Infrastructure Services. This solution model outlines key design activities and recommended architecture choices for Internet sites in Microsoft Azure. You can use the illustrations in this file as a starting point for your own implementation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "Internet Sites in Azure using SP2013 - Solution Model.vsd",
+        "Internet Sites in Azure using SP2013 - Solution Model.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "538.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\n<ul>\r\n<li>To view the Visio version of the model, you must have Microsoft Visio 2007 or a more recent version.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li>\r\n<li>Click <b>Save</b> or <b>Save this program to disk</b>. </li>\r\n<li>Find the file on your hard disk and double-click it to open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41992",
+    "downloadPreload": true
+}

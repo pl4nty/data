@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "OData Standards Support Documentation",
+    "downloadDescription": "The OData Standards Support documentation provides detailed support information for certain standards that are implemented in various Microsoft products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[MS-ODATAJSON].pdf",
+            "url": "https://download.microsoft.com/download/8/a/6/8a67e3a1-2cd2-4e42-8459-d490eebfa65c/[MS-ODATAJSON].pdf",
+            "size": "736710",
+            "version": "1",
+            "datePublished": "7/15/2024 3:34:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "[[ReadmefirstOSS]].pdf",
+            "url": "https://download.microsoft.com/download/8/a/6/8a67e3a1-2cd2-4e42-8459-d490eebfa65c/[[ReadmefirstOSS]].pdf",
+            "size": "238124",
+            "version": "1",
+            "datePublished": "7/15/2024 3:34:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ODataStandards.zip",
+            "url": "https://download.microsoft.com/download/8/a/6/8a67e3a1-2cd2-4e42-8459-d490eebfa65c/ODataStandards.zip",
+            "size": "746360",
+            "version": "1",
+            "datePublished": "7/15/2024 3:34:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The OData Standards Support documentation provides detailed support information for certain standards that are implemented in various Microsoft products. \r\n<br/><br/>\r\nThese documents provide statements of standards support. They are intended for use in conjunction with the Microsoft technical specifications, publicly available standards specifications, network programming art, and Microsoft distributed systems concepts. It assumes that the reader is either familiar with the aforementioned material or has immediate access to it. \r\n<br/><br/>\r\nStandards Support documents do not require the use of Microsoft programming tools or programming environments in order to implement the standard. Developers who have access to Microsoft programming tools and environments are free to take advantage of them.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "[MS-ODATAJSON].pdf",
+        "[[ReadmefirstOSS]].pdf",
+        "ODataStandards.zip"
+    ],
+    "detailsSection_file_size": [
+        "719.4 KB",
+        "232.5 KB",
+        "728.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The OData Standards Support documents are available in the Adobe Portable Document Format (PDF), which you can open by using Adobe Reader, available at <a href=\"http://www.adobe.com\">http://www.adobe.com/</a>.\r\n<br/><br/><br/>\r\n<b>Note:</b> For optimal readability of the PDF documents, it is recommended that they be opened and viewed by using Adobe Reader 8.0 or later. Earlier versions of Adobe Reader might not provide the same reading quality.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Individual PDF files should be stored in a single directory to enable links between the OData standards support documents. Note that if you download additional OData standards support documents from Microsoft, they should also be stored in the same directory to enable linking. <br/><br/>\r\nThe self-extracting Zip file (ODataStandards.zip) in this list of files contains all the OData standards support documents. Please download and read the readme file. This package does not collect any personal information. <br/><br/>\r\nAudience:<br/>\r\nThe OData standards support documentation is intended for use in conjunction with publicly available standard specifications. It assumes that the reader either is familiar with this material or has access to it. The documentation provides the following levels of audience support: <br/><br/>\r\n\u2022 Implementer: Conceptual and reference information to implement an interoperable solution by using one or more specifications for a given task or scenario. <br/><br/>\r\n\u2022 Reviewer: A resource for readers who want to evaluate or understand the Microsoft implementation of these specifications. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39259",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Visual FoxPro 9.0 SP2 ActiveX Controls Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual FoxPro 9.0 Service Pack 2.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vfp9.0sp2-kb958371-x86-enu.exe",
+            "url": "https://download.microsoft.com/download/a/2/e/a2ec02d1-c0e8-4541-b293-e6d2eea04df9/VFP9.0sp2-KB958371-X86-Enu.exe",
+            "size": "4822280",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual FoxPro 9.0 Service Pack 2 and gain control over it. You can help protect your computer by installing this update from Microsoft. <br />\n<br />\nThis update uses Windows Installer technology which uses an internal database for recording the installation state for any products and patches based on Windows Installer technology. Under certain conditions the Windows Installer database may contain invalid file hashes for un-versioned files, and when you try to install an update you may see a prompt for providing the source CD or other media that was used for installing the original product. Running the update may result in an update to the Windows Installer database on your PC to rectify this problem.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB958371",
+        "name": "KB958371"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS08-070",
+        "name": "MS08-070"
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "vfp9.0sp2-kb958371-x86-enu.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP Service Pack 3",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows 2000 Service Pack 4"
+    ],
+    "installInstructionSection": "<ol><br />\n<li> Click the <b>Download</b> button on this page to start the download.</li><br />\n<li> To start the installation immediately, click <b>Run</b>. To save the download to your computer for installation at a later time, click <b>Save</b>.</li><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual FoxPro 9.0 SP2",
+            "url": "http://support.microsoft.com/kb/955370"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22158",
+    "downloadPreload": true
+}

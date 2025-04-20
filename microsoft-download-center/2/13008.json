@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Virtualization Cookbooks",
+    "downloadDescription": "Download virtualization cookbooks to help you deploy solutions today.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Deployment_Cookbook.VS_Acronis_FINAL.doc",
+            "url": "https://download.microsoft.com/download/2/b/9/2b99fd0d-5437-40d7-a430-23e31cac7ece/Deployment_Cookbook.VS_Acronis_FINAL.doc",
+            "size": "8680448",
+            "version": "1.00",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u2022 Backup and Recovery using Microsoft Virtual Server 2005 R2 Service Pack 1 and Acronis True Image 9.1 Enterprise Edition<br />\n<br />\n\u2022 Deployment Cookbook: Branch Office\u2014Microsoft System Center Virtual Machine Manager Microsoft Virtual Server 2005 R2 Service Pack 1 <br />\n<br />\n\u2022 Deployment Cookbook: High Availability with Virtual Server Host Clustering <br />\n<br />\n\u2022 Deployment Cookbook: Hosted Backup\u2014Microsoft System Center Data Protection Manager 2007 and Microsoft Virtual Server 2005 R2 Service Pack 1 <br />\n<br />\n\u2022 Deployment Cookbook: Offsite Backup\u2014Microsoft System Center Data Protection Manager 2007 and Microsoft Virtual Server 2005 R2 Service Pack 1 <br />\n <br />\n\u2022 Deployment Cookbook: Onsite Backup\u2014Microsoft System Center Data Protection Manager 2007 and Microsoft Virtual Server 2005 R2 Service Pack 1 <br />\n <br />\n\u2022 Microsoft System Center Data Protection Manager 2007, Microsoft Virtual Server 2005 R2 Service Pack 1, and Microsoft System Center Virtual Machine Manager <br />\n <br />\n\u2022 Microsoft Virtual Server 2005 R2 Service Pack 1 and Microsoft System Center Virtual Machine Manager <br />\n <br />\n\u2022 Mobile User Access of Applications. Terminal Server running on virtual machines using Microsoft Virtual Server 2005 R2 Service Pack 1 <br />\n <br />\n\u2022 Quick Migration with Virtual Server Host Clustering Windows Server 2003 Enterprise Edition & Microsoft Virtual Server 2005 R2 Service Pack 1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.00",
+    "detailsSection_file_name": [
+        "Deployment_Cookbook.VS_Acronis_FINAL.doc"
+    ],
+    "detailsSection_file_size": [
+        "8.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download virtualization cookbooks to help you deploy solutions today.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13008",
+    "downloadPreload": true
+}

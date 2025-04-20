@@ -1,0 +1,166 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Embedded Lockdown Manager (KB2959936)",
+    "downloadDescription": "Resolves an issue that occurs with the Embedded Lockdown Manager Breakout Key [This KB has been superseded, see Details below].",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2959936-x86.cab",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows7-KB2959936-x86.cab",
+            "size": "497962",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-KB2959936-x64.msu",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8-KB2959936-x64.msu",
+            "size": "686315",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2959936-x64.cab",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows7-KB2959936-x64.cab",
+            "size": "498252",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-KB2959936-x86.cab",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8-KB2959936-x86.cab",
+            "size": "500122",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2959936-x64.msu",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8.1-KB2959936-x64.msu",
+            "size": "686694",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2959936-x86.msu",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows7-KB2959936-x86.msu",
+            "size": "680979",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2959936-x86.msu",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8.1-KB2959936-x86.msu",
+            "size": "683525",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2959936-x86.cab",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8.1-KB2959936-x86.cab",
+            "size": "500138",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2959936-x64.msu",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows7-KB2959936-x64.msu",
+            "size": "683950",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-KB2959936-x64.cab",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8-KB2959936-x64.cab",
+            "size": "500304",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-KB2959936-x86.msu",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8-KB2959936-x86.msu",
+            "size": "686134",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2959936-x64.cab",
+            "url": "https://download.microsoft.com/download/1/0/7/107dde37-d5ed-4eff-b5fe-98cf50b98626/Windows8.1-KB2959936-x64.cab",
+            "size": "501192",
+            "version": "17116",
+            "datePublished": "7/15/2024 3:20:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This resolves an issue where the Embedded Lockdown Manager breakout key is not recognized due to a hex conversion error when updating the registry.\r\n<br/><br/>\r\nA later version that contains this and subsequent fixes is available from the <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=37020\">Download Center page for the Embedded Lockdown Manager</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17116",
+    "detailsSection_file_name": [
+        "Windows7-KB2959936-x86.cab",
+        "Windows8-KB2959936-x64.msu",
+        "Windows7-KB2959936-x64.cab",
+        "Windows8-KB2959936-x86.cab",
+        "Windows8.1-KB2959936-x64.msu",
+        "Windows7-KB2959936-x86.msu",
+        "Windows8.1-KB2959936-x86.msu",
+        "Windows8.1-KB2959936-x86.cab",
+        "Windows7-KB2959936-x64.msu",
+        "Windows8-KB2959936-x64.cab",
+        "Windows8-KB2959936-x86.msu",
+        "Windows8.1-KB2959936-x64.cab"
+    ],
+    "detailsSection_file_size": [
+        "486.3 KB",
+        "670.2 KB",
+        "486.6 KB",
+        "488.4 KB",
+        "670.6 KB",
+        "665.0 KB",
+        "667.5 KB",
+        "488.4 KB",
+        "667.9 KB",
+        "488.6 KB",
+        "670.1 KB",
+        "489.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "As an alternative to using the .MSU files, each .MSU file has a corresponding .CAB file that can be downloaded and installed as described in the Install Instructions.\r\n<br/>\r\nThe following files should be installed on Windows 7 or Windows Server 2008 R2:\r\n<ul>\r\n<li>Windows7-KB2959936-x64.msu</li>\r\n<li>Windows7-KB2959936-x86.msu</li>\r\n</ul>\r\nThe following files should be installed on Windows Server 2012: \r\n<ul>\r\n<li>Windows8-KB2959936-x64.msu</li>\r\n<li>Windows8-KB2959936-x86.msu</li>\r\n</ul>\r\nThe following files should be installed on Windows 8.1 or Windows Server 2012 R2: \r\n<ul>\r\n<li>Windows8.1-KB2959936-x64.msu</li>\r\n<li>Windows8.1-KB2959936-x86.msu</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "A) Copy the appropriate .msu file to your system and double-click to install ELM on your system.  \r\n<br/><br/>\r\nOR\r\n<br/><br/>\r\nB) Install the appropriate .cab file for you system via the command line with administrator privileges: \"DISM /online /add-package\" \r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "embedded Lockdown Manager",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=37020"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43352",
+    "downloadPreload": true
+}

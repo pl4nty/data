@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2017 Productivity Guide",
+    "downloadDescription": "Visual Studio 2017 is faster, leaner and full of new productivity features to help you write and publish code faster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VisualStudio2017_ProductivityGuideMetadata.pdf",
+            "url": "https://download.microsoft.com/download/4/6/3/463482ed-bc65-4a13-9e7d-ce31585d2610/VisualStudio2017_ProductivityGuideMetadata.pdf",
+            "size": "617938",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn about Live Unit Testing, advanced Intellisense, fast code navigation and live code analysis. \r\nPlus, with this \"one pager\" guide you can master the keyboard shortcuts in Visual Studio 2017.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VisualStudio2017_ProductivityGuideMetadata.pdf"
+    ],
+    "detailsSection_file_size": [
+        "603.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7"
+    ],
+    "installInstructionSection": "You can open this guide with any PDF Reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54272",
+    "downloadPreload": true
+}

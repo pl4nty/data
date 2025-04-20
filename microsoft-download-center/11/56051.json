@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Lingering Object Liquidator (LoL)",
+    "downloadDescription": "Lingering Object Liquidator (version 2.0.21) automates the discovery and removal of lingering objects from an Active Directory Domain Services forest.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LingeringObjectLiquidatorInstaller.msi",
+            "url": "https://download.microsoft.com/download/b/a/a/baa58d37-f8d9-4a92-8321-15cab1deff51/LingeringObjectLiquidatorInstaller.msi",
+            "size": "946176",
+            "version": "2.0.21",
+            "datePublished": "7/15/2024 4:57:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Lingering Object Liquidator automates the discovery and removal of <a href=\"https://blogs.technet.microsoft.com/askds/2014/09/15/remove-lingering-objects-that-cause-ad-replication-error-8606-and-friends/\">lingering objects</a> from an Active Directory Domain Services forest. The tool uses the <a href=\"http://msdn.microsoft.com/en-us/library/cc228242.aspx\">DRSReplicaVerifyObjects</a> method used by repadmin /removelingeringobjects and repldiag combined with the <a href=\"http://msdn.microsoft.com/en-us/library/cc223303.aspx\">removeLingeringObject</a> rootDSE primitive used by LDP.EXE. <br /> Lingering Object Liquidator features include:<br />\r\n\u2022 Discovery and removal of lingering objects in a single user interface<br /> \r\n\u2022 Leverages the DRSReplicaVerifyObjects method in Advisory Mode<br />\r\n\u2022 Can target all DCs and all Partitions in a forest<br />\r\n\u2022 Displays all lingering objects in a single window<br />\r\n\u2022 Export the list of lingering objects to a CSV for offline analysis (or modification for import)<br />\r\n\u2022 Supports import and removal of objects from CSV import (leverage for objects not discoverable using DRSReplicaVerifyObjects)<br />\r\n<br />\r\nFor more information about lingering objects, see the ASKDS blog post <a href=\"https://blogs.technet.microsoft.com/askds/2014/09/15/remove-lingering-objects-that-cause-ad-replication-error-8606-and-friends/\"> Remove Lingering Objects that cause AD Replication error 8606 and friends.</a>\r\n<br />For guidance on using Lingering Object Liquidator see <a href=\"http://aka.ms/LingeringObjectLiquidator\">ASKDS Blog post: Introducing Lingering Object Liquidator v2.</a> <br />\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.21",
+    "detailsSection_file_name": [
+        "LingeringObjectLiquidatorInstaller.msi"
+    ],
+    "detailsSection_file_size": [
+        "924.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "1. Install .NET 4.5.2 or later on the member workstation, member server or domain controller that will execute Lingering Object Liquidator.<br />\r\n2. Install Lingering Object Liquidator on the same computer.<br />\r\n3. Permissions: The user account running the tool must have Domain Admin credentials for each domain in the forest targeted by Lingering Object Liquidator. Members of the Enterprise Admins group have domain admin credentials in all domains within a forest by default. Domain Admin credentials are sufficient in a single domain or single domain forest.<br />\r\n4. The admin workstation must have full port and protocol connectivity to all DCs in all domains targeted for the discovery and removal of lingering objects. Specific ports include DNS, Kerberos, RPC, LDAP and the ephemeral port range in use by the targeted DC. While pre-Windows Server 2008 DCs use the \u201clow\u201d ephemeral port range between 1024 and 5000, such DCs are not compatible with Lingering Object Liquidator so those ports don't need to be considered.  Post-Windows Server 2003 DCs use the \u201chigh\u201d ephemeral port range between 49152 to 65535 so the tool will need connectivity over that range. See <a href=\"https://technet.microsoft.com/en-us/library/dd772723(v=ws.10).aspx\">TechNet</a> for more detail. <br />\r\n5. You must enable the Remote Event Log Management (RPC) firewall rule on each DC that will be scanned by the tool. Otherwise, Lingering Object Liquidator displays an error stating, \u201cException: The RPC server is unavailable\u201d<br />\r\n6. The liquidation of lingering objects in AD Lightweight Directory Services (AD LDS / ADAM) environments is not supported.<br />\r\n7. The liquidation of lingering objects using this tool is not supported on domain controllers running Windows Server 2003 R2 or earlier (the tool leverages the event log subscription feature which wasn\u2019t added until Windows Server 2008).<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "1. Download and then double click the file to begin the installation <br />\r\n2. Double-click the Lingering Object Liquidator shortcut on the desktop to begin using the application<br />\r\n3. See the link provided in the tool for detailed usage instructions or the blog post reference below <br />\r\n<br />\r\nSupport: While this tool has been thoroughly tested in many environments, it is provided to you <b>as-is</b>: There will be no official Microsoft support provided.<br /> <b>For questions or feedback on the tool:</b><br />Add a comment to this <a href=\"http://aka.ms/LingeringObjectLiquidator\">blog post</a>, or submit an idea to our <a href=\"https://windowsserver.uservoice.com/forums/304621-active-directory\">UserVoice Feedback page</a>--ensure you code the idea using the \"Lingering Object Liquidator\" category. <br />\r\n<br />\r\nAccess the <a href=\"http://aka.ms/Qqpe4y\">Troubleshooting Active Directory Lingering Objects</a> TechNet Virtual Lab if you would like practice using this tool in a lab environment containing lingering objects. ",
+    "relatedResourcesSection": [
+        {
+            "title": "lingering Objects Information: Symptoms, Cause and Resolution",
+            "url": "https://blogs.technet.microsoft.com/askds/2014/09/15/remove-lingering-objects-that-cause-ad-replication-error-8606-and-friends/"
+        },
+        {
+            "title": "loL Download Page",
+            "url": "http://aka.ms/MSFTLoL"
+        },
+        {
+            "title": "loL Usage",
+            "url": "http://aka.ms/LingeringObjectLiquidator"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56051",
+    "downloadPreload": true
+}

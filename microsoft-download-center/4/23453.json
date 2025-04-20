@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Troubleshooting Forefront UAG DirectAccess",
+    "downloadDescription": "Create a Test Lab that allows you to learn about UAG DirectAccess troubleshooting tools and techniques",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_TroubleshootUAG_DA.docx",
+            "url": "https://download.microsoft.com/download/4/5/9/4594894a-dd0e-4e65-ad8c-6c18fc42ad60/TestLabGuide_TroubleshootUAG_DA.docx",
+            "size": "679733",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows 7 and Windows Server 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Forefront Unified Access Gateway (UAG) extends the value of DirectAccess by providing support for highly available arrays, centralized management, and support for IPv4 networks and resources. This white paper is a companion to the Test Lab Guide: Demonstrate UAG DirectAccess and describes DirectAccess troubleshooting tools, the results of the tools in a working UAG DirectAccess Test Lab, and how to troubleshoot common UAG DirectAccess problems using the Test Lab.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_TroubleshootUAG_DA.docx"
+    ],
+    "detailsSection_file_size": [
+        "663.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Click Download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23453",
+    "downloadPreload": true
+}

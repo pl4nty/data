@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Permissions with SharePoint Server 2013",
+    "downloadDescription": "This paper provides a brief introduction to SharePoint Server 2013 and illustrates how to configure permissions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tlg-SP2013-permissions.doc",
+            "url": "https://download.microsoft.com/download/f/b/c/fbc35747-b9c8-416e-a2c4-09ac82c859c1/tlg-SP2013-permissions.doc",
+            "size": "336896",
+            "version": "2",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "tlg-SP2013-permissions.pdf",
+            "url": "https://download.microsoft.com/download/f/b/c/fbc35747-b9c8-416e-a2c4-09ac82c859c1/tlg-SP2013-permissions.pdf",
+            "size": "663080",
+            "version": "2",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint Server 2013 and step-by-step instructions for configuring and demonstrating permissions behavior for intranet and team sites based on the Text Lab Guide: Configure Intranet and Team Sites with SharePoint Server 2013 (http://www.microsoft.com/en-us/download/details.aspx?id=30379). This paper does not describe how to install and configure SharePoint Server 2013 in a pilot or production environment. For more information, see Install and deploy SharePoint 2013 (http://technet.microsoft.com/en-US/sharepoint/fp142376).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "tlg-SP2013-permissions.doc",
+        "tlg-SP2013-permissions.pdf"
+    ],
+    "detailsSection_file_size": [
+        "329.0 KB",
+        "647.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Microsoft Word 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper-right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39040",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Host Integration Server 2006 Management Pack for Microsoft System Center OpsMgr 2007",
+    "downloadDescription": "The Host Integration Server 2006 MP for Microsoft System Center Operations Manager 2007 monitors the health of computers running Host Integration Server components on the Microsoft Windows Server 2003 operating system. Requires the Backward Compatibility MP version 6.0.5000.12 (or higher).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Host Integration Server 2006 System Center Operations Manager 2007 MP.MSI",
+            "url": "https://download.microsoft.com/download/3/7/b/37b2dc17-0b26-4cb1-a6df-a0db492e32e4/Microsoft Host Integration Server 2006 System Center Operations Manager 2007 MP.MSI",
+            "size": "854016",
+            "version": "6.0.5000.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Host Integration Server 2006 Management Pack provides monitoring functionality for Host Integration Server 2006 computers running on Microsoft  Windows Server 2003, and is supported for use with Microsoft System Center Operations Manager 2007. This management pack provides monitoring of key Host Integration Server components, including SNA Connections and TN3270, TN5250, Print, Session Integrator, and host transaction resynchronization services. This MP requires the Backward Compatibility MP version 6.0.5000.12 (or higher).<br />\n<br />\nThe Management Pack consist of following features:<br />\n    \u2022 Host Integration Server 2006 Alert Monitoring <br />\n    \u2022 Host Integration Server 2006 Health Indication and Monitoring <br />\n    \u2022 Host Integration Server 2006 Performance Monitoring <br />\n    \u2022 Automated configuration discovery and role-based assignment of monitoring rules <br />\n    \u2022 An easy-to-understand and navigable processing rule group hierarchy <br />\n    \u2022 Public views of Host Integration Server 2006 servers, alerts, and groups <br />\n    \u2022 Operator tasks for use in response to common situations",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.5000.0",
+    "detailsSection_file_name": [
+        "Microsoft Host Integration Server 2006 System Center Operations Manager 2007 MP.MSI"
+    ],
+    "detailsSection_file_size": [
+        "834.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Other Software</b>:<br/>\n<UL><LI>Microsoft System Center Operations Manager 2007 </LI><br/>\n<LI>Host Integration Server 2006</LI><br/></UL>\n</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Please review the MP guide for installation instruction. <br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16159",
+    "downloadPreload": true
+}

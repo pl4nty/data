@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio 2005 Service Pack 1 Update for Microsoft SQL Server 2008 Support",
+    "downloadDescription": "This update enables developers to use Microsoft Visual Studio 2005 Service Pack 1 with Microsoft SQL Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs80sp1-kb954961-x86-intl.exe",
+            "url": "https://download.microsoft.com/download/4/6/3/463f3ed1-1483-4300-a4a3-2954a1cff869/VS80sp1-KB954961-X86-INTL.exe",
+            "size": "12779920",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:11:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update resolves the following error that when you try to use Microsoft Visual Studio 2005 Service Pack 1 design tools to open a database connection to Microsoft SQL Server 2008 : \n<br/><br/>\n\u201cThis server version is not supported. Only servers up to Microsoft SQL Server 2005 are supported.\u201d \n<br/><br/>\nThis update addresses this issue and enables the following Visual Studio functionality for SQL Server 2008: \n<br/>\n<ul>\n<li>Server Explorer successfully connects to SQL Server 2008, and database objects such as stored procedures and table data can be viewed and edited. Note that table schemas cannot be viewed or edited in this release.</li>\n<li>SQL CLR projects that target SQL Server 2008 can be created and deployed to the server. </li>\n<li>T-SQL and SQL CLR debugging are now enabled for SQL Server 2008.</li>\n<li>Data binding features in Client and Web Projects are enabled. </li>\n</ul>\n\n<br/>\nThis update does not support the following features for SQL Server 2008: \n<br/>\n<ul>\n<li>Creating and editing table schemas in Table Designer or Database Diagrams. As a workaround you may use the table designer feature in SQL Server Management Studio 2008 to edit table schemas in SQL Server 2008. </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB954961",
+        "name": "KB954961"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vs80sp1-kb954961-x86-intl.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Professional x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 x64 editions",
+        "Windows XP Service Pack 2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the  <a href=\"http://go.microsoft.com/fwlink/?LinkID=129340\">Knowledge Base Article 954961</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 954961",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=129340"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15680",
+    "downloadPreload": true
+}

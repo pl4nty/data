@@ -1,0 +1,266 @@
+{
+    "error": "",
+    "downloadTitle": "Critical Update for Microsoft Dynamics CRM 2011 (KB2855319)",
+    "downloadDescription": "Microsoft has released a critical update.  This is a tested, cumulative set of updates for Microsoft Dynamics CRM 2011 Update Rollup 11 or earlier. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Mui-KB2855319-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/9/9/a/99a5be5c-0665-48de-a3dd-e542ee7df3c3/CRM2011-Mui-KB2855319-ENU-i386.exe",
+            "size": "24003448",
+            "version": "05.00.9690.2903",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Client-KB2855319-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/9/9/a/99a5be5c-0665-48de-a3dd-e542ee7df3c3/CRM2011-Client-KB2855319-ENU-i386.exe",
+            "size": "46386408",
+            "version": "05.00.9690.2903",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Server-KB2855319-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/9/9/a/99a5be5c-0665-48de-a3dd-e542ee7df3c3/CRM2011-Server-KB2855319-ENU-amd64.exe",
+            "size": "140509312",
+            "version": "05.00.9690.2903",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Mui-KB2855319-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/9/9/a/99a5be5c-0665-48de-a3dd-e542ee7df3c3/CRM2011-Mui-KB2855319-ENU-amd64.exe",
+            "size": "45241880",
+            "version": "05.00.9690.2903",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM2011-Client-KB2855319-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/9/9/a/99a5be5c-0665-48de-a3dd-e542ee7df3c3/CRM2011-Client-KB2855319-ENU-amd64.exe",
+            "size": "46241320",
+            "version": "05.00.9690.2903",
+            "datePublished": "7/15/2024 3:12:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        }
+    ],
+    "detailsSection": "\n      Microsoft has released a critical update for Microsoft Dynamics CRM 2011 Server, Microsoft Dynamics CRM for Microsoft Office Outlook, and Microsoft Dynamics CRM 2011 Language Packs.<br />\n      <br />\n      For more information about this release, see Microsoft Knowledge Base article 2855319 :<br /><br /><a HREF=\"http://support.microsoft.com/default.aspx?kbid=2855319\">Microsoft Dynamics CRM 2011 Update Rollup 11 Critical Update</a> <br />\n      <br />\n      To maintain parity between the application components of Microsoft Dynamics CRM 2011, this critical update includes packages for Microsoft Dynamics CRM Server, Microsoft Dynamics CRM for Outlook, and Microsoft Dynamics CRM Language Packs.\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2855319",
+        "name": "KB2855319"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "05.00.9690.2903",
+    "detailsSection_file_name": [
+        "CRM2011-Mui-KB2855319-ENU-i386.exe",
+        "CRM2011-Client-KB2855319-ENU-i386.exe",
+        "CRM2011-Server-KB2855319-ENU-amd64.exe",
+        "CRM2011-Mui-KB2855319-ENU-amd64.exe",
+        "CRM2011-Client-KB2855319-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.9 MB",
+        "44.2 MB",
+        "134.0 MB",
+        "43.1 MB",
+        "44.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n<b>Prerequisites:</b>\n<br/>\r\n<br/>\r\nCRM server\r\n<ul>\n        <li>This update must be installed on a computer that is running Microsoft Dynamics CRM 2011 Update Rollup 11 (UR 11) or earlier.</li>\r\n        <li>Customers currently running Update Rollup 12 (UR 12) or later don\u2019t need to load this critical update and shouldn\u2019t downgrade from their current CRM deployment.</li>\r\n        <li>This update requires Microsoft .NET Framework 4.</li>\r\n</ul>\r\n<br/>\r\n<br/>\r\nCRM for Outlook (Outlook client)\r\n<ul>\r\n        <li>This Microsoft Dynamics CRM for Outlook client update is designed to function with CRM UR 11, UR 12, UR 13 and UR 14.</li>\r\n        <li>Customers experiencing CRM for Outlook client stability issues should strongly consider moving to this critical client update.</li>\r\n        <li>This update requires Microsoft .NET Framework 4.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\n      Click the file you want to download from the list below.<br /><br />\n      <b>Important:</b> The language pack must be installed before you can apply the update rollup for that language pack. Download and install a language pack at <a HREF=\"http://go.microsoft.com/fwlink/?LinkId=234059\">Microsoft Dynamics CRM 2011 Language Pack</a>. <br /><br />\n\n      <br />\n\n      To install this critical update, do one of the following:<br />\n      <ul>\n        <li>To start the installation immediately, click Run.</li>\n        <li>To save the download to your computer for installation later, click Save. </li>\n        <li>To cancel the installation, click Cancel.</li>\n      </ul>\n    ",
+    "additionalInformationSection": "\n      <b>Components also installed with this critical update</b>\n      <br />\n      The following components, if not already installed, will be installed when you apply this update rollup:\n      <ul>\n        <li>Visual C++ 2010 runtime</li>\n        <li>ReportViewer 2010 control</li>\n        <li>SQL CE 4.0</li>\n      </ul>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "updating Microsoft Dynamics CRM 2011",
+            "url": "http://technet.microsoft.com/en-us/library/hh699658.aspx"
+        },
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2011 Update Rollup 6",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=28712"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39691",
+    "downloadPreload": true
+}

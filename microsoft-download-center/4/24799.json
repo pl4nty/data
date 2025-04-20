@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Communications Server 2007 Datasheet",
+    "downloadDescription": "An overview of features and functionality in Office Communications Server 2007",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OfficeCommunicationsServer2007Datasheet.docx",
+            "url": "https://download.microsoft.com/download/4/4/4/444851ca-6d85-4e8c-8417-dbde9dccb829/OfficeCommunicationsServer2007Datasheet.docx",
+            "size": "451716",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeCommunicationsServer2007Datasheet.doc",
+            "url": "https://download.microsoft.com/download/4/4/4/444851ca-6d85-4e8c-8417-dbde9dccb829/OfficeCommunicationsServer2007Datasheet.doc",
+            "size": "672256",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Microsoft Office Communications Server 2007 delivers streamlined communications for your users so they can find and communicate with the right person, right now, from the applications they use most (like Microsoft Office Outlook).  Without expensive infrastructure and network upgrades, you can deliver streamlined communications, including software-powered VoIP, Web conferencing and enterprise instant messaging, while maintaining the operational control required.<br />\n<br />\nDownload the datasheet to read more.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "OfficeCommunicationsServer2007Datasheet.docx",
+        "OfficeCommunicationsServer2007Datasheet.doc"
+    ],
+    "detailsSection_file_size": [
+        "441.1 KB",
+        "656.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br><ul><li>To view the white paper in Word 2007 format (.docx), you will need <a href=\"http://www.microsoft.com/office/word\">Microsoft Office Word 2007</a>.</li>\n<li>To view the white paper in other Word formats (.doc), you will need a version of Microsoft Office Word.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<br></br><b>To download this document:</b>\n<ol>\n<li>Download the file by clicking the appropriate <b>Download</b> link below.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24799",
+    "downloadPreload": true
+}

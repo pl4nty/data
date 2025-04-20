@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project Server 2013 Upgrade Process",
+    "downloadDescription": "This model illustrates the steps required to upgrade from Project Server 2010 to Project Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "project-server-upgrade-process.pdf",
+            "url": "https://download.microsoft.com/download/9/6/2/962cd38b-93eb-4dbb-a6a8-3c5ccf59374e/project-server-upgrade-process.pdf",
+            "size": "340414",
+            "version": "2",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "project-server-upgrade-process.vsd",
+            "url": "https://download.microsoft.com/download/9/6/2/962cd38b-93eb-4dbb-a6a8-3c5ccf59374e/project-server-upgrade-process.vsd",
+            "size": "2127872",
+            "version": "2",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This model illustrates the steps required to use the database attach upgrade method to upgrade from Project Server 2010 to Project Server 2013. Use this model to provide an overview of how to plan and prepare for upgrade, copy and move your Project Server 2010 databases to the new environment, and upgrade your databases and Project Web App site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "project-server-upgrade-process.pdf",
+        "project-server-upgrade-process.vsd"
+    ],
+    "detailsSection_file_size": [
+        "332.4 KB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30446",
+    "downloadPreload": true
+}

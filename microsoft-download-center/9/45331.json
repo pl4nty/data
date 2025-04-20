@@ -1,0 +1,217 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Power BI Desktop",
+    "downloadDescription": "THIS DOWNLOAD PAGE HAS BEEN DEPRECATED. PLEASE VISIT https://aka.ms/pbiSingleInstaller TO DOWNLOAD THE LATEST RELEASE OF POWER BI DESKTOP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PowerBIDesktop.txt",
+            "url": "https://download.microsoft.com/download/9/b/a/9baeffef-1a68-4102-8cdf-5d28bffe6a61/PowerBIDesktop.txt",
+            "size": "134",
+            "version": "2.72.5556.801",
+            "datePublished": "3/19/2025 10:41:23 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        }
+    ],
+    "detailsSection": "Microsoft Power BI Desktop is a companion desktop application to <a href=\"http://go.microsoft.com/fwlink/?LinkID=522474\">Power BI</a>.\n<br /><br />\nWith Power BI Desktop, you can:\n\n<ul>\n <li>Get data\n  <ul>\n   <li>The Power BI Desktop makes discovering data easy. You can import data from a wide variety of data sources. After you connect to a data source, you can shape the data to match your analysis and reporting needs. </li>\n  </ul>\n </li>\n \n <li>Create relationships and enrich your data model with new measures and data formats\n  <ul>\n   <li>When you import two or more tables, oftentimes you'll need to create relationships between those tables. The Power BI Desktop includes the Manage Relationships dialog and the Relationships view, where you can use Autodetect to let the Power BI Desktop find and create any relationships, or you can create them yourself. You can also very easily create your own measures and calculations or customize data formats and categories to enrich your data for additional insights. </li>\n  </ul>\n </li>\n \n <li>Create reports\n  <ul>\n   <li>The Power BI Desktop includes the Report View. Select the fields you want, add filters, choose from dozens of visualizations, format your reports with custom colors, gradients and several other options. The Report View gives you the same great report and visualizations tools just like when creating a report on PowerBI.com. </li>\n  </ul>\n </li>\n\n <li>Save your reports\n  <ul>\n   <li>With the Power BI Desktop, you can save your work as a Power BI Desktop file. Power BI Desktop files have a .pbix extension.</li>\n  </ul>\n </li>\n <li>Upload or Publish your reports\n  <ul>\n   <li>You can upload the reports you created and saved in the Desktop to your Power BI site. You can also publish them to Power BI right from Power BI Desktop.</li>\n  </ul>\n </li>\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.72.5556.801",
+    "detailsSection_file_name": [
+        "PowerBIDesktop.txt"
+    ],
+    "detailsSection_file_size": [
+        "134 bytes"
+    ],
+    "detailsSection_file_date": "3/19/2025",
+    "systemRequirementsSection": "Microsoft Power BI Desktop requires Internet Explorer 10 or greater.\n<br />\n<br />\nMicrosoft Power BI Desktop is available for 32-bit (x86) and 64-bit (x64) platforms.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the version of Power BI Desktop that matches the architecture (x86 or x64) of your Windows OS. Run the MSI installer and follow the setup steps.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45331",
+    "downloadPreload": true
+}

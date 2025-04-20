@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2013 CU23 (KB4593466)",
+    "downloadDescription": "Security Update For Exchange Server 2013 CU23 (KB4593466)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2013-KB4593466-x64-en.msp",
+            "url": "https://download.microsoft.com/download/9/a/7/9a7ae8a7-bd7b-47fd-9aed-8365163c5fb9/Exchange2013-KB4593466-x64-en.msp",
+            "size": "82059264",
+            "version": "15.00.1497.010",
+            "datePublished": "7/15/2024 4:27:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4593466",
+        "name": "4593466"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.00.1497.010",
+    "detailsSection_file_name": [
+        "Exchange2013-KB4593466-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "78.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7 Professional 64-bit",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102518",
+    "downloadPreload": true
+}

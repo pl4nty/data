@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "MapPoint Streets and Trips 2005 Construction Update",
+    "downloadDescription": "Download the latest construction data to keep your maps current.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConstructionA4052609.dat",
+            "url": "https://download.microsoft.com/download/a/d/e/adee0969-9311-4ee1-8a7b-abb3e01e6875/ConstructionA4052609.dat",
+            "size": "147",
+            "version": "2005",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the latest road construction data to keep your Streets and Trips 2005 maps current.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2005",
+    "detailsSection_file_name": [
+        "ConstructionA4052609.dat"
+    ],
+    "detailsSection_file_size": [
+        "147 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 2",
+        "Windows ME",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI> Close Streets & Trips.</LI><br />\n<LI>Click the <b>Download</b> link to start the download.</LI><br />\n<LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI><br />\n<LI>Save the file in the Data folder, located where you installed the program files for Streets & Trips. For example, <b>C:\\Program Files\\Microsoft Streets & Trips\\Data\\</b>.</LI><br />\n<LI>Restart Streets &  Trips.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11074",
+    "downloadPreload": true
+}

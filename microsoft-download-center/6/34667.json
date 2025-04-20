@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: Inventory Control",
+    "downloadDescription": "This document explains how to set up inventory preferences and records, and how to enter and post transactions and work with stock counts. It also contains information about reporting, year-end closing, and inventory reconciliation and adjustments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Inventory.pdf",
+            "url": "https://download.microsoft.com/download/0/d/5/0d572cf9-b7a9-4628-8020-1460756659da/Inventory.pdf",
+            "size": "3955978",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use Inventory Control to help manage your company\u2019s inventoried items. Many Inventory Control tasks help you create records for your items, such as how the items are to be tracked and what pricing should be used for the items that are\r\nsold.<br />\r\n\r\nYou also can use Inventory Control to complete the following tasks:\r\n<br />\n\r\n<UL><LI>Enter and post adjustment transactions and variance transactions individually or in batches</LI>\n<LI>Enter and post transfer transactions individually or in batches</LI>\r\n<LI>Complete stock counts, which include both cycle counts and physical inventory counts</LI>\r\n<LI>Use ABC analysis to prioritize items</LI>\r\n<LI>Print the Historical Stock Status Report</LI>\r\n<LI>Trace the life cycle of a serial number or lot number</LI>\r\n<LI>Track a single inventory item across multiple bins within the warehouse</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "Inventory.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer. When prompted for a location for the file, save the file to the Documentation folder in your Microsoft Dynamics GP 2013 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2013\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing file, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34667",
+    "downloadPreload": true
+}

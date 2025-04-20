@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Common Criteria Supplemental Admin Guidance for Windows 7 and Windows Server 2008 R2",
+    "downloadDescription": "This is the supplemental administrator guidance documentation that was used in the Common Criteria evaluation of Windows 7 and Windows Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance (Revision A).docx",
+            "url": "https://download.microsoft.com/download/8/4/3/8433e55f-03c7-4663-bd2f-c0762cfb1ef6/Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance (Revision A).docx",
+            "size": "161566",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance.docx",
+            "url": "https://download.microsoft.com/download/8/4/3/8433e55f-03c7-4663-bd2f-c0762cfb1ef6/Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance.docx",
+            "size": "172425",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance.xps",
+            "url": "https://download.microsoft.com/download/8/4/3/8433e55f-03c7-4663-bd2f-c0762cfb1ef6/Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance.xps",
+            "size": "1475469",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Common Criteria Supplemental Admin Guidance document describes how to setup Windows 7 and Windows Server 2008 R2 to meet the same security conditions used by the Common Criteria (CC) evaluation. It supplements the Windows 7 Security Guide and Windows Server 2008 R2 Security Guide published by Microsoft. These guides are available in the Microsoft Security Compliance Manager (http://go.microsoft.com/fwlink/?LinkId=113939). The Common Criteria Supplemental Admin Guidance for Windows 7 and Windows Server 2008 R2 is primarily for IT professionals, security specialists, network architects, computer engineers, and other IT consultants who plan application or infrastructure development and deployments of Windows Server 2008 R2 for servers in an enterprise environment. It is not intended for home users.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance (Revision A).docx",
+        "Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance.docx",
+        "Windows 7 - WS08 R2 Common Criteria Supplemental Admin Guidance.xps"
+    ],
+    "detailsSection_file_size": [
+        "157.8 KB",
+        "168.4 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.<br />\r\n2. Do one of the following:<br />\r\n     a. To read the file immediately, click the Open button.<br />\r\n     b. To copy the file to your computer for later use, click the Save button.<br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Platform Common Criteria Certification",
+            "url": "http://technet.microsoft.com/en-us/library/dd229319.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9874",
+    "downloadPreload": true
+}

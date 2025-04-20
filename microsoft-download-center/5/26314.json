@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Brazil for Hotfix Rollup 7",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 7, and that is specific to users in Brazil.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RU7_Country_specific_update_for_Brazil.xps",
+            "url": "https://download.microsoft.com/download/c/a/9/ca96fd77-6248-4366-9e0f-b440e8aa12d7/RU7_Country_specific_update_for_Brazil.xps",
+            "size": "401141",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "RU7_Country_specific_update_for_Brazil.pdf",
+            "url": "https://download.microsoft.com/download/c/a/9/ca96fd77-6248-4366-9e0f-b440e8aa12d7/RU7_Country_specific_update_for_Brazil.pdf",
+            "size": "300976",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Brazil in hotfix rollup 7 for Microsoft Dynamics AX 2009 SP1.<br /><br />\r\nCompanies that have multiple subsidiaries can transfer transactions from each subsidiary to a consolidated account. The transaction details, such as the name of the subsidiary company, the original voucher number, and the original transaction text, are transferred from the subsidiary company to the consolidated company. You can consolidate the transactions, and then periodically generate related reports.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2503850. For more information about other features that apply to Brazil, refer to the Applications and Business Processes Help. Information that is specific to Brazil includes (BRA) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "RU7_Country_specific_update_for_Brazil.xps",
+        "RU7_Country_specific_update_for_Brazil.pdf"
+    ],
+    "detailsSection_file_size": [
+        "391.7 KB",
+        "293.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26314",
+    "downloadPreload": true
+}

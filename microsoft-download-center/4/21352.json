@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Application Integration Framework (AIF) BizTalk Adapter Configuration for Data Exchange, Part II",
+    "downloadDescription": "This white paper provides instructions for updating and deleting sales orders in AIF from BizTalk.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AIF BizTalk Adapter Configuration for Data Exchange Part II.pdf",
+            "url": "https://download.microsoft.com/download/7/d/0/7d01de23-53f1-4951-bd65-ee12cb6f4d0c/AIF BizTalk Adapter Configuration for Data Exchange Part II.pdf",
+            "size": "1449808",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AIF BizTalk Adapter Configuration for Data Exchange Part II.xps",
+            "url": "https://download.microsoft.com/download/7/d/0/7d01de23-53f1-4951-bd65-ee12cb6f4d0c/AIF BizTalk Adapter Configuration for Data Exchange Part II.xps",
+            "size": "1877729",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides hands-on instructions for reading, updating, and deleting a sales order from BizTalk. This white paper is an extension of the Microsoft Dynamics AX 2009 AIF BizTalk Adapter Configuration white paper. This paper is designed for BizTalk developers and Microsoft Dynamics AX system administrators who are responsible for installing, configuring, and troubleshooting integrations with external systems using AIF and BizTalk Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "AIF BizTalk Adapter Configuration for Data Exchange Part II.pdf",
+        "AIF BizTalk Adapter Configuration for Data Exchange Part II.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21352",
+    "downloadPreload": true
+}

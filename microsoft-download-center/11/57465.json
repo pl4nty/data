@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Migrating from Teradata to Azure SQL Data Warehouse",
+    "downloadDescription": "Migrating from Teradata to Azure SQL Data Warehouse",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrating from Teradata to Azure SQL Data Warehouse v1.2.pdf",
+            "url": "https://download.microsoft.com/download/2/1/7/2177015d-1185-41e1-b08b-b26f6b237fc4/Migrating from Teradata to Azure SQL Data Warehouse v1.2.pdf",
+            "size": "3544966",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:04:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document gives insight into how to approach a Teradata to Azure SQL Data Warehouse migration.\r\nThis whitepaper is broken into sections which detail the migration phases, the preparation required for data migration including schema migration, migration of the business logic, the actual data migration approach and testing strategy. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Migrating from Teradata to Azure SQL Data Warehouse v1.2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To start the download, click Download, click Go, and then do one of the following: To start the installation immediately, click Open or Run this program from its current location. To copy the download to your computer for installation at a later time, click Save or Save this program to disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57465",
+    "downloadPreload": true
+}

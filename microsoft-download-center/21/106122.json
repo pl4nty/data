@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "title",
+    "downloadDescription": "short desc",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "testfile.txt",
+            "url": "https://download.microsoft.com/download/c/6/f/c6f6f764-e856-4055-a889-7224dcf77b22/testfile.txt",
+            "size": "550",
+            "version": "1.234",
+            "datePublished": "6/26/2024 7:03:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "long desc",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.234",
+    "detailsSection_file_name": [
+        "testfile.txt"
+    ],
+    "detailsSection_file_size": [
+        "550 bytes"
+    ],
+    "detailsSection_file_date": "6/26/2024",
+    "systemRequirementsSection": "sys reqs",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 5.0"
+    ],
+    "installInstructionSection": "insts",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106122",
+    "downloadPreload": true
+}

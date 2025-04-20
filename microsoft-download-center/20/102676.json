@@ -1,0 +1,237 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 21 for Microsoft Dynamics 365 Business Central Spring 2019 ",
+    "downloadDescription": "Update for Microsoft Dynamics 365 Business Central Spring 2019",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update W1.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update W1.zip",
+            "size": "1062079526",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update SE.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update SE.zip",
+            "size": "1077432354",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update RU.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update RU.zip",
+            "size": "1113967851",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update NZ.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update NZ.zip",
+            "size": "1068398528",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update NO.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update NO.zip",
+            "size": "1083183811",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update NL.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update NL.zip",
+            "size": "1087587432",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update NA.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update NA.zip",
+            "size": "1201794504",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update IT.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update IT.zip",
+            "size": "1085283589",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update IS.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update IS.zip",
+            "size": "1082403379",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update GB.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update GB.zip",
+            "size": "1065352368",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update FR.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update FR.zip",
+            "size": "1086494503",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update FI.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update FI.zip",
+            "size": "1086098220",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update ES.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update ES.zip",
+            "size": "1092384613",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update DK.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update DK.zip",
+            "size": "1088119588",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update DE.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update DE.zip",
+            "size": "1087915606",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update CZ.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update CZ.zip",
+            "size": "1090127933",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update CH.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update CH.zip",
+            "size": "1137157984",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update BE.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update BE.zip",
+            "size": "1112336677",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update AU.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update AU.zip",
+            "size": "1070980903",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 21 Dynamics 365 Business Central Spring 19 Update AT.zip",
+            "url": "https://download.microsoft.com/download/4/7/3/473ba65a-001b-404f-8c4e-fce609674239/CU 21 Dynamics 365 Business Central Spring 19 Update AT.zip",
+            "size": "1084697984",
+            "version": "46358",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about other released updates for Microsoft Dynamics 365 Business Central, please see this kb article: https://support.microsoft.com/en-us/help/4501292  \r\nTo learn more about what is included in this update please visit this kb article: https://support.microsoft.com/en-us/help/5000693",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5000693",
+        "name": "5000693"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "46358",
+    "detailsSection_file_name": [
+        "CU 21 Dynamics 365 Business Central Spring 19 Update W1.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update SE.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update RU.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update NZ.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update NO.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update NL.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update NA.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update IT.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update IS.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update GB.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update FR.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update FI.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update ES.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update DK.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update DE.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update CZ.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update CH.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update BE.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update AU.zip",
+        "CU 21 Dynamics 365 Business Central Spring 19 Update AT.zip"
+    ],
+    "detailsSection_file_size": [
+        "1012.9 MB",
+        "1.0 GB",
+        "1.0 GB",
+        "1018.9 MB",
+        "1.0 GB",
+        "1.0 GB",
+        "1.1 GB",
+        "1.0 GB",
+        "1.0 GB",
+        "1016.0 MB",
+        "1.0 GB",
+        "1.0 GB",
+        "1.0 GB",
+        "1.0 GB",
+        "1.0 GB",
+        "1.0 GB",
+        "1.1 GB",
+        "1.0 GB",
+        "1021.4 MB",
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements can be found at https://docs.microsoft.com/en-us/dynamics365/business-central/product-requirements",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "How to install this update: https://support.microsoft.com/en-us/help/4469914",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102676",
+    "downloadPreload": true
+}

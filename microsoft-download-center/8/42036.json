@@ -1,0 +1,742 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 2 for Workflow Manager 1.0 (KB 2902007)",
+    "downloadDescription": "This Cumulative Update introduces support for Service Bus 1.1 and Windows Server 2012 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-cht/Workflow_Manager.msi",
+            "size": "3542016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-cht/WorkflowManagerTools_x86.msi",
+            "size": "2862592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-cht/WorkflowManagerTools_x64.msi",
+            "size": "2860032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-cht/WorkflowManagerClient_x86.msi",
+            "size": "529920",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-cht/WorkflowManagerClient_x64.msi",
+            "size": "528896",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-ZH-CHT.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-cht/WorkflowManager-KB2902007-x64-ZH-CHT.exe",
+            "size": "2549640",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-chs/Workflow_Manager.msi",
+            "size": "3542016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-chs/WorkflowManagerTools_x86.msi",
+            "size": "2860032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-chs/WorkflowManagerTools_x64.msi",
+            "size": "2861568",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-chs/WorkflowManagerClient_x86.msi",
+            "size": "530432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-chs/WorkflowManagerClient_x64.msi",
+            "size": "529408",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-ZH-CHS.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/zh-chs/WorkflowManager-KB2902007-x64-ZH-CHS.exe",
+            "size": "2547080",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ru/Workflow_Manager.msi",
+            "size": "3561472",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ru/WorkflowManagerTools_x86.msi",
+            "size": "2886656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ru/WorkflowManagerTools_x64.msi",
+            "size": "2886656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ru/WorkflowManagerClient_x86.msi",
+            "size": "537088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ru/WorkflowManagerClient_x64.msi",
+            "size": "537088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-RU.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ru/WorkflowManager-KB2902007-x64-RU.exe",
+            "size": "2550664",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/pt-br/Workflow_Manager.msi",
+            "size": "3549696",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/pt-br/WorkflowManagerTools_x86.msi",
+            "size": "2870272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/pt-br/WorkflowManagerTools_x64.msi",
+            "size": "2873856",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/pt-br/WorkflowManagerClient_x86.msi",
+            "size": "532992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/pt-br/WorkflowManagerClient_x64.msi",
+            "size": "531968",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-PT-BR.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/pt-br/WorkflowManager-KB2902007-x64-PT-BR.exe",
+            "size": "2548624",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ko/Workflow_Manager.msi",
+            "size": "3547648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ko/WorkflowManagerTools_x86.msi",
+            "size": "2870784",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ko/WorkflowManagerTools_x64.msi",
+            "size": "2872832",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ko/WorkflowManagerClient_x86.msi",
+            "size": "532480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ko/WorkflowManagerClient_x64.msi",
+            "size": "532480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-KO.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ko/WorkflowManager-KB2902007-x64-KO.exe",
+            "size": "2550160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ja/Workflow_Manager.msi",
+            "size": "3552256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ja/WorkflowManagerTools_x86.msi",
+            "size": "2879488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ja/WorkflowManagerTools_x64.msi",
+            "size": "2880512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ja/WorkflowManagerClient_x86.msi",
+            "size": "533504",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ja/WorkflowManagerClient_x64.msi",
+            "size": "532480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-JA.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/ja/WorkflowManager-KB2902007-x64-JA.exe",
+            "size": "2548616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/it/Workflow_Manager.msi",
+            "size": "3547648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/it/WorkflowManagerTools_x86.msi",
+            "size": "2870272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/it/WorkflowManagerTools_x64.msi",
+            "size": "2869760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/it/WorkflowManagerClient_x86.msi",
+            "size": "532480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/it/WorkflowManagerClient_x64.msi",
+            "size": "531456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-IT.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/it/WorkflowManager-KB2902007-x64-IT.exe",
+            "size": "2549648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/fr/Workflow_Manager.msi",
+            "size": "3552256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/fr/WorkflowManagerTools_x86.msi",
+            "size": "2878464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/fr/WorkflowManagerTools_x64.msi",
+            "size": "2876928",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/fr/WorkflowManagerClient_x86.msi",
+            "size": "532992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/fr/WorkflowManagerClient_x64.msi",
+            "size": "532992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-FR.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/fr/WorkflowManager-KB2902007-x64-FR.exe",
+            "size": "2549120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/es/Workflow_Manager.msi",
+            "size": "3548160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/es/WorkflowManagerTools_x86.msi",
+            "size": "2870784",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/es/WorkflowManagerTools_x64.msi",
+            "size": "2870784",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/es/WorkflowManagerClient_x86.msi",
+            "size": "531968",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/es/WorkflowManagerClient_x64.msi",
+            "size": "531968",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-ES.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/es/WorkflowManager-KB2902007-x64-ES.exe",
+            "size": "2547592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/en/Workflow_Manager.msi",
+            "size": "3329536",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/en/WorkflowManagerTools_x86.msi",
+            "size": "2725376",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/en/WorkflowManagerTools_x64.msi",
+            "size": "2726400",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/en/WorkflowManagerClient_x86.msi",
+            "size": "501760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/en/WorkflowManagerClient_x64.msi",
+            "size": "501760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-EN.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/en/WorkflowManager-KB2902007-x64-EN.exe",
+            "size": "2540416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Workflow_Manager.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/de/Workflow_Manager.msi",
+            "size": "3552256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/de/WorkflowManagerTools_x86.msi",
+            "size": "2872320",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerTools_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/de/WorkflowManagerTools_x64.msi",
+            "size": "2874880",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x86.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/de/WorkflowManagerClient_x86.msi",
+            "size": "534528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManagerClient_x64.msi",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/de/WorkflowManagerClient_x64.msi",
+            "size": "535552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2902007-x64-DE.exe",
+            "url": "https://download.microsoft.com/download/2/b/1/2b1aac56-68d2-4b03-a102-00cfd9edbc8e/de/WorkflowManager-KB2902007-x64-DE.exe",
+            "size": "2549120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<BR></BR>\r\nThis Cumulative Update adds support for Service Bus 1.1 and Windows Server 2012 R2. Additionally, this updates contains a number of bug fixes.<BR></BR>\r\n\r\nThis update contains fixes for both Workflow Manager 1.0 and/or Workflow Manager Client 1.0. <BR></BR>\r\n\r\nPlease refer to the Knowledge base article for additional details: <A href=\"http://support.microsoft.com/kb/2902007\">KB2902007</A>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-ZH-CHT.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-ZH-CHS.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-RU.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-PT-BR.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-KO.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-JA.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-IT.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-FR.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-ES.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-EN.exe",
+        "Workflow_Manager.msi",
+        "WorkflowManagerTools_x86.msi",
+        "WorkflowManagerTools_x64.msi",
+        "WorkflowManagerClient_x86.msi",
+        "WorkflowManagerClient_x64.msi",
+        "WorkflowManager-KB2902007-x64-DE.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "517.5 KB",
+        "516.5 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "518.0 KB",
+        "517.0 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.8 MB",
+        "2.8 MB",
+        "524.5 KB",
+        "524.5 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "520.5 KB",
+        "519.5 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "520.0 KB",
+        "520.0 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "521.0 KB",
+        "520.0 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "520.0 KB",
+        "519.0 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "520.5 KB",
+        "520.5 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "519.5 KB",
+        "519.5 KB",
+        "2.4 MB",
+        "3.2 MB",
+        "2.6 MB",
+        "2.6 MB",
+        "490.0 KB",
+        "490.0 KB",
+        "2.4 MB",
+        "3.4 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "522.0 KB",
+        "523.0 KB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR></BR>\r\nThis update can be applied to machines that have Workflow Manager 1.0 installed. If the machine has Workflow Manger 1.0 installed, only Workflow Manager will be updated. To update the Workflow Manager Client 1.0, you have to install Workflow Manager Client 1.0 CU2.\r\n<BR></BR><BR></BR><B>Software Requirements: </B><BR></BR>\r\n<OL>\r\n  <LI> Must have <A href=\"http://go.microsoft.com/fwlink/?LinkId=282734\">PowerShell 3.0</A> installed on the computer where you are installing this update </LI>\r\n   <LI> Must have Workflow Manager Client 1.0 installed on the computer where you are installing this update </LI>\r\n   <LI> For machines with Workflow Manager 1.0 installed, additional requirements are:</LI>\r\n    <UL>\r\n  <LI> Must have the <A href=\"http://go.microsoft.com/fwlink/?LinkId=282733\">Cumulative Update for Service Bus 1.0 (KB2799752)</A> installed on the entire computer farm before installing this update for Workflow Manager 1.0</LI>\r\n  <LI> Must have Service Bus 1.0 and Workflow Manager 1.0 installed on the computer where you are installing this update</LI>\r\n  </UL>\r\n</OL><BR></BR>\r\n<B>Supported Operating Systems: </B> Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2<BR></BR>\r\n<UL><LI>Workflow Manager Client 1.0 can also be independently installed on Windows 7, Windows 8, Windows 8.1 and Windows Server 2008 for both x86 and x64</LI>\r\n</UL>\r\n<BR></BR>\r\n<B>Privilege Requirements:</B> Before running the executable, you must have administrative privilege on the computer where you are installing the software. Please refer to <A href=\"http://go.microsoft.com/fwlink/?LinkId=257579\">Workflow Manager 1.0 Documentation</A> for more information. <BR></BR>\r\n<BR></BR>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<BR></BR>\r\nIf the computer has Workflow Manager 1.0 installed, the <A href=\"http://go.microsoft.com/fwlink/?LinkId=282733\">Cumulative Update for Service Bus 1.0 (KB2799752)</A> must be installed on the machine before installing this update (KB2902007)<BR></BR>\r\n<BR></BR>\r\nTo install the update for Workflow Manager 1.0 (KB2902007)\r\n<OL>\r\n<LI>Click the Download button on this page to start the download, or select a different language from the \"Change language\" drop-down list. <BR></BR>\r\n\r\n    Alternatively, you can click Save to download the .exe installer file to your computer. Then, navigate to the location at which you saved the .exe file, double-click the .exe file, and follow the instructions shown in the installer. </LI>\r\n\r\n<LI>This Cumulative Update for Workflow Manager 1.0 can also be installed directly from the Web Platform Installer. This update can be obtained by downloading and using the Web Platform Installer (WebPI), you agree to the license terms and privacy statement for WebPI. This installer will contact Microsoft over the Internet to retrieve product information.</LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42036",
+    "downloadPreload": true
+}

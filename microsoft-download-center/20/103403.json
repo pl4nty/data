@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Defender for Endpoint deployment strategy",
+    "downloadDescription": "Deploy an endpoint detection and response (EDR) solution with Microsoft.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "mde-deployment-strategy.pdf",
+            "url": "https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf",
+            "size": "174603",
+            "version": "1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mde-deployment-strategy.vsdx",
+            "url": "https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx",
+            "size": "292222",
+            "version": "1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide will provide high-level information on prerequisites, design, and configuration options to deploy Microsoft Defender for Endpoint.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "mde-deployment-strategy.pdf",
+        "mde-deployment-strategy.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "170.5 KB",
+        "285.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10, Windows Server, Android, Linux, iOS, or macOS",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Linux"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103403",
+    "downloadPreload": true
+}

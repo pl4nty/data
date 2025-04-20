@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Telemetry in Office 2013: A new way to Assess Office Compatibility",
+    "downloadDescription": "This poster explains and illustrates what Office Telemetry is, what's monitored in Office 2013, and how telemetry data is collected. It also lists and describes all the components of Office Telemetry.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office_Compat_RTM.vsd",
+            "url": "https://download.microsoft.com/download/5/3/f/53fce083-2847-4b68-8c42-e5af3c6cc6bc/Office_Compat_RTM.vsd",
+            "size": "1138688",
+            "version": "1",
+            "datePublished": "7/15/2024 3:32:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Office_Compat_RTM.pdf",
+            "url": "https://download.microsoft.com/download/5/3/f/53fce083-2847-4b68-8c42-e5af3c6cc6bc/Office_Compat_RTM.pdf",
+            "size": "708791",
+            "version": "1",
+            "datePublished": "7/15/2024 3:32:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster explains and illustrates what Office Telemetry is, what's monitored in Office 2013, and how telemetry data is collected. It also lists and describes all the components of Office Telemetry.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Office_Compat_RTM.vsd",
+        "Office_Compat_RTM.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "692.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34991",
+    "downloadPreload": true
+}

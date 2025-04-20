@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Sweden for Hotfix Rollup 7",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 7, and that is specific to users in Sweden.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RU7_Country_specific_update_for_Sweden.pdf",
+            "url": "https://download.microsoft.com/download/e/a/6/ea643239-3c2f-4d4a-bb52-048a4e7383c7/RU7_Country_specific_update_for_Sweden.pdf",
+            "size": "326232",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RU7_Country_specific_update_for_Sweden.xps",
+            "url": "https://download.microsoft.com/download/e/a/6/ea643239-3c2f-4d4a-bb52-048a4e7383c7/RU7_Country_specific_update_for_Sweden.xps",
+            "size": "388110",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Sweden in hotfix rollup 7 for Microsoft Dynamics AX 2009 SP1.<br /><br />\r\nThe Bank Giro Centralen (BGC) of Sweden has updated the Bankgirot (BG) direct debit payment format to include refund requests. By using the updated format, you can request and receive a refund of a non-approved or incorrect direct debit payment. Microsoft Dynamics AX 2009 accommodates both the new and previous direct debit payment formats. You can export the direct debit payment details to the BG direct debit payment file and import the direct debit payment returns to a general journal for validation and posting. Additionally, the new BG direct debit payment format has replaced the Postgirot Autogiro (SE) payment format, and the BG Max format has replaced the Bankgirot Automatisk avprickning (SE) customer payment format.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2503850. For more information about other features that apply to Sweden, refer to the Applications and Business Processes Help. Information that is specific to Sweden includes (SWE) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "RU7_Country_specific_update_for_Sweden.pdf",
+        "RU7_Country_specific_update_for_Sweden.xps"
+    ],
+    "detailsSection_file_size": [
+        "318.6 KB",
+        "379.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20892",
+    "downloadPreload": true
+}

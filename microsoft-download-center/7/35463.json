@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "UCMA 4.0 SDK",
+    "downloadDescription": "Unified Communications Managed API (UCMA) 4.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft\u2019s Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UcmaSdkSetup.exe",
+            "url": "https://download.microsoft.com/download/e/f/1/ef1d0030-fef7-4fa7-804c-1f82caaa127f/UcmaSdkSetup.exe",
+            "size": "329928176",
+            "version": "8308.291",
+            "datePublished": "7/15/2024 3:30:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download was originally released on Oct. 29, 2012.\r\n<br/><br/>\r\nUnified Communications Managed API (UCMA) 4.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft\u2019s Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing. In addition to text conversations, UCMA 4.0 supports speech-technology enabled voice conversations and collaboration. UCMA 4.0 supports the development of server side, middle-tier applications targeting Microsoft Lync 2013 and Microsoft Lync Server 2013. UCMA 4.0 contains a SIP stack, a media stack, and speech engines for both automatic speech recognition (ASR) as well as speech synthesis (TTS). \r\n<br/><br/>\r\nUCMA 4.0 can be used to add communications capabilities to your business software and processes and can be used to create outbound applications such as alerts or notifications and surveys, inbound speech-technology enabled interactive voice response applications, and automated agents known as query-response bots. UCMA 4.0 API provides access to Lync Server 2013 presence information and can be used to build role agents that use Enhanced Presence information to streamline communications between people. \r\n<br/><br/>\r\nAdvanced UCMA 4.0 scenarios can be used to develop various applications: \r\n<ul>\r\n<li>Automated Call Distributors that perform skill-based routing.</li>\r\n<li>Call recording.</li>\r\n<li>Conferencing services such as conference access control.</li>\r\n<li>Custom client gateways that interface with, for example, other communications networks, Interactive Voice Response platforms, and speech servers using the Microsoft ASR and TTS engines.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8308.291",
+    "detailsSection_file_name": [
+        "UcmaSdkSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "314.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><br/>\r\n<b>Microsoft Visual Studio development system</b>\r\n<ul>\r\n<li>Microsoft Visual Studio 2010 SP1 and above</li>\r\n</ul>\r\n<br/>\r\n<b>Notes: </b>\r\n<ul>\r\n<li>The UCMA 4.0 SDK requires the Microsoft .NET Framework 4.5 to be installed.</li>\r\n<li>Side-by-side installations of UCMA 4.0 with previous versions is not supported.</li>\r\n<li>In order to be able to install the UCMA 4.0 SDK on Windows Server 2008 R2, the Windows Server 2008 R2 feature of Desktop Experience needs to be installed and enabled.</li>\r\n<li>In order to be able to install the UCMA 4.0 SDK on Windows Server 2012, the Windows Server 2012 Media Foundation feature needs to be installed.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>UCMA 4.0 SDK Installation </b>\r\n<ol>\r\n<li>Download UcmaSdkSetup.exe.</li>\r\n<li>Launch UcmaSdkSetup.exe with elevated privileges and follow the instructions to complete the installation.</li>\r\n</ol>\r\nNote: By default, UCMA 4.0 SDK is installed in the %Program Files%\\Microsoft UCMA 4.0 directory.\r\n<br/><br/>\r\nUCMA 4.0 SDK is 64-bit only.\r\n<br/><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35463",
+    "downloadPreload": true
+}

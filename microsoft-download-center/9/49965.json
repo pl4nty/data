@@ -1,0 +1,287 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Technical Preview 4 Virtual Machine Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-17.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-17.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-16.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-16.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-14.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-14.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-4.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD.exe",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD.exe",
+            "size": "353304",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-11.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-20.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-20.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-22.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-22.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-21.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-21.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-3.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-5.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VMMTP_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/VMMTP_VHDEVAL.docx",
+            "size": "57111",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-13.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-2.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-10.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-7.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-15.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-15.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-12.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-23.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-23.bin",
+            "size": "452614432",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-8.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-1.bin",
+            "size": "735662592",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-18.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-18.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-6.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-9.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP4_SCVMM_VHD-19.bin",
+            "url": "https://download.microsoft.com/download/4/f/1/4f189b10-49e0-4d9c-b5e9-c823c714da2f/SCTP4_SCVMM_VHD-19.bin",
+            "size": "736000000",
+            "version": "TP4",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center Technical Preview 4 and Windows Server Technical Preview 4. For detailed information about each component, see the component documentation included with these download files.<br />\n<br />\nSystem Center Technical Preview 4 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=a0c1ce5f-f094-41fa-bb05-21e6531e7be9\">System Center Technical Preview 4 Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=6035dab5-b152-4091-aef6-b10d57706472\">System Center Technical Preview 4 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f848a58e-6375-42bd-b5cd-3eb93c425dea\">System Center Technical Preview 4 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=38aee576-ccfb-4f37-b7cb-61d1902c541f\">System Center Technical Preview 4 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f64bf79c-ce4e-498c-9968-118915fd1111\">System Center Technical Preview 4 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "TP4",
+    "detailsSection_file_name": [
+        "SCTP4_SCVMM_VHD-17.bin",
+        "SCTP4_SCVMM_VHD-16.bin",
+        "SCTP4_SCVMM_VHD-14.bin",
+        "SCTP4_SCVMM_VHD-4.bin",
+        "SCTP4_SCVMM_VHD.exe",
+        "SCTP4_SCVMM_VHD-11.bin",
+        "SCTP4_SCVMM_VHD-20.bin",
+        "SCTP4_SCVMM_VHD-22.bin",
+        "SCTP4_SCVMM_VHD-21.bin",
+        "SCTP4_SCVMM_VHD-3.bin",
+        "SCTP4_SCVMM_VHD-5.bin",
+        "VMMTP_VHDEVAL.docx",
+        "SCTP4_SCVMM_VHD-13.bin",
+        "SCTP4_SCVMM_VHD-2.bin",
+        "SCTP4_SCVMM_VHD-10.bin",
+        "SCTP4_SCVMM_VHD-7.bin",
+        "SCTP4_SCVMM_VHD-15.bin",
+        "SCTP4_SCVMM_VHD-12.bin",
+        "SCTP4_SCVMM_VHD-23.bin",
+        "SCTP4_SCVMM_VHD-8.bin",
+        "SCTP4_SCVMM_VHD-1.bin",
+        "SCTP4_SCVMM_VHD-18.bin",
+        "SCTP4_SCVMM_VHD-6.bin",
+        "SCTP4_SCVMM_VHD-9.bin",
+        "SCTP4_SCVMM_VHD-19.bin"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "345.0 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "55.8 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "431.6 MB",
+        "701.9 MB",
+        "701.6 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cVMMTP_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCTP4_SCVMM_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49965",
+    "downloadPreload": true
+}

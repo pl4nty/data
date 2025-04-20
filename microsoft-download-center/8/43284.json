@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 White Paper: Reservations in Warehouse Management",
+    "downloadDescription": "This white paper describes the new functionality for reservations that is introduced in Warehouse Management for Microsoft Dynamics AX R3.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Reservations in Warehouse management for Dynamics AX 2012 R3 - .pdf",
+            "url": "https://download.microsoft.com/download/4/3/8/438af605-54aa-4588-b46b-23fb6a9ad147/Reservations in Warehouse management for Dynamics AX 2012 R3 - .pdf",
+            "size": "807170",
+            "version": "AX 2012 R3",
+            "datePublished": "7/15/2024 3:40:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the new functionality for reservations that is introduced in Warehouse Management for Microsoft Dynamics AX R3. Intended for IT pros and developers, the descriptions cover new features such as reservation hierarchies and reservation strategies, and provide technical information about how they are implemented. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX 2012 R3",
+    "detailsSection_file_name": [
+        "Reservations in Warehouse management for Dynamics AX 2012 R3 - .pdf"
+    ],
+    "detailsSection_file_size": [
+        "788.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43284",
+    "downloadPreload": true
+}

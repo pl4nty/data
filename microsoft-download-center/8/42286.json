@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft DevNodeClean",
+    "downloadDescription": "Remove registry entries for orphaned storage devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "devnodeclean.zip",
+            "url": "https://download.microsoft.com/download/b/c/6/bc670519-7ea1-44be-8b5c-6ff83a7ff96c/devnodeclean.zip",
+            "size": "650050",
+            "version": "2.0.0.1",
+            "datePublished": "7/15/2024 3:23:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "On a computer that is running Windows Server 2003 or a later version, a storage device that is connected by using a fiber channel or by using the iSCSI protocol may be connected for only a short time. When a storage device is connected, Windows creates registry information for the device. Over time, the registry may contain many entries for devices that will never be used again. This utility can be used to remove this information from the registry. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0.1",
+    "detailsSection_file_name": [
+        "devnodeclean.zip"
+    ],
+    "detailsSection_file_size": [
+        "634.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 editions\r\nWindows Server 2003 R2 editions\r\nWindows Server 2008 editions\r\nWindows Server 2008 R2 editions\r\nWindows Server 2012 editions\r\nWindows Server 2012 R2 editions",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "At a command prompt, type the following command, and then press ENTER:\r\n \r\ndevnodeclean /n \r\n\r\nNote: This command lists the registry entries for orphaned storage devices that can be cleaned up.\r\n\r\ndevnodeclean\r\n\r\nNote: This command removes the registry entries for orphaned storage devices.",
+    "relatedResourcesSection": [
+        {
+            "title": "934234 How to remove registry information about devices that will never be used again on a computer that is running Windows Server 2003 or a later version",
+            "url": "http://support.microsoft.com/kb/934234"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42286",
+    "downloadPreload": true
+}

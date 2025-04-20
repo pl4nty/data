@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Software Asset Management (SAM)",
+    "downloadDescription": "Software Asset Management & Piracy Protection",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SAMGuide.pdf",
+            "url": "https://download.microsoft.com/download/f/8/5/f859245b-f740-4168-8dbb-a92d72a62f6d/SAMGuide.pdf",
+            "size": "1218143",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Software Asset Management & Piracy Protection - find information on implementing best practices around managing your software.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SAMGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31382",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Migration Assistant for Datazen",
+    "downloadDescription": "This tool is designed to help organizations migrate their existing Datazen Server content, including dashboards and KPI\u2019s, to a SQL Server 2016 Reporting Services server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.DatazenRSMigration.msi",
+            "url": "https://download.microsoft.com/download/5/7/d/57d13ebe-3712-4a1b-b630-b9a3b394c9a5/Microsoft.DatazenRSMigration.msi",
+            "size": "12578816",
+            "version": "1.0.1228",
+            "datePublished": "7/15/2024 4:12:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool is designed to help organizations migrate their existing Datazen Server content, including dashboards and KPI\u2019s, to a SQL Server 2016 Reporting Services server.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1228",
+    "detailsSection_file_name": [
+        "Microsoft.DatazenRSMigration.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>.NET Framework 4.0 (or later)</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click Download.</li>\r\n<li>When the File Download dialog box appears, click Save to save the file to your computer.</li>\r\n<li>When you are ready to install the product, double-click the downloaded file, and then follow the instructions on the screen.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53128",
+    "downloadPreload": true
+}

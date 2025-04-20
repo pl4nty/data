@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Campaign Materials",
+    "downloadDescription": "This zipped folder includes campaign materials like banner ads, search keywords, print ad templates, email templates etc. for CSP partners interested in launching Hybrid IaaS offers on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Campaign materials.zip",
+            "url": "https://download.microsoft.com/download/5/0/c/50cd5b7d-f5bb-4775-8020-5e941856ed75/Campaign materials.zip",
+            "size": "21129781",
+            "version": "January 2014",
+            "datePublished": "5/15/2024 4:01:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes campaign materials like banner ads, search keywords, print ad templates, email templates etc. for CSP partners interested in launching Hybrid IaaS offers on Azure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Campaign materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "20.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50747",
+    "downloadPreload": true
+}

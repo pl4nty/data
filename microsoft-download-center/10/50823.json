@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Insider Program \u2013 Ninja Monkey       ",
+    "downloadDescription": "Windows Insider Program \u2013 Ninja Monkey       ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_Insider_Ninjamonkey_DIY.ZIP",
+            "url": "https://download.microsoft.com/download/4/3/8/43832fc5-ca29-4f7c-a687-c8869e33a499/Windows_Insider_Ninjamonkey_DIY.ZIP",
+            "size": "635974",
+            "version": "Windows",
+            "datePublished": "6/13/2024 12:46:17 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows_Insider_Ninjamonkey_Phone.zip",
+            "url": "https://download.microsoft.com/download/4/3/8/43832fc5-ca29-4f7c-a687-c8869e33a499/Windows_Insider_Ninjamonkey_Phone.zip",
+            "size": "595660",
+            "version": "Windows",
+            "datePublished": "6/13/2024 12:46:17 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows_Insider_Ninjamonkey_Band.zip",
+            "url": "https://download.microsoft.com/download/4/3/8/43832fc5-ca29-4f7c-a687-c8869e33a499/Windows_Insider_Ninjamonkey_Band.zip",
+            "size": "34639",
+            "version": "Windows",
+            "datePublished": "6/13/2024 12:46:17 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows_Insider_Ninjamonkey_PC.zip",
+            "url": "https://download.microsoft.com/download/4/3/8/43832fc5-ca29-4f7c-a687-c8869e33a499/Windows_Insider_Ninjamonkey_PC.zip",
+            "size": "1724961",
+            "version": "Windows",
+            "datePublished": "6/13/2024 12:46:17 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Insider Program \u2013 Ninja Monkey       ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Windows",
+    "detailsSection_file_name": [
+        "Windows_Insider_Ninjamonkey_DIY.ZIP",
+        "Windows_Insider_Ninjamonkey_Phone.zip",
+        "Windows_Insider_Ninjamonkey_Band.zip",
+        "Windows_Insider_Ninjamonkey_PC.zip"
+    ],
+    "detailsSection_file_size": [
+        "621.1 KB",
+        "581.7 KB",
+        "33.8 KB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download and unzip the files.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50823",
+    "downloadPreload": true
+}

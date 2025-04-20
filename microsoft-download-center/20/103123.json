@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Convert SQL Server Agent Jobs into Elastic Database Jobs",
+    "downloadDescription": "The goal of the script is to migrate/copy existing SQL Server Agent Jobs to Elastic Database Jobs",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Convert SQL Server Agent Jobs into Elastic Database Jobs.zip",
+            "url": "https://download.microsoft.com/download/d/5/5/d55a6caa-dfdd-45ca-abb6-b0e0964ae566/Convert SQL Server Agent Jobs into Elastic Database Jobs.zip",
+            "size": "202542",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The goal of the script is to migrate/copy existing SQL Server Agent Jobs to Elastic Database Jobs",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Convert SQL Server Agent Jobs into Elastic Database Jobs.zip"
+    ],
+    "detailsSection_file_size": [
+        "197.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a zipped folder that contains tool to Convert SQL Server Agent Jobs into Elastic Database Jobs and associated documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103123",
+    "downloadPreload": true
+}

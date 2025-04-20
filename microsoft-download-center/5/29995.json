@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Driver for Node.JS for SQL Server Preview",
+    "downloadDescription": "The Microsoft Driver for Node.JS for SQL Server provide connectivity to Microsoft SQL Server from Node.JS applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msnodesql-0.2.1-v0.6-ia32.msi",
+            "url": "https://download.microsoft.com/download/6/e/2/6e2d7972-e54d-45aa-8ab6-41e616035147/msnodesql-0.2.1-v0.6-ia32.msi",
+            "size": "425984",
+            "version": "0.2.1",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "msnodesql-0.2.1-v0.6-x64.msi",
+            "url": "https://download.microsoft.com/download/6/e/2/6e2d7972-e54d-45aa-8ab6-41e616035147/msnodesql-0.2.1-v0.6-x64.msi",
+            "size": "434176",
+            "version": "0.2.1",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msnodesql-0.2.1-v0.8-x64.msi",
+            "url": "https://download.microsoft.com/download/6/e/2/6e2d7972-e54d-45aa-8ab6-41e616035147/msnodesql-0.2.1-v0.8-x64.msi",
+            "size": "434176",
+            "version": "0.2.1",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msnodesql-0.2.1-v0.8-ia32.msi",
+            "url": "https://download.microsoft.com/download/6/e/2/6e2d7972-e54d-45aa-8ab6-41e616035147/msnodesql-0.2.1-v0.8-ia32.msi",
+            "size": "425984",
+            "version": "0.2.1",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Driver for Node.JS for SQL Server is a Node.JS module that allows for the reading and writing of SQL Server data from within Node.JS applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.2.1",
+    "detailsSection_file_name": [
+        "msnodesql-0.2.1-v0.6-ia32.msi",
+        "msnodesql-0.2.1-v0.6-x64.msi",
+        "msnodesql-0.2.1-v0.8-x64.msi",
+        "msnodesql-0.2.1-v0.8-ia32.msi"
+    ],
+    "detailsSection_file_size": [
+        "416.0 KB",
+        "424.0 KB",
+        "424.0 KB",
+        "416.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Node.JS Runtime 0.6 or 0.8 </li>\r\n<li>Microsoft SQL Server 2012 Native Client available in the SQL Server 2012 Feature Pack.</li>\r\n<li>Any edition of SQL Server 2005 or later.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Perform the following steps to download and install the Microsoft Driver for Node.JS for SQL Server:<br/>\r\n<ol>\r\n<li>Download the installer for your Node.js version and architecture to a temporary directory</li>\r\n<li>Run the installer from the temporary directory</li>\r\n<li>When prompted, enter the path to an installation directory for the module's files e.g. c:\\application\\node_modules\\msnodesql\\</li>\r\n<li>Copy the newly-created module directory into your application's node_modules directory</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29995",
+    "downloadPreload": true
+}

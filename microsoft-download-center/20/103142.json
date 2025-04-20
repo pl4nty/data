@@ -1,0 +1,269 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 Server Service Pack 1, version 9.1",
+    "downloadDescription": "Download Dynamics 365 Server Service Pack 1, version 9.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM9.1-Tools-KB4615457-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/4/d/24dcf4bf-9fb7-4776-bbc9-d17034e18460/CRM9.1-Tools-KB4615457-ENU-amd64.exe",
+            "size": "4365136",
+            "version": "09.01.0001.0914",
+            "datePublished": "7/15/2024 4:30:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.1-Srs-KB4615457-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/2/4/d/24dcf4bf-9fb7-4776-bbc9-d17034e18460/CRM9.1-Srs-KB4615457-ENU-Amd64.exe",
+            "size": "75175360",
+            "version": "09.01.0001.0914",
+            "datePublished": "7/15/2024 4:30:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM9.1-Server-KB4615457-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/2/4/d/24dcf4bf-9fb7-4776-bbc9-d17034e18460/CRM9.1-Server-KB4615457-ENU-Amd64.exe",
+            "size": "1081052880",
+            "version": "09.01.0001.0914",
+            "datePublished": "7/15/2024 4:30:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.1-Mui-KB4615457-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/2/4/d/24dcf4bf-9fb7-4776-bbc9-d17034e18460/CRM9.1-Mui-KB4615457-ENU-I386.exe",
+            "size": "38979784",
+            "version": "09.01.0001.0914",
+            "datePublished": "7/15/2024 4:30:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.1-Mui-KB4615457-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/2/4/d/24dcf4bf-9fb7-4776-bbc9-d17034e18460/CRM9.1-Mui-KB4615457-ENU-Amd64.exe",
+            "size": "95792984",
+            "version": "09.01.0001.0914",
+            "datePublished": "7/15/2024 4:30:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        }
+    ],
+    "detailsSection": "\r\n      Download Dynamics 365 Server Service Pack 1, version 9.1. This download also includes updates for Dynamics 365 Reporting Extensions.<br /><br/>\r\n      <ul>\r\n        <li>\r\n          For information about this service pack, see <a href=\"https://support.microsoft.com/en-us/topic/cf784c7a-76ca-4e61-9aeb-2be9ac4a8b7d\">4615457: Microsoft Dynamics 365 9.1 Service Pack 1, version 9.1 </a>.\r\n        </li>\r\n        <li>\r\n          For information about the features that are new in this update, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2161415\">New features in Microsoft Dynamics 365 9.1 Service Pack 1, version 9.1</a>.\r\n        </li>\r\n      </ul>\r\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3142345",
+        "name": "KB3142345"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.01.0001.0914",
+    "detailsSection_file_name": [
+        "CRM9.1-Tools-KB4615457-ENU-amd64.exe",
+        "CRM9.1-Srs-KB4615457-ENU-Amd64.exe",
+        "CRM9.1-Server-KB4615457-ENU-Amd64.exe",
+        "CRM9.1-Mui-KB4615457-ENU-I386.exe",
+        "CRM9.1-Mui-KB4615457-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB",
+        "71.7 MB",
+        "1.0 GB",
+        "37.2 MB",
+        "91.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\n      For software requirements for this update, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2161185\">Software requirements for Microsoft Dynamics 365 Server</a>. <br/>\r\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "\r\n      <ol>\r\n        <li>\r\n          Select <b>Download</b>, select the update(s) you want, and then select <b>Next</b>.\r\n        </li>\r\n        <li>\r\n          To start the installation immediately, select <b>Run</b>, or to save the update to your computer for installation later, select <b>Save</b>.\r\n        </li>\r\n      </ol>\r\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "download Dynamics 365 Server, version 9.0",
+            "url": "https://www.microsoft.com/download/details.aspx?id=57478"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103142",
+    "downloadPreload": true
+}

@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 Document: Deploying Access Proxy and Director",
+    "downloadDescription": "This download provides detailed instructions for installing, activating, and configuring a Microsoft Office Live Communications Server 2005 Access Proxy in federation, remote user, and branch office topologies.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LCS_2005_Deploy_AP.doc",
+            "url": "https://download.microsoft.com/download/5/c/0/5c060a7e-e1c0-4d78-bc85-69afac4a2690/LCS_2005_Deploy_AP.doc",
+            "size": "10521600",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:15:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This download provides detailed instructions for installing, activating, and configuring a Live Communications Server 2005 Access Proxy in federation, remote user, and branch office topologies.This guide also includes detailed instructions for installing, activating, and configuring a Live Communications Server 2005 Director in these same topologies.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LCS_2005_Deploy_AP.doc"
+    ],
+    "detailsSection_file_size": [
+        "10.0 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office application:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Communication Server 2005</li>\n</ul></li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\n<li>Double-click the <b>LCS_2005_Deploy_AP.exe</b> program file on your hard disk to start the Setup program.</li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the document as you typically would.\n<br/>\n<br/>\n\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>LCS_2005_Deploy_AP.exe</b>.\n<br/>\n<br/>\nTo remove the document, delete it from the folder where it was saved.",
+    "relatedResourcesSection": [
+        {
+            "title": "live Communications Server 2005 on Office Online",
+            "url": "http://office.microsoft.com/en-us/FX010908711033.aspx"
+        },
+        {
+            "title": "downloads for Live Communications Server 2005",
+            "url": "http://office.microsoft.com/en-us/officeupdate/CD011516661033.aspx"
+        },
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12024",
+    "downloadPreload": true
+}

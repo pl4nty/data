@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Training Download Package",
+    "downloadDescription": "This zipped folder contains all of the available training and user education resources for Microsoft Lync 2010. The included Lync Training Plans workbook helps you choose the resources that will work best for your users.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Training_Plans_ZIP.zip",
+            "url": "https://download.microsoft.com/download/7/7/f/77f98fdb-454a-4898-8f68-b7cfaa0d6eda/Lync_Training_Plans_ZIP.zip",
+            "size": "148267663",
+            "version": "2.0",
+            "datePublished": "6/13/2024 11:53:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Lync Training Download Package contains all of the available training and user education resources for Lync. The training strategy and resources that offer the best return on investment vary depending on the user profile and the product features deployed in your organization. The Lync Training Plans workbook included with this download package helps you understand the available user education and training resources and recommendations for use so that you can make informed decisions about training strategies. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Lync_Training_Plans_ZIP.zip"
+    ],
+    "detailsSection_file_size": [
+        "141.4 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Microsoft Office 2010; Microsoft Office 2007; Microsoft Office 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download:\r\n<ol>\r\n<li>Click the <b>Download</b> button above.</li>\r\n<li>Select <b>Save</b> to save the zipped folder to a directory on your computer.</li>\r\n<li>Navigate to the location where the files were saved. Unzip the folder by right-clicking the folder name, selecting <b>Extract All</b>, selecting a destination for the extracted files, and then clicking <b>Extract</b>.</li>\r\n</ol>\r\nTo remove the download, delete the folder from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9642",
+    "downloadPreload": true
+}

@@ -1,0 +1,203 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 SP1 PowerPivot\u00ae for Microsoft SharePoint\u00ae 2013",
+    "downloadDescription": "Microsoft SQL Server 2016 SP1 PowerPivot for SharePoint 2013 extends SharePoint Server 2013 to add server-side data refresh processing, collaboration, and management support for PowerPivot workbooks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "spPowerPivot.msi",
+            "url": "https://download.microsoft.com/download/1/e/d/1ed25071-2ebc-4bc3-b5dc-74dcbdd644d4/ENU/x64/spPowerPivot.msi",
+            "size": "89468928",
+            "version": "13.0.4001.0",
+            "datePublished": "6/15/2024 4:28:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2016 SP1 PowerPivot for SharePoint 2013 extends SharePoint Server 2013 to add server-side data refresh processing, collaboration, and management support for PowerPivot workbooks and Excel workbooks with advanced data models to SharePoint. This package is only available in a 64-bit version. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.4001.0",
+    "detailsSection_file_name": [
+        "spPowerPivot.msi"
+    ],
+    "detailsSection_file_size": [
+        "85.3 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "\n<ul>\n<li>See <a href=\"http://go.microsoft.com/fwlink/?LinkID=232658\"> Hardware and software requirements for SharePoint 2013</a></li>\n<li>The computer must have the following installed: Microsoft SharePoint Server 2013.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To install and use Microsoft SQL Server 2016 SP1 PowerPivot for Microsoft SharePoint, complete the following steps in this order:<br />\n<br />\n<ol>\n<li>Run SpPowerPivot.msi.</li>\n<li>Click Next on the Welcome page.</li>\n<li>Review and accept the license agreement, then click Next.</li>\n<li>On the Feature Selection page, all of the features are selected by default.</li>\n<li>Click Next.</li>\n<li>Click Install to install to finish the installation.</li>\n\nFor more information on installation, see, <a href=\"http://go.microsoft.com/fwlink/?LinkID=232657\"> Install or Uninstall the PowerPivot for SharePoint Add-in.</a>\n</ol>\n\n\n",
+    "additionalInformationSection": "Your feedback is important. Help improve SQL Server 2016 by <a href=\"http://go.microsoft.com/fwlink/?LinkID=168586\">submitting bugs to Microsoft\u00ae Connect</a>.<br /><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54270",
+    "downloadPreload": true
+}

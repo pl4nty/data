@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Office Communicator Web Access: Microsoft Office Communicator Web Access Release Notes",
+    "downloadDescription": "Refer to this file for information on known issues regarding Communicator Web Access setup, deployment, management, and security.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "relnotes.htm",
+            "url": "https://download.microsoft.com/download/2/3/3/2339138c-167b-403c-aa3f-dd26abcdab23/relnotes.htm",
+            "size": "29964",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Refer to this file for information on known issues regarding Communicator Web Access setup, deployment, management, and security.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "relnotes.htm"
+    ],
+    "detailsSection_file_size": [
+        "29.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office program:</b>\n<br/>\n<ul>\n<li>Microsoft Office Communicator Web Access</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>relnotes.htm</b> to open the document. </li>\n</ol>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file relnotes.htm.",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        },
+        {
+            "title": "microsoft Office Live",
+            "url": "http://www.microsoft.com/office/officelive/default.mspx"
+        },
+        {
+            "title": "live Communications Server Deployment Resources",
+            "url": "http://office.microsoft.com/en-us/FX011450741033.aspx"
+        },
+        {
+            "title": "live Communications Server Newsgroups",
+            "url": "http://www.microsoft.com/technet/community/newsgroups/server/livecomm.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20283",
+    "downloadPreload": true
+}

@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Book Download: Exploring CQRS and Event Sourcing",
+    "downloadDescription": "A journey into high scalability, availability and maintainability with Windows Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CQRS_Journey_Guide.pdf",
+            "url": "https://download.microsoft.com/download/e/a/8/ea8c6e1f-01d8-43ba-992b-35cfcaa4fae3/CQRS_Journey_Guide.pdf",
+            "size": "35247318",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CQRS_Journey_Guide.epub",
+            "url": "https://download.microsoft.com/download/e/a/8/ea8c6e1f-01d8-43ba-992b-35cfcaa4fae3/CQRS_Journey_Guide.epub",
+            "size": "9859539",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Authors: <i>Dominic Betts, Juli\u00e1n Dom\u00ednguez, Grigori  Melnik, Fernando Simonazzi, Mani Subramanian</i>.<br/>\r\nForeword by <i>Greg Young</i>.\r\n<br/><br/>\r\nThis guide is focused on building highly scalable, highly available, and maintainable applications with the <b>Command & Query Responsibility Segregation</b> and the <b>Event Sourcing</b> architectural patterns. It presents a learning journey, not definitive guidance. It describes the experiences of a development team with no prior CQRS proficiency in building, deploying (to Windows Azure), and maintaining a sample real-world, complex, enterprise system to showcase various CQRS and ES concepts, challenges, and techniques. The development team did not work in isolation; we actively sought input from industry experts and from a wide group of advisors to ensure that the guidance is both detailed and practical.\r\n<br/><br/>\r\nThe CQRS pattern and event sourcing are not mere simplistic solutions to the problems associated with large-scale, distributed systems. By providing you with both a working application and written guidance, we expect you'll be well prepared to embark on your own CQRS journey.\r\n<br/><br/>\r\nThe guide is split into three distinct sections that you can read independently: a description of the journey we took as we learned about CQRS, a collection of CQRS reference materials, and a collection of case studies that describe the experiences other teams have had with the CQRS pattern. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CQRS_Journey_Guide.pdf",
+        "CQRS_Journey_Guide.epub"
+    ],
+    "detailsSection_file_size": [
+        "33.6 MB",
+        "9.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <li>A document reader capable of displaying PDF format documents</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "FreeBSD",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Macintosh",
+        "Unix",
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the document format appropriate to your reader software.",
+    "additionalInformationSection": "For help and support visit the <a href=\"http://aka.ms/cqrsjourney\">CQRS Journey community site</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "cqrs Journey on MSDN",
+            "url": "http://aka.ms/cqrs"
+        },
+        {
+            "title": "cqrs Journey - Reference Implementation",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=258548"
+        },
+        {
+            "title": "cqrs Journey - Reference Implementation Evolution",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=258576"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34774",
+    "downloadPreload": true
+}

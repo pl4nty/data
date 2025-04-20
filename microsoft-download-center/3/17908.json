@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Key Management Service 1.1  (x64) for Windows Server 2003 SP1 and Later",
+    "downloadDescription": "Key Management Service 1.1 for Windows Server 2003 SP1 and later enables enterprise customers to activate volume editions of Windows Vista and Windows Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KMSW2K3_EN-US_x64.zip",
+            "url": "https://download.microsoft.com/download/9/b/e/9be395a6-aadf-4248-bde5-d80b42111af1/KMSW2K3_EN-US_x64.zip",
+            "size": "4953693",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:15:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Microsoft Key Management Service (KMS) 1.1 for Windows Server 2003 SP1 and later is part of Microsoft Windows Volume Activation 2.0. It allows enterprise users to host KMS on Windows Server 2003 to enable activation of Windows Vista and Windows Server 2008 using a KMS key. <br />\n<br />\n\n\nMicrosoft Volume Activation 2.0 is a set of technical and policy solutions provided by Microsoft\u2019s Software Protection Platform (SPP) that gives Microsoft customers more secure and easier methods to manage their volume license keys. <br />\n<br />\nKMS based activation allows enterprise customers to host a local service within their environment to enable activation of machines running Windows Vista and Windows Server 2008 volume editions within their environment, instead of activation directly with Microsoft. Computers that have been activated using KMS are required to reactivate by connecting to a KMS host at least once every 6 months.<br />\n<br />\nKMS keys are provided through Microsoft\u2019s Volume Licensing System portals (MVLS, eOpen). The KMS host needs to be activated once with Microsoft either online or via telephone.<br />\n<br />\nKMS version 1.1 for Windows Server 2003 provides the same feature set as version 1.0 and the following additional functionality:<br />\n<li>A single KMS host which support volume license editions of both Windows Vista RTM/SP1 and Windows Server 2008</li><br />\n<li>Running KMS version 1.1 in a Windows Server 2003 virtual machine.</li>\n<br />\n<br />\n<B>UPDATES: May 2008</B>\n<li>Fixed issue with KB948003.EXE which prevented installation on localized versions of Windows Server 2003 SP1</li>\n<li>Updated Step-By-Step guide with detailed installation instructions</li>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB948003",
+        "name": "KB948003"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "KMSW2K3_EN-US_x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Key Management Service for Windows 2003 requires Windows Server 2003 Service Pack 1 or later. Note that the same language versions must be used.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition"
+    ],
+    "installInstructionSection": "Follow the Step-by-Step guide for scenario-specific installation instructions.  <B>IMPORTANT: </B> The language version of the KMS package you are downloading must match the language version of the target Windows Server 2003 computer.",
+    "additionalInformationSection": "Key Management Service for Windows 2003 is installed as a software update package. The document KMS for Windows 2003 Step-by-Step Guide.doc (available only in English) is required reading in order to install and use Key Management Service for Windows 2003.",
+    "relatedResourcesSection": [
+        {
+            "title": "volume Activation 2.0 for Windows Vista and Windows Server 2008",
+            "url": "http://www.microsoft.com/technet/volumeactivation/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17908",
+    "downloadPreload": true
+}

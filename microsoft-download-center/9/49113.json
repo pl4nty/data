@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dengxian Font Pack",
+    "downloadDescription": "Dengxian Font Pack provides Dengxian fonts, included in Microsoft Office 2016, for Microsoft Office 2010/2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "eadengfontpack.exe",
+            "url": "https://download.microsoft.com/download/4/0/9/4094aba6-1a50-4ffd-a8cc-846bd66573f0/eadengfontpack.exe",
+            "size": "30664304",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:05:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dengxian Font Pack provides Dengxian fonts, included in Microsoft Office 2016, for Microsoft Office 2010/2013.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "eadengfontpack.exe"
+    ],
+    "detailsSection_file_size": [
+        "29.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Office 2013/2010, Windows 8.1/8/7",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Click [Download] in this page and follow the instructions.\r\n2. Double-click on the downloaded setup file to start the setup program.\r\n3. Follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49113",
+    "downloadPreload": true
+}

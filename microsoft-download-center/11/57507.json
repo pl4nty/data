@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Communications Managed API 6.0 Runtime",
+    "downloadDescription": "Unified Communications Managed API (UCMA) 6.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UcmaRuntimeSetup.exe",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd4bfe3-244c-4cf0-b174-3ba0f1953709/UcmaRuntimeSetup.exe",
+            "size": "611078192",
+            "version": "2046.19",
+            "datePublished": "7/15/2024 4:57:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "UCMA provides a flexible managed-code platform for unified communication and collaboration that allows developers to implement communication- and collaboration-enabled middle tier services which take advantage of the fact that you have made investment in Skype for Business Server. It allows you to enable same/similar or better UC scenarios as we could do.\r\n<br /><br />\r\nAn administrator who is preparing to install a third-party UCMA-enabled application on a deployment computer must download and install UcmaRuntimeSetup.exe. Installing UCMA 6.0 Runtime provides all of the UCMA-related functionality needed by a UCMA-enabled application.\r\n<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2046.19",
+    "detailsSection_file_name": [
+        "UcmaRuntimeSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "582.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><ul><li>Windows 10 with latest update</li></ul></ul>\r\n<ul><ul><li>Windows Server 2016 with latest update</li></ul></ul>\r\n<ul><ul><li>Windows  Server 2019 with latest update</li></ul></ul>\r\n<br ></br>\r\n<b>UCMA 6.0 Runtime Requirements:</b>\r\n<br />\r\n<ul>\r\n<li>The target platform must be a 64-bit computer.</li>\r\n<li>Microsoft .NET Framework 4.7 or later service packs.</li>\r\n<br>\r\nAntivirus software is not recommended for computers running Microsoft Lync Server/Skype for Business Server. For optimal performance for a server that must run antivirus software, include all Lync Server/Skype for Business Server computers in the antivirus software's exception list.\r\n</br>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<b>Installing UCMA 6.0 Runtime and Skype for Business Server 2019 Components</b>\r\n<br /><br />\r\n<ul>\r\n<b>Installing UCMA 6.0 Runtime</b>\r\n<ul>\r\n<li>You must have elevated permissions to install UCMA 6.0 Runtime.</li>\r\n<li>Download UcmaRuntimeSetup.exe.</li>\r\n<li>Launch UcmaRuntimeSetup.exe and follow the screens to accept the End-User License Agreement (EULA). The setup wizard will install all the necessary components.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n<br/>\r\n<b>Note</b>: <br/><ul><li>UcmaRuntimeSetup.exe installs the English versions of the Speech Recognition and Text-to-Speech engines. The final screen of the installer provides a link that can be used to download additional engines for other languages.</li></ul>\r\n<ul><li>Additional steps are required to install Skype for Business Server 2019, Core Components (OCSCore.msi). These steps are described later in this topic.</li></ul>\r\n</ul>\r\n<br /><br />\r\n<b>UCMA 6.0 Runtime Components</b>\r\n<br /><br />\r\nUcmaRuntimeSetup.exe installs the following components.\r\n<ul>\r\n<li>Microsoft VC ++ 14 Redistributable -x64 package</li>\r\n<ul>\r\n<li>Microsoft Unified Communications Managed API 6.0 Runtime is built on Microsoft .NET Framework 4.7 and Visual C++ 14 Redistributable Package (x64).</li>\r\n</ul>\r\n<li>Microsoft Server Speech Platform Runtime (x64) package</li>\r\n<li>Microsoft Server Speech Recognition Language - TELE (en-US)</li>\r\n<li>Microsoft Server Speech Text To Speech Voice (en-US, Helen)</li>\r\n<li>Microsoft Server Speech Platform VXML Runtime (x64)</li>\r\n<li>Skype for Business Server 2019, Bootstrapper Prerequisites Installer Package</li>\r\n<ul>\r\n<li>Copies Skype for Business Server 2019, Core Components MSI (OCSCore.msi) and its prerequisites. OCSCore.msi enables running Skype for Business Server -specific PowerShell cmdlets from the local computer. OCSCore.msi also enables the installation of the local Central Management Store replica, which is required by auto-provisioned UCMA applications. </li>\r\n</ul>\r\n<br/>\r\n<b>Note</b>: Side-by-side installations of UCMA are not supported.\r\n</ul>\r\n<br /><br />\r\n<b>Installing Skype for Business Server 2019 Components</b>\r\n<br /><br />\r\nOCSCore.msi must be installed either by using Bootstrapper Prerequisites Installer Package installed by UcmaRuntimeSetup.exe (recommended) or by installing the Admin Tools available on the Skype for Business Server DVD.\r\n<br /><br />\r\n<ul>\r\n<b>To install Skype for Business Server 2019, Core Components</b>\r\n<ul><li>Find OCSCore.msi by navigating to %Installation drive%\\ProgramData\\Microsoft\\Skype for Business Server\\Deployment\\cache\\[Build version]\\Setup\\. </li></ul>\r\n<ul>By default, the ProgramData folder is hidden, so it might not appear in Windows Explorer.</ul>\r\n<ul><li>Launch OCSCore.msi and use the default settings in the wizard.</li>\r\nFor information about activating a UCMA application, see \u201cActivating a UCMA 6.0 Core Trusted Application\u201d in the Unified Managed API 6.0 Core SDK documentation.</ul>\r\n</ul>\r\n<br /><br />\r\n<b>Uninstalling UCMA 6.0 Runtime and Bootstrapper Prerequisites Installer</b>\r\n<br /><br />\r\nWhen a customer application is uninstalled, the application uninstall procedure must not automatically uninstall any of the required components (such as .NET Framework 4.5, Visual C++ 14 Redistributable Package, or UCMA 6.0 Runtime), because other applications might require them. An administrator who has ensured that there are no dependencies can follow the instructions in the following procedure to uninstall UCMA 6.0 Runtime.\r\n<br /><br />\r\n<ul>\r\n<b>To uninstall UCMA 6.0 Runtime and Bootstrapper Prerequisites Installer</b>\r\n<ul>\r\n<li>Navigate to Programs and Features in Control Panel. </li>\r\n<li>On the right-click menu for the <b>Microsoft Unified Communications Managed API 6.0, Runtime</b> entry, select Uninstall.  </li>\r\n<li>A wizard titled \"Unified Communications Managed API 6.0, Runtime Uninstallation\" appears. Follow the instructions on the screen to complete uninstallation.</li>\r\n<li>On the right-click menu for the Skype for Business Server 2019, Bootstrapper Prerequisites Installer Package entry, select Uninstall to remove the installer package.</li>\r\n</ul>\r\n<br/>\r\n<b>Note</b>: Uninstalling the Bootstrapper Prerequisites Installer Package does not automatically uninstall software components that are individually installed by the user, such as Skype for Business Server 2019, Core Components (OCSCore.msi) and others.\r\n<br /><br />\r\n</ul>\r\n</ul>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57507",
+    "downloadPreload": true
+}

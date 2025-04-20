@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Concurrency Visualizer Collection Tools for Visual Studio 2015",
+    "downloadDescription": "The Concurrency Visualizer Collection Tools for Visual Studio 2015 allows you to collect traces from the command line. The traces can be viewed using the Concurrency Visualizer for Visual Studio 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConcVi_StandaloneCollection.exe",
+            "url": "https://download.microsoft.com/download/a/8/7/a87613ec-e39e-4f46-a7c8-b52b8c0efe39/ConcVi_StandaloneCollection.exe",
+            "size": "4588440",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:04:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Concurrency Visualizer Collection Tools for Visual Studio 2015 allows you to collect from the command line traces containing contention data and thread activity data such as CPU utilization, thread contention, thread migration, synchronization delays, areas of overlapped I/O, and other system events. The traces can later be opened and viewed using the <a href=\"https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9\">Concurrency Visualizer for Visual Studio 2015</a>, which is available on the gallery as an extension to Visual Studio 2015. \r\n<br/><br/>\r\nPlease see the <a href=\"http://msdn.microsoft.com/en-us/library/hh543788.aspx\">Concurrency Visualizer Command Line Utility (CVCollectionCmd)</a> for more information.\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "ConcVi_StandaloneCollection.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements</b>\r\n<ul>\r\n<li>1.6 GHz or faster processor</li>\r\n<li>1 GB of RAM (1.5 GB if running on a virtual machine)</li>\r\n<li>10 GB of available hard disk space</li>\r\n<li>5400 RPM hard disk drive</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download and run the installer by clicking the \"Download\" link above</li>\r\n<li>From the command line, collect a trace using the <a href=\"http://msdn.microsoft.com/en-us/library/hh543788.aspx\">instructions on MSDN</a></li>\r\n<li>Copy the created files to the machine where Visual Studio 2015 is installed</li>\r\n<li>Install the <a href=\"https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9\">Concurrency Visualizer for Visual Studio 2015</a></li>\r\n<li>Open the .cvtrace file from Visual Studio 2015 by using Analyze -> Concurrency Visualizer -> Open Trace...</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49103",
+    "downloadPreload": true
+}

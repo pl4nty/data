@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Routing and Remote Access Service (RRAS) 2003 Management Pack for Operations Manager 2007",
+    "downloadDescription": "Monitors the Routing and Remote Access service (RRAS) running on Windows 2003 servers",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows RRAS 2003 System Center Operations Manager 2007 MP.msi",
+            "url": "https://download.microsoft.com/download/c/b/4/cb48f384-05cc-4eb2-85d9-983eb2f3d495/Microsoft Windows RRAS 2003 System Center Operations Manager 2007 MP.msi",
+            "size": "297984",
+            "version": "6.0.5000.00",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Operations Manager 2007 Management Pack for Routing and Remote Access provides monitoring for RAS, VPN and Routing scenarios. Examples include: <br />\n\u2022 Automatic notification of events indicating service outages <br />\n\u2022 Performance degradation <br />\n\u2022 Health monitoring <br />\n\u2022 Centralized management <br />\n<br />\n<br />\nRequires OpsMgr 2007 MOM 2005 Backward Compatibility MP Update) 6.0.5000.12 (or higher)<br />\n<br />\n<b>Release History:</b><br />\nInitial Release for OpsMgr 2007  8/31/2007  Version 6.0.5000.0<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.5000.00",
+    "detailsSection_file_name": [
+        "Microsoft Windows RRAS 2003 System Center Operations Manager 2007 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "291.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required Software: <br />\nSystem Center Operations Manager 2007, <br />\nMicrosoft Windows  RRAS 2003 <br />\nOpsMgr 2007 MOM 2005 Backward Compatibility MP Update 6.0.5000.12 (or higher)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 x64 editions"
+    ],
+    "installInstructionSection": "Please review the MP guide",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Home",
+            "url": "http://www.microsoft.com/systemcenter/"
+        },
+        {
+            "title": "system Center Operations Manager Home",
+            "url": "http://www.microsoft.com/systemcenter/opsmgr/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11348",
+    "downloadPreload": true
+}

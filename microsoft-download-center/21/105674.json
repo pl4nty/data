@@ -1,0 +1,368 @@
+{
+    "error": "",
+    "downloadTitle": "ADMX/ADML files to configure Clipchamp's Windows app",
+    "downloadDescription": "This download includes Group Policy administrative template files (AMDX/ADML) administrators can use in Intune to adjust settings for the Clipchamp desktop app.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "admx.zip",
+            "url": "https://download.microsoft.com/download/d/f/d/dfdb3bd0-3467-4db0-8f86-5b71e1dca9ac/admx.zip",
+            "size": "63647",
+            "version": "2.8.0",
+            "datePublished": "7/15/2024 5:00:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "am-et",
+            "name": "Amharic"
+        },
+        {
+            "cultureCode": "as-in",
+            "name": "Assamese"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "bn-bd",
+            "name": "Bangla (Bangledsh) - Bangladesh"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fil-ph",
+            "name": "Filipino"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "gd-gb",
+            "name": "Scottish Gaelic - United Kingdom"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "gu-in",
+            "name": "Gujarati"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hy-am",
+            "name": "Armenian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ka-ge",
+            "name": "Georgian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "km-kh",
+            "name": "Khmer"
+        },
+        {
+            "cultureCode": "kn-in",
+            "name": "Kannada"
+        },
+        {
+            "cultureCode": "kok-in",
+            "name": "Konkani"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "lb-lu",
+            "name": "Luxembourgish"
+        },
+        {
+            "cultureCode": "lo-la",
+            "name": "Lao"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "mi-nz",
+            "name": "M\u0101ori"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "ml-in",
+            "name": "Malayalam"
+        },
+        {
+            "cultureCode": "mr-in",
+            "name": "Marathi"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "mt-mt",
+            "name": "Maltese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "or-in",
+            "name": "Oriya"
+        },
+        {
+            "cultureCode": "pa-in",
+            "name": "Punjabi"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "quz-pe",
+            "name": "Quechua (Peru)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sq-al",
+            "name": "Albanian"
+        },
+        {
+            "cultureCode": "sr-cyrl-ba",
+            "name": "Serbian (Cyrillic) - Bosnia and Herzegovina"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ta-in",
+            "name": "Tamil"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "tt-ru",
+            "name": "Tatar"
+        },
+        {
+            "cultureCode": "ug-cn",
+            "name": "Uyghur - China"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ur-pk",
+            "name": "Urdu - Pakistan"
+        },
+        {
+            "cultureCode": "uz-latn-uz",
+            "name": "Uzbek (Latin)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "<br>Download the zip file via the Download button above.</br>\r\n<br>The zip contains one ADMX file in the main folder and a list of ADML files in subfolders, sorted by their language code. After saving the zip file to your computer, extract the ADMX file and the ADML folder of your preferred language, then <a href=\"https://learn.microsoft.com/mem/intune/configuration/administrative-templates-import-custom\">import them in Intune</a>. After doing so, you will be able to</br>\r\n<ul>\r\n  <li>configure (enable or disable) the Clipchamp desktop app for Windows on user devices in your organization.</li>\r\n  <li>enable or disable the use of Clipchamp for personal accounts in the desktop app.</li>\r\n</ul>\r\n<br>The first option disables the desktop app entirely, users in your organization will not be able to acces it. They can still access Clipchamp in a browser window.</br>\r\n<br>The 2nd option keeps the app in place for use with <a href=\"https://www.microsoft.com/microsoft-365/clipchamp-for-work\">Clipchamp for work</a> but removes the option to also use it with <a href=\"https://www.microsoft.com/microsoft-365/clipchamp\">Clipchamp's personal version</a>.</br>\r\n<br>For more information about the Clipchamp app for Windows, see <a href=\"https://support.microsoft.com/topic/9155e5ee-3b01-47d6-8170-be874f71457c\">Work account support in the Clipchamp app for Windows</a>.</br>\r\n<br>For more information about enabling and disabling Clipchamp in your tenant, see <a href=\"https://support.microsoft.com/topic/how-to-enable-or-disable-clipchamp-for-users-in-your-organization-5b74028f-6dd8-423c-a6cb-8e2b8b42c6e7\">How to enable or disable Clipchamp for users in your organization</a>.</br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.8.0",
+    "detailsSection_file_name": [
+        "admx.zip"
+    ],
+    "detailsSection_file_size": [
+        "62.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "There are no specific system requirements.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "See the description above for installation steps.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105674",
+    "downloadPreload": true
+}

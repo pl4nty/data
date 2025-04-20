@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "JetStream",
+    "downloadDescription": "Image editor with cut and paste tool, based on sequential curve growing with interaction. Last published: April 23, 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "iepad0402.zip",
+            "url": "https://download.microsoft.com/download/0/c/f/0cf237fc-b842-4f10-a2ad-042862618b99/iepad0402.zip",
+            "size": "539923",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Image editor with cut and paste tool, based on sequential curve growing with interaction.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "iepad0402.zip"
+    ],
+    "detailsSection_file_size": [
+        "527.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52463",
+    "downloadPreload": true
+}

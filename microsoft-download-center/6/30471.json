@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Thin PC (KB2721923)",
+    "downloadDescription": "Resolves an issue that might occur with the Registry Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2721923-v2-x86.msu",
+            "url": "https://download.microsoft.com/download/b/6/e/b6ef8a4c-5e03-4d20-a5c3-5a2e5b7f191b/Windows6.1-KB2721923-v2-x86.msu",
+            "size": "248456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2721923 fixes the following issue:\r\n<br></br>\r\nWhere the registry filter does not take the customer registry setting correctly.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2721923",
+        "name": "KB2721923"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2721923-v2-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "242.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Thin PC",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Thin PC "
+    ],
+    "installInstructionSection": "This update is installed by executing  file <b>Windows6.1-KB2721923-v2-x86.msu</b> on a Windows Thin PC image. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30471",
+    "downloadPreload": true
+}

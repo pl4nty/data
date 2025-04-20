@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud Solutions and Platforms Options",
+    "downloadDescription": "What IT decision makers and architects need to know about Microsoft's cloud solutions and pick the right one for their needs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftCloudSolutionsAndPlatformsOptions.pdf",
+            "url": "https://download.microsoft.com/download/f/6/6/f6621f45-712a-4932-a642-6c35f5676a82/MicrosoftCloudSolutionsAndPlatformsOptions.pdf",
+            "size": "1009913",
+            "version": "Apr2016",
+            "datePublished": "7/15/2024 4:40:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftCloudSolutionsAndPlatformsOptions.vsd",
+            "url": "https://download.microsoft.com/download/f/6/6/f6621f45-712a-4932-a642-6c35f5676a82/MicrosoftCloudSolutionsAndPlatformsOptions.vsd",
+            "size": "2147328",
+            "version": "Apr2016",
+            "datePublished": "7/15/2024 4:40:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Microsoft's cloud offerings include SaaS (Office 365, Dynamics 365, and Intune), PaaS (Azure), IaaS (Azure), and private cloud. This poster guides you to the right catagory of cloud services based on what they are best for and describes core capabilities and requires skills for each. This poster also describes how Microsoft IT is moving its workloads to the cloud.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Apr2016",
+    "detailsSection_file_name": [
+        "MicrosoftCloudSolutionsAndPlatformsOptions.pdf",
+        "MicrosoftCloudSolutionsAndPlatformsOptions.vsd"
+    ],
+    "detailsSection_file_size": [
+        "986.2 KB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This poster is available in Visio (VSD or VSDX) and PDF versions in 11x17 (tabloid) format for easy printing. \r\n\r\nYou will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. \r\n\r\nYou will need the Adobe Acrobat reader for the PDF version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft's Enterprise Cloud Roadmap",
+            "url": "http://aka.ms/cloudarchitecture"
+        },
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "https://technet.microsoft.com/library/dn919927.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54432",
+    "downloadPreload": true
+}

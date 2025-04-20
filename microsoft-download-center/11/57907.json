@@ -1,0 +1,219 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 18 for Microsoft Dynamics NAV 2013",
+    "downloadDescription": "Over the last few years we've shipped a series of new releases that have transformed Microsoft Dynamics NAV and your market opportunity. The goal is to make it even easier to use and adding capabilities design to support SMB business ambitions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IS.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/IS.zip",
+            "size": "815947202",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GB.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/GB.zip",
+            "size": "818850368",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AT.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/AT.zip",
+            "size": "808186488",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NO.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/NO.zip",
+            "size": "819840030",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SE.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/SE.zip",
+            "size": "819888054",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ES.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/ES.zip",
+            "size": "830317383",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "W1.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/W1.zip",
+            "size": "768422576",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DE.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/DE.zip",
+            "size": "826715082",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IT.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/IT.zip",
+            "size": "829528282",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NL.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/NL.zip",
+            "size": "822633191",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NA.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/NA.zip",
+            "size": "963278252",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AU.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/AU.zip",
+            "size": "824209501",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CH.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/CH.zip",
+            "size": "919049779",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NZ.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/NZ.zip",
+            "size": "823482113",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DK.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/DK.zip",
+            "size": "819295684",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FR.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/FR.zip",
+            "size": "823026978",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FI.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/FI.zip",
+            "size": "818897669",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BE.zip",
+            "url": "https://download.microsoft.com/download/2/7/5/275d858a-a206-48a2-a573-4801b8befee8/BE.zip",
+            "size": "870492854",
+            "version": "7.0.37798",
+            "datePublished": "5/15/2024 3:01:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about what is included in this cumulative update please visit this kb article:\r\nhttps://support.microsoft.com/en-us/help/2992503 \r\n\r\nTo learn more about other cumulative updates already released for Microsoft Dynamics NAV 2013 please see this kb article:\r\nhttps://support.microsoft.com/en-us/help/2842257\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.37798",
+    "detailsSection_file_name": [
+        "IS.zip",
+        "GB.zip",
+        "AT.zip",
+        "NO.zip",
+        "SE.zip",
+        "ES.zip",
+        "W1.zip",
+        "DE.zip",
+        "IT.zip",
+        "NL.zip",
+        "NA.zip",
+        "AU.zip",
+        "CH.zip",
+        "NZ.zip",
+        "DK.zip",
+        "FR.zip",
+        "FI.zip",
+        "BE.zip"
+    ],
+    "detailsSection_file_size": [
+        "778.1 MB",
+        "780.9 MB",
+        "770.7 MB",
+        "781.9 MB",
+        "781.9 MB",
+        "791.9 MB",
+        "732.8 MB",
+        "788.4 MB",
+        "791.1 MB",
+        "784.5 MB",
+        "918.7 MB",
+        "786.0 MB",
+        "876.5 MB",
+        "785.3 MB",
+        "781.3 MB",
+        "784.9 MB",
+        "781.0 MB",
+        "830.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Requirements can be found at:\r\nhttps://docs.microsoft.com/en-us/dynamics-nav/system-requirements-for-microsoft-dynamics-nav\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "How to install this Cumulative Update\r\nhttps://support.microsoft.com/en-us/help/2834770\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57907",
+    "downloadPreload": true
+}

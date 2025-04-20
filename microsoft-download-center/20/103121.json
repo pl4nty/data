@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Oracle Inventory Script Artifacts",
+    "downloadDescription": "Oracle Inventory Script Tools help classify schemas, target high-profile schemas for analysis, identify user accounts and Sizing information. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Oracle Inventory Script Artifacts.zip",
+            "url": "https://download.microsoft.com/download/6/9/0/690627b7-79ad-41c0-b950-601d64ef46d9/Oracle Inventory Script Artifacts.zip",
+            "size": "2862475",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Oracle Inventory Script Artifacts contain a template and PL/SQL query scripts to help classify Oracle schemas, idenitify target schemas for analysis, identify user accounts and Sizing information for the purpose of migrating. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Oracle Inventory Script Artifacts.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>\r\n\r\nThe file is a zipped folder that contains the tool and supporting documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To start the installation immediately, choose <b>Open</b> </li> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103121",
+    "downloadPreload": true
+}

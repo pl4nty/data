@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Self-Service Analytics: Sales Solution",
+    "downloadDescription": "This business intelligence (BI) solution scenario describes the steps that employees of the fictional company Contoso take as they analyze sales and promotions data and share that analysis with others in the company. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SelfServiceAnalytics.docx",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82881a-0710-4089-93cf-6d6def7562b4/SelfServiceAnalytics.docx",
+            "size": "751088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SelfServiceAnalytics_SampleData.zip",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82881a-0710-4089-93cf-6d6def7562b4/SelfServiceAnalytics_SampleData.zip",
+            "size": "102426325",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SelfServiceAnalytics.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82881a-0710-4089-93cf-6d6def7562b4/SelfServiceAnalytics.pdf",
+            "size": "1777664",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This business intelligence (BI) solution scenario describes the steps that employees of the fictional company Contoso take as they analyze sales and promotions data and share that analysis with others in the company. In the scenario, sales data is first analyzed in Excel. Additional sales and promotions data is then imported into PowerPivot for Excel, and the data is further analyzed. After the analysis is complete, it is published to the PowerPivot Gallery in SharePoint and distributed via Reporting Services, enabling others in the company to interact with the analysis and develop additional insights. The scenario document that is available from the Microsoft Download Center provides step-by-step guidance, and the accompanying sample data lets you follow along with the document. \r\nThere are three files available for this scenario:\r\n<ol>\r\n<li><b>SelfServiceAnalytics.docx</b>: Detailed description of the scenario, with steps to follow along.</li>\r\n<li><b>SelfServiceAnalytics.pdf</b>: Interactive diagram that shows a visual flow of tasks. </li>\r\n<li><b>SelfServiceAnalytics_SampleData.zip</b>: Access databases and Excel workbooks that are used in the scenario.</li>\r\n</ol>\r\nThe document and sample data are required, and the diagram is helpful in understanding the sequence of tasks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SelfServiceAnalytics.docx",
+        "SelfServiceAnalytics_SampleData.zip",
+        "SelfServiceAnalytics.pdf"
+    ],
+    "detailsSection_file_size": [
+        "733.5 KB",
+        "97.7 MB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Server:</li>\r\n  <ul>\r\n  <li>SharePoint Server 2010 Enterprise Edition, including the following:</li>\r\n    <ul>\r\n    <li>Excel Services</li>\r\n    </ul>\r\n  <li>SQL Server 2008 R2 Enterprise Edition, including the following:</li>\r\n    <ul>\r\n    <li>PowerPivot for SharePoint</li>\r\n    <li>Database Engine (for the Contoso database)</li>\r\n    <li>Reporting Services (installed in SharePoint Integrated mode)</li>\r\n    <li>Reporting Services Add-in for SharePoint Products and Technologies</li>\r\n    </ul>\r\n  </ul>\r\n\r\n\r\n<li>Client:</li>\r\n  <ul>\r\n  <li>Excel 2010</li>\r\n  <li>PowerPivot for Excel</li>\r\n  </ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the scenario document, diagram, and sample data to your computer. After you download the sample data, extract the entire contents: right-click the folder, click Extract All, and then follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11153",
+    "downloadPreload": true
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2019, Management Pack",
+    "downloadDescription": "Skype for Business Server 2019, Management Pack",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WatcherNode.msi",
+            "url": "https://download.microsoft.com/download/e/a/2/ea2467cc-0e44-4d14-b214-f9108990656e/WatcherNode.msi",
+            "size": "1937408",
+            "version": "2046.143",
+            "datePublished": "7/15/2024 4:30:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SkypeForBusiness2019ManagementPacks.msi",
+            "url": "https://download.microsoft.com/download/e/a/2/ea2467cc-0e44-4d14-b214-f9108990656e/SkypeForBusiness2019ManagementPacks.msi",
+            "size": "1523712",
+            "version": "2046.143",
+            "datePublished": "7/15/2024 4:30:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Skype for Business Server 2019, Management Pack contain comprehensive monitoring tools including:</b>\r\n<ul>\r\n<li>End-to-End scenario availability from various locations.</li>\r\n<li>Call reliability and quality perceived by real users.</li>\r\n<li>Component health and performance.</li>\r\n</ul>\r\n<br/>\r\n<b>Active Monitoring Management pack</b>\r\n<ul>\r\n<li>Geographically distributable end-to-end scenario validation for Skype for Business Server 2019 deployments.  This includes coverage for internal, remote and branch office users.</li>\r\n<li>Increased scenario coverage in areas like AV Edge Connectivity and Exchange Unified Message Connectivity.</li>\r\n<li>Enhanced troubleshooting logs to streamline root cause analysis of failures.</li>\r\n</ul>\r\n<br/>\r\n<b>Component and User Management Pack</b>\r\n<ul>\r\n<li>Increased reliability monitoring of real end user calls and conferences.</li>\r\n<li>Integrated media quality alerts driven from Quality of Experience (QoE) data reported by client applications.</li>\r\n<li>Full event and performance monitoring for all Skype for Business Server 2019 roles.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2046.143",
+    "detailsSection_file_name": [
+        "WatcherNode.msi",
+        "SkypeForBusiness2019ManagementPacks.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>Please see Skype for Business Server 2019 System Requirements</ul>\r\n<b>System Center Operations Manager:</b>\r\n<ul>\r\n<li> Support monitoring for Skype for Business Server 2015 </li>\r\n<li>System Center Operations Manager 2007 (reports are not supported for SCOM 2007 version)</li>\r\n<li>All System Center Operations Manager versions are supported</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<br/>\r\nYou can find the documentation for the Management Pack <a href=\"https://docs.microsoft.com/en-us/SkypeForBusiness/tools/scom-management-pack-use-2019\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57511",
+    "downloadPreload": true
+}

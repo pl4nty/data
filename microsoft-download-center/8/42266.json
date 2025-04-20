@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Third Party Notices for Microsoft Dynamics AX 2012 R3",
+    "downloadDescription": "These notices are provided for informational purposes only and are not the license terms under which Microsoft distributes these Third Party Materials.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Third Party Notices for AX 2012 R3 Cumulative Updates RTM.PDF",
+            "url": "https://download.microsoft.com/download/d/1/0/d102d956-ae31-4037-b309-2a0c3b1d1cf4/Third Party Notices for AX 2012 R3 Cumulative Updates RTM.PDF",
+            "size": "608619",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:23:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBS Attribution_AX 2012 R3 RTM Online version_3182014.pdf",
+            "url": "https://download.microsoft.com/download/d/1/0/d102d956-ae31-4037-b309-2a0c3b1d1cf4/MBS Attribution_AX 2012 R3 RTM Online version_3182014.pdf",
+            "size": "378413",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:23:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Third Party Notices for Microsoft Dynamics AX 2012 R3.pdf",
+            "url": "https://download.microsoft.com/download/d/1/0/d102d956-ae31-4037-b309-2a0c3b1d1cf4/Third Party Notices for Microsoft Dynamics AX 2012 R3.pdf",
+            "size": "310113",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:23:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These notices are provided for informational purposes only and are not the license terms under which Microsoft distributes these Third Party Materials. Microsoft Dynamics AX 2012 R3 software is based on or incorporates material from third parties (\"Third Party Code\"). The original file sources, the original copyright notices, and the licenses under which Microsoft received Third Party Code are described in this file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Third Party Notices for AX 2012 R3 Cumulative Updates RTM.PDF",
+        "MBS Attribution_AX 2012 R3 RTM Online version_3182014.pdf",
+        "Third Party Notices for Microsoft Dynamics AX 2012 R3.pdf"
+    ],
+    "detailsSection_file_size": [
+        "594.4 KB",
+        "369.5 KB",
+        "302.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42266",
+    "downloadPreload": true
+}

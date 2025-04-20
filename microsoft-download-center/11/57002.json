@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mixed Reality Motion Controller model drivers version 10.0.17079.1000 (Windows 10 Version 1803)",
+    "downloadDescription": "The Windows Mixed Reality Motion Controller model drivers enable improved features and performance on Windows Mixed Reality Motion Controllers. This driver is only applicable to PCs running Windows 10 Version 1803.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MotionController065C_10.0.17079.1000.zip",
+            "url": "https://download.microsoft.com/download/a/a/6/aa6e1149-1660-4062-a4f9-a593b265fe77/MotionController065C_10.0.17079.1000.zip",
+            "size": "2615957",
+            "version": "10.0.17079.1000",
+            "datePublished": "7/15/2024 4:52:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MotionController065A_10.0.17079.1000.zip",
+            "url": "https://download.microsoft.com/download/a/a/6/aa6e1149-1660-4062-a4f9-a593b265fe77/MotionController065A_10.0.17079.1000.zip",
+            "size": "2600362",
+            "version": "10.0.17079.1000",
+            "datePublished": "7/15/2024 4:52:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mixed reality will unleash the creativity of every person and every organization on the planet. Our journey has been filled with key moments in time that have shown us what is possible as we enter this next era of computing, the era of mixed reality. For more information about Windows Mixed Reality, please visit https://www.microsoft.com/en-us/windows/windows-mixed-reality",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.17079.1000",
+    "detailsSection_file_name": [
+        "MotionController065C_10.0.17079.1000.zip",
+        "MotionController065A_10.0.17079.1000.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PC with Windows 10 Version 1803 or newer compatible with Windows Mixed Reality, and a Windows Mixed Reality headset",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download the driver packages. Make sure to download both packages.<br />\r\n2. Once the driver packages have been downloaded, extract its contents to a location on your PC.<br />\r\n3. Connect your HMD to your PC, turn on your motion controllers and make sure they are paired and connected.<br/>\r\n4. Close the Mixed Reality Portal that automatically opens.<br/>\r\n5. Locate the extracted driver packages. In the \"MotionController065A\" folder, right click on MotionController065AModel.inf and click \"Install\".<br/>\r\n6. In the \"MotionController065C\" folder, right click on MotionController065CModel.inf and click \"Install\".",
+    "relatedResourcesSection": [
+        {
+            "title": "enthusiast's Guide to Windows Mixed Reality",
+            "url": "https://developer.microsoft.com/en-us/windows/mixed-reality/category/Enthusiast's_Guide"
+        },
+        {
+            "title": "windows Mixed Reality",
+            "url": "https://www.microsoft.com/en-us/windows/windows-mixed-reality"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57002",
+    "downloadPreload": true
+}

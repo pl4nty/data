@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Guide for IT Pros for Microsoft Project Server 2010 Beta",
+    "downloadDescription": "Contains information about how to deploy and use Microsoft Project Server 2010 Beta.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ProjectServerAll.doc",
+            "url": "https://download.microsoft.com/download/a/8/b/a8be2b39-b754-41f8-a04e-dc9c21a7ac4e/ProjectServerAll.doc",
+            "size": "2567168",
+            "version": "1",
+            "datePublished": "5/15/2024 3:11:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document supports a preliminary release of Microsoft Project Server 2010 Beta. The content in the book covers information about how to install, configure, and upgrade to Project Server 2010 Beta.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ProjectServerAll.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14756",
+    "downloadPreload": true
+}

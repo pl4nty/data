@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 for Finance and Operations 8.0 Electronic reporting task guides",
+    "downloadDescription": "Task guides created for the Dynamics 365 for Finance and Operations 8.0 Electronic reporting release",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Dynamics 365 for Finance and Operations 8.0 Electronic reporting task guides.zip",
+            "url": "https://download.microsoft.com/download/a/e/1/ae12defa-44aa-4048-b464-47b20c1b5498/Dynamics 365 for Finance and Operations 8.0 Electronic reporting task guides.zip",
+            "size": "238769",
+            "version": "App 8.0",
+            "datePublished": "7/15/2024 4:50:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This folder contains the Task guides that were created for the Electronic reporting features that were released in Microsoft Dynamics 365 for Finance and Operations 8.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "App 8.0",
+    "detailsSection_file_name": [
+        "Dynamics 365 for Finance and Operations 8.0 Electronic reporting task guides.zip"
+    ],
+    "detailsSection_file_size": [
+        "233.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the files, save the zipped file locally, and extract the axtr files. You can then use Task recorder in Dynamics 365 for Finance and Operations to view the content.</LI></UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the zipped folder.</LI>\r\n<LI>Extract the files and save them to your computer.</LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56965",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2010 Short Videos",
+    "downloadDescription": "Lync 2010 Short Videos",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ShortVideos.zip",
+            "url": "https://download.microsoft.com/download/2/4/9/2493ed32-a1b8-4271-b0c1-0a7309c5206d/ShortVideos.zip",
+            "size": "22735396",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Lync 2010 Short Videos provides 15-30 video snippets of the most commonly used features in Lync 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ShortVideos.zip"
+    ],
+    "detailsSection_file_size": [
+        "21.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:Windows Server 2003;Windows Vista;Windows XP;Window 7\r\n\r\nThis download pertains to the following Office applications: Microsoft Lync 2010\r\n\r\nYou can view the Lync 2010 Short Videos with any video player that can view .wmv files, such as Microsoft Windows Media Player.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer. After you save the file, extract the files to a folder. To remove this download, delete the file from the directory where you saved it.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15582",
+    "downloadPreload": true
+}

@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Ribbon: Introductory Tutorial",
+    "downloadDescription": "A step-by-step tutorial that demonstrates how to create a new Win32 application that utilizes the Windows Ribbon user interface.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IntroductoryTutorial.zip",
+            "url": "https://download.microsoft.com/download/0/4/9/049c8026-d557-4e1d-a002-7c33d0e09ebc/IntroductoryTutorial.zip",
+            "size": "2069863",
+            "version": "1.00",
+            "datePublished": "4/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A step-by-step tutorial that demonstrates how to create a new Win32 application that utilizes the Windows Ribbon user interface.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.00",
+    "detailsSection_file_name": [
+        "IntroductoryTutorial.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Visual Studio 2005 or newer </LI>\r\n<LI>Windows SDK (v7.0)</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "The file IntroductoryTutorial.zip contains all instructions, bitmaps, and sample code necessary to complete the tutorial.",
+    "relatedResourcesSection": [
+        {
+            "title": "channel 9: Windows 7 Ribbon Deep Dive",
+            "url": "http://channel9.msdn.com/posts/yochay/Windows-7-Ribbon-Deep-Dive/"
+        },
+        {
+            "title": "windows Ribbon: Downloadable Samples",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=141e13e8-b10b-4356-aaa5-609b2981574a&displaylang=en"
+        },
+        {
+            "title": "windows Ribbon Documentation (MSDN)",
+            "url": "http://msdn.microsoft.com/en-us/library/dd371191.aspx"
+        },
+        {
+            "title": "channel 9: Windows 7 Ribbon Markup Overview",
+            "url": "http://channel9.msdn.com/posts/yochay/Windows-7-Ribbon-Markup-Overview/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10346",
+    "downloadPreload": true
+}

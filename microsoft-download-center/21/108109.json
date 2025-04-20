@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "FSLogix 25.04",
+    "downloadDescription": "Latest release for FSLogix addressing five (5) issues from the previous release.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FSLogix_Apps_3.25.401.15305.zip",
+            "url": "https://download.microsoft.com/download/38803434-6d52-4668-b9a4-4d9bcf07248e/FSLogix_25.04.zip",
+            "size": "94849478",
+            "version": "3.25.401.15305",
+            "datePublished": "4/7/2025 6:15:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "FSLogix 25.02 introduced five (5) issues. This latest release provides changes and updates needed to address them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.25.401.15305",
+    "detailsSection_file_name": [
+        "FSLogix_Apps_3.25.401.15305.zip"
+    ],
+    "detailsSection_file_size": [
+        "90.5 MB"
+    ],
+    "detailsSection_file_date": "4/7/2025",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "release Notes",
+            "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108109",
+    "downloadPreload": true
+}

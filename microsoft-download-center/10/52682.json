@@ -1,0 +1,227 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 Reporting Services Add-in for Microsoft SharePoint\u00ae",
+    "downloadDescription": "Reporting Services Add-in for Microsoft SharePoint technologies allows you to integrate Reporting Services features with the collaborative SharePoint experience.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rsSharePoint.msi",
+            "url": "https://download.microsoft.com/download/2/8/a/28a48fee-9014-4dba-9e09-478f3b990372/ENU/x64/rsSharePoint.msi",
+            "size": "49590272",
+            "version": "13.0.1601.5",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        }
+    ],
+    "detailsSection": "The SQL Server 2016 Reporting Services Add-in for Microsoft SharePoint technologies deploys the Reporting Services user interface pages and features on a SharePoint web front-end server. <br/>\r\n<ul>\r\n<li>The SQL Server 2016 version of the Reporting Services add-in supports SharePoint 2010 and SharePoint 2013.</li>\r\n<li>To use connected mode features of Reporting Services with the 2016 add-in, the report server version must also be 2016 version.</li>\r\n<ul>\r\n<li>For more information on supported versions, see <a href = \"http://go.microsoft.com/fwlink/?LinkID=324353\" >\u201cSupported Combinations of SharePoint and Reporting Services Components\u201d.</a> </li>\r\n<li>For more information on Local mode and connected mode, see <a href = \"http://go.microsoft.com/fwlink/?LinkID=324354\" >\u201cUse Access Services with SQL Reporting Services\u201d.</a></li>\r\n</ul>\r\n</ul>\r\n<br/>\r\nAfter you install the Reporting Services Add-in and configure your servers for integration, you can publish Reporting Services content to a SharePoint library and then view and manage those documents directly from a SharePoint site. The Reporting Services Add-in provides the following functionality: <br/>\r\n<br />\n<ul>\r\n<li>Power View, a feature of Microsoft SQL Server 2016 Reporting Services Add-in for Microsoft SharePoint Server 2010 Enterprise Edition, is an interactive data exploration, visualization, and presentation experience. It provides drag-and-drop ad hoc reporting for business users such as data analysts, business decision makers, and information workers. Power View reports are in a new file format, RDLX.</li>\r\n<li>Open reports in Report Builder from a SharePoint library, and save reports to SharePoint libraries.</li>\r\n<li>A Report Viewer Web Part, which provides report-viewing capability, export to multiple rendering formats, page navigation, search, print, and zoom.</li>\r\n<li>SharePoint web pages so that you can create subscriptions and schedules, and manage reports and data sources. </li>\r\n<li>Support for standard SharePoint Foundation 2010 and SharePoint Server 2010 features including document management, collaboration, security, and deployment with report server content types. </li>\r\n<li>The ability to add the Reporting Services Report Viewer Web Part to any page or dashboard on a SharePoint site and customize its appearance.</li>\r\n<li>The ability to use SharePoint permission levels and roles to control access to report server content. You can also use SharePoint forms authentication to support access over Internet connections.</li>\r\n<li>Reporting Services data alerts, a data-driven alerting solution for SharePoint Server 2010 Enterprise Edition that informs you about changes in report data that are of interest to you, and at a relevant time.</li>\r\n\r\n</ul>\r\n<br/>\r\nFor a detailed list of what\u2019s new in Reporting Services, see <a href = \"http://go.microsoft.com/fwlink/?LinkID=324355\" >What's New (Reporting Services)</a> for more information. \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.1601.5",
+    "detailsSection_file_name": [
+        "rsSharePoint.msi"
+    ],
+    "detailsSection_file_size": [
+        "47.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>37 MB of available hard disk space is needed for the Add-in.</li>\n  <li>Review the Windows SharePoint Foundation or SharePoint Services documentation for relevant system requirements.</li>\n  </ul>\n<br />\nThe computer must meet the following software requirements:\n<ul>\n  <li>One of the following:</li>\r\n<ul>\r\n<li>Microsoft SharePoint 2010.</li>\r\n<li>Microsoft SharePoint Foundation 2010 with .NET Programmability Support.</li>\r\n<li>Microsoft SharePoint Server 2013.</li>\r\n</ul>\r\n<li>To use connected mode Reporting Services features, Microsoft SQL Server 2016 Reporting Services in SharePoint mode is required.</li>\n <li>The Web sites cannot be enabled for Anonymous access.</li>\n  <li>Microsoft Internet Explorer 7.0 with the latest service packs.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\nYou can install and configure the servers in any order, but integrated operations will not be available until the configuration steps are complete for both servers. For detailed information on the installation steps, see the Readme for the existing Reporting Services Add-in.<br /><br />\n<ul>\n  <b>Step 1:</b> Install an instance of a SharePoint product.<br /><br />\n  <b>Step 2:</b> Download the Reporting Services Add-in (RsSharePoint.msi) by clicking the Download button on this page. To start the installation immediately, click Run. To install later, click Save.<br /><br />\n  <b>Step 3:</b>To allow local mode Reporting Services functionality, Install the Reporting Services Add-in on web front-end servers. For connected mode Reporting Services functionality, complete the remaining steps.<br /><br />\n  <b>Step 4:</b> Install SQL Server 2016 Reporting Services on a SharePoint application server. In the SQL Server 2016 installation wizard, choose \u2018Reporting Services \u2013 SharePoint\u2019 on the feature selection page. You can also install the Reporting Services add-in from the SQL Server 2016 installation wizard instead of downloading from this page.<br /><br />\n  <b>Step 5:</b>Configure the Reporting Services SharePoint service and create at least one Reporting Services service application.<br /><br />\n  <b>Step 6:</b> Set permissions and add Reporting Services content types.<br /><br />\n  <b>Step 7:</b> Verify the installation.\n</ul><br />\r\n\r\nThe Reporting Services add-in should be installed on each SharePoint web server that you want to use for accessing the Reporting Services Local mode features or the connected SharePoint mode features such as Power View and data alerts.<br/>\r\n<br/>\r\nFor detailed information on installing the add-in, see <a href = \"http://go.microsoft.com/fwlink/?LinkID=324356\" >\"Install or Uninstall the Reporting Services Add-in for SharePoint\u201d</a>.<br/>\r\n<br/>\r\n\r\n",
+    "additionalInformationSection": "<ul>\n  <li>If you have questions about the Reporting Services Add-in, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=82743\">SQL Server Reporting Services Forum on MSDN</a>.</li><br /><br />\n  <li>Help improve the Reporting Services Add-in by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul>\n<br />\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52682",
+    "downloadPreload": true
+}

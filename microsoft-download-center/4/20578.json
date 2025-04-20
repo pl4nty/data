@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2003 SP2 R2 Common Criteria Administrator Guide 3.0",
+    "downloadDescription": "This document is the Microsoft Windows Server 2003 SP2 R2 Evaluated Configuration Administrator\u2019s Guide version 3.0 that was used in the completion of the Windows XP SP2 and Windows Server 2003 SP2 R2 Common Criteria security evaluation.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows Server 2003 SP2 Administrator's Guide 3.0.xps",
+            "url": "https://download.microsoft.com/download/e/4/f/e4f08c2e-36d6-4b5d-98f2-8bbcb969bca2/Windows Server 2003 SP2 Administrator's Guide 3.0.xps",
+            "size": "41697475",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2003 SP2 Administrator's Guide 3.0.pdf",
+            "url": "https://download.microsoft.com/download/e/4/f/e4f08c2e-36d6-4b5d-98f2-8bbcb969bca2/Windows Server 2003 SP2 Administrator's Guide 3.0.pdf",
+            "size": "39088994",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides sufficient guidance to allow an administrator to securely operate Windows Server 2003 in accordance with the requirements stated in the Microsoft Windows 2003, XP Professional and XP Embedded Security Target. <br />\n<br />\nThe Microsoft Windows 2003, XP Professional and XP Embedded Security Target, defines the requirements for Version 3.0 of the Windows Server 2003 and XP Professional Common Criteria Evaluation and is henceforth referred to as the Windows 2003/XP V3 ST.  The Windows 2003/XP V3 ST provides a set of security requirements taken from the CC for Information Technology (IT) Security Evaluation. Windows Server 2003 product was evaluated against the Windows 2003/XP V3 ST and found to satisfy the ST requirements. <br />\n<br />\nThis document is targeted at the administrator and provides a description of how to perform the administrative security functions needed to securely operate Windows Server 2003 in accordance with the ST requirements.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "Windows Server 2003 SP2 Administrator's Guide 3.0.xps",
+        "Windows Server 2003 SP2 Administrator's Guide 3.0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "39.8 MB",
+        "37.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 SP2 including R2, Standard, Enterprise, Datacenter, x64, and Itanium Editions;<br />\nWindows XP Professional SP2 and x64 SP2;<br />\nWindows XP Embedded SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition"
+    ],
+    "installInstructionSection": "1.\tClick the Download button on this page to start the download. <br />\n2.\tDo one of the following: <br />\no\tTo start the installation immediately, click Open or Run this program from its current location. <br />\no\tTo copy the download to your computer for installation at a later time, click Save or Save this program to disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20578",
+    "downloadPreload": true
+}

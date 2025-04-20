@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows_Test",
+    "downloadDescription": "Windows_Test",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.42.0.0_UBUNTU-20.04-64_GA_08Apr2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/9/d/0/9d07971b-4159-49d1-9b3f-2aa631ba7218/Microsoft-ASR_UA_9.42.0.0_UBUNTU-20.04-64_GA_08Apr2021_release.tar.gz",
+            "size": "95136328",
+            "version": "9.42.0.0",
+            "datePublished": "1/15/2024 5:01:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.42.0.0_Windows_GA_08Apr2021_release.exe",
+            "url": "https://download.microsoft.com/download/9/d/0/9d07971b-4159-49d1-9b3f-2aa631ba7218/Microsoft-ASR_UA_9.42.0.0_Windows_GA_08Apr2021_release.exe",
+            "size": "151858112",
+            "version": "9.42.0.0",
+            "datePublished": "1/15/2024 5:01:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows_Test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.42.0.0",
+    "detailsSection_file_name": [
+        "Microsoft-ASR_UA_9.42.0.0_UBUNTU-20.04-64_GA_08Apr2021_release.tar.gz",
+        "Microsoft-ASR_UA_9.42.0.0_Windows_GA_08Apr2021_release.exe"
+    ],
+    "detailsSection_file_size": [
+        "90.7 MB",
+        "144.8 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Double click on the installer and follow instuctions on the wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103015",
+    "downloadPreload": true
+}

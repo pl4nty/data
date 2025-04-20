@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Scaling Applications Using Windows Azure Cloud Services Poster",
+    "downloadDescription": "Depicts the phases for scaling an application using Windows Azure Cloud Services including designing, deploying, and tuning.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Azure Scalability.pdf",
+            "url": "https://download.microsoft.com/download/0/a/1/0a1cb0ac-8bf0-456d-8838-bc7c3ab3881b/Windows Azure Scalability.pdf",
+            "size": "1010452",
+            "version": "1",
+            "datePublished": "7/15/2024 3:12:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Describes the benefits of using Cloud Services to scale applications for architects and developers. Depicts the scale-out process in three phases: <br/>\r\n<br/>\r\n<ol>\r\n<li><b>Plan and Design</b> for optimal performance using specific patterns and practices.</li>\r\n<li><b>Build and Deploy</b> worker and web instances and their support services as a scale unit that can be easily duplicated and deployed.</li>\r\n<li><b>Run and Tune</b> the processes that refine the application and enable scale-out.</li>\r\n</ol><br/>\r\n<br/>\r\n<b>Note:</b> If you open the .pdf file in Adobe Acrobat reader, you can click different sections of the poster to link to additional relevant information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows Azure Scalability.pdf"
+    ],
+    "detailsSection_file_size": [
+        "986.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Other Requirements:</b><br/>\r\n<br/>\r\n<ul>\r\n<li>Adobe Acrobat Reader</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "The poster is intended to be printed and measures 26\u201d x 39\u201d. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36837",
+    "downloadPreload": true
+}

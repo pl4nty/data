@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Connector for Microsoft Dynamics installation guides",
+    "downloadDescription": "These guides contain installation and configuration procedures for the Connector for Microsoft Dynamics.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSDynConnectorSLconfig.pdf",
+            "url": "https://download.microsoft.com/download/c/a/6/ca6bc295-1326-4809-bc78-866deb3f4a33/MSDynConnectorSLconfig.pdf",
+            "size": "606106",
+            "version": "2009, 2010, 2012",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDynConnectorNAVconfig.pdf",
+            "url": "https://download.microsoft.com/download/c/a/6/ca6bc295-1326-4809-bc78-866deb3f4a33/MSDynConnectorNAVconfig.pdf",
+            "size": "519042",
+            "version": "2009, 2010, 2012",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MSDynConnectorInst.pdf",
+            "url": "https://download.microsoft.com/download/c/a/6/ca6bc295-1326-4809-bc78-866deb3f4a33/MSDynConnectorInst.pdf",
+            "size": "581985",
+            "version": "2009, 2010, 2012",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDynConnectorGPconfig.pdf",
+            "url": "https://download.microsoft.com/download/c/a/6/ca6bc295-1326-4809-bc78-866deb3f4a33/MSDynConnectorGPconfig.pdf",
+            "size": "702846",
+            "version": "2009, 2010, 2012",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDynConnectorAXconfig.pdf",
+            "url": "https://download.microsoft.com/download/c/a/6/ca6bc295-1326-4809-bc78-866deb3f4a33/MSDynConnectorAXconfig.pdf",
+            "size": "856704",
+            "version": "2009, 2010, 2012",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Connector for Microsoft Dynamics is an integration solution that is targeted specifically at the Microsoft Dynamics family of products, and can integrate data between Microsoft Dynamics CRM and other Microsoft Dynamics ERP databases. This tool is intended for an implementation where Microsoft Dynamics CRM is used to manage business contacts, track leads, enter sales orders, and perform other sales and marking activities, and where the Microsoft Dynamics ERP system is used to perform accounting functions, manage a company\u2019s chart of accounts, and maintain customer, vendor, item, employee, and other records.<br />\r\n<br />\r\nThese guides contain information about the installation and configuration procedures needed to synchronize Microsoft Dynamics CRM with your Microsoft Dynamics ERP system. <br />\r\n<br />\r\nDownload the version of the installation guide most appropriate for your Microsoft Dynamics ERP system. <br />\r\n<br />\r\n<b>Note:</b> Setup and configuration expertise are critical to successful deployment of this tool. For additional resources and product download links, refer to the product pages available on PartnerSource. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009, 2010, 2012",
+    "detailsSection_file_name": [
+        "MSDynConnectorSLconfig.pdf",
+        "MSDynConnectorNAVconfig.pdf",
+        "MSDynConnectorInst.pdf",
+        "MSDynConnectorGPconfig.pdf",
+        "MSDynConnectorAXconfig.pdf"
+    ],
+    "detailsSection_file_size": [
+        "591.9 KB",
+        "506.9 KB",
+        "568.3 KB",
+        "686.4 KB",
+        "836.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for using Connector for Microsoft Dynamics with Microsoft Dynamics AX, see <a href=\"https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/MDAX2009_CRMConnector\">Connector for Microsoft Dynamics or Microsoft Dynamics AX</a>.</LI>\r\n<LI>For information about the system requirements for using Connector for Microsoft Dynamics with Microsoft Dynamics GP, see <a href=\"https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/MDGP10_CRMAdapter\">Connector for Microsoft Dynamics Feature for Microsoft Dynamics GP</a>.</LI>\r\n<LI>For information about the system requirements for using Connector for Microsoft Dynamics with Microsoft Dynamics NAV 2009 R2, see <a href=\"https://mbs.microsoft.com/partnersource/deployment/resources/productreleases/MDNAV2009R2_CRMConnector\">Connector for Microsoft Dynamics for Microsoft Dynamics NAV 2009 R2</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF file format.</LI>\r\n<LI>Save the files to your computer.</LI>\r\n<LI>Repeat these steps on each computer where you want to install the manuals, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10381",
+    "downloadPreload": true
+}

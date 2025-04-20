@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Fact Sheets",
+    "downloadDescription": "Quick overview of the accessibility features of major Microsoft products.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AccessibilityInWindows7.pdf",
+            "url": "https://download.microsoft.com/download/7/9/e/79e8744f-8e49-4264-9d5b-b702fb3cd63f/AccessibilityInWindows7.pdf",
+            "size": "769451",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AccessibilityinOffice2010.pdf",
+            "url": "https://download.microsoft.com/download/7/9/e/79e8744f-8e49-4264-9d5b-b702fb3cd63f/AccessibilityinOffice2010.pdf",
+            "size": "2740504",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AccessibilityInIE8.pdf",
+            "url": "https://download.microsoft.com/download/7/9/e/79e8744f-8e49-4264-9d5b-b702fb3cd63f/AccessibilityInIE8.pdf",
+            "size": "531565",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft's accessible technology solutions enable people of all abilities to realize their potential. <br />\n<br />\nComputer technology is an important and powerful tool for people with difficulties and impairments. <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "AccessibilityInWindows7.pdf",
+        "AccessibilityinOffice2010.pdf",
+        "AccessibilityInIE8.pdf"
+    ],
+    "detailsSection_file_size": [
+        "751.4 KB",
+        "2.6 MB",
+        "519.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "FreeBSD",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Longhorn (Windows Code Name) ",
+        "Macintosh",
+        "MS-DOS",
+        "Solaris",
+        "TabletPC",
+        "Unix",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 3.1",
+        "Windows 3.11",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows CE",
+        "Windows CE .NET",
+        "Windows ME",
+        "Windows Mobile 2002 software for Pocket PCs",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows Mobile 2003 software for Smartphone  ",
+        "Windows NT",
+        "Windows NT Embedded ",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Embedded",
+        "Windows XP Embedded Service Pack 1",
+        "Windows XP Embedded Service Pack 2 ",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Xenix"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1369",
+    "downloadPreload": true
+}

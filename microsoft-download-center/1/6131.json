@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Staff Accounting Update for HRP (Russian Federation)",
+    "downloadDescription": "This white paper describes the updates released in January 2010 and July 2010 for the Human Resource and Payroll (HRP) functionality for the Russian Federation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Staff_accounting_update_for_HRP_(Russian_Federation).xps",
+            "url": "https://download.microsoft.com/download/7/2/d/72d7d56a-9e9d-4a50-9c95-381ee9237100/Staff_accounting_update_for_HRP_(Russian_Federation).xps",
+            "size": "1040847",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Staff_accounting_update_for_HRP_(Russian_Federation).pdf",
+            "url": "https://download.microsoft.com/download/7/2/d/72d7d56a-9e9d-4a50-9c95-381ee9237100/Staff_accounting_update_for_HRP_(Russian_Federation).pdf",
+            "size": "719757",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper describes Microsoft Dynamics AX features, released in two hotfixes, that are specific to users in the Russian Federation. These new features were released in January 2010 and August 2010, and have been consolidated into a single white paper for your convenience. The features and their issue dates are as follows: <br /><br />\r\n<UL><LI>Legislative changes related to NDFL \u2013 January 2010</LI>\r\n<LI>Legislative changes to off-budget fund contributions \u2013 January 2010</LI>\r\n<LI>Changes to Social Insurance Fund (SIF) labor requirements \u2013 January 2010</LI>\r\n<LI>Changes to sick list recalculation \u2013 January 2010</LI>\r\n<LI>Storno payroll operations \u2013 January 2010</LI>\r\n<LI>Recalculation of off-budget funds and generation of an Individual card of amounts payable (2010) report \u2013 August 2010</LI>\r\n<LI>Generation of insurance contribution and seniority data reports \u2013 August 2010</LI></UL>\r\n<br /><br />\r\nFor more information about other regional features that apply to the Russian Federation, refer to the Applications and Business Processes Help. Information that is specific to the Russian Federation includes (RUS) in the title. For more information about download prerequisites, and to access the download, go to the Human Resource Management and Payroll for Microsoft Dynamics AX 2009 (Russia) page on <a href=\"https://mbs.microsoft.com/partnersource/support/selfsupport/productreleases/AX2009HRP_RU\">PartnerSource</a> or <a href=\"https://mbs.microsoft.com/customersource/downloads/servicepacks/AX2009HRP_RU\">CustomerSource</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Staff_accounting_update_for_HRP_(Russian_Federation).xps",
+        "Staff_accounting_update_for_HRP_(Russian_Federation).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1016.5 KB",
+        "702.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6131",
+    "downloadPreload": true
+}

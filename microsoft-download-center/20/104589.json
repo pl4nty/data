@@ -1,0 +1,139 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Service Desk - Omnichannel for Customer Service\u00a0package 3.31",
+    "downloadDescription": "Download the Package Deployer, Packages, and PowerShell Script for Omnichannel for Customer Service on Unified Service Desk.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OmnichannelUnifiedServiceDeskPackageDeployer.zip",
+            "url": "https://download.microsoft.com/download/7/b/6/7b671231-8e7a-42d1-ae9d-7a6b958983b6/OmnichannelUnifiedServiceDeskPackageDeployer.zip",
+            "size": "19269304",
+            "version": "3.31",
+            "datePublished": "3/15/2024 4:31:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "Unified Service Desk -Omnichannel for Customer Service package provides solutions to use omnichannel with Unified Service Desk  in the specified Microsoft Dynamics 365 for Customer Engagement organization.\r\nThe download contains the setup for the following:\r\n\r\n<ul>\r\n<li>Microsoft Dynamics CRM Package Deployer</li>\r\n<li>Unified Service Desk - Omnichannel for Customer Service\u00a0packages</li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.31",
+    "detailsSection_file_name": [
+        "OmnichannelUnifiedServiceDeskPackageDeployer.zip"
+    ],
+    "detailsSection_file_size": [
+        "18.4 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Unified Service Desk - Omnichannel for Customer Service requires an instance of Microsoft Dynamics 365 for Customer Engagement apps (online) and Unified Service Desk client application.\r\nFor detailed information about the minimum system requirements for installing the Unified Service Desk client application and deploying the sample packages,, see <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=2097347\">Pre-requisites and system requirements of Omnichannel for Customer Service</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, select <b>Download</b>.</li>\r\n<li>Choose the file that you want to download, and select <b>Next</b>.</li> \r\n<li>You'll be prompted to run or save the file. Select <b>Save</b> to save the file to your computer.</li>\r\n</ol>\r\n<ul>\r\n<li>If you downloaded the Unified Service Desk package archive file, extract the contents of the package. Next, run the PackageDeployer.exe file in the extracted folder to select and deploy a Unified Service Desk package.</li>\r\n</ul>\r\n<br/>\r\nFor more information, see <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=2097228\">Deploy Unified Service Desk - Omnichannel for Customer Service package</a>.\r\n ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104589",
+    "downloadPreload": true
+}

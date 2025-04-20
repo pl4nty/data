@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2010 Team Foundation Server Monitoring Management Pack",
+    "downloadDescription": "The Team Foundation Server 2010 Monitoring Management Pack provides both proactive and reactive monitoring of Microsoft Team Foundation Server 2010. It monitors TFS components such as application tier server instances, team project collections, build servers, and proxy servers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Team Foundation Server 2010 Monitoring Management Pack.msi",
+            "url": "https://download.microsoft.com/download/a/a/5/aa5ce2fd-7aab-4001-80b9-7644b0198e9c/Team Foundation Server 2010 Monitoring Management Pack.msi",
+            "size": "5652480",
+            "version": "1.0.0.7",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFS2010MPGuide.docx",
+            "url": "https://download.microsoft.com/download/a/a/5/aa5ce2fd-7aab-4001-80b9-7644b0198e9c/TFS2010MPGuide.docx",
+            "size": "5467189",
+            "version": "1.0.0.7",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Team Foundation Server 2010 Monitoring Management Pack provides both proactive and reactive monitoring of Microsoft Team Foundation Server 2010. It monitors TFS components such as application tier server instances, team project collections, build servers, and proxy servers. <br/>\r\n<br/>\r\n<b>Feature Summary </b><br/>\r\nThe monitoring provided by this management pack includes availability and configuration monitoring, performance data collection, and default thresholds. You can integrate the monitoring of Team Foundation Server components into your service-oriented monitoring scenarios. <br/>\r\n<ul>\r\n<li> Auto discovery of TFS components </li>\r\n<li> Implements containment hierarchy, reflecting logical architecture of the Product  </li>\r\n<li> Implements a proper health model using Monitors  </li>\r\n<li> Contains tasks, diagnostic and recovery for certain failures  </li>\r\n<li> Provides events that indicate service outages   </li>\r\n<li> Provides alerts that show configuration issues and connected data source changes </li>\r\n<li> Verification that all dependent services are running </li>\r\n<li> Triggers targeted running of BPA against TFS Servers from Operator Console  </li>\r\n</ul>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>10/13/2010 - Original English release, version 1.0.0.0</li>\r\n<li>11/19/2012 - Updated English release, version 1.0.0.7</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.7",
+    "detailsSection_file_name": [
+        "Team Foundation Server 2010 Monitoring Management Pack.msi",
+        "TFS2010MPGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB",
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software</b>:</li>\r\n<ul>\r\n<li>Team Foundation Server 2010</li>\r\n<li>System Center Operations Manager 2007 or System Center Operations Manager 2012</li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please see the included MP guide for complete installation instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "team Foundation Server 2010 Home Page",
+            "url": "http://msdn.microsoft.com/en-us/vstudio/ff637362.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6325",
+    "downloadPreload": true
+}

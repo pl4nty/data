@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Glenn Block and Brian Noyes on Prism",
+    "downloadDescription": "While at TechEd 2008 in Orlando Carl and Richard recorded this interview with Glenn Block from Microsoft and Brian Noyes from iDesign about the Prism project, formally named Composite Application Guidance, which promises to simplify and organize WPF development projects.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080904BlockNoyes.zip",
+            "url": "https://download.microsoft.com/download/b/1/2/b12b9900-44ab-459f-886f-a27ac78ccb02/20080904BlockNoyes.zip",
+            "size": "33305637",
+            "version": "1.0",
+            "datePublished": "11/15/2023 3:13:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Glenn Block is the Technical Product Planner for the Client UX program at patterns & practices. As Product Planner he is responsible for driving the vision and creation of p&p client deliverables including the Web Client and Smart Client software factories. <br />\n<br />\nBrian Noyes is Chief Architect with IDesign, Microsoft&rsquo;s <a title=\"http://www.microsoft.com/rd\" href=\"http://www.microsoft.com/rd\" target=\"_blank\">Regional Director </a>for Virginia and a <a title=\"http://mvp.support.microsoft.com/\" href=\"http://mvp.support.microsoft.com/\" target=\"_blank\">Microsoft Most Valuable Professional</a> (MVP). Brian&rsquo;s latest   book is <a title=\"http://www.amazon.com/gp/product/032126892X/103-1313517-8495834?v=glance&amp;n=283155\" href=\"http://www.amazon.com/gp/product/032126892X/103-1313517-8495834?v=glance&amp;n=283155\" target=\"_blank\">Data Binding with Windows Forms 2.0,</a> for Addison Wesley, and   he is working on his next book, Smart Client Deployment with ClickOnce. Brian   publishes <a title=\"http://www.idesign.net/idesign/DesktopDefault.aspx?tabindex=-1&amp;tabid=9#Noyes\" href=\"http://www.idesign.net/idesign/DesktopDefault.aspx?tabindex=-1&amp;tabid=9#Noyes\">articles </a>in a variety of publications and <a title=\"http://www.idesign.net/idesign/DesktopDefault.aspx?tabindex=-1&amp;tabid=8#noyes\" href=\"http://www.idesign.net/idesign/DesktopDefault.aspx?tabindex=-1&amp;tabid=8#noyes\">speaks </a>at international conferences and events including Microsoft TechEd   US, Europe, and   Malaysia, Visual Studio Connections,   and DevTeach. Brian is a top-rated speaker on the <a title=\"http://www.ineta.org/DesktopDefault.aspx?tabindex=2&amp;tabid=14\" href=\"http://www.ineta.org/DesktopDefault.aspx?tabindex=2&amp;tabid=14\" target=\"_blank\">INETA Speakers Bureau </a>and travels the country frequently   speaking to developer user groups. Brian got started with programming to   stimulate his brain while flying <a title=\"http://www.softinsight.com/LifeBeforeProgramming.aspx\" href=\"http://www.softinsight.com/LifeBeforeProgramming.aspx\" target=\"_blank\">F-14   Tomcats </a>in the Navy, graduating from Top Gun and U.S. Naval Test Pilot   School. You can always find out the latest things Brian is up to through his <a title=\"http://www.softinsight.com/bnoyes/\" href=\"http://www.softinsight.com/bnoyes/\" target=\"_blank\">blog</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080904BlockNoyes.zip"
+    ],
+    "detailsSection_file_size": [
+        "31.8 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16748",
+    "downloadPreload": true
+}

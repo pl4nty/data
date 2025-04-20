@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 Guides: Field Service",
+    "downloadDescription": "This page includes links to the Field Service documentation resources for Microsoft Dynamics GP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DepotManagement.pdf",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/DepotManagement.pdf",
+            "size": "809781",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReturnsManagement.xps",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/ReturnsManagement.xps",
+            "size": "1662029",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceCallManagement.xps",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/ServiceCallManagement.xps",
+            "size": "2733745",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DepotManagement.xps",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/DepotManagement.xps",
+            "size": "963792",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceCallManagement.pdf",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/ServiceCallManagement.pdf",
+            "size": "1872536",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PreventiveMaintenance.xps",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/PreventiveMaintenance.xps",
+            "size": "618059",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PreventiveMaintenance.pdf",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/PreventiveMaintenance.pdf",
+            "size": "458606",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ContractAdministration.pdf",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/ContractAdministration.pdf",
+            "size": "1106666",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReturnsManagement.pdf",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/ReturnsManagement.pdf",
+            "size": "1085259",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContractAdministration.xps",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc16cb7-6966-49fe-99be-fb50948be779/ContractAdministration.xps",
+            "size": "1796086",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components: <br />\n<UL><LI><b>Field Service - Contract Administration</b> (ContractAdministration.pdf or ContractAdministration.xps): Explains how to set up, enter, and maintain quote and contract documents. Also includes transaction entry and posting information, and explains how Contract Administration can be integrated with Service Call Management, Sales Order Processing, and General Ledger.</LI>\n<LI><b>Field Service - Depot Management</b> (DepotManagement.pdf or DepotManagement.xps): Explains how to enter work orders, schedule and track activities within your internal repair depot, and keep track of the usage of parts and labor in the repair process. Also describes how Depot Management can be integrated with Returns Management and General Ledger.</LI>\r\n<LI><b>Field Service - Preventive Maintenance</b> (PreventiveMaintenance.pdf or PreventiveMaintenance.xps): Explains how to use Preventive Maintenance with Service Call Management to automatically generate service calls and requests for preventive maintenance work.</LI>\r\n<LI><b>Field Service - Returns Management</b> (ReturnsManagement.pdf or ReturnsManagement.xps): Explains how to set up, enter, and maintain return materials authorization and return to vendor documents. Also describes how Returns Management can be integrated with Service Call Management and Sales Order Processing.</LI>\r\n<LI><b>Field Service - Service Call Management</b> (ServiceCallManagement.pdf or ServiceCallManagement.pdf): Explains how to set up Service Call Management, enter customer service requests, dispatch technicians, bill customers for time and materials, and manage parts, labor, and miscellaneous charges. Also describes how Service Call Management can be integrated with Contract Administration, Preventive Maintenance, and Returns Management.</LI>\r\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "DepotManagement.pdf",
+        "ReturnsManagement.xps",
+        "ServiceCallManagement.xps",
+        "DepotManagement.xps",
+        "ServiceCallManagement.pdf",
+        "PreventiveMaintenance.xps",
+        "PreventiveMaintenance.pdf",
+        "ContractAdministration.pdf",
+        "ReturnsManagement.pdf",
+        "ContractAdministration.xps"
+    ],
+    "detailsSection_file_size": [
+        "790.8 KB",
+        "1.6 MB",
+        "2.6 MB",
+        "941.2 KB",
+        "1.8 MB",
+        "603.6 KB",
+        "447.9 KB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF or XPS file format.</LI>\r\n<LI>Save the files to your computer. When prompted for a location for the files, save them to the Documentation folder in your Microsoft Dynamics GP 2010 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2010\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing files, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the manuals, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1412",
+    "downloadPreload": true
+}

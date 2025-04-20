@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual Visits infographic for healthcare",
+    "downloadDescription": "This customizable infographic for your website teaches your clients how to use Virtual Visits in Microsoft Teams.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VirtualVisit_Healthcare_Infographic.pptx",
+            "url": "https://download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pptx",
+            "size": "1578256",
+            "version": "1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VirtualVisit_Healthcare_Infographic.pdf",
+            "url": "https://download.microsoft.com/download/4/d/3/4d3d9c53-0304-4aea-a56a-60a16402c58f/VirtualVisit_Healthcare_Infographic.pdf",
+            "size": "312003",
+            "version": "1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This infographic for your website teaches your clients the basics of joining Virtual Visits with Microsoft Teams. You can customize the infographic with your organization's branding, and add any additional information that your clients need to join appointments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VirtualVisit_Healthcare_Infographic.pptx",
+        "VirtualVisit_Healthcare_Infographic.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "304.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Teams",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li>\r\n<li>Customize the infographic by incorporating your organization's branding and adding any additional information that your clients need to join Virtual Visits.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104033",
+    "downloadPreload": true
+}

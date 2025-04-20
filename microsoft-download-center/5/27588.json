@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Windows PowerShell Command Builder Getting Started Guide",
+    "downloadDescription": "The Windows PowerShell Command Builder for Microsoft SharePoint 2010, Microsoft SharePoint 2013, SharePoint Online, and Microsoft Office 365 is an HTML5 application that is designed to help IT professionals and power users learn how to use Windows PowerShell for administrative tasks.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows-PowerShell-command-builder-guide.docx",
+            "url": "https://download.microsoft.com/download/5/5/c/55cbf854-d7fd-43d9-b6f0-813ab33ac360/Windows-PowerShell-command-builder-guide.docx",
+            "size": "174452",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-PowerShell-command-builder-guide.pdf",
+            "url": "https://download.microsoft.com/download/5/5/c/55cbf854-d7fd-43d9-b6f0-813ab33ac360/Windows-PowerShell-command-builder-guide.pdf",
+            "size": "335652",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-PowerShell-command-builder-guide.xps",
+            "url": "https://download.microsoft.com/download/5/5/c/55cbf854-d7fd-43d9-b6f0-813ab33ac360/Windows-PowerShell-command-builder-guide.xps",
+            "size": "419190",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows PowerShell Command Builder enables IT professionals and power users to visually assemble commands related to SharePoint 2010, SharePoint 2013, SharePoint Online, and Office 365 on a Design Surface in a browser and take those commands to their respective products. The Windows PowerShell Command Builder provides an intelligent user experience. After you drag a verb or noun object on the Design Surface, the interface will hide either the verbs or nouns that are not associated with the verb or noun placed on the Design Surface. After you construct a command, you can copy the command to a Windows PowerShell script, the SharePoint 2010 Management Shell, the SharePoint 2013 Management Shell, or other desired location to be saved or executed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Windows-PowerShell-command-builder-guide.docx",
+        "Windows-PowerShell-command-builder-guide.pdf",
+        "Windows-PowerShell-command-builder-guide.xps"
+    ],
+    "detailsSection_file_size": [
+        "170.4 KB",
+        "327.8 KB",
+        "409.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007, Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27588",
+    "downloadPreload": true
+}

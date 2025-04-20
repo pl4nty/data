@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2008",
+    "downloadDescription": "Visual Studio 2008",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visual Studio 2008 overview.pptx",
+            "url": "https://download.microsoft.com/download/1/b/e/1beac019-0967-43e6-8aa7-d0f93c41d21a/Visual Studio 2008 overview.pptx",
+            "size": "6522673",
+            "version": "1.02",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        }
+    ],
+    "detailsSection": "Visual Studio 2008",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.02",
+    "detailsSection_file_name": [
+        "Visual Studio 2008 overview.pptx"
+    ],
+    "detailsSection_file_size": [
+        "6.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2003, Web Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Datacenter without Hyper-V",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 Enterprise without Hyper-V",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Server 2008 Standard",
+        "Windows Server 2008 Standard without Hyper-V",
+        "Windows XP Professional Edition ",
+        "Windows XP Professional N",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3",
+        "Windows XP Starter Edition"
+    ],
+    "installInstructionSection": "Visual Studio 2008",
+    "additionalInformationSection": "Visual Studio 2008",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7873",
+    "downloadPreload": true
+}

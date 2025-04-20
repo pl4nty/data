@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Technical Overview ",
+    "downloadDescription": "This  download contains the Technical Overview chapter of the Microsoft Lync Server 2010 Resource Kit book. This book is currently being developed. Chapters will be available for download while this book is being completed.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftLyncServer2010TechnicalOverview.doc",
+            "url": "https://download.microsoft.com/download/e/5/e/e5e1b029-4e2a-48c9-9735-75ed98dab6fa/MicrosoftLyncServer2010TechnicalOverview.doc",
+            "size": "5070848",
+            "version": "Feb2011",
+            "datePublished": "7/15/2024 3:14:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the Technical Overview chapter of the <i>Microsoft Lync Server 2010 Resource Kit</i> book. This book is currently being developed. Chapters will be available for download while this book is being completed. For information about the continuing release of chapters, check <a href=\"http://go.microsoft.com/fwlink/?LinkId=204593\">DrRez</a>.\r\n<br/>\r\n<br/>\r\n\r\nLync Server 2010 provides multiple server roles to scale to your enterprise\u2019s needs and purpose.\r\n<br/>\r\n<br/>\r\n\r\nThe Enterprise Edition scales up the capacity of the Standard Edition server to provide higher capacity and higher availability. The Director redirects user connections to the user\u2019s home server or home pool. The Edge Servers are deployed in the network perimeter to enable connectivity outside the organization\u2019s private network. A reverse proxy is required to expose Lync Web services to remote users. The Archiving Server performs server-side archiving of all IM communications. The Monitoring Server gathers CDR and Quality of Experience (QoE) data.\r\n<br/><br/>\r\nYou can download all the available Lync Server 2010 Resource Kit chapters as separate Word documents or together as a .zip file from <a href=\"http://go.microsoft.com/fwlink/?LinkID=214301\">here</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2011",
+    "detailsSection_file_name": [
+        "MicrosoftLyncServer2010TechnicalOverview.doc"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "nextHop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=204623"
+        },
+        {
+            "title": "drRez",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=204593"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201687"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4455",
+    "downloadPreload": true
+}

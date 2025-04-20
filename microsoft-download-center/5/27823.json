@@ -1,0 +1,145 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 Report Authoring Extension (with SQL Server Data Tools support)",
+    "downloadDescription": "Microsoft Dynamics CRM 2011 Report Authoring Extension is required to author custom Fetch-based reports for Microsoft Dynamics CRM by using Business Intelligence Development Studio or SQL Server Data Tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Bids-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/e/7/3/e73517ed-f919-4039-95cd-d64d9000d9a7/CRM2011-Bids-ENU-i386.exe",
+            "size": "9845392",
+            "version": "05.00.9690.3448",
+            "datePublished": "7/15/2024 3:26:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics CRM Report Authoring Extension is required to author custom Fetch-based reports for Microsoft Dynamics CRM by using Business Intelligence Development Studio or SQL Server Data Tools. Report Authoring Extension is a plug-in that obtains the metadata and data from Microsoft Dynamics CRM.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "05.00.9690.3448",
+    "detailsSection_file_name": [
+        "CRM2011-Bids-ENU-i386.exe"
+    ],
+    "detailsSection_file_size": [
+        "9.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>The Microsoft Dynamics CRM Report Authoring Extension also installs Windows Identity Foundation. The following versions are supported by Business Intelligence Development Studio, SQL Server Data Tools, and Windows Identity Foundation:\r\n    <ul>\r\n        <li>Windows Server 2012</li>\r\n        <li>Windows 8</li>\r\n        <li>Windows 7</li>\r\n        <li>Windows Vista Service Pack 2</li>\r\n        <li>Windows Server 2008 R2</li>\r\n        <li>Windows Server 2008 Service Pack 2</li>\r\n    </ul>\r\n</ul>\r\n<ul>\r\n    The following components are required:\r\n   <ul>\r\n       <li>Business Intelligence Development Studio and Visual Studio 2008 Service Pack 1</li>\r\n       -OR- \r\n       <li>SQL Server Data Tools and Visual Studio 2010</li>\r\n       <ul>\r\n           <li>From Microsoft SQL Server 2012 Express <a href =\"http://www.microsoft.com/en-us/download/details.aspx?id=29062\">download page</a>, download the following files appropriate to your CPU architecture and language:</li>\r\n           <ul>\r\n               <li>ENU\\x64\\SQLEXPRADV_x64_ENU.exe</li>\r\n               <li>ENU\\x86\\SQLEXPRADV_x86_ENU.exe</li>\r\n           </ul>\r\n       \r\n       <li>Select the \"SSDT\" or \"SQL Server Data Tools\" installation.</li>\r\n           </ul>\r\n       <br />\r\n       <br />\r\n   </ul>\r\n</ul>\r\n<ul>\r\n    <b>Note</b>:<br />\r\n    Microsoft Dynamics CRM Report Authoring Extension is available only in a 32-bit version because Business Intelligence Development Studio and SQL Server Data Tools are 32-bit development environments.\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Important:</b><br/>\r\nIf you have an existing installation of Microsoft Dynamics CRM 2011 Report Authoring Extension, uninstall it, and then download and run the new executable file from this download page. \r\n<ol> <li>To start the download, click <b>Download</b>.</li>\r\n<li>To save the file to your computer, click <b>Save</b>, specify a location, and then click <b>Save</b> again. </li>\r\n<li>Navigate to the folder to which you saved the downloaded file, and double-click <b>CRM2011-Bids-ENU-i386.exe</b>.</li>\r\n<li>Select a folder to store the extracted files, and click <b>OK</b>.</li>\r\n<li>In the <b>Extraction Complete</b> dialog box, click <b>OK</b>.</li>\r\n<li>Navigate to the location to which you extracted the files, and double-click <b>setupbidsextensions.exe</b>.</li>\r\n<li>On the <b>Welcome to Microsoft Dynamics CRM Report Authoring Extension Setup</b> page, we recommend that you click <b>Get updates for Microsoft Dynamics CRM</b>, to make sure that Setup has the most recent installation files. Click <b>Next</b>. </li>\r\n<li>On the <b>License Agreement</b> page, review the information, and if you accept the license agreement, select the <b>I accept this license agreement</b> check box, and then click <b>I Accept</b>.</li>\r\n<li>If Setup detects that some required components are missing, the <b>Install Required Components</b> page appears. To install them, click <b>Install</b>. When the components are installed, the status column changes from <b>Not Installed</b> to <b>Installed</b>. Click <b>Next</b> to continue. </li><br/><br />\r\n<b>Note</b>:\r\n<ul><li>These components are required before Microsoft Dynamics CRM Report Authoring Extension can be installed. You can exit Setup and install the components manually, or select <b>Install</b>. The <b>Next</b> button on this page is disabled until Setup detects that these components are installed. </li>\r\n<li>Installing these components may require you to restart the computer. If you are prompted to restart the computer, do so, and then start Setup again. </li></ul>\r\n<li>On the <b>Select Microsoft Update Preference</b> page, we recommend that you select <b>Use Microsoft Update when I check for updates (recommended)</b>. Microsoft Update makes sure that your computer has the latest technology and can help reduce the risk of vulnerabilities and security issues.</li>\r\n<li>On the <b>Select Installation Location</b> page, accept the default location or enter a different file installation location, and then click <b>Next</b>.</li>\r\n<li>On the <b>System Checks</b> page, a summary of all requirements and recommendations for a successful installation is shown. Failed tests must be corrected before installation can continue. If a problem will take time to correct, cancel Setup at this point, fix the problem and restart Setup again. All errors must be resolved. If no errors, or only warnings appear, you can continue with the installation. To do this, click <b>Next</b>.</li>\r\n<li>Review the <b>Ready to Install CRM Report Authoring Extension</b> page, and then click <b>Back</b> to correct any errors. When you are ready to continue, click <b>Install</b>.</li>\r\n<li>When Setup is completed successfully, the <b>Microsoft Dynamics CRM Report Authoring Extension Setup Completed</b> page appears. Click <b>Finish</b>.</li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27823",
+    "downloadPreload": true
+}

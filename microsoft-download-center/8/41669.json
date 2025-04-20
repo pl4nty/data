@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2013 Logical Entity Relationship Diagrams",
+    "downloadDescription": "A set of diagrams showing the entity relationships in CRM 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Crm2013EntityDiagrams.zip",
+            "url": "https://download.microsoft.com/download/3/f/5/3f5cd5ea-a070-456f-8310-1970fdbbcefa/Crm2013EntityDiagrams.zip",
+            "size": "6679264",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:20:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics CRM 2013 uses an underlying SQL database to store data, however the programming model for developers is presented as a set of logical relationships. The underlying implementation of the database is not exposed to developers. The metadata in CRM contains this logical description of the system and custom entities, the attributes and the relationship between entities for a deployment. This package contains the logical entity relationship diagrams for the key areas in CRM 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Crm2013EntityDiagrams.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Additional Requirements:</b><br/>\r\nMicrosoft Dynamics CRM 2013 and Microsoft",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, click <b>Go</b>, and then do one of the following:<br />\r\n<br />\r\nTo start the installation immediately, click <b>Run this program from its current location</b> or <b>Save</b> to save this program to disk.<br />\r\n<br />\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41669",
+    "downloadPreload": true
+}

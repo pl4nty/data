@@ -1,0 +1,142 @@
+{
+    "error": "",
+    "downloadTitle": "Background Intelligent Transfer Service Version 1.5 (Client Component)",
+    "downloadDescription": "BITS is a system service that applications can use to transfer files asynchronously between a client and an HTTP server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "bits_v15_client_setup.exe",
+            "url": "https://download.microsoft.com/download/7/e/0/7e06c03c-653d-471a-a35a-671e2223fd5b/bits_v15_client_setup.exe",
+            "size": "959488",
+            "version": "1.5",
+            "datePublished": "3/11/2025 6:50:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        }
+    ],
+    "detailsSection": "Background Intelligent Transfer Service (BITS) is a Windows component that asynchronously transfers files in the foreground or background, throttles the transfers to preserve the responsiveness of other network applications, and will automatically resume file transfers when a computer is restarted and a network connection is re-established.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "bits_v15_client_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "937.0 KB"
+    ],
+    "detailsSection_file_date": "3/11/2025",
+    "systemRequirementsSection": "Installation of BITS 1.5 Client is supported on Windows 2000, Windows 2000 SP1, Windows 2000 SP2, Windows 2000 SP3 or Windows 2000 SP4. This installation is also supported on Windows XP or Windows XP SP1.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 2000"
+    ],
+    "installInstructionSection": "<OL>\r\n<br/> <LI>Click the <b>Download</b> link to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><br/> <LI>Do one of the following:</LI><br/> <UL><br/> <LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><br/> <LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI><br/> </UL><br/> </OL>",
+    "additionalInformationSection": "BITS 1.5 Client requires WinHTTP, which is installed during setup. If you have an older version of WinHTTP that is loaded during setup, then BITS will not be able to update it until after the computer is restarted. Even though restarting your computer may not be required to complete this setup, it is recommended that you restart the computer.<br/>\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "bits SDK - Documentation",
+            "url": "http://go.microsoft.com/fwlink/?linkid=15106"
+        },
+        {
+            "title": "bits Index of KB Articles",
+            "url": "http://go.microsoft.com/fwlink/?linkid=15107"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22250",
+    "downloadPreload": true
+}

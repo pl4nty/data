@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Site Recovery Provider",
+    "downloadDescription": "Microsoft Azure Site Recovery Provider",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ASRAdapter.msi",
+            "url": "https://download.microsoft.com/download/9/5/a/95a1dca4-ea6f-497d-95fa-55940f42b118/ASRAdapter.msi",
+            "size": "12570624",
+            "version": "5.1.7418",
+            "datePublished": "12/15/2023 4:43:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Azure Site Recovery Provider",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1.7418",
+    "detailsSection_file_name": [
+        "ASRAdapter.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.0 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Windows Server 2016\r\nWindows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Invoke the installer and follow the wizard instruction from there on.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104342",
+    "downloadPreload": true
+}

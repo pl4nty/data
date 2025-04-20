@@ -1,0 +1,191 @@
+{
+    "error": "",
+    "downloadTitle": "Ramp Up: Developer Introduction to Windows Server AppFabric (Part 2): Caching Services",
+    "downloadDescription": "Learn about how Windows Server AppFabric provides a distributed in-memory application cache platform for developing scalable, available, and high-performance applications in this Ramp Up track.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "02 Programming the Cache.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/02 Programming the Cache.doc",
+            "size": "1920000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "06 HA Locking and Callbacks.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/06 HA Locking and Callbacks.doc",
+            "size": "559616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "05 ASPNET Session State Provider.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/05 ASPNET Session State Provider.doc",
+            "size": "438784",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "01 Introduction and Architecture.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/01 Introduction and Architecture.doc",
+            "size": "2476032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "01 Introduction and Architecture.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/01 Introduction and Architecture.ppt",
+            "size": "4119552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "03 Regions and Tags.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/03 Regions and Tags.ppt",
+            "size": "1266688",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "03 Regions and Tags.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/03 Regions and Tags.doc",
+            "size": "632832",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "04 Patterns of Use.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/04 Patterns of Use.doc",
+            "size": "565248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "00 Developer Environment Setup.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/00 Developer Environment Setup.doc",
+            "size": "2189312",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "04 Patterns of Use.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/04 Patterns of Use.ppt",
+            "size": "1638400",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "07 Security and Management.doc",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/07 Security and Management.doc",
+            "size": "633856",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "07 Security and Management.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/07 Security and Management.ppt",
+            "size": "2127872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "06 HA Locking and Callbacks.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/06 HA Locking and Callbacks.ppt",
+            "size": "1605120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "05 ASPNET Session State Provider.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/05 ASPNET Session State Provider.ppt",
+            "size": "1265152",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "02 Programming the Cache.ppt",
+            "url": "https://download.microsoft.com/download/2/7/e/27e9b9d1-f2a4-4505-8312-a47cc8bbb4e7/02 Programming the Cache.ppt",
+            "size": "2503680",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Server AppFabric provides a distributed in-memory application cache platform for developing scalable, available, and high-performance applications. Applications can store any serializable CLR object without worrying about where the object gets stored. Scalability can be achieved by simply adding more computers on demand and resilience is enabled by allowing for copies of data to be stored across the cluster, thus protecting data against failures. These capabilities add real value to your existing investments in Windows Server, and deliver new capabilities for demanding application needs in the data center.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "02 Programming the Cache.doc",
+        "06 HA Locking and Callbacks.doc",
+        "05 ASPNET Session State Provider.doc",
+        "01 Introduction and Architecture.doc",
+        "01 Introduction and Architecture.ppt",
+        "03 Regions and Tags.ppt",
+        "03 Regions and Tags.doc",
+        "04 Patterns of Use.doc",
+        "00 Developer Environment Setup.doc",
+        "04 Patterns of Use.ppt",
+        "07 Security and Management.doc",
+        "07 Security and Management.ppt",
+        "06 HA Locking and Callbacks.ppt",
+        "05 ASPNET Session State Provider.ppt",
+        "02 Programming the Cache.ppt"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "546.5 KB",
+        "428.5 KB",
+        "2.4 MB",
+        "3.9 MB",
+        "1.2 MB",
+        "618.0 KB",
+        "552.0 KB",
+        "2.1 MB",
+        "1.6 MB",
+        "619.0 KB",
+        "2.0 MB",
+        "1.5 MB",
+        "1.2 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Go to http://msdn.microsoft.com/en-us/rampup/bb428416.aspx for system requirements.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the content you want to consume and either stream or save a local copy.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13180",
+    "downloadPreload": true
+}

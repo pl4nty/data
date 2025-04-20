@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Mix It Up: Visual Studio 2010 and ASP.NET 4.0",
+    "downloadDescription": "Mix It Up: Visual Studio 2010 and ASP.NET 4.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS_2010_MaungMaung_Mar09.xps",
+            "url": "https://download.microsoft.com/download/1/8/5/18500f99-c593-42ec-bc61-a666a0e0bacb/VS_2010_MaungMaung_Mar09.xps",
+            "size": "3362919",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VS_2010_MaungMaung_Mar09.pdf",
+            "url": "https://download.microsoft.com/download/1/8/5/18500f99-c593-42ec-bc61-a666a0e0bacb/VS_2010_MaungMaung_Mar09.pdf",
+            "size": "1449714",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mix It Up: Visual Studio 2010 and ASP.NET 4.0",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VS_2010_MaungMaung_Mar09.xps",
+        "VS_2010_MaungMaung_Mar09.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat Reader to view the PDF file.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF document to your computer and open it in Adobe Acrobat Reader to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20526",
+    "downloadPreload": true
+}

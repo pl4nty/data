@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Download Microsoft Azure Import/Export tool",
+    "downloadDescription": "Microsoft Azure Import/Export tool is the drive preparation and repair tool that you can use with the Microsoft Azure Import/Export Service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WaImportExportV1.zip",
+            "url": "https://download.microsoft.com/download/0/c/d/0cd6aba7-024f-4202-91a0-ce2656dce413/WaImportExportV1.zip",
+            "size": "1857400",
+            "version": "1.5.0.300",
+            "datePublished": "3/18/2025 6:28:09 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nMicrosoft Azure Import/Export tool is the drive preparation and repair tool you can use with the Microsoft Azure Import/Export Service. This tool can be used in several different ways:<br /> <br /> \r\n\u2022 Before you create an Import job, you can use this tool to copy data to the hard drives you are going to ship to a Microsoft Azure data center.<br /> \r\n\u2022 After an import job has finished, you can use this tool to repair any blobs that were corrupted, missing, or conflicted with other blobs.<br /> \r\n\u2022 After you receive the drives from an export job, you can use this tool to repair any files that were corrupted or missing on the drives.<br /> ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5.0.300",
+    "detailsSection_file_name": [
+        "WaImportExportV1.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "3/18/2025",
+    "systemRequirementsSection": "Windows 7 or a new Windows OS <br /> \r\nWindows 2008 R2 or a newer Windows OS <br /> \r\n.Net Framework 4.5.1 <br /> \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Detailed instructions can be dowloaded at https://aka.ms/azureimportexport.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42659",
+    "downloadPreload": true
+}

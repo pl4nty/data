@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Planning, Budgeting & Forecasting for the Office of Finance:  Understanding Planning Solutions and Scenarios with Microsoft Office 2010, Microsoft SharePoint Server 2010 and Microsoft SQL Server 2008 R2",
+    "downloadDescription": "This white paper outlines the basic and sophisticated planning scenarios that Office 2010 and SQL Server 2008 R2 can support, and it gives guidance on the steps that should be taken when building a planning solution.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Understanding Planning Solutions and Scenarios.doc",
+            "url": "https://download.microsoft.com/download/e/0/b/e0b5f9de-1244-45d9-a3d9-23e7d93cb9a2/Understanding Planning Solutions and Scenarios.doc",
+            "size": "4449792",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Office 2010 and SQL Server\u00ae 2008 R2 offer a suite of components and out-of-box functionalities that allow companies to address some of the tough challenges of planning, budgeting and forecasting. Planning functionalities that are included on the Microsoft platform include:\r\n<ul>\r\n<li>Centralized data model with SQL Server 2008 R2 Analysis Services.</li>\r\n<li>Form & report authoring through Microsoft Office Excel\u00ae 2010 & PivotTables. </li>\r\n<li>Data entry and What-If analysis through Excel 2010 PivotTables. </li>\r\n<li>Dimensional data modeling with PowerPivot for Excel 2010. </li>\r\n<li>Online document storage and collaboration with security and workflow for forms and reports through Microsoft SharePoint\u00ae Server 2010. </li>\r\n</ul>\r\nThis whitepaper outlines the basic and sophisticated planning scenarios that Microsoft Office 2010 and SQL Server 2008 R2 can support and gives guidance and on the steps that should be taken when building a planning solution. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Understanding Planning Solutions and Scenarios.doc"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Microsoft Office Word 2007. You can also use Office Word 2003 or Word XP and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=78517\">Microsoft Office Compatibility Pack</a>. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19191",
+    "downloadPreload": true
+}

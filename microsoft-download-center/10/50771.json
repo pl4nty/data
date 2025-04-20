@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2010 CU9",
+    "downloadDescription": "Microsoft BizTalk Server 2010 CU9",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2010-KB3136004-ENU.exe",
+            "url": "https://download.microsoft.com/download/0/e/0/0e0e0a6a-1b83-45a8-b952-8bc6fa7baab5/BizTalk2010-KB3136004-ENU.exe",
+            "size": "18026008",
+            "version": "3.9.674.2",
+            "datePublished": "7/15/2024 3:59:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2010 CU9",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.9.674.2",
+    "detailsSection_file_name": [
+        "BizTalk2010-KB3136004-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "17.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>Microsoft Office Excel 2007 or 2010</li>\r\n <li>.NET Framework 3.5 SP1 and .NET Framework 4.5</li>\r\n <li>Visual Studio 2010</li>\r\n <li>SQL Server 2008 R2 or SQL Server 2008 SP1</li>\r\n <li>SQL Server 2005 Notification Service [Required for selected features only]</li>\r\n <li>Microsoft BizTalk Server 2010</li>\r\n <li>SQLXML 4.0 with Service Pack 1 [Required for selected features only] </li>\r\n <li>Internet Information Services (IIS) Version 7.5 and 7.0 [Required for selected features only]</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download and install the executable",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50771",
+    "downloadPreload": true
+}

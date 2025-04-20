@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Poster: What is governance in SharePoint 2013?",
+    "downloadDescription": "This poster shows the major governance areas (IT governance, information management, and application management) and summarizes the key information you need to understand about each area.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WhatisgovernanceinSharePoint2013.pdf",
+            "url": "https://download.microsoft.com/download/8/8/a/88a718d9-0d68-40b7-a576-5dff81626bf8/WhatisgovernanceinSharePoint2013.pdf",
+            "size": "565348",
+            "version": "Dec2013",
+            "datePublished": "7/15/2024 3:10:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WhatisgovernanceinSharePoint2013.vsd",
+            "url": "https://download.microsoft.com/download/8/8/a/88a718d9-0d68-40b7-a576-5dff81626bf8/WhatisgovernanceinSharePoint2013.vsd",
+            "size": "1002496",
+            "version": "Dec2013",
+            "datePublished": "7/15/2024 3:10:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Governance is the set of policies, roles, responsibilities, and processes that control how an organization's business divisions and IT teams work together to meet organizational goals. This poster shows the major governance areas (IT governance, information management, and application management) and summarizes the key information you need to understand about each area.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Dec2013",
+    "detailsSection_file_name": [
+        "WhatisgovernanceinSharePoint2013.pdf",
+        "WhatisgovernanceinSharePoint2013.vsd"
+    ],
+    "detailsSection_file_size": [
+        "552.1 KB",
+        "979.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Viso document. Users who do not have Microsoft Visio can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=330888\">Visio Viewer</A>.</LI> \r\n<LI>The file is an Adobe Reader file. Users who do not have Adobe Reader can download it from <A HREF=\"http://get.adobe.com/reader/\">Adobe.</A></LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI>\r\n<LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI>\r\n</OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "it governance in SharePoint 2013",
+            "url": "http://go.microsoft.com/fwlink/?linkid=330877"
+        },
+        {
+            "title": "information management and governance in SharePoint 2013",
+            "url": "http://go.microsoft.com/fwlink/?linkid=330878"
+        },
+        {
+            "title": "what is governance in SharePoint 2013?",
+            "url": "http://go.microsoft.com/fwlink/?linkid=330880"
+        },
+        {
+            "title": "application management and governance in SharePoint 2013",
+            "url": "http://go.microsoft.com/fwlink/?linkid=330881"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41148",
+    "downloadPreload": true
+}

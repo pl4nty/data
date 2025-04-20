@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Azure Pack connector: two clouds, one portal",
+    "downloadDescription": "Microsoft IT has created a more seamless way to manage hybrid clouds. Now available for download, the Windows Azure Pack connector lets administrators and tenants use one portal to manage IaaS virtual machines in both private clouds and public Azure subscriptions",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6116_Windows-Azure-Pack-connector-two-clouds-one-portal_Article.docx",
+            "url": "https://download.microsoft.com/download/e/2/3/e23d8095-383f-45b5-9b7c-df0d06abed27/6116_Windows-Azure-Pack-connector-two-clouds-one-portal_Article.docx",
+            "size": "42061",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft IT has created a more seamless way to manage hybrid clouds. Now available for download, the Windows Azure Pack connector lets administrators and tenants use one portal to manage IaaS virtual machines in both private clouds and public Azure subscriptions",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "6116_Windows-Azure-Pack-connector-two-clouds-one-portal_Article.docx"
+    ],
+    "detailsSection_file_size": [
+        "41.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51203",
+    "downloadPreload": true
+}

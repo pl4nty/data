@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Hybrid IaaS - code samples",
+    "downloadDescription": "Sample code for building a custom control panel that talks to the partner center APIs (CREST, GRAPH) as well as service APIs for common IaaS services (VPN, VMs, Bob storage and ASR).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hybrid IaaS Code samples.zip",
+            "url": "https://download.microsoft.com/download/7/d/c/7dc30a89-282c-445b-b16f-3cb69221688d/Hybrid IaaS Code samples.zip",
+            "size": "12648825",
+            "version": "January 2014",
+            "datePublished": "12/15/2023 4:09:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sample code for building a custom control panel that talks to the partner center APIs (CREST, GRAPH) as well as service APIs for common IaaS services (VPN, VMs, Bob storage and ASR).\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Hybrid IaaS Code samples.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.1 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50755",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MBS CS Migration",
+    "downloadDescription": "Short description",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "cs_migration.html",
+            "url": "https://download.microsoft.com/download/6/1/6/616ea59b-9fa3-4b24-9655-863545206c58/cs_migration.html",
+            "size": "120694",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Information about new, changed\u200b\u200b\u200b\u200b, and deprecated features in the latest release of Microsoft Dynamics AX, is available on the<a href=\"https://ax.help.dynamics.com/\" target=\"_blank\"> Dynamics AX wiki</a>.<br/>You can print the content to a printer or generate a PDF document.&#160;&nbsp;<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "cs_migration.html"
+    ],
+    "detailsSection_file_size": [
+        "117.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101455",
+    "downloadPreload": true
+}

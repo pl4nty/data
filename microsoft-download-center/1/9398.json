@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Business Intelligence Competency Center (BICC) Core System Documentation: Encoding and Unicode Considerations",
+    "downloadDescription": "Describes what you need to know when dealing with Encoding and Unicode in applications built on top of Microsoft solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BICCEncodingAndUnicodeConsiderations.xps",
+            "url": "https://download.microsoft.com/download/b/9/d/b9ddaa39-b2c0-451b-a823-bd8a87857d01/BICCEncodingAndUnicodeConsiderations.xps",
+            "size": "1143133",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BICCEncodingAndUnicodeConsiderations.pdf",
+            "url": "https://download.microsoft.com/download/b/9/d/b9ddaa39-b2c0-451b-a823-bd8a87857d01/BICCEncodingAndUnicodeConsiderations.pdf",
+            "size": "888267",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BICCEncodingAndUnicodeConsiderations.docx",
+            "url": "https://download.microsoft.com/download/b/9/d/b9ddaa39-b2c0-451b-a823-bd8a87857d01/BICCEncodingAndUnicodeConsiderations.docx",
+            "size": "460005",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "One of the areas that is very important to a successful Business Intelligence Competency Center (BICC) is to apply standards and best practices in encoding and using Unicode to those BI applications that are built on top of Microsoft solutions. This white paper describes how to ensure the highest compatibility, including best practices, globalization standards, encodings in Microsoft SQL Server, the Microsoft .NET Framework, and data sources.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "BICCEncodingAndUnicodeConsiderations.xps",
+        "BICCEncodingAndUnicodeConsiderations.pdf",
+        "BICCEncodingAndUnicodeConsiderations.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "867.4 KB",
+        "449.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Office 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI> <LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9398",
+    "downloadPreload": true
+}

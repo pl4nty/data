@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Privacy Statement for Microsoft HPC Pack",
+    "downloadDescription": "This privacy statement explains many of the data collection and use practices of Microsoft HPC Pack.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Privacy_Statement_Microsoft_HPC_Pack_Japanese.rtf",
+            "url": "https://download.microsoft.com/download/a/b/e/abec1f0e-bfeb-44e4-bbd7-7773f94cc4b2/Privacy_Statement_Microsoft_HPC_Pack_Japanese.rtf",
+            "size": "185483",
+            "version": "August 2012",
+            "datePublished": "6/13/2024 12:00:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Privacy_Statement_Microsoft_HPC_Pack_English.rtf",
+            "url": "https://download.microsoft.com/download/a/b/e/abec1f0e-bfeb-44e4-bbd7-7773f94cc4b2/Privacy_Statement_Microsoft_HPC_Pack_English.rtf",
+            "size": "102670",
+            "version": "August 2012",
+            "datePublished": "6/13/2024 12:00:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Privacy_Statement_Microsoft_HPC_Pack_Chinese.rtf",
+            "url": "https://download.microsoft.com/download/a/b/e/abec1f0e-bfeb-44e4-bbd7-7773f94cc4b2/Privacy_Statement_Microsoft_HPC_Pack_Chinese.rtf",
+            "size": "152110",
+            "version": "August 2012",
+            "datePublished": "6/13/2024 12:00:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power, and convenience you desire in your personal computing. This privacy statement explains many of the data collection and use practices of Microsoft HPC Pack (\u201cHPC Pack\u201d). It focuses on features that communicate with the Internet. It does not apply to other online or offline Microsoft sites, products, or services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2012",
+    "detailsSection_file_name": [
+        "Privacy_Statement_Microsoft_HPC_Pack_Japanese.rtf",
+        "Privacy_Statement_Microsoft_HPC_Pack_English.rtf",
+        "Privacy_Statement_Microsoft_HPC_Pack_Chinese.rtf"
+    ],
+    "detailsSection_file_size": [
+        "181.1 KB",
+        "100.3 KB",
+        "148.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39966",
+    "downloadPreload": true
+}

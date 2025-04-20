@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "RcmProxyAgent_1.36.8485.20713",
+    "downloadDescription": "RcmProxyAgent_1.36.8485.20713",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmProxyAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/e/6/c/e6cfce42-9c21-4b10-b6ec-89e6da8e961c/RcmProxyAgentSetup.msi",
+            "size": "13430784",
+            "version": "1.36.8485.20713",
+            "datePublished": "9/28/2022 6:26:20 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RcmProxyAgent_1.36.8485.20713",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.36.8485.20713",
+    "detailsSection_file_name": [
+        "RcmProxyAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.8 MB"
+    ],
+    "detailsSection_file_date": "9/28/2022",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Follow wizard instructions RcmProxyAgent installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104630",
+    "downloadPreload": true
+}

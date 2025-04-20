@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Download Center Testing on Monday",
+    "downloadDescription": "Download Center Testing on Monday",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OIG.jpeg",
+            "url": "https://download.microsoft.com/download/43f9caaf-12dd-44c8-9566-63ccfe14bbdd/security.jpg",
+            "size": "60267",
+            "version": "1",
+            "datePublished": "3/10/2025 3:31:03 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        }
+    ],
+    "detailsSection": "Download Center Testing on Monday",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "OIG.jpeg"
+    ],
+    "detailsSection_file_size": [
+        "58.9 KB"
+    ],
+    "detailsSection_file_date": "3/10/2025",
+    "systemRequirementsSection": "Download Center Testing on Monday",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Apple Mac OS X v. 10.4 Tiger",
+        "Apple Mac OS X v. 10.5 Leopard"
+    ],
+    "installInstructionSection": "Download Center Testing on Monday",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108031",
+    "downloadPreload": true
+}

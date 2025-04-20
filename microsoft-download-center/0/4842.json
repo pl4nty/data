@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Basic 6 OLEAUT32.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise a computer running Visual Basic 6.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vb6-kb924053-x86-enu.exe",
+            "url": "https://download.microsoft.com/download/7/d/4/7d4b1e60-4443-41a5-a9d4-76becf23fa1e/VB6-KB924053-x86-ENU.exe",
+            "size": "975112",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:14:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise a computer running Visual Basic 6 and gain access to confidential data. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB924053",
+        "name": "KB924053"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-043",
+        "name": "MS07-043"
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "vb6-kb924053-x86-enu.exe"
+    ],
+    "detailsSection_file_size": [
+        "952.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 2000",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows 2000 Server"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> </UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkID=71771\">KB924053</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 924053",
+            "url": "http://go.microsoft.com/fwlink/?linkid=71771"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4842",
+    "downloadPreload": true
+}

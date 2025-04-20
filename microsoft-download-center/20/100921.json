@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix for known issue with Update Rollup 1 for System Center 2019 Data Protection Manager",
+    "downloadDescription": "Post installing  DPM 2019 UR1, the console may crash when you select Add Online Protection for existing Protetion group.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPMManagementShell-KB4547368.exe",
+            "url": "https://download.microsoft.com/download/6/6/5/665a17f3-339a-4073-80dd-0d1dab6c6b03/DPMManagementShell-KB4547368.exe",
+            "size": "22711136",
+            "version": "10.19.274.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DataProtectionManager-KB4547368.exe",
+            "url": "https://download.microsoft.com/download/6/6/5/665a17f3-339a-4073-80dd-0d1dab6c6b03/DataProtectionManager-KB4547368.exe",
+            "size": "732648448",
+            "version": "10.19.274.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We found an issue with Update Rollup 1 for Microsoft System Center 2019 Data Protection Manager (DPM 2019) resulting in Data Protection Manager Console being unresponsive when you click on add online protection by right clicking on existing protection group or by selecting option in the top ribbon.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4547368",
+        "name": "KB4547368"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.19.274.0",
+    "detailsSection_file_name": [
+        "DPMManagementShell-KB4547368.exe",
+        "DataProtectionManager-KB4547368.exe"
+    ],
+    "detailsSection_file_size": [
+        "21.7 MB",
+        "698.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016, Windows Server 2019\r\nSystem Center 2019 Data Protection Manager\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "To install this hotfix, follow these steps:\r\n1. Download this hotfix to a target folder on your computer.\r\n2. Open the target folder, \r\n3. Select and right-click on DataProtectionManager-KB4547368.exe if you are installing the hotfix on the DPM server or on DPMManagementShell-KB4547368.exe if you are installing the hotfix on Remote DPM Console server.\r\n4. Click Run as administrator.\r\n5. Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100921",
+    "downloadPreload": true
+}

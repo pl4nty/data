@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "PromqryUI 1.0",
+    "downloadDescription": "PromqryUI is a tool with a Windows graphical interface that can be used to detect network interfaces that are running in promiscuous mode.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "promqryui.exe",
+            "url": "https://download.microsoft.com/download/7/2/6/7262f637-81db-4d18-ab90-97984699d3bf/promqryui.exe",
+            "size": "262728",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PromqryUI can accurately determine if a modern (Windows 2000 and later) managed Windows system has network interfaces in promiscuous mode. If a system has network interfaces in promiscuous mode, it may indicate the presence of a network sniffer running on the system.<br />\n<br />\nPromqryUI cannot detect standalone sniffers or sniffers running on non-Windows operating systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "promqryui.exe"
+    ],
+    "detailsSection_file_size": [
+        "256.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft .Net Framework",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the Promqrycmd.exe package to your computer<br />\n<br />\nDoubleclick on the self-extracting exe to install the utility",
+    "additionalInformationSection": "A version of PromqryUI is available as a command line tool. Promqry is available from the Microsoft Download center, or from Microsoft Knowledgebase article 892853.",
+    "relatedResourcesSection": [
+        {
+            "title": "description of Promqry 1.0 and PromqryUI 1.0",
+            "url": "http://support.microsoft.com/?kbid=892853"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16883",
+    "downloadPreload": true
+}

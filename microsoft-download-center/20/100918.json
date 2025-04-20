@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2016 Update 3 fixes",
+    "downloadDescription": "This update fixes some issues of HPC Pack 2016 Update 3",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "KB4537169_x64.exe",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/KB4537169_x64.exe",
+            "size": "5187328",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hpcnodeagent.tar.gz",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/hpcnodeagent.tar.gz",
+            "size": "11169319",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HpcCompute_x64.msi",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/HpcCompute_x64.msi",
+            "size": "16068608",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HpcApplicationType.sfpkg",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/HpcApplicationType.sfpkg",
+            "size": "79137464",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrade-HpcApplication.ps1",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/Upgrade-HpcApplication.ps1",
+            "size": "19962",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UpdateCompactCN.ps1",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/UpdateCompactCN.ps1",
+            "size": "16914",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB4537169_x86.exe",
+            "url": "https://download.microsoft.com/download/8/1/b/81ba83a4-bdff-488b-884e-dcee6306f410/KB4537169_x86.exe",
+            "size": "4983680",
+            "version": "5.3.6450",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update fixes some known issues of HPC Pack 2016 update 3 as described below<br/>\r\n<br/>\r\n- Improve the SOA performance and reliability. <br/>\r\n- Fix the issue that sometimes the cluster utilization rate is shown greater than 100% in the cluster utilization chart. <br/>\r\n- Fix the issue that NAT is not working if the OS of the head node is Windows Server 2016 or above. <br/>\r\n- Support UEFI boot for bare metal deployment. <br/>\r\n- Fix an issue that in some situation HPCUsers cannot call service registration REST API. <br/>\r\n- Fix an issue that in some rare condition, some compute nodes are in OK state, but cannot run tasks. <br/>\r\n- Fix an issue that a parametric sweep job cannot finish when all its tasks finish. <br/>\r\n- Fix an issue that old jobs are not cleaned up in time. <br/>\r\n- Fix an issue that \u201cSortByNodes\u201d query parameter doesn\u2019t work in HPC Web API. <br/>\r\n- Support pagination in HPC Web API at endpoint \u201c/hpc\u201d: A \u201cStartRow\u201d query parameter can be used when getting list of jobs/tasks/nodes. The first row has index 0. When this parameter presents in request, <br/>\r\n  a) The server will returns the requested range of rows defined by \u201cStartRow\u201d and \u201cRowsPerRead\u201d(default to 10). <br/>\r\n  b) The total row count is returned in the response header \u201cx-ms-row-count\u201d.  <br/>\r\n  c) The response headers \"x-ms-continuation-QueryId\" and \"x-ms-continuation-CurrentObjectNumber\" will not be returned. <br/>\r\n- Support sorting order in HPC Web API at endpoint \u201c/hpc\u201d: A \u201cAsc\u201d query parameter can be used when getting list of jobs/tasks/nodes. The parameter has a default value \u201cTrue\u201d, to sort the list ascendingly. When given a value \u201cFalse\u201d, the return list is in descending order. The sort field is specified by \u201cSortNodesBy\u201d/\u201dSortJobsBy\u201d/\u201dSortTasks\u201d query parameters as before. <br/>\r\n- Enforce authorization of SignalR Hubs for job & task events. <br/>\r\n- Increase the life time of continuation token/rowset in web service to 60 min. <br/>\r\n- Fix an issue that start/stop IaaS nodes may fail unexpectedly. <br/>\r\n- Fix an error in auto grow shrink when the monitoring service is temporarily unavailable. <br/>\r\n- Fix a possible job scheduler hang when the scheduler service restarts. <br/>\r\n- Fix an issue that SOA message level trace cannot be viewed after system reboot. <br/>\r\n- Fix Web Portal connection and port leak. <br/>\r\n- Fix an issue that HpcMonitoring service may stop to persist minute counters. <br/>\r\n- Sort nodes by node group and node name for auto grow and avoid to retry the same batch of failed nodes. <br/>\r\n- Add change role button back to the context menu for Azure IaaS nodes. <br/>\r\n- Fix a scheduler SQL insert NULL exception when adding job/task allocation history caused by node GUID changing. <br/>\r\n- Fix an issue that Linux node with FQDN host name may not be recognized by scheduler. <br/>\r\n- Improve Linux node GPU instance name readability in metric info. <br/>\r\n- Fix an issue that Azure IaaS nodes are stuck at Provisioning state occasionally when auto grow shrink is enabled. <br/>\r\n- Fix an issue that sometimes compute node cannot join the cluster with \u201cnode name already exists\u201d error. <br/>\r\n- Fix an issue that Cluster Manager cannot view reporting charts after moving HPCReporting database to another SQL server instance. <br/>\r\n- Fix some issues in French OS. <br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.3.6450",
+    "detailsSection_file_name": [
+        "KB4537169_x64.exe",
+        "hpcnodeagent.tar.gz",
+        "HpcCompute_x64.msi",
+        "HpcApplicationType.sfpkg",
+        "Upgrade-HpcApplication.ps1",
+        "UpdateCompactCN.ps1",
+        "KB4537169_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB",
+        "10.7 MB",
+        "15.3 MB",
+        "75.5 MB",
+        "19.5 KB",
+        "16.5 KB",
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2016 Update 3  (build 5.3.6435.0) installed</b>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10",
+        "SUSE",
+        "Red Hat",
+        "Ubuntu",
+        "Linux"
+    ],
+    "installInstructionSection": "<b>Installation Instructions</b><br/>\r\nThis update needs to be run on all head nodes and broker nodes. It is optional for workstation nodes, compute nodes (Windows and Linux), Azure IaaS nodes and clients depending on the required fixes as listed below,<br/>\r\n<br/>\r\nWorkstation and unmanaged server nodes, Windows compute nodes, Azure IaaS nodes: <br/>\r\n- Fix an issue that in some situation HPCUsers cannot call service registration REST API. <br/>\r\n- Fix some issues in French OS. <br/>\r\nLinux compute nodes: <br/>\r\n- Fix an issue that Linux node with FQDN host name may not be recognized by scheduler.  <br/>\r\n- Improve Linux node GPU instance name readability in metric info. <br/>\r\nClients: <br/>\r\n- Add change role button back to the context menu for Azure IaaS nodes. <br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2016 Update 3 is installed. The version number (in HPC Cluster Manager, click Help-&gtAbout) should be 5.3.6435.0. Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure PaaS Nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB4537169_x64.exe for the 64-bit version, KB4537169-x86.exe for the 32-bit version) and then:<br/>\r\n<br/>\r\n<b>Applying the update on Single Headnode</b><br/>\r\n1. Click Save to copy the download to your computer;<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows;<br/>\r\n&nbsp&nbspNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update;<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node;<br/>\r\n4. The version number (Start HPC Cluster Manager, click Help-&gtAbout) now should be 5.3.6450.0;<br/>\r\n5. If you want to revert the patching, please go to Control Panel --&gtPrograms and Features --&gtView installed updates, un-install below updates in order (Please don\u2019t reboot in the middle): KB4537169 under \u201cMicrosoft \u00ae HPC Pack 2016 Web Components\u201d, \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d and then \u201cMicrosoft \u00ae HPC Pack 2016 Server Components, then reboot;<br/>\r\n<br/>\r\n<b>Applying the update on Three Headnodes</b><br/>\r\nNote: If you have at least three head nodes, you need to download HpcApplicationType.sfpkg and Upgrade-HpcApplication.ps1 as well and put them together on one of the headnode, for example, c:\\HPCPatch. And run through below steps:<br/>\r\n1. To upgrade service fabric application, please open an elevated powershell command prompt window, run: <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <I>Upgrade-HpcApplication.ps1 -ApplicationPackagePath C:\\HPCPatch\\HpcApplicationType.sfpkg</I><br/>\r\n2. After the service fabric application upgrade done, you then need to run the KB4537169_x64.exe on headnode one by one;<br/>\r\n3. Reboot the headnode one by one (Please check https://localhost:10400 to make sure the original reboot headnode back to health state before you reboot a new headnode, so that your service will keep available);<br/>\r\n4. The version number (Start HPC Cluster Manager, click Help-&gtAbout) now should be 5.3.6450.0 on all headnodes;<br/>\r\n5. If you want to revert the patching, for every headnode please go to Control Panel --&gt Programs and Features --&gt View installed updates, un-install below updates in order (Please don\u2019t reboot in the middle): KB4537169 under \u201cMicrosoft \u00ae HPC Pack 2016 Web Components\u201d, \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d and then \u201cMicrosoft \u00ae HPC Pack 2016 Server Components; then downgrade service fabric application through below command; <br/>\r\n<I>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Connect-ServiceFabricCluster<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   $hpcApplication = Get-ServiceFabricApplication -ApplicationName fabric:/HpcApplication<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   $appParameters = @{}<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   foreach($appParam in $hpcApplication.ApplicationParameters)<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   {<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp       $appParameters[$appParam.Name] = $appParam.Value<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   }<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp   Start-ServiceFabricApplicationUpgrade -ApplicationName fabric:/HpcApplication -ApplicationTypeVersion 1.3.0 -ApplicationParameter $appParameters -HealthCheckStableDurationSec 60 -UpgradeDomainTimeoutSec 1800 -UpgradeTimeout 3000 -FailureAction Rollback -Monitored | Out-Null<br/></I>\r\nYou can run \"<I>Get-ServiceFabricApplicationUpgrade -ApplicationName fabric:/HpcApplication</I>\" to track the upgrade status. If you find it is stuck at \"PreUpgradeSafetyCheck\" due to some service fail to cancel, you could try to manually kill the corresponding process on the right node. When if finished, reboot headnode one by one (you need wait the original rebooted node fully healthy in the service fabric cluster before you reboot the next one.<br/>\r\n<br/>\r\nYou can open \"Service Fabric Explorer\" at \"https://localhost:10400\" to monitor the service fabric cluster upgrade progress (You need to import the pfx certificate used during cluster setup to CurrentUser\\My to avaid HTTP 403 error). There is little possibility that some service is stuck on the headnode during patching. If that happens, you could manually kill the process on that node. <br/>\r\n<br/>\r\n<b>Applying the update on Windows nodes</b><br/>\r\n1. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes and workstation nodes;<br/>\r\n If you want to use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, Azure IaaS nodes and workstation nodes:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  a. Copy the appropriate version of the update to a shared folder such as \\\\&ltheadnode&gt\\HPCUpdates<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  b. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <I>clusrun /nodegroup:ComputeNodes \\\\&ltheadnode&gt\\HPCUpdates\\KB4537169_x64.exe -unattend -SystemReboot</I><br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <I>clusrun /nodegroup:BrokerNodes \\\\&ltheadnode&gt\\HPCUpdates\\KB4537169_x64.exe -unattend -SystemReboot</I><br/>\r\nNote: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\nNote: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\n2. If you want to revert the patching, please go to Control Panel --&gt Programs and Features --&gt View installed updates, un-install below updates in order (Please don\u2019t reboot in the middle): KB4537169 under \u201cMicrosoft \u00ae HPC Pack 2016 Web Components\u201d, \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d and then \u201cMicrosoft \u00ae HPC Pack 2016 Server Components, then reboot;<br/>\r\n<br/>\r\n<b>Applying the update on Azure IaaS nodes</b><br/>\r\nFrom HPC Pack 2016 Update 3 on, the Azure IaaS compute nodes are by default deployed with \u201cMicrosoft \u00ae HPC Pack 2016 ComputeNode Components\" (You may go to Control Panel->Programs on the compute node to check it). For these Azure IaaS nodes, please follow the steps below to apply the patch,<br/>\r\n1. Download and copy \u201cHpcCompute_x64.msi\u201d and \"UpdateCompactCN.ps1\" to the remote install share on the head node \\\\&ltheadnode&gt\\REMINST or any file share that can be access by the compute nodes. <br/>\r\n2. <I>Clusrun /nodegroup:AzureIaaSNodes PowerShell.exe -ExecutionPolicy ByPass -Command \"\\\\&ltheadnode&gt\\REMINST\\UpdateCompactCN.ps1 -NewPackage \\\\&ltheadnode&gt\\REMINST\\HpcCompute_x64.msi -RunAsScheduledTask\"</I><br/>\r\n<b>Note:</b> If your Azure IaaS compute nodes were upgraded from previous version (HPC Pack 2016 Update 1/2) without \u201cMicrosoft \u00ae HPC Pack 2016 ComputeNode Components\" installed, then follow the section <b>Applying the update on Windows nodes</b> instead. <br/>\r\n<br/>\r\n<b>Applying the update on Linux nodes</b><br/>\r\n1. Download and copy \u201chpcnodeagent.tar.gz\u201d to the remote install share of the HPC Cluster (default should be \\\\&ltHN&gt\\REMINST\\LinuxNodeAgent) to overwrite the existing one. Please back up the existing one so that you could downgrade to original version.<br/>\r\n2. Mount the share on linux node (Suppose you already created /mnt/share on all linux node): <br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <I> Clusrun /env:CCP_MAP_ADMIN_USER=0 /user:system /NodeGroup:LinuxNodes mkdir /mnt/share ^& mount -t cifs //&ltyourheadnode&gt/REMINST/LinuxNodeAgent /mnt/share -o vers=2.1,domain=&ltdomainname>,username=&ltusername&gt,password='&ltpassword&gt',dir_mode=0777,file_mode=0777</I><br/>\r\n3. Clusrun with root on all linux node to update the package:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <I>Clusrun /env:CCP_MAP_ADMIN_USER=0 /user:system /NodeGroup:LinuxNodes /workdir:/mnt/share echo \u201cpython /mnt/share/setup.py -update\u201d ^| at now + 1 minute</I><br/>\r\n4. Wait for clusrun completion and the real update will start in a minute on the linux node; After the update completes, you can run Clusrun command to check the linux agent version by running below command (the version now will be 2.3.7.0):<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  <I>Clusrun /env:CCP_MAP_ADMIN_USER=0 /user:system /NodeGroup:LinuxNodes /workdir:/opt/hpcnodemanager ./nodemanager -v</I><br/>\r\n5. If you want to revert back to the original linux agent version, you could restore the \"hpcnodeagent.tar.gz\" to the old version and apply the same above steps;<br/>\r\n<br/>\r\n<b>Applying the update on Linux nodes on Azure</b><br/>\r\nIf your linux node is on azure and deployed through our ARM template, the linux node will update its Linux Agent Extension automatically.<br/>\r\n<br/>\r\n<b>Applying the update on Client</b><br/>\r\n1. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  a. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager;<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  b. Run the update executable;<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  c. Reboot your client computer;<br/>\r\n2. If you want to revert the patching, please go to Control Panel --&gt Programs and Features --&gt View installed updates, un-install KB4537169 under \u201cMicrosoft \u00ae HPC Pack 2016 Client Components\u201d then reboot;<br/>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack GitHub",
+            "url": "https://github.com/azure/hpcpack"
+        },
+        {
+            "title": "hpc Pack 2016 Update 3",
+            "url": "https://docs.microsoft.com/en-us/powershell/high-performance-computing/what-s-new-in-hpc-pack-2016-update-3?view=hpc16-ps"
+        },
+        {
+            "title": "hpc Pack 2016 Update 3 Download",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=58506"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100918",
+    "downloadPreload": true
+}

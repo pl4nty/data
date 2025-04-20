@@ -1,0 +1,128 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer 7 for Windows Server 2003 (KB2744842)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS12-063. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE7-WindowsServer2003-KB2744842-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/9/5/3/95310f96-52d6-416f-ba12-31d4440a3cfa/IE7-WindowsServer2003-KB2744842-x86-ENU.exe",
+            "size": "9301016",
+            "version": "2744842",
+            "datePublished": "7/15/2024 3:07:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n<b>Other critical security updates are available:</b><br /><br /> To find the latest security releases for you visit <a href=\"http://go.microsoft.com/?LinkID=275655\">Windows Update</a> and click \"Scan for updates.\" And visit the <a href=\"http://go.microsoft.com/?LinkID=263669\">Protect your PC site</a> to learn how to have the latest security updates delivered directly to your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2744842",
+        "name": "KB2744842"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-063",
+        "name": "MS12-063"
+    },
+    "detailsSection_file_version": "2744842",
+    "detailsSection_file_name": [
+        "IE7-WindowsServer2003-KB2744842-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "8.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer 7 with the following operating system:<br /><ul><li>Windows Server 2003 SP2 </li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</li>\n  <li>Do one of the following:</li>\n  <ul>\n    <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\n    <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\n  </ul>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "security Guidance Center for Developers & IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1396985"
+        },
+        {
+            "title": "windows Server 2003 Home Page",
+            "url": "http://go.microsoft.com/?linkid=1396987"
+        },
+        {
+            "title": "microsoft Security Bulletin MS12-063",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=255505"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34712",
+    "downloadPreload": true
+}

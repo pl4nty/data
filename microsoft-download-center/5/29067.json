@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 End User License Agreements",
+    "downloadDescription": "Microsoft SQL Server 2012 End User License Agreements provide the legal terms and conditions for using the Microsoft SQL Server 2012 software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "License for Visual Studio Shell 2010.docx",
+            "url": "https://download.microsoft.com/download/a/a/7/aa73b8f4-5f4b-4c0b-94f4-fb238c92a916/ENG/License for Visual Studio Shell 2010.docx",
+            "size": "23663",
+            "version": "11.0.2100.60",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "License for VSTA 3 SDK.docx",
+            "url": "https://download.microsoft.com/download/a/a/7/aa73b8f4-5f4b-4c0b-94f4-fb238c92a916/ENG/License for VSTA 3 SDK.docx",
+            "size": "20694",
+            "version": "11.0.2100.60",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "License for SQL Server 2012 Evaluation.rtf",
+            "url": "https://download.microsoft.com/download/a/a/7/aa73b8f4-5f4b-4c0b-94f4-fb238c92a916/ENG/License for SQL Server 2012 Evaluation.rtf",
+            "size": "150968",
+            "version": "11.0.2100.60",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2012 Readme.htm",
+            "url": "https://download.microsoft.com/download/a/a/7/aa73b8f4-5f4b-4c0b-94f4-fb238c92a916/ENG/SQL Server 2012 Readme.htm",
+            "size": "13343",
+            "version": "11.0.2100.60",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2012 End User License Agreements provide the legal terms and conditions for the Microsoft SQL Server 2012 software. <br/>\r\n<br/>\r\nMicrosoft SQL Server 2012 includes other Microsoft programs which are listed below. These programs are licensed under the terms and conditions associated with them.  You may only use these programs in conjunction with the software licensed here.  If you do not accept the license terms associated with a program, you may not use that program.\n<br />\r\n<br/>\n<b>Note:</b> Below you will find the following End User License Agreements applicable for this release:\n<ul>\r\n        <li> Microsoft SQL Server 2012 Evaluation License </li>\r\n    <li> Other Microsoft Program Licenses - The SQL Server 2012 software also contains other Microsoft Programs, each of which are licensed under the terms and conditions of the respective program\u2019s license.</li>\r\n<ul>\r\n<li>Microsoft Visual Studio 2010 Shell (Integrated)</li>\r\n<li>Microsoft Visual Studio Tools for Applications 3.0 Software Development Kit</li>\r\n</ul>\n</ul>\r\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2100.60",
+    "detailsSection_file_name": [
+        "License for Visual Studio Shell 2010.docx",
+        "License for VSTA 3 SDK.docx",
+        "License for SQL Server 2012 Evaluation.rtf",
+        "SQL Server 2012 Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "23.1 KB",
+        "20.2 KB",
+        "147.4 KB",
+        "13.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Note:</b> The End User License Agreements and Privacy Statements can be viewed using Microsoft Word or a standard text editior<br /><br />>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<br />\n  Download the appropriate file by clicking the \"Download\" button located in the \"File in this Download\" section of this page. Then open the downloaded file to view.<br /><br />\n<br />",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29067",
+    "downloadPreload": true
+}

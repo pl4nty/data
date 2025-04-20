@@ -1,0 +1,191 @@
+{
+    "error": "",
+    "downloadTitle": "Windows PowerShell compiled Help for SharePoint Server 2010",
+    "downloadDescription": "Downloadable .chm file that contains Help for Windows PowerShell cmdlets for SharePoint Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StateServiceCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/StateServiceCmdlets.chm",
+            "size": "71913",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundationSearchCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/SharePointFoundationSearchCmdlets.chm",
+            "size": "44817",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebAnalyticsCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/WebAnalyticsCmdlets.chm",
+            "size": "47007",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExcelServicesApplicationCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/ExcelServicesApplicationCmdlets.chm",
+            "size": "108743",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MetadataCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/MetadataCmdlets.chm",
+            "size": "64285",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WordServicesCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/WordServicesCmdlets.chm",
+            "size": "46713",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ECMCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/ECMCmdlets.chm",
+            "size": "60797",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AccessServicesCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/AccessServicesCmdlets.chm",
+            "size": "51797",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SecureStoreCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/SecureStoreCmdlets.chm",
+            "size": "70987",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SearchCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/SearchCmdlets.chm",
+            "size": "283687",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PerformancePointCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/PerformancePointCmdlets.chm",
+            "size": "61147",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VisioServicesCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/VisioServicesCmdlets.chm",
+            "size": "60271",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UserProfileCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/UserProfileCmdlets.chm",
+            "size": "60485",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePointProductsCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/SharePointProductsCmdlets.chm",
+            "size": "469445",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "InfoPathCmdlets.chm",
+            "url": "https://download.microsoft.com/download/5/1/2/5128c532-c24c-4e1b-96ba-9fe3ea8437d6/InfoPathCmdlets.chm",
+            "size": "86663",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Important, before you download:</b><ul>\n<li>If the topics in this file do not appear as you expect (you see \"Page cannot be displayed\" or \"Action canceled,\" for example), see the <a href=\"#instructions\">Instructions</a> section on this page.</li>\n<li>This is a compiled Help file that opens in HTML Help.</li>\n</ul><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "StateServiceCmdlets.chm",
+        "SharePointFoundationSearchCmdlets.chm",
+        "WebAnalyticsCmdlets.chm",
+        "ExcelServicesApplicationCmdlets.chm",
+        "MetadataCmdlets.chm",
+        "WordServicesCmdlets.chm",
+        "ECMCmdlets.chm",
+        "AccessServicesCmdlets.chm",
+        "SecureStoreCmdlets.chm",
+        "SearchCmdlets.chm",
+        "PerformancePointCmdlets.chm",
+        "VisioServicesCmdlets.chm",
+        "UserProfileCmdlets.chm",
+        "SharePointProductsCmdlets.chm",
+        "InfoPathCmdlets.chm"
+    ],
+    "detailsSection_file_size": [
+        "70.2 KB",
+        "43.8 KB",
+        "45.9 KB",
+        "106.2 KB",
+        "62.8 KB",
+        "45.6 KB",
+        "59.4 KB",
+        "50.6 KB",
+        "69.3 KB",
+        "277.0 KB",
+        "59.7 KB",
+        "58.9 KB",
+        "59.1 KB",
+        "458.4 KB",
+        "84.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Your computer must be running an operating system that can open compiled Help files.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\n\r\n<a name=\"instructions\"></a>\n<br/>\r\n\n<b>Known Issue: Text in file does not appear as expected</b>\n\r\n<br/>\n<br/>\nThe text in this file might not appear as expected. The messages \"Navigation canceled,\" \"Action canceled,\" or \"The page cannot be displayed\" might appear. <br/><br/>\r\n\n<b>To open this file to view the text</b>\n\r\n<ol>\n\r\n<li>Click <b>Download</b>. </li>\n\r\n<li>In the <b>File Download</b> dialog box, click <b>Save</b>.</li>\r\n\n<li>Use the <b>Save As</b> dialog box to save the file to your computer. </li>\n\r\n<li>Find the file on your computer, right-click it, and then click <b>Properties</b>.</li>\r\n\n<li>Click <b>Unblock</b>, and then click <b>OK</b>.</li>\r\n<li>Double-click the file to open it.</li></ol>\n\r\nFor more information, see Microsoft Knowledge Base article <a href=\"http://go.microsoft.com/fwlink/?LinkId=49530&clcid=0x409 \">892675</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7879",
+    "downloadPreload": true
+}

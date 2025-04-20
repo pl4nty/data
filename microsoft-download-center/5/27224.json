@@ -1,0 +1,613 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Platform - Runtime Languages (Version 11)",
+    "downloadDescription": "Speech Recognition and Text-to-Speech Engines for Microsoft supported Languages",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_es-ES_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_es-ES_TELE.msi",
+            "size": "14397440",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_ko-KR_Heami.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_ko-KR_Heami.msi",
+            "size": "23924736",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_es-MX_Hilda.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_es-MX_Hilda.msi",
+            "size": "13983744",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_ja-JP_Haruka.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_ja-JP_Haruka.msi",
+            "size": "10276864",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_en-AU_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_en-AU_TELE.msi",
+            "size": "18911232",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_fr-FR_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_fr-FR_TELE.msi",
+            "size": "19943424",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_pt-BR_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_pt-BR_TELE.msi",
+            "size": "13082624",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_en-AU_Hayley.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_en-AU_Hayley.msi",
+            "size": "14389248",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_en-IN_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_en-IN_TELE.msi",
+            "size": "13217792",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_ja-JP_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_ja-JP_TELE.msi",
+            "size": "10379264",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_pl-PL_Paulina.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_pl-PL_Paulina.msi",
+            "size": "6311936",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_en-US_ZiraPro.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_en-US_ZiraPro.msi",
+            "size": "21348352",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_es-MX_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_es-MX_TELE.msi",
+            "size": "18604032",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_en-GB_Hazel.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_en-GB_Hazel.msi",
+            "size": "7417856",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_ru-RU_Elena.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_ru-RU_Elena.msi",
+            "size": "6508544",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_zh-TW_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_zh-TW_TELE.msi",
+            "size": "10924032",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TTS Supplement License.rtf",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/TTS Supplement License.rtf",
+            "size": "28451",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_it-IT_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_it-IT_TELE.msi",
+            "size": "19058688",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_es-ES_Helena.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_es-ES_Helena.msi",
+            "size": "11956224",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_ko-KR_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_ko-KR_TELE.msi",
+            "size": "11669504",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_pt-PT_Helia.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_pt-PT_Helia.msi",
+            "size": "11030528",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_en-US_Helen.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_en-US_Helen.msi",
+            "size": "17342464",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_pl-PL_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_pl-PL_TELE.msi",
+            "size": "13082624",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_zh-CN_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_zh-CN_TELE.msi",
+            "size": "8445952",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_en-CA_Heather.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_en-CA_Heather.msi",
+            "size": "8761344",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_fr-CA_Harmonie.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_fr-CA_Harmonie.msi",
+            "size": "23134208",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_de-DE_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_de-DE_TELE.msi",
+            "size": "19005440",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_en-CA_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_en-CA_TELE.msi",
+            "size": "23441408",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_pt-PT_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_pt-PT_TELE.msi",
+            "size": "29544448",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_nl-NL_Hanna.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_nl-NL_Hanna.msi",
+            "size": "18882560",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_ru-RU_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_ru-RU_TELE.msi",
+            "size": "18006016",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MSSpeech_SR_en-US_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_en-US_TELE.msi",
+            "size": "23490560",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_zh-CN_HuiHui.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_zh-CN_HuiHui.msi",
+            "size": "26796032",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_da-DK_Helle.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_da-DK_Helle.msi",
+            "size": "12054528",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SR Engine Supplement License.rtf",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/SR Engine Supplement License.rtf",
+            "size": "28660",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_de-DE_Hedda.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_de-DE_Hedda.msi",
+            "size": "13979648",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_it-IT_Lucia.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_it-IT_Lucia.msi",
+            "size": "13975552",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_zh-TW_HanHan.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_zh-TW_HanHan.msi",
+            "size": "19734528",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_pt-PT_Helia16k.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_pt-PT_Helia16k.msi",
+            "size": "7135232",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_sv-SE_Hedvig.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_sv-SE_Hedvig.msi",
+            "size": "12394496",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_fr-FR_Hortense.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_fr-FR_Hortense.msi",
+            "size": "12173312",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_nb-NO_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_nb-NO_TELE.msi",
+            "size": "20557824",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_pt-BR_Heloisa.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_pt-BR_Heloisa.msi",
+            "size": "11001856",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_fi-FI_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_fi-FI_TELE.msi",
+            "size": "19447808",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_ca-ES_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_ca-ES_TELE.msi",
+            "size": "26357760",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_fr-CA_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_fr-CA_TELE.msi",
+            "size": "21905408",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_en-IN_Heera.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_en-IN_Heera.msi",
+            "size": "6549504",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_zh-HK_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_zh-HK_TELE.msi",
+            "size": "14589952",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_sv-SE_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_sv-SE_TELE.msi",
+            "size": "10432512",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_nb-NO_Hulda.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_nb-NO_Hulda.msi",
+            "size": "7725056",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_zh-HK_HunYee.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_zh-HK_HunYee.msi",
+            "size": "17022976",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_fi-FI_Heidi.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_fi-FI_Heidi.msi",
+            "size": "9306112",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_nl-NL_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_nl-NL_TELE.msi",
+            "size": "12271616",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_en-GB_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_en-GB_TELE.msi",
+            "size": "18518016",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_TTS_ca-ES_Herena.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_TTS_ca-ES_Herena.msi",
+            "size": "10481664",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSSpeech_SR_da-DK_TELE.msi",
+            "url": "https://download.microsoft.com/download/4/0/d/40d6347a-afa5-417d-a9bb-173d937beed4/MSSpeech_SR_da-DK_TELE.msi",
+            "size": "26259456",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following downloads contain the Microsoft Speech Recognition and Text-to-Speech engine data files for all currently supported languages for the Microsoft Speech Platform - Runtime 11.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11",
+    "detailsSection_file_name": [
+        "MSSpeech_SR_es-ES_TELE.msi",
+        "MSSpeech_TTS_ko-KR_Heami.msi",
+        "MSSpeech_TTS_es-MX_Hilda.msi",
+        "MSSpeech_TTS_ja-JP_Haruka.msi",
+        "MSSpeech_SR_en-AU_TELE.msi",
+        "MSSpeech_SR_fr-FR_TELE.msi",
+        "MSSpeech_SR_pt-BR_TELE.msi",
+        "MSSpeech_TTS_en-AU_Hayley.msi",
+        "MSSpeech_SR_en-IN_TELE.msi",
+        "MSSpeech_SR_ja-JP_TELE.msi",
+        "MSSpeech_TTS_pl-PL_Paulina.msi",
+        "MSSpeech_TTS_en-US_ZiraPro.msi",
+        "MSSpeech_SR_es-MX_TELE.msi",
+        "MSSpeech_TTS_en-GB_Hazel.msi",
+        "MSSpeech_TTS_ru-RU_Elena.msi",
+        "MSSpeech_SR_zh-TW_TELE.msi",
+        "TTS Supplement License.rtf",
+        "MSSpeech_SR_it-IT_TELE.msi",
+        "MSSpeech_TTS_es-ES_Helena.msi",
+        "MSSpeech_SR_ko-KR_TELE.msi",
+        "MSSpeech_TTS_pt-PT_Helia.msi",
+        "MSSpeech_TTS_en-US_Helen.msi",
+        "MSSpeech_SR_pl-PL_TELE.msi",
+        "MSSpeech_SR_zh-CN_TELE.msi",
+        "MSSpeech_TTS_en-CA_Heather.msi",
+        "MSSpeech_TTS_fr-CA_Harmonie.msi",
+        "MSSpeech_SR_de-DE_TELE.msi",
+        "MSSpeech_SR_en-CA_TELE.msi",
+        "MSSpeech_SR_pt-PT_TELE.msi",
+        "MSSpeech_TTS_nl-NL_Hanna.msi",
+        "MSSpeech_SR_ru-RU_TELE.msi",
+        "MSSpeech_SR_en-US_TELE.msi",
+        "MSSpeech_TTS_zh-CN_HuiHui.msi",
+        "MSSpeech_TTS_da-DK_Helle.msi",
+        "SR Engine Supplement License.rtf",
+        "MSSpeech_TTS_de-DE_Hedda.msi",
+        "MSSpeech_TTS_it-IT_Lucia.msi",
+        "MSSpeech_TTS_zh-TW_HanHan.msi",
+        "MSSpeech_TTS_pt-PT_Helia16k.msi",
+        "MSSpeech_TTS_sv-SE_Hedvig.msi",
+        "MSSpeech_TTS_fr-FR_Hortense.msi",
+        "MSSpeech_SR_nb-NO_TELE.msi",
+        "MSSpeech_TTS_pt-BR_Heloisa.msi",
+        "MSSpeech_SR_fi-FI_TELE.msi",
+        "MSSpeech_SR_ca-ES_TELE.msi",
+        "MSSpeech_SR_fr-CA_TELE.msi",
+        "MSSpeech_TTS_en-IN_Heera.msi",
+        "MSSpeech_SR_zh-HK_TELE.msi",
+        "MSSpeech_SR_sv-SE_TELE.msi",
+        "MSSpeech_TTS_nb-NO_Hulda.msi",
+        "MSSpeech_TTS_zh-HK_HunYee.msi",
+        "MSSpeech_TTS_fi-FI_Heidi.msi",
+        "MSSpeech_SR_nl-NL_TELE.msi",
+        "MSSpeech_SR_en-GB_TELE.msi",
+        "MSSpeech_TTS_ca-ES_Herena.msi",
+        "MSSpeech_SR_da-DK_TELE.msi"
+    ],
+    "detailsSection_file_size": [
+        "13.7 MB",
+        "22.8 MB",
+        "13.3 MB",
+        "9.8 MB",
+        "18.0 MB",
+        "19.0 MB",
+        "12.5 MB",
+        "13.7 MB",
+        "12.6 MB",
+        "9.9 MB",
+        "6.0 MB",
+        "20.4 MB",
+        "17.7 MB",
+        "7.1 MB",
+        "6.2 MB",
+        "10.4 MB",
+        "27.8 KB",
+        "18.2 MB",
+        "11.4 MB",
+        "11.1 MB",
+        "10.5 MB",
+        "16.5 MB",
+        "12.5 MB",
+        "8.1 MB",
+        "8.4 MB",
+        "22.1 MB",
+        "18.1 MB",
+        "22.4 MB",
+        "28.2 MB",
+        "18.0 MB",
+        "17.2 MB",
+        "22.4 MB",
+        "25.6 MB",
+        "11.5 MB",
+        "28.0 KB",
+        "13.3 MB",
+        "13.3 MB",
+        "18.8 MB",
+        "6.8 MB",
+        "11.8 MB",
+        "11.6 MB",
+        "19.6 MB",
+        "10.5 MB",
+        "18.5 MB",
+        "25.1 MB",
+        "20.9 MB",
+        "6.2 MB",
+        "13.9 MB",
+        "9.9 MB",
+        "7.4 MB",
+        "16.2 MB",
+        "8.9 MB",
+        "11.7 MB",
+        "17.7 MB",
+        "10.0 MB",
+        "25.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\nDevelopment is supported on:\r\n<ul>\r\n    <li>Windows Vista or later</li>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n<br></br>\r\nDeployment is supported on:\r\n<ul>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>First install the <a href=\"http://go.microsoft.com/fwlink/?LinkID=223568&clcid=0x409\">Microsoft Speech Platform -  Runtime 11.0</a></li>\r\n    <li>Click the file you want to download from the list below.</li>\r\n    <li>Do one of the following:</li>\r\n    <ul>\r\n        <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n        <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b></li>\r\n    </ul>\r\n</ul>\r\n\r\n<b>Important File Download Details</b>\r\n<ul>\r\n    <li>The downloads only contain the language data files:</li>\r\n        <ul>\r\n             <li>For the Runtime, please download the <a href=\"http://go.microsoft.com/fwlink/?LinkID=223568&clcid=0x409\">Microsoft Speech Platform - Runtime 11</a></li>\r\n             <li>For the Software Development Kit, please download the <a href=\"http://go.microsoft.com/fwlink/?LinkID=223570&clcid=0x409\">Microsoft Speech Platform - SDK 11</a></li>\r\n        </ul>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Speech Technologies",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=187246"
+        },
+        {
+            "title": "microsoft Speech Platform - Runtime 11",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223568&clcid=0x409"
+        },
+        {
+            "title": "microsoft Speech Platform - Software Development Kit (SDK) 11",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223570&clcid=0x409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27224",
+    "downloadPreload": true
+}

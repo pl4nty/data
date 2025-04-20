@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Designing .Net Class Libraries - CLR Performance Tips",
+    "downloadDescription": "CLR Performance Tips  By: Rico Mariani and Maoni Stephens",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CLR_300k.exe",
+            "url": "https://download.microsoft.com/download/f/b/f/fbfa670d-dae4-4333-85a9-bdef23c0e7d5/CLR_300k.exe",
+            "size": "162014208",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CLR_100k.exe",
+            "url": "https://download.microsoft.com/download/f/b/f/fbfa670d-dae4-4333-85a9-bdef23c0e7d5/CLR_100k.exe",
+            "size": "79100928",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn performance basics (measure, measure, measure!), how to build a performance culture, GC basics, and a couple of tips on controversial .NET performance topics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CLR_300k.exe",
+        "CLR_100k.exe"
+    ],
+    "detailsSection_file_size": [
+        "154.5 MB",
+        "75.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 55 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click and save locally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31137",
+    "downloadPreload": true
+}

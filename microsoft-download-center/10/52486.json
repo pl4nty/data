@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Jacobian Coordinates on Genus 2 Curves",
+    "downloadDescription": "This download contains Magma files that compute arithmetic on genus 2 curves in Jacobian coordinates. Last published: May 27, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "JacobianCoordinates.zip",
+            "url": "https://download.microsoft.com/download/6/9/1/6918ea57-f5b2-4c88-911b-3736a8ca8be7/JacobianCoordinates.zip",
+            "size": "26094",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains Magma files that compute arithmetic on genus 2 curves in Jacobian coordinates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "JacobianCoordinates.zip"
+    ],
+    "detailsSection_file_size": [
+        "25.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52486",
+    "downloadPreload": true
+}

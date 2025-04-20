@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Online Migration to Microsoft Dynamics CRM on-premises",
+    "downloadDescription": "This document lists the steps needed to migrate from a Microsoft CRM Online instance to a Microsoft Dynamics CRM 2015 on-premises deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRMOnlinetoCRMOnPremiseMigration.docx",
+            "url": "https://download.microsoft.com/download/a/b/d/abdd4385-b4b1-4e44-85a8-d5f6fc909bb7/CRMOnlinetoCRMOnPremiseMigration.docx",
+            "size": "52952",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The purpose of this document is to summarize the steps needed to migrate from a Microsoft CRM Online instance to a Microsoft Dynamics CRM 2015 on-premises deployment.  This document can also be viewed on TechNet <a href=\"https://technet.microsoft.com/library/dn630244.aspx\">Migrate Microsoft Dynamics CRM Online to Microsoft Dynamics CRM On-Premises</a>.\r\n<br />The steps include information on the following:<br />\r\n<ol>\n<li>Restore a copy of the Microsoft Dynamics CRM Online SQL database</li>\n<li>Apply required hotfixes</li>\n<li>Import the restored Microsoft Dynamics CRM organization into the Microsoft Dynamics CRM on premises deployment</li>\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1",
+    "detailsSection_file_name": [
+        "CRMOnlinetoCRMOnPremiseMigration.docx"
+    ],
+    "detailsSection_file_size": [
+        "51.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 <br/>\r\nWindows Server 2008 R2<br/>\r\nWindows Server 2012<br/>\r\nMicrosoft Dynamics CRM 2015<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click Download, and then open or save the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18039",
+    "downloadPreload": true
+}

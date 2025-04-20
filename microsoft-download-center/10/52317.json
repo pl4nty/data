@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Multi-System, Machine-Translated, Word-Order Collection",
+    "downloadDescription": "This data takes the output of eight translation systems Microsoft Research combined for the 2008 National Institute of Standards and Technology Open Machine Translation Evaluation and completely masks it so you can determine only how each system re-ordered the source sentence and when the systems disagreed in word choice. Last published: March 28, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OrderDataV1.zip",
+            "url": "https://download.microsoft.com/download/2/7/9/27960138-1058-46a6-8511-3ced4bfca463/OrderDataV1.zip",
+            "size": "3257278",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This data takes the output of eight translation systems Microsoft Research combined for the 2008 National Institute of Standards and Technology Open Machine Translation Evaluation and completely masks it so you can determine only how each system re-ordered the source sentence and when the systems disagreed in word choice. This will enable researchers to explore approaches to combine or rank re-ordering decisions from machine-translation systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OrderDataV1.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52317",
+    "downloadPreload": true
+}

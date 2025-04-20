@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Automation Graphical Authoring SDK",
+    "downloadDescription": "The Microsoft Azure Automation Graphical Authoring SDK enables developers to create and edit Graphical Runbooks for use with the Azure Automation service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AzureAutomationGraphicalAuthoringSDK.msi",
+            "url": "https://download.microsoft.com/download/2/3/a/23a67616-3898-460a-8b17-fcabdf0a8f53/AzureAutomationGraphicalAuthoringSDK.msi",
+            "size": "978944",
+            "version": "Pre-release",
+            "datePublished": "7/15/2024 4:01:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Azure Automation Graphical Authoring SDK exposes the programming model for developers to manipulate Graphical Runbook (.graphrunbook) files.  It allows custom applications to:\r\n<ol>\r\n<li>Create runbook files that can be imported into the Azure portal and are editable by the graphical editor.</li>\r\n<li>Consume runbook files exported from the Azure portal.</li>\r\n</ol>\r\nFor more information, refer to the ReadMe file installed by the SDK.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Pre-release",
+    "detailsSection_file_name": [
+        "AzureAutomationGraphicalAuthoringSDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "956.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>RAM \u2013 minimum 1GB, recommended 2GB</li>\r\n<li>Disk space minimum 50MB</li>\r\n<li>CPU Dual Core or better</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and run the MSI file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50734",
+    "downloadPreload": true
+}

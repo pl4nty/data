@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual Machine Network Driver for Microsoft Device Emulator",
+    "downloadDescription": "The virtual machine network driver is an intermediate driver that virtualizes a physical network card (or connection).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme for Virtual Machine Network Driver.txt",
+            "url": "https://download.microsoft.com/download/0/6/d/06ddbe8e-07b0-40f3-8d70-4381403526ed/Readme for Virtual Machine Network Driver.txt",
+            "size": "910",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Note: This download has now been retired. If you would like to get the Virtual Machine Network Driver, please download Virtual PC 2007 from <a href=\"http://go.microsoft.com/fwlink/?linkid=46859\">http://go.microsoft.com/fwlink/?linkid=46859</a></b>\n\n<br></br>\n<br></br>\nThe Virtual Machine Network Driver allows the Device emulator's OS (or even the Virtual PC OS, as the case may be) to emulate its own network connection. Because the physical network interface on the host machine is now \"virtualized,\" you have a way to get two IP Addresses - one for the host PC, and one for the operating system that is running within the Device Emulator (or Virtual PC). Device Emulator users using the VMNet Driver can connect to the host machine over TCP or UDP as the alternative to the standard \"Activesync over DMA\" solution.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Readme for Virtual Machine Network Driver.txt"
+    ],
+    "detailsSection_file_size": [
+        "910 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Standard X86 machine with network card; Windows XP/Windows Server; Visual Studio .NET 2003 or Visual Studio 2005 for development",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Vista",
+        "Windows XP Embedded Service Pack 2 "
+    ],
+    "installInstructionSection": "Download the MSI for the VMNEt driver and go through the standard installation process. The VMNet Driver will get installed.<br />\n<br />\nTo check if you have the correct driver installed, Open Network Connections and right click to Properties. You will see a window that lists all the software connections on the machine. Virtual Machine Network Driver (or Services) will be in there as an item.<br />\n<br />\nThe VMNet Driver is also added in the Control Panel --> Add/Remove Programs Tab. So if you want to uninstall, just go here and remove the driver.",
+    "additionalInformationSection": "This VMNet Driver is availabale for install \"as-is\" and is not a supported service. It is not a part of the Visual Studio 2005 product, and is being given as an additional tool to aid developers that need another connectivity option other than Activesync.<br />\n<br />\nFor more information about using the drive, please visit:<br />\nThe Visual Studio for Devices Team Blog: http://blogs.msdn.com/vsdteam<br />\nYou may also post questions at the Device Emulator public forum: http://forums.microsoft.com/msdn/showforum.aspx?forumid=76&siteid=1",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2863",
+    "downloadPreload": true
+}

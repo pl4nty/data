@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Security Training Modules",
+    "downloadDescription": "patterns & practices security training modules are self-paced, modular training resources for p & p Security Guidance. The labs are focused and short in length. The labs are designed to run in your development scenario, but include production considerations where appropriate.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CookiesLab.zip",
+            "url": "https://download.microsoft.com/download/b/1/b/b1b170e0-ce3f-4bd7-8124-0e0a04981218/CookiesLab.zip",
+            "size": "63365",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CanonicalizationLab.zip",
+            "url": "https://download.microsoft.com/download/b/1/b/b1b170e0-ce3f-4bd7-8124-0e0a04981218/CanonicalizationLab.zip",
+            "size": "56816",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RegularExpressionsLab.zip",
+            "url": "https://download.microsoft.com/download/b/1/b/b1b170e0-ce3f-4bd7-8124-0e0a04981218/RegularExpressionsLab.zip",
+            "size": "152829",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlInjectionLab.zip",
+            "url": "https://download.microsoft.com/download/b/1/b/b1b170e0-ce3f-4bd7-8124-0e0a04981218/SqlInjectionLab.zip",
+            "size": "35521",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ValidationControlsLab.zip",
+            "url": "https://download.microsoft.com/download/b/1/b/b1b170e0-ce3f-4bd7-8124-0e0a04981218/ValidationControlsLab.zip",
+            "size": "60169",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CrossSiteScriptingLab.zip",
+            "url": "https://download.microsoft.com/download/b/1/b/b1b170e0-ce3f-4bd7-8124-0e0a04981218/CrossSiteScriptingLab.zip",
+            "size": "61076",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "patterns & practices security training modules are self-paced, modular training resources for p & p Security Guidance. The labs are focused and short in length. The labs are designed to run in your development scenario, but include production considerations where appropriate.<br />\n<br />\nInput and Data Validation p & p Security Training Modules:<br />\n<br />\nThe Input and Data Validation training modules show you how to validate input and data in application scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CookiesLab.zip",
+        "CanonicalizationLab.zip",
+        "RegularExpressionsLab.zip",
+        "SqlInjectionLab.zip",
+        "ValidationControlsLab.zip",
+        "CrossSiteScriptingLab.zip"
+    ],
+    "detailsSection_file_size": [
+        "61.9 KB",
+        "55.5 KB",
+        "149.2 KB",
+        "34.7 KB",
+        "58.8 KB",
+        "59.6 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Visual Studio 2005</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "For Labs, unzip the files onto your local machine.<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20485",
+    "downloadPreload": true
+}

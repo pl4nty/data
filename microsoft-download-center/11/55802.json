@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 Integration Services Attunity Oracle CDC Designer/Service Feature Pack",
+    "downloadDescription": "The Microsoft SQL Server 2016 Integration Services Attunity Oracle CDC Designer/Service Feature Pack is a stand-alone package which provide additional value for SQL Server Integration Services (SSIS).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService.msi",
+            "url": "https://download.microsoft.com/download/d/d/b/ddbd0960-5869-4f4d-b226-cb3043f205b6/AttunityOracleCDC2016/x86/AttunityOracleCdcService.msi",
+            "size": "2277376",
+            "version": "13.0.4446.0",
+            "datePublished": "7/15/2024 3:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService.msi",
+            "url": "https://download.microsoft.com/download/d/d/b/ddbd0960-5869-4f4d-b226-cb3043f205b6/AttunityOracleCDC2016/x64/AttunityOracleCdcService.msi",
+            "size": "2568192",
+            "version": "13.0.4446.0",
+            "datePublished": "7/15/2024 3:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner.msi",
+            "url": "https://download.microsoft.com/download/d/d/b/ddbd0960-5869-4f4d-b226-cb3043f205b6/AttunityOracleCDC2016/x86/AttunityOracleCdcDesigner.msi",
+            "size": "2211840",
+            "version": "13.0.4446.0",
+            "datePublished": "7/15/2024 3:01:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner.msi",
+            "url": "https://download.microsoft.com/download/d/d/b/ddbd0960-5869-4f4d-b226-cb3043f205b6/AttunityOracleCDC2016/x64/AttunityOracleCdcDesigner.msi",
+            "size": "2486272",
+            "version": "13.0.4446.0",
+            "datePublished": "7/15/2024 3:01:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2016 Integration Services Attunity Oracle CDC Designer/Service Feature Pack is a stand-alone package which provide additional value for SQL Server Integration Services (SSIS). It includes the latest versions of:<br />\n<ul>\n  <li>Attunity Oracle CDC Designer.</li>\n  <li>Attunity Oracle CDC Service.</li>\n  </ul><br />\nThis Feature Pack includes Attunity Oracle CDC Designer/Service 4.0.0.107.\r\n<br />\r\nThe following enhancements were made:\r\n<ul>\r\n<li>Bug Fixes \u2013 Property is removed automatically when the user adds Oracle table or removes Oracle table in the Advanced options in Oracle CDC Designer.</li>\r\n<li>Bug Fixes \u2013 Change Data Capture stops working after a recent cumulative update for SQL Server is installed. See <a href=\"https://support.microsoft.com/en-us/help/4038210/fix-change-data-capture-stops-working-after-a-recent-cumulative-update\">KB4038210</a> for details</li>\r\n<li>Bug Fixes \u2013  Oracle CDC Designer fails with \"Incorrect syntax near the keyword 'KEY'\" error when adding an Oracle Table.</li>\r\n<li>Improvement \u2013 Improved support for RAC, this includes better handling when a RAC node is restarted.</li>\r\n<li>Bug Fixes \u2013 The CDC is not working with Oracle 10.2 due to requesting NEXT_CHANGE# from the v$log.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.4446.0",
+    "detailsSection_file_name": [
+        "AttunityOracleCdcService.msi",
+        "AttunityOracleCdcService.msi",
+        "AttunityOracleCdcDesigner.msi",
+        "AttunityOracleCdcDesigner.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "2.4 MB",
+        "2.1 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft\u00ae SQL Server\u00ae 2016 Integration Services",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "After the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55802",
+    "downloadPreload": true
+}

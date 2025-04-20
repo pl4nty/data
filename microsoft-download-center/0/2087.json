@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: System Center Service Manager 2010 SP1",
+    "downloadDescription": "This guide contains instructions for setting up a test lab based on the System Center Service Manager 2010 Service Pack 1 (SP1) Test Lab Guide and deploying Service Manager 2010 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_Service_Manager_2010_SP1.docx",
+            "url": "https://download.microsoft.com/download/2/7/a/27a2dd3d-bca8-445a-b972-cb386dfee3c8/TestLabGuide_Service_Manager_2010_SP1.docx",
+            "size": "276431",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System Center Service Manager 2010 Service Pack 1 (SP1), a new addition to the System Center suite of products, delivers an integrated platform for automating and adapting IT Service Management best practices to your organization's requirements.\r\n<br> </br>\r\nService Manager provides built-in processes based on industry best practices for incident and problem resolution, change control, and asset life cycle management. Through its configuration management database (CMDB) and process integration, Service Manager automatically connects knowledge and information from System Center Operations Manager, System Center Configuration Manager, and Active Directory Domain Services.\r\n<br> </br>\r\nThis paper contains step-by-step instructions for extending the Base Configuration test lab to demonstrate the installation and functionality of Service Manger 2010 SP1.\r\n<br> </br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_Service_Manager_2010_SP1.docx"
+    ],
+    "detailsSection_file_size": [
+        "270.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2008 R2, Windows 7 Ultimate, Windows Server 2008 R2 Enterprise Edition, Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "test Lab Guide: SQL Server 2008 R2",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=206340"
+        },
+        {
+            "title": "test Lab Guide: Base Configuration",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=198140"
+        },
+        {
+            "title": "test Lab Guides",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202817"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2087",
+    "downloadPreload": true
+}

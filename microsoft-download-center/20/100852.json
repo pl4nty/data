@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for BizTalk Server 2020",
+    "downloadDescription": "System Center Management Pack for BizTalk Server 2020 offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for BizTalk Server 2020 Guide.pdf",
+            "url": "https://download.microsoft.com/download/c/8/b/c8b43941-c6aa-49ff-86da-2e09a858dda6/System Center Management Pack for BizTalk Server 2020 Guide.pdf",
+            "size": "916691",
+            "version": "7.0.2020.0",
+            "datePublished": "7/15/2024 4:21:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for BizTalk Server 2020.msi",
+            "url": "https://download.microsoft.com/download/c/8/b/c8b43941-c6aa-49ff-86da-2e09a858dda6/SC Management Pack for BizTalk Server 2020.msi",
+            "size": "466944",
+            "version": "7.0.2020.0",
+            "datePublished": "7/15/2024 4:21:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System Center Management Pack for BizTalk Server 2020  offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components. It allows administrators to monitor health state of various BizTalk artifacts such as Send Ports, Orchestrations etc. and platform artifacts such as Host Instances (BizTalk service). Further, this mp includes performance views, diagnostic capability and alerts.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nSystem Center Management Pack for BizTalk Server 2020  includes the following enhancements: <br/>\r\n<ul>\r\n<li>Supports TLS1.2</li>\r\n<li>Improvements in the discovery of BizTalk installation when group name is changed.</li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2020.0",
+    "detailsSection_file_name": [
+        "System Center Management Pack for BizTalk Server 2020 Guide.pdf",
+        "SC Management Pack for BizTalk Server 2020.msi"
+    ],
+    "detailsSection_file_size": [
+        "895.2 KB",
+        "456.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Required Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2016 Or System Center Operations Manager 2019 </li>\r\n<li> Microsoft BizTalk Server 2020 or Microsoft BizTalk Server 2016</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Click the download link on this page to begin the download process for this management pack package. Save the MSI file and run it or run it directly from the download prompt. Please read the MP guide for further installation details. <br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100852",
+    "downloadPreload": true
+}

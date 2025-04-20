@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "eCommerce Connector in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the eCommerce Connector (EDI) module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_EDI.zip",
+            "url": "https://download.microsoft.com/download/9/9/b/99b3f50d-7e5f-40ff-830d-c716baab6380/SL2015_ENUS_EDI.zip",
+            "size": "5762156",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience\r\n   \r\n      <b> </b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the eCommerce Connector (EDI) module in Microsoft Dynamics SL.\u200bAt Training Material Completion\r\n   \r\n      <b> </b>After reviewing this training, individuals will have: <ul><li>A solid understanding of the EDI module including setup, maintenance, and processing.</li><li>An understanding of the interactions between the EDI module and the other Microsoft Dynamics SL modules.</li><li>The necessary preparation to continue on to the Advanced Shipment Management module.</li></ul>\r\nPrerequisites\r\n   \r\n      <b> </b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows.</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>Order Management training course.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_EDI.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101753",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Structural Expectation Propagation",
+    "downloadDescription": "This is an implementation of the \"Structural Expectation Propagation\" algorithm, as described in the following paper:\r\nLazic. Last published: July 30, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SEPRelease.zip",
+            "url": "https://download.microsoft.com/download/c/4/5/c45926ae-ad11-4f0e-9fbc-13caf2365b11/SEPRelease.zip",
+            "size": "1149992",
+            "version": "1.0",
+            "datePublished": "1/15/2024 4:03:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is an implementation of the \"Structural Expectation Propagation\" algorithm, as described in the following paper:\r\nLazic. N, Bishop, C. M. and Winn, J., Structural expectation propagation: Bayesian structure learning for networks with latent variables. In Proc. 16th Conference on Artificial Intelligence and Statistics (AISTATS), 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SEPRelease.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52468",
+    "downloadPreload": true
+}

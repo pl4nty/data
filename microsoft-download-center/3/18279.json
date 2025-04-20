@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Contoso BI Demo Dataset for Retail Industry",
+    "downloadDescription": "A fictitious retail demo dataset used for presenting Microsoft Business Intelligence products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ContosoBIdemoABF.exe",
+            "url": "https://download.microsoft.com/download/2/b/9/2b93be7f-2f7b-4202-ae66-878ed8813956/ContosoBIdemoABF.exe",
+            "size": "454467072",
+            "version": "Version 2.1",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ContosoBIdemoBAK.exe",
+            "url": "https://download.microsoft.com/download/2/b/9/2b93be7f-2f7b-4202-ae66-878ed8813956/ContosoBIdemoBAK.exe",
+            "size": "656982528",
+            "version": "Version 2.1",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Contoso BI Demo dataset is used to demonstrate DW/BI functionalities across the entire Microsoft Office product family. This dataset includes C-level, sales/marketing, IT, and common finance scenarios for the retail industry and support map integration. In addition, this dataset offers large volumes of transactions from OLTP and well-structured aggregations from OLAP, along with reference and dimension data. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Version 2.1",
+    "detailsSection_file_name": [
+        "ContosoBIdemoABF.exe",
+        "ContosoBIdemoBAK.exe"
+    ],
+    "detailsSection_file_size": [
+        "433.4 MB",
+        "626.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft SQL Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To download the product: <br/>\r\n\u2022 Click the links below and save the two executable files to your hard disk. <br/>\r\n -  ContosoBIdemoBAK.exe<br/>\r\n -  ContosoBIdemoABF.exe<br/><br/>\r\nTo extract the components:<br/> \r\n1. Double-click each executable file to run the extraction process.  Each time, you will be prompted to choose a location for the contents. Make sure that you save all of the components to the same directory on your hard disk. <br/>\r\n2. To start the extraction, click OK. <br/>\r\n3. After the extraction has completed, click OK. <br/><br/>\r\nTo restore and process the Contoso BI Demo dataset:<br/>\r\n1. Open SQL Server Management Studio, and select Database Engine.<br/>\r\n2. Enter the Server name and click Restore Database\u2026.<br/>\r\n3. Restore ContosoRetailDW.bak file to ContosoRetailDW database. <br/>\r\n5. Connect to Analysis Services in SQL Server Management Studio and restore ContosoRetail.abf backup file to Contoso_Retail OLAP database. <br/>\r\n6. Verify Data Sources of Contoso_Retail is connecting to ContosoRetailDW, <br/>\r\n7. Click Process. <br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18279",
+    "downloadPreload": true
+}

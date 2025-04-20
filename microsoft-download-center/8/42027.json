@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Compact 2013 Updates",
+    "downloadDescription": "These files will enable you to update your Windows Embedded Compact 2013 installation to include the latest fixes and enhancements as of December 31, 2021.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WindowsEmbeddedCompact2013.exe",
+            "url": "https://download.microsoft.com/download/3/5/e/35e207c0-0be9-4261-a1f5-1d41bb40e6ff/WindowsEmbeddedCompact2013.exe",
+            "size": "1726112",
+            "version": "8.7.6359.0",
+            "datePublished": "7/15/2024 4:32:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Any new updates post December 2021 will not be available on Download Center. Please visit https://devicepartner.microsoft.com/ for the latest WEC2013 updates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.7.6359.0",
+    "detailsSection_file_name": [
+        "WindowsEmbeddedCompact2013.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7 (x86-based and x64-based) and any available service packs</li>\r\n<li>Windows 8 (x86-based and x64-based) and any available service packs</li>\r\n<li>Windows Server 2008 R2 (x64-based) and any available service packs</li>\r\n<li>Windows Server 2012 (x64-based) and any available service packs</li>\r\n</ul>\r\n<b>Required hardware</b>\r\n<br/>\r\nYour computer must meet the following hardware requirements:\r\n<ul>\r\n<li>100 GB (NTFS) of available hard disk space</li>\r\n<li>2.4 GHz processor</li>\r\n<li>5400 RPM hard drive</li>\r\n<li>2 GB of RAM</li>\r\n<li>A DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\r\n<li>An optical drive that supports DVD</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded CE"
+    ],
+    "installInstructionSection": "<b> Installing WEC2013 clean or updating WEC2013 prior to Wave 7 (December 2021) </b>\r\n<ul>\r\n<li> Download the files </li>\r\n<li> Launch \u201cWindowsEmbeddedCompact2013.exe\u201d </li>\r\n<li> This will start a clean installation of WEC2013, or an update installation of WEC2013 if it is already installed. </li>\r\n</ul>\r\n<b> Notes: </b>\r\n<ul>\r\n<li> After updating to Wave 7 (December 2021), it will not be possible to rollback to any of the previous updates for WEC2013. </li>\r\n</ul>\r\n",
+    "additionalInformationSection": "Major Version History\r\n<ul>\r\n<li>8.0.6092.0 Update   5 2014-Mar: Full cumulative release (new baseline version)</li>\r\n<li>8.0.6211.0 Update 11 2014-Sep: ARMv7 BSP support; new <A href=\"https://msdn.microsoft.com/en-us/library/dn269455.aspx\">License Terms</A></li>\r\n<li>8.1.6217.0 Update 16 2015-Sep: (Wave1) Full cumulative release (new baseline version)</li>\r\n<li>8.2.6228.0 Update 23 2015-Oct: (Wave2) Full cumulative release (new baseline version) with VS 2015 support</li>\r\n<li>8.2.6233.0 Update 28 2016-Feb: Auto-Update enhancements for Internet Explorer</li>\r\n<li>8.2.6238.0 Update 33 2016-Jun: Auto-Update security enhancements (prior Auto-Update versions no longer compatible)</li>\r\n<li>8.3.6247.0 Update 39 2017-Feb: (Wave3) Full cumulative release (new baseline version)</li>\r\n<li>8.4.6270.0 Update 59 2018-Oct: (Wave 4) Full cumulative release (new baseline version)</li>\r\n<li>8.5.6294.0 Update 66 2020-Jun: (Wave 5) Full cumulative release (new baseline version)</li>\r\n<li>8.6.6342.0 Update 70 2021-Jun: (Wave 6) Full cumulative release (new baseline version)</li>\r\n<li>8.7.6356.0 Update 72 2021-Dec: (Wave 7) Full cumulative release (new baseline version)</li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Compact 2013 Web Site",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/windows-embedded-compact-2013.aspx"
+        },
+        {
+            "title": "windows Embedded Compact 2013 MSDN information",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkId=335870"
+        },
+        {
+            "title": "power Suite Embedded Compact",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=47266"
+        },
+        {
+            "title": "windows Embedded Compact 2013 App Builder",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=38819"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42027",
+    "downloadPreload": true
+}

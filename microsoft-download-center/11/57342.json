@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2019 Volume License Pack",
+    "downloadDescription": "This download is needed for administrators to set up activation for volume license editions of Office 2019, Project 2019, or Visio 2019 by using either the Key Management Service (KMS) or Active Directory. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "office2019volumelicensepack_x86.exe",
+            "url": "https://download.microsoft.com/download/f/6/0/f60ca746-5f03-482d-a331-15f38fb4aaca/office2019volumelicensepack_x86.exe",
+            "size": "420088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:45:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "office2019volumelicensepack_x64.exe",
+            "url": "https://download.microsoft.com/download/f/6/0/f60ca746-5f03-482d-a331-15f38fb4aaca/office2019volumelicensepack_x64.exe",
+            "size": "432936",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:45:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Volume license editions of Office 2019, Project 2019, and Visio 2019 require activation. If you want to activate any of these products by using KMS or Active Directory, you must first download and install the Office 2019 Volume License Pack. This download contains an executable file that extracts and installs KMS host license files. These license files are required for the KMS host service to recognize KMS host keys for Office 2019, Project 2019, and Visio 2019. You can use the same KMS host key to set up Active Directory-based activation. <br/>\r\n<br/>\r\nFor more information about volume activation, see <a href=\"https://go.microsoft.com/fwlink/?linkid=2009339\">this article</a>. <br/>\r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "office2019volumelicensepack_x86.exe",
+        "office2019volumelicensepack_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "410.2 KB",
+        "422.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\n- <b>KMS Host:</b> At least Windows Server 2012 or Windows 8.1 (volume editions).<br/>\r\n- <b>Active Directory-Based Activation:</b><br/>\r\n<ul>\r\n   <li><b>Set-up and Configuration:</b> At least Windows Server 2012 or Windows 8.1 (volume editions).</li>\r\n   <li><b>Domain controller:</b> Active Directory Domain Services with at least the Windows Server 2012 schema installed.</li>\r\n</ul>\r\n<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 8.1",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<br/>\r\n1. Download and run the executable file on this page on the KMS host computer.<br/>\r\n2. Enter your Office 2019 KMS host key when prompted.<br/>\r\n3. Activate the product key online.<br/>\r\n4. If setting up a KMS host, open port 1688 to allow the KMS host service through the firewall:<br/>\r\n<ol>\r\n <li>Go to Control Panel > System and Security > Windows Firewall.</li> \r\n <li>Click the \u201cAllow an app or feature through Windows Firewall\u201d link.</li>\r\n <li>Click the Change Settings button.</li>\r\n <li>Select the check box for Key Management Service.</li>\r\n</ol>\r\n<br/>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57342",
+    "downloadPreload": true
+}

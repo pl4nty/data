@@ -1,0 +1,309 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server DNS",
+    "downloadDescription": "System Center Management Pack for Windows Server DNS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.TRK.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.TRK.msi",
+            "size": "610304",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.SVE.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.SVE.msi",
+            "size": "602112",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.RUS.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.RUS.msi",
+            "size": "618496",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.PTG.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.PTG.msi",
+            "size": "606208",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.PTB.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.PTB.msi",
+            "size": "606208",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.PLK.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.PLK.msi",
+            "size": "618496",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.NLD.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.NLD.msi",
+            "size": "610304",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.KOR.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.KOR.msi",
+            "size": "606208",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.JPN.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.JPN.msi",
+            "size": "598016",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.ITA.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.ITA.msi",
+            "size": "606208",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.HUN.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.HUN.msi",
+            "size": "618496",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.FRA.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.FRA.msi",
+            "size": "610304",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.ESN.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.ESN.msi",
+            "size": "606208",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.ENU.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.ENU.msi",
+            "size": "598016",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.DEU.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.DEU.msi",
+            "size": "610304",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.CSY.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.CSY.msi",
+            "size": "614400",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.CHT.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.CHT.msi",
+            "size": "589824",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DNS.CHS.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS.CHS.msi",
+            "size": "585728",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for DNS 2012.msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/Microsoft System Center Management Pack for DNS 2012.msi",
+            "size": "708608",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM_MP_DNS2012.doc",
+            "url": "https://download.microsoft.com/download/7/a/3/7a34cb81-bb7f-4aa5-915e-2b75eb935ff1/OM_MP_DNS2012.doc",
+            "size": "766976",
+            "version": "10.0.9.3",
+            "datePublished": "7/15/2024 3:06:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "System Center Management Pack for Windows Server DNS",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.9.3",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for DNS.TRK.msi",
+        "Microsoft System Center Management Pack for DNS.SVE.msi",
+        "Microsoft System Center Management Pack for DNS.RUS.msi",
+        "Microsoft System Center Management Pack for DNS.PTG.msi",
+        "Microsoft System Center Management Pack for DNS.PTB.msi",
+        "Microsoft System Center Management Pack for DNS.PLK.msi",
+        "Microsoft System Center Management Pack for DNS.NLD.msi",
+        "Microsoft System Center Management Pack for DNS.KOR.msi",
+        "Microsoft System Center Management Pack for DNS.JPN.msi",
+        "Microsoft System Center Management Pack for DNS.ITA.msi",
+        "Microsoft System Center Management Pack for DNS.HUN.msi",
+        "Microsoft System Center Management Pack for DNS.FRA.msi",
+        "Microsoft System Center Management Pack for DNS.ESN.msi",
+        "Microsoft System Center Management Pack for DNS.ENU.msi",
+        "Microsoft System Center Management Pack for DNS.DEU.msi",
+        "Microsoft System Center Management Pack for DNS.CSY.msi",
+        "Microsoft System Center Management Pack for DNS.CHT.msi",
+        "Microsoft System Center Management Pack for DNS.CHS.msi",
+        "Microsoft System Center Management Pack for DNS 2012.msi",
+        "OM_MP_DNS2012.doc"
+    ],
+    "detailsSection_file_size": [
+        "596.0 KB",
+        "588.0 KB",
+        "604.0 KB",
+        "592.0 KB",
+        "592.0 KB",
+        "604.0 KB",
+        "596.0 KB",
+        "592.0 KB",
+        "584.0 KB",
+        "592.0 KB",
+        "604.0 KB",
+        "596.0 KB",
+        "592.0 KB",
+        "584.0 KB",
+        "596.0 KB",
+        "600.0 KB",
+        "576.0 KB",
+        "572.0 KB",
+        "692.0 KB",
+        "749.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Active Directory Federation Services Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager:\r\n\u2022 System Center Operations Manager 2012\r\n\u2022 System Center Operations Manager 2012 SP1\r\n\u2022 System Center Operations Manager 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "37141",
+    "downloadPreload": true
+}

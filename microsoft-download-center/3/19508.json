@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Virtualization Guidance and Recommendations",
+    "downloadDescription": "The ability to virtualize servers during a SharePoint deployment can help administrators develop an efficient architecture.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-virtualization-guidance.xps",
+            "url": "https://download.microsoft.com/download/d/d/e/dded76c5-9874-473f-99c1-b902d325ed38/bi/oit2010-whitepaper-virtualization-guidance.xps",
+            "size": "2387454",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-virtualization-guidance.pdf",
+            "url": "https://download.microsoft.com/download/d/d/e/dded76c5-9874-473f-99c1-b902d325ed38/bi/oit2010-whitepaper-virtualization-guidance.pdf",
+            "size": "1940362",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "oit2010-whitepaper-virtualization-guidance.docx",
+            "url": "https://download.microsoft.com/download/d/d/e/dded76c5-9874-473f-99c1-b902d325ed38/bi/oit2010-whitepaper-virtualization-guidance.docx",
+            "size": "3178448",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper illustrates best practices for virtualizing SharePoint Server 2010 on Windows Server 2008 R2 with Hyper-V. Technical decision makers, such as architects and systems administrators, can use this information to design, architect, and manage a virtualized SharePoint infrastructure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "oit2010-whitepaper-virtualization-guidance.xps",
+        "oit2010-whitepaper-virtualization-guidance.pdf",
+        "oit2010-whitepaper-virtualization-guidance.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "1.9 MB",
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19508",
+    "downloadPreload": true
+}

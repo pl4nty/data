@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Nano Server Image Builder (1.0.78)",
+    "downloadDescription": "Nano Server Image Builder is a graphical interface to create Nano Server images and bootable USB drives.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NanoServerImageBuilder.msi",
+            "url": "https://download.microsoft.com/download/0/6/f/06f4ba5d-6a43-4230-b5fe-6e24ad4e5bf4/NanoServerImageBuilder.msi",
+            "size": "2703360",
+            "version": "1.0.78",
+            "datePublished": "7/15/2024 4:39:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Nano Server Image Builder is a graphical interface to create Nano Server images, bootable USB drives and ISO files. Automate your installation of Nano Server and create reusable PowerShell scripts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.78",
+    "detailsSection_file_name": [
+        "NanoServerImageBuilder.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\nThe Nano Server Image Builder tool requires the Windows ADK to be installed. Install the Windows ADK from: https://developer.microsoft.com/en-us/windows/hardware/windows-assessment-deployment-kit\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Install the Windows ADK and this downloadable MSI to run the Nano Server Image Builder.\r\n\r\nFor more information about the Nano Server Image Builder, see this blog post: https://blogs.technet.microsoft.com/nanoserver/2016/10/15/introducing-the-nano-server-image-builder/ \r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54065",
+    "downloadPreload": true
+}

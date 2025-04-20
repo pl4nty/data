@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Frans Bouma on ORM!",
+    "downloadDescription": "Carl and Richard talk to Frans Bouma about his thoughts on the ORM revolution, his products, and the Entity Framework. Great stuff!",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080925FBouma.zip",
+            "url": "https://download.microsoft.com/download/0/9/d/09d0deb3-c7ec-4a81-ac15-36bdae5e5a05/20080925FBouma.zip",
+            "size": "48455314",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:12:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Frans Bouma started programming in 1986 on a Toshiba MSX-1, at the age of 16. After graduating with a bachelor degree in Computer Science from the 'Hogeschool Enschede' in the Netherlands in 1994, he started working with 4GL systems and post-relational databases, like uniVerse. In 1996 he founded Solutions Design, a company for database driven web-application development. As the lead developer, he developed medium to large enterprise web applications using SqlServer, AS400, COM+, VC++, Visual Basic and Asp. In 2001 Solution Design produced a content management system completely based on Microsoft technologies like SqlServer 2000, COM+, VC++, VB6 and asp. In 2002 Frans developed in C# his first .NET application, the open source LLBLGen code generator for SqlServer stored procedures and .NET classes. Due to the worldwide success of LLBLGen, Frans designed and developed in 2003 for Solutions Design the O/R mapper and code generator LLBLGen Pro, which is currently one of the market-leading data-access solutions for .NET, C# and VB.NET. Frans received for his community efforts the MVP reward for C# in 2004, 2005, 2006 and 2007 and works full time on LLBLGen Pro enhancements. In 2006, HnD, a full featured support system/forum system for ASP.NET 2.0 was released as open source (GPL), written and designed by Frans Bouma.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080925FBouma.zip"
+    ],
+    "detailsSection_file_size": [
+        "46.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24033",
+    "downloadPreload": true
+}

@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Trends in Cloud Computing Cloud Security Readiness Tool",
+    "downloadDescription": "This report is the result of information collected in the Cloud Security Readiness Tool (CSRT).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Trends-in-Cloud-Computing-Cloud-Security-Readiness-Tool.pdf",
+            "url": "https://download.microsoft.com/download/7/a/f/7af73737-db1f-4ad8-9775-9ca271466396/Trends-in-Cloud-Computing-Cloud-Security-Readiness-Tool.pdf",
+            "size": "953143",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This report is the result of information collected in the Cloud Security Readiness Tool (CSRT). The CSRT is a brief survey that seeks information about the maturity level of an organization\u2019s current on-premises IT infrastructure. Organizations can use the CSRT to better understand their systems, processes, policies, and practices. They can also improve their current IT state, learn about relevant industry regulations, and receive guidance on how to evaluate different cloud options. This report analyzes data that was collected in the six-month period between October 2012 and March 2013. The data consists of answers provided by people who used the CSRT. Approximately 5700 anonymized responses to the CSRT\u2019s 27 questions were received from around the world.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Trends-in-Cloud-Computing-Cloud-Security-Readiness-Tool.pdf"
+    ],
+    "detailsSection_file_size": [
+        "930.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the report available as a PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "office 365 Trust Center",
+            "url": "http://office.microsoft.com/en-us/business/office-365-trust-center-cloud-computing-security-FX103030390.aspx#fbid=xIBLbsq950"
+        },
+        {
+            "title": "microsoft Dynamics CRM Trust Center",
+            "url": "http://www.microsoft.com/en-us/dynamics/crm-trust-center.aspx"
+        },
+        {
+            "title": "microsoft Trusted Cloud",
+            "url": "http://www.microsoft.com/trustedcloud"
+        },
+        {
+            "title": "windows Azure Trust Center",
+            "url": "http://www.windowsazure.com/en-us/support/trust-center/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39043",
+    "downloadPreload": true
+}

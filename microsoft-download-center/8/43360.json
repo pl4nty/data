@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Explorer Developer Channel for Windows 7 SP1",
+    "downloadDescription": "Internet Explorer Developer Channel is a fully functioning browser designed to give web developers and early adopters a sneak peek at the web platform features we\u2019re working on.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IEDeveloperChannel-Windows6.1-x64.exe",
+            "url": "https://download.microsoft.com/download/4/7/1/471ce080-f4df-4dce-a7a0-915e8f46b1a3/IEDeveloperChannel-Windows6.1-x64.exe",
+            "size": "152679800",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IEDeveloperChannel-Windows6.1-x86.exe",
+            "url": "https://download.microsoft.com/download/4/7/1/471ce080-f4df-4dce-a7a0-915e8f46b1a3/IEDeveloperChannel-Windows6.1-x86.exe",
+            "size": "112209024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Internet Explorer Developer Channel provides a sneak peek at Internet Explorer as it's being developed. It can run alongside and independently of IE11, and has all of the browser features that you love in IE11, as well as the latest platform features we\u2019re working on. This version supports new platform features like WebDriver API, GamePad API, F12 Developer Tools improvements, and WebGL improvements. As you test drive these features, make sure to give us feedback through <a href=\"https://twitter.com/IEDevChat\">@IEDevChat</a> or <a href=\"http://go.microsoft.com/fwlink/?LinkId=398246\">Connect</a>.\r\n\r\nAlthough this release is designed to help developers understand the direction being taken during development, the Developer Channel releases are not stable versions of Internet Explorer. You should not target applications or websites to any of the Developer Channel releases. In the future, we will release a stable \"beta\" testing version of IE as development progresses.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2957980",
+        "name": "KB2957980"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IEDeveloperChannel-Windows6.1-x64.exe",
+        "IEDeveloperChannel-Windows6.1-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "145.6 MB",
+        "107.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>Computer/ Processor: Computer with a 233MHz processor or higher (Pentium processor recommended)</li>\r\n <li>Memory: 512MB</li>\r\n <li>Hard Drive Space: 70MB</li>\r\n <li>Display: Super VGA (800 x 600) or higher-resolution monitor with 256 colors.</li>\r\n <li>Peripherals: Modem or Internet connection; Microsoft Mouse, Microsoft IntelliMouse, or compatible pointing device.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Install the following prerequisites before you can install Internet Explorer Developer Channel: </li>\r\n<ol type=\"a\">\r\n <li>Windows 7 with Service Pack 1 (SP1): <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=290956\">Internet Explorer 11</a>, <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=212547\">Microsoft .NET Framework 4.0</a> (full version) and PowerShell 3 (included in the <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=240290\">Windows Management Framework 3.0 </a>)</li>\r\n</ol>\r\n<li>Click the Download button on this page to start the download.</li>\r\n<li>Do one of the following:</li>\r\n<ol type=\"a\">\r\n<li>To start the installation immediately, click Open or Run this program from its current location</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ol>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "devChannel.Modern.IE",
+            "url": "http://devchannel.modern.ie/"
+        },
+        {
+            "title": "internet Explorer Developer Channel MSDN Documentation",
+            "url": "http://msdn.microsoft.com/en-us/library/ie/dn722334(v=vs.85).aspx"
+        },
+        {
+            "title": "internet Explorer Developer Channel FAQ",
+            "url": "http://msdn.microsoft.com/en-us/library/ie/dn725043(v=vs.85).aspx"
+        },
+        {
+            "title": "internet Explorer Developer Channel for Windows 8.1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=0b1bdcb7-31f6-44eb-aebc-d656f3506731"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43360",
+    "downloadPreload": true
+}

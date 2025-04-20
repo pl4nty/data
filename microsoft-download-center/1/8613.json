@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "File Replication Service Diagnostics Tool (FRSDiag.exe)",
+    "downloadDescription": "FRSDiag provides a graphical interface to help troubleshoot and diagnose problems with the File Replication Service (FRS).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "frsdiag.msi",
+            "url": "https://download.microsoft.com/download/4/c/5/4c5144f0-44cd-4a86-aca9-1cd5fdcde9ec/frsdiag.msi",
+            "size": "406528",
+            "version": "1.7",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "FRSDiag provides a graphical interface to help troubleshoot and diagnose problems with the File Replication Service (FRS). FRS is used to replicate files and folders in the SYSVOL file share on domain controllers and files in Distributed File System (DFS) targets. FRSDiag helps to gather snap-shot information about the service, perform automated tests against that data, and compile an overview of possible problems that may exist in the environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.7",
+    "detailsSection_file_name": [
+        "frsdiag.msi"
+    ],
+    "detailsSection_file_size": [
+        "397.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and use FRSDiag.exe on any of the following platforms:<UL><LI>Windows 2000 Professional with Service Pack 3</LI><LI>Windows 2000 Server with Service Pack 3</LI><LI>Windows 2000 Advanced Server with Service Pack 3</LI><LI>Windows 2000 Datacenter Server with Service Pack 3</LI><LI>Windows XP Professional</LI><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/><B>Additional Requirements:</B><UL><LI>.NET Framework version 1.1 or later if running Windows 2000 or Windows XP</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://go.microsoft.com/?linkid=664505"
+        },
+        {
+            "title": "newsgroups for Windows Server 2003",
+            "url": "http://go.microsoft.com/?linkid=664506"
+        },
+        {
+            "title": "windows Server 2003 Resources for IT Pros",
+            "url": "http://go.microsoft.com/?linkid=664507"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://go.microsoft.com/?linkid=664508"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8613",
+    "downloadPreload": true
+}

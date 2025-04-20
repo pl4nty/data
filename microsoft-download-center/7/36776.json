@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Configure the Microsoft Dynamics AX environment for companion apps",
+    "downloadDescription": "This paper describes how to configure an environment that is running Microsoft Dynamics AX 2012 so that users can connect the Microsoft Dynamics AX mobile phone application. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConfigureMicrosoftDynamicsAXConnectorforMobileApplications.pdf",
+            "url": "https://download.microsoft.com/download/e/4/2/e4259131-a239-433d-9541-fdab5c41edb3/ConfigureMicrosoftDynamicsAXConnectorforMobileApplications.pdf",
+            "size": "5211070",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:04:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The initial version of the Microsoft Dynamics AX mobile phone application enables mobile expense capture. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "ConfigureMicrosoftDynamicsAXConnectorforMobileApplications.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.</LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36776",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2014 Product Guide",
+    "downloadDescription": "Download the datasheets, white papers and technical presentations that will help you evaluate Microsoft SQL Server 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL_Server_2014_Product_Guide.zip",
+            "url": "https://download.microsoft.com/download/8/4/f/84f00be4-dafe-4ba4-92ac-5d1080127984/SQL_Server_2014_Product_Guide.zip",
+            "size": "31175291",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:35:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SQL Server 2014 Product Guide is now officially available to customers and partners. The guide is intended to help you get the most value out of Microsoft SQL Server 2014.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "SQL_Server_2014_Product_Guide.zip"
+    ],
+    "detailsSection_file_size": [
+        "29.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows\u00ae Internet Explorer\u00ae 10 browser must be installed to view course content. The browser must be configured to run Active X\u00ae controls and plug-ins. Limited support is available for non-Internet Explorer browsers.</li>\r\n<li>Adobe Reader 7.0 or above. <a href=\"http://www.adobe.com/products/acrobat/readstep2.html\">Download the latest version.</a></li></ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On this page, click Download to start downloading the .zip file.</li>\r\n<li>To open the .zip file immediately, click Open to download and open the .zip file from your temporary directory.</li>\r\n<li>To copy the download to your computer and open the .zip file later, click Save.</li>\r\n<li>Open the .zip file and copy all the files to a folder on your computer. The HTML files do not run correctly when opened directly from the .zip file.</li>\r\n<li>Browse to the folder that contains the downloaded files, and then double-click STARTHERE.CMD to start the Product Guide for SQL Server 2014 CTP1.</li>\r\n<li>When the browser window opens, click Allow Blocked Content to display the Product Guide.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39269",
+    "downloadPreload": true
+}

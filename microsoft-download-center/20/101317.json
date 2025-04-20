@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Dock 2 Firmware and Drivers",
+    "downloadDescription": "All current software, firmware, and drivers for the Surface Dock 2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SurfaceDock2_SEMMforDock_Win10_17763_20.054.29469.0.msi",
+            "url": "https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_SEMMforDock_Win10_17763_20.054.29469.0.msi",
+            "size": "1966080",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock2_DriverOnly_Win10_17763_20.054.29700.0.msi",
+            "url": "https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_DriverOnly_Win10_17763_20.054.29700.0.msi",
+            "size": "2076672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock2_DriverOnly_Win10_17763_20.054.26905.0.msi",
+            "url": "https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_DriverOnly_Win10_17763_20.054.26905.0.msi",
+            "size": "1306624",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock2_SurfaceProX_SEMMforDock_Win10_17763_20.053.18210.0.msi",
+            "url": "https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_SurfaceProX_SEMMforDock_Win10_17763_20.053.18210.0.msi",
+            "size": "1757184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32491.0_arm64.msi",
+            "url": "https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32491.0_arm64.msi",
+            "size": "483328",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32423.0_x64.msi",
+            "url": "https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32423.0_x64.msi",
+            "size": "520192",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Compatible host devices for <a href=\"https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_SEMMforDock_Win10_17763_20.054.29469.0.msi\">SurfaceDock2_SEMMforDock_Win10_17763_20.054.29469.0.msi</a>\r\n<ul>\r\n<li>Surface Pro 7</li>\r\n<li>Surface Laptop 3</li>\r\n<li>Surface Book 3</li>\r\n</ul>\r\n\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_DriverOnly_Win10_17763_20.054.26905.0.msi\">SurfaceDock2_DriverOnly_Win10_17763_20.054.26905.0.msi</a>\r\n<ul>\r\n<li>Surface Go (all generations)</li>\r\n</ul>\r\n\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_DriverOnly_Win10_17763_20.054.29700.0.msi\">SurfaceDock2_DriverOnly_Win10_17763_20.054.29700.0.msi</a>\r\n<ul>\r\n<li>Surface Pro 5 and later</li>\r\n<li>Surface Laptop and later</li>\r\n<li>Surface Book 2</li>\r\n</ul>\r\n\r\nCompatible host devices for <a href=\"https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_SurfaceProX_SEMMforDock_Win10_17763_20.053.18210.0.msi\">SurfaceDock2_SurfaceProX_SEMMforDock_Win10_17763_20.053.18210.0.msi</a>\r\n<ul>\r\n<li>Surface Pro X</li>\r\n</ul>\r\n\r\n(WMI support) Compatible host devices for <a href=\"https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32423.0_x64.msi\">SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32423.0_x64.msi</a>\r\n<ul>\r\n<li>Surface Pro 5 and later</li>\r\n<li>Surface Go (all generations)</li>\r\n<li>Surface Laptop (all generations)</li>\r\n<li>Surface Book 2 and later</li>\r\n</ul>\r\n\r\n\r\n(WMI support) Compatible host devices for <a href=\"https://download.microsoft.com/download/b/7/4/b74fa4b8-5bc8-4404-bb12-6711b0daf165/SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32491.0_arm64.msi\">SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32491.0_arm64.msi</a>\r\n<ul>\r\n<li>Surface Pro X</li>\r\n</ul>\r\n<br></br>\r\nCumulative and current firmware and drivers for the Surface Dock 2. This firmware and driver package contains drivers for all of the components in the Surface Dock 2, as well as updates to the system firmware that have been released via Windows Update. These drivers and firmware are compatible with Windows 10 and Windows 11, including Enterprise versions. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\r\n\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n<br>\r\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\r\n</br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceDock2_SEMMforDock_Win10_17763_20.054.29469.0.msi",
+        "SurfaceDock2_DriverOnly_Win10_17763_20.054.29700.0.msi",
+        "SurfaceDock2_DriverOnly_Win10_17763_20.054.26905.0.msi",
+        "SurfaceDock2_SurfaceProX_SEMMforDock_Win10_17763_20.053.18210.0.msi",
+        "SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32491.0_arm64.msi",
+        "SurfaceDock2_WmiInstanceProvider_Win10_17763_20.072.32423.0_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "2.0 MB",
+        "1.2 MB",
+        "1.7 MB",
+        "472.0 KB",
+        "508.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Surface Dock 2 required for compatibility with these drivers. These drivers and firmware are compatible with Windows 10 and Windows 11, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to enable support for Surface Dock 2 offline, without internet access or Windows Update. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [
+        {
+            "title": "surface Dock 2 overview",
+            "url": "https://learn.microsoft.com/en-us/surface/surface-dock2-overview"
+        },
+        {
+            "title": "manage Surface Docks with WMI",
+            "url": "https://learn.microsoft.com/en-us/surface/surface-dock-wmi"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101317",
+    "downloadPreload": true
+}

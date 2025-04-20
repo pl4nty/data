@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2010 SP1 VHD",
+    "downloadDescription": "This download comes as a pre-configured VHD. This download enables you evaluate Microsoft Exchange Server 2010 SP1 for 180 days.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ExchangeDemos.exe",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.exe",
+            "size": "1023995971",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r05",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r05",
+            "size": "1024000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r04",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r04",
+            "size": "1024000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2010_QuickStartguide.htm.htm",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/Exchange2010_QuickStartguide.htm.htm",
+            "size": "134361",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r02",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r02",
+            "size": "1024000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "README_Exchange2010 SP1.htm",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/README_Exchange2010 SP1.htm",
+            "size": "71583",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r01",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r01",
+            "size": "1024000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r00",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r00",
+            "size": "1024000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r06",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r06",
+            "size": "3757654",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange 2010 SP1 VPC EULA.mht",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/Exchange 2010 SP1 VPC EULA.mht",
+            "size": "241198",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExchangeDemos.r03",
+            "url": "https://download.microsoft.com/download/4/e/c/4ec2a735-a6d1-4737-88d1-a4376a192ad8/ExchangeDemos.r03",
+            "size": "1024000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download this fully configured virtual machine of the latest release of Exchange Server 2010 SP1. Evaluate the new capabilities of Exchange Server 2010 SP1, which helps you achieve new levels of reliability and performance by delivering features that help to simplify your administration, protect your communications, and delight your users by meeting their demands for greater business mobility.<br/><br/>\r\n\r\nNote:<br/>\r\n1. This trial software is intended for evaluation purposes only.<br/>\r\n2. There is no product support for this trial. You are welcome to share your trial experience with others and to ask for advice by participating in the forums.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ExchangeDemos.exe",
+        "ExchangeDemos.r05",
+        "ExchangeDemos.r04",
+        "Exchange2010_QuickStartguide.htm.htm",
+        "ExchangeDemos.r02",
+        "README_Exchange2010 SP1.htm",
+        "ExchangeDemos.r01",
+        "ExchangeDemos.r00",
+        "ExchangeDemos.r06",
+        "Exchange 2010 SP1 VPC EULA.mht",
+        "ExchangeDemos.r03"
+    ],
+    "detailsSection_file_size": [
+        "976.6 MB",
+        "976.6 MB",
+        "976.6 MB",
+        "131.2 KB",
+        "976.6 MB",
+        "69.9 KB",
+        "976.6 MB",
+        "976.6 MB",
+        "3.6 MB",
+        "235.5 KB",
+        "976.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 Hyper-V or Windows Server 2008 R2 is required to use this virtual machine<br />\r\n\r\nIn addition to the system requirements for Windows Server 2008 as described in the release notes, a 64-bit system with hardware-assisted virtualization enabled and data execution prevention (DEP) is required. <br /><br/>\r\nIt is also recommended to ensure that you have a clean install of x64 edition of Windows Server 2008 to be able to use the Hyper-V technology.<br />\r\nPrerequisites, installation steps, OS recommendations, and known issues of Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc534980.aspx\">here</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 Standard"
+    ],
+    "installInstructionSection": "In order to use this evaluation package you will need to have Microsoft Hyper-V installed on a physical machine.<br/>\r\nHyper-V is available on Windows Server 2008 only and the details on how to install Hyper-V can be found here. Details of how to setup the VHDs are included in the Quick Start Guide available on this download page.<br/><br/>\r\n\r\nUserName: contoso\\Administrator<br/>\r\nPassword: pass@word1\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5002",
+    "downloadPreload": true
+}

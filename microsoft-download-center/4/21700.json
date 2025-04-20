@@ -1,0 +1,139 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2003 Service Pack 2 (32-bit x86) - ISO-9660 CD Image File",
+    "downloadDescription": "Microsoft Windows Server 2003 Service Pack 2 (SP2) is a cumulative service pack that includes the latest updates and provides enhancements to security and stability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "w2k3sp2_3959_usa_x86fre_spcd.iso",
+            "url": "https://download.microsoft.com/download/7/3/7/737d5061-be37-4d02-a67c-70569e75584b/w2k3sp2_3959_usa_x86fre_spcd.iso",
+            "size": "548630528",
+            "version": "914961",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "Microsoft Windows Server 2003 Service Pack 2 (SP2) is a cumulative service pack that includes the latest updates and provides enhancements to security and stability. In addition, it adds new features and updates to existing Windows Server 2003 features and utilities. \n\n<br/>\n<br/> The ISO Image file contains the SP2 update.exe as well as support and deployment tools.\n<br/>\n<br />\nBefore installing this service pack please read the <a href=\"http://go.microsoft.com/fwlink/?LinkId=62452\">Windows Server 2003 Service Pack 2 Release Notes</a><br />\n<br />\n SP2 can be installed directly on the following operating systems:\n<ul>\n<li>Windows Server 2003 Editions (all 32-bit x86)</li> \n<li>Windows Server 2003 R2 Editions </li>\n<li>Windows Server 2003 Small Business Server 2003 R2 (SBS 2003 customers - Please read <a href=\"http://go.microsoft.com/fwlink/?LinkID=83542\">Knowledge Base Article 932600</a> before installing SP2)</li>\n<li>Windows Server 2003 Storage Server R2, x86 Editions </li>\n</ul>\n\n<br />\nInformation about hard disk space requirements can be found in <a href=\"http://support.microsoft.com/kb/926029\">Knowledge Base Article 926029</a><br /><br/>\n\nInformation about an update to the Windows Server 2003 Multi-Language User Interface (MUI) Pack can be found in <a href=\"http://support.microsoft.com/kb/925148\">Knowledge Base Article 925148</a><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB914961",
+        "name": "KB914961"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "914961",
+    "detailsSection_file_name": [
+        "w2k3sp2_3959_usa_x86fre_spcd.iso"
+    ],
+    "detailsSection_file_size": [
+        "523.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Small Business Server 2003 "
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the <B>Download</B> link on this page to start the download.</LI><br />\n<LI>To copy the ISO Image download to your computer to burn a CD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI><br /><LI>Use the directions for your CD burner to create a CD from the ISO-9660 image file</LI><br />\n<br /></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "list of Updates in Windows Server 2003 SP2",
+            "url": "http://support.microsoft.com/kb/914962"
+        },
+        {
+            "title": "windows Server 2003 SP2 for Itanium-based Systems ISO Image",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=803F39EA-50AC-43CA-B564-75C5C080E471&displaylang=en"
+        },
+        {
+            "title": "windows Server 2003 SP2 for x64 Editions ISO Image",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=8A6EBFB5-833D-44E2-BF92-44648A8BB250&displaylang=en"
+        },
+        {
+            "title": "windows Server 2003 SP2 Home Page",
+            "url": "http://www.microsoft.com/technet/windowsserver/sp2.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21700",
+    "downloadPreload": true
+}

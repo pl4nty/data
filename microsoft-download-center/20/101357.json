@@ -1,0 +1,237 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 43 for Microsoft Dynamics NAV 2017",
+    "downloadDescription": "Monthly cumulative update for Microsoft Dynamics NAV 2017",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CU 43 NAV 2017 W1.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 W1.zip",
+            "size": "759772128",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 SE.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 SE.zip",
+            "size": "780754437",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 RU.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 RU.zip",
+            "size": "815804753",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 NZ.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 NZ.zip",
+            "size": "784204724",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 NO.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 NO.zip",
+            "size": "785155669",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 NL.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 NL.zip",
+            "size": "784305476",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 NA.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 NA.zip",
+            "size": "953763321",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 IT.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 IT.zip",
+            "size": "787389726",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 IS.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 IS.zip",
+            "size": "778927167",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 GB.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 GB.zip",
+            "size": "780822371",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 FR.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 FR.zip",
+            "size": "783878961",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 FI.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 FI.zip",
+            "size": "779813508",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 ES.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 ES.zip",
+            "size": "791925283",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 DK.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 DK.zip",
+            "size": "784096075",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 DE.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 DE.zip",
+            "size": "788805529",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 CZ.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 CZ.zip",
+            "size": "807804648",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 CH.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 CH.zip",
+            "size": "829148086",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 BE.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 BE.zip",
+            "size": "804640246",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 AU.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 AU.zip",
+            "size": "783090924",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 43 NAV 2017 AT.zip",
+            "url": "https://download.microsoft.com/download/c/7/3/c7370b38-f098-4117-827f-7ba89ba8279a/CU 43 NAV 2017 AT.zip",
+            "size": "786879523",
+            "version": "30284",
+            "datePublished": "12/15/2023 4:34:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about other cumulative updates already released for Microsoft Dynamics NAV 2017, please see this kb article: https://support.microsoft.com/en-us/help/3210255\r\nTo learn more about what is included in this cumulative update, please visit this kb article: https://support.microsoft.com/en-us/help/4564068",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4564068",
+        "name": "4564068"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "30284",
+    "detailsSection_file_name": [
+        "CU 43 NAV 2017 W1.zip",
+        "CU 43 NAV 2017 SE.zip",
+        "CU 43 NAV 2017 RU.zip",
+        "CU 43 NAV 2017 NZ.zip",
+        "CU 43 NAV 2017 NO.zip",
+        "CU 43 NAV 2017 NL.zip",
+        "CU 43 NAV 2017 NA.zip",
+        "CU 43 NAV 2017 IT.zip",
+        "CU 43 NAV 2017 IS.zip",
+        "CU 43 NAV 2017 GB.zip",
+        "CU 43 NAV 2017 FR.zip",
+        "CU 43 NAV 2017 FI.zip",
+        "CU 43 NAV 2017 ES.zip",
+        "CU 43 NAV 2017 DK.zip",
+        "CU 43 NAV 2017 DE.zip",
+        "CU 43 NAV 2017 CZ.zip",
+        "CU 43 NAV 2017 CH.zip",
+        "CU 43 NAV 2017 BE.zip",
+        "CU 43 NAV 2017 AU.zip",
+        "CU 43 NAV 2017 AT.zip"
+    ],
+    "detailsSection_file_size": [
+        "724.6 MB",
+        "744.6 MB",
+        "778.0 MB",
+        "747.9 MB",
+        "748.8 MB",
+        "748.0 MB",
+        "909.6 MB",
+        "750.9 MB",
+        "742.8 MB",
+        "744.7 MB",
+        "747.6 MB",
+        "743.7 MB",
+        "755.2 MB",
+        "747.8 MB",
+        "752.3 MB",
+        "770.4 MB",
+        "790.7 MB",
+        "767.4 MB",
+        "746.8 MB",
+        "750.4 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Requirements can be found at https://docs.microsoft.com/en-us/dynamics-nav/system-requirements-for-microsoft-dynamics-nav-2017",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "How to install this cumulative update: https://support.microsoft.com/en-us/help/3204818",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101357",
+    "downloadPreload": true
+}

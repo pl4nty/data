@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Bayesian Estimators for Unsupervised HMM Part-of-Speech Tagger",
+    "downloadDescription": "This toolkit provides six different Bayesian estimators for unsupervised Hidden Markov Model Part-of-Speech taggers, reported in the 2008 paper by Jianfeng Gao and Mark Johnson, \u201cA comparison of Bayesian estimators for unsupervised Hidden Markov Model POS taggers,\u201d presented during the 2008 Conference on Empirical Methods on Natural Language . Last published: August 24, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UnsupTagging.zip",
+            "url": "https://download.microsoft.com/download/9/1/2/91203a3c-f78f-45f2-b1a3-0bc2aaf30d4f/UnsupTagging.zip",
+            "size": "7479988",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This toolkit provides six different Bayesian estimators for unsupervised Hidden Markov Model Part-of-Speech taggers, reported in the 2008 paper by Jianfeng Gao and Mark Johnson, \u201cA comparison of Bayesian estimators for unsupervised Hidden Markov Model POS taggers,\u201d presented during the 2008 Conference on Empirical Methods on Natural Language Processing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "UnsupTagging.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52570",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows security on disconnected devices whitepaper",
+    "downloadDescription": "Learn how to protect disconnected devices using Windows and Microsoft security technology",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows security on disconnected devices whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/3/0/8/3085d641-1ca8-4e21-92db-3d17f231d252/Windows security on disconnected devices whitepaper.pdf",
+            "size": "784342",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:02:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper will help you understand the use of a defense in depth strategy when protecting disconnected devices. It's especially relevant for enterprises in the manufacturing, public service, and military industries.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows security on disconnected devices whitepaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "766.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF reader (such as Microsoft Edge)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download and read with a PDF reader (such as Microsoft Edge)",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58220",
+    "downloadPreload": true
+}

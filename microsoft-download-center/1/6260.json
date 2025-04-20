@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint 2010 Products Upgrade Approaches",
+    "downloadDescription": "This model describes the three basic approaches to upgrading to SharePoint 2010 Products: in-place, database attach, or a hybrid of the two.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Upgrade_Approaches_SharePointProducts.pdf",
+            "url": "https://download.microsoft.com/download/6/b/2/6b2cd79a-a4c3-40e4-9e9d-d0a589475a57/Upgrade_Approaches_SharePointProducts.pdf",
+            "size": "722352",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Upgrade_Approaches_SharePointProducts.vsd",
+            "url": "https://download.microsoft.com/download/6/b/2/6b2cd79a-a4c3-40e4-9e9d-d0a589475a57/Upgrade_Approaches_SharePointProducts.vsd",
+            "size": "2194944",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrade_Approaches_SharePointProducts.xps",
+            "url": "https://download.microsoft.com/download/6/b/2/6b2cd79a-a4c3-40e4-9e9d-d0a589475a57/Upgrade_Approaches_SharePointProducts.xps",
+            "size": "1000837",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model helps you understand the in-place, database attach, and hybrid approaches to upgrading from Office SharePoint Server 2007 or Windows SharePoint Services 3.0 to SharePoint 2010 Products.  It illustrates farm topologies before, during, and after upgrade, and compares the advantages of each type of upgrade approach. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Upgrade_Approaches_SharePointProducts.pdf",
+        "Upgrade_Approaches_SharePointProducts.vsd",
+        "Upgrade_Approaches_SharePointProducts.xps"
+    ],
+    "detailsSection_file_size": [
+        "705.4 KB",
+        "2.1 MB",
+        "977.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. </li><li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a></li><li>To view the XPS version of the model, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6260",
+    "downloadPreload": true
+}

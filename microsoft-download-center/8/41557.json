@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Host Integration Server 2013 SDK",
+    "downloadDescription": "Software development kit for the Microsoft Host Integration Server 2013 release",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2013SDK.msi",
+            "url": "https://download.microsoft.com/download/f/f/9/ff94ad63-9a83-4d72-b5b2-2d4ad7a999db/HIS2013SDK.msi",
+            "size": "1632768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:24:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Host Integration Server SDK provides header, libraries and code samples that developer can use to create applications that utilizes features of Host Integration Server 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HIS2013SDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>You can use the resources in this SDK with any of the following versions of Visual Studio:</B>\r\n<LI>Visual Studio 2010</LI>\r\n<LI>Visual Studio 2012</LI>\r\n<LI>Visual Studio 2013</LI>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41557",
+    "downloadPreload": true
+}

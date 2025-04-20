@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "XAML Workflow Schema 2006 v1.0",
+    "downloadDescription": "XAML Workflow Schema 2006 v1.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "XAMLWorkflowSchema2006v1.0-2007-01-30.EXE",
+            "url": "https://download.microsoft.com/download/1/0/9/109a6c0a-5c51-4d15-9c1d-41c96d7ddd96/XAMLWorkflowSchema2006v1.0-2007-01-30.EXE",
+            "size": "128512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is an XSD file that provides a schema for the Windows Workflow Foundation (WF) specific elements of XAML. It is provided as an unsupported sample that can be used by WF software developers for Visual Studio 2005 intellisense for XAML.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "XAMLWorkflowSchema2006v1.0-2007-01-30.EXE"
+    ],
+    "detailsSection_file_size": [
+        "125.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Requires .NET Framework 3.0</li><br />\n<li>Most useful with Visual Studio 2005</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "The XamlWorkflow2006.xsd in this sample provides the intellisense editing experience for the out-of-box Workflow activities in Visual Studio 2005 when editing the XML form of the XAML file. Install the schema to the following location to get the intellisense in Visual Studio 2005 for XML file editing of the XAML file.<br />\n<br />\n         %ProgramFiles%\\Microsoft Visual Studio 8\\Xml\\Schemas<br />\n<br />\n<br />\nNote: <br />\n1. Due to the limitation of schema-based Intellisense, this schema can only work with out-of-the-box Workflow activities.<br />\n2. This schema chooses one syntax over the other to express an element if multiple syntaxes are valid. Thus it is not for schema validation purpose.",
+    "additionalInformationSection": "Note on Windows Vista you must install this as Administrator.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://msdn.microsoft.com/netframework"
+        },
+        {
+            "title": "msdn WF Developer Center",
+            "url": "http://msdn.microsoft.com/workflow"
+        },
+        {
+            "title": "wf Community Site",
+            "url": "http://wf.netfx3.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "25139",
+    "downloadPreload": true
+}

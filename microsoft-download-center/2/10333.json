@@ -1,0 +1,148 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Automated Installation Kit (AIK)",
+    "downloadDescription": "The Windows Automated Installation Kit (Windows AIK) helps you to install, customize, and deploy the Microsoft Windows Vista\u2122 family of operating systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vista_6000.16386.061101-2205-LRMAIK_EN.img",
+            "url": "https://download.microsoft.com/download/8/6/d/86d6ba9c-98ff-444e-87ed-3e76772eb2a6/vista_6000.16386.061101-2205-LRMAIK_EN.img",
+            "size": "1040355328",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "The Windows Automated Installation Kit (Windows AIK) is designed to help corporate IT professionals customize and deploy the Microsoft Windows Vista\u2122 family of operation systems.  By using Windows AIK, you can perform unattended Windows installations, capture Windows images with ImageX, and create Windows PE images.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "vista_6000.16386.061101-2205-LRMAIK_EN.img"
+    ],
+    "detailsSection_file_size": [
+        "992.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022\tSupported Operating Systems: Windows Server 2003 SP1; Windows XP SP2, Windows Vista <br />\n\u2022\tWindows XP SP2 with KB926044 <br />\n\u2022\tWindows Server 2003 SP1 with KB926044 <br />\n\u2022\tWindows Server 2003 SP2 <br />\n\u2022\tWindows Vista family",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1.  Click the Download button on this page to start the download<br />\n2.  Click Save or Save this program to your computer.  Windows AIK is distributed as an .img file.<br />\n3.  Burn the saved img to a DVD <br />\n4.  Insert the DVD into the machine<br />\n5.  Click Windows AIK Setup to begin the installation",
+    "relatedResourcesSection": [
+        {
+            "title": "desktop Deployment",
+            "url": "http://microsoft.com/desktopdeployment/"
+        },
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/926044/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10333",
+    "downloadPreload": true
+}

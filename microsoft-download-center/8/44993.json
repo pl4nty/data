@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 One-time Vendors and Invoices Sample CSV File",
+    "downloadDescription": "Sample CSV file, linked to from Dynamics AX Help \"Import and create one-time vendors\" topic.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OTVI.csv",
+            "url": "https://download.microsoft.com/download/3/f/7/3f7f6a1b-4e29-4795-8b62-2c877a42215c/OTVI.csv",
+            "size": "2023",
+            "version": "AX 2012 R3",
+            "datePublished": "7/15/2024 3:54:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CSV file contains sample Accounts Payable data for fictitious vendors and invoices.  Users can create their own files and import into Dynamics Ax 2012 R3 CU8.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX 2012 R3",
+    "detailsSection_file_name": [
+        "OTVI.csv"
+    ],
+    "detailsSection_file_size": [
+        "2.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44993",
+    "downloadPreload": true
+}

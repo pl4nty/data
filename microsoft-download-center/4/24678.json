@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Testing Software Patterns",
+    "downloadDescription": "Overview of the testing approach and criteria used to evaluate developed architecture, design, and implementation software patterns.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PatternsTest.pdf",
+            "url": "https://download.microsoft.com/download/9/a/9/9a9dd3f3-2904-4e74-9107-d4fb54998382/PatternsTest.pdf",
+            "size": "411007",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Although the software patterns community has created a stir around the construction of pattern languages, testing patterns and pattern languages has been largely neglected. Following Microsoft Solution Framework (MSF) processes, the test team has developed a formal testing methodology and criteria, which are distilled from best practices found in the larger patterns community. This document describes the methodology that the test team developed and applied to the new field of testing software patterns.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PatternsTest.pdf"
+    ],
+    "detailsSection_file_size": [
+        "401.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 95",
+        "Windows 98",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and view the file using Adobe Acrobat Reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24678",
+    "downloadPreload": true
+}

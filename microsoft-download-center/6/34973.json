@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "Multi-farm architectures with SharePoint Server 2013",
+    "downloadDescription": "This model provides architectural guidance for multi-farm deployments of SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "multi-farm-sharepoint-2013.vsd",
+            "url": "https://download.microsoft.com/download/4/9/6/49646604-d168-4f42-9011-481ba048bec3/multi-farm-sharepoint-2013.vsd",
+            "size": "1435136",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "multi-farm-sharepoint-2013.pdf",
+            "url": "https://download.microsoft.com/download/4/9/6/49646604-d168-4f42-9011-481ba048bec3/multi-farm-sharepoint-2013.pdf",
+            "size": "320800",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Learn the design principles to use for multi-farm deployments. Diagrams in this model illustrate how to deploy services and content across farms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "multi-farm-sharepoint-2013.vsd",
+        "multi-farm-sharepoint-2013.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "313.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34973",
+    "downloadPreload": true
+}

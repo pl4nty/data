@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2019 Cumulative Update  KB4470124",
+    "downloadDescription": "This download includes all available updates for Skype for Business Server 2019.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/5/e/f/5efd61e4-1bcb-46df-a02e-b8a9ad79edae/SkypeServerUpdateInstaller.exe",
+            "size": "154762272",
+            "version": "2046.548",
+            "datePublished": "3/7/2025 5:26:54 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PersistentChatUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/5/e/f/5efd61e4-1bcb-46df-a02e-b8a9ad79edae/PersistentChatUpdateInstaller.exe",
+            "size": "3658664",
+            "version": "2046.548",
+            "datePublished": "3/7/2025 5:26:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Cumulative Update Download for Skype for Business Server 2019 is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/4470124\">4470124</A>. \n<br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4470124",
+        "name": "KB4470124"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2046.548",
+    "detailsSection_file_name": [
+        "SkypeServerUpdateInstaller.exe",
+        "PersistentChatUpdateInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "147.6 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "3/7/2025",
+    "systemRequirementsSection": "This download works with the following program:\r\n<ul>\n<li>Skype for Business Server 2019</li>\r\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/4470124\">4470124</A> for installation details.</li>\n</ol>\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58347",
+    "downloadPreload": true
+}

@@ -1,0 +1,113 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Compact 3.5 Books Online and Samples",
+    "downloadDescription": "SQL Server Compact 3.5 is a small footprint in-process database engine that allows developers to build robust applications for Windows Desktops and Mobile Devices. This download contains the Books Online and Samples for SQL Server Compact 3.5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReadmeSSC35-ENU.htm",
+            "url": "https://download.microsoft.com/download/f/7/2/f72ebbf8-4df1-4800-b4db-c2405c10d937/ReadmeSSC35-ENU.htm",
+            "size": "65364",
+            "version": "3.5.5386.0",
+            "datePublished": "7/15/2024 3:14:04 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SSCEBOL-ENU.msi",
+            "url": "https://download.microsoft.com/download/f/7/2/f72ebbf8-4df1-4800-b4db-c2405c10d937/SSCEBOL-ENU.msi",
+            "size": "18974208",
+            "version": "3.5.5386.0",
+            "datePublished": "7/15/2024 3:14:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "SQL Server Compact 3.5 Books Online provides in-depth information about the features of the product. In addition to the Books Online, the sample applications helps to ramp up quickly on SQL Server Compact technology and an easy way to build applications rapidly. <br/><br/>\nFor information about Microsoft Synchronization Services for ADO.Net v1.0 download the <a href=\"http://go.microsoft.com/fwlink/?LinkId=80742\">Books Online</a> <br /><br />Post feedback and questions to <a href=\"http://go.microsoft.com/fwlink/?LinkId=66523\">SQL Server Compact 3.5 MSDN Forum</a> and <a href=\"http://go.microsoft.com/fwlink/?LinkId=104038\">Synchronization Services for ADO.Net MSDN Forum</a> <br /><br />For tips and tricks visit <a href=\"http://go.microsoft.com/fwlink/?LinkId=104036\">Steve Lasker blog</a>, <a href=\"http://go.microsoft.com/fwlink/?LinkId=104037\">Synchronization Services for ADO.Net blog</a> and <a href=\"http://go.microsoft.com/fwlink/?LinkId=67575\"> SQL Server Compact blog</a><br/><br/>\n<B>Support Options:</B><BR/>\nYour feedback is important to us. \n<UL><LI>If you have questions about SQL Server Compact, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=66523\">SQL Server Compact MSDN Forum</a></LI><BR/>\n<LI>Help improve SQL Server Compact by submitting and tracking bugs using <a href=\"http://go.microsoft.com/fwlink/?LinkId=104039\"> Microsoft Connect</a> website. Be sure to select <B>SQL Server Compact</B> as the version and provide detailed repro steps to help us identify the problem</LI><BR/>\n<LI>Contact <a href=\"http://go.microsoft.com/fwlink/?LinkId=104699\">Microsoft Professional Support</a>. For deeper support needs, purchase a Professional Support package and have experts available 24 hours a day, seven days a week, and 365 days a year</LI><BR/>\n<LI>Find out what support options are available if you are located outside the United States or Canada at <a href=\"http://go.microsoft.com/fwlink/?LinkId=104700\">Worldwide Support Options</a></LI><BR/>\n<LI>Search the <a href=\"http://go.microsoft.com/fwlink/?LinkId=104701\">Knowledge Base Articles</a>. Get the answers you need about SQL Server Compact from the Microsoft Knowledge Base. This is the same database of technical articles used by Microsoft Support Professionals</LI><BR/>\n<LI>To participate in the future SQL Server Compact Technology Adoption Program (TAP), please send us an <a href=\"mailto:ssc35tap@microsoft.com\">email</a></LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.5386.0",
+    "detailsSection_file_name": [
+        "ReadmeSSC35-ENU.htm",
+        "SSCEBOL-ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "63.8 KB",
+        "18.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Microsoft .NET Framework: The Help viewer used by Books Online requires the Microsoft .NET Framework version 2.0. Download one of the following versions of the .NET Framework 2.0:\n<UL>\n<LI><a href=\"http://go.microsoft.com/fwlink/?linkid=32168\">.NET Framework for x86</a></LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=70186\">.NET Framework for x64</a></LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=70187\">.NET Framework for ia64</a></LI>\n</UL>\n</LI><br />\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=70188\">Internet Explorer 6.0 SP1</a></LI><br />\n<LI>Windows Installer: Windows Installer 3.0 is required to install SQL Server 2005 Books Online. Windows Server 2003 Service Pack 1 and Windows XP Service Pack 2 both include Windows Installer 3.0. For all other operating systems, you must first download and install <a href=\"http://go.microsoft.com/fwlink/?linkid=46459\">Windows Installer 3.0</a>.</LI><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\n<li>To download the Books Online, begin by installing .NET Framework 2.0. Download one of the versions from the System Requirements section.</li><br />\n<li>Click SSCEBOL-ENU.msi or the samples from the Files In This Download section.</li><br />\n<li>Do one of the following: </li><br />\n<ul><br />\n<li>To start the installation immediately, click Run.</li><br />\n<li>To save the download to your computer for installation later, click Save.</li><br />\n<li>To cancel the installation, click Cancel.</li><br />\n</ul><br />\n</ol>",
+    "additionalInformationSection": "<UL><LI>SQL Server Compact 3.5 is freely redistributable under a redistribution license agreement that requires registration. Independent software vendor (ISV) or solution integrator (SI) shipping applications using SQL Server Compact 3.5 must register for redistribution rights. Registering will help the ISV/ SI in getting information about SQL Server Compact critical security patches and hot fixes. The SQL Server Compact critical security patches and hot fixes have to be applied to the client installations by the ISV/ SI. For more information visit the registration page for <a href=\"http://go.microsoft.com/fwlink/?LinkID=94589\">SQL Server Compact 3.5 redistribution rights</a></LI><LI>Prior to installing the released version of SQL Server Compact 3.5 Books Online, uninstall all earlier versions of SQL Server Compact 3.5 Books Online CTP and Beta  by using the Add/Remove Programs in the Control Panel. </LI><br />\n<LI> SQL Server Compact 3.5 Books Online and Synchronization Services for ADO.Net Books Online do not ship with Microsoft Visual Studio 2008. The Books Online is available as a web download only</LI><br />\n<LI>Download <a href=\"http://go.microsoft.com/fwlink/?LinkId=104040\">SQL Server Compact 3.5 for Windows Desktop</a> and <a href=\"http://go.microsoft.com/fwlink/?LinkID=86960\">SQL Server Compact 3.5 for Windows Mobile Devices</a></LI><BR/>\n<LI>For replicating data between SQL Server Compact 3.5 or SQL Server 2005 Compact Edition and SQL Server 2005 (or later versions of SQL Server 2005) install <a href=\"http://go.microsoft.com/fwlink/?LinkId=104041\"> SQL Server Compact 3.5 Server Tools </a>on the IIS server</LI></UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Compact Forum",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=66523"
+        },
+        {
+            "title": "sql Server Compact Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=103197"
+        },
+        {
+            "title": "visual Studio 2008 Downloads",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=104043"
+        },
+        {
+            "title": "sql Server Compact Blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=67575"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6497",
+    "downloadPreload": true
+}

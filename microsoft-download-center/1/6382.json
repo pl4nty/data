@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Enabling Strict KDC Validation in Windows Kerberos",
+    "downloadDescription": "Guidance to enable strict KDC Validation in Windows Kerberos.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Enabling Strict KDC Validation in Windows Kerberos.docx",
+            "url": "https://download.microsoft.com/download/7/f/b/7fb7a489-dbd3-4bef-944f-2024eac75864/Enabling Strict KDC Validation in Windows Kerberos.docx",
+            "size": "1791090",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Procedural and troubleshooting documentation to enable strict KDC Validation in Windows Kerberos.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Enabling Strict KDC Validation in Windows Kerberos.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Vista; Windows 7; Windows 8; Windows 8.1; Windows 10; Windows Server 2008; Windows Server 2008 R2; Windows Server 2012; Windows Server 2012 R2; Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button next to the document. When you are prompted, click <b>Save</b> to save the document on your computer, or click <b>Open</b> to view the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6382",
+    "downloadPreload": true
+}

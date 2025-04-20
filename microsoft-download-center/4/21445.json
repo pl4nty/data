@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "How to configure the Microsoft Dynamics CRM on-premises and Microsoft Dynamics CRM Online E-mail Router in different deployment scenarios",
+    "downloadDescription": "These documents lists steps to configure  Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM 4.0 e-mail in different deployment scenarios.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dynamics CRM4 E-mail Router Configuration Scenarios.docx",
+            "url": "https://download.microsoft.com/download/e/3/7/e37c4b4b-4839-4ea5-bb6b-b4575315e1f5/Microsoft Dynamics CRM4 E-mail Router Configuration Scenarios.docx",
+            "size": "276195",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM_2011emailrouter_scenarios.doc",
+            "url": "https://download.microsoft.com/download/e/3/7/e37c4b4b-4839-4ea5-bb6b-b4575315e1f5/CRM_2011emailrouter_scenarios.doc",
+            "size": "2545152",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These documents list steps to configure Microsoft Dynamics CRM 2011 or Microsoft Dynamics CRM 4.0 e-mail in different deployment scenarios.  The scenarios included in these documents focus on the following:<br />\n\u2022\tThe Microsoft Dynamics CRM E-mail Router<br />\n<br />\n\u2022\tThe forward mailbox<br />\n<br />\n\u2022\tThe Microsoft Dynamics CRM Outlook client.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM4 E-mail Router Configuration Scenarios.docx",
+        "CRM_2011emailrouter_scenarios.doc"
+    ],
+    "detailsSection_file_size": [
+        "269.7 KB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003\r\nWindows Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the download that you want in the <b>Download</b> area, and then open or save the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21445",
+    "downloadPreload": true
+}

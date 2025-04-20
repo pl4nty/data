@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "OnPremise SQL Server to Azure VM",
+    "downloadDescription": "Migrating OnPremise SQL Server to Azure VM using Backup and Restore ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OnPremise SQL Server to Azure VM.pdf",
+            "url": "https://download.microsoft.com/download/d/b/0/db005ee3-98e2-4a4f-8bba-bdc88288a41a/OnPremise SQL Server to Azure VM.pdf",
+            "size": "409356",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document outlines steps requited to automate the backup & restore on-premise databases to Azure \r\nSQL VM by using custom t-sql scripts. The process outlined here is semi-automated but it provides flexibility \r\nconsolidate on a larger VM or migrate source databases across multiple VMs. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OnPremise SQL Server to Azure VM.pdf"
+    ],
+    "detailsSection_file_size": [
+        "399.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103469",
+    "downloadPreload": true
+}

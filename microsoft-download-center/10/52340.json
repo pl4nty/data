@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sherwood C++ and C# code library for decision forests.",
+    "downloadDescription": "Code accompanying the book:\r\nA. Last published: December 5, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sherwood.zip",
+            "url": "https://download.microsoft.com/download/6/5/6/656accc3-59ef-490a-adb0-81d711c2cd69/Sherwood.zip",
+            "size": "1281852",
+            "version": "1.0.0",
+            "datePublished": "6/13/2024 12:54:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Code accompanying the book:\r\nA. Criminisi, J. Shotton. Decision Forests for Computer Vision and Medical Image Analysis. Springer 2013.\r\nThe code is provided so as to enable researcher to reproduce the toy examples in the book. This library contains a simplified implementation of decision forests and represents a good starting point for people who wish to learn about forests and how to implement them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "Sherwood.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52340",
+    "downloadPreload": true
+}

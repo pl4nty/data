@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Internet Explorer 9 in Windows Server 2008 x64 Edition (KB2964358)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS14-021. To find out if other security updates are available for you, see the Additional Information section at the bottom of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE9-Windows6.0-KB2964358-x64.msu",
+            "url": "https://download.microsoft.com/download/b/5/9/b5969548-5879-4d11-aa36-103ac6db53d3/IE9-Windows6.0-KB2964358-x64.msu",
+            "size": "14273691",
+            "version": "2964358",
+            "datePublished": "6/13/2024 12:21:54 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2964358",
+        "name": "KB2964358"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-021",
+        "name": "MS14-021"
+    },
+    "detailsSection_file_version": "2964358",
+    "detailsSection_file_name": [
+        "IE9-Windows6.0-KB2964358-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "13.6 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "\n      This update applies to Internet Explorer 9 with the following operating systems:<br /><ul>\n        <li>Windows Server 2008 Service Pack 2 (x64-bit)</li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.\n        </li>\n        <li>Do one of the following:</li>\n        <ul>\n          <li>\n            To start the installation immediately, click <b>Run</b>.\n          </li>\n          <li>\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\n          </li>\n          <li>\n            To cancel the installation, click <b>Cancel</b>.\n          </li>\n        </ul>\n      </ol>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin MS14-021",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=397669"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42624",
+    "downloadPreload": true
+}

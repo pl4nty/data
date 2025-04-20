@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 White Paper: Choosing a Development Tool",
+    "downloadDescription": "This white paper includes a detailed description of each development tool that you can use to create integrations for Microsoft Dynamics GP 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Choosing a Development Tool.pdf",
+            "url": "https://download.microsoft.com/download/7/0/a/70aee34e-87b0-47bd-b01f-8bdd427a928f/Choosing a Development Tool.pdf",
+            "size": "509090",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:33:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Several development tools are available that can be used to create integrations with Microsoft Dynamics GP. This document includes a detailed description of each tool, which you can use along with the comparison charts in the document to decide which tool is best for a specific integration. This document discusses the following topics: <br />\n<UL><LI>Factors to consider when choosing a development tool</LI>\n<LI>The Microsoft Dynamics GP software development kit (SDK)</LI>\n<LI>A tools reference that provides a detailed description about each tool \u2013 Dexterity, Modifier with VBA, Visual Studio Tools for Microsoft Dynamics GP, Continuum, eConnect, Web Services for Microsoft Dynamics GP, Integration Manager,  and ODBC</LI>\n<LI>Comparison charts of the tools used for user interface integrations and database integrations</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "Choosing a Development Tool.pdf"
+    ],
+    "detailsSection_file_size": [
+        "497.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you'll need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\r\n<LI>Save the file to your computer. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the document, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36533",
+    "downloadPreload": true
+}

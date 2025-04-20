@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Address oversharing in Microsoft 365 Copilot",
+    "downloadDescription": "Address oversharing in Microsoft 365 Copilot - a Microsoft deployment blueprint",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Address oversharing concerns for your M365 Copilot deployment.pptx",
+            "url": "https://download.microsoft.com/download/0/e/4/0e4e357a-8f66-4913-b4e8-9bc540146def/Address oversharing concerns for your M365 Copilot deployment.pptx",
+            "size": "14452601",
+            "version": "1.0",
+            "datePublished": "1/6/2025 9:41:30 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Address oversharing concerns for your M365 Copilot deployment.pdf",
+            "url": "https://download.microsoft.com/download/0/e/4/0e4e357a-8f66-4913-b4e8-9bc540146def/Address oversharing concerns for your M365 Copilot deployment.pdf",
+            "size": "471895",
+            "version": "1.0",
+            "datePublished": "1/6/2025 9:41:30 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This presentation contains the Microsoft deployment blueprint and storyboard for \"Address oversharing in Microsoft 365 Copilot\"\r\n\r\nRead the detailed guide for this model at:  https://aka.ms/Copilot/OversharingBlueprintLearn",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Address oversharing concerns for your M365 Copilot deployment.pptx",
+        "Address oversharing concerns for your M365 Copilot deployment.pdf"
+    ],
+    "detailsSection_file_size": [
+        "13.8 MB",
+        "460.8 KB"
+    ],
+    "detailsSection_file_date": "1/6/2025",
+    "systemRequirementsSection": "Microsoft SharePoint Advanced Management\r\nMicrosoft Purview\r\nMicrosoft 365 Copilot",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "PowerPoint and Adobe Acrobat reader of the presentation",
+    "relatedResourcesSection": [
+        {
+            "title": "detailed guide for this scenario",
+            "url": "https://aka.ms/Copilot/OversharingBlueprintLearn"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "106329",
+    "downloadPreload": true
+}

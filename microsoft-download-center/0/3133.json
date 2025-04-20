@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio .NET 2002 GDIPLUS.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise a computer running the Visual Studio .NET 2002 family of products.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs7.0-kb830348-x86.exe",
+            "url": "https://download.microsoft.com/download/a/3/9/a39dba31-2197-41a0-80b2-70ea2385386a/VS7.0-KB830348-X86.exe",
+            "size": "2592120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise a computer running the Visual Studio .NET 2002 family of products and gain complete control over it. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB830348",
+        "name": "KB830348"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "vs7.0-kb830348-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000",
+        "Windows NT",
+        "Windows 2000 Server",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Service Pack 4"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://support.microsoft.com/support/misc/kblookup.asp?ID=830348\"> KB830348</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article KB830348",
+            "url": "http://support.microsoft.com/support/misc/kblookup.asp?ID=830348"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3133",
+    "downloadPreload": true
+}

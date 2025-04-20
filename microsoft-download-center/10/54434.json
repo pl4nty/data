@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Guide for Microsoft Windows 10 IPsec VPN Client",
+    "downloadDescription": "This is the administrative guidance documentation for the completed Common Criteria evaluation of Microsoft Windows 10 IPsec VPN Client",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "st_vid10746-agd.pdf",
+            "url": "https://download.microsoft.com/download/3/3/f/33fa01dd-b380-46e1-833f-fd85854b4022/st_vid10746-agd.pdf",
+            "size": "941326",
+            "version": "1511",
+            "datePublished": "7/15/2024 4:40:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the administrative guidance documentation for the completed Common Criteria evaluation of Microsoft Windows 10 IPsec VPN Client",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1511",
+    "detailsSection_file_name": [
+        "st_vid10746-agd.pdf"
+    ],
+    "detailsSection_file_size": [
+        "919.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF file reader application",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Open the document using a PDF file reader application",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54434",
+    "downloadPreload": true
+}

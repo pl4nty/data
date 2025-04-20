@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "IceCube (engine and applications)",
+    "downloadDescription": "In a distributed system, shared data is replicated. Last published: June 11, 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ice3-2002-06-11.zip",
+            "url": "https://download.microsoft.com/download/e/7/7/e77ce84b-4eed-4fe0-a514-d5cb29b8de4e/ice3-2002-06-11.zip",
+            "size": "248079",
+            "version": "ice3-2002-06-11",
+            "datePublished": "6/13/2024 12:55:35 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In a distributed system, shared data is replicated. Updates cause replicas to diverge. Reconciliation repairs the divergence. IceCube is a general-purpose reconciliation engine, parameterised by the semantics of shared data and by the users' declared intentions. Refer to: http://research.microsoft.com/scripts/pubs/view.asp?TR_ID=MSR-TR-2002-52, Efficient semantics-aware reconciliation for optimistic write sharing, by Nuno Pregui\u00e7a, Marc Shapiro and Caroline Matheson.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "ice3-2002-06-11",
+    "detailsSection_file_name": [
+        "ice3-2002-06-11.zip"
+    ],
+    "detailsSection_file_size": [
+        "242.3 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52361",
+    "downloadPreload": true
+}

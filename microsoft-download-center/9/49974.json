@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Mode Site List Manager (schema v.2)",
+    "downloadDescription": "This tool helps create and manage the Enterprise Mode Site List in the v.2 XML schema for Enterprise Mode.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "EMIESiteListManager.msi",
+            "url": "https://download.microsoft.com/download/c/8/b/c8bdbc40-81fb-4a38-9051-89d0f74deb0d/EMIESiteListManager.msi",
+            "size": "532480",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:04:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool lets IT Professionals create and update the Enterprise Mode Site List in the version 2.0 (v.2) XML schema. The Enterprise Mode schema has been updated to v.2 to be easier to read and to provide a better foundation for future capabilities. The v.2 schema is supported on Windows 7, Windows 8.1, and Windows 10. The v.1 XML schema will also continue to be supported on Windows 7, Windows 8.1, and Windows 10.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "EMIESiteListManager.msi"
+    ],
+    "detailsSection_file_size": [
+        "520.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 10 Build 10586 and higher\r\n\r\nMinimum Requirements\r\n                         \u2022 Computer/Processor: 233MHz processor or higher (Pentium processor recommended)\r\n                         \u2022 Memory: 512MB\r\n                         \u2022 Available hard drive space: 70MB\r\n                         \u2022 Display: Super VGA (800 x 600 resolution, or higher) monitor with 256 colors\r\n                         \u2022 Peripherals: Internet connection\r\n                         \u2022 Additional technology: Microsoft .NET Framework 4",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n        <li>\r\n          Click the <b>Download</b> button on this page to start the download.\r\n        </li>\r\n        <li>Do one of the following:</li>\r\n        <ul>\r\n          <li>\r\n            To start the installation immediately, click <b>Run</b>.\r\n          </li>\r\n          <li>\r\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\r\n          </li>\r\n          <li>\r\n            To cancel the installation, click <b>Cancel</b>.\r\n          </li>\r\n        </ul>\r\n      </ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49974",
+    "downloadPreload": true
+}

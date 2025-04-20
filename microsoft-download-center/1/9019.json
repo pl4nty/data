@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Mint Source",
+    "downloadDescription": "Student Starter Kit for Visual Express.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Mint Source.msi",
+            "url": "https://download.microsoft.com/download/c/f/f/cff5f921-a8e4-49c8-8f88-8db0cdcc1201/Mint Source.msi",
+            "size": "1504768",
+            "version": "1.0.1",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mint Source is the unconventional new starter kit for students that enables you to quickly get your hands on the freshest, hottest technology from Microsoft.  Think of it as direct line to Microsoft information.  We\u2019ll give you samples of what you can do and the tools to do it. Get ahead. Get Mint Source\u2026 and be the first to download the latest knowledge and tools. Free \u2018n\u2019 easy just got easier.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "Mint Source.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP Service Pack 2<br />\n.NET Framework 2.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Run the MSI installer to load the application and sample starter kit.",
+    "relatedResourcesSection": [
+        {
+            "title": ".Net Framework Communities",
+            "url": "http://msdn.microsoft.com/netframework/community/default.aspx"
+        },
+        {
+            "title": "microsoft .NET Home Page",
+            "url": "http://www.microsoft.com/net/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9019",
+    "downloadPreload": true
+}

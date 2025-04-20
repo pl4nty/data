@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Video: Using ASP.NET Routing with Web Forms",
+    "downloadDescription": "This video shows how to use ASP.NET routing to handle URL requests that do not map to a physical file in a Web application.  See Related Resources for documentation and for a code example that accompanies this video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HowTo-UseRoutingWebForms.wmv",
+            "url": "https://download.microsoft.com/download/a/1/2/a12713c1-c909-4e4b-bf82-66e30a99114f/HowTo-UseRoutingWebForms.wmv",
+            "size": "11477343",
+            "version": "0.1",
+            "datePublished": "7/15/2024 3:10:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASP.NET routing is enabled in ASP.NET applications that use Dynamic Data or the MVC framework. However, routing is not enabled in ASP.NET Web site projects. This video shows how to enable routing in an ASP.NET Web site. The steps include changing the configuration file, creating a custom route handler, and defining routes.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "HowTo-UseRoutingWebForms.wmv"
+    ],
+    "detailsSection_file_size": [
+        "10.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Windows Media Player</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><br />\n<li>Click the <b>Download</b> button on this page to start the video.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "how to: Use Routing with Web Forms",
+            "url": "http://msdn.microsoft.com/en-us/library/cc668202.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20723",
+    "downloadPreload": true
+}

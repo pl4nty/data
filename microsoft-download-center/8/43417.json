@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Bing Maps for Access Manifest File",
+    "downloadDescription": "This is the manifest file needed by the Bing Map For Access Preview app.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BingMapsforAccessPreview.xml",
+            "url": "https://download.microsoft.com/download/e/f/d/efdc768a-145a-4535-a643-2958a777106f/BingMapsforAccessPreview.xml",
+            "size": "1037",
+            "version": "June2014",
+            "datePublished": "7/15/2024 3:20:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the manifest file needed by the Bing Map For Access Preview app.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2014",
+    "detailsSection_file_name": [
+        "BingMapsforAccessPreview.xml"
+    ],
+    "detailsSection_file_size": [
+        "1.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is an xml manifest file.  It can be viewed in notepad.exe.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. </li>\r\n<li>To copy the download to your computer for use at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "content apps for Access",
+            "url": "http://msdn.microsoft.com/en-us/library/office/dn605904(v=office.15).aspx"
+        },
+        {
+            "title": "bind and manipulate data in a SharePoint Access app",
+            "url": "http://msdn.microsoft.com/en-us/library/office/dn722532(v=office.15).aspx"
+        },
+        {
+            "title": "build apps for Office",
+            "url": "http://msdn.microsoft.com/en-us/library/office/jj220060(v=office.15).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43417",
+    "downloadPreload": true
+}

@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 Semantic Language Statistics",
+    "downloadDescription": "The Semantic Language Statistics Database is a required component for the Statistical Semantic Search feature in Microsoft SQL Server Semantic Language Statistics.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SemanticLanguageDatabase.msi",
+            "url": "https://download.microsoft.com/download/3/a/e/3ae7e8a8-84fb-4b71-955f-1efa9b694a63/ENU/x64/SemanticLanguageDatabase.msi",
+            "size": "186097664",
+            "version": "13.0.1501.5",
+            "datePublished": "7/15/2024 4:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SemanticLanguageDatabase.msi",
+            "url": "https://download.microsoft.com/download/3/a/e/3ae7e8a8-84fb-4b71-955f-1efa9b694a63/ENU/x86/SemanticLanguageDatabase.msi",
+            "size": "185905152",
+            "version": "13.0.1501.5",
+            "datePublished": "7/15/2024 4:09:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "The Semantic Language Statistics Database is a required component for the Statistical Semantic Search feature in Microsoft SQL Server. You can download this database from this page, attach it to your  Microsoft SQL Server instance, and register it to use the Semantic Search features.<br/>\r\n<br/>\r\nStatistical Semantic Search provides deep insight into unstructured documents stored in SQL Server databases by extracting and indexing statistically relevant key phrases and similar documents based on this keyphrases. Semantic Search builds upon the existing Full-Text Search feature in SQL Server, and enables new scenarios that extend beyond keyword searches into the meaning of the document. Solutions that are now possible include automatic tag extraction, related content discovery, and hierarchical navigation across similar content. For example, users can query the index of key phrases to build the taxonomy for an organization, or for a corpus of technical documents. Or for example in an HR scenario, a recruiter can query the document similarity index to identify resumes that match a job description.<br/>\r\n<br/>\r\nDevelopers can easily enable Semantic Search using familiar Fulltext search syntax. They can then access Semantic Search results using the <a href=\"http://go.microsoft.com/fwlink/?LinkId=241464\"> Semantic Rowset functions </a>(similar to CONTAINSTABLE and FREETEXTTABLE). Semantic Search follows all of the Fulltext index population models to work seamlessly in the existing Fulltext scenarios.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.1501.5",
+    "detailsSection_file_name": [
+        "SemanticLanguageDatabase.msi",
+        "SemanticLanguageDatabase.msi"
+    ],
+    "detailsSection_file_size": [
+        "177.5 MB",
+        "177.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ol>\r\n<li>The expanded database and log file require approximately 210 megabytes of disk space.</li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "1. Install the semantic language statistics database.\r\n<ul>\r\n<li>Download the appropriate version of the Windows installer package named SemanticLanguageDatabase.msi from this page. This file contains a compressed database file and log file.</li>\r\n<li> Run the SemanticLanguageDatabase.msi Windows installer package to extract the database and log file. You should change the default destination directory to a location where SQL Server has necessary file permissions for attaching a database (SQL Server data folder for example).</li>\r\n<li>Optionally, you can move the extracted database file and log file to the preferred location in the file system.</li>\r\n</ul>\r\n<br/>\r\n2. Attach the semantic language statistics database.<br/>\r\n<ul>\r\n<li>Attach the database to the instance of SQL Server by using Management Studio or by calling CREATE DATABASE with the FOR ATTACH syntax. For more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=241466\">Detaching and Attaching Databases.</a>\r\nBy default, the name of the database is semanticsdb. You can optionally give the database a different name when you attach it. You have to provide this name when you register the database in the following step:</li><br/><br/>\r\n<b>CREATE DATABASE semanticsdb<br/> ON (FILENAME = 'C:\\Microsoft Semantic Language Database\\semanticsdb.mdf') <br/>FOR ATTACH;</b>\r\n<br/>\r\n</ul>\r\n<br/>\r\n<b> Important</b><br/>\r<br/>\r\nWhen the semantic language statistics database is extracted, restricted permissions are assigned to the database file and log file in the file system. As a result, the user may not have permission to attach the database. If an error is raised when you try to attach the database, check and fix file system permissions as appropriate.<br/>\r\n<br/>\r\n3. Register the semantic language statistics database. <br/>\r\n<ul>\r\n<li>Call the stored procedure <a href=\"http://go.microsoft.com/fwlink/?LinkId=241467\">sp_fulltext_semantic_register_language_statistics_db </a>and provide the name that you gave to the database when you attached it:<br/><br/>\r\n<b>EXEC sp_fulltext_semantic_register_language_statistics_db @dbname = N'semanticsdb';<br/>\r\nGO</b></li>\r\n</ul>\r\n",
+    "additionalInformationSection": "For more information, see  <a href=\"http://go.microsoft.com/fwlink/?LinkID=223173\">Semantic Search.</a>\r\n<br/>\r\n<br/>\r\n<b>Supported Languages</b>\r\n<br/>\r\nhttp://go.microsoft.com/fwlink/?LinkID=241468\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52681",
+    "downloadPreload": true
+}

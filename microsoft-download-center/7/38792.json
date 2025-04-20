@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Admin-approved Data Access BPMN diagram",
+    "downloadDescription": "Admin-approved Data Access BPMN diagram",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Admin-approvedDataAccessBPMN.pdf",
+            "url": "https://download.microsoft.com/download/d/1/2/d122af06-7064-4737-abd5-69f030b6df55/Admin-approvedDataAccessBPMN.pdf",
+            "size": "211613",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:34:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This diagram illustrates the Admin-approved Data Access scenario, including SharePoint lists, workflow, and Windows PowerShell.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Admin-approvedDataAccessBPMN.pdf"
+    ],
+    "detailsSection_file_size": [
+        "206.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Reader for Adobe PDF files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the PDF file. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38792",
+    "downloadPreload": true
+}

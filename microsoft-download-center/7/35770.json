@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Customizing the Lync 2010 Help Menu",
+    "downloadDescription": "By using Windows PowerShell and the files included in this download, you can redirect Lync online Help\u2014including contextual Help\u2014to your own custom web site. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Customizing_the_Lync_2010_Help_Menu.zip",
+            "url": "https://download.microsoft.com/download/d/c/4/dc41a62b-30fc-43a8-89df-0339e8c1de4c/Customizing_the_Lync_2010_Help_Menu.zip",
+            "size": "103051",
+            "version": "November2012",
+            "datePublished": "12/15/2023 3:35:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can redirect Lync online Help\u2014including contextual Help\u2014to your own custom web site. Begin by placing the HTML and JavaScript files included in this download in the root directory of your custom help site. Then modify them according to the included instructions.  Finally, use Windows PowerShell to change the default Lync help address.\r\n\r\nFiles included in this download:\r\n<UL>\r\n<LI><b>Customizing the Lync 2010 Help Menu</b>    Complete instructions  for redirecting Lync Help to your own web site, and for adding a custom command to the Lync Help menu</LI>\r\n<LI> <b>redirection-table.js</b>    A JavaScript switch statement that captures Lync contextual help calls\r\n</LI>\r\n<LI> <b>contextual-help.htm</b>    The HTML file that calls the JavaScript switch statement </LI>\r\n</UL>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "November2012",
+    "detailsSection_file_name": [
+        "Customizing_the_Lync_2010_Help_Menu.zip"
+    ],
+    "detailsSection_file_size": [
+        "100.6 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL>\r\n<LI>The download contains an HTML document.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "customizing the Lync 2010 Help Menu",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=272433"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35770",
+    "downloadPreload": true
+}

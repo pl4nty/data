@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for ActiveX Killbits for Windows XP (KB2736233)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Advisory KB2736233. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB2736233-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/8/f/38f64d54-e85d-48a5-a674-4d99ec9813eb/WindowsXP-KB2736233-x86-ENU.exe",
+            "size": "510992",
+            "version": "2736233",
+            "datePublished": "7/15/2024 3:12:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified in Active X controls that could allow an attacker to compromise a system running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2736233",
+        "name": "KB2736233"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-000",
+        "name": "MS12-000"
+    },
+    "detailsSection_file_version": "2736233",
+    "detailsSection_file_name": [
+        "WindowsXP-KB2736233-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "499.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update applies with the following operating systems:<UL>\n        \n        <LI>Windows XP SP3</LI>\n      </UL>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "\n      <OL>\n        <LI>\n          Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.\n        </LI>\n        <LI>Do one of the following:</LI>\n        <UL>\n          <LI>\n            To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.\n          </LI>\n          <LI>\n            To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n          </LI>\n        </UL>\n      </OL>\n    ",
+    "additionalInformationSection": "\n      <B>Other critical security updates are available:</B> To find the latest security updates for you visit <A HREF=\"http://windowsupdate.microsoft.com \">Windows Update</A> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <A HREF=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</A> and follow the 3 easy steps to ensure you\u2019re protected.<br />\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "security Guidance Center for Developers & IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1396223"
+        },
+        {
+            "title": "maintain Security with Internet Explorer",
+            "url": "http://go.microsoft.com/?linkid=1396224"
+        },
+        {
+            "title": "microsoft Security Advisory KB2736233",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=260919"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34639",
+    "downloadPreload": true
+}

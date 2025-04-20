@@ -1,0 +1,113 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2008 R2 Service Pack 2 (KB2977320)",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2008 R2 SP2 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB2977320-IA64.exe",
+            "url": "https://download.microsoft.com/download/2/8/2/2825d8fb-a1c9-42f3-91ed-c649e77915c7/SQLServer2008R2-KB2977320-IA64.exe",
+            "size": "358571184",
+            "version": "10.50.4033.0",
+            "datePublished": "7/15/2024 3:21:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB2977320-x86.exe",
+            "url": "https://download.microsoft.com/download/2/8/2/2825d8fb-a1c9-42f3-91ed-c649e77915c7/SQLServer2008R2-KB2977320-x86.exe",
+            "size": "257134256",
+            "version": "10.50.4033.0",
+            "datePublished": "7/15/2024 3:21:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB2977320-x64.exe",
+            "url": "https://download.microsoft.com/download/2/8/2/2825d8fb-a1c9-42f3-91ed-c649e77915c7/SQLServer2008R2-KB2977320-x64.exe",
+            "size": "373281456",
+            "version": "10.50.4033.0",
+            "datePublished": "7/15/2024 3:21:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server 2008 R2 SP2 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2984340; KB2977320",
+        "name": "KB2984340; KB2977320"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-044",
+        "name": "MS14-044"
+    },
+    "detailsSection_file_version": "10.50.4033.0",
+    "detailsSection_file_name": [
+        "SQLServer2008R2-KB2977320-IA64.exe",
+        "SQLServer2008R2-KB2977320-x86.exe",
+        "SQLServer2008R2-KB2977320-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "342.0 MB",
+        "245.2 MB",
+        "356.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2008 R2 SP2 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43957",
+    "downloadPreload": true
+}

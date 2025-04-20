@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Framework Regular Expressions - Quick Reference",
+    "downloadDescription": "A quick reference for using the .NET Framework regular expression language.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Regular expressions quick reference.docx",
+            "url": "https://download.microsoft.com/download/d/2/4/d240ebf6-a9ba-4e4f-a63f-aeb6da0b921c/Regular expressions quick reference.docx",
+            "size": "53578",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:24:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Regular expressions quick reference.pdf",
+            "url": "https://download.microsoft.com/download/d/2/4/d240ebf6-a9ba-4e4f-a63f-aeb6da0b921c/Regular expressions quick reference.pdf",
+            "size": "678478",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:24:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download is a document that provides information about the .NET Framework regular expression language. It's designed for quick lookup of characters, codes, groups, options, and other elements of regular expression patterns. It's provided in Microsoft Word (.docx) and .pdf formats.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Regular expressions quick reference.docx",
+        "Regular expressions quick reference.pdf"
+    ],
+    "detailsSection_file_size": [
+        "52.3 KB",
+        "662.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word viewer, to view the .docx format; or a PDF reader to view the .pdf format.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the document to your computer, open it in a Word viewer or PDF reader, and print in landscape mode. The document is two pages and can be printed double-sided. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43119",
+    "downloadPreload": true
+}

@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2012 (KB2781514)",
+    "downloadDescription": "A flaw in visual studio may cause it to become unstable when the .NET 4.5 framework is updated. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "patch_KB2781514.exe",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3cdece-9d44-4f4c-a0d4-90af6982cbba/patch_KB2781514.exe",
+            "size": "1181112",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Users of Visual Studio may lose the ability to open or create C++ or JavaScript files or projects after the .NET Framework 4.5 is updated. This fix corrects the flaw in Visual Studio.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "patch_KB2781514.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio and Express products",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2",
+        "Windows XP 64-bit",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2781514",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=272586"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36020",
+    "downloadPreload": true
+}

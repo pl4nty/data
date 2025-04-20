@@ -1,0 +1,119 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Storage Explorer",
+    "downloadDescription": "A desktop tool to help manage your Azure Storage services",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "StorageExplorer-windows-x64.exe",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/StorageExplorer-windows-x64.exe",
+            "size": "149184176",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StorageExplorer-windows-arm64.exe",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/StorageExplorer-windows-arm64.exe",
+            "size": "148070504",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StorageExplorer-darwin-x64.zip",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/StorageExplorer-darwin-x64.zip",
+            "size": "222707874",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StorageExplorer-darwin-arm64.zip",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/StorageExplorer-darwin-arm64.zip",
+            "size": "210817616",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StorageExplorer-linux-x64.tar.gz",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/StorageExplorer-linux-x64.tar.gz",
+            "size": "155318784",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "previous-StorageExplorer-linux-x64.tar.gz",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/previous-StorageExplorer-linux-x64.tar.gz",
+            "size": "155062261",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "previous-StorageExplorer.zip",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/previous-StorageExplorer.zip",
+            "size": "221681213",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "previous-StorageExplorer.exe",
+            "url": "https://download.microsoft.com/download/a16938b4-4998-4997-9b68-65a82bb11470/a/e/3/ae32c485-b62b-4437-92f7-8b6b2c48cb40/previous-StorageExplorer.exe",
+            "size": "148034752",
+            "version": "1.38.0",
+            "datePublished": "4/12/2025 12:00:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Storage Explorer is a desktop tool to help manage your Azure Storage services",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.38.0",
+    "detailsSection_file_name": [
+        "StorageExplorer-windows-x64.exe",
+        "StorageExplorer-windows-arm64.exe",
+        "StorageExplorer-darwin-x64.zip",
+        "StorageExplorer-darwin-arm64.zip",
+        "StorageExplorer-linux-x64.tar.gz",
+        "previous-StorageExplorer-linux-x64.tar.gz",
+        "previous-StorageExplorer.zip",
+        "previous-StorageExplorer.exe"
+    ],
+    "detailsSection_file_size": [
+        "142.3 MB",
+        "141.2 MB",
+        "212.4 MB",
+        "201.1 MB",
+        "148.1 MB",
+        "147.9 MB",
+        "211.4 MB",
+        "141.2 MB"
+    ],
+    "detailsSection_file_date": "4/12/2025",
+    "systemRequirementsSection": "Windows, macOS, Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Setup",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108134",
+    "downloadPreload": true
+}

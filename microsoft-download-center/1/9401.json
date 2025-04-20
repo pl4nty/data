@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Server 2010 \u2014 Services Upgrade",
+    "downloadDescription": "You need to give special consideration to the issues involved when you upgrade services from the previous version of SharePoint Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Upgrade_Services_SharePointServer.vsd",
+            "url": "https://download.microsoft.com/download/2/e/b/2eb90e37-e502-46a8-8447-95acb5616b8a/Upgrade_Services_SharePointServer.vsd",
+            "size": "1748480",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This model covers upgrading services from Office SharePoint Server 2007 to SharePoint Server 2010.  It covers considerations for specific services from Office SharePoint Server 2007: Personalization, Search, InfoPath Forms, Excel, Business Data Catalog, Single Sign-on. The unique issues of upgrading services by using either the in-place or database attach approach are discussed. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Upgrade_Services_SharePointServer.vsd"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. </li><li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a></li><li>To view the XPS version of the model, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9401",
+    "downloadPreload": true
+}

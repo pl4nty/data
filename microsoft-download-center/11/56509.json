@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2016 Feature Update 2 with CU4",
+    "downloadDescription": "Microsoft BizTalk Server 2016 Feature Update 2 with CU4",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-ENU.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-ENU.exe",
+            "size": "51101176",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-CHT.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-CHT.exe",
+            "size": "53150704",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-DEU.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-DEU.exe",
+            "size": "53139952",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-CHS.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-CHS.exe",
+            "size": "53132792",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-FRA.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-FRA.exe",
+            "size": "53145592",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-JPN.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-JPN.exe",
+            "size": "53178352",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-ITA.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-ITA.exe",
+            "size": "53125624",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-ESP.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-ESP.exe",
+            "size": "53126648",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4094130-KOR.exe",
+            "url": "https://download.microsoft.com/download/b/e/8/be8643bc-9c08-4f77-a5f6-32049b853a6a/BTS2016-KB4094130-KOR.exe",
+            "size": "53096952",
+            "version": "3.13.252.2",
+            "datePublished": "7/15/2024 4:55:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2016 Feature Update 2 with CU4.\r\nThis package includes new capabilities in update 2 (https://aka.ms/bts2016update2), all capabilities and fixes from: \r\n\r\n1) Feature update 1 (https://aka.ms/bts2016update1) \r\n\r\n2) 2016 CU4 (https://support.microsoft.com/en-us/help/4051353/)\r\n\r\n\r\nMICROSOFT SOFTWARE SUPPLEMENTARY LICENSE TERMS\r\nMICROSOFT BIZTALK SERVER 2016 UPDATE\r\n\r\nPLEASE NOTE: Refer to your license terms for Microsoft BizTalk Server 2016 Developer software or Microsoft BizTalk Server 2016 Enterprise software (the \u201csoftware\u201d) to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement (i) if you are a Microsoft Software Assurance customer, or, running the software in Microsoft Azure under an Enterprise Agreement; and, (ii) with each validly licensed copy of the software. You may not use the supplement if you are not a Microsoft Software Assurance customer or running the software on Microsoft Azure under an Enterprise Agreement and do not have a license for the software. The license terms for the software apply to your use of this supplement.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.13.252.2",
+    "detailsSection_file_name": [
+        "BTS2016-KB4094130-ENU.exe",
+        "BTS2016-KB4094130-CHT.exe",
+        "BTS2016-KB4094130-DEU.exe",
+        "BTS2016-KB4094130-CHS.exe",
+        "BTS2016-KB4094130-FRA.exe",
+        "BTS2016-KB4094130-JPN.exe",
+        "BTS2016-KB4094130-ITA.exe",
+        "BTS2016-KB4094130-ESP.exe",
+        "BTS2016-KB4094130-KOR.exe"
+    ],
+    "detailsSection_file_size": [
+        "48.7 MB",
+        "50.7 MB",
+        "50.7 MB",
+        "50.7 MB",
+        "50.7 MB",
+        "50.7 MB",
+        "50.7 MB",
+        "50.7 MB",
+        "50.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2016 or 2013\r\n.NET Framework 4.6\r\nVisual Studio 2015\r\nSQL Server 2016 or SQL Server 2014 SP1\r\nSharePoint 2016 or SharePoint 2013 SP1\r\nMicrosoft BizTalk Server 2016\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To install Microsoft BizTalk Server 2016 Update on your x64 BizTalk machine, run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.\r\nThis update is unsupported and cannot be installed on x86 machines. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56509",
+    "downloadPreload": true
+}

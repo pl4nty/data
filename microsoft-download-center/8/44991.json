@@ -1,0 +1,295 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server 2012 R2 Remote Desktop Services ",
+    "downloadDescription": "System Center Management Pack for Windows Server 2012 R2 Remote Desktop Services",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center MP for Remote Desktop Services 2012 R2.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/System Center MP for Remote Desktop Services 2012 R2.msi",
+            "size": "860160",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.TRK.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.TRK.msi",
+            "size": "868352",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.SVE.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.SVE.msi",
+            "size": "868352",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.RUS.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.RUS.msi",
+            "size": "946176",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.PTG.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.PTG.msi",
+            "size": "843776",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.PTB.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.PTB.msi",
+            "size": "884736",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.PLK.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.PLK.msi",
+            "size": "897024",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.NLD.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.NLD.msi",
+            "size": "843776",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.KOR.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.KOR.msi",
+            "size": "1003520",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.JPN.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.JPN.msi",
+            "size": "827392",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.ITA.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.ITA.msi",
+            "size": "864256",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.HUN.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.HUN.msi",
+            "size": "897024",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.FRA.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.FRA.msi",
+            "size": "888832",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.ESN.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.ESN.msi",
+            "size": "851968",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.DEU.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.DEU.msi",
+            "size": "876544",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.CSY.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.CSY.msi",
+            "size": "905216",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.CHT.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.CHT.msi",
+            "size": "811008",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for RDS.CHS.msi",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/SC Management Pack for RDS.CHS.msi",
+            "size": "843776",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2012R2_MP_RDS.docx",
+            "url": "https://download.microsoft.com/download/e/2/8/e28c0ffc-e491-4067-aefa-add5c0471121/OM2012R2_MP_RDS.docx",
+            "size": "95164",
+            "version": "7.2.0.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The management pack is used to monitor the Remote Desktop services server role of Windows Server 2012 R2\n<br />\n<br />\n<br />\n<b>Release History</b><br />\n<ul>\n<li>10/18/2013 - version 7.1.10100.0</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.0.0",
+    "detailsSection_file_name": [
+        "System Center MP for Remote Desktop Services 2012 R2.msi",
+        "SC Management Pack for RDS.TRK.msi",
+        "SC Management Pack for RDS.SVE.msi",
+        "SC Management Pack for RDS.RUS.msi",
+        "SC Management Pack for RDS.PTG.msi",
+        "SC Management Pack for RDS.PTB.msi",
+        "SC Management Pack for RDS.PLK.msi",
+        "SC Management Pack for RDS.NLD.msi",
+        "SC Management Pack for RDS.KOR.msi",
+        "SC Management Pack for RDS.JPN.msi",
+        "SC Management Pack for RDS.ITA.msi",
+        "SC Management Pack for RDS.HUN.msi",
+        "SC Management Pack for RDS.FRA.msi",
+        "SC Management Pack for RDS.ESN.msi",
+        "SC Management Pack for RDS.DEU.msi",
+        "SC Management Pack for RDS.CSY.msi",
+        "SC Management Pack for RDS.CHT.msi",
+        "SC Management Pack for RDS.CHS.msi",
+        "OM2012R2_MP_RDS.docx"
+    ],
+    "detailsSection_file_size": [
+        "840.0 KB",
+        "848.0 KB",
+        "848.0 KB",
+        "924.0 KB",
+        "824.0 KB",
+        "864.0 KB",
+        "876.0 KB",
+        "824.0 KB",
+        "980.0 KB",
+        "808.0 KB",
+        "844.0 KB",
+        "876.0 KB",
+        "868.0 KB",
+        "832.0 KB",
+        "856.0 KB",
+        "884.0 KB",
+        "792.0 KB",
+        "824.0 KB",
+        "92.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Other Software: </b> </li>\n<ul>\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2. </li>\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44991",
+    "downloadPreload": true
+}

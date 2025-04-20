@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2016 CU8",
+    "downloadDescription": "Microsoft BizTalk Server 2016 CU8",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4583530-ESP.exe",
+            "url": "https://download.microsoft.com/download/d/1/d/d1d8d127-a5a6-4c2f-8a52-e9b241ded3be/BTS2016-KB4583530-ESP.exe",
+            "size": "26470792",
+            "version": "3.12.880.2",
+            "datePublished": "3/15/2024 4:25:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BTS2016-KB4583530-ENU.exe",
+            "url": "https://download.microsoft.com/download/d/1/d/d1d8d127-a5a6-4c2f-8a52-e9b241ded3be/BTS2016-KB4583530-ENU.exe",
+            "size": "24130936",
+            "version": "3.12.880.2",
+            "datePublished": "3/15/2024 4:25:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2016 CU8",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.12.880.2",
+    "detailsSection_file_name": [
+        "BTS2016-KB4583530-ESP.exe",
+        "BTS2016-KB4583530-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "25.2 MB",
+        "23.0 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2016 or 2013 \r\n.NET Framework 4.6\r\nVisual Studio 2015 \r\nSQL Server 2016 or SQL Server 2014 SP1 \r\nSharePoint 2016 or SharePoint 2013 SP1 \r\nMicrosoft BizTalk Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102429",
+    "downloadPreload": true
+}

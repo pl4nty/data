@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2019 Update 1",
+    "downloadDescription": "HPC Pack 2019 Update 1 provides enterprise-class tools, performance and scalability for a highly productive HPC environment either on premises, Hybrid or Azure Cloud.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HPCPack2019Update1-Patch-v7531.zip",
+            "url": "https://download.microsoft.com/download/4/a/f/4af3e9eb-8e0b-4982-80ff-513703f3601a/HPCPack2019Update1-Patch-v7531.zip",
+            "size": "508151204",
+            "version": "6.1.7531.0",
+            "datePublished": "7/15/2024 5:06:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HpcClient_x86.msi",
+            "url": "https://download.microsoft.com/download/4/a/f/4af3e9eb-8e0b-4982-80ff-513703f3601a/HpcClient_x86.msi",
+            "size": "25870336",
+            "version": "6.1.7531.0",
+            "datePublished": "7/15/2024 5:06:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HpcClient_x64.msi",
+            "url": "https://download.microsoft.com/download/4/a/f/4af3e9eb-8e0b-4982-80ff-513703f3601a/HpcClient_x64.msi",
+            "size": "25964544",
+            "version": "6.1.7531.0",
+            "datePublished": "7/15/2024 5:06:00 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HPCPack2019Update1-Full-v7531.zip",
+            "url": "https://download.microsoft.com/download/4/a/f/4af3e9eb-8e0b-4982-80ff-513703f3601a/HPCPack2019Update1-Full-v7531.zip",
+            "size": "1150060233",
+            "version": "6.1.7531.0",
+            "datePublished": "7/15/2024 5:06:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "HPC Pack 2019 is a high performance computing (HPC) solution that combines a comprehensive set of deployment, administration, job scheduling, and monitoring tools for your HPC cluster environment, and a flexible platform for developing and running HPC applications. It delivers enterprise-class tools, performance and scalability for a highly productive HPC environment, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface (MPI) and Service-Oriented Architecture (SOA) interactive application support, cluster management & monitoring tools. HPC Pack 2019 also delivers cloud ready solutions for Hybrid and Cloud on Microsoft Azure.<br/>\r\n<br/>\r\nHPC Pack 2019 Update 1 is the first update for HPC Pack 2019. Please check the  '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/what-s-new-in-hpc-pack-2019-update-1?view=hpc19-ps\">What's New</a>' and '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/release-notes-for-hpc-pack-2019-update-1?view=hpc19-ps\">Release Notes</a>' available on the <a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing\">Microsoft HPC Pack Documentations</a>.<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.1.7531.0",
+    "detailsSection_file_name": [
+        "HPCPack2019Update1-Patch-v7531.zip",
+        "HpcClient_x86.msi",
+        "HpcClient_x64.msi",
+        "HPCPack2019Update1-Full-v7531.zip"
+    ],
+    "detailsSection_file_size": [
+        "484.6 MB",
+        "24.7 MB",
+        "24.8 MB",
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2019 Update 1 supported Operating Systems</b>\r\n<li>Head nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 (no support for SQL Express 2019)</li>\r\n<li>Compute nodes: Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Broker nodes: Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 8.1 Pro or Enterprise, windows 10, windows 11</li>\r\n<li>Unmanaged server nodes: Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Linux Compute nodes: Red Hat Enterprise Linux 7.7 - 8.5, CentOS-based 7.6 - 7.9, Ubuntu Server 16.04 LTS, Ubuntu Server 18.04 LTS, Alma Linux 8.5, Rocky Linux 8.5, SUSE Linux Enterprise Server 12 - 15</li>\r\n<li>Client: Windows Server 2022, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows 11, Windows 10, Windows 8.1</li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 4GB<br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows 11",
+        "Windows 10",
+        "Windows 8.1",
+        "Windows 8",
+        "Red Hat",
+        "Ubuntu",
+        "SUSE",
+        "Linux"
+    ],
+    "installInstructionSection": "Prior to installation, please review the  '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/what-s-new-in-hpc-pack-2019-update-1?view=hpc19-ps\">What's New</a>' and '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/release-notes-for-hpc-pack-2019-update-1?view=hpc19-ps\">Release Notes</a>' available on the <a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing\">Microsoft HPC Pack Documentations</a>.<br/>\r\n<br/>\r\no Slipstream installation: <br/>\r\n<br/>\r\nDownload the 'HPCPack2019Update1-Full-v7531.zip' file, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack 2019 Update 1 installation wizard on a supported Windows Server based computer. For Linux compute nodes, please check '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/step-5-add-linux-nodes-to-the-cluster?view=hpc19-ps\">How to add Linux nodes</a>'.<br/>\r\n<br/>\r\no Upgrade installation: <br/>\r\n<br/>\r\nDownload the \u2018HPCPack2019Update1-Patch-v7531.zip\u2019 file, follow the steps in the doc '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/update-to-hpc-pack-2019-update-1?view=hpc19-ps\">Update to HPC Pack 2019 Update 1</a>' to upgrade the existing HPC Pack 2019 cluster to Update 1. <br/>\r\n<br/>\r\no Redistributable client utilities: <br/>\r\n<br/>\r\nTo install stand-alone and redistributable installer for the Microsoft HPC Pack 2019 Update 1 Client Utilities, download and run either the HpcClient_x64.msi or HpcClient_x86.msi as appropriate to your hardware platform. <br/>\r\n<br/>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack Documentations",
+            "url": "https://aka.ms/hpcpack"
+        },
+        {
+            "title": "hpc Pack GitHub",
+            "url": "https://aka.ms/hpcgit"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103877",
+    "downloadPreload": true
+}

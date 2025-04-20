@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Internet Explorer 11 SetupPolicy and Neutral Cab Packages",
+    "downloadDescription": "Windows Internet Explorer 11 SetupPolicy and Neutral Cab Packages",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SetupPolicy.cab",
+            "url": "https://download.microsoft.com/download/d/4/5/d45c336d-3bb5-42e1-8bf9-21a0d8944604/SetupPolicy.cab",
+            "size": "27121",
+            "version": "11.0.9600.16659",
+            "datePublished": "7/15/2024 3:21:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-KB2841134-x86.cab",
+            "url": "https://download.microsoft.com/download/d/4/5/d45c336d-3bb5-42e1-8bf9-21a0d8944604/IE11-Windows6.1-KB2841134-x86.cab",
+            "size": "28385559",
+            "version": "11.0.9600.16659",
+            "datePublished": "7/15/2024 3:21:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE11-Windows6.1-KB2841134-x64.cab",
+            "url": "https://download.microsoft.com/download/d/4/5/d45c336d-3bb5-42e1-8bf9-21a0d8944604/IE11-Windows6.1-KB2841134-x64.cab",
+            "size": "56154809",
+            "version": "11.0.9600.16659",
+            "datePublished": "7/15/2024 3:21:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Internet Explorer 11 SetupPolicy and Neutral Cab Packages\r\nThis detail page will never be published - this DMS family is only intended to carry the online packages.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2976627",
+        "name": "KB2976627"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.9600.16659",
+    "detailsSection_file_name": [
+        "SetupPolicy.cab",
+        "IE11-Windows6.1-KB2841134-x86.cab",
+        "IE11-Windows6.1-KB2841134-x64.cab"
+    ],
+    "detailsSection_file_size": [
+        "26.5 KB",
+        "27.1 MB",
+        "53.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Internet Explorer 11 SetupPolicy and Neutral Cab Packages\r\nThis detail page will never be published - this DMS family is only intended to carry the online packages.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Windows Internet Explorer 11 SetupPolicy and Neutral Cab Packages\r\nThis detail page will never be published - this DMS family is only intended to carry the online packages.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43898",
+    "downloadPreload": true
+}

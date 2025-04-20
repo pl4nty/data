@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Technical Documentation for Getting Started with System Center 2012 R2",
+    "downloadDescription": "Technical Documentation for Getting Started with System Center 2012 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_SuppMatrix.pdf",
+            "url": "https://download.microsoft.com/download/1/f/f/1ff8b3c8-694f-4323-93de-aa8ac6821949/SC2012R2_SuppMatrix.pdf",
+            "size": "1034388",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_UpgradeSeq.pdf",
+            "url": "https://download.microsoft.com/download/1/f/f/1ff8b3c8-694f-4323-93de-aa8ac6821949/SC2012R2_UpgradeSeq.pdf",
+            "size": "289229",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_UpgradeSeq.docx",
+            "url": "https://download.microsoft.com/download/1/f/f/1ff8b3c8-694f-4323-93de-aa8ac6821949/SC2012R2_UpgradeSeq.docx",
+            "size": "68340",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_SuppMatrix.docx",
+            "url": "https://download.microsoft.com/download/1/f/f/1ff8b3c8-694f-4323-93de-aa8ac6821949/SC2012R2_SuppMatrix.docx",
+            "size": "140827",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The downloadable files listed on this page contains getting started documentation for System Center 2012 R2. The available downloads include: <BR></BR>\r\n\r\n<UL>\r\n<LI>Upgrade Sequencing Guide for System Center 2012 R2 - last updated April 24, 2014</LI>\r\n</UL>\r\n<BR></BR>\r\n\r\nThis technical documentation is also available in the <a href=\" http://go.microsoft.com/fwlink/?LinkId=328555\">TechNet Library</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SC2012R2_SuppMatrix.pdf",
+        "SC2012R2_UpgradeSeq.pdf",
+        "SC2012R2_UpgradeSeq.docx",
+        "SC2012R2_SuppMatrix.docx"
+    ],
+    "detailsSection_file_size": [
+        "1010.1 KB",
+        "282.5 KB",
+        "66.7 KB",
+        "137.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI>\r\n<LI>Microsoft Word 2013</LI>\r\n<LI>Microsoft Word 2010</LI>\r\n<LI>Microsoft Office Word 2007</LI>\r\n<LI>Microsoft Office Word 2003</LI>\r\n<LI>Microsoft Word 2002</LI>\r\n<LI>Microsoft Word 2000</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Preview"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40814",
+    "downloadPreload": true
+}

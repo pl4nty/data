@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.5.1 Developer Pack for Windows Vista SP2, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2008 SP2 Windows Server 2008 R2 SP1, Windows Server 2012 and Windows Server 2012 R2",
+    "downloadDescription": "The .NET Framework 4.5.1 Developer Pack installs the multi-targeting pack for .NET Framework 4.5.1. Developers can build applications targeting the .NET Framework 4.5.1 using either Visual Studio 2012 or third party IDEs. You need to download the web installer instead of this package if you intend to redistribute .NET Framework 4.5.1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP451-KB2861696-x86-x64-DevPack.exe",
+            "url": "https://download.microsoft.com/download/9/6/0/96075294-6820-4f01-924a-474e0023e407/NDP451-KB2861696-x86-x64-DevPack.exe",
+            "size": "208261120",
+            "version": "4.5.1",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.5.1 Developer Pack installs the multi-targeting pack for .NET Framework 4.5.1. Developers can build applications targeting the .NET Framework 4.5.1 using either Visual Studio 2012 or third party IDEs. \n<br/>\n<b>You need to download the web installer from <a href=\"http://go.microsoft.com/fwlink/?LinkId=321326\">here </a> instead of this package if you intend to redistribute .NET Framework 4.5.1.  </b>\n<br/>\n<br/>\nThis package installs the following components:\n<ul>\n<li><b>.NET Framework 4.5.1</b></li>\n<li><b>.NET Framework 4.5.1 Multi-Targeting Pack</b>:Contains the reference assemblies needed to build apps that target the .NET Framework 4.5.1</li>\n<li><b>.NET Framework 4.5.1 Language Packs</b></li>\n<li><b>.NET Framework 4.5.1 Multi-Targeting Pack Language Packs</b>: Contains the IntelliSense files to display help while building apps that target the .NET Framework 4.5.1 through Visual Studio and third party IDEs.</li>\n</ul>\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.1",
+    "detailsSection_file_name": [
+        "NDP451-KB2861696-x86-x64-DevPack.exe"
+    ],
+    "detailsSection_file_size": [
+        "198.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM </li>\n<li>850 MB of available hard disk space (x86)</li>\n<li>2 GB of available hard disk space (x64)</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "To download all files and then install:\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n</ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=323585\">KB 2878632 </a> for more information.\n<br/><br />\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=317457\">.NET Framework 4.5.1 Readme File</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=245422"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40772",
+    "downloadPreload": true
+}

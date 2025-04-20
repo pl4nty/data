@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft OLE DB Provider for DB2 Version 6.0",
+    "downloadDescription": "Microsoft OLE DB Provider for DB2 Version 6.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBv6_EN_x86.msi",
+            "url": "https://download.microsoft.com/download/a/2/8/a283c308-b97d-4efd-8385-e6ed0f6db389/DB2OLEDBv6_EN_x86.msi",
+            "size": "3133440",
+            "version": "10.0.3047.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DB2OLEDBv6_EN_x64.msi",
+            "url": "https://download.microsoft.com/download/a/2/8/a283c308-b97d-4efd-8385-e6ed0f6db389/DB2OLEDBv6_EN_x64.msi",
+            "size": "4694016",
+            "version": "10.0.3047.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft OLE DB Provider for DB2 works with Microsoft SQL Server to connect SQL applications and tools to IBM Db2 databases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.3047.0",
+    "detailsSection_file_name": [
+        "DB2OLEDBv6_EN_x86.msi",
+        "DB2OLEDBv6_EN_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "4.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This release supports the following operating systems:</b>\r\n<ul>\r\n<li>Windows 10</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Server 2019</li>\r\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Virtualization with Azure and Hyper-V</li>\r\n</ul>\r\n\r\n<b>This release requires the following Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.6</li>\r\n</ul>\r\n\r\n<b>This release requires the following Microsoft Visual C++ runtime libraries:</b>\r\n<ul>\r\n<li>Microsoft Visual C++ 2013 runtime libraries for x86 and x64</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100917",
+    "downloadPreload": true
+}

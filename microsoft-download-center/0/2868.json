@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DTCPing.exe",
+    "downloadDescription": "How to troubleshoot Microsoft DTC firewall issues.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DTCPing.exe",
+            "url": "https://download.microsoft.com/download/d/0/0/d00c8f6b-135d-4441-a97b-9de16a1935c1/DTCPing.exe",
+            "size": "433224",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:28:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool is designed to assist with troubleshooting Microsoft DTC Firewall Issues.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "DTCPing.exe"
+    ],
+    "detailsSection_file_size": [
+        "423.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Important: Make sure you have the latest service pack and critical updates for the version of Windows that you are running. To find recent security updates, visit Windows Update.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2868",
+    "downloadPreload": true
+}

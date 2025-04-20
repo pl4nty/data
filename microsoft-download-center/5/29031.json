@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate DirectAccess Single Server Setup with Mixed IPv4 and IPv6 in Windows Server 2012",
+    "downloadDescription": "This paper contains an introduction to Unified Remote Access and step-by-step instructions for extending the Windows Server 2012 Base Configuration test lab to demonstrate DirectAccess deployment in a single server deployment with a mixed environment of IPv4 and IPv6,",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_Server_2012_Test_Lab_Guide_Single_Server_Mixed_IPv4_and_IPv6.docx",
+            "url": "https://download.microsoft.com/download/9/7/3/9734cdf4-f8d2-478f-92ca-5586746e93f4/Windows_Server_2012_Test_Lab_Guide_Single_Server_Mixed_IPv4_and_IPv6.docx",
+            "size": "174158",
+            "version": "February 2012",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess provides users with the experience of being seamlessly connected to their intranet any time they have Internet access. When DirectAccess is enabled, requests for intranet resources (such as email servers, shared folders, or intranet websites) are securely directed to the intranet, without the need for users to connect to a VPN. DirectAccess enables increased productivity for a mobile workforce by offering the same connectivity experience both inside and outside of the office.\r\nThe Windows Routing and Remote Access Server (RRAS) provides traditional VPN connectivity for legacy clients and non-domain members. RRAS also provides site-to-site connections between servers. RRAS in Windows Server 2008 R2 cannot coexist on the same edge server with DirectAccess, and must be deployed and managed separately from DirectAccess.\r\nWindows Server 2012 combines the DirectAccess feature and the RRAS role service into a new unified server role. This new Remote Access server role allows for centralized administration, configuration, and monitoring of both DirectAccess and VPN-based remote access services. Additionally, Windows Server 2012 DirectAccess provides multiple updates and improvements to address deployment blockers and provide simplified management.\r\nThis guide provides step-by-step instructions for configuring DirectAccess in a single server deployment with mixed IPv4 and IPv6 resources in a test lab to demonstrate functionality of the deployment experience. You will set up and deploy DirectAccess based on the Windows Server 2012 Base Configuration using five server computers and two client computers. The resulting test lab simulates an intranet, the Internet, and a home network, and demonstrates DirectAccess in different Internet connection scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2012",
+    "detailsSection_file_name": [
+        "Windows_Server_2012_Test_Lab_Guide_Single_Server_Mixed_IPv4_and_IPv6.docx"
+    ],
+    "detailsSection_file_size": [
+        "170.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2012 Beta Test Lab Guides",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=243062"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29031",
+    "downloadPreload": true
+}

@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Online:  SharePoint Online Solution Development Overview Poster",
+    "downloadDescription": "The SharePoint Online (Beta) Solution Development Overview poster presents a high-level view of the development features and patterns that developers can use for creating custom SharePoint Online solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "odcsp14SPOnlineDevPoster.zip",
+            "url": "https://download.microsoft.com/download/e/7/c/e7cfc4c2-68e3-4faa-a9bd-080e86093b77/odcsp14SPOnlineDevPoster.zip",
+            "size": "2048466",
+            "version": "NOV2010",
+            "datePublished": "4/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The SharePoint Online (Beta) Solution Development Overview poster presents a high-level view of the development features and patterns that developers can use for creating custom SharePoint Online solutions. The poster's detailed diagrams visually explain developer options for how to create SharePoint Online solutions, including using sandboxed solutions and the Microsoft Silverlight and ECMAScript client object models. The download includes the full-color poster (11 inches by 17 inches, B4: 257 mm x 364 mm) in Microsoft Visio, PDF, and XPS file formats.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NOV2010",
+    "detailsSection_file_name": [
+        "odcsp14SPOnlineDevPoster.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download works with the following Microsoft Office applications:</b><br/>\r\n<ul>\r\n<li>Microsoft Visio 2010</li>\r\n<li>Microsoft Office 2010</li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<br/>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk drive.</li>\r\n<li>Do the following:<ul>\r\n<li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007 or Microsoft Visio 2010. You can also use Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2010: Visio Viewer</a> to view the poster.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essential Pack</a>.</li></ul></li>\r\n</ol>\r\n<br/>\r\n<b>Tips for using posters</b><br/>\r\nIf you have a plotter, you can print these posters in their full size. If you do not have plotter, use the following steps to print on smaller paper.<br/><b>To print posters on smaller paper</b> \r\n<ol>\r\n<li>Open the poster in Visio.</li>\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>.</li>\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down. </li>\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>.</li>\r\n<li>On the <b>File</b> menu, click <b>Print</b>.</li>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Online Developer Resource Center",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/gg153540.aspx"
+        },
+        {
+            "title": "sharePoint Online: An Overview for Developers",
+            "url": "http://msdn.microsoft.com/en-us/library/gg317460.aspx"
+        },
+        {
+            "title": "microsoft SharePoint 2010 SDK",
+            "url": "http://msdn.microsoft.com/en-us/library/ee557253.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17505",
+    "downloadPreload": true
+}

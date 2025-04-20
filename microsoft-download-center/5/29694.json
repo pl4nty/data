@@ -1,0 +1,129 @@
+{
+    "error": "",
+    "downloadTitle": "Technical Documentation Download for System Center 2012 \u2013 App Controller",
+    "downloadDescription": "This page lists the technical documentation downloads that are available for the App Controller component of System Center 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_Operations.pdf",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/SC2012_AppController_Operations.pdf",
+            "size": "518253",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_Operations.docx",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/SC2012_AppController_Operations.docx",
+            "size": "98368",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_Deployment.pdf",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/SC2012_AppController_Deployment.pdf",
+            "size": "839149",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_Deployment.docx",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/SC2012_AppController_Deployment.docx",
+            "size": "136799",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_CompleteDocumentation.pdf",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/SC2012_AppController_CompleteDocumentation.pdf",
+            "size": "927279",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_AppController_CompleteDocumentation.docx",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/SC2012_AppController_CompleteDocumentation.docx",
+            "size": "160492",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControl_UpgradeR2.pdf",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/AppControl_UpgradeR2.pdf",
+            "size": "178920",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControl_UpgradeR2.docx",
+            "url": "https://download.microsoft.com/download/1/4/7/14753ead-fba6-4bda-8674-328533887360/AppControl_UpgradeR2.docx",
+            "size": "59975",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:07:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The downloadable files listed on this page contain the product documentation for the App Controller component of System Center 2012. The available downloads include:\r\n<BR></BR>\r\n\r\n<UL><LI>System Center 2012 R2 - App Controller Complete Technical Documentation, last updated October 17, 2013 (pdf & docx)</LI>\r\n<LI>System Center 2012 SP1 - App Controller Deployment Guide, last updated January 15, 2013 (pdf & docx)</LI>\r\n<LI>System Center 2012 SP1 - App Controller Operations Guide, last updated January 15, 2013 (pdf & docx)</LI>\r\n<LI>System Center 2012 SP1 - App Controller Upgrade Guide, last updated January 15, 2013 (pdf & docx)</LI></UL>\r\n<BR></BR>\r\nThis technical documentation is also available in the TechNet library.\r\n<BR></BR>\r\nTo download the Cmdlet Reference documentation for System Center, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=331570\">Cmdlet Reference Download for System Center</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "SC2012_AppController_Operations.pdf",
+        "SC2012_AppController_Operations.docx",
+        "SC2012_AppController_Deployment.pdf",
+        "SC2012_AppController_Deployment.docx",
+        "SC2012_AppController_CompleteDocumentation.pdf",
+        "SC2012_AppController_CompleteDocumentation.docx",
+        "AppControl_UpgradeR2.pdf",
+        "AppControl_UpgradeR2.docx"
+    ],
+    "detailsSection_file_size": [
+        "506.1 KB",
+        "96.1 KB",
+        "819.5 KB",
+        "133.6 KB",
+        "905.5 KB",
+        "156.7 KB",
+        "174.7 KB",
+        "58.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI>\r\n<LI>Microsoft Word 2013</LI>\r\n<LI>Microsoft Word 2010</LI>\r\n<LI>Microsoft Office Word 2007</LI>\r\n<LI>Microsoft Office Word 2003</LI>\r\n<LI>Microsoft Word 2002</LI>\r\n<LI>Microsoft Word 2000</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Documentation for App Controller in the TechNet Library",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkId=231694"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29694",
+    "downloadPreload": true
+}

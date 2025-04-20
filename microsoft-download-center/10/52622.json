@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Cultivating the Long tail of Environmental Observations",
+    "downloadDescription": "CLEO (Cultivating the Long tail of Environmental Observations) is a collaborative project between the Sensing and Energy Research Group at MSR and the E3 group at MCR Connections. Last published: July 31, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "COGPSTraces.zip",
+            "url": "https://download.microsoft.com/download/7/d/6/7d6083da-135b-4b1c-922c-32dd58a86728/COGPSTraces.zip",
+            "size": "313209529",
+            "version": "1.0",
+            "datePublished": "3/15/2024 4:08:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CLEO (Cultivating the Long tail of Environmental Observations) is a collaborative project between the Sensing and Energy Research Group at MSR and the E3 group at MCR Connections. It relies on the processing power of the cloud to reduce the complexity and energy consumption of mobile sensor nodes. Academic collaborations in the program come from Brazil, China, Russia, as well as in US. A core technology in CLEO is a low energy GPS solution that offloads GPS calculation to the cloud. These sample datasets allow our collaborators to validate our solutions and encourage them build their own variations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "COGPSTraces.zip"
+    ],
+    "detailsSection_file_size": [
+        "298.7 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52622",
+    "downloadPreload": true
+}

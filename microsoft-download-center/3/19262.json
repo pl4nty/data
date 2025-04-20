@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Engineering Software For Accessibility eBook",
+    "downloadDescription": "An eBook describing how to engineer your software for accessibility, including a detailed explaination on designing the Windows Automation API.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "engineering_for_accessibility_eBook.doc",
+            "url": "https://download.microsoft.com/download/5/0/1/501ff941-e93d-423f-868b-c7bb2ec08c56/engineering_for_accessibility_eBook.doc",
+            "size": "5471232",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "engineering_for_accessibility_eBook.pdf",
+            "url": "https://download.microsoft.com/download/5/0/1/501ff941-e93d-423f-868b-c7bb2ec08c56/engineering_for_accessibility_eBook.pdf",
+            "size": "2386835",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Are you an engineer who wants to integrate and innovate accessible products? Learn how to plan for accessibility through the traditional software development lifecycle. Program managers, or those overseeing the development of an accessible product, will also find this book helpful in understanding how accessibility integrates at each stage of the software development cycle. \r\n\r\nThis book will help you to:\r\n<ul>\r\n<li>Understand the basics of accessibility, UI Automation, and how it applies to your product</li>\r\n<li>Create your specifications to ensure that you are meeting common accessibility requirements</li>\r\n<li> Determine when to utilize common controls and platform resources and how to make custom controls accessible</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "engineering_for_accessibility_eBook.doc",
+        "engineering_for_accessibility_eBook.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PDF Viewing application.  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Business",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Business N",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Basic N",
+        "Windows Vista Home Premium",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Service Pack 2",
+        "Windows Vista Starter",
+        "Windows Vista Starter N",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition"
+    ],
+    "installInstructionSection": "Click the Download link to start the download.\r\nDo one of the following:\r\n<ol>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this \r\nprogram to disk.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19262",
+    "downloadPreload": true
+}

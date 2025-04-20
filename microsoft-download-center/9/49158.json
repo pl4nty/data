@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Storsimple third-party notices and information",
+    "downloadDescription": "Contains licensing notices and information for third-party components in StorSimple",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StorSimple TPNs.zip",
+            "url": "https://download.microsoft.com/download/2/0/0/2003271d-69d5-4143-85a2-f1d8ea058f52/StorSimple TPNs.zip",
+            "size": "264530",
+            "version": "1",
+            "datePublished": "6/13/2024 12:53:23 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The software and firmware running in Microsoft Software is based on or incorporates material from the projects listed in this document (collectively, \u201cThird Party Code\u201d).  Microsoft is the not original author of the Third Party Code.  The original copyright notice and license under which Microsoft received such Third Party Code, are set forth in this document.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "StorSimple TPNs.zip"
+    ],
+    "detailsSection_file_size": [
+        "258.3 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "StorSimple 8000 series\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download zipped file, extract, and open in any text editor.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49158",
+    "downloadPreload": true
+}

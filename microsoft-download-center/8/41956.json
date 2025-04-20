@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Hybrid worksheets",
+    "downloadDescription": "Download the appropriate worksheet for the SharePoint hybrid topology that you want to deploy.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePoint Hybrid worksheet for a one-way inbound and two-way authentication topology.xlsx",
+            "url": "https://download.microsoft.com/download/8/a/a/8aa90d7f-9a86-4ddd-8ea6-12004755457d/SharePoint Hybrid worksheet for a one-way inbound and two-way authentication topology.xlsx",
+            "size": "33928",
+            "version": "July2014",
+            "datePublished": "7/15/2024 3:52:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint Hybrid worksheet for a one-way outbound authentication topology.xlsx",
+            "url": "https://download.microsoft.com/download/8/a/a/8aa90d7f-9a86-4ddd-8ea6-12004755457d/SharePoint Hybrid worksheet for a one-way outbound authentication topology.xlsx",
+            "size": "21660",
+            "version": "July2014",
+            "datePublished": "7/15/2024 3:52:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint Hybrid worksheet for a one-way inbound and two-way authentication topology.doc",
+            "url": "https://download.microsoft.com/download/8/a/a/8aa90d7f-9a86-4ddd-8ea6-12004755457d/SharePoint Hybrid worksheet for a one-way inbound and two-way authentication topology.doc",
+            "size": "87552",
+            "version": "July2014",
+            "datePublished": "7/15/2024 3:52:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint Hybrid worksheet for a one-way outbound authentication topology.doc",
+            "url": "https://download.microsoft.com/download/8/a/a/8aa90d7f-9a86-4ddd-8ea6-12004755457d/SharePoint Hybrid worksheet for a one-way outbound authentication topology.doc",
+            "size": "58368",
+            "version": "July2014",
+            "datePublished": "7/15/2024 3:52:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the appropriate worksheet for the SharePoint hybrid topology that you want to deploy. We\u2019ve provided both an Excel and Word version for each SharePoint hybrid topology. \r\n<br/><br/>\r\n<b>Warning:</b>  For security reasons, make sure that you store the worksheet in a secure place such as a secured file share or SharePoint document library and only grant permissions to administrators who are involved in the deployment process and must know this information.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July2014",
+    "detailsSection_file_name": [
+        "SharePoint Hybrid worksheet for a one-way inbound and two-way authentication topology.xlsx",
+        "SharePoint Hybrid worksheet for a one-way outbound authentication topology.xlsx",
+        "SharePoint Hybrid worksheet for a one-way inbound and two-way authentication topology.doc",
+        "SharePoint Hybrid worksheet for a one-way outbound authentication topology.doc"
+    ],
+    "detailsSection_file_size": [
+        "33.1 KB",
+        "21.2 KB",
+        "85.5 KB",
+        "57.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n<LI>The file is a Microsoft Excel document. Users who do not have Microsoft Excel can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=299473\">Excel Viewer</A>.</LI>\r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hybrid for SharePoint Server 2013",
+            "url": "http://aka.ms/sphyb"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41956",
+    "downloadPreload": true
+}

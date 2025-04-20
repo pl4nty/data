@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Support Log Collection Script",
+    "downloadDescription": "Use this script to collect logs if instructed by support",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "collectvslogs.zip",
+            "url": "https://download.microsoft.com/download/b/1/3/b136b24d-8ba4-4ae5-b201-54af74bdc8b1/collectvslogs.zip",
+            "size": "1073",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:35:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft staff may instruct you to collect Visual Studio logs to assist with troubleshooting your issue. Administrator rights are required to run this script.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "collectvslogs.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.0 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows 8 or above, Administrator rights",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "1. Close all running instances of Visual Studio.<br />\r\n2. Download the file <b>CollectVSLogs.zip</b> <br />\r\n3. Extract the file <b>collectvslogs.bat</b> <br />\r\n4. Right click the file <b>collectvslogs.bat</b> <br />\r\n5. Click on <b>Run as Administrator</b> <br />\r\n6. Click <b>Yes</b> when you see the warning: Do you want to allow this app to make changes to your device? <br />\r\n7. When the command prompt launches verify that Visual Studio is closed, then press the space bar to start the script <br />\r\nNote: Make sure the command prompt windows is selected before pressing the space bar or the script will not start. <br />\r\n8. Visual Studio will launch automatically <br />\r\n9. Reproduce the issue in Visual Studio <br />\r\n10. Exit Visual Studio once you reproduce the issue <br />\r\n11. The script will then collect all the required logs and inform you where they are located <br />\r\n12. Compress all of these files into one zip file and send it to your Microsoft representative <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55322",
+    "downloadPreload": true
+}

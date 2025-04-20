@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for Exchange Admin",
+    "downloadDescription": "The Integration Pack for Exchange Admin is an add-on for System Center 2022 Orchestrator that enables you to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote or cloud based environments in Microsoft Exchange and Office 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_IntegrationPack_for_ExchangeAdmin.oip",
+            "url": "https://download.microsoft.com/download/4/7/8/478a5933-81a9-47f5-bb44-56132fc47114/System_Center_IntegrationPack_for_ExchangeAdmin.oip",
+            "size": "786514",
+            "version": "prod",
+            "datePublished": "7/15/2024 4:32:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Release History</b><br />\r\n<ul>\r\n<li>06/30/2022 - Original English release, version 10.22.0.1 </li>\r\n<li>05/25/2023 - version 10.22.2.5, <a href=\"https://techcommunity.microsoft.com/t5/system-center-blog/update-sc-orchestrator-exchange-admin-2022-integration-pack-v10/ba-p/3828422\">Blog</a> </li>\r\n<li>08/09/2023 - version 10.22.2.6, Successfully retrieve information through Remote PowerShell from the server that's running Exchange Server </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "prod",
+    "detailsSection_file_name": [
+        "System_Center_IntegrationPack_for_ExchangeAdmin.oip"
+    ],
+    "detailsSection_file_size": [
+        "768.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> System Center 2022 - Orchestrator </li>\r\n<li> Windows Server 2019 or higher </li>\r\n<li> Microsoft Exchange 2010 Service Pack 2 or Microsoft Exchange 2012 or Microsoft Exchange Online/Microsoft 365 </li>\r\n<li> Microsoft Exchange Management Shell </li>\r\n<li> Exchange Online PowerShell V3 module (<a href=\"https://learn.microsoft.com/en-us/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps&preserve-view=true\">EXO V3</a>), you must <a href=\"https://techcommunity.microsoft.com/t5/exchange-team-blog/announcing-deprecation-of-remote-powershell-rps-protocol-in/ba-p/3695597\"> upgrade </a> from EXO V2 to EXO V3 for this IP </li>\r\n<li> Microsoft PowerShell 2.0 </li>\r\n<li> Microsoft WinRM 2.0 </li>\r\n<li> .NET Framework 4.0 or higher (.NET 4.7.2 recommended) </li>\r\n<li> RAM \u2013 minimum 1GB (recommended 2GB) </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the .oip file, register the Integration Pack in Deployment Manager and then deploy the Integration Pack on Runbook Designer and Runbook Server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104335",
+    "downloadPreload": true
+}

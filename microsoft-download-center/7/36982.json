@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Bulletin Data",
+    "downloadDescription": "Microsoft Security Bulletin Data",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CVRF Information.docx",
+            "url": "https://download.microsoft.com/download/6/7/3/673e4349-1ca5-40b9-8879-095c72d5b49d/CVRF Information.docx",
+            "size": "19696",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BulletinSearch2001-2008.xlsx",
+            "url": "https://download.microsoft.com/download/6/7/3/673e4349-1ca5-40b9-8879-095c72d5b49d/BulletinSearch2001-2008.xlsx",
+            "size": "517880",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSRC-CVRF.zip",
+            "url": "https://download.microsoft.com/download/6/7/3/673e4349-1ca5-40b9-8879-095c72d5b49d/MSRC-CVRF.zip",
+            "size": "1926353",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BulletinSearch.xlsx",
+            "url": "https://download.microsoft.com/download/6/7/3/673e4349-1ca5-40b9-8879-095c72d5b49d/BulletinSearch.xlsx",
+            "size": "2093862",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download offers the following items:\r\n1. Excel files that contains affected software, bulletin replacement, reboot requirements, and CVE information from the Microsoft security bulletins. BulletinSearch.xlsx contains bulletin information from November 2008 to the present.  BulletinSearch1998-2008 has all of the rest of the historical data.\r\n2. Zip file that contains security bulletins in the Common Vulnerability Reporting Framework (CVRF) format (since June 2012)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CVRF Information.docx",
+        "BulletinSearch2001-2008.xlsx",
+        "MSRC-CVRF.zip",
+        "BulletinSearch.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "19.2 KB",
+        "505.7 KB",
+        "1.8 MB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Excel or Excel Viewer and XML viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To view the Microsoft security bulletin data, download the Excel file and/or zip file. For more information about CVRF, see http://www.icasi.org/cvrf",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36982",
+    "downloadPreload": true
+}

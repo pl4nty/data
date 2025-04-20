@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Online Learning - Windows",
+    "downloadDescription": "Windows training courses",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Preparing for the Configuring Windows 81 Exam (70-687).zip",
+            "url": "https://download.microsoft.com/download/f/c/8/fc8c52e4-bc3a-4e85-888b-58bea063f4d9/Preparing for the Configuring Windows 81 Exam (70-687).zip",
+            "size": "6066193707",
+            "version": "1",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Preparing for the Supporting Windows 8.1 Exam (70-688).zip",
+            "url": "https://download.microsoft.com/download/f/c/8/fc8c52e4-bc3a-4e85-888b-58bea063f4d9/Preparing for the Supporting Windows 8.1 Exam (70-688).zip",
+            "size": "4219790953",
+            "version": "1",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows 10 Top Features for IT Pros.zip",
+            "url": "https://download.microsoft.com/download/f/c/8/fc8c52e4-bc3a-4e85-888b-58bea063f4d9/Windows 10 Top Features for IT Pros.zip",
+            "size": "2919582948",
+            "version": "1",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows 8.1 Desktop Essentials.zip",
+            "url": "https://download.microsoft.com/download/f/c/8/fc8c52e4-bc3a-4e85-888b-58bea063f4d9/Microsoft Windows 8.1 Desktop Essentials.zip",
+            "size": "559773570",
+            "version": "1",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows 8.1 Start Screen Essentials.zip",
+            "url": "https://download.microsoft.com/download/f/c/8/fc8c52e4-bc3a-4e85-888b-58bea063f4d9/Microsoft Windows 8.1 Start Screen Essentials.zip",
+            "size": "640304069",
+            "version": "1",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Preparing for Exam MTA 98-375 HTML5 App Development Fundamentals Academic Edition.zip",
+            "url": "https://download.microsoft.com/download/f/c/8/fc8c52e4-bc3a-4e85-888b-58bea063f4d9/Preparing for Exam MTA 98-375 HTML5 App Development Fundamentals Academic Edition.zip",
+            "size": "2601379020",
+            "version": "1",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Online Learning courses for Windows",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Preparing for the Configuring Windows 81 Exam (70-687).zip",
+        "Preparing for the Supporting Windows 8.1 Exam (70-688).zip",
+        "Windows 10 Top Features for IT Pros.zip",
+        "Microsoft Windows 8.1 Desktop Essentials.zip",
+        "Microsoft Windows 8.1 Start Screen Essentials.zip",
+        "Preparing for Exam MTA 98-375 HTML5 App Development Fundamentals Academic Edition.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.6 GB",
+        "3.9 GB",
+        "2.7 GB",
+        "533.8 MB",
+        "610.6 MB",
+        "2.4 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows and Office",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Each training module is in a separate .zip file. Download and extract the contents of the .zip file to view.",
+    "additionalInformationSection": "These training videos help you come up to speed on Windows technologies.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57337",
+    "downloadPreload": true
+}

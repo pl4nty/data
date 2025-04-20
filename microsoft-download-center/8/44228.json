@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Universe Poster - 2014",
+    "downloadDescription": ".NET Universe Poster (2014) showing the main .NET SDKs, libraries and packages clasified by application type and package type (NuGet, official support, etc.)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "poster2014_.pdf",
+            "url": "https://download.microsoft.com/download/3/f/5/3f55bf07-ea45-4db7-a056-3f68f1cc5fb0/poster2014_.pdf",
+            "size": "15294062",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:41:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster shows how the trends are changing in .NET as we\u00b4re moving from a single large .NET Framework to a more loosely coupled and autonomous libraries and sub-frameworks, many of them even published as NuGet packages and evolving continuosly. The number of those libs and packages is evolving and growing, so having a visual photo of it can be helpful.\r\n\r\nThe main idea of the poster is to show that you can create any kind of application with .NET, from the largest applications to the smaller apps: in the cloud, on the web, on desktops, tablets, phones, and in embedded environments (even watches!). Any of those application types is shown as category/bucket in the poster and within each bucket we\u00b4re tossing the main libraries/SDKs/packages out.\r\nThen we\u00b4re also showing cross-cutting concerns buckets like Security, Data Access, and .NET Extension libs.\r\nThe main categories are the following:\r\n- Emerging application patterns (Mobile, Web & Cloud)\r\n- Established application patterns (Desktop and Embedded)\r\n- Cross-Cutting concerns\r\n\r\nFinally, the poster is putting a check/mark on every lib/SDK bullet depending if they are or not complaint with the following:\r\n- NuGet package\r\n- Open Source\r\n- Microsoft Official Supported\r\nYou can print it out or use it as in electronic format (.PDF). Using the electronic format (.PDF) allows you to access each content URL/page related.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2014",
+    "detailsSection_file_name": [
+        "poster2014_.pdf"
+    ],
+    "detailsSection_file_size": [
+        "14.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and open the document using any PDF reader.\r\nEach item (SDK, NuGet package, etc.) has a related URL to its main page.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44228",
+    "downloadPreload": true
+}

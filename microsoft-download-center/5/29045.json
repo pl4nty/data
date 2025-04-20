@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Reference Architecture for the Microsoft Lync Server 2010 Multitenant Pack for Partner Hosting",
+    "downloadDescription": "Describes a reference architecture for the Microsoft Lync Server 2010 Multitenant Pack for Partner Hosting.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_LyncServer_2010_Multitenant_Pack_for_Partner_Hosting_Reference_Architecture.doc",
+            "url": "https://download.microsoft.com/download/9/1/1/91125a88-ffe0-4081-aaf9-860c0246ebd6/Microsoft_LyncServer_2010_Multitenant_Pack_for_Partner_Hosting_Reference_Architecture.doc",
+            "size": "439808",
+            "version": "Mar2012",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes a reference architecture for the Microsoft Lync Server 2010 Multitenant Pack for Partner Hosting, including feature descriptions, architecture design details, and build lists to assist in determining cost estimates to build and deploy the solution. The Lync Server Multitenant Hosting Pack for is a unified communications (UC) solution for telecommunication and hosting providers. The solution allows hosting providers to host their own fully integrated, multi-tenant unified communications service targeted to small and medium sized businesses.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2012",
+    "detailsSection_file_name": [
+        "Microsoft_LyncServer_2010_Multitenant_Pack_for_Partner_Hosting_Reference_Architecture.doc"
+    ],
+    "detailsSection_file_size": [
+        "429.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "microsoft Lync Server 2010 Multitenant Pack for Partner Hosting Resources ",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=245434"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29045",
+    "downloadPreload": true
+}

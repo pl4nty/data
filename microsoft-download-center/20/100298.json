@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Modernizing applications with the hybrid cloud - An illustrated technical overview",
+    "downloadDescription": "This white paper discusses the methodology that can be used to modernize an application to operate in a hybrid environment taking in account typical issues/requirements that can be encountered.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Modernizing-applications-with-the-hybrid-cloud.pdf",
+            "url": "https://download.microsoft.com/download/e/6/a/e6afaa1f-3799-496b-a870-bfc6abe5a0cf/Modernizing-applications-with-the-hybrid-cloud.pdf",
+            "size": "1894447",
+            "version": "2.0",
+            "datePublished": "6/15/2024 4:21:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Thinking hybrid is more and more common for organizations seeking for new ways to render existing services, better operate existing applications while reducing the technical debt, ways to provide new services based on the legacy application portfolio thanks to the cloud, while fulfilling their own requirements notably in terms of data privacy, data security, and business continuity.</b>\r\n<br/><br/>\r\nAdopting a hybrid cloud approach, and in turn building an overall strategy for modernizing any existing application first requires you to understand what a hybrid cloud means for you and how a legacy workload can evolve and be modernized to run itself in hybrid mode.\r\nThere are several questions to answer: <i>What is the intended purpose for the envisaged modernization effort? Why do you consider turning the application into a hybrid mode rather than moving it entirely to the cloud as part of the modernization effort? What are the constraints that require keeping certain parts of the application on-premises? What are the expected benefits? the anticipated risks and impacts? What would be the expected effort and related cost for the modernization? What is your current technical knowledge of the application?</i> etc.\r\n<br/><br/>\r\nThis white paper tries to develop an open vision to sustain a hybrid cloud strategy. It can be seen an attempt to:\r\n<ol>\r\n<li>Discuss the considerations that pertain to modernizing an existing application (portfolio) through a hybrid cloud-based approach along with the issues that can be encountered in such an endeavor,</li> \r\n<li>Suggest a general methodology to guide you throughout this whole process. Modernizing an on-premises application by leveraging to certain circumstances public cloud capabilities/augmentations must indeed follow a reproductible path in order to ascertain to cope with the main decision points and related questions and problematics that can possibly arise and to adequately answer them.</li> \r\n<li>Illustrate the suggested approach by a representative example.</li>\r\n</ol>\r\nAs far as the latter is concerned, this white paper illustrates the suggested methodology through the lens of the <a href=\"https://github.com/dotnet-architecture/eShopOnContainers\">eShopOnContainers</a> application, a microservices-based application, and a set of (fictious) objectives for the modernization journey towards a hybrid mode for this application.\r\n<br/><br/>\r\nIt also in this context features the use of Docker containers and Kubernetes, k8s in short. The white paper also highlights some key Microsoft services, products and technologies that can be leveraged on purpose like <a href=\"https://azure.microsoft.com/en-us/overview/azure-stack/\">Azure Stack</a>, an extension of Azure to consistently build and run hybrid applications across cloud boundaries. \r\n<br/><br/>\r\nAzure Stack allows you to extend Azure services and capabilities on-premises, and build, deploy, and operate hybrid cloud and edge applications consistently across Azure and Azure Stack. Azure Stack is sold as an integrated system of software and validated hardware.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Modernizing-applications-with-the-hybrid-cloud.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows 10",
+        "Linux"
+    ],
+    "installInstructionSection": "Download the white paper and open it with your PDF reader of choice",
+    "relatedResourcesSection": [
+        {
+            "title": "eShopOnContainers ",
+            "url": "https://github.com/dotnet-architecture/eShopOnContainers"
+        },
+        {
+            "title": "azure Stack",
+            "url": "https://azure.microsoft.com/en-us/overview/azure-stack/"
+        },
+        {
+            "title": "azure",
+            "url": "https://azure.microsoft.com/en-us/overview/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100298",
+    "downloadPreload": true
+}

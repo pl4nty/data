@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Regression Suite Automation Tool (RSAT) for Finance and Operations apps",
+    "downloadDescription": "Automated user acceptance testing for Finance and Operations apps, part of Dynamics 365",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RSAT 2.8.18182.19 release note.pdf",
+            "url": "https://download.microsoft.com/download/a2b5996f-f211-4c44-b24c-231300dbc21f/RSAT 2.8.18182.19 release note.pdf",
+            "size": "83909",
+            "version": "2.8.18182.19",
+            "datePublished": "4/10/2025 3:15:58 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Regression Suite Automation Tool Installer 2.8.18182.19.msi",
+            "url": "https://download.microsoft.com/download/a2b5996f-f211-4c44-b24c-231300dbc21f/Regression Suite Automation Tool Installer 2.8.18182.19.msi",
+            "size": "25399296",
+            "version": "2.8.18182.19",
+            "datePublished": "4/10/2025 3:15:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Regression Suite Automation Tool (RSAT) enables functional power users to record business tasks using the Finance and Operations task recorder and convert them into a suite of automated tests without the need to write source code. It significantly reduces the time and cost of user acceptance testing when taking a Microsoft update, or before applying custom code and configurations to your Finance and Operations production environment.  RSAT is fully integrated with Azure DevOps for test execution, reporting and investigation. Test parameters are decoupled from test steps and use Microsoft Excel.\n\nFor more information, go to the RSAT home page on Microsoft docs: https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.8.18182.19",
+    "detailsSection_file_name": [
+        "RSAT 2.8.18182.19 release note.pdf",
+        "Regression Suite Automation Tool Installer 2.8.18182.19.msi"
+    ],
+    "detailsSection_file_size": [
+        "81.9 KB",
+        "24.2 MB"
+    ],
+    "detailsSection_file_date": "4/10/2025",
+    "systemRequirementsSection": "Finance and Operations Platform Update 15 or newer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "On this page, choose the Download button.\n-To install now, choose the Run button.\n-To install later, choose the Save button. \n\nIf you have an older version of RSAT already installed, close it and uninstall it before you install this new version. Restart your PC if you are prompted to do so.\nRemember to regenerate test automation files when you install a new version of RSAT. Load the test plan from Azure Devops then select New->Generate Execution Files only to re-generate execution files only and leave Excel files untouched (no need to regenerate Excel files unless you want to take advantage of some of the new features in the Excel parameter file).\n\nFor more information, go to the RSAT home page on Microsoft docs: https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/perf-test/rsat/rsat-overview",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57357",
+    "downloadPreload": true
+}

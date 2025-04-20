@@ -1,0 +1,145 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Mobile 6.1: Upgrade for Microsoft Office 2007 file formats",
+    "downloadDescription": "Office Mobile 6.1 is an upgrade to Office Mobile applications on Windows Mobile. The new upgrade supports the new Office 2007 file formats.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeMobile_Licensed_0409_US.msi",
+            "url": "https://download.microsoft.com/download/c/8/2/c8251037-efd9-4d66-8360-f937de303158/OfficeMobile_Licensed_0409_US.msi",
+            "size": "13271552",
+            "version": "6.1",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        }
+    ],
+    "detailsSection": "Microsoft Office 2007 introduced new Open XML-based file formats for Office applications. These new file formats reduce file size, improve security and reliability, and enhance integration with external sources.<br />\n<br />\nTo allow Windows Mobile users to work with Office documents created in the Open XML formats, Microsoft has developed an upgrade for Word Mobile, Excel Mobile, and PowerPoint Mobile applications. This upgrade to the Office Mobile applications allows viewing and editing of Word documents and Excel workbooks and viewing of PowerPoint slideshows created by using Microsoft Office 2007. <br />\n<br />\nOther improvements include:<br />\n<br />\n\u2022\tEnhanced viewing experience for charts in Excel Mobile.<br />\n\u2022\tAbility to view SmartArt in PowerPoint Mobile.<br />\n\u2022\tAbility to view and extract files from compressed (.zip) folders.<br />\n<br />\nMicrosoft Office Mobile 6.1 Full Version to support Microsoft 2007 file formats<br />\n<br />\nIf your Windows Mobile device does not have a version of Microsoft Office Mobile prior to 6.1, you can purchase the full version of Microsoft Office Mobile. <br />\n<br />\nThe Office Mobile application suite includes Microsoft Office Word Mobile, Excel Mobile, and Microsoft Office PowerPoint\u00ae Mobile for Windows Mobile 6 powered devices, helping users manage and review documents. Microsoft Office Mobile includes support for rich reviewing and minor editing capabilities as well as support for rights-managed documents.<br />\n<br />\nThe primary user scenario enabled by Office Mobile is viewing e-mail attachments, performing minor edits, sharing document versions, and opening documents from an SD card or a SharePoint server. Office Mobile provides a high-fidelity document viewing experience, with capability to edit as well as fast performance in loading the first page of the document.<br />\n<br />\nNote: This free upgrade works only for Windows Mobile powered devices that have an earlier version of Office Mobile. If your Windows Mobile powered device does not have Office Mobile applications, this upgrade will not work for you. You can purchase the full version of Office Mobile 6.1 online. For more information, click here - \nhttp://www.microsoft.com/windowsmobile/en-us/downloads/microsoft/software-office-mobile.mspx",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.1",
+    "detailsSection_file_name": [
+        "OfficeMobile_Licensed_0409_US.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022\tSupported Operating Systems on the Computer:  Windows 2000 Service Pack 4; Windows XP; Windows XP Home; Windows XP Professional; Windows XP Professional Service Pack 2; Windows XP Professional Service Pack 1; Windows XP Professional x64; Windows Server 2003; Windows Server 2003 R2 (32-Bit x86); Windows Server  2003 Service Pack 2; Windows Server 2003 Service Pack 1; Windows Server 2003 64-bit; Windows Vista<br />\n<br />\n\u2022\tSupported Operating Systems on Windows Mobile Powered Devices:  Windows Mobile 5 Pocket PC; Pocket PC Phone Edition; Windows Mobile 6<br />\n<br />\n\u2022\tActiveSync 4.5 (on Windows 2000/XP/2003); Windows Mobile Device Center (on Windows Vista)<br />\n<br />\n\u2022\tAt least 6 MB of Available Storage on your device or storage card.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 5.0 software for Pocket PC",
+        "Windows Mobile 6"
+    ],
+    "installInstructionSection": "Install locations:<br />\n<br />\nFull Version<br />\nUpgrade Version<br />\n<br />\nTo install this download:<br />\n1.\t From the drop-down list, select the language edition that matches the language on your device.<br />\n2.\tWhen prompted with an Open/Save dialog box, click Save, choose a location on your computer, and click Save again. <br />\n3.\tConnect your device to your computer and make sure ActiveSync 4.5 or Windows Mobile Device Center is running.<br />\n4.\tOn your computer, double-click the installer. <br />\n5.\tFollow the instructions in the Setup Wizard.",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Windows Embedded Web Site",
+            "url": "http://msdn.microsoft.com/embedded"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10555",
+    "downloadPreload": true
+}

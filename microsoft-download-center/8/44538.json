@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2015 Availability and Localization Fact Sheet",
+    "downloadDescription": "Availability and Localization Fact Sheet -Microsoft Dynamics NAV 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NAV2015_AvailabilityGuide_A4_low.pdf",
+            "url": "https://download.microsoft.com/download/3/c/7/3c71d164-dbb1-4b7f-af88-3f8aa69847e1/NAV2015_AvailabilityGuide_A4_low.pdf",
+            "size": "160201",
+            "version": "NAV 2015",
+            "datePublished": "5/15/2024 3:22:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Availability and Localization Fact Sheet -Microsoft Dynamics NAV 2015",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NAV 2015",
+    "detailsSection_file_name": [
+        "NAV2015_AvailabilityGuide_A4_low.pdf"
+    ],
+    "detailsSection_file_size": [
+        "156.4 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "read",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44538",
+    "downloadPreload": true
+}

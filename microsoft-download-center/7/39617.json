@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2013 Monitoring Management Pack",
+    "downloadDescription": "BizTalk Server 2013 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReadMe.htm",
+            "url": "https://download.microsoft.com/download/1/7/d/17d51de0-f022-411f-9f3e-81cc0061b11c/ReadMe.htm",
+            "size": "21063",
+            "version": "7.0.1033.0",
+            "datePublished": "7/15/2024 3:17:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Server 2013 Monitoring Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/1/7/d/17d51de0-f022-411f-9f3e-81cc0061b11c/BizTalk Server 2013 Monitoring Management Pack Guide.docx",
+            "size": "113977",
+            "version": "7.0.1033.0",
+            "datePublished": "7/15/2024 3:17:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BizTalk2013MP.msi",
+            "url": "https://download.microsoft.com/download/1/7/d/17d51de0-f022-411f-9f3e-81cc0061b11c/BizTalk2013MP.msi",
+            "size": "708608",
+            "version": "7.0.1033.0",
+            "datePublished": "7/15/2024 3:17:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server 2013 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components. It allows administrators to monitor health state of various BizTalk artifacts such as Send Ports, Orchestrations etc. and platform artifacts such as Host Instances (BizTalk service). Further, this mp includes performance views, diagnostic capability and alerts.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nBizTalk Server 2013 MP includes the following enhancements: <br/>\r\n<ul>\r\n<li> Updated discovery to handle a large amount of BizTalk Server artifacts </li>\r\n<li> Increased suppression on rules to show only the important messages </li>\r\n<li> Fixed the issue with the discovery of the installed BizTalk Server version  </li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 7/10/2013 - Initial English release, version 7.0.1033.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.1033.0",
+    "detailsSection_file_name": [
+        "ReadMe.htm",
+        "BizTalk Server 2013 Monitoring Management Pack Guide.docx",
+        "BizTalk2013MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "20.6 KB",
+        "111.3 KB",
+        "692.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Required Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2007 R2 Or System Center Operations Manager 2012 </li>\r\n<li> Microsoft BizTalk Server 2013 </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click the download link on this page to begin the download process for this management pack package. Save the MSI file and run it or run it directly from the download prompt. Please read the MP guide for further installation details. <br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39617",
+    "downloadPreload": true
+}

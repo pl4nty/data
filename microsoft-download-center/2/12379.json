@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Simplified Implementation of the Microsoft SDL",
+    "downloadDescription": "This document illustrates the core concepts of the Microsoft Security Development Lifecycle (SDL) and discusses the individual security activities that should be performed in order to follow the SDL process. The Simplified SDL guidance is also available under an Excel spreadsheet format.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Simplified Implementation of the SDL.doc",
+            "url": "https://download.microsoft.com/download/f/7/d/f7d6b14f-0149-4fe8-a00f-0b9858404d85/Simplified Implementation of the SDL.doc",
+            "size": "1169408",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Simplified SDL_Spreadsheet.xlsx",
+            "url": "https://download.microsoft.com/download/f/7/d/f7d6b14f-0149-4fe8-a00f-0b9858404d85/Simplified SDL_Spreadsheet.xlsx",
+            "size": "23544",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This paper presents:\r\n\u2022 A brief overview of the Microsoft SDL.\r\n\u2022 An overview of the Microsoft SDL Optimization Model with particular attention to where the Microsoft SDL fits within the Optimization Model. \r\n\u2022 A discussion of individual Microsoft security development practices, including: roles and responsibilities for individuals involved in the application development process, mandatory security activities, optional security activities, the application security verification process.\r\nThe Simplified SDL guidance is also available under an Excel spreadsheet format. This spreadsheet lists the 16 mandatory SDL security practices along with implementation details and resources for each practice. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Simplified Implementation of the SDL.doc",
+        "Simplified SDL_Spreadsheet.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "23.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft SDL portal",
+            "url": "http://www.microsoft.com/security/sdl/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12379",
+    "downloadPreload": true
+}

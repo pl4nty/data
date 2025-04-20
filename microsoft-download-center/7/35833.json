@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Support for Previous POS Versions",
+    "downloadDescription": "This document describes how to enable previous versions of Retail Point of Sale (POS) to exchange data with Microsoft Dynamics AX 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Support for previous POS version in Dynamics AX 2012 R2.pdf",
+            "url": "https://download.microsoft.com/download/f/e/f/fef1a803-d6d6-4a6b-9bb3-372901e00b06/Support for previous POS version in Dynamics AX 2012 R2.pdf",
+            "size": "694608",
+            "version": "2012",
+            "datePublished": "6/13/2024 12:14:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In previous versions of Microsoft Dynamics AX for Retail, all Retail Point of Sale (POS) terminals had to be upgraded after the Microsoft Dynamics AX instance was upgraded. Otherwise, all data connectivity between Retail POS and Microsoft Dynamics AX was stopped, and any sales transactions processed in Retail POS after the start of the Microsoft Dynamics AX upgrade had to be manually imported for posting. Microsoft Dynamics AX 2012 R2 introduces new functionality that lets a previous version of POS (Microsoft Dynamics AX for Retail 2009 R2 Refresh or Microsoft Dynamics AX 2012 Feature Pack POS) communicate with Microsoft Dynamics AX 2012 R2 after the upgrade. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Support for previous POS version in Dynamics AX 2012 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "678.3 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35833",
+    "downloadPreload": true
+}

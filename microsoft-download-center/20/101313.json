@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server SQL Adapter (Deprecated)",
+    "downloadDescription": "BizTalk Server SQL Adapter (Deprecated)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LegacySQLAdapter.msi",
+            "url": "https://download.microsoft.com/download/a/2/d/a2d11b16-adf2-4069-bcfc-d560c7f0b683/LegacySQLAdapter.msi",
+            "size": "847872",
+            "version": "3.13.738.0",
+            "datePublished": "7/15/2024 4:23:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server SQL Adapter (Deprecated)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.13.738.0",
+    "detailsSection_file_name": [
+        "LegacySQLAdapter.msi"
+    ],
+    "detailsSection_file_size": [
+        "828.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft BizTalk Server 2020<br />\r\nSqlXml 4.0 Service Pack 1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Run the downloaded .msi from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101313",
+    "downloadPreload": true
+}

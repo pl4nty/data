@@ -1,0 +1,197 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Basic 2013 (64 Bit)",
+    "downloadDescription": "Microsoft Lync Basic 2013 gives you instant messaging (IM), audio and video calls, online meetings, availability (presence) information, and sharing capabilities all from one, easy-to-use program. It\u2019s a slimmer version of the full Lync 2013 client and provides the same core functionality.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "lyncentry.exe",
+            "url": "https://download.microsoft.com/download/4/5/3/45367500-0eeb-458f-9bd5-f43778c9f841/lyncentry.exe",
+            "size": "352978056",
+            "version": "15.0.4569.1506",
+            "datePublished": "7/15/2024 3:30:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "With Lync, you can keep track of your contacts\u2019 availability; send an instant message; and start or join an audio call, video call, or online meeting\u2014all through a consistent, familiar interface. Lync integrates with other Office programs and is available for Windows, Mac, Windows Phone, iPhone, iPod, Android, and Office 365 subscribers.\r\n<br/><br/>\r\nLync Basic 2013 provides all the basic functionality that\u2019s available in the full version of Lync (Lync 2013). However, if you want to use any of the following features, talk to your workplace technical support about upgrading to Lync 2013: \r\n<ul>\r\n<li>Advanced call features (not available with all Office 365 subscriptions); advanced call features include team ring, call forwarding, simultaneous ring, voice mail, call park, call delegation, response groups, and remote call control </li>\r\n<li>Calendar delegation</li>\r\n<li>Gallery video view</li>\r\n<li>OneNote sharing</li>\r\n<li>Recording</li>\r\n<li>Skill search (not available with Office 365)</li>\r\n<li>Virtual Desktop Infrastructure (VDI) (not available with Office 365)</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4569.1506",
+    "detailsSection_file_name": [
+        "lyncentry.exe"
+    ],
+    "detailsSection_file_size": [
+        "336.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<ul>\r\n<li><b>Browser</b>: Windows Internet Explorer 10 Internet browser, Windows Internet Explorer 9, Windows Internet Explorer 8, Windows Internet Explorer 7, Windows Internet Explorer 6, or Mozilla Firefox web browser</li>\r\n<br/><br/>\r\n<li><b>Memory</b>: 2 gigabytes (GB) of RAM</li>\r\n</ul>\r\n<br/>\r\nFor additional system requirements, see <A HREF=\"http://technet.microsoft.com/en-us/library/gg412781(v=ocs.15).aspx\">Lync 2013 Preview System Requirements</A>, at TechNet.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<ol>\r\n<li>Click the download button and save the LyncEval.msi program file to your hard disk. </li>\r\n<li>Double-click the LyncEval.msi program file on your hard disk to begin installation. </li>\r\n<li>Follow the instructions on the screen to complete the installation. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "install Skype for Business",
+            "url": "https://support.office.com/en-US/article/Install-Skype-for-Business-Lync-8a0d4da8-9d58-44f9-9759-5c8f340cb3fb"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35450",
+    "downloadPreload": true
+}

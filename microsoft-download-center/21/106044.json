@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Security Review PowerShell Script",
+    "downloadDescription": "Security Review Script",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SecReview-Script.zip",
+            "url": "https://download.microsoft.com/download/9/1/1/911b9651-137e-4d67-8e96-5283b8498350/SecReview-Script.zip",
+            "size": "37335417",
+            "version": "1.0",
+            "datePublished": "5/15/2024 10:17:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Script is used to identity the work items that needs to be created.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SecReview-Script.zip"
+    ],
+    "detailsSection_file_size": [
+        "35.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "1. Requires PowerShell",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Steps:\r\n1. Download the zip file to your local computer.\r\n2. Unzip the downloaded file.\r\n3. Launch PowerShell and navigate to the directory where the files were extracted. Run the command \".\\Fetch-ES365FunSecurityConfig.ps1\".\r\nThe script will prompt you to authenticate once or twice. Provide the necessary authentication and wait for the script to complete. An output file will be generated, which is needed to be uploaded here.\r\n\r\nFor additional information on the script, please follow this link: https://aka.ms/Wiki_ES365ConfFetch",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106044",
+    "downloadPreload": true
+}

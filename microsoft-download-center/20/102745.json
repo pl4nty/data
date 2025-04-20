@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Speculative Execution Side-Channel Vulnerabilities Configuration Baseline ",
+    "downloadDescription": "This Configuration Manager configuration baseline is used to confirm whether a system has enabled the mitigation needed to protect against the speculative-execution side-channel vulnerabilities described in Microsoft Security Advisories ADV180002, ADV180012, ADV180018, ADV190013. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Speculative Execution Side-Channel Vulnerabilities_2019.08.29.cab",
+            "url": "https://download.microsoft.com/download/0/f/c/0fc9fa41-2b5f-4c9e-9251-effd35208385/Speculative Execution Side-Channel Vulnerabilities_2019.08.29.cab",
+            "size": "107996",
+            "version": "2019.08.29",
+            "datePublished": "7/15/2024 5:02:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "License.rtf",
+            "url": "https://download.microsoft.com/download/0/f/c/0fc9fa41-2b5f-4c9e-9251-effd35208385/License.rtf",
+            "size": "47951",
+            "version": "2019.08.29",
+            "datePublished": "7/15/2024 5:02:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Speculative Execution Baseline Usage Guide.pdf",
+            "url": "https://download.microsoft.com/download/0/f/c/0fc9fa41-2b5f-4c9e-9251-effd35208385/Speculative Execution Baseline Usage Guide.pdf",
+            "size": "153910",
+            "version": "2019.08.29",
+            "datePublished": "7/15/2024 5:02:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Configuration Manager configuration baseline is used to confirm whether a system has enabled the protections needed to protect against the speculative-execution side-channel vulnerabilities as described in <a href=\"https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180002\">Microsoft Security Advisory ADV180002</a>, <a href=\"https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180012\">Microsoft Security Advisory ADV180012</a>, <a href=\"https://portal.msrc.microsoft.com/security-guidance/advisory/ADV180018\">Microsoft Security Advisory ADV180018</a> and <a href=\"https://portal.msrc.microsoft.com/security-guidance/advisory/ADV190013\">Microsoft Security Advisory ADV190013</a>. It is based on the functionality in the PowerShell module <a href=\"https://aka.ms/SpeculationControlPS\">Get_SpeculationControlSettings</a>. It requires at least PowerShell 3.0.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2019.08.29",
+    "detailsSection_file_name": [
+        "Speculative Execution Side-Channel Vulnerabilities_2019.08.29.cab",
+        "License.rtf",
+        "Speculative Execution Baseline Usage Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "105.5 KB",
+        "46.8 KB",
+        "150.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The compliance baseline requires:\r\n<ul>\r\n<li>A <a href=\"https://docs.microsoft.com/mem/configmgr/core/servers/manage/current-branch-versions-supported\">supported verion of Configuration Manager</a>.</li>\r\n<li>At least PowerShell 3.0.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To import this configuration baseline, download the .cab file and follow the instructions here: <a href=\"https://docs.microsoft.com/mem/configmgr/compliance/deploy-use/import-configuration-data\">https://docs.microsoft.com/mem/configmgr/compliance/deploy-use/import-configuration-data</a>.</li>\r\n<li>To deploy the configuration baseline, follow the instructions here: <a href=\"https://docs.microsoft.com/mem/configmgr/compliance/deploy-use/deploy-configuration-baselines\">https://docs.microsoft.com/mem/configmgr/compliance/deploy-use/deploy-configuration-baselines</a>. Note: the embedded PowerShell scripts are signed. To deploy signed PowerShell scripts the code signing cert needs to be a trusted publisher. The first four CIs and the last CI are signed with two different certificates. Both certificates need to be trusted.</li>\r\n<li>To view the compliance results, follow the instructions here: <a href=\"https://docs.microsoft.com/mem/configmgr/compliance/deploy-use/monitor-compliance-settings\">https://docs.microsoft.com/mem/configmgr/compliance/deploy-use/monitor-compliance-settings</a>.</li>\r\n</ol>\r\n\r\nSee the included user guide for further information.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102745",
+    "downloadPreload": true
+}

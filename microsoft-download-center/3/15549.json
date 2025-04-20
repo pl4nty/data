@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Business Scorecard Manager \u2013 Microsoft SQL Server 2005 Profiler Template Samples",
+    "downloadDescription": "Sample templates utilizing Microsoft SQL Profiler",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server Profiler.bsw",
+            "url": "https://download.microsoft.com/download/a/9/9/a999c7f1-434b-463b-abab-86daface4848/SQL Server Profiler.bsw",
+            "size": "112094",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Readme.doc",
+            "url": "https://download.microsoft.com/download/a/9/9/a999c7f1-434b-463b-abab-86daface4848/Readme.doc",
+            "size": "97280",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These samples will get you up and running with Microsoft Office Business Scorecard Manager 2005 using SQL Server 2005 Profiler as a data source.  These samples do not connect directly to the SQL Profiler database as they use fixed values.  You can however connect the KPIs to SQL Profiler by creating a datamart to save your SQL Profiler results and then use SQL Queries to pull those values into Business Scorecard Manager.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server Profiler.bsw",
+        "Readme.doc"
+    ],
+    "detailsSection_file_size": [
+        "109.5 KB",
+        "95.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Business Scorecard Manager 2005",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Follow instructions in the Readme.doc",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15549",
+    "downloadPreload": true
+}

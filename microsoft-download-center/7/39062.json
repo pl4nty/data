@@ -1,0 +1,264 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server 2012 DHCP",
+    "downloadDescription": "System Center Management Pack for Windows Server 2012 DHCP",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.TRK.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.TRK.msi",
+            "size": "667648",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.SVE.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.SVE.msi",
+            "size": "667648",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.RUS.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.RUS.msi",
+            "size": "716800",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.PTG.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.PTG.msi",
+            "size": "630784",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.PTB.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.PTB.msi",
+            "size": "671744",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.PLK.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.PLK.msi",
+            "size": "671744",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.NLD.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.NLD.msi",
+            "size": "630784",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.KOR.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.KOR.msi",
+            "size": "843776",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.JPN.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.JPN.msi",
+            "size": "663552",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.ITA.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.ITA.msi",
+            "size": "679936",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.HUN.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.HUN.msi",
+            "size": "671744",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.FRA.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.FRA.msi",
+            "size": "659456",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.ESN.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.ESN.msi",
+            "size": "638976",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.DEU.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.DEU.msi",
+            "size": "651264",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.CSY.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.CSY.msi",
+            "size": "679936",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.CHT.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.CHT.msi",
+            "size": "663552",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DHCP.CHS.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/SC Management Pack for DHCP.CHS.msi",
+            "size": "696320",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for DHCP.msi",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/Microsoft System Center Management Pack for DHCP.msi",
+            "size": "1892352",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide to DHCP 2012 R2.docx",
+            "url": "https://download.microsoft.com/download/3/6/0/36064e6d-ebbe-46c0-84ea-51a870ca13db/Management Pack Guide to DHCP 2012 R2.docx",
+            "size": "1150264",
+            "version": "6.0.7309.0",
+            "datePublished": "7/15/2024 4:25:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "System Center Management Pack for Windows Server 2012 DHCP",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.7309.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for DHCP.TRK.msi",
+        "SC Management Pack for DHCP.SVE.msi",
+        "SC Management Pack for DHCP.RUS.msi",
+        "SC Management Pack for DHCP.PTG.msi",
+        "SC Management Pack for DHCP.PTB.msi",
+        "SC Management Pack for DHCP.PLK.msi",
+        "SC Management Pack for DHCP.NLD.msi",
+        "SC Management Pack for DHCP.KOR.msi",
+        "SC Management Pack for DHCP.JPN.msi",
+        "SC Management Pack for DHCP.ITA.msi",
+        "SC Management Pack for DHCP.HUN.msi",
+        "SC Management Pack for DHCP.FRA.msi",
+        "SC Management Pack for DHCP.ESN.msi",
+        "SC Management Pack for DHCP.DEU.msi",
+        "SC Management Pack for DHCP.CSY.msi",
+        "SC Management Pack for DHCP.CHT.msi",
+        "SC Management Pack for DHCP.CHS.msi",
+        "Microsoft System Center Management Pack for DHCP.msi",
+        "Management Pack Guide to DHCP 2012 R2.docx"
+    ],
+    "detailsSection_file_size": [
+        "652.0 KB",
+        "652.0 KB",
+        "700.0 KB",
+        "616.0 KB",
+        "656.0 KB",
+        "656.0 KB",
+        "616.0 KB",
+        "824.0 KB",
+        "648.0 KB",
+        "664.0 KB",
+        "656.0 KB",
+        "644.0 KB",
+        "624.0 KB",
+        "636.0 KB",
+        "664.0 KB",
+        "648.0 KB",
+        "680.0 KB",
+        "1.8 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows Server DHCP Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager:\r\n\u2022 System Center Operations Manager 2012\r\n\u2022 System Center Operations Manager 2012 SP1\r\n\u2022 System Center Operations Manager 2012 R2\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39062",
+    "downloadPreload": true
+}

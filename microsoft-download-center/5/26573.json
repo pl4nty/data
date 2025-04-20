@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Service Pack 1 (SP1) for Microsoft SharePoint Foundation 2010 and Microsoft SharePoint Server 2010 (white paper)",
+    "downloadDescription": "Describes the fixes and improvements to existing functionality that are included in SharePoint Server 2010 SP1 and SharePoint Foundation 2010 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.pdf",
+            "url": "https://download.microsoft.com/download/f/2/3/f23f030a-011b-4e83-95cb-1ef338a6af58/Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.pdf",
+            "size": "310861",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.docx",
+            "url": "https://download.microsoft.com/download/f/2/3/f23f030a-011b-4e83-95cb-1ef338a6af58/Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.docx",
+            "size": "34304",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.xps",
+            "url": "https://download.microsoft.com/download/f/2/3/f23f030a-011b-4e83-95cb-1ef338a6af58/Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.xps",
+            "size": "261150",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "This white paper describes the fixes and improvements to existing functionality that are included in Microsoft SharePoint Server 2010 Service Pack 1 (SP1) and Microsoft SharePoint Foundation 2010 Service Pack 1 (SP1).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.pdf",
+        "Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.docx",
+        "Service-Pack-1-for-SharePoint-Foundation-2010-and-SharePoint-Server-2010.xps"
+    ],
+    "detailsSection_file_size": [
+        "303.6 KB",
+        "33.5 KB",
+        "255.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button in the upper-right corner of this page to start the download.</li><li> Click <b>Save</b> or <b>Save this program to disk</b>. </li><li>Find the file on your hard disk and double-click it to open it.</li></ol> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26573",
+    "downloadPreload": true
+}

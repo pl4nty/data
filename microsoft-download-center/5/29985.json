@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix for Visual Studio 2010 - KB2591016 ",
+    "downloadDescription": "This hotfix resolves some issues that occur when you use Microsoft Visual Studio 2010 Service Pack 1 (SP1) to create or change ASP.NET MVC 3 Web projects or ASP.NET MVC 4 Web projects.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs10sp1-kb2591016-x86.exe",
+            "url": "https://download.microsoft.com/download/a/3/f/a3fe781c-c007-4de6-b4d7-40e8f134af43/VS10SP1-KB2591016-x86.exe",
+            "size": "2531792",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This hotfix resolves some issues that occur when you use Microsoft Visual Studio 2010 Service Pack 1 (SP1) to create or change ASP.NET MVC 3 Web projects or ASP.NET MVC 4 Web projects.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2591016",
+        "name": "KB2591016"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "vs10sp1-kb2591016-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To apply this update, you must have Visual Studio 2010 SP1 installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 x64 editions",
+        "Windows XP Service Pack 3",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<br />\r\n Download the file from the link, then run the downloaded file to install the package.<br /><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29985",
+    "downloadPreload": true
+}

@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange 2010 SP2 Multi-Tenant Scale Guidance",
+    "downloadDescription": "This document provides scalability and deployment guidance for multi-tenant Microsoft Exchange Server 2010 Service Pack 2 solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange 2010 SP2 Multi-Tenant Scale Guidance .pdf",
+            "url": "https://download.microsoft.com/download/6/3/d/63db4b71-38d0-441a-8cb1-d514e6830b75/Exchange 2010 SP2 Multi-Tenant Scale Guidance .pdf",
+            "size": "742426",
+            "version": "Dec2011",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document contains high-level guidance for properly scaling and deploying a multi-tenant Microsoft Exchange Server 2010 Service Pack 2 solution. It includes details of testing performed in Microsoft labs to validate the scalability of the product and suggests methods that can be used during the design and deployment process to mitigate potential risks associated with such solutions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Dec2011",
+    "detailsSection_file_name": [
+        "Exchange 2010 SP2 Multi-Tenant Scale Guidance .pdf"
+    ],
+    "detailsSection_file_size": [
+        "725.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is available in Portable Document Format (PDF) format. To view a PDF file, you must have a PDF reader installed on your computer such as the Adobe Reader, available from <a href=\"http://www.adobe.com\">Adobe Systems</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Team Blog",
+            "url": "http://go.microsoft.com/fwlink/?linkid=178595"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28565",
+    "downloadPreload": true
+}

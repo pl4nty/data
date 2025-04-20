@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Windows IT Pro Insider - Sample Edition",
+    "downloadDescription": "View a sample edition of the Windows IT Pro Insider, the newsletter for IT professionals seeking the latest news, resources, tools, and community tips on tricks around the deployment and management of the Windows client operating system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows IT Pro Insider - March 2016 Edition.mht",
+            "url": "https://download.microsoft.com/download/a/e/1/ae12915a-12bd-4236-934c-fbbd625f739b/Windows IT Pro Insider - March 2016 Edition.mht",
+            "size": "576644",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:50:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows IT Pro Insider helps you find the right resources, at the right technical level, at the right time in your Windows desktop adoption and management process. Whether you are looking for guidance on deploying Windows 10, uprading from a previous version, addressing application compatibility, or locking down your desktops and devices, subscribe to get an insider's view of the latest (and upcoming) news, resources, events, training, best practices, and much more. To subscribe, visit <a href=\"http://technet.microsoft.com/windows/ee837411.aspx?ocid=wc-mscom-dlc\">http://technet.microsoft.com/windows/insider</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows IT Pro Insider - March 2016 Edition.mht"
+    ],
+    "detailsSection_file_size": [
+        "563.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A modern web browser like Internet Explorer 11 that supports the MHTML format directly, or a browser that supports the MTHML format through third-party extensions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Click the Download button next to the file of your choice and open it directly or save it to your local machine for future reference",
+    "relatedResourcesSection": [
+        {
+            "title": "windows for IT Pros Blog",
+            "url": "http://blogs.technet.com/b/windowsitpro/"
+        },
+        {
+            "title": "windows TechCenter",
+            "url": "http://technet.microsoft.com/windows/default.aspx?ITPID=dwnload"
+        },
+        {
+            "title": "windows for IT Pros on Twitter",
+            "url": "https://twitter.com/MSWindowsITPro"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20011",
+    "downloadPreload": true
+}

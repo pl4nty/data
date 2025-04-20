@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Tim Sneath and Ian Ellison-Taylor on Windows Past, Present and Future",
+    "downloadDescription": "Carl and Richard talk to Windows veterans Tim Sneath and Ian Ellison-Taylor about the olden days of Windows, how it has evolved, and how it may look in the future from a developer perspective.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071115SneathTaylor.zip",
+            "url": "https://download.microsoft.com/download/4/1/2/412e9527-0d43-4eb1-970f-3a331460c580/20071115SneathTaylor.zip",
+            "size": "45652587",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tim Sneath is the group manager for the Silverlight and WPF technical evangelism team, based out of Microsoft\u2019s corporate headquarters. His mission is to see developers create stunning applications built on the Microsoft platform, and to persuade his mother that computers aren\u2019t out to get her. Amongst other strange obsessions, Tim collects vintage releases of Windows, and has a near-complete set of shrink-wrapped copies that date back to the late 80s, as well as a \u201cmuseum\u201d of Virtual PC images from Windows 1.0 to the present. Tim spent the first thirty years of his life in the UK, and his occasional attempts to speak English with an American accent for ease of comprehension cause much hilarity amongst his colleagues. His popular blog covers client platform technologies, and can be found at http://blogs.msdn.com/tims. <br />\n<br />\nIan Ellison-Taylor is the General Manager for Microsoft\u2019s \u201cPresentation Platforms and Tools Group\u201d including WPF, core components for Silverlight and related developer tools for Visual Studio. Ian has worked at Microsoft for 17 years and prior to joining the WPF team in 2001, had been involved in a number of \u201cuser experience\u201d related initiatives on a number of different teams including Windows 3.1, Windows 95, IE, Java and Windows XP.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071115SneathTaylor.zip"
+    ],
+    "detailsSection_file_size": [
+        "43.5 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22589",
+    "downloadPreload": true
+}

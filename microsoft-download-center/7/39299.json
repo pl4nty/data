@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae Additional Software License Terms and Information",
+    "downloadDescription": "Microsoft SQL Server Additional Software License Terms and Information site provides the legal terms and conditions for using the Additional Software included alongside Microsoft SQL Server software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS 2015 Shells AddOns April 2015 FINAL.rtf",
+            "url": "https://download.microsoft.com/download/d/5/f/d5f494ec-5a10-42b1-adaa-7a2b0509b97f/VS 2015 Shells AddOns April 2015 FINAL.rtf",
+            "size": "138660",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:45:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dot_Net Framework_RTM_version agnostic_ Final_31AUG2013_English.rtf",
+            "url": "https://download.microsoft.com/download/d/5/f/d5f494ec-5a10-42b1-adaa-7a2b0509b97f/Dot_Net Framework_RTM_version agnostic_ Final_31AUG2013_English.rtf",
+            "size": "128314",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:45:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server Additional Software License terms and Information provides the legal terms and conditions for the Additional Software included alongside Microsoft SQL Server software. <br/>\r\n<br/>\r\nMicrosoft SQL Server includes other Microsoft programs which are listed below. These programs are licensed under the terms and conditions associated with them.  You may only use these programs in conjunction with the software licensed here.  If you do not accept the license terms associated with a program, you may not use that program.\n<br />\r\n<br/>\n<b>Note:</b> Below you will find the following End User License Agreements and terms applicable for this release:\n<ul>\r\n    <li> Other Microsoft Program Licenses - SQL Server software also contains other Microsoft Programs, each of which are licensed under the terms and conditions of their respective program\u2019s license.</li>\r\n<ul>\r\n<li>Microsoft Visual Studio Add-ons, Visual Studio Shells and C++ Redistrubutable</li>\r\n<li>Microsoft .Net Framework</li>\r\n</ul>\n</ul>\r\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "VS 2015 Shells AddOns April 2015 FINAL.rtf",
+        "Dot_Net Framework_RTM_version agnostic_ Final_31AUG2013_English.rtf"
+    ],
+    "detailsSection_file_size": [
+        "135.4 KB",
+        "125.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Note:</b> The End User License Agreements can be viewed using Microsoft Word or a standard text editior<br /><br />>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<br />\n  Download the appropriate file by clicking the \"Download\" button located in the \"File in this Download\" section of this page. Then open the downloaded file to view.<br /><br />\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39299",
+    "downloadPreload": true
+}

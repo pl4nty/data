@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 and 2009 SP1 White Paper: Country/region-Specific Update for the European Union (EU)",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 6, and that is specific to users in certain EU countries/regions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for EU countries.xps",
+            "url": "https://download.microsoft.com/download/f/4/b/f4bc2231-3fcc-4be6-bb99-6f17365999e8/Country-specific update for EU countries.xps",
+            "size": "367442",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Country-specific update for EU countries.pdf",
+            "url": "https://download.microsoft.com/download/f/4/b/f4bc2231-3fcc-4be6-bb99-6f17365999e8/Country-specific update for EU countries.pdf",
+            "size": "282340",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for the EU in hotfix rollup 6 for Microsoft Dynamics AX 2009 and 2009 SP1. These countries/regions include Austria, the Czech Republic, Germany, Denmark, Eastern Europe, Spain, Finland, France, the United Kingdom, Hungary, Iceland, Italy, Latvia, Lithuania, the Netherlands, Poland, Norway, and Switzerland.<br /><br />\r\nIn accordance with EU legislation, EU businesses must report their sales to other businesses within the EU. Prior to VAT 2010, the EU sales list covered only items, but the new regulations require that service items also be reported. To comply with this requirement, the process of transferring items to the EU sales list has been modified to add service items to the sales list and address the distribution of discounts to items and services appropriately.<br /><br />\r\nThe EU sales list now contains a Value Services field that displays the service item amount of an invoice, in addition to the Value Items field that displays the item amount of the invoice. You can use the EU sales list form to transfer transactions based on invoices or tax codes into the EU sales list and distribute cash discounts, total discounts, and reversals between items and services. You can also choose to include either item transactions or service item transactions, or both types of transactions.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base articles <a href=\"https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb$en-us$2405514\">2405514</a> and <a href=\"https://mbs2.microsoft.com/Knowledgebase/KBDisplay.aspx?scid=kb$en-us$2405516\">2405516</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Country-specific update for EU countries.xps",
+        "Country-specific update for EU countries.pdf"
+    ],
+    "detailsSection_file_size": [
+        "358.8 KB",
+        "275.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11918",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: U.S. Payroll",
+    "downloadDescription": "This document explains how to set up codes, records, employee classes, and tax information. It also describes how to enter transactions and print reports.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PayrollUSA.pdf",
+            "url": "https://download.microsoft.com/download/5/7/2/57218041-87c8-48e7-830d-07394ca1df7c/PayrollUSA.pdf",
+            "size": "3412085",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:31:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use U.S. Payroll to set up, enter, and maintain employee payroll records and transactions. Employee cards are the foundation of the U.S. Payroll system and they are used to keep the U.S. Payroll information up to date. You can view current and historical payroll information and pay activity for one employee or a group of employees. <br />\r\n\r\nYou also can use U.S. Payroll to complete the following tasks:\r\n<br />\n\r\n<UL><LI>Set up employee classes to create default entries that can make data entry quicker for new employee records because the payroll information is grouped according to common factors, such as pay codes and positions</LI>\n<LI>Create batches that you use just one time, or create recurring batches for transactions that you enter on a regular basis, such as weekly payroll</LI>\r\n<LI>Use the reconciling process to check for discrepancies in employee financial information and for differences between detail records and summary records</LI>\r\n<LI>Prepare U.S. Payroll reports to analyze payroll activity and identify errors in transaction entry</LI>\r\n<LI>Use routines to create customized checklists for processing month-end, quarter-end, or year-end tasks, such as preparing government-required W-2 and 1099-R statements</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "PayrollUSA.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer. When prompted for a location for the file, save the file to the Documentation folder in your Microsoft Dynamics GP 2013 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2013\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing file, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34662",
+    "downloadPreload": true
+}

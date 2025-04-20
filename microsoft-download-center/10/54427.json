@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Contoso in the Microsoft Cloud",
+    "downloadDescription": "See how a representative global organization has adopted all of Microsoft's cloud offerings, including Office 365, Azure, Dynamics 365, and Intune.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_contoso.pdf",
+            "url": "https://download.microsoft.com/download/d/9/7/d9742fc5-6cd2-4f99-af49-a096648eaf58/MSFT_cloud_architecture_contoso.pdf",
+            "size": "1848242",
+            "version": "Sept2016",
+            "datePublished": "7/15/2024 4:36:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_contoso.vsd",
+            "url": "https://download.microsoft.com/download/d/9/7/d9742fc5-6cd2-4f99-af49-a096648eaf58/MSFT_cloud_architecture_contoso.vsd",
+            "size": "4912128",
+            "version": "Sept2016",
+            "datePublished": "7/15/2024 4:36:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "To understand how to transform your IT infrastructure to a cloud-inclusive one, it is helpful to see an example implementation. This poster describes the Contoso Corporation, a fictional but representative global organization, and how they are transforming from an purely on-premises IT infrastructure to embracing cloud computing by adopting all of Microsoft\u2019s cloud offerings. You can see how key design decisions regarding networking, identity, and security were made that take advantage of the integration across the Microsoft Cloud.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Sept2016",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_contoso.pdf",
+        "MSFT_cloud_architecture_contoso.vsd"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This poster is available in Visio (VSD or VSDX) and PDF versions in 11x17 (tabloid) format for easy printing. \r\n\r\nYou will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. \r\n\r\nYou will need the Adobe Acrobat reader for the PDF version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "https://technet.microsoft.com/library/dn919927.aspx"
+        },
+        {
+            "title": "microsoft's Enterprise Cloud Roadmap",
+            "url": "http://aka.ms/cloudarchitecture"
+        },
+        {
+            "title": "article version of this poster",
+            "url": "https://technet.microsoft.com/library/mt775341.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54427",
+    "downloadPreload": true
+}

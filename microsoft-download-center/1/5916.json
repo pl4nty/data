@@ -1,0 +1,310 @@
+{
+    "error": "",
+    "downloadTitle": "Management Reporter 2012 for Microsoft Dynamics ERP: Installation, Migration, and Configuration Guides",
+    "downloadDescription": "Download installation, migration, and configuration information for Management Reporter 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENGB.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENGB.chm",
+            "size": "1179605",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynGPDataProvInstGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/DynGPDataProvInstGuide.pdf",
+            "size": "561763",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENSG.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENSG.chm",
+            "size": "1179405",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MRSystemRequirements.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/MRSystemRequirements.pdf",
+            "size": "141724",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter.chm",
+            "size": "1002783",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynNAVDataProvInstGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/DynNAVDataProvInstGuide.pdf",
+            "size": "312155",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynAXDataProvInstGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/DynAXDataProvInstGuide.pdf",
+            "size": "648807",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MRforDynERPMigrfromFRxGuide_ENUS.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/MRforDynERPMigrfromFRxGuide_ENUS.pdf",
+            "size": "459032",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynSLDataMartAdapterInstGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/DynSLDataMartAdapterInstGuide.pdf",
+            "size": "1326049",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MR2012ReadMe.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/MR2012ReadMe.pdf",
+            "size": "467914",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENAU.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENAU.chm",
+            "size": "1179305",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENMY.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENMY.chm",
+            "size": "1179653",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENCA.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENCA.chm",
+            "size": "1179577",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENZA.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENZA.chm",
+            "size": "1179285",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MRforDynERPInstGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/MRforDynERPInstGuide.pdf",
+            "size": "545911",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENIE.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENIE.chm",
+            "size": "1179411",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENNZ.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENNZ.chm",
+            "size": "1179357",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagementReporter_ENIN.chm",
+            "url": "https://download.microsoft.com/download/7/8/a/78a3710a-9d72-4908-b302-cd54b5130096/ManagementReporter_ENIN.chm",
+            "size": "1179589",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Management Reporter 2012 is designed to help users create financial reports that can be tailored to meet the needs of any company. The report wizard makes it easy for users to design, store, and generate reports from reusable building blocks containing row, column, and tree definitions. This approach eliminates the need to re-create common scenarios each reporting period.<br /><br />\r\nYou can use this page to download the following documentation components.<br /><br />\r\n\r\n<b>System requirements</b><br /> \r\nThis document includes the minimum and recommended system requirements for installing Management Reporter 2012 components.<br /><br />\r\n\r\n\r\n<b>Management Reporter 2012 Readme</b><br />\r\nThis document provides last-minute notes and instructions about installing or migrating to the newest version of Management Reporter.<br /><br />\r\n\r\n\r\n<b>Installing or Updating to Management Reporter 2012</b><br />\r\nThis guide provides instructions for installing Management Reporter 2012. There are several options for installation, depending upon your configuration:<br />\r\n<UL><LI>Application service and process service creating a new database</LI>\r\n<LI>Application service and process service on an existing database</LI>\r\n<LI>Process service only and connecting to an existing database</LI>\r\n<LI>Application service only and creating a new database</LI></UL><br />\r\n\r\n<b>Microsoft FRx to Management Reporter Migration Guide</b><br /> \r\nIf you are currently using Microsoft FRx 6.7, you can migrate data into Management Reporter 2012. This guide provides information about how to prepare data for migration, how to use the migration wizard, and recommendations for post-migration procedures.<br /><br />\r\n\r\n<b>Microsoft Dynamics GP Data Provider for Management Reporter 2012</b><br />\r\nThe Microsoft Dynamics GP data provider acts as a bridge between the data source and Management Reporter. Management Reporter is used to display and manipulate financial information without impacting the database where the ERP data resides. This guide provides instructions for installing and configuring the Microsoft Dynamics GP data provider. <br /><br />\r\n\r\n<b>Microsoft Dynamics AX Data Provider for Management Reporter 2012</b><br />\r\nThe Microsoft Dynamics AX data provider acts as a bridge between the data source and Management Reporter. Management Reporter is used to display and manipulate financial information without impacting the database where the ERP data resides. This guide provides instructions for installing and configuring the Microsoft Dynamics AX data provider. <br /><br />\r\n\r\n<b>Microsoft Dynamics NAV Data Provider for Management Reporter 2012</b><br />\r\nThe Microsoft Dynamics NAV data provider acts as a bridge between the data source and Management Reporter. Management Reporter is used to display and manipulate financial information without impacting the database where the ERP data resides. This guide provides instructions for installing and configuring the Microsoft Dynamics NAV data provider. <br /><br />\r\n\r\n<b>Microsoft Dynamics SL Data Provider for Management Reporter 2012</b><br />\r\nThe Microsoft Dynamics SL data provider acts as a bridge between the data source and Management Reporter. Management Reporter is used to display and manipulate financial information without impacting the database where the ERP data resides. This guide provides instructions for installing and configuring the Microsoft Dynamics SL data provider. <br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "ManagementReporter_ENGB.chm",
+        "DynGPDataProvInstGuide.pdf",
+        "ManagementReporter_ENSG.chm",
+        "MRSystemRequirements.pdf",
+        "ManagementReporter.chm",
+        "DynNAVDataProvInstGuide.pdf",
+        "DynAXDataProvInstGuide.pdf",
+        "MRforDynERPMigrfromFRxGuide_ENUS.pdf",
+        "DynSLDataMartAdapterInstGuide.pdf",
+        "MR2012ReadMe.pdf",
+        "ManagementReporter_ENAU.chm",
+        "ManagementReporter_ENMY.chm",
+        "ManagementReporter_ENCA.chm",
+        "ManagementReporter_ENZA.chm",
+        "MRforDynERPInstGuide.pdf",
+        "ManagementReporter_ENIE.chm",
+        "ManagementReporter_ENNZ.chm",
+        "ManagementReporter_ENIN.chm"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "548.6 KB",
+        "1.1 MB",
+        "138.4 KB",
+        "979.3 KB",
+        "304.8 KB",
+        "633.6 KB",
+        "448.3 KB",
+        "1.3 MB",
+        "456.9 KB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "533.1 KB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b>.</LI>\r\n<LI>Select the files to download and then click <b>Next</b>.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5916",
+    "downloadPreload": true
+}

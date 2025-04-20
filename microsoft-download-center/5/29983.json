@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2008 SP1 Compatibility GDR for Visual Studio 2012 Team Foundation Server and Team Foundation Service Preview",
+    "downloadDescription": "Provides compatibility between all VS 2008 products that connect to Visual Studio 2012 Team Foundation Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS90SP1-KB2673642-x86.exe",
+            "url": "https://download.microsoft.com/download/1/a/a/1aafd768-0ae5-4f17-9f50-1c2afcbb4c68/VS90SP1-KB2673642-x86.exe",
+            "size": "13096368",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This patch will provide compatiblity for all for the Visual Studio 2008 products that connect to Visual Studio 2012 Team Foundation Server ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2673642",
+        "name": "KB2673642"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VS90SP1-KB2673642-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>Windows XP (x86) with Service Pack 3 or later (all \r\n editions)</li>\r\n <li>Windows Server 2003 (x86) with Service Pack 2 or later (all \r\n editions)</li>\r\n <li>Windows Server 2003 R2 (x86) or later (all editions)</li>\r\n <li>Windows Vista (x86 and x64) with Service Pack 2 or later (all editions except Starter Edition)</li>\r\n <li>Windows Server 2008 (x86 and x64) with Service Pack 2 or later</li>\r\n <li>Windows 7 (x86 and x64)</li>\r\n <li>Windows Server 2008 R2 (x64)</li>\r\n</ul>\r\nSupported Architectures:\r\n<ul>\r\n <li>32-Bit (x86)</li>\r\n <li>64-Bit (x64)</li>\r\n</ul>\r\nHardware Requirements:\r\n<ul>\r\n <li>Computer that has a 2.2GHz or faster processor</li>\r\n <li>1 GB RAM for x86</li>\r\n <li>8 GB of available hard disk space</li>\r\n</ul>\r\nPrerequisites:\r\n<ul>\r\n <li>Microsoft Visual Studio 2008 SP1</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Release Preview",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\r\n  <li>On this page, click Download to start the download.</li>\r\n  <li>To save the download on your computer so that you can install it later, click Save.</li>\r\n  <li>To cancel the installation, click Cancel.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29983",
+    "downloadPreload": true
+}

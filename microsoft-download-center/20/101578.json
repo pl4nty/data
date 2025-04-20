@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_2007",
+    "downloadDescription": "MARS_2007",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/a/b/4/ab4a1f35-b539-4375-94cd-0d3bb3a5d33b/MARSAgentInstaller.exe",
+            "size": "41383368",
+            "version": "WIN2K12-R2",
+            "datePublished": "7/15/2024 4:24:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Build version 9187. Contains fixes for - private endpoints, brownfield scenario for ALR for WS 2019, and a memory leak.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101578",
+    "downloadPreload": true
+}

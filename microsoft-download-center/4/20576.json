@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Guide for IT Pros for Microsoft Office Web Apps ",
+    "downloadDescription": "How to use Microsoft Office Web Apps on Microsoft SharePoint 2010 Products in an organization.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeWebAppsAll.xps",
+            "url": "https://download.microsoft.com/download/2/c/e/2ce5f30f-1da5-4f31-9b4c-ad8cd71c7a16/OfficeWebAppsAll.xps",
+            "size": "3302797",
+            "version": "2",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeWebAppsAll.pdf",
+            "url": "https://download.microsoft.com/download/2/c/e/2ce5f30f-1da5-4f31-9b4c-ad8cd71c7a16/OfficeWebAppsAll.pdf",
+            "size": "2516954",
+            "version": "2",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "OfficeWebAppsAll.doc",
+            "url": "https://download.microsoft.com/download/2/c/e/2ce5f30f-1da5-4f31-9b4c-ad8cd71c7a16/OfficeWebAppsAll.doc",
+            "size": "2046976",
+            "version": "2",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book includes information to help IT professionals use Microsoft Office Web Apps on Microsoft SharePoint 2010 Products in an organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "OfficeWebAppsAll.xps",
+        "OfficeWebAppsAll.pdf",
+        "OfficeWebAppsAll.doc"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "2.4 MB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use this document, you must have a program capable of opening one of the provided file formats. \r\n<ul>\r\n<li>To open the .doc file, you can use Microsoft Word 2010. Microsoft Office Word 2007, or the free <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Word viewer</a>. </li>\r\n<li>To open the .pdf file, you can use a free viewer such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Acrobat</a>.</li>\r\n<li>To open the .xps file, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or the <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> button next to the file you want to download to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your computer and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20576",
+    "downloadPreload": true
+}

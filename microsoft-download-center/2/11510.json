@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Bob Martin (Uncle Bob) on Being a Professional!",
+    "downloadDescription": "Bob Martin talks about how to achieve Clean Code, which also happens to be the name of his famous book on software development.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20081023BMartin.zip",
+            "url": "https://download.microsoft.com/download/5/2/6/52669397-ec4d-4f06-b630-713df85182d9/20081023BMartin.zip",
+            "size": "45186106",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Robert C. Martin (Uncle Bob) has been a software professional since 1970 and is founder and president of Object Mentor Inc., in Gurnee, Illinois. Object Mentor, Inc., is an international firm of highly experienced software developers and managers who specialize in helping companies get their projects done. Object Mentor offers process improvement consulting, object-oriented software design consulting, training, and skill development services to major corporations worldwide.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20081023BMartin.zip"
+    ],
+    "detailsSection_file_size": [
+        "43.1 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11510",
+    "downloadPreload": true
+}

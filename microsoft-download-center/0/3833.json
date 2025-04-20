@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Sync Framework Documentation",
+    "downloadDescription": "Download Microsoft Sync Framework documentation. Documentation is available for Sync Framework core components, Sync Services for ADO.NET, Metadata Storage Service, Sync Services for File Systems, and Sync Services for FeedSync.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sync_help_files.zip",
+            "url": "https://download.microsoft.com/download/c/c/c/ccc25ee3-7c91-4106-a135-f479a55fdd5f/sync_help_files.zip",
+            "size": "6254514",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft Sync Framework is a comprehensive synchronization platform that enables collaboration and offline access for applications, services, and devices. The documentation available from this Web site covers the following technologies: <br />\n<UL><br />\n<LI>Sync Framework core components, which are used to create synchronization providers for any type of data store. </LI><br />\n<LI>Sync Services for ADO.NET, which is used to synchronize databases for offline and collaborative scenarios. </LI><br />\n<LI>Metadata Storage Service, which is used to store synchronization metadata in a lightweight data store. </LI><br />\n<LI>Sync Services for File Systems, which is used to synchronize files and folders in a file system. </LI><br />\n<LI>Sync Services for FeedSync, which is used to synchronize RSS and Atom feeds with data in a local store. </LI><br />\n</UL><br />\nFor additional information, see the following resources:<br />\n<UL><br />\n<LI>For known issues and other information, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=123330\">Sync Framework Blog</a>.</LI> <br />\n<LI>For samples, see the SDK that is available from <a href=\"http://go.microsoft.com/fwlink/?LinkId=123327\">Sync Framework on the Download Center</a> and additional samples that are available at the <a href=\"http://go.microsoft.com/fwlink/?LinkId=123328\">Sync Framework Code Gallery</a>.</LI> <br />\n<LI>For information about licensing, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=123325\">Microsoft Sync Framework Licensing</a>.</LI> <br />\n<LI>For white papers and other information, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=108054\">Sync Framework Developer Center</a>.</LI> <br />\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "sync_help_files.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Note:</b> On computers with <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, downloaded Compiled Help Module (CHM) files cannot be opened by default. For information about how to resolve this issue, see the RESOLUTION section of  <a href=\"http://support.microsoft.com/kb/902225/\">Microsoft Knowledge Base article 902225</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Download <b>sync_help_files.exe</b> to a directory on your computer. </LI><br />\n<LI>Run the executable.</LI> <br /> \n<LI>When you are prompted, enter an installation directory.</LI><br />\n<LI>To view documentation, double-click the extracted files:<br />\n<UL>\n<LI> sync_core_chm.chm contains documentation for Sync Framework core components and Sync Services for FeedSync. </LI>\n<LI>sync_ado_chm.chm contains documentation for Sync Services for ADO.NET.</LI>\n<LI>sync_meta_chm.chm contains documentation for Metadata Storage Service.</LI>\n<LI>sync_files_chm.chm contains documentation for Sync Services for File Systems.</LI>\n</UL>\n</LI><br />\n\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Sync Framework Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=108054"
+        },
+        {
+            "title": "sync Framework Code Gallery",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=123328"
+        },
+        {
+            "title": "sync Framework Blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=123330"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3833",
+    "downloadPreload": true
+}

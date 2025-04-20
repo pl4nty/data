@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft PVKConverter for SQL Server",
+    "downloadDescription": "Microsoft PVKConverter for SQL Server is a conversion tool for security certificates.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PVKConverter.msi",
+            "url": "https://download.microsoft.com/download/8/7/6/8768ab00-bc28-4799-8053-f8117df32571/amd64/PVKConverter.msi",
+            "size": "354816",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PVKConverter.msi",
+            "url": "https://download.microsoft.com/download/8/7/6/8768ab00-bc28-4799-8053-f8117df32571/x86/PVKConverter.msi",
+            "size": "352768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft PVKConverter for SQL Server is a conversion tool for security certificates. It is used to generate PVK/DER encoded security certificates from existing PFX encoded security certificates. The generated certificates can be manually imported into SQL Server by using the CREATE CERTIFICATE \u2026 Transact-SQL statement to create security certificates in a SQL Server database.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PVKConverter.msi",
+        "PVKConverter.msi"
+    ],
+    "detailsSection_file_size": [
+        "346.5 KB",
+        "344.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30679\">Visual Studio C++ Redistributable Package</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "\r\n<b>To Install: </b>\r\n<br>\r\n</br>\r\n<ol>\r\n<li>Download the 32bit or 64bit version of the PVKConverter installer that matches your computer\u2019s OS architecture. </li>\r\n<li>Click Open to start the installation immediately or click Save to save the installation .msi file to disk and install it later.</li>\r\n<li>Accept the license term of this tool.</li>\r\n<li>Click Next to complete the installation.</li>\r\n</ol>",
+    "additionalInformationSection": "PVKConverter is executed through the command prompt.\r\n<br>\r\n<b>Syntax </b>\r\n</br>\r\nThe syntax for using the tool is as follows: <br>\r\n\r\n</br> PVKConverter[.exe] \u2013i inputFile \u2013o outputFile \u2013d decryptionPasswd  \u2013e encryptionPasswd -f -h/-? \r\n<br>\r\n</br>-i: Specifies the name of the input PFX file. This parameter is required.\r\n\r\n<br>-o: Specifies the name of the generated output files. This parameter is optional. If not specified, the output file names are derived  from the name of the input file.\r\n\r\n</br>-d: Specifies the decryption password for the private keys contained in the PFX file. This parameter is optional.\r\n\r\n<br>-e: Specifies the encryption password for the generated PVK files.  This parameter is optional.\r\n\r\n</br>-f: Configures the tool to overwrite existing PVK/DER files with the same name.\r\n\r\n<br>-h or -?: Displays the syntax summary of PVKConverter options.\r\n</br>\r\n<br>\r\n</br>\r\n\r\n\r\n<b>Comments</b><br></br>\r\n<b>Input File Location</b>\r\n<li>Providing a valid input file location is mandatory. PVKConverter will return an error message otherwise. Both fully qualified and relative paths are supported.  </li>\r\n<br> </br>\r\n\r\n<b>Passwords</b>\r\n<li>Providing an input decryption password is optional. If the input PFX file requires a decryption password, and one has not been provided, PVKConverter will return an error message. </li>\r\n<li>Providing an output encryption password is optional. If provided, all generated PVK files will be encrypted using the same password. </li>\r\n<li>If an input decryption password is provided and an output encryption password is not provided, all generated PVK files will be encrypted using the input decryption password. </li>\r\n\r\n<br></br>\r\n<b>Output File Generation</b>\r\n<li>The number of generated PVK/DER files depends on the number of public/private key pairs contained in the PFX file. One PVK/DER file pair will be generated for each public/private key pair.  </li>\r\n<li>Providing the name for the generated output file is optional. If provided, it must point to a valid location. PVKConverter will return an error message otherwise.</li>\r\n<li>If an output file name is provided, PVKConverter will append .pvk and .cer to the names of the generated PVK/DER files. If not provided, PVKConverter will derive output files names based of the input PFX file name. \r\n</li>\r\n<li>If the name of an output file generated by PVKConverter matches the name of an existing file, the existing file will be overwritten only if the -f option has been specified.</li>\r\n\r\n<br></br>\r\n<b>Examples</b>\r\n<br></br>PVKConverter -i mySecurityCert -o myGeneratedSecurityCert -d Pa$$word1! -e Pa$$word2!\r\n<li>If the input certificate mySecurityCert.pfx contains a single pair of public/private keys, PVKConverter will generate two files myGeneratedSecurityCert_1.pvk and myGeneratedSecurityCert_1.cer containing the private key and other information respectively. myGeneratedSecurityCert_1.pvk will be encrypted using the password Pa$$word2!. </li>\r\n<li>If the input file mySecurityCert.pfx contains 2 pairs of public/private keys, PVKConverter will generate 4 files  myGeneratedSecurityCert_1.pvk, myGeneratedSecurityCert_1.cer, myGeneratedSecurityCert_2.pvk and myGeneratedSecurityCert_2.cer. myGeneratedSecurityCert_1.pvk  and myGeneratedSecurityCert_2.pvk  will be encrypted using the password Pa$$word2!. </li>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "pvK2Pfx",
+            "url": "http://msdn.microsoft.com/en-us/library/windows/hardware/ff550672(v=vs.85).aspx"
+        },
+        {
+            "title": "sql Server Certificates and Asymmetric Keys",
+            "url": "http://technet.microsoft.com/en-us/library/bb895327.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40812",
+    "downloadPreload": true
+}

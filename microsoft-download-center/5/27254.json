@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Server 2010 Video Interoperability",
+    "downloadDescription": "Microsoft enhances the video interoperability story in Microsoft Lync by introducing a set of qualification programs and room-based systems that are optimized for Lync. This white paper explores the new qualification programs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Server_2010_Video_Interoperability.doc",
+            "url": "https://download.microsoft.com/download/a/f/e/afec8cd5-417f-4a36-b863-b64fbd33cf28/Lync_Server_2010_Video_Interoperability.doc",
+            "size": "751616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The new Lync Video Interoperability Program introduces three new qualification programs\u2014VTC, MCU, and gateway. Each program targets different use cases and addresses key interoperability areas in different ways. After you determine which use cases you would like to implement, refer to the corresponding qualification programs to determine how they implement interoperability with Lync and which ones are right for your organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_Server_2010_Video_Interoperability.doc"
+    ],
+    "detailsSection_file_size": [
+        "734.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27254",
+    "downloadPreload": true
+}

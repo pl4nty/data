@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Protocols Errata Archive",
+    "downloadDescription": "Windows Protocols Errata Archive",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[MS-WINERRATA]_03_02_2016.pdf",
+            "url": "https://download.microsoft.com/download/4/e/4/4e448e74-4fc1-43ba-a832-d973d4b3a44c/[MS-WINERRATA]_03_02_2016.pdf",
+            "size": "2707988",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:13:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Archive (in PDF format) of Windows Protocols Errata as of March 2, 2016. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "[MS-WINERRATA]_03_02_2016.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "None",
+    "additionalInformationSection": "Archive (in PDF format) of Windows Protocols Errata as of March 2, 2016.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51236",
+    "downloadPreload": true
+}

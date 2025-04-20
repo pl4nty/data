@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2013 Administrative Template files (ADMX/ADML) and Office Customization Tool",
+    "downloadDescription": "This download includes Group Policy Administrative Template (ADMX/ADML) and Office Customization Tool (OPAX/OPAL) files for Microsoft Office 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "admintemplates-x64-4997-1000_en-us.exe",
+            "url": "https://download.microsoft.com/download/5/8/c/58ca3974-1640-4cfc-a991-3904b3b8939c/admintemplates-x64-4997-1000_en-us.exe",
+            "size": "12031512",
+            "version": "15.0.4869.1000",
+            "datePublished": "7/15/2024 4:50:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "admintemplates-x86-4997-1000_en-us.exe",
+            "url": "https://download.microsoft.com/download/5/8/c/58ca3974-1640-4cfc-a991-3904b3b8939c/admintemplates-x86-4997-1000_en-us.exe",
+            "size": "11814112",
+            "version": "15.0.4869.1000",
+            "datePublished": "7/15/2024 4:50:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes Group Policy Administrative Template files and Office Customization Tool files for use with Office 2013 applications. It also includes an \\Admin folder with an Office Customization Tool, and ADMX and ADML versions of Office 2013 system Administrative Template files. For administrative template files, you may use the combination of ADMX and language-specific ADML files on computers running at least Windows Vista or Windows Server 2008. For the latest information about policy settings, please refer to the Microsoft Excel 2013 workbook, <i>Office2013GroupPolicyAndOCTSettings_Reference.xls</i>, which is available in the <b>Files to download</b> section of this download page. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4869.1000",
+    "detailsSection_file_name": [
+        "admintemplates-x64-4997-1000_en-us.exe",
+        "admintemplates-x86-4997-1000_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.5 MB",
+        "11.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>This download works with the following Office program:</b></li>\r\n<ul>\r\n<li>Microsoft Office 2013 applications</li>\r\n</ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>Important:</b> Note: MSPs created with the OCT should be created using the same installation source as they will be deployed with, or the OCT tool may fail. Existing patches can be used with the \u201cImport\u201d feature. If you plan on using the Office Customization Tool (OCT), we recommend that you read the <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=254874\">Office Customization Tool in Office 2013 documentation</a> first. Office 2013 provides two architecture-specific versions of the OCT, one for 32-bit Office 2013 and one for 64-bit Office 2013. The 64-bit version of the OCT supports 64-bit client editions of Office 2013, and provides the same user interface, capabilities, and configurable settings as the 32-bit version. The OCT files are located in the Admin folder under the x86 (32-bit) and x64 (64-bit) folders, respectively. Download the appropriate file depending on whether you have 32-bit or 64-bit Office installed. Copy the entire \\Admin folder into the folder that contains the installation image you are customizing. For example, if you installed the 32-bit edition of Office Professional Plus 2013 (volume edition), you would copy the entire 32-bit version of the Admin folder into the folder that contains the 32-bit Office Professional Plus 2013 source files.<br/><br/>\r\n\r\n<b>To install this download:</b>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\r\n<li>To use the 32-bit version of the files, double-click the <b>admintemplates_x86_4869-1000_en-us.exe</b> program file on your hard disk to start the Setup program.</li>\r\n<li>To use the 64-bit version of the files, double-click the <b>admintemplates_x64_4869-1000_en-us.exe</b> program file on your hard disk to start the Setup program.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n\r\n</ol>\r\n<br/>\r\n<b>Instructions for use:</b>\r\n<br/>\r\nAfter you install this download, use the Office 2013 applications as you typically would.\r\n<br/><br/>\r\nFor more information about this download, see the Related Resources at the bottom of this page. \r\nFor information about using ADMX and ADML files for Windows Vista and Windows Server 2008 and above, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=75124\">Managing Group Policy ADMX Files Step-by-Step Guide on the Microsoft TechNet Web site</a>. For more information about how to use group policy, see the <a href=\"http://technet.microsoft.com/en-us/library/gg490629.aspx\">FAQ: Group Policy on the Microsoft TechNet Web site.</a>\r\n<br/><br/>\r\n<b>To remove this download:</b><br/>\r\nTo remove the download file, delete the <b>admintemplates_x86_4869-1000_en-us.exe</b> or file <b>admintemplates_x64_4869-1000_en-us.exe</b> file.\r\n<br/><br/>\r\nTo remove the installed files, delete all associated .adm, .admx, and .adml Administrative Template files.\r\n<br/><br/>\r\nTo remove the updated OCT, replace the \\Admin folder in the installation image with the original \\Admin folder from your source image.",
+    "relatedResourcesSection": [
+        {
+            "title": "office 2013 Administrative Template files (ADM, ADMX, ADML) and Office Customization Tool",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=190598"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35554",
+    "downloadPreload": true
+}

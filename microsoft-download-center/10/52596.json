@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Data Set of English-Spanish Term Vectors from Wikipedia",
+    "downloadDescription": "This data set consists of the term vectors extracted from 60,730 Wikipedia English articles and their comparable Spanish articles, sampled in 2009. Last published: August 8, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EN-ES_Wiki.zip",
+            "url": "https://download.microsoft.com/download/8/1/f/81f30b94-97bd-43d1-a412-bfc8e7f45c17/EN-ES_Wiki.zip",
+            "size": "229046744",
+            "version": "1.0.0",
+            "datePublished": "12/15/2023 4:18:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This data set consists of the term vectors extracted from 60,730 Wikipedia English articles and their comparable Spanish articles, sampled in 2009. We used this data set to test various models for creating translingual document representations, work published in [Platt et al. EMNLP-2010] and [Yih et al. CoNLL-2011]. More detail of this data set can be found in the ReadMe file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "EN-ES_Wiki.zip"
+    ],
+    "detailsSection_file_size": [
+        "218.4 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52596",
+    "downloadPreload": true
+}

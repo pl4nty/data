@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Internet Naming Service Management Pack 2000, 2003 Management Pack for Operations Manager 2007",
+    "downloadDescription": "Collects WINS events in the Windows 2000, and Windows Server 2003 system event logs. Highlights events that may indicate service outages, or configuration problems.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows WINS 2003 System Center Operations Manager 2007 MP.msi",
+            "url": "https://download.microsoft.com/download/f/0/5/f05089fa-4377-4165-aa4e-c5d81c434727/Microsoft Windows WINS 2003 System Center Operations Manager 2007 MP.msi",
+            "size": "499712",
+            "version": "6.0.5000.00",
+            "datePublished": "7/15/2024 3:14:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The WINS Management Pack collects WINS events in the Windows 2000, and Windows Server 2003 system event logs. This management pack highlights events that may indicate service outages or configuration problems.\n<br />\n<br />\nRequires OpsMgr 2007 MOM 2005 Backward Compatibility MP Update) 6.0.5000.12 (or higher)<br />\n<br />\n<b>Release History:</b><br />\nInitial Release for OpsMgr 2007  8/31/2007  Version 6.0.5000.0<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.5000.00",
+    "detailsSection_file_name": [
+        "Microsoft Windows WINS 2003 System Center Operations Manager 2007 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "488.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required Software: <br />\nSystem Center Operations Manager 2007, <br />\nWindows Internet Naming Service (WINS) 2000, 2003<br />\nOpsMgr 2007 MOM 2005 Backward Compatibility MP Update 6.0.5000.12 (or higher)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 x64 editions"
+    ],
+    "installInstructionSection": "Please review the MP guide",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Operations Manager Home",
+            "url": "http://www.microsoft.com/systemcenter/opsmgr/default.mspx"
+        },
+        {
+            "title": "system Center Home",
+            "url": "http://www.microsoft.com/systemcenter/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6758",
+    "downloadPreload": true
+}

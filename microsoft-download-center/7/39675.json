@@ -1,0 +1,203 @@
+{
+    "error": "",
+    "downloadTitle": "Service Pack 2 for Microsoft 2010 Server Language Pack (KB2687462) ",
+    "downloadDescription": "Service Pack 2 (SP2) for Microsoft 2010 Server Language Pack  contains new updates which improve security, performance, and stability.  Additionally, the SP is a roll-up of all previously released updates.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "oslpksp2010-kb2687462-fullfile-x64-en-us.exe",
+            "url": "https://download.microsoft.com/download/4/8/d/48dc9d74-5d40-4a27-85ec-3f198e404159/oslpksp2010-kb2687462-fullfile-x64-en-us.exe",
+            "size": "424925040",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:59:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2687462\">Service Pack 2 for Microsoft 2010 Server Language Pack (KB2687462) </a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2687462",
+        "name": "KB2687462"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "oslpksp2010-kb2687462-fullfile-x64-en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "405.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\nFor information about supported service packs and Windows Installer versions, please see \r\n<a href=\"http://support.microsoft.com/kb/967543\">Microsoft Office Supported Service Packs and Windows Installer (KB967543).</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<br />\r\n\r\nTo start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li>\r\n</ul>\r\n<br />\r\n<br />\r\n\r\n<b>IT professional resources</b><br />\r\nIT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"http://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"http://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39675",
+    "downloadPreload": true
+}

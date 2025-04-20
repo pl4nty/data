@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Support for Large Meetings",
+    "downloadDescription": "Microsoft Lync Server 2010 can support large meetings with up to 1000 participants using audio/video (A/V) conferencing, including sharing PowerPoint presentations. This support requires a dedicated pool configured to support large meetings and managed in a way that ensures hosting of only a single large meeting at a time.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Lync_Server_2010_Large_Meeting_Support.doc",
+            "url": "https://download.microsoft.com/download/0/3/8/038d1579-16d7-4b5c-9028-7d9c920cbe2d/Microsoft_Lync_Server_2010_Large_Meeting_Support.doc",
+            "size": "2516992",
+            "version": "Jan2012",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to support large meetings using a dedicated Lync Server 2010 pool. It describes scalability considerations and the implementation requirements for a dedicated pool, including topology, hardware, software, and configuration requirements. It also provides a set of best practice recommendations for supporting large meetings, a summary of the test methods and results of server scalability testing conducted by the Lync Server engineering team, and the answers to frequently asked questions about support for large meetings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jan2012",
+    "detailsSection_file_name": [
+        "Microsoft_Lync_Server_2010_Large_Meeting_Support.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28775",
+    "downloadPreload": true
+}

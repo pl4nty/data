@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Project Server 2013 Performance Lab",
+    "downloadDescription": "This performance lab created by the Microsoft Project Server engineering team examines a \u201clarge\u201d synthetic dataset in response to several common workloads.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Project Server 2013 Performance Lab.docx",
+            "url": "https://download.microsoft.com/download/8/9/5/895a238d-3707-43d2-aa2a-b4f341345db1/Project Server 2013 Performance Lab.docx",
+            "size": "62064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This performance lab created by the Microsoft Project Server engineering team explores the behavior of a \u201clarge\u201d synthetic dataset in response to several common workloads. You can use this information to provide a rough baseline for Project Server 2013 performance in this defined lab environment.  It is important to note that your actual performance may differ due to numerous variables in your own environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Project Server 2013 Performance Lab.docx"
+    ],
+    "detailsSection_file_size": [
+        "60.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Mcrosoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36431",
+    "downloadPreload": true
+}

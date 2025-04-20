@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2010 Add-In: Icons Gallery",
+    "downloadDescription": "Download this macro-enabled Word document to see a gallery of built-in icons available for solution development.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2010IconsGallery.docx",
+            "url": "https://download.microsoft.com/download/5/c/f/5cf1c755-7cbb-4e4b-a0cc-bbcf327527d4/Office2010IconsGallery.docx",
+            "size": "127028",
+            "version": "0510",
+            "datePublished": "7/15/2024 3:16:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nWhen opened, this Word document adds two groups to the Office Backstage view with icon galleries of built-in icons available for reuse in your solutions.<br />\n<br />\nUse these icons in your Ribbon solutions by specifying the imageMso value for your controls. For example, &#60;button id=\"myButton\" label=\"My save\" imageMso=\"FileSave\" /&#62; creates a button with the Save icon.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0510",
+    "detailsSection_file_name": [
+        "Office2010IconsGallery.docx"
+    ],
+    "detailsSection_file_size": [
+        "124.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office applications:</b><br/>\n<ul>\n<li>Microsoft Office 2010 Editions</li>\n<li>Microsoft Word 2010</li>\n</ul></li>\n</ul>\n<b>Note</b>  This add-in is for use with Microsoft Office 2010. It will not work with earlier versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk.</li>\n<li>Double-click the <b>Office2010IconsGallery.docx</b>.</li> \n<li>Click Enable Editing.</li> \n<li>Click <b>File</b> to go to the Backstage view. <b>ImageMSO 0</b> and <b>ImangeMSO 1</b> appear after the Exit button.</li> \n<li>Click to view the icons.</li></ol>\n<br/>\n<b>Instructions for use:</b><br/>\nOnce you have installed this download, use Word as you normally would. The Office Icon Gallery appears on the Office Backstage view when this document is open. \n<br/>\n<br/>\n<b>Remove of this download:</b>\n<br/>\nThere is no removal feature for this download.",
+    "additionalInformationSection": "PLEASE NOTE:  Microsoft Corporation (or based on where you live, one of its affiliates) licenses this supplement to you.  You may use a copy of this supplement with each validly licensed copy of Microsoft Office 2010 Desktop Application software (the \u201csoftware\u201d).  You may not use the supplement if you do not have a license for the software.  The license terms for the software apply to your use of this supplement.  To read the license terms, go to the \u201cHelp\u201d menu in the software.  Microsoft provides support services for the supplement as described at www.support.microsoft.com/common/international.aspx.\n<br/>\n<br/>\nThis package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "excel Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/aa905411.aspx"
+        },
+        {
+            "title": "msdn Office Developer Center",
+            "url": "http://msdn.microsoft.com/office/default.aspx"
+        },
+        {
+            "title": "office Fluent UI Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/aa905530.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21103",
+    "downloadPreload": true
+}

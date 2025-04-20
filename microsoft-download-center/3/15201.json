@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Account Lockout Status (LockoutStatus.exe)",
+    "downloadDescription": "Account Lockout Status (LockoutStatus.exe) is a combination command-line and graphical tool that displays lockout information about a particular user account.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "lockoutstatus.msi",
+            "url": "https://download.microsoft.com/download/c/0/4/c0472410-b4c2-4aef-89d2-e7c708dfc225/lockoutstatus.msi",
+            "size": "307712",
+            "version": "1.0.0.60",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Account Lockout Status (LockoutStatus.exe) is a combination command-line and graphical tool that displays lockout information about a particular user account. LockoutStatus collects information from every contactable domain controller in the target user account's domain.\r\nThis update addresses the following issues:<ul><li>Password set dialog does not limit textual input to password and confirm password edit boxes.</li><li>Password set operation fails to set proper password. Password length is miscalculated resulting in a password of 1 character.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.60",
+    "detailsSection_file_name": [
+        "lockoutstatus.msi"
+    ],
+    "detailsSection_file_size": [
+        "300.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and use LockoutStatus.exe on any of the following platforms:<UL><LI>Windows 2000 with Service Pack 3 or later</LI><LI>Windows XP</LI><LI>Windows Server 2003</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "download Windows Server 2003 Resource Kit Tools",
+            "url": "http://go.microsoft.com/?linkid=2847945"
+        },
+        {
+            "title": "newsgroups for Windows Server 2003",
+            "url": "http://go.microsoft.com/?linkid=2847946"
+        },
+        {
+            "title": "windows Server 2003 TechCenter",
+            "url": "http://go.microsoft.com/?linkid=2847947"
+        },
+        {
+            "title": "windows Server 2003 Resource Kit",
+            "url": "http://go.microsoft.com/?linkid=2847948"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15201",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2012 SP3 CU (KB4057121)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2012 SP3 CU. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB4057121-x64.exe",
+            "url": "https://download.microsoft.com/download/d/7/7/d776b106-e737-41ac-8290-0a3163d47bf9/SQLServer2012-KB4057121-x64.exe",
+            "size": "736157360",
+            "version": "11.0.6615.2",
+            "datePublished": "7/15/2024 4:52:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB4057121-x86.exe",
+            "url": "https://download.microsoft.com/download/d/7/7/d776b106-e737-41ac-8290-0a3163d47bf9/SQLServer2012-KB4057121-x86.exe",
+            "size": "423402160",
+            "version": "11.0.6615.2",
+            "datePublished": "7/15/2024 4:52:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A broad security vulnerability has been disclosed that impacts many modern processors. \nWhile not specific to SQL Server, Microsoft recommends all SQL Server customers review and take action for their environments.  \nMore information about the vulnerability can be found here: \n<a name=\"KB4057121\"></a><a href=\"http://support.microsoft.com/help/4057121\">SQL Server 2012 SP3 CU</a> <br />\n\n\nSupported SQL Server versions impacted are<br />\nSQL Server 2008 (SP4), SQL Server 2008R2 (SP3), SQL Server 2012 (Service Packs 3 and 4), SQL Server 2014 (Service Pack 2), SQL Server 2016 (RTM and Service Pack 1), and SQL Server 2017 (RTM), when running on x86 and x64 processor systems. <br />\nAt the current time, the following patched SQL Server security updates are available for download:,br/&gt;\n<a name=\"KB4058562\"></a><a href=\"http://support.microsoft.com/help/4058562\">SQL Server 2017 CU3*</a> <br />\n\n<a name=\"KB4057122\"></a><a href=\"http://support.microsoft.com/help/4057122\">SQL Server 2017 GDR\t</a> <br />\n\n<a name=\"KB4058561\"></a><a href=\"http://support.microsoft.com/help/4058561\">SQL Server 2016 SP1 CU7*</a> <br />\n\n<a name=\"KB4057118\"></a><a href=\"http://support.microsoft.com/help/4057118\">SQL Server 2016 SP1 GDR</a> <br />\n<a name=\"KB4058559\"></a><a href=\"http://support.microsoft.com/help/4058559\">SQL Server 2016 RTM CU</a> <br />\n<a name=\"KB4058560\"></a><a href=\"http://support.microsoft.com/help/4058560\">SQL Server 2016 RTM GDR </a> <br />\n<a name=\"KB4057114\"></a><a href=\"http://support.microsoft.com/help/4057114\">SQL Server 2008 SP4</a> <br />\n<a name=\"KB4057113\"></a><a href=\"http://support.microsoft.com/help/4057113\">SQL Server 2008 R2 SP3</a> <br />\n\n<a name=\"KB4057116\"></a><a href=\"http://support.microsoft.com/help/4057116\">SQL Server 2012 SP4 GDR</a> <br />\n<a name=\"KB4057121\"></a><a href=\"http://support.microsoft.com/help/4057121\">SQL Server 2012 SP3 CU</a> <br />\n<a name=\"KB4057115\"></a><a href=\"http://support.microsoft.com/help/4057115\">SQL Server 2012 SP3 GDR</a> <br />\n<a name=\"KB4057117\"></a><a href=\"http://support.microsoft.com/help/4057117\">SQL Server 2014 SP2 CU*</a> <br />\n<a name=\"KB4057120\"></a><a href=\"http://support.microsoft.com/help/4057120\">SQL Server 2014 SP2 GDR </a> <br />\n\n* These security updates are also the regularly scheduled Cumulative Update.          \n\nDownload this update to resolve this issue in SQL Server 2012 SP3 CU instances.  If cumulative update has not been applied, please download SQL Server 2012 SP3 GDR.\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. After you install this update, you may have to restart your computer.\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.6615.2",
+    "detailsSection_file_name": [
+        "SQLServer2012-KB4057121-x64.exe",
+        "SQLServer2012-KB4057121-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "702.1 MB",
+        "403.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2012 SP3 CU instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or save it on your local disk to install at a later time.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4057121",
+            "url": "https://support.microsoft.com/en-us/help/4057121"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56492",
+    "downloadPreload": true
+}

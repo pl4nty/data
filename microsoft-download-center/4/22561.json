@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Kameo Promo Movies",
+    "downloadDescription": "DLC Movie and Cinema Trailer for Kameo: Elements of Power",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Kameo_Stronger_High.wmv",
+            "url": "https://download.microsoft.com/download/c/8/5/c854bbf3-8c86-4be3-a581-66069d117292/Kameo_Stronger_High.wmv",
+            "size": "66316248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Kameo_Stronger_Med.wmv",
+            "url": "https://download.microsoft.com/download/c/8/5/c854bbf3-8c86-4be3-a581-66069d117292/Kameo_Stronger_Med.wmv",
+            "size": "11861866",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Kameo_DLC_Med.wmv",
+            "url": "https://download.microsoft.com/download/c/8/5/c854bbf3-8c86-4be3-a581-66069d117292/Kameo_DLC_Med.wmv",
+            "size": "5989583",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Kameo_DLC_High.wmv",
+            "url": "https://download.microsoft.com/download/c/8/5/c854bbf3-8c86-4be3-a581-66069d117292/Kameo_DLC_High.wmv",
+            "size": "31029607",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cinema trailer and downloadable content promo movie for Xbox 360 title Kameo: Elements of Power, created by Rare Ltd. and published by Microsoft Game Studios in 2005.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Kameo_Stronger_High.wmv",
+        "Kameo_Stronger_Med.wmv",
+        "Kameo_DLC_Med.wmv",
+        "Kameo_DLC_High.wmv"
+    ],
+    "detailsSection_file_size": [
+        "63.2 MB",
+        "11.3 MB",
+        "5.7 MB",
+        "29.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Choose Cinema Trailer ('Stronger') or DLC Movie in either High-Def or Standard file quality, then use Windows Media Player to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22561",
+    "downloadPreload": true
+}

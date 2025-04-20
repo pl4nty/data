@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MS Entra ID Authentication for AWS CLI on Windows AMD64 - Interactive CLI (Public Preview)",
+    "downloadDescription": "MS Entra ID Authentication for AWS CLI on Windows AMD64 - Interactive CLI (Public Preview)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSEntraAuthAWSCLI.exe",
+            "url": "https://download.microsoft.com/download/e/7/6/e76562fc-e4db-433f-9f7b-16dc77fe8ee3/MSEntraAuthAWSCLI.exe",
+            "size": "141468592",
+            "version": "1.2",
+            "datePublished": "5/10/2024 4:48:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This version will provide a solution from Microsoft which will allow you to use Entra ID authentication for your AWS CLI on Windows AMD64 computers. \r\nNote that we only support Windows 10 and Windows 11. You can run this tool on Command Prompt or on PowerShell as needed. It will open the Chrome browser to authenticate the user against MyApps Page and then after selecting the right AWS application it will allow the user to create temporary credentials for the account and role they choose. This is a public preview version. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "MSEntraAuthAWSCLI.exe"
+    ],
+    "detailsSection_file_size": [
+        "134.9 MB"
+    ],
+    "detailsSection_file_date": "5/10/2024",
+    "systemRequirementsSection": "Windows 10; Windows 11\r\nCommand Prompt\r\nPowerShell",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download this version of MSEntraAWS CLI tool for your Windows AMD64 computers. \r\nYou need to have AWS CLI installed on your machine from here https://aws.amazon.com/cli/\r\nYou can run this tool on Command Prompt or Windows PowerShell as needed. This will open the in built chrome browser and will prompt for authentication using Entra ID and then after selecting the AWS application from MyApps Page the tool will show the account and role for an user is entitled to use and then it will generate the temporary credentials  for AWS CLI.",
+    "additionalInformationSection": "This version will provide a solution from Microsoft which will allow you to use Entra ID authentication for your AWS CLI on Windows AMD64 computers. \r\nNote that we only support Windows 10 and Windows 11. You can run this tool on Command Prompt or on PowerShell as needed. It will open the Chrome browser to authenticate the user against MyApps Page and then after selecting the right AWS application it will allow the user to create temporary credentials for the account and role they choose. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106033",
+    "downloadPreload": true
+}

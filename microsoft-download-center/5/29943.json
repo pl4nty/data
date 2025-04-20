@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "FIM2010 Connector for WebServices Technet Documentation",
+    "downloadDescription": "FIM2010 Connector for WebServices Technet Documentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Connector for SAP.docx",
+            "url": "https://download.microsoft.com/download/1/5/e/15e7fad3-f1fe-4836-bf9c-2a4383acb711/Connector for SAP.docx",
+            "size": "3457165",
+            "version": "5.0.458.0",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Connector for WebServices.docx",
+            "url": "https://download.microsoft.com/download/1/5/e/15e7fad3-f1fe-4836-bf9c-2a4383acb711/Connector for WebServices.docx",
+            "size": "3050030",
+            "version": "5.0.458.0",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connector for Oracle EBS.docx",
+            "url": "https://download.microsoft.com/download/1/5/e/15e7fad3-f1fe-4836-bf9c-2a4383acb711/Connector for Oracle EBS.docx",
+            "size": "1830041",
+            "version": "5.0.458.0",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connector for Oracle PeopeSoft.docx",
+            "url": "https://download.microsoft.com/download/1/5/e/15e7fad3-f1fe-4836-bf9c-2a4383acb711/Connector for Oracle PeopeSoft.docx",
+            "size": "5405790",
+            "version": "5.0.458.0",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the TechNet documentation for the FIM2010 Connector for WebServices. The Connector can be downloaded from <a href=\"http://go.microsoft.com/fwlink/?LinkID=235883\">Download Center</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.458.0",
+    "detailsSection_file_name": [
+        "Connector for SAP.docx",
+        "Connector for WebServices.docx",
+        "Connector for Oracle EBS.docx",
+        "Connector for Oracle PeopeSoft.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB",
+        "2.9 MB",
+        "1.7 MB",
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please refer to the download for the Connector for additonal details.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click on the download link to start the download. Save the Word document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29943",
+    "downloadPreload": true
+}

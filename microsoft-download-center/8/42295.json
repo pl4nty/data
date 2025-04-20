@@ -1,0 +1,494 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2014 Feature Pack",
+    "downloadDescription": "The Microsoft SQL Server 2014 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/RBS.msi",
+            "size": "3551232",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_ADOMD.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SQL_AS_ADOMD.msi",
+            "size": "5672960",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_AMO.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SQL_AS_AMO.msi",
+            "size": "4300800",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlUA.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SqlUA.msi",
+            "size": "13316096",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SQLSysClrTypes.msi",
+            "size": "3125248",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlCloudAdapter.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SqlCloudAdapter.msi",
+            "size": "1781760",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsight.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/StreamInsight.msi",
+            "size": "13385728",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlDom.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SqlDom.msi",
+            "size": "2412544",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerShellTools.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/PowerShellTools.msi",
+            "size": "1900544",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/AttunityOracleCdcService.msi",
+            "size": "2088960",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_OLEDB.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SQL_AS_OLEDB.msi",
+            "size": "26247168",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSBEAS.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SSBEAS.msi",
+            "size": "2285568",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSBEAS.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SSBEAS.msi",
+            "size": "2584576",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BalancedDataDistributor-x86.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/BalancedDataDistributor-x86.msi",
+            "size": "1445888",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerShellTools.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/PowerShellTools.msi",
+            "size": "2154496",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ODataSourceForSQLServer2014-x86.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/ODataSourceForSQLServer2014-x86.msi",
+            "size": "2105344",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlUA.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SqlUA.msi",
+            "size": "8974336",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsightClient.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/StreamInsightClient.msi",
+            "size": "11587584",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ODataSourceForSQLServer2014-amd64.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/ODataSourceForSQLServer2014-amd64.msi",
+            "size": "2281472",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/RBS.msi",
+            "size": "4485120",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SQLSysClrTypes.msi",
+            "size": "4288512",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SapBI.msi",
+            "size": "2035712",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_ADOMD.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SQL_AS_ADOMD.msi",
+            "size": "2854912",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/AttunityOracleCdcDesigner.msi",
+            "size": "2043904",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsight.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/StreamInsight.msi",
+            "size": "9977856",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlDom.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SqlDom.msi",
+            "size": "2605056",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_AMO.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SQL_AS_AMO.msi",
+            "size": "3063808",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_OLEDB.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SQL_AS_OLEDB.msi",
+            "size": "56762368",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/AttunityOracleCdcService.msi",
+            "size": "2359296",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlls.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/sqlls.msi",
+            "size": "16781312",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharedManagementObjects.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SharedManagementObjects.msi",
+            "size": "7753728",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlls.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/sqlls.msi",
+            "size": "34762752",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TSqlLanguageService.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/TSqlLanguageService.msi",
+            "size": "3006464",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TSqlLanguageService.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/TSqlLanguageService.msi",
+            "size": "2842624",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/AttunityOracleCdcDesigner.msi",
+            "size": "2297856",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBV5_x86.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/DB2OLEDBV5_x86.msi",
+            "size": "3080704",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BalancedDataDistributor-amd64.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/BalancedDataDistributor-amd64.msi",
+            "size": "1662976",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x64/SapBI.msi",
+            "size": "2301952",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsightClient.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/StreamInsightClient.msi",
+            "size": "8441856",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharedManagementObjects.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/x86/SharedManagementObjects.msi",
+            "size": "6631424",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBV5_x64.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/13089488-91fc-4e22-ad68-5be58bd5c014/ENU/DB2OLEDBV5_x64.msi",
+            "size": "4209664",
+            "version": "12.0.2000.8",
+            "datePublished": "7/15/2024 4:27:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2014 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server. It includes the latest versions of:<br />\n<ul>\n  <li>Tool and components for Microsoft\u00ae SQL Server 2014.</li>\n  <li>Add-on providers for Microsoft SQL Server 2014</li>\n  </ul><br />\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0.2000.8",
+    "detailsSection_file_name": [
+        "RBS.msi",
+        "SQL_AS_ADOMD.msi",
+        "SQL_AS_AMO.msi",
+        "SqlUA.msi",
+        "SQLSysClrTypes.msi",
+        "SqlCloudAdapter.msi",
+        "StreamInsight.msi",
+        "SqlDom.msi",
+        "PowerShellTools.msi",
+        "AttunityOracleCdcService.msi",
+        "SQL_AS_OLEDB.msi",
+        "SSBEAS.msi",
+        "SSBEAS.msi",
+        "BalancedDataDistributor-x86.msi",
+        "PowerShellTools.msi",
+        "ODataSourceForSQLServer2014-x86.msi",
+        "SqlUA.msi",
+        "StreamInsightClient.msi",
+        "ODataSourceForSQLServer2014-amd64.msi",
+        "RBS.msi",
+        "SQLSysClrTypes.msi",
+        "SapBI.msi",
+        "SQL_AS_ADOMD.msi",
+        "AttunityOracleCdcDesigner.msi",
+        "StreamInsight.msi",
+        "SqlDom.msi",
+        "SQL_AS_AMO.msi",
+        "SQL_AS_OLEDB.msi",
+        "AttunityOracleCdcService.msi",
+        "sqlls.msi",
+        "SharedManagementObjects.msi",
+        "sqlls.msi",
+        "TSqlLanguageService.msi",
+        "TSqlLanguageService.msi",
+        "AttunityOracleCdcDesigner.msi",
+        "DB2OLEDBV5_x86.msi",
+        "BalancedDataDistributor-amd64.msi",
+        "SapBI.msi",
+        "StreamInsightClient.msi",
+        "SharedManagementObjects.msi",
+        "DB2OLEDBV5_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB",
+        "5.4 MB",
+        "4.1 MB",
+        "12.7 MB",
+        "3.0 MB",
+        "1.7 MB",
+        "12.8 MB",
+        "2.3 MB",
+        "1.8 MB",
+        "2.0 MB",
+        "25.0 MB",
+        "2.2 MB",
+        "2.5 MB",
+        "1.4 MB",
+        "2.1 MB",
+        "2.0 MB",
+        "8.6 MB",
+        "11.1 MB",
+        "2.2 MB",
+        "4.3 MB",
+        "4.1 MB",
+        "1.9 MB",
+        "2.7 MB",
+        "1.9 MB",
+        "9.5 MB",
+        "2.5 MB",
+        "2.9 MB",
+        "54.1 MB",
+        "2.3 MB",
+        "16.0 MB",
+        "7.4 MB",
+        "33.2 MB",
+        "2.9 MB",
+        "2.7 MB",
+        "2.2 MB",
+        "2.9 MB",
+        "1.6 MB",
+        "2.2 MB",
+        "8.1 MB",
+        "6.3 MB",
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "      <br />\r\n      <b>Note:</b>\r\n      System requirements vary among the install packages included in the Feature Pack.\r\n      <br />\r\n      <b>Note:</b> \r\n      When an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<br/>\r\n<b><u>MICROSOFT SQL SERVER DATABASE SYSTEMS FEATURE PACK COMPONENTS</u></b><br/>\r\n<ul>\r\n<a name=\"Reading\"></a><br /><br />\r\n<b>***NEW***   <a href=\"http://go.microsoft.com/fwlink/?LinkID=391033\">Microsoft\u00ae SQL Server\u00ae Backup to Windows\u00ae Azure\u00ae Tool</a></b>\r\n<br/>\r\n<ul>\r\nMicrosoft SQL Server Backup to Windows Azure Tool enables backup to Windows Azure Blob Storage and encrypts and compresses SQL Server backups stored locally or in the cloud. <br/>\r\n</ul>\r\n<a name=\"Cloudadapter\"></a><br /><br />\r\n<b>***NEW***    Microsoft\u00ae SQL Server\u00ae Cloud Adapter </b>\r\n<ul>\r\nSQL Server Cloud Adapter is a service running on the same machine where SQL Server instances are running and helping discovering and configuring those.<br />\r\n <ul>\r\n      <b>Filename: x64 Package</b>(SqlCloudAdapter.msi)<br />\r\n</ul>\r\n</ul>\r\n<a name=\"Kerberos\"></a><br /><br />\r\n  <b>***NEW***   <a href=\"http://go.microsoft.com/fwlink/?LinkID=391032\"> Microsoft\u00ae Kerberos Configuration Manager for Microsoft SQL Server\u00ae </a></b>\r\n  <ul>\r\nKerberos authentication provides a highly secure method to authenticate client and server entities (security principals) on a network. <br/><br/>\r\n </ul>\r\n<a name=\"Semantic Full Text Search\"></a><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=390974\">Microsoft\u00ae SQL Server\u00ae 2014 Semantic Language Statistics</a></b>\r\n<br/>\r\n<ul>\r\nThe Semantic Language Statistics Database is a required component for the Statistical Semantic Search feature in Microsoft SQL Server 2014. You can download this database from this page, attach it to your SQL Server 2014 instance, and register it to use the new Semantic Search features. <br />\r\n</ul>\r\n<a name=\"dacframework\"></a><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=391074\">Microsoft\u00ae SQL Server\u00ae Data-Tier Application Framework</a></b>\r\n <ul>\r\nThe SQL Server Data-tier Application (DAC) framework is a component based on the .NET Framework that provides application lifecycle services for database development and management. Application lifecycle services include extract, build, deploy, upgrade, import, and export for data-tier applications in SQL Azure, SQL Server 2014, SQL Server 2012, SQL Server 2008 R2, SQL Server 2008,  and SQL Server 2005, through SQL Server Data Tools and SQL Server Management Studio. <br/>Note: Microsoft SQL Server 2014 Data-tier Application Framework requires Microsoft SQL Server System CLR Types, and Microsoft SQL Server Transact-SQL ScriptDom both of which are available on this page.<br/>\r\n<br />\r\n </ul>\r\n<a name=\"T-SQL Language Service\"></a><br /><br />\r\n <b>Microsoft\u00ae SQL Server\u00ae 2014 Transact-SQL Language Service </b>\r\n<ul>\r\nThe SQL Server Transact-SQL Language Service is a component based on the .NET Framework which provides parsing validation and IntelliSense services for Transact-SQL for SQL Server 2014, SQL Server 2012, SQL Server 2008 R2, SQL Server 2008, and SQL Server 2005.\r\n<br />\r\n <ul>\r\n<b>Filename: X86 and x64 Package</b>(tsqllanguageservice.msi)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n\r\n<a name=\"PowerShell\"></a><br /><br />\r\n  <b>Microsoft\u00ae Windows PowerShell Extensions for Microsoft SQL Server\u00ae 2014</b>\r\n  <ul>\r\n    The Microsoft Windows PowerShell Extensions for SQL Server 2014 includes a provider and a set of cmdlets that enable administrators and developers to build PowerShell scripts for managing instances of SQL Server. The SQL Server PowerShell Provider delivers a simple mechanism for navigating SQL Server instances that is similar to file system paths. PowerShell scripts can then use the SQL Server Management Objects to administer the instances. The SQL Server cmdlets support operations such as executing Transact-SQL scripts or evaluating SQL Server policies.<br /><br />\r\n<b>Note:</b> Windows PowerShell Extensions for SQL Server 2014 requires <b>Microsoft SQL Server 2014 Shared Management Objects</b>, also available on this page. This component also requires Windows PowerShell 2.0; download instructions are on the Windows Server 2003 <a href=\"http://go.microsoft.com/fwlink/?LinkId=109843\">Web site</a>.<br/>\r\n    <ul>\r\n      <b>Filename: X86 and x64 Package</b>(PowerShellTools.msi)<br />\r\n   </ul>\r\n  </ul>\r\n\r\n<a name=\"SMO\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2014 Shared Management Objects </b>\r\n<ul>\r\nSQL Server Management Objects (SMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer SQL Server objects and services. This object model will work with SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012 and SQL Server 2014.<br /><br/>\r\n<b>Note:</b> Microsoft SQL Server Management Objects requires -  Microsoft SQL Server System CLR Types, that is available on this page.<br />\r\n <ul>\r\n      <b>Filename: X86 and x64 Package</b>(SharedManagementObjects.msi)<br />\r\n </ul>\r\n</ul>\r\n<a name=\"MSSQLCMD\"></a><br /><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=391030\"> Microsoft\u00ae Command Line Utilities 11 for Microsoft SQL Server\u00ae</a></b>\r\n<ul>\r\nThe SQLCMD utility allows users to connect to, send Transact-SQL batches from, and output rowset information from SQL Server instances. The bcp utility bulk copies data between an instance of Microsoft SQL Server and a data file in a user-specified format. The bcp utility can be used to import large numbers of new rows into SQL Server tables or to export data out of tables into data files. \r\n<br/>\r\n</ul>\r\n<a name=\"ODBC\"></a><br /><br />\r\n  <b><a href=\"http://go.microsoft.com/fwlink/?LinkID=391031 \">Microsoft\u00ae ODBC Driver 11 for Microsoft SQL Server\u00ae - Windows</a></b>\r\n  <ul>\r\nThe Microsoft ODBC Driver for SQL Server provides native connectivity from Windows to Microsoft SQL Server and Windows Azure SQL Database.\r\n<br/>\r\n </ul>\r\n<a name=\"JDBC\"></a><br /><br />\r\n   <b><a href=\" http://go.microsoft.com/fwlink/?LinkID=239639\">Microsoft\u00ae JDBC Drivers for Microsoft SQL Server\u00ae</a></b>\r\n   <ul>\r\n\r\nIn our continued commitment to interoperability, Microsoft has released a new Java Database Connectivity (JDBC) driver. The Microsoft  JDBC Driver 4.0 for SQL Server is available to all SQL Server users at no additional charge, and provides access to SQL Server 2012 and other versions from any Java application, application server, or Java-enabled applet. This is a Type 4 JDBC driver that provides database connectivity through the standard JDBC Application Program Interfaces (APIs) available in Java Platform, Enterprise Editions 5 and 6. This release of the JDBC Driver is JDBC 4.0 compliant and runs on the Java Development Kit (JDK) version 5.0 or 6.0. It has been tested against major application servers including IBM WebSphere, and SAP NetWeaver. <br/>\r\n </ul>\r\n<a name=\"PHP Driver 3.0\"></a><br /><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=239640\">Microsoft\u00ae Drivers for PHP for Microsoft\u00ae SQL Server\u00ae</a></b>\r\n \r\n<ul>\r\nThe Microsoft Drivers for PHP for SQL Server are PHP 5 extensions that allows for the reading and writing of SQL Server data from within PHP scripts. The SQLSRV extension provides a procedural interface while the PDO_SQLSRV extension implements PDO for accessing data in all editions of SQL Server 2005 and later.<br />\r\n<br />\r\n</ul>\r\n<a name=\"T-SQL ScriptDom\"></a><br /><br />\r\n <b>Microsoft\u00ae SQL Server\u00ae 2014 Transact-SQL ScriptDom </b>\r\n  <ul>\r\nMicrosoft SQL Server Transact-SQL ScriptDom is a .NET Framework API that provides parsing and scripting services for Transact-SQL. This API supports SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012 and SQL Server 2014 versions.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b>(SQLDOM.MSI)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n<a name=\"T-SQL Compiler Service\"></a><br /><br />\r\n <b>Microsoft\u00ae SQL Server\u00ae 2014 Transact-SQL Compiler Service </b>\r\n  <ul>\r\nMicrosoft SQL Server Transact-SQL Compiler Service is a set of components that provide the compilation and validation services for Transact-SQL. This component can be used only via the Microsoft SQL Server Data-Tier Application Framework build API.<br />\r\n <ul>\r\n<b>Filename: X86 and x64 Package</b>(SQLLS.MSI)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n<a name=\"SQLSYSCLR\"></a><br /><br />\r\n<b> Microsoft\u00ae System CLR Types for Microsoft SQL Server\u00ae 2014</b>\r\n<ul>\r\nThe SQL Server System CLR Types package contains the components implementing the geometry, geography, and hierarchy id types in SQL Server 2014.  This component can be installed separately from the server to allow client applications to use these types outside of the server.<br /><br />\r\n<b>Note:</b> This component also requires <b><a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">Windows Installer 4.5</a></b><br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b>(SQLSysClrTypes.msi)<br />\r\n</ul>\r\n</ul>\r\n<a name=\"RBS\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2014 Remote Blob Store </b>\r\n<ul>\r\nThe SQL Server Remote Blob Store is a method for storing blobs of unstructured data in an external Content Addressable data store. The component consists of a client-side DLL that is linked into a user application, as well as a set of stored procedures to be installed on SQL Server.  Run the self-extracting download package to create an installation folder.  <br />\r\n  <ul>\r\n      <b>Filename: X86 and x64 Package</b>(RBS.msi)<br />\r\n           <br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=169323\"> SQL RBS codeplex samples page </a></b><br />\r\n<br />\r\n<br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=169324\"> SQL Server Remote Blob Store blogs </a></b><br />\r\n    </ul>\r\n</ul>\r\n<a name=\"SSBEA\"></a><br /><br />\r\n<b> Microsoft\u00ae SQL Server\u00ae Service Broker External Activator for Microsoft SQL Server 2014\r\n</b> \r\n<ul>\r\nThe Microsoft SQL Server Service Broker External Activator is an extension of the internal activation feature in SQL Server 2014 that lets you move the logic for receiving and processing Service Broker messages from the Database Engine service to an application executable that runs outside SQL Server. By doing this, cpu-intensive or long-duration tasks can be offloaded out of SQL Server to an application executable, possibly in another computer. The application executable can also run under a different Windows account from the Database Engine process. This gives administrators additional control over the resources that the application can access. The single setup program will install the service on x86, and x64 computers.<br/>\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b>(SSBEAS.msi)<br />\r\n</ul>\r\n</ul>\r\n<br/>\r\n</ul>\r\n<b><u>MICROSOFT SQL SERVER INTEGRATION SERVICES FEATURE PACK COMPONENTS</u></b>\r\n<br/>\r\n<ul>\r\n<a name=\"Odata\"></a><br /><br />\r\n<b>***NEW***   Microsoft\u00ae OData Source for Microsoft SQL Server\u00ae 2014 </b> \r\n<ul>\r\nThe Microsoft OData Source for SQL Server 2014 is a SQL Server Integration Services (SSIS) source component, which connects and consumes data from Open Data Protocol (OData). The SSIS component is designed to be used with SQL Server Integration Services. To install the component, run the platform-specific installer for x86 and x64 respectively.<br />\r\n<ul>\r\n<b>Filename (X86 Package)</b>(ODataSourceForSQLServer2014-x86.msi)<br />\r\n<b>Filename (X64 Package)</b>(ODataSourceForSQLServer2014-amd64.msi)<br />\r\n </ul>\r\n</ul>\r\n<a name=\"BDD\"></a><br /><br />\r\n<b>***NEW***   Microsoft\u00ae Balanced Data Distributor for Microsoft SQL Server\u00ae 2014</b> \r\n<ul>\r\nMicrosoft SSIS Balanced Data Distributor (BDD) is a SSIS transform. This transform takes a single input and distributes the incoming rows to one or more outputs uniformly via multithreading.<br />\r\n<ul>\r\n<b>Filename (X86 Package)</b>(BalancedDataDistributor-x86.msi)<br />\r\n<b>Filename (X64 Package)</b>(BalancedDataDistributor-amd64.msi)<br />\r\n </ul>\r\n</ul>\r\n<a name=\"Attunity Designer and Service\"></a><br /><br />\r\n<b>Microsoft\u00ae Change Data Capture Designer and Service for Oracle by Attunity for Microsoft SQL Server\u00ae 2014</b> \r\n<ul>\r\nMicrosoft Change Data Capture Designer and Service for Oracle by Attunity allow you to continually copy data from Oracle to SQL Server. This can be useful in both migration and data warehouse scenarios by allowing you to both; synchronize critical tables throughout the migration timeframe by copying changes made to the Oracle tables into the SQL Server 2014 tables as well as capture changes from your Oracle database and send them to SQL Server 2014 databases to keep data warehouses in sync. \r\n<br />\r\n<ul>\r\n<b>Filename (X86 and X64 Package)</b>(AttunityOraleCdcService.msi)<br />\r\n<b>Filename (X86 and X64 Package)</b>(AttunityOraleCdcDesigner.msi)<br />\r\n </ul>\r\n</ul>\r\n<a name=\"MDS Add-in\"></a><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=390972\">Microsoft\u00ae SQL Server\u00ae 2014 Master Data Service Add-in for Microsoft Excel\u00ae</a></b>\r\n<br/>\r\n<ul>\r\nThe Master Data Services Add-in for Excel gives multiple users the ability to update master data in a familiar tool without compromising the data\u2019s integrity in MDS. From within the Add-in, users can publish data to the MDS database with the click of a button. Administrators can use the Add-in to create new model objects and load data without ever launching any administrative tools, helping to speed deployment. With the Master Data Services Add-in for Excel, all master data remains centrally managed in MDS, while the ability to read or update the data is distributed to those who need it.<br/>\r\n<br/>\r\nThe Master Data Services (MDS) Add-in for Microsoft Excel is a data management tool that delivers a multitude of master data management capabilities with ease and efficiency.  Manage MDS data within an interface you already know and love Microsoft Excel.  Leverage existing Excel functionality to share your managed lists with others, knowing these lists can be secured and monitored with all of the features provided by Master Data Services. <br />\r\n</ul>\r\n<a name=\"StreamInsight\"></a><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae StreamInsight</b>\r\n<br/>\r\n<ul>\r\nMicrosoft\u00ae StreamInsight is Microsoft\u2019s Complex Event Processing technology to help businesses create event-driven applications and derive better insights by correlating event streams from multiple sources with near-zero latency. <br />\r\n<ul>\r\n <b>Filename: X86 and x64 Package</b>(StreamInsight.msi)<br />\r\n<b>Filename: X86 and x64 Package</b>(StreamInsightClient.msi)<br />\r\n\r\n </ul>\r\n</ul>\r\n<a name=\"SAP BW\"></a><br /><br />\r\n  <b>Microsoft\u00ae Connector for SAP BW for Microsoft SQL Server\u00ae 2014</b>\r\n  <ul>\r\n\r\nThe Microsoft Connector for SAP BW is a set of managed components for transferring data to or from an SAP NetWeaver BW version 7.0 system. The component is designed to be used with SQL Server 2014 Integration Services. To install the component, run the platform-specific installer for x86 or x64 respectively. For more information see the Readme and the installation topic in the Help file.\r\n<br />\r\n <ul>\r\n<b>Filename: X86 and x64 Package</b>(SAPBI.msi)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n<a name=\"SSMA\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae Migration Assistant</b>\r\n<ul>\r\nSQL Server Migration Assistant (SSMA) is a family of products to reduce the cost and risk of migration from Oracle, Sybase, MySQL and Microsoft Access databases to SQL server or SQL Azure. SSMA automates all aspects of migration including migration assessment analysis, schema and SQL statement conversion, data migration as well as migration testing.  <br />\r\n\r\n<ul>\r\n<b><a href=\" http://go.microsoft.com/fwlink/?LinkID=221293\">1. Microsoft SQL Server Migration Assistant for Access</a></b><br />\r\n<b><a href=\" http://go.microsoft.com/fwlink/?LinkID=221294\">2. Microsoft SQL Server Migration Assistant for MySQL</a></b><br />\r\n<b><a href=\" http://go.microsoft.com/fwlink/?LinkID=221295\">3. Microsoft SQL Server Migration Assistant for Oracle</a></b><br />\r\n<b><a href=\" http://go.microsoft.com/fwlink/?LinkID=221296\">4. Microsoft SQL Server Migration Assistant for Sybase</a></b><br />\r\n<br />\r\n</ul></ul>\r\n<a name=\"UA\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2014 Upgrade Advisor </b>\r\n<ul>\r\nMicrosoft Upgrade Advisor analyzes instances of SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012 in preparation for upgrading to SQL Server 2014. Upgrade Advisor identifies feature and configuration changes that might affect your upgrade, and it provides links to documentation that describes each identified issue and how to resolve it.\r\n<ul>\r\n      <b>Filename: X86 and x64 Package</b>(SQLUA.msi)<br />\r\n      \r\n</ul>\r\nNote: The Upgrade Advisor Tool is provided \u2018as is\u2019 and is not supported by Microsoft Support Services. For additional assistance with the tool please use the <a href=\"http://go.microsoft.com/fwlink/?LinkID=277085\"> SQL Server Setup & Upgrade Forum </a>\r\n<br/>\r\n</ul>\r\n<a name=\"DB2OLEDB v5.0\"></a><br /><br />\r\n<b>Microsoft\u00ae OLEDB Provider for DB2 v5.0 for Microsoft SQL Server\u00ae 2014</b> \r\n<ul>\r\nThe Microsoft OLE DB Provider for DB2 v5.0 offers a set of technologies and tools for integrating vital data stored in IBM DB2 databases with new solutions. SQL Server developers and administrators can use the data provider with integration Services, Analysis Services, Replication, Reporting Services, and Distributed Query Processor. Read the Installing Data Provider section of the product documentation, which is available <a href=\"http://go.microsoft.com/fwlink/?LinkID=241539&clcid=0x409\"> on-line</a> or as a <a href=\"http://go.microsoft.com/fwlink/?LinkID=241541&clcid=0x409\"> download</a>.<ul>\r\n  <b>Filename: X86 and x64 Package</b>(DB2OLEDB5_x86.msi and DB2OLEDB5_x64.msi)<br />\r\n   </ul>\r\n</ul>\r\n</ul>\r\n<br/>\r\n<br/>\r\n<b><u>MICROSOFT SQL SERVER BUSINESS INTELLIGENCE FEATURE PACK COMPONENTS</u></b><br/>\r\n<br/>\r\n<ul>\r\n<b><a href=\" http://go.microsoft.com/fwlink/?LinkID=324854\">Microsoft\u00ae SQL Server\u00ae 2014 PowerPivot\u00ae for Microsoft SharePoint 2013</a></b>\r\n<br/>\r\n<ul>\r\nMicrosoft SQL Server 2014 PowerPivot for SharePoint 2013 extends SharePoint Server 2013 to add server-side data refresh processing, collaboration, and management support for PowerPivot workbooks and Excel workbooks with advanced data models to SharePoint. This package is only available in a 64-bit version.  <br/>\r\n</ul>\r\n<a name=\"ADOMD.NET\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2014 ADOMD.NET </b> \r\n<ul>\r\nADOMD.NET is a Microsoft .NET Framework object model that enables software developers to create client-side applications that browse metadata and query data stored in Microsoft SQL Server 2014 Analysis Services. ADOMD.NET is a Microsoft ADO.NET provider with enhancements for online analytical processing (OLAP) and data mining.<br /><br />\r\n<b>Note</b>:The English ADOMD.NET setup package installs support for all SQL Server 2014 languages.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b>(SQL_AS_ADOMD.msi)<br />\r\n</ul>\r\n</ul>\r\n<a name=\"ASOLEDB\"></a><br /><br />\r\n<b>Microsoft\u00ae Analysis Services OLE DB Provider for Microsoft SQL Server\u00ae 2014</b> \r\n<ul>\r\nThe Analysis Services OLE DB Provider is a COM component that software developers can use to create client-side applications that browse metadata and query data stored in Microsoft SQL Server 2014 Analysis Services. This provider implements both the OLE DB specification and the specification\u2019s extensions for online analytical processing (OLAP) and data mining.<br /><br />\r\n<b>Note:</b> Microsoft Analysis Services OLE DB Provider requires <b>Microsoft Core XML Services (MSXML) 6.0</b><br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b>(SQL_AS_OLEDB.msi)<br />\r\n </ul>\r\n</ul>\r\n<a name=\"AMO\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2014 Analysis Management Objects </b> \r\n<ul>\r\nAnalysis Management Objects (AMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer Analysis Services objects.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b>(SQL_AS_AMO.msi)<br />\r\n</ul>\r\n</ul>\r\n<a name=\"Report Builder\"></a><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=390978\"> Microsoft\u00ae SQL Server\u00ae Report Builder for Microsoft SQL Server 2014</a></b>\r\n<br/>\r\n<ul>\r\nReport Builder provides a productive report-authoring environment for IT professionals and power users. It supports the full operational reporting capabilities of SQL Server 2014 Reporting Services. The download provides a stand-alone installer for Report Builder.<br />\r\n</ul>\r\n<a name=\"RS Add-in for SharePoint Technologies\"></a><br /><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=390980\">Microsoft\u00ae SQL Server\u00ae 2014 Reporting Services Add-in for Microsoft SharePoint\u00ae</a></b>\r\n  <ul>\r\nThe Microsoft SQL Server 2014 Reporting Services Add-in for Microsoft SharePoint allows you to integrate your reporting environment with SharePoint to experience the benefits of using the collaborative environment provided by SharePoint.<br/>\r\n<br />\r\n </ul>\r\n</ul>",
+    "additionalInformationSection": "- If you have questions about SQL Server 2014, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42295",
+    "downloadPreload": true
+}

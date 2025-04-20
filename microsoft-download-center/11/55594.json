@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Information-Seeking Conversation (MISC) dataset",
+    "downloadDescription": "We introduce the Microsoft Information-Seeking Conversation data (MISC), a set of recordings of information-seeking conversations between human \u201cseekers\u201d and \u201cintermediaries\u201d. MISC includes audio and video signals; transcripts of conversation; affectual and physiological signals; recordings of search and other computer use; and post-task surveys on emotion, success, and effort. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MISC_Public_Release.zip",
+            "url": "https://download.microsoft.com/download/7/3/6/73698c22-a2ca-4451-b0e4-9e4c5fe388f8/MISC_Public_Release.zip",
+            "size": "12265168129",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:39:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Conversational interfaces to information retrieval systems, via software agents such as Cortana, are of commercial and research interest. To build or evaluate these software interfaces it is natural to consider how people act in the same role, but there is little public, fine-grained, data on interactions with intermediaries for web tasks. We introduce the Microsoft Information-Seeking Conversation data (MISC), a set of recordings of information-seeking conversations between human \u201cseekers\u201d and \u201cintermediaries\u201d. MISC includes audio and video signals; transcripts of conversation; affectual and physiological signals; recordings of search and other computer use; and post-task surveys on emotion, success, and effort. We hope that these recordings will support conversational retrieval interfaces both in engineering and evaluation. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MISC_Public_Release.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.4 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Android, Windows 10, Android, Linus, iOS</LI></UL> \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Linux",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55594",
+    "downloadPreload": true
+}

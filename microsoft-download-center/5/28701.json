@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Data Upgrade Best Practices",
+    "downloadDescription": "This paper describes recommended practices to follow when upgrading data to Microsoft Dynamics AX 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 Data Upgrade Best Practices.pdf",
+            "url": "https://download.microsoft.com/download/9/9/a/99a95351-a277-4fd0-b547-2528ab66aa40/Microsoft Dynamics AX 2012 Data Upgrade Best Practices.pdf",
+            "size": "788552",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We strongly recommend that you read this paper before upgrading. The following topics are discussed:\r\n<br />\r\n<UL><LI>Analyzing customizations</LI>\r\n<LI>Purging and archiving data with the Intelligent Data Management Framework</LI>\r\n<LI>Analyzing space requirements for databases</LI>\r\n<LI>Creating project plans for testing</LI>\r\n<LI>Recommended upgrade process</LI>\r\n<LI>Preparing the source database</LI>\r\n<LI>Preparing the source AOS instance</LI>\r\n<LI>Using the state transfer tool</LI>\r\n<LI>Preparing the target database</LI>\r\n<LI>Preparing the target AOS instance</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 Data Upgrade Best Practices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "770.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28701",
+    "downloadPreload": true
+}

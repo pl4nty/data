@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure SharePoint Server 2010 as a Single Server with Microsoft SQL Server",
+    "downloadDescription": "Learn how to configure a single-server SharePoint Server 2010 test lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-demonstrate-sp2010-single-server.doc",
+            "url": "https://download.microsoft.com/download/a/8/7/a8789542-2a14-4f00-82b2-268e10564f0c/tlg-demonstrate-sp2010-single-server.doc",
+            "size": "198656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-demonstrate-sp2010-single-server.pdf",
+            "url": "https://download.microsoft.com/download/a/8/7/a8789542-2a14-4f00-82b2-268e10564f0c/tlg-demonstrate-sp2010-single-server.pdf",
+            "size": "448917",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint 2010 Products and step-by-step instructions for configuring a single-server SharePoint Server 2010 test lab and demonstrating the facilities of a default team site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "tlg-demonstrate-sp2010-single-server.doc",
+        "tlg-demonstrate-sp2010-single-server.pdf"
+    ],
+    "detailsSection_file_size": [
+        "194.0 KB",
+        "438.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29073",
+    "downloadPreload": true
+}

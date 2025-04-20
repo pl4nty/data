@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Introducing System.Transactions in the Microsoft .NET Framework version 2.0",
+    "downloadDescription": "This document describes how System.Transactions can be used for transactional applications in the .NET Framework version 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IntroSysTx.doc",
+            "url": "https://download.microsoft.com/download/a/3/c/a3c8b9e7-c43f-4ba4-8891-fa24051c1923/IntroSysTx.doc",
+            "size": "528896",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Developers for the Microsoft\u00ae Windows\u00ae platform have had to choose between two transactional programming models: explicit transaction management or declarative transaction flow and management. Both these programming models have advantages and neither one is superior to the other in every respect. Version 2.0 of the .NET Framework introduces a new transactional programming model available in the System.Transactions namespace. The new model allows developers to easily write transactional code with the lowest overhead possible while minimizing the amount of hand-crafted code and separating it from the application hosting environment and instance management. This whitepaper starts by describing the transaction support in the .NET Framework v1.1, and the motivation for the new model. The whitepaper then presents the new programming model, its features and its capabilities, and some advanced features such as asynchronous work, events, security, concurrency management and interoperability.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "IntroSysTx.doc"
+    ],
+    "detailsSection_file_size": [
+        "516.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003; Windows XP; Windows Vista.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.<br />\n2. Do one of the following:<br />\n-To start the installation immediately, click Open or Run this program from its current location.<br />\n-To copy the download to your computer for installation at a later time, click Save or Save this program to disk.<br />\n3. Use Microsoft Word to view the document. If you do not have Microsoft Word, you can download the free Word Viewer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1455",
+    "downloadPreload": true
+}

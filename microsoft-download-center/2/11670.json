@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Platform - Server Software Development Kit (SDK)",
+    "downloadDescription": "Software Development Kit (SDK) for the Microsoft Speech Platform - Server Runtime.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ReleaseNotes.htm",
+            "url": "https://download.microsoft.com/download/c/8/6/c86ef52a-6fb3-4089-a4ed-3df5ce7c6f15/SDK/ReleaseNotes.htm",
+            "size": "7204",
+            "version": "10.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSpeechPlatformSDK.msi",
+            "url": "https://download.microsoft.com/download/c/8/6/c86ef52a-6fb3-4089-a4ed-3df5ce7c6f15/SDK/x86/MicrosoftSpeechPlatformSDK.msi",
+            "size": "3358720",
+            "version": "10.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "License.rtf",
+            "url": "https://download.microsoft.com/download/c/8/6/c86ef52a-6fb3-4089-a4ed-3df5ce7c6f15/SDK/License.rtf",
+            "size": "12753",
+            "version": "10.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSpeechPlatformSDK.msi",
+            "url": "https://download.microsoft.com/download/c/8/6/c86ef52a-6fb3-4089-a4ed-3df5ce7c6f15/SDK/x64/MicrosoftSpeechPlatformSDK.msi",
+            "size": "3649536",
+            "version": "10.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Update:</b> Microsoft Speech Platform has been updated.  See <a href=\"http://go.microsoft.com/fwlink/?LinkID=223570&clcid=0x409\">Microsoft Speech Platform - Software Development Kit (SDK) 11</a> for more information.\r\n<br/><br/>\r\n\r\nSoftware Development Kit (SDK) for the Microsoft Speech Platform - Server Runtime.  This software development kit contains the documentation, development resources, tools and samples for development of speech applications that utilize the Microsoft Speech Platform - Server Runtime.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "ReleaseNotes.htm",
+        "MicrosoftSpeechPlatformSDK.msi",
+        "License.rtf",
+        "MicrosoftSpeechPlatformSDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.0 KB",
+        "3.2 MB",
+        "12.5 KB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Development is supported on:\r\n<ul>\r\n    <li>Windows Vista or later</li>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n\r\nDeployment is supported on:\r\n<ul>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>Click the file you want to download from the list below.</li>\r\n    <li>Do one of the following:</li>\r\n    <ul>\r\n        <li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n        <li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n    </ul>\r\n</ul>\r\n\r\n<b>Important File Download Details</b>\r\n<ul>\r\n    <li>The documentation is currently available as a separate download from the Software Development Kit see the release notes for more information</li>\r\n    <li>Please review the release notes for additional information</li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Speech Platform - Server Runtime",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=b444fa90-ad7a-490f-86a4-a900567714f0"
+        },
+        {
+            "title": "microsoft Speech Platform - Server Runtime Languages",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=e16641db-b20c-4bb5-ab22-f382eb4f22f3"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11670",
+    "downloadPreload": true
+}

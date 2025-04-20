@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2010: Primary Interop Assemblies Redistributable ",
+    "downloadDescription": "The Microsoft Office 2010 Primary Interop Assemblies (PIA) Redistributable  is a Microsoft Windows Installer package that contains the Primary Interop Assemblies for Microsoft Office 2010 products.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIARedist.exe",
+            "url": "https://download.microsoft.com/download/c/1/d/c1d6dbbb-700d-4669-98cf-820ac3ae8e55/PIARedist.exe",
+            "size": "6880144",
+            "version": "14.0.4763.1150",
+            "datePublished": "7/15/2024 3:02:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The redistributable contains the PIAs for the following products:\r\n<ul>\r\n<li>Microsoft Access 2010</li>\r\n<li>Microsoft Excel 2010</li>\r\n<li>Microsoft InfoPath 2010</li>\r\n<li>Microsoft Outlook 2010</li>\r\n<li>Microsoft PowerPoint 2010</li>\r\n<li>Microsoft Project 2010</li>\r\n<li>Microsoft Publisher 2010</li>\r\n<li>Microsoft SharePoint Designer 2010</li>\r\n<li>Microsoft Visio 2010</li>\r\n<li>Microsoft Word 2010</li>\r\n</ul>\r\nThe redistributable package also contains additional PIAs that are associated with many of these products.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.4763.1150",
+    "detailsSection_file_name": [
+        "PIARedist.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows XP, Microsoft Windows Vista, Microsoft Windows Server 2003, Microsoft Windows Server 2008, Microsoft Windows 7\r\n\r\n<ul><li><b>The following is also required:</b>\r\n<ul><li>Microsoft .NET Framework 2.0 or higher</li></ul></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "To install the Office 2010 Primary Interop Assemblies, click the Download button, then click Save and select a location for <b>PIARedist.exe</b> on your computer. Run the executable to extract the <b>O2010pia.msi</b> file. Use one of the following installation methods to install <b>O2010pia.msi</b>:\r\n<ol><li>Double-click the <b>O2010pia.msi</b> file</li>\r\n<li>Execute <b>msiexec.exe /i O2010pia.msi</b>, or</li>\r\n<li>Wrap the <b>O2010pia.msi</b> file in another setup package through Visual Studio or other Windows Installer aware setup editor. Please note that the Office 2010 Primary Interop Assemblies setup does not support the /a or /j options for MsiExec.</li></ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3508",
+    "downloadPreload": true
+}

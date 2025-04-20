@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for Data Protection Manager",
+    "downloadDescription": "The integration pack for System Center Data Protection Manager (DPM) is an add-in for System Center 2022 Orchestrator and enables you to automate the protection of physical and virtual server resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_2022_IntegrationPack_for_SCDPM.oip",
+            "url": "https://download.microsoft.com/download/3/0/2/30216b65-07b8-400d-a710-ed6077297b57/System_Center_2022_IntegrationPack_for_SCDPM.oip",
+            "size": "777728",
+            "version": "prod",
+            "datePublished": "7/15/2024 4:32:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\n<b>Release History</b><br />\r\n<ul>\r\n<li>06/30/2022 - Original English release, version 10.22.1.1 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "prod",
+    "detailsSection_file_name": [
+        "System_Center_2022_IntegrationPack_for_SCDPM.oip"
+    ],
+    "detailsSection_file_size": [
+        "759.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> System Center 2022 - Orchestrator </li>\r\n<li> System Center 2022 - Data Protection Manager (DPM) </li>\r\n<li> Windows Server 2019 or higher </li>\r\n<li> Windows Management Framework </li>\r\n<li> .NET Framework 4.0 or higher (.NET 4.7.2 recommended) </li>\r\n<li> RAM \u2013 minimum 1GB (recommended 2GB) </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the .oip file, register the Integration Pack in Deployment Manager and then deploy the Integration Pack on Runbook Designer and Runbook Server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104334",
+    "downloadPreload": true
+}

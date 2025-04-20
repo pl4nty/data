@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Guide: Publish Visio 2010 drawings to a SharePoint site",
+    "downloadDescription": "A graphical guide to publishing Visio Web drawings to a SharePoint library, in a .potx file",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VisioGuide_PublishVisio2010DrawingToSharePoint.potx",
+            "url": "https://download.microsoft.com/download/d/e/d/ded25667-f668-4b3d-ab5f-fe2e8960a5f2/VisioGuide_PublishVisio2010DrawingToSharePoint.potx",
+            "size": "2882227",
+            "version": "Visio 2010",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This presentation template file contains a set of visual, step-by-step procedures for publishing a Visio 2010 Web drawing to a SharePoint site and viewing the drawing in the browser. Also included is an appendix with a list of references for additional information and steps for enabling Visio Services on a SharePoint site.\r\n\r\nThis visual guide includes animations and is best viewed in Slide Show view in PowerPoint.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Visio 2010",
+    "detailsSection_file_name": [
+        "VisioGuide_PublishVisio2010DrawingToSharePoint.potx"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Requirements:</b> PowerPoint 2007, PowerPoint 2010, or PowerPoint Viewer</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button above.</li>\r\n<li>Do one of the following:\r\n<ul><li>To start the presentaiton immediately, click <b>Open</b>.</li>\r\n<li>To copy the guide to your computer for viewing at a later time, click <b>Save</b>.</li></ul></li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "article: Publish drawings to a SharePoint site",
+            "url": "http://office.microsoft.com/en-us/visio-help/HA101835144"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16073",
+    "downloadPreload": true
+}

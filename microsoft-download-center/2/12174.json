@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Close Non-Financial Transfers",
+    "downloadDescription": "This paper describes how to use the close non-financial transfers feature to reduce the number of settlement records in cost calculations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009SP1CloseNonFinancialTransfers.xps",
+            "url": "https://download.microsoft.com/download/7/c/d/7cd15636-fc51-4a84-ad58-ea222779c88c/DynamicsAX2009SP1CloseNonFinancialTransfers.xps",
+            "size": "762670",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DynamicsAX2009SP1CloseNonFinancialTransfers.pdf",
+            "url": "https://download.microsoft.com/download/7/c/d/7cd15636-fc51-4a84-ad58-ea222779c88c/DynamicsAX2009SP1CloseNonFinancialTransfers.pdf",
+            "size": "452165",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The close non-financial transfers feature makes the Microsoft Dynamics AX cost calculation engine more accurate. All transactions that exist only to move quantities around within physical boundaries are skipped in the cost calculation. This significantly reduces the number of settlement records with related General ledger postings. <br /><br />\r\n\r\nThis white paper is related to <a href=\"https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb$en-us$982812&wa=wsignin1.0\">Hotfix rollup 5 for Microsoft Dynamics AX 2009 Service Pack 1</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "DynamicsAX2009SP1CloseNonFinancialTransfers.xps",
+        "DynamicsAX2009SP1CloseNonFinancialTransfers.pdf"
+    ],
+    "detailsSection_file_size": [
+        "744.8 KB",
+        "441.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12174",
+    "downloadPreload": true
+}

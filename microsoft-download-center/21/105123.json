@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Tools for Applications 2022",
+    "downloadDescription": "Microsoft Visual Studio Tools for Applications lets you add and run VSTA customizations in applications that are integrated with VSTA.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vsta_setup.exe",
+            "url": "https://download.microsoft.com/download/vsta_setup_ENU.exe",
+            "size": "4271776",
+            "version": "17.0",
+            "datePublished": "4/8/2025 9:34:56 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio Tools for Applications lets you add and run VSTA customizations in applications that are integrated with VSTA. VSTA 2022 has two primary modes of operation: with a supported version of Visual Studio installed and standalone. In standalone mode, VSTA provides the application with the means to load, compile, and run end-user customizations. With a supported version of Visual Studio installed on your machine, VSTA extends that functionality with the means to edit and debug those customizations. \n<br>\nThis version contains a fix for CVE-2025-29803. Please see https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29803 for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17.0",
+    "detailsSection_file_name": [
+        "vsta_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "4/8/2025",
+    "systemRequirementsSection": "<li><b>Runtime requirement:</b> Visual C++ Redistributable for Visual Studio 2015.</li>\n<li><b>Supported Microsoft Visual Studio version:</b>\nMicrosoft Visual Studio 2022 (Community Edition or above).</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105123",
+    "downloadPreload": true
+}

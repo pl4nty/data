@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "How to protect Exchange with DPM 2010 whitepaper",
+    "downloadDescription": "Whitepaper on why and how to protect Exchange data with DPM 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPM2010_Whitepaper_How_to_protect_Exchange.docx",
+            "url": "https://download.microsoft.com/download/5/0/e/50eacdb8-bdf9-4bc9-aa06-478f134434fc/DPM2010_Whitepaper_How_to_protect_Exchange.docx",
+            "size": "1066586",
+            "version": "DPM 2010 RTM",
+            "datePublished": "7/15/2024 3:14:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Whitepaper on why and how to protect Exchange data with DPM 2010",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "DPM 2010 RTM",
+    "detailsSection_file_name": [
+        "DPM2010_Whitepaper_How_to_protect_Exchange.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 or 2008 R2\r\nSystem Center Data Protection Manager 2010\r\nMicrosoft Exchange 2003, 2007 or 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "www.microsoft.com/DPM",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8068",
+    "downloadPreload": true
+}

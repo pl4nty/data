@@ -1,0 +1,509 @@
+{
+    "error": "",
+    "downloadTitle": "WinHEC 2004 White Papers and Tools",
+    "downloadDescription": "White papers, presentations, and tools for WinHEC 2004",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WIA-64bit.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/WIA-64bit.doc",
+            "size": "71680",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AMD64_PortApp.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/AMD64_PortApp.doc",
+            "size": "176128",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Wistron_PB.pdf",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Wistron_PB.pdf",
+            "size": "34611",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PCIbridge-subtr.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/PCIbridge-subtr.doc",
+            "size": "170496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsPE_tech.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/WindowsPE_tech.doc",
+            "size": "156160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Broadcom_GbE.pdf",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Broadcom_GbE.pdf",
+            "size": "114644",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "IO-rsc.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/IO-rsc.doc",
+            "size": "113152",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LRPC_design.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/LRPC_design.doc",
+            "size": "1947648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSIPORT_drv.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/SCSIPORT_drv.ppt",
+            "size": "404992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "USBdrv-tips2.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/USBdrv-tips2.ppt",
+            "size": "615424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WIA_driverdev.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/WIA_driverdev.ppt",
+            "size": "1182720",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Software_Tracing.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Software_Tracing.ppt",
+            "size": "475136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "USBFAQ_intermed.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/USBFAQ_intermed.doc",
+            "size": "152064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Storport_Intro.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Storport_Intro.ppt",
+            "size": "584192",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VSProj_AMD64.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/VSProj_AMD64.doc",
+            "size": "305664",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LocFileSys.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/LocFileSys.doc",
+            "size": "249344",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Seagate_sataNCQ.pdf",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Seagate_sataNCQ.pdf",
+            "size": "1448139",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsPE_over.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/WindowsPE_over.doc",
+            "size": "109568",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIC-Laguna.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/FIC-Laguna.ppt",
+            "size": "944640",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SDV-intro.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/SDV-intro.doc",
+            "size": "316416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Seagate_sataENT.pdf",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Seagate_sataENT.pdf",
+            "size": "228907",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PCIe_graphics.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/PCIe_graphics.doc",
+            "size": "84992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MCPCvidcap.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/MCPCvidcap.doc",
+            "size": "546304",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MMCodec_amd64.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/MMCodec_amd64.doc",
+            "size": "310784",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WMconnect.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/WMconnect.doc",
+            "size": "443904",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Adv_Storport.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Adv_Storport.ppt",
+            "size": "480256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PREfast-drv.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/PREfast-drv.doc",
+            "size": "176640",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "qWave.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/qWave.doc",
+            "size": "169984",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "scale.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/scale.doc",
+            "size": "111616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DV_AppCompat.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/DV_AppCompat.doc",
+            "size": "171520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hm-concept.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/hm-concept.doc",
+            "size": "367104",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Seagate_sata.pdf",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Seagate_sata.pdf",
+            "size": "83831",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Seagate_DC.pdf",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Seagate_DC.pdf",
+            "size": "189187",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "USBFAQ_intro.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/USBFAQ_intro.doc",
+            "size": "214528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KMcode.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/KMcode.doc",
+            "size": "122368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wdmaud-drv.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/wdmaud-drv.doc",
+            "size": "424960",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WDF-intro.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/WDF-intro.doc",
+            "size": "108544",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DIFXtools_reqs.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/DIFXtools_reqs.doc",
+            "size": "104448",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MCPCdeploy.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/MCPCdeploy.doc",
+            "size": "222720",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BB_btcable.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/BB_btcable.doc",
+            "size": "94208",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FTdrv.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/FTdrv.doc",
+            "size": "109568",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Msys_USBflash.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Msys_USBflash.doc",
+            "size": "541184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Xbox-Live.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/Xbox-Live.doc",
+            "size": "117760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LDKintro.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/LDKintro.doc",
+            "size": "96256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wmadrv.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/wmadrv.doc",
+            "size": "110592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "USBdrv-tips1.ppt",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/USBdrv-tips1.ppt",
+            "size": "225792",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "InstallRules.doc",
+            "url": "https://download.microsoft.com/download/5/b/5/5b5bec17-ea71-4653-9539-204a672f11cf/InstallRules.doc",
+            "size": "209408",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "White papers, presentations, and tools for the Windows Hardware Engineering Conference (WinHEC) 2004",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WIA-64bit.doc",
+        "AMD64_PortApp.doc",
+        "Wistron_PB.pdf",
+        "PCIbridge-subtr.doc",
+        "WindowsPE_tech.doc",
+        "Broadcom_GbE.pdf",
+        "IO-rsc.doc",
+        "LRPC_design.doc",
+        "SCSIPORT_drv.ppt",
+        "USBdrv-tips2.ppt",
+        "WIA_driverdev.ppt",
+        "Software_Tracing.ppt",
+        "USBFAQ_intermed.doc",
+        "Storport_Intro.ppt",
+        "VSProj_AMD64.doc",
+        "LocFileSys.doc",
+        "Seagate_sataNCQ.pdf",
+        "WindowsPE_over.doc",
+        "FIC-Laguna.ppt",
+        "SDV-intro.doc",
+        "Seagate_sataENT.pdf",
+        "PCIe_graphics.doc",
+        "MCPCvidcap.doc",
+        "MMCodec_amd64.doc",
+        "WMconnect.doc",
+        "Adv_Storport.ppt",
+        "PREfast-drv.doc",
+        "qWave.doc",
+        "scale.doc",
+        "DV_AppCompat.doc",
+        "hm-concept.doc",
+        "Seagate_sata.pdf",
+        "Seagate_DC.pdf",
+        "USBFAQ_intro.doc",
+        "KMcode.doc",
+        "wdmaud-drv.doc",
+        "WDF-intro.doc",
+        "DIFXtools_reqs.doc",
+        "MCPCdeploy.doc",
+        "BB_btcable.doc",
+        "FTdrv.doc",
+        "Msys_USBflash.doc",
+        "Xbox-Live.doc",
+        "LDKintro.doc",
+        "wmadrv.doc",
+        "USBdrv-tips1.ppt",
+        "InstallRules.doc"
+    ],
+    "detailsSection_file_size": [
+        "70.0 KB",
+        "172.0 KB",
+        "33.8 KB",
+        "166.5 KB",
+        "152.5 KB",
+        "112.0 KB",
+        "110.5 KB",
+        "1.9 MB",
+        "395.5 KB",
+        "601.0 KB",
+        "1.1 MB",
+        "464.0 KB",
+        "148.5 KB",
+        "570.5 KB",
+        "298.5 KB",
+        "243.5 KB",
+        "1.4 MB",
+        "107.0 KB",
+        "922.5 KB",
+        "309.0 KB",
+        "223.5 KB",
+        "83.0 KB",
+        "533.5 KB",
+        "303.5 KB",
+        "433.5 KB",
+        "469.0 KB",
+        "172.5 KB",
+        "166.0 KB",
+        "109.0 KB",
+        "167.5 KB",
+        "358.5 KB",
+        "81.9 KB",
+        "184.8 KB",
+        "209.5 KB",
+        "119.5 KB",
+        "415.0 KB",
+        "106.0 KB",
+        "102.0 KB",
+        "217.5 KB",
+        "92.0 KB",
+        "107.0 KB",
+        "528.5 KB",
+        "115.0 KB",
+        "94.0 KB",
+        "108.0 KB",
+        "220.5 KB",
+        "204.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 95/Windows NT 4.0 or later<br />\nMicrosoft Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Select \"Save this file to disk\" to download to your local machine",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51197",
+    "downloadPreload": true
+}

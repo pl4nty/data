@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Operations Manager Management Pack for Operations Management Suite (OMS) Service Map integration",
+    "downloadDescription": "Management Pack for Operations Management Suite (OMS) Service Map integration with System Center Operations Manager. With this integration, dynamic system maps from Service Map can be used to automatically build Distributed Application Diagrams in Operations Manager.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Management Pack for ServiceMap SCOM integration.msi",
+            "url": "https://download.microsoft.com/download/2/7/2/272c17b7-03c1-4225-b313-5dd75f5c02d5/Management Pack for ServiceMap SCOM integration.msi",
+            "size": "1146880",
+            "version": "1.0.0.6",
+            "datePublished": "7/15/2024 4:53:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Overview:</b><br/>\r\nManagement Pack for Operations Management Suite (OMS) Service Map integration with System Center Operations Manager. With this integration, dynamic system maps from Service Map can be used to automatically build Distributed Application Diagrams in Operations Manager.<br/>\r\n<br/>\r\n<b>Details:</b><br/>\r\nOperations Management Suite Service Map automatically discovers application components on Windows and Linux systems and maps the communication between services. Service Map allows you to view your servers the way you think of them, as interconnected systems that deliver critical services. Service Map shows connections between servers, processes, and ports across any TCP-connected architecture, with no configuration required besides the installation of an agent. For more information, see the Service Map documentation - https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-service-map . <br/>\r\n<br/>\r\nWith this integration between Service Map and System Center Operations Manager, you can automatically create distributed application diagrams in Operations Manager that are based on the dynamic dependency maps in Service Map. <br/>\r\n\r\n<b>Feature Summary</b><br/>\r\nThis Management Pack bundle contains four Management packs: <br/>\r\n<ul>\r\n<li> Microsoft ServiceMap Application Views </li>\r\n<li> Microsoft System Center ServiceMap Internal </li>\r\n<li> Microsoft System Center ServiceMap Overrides </li>\r\n<li> Microsoft System Center ServiceMap </li>\r\n</ul> <br/>\r\n\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> System Center 2012 R2 Operations Manager</li>\r\n  <ul>\r\n  <li> 8/16/2017 - Update release - version 1.0.0.6 for System Center 2012 R2 Operations Manager</li>\r\n  </ul> <br/>\r\n\r\n  <li> System Center 2016 Operations Manager </li>\r\n  <ul>\r\n  <li> 8/16/2017 - Update release - version 1.0.0.6 for System Center 2016 Operations Manager  </li>\r\n  </ul> \r\n</ul><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.6",
+    "detailsSection_file_name": [
+        "Management Pack for ServiceMap SCOM integration.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> System Center 2012 - Operations Manager or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download and install the latest Update Rollup for  System Center 2012 R2 Operations Manager or System Center 2016 Operations Manager</li>\r\n<li> Download the management pack </li>\r\n<li> Import the management pack \"Microsoft.SystemCenter.ServiceMap.mpb\" in SCOM Management Server console. </li>\r\n<li> Follow the user guide to register to your existing OMS workspace and sync maps - https://docs.microsoft.com/en-us/azure/operations-management-suite/operations-management-suite-service-map </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55763",
+    "downloadPreload": true
+}

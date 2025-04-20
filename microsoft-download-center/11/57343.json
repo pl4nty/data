@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure AD Password Reset Add-in for Windows (preview)",
+    "downloadDescription": "Reset your password from your Windows 7, Windows 8, or Windows 8.1 machine (preview)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure AD Password Reset Add-In for Windows (x64).msi",
+            "url": "https://download.microsoft.com/download/e/8/4/e844b356-11e0-47fe-a2aa-41e7d799605f/Microsoft Azure AD Password Reset Add-In for Windows (x64).msi",
+            "size": "7290880",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:52:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure AD Password Reset Add-In for Windows (x86).msi",
+            "url": "https://download.microsoft.com/download/e/8/4/e844b356-11e0-47fe-a2aa-41e7d799605f/Microsoft Azure AD Password Reset Add-In for Windows (x86).msi",
+            "size": "6684672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:52:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure AD Password Reset Add-In for Windows - Pre-Release Terms.pdf",
+            "url": "https://download.microsoft.com/download/e/8/4/e844b356-11e0-47fe-a2aa-41e7d799605f/Microsoft Azure AD Password Reset Add-In for Windows - Pre-Release Terms.pdf",
+            "size": "74344",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:52:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Azure AD Password Reset Add-in for Windows allows users who are enabled and registered for Azure AD self-service password reset (SSPR) to reset their password from their Windows login screen. To get started with self-service password reset, go to aka.ms/ssproverview. To review the terms of use for this add-in, select \"Download\" above and download the Microsoft Azure AD Password Reset Add-in for Windows - Pre-Release Terms.pdf file.\r\n\r\nThis add-in is a public preview feature of Azure Active Directory. For more information about previews, go to https://azure.microsoft.com/support/legal/preview-supplemental-terms/. \r\n\r\nThe add-in will automatically localize based on the machine language.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Azure AD Password Reset Add-In for Windows (x64).msi",
+        "Microsoft Azure AD Password Reset Add-In for Windows (x86).msi",
+        "Microsoft Azure AD Password Reset Add-In for Windows - Pre-Release Terms.pdf"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB",
+        "6.4 MB",
+        "72.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install and configure the Microsoft Azure AD Password Reset Add-in for Windows, review the steps here: aka.ms/ssprforwindows78.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57343",
+    "downloadPreload": true
+}

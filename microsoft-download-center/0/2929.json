@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Operations guide for SharePoint Foundation 2010",
+    "downloadDescription": "Operate and maintain your servers, server farms, sites, and solutions in Microsoft SharePoint Foundation 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundOps.xps",
+            "url": "https://download.microsoft.com/download/1/c/9/1c9302d6-2c32-4d4b-8fd9-4c42937f8c31/SharePointFoundOps.xps",
+            "size": "5359670",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundOps.pdf",
+            "url": "https://download.microsoft.com/download/1/c/9/1c9302d6-2c32-4d4b-8fd9-4c42937f8c31/SharePointFoundOps.pdf",
+            "size": "3945306",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePointFoundOps.doc",
+            "url": "https://download.microsoft.com/download/1/c/9/1c9302d6-2c32-4d4b-8fd9-4c42937f8c31/SharePointFoundOps.doc",
+            "size": "3789824",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This document describes how to operate and maintain your servers, server farms, sites, and solutions in Microsoft SharePoint Foundation 2010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePointFoundOps.xps",
+        "SharePointFoundOps.pdf",
+        "SharePointFoundOps.doc"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB",
+        "3.8 MB",
+        "3.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2929",
+    "downloadPreload": true
+}

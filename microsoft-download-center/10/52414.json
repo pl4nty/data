@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "HAVOC: Heap-Aware Verifier for C Programs",
+    "downloadDescription": "HAVOC is a modular verifier for systems software written in C. Last published: June 2, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "havoc_v_0.1_external_setup.msi",
+            "url": "https://download.microsoft.com/download/5/c/0/5c0e5c09-758f-478e-b38c-c8f3f2b6519d/havoc_v_0.1_external_setup.msi",
+            "size": "10030592",
+            "version": "0.1",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "HAVOC is a modular verifier for systems software written in C. It takes as input an annotated C program, in the form of pre- and post-conditions and loop invariants, and uses the Boogie verifier and the SMT solver Z3 to check the annotations. The novelty of the tool lies in a) an accurate memory model for C accounting for low-level operations such as pointer arithmetic, address-of operations, and casts; b) an expressive annotation language; and c) efficient decision procedures to reason about the annotations. The annotation language not only supports writing most pointer expressions, but also enables a user to refer to sets of pointers and to express quantified invariants over such sets. We provide support for constructing sets of pointers in a linked list, all indices in an array, and all objects of a given runtime type.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "havoc_v_0.1_external_setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52414",
+    "downloadPreload": true
+}

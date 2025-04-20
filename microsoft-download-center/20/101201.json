@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Embracing as a developer the new perspectives of Confidential Computing",
+    "downloadDescription": "This series of guides aims at helping applications\u2019 developers and architects to embrace the new perspectives opened up by Confidential Computing in Azure and on the Edge for a growing number of use cases.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Getting-started-with-the-Confidential-Consortium-Framework-on-Azure-(July-2020).pdf",
+            "url": "https://download.microsoft.com/download/e/0/3/e03ff018-35ac-4bac-9638-3e45787bc23c/Getting-started-with-the-Confidential-Consortium-Framework-on-Azure-(July-2020).pdf",
+            "size": "1471263",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Leveraging-Confidential-Computing-with-Kubernetes-on-Azure-(July-2020).pdf",
+            "url": "https://download.microsoft.com/download/e/0/3/e03ff018-35ac-4bac-9638-3e45787bc23c/Leveraging-Confidential-Computing-with-Kubernetes-on-Azure-(July-2020).pdf",
+            "size": "469977",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Leveraging-Attestations-with-TEE-based-applications-on-Azure-(July-2020).pdf",
+            "url": "https://download.microsoft.com/download/e/0/3/e03ff018-35ac-4bac-9638-3e45787bc23c/Leveraging-Attestations-with-TEE-based-applications-on-Azure-(July-2020).pdf",
+            "size": "5487521",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Building-and-Executing-TEE-based-applications-on-Azure-(April-2020).pdf",
+            "url": "https://download.microsoft.com/download/e/0/3/e03ff018-35ac-4bac-9638-3e45787bc23c/Building-and-Executing-TEE-based-applications-on-Azure-(April-2020).pdf",
+            "size": "6353777",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Security is a key driver accelerating the adoption of cloud computing, but it\u2019s also a major concern when you\u2019re moving extremely sensitive data and IP scenarios to the public cloud. If there are <a href=\"https://docs.microsoft.com/en-us/azure/security/fundamentals/encryption-overview\">ways to secure data at rest (storage) and in transit (network)</a>, you also need to protect your (most sensitive) data from threats as it\u2019s being processed.  \r\n\r\nAs defined by the <a href=\"https://confidentialcomputing.io/\">Confidential Computing Consortium (CCC)</a> that brings together hardware vendors, cloud providers, and software developers to accelerate the adoption of Trusted Execution Environment (TEE) technologies and standards through open collaboration: \u201c<i>Confidential computing focuses on securing data in use. Current approaches in cloud computing address data at rest and in transit but encrypting data in use is considered the third and possibly most challenge step to providing a fully encrypted lifecycle for sensitive data. Confidential computing will enable encrypted data to be processed in memory without exposing it to the rest of the system. Confidential computing will reduce exposure for sensitive data and provide greater control and transparency for users.</i>\u201d\r\n\r\nConfidential Computing adds new data security capabilities using trusted execution environments (TEEs), a.k.a. enclaves, or encryption mechanisms to protect your data while in use. TEEs are hardware or software implementations that safeguard data being processed from access outside the TEE. The hardware provides a protected container by securing a portion of the processor and memory. Only authorized code is permitted to run and to access data, so code and data are protected against viewing and modification from outside of TEE. This reduces exposure for sensitive data and provides greater control and transparency for users.\r\n\r\n<a href=\"https://azure.microsoft.com/en-us/blog/introducing-azure-confidential-computing/\">Announced</a> back in September 2017, <a href=\" \">Azure Confidential Computing (ACC)</a> protects the confidentiality and integrity of your data and code while it\u2019s processed in the public cloud. Example use cases include confidential multiparty data sharing, fraud detection, anti-money laundering, blockchain, confidential usage analytics, intelligence analysis and confidential machine learning.\r\n\r\nBesides the initially released DC-Series virtual machines (VM), the new <a href=\"https://docs.microsoft.com/en-us/azure/virtual-machines/linux/generation-2\">Generation 2</a> <a href=\"https://docs.microsoft.com/en-us/azure/virtual-machines/dcv2-series\">DCsv2-Series</a> VMs are backed by the latest generation of Intel XEON E-2288G Processor with the <a href=\"https://software.intel.com/en-us/sgx\">Intel Software Guard Extensions (Intel SGX)</a> technology. \r\n\r\nCloud security is the cornerstone of our confidential cloud vision, which aims to remove Microsoft from the <a href=\"https://en.wikipedia.org/wiki/Trusted_computing_base\">trusted computing base (TCB)</a> of Azure. \r\nProtecting the confidentiality and the integrity of data and/or the code also increasingly applies at the Edge, with the inferencing of a trained model on some local data, which leads you to the so-called \u201cIntelligent Edge\u201d.\r\nIn this context, the <a href=\"https://github.com/openenclave/openenclave\">Open Enclave SDK</a> open sourced by Microsoft in October 2018 under the MIT license drives towards a consistent API surface around enclaving abstraction, and support portability across TEE types, like Intel SGX and ARM TrustZone, and flexibility in architecture. This SDK is a contributing project of the Confidential Computing Consortium.\r\n\r\n<b>This series of guides aims at helping applications\u2019 developers and architects to embrace the new perspectives opened up by Confidential Computing in Azure and on the Edge for a growing number of use cases.</b>\r\nBeside first-party services in Azure like <a href=\"https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver15\">Azure SQL Database (Always Encrypted with enclaves)</a>, you may want to develop your own TEE-based applications, build distributed multiparty applications through the use of (yet) another project open sourced by Microsoft in May 2019 under the Apache license 2.0, the <a href=\"https://github.com/Microsoft/CCF\">Confidential Consortium Framework (CCF) </a>, etc. \r\n\r\nTo ease the learning curve, pave the path towards developing such applications, and streamline the setup of a suitable development environment and related configurations, this series of guide is intended to cope with the above topics.\r\n\r\nFor that purpose, this series of guides for developers comprises:\r\n<ol>\r\n<li> \u201cBuilding and Executing Trusted Execution Environment (TEE) based applications on Azure - A starter guide for developers\u201d, </li>\r\n<li>  \"Getting Started with the Confidential Consortium Framework (CCF) on Azure - A starter guide for developers\",</li>\r\n<li> \u201cLeveraging Attestations with Trusted Execution Environment (TEE) based applications on Azure - A starter guide for developers\u201d, </li>\r\n<li> And eventually \u201cLeveraging Confidential Computing with Kubernetes on Azure - A starter guide for developers\u201d.</li>\r\n</ol>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "Getting-started-with-the-Confidential-Consortium-Framework-on-Azure-(July-2020).pdf",
+        "Leveraging-Confidential-Computing-with-Kubernetes-on-Azure-(July-2020).pdf",
+        "Leveraging-Attestations-with-TEE-based-applications-on-Azure-(July-2020).pdf",
+        "Building-and-Executing-TEE-based-applications-on-Azure-(April-2020).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "459.0 KB",
+        "5.2 MB",
+        "6.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the PDF file(s) and open it with the PDF reader of your choices.",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Confidential Computing",
+            "url": "https://aka.ms/azurecc"
+        },
+        {
+            "title": "open Enclave SDK",
+            "url": "https://github.com/openenclave/openenclave"
+        },
+        {
+            "title": "confidential Consortium Framework",
+            "url": "https://github.com/Microsoft/CCF"
+        },
+        {
+            "title": "confidential Computing Consortium",
+            "url": "https://confidentialcomputing.io"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101201",
+    "downloadPreload": true
+}

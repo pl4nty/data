@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Cases_Sergel_NET",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SOA_och_data_0411.pdf",
+            "url": "https://download.microsoft.com/download/0/5/6/05632426-99e8-42be-9ffd-aa1c31567cc7/SOA_och_data_0411.pdf",
+            "size": "441495",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "soa_oversikt_0410.pdf",
+            "url": "https://download.microsoft.com/download/0/5/6/05632426-99e8-42be-9ffd-aa1c31567cc7/soa_oversikt_0410.pdf",
+            "size": "227451",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        }
+    ],
+    "detailsSection": "Description Template",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SOA_och_data_0411.pdf",
+        "soa_oversikt_0410.pdf"
+    ],
+    "detailsSection_file_size": [
+        "431.1 KB",
+        "222.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34359",
+    "downloadPreload": true
+}

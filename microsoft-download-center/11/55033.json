@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 2012 R2 Operations Manager Core Monitoring Agent Management Pack",
+    "downloadDescription": "Microsoft System Center 2012 R2 Operations Manager Core Monitoring Agent Management Pack",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System Center Core Monitoring Agent Management for SCOM 2012R2.msi",
+            "url": "https://download.microsoft.com/download/b/3/9/b3989956-29e3-4e82-a341-8aac78148e98/System Center Core Monitoring Agent Management for SCOM 2012R2.msi",
+            "size": "397312",
+            "version": "7.1.10226.1339",
+            "datePublished": "7/15/2024 4:38:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack extends the System Center Core Monitoring by providing diagnostics and recoveries related to agent mechanism. All recoveries which involve automated remediation are diasabled by default. <br/>\r\n<br/>\r\nThis is an SCOM inbox MP. The Agent UP/DOWN was broken after SCOM 2012R2 UR12, basically when the heartbeat failure monitor is triggered, the ping to the diagnostics was failing. This issue has been fixed in this release of the MP.   ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10226.1339",
+    "detailsSection_file_name": [
+        "System Center Core Monitoring Agent Management for SCOM 2012R2.msi"
+    ],
+    "detailsSection_file_size": [
+        "388.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Operations Manager 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This is a hotfix for UR12. Import the mp file into SCOM machine to apply this fix. <br/>\r\n<br/>\r\nFor agents running under Gateways servers, one needs to configure the Automatic Agent Management Account, that is used to automatically diagnose agent failures (eg. heartbeat failures, failure to receive data) to have a RunAs account that has privileges to both the Management Server and the Gateway. This would be possible only in scenarios where \r\n<li> 1. The gateway is a member of a trusted forest (which has SCOM Servers), but outside a Kerberos realm.  (Gateway is used because Kerberos is unavailable) </li>\r\n<li> 2. The gateway is a member of the same forest as the SCOM servers.  (Gateway is used for firewall/bandwidth/local resource pool scenario) </li> \r\n\r\n \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55033",
+    "downloadPreload": true
+}

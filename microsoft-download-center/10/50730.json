@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Application Insights Tools for Visual Studio 2015 Update 1  v4.1.0",
+    "downloadDescription": "Application Insights Tools for Visual Studio add-in,  v4.1.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VisualStudio.msi",
+            "url": "https://download.microsoft.com/download/5/5/4/554ec034-3e6e-4803-86fd-c89b1fce0375/AppInsights_VisualStudio.msi",
+            "size": "5627904",
+            "version": "4.1.0",
+            "datePublished": "7/15/2024 4:01:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VSWinExpress.msi",
+            "url": "https://download.microsoft.com/download/5/5/4/554ec034-3e6e-4803-86fd-c89b1fce0375/AppInsights_VSWinExpress.msi",
+            "size": "5627904",
+            "version": "4.1.0",
+            "datePublished": "7/15/2024 4:01:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VWDExpress.msi",
+            "url": "https://download.microsoft.com/download/5/5/4/554ec034-3e6e-4803-86fd-c89b1fce0375/AppInsights_VWDExpress.msi",
+            "size": "5627904",
+            "version": "4.1.0",
+            "datePublished": "7/15/2024 4:01:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Application Insights Tools for Visual Studio 2015 Update 1  v4.1.0. Includes 2 new features: User can go to code from Stack traces inside the Application Insights Search feature introduced in 4.0, and additional Search entry points.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1.0",
+    "detailsSection_file_name": [
+        "AppInsights_VisualStudio.msi",
+        "AppInsights_VSWinExpress.msi",
+        "AppInsights_VWDExpress.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB",
+        "5.4 MB",
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See Visual Studio 2015",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This is installed via Visual Studio 2015 tools->Extensions and Update dialog. Customers should not need to download and install this directly",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50730",
+    "downloadPreload": true
+}

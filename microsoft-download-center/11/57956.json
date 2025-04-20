@@ -1,0 +1,177 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project",
+    "downloadDescription": "The Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project gives users the ability to manage their PSA project plans in the familiar project management tool, Microsoft Project. Compatible with D365 for PSA V3.4+",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project x86.msi",
+            "url": "https://download.microsoft.com/download/d/5/1/d51a2c34-35d7-4bf2-8e0e-6d28b5d3c9bd/Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project x86.msi",
+            "size": "4026368",
+            "version": "3.70.0.0",
+            "datePublished": "7/15/2024 4:30:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project x64.msi",
+            "url": "https://download.microsoft.com/download/d/5/1/d51a2c34-35d7-4bf2-8e0e-6d28b5d3c9bd/Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project x64.msi",
+            "size": "4009984",
+            "version": "3.70.0.0",
+            "datePublished": "7/15/2024 4:30:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        }
+    ],
+    "detailsSection": "The PSA Add-in for Microsoft Project lets users manage their PSA project plans in Microsoft Project, a project management tool. From the add-in, users can read and publish project plans to PSA at the click of a button. \r\n<ul>\r\n<li>Quickly and easily import project plans and project templates from PSA into Microsoft Project. </li>\r\n<li>Publish project plans and templates to PSA.  </li>\r\n <li>Create project teams inside PSA from Microsoft Project.  </li>\r\n<li>Find PSA resources and assign them to project plans from Microsoft Project. </li>\r\n</ul>\r\n\r\nFor later versions of PSA (V2.X), download the add-in from <A HREF=\"https://www.microsoft.com/en-us/download/details.aspx?id=54299\">Microsoft Download Center.</A>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.70.0.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project x86.msi",
+        "Microsoft Dynamics 365 Project Service Automation Add-in for Microsoft Project x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB",
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows 10 or Windows 10 Anniversary Edition (version 1607) </li>\r\n<li>Microsoft Project Professional 2016</li>\r\n<li>A working Dynamics 365 Project Service Automation implementation, version 3.4+</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Important! If you install the 32-bit version of Microsoft Project, you must use the 32-bit version of the add-in. If you install the 64-bit version of Microsoft Project, you must use the 64-bit version of the add-in. \r\n\r\n<ol>\r\n<li>Double-click the <b>.msi</b> file to start the <b>Setup wizard.</b> </li>\r\n<li>Click <b>Next</b></li>\r\n<li> Accept the license agreement, and then click <b>Next.</b></li>\r\n<li>Click <b>Install.</b></li>\r\n<li> Click <b>Finish.</b></li>\r\n</ol>\r\n\r\nAfter successful completion, open Microsoft Project and a new <b>Project Service Automation</b> tab is displayed on the ribbon.\r\n\n\nTo install this update rollup, do one of the following:<br />\n<ul><li>To start the installation immediately, click <b>Run.</b></li>\n<li>To save the download to your computer for installation later, click <b>Save. </b></li>\n<li>To cancel the installation, click <b>Cancel.</b></li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57956",
+    "downloadPreload": true
+}

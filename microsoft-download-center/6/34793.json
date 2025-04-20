@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Determined Adversaries and Targeted Attacks",
+    "downloadDescription": "This paper shares Microsoft\u2019s insights into the threat that Determined Adversaries and Targeted Attacks pose,  identifies challenges for organizations seeking to combat this threat category and provides a context for other papers that will directly address each of those.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Determined Adversaries and Targeted Attacks_EN.pdf",
+            "url": "https://download.microsoft.com/download/9/3/6/93652dc7-7b93-4a88-87ac-933f7d4516eb/Determined Adversaries and Targeted Attacks_EN.pdf",
+            "size": "421246",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Determined Adversaries and Targeted Attacks_EN.docx",
+            "url": "https://download.microsoft.com/download/9/3/6/93652dc7-7b93-4a88-87ac-933f7d4516eb/Determined Adversaries and Targeted Attacks_EN.docx",
+            "size": "1662688",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Microsoft has a unique perspective on Targeted Attacks, as both a potential target of attacks and a service and solution provider to potential victims. This paper shares Microsoft\u2019s insights into the threat that Determined Adversaries and Targeted Attacks pose, identifies challenges for organizations seeking to combat this threat category and provides a context for other papers that will directly address each of those.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Determined Adversaries and Targeted Attacks_EN.pdf",
+        "Determined Adversaries and Targeted Attacks_EN.docx"
+    ],
+    "detailsSection_file_size": [
+        "411.4 KB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34793",
+    "downloadPreload": true
+}

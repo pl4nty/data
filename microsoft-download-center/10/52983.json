@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Update 3 Fixes",
+    "downloadDescription": "This update fixes SOA, Management and Azure burst issues of HPC Pack 2012 R2 Update 3.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB3161422-x64.exe",
+            "url": "https://download.microsoft.com/download/4/7/1/47134616-9d58-4835-b3be-40a0ec918fe0/KB3161422-x64.exe",
+            "size": "64942496",
+            "version": "4.05.5111",
+            "datePublished": "7/15/2024 4:19:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB3161422-x86.exe",
+            "url": "https://download.microsoft.com/download/4/7/1/47134616-9d58-4835-b3be-40a0ec918fe0/KB3161422-x86.exe",
+            "size": "64876960",
+            "version": "4.05.5111",
+            "datePublished": "7/15/2024 4:19:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update fixes some known SOA, Management and Azure burst issues of HPC Pack 2012 R2 Update 3: <br/>\r\n<br/>\r\n<b>SOA fixes</b><br/>\r\n- Added SOA HoldUntil Support. For a SOA session, users can now pause a running session by modifying session job's HoldUntil property to a future time. <br/>\r\n- Fixed the possibly broker unload when the connection timeout happens between the broker and the client which may cause calculating requests discarded. <br/>\r\n- Updated EchoClient for random message size and time; add flush per number of requests support; add message operation (send/flush/EOM/get) timeout parameter. <br/>\r\n- Added two optional parameters jobName and projectName in ExcelClient.OpenSession method for Excel VBA. <br/>\r\n- Other bug fixes around stability and logging for SOA. <br/>\r\n- Fix node exclusion too long for SOA jobs: Finish task when exit call failed. <br/>\r\n<br/>\r\n<b>Scheduler fixes </b><br/>\r\n- Carry hresult on node manager exception for better troubleshooting of node manager exceptions. <br/>\r\n- Linux node manager execution filter support. <br/>\r\n- Fix the task dependency issue that a job could be stuck in running state if a task is added and its dependent parametric sweep task is in running state with some finished sub-tasks. <br/>\r\n- Improve the performance of scheduler by decreasing the validating time of a job which contains a large number of tasks with task dependency. <br/>\r\n- Fix the issue that node release task may fail if the job resource type is \u201cSocket\u201d or \u201cGPU\u201d. <br/>\r\n<br/>\r\n<b>Management fixes</b> <br/>\r\n- Add JobId in HpcTask object for powershell, so user can get JobId in cmdlet Get-HpcTask. <br/>\r\n- Enhance HpcSync.exe command, if no package to sync from Azure storage, exit with 0 instead of -1. <br/>\r\n- Fix one issue to let user set SubscribedCore and SubscribedSocket for GPU compute node. <br/>\r\n- Support running SOA job for Azure PaaS deployment using internal load balancer. <br/>\r\n- Fix one UI bug, when select \u201cBy Node Template\u201d in node view, if click \u201cAdd Node\u201d, it will be failed and popup error dialog. <br/>\r\n<br/>\r\n<b>This QFE will supercede QFE 3134307 and QFE 3147178 released earlier</b><br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.05.5111",
+    "detailsSection_file_name": [
+        "KB3161422-x64.exe",
+        "KB3161422-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "61.9 MB",
+        "61.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "HPC Pack 2012 R2 Update 3 (build 4.5.5079.0) with or without QFE 3134307/3147178 (build 4.5.5094.0/4.5.5102.0) installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This update needs to be run on all head nodes, broker nodes, workstation nodes, compute nodes and clients<br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2012 R2 Update 3 is installed. The version number (in HPC Cluster Manager, click <b>Help</b>><b>About</b>) should be 4.5.5079.0 (Or 4.5.5094.0/4.5.5102.0 if early QFE is installed). Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\n<b>Important:</b><br/>\r\nThe upgrade package KB3161422 does not support uninstallation. After you upgrade, if you want to restore to HPC Pack 2012 R2 Update 3, you must completely uninstall the HPC Pack 2012 R2 Update 3 features from the head node computer and the other computers in your cluster, and reinstall HPC Pack 2012 R2 Update 3 and restore the data in the HPC databases.<br/>\r\n<br/>\r\n<b>Applying the update</b><br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB3161422-x64.exe for the 64-bit version, KB3161422-x86.exe for the 32-bit version) and then:<br/>\r\n<br/>\r\n1. Click Save to copy the download to your computer.<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows.<br/>\r\nNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update.<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node.<br/>\r\nNote: If you have high availability head nodes, run the fix on the active node, move the node to passive, and after failover occurs run the fix on the new active node. Do this for all head nodes in the cluster.<br/>\r\n4. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes.\r\n<br/>\r\nTo use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes:<br/>\r\na. Copy the appropriate version of the update to a shared folder such as \\\\headnodename\\HPCUpdates .<br/>\r\nb. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n    clusrun /nodegroup:ComputeNodes \\\\headnodname\\HPCUpdates\\KB3161422-x64.exe -unattend -SystemReboot<br/>\r\n    clusrun /nodegroup:BrokerNodes \\\\headnodname\\HPCUpdates\\KB3161422-x64.exe -unattend -SystemReboot<br/>\r\n<b>Note</b>: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\n<b>Note</b>: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\nc .To update workstation nodes and unmanaged server nodes you may need to reboot.<br/>\r\n<br/>\r\n5. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\na. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager<br/>\r\nb. Run the update executable<br/>\r\nc. Reboot your client computer<br/>\r\n<br/>\r\n6. You can run get-hpcpatchstatus.ps1 on headnode/computenodes/client under %CCP_HOME%bin to check the patch status. And the client version and server version will be 4.05.5111.0<br/>\r\n<br/>\r\n7. To update on premise Linux compute nodes:<br/>\r\na. Set up a file share to share update binaries from head node to Linux compute nodes , for see Get started with on-premises Linux compute nodes).Here we suppose we have established an SMB share C:\\SmbShare on the head node as \\\\headnodename\\SmbShare, and mount it on all the Linux compute nodes with path /smbshare.<br/>\r\nb. Find the on-premises Linux compute node installation binaries in the following folder: %CCP_DATA%InstallShare\\LinuxNodeAgent. Then, copy the binaries hpcnodeagent.tar.gz and setup.py into \\\\headnodename\\SmbShare in the head node, and check that the files can be seen in the path /smbshare from the Linux compute nodes.<br/>\r\nc. Run update command on the Linux compute nodes in the /smbshare with HPC 2012 R2 Update 3 nodemanger (version 1.7.7.0), e.g.:<br/>\r\n    python setup.py \u2013update<br/>\r\nd. (Optional) You can check whether the Linux compute nodes have been updated successfully by using command \u201c/opt/hpcnodemanager/nodemanager -v\u201d on the Linux compute nodes. The updated nodemanager version is 1.7.7.0.<br/>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack QFE KB3134307",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=50809"
+        },
+        {
+            "title": "hpc Pack QFE KB3147178 ",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=51662"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52983",
+    "downloadPreload": true
+}

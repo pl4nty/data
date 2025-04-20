@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "only bits go live",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Live Meeting Add-in Pack (v7_5_2930_0) Readme.rtf",
+            "url": "https://download.microsoft.com/download/3/8/c/38c6f524-687a-4850-b1e8-c6dd3e185f4d/Live Meeting Add-in Pack (v7_5_2930_0) Readme.rtf",
+            "size": "112807",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Description Template",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Live Meeting Add-in Pack (v7_5_2930_0) Readme.rtf"
+    ],
+    "detailsSection_file_size": [
+        "110.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "33542",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "EAC Player and Parser",
+    "downloadDescription": "Generate an application bitstream from parsing a master bitstream and a companion file. Last published: May 22, 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "eac_player_and_parser.zip",
+            "url": "https://download.microsoft.com/download/0/b/a/0badbcd5-95fc-4722-8c66-701065920df8/eac_player_and_parser.zip",
+            "size": "206994",
+            "version": "4.0",
+            "datePublished": "5/15/2024 4:11:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Generate an application bitstream from parsing a master bitstream and a companion file. Decode an embedded bitstream to waveform or PC speaker.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "eac_player_and_parser.zip"
+    ],
+    "detailsSection_file_size": [
+        "202.1 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52577",
+    "downloadPreload": true
+}

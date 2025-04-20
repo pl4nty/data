@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "WBS Modeler add-in for Visio 2010",
+    "downloadDescription": "Help improve the project planning process by generating a project plan from a graphical work breakdown structure (WBS) using this Visio 2010 add-in in combination with Microsoft Project.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visio Add-In for WBS Modeler (X64).msi",
+            "url": "https://download.microsoft.com/download/7/e/7/7e757704-a442-4119-bcff-ee0f85313c0c/Visio Add-In for WBS Modeler (X64).msi",
+            "size": "2448384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Visio Add-In for WBS Modeler (X86).msi",
+            "url": "https://download.microsoft.com/download/7/e/7/7e757704-a442-4119-bcff-ee0f85313c0c/Visio Add-In for WBS Modeler (X86).msi",
+            "size": "2446336",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WBS Modeler User Guide 2010.pdf",
+            "url": "https://download.microsoft.com/download/7/e/7/7e757704-a442-4119-bcff-ee0f85313c0c/WBS Modeler User Guide 2010.pdf",
+            "size": "1826409",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the Microsoft Visio 2010 WBS Modeler Add-in to help improve the project planning process. This add-in enables you to use Visio to generate a project plan from a graphical work breakdown structure (WBS). You can use the add-in to visualize and edit an existing project plan and create a new project plan in Visio and then export it to Microsoft Project to carry out the next planning steps. \r\n\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visio Add-In for WBS Modeler (X64).msi",
+        "Visio Add-In for WBS Modeler (X86).msi",
+        "WBS Modeler User Guide 2010.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "2.3 MB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Visio Professional 2010 or Visio Premium 2010\r\n\u2022 Microsoft Office Project 2003 Service Pack (SP) 1 or later\r\n\u2022 Microsoft .NET Framework 4.0\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click the download button to download the installation file and user guide.  Follow the detailed instructions in the user guide to install and use the add-in.",
+    "additionalInformationSection": "LICENSE:\r\nMicrosoft grants you a non-exclusive, worldwide, royalty-free license to use this software add-in for Visio.  The software is licensed \"as-is\" and we do not provide support services for it.  You bear the risk of using it.  Microsoft makes no express or implied warranties, guarantees or conditions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \r\n\r\nThe following table lists changes from the WBS Modeler 1.0, which was supported on Visio 2007.\r\nWBS Modeler updated features:\r\n\r\n\u2022 Import\r\no Browse the Project files\r\no Populate the opened project files\r\no Improvement in the performance\r\n\u2022 WBS Diagram\r\no All the custom field data are populated in the task shape from Project file\r\no All the task field data are populated in the Visio datarecordset\r\no Removed restrictions in changing Page Layout\r\no Custom Data Graphics can be applied\r\no Themes, page color, background can be changed\r\no Auto Connect feature can be used to quickly create new diagrams\r\n\r\n\u2022 Export to Project\r\no The Visio diagram will be exported exactly as the same to the project file regardless of the task created manually by drag and drop or from Add child/sibling element(s).\r\no Filed Items listed below will be updated in the exported Project file:\r\nPriority, Start, Finish, Duration, Work, Milestone, Cost, Resource Names, Estimated\r\n\r\n\u2022 Discontinued features:\r\no All shape layout features \r\no Add Space\r\no Remove a Space\r\no Remove all Spaces\r\no Arrange Child element Horizontally\r\no Arrange Child element Vertically\r\no Move Left\r\no Move Right\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26229",
+    "downloadPreload": true
+}

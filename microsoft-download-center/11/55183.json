@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft OLE DB Provider for DB2 Version 5.0 Documentation",
+    "downloadDescription": "The Microsoft OLE DB Provider for DB2 Version 5.0 documentation provides information for installing and using version 5 of the Microsoft OLE DB Provider for DB2 (Data Provider).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBV5.pdf",
+            "url": "https://download.microsoft.com/download/b/f/0/bf00eca5-5d36-42e8-9771-3448f61f39b4/DB2OLEDBV5.pdf",
+            "size": "1323524",
+            "version": "5.0",
+            "datePublished": "7/15/2024 4:38:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft OLE DB Provider for DB2 Version 5.0 (Data Provider) lets you create distributed applications targeting IBM DB2 databases. The Data Provider takes advantage of Microsoft SQL Server data access architecture together with a Microsoft network client for DB2 that functions as a Distributed Relational Database Architecture (DRDA) application requester. The Data Provider converts Microsoft Component Object Model (COM) OLE DB commands and data types to DRDA protocol code points and data formats. The Data Provider documentation provides information for installing and using version 5 of the Data Provider.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "DB2OLEDBV5.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Requirements\r\n<ul>\r\n<li>Microsoft Windows\u00ae 7</li>\r\n<li>Microsoft Windows 8</li>\r\n<li>Microsoft Windows 8.1</li>\r\n<li>Microsoft Windows Server\u00ae 2008 SP2</li>\r\n<li>Microsoft Windows Server 2008 R2 SP1</li>\r\n<li>Microsoft Windows Server 2012</li>\r\n<li>Microsoft Windows Server 2012 R2</li>\r\n</ul>\r\n<br/>\r\nTo view the PDF file, you will need a PDF reader, such as the free Adobe Reader. \r\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Instructions\r\n<ul>\r\n<li>Click the Download button to download the PDF file. </li>\r\n<li>Save the file to your computer.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55183",
+    "downloadPreload": true
+}

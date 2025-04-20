@@ -1,0 +1,267 @@
+{
+    "error": "",
+    "downloadTitle": "Update 23.11 for Dynamics 365 Business Central 2023 Release Wave 2",
+    "downloadDescription": "Streamline your process, make smarter decisions and accelerate growth with Dynamics 365 Business Central",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics.365.BC.23421.W1.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.W1.DVD.zip",
+            "size": "1722328813",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.US.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.US.DVD.zip",
+            "size": "1739133700",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.SE.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.SE.DVD.zip",
+            "size": "1683317529",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.RU.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.RU.DVD.zip",
+            "size": "1746129218",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.NZ.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.NZ.DVD.zip",
+            "size": "1729537089",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.NO.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.NO.DVD.zip",
+            "size": "1752040099",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.NL.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.NL.DVD.zip",
+            "size": "1767355357",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.MX.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.MX.DVD.zip",
+            "size": "1691307306",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.IT.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.IT.DVD.zip",
+            "size": "1781978942",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.IS.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.IS.DVD.zip",
+            "size": "1718573998",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.IN.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.IN.DVD.zip",
+            "size": "1772055049",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.GB.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.GB.DVD.zip",
+            "size": "1734456831",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.FR.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.FR.DVD.zip",
+            "size": "1762342071",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.FI.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.FI.DVD.zip",
+            "size": "1725500065",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.ES.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.ES.DVD.zip",
+            "size": "1739169853",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.DK.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.DK.DVD.zip",
+            "size": "1733592400",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.DE.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.DE.DVD.zip",
+            "size": "1743141675",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.CZ.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.CZ.DVD.zip",
+            "size": "1765893622",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.CH.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.CH.DVD.zip",
+            "size": "1927330714",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.CA.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.CA.DVD.zip",
+            "size": "1766369335",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.BE.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.BE.DVD.zip",
+            "size": "1885304212",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.AU.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.AU.DVD.zip",
+            "size": "1725427087",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.23421.AT.DVD.zip",
+            "url": "https://download.microsoft.com/download/0/0/e/00e41d2f-a413-4097-806d-e8fffc3bb01c/Release/Dynamics.365.BC.23421.AT.DVD.zip",
+            "size": "1716278967",
+            "version": "23421",
+            "datePublished": "9/6/2024 7:11:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about what is included in this update please visit this kb article: https://support.microsoft.com/en-us/help/5043980",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5043980",
+        "name": "5043980"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "23421",
+    "detailsSection_file_name": [
+        "Dynamics.365.BC.23421.W1.DVD.zip",
+        "Dynamics.365.BC.23421.US.DVD.zip",
+        "Dynamics.365.BC.23421.SE.DVD.zip",
+        "Dynamics.365.BC.23421.RU.DVD.zip",
+        "Dynamics.365.BC.23421.NZ.DVD.zip",
+        "Dynamics.365.BC.23421.NO.DVD.zip",
+        "Dynamics.365.BC.23421.NL.DVD.zip",
+        "Dynamics.365.BC.23421.MX.DVD.zip",
+        "Dynamics.365.BC.23421.IT.DVD.zip",
+        "Dynamics.365.BC.23421.IS.DVD.zip",
+        "Dynamics.365.BC.23421.IN.DVD.zip",
+        "Dynamics.365.BC.23421.GB.DVD.zip",
+        "Dynamics.365.BC.23421.FR.DVD.zip",
+        "Dynamics.365.BC.23421.FI.DVD.zip",
+        "Dynamics.365.BC.23421.ES.DVD.zip",
+        "Dynamics.365.BC.23421.DK.DVD.zip",
+        "Dynamics.365.BC.23421.DE.DVD.zip",
+        "Dynamics.365.BC.23421.CZ.DVD.zip",
+        "Dynamics.365.BC.23421.CH.DVD.zip",
+        "Dynamics.365.BC.23421.CA.DVD.zip",
+        "Dynamics.365.BC.23421.BE.DVD.zip",
+        "Dynamics.365.BC.23421.AU.DVD.zip",
+        "Dynamics.365.BC.23421.AT.DVD.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.7 GB",
+        "1.6 GB",
+        "1.7 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.6 GB",
+        "1.8 GB",
+        "1.6 GB",
+        "1.8 GB",
+        "1.6 GB",
+        "1.6 GB"
+    ],
+    "detailsSection_file_date": "9/6/2024",
+    "systemRequirementsSection": "https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/system-requirements-business-central-v23",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "How to install this update: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrading-cumulative-update-v23",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106224",
+    "downloadPreload": true
+}

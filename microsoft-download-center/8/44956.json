@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX - VAT Declaration (Estonia)",
+    "downloadDescription": "This document provides information about the Estonia VAT declaration hotfix for AX 2009 SP1, AX 2012 R2, and AX 2013 R3.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX - VAT Declaration (Estonia).pdf",
+            "url": "https://download.microsoft.com/download/5/a/a/5aacf999-bfae-473c-8356-3dd3aa8c2266/Microsoft Dynamics AX - VAT Declaration (Estonia).pdf",
+            "size": "271892",
+            "version": "2009, 2012, 2013",
+            "datePublished": "7/15/2024 3:22:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides information about the business process, reports, and fields that are affected by hotfix 3009510.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009, 2012, 2013",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX - VAT Declaration (Estonia).pdf"
+    ],
+    "detailsSection_file_size": [
+        "265.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44956",
+    "downloadPreload": true
+}

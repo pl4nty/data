@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Enterprise Single Sign-On v4 (KB2252691)",
+    "downloadDescription": "This update corrects an assembly registration that causes a failure when .NET 4 is present on the system",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ESSOv4-KB2252691-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/f/0/3f0b8a8f-08b2-4d36-9bf0-031bc4423357/ESSOv4-KB2252691-x64-ENU.exe",
+            "size": "170048",
+            "version": "6.0.245",
+            "datePublished": "7/15/2024 3:10:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ESSOv4-KB2252691-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/f/0/3f0b8a8f-08b2-4d36-9bf0-031bc4423357/ESSOv4-KB2252691-x86-ENU.exe",
+            "size": "170048",
+            "version": "6.0.245",
+            "datePublished": "7/15/2024 3:10:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This update fixes an issue that prevents the ENTSSO service from starting, after installing .NET Framework 4. The registration of an assembly used by the Enterprise Single Sign-On Service to access SQL Server does not specify the correct version of the .NET Framework.  When .NET Framework 4 is installed, the assembly will try to use the newer framework and then fail to load.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.245",
+    "detailsSection_file_name": [
+        "ESSOv4-KB2252691-x64-ENU.exe",
+        "ESSOv4-KB2252691-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "166.1 KB",
+        "166.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>Enterprise Single Sign-On</b> included with <b>Host Integration Server 2009</b>, <b>BizTalk Server 2006 R2</b>, or <b>BizTalk Server 2009</b></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI>\r\n    </UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12284",
+    "downloadPreload": true
+}

@@ -1,0 +1,217 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server 2012 R2 Essentials",
+    "downloadDescription": "This management pack help administrators monitor Windows Server 2012 R2 Essentials",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Essentials 2012 R2.msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2.msi",
+            "size": "602112",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (TRK).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (TRK).msi",
+            "size": "581632",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (SVE).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (SVE).msi",
+            "size": "585728",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (RUS).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (RUS).msi",
+            "size": "626688",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (PTG).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (PTG).msi",
+            "size": "552960",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (PTB).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (PTB).msi",
+            "size": "593920",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (PLK).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (PLK).msi",
+            "size": "581632",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (NLD).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (NLD).msi",
+            "size": "552960",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (KOR).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (KOR).msi",
+            "size": "774144",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (JPN).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (JPN).msi",
+            "size": "593920",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (ITA).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (ITA).msi",
+            "size": "602112",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (HUN).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (HUN).msi",
+            "size": "581632",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (FRA).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (FRA).msi",
+            "size": "577536",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (ESN).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (ESN).msi",
+            "size": "557056",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (DEU).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (DEU).msi",
+            "size": "561152",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (CSY).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (CSY).msi",
+            "size": "593920",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2012 R2 (CHT).msi",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/SC Management Pack for Essentials 2012 R2 (CHT).msi",
+            "size": "602112",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Essentials Guide for System Center Management Pack.docx",
+            "url": "https://download.microsoft.com/download/9/0/9/9095b956-1f18-4b4e-9f3d-d89d0d9c9eb7/Essentials Guide for System Center Management Pack.docx",
+            "size": "104554",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The management pack is used to monitor the Windows Server Essentials role of Windows Server 2012 R2\n<br />\n<br />\n<br />\n<b>Release History</b><br />\n<ul>\n<li>10/18/2013 - version 7.1.10100.0</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10100.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for Essentials 2012 R2.msi",
+        "SC Management Pack for Essentials 2012 R2 (TRK).msi",
+        "SC Management Pack for Essentials 2012 R2 (SVE).msi",
+        "SC Management Pack for Essentials 2012 R2 (RUS).msi",
+        "SC Management Pack for Essentials 2012 R2 (PTG).msi",
+        "SC Management Pack for Essentials 2012 R2 (PTB).msi",
+        "SC Management Pack for Essentials 2012 R2 (PLK).msi",
+        "SC Management Pack for Essentials 2012 R2 (NLD).msi",
+        "SC Management Pack for Essentials 2012 R2 (KOR).msi",
+        "SC Management Pack for Essentials 2012 R2 (JPN).msi",
+        "SC Management Pack for Essentials 2012 R2 (ITA).msi",
+        "SC Management Pack for Essentials 2012 R2 (HUN).msi",
+        "SC Management Pack for Essentials 2012 R2 (FRA).msi",
+        "SC Management Pack for Essentials 2012 R2 (ESN).msi",
+        "SC Management Pack for Essentials 2012 R2 (DEU).msi",
+        "SC Management Pack for Essentials 2012 R2 (CSY).msi",
+        "SC Management Pack for Essentials 2012 R2 (CHT).msi",
+        "Essentials Guide for System Center Management Pack.docx"
+    ],
+    "detailsSection_file_size": [
+        "588.0 KB",
+        "568.0 KB",
+        "572.0 KB",
+        "612.0 KB",
+        "540.0 KB",
+        "580.0 KB",
+        "568.0 KB",
+        "540.0 KB",
+        "756.0 KB",
+        "580.0 KB",
+        "588.0 KB",
+        "568.0 KB",
+        "564.0 KB",
+        "544.0 KB",
+        "548.0 KB",
+        "580.0 KB",
+        "588.0 KB",
+        "102.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Other Software: </b> </li>\n<ul>\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2</li>\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40809",
+    "downloadPreload": true
+}

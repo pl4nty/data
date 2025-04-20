@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Volume Licensing Service Center (VLSC) User Guide",
+    "downloadDescription": "Download these user guides for step-by-step instruction for the Microsoft Volume Licensing Service Center (VLSC).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VLSC-License-Relationship-Summary-Information_en-US.pdf",
+            "url": "https://download.microsoft.com/download/2/8/7/2873206c-9d4e-48a9-9855-c7e150b966c4/VLSC-License-Relationship-Summary-Information_en-US.pdf",
+            "size": "929172",
+            "version": "June 2017",
+            "datePublished": "7/15/2024 3:07:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VLSC-Downloads-Keys-Subscriptions-Online-Services_en-US.pdf",
+            "url": "https://download.microsoft.com/download/2/8/7/2873206c-9d4e-48a9-9855-c7e150b966c4/VLSC-Downloads-Keys-Subscriptions-Online-Services_en-US.pdf",
+            "size": "942785",
+            "version": "June 2017",
+            "datePublished": "7/15/2024 3:07:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VLSC-Getting-Started-and-Administration_en-US.pdf",
+            "url": "https://download.microsoft.com/download/2/8/7/2873206c-9d4e-48a9-9855-c7e150b966c4/VLSC-Getting-Started-and-Administration_en-US.pdf",
+            "size": "925518",
+            "version": "June 2017",
+            "datePublished": "7/15/2024 3:07:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "These user guides show step-by-step instructions for how to register, view account details, download products and more from the Microsoft Volume Licensing Service Center (VLSC). They also include screenshots, technical support information, and a glossary.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2017",
+    "detailsSection_file_name": [
+        "VLSC-License-Relationship-Summary-Information_en-US.pdf",
+        "VLSC-Downloads-Keys-Subscriptions-Online-Services_en-US.pdf",
+        "VLSC-Getting-Started-and-Administration_en-US.pdf"
+    ],
+    "detailsSection_file_size": [
+        "907.4 KB",
+        "920.7 KB",
+        "903.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You must have Adobe Reader installed on your computer to view these files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Click Download to open or save these files to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10585",
+    "downloadPreload": true
+}

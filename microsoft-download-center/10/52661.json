@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Logical Architecture Sample for Windows SharePoint Services",
+    "downloadDescription": "Sample for WSS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LogicalArchitectureSample_WSSCollaboration.vsd",
+            "url": "https://download.microsoft.com/download/a/3/8/a380e448-a9eb-489c-b6c5-27f56f21a115/LogicalArchitectureSample_WSSCollaboration.vsd",
+            "size": "942080",
+            "version": "1",
+            "datePublished": "7/15/2024 4:03:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Poster of logical architecture for WSS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "LogicalArchitectureSample_WSSCollaboration.vsd"
+    ],
+    "detailsSection_file_size": [
+        "920.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You need Visio.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download, and then view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52661",
+    "downloadPreload": true
+}

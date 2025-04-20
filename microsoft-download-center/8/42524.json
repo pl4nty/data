@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Backup and Restore Instructions for the DirSync Database",
+    "downloadDescription": "Instructions for backup ofthe SQL Server database used by DirSync",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Backup_Instructions_for_Office_365_DirSync_April_2014.docx",
+            "url": "https://download.microsoft.com/download/2/1/0/210ab7e9-242e-4076-9fd9-576e0a474602/Backup_Instructions_for_Office_365_DirSync_April_2014.docx",
+            "size": "31884",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Azure Active Directory Sync tool (DirSync) is used to provision user accounts from Windows Active Directory on-premises to Azure Active Directory in the cloud. DirSync will synchronize changes to user accounts made on-premises to the cloud so that cloud users have access to directory information and can sign-in. This document describes how to backup and later restore the database and encryption keys required for a DirSync install. This will reduce the time to resynchronize user accounts from your on-premises Active Directory to Windows Azure Active Directory when there has been a failure of the previous DirSync installation. This document is specifically written for the 64-bit version the of DirSync. It outlines backup and restore steps required for when you need to reinstall DirSync on a new server after a failure condition. Specifically it will help you where the SQL Database used by DirSync is available either from a SQL high availability configuration or from backup and you are planning to use that with a new DirSync installation. The steps in this document assume that the DirSync application will be installed on a new or rebuilt machine.  Some steps will not be needed if simply restoring the DirSync database to an existing DirSync server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Backup_Instructions_for_Office_365_DirSync_April_2014.docx"
+    ],
+    "detailsSection_file_size": [
+        "31.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word 2013 Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the document and read it in Word 2013 or the Word 2013 Viewer",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42524",
+    "downloadPreload": true
+}

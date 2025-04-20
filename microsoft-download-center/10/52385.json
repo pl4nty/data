@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "T2 Temporal Prover",
+    "downloadDescription": "T2 is designed to prove safety and liveness properties of programs, expressed as reachability, termination, or in the temporal logic CTL. Last published: October 29, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "T2.zip",
+            "url": "https://download.microsoft.com/download/f/2/7/f27a7396-d6e4-4657-9c1e-a847ec358ae3/T2.zip",
+            "size": "10174151",
+            "version": "2014-10",
+            "datePublished": "6/13/2024 12:55:35 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "T2 is designed to prove safety and liveness properties of programs, expressed as reachability, termination, or in the temporal logic CTL. \n\nAlso see, https://github.com/mmjb/T2.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2014-10",
+    "detailsSection_file_name": [
+        "T2.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.7 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52385",
+    "downloadPreload": true
+}

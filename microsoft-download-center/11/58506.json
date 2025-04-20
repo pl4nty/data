@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft HPC Pack 2016 Update 3",
+    "downloadDescription": "HPC Pack 2016 Update 3",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HPCPack2016Update3-Full-Refresh-v6450.zip",
+            "url": "https://download.microsoft.com/download/8/f/7/8f7bd689-5661-4733-865c-d984afc9e279/HPCPack2016Update3-Full-Refresh-v6450.zip",
+            "size": "1242749728",
+            "version": "5.3.6435",
+            "datePublished": "7/15/2024 3:07:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPack2016Update3-Full-v6435.zip",
+            "url": "https://download.microsoft.com/download/8/f/7/8f7bd689-5661-4733-865c-d984afc9e279/HPCPack2016Update3-Full-v6435.zip",
+            "size": "1068011343",
+            "version": "5.3.6435",
+            "datePublished": "7/15/2024 3:07:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPack2016Update3-Patch.zip",
+            "url": "https://download.microsoft.com/download/8/f/7/8f7bd689-5661-4733-865c-d984afc9e279/HPCPack2016Update3-Patch.zip",
+            "size": "516989270",
+            "version": "5.3.6435",
+            "datePublished": "7/15/2024 3:07:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "HPC Pack 2016 Update 3 delivers tools, performance and scalability for a highly productive HPC environment for on-premises, hybrid and cloud, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface v2 (MPI2) and Service-Oriented Architecture (SOA) interactive application support, cluster management &amp; monitoring tools.<br/>\r\n<br/>\r\n\r\nYou can download and install HPC Pack 2016 Update 3 in your on-premises computers, or you can just use the <a href=\"https://github.com/MsHpcPack/HPCPack2016\">deployment templates</a> to create a cluster on Azure with HPC Pack 2016 Update 3. <br/>\r\n<br/>\r\n\r\nThe following downloads available:<br/>\r\n<br/>\r\n<li><b>HPCPack2016Update3-Full-v6435.zip</b> Download this .zip file for a full installation package to set up an HPC Pack 2016 Update 3 cluster. If you install this package on an existing HPC Pack node, please uninstall existing HPC Pack 2016 components first.</li>\r\n<br/>\r\n<li><b>HPCPack2016Update3-Full-Refresh-v6450.zip</b> Download this .zip file for a full installation package to set up an HPC Pack 2016 Update 3 cluster with latest QFE version 5.3.6450.</li>\r\n<br/>\r\n<li><b>HPCPack2016Update3-Patch.zip</b> Download this patch to upgrade your exisiting HPC Pack 2016 Update 1 or Update 2 head nodes, Windows and Linux compute nodes, broker nodes, client computers, workstation nodes, and unmanaged server nodes. Please install the appropriate updater for the CPU architecture on computers that have already had HPC Pack 2016 Update 1 or Update 2 components installed.</li>\r\n<br/>\r\nPrior to installation, please review '<a href=\"https://docs.microsoft.com/powershell/high-performance-computing/what-s-new-in-hpc-pack-2016-update-3\">What's New in Microsoft HPC Pack 2016 update 3</a>' and  '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/release-notes-for-hpc-pack-2016-update-3\">Release Notes for Microsoft HPC Pack 2016 update 3</a>' available on the <a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing\">Microsoft HPC Pack Doc site</a>.<br/>\r\n<br/>\r\nFollowing QFEs/fixes are available for HPC Pack 2016 Update 3, please patch accordingly<br/>\r\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=100918\">QFE KB4537169</a><br/></li>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.3.6435",
+    "detailsSection_file_name": [
+        "HPCPack2016Update3-Full-Refresh-v6450.zip",
+        "HPCPack2016Update3-Full-v6435.zip",
+        "HPCPack2016Update3-Patch.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.2 GB",
+        "1018.5 MB",
+        "493.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2016 Update 3 supported Operating Systems</b>\r\n<br/>\r\n<li>Head nodes: Windows Server 2016, Windows Server 2012 R2</li>\r\n<li>Compute nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Broker nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 8.1 Pro or Enterprise, windows 10</li>\r\n<li>Unmanaged server nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Linux Compute nodes: SUSE Linux Enterprise Server 12, Red Hat Enterprise Linux 7.1, CentOS-based 6.7/7.3, Ubuntu Server 14.04 LTS and 16.04 LTS</li>\r\n<li>Client: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1 </li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\n<br/>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 4GB<br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Red Hat",
+        "SUSE",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Ubuntu",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "\r\nDownload the archive, unlock the file, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack installation wizard on a supported Windows Server based computer.<br/>\r\n<br/>\r\n<b>More instructions:</b><br/>\r\n<li>To upgrade existing HPC Pack 2016 Update 1 or Update 2 Cluster please follow '<a href=\"https://docs.microsoft.com/powershell/high-performance-computing/update-to-hpc-pack-2016-update-3\">Upgrade to HPC Pack 2016 Update 3</a>' </li>\r\n<li>To build a new on-premises HPC Pack Cluster please follow '<a href=\"https://docs.microsoft.com/powershell/high-performance-computing/get-started-guide-for-hpc-pack-2016\">Get Started Guide for HPC Pack 2016</a>' </li>\r\n<li>To build a new HPC Pack Clsuter in Azure please follow '<a href=\"https://docs.microsoft.com/powershell/high-performance-computing/get-started-guide-for-hpc-pack-2016-cloud\">Get Started Guide for HPC Pack 2016 Cloud</a>'</li>\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        },
+        {
+            "title": "windows HPC TechNet site",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=263697"
+        },
+        {
+            "title": "microsoft HPC Forum",
+            "url": "https://social.microsoft.com/Forums/en-US/home?category=windowshpc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58506",
+    "downloadPreload": true
+}

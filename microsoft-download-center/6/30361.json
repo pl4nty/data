@@ -1,0 +1,582 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013: Presentation: IT pro training",
+    "downloadDescription": "Download walkthroughs, training, and reviews of new features, changes and options in SharePoint 2013 for IT Pros.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V11_wordautomation.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V11_wordautomation.pptx",
+            "size": "438614",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M13V3_uptest.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M13V3_uptest.pptx",
+            "size": "333739",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M09V3_mms.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M09V3_mms.pptx",
+            "size": "534752",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M09V1_ecm.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M09V1_ecm.pptx",
+            "size": "1620817",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M10V4_teamdash.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M10V4_teamdash.pptx",
+            "size": "523914",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M09V2_wcm.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M09V2_wcm.pptx",
+            "size": "5508908",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V03_appmgmt.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V03_appmgmt.pptx",
+            "size": "646724",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V12_powerpoint.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V12_powerpoint.pptx",
+            "size": "319816",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M05V2_deploy.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M05V2_deploy.pptx",
+            "size": "1288002",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M13V2_upprep.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M13V2_upprep.pptx",
+            "size": "1927785",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M12V1_bcmgen.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M12V1_bcmgen.pptx",
+            "size": "2195023",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V07_machinetranslation.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V07_machinetranslation.pptx",
+            "size": "737887",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V02_accesssrv.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V02_accesssrv.pptx",
+            "size": "2420662",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M07V2_crawl.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M07V2_crawl.pptx",
+            "size": "491905",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M01V1_introduction.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M01V1_introduction.pptx",
+            "size": "6180273",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M05V1_intro.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M05V1_intro.pptx",
+            "size": "1450698",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V09_visioservices.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V09_visioservices.pptx",
+            "size": "3843483",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M10V1_customizespapps.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M10V1_customizespapps.pptx",
+            "size": "3864709",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V08_perfpoint.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V08_perfpoint.pptx",
+            "size": "1909804",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V6_mylib.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V6_mylib.pptx",
+            "size": "317652",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V5_mysitefollow.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V5_mysitefollow.pptx",
+            "size": "1026865",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M03V1_requestmgmt.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M03V1_requestmgmt.pptx",
+            "size": "311318",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M13V4_upimp.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M13V4_upimp.pptx",
+            "size": "495813",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M04V1_cacheservice.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M04V1_cacheservice.pptx",
+            "size": "456741",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M04V3_themes.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M04V3_themes.pptx",
+            "size": "933976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M03V2_analytics.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M03V2_analytics.pptx",
+            "size": "266253",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M11V1_claims.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M11V1_claims.pptx",
+            "size": "282566",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V7_mytasks.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V7_mytasks.pptx",
+            "size": "902237",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M04V4_sharing.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M04V4_sharing.pptx",
+            "size": "448495",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V04_bcs.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V04_bcs.pptx",
+            "size": "1145597",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V2_community.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V2_community.pptx",
+            "size": "2971191",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M14V1_Project ITPro.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M14V1_Project ITPro.pptx",
+            "size": "6313244",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V1_intro.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V1_intro.pptx",
+            "size": "553059",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V06_userprofileapp.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V06_userprofileapp.pptx",
+            "size": "674278",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M13V1_uplrn.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M13V1_uplrn.pptx",
+            "size": "731035",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M13V5_upval.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M13V5_upval.pptx",
+            "size": "331695",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M04V2_sitecreation.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M04V2_sitecreation.pptx",
+            "size": "403909",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M07V3_query.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M07V3_query.pptx",
+            "size": "300661",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V05_excelservices.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V05_excelservices.pptx",
+            "size": "2910786",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M10V3_devdash.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M10V3_devdash.pptx",
+            "size": "504830",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M05V3_operations.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M05V3_operations.pptx",
+            "size": "1260790",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V3_mysitearch.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V3_mysitearch.pptx",
+            "size": "328704",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M07V1_archtopology.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M07V1_archtopology.pptx",
+            "size": "1402829",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V01_serviceapps.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V01_serviceapps.pptx",
+            "size": "1515829",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_training.zip",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_training.zip",
+            "size": "67722775",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M10V5_spdworkflow.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M10V5_spdworkflow.pptx",
+            "size": "1193082",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M11V2_oauth.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M11V2_oauth.pptx",
+            "size": "358330",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M12V2_bcm15.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M12V2_bcm15.pptx",
+            "size": "957604",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M10V2_appconfig.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M10V2_appconfig.pptx",
+            "size": "1130267",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M07V4_searchinterface.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M07V4_searchinterface.pptx",
+            "size": "521234",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M08V4_mysitefeed.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M08V4_mysitefeed.pptx",
+            "size": "918378",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M06V10_workmgmt.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M06V10_workmgmt.pptx",
+            "size": "1022647",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_SP_IT_M02V1_requirements.pptx",
+            "url": "https://download.microsoft.com/download/7/7/3/773ca2c2-579b-408c-808e-a6f561194e20/Ig15_SP_IT_M02V1_requirements.pptx",
+            "size": "2810305",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains 14 training modules including PowerPoint slide deck presentations that accompany the free, online video-based training for IT Pros located here: <a href=\"http://technet.microsoft.com/en-US/sharepoint/fp123606\">http://technet.microsoft.com/en-US/sharepoint/fp123606</a> \r\n<ul>\r\n<li><b>Module 1: SharePoint 2013 IT Pro introduction and overview.</b> Get an overview of key changes and new concepts in SharePoint Server 2013 and SharePoint Foundation 2013. </li>\r\n<li><b>Module 2: SharePoint 2013 system requirements.</b> Learn about the hardware and software requirements for SharePoint 2013 and supported browser levels and setup considerations.</li>\r\n<li><b>Module 3: SharePoint 2013 architectural changes.</b> Learn about key architectural changes in SharePoint 2013 platform. We'll highlight the most relevant changes from overall architectural perspective.</li>\r\n<li><b>Module 4: SharePoint 2013 server farms and site architecture planning.</b> Plan for server farms and sites in SharePoint 2013.  Learn about planning for the distributed cache, changes in alternate access mappings and self-service site creation, new features in themes and branding, new ways to share sites, lists, and libraries.</li>\r\n<li><b>Module 5: Office Web Apps 2013 architecture and deployment.</b> Learn about the new architecture and deployment model for Office Web Apps including architectural changes, deployment options, and operation aspects for Office Web apps.</li>\r\n<li><b>Module 6: SharePoint 2013 service application architecture and individual service applications.</b> Get an overview of about changes in individual service applications in SharePoint 2013, including new service applications, general considerations, and changes in service application architecture.</li>\r\n<li><b>Module 7: SharePoint 2013 enterprise search overview.</b> Learn about the redesigned Enterprise Search in SharePoint 2013 including architectural changes to physical and logical topologies, deatils about configuration options for crawling, content, and query.</li>\r\n<li><b>Module 8: SharePoint 2013 social features.</b> Social is one of the largest investments in SharePoint 2013. New features and capabilities provide a better and more comprehensive story for social computing in SharePoint 2013. Get a walthrough of social features in SharePoint 2013.</li>\r\n<li><b>Module 9: SharePoint 2013 enterprise content management and web content management considerations.</b> Get an overview of key changes and improvements in enterprise content management (ECM) and web content management (WCM) in SharePoint 2013. Learn about new capabilities from eDiscover improvements to major new capabilities for WCM-driven sites.</li>\r\n<li><b>Module 10: SharePoint 2013 customization options and management.</b> Learn about the new customization capabilities in SharePoint 2013 and what does that actually mean from IT Pro perspective. Learn about required infrastructural changes for new customization capabilities and setting up team development environments.</li>\r\n<li><b>Module 11: SharePoint 2013 authentication and authorization overview.</b> Get an overview of changes in claims-based authentication in SharePoint 2013.  Learn about new support for OAuth and how it's used in SharePoint 2013.  Also see how OAuth is used in Server to Server (S2S) authentication scenarios.</li>\r\n<li><b>Module 12: Overview of SharePoint 2013 business continuity management.</b> Learn about the approaches and techniques to use when devising a meaningful and cost effective business continuity management (BCM) strategy for SharePoint 2013.</li>\r\n<li><b>Module 13: Upgrading to SharePoint 2013.</b> Learn about the different facets of upgrade preparation and understand the key skills and techniques you'll need to successfully upgrade to SharePoint 2013.</li>\r\n<li><b>Module 14: What's new in Project 2013 for IT pros.</b> Get details about new enhancements for Project 2013 for IT pros, including both on-premises and online offerings. Learn about changes in the architecture, deployment and upgrade options, and administration and operations. See also the full Project 2013 training for IT pros and developers: <a href=\"http://technet.microsoft.com/en-US/projectserver/jj906608\">http://technet.microsoft.com/en-US/projectserver/jj906608</a></li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Ig15_SP_IT_M06V11_wordautomation.pptx",
+        "Ig15_SP_IT_M13V3_uptest.pptx",
+        "Ig15_SP_IT_M09V3_mms.pptx",
+        "Ig15_SP_IT_M09V1_ecm.pptx",
+        "Ig15_SP_IT_M10V4_teamdash.pptx",
+        "Ig15_SP_IT_M09V2_wcm.pptx",
+        "Ig15_SP_IT_M06V03_appmgmt.pptx",
+        "Ig15_SP_IT_M06V12_powerpoint.pptx",
+        "Ig15_SP_IT_M05V2_deploy.pptx",
+        "Ig15_SP_IT_M13V2_upprep.pptx",
+        "Ig15_SP_IT_M12V1_bcmgen.pptx",
+        "Ig15_SP_IT_M06V07_machinetranslation.pptx",
+        "Ig15_SP_IT_M06V02_accesssrv.pptx",
+        "Ig15_SP_IT_M07V2_crawl.pptx",
+        "Ig15_SP_IT_M01V1_introduction.pptx",
+        "Ig15_SP_IT_M05V1_intro.pptx",
+        "Ig15_SP_IT_M06V09_visioservices.pptx",
+        "Ig15_SP_IT_M10V1_customizespapps.pptx",
+        "Ig15_SP_IT_M06V08_perfpoint.pptx",
+        "Ig15_SP_IT_M08V6_mylib.pptx",
+        "Ig15_SP_IT_M08V5_mysitefollow.pptx",
+        "Ig15_SP_IT_M03V1_requestmgmt.pptx",
+        "Ig15_SP_IT_M13V4_upimp.pptx",
+        "Ig15_SP_IT_M04V1_cacheservice.pptx",
+        "Ig15_SP_IT_M04V3_themes.pptx",
+        "Ig15_SP_IT_M03V2_analytics.pptx",
+        "Ig15_SP_IT_M11V1_claims.pptx",
+        "Ig15_SP_IT_M08V7_mytasks.pptx",
+        "Ig15_SP_IT_M04V4_sharing.pptx",
+        "Ig15_SP_IT_M06V04_bcs.pptx",
+        "Ig15_SP_IT_M08V2_community.pptx",
+        "Ig15_SP_IT_M14V1_Project ITPro.pptx",
+        "Ig15_SP_IT_M08V1_intro.pptx",
+        "Ig15_SP_IT_M06V06_userprofileapp.pptx",
+        "Ig15_SP_IT_M13V1_uplrn.pptx",
+        "Ig15_SP_IT_M13V5_upval.pptx",
+        "Ig15_SP_IT_M04V2_sitecreation.pptx",
+        "Ig15_SP_IT_M07V3_query.pptx",
+        "Ig15_SP_IT_M06V05_excelservices.pptx",
+        "Ig15_SP_IT_M10V3_devdash.pptx",
+        "Ig15_SP_IT_M05V3_operations.pptx",
+        "Ig15_SP_IT_M08V3_mysitearch.pptx",
+        "Ig15_SP_IT_M07V1_archtopology.pptx",
+        "Ig15_SP_IT_M06V01_serviceapps.pptx",
+        "Ig15_SP_IT_training.zip",
+        "Ig15_SP_IT_M10V5_spdworkflow.pptx",
+        "Ig15_SP_IT_M11V2_oauth.pptx",
+        "Ig15_SP_IT_M12V2_bcm15.pptx",
+        "Ig15_SP_IT_M10V2_appconfig.pptx",
+        "Ig15_SP_IT_M07V4_searchinterface.pptx",
+        "Ig15_SP_IT_M08V4_mysitefeed.pptx",
+        "Ig15_SP_IT_M06V10_workmgmt.pptx",
+        "Ig15_SP_IT_M02V1_requirements.pptx"
+    ],
+    "detailsSection_file_size": [
+        "428.3 KB",
+        "325.9 KB",
+        "522.2 KB",
+        "1.5 MB",
+        "511.6 KB",
+        "5.3 MB",
+        "631.6 KB",
+        "312.3 KB",
+        "1.2 MB",
+        "1.8 MB",
+        "2.1 MB",
+        "720.6 KB",
+        "2.3 MB",
+        "480.4 KB",
+        "5.9 MB",
+        "1.4 MB",
+        "3.7 MB",
+        "3.7 MB",
+        "1.8 MB",
+        "310.2 KB",
+        "1002.8 KB",
+        "304.0 KB",
+        "484.2 KB",
+        "446.0 KB",
+        "912.1 KB",
+        "260.0 KB",
+        "275.9 KB",
+        "881.1 KB",
+        "438.0 KB",
+        "1.1 MB",
+        "2.8 MB",
+        "6.0 MB",
+        "540.1 KB",
+        "658.5 KB",
+        "713.9 KB",
+        "323.9 KB",
+        "394.4 KB",
+        "293.6 KB",
+        "2.8 MB",
+        "493.0 KB",
+        "1.2 MB",
+        "321.0 KB",
+        "1.3 MB",
+        "1.4 MB",
+        "64.6 MB",
+        "1.1 MB",
+        "349.9 KB",
+        "935.2 KB",
+        "1.1 MB",
+        "509.0 KB",
+        "896.9 KB",
+        "998.7 KB",
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download applies to the following products:</b><br/>\r\n<ul>\r\n<li>SharePoint Server 2013 </li>\r\n<li>SharePoint Foundation 2013 </li>\r\n<li>Project Server 2013 </li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Note that you can download each item individually or download the entire set of training materials (IG15_SP_IT_Training.zip).<br /><br />\r\n<b>To install this download</b>\r\n<br />\r\n<ol>\r\n<li>Download the file by clicking the Download link (above) and saving the appropriate file to your hard disk.</li><br /><br />\r\n<li>Double-click the file you saved on your hard disk to view the document.</li> \r\n</ol>\r\n<br /><br />\r\n\r\n<b>Removal of this download</b>\r\n<br /><br />\r\nThere is no removal feature for this download. <br />\r\n<br />\r\n",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint videos",
+            "url": "http://www.microsoft.com/resources/technet/en-us/office/media/video/video.html?cid=stc&from=mscomSTC"
+        },
+        {
+            "title": "training for SharePoint 2013 ITPros",
+            "url": "http://technet.microsoft.com/en-us/sharepoint/fp123606"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30361",
+    "downloadPreload": true
+}

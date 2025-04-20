@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Introducing Visual Basic 2005 for Developers",
+    "downloadDescription": "If you use Visual Basic 6, see the adoption and code migration issues in moving to Visual Basic 2005, and find guidance for a productive transition. Or extend your .NET skills using rapid application development, debugging, deployment, and more.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IntroToVB2005.msi",
+            "url": "https://download.microsoft.com/download/7/d/4/7d43d5f0-daf7-4690-9a8e-7192fa745483/IntroToVB2005.msi",
+            "size": "7368704",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:11:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Get a focused, first look at the features and capabilities in Microsoft Visual Basic 2005, Visual Studio 2005, and .NET Framework 2.0. If you currently work with Visual Basic 6, these authors fully understand the adoption and code migration issues you\u2019ll encounter. They\u2019ll step you through a quick primer on .NET Framework programming, offering guidance for a productive transition. If you already work with .NET, you\u2019ll jump directly into what\u2019s new, learning how to extend your existing skills. From the innovations in rapid application development, debugging, and deployment, to new data access, desktop, and Web programming capabilities, you get the prerelease insights and code walkthroughs you need to get productive right away.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "IntroToVB2005.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Basic 2005 <br />\nVisual Basic 6<br />\nVisual Studio 2005",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio 2005 Developer Center",
+            "url": "http://lab.msdn.microsoft.com/vs2005/"
+        },
+        {
+            "title": "visual Basic Developer Center",
+            "url": "http://msdn.microsoft.com/vbasic/"
+        },
+        {
+            "title": "visual Basic 6.0 Resource Center",
+            "url": "http://msdn.microsoft.com/VBRun/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23206",
+    "downloadPreload": true
+}

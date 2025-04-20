@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "2007 Office System Document: Groove Backup Options",
+    "downloadDescription": "A description of Groove 2007 backup options in an enterprise deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Office Groove Backup.doc",
+            "url": "https://download.microsoft.com/download/6/d/2/6d23edd9-b022-44c9-9749-61066db02921/Microsoft Office Groove Backup.doc",
+            "size": "361472",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes various options for backing up Groove 2007 user accounts and workspaces in a managed enterprise environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Office Groove Backup.doc"
+    ],
+    "detailsSection_file_size": [
+        "353.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following Office programs:<br />\n<ul><br />\n<li>Microsoft Office Groove 2007</li><br />\n<li>Microsoft Office Groove Server 2007</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<b>To install this download:</b> <br /><br />\n\nDownload the .doc file by clicking the Download button (above) and saving the file to your hard disk, then open the document as you typically would. <br />\n<br />\n<br />\n<b>To delete this download:</b>\n<br />\n<br />\nTo remove the download file, delete the .doc file. <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24291",
+    "downloadPreload": true
+}

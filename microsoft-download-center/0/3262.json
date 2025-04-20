@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Remote Desktop Services Component Architecture Poster",
+    "downloadDescription": "Provides a visual reference for understanding key Remote Desktop Services technologies in Windows Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Remote-Desktop-Services-Component-Architecture.pdf",
+            "url": "https://download.microsoft.com/download/7/9/5/795935e3-c3be-4f63-a621-513858951911/Remote-Desktop-Services-Component-Architecture.pdf",
+            "size": "3669143",
+            "version": "August 2010",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster provides a visual reference for understanding key Remote Desktop Services technologies in Windows Server 2008 R2. It explains the functions and roles of Remote Desktop Session Host, Remote Desktop Virtualization Host, Remote Desktop Connection Broker, Remote Desktop Web Access, Remote Desktop Gateway, Remote Desktop Licensing, and RemoteFX.\r\n\r\nYou can use this poster in conjunction with the previously published Windows Server 2008 and Windows Server 2008 R2 component posters (see http://go.microsoft.com/fwlink/?LinkId=193499 and http://go.microsoft.com/fwlink/?LinkId=179116) and the Windows Server 2008 R2 Hyper-V Component Architecture poster (see http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=5567b22a-8c47-4840-a88d-23146fd93151).\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2010",
+    "detailsSection_file_name": [
+        "Remote-Desktop-Services-Component-Architecture.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "remote Desktop Services TechCenter",
+            "url": "http://technet.microsoft.com/en-us/windowsserver/ee236407.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3262",
+    "downloadPreload": true
+}

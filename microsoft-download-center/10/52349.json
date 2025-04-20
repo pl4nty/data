@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Reed-Solomon erasure codes for GF(256)",
+    "downloadDescription": "This package contains standard code for erasure coding and decoding blocks of data, using Reed-Solomon codes over GF(256) [based on diagonalizing Vandermonde matrices]. Last published: January 21, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "release_rs_codes.zip",
+            "url": "https://download.microsoft.com/download/9/5/0/9508a854-dd14-4582-8350-5b5be204cc4b/release_rs_codes.zip",
+            "size": "9995",
+            "version": "1.0",
+            "datePublished": "3/15/2024 4:07:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package contains standard code for erasure coding and decoding blocks of data, using Reed-Solomon codes over GF(256) [based on diagonalizing Vandermonde matrices].",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "release_rs_codes.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.8 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52349",
+    "downloadPreload": true
+}

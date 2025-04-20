@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Extranet Topologies for SharePoint 2010 Products",
+    "downloadDescription": "Illustrates the specific extranet topologies that have been tested with SharePoint 2010 Products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OIT2010_Model_ExtranetTopologies.pdf",
+            "url": "https://download.microsoft.com/download/d/a/d/dad2fa8d-e272-42cc-a8ce-c3d977c72126/OIT2010_Model_ExtranetTopologies.pdf",
+            "size": "328451",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "OIT2010_Model_ExtranetTopologies.vsd",
+            "url": "https://download.microsoft.com/download/d/a/d/dad2fa8d-e272-42cc-a8ce-c3d977c72126/OIT2010_Model_ExtranetTopologies.vsd",
+            "size": "238592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OIT2010_Model_ExtranetTopologies.xps",
+            "url": "https://download.microsoft.com/download/d/a/d/dad2fa8d-e272-42cc-a8ce-c3d977c72126/OIT2010_Model_ExtranetTopologies.xps",
+            "size": "464500",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Illustrates the specific extranet topologies that have been tested with SharePoint 2010 Products. Provides a comparison of ISA Server, Forefront TMG, and Forefront UAG when used as a firewall or gateway product with SharePoint 2010 Products.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "OIT2010_Model_ExtranetTopologies.pdf",
+        "OIT2010_Model_ExtranetTopologies.vsd",
+        "OIT2010_Model_ExtranetTopologies.xps"
+    ],
+    "detailsSection_file_size": [
+        "320.8 KB",
+        "233.0 KB",
+        "453.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. </li><li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a></li><li>To view the XPS version of the model, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24079",
+    "downloadPreload": true
+}

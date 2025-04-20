@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSBNx",
+    "downloadDescription": "MSBNx is a component-based Windows application for creating, assessing, and evaluating Bayesian Networks. Last published: February 17, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.exe",
+            "url": "https://download.microsoft.com/download/1/b/0/1b0a60a1-1ef0-4961-9e7f-322ca800db3f/setup.exe",
+            "size": "11438576",
+            "version": "1.4.0.2",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MSBNx is a component-based Windows application for creating, assessing, and evaluating Bayesian Networks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.0.2",
+    "detailsSection_file_name": [
+        "setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52299",
+    "downloadPreload": true
+}

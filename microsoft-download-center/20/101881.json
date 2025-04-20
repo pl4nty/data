@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX Accounts Payable (AP)/Accounts Receivable (AR) for Unrealized Gains/Losses",
+    "downloadDescription": "\u200bThis document describes the defaulting logic for financial dimension values when \r\naccounting for unrealized gains/losses in cumulative update 7 for Microsoft \r\nDynamics AX 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ARAPRevaluation_R2CU7_v2.pdf",
+            "url": "https://download.microsoft.com/download/5/1/c/51c5ded0-4a38-40d0-a02c-8433dc1b8aa1/ARAPRevaluation_R2CU7_v2.pdf",
+            "size": "532518",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "View the download for detail information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "ARAPRevaluation_R2CU7_v2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "520.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101881",
+    "downloadPreload": true
+}

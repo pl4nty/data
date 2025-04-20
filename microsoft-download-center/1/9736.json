@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Shadowrun Vista Title Update 01",
+    "downloadDescription": "Title Update #1 for Shadowrun Vista",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SRPatch1.exe",
+            "url": "https://download.microsoft.com/download/5/d/6/5d6bb97d-e39b-49ec-bf0e-2e46ea9ce72d/SRPatch1.exe",
+            "size": "954368",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Title update #1 for Shadowrun Vista.  Title updates for Shadowrun Vista should automatically download and install when you run the game while connected to the Games for Windows Live service.  If you are experiencing difficulties updating the game, please try downloading and installing the update manually from this site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.01",
+    "detailsSection_file_name": [
+        "SRPatch1.exe"
+    ],
+    "detailsSection_file_size": [
+        "932.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Shadowrun Vista requires:<br />\n-  Windows Vista<br />\n-  A dual core CPU<br />\n-  2GB RAM<br />\n-  At least 4.5GB free hard drive space<br />\n-  ATI X1800 / NVIDIA 7800 video card or better",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download and double-click the SRPatch1.exe file, then follow the installation instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "shadowrun Website",
+            "url": "http://www.shadowrun.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9736",
+    "downloadPreload": true
+}

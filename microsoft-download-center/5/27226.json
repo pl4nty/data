@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Platform - Software Development Kit (SDK) (Version 11)",
+    "downloadDescription": "Software Development Kit (SDK) for the Microsoft Speech Platform Runtime 11.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "x86_MicrosoftSpeechPlatformSDK.msi",
+            "url": "https://download.microsoft.com/download/2/2/5/225f4cfa-8b54-41db-98c1-47f5a300bbf6/x86_MicrosoftSpeechPlatformSDK.msi",
+            "size": "8777728",
+            "version": "11",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "x64_MicrosoftSpeechPlatformSDK.msi",
+            "url": "https://download.microsoft.com/download/2/2/5/225f4cfa-8b54-41db-98c1-47f5a300bbf6/x64_MicrosoftSpeechPlatformSDK.msi",
+            "size": "9113600",
+            "version": "11",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSpeechSDK.chm",
+            "url": "https://download.microsoft.com/download/2/2/5/225f4cfa-8b54-41db-98c1-47f5a300bbf6/MicrosoftSpeechSDK.chm",
+            "size": "5653139",
+            "version": "11",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Speech Platform SDK 11 License.rtf",
+            "url": "https://download.microsoft.com/download/2/2/5/225f4cfa-8b54-41db-98c1-47f5a300bbf6/Microsoft Speech Platform SDK 11 License.rtf",
+            "size": "66147",
+            "version": "11",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Speech Platform SDK 11 Release Notes.rtf",
+            "url": "https://download.microsoft.com/download/2/2/5/225f4cfa-8b54-41db-98c1-47f5a300bbf6/Microsoft Speech Platform SDK 11 Release Notes.rtf",
+            "size": "172485",
+            "version": "11",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This software development kit contains the documentation, development resources, tools and samples for development of speech applications that utilize the Microsoft Speech Platform Runtime 11.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11",
+    "detailsSection_file_name": [
+        "x86_MicrosoftSpeechPlatformSDK.msi",
+        "x64_MicrosoftSpeechPlatformSDK.msi",
+        "MicrosoftSpeechSDK.chm",
+        "Microsoft Speech Platform SDK 11 License.rtf",
+        "Microsoft Speech Platform SDK 11 Release Notes.rtf"
+    ],
+    "detailsSection_file_size": [
+        "8.4 MB",
+        "8.7 MB",
+        "5.4 MB",
+        "64.6 KB",
+        "168.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\nDevelopment is supported on:\r\n<ul>\r\n    <li>Windows Vista or later</li>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n<br></br>\r\nDeployment is supported on:\r\n<ul>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>Click the file you want to download from the list below.</li>\r\n    <li>Do one of the following:</li>\r\n    <ul>\r\n        <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n        <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n    </ul>\r\n</ul>\r\n\r\n<b>Important File Download Details</b>\r\n<ul>\r\n    <li>The <a href=\"http://go.microsoft.com/fwlink/?LinkID=224075&clcid=0x409\">SDK documentation </a> is currently available as a separate download from the Software Development Kit.  </li>\r\n    <li>Please review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=224076&clcid=0x409\">release notes</a> for additional information</li>\r\n</ul>\r\n\r\n",
+    "additionalInformationSection": "<b>Note: </b>On computers with <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, downloaded Compiled Help Module (CHM) files cannot be opened. For more information, see <a href=\"http://support.microsoft.com/kb/902225/\">KB902225</a>.\n<br /><br />\nAfter saving the file locally, you can view the contents using one of the following methods:\n<br /><br />\n<b>Method 1</b>\n<ol>\n<li>Double-click the .chm file.</li>\n<li>In the <b>Open File-Security Warning</b> dialog box, click to clear the <b>Always ask before opening this file</b> check box.</li>\n<li>Click <b>Open</b>.</li>\n</ol>\n<b>Method 2</b> \n<ol>\n<li>Right-click the CHM file, and then click <b>Properties</b>.</li>\n<li>Click <b>Unblock</b>.</li>\n<li>Double-click the .chm file to open the file.</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Speech Technologies",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=187246&clcid=0x409"
+        },
+        {
+            "title": "microsoft Speech Platform - Languages 11",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223569&clcid=0x409"
+        },
+        {
+            "title": "microsoft Speech Platform - Runtime 11",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223568&clcid=0x409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27226",
+    "downloadPreload": true
+}

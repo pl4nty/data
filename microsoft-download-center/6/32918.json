@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Designing .Net Class Libraries - Packaging, Assemblies and Namespaces",
+    "downloadDescription": "Packaging, Assemblies and Namespaces By: Michael Murray",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Packaging_300k.exe",
+            "url": "https://download.microsoft.com/download/e/6/1/e61cdcf3-6150-4791-b74b-9d80860e5879/Packaging_300k.exe",
+            "size": "119849472",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Packaging_100k.exe",
+            "url": "https://download.microsoft.com/download/e/6/1/e61cdcf3-6150-4791-b74b-9d80860e5879/Packaging_100k.exe",
+            "size": "64318464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Understand best practices for packaging and structuring your units of deployment, including how to factor your code appropriately, strong naming, how packaging may impact performance, and namespace structure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Packaging_300k.exe",
+        "Packaging_100k.exe"
+    ],
+    "detailsSection_file_size": [
+        "114.3 MB",
+        "61.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 55 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click and save locally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32918",
+    "downloadPreload": true
+}

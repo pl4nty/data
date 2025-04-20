@@ -1,0 +1,414 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 Service Pack 3 Feature Pack",
+    "downloadDescription": "The Microsoft SQL Server 2016 SP3 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TSqlLanguageService.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/TSqlLanguageService.msi",
+            "size": "3686400",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSBEAS.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SSBEAS.msi",
+            "size": "2396160",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_OLEDB.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SQL_AS_OLEDB.msi",
+            "size": "31735808",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_AMO.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SQL_AS_AMO.msi",
+            "size": "4452352",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_ADOMD.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SQL_AS_ADOMD.msi",
+            "size": "3268608",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SQLSysClrTypes.msi",
+            "size": "2727936",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/sqlncli.msi",
+            "size": "3133440",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlls.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/sqlls.msi",
+            "size": "18124800",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlDom.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SqlDom.msi",
+            "size": "2170880",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharedManagementObjects.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SharedManagementObjects.msi",
+            "size": "5750784",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/SapBI.msi",
+            "size": "2134016",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReportViewer.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/ReportViewer.msi",
+            "size": "7352320",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/RBS.msi",
+            "size": "3055616",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerShellTools.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/PowerShellTools.msi",
+            "size": "2772992",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msodbcsql.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/msodbcsql.msi",
+            "size": "2744320",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/AttunityOracleCdcService.msi",
+            "size": "2277376",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x86/AttunityOracleCdcDesigner.msi",
+            "size": "2183168",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TSqlLanguageService.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/TSqlLanguageService.msi",
+            "size": "3878912",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSBEAS.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SSBEAS.msi",
+            "size": "2711552",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_OLEDB.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SQL_AS_OLEDB.msi",
+            "size": "66322432",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_AMO.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SQL_AS_AMO.msi",
+            "size": "6905856",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_ADOMD.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SQL_AS_ADOMD.msi",
+            "size": "5308416",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SQLSysClrTypes.msi",
+            "size": "3731456",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/sqlncli.msi",
+            "size": "5083136",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlls.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/sqlls.msi",
+            "size": "37695488",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlDom.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SqlDom.msi",
+            "size": "2859008",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharedManagementObjects.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SharedManagementObjects.msi",
+            "size": "6840320",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/SapBI.msi",
+            "size": "2498560",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/RBS.msi",
+            "size": "3289088",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerShellTools.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/PowerShellTools.msi",
+            "size": "3047424",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msodbcsql.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/msodbcsql.msi",
+            "size": "4304896",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/AttunityOracleCdcService.msi",
+            "size": "2568192",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner.msi",
+            "url": "https://download.microsoft.com/download/d/0/1/d01f1ef0-26d8-45fa-a4ea-12d53f0e3438/x64/AttunityOracleCdcDesigner.msi",
+            "size": "2457600",
+            "version": "13.0.6300.2",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2016 SP3 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server. It includes the latest versions of:<br />\n<ul>\n  <li>Tool and components for Microsoft\u00ae SQL Server 2016 SP3.</li>\n  <li>Add-on providers for Microsoft SQL Server 2016 SP3</li>\n  </ul><br />\n\n<br />Please reference the Instructions section of this page to learn more about each component.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.6300.2",
+    "detailsSection_file_name": [
+        "TSqlLanguageService.msi",
+        "SSBEAS.msi",
+        "SQL_AS_OLEDB.msi",
+        "SQL_AS_AMO.msi",
+        "SQL_AS_ADOMD.msi",
+        "SQLSysClrTypes.msi",
+        "sqlncli.msi",
+        "sqlls.msi",
+        "SqlDom.msi",
+        "SharedManagementObjects.msi",
+        "SapBI.msi",
+        "ReportViewer.msi",
+        "RBS.msi",
+        "PowerShellTools.msi",
+        "msodbcsql.msi",
+        "AttunityOracleCdcService.msi",
+        "AttunityOracleCdcDesigner.msi",
+        "TSqlLanguageService.msi",
+        "SSBEAS.msi",
+        "SQL_AS_OLEDB.msi",
+        "SQL_AS_AMO.msi",
+        "SQL_AS_ADOMD.msi",
+        "SQLSysClrTypes.msi",
+        "sqlncli.msi",
+        "sqlls.msi",
+        "SqlDom.msi",
+        "SharedManagementObjects.msi",
+        "SapBI.msi",
+        "RBS.msi",
+        "PowerShellTools.msi",
+        "msodbcsql.msi",
+        "AttunityOracleCdcService.msi",
+        "AttunityOracleCdcDesigner.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB",
+        "2.3 MB",
+        "30.3 MB",
+        "4.2 MB",
+        "3.1 MB",
+        "2.6 MB",
+        "3.0 MB",
+        "17.3 MB",
+        "2.1 MB",
+        "5.5 MB",
+        "2.0 MB",
+        "7.0 MB",
+        "2.9 MB",
+        "2.6 MB",
+        "2.6 MB",
+        "2.2 MB",
+        "2.1 MB",
+        "3.7 MB",
+        "2.6 MB",
+        "63.3 MB",
+        "6.6 MB",
+        "5.1 MB",
+        "3.6 MB",
+        "4.8 MB",
+        "35.9 MB",
+        "2.7 MB",
+        "6.5 MB",
+        "2.4 MB",
+        "3.1 MB",
+        "2.9 MB",
+        "4.1 MB",
+        "2.4 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "      <br />\n      <b>Note:</b>\n      System requirements vary among the install packages included in the Feature Pack.\n      <br />\n      <b>Note:</b> \n      When an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\r\n<a name=\"MDS Add-in\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?linkid=2170014\">Microsoft\u00ae SQL Server\u00ae 2016 SP3 Master \r\nData Service Add-in for Microsoft Excel\u00ae</a></b>\r\n<br />\r\n<ul>\r\nThe Master Data Services Add-in for Excel gives multiple users the ability to update master \r\n\r\ndata in a familiar tool without compromising the data\u2019s integrity in MDS. From within the \r\n\r\nAdd-in, users can publish data to the MDS database with the click of a button. Administrators \r\n\r\ncan use the Add-in to create new model objects and load data without ever launching any \r\n\r\nadministrative tools, helping to speed deployment. With the Master Data Services Add-in for \r\n\r\nExcel, all master data remains centrally managed in MDS, while the ability to read or update \r\n\r\nthe data is distributed to those who need it.<br />\r\n<br />\r\nThe Master Data Services (MDS) Add-in for Microsoft Excel is a data management tool that \r\n\r\ndelivers a multitude of master data management capabilities with ease and efficiency. Manage \r\n\r\nMDS data within an interface you already know and love Microsoft Excel. Leverage existing \r\n\r\nExcel functionality to share your managed lists with others, knowing these lists can be \r\n\r\nsecured and monitored with all of the features provided by Master Data Services. <br />\r\n</ul>\r\n\r\n<a name=\"Attunity Designer and Service\"></a><br /><br />\r\n<b>Microsoft\u00ae Change Data Capture Designer and Service for Oracle by Attunity for Microsoft \r\n\r\nSQL Server\u00ae 2016 SP3</b> \r\n<ul>\r\nMicrosoft Change Data Capture Designer and Service for Oracle by Attunity allow you to \r\n\r\ncontinually copy data from Oracle to SQL Server. This can be useful in both migration and data \r\n\r\nwarehouse scenarios by allowing you to both; synchronize critical tables throughout the \r\n\r\nmigration timeframe by copying changes made to the Oracle tables into the SQL Server tables as \r\n\r\nwell as capture changes from your Oracle database and send them to SQL Server databases to \r\n\r\nkeep data warehouses in sync. \r\n<br />\r\n<ul>\r\n<b>Filename X86 and X64 Package</b> (AttunityOraleCdcService.msi)<br />\r\n<b>Filename X86 and X64 Package</b> (AttunityOraleCdcDesigner.msi)<br />\r\n </ul>\r\n</ul>\r\n\r\n<a name=\"SAP BW\"></a><br /><br />\r\n  <b>Microsoft\u00ae Connector for SAP BW for Microsoft SQL Server\u00ae 2016 SP3</b>\r\n  <ul>\r\nThe Microsoft Connector for SAP BW is a set of managed components for transferring data to or \r\n\r\nfrom an SAP NetWeaver BW version 7.0 system. The component is designed to be used with SQL \r\n\r\nServer Integration Services. To install the component, run the platform-specific installer for \r\n\r\nx86 or x64 respectively. For more information see the Readme and the installation topic in the \r\n\r\nHelp file.\r\n<br />\r\n <ul>\r\n<b>Filename: X86 and x64 Package</b> (SAPBI.msi)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n \r\n<a name=\"ADOMD.NET\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 ADOMD.NET </b> \r\n<ul>\r\nADOMD.NET is a Microsoft .NET Framework object model that enables software developers to \r\n\r\ncreate client-side applications that browse metadata and query data stored in Microsoft SQL \r\n\r\nServer 2016 SP3 Analysis Services. ADOMD.NET is a Microsoft ADO.NET provider with enhancements for \r\n\r\nonline analytical processing (OLAP) and data mining.<br /><br />\r\n<b>Note</b>:The English ADOMD.NET setup package installs support for all SQL Server 2016 SP3\r\n\r\nlanguages.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQL_AS_ADOMD.msi)<br />\r\n</ul>\r\n</ul>\r\n\r\n<a name=\"ASOLEDB\"></a><br /><br />\r\n<b>Microsoft\u00ae Analysis Services OLE DB Provider for Microsoft SQL Server\u00ae 2016 SP3</b> \r\n<ul>\r\nThe Analysis Services OLE DB Provider is a COM component that software developers can use to \r\n\r\ncreate client-side applications that browse metadata and query data stored in Microsoft SQL \r\n\r\nServer 2016 Analysis Services. This provider implements both the OLE DB specification and the \r\n\r\nspecification\u2019s extensions for online analytical processing (OLAP) and data mining.<br /><br />\r\n<b>Note:</b> Microsoft Analysis Services OLE DB Provider requires <b>Microsoft Core XML \r\n\r\nServices (MSXML) 6.0</b><br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQL_AS_OLEDB.msi)<br />\r\n </ul>\r\n</ul>\r\n\r\n<a name=\"AMO\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 Analysis Management Objects </b> \r\n<ul>\r\nAnalysis Management Objects (AMO) is a .NET Framework object model that enables software \r\n\r\ndevelopers to create client-side applications to manage and administer Analysis Services \r\n\r\nobjects.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQL_AS_AMO.msi)<br />\r\n</ul>\r\n</ul>\r\n\r\n<a name=\"Report Builder\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?LinkId=734968\">Microsoft\u00ae SQL Server\u00ae Report \r\n\r\nBuilder for Microsoft SQL Server 2016 SP3</a></b>\r\n<br />\r\n<ul>\r\nReport Builder provides a productive report-authoring environment for IT professionals and \r\n\r\npower users. It supports the full operational reporting capabilities of SQL Server 2016 SP3\r\n\r\nReporting Services. The download provides a stand-alone installer for Report Builder.<br />\r\n</ul>\r\n\r\n<a name=\"RS for SharePoint\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?linkid=2169530\">Microsoft\u00ae SQL Server\u00ae 2016 SP3\r\n\r\nReporting Services Add-in for Microsoft SharePoint\u00ae</a></b>\r\n<br />\r\n<ul>\r\nReporting Services Add-in for Microsoft SharePoint technologies allows you to integrate \r\n\r\nReporting Services features with the collaborative SharePoint experience.<br />\r\n</ul>\r\n\r\n<a name=\"PP for Sharepoint 2013\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?linkid=2169526\">Microsoft\u00ae SQL Server\u00ae 2016 SP3\r\n\r\nPowerPivot\u00ae for Microsoft SharePoint\u00ae 2013</a></b>\r\n<br />\r\n<ul>\r\nMicrosoft SQL Server 2016 SP3 PowerPivot for SharePoint 2013 extends SharePoint Server 2013 to add \r\n\r\nserver-side data refresh processing, collaboration, and management support for PowerPivot \r\n\r\nworkbooks.<br />\r\n</ul>\r\n\r\n<a name=\"PP for SharePoint 2016\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?linkid=2169528\">Microsoft\u00ae SQL Server\u00ae 2016 SP3\r\n\r\nPowerPivot\u00ae for Microsoft SharePoint\u00ae 2016 </a></b>\r\n<br />\r\n<ul>\r\nMicrosoft SQL Server 2016 SP3 PowerPivot for SharePoint 2016 extends SharePoint Server 2016 to add \r\n\r\nserver-side data refresh processing, collaboration, and management support for PowerPivot \r\n\r\nworkbooks.<br />\r\n</ul>\r\n\r\n<a name=\"JDBC\"></a><br /><br />\r\n<b><a href=\"https://aka.ms/downloadmssqljdbc\">Microsoft\u00ae JDBC Drivers for \r\n\r\nMicrosoft SQL Server\u00ae</a></b>\r\n<ul>\r\nThe Microsoft JDBC Driver for SQL Server provides access to SQL Server from any Java \r\n\r\napplication, application server, or Java-enabled applet. <br />\r\n </ul>\r\n \r\n<a name=\"CMD\"></a><br /><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=2169925\">Microsoft\u00ae Command Line Utilities for SQL Server\u00ae</a></b>\r\n<ul>\r\nThe SQLCMD utility allows users to connect to, send Transact-SQL batches from, and output rowset information from SQL Server instances. \r\n\r\nThe bcp utility bulk copies data between an instance of Microsoft SQL Server and a data file in a user-specified format. The bcp utility can be used \r\n\r\nto import large numbers of new rows into SQL Server tables or to export data out of tables into data files. <br />\r\n </ul>\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (MsSqlCmdLnUtils.msi)<br />\r\n</ul>\r\n\r\n<a name=\"ODBC\"></a><br /><br />\r\n <b>Microsoft\u00ae ODBC Drivers for Microsoft SQL Server\u00ae</b>\r\n  <ul>\r\nThe Microsoft ODBC Drivers for SQL Server provides native connectivity from Windows and Unix to Microsoft SQL Server and Microsoft Azure SQL Database.\r\n<br />\r\n </ul>\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (Msodbcsql.msi)<br />\r\n</ul>\r\n\r\n<a name=\"PHP Driver\"></a><br /><br />\r\n<b><a href=\"https://aka.ms/downloadmsphpsql\">Microsoft\u00ae Drivers for PHP for \r\n\r\nMicrosoft\u00ae SQL Server\u00ae</a></b>\r\n <ul>\r\nThe Microsoft Drivers for PHP for SQL Server are PHP extensions that allow for the reading \r\n\r\nand writing of SQL Server data from within PHP scripts. The SQLSRV extension provides a \r\n\r\nprocedural interface while the PDO_SQLSRV extension implements PDO for accessing data in SQL Server.<br />\r\n<br />\r\n</ul>\r\n\r\n<a name=\"Reading\"></a><br /><br />\r\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkID=391033\">Microsoft\u00ae SQL Server\u00ae Backup to \r\n\r\nWindows\u00ae Azure\u00ae Tool</a></b>\r\n<br />\r\n<ul>\r\nFor functionality previously provided by Microsoft SQL Server Backup to Windows Azure Tool, please see documentation for the <a href=\"https://go.microsoft.com/fwlink/?linkid=2169817\">Backup to URL </a>feature built in to SQL Server.\r\n <br />\r\n</ul>\r\n\r\n<a name=\"Kerberos\"></a><br /><br />\r\n  <b><a href=\"http://go.microsoft.com/fwlink/?LinkID=391032\"> Microsoft\u00ae Kerberos \r\n\r\nConfiguration Manager for Microsoft SQL Server\u00ae </a></b>\r\n  <ul>\r\nKerberos authentication provides a highly secure method to authenticate client and server \r\n\r\nentities (security principals) on a network. <br /><br />\r\n </ul>\r\n\r\n<a name=\"Semantic Full Text Search\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?linkid=869609\">Microsoft\u00ae SQL Server\u00ae 2016 SP3\r\n\r\nSemantic Language Statistics</a></b>\r\n<br />\r\n<ul>\r\nThe Semantic Language Statistics Database is a required component for the Statistical Semantic \r\n\r\nSearch feature in Microsoft SQL Server 2016 SP3. You can download this database from this page, \r\n\r\nattach it to your SQL Server 2016 SP3 instance, and register it to use the new Semantic Search \r\n\r\nfeatures. <br />\r\n</ul>\r\n\r\n<a name=\"dacframework\"></a><br />\r\n<b><a href=\"https://go.microsoft.com/fwlink/?linkid=2168285\">Microsoft\u00ae SQL Server\u00ae Data-Tier \r\n\r\nApplication Framework</a></b>\r\n<ul>\r\nThe SQL Server Data-tier Application (DAC) framework is a component based on the .NET \r\n\r\nFramework that provides application lifecycle services for database development and \r\n\r\nmanagement. Application lifecycle services include extract, build, deploy, upgrade, import, \r\n\r\nand export for data-tier applications in SQL Azure, and SQL Server. \r\n<br />Note: Microsoft SQL Server 2016 SP3 Data-tier Application Framework requires Microsoft SQL \r\n\r\nServer System CLR Types, and Microsoft SQL Server Transact-SQL ScriptDom both of which are \r\n\r\navailable on this page.<br />\r\n<br />\r\n </ul>\r\n\r\n<a name=\"T-SQL Language Service\"></a><br /><br />\r\n <b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 Transact-SQL Language Service </b>\r\n<ul>\r\nThe SQL Server Transact-SQL Language Service is a component based on the .NET Framework which \r\n\r\nprovides parsing validation and IntelliSense services for Transact-SQL for SQL Server. \r\n<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (tsqllanguageservice.msi)<br />\r\n<br />\r\n</ul>\r\n</ul>\r\n\r\n<a name=\"PowerShell\"></a><br /><br />\r\n  <b>Microsoft\u00ae Windows PowerShell Extensions for Microsoft SQL Server\u00ae 2016 SP3</b>\r\n  <ul>\r\n    The Microsoft Windows PowerShell Extensions for SQL Server includes a provider and a set \r\n\r\nof cmdlets that enable administrators and developers to build PowerShell scripts for managing \r\n\r\ninstances of SQL Server. The SQL Server PowerShell Provider delivers a simple mechanism for \r\n\r\nnavigating SQL Server instances that is similar to file system paths. PowerShell scripts can \r\n\r\nthen use the SQL Server Management Objects to administer the instances. The SQL Server cmdlets \r\n\r\nsupport operations such as executing Transact-SQL scripts or evaluating SQL Server \r\n\r\npolicies.<br /><br />\r\n<b>Note:</b> Windows PowerShell Extensions for SQL Server 2016 SP3 requires <b>Microsoft SQL \r\n\r\nServer 2016 Shared Management Objects</b>. \r\n<br />\r\n    <ul>\r\n      <b>Filename: X86 and x64 Package</b> (PowerShellTools.msi)<br />\r\n   </ul>\r\n  </ul>\r\n  \r\n<a name=\"SMO\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 Shared Management Objects </b>\r\n<ul>\r\nSQL Server Management Objects (SMO) is a .NET Framework object model that enables software \r\n\r\ndevelopers to create client-side applications to manage and administer SQL Server objects and \r\n\r\nservices. <br /><br />\r\n<b>Note:</b> Microsoft SQL Server Management Objects requires -  Microsoft SQL Server System \r\n\r\nCLR Types, that is available on this page.<br />\r\n <ul>\r\n      <b>Filename: X86 and x64 Package</b> (SharedManagementObjects.msi)<br />\r\n </ul>\r\n</ul>\r\n\r\n<a name=\"T-SQL ScriptDom\"></a><br /><br />\r\n <b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 Transact-SQL ScriptDom </b>\r\n  <ul>\r\nMicrosoft SQL Server Transact-SQL ScriptDom is a .NET Framework API that provides parsing and \r\n\r\nscripting services for Transact-SQL. <br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQLDOM.MSI)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n \r\n<a name=\"T-SQL Compiler Service\"></a><br /><br />\r\n <b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 Transact-SQL Compiler Service </b>\r\n  <ul>\r\nMicrosoft SQL Server Transact-SQL Compiler Service is a set of components that provide the \r\n\r\ncompilation and validation services for Transact-SQL. This component can be used only via the \r\n\r\nMicrosoft SQL Server Data-Tier Application Framework build API.<br />\r\n <ul>\r\n<b>Filename: X86 and x64 Package</b> (SQLLS.MSI)<br />\r\n<br />\r\n</ul>\r\n </ul>\r\n \r\n<a name=\"SQLSYSCLR\"></a><br /><br />\r\n<b> Microsoft\u00ae System CLR Types for Microsoft SQL Server\u00ae 2016 SP3</b>\r\n<ul>\r\nThe SQL Server System CLR Types package contains the components implementing the geometry, \r\n\r\ngeography, and hierarchy id types in SQL Server.  This component can be installed separately \r\n\r\nfrom the server to allow client applications to use these types outside of the server.<br /><br />\r\n<b>Note:</b> This component also requires <b><a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">Windows Installer 4.5</a></b><br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQLSysClrTypes.msi)<br />\r\n</ul>\r\n</ul>\r\n\r\n<a name=\"RBS\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2016 SP3 Remote Blob Store </b>\r\n<ul>\r\nThe SQL Server Remote Blob Store is a method for storing blobs of unstructured data in an \r\n\r\nexternal Content Addressable data store. The component consists of a client-side DLL that is \r\n\r\nlinked into a user application, as well as a set of stored procedures to be installed on SQL \r\n\r\nServer.  Run the self-extracting download package to create an installation folder.  <br />\r\n  <ul>\r\n      <b>Filename: X86 and x64 Package</b> (RBS.msi)<br />\r\n          \r\n    </ul>\r\n</ul>\r\n\r\n<a name=\"SSBEA\"></a><br /><br />\r\n<b> Microsoft\u00ae SQL Server\u00ae Service Broker External Activator for Microsoft SQL Server 2016 SP3\r\n</b> \r\n<ul>\r\nThe Microsoft SQL Server Service Broker External Activator is an extension of the internal \r\n\r\nactivation feature in SQL Server that lets you move the logic for receiving and processing \r\n\r\nService Broker messages from the Database Engine service to an application executable that \r\n\r\nruns outside SQL Server. <br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SSBEAS.msi)<br />\r\n</ul>\r\n</ul>\r\n\r\n<a name=\"DB2OLEDB v6.0\"></a><br /><br />\r\n<b>Microsoft\u00ae OLEDB Provider for DB2 v6.0 for Microsoft SQL Server\u00ae</b> \r\n<ul>\r\nThe Microsoft OLE DB Provider for DB2 v6.0 offers a set of technologies and tools for \r\n\r\nintegrating vital data stored in IBM DB2 databases with new solutions. SQL Server developers \r\n\r\nand administrators can use the data provider with integration Services, Analysis Services, \r\n\r\nReplication, Reporting Services, and Distributed Query Processor. Read the Installing Data \r\n\r\nProvider section of the product documentation, which is available <a href=\"http://go.microsoft.com/fwlink/?LinkID=241539\"> on-line</a>.\r\n<ul>\r\n  <b>Filename: X86 and x64 Package</b> (DB2OLEDB6_x86.msi and DB2OLEDB6_x64.msi)<br />\r\n   </ul>\r\n</ul>\r\n\r\n<a name=\"SsisAzureFeaturePack\"></a><br /><br />\r\n<b><a href=\"https://aka.ms/latest_afp\">Microsoft\u00ae Integration Services Feature Pack for Azure\u00ae</a></b>\r\n<ul>The Microsoft Integration Services Feature Pack for Azure provides tools for using IS to connect to the Azure stack.\r\n<br />\r\n </ul>",
+    "additionalInformationSection": "- If you have questions about SQL Server 2016 SP2, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\n<br /><br />\n- Help improve SQL Server by <a href=\"http://aka.ms/sqlfeedback\"> submitting feedback to Microsoft\u00ae User Voice </a>.\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103444",
+    "downloadPreload": true
+}

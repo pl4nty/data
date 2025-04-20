@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Content Enrichment Web Service Pipeline Toolkit 1.6",
+    "downloadDescription": "Create custom metadata in a SharePoint search index",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CEWS_1.6_x86.exe",
+            "url": "https://download.microsoft.com/download/e/6/b/e6b43e63-11cf-484d-b954-8e3ac66cd492/CEWS_1.6_x86.exe",
+            "size": "11556472",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:59:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CEWS_1.6_x64.exe",
+            "url": "https://download.microsoft.com/download/e/6/b/e6b43e63-11cf-484d-b954-8e3ac66cd492/CEWS_1.6_x64.exe",
+            "size": "11555604",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:59:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CEWS Pipeline Toolkit is a content processing framework for search that supports SharePoint 2016, SharePoint 2013, and SharePoint 2010 (FAST). Comes with installer and graphical user interface. Configure and test your pipelines using the built-in modular stages. Or, develop your own totally custom processing using Visual Studio and the included sample projects. Run your pipelines offline without SharePoint installed, or integrated as part of SharePoint's processing. Low overhead, modular and extensible. Release notes: http://social.technet.microsoft.com/wiki/contents/articles/31573.cews-pipeline-toolkit-release-notes-1-6.aspx. Public wiki page for toolkit: http://social.technet.microsoft.com/wiki/contents/articles/19376.sharepoint-cews-pipeline-toolkit.aspx\r\n\r\nPlease email cewstoolkit@microsoft.com to receive update information and for assistance with this toolkit.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6",
+    "detailsSection_file_name": [
+        "CEWS_1.6_x86.exe",
+        "CEWS_1.6_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.0 MB",
+        "11.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requires .NET 4.5",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To start the download, click the Download button and then do the following: Click Save to copy the download to your computer for installation at a later time. Install the toolkit locally for standalone development, or install on all content processing servers in your SharePoint environment. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49033",
+    "downloadPreload": true
+}

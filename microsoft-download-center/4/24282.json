@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Database Maintenance for Microsoft SharePoint 2010 Products",
+    "downloadDescription": "This white paper describes recommended database maintenance tasks for SharePoint 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DatabaseMaintenanceSharePoint2010.pdf",
+            "url": "https://download.microsoft.com/download/8/d/f/8df021f3-1173-48e5-879d-e48a57fd8ca4/DatabaseMaintenanceSharePoint2010.pdf",
+            "size": "1090975",
+            "version": "2",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DatabaseMaintenanceSharePoint2010.docx",
+            "url": "https://download.microsoft.com/download/8/d/f/8df021f3-1173-48e5-879d-e48a57fd8ca4/DatabaseMaintenanceSharePoint2010.docx",
+            "size": "341674",
+            "version": "2",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DatabaseMaintenanceSharePoint2010.xps",
+            "url": "https://download.microsoft.com/download/8/d/f/8df021f3-1173-48e5-879d-e48a57fd8ca4/DatabaseMaintenanceSharePoint2010.xps",
+            "size": "1506237",
+            "version": "2",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This white paper provides information and guidelines for maintaining the databases that host Microsoft\u00ae SharePoint\u00ae 2010 data and configurations. It describes and provides examples of the database maintenance tasks that we recommend when using SharePoint 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "DatabaseMaintenanceSharePoint2010.pdf",
+        "DatabaseMaintenanceSharePoint2010.docx",
+        "DatabaseMaintenanceSharePoint2010.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "333.7 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li><li> Click <b>Save</b> or <b>Save this program to disk</b>. </li><li>Find the file on your hard disk and double-click it to open it.</li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24282",
+    "downloadPreload": true
+}

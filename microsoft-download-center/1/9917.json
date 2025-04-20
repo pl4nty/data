@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Don Box and Doug Purdy on Oslo!",
+    "downloadDescription": "Richard and Carl talk with Don Box and Doug Purdy about Microsoft code-name Oslo, a nascent set of developer tools and technologies that promise to make development much easier than it is today.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20081014PurdyBox.zip",
+            "url": "https://download.microsoft.com/download/9/a/1/9a107221-3463-499a-a3fc-1167fcee6c31/20081014PurdyBox.zip",
+            "size": "41516160",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Don Box is an architect at Microsoft working on declarative languages and tools to simplify developing applications and services. Don joined Microsoft in 2002 as an architect of Windows Communication Foundation (WCF). Before joining Microsoft, Don was an independent consultant focused on software integration technologies. Don was the leading external voice for Microsoft\u2019s Component Object Model (COM) and Microsoft Transaction Server (MTS) and helped shape the way developers across the globe experience those technologies. In 1996, Don worked as a consultant to Software AG and Microsoft on the UNIX-based Distributed COM project; Don also worked with Microsoft and Dave Winer to create the original SOAP specification in 1998. Don is a respected writer on software development topics, serving as a series editor at Addison Wesley and as a contributing editor to C++ Report, Microsoft Systems Journal (MSJ), and MSDN Magazine. Don\u2019s first book, Essential COM, remains a part of the C++ developer\u2019s canon. Don was the first blogger to publish RSS from a Microsoft web property (http://www.gotdotnet.com/) and now (sporadically) maintains a blog at <a href=\"http://www.pluralsight.com/blogs/dbox/\">http://www.pluralsight.com/blogs/dbox/</a>.<br />\n<br />\nDouglas Purdy is a product unit manager at Microsoft working on next-generation languages and tools to broaden the franchise of people building applications. His vision is to \"make everyone a programmer\" (even if they don't know it). Previously, Douglas was the group program manager for the Windows Communication Foundation (WCF/Indigo) and Windows Workflow Foundation (WF/WinOE) teams. Douglas has been with Microsoft, on and off, since 1998 where he has worked in consulting, evangelism and engineering.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20081014PurdyBox.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.6 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9917",
+    "downloadPreload": true
+}

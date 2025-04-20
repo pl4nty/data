@@ -1,0 +1,217 @@
+{
+    "error": "",
+    "downloadTitle": "August 2010 Security Release ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on August 10th, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows-KB913086-201008-1.iso",
+            "url": "https://download.microsoft.com/download/c/f/8/cf858448-1193-4854-99bd-f3e97bc7cc2c/Windows-KB913086-201008-1.iso",
+            "size": "1641564160",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:14:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-201008-2.iso",
+            "url": "https://download.microsoft.com/download/c/f/8/cf858448-1193-4854-99bd-f3e97bc7cc2c/Windows-KB913086-201008-2.iso",
+            "size": "2749073408",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:14:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on August 10th, 2010. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />  This DVD5 image contains the following updates: <br />\r\n<b>\r\n <a href=\"http://support.microsoft.com/kb/2286198\">KB2286198</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=197393\">(MS10-046)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/981852\">KB981852</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=195812\">(MS10-047)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2160329\">KB2160329</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=194552\">(MS10-048)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/980436\">KB980436</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=197104\">(MS10-049)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/981997\">KB981997</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=197103\">(MS10-050)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2079403\">KB2079403</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=196268\">(MS10-051)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2115168\">KB2115168</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=194432\">(MS10-052)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2183461\">KB2183461</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=196549\">(MS10-053)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/982214\">KB982214</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=190318\">(MS10-054)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/982665\">KB982665</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=194906\">(MS10-055)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/978886\">KB978886</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194562&clcid=0x409\">(MS10-058)</a>\r\n</b><ul>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/982799\">KB982799</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=196444\">(MS10-059)</a>\r\n</b><ul>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 - 19 languages</li>\r\n<li>Windows Server 2008 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows Server 2008 R2 x64 Edition - 19 languages</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n<li>Windows Embedded Standard 7 - 36 languages</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems - 36 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/983582\">KB983582</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194963\">(MS10-060)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/983583\">KB983583</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194968\">(MS10-060)</a>\r\n</b><ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Server 2003 - 18 languages</li>\r\n<li>Windows Server 2003 x64 Edition - 11 languages</li>\r\n<li>Windows Server 2003 for Itanium-based Systems - 4 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/983587\">KB983587</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194962\">(MS10-060)</a>\r\n</b><ul>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/983588\">KB983588</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194965\">(MS10-060)</a>\r\n</b><ul>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/983589\">KB983589</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194966\">(MS10-060)</a>\r\n</b><ul>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows Server 2008 for Itanium-based Systems - 4 languages</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/983590\">KB983590</a>\r\n</b> / <b>\r\n <a href=\"http://go.microsoft.com/fwlink/?LinkID=194967\">(MS10-060)</a>\r\n</b><ul>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2079403; KB2115168; KB2160329; KB2183461; KB2286198; KB978886; KB980436; KB981852; KB981997; KB982214; KB982316; KB982665; KB982799; KB983582; KB983583; KB983587; KB983588; KB983589; KB983590",
+        "name": "KB2079403; KB2115168; KB2160329; KB2183461; KB2286198; KB978886; KB980436; KB981852; KB981997; KB982214; KB982316; KB982665; KB982799; KB983582; KB983583; KB983587; KB983588; KB983589; KB983590"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS10-046; MS10-047; MS10-048; MS10-049; MS10-050; MS10-051; MS10-052; MS10-053; MS10-054; MS10-055; MS10-058; MS10-059; MS10-060",
+        "name": "MS10-046; MS10-047; MS10-048; MS10-049; MS10-050; MS10-051; MS10-052; MS10-053; MS10-054; MS10-055; MS10-058; MS10-059; MS10-060"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-201008-1.iso",
+        "Windows-KB913086-201008-2.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.5 GB",
+        "2.6 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Service Pack 2",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6802",
+    "downloadPreload": true
+}

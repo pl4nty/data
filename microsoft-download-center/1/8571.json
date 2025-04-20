@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Brian Randell on Hyper-V and Virtualization",
+    "downloadDescription": "Brian Randell is back to talk about Microsoft Virtualization technologies focusing on Hyper-V, the kernel-level virtualization technology built into Windows Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080715BRandell.zip",
+            "url": "https://download.microsoft.com/download/4/6/5/46567f9f-7aaa-4757-a10c-0ea4647596de/20080715BRandell.zip",
+            "size": "41074286",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:07:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Brian A. Randell is a senior consultant with MCW Technologies, LLC. For over 20 years, Brian has been building software solutions and educating his fellow developers. Brian spends his time teaching Microsoft technologies to developers, working with new and emerging technologies like Visual Studio Team System 2008, and consulting worldwide for Fortune 500 companies like Microsoft, state and local governments, and small businesses. Brian enjoys helping people get the most out of their software. He does this through training for Pluralsight, and speaking at events such as VSLive!, Tech\u00b7Ed, and the PDC. In addition, Brian shares through the written word. Brian currently writes the Team System column for MSDN Magazine. He is the author and lead instructor of Pluralsight's Applied Team System and Applied Windows SharePoint Services courses. You can reach Brian via his blog at <a href=\"http://www.mcwtech.com/cs/blogs/brianr\">www.mcwtech.com/cs/blogs/brianr</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080715BRandell.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.2 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8571",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics AX 2009 SP1 - KB2704190",
+    "downloadDescription": "AX2009 KB 2704190",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB2704190-SP1.EXE",
+            "url": "https://download.microsoft.com/download/5/c/d/5cd92d0b-a733-4b40-bfd2-d3f7d3d54663/DynamicsAX2009-KB2704190-SP1.EXE",
+            "size": "71630848",
+            "version": "5.0.1600",
+            "datePublished": "7/15/2024 3:06:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the fix for KB 2704190 - \"Fixed assets - RB/SL (France) depreciation method calculate wrong depreciation periods remaining\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2704190",
+        "name": "KB2704190"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.1600",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB2704190-SP1.EXE"
+    ],
+    "detailsSection_file_size": [
+        "68.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "AX 2009 installed prior to downloading this fix.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Unzip the file locally and run the Axupdate.exe to start the installation",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58011",
+    "downloadPreload": true
+}

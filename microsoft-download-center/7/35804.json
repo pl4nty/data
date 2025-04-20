@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Server 2008 for Itanium-based Systems (KB2779562)",
+    "downloadDescription": "Install this update to resolve issues caused by revised daylight saving time and time zone laws in several countries.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2779562-ia64.msu",
+            "url": "https://download.microsoft.com/download/8/7/6/8768be16-b725-45b4-953d-ac0c6c637c34/Windows6.0-KB2779562-ia64.msu",
+            "size": "345953",
+            "version": "2779562",
+            "datePublished": "7/15/2024 3:16:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Install this update to resolve issues caused by revised daylight saving time and time zone laws in several countries. This update enables your computer to automatically adjust the computer clock on the correct date in 2012. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2779562",
+        "name": "KB2779562"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2779562",
+    "detailsSection_file_name": [
+        "Windows6.0-KB2779562-ia64.msu"
+    ],
+    "detailsSection_file_size": [
+        "337.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2779562"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35804",
+    "downloadPreload": true
+}

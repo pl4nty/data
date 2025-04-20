@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Arcticles on Parallel Programming with the .NET Framework 4.5",
+    "downloadDescription": "A set of articles that provide information on parallel programming with the .NET Framework 4.5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Guide to Implementing Custom TPL Dataflow Blocks.pdf",
+            "url": "https://download.microsoft.com/download/1/6/1/1615555d-287c-4159-8491-8e5644c43cba/Guide to Implementing Custom TPL Dataflow Blocks.pdf",
+            "size": "541304",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TPL Performance Improvements in .Net 4.5.pdf",
+            "url": "https://download.microsoft.com/download/1/6/1/1615555d-287c-4159-8491-8e5644c43cba/TPL Performance Improvements in .Net 4.5.pdf",
+            "size": "705302",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.5 further enhances the support for writing parallel applications, through enhancements to the CLR and the parallel libraries commonly referred to as \"Parallel Extensions to the .NET Framework.\"  The set of articles available in this download provides updated detailed information on Parallel Extension, including the Task Parallel Library (TPL)and a set of new libraries called \"TPL Dataflow\". ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Guide to Implementing Custom TPL Dataflow Blocks.pdf",
+        "TPL Performance Improvements in .Net 4.5.pdf"
+    ],
+    "detailsSection_file_size": [
+        "528.6 KB",
+        "688.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X v. 10.5 Leopard",
+        "Linux",
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the 'Download' link to commence the download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28184",
+    "downloadPreload": true
+}

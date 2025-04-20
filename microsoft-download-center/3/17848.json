@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Advanced Win32 User Mode Debugging Datasheet",
+    "downloadDescription": "This is Microsoft Services Advanced Win32 User Mode Debugging datasheet.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "debugging.pdf",
+            "url": "https://download.microsoft.com/download/b/4/9/b4917bea-50c9-4a61-887d-c0598b1023e3/debugging.pdf",
+            "size": "174310",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This 4-day WorkshopPLUS course provides a background on Win32 User Mode processes and explains different debugging scenarios and troubleshooting strategies and advanced debugging techniques.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "debugging.pdf"
+    ],
+    "detailsSection_file_size": [
+        "170.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Vista, XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To download this document, please select the download button.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17848",
+    "downloadPreload": true
+}

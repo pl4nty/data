@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Using Application Integration Framework for Audit reports",
+    "downloadDescription": "\u200bThis document explains how you can set up outbound ports for audit reports.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft_Dynamics_AX_AIF_Audit_reports.pdf",
+            "url": "https://download.microsoft.com/download/a/3/9/a39f2ae4-067a-4ebc-91bf-5d6678a07fdb/Microsoft_Dynamics_AX_AIF_Audit_reports.pdf",
+            "size": "1332674",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "It also contains information about framework description and setup, report-specific information, and generic approaches, hints, and topics that apply to multiple reports.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_AX_AIF_Audit_reports.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101938",
+    "downloadPreload": true
+}

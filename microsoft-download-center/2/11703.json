@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSN Direct Receiver 801.1.0 Firmware",
+    "downloadDescription": "MSN Direct Receiver 801.1.0 Firmware",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSNDirectReceiverFirmware801_1_0_Z_ALL_WITH_CONFIG.zip",
+            "url": "https://download.microsoft.com/download/e/8/8/e88641ec-d0a2-444d-acee-6e27f89c9412/MSNDirectReceiverFirmware801_1_0_Z_ALL_WITH_CONFIG.zip",
+            "size": "372950",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:55:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Streets & Trips 2008 Connected Services Edition, MSN Direct Receiver 801.1.0 Firmware. Use this to update your MSN Direct Receiver to the 1.0 firmware to address firmware issues or to repair a receiver that is in a corrupted state.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSNDirectReceiverFirmware801_1_0_Z_ALL_WITH_CONFIG.zip"
+    ],
+    "detailsSection_file_size": [
+        "364.2 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "No addtional system requirements beyond the requirements specified for running Streets & Trips.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\n<li>Save the .zip to a location of your choice on your hard disk. Extract (unzip) the firmware .bin file from the .zip file. Take note of the location you've chosen for the extracted .bin file.\n</li>\n<li>Launch Streets & Trips 2008 Connected Services Edition. Plug in your MSN Direct Receiver.\n</li>\n<li>Either detect the receiver or ensure that Streets & Trips MSN Direct receiver COM port setting is correct. In case the receiver cannot be detected, click Tools, then click Options, and then select the Connected Services tab. Click on the Configure MSN Direct Receiver button. Select the same COM port that is reflected in the Windows Device Manager and then click OK to save the COM port setting before proceeding.\n</li>\n<li>If the receiver is successfully detected or the MSN Direct receiver COM port setting is set properly in Streets & Trips then click Tools, then click Options, and then select the Connected Services tab. Click on the Configure MSN Direct Receiver button.<br />\nClick Update Firmware. Select the firmware update .bin file.<br />\nThe file will be validated and uploaded to the receiver.<br />\nIf the upload is successful, the receiver will return to normal after several minutes and connected services will resume.</li>\n</ol>\nIf the upload is unsuccessful, ensure that the cable is connected securely and start the update process again.<br />\n<br />\nNote that the file upload will take several minutes. <i>It is important to not disconnect the receiver during the firmware upload.</i>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11703",
+    "downloadPreload": true
+}

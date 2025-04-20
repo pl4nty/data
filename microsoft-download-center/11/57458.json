@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Updates using forward and reverse differentials",
+    "downloadDescription": "Describes a new technique to build compact software update packages applicable to any revision of the base version and how Windows 10 quality updates use this technique.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PSFxWhitepaper.docx",
+            "url": "https://download.microsoft.com/download/0/0/1/001e833d-2091-49eb-8c16-9b5ddab713bb/PSFxWhitepaper.docx",
+            "size": "48572",
+            "version": "any",
+            "datePublished": "7/15/2024 4:52:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper introduces a new technique that can produce compact software updates optimized for any origin/destination revision pair. It does this by calculating forward the differential of a changed file from the base version and its reverse differential back to the base version. Both forward and reverse differentials are then packaged as an update and distributed to the endpoints running the software to be updated. This method results in a single update package that is compact, applicable to all baselines, simple to build, efficient to install, and redistributable.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "any",
+    "detailsSection_file_name": [
+        "PSFxWhitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "47.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any software that can open Word .docx files",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the file and then open it in any software capable of using Word .docx files.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57458",
+    "downloadPreload": true
+}

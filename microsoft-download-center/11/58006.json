@@ -1,0 +1,140 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Forefront Identity Manager 2010 R2 (KB3171318)",
+    "downloadDescription": "Update for Forefront Identity Manager 2010 R2 (KB3171318)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LANGUAGE Packs.zip",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/LANGUAGE Packs.zip",
+            "size": "122905198",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMSyncService_x64_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMSyncService_x64_KB3171318.msp",
+            "size": "36346880",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "FIMService_x64_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMService_x64_KB3171318.msp",
+            "size": "31536128",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCM_x86_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMCM_x86_KB3171318.msp",
+            "size": "33252352",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCM_x64_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMCM_x64_KB3171318.msp",
+            "size": "33664512",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCMClient_x86_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMCMClient_x86_KB3171318.msp",
+            "size": "5203968",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCMClient_x64_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMCMClient_x64_KB3171318.msp",
+            "size": "5577216",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCMBulkClient_x86_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMCMBulkClient_x86_KB3171318.msp",
+            "size": "9132544",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMAddinsExtensions_x86_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMAddinsExtensions_x86_KB3171318.msp",
+            "size": "4663296",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMAddinsExtensions_x64_KB3171318.msp",
+            "url": "https://download.microsoft.com/download/3/0/5/30583509-bf21-434e-9b72-7dd65eee01a2/4.1.3766.0/FIMAddinsExtensions_x64_KB3171318.msp",
+            "size": "5215232",
+            "version": "4.1.3766.0",
+            "datePublished": "7/15/2024 3:04:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released an update for Forefront Identity Manager 2010 R2 . This update provides the latest fixes and enhancements to Forefront Identity Manager 2010 R2 . Additionally, this update contains stability and performance improvements outlined in <a href=\"http://support.microsoft.com/?kbid=3171318\">Knowledge Base Article 3171318</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3171318",
+        "name": "KB3171318"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1.3766.0",
+    "detailsSection_file_name": [
+        "LANGUAGE Packs.zip",
+        "FIMSyncService_x64_KB3171318.msp",
+        "FIMService_x64_KB3171318.msp",
+        "FIMCM_x86_KB3171318.msp",
+        "FIMCM_x64_KB3171318.msp",
+        "FIMCMClient_x86_KB3171318.msp",
+        "FIMCMClient_x64_KB3171318.msp",
+        "FIMCMBulkClient_x86_KB3171318.msp",
+        "FIMAddinsExtensions_x86_KB3171318.msp",
+        "FIMAddinsExtensions_x64_KB3171318.msp"
+    ],
+    "detailsSection_file_size": [
+        "117.2 MB",
+        "34.7 MB",
+        "30.1 MB",
+        "31.7 MB",
+        "32.1 MB",
+        "5.0 MB",
+        "5.3 MB",
+        "8.7 MB",
+        "4.4 MB",
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Forefront Identity Manager 2010 R2 (build 4.1.3419.0 or a later build) installed",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Preform a backup of your data, and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58006",
+    "downloadPreload": true
+}

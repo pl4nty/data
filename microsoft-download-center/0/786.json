@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Protection 2010 for Exchange Server Management Pack for System Center Operations Manager 2007",
+    "downloadDescription": "The Management Pack for Forefront Protection 2010 for Exchange Server monitors the availability, security, configuration and performance of an FPE deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FPE 2010 MP for SCOM 2007.msi",
+            "url": "https://download.microsoft.com/download/3/6/3/363d45f3-030c-4a1f-8335-24fc8c8a4da3/FPE 2010 MP for SCOM 2007.msi",
+            "size": "503808",
+            "version": "11.1.301.0",
+            "datePublished": "7/15/2024 4:26:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2007_MP_FPE.doc",
+            "url": "https://download.microsoft.com/download/3/6/3/363d45f3-030c-4a1f-8335-24fc8c8a4da3/OM2007_MP_FPE.doc",
+            "size": "570880",
+            "version": "11.1.301.0",
+            "datePublished": "7/15/2024 4:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Management Pack for Forefront Protection 2010 for Exchange Server (FPE) allows you to discover FPE installations and components and to monitor them within System Center Operations Manager 2007 and 2007 R2. When there is an issue that may impact the availability, configuration, or security of your FPE deployment, Operations Manager uses the management pack to detect the issue, alert you to its existence, and facilitate diagnosis and corrective actions. \r\n<br/>\r\n<br/>\r\n<b>Feature Summary: </b><br/>\r\n<ul>\r\n<li> Support for Forefront Protection 2010 for Exchange Server (FPE) </li>\r\n<li> Discovery and monitoring of key FPE services </li>\r\n<li> Monitoring of product license status </li>\r\n<li> Monitoring of the availability and configuration of scan jobs </li>\r\n<li> Monitoring of scan engine and definition updates </li>\r\n<li> Diagnostic and recovery tasks related to engine updates and service recycling </li>\r\n<li> Performance views of message scanning rate across scan jobs </li>\r\n<li> Discovery and monitoring of FPE running with an Exchange CCR cluster </li>\r\n</ul><br/>\r\n<b> Release History: </b> <br/>\r\n<ul>\r\n<li> 11/9/2009 - Original release of the English version, version 11.0.325.00. </li>\r\n<li> 6/18/2010 - Updated version and localized releases, version 11.1.301.0. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.1.301.0",
+    "detailsSection_file_name": [
+        "FPE 2010 MP for SCOM 2007.msi",
+        "OM2007_MP_FPE.doc"
+    ],
+    "detailsSection_file_size": [
+        "492.0 KB",
+        "557.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <b>Other Software</b>: </li>\r\n<ul>\r\n<li> System Center Operations Manager 2007 SP1 or later </li>\r\n<li> Forefront Protection 2010 for Exchange Server </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2003",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<b>Note: </b> If you have installed a previous version of this management pack, you need to uninstall it before installing this management pack. <br/><br/>\r\n<ol>\r\n<li> Download the management pack installer from this page.  </li>\r\n<li> On the Microsoft System Center Operations Manager server, click on the executable to extract two .mp files</li>\r\n<li> Click Start, point to <b>All Programs</b>, point to <b>System Center Operations Manager 2007</b>, and then click <b>Operations Console</b>. </li>\r\n<li> In the Operations Manager console, click the <b>Administration</b> button. </li>\r\n<li> Right-click the Management Packs node and select <b>Import Management Packs</b>, or click <b>Import Management Packs</b> in the <b>Actions</b> pane.  </li>\r\n<li> In the <b>Select Management Packs to Import </b>dialog box, navigate to the location of the files. </li>\r\n<li> Select these .mp files that were extracted in step 2, and then click Open. </li>\r\n<li> In the <b>Import Management Packs</b> dialog box, click <b>Import</b> to import the management packs. </li>\r\n<li> After the management pack has been imported, the <b>Status</b> changes to \"<b>Imported</b>\". Click <b>Close</b> to continue. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "forefront Protection 2010 for Exchange Server",
+            "url": "http://www.microsoft.com/forefront"
+        },
+        {
+            "title": "system Center Operations Manager",
+            "url": "http://www.microsoft.com/systemcenter/operationsmanager"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "786",
+    "downloadPreload": true
+}

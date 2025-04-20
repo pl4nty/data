@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "SocketClient, Meet SocketServer",
+    "downloadDescription": "Technical article about sockets programming in .NET Micro Framework",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SocketClient_Meet_SocketServer.pdf",
+            "url": "https://download.microsoft.com/download/c/3/f/c3fbaf4a-788d-4e0c-9a6d-29330d8791e0/SocketClient_Meet_SocketServer.pdf",
+            "size": "169374",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nWith .NET Micro Framework v2.5, it's easier than ever for devices to support TCP/IP networking. This article will get you started writing your own network clients and servers for the .NET Micro Framework.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SocketClient_Meet_SocketServer.pdf"
+    ],
+    "detailsSection_file_size": [
+        "165.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "This article may open in your browser. If it does not, download it to an appropriate folder and double-click it to view in Acrobat Reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11767",
+    "downloadPreload": true
+}

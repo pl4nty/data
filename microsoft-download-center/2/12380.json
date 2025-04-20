@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Channel 9 MSDN Video Interview - Anders Hejlsberg",
+    "downloadDescription": "Interview with Anders Hejlsberg of C# team",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "anders_hejlsberg_2004_what_is_so_great_about_generics.wmv",
+            "url": "https://download.microsoft.com/download/5/8/1/58105f3b-089d-4840-a28f-3248720bcff7/anders_hejlsberg_2004_what_is_so_great_about_generics.wmv",
+            "size": "5602026",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "anders_hejlsberg_2004_what_brought_about_birth_of_clr.wmv",
+            "url": "https://download.microsoft.com/download/5/8/1/58105f3b-089d-4840-a28f-3248720bcff7/anders_hejlsberg_2004_what_brought_about_birth_of_clr.wmv",
+            "size": "9526090",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "anders_hejlsberg_2004_tour_through_computing_industry_history.wmv",
+            "url": "https://download.microsoft.com/download/5/8/1/58105f3b-089d-4840-a28f-3248720bcff7/anders_hejlsberg_2004_tour_through_computing_industry_history.wmv",
+            "size": "24413196",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "anders_hejlsberg_2004_what_influenced_development_of_csharp.wmv",
+            "url": "https://download.microsoft.com/download/5/8/1/58105f3b-089d-4840-a28f-3248720bcff7/anders_hejlsberg_2004_what_influenced_development_of_csharp.wmv",
+            "size": "10381418",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "anders_hejlsberg_2004_programming_data_in_csharp3.wmv",
+            "url": "https://download.microsoft.com/download/5/8/1/58105f3b-089d-4840-a28f-3248720bcff7/anders_hejlsberg_2004_programming_data_in_csharp3.wmv",
+            "size": "7673892",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Channel 9 MSDN interviews Anders Hejlsberg about his role in computing industry history and the development of the C# programming language.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "anders_hejlsberg_2004_what_is_so_great_about_generics.wmv",
+        "anders_hejlsberg_2004_what_brought_about_birth_of_clr.wmv",
+        "anders_hejlsberg_2004_tour_through_computing_industry_history.wmv",
+        "anders_hejlsberg_2004_what_influenced_development_of_csharp.wmv",
+        "anders_hejlsberg_2004_programming_data_in_csharp3.wmv"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB",
+        "9.1 MB",
+        "23.3 MB",
+        "9.9 MB",
+        "7.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space 5MB. Windows Media Player 9.x or greater",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Longhorn (Windows Code Name) ",
+        "TabletPC",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows ME",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "-Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time. <br /><br />- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": "msdN's Channel 9",
+            "url": "http://channel9.msdn.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12380",
+    "downloadPreload": true
+}

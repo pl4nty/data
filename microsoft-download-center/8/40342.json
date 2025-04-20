@@ -1,0 +1,162 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2013 Email Router",
+    "downloadDescription": "The Email Router is an interface between Microsoft Dynamics CRM 2013 and an email system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Router-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/8/c/4/8c491353-bffe-42aa-8be8-24befe5862f4/CRM2013-Router-ENU-i386.exe",
+            "size": "21300128",
+            "version": "06.00.0000.0809",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Router-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/8/c/4/8c491353-bffe-42aa-8be8-24befe5862f4/CRM2013-Router-ENU-amd64.exe",
+            "size": "22063496",
+            "version": "06.00.0000.0809",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Email Router is an interface between the Microsoft Dynamics CRM system and one or more Exchange servers or POP3 servers for incoming email, and one or more SMTP or Exchange servers for outgoing email. Email messages come into the Microsoft Dynamics CRM system through the Email Router. <br/><br/>\r\n\r\nThe three main components that can be installed during Email Router Setup are as follows:\r\n<ul><li>Microsoft Dynamics CRM Email Router Service </li>\r\n<li>Microsoft Dynamics CRM Email Configuration Manager</li>\r\n<li>Microsoft Dynamics CRM Email Rule Deployment Wizard </li></ul>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06.00.0000.0809",
+    "detailsSection_file_name": [
+        "CRM2013-Router-ENU-i386.exe",
+        "CRM2013-Router-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "20.3 MB",
+        "21.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For the latest information about Microsoft Dynamics CRM 2013 Email Router installation instructions, see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=313245\">Install Email Router and Rule Deployment Wizard</a>.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click <b>Download</b>.</li>\r\n<li>Save the download to your computer by clicking <b>Save</b>.</li>\r\n<li>To install the Email Router, follow the instructions in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=313245\">Install Email Router and Rule Deployment Wizard</a>. </li>\r\n</ol>\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "install E-mail Router and Rule Deployment Wizard",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=313245"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40342",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft RMS SDK 4.1 for Windows Store",
+    "downloadDescription": "Microsoft RMS SDK 4.1 for Windows Store is a lightweight SDK for creating rights-enabled applications. By downloading the software, you agree to the license terms provided for this software. If you do not agree to the license terms, please do not download the software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EULA.rtf",
+            "url": "https://download.microsoft.com/download/1/3/8/1382ecf9-c9e2-4a27-abb8-6d9abf59dbe0/EULA.rtf",
+            "size": "179611",
+            "version": "4.1",
+            "datePublished": "7/15/2024 3:04:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Store Microsoft RMS SDK v4.1.zip",
+            "url": "https://download.microsoft.com/download/1/3/8/1382ecf9-c9e2-4a27-abb8-6d9abf59dbe0/Windows Store Microsoft RMS SDK v4.1.zip",
+            "size": "2028074",
+            "version": "4.1",
+            "datePublished": "7/15/2024 3:04:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft RMS SDK 4.1 for Windows Store is a lightweight SDK for creating rights-enabled applications.\r\n\r\nWhat's new in SDK v4.1?\r\n\r\n\u2022 AD RMS support - IT admins can use RMS enabled applications on mobile devices with the new AD RMS server's mobile device extensions. \r\n\u2022 Offline Consumption - end-users can access RMS protected data offline.\r\n\u2022 Segregated Auth - developers can use their own authentication library for Azure RMS and AD RMS (or use the recommended Azure Active Directory Auth Library).\r\n\u2022 Segregated UI - developers can build their user interface to protect and consume RMS protected documents.\r\n\u2022 Re-designed API - developers can now enjoy simple and transparent encryption and decryption API, which provides consistent RMS behaviors and user experience, in minimum efforts.\r\n\u2022 AD RMS URLs consent - this API callback was added to provide URLs to developers, to ask users for consent when accessing AD RMS servers.\r\n \r\nOur documentation has been updated - you can download the new SDKs, read about the new features, share your feedback, and find everything you need on our new MSDN page here:\r\nhttp://msdn.microsoft.com/en-us/library/hh552972(v=vs.85).aspx\r\n\r\nBy downloading the software, you agree to the license terms provided for this software. If you do not agree to the license terms, please do not download the software.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1",
+    "detailsSection_file_name": [
+        "EULA.rtf",
+        "Windows Store Microsoft RMS SDK v4.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "175.4 KB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "1. The Windows 8.1 operating system \r\n2. The Windows SDK for Windows 8.1 \r\n3. Microsoft Visual Studio 2012 or above, or Visual Studio Express 2012, which is included in the Windows SDK for Windows 8.0/8.1. \r\n4. The MS RMS SDK 4.1 package for Windows Store Applications. For more information see, Get started. \r\n5. Authentication library: We recommend that you use the Azure AD Authentication Library (http://msdn.microsoft.com/en-us/library/azure/jj573266.aspx). \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Getting started guide is available here: http://msdn.microsoft.com/en-us/library/hh552972(v=vs.85).aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45906",
+    "downloadPreload": true
+}

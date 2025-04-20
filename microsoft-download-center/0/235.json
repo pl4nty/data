@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Communicator for Mac 2011 Deployment Guide",
+    "downloadDescription": "Intended for IT Professionals, the Microsoft Communicator for Mac 2011 Deployment Guide provides guidance for using Microsoft Communicator for Mac 2011 with Microsoft Office Communications Server 2007 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Communicator2011Deployment.pdf",
+            "url": "https://download.microsoft.com/download/1/c/e/1ceaaac6-813e-46b0-8683-ede1be6860da/Communicator2011Deployment.pdf",
+            "size": "301323",
+            "version": "1",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Intended for IT Professionals, the Microsoft Communicator for Mac 2011 Deployment Guide provides guidance for using Microsoft Communicator for Mac 2011 with Microsoft Office Communications Server 2007 R2. Communicator for Mac 2011 provides real-time collaboration between people in different locations by using several methods of communication, including instant messaging (IM), presence, Web conferencing, and audio/video (A/V) conferencing. <BR/><BR/>\r\n\r\n<b>Note: </b>&nbsp; You can also view the <a href=\"http://mac2.microsoft.com/help/office/14/en-us/deploy\" target=\"_blank\">Communicator for Mac 2011 Deployment Guide</a> online.<br/><br/>\r\n\r\nThe Communicator for Mac 2011 Deployment Guide covers the following:\r\n\r\n<UL>\r\n<LI><b>Getting Started</b><br/>\r\nOverview<br/>\r\nFeatures in Communicator for Mac 2011<br/>\r\nSystem requirements for Communicator for Mac 2011<br/>\r\nCompare Communicator for Mac 2011 to Messenger for Mac 7<br/>\r\nCompare Communicator for Mac 2011 to Office Communicator 2007 R2\r\n<br/>Communicator for Mac 2011 topology<br/><br/></LI>\r\n\r\n<LI><b>Post-Installation</b><br/>\r\nUsing Communicator for Mac 2011 with Office for Mac 2011<br/>\r\nSecurity best practices<br/>\r\nDeploying Communicator for Mac 8 preferences<br/>\r\nTurn on logging<br/><br/></LI>\r\n\r\n<LI><b>Installing and Configuring Communicator for Mac 2011 on a Corporate Network</b><br/>\r\nDeploying Communicator for Mac<br/>\r\nConnecting to Office Communications Server<br/>\r\nUninstalling Communicator for Mac<br/><br/></LI>\r\n\r\n<LI><b>Technical Reference</b><br/>\r\nCommunicator for Mac 2011 managed preferences<br/>\r\nCommunicator for Mac 2011 user preferences<br/></LI>\r\n</UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Communicator2011Deployment.pdf"
+    ],
+    "detailsSection_file_size": [
+        "294.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Note:</b> To view the Communicator for Mac 2011 Deployment Guide .pdf in Windows, you will need the free software program, Adobe Reader. or you can view an online version <a href=\"http://mac2.microsoft.com/help/office/14/en-us/deploy\" target=\"_blank\">here</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>Note: </b>&nbsp; You can also view the <a href=\"http://mac2.microsoft.com/help/office/14/en-us/deploy\" target=\"_blank\">Communicator for Mac 2011 Deployment Guide</a> online.<br/><br/>\r\n\r\n<B>To install this download on Mac OS X:</B>\r\n<OL>\r\n  <LI>Print this page if you want to use it as a reference when you are offline.</LI>\r\n  <LI>Click the download.</LI>\r\n  <LI>Follow the instructions on the screen to save the file to your hard disk. If you are using Safari, the downloaded file is saved to the desktop unless you specified a different location in the <B>Preferences</B> dialog box of Safari. To check your preferences, on the <B>Safari</B> menu, click <B>Preferences</B>, and then click <B>General</B>).</LI>\r\n  <LI>On your hard disk, double-click the file that you downloaded.</LI>\r\n</OL>\r\n\r\n<br/><B>To install this download on Windows:</B>\r\n<OL>\r\n  <LI>Print this page if you want to use it as a reference when you are offline.</LI>\r\n  <LI>Click the download.</LI>\r\n  <LI>Do one of the following:\r\n  <UL>\r\n <LI>To start the installation immediately, click <B>Open</B> or <B>Run</B>.</LI>\r\n <LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n</UL></LI>\r\n  <LI>On your hard disk, double-click the file that you downloaded.</LI>\r\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "information Rights Management in Office for Mac 2011 Deployment Guide (pdf)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=598cb9d3-2fdc-45e4-89f6-d2685a47c34c"
+        },
+        {
+            "title": "office for Mac Web site",
+            "url": "http://www.microsoft.com/mac"
+        },
+        {
+            "title": "microsoft Office for Mac 2011 Administrator Guide (online)",
+            "url": "http://mac2.microsoft.com/help/office/14/en-us/admin"
+        },
+        {
+            "title": "communicator for Mac 2011 Deployment Guide (online)",
+            "url": "http://mac2.microsoft.com/help/office/14/en-us/deploy"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "235",
+    "downloadPreload": true
+}

@@ -1,0 +1,105 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office for Mac 2011 Service Pack 2 (14.2.0)",
+    "downloadDescription": "This update fixes critical issues.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2011-1420UpdateEN.dmg",
+            "url": "https://download.microsoft.com/download/f/0/1/f01073b0-e98b-4113-8b46-4460ae6462b7/Office2011-1420UpdateEN.dmg",
+            "size": "115391163",
+            "version": "14.2",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        }
+    ],
+    "detailsSection": "This update fixes critical issues. For detailed information about this update, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=245078\" target=\"_blank\">Microsoft Web site</a>. <br /><br />\n\n<b>Applies to:</b> Office 2011, Office 2011 Home and Business Edition, Word 2011, Excel 2011, PowerPoint 2011, Outlook 2011, Office for Mac Standard 2011 Edition, Microsoft Office for Mac Home & Student 2011, and Microsoft Office for Mac Academic 2011<br /><br /><a href=\"http://go.microsoft.com/fwlink/?LinkId=255462\" target=\"_blank\">Known issues for installation of Office 2011\n</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.2",
+    "detailsSection_file_name": [
+        "Office2011-1420UpdateEN.dmg"
+    ],
+    "detailsSection_file_size": [
+        "110.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Operating System Versions:</b> Mac OS X version 10.5.8 or a later version of Mac OS<br /><br />\n<b>Note</b>&nbsp; To verify that your computer meets these minimum requirements, on the <b>Apple</b> menu, click <b>About This Mac</b>.</li>\n<li><b>Microsoft Office for Mac 2011 Service Pack 1 (14.1.0):</b> You can download this update for free from the <a href=\"http://go.microsoft.com/fwlink/?LinkId=218211\" target=\"_blank\">Microsoft Web Site</a>.<br /><br />\n<b>Note</b> To verify that you have installed this update, you can open any Microsoft Office 2011 application to check the version number. For example, open Word, and then on the <b>Word</b> menu, click <b>About Word</b>. In the dialog box, compare the version number next to <b>Latest Installed Update</b>.</li>\n</ul>\n<br />\n<br />Microsoft AutoUpdate continues to provide you with verified secure updates to your machine, and is still the easiest way to get updates to your machine.\u00a0With the recent change in the Apple operating system 10.8, Microsoft's older updaters do not provide the security handshake needed with Apple's additional security measures.\u00a0 We suggest using an earlier operating system to download this updater if you choose not to use Microsoft AutoUpdate.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Macintosh"
+    ],
+    "installInstructionSection": "<b>To install this update</b>\n<ol>\n<li>Print this page if you want to use it as a reference when you are offline.</li>\n<li>Quit any applications that are running, including all Office applications, Microsoft Messenger, and Office Notifications, because they might interfere with the installation.</li>\n<li>Make sure that your computer meets the minimum system requirements.</li>\n<li>Click <b>Download</b>, or click the link for the language version that you want.</li>\n<li>Follow the instructions on the screen to save the file to your hard disk. If you are using Safari, the downloaded file is saved to the desktop unless you specified a different location in the <b>Preferences</b> dialog box of Safari. To check your preferences, on the <b>Safari</b> menu, click <b>Preferences</b>, and then click <b>General</b>.</li>\n<li>Double-click the file that you downloaded in step 5 to place the Office 2011 SP2 Update (14.2.0) volume on your desktop, and then double-click the <b>Office 2011 SP2 Update (14.2.0)</b> volume to open it. This step might have been performed for you.</li>\n<li>In the Office 2011 SP2 Update (14.2.0) volume window, double-click the <b>Office 2011 SP2 Update (14.2.0)</b> application to start the update process, and then follow the instructions on the screen.</li>\n<li>If the installation finishes successfully, you can remove the update installer from your hard disk. To remove the update installer, first drag the <b>Office 2011 SP2 Update (14.2.0)</b> volume to the Trash, and then drag the file that you downloaded to the Trash.</li>\n</ol>\n\n<b>Note</b>&nbsp; This update is also available from Microsoft AutoUpdate, an application that can automatically keep your Microsoft software up to date. To use AutoUpdate, open an Office application, and then on the <b>Help</b> menu, click <b>Check for Updates</b>.<br /><br />\n\n<b>To remove this update</b><br /><br />\n\nThis update does not include an uninstall feature. To restore your application to its original state, delete it from your hard disk, reinstall it from your original installation disk, and then install the updates that you want.",
+    "additionalInformationSection": "If you have trouble installing this update or using Office 2011 applications after you install this update, try the following:\n\n<ul>\n<li>Make sure that the Microsoft Office 2011 folder is located in the Applications folder on the startup volume. If it is at another location on your computer, move it to the Applications folder on your startup volume, and then try installing the update again.</li>\n<li>Restart your computer and try installing the update again. </li>\n<li>Make sure that the user account you use to authenticate the update installer is an administrator account. For more information about administrator accounts, see Mac Help. </li>\n<li>Make sure that you downloaded the correct language version of the update for your copy of Office.</li>\n<li>If you rename or modify any of the files in the Microsoft Office 2011 folder, you cannot install product updates. To correct this issue, drag the Microsoft Office 2011 folder to the Trash, and then reinstall Office 2011 from your original installation disk.</li>\n<li>If you experience problems opening Office applications after you install this update, restart your computer. If you continue to experience problems after you restart, reinstall Office from your original installation disk, and then install this update again.</li>\n</ul>\n\nFor additional assistance, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=216459\" target=\"_blank\">Microsoft Web site</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29419",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Deployment Toolkit (MDT) - old version 8450",
+    "downloadDescription": "The Microsoft Deployment Toolkit (MDT) is for Windows operating system deployment.  Old version 8450",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDeploymentToolkit_x86.msi",
+            "url": "https://download.microsoft.com/download/0/7/b/07b3b260-f008-4b1c-8eaa-74bcc5c7d646/MicrosoftDeploymentToolkit_x86.msi",
+            "size": "20008960",
+            "version": "8450",
+            "datePublished": "7/15/2024 3:04:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftDeploymentToolkit_x64.msi",
+            "url": "https://download.microsoft.com/download/0/7/b/07b3b260-f008-4b1c-8eaa-74bcc5c7d646/MicrosoftDeploymentToolkit_x64.msi",
+            "size": "20529152",
+            "version": "8450",
+            "datePublished": "7/15/2024 3:04:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\n<li> The Microsoft Deployment Toolkit (MDT) is a free tool for automating Windows and Windows Server operating system deployment, leveraging the Windows Assessment and Deployment Kit (ADK) for Windows 10.</li>\n<li> This version (8450) was released on December 2017 and is now a deprecated version not intended for new deployments or installations. For the latest version (8456), see https://www.microsoft.com/download/details.aspx?id=54259.</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8450",
+    "detailsSection_file_name": [
+        "MicrosoftDeploymentToolkit_x86.msi",
+        "MicrosoftDeploymentToolkit_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "19.1 MB",
+        "19.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\n<b>Other Requirements</b>\n<ul>\n<li> The Windows ADK for Windows 10, version 1709 or later, is required for all deployment scenarios. </li> \n<li> Configuration Manager, version 1710 or later, is required for zero-touch installation (ZTI) and user-driven installation (UDI) scenarios. </li>\n\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\n<li> From the link above, download the installer for the proper system architecture.</li>\n<li> Run the .msi on the target MDT server.</li>\n<ul>\n<li> Accept the Microsoft Software License Terms. </li>\n<li> Follow the steps in the installation process to complete the installation.</li>\n</ul>\n<li> Start the <b>Deployment Workbench</b> desktop app from the Start menu in the <b>Microsoft Deployment Toolkit</b> group.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57917",
+    "downloadPreload": true
+}

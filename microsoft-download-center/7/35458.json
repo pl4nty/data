@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2013 Persistent Chat Server SDK",
+    "downloadDescription": "Lync Server 2013 Persistent Chat SDK includes the pre-requisites needed to build applications that target Persistent Chat Server, the API and documentation to build the applications, and PersistentChatSDKRuntimeSetup.exe which is the redistributable you ship with your applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PersistentChatSDKSetup.exe",
+            "url": "https://download.microsoft.com/download/8/0/a/80a2850d-ef50-44e7-bcf3-69e6815962ec/PersistentChatSDKSetup.exe",
+            "size": "16088728",
+            "version": "8308.556",
+            "datePublished": "7/15/2024 3:32:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download was originally released on Oct. 28, 2012.\r\n<br/><br/>\r\nPersistent Chat (previously known as Group Chat) lets organizations set up topic-based chat rooms that persist over time and can be searched, allowing geographically distributed teams to better collaborate with one another in real time. In Lync Server 2013, Persistent Chat has had key changes \u2013 integrated client experience within the Lync 2013 client, integrated server deployment and administration and management with Lync Server 2013. Persistent Chat SDK can be used to build applications that target Lync Server 2013 Persistent Chat.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2846493",
+        "name": "KB2846493"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8308.556",
+    "detailsSection_file_name": [
+        "PersistentChatSDKSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "15.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<ul>\r\n<li><b>Application Development</b></li>\r\n<br/><br/>\r\nThe following requirements must be met before developing applications with Lync Server 2013 Persistent Chat SDK.<br/>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.5 or later service packs.</li>\r\n<li>Microsoft Visual Studio 2010 RTM.</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download the file by clicking the download button and saving the file to your hard disk.</li>\r\n<li>Double-click the program file on your hard disk to begin installation.</li>\r\n</ol>\r\nIt will install pre-requisites (UCMA redist), install a dll representing the actual Persistent Chat Server SDK, some samples, and another MSI with the Persistent Chat SDK Runtime Setup which is the redistributable you package with your applications.\r\n<br/><br/>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35458",
+    "downloadPreload": true
+}

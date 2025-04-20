@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Battling the Rustock Threat",
+    "downloadDescription": "This document provides an overview of the Win32/Rustock family of rootkit-enabled backdoor trojans.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Battling the Rustock Threat_English.pdf",
+            "url": "https://download.microsoft.com/download/8/a/f/8af98f57-8111-44ec-8e82-53e9404b211e/Battling the Rustock Threat_English.pdf",
+            "size": "1045738",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:09:48 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Battling the Rustock Threat_English.xps",
+            "url": "https://download.microsoft.com/download/8/a/f/8af98f57-8111-44ec-8e82-53e9404b211e/Battling the Rustock Threat_English.xps",
+            "size": "1253787",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:09:48 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides an overview of the Win32/Rustock family of rootkit-enabled backdoor trojans. The document examines the background of Win32/Rustock, its functionality, how it works, and provides threat telemetry data and analysis from calendar year 2010 through May 2011. In addition, this document details the legal and technical action used to takedown the Rustock botnet and how to detect and remove the threat using Microsoft antimalware products.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Battling the Rustock Threat_English.pdf",
+        "Battling the Rustock Threat_English.xps"
+    ],
+    "detailsSection_file_size": [
+        "1021.2 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download Battling the Rustock Threat. Available as a PDF or an XPS. In order to view the XPS document, you will need to install the reader (included in Windows 7 and Windows Vista).\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        },
+        {
+            "title": "microsoft Security Intelligence Report",
+            "url": "http://www.microsoft.com/sir"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26673",
+    "downloadPreload": true
+}

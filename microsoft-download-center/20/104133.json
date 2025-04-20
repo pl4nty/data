@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Orchestrator Integration Toolkit",
+    "downloadDescription": "The toolkit contains wizard-based utilities for creating new activities and custom integration packs for System Center 2022 (or above) Orchestrator. The \u201cMicrosoft .NET Framework\u201d Integration Pack is also included with the toolkit.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_Orchestrator_IntegrationToolKit-10.22.3.4.exe",
+            "url": "https://download.microsoft.com/download/1/0/2/10208387-6ad2-42d8-b4cc-98abb3b001a3/System_Center_Orchestrator_IntegrationToolKit-10.22.3.4.exe",
+            "size": "4223648",
+            "version": "Prod",
+            "datePublished": "7/15/2024 4:32:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Changelog: </b><br />\r\nv10.22.1.2 (25.04.2022) <br />\r\n<ul>\r\n<li> Upgraded all binaries to 64-bit architecture. The toolkit can still be used to make 32-bit .NET based activities and Integration Packs. </li>\r\n<li> No functional change in comparison to previous release. </li> \r\n</ul> <br />\r\n\r\nv10.22.3.1 (17.08.2022) <br />\r\n<ul>\r\n<li> Fix IPWizard runtime errors </li>\r\n<li> Orchestrator SDK assemblies target .NET Framework 4.0 (AnyCPU arch) allowing broader .NET Fx compatibility </li>\r\n<li> Include x86 MSMs to allow generation of x86 Integration Packs for SCO 2019 and older </li>\r\n</ul> <br />\r\n\r\nv10.22.3.4 (22.08.2022) <br />\r\n<ul>\r\n<li> Updated .NET Framework Integration Pack\u2019s version </li>\r\n</ul> <br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Prod",
+    "detailsSection_file_name": [
+        "System_Center_Orchestrator_IntegrationToolKit-10.22.3.4.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating System</b><br/>\r\n<li>Windows Server 2012 or above</li>\r\n<br/>\r\n<b>Recommended Configuration for System Center Orchestrator Integration Toolkit</b><br/>\r\n<li>RAM \u2013 minimum 1GB, recommended 2GB</li>\r\n<li>Disk space minimum -- 200MB</li>\r\n<li>CPU -- Dual Core or better</li>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "System Center Orchestrator should be installed prior to installing the included \u201c.NET Framework\u201d Integration Pack. <br/><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104133",
+    "downloadPreload": true
+}

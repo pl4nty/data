@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Optimize Office 365 remote work with split-tunneling",
+    "downloadDescription": "Office 365 and split-tunneling Q-A",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Optimizing Office 365 remote work with split-tunneling Q&A.pdf",
+            "url": "https://download.microsoft.com/download/f/a/b/fabe6bd1-1f17-478a-995f-a6cdb921bd98/Optimizing Office 365 remote work with split-tunneling Q&A.pdf",
+            "size": "1144328",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The health crisis caused remote work to explode: overnight, organizations' employees had to stay confined and connect from home to the corporate network. This situation was not envisioned, and some customer VPN infrastructures were not scaled for this load. Many business meetings were switched to bandwidth-hungry video conferencing which, multiplied by the number of users, completely saturated the VPN gateways.<br /><br />\r\n\r\nAs an immediate consequence, the user experience was severely degraded and it became impossible to connect. Response times for access to collaborative services made teamwork difficult.<br /><br />\r\n\r\nThe recommendation from Microsoft is to implement a split-tunneling solution (called forced tunneling with exceptions) which allows, at a lower cost, to greatly improve the performance of Office 365 services to make them available to all users who are telecommuting. This solution consists of allowing Office 365 flows with the greatest impact on bandwidth to be routed directly across the Internet to Microsoft cloud services without going through the VPN tunnel.<br /><br />\r\n\r\nEven if some companies or organizations were at first reluctant based on security considerations, after a risk analysis and in view of the immediate benefits, a very large proportion has adopted this reasoned variant of split-tunneling.<br /><br />\r\n\r\nThis white paper, designed in the form of questions and answers, is here to give you the arguments and technical answers to implement the forced tunneling solution with exceptions and thus make the most of the Office 365 collaboration solutions at the lowest cost and in the shortest time.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Optimizing Office 365 remote work with split-tunneling Q&A.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read the PDF file, you will need a free PDF reader such as Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "iOS",
+        "Android",
+        "Linux"
+    ],
+    "installInstructionSection": "Download the pdf file and open it with your PDF reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103127",
+    "downloadPreload": true
+}

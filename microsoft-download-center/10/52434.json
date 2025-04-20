@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sparse Reflections Analysis: Sensor Data from ECCV 2014 Paper",
+    "downloadDescription": "This file contains the raw sensor data used the ECCV 2014 paper, \"SRA: Fast Removal of General Multipath for ToF Sensors\" by D. Last published: November 26, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sensor-Data.zip",
+            "url": "https://download.microsoft.com/download/0/e/6/0e63738b-9502-48bb-b473-ca5c0f1d60f0/Sensor-Data.zip",
+            "size": "14843693",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains the raw sensor data used the ECCV 2014 paper, \"SRA: Fast Removal of General Multipath for ToF Sensors\" by D. Freedman, Y. Smolin, E. Krupka, I. Leichter, and M. Schmidt.  This includes data for 3 separate scenes, see Section 5.4 of the paper.  All files are binaries, whose formats are explained in the README.txt.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Sensor-Data.zip"
+    ],
+    "detailsSection_file_size": [
+        "14.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52434",
+    "downloadPreload": true
+}

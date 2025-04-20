@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Host Integration Server 2020 CU1 (KB5032921)",
+    "downloadDescription": "A security issue has been identified in the Host Integration Server 2020 CU1 and DB2OLEDBv7 that can cause a stack buffer overflow remote code execution vulnerability using Host Integration Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DB2OLEDBv7.msi",
+            "url": "https://download.microsoft.com/download/6/0/c/60cfbb7f-0cf9-49ac-81bc-86e0b755ecb8/DB2OLEDBv7.msi",
+            "size": "5189632",
+            "version": "11.0.2020.0",
+            "datePublished": "7/15/2024 5:00:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HIS2020-Server-HIS-KB5032921-x64-EN.msp",
+            "url": "https://download.microsoft.com/download/6/0/c/60cfbb7f-0cf9-49ac-81bc-86e0b755ecb8/HIS2020-Server-HIS-KB5032921-x64-EN.msp",
+            "size": "2457600",
+            "version": "11.0.2020.0",
+            "datePublished": "7/15/2024 5:00:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HIS2020-Client-KB5032921-x64-EN.msp",
+            "url": "https://download.microsoft.com/download/6/0/c/60cfbb7f-0cf9-49ac-81bc-86e0b755ecb8/HIS2020-Client-KB5032921-x64-EN.msp",
+            "size": "2342912",
+            "version": "11.0.2020.0",
+            "datePublished": "7/15/2024 5:00:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that can cause a stack buffer overflow remote code execution vulnerability using Host Integration Server and DB2OLEDBv7. You can help protect your computer by installing this update or uninstalling the current version of DB2OLEDBv7 and installing this updated version of DB2OLEDBv7 from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2020.0",
+    "detailsSection_file_name": [
+        "DB2OLEDBv7.msi",
+        "HIS2020-Server-HIS-KB5032921-x64-EN.msp",
+        "HIS2020-Client-KB5032921-x64-EN.msp"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB",
+        "2.3 MB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "If you are using Host Integration Server then the requirements are Microsoft Host Integration Server 2020 with CU1 installed or Microsoft Host Integration Server 2020 Client with CU1 installed.\r\nIf you are using DB2OLEDv7, then uninstall the current version and install this updated version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105670",
+    "downloadPreload": true
+}

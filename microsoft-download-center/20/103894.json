@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Regular Expressions Sample",
+    "downloadDescription": "Provides a sample regular expressions library for SQL Server and Azure SQL Managed Instance",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SqlRegEx.zip",
+            "url": "https://download.microsoft.com/download/e/1/c/e1c2ae2f-5802-420d-a801-e26ff576ff10/SqlRegEx.zip",
+            "size": "69081",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 5:06:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When migrating from another platform to SQL Server, sometimes a blocker for the migration is regular expressions support in SQL Server. This sample library can be used and/or customized to provide the regular expressions support, that you need on with SQL Server or Azure SQL Managed Instance (MI). The library requires that CLR support be turned on.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "SqlRegEx.zip"
+    ],
+    "detailsSection_file_size": [
+        "67.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This is a zipped folder that contains the C# Visual Studio solution and sample scripts to install and use the library.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Choose the Download button on the page to start the Download. Once downloaded, we recommend that you rebuild the library and sign it with your own certificate before installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103894",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Cross-farm Services in SharePoint 2010 Products",
+    "downloadDescription": "Illustrates how to deploy services across farms to provide centralized administration of services.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SvsCrossFarm_SharePointProducts2010.vsd",
+            "url": "https://download.microsoft.com/download/5/0/c/50c89581-6b10-488d-8526-0ef7d61e65e4/SvsCrossFarm_SharePointProducts2010.vsd",
+            "size": "1686528",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SvsCrossFarm_SharePointProducts2010.xps",
+            "url": "https://download.microsoft.com/download/5/0/c/50c89581-6b10-488d-8526-0ef7d61e65e4/SvsCrossFarm_SharePointProducts2010.xps",
+            "size": "705093",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SvsCrossFarm_SharePointProducts2010.pdf",
+            "url": "https://download.microsoft.com/download/5/0/c/50c89581-6b10-488d-8526-0ef7d61e65e4/SvsCrossFarm_SharePointProducts2010.pdf",
+            "size": "496956",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model illustrates how to deploy services across farms based on SharePoint 2010 Products to provide centralized administration of services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SvsCrossFarm_SharePointProducts2010.vsd",
+        "SvsCrossFarm_SharePointProducts2010.xps",
+        "SvsCrossFarm_SharePointProducts2010.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "688.6 KB",
+        "485.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\n<ul>\r\n<li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Tips for using posters</b>\r\n<br></br>\r\nIf you have a plotter, you can print these posters in their full size. If you don\u2019t have plotter, use the following steps to print on smaller paper.\r\n<br></br>\r\n<b>To print posters on smaller paper</b>\r\n<br></br>\r\n<ol>\r\n<li>Open the poster in Office Visio.</li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>. </li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down.</li>\r\n\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>. </li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Print</b>. </li>\r\n</ol>\r\n<br></br>\r\nIf you want to create posters that use the same symbols as these posters, you can download Visio stencils for Office IT Pro posters (http://go.microsoft.com/fwlink/?LinkId=148756).\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10057",
+    "downloadPreload": true
+}

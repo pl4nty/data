@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Download Title - Power BI Template Acme Test Site (Latest Test)",
+    "downloadDescription": "[TEST] Guides Analytics Power BI report templates (require version 503.3.1.2 or later of the Microsoft Dynamics 365 Guides solution). For previous solution versions, see Details below.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Guides Analytics Demo v500.3.0.pbix",
+            "url": "https://download.microsoft.com/download/c/e/a/cea13f4f-db9f-4a7e-8641-4c13258557b5/Guides Analytics Demo v500.3.0.pbix",
+            "size": "1665654",
+            "version": "500.3.1",
+            "datePublished": "7/15/2024 3:04:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Guides Analytics is part of the Microsoft Dynamics 365 Guides application suite that includes the Guides PC authoring app and the Guides HoloLens app. Use Guides Analytics to analyze the usage of guides across your organization. Guides Analytics consists of Power BI visual reports which are populated with Guides usage data stored securely in your Dynamics 365 environment.\r\n<br /><br />\r\n<b>Requires version 503.3.1.2 or later of the Microsoft Dynamics 365 Guides solution</b>. If you have an earlier solution version, you can download the previous version of Guides Analytics Power BI report templates <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=102670\">here</a>.\r\n<br /><br />\r\nThere are two Power BI files available for download: \r\n<ol>\r\n<li>Guides Analytics Template (PBIT file) which can be configured to display Guides HoloLens usage data stored securely in your Dynamics 365 environment, and </li>\r\n<li>Guides Analytics Demo (PBIX) which does not require any configuration and lets you get an overview of Guides Analytics using an example data set even before you create your first Guide.</li>\r\n</ol>\r\n<a href=\"https://aka.ms/guideslearn\">Learn more</a> about Guides Analytics.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3154952",
+        "name": "KB3154952"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "500.3.1",
+    "detailsSection_file_name": [
+        "Guides Analytics Demo v500.3.0.pbix"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10\r\nPower BI Desktop",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": " <ol>\r\n <li>Download and install <a href=\"https://powerbi.microsoft.com/get-started/\">Power BI Desktop</a>.</li>\r\n <li>If prompted, use your username and password to sign in to Power BI Desktop.</li>\r\n <li>Download both the <B>Template</B> (PBIT file) and the <B>Demo</B> (PBIX) files.</li>\r\n <li>To get an overview of using an example data set, open the <B>Demo</B> file.</li>\r\n <li>To view data, open the <B>Template</B> file.</li>\r\n <li>When prompted in Power BI Desktop, paste your <B>Info</B> into the provided text box.</li>\r\n <li>If prompted that \"You aren't signed in\", select <B>Sign in</B> and enter your username and password.</li>\r\n <li>You should now see the template populated with data.</li>\r\n <li>Select the <B>Refresh</B> button from the Home ribbon to update your reports with the most recent data.</li>\r\n <li><a href=\"https://powerbi.microsoft.com\">Learn more</a> about it.</li>\r\n </ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57762",
+    "downloadPreload": true
+}

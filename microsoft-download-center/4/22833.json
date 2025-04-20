@@ -1,0 +1,157 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4 (Standalone Installer) for Server Core",
+    "downloadDescription": "The Microsoft .NET Framework 4 Server Core installer package downloads the .NET Framework 4 components required to run on Windows Server 2008 R2 SP1 and higher for Server Core role installation.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotNetFx40_Full_x86_x64_SC.exe",
+            "url": "https://download.microsoft.com/download/3/6/1/361dae4e-e5b9-4824-b47f-6421a6c59227/dotNetFx40_Full_x86_x64_SC.exe",
+            "size": "50452584",
+            "version": "4",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft .NET Framework 4 Server Core download installs the full .NET Framework 4 on Windows 2008 R2 SP1 Server Core . This download requires Windows 2008 R2 SP1 to be installed.  When you re running .NET Framework 4 applications on Server Core, only Server Core-based features will work, while client applications features such as Windows Presentation Foundation(WPF) and ClickOnce deployment are not supported on Server Core.  <br /><br />\r\nTo learn more about .NET Framework 4, refer to <a href=\"http://msdn.microsoft.com/en-us/library/ms171868(v=VS.100).aspx\">What\u2019s New in the .NET Framework 4</a> and to install on other operating systems visit <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=9cfb2d51-5ff4-4491-b0e5-b386f32c0992&displaylang=en\">.NET Framework 4 download</a> site.  Features for ASP.NET in this version include support for Multi-Targeting, expanding range of allowable URLs, web config file refactoring, WebForm enhancements and more.  For a comprehensive list of enhancements to ASP.NET go <a href=\"http://www.asp.net/learn/whitepapers/aspnet4\">here</a>.  Improvements to Windows Communication Foundation (WCF) such as support for Workflow Services enabling workflow programs with messaging activities, correlation support. Additionally, .NET Framework 4 provides new WCF features such as service discovery, routing service, REST support, diagnostics, and performance. For a comprehensive list of enhancements to WCF go <a href=\"http://msdn.microsoft.com/en-us/library/dd456789(VS.100).aspx\">here</a>.<br /><br />\r\nMany customers have asked if PowerShell will work with .NET Framework 4 support on Server Core.  PowerShell 2.0 continues to work on Windows 2008 R2 SP1 Server Core when .NET Framework 4 is installed (utilizing the installed .NET Framework 3.5.SP1). PowerShell 2.0 does not use .NET Framework 4, so there is no support for writing .NET Framework 4 cmdlets and runing them on Windows 2008 R2 server core. <br /><br />\r\n\r\nWe recommend that you test the .NET Framework applications that you build for Server Core.  Some .NET Framework features do not work on Server Core, especially if the feature depends on an operating system file that is not installed on Server Core.  The .Net Framework 4 Server Core package is only supported on Windows 2008 R2 SP1 Server Core .  If you attempt to use it on non-Server Core machines, it will fail to install properly. <br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "dotNetFx40_Full_x86_x64_SC.exe"
+    ],
+    "detailsSection_file_size": [
+        "48.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <ul><li>Windows Server 2008 R2 SP1 Server Core or later </li></ul>\r\n </ul>\r\n\r\n<ul>\r\n<li><b>Supported Architectures:</b></li>\r\n<ul>\r\n  <li>x64</li>\r\n</ul>\r\n</ul>\r\n<ul>\r\n<li><b>Hardware Requirements:</b></li>\r\n<ul>\r\n  <li>Recommended Minimum: Recommended Minimum: Single processor with 1.4 GHz (x64 processor) or 1.3GHz (Dual Core) with 512 MB RAM or more</li>\r\n  <li>Minimum disk space: 2 GB (32 GB or greater required for OS)</li>\r\n  </ul>\r\n</ul>\r\n<ul>\r\n<li><b>Prerequisites:</b></li>\r\n<ul>\r\n  <li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=889482fc-5f56-4a38-b838-de776fd4138c&displaylang=en\">Windows Installer 3.1</a> or later</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li><b>Important:</b> Make sure that your computer has the latest Windows service pack and critical updates. To find security updates, visit <a href=\"http://www.windowsupdate.com/\">Windows Update</a>. </li>\r\n<li>If you are installing on Windows 2008 Server R2 on Server Core, you need to install Windows 2008 Server R2 SP1 and follow the instructions below before you install .NET Framework 4</li> \r\n<ul>\r\n       <li>Turn on WoW64: Start /w ocsetup ServerCore-WOW64</li>\r\n       <li>Turn on .NET 2.0 layer: Start /w ocsetup NetFx2-ServerCore</li>\r\n       <li>Turn on .NET 2.0 layer for WoW64: Start /w ocsetup NetFx2-ServerCore-WOW64</li>\r\n</ul>\r\n<li>On this page, locate the Download button and then click it to start the download. </li>\r\n<li> To save the download to your computer so that you can install it later, click  <b>Save</b>.</li>  \r\n<li>To cancel the download, click <b>Cancel</b>.</li>  \r\n<li>After installing .NET Framework 4 on Windows 2008 R2 SP1 Server Core, it is highly recommended you install critical .NET Framework 4 updates available on Windows Update.</li>\r\n</ol>",
+    "additionalInformationSection": "<br/><b>Additional Requirements for Server Installation</b><br /><br />\r\nIf you have to perform a server installation, your computer must have the following software in addition to the basic requirements:<br /><br />\r\n<ul>\r\n  <li>Internet Information Services (IIS) version 6.0 or later. To access the features of ASP.NET, IIS with the latest security updates must be installed before the .NET Framework is installed. ASP.NET is supported only on Windows XP Professional, Windows Server 2003, Windows Server 2008, and Windows Server 2008 R2.</li>\r\n  <li>(Recommended) Microsoft Data Access Components 2.8 or later</li>\r\n</ul><br /><br />\r\n<b>NOTE:</b> Most users do not have to perform a server installation. If you are unsure whether to perform a server installation, just perform a basic installation.<br /><br />\r\n<br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkID=186763\">.NET Framework 4 Readme</a><br/>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "\u2022 What\u2019s New in the .NET Framework 4?",
+            "url": "http://msdn.microsoft.com/en-us/library/ms171868(v=VS.100).aspx"
+        },
+        {
+            "title": "\u2022 .NET Framework 4 Deployment guide",
+            "url": "http://msdn.microsoft.com/en-us/library/ee942965.aspx"
+        },
+        {
+            "title": "\u2022 .NET Framework 4 (Standalone Installer)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "\u2022 The .NET Framework Developer Center",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=0856eacb-4362-4b0d-8edd-aab15c5e04f5&u=http%3a%2f%2fgo.microsoft.com%2ffwlink%2f%3fLinkId%3d53646"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22833",
+    "downloadPreload": true
+}

@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 What's New",
+    "downloadDescription": "This document briefly describes the features and enhancements in Microsoft Dynamics GP 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WhatsNew.pdf",
+            "url": "https://download.microsoft.com/download/4/7/8/478c895e-d71d-494d-b866-46acceb979e4/WhatsNew.pdf",
+            "size": "1537190",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WhatsNew.xps",
+            "url": "https://download.microsoft.com/download/4/7/8/478c895e-d71d-494d-b866-46acceb979e4/WhatsNew.xps",
+            "size": "595698",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document lists enhancements to accounting and business process functionality.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "WhatsNew.pdf",
+        "WhatsNew.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "581.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF or XPS file format.</LI>\r\n<LI>Save the file to your computer. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the document, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6551",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dryad and DryadLINQ Academic Release",
+    "downloadDescription": "Dryad is a high-performance, general-purpose, distributed-computing engine that simplifies the task of implementing distributed applications on clusters of computers running a Windows\u00ae operating system. Last published: November 17, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AcademicRelease.zip",
+            "url": "https://download.microsoft.com/download/2/d/7/2d73cbd1-c31f-41a4-8d5b-d6fa15f5563e/AcademicRelease.zip",
+            "size": "28934906",
+            "version": "1.0.1411.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dryad is a high-performance, general-purpose, distributed-computing engine that simplifies the task of implementing distributed applications on clusters of computers running a Windows\u00ae operating system. DryadLINQ enables developers to implement Dryad applications in managed code by using an extended version of the LINQ programming model and API. The academic release of Dryad and DryadLINQ provides the software necessary to develop DryadLINQ applications and to run them on a Windows HPC Server 2008 cluster. The academic release includes documentation and code samples.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1411.2",
+    "detailsSection_file_name": [
+        "AcademicRelease.zip"
+    ],
+    "detailsSection_file_size": [
+        "27.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52604",
+    "downloadPreload": true
+}

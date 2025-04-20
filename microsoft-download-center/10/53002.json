@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Journal Application for Windows",
+    "downloadDescription": "Windows Journal has been removed from certain versions of the Windows Operating System.\u00a0 This update allows users to install Windows Journal on versions of Windows where it has been removed.\u00a0 This package replaces all previous versions, and can be installed over them.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Journal_en-us_x86.msi",
+            "url": "https://download.microsoft.com/download/6/0/b/60b08bd9-c5fe-4d85-85b1-ecfbe67a2d76/Journal_en-us_x86.msi",
+            "size": "4157440",
+            "version": "10.0.173",
+            "datePublished": "7/15/2024 4:12:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Windows Journal has been removed from certain versions of the Windows Operating System.\u00a0 This update allows users to install Windows Journal on versions of Windows where it has been removed.\u00a0 This package replaces all previous versions, and can be installed over them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3162655",
+        "name": "KB3162655"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.173",
+    "detailsSection_file_name": [
+        "Journal_en-us_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/3162655"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "53002",
+    "downloadPreload": true
+}

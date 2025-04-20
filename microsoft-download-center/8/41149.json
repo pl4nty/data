@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Remote PC Setup ",
+    "downloadDescription": "Office Remote turns your phone into a smart remote that interacts with Microsoft Office on your PC. The app lets you control Word, Excel, and PowerPoint from across the room, so you can walk around freely during presentations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeRemoteSetup.exe",
+            "url": "https://download.microsoft.com/download/8/4/c/84c895e1-23b0-44a0-810c-460657093dec/OfficeRemoteSetup.exe",
+            "size": "1306656",
+            "version": "1.1.3.0",
+            "datePublished": "7/15/2024 3:17:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Office Remote turns your phone into a smart remote that interacts with Microsoft Office on your PC. The app lets you control Word, Excel, and PowerPoint from across the room, so you can walk around freely during presentations. It also shows you your speaker notes and the presentation timer  to help you present more effectively. <br/>\r\n<br/>\r\nNew PowerPoint Features in v1.1.3.0: <br/>\r\n- We added a large thumbnail of the slide that is currently presented, as well as a smaller preview of your next slide. We managed to do this without impacting your notes. <br/>\r\n- You now get an instant laser pointer by simply touching this new thumbnail with your finger. <br/>\r\n- Play and pause your embedded videos from Office Remote.<br/>\r\n<br/>\r\nWith Office Remote, you can start your PowerPoint presentation, advance the slides, see your speaker notes, and control an on-screen laser pointer with a touch of your finger \u2014all from your phone. You can also navigate between Excel worksheets and graphs, and control data slicers from the palm of your hand. And you can scroll through a Word document or quickly jump to specific sections or comments.  \r\n <br/><br/>\r\nOffice Remote has the following features: \r\n <br/><br/>\r\nPowerPoint:<br/> \r\n- Jump to the next, previous, and last slide<br/>\r\n- View slide thumbnails and jump to a slide<br/>\r\n- View speaker notes on phone<br/>\r\n- View presentation timer and slide numbers<br/> \r\n- Laser pointer using touch on your phone<br/>\r\n <br/>\r\nExcel:<br/>\r\n- Change worksheets by swiping<br/>\r\n- Use Slicers, PivotTable, and Filters<br/>\r\n- Jump to any named object in your workbook<br/>\r\n- Move up or down the worksheet<br/>\r\n- Change the zoom level<br/>\r\n <br/>\r\nWord:<br/>\r\n- Jump to headings<br/>\r\n- Jump to comments<br/>\r\n- Screen up/down<br/>\r\n- Line up/down<br/>\r\n- Change the zoom level<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.3.0",
+    "detailsSection_file_name": [
+        "OfficeRemoteSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Phone 8<br/>\r\nMicrosoft Office 2013 (Office 2013 RT is not supported)<br/>\r\nBluetooth on your PC<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and run the file on this page. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41149",
+    "downloadPreload": true
+}

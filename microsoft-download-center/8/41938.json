@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows DirectAccess Client Troubleshooting Tool",
+    "downloadDescription": "DirectAccess Client Troubleshooter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DirectAccessClientTroubleshooter.zip",
+            "url": "https://download.microsoft.com/download/a/d/0/ad0ef574-fa76-430e-b122-ae0f36dba55e/DirectAccessClientTroubleshooter.zip",
+            "size": "149461",
+            "version": "1.4.4.0",
+            "datePublished": "7/15/2024 3:24:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The DirectAccess Client Troubleshooting Tool is a graphical application, based on the .NET Framework, which checks the health of a DirectAccess client by running various tests. \r\n\r\nBuilt-in health tests:\r\nThe following tests are currently implemented:\r\nNetwork interfaces\r\nNetwork location (NLS and NRPT DNS)\r\nIP connectivity (6to4, Teredo, IPHTTPS, entry point in a multisite setup, DNS)\r\nWindows Firewall (applied profile, Firewall outbound rules)\r\nCertificates (EKU Client Authentication, trust chain for AIA and CRL)\r\nIPsec infrastructure tunnel (Domain SysVol share)\r\nIPsec intranet tunnel (PING and HTTP probes)\r\n\r\nAdditional features\r\nRun post-check script (PowerShell, VBScript, BAT or CMD file)\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.4.0",
+    "detailsSection_file_name": [
+        "DirectAccessClientTroubleshooter.zip"
+    ],
+    "detailsSection_file_size": [
+        "146.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1, .NET Framework 4 Client Profile (required for Windows 7)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Run DAClientTroubleshooter.exe on a DirectAccess client computer.\r\n2. Click Run Tests.\r\n3. Select the check box Enable debug mode to open an addition window with more detailed information regarding the tests.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41938",
+    "downloadPreload": true
+}

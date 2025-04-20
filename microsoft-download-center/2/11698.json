@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Firewall with Advanced Security: Step-by-Step Guide: Deploying Windows Firewall and IPsec Policies",
+    "downloadDescription": "This step-by-step guide illustrates how to deploy Active Directory\u00ae Group Policy objects (GPOs) to configure Windows Firewall with Advanced Security.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Step-by-Step Guide to Deploying Windows Firewall and IPsec Policies.docx",
+            "url": "https://download.microsoft.com/download/a/1/9/a19656c7-1a5c-4641-8200-4dc46c0d71ed/Step-by-Step Guide to Deploying Windows Firewall and IPsec Policies.docx",
+            "size": "858081",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This step-by-step guide illustrates how to deploy Active Directory\u00ae Group Policy objects (GPOs) to configure Windows Firewall with Advanced Security in Windows 7, Windows Vista, Windows Server 2008 R2, and Windows Server 2008. Although you can configure a single server locally by using Group Policy Management tools directly on the server, that method is not consistent or efficient when you have many computers to configure. When you have multiple computers to manage, create and edit GPOs, and then apply those GPOs to the computers in your organization.  Common scenarios, including firewall rule deployment, server and domain isolation, and IPsec tunnel mode configuration are discussed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Step-by-Step Guide to Deploying Windows Firewall and IPsec Policies.docx"
+    ],
+    "detailsSection_file_size": [
+        "838.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word, or Microsoft Word Viewer (http://www.microsoft.com/downloads/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac) and the Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats (http://www.microsoft.com/downloads/details.aspx?familyid=941b3470-3ae9-4aee-8f43-c6bb74cd1466).",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Datacenter without Hyper-V",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 Enterprise without Hyper-V",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Standard",
+        "Windows Server 2008 Standard without Hyper-V",
+        "Windows Vista",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Business",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Business N",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button to start the download.</li><li>Do one of the following:</li><ul><li>To start the installation immediately, click <b>Open</b>.</li><li>To copy the download to your computer for installation at a later time, click <b>Save</b>.</li><li>To cancel the installation, click <b>Cancel</b>.</li></ul></ol>.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2008 Technical Library",
+            "url": "http://technet.microsoft.com/en-us/library/cc706994.aspx"
+        },
+        {
+            "title": "windows Firewall With Advanced Security and IPsec",
+            "url": "http://technet.microsoft.com/en-us/library/cc732283.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11698",
+    "downloadPreload": true
+}

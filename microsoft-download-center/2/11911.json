@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual Machine Remote Control Client Plus (VMRCplus)",
+    "downloadDescription": "This tool enables management of Virtual Server 2005. It combines configuration management and remote control of Virtual Server and virtual machines from a single Windows application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VMRCplus-1.8.0-x86.zip",
+            "url": "https://download.microsoft.com/download/2/e/5/2e5cbcdb-eed3-4dd1-8413-aaff42f2046c/VMRCplus-1.8.0-x86.zip",
+            "size": "3935944",
+            "version": "1.8.0",
+            "datePublished": "7/15/2024 3:15:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "VMRCplus-1.8.0-x64.zip",
+            "url": "https://download.microsoft.com/download/2/e/5/2e5cbcdb-eed3-4dd1-8413-aaff42f2046c/VMRCplus-1.8.0-x64.zip",
+            "size": "4772097",
+            "version": "1.8.0",
+            "datePublished": "7/15/2024 3:15:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "VMRCplus is a tool for both configuration management of Virtual Server and remote control of virtual machines. It allows for local and remote management of Virtual Server and supports simultaneous management of up to 32 Virtual Server hosts.<br />\n<br />\nRemote control sessions of virtual machines are grouped in a single window using Tab pages. The interface enables sorting virtual machines based on various properties like name, status and description. Multi-select of virtual machines enable you to perform actions to change their status or open remote control sessions all at once.<br />\n<br />\nVMRCplus is a Windows application and does not require IIS to manage Virtual Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.0",
+    "detailsSection_file_name": [
+        "VMRCplus-1.8.0-x86.zip",
+        "VMRCplus-1.8.0-x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB",
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".Net Framework 3.0 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows XP 64-bit",
+        "Windows XP Professional Edition ",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Choose the correct architecture; x86 (32-bit) or x64 (64-bit) <br />\nDownload the ZIP file to your hard disk.<br />\nExtract setup.exe and vmrcplus.msi.<br />\nRun setup.exe<br />\n<br />\nNote: you must have administrative privileges to install VMRCplus.",
+    "additionalInformationSection": "VMRCplus should be used with Virtual Server 2005 R2 SP1.<br />\n<br />\nFor more information go to http://blogs.technet.com/matthts.",
+    "relatedResourcesSection": [
+        {
+            "title": "virtual Server 2005 R2 SP1",
+            "url": "http://www.microsoft.com/technet/prodtechnol/eval/virtualserver/default.mspx"
+        },
+        {
+            "title": "virtual Server 2005 R2",
+            "url": "http://www.microsoft.com/windowsserversystem/virtualserver/default.aspx"
+        },
+        {
+            "title": ".Net Framework",
+            "url": "http://www.microsoft.com/net/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11911",
+    "downloadPreload": true
+}

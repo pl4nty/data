@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Volume Activation Management Tool (VAMT) 1.1 (x86)",
+    "downloadDescription": "The Volume Activation Management Tool (VAMT) enables IT professionals to automate and centrally manage the volume activation process using a Multiple Activation Key (MAK). VAMT v1.1 is only available as a US-EN (x86) release.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VAMT.zip",
+            "url": "https://download.microsoft.com/download/9/d/3/9d32661a-9583-4e60-9abf-2c6dfbc1f58b/VAMT.zip",
+            "size": "1712434",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<B>An updated version of the Volume Activation Management Tool v1.2 is included in the Windows\u00ae Automated Installation Kit (AIK) for Windows\u00ae 7. VAMT v1.2 provides the same functionality as previous versions and is updated to include support for the following operating systems:</B><br/>\r\n<li>Microsoft Windows Vista</li><br />\r\n<li>Microsoft Windows Server 2008</li><br />\r\n<li>Microsoft Windows 7</li><br />\r\n<li>Microsoft Windows Server 2008 R2</li><br />\r\n<B>To download the Windows AIK for Windows 7 see Related Resources below.</B><br/>\r\n <br/>\r\n<br/>The Microsoft Volume Activation Management Tool (VAMT) is part of Microsoft Volume Activation 2.0 and allows organizations to manage the activation of their Windows Vista and Windows Server 2008 computers using Multiple Activation Key (MAK) keys.<br />\n<br />\nA MAK performs a one-time activation of computers with Microsoft. Once the computers are activated they require no further communication with Microsoft. The number of computers that can be activated with a specific MAK is based on the type and level of the organization\u2019s volume license agreement with Microsoft.  VAMT enables the following functionality:<br />\n<li>MAK Independent Activation: Each computer individually connects and activates with Microsoft either online or via telephone</li><br />\n<li>MAK Proxy Activation: Activation of multiple computers with one online connection to Microsoft</li><br />\n<li>Activation Status: Ability to determine the activation status of Windows Vista and Windows Server 2008 computers</li><br />\n<li>Remaining MAK activations: The current remaining activations associated with a MAK key</li><br />\n<li>XML Import/Export: Allows for exporting and importing of data in a well formed XML format to enable activation of systems in disconnected environment scenarios</li><br />\n<li>Local reactivation: Enables reactivation of computers based on saved activation data stored in the VAMT XML computer information list</li><br />\n<li>Configure for KMS activation:  Convert MAK activated volume editions of Windows Vista and Windows Server 2008 to KMS activation</li>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "VAMT.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li><B>Computer and Processor: </B>1 GHz 32-bit (x86) or 64-bit (x64) processor</li><br />\n<li><B>Memory:  </B>512 megabyte (MB) RAM or higher</li><br />\n<li><B>Hard Disk:  </B>1 gigabyte (GB) or more</li><br />\n<li><B>External Drive:  </B>Removable Media (Optional)</li><br />\n<li><B>Display:  </B>1024x768 or higher resolution monitor (Recommended)</li><br />\n<li><B>Network: </B>Connectivity to remote computers via WMI (TCPIP) and Microsoft Activation Web Service on the Internet via HTTPS</li><br />\n<li><B>Additional: </B>Volume Activation 2.0 Multiple Activation Key (MAK) obtained from a Microsoft licensing portal</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Business",
+        "Windows Vista Enterprise",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><br />\n\t<li>Download <b>VAMT.ZIP</b> and save it to the local disk.</li><br />\n\t<li>Double-click on <b>VAMT.ZIP</b>.</li><br />\n\t<li>Extract the contents of the ZIP file to a folder <b>VAMT.ZIP</b>.</li><br />\n\t<li>To install VAMT double click on <b>VAMTInstall.MSI</b>. If you have a previous version of VAMT installed, remove it first from Programs Control Panel application.</li><br />\n\t<li>When the VAMT Setup Wizard opens, click <b>Next</b>.</li><br />\n\t<li>Select the checkbox to accept the End User License Agreement and choose<br />\n\t<b>Next</b>. </li><br />\n\t<li>Type or Browse to indicate a new path for the installation, or click<br />\n\t<b>Next </b>to accept the default.</li><br />\n\t<li>Click <b>Install </b>to confirm the installation. </li><br />\n\t<li>The User Account Control (if enabled) window appears. Enter credentials if required and click on <b>Allow</b> <br />\n\tfor the installation to continue. </li><br />\n\t<li>The status window will appear. Click <b>Cancel</b> at any time <br />\n\tto stop the installation. </li><br />\n\t<li>Click <b>Finish</b> when the Installation Wizard is complete.\n\t</li><br />\n                     <li> A Start Menu item will be added for the <b>Volume Activation Management Tool</b> and VAMT Help file.</li> <br />\n</ol>",
+    "additionalInformationSection": "A Multiple Activation Key (MAK) is required for activating computers with VAMT. MAK keys can be obtained from the Microsoft Licensing portals by customers with a valid Volume License Agreement. For more information see the Microsoft Volume Licensing website at http://www.microsoft.com/licensing/default.mspx.",
+    "relatedResourcesSection": [
+        {
+            "title": "the Windows\u00ae Automated Installation Kit (AIK) for Windows\u00ae 7",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=136976"
+        },
+        {
+            "title": "volume Activation 2.0 for Windows Vista and Windows Server 2008",
+            "url": "http://www.microsoft.com/technet/volumeactivation/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12860",
+    "downloadPreload": true
+}

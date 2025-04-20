@@ -1,0 +1,283 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Microsoft Windows Server AD CS 2012",
+    "downloadDescription": "This management pack provides an early warning to administrators on issues that could affect services so that administrators can investigate and take corrective action, if necessary. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (RUS).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (RUS).msi",
+            "size": "671744",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (PTB).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (PTB).msi",
+            "size": "647168",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (JPN).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (JPN).msi",
+            "size": "614400",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (ITA).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (ITA).msi",
+            "size": "651264",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (FRA).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (FRA).msi",
+            "size": "655360",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (ESN).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (ESN).msi",
+            "size": "651264",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (DEU).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (DEU).msi",
+            "size": "671744",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for AD CS 2012 (CHS).msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/System Center Management Pack for AD CS 2012 (CHS).msi",
+            "size": "577536",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.TRK.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.TRK.msi",
+            "size": "1101824",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.SVE.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.SVE.msi",
+            "size": "1064960",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.PTG.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.PTG.msi",
+            "size": "1060864",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.PLK.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.PLK.msi",
+            "size": "1138688",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.NLD.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.NLD.msi",
+            "size": "1077248",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for ADCS.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.msi",
+            "size": "1175552",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.KOR.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.KOR.msi",
+            "size": "1183744",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.HUN.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.HUN.msi",
+            "size": "1155072",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.CSY.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.CSY.msi",
+            "size": "1138688",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADCS.CHT.msi",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/SC Management Pack for ADCS.CHT.msi",
+            "size": "974848",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "2012_R2_MP_ADCS.doc",
+            "url": "https://download.microsoft.com/download/7/d/a/7da94e7d-ed1e-4429-9798-f7caee5ba4f9/2012_R2_MP_ADCS.doc",
+            "size": "162304",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "This management pack provides an early warning to administrators on issues that could affect services so that administrators can investigate and take corrective action, if necessary. The management pack helps to simplify the administrative environment by providing a single console for the administrator to perform a number of useful management tasks. To help troubleshoot common issues, the management pack contains helpful product knowledge and a way to extend this knowledge through adding your own company or organization knowledge related to an issue. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThe System Center Management Pack for Active Directory Certificate Services provides monitoring for the following core areas and scenarios: <br/>\r\n<ul>\r\n<li> CA service status checking.</li> \r\n<li> Event monitors.</li> \r\n</ul><br/>\r\n<b>Release History </b><br/>\r\n<ul>\r\n<li>10/18/2013 - version 7.1.10100.0 </li>\r\n<li>9/25/2012 - Original release, version 7.0.8560.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8560.0",
+    "detailsSection_file_name": [
+        "System Center Management Pack for AD CS 2012 (RUS).msi",
+        "System Center Management Pack for AD CS 2012 (PTB).msi",
+        "System Center Management Pack for AD CS 2012 (JPN).msi",
+        "System Center Management Pack for AD CS 2012 (ITA).msi",
+        "System Center Management Pack for AD CS 2012 (FRA).msi",
+        "System Center Management Pack for AD CS 2012 (ESN).msi",
+        "System Center Management Pack for AD CS 2012 (DEU).msi",
+        "System Center Management Pack for AD CS 2012 (CHS).msi",
+        "SC Management Pack for ADCS.TRK.msi",
+        "SC Management Pack for ADCS.SVE.msi",
+        "SC Management Pack for ADCS.PTG.msi",
+        "SC Management Pack for ADCS.PLK.msi",
+        "SC Management Pack for ADCS.NLD.msi",
+        "SC Management Pack for ADCS.msi",
+        "SC Management Pack for ADCS.KOR.msi",
+        "SC Management Pack for ADCS.HUN.msi",
+        "SC Management Pack for ADCS.CSY.msi",
+        "SC Management Pack for ADCS.CHT.msi",
+        "2012_R2_MP_ADCS.doc"
+    ],
+    "detailsSection_file_size": [
+        "656.0 KB",
+        "632.0 KB",
+        "600.0 KB",
+        "636.0 KB",
+        "640.0 KB",
+        "636.0 KB",
+        "656.0 KB",
+        "564.0 KB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "952.0 KB",
+        "158.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\nNote: CA only (no support for Online Responder or other Active Directory Certificate Services role Services. This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Refer to the management pack guide included in this download for detailed instructions on working with this management pack. For the latest MP Guide, please download the .doc file below.",
+    "relatedResourcesSection": [
+        {
+            "title": "how to Import a Management Pack in Operations Manager 2007 ",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=142351"
+        },
+        {
+            "title": "system Center Operations Manager community forum ",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=179635"
+        },
+        {
+            "title": "how to Monitor Using Overrides",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=117777"
+        },
+        {
+            "title": "administering the Management Pack Life Cycle ",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=211463"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34765",
+    "downloadPreload": true
+}

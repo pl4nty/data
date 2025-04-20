@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Update 3 Fixes",
+    "downloadDescription": "Fixes some known issues in HPC Pack 2012 R2 Update 3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB3134307-x86.exe",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1cebe8-b344-4ebc-881e-66a4a784fc9a/KB3134307-x86.exe",
+            "size": "64315808",
+            "version": "4.05.5094",
+            "datePublished": "7/15/2024 4:00:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB3134307-x64.exe",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1cebe8-b344-4ebc-881e-66a4a784fc9a/KB3134307-x64.exe",
+            "size": "64381344",
+            "version": "4.05.5094",
+            "datePublished": "7/15/2024 4:00:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update improves some features and fixes some known issues in HPC Pack 2012 R2 Update 3: <br/>\r\n<br/>\r\n<b>Auto grow shrink improvements</b><br/>\r\n- Supports jobs with task dependencies<br/>\r\n- Supports Linux IaaS nodes<br/>\r\n<br/>\r\n<b>SOA improvements</b><br/>\r\n- Added support for multiple SOA sessions in a shared session pool. To specify the pool size for a SOA service, add the optional configuration &lt;service maxSessionPoolSize=\"20\"&gt; in the service registration file. When creating a shared SOA session with the session pool, specify both sessionStartInfo.ShareSession and sessionStartInfo.SessionPool as true. And after using this session, close it without purging to leave it in the pool.<br/>\r\n- Added GPU type for SOA session API.<br/>\r\n- Fixed an issue that SOA service host start failure may make the SOA job unable to release core resources to other jobs.<br/>\r\n- Added SOA multi-emit feature: you can specify the following optional configuration in your service registration file: &lt;loadBalancing multiEmissionDelayTime=\"10000\"&gt;. Then, if a SOA request fails to return from the service host within 10,000 milliseconds, the broker will resend the request until a response is successfully returned within the timeout for the request or the messageResendLimit of the request is reached. Specify the value -1 or remove the multiEmissionDelayTime attribute from loadBalancing to disable this feature. Note: Please choose a value which is large enough to be considered as a bad request calculation for your service; otherwise, many requests will be re-calculated unnecessarily, which will waste the cluster resources. <br/>\r\n- Improved the functionality of EchoClient.exe for the built-in SOA echo service. It is a handy tool for evaluating the functionality and the performance of the SOA system.<br/>\r\n<br/>\r\n<b>Linux node agent fixes</b><br/>\r\n- Removed some sensitive information from the logs.<br/>\r\n- Fixed an issue that when node manager restarts, the nodemanager.json configuration file\u2019s content are cleared occasionally, causing the node to be in an error state.<br/>\r\n- Fixed an issue when cgroup subsystems with different hierarchy as installation are specified.<br/>\r\n<br/>\r\n<b>Support for Azure Internal Load Balancer</b><br/>\r\n- Now when you are using ExpressRoute you can specify Azure Internal Load Balancer for your azure PaaS compute nodes in the node template. Together with forced tunneling you can have all your burst traffic within ExpressRoute.<br/>\r\n<br/>\r\n<b>Deprecated the environment variable %CCP_NEW_JOB_ID%</b><br/>\r\n- In Update 3 we introduced CCP_NEW_JOB_ID to store the job id generated or used in a previous job command, but it doesn\u2019t work appropriately. Now with this QFE, we use the symbol \"!!\" to indicate the job id when it is required as a parameter in a job command.<br/>\r\n    e.g. job new; job add !! hostname; job view !!; job submit /id:!!<br/>\r\n<br/>\r\n<b>Fixed task failure issue</b><br/>\r\n- In some cases, your task will fail during task creation with an error similar to: Error from node: server:Exception 'The job identifier xxx is invalid.' This update fixes the issue when the following\r\nserver stack trace is generated: <br/>\r\n    at Microsoft.Hpc.NodeManager.RemotingExecutor.RemotingNMExecImpl.StartTask(Int32 jobId, Int32 taskId, ProcessStartInfo startInfo)<br/>\r\n    at Microsoft.Hpc.NodeManager.RemotingExecutor.RemotingNMExecImpl.StartJobAndTask(Int32 jobId, String userAccount, Byte[] cipherText, Byte[] iv, Byte[] certificate, Int32 taskId, ProcessStartInfo startInfo)<br/>\r\n    at Microsoft.Hpc.NodeManager.RemotingExecutor.RemotingNMExecImpl.StartJobAndTask(Int32 jobId, String userAccount, Byte[] cipherText, Byte[] iv, Int32 taskId, ProcessStartInfo startInfo)<br/>\r\n    at Microsoft.Hpc.NodeManager.RemotingCommunicator.RemotingNMCommImpl.StartJobAndTask(Int32 jobId, String userAccount, Byte[] cipherText, Byte[] iv, Int32 taskId, ProcessStartInfo startInfo<br/>\r\n<br/>\r\n<b>Other fixes</b><br/>\r\n- in HPC HA cluster, there might be two nodes with same name in cluster, one is unapproved and the other is offline.<br/>\r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.05.5094",
+    "detailsSection_file_name": [
+        "KB3134307-x86.exe",
+        "KB3134307-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "61.3 MB",
+        "61.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012, Windows Server 2012 R2 with HPC Pack 2012 R2 Update 3 (build 4.5.5079.0) installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This update needs to be run on all head nodes, broker nodes, workstation nodes, compute nodes and clients<br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2012 R2 Update 3 is installed. The version number (in HPC Cluster Manager, click <b>Help</b>><b>About</b>) should be 4.5.5079.0. Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\n<b>Important:</b><br/>\r\nThe upgrade package KB3134307 does not support uninstallation. After you upgrade, if you want to restore to HPC Pack 2012 R2 Update 3 without KB3134307, you must completely uninstall the HPC Pack 2012 R2 Update 3 features from the head node computer and the other computers in your cluster, and reinstall HPC Pack 2012 R2 Update 3 and restore the data in the HPC databases.<br/>\r\n<br/>\r\n<b>Applying the update</b><br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB3134307-x64.exe for the 64-bit version, KB3134307-x86.exe for the 32-bit version) and then:<br/>\r\n<br/>\r\n1. Click Save to copy the download to your computer.<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows.<br/>\r\nNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update.<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node.<br/>\r\nNote: If you have HA head nodes, run the fix on the active node, move the node to passive, and after failover occurs run the fix on the new active node. Do this for all head nodes in the cluster.<br/>\r\n4. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes.\r\n<br/>\r\nTo use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes:<br/>\r\na. Copy the appropriate version of the update to a shared folder such as \\\\headnodename\\HPCUpdates .<br/>\r\nb. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n    clusrun /nodegroup:ComputeNodes \\\\headnodname\\HPCUpdates\\KB3134307 -x64.exe -unattend -SystemReboot<br/>\r\n    clusrun /nodegroup:BrokerNodes \\\\headnodname\\HPCUpdates\\KB3134307 -x64.exe -unattend -SystemReboot<br/>\r\n<b>Note</b>: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\n<b>Note</b>: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\nc .To update workstation nodes and unmanaged server nodes you may need to reboot.<br/>\r\n<br/>\r\n5. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\na. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager<br/>\r\nb. Run the update executable<br/>\r\nc. Reboot your client computer<br/>\r\n<br/>\r\n6. You can run get-hpcpatchstatus.ps1 on headnode/computenodes/client under %CCP_HOME%bin to check the patch status.<br/>\r\n<br/>\r\n7. To update on premise Linux compute nodes:<br/>\r\na. Set up a file share to share update binaries from head node to Linux compute nodes , for see Get started with on-premises Linux compute nodes).Here we suppose we have established an SMB share C:\\SmbShare on the head node as \\\\headnodename\\SmbShare, and mount it on all the Linux compute nodes with path /smbshare.<br/>\r\nb. Find the on-premises Linux compute node installation binaries in the following folder: %CCP_DATA%InstallShare\\LinuxNodeAgent. Then, copy the binaries hpcnodeagent.tar.gz and setup.py into \\\\headnodename\\SmbShare in the head node, and check that the files can be seen in the path /smbshare from the Linux compute nodes.<br/>\r\nc. Run update command on the Linux compute nodes in the /smbshare with HPC 2012 R2 Update 3 nodemanger (version 1.6.13.0), e.g.:<br/>\r\n    python setup.py \u2013update<br/>\r\nd. (Optional) You can check whether the Linux compute nodes have been updated successfully by using command \u201c/opt/hpcnodemanager/nodemanager -v\u201d on the Linux compute nodes. The updated nodemanager version is 1.6.18.0.<br/>\r\n<br/>\r\n8. To update IaaS Linux bench:<br/>\r\na. Copy the update to the IaaS head node and update head node by following the 3rd point of this guide.<br/>\r\nb. Stop the services of IaaS Linux compute nodes and start these services again. The Linux compute nodes in the services will be updated with the latest linux node manager extension. <br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack QFE KB3058735",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=46894"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50809",
+    "downloadPreload": true
+}

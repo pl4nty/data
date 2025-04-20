@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Talent extensibility solution: Flow - Email Notification",
+    "downloadDescription": "The Flow \u2013 Email Notification template can be used for email notification scenarios. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Flow-EmailNotification_20190314210904.zip",
+            "url": "https://download.microsoft.com/download/5/4/4/544a7a6d-f82d-46f0-9e83-613a08d09bfc/Flow-EmailNotification_20190314210904.zip",
+            "size": "3208",
+            "version": "1",
+            "datePublished": "5/15/2024 3:05:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Flow \u2013 Email Notification template can be used for email notification scenarios. It can be used to trigger notification emails to candidates that the hiring team rejects during any stage of the recruiting process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Flow-EmailNotification_20190314210904.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.1 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Talent\r\nMicrosoft Flow",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Files will then need to be extracted.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58088",
+    "downloadPreload": true
+}

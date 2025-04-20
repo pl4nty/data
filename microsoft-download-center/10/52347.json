@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SIGMA: Large-Scale and Parallel Machine-Learning Tool Kit",
+    "downloadDescription": "The goal of SIGMA is to provide a group of parallel machine-learning algorithms that can meet the requirements of research work and applications typically with large-scale data or features. Last published: March 4, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MLUI3Installer - 0.2.5.3.msi",
+            "url": "https://download.microsoft.com/download/c/c/8/cc840f55-1882-4c47-a9c4-b034aaf4cba3/MLUI3Installer - 0.2.5.3.msi",
+            "size": "5953024",
+            "version": "1.11",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The goal of SIGMA is to provide a group of parallel machine-learning algorithms that can meet the requirements of research work and applications typically with large-scale data or features. The tool kit includes more than 10 algorithms and it makes them run on single multicore machine or on a HPC cluster with hundreds of machines and thousands of CPU cores running. \r\n                                                                            \r\nRelease history: \r\nversion 1.0: 2009/Oct/12: a basic version with algorithms.\r\nversion 1.1: 2010/Feb/01: add up to ten algorithms and pass our internal testing.\r\n         \r\nContactor: Weizhu Chen (http://research.microsoft.com/en-us/people/wzchen/ )",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.11",
+    "detailsSection_file_name": [
+        "MLUI3Installer - 0.2.5.3.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52347",
+    "downloadPreload": true
+}

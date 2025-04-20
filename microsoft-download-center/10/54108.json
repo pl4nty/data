@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business on Mac",
+    "downloadDescription": "Skype for Business on Mac",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeForBusinessInstaller-16.31.0.11.pkg",
+            "url": "https://download.microsoft.com/download/d/0/5/d055da17-c7b8-4257-89a1-78e7bbe3833f/SkypeForBusinessInstaller-16.31.0.11.pkg",
+            "size": "63532071",
+            "version": "16.31.0.11",
+            "datePublished": "9/9/2024 8:54:02 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Skype for Business on Mac is the all new client that provides great communication experiences for Apple users. Features like one-click join, edge-to-edge video, and full screen sharing give you a superior Skype Meetings experience. Try it now!<br /><br />\n\n<b>NOTE: </b>This download will install one of the following languages based on your OS system language preference:  Arabic, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Italian, Japanese, Korean, Norwegian (Bokm\u00e5l), Polish, Portuguese (Brazil), Russian, Spanish, Swedish, Turkish.<br /><br />\n\nFor the best Mac client experiences and an always up-to-date infrastructure, we recommend all customers migrate to Office 365.  Skype for Business Server 2015 customers should at a minimum download and install the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=47690\" target=\"_blank\">Skype for Business Server 2015 Cumulative Update</a> version 9319.272 or higher.  Lync Server 2013 customers should consider upgrading their installation to Skype for Business Server 2015, or downloading the latest <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=36820\" target=\"_blank\">Lync Server 2013 Cumulative Update</a> version 8308.974 or higher.  Lync Server 2010 is not supported \u2013 instead we recommend customers continue to use the <a href=\"https://support.office.com/en-us/article/Set-up-Lync-for-Mac-2011-for-Office-365-AE3EBD0E-A1A7-48CF-9350-36B144DC5F88?ui=en-US&rs=en-US&ad=US\" target=\"_blank\"> Lync for Mac 2011 client</a>.<br /><br />\n\nVisit the <a href=\"https://go.microsoft.com/fwlink/?linkid=829799\" target=\"_blank\">Known Issues</a> and <a href=\"https://go.microsoft.com/fwlink/?linkid=829753\" target=\"_blank\">FAQ</a> pages for more information.<br /><br />\n\nVisit the <a href=\"https://technet.microsoft.com/en-us/library/dn933896.aspx\" target=\"_blank\">Skype for Business Client Comparison Tables</a> for side by side feature comparisons for Lync, Skype for Business and Skype for Business Server.<br /><br />\nVisit the <a href=\"https://technet.microsoft.com/en-us/library/dn705313.aspx\" target=\"_blank\">Skype for Business Server Deployment Connectivity page</a> for the Skype for Business Clients and Interoperability Matrix.<br /><br />\r\nVisit the <a href=\"https://go.microsoft.com/fwlink/?linkid=832970\" target=\"_blank\">What\u2019s New in Skype for Business 2016</a> for the latest update information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.31.0.11",
+    "detailsSection_file_name": [
+        "SkypeForBusinessInstaller-16.31.0.11.pkg"
+    ],
+    "detailsSection_file_size": [
+        "60.6 MB"
+    ],
+    "detailsSection_file_date": "9/9/2024",
+    "systemRequirementsSection": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skype for Business Server 2015 or Lync Server 2013<br />\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OSX 10.11 (El Capitan) or OSX 10.12 (Sierra)<br />\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Outlook Mac build 15.27 (161010) required for Outlook integration<br />\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visit <a href=\"https://products.office.com/en-us/office-system-requirements\" target=\"_blank\"> System Requirements for Office</a> page for full system requirements.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>To install Skype for Business on Mac:</b>\n<br />\n<ol>\n<li>Click the <b>Download</b> button.<br /></li>\n<li>Click <b>Save</b> to copy the disc image file to your computer.<br /></li>\n<li>Double click the PKG image file.</li>\n<li>Follow the on screen instructions.</li>\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54108",
+    "downloadPreload": true
+}

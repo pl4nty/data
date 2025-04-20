@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 14 for Exchange Server 2016 (KB4514140)",
+    "downloadDescription": "Cumulative Update 14 for Exchange Server 2016 (KB4514140)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ExchangeServer2016-x64-cu14.iso",
+            "url": "https://download.microsoft.com/download/f/4/e/f4e4b3a0-925b-4eff-8cc7-8b5932d75b49/ExchangeServer2016-x64-cu14.iso",
+            "size": "7176042496",
+            "version": "15.01.1847.003",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Cumulative Update 14 for Exchange Server 2016 resolves issues that were found in Exchange Server 2016 since the software was released. This update rollup is highly recommended for all Exchange Server 2016 customers.<br /> <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4514140",
+        "name": "KB4514140"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.1847.003",
+    "detailsSection_file_name": [
+        "ExchangeServer2016-x64-cu14.iso"
+    ],
+    "detailsSection_file_size": [
+        "6.7 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2016 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2016 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2016 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2016 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2016 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100302",
+    "downloadPreload": true
+}

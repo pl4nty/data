@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Teradata Inventory Scripts",
+    "downloadDescription": "Teradata Inventory Scripts",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Teradata Inventory Scripts.zip",
+            "url": "https://download.microsoft.com/download/1/5/4/1549dbcc-723a-4c09-8653-7b1799adc9d8/Teradata Inventory Scripts.zip",
+            "size": "609707",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:30:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A set of inventory scripts that collects information from a Teradata system about databases, objects, columns and space at database and table level\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Teradata Inventory Scripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "595.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>\r\n\r\nThe file is a zipped folder that contains the scripts and supporting documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To start the installation immediately, choose <b>Open</b> </li> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103231",
+    "downloadPreload": true
+}

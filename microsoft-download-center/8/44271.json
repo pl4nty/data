@@ -1,0 +1,122 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2008 R2 Service Pack 3",
+    "downloadDescription": "Download Service Pack 3 for Microsoft\u00ae SQL Server\u00ae 2008 R2 ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2SP3-KB2979597-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/d/7/a/d7a28b6c-fcfe-4f70-a902-b109388e01e9/ENU/SQLServer2008R2SP3-KB2979597-x86-ENU.exe",
+            "size": "259195056",
+            "version": "10.50.6000.34",
+            "datePublished": "7/15/2024 3:53:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2SP3-KB2979597-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/d/7/a/d7a28b6c-fcfe-4f70-a902-b109388e01e9/ENU/SQLServer2008R2SP3-KB2979597-x64-ENU.exe",
+            "size": "375792304",
+            "version": "10.50.6000.34",
+            "datePublished": "7/15/2024 3:53:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "SQL Server 2008 R2 Service Pack 3 (SP3) is now available for download. SQL Server 2008 R2 service packs are cumulative and can be used to upgrade all releases of SQL Server 2008 R2 to Service Pack 3. SQL Server 2008 R2 Service Pack 3 contains Cumulative Update 1 to 13 from SQL Server 2008 R2 SP2.  The package can be used to upgrade the following SQL Server 2008 R2 editions: \n<br /><ul>\n<li>SQL Server 2008 R2 Parallel Computing Edition</li>\n<li>SQL Server 2008 R2 Datacenter Edition</li>\n<li>SQL Server 2008 R2 Enterprise Edition and Developer Edition</li>\n<li>SQL Server 2008 R2 Standard Edition</li>\n<li>SQL Server 2008 R2 Web Edition</li>\n<li>SQL Server 2008 R2 Workgroup Edition</li>\r\n<li>SQL Server 2008 R2 Express Edition</li>\n</ul><br />\n<a href=\"http://support.microsoft.com/kb/2979597\">KB article 2979597</a> provides additional information about key fixes in SQL Server 2008 R2 SP3.\r\n<br />\r\n<br />\n<b>NOTE!</b> We have discovered an issue with Report Builder 3.0 that ships with SQL Server 2008 R2 Service Pack 3.\r\nYou will find on the SQL Server Release Services blog a <a href=\"http://blogs.msdn.com/b/sqlreleaseservices/archive/2014/10/16/report-builder-of-sql-server-2008-r2-service-pack-3-does-not-launch.aspx\">public message</a> sharing details and mitigations.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2979597",
+        "name": "KB2979597"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.50.6000.34",
+    "detailsSection_file_name": [
+        "SQLServer2008R2SP3-KB2979597-x86-ENU.exe",
+        "SQLServer2008R2SP3-KB2979597-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "247.2 MB",
+        "358.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n\n     <li><b>System Memory:</b></li>\n    <ul>\n      <li>A minimum 1 GB (Recommended 4 GB or more)</li>\n    </ul>\n    <li><b>Hard Disk:</b></li>\n    <ul>\n      <br />\n        <li>A minimum of 1 GB of available hard disk space.</li>\n      <br />\n    </ul>\n    <li><b>Processors:</b></li>\n    <ul>\n      <br />\n      <b>X86:</b>\n      <br />\n        <li>Pentium III-compatible processor or faster (Processor Speed - 1.0 GHz or faster)</li>\n      <br />\n      <b>X64:</b>\n      <br />\n        <li>Minimum: AMD Opteron, AMD Athlon 64, Intel Xeon with Intel EM64T support, Intel Pentium IV with EM64T support (Processor Speed - 1.0 GHz or faster)</li>\n      <br />\n      </ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\n<b>Prerequisites</b><br />To install or update SQL Server 2008 R2 SP3 one will need adminstrative rights on the computer.\n    <br />\n    <br />\n    <ul>\n      <b>Step 1:</b>\n      Download and review the\n      <a href=\"http://support.microsoft.com/kb/2979597\">Release Notes</a>\n      <br />\n    <br />\n      <b>Step 2:</b>\n      Please click on the Download Button of Corresponding page and follow below instruction to download the package.\n      <br />\n      <ul>\n        <li>\n          To start the installation immediately, click\n          <b>Run</b>.\n        </li>\n        <li>\n          To install SP3 at a later time, click\n          <b>Save</b>.\n        </li>\n      </ul>\n    </ul>\n  ",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server 2008 R2 SP2 Express",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=251791"
+        },
+        {
+            "title": "knowledgeBase article for SQL Server 2008 R2 SP3",
+            "url": "http://support.microsoft.com/kb/2979597"
+        },
+        {
+            "title": "sql Server 2008 R2 SP3 Feature Packs",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=512819"
+        },
+        {
+            "title": "hardware and Software for SQL Server 2008 R2",
+            "url": "http://technet.microsoft.com/en-us/library/ms143506(sql.105).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44271",
+    "downloadPreload": true
+}

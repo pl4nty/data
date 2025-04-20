@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "KB3171055_MRSPatch_Windows_8.0.3",
+    "downloadDescription": "KB3171055 MRS Patch for Windows 8.0.3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB3171055_patch_Win_7.4.1.tar.gz",
+            "url": "https://download.microsoft.com/download/1/8/4/18459e67-5ab0-4491-8efd-300674618c38/KB3171055_patch_Win_7.4.1.tar.gz",
+            "size": "81414746",
+            "version": "Windows",
+            "datePublished": "6/15/2024 4:30:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB3171055_patch_Win_8.0.0.tar.gz",
+            "url": "https://download.microsoft.com/download/1/8/4/18459e67-5ab0-4491-8efd-300674618c38/KB3171055_patch_Win_8.0.0.tar.gz",
+            "size": "46844835",
+            "version": "Windows",
+            "datePublished": "6/15/2024 4:30:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB3171055_patch_Win_8.0.3.tar.gz",
+            "url": "https://download.microsoft.com/download/1/8/4/18459e67-5ab0-4491-8efd-300674618c38/KB3171055_patch_Win_8.0.3.tar.gz",
+            "size": "47975281",
+            "version": "Windows",
+            "datePublished": "6/15/2024 4:30:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the patch to allow more than 4GB data frame to be called by various R functions. \r\n\r\nThis download include three patch versions of Microsoft R Server for Windows, which include:-\r\n1. Revolution Analytics 7.4.1 Linux patch - file name: KB3171055_patch_Win_7.4.1.tar.gz\r\n2. Microsoft R Server 8.0.0 Linux patch - file name: KB3171055_patch_Win_8.0.0.tar.gz\r\n3. Microsoft R Server 8.0.5 Linux patch - file name: KB3171055_patch_Win_8.0.3.tar.gz",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3171055",
+        "name": "KB3171055"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Windows",
+    "detailsSection_file_name": [
+        "KB3171055_patch_Win_7.4.1.tar.gz",
+        "KB3171055_patch_Win_8.0.0.tar.gz",
+        "KB3171055_patch_Win_8.0.3.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "77.6 MB",
+        "44.7 MB",
+        "45.8 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Home Premium N 64-bit",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Professional E 64-bit",
+        "Windows 7 Professional K 64-bit",
+        "Windows 7 Professional KN 64-bit",
+        "Windows 7 Professional N 64-bit",
+        "Windows 7 Starter 64-bit",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 7 Ultimate E 64-bit",
+        "Windows 7 Ultimate K 64-bit",
+        "Windows 7 Ultimate KN 64-bit",
+        "Windows 7 Ultimate N 64-bit",
+        "Windows 8",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8 Release Preview",
+        "Windows 8.1",
+        "Windows 8.1 Preview",
+        "Windows Server 2012",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Release Candidate",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "Instruction listed in KB article",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54787",
+    "downloadPreload": true
+}

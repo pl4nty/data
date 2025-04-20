@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2019 Remote Blob Store",
+    "downloadDescription": "SQL Server Remote BLOB Store (RBS) is an optional add-on component that lets database administrators store binary large objects in commodity storage solutions instead of directly on the main database server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/c/9/a/c9a65b6b-3dfc-4564-8234-0834abe6a833/RBS.msi",
+            "size": "3477504",
+            "version": "15.0.2000.5",
+            "datePublished": "7/15/2024 4:29:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The SQL Server Remote Blob Store is a method for storing blobs of unstructured data in an external Content Addressable data store. The component consists of a client-side DLL that is linked into a user application, as well as a set of stored procedures to be installed on SQL Server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.5",
+    "detailsSection_file_name": [
+        "RBS.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Prerequisites\r\n  <br /> <br />\r\nMicrosoft .NET Framework 4.6.2. <a href=\"https://go.microsoft.com/fwlink/?linkid=2110756\"> Microsoft ODBC Driver 17 for SQL Server </a>.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the file and run the dowloaded file to install the package.",
+    "additionalInformationSection": "Documentation: <a href=\" https://docs.microsoft.com/en-us/sql/relational-databases/blob/remote-blob-store-rbs-sql-server?view=sql-server-ver15\"> Remote Blob Store (RBS) (SQL Server) </a>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100452",
+    "downloadPreload": true
+}

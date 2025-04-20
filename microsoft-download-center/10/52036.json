@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "AbsIL SDK for .NET Framework",
+    "downloadDescription": "Abstract IL an SDK for manipulating .NET Framework files and binaries. Last published: September 20, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "absil-1.1.12.5.zip",
+            "url": "https://download.microsoft.com/download/4/c/6/4c6fbe2d-804a-471e-8e85-ada2c99ab78b/absil-1.1.12.5.zip",
+            "size": "8637281",
+            "version": "1.1.12.5",
+            "datePublished": "5/15/2024 4:04:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Abstract IL an SDK for manipulating .NET Framework files and binaries. You can use this release from any .NET programming language, though it is best used from F#, or the OCaml language. With it you can access the contents of .NET binaries at a high-level, avoiding the details of the binary format. Abstract IL has been used for a compiler (F#), a static analysis tool looking analyzing code access security and an aspect-oriented programming project.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.12.5",
+    "detailsSection_file_name": [
+        "absil-1.1.12.5.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52036",
+    "downloadPreload": true
+}

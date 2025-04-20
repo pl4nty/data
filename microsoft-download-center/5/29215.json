@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Introduction to the SysOperation Framework",
+    "downloadDescription": "This paper provides a comparison of the new SysOperation framework introduced in Microsoft Dynamics AX 2012 with the RunBaseBatch framework and outlines common development scenarios using the SysOperation framework.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Introduction to the SysOperation Framework.pdf",
+            "url": "https://download.microsoft.com/download/a/1/e/a1ec8bed-1187-4f9c-8c84-02431316f458/Introduction to the SysOperation Framework.pdf",
+            "size": "1907611",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SysOperation framework enables application logic to be written in a way that supports running interactively or via the batch server in Microsoft Dynamics AX 2012. This white paper illustrates how the SysOperation framework can be used to build operations that can run asynchronously and make use of the full processing power available on the server. Four code samples are presented and explained to illustrate the comparison between the SysOperation and the RunBaseBatch framework, and to demonstrate the use of the SysOperation framework in building asynchrouous and scalable operations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Introduction to the SysOperation Framework.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29215",
+    "downloadPreload": true
+}

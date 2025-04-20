@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Team Server (ID Server) Setup",
+    "downloadDescription": "This document describes how to install Team Server, which is the ID server that is required if you use Team Foundation Server or Microsoft Visual SourceSafe for version control, and is optional if you use MorphX VCS for version control.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Team Server (ID Server) Setup Whitepaper for Microsoft Dynamics AX 2009.pdf",
+            "url": "https://download.microsoft.com/download/a/8/d/a8d7cf09-ec68-494e-824c-81c7f9b67ada/Team Server (ID Server) Setup Whitepaper for Microsoft Dynamics AX 2009.pdf",
+            "size": "340701",
+            "version": "5.0",
+            "datePublished": "6/13/2024 11:48:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Team Server (ID Server) Setup Whitepaper for Microsoft Dynamics AX 2009.xps",
+            "url": "https://download.microsoft.com/download/a/8/d/a8d7cf09-ec68-494e-824c-81c7f9b67ada/Team Server (ID Server) Setup Whitepaper for Microsoft Dynamics AX 2009.xps",
+            "size": "458629",
+            "version": "5.0",
+            "datePublished": "6/13/2024 11:48:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to install Team Server, which is the ID server that is responsible for issuing unique IDs to objects when using version control.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "Team Server (ID Server) Setup Whitepaper for Microsoft Dynamics AX 2009.pdf",
+        "Team Server (ID Server) Setup Whitepaper for Microsoft Dynamics AX 2009.xps"
+    ],
+    "detailsSection_file_size": [
+        "332.7 KB",
+        "447.9 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "<UL><LI>Team Server is required for version control systems if more than one Application Object Server (AOS) is used.</LI> <br />\n<LI>Team Server is required for the Microsoft Visual SourceSafe and Microsoft Visual Studio Team Foundation Server version control systems, because the topologies for version control integration with Visual SourceSafe and Visual Studio Team Foundation Server call for the use of more than one AOS.</LI><br />\n<LI>Team Server is optional if the out-of-the-box MorphX VCS is used, because one AOS is shared under MorphX VCS.</LI></UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "team Foundation Installation Guide for Visual Studio Team System 2008",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=ff12844f-398c-4fe9-8b0d-9e84181d9923"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1403",
+    "downloadPreload": true
+}

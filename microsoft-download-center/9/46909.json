@@ -1,0 +1,187 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Technical Preview 2 Data Protection Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-9.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-6.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-11.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-12.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD.exe",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD.exe",
+            "size": "353464",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-5.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-4.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DPMTP_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/DPMTP_VHDEVAL.docx",
+            "size": "44987",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-8.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-7.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-2.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-10.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-1.bin",
+            "size": "735662592",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-3.bin",
+            "size": "736000000",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_SCTP2_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/c/0/1/c01243b4-6cd1-4c83-bfbc-74263a81b98b/SCDPM_SCTP2_VHD-13.bin",
+            "size": "497963799",
+            "version": "TP2",
+            "datePublished": "7/15/2024 3:47:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nThis VHD enables System Center customers to jointly evaluate System Center Technical Preview 2 and Windows Server Technical Preview 2. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center Technical Preview 2 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=144b4015-6c8a-432e-8e06-482b2be0f069\">System Center Technical Preview 2 Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=86c3fe2f-2b97-445e-9a9f-1ae8e9afaa68\">System Center Technical Preview 2 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=1a735c77-82c2-4abb-8add-f2a107f4fb0c\">System Center Technical Preview 2 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=a57f7968-449e-42a5-98b7-ec39ebbc84fb\">System Center Technical Preview 2 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f90ec169-99e9-4add-904d-4d04fa59dbe4\">System Center Technical Preview 2 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "TP2",
+    "detailsSection_file_name": [
+        "SCDPM_SCTP2_VHD-9.bin",
+        "SCDPM_SCTP2_VHD-6.bin",
+        "SCDPM_SCTP2_VHD-11.bin",
+        "SCDPM_SCTP2_VHD-12.bin",
+        "SCDPM_SCTP2_VHD.exe",
+        "SCDPM_SCTP2_VHD-5.bin",
+        "SCDPM_SCTP2_VHD-4.bin",
+        "DPMTP_VHDEVAL.docx",
+        "SCDPM_SCTP2_VHD-8.bin",
+        "SCDPM_SCTP2_VHD-7.bin",
+        "SCDPM_SCTP2_VHD-2.bin",
+        "SCDPM_SCTP2_VHD-10.bin",
+        "SCDPM_SCTP2_VHD-1.bin",
+        "SCDPM_SCTP2_VHD-3.bin",
+        "SCDPM_SCTP2_VHD-13.bin"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "345.2 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "43.9 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.6 MB",
+        "701.9 MB",
+        "474.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cDPMTP_VHDEVAL_final.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCDPM_SCTP2_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46909",
+    "downloadPreload": true
+}

@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio International Feature Pack 2.0 ",
+    "downloadDescription": "The Visual Studio International Feature Pack 2.0 contains a set of controls as well as a set of class libraries designed to help .NET developers create world-ready applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Vsintlpack2.msi",
+            "url": "https://download.microsoft.com/download/1/0/8/1089df8f-0fa8-4ca1-b27d-1f8488039845/Vsintlpack2.msi",
+            "size": "14799360",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Visual Studio International Feature Pack 2.0 is an extension to Version 1.0 (version 1.0 is named \"Microsoft Visual Studio International Pack 1.0 SR1\") and contains a set of controls as well as a set of class libraries designed to help .NET developers create world-ready applications. \n<br />\n    <ul>\n        <li>Yomigana Framework contains a class library and controls. </li>\n        <ul>\n                <li>Class Library: The Yomigana class library allows the string class to be annotated.  It also contains generic versions of the annotation classes so that any object with IEnumerable can be annotated by instances of the string class or a generic type.   In order to ease the complex comparison with the annotated string, it also includes Comparer classes with various Japanese comparison options.  It parses and outputs using the Interlinear Annotation characters from the Unicode standard (and the JIS X 4052 format).  </li>\n                 <ul>    \n                         <li>General purpose classes using generics to annotate an enumerated type. This feature can be used to add annotations to an instance of a (collection) type which implements IEnumerable.</li>\n                         <li>Special purpose classes using above generics classes to annotate a string with types. This feature can be used to add annotations (can by any type) to an instance of String.</li>\n                         <li>Special purpose StringAnnotation classes using above generics classes to annotate strings with strings. This includes parsing and formatting features. This feature can be used to add String annotations to an instance of String.</li>\n                         <li>A comparer to collate a list of strings with Yomigana annotations. </li>\n                         <li>A data structure with IEnumerable &lt;string&gt; which delivers an IEnumerator &lt;string&gt; to divide a string into enumerated string segments. </li>\n               </ul>\n               <li>Controls: </li>\n               <ul>    \n                         <li>Enhanced Ajax/WPF/WinForm textboxes to capture Yomi from user key sequences. </li>\n                         <li>An enhanced label control for ASP.NET using Ruby tag. </li>\n              </ul>\r\n        </ul> \r\n        <li>Chinese Text Alignment Class Library and TextBox Controls contains WinForm and WPF TextBox controls that support text alignment for Chinese and a class library which developers can use to draw strings using the Chinese style text alignment. </li>\n        <li>Chinese Auto Complete Class Library and TextBox Controls contains WinForm and WPF TextBox controls that support IME aware autocompletion for Simplified and Traditional Chinese as well as a class library which developers can use to add the IME aware auto-completion feature to standard controls. </li>\n        <li>Korean Auto Complete Class Library and ComboBox Controls contains WinForm and WPF ComboBox controls that support IME aware auto-completion for Korean as well as a class library, which developers can use to add the IME aware auto-completion feature to standard controls.</li>\n        <li>Numeric Formatting Library:  Additional support for Arabic numeric formatting was added in version 2.0.  This class library can now format the numeric data in 5 languages. </li>                                 \n </ul>\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Vsintlpack2.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\n<LI><b>Required Software: </b>Microsoft Visual Studio 2005 or Microsoft Visual Studio 2008, Microsoft .NET Framework 3.5\n<br /></LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<br />\n    <ul>\n               <li>Run the file vsintlpack2.msi and complete the installation (the default installation directory for x86 Operating System is %SYSTEMDRIVE%\\Program Files\\Microsoft Visual Studio International Feature Pack 2.0\\; The default installation directory for x64 Operating System is %SYSTEMDRIVE%\\Program Files (x86)\\Microsoft Visual Studio International Feature Pack 2.0\\) </li>\n</ul>\n<br />",
+    "additionalInformationSection": "<br />\n    <ul>     \r\n        <li>English Visual Studio 2008 Express Edition can be downloaded from http://www.microsoft.com/express/download/default.aspx </li>\n        <li>English Visual Studio 2008 90-Day Trial Edition can be downloaded from http://msdn.microsoft.com/en-us/evalcenter/bb655861.aspx </li>\n        <li>English Microsoft Expression Blend\u2122 3 can be downloaded from http://www.microsoft.com/expression/products/Overview.aspx?key=blend </li>\r\n        <li>Microsoft Visual Studio International Pack 1.0 SR1 provides the following seven components to enhance the globalization features provided by .NET Framework and can be downloaded from http://download.microsoft.com/download/5/7/3/57345088-ACF8-4E9B-A9A7-EBA35452DEF2/vsintlpack1.zip </li>   \n    <ul>\n        <li>East Asia Numeric Formatting Library - Format numeric data into Traditional Chinese, Simplified Chinese, Japanese and Korean capital style string.</li>\n        <li>Japanese Kana Conversion Library - Convert one Kana character set to another character representation in Japanese.</li>\n        <li>Japanese Text Alignment Library - Enable applications to render strings in Japanese-specific alignment style.</li>\n        <li>Japanese Yomi Auto-Completion Library - Provide class library and TextBox control sample that support Japanese IME-aware auto-complete.</li>\n        <li>Korean Auto Complete TextBox Control - Provide TextBox control that supports auto-complete and the Intellisense feature with Korean input.</li>\n        <li>Simplified Chinese Pin-Yin Conversion Library - Retrieve Simplified Chinese characters' properties such as polyphone, homophone, Pinyin or number of strokes.</li>\n        <li>Traditional Chinese to Simplified Chinese Conversion Library and Add-In Tool - Convert text in Traditional Chinese into Simplified Chinese or vice versa. This component also includes an add-in tool to the in VS IDE that can convert between Simplified and Traditional Chinese resource files.</li>\n  </ul>\n<br />\n </ul>\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Expression Blend\u2122 3",
+            "url": "http://www.microsoft.com/expression/products/Overview.aspx?key=blend"
+        },
+        {
+            "title": "visual Studio 2008 Express Edition",
+            "url": "http://www.microsoft.com/express/download/default.aspx"
+        },
+        {
+            "title": "visual Studio 2008 90-Day Trial Edition",
+            "url": "http://msdn.microsoft.com/en-us/evalcenter/bb655861.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18970",
+    "downloadPreload": true
+}

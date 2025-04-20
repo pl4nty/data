@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Explore enterprise social scenarios",
+    "downloadDescription": "Understand common scenarios for enterprise social that can be built with Microsoft products, including Yammer, Office 365, SharePoint Server, Lync, and Microsoft Dynamics CRM.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP2013_Yammer_EnterpriseSocial.pdf",
+            "url": "https://download.microsoft.com/download/e/3/d/e3d0e456-f076-46b7-86a7-fd62c2f96023/SP2013_Yammer_EnterpriseSocial.pdf",
+            "size": "321238",
+            "version": "June2014",
+            "datePublished": "7/15/2024 3:53:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP2013_Yammer_EnterpriseSocial.vsd",
+            "url": "https://download.microsoft.com/download/e/3/d/e3d0e456-f076-46b7-86a7-fd62c2f96023/SP2013_Yammer_EnterpriseSocial.vsd",
+            "size": "1631232",
+            "version": "June2014",
+            "datePublished": "7/15/2024 3:53:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Understand common scenarios for enterprise social that can be built with Microsoft products, including Yammer, Office 365, SharePoint Server, Lync, and Microsoft Dynamics CRM. The scenarios in this poster are examples that represent many types of use cases we\u2019ve heard from customers. These examples can be helpful as you determine how Enterprise Social can contribute in your organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2014",
+    "detailsSection_file_name": [
+        "SP2013_Yammer_EnterpriseSocial.pdf",
+        "SP2013_Yammer_EnterpriseSocial.vsd"
+    ],
+    "detailsSection_file_size": [
+        "313.7 KB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>To view the Visio version of the model, you must have Microsoft Visio 2007 or a more recent version.</LI>\r\n<LI>To view the PDF version of the model, you must have a PDF viewer, such as <A HREF=\"http://get.adobe.com/reader/\">Adobe Reader.</A>.</LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "reimagining with Social",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=400882"
+        },
+        {
+            "title": "yammer",
+            "url": "http://technet.microsoft.com/en-us/library/dn753681(v=office.15).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43363",
+    "downloadPreload": true
+}

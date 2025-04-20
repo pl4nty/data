@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Virtual PC 2004 Service Pack 1",
+    "downloadDescription": "Virtual PC 2004 Service Pack 1 provides the latest updates to Microsoft Virtual PC 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VPC2004SP1Update.zip",
+            "url": "https://download.microsoft.com/download/3/8/c/38ce07ee-69f4-490d-9704-e5315d950c76/VPC2004SP1Update.zip",
+            "size": "25769490",
+            "version": "2004",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Virtual PC 2004 Service Pack 1 (SP1) contains the latest software updates for Microsoft Virtual PC 2004 that improve the reliability, performance and manageability of Virtual PC.  Updates have been made to improve the performance of Windows XP Service Pack 2 as a guest in Virtual PC, to improve the manageability of virtual machines when used with SMS 2003 Service Pack 1, and to provide support for running Windows Server 2003 Standard Edition as the host operating system. <br />\n<br />\nSome of the fixes included with SP1 have been previously released as separate updates. This service pack combines them into one update.<br />\n<br />\nBefore installing Service Pack 1, please read the Installation Instructions below.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2004",
+    "detailsSection_file_name": [
+        "VPC2004SP1Update.zip"
+    ],
+    "detailsSection_file_size": [
+        "24.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update applies to Microsoft Virtual PC 2004.  You must have a validly licensed copy of Microsoft Virtual PC 2004 installed on your computer in order to install Service Pack 1 for Virtual PC 2004.",
+    "systemRequirementsSection_supportedOS": [
+        "TabletPC",
+        "Windows 2000 Professional Edition ",
+        "Windows Server 2003",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Important:  You must shut down or turn off all guest operating systems before installing SP1. This ensures that there are no virtual machines in a saved state. This is important because saved states are not compatible between SP1 and all previous versions of Virtual PC 2004. <br />\n<br />\nService Pack 1 includes an updated version of Virtual Machine Additions. You should update the version of Virtual Machine Additions on all virtual machines where Virtual Machine Additions is installed. For more information, see \"Installing Virtual Machine Additions\" in Virtual PC Help. <br />\n<br />\nRefer to the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=EF9D823F-3AAE-40DA-B4E9-DABE2A6B5BF9&displaylang=en\">Readme</a> file for full installation instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "virtual PC SP1 Readme File",
+            "url": "http://go.microsoft.com/?linkid=1396314"
+        },
+        {
+            "title": "virtual PC Newsgroup",
+            "url": "http://go.microsoft.com/?linkid=1476782"
+        },
+        {
+            "title": "security Guidance Center for Developers and IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1476783"
+        },
+        {
+            "title": "microsoft Virtual PC Home Page",
+            "url": "http://go.microsoft.com/?linkid=1644953"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3753",
+    "downloadPreload": true
+}

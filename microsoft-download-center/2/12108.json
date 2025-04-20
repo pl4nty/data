@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Security and Authentication in Microsoft Dynamics CRM: The Microsoft Dynamics CRM Security Model",
+    "downloadDescription": "This white paper, The Microsoft Dynamics CRM Security Model, serves as the core architectural component of a larger \"nuts and bolts\" article on Security and Authentication in Microsoft Dynamics CRM 4.0. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM4 NB - SEC PT1 - Architecture 1_1.pdf",
+            "url": "https://download.microsoft.com/download/2/1/b/21bf28fe-fcd3-49dc-b744-37933bac4346/CRM4 NB - SEC PT1 - Architecture 1_1.pdf",
+            "size": "1891341",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper, The Microsoft Dynamics CRM Security Model, serves as the core architectural component of a larger \"nuts and bolts\" article on Security and Authentication in Microsoft Dynamics CRM 4.0. The paper details the security model leveraged by Microsoft Dynamics CRM 4.0, including information on the authentication mechanisms that, depending on the deployment model, support Microsoft Dynamics CRM. In addition, the document provides details about how access to Microsoft Dynamics CRM 4.0 system resources by users and external systems can be controlled and restricted.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CRM4 NB - SEC PT1 - Architecture 1_1.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Additional Requirements</b><br/>\r\nMicrosoft Dynamics CRM 4.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, click <b>Go</b>, and then do one of the following:<br />\r\n<br />\r\nTo start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.<br />\r\n<br />\r\nTo copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.",
+    "relatedResourcesSection": [
+        {
+            "title": "security and Authentication in Microsoft Dynamics CRM: Field-level Security in Microsoft Dynamics CRM: Options and Constraints",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=471f8670-47b3-4525-b25d-c11a6774615c"
+        },
+        {
+            "title": "security and Authentication in Microsoft Dynamics CRM: Connectivity and Firewall Port Requirements in On-Premise Deployments",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=d06e9b99-2f10-43fd-94b4-8014a8dca9ea"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12108",
+    "downloadPreload": true
+}

@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio .NET 2003 Service Pack 1 ActiveX Controls Security Update Rollup",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual Studio .NET 2002 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs7.1sp1-kb958393-x86.exe",
+            "url": "https://download.microsoft.com/download/3/c/b/3cbc8279-997b-4518-99b1-862c37e193fd/VS7.1sp1-KB958393-X86.exe",
+            "size": "12518280",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual Studio .NET 2003 Service Pack 1 and gain complete control over it. You can help protect your computer by installing this update from Microsoft.\n\n<br /><br />This update uses Windows Installer technology which uses an internal database for recording the installation state for any products and patches based on Windows Installer technology. Under certain conditions the Windows Installer database may contain invalid file hashes for un-versioned files, and when you try to install an update you may see a prompt for providing the source CD or other media that was used for installing the original product. Running the update may result in an update to the Windows Installer database on your PC to rectify this problem.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB958393",
+        "name": "KB958393"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS08-070",
+        "name": "MS08-070"
+    },
+    "detailsSection_file_version": "7.1",
+    "detailsSection_file_name": [
+        "vs7.1sp1-kb958393-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Professional x64 Edition ",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows 2000 Professional Edition ",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Web Edition",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows XP Tablet PC Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Advanced Server",
+        "Windows XP Home Edition ",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Change</b>.</li>\n  <li>Do one of the following:</li>\n  <ul>\n    <li>To start the installation immediately, click <b>Run</b>.</li>\n    <li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li> <li>To cancel the installation, click <b>Cancel</b>.</li></ul>\n</ol>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?linkid=130453\">KB958393</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 958393",
+            "url": "http://go.microsoft.com/fwlink/?linkid=130453"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3695",
+    "downloadPreload": true
+}

@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2005 Books Online (November 2008)",
+    "downloadDescription": "Download an updated version of the documentation and tutorials for Microsoft SQL Server 2005. See the \"Additional Information\" section for an update on SQL Server Express Books Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SqlServer2K5_BOL _Jan2009.msi",
+            "url": "https://download.microsoft.com/download/9/4/e/94ed5837-9582-4395-a36a-41e3cf6df9e9/SqlServer2K5_BOL _Jan2009.msi",
+            "size": "143943168",
+            "version": "9.00.3108",
+            "datePublished": "7/15/2024 3:14:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Download an updated version of Books Online for Microsoft SQL Server 2005. Books Online is the primary documentation for SQL Server 2005. The November 2008 update to Books Online contains new material and fixes to documentation problems reported by customers after SQL Server 2005 was released. Refer to \"New and Updated Books Online Topics\" for a list of topics that are new or updated in this version. Topics with significant updates have a Change History table at the bottom of the topic that summarizes the changes. Beginning with the November 2008 update, SQL Server 2005 Books Online includes documentation updates for the SQL Server 2005 Service Pack 3 (SP3) release.\n<br/><br/>\nBooks Online includes the following types of information:\n<br />\n<ul>\n<li>Setup and upgrade instructions.</li><br />\n<li>Information about new features and backward compatibility.</li><br />\n<li>Conceptual descriptions of the technologies and features in SQL Server 2005.</li><br />\n<li>Procedural topics describing how to use the various features in SQL Server 2005. </li><br />\n<li>Tutorials that guide you through common tasks.</li><br />\n<li>Reference documentation for the graphical tools, command prompt utilities, programming languages, and application programming interfaces (APIs) that are supported by SQL Server 2005.</li><br />\n<li>Descriptions of the sample databases and applications included with SQL Server 2005. </li><br />\n</ul>\n<br/><br/>\nFor a list of updated topics, see \"New and Updated Books Online Topics (17 November 2008).\"\r\n<br/><br/>\r\n<b>Note:</b> The installer package for SQL Server 2005 Books Online (November 2008) was updated in February 2009. The date reference in Programs and Features is now consistent with the references in the Help topics. No content or Books Online topics were changed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.3108",
+    "detailsSection_file_name": [
+        "SqlServer2K5_BOL _Jan2009.msi"
+    ],
+    "detailsSection_file_size": [
+        "137.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Microsoft .NET Framework: The Help viewer used by Books Online requires the Microsoft .NET Framework version 2.0. Download one of the following versions of the .NET Framework 2.0:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?linkid=32168\">.NET Framework for x86</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=70186\">.NET Framework for x64</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=70187\">.NET Framework for ia64</a></li>\n</ul>\n</li><br />\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=70188\">Internet Explorer 6.0 SP1</a> or later</li><br />\n<li>Windows Installer: Windows Installer 3.0 is required to install SQL Server 2005 Books Online. Windows Server 2003 Service Pack 1 and Windows XP Service Pack 2 both include Windows Installer 3.0. For all other operating systems, you must first download and install <a href=\"http://go.microsoft.com/fwlink/?linkid=46459\">Windows Installer 3.0</a>.</li><br />\n</ul><br />\n<br />\n<b>Warning:</b> Do not install this version of the SQL Server 2005 Books Online on a computer running the following:\n<ul>\n<li>Any pre-release versions of Visual Studio 2005 or the .NET Framework 2.0.</li>\n<li>Any SQL Server 2005 Beta release.</li>\n<li>The SQL Server 2005 Community Technology Preview (CTP) June 2005 release.</li>\n<li>The SQL Server 2005 CTP September 2005 release.</li>\n</ul>\nRemove these versions from your system before installing SQL Server 2005 Books Online (December 2008).",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Small Business Server 2003 ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click the <b>Download</b> button on this page to start the download.</li><br />\n<li>Do one of the following: </li><br />\n   <ul><br />\n      <li>To start the installation immediately, click <b>Run</b>.</li><br />\n      <li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li><br />\n      <li>To cancel the installation, click <b>Cancel</b>.</li><br />\n   </ul><br />\n</ol>",
+    "additionalInformationSection": "Starting with the April 2006 update of SQL Server 2005 Books Online, a separate Books Online for SQL Server Express is no longer available. SQL Server 2005 Books Online is the primary documentation for SQL Server Express. <br />\n<br />\nAfter installing Books Online, you can use the <b>SQL Server Express</b> filter in the <b>Contents</b> pane to hide the content that does not apply to SQL Server Express edition. For more information about SQL Server Express documentation, see the topic \"Using SQL Server Express Books Online\". \n<br/><br/>\nTo learn more about SQL Server Express, see the following resources:\n<br/>\n<ul><li><a href=\"http://go.microsoft.com/fwlink/?LinkID=81768\">SQL Server Express Learning Resources</a> </li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=81769\">SQL Server Express Starter Data Schemas</a></li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "looking for New Downloads? Sign Up to Be Notified",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=70185"
+        },
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?linkid=26339"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=28107"
+        },
+        {
+            "title": "sql Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?linkid=8504"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4152",
+    "downloadPreload": true
+}

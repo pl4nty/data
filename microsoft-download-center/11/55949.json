@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Report Viewer Web Part for Microsoft SharePoint",
+    "downloadDescription": "The Report Viewer web part enables you to embed paginated (RDL) reports stored in SQL Server Reporting Services (Native mode) or Power BI Report Server into SharePoint Server web part pages.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReportViewerWebPart.wsp",
+            "url": "https://download.microsoft.com/download/8/9/b/89b35dbe-bb92-478c-8ecc-65a7891cb635/ReportViewerWebPart.wsp",
+            "size": "12860327",
+            "version": "15.0.1000.57",
+            "datePublished": "7/15/2024 4:57:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Report Viewer web part enables you to embed paginated (RDL) reports stored in SQL Server Reporting Services (Native mode) or Power BI Report Server into SharePoint Server web part pages.\r\n\r\nRequires the Claims to Windows Token Service and Kerberos Constrained Delegation.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.1000.57",
+    "detailsSection_file_name": [
+        "ReportViewerWebPart.wsp"
+    ],
+    "detailsSection_file_size": [
+        "12.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported SharePoint Server versions:</b><br />\r\n<ul>\r\n<li>SharePoint Server 2016</li>\r\n<li>SharePoint Server 2013</li>\r\n</ul>\r\n<br />\r\n\r\n<b>Supported Reporting Services versions:</b><br />\r\n<ul>\r\n<li>SQL Server 2017 Reporting Services</li>\r\n<li>SQL Server 2016 Reporting Services</li>\r\n<li>SQL Server 2014 Reporting Services</li>\r\n<li>SQL Server 2012 Reporting Services</li>\r\n<li>SQL Server 2008 R2 Reporting Services</li>\r\n<li>SQL Server 2008 Reporting Services</li>\r\n<li>Power BI Report Server</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\r\n\r\n<li>On a SharePoint server, open a SharePoint Management Shell using the Run as Administrator option.</li>\r\n\r\n<li>Run <a href=\"https://technet.microsoft.com/library/ff607552(v=office.16).aspx\">Add-SPSolution</a> to add the farm solution.<br />\r\n<br />\r\n<b>For Example:</b> Add-SPSolution \u2013LiteralPath \"C:\\MyFolder\\ReportViewerWebPart.wsp\"<br />\r\n<i>Note that the LiteralPath must be an absolute path.</i><br />\r\n<br />\r\nThe cmdlet returns the name of the solution, its solution ID, and Deployed=False. In the next step, you will deploy the solution.\r\n</li>\r\n\r\n<li>Run the <a href=\"https://technet.microsoft.com/library/ff607534(v=office.16).aspx\">Install-SPSolution</a> cmdlet to deploy the farm solution.<br />\r\n<br />\r\n<b>For Example:</b> Install-SPSolution \u2013Identity ReportViewerWebPart.wsp -GACDeployment -AllWebApplications<br />\r\n<i>Note that the solution can be installed to specific web applications by using the -WebApplication parameter instead of -AllWebApplications</i>\r\n</li>\r\n\r\n</ol>",
+    "additionalInformationSection": "Learn more at <a href=\"https://go.microsoft.com/fwlink/?linkid=857896\">https://go.microsoft.com/fwlink/?linkid=857896</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55949",
+    "downloadPreload": true
+}

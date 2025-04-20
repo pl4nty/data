@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "MS Entra ID Authentication for AWS CLI on Linux ARM64 - Interactive CLI (Public Preview)",
+    "downloadDescription": "MS Entra ID Authentication for AWS CLI on Linux ARM64 - Interactive CLI (Public Preview)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSEntraAuthAWSCLI",
+            "url": "https://download.microsoft.com/download/6/1/a/61a66f84-1faa-4227-8e49-b123f2533171/MSEntraAuthAWSCLI",
+            "size": "481",
+            "version": "1.2",
+            "datePublished": "5/13/2024 7:00:00 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This version will provide a solution from Microsoft which will allow you to use Entra ID authentication for your AWS CLI on Linux ARM64 computers. Note that we only support Linux versions: Fedora , Ubuntu 22.04 LTS, Ubuntu 20.04 LTS, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8. You can run this tool on Shell or on PowerShell as needed. It will open the Chrome browser to authenticate the user against MyApps Page and then after selecting the right AWS application it will allow the user to create temporary credentials for the account and role they choose. This is a public preview version.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "MSEntraAuthAWSCLI"
+    ],
+    "detailsSection_file_size": [
+        "481 bytes"
+    ],
+    "detailsSection_file_date": "5/13/2024",
+    "systemRequirementsSection": "Foolowing versions and flavors of Linux are supported:\r\nFedora \r\nUbuntu 22.04 LTS\r\nUbuntu 20.04 LTS\r\nRed Hat Enterprise Linux 7\r\nRed Hat Enterprise Linux 8",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Red Hat"
+    ],
+    "installInstructionSection": "Download this version of MSEntraAWS CLI tool for your Linux AMD64 computers. You need to have AWS CLI installed on your machine from here https://aws.amazon.com/cli/ You can run this tool on Shell or Windows PowerShell as needed. This will open the in built chrome browser and will prompt for authentication using Entra ID and then after selecting the AWS application from MyApps Page the tool will show the account and role for an user is entitled to use and then it will generate the temporary credentials for AWS CLI.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106042",
+    "downloadPreload": true
+}

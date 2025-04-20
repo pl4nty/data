@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Upgrading to Microsoft SharePoint Server 2010",
+    "downloadDescription": "Perform an upgrade from Microsoft Office SharePoint Server 2007 to SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Upgrading-to-Microsoft-SharePoint-Server-2010.epub",
+            "url": "https://download.microsoft.com/download/5/3/e/53e9048c-9ad1-4109-8bd9-93fb3742f890/Upgrading-to-Microsoft-SharePoint-Server-2010.epub",
+            "size": "1577574",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrading-to-Microsoft-SharePoint-Server-2010.mobi",
+            "url": "https://download.microsoft.com/download/5/3/e/53e9048c-9ad1-4109-8bd9-93fb3742f890/Upgrading-to-Microsoft-SharePoint-Server-2010.mobi",
+            "size": "2059890",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServUpgrade.xps",
+            "url": "https://download.microsoft.com/download/5/3/e/53e9048c-9ad1-4109-8bd9-93fb3742f890/SharePtServUpgrade.xps",
+            "size": "3000199",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePtServUpgrade.doc",
+            "url": "https://download.microsoft.com/download/5/3/e/53e9048c-9ad1-4109-8bd9-93fb3742f890/SharePtServUpgrade.doc",
+            "size": "2141184",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServUpgrade.pdf",
+            "url": "https://download.microsoft.com/download/5/3/e/53e9048c-9ad1-4109-8bd9-93fb3742f890/SharePtServUpgrade.pdf",
+            "size": "2353004",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book is designed to guide administrators and IT professionals through the process of upgrading to Microsoft SharePoint Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Upgrading-to-Microsoft-SharePoint-Server-2010.epub",
+        "Upgrading-to-Microsoft-SharePoint-Server-2010.mobi",
+        "SharePtServUpgrade.xps",
+        "SharePtServUpgrade.doc",
+        "SharePtServUpgrade.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "2.0 MB",
+        "2.9 MB",
+        "2.0 MB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the lower right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3837",
+    "downloadPreload": true
+}

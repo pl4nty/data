@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate SAML-based Claims Authentication with SharePoint Server 2013",
+    "downloadDescription": "This paper provides a brief introduction to SharePoint Server 2013 and illustrates how to create a three-tier test lab that uses SAML-based claims authentication.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-saml-claims-sps2013.pdf",
+            "url": "https://download.microsoft.com/download/7/f/a/7fa5ad80-26ff-458d-89cf-b6bdf6acbc22/tlg-saml-claims-sps2013.pdf",
+            "size": "586884",
+            "version": "3",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-saml-claims-sps2013.docx",
+            "url": "https://download.microsoft.com/download/7/f/a/7fa5ad80-26ff-458d-89cf-b6bdf6acbc22/tlg-saml-claims-sps2013.docx",
+            "size": "173047",
+            "version": "3",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint Server 2013 and step-by-step instructions for creating a test lab based on the SharePoint Server 2013 Three-Tier Farm test lab guide (http://go.microsoft.com/fwlink/p/?LinkId=255045) and the Test Lab Guide Mini-Module: Install AD FS 2.0 (http://social.technet.microsoft.com/wiki/contents/articles/11846.test-lab-guide-mini-module-install-ad-fs-2-0.aspx). With this test lab, you configure and demonstrate Security Assertion Markup Language (SAML)-based claims authentication for a SharePoint Server 2013 web application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "tlg-saml-claims-sps2013.pdf",
+        "tlg-saml-claims-sps2013.docx"
+    ],
+    "detailsSection_file_size": [
+        "573.1 KB",
+        "169.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30385",
+    "downloadPreload": true
+}

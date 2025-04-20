@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Charts and Diagrams",
+    "downloadDescription": "Charts and Diagrams",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Excel_to_PowerPoint.xls",
+            "url": "https://download.microsoft.com/download/d/4/0/d40bca86-227b-4c52-8c5d-e7188978d6e3/Excel_to_PowerPoint.xls",
+            "size": "19456",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Excel_to_Visio.xls",
+            "url": "https://download.microsoft.com/download/d/4/0/d40bca86-227b-4c52-8c5d-e7188978d6e3/Excel_to_Visio.xls",
+            "size": "13824",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Excel_to_Word.xls",
+            "url": "https://download.microsoft.com/download/d/4/0/d40bca86-227b-4c52-8c5d-e7188978d6e3/Excel_to_Word.xls",
+            "size": "62464",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Charts and Diagrams",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Excel_to_PowerPoint.xls",
+        "Excel_to_Visio.xls",
+        "Excel_to_Word.xls"
+    ],
+    "detailsSection_file_size": [
+        "19.0 KB",
+        "13.5 KB",
+        "61.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Charts and Diagrams",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Charts and Diagrams",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "33857",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "SCDPM and MABS Capacity Planner",
+    "downloadDescription": "This download contains the Capacity Planner suggested to be used to plan for resources for SC Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DPM_MABS_Capacity_Planner .xlsm",
+            "url": "https://download.microsoft.com/download/6/b/8/6b8d8e21-98e8-48d4-92bc-18f2d520ff38/DPM_MABS_Capacity_Planner .xlsm",
+            "size": "109350",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:36:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This calculator can be used to plan for resources while planning a SC DPM or MABS deployment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "DPM_MABS_Capacity_Planner .xlsm"
+    ],
+    "detailsSection_file_size": [
+        "106.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10\r\nMicrosoft Excel ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "This Capacity Planner may be downloaded and opened using Microsoft Excel.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54301",
+    "downloadPreload": true
+}

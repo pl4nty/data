@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Diagnostic Tool for the Microsoft VM 1.0a",
+    "downloadDescription": "The Diagnostic Tool for the Microsoft VM can be used to scan one or more computers to detect the presence of MSJVM and MSJVM-related software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Diagnostic Tool for the Microsoft VM 10a.zip",
+            "url": "https://download.microsoft.com/download/e/6/1/e6179677-d21d-45a1-a85d-1cc3f756b5b3/Diagnostic Tool for the Microsoft VM 10a.zip",
+            "size": "5751035",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        }
+    ],
+    "detailsSection": "The Diagnostic Tool for the Microsoft VM can be used to scan one or more computers to detect the presence of MSJVM and MSJVM-related software.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0a",
+    "detailsSection_file_name": [
+        "Diagnostic Tool for the Microsoft VM 10a.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Local Scan Only</b><br />\n\u2022\tWindows 95 OSR2 or above to run the wizard or command line.<br />\n<br />\n<b>Remote Scan and Local Scans</b><br />\n\u2022\tMicrosoft Windows NT4 SP6, Windows 2000, Windows XP, or Windows Server 2003 to initiate a remote scan.  (NOTE: It is recommended that when you scan multiple remote machines, the tool should be run on a server edition of Windows [includes Windows 2000 Server, Windows 2000 Advanced Server or Windows Server 2003].  For more information, please see the Known Issues section below.)<br />\n\u2022\tWindows 95 OSR2 or above for remotely scanned machines<br />\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "TabletPC",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "Unzip the download and run setup.exe to install the Diagnostic Tool for the Microsoft VM.  Detailed installation note and information on using the tool can be found in the readme and documentation.<br />\n<br />\n<b>Installation</b><br />\n\u2022\tIMPORTANT:  You must uninstall any previous version of the Diagnostic Tool before installing a newer version.<br />\n\u2022\tThe application will add a folder to the Program menu after running Setup.  You can run the Wizard by using the Program menu icon.<br />\n<br />\n<b>Usage Notes</b><br />\n\u2022\tIn order to scan remote machines, you must be an administrator on the remote machines.<br />\n\u2022\tURL scans will always be conducted from the local host.  Internet Explorer\u2019s connection settings are used.  <br />\n\u2022\tFile scans will only include local drives.  Removable disks, network drives, RAM disks and CD-ROM drives will not be scanned.<br />\n<br />\nNote that WMI 1.5, DCOM, and File and Printer Sharing for Microsoft Networks must be installed and enabled to remotely scan machines.  Also, ADSI 2.5 is required to select machines using the Computer Selection dialog in the wizard.<br />\n<br />\n<b>Changes in 1.0a</b><br />\nThis version of the Diagnostic Tool for the Microsoft VM includes several targeted changes from the 1.0 version.  These include:<br />\n\u2022\tThe XML data files produced by the tool are now saved to a data directory for further processing.<br />\n\u2022\tLocalized machine names, file names, and file content is now supported.<br />\n\u2022\tThread priority can be specified from the command line.<br />\n\u2022\tDrives are now valid input for the directoryfile command line option.<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16658",
+    "downloadPreload": true
+}

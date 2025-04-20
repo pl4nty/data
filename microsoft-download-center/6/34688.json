@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 Data Load Performance and Scalability Case Study",
+    "downloadDescription": "This white paper provides details of bulk data load benchmark testing performed on behalf of a large financial services company.  To better accommodate business needs, the company wanted to set up a solution that would provide for management of their master customer data as well as data integration with their host system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics CRM 2011 Data Load Performance and Scalability Case Study.pdf",
+            "url": "https://download.microsoft.com/download/1/5/9/15986da3-8331-4eae-bbb2-3dd29faeef0d/Microsoft Dynamics CRM 2011 Data Load Performance and Scalability Case Study.pdf",
+            "size": "730691",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:12:08 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper provides details of bulk data load benchmark testing performed on behalf of a large financial services company. The company\u2019s existing CRM solution stored customer data (including various related custody account information) in their host system, in which users during daily operations were frequently creating and updating customer records. To better accommodate business needs, the company wanted to set up a solution that would provide for management of their master customer data as well as data integration with their host system.\r\n\r\nOne of the first steps in the move to a new business solution involved migrating and synchronizing legacy customer data with the new system. To this end, the customer contacted Microsoft Services with a request to conduct benchmark testing of an on-premises deployment of Microsoft Dynamics CRM 2011. The testing was designed to ensure that the system could accommodate the need to create or update 10 million custody account records as part of a single batch job that would complete in a period of no longer than four hours.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM 2011 Data Load Performance and Scalability Case Study.pdf"
+    ],
+    "detailsSection_file_size": [
+        "713.6 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe\u00a9 Reader.</LI><br />\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34688",
+    "downloadPreload": true
+}

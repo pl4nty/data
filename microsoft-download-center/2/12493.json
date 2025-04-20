@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio and .NET Log Collection Tool",
+    "downloadDescription": "Collect information from Microsoft Visual Studio and .NET installations.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Collect.exe",
+            "url": "https://download.microsoft.com/download/8/3/4/834e83f6-c377-4dce-a757-69a418b6c6df/Collect.exe",
+            "size": "267752",
+            "version": "17.0.35214.149",
+            "datePublished": "8/21/2024 7:41:17 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LicenseTerms.pdf",
+            "url": "https://download.microsoft.com/download/8/3/4/834e83f6-c377-4dce-a757-69a418b6c6df/LicenseTerms.pdf",
+            "size": "307015",
+            "version": "17.0.35214.149",
+            "datePublished": "8/21/2024 7:41:17 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The log collection tool collects available setup logs from all supported releases of Visual Studio, .NET, and SQL Server from your computer, and can help Microsoft diagnose issues with installing products from the Visual Studio family. If you encounter any setup-related issues and contact Microsoft Support or Visual Studio, you may need to provide these setup logs.<br/>\r\n<br/>\r\nPlease follow the instructions below to gather installation logs. By default the log collection tool creates a compressed archive of all the Visual Studio, .NET Framework, and SQL Server setup logs and other supporting files at %TEMP%\\vslogs.zip. Run \"collect.exe /?\" for more options.\r\n<br/>\r\nThe events and log files we collect may contain personally identifiable information. Please see our <a href=\"https://go.microsoft.com/fwlink/?LinkId=521839\">Privacy Statement</a> for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17.0.35214.149",
+    "detailsSection_file_name": [
+        "Collect.exe",
+        "LicenseTerms.pdf"
+    ],
+    "detailsSection_file_size": [
+        "261.5 KB",
+        "299.8 KB"
+    ],
+    "detailsSection_file_date": "8/21/2024",
+    "systemRequirementsSection": "Administrative privileges are required. Please run this tool from an elevated command prompt if you want to see verbose logging after it completes.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download collect.exe from the link  below. You will need to save the tool first.</li>\r\n<li>Open an adminstrative console window.</li>\r\n<li>Run <i>Collect.exe</i> from the directory where you saved the tool.</li>\r\n</ol>\r\n\r\n<b>Notes:</b>\r\nThe tool must be run under the same user account that the failed installation was run under. If you are running the tool from a different user account, set the \u2013user:&lt;name&gt; option to specify the user under which the failed installation was run. You may also set \u2013d:&lt;dir&gt; to point to the temp directory where the setup logs are located.\r\n<br/><br/>\r\nBy default, Collect.exe will automatically gather SQL install logs, event log information, computer information and a Windows Installer inventory in addition to product install logs. The resulting cabinet is created in your <i>%TEMP%</i> directory.\r\n<br/><br/>\r\nRun <i>Collect -?</i> for additional options and usage information.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "download Center page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=157130"
+        },
+        {
+            "title": "direct package link",
+            "url": "http://go.microsoft.com/?LinkId=8967043"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12493",
+    "downloadPreload": true
+}

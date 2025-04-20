@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2010 Monitoring Management Pack",
+    "downloadDescription": "BizTalk Server 2010 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Server 2010 Monitoring Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/e/6/e/e6e5830e-3cef-4e7d-8f26-09552318afc8/BizTalk Server 2010 Monitoring Management Pack Guide.docx",
+            "size": "180063",
+            "version": "7.0.391.0",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BizTalk Server 2010 Monitoring Management Pack.msi",
+            "url": "https://download.microsoft.com/download/e/6/e/e6e5830e-3cef-4e7d-8f26-09552318afc8/BizTalk Server 2010 Monitoring Management Pack.msi",
+            "size": "729088",
+            "version": "7.0.391.0",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server 2010 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components. It allows administrators to monitor health state of various BizTalk artifacts such as Send Ports, Orchestrations etc. and platform artifacts such as Host Instances (BizTalk service). Further, this mp includes performance views, diagnostic capability and alerts.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nBizTalk Server 2010 MP includes the following enhancements: <br/>\r\n<ul>\r\n<li> Segregated monitoring model for BizTalk artifacts and platform components </li>\r\n<li> Diagnostics capability to drill-down into the cause of various error conditions </li>\r\n<li> Improved management pack performance and enhanced support for multi-machine deployments  </li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 2/10/2011 - Update Release, version 7.0.389.0, Added support for French Platform</li>\r\n<li> 9/23/2010 - Initial English release, version 7.0.384.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.391.0",
+    "detailsSection_file_name": [
+        "BizTalk Server 2010 Monitoring Management Pack Guide.docx",
+        "BizTalk Server 2010 Monitoring Management Pack.msi"
+    ],
+    "detailsSection_file_size": [
+        "175.8 KB",
+        "712.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Required Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2007 SP1 and R2 </li>\r\n<li> Microsoft BizTalk Server 2010 </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click the download link on this page to begin the download process for this management pack package. Save the MSI file and run it or run it directly from the download prompt. Please read the MP guide (preferably a link to the guide) for further installation details. <br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Home Page",
+            "url": "http://www.microsoft.com/systemcenter/en/us/operations-manager.aspx"
+        },
+        {
+            "title": "system Center Operations Manager Catalog",
+            "url": "http://pinpoint.microsoft.com/en-US/systemcenter/managementpackcatalog"
+        },
+        {
+            "title": "bizTalk Server Home Page",
+            "url": "http://www.microsoft.com/biztalk/en/us/default.aspx"
+        },
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com/en/us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14897",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Import Commodity Codes to a Category Hierarchy",
+    "downloadDescription": "This white paper describes how to create and use an XML file to import commodity codes from an external classification system to a product category hierarchy in Microsoft Dynamics AX.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Import Commodity Codes to a Category Hierarchy.pdf",
+            "url": "https://download.microsoft.com/download/0/c/5/0c500df0-f9b4-4258-948e-689bc3fd4058/Import Commodity Codes to a Category Hierarchy.pdf",
+            "size": "441439",
+            "version": "2012",
+            "datePublished": "6/13/2024 11:59:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In Microsoft Dynamics AX 2012, you can use category hierarchies to classify products or transactions for reporting and analysis. There are several industry-standard classification systems and commodity code systems for reporting to government agencies and industry organizations. Some of the more common examples are Intrastat, UNSPSC, NAICS, eCl@ss, eOTD, and NIGP. Some of these classification systems are available for download to a Microsoft Excel file or other file type from the website of the applicable government or industry organization. You can import all or part of an external classification system into AX 2012 by using an XML file to create or update a category hierarchy. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Import Commodity Codes to a Category Hierarchy.pdf"
+    ],
+    "detailsSection_file_size": [
+        "431.1 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\n  <LI>To view the PDF, you'll need Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click <b>Download</b> to download the PDF.</LI>\n<LI>Save the file to your computer.</LI></OL>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40273",
+    "downloadPreload": true
+}

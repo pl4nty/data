@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Certification Lab Setup Guides",
+    "downloadDescription": "These documents provide detailed description how to set up audio and video labs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UnifiedAudioSetup.pdf",
+            "url": "https://download.microsoft.com/download/9/2/6/9268bf14-c016-4f82-b21e-dc80c654f6e2/UnifiedAudioSetup.pdf",
+            "size": "4719565",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:15:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UnifiedVideoSetup.pdf",
+            "url": "https://download.microsoft.com/download/9/2/6/9268bf14-c016-4f82-b21e-dc80c654f6e2/UnifiedVideoSetup.pdf",
+            "size": "4241181",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:15:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These documents provide step-by-step guidance how to build and calibrate audio and video labs for testing VoIP/video call quality.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "UnifiedAudioSetup.pdf",
+        "UnifiedVideoSetup.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.5 MB",
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A - this download contains docuemntation only.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<br/>\n<b>To install this download</b>\n<br/>\n<br/>\nClick <b>Download</b> and save the file to a directory on your local hard disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51619",
+    "downloadPreload": true
+}

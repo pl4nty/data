@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Yammer SSO Implementation Checklist",
+    "downloadDescription": "Microsoft strongly recommends using Office 365 sign-in for Yammer instead of Yammer SSO. This checklist helps with implementing Yammer SSO when Office 365 sign-in for Yammer won't work. Note that Yammer SSO is now deprecated and will stop working on December 1, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Yammer SSO Implementation Checklist.docx",
+            "url": "https://download.microsoft.com/download/2/d/1/2d1bb0a1-42b6-4ed4-800b-e3d9d0aceabb/Yammer SSO Implementation Checklist.docx",
+            "size": "29872",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:52:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "IMPORTANT: DEPRECATION SCHEDULE FOR YAMMER SSO AND DSYNC\r\nYammer SSO and DSync are now deprecated tools. Yammer networks that currently use Yammer SSO will need to transition to using Office 365 sign-in for Yammer. Networks using Yammer DSync will need to transition to using Azure Active Directory synchronization.\r\nImportant dates for this deprecation:\r\n\u2022 November 18, 2015:    Announcement to deprecate Yammer SSO and Yammer DSync tools.\r\n\u2022 April 1st, 2016:   Yammer networks will not be allowed to set up new configurations of SSO or DSync.\r\n\u2022 December 1st, 2016:   Yammer SSO and DSync will stop working.\r\nAfter December 1st, 2016, if you do nothing, the following changes will take place:\r\n\u2022 Yammer SSO:   Yammer single sign-on will stop working. The network will start using Office 365 identity (if the network is associated with an Office 365 tenant) or Yammer identity (username and password sign-in).\r\n\u2022 Yammer DSync:   Yammer directory synchronization will stop working. No further changes to your on-premises Active Directory will be reflected in Yammer.\r\n\r\nRead more and Plan for Yammer SSO and DSync deprecation at https://support.office.com/en-us/article/847366a4-30c8-49d1-94cc-9d2452f6d43a  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Yammer SSO Implementation Checklist.docx"
+    ],
+    "detailsSection_file_size": [
+        "29.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 8 Pro"
+    ],
+    "installInstructionSection": "Prior to April 1, 2016 if you must use Yammer SSO instead of Office 365 Sign-in for Yammer, please download this file, complete the checklist, and submit this to the support team as part of the process described in https://technet.microsoft.com/en-us/library/dn800661.aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48120",
+    "downloadPreload": true
+}

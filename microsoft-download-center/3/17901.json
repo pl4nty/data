@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "IA-32 Execution Layer 4.3",
+    "downloadDescription": "The IA-32 Execution Layer is a software driver designed to improve performance of 32-bit applications running on Windows Server 2003 for 64-bit Itanium-based Systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IA-32ExecutionLayerSetup_1.exe",
+            "url": "https://download.microsoft.com/download/c/0/0/c00805a0-85f2-4d30-8578-67cb784cf49d/IA-32ExecutionLayerSetup_1.exe",
+            "size": "2329155",
+            "version": "4.3.4277.4018",
+            "datePublished": "7/15/2024 3:15:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The IA-32 Execution Layer is a software driver designed to improve performance of 32-bit applications running on Windows Server 2003 for 64-bit Itanium-based Systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.4277.4018",
+    "detailsSection_file_name": [
+        "IA-32ExecutionLayerSetup_1.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any Itanium 2-based system that is running one of the supported operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP 64-bit"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17901",
+    "downloadPreload": true
+}

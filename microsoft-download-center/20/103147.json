@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Intune Signing Script for Windows 10 Company Portal",
+    "downloadDescription": "Microsoft Intune has released the Windows 10 Company Portal app. This version supports all Windows 10 device platforms. It maintains the current functionality while featuring a host of improvements to the user experience. This article walks you through the deployment options.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Deploying the Windows 10 Company Portal - Instructions and script.zip",
+            "url": "https://download.microsoft.com/download/1/8/e/18ef3086-5cd4-4423-bb3a-0719326f9e69/Deploying the Windows 10 Company Portal - Instructions and script.zip",
+            "size": "857549",
+            "version": "N/A",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Intune has released the Windows 10 Company Portal app. This version supports all Windows 10 device platforms. It maintains the current functionality while featuring a host of improvements to the user experience. This article walks you through the available options to successfully deploy the app to users in your organization. The PDF file enclosed in the downloadable ZIP file answers the following questions: \r\n\r\n- How do I deploy the new Company Portal app on Windows 10 devices that currently do not have any version of the Company Portal app deployed?\r\n- How do I update the Company Portal on my users\u2019 devices if they have already installed the older apps from the store?",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "N/A",
+    "detailsSection_file_name": [
+        "Deploying the Windows 10 Company Portal - Instructions and script.zip"
+    ],
+    "detailsSection_file_size": [
+        "837.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download and view the PDF file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103147",
+    "downloadPreload": true
+}

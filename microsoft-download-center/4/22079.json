@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "ASP.NET MVC 2 RTM",
+    "downloadDescription": "ASP.NET MVC 2 provides a new Model-View-Controller (MVC) framework on top of the existing ASP.NET 3.5 SP1 runtime.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mvc2-ms-pl.zip",
+            "url": "https://download.microsoft.com/download/7/b/1/7b11de4e-0247-448e-8d39-7c9b12aba1ff/mvc2-ms-pl.zip",
+            "size": "317319",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ASP.NET-MVC-2-RTM-Release-Notes.doc",
+            "url": "https://download.microsoft.com/download/7/b/1/7b11de4e-0247-448e-8d39-7c9b12aba1ff/ASP.NET-MVC-2-RTM-Release-Notes.doc",
+            "size": "113664",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AspNetMVC2_VS2008.exe",
+            "url": "https://download.microsoft.com/download/7/b/1/7b11de4e-0247-448e-8d39-7c9b12aba1ff/AspNetMVC2_VS2008.exe",
+            "size": "2614096",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASP.NET MVC 2 is a framework for developing highly testable and maintainable Web applications by leveraging the Model-View-Controller (MVC) pattern. The framework encourages developers to maintain a clear separation of concerns among the responsibilities of the application \u2013 the UI logic using the view, user-input handling using the controller, and the domain logic using the model. ASP.NET MVC applications are easily testable using techniques such as test-driven development (TDD).<br />\r\nThe installation package includes templates and tools for Visual Studio 2008 SP 1 to increase productivity when writing ASP.NET MVC applications. For example, the Add View dialog box takes advantage of customizable code generation (T4) templates to generate a view based on a model object. The default project template allows the developer to automatically hook up a unit-test project that is associated with the ASP.NET MVC application.<br />\r\nBecause the ASP.NET MVC framework is built on ASP.NET 3.5 SP 1, developers can take advantage of existing ASP.NET features like authentication and authorization, profile settings, localization, and so on.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "mvc2-ms-pl.zip",
+        "ASP.NET-MVC-2-RTM-Release-Notes.doc",
+        "AspNetMVC2_VS2008.exe"
+    ],
+    "detailsSection_file_size": [
+        "309.9 KB",
+        "111.0 KB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET 3.5 SP1.\r\nVisual Studio 2008, Visual Studio 2008 SP1 or Visual Web Developer 2008 SP1 are required to use certain parts of this feature.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "For more information about installing the release, see the ASP.NET MVC 2 Release Notes",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22079",
+    "downloadPreload": true
+}

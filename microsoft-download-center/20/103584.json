@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Big Data Platform Assessment",
+    "downloadDescription": "Big Data Platform Assessment",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Big Data Platform Assessment.pdf",
+            "url": "https://download.microsoft.com/download/c/0/7/c0768aaa-abfe-4e68-86f1-30c34b7fa5be/Big Data Platform Assessment.pdf",
+            "size": "929889",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Big Data Platform Assessment",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Big Data Platform Assessment.pdf"
+    ],
+    "detailsSection_file_size": [
+        "908.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "This whitepaper is a cheat sheet on how to quickly assess a customer\u2019s HDInsight environment and assess an on-premise HDP solution. The steps outline the process to collect data on the cluster, its configuration and its usage. This allows the Architect to efficiently and thoroughly perform a detailed migration to Cloud and an HDInsight Assessment exercise.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103584",
+    "downloadPreload": true
+}

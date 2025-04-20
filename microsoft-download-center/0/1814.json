@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Content Series - Remote Desktop Services (RDS) Publishing Solution Guide",
+    "downloadDescription": "Forefront UAG Content Series - RDS Publishing Solution Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RDSSolution.docx",
+            "url": "https://download.microsoft.com/download/1/8/9/189ae1db-5819-41a8-a58d-ee9ea3ff401b/RDSSolution.docx",
+            "size": "56773",
+            "version": "January 2010",
+            "datePublished": "5/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RDS facilitates the sharing of applications and desktops over the network, enabling users to access Windows-based programs that are installed on a Remote Desktop Session Host (RD Session Host) or the Windows desktop itself, from a range of computing devices.  You can use Forefront UAG to provide remote client access to an RD Session Host to run programs on that server using RemoteApps, or clients connect to a remote desktop. \r\n\r\nThis solution guide provides an overview of RDS publishing, a summary of the advantages of publishing RDS via Forefront UAG; planning information; and detailed deployment steps. It is also available online at the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd861391.aspx). \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2010",
+    "detailsSection_file_name": [
+        "RDSSolution.docx"
+    ],
+    "detailsSection_file_size": [
+        "55.4 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "remote Desktop Services (RDS) Publishing Solution Guide",
+            "url": "http://technet.microsoft.com/en-us/library/dd861391.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1814",
+    "downloadPreload": true
+}

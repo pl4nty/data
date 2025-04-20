@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Site Recovery - Protect from VMware sites or physical servers to Azure: Third-Party Software Notices and Information",
+    "downloadDescription": "Provides information about third-party projects",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Third-Party_Notices.txt",
+            "url": "https://download.microsoft.com/download/e/5/4/e547e2fa-10e0-45e0-80bf-3fe48f06e61c/Third-Party_Notices.txt",
+            "size": "328200",
+            "version": "Windows, Linux",
+            "datePublished": "6/13/2024 12:34:46 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Provides information about the software and firmware running in the Microsoft product or service that's based on or incorporates material from the projects listed in the document (collectively, \u201cThird Party Code\u201d).  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Windows, Linux",
+    "detailsSection_file_name": [
+        "Third-Party_Notices.txt"
+    ],
+    "detailsSection_file_size": [
+        "320.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Relevant when deploying Azure Site Recovery to protect on-premises VMware virtual machines or physical servers to Azure",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46393",
+    "downloadPreload": true
+}

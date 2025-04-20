@@ -1,0 +1,177 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Designer 2010 (32-bit)",
+    "downloadDescription": "SharePoint Designer 2010 is the tool of choice for the rapid development of SharePoint applications.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePointDesigner.exe",
+            "url": "https://download.microsoft.com/download/7/9/b/79b9134e-d725-41ac-a04a-053ba7f0d678/SharePointDesigner.exe",
+            "size": "266436208",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        }
+    ],
+    "detailsSection": "SharePoint Designer 2010 is the tool of choice for the rapid development of SharePoint applications. Using SharePoint Designer, advanced users and developers alike can rapidly create SharePoint solutions in response to business needs. Advanced users can compose no-code solutions that encompass a variety of common scenarios, from collaborative sites and web publishing to Line-Of-Business data integration, business intelligence solutions, and human workflows, leveraging the building blocks available in SharePoint in an easy to use environment. In addition, developers can use SharePoint Designer 2010 to get a quick start on SharePoint development projects.\u200b\r\n<br/>\r\n<br/>\r\nThis is the 32-bit edition of SharePoint Designer 2010. It is the recommended configuration for most users.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePointDesigner.exe"
+    ],
+    "detailsSection_file_size": [
+        "254.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><b> Note:</b> SharePoint Designer 2010 only connects to SharePoint 2010. To connect to SharePoint 2007 and earlier sites you must continue to use <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=baa3ad86-bfc1-4bd4-9812-d9e710d44f42\">SharePoint Designer 2007</a>. If you elect to install both applications side-by-side, you must download the 32-bit version of SharePoint Designer 2010, and install it after installing SharePoint Designer 2007. Please also note that 64 bit Office applications will not run if SharePoint Designer 2007 is installed; 64-bit Office 2010 applications should only be used if not connecting to SharePoint 2007 servers.<br/><br/>\r\n<br/><b>Computer and processor:</b>  500 MHz processor or higher.<br/>\r\n<br/><b>Memory:</b>  256 megabytes (MB) of RAM or higher.<br/>\r\n<br/><b>Hard disk:</b> 2.5 GB; a portion of the disk space will be freed after installation if the original download package is removed from the hard drive.<br/>\r\n<br/><b>Additional Operating System Details:</b> Terminal Server and Windows on Windows (WOW) (which allows installing 32-bit versions of Office 2010 on 64-bit operating systems) are supported.<br/>\r\n<br/><b>Additional:</b>  Use of graphics hardware acceleration requires DirectX 9.0c compatible graphics card with 64 MB or higher video memory.  Requirements and product functionality can vary based on the system configuration and operating system.<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<br/><b> To install this download:</b><br/>\r\n<ul><br/>1. Download the file by clicking the<b> Download</b> button (above) and saving the file to your hard disk.<br/>\r\n<br/>2. Double-click the <b>SharePointDesigner.exe</b> program file on your hard disk to start the Setup program.<br/>\r\n<br/>3. Follow the instructions on the screen to complete the installation. <br/></ul>\r\n<br/><br/>\r\n<br/><b>To remove this download: </b><br/>\r\n<ul><br/>1. On the <b>Start </b>menu, point to Settings and then click <b>Control Panel</b>.<br/>\r\n<br/>2. Double-click <b>Add/Remove Programs</b> <br/>\r\n<br/>3. In the list of currently installed programs, select <b>Microsoft SharePoint Designer 2010</b> and then click <b>Remove</b> or <b>Add/Remove</b>.  If a dialog box appears, follow the instructions to remove the program. <br/>\r\n<br/>4. Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16573",
+    "downloadPreload": true
+}

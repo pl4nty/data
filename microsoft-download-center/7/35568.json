@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Server 2013 Architecture",
+    "downloadDescription": "This model provides guidance about logical and physical architectures for SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sps-2013-architecture-overview.vsd",
+            "url": "https://download.microsoft.com/download/8/1/9/8196850d-45c7-48ab-a84a-918c7c2c3530/sps-2013-architecture-overview.vsd",
+            "size": "1547776",
+            "version": "Mar2014",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sps-2013-architecture-overview.pdf",
+            "url": "https://download.microsoft.com/download/8/1/9/8196850d-45c7-48ab-a84a-918c7c2c3530/sps-2013-architecture-overview.pdf",
+            "size": "441339",
+            "version": "Mar2014",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Information in this model helps you understand architectures that apply to server applications, Office Web Apps Server, app management, databases, workflows, wide-area networks, monitoring, newsfeeds, distributed cache, high availability, and disaster recovery.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2014",
+    "detailsSection_file_name": [
+        "sps-2013-architecture-overview.vsd",
+        "sps-2013-architecture-overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "431.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35568",
+    "downloadPreload": true
+}

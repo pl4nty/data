@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Server 2010 Hotfix KB 2493736",
+    "downloadDescription": "This download includes all available updates for Lync Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LyncServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/3/4/1/341c256c-0e74-4968-b6fa-eea87600e283/LyncServerUpdateInstaller.exe",
+            "size": "55073176",
+            "version": "7577.766",
+            "datePublished": "7/15/2024 4:30:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This hotfix download for Microsoft Lync Server 2010 is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/2493736\">2493736</A>. \n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2493736",
+        "name": "KB2493736"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7577.766",
+    "detailsSection_file_name": [
+        "LyncServerUpdateInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "52.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office program:</b></li><br />\n<ul><li>Microsoft Lync Server 2010</li></ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/?kbid=2493736\">2493736</A> for installation details.</li>\n</ol>\n<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11551",
+    "downloadPreload": true
+}

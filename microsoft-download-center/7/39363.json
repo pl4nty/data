@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Secure Software Development Trends in the Oil & Gas Sectors",
+    "downloadDescription": "How the Microsoft Security Development Lifecycle helps protect critical industries",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Secure Development Trends in the Oil and Gas Industry.pdf",
+            "url": "https://download.microsoft.com/download/7/2/2/722afa22-dbf4-458b-89a8-ef8d9a810f34/Secure Development Trends in the Oil and Gas Industry.pdf",
+            "size": "168107",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This whitepaper takes a close look at the importance of application security to the oil and gas industry and discusses how a holistic approach to software development can help mitigate many of the risks these organizations face.  \r\n\r\nThe paper touches on challenges faced in the oil and gas industry as it relates to application security and discusses how a holistic approach such as the Microsoft\u2019s Security Development Lifecycle (SDL) can help to protect an organization from cybersecurity attacks. This approach is used in companies of every size and in every industry, from small software development firms to global enterprises.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Secure Development Trends in the Oil and Gas Industry.pdf"
+    ],
+    "detailsSection_file_size": [
+        "164.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported operating system",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39363",
+    "downloadPreload": true
+}

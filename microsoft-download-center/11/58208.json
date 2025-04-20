@@ -1,0 +1,169 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2019 Management Pack for Linux Operating Systems",
+    "downloadDescription": "System Center 2019 Management Pack for Linux Operating Systems",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center 2019 MP for Unix and Linux.msi",
+            "url": "https://download.microsoft.com/download/b/e/f/bef2bb1e-221d-4a8e-a38c-f332bce30705/Microsoft System Center 2019 MP for Unix and Linux.msi",
+            "size": "507830272",
+            "version": "  10.19.1258.0",
+            "datePublished": "10/8/2024 11:43:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AIXMPGuide.doc",
+            "url": "https://download.microsoft.com/download/b/e/f/bef2bb1e-221d-4a8e-a38c-f332bce30705/AIXMPGuide.doc",
+            "size": "429056",
+            "version": "  10.19.1258.0",
+            "datePublished": "10/8/2024 11:43:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Universal_Linux_MP_Guide.doc",
+            "url": "https://download.microsoft.com/download/b/e/f/bef2bb1e-221d-4a8e-a38c-f332bce30705/Universal_Linux_MP_Guide.doc",
+            "size": "811520",
+            "version": "  10.19.1258.0",
+            "datePublished": "10/8/2024 11:43:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SolarisMPGuide.doc",
+            "url": "https://download.microsoft.com/download/b/e/f/bef2bb1e-221d-4a8e-a38c-f332bce30705/SolarisMPGuide.doc",
+            "size": "603136",
+            "version": "  10.19.1258.0",
+            "datePublished": "10/8/2024 11:43:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLESMPGuide.doc",
+            "url": "https://download.microsoft.com/download/b/e/f/bef2bb1e-221d-4a8e-a38c-f332bce30705/SLESMPGuide.doc",
+            "size": "453632",
+            "version": "  10.19.1258.0",
+            "datePublished": "10/8/2024 11:43:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RHELMPGuide.doc",
+            "url": "https://download.microsoft.com/download/b/e/f/bef2bb1e-221d-4a8e-a38c-f332bce30705/RHELMPGuide.doc",
+            "size": "621568",
+            "version": "  10.19.1258.0",
+            "datePublished": "10/8/2024 11:43:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "With the latest updates, SCOM 2019 /2022 have been enhanced to support the monitoring of Linux distributions configured with crypto-policies enabled in FIPS (Federal Information Processing Standards) mode. This capability ensures that organizations adhering to strict cryptographic standards can seamlessly monitor their Linux workloads within a FIPS-compliant environment.\r\n<br/>\r\nIt's essential to apply <a href='https://support.microsoft.com/en-us/topic/system-center-operations-manager-2019-and-2022-now-support-crypto-policies-in-fips-mode-for-monitoring-linux-workloads-kb-5037360-a8529afb-d34a-4439-9282-0572958a129f'>this</a> hotfix in addition to updating Linux/Unix MPs.\r\n<br/><br/>The UNIX and Linux Operating Systems Management Packs enable discovering, monitoring, and managing UNIX and Linux computers with System Center Operations Manager 2019. They provide both proactive and reactive monitoring of the UNIX and Linux operating systems. The management packs monitor components such as processes, resources, and server agents. The monitoring provided by the management packs includes availability and configuration monitoring, performance data collection, and default thresholds. You can integrate the monitoring of UNIX and Linux components into your service-oriented monitoring scenarios. In addition to health monitoring capabilities, the management packs include reports, diagnostics, tasks, and views that enable near real-time diagnosis and resolution of detected issues. The management packs also enable the installation of the Audit Collection Services for UNIX/Linux Management Packs.\r\n<br/><br/>\r\nFeature Summary:\r\nSystem Center 2019 Management Pack for Unix and Linux Operating Systems\r\n<br/>\r\n<ul>\r\n<li>Provides monitoring of the AIX 7.1, 7.2 operating systems.</li>\r\n<li>Provides monitoring of the Red Hat Enterprise Linux 7 operating system.</li>\r\n<li>Provides monitoring of the Red Hat Enterprise Linux 7 support on Power 8 systems with System Center Operations Manager 2019.</li>\r\n<li>Provides monitoring of Solaris 10, and Solaris 11 operating systems.</li>\r\n<li> Provides monitoring of SUSE Linux Enterprise Server 12, and  SUSE Linux Enterprise Server 15 operating systems.</li>\r\n<li>Provides monitoring of CentOS 6, and CentOS 7 operating systems</li>\r\n<li>Provides monitoring of Debian GNU/Linux 8, Debian GNU/Linux 9, and Debian GNU/Linux 10 operating systems</li>\r\n<li>Provides monitoring Oracle Linux 7, and Oracle Linux 8 operating systems</li>\r\n<li>Provides monitoring CentOS 6, and CentOS 7 operating systems</li>\r\n<li>Provides monitoring of Ubuntu Linux Server 16.04, Ubuntu Linux Server 18.04, Ubuntu Linux Server 20.04 operating systems</li>\r\n<li>Enables the installation of the Audit Collection Services for UNIX/Linux Management Packs</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "  10.19.1258.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2019 MP for Unix and Linux.msi",
+        "AIXMPGuide.doc",
+        "Universal_Linux_MP_Guide.doc",
+        "SolarisMPGuide.doc",
+        "SLESMPGuide.doc",
+        "RHELMPGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "484.3 MB",
+        "419.0 KB",
+        "792.5 KB",
+        "589.0 KB",
+        "443.0 KB",
+        "607.0 KB"
+    ],
+    "detailsSection_file_date": "10/8/2024",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\r\nSystem Center Operations Manager 2019<br/>\r\n\r\nMonitoring of following Operating Systems is supported:\r\n\r\nIBM AIX 7,\r\nRHEL 7, 8, 9 Solaris 10, 11,\r\nSLES 12, 15,\r\nUbuntu 16.04, 18.04, 20.04\r\nDebian 8, 9, 10\r\nCentOS 6, 7,\r\nOracle Linux 6, 7, 8 ",
+    "systemRequirementsSection_supportedOS": [
+        "IBM AIX",
+        "Red Hat",
+        "SUSE",
+        "Linux",
+        "Solaris"
+    ],
+    "installInstructionSection": "1. Download and install System Center Operations Manager 2019 <br/>\r\n2. Download and install the updated management packs <br/>\r\n3. Import the management packs for the monitored Linux server types. <br/>\r\n4. Use the Operations Console to upgrade the Linux agents in the Administration\\UNIX/Linux computers view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58208",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "WM DRM RR Container v1.9",
+    "downloadDescription": "WM DRM RR Container v1.9",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "riv12app31cardea10device10.blob",
+            "url": "https://download.microsoft.com/download/f/1/f/f1f78999-d28a-4100-bc7d-471767ffbf70/riv12app31cardea10device10.blob",
+            "size": "12742",
+            "version": "1.9",
+            "datePublished": "7/15/2024 3:29:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WM DRM RR Container v1.9",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.9",
+    "detailsSection_file_name": [
+        "riv12app31cardea10device10.blob"
+    ],
+    "detailsSection_file_size": [
+        "12.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Update for WMP CVK",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32313",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrating Forefront Identity Manager 2010 Certificate Management Delegated Smart Card Registration",
+    "downloadDescription": "Delegated smart card registration with FIM CM in a test lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_CM_TLG_Delegated.docx",
+            "url": "https://download.microsoft.com/download/d/d/7/dd7b2494-35d7-4eaa-b410-7c9e290028d0/FIM_CM_TLG_Delegated.docx",
+            "size": "2515767",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document will assist architects, consultants, system engineers, and system administrators in deploying smart cards with Microsoft\u00ae Forefront\u00ae Identity Manager 2010 Certificate Management in a test lab.  The resulting FIM CM test lab will deomonstrate the use of smart cards using a delegated registraion model.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FIM_CM_TLG_Delegated.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems:  Windows Server 2008 R2\n\nMicrosoft SQL Server 2008 with Service Pack 2\n\nMicrosoft Exchange 2010 with Service Pack 1\n\nMicrosoft Forefront Identity Manager 2010\n\nUpdate 1 for Microsoft Forefront Identity Manager 2010\r\nUSB Smart Card reader\r\nGemalto .NET Smart Card",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Ultimate 64-bit",
+        "Windows Server 2008 R2 Enterprise"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26143",
+    "downloadPreload": true
+}

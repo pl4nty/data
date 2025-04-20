@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Perform a search-first migration (SharePoint Server 2010)",
+    "downloadDescription": "This white paper describes how to perform a search-first migration from SharePoint Server 2007 to SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PerformSearchFirstMigration.xps",
+            "url": "https://download.microsoft.com/download/7/8/1/781e742a-7852-4f8e-a005-05b803194e0d/PerformSearchFirstMigration.xps",
+            "size": "783690",
+            "version": "4",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PerformSearchFirstMigration.pdf",
+            "url": "https://download.microsoft.com/download/7/8/1/781e742a-7852-4f8e-a005-05b803194e0d/PerformSearchFirstMigration.pdf",
+            "size": "601109",
+            "version": "4",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PerformSearchFirstMigration.docx",
+            "url": "https://download.microsoft.com/download/7/8/1/781e742a-7852-4f8e-a005-05b803194e0d/PerformSearchFirstMigration.docx",
+            "size": "113982",
+            "version": "4",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Search-first migration enables organizations that are using enterprise search in SharePoint Server 2007 to accelerate adoption of the search capability that is provided by SharePoint Server 2010. This document provides an introduction to search-first migration, an overview of the steps that are required to set up and use a search-first environment, and planning considerations for deploying and configuring a new server farm for a search-first migration. This white paper contains the following sections: Introduction to search-first migration; Overview of setting up and using a search-first environment; Planning considerations for deploying and configuring a new SharePoint Server 2010 farm for a search-first migration; How to configure the new farm for the search-first migration; How to configure the SharePoint Server 2007 farm for the search-first migration; How to migrate search settings to the new farm; Considerations for training end users to use SharePoint Server 2010 search features and functionality in the search-first environment.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "PerformSearchFirstMigration.xps",
+        "PerformSearchFirstMigration.pdf",
+        "PerformSearchFirstMigration.docx"
+    ],
+    "detailsSection_file_size": [
+        "765.3 KB",
+        "587.0 KB",
+        "111.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "371",
+    "downloadPreload": true
+}

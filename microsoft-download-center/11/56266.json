@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 14 for System Center 2012 R2 Service Manager",
+    "downloadDescription": "This update contains a number of fixes for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM2012R2_CU_KB4024037_i386_7.5.3079.768.exe",
+            "url": "https://download.microsoft.com/download/a/6/e/a6e6b0ae-774e-4553-9255-6b36a864c190/SCSM2012R2_CU_KB4024037_i386_7.5.3079.768.exe",
+            "size": "80126992",
+            "version": "7.5.3079.768",
+            "datePublished": "7/15/2024 4:51:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM2012R2_CU_KB4024037_AMD64_7.5.3079.768.exe",
+            "url": "https://download.microsoft.com/download/a/6/e/a6e6b0ae-774e-4553-9255-6b36a864c190/SCSM2012R2_CU_KB4024037_AMD64_7.5.3079.768.exe",
+            "size": "80236560",
+            "version": "7.5.3079.768",
+            "datePublished": "7/15/2024 4:51:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update contains a set of bug fixes to the System Center 2012 R2 Service Manager release. It should be applied to all Service Manager 2012 R2 server installations. <br/>\r\nThere are the available executable files: <br/>\r\nSCSM2012R2_CU_KB4024037_AMD64_ 7.5.3079.768.exe <br/>\r\nSCSM2012R2_CU_ KB4024037_i386_ 7.5.3079.768.exe <br/>\r\n<br/>\r\n<b><u>Issues that are fixed in this update rollup-</u></b><br/>\r\n<ul>\r\n<li>Included Support for TLS 1.2</li>\r\n<li>New Service Request template gets created without the associated Activities and Related items, if the Apply button is used</li>\r\n<li>Change collision error occurs for Work Items of extended incident class types, even if they don\u2019t have any overlapping changes</li>\r\n<li>Get-SCOMGroup PowerShell cmdlet fails if the database has large number of groups (in thousands)</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.768",
+    "detailsSection_file_name": [
+        "SCSM2012R2_CU_KB4024037_i386_7.5.3079.768.exe",
+        "SCSM2012R2_CU_KB4024037_AMD64_7.5.3079.768.exe"
+    ],
+    "detailsSection_file_size": [
+        "76.4 MB",
+        "76.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 Service Manager ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4024037\">KB4024037</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56266",
+    "downloadPreload": true
+}

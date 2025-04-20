@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft OLE DB Provider for Visual FoxPro 8.0",
+    "downloadDescription": "The Visual FoxPro OLE DB Provider (VfpOleDB.dll) exposes OLE DB interfaces that you can use to access Visual FoxPro databases and tables from other programming languages and applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vfpoledb.exe",
+            "url": "https://download.microsoft.com/download/4/3/f/43fbe7c7-81ae-4a0e-acc1-8532a99c5d2d/vfpoledb.exe",
+            "size": "2334368",
+            "version": "8.0a",
+            "datePublished": "7/15/2024 3:29:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VFP8_OLEDBProvider_Readme.doc",
+            "url": "https://download.microsoft.com/download/4/3/f/43fbe7c7-81ae-4a0e-acc1-8532a99c5d2d/VFP8_OLEDBProvider_Readme.doc",
+            "size": "63488",
+            "version": "8.0a",
+            "datePublished": "7/15/2024 3:29:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visual FoxPro OLE DB Provider (VfpOleDB.dll) exposes OLE DB interfaces that you can use to access Visual FoxPro databases and tables from other programming languages and applications.  The Visual FoxPro OLE DB Provider is supported by OLE DB System Components as provided by MDAC 2.6 or later. The requirements to run the Visual FoxPro OLE DB Provider are the same as for Visual FoxPro 8.0.<br>\n<br>\nNote:  This version of the VFP OLE DB provider is the same version as the one included in SP1 (Service Pack 1) for Visual FoxPro 8.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0a",
+    "detailsSection_file_name": [
+        "vfpoledb.exe",
+        "VFP8_OLEDBProvider_Readme.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "62.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Processor: Pentium class</LI><LI>RAM: 64 MB (recommended: 128 MB or higher)</LI><LI>Available Hard Disk Space: 2 MB for minimum install, 4 MB for full install</LI><LI>Software Microsoft Data Access Components (MDAC) version 2.6 or higher</LI></UL><BR /><b>Note:</b> Installation on Windows NT 4.0 is not supported.<br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 2",
+        "Windows 98",
+        "Windows ME",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Important download details:</b> Installing the Microsoft OLE DB Provider for Visual FoxPro 8.0 on a computer that has a previous version of the Provider causes this version to replace the previous version. If you wish to preserve the previous version of the Provider, you must rename it before proceeding with this installation. To rename the Provider using Windows Explorer:<BR /><OL><LI>Shut down any applications that might be using the provider, such as IIS, or any desktop applications that use the provider.</LI><LI>Open the ...\\Program Files\\Common Files\\System\\Ole DB folder</LI><LI>Right-click <b>vfpoledb.dll</b>, select <b>Rename</b>, and then change the name to <b>vfpoledb_save.dll</b>.</LI><LI>To restore the saved version, delete or rename this release version, and rename <b>vfpoledb_save.dll</b> to <b>vfpoledb.dll</b>. It should not be necessary to re-register the provider, provided that you have not uninstalled the previous version.</LI></OL><BR /><b>To download:</b><BR /><OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Refer to Microsoft OLE DB Provider for Visual FoxPro 8.0 Readme for additional information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32602",
+    "downloadPreload": true
+}

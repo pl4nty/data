@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Protection 2010 for SharePoint Management Pack for System Center Operations Manager 2007",
+    "downloadDescription": "The Management Pack for Forefront Protection 2010 for SharePoint monitors the availability, security, configuration, and performance of an FPSP deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FPSP11_SCOM2007.msi",
+            "url": "https://download.microsoft.com/download/0/1/f/01f06feb-3c05-4a23-97ec-881a39b6a4c7/FPSP11_SCOM2007.msi",
+            "size": "487424",
+            "version": "11.1.0301.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2007_MP_FPSP.docx",
+            "url": "https://download.microsoft.com/download/0/1/f/01f06feb-3c05-4a23-97ec-881a39b6a4c7/OM2007_MP_FPSP.docx",
+            "size": "229959",
+            "version": "11.1.0301.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Management Pack for Forefront Protection 2010 for SharePoint (FPSP) allows you to discover FPSP installations and components and to monitor them within System Center Operations Manager 2007 and 2007 R2. When there is an issue that may impact the availability, configuration, or security of your FPSP deployment, Operations Manager uses the management pack to detect the issue, alert you to its existence, and facilitate diagnosis and corrective actions. <br/>\r\n<br/>\r\n<b>Feature Bullet Summary: </b><br/>\r\n<ul>\r\n<li> Support for Forefront Protection 2010 for SharePoint (FPSP) </li>\r\n<li> Discovery and monitoring of key FPSP services </li>\r\n<li> Monitoring of product license status </li>\r\n<li> Monitoring of the availability and configuration of scan jobs </li>\r\n<li> Monitoring of scan engine and definition updates </li>\r\n<li> Diagnostic and recovery tasks related to engine update and service recycling </li>\r\n<li> Performance views of message scanning rate across scan jobs </li>\r\n</ul>\r\n<br/>\r\n<b>Release History: </b><br/>\r\n<ul>\r\n<li> 6/18/2010 - Original release,  version 11.1.0301.0  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.1.0301.0",
+    "detailsSection_file_name": [
+        "FPSP11_SCOM2007.msi",
+        "OM2007_MP_FPSP.docx"
+    ],
+    "detailsSection_file_size": [
+        "476.0 KB",
+        "224.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2007 SP1 or later </li>\r\n<li> Forefront Protection 2010 for SharePoint </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<b>Notes: </b>If you have installed a previous version of the Forefront Protection 2010 for Exchange Server management pack, you must upgrade that management pack to version 11.1.0301.0 or later before installing this management pack. <br/>\r\n<ol>\r\n<li> Download the management pack installer from this page. </li>\r\n<li> On the Microsoft System Center Operations Manager server, click on the executable to extract two .mp files </li>\r\n<li> Click <b>Start</b>, point to <b>All Programs</b>, point to <b>System Center Operations Manager 2007</b>, and then click <b>Operations Console.</b> </li>\r\n<li> In the Operations Manager console, click the <b>Administration</b> button. </li>\r\n<li> Right-click the Management Packs node and select <b>Import Management Packs</b>, or click <b>Import Management Packs</b> in the <b>Actions</b> pane.  </li>\r\n<li> In the <b>Select Management Packs to Import</b> dialog box, navigate to the location of the files. </li>\r\n<li> Select these two .mp files that were extracted in step 2, and then click <b>Open. </b></li>\r\n<li> In the <b>Import Management Pack</b>s dialog box, click <b>Import</b> to import the management packs. </li>\r\n<li> After the management pack has been imported, the <b>Status</b> changes to \"<b>Imported</b>\". Click <b>Close</b> to continue. </li>\r\n</ol>\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24233",
+    "downloadPreload": true
+}

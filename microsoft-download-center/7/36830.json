@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Understand and Troubleshoot Dynamic Access Control in Windows Server 2012",
+    "downloadDescription": "This Understand and Troubleshoot Guide (UTG) enables you to learn technical concepts, functionality, and troubleshooting methods for Dynamic Access Control in Windows Server 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UTG-DynamicAccessControl-Feb2013 .docx",
+            "url": "https://download.microsoft.com/download/c/2/0/c200cf47-1303-4e7f-8aa9-23265eb595a6/UTG-DynamicAccessControl-Feb2013 .docx",
+            "size": "7877336",
+            "version": "Feb2013",
+            "datePublished": "7/15/2024 3:26:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Understand and Troubleshoot Guide (UTG) enables you to learn technical concepts, functionality, and troubleshooting methods for Dynamic Access Control in Windows Server 2012. This UTG provides you with:\r\n<ul>\r\n<li>A technical overview and functional description of this feature.</li>\r\n<li>Technical concepts to help you successfully install, configure, and manage this feature.</li>\r\n<li>User Interface options and settings for configuration and management</li>\r\n<li>Relevant architecture of this feature, with dependencies, and technical implementation.</li>\r\n<li>Primary troubleshooting tools and methods for this feature.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2013",
+    "detailsSection_file_name": [
+        "UTG-DynamicAccessControl-Feb2013 .docx"
+    ],
+    "detailsSection_file_size": [
+        "7.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "techNet Wiki: Dynamic Access Control",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/14269.introducing-dynamic-access-control-en-us.aspx"
+        },
+        {
+            "title": "dynamic Access Control: Scenario Overview",
+            "url": "http://technet.microsoft.com/en-us/library/hh831717"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36830",
+    "downloadPreload": true
+}

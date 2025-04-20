@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Streets and Trips 2009 and MapPoint 2009 Construction Data Update",
+    "downloadDescription": "Download the latest construction data to keep your maps current.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConstructionA8011007.dat",
+            "url": "https://download.microsoft.com/download/3/5/4/3543044f-f9a4-4a49-8d26-11661fe6056b/ConstructionA8011007.dat",
+            "size": "113880",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the latest road construction data to keep your Streets and Trips and MapPoint 2009 maps current.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "ConstructionA8011007.dat"
+    ],
+    "detailsSection_file_size": [
+        "111.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Close Streets & Trips and/or MapPoint.</LI>\n<LI>Click the <b>download</b> link to start the download.</LI>\n<LI>Click <b>Save</b>  or <b>Save this program to disk</b>.</LI>\n<LI>Save the file in the Data folder</LI>\n\t<UL>\n\t\t<LI>For XP <br />\n\t\t<b>C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Microsoft Streets & Trips\\16.0\\Data</b><br />\n\t\tor <br />\n\t\t<b>C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Microsoft MapPoint\\16.0\\Data</b><br /></LI>\n\t\t<LI>For Vista <br />\n\t\t<b>C:\\ProgramData\\Microsoft\\Microsoft Streets & Trips\\16.0\\Data </b><br />\n\t\tor <br />\n\t\t<b>C:\\ProgramData\\Microsoft\\Microsoft MapPoint\\16.0\\Data </b></LI>\n\t</UL>\n<LI>Restart Streets & Trips and/or MapPoint.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "streets and Trips Home Page",
+            "url": "http://www.microsoft.com/streets/"
+        },
+        {
+            "title": "mapPoint Home Page",
+            "url": "http://www.microsoft.com/MapPoint/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14588",
+    "downloadPreload": true
+}

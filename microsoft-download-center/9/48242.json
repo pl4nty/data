@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "General Notice/Demand",
+    "downloadDescription": "Arbitration",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Demand-for-Arbitration.pdf",
+            "url": "https://download.microsoft.com/download/4/1/6/4166bf49-106e-4198-bba3-446ab85139e9/Demand-for-Arbitration.pdf",
+            "size": "21431",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:49:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Notice-of-Dispute.pdf",
+            "url": "https://download.microsoft.com/download/4/1/6/4166bf49-106e-4198-bba3-446ab85139e9/Notice-of-Dispute.pdf",
+            "size": "34831",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:49:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "none",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Demand-for-Arbitration.pdf",
+        "Notice-of-Dispute.pdf"
+    ],
+    "detailsSection_file_size": [
+        "20.9 KB",
+        "34.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "none",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48242",
+    "downloadPreload": true
+}

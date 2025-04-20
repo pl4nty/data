@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Bill of Material in Microsoft Dynamics SL 2015",
+    "downloadDescription": "This training provides individuals with the knowledge and skills to build a comprehensive understanding of the Bill of Material module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_BOM.zip",
+            "url": "https://download.microsoft.com/download/5/4/1/5417dab5-5589-404d-83b6-77f6b3ec2b45/SL2015_ENUS_BOM.zip",
+            "size": "5159150",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b> </b>Bill of Material training is recommended for anyone who plans to implement, use, maintain, consult, or support Microsoft Dynamics SL. The class is targeted toward administrators, office managers, CEO's, and consultants who need to understand the technical aspects of Bill of Material and gain foundational knowledge of the application functionality. At Training Material Completion<b> </b>After reviewing this training, individuals will be able to: <ul><li>Have a solid understanding of the transaction cycle along with the various methods of producing transactions, in the General Ledger module.</li><li>Have an understanding of how the transaction cycle fits in with the Microsoft Dynamics accounting cycle, and how to complete the accounting cycle.</li><li>Understand important features of the Microsoft Dynamics General Ledger system, such as account/subaccount validation, multiple ledgers, budgeting, allocations, and consolidations.</li></ul><b></b> Prerequisites<b> </b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>General Ledger training course.</li><li>Inventory training course.\u200b\u200b</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_BOM.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101747",
+    "downloadPreload": true
+}

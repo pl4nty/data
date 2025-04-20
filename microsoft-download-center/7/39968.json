@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2013 Protocol Workloads Poster ",
+    "downloadDescription": "Learn how Lync Server can help your organization provide instant messaging, web conferencing, application sharing, and voice communication. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_2013_poster.vsd",
+            "url": "https://download.microsoft.com/download/0/6/a/06ab4aee-a0a5-42da-ba9b-19f8f9b912cd/Lync_2013_poster.vsd",
+            "size": "1807360",
+            "version": "Oct2016",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync_2013_poster.pdf",
+            "url": "https://download.microsoft.com/download/0/6/a/06ab4aee-a0a5-42da-ba9b-19f8f9b912cd/Lync_2013_poster.pdf",
+            "size": "729551",
+            "version": "Oct2016",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download this poster to understand the capabilities and requirements of Lync 2013, Lync Phone, Lync Web App, Lync for Mac, and Lync Mobile w. See how Lync Server workloads facilitate communication across an organization. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Oct2016",
+    "detailsSection_file_name": [
+        "Lync_2013_poster.vsd",
+        "Lync_2013_poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "712.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39968",
+    "downloadPreload": true
+}

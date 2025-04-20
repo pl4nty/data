@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Kinect Body Tracking SDK v1.1.2",
+    "downloadDescription": "SDK for tracking humans with Azure Kinect DK",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure Kinect Body Tracking SDK 1.1.2.msi",
+            "url": "https://download.microsoft.com/download/b/4/6/b469e83e-7884-4bd9-a284-1959cd2c0b76/Azure Kinect Body Tracking SDK 1.1.2.msi",
+            "size": "1684324352",
+            "version": "1.1.2",
+            "datePublished": "7/15/2024 4:31:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SDK can track multiple humans with Azure Kinect DK returning 32 joint skeletons for each human in view.\r\n\r\nFor more information see <a href=\"https://Azure.com/Kinect\">https://Azure.com/Kinect</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.2",
+    "detailsSection_file_name": [
+        "Azure Kinect Body Tracking SDK 1.1.2.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10/11 for C/C++ and C#\r\nDoes not support Windows 10 /11 in S mode\r\n\r\nFor more information see <a href=\"https://Azure.com/Kinect\">https://Azure.com/Kinect</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and run the installer.\r\n\r\nFor more information see <a href=\"https://aka.ms/kinectdocs\">https://aka.ms/kinectdocs</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104221",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Using Microsoft BizTalk Server 2010 to Exchange Documents with Microsoft Dynamics AX",
+    "downloadDescription": "This white paper discusses how to integrate BizTalk Server with Microsoft Dynamics AX to exchange service documents.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Using Microsoft BizTalk Server 2010 to exchange documents with Microsoft Dynamics AX_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/9/e/0/9e0e3e47-9a50-4689-be22-65e354b482a1/Using Microsoft BizTalk Server 2010 to exchange documents with Microsoft Dynamics AX_AX2012.pdf",
+            "size": "994920",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics AX 2012 allows you to connect the Application Integration Framework (AIF) with BizTalk Server by using the Windows Communication Framework (WCF)-based adapters that are included with AIF. This white paper discusses the general issues surrounding this type of integration and describes how to create an integration solution that uses BizTalk and AIF to exchange service documents. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Using Microsoft BizTalk Server 2010 to exchange documents with Microsoft Dynamics AX_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "971.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26920",
+    "downloadPreload": true
+}

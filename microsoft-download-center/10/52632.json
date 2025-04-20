@@ -1,0 +1,130 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 R2 CU3",
+    "downloadDescription": "Microsoft BizTalk Server 2013 R2 CU3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-JPN.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-JPN.exe",
+            "size": "23332384",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-KOR.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-KOR.exe",
+            "size": "23286304",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-DEU.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-DEU.exe",
+            "size": "23352352",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-CHT.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-CHT.exe",
+            "size": "23278624",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-CHS.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-CHS.exe",
+            "size": "23276576",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-ENU.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-ENU.exe",
+            "size": "21584416",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-FRA.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-FRA.exe",
+            "size": "23354400",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-ITA.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-ITA.exe",
+            "size": "23279648",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB3158677-ESP.exe",
+            "url": "https://download.microsoft.com/download/0/7/f/07f31048-c623-45d1-92a4-21f10ac0c198/BTS2013R2-KB3158677-ESP.exe",
+            "size": "23324192",
+            "version": "3.11.239.2",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 R2 CU3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.11.239.2",
+    "detailsSection_file_name": [
+        "BTS2013R2-KB3158677-JPN.exe",
+        "BTS2013R2-KB3158677-KOR.exe",
+        "BTS2013R2-KB3158677-DEU.exe",
+        "BTS2013R2-KB3158677-CHT.exe",
+        "BTS2013R2-KB3158677-CHS.exe",
+        "BTS2013R2-KB3158677-ENU.exe",
+        "BTS2013R2-KB3158677-FRA.exe",
+        "BTS2013R2-KB3158677-ITA.exe",
+        "BTS2013R2-KB3158677-ESP.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.3 MB",
+        "22.2 MB",
+        "22.3 MB",
+        "22.2 MB",
+        "22.2 MB",
+        "20.6 MB",
+        "22.3 MB",
+        "22.2 MB",
+        "22.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>Microsoft Office Excel 2013 or 2010</li>\r\n <li>.NET Framework 4.5 and .NET Framework 4.5.1</li>\r\n <li>Visual Studio 2013</li>\r\n <li>SQL Server 2014 or SQL Server 2012 SP1</li>\r\n <li>SharePoint 2013 SP1</li>\r\n <li>Microsoft BizTalk Server 2013 R2</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52632",
+    "downloadPreload": true
+}

@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager Management Pack for Azure Stack HCI OS",
+    "downloadDescription": "This Management Pack for SCOM enables you to monitor the availability and performance of Azure Stack HCI",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure Stack HCI Management Packs Quick Start Guide.docx",
+            "url": "https://download.microsoft.com/download/0/e/c/0ecef032-1a24-4f25-aea1-7d9d0874aa0c/Azure Stack HCI Management Packs Quick Start Guide.docx",
+            "size": "108601",
+            "version": "1.0.24.0",
+            "datePublished": "7/15/2024 4:31:02 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Azure Stack HCI.msi",
+            "url": "https://download.microsoft.com/download/0/e/c/0ecef032-1a24-4f25-aea1-7d9d0874aa0c/Microsoft System Center Management Pack for Azure Stack HCI.msi",
+            "size": "1716224",
+            "version": "1.0.24.0",
+            "datePublished": "7/15/2024 4:31:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for Azure Stack HCI.docx",
+            "url": "https://download.microsoft.com/download/0/e/c/0ecef032-1a24-4f25-aea1-7d9d0874aa0c/Management Pack Guide for Azure Stack HCI.docx",
+            "size": "323411",
+            "version": "1.0.24.0",
+            "datePublished": "7/15/2024 4:31:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Management Pack for SCOM enables you to monitor the availability and performance of Azure Stack HCI.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.24.0",
+    "detailsSection_file_name": [
+        "Azure Stack HCI Management Packs Quick Start Guide.docx",
+        "Microsoft System Center Management Pack for Azure Stack HCI.msi",
+        "Management Pack Guide for Azure Stack HCI.docx"
+    ],
+    "detailsSection_file_size": [
+        "106.1 KB",
+        "1.6 MB",
+        "315.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This Management Pack requires System Center Operations Manager 2019.",
+    "systemRequirementsSection_supportedOS": [
+        "Azure Stack HCI"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring refer to the management pack guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103955",
+    "downloadPreload": true
+}

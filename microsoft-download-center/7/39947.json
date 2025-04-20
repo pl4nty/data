@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration Specification for High Efficiency Video Coding (HEVC)",
+    "downloadDescription": "This document contains the specification for support of the High Efficiency Video Coding (HEVC) codec within the Microsoft Windows DirectX Video Acceleration (DXVA) API/DDI context.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_HEVC_Spec.docx",
+            "url": "https://download.microsoft.com/download/DXVA_HEVC_Spec.docx",
+            "size": "115958",
+            "version": "1.0",
+            "datePublished": "3/27/2025 9:18:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document contains the specification for support of High Efficiency Video Coding (HEVC) within the Microsoft Windows DirectX Video Acceleration (DXVA) API/DDI context. This includes support of the HEVC Main Profile, Main Still Picture profile, and Main 10 profile as important special cases. The document describes high-level design concepts and specific HEVC extensions to DXVA interfaces and data structures of HEVC video decoding. This document specifies only off-host VLD profiles for HEVC video decoding.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DXVA_HEVC_Spec.docx"
+    ],
+    "detailsSection_file_size": [
+        "113.2 KB"
+    ],
+    "detailsSection_file_date": "3/27/2025",
+    "systemRequirementsSection": "Windows XP, Windows Vista, Windows 7, Windows 8.\r\nThis document requires Microsoft Word or Microsoft Word Viewer to view\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download link to start the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39947",
+    "downloadPreload": true
+}

@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 R2 Books Online",
+    "downloadDescription": "Download the release version of the documentation and tutorials for Microsoft SQL Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2_BOL.msi",
+            "url": "https://download.microsoft.com/download/0/1/3/013c9257-e123-4099-b974-b0f0721aff34/SQLServer2008R2_BOL.msi",
+            "size": "191949312",
+            "version": "11.00",
+            "datePublished": "7/15/2024 3:15:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2008 Release 2 (R2), formerly known as SQL Server Code-Named \u201cKilimanjaro\u201d, is the next release of Microsoft SQL Server. Books Online is the primary documentation for SQL Server. \n<br/><br/>\r\n<b>Important</b> Installing SQL Server 2008 R2 Books Online upgrades your existing SQL Server 2008 version of Books Online. If you upgrade, be aware that the content and help topics now describe tools and features of SQL Server 2008 R2. To reinstall SQL Server 2008 Books Online, you must first uninstall SQL Server 2008 R2 Books Online. Because SQL Server 2008 and SQL Server 2008 R2 share components, you cannot have side-by-side installations of Books Online on the same machine.\r\n<br /><br />\nBooks Online includes the following types of information:\n<br />\n<UL>\n<LI>Setup and upgrade instructions.</LI><br />\n<LI>Information about new features and backward compatibility.</LI><br />\n<LI>Conceptual descriptions of the technologies and features in SQL Server.</LI><br />\n<LI>Procedural topics describing how to use the various features in SQL Server. </LI><br />\n<LI>Tutorials that guide you through common tasks.</LI><br />\n<LI>Reference documentation for the graphical tools, command prompt utilities, programming languages, and application programming interfaces (APIs) that are supported by SQL Server.</LI><br />\n<LI>Descriptions of the sample databases and applications that are available with SQL Server. </LI>\r\n\r\n<br />\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.00",
+    "detailsSection_file_name": [
+        "SQLServer2008R2_BOL.msi"
+    ],
+    "detailsSection_file_size": [
+        "183.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Microsoft .NET Framework: The Help viewer used by Books Online requires the Microsoft .NET Framework version 2.0. Download one of the following versions of the .NET Framework 2.0:\n<UL>\n<LI><a href=\"http://go.microsoft.com/fwlink/?linkid=32168\">.NET Framework for x86</a></LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=70186\">.NET Framework for x64</a></LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=70187\">.NET Framework for ia64</a></LI>\n</UL>\n</LI><br />\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=70188\">Internet Explorer 6.0 SP1</a> or later</LI><br />\n<LI>Windows Installer: Windows Installer 4.5 is required to install SQL Server Books Online. Download and install <a href=\"http://go.microsoft.com/fwlink/?linkid=101159\">Windows Installer</a>.</LI><br />\n</UL>\n<br />\nUsers who have SQL Server 2008 installed with shared components, including SQL Server Books Online, and who upgrade to and subsequently uninstall SQL Server 2008 R2 Books Online and reinstall SQL Server 2008 Books Online may experience minor issues, such as a default starting topic with a SQL Server 2008 R2 heading. All other content is specific to SQL Server 2008, as expected.\r\n<br /><br />\r\nStand-alone installations of SQL Server 2008 Books Online that are upgraded to SQL Server 2008 R2 Books Online and later restored to SQL Server 2008 Books Online do not exhibit this behavior.\r\n<br /><br />\r\n<LI>To avoid this problem, <a href=\"http://msdn.microsoft.com/en-us/library/ms130214(SQL.105).aspx \">view the SQL Server 2008 R2 Books Online content online</a></LI> until you are certain you want to upgrade.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the <b>Download</b> button on this page to start the download.</LI><br />\n<LI>Do one of the following: </LI><br />\n   <UL><br />\n      <LI>To start the installation immediately, click <B>Run</B>.</LI><br />\n      <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI><br />\n      <LI>To cancel the installation, click <B>Cancel</B>.</LI><br />\n   </UL><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=26339"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=28107"
+        },
+        {
+            "title": "looking for New Downloads? Sign Up to Be Notified",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=70185"
+        },
+        {
+            "title": "sql Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=8504"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9071",
+    "downloadPreload": true
+}

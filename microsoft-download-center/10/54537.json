@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud App Security SIEM Agent",
+    "downloadDescription": "The Cloud App Security SIEM agent enables integration of Cloud App Security activities and alerts into your SIEM server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mcas-siemagent-0.111.126-signed.zip",
+            "url": "https://download.microsoft.com/download/f/8/f/f8fbdcbf-391c-4125-92dd-2e556dadd2cb/mcas-siemagent-0.111.126-signed.zip",
+            "size": "7314275",
+            "version": "0.111.126",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can now integrate Cloud App Security with your SIEM server to enable centralized monitoring of alerts and activities. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The Cloud App Security SIEM agent runs on your server and pulls alerts and activities from Cloud App Security and streams them into the SIEM server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.111.126",
+    "detailsSection_file_name": [
+        "mcas-siemagent-0.111.126-signed.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A standard Windows or Linux server (can be a virtual machine).<br/>\r\nThe server must be running Java 8; earlier versions are not supported.",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "For information on how to deploy the SIEM agent, see <a href=\"https://docs.microsoft.com/en-us/cloud-app-security/siem\">Cloud App Security SIEM integration</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54537",
+    "downloadPreload": true
+}

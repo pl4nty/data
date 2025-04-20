@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Toolkit to Disable Automatic Delivery of Internet Explorer 11",
+    "downloadDescription": "The Internet Explorer 11 Blocker Toolkit enables users to disable automatic delivery of Internet Explorer 11 as an important class update via Automatic Updates (AU) feature of Windows Update (WU).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE11_BlockerToolkit.EXE",
+            "url": "https://download.microsoft.com/download/8/1/9/819227b2-b066-41cc-9ef9-5426f0f0f886/IE11_BlockerToolkit.EXE",
+            "size": "97984",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:35:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\n      To help our customers become more secure and up-to-date, Microsoft will distribute Windows Internet Explorer 11 as an important update through Automatic Updates for Windows 7 SP1 and higher for x64 and x86 and Windows Server 2008 R2 SP1 and higher for x64. <BR />\n      This Blocker Toolkit is made available to those who would like to block automatic delivery of Internet Explorer 11 to machines in environments where Automatic Updates is enabled. The Blocker Toolkit will not expire.\n      <BR />\n      <BR />\n      Note:\n      <UL>\n        <LI>\n          For computers running Windows 7 or Windows Server 2008 R2, the Blocker Toolkit prevents the machine from receiving Internet Explorer 11 via Automatic Updates on the Windows Update and Microsoft Update sites.\n        </LI>\n        <LI>\n          The Blocker Toolkit will not prevent users from manually installing Internet Explorer 11 from the Microsoft Download Center, or from external media.\n        </LI>\n        <LI>\n          Organizations do not need to deploy the Blocker Toolkit in environments managed with an update management solution such as Windows Server Update Services or System Center 2012 Configuration Manager. Organizations can use those products to fully manage deployment of updates released through Windows Update and Microsoft Update, including Internet Explorer 11, within their environment.\n        </LI>\n        <LI>\n          Even if you used the Blocker Toolkit to block Internet Explorer 8, Internet Explorer 9, or Internet Explorer 10 from being installed as a high-priority or important update, you will still need to use the Internet Explorer 11 version of the Blocker Toolkit to block Internet Explorer 10 from being installed. There are different registry keys used to block or unblock automatic delivery of Internet Explorer 8, Internet Explorer 9, Internet Explorer 10 and Internet Explorer 11.\n        </LI>\n      </UL>\n      <BR />\n      <BR />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2841134",
+        "name": "KB2841134"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.0.0",
+    "detailsSection_file_name": [
+        "IE11_BlockerToolkit.EXE"
+    ],
+    "detailsSection_file_size": [
+        "95.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      <UL>\n        <LI>Windows 7 Service Pack 1 and higher</LI>\n        <LI>Windows Server 2008 R2 Service Pack 1 and higher</LI>\n      </UL>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "\n      <OL>\n        <LI>Click on the link to download the package and select \u2018Run\u2019 or \u2018Open\u2019. You will be asked to accept the end-user license agreement (EULA) before you gain access to the package contents. The package contains 4 different files.</LI>\n        <LI>Pick a location where you would like to place the 4 files above by clicking on \u2018Browse\u2019. Once you have specified the location to place the extracted files, click \u2018OK\u2019. </LI>\n        <LI>Launch an elevated Command Prompt by navigating to Start -&gt; All Programs -&gt; Accessories -&gt; and then right click on \u201cCommand Prompt\u201d and select \u201cRun as Administrator\u201d. Type \u201cCD\u201d followed by the path to where you have extracted the 4 files in step 2 above.</LI>\n        <LI>In the Command Prompt, type \u201cie11_blocker.cmd /B\u201d and hit Enter to set the blocker on the machine.</LI>\n        <LI>You will see confirmation in the Command Prompt: \u201cBlocking deployment of Internet Explorer 11 on the local machine. The operation completed successfully.\u201d You can now close the Command Prompt window.</LI>\n      </OL>\n    ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40722",
+    "downloadPreload": true
+}

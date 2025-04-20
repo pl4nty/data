@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2000 Retired Technical documentation",
+    "downloadDescription": "The content you requested has already retired. It's available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL2000_release.pdf",
+            "url": "https://download.microsoft.com/download/5/4/a/54afd350-6477-4910-9df2-4c472c906684/SQL2000_release.pdf",
+            "size": "96505714",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae SQL Server\u2122 is a relational database management\r\nand analysis system for e-commerce, line-of-business, and data\r\nwarehousing solutions. SQL Server 2000,  includes support for \r\nXML and HTTP, performance and availability features to partition\r\n load and ensure uptime, and advanced management and tuning \r\nfunctionality to automate routine tasks and lower total cost of ownership",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL2000_release.pdf"
+    ],
+    "detailsSection_file_size": [
+        "92.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003, Standard Edition 1\r\nStandard Edition Windows Server 2003, Enterprise Edition 1\r\nWindows Server 2003, Datacenter Edition 1\r\nWindows 2000 Server\r\nWindows 2000 Advanced Server\r\nWindows 2000 Datacenter Server\r\nMicrosoft Windows NT Server version 4.0 with Service\r\nPack 5 (SP5) or later\r\nWindows NT Server version 4.0, Enterprise Edition, with\r\nSP5 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51958",
+    "downloadPreload": true
+}

@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded CE 6.0 Cumulative Product Update Rollup Package (through 12/31/2015)",
+    "downloadDescription": "Download the full set of updates for Windows Embedded CE 6.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded CE 6.0 R3_Product_Update_Rollup_2015.htm",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/Windows Embedded CE 6.0 R3_Product_Update_Rollup_2015.htm",
+            "size": "212113",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-MIPSIV.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-MIPSIV.msi",
+            "size": "455667712",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-MIPSIV_FP.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-MIPSIV_FP.msi",
+            "size": "455483392",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-X86.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-X86.msi",
+            "size": "418226176",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-MIPSII.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-MIPSII.msi",
+            "size": "455114752",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-Armv4I.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-Armv4I.msi",
+            "size": "467824640",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-SH4.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-SH4.msi",
+            "size": "445915136",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-151231-Product-Update-Rollup-MIPSII_FP.msi",
+            "url": "https://download.microsoft.com/download/5/a/8/5a85e81a-b088-4f95-8ac0-7b9020f3df9a/WinCEPB60-151231-Product-Update-Rollup-MIPSII_FP.msi",
+            "size": "454766592",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a full set of updates for Windows Embedded CE 6.0 R3. Please see the associated Readme for a list of the included updates. \n<br/>\r\nThis rollup contains all updates released for Windows Embedded CE 6.0 up through 12/31/2015.\r\n<br/>\r\nThere is an update posted for <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=19922\">Viewers 97, 2000, 2003, XP & 2007 for Windows Embedded CE 6.0 R3</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6 R3",
+    "detailsSection_file_name": [
+        "Windows Embedded CE 6.0 R3_Product_Update_Rollup_2015.htm",
+        "WinCEPB60-151231-Product-Update-Rollup-MIPSIV.msi",
+        "WinCEPB60-151231-Product-Update-Rollup-MIPSIV_FP.msi",
+        "WinCEPB60-151231-Product-Update-Rollup-X86.msi",
+        "WinCEPB60-151231-Product-Update-Rollup-MIPSII.msi",
+        "WinCEPB60-151231-Product-Update-Rollup-Armv4I.msi",
+        "WinCEPB60-151231-Product-Update-Rollup-SH4.msi",
+        "WinCEPB60-151231-Product-Update-Rollup-MIPSII_FP.msi"
+    ],
+    "detailsSection_file_size": [
+        "207.1 KB",
+        "434.6 MB",
+        "434.4 MB",
+        "398.9 MB",
+        "434.0 MB",
+        "446.2 MB",
+        "425.3 MB",
+        "433.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=18111\">Windows Embedded CE 6.0 R2</a> is required to be installed prior to installing this rollup.</li>\r\n<li>200 MB of disk space required to download, install, and operate per processor</li>\r\n</ul>\r\nThe following must be installed in order to create a supported Windows Embedded CE 6.0 development environment:\r\n<ol>\n<li>Visual Studio 2005</li>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=5553\">Visual Studio 2005 Service Pack 1</a></li>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=7524\">Visual Studio 2005 Service Pack 1 Update for Windows Vista</a> (if applicable)</li>\n<li>Windows Embedded CE 6.0 Platform Builder</li>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=4097\">Windows Embedded CE 6.0 SP1</a> (required if PB 6.0 Tools have been installed)</li>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=18111\">Windows Embedded CE 6.0 R2</a></li>\n<li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=14226\">Windows Embedded CE 6.0 R3</a></li>\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "<UL>\r\n<LI>Each update is contained in a compressed file along with instructions.  All of the updates have been separated by processor to make the download quicker.</LI>\r\n<LI>Updates are cumulative. We suggest downloading all of them.  The setup will replace files in your Windows CE Platform Builder installation.</LI>\r\n<li>If you have trouble installing packages on Windows Vista, open command prompt, choose \"Run as administrator\", confirm UAC prompt, launch an update.</li>\r\n<li>Click Download and follow instructions</li>\r\n</UL>\r\n",
+    "additionalInformationSection": "<a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=7732\">Microsoft Expression Blend 2</a>, to create and edit XAML layouts Silverlight for Windows Embedded.\r\n<br />\r\n<br />\r\n<a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=8079\">QQ Messenger Client for Windows Embedded CE 6.0 R3</a>\r\n<br />\r\n<br />\r\n<a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=13194\">Monotype iType font engine for Windows Embedded CE 6.0 R3</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows CE 6.0 R3 Documentation",
+            "url": "http://msdn.microsoft.com/en-us/library/ee504812.aspx"
+        },
+        {
+            "title": "windows Embedded CE6 Prior Yearly Rollup",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=45521"
+        },
+        {
+            "title": "windows Embedded Technical Reference",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/developers.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50808",
+    "downloadPreload": true
+}

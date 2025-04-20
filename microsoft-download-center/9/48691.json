@@ -1,0 +1,217 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Technical Preview 3 Data Protection Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-11.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-14.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-14.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD.exe",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD.exe",
+            "size": "354600",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-9.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-8.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-15.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-15.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DPMTP_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/DPMTP_VHDEVAL.docx",
+            "size": "44714",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-7.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-1.bin",
+            "size": "735664128",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-5.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-12.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-3.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-16.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-16.bin",
+            "size": "221007427",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-6.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-4.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-10.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-2.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP3_SCDPM_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/1/c/5/1c56e2d0-14da-46b9-9f02-0d7ea45b8493/SCTP3_SCDPM_VHD-13.bin",
+            "size": "736000000",
+            "version": "TP3",
+            "datePublished": "7/15/2024 3:44:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nThis VHD enables System Center customers to jointly evaluate System Center Technical Preview 3 and Windows Server Technical Preview 3. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center Technical Preview 3 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=144b4015-6c8a-432e-8e06-482b2be0f069\">System Center Technical Preview 3 Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=86c3fe2f-2b97-445e-9a9f-1ae8e9afaa68\">System Center Technical Preview 3 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=1a735c77-82c2-4abb-8add-f2a107f4fb0c\">System Center Technical Preview 3 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=a57f7968-449e-42a5-98b7-ec39ebbc84fb\">System Center Technical Preview 3 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f90ec169-99e9-4add-904d-4d04fa59dbe4\">System Center Technical Preview 3 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "TP3",
+    "detailsSection_file_name": [
+        "SCTP3_SCDPM_VHD-11.bin",
+        "SCTP3_SCDPM_VHD-14.bin",
+        "SCTP3_SCDPM_VHD.exe",
+        "SCTP3_SCDPM_VHD-9.bin",
+        "SCTP3_SCDPM_VHD-8.bin",
+        "SCTP3_SCDPM_VHD-15.bin",
+        "DPMTP_VHDEVAL.docx",
+        "SCTP3_SCDPM_VHD-7.bin",
+        "SCTP3_SCDPM_VHD-1.bin",
+        "SCTP3_SCDPM_VHD-5.bin",
+        "SCTP3_SCDPM_VHD-12.bin",
+        "SCTP3_SCDPM_VHD-3.bin",
+        "SCTP3_SCDPM_VHD-16.bin",
+        "SCTP3_SCDPM_VHD-6.bin",
+        "SCTP3_SCDPM_VHD-4.bin",
+        "SCTP3_SCDPM_VHD-10.bin",
+        "SCTP3_SCDPM_VHD-2.bin",
+        "SCTP3_SCDPM_VHD-13.bin"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "346.3 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "43.7 KB",
+        "701.9 MB",
+        "701.6 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "210.8 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cDPMTP_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCTP3_SCDPM_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48691",
+    "downloadPreload": true
+}

@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "WS2012GalleryResource",
+    "downloadDescription": "Gallery Resource to deploy a Virtual Machine Role running Windows Server 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WS2012-VMRole-Pkg.zip",
+            "url": "https://download.microsoft.com/download/5/8/0/5803dcd5-6b53-4ae8-b950-c124d1d92120/WS2012-VMRole-Pkg.zip",
+            "size": "25332",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 3:35:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-Azure-Pack-Virtual-Machine-Role-Template-EULA-Final.docx",
+            "url": "https://download.microsoft.com/download/5/8/0/5803dcd5-6b53-4ae8-b950-c124d1d92120/Windows-Azure-Pack-Virtual-Machine-Role-Template-EULA-Final.docx",
+            "size": "29932",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 3:35:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "win_logo_60.png",
+            "url": "https://download.microsoft.com/download/5/8/0/5803dcd5-6b53-4ae8-b950-c124d1d92120/win_logo_60.png",
+            "size": "3035",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 3:35:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Gallery Resource to deploy a Virtual Machine Role running Windows Server 2012",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "WS2012-VMRole-Pkg.zip",
+        "Windows-Azure-Pack-Virtual-Machine-Role-Template-EULA-Final.docx",
+        "win_logo_60.png"
+    ],
+    "detailsSection_file_size": [
+        "24.7 KB",
+        "29.2 KB",
+        "3.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft System Center 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please extract the WS2012-VMRole-Pkg.zip and  follow instructions in the Readme.docx file to deploy a Virtual Machine Role running Windows Server 2012",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39697",
+    "downloadPreload": true
+}

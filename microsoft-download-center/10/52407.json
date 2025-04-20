@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "NetBSD for eMIPS",
+    "downloadDescription": "This download contains the ISO CD image for installing NetBSD 4.0.1 on an eMIPS processor system. Last published: December 20, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "emipscd.zip",
+            "url": "https://download.microsoft.com/download/4/4/d/44dbb547-bf3a-476f-9219-15774490578d/emipscd.zip",
+            "size": "331596898",
+            "version": "4.0.1",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the ISO CD image for installing NetBSD 4.0.1 on an eMIPS processor system. The download works for the Xilinx XUP board and the Giano simulator.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.1",
+    "detailsSection_file_name": [
+        "emipscd.zip"
+    ],
+    "detailsSection_file_size": [
+        "316.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52407",
+    "downloadPreload": true
+}

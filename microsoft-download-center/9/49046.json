@@ -1,0 +1,129 @@
+{
+    "error": "",
+    "downloadTitle": "Software Inventory Logging Aggregator 1.0 for Windows Server",
+    "downloadDescription": "Software Inventory Logging Aggregator receives, aggregates, and produces basic reports of, the number and types of Microsoft enterprise software installed on Windows Servers across a data center.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.exe",
+            "url": "https://download.microsoft.com/download/c/2/0/c20eddaf-c097-4d57-8127-e9fdba401a85/setup.exe",
+            "size": "434664",
+            "version": "1.0.1",
+            "datePublished": "7/15/2024 3:59:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SILA.MSI.msi",
+            "url": "https://download.microsoft.com/download/c/2/0/c20eddaf-c097-4d57-8127-e9fdba401a85/Microsoft.SILA.MSI.msi",
+            "size": "14457344",
+            "version": "1.0.1",
+            "datePublished": "7/15/2024 3:59:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Software Inventory Logging is intended to reduce the operational costs of inventorying the Microsoft software deployed across many servers in an IT environment.  This Software Inventory Logging Aggregator 1.0 will install on one server and receive inventory data from any Windows Server configured to forward data to it via the Software Inventory Logging feature available in Windows Server itself.  The design allows data center administrators to enable Windows Server's Software Inventory Logging feature in master images intended for wide distribution in their environment and deployed with automation.  This software package is the target point and intended for customers to install on their premises for easy logging of inventory data over time.  This software also allows for periodic creation of basic inventory reports in Microsoft Excel.  Software Inventory Logging Aggregator 1.0 reports include counts of installations of Windows Server, System Center, and SQL Server.\r\n<br></br>\r\nImportant: No data is sent to Microsoft with the use of this software\r\n<br></br>\r\nFor more info and details on Software Inventory Logging Aggregator, go to:\r\n<A href=\"http://go.microsoft.com/fwlink/?LinkID=616388&clcid=0x409\">http://go.microsoft.com/fwlink/?LinkID=616388&clcid=0x409</A>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "setup.exe",
+        "Microsoft.SILA.MSI.msi"
+    ],
+    "detailsSection_file_size": [
+        "424.5 KB",
+        "13.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\nSoftware Inventory Logging Aggregator 1.0 requires the following software for installation:\r\n<ul>\r\n<li>Windows Server 2012 R2 (Standard or Datacenter Edition)</li>\r\n<li>SQL Server 2012 Sp2 Standard Edition or SQL Server 2014 Standard Edition</li>\r\n<li>64 bit Microsoft Excel 2013 with PowerPivot add-in</li>\r\n</ul>\r\n<br></br>\r\nIf running in a virtual machine, a minimum of 4GB of memory should be assigned to the virtual machine.\r\n<br></br>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "There are some things you need to make sure of before installing SIL Aggregator on a Windows Server:\r\n<ul>\r\n<li>SQL Server Standard Edition is installed, or is installed on a remote server you intend to be used with this software.</li>\r\n<li>The IIS server role is added with .Net Framework 4.5, WCF Services, and HTTP Activation, all in the same selection tree in Add Roles and Features Wizard.</li>\r\n<li>You are logged on to the server with an account that has administrative privileges.</li>\r\n<li>You are logged on to the server with an account that has sysadmin privileges on the SQL Server, if Windows Authentication is desired.  Or, if SQL Authentication is desired you have the password for an account that has SQL administrative privileges.</li>\r\n<li>You have a valid SSL certificate that you want to use to host this software\u2019s web service.  And the name of the certificate matches the name of the server.</li>\r\n</ul>\r\n<br></br>\r\nTo install the software:\r\n<ul>\r\n<li>Download both files, Setup.exe and Microsoft.SILA.MSI.msi, into the same local directory.</li>\r\n<li>Double-click the Setup.exe to start the installation.</li>\r\n<li>Click Next on the welcome window. </li>\r\n<li>If you accept the EULA, check the box accepting the agreement and then click Next.</li>\r\n<li>In Choose Features, select Install Software Inventory Logging Aggregator and Reporting Module, and then click Next.</li>\r\n<li>After all prerequisites are verified, click Next.</li>\r\n<li>In Choose an Account Type, select either local user or gMSA depending on your preference.</li>\r\n<li>In Choose a SQL Server window, enter the SQL Server where your SQL instance is installed, or \"localhost,\" if it is installed on the local server.</li>\r\n<li>Select the authentication type and click Verify SQL.</li>\r\n<li>Click Next, and then in Internet Information Services Server Details, select a port number or keep the default.</li>\r\n<li>Browse for the .pfx file location, type the password for the .pfx file, and then click Next.</li>\r\n<li>The final screen will show installation progress.  Once completed successfully, click Finish.</li>\r\n</ul>\r\n<br></br>\r\nTo uninstall the software:\r\n<ul>\r\n<li>Open Powershell as an administrator, and then type Stop-SilAggregator.  When the prompt returns, SIL Aggregator has stopped.</li>\r\n<li>Go to Control Panel, click Programs and Features, click Uninstall Programs, click Software Inventory Logging Aggregator, and then click Uninstall at the top.</li>\r\n<li>Software Inventory Logging Aggregator will open a window to prompt you to choose between deleting all data in the database, or keeping all data in the database.  The default selection is to keep (if a reinstall is desired, you can attach to the existing database to pick up where the Aggregator left off).</li>\r\n<li>Select either Keep or Delete, and then click Next.</li>\r\n<li>After the progress bar completes, click Finish.</li>\r\n</ul>\r\n<br></br>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49046",
+    "downloadPreload": true
+}

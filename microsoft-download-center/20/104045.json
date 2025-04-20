@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Graph Connector Agent",
+    "downloadDescription": "Download the Graph Connector Agent used to index on-premises data sources using Microsoft Graph connectors",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GcaInstaller_3.1.7.0.msi",
+            "url": "https://download.microsoft.com/download/3c61390f-42b2-4e61-bd07-4b25b5a69ba1/GcaInstaller_3.1.7.0.msi",
+            "size": "560586752",
+            "version": "3.1.7.0",
+            "datePublished": "3/31/2025 10:26:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Graph Connector Agent can be used to index your favorite on-premises data sources such as File-shares, SQL databases etc. using the Microsoft built Graph connectors. The indexed content will be used to power experiences such as Microsoft Search, Viva Topics and more. Learn more: <a href=\"https://aka.ms/GraphConnectors\">https://aka.ms/GraphConnectors</a>.<br/>\nFor release notes: <a href=\"https://docs.microsoft.com/en-us/microsoftsearch/graph-connector-agent-releases\">https://docs.microsoft.com/en-us/microsoftsearch/graph-connector-agent-releases</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.7.0",
+    "detailsSection_file_name": [
+        "GcaInstaller_3.1.7.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "534.6 MB"
+    ],
+    "detailsSection_file_date": "3/31/2025",
+    "systemRequirementsSection": "<ul>\n<li>.Net Framework 4.7.2</li>\n<li>.NET Core Desktop Runtime 8.0 (x64)</li>\n<li>8 cores, 3 GHz</li>\n<li>16 GB RAM, 5 GB Disk Space for every 1 million items to be indexed</li>\n<li>Network access to data source and internet through port 443</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the latest version of the Graph Connector Agent finstall the software by using the installation wizard. More details here: <a href=\"https://docs.microsoft.com/en-us/microsoftsearch/graph-connector-agent#installation\">https://docs.microsoft.com/en-us/microsoftsearch/graph-connector-agent#installation</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "graph Connector Agent setup",
+            "url": "https://docs.microsoft.com/en-us/microsoftsearch/graph-connector-agent"
+        },
+        {
+            "title": "release notes",
+            "url": "https://docs.microsoft.com/en-us/microsoftsearch/graph-connector-agent-releases"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104045",
+    "downloadPreload": true
+}

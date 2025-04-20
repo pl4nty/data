@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "CLR Roadshow Slides",
+    "downloadDescription": "Slides from the 2005 CLR Roadshow.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CLRUnderTheHood.BradA.ppt",
+            "url": "https://download.microsoft.com/download/2/4/d/24dfac0e-fec7-4252-91b9-fb2310603f14/CLRUnderTheHood.BradA.ppt",
+            "size": "532480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WritingFasterManagedCode.ppt",
+            "url": "https://download.microsoft.com/download/2/4/d/24dfac0e-fec7-4252-91b9-fb2310603f14/WritingFasterManagedCode.ppt",
+            "size": "181760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The CLR team is beginning a series of roadshows, as we want to discover what you, our customers, want to tell us about .NET. Here are the first two slide decks from the roadshow!",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CLRUnderTheHood.BradA.ppt",
+        "WritingFasterManagedCode.ppt"
+    ],
+    "detailsSection_file_size": [
+        "520.0 KB",
+        "177.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PowerPoint 2003 or PowerPoint Viewer 2003<br></br><br></br>\nYou can obtain PowerPoint viewer <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=428d5727-43ab-4f24-90b7-a94784af71a4&DisplayLang=en\">here</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the files to your local machine and open them in PowerPoint 2003.",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Home",
+            "url": "http://msdn.microsoft.com"
+        },
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://msdn.microsoft.com/netframework"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15022",
+    "downloadPreload": true
+}

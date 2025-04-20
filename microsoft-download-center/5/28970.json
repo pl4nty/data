@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 8 Product Guide for Business",
+    "downloadDescription": "Download a detailed guide to the new and improved features in Windows 8 including AppLocker, BitLocker, Windows To Go, and Client Hyper-V.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows 8 Product Guide Business_English.pdf",
+            "url": "https://download.microsoft.com/download/1/d/0/1d049c15-cfbb-4e68-a16d-e1e6bd852564/Windows 8 Product Guide Business_English.pdf",
+            "size": "376238",
+            "version": "1.3",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The Windows 8 Product Guide for Business provides a detailed look at the many new and improved features in Windows 8 that are important to our business customers. This guide can help businesses understand how Windows 8 enables better business tablets, provides new possibilities for mobile productivity, enhances end-to-end security, and delivers manageability and virtualization enhancements.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3",
+    "detailsSection_file_name": [
+        "Windows 8 Product Guide Business_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "367.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access this file you will need Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "Click the Download button to open or save the file. ",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Resources for IT Professionals",
+            "url": "http://technet.microsoft.com/en-us/windows/hh771457.aspx?ITPID=dwnload"
+        },
+        {
+            "title": "microsoft Windows Site",
+            "url": "http://windows.microsoft.com/en-US/windows/home"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28970",
+    "downloadPreload": true
+}

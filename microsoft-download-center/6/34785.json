@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Thin PC (KB2728894)",
+    "downloadDescription": "Resolves an issue that might occur with the Dialog Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2728894-v2-x86.msu",
+            "url": "https://download.microsoft.com/download/4/2/a/42a3cd9f-0934-40d4-9c29-7f96a5515c85/Windows6.1-KB2728894-v2-x86.msu",
+            "size": "285668",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2728894 fixes the following issue:\r\n<br></br>\r\nWhere occasionally customer applications stop responding due to a conflict in the Dialog Filter.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2728894",
+        "name": "KB2728894"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2728894-v2-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "279.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Thin PC",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Thin PC "
+    ],
+    "installInstructionSection": "This update is installed by executing  file <b>Windows6.1-KB2728894-v2-x86.msu</b> on a Windows Thin PC image.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34785",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 1801+ Integration Pack for IBM Tivoli Netcool/OMNIbus ",
+    "downloadDescription": "The Integration Pack for IBM Tivoli Netcool/OMNibus is an add-on for System Center 1801 Orchestrator that enables you to create activities within runbooks that make requests to the IBM Tivoli Netcool/OMNibus products to get data or perform functions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Integration_Pack_for_IBM_Netcool_OMNIbus.EXE",
+            "url": "https://download.microsoft.com/download/d/d/f/ddf2c432-2ecc-4df2-9c69-976c3392e89d/System_Center_Integration_Pack_for_IBM_Netcool_OMNIbus.EXE",
+            "size": "529072",
+            "version": "7.4.7.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for IBM Tivoli Netcool/OMNibus is an add-on for System Center 1801 Orchestrator that enables you to create activities within runbooks that make requests to the IBM Tivoli Netcool/OMNibus products to get data or perform functions.<br />\n<br />\n<b>Feature Summary</b><br />\nThe Integration Pack includes the following activities: <br />\n<ul>\n<li> Create Alert </li>\n<li> Delete Alert</li>\n<li> Get Alerts</li>\n<li> Monitor Alert</li>\n<li> Update Alert</li>\n</ul>\n<br />\n<b>Release History</b><br />\n<ul>\n<li>12 February 2018 - Original English release, version 7.3.20.0 </li>\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.4.7.0",
+    "detailsSection_file_name": [
+        "System_Center_Integration_Pack_for_IBM_Netcool_OMNIbus.EXE"
+    ],
+    "detailsSection_file_size": [
+        "516.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 1801 - Orchestrator and future releases\n</ul><br/>\r\n<ul>\r\n<b>Other Requirements:</b> <br/>\r\n<ul>\r\n<li> RAM \u2013 minimum 1GB recommended 2GB </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n<li> .Net 3.5 </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe. <br/><br/>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Homepage",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "ibm Tivoli Netcool Integration Pack",
+            "url": "https://technet.microsoft.com/en-us/system-center-docs/orch/manage/tivoli-netcool-omnibus-integration-pack"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56608",
+    "downloadPreload": true
+}

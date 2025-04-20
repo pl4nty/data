@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Information Protection Migration Guidance",
+    "downloadDescription": "Scripts and tools to support AD RMS migration to Azure Information Protection",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TpdUtil.zip",
+            "url": "https://download.microsoft.com/download/c/4/9/c49acb1b-5169-4d33-874d-10c8b056b3bd/TpdUtil.zip",
+            "size": "1707117",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:05:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Migration-Scripts.zip",
+            "url": "https://download.microsoft.com/download/c/4/9/c49acb1b-5169-4d33-874d-10c8b056b3bd/Migration-Scripts.zip",
+            "size": "4900",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:05:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Supporting scripts and tools to help you migrate on-premises Active Directory Rights Management Services (AD RMS) to Azure Information Protection (AIP), while preserving access to protected content.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "TpdUtil.zip",
+        "Migration-Scripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "4.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2\r\nFor information about the supported client operating systems that can be migrated from AD RMS to Azure Information Protection, see https://docs.microsoft.com/rights-management/get-started/requirements-client-devices. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 7"
+    ],
+    "installInstructionSection": "Use as directed in the migration instructions: https://docs.microsoft.com/rights-management/plan-design/migrate-from-ad-rms-to-azure-rms\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Information Protection Administration Tool",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=257721"
+        },
+        {
+            "title": "migrating from AD RMS to Azure Information Protection",
+            "url": "https://docs.microsoft.com/rights-management/plan-design/migrate-from-ad-rms-to-azure-rms"
+        },
+        {
+            "title": "what is Information Protection",
+            "url": "https://docs.microsoft.com/rights-management/understand-explore/what-is-azure-rms"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45505",
+    "downloadPreload": true
+}

@@ -1,0 +1,112 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2005 Service Pack 1 Crystal Reports Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual Studio 2005 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs80sp1-kb937061-x86.exe",
+            "url": "https://download.microsoft.com/download/4/3/9/439004c1-84e9-4c0d-ae22-1294e2534886/VS80sp1-KB937061-X86.exe",
+            "size": "12870552",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:07:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual Studio 2005 Service Pack 1 and gain complete control over it. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB937061",
+        "name": "KB937061"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-052",
+        "name": "MS07-052"
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vs80sp1-kb937061-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Professional x64 Edition ",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows 2000 Professional Edition ",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Vista Home Premium",
+        "Windows Vista Business",
+        "Windows Server 2003, Web Edition",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Vista Home Basic",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows XP Tablet PC Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Advanced Server",
+        "Windows XP Home Edition ",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Vista Ultimate",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Vista Enterprise"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?linkid=93309\">KB937061</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 937061",
+            "url": "http://go.microsoft.com/fwlink/?linkid=93309"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15090",
+    "downloadPreload": true
+}

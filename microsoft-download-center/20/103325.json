@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "HID Over SPI Protocol Specification version 1.0",
+    "downloadDescription": "Describes how to use Human Interface Device (HID) class devices over a simple peripheral bus transport, with an immediate focus on SPI.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HidSpiProtocolSpec.pdf",
+            "url": "https://download.microsoft.com/download/c/a/0/ca07aef3-3e10-4022-b1e9-c98cea99465d/HidSpiProtocolSpec.pdf",
+            "size": "1250272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes how to use Human Interface Device (HID) class devices over a simple peripheral bus transport, with an immediate focus on SPI. This specification shares some similar concepts with the USB HID specification, but they are not reused and are not intended to be identical. The HID USB, HID I2C, or HID Bluetooth Specifications are recommended pre-reading for understanding the content of this document. See the referenced documents section at the beginning of this document.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HidSpiProtocolSpec.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and view PDF file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103325",
+    "downloadPreload": true
+}

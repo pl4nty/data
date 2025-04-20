@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Foundation 2010 design samples: Collaboration with classic authentication or with claims-based authentication ",
+    "downloadDescription": "Design samples illustrating collaboration sites of SharePoint Foundation 2010 and using two forms of authentication.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Foundation_2010_Design Sample_Collaboration_ClassicAuth.pdf",
+            "url": "https://download.microsoft.com/download/f/a/a/faa24e13-fc79-4309-9320-6c1034517180/Foundation_2010_Design Sample_Collaboration_ClassicAuth.pdf",
+            "size": "529987",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Foundation_2010_Design Sample_Collaboration_ClaimsAuth.vsd",
+            "url": "https://download.microsoft.com/download/f/a/a/faa24e13-fc79-4309-9320-6c1034517180/Foundation_2010_Design Sample_Collaboration_ClaimsAuth.vsd",
+            "size": "8075264",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Foundation_2010_Design Sample_Collaboration_ClassicAuth.xps",
+            "url": "https://download.microsoft.com/download/f/a/a/faa24e13-fc79-4309-9320-6c1034517180/Foundation_2010_Design Sample_Collaboration_ClassicAuth.xps",
+            "size": "871707",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Foundation_2010_Design Sample_Collaboration_ClaimsAuth.xps",
+            "url": "https://download.microsoft.com/download/f/a/a/faa24e13-fc79-4309-9320-6c1034517180/Foundation_2010_Design Sample_Collaboration_ClaimsAuth.xps",
+            "size": "618597",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Foundation_2010_Design Sample_Collaboration_ClassicAuth.vsd",
+            "url": "https://download.microsoft.com/download/f/a/a/faa24e13-fc79-4309-9320-6c1034517180/Foundation_2010_Design Sample_Collaboration_ClassicAuth.vsd",
+            "size": "5207552",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Foundation_2010_Design Sample_Collaboration_ClaimsAuth.pdf",
+            "url": "https://download.microsoft.com/download/f/a/a/faa24e13-fc79-4309-9320-6c1034517180/Foundation_2010_Design Sample_Collaboration_ClaimsAuth.pdf",
+            "size": "388043",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These design samples apply almost all of the logical architecture components and show how the components are incorporated into the overall design. The two samples show the same services and sites, but incorporate different authentication methods. One uses classic authentication and one uses claims-based authentication.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Foundation_2010_Design Sample_Collaboration_ClassicAuth.pdf",
+        "Foundation_2010_Design Sample_Collaboration_ClaimsAuth.vsd",
+        "Foundation_2010_Design Sample_Collaboration_ClassicAuth.xps",
+        "Foundation_2010_Design Sample_Collaboration_ClaimsAuth.xps",
+        "Foundation_2010_Design Sample_Collaboration_ClassicAuth.vsd",
+        "Foundation_2010_Design Sample_Collaboration_ClaimsAuth.pdf"
+    ],
+    "detailsSection_file_size": [
+        "517.6 KB",
+        "7.7 MB",
+        "851.3 KB",
+        "604.1 KB",
+        "5.0 MB",
+        "378.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>System requirements</b>: Windows 7, Windows Server 2003, Windows Server 2008, Windows XP, and Windows Vista<br/>\r\n\r\n<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007 or Microsoft Visio 2010. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2010: Visio Viewer</a> to view the model.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href =\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essential Pack</a>.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\"<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\nTips for using posters<br/>\r\nIf you have a plotter, you can print these posters in their full size.  If you do not have plotter, use the following steps to print on smaller paper.<br/>\r\n<b>To print posters on smaller paper </b><br/>\r\n<ol><li>Open the poster in Office Visio.</li>\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>.</li>\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down. </li>\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>.</li>\r\n<li>On the <b>File</b> menu, click <b>Print</b>. </li>\r\n</ol>\r\nIf you want to create posters that use the same symbols as these posters, you can download Visio stencils for Office IT Pro posters (http://go.microsoft.com/fwlink/?LinkId=148756).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14842",
+    "downloadPreload": true
+}

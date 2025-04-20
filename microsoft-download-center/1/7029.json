@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "C# Language Specification 5.0",
+    "downloadDescription": "The C# Language Specification provides a complete description of the C# language 5.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CSharp Language Specification.docx",
+            "url": "https://download.microsoft.com/download/0/b/d/0bda894f-2ccd-4c2c-b5a7-4eb1171962e5/CSharp Language Specification.docx",
+            "size": "791626",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The C# Language Specification provides a complete description of the C# language 5.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "CSharp Language Specification.docx"
+    ],
+    "detailsSection_file_size": [
+        "773.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The document download requires 1 MB of disk space to download and install. It also requires Microsoft Word or <a href=\"http://go.microsoft.com/fwlink/?LinkID=47975\">Microsoft Word Viewer</a> to view.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows 98",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download link to start the download.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</li>\r\n</ol> ",
+    "relatedResourcesSection": [
+        {
+            "title": "c# Language Specification 3.0",
+            "url": "http://download.microsoft.com/download/3/8/8/388e7205-bc10-4226-b2a8-75351c669b09/CSharp%20Language%20Specification.doc"
+        },
+        {
+            "title": "visual C# Developer Center",
+            "url": "http://csharp.net"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7029",
+    "downloadPreload": true
+}

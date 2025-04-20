@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Social Media Conversation Corpus",
+    "downloadDescription": "A collection of 12,696 Tweet Ids representing 4,232 three-step conversational snippets extracted from Twitter logs. Last published: June 1, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSRSocialMediaConversationCorpus.zip",
+            "url": "https://download.microsoft.com/download/4/8/d/48dc89f7-0afc-4145-9c6b-b6bed2ce7665/MSRSocialMediaConversationCorpus.zip",
+            "size": "111357",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A collection of  12,696 Tweet Ids representing 4,232 three-step conversational snippets extracted from Twitter logs.  Each row in the dataset represents a single context-message-response triple that has been evaluated by crowdsourced annotators as scoring an average of 4 or higher on a 5-point Likert scale measuring quality of the response in the context.  The data has been randomly binned into tuning (development) and test sets, comprising 2118 and 2114 triples respectively.  It is released to the natural language processing community for academic research purposes only.  In order to access the underlying tweets and related metadata, you will need to call the Twitter API.  If you use this material in your research, we ask that you cite the following paper:  Alessandro Sordoni, Michel Galley, Michael Auli, Chris Brockett, Yangfeng Ji, Meg Mitchell, Jian-Yun Nie, Jianfeng Gao, and Bill Dolan, A Neural Network Approach to Context-Sensitive Generation of Conversational Responses, Conference of the North American Chapter of the Association for Computational Linguistics \u2013 Human Language Technologies (NAACL-HLT 2015), June 2015.  Additional information about this and related projects may be found at  http://research.microsoft.com/en-us/projects/convo/.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSRSocialMediaConversationCorpus.zip"
+    ],
+    "detailsSection_file_size": [
+        "108.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52375",
+    "downloadPreload": true
+}

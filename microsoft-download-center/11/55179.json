@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Connectors v5.0 for Oracle and Teradata",
+    "downloadDescription": "Download the SSIS Connectors v5.0 for Oracle and Teradata that provide additional value for SQL Server Integration Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISOraAdaptersSetup.msi",
+            "url": "https://download.microsoft.com/download/e/1/3/e13db842-0218-48ec-bbc8-9c9865f8b41f/AttunitySSISOraAdaptersSetup.msi",
+            "size": "2742784",
+            "version": "5.0",
+            "datePublished": "7/15/2024 4:51:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISOraAdaptersSetupX64.msi",
+            "url": "https://download.microsoft.com/download/e/1/3/e13db842-0218-48ec-bbc8-9c9865f8b41f/AttunitySSISOraAdaptersSetupX64.msi",
+            "size": "4825088",
+            "version": "5.0",
+            "datePublished": "7/15/2024 4:51:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISTeraAdaptersSetupX64.msi",
+            "url": "https://download.microsoft.com/download/e/1/3/e13db842-0218-48ec-bbc8-9c9865f8b41f/AttunitySSISTeraAdaptersSetupX64.msi",
+            "size": "5997056",
+            "version": "5.0",
+            "datePublished": "7/15/2024 4:51:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISTeraAdaptersSetup.msi",
+            "url": "https://download.microsoft.com/download/e/1/3/e13db842-0218-48ec-bbc8-9c9865f8b41f/AttunitySSISTeraAdaptersSetup.msi",
+            "size": "3363328",
+            "version": "5.0",
+            "datePublished": "7/15/2024 4:51:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b> Microsoft Connector Version 5.0 for Oracle by Attunity</b> - The Oracle source and destination components are written to achieve optimal performance when loading data into Oracle or unloading data from Oracle in the context of Microsoft SSIS.<br />\n<br />\n<b> Microsoft Connector Version 5.0 for Teradata by Attunity </b> - The components are written to achieve optimal performance when loading data into Teradata or unloading data from Teradata in the context of Microsoft SSIS. <br/>\r\n<br/>\r\nMicrosoft SSIS Connectors by Attunity Version 5.0 is a minor release. It supports SQL Server 2017 Integration Services and includes bug fixes and support for updated Oracle and Teradata product releases. <br/> <br />\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "AttunitySSISOraAdaptersSetup.msi",
+        "AttunitySSISOraAdaptersSetupX64.msi",
+        "AttunitySSISTeraAdaptersSetupX64.msi",
+        "AttunitySSISTeraAdaptersSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "4.6 MB",
+        "5.7 MB",
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b> Required operating environment  </b>: Enterprise or Developer edition of SQL Server 2017 Integration Services </li></ul>\r\n\r\n<ul><li><b> Supported Oracle databases </b>: Oracle 10.x; Oracle 11.x; Oracle 12c </li></ul>\r\n<ul><li><b> Supported Teradata databases </b>: Teradata Database 14.10; Teradata Database 15.00; Teradata Database 15.10; Teradata Database 16.00; Teradata Database 16.10</li></ul>\r\n<ul><li><b> Supported TPT API versions </b>: 14.10; 15.00; 15.10</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ul><li>Download the appropriate file by clicking the correct DOWNLOAD button as outlined below, then run the downloaded file to install that package.<br></br>\n</li></ul>\r\n\r\n<ul><li><b>Microsoft Connector Version 5.0 for Oracle</b>\nThe Microsoft Connector for Oracle is a set of managed components for transferring data from or to an Oracle database. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2017 Integration Services and will only operate in those environments. To install the component, run the platform-specific installer for x86 or x64 computers respectively. Read the installation topic in the Help file for installation prerequisites and additional information.\n<br></br>\nX86 Package (AttunitySSISOraAdaptersSetup.msi)  <br></br>\r\nX64 Package (AttunitySSISOraAdaptersSetupX64.msi)\r\n</li></ul><br></br>\r\n<ul><li><b>Microsoft Connector Version 5.0 for Teradata</b>\nThe Microsoft Connector for Teradata is a set of managed components for transferring data from or to Teradata database. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2017 Integration Services and will only operate in those environments. To install the component, run the platform-specific installer for x86 or x64 computers respectively. Read the installation topic in the Help file for installation prerequisites and additional information.\n<br></br>\nX86 Package (AttunitySSISTeraAdaptersSetup.msi) <br></br>\r\nX64 Package (AttunitySSISTeraAdaptersSetupX64.msi) \r\n\n</li></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "attunity v2.0",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=29283"
+        },
+        {
+            "title": "attunity v3.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=44582"
+        },
+        {
+            "title": "attunity v4.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=52950"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55179",
+    "downloadPreload": true
+}

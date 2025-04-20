@@ -1,0 +1,140 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6 Language Pack for Windows RT",
+    "downloadDescription": "The .NET Framework 4.6 Language Pack contains localized resources for supported languages.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme2.htm",
+            "url": "https://download.microsoft.com/download/6/f/4/6f4ccbd4-0bfc-4e9c-94cc-cb405a506e59/readme2.htm",
+            "size": "459",
+            "version": "4.6",
+            "datePublished": "7/15/2024 3:52:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.6 Language Pack contains translated error messages and other UI text for languages other than English. If you don't install a language pack, this text is displayed in English. You can install multiple language packs on one computer, each for a different language. \nYou need to download and install the .NET Framework 4.6 prior to installing the language packs. You can find the .NET Framework 4.6 <a href=\"http://go.microsoft.com/fwlink/?LinkId=528259\">here</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6",
+    "detailsSection_file_name": [
+        "readme2.htm"
+    ],
+    "detailsSection_file_size": [
+        "459 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Supported Operating Systems:</b></li>\n<ul>\n<li>Windows RT</li>\n</ul>\n<li><b>Minimum Hardware Requirements:</b></li>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM</li>\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows RT"
+    ],
+    "installInstructionSection": "<ul>\n<li>On this page, choose the <b>Download</b> button.</li>\n <ul>\n<li>To install the software now, choose the <b>Run</b> button.</li>\n<li>To install the software later, choose the <b>Save</b> button.</li>\n</ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=528253\"><b>KB3045564</b></a> for more information.\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=528229\">.NET Framework 4.6 Readme File</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48151",
+    "downloadPreload": true
+}

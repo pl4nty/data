@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: Business Portal Administrator's Guide",
+    "downloadDescription": "This guide includes information for administrators who set up and provide access to Business Portal 6.0 or 6.1, manage its daily use, create back office queries, and generate reports. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BusinessPortalAdminGuide.pdf",
+            "url": "https://download.microsoft.com/download/f/2/3/f2312443-d105-426d-9330-4b056a97be13/BusinessPortalAdminGuide.pdf",
+            "size": "2005278",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide also describes the Business Data Catalog and includes reference information about users and roles.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "BusinessPortalAdminGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF files, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to download the file to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38822",
+    "downloadPreload": true
+}

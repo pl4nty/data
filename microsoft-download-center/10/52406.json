@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Unification Grammar Sentence Realization Algorithms",
+    "downloadDescription": "Prolog implementations of two versions of the unfication grammar sentence realization aglorithm described in \"A Complete, Efficient Sentence Realization Algorithm for Unification Grammar,\" appearing in the Proceedings of the International Natural Language Generation Conference, INLG'02, plus other associated code and data files. Last published: May 6, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ug-sentence-realization.tar.gz",
+            "url": "https://download.microsoft.com/download/e/0/b/e0b45896-f4fd-4bd9-ac37-880a0a22ce19/ug-sentence-realization.tar.gz",
+            "size": "31199",
+            "version": "1.0",
+            "datePublished": "3/15/2024 4:07:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Prolog implementations of two versions of the unfication grammar sentence realization aglorithm described in \"A Complete, Efficient Sentence Realization Algorithm for Unification Grammar,\" appearing in the Proceedings of the International Natural Language Generation Conference, INLG'02, plus other associated code and data files.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ug-sentence-realization.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "30.5 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52406",
+    "downloadPreload": true
+}

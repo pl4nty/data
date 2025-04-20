@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Service Dispatch in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Service Dispatch module in Microsoft Dynamics SL 2015.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_SD.zip",
+            "url": "https://download.microsoft.com/download/a/1/9/a19f9776-6476-4bd0-80fc-78ac1b723034/SL2015_ENUS_SD.zip",
+            "size": "10945637",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bAudience\r\n   \r\n      <b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Service Dispatch module in Microsoft Dynamics SL. At Training Material Completion\r\n   After reviewing this training, individuals will have:<ul style=\"font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;line-height:16px;\"><li>Understand the integration of Service Dispatch with other Microsoft Dynamics SL modules</li><li>Explain the setup screens available in the Service Dispatch module.</li><li>Understand the process for creating, identifying, and canceling a service call.</li><li>Use the Graphical Dispatch Board for dispatching service calls</li><li>Access and use the various inquiry screens in Service Dispatch.</li></ul>\r\n      <b></b> Prerequisites\r\n   \r\n      <b></b>Before reviewing this training, it is recommended that individuals have:<ul style=\"font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;line-height:16px;\"><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li>\r\n      \r\n   </ul>\r\n   \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_SD.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.4 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101765",
+    "downloadPreload": true
+}

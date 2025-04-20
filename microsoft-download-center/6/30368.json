@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Design Sample: Extranet with Dedicated Zones for Authentication for SharePoint 2013",
+    "downloadDescription": "This design sample illustrates many top-level project sites with vanity URLs by using host-named sites for each project site (instead of organizing project sites underneath a top-level site collection).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sps-2013-design-sample-extranet.vsd",
+            "url": "https://download.microsoft.com/download/2/3/a/23a8a1d2-6b55-4c5c-8fd0-a90a70fb7417/sps-2013-design-sample-extranet.vsd",
+            "size": "4827136",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sps-2013-design-sample-extranet.pdf",
+            "url": "https://download.microsoft.com/download/2/3/a/23a8a1d2-6b55-4c5c-8fd0-a90a70fb7417/sps-2013-design-sample-extranet.pdf",
+            "size": "329166",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This design sample illustrates many top-level project sites with vanity URLs by using host-named sites for each project site (instead of organizing project sites underneath a top-level site collection). One advantage of using host-named site collections in this manner is creating additional isolation between domain URLs, which might be desired in a partner collaboration solution. However, the tradeoff of this approach is the additional costs of managing a greater number of host names, including managing SSL certificates. Also, if SAML authentication is used, additional configuration is required.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sps-2013-design-sample-extranet.vsd",
+        "sps-2013-design-sample-extranet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB",
+        "321.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30368",
+    "downloadPreload": true
+}

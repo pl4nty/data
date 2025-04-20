@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MicrosoftAzureAutoUpdate.msi_9.52.6522.1",
+    "downloadDescription": "MicrosoftAzureAutoUpdate.msi_9.52.6522.1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftAzureAutoUpdate.msi",
+            "url": "https://download.microsoft.com/download/0/b/5/0b57dea8-5347-4288-9b4d-bf99b9623743/MicrosoftAzureAutoUpdate.msi",
+            "size": "2183168",
+            "version": "9.52.0",
+            "datePublished": "6/15/2023 4:37:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MicrosoftAzureAutoUpdate.msi_9.52.6522.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.52.0",
+    "detailsSection_file_name": [
+        "MicrosoftAzureAutoUpdate.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "6/15/2023",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104770",
+    "downloadPreload": true
+}

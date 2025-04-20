@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix for VMM 2012 R2- Test replica failover and cmdlet generated for VLAN isolation issues",
+    "downloadDescription": "Hotfix for VMM 2012 R2- Test replica failover and cmdlet generated for VLAN isolation issues",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "kb4012720_AdminConsole_amd64.msp",
+            "url": "https://download.microsoft.com/download/f/2/e/f2e5e622-d4c3-492c-9d18-ea31ca944be6/kb4012720_AdminConsole_amd64.msp",
+            "size": "49143808",
+            "version": "3.2.8292.20",
+            "datePublished": "7/15/2024 4:35:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "kb4012720_AdminConsole_i386.msp",
+            "url": "https://download.microsoft.com/download/f/2/e/f2e5e622-d4c3-492c-9d18-ea31ca944be6/kb4012720_AdminConsole_i386.msp",
+            "size": "49061888",
+            "version": "3.2.8292.20",
+            "datePublished": "7/15/2024 4:35:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "kb4014682_vmmserver_amd64.msp",
+            "url": "https://download.microsoft.com/download/f/2/e/f2e5e622-d4c3-492c-9d18-ea31ca944be6/kb4014682_vmmserver_amd64.msp",
+            "size": "186404864",
+            "version": "3.2.8292.20",
+            "datePublished": "7/15/2024 4:35:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n<br />\r\nThis article describes the bug fixes that are included in this hotfix - <br />\r\n <b>Important</b>:This hotfix is only applicable for deployments that have <a href=\"https://support.microsoft.com/en-in/help/3209585\">Update Rollup 12</a> for System Center 2012 R2 Virtual Machine Manager.<br />\r\n <br />\r\n<b><u>Issues that are fixed in this hotfix-</u></b><br />\r\n <ul>\r\n <li>When the test VM is deleted from ASR or VMM after successful verification of test failover for Hyper-V replication, its causing the deletion of other replicated data/files (which are not related to the VM under test). In case of ASR, this results in critical state indication for the other replicated VMs.\r\n</li>\r\n <li>The cmdlet generated for VLAN isolation VM network was not correct. This is fixed and now the VLAN information is fetched from VM subnet for all VM Network isolation type except NoIsolation.\r\n</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.2.8292.20",
+    "detailsSection_file_name": [
+        "kb4012720_AdminConsole_amd64.msp",
+        "kb4012720_AdminConsole_i386.msp",
+        "kb4014682_vmmserver_amd64.msp"
+    ],
+    "detailsSection_file_size": [
+        "46.9 MB",
+        "46.8 MB",
+        "177.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This hotfix is only applicable for deployments that have <a href=\"https://support.microsoft.com/en-in/help/3209585\">Update Rollup 12</a> for System Center 2012 R2 Virtual Machine Manager.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To install the update packages, run the following command from an elevated command prompt: <br/>\r\n<br/>\r\n<b>msiexec.exe /update packagename </b><br/>\r\n<br/>\r\nFor example, to install this hotfix package for a System Center 2012 R2 Virtual Machine Manager - Server (KB4014682), run the following command:<br/>\r\n<br/>\r\n<b>msiexec.exe /update kb4014682_vmmserver_amd64.msp</b><br/>\r\n<br/>\r\n<b>Notes</b>\r\n<br/>\r\n <ul>\r\n <li>Performing an update to on the VMM server requires installing the VMM Server and Console updates. For more information, see the following topic on TechNet:\r\n  &nbsp;<a href=\"https://technet.microsoft.com/en-us/library/mt695663(v=sc.12).aspx\">How to install, remove, or verify update rollups for System Center 2012 VMM</a>\r\n </li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54854",
+    "downloadPreload": true
+}

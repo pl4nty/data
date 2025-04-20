@@ -1,0 +1,224 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory from on-premises to the cloud \u2013 Azure AD whitepapers",
+    "downloadDescription": "Identity management, provisioning, role management, and authentication are key services both on-premises and through the (hybrid) cloud. Unsurprisingly, identity becomes a service where identity \u201cbridges\u201d in the cloud talk to on-premises directories or the directories themselves move and/or are located in the cloud.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Towards-Identity-as-a-Service.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/Towards-Identity-as-a-Service.docx",
+            "size": "1623046",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Leverage-Multi-Factor-Authentication-with-AAD.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/Leverage-Multi-Factor-Authentication-with-AAD.docx",
+            "size": "1521396",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Leverage-Multi-Factor-Authentication-Server-on-your-premises.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/Leverage-Multi-Factor-Authentication-Server-on-your-premises.docx",
+            "size": "3488004",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Leverage-AAD-for-modern-business-apps.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/Leverage-AAD-for-modern-business-apps.docx",
+            "size": "4490870",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Introduce-AAD-B2B-collaboration.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/Introduce-AAD-B2B-collaboration.docx",
+            "size": "3419078",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Azure-AD-Windows-10-better-together.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/Azure-AD-Windows-10-better-together.docx",
+            "size": "5682857",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "An-overview-of-AAD.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/An-overview-of-AAD.docx",
+            "size": "5428341",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "An-overview-of-AAD-B2C.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/An-overview-of-AAD-B2C.docx",
+            "size": "3729654",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AD-from-on-premises-to-the-cloud.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AD-from-on-premises-to-the-cloud.docx",
+            "size": "371378",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Single-Sign-On-with-Shibboleth-2.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Single-Sign-On-with-Shibboleth-2.docx",
+            "size": "3621770",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-7.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-7.docx",
+            "size": "2792461",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-6.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-6.docx",
+            "size": "2828453",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-5.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-5.docx",
+            "size": "5088282",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-4bis.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-4bis.docx",
+            "size": "5702218",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-4.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-4.docx",
+            "size": "5776515",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-3.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-3.docx",
+            "size": "3360276",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-2.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-2.docx",
+            "size": "2412844",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AAD-Office-365-Seamless-Sign-In-Part-1.docx",
+            "url": "https://download.microsoft.com/download/f/c/a/fca7c6e3-7153-4fb1-9825-0b1bb26f14e0/AAD-Office-365-Seamless-Sign-In-Part-1.docx",
+            "size": "414112",
+            "version": "2.5",
+            "datePublished": "7/15/2024 3:31:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Identity management, provisioning, role management, and authentication are key services both on-premises and through the (hybrid) cloud. \r\nWith: <br/>\r\n<ul>\r\n <li>The Bring Your Own Apps (BYOA) for the cloud and the Software as a Service (SaaS) applications,</li> \r\n <li>The desire to better collaborate a la Facebook with the \u201csocial\u201d enterprise,</li> \r\n <li>The need to support and integrate with social networks, which lead to a Bring Your Own Identity (BYOI) trend, </li> \r\n</ul>\r\n  \r\nIdentity becomes a service where identity \u201cbridges\u201d in the cloud talk to on-premises directories or the directories themselves move and/or are located in the cloud. <br/><br/>\r\nActive Directory (AD) is a Microsoft brand for identity related capabilities. Within on-premises world, Windows Server AD provides a set of identity capabilities and services and is hugely popular (88% of Fortune 1000 and 95% of enterprises use AD). <b>Azure AD is AD reimagined for the cloud</b>, designed to help you solving the new identity and access challenges that come with the shift to a cloud-centric, multi-tenant world. <br/><br/>\r\n\r\nAzure AD is the <b>identity foundation for many Microsoft services like Office 365, Dynamics 365, Intune</b>, and others. Azure AD is a comprehensive identity and access management cloud solution, utilizing the enterprise-grade quality and proven capabilities of Windows AD on-premises.  It combines core directory services, advanced identity governance, security and application access management. <br/><br/>\r\n\r\nThis series of whitepapers on Windows Azure AD offerings comprises:\r\n<ul>\r\n <li><b>Towards Identity as a Service (IDaaS) - Use cloud power to solve cloud era challenges</b>.</li>\r\n <li><b>Active Directory from the on-premises to the cloud (updated)</b>.</li>\r\n <li><b>An overview of Azure AD</b>.</li>\r\n <li><b>An overview of Azure AD B2C </b>.</li>\r\n <li><b>Introducing Azure AD B2B collaboration</b>.</li>\r\n <li><b>Azure AD & Windows 10: Better together for Work or School</b>.</li>\r\n <li><b>Azure AD/Office 365 seameless sign-in</b>.</li>\r\n <li><b>Azure AD/Office 365 single sign-on with Shibboleth 2</b>.</li>\r\n <li><b>Leverage Multi-Factor Authentication with Azure AD</b>.</li>\r\n <li><b>Leverage Multi-Factor Authentication Server on your premises</b>.</li>\r\n <li><b>Leverage Azure AD for modern Business Applications</b>.</li>\r\n</ul>\r\n    \r\nThe <b>Torwards Identity as a Service (IDaaS) - Use cloud power to solve cloud era challenges</b> whitepaper (<i>Towards-Identity-as-a-Service.docx</i>) explores the reasons why organizations of any size will increasingly use and rely on cloud services to solve cloud era problems, and thus why a new service-based model will emerge for identity combining more advanced capabilities with externalization of operations to achieve reduction in risk, effort and cost. As such, through the analysis of both the business-to-employees (B2E), business-to-business (B2B), and business-to-consumers (B2C) scenarios, and their main characteristics as far as identity is at least concerned, the document discusses why IDaaS \u2013 a service combining identity, security (and privacy), personalization and directory \u2013 will require that we move beyond the models of identity management that have guided our thinking to date, along with the possible (technical) paths. IDaaS will eventually manage everything from employees and customers to the Internet of Things (IoT).<br/><br/>\r\n\r\nAcknowledging the trends that sustain the above new identity model and the role of IDaaS, the <b>Active Directory from the on-premises to the cloud</b> whitepaper (<i>AD-from-on-premises-to-the-cloud.docx</i>) presents an overview of the Microsoft\u2019s identity offerings in such an hybrid era.<br/><br/>\r\n\r\nThe <b>An overview of Azure AD</b> whitepaper (<i>An-overview-of-AAD.docx</i>) further presents the capabilities that can be leveraged to centralize the identity management needs of your modern business applications, and your SaaS subscriptions, whether they are cloud-based, hybrid, or even on-premises. The four edition of Azure AD is a complete offering that can help you take advantage of your on-premises existing investment, fully outsource to the cloud your users (and devices) management and anything in between.  For enterprises with more demanding needs an advanced offering, Azure AD Basic and eventually Azure AD Premium P1 and Azure AD Premium P2 help complete the set of capabilities that this identity and access management solution delivers. <br/><br/>\r\n\r\nIn addition, the <b>An overview of Azure AD B2C</b> whitepaper (<i>An-overview-of-AAD-B2C.docx</i>) presents the service for business-to-consumer (B2C): Azure AD B2C to embrace identity management (IDM) of individual consumers. <br/><br/>\r\n\r\nSimilarly, the <b>Introducing Azure AD B2B collaboration</b> whitepaper (<i>Introduce-AAD-B2B-collaboration.docx</i>) presents the new feature Azure AD B2B collaboration that can be used with on the above editions to embrace identity management (IDM) of partner and supply chains, and manage business-to-business (B2B) collaboration.  <br/><br/>\r\n\r\nThe <b>Azure AD & Windows 10: Better together for Work or School</b> whitepaper (<i>Azure-AD-Windows-10-better-together.docx</i>) introduces how Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education editions will enable a device to connect to your Azure AD tenancy to seamlessly access SaaS applications in the cloud and traditional applications on-premises, and all of that without needing the traditional WSAD domains on-premises if you want to. It depicts the related experiences whether you are cloud-only, hybrid or have an on-premises AD infrastructure as well as how to enable them. <br/><br/>\r\n\r\nThe <b>Azure AD/Office 365 seamless sign-in</b> whitepaper in seven parts (<i>AAD-Office-365-Seamless-Sign-In-Part-1.docx</i>, <i>AAD-Office-365-Seamless-Sign-In-Part-2.docx</i>, <i>AAD-Office-365-Seamless-Sign-In-Part-3.docx</i>, <i>AAD-Office-365-Seamless-Sign-In-Part-4.docx/AAD-Office-365-Seamless-Sign-In-Part-4bis.docx</i>, <i>AAD-Office-365-Seamless-Sign-In-Part-5.docx</i>, <i>AAD-Office-365-Seamless-Sign-In-Part-6.docx</i>, and <i>AAD-Office-365-Seamless-Sign-In-Part-7.docx</i>) provides an understanding of:\r\n<ul>\r\n <li>The different seamless sign-in deployment options with Azure AD/Office 365: password hash synchronization (PHS), pass-through authentication (PTA), (federated cross-domain) single sign-on (SSO), seamless SSO with PHS or PTA,</li> \r\n <li>How to enable it using corporate Active Directory credentials to Azure AD/Office 365,</li> \r\n <li>The different configuration elements to be aware of for such deployment options,</li> \r\n <li>And instrumented end-to-end walkthroughs to setup an Azure-based lab environment in Azure Resource Manager (ARM) to further familiarize yourself with both the installation and configuration of the related infrastructure depending on the chosen option.</li> \r\n</ul>\r\n\r\nLikewise, the <b>Azure AD/Office 365 single sign-on with Shibboleth 2</b> whitepaper (<i>AAD-Office-365-Single-Sign-On-with-Shibboleth-2.docx</i>) provides an understanding of how to enable single sign-on using corporate LDAP-based directory credentials and Shibboleth 2 with the SAML 2.0 protocol to Azure AD/Office 365, and the different configuration elements to be aware of for such deployment. It also provides an end-to-end walkthrough of the related setup and configuration. <br/><br/>\r\n\r\nThe <b>Leverage Multi-Factor Authentication with Azure AD</b> whitepaper (<i>Leverage-Multi-Factor-Authentication-with-AAD.docx</i>) covers the Azure Multi-Factor Authentication paid offering and how to leverage it with Azure AD (Premium). <br/><br/>\r\n\r\nAs an addition, the <b>Leverage Multi-Factor Authentication Server on your premises</b> whitepaper (<i>Leverage-Multi-Factor-Authentication-Server-on-your-premises.docx</i>) describes how to use Azure Multi-Factor Authentication Server and to configure it to secure cloud resources such as Office 365 so that so that federated users will be prompted to set up additional verification the next time they sign in on-premises. In order not to \u201creinvent the wheels\u201d, this document leverages the instrumented walkthrough provided in the four part (bis) of the above whitepaper Azure AD/Office 365 seamless sign-in (with AD FS in Windows Server 2012 R2). <br/><br/>\r\n\r\nThe <b>Leverage Azure AD for modern Business Applications</b> whitepaper (<i>Leverage-AAD-for-modern-business-apps.docx</i>) further presents the aspects that relates to the development of solutions. Azure AD offers to developers and cloud ISVs an identity management platform to deliver access control to their modern business applications, based on centralized policy and rules.\r\n \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.5",
+    "detailsSection_file_name": [
+        "Towards-Identity-as-a-Service.docx",
+        "Leverage-Multi-Factor-Authentication-with-AAD.docx",
+        "Leverage-Multi-Factor-Authentication-Server-on-your-premises.docx",
+        "Leverage-AAD-for-modern-business-apps.docx",
+        "Introduce-AAD-B2B-collaboration.docx",
+        "Azure-AD-Windows-10-better-together.docx",
+        "An-overview-of-AAD.docx",
+        "An-overview-of-AAD-B2C.docx",
+        "AD-from-on-premises-to-the-cloud.docx",
+        "AAD-Office-365-Single-Sign-On-with-Shibboleth-2.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-7.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-6.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-5.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-4bis.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-4.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-3.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-2.docx",
+        "AAD-Office-365-Seamless-Sign-In-Part-1.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "1.5 MB",
+        "3.3 MB",
+        "4.3 MB",
+        "3.3 MB",
+        "5.4 MB",
+        "5.2 MB",
+        "3.6 MB",
+        "362.7 KB",
+        "3.5 MB",
+        "2.7 MB",
+        "2.7 MB",
+        "4.9 MB",
+        "5.4 MB",
+        "5.5 MB",
+        "3.2 MB",
+        "2.3 MB",
+        "404.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The files are Microsoft Word document. Users who do not have Microsoft  Word can view these documents through the downloadable&nbsp;<a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\">Word Viewer</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "See <a href=\"https://aka.ms/aadpapers\">Active Directory from on-premises to the cloud</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36391",
+    "downloadPreload": true
+}

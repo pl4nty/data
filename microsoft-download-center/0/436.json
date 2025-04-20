@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2008 R2 Best Practices Analyzer Whitepaper",
+    "downloadDescription": "Instructions and help for using SQL 2008 R2 BPA.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL2008R2_BPA_Whitepaper_v10.docx",
+            "url": "https://download.microsoft.com/download/5/4/4/544c337f-235e-4236-b9b6-2020c88c2b06/SQL2008R2_BPA_Whitepaper_v10.docx",
+            "size": "2555891",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper is designed to aid the user of BPA in installation, troubleshooting, and advanced use.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL2008R2_BPA_Whitepaper_v10.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008, Windows Server 2003, Windows 7.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Copy the file to your deskand open it in Microsoft Word.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "436",
+    "downloadPreload": true
+}

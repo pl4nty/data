@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Project Online: SSIS package for OData delta sync",
+    "downloadDescription": "Download a sample SQL Server Integration Services (SSIS) package that performs a delta sync to update Project Web App (PWA) data for Project Online reporting.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OData.AssignmentsTimephased.zip",
+            "url": "https://download.microsoft.com/download/2/2/a/22a2cf56-529c-4661-a664-bf23ed3b170d/OData.AssignmentsTimephased.zip",
+            "size": "25636",
+            "version": "Aug2014",
+            "datePublished": "7/15/2024 3:39:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Project_Online_SSIS_Delta_Sync.pdf",
+            "url": "https://download.microsoft.com/download/2/2/a/22a2cf56-529c-4661-a664-bf23ed3b170d/Project_Online_SSIS_Delta_Sync.pdf",
+            "size": "576184",
+            "version": "Aug2014",
+            "datePublished": "7/15/2024 3:39:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The sample SQL Server Integration Services (SSIS) package demonstrates how to perform a delta sync to reduce download times. The package retrieves Project Web App (PWA) data only for projects that changed since the last sync. This sample applies to Project Online reporting when report data is replicated to a local SQL Server database.\r\n<br/><br/>\r\n<b>Note:</b> This sample package is intended for demonstration only and should not be deployed to a production environment. Microsoft will not maintain or support this package. Use the package and the information in this article as guidance for building an SSIS package that fits your reporting needs.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug2014",
+    "detailsSection_file_name": [
+        "OData.AssignmentsTimephased.zip",
+        "Project_Online_SSIS_Delta_Sync.pdf"
+    ],
+    "detailsSection_file_size": [
+        "25.0 KB",
+        "562.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The DSTX file is an SQL Server Integration Services (SSIS) package. See the <b>Project Online SSIS Delta Sync.pdf</b> file for prerequisites and instructions about how to run the package.</LI>\r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download.</li>\r\n<ul>\r\n<li>Choose <b>Save</b> or <b>Save this program to disk</b> to copy the download to your computer.</li>\r\n<li>Read the <b>Project Online SSIS Delta Sync.pdf</b> file for prerequisites and instructions about how to run the package. The file is an Adobe Reader file. Users who do not have Adobe Reader can download it from \r\n<A HREF=\"http://get.adobe.com/reader/\">Adobe</A>.</li>\r\n</ul>\r\n</ol>\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "projectData - Project 2013 OData service reference",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=506705"
+        },
+        {
+            "title": "best practices for querying OData feeds for reporting data",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=506704"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43736",
+    "downloadPreload": true
+}

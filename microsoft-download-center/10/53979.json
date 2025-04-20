@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Windows Server 2008 for Itanium-based Systems (KB3167679)",
+    "downloadDescription": "A security issue has been identified in a Microsoft software product that could affect your system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB3167679-v2-ia64.msu",
+            "url": "https://download.microsoft.com/download/a/9/7/a97fbc94-273f-405f-889a-7c8679dd21a8/Windows6.0-KB3167679-v2-ia64.msu",
+            "size": "8572260",
+            "version": "3167679",
+            "datePublished": "7/15/2024 4:48:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in a Microsoft software product that could affect your system. You can help protect your system by installing this update from Microsoft. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article. After you install this update, you may have to restart your system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3167679",
+        "name": "KB3167679"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-110",
+        "name": "MS16-110"
+    },
+    "detailsSection_file_version": "3167679",
+    "detailsSection_file_name": [
+        "Windows6.0-KB3167679-v2-ia64.msu"
+    ],
+    "detailsSection_file_size": [
+        "8.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "additionalInformationSection": "<b>Other critical security updates are available:</b> To find the latest security updates for you, visit <a HREF='http://update.microsoft.com'>Windows Update</a> and click <b>Express Install</b>. To have the latest security updates delivered directly to your computer, visit the <a HREF='http://go.microsoft.com/fwlink/?LinkId=82023'>Security At Home</a> web site and follow the steps to ensure you're protected.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin",
+            "url": "http://support.microsoft.com/kb/3167679"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "53979",
+    "downloadPreload": true
+}

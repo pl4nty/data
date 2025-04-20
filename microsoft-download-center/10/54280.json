@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Journal to Microsoft OneNote Converter (BETA) (KB3194053)",
+    "downloadDescription": "This tool will convert Journal Note (.JNT) and Journal Template (.JTP) file into OneNote (.ONE) files",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Jnt2One_x86.exe",
+            "url": "https://download.microsoft.com/download/a/8/f/a8f2914b-2429-4aab-9040-a90158292115/Jnt2One_x86.exe",
+            "size": "610472",
+            "version": "3194053",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool will convert Journal Note (.JNT) and Journal Template (.JTP) file into OneNote (.ONE) files",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3194053",
+        "name": "KB3194053"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3194053",
+    "detailsSection_file_name": [
+        "Jnt2One_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "596.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/3194053"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54280",
+    "downloadPreload": true
+}

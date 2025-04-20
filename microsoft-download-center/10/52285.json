@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ORTC Sample Code",
+    "downloadDescription": "We provide sample code implementing the algorithm described in our 1999 paper \u201cOptimal Compression of IP Routing Tables.\u201d This is a single C file: no binary, installation kit, nor documentation. Last published: November 18, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rtopt.zip",
+            "url": "https://download.microsoft.com/download/f/b/2/fb24f360-4e96-4d68-9941-89c6bc4a7c07/rtopt.zip",
+            "size": "10732",
+            "version": "1.0",
+            "datePublished": "8/15/2023 4:13:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We provide sample code implementing the algorithm described in our 1999 paper \u201cOptimal Compression of IP Routing Tables.\u201d This is a single C file: no binary, installation kit, nor documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "rtopt.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.5 KB"
+    ],
+    "detailsSection_file_date": "8/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52285",
+    "downloadPreload": true
+}

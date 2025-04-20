@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Connector for Teradata V1.0",
+    "downloadDescription": "Download the Microsoft Connector for Teradata V1.0 that provide additional value for SQL Server Integration Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftTeradataConnector_SQL2022_r285.msi",
+            "url": "https://download.microsoft.com/download/a/0/9/a099ed54-274b-4826-bd35-bcb8f11aa249/MicrosoftTeradataConnector_SQL2022_r285.msi",
+            "size": "2793472",
+            "version": "Rev. 285",
+            "datePublished": "8/2/2024 2:29:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftTeradataConnector_SQL2022_r284.msi",
+            "url": "https://download.microsoft.com/download/a/0/9/a099ed54-274b-4826-bd35-bcb8f11aa249/MicrosoftTeradataConnector_SQL2022_r284.msi",
+            "size": "2998272",
+            "version": "Rev. 285",
+            "datePublished": "8/2/2024 2:29:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftTeradataConnector_SQL2019_r285.msi",
+            "url": "https://download.microsoft.com/download/a/0/9/a099ed54-274b-4826-bd35-bcb8f11aa249/MicrosoftTeradataConnector_SQL2019_r285.msi",
+            "size": "2707456",
+            "version": "Rev. 285",
+            "datePublished": "8/2/2024 2:29:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftTeradataConnector_SQL2019_r284.msi",
+            "url": "https://download.microsoft.com/download/a/0/9/a099ed54-274b-4826-bd35-bcb8f11aa249/MicrosoftTeradataConnector_SQL2019_r284.msi",
+            "size": "2895872",
+            "version": "Rev. 285",
+            "datePublished": "8/2/2024 2:29:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b> Microsoft Connector for Teradata V1.0 </b> - The components are written to achieve optimal performance when loading data into Teradata or unloading data from Teradata in the context of Microsoft SSIS. <br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Rev. 285",
+    "detailsSection_file_name": [
+        "MicrosoftTeradataConnector_SQL2022_r285.msi",
+        "MicrosoftTeradataConnector_SQL2022_r284.msi",
+        "MicrosoftTeradataConnector_SQL2019_r285.msi",
+        "MicrosoftTeradataConnector_SQL2019_r284.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB",
+        "2.9 MB",
+        "2.6 MB",
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "8/2/2024",
+    "systemRequirementsSection": "Refer to <a href=\"https://learn.microsoft.com/en-us/sql/integration-services/data-flow/teradata-connector#version-support\">the product documentation page</a> for supported versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ul><li>Each installer file is for a specific SQL Server version and platform. The x64 installer file also contains the bits for x86 platform. Download the appropriate file by clicking the correct DOWNLOAD button, then run the downloaded file to install that package. Make sure you have Teradata Tools And Utilities (TTU) installed before using the Microsoft Connector for Teradata. For more information, refer to <a href=\"https://learn.microsoft.com/en-us/sql/integration-services/data-flow/teradata-connector\">the product documentation page</a>.<br></br>\n</li></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Connectors v2.0 for Oracle and Teradata",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=29283"
+        },
+        {
+            "title": "microsoft Connectors v3.0 for Oracle and Teradata",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=44582"
+        },
+        {
+            "title": "microsoft Connectors v4.0 for Oracle and Teradata",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=52950"
+        },
+        {
+            "title": "microsoft Connectors v5.0 for Oracle and Teradata",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=55179"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100599",
+    "downloadPreload": true
+}

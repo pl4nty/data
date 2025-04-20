@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Decision Tree Fields",
+    "downloadDescription": "This package contains an implementation of the \"Decision Tree Fields\" framework, described in the ICCV 2011 paper \"Decision Tree Fields\" by Nowozin, Rother, Bagon, Yao, Sharp, and Kohli.\r\nThe DTF package allows training and testing of computer vision models for image labelling tasks such as image segmentation and semantic scene labelling. Last published: October 26, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dtf.zip",
+            "url": "https://download.microsoft.com/download/4/3/e/43e1be8e-8efe-42ef-8f6a-51351c564971/dtf.zip",
+            "size": "8487220",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package contains an implementation of the \"Decision Tree Fields\" framework, described in the ICCV 2011 paper \"Decision Tree Fields\" by Nowozin, Rother, Bagon, Yao, Sharp, and Kohli.\r\nThe DTF package allows training and testing of computer vision models for image labelling tasks such as image segmentation and semantic scene labelling.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "dtf.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52561",
+    "downloadPreload": true
+}

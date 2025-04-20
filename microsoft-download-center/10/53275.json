@@ -1,0 +1,197 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Word Viewer (KB3115393)  ",
+    "downloadDescription": "A security vulnerability exists in Word Viewer  that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "office-KB3115393-FullFile-ENU.exe",
+            "url": "https://download.microsoft.com/download/8/f/6/8f62b717-cb7a-4097-8d0d-e9df578758ea/office-KB3115393-FullFile-ENU.exe",
+            "size": "3634976",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/3115393\">Security Update for Word Viewer (KB3115393)  </a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3115393",
+        "name": "KB3115393"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-088",
+        "name": "MS16-088"
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "office-KB3115393-FullFile-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\nFor information about supported service packs and Windows Installer versions, please see \r\n<a href=\"http://support.microsoft.com/kb/967543\">Microsoft Office Supported Service Packs and Windows Installer (KB967543).</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<br />\r\n\r\nTo start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li>\r\n</ul>\r\n<br />\r\n<br />\r\n\r\n<b>IT professional resources</b><br />\r\nIT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"http://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"http://support.microsoft.com/kb/197147\">Command-Line Switches for IExpress Software Update Packages (KB197147)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53275",
+    "downloadPreload": true
+}

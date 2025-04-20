@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Achieving Over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster Using Windows Server 2012 R2",
+    "downloadDescription": "Demonstrates the high-performance storage and virtualization capabilities for a Hyper-V virtualized application using the Scale-Out File Server platform in Windows Server 2012 R2. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Achieving over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster using WS12 R2.docx",
+            "url": "https://download.microsoft.com/download/2/5/8/258e73c5-d851-4654-852e-98b4222cc882/Achieving over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster using WS12 R2.docx",
+            "size": "6135522",
+            "version": "May 2014",
+            "datePublished": "7/15/2024 3:38:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Achieving over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster using WS12 R2.pdf",
+            "url": "https://download.microsoft.com/download/2/5/8/258e73c5-d851-4654-852e-98b4222cc882/Achieving over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster using WS12 R2.pdf",
+            "size": "1531359",
+            "version": "May 2014",
+            "datePublished": "7/15/2024 3:38:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper demonstrates the high-performance storage and virtualization capabilities for a Hyper-V virtualized application using the Scale-Out File Server platform in Windows Server 2012 R2. The platform uses industry standard servers, disks, and JBOD enclosures. With the block storage made available through Storage Spaces combined with the Scale-Out File Server in a failover cluster, we can deliver extremely high levels of storage performance and resiliency similar to a traditional SAN using Microsoft Storage Solution and inexpensive shared Direct Attached Storage. \r\nThe results demonstrate the levels of storage performance that can be achieved from virtual machines running Hyper-V a single  Scale-Out File Server using shared Storage Spaces:\r\n<ul><li> 1.1 million IOPS for 8 KB random reads</li>\r\n<li>700K IOPS for 8 KB random writes</li>\r\n<li>100 Gbps aggregate read bandwidth</li>\r\n<li>92 Gbps aggregate write bandwidth</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May 2014",
+    "detailsSection_file_name": [
+        "Achieving over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster using WS12 R2.docx",
+        "Achieving over 1-Million IOPS from Hyper-V VMs in a Scale-Out File Server Cluster using WS12 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.9 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42960",
+    "downloadPreload": true
+}

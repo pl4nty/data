@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2013 CU19 (KB4073392)",
+    "downloadDescription": "Security Update For Exchange Server 2013 CU19 (KB4073392)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2013-KB4073392-x64-en.msp",
+            "url": "https://download.microsoft.com/download/b/f/7/bf7066b7-6ae3-45ad-80e3-c9c729fe6ec5/Exchange2013-KB4073392-x64-en.msp",
+            "size": "10088448",
+            "version": "15.00.1365.003",
+            "datePublished": "7/15/2024 4:53:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  This security update resolves a vulnerability in Microsoft Exchange Outlook Web Access (OWA). The vulnerability could allow elevation of privilege or spoofing in Microsoft Exchange Server if an attacker sends an email message that has a specially crafted attachment to a vulnerable server that is running Exchange Server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4073392",
+        "name": "KB4073392"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.00.1365.003",
+    "detailsSection_file_name": [
+        "Exchange2013-KB4073392-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "9.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56662",
+    "downloadPreload": true
+}

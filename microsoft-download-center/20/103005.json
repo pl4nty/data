@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Intune deployment planning, design, and implementation table templates",
+    "downloadDescription": "Table templates to use when planning an Intune deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "IDPDIG - Table templates.docx",
+            "url": "https://download.microsoft.com/download/7/1/5/7151c8de-6b23-4aa7-8a63-a914844a5f1b/IDPDIG - Table templates.docx",
+            "size": "31534",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document includes table templates that you can use during the Intune deployment planning, design, and implementation. The table templates are organized using the following categories:\r\n\r\nDeployment planning:\r\n\r\n- Deployment goals\r\n- Deployment objectives\r\n- Deployment challenges\r\n- Use case scenarios template\r\n- Use case scenario requirements template\r\n- Rollout plan template\r\n- Rollout communication plan template\r\n \r\nDesign and implementation: \r\n\r\n- Current Environment\r\n- Devices\r\n- Terms & Conditions\r\n- Configuration Policy\r\n- Certificate Profile\r\n- Wi-Fi Profile\r\n- VPN Profile\r\n- Email Profile\r\n- Applications\r\n- Compliance Policy\r\n- Conditional Access Policy\r\n\r\nTest and validation:\r\n\r\n- Functional validation testing\r\n- IT admin scenario validation testing\r\n- End user scenario validation testing  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IDPDIG - Table templates.docx"
+    ],
+    "detailsSection_file_size": [
+        "30.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Be able to download, and open a Microsoft Word .docx file.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "1. Download the file.\r\n2. Update the tables with your deployment information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103005",
+    "downloadPreload": true
+}

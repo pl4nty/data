@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2016 RTM CU (KB4019086)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2016 RTM CU Analysis Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016-KB4024304-x64.exe",
+            "url": "https://download.microsoft.com/download/4/b/d/4bd36dea-59d2-4635-9c23-fd83ea04b051/SQLServer2016-KB4024304-x64.exe",
+            "size": "854635840",
+            "version": "13.0.2210.0",
+            "datePublished": "7/15/2024 4:38:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "\n\tWhen dimension security has been defined on the Measures dimension in Multidimensional mode, the security was not being obeyed in DAX scenarios.The DISCOVER_CSDL_METADATA request would return the secured measures and DAX queries would support querying the secured measures.\n          \n\tDownload this update to resolve this issue in SQL Server 2016 RTM CU Analysis Services. For a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. After you install this update, you may have to restart your computer.\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.2210.0",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB4024304-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "815.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 RTM CU instances with the Analysis Services feature installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or save it on your local disk to install at a later time.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4019086",
+            "url": "https://support.microsoft.com/en-us/help/4019086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55741",
+    "downloadPreload": true
+}

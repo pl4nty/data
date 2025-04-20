@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SenseCam Image Viewer",
+    "downloadDescription": "A customizable image viewer for use with the SenseCam or the Vicon Revue, providing facilities for reviewing a sequence of SenseCam images, as well as for tagging and exporting them. Last published: December 20, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SenseCamImport.zip",
+            "url": "https://download.microsoft.com/download/d/2/4/d24ea4bd-a9c8-4a92-a99f-e65f8be0b389/SenseCamImport.zip",
+            "size": "860450",
+            "version": "2.3.0",
+            "datePublished": "6/13/2024 12:55:36 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A customizable image viewer for use with the SenseCam or the Vicon Revue, providing facilities for reviewing a sequence of SenseCam images, as well as for tagging and exporting them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.3.0",
+    "detailsSection_file_name": [
+        "SenseCamImport.zip"
+    ],
+    "detailsSection_file_size": [
+        "840.3 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52298",
+    "downloadPreload": true
+}

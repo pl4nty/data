@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2020 CU1",
+    "downloadDescription": "Microsoft BizTalk Server 2020 CU1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2020RN-KB4569502-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/8/0/f809627c-1f89-4390-bdce-81f67eb695e3/BTS2020RN-KB4569502-ENU.exe",
+            "size": "294776",
+            "version": "3.13.759.0",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2020ESBT-KB4569992-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/8/0/f809627c-1f89-4390-bdce-81f67eb695e3/BTS2020ESBT-KB4569992-ENU.exe",
+            "size": "411000",
+            "version": "3.13.759.0",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BTS2020-KB4538666-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/8/0/f809627c-1f89-4390-bdce-81f67eb695e3/BTS2020-KB4538666-ENU.exe",
+            "size": "40667512",
+            "version": "3.13.759.0",
+            "datePublished": "7/15/2024 4:25:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2020 CU1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.13.759.0",
+    "detailsSection_file_name": [
+        "BTS2020RN-KB4569502-ENU.exe",
+        "BTS2020ESBT-KB4569992-ENU.exe",
+        "BTS2020-KB4538666-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "287.9 KB",
+        "401.4 KB",
+        "38.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 4.8 <br/>\r\nVisual Studio 2019 <br/>\r\nSQL Server 2016 or SQL Server 2017 or SQL Server 2019 <br/>\r\nMicrosoft BizTalk Server 2020 <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation. <br/>\r\nFor BizTalk Developer Tools, in addition to installing CU package, also update/install new version of BizTalk Server Visual Studio extension (3.13.2.0). The extension can be installed from <a href=\"https://marketplace.visualstudio.com/items?itemName=ms-biztalk.BizTalk\">BizTalk Server extension</a> or within Visual Studio - Manage Extensions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101582",
+    "downloadPreload": true
+}

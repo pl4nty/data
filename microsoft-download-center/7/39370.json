@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure a Highly Available SharePoint Server 2013 Search Topology",
+    "downloadDescription": "This paper contains a brief introduction to SharePoint Server 2013 and step-by-step instructions to create a test lab that demonstrates how to configure a search topology that provides high availability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tlg-sp2013-highlyavailable-searchtopology.pdf",
+            "url": "https://download.microsoft.com/download/e/7/5/e75e1973-d282-4311-89b8-8bc728e7c656/tlg-sp2013-highlyavailable-searchtopology.pdf",
+            "size": "817168",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:24 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "tlg-sp2013-highlyavailable-searchtopology.docx",
+            "url": "https://download.microsoft.com/download/e/7/5/e75e1973-d282-4311-89b8-8bc728e7c656/tlg-sp2013-highlyavailable-searchtopology.docx",
+            "size": "181774",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains instructions to scale out the SharePoint Server 2013 farm to several servers to create a highly available search topology. The resulting test lab illustrates the search topology for a small all-purpose farm that you can view in the Enterprise Search Architectures for SharePoint Server 2013 technical diagram (http://go.microsoft.com/fwlink/p/?LinkId=258647).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "tlg-sp2013-highlyavailable-searchtopology.pdf",
+        "tlg-sp2013-highlyavailable-searchtopology.docx"
+    ],
+    "detailsSection_file_size": [
+        "798.0 KB",
+        "177.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Microsoft Word 2013, Portable Document File reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button, select the documents to download, and then click <B>Next</B> to save the documents.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>.</LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39370",
+    "downloadPreload": true
+}

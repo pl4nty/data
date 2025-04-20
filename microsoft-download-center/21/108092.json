@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration Specification for MJPEG Video Coding",
+    "downloadDescription": "This specification defines extensions to DirectX\u00ae Video Acceleration (DXVA) to support the decoding of MJPEG video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_MJPEG_Spec.docx",
+            "url": "https://download.microsoft.com/download/de8f7864-cb9c-4031-8aef-fb20ea7cb5e5/DXVA_MJPEG_Spec.docx",
+            "size": "95846",
+            "version": "1.0",
+            "datePublished": "3/28/2025 9:01:43 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This specification defines extensions to DirectX\u00ae Video Acceleration (DXVA) to support the decoding of MJPEG video.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DXVA_MJPEG_Spec.docx"
+    ],
+    "detailsSection_file_size": [
+        "93.6 KB"
+    ],
+    "detailsSection_file_date": "3/28/2025",
+    "systemRequirementsSection": "None.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "None.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108092",
+    "downloadPreload": true
+}

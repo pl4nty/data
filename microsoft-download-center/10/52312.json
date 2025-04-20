@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "FB15K-237 Knowledge Base Completion Dataset",
+    "downloadDescription": "This dataset contains knowledge base relation triples and textual mentions of Freebase entity pairs, as used in the work published in (Toutanova and Chen CVSM-2015) and (Toutanova et al. Last published: October 30, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FB15K-237.2.zip",
+            "url": "https://download.microsoft.com/download/8/7/0/8700516a-ab3d-4850-b4bb-805c515aece1/FB15K-237.2.zip",
+            "size": "146221215",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This dataset contains knowledge base relation triples and textual mentions of Freebase entity pairs, as used in the work published in (Toutanova and Chen CVSM-2015) and (Toutanova et al. EMNLP-2015). The knowledge base triples are a subset of the FB15K set (Bordes et al. NIPS-2013), originally derived from Freebase. The textual mentions are derived from 200 million sentences from the ClueWeb12 corpus coupled with FACC1 Freebase entity mention annotations. More details can be found in the included README.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FB15K-237.2.zip"
+    ],
+    "detailsSection_file_size": [
+        "139.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52312",
+    "downloadPreload": true
+}

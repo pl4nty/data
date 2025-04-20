@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Accelerating Microsoft\u00ae Excel\u00ae 2010 with Windows\u00ae HPC Server 2008 R2",
+    "downloadDescription": "This white paper discusses different scenarios where Windows\u00ae HPC Server 2008 R2 can integrate with Excel 2010, which may help run Excel 2010 workbooks and critical user-defined functions (UDFs) significantly faster by enabling their execution in a Windows high-performance computing (HPC) cluster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AcceleratingExcel2010withWindowsHPCServer2008R2Beta2-Final.docx",
+            "url": "https://download.microsoft.com/download/a/7/0/a70ceadf-ccde-4300-a687-c4b269da4edf/AcceleratingExcel2010withWindowsHPCServer2008R2Beta2-Final.docx",
+            "size": "1066752",
+            "version": "April 2010",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Excel\u00ae is a critical tool for business. As calculations and models become more complex, they require increasing amounts of time to execute on a desktop or portable computer. This white paper discusses different scenarios where Windows\u00ae HPC Server 2008 R2 can integrate with Excel 2010, which may help run Excel 2010 workbooks and critical user-defined functions (UDFs) significantly faster by enabling their execution in a Windows high-performance computing (HPC) cluster.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2010",
+    "detailsSection_file_name": [
+        "AcceleratingExcel2010withWindowsHPCServer2008R2Beta2-Final.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "accelerating Excel 2010 with Windows HPC Server 2008 R2: Building VBA applications and workbooks for a Windows HPC Cluster",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=F7F5BE21-CBD6-4892-A680-1DE7C5F29B56&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21238",
+    "downloadPreload": true
+}

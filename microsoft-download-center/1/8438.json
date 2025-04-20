@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Improving Microsoft Dynamics CRM Performance and Securing Data with Microsoft SQL Server 2008 R2",
+    "downloadDescription": "This paper provides an overview, benchmark results, and recommendations for implementing selected Microsoft SQL Server 2008 R2 features that can improve the performance of Microsoft Dynamics CRM 4.0 and secure the CRM database.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Improving Microsoft Dynamics CRM 4.0 Performance and Securing Data with Microsoft SQL Server 2008 R2.pdf",
+            "url": "https://download.microsoft.com/download/a/f/9/af9cad7e-83a6-455c-866f-bd089646bddc/Improving Microsoft Dynamics CRM 4.0 Performance and Securing Data with Microsoft SQL Server 2008 R2.pdf",
+            "size": "338371",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:56:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server\u00ae 2008 R2 contains a variety of features that, when implemented properly, can improve the performance of a Microsoft Dynamics\u00ae CRM 4.0 implementation and secure the data within that deployment. These Microsoft SQL Server 2008 features include:\r\n<ul><li>Compression</li>\r\n<li>Sparse Columns</li>\r\n<li>Transparent Data Encryption</li>\r\n<li>Backup Compression</li></ul>\r\n \r\nThe MS CRM E2 team, working in conjunction with the Microsoft SQL Server team, recently completed a project that was designed to:\r\n<ol><li>Evaluate the new scenarios that these Microsoft SQL Server 2008 R2 features expose</li>\r\n<li>Measure the performance impact of implementing these features, both singly and in selected combinations</li></ol>\r\n\r\nThis paper provides an overview of these Microsoft SQL Server 2008 features, together with benchmark results and recommendations for implementation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Improving Microsoft Dynamics CRM 4.0 Performance and Securing Data with Microsoft SQL Server 2008 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "330.4 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe\u00a9 Reader.</LI><br/>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br/>\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI><br/>\r\n<LI>Do one of the following:</LI><br/>\r\n<UL><br/>\r\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8438",
+    "downloadPreload": true
+}

@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Garage Mouse without Borders",
+    "downloadDescription": "Mouse without Borders (http://aka.ms/mm) is a product that makes you the captain of your computer fleet by allowing you to control up to four computers from a single mouse and keyboard. This means that with Mouse without Borders you can copy text or drag and drop files across computers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MouseWithoutBordersSetup.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658afc4c-dc02-4cb8-839d-10253e89fff7/MouseWithoutBordersSetup.msi",
+            "size": "1396736",
+            "version": "2.2.1.327",
+            "datePublished": "7/15/2024 4:44:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mouse Without Borders is a Microsoft Garage project by Truong Do. Garage projects are side projects that Microsoft employees like Truong build for fun on their nights and weekends. Mouse Without Borders was designed for people who use many computers in the same room. For example, a laptop or tablet that you take to meetings might sit right alongside the desktop PC in your office.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2.1.327",
+    "detailsSection_file_name": [
+        "MouseWithoutBordersSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10, Windows Server 2016, Windows 8.1, Windows 8, Windows Server 2012, Windows 7, Windows Server 2008 (32/64 bit). .Net 4.0 & up.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2003",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and run the installer on each of your machines.  The Mouse without Borders setup experience will be launched after installation. Follow the instructions to configure Mouse without Borders.\r\nNOTE: The same version of Mouse without Borders must be run in the machines, old version can be uninstalled in Control Panel or by just running this command: msiexec /uninstall {D3BC954F-D661-474C-B367-30EB6E56542E} /qr. Visit http://aka.ms/mm for help & questions.",
+    "additionalInformationSection": "New in this release: Bug fixes and improvements.",
+    "relatedResourcesSection": [
+        {
+            "title": "mouse without Borders on Twitter",
+            "url": "https://twitter.com/search?q=%22Mouse%20without%20Borders%22"
+        },
+        {
+            "title": "community-powered support for Mouse without Borders",
+            "url": "http://aka.ms/mm"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35460",
+    "downloadPreload": true
+}

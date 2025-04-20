@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Operations Manager Network Devices Supported for Monitoring",
+    "downloadDescription": "A list of the network devices supported by Operations Manager 2012R2 and 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OperationsManage_ExtendedMonitoringForNetworkDevices.xlsx",
+            "url": "https://download.microsoft.com/download/0/c/0/0c03bf73-ce09-4186-a7a8-9412bf7cb629/OperationsManage_ExtendedMonitoringForNetworkDevices.xlsx",
+            "size": "82524",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:16:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a complete list of all the Network Devices supported for monitoring by System Center 2012R2 and System Center 2016 Operations Manager.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "OperationsManage_ExtendedMonitoringForNetworkDevices.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "80.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012R2 or System Center 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the Excel file",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51219",
+    "downloadPreload": true
+}

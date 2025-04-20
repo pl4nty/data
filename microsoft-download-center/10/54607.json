@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft MPI v8 (Archived)",
+    "downloadDescription": "Stand-alone, redistributable and SDK installers for Microsoft MPI.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msmpisdk.msi",
+            "url": "https://download.microsoft.com/download/b/2/e/b2eb83fe-98c2-4156-834a-e1711e6884fb/msmpisdk.msi",
+            "size": "2314240",
+            "version": "8.0.12438",
+            "datePublished": "7/15/2024 3:07:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSMpiSetup.exe",
+            "url": "https://download.microsoft.com/download/b/2/e/b2eb83fe-98c2-4156-834a-e1711e6884fb/MSMpiSetup.exe",
+            "size": "5381232",
+            "version": "8.0.12438",
+            "datePublished": "7/15/2024 3:07:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Note: This version of MS-MPI is now archived. The latest version of MS-MPI Redistributable Package is available <a href=\"http://go.microsoft.com/FWLink/p/?LinkID=389556\">here</a><br/>\r\n\r\nMicrosoft MPI (MS-MPI) v8 is the successor to MS-MPI v7.1 (v7.1.12437, released on 6/22/2016).<br/>\r\n<br/>\r\nMS-MPI enables you to develop and run MPI applications without having to set up an HPC Pack cluster.<br/>\r\n<br/>\r\nThis release includes the installer for the software development kit (SDK) as a separate file. In addition, the SDK is also available through our nuget store <a href=\"https://www.nuget.org/packages/MSMPIsdk/\">here</a><br/>\r\n<br/>\r\nThe installers for MS-MPI may be redistributed with your own applications, facilitating stand-alone installations on workstation computers as well as HPC Pack clusters.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0.12438",
+    "detailsSection_file_name": [
+        "msmpisdk.msi",
+        "MSMpiSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Vista, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<b>To install on a workstation computer: </b>\r\n<ol>\r\n<li>Run MSMpiSetup.exe or msmpisdk.msi..</li>\r\n<li>Follow the steps in the installation wizard.</li>\r\n<li>The MS-MPI SDK is also available through our nuget store <a href=\"https://www.nuget.org/packages/MSMPIsdk/\">here</a></li>\r\n</ol>\r\n<br/>\r\n<b>For redistribution:</b>\r\n<ul>\r\n<li>You must include the entire installation package in your installation media.</li>\r\n<li>Your setup program can run the installation package to install MS-MPI, but you may not redistribute any of the individual files separately in your own installer.</li>\r\n<li>Please refer to the license agreement for additional information.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54607",
+    "downloadPreload": true
+}

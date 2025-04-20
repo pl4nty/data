@@ -1,0 +1,237 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 49 for Microsoft Dynamics NAV 2017",
+    "downloadDescription": "Monthly cumulative update for Microsoft Dynamics NAV 2017",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CU 49 NAV 2017 W1.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 W1.zip",
+            "size": "760984363",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 SE.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 SE.zip",
+            "size": "781424950",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 RU.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 RU.zip",
+            "size": "816233966",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 NZ.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 NZ.zip",
+            "size": "784685458",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 NO.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 NO.zip",
+            "size": "785985421",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 NL.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 NL.zip",
+            "size": "784910389",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 NA.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 NA.zip",
+            "size": "954721137",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 IT.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 IT.zip",
+            "size": "787913960",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 IS.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 IS.zip",
+            "size": "780278213",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 GB.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 GB.zip",
+            "size": "781322414",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 FR.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 FR.zip",
+            "size": "784572270",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 FI.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 FI.zip",
+            "size": "784130249",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 ES.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 ES.zip",
+            "size": "792455014",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 DK.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 DK.zip",
+            "size": "784981887",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 DE.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 DE.zip",
+            "size": "791554497",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 CZ.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 CZ.zip",
+            "size": "808325273",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 CH.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 CH.zip",
+            "size": "830416226",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 BE.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 BE.zip",
+            "size": "805183610",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 AU.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 AU.zip",
+            "size": "783165721",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CU 49 NAV 2017 AT.zip",
+            "url": "https://download.microsoft.com/download/0/6/2/062aab41-bb54-47a5-89c3-ba74b3555986/CU 49 NAV 2017 AT.zip",
+            "size": "789224462",
+            "version": "30392",
+            "datePublished": "5/15/2024 4:28:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about other cumulative updates already released for Microsoft Dynamics NAV 2017, please see this kb article: https://support.microsoft.com/en-us/help/3210255\r\nTo learn more about what is included in this cumulative update, please visit this kb article: https://support.microsoft.com/en-us/help/4583548",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4583548",
+        "name": "4583548"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "30392",
+    "detailsSection_file_name": [
+        "CU 49 NAV 2017 W1.zip",
+        "CU 49 NAV 2017 SE.zip",
+        "CU 49 NAV 2017 RU.zip",
+        "CU 49 NAV 2017 NZ.zip",
+        "CU 49 NAV 2017 NO.zip",
+        "CU 49 NAV 2017 NL.zip",
+        "CU 49 NAV 2017 NA.zip",
+        "CU 49 NAV 2017 IT.zip",
+        "CU 49 NAV 2017 IS.zip",
+        "CU 49 NAV 2017 GB.zip",
+        "CU 49 NAV 2017 FR.zip",
+        "CU 49 NAV 2017 FI.zip",
+        "CU 49 NAV 2017 ES.zip",
+        "CU 49 NAV 2017 DK.zip",
+        "CU 49 NAV 2017 DE.zip",
+        "CU 49 NAV 2017 CZ.zip",
+        "CU 49 NAV 2017 CH.zip",
+        "CU 49 NAV 2017 BE.zip",
+        "CU 49 NAV 2017 AU.zip",
+        "CU 49 NAV 2017 AT.zip"
+    ],
+    "detailsSection_file_size": [
+        "725.7 MB",
+        "745.2 MB",
+        "778.4 MB",
+        "748.3 MB",
+        "749.6 MB",
+        "748.5 MB",
+        "910.5 MB",
+        "751.4 MB",
+        "744.1 MB",
+        "745.1 MB",
+        "748.2 MB",
+        "747.8 MB",
+        "755.7 MB",
+        "748.6 MB",
+        "754.9 MB",
+        "770.9 MB",
+        "791.9 MB",
+        "767.9 MB",
+        "746.9 MB",
+        "752.7 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Requirements can be found at https://docs.microsoft.com/en-us/dynamics-nav/system-requirements-for-microsoft-dynamics-nav-2017",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "How to install this cumulative update: https://support.microsoft.com/en-us/help/3204818",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102522",
+    "downloadPreload": true
+}

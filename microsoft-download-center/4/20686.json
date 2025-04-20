@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "CLR Exception Handling And Memory Management Presentation",
+    "downloadDescription": "This presentation is an overview of best practices and issues with the usage of exceptions, and different issues surrounding memory management including the IDisposable pattern, finalizers, memorypressure, HandleCollector, and why the using statement (Using in VB) is your friend.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CLR Exception Handing And Memory Management.ppt",
+            "url": "https://download.microsoft.com/download/e/8/b/e8b25d7c-13ab-485b-b2a6-30339035e428/CLR Exception Handing And Memory Management.ppt",
+            "size": "384512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This presentation is an overview of best practices and issues with the usage of exceptions, and different issues surrounding memory management including the IDisposable pattern, finalizers, memorypressure, HandleCollector, and why the using statement (Using in VB) is your friend. It's an excellent overview of some fundamental exception and memory management topics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CLR Exception Handing And Memory Management.ppt"
+    ],
+    "detailsSection_file_size": [
+        "375.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows that you are running. To find recent security updates, visit Windows Update.<br />\n<br />\n<br />\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows 98 Second Edition",
+        "Windows ME",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL><br />\n<LI>Use Microsoft Powerpoint to view the document. If you do not have Microsoft Powerpoint, you can download the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=428D5727-43AB-4F24-90B7-A94784AF71A4&displaylang=en\">free Powerpoint Viewer</a>. <br />\n</LI><br />\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20686",
+    "downloadPreload": true
+}

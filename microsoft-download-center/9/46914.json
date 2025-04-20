@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Moodle + Office 365: Better Together",
+    "downloadDescription": "With open-source plugins developed by Microsoft and available with their complete source code on the GitHub forge, Moodle now benefits from an integration path with Office 365. Combined with Office 365, Moodle becomes even more powerful to ultimately bring a better and more productive classroom experience to teachers and students alike.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Moodle-Office-365-An-overview.pptx",
+            "url": "https://download.microsoft.com/download/c/4/e/c4e426f7-71fd-4957-99dd-8ffe967889fe/Moodle-Office-365-An-overview.pptx",
+            "size": "3081541",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:45:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Moodle-Office-365-Setup-Guide.docx",
+            "url": "https://download.microsoft.com/download/c/4/e/c4e426f7-71fd-4957-99dd-8ffe967889fe/Moodle-Office-365-Setup-Guide.docx",
+            "size": "7617353",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:45:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Moodle-Office-365-Setup-Guide-(PS-Scripts).zip",
+            "url": "https://download.microsoft.com/download/c/4/e/c4e426f7-71fd-4957-99dd-8ffe967889fe/Moodle-Office-365-Setup-Guide-(PS-Scripts).zip",
+            "size": "5884",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:45:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Moodle is an open source Web-based platform designed to provide all the tools required for classroom management, where teachers and students have the ability to smoothly and easily collaborate on a day-to-day basis. As the recognized leading learning management system (LMS), Moodle is unsurprisingly used in more universities and schools than any other LMS in in the world to provide large populations of students with dematerialized training content through a compelling and motivating environment.<br/>\r\n<br/>\r\nMicrosoft Office 365  provides secure anywhere access to professional email, shared calendars, instant messaging (IM), video conferencing, and document collaboration. It represents the cloud version of the Microsoft communication and collaboration products with the latest version of the Microsoft desktop suite for businesses of all sizes. Office 365 indeed notably includes :<br/>\r\n<ul>\r\n<li><b>Office 365 ProPlus</b>. Microsoft Office 365 ProPlus is the Office software that can be installed locally on a device (computer, phone, or tablet) as a subscription. Depending on the device type and related operating system, it includes the following programs: Access, Excel, InfoPath, Skype for Business (formerly Lync), OneNote, Outlook, PowerPoint, Publisher, Word, etc. The programs have the same features and functionality as other versions of Office. For example, Word in Office 365 ProPlus works the same way it does in Office Professional 2013. This version of Office is included in E3, E4, A3, Business and Business Premium plans and is therefore the logical companion of Office 365 services. The programs of the Office suite can be deployed easily in a click-to-run mode on a Windows computer, either directly from the Office 365 portal or from the local network with your own management tool.</li> \r\n<li><b>Exchange Online</b>. Exchange Online offers cloud-based email, calendar, and contacts with the most current antivirus and anti-spam solutions. It enables access to email on virtually any mobile device and takes advantage of options for voice mail, unified messaging, and archiving.</li>\r\n<li><b>SharePoint Online et OneDrive for Business</b>. SharePoint Online is a cloud-based service for creating sites that connect colleagues, partners, and customers using enterprise social networking and collaboration like Yammer. OneDrive for Business is a large capacity personal storage space hosted in the Microsoft Cloud, allowing users to access their documents anywhere and to facilitate their sharing.</li>\r\n<li><b>Skype for Business Online</b>. Skype for Business Online offers cloud-based IM, presence, and online meeting experiences with screen sharing, voice and video conferencing.</li>\r\n</ul>\r\n<br/>\r\nServing nearly 80 million users worldwide, Moodle has already changed the face of classroom management. With open-source plugins developed by Microsoft and available with their complete source code on the GitHib forge, Moodle now benefits from an integration path with Office 365. Combined with Office 365, which is being embraced in a big way by the education world thanks to its business-class productivity tools and the above Office 365 ProPlus benefit, Moodle becomes even more powerful to ultimately bring a better and more productive classroom experience to teachers and students alike.<br/>\r\n<br/>\r\nThe Moodle with Office 365 integration is thus helping to reinvent productivity in education with:<br/>\r\n<ul>\r\n<li><b>Easy Acces</b>. Your Office 365 username and password now gets you into Moodle with no additional credentials to remember.  Moodle is now also accessible from the new Office 365 app launcher, meaning it\u2019s just a few clicks away from any of your favorite Office 365 apps like Delve, Outlook Web App, SharePoint and others.</li>\r\n<li><b>Work Offline</b>. Moodle courses can now include Office documents (Word, PowerPoint, Excel, etc.) that can be edited on any device and even offline \u2013 no need to stop working if you don\u2019t have an Internet connection.</li> \r\n<li><b>Mobile Friendly, Cross-Platform</b>. Moodle calendar events can be synced with Office 365 and will show up in all of your mobile devices that support Exchange \u2013 iOS, Android, Windows, etc.</li>\r\n<li><b>Classroom Ready</b>. Teachers and faculty can embed their interactive Office Mix lectures in Moodle courses and manage Moodle assignment submissions through OneNote and store the Moodle course documents on OneDrive.</li>\r\n</ul>\r\n<br/>\r\nThe overview presentation, setup guide (and associated script) available in this download intend to describe how to achieve the Moodle with Office 365 integration thanks to the above plug-ins. Both the related configuration and the resulting user experience are depict as part of these deliverables.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Moodle-Office-365-An-overview.pptx",
+        "Moodle-Office-365-Setup-Guide.docx",
+        "Moodle-Office-365-Setup-Guide-(PS-Scripts).zip"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB",
+        "7.3 MB",
+        "5.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8.1, Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To visualize the provided Word & PowerPoint files, you can download the <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\">Word viewer</a> and/or the <a href=\"http://www.microsoft.com/fr-fr/download/details.aspx?id=13\">PowerPoint viewer</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "office 365 plugins for Moodle",
+            "url": "https://github.com/MSOpenTech/o365-moodle"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "46914",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "The First TextWorld Problems Dataset",
+    "downloadDescription": "The First TextWorld Problems Dataset",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "cog2019_ftwp.zip",
+            "url": "https://download.microsoft.com/download/e/8/0/e80a789f-ed4a-443b-9bd8-a1cf297c1a70/cog2019_ftwp.zip",
+            "size": "1752367949",
+            "version": "March 2020",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the dataset used for the First TextWorld Problems competition. It contains the training, validation and testing games.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2020",
+    "detailsSection_file_name": [
+        "cog2019_ftwp.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100932",
+    "downloadPreload": true
+}

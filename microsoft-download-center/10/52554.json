@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Fast Scalar Multiplication in Genus 2",
+    "downloadDescription": "This download contains Magma files that compute scalar multiplications on Jacobians of genus 2 curves or on the associated Kummer surface. Last published: March 12, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Scalar_Mult_Genus_2.zip",
+            "url": "https://download.microsoft.com/download/7/6/b/76b9f611-111b-4d40-8ea4-a795e823dfbc/Scalar_Mult_Genus_2.zip",
+            "size": "13025",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:09:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains Magma files that compute scalar multiplications on Jacobians of genus 2 curves or on the associated Kummer surface. This accompanies the EuroCrypt 2013 paper by Bos, Costello, Hisil and Lauter, the full version of which can be found here: http://eprint.iacr.org/2012/670.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Scalar_Mult_Genus_2.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.7 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52554",
+    "downloadPreload": true
+}

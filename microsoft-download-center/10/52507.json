@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "TSS.MSR: The TPM Software Stack from Microsoft Research",
+    "downloadDescription": "In addition to physical TPM devices, the TSS.MSR libraries can also connect to a TPM simulator to enable application development and debugging on platforms that do not have a TPM 2.0 device. Last published: December 18, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TSS.MSR v2.0 TPM2 Simulator.zip",
+            "url": "https://download.microsoft.com/download/2/8/c/28c3917f-ec5b-464e-b229-1dd1fa299316/TSS.MSR v2.0 TPM2 Simulator.zip",
+            "size": "248250",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In addition to physical TPM devices, the TSS.MSR libraries can also connect to a TPM simulator to enable application development and debugging on platforms that do not have a TPM 2.0 device. The connection to the simulator is over a TCP/IP socket so the simulator may be running on a remote machine or in another process on the same machine. Below you will find a link to download the TPM2 Simulator binary for use with the TSS.MSR TPM2 libraries.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "TSS.MSR v2.0 TPM2 Simulator.zip"
+    ],
+    "detailsSection_file_size": [
+        "242.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52507",
+    "downloadPreload": true
+}

@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Design Sample: Corporate Portal with Path-based Sites for SharePoint Server 2013",
+    "downloadDescription": "This design sample illustrates the use of path-based site collections with sites organized into dedicated web applications and a single top-level site collection per web application.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sps-2013-design-sample-corporate-portal-path-based-sites.pdf",
+            "url": "https://download.microsoft.com/download/f/e/1/fe16a195-452e-44a2-bec6-9186702c710b/sps-2013-design-sample-corporate-portal-path-based-sites.pdf",
+            "size": "467595",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sps-2013-design-sample-corporate-portal-path-based-sites.vsd",
+            "url": "https://download.microsoft.com/download/f/e/1/fe16a195-452e-44a2-bec6-9186702c710b/sps-2013-design-sample-corporate-portal-path-based-sites.vsd",
+            "size": "8854528",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This design sample illustrates path-based site collections in the traditional way with sites organized into dedicated web applications and a single top-level site collection per web application. Use this approach if you want the additional security provided by multiple web apps with separate app pools.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sps-2013-design-sample-corporate-portal-path-based-sites.pdf",
+        "sps-2013-design-sample-corporate-portal-path-based-sites.vsd"
+    ],
+    "detailsSection_file_size": [
+        "456.6 KB",
+        "8.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30378",
+    "downloadPreload": true
+}

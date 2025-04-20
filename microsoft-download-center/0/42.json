@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mobile 5.0 SDK for Pocket PC",
+    "downloadDescription": "Software Development Kit for Windows Mobile 5.0 software for Pocket PC.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Mobile 5.0 Pocket PC SDK.msi",
+            "url": "https://download.microsoft.com/download/d/2/e/d2e43e33-53b0-45b6-ba70-fe6fdc4aa5bb/Windows Mobile 5.0 Pocket PC SDK.msi",
+            "size": "182469120",
+            "version": "5.0.14343",
+            "datePublished": "7/15/2024 3:14:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Mobile 5.0 SDK for Pocket PC extends Visual Studio 2005 so that you can write managed and native application software targeting Windows Mobile 5.0 based Pocket PC devices.<br />\n<br />\nThis includes:<br />\n<ol><br />\n\t<li>Windows Mobile 5.0 based Pocket PC Device Emulator images &amp; skin files</li><br />\n\t<li>Headers, Libraries, IDL files, and Managed reference assemblies</li><br />\n\t<li>Sample Code</li><br />\n\t<li>Documentation in CHM Format</li><br />\n\t<li>Tools, Sample Configuration files, and Test Authenticode Certificates</li><br />\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.14343",
+    "detailsSection_file_name": [
+        "Windows Mobile 5.0 Pocket PC SDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "174.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n\t<li>Visual Studio 2005 Standard, Professional, and Team Suite Editions</li><br />\n\t<li>Active Sync 4.0 Developer Preview (build 4343)</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Mobile-based Pocket PCs",
+            "url": "http://go.microsoft.com/?linkid=3077460"
+        },
+        {
+            "title": "windows Mobile Developer Center",
+            "url": "http://go.microsoft.com/?linkid=3077628"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42",
+    "downloadPreload": true
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Sample strategy maps for a balanced scorecard (SharePoint Server 2010)",
+    "downloadDescription": "Two sample strategy maps for PerformancePoint",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BalancedScorecardStrategyMap.vsd",
+            "url": "https://download.microsoft.com/download/7/1/5/7158d435-e499-4d5a-b7db-4853c215386d/BalancedScorecardStrategyMap.vsd",
+            "size": "168960",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BalancedScorecardStrategyMap_sm.vsd",
+            "url": "https://download.microsoft.com/download/7/1/5/7158d435-e499-4d5a-b7db-4853c215386d/BalancedScorecardStrategyMap_sm.vsd",
+            "size": "105472",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When you create a Balanced Scorecard by using PerformancePoint Services, you create a strategy map report that uses a Visio diagram for its visual structure. To save time and effort, you can download our example diagrams and modify them to suit your organization.  \r\nThere are two diagrams available for you to download: \r\n(1) Balanced Scorecard Sample Diagram contains lots of shapes representing a wide range of key performance indicators (KPIs) for the Financial, Customer, Internal, and Learning & Growth perspectives. This diagram is representative of KPIs that a typical organization would use in a strategy map as part of a Balanced Scorecard.  \r\n(2) Balanced Scorecard Sample Diagram (small) is a pared-down diagram that corresponds to the strategy map we create in the article \u201cCreate a PerformancePoint strategy map as part of a Balanced Scorecard\u201d (http://technet.microsoft.com/library/hh750369) on TechNet. This diagram contains fourteen shapes that correspond to KPIs in an example scorecard that is used as part of a Balanced Scorecard.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BalancedScorecardStrategyMap.vsd",
+        "BalancedScorecardStrategyMap_sm.vsd"
+    ],
+    "detailsSection_file_size": [
+        "165.0 KB",
+        "103.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To view a Visio file, you must have Microsoft Office Visio 2007 or Microsoft Visio 2010. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2010: Visio Viewer</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28579",
+    "downloadPreload": true
+}

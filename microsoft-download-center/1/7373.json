@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Troubleshooting Microsoft Lync Server 2010 Clients: Help Desk Resource",
+    "downloadDescription": "This resource is for first-level help desk agents who support Microsoft Lync Server 2010 clients. Note: The .zip file contains both the print documentation and the Help file.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Troubleshooting_Lync_2010_Clients.zip",
+            "url": "https://download.microsoft.com/download/e/e/a/eea100b7-9d84-4a16-ad20-7434a933edfe/Troubleshooting_Lync_2010_Clients.zip",
+            "size": "579944",
+            "version": "March2013",
+            "datePublished": "5/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This resource provides first-level help desk agents who support Lync Server 2010 clients (Microsoft Lync 2010, Microsoft Lync 2010 Attendee, and Microsoft Lync Web App) with the following:\r\n<UL>\r\n<LI>A script for opening a service call and identifying the problem the user is having</LI>\r\n<LI>Information about how to resolve more than 200 common user problems</LI>\r\n<LI>Tools and resources for additional troubleshooting</LI>\r\n</UL>\r\n\r\n<b>Note:</b> The .zip file contains both the print documentation and the Help file.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2013",
+    "detailsSection_file_name": [
+        "Troubleshooting_Lync_2010_Clients.zip"
+    ],
+    "detailsSection_file_size": [
+        "566.4 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n<b>Note:</b> The .zip file contains both the print documentation and the Help file.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "lync Help and How-to",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=212144"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7373",
+    "downloadPreload": true
+}

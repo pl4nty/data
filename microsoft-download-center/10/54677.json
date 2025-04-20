@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Window Server 2016 - Platform For Modern Apps",
+    "downloadDescription": "Window Server 2016 - Platform For Modern Apps",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Platform for Modern apps -App development.zip",
+            "url": "https://download.microsoft.com/download/1/1/1/111ddb43-6c04-46ed-8cc5-e4477522ed46/Platform for Modern apps -App development.zip",
+            "size": "85494819",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Platform for Modern apps Software.zip",
+            "url": "https://download.microsoft.com/download/1/1/1/111ddb43-6c04-46ed-8cc5-e4477522ed46/Platform for Modern apps Software.zip",
+            "size": "13366653",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2016 - Platform for Modern Apps.pptx",
+            "url": "https://download.microsoft.com/download/1/1/1/111ddb43-6c04-46ed-8cc5-e4477522ed46/Windows Server 2016 - Platform for Modern Apps.pptx",
+            "size": "2177427",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2016 - Platform for Modern Apps.docx",
+            "url": "https://download.microsoft.com/download/1/1/1/111ddb43-6c04-46ed-8cc5-e4477522ed46/Windows Server 2016 - Platform for Modern Apps.docx",
+            "size": "9324278",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Platform for Modern apps Scripts.zip",
+            "url": "https://download.microsoft.com/download/1/1/1/111ddb43-6c04-46ed-8cc5-e4477522ed46/Platform for Modern apps Scripts.zip",
+            "size": "15224",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ModernApps.zip",
+            "url": "https://download.microsoft.com/download/1/1/1/111ddb43-6c04-46ed-8cc5-e4477522ed46/ModernApps.zip",
+            "size": "13388088",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Window Server 2016 - Platform For Modern Apps",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2017",
+    "detailsSection_file_name": [
+        "Platform for Modern apps -App development.zip",
+        "Platform for Modern apps Software.zip",
+        "Windows Server 2016 - Platform for Modern Apps.pptx",
+        "Windows Server 2016 - Platform for Modern Apps.docx",
+        "Platform for Modern apps Scripts.zip",
+        "ModernApps.zip"
+    ],
+    "detailsSection_file_size": [
+        "81.5 MB",
+        "12.7 MB",
+        "2.1 MB",
+        "8.9 MB",
+        "14.9 KB",
+        "12.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows/Office",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download files to view",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54677",
+    "downloadPreload": true
+}

@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2019 RTM CU(KB5021124)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2019 RTM CU.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2019-KB5021124-x64.exe",
+            "url": "https://download.microsoft.com/download/b/4/8/b4837124-c359-49a5-a6ba-e3d6c9d0d6e4/SQLServer2019-KB5021124-x64.exe",
+            "size": "777647584",
+            "version": "15.04280.7",
+            "datePublished": "7/15/2024 5:06:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/>\r\nYou can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\r\n\r\nMore information about the vulnerability can be found here: \r\n<a name=\"KB5021124\"></a><a href=\"http://support.microsoft.com/help/5021124\">KB5021124</a> <br /><br />\r\n\r\nFor other impacted SQL Server releases, please see: <br /><br />\r\n<a name=\"KB5021045\"></a><a href=\"http://support.microsoft.com/help/5021045\">SQL Server 2014 SP3 CU4 + GDR </a> <br />\r\n<a name=\"KB5021037\"></a><a href=\"http://support.microsoft.com/help/5021037\">SQL Server 2014 SP3 GDR</a> <br />\r\n<a name=\"KB5021128\"></a><a href=\"http://support.microsoft.com/help/5021128\">SQL Server 2016 SP3 Azure Connect Feature Pack + GDR</a> <br />\r\n<a name=\"KB5021129\"></a><a href=\"http://support.microsoft.com/help/5021129\">SQL Server 2016 SP3 GDR</a> <br />\r\n<a name=\"KB5021126\"></a><a href=\"http://support.microsoft.com/help/5021126\">SQL Server 2017 RTM CU31 + GDR</a> <br />\r\n<a name=\"KB5021127\"></a><a href=\"http://support.microsoft.com/help/5021127\">SQL Server 2017 RTM GDR</a> <br />\r\n<a name=\"KB5021124\"></a><a href=\"http://support.microsoft.com/help/5021124\">SQL Server 2019 RTM CU18 + GDR</a> <br />\r\n<a name=\"KB5021125\"></a><a href=\"http://support.microsoft.com/help/5021125\">SQL Server 2019 RTM GDR</a> <br />\r\n<a name=\"KB5021522\"></a><a href=\"http://support.microsoft.com/help/5021522\">SQL Server 2022 RTM GDR</a> <br />\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. \r\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.04280.7",
+    "detailsSection_file_name": [
+        "SQLServer2019-KB5021124-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "741.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": " This update is applicable to SQL Server 2019 RTM instances installed on supported Windows and Linux Operating Systems, and Linux containers.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2019 RTM Windows and Linux instances that have had a Cumulative Update applied (versions 15.0.4003.23 (CU1) to 15.0.4261.1 (CU18)).<br /> <br />     \r\n\nFor Microsoft SQL Server 2019 RTM for Windows and Linux instances (versions 15.0.2000.5 to 15.0.2095.3) that have NOT had any Cumulative Update applied, please see <a name=\"KB5021125\"></a><a href=\"http://support.microsoft.com/help/5021125\">KB5021125</a>. After you install this update, you may have to restart your computer.\n\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4583459",
+            "url": "https://support.microsoft.com/en-us/help/4583459"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "105005",
+    "downloadPreload": true
+}

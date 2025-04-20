@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Customization Manager in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Customization Manager module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_CU.zip",
+            "url": "https://download.microsoft.com/download/d/b/8/db86ccac-5285-4426-b870-1ca46f7302e9/SL2015_ENUS_CU.zip",
+            "size": "4465922",
+            "version": "NA.",
+            "datePublished": "5/15/2024 4:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b> </b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the customization manager module in Microsoft Dynamics SL<b></b> At Training Material Completion<b> </b>After completing this course, students should be able to:<ul><li>Rearrange the fields in data entry windows to more closely resemble source document formats, or to make room for new or additional fields.</li><li>Change the tab order the cursor moves through the fields in each screen.</li><li>Change the default values of certain fields.</li><li>Modify the way data fields display values like telephone numbers and Social Security numbers.</li><li>Hide fields for all users or specific users.</li><li>Make fields display-only.</li><li>Add new items to windows such as data object fields, labels, buttons, frames, panels, subforms, and tabs.</li><li>Write Visual Basic for Applications (VBA) code and associate the VBA code with a Microsoft Dynamics SL window or object.</li></ul><b></b> Prerequisites<b> </b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL. </li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_CU.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.3 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101751",
+    "downloadPreload": true
+}

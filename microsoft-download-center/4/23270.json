@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "User Manager for Domains (UsrMgr.exe)",
+    "downloadDescription": "User Manager for Domains is a Windows Server 2003 tool you can use to manage security for Windows NT 4.0 domains, member servers, and workstations.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "usrmgr.msi",
+            "url": "https://download.microsoft.com/download/a/8/b/a8bc2027-f25c-438e-b763-bbef1dbdbf4b/usrmgr.msi",
+            "size": "479232",
+            "version": "5.2.3790.1127",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "User Manager for Domains is a Windows Server 2003 tool you can use to manage security for Windows NT 4.0 domains, member servers, and workstations. For Windows Server 2003 domains, member servers, and Windows XP Professional computers, use Active Directory and the other Windows Server 2003 administrative tools instead. With User Manager for Domains you can:<ul><li>Select the domain or computer to be administered</li><li>Create and manage user accounts</li><li>Create and manage groups</li><li>Manage the security policies</li></ul>This update addresses the following issue:<ul><li>Fixed bug causing an access violation in NETUI0.DLL</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.2.3790.1127",
+    "detailsSection_file_name": [
+        "usrmgr.msi"
+    ],
+    "detailsSection_file_size": [
+        "468.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and install UsrMgr.exe on the following operating systems:<BR/><UL><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&displaylang=en"
+        },
+        {
+            "title": "windows Server 2003 Resources for IT Pros",
+            "url": "http://www.microsoft.com/technet/treeview/default.asp?url=/technet/prodtechnol/windowsserver2003/default.asp"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://www.microsoft.com/windowsserver2003/techinfo/reskit/resourcekit.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23270",
+    "downloadPreload": true
+}

@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Migration Assistant for Access",
+    "downloadDescription": "Microsoft SQL Server Migration Assistant (SSMA) for Access is a tool to automate migration from Microsoft Access database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSMAforAccess_9.5.0.msi",
+            "url": "https://download.microsoft.com/download/d/b/d/dbdecc99-4dca-4674-983a-cc1ababa2b37/SSMAforAccess_9.5.0.msi",
+            "size": "7811072",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforAccess_9.5.0_x86.msi",
+            "url": "https://download.microsoft.com/download/d/b/d/dbdecc99-4dca-4674-983a-cc1ababa2b37/SSMAforAccess_9.5.0_x86.msi",
+            "size": "7811072",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforAccess_10.1.0_x86.msi",
+            "url": "https://download.microsoft.com/download/a253d8fc-5e5e-4510-bdc2-885b98050574/SSMAforAccess_10.1.0_x86.msi",
+            "size": "10616832",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforAccess_10.1.0.msi",
+            "url": "https://download.microsoft.com/download/a253d8fc-5e5e-4510-bdc2-885b98050574/SSMAforAccess_10.1.0.msi",
+            "size": "10616832",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server Migration Assistant (SSMA) is a free supported tool from Microsoft that simplifies database migration process from Access to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance. SSMA for Access automates conversion of Microsoft Access database objects to SQL Server, Azure SQL Database or Azure SQL Database Managed Instance objects, loads the objects and migrates data to the target database.\n<br/><br/>\nSSMA for Access is designed to support migration from Microsoft Access 97 and higher to all editions of SQL Server 2016 onwards, Azure SQL Database and Azure SQL Database Managed Instance.\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "SSMAforAccess_9.5.0.msi",
+        "SSMAforAccess_9.5.0_x86.msi",
+        "SSMAforAccess_10.1.0_x86.msi",
+        "SSMAforAccess_10.1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.4 MB",
+        "7.4 MB",
+        "10.1 MB",
+        "10.1 MB"
+    ],
+    "detailsSection_file_date": "4/1/2025",
+    "systemRequirementsSection": "<ul>\n<li>Windows 10+, Windows Server 2016+</li>\n</ul>\n<br/>\n<b>Requirements for the SSMA for Access client: </b>\n<ul>\n<li>The Microsoft .NET Framework version 4.7.2 or a later version. You can obtain it from the .NET Framework Developer Center.</li>\n<li>Access to and sufficient permissions on the computer that hosts the target instance of SQL Server.</li>\n<li>DAO provider version 12.0, 14.0 or 16.0. You can install DAO provider from Microsoft Office product or download it from Microsoft web site.</li>\n<li>Microsoft SQL Server Native Client (SNAC) version 10.5 and above. You can install SNAC from Microsoft SQL Server web site as part of SQL Server Feature Pack.</li>\n<li>4 GB RAM.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "After the download, you must install SSMA for Access.\n<br/>\n<br/>\n<b>Installing the SSMA for Access Client</b>\n<ol>\n<li>Double-click SSMAforAccess_<i>n</i>.msi, where <i>n</i> is the version number.</li>\n<li>On the 'Welcome' page, click Next.</li>\n<li>If you do not have the prerequisites installed, a message will appear that indicates that you must first install required components. Make sure that you have installed all prerequisites, and then run the installation program again.</li>\n<li>Read the End User License Agreement. If you agree to the terms, select \"I accept the agreement\" option and click Next.</li>\n<li>On the 'Choose Setup Type' page, click Typical.</li>\n<li>Click Install.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54255",
+    "downloadPreload": true
+}

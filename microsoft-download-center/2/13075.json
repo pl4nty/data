@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Log 10 synchronization counts for the .NET Framework",
+    "downloadDescription": "Analysis of the .NET Framework to count calls to Monitor.Enter in the call graph",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "log10sync.zip",
+            "url": "https://download.microsoft.com/download/9/2/a/92a2d637-d52c-4d6e-86cd-f4f79755d0b8/log10sync.zip",
+            "size": "1894982",
+            "version": "1",
+            "datePublished": "6/13/2024 11:52:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is an analysis of the .NET Framework in which all possible static paths that lead to Monitor.Enter are counted for every method disregarding those that come from one-time usage in the String class.  This is intended to illustrate the possible synchronization complexity of particular methods -- naturally since this explores all paths the actual cost of typicals calls of these methods is much lower.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "log10sync.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "any, this is plain text.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "The costs are presented in tab delimited form.  You may browse them with whatever viewer you prefer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13075",
+    "downloadPreload": true
+}

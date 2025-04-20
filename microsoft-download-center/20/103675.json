@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Getting Started with Azure Cosmos DB Graph",
+    "downloadDescription": "Getting Started with Azure Cosmos DB Graph",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Getting Started with Azure Cosmos DB Graph.pdf",
+            "url": "https://download.microsoft.com/download/8/8/7/88789562-c409-41b3-8178-f7b5a35e3aa9/Getting Started with Azure Cosmos DB Graph.pdf",
+            "size": "571418",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:05:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Gremlin is part of an Apache project providing a Graph computing framework called Tinkerpop. The main page of the project is here: https://tinkerpop.apache.org/. This document is based on the 3.3.2 version, which is the current version at the time of authoring this document.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Getting Started with Azure Cosmos DB Graph.pdf"
+    ],
+    "detailsSection_file_size": [
+        "558.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Gremlin is part of an Apache project providing a Graph computing framework called Tinkerpop. The main page of the project is here: https://tinkerpop.apache.org/. This document is based on the 3.3.2 version, which is the current version at the time of authoring this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103675",
+    "downloadPreload": true
+}

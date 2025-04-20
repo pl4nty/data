@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft FRx 6.7 Service Pack 10 (R10670) - Epicor iScala",
+    "downloadDescription": "Microsoft FRx works with a variety of general ledgers\u2014including Microsoft Dynamics products\u2014to help you get specific reports to decision-makers who need them, when they need them. Its financial analysis capabilities can help boost business intelligence across your company.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FRx10670_EpicoriScala.zip",
+            "url": "https://download.microsoft.com/download/7/3/f/73f10815-a8e9-44fd-801f-7d51c2930bf0/Epicor iScala R10670/FRx10670_EpicoriScala.zip",
+            "size": "54913585",
+            "version": "6.7 SP10",
+            "datePublished": "3/15/2024 3:13:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft FRx is an industry-leading, automated financial reporting and analysis application for small and midsize businesses, large corporations, and divisions of global enterprises. It is licensed by more than 130,000 sites worldwide to gain immediate control of the financial reporting process.\r\n\r\nMicrosoft FRx helps you to create the kind of financial reports your organization requires, when you want them, with the detail and flexibility you need to stay on top of the trends in your business. This means everyone can work more efficiently; you can close the books faster, and distribute critical financial information more effectively. Even more important, Microsoft FRx helps finance departments contribute more strategically to the success of their organizations by helping to enable stronger financial thinking and better-informed decisions. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.7 SP10",
+    "detailsSection_file_name": [
+        "FRx10670_EpicoriScala.zip"
+    ],
+    "detailsSection_file_size": [
+        "52.4 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Microsoft FRx 6.7 Service Pack 10 requires Microsoft .NET Framework 2.0. If .NET Framework 2.0 is not already installed on the workstation, the installation will display a message and exit. Please see the accompanying release notes for additional requirements and deployment instructions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "This service pack release contains the necessary files and components for updating and running the following Microsoft FRx programs: <br/>\r\n- FRx Report Designer <br/>\r\n- FRx DrillDown Viewer <br/>\r\n- FRx Report Launcher <br/>\r\n- FRx Report Manager <br/>\r\n- FRx Report Server <br/>\r\n- FRx Report Wizard<br/>\r\n- FRx WebPort <br/><br/>\r\nYou should install the service pack on all workstations and servers where Microsoft FRx is currently installed. All of your current Microsoft FRx programs will need to be updated with this service pack. The installation requires the existence of Microsoft FRx executables to be present or it will not install any files. All Microsoft FRx programs should be closed before the service pack is applied. Administrative permissions are required to install the service pack. The file FRxReg67.cmd is installed during the service pack installation. This program is designed to be run from any Microsoft FRx Network Client workstation and will register the files that have been updated by this service pack. Network Client workstations do not need to have the full service pack installed on them.<br/><br/>\r\nTo install this service pack, do the following: <br/>\r\n1)  Click the Download button (above) and save \r\n the file(s) to your hard drive, typically the C drive.<br/>\r\n2) Double-click each compressed file to extract the contents. You \r\n will be prompted to choose a location for the extracted files. <br/>\r\n3) Click <b>Extract</b>. <br/>\r\n4) After the files have been extracted, click <b>OK</b>. <br/>\r\n5) Go to the location of the service pack files you extracted and read the release notes before proceeding with the installation of the service pack.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8739",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Viva Topics pilot guide",
+    "downloadDescription": "This is a guide to running a pilot of Viva Topics, either as a trial or before deploying licenses.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-Viva-Topics-pilot-guide.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b874bd9-e7fb-4e57-9a31-b7705e40b2e1/Microsoft-Viva-Topics-pilot-guide.pdf",
+            "size": "1281415",
+            "version": "1",
+            "datePublished": "6/15/2024 4:53:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-Viva-Topics-pilot-guide.pptx",
+            "url": "https://download.microsoft.com/download/9/b/8/9b874bd9-e7fb-4e57-9a31-b7705e40b2e1/Microsoft-Viva-Topics-pilot-guide.pptx",
+            "size": "19128320",
+            "version": "1",
+            "datePublished": "6/15/2024 4:53:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a template, best practices, and examples for running a successful pilot of Viva Topics. A pilot program is a small-scale, short-term experiment for an organization to understand how a project, system, or product will work across the company. There can be several reasons for running a Viva Topics pilot\u2014such as doing a trial of Viva Topics to decide whether to purchase licenses for your company or as the first step of rolling out Viva Topics to your entire company post-purchase.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft-Viva-Topics-pilot-guide.pdf",
+        "Microsoft-Viva-Topics-pilot-guide.pptx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "18.2 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Microsoft PowerPoint or another application capable of viewing PowerPoint presentations",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>\r\nSelect the <b>Download</b> button to start the download.\r\n</li>\r\n<li>\r\nThe download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.\r\n</li>\r\n<li>\r\nSelect <b>Open file</b> or find the file on your device and open it.\r\n</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105182",
+    "downloadPreload": true
+}

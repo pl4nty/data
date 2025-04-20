@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Hyper-V\u2122 Server 2008 R2 SP1",
+    "downloadDescription": "Microsoft\u00ae Hyper-V\u2122 Server 2008 R2 SP1 is a standalone hypervisor based virtualization product.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MS_HVS_livemigration.doc",
+            "url": "https://download.microsoft.com/download/4/5/c/45caac5a-fd6b-45b0-aa79-f8c612a69dee/MS_HVS_livemigration.doc",
+            "size": "137216",
+            "version": "R2 SP1",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MS_HyperV_R2SP1_overview.doc",
+            "url": "https://download.microsoft.com/download/4/5/c/45caac5a-fd6b-45b0-aa79-f8c612a69dee/MS_HyperV_R2SP1_overview.doc",
+            "size": "167424",
+            "version": "R2 SP1",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Hyper-V_Server_R2_SP1_MultiLang.iso",
+            "url": "https://download.microsoft.com/download/4/5/c/45caac5a-fd6b-45b0-aa79-f8c612a69dee/Hyper-V_Server_R2_SP1_MultiLang.iso",
+            "size": "1644988416",
+            "version": "R2 SP1",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Hyper-V\u2122 Server 2008 R2 SP1 is a standalone product that provides a reliable and optimized virtualization solution enabling organizations to improve server utilization and reduce costs. With the addition of new features such as live migration and expanded processor and memory support for host systems, it allows organizations to consolidate workloads onto a single physical server and is a good solution for organizations who are consolidating servers as well as for development and test environments.  \r\n<br /><br />\r\nBy having the ability to plug into existing IT infrastructures Microsoft Hyper-V Server 2008 R2 enables companies to reduce costs, improve utilization and provision new servers. It allows IT professionals to leverage existing patching, provisioning, management and support tools and processes. IT Professionals can continue to leverage their individual skills and the collective knowledge of Microsoft tools, minimizing the learning curve to manage Microsoft Hyper-V Server 2008 R2. In addition, with Microsoft providing comprehensive support for Microsoft applications and heterogeneous guest operating systems support, customers can virtualize with confidence and peace of mind.\r\n<br /><br />\r\n\r\n<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "R2 SP1",
+    "detailsSection_file_name": [
+        "MS_HVS_livemigration.doc",
+        "MS_HyperV_R2SP1_overview.doc",
+        "Hyper-V_Server_R2_SP1_MultiLang.iso"
+    ],
+    "detailsSection_file_size": [
+        "134.0 KB",
+        "163.5 KB",
+        "1.5 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\nA list of supported guest operating systems can be found <a href=\"http://www.microsoft.com/windowsserver2008/en/us/hyperv-supported-guest-os.aspx\">here</a>\r\n<br /><br />\r\n <li><b>Processor </b>: x64 compatible processor with Intel VT or AMD-V technology enabled. <br />Hardware Data Execution Prevention (DEP), specifically Intel XD bit (execute disable bit) or AMD NX bit (no execute bit), must be available and enabled.  </li><br /><br />\r\n   <li><b>Minimum CPU speed </b>: 1.4 GHz; Recommended: 2 GHz or faster</li><br /><br />\r\n  <li><b>RAM </b>: Minimum: 1 GB RAM; Recommended: 2 GB RAM or greater (additional RAM is required for each running guest operating system); Maximum 1 TB</li><br /><br />\r\n  <li><b>Available disk space </b>: Minimum: 8 GB; Recommended: 20 GB or greater  (additional disk space needed for each guest operating system)</li><br /><br />\r\n  <li><b>DVD ROM drive </b></li><br /><br />\r\n  <li><b>Display </b>: Super VGA (800 \u00d7 600) or higher resolution monitor </li><br /><br />\r\n  <li><b>Other </b>: Keyboard and Microsoft Mouse or compatible pointing device </li><br /><br />\r\n<br />\r\n<b>Remote Administration:</b>\r\n<br />\r\nIn order to configure the new Hyper-V Server 2008 R2 SP1 feature settings (RemoteFX, Dynamic Memory), make sure to use the the latest Windows 7 SP1 Remote Server Administration Tool(RSAT) for the client or use Windows Server 2008 R2 SP1. The <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7d2f6ad7-656b-4313-a005-4e344e43997d\">Windows 7 SP1 RSAT tool</a> can be downloaded from <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7d2f6ad7-656b-4313-a005-4e344e43997d\">here</a>\r\n<br />\r\n<br />\r\nNote: The actual system requirements will vary based on your system configuration and hosted guest operating systems. <br /> \r\n</ul>\r\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Hyper-V Server 2008"
+    ],
+    "installInstructionSection": "<ul>\r\nPlease refer to the documents at the bottom of this page for further information:\r\n<br /><br />\r\n<b>Note:</b> You must have administrative rights on the computer to install Hyper-V Server 2008 R2.\r\n</ul>\r\n<br /><br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "remote Server Admin Tools for Win7",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=7d2f6ad7-656b-4313-a005-4e344e43997d"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20196",
+    "downloadPreload": true
+}

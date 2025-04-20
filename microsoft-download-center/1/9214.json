@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Accelerating Excel\u00ae 2010 with Windows\u00ae HPC Server 2008 R2: Converting Cluster-Safe UDFs for Offloading to a Windows\u00ae HPC Cluster",
+    "downloadDescription": "This article and accompanying code samples address how to convert convert an existing XLL file to enable offloading to a Windows HPC 2008 R2 cluster. The article also explains how UDF offloading works, performance considerations, and how to determine if a UDF is appropriate for cluster offloading.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BuildingHPCEnabledUDFs.zip",
+            "url": "https://download.microsoft.com/download/b/6/7/b6749a1d-cadf-4fae-998d-1a365ff3fb0f/BuildingHPCEnabledUDFs.zip",
+            "size": "164703",
+            "version": "August 2010",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BuildingHPCEnabledUDFs.docx",
+            "url": "https://download.microsoft.com/download/b/6/7/b6749a1d-cadf-4fae-998d-1a365ff3fb0f/BuildingHPCEnabledUDFs.docx",
+            "size": "388989",
+            "version": "August 2010",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Note: </b> Article and samples were updated for this release of Windows HPC 2008 R2. For more information about updating Excel solutions from Beta 2 , see the <a href=\"http://blogs.msdn.com/b/accelerating_things/archive/2010/07/06/excel-workbook-offloading-beta-transition-guide.aspx\">Excel Workbook Offloading Beta Transition Guide</a>.<br /><br />\r\n\r\n\r\nMicrosoft Excel 2010 extends the UDF model to the cluster by enabling Excel 2010 UDFs to run in a Windows HPC 2008 R2 cluster. In the cluster, UDFs work much like traditional UDFs, except that the calculation is performed by one or more servers. The key benefit is parallelization. If a workbook contains calls to long-running UDFs, multiple servers can be used to evaluate functions simultaneously. <br /><br />\r\n\r\nIn order to run on the cluster, the UDFs must be evaluated as appropriate for a cluster, marked as cluster-safe, and then the XLL file must be recompiled. This article walks through an example of how to convert an existing XLL file. The article also explains how UDF offloading works, performance considerations, and how to determine if a UDF is appropriate for cluster offloading..<br /><br />\r\n\r\nThe associated zip file includes: <br />\r\n<ul><li>Solutions for Visual Studio 2008 and Visual Studio 2010 for the sample XLL</li>\r\n<li>Two sample securities pricing workbooks that uses the UDF in the sample XLL</li>\r\n<li>XLL SDK files to support the sample code</li>\r\n</ul>\r\n<br /><br />\r\n<b>Note:</b> The workbooks contain macros. When you open the workbook, you may see a security warning indicating that the macros have been disabled. You can enable the macros by clicking \"Enable Content\".<br /><br />\r\n<b>Note:</b> Microsoft provides programming examples for illustration only, without warranty either expressed or implied, including, but not limited to, the implied warranties of merchantability and/or fitness for a particular purpose.\r\n<br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2010",
+    "detailsSection_file_name": [
+        "BuildingHPCEnabledUDFs.zip",
+        "BuildingHPCEnabledUDFs.docx"
+    ],
+    "detailsSection_file_size": [
+        "160.8 KB",
+        "379.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word of Word Viewer,\r\nMicrosoft Excel 2010,\r\nWindows HPC Server 2008 R2 cluster,\r\nVisual Studio 2008 or 2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "udf Offloading to Windows HPC 2008 R2",
+            "url": "http://technet.microsoft.com/en-us/library/ff601845(WS.10).aspx"
+        },
+        {
+            "title": "white Papers for Windows HPC 2008 R2",
+            "url": "http://technet.microsoft.com/en-us/library/ff627850(WS.10).aspx"
+        },
+        {
+            "title": " Microsoft Excel 2010 XLL Software Development Kit",
+            "url": "http://msdn.microsoft.com/en-us/library/bb687883.aspx"
+        },
+        {
+            "title": "hpc Services for Excel",
+            "url": "http://technet.microsoft.com/en-us/library/ff877820(WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9214",
+    "downloadPreload": true
+}

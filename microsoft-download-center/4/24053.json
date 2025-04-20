@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Christian Weyer on the Internet Service Bus",
+    "downloadDescription": "Carl and Richard talk with Christain Weyer about the features and functionality of the new Microsoft Internet Service Bus.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080219CWeyer.zip",
+            "url": "https://download.microsoft.com/download/7/5/0/75022fef-19b3-42e6-b811-530c9316e91d/20080219CWeyer.zip",
+            "size": "44706415",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:48:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Christian Weyer is software architect with thinktecture, a company assisting software architects and developers in projects to realize distributed application architectures. He is fascinated by the opportunities of both service-orientation and the Web, beyond the browser and colorful user interfaces. With a strong historical background in distributed systems and applying technologies like WCF and WCF in the past years in customer projects, Christian is currently focusing on the possibilities to leverage the Web for connected systems, inside and outside the firewall and works closely with the 'Biztalk Services' team at Microsoft. Buzzwords like S+S, Cloud Computing and Internet Service Bus are just the tip of the iceberg for him. Christian is MVP for Connected Systems and Microsoft Regional Director for Germany. Read more about Christian at <a href=\"http://www.thinktecture.com/staff/christian\">http://www.thinktecture.com/staff/christian</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080219CWeyer.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.6 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24053",
+    "downloadPreload": true
+}

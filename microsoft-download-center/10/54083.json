@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Operations Manager - Extensible Network Monitoring Management Pack Generator tool",
+    "downloadDescription": "Network Monitoring MP Generator tool enables users to generate custom management packs to get extended monitoring for their network devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SNMP_MPGeneratorUserGuide.docx",
+            "url": "https://download.microsoft.com/download/5/1/4/514c7c4e-72cb-4aad-94c7-8e85ce9b8caf/SNMP_MPGeneratorUserGuide.docx",
+            "size": "429831",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SNMP_MPGenerator.zip",
+            "url": "https://download.microsoft.com/download/5/1/4/514c7c4e-72cb-4aad-94c7-8e85ce9b8caf/SNMP_MPGenerator.zip",
+            "size": "35421811",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b> Tool Details </b>\r\n<br/>\r\n\r\nNetwork Monitoring Management Pack Generator tool package includes a UI tool - SNMP_MPGenerator.exe and a command line tool - NetMonMPGenerator.exe. <br/>\r\n\r\n<ul>\r\n<li> SNMP_MPGenerator tool has an inbuilt MIB browser. Users can load MIB files, search through the Object Identifiers (OIDs) related to devices and components they wish to monitor. </li>\r\n<li> This tool would support custom network devices in addition to already supported device type such as Switch, Router, Firewall and Load Balancer. Users can define monitors and rules targeted to the network devices.</li>\r\n<li> Users can also discover and monitor discrete components of network devices. They can create monitors and rules for device components such as Processor, Memory, Fan, Temperature Sensor, Power Supply, Voltage Sensor and Custom device components. </li>\r\n<li> Users can define monitors and rules for multiple devices in a single project file and generate a single Management Pack for all those devices. </li>\r\n<li> NetMonMPGenerator.exe is a command line tool for users who wish to generate MP through command line. Users would need to provide an input XML to the command line tool to generate custom MP. The input XML would have all the device information and workflows (monitors and rules) defined on the device.  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SNMP_MPGeneratorUserGuide.docx",
+        "SNMP_MPGenerator.zip"
+    ],
+    "detailsSection_file_size": [
+        "419.8 KB",
+        "33.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Management Packs generated using this tool are compatible with System Center 2016 Operations Manager and System Center 2012 Operations Manager R2.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>System Center Operations Manager Network Monitoring Management Pack Generator </b> <br/>\r\n<ol>\r\n<li> Click the Download button, and download SNMP_MPGenerator zip file. </li>\r\n<li> Extract SNMP_MPGenerator.zip to your desired location. </li>\r\n<li> SNMP_MPGenerator.exe would be the UI tool to generate custom management packs. </li>\r\n<li> NetMonMPGenerator.exe would be the command line equivalent. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54083",
+    "downloadPreload": true
+}

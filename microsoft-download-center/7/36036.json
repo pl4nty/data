@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft, Version 1 and 2",
+    "downloadDescription": "This document discusses Pass-the-Hash (PtH) attacks against the Windows operating systems and provides holistic planning strategies that, when combined with the Windows security features, will provide a more effective defense against pass-the-hash attacks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft Techniques_English.pdf",
+            "url": "https://download.microsoft.com/download/7/7/a/77abc5bd-8320-41af-863c-6ecfb10cb4b9/Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft Techniques_English.pdf",
+            "size": "1302006",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf",
+            "url": "https://download.microsoft.com/download/7/7/a/77abc5bd-8320-41af-863c-6ecfb10cb4b9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf",
+            "size": "1132657",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document discusses Pass-the-Hash (PtH) attacks against the Windows operating systems and encourages organizations to assume that a breach has already occurred in order to highlight the need for a more mature defense. It provides holistic planning strategies that IT pros should consider implementing when architecting a credential theft defense. These strategies, when combined with the Windows security features, will provide a more effective defense against pass-the-hash attacks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Mitigating Pass-the-Hash (PtH) Attacks and Other Credential Theft Techniques_English.pdf",
+        "Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36036",
+    "downloadPreload": true
+}

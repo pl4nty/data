@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Government Contracting and Microsoft Dynamics AX",
+    "downloadDescription": "White paper on Government Contracting requirements and considerations in planning for a Dynamics AX implementation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Government Contracting and Microsoft Dynamics AX USv1.0.pdf",
+            "url": "https://download.microsoft.com/download/0/7/0/070d5a0d-21a8-4f29-ae9a-078dc10f5baf/Government Contracting and Microsoft Dynamics AX USv1.0.pdf",
+            "size": "790852",
+            "version": "1",
+            "datePublished": "6/13/2024 12:37:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This two-part white paper, authored by accounting firm McGladrey and published by Microsoft, offers factual information on regulatory compliance requirements faced by government contractors and an assessment of known gaps that customers and partners may need to bridge when planning a Dynamics AX implementation.\r\n\r\nPart 1 offers a \"Government contractor\u2019s guide to regulatory compliance and requirements for an Enterprise Resource Planning solution.\"\r\nPart 2 provides a \"Baseline gap-fit assessment of Microsoft Dynamics AX as an ERP for government contracting.\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Government Contracting and Microsoft Dynamics AX USv1.0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "772.3 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Dynamics AX 2012 R3",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download available to audiences in the United States.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft in Government Contracting",
+            "url": "http://www.microsoft.com/dynamics/govcon"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43358",
+    "downloadPreload": true
+}

@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Technical support documents for Hybrid Hypersacle offer",
+    "downloadDescription": "Implementation guidance and technical details for the Hybrid Hypersacle offer",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2016 - Query Store1.pptx",
+            "url": "https://download.microsoft.com/download/0/f/2/0f29adc7-a971-4df0-8a1c-8d4167ba643a/Hybrid Hyperscale/SQL Server 2016 - Query Store1.pptx",
+            "size": "7959369",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2016 - Always On.pptx",
+            "url": "https://download.microsoft.com/download/0/f/2/0f29adc7-a971-4df0-8a1c-8d4167ba643a/Hybrid Hyperscale/SQL Server 2016 - Always On.pptx",
+            "size": "7947538",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "In-Memory.zip",
+            "url": "https://download.microsoft.com/download/0/f/2/0f29adc7-a971-4df0-8a1c-8d4167ba643a/Hybrid Hyperscale/In-Memory.zip",
+            "size": "8194390",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package you will find all technical documents that support the implementation of secure database offer, includes the Always on, query store, in-memory",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server 2016 - Query Store1.pptx",
+        "SQL Server 2016 - Always On.pptx",
+        "In-Memory.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.6 MB",
+        "7.6 MB",
+        "7.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the technical supporting materials you need to implement a secure database offer. You may want to download all of them or chose the ones you need.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52989",
+    "downloadPreload": true
+}

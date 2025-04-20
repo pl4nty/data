@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Configuration Manager R2 - Disaster Recovery for Entire Hierarchy and Standalone Primary Site recovery scenarios ",
+    "downloadDescription": "Configuration Manager 2012 R2 disaster recovery is a complex process. It requires sufficient knowledge of the Configuration Manager Product & dependent components. This document describes the steps to recover a full Configuration Manager 2012 R2 hierarchy in case of disaster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Disaster Recovery of ConfigMgr 2012 R2 - v1.00.pdf",
+            "url": "https://download.microsoft.com/download/2/9/6/29637416-d86a-49ef-98c6-91fffb0a3316/Disaster Recovery of ConfigMgr 2012 R2 - v1.00.pdf",
+            "size": "4922324",
+            "version": "1",
+            "datePublished": "7/15/2024 3:24:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Configuration Manager 2012 R2 disaster recovery is a complex process. It requires sufficient knowledge of the Configuration Manager Product & dependent components. This document describes the steps to recover a full Configuration Manager 2012 R2 hierarchy in case of disaster.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Disaster Recovery of ConfigMgr 2012 R2 - v1.00.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 Configuration Manager R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download</li>\r\n<li>Where you see a company or publisher listed in a security message, make sure the company name is <b>Microsoft Corporation</b>, and then click <b>Continue</b>, or <b>Allow</b>. </li>\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44295",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Eric Brechner on IM Wright's Hard Code",
+    "downloadDescription": "Carl and Richard talk to Eric Brechner, the author of the book 'I. M. Wright's Hard Code', an opinion blog (and book) with a tude!",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080619EBrechner.zip",
+            "url": "https://download.microsoft.com/download/4/c/5/4c5efe4b-ac91-422f-ad2f-552e9e5a33bc/20080619EBrechner.zip",
+            "size": "43268643",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:12:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Eric Brechner is the director of engineering learning and development for Microsoft Corporation. His group is responsible for improving the people, processes, and practices of software development across Microsoft through the application of Human Performance Technology. Prior to his current assignment, Eric was director of development training and managed development for a shared feature team in Microsoft Office. Before joining Microsoft in 1995, Eric was a senior principal scientist at The Boeing Company, where he worked in the areas of large-scale visualization, computational geometry, network communications, data-flow languages, and software integration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080619EBrechner.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.3 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2879",
+    "downloadPreload": true
+}

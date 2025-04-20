@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk RFID Server 2013/2013 R2 and BizTalk RFID Mobile 2013 Help",
+    "downloadDescription": "This page provides downloadable Help files for BizTalk RFID Server 2013, BizTalk RFID Server 2013 R2, and BizTalk RFID Mobile 2013",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallingBizTalkServerRFID_EN.exe",
+            "url": "https://download.microsoft.com/download/5/a/d/5ad254ba-ad27-41cd-95ea-6f7cd621f60b/InstallingBizTalkServerRFID_EN.exe",
+            "size": "6164336",
+            "version": "1",
+            "datePublished": "7/15/2023 3:33:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "InstallingBizTalkRFIDMobile_EN.exe",
+            "url": "https://download.microsoft.com/download/5/a/d/5ad254ba-ad27-41cd-95ea-6f7cd621f60b/InstallingBizTalkRFIDMobile_EN.exe",
+            "size": "5176176",
+            "version": "1",
+            "datePublished": "7/15/2023 3:33:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This page provides downloadable installation guide and CHM files for BizTalk RFID Server 2013, BizTalk RFID Server 2013 R2, and BizTalk RFID Mobile 2013",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "InstallingBizTalkServerRFID_EN.exe",
+        "InstallingBizTalkRFIDMobile_EN.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.9 MB",
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2023",
+    "systemRequirementsSection": "<ul>\r\n<li>For CHM and HTM files: No special software needed.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click the Download button next to the desired file.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click Open.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save.</li>\r\n<li>To cancel the installation, click Cancel.</li>\r\n<li> After you have downloaded the Help files, copy the contents of the download to the \\Documentation folder where BizTalk RFID Server or BizTalk RFID Mobile is installed.</li>\r\n</ul></li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38167",
+    "downloadPreload": true
+}

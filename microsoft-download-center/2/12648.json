@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Step-by-Step Guide for Testing Hyper-V and Failover Clustering",
+    "downloadDescription": "Shows you how to test using Hyper-V and Failover Clustering together to make a virtual machine highly available.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SxS_Virt_Clus.doc",
+            "url": "https://download.microsoft.com/download/4/f/0/4f0f8155-8ef9-42d5-a8ae-31b3aec9319d/SxS_Virt_Clus.doc",
+            "size": "220672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Shows you how to make a virtual machine highly available. You will do this by creating a simple two-node cluster and a virtual machine, and then failing over the virtual machine from one node to the other.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SxS_Virt_Clus.doc"
+    ],
+    "detailsSection_file_size": [
+        "215.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "1. Click the Download button to start the download.<br />\n2. Do one of the following:<br />\nTo view the document immediately, click Open or Run this program from its current location.<br />\n To copy the document to your computer for viewing at a later time, click Save or Save this program to disk",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12648",
+    "downloadPreload": true
+}

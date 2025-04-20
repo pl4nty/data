@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2016 SP2 (KB4532097)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2016 SP2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016-KB4532097-x64.exe",
+            "url": "https://download.microsoft.com/download/6/d/8/6d8acd3e-e624-4256-8265-07c39b25e9ad/SQLServer2016-KB4532097-x64.exe",
+            "size": "519276592",
+            "version": "13.0.5102.14",
+            "datePublished": "7/15/2024 4:21:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "First Security Vulnerability fix:<br/>\r\nA remote code execution vulnerability exists in Microsoft SQL Server Reporting Services when it incorrectly handles page requests. An attacker who successfully exploited this vulnerability could execute code in the context of the Report Server service account.<br/>\r\nTo exploit the vulnerability, an authenticated attacker would need to submit a specially crafted page request to an affected Reporting Services instance.<br/>\r\nThe security update addresses the vulnerability by modifying how the Microsoft SQL Server Reporting Services handles page requests.<br/><br/>\r\n\r\nSecond Security Vulnerability fix:<br/>\r\nA cross-site scripting (XSS) vulnerability exists when Microsoft SQL Server Reporting Services (SSRS) does not properly sanitize a specially-crafted web request to an affected SSRS server. An attacker who successfully exploited the vulnerability could run scripts in the context of the targeted user. The attacks could allow the attacker to read content that the attacker is not authorized to read, execute malicious code, and use the victim's identity to take actions on the site on behalf of the user, such as change permissions and delete content.<br/>\r\nTo exploit the vulnerability, an attacker would need to convince an authenticated user to click a specially-crafted link to an affected SSRS server.<br/>\r\nThe security update addresses the vulnerability by correcting SSRS URL sanitization.<br/><br/>\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article - <a name=\"KB4532097\"></a><a href=\"http://support.microsoft.com/help/4532097\">KB4532097</a><br/><br/>\r\n\r\nThe following SQL Server security updates contain both SQL Server Reporting Services fixes are available for download:<br/>\r\n<a name=\"KB4535706\"></a><a href=\"http://support.microsoft.com/help/4535706\">Security Update for SQL Server 2016 SP2 CU11 (KB4535706)</a><br />\r\n<a name=\"KB4532097\"></a><a href=\"http://support.microsoft.com/help/4532097\">Security Update for SQL Server 2016 SP2 GDR (KB4532097)</a><br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.5102.14",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB4532097-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "495.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 SP2 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or save it on your local disk to install at a later time.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4505222",
+            "url": "https://support.microsoft.com/en-us/help/4505222"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100912",
+    "downloadPreload": true
+}

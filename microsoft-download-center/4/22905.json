@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Python Code Samples for the Live Search API",
+    "downloadDescription": "Example code for calling the Live Search SOAP web service in your Python application",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Python Live Search Sample.zip",
+            "url": "https://download.microsoft.com/download/9/f/b/9fb609a5-515c-4d2a-8e52-b2283b525821/Python Live Search Sample.zip",
+            "size": "48651",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:07:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This code sample demonstrates how to use the Live Search SOAP web service in your Python application. It includes examples of all major functionality provided by the web service and includes a reusable module to simplify the API calls.<br />\n<br />\nFor the latest updates and news on the Live Search API, please subscribe to the <a href=\"http://dev.live.com/blogs/livesearch/rss.aspx\">Live Search Developer's Blog</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Python Live Search Sample.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.5 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Please refer to the README.html file in the download archive for detailed information about requirements. Following is a summary of the major requirements:<br />\n<br />\n - Python 2.4.4 (http://www.python.org/download/releases/2.4.4/) <br />\n - SOAPpy 0.12.0 (http://sourceforge.net/project/showfiles.php?group_id=26590&package_id=18246) <br />\n - The instructions are specific to Apache 2.2 (http://httpd.apache.org/), but this sample should work with other web servers as well. <br />\n - An Application ID that will allow this sample to access the Live Search Web Service",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Unix",
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Please refer to the README.htm file for detailed instructions",
+    "relatedResourcesSection": [
+        {
+            "title": "live Search Interactive SDK",
+            "url": "http://dev.live.com/livesearch/sdk"
+        },
+        {
+            "title": "live Search Developer Center",
+            "url": "http://dev.live.com/livesearch"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22905",
+    "downloadPreload": true
+}

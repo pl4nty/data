@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager Connector 3.0 for Exchange",
+    "downloadDescription": "The System Center Service Manager \u2013 Exchange Connector 3.0 connects Service Manager to Exchange for processing incoming emails related to incidents and change requests.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SM2012_EC_DepGuide.docx",
+            "url": "https://download.microsoft.com/download/2/d/3/2d3d36b4-0099-4219-bfb9-e568faf4d4fe/SM2012_EC_DepGuide.docx",
+            "size": "348613",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:34:31 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "System_Center_Service_Manager_Connector_3.0_for_Exchange.exe",
+            "url": "https://download.microsoft.com/download/2/d/3/2d3d36b4-0099-4219-bfb9-e568faf4d4fe/System_Center_Service_Manager_Connector_3.0_for_Exchange.exe",
+            "size": "468696",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:34:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Please note:</b> a new version, Exchnage Connector 3.1 is now available for System Center 2012R2 Service Manager. You can download it from <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=45291\">here</a>.<br/>\r\n<br/>\r\nExchange Connector connects Service Manager to Exchange for processing incoming emails related to work items. Once Exchange Connector has been configured to monitor exchange mailboxes, it can be used to create and update work items based on templates specified by the admin. By specifying special keywords to look for in the incoming emails, admins can configure Exchange Connector to perform actions like approving or rejecting review activities, or enable activity implementers to mark activities assigned to them as completed.<br/>\r\n<br/>\r\n\r\nRelease History:<br/>\r\n7/2011 - <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=8ac0586f-4708-4937-a8b6-69008b0447a0\">Version 2.0</a> (supported with System Center Service Manager 2010)<br/>\r\n4/2013 - Version 3.0<br/>\r\n10/2013 - Version 3.0 re-release<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "SM2012_EC_DepGuide.docx",
+        "System_Center_Service_Manager_Connector_3.0_for_Exchange.exe"
+    ],
+    "detailsSection_file_size": [
+        "340.4 KB",
+        "457.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 SP1 - Service Manager Update Rollup 2<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>Please note:</b> a new version, Exchnage Connector 3.1 is now available for System Center 2012R2 Service Manager. You can download it from <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=45291\">here</a>.<br/>\r\n<br/>\r\n\r\nDownload the following files:\r\n<ul>\r\n<li>System_Center_Service_Manager_Connector_3.0_for_Exchange.exe</li>\r\n<li>SC2012_EC_DepGuide.docx</li>\r\n</ul>\r\nRead the System_Center_Service_Manager_Connector_3.0_for_Exchange_Deployment_Guide.rtf for installation instructions<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38791",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrating Forefront Identity Manager 2010 Certificate Management Smart Card Centralized Registration",
+    "downloadDescription": "Demonstrating FIM CM using a centralized smart card registration model in a test lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_CM_TLG_Central_SC.docx",
+            "url": "https://download.microsoft.com/download/4/9/c/49c9c10a-39ca-423b-bcf6-c3f3b99c72af/FIM_CM_TLG_Central_SC.docx",
+            "size": "2477362",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document will assist architects, consultants, system engineers, and system administrators in deploying smart cards with Microsoft\u00ae Forefront\u00ae Identity Manager 2010 Certificate Management in a test lab.  The resulting FIM CM test lab will demonstrate the use of smart cards in a Centralized Registration model.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FIM_CM_TLG_Central_SC.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems:  Windows Server 2008 R2\n\nMicrosoft SQL Server 2008 with Service Pack 2\n\nMicrosoft Exchange 2010 with Service Pack 1\n\nMicrosoft Forefront Identity Manager 2010\n\nUpdate 1 for Microsoft Forefront Identity Manager 2010\r\n\r\nUSB Smart Card reader\r\n\r\nGemalto .NET Smart Card",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Ultimate 64-bit",
+        "Windows Server 2008 R2 Enterprise"
+    ],
+    "installInstructionSection": "\r\ntest lab guide TLG FIM Forefront Identity Manager 2010 MIIS ILM CM CLM certificate lifecycle manager smart card",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26146",
+    "downloadPreload": true
+}

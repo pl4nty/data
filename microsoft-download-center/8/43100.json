@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Disable Shared Cache Service Managed Availability probes",
+    "downloadDescription": "\"Shared Cache Service Restart\" probe fix",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DisableSharedCacheServiceProbe.ps1",
+            "url": "https://download.microsoft.com/download/d/d/e/dde432c9-c344-4d50-a4f8-900ec4640930/DisableSharedCacheServiceProbe.ps1",
+            "size": "1705",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:38:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PowerShell script to disable Microsoft Exchange Server Shared Cache Service Managed Availability probes.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2971467",
+        "name": "KB2971467"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DisableSharedCacheServiceProbe.ps1"
+    ],
+    "detailsSection_file_size": [
+        "1.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2013 CU5 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2013 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\" http://go.microsoft.com/fwlink/?LinkId=392032\">Exchange 2013 System Requirements</a></li>\n<li><a href=\" http://go.microsoft.com/fwlink/?LinkId=392033\">Exchange 2013 Prerequisites</a></li>\n</ul>\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Execute this PowerShell script on any server running CU5 experiencing the symptoms identified in KB2971467.  No parameters are required on this script.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43100",
+    "downloadPreload": true
+}

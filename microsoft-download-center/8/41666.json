@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Surface Pro UEFI CA",
+    "downloadDescription": "Microsoft Surface Pro UEFI CA OEM PK Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OEM_PK_Surface.zip",
+            "url": "https://download.microsoft.com/download/6/0/c/60c518fd-48aa-40a2-a9bf-601aad3c11a1/OEM_PK_Surface.zip",
+            "size": "408789",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:39:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Surface Pro and Surface Pro 2 systems currently do not include the Microsoft UEFI Certification Authority certificate in the system UEFI Secure Boot database. If present, this certificate would be in the Allowed Database (also referred to as \u201cdb\u201d), enabling the execution of 3rd party UEFI applications and drivers that have been signed by the Microsoft UEFI CA. The tool bundled with this release enables the addition of the Microsoft UEFI Certification Authority certificate to the db. This tool is intended for use by IT professionals and advanced users who require the execution of 3rd party UEFI applications and drivers on a Secure Boot enabled system. Users of the tool should be familiar with the concepts of UEFI, Secure Boot, and BitLocker. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OEM_PK_Surface.zip"
+    ],
+    "detailsSection_file_size": [
+        "399.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Surface Pro\r\nSurface Pro 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This tool performs the following operations on the system: \r\n1. Adds the Microsoft UEFI Certification Authority certificate to the Allowed Database \u2018db\u2019. Keys that are currently provisioned in the db will not be affected by this step. \r\n\r\n2. Updates the Revoked Signatures Database \u2018dbx\u2019 with the most recent UEFI revoked signatures list. This step enhances the security of the system by denying Secure Boot to components which are signed with a compromised certificate.\r\n\r\nPlease refer to the documentation bundled with this release prior to use of the tool.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41666",
+    "downloadPreload": true
+}

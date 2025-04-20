@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Team System 2008 Team Foundation Server Management Pack for System Center Operations Management 2007",
+    "downloadDescription": "Supports auto discovery of TFS components, health model using Monitors, includes tasks, diagnostic and recovery for certain failures.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TFSMP2007V1.msi",
+            "url": "https://download.microsoft.com/download/0/e/c/0ec31858-5a95-4ab6-b431-a2514cd1b3c8/TFSMP2007V1.msi",
+            "size": "2912256",
+            "version": "1.0.0.2",
+            "datePublished": "6/15/2024 4:19:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Team Foundation Server (TFS) 2008 Management Pack monitors exposed services of TFS. This management pack includes event rules and monitors. It is designed to proactively monitor quality and availability of TFS services and even automate recovery in some scenarios. <br/>\n<br/>\n<b>Feature Summary </b> <br/>\n<ul>\n<li> Auto discovery of TFS components </li>\n<li> Leverages ASP.NET MP and SQL MP </li>\n<li> Implements containment hierarchy reflecting logical architecture of the Product </li>\n<li> Implements a proper health model using Monitors </li>\n<li> Contains tasks, diagnostic and recovery for certain failures </li>\n<li> Events indicating service outages  </li>\n<li> Alerts indicating configuration issues and connected data source changes.  </li>\n<li> Verification that all dependant services are running.  </li>\n<li> Targeted running of BPA against TFS Servers from Operator Console  </li>\n</ul>\nNew monitoring capabilities can be easily added. <br/>\n<br/>\n<b>Release History</b><br/>\n<ul>\n<li>11/26/2008 - Original release of the English version, version 1.0.0.2 </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.2",
+    "detailsSection_file_name": [
+        "TFSMP2007V1.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li><b>Other Software</b></li><br />\n<ul><br />\n<li> System Center Operations Manager 2007 </li><br />\n<li> Visual Studio Team Foundation Server 2008 </li><br />\n<li> ASP.NET 2.0 MP and SQL MP  </li><br />\n</ul><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<b>To download the module</b><br/>\n<ol>\n<li> Click on the link to the right, and download the management pack module </li>\n<li> On the Microsoft Operations Manager server (DCAM), click on the executable to extract the files into a temporary directory </li>\n</ol><br/>\n<b>Importing a Management Pack Module</b><br/>\nYou can import this management pack module using the Microsoft Operations Manager administrative console and following these steps:<br/>\n<ol>\n<li> Open the <b>Microsoft Operations Manager Operator console</b> </li>\n<li> Click on the <b>Administrator</b> pane at the bottom left corner </li>\n<li> Expand the <b>Management Packs node</b> in the tree view </li>\n<li> Click on the <b>Import Management Pack</b> on the <b>\u201cActions\u201d </b>pane on the right and then browse to the folder where you extracted the MP and then import it.  </li>\n<li>\nFollow the instructions until you have finished importing the management pack module. </li>\n</ol>\n<b>Note:</b> Prior to step#4, the <b>SQL MP</b> and <b>ASP.NET 2.0 MP</b> should have been imported.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14720",
+    "downloadPreload": true
+}

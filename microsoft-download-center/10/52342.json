@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "HD View Utilities (32 bit)",
+    "downloadDescription": "The HD View Utilities are a set of tools that help you create stunning HD View images. Last published: April 26, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "hdviewutil-1.11-for-32-bit-Windows.msi",
+            "url": "https://download.microsoft.com/download/3/c/1/3c1a4051-beb1-47cc-99cc-9633bca3fd9c/hdviewutil-1.11-for-32-bit-Windows.msi",
+            "size": "1127424",
+            "version": "1.11",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The HD View Utilities are a set of tools that help you create stunning HD View images. This package includes a Photoshop plug-in that enables you to export an HD View Web page or a cross-platform Silverlight Deep Zoom page from within Photoshop. Also included is hdmake, which a simple command-line utility that provides the same function for users who don\u2019t own Photoshop.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.11",
+    "detailsSection_file_name": [
+        "hdviewutil-1.11-for-32-bit-Windows.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52342",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "eBook - Containerized Docker Application Lifecycle with Microsoft Platform and Tools",
+    "downloadDescription": "eBook - Guidance on End-to-End Containerized Docker Application Lifecycle with Microsoft Platform and Tools, including Docker support in Microsoft Azure, Visual Studio and VSTS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Containerized Docker Application Lifecycle with Microsoft Platform and Tools (eBook).pdf",
+            "url": "https://download.microsoft.com/download/7/6/8/768e8e11-1c4b-4c5c-9211-96918c324722/Containerized Docker Application Lifecycle with Microsoft Platform and Tools (eBook).pdf",
+            "size": "4919530",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:36:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Purpose: This guide provides end-to-end guidance on the Docker application development lifecycle with Microsoft tools and services while providing an introduction to Docker development concepts for readers who might be new to the Docker ecosystem. This way, anyone can understand the global picture and start planning development projects based on Docker and Microsoft technologies/cloud. ---- \r\nAudience: The audience for this guide is mainly about Development Leads, Architects, and IT Operations people who are new to Docker-based application development and would like to learn how to implement the whole Docker application lifecycle with Microsoft technologies and services in the cloud. \r\nA secondary audience is technical decision makers who are already familiar to Docker but who would like to know the Microsoft portfolio of products, services, and technologies for the end-to-end Docker application lifecycle.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Containerized Docker Application Lifecycle with Microsoft Platform and Tools (eBook).pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10",
+        "Windows 7"
+    ],
+    "installInstructionSection": "Download and open the document using any .PDF reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54266",
+    "downloadPreload": true
+}

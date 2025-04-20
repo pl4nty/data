@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Steve Teixeira on Parallelism",
+    "downloadDescription": "Carl and Richard talk to Steve Teixeira, Product Unit Manager for the Parallel Development Tools team within Developer Division's Parallel Computing Platform organzation at Microsoft. The conversation is mostly around the future of parallel computing highlighting offerings that Microsoft is currently working on.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080909STeixeira.zip",
+            "url": "https://download.microsoft.com/download/4/0/1/4011c3f2-5a55-4fd5-86c8-2650da801f98/20080909STeixeira.zip",
+            "size": "44680207",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Steve Teixeira is the Product Unit Manager for the Parallel Development Tools team within Developer Division's Parallel Computing Platform organzation. The Parallel Development Tools team is responsible for envisioning, incubating, and shipping the tools needed by software developers to build applications that fully leverage multi/many-core CPUs.  Steve is the best-selling author of five award-winning books and numerous magazine articles on software development, and his writings are distributed worldwide in more than a dozen languages. Steve is also frequent speaker at industry conferences and events worldwide. You can reach Steve via email at stevetei at microsoft dot com.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080909STeixeira.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16667",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2013 Rollout and Adoption Success Kit (RASK) Core Planning Resources",
+    "downloadDescription": "The Lync 2013 Rollout and Adoption Success Kit (RASK) Core Planning Resources download contains four pivotal documents designed to help plan and execute your rollout and adoption strategy for Lync 2013, when used alongside the Lync 2013 Rollout and Adoption Success Kit (RASK). ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RASK_Core_Planning_Resources.zip",
+            "url": "https://download.microsoft.com/download/c/7/8/c78c7a83-28ae-45c5-b6ad-3daefdcd4b46/RASK_Core_Planning_Resources.zip",
+            "size": "1860070",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:23:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The Lync 2013 RASK Core Planning Resources contains four pivotal documents designed to help plan and execute your rollout and adoption strategy for Lync 2013. Intended for use with the <a href=\"http://go.microsoft.com/fwlink/?LinkId=287100\">Lync 2013 Rollout and Adoption Success Kit (RASK)</a>, this download includes the following four core resources:\r\n\r\n<ul>\r\n<li><b>Lync Deployment Readiness Report</b>   This customizable report helps you define your success metrics and gauge readiness to move between the rollout phases of RASK. In addition, this report enables you to track your rollout progress across various work streams and stakeholders, making it an ideal resource for keeping project teams aligned and for sharing progress with key decision makers or executive sponsors.</li>\r\n<li><b>Lync Deployment Readiness Report Guide</b>   This guide describes how to customize the Lync Deployment Readiness Report and apply it to your own situation and project goals.</li>\r\n<li><b>Lync Rollout and Adoption Workbook</b>   Essentially a comprehensive project plan template, the Workbook details individual tasks across the defined phases and focus areas and allows you to track day-to-day activities to completion.  The Workbook is a complement to the Deployment Readiness Report which enables a more holistic view and determine \"go/no-go\" decisions at the major milestones of your deployment.  </li>\r\n<li><b>Guide to the Lync Rollout and Adoption Workbook</b>   This guide describes how to use the new features introduced in the latest version of the Lync 2013 Rollout and Adoption Workbook, including new dashboard and project tracking functionality.</li></ul>\r\n\r\nIt is highly recommended that you also leverage all of the valuable templates and resources available for RASK, available for download at <a href=\"http://go.microsoft.com/fwlink/?LinkId=285377\">Lync 2013 Rollout and Adoption Success Kit (RASK) Resources</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "RASK_Core_Planning_Resources.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2013; Microsoft Office 2010; Microsoft Office 2007; Microsoft Office 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install this download, save the .zip file to a directory on your computer, and then extract the .zip files to a local folder. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42067",
+    "downloadPreload": true
+}

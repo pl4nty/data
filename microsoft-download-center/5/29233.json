@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone SDK 7.1.1 Update",
+    "downloadDescription": "Windows Phone SDK 7.1.1 Update offers developers tools and options to help them develop and test applications for 256-MB Windows Phone devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Release Notes - WP SDK 7.1.1.htm",
+            "url": "https://download.microsoft.com/download/5/6/c/56c12272-31da-44cd-bba3-603aa47fe564/Release Notes - WP SDK 7.1.1.htm",
+            "size": "22504",
+            "version": "7.1.1",
+            "datePublished": "7/15/2024 3:11:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WPSDK-7.1.1-KB2669191-x86.exe",
+            "url": "https://download.microsoft.com/download/5/6/c/56c12272-31da-44cd-bba3-603aa47fe564/WPSDK-7.1.1-KB2669191-x86.exe",
+            "size": "304737408",
+            "version": "7.1.1",
+            "datePublished": "7/15/2024 3:11:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "<BR></BR>\r\nThe Windows Phone SDK 7.1.1 Update provides additional functionality to the existing Windows Phone SDK 7.1. Using this update, you can more easily develop apps and games that are optimized to run on 256-MB devices. This update includes a new 256-MB version of Windows Phone Emulator, an updated 512-MB version of Windows Phone Emulator, and IntelliSense support.<BR></BR>\r\n<BR></BR>\r\n<B>Windows Phone SDK 7.1.1 Update includes the following</B>\r\n<UL>\r\n<LI>New 256-MB version of Windows Phone Emulator</LI>\r\n<LI>Updated 512-MB version Windows Phone Emulator</LI>\r\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2669191",
+        "name": "KB2669191"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.1",
+    "detailsSection_file_name": [
+        "Release Notes - WP SDK 7.1.1.htm",
+        "WPSDK-7.1.1-KB2669191-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.0 KB",
+        "290.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Windows Vista\u00ae with Service Pack 2 32-bit (x86) and 64-bit (x64) versions (all editions except Windows 7 Starter)</LI>\r\n<LI>Windows 7 32-bit (x86) and 64-bit (x64) versions (all editions except Windows 7 Starter)</LI>\r\n</UL>\r\n<B>Hardware </B>\r\n<UL>\r\n<LI>Installation requires 1.5 GB of free disk space on the system drive.</LI>\r\n<LI> 3 GB RAM</LI>\r\n</UL>\r\n<B>Windows Phone Emulator</B>\r\n<UL>\r\n<LI>Windows Phone Emulator requires a Microsoft DirectX\u00ae 10 or DirectX 11 graphics card with Windows Display Driver Model (WDDM) 1.1 driver and DDI 10 and later versions.</LI>\r\n<LI>Windows Phone Emulator requires GPU emulation to support certain scenarios such as profiling application performance, XNA\u00ae Framework applications, and displaying content in web browser controls.</LI>\r\n<LI>Windows Phone Emulator supports GPU peripheral emulation using the host GPU on computers that meet Windows Phone SDK 7.1.1 Update system requirements. On all other computers, the emulator reverts to software emulation, which is not supported.</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Windows Phone SDK 7.1 must be installed on your computer before you can install Windows Phone SDK 7.1.1. For more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=245453 \r\n\">Installing Windows Phone SDK</a>.<BR></BR>\r\nTo install Windows Phone SDK 7.1.1 Update, click the <B>Download </B> button for WPSDK-7.1.1-KB2669191-x86.exe file, and then follow the instructions to install the SDK.<BR></BR>\r\n<B>Note: </B>This update configures a 256-MB emulator and a 512-MB emulator as part of the installation, and so might take longer to install than a typical SDK.<BR></BR>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Phone Developer Portal",
+            "url": "http://create.msdn.com/"
+        },
+        {
+            "title": "windows Phone Developer Blog",
+            "url": "http://windowsteamblog.com/blogs/wpdev/"
+        },
+        {
+            "title": "windows Phone SDK 7.1",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=27570"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29233",
+    "downloadPreload": true
+}

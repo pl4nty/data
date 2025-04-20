@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Window Driver for NetFPGA Gigabit Ethernet Card",
+    "downloadDescription": "The NetFPGA card is a programmable, four-port Gigabit Ethernet card developed by Stanford. Last published: April 18, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "netfpga.zip",
+            "url": "https://download.microsoft.com/download/c/2/2/c2200552-995c-4aba-8b8d-c12e993ba71f/netfpga.zip",
+            "size": "9346833",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The NetFPGA card is a programmable, four-port Gigabit Ethernet card developed by Stanford. This software is the window driver for this card. The driver enables users to download bit files to the FPGA chip on the card, read/write hardware registers, and send and receive packets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "netfpga.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52442",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Embedded Standard 2009 Resource Kit",
+    "downloadDescription": "The Microsoft Windows Embedded Standard 2009 Resource Kit contains a set of integrated documents that make it easier to develop Windows Embedded devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded Standard 2009 Components.xls",
+            "url": "https://download.microsoft.com/download/9/7/b/97b5f4e9-24c1-4850-9659-c3c3161a5fcb/Windows Embedded Standard 2009 Components.xls",
+            "size": "234496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded Standard 2009 Resource Kit.doc",
+            "url": "https://download.microsoft.com/download/9/7/b/97b5f4e9-24c1-4850-9659-c3c3161a5fcb/Windows Embedded Standard 2009 Resource Kit.doc",
+            "size": "5946880",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The purpose of this document set is to help guide the developer through the complete process of evaluating, choosing, designing, installing, developing, debugging, testing, shipping and servicing an effective, reliable and secure Windows Embedded Standard 2009 device.  In order to reduce content redundancy, this document set makes frequent use of hyperlinks that you can click, to reference pre-existing on-line content. To use these hyperlinks, the computer that you use to view this document must also be connected to the internet.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows Embedded Standard 2009 Components.xls",
+        "Windows Embedded Standard 2009 Resource Kit.doc"
+    ],
+    "detailsSection_file_size": [
+        "229.0 KB",
+        "5.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<i></i>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 2009"
+    ],
+    "installInstructionSection": "Click Download and follow instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14674",
+    "downloadPreload": true
+}

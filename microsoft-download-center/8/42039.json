@@ -1,0 +1,145 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Foundation 2013 with SP1",
+    "downloadDescription": "SharePoint Foundation 2013 with SP1 is the essential solution for organizations that need a secure, manageable, web-based collaboration platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sharepoint.exe",
+            "url": "https://download.microsoft.com/download/6/e/3/6e3a0b03-f782-4493-950b-b106a1854de1/sharepoint.exe",
+            "size": "885953880",
+            "version": "15.0.4569.1506",
+            "datePublished": "7/15/2024 3:39:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "SharePoint Foundation 2013 with SP1 is the essential solution for organizations that need a secure, manageable, web-based collaboration platform. SharePoint helps teams stay connected and productive by providing easy access to the people, documents, and information that they need to make well-informed decisions and get work done. Use SharePoint Foundation to coordinate schedules, organize documents, and participate in discussions through team workspaces, blogs, wikis, and document libraries on the platform that is the underlying infrastructure for SharePoint Server.  \r\n<br/>\r\n<br/>\r\n<b>Important:</b> A known issue in SharePoint Foundation 2013 SP1 can affect the functionality of the Search WebPart. Please install update <a href=\"http://support.microsoft.com/kb/2760625\">KB2760625 </a>to correct the issue. SharePoint Server 2013 is not affected by this issue.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4569.1506",
+    "detailsSection_file_name": [
+        "sharepoint.exe"
+    ],
+    "detailsSection_file_size": [
+        "844.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"http://technet.microsoft.com/en-us/library/cc262485(v=office.15).aspx\">Hardware and software requirements for SharePoint Foundation</a>\r\n<br/>\r\n<br/>\r\nThis download supports installation on Windows Server 2012 R2.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and run the file on this page. Make sure that your server has the appropriate prerequisites.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42039",
+    "downloadPreload": true
+}

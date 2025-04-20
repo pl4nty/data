@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Solution Lifecycle Management: Dynamics 365 for Customer Engagement apps",
+    "downloadDescription": "This document provides information on how to effectively use the solutions framework in Dynamics 365 for Customer Engagement apps for a successful ALM implementation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SolutionLifecycleManagement.pdf",
+            "url": "https://download.microsoft.com/download/1/f/3/1f32dc2e-57bb-4533-8996-acb5f803cd58/SolutionLifecycleManagement.pdf",
+            "size": "1754657",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:01:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Application Lifecycle Management (ALM) is about how you can effectively continue to ship a solution to customers while adapting to both internal and external changes. This document builds upon the <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=39044\">ALM for Microsoft Dynamics CRM 2011 whitepaper</a> using insights gained from implementations by enterprise customers, partners and ISVs. Since the original whitepaper was released, the Common Data Service (CDS) for Apps platform has become the centerpiece for the Microsoft Business Application Platform and this content will cover those changes as well as new considerations introduced with cloud transformations.<br/><br/>\r\n\r\nDespite all the changes, most of the steps and approaches have not fundamentally changed. Also, the capabilities of the solution framework in Dynamics 365 for Customer Engagement apps have evolved to help make some things simpler and more efficient. This content focuses on Online environments, but most techniques and approaches remain relevant for on-premises and Azure hosted deployments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SolutionLifecycleManagement.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Select <b>Download</b>, and then open or save the PDF file to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57777",
+    "downloadPreload": true
+}

@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded 8.1 Industry (KB3008582)",
+    "downloadDescription": "Resolves an issue with the Shell Launcher",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3008582-x86.cab",
+            "url": "https://download.microsoft.com/download/6/b/7/6b72b732-7623-4434-8fd0-613b881efc93/Windows8.1-KB3008582-x86.cab",
+            "size": "148771",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3008582-x64.cab",
+            "url": "https://download.microsoft.com/download/6/b/7/6b72b732-7623-4434-8fd0-613b881efc93/Windows8.1-KB3008582-x64.cab",
+            "size": "163723",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3008582-x86.msu",
+            "url": "https://download.microsoft.com/download/6/b/7/6b72b732-7623-4434-8fd0-613b881efc93/Windows8.1-KB3008582-x86.msu",
+            "size": "320810",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3008582-x64.msu",
+            "url": "https://download.microsoft.com/download/6/b/7/6b72b732-7623-4434-8fd0-613b881efc93/Windows8.1-KB3008582-x64.msu",
+            "size": "338809",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This KB resolves an issue with Shell Launcher(eshell.exe) where if UAC is enabled on the system, a non-admin user requires elevation/admin privileges to use explorer.exe as the shell before the user can log-in and use explorer.exe. \r\n<br />\r\nThis KB resolves this by changing the behavior to not launch the UAC prompt while launching explorer.exe as the Shell.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.1",
+    "detailsSection_file_name": [
+        "Windows8.1-KB3008582-x86.cab",
+        "Windows8.1-KB3008582-x64.cab",
+        "Windows8.1-KB3008582-x86.msu",
+        "Windows8.1-KB3008582-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "145.3 KB",
+        "159.9 KB",
+        "313.3 KB",
+        "330.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "-Windows Embedded 8.1 Industry Pro\r\n<br />\r\n-Windows Embedded 8.1 Industry Enterprise",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Industry 8.1"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>Windows Embedded 8.1 Industry</b> image: \r\n<br />\r\nA) Executing the appropriate msu file\r\n<br />\r\n<ul>\r\n<li>32bit Windows8.1-KB3008582-x86.msu</li>\r\n<li>64bit Windows8.1-KB3008582-x64.msu</li>\r\n</ul>\r\nOR\r\n<br />\r\nB) Installing the cab file via the command line with administrator privileges via.\r\n<br />\r\n\"DISM /online /add-package /packagepath:&ltLocation&gt\\&ltfilename.cab&gt\"\r\n<ul>\r\n<li>32bit Windows8.1-KB3008582-x86.cab</li>\r\n<li>64bit Windows8.1-KB3008582-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45029",
+    "downloadPreload": true
+}

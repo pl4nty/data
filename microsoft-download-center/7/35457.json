@@ -1,0 +1,157 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync VDI 2013 plugin (32 bit)",
+    "downloadDescription": "Microsoft Lync VDI 2013 plug-in enables you to experience local like audio and video in peer-to-peer calls and conference calls when using Microsoft Lync 2013 in a Virtual Desktop Infrastructure (VDI) Environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "lyncvdi.exe",
+            "url": "https://download.microsoft.com/download/a/6/1/a6127b67-8a45-4523-9b6e-4135163ad961/lyncvdi.exe",
+            "size": "229017848",
+            "version": "15.0.4420.1017",
+            "datePublished": "7/15/2024 3:32:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Microsoft Lync VDI 2013 plug-in enables you to experience local like audio and video in peer-to-peer calls and conference calls when using Microsoft Lync 2013 in a Virtual Desktop Infrastructure (VDI) Environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4420.1017",
+    "detailsSection_file_name": [
+        "lyncvdi.exe"
+    ],
+    "detailsSection_file_size": [
+        "218.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>System Requirements to install the plugin on a local computer:</b></li>\r\n<ul>\r\n<li><b>Minimum CPU supported:</b> 1.5 GHz processor </li>\r\n<li><b>Minimum Memory supported:</b> 2 gigabyte (GB) of RAM</li>\r\n<li><b>Minimum space required for installation:</b></li>\r\n<ul>\r\n<li>32 bit: ~700 MB</li>\r\n<li>64 bit: ~900 MB</li>\r\n</ul>\r\n</ul>\r\n</ul>\r\n<br/>\r\nSome of the thin clients that meet this set of requirements are: Dell Wyse Z90D7, Dell Wyse R90L7, Dell Wyse X90m7, HP t610 and HP t5740e. The Lync VDI plugin is supported by Microsoft on these devices.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Embedded Standard 7"
+    ],
+    "installInstructionSection": "<b>To install this download:  </b>\r\n<ol>\r\n<li>Download the file by clicking the link above and saving the file to your hard disk. </li>\r\n<li>Double-click the program file on your hard disk to start the Setup program. </li>\r\n<li>Follow the instructions on the screen to complete the installation on the desktop.</li>\r\n</ol>\r\n<br/>\r\n<b>To remove this download:  </b>\r\n<ol>\r\n<li>Delete the .EXE file saved that you downloaded to your local storage.  </li>\r\n</ol>\r\n<br/>\r\n<b>To uninstall this program:  </b>\r\n<ol>\r\n<li>Go to the control panel and remove the application from Add/Remove programs</li>\r\n</ol>\r\n<br/><br/>\r\n<b>Deployment Instructions:</b> can be found <A HREF=\"http://technet.microsoft.com/en-us/library/jj204683(v=ocs.15).aspx\">here</A>. \r\n<br/><br/><br/>\r\n<b>NOTE:</b> See instructions from your Desktop Virtualization provider for using the Lync VDI 2013 plugin on other platforms.\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35457",
+    "downloadPreload": true
+}

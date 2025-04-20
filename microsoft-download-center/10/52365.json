@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sent2Vec",
+    "downloadDescription": "Sent2vec maps a pair of short text strings (e.g., sentences or query-answer pairs) to a pair of feature vectors in a continuous, low-dimensional space where the semantic similarity between the text strings is computed as the cosine similarity between their vectors in that space. Last published: July 28, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sent2Vec.V2.zip",
+            "url": "https://download.microsoft.com/download/f/e/2/fe241e41-f08a-4db4-9373-a235e7566870/Sent2Vec.V2.zip",
+            "size": "486014283",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sent2vec maps a pair of short text strings (e.g., sentences or query-answer pairs) to a pair of feature vectors in a continuous, low-dimensional space where the semantic similarity between the text strings is computed as the cosine similarity between their vectors in that space. sent2vec performs the mapping using the Deep Structured Semantic Model (DSSM) proposed in (Huang et al. 2013), or the DSSM with convolutional-pooling structure (CDSSM) proposed in (Shen et al. 2014; Gao et al. 2014).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Sent2Vec.V2.zip"
+    ],
+    "detailsSection_file_size": [
+        "463.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52365",
+    "downloadPreload": true
+}

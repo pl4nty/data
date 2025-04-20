@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "SCOM Management Pack for Team Foundation Server 2013",
+    "downloadDescription": "The Team Foundation Server 2013 Monitoring Management Pack provides both proactive and reactive monitoring of Microsoft Team Foundation Server 2013. It monitors TFS components such as application tier server instances, team project collections, build servers, and proxy servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TFS 2013 Monitoring Management Pack.msi",
+            "url": "https://download.microsoft.com/download/4/1/c/41cb9e98-646c-4d9e-a5b9-f3c4b9d0fe2f/TFS 2013 Monitoring Management Pack.msi",
+            "size": "663552",
+            "version": "1.0.0.1",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_TFS2013.doc",
+            "url": "https://download.microsoft.com/download/4/1/c/41cb9e98-646c-4d9e-a5b9-f3c4b9d0fe2f/MPGuide_TFS2013.doc",
+            "size": "4937728",
+            "version": "1.0.0.1",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Note:</b> There are multiple files available for this download. Once you click on the \u201cDownload\u201d button, you will be prompted to select the files you need. \r\n\r\nVersion, Date Published:\r\n1.0.0.1, 2/3/2014\r\n\r\nFile name, File size:\r\nTeam Foundation Server 2013 Monitoring Management Pack.msi, 4.6 MB\r\nMPGuide_TFS2013.doc, 4.7 MB\r\n\r\nThe Team Foundation Server 2013 Monitoring Management Pack provides both proactive and reactive monitoring of Microsoft Team Foundation Server 2013. It monitors TFS components such as application tier server instances, team project collections, build servers, and proxy servers. \r\n\r\n<b>Feature Summary </b>\r\nThe monitoring provided by this management pack includes availability and configuration monitoring, performance data collection, and default thresholds. You can integrate the monitoring of Team Foundation Server components into your service-oriented monitoring scenarios. \r\n\u2022 Auto discovery of TFS components \r\n\u2022 Implements containment hierarchy, reflecting logical architecture of the Product \r\n\u2022 Implements a proper health model using Monitors \r\n\u2022 Contains tasks, diagnostic and recovery for certain failures \r\n\u2022 Provides events that indicate service outages \r\n\u2022 Provides alerts that show configuration issues and connected data source changes \r\n\u2022 Verification that all dependent services are running \r\n\r\n<b>Release History</b>\r\n\u2022 2/3/2014 - Original English release, version 1.0.0.1\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.1",
+    "detailsSection_file_name": [
+        "TFS 2013 Monitoring Management Pack.msi",
+        "MPGuide_TFS2013.doc"
+    ],
+    "detailsSection_file_size": [
+        "648.0 KB",
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:\r\nWindows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012 \r\n\r\nOther Software:\r\n1. Team Foundation Server 2013\r\n2. System Center Operations Manager 2007, System Center Operations Manager 2012, or System Center Operations Manager 2012 R2\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please see the included MP guide for complete installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41696",
+    "downloadPreload": true
+}

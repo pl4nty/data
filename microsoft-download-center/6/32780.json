@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Campus Agreement 3.0 Subscription Customer Guide",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CA3ProgramGuideMaster.doc",
+            "url": "https://download.microsoft.com/download/7/d/b/7db098bd-f162-41a8-95bc-c726597be65b/CA3ProgramGuideMaster.doc",
+            "size": "702976",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Description Template",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CA3ProgramGuideMaster.doc"
+    ],
+    "detailsSection_file_size": [
+        "686.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "TabletPC",
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 3.1",
+        "Windows 3.11",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows CE",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Media Center Edition"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32780",
+    "downloadPreload": true
+}

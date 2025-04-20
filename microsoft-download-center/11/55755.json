@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Bing Maps AJAX Upgrade for Microsoft Dynamics 2016 Service Pack 1",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics 2016 Service Pack 1 (on-premises) Bing Maps AJAX upgrade. This is a tested update for Microsoft Dynamics 2016 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Server-KB4037857-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/f/0/3/f03021be-0d56-4934-82cb-871aab099685/CRM2016-Server-KB4037857-ENU-Amd64.exe",
+            "size": "153264648",
+            "version": "08.01.0001.1100",
+            "datePublished": "7/15/2024 4:44:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        }
+    ],
+    "detailsSection": "Microsoft has released Bing Maps AJAX upgrade for Microsoft Dynamics 2016 Server Service Pack 1.\r\nThis update replaces the Bing Maps AJAX Control Version 7, which has reached its end-of-life. To continue to use Bing Maps with Microsoft Dynamics 2016 Service Pack 1, you must apply this update. \r\nFor more information about this release, see Microsoft Knowledge Base article 4038205: <br />\r\n\r\n<a href=\"http://support.microsoft.com/kb/4038205\">Bing Maps AJAX Upgrade for Microsoft Dynamics 2016 Service Pack 1</a>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4037857",
+        "name": "KB4037857"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.01.0001.1100",
+    "detailsSection_file_name": [
+        "CRM2016-Server-KB4037857-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "146.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update must be installed on a computer that is running Microsoft Dynamics 2016 Service Pack 1 or later version. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click Download, and then select the file you want to download from the list.\r\n\r\nTo install this update, do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click <b>Run</b>. </li>\r\n<li>To save the download to your computer for installation later, click <b>Save</b>. </li>\r\n<li>To cancel the download, click <b>Cancel</b>. </li>\r\n</ul>",
+    "additionalInformationSection": "<b>Hotfixes and updates that you have to manually enable or configure</b>\r\n\r\nThis Microsoft Dynamics CRM 2016 update may contain hotfixes and updates that have to be manually enabled or configured. To enable or configure these hotfixes on the server that is running Microsoft Dynamics 2016, see the \"Hotfixes and updates that you must enable or configure manually\" section of the following Microsoft Knowledge Base article: <br />\r\n\r\n<a href=\"http://support.microsoft.com/kb/4038205\">Bing Maps AJAX Upgrade for Microsoft Dynamics 2016 Service Pack 1</a>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "install CRM for Outlook ",
+            "url": "https://technet.microsoft.com/library/hh699760.aspx"
+        },
+        {
+            "title": "upgrade CRM for Outlook",
+            "url": "https://technet.microsoft.com/library/hh699711.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55755",
+    "downloadPreload": true
+}

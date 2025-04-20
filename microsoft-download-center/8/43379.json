@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Performance Data Collection and Analysis Process",
+    "downloadDescription": "This white paper describes the core processes, techniques, and procedures that the Microsoft Dynamics AX product team uses during its fact-finding and analysis phase.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Performance Data Collection and Analysis Process.pdf",
+            "url": "https://download.microsoft.com/download/3/5/5/3551b891-9f2d-4f08-92d4-253d5c5d9640/Performance Data Collection and Analysis Process.pdf",
+            "size": "772970",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document outlines the core processes, techniques, and procedures that the Microsoft Dynamics AX product team uses during its fact-finding and analysis phase. The document lists the expected results from each data collection phase and describes the process for bringing the data together to create actionable steps. It describes when to use each monitoring, tracing, and profiling tool, and provides pointers to additional documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Performance Data Collection and Analysis Process.pdf"
+    ],
+    "detailsSection_file_size": [
+        "754.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43379",
+    "downloadPreload": true
+}

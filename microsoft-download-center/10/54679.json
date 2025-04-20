@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2016 - Secure IaaS",
+    "downloadDescription": "Windows Server 2016 - Secure IaaS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2016 - Secure IaaS Microsegmentation.docx",
+            "url": "https://download.microsoft.com/download/3/d/3/3d32f2dd-3c41-44bf-961d-a66b258081ec/Secure Iaas/Windows Server 2016 - Secure IaaS Microsegmentation.docx",
+            "size": "121381",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2016 - Secure IaaS Guarded Fabric.docx",
+            "url": "https://download.microsoft.com/download/3/d/3/3d32f2dd-3c41-44bf-961d-a66b258081ec/Secure Iaas/Windows Server 2016 - Secure IaaS Guarded Fabric.docx",
+            "size": "280643",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Secure IaaS.pptx",
+            "url": "https://download.microsoft.com/download/3/d/3/3d32f2dd-3c41-44bf-961d-a66b258081ec/Secure Iaas/Secure IaaS.pptx",
+            "size": "2826623",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2016 - Secure IaaS.docx",
+            "url": "https://download.microsoft.com/download/3/d/3/3d32f2dd-3c41-44bf-961d-a66b258081ec/Secure Iaas/Windows Server 2016 - Secure IaaS.docx",
+            "size": "313347",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Server 2016 - Secure IaaS",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2017",
+    "detailsSection_file_name": [
+        "Windows Server 2016 - Secure IaaS Microsegmentation.docx",
+        "Windows Server 2016 - Secure IaaS Guarded Fabric.docx",
+        "Secure IaaS.pptx",
+        "Windows Server 2016 - Secure IaaS.docx"
+    ],
+    "detailsSection_file_size": [
+        "118.5 KB",
+        "274.1 KB",
+        "2.7 MB",
+        "306.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows/Office",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download files to view",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54679",
+    "downloadPreload": true
+}

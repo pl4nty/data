@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2003 SP2 R2 Common Criteria Configuration Guide 3.0",
+    "downloadDescription": "This document is the Microsoft Windows Server 2003 SP2 R2 Security Configuration Guide version 3.0 that was used in the completion of the Windows XP and Server 2003 SP2 R2 Common Criteria security evaluation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2003 SP2 Security Configuration Guide 3.0.pdf",
+            "url": "https://download.microsoft.com/download/a/b/2/ab20e57d-b20e-4e20-b35c-a0a3f3e4435d/Windows Server 2003 SP2 Security Configuration Guide 3.0.pdf",
+            "size": "12836612",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows Server 2003 SP2 Security Configuration Guide 3.0.xps",
+            "url": "https://download.microsoft.com/download/a/b/2/ab20e57d-b20e-4e20-b35c-a0a3f3e4435d/Windows Server 2003 SP2 Security Configuration Guide 3.0.xps",
+            "size": "15193664",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CC_WS2K3-XP v3.0 Security Templates.zip",
+            "url": "https://download.microsoft.com/download/a/b/2/ab20e57d-b20e-4e20-b35c-a0a3f3e4435d/CC_WS2K3-XP v3.0 Security Templates.zip",
+            "size": "48274",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Windows 2003, XP Professional and XP Embedded Security Target, defines the requirements for Version 3.0 of the Windows Server 2003 with SP2 and XP Professional with SP2 Common Criteria Evaluation and is henceforth referred to as the Windows 2003/XP V3 ST.  The Windows 2003/XP V3 ST provides a set of security requirements taken from the Common Criteria (CC) for Information Technology Security Evaluation.  The Window Server 2003 products were evaluated against the Windows 2003/XP V3 ST and found to satisfy the security target requirements. <br />\n<br />\nThis document is targeted at those responsible for ensuring that the installation and configuration process results in a secure configuration.  For the purposes of this document, a secure configuration, henceforth referred to as the Evaluated Configuration, is one that enforces the requirements presented in the Windows 2003/XP V3 ST. <br />\n<br />\nNote: The required configuration settings specified by this document are used explicitly to achieve the Evaluated Configuration.  Microsoft also produces the <b>Windows Server 2003 Security Guide</b> ( http://go.microsoft.com/fwlink/?LinkId=14845 ) and the <b>Threats and Countermeasures: Security Settings in Windows Server 2003 and Windows XP Guide</b> ( http://go.microsoft.com/fwlink/?LinkId=15159 ), which can be used to determine the <br />\nrecommended settings that an organization might want to apply.  Most of the recommended settings defined in this document were derived from a review of the Windows Server 2003 Security Guide and the Threats and Countermeasures: Security Settings in Windows Server 2003 and Windows XP document, along with other material identified in the References chapter of this document.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "Windows Server 2003 SP2 Security Configuration Guide 3.0.pdf",
+        "Windows Server 2003 SP2 Security Configuration Guide 3.0.xps",
+        "CC_WS2K3-XP v3.0 Security Templates.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.2 MB",
+        "14.5 MB",
+        "47.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 SP2 including R2, Standard, Enterprise, Datacenter, x64, and Itanium Editions;<br />\nWindows XP Professional SP2 and x64 SP2;<br />\nWindows XP Embedded SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition"
+    ],
+    "installInstructionSection": "1.\tClick the Download button on this page to start the download. <br />\n2.\tDo one of the following: <br />\no\tTo start the installation immediately, click Open or Run this program from its current location. <br />\no\tTo copy the download to your computer for installation at a later time, click Save or Save this program to disk.",
+    "relatedResourcesSection": [
+        {
+            "title": "threats and Countermeasures Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=15159"
+        },
+        {
+            "title": "windows Server 2003 Security Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=14845"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16092",
+    "downloadPreload": true
+}

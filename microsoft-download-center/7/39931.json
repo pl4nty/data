@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2012 Integration Services Data Feed Publishing Components",
+    "downloadDescription": "Microsoft SQL Server 2012 Integration Services (SSIS) Data Feed Publishing Components can expose data from various data sources as views in SQL Server 2012 database instances. The data can be consumed as OData feeds by querying the view.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Release Notes.doc",
+            "url": "https://download.microsoft.com/download/d/3/b/d3b4eaf9-7e8e-4296-8bbb-043968cd10e7/Release Notes.doc",
+            "size": "60416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSISDataFeedPublishing-amd64.msi",
+            "url": "https://download.microsoft.com/download/d/3/b/d3b4eaf9-7e8e-4296-8bbb-043968cd10e7/SSISDataFeedPublishing-amd64.msi",
+            "size": "4386816",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSISDataFeedPublishing-x86.msi",
+            "url": "https://download.microsoft.com/download/d/3/b/d3b4eaf9-7e8e-4296-8bbb-043968cd10e7/SSISDataFeedPublishing-x86.msi",
+            "size": "3035136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2012 Integration Services (SSIS) Data Feed Publishing Components can expose data from various data sources as views in SQL Server 2012 database instances. The data can be consumed as OData feeds by querying the view. <br />\r\nThe Power BI Admin Center, by default, allows you to register only SQL Server data sources. However, you can register SSIS packages as data sources with the Admin Center by using the following Data Feed Publishing Components: <br />\r\n<ul>\r\n<li>Microsoft OLE DB Provider for SSIS (SSISOLEDB).</li>\r\n<li>Data Streaming Destination: an SSIS destination component that allows the SSISOLEDB provider to consume output of an SSIS package as a tabular result set.</li>\r\n<li>Data Feed Publishing Wizard: a wizard that helps create a view that enables querying the data returned by the SSIS package.</li>\r\n</ul>\r\nThe Data Feed Publishing Components must be installed on an on-premises computer.<br />\r\nSee <a href=\"http://go.microsoft.com/fwlink/?LinkID=317367&clcid=0x409\">Publish SSIS Packages as OData Feed Sources topic on Office.com</a> for more information. Use <a href=\"http://go.microsoft.com/fwlink/?LinkID=313182&clcid=0x409\">Power BI for Office 365 forum</a> for any discussions regarding these components.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Release Notes.doc",
+        "SSISDataFeedPublishing-amd64.msi",
+        "SSISDataFeedPublishing-x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "59.0 KB",
+        "4.2 MB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Other software: \r\n<ul>\r\n<li>SQL Server 2012</li>\r\n<li>SQL Server Data Tools for Visual Studio 2010 (or) SQL Server Data Tools \u2013 Business Intelligence for Visual Studio 2012</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 8 Beta",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Download and run the 32-bit/64-bit installation package to install the SSIS Data Feed Publishing Components on your computer. ",
+    "relatedResourcesSection": [
+        {
+            "title": "privacy Statement",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=317562&clcid=0x409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39931",
+    "downloadPreload": true
+}

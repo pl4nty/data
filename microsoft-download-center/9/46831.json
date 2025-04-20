@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Office App Compatibility Kit",
+    "downloadDescription": "The Office App Compatibility Kit is a tool to check your app before submission to the Apps for Office Store.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office App Compatibility Kit.zip",
+            "url": "https://download.microsoft.com/download/6/5/1/65196c46-f07a-4aec-abb2-862c64fda3aa/Office App Compatibility Kit.zip",
+            "size": "103197",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 3:42:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the Office App Compatibility Kit to check your app before you submit it to the Apps for Office Store. It will help you identify and resolve validation failures that commonly lead to app resubmissions, which can save you time in getting your app approved and available to customers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "Office App Compatibility Kit.zip"
+    ],
+    "detailsSection_file_size": [
+        "100.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 4.5\r\n<br />\r\n<br />\r\n<b>Additional Requirements</b>\r\n<ul>\r\n<li>If testing SharePoint apps, enough disk space to extract the app package is required.</li>\r\n<li><b>Please note that internet access is required to run certain tests (such as icon URL validity).</b> However, the offline tests will always run where possible.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n <li>Download the compressed directory from this page.</li>\r\n <li>Extract the directory to your hard disk.</li>\r\n <li>Launch the <b>Microsoft.Oack.Console</b> application.</li>\r\n <li>In the console window that opens, type <i>run [path to your .xml (manifest) or .app file]</i></li>\r\n <li>Press return and review the output produced.</li>\r\n</ol>\r\n<br />\r\nYou can also launch the application directly from the command prompt by typing, for example: <i>oack.exe run MySharePointApp.app</i>\r\n<br />\r\nIf you wish to include the tool in an automated build process or similar, you can use the included <b>Microsoft.Oack.dll</b>\r\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46831",
+    "downloadPreload": true
+}

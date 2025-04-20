@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Driver Chain Manager",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DCM1004.exe",
+            "url": "https://download.microsoft.com/download/9/2/4/924a3f4f-5a9a-49fe-8fde-915047208e82/DCM1004.exe",
+            "size": "1544192",
+            "version": "SP1",
+            "datePublished": "7/15/2024 3:29:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DCM establishes a set of rules for products using display driver interception (DDI) technology and provides a helper library that implements those rules. It standardizes the way in which multiple chained drivers cooperate with each other, thereby improving the reliability of all components in the chain. This allows users of assistive technology to have multiple assistive technology aids on a single computer, which enhances their computing experience.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP1",
+    "detailsSection_file_name": [
+        "DCM1004.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [
+        {
+            "title": "driver Chain Manager",
+            "url": "http://www.msdn.microsoft.com/library/default.asp?url=/library/en-us/dnacc/html/ATG_DriverChain.asp"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "33723",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Universal Print connector for Windows",
+    "downloadDescription": "A connector that enables IT administrators to use printers installed on a Windows machine with Universal Print",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UniversalPrintConnectorInstaller.2.2.9203.40541.exe",
+            "url": "https://download.microsoft.com/download/5c32e97f-714e-4efa-b9dd-c8a4464a87a1/UniversalPrintConnectorInstaller.2.2.9203.40541.exe",
+            "size": "9143696",
+            "version": "2.2.9203.40541",
+            "datePublished": "4/14/2025 7:36:00 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows service and app required for setting up Universal Print using printers installed on a Windows machine.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2.9203.40541",
+    "detailsSection_file_name": [
+        "UniversalPrintConnectorInstaller.2.2.9203.40541.exe"
+    ],
+    "detailsSection_file_size": [
+        "8.7 MB"
+    ],
+    "detailsSection_file_date": "4/14/2025",
+    "systemRequirementsSection": "See https://learn.microsoft.com/en-us/universal-print/fundamentals/universal-print-connector-installation#prerequisites",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.\n2. Save the installer to disk.\n3. Run the installer and follow its steps.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101213",
+    "downloadPreload": true
+}

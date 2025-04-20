@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Multisite Activation",
+    "downloadDescription": "This paper describes the steps needed to activate the multisite functionality for users who are upgrading from a previous release of Microsoft Dynamics AX.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsWhitePaperMultisiteActivation.xps",
+            "url": "https://download.microsoft.com/download/8/5/b/85b00100-77e6-4c70-bdbd-45113287e2ac/MicrosoftDynamicsWhitePaperMultisiteActivation.xps",
+            "size": "1138821",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftDynamicsWhitePaperMultisiteActivation.pdf",
+            "url": "https://download.microsoft.com/download/8/5/b/85b00100-77e6-4c70-bdbd-45113287e2ac/MicrosoftDynamicsWhitePaperMultisiteActivation.pdf",
+            "size": "811902",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document walks you through the multisite activation steps.<br /><br />\nTo start using the new multisite functionality, users who are upgrading from a previous release of Microsoft Dynamics AX 2009 must run the multisite activation wizard for each company account to make the necessary changes to the inventory dimension settings and the inventory-related transactions. These changes include: \n<UL><LI>Activating the site and warehouse inventory dimensions in all dimension groups</LI>\n<LI>Making the site dimension mandatory on all inventory transactions</LI>\n<LI>Updating all transactions with an association to the site</LI></UL><br />\nMultisite functionality is initially inactive when you are upgrading from a previous release so you can set up the master data that is required for the multisite functionality, and to correct any data inconsistencies before generating site-specific transactions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsWhitePaperMultisiteActivation.xps",
+        "MicrosoftDynamicsWhitePaperMultisiteActivation.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "792.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "<UL><LI>A prerequisite for running the activation is that no inventory dimension records can reference a value for both the site and the warehouse. </LI><br />\n<LI>For users who have a new installation of Microsoft Dynamics AX 2009, multisite functionality already is activated by default.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12840",
+    "downloadPreload": true
+}

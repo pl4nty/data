@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Forefront UAG 2010 SP1 RC DirectAccess Force Tunneling",
+    "downloadDescription": "Test Lab Guide with step by step instructions on how to configure UAG SP1 RC DirectAccess Client Force Tunneling",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_DemonstrateUAG_DA_ForceTunneling-SP1-RC.docx",
+            "url": "https://download.microsoft.com/download/d/1/6/d16c5ba4-6bba-4eda-b3e7-bef241bcc613/TestLabGuide_DemonstrateUAG_DA_ForceTunneling-SP1-RC.docx",
+            "size": "1634678",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Forefront UAG SP1 RC DirectAccess extends the benefits of Windows DirectAccess across your infrastructure by enhancing availability and scalability, as well as simplifying deployments and ongoing management. This paper contains an introduction to DirectAccess and step-by-step instructions for extending the \"Test Lab Guide: Demonstrate UAG SP1 RC DirectAccess\" to demonstrate UAG SP1 RC DirectAccess Force Tunneling.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_DemonstrateUAG_DA_ForceTunneling-SP1-RC.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13592",
+    "downloadPreload": true
+}

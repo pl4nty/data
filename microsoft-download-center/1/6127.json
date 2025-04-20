@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Team System Web Access 2008 SP1 Power Tool",
+    "downloadDescription": "Team System Web Access (formerly known as TeamPlain) is a Web interface to Visual Studio 2008 Team Foundation Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TeamSystemWebAccess.msi",
+            "url": "https://download.microsoft.com/download/2/d/f/2df57967-ee13-4703-bfa2-5ee9a65e2882/TeamSystemWebAccess.msi",
+            "size": "11177984",
+            "version": "9.1",
+            "datePublished": "7/15/2024 3:14:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Team System Web Access is a free download that will be incorporated into a future release of Visual Studio Team System. You may install it with licensed installations of Team Foundation Server. You must be a licensed user of Team Foundation Server to use Team System Web Access. \n<br />\n<br />\n<b>New With Service Pack 1</b><br />\n<ul><br />\n\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=125903\">Work item only view</a> for users without a client access license. [<i>Previously known as Work Item Web Access (WIWA) feature</i>]</li>\n<li>Run a single instance with multiple languages.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126663\">Create work items with initial values</a> by using a URL.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126665\">Share ad-hoc work item queries</a> by using a URL.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126666\">Find and view Shelvesets</a>.</li>\n<li>Improved <a href=\"http://go.microsoft.com/fwlink/?LinkId=126667\">work item search syntax</a>.</li>\n</ul>\n\n<br />\n<br />\n<b>Features in Team System Web Access</b><br />\n<ul><br />\n\n<li>Direct links to work items, query results, diffs, changesets and more. </li>\n<li>Display custom controls on work item forms.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126668\">View queued or completed builds</a>, <a href=\"http://go.microsoft.com/fwlink/?LinkId=126669\">queue or stop builds</a>.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126663\">Add new work items</a> or <a href=\"http://go.microsoft.com/fwlink/?LinkId=126670\">edit existing ones</a>.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126671\">Work with any type of work item</a>, including custom ones.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126665\">Add new work item queries</a> or <a href=\"http://go.microsoft.com/fwlink/?LinkId=126672\">edit existing ones</a>.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126673\">View, download, upload, check-in and check-out documents</a> on SharePoint team portal.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126674\">View reports</a>, export as PDF or Excel.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126675\">Browse items in version control, download source files, view changesets, diffs, history, and annotated views</a>.</li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=126676\">Search for keywords in work items</a>.</li>\n\n</ul>\r\n\r\n<br />\n<br />\n<b>Technical Support</b><br /><br />\nThis tool is supported under the policy found here: <a href=\"http://support.microsoft.com/kb/295539\">http://support.microsoft.com/kb/295539</a>\r\n<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.1",
+    "detailsSection_file_name": [
+        "TeamSystemWebAccess.msi"
+    ],
+    "detailsSection_file_size": [
+        "10.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Server</b>:<br />\n<ul><br />\n<li>Internet Information Services 6 or Internet Information Services 7 (IIS 6 compatibility mode enabled) with ASP.NET 2.0</li><br />\n<li>Microsoft Visual Studio 2008 Team Explorer</li><br />\n</ul><br />\n<br />\n<b>Client</b>:<br />\n<ul><br />\n<li>Internet Explorer 6 or above, or Mozilla Firefox 2</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<i>Installing on the Team Foundation Server Application Tier</i><br />\n<br />\n<ul><br />\n<li>Install Team Explorer 2008.</li><br />\n<li>Download and run TeamSystemWebAccess.msi and follow the instructions.</li><br />\n<li>During the installation, you can configure Team System Web Access to use Integrated Windows authentication (only available when installing on the Team Foundation Server application tier).</li><br />\n</ul><br />\n<br />\n<i>Installing on a Remote Server</i><br />\n<br />\nWhen Team System Web Access is installed on a remote server, it is not possible to use Integrated Windows authentication, so you will need to use Forms-based authentication. It is recommended to configure the Team System Web Access site to use SSL when using Forms-based authentication.<br />\n<br />\n<ul><br />\n<li>Install IIS 6 (Windows 2003) or IIS 7 (Windows Server 2008) with IIS 6 compatibility mode enabled.</li><br />\n<li>Install .NET Framework 2.0 and enable ASP.NET 2.0 on IIS Web service extensions.</li><br />\n<li>Install Team Explorer 2008.</li><br />\n<li>Download and run TeamSystemWebAccess.msi and follow the instructions.</li><br />\n</ul>\n<br /><br />\r\n\r\n<i>Scalability Limits</i><br />\n<br />\r\nIf you expect more than 100 users to use Team System Web Access at the same time, you should review the following white paper, which explains scalability limits and workarounds:\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=139762\">http://go.microsoft.com/fwlink/?LinkID=139762</a></li>\r\n</ul>\n<br /><br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "forum - Team Foundation Server - Team System Web Access",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=1466&SiteID=1"
+        },
+        {
+            "title": "ed Hintz's Blog",
+            "url": "http://blogs.msdn.com/edhintz/"
+        },
+        {
+            "title": "buck Hodges' Blog",
+            "url": "http://blogs.msdn.com/buckh/"
+        },
+        {
+            "title": "hakan Eskici's Blog",
+            "url": "http://blogs.msdn.com/hakane/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6127",
+    "downloadPreload": true
+}

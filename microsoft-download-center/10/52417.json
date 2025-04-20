@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Synthesizing Biological Theories",
+    "downloadDescription": "This tool enables biologists and modelers to construct high-level theories and models of biological systems, capturing biological hypotheses, inferred mechanisms, and experimental results within the same framework. Last published: May 17, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SBTSetup.msi",
+            "url": "https://download.microsoft.com/download/9/5/e/95e1a994-565b-4326-95ef-3f16454e8b21/SBTSetup.msi",
+            "size": "1021952",
+            "version": "1.0.0.0",
+            "datePublished": "6/13/2024 12:48:41 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool enables biologists and modelers to construct high-level theories and models of biological systems, capturing biological hypotheses, inferred mechanisms, and experimental results within the same framework. The main components of the tool are a visual editor for constructing the model and to visualize the dynamic behavior, and an execution and analysis engine that can run the models in batch mode, interactive mode, or deterministic versus nondeterministic modes. During runtime, the execution engine communicates with the user-interface layer to enable the visualization of the system dynamics and to support user interaction with the model. Among the key features of the tool are an ability to represent a theory about a biological system, including biological hypotheses and mechanisms, and experimental results in the same framework; convenient ways to represent several competing theories with the aim of refuting some of the theories or trying to suggest experiments that can refute them; and the interactive nature of building and running the models using an intuitive, rigorous scenario-based visual language.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "SBTSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "998.0 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52417",
+    "downloadPreload": true
+}

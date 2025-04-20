@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "StorSimple Snapshot Manager",
+    "downloadDescription": "StorSimple Snapshot Manager is a Microsoft Management Console (MMC) snap-in that enables you to create application-consistent backups and easily manage backup and restore operations in Microsoft Azure StorSimple.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSM Version 5.0.zip",
+            "url": "https://download.microsoft.com/download/7/4/7/747b6e6f-37f0-4ba5-b0b2-bcf4babb13e5/SSM Version 5.0.zip",
+            "size": "4849815",
+            "version": "V2.0/V5.0",
+            "datePublished": "5/15/2024 3:54:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSM Version 2.0.zip",
+            "url": "https://download.microsoft.com/download/7/4/7/747b6e6f-37f0-4ba5-b0b2-bcf4babb13e5/SSM Version 2.0.zip",
+            "size": "4788523",
+            "version": "V2.0/V5.0",
+            "datePublished": "5/15/2024 3:54:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "StorSimple Snapshot Manager is a Microsoft Management Console (MMC) snap-in that simplifies data protection and backup management in a Microsoft Azure StorSimple environment. You can use StorSimple Snapshot Manager to configure backup schedules and retention policies, generate on-demand backups, and clone or restore volumes. \r\n<br /> <br /> \r\nStorSimple Snapshot Manager takes backups in the form of incremental snapshots, and uses the Windows Volume Shadow Copy Service (VSS) to ensure that data is backed up and restored in an application-consistent manner. \r\n<br /> ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V2.0/V5.0",
+    "detailsSection_file_name": [
+        "SSM Version 5.0.zip",
+        "SSM Version 2.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB",
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<br /> \r\n<b>Supported StorSimple Devices </b> <br /> <br />\r\n<li> Version 5.0 is compatible with StorSimple 8000 Series devices running Update 5.0 and Update 4.0 </li>\r\n<li> Version 2.0 is compatible with StorSimple 8000 Series devices running Update 3.0 and earlier </li>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<li>Download the appropriate StorSimple Snapshot Manager software version (available as a compressed folder) and save it locally on the host. </li>\r\n<li>In File Explorer, right-click the compressed folder, and then click Extract all. </li>\r\n<li>In the Extract Compressed (Zipped) Folders window, in the Select a destination and extract files box, type or browse to the path where you would like to file to be extracted. </li>\r\n<b> Important:  </b> <br />\r\n You must install StorSimple Snapshot Manager on the C: drive  <br /> <br />\r\n<li>Select the Show extracted files when complete check box, and then click Extract. </li>\r\n<li>When the extraction is finished, the destination folder opens. Double-click the application setup icon that appears in the destination folder. </li>\r\n<li>When the Setup Successful message appears, click Close. You should see the StorSimple Snapshot Manager icon on your desktop. </li>\r\n<br />\r\nFor complete configuration and installation instructions, go to <a \r\nhref=\"https://azure.microsoft.com/en-us/documentation/articles/storsimple-snapshot-manager-deployment/\">https://azure.microsoft.com/en-us/documentation/articles/storsimple-snapshot-manager-deployment</a>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44220",
+    "downloadPreload": true
+}

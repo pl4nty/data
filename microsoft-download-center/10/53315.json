@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Explorer Retired Technical Articles",
+    "downloadDescription": "The content you requested has already retired. It's available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE_TechnicalArticle.pdf",
+            "url": "https://download.microsoft.com/download/c/1/7/c170a04d-14ca-439c-bbad-22cd5c689f28/IE_TechnicalArticle.pdf",
+            "size": "921885",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Internet Explorer Technical Articles content, including Deploying Windows Live Toolbars in the Enterprise, Solutions for Virtualizing Internet Explorer, Deploying Pinned Websites, and Internet Explorer 9 Preinstallation Techniques. This content has been updated and can be found with the appropriate version of the IE.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IE_TechnicalArticle.pdf"
+    ],
+    "detailsSection_file_size": [
+        "900.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Deploying Windows Live Toolbars in the Enterprise and Solutions for Virtualizing Internet Explorer (IE6 and IE7 on Windows 7), Deploying Pinned Websites (IE9 on Windows 7), and Internet Explorer 9 Preinstallation Techniques (IE9 on Windows 7 or Windows Server 2008 R2)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53315",
+    "downloadPreload": true
+}

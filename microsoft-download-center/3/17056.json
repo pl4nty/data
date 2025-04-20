@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Forefront UAG SP1 RC DirectAccess with Network Access Protection (NAP)",
+    "downloadDescription": "Test Lab Guide with step by step instructions on how to use NAP with UAG SP1 RC and DirectAccess",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_DemonstrateUAG_DA_NAP-SP1-RC.docx",
+            "url": "https://download.microsoft.com/download/2/2/8/22884fcf-3d70-4acd-9265-99c751059a75/TestLabGuide_DemonstrateUAG_DA_NAP-SP1-RC.docx",
+            "size": "396499",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Forefront Unified Access Gateway (UAG) 2010 SP1 RC extends the Windows DirectAccess value by adding support for highly available DirectAccess arrays and integrated support for IPv4 intranet resources.  Network Access Protection (NAP) monitors and assesses the health of client computers when they attempt to connect or communicate on a network. NAP with DirectAccess allows you to specify that only DirectAccess clients that meet system health requirements can reach intranet resources. This paper contains step-by-step instructions for extending the \"Test Lab Guide: Demonstrate UAG SP1 RC DirectAccess\" to demonstrate UAG DirectAccess with NAP on a simulated Internet, intranet, and home network.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_DemonstrateUAG_DA_NAP-SP1-RC.docx"
+    ],
+    "detailsSection_file_size": [
+        "387.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17056",
+    "downloadPreload": true
+}

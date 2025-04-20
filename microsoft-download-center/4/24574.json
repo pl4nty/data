@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 custom permission levels and custom groups worksheet",
+    "downloadDescription": "Use this worksheet to record custom permission levels and groups that need to be created.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Custom Permission Levels and Groups Worksheet_Server.xls",
+            "url": "https://download.microsoft.com/download/e/d/3/ed313e17-eefb-4ba0-b379-a39a73fe3731/Custom Permission Levels and Groups Worksheet_Server.xls",
+            "size": "56832",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this worksheet to record custom permission levels and groups that need to be created in your SharePoint Server 2010 environment.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Custom Permission Levels and Groups Worksheet_Server.xls"
+    ],
+    "detailsSection_file_size": [
+        "55.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2007; Microsoft Office Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this file to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24574",
+    "downloadPreload": true
+}

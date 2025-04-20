@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer 7 in Windows Server 2008 for Itanium-based Systems (KB2976627)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS14-051. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2976627-ia64.msu",
+            "url": "https://download.microsoft.com/download/b/e/1/be11ca98-29a5-4510-9152-b1cf5da2409f/Windows6.0-KB2976627-ia64.msu",
+            "size": "18560706",
+            "version": "2976627",
+            "datePublished": "7/15/2024 3:53:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.\n\n      <br /><br />\n      <b>Other critical security updates are available:</b> To find the latest security releases for you visit <a href=\"http://go.microsoft.com/?LinkID=275655\">Windows Update</a> and click \"Scan for updates.\" And visit the <a href=\"http://go.microsoft.com/?LinkID=263669\">Protect your PC site</a> to learn how to have the latest security updates delivered directly to your computer.\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2976627",
+        "name": "KB2976627"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-051",
+        "name": "MS14-051"
+    },
+    "detailsSection_file_version": "2976627",
+    "detailsSection_file_name": [
+        "Windows6.0-KB2976627-ia64.msu"
+    ],
+    "detailsSection_file_size": [
+        "17.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update applies to Internet Explorer with the following operating system:<br /><ul>\n        <li>Windows Server 2008 Family Itanium 64-bit Service Pack 2</li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 for Itanium-based Systems"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <b>Go</b>.\n        </li>\n        <li>Do one of the following:</li>\n        <ul>\n          <li>\n            To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.\n          </li>\n          <li>\n            To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.\n          </li>\n        </ul>\n      </ol>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin MS09-019",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=507027"
+        },
+        {
+            "title": "windows Server 2003 Home Page",
+            "url": "http://www.microsoft.com/windowsserver2003/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43895",
+    "downloadPreload": true
+}

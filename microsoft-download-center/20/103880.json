@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Search in Bing Adoption Kit",
+    "downloadDescription": "This adoption kit includes short, visual PDFs created for sharing on Teams, Yammer, and SharePoint. Use the content to inform your Microsoft 365 and Office 365 users about using Microsoft Search in Bing.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSBAdoptionEnterprise.zip",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aaefd9-10ad-4c1d-a513-2e2fdafebdb3/MSBAdoptionEnterprise.zip",
+            "size": "16040608",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This adoption kit includes short, visual PDFs created for sharing on Teams, Yammer, and SharePoint. Use the content to inform your Microsoft 365 and Office 365 users about using Microsoft Search in Bing to find the work info they need while also saving time and increasing productivity.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSBAdoptionEnterprise.zip"
+    ],
+    "detailsSection_file_size": [
+        "15.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 10, Windows 11, Windows 7, Windows 8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and extract MSBAdoptionEnterprise.zip to a location on your PC to view and use the adoption kit resources.\r\n\r\nTo unzip a single file or folder, open the zipped folder, then drag the file or folder from the zipped folder to a new location.\r\n\r\nTo unzip all the contents of the zipped folder, press and hold (or right-click) the folder, select Extract All, and then follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103880",
+    "downloadPreload": true
+}

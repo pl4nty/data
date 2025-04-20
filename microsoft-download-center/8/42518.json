@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Threat Modeling Tool 2014",
+    "downloadDescription": "The Microsoft Threat Modeling Tool helps engineers analyze the security of their systems to find and address design issues early in the software lifecycle.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSThreatModelingTool2014.msi",
+            "url": "https://download.microsoft.com/download/3/8/0/3800050d-2be7-4222-8b22-af91d073c4fa/MSThreatModelingTool2014.msi",
+            "size": "2670592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:37:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SDL Threat Modeling Tool is a core element of the SDL. The Microsoft Security Development Lifecycle (SDL) specifies development teams should define a products default and maximum attack surface during the design phase and reduce the likelihood for exploitation wherever possible. The tool is used during the design phase of the SDL and helps architects and engineers analyze their designs and software architecture before they start implementation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSThreatModelingTool2014.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System: Windows 7, Windows 8, Windows 8.1, Windows Server 2008 R2 and Windows Server 2012\r\n\r\n.NET Framework 4.0 full installation is required (client install is not sufficient).\r\n\r\nNOTE: Microsoft Threat Modeling Tool (TMT) 2014 is a stand-alone tool. TMT 2014 supports migration of threat models built with SDL Threat Modeling Tool v3 to the new TMT 2014 file format. However, migration of v3 models to TMT 2014 requires Microsoft Visio 2007 or later.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Setup consists of installing Microsoft Threat Modeling Tool 2014 on your local machine as a stand-alone tool. To perform setup:\r\n\r\n1. Download the Microsoft Threat Modeling Tool 2014 (MSThreatModelingTool2014Setup.msi) from this page\r\n2. Run MSThreatModelingTool2014.msi\r\n\r\nDefault install directory is C:\\Program Files (x86)\\Microsoft Threat Modeling Tool 2014 and the executable to run the tool is TMT4.exe.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42518",
+    "downloadPreload": true
+}

@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded 8 Industry (KB2879967)",
+    "downloadDescription": "Resolves an issue with the Unified Write Filter (UWF)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2879967-x64.msu",
+            "url": "https://download.microsoft.com/download/5/b/b/5bb0afa6-1909-412d-9b2c-a94c4e020a46/Windows8-RT-KB2879967-x64.msu",
+            "size": "531665",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2879967-x64.cab",
+            "url": "https://download.microsoft.com/download/5/b/b/5bb0afa6-1909-412d-9b2c-a94c4e020a46/Windows8-RT-KB2879967-x64.cab",
+            "size": "358533",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2879967-x86.cab",
+            "url": "https://download.microsoft.com/download/5/b/b/5bb0afa6-1909-412d-9b2c-a94c4e020a46/Windows8-RT-KB2879967-x86.cab",
+            "size": "276939",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2879967-x86.msu",
+            "url": "https://download.microsoft.com/download/5/b/b/5bb0afa6-1909-412d-9b2c-a94c4e020a46/Windows8-RT-KB2879967-x86.msu",
+            "size": "450381",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This KB has been superseded by <A href=\"http://www.microsoft.com/en-us/download/details.aspx?id=44264\">KB2996822</A>.\r\n<br></br>\r\nThis update resolves an issue with the Unified Write Filter (UWF) where shutdown/restart does not work when its overlay space is exhausted. New commands have been added for the UWF.\r\n<br></br>\r\nuwfmgr <b>shutdown</b> : Shut down the system immediately\r\n<br></br>\r\nuwfmgr <b>restart</b> : Restart the system immediately\r\n<br></br>\r\nNote: The above commands must be initiated immediately once the critical (90% of maximum) threshold is reached.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows8-RT-KB2879967-x64.msu",
+        "Windows8-RT-KB2879967-x64.cab",
+        "Windows8-RT-KB2879967-x86.cab",
+        "Windows8-RT-KB2879967-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "519.2 KB",
+        "350.1 KB",
+        "270.4 KB",
+        "439.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded 8 Industry",
+    "systemRequirementsSection_supportedOS": [
+        "Embedded 8 Industry"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>Windows Embedded 8 Industry image</b>: \r\n<br></br>\r\nA) Executing the appropriate msu file\r\n<ul>\r\n<li>32bit Windows8-RT-KB2879967-x86.msu</li>\r\n<li>64bit Windows8-RT-KB2879967-x64.msu</li>\r\n</ul>\r\nOR\r\n<br></br>\r\nB) Installing the cab file via the command line with administrator privileges.\r\n<br></br>\r\n\"DISM /online /add-package /packagepath:&ltLocation&gt\\&ltfilename.cab&gt\"\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows8-RT-KB2879967-x86.cab</li>\r\n<li>64bit Windows8-RT-KB2879967-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40335",
+    "downloadPreload": true
+}

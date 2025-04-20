@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Micro Framework Firmware Deployment Tool (MFDeploy)",
+    "downloadDescription": "The MFDeploy tool allows you to re-flash and configure the firmware of .NET Micro Framework devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MFDeploySP1.zip",
+            "url": "https://download.microsoft.com/download/2/e/c/2ecb4e91-007a-43db-8983-db6dcd49c724/MFDeploySP1.zip",
+            "size": "1592690",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\n<b>Note</b> By installing, copying, or otherwise using this software, you agree to be bound by the terms of its <a href=\"//msdn2.microsoft.com/en-us/embedded/bb404168.aspx\">license</a>.<br />\n<br />\nThe MFDeploy tool communicates with the bootloader on Micro Framework-enabled devices, and provides you with an extensible, flash memory management tool.\n<br /><br />\nThis download is identical to the MFDeploy tool included in the Micro Framework SDK, and is provided as a separate download here.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MFDeploySP1.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>.NET Framework 2.0</b></li><br />\n<li><b>Device running the .NET Micro Framework bootloader</b></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "MFDeploy is provided in a self-extracting zip file. Download this file to your compute,r and double click on it to extract the files. You will be prompted for a location to save the extracted files.<br />\n<br />\nOnce extracted, MFDeploy help will be found in the location where you extracted the files. MFDeploy help can be displayed by double-clicking on the MFDeploy help icon.<br />\n<br />\nStart MFDeploy by double-clicking the MFDeploy icon.",
+    "additionalInformationSection": "Contact your hardware manufacturer for firmware image files.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Micro Framework Home Page",
+            "url": "http://msdn.microsoft.com/embedded/netmf"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5475",
+    "downloadPreload": true
+}

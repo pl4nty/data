@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Field and Project Service Automation Sample Demo Data V3",
+    "downloadDescription": "The Field and Project Service sample demo data package installs the \"Fabrikam Manufacturing Demo Data\" (v3.0.0.7) solutions with approximately ~20k records across 148 entities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FPSDemoData_v3_0_0_7.exe",
+            "url": "https://download.microsoft.com/download/3/e/7/3e7502a7-bde4-4d60-8cb3-a55e4efe3b11/FPSDemoData_v3_0_0_7.exe",
+            "size": "18378544",
+            "version": "3.0.0.7",
+            "datePublished": "7/15/2024 4:53:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To become familiar with Dynamics 365 for Field and Project Service Automation, it's useful to have a pre-configured environment with data enabling some out of box scenarios.\r\nFor this purpose, we've created a seperate sample data installation package (English-language only at this time) that makes it easier to learn about these solutions with little/minor configuration.\r\n\r\nRunning the PackageDeployer performs the following:\r\n1) Creates/sets default data and parameters \r\n2) Installs transactional data such as Bookable Resources, Roles, Sales and Cost Price Lists, Organizational Units, Work Orders and Projects\r\n\r\nCompared with the old V2 version, this features a more minimialistic data set that additionally showcases net new capabilities of Dynamics 365 for Field Service and Project Service Automation.\r\nThe bookings rich day is Aug 9, 2018.\r\n\r\nIMPORTANT: There is no way to un-install this sample data. This package should only be installed on demonstration, evaluation, training and test systems.\r\nPlease read the updated instructions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.0.7",
+    "detailsSection_file_name": [
+        "FPSDemoData_v3_0_0_7.exe"
+    ],
+    "detailsSection_file_size": [
+        "17.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics 365 (v9) with Field Service(v8) and Project Service Automation(v3)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the self-extracting file and extract the contents to a working folder.\r\nOpen the PackageDeployer_FPSDemoData and PkgFolder sub-folder to find and open the \"Dynamics 365 for Field and Project Service Demo Data October 2018.pdf\" Installation instructions document.\r\n\r\nFor the latest instructions, please refer to \"https://aka.ms/fpsdemodata\".\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57512",
+    "downloadPreload": true
+}

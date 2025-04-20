@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Configure the Default OLAP Cubes",
+    "downloadDescription": "Use the information in this paper to configure the default online analytical processing (OLAP) cubes that are provided with Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "crossref.xlsx",
+            "url": "https://download.microsoft.com/download/c/5/f/c5fcf4c2-a812-4318-83a7-401ff4de7519/crossref.xlsx",
+            "size": "1420099",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:09:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ConfigureDefaultCubes.xps",
+            "url": "https://download.microsoft.com/download/c/5/f/c5fcf4c2-a812-4318-83a7-401ff4de7519/ConfigureDefaultCubes.xps",
+            "size": "1123942",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:09:36 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ConfigureDefaultCubes.pdf",
+            "url": "https://download.microsoft.com/download/c/5/f/c5fcf4c2-a812-4318-83a7-401ff4de7519/ConfigureDefaultCubes.pdf",
+            "size": "873508",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:09:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The default online analytical processing (OLAP) cubes that are provided with Microsoft Dynamics AX require full license and configuration keys. If any license or configuration key is turned off, you must complete the procedures in this white paper. The procedures in this white paper will help you configure the cubes to work with the license and configuration keys that you are using. Along with the white paper, an Excel workbook is included. Use the workbook to help identify the cubes and Role Centers that must be configured.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "crossref.xlsx",
+        "ConfigureDefaultCubes.xps",
+        "ConfigureDefaultCubes.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.1 MB",
+        "853.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>To view the XLSX file, you will need Microsoft Excel or software that can read Microsoft Excel documents. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14076",
+    "downloadPreload": true
+}

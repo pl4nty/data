@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Host Integration Server 2006 for x86",
+    "downloadDescription": "This update provides a fix for a security vulnerability in the SNA RPC Service.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HIS2006-KB956695-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/d/3/fd334c61-2995-4aa2-ba72-ff49dfcd69fd/HIS2006-KB956695-x86-ENU.exe",
+            "size": "245104",
+            "version": "956695",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update provides a fix for a security vulnerability in the SNA RPC Service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB956695",
+        "name": "KB956695"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS08-059",
+        "name": "MS08-059"
+    },
+    "detailsSection_file_version": "956695",
+    "detailsSection_file_name": [
+        "HIS2006-KB956695-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "239.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Host Integration Server 2006 (x86)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21329",
+    "downloadPreload": true
+}

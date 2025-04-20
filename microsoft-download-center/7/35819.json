@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Configuring Budget Plan Templates",
+    "downloadDescription": "This document describes how to configure budget plan templates.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Configuring Budget Plan Templates for Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/d/f/4/df400ee5-6a5d-4bda-95f8-b41902089bec/Configuring Budget Plan Templates for Microsoft Dynamics AX 2012.pdf",
+            "size": "1689300",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:30:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The topics include creating a worksheet template, creating a justification template (optional), and selecting budget plan template folders.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Configuring Budget Plan Templates for Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35819",
+    "downloadPreload": true
+}

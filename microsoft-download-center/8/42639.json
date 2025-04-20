@@ -1,0 +1,140 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.5.2 Language Pack for Windows RT 8.1",
+    "downloadDescription": "The .NET Framework 4.5.2 Language Pack contains localized resources for supported languages. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/d/5/e/d5eff551-2b25-4fba-8089-3693d26799d2/Readme.htm",
+            "size": "758",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:38:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.5.2 Language Pack contains translated error messages and other UI text for languages other than English. If you don't install a language pack, this text is displayed in English. You can install multiple language packs on one computer, each for a different language. \r\n<br />\r\nYou need to download and install the .NET Framework 4.5.2 prior to installing the language packs. You can find the .NET Framework 4.5.2 <a href=\"http://go.microsoft.com/fwlink/?LinkId=397430\">here</a>.\r\n<br />\n<br />\r\nThis version of the .NET Framework runs side-by-side with the .NET Framework 3.5 SP1 and earlier versions, but performs an in-place update for the .NET Framework 4, .NET Framework 4.5 and .NET Framework 4.5.1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "758 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM </li>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows RT 8.1"
+    ],
+    "installInstructionSection": "<ul>\n<li>Before you install a Language Pack, install the corresponding language version of the product.</li>\n<li>To download all files and then install:\n</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button.</li>\n</ul>\n</ul>\n</ul>\n",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=397428\">KB2938104 </a> for more information.\r\n<br />\r\n<br />\r\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=397423\">.NET Framework 4.5.2 Readme File</a>.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42639",
+    "downloadPreload": true
+}

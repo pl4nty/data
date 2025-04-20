@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "WebQuestions Semantic Parses Dataset",
+    "downloadDescription": "The WebQuestionsSP dataset is released as part of our ACL-2016 paper \u201cThe Value of Semantic Parse Labeling for Knowledge Base Question Answering\u201d [Yih, Richardson, Meek, Chang & Suh, 2016], in which we evaluated the value of gathering semantic parses, vs. answers, for a set of questions that originally comes from WebQuestions [Berant et al., 2013].  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WebQSP.zip",
+            "url": "https://download.microsoft.com/download/f/5/0/f5012144-a4fb-4084-897f-cfda99c60bdf/WebQSP.zip",
+            "size": "4383010",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The WebQuestionsSP dataset is released as part of our ACL-2016 paper \u201cThe Value of Semantic Parse Labeling for Knowledge Base Question Answering\u201d [Yih, Richardson, Meek, Chang & Suh, 2016], in which we evaluated the value of gathering semantic parses, vs. answers, for a set of questions that originally comes from WebQuestions [Berant et al., 2013].  The WebQuestionsSP dataset contains full semantic parses in SPARQL queries for 4,737 questions, and \u201cpartial\u201d annotations for the remaining 1,073 questions for which a valid parse could not be formulated or where the question itself is bad or needs a descriptive answer. This release also includes an evaluation script and the output of the STAGG semantic parsing system when trained using the full semantic parses. More detail can be found in the document and labeling instructions included in this release, as well as the paper.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WebQSP.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any OS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click<B> Download</B> and follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52763",
+    "downloadPreload": true
+}

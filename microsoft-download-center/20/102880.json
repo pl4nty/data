@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure IoT Edge for Linux on Windows (v1.0.1.0) - Public Preview",
+    "downloadDescription": "Azure IoTEdge for Linux on Windows enables customers to run production Linux-based cloud-native workloads on Windows",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AzureIoTEdge.msi",
+            "url": "https://download.microsoft.com/download/5/1/2/512abd08-7f3d-437c-91ca-de02941ffb5f/AzureIoTEdge.msi",
+            "size": "301015040",
+            "version": "1.0.1.0",
+            "datePublished": "5/15/2024 5:03:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure IoT Edge for Linux on Windows provides the ability to deploy Linux IoT Edge modules onto a Windows device. This opens a world of capabilities for commercial IoT as well as AI/ML with the availability of pre-built modules from the Azure Marketplace such as Live Video Analytics, SQL Edge, and OPC Publisher as a few examples. As a developer, you may also choose to implement your own custom modules using the Linux distribution of your choice to address specific business requirements. Running Linux modules on Windows becomes a seamless part of your solution. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1.0",
+    "detailsSection_file_name": [
+        "AzureIoTEdge.msi"
+    ],
+    "detailsSection_file_size": [
+        "287.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<b>Supported Windows Builds</b>\r\n<ul>\r\n     <li>Build 17763 or later</li>\r\n</ul>\r\n<b>Supported Windows Editions</b>\r\n<ul>\r\n     <li>Windows 10 IoT Enterprise</li>\r\n     <li>Windows 10 Enterprise</li>\r\n     <li>Windows 10 Professional</li>\r\n     <li>Windows Server 2019 or later</li>\r\n</ul>\r\n<b>Minimum Hardware Requirements</b>\r\n<ul>\r\n     <li>at least 2 GB free memory</li>\r\n     <li>10 GB of free disk space</li>\r\n</ul>\r\n<b>Other requirements</b>\r\n<ul>\r\n     <li><a href=\"https://azure.microsoft.com/\">Azure</a> Subscription</li>\r\n     <li><a href=\"https://docs.microsoft.com/azure/iot-hub/\">Azure IoT Hub</a></li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Please see <a href=\"https://aka.ms/AzEFLOW-Docs\">Azure IoT Edge for Linux on Windows Documentation</a> for detailed instructions.\r\n\r\n<a href=\"https://aka.ms/AzEFLOW-Registration\">Subscribe</a> to receive email announcements about Azure IoT Edge for Linux on Windows.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102880",
+    "downloadPreload": true
+}

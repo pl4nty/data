@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Live Meeting Technical Whitepapers",
+    "downloadDescription": "Includes technical information covering Microsoft Office Live Meeting",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LM Architecture paper - final Feb 2005.doc",
+            "url": "https://download.microsoft.com/download/c/4/5/c45bba09-63da-43c8-beb2-60c831b50451/LM Architecture paper - final Feb 2005.doc",
+            "size": "165888",
+            "version": "1",
+            "datePublished": "7/15/2024 3:16:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These whitepapers include technical information covering Microsoft Office Live Meeting, including Live Meeting Architecture, Security and Firewalls.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "LM Architecture paper - final Feb 2005.doc"
+    ],
+    "detailsSection_file_size": [
+        "162.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP Home Edition ",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31287",
+    "downloadPreload": true
+}

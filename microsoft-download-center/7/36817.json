@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Windows Deployment Services",
+    "downloadDescription": "\u200bThe Windows Deployment Services Management Pack includes monitors, rules, views, tasks and knowledge for the monitoring of your Windows Deployment Services infrastructure for Windows Server 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center Monitoring Pack for WDS.msi",
+            "url": "https://download.microsoft.com/download/4/5/e/45eed982-9399-4853-8720-debcb6e1bb06/System Center Monitoring Pack for WDS.msi",
+            "size": "462848",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WDS 2012 MP Guide.doc",
+            "url": "https://download.microsoft.com/download/4/5/e/45eed982-9399-4853-8720-debcb6e1bb06/WDS 2012 MP Guide.doc",
+            "size": "252928",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bThe Windows Deployment Services Management Pack includes monitors, rules, views, tasks and knowledge for the monitoring of your Windows Deployment Services infrastructure for Windows Server 2012. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<ul>\r\n<li> Windows Server 2012 Support  </li>\r\n<li> Service Health Monitoring  </li>\r\n<li> State and Alert Views  </li>\r\n<li> Performance Monitoring  </li>\r\n<li> Alert Knowledge Base Information </li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>2/27/2013 - Initial English release, version 7.0.8560.0</li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8560.0",
+    "detailsSection_file_name": [
+        "System Center Monitoring Pack for WDS.msi",
+        "WDS 2012 MP Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "452.0 KB",
+        "247.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b></li>\r\n<ul>\r\n<li> Windows Server 2012 with Windows Deployment Services Role</li>\r\n<li> System Center 2012 - Operations Manager </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "\u200bPlease refer to WDS 2012 MP Guide for instructions.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Home Page",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "windows Deployment Services on TechNet",
+            "url": "http://technet.microsoft.com/en-us/library/hh831764.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36817",
+    "downloadPreload": true
+}

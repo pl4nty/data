@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Distributed File System Namespace Solution with Hybrid Cloud Storage Deployment Guide",
+    "downloadDescription": "This paper explains how to deploy Microsoft Azure StorSimple, Windows file servers, and Windows Server Distributed File System Namespace to create a global namespace for all the shares created in StorSimple",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StorSimpleDFSSolutionGuide-1-23-2015.pdf",
+            "url": "https://download.microsoft.com/download/d/9/e/d9ee75a0-cbf6-4df5-8f27-1b88558d837b/StorSimpleDFSSolutionGuide-1-23-2015.pdf",
+            "size": "3368651",
+            "version": "1",
+            "datePublished": "3/15/2024 3:55:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper explains how to deploy Microsoft Azure StorSimple, Windows file servers, and Windows Server Distributed File System Namespace to create a global namespace for all the shares created in StorSimple. It describes how system administrators can take advantage of DFS-N during disaster recovery from one StorSimple appliance to another, and maintain the same share names. This provides transparency and continuity to end users during disaster recovery, and removes the need for manual tasks and changes post recovery. This paper also outlines how to use BranchCache to distribute content to remote sites and branches, and includes a reference architecture and best practices for using DFS-N and BranchCache along with StorSimple for large deployments.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "StorSimpleDFSSolutionGuide-1-23-2015.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Windows 8, Windows 7, Windows Vista\r\nAdobe Acrobat Reader (PDF version)\r\n\r\n\r\n ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download and open in reader or print.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45507",
+    "downloadPreload": true
+}

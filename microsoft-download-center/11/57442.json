@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "USQL Performance optimization",
+    "downloadDescription": "U-SQL - Performance optimization",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "U-SQL - Performance optimization.pdf",
+            "url": "https://download.microsoft.com/download/5/7/d/57d8244c-45d1-4625-84fb-c0a813105c25/U-SQL - Performance optimization.pdf",
+            "size": "1001736",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:05:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides details of some points to consider for performance optimization of U-SQL tables and the queries running against them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "U-SQL - Performance optimization.pdf"
+    ],
+    "detailsSection_file_size": [
+        "978.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To start the download, click Download, click Go, and then do one of the following: To start the installation immediately, click Open or Run this program from its current location. To copy the download to your computer for installation at a later time, click Save or Save this program to disk.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57442",
+    "downloadPreload": true
+}

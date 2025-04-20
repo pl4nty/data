@@ -1,0 +1,112 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2008 Service Pack 3 (KB3045303)",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2008 Service Pack 3 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB3045303-x86.exe",
+            "url": "https://download.microsoft.com/download/3/0/8/3089227d-5723-4035-b402-57d2a852a63c/SQLServer2008-KB3045303-x86.exe",
+            "size": "156563616",
+            "version": "10.0.5890.0",
+            "datePublished": "7/15/2024 3:51:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB3045303-x64.exe",
+            "url": "https://download.microsoft.com/download/3/0/8/3089227d-5723-4035-b402-57d2a852a63c/SQLServer2008-KB3045303-x64.exe",
+            "size": "223148200",
+            "version": "10.0.5890.0",
+            "datePublished": "7/15/2024 3:51:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB3045303-IA64.exe",
+            "url": "https://download.microsoft.com/download/3/0/8/3089227d-5723-4035-b402-57d2a852a63c/SQLServer2008-KB3045303-IA64.exe",
+            "size": "223619240",
+            "version": "10.0.5890.0",
+            "datePublished": "7/15/2024 3:51:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server 2008 Service Pack 3 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3045303",
+        "name": "KB3045303"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS15-058",
+        "name": "MS15-058"
+    },
+    "detailsSection_file_version": "10.0.5890.0",
+    "detailsSection_file_name": [
+        "SQLServer2008-KB3045303-x86.exe",
+        "SQLServer2008-KB3045303-x64.exe",
+        "SQLServer2008-KB3045303-IA64.exe"
+    ],
+    "detailsSection_file_size": [
+        "149.3 MB",
+        "212.8 MB",
+        "213.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2008 SP3 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48013",
+    "downloadPreload": true
+}

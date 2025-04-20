@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Windows SideShow Device SDK for .NET Micro Framework 1.4",
+    "downloadDescription": "Download the Windows SideShow Device SDK for .NET Micro Framework to develop Windows SideShow-compatible devices using C# and .NET technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SideShowSDKforNETMF.msi",
+            "url": "https://download.microsoft.com/download/5/4/1/541c58b2-4960-4a02-9ffe-bf762602ac48/SideShowSDKforNETMF.msi",
+            "size": "12032512",
+            "version": "1.4",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nWindows SideShow is a feature of Windows Vista that enables users to access information from their PCs on auxiliary displays. The Microsoft .NET Micro Framework 2.0 SP1 is the efficient runtime that powers today\u2019s most popular SideShow-compatible devices.<br />\n<br />\nThe Windows SideShow Device SDK enables developers to build SideShow-compatible devices using the .NET Micro Framework 2.0 SP1. It includes sample code; portrait and landscape SideShow UI for QVGA displays (320x240); USB and Bluetooth connectivity; and the SideShow device simulator, which allows developers to test their firmware without physical hardware.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4",
+    "detailsSection_file_name": [
+        "SideShowSDKforNETMF.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Requirements<br />\n\u2022 Windows Vista<br />\n\u2022 Visual Studio 2005<br />\n\u2022 Microsoft .NET Micro Framework SDK 2.0<br />\n<br />\nOnce installed, the SDK documentation is integrated with Visual Studio 2005. You can access the documentation by clicking Contents on the Help menu in Visual Studio. Also note that you may need to restart Visual Studio 2005 before the documentation becomes available.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. On this page, click Download to start the download.<br />\n2. Do one of the following:<br />\n       \u2022To start the installation immediately, click Run. <br />\n       \u2022To download the SDK to your computer for installation at a later time, click Save.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows SideShow Team Blog",
+            "url": "http://blogs.msdn.com/sideshow/default.aspx"
+        },
+        {
+            "title": "the Microsoft .NET Micro Framework SDK 2.0 with Service Pack 1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=32F5DF20-6C95-4FE8-A76C-0ED56A839AD2&displaylang=en"
+        },
+        {
+            "title": "for feedback, and support questions",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=1296&SiteID=1"
+        },
+        {
+            "title": "the .NET Micro Framework page on the Windows Embedded Developer Center",
+            "url": "http://msdn2.microsoft.com/en-us/embedded/bb267253.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5813",
+    "downloadPreload": true
+}

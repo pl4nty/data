@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "MSDN Success Builder Module 2-002: Team Leadership",
+    "downloadDescription": "Developer training materials for the Success Builder program from MSDN.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Module2-002.zip",
+            "url": "https://download.microsoft.com/download/f/c/3/fc3084ed-4d70-421f-8989-c9afd9029135/Module2-002.zip",
+            "size": "26776",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A guide to transforming a group of people working together into a high performance team that achieves results. This guide shows how software developers can create a team environment that encourages team members to be motivated, to develop their professional capabilities and to view themselves as responsible for the team\u2019s results. 9 subsections. 60 minutes.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Module2-002.zip"
+    ],
+    "detailsSection_file_size": [
+        "26.1 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Requires Microsoft Office 2003 or later.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To use the course materials unzip the archive file and extract the included documents to a location on your hard drive.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13604",
+    "downloadPreload": true
+}

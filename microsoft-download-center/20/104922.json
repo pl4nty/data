@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvc_612_9.53.6594.1",
+    "downloadDescription": "ASRMobSvc_612_9.53.6594.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.53.6594.1_DEBIAN9-64_GA_21Jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/a/e/c/aec28736-3272-4d05-a144-57fd849cd3c3/Microsoft-ASR_UA_9.53.6594.1_DEBIAN9-64_GA_21Jan2023_release.tar.gz",
+            "size": "156931522",
+            "version": "9.53.6594.1",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.53.6594.1_DEBIAN8-64_GA_21Jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/a/e/c/aec28736-3272-4d05-a144-57fd849cd3c3/Microsoft-ASR_UA_9.53.6594.1_DEBIAN8-64_GA_21Jan2023_release.tar.gz",
+            "size": "139374496",
+            "version": "9.53.6594.1",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.53.6594.1_DEBIAN7-64_GA_21Jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/a/e/c/aec28736-3272-4d05-a144-57fd849cd3c3/Microsoft-ASR_UA_9.53.6594.1_DEBIAN7-64_GA_21Jan2023_release.tar.gz",
+            "size": "132426144",
+            "version": "9.53.6594.1",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.53.6594.1_DEBIAN11-64_GA_21Jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/a/e/c/aec28736-3272-4d05-a144-57fd849cd3c3/Microsoft-ASR_UA_9.53.6594.1_DEBIAN11-64_GA_21Jan2023_release.tar.gz",
+            "size": "153669014",
+            "version": "9.53.6594.1",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.53.6594.1_DEBIAN10-64_GA_21Jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/a/e/c/aec28736-3272-4d05-a144-57fd849cd3c3/Microsoft-ASR_UA_9.53.6594.1_DEBIAN10-64_GA_21Jan2023_release.tar.gz",
+            "size": "164643535",
+            "version": "9.53.6594.1",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvc_612_9.53.6594.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.53.6594.1",
+    "detailsSection_file_name": [
+        "Microsoft-ASR_UA_9.53.6594.1_DEBIAN9-64_GA_21Jan2023_release.tar.gz",
+        "Microsoft-ASR_UA_9.53.6594.1_DEBIAN8-64_GA_21Jan2023_release.tar.gz",
+        "Microsoft-ASR_UA_9.53.6594.1_DEBIAN7-64_GA_21Jan2023_release.tar.gz",
+        "Microsoft-ASR_UA_9.53.6594.1_DEBIAN11-64_GA_21Jan2023_release.tar.gz",
+        "Microsoft-ASR_UA_9.53.6594.1_DEBIAN10-64_GA_21Jan2023_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "149.7 MB",
+        "132.9 MB",
+        "126.3 MB",
+        "146.6 MB",
+        "157.0 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104922",
+    "downloadPreload": true
+}

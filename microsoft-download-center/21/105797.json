@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "PushInstallAgent_1.41.8974.21822_1",
+    "downloadDescription": "PushInstallAgent_1.41.8974.21822_1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PushInstallAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/3/0/4/304b7340-90e9-4e37-a01e-00632e0b8cdb/PushInstallAgentSetup.msi",
+            "size": "23707648",
+            "version": "1.41.8974.21822",
+            "datePublished": "6/15/2024 4:55:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PushInstallAgent_1.41.8974.21822_1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.41.8974.21822",
+    "detailsSection_file_name": [
+        "PushInstallAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "22.6 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Follow wizard instructions PushInstallAgent installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105797",
+    "downloadPreload": true
+}

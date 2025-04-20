@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Server 2013 Stress Testing Guide ",
+    "downloadDescription": "To validate the capacity planning requirements of a Lync Server 2013 deployment, we recommend that you perform a stress testing exercise using The Lync Server 2013 Stress and Performance Tool (LSS). This document will take you through the steps required to plan and conduct a Lync Server stress testing exercise.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync Server 2013 Stress Testing Guide.docx",
+            "url": "https://download.microsoft.com/download/7/8/f/78fd8038-04c6-423e-9dc3-04499ac38905/Lync Server 2013 Stress Testing Guide.docx",
+            "size": "1591004",
+            "version": "Feb2014",
+            "datePublished": "7/15/2024 3:24:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To assess and validate the capacity planning requirements of a Lync Server 2013 deployment, we recommend that you perform a stress testing exercise using The Lync Server 2013 Stress and Performance Tool (LSS).\r\n<br/><br/>\r\nLSS is a toolset that you can use to perform a stress test of a design that will be deployed on a target deployment infrastructure (server, storage, and network) based on your specific usage pattern. The LSS can simulate all Lync Server workloads or just specific workloads, such as instant messaging (IM) and presence, application sharing, audio conferencing, and mobility, with a particular scale target.\r\nThis test plan will take you through the steps required to plan and conduct a Lync Server 2013 stress testing exercise, and it will help you analyze the results in order to conclude whether the initial capacity plan is sound or requires adjustment. \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2014",
+    "detailsSection_file_name": [
+        "Lync Server 2013 Stress Testing Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server 2013 Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/gg398616.aspx"
+        },
+        {
+            "title": "lync Server 2013 Stress and Performance Tool",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=36819"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41935",
+    "downloadPreload": true
+}

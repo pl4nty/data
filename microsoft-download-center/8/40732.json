@@ -1,0 +1,134 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 R2 Hyper-V Component Architecture Poster and Hyper-V Mini-Posters",
+    "downloadDescription": "Provides a visual reference for understanding key Hyper-V technologies in Windows Server 2012 R2 and focuses on Generation 2 virtual machines, Hyper-V with virtual hard disk sharing, online virtual hard disk resizing, storage quality-of-service, enhanced session mode, live migration, Hyper-V failover clustering, and upgrading your private cloud. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hyper-V Storage GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Hyper-V Storage GA.pdf",
+            "size": "226336",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2012 R2 Hyper-V Component Architecture GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Windows Server 2012 R2 Hyper-V Component Architecture GA.pdf",
+            "size": "624738",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrading Your Private Cloud GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Upgrading Your Private Cloud GA.pdf",
+            "size": "228544",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hyper-V Virtual Hard Disk Sharing GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Hyper-V Virtual Hard Disk Sharing GA.pdf",
+            "size": "210895",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Generation 2 Virtual Machines GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Generation 2 Virtual Machines GA.pdf",
+            "size": "221028",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Session Modes GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Session Modes GA.pdf",
+            "size": "184463",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hyper-V and Failover Clustering GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Hyper-V and Failover Clustering GA.pdf",
+            "size": "223592",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Live Migration GA.pdf",
+            "url": "https://download.microsoft.com/download/c/b/4/cb4b8c86-dbc3-4b40-b068-d31c2cd9a77d/Live Migration GA.pdf",
+            "size": "243413",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:15:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These posters provide a visual reference for understanding key Hyper-V technologies in Windows Server 2012 R2. They focus on Generation 2 virtual machines, Hyper-V with virtual hard disk sharing, online virtual hard disk resizing, storage quality-of-service, enhanced session mode, live migration, Hyper-V failover clustering, and upgrading your private cloud. This visual reference is available as a complete wall poster or as individual components that are suitable for printing on most standard printers. <BR></BR>\r\n\r\nThere are multiple files available for this download. When you click <B>Download</B>, you will be prompted to select the files you want. The posters include: <BR></BR>\r\nWindows Server 2012 R2 Hyper-V Component Architecture Poster (whole poster) <BR></BR>\r\n\r\nMini-posters: <BR></BR>\r\n\r\n<UL>Generation 2 Virtual Machines<BR></BR>\r\n<LI>Hyper-V with Virtual Hard Disk Sharing </LI>\r\n<LI>Online Virtual Hard Disk Resizing </LI>\r\n<LI>Storage Quality of Service (QoS) </LI>\r\n<LI>Enhanced Session Mode </LI>\r\n<LI>Live Migration </LI>\r\n<LI>Failover Clustering </LI>\r\n<LI>Upgrading Your Private Cloud </LI></UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "September 2013",
+    "detailsSection_file_name": [
+        "Hyper-V Storage GA.pdf",
+        "Windows Server 2012 R2 Hyper-V Component Architecture GA.pdf",
+        "Upgrading Your Private Cloud GA.pdf",
+        "Hyper-V Virtual Hard Disk Sharing GA.pdf",
+        "Generation 2 Virtual Machines GA.pdf",
+        "Session Modes GA.pdf",
+        "Hyper-V and Failover Clustering GA.pdf",
+        "Live Migration GA.pdf"
+    ],
+    "detailsSection_file_size": [
+        "221.0 KB",
+        "610.1 KB",
+        "223.2 KB",
+        "206.0 KB",
+        "215.8 KB",
+        "180.1 KB",
+        "218.4 KB",
+        "237.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".pdf viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "\u2022 Windows Server 2008 R2 with SP1 Hyper-V Component Architecture ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=2688"
+        },
+        {
+            "title": "windows Server 2012 Hyper-V Component Architecture Poster and Companion References",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=29189"
+        },
+        {
+            "title": "\u2022 Windows Server 2008 R2 Hyper-V Component Architecture ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=3501"
+        },
+        {
+            "title": "\u2022 Windows Server 2008 R2 Feature Component Poster ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=7002"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40732",
+    "downloadPreload": true
+}

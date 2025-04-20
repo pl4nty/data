@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 2016 Management Pack for Service Provider Foundation (SPF)",
+    "downloadDescription": "This management pack helps administrators helps manage SPF installation instances by monitoring the health of the SPF servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Management Pack for Service Provider Foundation.msi",
+            "url": "https://download.microsoft.com/download/0/d/b/0dbebb1a-c3ff-4030-bd9a-0efcd226b0c0/Microsoft System Center 2016 Management Pack for Service Provider Foundation.msi",
+            "size": "3280896",
+            "version": "7.3.81.0",
+            "datePublished": "7/15/2024 4:34:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_SPF.docx",
+            "url": "https://download.microsoft.com/download/0/d/b/0dbebb1a-c3ff-4030-bd9a-0efcd226b0c0/OpsMgr_MP_SPF.docx",
+            "size": "46440",
+            "version": "7.3.81.0",
+            "datePublished": "7/15/2024 4:34:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack helps administrators helps manage SPF installation instances by monitoring the health of the SPF servers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.3.81.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2016 Management Pack for Service Provider Foundation.msi",
+        "OpsMgr_MP_SPF.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "45.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This management pack is supported to run in System Center 2016 Operations Manager\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer to MP Guide \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54064",
+    "downloadPreload": true
+}

@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Server 2013",
+    "downloadDescription": "Download Microsoft Dynamics CRM Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Server-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/6/a/b/6ab1209c-8091-4bfa-b7b5-d4ffa454ca48/CRM2013-Server-ENU-amd64.exe",
+            "size": "272371976",
+            "version": "06.00.0000.0809",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        }
+    ],
+    "detailsSection": "Download Microsoft Dynamics CRM Server 2013. This download also includes Microsoft Dynamics CRM Reporting Extension.<br /><br/>\r\nAfter the download is complete, run Microsoft Dynamics CRM Server Setup, during which you may insert a valid commercial product key or use one of the following 90-day trial keys. <br/><br/>\n<ul><li>Microsoft Dynamics CRM Workgroup Server 2013 (5 CAL limit): NX77Y-BTBCV-JP3T3-8W7JH-94QJP </li>\n<li>Microsoft Dynamics CRM Server 2013 (no CAL limit): CQWW3-TNXBF-HRQWC-CVTW9-M968H </li></ul><br/><br/>\r\nNotice that, if you use a 90-day trial key, you can enter a valid commercial product key at any time during the trial period to continue to use the product.<br/><br/>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06.00.0000.0809",
+    "detailsSection_file_name": [
+        "CRM2013-Server-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "259.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For the latest information about Microsoft Dynamics CRM 2013 hardware and software requirements, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=306081\">Microsoft Dynamics CRM 2013 system requirements and required technologies</a>. <br/>\r\nFor Microsoft Dynamics CRM 2013 installation instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=306322\">Installing Guide for Microsoft Dynamics CRM 2013</a>.\n\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>. </li>\n<li>When the File Download dialog box appears, click <b>Save</b> to save the file to your computer. </li>\n<li>When you are ready to install the product, double-click the executable file, and then follow the instructions on the screen. </li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2013 Readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=311664"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2013 SDK",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=318043"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40341",
+    "downloadPreload": true
+}

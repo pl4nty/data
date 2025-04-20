@@ -1,0 +1,161 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft .NET Framework 2.0 Service Pack 2 on Windows Server 2003 and Windows XP",
+    "downloadDescription": "A security issue has been identified that could allow an unauthenticated remote attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP20SP2-KB2729450-IA64.exe",
+            "url": "https://download.microsoft.com/download/f/3/2/f3240ff4-92f0-4528-834f-2699d71ccae6/NDP20SP2-KB2729450-IA64.exe",
+            "size": "37318160",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "NDP20SP2-KB2729450-x86.exe",
+            "url": "https://download.microsoft.com/download/f/3/2/f3240ff4-92f0-4528-834f-2699d71ccae6/NDP20SP2-KB2729450-x86.exe",
+            "size": "14682632",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NDP20SP2-KB2729450-x64.exe",
+            "url": "https://download.microsoft.com/download/f/3/2/f3240ff4-92f0-4528-834f-2699d71ccae6/NDP20SP2-KB2729450-x64.exe",
+            "size": "31280648",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an unauthenticated remote attacker to compromise your system and gain control over it. You can help protect your system by installing this update from Microsoft. After you install this update, you may have to restart your system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2729450",
+        "name": "KB2729450"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-074",
+        "name": "MS12-074"
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "NDP20SP2-KB2729450-IA64.exe",
+        "NDP20SP2-KB2729450-x86.exe",
+        "NDP20SP2-KB2729450-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "35.6 MB",
+        "14.0 MB",
+        "29.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br /> <B>Note:</B> More information about Service Pack levels currently supported for the platforms listed above can be found in the following page: <a href=\"http://go.microsoft.com/fwlink/?LinkId=164675\">Microsoft Product Support Lifecycle</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=248031\">KB2729450</a> for more information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35692",
+    "downloadPreload": true
+}

@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Async CTP (Version 3)",
+    "downloadDescription": "The Visual Studio Async CTP (Version 3) extends Visual Studio 2010, providing a new, streamlined syntax for asynchronous development. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Async-CTP-v3.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b59a157-a908-4f6e-85d7-eb93e3a4dc00/Async-CTP-v3.exe",
+            "size": "23154072",
+            "version": "CTP-SP1Refresh",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The original Async CTP from PDC 10 brought asynchronous programming to C# and Visual Basic in Visual Studio 2010. \r\nThis update brings the following:\r\n<ul>\r\n<li>Compatible with Visual Studio 2010 SP1, which is now required.</li>\r\n<li>Compatible with non-English installations of Visual Studio and with Visual Studio Express.</li>\r\n<li>Compatible with Silverlight 5.</li>\r\n<li>Compatible with Windows Phone SDK 7.1 (Mango).</li>\r\n<li>Compatible with Roslyn CTP</li>\r\n<li>Includes various bug-fixes and changes, detailed in the Readme and documentation.</li>\r\n<li>Includes a new EULA for production use. Note -  This license does not constitute encouragement for you to use the CTP for your production code. The CTP remains an unsupported and use-at-your-own-risk Technology Preview. However, we\u2019ve received many requests from developers to use the CTP for production code, and so have changed the license to allow that.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "CTP-SP1Refresh",
+    "detailsSection_file_name": [
+        "Async-CTP-v3.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <a href=\"http://www.microsoft.com/visualstudio/en-us\">SP1 versions of Visual Studio 2010 Professional, Premium, Ultimate, or Express</a> </li>\r\n</ul>\r\n\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button to start the download.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</li>\r\n</ol> ",
+    "additionalInformationSection": "<b>Prerequisites</b>\r\n<ol>\r\n<li>Install Visual Studio 2010 SP1.</li>\r\n<li>This version of the Async CTP can be installed on its own, or can be installed as an upgrade over the previous \u201cAsync CTP SP1 Refresh\u201d \u2013 it is not necessary to uninstall first.</li>\r\n<li>Run Windows Update and install all available updates, including optional updates. (As an alternative to Windows update, it\u2019s okay to just manually install KB2468871). </li>\r\n<li>If you want to do phone development, install Windows Phone Developer Tools.</li>\r\n\r\n</ol>\r\n<b>Installation Notes</b>\r\n<ul>\r\n<li> Installation may take an hour or more, depending on download speed and machine state.</li>\r\n<li> A Start menu Readme item will not be created for users on computers running Windows XP. To access the Readme, navigate to My Documents &gt Microsoft Visual Studio Async CTP.</li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio\u00ae Async CTP Forums",
+            "url": "http://social.msdn.microsoft.com/Forums/en-US/async/threads"
+        },
+        {
+            "title": "visual Studio\u00ae Async CTP on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=204842"
+        },
+        {
+            "title": "windows Phone Developer Tools",
+            "url": "http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=27570"
+        },
+        {
+            "title": "microsoft .NET Framework 4 KB2468871",
+            "url": "http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=3556"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9983",
+    "downloadPreload": true
+}

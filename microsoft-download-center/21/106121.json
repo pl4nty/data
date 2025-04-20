@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Kinect SDK 1.4.2",
+    "downloadDescription": "Azure Kinect SDK is a user mode SDK to read data from your Azure Kinect DK device.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AzureKinectDK_Fw_1.6.110080014.bin",
+            "url": "https://download.microsoft.com/download/d/c/1/dc1f8a76-1ef2-4a1a-ac89-a7e22b3da491/AzureKinectDK_Fw_1.6.110080014.bin",
+            "size": "1294306",
+            "version": "1.4.2",
+            "datePublished": "7/3/2024 4:43:31 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Azure Kinect SDK 1.4.2.exe",
+            "url": "https://download.microsoft.com/download/d/c/1/dc1f8a76-1ef2-4a1a-ac89-a7e22b3da491/Azure Kinect SDK 1.4.2.exe",
+            "size": "33315528",
+            "version": "1.4.2",
+            "datePublished": "7/3/2024 4:43:31 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Kinect SDK is a user mode SDK to read data from your Azure Kinect DK device.<br />\r\nFor more information see <a href=\"https://aka.ms/kinectdocs\">https://aka.ms/kinectdocs</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.2",
+    "detailsSection_file_name": [
+        "AzureKinectDK_Fw_1.6.110080014.bin",
+        "Azure Kinect SDK 1.4.2.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "31.8 MB"
+    ],
+    "detailsSection_file_date": "7/3/2024",
+    "systemRequirementsSection": "Sensor SDK is available for the Windows API (Win32) for native C/C++ Windows applications and is not currently available to UWP applications. Azure Kinect DK is not supported for Windows 10 in S mode.<br />\r\nFor more information see <a href=\"https://aka.ms/kinectdocs\">https://aka.ms/kinectdocs</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Run the installer. More details are available at <a href=\"https://aka.ms/kinectdocs\">https://aka.ms/kinectdocs</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106121",
+    "downloadPreload": true
+}

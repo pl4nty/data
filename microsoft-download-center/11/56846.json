@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Commands Reference",
+    "downloadDescription": "A PDF containing an overview and alphabetical listing of Windows commands",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ws-commands.pdf",
+            "url": "https://download.microsoft.com/download/5/8/9/58911986-d4ad-4695-bf63-f734cd4df8f2/ws-commands.pdf",
+            "size": "4864129",
+            "version": "WS16",
+            "datePublished": "7/15/2024 4:45:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this PDF to find the documentation resources and other technical information that you need to learn about the\r\ncommand shell, and to automate command-line tasks by using scripts or scripting tools.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WS16",
+    "detailsSection_file_name": [
+        "ws-commands.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download requires a PDF viewer app.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download this PDF for a complete listing of Windows commands.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56846",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Reinforcement-Learning Infrastructure for \u2018Civilization IV\u2019",
+    "downloadDescription": "Use this learning infrastructure to interface with the \u201cCivilization IV\u201d SDK and game to run and evaluate different reinforcement-learning algorithms and learn AI strategies. Last published: August 4, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RLforCiv.zip",
+            "url": "https://download.microsoft.com/download/d/2/a/d2aa0680-d401-4e74-8557-a864006ce5d4/RLforCiv.zip",
+            "size": "16025",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:54:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this learning infrastructure to interface with the \u201cCivilization IV\u201d SDK and game to run and evaluate different reinforcement-learning algorithms and learn AI strategies. The infrastructure supports simple reinforcement-learning algorithms, such as Q-learning, as well as the required instructions on implementing new algorithms and evaluating their performance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "RLforCiv.zip"
+    ],
+    "detailsSection_file_size": [
+        "15.6 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52521",
+    "downloadPreload": true
+}

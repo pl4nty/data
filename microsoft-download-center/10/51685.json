@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Online SMB FAQ",
+    "downloadDescription": "A document containing answers to frequently asked questions by SMB prospects interested in Microsoft Dynamics CRM Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsCRMOnline_SMB_FAQ.pdf",
+            "url": "https://download.microsoft.com/download/9/e/9/9e9037cf-25dd-4888-965b-ec7d3068344c/MicrosoftDynamicsCRMOnline_SMB_FAQ.pdf",
+            "size": "541753",
+            "version": "CRM Online",
+            "datePublished": "7/15/2024 4:15:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A document containing answers to frequently asked questions by SMB prospects interested in Microsoft Dynamics CRM Online.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "CRM Online",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsCRMOnline_SMB_FAQ.pdf"
+    ],
+    "detailsSection_file_size": [
+        "529.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "read",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51685",
+    "downloadPreload": true
+}

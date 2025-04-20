@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "JavaScript API for Office: by app type and host (wall posters)",
+    "downloadDescription": "This series of wall posters provides full-color, large-scale diagrams of the objects, methods, properties, events, and enumerations in the JavaScript API for Office, filtered by app type and host application. The poster is provided in PDF format. When you print it from the PDF, specify the dimensions as 22 in. by 34 in. (56 cm by 87 cm).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "JavaScriptAPIforOfficePoster_TypesAndHosts.pdf",
+            "url": "https://download.microsoft.com/download/7/5/3/753af656-dcb6-478a-bb6d-79011bfe4b9e/JavaScriptAPIforOfficePoster_TypesAndHosts.pdf",
+            "size": "640463",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:17:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This series of wall posters provides full-color, large-scale diagrams of the objects, methods, properties, events, and enumerations in the JavaScript API for Office, filtered by app type and host application.<br /><br />\r\nThe poster includes technical details of each API, such as member type, the types of apps in which each can be used, and return types.<br /><br />\r\nThe JavaScript API for Office that is used in apps for Office that are created for the Office 2013 versions of Word, Excel, Outlook, Project Standard, and Project Professional.<br /><br />\r\nThe poster is presented in PDF format, and is intended to be printed at 22 inches by 34 inches (56 centimeters by 87 centimeters).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "JavaScriptAPIforOfficePoster_TypesAndHosts.pdf"
+    ],
+    "detailsSection_file_size": [
+        "625.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF file reader: The poster in this download is provided as a PDF file and requires a PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF, and then view it with a PDF reader or print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39720",
+    "downloadPreload": true
+}

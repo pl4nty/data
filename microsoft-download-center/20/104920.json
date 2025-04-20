@@ -1,0 +1,257 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvc_556_9.53.6594.1",
+    "downloadDescription": "ASRMobSvc_556_9.53.6594.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_windows_ga_21jan2023_release.exe",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_windows_ga_21jan2023_release.exe",
+            "size": "207557320",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ubuntu-22.04-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ubuntu-22.04-64_ga_21jan2023_release.tar.gz",
+            "size": "104962916",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ubuntu-20.04-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ubuntu-20.04-64_ga_21jan2023_release.tar.gz",
+            "size": "118643476",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ubuntu-18.04-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ubuntu-18.04-64_ga_21jan2023_release.tar.gz",
+            "size": "105698836",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ubuntu-16.04-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ubuntu-16.04-64_ga_21jan2023_release.tar.gz",
+            "size": "111151916",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ubuntu-14.04-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ubuntu-14.04-64_ga_21jan2023_release.tar.gz",
+            "size": "99579488",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_sles15-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_sles15-64_ga_21jan2023_release.tar.gz",
+            "size": "96393151",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_sles12-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_sles12-64_ga_21jan2023_release.tar.gz",
+            "size": "94255514",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_sles11-sp4-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_sles11-sp4-64_ga_21jan2023_release.tar.gz",
+            "size": "113068212",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_sles11-sp3-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_sles11-sp3-64_ga_21jan2023_release.tar.gz",
+            "size": "113319777",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_rhel8-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_rhel8-64_ga_21jan2023_release.tar.gz",
+            "size": "110956941",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_rhel7-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_rhel7-64_ga_21jan2023_release.tar.gz",
+            "size": "115144238",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_rhel6-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_rhel6-64_ga_21jan2023_release.tar.gz",
+            "size": "123550896",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_rhel5-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_rhel5-64_ga_21jan2023_release.tar.gz",
+            "size": "143592006",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ol8-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ol8-64_ga_21jan2023_release.tar.gz",
+            "size": "111526587",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ol7-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ol7-64_ga_21jan2023_release.tar.gz",
+            "size": "107227019",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_ol6-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_ol6-64_ga_21jan2023_release.tar.gz",
+            "size": "116328881",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_debian9-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_debian9-64_ga_21jan2023_release.tar.gz",
+            "size": "156931522",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_debian8-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_debian8-64_ga_21jan2023_release.tar.gz",
+            "size": "139374496",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_debian7-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_debian7-64_ga_21jan2023_release.tar.gz",
+            "size": "132426144",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "microsoft-asr_ua_9.53.6594.1_debian11-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_debian11-64_ga_21jan2023_release.tar.gz",
+            "size": "153669014",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "microsoft-asr_ua_9.53.6594.1_debian10-64_ga_21jan2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/5/f/b/5fbbb581-b185-41e3-8c77-18144ed5d4a3/microsoft-asr_ua_9.53.6594.1_debian10-64_ga_21jan2023_release.tar.gz",
+            "size": "164643535",
+            "version": "9.53.6594.1",
+            "datePublished": "1/25/2023 10:01:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvc_556_9.53.6594.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.53.6594.1",
+    "detailsSection_file_name": [
+        "microsoft-asr_ua_9.53.6594.1_windows_ga_21jan2023_release.exe",
+        "microsoft-asr_ua_9.53.6594.1_ubuntu-22.04-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ubuntu-20.04-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ubuntu-18.04-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ubuntu-16.04-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ubuntu-14.04-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_sles15-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_sles12-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_sles11-sp4-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_sles11-sp3-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_rhel8-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_rhel7-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_rhel6-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_rhel5-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ol8-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ol7-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_ol6-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_debian9-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_debian8-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_debian7-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_debian11-64_ga_21jan2023_release.tar.gz",
+        "microsoft-asr_ua_9.53.6594.1_debian10-64_ga_21jan2023_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "197.9 MB",
+        "100.1 MB",
+        "113.1 MB",
+        "100.8 MB",
+        "106.0 MB",
+        "95.0 MB",
+        "91.9 MB",
+        "89.9 MB",
+        "107.8 MB",
+        "108.1 MB",
+        "105.8 MB",
+        "109.8 MB",
+        "117.8 MB",
+        "136.9 MB",
+        "106.4 MB",
+        "102.3 MB",
+        "110.9 MB",
+        "149.7 MB",
+        "132.9 MB",
+        "126.3 MB",
+        "146.6 MB",
+        "157.0 MB"
+    ],
+    "detailsSection_file_date": "1/25/2023",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104920",
+    "downloadPreload": true
+}

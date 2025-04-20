@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Test DLC on Thursday",
+    "downloadDescription": "Test DLC on Thursday",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "file-1.txt",
+            "url": "https://download.microsoft.com/download/cc388e46-40e5-4c7c-8021-dca2ae52aaca/file-1.txt",
+            "size": "71",
+            "version": "2",
+            "datePublished": "3/18/2025 4:44:42 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "security.jpg",
+            "url": "https://download.microsoft.com/download/cc388e46-40e5-4c7c-8021-dca2ae52aaca/security.jpg",
+            "size": "280345",
+            "version": "2",
+            "datePublished": "3/18/2025 4:44:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test DLC on Thursday",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "file-1.txt",
+        "security.jpg"
+    ],
+    "detailsSection_file_size": [
+        "71 bytes",
+        "273.8 KB"
+    ],
+    "detailsSection_file_date": "3/18/2025",
+    "systemRequirementsSection": "Test DLC on Thursday",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Apple Mac OS X v. 10.4 Tiger",
+        "Apple Mac OS X v. 10.5 Leopard"
+    ],
+    "installInstructionSection": "Test DLC on Thursday 12",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108039",
+    "downloadPreload": true
+}

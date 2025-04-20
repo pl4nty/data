@@ -1,0 +1,270 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server Cluster",
+    "downloadDescription": "System Center Management Pack for Windows Server Cluster",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.TRK.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.TRK.msi",
+            "size": "929792",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.SVE.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.SVE.msi",
+            "size": "917504",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.RUS.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.RUS.msi",
+            "size": "966656",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.PTG.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.PTG.msi",
+            "size": "925696",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.PTB.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.PTB.msi",
+            "size": "929792",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.PLK.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.PLK.msi",
+            "size": "958464",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.NLD.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.NLD.msi",
+            "size": "929792",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SC Management Pack for Cluster.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.msi",
+            "size": "1318912",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.KOR.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.KOR.msi",
+            "size": "901120",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.JPN.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.JPN.msi",
+            "size": "888832",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.ITA.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.ITA.msi",
+            "size": "929792",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.HUN.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.HUN.msi",
+            "size": "958464",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.FRA.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.FRA.msi",
+            "size": "946176",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.ESN.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.ESN.msi",
+            "size": "937984",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.DEU.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.DEU.msi",
+            "size": "954368",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.CSY.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.CSY.msi",
+            "size": "950272",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.CHT.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.CHT.msi",
+            "size": "868352",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC Management Pack for Cluster.CHS.msi",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Microsoft SC Management Pack for Cluster.CHS.msi",
+            "size": "860160",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for Failover Cluster.docx",
+            "url": "https://download.microsoft.com/download/1/3/0/130d41b5-2a51-4fd0-b160-218d43d9397f/Management Pack Guide for Failover Cluster.docx",
+            "size": "135296",
+            "version": "10.0.6.6",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "System Center Management Pack for Windows Server Cluster",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.6.6",
+    "detailsSection_file_name": [
+        "Microsoft SC Management Pack for Cluster.TRK.msi",
+        "Microsoft SC Management Pack for Cluster.SVE.msi",
+        "Microsoft SC Management Pack for Cluster.RUS.msi",
+        "Microsoft SC Management Pack for Cluster.PTG.msi",
+        "Microsoft SC Management Pack for Cluster.PTB.msi",
+        "Microsoft SC Management Pack for Cluster.PLK.msi",
+        "Microsoft SC Management Pack for Cluster.NLD.msi",
+        "Microsoft SC Management Pack for Cluster.msi",
+        "Microsoft SC Management Pack for Cluster.KOR.msi",
+        "Microsoft SC Management Pack for Cluster.JPN.msi",
+        "Microsoft SC Management Pack for Cluster.ITA.msi",
+        "Microsoft SC Management Pack for Cluster.HUN.msi",
+        "Microsoft SC Management Pack for Cluster.FRA.msi",
+        "Microsoft SC Management Pack for Cluster.ESN.msi",
+        "Microsoft SC Management Pack for Cluster.DEU.msi",
+        "Microsoft SC Management Pack for Cluster.CSY.msi",
+        "Microsoft SC Management Pack for Cluster.CHT.msi",
+        "Microsoft SC Management Pack for Cluster.CHS.msi",
+        "Management Pack Guide for Failover Cluster.docx"
+    ],
+    "detailsSection_file_size": [
+        "908.0 KB",
+        "896.0 KB",
+        "944.0 KB",
+        "904.0 KB",
+        "908.0 KB",
+        "936.0 KB",
+        "908.0 KB",
+        "1.3 MB",
+        "880.0 KB",
+        "868.0 KB",
+        "908.0 KB",
+        "936.0 KB",
+        "924.0 KB",
+        "916.0 KB",
+        "932.0 KB",
+        "928.0 KB",
+        "848.0 KB",
+        "840.0 KB",
+        "132.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows Server Cluster Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager:\r\n\u2022 System Center Operations Manager 2012\r\n\u2022 System Center Operations Manager 2012 SP1\r\n\u2022 System Center Operations Manager 2012 R2\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2003",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2268",
+    "downloadPreload": true
+}

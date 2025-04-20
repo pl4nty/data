@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server White Papers: Guides to Migration from MySQL, Oracle, Sybase, or Microsoft Access to Microsoft SQL Server 2005",
+    "downloadDescription": "Read these white papers to understand how to use SQL Server Migration Assistant (SSMA) to migrate to SQL Server 2005 from other database platforms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MigrateMySQLtoSQLServer.docx",
+            "url": "https://download.microsoft.com/download/e/c/8/ec8d5025-7ef7-4dcc-a9f3-9c297cf5350e/MigrateMySQLtoSQLServer.docx",
+            "size": "148864",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAAccess.docx",
+            "url": "https://download.microsoft.com/download/e/c/8/ec8d5025-7ef7-4dcc-a9f3-9c297cf5350e/SSMAAccess.docx",
+            "size": "672640",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SSMAOracle.docx",
+            "url": "https://download.microsoft.com/download/e/c/8/ec8d5025-7ef7-4dcc-a9f3-9c297cf5350e/SSMAOracle.docx",
+            "size": "332622",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMASybase.docx",
+            "url": "https://download.microsoft.com/download/e/c/8/ec8d5025-7ef7-4dcc-a9f3-9c297cf5350e/SSMASybase.docx",
+            "size": "363642",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release contains the following white papers: \n<UL>\n<LI>Guide to Migrating from MySQL to SQL Server 2005 (114 pages)</LI>\n<LI>Guide to Migrating from Oracle to SQL Server 2005 (161 pages)</LI>\n<LI>Guide to Migrating from Sybase ASE to SQL Server 2005 (97 pages)</LI>\n<LI>Guide to Migrating from Microsoft Access to SQL Server 2005 (52 pages)</LI>\n</UL><br />\n<b>Guide to Migrating from MySQL to SQL Server 2005</b><br/>\nThis migration guide explains the differences between the MySQL and SQL Server 2005 database platforms, and the steps necessary to convert a MySQL database to SQL Server. <br />\n<b>Note:</b> A Migration Assistant for migrating from MySQL to SQL Server is not available yet.\n<br/><br/>\n<b>Guide to Migrating from Oracle to SQL Server 2005</b><br/>\nThis white paper explores challenges that arise when you migrate from an Oracle 7.3 database or later to SQL Server 2005. It describes the implementation differences of database objects, SQL dialects, and procedural code between the two platforms. The entire migration process using <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=0E06A04C-D0C3-4F31-B201-FBE7C25F32FB&displaylang=en\">SQL Server Migration Assistant for Oracle (SSMA Oracle)</a> is explained in depth, with a special focus on converting database objects and PL/SQL code.\n<br/><br/>\n<b>Guide to Migrating from Sybase ASE to SQL Server 2005</b><br/>\nThis white paper covers known issues for migrating Sybase Adaptive Server Enterprise database to SQL Server 2005. Instructions for handling the differences between the two platforms are included. The paper describes how <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=5F63E592-1BD0-492E-9CE6-29270AE671C3&displaylang=en\">SQL Server Migration Assistant for Sybase</a>, the best tool for this type of migration, can help resolve various migration issues.\n<br/><br/>\n<b>Guide to Migrating from Microsoft Access to SQL Server 2005</b><br/>\nThis white paper covers migrating Microsoft Access databases to SQL Server 2005 and discusses the differences between the two platforms. <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=D842F8B4-C914-4AC7-B2F3-D25FFF4E24FB&displaylang=en\">SQL Server Migration Assistant for Access (SSMA Access)</a> is the best tool for this type of migration; this paper tells you how to use it to mitigate potential problems in database conversion. For additional information, also see the white paper <a href=\"http://www.microsoft.com/sql/solutions/migration/access/sql-or-access.mspx\">Microsoft Access or SQL Server 2005: What's Right in Your Organization?</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MigrateMySQLtoSQLServer.docx",
+        "SSMAAccess.docx",
+        "SSMAOracle.docx",
+        "SSMASybase.docx"
+    ],
+    "detailsSection_file_size": [
+        "145.4 KB",
+        "656.9 KB",
+        "324.8 KB",
+        "355.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Word 2007</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "To open the file immediately, click <b>Open</b>. To save the file to your computer for reading later, click <b>Save</b>.",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Migration Assistant for Microsoft Access",
+            "url": "http://www.microsoft.com/sql/solutions/migration/access/default.mspx"
+        },
+        {
+            "title": "sql Server Migration Assistant for Oracle home page",
+            "url": "http://www.microsoft.com/sql/solutions/migration/oracle/default.mspx"
+        },
+        {
+            "title": "sql Server Migration Assistant for Sybase home page",
+            "url": "http://www.microsoft.com/sql/solutions/migration/sybase/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8775",
+    "downloadPreload": true
+}

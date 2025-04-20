@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Set up Office on all your devices.",
+    "downloadDescription": "Email template for Office 365 admins to tell their users how to set up Office and email on mobile devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Set_Up_Mobile_Thru_Admin.oft",
+            "url": "https://download.microsoft.com/download/0/5/f/05f327a1-e5b6-41df-b8d0-2c698b5d6b99/Set_Up_Mobile_Thru_Admin.oft",
+            "size": "960512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Office 365 Administrator: Use this email template to tell users how to set up Office apps and email on mobile devices, including iPad\u00ae.\r\nSend this email so your users can have Office on mobile, anywhere they go.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Set_Up_Mobile_Thru_Admin.oft"
+    ],
+    "detailsSection_file_size": [
+        "938.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Office 365 and Outlook.<br />\r\n<br />\r\nSee additional <a href=\"http://products.office.com/en-us/office-system-requirements?WT.mc_id=EML_en-us_DLC-SMB-sysreq\">system requirement details.</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Enterprise N",
+        "Windows 7 Home Basic",
+        "Windows 7 Home Basic 64-bit",
+        "Windows 7 Home Premium",
+        "Windows 7 Home Premium 64-bit",
+        "Windows 7 Home Premium E 64-bit",
+        "Windows 7 Home Premium N",
+        "Windows 7 Home Premium N 64-bit",
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Professional E 64-bit",
+        "Windows 7 Professional K 64-bit",
+        "Windows 7 Professional KN 64-bit",
+        "Windows 7 Professional N",
+        "Windows 7 Professional N 64-bit",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Starter",
+        "Windows 7 Starter 64-bit",
+        "Windows 7 Starter N",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 7 Ultimate E 64-bit",
+        "Windows 7 Ultimate K 64-bit",
+        "Windows 7 Ultimate KN 64-bit",
+        "Windows 7 Ultimate N",
+        "Windows 7 Ultimate N 64-bit",
+        "Windows 8",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8 Release Preview",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Once you have downloaded the file, save the file locally.<br  />\r\n2. Make sure you are logged into Microsoft Outlook (other email programs will not support this file type), and open the downloaded OFT file.<br  />\r\n3. You can then add email recipients to your email like you would other Outlook emails.<br  />\r\n4. You can add a custom message if desired before hitting send, though we recommend that you do not edit the email content.<br  />\r\n5. Hit send to send the message to your desired recipients.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44066",
+    "downloadPreload": true
+}

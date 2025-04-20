@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager Connector 3.1 for Exchange",
+    "downloadDescription": "The System Center Service Manager \u2013 Exchange Connector 3.1 connects Service Manager to Exchange Server for processing incoming emails related to incidents and change requests.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_Service_Manager_Connector_3.1_for_Exchange.exe",
+            "url": "https://download.microsoft.com/download/d/6/9/d6919c37-3788-4356-ac57-f1cf6983bbfe/System_Center_Service_Manager_Connector_3.1_for_Exchange.exe",
+            "size": "471664",
+            "version": "3.1",
+            "datePublished": "7/15/2024 4:21:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM2012_EC_Deployment_Guide.docx",
+            "url": "https://download.microsoft.com/download/d/6/9/d6919c37-3788-4356-ac57-f1cf6983bbfe/SM2012_EC_Deployment_Guide.docx",
+            "size": "461714",
+            "version": "3.1",
+            "datePublished": "7/15/2024 4:21:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Exchange Connector connects Service Manager to Exchange Server for processing incoming emails related to work items. Once the Exchange Connector has been configured to monitor Exchange mailboxes, you can use it to create and update work items based on templates specified by the administrator. By specifying special keywords to look for in the incoming emails, you can configure the Exchange Connector to perform actions like approving or rejecting review activities, or enable activity implementers to mark activities assigned to them as completed.<br/>\r\n<br/>\r\nSystem Center Service Manager Connector 3.1 for Exchange contains fixes for various issues which were reproted in <a href=\"http://www.microsoft.com/en-in/download/details.aspx?id=38791\">System Center Service Manager Connector 3.0 for Exchange</a> -<br/>\r\n<br/>\r\nList of issues which are now fixed -\r\n<ul>\r\n<li>Exchange Connector sometimes create multiple work items against a single email request.</li>\r\n<li>Exchange connector gets stuck processing e-mails when large e-mails containing complex HTML formatting are processed.</li>\r\n<li>Exchange connector fails to process the emails if it contains a \u2018.msg\u2019 file as attachment.</li>\r\n<li>Exchange Connector sometimes consume very high memory (several GBs) when updating Work Items.</li>\r\n<li>A new User CI is created in CMDB, if an external user (who is not in CMDB) is a To/CC recipient in the email which Exchange Connector processes. With this senders can accidently add new users in the CMDB, if they add any external users in the To/CC of an email which they are sending to the Exchange Connector monitored mailbox. This behavior is now configurable.</li>\r\n<li>Voting for a Review Activity using the Exchange connector does not update the \"VotedBy\" field in the Review Activity.</li>\r\n<li>Exchange Connector adds a new reviewer in the Review Activity when a user who is not in reviewer\u2019s list sends an email to approve/decline that particular Activity.</li>\r\n</ul>\r\n<br/>\r\nRelease History:<br/>\r\n07/2011 - <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=26927\">Version 2.0</a> (supported with System Center Service Manager 2010)<br/>\r\n04/2013 - Version 3.0<br/>\r\n10/2013 - <a href=\"http://www.microsoft.com/en-in/download/details.aspx?id=38791\">Version 3.0 re-release</a> (supported with System Center Service Manager 2012 SP1)<br/>\r\n11/2014 - Version 3.1<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1",
+    "detailsSection_file_name": [
+        "System_Center_Service_Manager_Connector_3.1_for_Exchange.exe",
+        "SM2012_EC_Deployment_Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "460.6 KB",
+        "450.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements<br/>\r\nMicrosoft System Center 2012 R2 Service Manager, Microsoft System Center 2016 Service Manager, Microsoft System Center 1801 Service Manager, Microsoft System Center Service Manager 2019<br/>\r\nMicrosoft Exchange Server 2010 SP1,  Microsoft Exchange Server 2013, Microsoft Exchange Server 2016 (With Service Manager 2016), Microsoft Office 365<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the following files:\r\n<ul>\r\n<li>System_Center_Service_Manager_Connector_3.1_for_Exchange.exe</li>\r\n<li>SC2012_EC_DepGuide.docx</li>\r\n</ul>\r\n<br/>\r\nRead the SC2012_EC_DepGuide.docx for installation instructions<br/>\r\n<br/><br/>\r\n<b>Issues with Service Manager 2016</b>:Creating a new Exchange Connector via Service Manager 2016 console throws an exception if the admin clicks on the \"Test Connection\" button in the \"Server Connection\" pane of \"Create Exchange Connector\" wizard. To <b>fix this issue</b>, download & install the <b>Microsoft.SystemCenter.ExchangeConnector.dll.exe</b> from <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=54655\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45291",
+    "downloadPreload": true
+}

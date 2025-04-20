@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "Building a Release Pipeline with Team Foundation Server 2012 or 2013 \u2013 Hands-on Labs",
+    "downloadDescription": "These labs teach you how to implement a continuous delivery release pipeline by using Team Foundation Server 2012 or 2013. You begin by building a simple release pipeline that supports continuous integration. Later labs modify and extend the pipeline until it supports continuous delivery and includes features such as automated deployments and testing. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReleasePipelineHOL_VS2012.zip",
+            "url": "https://download.microsoft.com/download/2/c/1/2c1ad23f-dfdc-4a54-8b4e-42fce0a7e26a/ReleasePipelineHOL_VS2012.zip",
+            "size": "84727318",
+            "version": "1",
+            "datePublished": "7/15/2024 3:17:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReleasePipelineHOL_VS2013.zip",
+            "url": "https://download.microsoft.com/download/2/c/1/2c1ad23f-dfdc-4a54-8b4e-42fce0a7e26a/ReleasePipelineHOL_VS2013.zip",
+            "size": "42962370",
+            "version": "1",
+            "datePublished": "7/15/2024 3:17:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This series of labs are a companion to the book \"Building a Release Pipeline with Team Foundation Server 2012.\" You can use them with Team Foundation Server 2012 or 2013. Download the version best suited to your environment. The labs teach you how to implement a continuous delivery release pipeline. You begin by building a simple release pipeline that supports continuous integration, but has no other automation. Subsequent labs modify and extend the pipeline until it supports continuous delivery and includes features such as automated deployments and automated testing. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ReleasePipelineHOL_VS2012.zip",
+        "ReleasePipelineHOL_VS2013.zip"
+    ],
+    "detailsSection_file_size": [
+        "80.8 MB",
+        "41.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "In order to work through the hands-on labs that accompany this guidance you will need the following tools:\r\n<ul>\r\n <li>Windows 7, Windows 8, Windows Server 2008, or Windows Server 2012 R2 SP1</li>\r\n <li>Visual Studio 2012 or 2013 Ultimate or Visual Studio Premium</li>\r\n <li>Visual Studio Team Foundation Server 2012 or 2013</li>\r\n <li>Microsoft Test Manager</li>\r\n <li>Visual Studio Lab Management</li>\r\n <li>Community TFS Build Extensions</li>\r\n <li>Web Deploy</li>\r\n <li>Windows Installer XML</li>\r\n <li>Microsoft Excel</li>\r\n <li>DevOps Deployment Workbench Express Edition</li>\r\n <li>InRelease</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the 'Download Now' link to start the download. </li>\r\n<li>Select the version best suited to your environment (for Visual Studio 2012 or Visual Studio 2013). </li>\r\n<li>Save the file to your hard drive. The samples are packaged as a self-extractable zip file. </li>\r\n<li>Run the file and accept the End User Licensing Agreement to proceed. </li>\r\n<li>The files will be extracted to your chosen destination folder. This must not be a folder in your profile. Use a folder near the root of your drive with a short name to avoid issues with the length of filenames. </li>\r\n<li>See the Readme file or Introduction document. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "testing for Continuous Delivery with Visual Studio 2012",
+            "url": "http://msdn.microsoft.com/en-us/library/jj159345.aspx"
+        },
+        {
+            "title": "test Infrastructure Guidance Community Site",
+            "url": "https://tig.codeplex.com/"
+        },
+        {
+            "title": "msdn Home page",
+            "url": "http://msdn.microsoft.com/en-us/library/dn449957.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40295",
+    "downloadPreload": true
+}

@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Workflow Foundation Sample Integrating WF and WCF",
+    "downloadDescription": "Sample code for Windows Workflow Foundation showing WCF integration in an Expense Reporting sample",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WFExpenseReportingV2-2007-01-12.EXE",
+            "url": "https://download.microsoft.com/download/b/f/0/bf01fa28-cd79-41bd-8918-465d55eb2d86/WFExpenseReportingV2-2007-01-12.EXE",
+            "size": "187392",
+            "version": "2.0",
+            "datePublished": "6/13/2024 11:52:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A sample for Windows Workflow Foundation (WF) that shows how to use Windows Communication Foundation (WCF) for messaging. Sample code for Windows Workflow Foundation showing WCF integration in an Expense Reporting sample",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "WFExpenseReportingV2-2007-01-12.EXE"
+    ],
+    "detailsSection_file_size": [
+        "183.0 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<ul><li>SQL Server 2005 Express Edition or better</li><br />\n<li>Visual Studio 2005 Professional or Team Editions</li><br />\n<li>.NET Framework 3.0 Runtime Components (included in Windows Vista)</li><br />\n<li>Visual Studio 2005 Extensions for Windows Workflow Foundation</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download and run the EXE<br />\nAccept the EULA to extract the source files<br />\nReview the enclosed README.txt for instructions for compiling and using this sample\nBe sure to set the database connection in DB install scripts and .Config files to your database location. This may be \".\" or \".\\SQLEXPRESS\" or something else.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Workflow Foundation Developer Center",
+            "url": "http://msdn.microsoft.com/workflow"
+        },
+        {
+            "title": ".NET Framework 3.0 Runtime Components",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=10CC340B-F857-4A14-83F5-25634C3BF043&displaylang=en"
+        },
+        {
+            "title": "visual Studio 2005 Extensions for Windows Workflow Foundation",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=5D61409E-1FA3-48CF-8023-E8F38E709BA6&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20739",
+    "downloadPreload": true
+}

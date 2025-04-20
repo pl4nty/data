@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Group Chat Stress Tool for Microsoft Lync Server 2010 - Documentation",
+    "downloadDescription": "This download provides documentation about Group Chat Stress Tool and Group Chat Loaders for Microsoft Lync Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncServer2010_GroupChatStress.docx",
+            "url": "https://download.microsoft.com/download/2/b/7/2b7b8650-1f58-4fb2-a2a2-07233d515aa0/LyncServer2010_GroupChatStress.docx",
+            "size": "493110",
+            "version": "June2011",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download provides documentation about Group Chat Stress, which you can use to help verify your Microsoft Lync Server 2010 and Microsoft Lync Server 2010, Group Chat hardware deployment.  Group Chat Stress is made up of two applications: Group Chat Stress Tool, a UI application, and Group Chat Loaders, the stress engine (which has no UI).  Use Group Chat Stress Tool to create the configuration files for the loaders and to distribute the binaries to the remote machines that will be running the loaders.  Use Group Chat Loaders to apply the specified load parameters on the computer running Lync Server 2010, Group Chat.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2011",
+    "detailsSection_file_name": [
+        "LyncServer2010_GroupChatStress.docx"
+    ],
+    "detailsSection_file_size": [
+        "481.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "microsoft Lync Server 2010 Group Chat Stress Tool",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=220428"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26129",
+    "downloadPreload": true
+}

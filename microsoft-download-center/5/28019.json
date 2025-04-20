@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "AX 2012 White Paper: Accounting for Stocked Items on Product Receipts and Vendor Invoices",
+    "downloadDescription": "This white paper describes the concepts of the two types of accounting that take place when an accounting entry is generated for a product receipt or an invoice that contains stocked items. The examples in this white paper illustrate the journal entries that are created.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Accounting for stocked items on product receipts and vendor invoices.pdf",
+            "url": "https://download.microsoft.com/download/4/b/8/4b881f15-e0ce-4db8-bda4-0927db66c8b6/Accounting for stocked items on product receipts and vendor invoices.pdf",
+            "size": "518818",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:28:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the two types of accounting that take place when an accounting entry is generated for a product receipt or a vendor invoice that contains stocked items. Part of the process updates accrued liability or liability accounts, and uses the new accounting framework that was added in AX 2012. The other part of the process updates the inventory cost and uses the same posting process that was available in Microsoft Dynamics AX 2009. In AX 2012 R3, the resulting accounting entries from both processes will be created by using the same subledger entry journal and voucher. Accounting entries that add up to 0 (zero) will not be transferred to the general ledger. The examples in this white paper illustrate the journal entries that are created. This white paper is intended for end users who work with AX 2012 Inventory management, Procurement and sourcing, Accounts payable, and General ledger, and who want to understand the journal entries created by product receipts and vendor invoices for stocked items.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Accounting for stocked items on product receipts and vendor invoices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "506.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28019",
+    "downloadPreload": true
+}

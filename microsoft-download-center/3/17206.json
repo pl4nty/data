@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2010 Install Guide Templates",
+    "downloadDescription": "You can use these templates as a starting point for formally documenting your organization's server build procedures for servers that will have Microsoft Exchange Server 2010 server roles installed on them.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallGuide_2010.zip",
+            "url": "https://download.microsoft.com/download/7/6/9/7698745f-2f0d-4235-b9da-8c375485cb0f/InstallGuide_2010.zip",
+            "size": "174513",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:10:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use these templates as a starting point for formally documenting your organization's server build procedures for servers that will have Microsoft Exchange Server 2010 server roles installed on them. Templates are provided for the Client Access, Hub Transport, and Mailbox server roles, plus a template for the Mailbox role configured for a database availability group.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2012",
+    "detailsSection_file_name": [
+        "InstallGuide_2010.zip"
+    ],
+    "detailsSection_file_size": [
+        "170.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI> The self-extracting Zip file (InstallGuide_2010.zip) contains all the Exchange 2010 server role install guide template files. The template files are Microsoft Office Word 2003 documents (.doc). Users who do not have Microsoft Word can view the documents through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "The self-extracting Zip file (InstallGuide_2010.zip) contains all the Exchange 2010 server role install guide templates.",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server 2010 Documentation",
+            "url": "http://go.microsoft.com/fwlink/?linkid=132764"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17206",
+    "downloadPreload": true
+}

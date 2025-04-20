@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Universal Inventory",
+    "downloadDescription": "Universal Inventory desktop application part of the IAM 2018 release",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UISetup.zip",
+            "url": "https://download.microsoft.com/download/d/d/7/dd7af497-ae36-45f7-857f-3fb597e309e0/UISetup.zip",
+            "size": "81646768",
+            "version": "2.10.0",
+            "datePublished": "7/15/2024 4:49:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Desktop application that gathers inventory raw data and standardizes it to get a single view of the Customer's scanned IT infrastructure. This uniquely valuable data can then be used to deliver a variety of valuable insights to the customer, ranging from cybersecurity basics through infrastructure optimization to licensing efficiency.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.10.0",
+    "detailsSection_file_name": [
+        "UISetup.zip"
+    ],
+    "detailsSection_file_size": [
+        "77.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Have a service account available that can be used to run the Universal Inventory service\r\n\u2022 Have a SQL Server 2014 or later, Express Edition or higher database server available\r\n\u2022 Have a folder available where Universal Inventory can store Log and Project files\r\n\u2022 Have an URL and port available where the Universal Inventory service can be published",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 8",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8 Release Preview",
+        "Windows 8.1",
+        "Windows 8.1 Preview",
+        "Windows Server 2012",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Release Candidate",
+        "Windows Server 2012 Standard",
+        "Windows Server 2016",
+        "Windows Server Tech Preview ",
+        "Windows Storage Server 2008 R2 Essentials",
+        "Windows Storage Server 2012",
+        "Windows Web Server 2008",
+        "Windows Web Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the IAM 2018 User Guide for detailed instructions on how to use the Universal Inventory app at http://AKA.MS/SAMIAM.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57214",
+    "downloadPreload": true
+}

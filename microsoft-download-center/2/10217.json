@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Pre-Release Software Microsoft .NET Framework 3.0 - Release Candidate",
+    "downloadDescription": "Microsoft has provided a version of the .NET Framework v3.0 for the general public.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotnetfx3setup.exe",
+            "url": "https://download.microsoft.com/download/e/5/3/e534dc27-f596-4098-a9b1-1df7c5153813/dotnetfx3setup.exe",
+            "size": "2890008",
+            "version": "3.0.04324.17",
+            "datePublished": "7/15/2024 3:29:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft .NET Framework 3.0 (formerly known as WinFX), is the new managed code programming model for Windows. It combines the power of the .NET Framework 2.0 with new technologies for building applications that have visually compelling user experiences, seamless communication across technology boundaries, and the ability to support a wide range of business processes. These new technologies are Windows Presentation Foundation, Windows Communication Foundation, Windows Workflow Foundation, and Windows CardSpace (formerly code named \"Infocard\"). Microsoft plans to ship .NET Framework 3.0 as part of the Windows Vista operating system. In addition, Microsoft is making these technologies available on Windows XP and Windows Server 2003. The following Community Technology Preview of .NET Framework 3.0 enables you to continue experimenting with early builds of these technologies, get acquainted with the development experience, and provide feedback to Microsoft. For more information on these technologies, click <a href=\"http://msdn.microsoft.com/winfx/technologies/default.aspx\">here</a>.  \n<br /><br />\nPlease note that the License Agreement in this pre-release version of the .NET Framework v3.0 does not allow usage in a live operating environment. Information about Go-Live possibilities can be found <a href=\"http://msdn.microsoft.com/winfx/downloads/products/golive/default.aspx\">here</a>.\n<br /><br />\n<i>Note: This is a pre-RTM release. Therefore, do not install these builds on machines you depend on.  \nIf you have a previous version of Avalon (\"Windows Presentation Foundation\"), Indigo (\"Windows Communication Foundation\"), or pre-released versions of .NET \nFramework 2.0 installed you must \nread <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=AAE7FC63-D405-4E13-909F-E85AA9E66146&displaylang=en\">this</a> before download.  </i>\n<br /><br />\n<b>Installation</b>\n<br />\nTo start the installation process, you will need to run the download file; this \nwill initiate the installation of the .NET Framework 3.0 Release Candidate; If you \nhave troubles with the download manager, you can download the entire package\n<a href=\"http://download.microsoft.com/download/D/C/0/DC09D14E-494D-4E5A-A1BA-783554D9D8FE/dotnetfx3.exe\">for x86</a> or <a href=\"http://download.microsoft.com/download/2/6/9/2694C6F0-C0CC-44AE-A988-56C49F9C0EDE/dotnetfx3_x64.exe\">for x64</a> which are both .EXE files.  \n<br /><br />\nThis release supports <a href=\"http://msdn.microsoft.com/vs2005\">\nVisual Studio 2005 RTM</a> and is compatible with 2007 Microsoft Office system Beta 2 Technical Refresh.&nbsp; The Microsoft\u00ae Windows\u00ae SDK contains documentation, samples, and tools designed to \nhelp you develop managed applications and libraries using .NET Framework. You can install the SDK that corresponds to this release <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=117ECFD3-98AD-4D67-87D2-E95A8407FA86&displaylang=en\">here</a>.\n<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.04324.17",
+    "detailsSection_file_name": [
+        "dotnetfx3setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li><b>Supported Visual Studio tool set:</b> <a href=\"http://lab.msdn.microsoft.com/vs2005/downloads/\">RTM release of Visual Studio 2005</a></li> and <a href=\"http://lab.msdn.microsoft.com/express\"> Visual Studio Express</a><br />\n<br />\nThe supported dev tools for this release candidate is the Windows SDK Release Candidate, Visual Studio 2005, Visual Studio \"Orcas\" - Development Tools for .NET Framework 3.0, and the WorkFlow extensions (see links in Related Resources).\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Longhorn (Windows Code Name) ",
+        "Windows Server 2003 Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>Installation</b>\n<br />\nTo start the installation process, you will need to run the download file; this \nwill initiate the installation of the .NET Framework 3.0 Release Candidate; If you \nhave troubles with the download manager, you can download the entire package\n<a href=\"http://download.microsoft.com/download/D/C/0/DC09D14E-494D-4E5A-A1BA-783554D9D8FE/dotnetfx3.exe\">for x86</a> or <a href=\"http://download.microsoft.com/download/2/6/9/2694C6F0-C0CC-44AE-A988-56C49F9C0EDE/dotnetfx3_x64.exe\">for x64</a> which are both .EXE files.  \n<br /><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10217",
+    "downloadPreload": true
+}

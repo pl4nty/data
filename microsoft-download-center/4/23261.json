@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Optimizing and maintaining client performance for Microsoft Dynamics CRM 2011 and CRM Online",
+    "downloadDescription": "The white paper provides readers with the information necessary to ensure and maintain the optimal performance of the clients connecting to a business solution based on Microsoft Dynamics CRM 2011 or Microsoft Dynamics CRM Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Optimizing and maintaining client performance for Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM Online.pdf",
+            "url": "https://download.microsoft.com/download/d/9/8/d980b98f-47e0-4bc4-9d10-bba87f94fa3e/Optimizing and maintaining client performance for Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM Online.pdf",
+            "size": "436284",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Access to and interaction with a business solution based on Microsoft Dynamics CRM 2011 or Microsoft Dynamics CRM Online is available by using the following Microsoft Dynamics CRM client offerings:\r\n\r\n<ul><li>The <b>Microsoft Dynamics CRM web client</b>, which leverages Microsoft Internet Explorer as a browser to provide access to Microsoft Dynamics CRM functionality without requiring the installation of client software on a user's computer.</li>\r\n\r\n<li><b>Microsoft Dynamics CRM for Microsoft Office Outlook</b>, which provides a Windows-based user experience that is highly integrated with Microsoft Office Outlook. Microsoft Dynamics CRM for Microsoft Office Outlook with Offline Access is a second configuration of the client that provides users with the additional capability to synchronize Microsoft Dynamics CRM data for offline availability.</li></ul>\r\n\r\n<b>Note</b>: Users can also connect to an implementation of Microsoft Dynamics CRM from an Internet-enabled mobile device, such as a cell phone, by using the Mobile Express client, which provides access via a lightweight version of the Microsoft Dynamics CRM web client.\r\n<br></br>\r\n\r\nThis white paper provides readers with the information necessary to optimize and maintain the performance of Microsoft Dynamics CRM clients connecting to a business solution that is based on Microsoft Dynamics CRM 2011 or Microsoft Dynamics CRM Online. Specifically, the paper includes:\r\n\r\n<ul><li>A general approach to optimization and maintenance</li>\r\n<li>Factors that can adversely affect the performance of Microsoft Dynamics CRM clients</li>\r\n<li>Options available for configuring Microsoft Dynamics CRM clients to overcome potential performance issues</li>\r\n<li>Best practices for customizing Microsoft Dynamics CRM clients for optimal performance</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Optimizing and maintaining client performance for Microsoft Dynamics CRM 2011 and Microsoft Dynamics CRM Online.pdf"
+    ],
+    "detailsSection_file_size": [
+        "426.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe Reader</LI><br />\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Web Server 2008"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "optimizing and Maintaining a Microsoft Dynamics CRM 2011 Server Infrastructure",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=213093"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23261",
+    "downloadPreload": true
+}

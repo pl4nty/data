@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 and AX 2009 SP1 White Paper: SEPA (ISO 20022 XML) Direct Debit Payments",
+    "downloadDescription": "This white paper describes the functionality in Microsoft Dynamics AX that supports the Single Euro Payments Area (SEPA) Direct Debit (ISO 20022 XML) payment format and direct debit mandates.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SEPADirectDebit_AX2009SP1_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/2/2/d/22dd0cdb-f6c6-4a73-be5b-83b9d3a9e334/SEPADirectDebit_AX2009SP1_AX2012.pdf",
+            "size": "970555",
+            "version": "2012, 2009 SP1",
+            "datePublished": "7/15/2024 3:27:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the SEPA Direct Debit (SDD) formats and Direct Debit Mandates that are available for Microsoft Dynamics AX, and how to install, set up, and use them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012, 2009 SP1",
+    "detailsSection_file_name": [
+        "SEPADirectDebit_AX2009SP1_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "947.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41172",
+    "downloadPreload": true
+}

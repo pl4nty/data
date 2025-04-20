@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Awareness Materials",
+    "downloadDescription": "Microsoft Lync 2010 Awareness Materials are customizable resources that help you market your Microsoft Lync 2010 rollout.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Awareness_Materials.zip",
+            "url": "https://download.microsoft.com/download/a/8/d/a8dce3e8-8f68-44dd-88ce-aa95d64bd128/Lync_Awareness_Materials.zip",
+            "size": "101971410",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:16:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped file contains customizable awareness materials that will help you market your Microsoft Lync 2010 rollout and generate a higher adoption rate. Included are resources such as posters, table tents, stickers, and cubicle signs, that will help inform, involve, and inspire your users.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_Awareness_Materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "97.2 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2010; Microsoft Office 2007; Microsoft Office 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from the directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27566",
+    "downloadPreload": true
+}

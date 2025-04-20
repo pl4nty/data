@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix and Security Update List: Windows Server 2008 SP2 and Windows Vista SP2",
+    "downloadDescription": "Hotfixes and Security Updates in Windows Server 2008 SP2 and Windows Vista SP2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WS08_Vista_SP2_RTM_KBList.xlsx",
+            "url": "https://download.microsoft.com/download/f/a/f/fafac57f-0d14-49b8-adca-bc3606db68ee/WS08_Vista_SP2_RTM_KBList.xlsx",
+            "size": "146308",
+            "version": "August 2009",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Server\u00ae 2008 Service Pack 2 and Windows Vista\u00ae Service Pack 2 include all the previously released updates for Windows Server 2008 and Windows Vista. This document contains the list of Hotfixes and Security Updates in Windows Server 2008 SP2 and Windows Vista SP2. Many of these updates are available to the public on the Microsoft\u00ae Download Center and Windows\u00ae Update, while others are only available to specific customers or partners. It is a standard practice to include all of these updates in a service pack, and they are included in Windows Server 2008 Service Pack 2 and Windows Vista Service Pack 2.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2009",
+    "detailsSection_file_name": [
+        "WS08_Vista_SP2_RTM_KBList.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "142.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>.</li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22995",
+    "downloadPreload": true
+}

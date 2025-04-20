@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 3 for System Center 2012 R2 Service Manager",
+    "downloadDescription": "This update contains a number of fixes for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme - UR9 now available.docx",
+            "url": "https://download.microsoft.com/download/8/a/d/8adcd06d-9d80-43ba-9f85-f371bfd8bcbb/Readme - UR9 now available.docx",
+            "size": "13381",
+            "version": "7.5.3079.148",
+            "datePublished": "7/15/2024 3:53:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b style=\"color:red\">\r\n[Update]\r\n<br/>\r\n<u>Note: </u>Update Rollup 9 for Service Manager 2012 R2 is now available for download, you can get it from here - <a href=\"http://aka.ms/sm2012R2ur7\">http://aka.ms/smr2ur9</a>\r\n<br/>\r\n<br/>\r\nThe Service Manager update rollups are cumulative, UR9 contains new updates in addition to all the payload which was shipped in <a href=\"https://support.microsoft.com/en-us/kb/3063263\">UR7</a>,<a href=\"https://support.microsoft.com/en-us/kb/3039363\">UR6</a>, <a href=\"https://support.microsoft.com/en-us/kb/3009517\">UR5</a>, <a href=\"https://support.microsoft.com/kb/2989601\">UR4</a>, <a href=\"https://support.microsoft.com/kb/2962041\">UR3</a>, and <a href=\"https://support.microsoft.com/kb/2904710\">UR2</a>. You can directly patch SM 2012 R2 deployment with UR9 to get all the fixes together.\r\n<b>Please be aware</b> that UR9 release does not contain the payload of Update Rollup 8 (https://support.microsoft.com/kb/3124091), because UR8 contains the new HTML based Self Service Portal and requires separate installation.\r\n<br/>\r\n<br/>\r\nHence, now we are removing the Update Rollup 3 files from this Download Center page and those files will be available for on-demand in special cases only. Feel free to reach us at <u>ServiceManager@microsoft.com</u> in case of any queries or concerns.\r\n<br/>\r\n</b>\r\n----------------------------\r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\nThis update contains a set of bug fixes to the System Center 2012 R2 Service Manager release. It should be applied to all Service Manager 2012 R2 server installations. There are three executable files available: <br/>\r\n<br/>\r\nSCSM2012R2_CU_KB2904710_AMD64_7.5.3079.148.exe <br/>\r\nSCSM2012R2_CU_KB2904710_i386_7.5.3079.148.exe<br/>\r\nOMCIConnector_SyncMetadata_UpdateTimestamp.exe<br/>\r\n\r\n\r\nBug fixes included in this update::\r\n<ol>\r\n<li>Operations Manager CI Connector does not retrieve disk mount point information from SCOM</li>\r\n<li>When creating a Service Request from a Request Offering in the console, for every user prompt with prompt type Simple List, the console shows options from all simple lists in each user prompts.</li>\r\n<li>Customized Change Requests cannot be closed. When trying to close a customized Change Request - the task throws an error and the close is not actioned. </li>\r\n<li>MPSync job failures logged to the event log do not contain enough information to enable quick diagnosis of the problem</li>\r\n<li>All Service Manager workflows may stall when any invalid XML characters (control characters) are used in a work item property</li>\r\n<li>Using the \u201cSet First Response or Comment\u201d Task in n service request creates a \u201cPrivate\u201d flag which can\u2019t be used for evaluation in a notification action log/user comment update due to its undefined. </li>\r\n<li>If the CMDB is down (offline/unable to connect/network issues) at the time that the HealthService has been restarted, and it continues to be offline for an extended period of time, the HealthService may get into an unrecoverable state even if the DB is later back up again.</li>\r\n<li>SCCM connector synchronization may stop after applying Service Manager 2012 SP1 UR2 or Service Manager 2012 R2 UR6. This happens when the connector tries to synchronize malformed / incomplete software version information from their SCCM database.</li>\r\n</ol>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.148",
+    "detailsSection_file_name": [
+        "Readme - UR9 now available.docx"
+    ],
+    "detailsSection_file_size": [
+        "13.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 Service Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Before you update:\r\n<ol>\r\n<li>Exit all Service Manager-related applications before you apply this cumulative update. For example, exit the Service Manager Console, the Self-Service Portal links, and the authoring tool</li>\r\n<li>Ensure that the DataWarehouse Server has successfully synchronized with the Management Server at least once</li>\r\n<li>Ensure that the update is first installed on Service Manager components in the following order:\r\n<ol>\r\n<li>DataWarehouse Server</li>\r\n<li>Primary Management Server</li>\r\n<li>5econdary Management Servers</li>\r\n<li>All analyst consoles</li>\r\n<li>Self-Service Portal</li>\r\n</ol></li>\r\n<li>It is important to restart all the consoles once the update has been installed</li>\r\n</ol>\r\n<br/>\r\nTo install this cumulative update, follow these steps: \r\n<ol>\r\n<li>Download the cumulative update to a target folder. This cumulative update contains both the x86 version and the x64 version. Download the appropriate version for your system.</li>\r\n<li>Open the target folder and right-click the SCSM2012R2_CU_KB2904710_AMD64_7.5.3079.148.exe file or the SCSM2012R2_CU_KB2904710_i386_7.5.3079.148.exe file, and then click Run as administrator</li>\r\n<li>Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard</li>\r\n</ol>\r\n<br/>\r\nHow to verify a successful installation of this cumulative update\r\n<ol>\r\n<li>In Control Panel, open Programs and Features.</li>\r\n<li>Click View installed updates.</li>\r\n<li>The following item is listed: Hotfix for Microsoft System Center Service Manager (SCSM2012R2_CU_KB2962041)</li>\r\n</ol>\r\n<br/>\r\nSteps to be followed post application of the UR to resynchronize SCOM mount points data:\r\n<ol>\r\n<li>Download the self-extractor titled OMCIConnector_SyncMetadata_UpdateTimestamp.exe and extract the contents to a known location</li>\r\n<li>Disable all the OM CI Connector(s) in SM console</li>\r\n<li>In Windows PowerShell, check the current execution policy by executing \"Get-ExecutionPolicy\"</li>\r\n<li>If the current execution policy is Restricted then set to Remotesigned by executing \"Set-ExecutionPolicy \u2013force RemoteSigned\"</li>\r\n<li>Execute  \"PowerShell .\\OMCIConnector_SyncMetadata_UpdateTimestamp_ForBug614709.ps1\" from  Primary Management server</li>\r\n<li>Change the execution policy back to the value that you noted in step 4</li>\r\n<li>Enable and Synchronize the relevant OM CI Connector(s)</li>\r\n<li>All the Mount Points data should be populated in SCSM</li>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43710",
+    "downloadPreload": true
+}

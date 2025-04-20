@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "ASP.NET MVC 1.0",
+    "downloadDescription": "ASP.NET MVC 1.0 provides a new Model-View-Controller (MVC) framework on top of the existing ASP.NET 3.5 runtime.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ASP.NET MVC - 1.0 Release Notes.doc",
+            "url": "https://download.microsoft.com/download/a/6/8/a68968ae-de1d-4fa4-a98a-b74042c6090d/ASP.NET MVC - 1.0 Release Notes.doc",
+            "size": "94720",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AspNetMvc1.0.Ms-PL.source.zip",
+            "url": "https://download.microsoft.com/download/a/6/8/a68968ae-de1d-4fa4-a98a-b74042c6090d/AspNetMvc1.0.Ms-PL.source.zip",
+            "size": "165040",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AspNetMVC1.msi",
+            "url": "https://download.microsoft.com/download/a/6/8/a68968ae-de1d-4fa4-a98a-b74042c6090d/AspNetMVC1.msi",
+            "size": "1921536",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASP.NET MVC 1.0 provides a new Model-View-Controller (MVC) framework on top of the existing ASP.NET 3.5 runtime. This means that developers can take advantage of the MVC design patterns to create their Web Applications which includes the ability to achieve and maintain a clear separation of concerns (the UI or view from the business and application logic and backend data), as well as facilitate test driven development (TDD). The ASP.NET MVC framework defines a specific pattern to the Web Application folder structure and provides a controller base-class to handle and process requests for \u201cactions\u201d. Developers can take advantage of the specific Visual Studio 2008 MVC templates within this release to create their Web applications, which includes the ability to select a specific Unit Test structure to accompany their Web Application development.<br />\n<br />\nThe MVC framework is fully extensible at all points, allowing developers to create sophisticated structures that meet their needs, including for example Dependency Injection (DI) techniques, new view rendering engines or specialized controllers.<br />\n<br />\nAs the ASP.NET MVC framework is built on ASP.NET 3.5, developers can take advantage of many existing ASP.NET 3.5 features, such as localization, authorization, Profile etc.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ASP.NET MVC - 1.0 Release Notes.doc",
+        "AspNetMvc1.0.Ms-PL.source.zip",
+        "AspNetMVC1.msi"
+    ],
+    "detailsSection_file_size": [
+        "92.5 KB",
+        "161.2 KB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET 3.5 SP1.\r\nVisual Studio 2008, Visual Studio 2008 SP1 or Visual Web Developer 2008 SP1 are required to use certain parts of this feature.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "For more information about installing the release, see the ASP.NET MVC 1.0 Release Notes\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5388",
+    "downloadPreload": true
+}

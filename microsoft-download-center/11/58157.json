@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2019 Management Pack for JEE Application Servers",
+    "downloadDescription": "System Center 2019 Management Pack for JEE Application Servers",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center 2019 UR4 Management Pack for Java EE.msi",
+            "url": "https://download.microsoft.com/download/b/3/1/b3140bf9-7ec9-47ba-b160-178f8659357b/System Center 2019 UR4 Management Pack for Java EE.msi",
+            "size": "1212416",
+            "version": "10.19.1150.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr2019_MP_JBoss.docx",
+            "url": "https://download.microsoft.com/download/b/3/1/b3140bf9-7ec9-47ba-b160-178f8659357b/OpsMgr2019_MP_JBoss.docx",
+            "size": "106967",
+            "version": "10.19.1150.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2019OM_JEE_Readme.txt",
+            "url": "https://download.microsoft.com/download/b/3/1/b3140bf9-7ec9-47ba-b160-178f8659357b/SC2019OM_JEE_Readme.txt",
+            "size": "11630",
+            "version": "10.19.1150.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr2019_MP_Tomcat.docx",
+            "url": "https://download.microsoft.com/download/b/3/1/b3140bf9-7ec9-47ba-b160-178f8659357b/OpsMgr2019_MP_Tomcat.docx",
+            "size": "107557",
+            "version": "10.19.1150.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr2019_MP_WebSphere.docx",
+            "url": "https://download.microsoft.com/download/b/3/1/b3140bf9-7ec9-47ba-b160-178f8659357b/OpsMgr2019_MP_WebSphere.docx",
+            "size": "101301",
+            "version": "10.19.1150.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr2019_MP_WebLogic.docx",
+            "url": "https://download.microsoft.com/download/b/3/1/b3140bf9-7ec9-47ba-b160-178f8659357b/OpsMgr2019_MP_WebLogic.docx",
+            "size": "108734",
+            "version": "10.19.1150.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System Center 2019 Management Pack for JEE Application Servers",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.19.1150.0",
+    "detailsSection_file_name": [
+        "System Center 2019 UR4 Management Pack for Java EE.msi",
+        "OpsMgr2019_MP_JBoss.docx",
+        "SC2019OM_JEE_Readme.txt",
+        "OpsMgr2019_MP_Tomcat.docx",
+        "OpsMgr2019_MP_WebSphere.docx",
+        "OpsMgr2019_MP_WebLogic.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "104.5 KB",
+        "11.4 KB",
+        "105.0 KB",
+        "98.9 KB",
+        "106.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>System Center 2019</li>\r\n<li>For the supported application servers refer this link: https://docs.microsoft.com/en-us/system-center/scom/manage-mp-mpassessment?view=sc-om-2019</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>.NET Framework 3.5 needs to be installed for JBoss discovery</li>\r\n<li>Please install the related Unix/Linux Operating System Mps from https://www.microsoft.com/en-in/download/details.aspx?id=58208 before installing the 2019 JEE mps.\r\nFor using these JEE mp to monitor jboss servers, you need to import the java path in root user\u2019s profile for the monitoring to work properly.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58157",
+    "downloadPreload": true
+}

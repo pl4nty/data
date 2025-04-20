@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Sample Source Code for Silverlight 2 Runtime and SDK Controls",
+    "downloadDescription": "This download contains the source code and unit tests for the managed Silverlight 2 controls included in System.Windows.dll, System.Windows.Controls.dll, and System.Windows.Controls.Data.dll.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Silverlight 2 Control Sample Source Code and Apps.exe",
+            "url": "https://download.microsoft.com/download/6/b/5/6b55ea25-f07c-436b-b3ae-d040476f07fb/Silverlight 2 Control Sample Source Code and Apps.exe",
+            "size": "901536",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "NOTICE: This application is governed by the Microsoft Public License (Ms-PL).  By clicking 'Download' you acknowledge and accept the terms of the Ms-PL see: http://go.microsoft.com/fwlink/?LinkID=131993.  If you do not accept these terms, do not download or use the application.\r\n\r\n<br/><br/>\r\nThis download contains the source code and unit tests for the managed Silverlight 2 controls included in System.Windows.dll, System.Windows.Controls.dll, and System.Windows.Controls.Data.dll. <br/><br/>\r\n\r\nThe Silverlight 2 controls provide common user-interface and data-presentation functionality. These controls also support a rich styling and templating model, which enables you to alter the appearance and behavior of the controls. The styling and templating model uses XAML as an interchange format, which enables you to perform extensive customization using tools such as Microsoft Visual Studio or Microsoft Expression Blend.\n<br/><br/>\n\r\n\r\nTo develop Silverlight-based applications that use the Silverlight 2 controls, you do not need this source code. The source code for the Silverlight 2 controls enables you to learn the inner workings of the controls. This is useful if you want to extend the controls or use them as a reference implementation when you implement your own controls. Complete unit tests provide additional guidance in developing polished, professional controls. <br/><br/>\r\n\r\n\nThe source code for the Silverlight 2 controls includes implementations for the following controls:<br/><br/>\n<UL>\n<LI>ButtonBase</LI>\r\n\n<LI>Button</LI>\n\r\n<LI>HyperlinkButton</LI>\n\r\n<LI>CheckBox</LI>\n\r\n<LI>RadioButton</LI>\r\n\n<LI>CheckBox</LI>\n\r\n<LI>ToogleButton</LI>\r\n\n<LI>RepeatButton</LI>\r\n\n<LI>RangeBase</LI>\n\r\n<LI>Slider</LI>\r\n\n<LI>ScrollBar</LI>\r\n\n<LI>ProgressBar</LI>\r\n<LI>Calendar</LI>\n\r\n<LI>DataGrid</LI>\r\n\n<LI>DatePicker</LI>\r\n\n<LI>GridSplitter</LI>\r\n\n<LI>TabControl</LI>\n\n</UL>\r\n\r\n<br/>For more information about Silverlight 2 Developer Resources, visit <a href=\"http://silverlight.net/default.aspx\">Silverlight.net</a>. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Silverlight 2 Control Sample Source Code and Apps.exe"
+    ],
+    "detailsSection_file_size": [
+        "880.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visual Studio\u00ae 2008 <br/>\nMicrosoft Silverlight 2 Beta 1<br/>\nMicrosoft Silverlight 2 SDK Beta 1<br/>\nMicrosoft Silverlight Tools Beta 1 for Visual Studio 2008 <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To download the source code and unit tests for Silverlight 2 Controls: </b><br />\n<ol><li>In the <b>Files in this Download</b> section at the bottom of this page, click the file that contains download that you want. </li><br />\n<li>Do one of the following: </li><br />\n<ul><li>To start the extraction immediately, click <b>Open</b> or <b>Run this program from its current location</b> and specify an extraction location on your computer.</li><br />\n<li>To copy the download to your computer for extraction at a later time, click <b>Save</b> or <b>Save this program to disk</b> and specify a location to save the .zip file on your computer.</li></ul>\n<li>After the files are extracted, read the instructions provided in the package.</li><br />\n</ol><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4027",
+    "downloadPreload": true
+}

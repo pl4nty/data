@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Dan and Kathleen on Kids and Computing",
+    "downloadDescription": "Dan Appleman and Kathleen Dollard have a lot to say about kids: computing, and programming. This is a great show for parents or anyone who works with kids.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080612KidsComp.zip",
+            "url": "https://download.microsoft.com/download/2/7/b/27b0c0ee-364c-4c54-836b-406bfce89445/20080612KidsComp.zip",
+            "size": "44220864",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:09:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dan Appleman is a well known author, software developer and speaker. He is the founder and CEO of Desaware Inc., a developer of add-on products and components for Microsoft Visual Studio. He is a Microsoft Visual Basic MVP, webmaster of SearchDotNet.com, one of the cofounders of APress publishing, and is the author of numerous books and ebooks including \"How Computer Programming Works\" and \"Always use Protection: A teen's Guide to Safe Computing. <br />\n<br />\nKathleen first programmed when she was 12, which was about a billion years ago and has been developing business applications for over 20 years. She\u2019s the second of three generations of programmers with both her mother and son spending time as professional programmers (rumor has it she taught her mom to code). She\u2019s been a Microsoft MVP for over ten years, was the founding president of the Northern Colorado .NET SIG, and is an active member of the Denver Visual Studio User Group. She\u2019s the author of Code Generation in Microsoft NET (from Apress) and has a monthly column \u201cAsk Kathleen\u201d in Visual Studio Magazine along with dozens of articles already in print. As an INETA and conference speaker, she\u2019s spoken in 27 states and 5 countries about Microsoft .NET.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080612KidsComp.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10426",
+    "downloadPreload": true
+}

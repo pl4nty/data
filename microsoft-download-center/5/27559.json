@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Lync for Mac 2011 Deployment Guide",
+    "downloadDescription": "The Lync for Mac 2011 Deployment Guide is for system implementers, IT managers, system administrators, or other people who plan for, implement, and maintain Lync in their organizations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncDeploymentGuide.pdf",
+            "url": "https://download.microsoft.com/download/6/3/0/6303cc5c-649b-40cf-bf23-2a50fd934d37/LyncDeploymentGuide.pdf",
+            "size": "229521",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Lync for Mac 2011 Deployment Guide is for system implementers, IT managers, system administrators, or other people who plan for, implement, and maintain Lync in their organizations. <BR/><BR/>\r\nLync is available as a standalone edition for volume licensing customers.<BR/><BR/>\r\n\r\n<b>Note: </b>&nbsp; You can also view the <a href=\"http://mac2.microsoft.com/help/office/14/en-us/lyncdeploy\" target=\"_blank\">Lync for Mac 2011 Deployment Guide</a> online.<br/><br/>\r\n\r\nThe Lync for Mac 2011 Deployment Guide covers the following:\r\n\r\n<UL>\r\n<LI><b>Getting Started</b><br/>\r\nOverview<br/>\r\nFeatures in Lync for Mac 2011<br/>\r\nSystem requirements for Lync for Mac 2011<br/><br/></LI>\r\n\r\n<LI><b>Installing and Configuring Lync for Mac 2011 on a Corporate Network</b><br/>\r\nDeploying Lync for Mac 2011<br/>\r\nRemoving Lync for Mac 2011<br/>\r\nDeploying Lync for Mac 2011 preferences<br/><br/></LI>\r\n\r\n<LI><b>Technical Reference</b><br/>\r\nLync for Mac 2011 and Office for Mac 2011<br/>\r\nLync for Mac 2011 Integration Requirements<br/>\r\nLync for Mac 2011 - Managed Preferences<br/>\r\nLync for Mac 2011 and Public Instant Messaging Clients<br/>\r\nCompare Lync for Mac 2011 with Communicator for Mac and Lync 2010 for Windows<br/></LI>\r\n</UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "LyncDeploymentGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "224.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Note:</b> To view the Lync for Mac 2011 Deployment Guide .pdf in Windows, you will need the free software program, Adobe Reader. or you can view an online version <a href=\"http://mac2.microsoft.com/help/office/14/en-us/lyncdeploy\" target=\"_blank\">here</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>Note: </b>&nbsp; You can also view the <a href=\"http://mac2.microsoft.com/help/office/14/en-us/lyncdeploy\" target=\"_blank\">Lync for Mac 2011 Deployment Guide</a> online.<br/><br/>\r\n\r\n<B>To install this download on Mac OS X:</B>\r\n<OL>\r\n  <LI>Print this page if you want to use it as a reference when you are offline.</LI>\r\n  <LI>Click the download.</LI>\r\n  <LI>Follow the instructions on the screen to save the file to your hard disk. If you are using Safari, the downloaded file is saved to the desktop unless you specified a different location in the <B>Preferences</B> dialog box of Safari. To check your preferences, on the <B>Safari</B> menu, click <B>Preferences</B>, and then click <B>General</B>).</LI>\r\n  <LI>On your hard disk, double-click the file that you downloaded.</LI>\r\n</OL>\r\n\r\n<br/><B>To install this download on Windows:</B>\r\n<OL>\r\n  <LI>Print this page if you want to use it as a reference when you are offline.</LI>\r\n  <LI>Click the download.</LI>\r\n  <LI>Do one of the following:\r\n  <UL>\r\n <LI>To start the installation immediately, click <B>Open</B> or <B>Run</B>.</LI>\r\n <LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n</UL></LI>\r\n  <LI>On your hard disk, double-click the file that you downloaded.</LI>\r\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "information Rights Management in Office for Mac 2011 Deployment Guide (pdf)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=598cb9d3-2fdc-45e4-89f6-d2685a47c34c"
+        },
+        {
+            "title": "microsoft Office for Mac 2011 Administrator Guide (online)",
+            "url": "http://mac2.microsoft.com/help/office/14/en-us/admin"
+        },
+        {
+            "title": "lync for Mac 2011 Deployment guide",
+            "url": "http://mac2.microsoft.com/help/office/14/en-us/lyncDeploy"
+        },
+        {
+            "title": "office for Mac Web site",
+            "url": "http://www.microsoft.com/mac"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27559",
+    "downloadPreload": true
+}

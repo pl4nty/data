@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Tweet Entity Linking Data v2 Release (NEEL Challenge)",
+    "downloadDescription": "Dataset and Evaluation code for the paper: \u201cS-MART: Novel Tree-based Structured Learning Algorithms Applied to Tweet Entity Linking\u201d. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "0.2.zip",
+            "url": "https://download.microsoft.com/download/5/8/8/588cb7c5-d993-4290-8042-d8a174bd0e25/0.2.zip",
+            "size": "66985",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:55:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dataset and Evaluation code for the paper: \u201cS-MART: Novel Tree-based Structured Learning Algorithms Applied to Tweet Entity Linking\u201d. Releasing part of the datasets and python evaluation code used in the paper: S-MART: Novel Tree-based Structured Learning Algorithms Applied to Tweet Entity Linking, ACL 2015. \n \nPart of the data is based on the Making Sense of Microposts (#Microposts2014) Challenge (http://www.scc.lancs.ac.uk/microposts2014/challenge/index.html).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "0.2.zip"
+    ],
+    "detailsSection_file_size": [
+        "65.4 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52530",
+    "downloadPreload": true
+}

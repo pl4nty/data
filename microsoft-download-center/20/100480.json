@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Accelerator for SWIFT - Message Pack 2019 CU1",
+    "downloadDescription": "Cumulative Update 1 for BizTalk A4Swift Message Pack 2019",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MP2019-KB4528340-ENU.exe",
+            "url": "https://download.microsoft.com/download/5/a/8/5a8dcd36-2f8b-4081-8cb6-90a50fa3f501/MP2019-KB4528340-ENU.exe",
+            "size": "530800",
+            "version": "4.3.966.0",
+            "datePublished": "7/15/2024 4:29:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cumulative Update 1 for BizTalk A4Swift Message Pack 2019",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.966.0",
+    "detailsSection_file_name": [
+        "MP2019-KB4528340-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "518.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft BizTalk Accelerator for SWIFT Message Pack 2019.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "The Microsoft BizTalk Accelerator for SWIFT Message Pack 2019 should be downloaded and installed successfully before installing this Cumulative Update.\r\n\r\nRun the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100480",
+    "downloadPreload": true
+}

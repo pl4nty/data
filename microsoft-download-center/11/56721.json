@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 Data Export",
+    "downloadDescription": "Microsoft Dynamics 365 Data Export",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.DataMigrations.Exporter.Installer.msi",
+            "url": "https://download.microsoft.com/download/d/d/1/dd10048d-35c3-483a-bf2a-329365162b42/Microsoft.DataMigrations.Exporter.Installer.msi",
+            "size": "5738496",
+            "version": "1",
+            "datePublished": "7/15/2024 4:54:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the Microsoft Dynamics 365 Data Export tool download.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft.DataMigrations.Exporter.Installer.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "These files can be downloade by selecting the file or files that you would like to downloade from the dropdown above.<br/>\r\n   To Download do the following: <br/>\r\n   1)  Click the Download button (above).<br/>\r\n   2) Select the files that you would like to download. <br/>\r\n   3) Click <b>Next</b>. <br/>\r\n   4) Select to Open or Save the document. <br/>\r\n   5) Go to the location that you saved the document and view",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56721",
+    "downloadPreload": true
+}

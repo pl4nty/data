@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Video: Customizing Default Field Templates in ASP.NET Dynamic Data Applications",
+    "downloadDescription": "This video shows how to customize the UI for displaying, editing, and inserting when you use field templates in an ASP.NET Dynamic Data application.  See Related Resources for documentation and for a code example that accompanies this video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HowTo-CustomizeASP.NETDynamicDataDefaultFieldTemplates.wmv",
+            "url": "https://download.microsoft.com/download/e/f/7/ef770ac8-9841-409d-b928-4d5be4e82f80/HowTo-CustomizeASP.NETDynamicDataDefaultFieldTemplates.wmv",
+            "size": "3247199",
+            "version": "0.1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASP.NET Dynamic Data displays data fields by using field templates. This video shows how to change the UI for displaying, editing, or inserting by customizing the default field templates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "HowTo-CustomizeASP.NETDynamicDataDefaultFieldTemplates.wmv"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Windows Media Player</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><br />\n<li>Click the <b>Download</b> button on this page to start the video.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "how to: Customize ASP.NET Dynamic Data Default Field Templates",
+            "url": "http://msdn.microsoft.com/en-us/library/cc488533.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13969",
+    "downloadPreload": true
+}

@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 RPC over HTTP Deployment Scenarios",
+    "downloadDescription": "This guide includes information about deploying RPC over HTTP in Exchange Server 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3RPCHTTPDep.doc",
+            "url": "https://download.microsoft.com/download/9/9/5/99533a6e-70b7-4bb2-8115-dd8cbc800ec1/E2k3RPCHTTPDep.doc",
+            "size": "1950208",
+            "version": "12Dec2006",
+            "datePublished": "5/15/2024 3:11:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Exchange Server 2003 and Microsoft Office Outlook\u00ae 2003, combined with Microsoft Windows Server\u2122 2003, support the use of RPC over HTTP to access Exchange servers. Using the Microsoft Windows RPC over HTTP feature to enable your users to connect to their Exchange mailbox eliminates the requirement for remote office users to use a virtual private network (VPN) to connect to their Exchange servers. Users who are running Outlook 2003 on client computers can connect directly to an Exchange server in a corporate environment from the Internet.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3RPCHTTPDep.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word 2003 Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server 2003 RPC over HTTP Deployment Scenarios",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47577"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12659",
+    "downloadPreload": true
+}

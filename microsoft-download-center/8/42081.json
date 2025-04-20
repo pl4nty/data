@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Point of Service for .NET v1.14 (POS for .NET)",
+    "downloadDescription": "Microsoft Point of Service for .NET (POS for .NET) v1.14 is a class library that enables POS developers to apply Microsoft .NET technologies in their products. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "POSforDotNet-1.14.msi",
+            "url": "https://download.microsoft.com/download/f/f/f/fff64e24-e3e6-45fe-924f-fffa01e75f71/POSforDotNet-1.14.msi",
+            "size": "14413824",
+            "version": "1.14",
+            "datePublished": "7/15/2024 3:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\nMicrosoft Point of Service for .NET (POS for .NET) v1.14 is a class library that enables POS developers to apply Microsoft .NET technologies in their products. \r\nPOS for .NET v1.14 provides the following:\r\n<br />\r\n<br />\r\n\u2022 A simple and consistent interface for.NET Framework applications to interact with POS devices<br /><br />\r\n\u2022 A set of interfaces and classes created to help vendors write applications for common devices such as Cash Drawers or Line Displays<br /><br />\r\n\u2022 A fully compliant implementation of the Unified Point of Service (UnifiedPOS) v1.14 international standard<br /><br />\r\n\u2022 Support for Windows Plug and Play functionality<br /><br /><br />\r\nMicrosoft POS for .NET v.1.14 takes the POS development framework and brings full compatibility with the UnifiedPOS 1.14 specification.  As part of this update developers will get additional methods for creating a variety of experiences such as:<br /><br />\r\n\u2022 Enabling sales trainees to learn how to use chip and pin devices without affecting the business receipts total for the day (training mode) <br /><br />\r\n\u2022 More symbologies are now available for POS Printer and Barcode Scanner expanding reach to a larger set of devices<br /><br />\r\n\u2022 Fiscal Printer data can now reside on the printer in several different formats for easy review of daily financial transactions at the end of the day<br /><br />\r\nTo make development tasks easier, additional POS objects such as smartcard, motion sensor, and fiscal printer have been added to support a larger number of device types<br /><br />\r\nNew support for .NET 4.0 takes advantage of an updated security model which makes it easier to maintain PCI compliance when communicating with your device from your application  <br /><br />\r\nFor technical assistance please visit our <a href=\"http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=posfordotnet \">POS for .NET forum </a> on MSDN.<br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.14",
+    "detailsSection_file_name": [
+        "POSforDotNet-1.14.msi"
+    ],
+    "detailsSection_file_size": [
+        "13.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "POS for .NET v1.14 can be installed on the following platforms:<br /><br />\r\n\u2022 Windows 8.1<br />\r\n\u2022 Windows Embedded 8.1 Industry Enterprise<br />\r\n\u2022 Windows Embedded 8.1 Industry Pro<br />\r\n\u2022 Windows 7<br />\r\n\u2022 Windows Embedded POSReady 7<br /><br />\r\nAdditional Requirements include:<br />\r\n\u2022 .NET 4.0 and above\r\n<br /><br />\r\n\r\n\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8.1",
+        "Windows Embedded Industry 8.1"
+    ],
+    "installInstructionSection": "<br />\n<br />\nYou can install Microsoft Point of Service for .NET (POS for .NET) v1.14 on your device by double-clicking on the <b>POSforDotNet-1.14.msi</b> installer and following the installer wizard",
+    "additionalInformationSection": "<br /><b>Where can I find guidance on using POS for .NET v1.14?</b><br /><br />\r\nAfter you install POS for .NET v1.14, if you have also selected to install the POS for .NET Software Development Kit (SDK) during installation, you can open the POS for .NET SDK.chm Help file located in the %PROGRAMFILES(x86)%\\Microsoft Point Of Service\\SDK folder.\r\n<br />\r\nYou can also find the documentation online at <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=393135\">POS for .NET v1.14 SDK Documentation</a> on MSDN.<br /><br />\r\nFor a complete list of changes, see <b>What\u2019s New in POS for .NET v1.14</b> in the Help file.<br /><br />\r\n<b>Does POS for .NET v1.14 provide support for Windows Store apps?</b><br /><br />\r\nPOS for .NET does not provide any support for the Windows Runtime (WinRT) API. For more information about POS device support in WinRT, see <a href=\"http://msdn.microsoft.com/library/windows/apps/dn298071\">Windows.Devices.PointOfService namespace</a> on MSDN.<br />\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Documentation",
+            "url": "http://msdn.microsoft.com/en-us/library/bb429024.aspx"
+        },
+        {
+            "title": "visual Studio",
+            "url": "http://msdn.microsoft.com/en-us/vstudio/default.aspx"
+        },
+        {
+            "title": "product Page",
+            "url": "http://www.microsoft.com/windows/embedded/products/wepos/overview.mspx"
+        },
+        {
+            "title": "nrf ARTS",
+            "url": "http://www.nrf-arts.org/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42081",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvcSpecProd_9.56.6879.1",
+    "downloadDescription": "ASRMobSvcSpecProd_9.56.6879.1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ASRMobSvcSpecProd_9.56.6879.1.json",
+            "url": "https://download.microsoft.com/download/7/0/9/7096f38b-9e15-40cd-a72b-59012793e68c/ASRMobSvcSpecProd_9.56.6879.1.json",
+            "size": "511556",
+            "version": "9.56.6879.1",
+            "datePublished": "5/15/2024 5:01:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvcSpecProd_9.56.6879.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.56.6879.1",
+    "detailsSection_file_name": [
+        "ASRMobSvcSpecProd_9.56.6879.1.json"
+    ],
+    "detailsSection_file_size": [
+        "499.6 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105696",
+    "downloadPreload": true
+}

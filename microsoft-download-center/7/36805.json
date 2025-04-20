@@ -1,0 +1,198 @@
+{
+    "error": "",
+    "downloadTitle": "Platform Update for Windows 7",
+    "downloadDescription": "The Platform Update for Windows 7 enables improved features and performance on Windows 7 SP1 and Windows Server 2008 R2 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB2670838-x64.msu",
+            "url": "https://download.microsoft.com/download/1/4/9/14936fe9-4d16-4019-a093-5e00182609eb/Windows6.1-KB2670838-x64.msu",
+            "size": "11840839",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:12:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2670838-x86.msu",
+            "url": "https://download.microsoft.com/download/1/4/9/14936fe9-4d16-4019-a093-5e00182609eb/Windows6.1-KB2670838-x86.msu",
+            "size": "5911327",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:12:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Platform Update for Windows 7 enables improved features and performance on Windows 7 SP1 and Windows Server 2008 R2 SP1. It includes updates to the following components: \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/dd370990(v=vs.85).aspx\">Direct2D</a>, \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/dd368038(v=vs.85).aspx\">DirectWrite</a>, \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/hh309466(v=vs.85).aspx\">Direct3D</a>, \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/ee719902(v=vs.85).aspx\">Windows Imaging Component (WIC)</a>, \r\n<a href=\"http://msdn.microsoft.com/library/gg615082(v=vs.85).aspx\">Windows Advanced Rasterization Platform (WARP)</a>, \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/dd371981(v=vs.85).aspx\">Windows Animation Manager (WAM)</a>, \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/dd316976(v=vs.85).aspx\">XPS Document API </a>, the \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/dd797815(v=vs.85).aspx\">H.264 Video Decoder</a> and the \r\n<a href=\"http://msdn.microsoft.com/library/windows/desktop/Hh707223(v=vs.85).aspx \">JPEG XR Codec</a>.\r\n<br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2670838",
+        "name": "KB2670838"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2670838-x64.msu",
+        "Windows6.1-KB2670838-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "11.3 MB",
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 SP1 and Windows Server 2008 R2 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "1. To start the download, click the Download button and then do one of the following <br/>\r\no Click Run to start the installation immediately.<br/>\r\no Click Save to copy the download to your computer for installation at a later time.<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36805",
+    "downloadPreload": true
+}

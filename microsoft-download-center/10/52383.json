@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Narwhal",
+    "downloadDescription": "The functions in this software package are intended for library extensions to the exisiting WorldWide Telescope Loosely Coupled API (LCAPI). Last published: October 3, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NarwhalSetup.msi",
+            "url": "https://download.microsoft.com/download/d/8/a/d8a90efb-b528-4fdc-bcd4-cdb60fa04996/NarwhalSetup.msi",
+            "size": "527360",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The functions in this software package are intended for library extensions to the exisiting WorldWide Telescope Loosely Coupled API (LCAPI).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "NarwhalSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "515.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52383",
+    "downloadPreload": true
+}

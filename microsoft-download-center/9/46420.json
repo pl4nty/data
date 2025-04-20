@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Software License Terms, Third Party Notices, Privacy Statement and Documentation: Microsoft Dynamics GP Time Management",
+    "downloadDescription": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (EULA) - Time Management - RTM SLT - English and French.pdf",
+            "url": "https://download.microsoft.com/download/6/7/4/6744f365-aefb-47f8-bd77-0c823205bba0/MBS (EULA) - Time Management - RTM SLT - English and French.pdf",
+            "size": "174302",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:50:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Timecard Management documentation.docx",
+            "url": "https://download.microsoft.com/download/6/7/4/6744f365-aefb-47f8-bd77-0c823205bba0/Timecard Management documentation.docx",
+            "size": "28591",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:50:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics Time Management Privacy Statement.pdf",
+            "url": "https://download.microsoft.com/download/6/7/4/6744f365-aefb-47f8-bd77-0c823205bba0/Microsoft Dynamics Time Management Privacy Statement.pdf",
+            "size": "191461",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:50:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBS (Attribution) - Time Management Third Party Notices.pdf",
+            "url": "https://download.microsoft.com/download/6/7/4/6744f365-aefb-47f8-bd77-0c823205bba0/MBS (Attribution) - Time Management Third Party Notices.pdf",
+            "size": "380609",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:50:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MBS (EULA) - Time Management - RTM SLT - English and French.pdf",
+        "Timecard Management documentation.docx",
+        "Microsoft Dynamics Time Management Privacy Statement.pdf",
+        "MBS (Attribution) - Time Management Third Party Notices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "170.2 KB",
+        "27.9 KB",
+        "187.0 KB",
+        "371.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46420",
+    "downloadPreload": true
+}

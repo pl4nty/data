@@ -1,0 +1,192 @@
+{
+    "error": "",
+    "downloadTitle": "BITS Repair Tool for Windows Vista (KB940520)",
+    "downloadDescription": "The BITS Repair Tool will help you fix a problem caused by the corruption of BITS state files.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB940520-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/1/2/5/1259c063-4dcf-445f-9ff8-cd4146f47422/Windows6.0-KB940520-x86-ENU.exe",
+            "size": "31744",
+            "version": "940520",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        }
+    ],
+    "detailsSection": "The BITS Repair Tool will help you fix a problem caused by the corruption of BITS state files. The problem stops the host process for Windows Services, which prevents you from using BITS to transfer files. Use this tool to resolve the corruption and re-enable BITS transfers. After you install this item, you may have to restart your computer.<br/><br/>This update is provided to you and licensed under the Windows Vista License Terms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB940520",
+        "name": "KB940520"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "940520",
+    "detailsSection_file_name": [
+        "Windows6.0-KB940520-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "31.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>To start the download, click the <B>Download</B> button and then do one of the following, or select another language from <B>Change Language</B> and then click <B>Change</B>.</LI><br />\n<UL><br />\n<LI>Click <B>Run</B> to start the installation immediately.</LI><br />\n<LI>Click <B>Save</B> to copy the download to your computer for installation at a later time.</LI><br />\n</UL><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/940520"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4395",
+    "downloadPreload": true
+}

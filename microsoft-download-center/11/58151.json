@@ -1,0 +1,319 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365, version 8.2 (on-premises) Update 2.5",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics 365, version 8.2 (on-premises) Update 2.5.  This is a tested, cumulative set of updates for Dynamics 365. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Tools-KB4494402-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Tools-KB4494402-ENU-amd64.exe",
+            "size": "2329184",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Mui-KB4494402-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Mui-KB4494402-ENU-I386.exe",
+            "size": "48633312",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Client-KB4494402-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Client-KB4494402-ENU-I386.exe",
+            "size": "74103400",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Mui-KB4494402-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Mui-KB4494402-ENU-Amd64.exe",
+            "size": "16628488",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Srs-KB4494402-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Srs-KB4494402-ENU-Amd64.exe",
+            "size": "31138056",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Router-KB4494402-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Router-KB4494402-ENU-Amd64.exe",
+            "size": "23565040",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Client-KB4494402-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Client-KB4494402-ENU-Amd64.exe",
+            "size": "86811048",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Server-KB4494402-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Server-KB4494402-ENU-Amd64.exe",
+            "size": "187164888",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Router-KB4494402-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/8/0/d/80dfa7c3-c68f-494f-9183-a8500560236e/CRM2016-Router-KB4494402-ENU-I386.exe",
+            "size": "23251264",
+            "version": "08.02.0005.0004",
+            "datePublished": "7/15/2024 3:06:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        }
+    ],
+    "detailsSection": "\n      Microsoft has released Dynamics 365, (on-premises) Update 2.5 for Microsoft Dynamics 365 Server (on-premises), Microsoft Dynamics 365 Reporting Extensions (on-premises), Microsoft Dynamics 365 for Outlook (online and on-premises), Microsoft Dynamics 365 Language Pack (online and on-premises), and Microsoft Dynamics 365 Tools (on-premises).<br />\n      <br />\n      For more information about this release, see Microsoft Knowledge Base article 4494402 :<br /><br /><a HREF=\"https://support.microsoft.com/en-us/help/4494402 \">Microsoft Dynamics 365 (on-premises) Update 2.5</a> <br />\n      <br />\n      To maintain parity between the application components of Dynamics 365, this update includes packages for Microsoft Dynamics 365 Server (on-premises), Microsoft Dynamics 365 Reporting Extensions (on-premises), Microsoft Dynamics 365 for Outlook (online and on-premises), Microsoft Dynamics 365 Language Packs (online and on-premises),  and Microsoft Dynamics 365 Tools (on-premises).\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4494402",
+        "name": "KB4494402"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.02.0005.0004",
+    "detailsSection_file_name": [
+        "CRM2016-Tools-KB4494402-ENU-amd64.exe",
+        "CRM2016-Mui-KB4494402-ENU-I386.exe",
+        "CRM2016-Client-KB4494402-ENU-I386.exe",
+        "CRM2016-Mui-KB4494402-ENU-Amd64.exe",
+        "CRM2016-Srs-KB4494402-ENU-Amd64.exe",
+        "CRM2016-Router-KB4494402-ENU-Amd64.exe",
+        "CRM2016-Client-KB4494402-ENU-Amd64.exe",
+        "CRM2016-Server-KB4494402-ENU-Amd64.exe",
+        "CRM2016-Router-KB4494402-ENU-I386.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "46.4 MB",
+        "70.7 MB",
+        "15.9 MB",
+        "29.7 MB",
+        "22.5 MB",
+        "82.8 MB",
+        "178.5 MB",
+        "22.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      <b>Prerequisites:</b>\n      <br />\nThis update must be installed on a computer that is running one of the following versions:    \r\n  <ul>\n        <li>Dynamics 365, version 8.2 or 8.1</li>\r\n        <li>Microsoft Dynamics 2016 </li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\n      Select Download, and then select the file you want to download from the list.<br /><br />\n      <b>Important: </b>The language pack must be installed before you can apply the update for that language pack. Download and install a language pack at <a HREF=\"http://www.microsoft.com/en-US/download/details.aspx?id=50371\">Microsoft Dynamics 365 Language Packs</a>. <br /><br />\n\n      <br />\n\n      To install this update, do one of the following:<br />\n      <ul>\n        <li>\n          To start the installation immediately, select <b>Run</b>.\n        </li>\n        <li>\n          To save the download to your computer for installation later, select <b>Save</b>.\n        </li>\n        <li>\n          To cancel the download, select <b>Cancel</b>.\n        </li>\n      </ul>\n    ",
+    "additionalInformationSection": "\n      <b>Hotfixes and updates that you have to manually enable or configure</b><br />\n      <br />\n      This Dynamics 365 update may contain hotfixes and updates that have to be manually enabled or configured. To enable or configure these hotfixes on the server that is running Dynamics 365, see the \"Hotfixes and updates that you must enable or configure manually\" section of the following Microsoft Knowledge Base article: <br />\n      <br /><a HREF=\"https://support.microsoft.com/en-us/help/4494402 \">Microsoft Dynamics 365 (on-premises) Update 2.5 (4494402)</a>\n      <br />\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "microsoft Dynamics 365 Report Authoring Extension",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=50375"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58151",
+    "downloadPreload": true
+}

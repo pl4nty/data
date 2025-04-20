@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "JPEGXR Plug-in for Photoshop (Windows)",
+    "downloadDescription": "A file-formats plug-in for Photoshop that enables the loading and saving of images in the JPEGXR format. Last published: June 7, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "JPEGXR_Win.zip",
+            "url": "https://download.microsoft.com/download/5/e/d/5ed48aa7-bbec-46fe-bcf2-f72e403adb67/JPEGXR_Win.zip",
+            "size": "540832",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A file-formats plug-in for Photoshop that enables the loading and saving of images in the JPEGXR format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "JPEGXR_Win.zip"
+    ],
+    "detailsSection_file_size": [
+        "528.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52369",
+    "downloadPreload": true
+}

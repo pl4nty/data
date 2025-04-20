@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment Options for Microsoft Office 2010",
+    "downloadDescription": "Describes and illustrates the client deployment methods for Microsoft Office 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DeploymentOptions_Office2010.vsd",
+            "url": "https://download.microsoft.com/download/4/9/0/490d5476-ceb8-4ce2-a105-57f0a10a3b1d/DeploymentOptions_Office2010.vsd",
+            "size": "3921920",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DeploymentOptions_Office2010.pdf",
+            "url": "https://download.microsoft.com/download/4/9/0/490d5476-ceb8-4ce2-a105-57f0a10a3b1d/DeploymentOptions_Office2010.pdf",
+            "size": "405198",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DeploymentOptions_Office2010.xps",
+            "url": "https://download.microsoft.com/download/4/9/0/490d5476-ceb8-4ce2-a105-57f0a10a3b1d/DeploymentOptions_Office2010.xps",
+            "size": "554437",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model describes and illustrates the client deployment methods for Microsoft Office 2010. Deployment options include network share, Group Policy startup scripts, managed deployment, and virtualization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "DeploymentOptions_Office2010.vsd",
+        "DeploymentOptions_Office2010.pdf",
+        "DeploymentOptions_Office2010.xps"
+    ],
+    "detailsSection_file_size": [
+        "3.7 MB",
+        "395.7 KB",
+        "541.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista</li>\r\n<li>Windows XP</li>\r\n<li>Windows 7</li>\r\n</ul>\r\n</ul>\r\n<br></br>\r\n<ul><li><b>Additional Information:</b></li></ul>\r\n<ul><ul>\r\n<li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Tips for using posters</b>\r\n<br></br>\r\nIf you have a plotter, you can print these posters in their full size. If you don\u2019t have plotter, use the following steps to print on smaller paper.\r\n<br></br>\r\n<b>To print posters on smaller paper</b>\r\n<br></br>\r\n<ol>\r\n<li>Open the poster in Office Visio.</li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>. </li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down.</li>\r\n\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>. </li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Print</b>. </li>\r\n</ol>\r\n<br></br>\r\nIf you want to create posters that use the same symbols as these posters, you can download <a href=\"http://go.microsoft.com/fwlink/?LinkId=148756\">Visio stencils for Office IT Pro posters</a> (http://go.microsoft.com/fwlink/?LinkId=148756).\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9312",
+    "downloadPreload": true
+}

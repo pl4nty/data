@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Enterprise Library 5.0 Migration Guide",
+    "downloadDescription": "Microsoft Enterprise Library 5.0 Migration Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Enterprise Library 5.0 Migration Guide.xps",
+            "url": "https://download.microsoft.com/download/d/5/7/d577156b-ae63-4080-88e4-6ab4a8cfd482/Microsoft Enterprise Library 5.0 Migration Guide.xps",
+            "size": "744232",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Enterprise Library 5.0 Migration Guide.pdf",
+            "url": "https://download.microsoft.com/download/d/5/7/d577156b-ae63-4080-88e4-6ab4a8cfd482/Microsoft Enterprise Library 5.0 Migration Guide.pdf",
+            "size": "663808",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide explains the opportunities open to you for migrating applications built using Enterprise Library versions 3.1, 4.0, and 4.1, and versions 1.0 and 1.1 of Unity to use version 5.0 or Enterprise Library and version 2.0 of Unity.\r\n<br/>\r\nBecause individual application scenarios and environments vary, and the way Enterprise Library and Unity are used within existing applications will differ considerably, this guide cannot guarantee success in every situation. However, it contains practical guidance that is based on knowledge gathered during the development of Enterprise Library 5.0, and through test migrations of a range of different existing applications. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "Microsoft Enterprise Library 5.0 Migration Guide.xps",
+        "Microsoft Enterprise Library 5.0 Migration Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "726.8 KB",
+        "648.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe PDF viewer or Microsoft XPS viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Download PDF or XPS, read and proceed with migration.",
+    "relatedResourcesSection": [
+        {
+            "title": "enterprise Library Forum",
+            "url": "http://entlib.codeplex.com"
+        },
+        {
+            "title": "microsoft Enterprise Library 5.0 Documentation",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=188874"
+        },
+        {
+            "title": "microsoft Enterprise Library 5.0",
+            "url": "http://msdn.microsoft.com/en-us/library/ff632023.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20476",
+    "downloadPreload": true
+}

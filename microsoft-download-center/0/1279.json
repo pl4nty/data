@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2008 Enterprise Evaluation: Trial Experience for IT Professionals",
+    "downloadDescription": "Download SQL Server 2008 180-day Trial Software. Microsoft SQL Server 2008 is a database platform for large-scale online transaction processing (OLTP), data warehousing, and e-commerce applications; it is also a business intelligence platform for data analysis and reporting solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "instructions_enu.htm",
+            "url": "https://download.microsoft.com/download/0/e/3/0e3532ff-d8dc-4ffb-b1ba-84542f08ec1c/instructions_enu.htm",
+            "size": "3370",
+            "version": "10.00.1600.22",
+            "datePublished": "7/15/2024 3:09:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "SQL Server 2008 is a trusted, productive, and intelligent data platform for all your data needs.  SQL Server 2008 delivers on Microsoft\u2019s Data Platform vision by helping your organization manage any data, any place, any time. It enables you to store structured, semi-structured, and unstructured data, such as documents, images and music, directly in the database. SQL Server 2008 delivers a rich set of integrated services that enable you to do more with your data such as query, search, synchronize, report, and analyze. Data can be stored and accessed in your largest servers within the data center all the way down to desktops and mobile devices, enabling you to have control over your data no matter where it is stored. <br/><br/>\nThis fully functional trial software will automatically expire after six months. You can obtain the fully licensed version at any time.<br/><br/>\nFor information about the different editions of SQL Server 2008, see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=123112\">Editions page</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.00.1600.22",
+    "detailsSection_file_name": [
+        "instructions_enu.htm"
+    ],
+    "detailsSection_file_size": [
+        "3.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>32-bit systems</li>\n  <ul>\n    <li>Computer with Intel or compatible 1GHz or faster processor (2 GHz or faster is recommended.)</li>\n  </ul>\n  <li>64-bit systems</li>\n  <ul>\n    <li>1.4 GHz or higher processor</li>\n  </ul>\n  <li>Minimum of 512 MB of RAM (2 GB or more is recommended.)</li>\n  <li>2.2 GB of available hard disk space</li>\n</ul><br/>\n\n<b> Connecting to Visual Studio 2005 requires downloading and installing <a href= \"http://www.microsoft.com/downloads/details.aspx?FamilyID=E1109AEF-1AA2-408D-AA0F-9DF094F993BF&displaylang=en\">Visual Studio 2005 Support for SQL Server 2008, Community Technology Preview</a>. </b><br/><br/>\n\n<b> Please read important information in the <a href = \"http://go.microsoft.com/fwlink/?LinkID=120220\" >Release Notes</a> before installing SQL Server 2008 with Visual Studio 2008. </b><br/><br/>\n\nTo learn more about what is required to run SQL Server 2008 Enterprise Evaluation, see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=123113\">system requirements page</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ul>\nWe recommend you read the <a href = \"http://go.microsoft.com/fwlink/?LinkID=120220\" >Release Notes</a> and \n\n<a  href = \"http://go.microsoft.com/fwlink/?LinkID=120219\">Readme</a> before installing SQL Server Enterprise \n\nEvaluation.<br/><br/>\n\n  SQL Server 2008 Enterprise Evaluation is available as an image file that contains X86, X64 and IA64 installatable \n\nversions.  You can use this image to burn your own DVD.<br/><br/>\n\n  <b>Step 1:</b> Click the following link to download the file.<br/><br/>\n  <ul>\n    <li><b><a href=\"http://switch.atdmt.com/action/mrtity_FY09SQL08RTMEnterpriseTrialExperienceIT_9\">DVD Image</a></b></li>\n    \n  </ul><br/>\n  <b>Step 2:</b> Using your DVD-burning software, select the options to burn a DVD from an .ISO image. When \n\nyou are prompted \n\nfor a file to use, select the image file that you downloaded. After burning the DVD, locate and double-click \n\n<b>Setup.exe</b> on the DVD to begin the \n\ninstallation.\n\n<br/><br/>\n\n  <b>Step 3:</b> Follow the installation instructions provided in the Readme.\n</ul>\n\n<br/><br/>\n\nYou may also download a self-extracting executable (EXE) that is specific for X86, X64 or IA64. <b> These executables do not support X86 installations on 64\n\n-bit versions of Windows.  </b> Use the DVD image for X86 installations on 64-bit versions of Windows (IA64 is not supported).\n\n<br/><br/>\n\n   \n    <li><b>Self-extracting executables:</b></li>\n<ul>\n      <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=129736&clcid=0x409\">X86 \n\nExecutable</a></li>\n      <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=129737&clcid=0x409\">X64 \n\nExecutable</a></li>\n      <li><a href=\"http://go.microsoft.com/fwlink/?LinkID=129738&clcid=0x409\">IA64 \n\nExecutable</a></li></ul>",
+    "additionalInformationSection": "<ul>\n<li>This trial software is not supported by Customer Services and Support (CSS). If you have questions about SQL Server 2008 Enterprise Evaluation, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkID=123034\">SQL Server TechCenter</a>.</li><br/><br/>\n\n<li>Click these links to <a href=\"http://go.microsoft.com/fwlink/?LinkID=123116\"> see what's new in SQL Server 2008</a> and <a href= \"http://go.microsoft.com/fwlink/?LinkID=123119\"> for an overview of SQL Server 2008</a>.</li><br/><br/>\n\n <li>Help improve SQL Server 2008 by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to Microsoft Connect</a>.</li><br/><br/>\n  \n  <li>The files in this release are identical to <a href=\"http://go.microsoft.com/fwlink/?LinkID=122680\">Microsoft SQL Server 2008 Enterprise Evaluation: Trial Experience for Developers</a>. The only difference between these two releases is the content of the follow-up emails that you will receive from Microsoft.</li>\n</ul><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server 2008 Virtual Labs",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=123033"
+        },
+        {
+            "title": "samples and Sample Databases",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=87843"
+        },
+        {
+            "title": "home Page for Microsoft SQL Server 2008",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=120193"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=123034"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1279",
+    "downloadPreload": true
+}

@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2008 GDIPLUS.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual Studio 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs90-kb952241-x86.exe",
+            "url": "https://download.microsoft.com/download/2/f/8/2f8be07c-fe77-43c8-9184-ee8d0ab83099/VS90-KB952241-x86.exe",
+            "size": "5265832",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system running Visual Studio 2008 and gain complete control over it. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB952241",
+        "name": "KB952241"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS08-052",
+        "name": "MS08-052"
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "vs90-kb952241-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Datacenter",
+        "Windows XP Professional x64 Edition ",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows 2000 Professional Edition ",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2008 Enterprise",
+        "Windows Vista Home Premium",
+        "Windows Vista Business",
+        "Windows Server 2003, Web Edition",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Server 2008 Standard",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Vista Home Basic",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Tablet PC Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Advanced Server",
+        "Windows XP Home Edition ",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Vista Ultimate",
+        "Windows Vista Business 64-bit edition",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Vista Enterprise"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?linkid=121048\">KB952241</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 952241",
+            "url": "http://go.microsoft.com/fwlink/?linkid=121048"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9297",
+    "downloadPreload": true
+}

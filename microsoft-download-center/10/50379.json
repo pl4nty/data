@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for Dynamics CRM 2016",
+    "downloadDescription": "The System Center Management Pack for Microsoft Dynamics CRM 2016 enables you to administer the Microsoft Dynamics CRM 2016 application in Microsoft System Center Operations Manager (SCOM) 2012 or a later version.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Dynamics CRM 2016.msi",
+            "url": "https://download.microsoft.com/download/9/5/4/9547b434-4e14-417e-8d15-3e08b1f5f011/Microsoft System Center Management Pack for Dynamics CRM 2016.msi",
+            "size": "471040",
+            "version": "8.0.0.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016MPGuide.docx",
+            "url": "https://download.microsoft.com/download/9/5/4/9547b434-4e14-417e-8d15-3e08b1f5f011/CRM2016MPGuide.docx",
+            "size": "123238",
+            "version": "8.0.0.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The views, monitors, rules, and knowledge specific to Microsoft Dynamics CRM 2016 that comprise this Management Pack provide the means for System Center Operations Manager users to centrally manage the server application, its component services, and the computers on which they run. The Operations Manager management pack for CRM enables you to monitor Microsoft Dynamics CRM Server 2016 and Microsoft Dynamics CRM Server 2015 in Microsoft System Center Operations Manager. <br/>\r\n<b>Note: </b>If you already have the Operations Manager management pack for CRM 2015 installed, the Operations Manager management pack for CRM 2016 will replace it. <br/>\r\n<br/>\r\nBy managing these Microsoft Dynamics CRM components in System Center Operations Manager, the administrator can respond quickly to critical events and key performance indicators, and take action to prevent service outages, reduce the resolution time for alert conditions, and increase the overall availability and performance of the Microsoft Dynamics CRM system. <br/>\r\n<br/>\r\n<b>Feature Summary </b>\r\n<ul>\r\n<li> Monitors the availability and health of the following components </li>\r\n<ul>\r\n<li> Microsoft Dynamics CRM Server 2016, Microsoft Dynamics CRM Server 2015</li>\r\n<li> Microsoft Dynamics CRM 2016 E-mail Router, Microsoft Dynamics CRM 2015 E-mail Router </li>\r\n<li> Microsoft Dynamics CRM 2016 Reporting Extensions, Microsoft Dynamics CRM 2015 Reporting Extensions </li>\r\n</ul>\r\n<li> Monitors the availability and health of the following component services: </li>\r\n<ul>\r\n<li> Microsoft Dynamics CRM Asynchronous Processing Service  </li>\r\n<li> Microsoft Dynamics CRM Asynchronous Processing Service (maintenance) </li>\r\n<li> Microsoft Dynamics CRM Sandbox Processing Service </li>\r\n<li> Microsoft Dynamics CRM E-mail Router Service </li>\r\n<li> Microsoft Dynamics CRM Unzip Service </li>\r\n<li> World Wide Web Publishing Service </li>\r\n<li> Indexing Service </li>\r\n</ul>\r\n<li> Monitors the availability and health of the following application components and functionality:  </li>\r\n<ul>\r\n<li> Operability of ISV plug-ins  </li>\r\n<li> Web application requests processing, SOAP exceptions, and unexpected failures  </li>\r\n</ul>\r\n<li> Monitors the performance metrics of the following components:  </li>\r\n<ul>\r\n<li> Web application requests processing  </li>\r\n<li> Database query processing  </li>\r\n</ul>\r\n<li> Monitors the system for configuration-related failures.  </li>\r\n</ul>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0.0.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Dynamics CRM 2016.msi",
+        "CRM2016MPGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "460.0 KB",
+        "120.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <b>Other Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2012 or a later version </li>\r\n<li> Microsoft Dynamics CRM Server 2016</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Essentials "
+    ],
+    "installInstructionSection": "<b>To download the Management Pack:</b><br/>\r\n<ol>\r\n<li> Click the Download button at the top of the page. </li>\r\n<li> In the File Download \u2013 Security Warning dialog box, click Run. </li>\r\n<li> If the Internet Explorer \u2013 Security Warning dialog box appears, click Run. </li>\r\n<li> Follow the instructions to download the Management Pack. </li>\r\n</ol><br/>\r\n<b>To import the Monitoring Pack: </b><br/>\r\n<ol>\r\n<li> On a System Center Operations Manager server, open the Administration console. </li>\r\n<li> Right click on the Management Packs node, and then click Import Management Packs. </li>\r\n<li> Follow the instructions to import the Management Pack. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft System Center Management Pack for Dynamics CRM 2015",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=46371"
+        },
+        {
+            "title": "microsoft Dynamics CRM Implementation Guide for CRM Online and CRM 2015 (on-premises)",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=45022"
+        },
+        {
+            "title": "system Center Management Pack for Microsoft Dynamics CRM 2013",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=44279"
+        },
+        {
+            "title": "dynamic CRM Homepage",
+            "url": "http://crm.dynamics.com/en-us"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50379",
+    "downloadPreload": true
+}

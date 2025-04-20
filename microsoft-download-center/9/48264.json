@@ -1,0 +1,373 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Information Services (IIS) 10.0 Express",
+    "downloadDescription": "IIS 10.0 Express is a simple and self-contained version of IIS 10.0 that is optimized for developers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_de-DE.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_de-DE.msi",
+            "size": "4653056",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_cs-CZ.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_cs-CZ.msi",
+            "size": "4648960",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_fr-FR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_fr-FR.msi",
+            "size": "4653056",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_es-ES.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_es-ES.msi",
+            "size": "4648960",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_en-US.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_en-US.msi",
+            "size": "4636672",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_ko-KR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_ko-KR.msi",
+            "size": "4669440",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_ja-JP.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_ja-JP.msi",
+            "size": "4677632",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_it-IT.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_it-IT.msi",
+            "size": "4653056",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_ru-RU.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_ru-RU.msi",
+            "size": "4677632",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_pt-BR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_pt-BR.msi",
+            "size": "4648960",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_pl-PL.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_pl-PL.msi",
+            "size": "4653056",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_zh-CN.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_zh-CN.msi",
+            "size": "4648960",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_tr-TR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_tr-TR.msi",
+            "size": "4648960",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_x86_zh-TW.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_x86_zh-TW.msi",
+            "size": "4648960",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_cs-CZ.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_cs-CZ.msi",
+            "size": "10702848",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_es-ES.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_es-ES.msi",
+            "size": "10702848",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "iisexpress_amd64_en-US.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_en-US.msi",
+            "size": "10694656",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_de-DE.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_de-DE.msi",
+            "size": "10706944",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_it-IT.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_it-IT.msi",
+            "size": "10706944",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_fr-FR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_fr-FR.msi",
+            "size": "10706944",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_ko-KR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_ko-KR.msi",
+            "size": "10723328",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_ja-JP.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_ja-JP.msi",
+            "size": "10731520",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_pt-BR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_pt-BR.msi",
+            "size": "10702848",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_pl-PL.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_pl-PL.msi",
+            "size": "10706944",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_tr-TR.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_tr-TR.msi",
+            "size": "10702848",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_ru-RU.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_ru-RU.msi",
+            "size": "10731520",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_zh-TW.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_zh-TW.msi",
+            "size": "10702848",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "iisexpress_amd64_zh-CN.msi",
+            "url": "https://download.microsoft.com/download/c/e/8/ce8d18f5-d4c0-45b5-b531-adecd637a1aa/iisexpress_amd64_zh-CN.msi",
+            "size": "10702848",
+            "version": "10.0.2001",
+            "datePublished": "7/15/2024 4:54:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Internet Information Services (IIS) 10.0 Express is a free, simple and self-contained version of IIS that is optimized for developers. IIS 10.0 Express makes it easy to use the most current version of IIS to develop and test websites. IIS 10.0 Express has all the core capabilities of IIS 10.0 and additional features to ease website development.<BR></BR><BR></BR>\n \nThe benefits of using IIS 10.0 Express include: <BR></BR>\n<UL>\n<LI>The same web server that runs on your production server is now available on your development computer. </LI>\n<LI>Most tasks can be done without the need for administrative privileges.</LI>\n<LI>IIS  Express runs on Windows 7 Service Pack 1 and all later versions of Windows.</LI>\n<LI>Many users can work independently on the same computer.</LI>\n</UL><BR></BR>\n\nThis package installs only IIS 10.0 Express. For an integrated development experience, install <A href=\"https://www.visualstudio.com\">Microsoft Visual Studio 2022</A>.\r\n \n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.2001",
+    "detailsSection_file_name": [
+        "iisexpress_x86_de-DE.msi",
+        "iisexpress_x86_cs-CZ.msi",
+        "iisexpress_x86_fr-FR.msi",
+        "iisexpress_x86_es-ES.msi",
+        "iisexpress_x86_en-US.msi",
+        "iisexpress_x86_ko-KR.msi",
+        "iisexpress_x86_ja-JP.msi",
+        "iisexpress_x86_it-IT.msi",
+        "iisexpress_x86_ru-RU.msi",
+        "iisexpress_x86_pt-BR.msi",
+        "iisexpress_x86_pl-PL.msi",
+        "iisexpress_x86_zh-CN.msi",
+        "iisexpress_x86_tr-TR.msi",
+        "iisexpress_x86_zh-TW.msi",
+        "iisexpress_amd64_cs-CZ.msi",
+        "iisexpress_amd64_es-ES.msi",
+        "iisexpress_amd64_en-US.msi",
+        "iisexpress_amd64_de-DE.msi",
+        "iisexpress_amd64_it-IT.msi",
+        "iisexpress_amd64_fr-FR.msi",
+        "iisexpress_amd64_ko-KR.msi",
+        "iisexpress_amd64_ja-JP.msi",
+        "iisexpress_amd64_pt-BR.msi",
+        "iisexpress_amd64_pl-PL.msi",
+        "iisexpress_amd64_tr-TR.msi",
+        "iisexpress_amd64_ru-RU.msi",
+        "iisexpress_amd64_zh-TW.msi",
+        "iisexpress_amd64_zh-CN.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.4 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "4.5 MB",
+        "4.5 MB",
+        "4.4 MB",
+        "4.5 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "4.4 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB",
+        "10.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>Supported Operating System</B>\n<BR></BR>\n<BR></BR>\n\nWindows 10, Windows Server 2016, Windows 11, Windows Server 2019, Windows Server 2022\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2022",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Click the <B>Download</B> button on this page to start the download, and then do one of the following:\n<UL><LI>\nTo start the installation immediately, click <B>Open</B> or <B>Run this program from its current location.</B>\n</LI>\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk.</B></LI>\n</UL>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48264",
+    "downloadPreload": true
+}

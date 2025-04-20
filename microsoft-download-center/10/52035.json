@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Abstract Scene Dataset",
+    "downloadDescription": "This dataset contains clip art related to the academic paper Bringing Semantics Into Focus Using Visual Abstraction. Last published: February 5, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AbstractScenes_v1.1.zip",
+            "url": "https://download.microsoft.com/download/4/5/d/45d1bbfc-7944-4ac5-aed2-1a35d85662d7/AbstractScenes_v1.1.zip",
+            "size": "821088975",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:13:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This dataset contains clip art related to the academic paper Bringing Semantics Into Focus Using Visual Abstraction.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "AbstractScenes_v1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "783.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52035",
+    "downloadPreload": true
+}

@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 SP4 Data Mining Add-ins for Microsoft\u00ae Office\u00ae",
+    "downloadDescription": "This package includes two add-ins for Microsoft Office Excel (Table Analysis Tools and Data Mining Client) and one add-in for Microsoft Office Visio 2010 (Data Mining Templates). The add-ins are supported on Office 2010 and Office 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_DMAddin.msi",
+            "url": "https://download.microsoft.com/download/3/6/f/36f2108b-9a2b-48d7-ad0d-d1ef5b960967/ENU/x86/SQL_AS_DMAddin.msi",
+            "size": "14188544",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:51:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_DMAddin.msi",
+            "url": "https://download.microsoft.com/download/3/6/f/36f2108b-9a2b-48d7-ad0d-d1ef5b960967/ENU/x64/SQL_AS_DMAddin.msi",
+            "size": "14528512",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:51:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2012 SP4 Data Mining Add-ins for Microsoft Office helps you take advantage of SQL Server predictive analytics in Office Excel and Office Visio. The download includes the following components:<br />\n<br />\n\n<ul>\n<li>Table Analysis Tools for Excel: This add-in provides easy-to-use tasks that leverage SQL Server 2012 data mining models within Excel using either your spreadsheet data or external data accessible through your SQL Server 2012 Analysis Services instance.</li>\n<li>Data Mining Client for Excel: By using this add-in, you can create, test, explore, and manage data mining models within Excel using either your spreadsheet data or external data accessible through your SQL Server 2012 Analysis Services instance. </li>\n<li>Data Mining Templates for Visio: This add-in enables you to render and share your mining models as annotatable Visio drawings.</li>\n</ul>\n<br />\nIf you choose, you can install each of these components separately.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.7001.0",
+    "detailsSection_file_name": [
+        "SQL_AS_DMAddin.msi",
+        "SQL_AS_DMAddin.msi"
+    ],
+    "detailsSection_file_size": [
+        "13.5 MB",
+        "13.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n<ul>\n<li>Microsoft .NET Framework 4.0.</li>\n<li>If installing the Table Analysis Tools or Data Mining Client for Excel, Microsoft Office with .NET Programmability Support.\nSupported editions of Office include the following editions of Office 2010 and equivalent editions of Office 2013:</li><br />\n<ul>\n<li>Professional</li>\n<li>Professional Plus</li>\n<li>Ultimate</li>\n<li>Enterprise</li>\n</ul>\n</ul>\n<ul>\n<li>If installing the Data Mining Templates for Visio, Microsoft Visio Professional with .NET Programmability Support.</li>\n<li>40 MB of available hard disk space.</li>\n<li>Note: The Data Mining Add-ins require a connection to one of the following editions of SQL Server 2012 Analysis Services:</li>\n<ul>\n<li>Enterprise</li>\n<li>Business Intelligence</li>\n<li>Standard </li>\n</ul>\n</ul>\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "\n<br />Note: If you have an earlier version of the Data Mining Add-ins installed, you must remove it using Add/Remove Programs in Control Panel before installing the latest version. User settings, such as Connections, will not be removed.<br />\n<br />\nStep 1: Verify that you have Microsoft Office 2010 or 2013 installed.<br />\n<br />\nStep 2: If you do not already have Microsoft .NET Framework 4.0, download and install the Microsoft .NET Framework 4.0 that matches the machine architecture (32-bit or 64-bit) of your Office installation.<br />\n<br />\nNote: If you intend to install the Table Analysis Tools for Excel or the Data Mining Client for Excel, verify that the .NET Programmability Support component is installed under Microsoft Office Excel by running Microsoft Office Setup from Add/Remove Programs in Control Panel.<br />\n<br />\nNote: If you intend to install the Data Mining Templates for Visio, verify that the .NET Programmability Support component is installed under Microsoft Office Visio by running Microsoft Office Visio 2010 Setup from Add/Remove Programs in Control Panel. <br />\n<br />\nStep 3: Download the appropriate version of the  Data Mining Add-ins that matches the machine architecture (32-bit or 64-bit) of your Office 2010 installation by clicking the download link later on this page. To start the installation immediately, click Run. To install at a later time, click Save. The license and documentation are installed with the Data Mining Add-ins.<br />\n<br />",
+    "additionalInformationSection": "If you have questions about  SQL Server 2012, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkID=205125\"> SQL Server  2012 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2012' by submitting bugs to <a href=\"http://go.microsoft.com/fwlink/?LinkID=223170\">Microsoft Connect.</a><br />\n<br />\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56047",
+    "downloadPreload": true
+}

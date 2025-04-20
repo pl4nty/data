@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "\"Protect your organization from ransomware\" poster",
+    "downloadDescription": "This large poster summarizes the three layers of protection and mitigation between ransomware attackers and your organization's ransomable resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "protect-your-organization-from-ransomware.pdf",
+            "url": "https://download.microsoft.com/download/5/e/3/5e37cbff-9a7a-45b2-8b95-6d3cc5426301/protect-your-organization-from-ransomware.pdf",
+            "size": "163069",
+            "version": "2",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Ransomware attackers use a variety of techniques to gain access to an organization's network, elevate their privileges, and determine what and where the ransomable assets are located. At an opportune time, they encrypt or destroy them and demand a ransom. An effective strategy for combatting ransomware attacks is to create three levels of prevention and mitigation: keeping them out, preventing them from getting elevated privileges, and protecting your ransomable assets. This poster lays out these three layers and includes implementation checklists so that you can gauge your current prevention and mitigation state and track ongoing progress.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "protect-your-organization-from-ransomware.pdf"
+    ],
+    "detailsSection_file_size": [
+        "159.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103384",
+    "downloadPreload": true
+}

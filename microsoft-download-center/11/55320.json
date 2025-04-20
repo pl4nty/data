@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 for Field Service Demo Data",
+    "downloadDescription": "Demo dataset for Microsoft Dynamics 365 for Field Service Demo Data",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FieldServiceDemoData_v6_1_0_5.EXE",
+            "url": "https://download.microsoft.com/download/8/e/0/8e0430ce-806e-418e-9f84-9b859cfacb1c/FieldServiceDemoData_v6_1_0_5.EXE",
+            "size": "10457600",
+            "version": "6.1.0.5",
+            "datePublished": "7/15/2024 4:44:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To become familiar with Dynamics 365 for Field Service, it\u2019s useful to have a pre-configured environment to explore. For this purpose, we\u2019ve created a separate managed solution that makes it easier to explore and learn about the new solution. Running this package deployer performs the following actions:\r\n\u2022 Builds default parameters that drive behavior of field service\r\n\u2022 Imports sample data such as resources, roles, work orders and other key information\r\n\r\nImportant:\u00a0 There is no way to un-install the demo data. Therefore, you should only use this package on demonstration or test systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.1.0.5",
+    "detailsSection_file_name": [
+        "FieldServiceDemoData_v6_1_0_5.EXE"
+    ],
+    "detailsSection_file_size": [
+        "10.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Minimum: Microsoft Dynamics 365 fall 2016 release (v8.2) with Field Service (v6.1.0.1462)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the self-extracting file and extract the contents. Read the \"Dynamics 365 for Field Service Demo Data Loader Fall 2016.pdf\" file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55320",
+    "downloadPreload": true
+}

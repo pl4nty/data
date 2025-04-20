@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Channel 9 MSDN Video Interview - Michael Tipping",
+    "downloadDescription": "Michael Tipping interviewed by Channel 9",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "michael_tipping_2004_machine_learning_msr_uk.wmv",
+            "url": "https://download.microsoft.com/download/c/3/0/c3087e80-fa15-4299-9010-728bf252998e/michael_tipping_2004_machine_learning_msr_uk.wmv",
+            "size": "44813606",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Michael Tipping of Microsoft Research in the UK talks about machine learning research for use in the Xbox gaming system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "michael_tipping_2004_machine_learning_msr_uk.wmv"
+    ],
+    "detailsSection_file_size": [
+        "42.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space 5MB. Windows Media Player 9.x or greater",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Longhorn (Windows Code Name) ",
+        "Macintosh",
+        "TabletPC",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows ME",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows Mobile 2003 software for Smartphone  ",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "-Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time. <br /><br />- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": "msdN's Channel 9",
+            "url": "http://channel9.msdn.com"
+        },
+        {
+            "title": "stay Current and Subscribe to MSDN",
+            "url": "http://msdn.microsoft.com/subscriptions/"
+        },
+        {
+            "title": "microsoft Research Home",
+            "url": "http://research.microsoft.com/"
+        },
+        {
+            "title": "microsoft Research Projects",
+            "url": "http://research.microsoft.com/research/projects/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "64",
+    "downloadPreload": true
+}

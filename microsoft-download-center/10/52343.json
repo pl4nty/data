@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "WWMX Client Application",
+    "downloadDescription": "What can you do if you had a large database of location-stamped digital photos? The World-Wide Media eXchange project wants to find out. Last published: November 17, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WWMXClientApplicationSetup.msi",
+            "url": "https://download.microsoft.com/download/f/0/a/f0a9e0fa-07b4-41e6-bcc4-030bf908ff89/WWMXClientApplicationSetup.msi",
+            "size": "1268224",
+            "version": "1.4.1",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "What can you do if you had a large database of location-stamped digital photos? The World-Wide Media eXchange project wants to find out. Install our client and browse our existing database of images. If you register, you can also upload your own geo-coded digital photos to the database for others to browse and comment on.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.1",
+    "detailsSection_file_name": [
+        "WWMXClientApplicationSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52343",
+    "downloadPreload": true
+}

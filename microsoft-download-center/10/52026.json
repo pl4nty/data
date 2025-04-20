@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Avatar Dataset",
+    "downloadDescription": "We introduce a new corpus of descriptions of Xbox avatars created by actual gamers. Last published: June 25, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AvatarDataset.zip",
+            "url": "https://download.microsoft.com/download/f/c/2/fc254e3e-3bf2-42bd-aa61-50eed6d5f708/AvatarDataset.zip",
+            "size": "3176664",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:58:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We introduce a new corpus of descriptions of Xbox avatars created by actual gamers. Each avatar is specified by 19 attributes, including clothing and body type, allowing for more than 10^20 possibilities. Using Amazon Mechanical Turk, we collected literal and sentimental descriptions of complete avatars and many of their component parts. In all, there are over 100K descriptions, including relative and multilingual descriptions, which will support different tasks, such as learning to automatically describe an avatar or generate one from a description.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AvatarDataset.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52026",
+    "downloadPreload": true
+}

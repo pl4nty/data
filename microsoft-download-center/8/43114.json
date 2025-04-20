@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 white paper: Integration with Microsoft Project",
+    "downloadDescription": "In Microsoft Dynamics AX 2012 R3, you can integrate and manage a project in both Microsoft Dynamics AX and the Microsoft Project client application. This integrated experience provides customers with a more robust and efficient project management experience. This white paper presents guidance on using the integrated functionality and information about resolving issues that you might encounter.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 integration with Microsoft Project.pdf",
+            "url": "https://download.microsoft.com/download/3/2/4/324709cb-f739-421c-94bf-5f140d041400/Microsoft Dynamics AX 2012 integration with Microsoft Project.pdf",
+            "size": "2384524",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:24:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the integration of Microsoft Dynamics AX Service Industries and the Microsoft Project client that is available as part of Microsoft Dynamics AX 2012 R3. The objective of this document is to provide partners and customers with guidance on new capabilities and scenarios that are enabled. <br />\r\n<br />\r\nThe integration with Microsoft Project provides provide customers with a more robust and efficient project management experience that includes a number of new capabilities: <br />\r\n\r\n<UL><LI>Create projects and project contracts in Microsoft Dynamics AX by using the Microsoft Project client.</LI>\r\n<LI>Staff projects in the Microsoft Project client by using Microsoft Dynamics AX workers. </LI>\r\n<LI>Automatically derive financial cost and revenue estimates in Microsoft Dynamics AX by using planned work and categories of work specified in Microsoft Project. </LI>\r\n<LI>Replace the work breakdown structure (WBS) of an existing project in Microsoft Dynamics AX with a Microsoft Project plan (MPP file). </LI>\r\n<LI>Open Microsoft Dynamics AX projects in Microsoft Project.</LI>\r\n<LI>Create WBS templates for Microsoft Dynamics AX in the Microsoft Project. </LI>\r\n<LI>Integrate with Microsoft SharePoint Online by creating collaboration workspaces in SharePoint Online and then synchronizing tasks lists in Microsoft Dynamics AX. </LI>\r\n<LI>Use Microsoft Project to create the WBS of project quotations in Microsoft Dynamics AX. </LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 integration with Microsoft Project.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43114",
+    "downloadPreload": true
+}

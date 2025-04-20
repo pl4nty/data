@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "If-This-Then-That Programs and Descriptions Corpus",
+    "downloadDescription": "This download primarily contains a list of URLs with paired natural language descriptions and code, as well as a separate of those URLs into training, development, and test data. Last published: July 27, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "public_release.zip",
+            "url": "https://download.microsoft.com/download/6/f/c/6fca3abe-a465-41d1-9b24-898b39171a82/public_release.zip",
+            "size": "3126961",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download primarily contains a list of URLs with paired natural language descriptions and code, as well as a separate of those URLs into training, development, and test data. In addition, code is included to help the downloader retrieve those URLs and their contents. This data is released in support of the ACL 2015 paper entitled \u201cLanguage to Code: Learning Semantic Parsers for If-This-Then-That Recipes\u201d by Chris Quirk, Raymond Mooney, and Michel Galley.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "public_release.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52326",
+    "downloadPreload": true
+}

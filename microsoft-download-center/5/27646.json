@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Customer Returns",
+    "downloadDescription": "Microsoft Dynamics AX 2009 introduces a dedicated module for handling customer returns. Built on the sales order framework, the return order module allows for handling customer returns in a controlled and efficient manner. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Customer_Returns_in_Microsoft_Dynamics_AX_2009.pdf",
+            "url": "https://download.microsoft.com/download/f/a/8/fa8de62d-b955-4dd4-9ac0-3cc4e115c578/Customer_Returns_in_Microsoft_Dynamics_AX_2009.pdf",
+            "size": "1438236",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics AX 2009 introduces a dedicated process for handling customer returns. This dedicated process has a new document type\u2014the Return order\u2014that is built as a specialization of the sales order. The process specifies a number of steps for receiving, inspecting, and disposing of returned items. This document includes detailed descriptions of: \r\n <UL><LI>Supported processes and scenarios</LI>\n<LI>Important variations to scenarios</LI>\r\n<LI>Effect on inventory costing and on-hand </LI>\r\n<LI>Setup and configuration of the return order module </LI>\n<LI>Reporting and statistics</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Customer_Returns_in_Microsoft_Dynamics_AX_2009.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF format.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27646",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Mesh Connectivity Layer",
+    "downloadDescription": "The Mesh Connectivity Layer (MCL) driver with Link-Quality Source Routing (LQSR). Last published: July 1, 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mclbin.zip",
+            "url": "https://download.microsoft.com/download/e/7/0/e70e0bca-e32d-4fd3-83fe-47a45b5ad0df/mclbin.zip",
+            "size": "1833950",
+            "version": "2.0",
+            "datePublished": "6/13/2024 12:55:34 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Mesh Connectivity Layer (MCL) driver with Link-Quality Source Routing (LQSR). LQSR is a routing protocol for ad-hoc networks. MCL implements a virtual network adapter, so that to the rest of the system the ad-hoc network appears as an additional (virtual) network link.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "mclbin.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52303",
+    "downloadPreload": true
+}

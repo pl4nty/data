@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Diagnostics and Recovery Toolset (DaRT) Documentation Resources Download Page",
+    "downloadDescription": "Downloadable DaRT technical documentation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Diagnostics and Recovery Toolset Overview.pdf",
+            "url": "https://download.microsoft.com/download/a/2/9/a29442fa-a5e0-4a74-8594-6ad59629cadd/Diagnostics and Recovery Toolset Overview.pdf",
+            "size": "3756176",
+            "version": "11/2011",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DaRT 7 Administrator\u2019s Guide.pdf",
+            "url": "https://download.microsoft.com/download/a/2/9/a29442fa-a5e0-4a74-8594-6ad59629cadd/DaRT 7 Administrator\u2019s Guide.pdf",
+            "size": "877087",
+            "version": "11/2011",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DaRT 7 Evaluation Guide.pdf",
+            "url": "https://download.microsoft.com/download/a/2/9/a29442fa-a5e0-4a74-8594-6ad59629cadd/DaRT 7 Evaluation Guide.pdf",
+            "size": "483097",
+            "version": "11/2011",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DaRT 65 Trial Guide.docx",
+            "url": "https://download.microsoft.com/download/a/2/9/a29442fa-a5e0-4a74-8594-6ad59629cadd/DaRT 65 Trial Guide.docx",
+            "size": "2283669",
+            "version": "11/2011",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable DaRT technical documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11/2011",
+    "detailsSection_file_name": [
+        "Diagnostics and Recovery Toolset Overview.pdf",
+        "DaRT 7 Administrator\u2019s Guide.pdf",
+        "DaRT 7 Evaluation Guide.pdf",
+        "DaRT 65 Trial Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.6 MB",
+        "856.5 KB",
+        "471.8 KB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".docx or .pdf file type viewer. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select the document you would like to download and read.",
+    "relatedResourcesSection": [
+        {
+            "title": "daRT 7 Documentation",
+            "url": "http://onlinehelp.microsoft.com/en-us/mdop/gg703303.aspx"
+        },
+        {
+            "title": "daRT 6.5 Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/ee460914.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27754",
+    "downloadPreload": true
+}

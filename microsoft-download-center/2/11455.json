@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2008 Upgrade Advisor",
+    "downloadDescription": "Download the Microsoft SQL Server 2008 Upgrade Advisor.  Upgrade Advisor analyzes instances of SQL Server 2000 and SQL Server 2005 to help you prepare for upgrades to SQL Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SqlUA_ia64.msi",
+            "url": "https://download.microsoft.com/download/8/9/3/89372254-7eb2-400c-94d9-9efad141d81b/SqlUA_ia64.msi",
+            "size": "11407872",
+            "version": "10.00.1600.22",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlUA_x64.msi",
+            "url": "https://download.microsoft.com/download/8/9/3/89372254-7eb2-400c-94d9-9efad141d81b/SqlUA_x64.msi",
+            "size": "9627648",
+            "version": "10.00.1600.22",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SqlUA.msi",
+            "url": "https://download.microsoft.com/download/8/9/3/89372254-7eb2-400c-94d9-9efad141d81b/SqlUA.msi",
+            "size": "9121792",
+            "version": "10.00.1600.22",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2008 Upgrade Advisor analyzes instances of SQL Server 2000 and SQL Server 2005 in preparation for upgrading to SQL Server 2008. Upgrade Advisor identifies feature and configuration changes that might affect your upgrade, and it provides links to documentation that describes each identified issue and how to resolve it.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.00.1600.22",
+    "detailsSection_file_name": [
+        "SqlUA_ia64.msi",
+        "SqlUA_x64.msi",
+        "SqlUA.msi"
+    ],
+    "detailsSection_file_size": [
+        "10.9 MB",
+        "9.2 MB",
+        "8.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>The Microsoft .NET Framework 2.0. This is the same version of the .NET Framework that is included with SQL Server 2008 and Visual Studio 2005.</li>\n  <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">Windows Installer 4.5</a>.</li>\n  <li>SQL Server 2000 Decision Support Objects (DSO) if you are analyzing Analysis Services. You can install DSO from SQL Server 2000 Setup.</li>\n  <li>SQL Server 2000 client components if you are analyzing Data Transformation Services. You can install the client components from SQL Server 2000 Setup.</li>\n  <li>Pentium III-compatible processor or higher, with a processor speed of at least 500 MHz.</li>\n  <li>15 MB of available hard disk space.</li>\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ul>\n  <b>Step 1:</b> Use Add or Remove Programs to remove any previous versions of Upgrade Advisor.<br/><br/>\n  <b>Step 2:</b> For 32-bit platforms, download and install <a href=\"http://go.microsoft.com/fwlink/?LinkId=32168\">the 32-bit version of Microsoft .NET Framework 2.0</a>. For 64-bit platforms (X64 and EMT64 only), download and install <a href=\"http://go.microsoft.com/fwlink/?LinkId=55734\">the 64-bit version of Microsoft .NET Framework 2.0</a>.<br/><br/>\n  <b>Note:</b> If you have already installed SQL Server 2008, you already have Microsoft .NET Framework 2.0.<br/><br/>\n  <b>Step 3:</b> Click <b>Download</b>. The readme file and documentation are installed with Upgrade Advisor.\n</ul><br/>",
+    "additionalInformationSection": "<ul>\n  <li>Upgrade Advisor does not change any configuration settings or data.</li><br/><br/>\n  <li>Upgrade Advisor can analyze remote instances of SQL Server, except for SQL Server Reporting Services. To analyze Reporting Services, Upgrade Advisor must be installed and executed on the report server.</li><br/><br/>\n  <li>Upgrade Advisor provides the UpgradeAdvisorWizardCmd command-prompt utility to help you more easily scan multiple instances of SQL Server. See the Upgrade Advisor documentation for additional information.</li><br/><br/>\n  <li>Uninstalling Upgrade Advisor requires the .NET Framework 2.0. Uninstall Upgrade Advisor before uninstalling the .NET Framework 2.0.</li><br/><br/>\n  <li>If you have questions or comments about Upgrade Advisor, go to the <a href=\"http://go.microsoft.com/fwlink/?LinkID=123371\">SQL Server Setup & Upgrade Forum</a>.</li>\n</ul><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=123358"
+        },
+        {
+            "title": "home page for Microsoft SQL Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=123357"
+        },
+        {
+            "title": "sql Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=123370"
+        },
+        {
+            "title": "looking for new downloads? Sign up to be notified.",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=74520"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11455",
+    "downloadPreload": true
+}

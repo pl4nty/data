@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Office Communicator Web Access: Microsoft Office Communicator Web Access Technical Reference Guide",
+    "downloadDescription": "This guide provides reference and troubleshooting information for administrators who are deploying or have deployed Microsoft\u00ae Office Communicator Web Access.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CommunicatorWebAccess_TechnicalReference.doc",
+            "url": "https://download.microsoft.com/download/1/c/2/1c219f1e-108e-4783-be11-9760595b7a5e/CommunicatorWebAccess_TechnicalReference.doc",
+            "size": "514560",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This guide provides reference and troubleshooting information for administrators who are deploying or have deployed Communicator Web Access. The information in this guide supplements the information contained in the Microsoft Office Communicator Web Access Planning and Deployment Guide.  <br /><br />\nThis guide contains the following sections:\n<ul><br />\n<li>Active Directory objects and attributes that are used or modified by Communicator Web Access.</li><br />\n<li>Permissions required to install and activate Communicator Web Access.</li><br />\n<li>Certificates that must be installed.</li><br />\n<li>Ports that are used by Communicator Web Access.</li><br />\n<li>Windows Management Instrumentation (WMI) settings.</li><br />\n<li>Steps for manually removing Communicator Web Access.</li><br />\n<li>Errors and events.</li><br />\n<li>Troubleshooting tools and scenarios.</li><br /></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CommunicatorWebAccess_TechnicalReference.doc"
+    ],
+    "detailsSection_file_size": [
+        "502.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li><b>This download works with the following Office applications:</b></li><br />\n<ul><br />\n<li>Microsoft Office Word 2003</li><br />\n<li>Microsoft Word 2002</li><br />\n</ul><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>CommunicatorWebAccess_TechnicalReference.doc</b> to open the document. </li>\n</ol>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file CommunicatorWebAccess_TechnicalReference.doc.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office Live",
+            "url": "http://www.microsoft.com/office/officelive/default.mspx"
+        },
+        {
+            "title": "live Communications Server Newsgroups",
+            "url": "http://www.microsoft.com/technet/community/newsgroups/server/livecomm.mspx"
+        },
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        },
+        {
+            "title": "live Communications Server Deployment Resources",
+            "url": "http://office.microsoft.com/en-us/FX011450741033.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11588",
+    "downloadPreload": true
+}

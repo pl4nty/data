@@ -1,0 +1,162 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2010 Cumulative Update 8",
+    "downloadDescription": "BizTalk Server 2010 Cumulative Update 8",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-FRA.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-FRA.exe",
+            "size": "19714568",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-DEU.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-DEU.exe",
+            "size": "19704840",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-ENU.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-ENU.exe",
+            "size": "17953816",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-ESP.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-ESP.exe",
+            "size": "19661336",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-JPN.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-JPN.exe",
+            "size": "19680264",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-CHT.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-CHT.exe",
+            "size": "19588632",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-KOR.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-KOR.exe",
+            "size": "19639304",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-ITA.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-ITA.exe",
+            "size": "19682840",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BiztalkServer2010-RTM-KB3081737-CHS.exe",
+            "url": "https://download.microsoft.com/download/8/d/c/8dcab410-70f9-405b-996c-9f1c2b49908b/BiztalkServer2010-RTM-KB3081737-CHS.exe",
+            "size": "19636232",
+            "version": "3.9.668.2",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "br-fr",
+            "name": "Breton - France"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        }
+    ],
+    "detailsSection": "BizTalk Server 2010 Cumulative Update 8",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.9.668.2",
+    "detailsSection_file_name": [
+        "BiztalkServer2010-RTM-KB3081737-FRA.exe",
+        "BiztalkServer2010-RTM-KB3081737-DEU.exe",
+        "BiztalkServer2010-RTM-KB3081737-ENU.exe",
+        "BiztalkServer2010-RTM-KB3081737-ESP.exe",
+        "BiztalkServer2010-RTM-KB3081737-JPN.exe",
+        "BiztalkServer2010-RTM-KB3081737-CHT.exe",
+        "BiztalkServer2010-RTM-KB3081737-KOR.exe",
+        "BiztalkServer2010-RTM-KB3081737-ITA.exe",
+        "BiztalkServer2010-RTM-KB3081737-CHS.exe"
+    ],
+    "detailsSection_file_size": [
+        "18.8 MB",
+        "18.8 MB",
+        "17.1 MB",
+        "18.8 MB",
+        "18.8 MB",
+        "18.7 MB",
+        "18.7 MB",
+        "18.8 MB",
+        "18.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2008, Windows Server 2008 R2, Windows Vista\r\n\r\n* SQL Server 2008 R2 or SQL Server 2008 SP1\r\n* Microsoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)\r\n* Microsoft Visual Studio 2010 [Required for selected features only]\r\n* Microsoft Office Excel 2010 or 2007 [Required for selected features only]\r\n* SQL Server 2005 Notification Service [Required for selected features only]\r\n* SQLXML 4.0 with Service Pack 1 [Required for selected features only]\r\n* Internet Information Services (IIS) Version 7.5 and 7.0 [Required for selected features only]\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "* CUs for all languages are available for download. BizTalk Server CUs are language specific. Download the appropriate language version of BiztalkServer2010-RTM-KB3081737.\r\n\r\n* Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48592",
+    "downloadPreload": true
+}

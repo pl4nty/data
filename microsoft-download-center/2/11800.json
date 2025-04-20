@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Driver Kit Version 7.1.0",
+    "downloadDescription": "The Windows Driver Kit (WDK) Version 7.1.0 is an update to the WDK 7.0.0 release and contains the tools, code samples, documentation, compilers, headers and libraries with which software developers create drivers for Windows 7, Windows Vista, Windows XP, Windows Server 2008 R2, Windows Server 2008, and Windows Server 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GRMWDK_EN_7600_1.ISO",
+            "url": "https://download.microsoft.com/download/4/a/2/4a25c7d5-efbe-4182-b6a9-ae6850409a78/GRMWDK_EN_7600_1.ISO",
+            "size": "649877504",
+            "version": "7.1.0",
+            "datePublished": "7/15/2024 3:15:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Driver Kit (WDK) Version 7.1.0 is an update to the WDK 7.0.0 release and contains the tools, code samples, documentation, compilers, headers and libraries with which software developers create drivers for Windows 7, Windows Vista, Windows XP, Windows Server 2008 R2, Windows Server 2008, and Windows Server 2003. This development kit does not contain device drivers for your personal computer. If you are looking for drivers for your personal computer, go to Microsoft Update for downloads, or visit Windows Hardware Help for more information to find device drivers and hardware.\r\n\r\nA working knowledge of C programming is necessary to use this kit to develop Windows drivers.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.0",
+    "detailsSection_file_name": [
+        "GRMWDK_EN_7600_1.ISO"
+    ],
+    "detailsSection_file_size": [
+        "619.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:\r\n\r\n\u2022 Windows 7\r\n\u2022 Windows Server 2008\r\n\u2022 Windows Server 2008 R2\r\n\u2022 Windows Vista (all versions)\r\n\u2022 Windows Server 2003 with Service Pack 1 (SP1) or later\r\n\u2022 Windows Server 2003 x64 editions\r\n\u2022 Windows XP Service Pack 3 (SP3) or later \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "This download is available to customers running genuine Microsoft Windows. Click the Continue button in the Validation Required section above to begin the short validation process. Once validated, you will be returned to this page with specific instructions for obtaining the download. \r\n\r\nThis release of the Windows Driver Kit is available only as a DVD ISO image. It is recommended that you download the ISO image and then burn a DVD. Your machine must have DVD burning software installed.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11800",
+    "downloadPreload": true
+}

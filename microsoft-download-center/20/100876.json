@@ -1,0 +1,149 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Dynamics CRM 2015 (KB 4539447)",
+    "downloadDescription": "Microsoft has released Update for Microsoft Dynamics CRM 2015 (KB 4539447). ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CRM2015-Server-KB4539447-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/4/2/7/42752ae6-4ad0-4230-a134-cfbc1d65ac2c/CRM2015-Server-KB4539447-ENU-Amd64.exe",
+            "size": "121743808",
+            "version": "07.00.0003.0152",
+            "datePublished": "7/15/2024 4:21:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        }
+    ],
+    "detailsSection": "\n      Microsoft has released Update for Microsoft Dynamics CRM 2015 (KB 4539447) for Microsoft Dynamics CRM 2015 Server.<br /><br />\n      For more information about this update, see <a href=\"https://support.microsoft.com/en-us/help/4539447\">Update 0.3 for Microsoft Dynamics CRM 2015 On Premise 7.0</a>.\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4539447)",
+        "name": "KB4539447)"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "07.00.0003.0152",
+    "detailsSection_file_name": [
+        "CRM2015-Server-KB4539447-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "116.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update must be installed on a computer that is running Microsoft Dynamics 2015 Server.\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "\n      Click Download, and then select the file you want to download from the list.\n\n      <ol>\n        <li>\n          To start the installation immediately, click <b>Run</b>.\n        </li>\n        <li>\n          To save the download to your computer for installation later, click <b>Save</b>.\n        </li>\n        <li>\n          To cancel the download, click <b>Cancel</b>.\n        </li>\n      </ol>\n    ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100876",
+    "downloadPreload": true
+}

@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 R2 Enterprise Edition x64 (Full Install) VHD",
+    "downloadDescription": "This download comes as a pre-configured VHD. This download enables you evaluate Microsoft Windows Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "README.htm",
+            "url": "https://download.microsoft.com/download/5/4/c/54c15fa1-b3aa-4a8b-b26c-47c3ba7a20e0/README.htm",
+            "size": "56408",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TestDriveProgramEULAWS2008.htm",
+            "url": "https://download.microsoft.com/download/5/4/c/54c15fa1-b3aa-4a8b-b26c-47c3ba7a20e0/TestDriveProgramEULAWS2008.htm",
+            "size": "174907",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WS2008R2Fullx64Ent.part02.rar",
+            "url": "https://download.microsoft.com/download/5/4/c/54c15fa1-b3aa-4a8b-b26c-47c3ba7a20e0/WS2008R2Fullx64Ent.part02.rar",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WS2008R2Fullx64Ent.part01.exe",
+            "url": "https://download.microsoft.com/download/5/4/c/54c15fa1-b3aa-4a8b-b26c-47c3ba7a20e0/WS2008R2Fullx64Ent.part01.exe",
+            "size": "734003200",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WS2008R2Fullx64Ent.part03.rar",
+            "url": "https://download.microsoft.com/download/5/4/c/54c15fa1-b3aa-4a8b-b26c-47c3ba7a20e0/WS2008R2Fullx64Ent.part03.rar",
+            "size": "615452011",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft VHD Test Drive Program provides customers a flexible, extensible and supported evaluation experience requiring minimal hardware and IT overhead.  You can access the catalog of pre-configured Microsoft solutions in VHD format for test, evaluation, demonstration, training & education and proof of concept from <a href=\"../vhd\">www.microsoft.com/vhd</a>. <br />\r\n<br /> \r\nThis download helps you evaluate the new features of Windows Server 2008 R2. You\u2019ll have the opportunity to try new and improved features and functionality of Windows Server 2008 R2 free for 180 days. Windows Server 2008 R2 builds on the award-winning foundation of Windows Server 2008, expanding existing technology and adding new features to enable IT professionals to increase the reliability and flexibility of their server infrastructures. New virtualization tools, Web resources, management enhancements, and exciting Windows 7 integration help save time, reduce costs, and provide a platform for a dynamic and efficiently managed data center. Powerful tools such as Internet Information Services (IIS) version 7.5, updated Server Manager and Hyper-V platforms and Windows PowerShell version 2.0 combine to give customers greater control, increased efficiency and the ability to react to front-line business needs faster than ever before.  To find out more about Windows Server 2008 R2, please visit the <a href=\"http://www.microsoft.com/windowsserver2008/en/us/overview.aspx\">product homepage</a>.\r\nPlease note that this product is available for evaluation purposes only and should not be used in a production environment.\r\n\r\n<br />\r\nThis is a preconfigured virtual machine set contained within the Virtual Hard Disk (VHD) format.  Windows Server 2008 Hyper-V, Microsoft Hyper-V Server 2008, or the R2 versions of these products is required to use this virtual machine.  Please refer to the system requirements section for more details.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "README.htm",
+        "TestDriveProgramEULAWS2008.htm",
+        "WS2008R2Fullx64Ent.part02.rar",
+        "WS2008R2Fullx64Ent.part01.exe",
+        "WS2008R2Fullx64Ent.part03.rar"
+    ],
+    "detailsSection_file_size": [
+        "55.1 KB",
+        "170.8 KB",
+        "700.0 MB",
+        "700.0 MB",
+        "586.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 Hyper-V is required to use this virtual machine<br />\r\n\r\nIn addition to the system requirements for Windows Server 2008 as described in the release notes, a 64-bit system with hardware-assisted virtualization enabled and data execution prevention (DEP) is required. <br />\r\nIt is also recommended to ensure that you have a clean install of x64 edition of Windows Server 2008 to be able to use the Hyper-V technology.<br />\r\nPrerequisites, installation steps, OS recommendations, and known issues of Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc534980.aspx\">here</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "In order to use this evaluation package you will need to have Microsoft Hyper-V installed on a physical machine.<br />\r\nHyper-V is available on Windows Server 2008 only and the details on how to install Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc732470.aspx\">here</a>. Details of how to setup the VHD are included in the documentation that accompanies the product.<br />\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2227",
+    "downloadPreload": true
+}

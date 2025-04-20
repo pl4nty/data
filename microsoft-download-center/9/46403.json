@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Infrastructure As Code: Fueling The Fire For Faster Application Delivery - Forrester TLP",
+    "downloadDescription": "This Forrester Thought Leadership Paper (TLP) evaluates the hypothesis that infrastructure as code (IaC) is indeed core to DevOps and that adopting IaC principles helps companies of all sizes accelerate software delivery.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Forrester Infra as code TLP_April_2015.pdf",
+            "url": "https://download.microsoft.com/download/f/7/b/f7b32c0c-4dd9-4d78-9cb8-cc2253273bbf/Forrester Infra as code TLP_April_2015.pdf",
+            "size": "223148",
+            "version": "1",
+            "datePublished": "7/15/2024 3:50:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Leading companies rely heavily on software applications to win, serve, and retain customers. But faster delivery of applications is challenging for both infrastructure and operations (i.e., Ops) professionals and application development and delivery (i.e., Dev) teams. Both are under pressure to increase speed without compromising quality. To maximize their efforts, neither team can go it alone \u2014 they must work together to find a common set of processes and tools that help them both. This is the core of the DevOps movement. \r\n<br /><br />\r\nTreating infrastructure as code (IaC) is a key element of DevOps, and it benefits both teams. This Forrester Thought Leadership Paper (TLP) evaluates the hypothesis that IaC is indeed core to DevOps and that adopting IaC principles helps companies of all sizes accelerate software delivery. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Forrester Infra as code TLP_April_2015.pdf"
+    ],
+    "detailsSection_file_size": [
+        "217.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8, Windows 7, Windows NT, Windows Vista\r\nAdobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX",
+        "Linux",
+        "Windows 7 Enterprise",
+        "Windows 7 Enterprise N",
+        "Windows 8 Enterprise",
+        "Windows 8.1",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please open this file with Adobe Acrobat Reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46403",
+    "downloadPreload": true
+}

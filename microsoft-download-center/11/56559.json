@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 1801+ Management Pack for Service Management Automation",
+    "downloadDescription": "Release of Microsoft System Center 1801+ Management Pack for Orchestrator - Service Management Automation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Service Management Automation.msi",
+            "url": "https://download.microsoft.com/download/b/f/5/bf597257-151c-40fc-b569-a7efb4a58c76/Microsoft System Center Management Pack for Service Management Automation.msi",
+            "size": "3674112",
+            "version": "7.4.48.0",
+            "datePublished": "7/15/2024 4:51:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_Orch1801_SMA_Guide.doc",
+            "url": "https://download.microsoft.com/download/b/f/5/bf597257-151c-40fc-b569-a7efb4a58c76/OpsMgr_MP_Orch1801_SMA_Guide.doc",
+            "size": "458240",
+            "version": "7.4.48.0",
+            "datePublished": "7/15/2024 4:51:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft System Center 1801+ Management Pack for Orchestrator - Service Management Automation monitors the health and availability of Microsoft System Center Orchestrator 1801 - Service Management Automation, and future releases, web services and runbook workers. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<ul>\r\n<li> Discovery of Worker servers, Web Services, and their relevant properties.  </li>\r\n<li> Monitoring and collection of counters indicating the performance of both Worker servers and Web Services.  Includes alerting in case of performance degradation.  </li>\r\n<li> Monitoring and collection of message queue length indicating runbook jobs waiting to be run.  </li>\r\n<li> Collection of events indicating different runbook operations such as runbooks being created or started.  </li>\r\n<li> Collection of events indicating change in status of a job such as started, suspended, and failed.    </li>\r\n<li> Alerting in response to events indicating different runbook operations such as runbooks failing.  </li>\r\n<li> Proactive monitoring of the availability of each Web Service.  </li>\r\n<li> Proactive monitoring of the availability of the SMA database.  </li>\r\n </ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>8 February, 2018- Initial release, version 7.4.48.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.4.48.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Service Management Automation.msi",
+        "OpsMgr_MP_Orch1801_SMA_Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB",
+        "447.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Requirements:</b> </li>\r\n<ul>\r\n<li> System Center 1801 Operations Manager and future releases</li>\r\n<li> RAM \u2013 minimum 1GB recommended 2GB</li>\r\n<li> Disk space minimum 200MB</li>\r\n<li> CPU Dual Core or better</li>\r\n<li> .Net 3.5</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the three MP files to your computer by running the .exe. <br/>\r\n<ul>\r\nMicrosoft.SystemCenter.1801+.ServiceManagementAutomation.mp <br/>\r\nMicrosoft.SystemCenter.ServiceManagementAutomation.Dashboards.mp <br/>\r\nMicrosoft.SystemCenter.ServiceManagementAutomation.Library.mp <br/>\r\n</ul>\r\nOnce you have reviewed the Monitoring Pack Guide and meet the prerequisites for the Monitoring Pack for System Center 1801+ Orchestrator - Service Management Automation you can import this management pack module using the Microsoft Operations Manager administrative console and following these steps. The MP file \u201cMicrosoft.SystemCenter.ServiceManagementAutomation.Library.mp\u201d should be imported first. <br/>\r\n<br/>\r\n<ul>\r\n<li> Open the Microsoft Operations Manager Operator console </li>\r\n<li> Click on the Administrator pane at the bottom left corner  </li>\r\n<li> Expand the Management Packs node in the tree view  </li>\r\n<li> Click on the Import Management Pack on the \u201cActions\u201d pane on the right and then browse to the folder where you extracted the MP and then import it.  </li>\r\n<li> Follow the instructions until you have finished importing the management pack module.  </li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56559",
+    "downloadPreload": true
+}

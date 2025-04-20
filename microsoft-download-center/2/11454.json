@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Office Migration Planning Manager (OMPM): Office Compatibility",
+    "downloadDescription": "The Office Migration Planning Manager (OMPM) 2010 is a group of tools designed to help administrators during the planning and testing phases of a Microsoft Office 2010 or Office 365 deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeCompatUpdate1_ReleaseNotes.docx",
+            "url": "https://download.microsoft.com/download/8/3/1/83139278-613d-462d-aa09-dab786081d26/OfficeCompatUpdate1_ReleaseNotes.docx",
+            "size": "636034",
+            "version": "2.2",
+            "datePublished": "7/15/2024 3:05:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeCompatUpdate1_ReleaseNotes.xps",
+            "url": "https://download.microsoft.com/download/8/3/1/83139278-613d-462d-aa09-dab786081d26/OfficeCompatUpdate1_ReleaseNotes.xps",
+            "size": "330518",
+            "version": "2.2",
+            "datePublished": "7/15/2024 3:05:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MigrationPlanningManager2010Update1.exe",
+            "url": "https://download.microsoft.com/download/8/3/1/83139278-613d-462d-aa09-dab786081d26/MigrationPlanningManager2010Update1.exe",
+            "size": "2204760",
+            "version": "2.2",
+            "datePublished": "7/15/2024 3:05:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Office Migration Planning Manager (OMPM) 2010 is a group of tools designed to help administrators during the planning and testing phases of a Microsoft Office 2010 or Office 365 deployment.<br />\r\n<br />\r\nOMPM assists administrators in the discovery and compatibility assessment of existing Office documents for conversion from the binary document formats (.doc, .xls, etc.) to OpenXML formats (.docx, .xlsx, etc.). Additionally, OMPM 2010 adds features to assess macro compatibility with Office 2010 and 64 bit Office compatibility. The toolkit also contains the Office File Converter (OFC), which enables bulk document conversions from binary to OpenXML formats, and a Version Extraction Tool (VET) to extract saved file versions.<br />\r\n<br />\r\nThe goal of the tool set is to help administrators understand the number and types of Microsoft Office files in their environment and effectively plan for a smooth rollout of the new version of Microsoft Office and conversion of required files to the OpenXML formats.  Note it is not necessary nor recommended to convert all existing files when upgrading.<br />\r\n<br />\r\nRefer to the <a href=\"http://technet.microsoft.com/en-us/library/ff453909.aspx\">Office Migration Planning Manager reference</a> for further information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2",
+    "detailsSection_file_name": [
+        "OfficeCompatUpdate1_ReleaseNotes.docx",
+        "OfficeCompatUpdate1_ReleaseNotes.xps",
+        "MigrationPlanningManager2010Update1.exe"
+    ],
+    "detailsSection_file_size": [
+        "621.1 KB",
+        "322.8 KB",
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Client Computer Requirements</b><br />\r\n<br/>\r\n<ul><b>Supported Internet browser:</b> Internet Explorer 5.0 or later versions.<br/>\r\n<br/>\r\n<b>Microsoft Office:</b> Microsoft Office does not have to be installed on the client computer to be scanned, except if performing deep scans of Access files, which requires Access 2007 or later versions.<br />\r\n<br/>\r\n<b>Additional components:</b><br/>\r\nAll computers that contain files to convert are required by the Office File Converter (OFC) to have the Microsoft Office Compatibility Pack installed. For more information, see <a href=\"http://technet.microsoft.com/en-us/library/cc179023(office.12).aspx\">Deploying the Microsoft Office Compatibility Pack.</a><br/>\r\n<br/>\r\nThe Version Extraction Tool (VET) requires installation of <a href=\"http://go.microsoft.com/fwlink/?LinkId=81886\">Microsoft .NET Framework Version 2.0 Redistributable Package (x86)</a> and Microsoft Word 2003.<br/></ul>\r\n<br/>\r\n<b>Administrative Computer Requirements</b><br/>\r\n<br/>\r\n<ul><b>Supported database components:</b> Microsoft\u00ae SQL Server 2008 R2, Microsoft\u00ae SQL Server 2008, Microsoft\u00ae SQL Server 2005, Microsoft\u00ae SQL Server 2008 R2 Express Edition, Microsoft\u00ae SQL Server 2008 Express Edition, Microsoft\u00ae SQL Server 2005 Express Edition. Use of versions higher than SQL Server 2005 require use of the Microsoft SQL Server 2005 Backward Compatibility Components available in the SQL Server 2008 Feature pack. The database must have Microsoft SQLXML 3.0 SP3 or higher installed, also available in the SQL Server Feature Pack. Only English edition is supported.<br/>\r\n<br/>\r\n<b>Supported report components:</b> To use the Reporting Tool you will need Microsoft Office Access 2007, Microsoft Office Access 2010 or the Access 2007 or 2010 runtime. The Access runtime is available as a free download.<br/>\r\n<br/>\r\n<b>File share:</b> Required to stage XML log files collected by OMPM File Scanner. Needs read/write/create permissions. At least 1 GB of space.<br/>\r\n<br/>\r\n<b>Document storage systems:</b> Web-based Distributing Authoring and Versioning IIS 6.0 required<br/>\r\n<br/>\r\nRefer to the <a href=\"http://technet.microsoft.com/en-us/library/ff453909.aspx\">Office Migration Planning Manager reference</a> for further information.</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<br/>\r\n<b>To install this download:</b><br/>\r\n<ol><li>Download MigrationPlanningManager.exe by clicking the Download button and saving the file to your hard disk.</li><br/>\r\n<li>Run MigrationPlanningManager2010Update1.exe to extract the OMPM 2010 files to a location on your computer, such as c:\\OMPM</li><br/>\r\n<li>Refer to the <a href=\"http://technet.microsoft.com/en-us/library/ff453909.aspx\">Office Migration Planning Manager reference</a> for further information.</li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "office Migration Planning Manager(OMPM) user's guide for Office 2010",
+            "url": "http://go.microsoft.com/?linkid=9739562"
+        },
+        {
+            "title": "compatibility Resource Center for Office 2010 (Office Springboard Top Task)",
+            "url": "http://go.microsoft.com/?linkid=9778828"
+        },
+        {
+            "title": "office 2010 application compatibility guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=177407"
+        },
+        {
+            "title": "upgrading Solutions to Office 2010 with Application Compatibility Tools and Guidance",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=178588"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11454",
+    "downloadPreload": true
+}

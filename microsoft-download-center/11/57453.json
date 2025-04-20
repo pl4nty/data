@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Set up Oracle 12c on Linux VM in Azure",
+    "downloadDescription": "Step-by-step walkthrough",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure VM - Oracle 12c on Linux - Configuration Steps.pdf",
+            "url": "https://download.microsoft.com/download/7/a/4/7a461726-2669-4cbd-bd8f-30635a137d89/Azure VM - Oracle 12c on Linux - Configuration Steps.pdf",
+            "size": "779317",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:05:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Set up Oracle 12c on Linux VM in Azure Step-by-step walkthrough",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure VM - Oracle 12c on Linux - Configuration Steps.pdf"
+    ],
+    "detailsSection_file_size": [
+        "761.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To start the download, click Download, click Go, and then do one of the following: To start the installation immediately, click Open or Run this program from its current location. To copy the download to your computer for installation at a later time, click Save or Save this program to disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57453",
+    "downloadPreload": true
+}

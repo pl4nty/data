@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "June 2016 update for Lync 2010 64 bit (KB3171499)",
+    "downloadDescription": "This download includes all available updates for Lync 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync.msp",
+            "url": "https://download.microsoft.com/download/d/7/c/d7c3e817-88e7-4796-81fd-b773c8f6f807/Lync.msp",
+            "size": "23445504",
+            "version": "7577.4504",
+            "datePublished": "7/15/2024 3:10:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download for Microsoft Lync 2010 is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/3165438\">3165438</A>. \n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3072611",
+        "name": "KB3072611"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7577.4504",
+    "detailsSection_file_name": [
+        "Lync.msp"
+    ],
+    "detailsSection_file_size": [
+        "22.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office program:</b></li><br />\n<ul><li>Microsoft Lync 2010</li></ul>\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button and saving the file to your hard disk. </li>\n</ol>\n<br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "additional Lync Server and Skype for Business Server configuration required after you install Security Bulletin MS16-065 ",
+            "url": "https://support.microsoft.com/en-us/kb/3165438"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14490",
+    "downloadPreload": true
+}

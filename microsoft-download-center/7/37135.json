@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 IPv6 Test Plan",
+    "downloadDescription": "Plan to test IPv6 connectivity to Office 365. This test plan is recommended for all Enterprise and Government SKUs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office365_IPv6TestPlan.docx",
+            "url": "https://download.microsoft.com/download/9/3/9/9398f37d-9d9b-488c-b9e2-def617204f13/Office365_IPv6TestPlan.docx",
+            "size": "411143",
+            "version": "March2013",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Plan to test IPv6 connectivity to Office 365. This test plan is recommended for all Enterprise and Government SKUs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2013",
+    "detailsSection_file_name": [
+        "Office365_IPv6TestPlan.docx"
+    ],
+    "detailsSection_file_size": [
+        "401.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "networking and Naming Services Planning",
+            "url": "http://technet.microsoft.com/en-us/library/hh852551.aspx"
+        },
+        {
+            "title": "office 365 Deployment Center",
+            "url": "http://deployoffice365.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "37135",
+    "downloadPreload": true
+}

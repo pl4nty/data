@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Procedures for Performing a Disaster Recovery Failover in Lync Server 2010, Group Chat",
+    "downloadDescription": "This document guides you through failing over Group Chat Server from one pool to another when there has been a disaster or a failure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LS10_Group_Chat_Disaster_Recovery_Procedures.docx",
+            "url": "https://download.microsoft.com/download/4/e/6/4e6e35f4-f83c-4f7e-b62e-54112523b7b2/LS10_Group_Chat_Disaster_Recovery_Procedures.docx",
+            "size": "2261142",
+            "version": "Sept2011",
+            "datePublished": "7/15/2024 3:16:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper addresses two failure scenarios. The first scenario provides the steps for failing over a Group Chat Server to another Group Chat Server connected to the same Lync Server Front End pool. The second scenario provides the steps required to recover a Group Chat environment to a Group Chat Server that is connected to a second Lync Server Front End pool. Also included is information about how to run the Group Chat Configuration tool.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Sept2011",
+    "detailsSection_file_name": [
+        "LS10_Group_Chat_Disaster_Recovery_Procedures.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27564",
+    "downloadPreload": true
+}

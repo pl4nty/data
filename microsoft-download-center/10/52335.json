@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "LCSC Managed Code Benchmark",
+    "downloadDescription": "lcscbench is based on the front end of a compiler for C# written in C# and uses a generalized LR (GLR) parsing algorithm. Last published: July 20, 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "lcscbench10.zip",
+            "url": "https://download.microsoft.com/download/e/0/3/e03aacef-3007-4d7c-afcd-1ddbad97fe3d/lcscbench10.zip",
+            "size": "486944",
+            "version": "1.0",
+            "datePublished": "6/13/2024 1:00:01 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "lcscbench is based on the front end of a compiler for C# written in C# and uses a generalized LR (GLR) parsing algorithm. lcscbench is compute and memory intensive, requiring hundreds of megabytes of heap for the largest input file provided (a C# source file with 125,000 lines of code). The source contains approximately 17,000 lines of code if machine-generated code is not counted. It has been tested with the CLR version 1.0.3705 and Rotor version 1.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "lcscbench10.zip"
+    ],
+    "detailsSection_file_size": [
+        "475.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52335",
+    "downloadPreload": true
+}

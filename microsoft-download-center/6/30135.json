@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework Repair Tool",
+    "downloadDescription": "This tool detects and tries to fix some frequently occurring issues with the setup of Microsoft .NET Framework or with updates to the Microsoft .NET Framework.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "NetFxRepairTool.exe",
+            "url": "https://download.microsoft.com/download/2/b/d/2bde5459-2225-48b8-830c-ae19caf038f1/NetFxRepairTool.exe",
+            "size": "1260536",
+            "version": "1.4",
+            "datePublished": "7/15/2024 4:21:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool troubleshoots common issues with the setup of Microsoft .NET Framework or with updates to Microsoft .NET Framework setup installation.  Additionally, this tool tries to resolve these issues by applying known fixes or by repairing the installed product. \r\n<br/>\r\n<br/>\r\n<b>Note: <i>The current version of the tool supports repairing the .NET Framework 4.8, 4.7.2, 4.7.1, 4.7, 4.6.2, 4.6.1, 4.6, 4.5.2, 4.5.1, 4.5, 4.0 and 3.5 SP1 (includes .NET 3.0 SP2 and .NET 2.0 SP2).</i></b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2698555",
+        "name": "KB2698555"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4",
+    "detailsSection_file_name": [
+        "NetFxRepairTool.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br /> <B>Note:</B> More information about Service Pack levels currently supported for the platforms listed above can be found in the following page: <a href=\"http://go.microsoft.com/fwlink/?LinkId=164675\">Microsoft Product Support Lifecycle</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download </b>button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?linkid=254903\">KB2698555</a> for more information. ",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2698555",
+            "url": "http://go.microsoft.com/fwlink/?linkid=254903"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30135",
+    "downloadPreload": true
+}

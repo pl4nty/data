@@ -1,0 +1,868 @@
+{
+    "error": "",
+    "downloadTitle": "WHDC Legacy Documents",
+    "downloadDescription": "Legacy documents for the Windows Hardware and Driver Central website",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "wireless5ghz.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/wireless5ghz.zip",
+            "size": "9810565",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StockholmMtg.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/StockholmMtg.zip",
+            "size": "10464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HouMtg.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/HouMtg.zip",
+            "size": "5634",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HiltonHeadmtg.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/HiltonHeadmtg.zip",
+            "size": "10189",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HelsinkiMtg.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/HelsinkiMtg.zip",
+            "size": "13536",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5GHz-Stockholm.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5GHz-Stockholm.zip",
+            "size": "2410984",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5GHz-Seattle.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5GHz-Seattle.zip",
+            "size": "1053356",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5GHz-SD.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5GHz-SD.zip",
+            "size": "328432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5ghz-monterey.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5ghz-monterey.zip",
+            "size": "7250295",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5GHz-Hou.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5GHz-Hou.zip",
+            "size": "919146",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5GHz-HH.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5GHz-HH.zip",
+            "size": "26899",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "5GHz-Helsinki.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/5GHz-Helsinki.zip",
+            "size": "4254771",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "APM12_CH.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/APM12_CH.rtf",
+            "size": "1382899",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hwlogov1-1.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/hwlogov1-1.doc",
+            "size": "667136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LFreeACPI.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/LFreeACPI.doc",
+            "size": "74240",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HWlogo2_Faq.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/HWlogo2_Faq.doc",
+            "size": "61952",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StoPMSpc.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/StoPMSpc.rtf",
+            "size": "74767",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HWLogoFAQ1_1.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/HWLogoFAQ1_1.doc",
+            "size": "250368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NTSDG_withindex.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/NTSDG_withindex.doc",
+            "size": "1245184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PNPISA.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/PNPISA.rtf",
+            "size": "1155312",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hwlogo2-prn.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/hwlogo2-prn.doc",
+            "size": "1076736",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "umud10.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/umud10.rtf",
+            "size": "116358",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "devids.txt",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/devids.txt",
+            "size": "24551",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ISAW2.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/ISAW2.doc",
+            "size": "61952",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Inpmspc.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Inpmspc.rtf",
+            "size": "72591",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VMR Deinterlacing_v85.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/VMR Deinterlacing_v85.doc",
+            "size": "120832",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Authenticode.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Authenticode.doc",
+            "size": "93184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "COMPMSpc.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/COMPMSpc.rtf",
+            "size": "120074",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "USBTelephony-v091.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/USBTelephony-v091.doc",
+            "size": "1338368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Designing Hardware for Surprise Removal_v8.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Designing Hardware for Surprise Removal_v8.doc",
+            "size": "109056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DX8-PointSprite.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DX8-PointSprite.doc",
+            "size": "58880",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AudPMSpc.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/AudPMSpc.rtf",
+            "size": "66434",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NTSDGV1.DOC",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/NTSDGV1.DOC",
+            "size": "1084928",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSColorCaseStudy.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/MSColorCaseStudy.doc",
+            "size": "178176",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hdg_3.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/hdg_3.doc",
+            "size": "1127424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Analog Audio Classification Using Device Impedance Characteristics.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Analog Audio Classification Using Device Impedance Characteristics.doc",
+            "size": "1686016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PNPSCSI.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/PNPSCSI.rtf",
+            "size": "478862",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "atamed.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/atamed.rtf",
+            "size": "44786",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "apm12faq.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/apm12faq.rtf",
+            "size": "20346",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DspPMSpc.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DspPMSpc.rtf",
+            "size": "64102",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "pciidspec-11.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/pciidspec-11.doc",
+            "size": "126464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsMe_S4OS.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/WindowsMe_S4OS.doc",
+            "size": "230912",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SDG3.chm",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/SDG3.chm",
+            "size": "268107",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPCR_Tbl-v100.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/SPCR_Tbl-v100.doc",
+            "size": "99840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mmc_cd-dvd.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/mmc_cd-dvd.doc",
+            "size": "337408",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AmstMtg.xls",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/AmstMtg.xls",
+            "size": "17920",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GDIplus_Metadata.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/GDIplus_Metadata.doc",
+            "size": "114176",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "hid-sensors-usages (archive).docx",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/hid-sensors-usages (archive).docx",
+            "size": "614595",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DVDregion.txt",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DVDregion.txt",
+            "size": "17354",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Minutes-5GWIAG-Monterey.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Minutes-5GWIAG-Monterey.doc",
+            "size": "80896",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WHQL_Submission_ReadMe.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/WHQL_Submission_ReadMe.doc",
+            "size": "90112",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "pnpcom.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/pnpcom.rtf",
+            "size": "145636",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Cable_Architecture.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Cable_Architecture.doc",
+            "size": "1412096",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "translate.pdf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/translate.pdf",
+            "size": "136443",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EMS.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/EMS.doc",
+            "size": "245760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MFPRecommendations.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/MFPRecommendations.doc",
+            "size": "530432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SpecGuide_v1a.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/SpecGuide_v1a.doc",
+            "size": "175104",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ACPI_SxD.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/ACPI_SxD.rtf",
+            "size": "315043",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ColorMgmtConcepts.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/ColorMgmtConcepts.doc",
+            "size": "587776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IMAPIspec-v09.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/IMAPIspec-v09.doc",
+            "size": "381952",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "scancode.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/scancode.doc",
+            "size": "2537472",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Win-NonWin-Irda.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Win-NonWin-Irda.doc",
+            "size": "257536",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Fast System Startup for PCs Running Windows.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Fast System Startup for PCs Running Windows.doc",
+            "size": "494592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StandardizingOutOfBandManagementConsoleOutput090.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/StandardizingOutOfBandManagementConsoleOutput090.doc",
+            "size": "452096",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DVcam.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DVcam.doc",
+            "size": "151552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ISA_CLAR.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/ISA_CLAR.rtf",
+            "size": "504662",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinsockDirect-ProtocolOffload.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/WinsockDirect-ProtocolOffload.doc",
+            "size": "98304",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "pnplpt.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/pnplpt.rtf",
+            "size": "40550",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PCCardpm.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/PCCardpm.rtf",
+            "size": "51370",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OHCI1-1_new.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/OHCI1-1_new.doc",
+            "size": "393728",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MFDev_PCCard.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/MFDev_PCCard.doc",
+            "size": "87552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "1394PNP_10c.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/1394PNP_10c.rtf",
+            "size": "678545",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Minutes-5GWIAG-Seattle.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/Minutes-5GWIAG-Seattle.doc",
+            "size": "92672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "APMV12.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/APMV12.rtf",
+            "size": "1518874",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NetPMSPC.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/NetPMSPC.rtf",
+            "size": "232081",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DVAVSPEC.RTF",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DVAVSPEC.RTF",
+            "size": "220384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinMe_Broadband.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/WinMe_Broadband.doc",
+            "size": "85504",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ohci_11.pdf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/ohci_11.pdf",
+            "size": "2363648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DefPMSpc.rtf",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DefPMSpc.rtf",
+            "size": "45545",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DXVA_1.01.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/DXVA_1.01.doc",
+            "size": "901632",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003EMSSACXML.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/WindowsServer2003EMSSACXML.doc",
+            "size": "1218048",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "fatgen103.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/fatgen103.doc",
+            "size": "222720",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SDG2_FAQ.doc",
+            "url": "https://download.microsoft.com/download/1/6/1/161ba512-40e2-4cc9-843a-923143f3456c/SDG2_FAQ.doc",
+            "size": "311296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Legacy documents for the Windows Hardware and Driver Central website",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "wireless5ghz.zip",
+        "StockholmMtg.zip",
+        "HouMtg.zip",
+        "HiltonHeadmtg.zip",
+        "HelsinkiMtg.zip",
+        "5GHz-Stockholm.zip",
+        "5GHz-Seattle.zip",
+        "5GHz-SD.zip",
+        "5ghz-monterey.zip",
+        "5GHz-Hou.zip",
+        "5GHz-HH.zip",
+        "5GHz-Helsinki.zip",
+        "APM12_CH.rtf",
+        "hwlogov1-1.doc",
+        "LFreeACPI.doc",
+        "HWlogo2_Faq.doc",
+        "StoPMSpc.rtf",
+        "HWLogoFAQ1_1.doc",
+        "NTSDG_withindex.doc",
+        "PNPISA.rtf",
+        "hwlogo2-prn.doc",
+        "umud10.rtf",
+        "devids.txt",
+        "ISAW2.doc",
+        "Inpmspc.rtf",
+        "VMR Deinterlacing_v85.doc",
+        "Authenticode.doc",
+        "COMPMSpc.rtf",
+        "USBTelephony-v091.doc",
+        "Designing Hardware for Surprise Removal_v8.doc",
+        "DX8-PointSprite.doc",
+        "AudPMSpc.rtf",
+        "NTSDGV1.DOC",
+        "MSColorCaseStudy.doc",
+        "hdg_3.doc",
+        "Analog Audio Classification Using Device Impedance Characteristics.doc",
+        "PNPSCSI.rtf",
+        "atamed.rtf",
+        "apm12faq.rtf",
+        "DspPMSpc.rtf",
+        "pciidspec-11.doc",
+        "WindowsMe_S4OS.doc",
+        "SDG3.chm",
+        "SPCR_Tbl-v100.doc",
+        "mmc_cd-dvd.doc",
+        "AmstMtg.xls",
+        "GDIplus_Metadata.doc",
+        "hid-sensors-usages (archive).docx",
+        "DVDregion.txt",
+        "Minutes-5GWIAG-Monterey.doc",
+        "WHQL_Submission_ReadMe.doc",
+        "pnpcom.rtf",
+        "Cable_Architecture.doc",
+        "translate.pdf",
+        "EMS.doc",
+        "MFPRecommendations.doc",
+        "SpecGuide_v1a.doc",
+        "ACPI_SxD.rtf",
+        "ColorMgmtConcepts.doc",
+        "IMAPIspec-v09.doc",
+        "scancode.doc",
+        "Win-NonWin-Irda.doc",
+        "Fast System Startup for PCs Running Windows.doc",
+        "StandardizingOutOfBandManagementConsoleOutput090.doc",
+        "DVcam.doc",
+        "ISA_CLAR.rtf",
+        "WinsockDirect-ProtocolOffload.doc",
+        "pnplpt.rtf",
+        "PCCardpm.rtf",
+        "OHCI1-1_new.doc",
+        "MFDev_PCCard.doc",
+        "1394PNP_10c.rtf",
+        "Minutes-5GWIAG-Seattle.doc",
+        "APMV12.rtf",
+        "NetPMSPC.rtf",
+        "DVAVSPEC.RTF",
+        "WinMe_Broadband.doc",
+        "ohci_11.pdf",
+        "DefPMSpc.rtf",
+        "DXVA_1.01.doc",
+        "WindowsServer2003EMSSACXML.doc",
+        "fatgen103.doc",
+        "SDG2_FAQ.doc"
+    ],
+    "detailsSection_file_size": [
+        "9.4 MB",
+        "10.2 KB",
+        "5.5 KB",
+        "10.0 KB",
+        "13.2 KB",
+        "2.3 MB",
+        "1.0 MB",
+        "320.7 KB",
+        "6.9 MB",
+        "897.6 KB",
+        "26.3 KB",
+        "4.1 MB",
+        "1.3 MB",
+        "651.5 KB",
+        "72.5 KB",
+        "60.5 KB",
+        "73.0 KB",
+        "244.5 KB",
+        "1.2 MB",
+        "1.1 MB",
+        "1.0 MB",
+        "113.6 KB",
+        "24.0 KB",
+        "60.5 KB",
+        "70.9 KB",
+        "118.0 KB",
+        "91.0 KB",
+        "117.3 KB",
+        "1.3 MB",
+        "106.5 KB",
+        "57.5 KB",
+        "64.9 KB",
+        "1.0 MB",
+        "174.0 KB",
+        "1.1 MB",
+        "1.6 MB",
+        "467.6 KB",
+        "43.7 KB",
+        "19.9 KB",
+        "62.6 KB",
+        "123.5 KB",
+        "225.5 KB",
+        "261.8 KB",
+        "97.5 KB",
+        "329.5 KB",
+        "17.5 KB",
+        "111.5 KB",
+        "600.2 KB",
+        "16.9 KB",
+        "79.0 KB",
+        "88.0 KB",
+        "142.2 KB",
+        "1.3 MB",
+        "133.2 KB",
+        "240.0 KB",
+        "518.0 KB",
+        "171.0 KB",
+        "307.7 KB",
+        "574.0 KB",
+        "373.0 KB",
+        "2.4 MB",
+        "251.5 KB",
+        "483.0 KB",
+        "441.5 KB",
+        "148.0 KB",
+        "492.8 KB",
+        "96.0 KB",
+        "39.6 KB",
+        "50.2 KB",
+        "384.5 KB",
+        "85.5 KB",
+        "662.6 KB",
+        "90.5 KB",
+        "1.4 MB",
+        "226.6 KB",
+        "215.2 KB",
+        "83.5 KB",
+        "2.3 MB",
+        "44.5 KB",
+        "880.5 KB",
+        "1.2 MB",
+        "217.5 KB",
+        "304.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 95/NT or later<br>\nMicrosoft Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Select \"Save this file to disk\" to download to your local machine",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53426",
+    "downloadPreload": true
+}

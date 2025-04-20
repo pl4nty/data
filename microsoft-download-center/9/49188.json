@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration Specification for VP8 and VP9 video decoding",
+    "downloadDescription": "Contains a specification for support of VP8 and VP9 video decoding (according to the available VP8 and VP9 source code and public documents) within the Microsoft Windows DirectX Video Acceleration (DXVA) API/DDI context.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_VPx.xps",
+            "url": "https://download.microsoft.com/download/9/2/a/92a4e198-67e0-4abd-9db7-635d711c2752/DXVA_VPx.xps",
+            "size": "1604001",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DXVA_VPx.pdf",
+            "url": "https://download.microsoft.com/download/9/2/a/92a4e198-67e0-4abd-9db7-635d711c2752/DXVA_VPx.pdf",
+            "size": "1588929",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document contains a specification for support of VP8 and VP9 video decoding (according to the available VP8 and VP9 source code and public documents) within the Microsoft Windows DirectX Video Acceleration (DXVA) API/DDI context. This specification includes support of the VP8 coding format and VP9 Profile 0. The document describes high-level design concepts and specific VP8 and VP9 extensions to DXVA interfaces and data structures of VP8 and VP9 video decoding. This document specifies only off-host Variable Length Decoding (VLD) profiles for VP8 and VP9 video decoding.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DXVA_VPx.xps",
+        "DXVA_VPx.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49188",
+    "downloadPreload": true
+}

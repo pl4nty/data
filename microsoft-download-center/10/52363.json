@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Privacy Integrated Queries (PINQ)",
+    "downloadDescription": "Privacy Integrated Queries (PINQ) is a LINQ-like API for writing programs against sensitive data sets, while providing differential privacy guarantees for the underlying records. Last published: August 18, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PINQ.zip",
+            "url": "https://download.microsoft.com/download/1/5/f/15f403f3-61f5-432c-948f-fc5f55054c2c/PINQ.zip",
+            "size": "281838",
+            "version": "0.1.1",
+            "datePublished": "5/15/2024 4:15:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Privacy Integrated Queries (PINQ) is a LINQ-like API for writing programs against sensitive data sets, while providing differential privacy guarantees for the underlying records. This first release provides the PINQ infrastructure, several example data analysis applications, and should be suitable for prototyping many differentially-private data analyses.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1.1",
+    "detailsSection_file_name": [
+        "PINQ.zip"
+    ],
+    "detailsSection_file_size": [
+        "275.2 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52363",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Datazen Publisher",
+    "downloadDescription": "Datazen Publisher for Windows 7 allows you to create stunning data visualizations from Excel, SQL Server, SSAS, SQL Azure, SharePoint and other cloud & enterprise data sources. Please visit the Windows Store to install the Datazen Publisher for Windows 8 & Windows 8.1+.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Datazen.Publisher.Installer.3.0.3385.exe",
+            "url": "https://download.microsoft.com/download/f/e/1/fe17defe-8631-4780-931c-3f235b849b19/Datazen.Publisher.Installer.3.0.3385.exe",
+            "size": "41833680",
+            "version": "3.0.3385",
+            "datePublished": "7/15/2024 3:46:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Datazen Publisher for Windows 7 allows you to create stunning data visualizations from Excel, SQL Server, SSAS, SQL Azure, SharePoint and other cloud & enterprise data sources. The product can be used in two modes: \r\n<br/>\r\n<br/>\r\n1. Standalone App: Users can create dashboards from local Excel documents, save them on their device and share via email;\r\n<br/><br/>\r\n2. Connected to a Datazen Server: Users can access cloud and enterprise data sources and publish dashboards for access by other people in their organization. \r\n<br/><br/>\r\nPlease visit the Windows Store to install the Datazen Publisher for Windows 8 & Windows 8.1+.\r\n<br/><br/>\r\nMicrosoft collects data about the use and performance of our free software. This helps us learn how to improve our products and give you a better experience. You can turn off this data collection on the Settings screen.\r\n<br/><br/><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.3385",
+    "detailsSection_file_name": [
+        "Datazen.Publisher.Installer.3.0.3385.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 (x86 or x64) or above\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "The download is a self-extracting executable file. To start the download, click <b>Download</b>.\r\n<br/> \r\nWhen the <b>File Download</b> dialog box appears, click <b>Save</b> to save the file to your computer. \r\n<br/> \r\nWhen you are ready to install the product, double-click the executable file, and then follow the instructions on the screen. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47714",
+    "downloadPreload": true
+}

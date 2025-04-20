@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Search architectures for enterprise search in SharePoint Server 2016",
+    "downloadDescription": "Download this poster to see architecture examples for enterprise search for a variety of sizes of server farms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP_2016_Enterprise_Search_Model.pdf",
+            "url": "https://download.microsoft.com/download/c/8/3/c83b4989-699a-414b-9997-9478a1f0fb48/SP_2016_Enterprise_Search_Model.pdf",
+            "size": "739843",
+            "version": "Nov2016",
+            "datePublished": "7/15/2024 4:34:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP_2016_Enterprise_Search_Model.vsdx",
+            "url": "https://download.microsoft.com/download/c/8/3/c83b4989-699a-414b-9997-9478a1f0fb48/SP_2016_Enterprise_Search_Model.vsdx",
+            "size": "1232088",
+            "version": "Nov2016",
+            "datePublished": "7/15/2024 4:34:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "This poster shows small, medium, and large-size farm topologies for enterprise search, hardware requirements, and scaling considerations. \r\n\r\nThe poster is available in .VSDX and .PDF versions. Once you click on the \"Download\" button, you're prompted to select the files you need. Download the .VSDX if you have Visio, otherwise download the .PDF for the Adobe Acrobat Reader version.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2016",
+    "detailsSection_file_name": [
+        "SP_2016_Enterprise_Search_Model.pdf",
+        "SP_2016_Enterprise_Search_Model.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "722.5 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio or Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol> \r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n<li>Choose <b>Save</b> or <b>Save this program to disk</b> to copy the download to your computer.</li> \r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54292",
+    "downloadPreload": true
+}

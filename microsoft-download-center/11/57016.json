@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Project Service Automation Project ID Generation Solution for Integration with Dynamics 365 for Finance and Operations",
+    "downloadDescription": "PSA to FinOps Project ID Integration Solution",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PSAToFinOpsPackage.EXE",
+            "url": "https://download.microsoft.com/download/c/7/6/c76e69f0-1303-48d4-a3b4-6c416afed0de/PSAToFinOpsPackage.EXE",
+            "size": "14233088",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:51:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Dynamics 365 for Project Service Automation Project ID Generation Solution for Integration with Dynamics 365 for Finance and Operations generates unique, human-readable project ID\u2019s for PSA projects that can then be integrated into Dynamics for Finance and Operations projects.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "PSAToFinOpsPackage.EXE"
+    ],
+    "detailsSection_file_size": [
+        "13.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Project Service Automation 1.2.x or higher",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Download the file from Download Center.\r\n2. Run the self-extracting file to extract the archive containing the Package Deployer for the solution and the instructions for installing.\r\n3. Folllow the install instructions in the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57016",
+    "downloadPreload": true
+}

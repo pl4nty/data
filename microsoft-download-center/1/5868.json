@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Micro Framework 4.1 Porting Kit",
+    "downloadDescription": "The .NET Micro Framework Porting Kit allows you to adapt the Version 4.1 runtime to your specific hardware in the supported toolchains",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PKProductNoLibs.zip",
+            "url": "https://download.microsoft.com/download/a/a/4/aa41297e-0889-4b10-a966-ef4f5e457670/PKProductNoLibs.zip",
+            "size": "52085727",
+            "version": "4.1",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nThe Microsoft\u00ae .NET Micro Framework is a platform that enables developers to more quickly develop embedded systems that are smart, securely connected, and easier to manage. With the version 4.1 release, the .NET Micro Framework enables developers to create powerful embedded systems that are more securely connected through a variety of wired and wireless protocols.   The 4.1 release is also the first release under the Apache 2.0 license.\r\n<br />\r\nVersion 4.1 also adds support for a broader range of processors with the addition od sample ports for the following Renesas processors and development boards: SH7216 RSK, SH7264 M3A HS64, SH7264 RSK, SH7619 EVB.   Additional TCP/IP and SSL support has been added with the Open Source distributions of lwIP and OpenSSL.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1",
+    "detailsSection_file_name": [
+        "PKProductNoLibs.zip"
+    ],
+    "detailsSection_file_size": [
+        "49.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: Windows Server 2008; Windows Vista; Windows XP; Windows 7\r\nSupported Tool Chains: ARM RVDS 3.1 and 4.0, Keil MDK 3.1 and 3.8,  GCC (CodeSourcery Distribution based on 4.2.1 version), and Renesas HEW 4.04 and 4.07.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\r\nSimply run the installer package named 'MicroFrameworkPK.msi' found in the Zip file. \r\nOnce Installed, use the product key found in the Zip file in a file named 'Product Key for V3.0 Porting Kit'  \r\nInstall the Service Pack of this release: <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=55ac4944-be1e-4fd6-850f-1ccd602d4816\">NETMF Porting Kit v 3.0 SP1</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5868",
+    "downloadPreload": true
+}

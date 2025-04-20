@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Technical Guide and Code Samples",
+    "downloadDescription": "This zipped folder includes technical guide and sample code for CSP partners interested in offering Dev-test and Dev-ops offerings on Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Technical guide and Code samples.zip",
+            "url": "https://download.microsoft.com/download/c/1/7/c17de73d-484c-4ba1-9358-a1ddc2ee45a1/Technical guide and Code samples.zip",
+            "size": "39668751",
+            "version": "January 2014",
+            "datePublished": "11/15/2023 4:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes technical guide and sample code for CSP partners interested in offering Dev-test and Dev-ops offerings on Azure. Specifically, it includes templates and runbooks for the following 5 scenarios (a) Sharepoint on azure (b) LAMP app on Azure (c) AD on Azure (d) SQL Server 2014 Always on (e) A web app on Azure\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Technical guide and Code samples.zip"
+    ],
+    "detailsSection_file_size": [
+        "37.8 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the files",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50763",
+    "downloadPreload": true
+}

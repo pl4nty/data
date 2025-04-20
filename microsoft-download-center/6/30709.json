@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae Compact 4.0 SP1",
+    "downloadDescription": "Microsoft SQL Server Compact 4.0 is a free, embedded database that software developers can use for building ASP.NET websites and Windows desktop applications. SQL Server Compact 4.0 has a small footprint and supports private deployment of its binaries within the application folder, easy application development in Visual Studio and WebMatrix, and seamless migration of schema and data to SQL Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSCERuntime_x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/f/d/ffdf76e3-9e55-41da-a750-1798b971936c/ENU/SSCERuntime_x86-ENU.exe",
+            "size": "2400416",
+            "version": "4.0 SP1",
+            "datePublished": "7/15/2024 3:12:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SSCERuntime_x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/f/d/ffdf76e3-9e55-41da-a750-1798b971936c/ENU/SSCERuntime_x64-ENU.exe",
+            "size": "2641344",
+            "version": "4.0 SP1",
+            "datePublished": "7/15/2024 3:12:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />SQL Server Compact 4.0 enables new scenarios and includes a host of new features, including the following: <br />\n<UL><LI> SQL Server Compact 4.0 is the default database for <a href=\" http://go.microsoft.com/fwlink/?LinkID=209861\">Microsoft WebMatrix</a>, which is a stack of web technologies for easily building and deploying websites on the Windows platform. <br />\n</LI><LI> For enhanced development and debugging capabilities, including designer support, Visual Studio can be used to develop ASP.NET web applications and websites using SQL Server Compact 4.0. <br />\n</LI><LI>Enabled to work in the medium or partial trust environments in the web servers, and can be easily deployed along with the website to the third party website hosting service providers. <br />\n</LI><LI>Private deployment of SQL Server Compact further simplified by having all the required managed assemblies, and the x86 and x64 DLLs, including the Visual C++ 2008 runtime libraries (x86 and x64) SP1 in a single private folder in the install location of SQL Server Compact. <br />\n</LI><LI> Stronger data security with the use of the SHA2 encryption algorithms for encrypting the databases. <br />\n</LI><LI>T-SQL syntax enhancement by adding support for OFFSET and FETCH that can be used to write paging queries and new APIs like SqlCeConnection.GetSchema that provides the metadata information of the database. <br />\n</LI><LI>Used with ADO.NET Entity Framework, SQL Server Compact now supports the columns that have server generated keys like identity, rowguid etc. and the code-first programming model. <br /><br />\n</LI></UL>\n<B>Support Options:</B><br /><br />\nYour feedback is important to us. \n<UL><LI>If you have questions about SQL Server Compact, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=66523\">SQL Server Compact MSDN Forum</a> and for more information visit <a href=\"http://go.microsoft.com/fwlink/?LinkId=67575\">SQL Server Compact blog</a>.</LI><br />\n<LI>Help improve SQL Server Compact by submitting and tracking bugs using <a href=\"http://go.microsoft.com/fwlink/?LinkId=104039\"> Microsoft Connect</a> website. Be sure to select <B>SQL Server Compact</B> as the version and provide detailed repro steps to help us identify the problem.</LI><br /><br />\n</UL>\n<B>For more information on WebMatrix visit the links below:</B>\n<UL><LI> <a href=\"http://go.microsoft.com/fwlink/?LinkID=209862\">Top 10 WebMatrix Features</a></LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkID=209863\">More about IIS Express</a></LI>\n<LI> <a href=\"http://go.microsoft.com/fwlink/?LinkId=209864\">Install WebMatrix with Web PI</a> </LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0 SP1",
+    "detailsSection_file_name": [
+        "SSCERuntime_x86-ENU.exe",
+        "SSCERuntime_x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\n<LI>Microsoft Windows Server 2003 SP2 </LI>\n<LI>Microsoft Windows Server 2003 R2</LI>\n<LI>Microsoft Windows Server 2003 SP2 x64</LI>\n<LI>Microsoft Windows Server 2003 R2 x64</LI>\n<LI>Microsoft Windows XP SP3 </LI>\n<LI>Microsoft Windows Vista SP2 </LI>\n<LI>Microsoft Windows Server 2008 SP2 </LI>\n<LI>Microsoft Windows Server 2008 R2 </LI>\n<LI>Windows 7 </LI>\n</UL>\n<b>Development Computer:</b><UL><LI>For the x86 (32 Bit) installer approximately 23 MB of available hard disk space is required for uncompressing the contents and the setup files</LI><BR /><LI>For the x64 (64 Bit) installer approximately 37 MB of available hard disk space is required for the same.</LI><BR />\n<LI>.NET Framework 3.5 SP1 or .NET Framework 4 needed for managed application development.</LI><BR /></UL><BR />\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "The files available for download are the x86 (32-bit) and the x64 (64-bit) installers for installing the SQL Server Compact 4.0 on a 32-bit and a 64-bit Computer respectively. <br /><br />\n<b>To download the SQL Server Compact 4.0 x86 installer (SSCERuntime_X86-ENU.exe): (Note that this can be used to install SQL Server Compact on a 32-bit Computer only) </b><br /> <OL><LI> In the <b>Files in this Download</b> section at the bottom of this page, click the <b> SSCERuntime_X86-ENU.exe </b> link. </LI><br /> <LI>Do one of the following: </LI>\n<UL><LI>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b> </LI>\n<LI>To copy the download to your computer for extraction at a later time, click <b>Save</b> or <b>Save this program to disk</b> and specify a location to save the .exe file on your computer.  Double-click the .exe file to start the installation.</LI></UL><br /></OL>\n<b>To install the SQL Server Compact 4.0 x64 executable (SSCERuntime_X64-ENU.exe): (Note that this can be used to install SQL Server Compact on a 64-bit Computer only) <br />\n</b><OL> <LI>Do one of the following: </LI>\n<UL><LI>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b> </LI>\n<LI>To copy the download to your computer for extraction at a later time, click <b>Save</b> or <b>Save this program to disk</b> and specify a location to save the .exe file on your computer.  Double-click the .exe file to start the installation.</LI></UL><br /></OL> \n<b>To remove this download:</b><br />\n<OL><LI>Delete the guide and SSCERuntime-ENU.exe from the folder to which you saved the guide.</LI><br /></OL>\n",
+    "additionalInformationSection": "<UL>\n  <LI>SQL Server Compact 4.0 is freely redistributable under a redistribution license agreement and application developers redistributing SQL Server Compact 4.0 can optionally register at the <a href=\"http://go.microsoft.com/fwlink/?LinkID=94589\">SQL Server Compact redistribution site</a>. Registering will help the developers in getting information about SQL Server Compact critical security patches and hot fixes that can be further applied to the client installations.</LI>\n  <br />\n<LI> \nSQL Server Compact 3.5 and SQL Server Compact 4.0 are installed and work side by side on a desktop. The existing installations of SQL Server Compact 3.5 or SQL Server Compact 3.5 SP1 or SQL Server Compact 3.5 SP2 are not upgraded to SQL Server Compact 4.0 when you install SQL Server Compact 4.0 using the installer.\n </LI><br />\n</UL>\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Compact Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=103197"
+        },
+        {
+            "title": "visual Studio 2010 Downloads",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=188852"
+        },
+        {
+            "title": "sql Server Compact MSDN Forum",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=66523"
+        },
+        {
+            "title": "sql Server Compact Blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=67575"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30709",
+    "downloadPreload": true
+}

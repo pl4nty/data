@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "ODC: Visual How-to Sample: How to Find the First and Last Day in a Given Week, Month, or Year in Access 2010",
+    "downloadDescription": "Access 2010, along with VBA, makes it easy to find specific days in a given week, month, or year.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AccessDateFunctions_CODE.zip",
+            "url": "https://download.microsoft.com/download/a/1/a/a1a5229b-25b6-41a8-8364-be89ae7781d2/AccessDateFunctions_CODE.zip",
+            "size": "26997",
+            "version": "0511",
+            "datePublished": "4/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use Visual Basic for Applications (VBA) to create functions that return the first and last day in a given week, month, or year. You can specify a date for the calculation, or you can pass no parameter to indicate the current date.\r\n\r\nThe date functions built into VBA make it easy to perform calculations based on date arithmetic. Whether you must calculate the first or last day in a given week, month, or year, you can easily get the value that you want.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0511",
+    "detailsSection_file_name": [
+        "AccessDateFunctions_CODE.zip"
+    ],
+    "detailsSection_file_size": [
+        "26.4 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download works with the following Office applications:</b><br/>\r\n<ul>\r\n<li>Microsoft Access 2010</li>\r\n<li>Microsoft Office Access 2007</li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<br/>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk drive.</li>\r\n<li>Double-click the <b>AccessDateFunctions_CODE.zip</b> program file on your hard disk drive to extract the named AccessDateFunctions.accdb.</li>\r\n</ol>\r\n<br/><br/>\r\n\r\n",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "office Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/"
+        },
+        {
+            "title": "access Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/aa905400.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7310",
+    "downloadPreload": true
+}

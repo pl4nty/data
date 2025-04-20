@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Business Intelligence Cube Reference Guide",
+    "downloadDescription": "This document describes the dimensions, measures, KPI information, and other elements of the preconfigured cubes that are provided with Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AxBICubeReference.xps",
+            "url": "https://download.microsoft.com/download/c/f/a/cfa6f277-f78c-4276-8928-f22e8201c05e/AxBICubeReference.xps",
+            "size": "2766031",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AxBICubeReference.pdf",
+            "url": "https://download.microsoft.com/download/c/f/a/cfa6f277-f78c-4276-8928-f22e8201c05e/AxBICubeReference.pdf",
+            "size": "1320758",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The document also includes information about the KPI calculations, the tables that are used, and the configuration keys that are required for the tables. <br />\r\nThis documentation is intended for partners and customers who are customizing or troubleshooting the preconfigured Analysis Services cubes that are provided with Microsoft Dynamics AX 2009.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "AxBICubeReference.xps",
+        "AxBICubeReference.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "configuring Default OLAP Cubes white paper",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=28cdb057-416a-497e-a7e0-8d52c4eb1bfb"
+        },
+        {
+            "title": "microsoft Dynamics AX Developer Center on MSDN",
+            "url": "http://msdn2.microsoft.com/en-us/dynamics/ax/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20344",
+    "downloadPreload": true
+}

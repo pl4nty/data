@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Tracing Symbols",
+    "downloadDescription": "Microsoft Forefront UAG 2010 includes a trace mechanism that provides detailed failure and debugging information in a binary format. This download provides the .tmf files that are required to convert binary trace files to a readable text format.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UAG-KB3060650-v4.0.4205.10200-ENU_TMF_files.zip",
+            "url": "https://download.microsoft.com/download/3/8/b/38b3242b-06f2-4e79-8b62-cc09992b8a47/UAG-KB3060650-v4.0.4205.10200-ENU_TMF_files.zip",
+            "size": "17505018",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UAGTracingTool.docx",
+            "url": "https://download.microsoft.com/download/3/8/b/38b3242b-06f2-4e79-8b62-cc09992b8a47/UAGTracingTool.docx",
+            "size": "714925",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UAG tracing supplement EULA.RTF",
+            "url": "https://download.microsoft.com/download/3/8/b/38b3242b-06f2-4e79-8b62-cc09992b8a47/UAG tracing supplement EULA.RTF",
+            "size": "42425",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Forefront UAG tracing can be run on the Forefront UAG server, and on client endpoint devices connecting to Forefront UAG resources. You configure trace settings, start tracing, reproduce scenarios that require troubleshooting,  stop tracing, and then convert the binary tracing output to text.<br />\r\n<br />\r\nThis download provides the following:<br />\r\n    \u2022 A set of .tmf files in a zip file. These .tmf files can be used to convert binary trace files on the Forefront UAG server, and on client endpoint devices.<br />\r\n    \u2022 A EULA license<br />\r\n    \u2022 A document with instructions for configuring and running tracing<br />\r\n<br />\r\nNote that the zip file provided by this download is cumulative. .tmf files included in the zip file can be used with the RTM version of Forefront UAG, and with subsequent Forefront UAG releases.<br />\r\n<br />\r\nVersions of .tmf files provided by this download are as follows:<br />\r\n<br />\r\n    \u2022 UAG RTM (Version 4.0.1101.000) <br />\r\n    \u2022 UAG Update 1 (Version 4.0.1152.100) KB Article 981323<br />\r    \u2022 UAG Update 2 (Version 4.0.1269.200), KB Article 2288900<br />\r    \u2022 UAG RTM MS10-089 bulletin (Version 4.0.1101.052), KB Article 2433585<br />\r    \u2022 UAG Update 1 MS10-089 bulletin (Version 4.0.1152.150), KB Article 2433584<br />\r    \u2022 UAG Update 2 MS10-089 bulletin (Version 4.0.1269.250), KB Article 2418933<br />\r    \u2022 UAG SP1 (Version 4.0.1752.10000), KB Article 2285712<br />\r    \u2022 UAG SP1 Rollup 1 (Version 4.0.1752.10020), KB Article 2475733<br />\r    \u2022 UAG RTM MS11-079 bulletin (Version 4.0.1101.063), KB Article 2522482<br />\r    \u2022 UAG Update 1 MS11-079 bulletin (Version 4.0.1152.163), KB Article 2522483<br />\r    \u2022 UAG Update 2 MS11-079 bulletin (Version 4.0.1269.284), KB Article 2522484<br />\r    \u2022 UAG SP1 MS11-079 bulletin (Version 4.0.1752.10073), KB Article 2522485<br />\r    \u2022 UAG SP1 Update 1 (Version 4.0.1773.10100), KB Article 2585140<br />\r\n    \u2022 UAG SP1 MS12-026 (Version 4.0.1753.10076), KB Article 2649261<br />\r\n    \u2022 UAG SP1 Update 1 MS12-026 (Version 4.0.1773.10190), KB Article 2649262<br />\r\n    \u2022 UAG SP2 (Version 4.0.2095.10000), KB Article 2710791<br />\r\n    \u2022 UAG SP3 (Version  4.0.3123.10000), KB Article 2744025<br />\r\n    \u2022 UAG SP3 Rollup 1<br />\r\n    \u2022 UAG SP4 (Version  4.0.4083.10000), KB Article 2861386<br />\r\n    \u2022 UAG SP4 Rollup 1 (Version  4.0.4160.10100), KB Article 2922171<br />\r\n    \u2022 UAG SP4 Rollup 2 (Version  4.0.4205.10200), KB Article 3060650\r\n\r\n\r\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "UAG-KB3060650-v4.0.4205.10200-ENU_TMF_files.zip",
+        "UAGTracingTool.docx",
+        "UAG tracing supplement EULA.RTF"
+    ],
+    "detailsSection_file_size": [
+        "16.7 MB",
+        "698.2 KB",
+        "41.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 A computer running Forefront UAG or a client endpoint device connected to a Forefront UAG Web site or portal",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "Click the <b>Install</b> button near the top of this page to begin the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15651",
+    "downloadPreload": true
+}

@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Laptop 4 with Intel Processor Drivers and Firmware",
+    "downloadDescription": "All current drivers and firmware for the Surface Laptop 4 with Intel Processor",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceLaptop4_Intel_Win11_22621_25.034.39168.0.msi",
+            "url": "https://download.microsoft.com/download/dddb6b6d-02da-40ac-b945-37df889d4045/SurfaceLaptop4_Intel_Win11_22621_25.034.39168.0.msi",
+            "size": "889597952",
+            "version": "1.0",
+            "datePublished": "4/17/2025 2:20:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceLaptop4_Intel_Win10_19045_25.034.39166.0.msi",
+            "url": "https://download.microsoft.com/download/dddb6b6d-02da-40ac-b945-37df889d4045/SurfaceLaptop4_Intel_Win10_19045_25.034.39166.0.msi",
+            "size": "889212928",
+            "version": "1.0",
+            "datePublished": "4/17/2025 2:20:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following packages will continue to be updated with the latest drivers and firmware until the date listed in the <a href=\"https://learn.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-driver-and-firmware-lifecycle-period\">Surface Driver and Firmware Support Lifecycle Policy.</a>\r\n<br></br>\r\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\r\n<br></br>\r\nCumulative and current drivers and firmware for the Surface Laptop 4 with Intel Processor. This package contains drivers for all of the components in the Surface Laptop 4 with Intel Processor, as well as updates to the system firmware that have been released via Windows Update. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n________________________________________________________________________________________________________________________________________\r\n<br></br>\r\n<b>Archive Section</b>\r\n<br></br>\r\n Consistent with our build lifecycle support, the following packages are no longer being updated with newer drivers and firmware. \r\n<ul>\r\n<li><a href=\"https://download.microsoft.com/download/f/7/0/f70b3d0a-59b1-4842-9130-0c152bb738ba/SurfaceLaptop4_Win10_18363_21.121.10176.0.msi\">SurfaceLaptop4_Win10_18363_21.121.10176.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/f/7/0/f70b3d0a-59b1-4842-9130-0c152bb738ba/SurfaceLaptop4_Win10_19041_22.111.10120.0.msi\">SurfaceLaptop4_Win10_19041_22.111.10120.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/f/7/0/f70b3d0a-59b1-4842-9130-0c152bb738ba/SurfaceLaptop4_Intel_Win10_19044_24.041.12627.0.msi\">SurfaceLaptop4_Intel_Win10_19044_24.041.12627.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/f/7/0/f70b3d0a-59b1-4842-9130-0c152bb738ba/SurfaceLaptop4_Intel_Win11_22000_24.041.15638.0.msi\">SurfaceLaptop4_Intel_Win11_22000_24.041.15638.0.msi</a></li>\r\n</ul>\r\n<br></br>\r\nPlease refer to end of lifecycle support:\r\n<br></br>\r\n<a href=\"https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support\">End of Servicing Date</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_10_version_history\">Windows 10 version history</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_11_version_history\">Windows 11 version history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceLaptop4_Intel_Win11_22621_25.034.39168.0.msi",
+        "SurfaceLaptop4_Intel_Win10_19045_25.034.39166.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "848.4 MB",
+        "848.0 MB"
+    ],
+    "detailsSection_file_date": "4/17/2025",
+    "systemRequirementsSection": "Surface Laptop 4 with Intel Processor required for compatibility with these drivers. These drivers and firmware are compatible with Windows 10 and Windows 11, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface Laptop 4 with Intel Processor. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [
+        {
+            "title": "surface Laptop 4 with Intel Processor Update History",
+            "url": "https://support.microsoft.com/en-us/surface/surface-laptop-4-update-history-607537fa-c595-4797-9a2e-ee77015472f6#ID0EDD=Surface_Laptop_4_with_Intel_processor"
+        },
+        {
+            "title": "supported Operating Systems",
+            "url": "https://support.microsoft.com/en-us/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1"
+        },
+        {
+            "title": "end of Servicing Date",
+            "url": "https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102924",
+    "downloadPreload": true
+}

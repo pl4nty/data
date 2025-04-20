@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Migration Assistant for MySQL",
+    "downloadDescription": "Microsoft SQL Server Migration Assistant (SSMA) for MySQL is a tool to automate migration from MySQL database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSMAforMySQL_9.5.0.msi",
+            "url": "https://download.microsoft.com/download/2/9/2/29255648-7f68-4e27-b2f2-f20434fbb230/SSMAforMySQL_9.5.0.msi",
+            "size": "9748480",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:23:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforMySQL_9.5.0_x86.msi",
+            "url": "https://download.microsoft.com/download/2/9/2/29255648-7f68-4e27-b2f2-f20434fbb230/SSMAforMySQL_9.5.0_x86.msi",
+            "size": "9748480",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:23:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforMySQLExtensionPack_9.5.0.msi",
+            "url": "https://download.microsoft.com/download/2/9/2/29255648-7f68-4e27-b2f2-f20434fbb230/SSMAforMySQLExtensionPack_9.5.0.msi",
+            "size": "2023424",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:23:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforMySQL_10.1.0_x86.msi",
+            "url": "https://download.microsoft.com/download/b9299e56-bb4d-463e-864f-aa649ca0a4b9/SSMAforMySQL_10.1.0_x86.msi",
+            "size": "12570624",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:23:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforMySQLExtensionPack_10.1.0.msi",
+            "url": "https://download.microsoft.com/download/b9299e56-bb4d-463e-864f-aa649ca0a4b9/SSMAforMySQLExtensionPack_10.1.0.msi",
+            "size": "2027520",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:23:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforMySQL_10.1.0.msi",
+            "url": "https://download.microsoft.com/download/b9299e56-bb4d-463e-864f-aa649ca0a4b9/SSMAforMySQL_10.1.0.msi",
+            "size": "12570624",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:23:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server Migration Assistant (SSMA) is a free supported tool from Microsoft that simplifies database migration process from MySQL to SQL Server. Azure SQL Database and Azure SQL Database Managed Instance. SSMA automates all aspects of migration including migration assessment analysis, schema and SQL statement conversion, data migration as well as migration testing. \n<br/><br/>\nThis download includes a GUI client based application to manage migration process. A seperate extension pack will install functionalities in SQL Server to emulate MySQL features not natively supported in SQL Server. \n<br/><br/>\nSSMA for MySQL is designed to support migration from MySQL 4.1 and higher to all editions of SQL Server 2016 onwards, Azure SQL Database and Azure SQL Database Managed Instance. \n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "SSMAforMySQL_9.5.0.msi",
+        "SSMAforMySQL_9.5.0_x86.msi",
+        "SSMAforMySQLExtensionPack_9.5.0.msi",
+        "SSMAforMySQL_10.1.0_x86.msi",
+        "SSMAforMySQLExtensionPack_10.1.0.msi",
+        "SSMAforMySQL_10.1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.3 MB",
+        "9.3 MB",
+        "1.9 MB",
+        "12.0 MB",
+        "1.9 MB",
+        "12.0 MB"
+    ],
+    "detailsSection_file_date": "4/1/2025",
+    "systemRequirementsSection": "<ul>\n<li>Windows 10+, Windows Server 2016+</li>\n</ul>\n<br/>\n<b>Requirements for the SSMA for MySQL client:</b>\n<ul>\n<li>The Microsoft .NET Framework version 4.7.2 or a later version. You can obtain it from the .NET Framework Developer Center.</li>\n<li>Access to and sufficient permissions on the computer that hosts the target instance of SQL Server.</li>\n<li>MySQL Connector/ODBC v5.1.</li>\n<li>4 GB RAM.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "After the download, you must extract the installation files before you can install SSMA for MySQL. \n<br/>\n<br/>\n<b>Installing the SSMA for MySQL Client</b>\n<ol>\n<li>Double-click SSMAforMySQL_<i>n</i>.msi, where <i>n</i> is the version number.</li>\n<li>On the 'Welcome' page, click Next.</li>\n<li>If you do not have the prerequisites installed, a message will appear that indicates that you must first install required components. Make sure that you have installed all prerequisites, and then run the installation program again.</li>\n<li>Read the End User License Agreement. If you agree to the terms, select \"I accept the agreement\" option and click Next.</li>\n<li>On the 'Choose Setup Type' page, click Typical.</li>\n<li>Click Install.</li>\n</ol>\n<br/>\nIn addition to the SSMA program files, you must also install the SSMA for MySQL Extension Pack on the SQL Server machine. \n<br/>\n<br/>\n<b>Installing the SSMA for MySQL Extension Pack</b>\n<br/>\nInstalling the extension pack creates a new database, sysdb, on the instance of SQL Server. The extension pack adds tables, stored procedures, and user-defined functions.\n<ol>\n<li>Double-click SSMAforMySQLExtensionPack_<i>n</i>.msi file, where <i>n</i> is the version number.</li>\n<li>On the 'Welcome' page, click Next.</li>\n<li>Read the End User License Agreement. If you agree to the terms, select \"I accept the agreement\" option and click Next.</li>\n<li>On the 'Choose Setup Type' page, click Typical.</li>\n<li>On the 'Ready to Install' page, click Install.</li>\n<li>On the 'Completed the First Step of Installation' page, click Next. A new dialog box will appear, in which you select the instance of SQL Server for the extension pack installation.</li>\n<li>Select the instance of SQL Server where you will be migrating MySQL schemas, and then click Next. The default instance has the same name as the computer. Named instances will be followed by a backslash and the instance name.</li>\n<li>On the connection page, select the authentication method and then click Next. Windows Authentication will use your Windows credentials to try to log on to the instance of SQL Server. If you select SQL Server Authentication, you must enter a SQL Server login name and password.</li>\n<li>On the next page, select Install Utilities Database <i>n</i>, where <i>n</i> is the version number, and then click Next. The sysdb database is created and the user-defined functions and stored procedures are created in that database.</li>\n<li>To install the utilities to another instance of SQL Server, select Yes, and then click Next. Or, to exit the wizard, click No.</li>\n</ol>\n<b>NOTE:</b> Extension pack and its functionality is not supported for SQL Server on Linux, Azure SQL Database and Azure SQL Database Managed Instance.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54257",
+    "downloadPreload": true
+}

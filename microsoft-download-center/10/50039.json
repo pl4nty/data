@@ -1,0 +1,137 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 Implementation Guide for on-premises and online",
+    "downloadDescription": "This guide contains comprehensive information about how to plan, install, configure, customize, and maintain Microsoft Dynamics 365 (on-premises) and how to administer and customize Microsoft Dynamics 365 (online).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Dynamics365_AdministrationGuide.pdf",
+            "url": "https://download.microsoft.com/download/3/5/c/35c12236-c52f-4bff-91fd-962b1ca5645f/Dynamics365_AdministrationGuide.pdf",
+            "size": "20435104",
+            "version": "8.2",
+            "datePublished": "7/15/2024 4:08:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics365_deploy_and_admin.zip",
+            "url": "https://download.microsoft.com/download/3/5/c/35c12236-c52f-4bff-91fd-962b1ca5645f/Dynamics365_deploy_and_admin.zip",
+            "size": "23050818",
+            "version": "8.2",
+            "datePublished": "7/15/2024 4:08:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics365_PlanandDeploy.pdf",
+            "url": "https://download.microsoft.com/download/3/5/c/35c12236-c52f-4bff-91fd-962b1ca5645f/Dynamics365_PlanandDeploy.pdf",
+            "size": "4294916",
+            "version": "8.2",
+            "datePublished": "7/15/2024 4:08:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics365_ReportingGuide.pdf",
+            "url": "https://download.microsoft.com/download/3/5/c/35c12236-c52f-4bff-91fd-962b1ca5645f/Dynamics365_ReportingGuide.pdf",
+            "size": "1990171",
+            "version": "8.2",
+            "datePublished": "7/15/2024 4:08:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "<a href=\"http://technet.microsoft.com/en-us/library/hh699811(v=crm.8).aspx\">This is the same documentation that is available online on TechNet</a>. <br/><br/>\r\n\r\nThe  <i>Dynamics_365_deploy_and_admin.zip</i> file contains the <i>Microsoft Dynamics 365 Implementation Guide for online and on-premises</i> and consists of the following documents:\r\n<ul><li><i>Planning and deploying Dynamics 365 on-premises </i>: This document contains the following guides.</li>\r\n<ul>\r\n<li><i>Planning  on-premises Dynamics 365</i>: This guide gives you information that helps you get your organization ready for Microsoft Dynamics 365 on-premises. It includes two main aspects of planning for a customer engagement system: \r\n<ul><li>Technical: These topics focus on areas such as the supported topologies, system requirements, and technical considerations to address before you install. </li>\r\n<li>Implementation: These topics cover the business management, requirements, and project management aspects that are needed when you deploy a customer engagement system. </li></ul></li>\r\n<li><i>Installing on-premises Dynamics 365</i>: This guide provides the information that you need to install Microsoft Dynamics 365 applications, such as step-by-step instructions for running Setup, and command-line instructions for silent installations.</li>\r\n<li><i>Operating on-premises Dynamics 365</i>: This guide gives you information about how to back up, restore, and provide data recovery for Microsoft Dynamics 365. Additionally, this guide provides operational procedures and troubleshooting steps for known issues.</li>\r\n</ul>\r\n<li><i>Administration Guide for Dynamics 365</i>: This Word document contains resources and topics designed to help you manage, configure, and implement customizations of Microsoft Dynamics 365 (on-premises) and Microsoft Dynamics 365 (online) deployments.\r\n</li>\r\n\r\n<li><i>Reporting Guide for Dynamics 365</i>: This Word document covers how to author custom reports for use with Microsoft Dynamics 365.</li>\r\n<li>The Microsoft Dynamics 365 Implementation Guide Compiled HTML Help file (Dynamics365_IG.chm) includes the contents of all the documents listed previously and provides full-text search that lets you search across the entire set of Implementation Guide documents. </li></ul><br/>\r\n\r\nThe <i>Dynamics365_PlanandDeploy.pdf</i>, <i>Dynamics365_AdministrationGuide.pdf</i>, and <i>Dynamics365_ReportingGuide.pdf</i> files  contain the same content as described in the <i>Dynamics365_deploy_and_admin.zip</i> file but are in PDF format. This format works well to view on a standard computer screen, but we suggest using this format for viewing on other devices such as tablets, ereaders, and mobile phones. <br/><br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.2",
+    "detailsSection_file_name": [
+        "Dynamics365_AdministrationGuide.pdf",
+        "Dynamics365_deploy_and_admin.zip",
+        "Dynamics365_PlanandDeploy.pdf",
+        "Dynamics365_ReportingGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "19.5 MB",
+        "22.0 MB",
+        "4.1 MB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Office Word 2007, Word 2010, Word 2013, or a compatible viewer</li>\r\n<li>Adobe PDF Reader</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol><li>The downloads is a compressed folder file or PDF files. To start the download, click <b>Download</b>.</li>\r\n<li>If the <b>File Download</b> dialog box appears, do one of the following:\r\n<ul><li>To start the download immediately, click <b>Open</b>. </li>\r\n<li>To copy the download to your computer to view later, click <b>Save</b>. </li></ul>\r\n</li></ol>\r\n<b>Important</b><br/>\r\nWe optimize for online publishing. Subsequently, there are minor formatting issues in these documents and some external links don't work. The link text that is displayed for broken links is \"Referenced topic 'topic_guid' is not in the TOC.\" These links only work from our online published topics. <a href=\"http://technet.microsoft.com/en-us/library/hh699811(v=crm.8).aspx\">View this content on TechNet</a><br/><br/>\r\nTo view the Microsoft Dynamics 365 Implementation Guide Help file (Dynamics365_IG.chm):\r\n<ol><li>After the download is completed, right-click the Dynamics365_deploy_and_admin file that has a compressed (.zip) file name extension and then click <b>Extract All</b>. Extract the files into a folder on your local computer. </li>\r\n<li>Double-click the Dynamics365_IG.chm file. </li>\r\n<li>If prompted, clear the \"Always ask before opening this file\" check box. </li>\r\n<li>If you still can't view the file, right-click the .chm file, click <b>Properties</b>, and select the the procedure that is most appropriate for you. </li>\r\n<ul><li> Clear <b>This file came from another computer and may be unsafe</b>, and then click <b>OK</b>. </li>\r\n<li>Click <b>Unblock</b>, and then click <b>OK</b>. </li></ul>\r\n<li>Double-click the Dynamics365_IG.chm file to view it. </li></ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "crm Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/crm/dn467921"
+        },
+        {
+            "title": "microsoft Dynamics CRM IT Pro Technical Library",
+            "url": "http://technet.microsoft.com/en-us/library/jj992623.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50039",
+    "downloadPreload": true
+}

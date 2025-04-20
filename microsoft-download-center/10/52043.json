@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for SharePoint Server 2016",
+    "downloadDescription": "This Management Pack enables operators and administrators to manage Microsoft SharePoint 2016 Products including SharePoint Server 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "system_center_monitoring_pack_guide_for_microsoft_sharepoint_2016.docx",
+            "url": "https://download.microsoft.com/download/7/b/6/7b62d8b7-d1a8-4b67-8fb2-02829f0a009c/system_center_monitoring_pack_guide_for_microsoft_sharepoint_2016.docx",
+            "size": "158261",
+            "version": "16.0.13125.10000",
+            "datePublished": "7/15/2024 4:15:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SharePoint.2016.ManagementPacks.msi",
+            "url": "https://download.microsoft.com/download/7/b/6/7b62d8b7-d1a8-4b67-8fb2-02829f0a009c/Microsoft.SharePoint.2016.ManagementPacks.msi",
+            "size": "708608",
+            "version": "16.0.13125.10000",
+            "datePublished": "7/15/2024 4:15:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SharePoint Server 2016 Management Pack is designed to be used for monitoring SharePoint Server 2016 events, collecting SharePoint component-specific performance counters in one central location, and for raising alerts for operator intervention as necessary. By detecting, sending alerts, and automatically correlating critical events, this management pack helps indicate, correct, and prevent possible service outages or configuration problems, allowing you to proactively manage SharePoint servers and identify issues before they become critical. The management pack monitors and provides alerts for automatic notification of events indicating service outages, performance degradation, and health monitoring. \r\n<ul>\r\n<li>Health monitoring of SharePoint Server 2016</li>\r\n<li>Monitors Events and Services and alerts when service outages are detected</li>\r\n<li>Monitors Performance and warns users when SharePoint performance is at risk</li>\r\n<li>Forwards users to up-to-date TechNet knowledge articles</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.13125.10000",
+    "detailsSection_file_name": [
+        "system_center_monitoring_pack_guide_for_microsoft_sharepoint_2016.docx",
+        "Microsoft.SharePoint.2016.ManagementPacks.msi"
+    ],
+    "detailsSection_file_size": [
+        "154.6 KB",
+        "692.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows Server 2008 R2</li>\r\n<ul>\r\n<li>\r\nOther Software:  System Center Operations Manager 2012 or later\r\n</li> \r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li> View the Management Pack Guide for importing and configuration instructions. </li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52043",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Joins - A Concurrency Library",
+    "downloadDescription": "Comega promised C# programmers a more pleasant world of concurrent programming. Last published: August 2, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Setup.msi",
+            "url": "https://download.microsoft.com/download/3/7/8/37892553-090a-4cc2-af61-1692f2ddad26/Setup.msi",
+            "size": "1256448",
+            "version": "1.1.0.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Comega promised C# programmers a more pleasant world of concurrent programming. Comega had a simple, declarative, and powerful model of concurrency\u2014Join Patterns\u2014applicable both to multithreaded applications and to the orchestration of asynchronous, event-based distributed applications. By exploiting Generics in the Common Language Runtime, we can provide join patterns as a library rather than as a language feature. Offering a library has advantages: The library is language neutral, supporting C#, Visual Basic, and other languages; and the library's join patterns are dynamic, supporting solutions difficult to express with the static join patterns of Comega. The Joins library is efficient and has a simple interface that makes it easy to translate Comega programs to C#. The installer includes a tutorial, documentation, samples, and demos.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.0.0",
+    "detailsSection_file_name": [
+        "Setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52420",
+    "downloadPreload": true
+}

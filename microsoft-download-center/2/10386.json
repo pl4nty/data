@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2010 Deployment Kit for App-V",
+    "downloadDescription": "The Microsoft Office 2010 Deployment Kit for App-V enables Office 2010 client products to be sequenced and deployed with Microsoft Application Virtualization (App-V).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Office2010AppVKit-x86.exe",
+            "url": "https://download.microsoft.com/download/f/6/b/f6b98401-6f1a-4ae7-a9ea-6f08e37f181b/Office2010AppVKit-x86.exe",
+            "size": "10681136",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Office2010AppVKit-x64.exe",
+            "url": "https://download.microsoft.com/download/f/6/b/f6b98401-6f1a-4ae7-a9ea-6f08e37f181b/Office2010AppVKit-x64.exe",
+            "size": "14509224",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Office 2010 Deployment Kit for App-V is required for sequencing and deploying Office 2010 client products with Microsoft Application Virtualization (App-V).  This kit includes the components required for Office license activation.<br/><br/>\r\nThis product must be installed on the App-V sequencing station prior to monitoring the Office 2010 client installation.<br/><br/>\r\nThis product must also be installed on the client machines to which virtualized Office 2010 client packages will be deployed. It can be configured to enable certain system components to interact with virtualized Office 2010, including:<br/>\r\n<ul>\r\n  <li>Fast search in virtualized Outlook 2010 using Windows Desktop Search</li>\r\n  <li>Ability for virtualized Office 2010 applications to open, edit, and save Office files hosted with Windows SharePoint</li>\r\n  <li>Search indexing support for Office file types</li>\r\n <li>URL protocol redirection to virtualized Outlook 2010</li>\r\n  <li>Print to virtualized OneNote 2010</li>\r\n  <li>Mail control panel applet for virtualized Outlook 2010</li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Office2010AppVKit-x86.exe",
+        "Office2010AppVKit-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.2 MB",
+        "13.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <li><b>This download works with the following Office products:</b> Office 2010 volume license client products</li>\r\n  <li><b>This download works with the following versions of App-V:</b> Microsoft Application Virtualization 4.6</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To obtain the product:</b><br/>\r\n<ol>\r\n  <li>Download the file that is appropriate for your operating system platform.<br/><br/>For 32-bit Windows platforms:<br/>Office2010AppVKit_x86.exe<br/><br/>For 64-bit Windows platforms:<br/>Office2010AppVKit_x64.exe<br/></li>\r\n  <li>Double-click the executable on your hard disk to start the Setup program</li>\r\n  <li>Follow the instructions on the screen to complete the installation</li>\r\n</ol>\r\n<b>Instructions for use:</b><br/>\r\nThis product must be properly configured to enable Office 2010 deployment via App-V.<br/>\r\nPlease refer to the recipe for configuration information.<br/>\r\n<a href=\"http://support.microsoft.com/kb/983462\">Office 2010 Sequencing Recipe</a>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "application Virtualization Product Site",
+            "url": "http://www.microsoft.com/systemcenter/appv/default.mspx"
+        },
+        {
+            "title": "application Virtualization Team Blog",
+            "url": "http://blogs.technet.com/softgrid/default.aspx"
+        },
+        {
+            "title": "application Virtualization Best Practices",
+            "url": "http://technet.microsoft.com/library/dd351420.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10386",
+    "downloadPreload": true
+}

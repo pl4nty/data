@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "C#UNG",
+    "downloadDescription": "Microsoft C#UNG (pronounced \u201cchung\u201d and short for C# Universal Network/Graph System) is a desktop application that displays graphs, which are collections of vertices connected by edges. Last published: July 9, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ChungSetup.msi",
+            "url": "https://download.microsoft.com/download/5/7/7/577d2d56-f600-424b-9436-14548c7a449e/ChungSetup.msi",
+            "size": "2032128",
+            "version": "1.0.1.13",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft C#UNG (pronounced \u201cchung\u201d and short for C# Universal Network/Graph System) is a desktop application that displays graphs, which are collections of vertices connected by edges. C#UNG can read graphs in several file formats, lay them out using one of several layout algorithms, and display them with a variety of display options. An Excel add-in enables graph data entered in an Excel worksheet to be displayed easily in C#UNG. The components used to develop the application are available as an API for developers who want to create and display graphs in their own applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1.13",
+    "detailsSection_file_name": [
+        "ChungSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52573",
+    "downloadPreload": true
+}

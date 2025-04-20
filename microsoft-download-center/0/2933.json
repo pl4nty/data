@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Hyper-V Server 2008 Configuration Guide",
+    "downloadDescription": "Detailed setup & configuration guide for Microsoft Hyper-V Server 2008",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hyper-V Server Configuration Tool Guide v 1.2.docx",
+            "url": "https://download.microsoft.com/download/3/2/0/320f5df9-b282-4e69-8055-2c7031870b8b/Hyper-V Server Configuration Tool Guide v 1.2.docx",
+            "size": "206985",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide will provide you with all the information you need to setup and configure Hyper-V Server 2008. It covers setup up local administrator passwords, the new Hyper-V configuration tool and remote management.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "Hyper-V Server Configuration Tool Guide v 1.2.docx"
+    ],
+    "detailsSection_file_size": [
+        "202.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2003 or higher",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Download the the Hyper-V Server 2008 Configuration Guide and open with Mirosoft Word",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Hyper-V Server 2008 Website",
+            "url": "http://www.microsoft.com/hvs"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2933",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Application Driver (Beta)",
+    "downloadDescription": "Test your applications on Windows PC",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsApplicationDriver.msi",
+            "url": "https://download.microsoft.com/download/6/8/7/687dee85-e907-4a95-8035-8bc969b9ea95/WindowsApplicationDriver.msi",
+            "size": "3485696",
+            "version": "0.3",
+            "datePublished": "7/15/2024 4:15:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Application Driver provides a UI Test Automation service that follows the WebDriver JSON Wire Protocol standard.\r\n\r\nThis service is currently in Beta\r\nFor more information visit http://aka.ms/drivemyapps\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.3",
+    "detailsSection_file_name": [
+        "WindowsApplicationDriver.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 PC",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Install the downloaded MSI on the PC where the apps being tested will run\r\nIn the resulting installation directory launch WinAppDriver.exe\r\n\r\nWhen WinAppDriver.exe runs it opens a Console window and displays the IP address and port it is listening to.  \r\nDefault IP address is 127.0.0.1\r\nYou can now run tests pointing to this IP address.\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "documentation and Sample",
+            "url": "http://github.com/microsoft/winappdriver"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51663",
+    "downloadPreload": true
+}

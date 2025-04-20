@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Local Deep Kernel Learning",
+    "downloadDescription": "There has been an explosion in the size of modern day training sets with the advent of big data, cheap crowdsourcing and other techniques for gathering labelled information efficiently. Last published: November 26, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LDKL.zip",
+            "url": "https://download.microsoft.com/download/b/5/f/b5f639fd-479e-41ea-8c60-ae9fd37657f8/LDKL.zip",
+            "size": "1951061",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "There has been an explosion in the size of modern day training sets with the advent of big data, cheap crowdsourcing and other techniques for gathering labelled information efficiently. This presents a significant challenge for non-linear SVMs since their cost of prediction can grow linearly with the size of the training set. Thus, even though non-linear SVMs have defined the state-of-the-art on multiple benchmark tasks, their use in real world applications remains limited.\r\n\r\nWe develop a Local Deep Kernel Learning (LDKL) technique  for efficient non-linear SVM prediction while maintaining classification accuracy above an acceptable threshold. LDKL learns a tree-based primal feature embedding which is high dimensional and sparse. Primal based classification decouples prediction costs from the number of support vectors and the size of the training set and LDKL\u2019s tree-structured features efficiently encode non-linearities while speeding up prediction exponentially over the state-of-the-art. We develop routines for optimizing over the space of tree-structured features and efficiently scale to problems with more than half a million training points. Experiments on benchmark data sets reveal that LDKL can reduce prediction costs by more than three orders of magnitude in some cases with a moderate sacrifice in classification accuracy as compared to RBF-SVMs. Furthermore, LDKL can achieve better classification accuracies over leading methods for speeding up non-linear SVM prediction. In particular, LDKL is significantly better than kernel approximation techniques, such as Random Fourier Features  and Nystr\u00f6m, as it focusses on the decision boundary rather than modeling the kernel everywhere in space. LDKL can also be much faster than reduced set methods as its tree-structured features can be computed in logarithmic time.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LDKL.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52512",
+    "downloadPreload": true
+}

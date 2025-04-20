@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Faculty Seminars  March - April 2003",
+    "downloadDescription": "Demos and course material from the .NET Faculty Seminar March - April 2003",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WebSolnsCourse_DrissZouakb.zip",
+            "url": "https://download.microsoft.com/download/a/2/0/a20a0ae0-0cd8-4b76-885f-3a6506ffdc56/WebSolnsCourse_DrissZouakb.zip",
+            "size": "2487287",
+            "version": "-",
+            "datePublished": "3/15/2024 3:11:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebServicesDemob.zip",
+            "url": "https://download.microsoft.com/download/a/2/0/a20a0ae0-0cd8-4b76-885f-3a6506ffdc56/WebServicesDemob.zip",
+            "size": "205006",
+            "version": "-",
+            "datePublished": "3/15/2024 3:11:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Demos and course material from the Faculty Seminars  March - April 2003",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "-",
+    "detailsSection_file_name": [
+        "WebSolnsCourse_DrissZouakb.zip",
+        "WebServicesDemob.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB",
+        "200.2 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "See supported operating systems above.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 3.1",
+        "Windows 3.11",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows CE",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Media Center Edition"
+    ],
+    "installInstructionSection": "Please click on each link below to download the (zip) files from the .NET Faculty Seminars.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7048",
+    "downloadPreload": true
+}

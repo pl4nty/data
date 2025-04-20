@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Outsourcing Product Terms update FAQ",
+    "downloadDescription": "Microsoft is updating our on-premises outsourcing software terms.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FAQ for customers Microsoft outsourcing rights updates.pdf",
+            "url": "https://download.microsoft.com/download/3/0/8/3082c2fa-16b5-4025-b003-db9efedf91d2/FAQ for customers Microsoft outsourcing rights updates.pdf",
+            "size": "247986",
+            "version": "October 2019",
+            "datePublished": "7/15/2024 4:28:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft is updating our on-premises outsourcing software terms to clarify the distinction between traditional on-premises and public cloud licensing, and to create more consistent licensing terms across public cloud deployment options including multitenant and dedicated hosted cloud services. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "October 2019",
+    "detailsSection_file_name": [
+        "FAQ for customers Microsoft outsourcing rights updates.pdf"
+    ],
+    "detailsSection_file_size": [
+        "242.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "all",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100416",
+    "downloadPreload": true
+}

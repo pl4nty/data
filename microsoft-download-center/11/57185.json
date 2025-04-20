@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_1806",
+    "downloadDescription": "MARS_1806",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/4/d/c/4dc025b4-d84e-429d-862c-14b24141899a/MARSAgentInstaller.exe",
+            "size": "41008864",
+            "version": "WIN2K12-R2",
+            "datePublished": "7/15/2024 4:52:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MARS_1806 Build Version 9132",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57185",
+    "downloadPreload": true
+}

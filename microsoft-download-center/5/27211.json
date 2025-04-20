@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2010 Service Pack 1 (KB2529927)",
+    "downloadDescription": "Migrating setup project from VS2008 to VS2010SP1 changes component GUIDs, which causes upgrades to fail",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs10sp1-kb2529927-v2-x86.exe",
+            "url": "https://download.microsoft.com/download/7/6/9/7691c1b6-b5e9-4f75-940f-1af784cfc71a/VS10SP1-KB2529927-v2-x86.exe",
+            "size": "2329552",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "When you install the .msi file that is created from the Visual Studio 2010 SP1 Setup project, the .msi file determines that the GUID has changed. Therefore, the .msi file removes the files and registry keys for the installation path by using the sequence of the project. This issue occurs because a different hashing algorithm is used to create the Globally Unique Identifiers (GUIDs) in Visual Studio 2010 SP1. \r\n<br></br>\r\nTo resolve this issue, apply this hotfix, and then set the new BackwardCompatibleIDGeneration property to True before you build the project. \r\n<br></br>\r\nThis hotfix introduces the BackwardCompatibleIDGeneration property. By default, this property is set to False. Before you build the Setup project in Visual Studio 2010 SP1, you have to explicitly set the BackwardCompatibleIDGeneration property to True. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2529927",
+        "name": "KB2529927"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "vs10sp1-kb2529927-v2-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To apply this hotfix, you must have Microsoft Visual Studio 2010 Service Pack 1 (SP1) installed. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2529927",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223680"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27211",
+    "downloadPreload": true
+}

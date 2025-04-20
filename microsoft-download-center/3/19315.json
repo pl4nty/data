@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Internet Explorer for Windows Server 2003 64-bit Itanium Edition (KB912945)",
+    "downloadDescription": "This update includes minor changes to how Internet Explorer handles some web pages that use Microsoft ActiveX controls. Please see the Overview section of this page for more information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003-KB912945-ia64-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/3/7/e375aacf-0e24-4b85-a7f9-5d98c6fd9128/WindowsServer2003-KB912945-ia64-ENU.exe",
+            "size": "45876464",
+            "version": "912945",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update includes minor changes to how Internet Explorer handles some web pages that use Microsoft ActiveX controls.  Certain webpages will require users to manually activate Active X controls by clicking on it or using the TAB key and ENTER key. This update contains all previously released security updates. After you install this item, you may have to restart your computer.\n\n<br/><br/>\n<b>Critical security updates are available:</b> To find the latest security releases for you visit <A HREF=\"http://go.microsoft.com/?LinkID=275655\">Windows Update</A> and click \"Scan for updates.\" And visit the <A HREF=\"http://go.microsoft.com/?LinkID=263669\">Protect your PC site</A> to learn how to have the latest security updates delivered directly to your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB912945",
+        "name": "KB912945"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "912945",
+    "detailsSection_file_name": [
+        "WindowsServer2003-KB912945-ia64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "43.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer with the following operating system:<BR /><UL><LI>Windows Server 2003 Family Itanium 64-bit</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19315",
+    "downloadPreload": true
+}

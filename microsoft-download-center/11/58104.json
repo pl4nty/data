@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 One-time Vendors and Invoices Sample CSV File",
+    "downloadDescription": "Sample CSV file, linked to from Dynamics AX Help \"Import and create one-time vendors\" topic.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OTVITestPSUSFull.csv",
+            "url": "https://download.microsoft.com/download/7/4/b/74be2616-f05b-4903-adf4-93ec76a66516/OTVITestPSUSFull.csv",
+            "size": "844",
+            "version": "6.3",
+            "datePublished": "7/15/2024 3:03:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CSV file contains sample Accounts Payable data for fictitious vendors and invoices.  Users can create their own files and import into Dynamics Ax 2012 R3 CU8.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.3",
+    "detailsSection_file_name": [
+        "OTVITestPSUSFull.csv"
+    ],
+    "detailsSection_file_size": [
+        "844 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For information about the system requirements for Microsoft Dynamics AX 2012, see http://go.microsoft.com/fwlink/?LinkId=213071 \r\nSystem requirements for Microsoft Dynamics AX 2012\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58104",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Optical Data",
+    "downloadDescription": "This dataset includes 14 months of optical data from Microsoft\u2019s wide-area backbone network in North America.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "optical_data.zip",
+            "url": "https://download.microsoft.com/download/1/4/2/1428b98d-0726-4442-8aef-8d03080731ae/optical_data.zip",
+            "size": "959580707",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:40:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Wide-area backbone networks (WAN) of Internet service providers and cloud providers are the workhorses of Internet traffic delivery. Improving the availability and efficiency of the WAN is central to their ability to provide services in a reliable, cost-effective manner. Consequently, there has been significant research into measuring and characterizing various aspects of the WAN, such as topology, routing, traffic, and reliability. Much of prior work, however, focuses on the IP layer, and little is publicly known about the characteristics of the optical layer which forms the physical transmission medium of WANs. \r\n<br />\r\n<br />\r\nAt Microsoft, we are conducting, to our knowledge, the first large scale studies of optical layer in WAN. Our dataset is based on 14 months of data, from February 2015 to April 2016, taken from Microsoft\u2019s optical backbone in North America. This backbone has O(50) optical cross-connects, O(100) WAN segments, and O(1000) optical channels. We poll the aggregation devices every 15 minutes for their optical signal q-factor, transmit power (dBm), chromatic dispersion (ps/nm), and polarization mode dispersion. Below we share the data set for random 4000 channels across random 115 optical paths. For confidentiality reasons, we have taken out days at which there has been an outage. This data is the first public release of a large-scale optical backbone and provides researchers with a unique opportunity to study temporal behavior of optical channels, the quality of signal, correlation among channels, correlation among segments, and more.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "optical_data.zip"
+    ],
+    "detailsSection_file_size": [
+        "915.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54267",
+    "downloadPreload": true
+}

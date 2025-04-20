@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Bulk-Synchronous GPU Programming Compiler",
+    "downloadDescription": "This is a compiler for the Bulk-Synchronous GPU Programming (BSGP) language. Last published: December 12, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "bsgp.msi",
+            "url": "https://download.microsoft.com/download/3/9/3/393f5fbd-39b3-490e-aacc-bdc5c69aed3b/bsgp.msi",
+            "size": "40269824",
+            "version": "2.0.0.2",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a compiler for the Bulk-Synchronous GPU Programming (BSGP) language. BSGP is a new language for general-purpose computation on a graphics processing unit (GPU). BSGP programs look similar to sequential C programs, and programmers need to supply only a bare minimum of extra information to describe parallel processing on GPUs. As a result, BSGP programs are easy to read, write, and maintain, and the ease of programming does not come at the cost of performance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0.2",
+    "detailsSection_file_name": [
+        "bsgp.msi"
+    ],
+    "detailsSection_file_size": [
+        "38.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52599",
+    "downloadPreload": true
+}

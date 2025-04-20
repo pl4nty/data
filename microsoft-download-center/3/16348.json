@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Thiago Silva on Reporting Services for SQL 2008",
+    "downloadDescription": "Carl and Richard talk to Thiago Silva about the new features of Reporting Services for SQL Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080826TSilva.zip",
+            "url": "https://download.microsoft.com/download/d/d/e/dde38609-82c1-4f42-a9a0-c9caedd99f71/20080826TSilva.zip",
+            "size": "44605552",
+            "version": "1.0",
+            "datePublished": "12/15/2023 3:09:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Thiago Silva is a software and business intelligence consultant based out of Dallas Texas. He was born and raised in Rio de Janeiro, Brazil, and has been living in the US for 13 years. <br />\n<br />\nThiago has been an instructor for the Microsoft DevCares sessions and is also an instructor for Hitachi Consulting's External Education Services, teaching clients on the Microsoft BI tools. He is an architect for the Microsoft practice at Hitachi Consulting in Dallas and has helped several clients implement business intelligence and reporting solutions using .NET and SQL Server technologies. <br />\n<br />\n <br />\n<br />\nHe has been working with the .NET framework since its early 1.0 days and has implemented Reporting Services since its first RTM version. He is a Microsoft Certified Application Developer on the .NET framework, and a member of the Dallas Connected Systems Users group, and the North Dallas .NET Users group. He is a co-author of the book \"Professional SQL Server 2008 Reporting Services\" by Wrox Publishing. He is a devoted husband and father of a beautiful 2 yr old girl, and enjoys playing guitar on his spare time and at church. You can visit his blog, Silvaware, at <a href=\"http://silvaware.blogspot.com/\">silvaware.blogspot.com</a>, andfollow him on twitter at <a href=\"http://twitter.com/tafs7\">twitter.com/tafs7</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080826TSilva.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.5 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16348",
+    "downloadPreload": true
+}

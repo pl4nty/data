@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2016 - Software Defined Data Center",
+    "downloadDescription": "Windows Server 2016 - Software Defined Data Center",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Software Defined Data Center.docx",
+            "url": "https://download.microsoft.com/download/9/8/a/98a56fce-aaa6-4dd2-88c6-44e8f7411a7f/Software Defined Data Center.docx",
+            "size": "11819600",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Software Defined Data Center.pptx",
+            "url": "https://download.microsoft.com/download/9/8/a/98a56fce-aaa6-4dd2-88c6-44e8f7411a7f/Software Defined Data Center.pptx",
+            "size": "6762928",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Environment Diagram.vsdx",
+            "url": "https://download.microsoft.com/download/9/8/a/98a56fce-aaa6-4dd2-88c6-44e8f7411a7f/Environment Diagram.vsdx",
+            "size": "68990",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Software Defined Data Center Scripts.zip",
+            "url": "https://download.microsoft.com/download/9/8/a/98a56fce-aaa6-4dd2-88c6-44e8f7411a7f/Software Defined Data Center Scripts.zip",
+            "size": "133941",
+            "version": "January 2017",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Server 2016 - Software Defined Data Center",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2017",
+    "detailsSection_file_name": [
+        "Software Defined Data Center.docx",
+        "Software Defined Data Center.pptx",
+        "Environment Diagram.vsdx",
+        "Software Defined Data Center Scripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.3 MB",
+        "6.4 MB",
+        "67.4 KB",
+        "130.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows/Office",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download files to view",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54673",
+    "downloadPreload": true
+}

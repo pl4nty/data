@@ -1,0 +1,156 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Server 2016",
+    "downloadDescription": "Download Microsoft Dynamics CRM Server 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Server-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/3/4/f/34fb8c80-f245-41e7-afe2-6388005a702b/CRM2016-Server-ENU-amd64.exe",
+            "size": "459204624",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 4:07:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Download Microsoft Dynamics CRM Server 2016. This download also includes Microsoft Dynamics CRM Reporting Extensions.<br /><br/>\r\nAfter the download is complete, run Microsoft Dynamics CRM Server Setup. During the setup, you may insert a valid commercial product key or use one of the following 90-day trial keys. <br/><br/>\n<ul><li>Microsoft Dynamics CRM Workgroup Server 2016 (5 CAL limit): D8W6N-FJXJF-CC3TK-6CMGV-VVBH9</li> \n<li>Microsoft Dynamics CRM Server 2016 (no CAL limit): WCPQN-33442-VH2RQ-M4RKF-GXYH4 </li></ul><br/><br/>\r\nNotice that, if you use a 90-day trial key, you can enter a valid commercial product key at any time during the trial period to continue to use the product.<br/><br/>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.00.0000.1088",
+    "detailsSection_file_name": [
+        "CRM2016-Server-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "437.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For the latest information about Microsoft Dynamics CRM 2016 hardware and software requirements, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=626010\">Microsoft Dynamics CRM 2016 system requirements and required technologies</a>. <br/>\r\nFor Microsoft Dynamics CRM Server 2016 installation instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=626011\">Install or upgrade Microsoft Dynamics CRM Server</a>.\n\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>. </li>\n<li>When the File Download dialog box appears, click <b>Save</b> to save the file to your computer. </li>\n<li>When you're ready to install the product, double-click the executable file, and then follow the instructions on the screen. </li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2016 SDK",
+            "url": "http://msdn.microsoft.com/en-us/library/hh547453(v=crm.7).aspx"
+        },
+        {
+            "title": "install or upgrade Microsoft Dynamics CRM Server",
+            "url": "http://technet.microsoft.com/en-us/library/hh699706(v=crm.7).aspx"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2016 Readme",
+            "url": "http://www.microsoft.com/en-us/dynamics/crm-customer-center/Microsoft_Dynamics_CRM_2015_CRM_Online_Readme.htm"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50372",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "In-depth exploration into the latest tools and strategies to deliver Cloud-Native Applications that run anywhere",
+    "downloadDescription": "Download the e-book and the accompanying guide to get an overview of the latest innovations in the cloud-native space and learn how organizations and developers can use all these technologies to deploy Cloud-Native applications anywhere.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Guide - How to deliver Cloud Native Applications that run anywhere.pdf",
+            "url": "https://download.microsoft.com/download/6/f/4/6f48940a-0fd8-4119-8bef-dc5a5073b1dd/Guide - How to deliver Cloud Native Applications that run anywhere.pdf",
+            "size": "3122595",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:30:34 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Ebook - Build Cloud Native Apps Anywhere at scale.pdf",
+            "url": "https://download.microsoft.com/download/6/f/4/6f48940a-0fd8-4119-8bef-dc5a5073b1dd/Ebook - Build Cloud Native Apps Anywhere at scale.pdf",
+            "size": "1246168",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:30:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These documents aim to provide a 360-degree view of the best solutions from Microsoft for building Cloud Native Apps that run anywhere.\r\n\r\n<ul>\r\n<li>The e-book <b>Build Cloud-Native Applications Anywhere, at scale</b>explains the new trends sustaining the cloud-native approach, and the various technologies to deliver cloud-native apps anywhere and at scale.</li>\r\n</ul>\r\n\r\n\r\n<ul>\r\n<li>The guide <b>How to deliver Cloud-Native Applications that run anywhere</b> explains how to:</li>\r\n</ul>\r\n\r\n<ul>\r\n<li>Use familiar tools like Visual Studio Code to create reusable environments for developers with containers, and leverage building blocks to fasten Cloud Native apps development with Dapr.</li>\r\n<li>Spin up a development environment with a click-through GitHub Codespaces, begin the correct way with GitHub Accelerators through baseline and pre-configured architecture, deliver your code with GitHub Actions, and automate the infrastructure creation with Bicep.</li>\r\n<li>Deploy Azure Application services on any CNCF-compatible Kubernetes cluster and manage your apps anywhere with Azure Arc.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Guide - How to deliver Cloud Native Applications that run anywhere.pdf",
+        "Ebook - Build Cloud Native Apps Anywhere at scale.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux, Windows, Mac",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the PDF file(s) and open it with the PDF reader of your choices.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103229",
+    "downloadPreload": true
+}

@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 SP2 Latest Cumulative Update",
+    "downloadDescription": "Cumulative Update Package 17 for SQL Server 2016 SP2 - KB5001092",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016-KB5001092-x64.exe",
+            "url": "https://download.microsoft.com/download/6/0/6/606b3a2e-0eae-4dcd-930d-178686370921/SQLServer2016-KB5001092-x64.exe",
+            "size": "789747072",
+            "version": "13.0.5888.11",
+            "datePublished": "7/15/2024 4:21:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\n  <b>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2016 SP2</b> <br /> <br />\n<ul>\n  <li>This update contains fixes for issues that were fixed after the release of SQL Server 2016 SP2.</li> \n  <li>The latest 2016 SP2 update is <a name=\"KB5001092\"></a><a href=\"https://support.microsoft.com/en-us/help/5001092 \">CU17 - 5001092</a></li>  \n  <li>You may have been directed here from a previous SP2 Cumulative Update Knowledge Base (KB) article (See <a name=\"KB3177312\"></a><a href=\"http://support.microsoft.com/kb/3177312 \">SQL Server 2016 SP2 build versions</a>)</li>\n  <li>This Cumulative Update includes all fixes from all previous SP2 Cumulative Updates, therefore it can be installed to resolve issues fixed in any previous SP2 CU</li> </ul> \n  <br />\n\n\nMicrosoft recommends that you upgrade to the latest 2016 Service Pack available:\n<a name=\"FooBar\"></a><a href=\"http://support.microsoft.com/kb/3177534 \">How to obtain the latest service pack for SQL Server 2016</a>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.5888.11",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB5001092-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "753.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n      Please refer to <a name=\"KB5001092\"></a><a href=\"http://support.microsoft.com/help/5001092 \">KB5001092</a> for system requirements.\n<br />\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<br />\nAfter the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56975",
+    "downloadPreload": true
+}

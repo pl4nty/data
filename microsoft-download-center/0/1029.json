@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Virtual Machine Manager 2008 R2 Release Notes",
+    "downloadDescription": "This download contains the Virtual Machine Manager (VMM) 2008 R2 Release Notes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Virtual Machine Manager 2008 R2 Release Notes.htm",
+            "url": "https://download.microsoft.com/download/d/e/9/de954e00-81fa-4cbf-9edf-18845f6f7512/Virtual Machine Manager 2008 R2 Release Notes.htm",
+            "size": "21500",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "The VMM 2008 R2 Release Notes contain information about known issues with VMM 2008 R2.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Virtual Machine Manager 2008 R2 Release Notes.htm"
+    ],
+    "detailsSection_file_size": [
+        "21.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Internet Explorer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Virtual Machine Manager TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=119246"
+        },
+        {
+            "title": "virtualization TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=121353"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1029",
+    "downloadPreload": true
+}

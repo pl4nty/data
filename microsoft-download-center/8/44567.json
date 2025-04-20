@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2015 Software Development Kit (SDK)",
+    "downloadDescription": "Contains the complete software development kit for Microsoft Dynamics CRM 2015 and the User Interface Integration (UII) SDK.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsCRM2015UII.zip",
+            "url": "https://download.microsoft.com/download/6/2/c/62c5ca3c-435f-41fc-8fa1-1bae8dc9126f/MicrosoftDynamicsCRM2015UII.zip",
+            "size": "59468178",
+            "version": "7.0.0",
+            "datePublished": "7/15/2024 3:55:53 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftDynamicsCRM2015SDK.zip",
+            "url": "https://download.microsoft.com/download/6/2/c/62c5ca3c-435f-41fc-8fa1-1bae8dc9126f/MicrosoftDynamicsCRM2015SDK.zip",
+            "size": "87238725",
+            "version": "7.0.0",
+            "datePublished": "7/15/2024 3:55:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": " The <i>Microsoft Dynamics CRM 2015 Software Development Kit (SDK)</i> is for developers. The documentation contains information for developers writing server side code, client-side scripts, custom business logic, integration modules, workflow assemblies, and plug-ins. <br /><br />\r\n The SDK includes an architectural overview of Microsoft Dynamics CRM, the entity model, security model, and web services. Sample code and walkthroughs are provided to guide you through the new features. It also contains information for developers customizing the web client or Microsoft Dynamics CRM for Microsoft Office Outlook, including scripting, integration of custom web pages, and sample code.\r\n <br /><br />\r\n In addition to the documentation, this download package includes the assemblies and tools needed for development, helper code for authentication, and Microsoft Visual Studio projects for the sample code found in the documentation.\r\n <br /><br />\r\nYou can also choose to download the User Interface Integration (UII) solution framework, which includes a deployment guide, development guide and api reference. UII uses Microsoft Dynamics CRM for the delivery of configuration data for the Integrated Agent Desktop. It includes development and run-time components. Applications built with UII can provide unified access to customer information across different systems and can aggregate different modes of customer interactions or channels.<br />\r\n <br />\r\nThe UII download package also contains developer assets for Unified Service Desk, which includes default Unified Service Desk configuration data schema file, default style (theme), a sample panel layout, developer guide, and sample code for the custom controls available in the sample applications. For more information about Unified Service Desk, see the <a target=\"_blank\" href=\"http://msdn.microsoft.com/en-US/library/dn864923.aspx\">Unified Service Desk Developer Guide</a>.<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.0",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsCRM2015UII.zip",
+        "MicrosoftDynamicsCRM2015SDK.zip"
+    ],
+    "detailsSection_file_size": [
+        "56.7 MB",
+        "83.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visual Studio 2012, Microsoft Visual Studio 2013, or Microsoft Visual Studio 2015",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": " <ol>\r\n  <li>The download is a self-extracting executable file. To start the download, click <b>Download</b>.</li>\r\n  <li>\r\n   If the <b>File Download</b> dialog box appears, do one of the following:<ul>\r\n    <li>To start the download immediately, click <b>Run</b>.</li>\r\n    <li>To copy the download to your computer to view at a later time, click <b>Save</b>.</li>\r\n   </ul>\r\n  </li>\r\n </ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM Developer Center",
+            "url": "https://msdn.microsoft.com/dynamics/crm/default.aspx"
+        },
+        {
+            "title": "deploying and administering Microsoft Dynamics CRM Online and Microsoft Dynamics CRM 2015",
+            "url": "https://technet.microsoft.com/library/hh699811(v=crm.7).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44567",
+    "downloadPreload": true
+}

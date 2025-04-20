@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Monitoring Pack for WS-Management and SMASH Device Discovery",
+    "downloadDescription": "This monitoring pack adds a new template to System Center \u2013 Operations Manage to enable discovery and management of WS-Management/SMASH compliant devices..",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WS-ManagementAndSMASHDeviceDiscoveryTemplate.msi",
+            "url": "https://download.microsoft.com/download/a/3/4/a3442a67-89f2-48c9-8582-8e4f4cfa53e1/WS-ManagementAndSMASHDeviceDiscoveryTemplate.msi",
+            "size": "655360",
+            "version": "7.0.8833.0",
+            "datePublished": "7/15/2024 5:05:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack adds a new template to System Center \u2013 Operations Manage to enable discovery and management of WS-Management/SMASH compliant devices. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThe features of this Management Pack include:<br/>\r\n<ul>\r\n<li> Enables discovery and monitoring of WS-Management/SMASH compliant devices via a Management Pack Template</li> \r\n<li> Scans IP ranges, subnets or list of IP addresses searching for compliant devices </li>\r\n<li> Device health determined through WS-Management ping</li>\r\n<li> Device health state rolls up to the appropriate computer\u2019s health </li>\r\n<li> Supports both simple and Windows authentication modes</li>\r\n<li> Supports standard WS-Management communication options </li>\r\n<li> Supports Operations Manager resource pools</li>\r\n</ul>\r\n<br/>\r\n<b>Release History </b><br/>\r\n<ul>\r\n<li>4/1/2012 - Original Release version 7.0.8707.0 </li>\r\n</ul>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8833.0",
+    "detailsSection_file_name": [
+        "WS-ManagementAndSMASHDeviceDiscoveryTemplate.msi"
+    ],
+    "detailsSection_file_size": [
+        "640.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This managment pack is independent of SCOM and Windows version. This MP will be imported on all Windows and SCOM versions.\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "When imported, this monitoring pack will add a new Management Pack Template name \u201cWS-Management and SMASH device template\u201d in the Authoring space of the Operations Manager console.  This template will enable users to discover and monitor devices out-of-band via WS-Management/SMASH.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29266",
+    "downloadPreload": true
+}

@@ -1,0 +1,128 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment guide for Microsoft SharePoint Server 2010 ",
+    "downloadDescription": "Deployment instructions for SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-Microsoft-SharePoint-Server-2010.mobi",
+            "url": "https://download.microsoft.com/download/3/b/f/3bf70fe5-83fd-4a26-ac19-ebf94ee312e5/Deployment-guide-for-Microsoft-SharePoint-Server-2010.mobi",
+            "size": "1261527",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-Microsoft-SharePoint-Server-2010.epub",
+            "url": "https://download.microsoft.com/download/3/b/f/3bf70fe5-83fd-4a26-ac19-ebf94ee312e5/Deployment-guide-for-Microsoft-SharePoint-Server-2010.epub",
+            "size": "957662",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServDeployment.xps",
+            "url": "https://download.microsoft.com/download/3/b/f/3bf70fe5-83fd-4a26-ac19-ebf94ee312e5/SharePtServDeployment.xps",
+            "size": "3766936",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServDeployment.pdf",
+            "url": "https://download.microsoft.com/download/3/b/f/3bf70fe5-83fd-4a26-ac19-ebf94ee312e5/SharePtServDeployment.pdf",
+            "size": "2822032",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePtServDeployment.doc",
+            "url": "https://download.microsoft.com/download/3/b/f/3bf70fe5-83fd-4a26-ac19-ebf94ee312e5/SharePtServDeployment.doc",
+            "size": "2621440",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "This book includes information deployment scenarios, step-by-step installation instructions, and post-installation configuration steps for deploying Microsoft SharePoint Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Deployment-guide-for-Microsoft-SharePoint-Server-2010.mobi",
+        "Deployment-guide-for-Microsoft-SharePoint-Server-2010.epub",
+        "SharePtServDeployment.xps",
+        "SharePtServDeployment.pdf",
+        "SharePtServDeployment.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "935.2 KB",
+        "3.6 MB",
+        "2.7 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the lower right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10009",
+    "downloadPreload": true
+}

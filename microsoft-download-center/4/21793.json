@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Volume Licensing Brief: Application Server License Mobility",
+    "downloadDescription": "A description of recent licensing changes that permit greater mobility of software licenses across servers within data centers and server farms.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftServerVirtualization_LicenseMobility_VLBrief.pdf",
+            "url": "https://download.microsoft.com/download/9/e/4/9e4ccec9-222b-4563-8dcd-43f941aba73f/MicrosoftServerVirtualization_LicenseMobility_VLBrief.pdf",
+            "size": "1701207",
+            "version": "Sept. 26, 2012",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how you can take advantage of virtualization technologies by reassigning licenses across servers within a server farm. This applies to software licenses for certain server applications and all external connector (EC) licenses. <br/><br/>\r\nIn the past, it was necessary to assign Microsoft server software and EC licenses to a specific server for at least 90 days before reassigning them to another server. With the implementation of new terms for certain products, Microsoft is waiving the 90-day reassignment rule, allowing you to reassign licenses from one server to another within a server farm as frequently as you need to. This allows you to freely move both licenses and running instances within a server farm from one server to another. <br/><br/>\r\nThis brief explains the new terms, lists eligible server licenses, and provides answers to frequently asked questions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Sept. 26, 2012",
+    "detailsSection_file_name": [
+        "MicrosoftServerVirtualization_LicenseMobility_VLBrief.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You must have Microsoft Office Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac&displaylang=en\">Word Viewer</a> installed to open this file.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "In the <b>Change Language</b> list, select the language that you want, and then click <b>Download</b> to open the file or save it to your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Volume Licensing Web Site",
+            "url": "http://www.microsoft.com/licensing"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21793",
+    "downloadPreload": true
+}

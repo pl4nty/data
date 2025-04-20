@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "PerfInsights 0.3.4.36",
+    "downloadDescription": "PerfInsights for Linux is a self-help diagnostics tool that helps collect & analyze the diagnostic data, and provides a report to help troubleshoot Linux virtual machine performance problems in Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PerfInsights.tar.gz",
+            "url": "https://download.microsoft.com/download/02e93039-e3b0-40ed-a61f-8bc9262ae9c9/PerfInsights.tar.gz",
+            "size": "684049",
+            "version": "0.3.4.36",
+            "datePublished": "3/30/2025 12:13:33 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PerfInsights Linux is a self-help diagnostics tool that helps collect & analyze the diagnostic data, and provides a report to help troubleshoot Linux virtual machine performance problems in Azure. PerfInsights Linux can be run on virtual machines as a standalone tool, or directly from the portal by installing Azure Performance Diagnostics VM Extension.<br/><br/>\nIf you are experiencing performance problems with Azure Linux virtual machines, before contacting support, run this tool. PerfInsights Linux collects various information about the virtual machine, disks/storage pools configuration and performance logs such as: <br/>\n<ul>\n<li>Operating System details (Linux distribution and version, Kernel information, Swap file location, Driver information etc.)</li>\n<li>PCI device information</li>\n<li>Azure virtual machine instance metadata</li>\n<li>Processes and memory information (List of processes, Total, available and free physical memory etc.)</li>\n<li>CPU, Memory and storage profiling information</li>\n<li>Network information (List of network adapters, Network routing table etc.)</li>\n<li>Storage infomration (Block devices list, Partitions list, LVM volumes, MDADM volumes, Mount point list etc.)</li>\n<li>Various logs (/var/log/messages, syslog, kern.log, cron.log, boot.log, yum.log, dpkg.log etc.)</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.3.4.36",
+    "detailsSection_file_name": [
+        "PerfInsights.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "668.0 KB"
+    ],
+    "detailsSection_file_date": "3/30/2025",
+    "systemRequirementsSection": "This version of PerfInsights has the following requirements :\n<ol>\n<li>PerfInsights must be executed on the VM that has the performance issue.  </li>\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "SUSE",
+        "Ubuntu"
+    ],
+    "installInstructionSection": "<ol>\n<li>Download the PerfInsights.tar.gz file to a local folder on your linux virtual machine and extract the archive.</li>\n<li>Navigate to the folder that contains the perfinsights.py file and run PerfInsights script from the terminal\n    <ul>\n        <li>sudo python perfinsights.py</li>\n     </ul>\n   </li>\n</ol>\n\n<br/>\nSample command line:<br/>\n<b>sudo python perfinsights.py -r quick -d 10s -o /tmp/output</b>\n \n<br/><br/>\nWhen the execution is complete, you will see a link to the report output in a file called:  PerformanceDiagnostics_YYYY-MM-DD_HH-MM-SS.tar.gz. Extract the archive and open PerfInsights Report.html file.  \nYou can find various logs collected under output/guestosfiles folder.\n\n<br/><br/>For more detailed instructions and additional information, please visit <a href='http://aka.ms/perfinsightslinux'  target='_blank'>http://aka.ms/PerfInsightsLinux</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58426",
+    "downloadPreload": true
+}

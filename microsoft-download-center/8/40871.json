@@ -1,0 +1,146 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Intelligence Report Volume 15 (January - June 2013)",
+    "downloadDescription": "This is the fifteenth volume of the Microsoft Security Intelligence Report.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_15_Cloud_Security_Conflict_and_Cooperation_English.pdf",
+            "url": "https://download.microsoft.com/download/5/0/3/50310cce-8af5-4fb4-83e2-03f1da92f33c/Microsoft_Security_Intelligence_Report_Volume_15_Cloud_Security_Conflict_and_Cooperation_English.pdf",
+            "size": "827711",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_15_Worldwide_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/5/0/3/50310cce-8af5-4fb4-83e2-03f1da92f33c/Microsoft_Security_Intelligence_Report_Volume_15_Worldwide_Threat_Assessment_English.pdf",
+            "size": "3055917",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_15_Regional_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/5/0/3/50310cce-8af5-4fb4-83e2-03f1da92f33c/Microsoft_Security_Intelligence_Report_Volume_15_Regional_Threat_Assessment_English.pdf",
+            "size": "4089516",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_15_English.pdf",
+            "url": "https://download.microsoft.com/download/5/0/3/50310cce-8af5-4fb4-83e2-03f1da92f33c/Microsoft_Security_Intelligence_Report_Volume_15_English.pdf",
+            "size": "3715086",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_15_Key_Findings_Summary_English.pdf",
+            "url": "https://download.microsoft.com/download/5/0/3/50310cce-8af5-4fb4-83e2-03f1da92f33c/Microsoft_Security_Intelligence_Report_Volume_15_Key_Findings_Summary_English.pdf",
+            "size": "1145064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Volume 15 of the Microsoft Security Intelligence Report provides an in-depth perspective on malicious and potentially unwanted software, software exploits, security breaches and software vulnerabilities (both in Microsoft software and in third-party software). Microsoft developed these perspectives based on detailed analysis over the past several years, with a focus on the first half of 2013.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_Security_Intelligence_Report_Volume_15_Cloud_Security_Conflict_and_Cooperation_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_15_Worldwide_Threat_Assessment_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_15_Regional_Threat_Assessment_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_15_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_15_Key_Findings_Summary_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "808.3 KB",
+        "2.9 MB",
+        "3.9 MB",
+        "3.5 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the full SIR, Worldwide Threat Assessment, Key Findings Summary and Regional Threat Assessments.  All are available as a PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40871",
+    "downloadPreload": true
+}

@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "FigureQA",
+    "downloadDescription": "FigureQA Dataset for Visual Reasoning",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "figureqa-validation2-v1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/3/1/c315c9d8-8239-487e-a895-2d3ff805b508/figureqa-validation2-v1.tar.gz",
+            "size": "424242988",
+            "version": "December 2019",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "figureqa-validation1-v1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/3/1/c315c9d8-8239-487e-a895-2d3ff805b508/figureqa-validation1-v1.tar.gz",
+            "size": "423128418",
+            "version": "December 2019",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "figureqa-train1-v1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/3/1/c315c9d8-8239-487e-a895-2d3ff805b508/figureqa-train1-v1.tar.gz",
+            "size": "2119593948",
+            "version": "December 2019",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "figureqa-test2-v1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/3/1/c315c9d8-8239-487e-a895-2d3ff805b508/figureqa-test2-v1.tar.gz",
+            "size": "404194404",
+            "version": "December 2019",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "figureqa-test1-v1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/3/1/c315c9d8-8239-487e-a895-2d3ff805b508/figureqa-test1-v1.tar.gz",
+            "size": "404418867",
+            "version": "December 2019",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "figureqa-sample-train-v1.tar.gz",
+            "url": "https://download.microsoft.com/download/c/3/1/c315c9d8-8239-487e-a895-2d3ff805b508/figureqa-sample-train-v1.tar.gz",
+            "size": "21244428",
+            "version": "December 2019",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Answering questions about a given image is a difficult task, requiring both an understanding of the image and the accompanying query. Microsoft research Montreal\u2019s FigureQA dataset introduces a new visual reasoning task for research, specific to graphical plots and figures. The task comes with an additional twist: all of the questions are relational, requiring the comparison of several or all elements of the underlying plot.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "December 2019",
+    "detailsSection_file_name": [
+        "figureqa-validation2-v1.tar.gz",
+        "figureqa-validation1-v1.tar.gz",
+        "figureqa-train1-v1.tar.gz",
+        "figureqa-test2-v1.tar.gz",
+        "figureqa-test1-v1.tar.gz",
+        "figureqa-sample-train-v1.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "404.6 MB",
+        "403.5 MB",
+        "2.0 GB",
+        "385.5 MB",
+        "385.7 MB",
+        "20.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100635",
+    "downloadPreload": true
+}

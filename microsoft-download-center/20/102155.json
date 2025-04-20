@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mixed Reality Motion Controller model drivers for HP Motion Controllers version 10.0.19041.2034",
+    "downloadDescription": "The Windows Mixed Reality Motion Controller model drivers provides 3D models to enable visualization of the controllers in games and experiences.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MotionController0669_10.0.19041.2034.zip",
+            "url": "https://download.microsoft.com/download/4/2/7/4275408f-717b-4493-9111-46756df6ebf0/MotionController0669_10.0.19041.2034.zip",
+            "size": "4150176",
+            "version": "10.0.19041.2034",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mixed reality will unleash the creativity of every person and every organization on the planet. Our journey has been filled with key moments in time that have shown us what is possible as we enter this next era of computing, the era of mixed reality. For more information about this driver, please visit <a href=\"https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software\">Mixed Reality software overview and release history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.19041.2034",
+    "detailsSection_file_name": [
+        "MotionController0669_10.0.19041.2034.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PC with Windows 10 Version 1903 or newer (May 2019 Update) compatible with Windows Mixed Reality, a Windows Mixed Reality headset, and the new HP Motion Controllers.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download the driver packages.<br />\r\n2. Once the driver packages have been downloaded, extract its contents to a location on your PC.<br />\r\n3. Connect your HMD to your PC, turn on your motion controllers and make sure they are paired and connected.<br/>\r\n4. Close the Mixed Reality Portal that automatically opens.<br/>\r\n5. Locate the extracted driver packages. In the \"MotionController0669\" folder, right click on MotionController0669Model.inf and click \"Install\".",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Mixed Reality",
+            "url": "https://www.microsoft.com/en-us/windows/windows-mixed-reality"
+        },
+        {
+            "title": "enthusiast's Guide to Windows Mixed Reality",
+            "url": "https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/"
+        },
+        {
+            "title": "mixed Reality software overview and release history",
+            "url": "https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102155",
+    "downloadPreload": true
+}

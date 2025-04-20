@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Test title",
+    "downloadDescription": "Test short desc",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dsdlctest_ks_2025Apr161540_009.txt",
+            "url": "https://download.microsoft.com/download/61302646-d59a-4259-85c7-ad9578633be5/dsdlctest_ks_2025Apr161540_009.txt",
+            "size": "3170304",
+            "version": "20250416",
+            "datePublished": "4/16/2025 11:37:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dsdlctest_ks_2025Apr161540_010.txt",
+            "url": "https://download.microsoft.com/download/61302646-d59a-4259-85c7-ad9578633be5/dsdlctest_ks_2025Apr161540_010.txt",
+            "size": "3170304",
+            "version": "20250416",
+            "datePublished": "4/16/2025 11:37:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dsdlctest_ks_2025Apr161540_008.txt",
+            "url": "https://download.microsoft.com/download/61302646-d59a-4259-85c7-ad9578633be5/dsdlctest_ks_2025Apr161540_008.txt",
+            "size": "3170304",
+            "version": "20250416",
+            "datePublished": "4/16/2025 11:37:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        }
+    ],
+    "detailsSection": "Test\nlong\ndescription",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20250416",
+    "detailsSection_file_name": [
+        "dsdlctest_ks_2025Apr161540_009.txt",
+        "dsdlctest_ks_2025Apr161540_010.txt",
+        "dsdlctest_ks_2025Apr161540_008.txt"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "3.0 MB",
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "4/16/2025",
+    "systemRequirementsSection": "Test system requirements",
+    "systemRequirementsSection_supportedOS": [
+        "Unix"
+    ],
+    "installInstructionSection": "Test install instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108139",
+    "downloadPreload": true
+}

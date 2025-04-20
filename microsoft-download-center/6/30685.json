@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Media Feature Pack for N and KN versions of Windows 8",
+    "downloadDescription": "The Media Feature Pack for N and KN versions of Windows 8 will install Media Player and related technologies on a computer running Windows 8 N or Windows 8 KN editions. For further information, please see http://support.microsoft.com and query the Knowledge Base for the article number KB2703761.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows6.2-KB2703761-x64.msu",
+            "url": "https://download.microsoft.com/download/7/a/d/7ad12930-3aa6-4040-81cf-350bf1e99076/Windows6.2-KB2703761-x64.msu",
+            "size": "82674179",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.2-KB2703761-x86.msu",
+            "url": "https://download.microsoft.com/download/7/a/d/7ad12930-3aa6-4040-81cf-350bf1e99076/Windows6.2-KB2703761-x86.msu",
+            "size": "60746899",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        }
+    ],
+    "detailsSection": "Windows 8 N and Windows 8 KN editions include the same functionality as Windows 8, except that these versions of Windows do not include Windows Media Player, and related technologies. \r\n<br/><br/>\r\n End-user customers can enable the media functionality to work properly by installing the Media Feature Pack for N and KN versions of Windows 8 (KB2703761). \r\n<br/><br/>\r\n This feature pack can be applied to computers running either Windows 8 N or Windows 8 KN editions.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.2-KB2703761-x64.msu",
+        "Windows6.2-KB2703761-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "78.8 MB",
+        "57.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8 N, Windows 8 Pro N, Windows 8 Enterprise N, or Windows 8 KN, Windows 8 Pro KN, Windows 8 Enterprise KN",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download, or select a different language from the Change language drop-down list and click Go.\r\n<br/><br/>\r\n 2. Do one of the following:\r\n<br/><br/>\r\n\r\n\u2022To start the installation immediately, click Run.<br/>\r\n\u2022To save the download to your computer for installation at a later time, click Save.<br/>\r\n\u2022To cancel the installation, click Cancel.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30685",
+    "downloadPreload": true
+}

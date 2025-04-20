@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012",
+    "downloadDescription": "HPC Pack 2012 provides enterprise-class tools, performance, & scalability for a highly productive HPC environment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HPCPack-3906.zip",
+            "url": "https://download.microsoft.com/download/2/0/f/20f10e94-76e4-492f-97fc-2f2f1cbbe37a/HPCPack-3906.zip",
+            "size": "1848176678",
+            "version": "4.0.3906",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "HPC Pack 2012 delivers enterprise-class tools, performance, & scalability for a highly productive HPC environment, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface v2 (MPI2) and Service-Oriented Architecture (SOA) interactive application support, cluster management & monitoring tools.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.3906",
+    "detailsSection_file_name": [
+        "HPCPack-3906.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.7 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2012 supported Operating Systems</b>\r\n<li>Head nodes: Windows Server 2012 Standard or Datacenter</li>\r\n<li>Compute nodes: Windows Server 2012 Standard, Datacenter, or x64-based versions of Windows Server 2008 R2 Standard, Enterprise, Datacenter, or HPC Edition</li>\r\n<li>Broker nodes: Windows Server 2012 Standard or Datacenter</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 7 Professional or Enterprise, Windows 8 Pro or Enterprise</li>\r\n<li>Unmanaged server nodes: Windows Server 2012 Standard, Datacenter, or Windows Server 2008 R2 Standard, Enterprise, Datacenter, or HPC Edition</li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 1 GB<br/>\r\nMultiprocessor support: HPC Pack 2012 can address up to 64 cores on a single machine, if the operating system supports it. <br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Prior to installation, please review the '<a href=\"http://go.microsoft.com/fwlink/?LinkID=263697\">Release Notes</a>' available on the <a href=\"http://go.microsoft.com/fwlink/?LinkID=263697\">Windows HPC TechNet site</a>.<br/><br/>\r\nDownload the Microsoft HPC Pack 2012 '.zip' archive, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack installation wizard on a supported Windows Server 2012-based computer.<br/><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36054",
+    "downloadPreload": true
+}

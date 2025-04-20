@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2010 Help Files: Win32API_PtrSafe with 64-bit Support",
+    "downloadDescription": "Windows API Declarations and Constants for Visual Basic (Updated for the 64-bit version of Microsoft Office 2010) provides declarations for Microsoft Visual Basic programmers who want to call Windows API routines. This file is updated to include calls to the 64-bit version of Microsoft Office 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Office2010Win32API_PtrSafe.exe",
+            "url": "https://download.microsoft.com/download/8/c/2/8c20dc72-5a11-4480-aa55-7170bc47e1eb/Office2010Win32API_PtrSafe.exe",
+            "size": "704512",
+            "version": "0410",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Versions of Microsoft\u00ae Office and Microsoft Visual Basic\u00ae for Applications (VBA) prior to Microsoft Office 2010 and Visual Basic for Applications 7.0 (VBA 7) included the file, Win32API.txt, which facilitated making calls to the Microsoft Windows API. With the addition of 64-bit support in Microsoft Office 2010, an update to this file is needed to support 64-bit API calls. Win32API_PtrSafe.txt is a new version of Win32API.txt that supports API calls on both 32-bit and 64-bit versions of Windows.<br/><br/>\r\nWin32API_PtrSafe.txt contains the following: <br/>\r\n<ul>\r\n<li>32-bit (x86) and 64-bit (x64) compatible Declare statements for the Windows API functions that were included in the original Win32API.txt file.</li>\r\n<li>Global constant declarations for the constants that the provided Declare statements use.</li>\r\n<li>Type declarations for the user-defined types (structures) that the provided Declare statements use.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0410",
+    "detailsSection_file_name": [
+        "Office2010Win32API_PtrSafe.exe"
+    ],
+    "detailsSection_file_size": [
+        "688.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download containsthe Win32API.txt file for use with Office 2010. It also includes a .docx file and .xps file that describes how to work with Win32API.txt. After downloading, you will need one of the following to read the files:</b><br/>\r\n<ul>\r\n<li>Microsoft Word 2010 (.docx) or an XPS viewer such as any Web browser (.xps)</li>\r\n<li>Notepad or some other text file reader</li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk.</li>\n<li>Double-click the <b>Office2010Win32API_PtrSafe</b> program file on your hard disk to start the setup program.</li> \r\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<br/>\n<b>Instructions for use:</b><br/>\nAfter you installed this download, view the files as you normally would. By default, files are installed to the following location: C:\\Office 2010 Developer Resources\\Documents\\.\n<br/>\n<br/>\n<b>Remove of this download:</b>\n<br/>\nThere is no removal feature for this download.",
+    "additionalInformationSection": "This package does not collect any personal information. \r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Office Developer Center",
+            "url": "http://msdn.microsoft.com/office/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9970",
+    "downloadPreload": true
+}

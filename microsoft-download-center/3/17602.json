@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Samples for Visual FoxPro Developers",
+    "downloadDescription": "This download contains different projects and source files which are designed to show how how some common Visual FoxPro functionally is created in Visual Basic .NET.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotNET_Samples_VFP.exe",
+            "url": "https://download.microsoft.com/download/8/8/9/889a77e9-d241-4077-acd8-3011060299b9/dotNET_Samples_VFP.exe",
+            "size": "503296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains different projects and source files which are designed to show how how some common Visual FoxPro functionally is created in Visual Basic .NET. Many of these samples are directly or indirectly based on existing Visual FoxPro 8.0 Solution Samples for comparison reference. Each project is self-contained and can be run independently of any other.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "dotNET_Samples_VFP.exe"
+    ],
+    "detailsSection_file_size": [
+        "491.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "These samples require Visual Studio .NET 2003.<br />\nVisual FoxPro 8.0 or 9.0 is required for use with the supplied Task Pane XML integration files (optional).",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 2",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install these samples, simply download and expand \"dotNET_Samples_VFP.exe\". Refer to the ReadMe.htm file included in the download for additional instructions. Extracted will be 8 separate ZIP files, one for each of the 8 samples total. Some details are referenced in the TaskPaneManifest.xml file associated with each sample application. This XML file can also be used with the Visual FoxPro 8.0 or 9.0 Task Pane as a discovery add-in for the Solution Samples.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17602",
+    "downloadPreload": true
+}

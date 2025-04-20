@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MS Store",
+    "downloadDescription": "MS Store",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "More-Arbitration-Terms-for-Microsoft-Store.pdf",
+            "url": "https://download.microsoft.com/download/1/b/7/1b7fd7ec-03eb-4855-b078-91af012ee57c/More-Arbitration-Terms-for-Microsoft-Store.pdf",
+            "size": "142719",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:40:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MS Store",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "More-Arbitration-Terms-for-Microsoft-Store.pdf"
+    ],
+    "detailsSection_file_size": [
+        "139.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "MS Store",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "MS Store",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54768",
+    "downloadPreload": true
+}

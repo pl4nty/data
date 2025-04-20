@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvc_9.54.6662.1",
+    "downloadDescription": "ASRMobSvc_9.54.6662.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RHEL9-64_pushinstallclient_9.54.6662.1.tar.gz",
+            "url": "https://download.microsoft.com/download/2/3/d/23d3ee48-7d4b-4c10-9810-846b3712d8e2/RHEL9-64_pushinstallclient_9.54.6662.1.tar.gz",
+            "size": "5668175",
+            "version": "9.54.6662.1",
+            "datePublished": "3/15/2024 5:05:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OL9-64_pushinstallclient_9.54.6662.1.tar.gz",
+            "url": "https://download.microsoft.com/download/2/3/d/23d3ee48-7d4b-4c10-9810-846b3712d8e2/OL9-64_pushinstallclient_9.54.6662.1.tar.gz",
+            "size": "5668218",
+            "version": "9.54.6662.1",
+            "datePublished": "3/15/2024 5:05:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.54.6662.1_RHEL9-64_GA_30Mar2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/2/3/d/23d3ee48-7d4b-4c10-9810-846b3712d8e2/Microsoft-ASR_UA_9.54.6662.1_RHEL9-64_GA_30Mar2023_release.tar.gz",
+            "size": "107353084",
+            "version": "9.54.6662.1",
+            "datePublished": "3/15/2024 5:05:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.54.6662.1_OL9-64_GA_30Mar2023_release.tar.gz",
+            "url": "https://download.microsoft.com/download/2/3/d/23d3ee48-7d4b-4c10-9810-846b3712d8e2/Microsoft-ASR_UA_9.54.6662.1_OL9-64_GA_30Mar2023_release.tar.gz",
+            "size": "107668712",
+            "version": "9.54.6662.1",
+            "datePublished": "3/15/2024 5:05:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvc_9.54.6662.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.54.6662.1",
+    "detailsSection_file_name": [
+        "RHEL9-64_pushinstallclient_9.54.6662.1.tar.gz",
+        "OL9-64_pushinstallclient_9.54.6662.1.tar.gz",
+        "Microsoft-ASR_UA_9.54.6662.1_RHEL9-64_GA_30Mar2023_release.tar.gz",
+        "Microsoft-ASR_UA_9.54.6662.1_OL9-64_GA_30Mar2023_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB",
+        "5.4 MB",
+        "102.4 MB",
+        "102.7 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105109",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Warehouse Management in Microsoft Dynamics NAV 2013",
+    "downloadDescription": "This documentation gives an overview of the concepts and principles that are used in the Warehouse Management features in Microsoft Dynamics NAV 2013. It explains the design behind central warehouse features and how warehousing integrates with other supply chain features. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WarehouseManagementMSDNAV2013.pdf",
+            "url": "https://download.microsoft.com/download/7/d/0/7d0bed02-406c-464d-9aef-600614e61dc1/WarehouseManagementMSDNAV2013.pdf",
+            "size": "758373",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To differentiate the different complexity levels of the warehousing, this documentation is divided into two general groups, Basic and Advanced Warehousing, indicated by section titles. This simple differentiation covers different complexity levels as defined by product granules and location setup in the Warehouse Setup section.\r\nThe content in this white paper is also available in Help for Microsoft Dynamics NAV 2013 under the topic label &quot;Design Details: Warehouse Management&quot;.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "WarehouseManagementMSDNAV2013.pdf"
+    ],
+    "detailsSection_file_size": [
+        "740.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101787",
+    "downloadPreload": true
+}

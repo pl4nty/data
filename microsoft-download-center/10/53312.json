@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Explorer 6 Retired Content",
+    "downloadDescription": "The content you requested has already retired. It's available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE6_en-us.pdf",
+            "url": "https://download.microsoft.com/download/c/a/b/cab7bc5c-d094-4b31-97a8-980961b5bd5a/IE6_en-us.pdf",
+            "size": "5652138",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Internet Explorer 6 content, including the Internet Explorer 6 Administration Kit Service Pack 1: Deployment Guide and the Microsoft Internet Explorer 6 Resource Kit, which includes technical detail, insider insights, and must-have tools\u2014including the Internet Explorer Administration Kit (IEAK).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IE6_en-us.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows NT, Windows 2000, or Windows XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53312",
+    "downloadPreload": true
+}

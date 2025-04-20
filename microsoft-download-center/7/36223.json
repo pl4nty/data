@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Web Services",
+    "downloadDescription": "This documentation describes how to use Web Services for Microsoft Dynamics GP, which you can use to build database integrations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsGPWebServiceRef.chm",
+            "url": "https://download.microsoft.com/download/3/8/d/38d2bf76-1a06-46ba-b9cd-4283fedd7447/DynamicsGPWebServiceRef.chm",
+            "size": "1379484",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WSProgrammersGuide.pdf",
+            "url": "https://download.microsoft.com/download/3/8/d/38d2bf76-1a06-46ba-b9cd-4283fedd7447/WSProgrammersGuide.pdf",
+            "size": "3467911",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WSInstallAdminGuide.pdf",
+            "url": "https://download.microsoft.com/download/3/8/d/38d2bf76-1a06-46ba-b9cd-4283fedd7447/WSInstallAdminGuide.pdf",
+            "size": "1471381",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components.<br /> <br />\n<UL><LI><b>Web Service Installation and Administration Guide</b> (WSlnstallAdminGuide.pdf): Describes how to install and configure the web services, and includes maintenance and troubleshooting information.</LI>\n<LI><b>Web Service Programmer's Guide</b> (WSProgrammersGuide.pdf): Describes how to write code that uses the Microsoft Dynamics GP web services. Also includes information about the sample applications that are included with the Web Services SDK installation.</LI>\r\n<LI><b>Web Service Reference</b> (DynamicsGPWebServiceRef.chm): Contains reference information for all of the methods, classes, enumerations, policy objects, and interfaces in the Dynamics GP web service.</LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "DynamicsGPWebServiceRef.chm",
+        "WSProgrammersGuide.pdf",
+        "WSInstallAdminGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "3.3 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF files, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals or help.</LI>\n<LI>Save the file to your computer.</LI>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36223",
+    "downloadPreload": true
+}

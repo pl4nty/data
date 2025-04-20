@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "Keeping Enterprise Data Safe with Office 2010",
+    "downloadDescription": "Keeping Enterprise Data Safe with Office 2010 - Office 2010 Security Whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Keeping Enterprise Data Safe with Microsoft Office 2010.docx",
+            "url": "https://download.microsoft.com/download/c/c/a/ccaf8564-d6fe-48a2-9a8e-ac3b02941f21/Keeping Enterprise Data Safe with Microsoft Office 2010.docx",
+            "size": "744972",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This whitepaper highlights the new security features and enhancements introduced in Microsoft Office 2010 that help protect organizations from exploits targeting users who use Office applications in their daily work.  The paper begins by describing the evolving threat landscape that drove the Office engineering team to make these improvements and how Office security has evolved through different versions.  The paper then goes on to describe the three security goals that guided the Office development process, namely improving the Office security engineering processes, providing effective and easy-to-use protection technologies for Office users, and strengthening Office core security features and technologies.  The Office defense-in-depth protection model is described next, after which key security technologies such as Office File Validation, Protected View and Trusted Documents are demonstrated in detail.  The paper concludes by briefly examining other Office 2010 security improvements including Data Execution Prevention, ActiveX kill bit, password complexity requirements, and encryption and digital signature improvements.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Keeping Enterprise Data Safe with Microsoft Office 2010.docx"
+    ],
+    "detailsSection_file_size": [
+        "727.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows XP"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21869",
+    "downloadPreload": true
+}

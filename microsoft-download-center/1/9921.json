@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Library 3.1 - May 2007",
+    "downloadDescription": "This release of Enterprise Library  includes: Caching Application Block, Cryptography Application Block, Data Access Application Block, Exception Handling Application Block, Logging Application Block, Policy Injection Application Block, Security Application Block and Validation Application Block.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Enterprise Library May 2007.msi",
+            "url": "https://download.microsoft.com/download/f/c/6/fc691abd-f697-48c5-92e5-82c1edeb8c33/Enterprise Library May 2007.msi",
+            "size": "24027648",
+            "version": "3.1",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The patterns & practices Enterprise Library is a library of application blocks designed to assist developers with common enterprise development challenges. Application blocks are a type of guidance, provided as source code that can be used \"as is,\" extended, or modified by developers to use on enterprise development projects. This release of Enterprise Library includes application blocks for Caching, Cryptography, Data Access, Exception Handling, Logging, Policy Injection, Security and Validation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1",
+    "detailsSection_file_name": [
+        "Enterprise Library May 2007.msi"
+    ],
+    "detailsSection_file_size": [
+        "22.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Note: If you already have the Enterprise Library 3.0 installed, you must uninstall it before installing the Enterprise Library 3.1. However, you can install the Enterprise Library 3.0 or the Enterprise Library 3.1 when 2.0 is already installed.\n<ul><br />\n\t<li>Microsoft .NET Framework 2.0 or 3.0. You need .NET Framework 3.0 for the <br />\n\tApplication Block Software Factory and the WCF adapters for the Validation<br />\n\tApplication Block and Exception Handling Application Block</li><br />\n\t<li>Microsoft Visual Studio 2005 development system (any of the following <br />\n\teditions):<ul><br />\n\t\t<li>Microsoft Visual Studio 2005 Standard Edition</li><br />\n\t\t<li>Microsoft Visual Studio 2005 Professional Edition</li><br />\n\t\t<li>Microsoft Visual Studio 2005 Team Edition for Software Developers</li><br />\n\t\t<li>Microsoft Visual Studio 2005 Team Edition for Software Testers</li><br />\n\t\t<li>Microsoft Visual Studio 2005 Team Edition for Software Architects</li><br />\n\t\t<li>Microsoft Visual Studio 2005 Team Suite</li><br />\n\t</ul><br />\n\t</li><br />\n\t<li>To use the Application Block Software Factory and the Strong-Naming <br />\n\tGuidance Package, you need the Guidance Automation Extensions (GAX). To <br />\n\tmodify these guidance packages, you also need the Guidance Automation <br />\n\tToolkit (GAT).</li><br />\n\t<li>Some blocks and samples require the use of Microsoft SQL Server or other <br />\n\tdatabase products.</li><br />\n\t<li>Visual Studio Team System or NUnit 2.2 is required if you want to <br />\n\texecute unit tests.</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the 'Download button' to commence the download</LI><br />\n<LI>Once the download dialog appears, do one of the following: </LI><br />\n<OL style=\"margin-top: -15; margin-bottom: -15\"><br />\n<LI type=\"a\" value=\"1\">To start the installation immediately, click Open or Run this program from its current location.</LI><br />\n<LI type=\"a\">To copy the download to your computer for installation at a later time, click Save or Save this program to disk. Once you are ready to install Enterprise Library, double-click on the saved file</LI><br />\n</OL><br />\n<LI>Follow the instructions in the installer program, including accepting the End User Licensing Agreement</LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "web Service Software Factory",
+            "url": "http://msdn.microsoft.com/servicefactory"
+        },
+        {
+            "title": "smart Client Software Factory",
+            "url": "http://msdn.microsoft.com/smartclientfactory"
+        },
+        {
+            "title": "web Client Software Factory",
+            "url": "http://msdn.microsoft.com/webclientfactory"
+        },
+        {
+            "title": "guidance Automation Extensions and Guidance Automation Toolkit",
+            "url": "http://msdn2.microsoft.com/en-us/teamsystem/aa718948.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9921",
+    "downloadPreload": true
+}

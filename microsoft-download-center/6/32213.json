@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "MSDN/Technet: Security, SQL & Tools for Office",
+    "downloadDescription": "MSDN/Technet: Security, SQL & Tools for Office",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Ballmer_10_7_Ireland_IT_Pro_Dev_event.ppt",
+            "url": "https://download.microsoft.com/download/5/8/9/589ea1ec-72c0-495d-b0eb-87c8c5aef74e/Ballmer_10_7_Ireland_IT_Pro_Dev_event.ppt",
+            "size": "5233152",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Actions_Pane_and_Host_Controls.ppt",
+            "url": "https://download.microsoft.com/download/5/8/9/589ea1ec-72c0-495d-b0eb-87c8c5aef74e/Actions_Pane_and_Host_Controls.ppt",
+            "size": "447488",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_Server_2005_Overview.ppt",
+            "url": "https://download.microsoft.com/download/5/8/9/589ea1ec-72c0-495d-b0eb-87c8c5aef74e/SQL_Server_2005_Overview.ppt",
+            "size": "702464",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Security_Updates.ppt",
+            "url": "https://download.microsoft.com/download/5/8/9/589ea1ec-72c0-495d-b0eb-87c8c5aef74e/Security_Updates.ppt",
+            "size": "1186816",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Overview_of_VSTO_2005.ppt",
+            "url": "https://download.microsoft.com/download/5/8/9/589ea1ec-72c0-495d-b0eb-87c8c5aef74e/Overview_of_VSTO_2005.ppt",
+            "size": "2928640",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MSDN/Technet: Security, SQL & Tools for Office",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Ballmer_10_7_Ireland_IT_Pro_Dev_event.ppt",
+        "Actions_Pane_and_Host_Controls.ppt",
+        "SQL_Server_2005_Overview.ppt",
+        "Security_Updates.ppt",
+        "Overview_of_VSTO_2005.ppt"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB",
+        "437.0 KB",
+        "686.0 KB",
+        "1.1 MB",
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Powerpoint 2000 or greater",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click on the link and click \"Save Target As...\" to save the document to your hard drive...",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32213",
+    "downloadPreload": true
+}

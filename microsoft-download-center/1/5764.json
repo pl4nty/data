@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2010 Architecture Poster",
+    "downloadDescription": "This poster highlights the architecture and feature set of Microsoft Exchange Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange 2010 Poster.pdf",
+            "url": "https://download.microsoft.com/download/1/d/5/1d5ed82d-7e65-4c5a-a605-a9abcde56dfc/Exchange 2010 Poster.pdf",
+            "size": "6250020",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Aside from showing the high-level architecture, this poster highlights the feature set of Exchange Server 2010. Sections include: <br />\n<ul>\n<li>Management and Monitoring</li>\n<li>High Availability</li>\r\n<li>Mailbox Server Role</li>\r\n<li>Client Access Server Role </li>\r\n<li>Unified Messaging Server Role </li>\r\n<li>Hub Transport Server Role </li>\r\n<li>Edge Transport Server Role </li></ul>\r\n<br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Exchange 2010 Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>The poster is a .pdf file and you will need Adobe Reader to view it. </LI><br />\n<LI>When printed, this poster measures 36 inches by 24 inches.</LI> <br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click the Download button on this page to start the download.</li><br />\n<li>Do one of the following:</li><br />\n<ul><br />\n<li>To open the document, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer, click Save or Save this program to disk.</li><br />\n</ul><br />\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5764",
+    "downloadPreload": true
+}

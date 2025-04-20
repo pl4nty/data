@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Impact of Controlled Language on Machine-Translation Quality and Post-Editing Efforts",
+    "downloadDescription": "Results from experiments conducted by Microsoft Research\u2019s Machine Translation Incubation Team to investigate the impact of using good English (controlled language) on post-editing productivity\u2014as well as on the overall quality of our statistical machine-translation system. Last published: September 5, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "data.zip",
+            "url": "https://download.microsoft.com/download/8/6/e/86ecab9d-06fb-46ff-98a0-dbab096bd93e/data.zip",
+            "size": "334104",
+            "version": "1",
+            "datePublished": "3/15/2024 4:08:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Results from experiments conducted by Microsoft Research\u2019s Machine Translation Incubation Team to investigate the impact of using good English (controlled language) on post-editing productivity\u2014as well as on the overall quality of our statistical machine-translation system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "data.zip"
+    ],
+    "detailsSection_file_size": [
+        "326.3 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52403",
+    "downloadPreload": true
+}

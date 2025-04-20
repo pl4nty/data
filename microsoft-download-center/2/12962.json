@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Message Queuing 5.0 Management Pack for Operations Manager 2007",
+    "downloadDescription": "Message Queuing 5.0 Management Pack for Operations Manager 2007",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for MSMQ.msi",
+            "url": "https://download.microsoft.com/download/f/d/9/fd91a4a9-8bee-4c45-916b-f1213b30a345/SC Management Pack for MSMQ.msi",
+            "size": "638976",
+            "version": "6.0.6748.88",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2007_MP_MSMQ_5.0.doc",
+            "url": "https://download.microsoft.com/download/f/d/9/fd91a4a9-8bee-4c45-916b-f1213b30a345/OM2007_MP_MSMQ_5.0.doc",
+            "size": "479744",
+            "version": "6.0.6748.88",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Message Queuing 5.0 Management Pack for Operations Manager 2007",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.6748.88",
+    "detailsSection_file_name": [
+        "SC Management Pack for MSMQ.msi",
+        "OM2007_MP_MSMQ_5.0.doc"
+    ],
+    "detailsSection_file_size": [
+        "624.0 KB",
+        "468.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows Server Operating System Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager:\r\n\u2022 System Center Operations Manager 2007\r\n\u2022 System Center Operations Manager 2007 SP1\r\n\u2022 System Center Operations Manager 2007 R2\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12962",
+    "downloadPreload": true
+}

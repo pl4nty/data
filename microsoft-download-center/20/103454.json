@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Hive-Spark (Parquet) vs Azure Databricks Delta Performance Comparison",
+    "downloadDescription": "Compare performance of Hive/Spark tables vs. Azure Databricks Delta tables",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Hive-Spark (Parquet) vs Azure Databricks Delta.pdf",
+            "url": "https://download.microsoft.com/download/9/5/7/95739e06-dcf5-42bf-91b0-355bda4d2ac2/Hive-Spark (Parquet) vs Azure Databricks Delta.pdf",
+            "size": "1141086",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:59:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Compare performance of Hive/Spark tables \r\n(with underlying Parquet file format) \r\nvs.\r\nAzure Databricks Delta tables",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Hive-Spark (Parquet) vs Azure Databricks Delta.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Whitepaper / Documentation",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Documentation",
+    "additionalInformationSection": "Hive-Spark (Parquet) vs Azure Databricks Delta Performance Comparison",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103454",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Project REAL: Business Intelligence ETL Design Practices",
+    "downloadDescription": "This paper focuses on the SQL Server Integration Services (SSIS) Extraction Transformation and Loading (ETL) design for Project REAL.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Project REAL ETL Design Practices.doc",
+            "url": "https://download.microsoft.com/download/a/0/0/a00a9c42-2121-4d73-bb4e-b56d1888556f/Project REAL ETL Design Practices.doc",
+            "size": "671744",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Read about SQL Server 2005 Integration Services (SSIS) in action.  Used in the business intelligence reference implementation called Project REAL, SSIS demonstrates a high-volume and real-world based extraction, transformation, and loading (ETL) process.  This ETL solution supports a multi-terabyte data warehouse, and contains representative data processing, configuration, and administration mechanisms of a large warehouse initiative.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Project REAL ETL Design Practices.doc"
+    ],
+    "detailsSection_file_size": [
+        "656.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable Word Viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click the Download button on this page to start the download.</li><br />\n<li>Do one of the following:<br />\n<ul><br />\n<li>To start the installation immediately, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li><br />\n</ul><br />\n</li><br />\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14582",
+    "downloadPreload": true
+}

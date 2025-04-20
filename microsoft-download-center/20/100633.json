@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 1903 GP OS Security Target",
+    "downloadDescription": "Windows 10 1903 GP OS Security Target",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows 10 1903 GP OS Security Target.pdf",
+            "url": "https://download.microsoft.com/download/c/6/9/c6903621-901e-4603-b9cb-fbfe5d6aa691/Windows 10 1903 GP OS Security Target.pdf",
+            "size": "1571861",
+            "version": "1",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the GP OS Security Target for the Common Criteria evaluation of Windows 10 1903",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows 10 1903 GP OS Security Target.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A browser or other PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download and open the document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100633",
+    "downloadPreload": true
+}

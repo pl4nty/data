@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MSOL6_9.42",
+    "downloadDescription": "MSOL6_9.42",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.42.0.0_OL6-64_GA_08Apr2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/7/8/b/78be70b5-4110-4782-a79d-82507e372cf1/Microsoft-ASR_UA_9.42.0.0_OL6-64_GA_08Apr2021_release.tar.gz",
+            "size": "116952845",
+            "version": "9.42.0.0",
+            "datePublished": "7/15/2024 5:03:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MSOL6_9.42",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.42.0.0",
+    "detailsSection_file_name": [
+        "Microsoft-ASR_UA_9.42.0.0_OL6-64_GA_08Apr2021_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "111.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Extract the installer and invoke install script.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102933",
+    "downloadPreload": true
+}

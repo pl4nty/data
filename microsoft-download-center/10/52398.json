@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Paraphrase Corpus",
+    "downloadDescription": "This download consists of data only: a text file containing 5800 pairs of sentences which have been extracted from news sources on the web, along with human annotations indicating whether each pair captures a paraphrase/semantic equivalence relationship. Last published: March 3, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSRParaphraseCorpus.msi",
+            "url": "https://download.microsoft.com/download/d/4/6/d46ff87a-f6b9-4252-aa8b-3604ed519838/MSRParaphraseCorpus.msi",
+            "size": "1359872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download consists of data only: a text file containing 5800 pairs of sentences which have been extracted from news sources on the web, along with human annotations indicating whether each pair captures a paraphrase/semantic equivalence relationship. No more than 1 sentence has been extracted from any given news article. We have made a concerted effort to correctly associate with each sentence information about its provenance and any associated information about its author. If any attribution information is incorrect or missing, please send email to billdol@microsoft.com and we will update the file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSRParaphraseCorpus.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52398",
+    "downloadPreload": true
+}

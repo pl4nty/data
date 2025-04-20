@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft.WindowsAppRuntime.Redist.1.6.240923002-241001.1.107481895",
+    "downloadDescription": "WindowsAppSDK MSIX and Installer",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.WindowsAppRuntime.Redist.1.6.240923002.zip",
+            "url": "https://download.microsoft.com/download/8/1/d/81d37788-9f99-43d5-8f05-23aaf63f9c9a/Microsoft.WindowsAppRuntime.Redist.1.6.240923002.zip",
+            "size": "247318780",
+            "version": "1.6.240923002",
+            "datePublished": "10/1/2024 5:51:29 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WindowsAppSDK MSIX and Installer",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6.240923002",
+    "detailsSection_file_name": [
+        "Microsoft.WindowsAppRuntime.Redist.1.6.240923002.zip"
+    ],
+    "detailsSection_file_size": [
+        "235.9 MB"
+    ],
+    "detailsSection_file_date": "10/1/2024",
+    "systemRequirementsSection": "17763/RS5 and above",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX"
+    ],
+    "installInstructionSection": "This zipped file contains the MSIX and Installer for WindowsAppSDK",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106259",
+    "downloadPreload": true
+}

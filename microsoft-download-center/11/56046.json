@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Tools for Applications 2017",
+    "downloadDescription": "Microsoft Visual Studio Tools for Applications lets you add and run VSTA customizations in applications that are integrated with VSTA.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vsta_setup.exe",
+            "url": "https://download.microsoft.com/download/VSTA_2017_ENU_setup.exe",
+            "size": "12454248",
+            "version": "15.0",
+            "datePublished": "4/15/2025 10:15:39 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio Tools for Applications lets you add and run VSTA customizations in applications that are integrated with VSTA. VSTA 2017 has two primary modes of operation: with a supported version of Visual Studio installed and standalone. In standalone mode, VSTA provides the application with the means to load, compile, and run end-user customizations. With a supported version of Visual Studio installed on your machine, VSTA extends that functionality with the means to edit and debug those customizations. \n<br>\nThis version contains a fix for CVE-2025-29803. Please see https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29803 for more information.\n<br>\nThis version will also be the final update of VSTA 2017. To remained supported, please update to <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=58317\">VSTA 2019</a> or <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=105123\">VSTA 2022</a> for 64-bit applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0",
+    "detailsSection_file_name": [
+        "vsta_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.9 MB"
+    ],
+    "detailsSection_file_date": "4/15/2025",
+    "systemRequirementsSection": "<li><b>Runtime requirement:</b> Visual C++ Redistributable for Visual Studio 2015.</li>\n<li><b>Supported Microsoft Visual Studio version:</b>\nMicrosoft Visual Studio 2012 Professional, Premium or Ultimate; \nMicrosoft Visual Studio 2013 (Community Edition or above);\nMicrosoft Visual Studio 2015 (Community Edition or above);\nor, Microsoft Visual Studio 2017 (Community Edition or above).</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56046",
+    "downloadPreload": true
+}

@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Break Through Your Software Development Challenges with Microsoft Visual Studio 2008 White Paper",
+    "downloadDescription": "This white paper describes how you can break through your software development challenges with Visual Studio 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Break Through with Visual Studio 2008.xps",
+            "url": "https://download.microsoft.com/download/e/7/b/e7bcbaed-b732-420c-bbe2-3a564741c1d3/Break Through with Visual Studio 2008.xps",
+            "size": "309332",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Break Through with Visual Studio 2008.pdf",
+            "url": "https://download.microsoft.com/download/e/7/b/e7bcbaed-b732-420c-bbe2-3a564741c1d3/Break Through with Visual Studio 2008.pdf",
+            "size": "350255",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Break Through with Visual Studio 2008.docx",
+            "url": "https://download.microsoft.com/download/e/7/b/e7bcbaed-b732-420c-bbe2-3a564741c1d3/Break Through with Visual Studio 2008.docx",
+            "size": "188381",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper discusses key features of Visual Studio 2008 and Visual Studio Team System that raise the bar for client, Office, Web, and mobile application development, and that aid in application lifecycle management. It explains how Visual Studio 2008 can help development teams of all sizes to:<br />\n<ul><br />\n<li>Improve developer productivity</li><br />\n<li>Deliver breakthrough user experiences</li><br />\n<li>Effectively communicate and collaborate</li><br />\n<li>Improve software quality</li><br />\n<li>Enhance visibility into project status and quality</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Break Through with Visual Studio 2008.xps",
+        "Break Through with Visual Studio 2008.pdf",
+        "Break Through with Visual Studio 2008.docx"
+    ],
+    "detailsSection_file_size": [
+        "302.1 KB",
+        "342.0 KB",
+        "184.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the Word document, you'll need a copy of Microsoft Office Word 2007, or Microsoft Word 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.<br />\nTo view the PDF file, you'll need a PDF reader, such as the free Adobe Acrobat Reader.<br />\nTo view the XPS file, you'll need Windows Vista, or the Microsoft XML Paper Specification Essentials Pack.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download this white paper in your choice of the following formats: Microsoft Word document (DOCX), PDF file or XPS file.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=941b3470-3ae9-4aee-8f43-c6bb74cd1466"
+        },
+        {
+            "title": "microsoft XML Paper Specification Essentials Pack",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=b8dcffdd-e3a5-44cc-8021-7649fd37ffee"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21340",
+    "downloadPreload": true
+}

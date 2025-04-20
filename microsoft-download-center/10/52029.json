@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Analog Keyboard for Android Wear",
+    "downloadDescription": "Prototype of a custom keyboard for the Android Wear platform that lets users enter text by drawing handwritten letters on the watch face. Last published: November 11, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AnalogKeyboard.0.1.zip",
+            "url": "https://download.microsoft.com/download/7/b/6/7b6efbad-6548-4770-a096-a38fc9f0d3fd/AnalogKeyboard.0.1.zip",
+            "size": "5326601",
+            "version": "0.1",
+            "datePublished": "7/15/2024 4:04:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Prototype of a custom keyboard for the Android Wear platform that lets users enter text by drawing handwritten letters on the watch face. Note: the current version (0.1) only supports square screens with 320x320 screen resolution and the Motorola Moto 360. Installation instructions are included in the zip file under HowToInstall.txt. Please visit our project page for more information - http://research.microsoft.com/en-us/um/redmond/projects/analogkeyboard/index.htm.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "AnalogKeyboard.0.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Android</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52029",
+    "downloadPreload": true
+}

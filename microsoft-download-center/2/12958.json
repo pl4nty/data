@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "PowerPivot Client / Server Architecture Poster",
+    "downloadDescription": "PowerPivot Client / Server Archtiecture Illustration",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PowerPivot ClientServer Architecture.xps",
+            "url": "https://download.microsoft.com/download/9/4/8/948776f7-4533-4eb5-a692-77bd0c72a135/PowerPivot ClientServer Architecture.xps",
+            "size": "1409516",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerPivot ClientServer Architecture.pdf",
+            "url": "https://download.microsoft.com/download/9/4/8/948776f7-4533-4eb5-a692-77bd0c72a135/PowerPivot ClientServer Architecture.pdf",
+            "size": "931325",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PowerPivot ClientServer Architecture.vsd",
+            "url": "https://download.microsoft.com/download/9/4/8/948776f7-4533-4eb5-a692-77bd0c72a135/PowerPivot ClientServer Architecture.vsd",
+            "size": "5680128",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Illustrates the client and server architecture components that make up PowerPivot for Excel and PowerPivot for SharePoint (as per the SharePoint 2010 topologies).  The model provides the reader with the nearly all of the logical architecture components and illustrates how these are incorporated into the overall design. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PowerPivot ClientServer Architecture.xps",
+        "PowerPivot ClientServer Architecture.pdf",
+        "PowerPivot ClientServer Architecture.vsd"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "909.5 KB",
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Vista, Windows XP SP3, Windows Server 2008 SP2, Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the file using \"Save As\".",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12958",
+    "downloadPreload": true
+}

@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Front-End and Back-End Server Topology Guide for Microsoft Exchange Server 2003 and Exchange 2000 Server",
+    "downloadDescription": "This guide discusses Exchange Server front-end and back-end server architecture and topology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3FrontBack.doc",
+            "url": "https://download.microsoft.com/download/d/e/1/de1578d8-d082-49e8-964a-fbe4505158f8/E2k3FrontBack.doc",
+            "size": "897536",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:14:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Exchange Server 2003 and Microsoft Exchange 2000 Server support using a server architecture that distributes server tasks among front-end and back-end servers. In this architecture, a front-end server accepts requests from clients and passes them to the appropriate back-end server for processing. This guide discusses how Exchange Server 2003 and Exchange 2000 Server support the front-end and back-end server architecture. This guide also describes several front-end and back-end scenarios and provides recommendations for configuration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3FrontBack.doc"
+    ],
+    "detailsSection_file_size": [
+        "876.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word 2003 Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "microsoft Exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "front-End and Back-End Server Topology Guide for Exchange Server 2003 and Exchange 2000 Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47567"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6052",
+    "downloadPreload": true
+}

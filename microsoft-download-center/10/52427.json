@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Maximum-Entropy Species-Distribution Modeling Tutorial",
+    "downloadDescription": "Our tutorial, written in Excel 2010, is designed to familiarize users with a commonly used approach in species-distribution modeling\u2014the maximum-entropy approach. Last published: September 17, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MESDMT.zip",
+            "url": "https://download.microsoft.com/download/c/3/9/c3918e19-8d59-4396-9f4f-b81c47cb6d83/MESDMT.zip",
+            "size": "206728",
+            "version": "1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Our tutorial, written in Excel 2010, is designed to familiarize users with a commonly used approach in species-distribution modeling\u2014the maximum-entropy approach. Users step through the worksheets and learn about the mathematics and assumptions used, fitting the model using the Microsoft Solver Add-in. Text in the tutorial refers to a publicly available, non-Microsoft software tool called MaxEnt, available at http://www.cs.princeton.edu/~schapire/maxent/. Users can save the data used in the Excel tutorial and use it in the MaxEnt software package.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MESDMT.zip"
+    ],
+    "detailsSection_file_size": [
+        "201.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52427",
+    "downloadPreload": true
+}

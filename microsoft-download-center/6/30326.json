@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 and 2009 SP1 White Paper: SEPA (ISO 20022 XML) Credit Transfer Payments",
+    "downloadDescription": "This white paper describes the functionality in Microsoft Dynamics AX that supports the standard Single Euro Payments Area (SEPA) credit transfer (ISO 20022 XML) payment format.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SEPACreditTransferPayments_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/1/9/e/19e70d4e-620c-42c9-b9c7-3ce550ce6fdb/SEPACreditTransferPayments_AX2012.pdf",
+            "size": "677085",
+            "version": "2012, 2009",
+            "datePublished": "7/15/2024 3:15:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Additional local formats are available for Austria, Belgium, Finland, France, Germany, Italy, Spain, and The Netherlands. This white paper describes the SEPA credit transfer payment formats that are available for Microsoft Dynamics AX, and how to install, set up, and use them.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012, 2009",
+    "detailsSection_file_name": [
+        "SEPACreditTransferPayments_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "661.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30326",
+    "downloadPreload": true
+}

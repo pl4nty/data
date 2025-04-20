@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Cambridge Object Recognition Image Database",
+    "downloadDescription": "The Microsoft Research Cambridge Object Recognition Image Database contains a set of images (digital photographs) grouped into categories. Last published: May 18, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msrcorid.tar.gz",
+            "url": "https://download.microsoft.com/download/5/6/a/56a19dd6-35fb-47a2-a9b2-74e66d269345/msrcorid.tar.gz",
+            "size": "196498125",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Research Cambridge Object Recognition Image Database contains a set of images (digital photographs) grouped into categories. Its intended use is research, in particular object recognition research.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "msrcorid.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "187.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52644",
+    "downloadPreload": true
+}

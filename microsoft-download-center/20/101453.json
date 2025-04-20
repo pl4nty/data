@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Universal Print printer provisioning tool (preview)",
+    "downloadDescription": "Universal Print printer provisioning tool helps organizations to deploy printers on users' Windows 10 devices using Microsoft Endpoint Manager. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SamplePolicy.zip",
+            "url": "https://download.microsoft.com/download/d/9/6/d96a37c4-bbf9-4573-8c7b-14f1308f0cfe/SamplePolicy.zip",
+            "size": "908",
+            "version": "0.1.0.0",
+            "datePublished": "7/15/2024 4:24:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "UniversalPrintPrinterProvisioning.0.1.0.0.intunewin",
+            "url": "https://download.microsoft.com/download/d/9/6/d96a37c4-bbf9-4573-8c7b-14f1308f0cfe/UniversalPrintPrinterProvisioning.0.1.0.0.intunewin",
+            "size": "798245",
+            "version": "0.1.0.0",
+            "datePublished": "7/15/2024 4:24:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA.rtf",
+            "url": "https://download.microsoft.com/download/d/9/6/d96a37c4-bbf9-4573-8c7b-14f1308f0cfe/EULA.rtf",
+            "size": "206320",
+            "version": "0.1.0.0",
+            "datePublished": "7/15/2024 4:24:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Universal Print printer provisioning tool package contains a Win32 Intune app package. This app package can be deployed on users' Windows 10 devices using Microsoft Endpoint Manager. The application package installs a background service which adds Universal Print printers on the Windows 10 device as per the configuration published to the device (via another custom Intune package). <br></br>\r\n\u00a0\r\nThis software may collect information about you and your use of the software and send that to Microsoft.\u00a0 You can learn more about data collection and use in the license agreement, help documentation, and the privacy statement at <a href = \"https://aka.ms/privacy\">https://aka.ms/privacy</a>.\u00a0 Your use of the software operates as your consent to these practices.<br></br>\r\n\u00a0\r\nThe tool is under preview.\u00a0 Your use of the software operates as consent to the terms of the End User License Agreement, which is included with the tool in the file named \u201cEULA.rtf.\u201d\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1.0.0",
+    "detailsSection_file_name": [
+        "SamplePolicy.zip",
+        "UniversalPrintPrinterProvisioning.0.1.0.0.intunewin",
+        "EULA.rtf"
+    ],
+    "detailsSection_file_size": [
+        "908 bytes",
+        "779.5 KB",
+        "201.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 devices need to have the latest Windows Update installed: \r\n<ul>\r\n<li>Windows 10, version 2004 updated to <a href=\"https://support.microsoft.com/help/4571744/windows-10-update-kb4571744\">KB4571744</a></li>\r\n<li>For Windows 10, versions 1903 and 1909:<a href=\"https://support.microsoft.com/help/4566116/windows-10-update-kb4566116\"> KB4566116 </a></li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Follow the <a href=\"https://aka.ms/UPIntuneTool\">Universal Print printer provisioning tool </a>documentation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101453",
+    "downloadPreload": true
+}

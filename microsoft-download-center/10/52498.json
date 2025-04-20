@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Pitch and Voicing Estimates for Aurora 2",
+    "downloadDescription": "This archive consists of a set of pitch period and voicing estimates for utterances found in the Aurora 2 corpus[1] using the algorithm described in [2]. Last published: January 12, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "pitch_a2_v1.zip",
+            "url": "https://download.microsoft.com/download/b/4/3/b43ce808-4fb1-4be9-9e42-a63963e676db/pitch_a2_v1.zip",
+            "size": "59068060",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:55:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This archive consists of a set of pitch period and voicing estimates for utterances found in the Aurora 2 corpus[1] using the algorithm described in [2]. Currently, pitch estimates are available for test sets A and B, as well as the clean training data. [1] H. G. Hirsch and D. Pearce, \"The AURORA experimental framework for the performance evaluations of speech recognition systems under noisy condidions\", in ISCA ITRW ASR2000 \"Automatic Speech Recognition: Challenges for the Next Millennium\", Paris, France, September 2000. [2] J. Droppo and A. Acero. Maximum a Posteriori Pitch Tracking, in Proc. of the Int. Conf. on Spoken Language Processing. Sydney, Australia. Dec 1998.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "pitch_a2_v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "56.3 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52498",
+    "downloadPreload": true
+}

@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Windows SharePoint Services Document: Application Templates for Windows SharePoint Services 3.0 \u2013 Under the Hood",
+    "downloadDescription": "This white paper describes how Microsoft developed the Application Templates, identifying best practices for how to work with core capabilities within both Microsoft Windows SharePoint Services and Microsoft Office SharePoint Designer 2007, with the goal of empowering customers and partners to create their own applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Application Templates Under the Hood.doc",
+            "url": "https://download.microsoft.com/download/8/e/f/8efe85df-47d7-474b-aae2-4a4ff2af975a/Application Templates Under the Hood.doc",
+            "size": "881664",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Application Templates Under the Hood.docx",
+            "url": "https://download.microsoft.com/download/8/e/f/8efe85df-47d7-474b-aae2-4a4ff2af975a/Application Templates Under the Hood.docx",
+            "size": "666015",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows SharePoint Services 3.0 is a technology of Windows Server that offers an integrated portfolio of collaboration and communication services. It is also a platform for developing Web-based business applications. Taking advantage of this capability, Microsoft has developed forty Application Templates to provide out-of-the-box solutions to address the needs of common business processes, such as coordinating a Help Desk or tracking marketing campaigns.<br />\n<br />\nThis white paper describes how Microsoft developed the Application Templates, identifying best practices for how to work with core capabilities within both Windows SharePoint Services and Office SharePoint Designer 2007, with the goal of empowering customers and partners to create their own applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Application Templates Under the Hood.doc",
+        "Application Templates Under the Hood.docx"
+    ],
+    "detailsSection_file_size": [
+        "861.0 KB",
+        "650.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>This download works with the following Office programs:</b><br />\n<ul><li>Microsoft Office Word 2003</li><br />\n<li>Microsoft Office Word 2007, or</li> <br />\n<li>a Word viewer such as <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=95e24c87-8732-48d5-8689-ab826e7b8fdf&DisplayLang=en\">Word Viewer 2003</a></li><br />\n</ul></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<b>To install this download: </b><br /><br />\n<ul><li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li></ul><br />\n<b>Instructions for use: </b><br /><br />\n<ul><li>Open this document in Microsoft Word to read or print it. </li></ul><br />\n<b>To remove this download: </b><br /><br />\n<ul><li>Delete this document from your computer. </li></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Templates for SharePoint Products and Technologies",
+            "url": "http://www.microsoft.com/sharepoint/templates.mspx"
+        },
+        {
+            "title": "more Microsoft Office Downloads",
+            "url": "http://office.microsoft.com/downloads/default.aspx"
+        },
+        {
+            "title": "application Templates for Windows SharePoint Services 3.0",
+            "url": "http://www.microsoft.com/technet/windowsserver/sharepoint/wssapps/templates/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17735",
+    "downloadPreload": true
+}

@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Global Solutions for SharePoint 2013",
+    "downloadDescription": "This model provides architectural guidance for geographically distributed deployments of SharePoint 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "global-solutions-SharePoint-2013.pdf",
+            "url": "https://download.microsoft.com/download/5/b/f/5bf9613e-9433-4d9f-8510-c94091514128/global-solutions-SharePoint-2013.pdf",
+            "size": "752834",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "global-solutions-SharePoint-2013.vsd",
+            "url": "https://download.microsoft.com/download/5/b/f/5bf9613e-9433-4d9f-8510-c94091514128/global-solutions-SharePoint-2013.vsd",
+            "size": "2872832",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Diagrams in this model provide architectural guidance for single farm solutions and multi-farm solutions in a geographically distributed deployment. Additional information explains WAN performance, bandwidth and latency data, and how to plan services for geographically distributed deployments. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "global-solutions-SharePoint-2013.pdf",
+        "global-solutions-SharePoint-2013.vsd"
+    ],
+    "detailsSection_file_size": [
+        "735.2 KB",
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34975",
+    "downloadPreload": true
+}

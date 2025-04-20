@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Streets and Trips 2010 and MapPoint 2010 Construction Data Update",
+    "downloadDescription": "Download the latest construction data to keep your maps current",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConstructionA9021000.dat",
+            "url": "https://download.microsoft.com/download/e/7/c/e7c9d80b-19f4-4624-92bd-49b1da3dc99f/ConstructionA9021000.dat",
+            "size": "114104",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download to show the latest road construction data on Streets and Trips and MapPoint 2010 maps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "ConstructionA9021000.dat"
+    ],
+    "detailsSection_file_size": [
+        "111.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Close Streets & Trips and/or MapPoint.</LI>\n<LI>Click the <b>download</b> link to start the download.</LI>\n<LI>Click <b>Save</b>  or <b>Save this program to disk</b>.</LI>\n<LI>Save the file in the Data folder</LI>\n <UL>\n  <LI>For XP <br />\n  <b>C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Microsoft Streets & Trips\\17.0\\Data</b><br />\n  or <br />\n  <b>C:\\Documents and Settings\\All Users\\Application Data\\Microsoft\\Microsoft MapPoint\\17.0\\Data</b><br /></LI>\n  <LI>For Vista <br />\n  <b>C:\\ProgramData\\Microsoft\\Microsoft Streets & Trips\\17.0\\Data </b><br />\n  or <br />\n  <b>C:\\ProgramData\\Microsoft\\Microsoft MapPoint\\17.0\\Data </b></LI>\n </UL>\n<LI>Restart Streets & Trips and/or MapPoint.</LI></OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "mapPoint 2009 / Streets & Trips 2009 Construction Update",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=7C1664FE-C9EE-49D7-84D1-92BC101A5551&displaylang=en"
+        },
+        {
+            "title": "streets & Trips 2008 Construction Update",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=EAB59C3C-E447-4667-9742-DA2E91ED7606&displaylang=en"
+        },
+        {
+            "title": "mapPoint Home Page",
+            "url": "http://www.microsoft.com/mappoint"
+        },
+        {
+            "title": "streets & Trips Home Page",
+            "url": "http://www.microsoft.com/streets"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20056",
+    "downloadPreload": true
+}

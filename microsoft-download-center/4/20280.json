@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 Interoperability and Migration Guide",
+    "downloadDescription": "This guide explains how to connect and migrate non-Exchange messaging systems to Microsoft\u00ae Exchange Server 2003. It includes procedures for connecting Exchange 2003 to non-Exchange messaging platforms, as well as information about connectors, planning, and troubleshooting.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "e2k3InterOpMig.doc",
+            "url": "https://download.microsoft.com/download/6/7/e/67e2071a-64e3-41a8-af4d-8115f4e92a1b/e2k3InterOpMig.doc",
+            "size": "2931712",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This guide explains how to connect and migrate non-Exchange messaging systems to Microsoft\u00ae Exchange Server 2003. It describes how to design an interoperability and migration strategy, and includes procedures for connecting Exchange 2003 to non-Exchange messaging platforms. Covered components include Connector for Lotus Notes, Connector for Novell GroupWise, Calendar Connector, general SMTP and X.400 connectors, and the Exchange Migration Wizard. Troubleshooting information is also included.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "e2k3InterOpMig.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>\nClick the <b>Download</b> button on this page to start the download.\n</LI><br />\n<LI>Do one of the following:</LI></OL>\n<UL>\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<br />\n</LI><br />\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n</LI>\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "interoperability and Coexistence Documentation",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34187"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20280",
+    "downloadPreload": true
+}

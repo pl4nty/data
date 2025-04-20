@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Opinion Dynamics in Social Networks",
+    "downloadDescription": "Understanding how users form and update their opinions through interactions with their friends and neighbors in social networks is a fundamental problem with applications to online advertising, recommendations, and marketing. Last published: April 23, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WSDM2014UserStudiesData.zip",
+            "url": "https://download.microsoft.com/download/3/3/5/3354e915-e15a-45f4-84dd-021f29d1e1ff/WSDM2014UserStudiesData.zip",
+            "size": "65260",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Understanding how users form and update their opinions through interactions with their friends and neighbors in social networks is a fundamental problem with applications to online advertising, recommendations, and marketing. In our research, we carried out extensive user studies using Amazon Mechanical Turk as part of which we measured the adoption and changes in opinions of the participants on a variety of topics such as car and soda brands, green energy, organic food etc. The experiments comprised of the following steps - 1. Ask the user to give her innate (starting) opinion on a given topic. 2. Show her a set of opinions of other users participating in the experiment. 3. Ask her for her opinion on the topic again. These are anonymized users and number around 200.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WSDM2014UserStudiesData.zip"
+    ],
+    "detailsSection_file_size": [
+        "63.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52645",
+    "downloadPreload": true
+}

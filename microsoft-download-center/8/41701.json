@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Configuring Claims-based Authentication for Microsoft Dynamics CRM Server",
+    "downloadDescription": "Microsoft Dynamics CRM Server uses claims-based authentication to authenticate internal users and to enable Internet access for external users not using VPN.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRMConfigureIFD.pdf",
+            "url": "https://download.microsoft.com/download/e/c/a/eca959d3-47ff-4d54-884d-b3d0df111257/CRMConfigureIFD.pdf",
+            "size": "1172704",
+            "version": "1",
+            "datePublished": "7/15/2024 3:20:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics CRM Server uses claims-based authentication, an identity access solution designed to provide simplified user access and single sign-on access to Microsoft Dynamics CRM.  \r\n\r\nThis document provides information about:\r\n\r\n<ol><li>Preparing your server environment for claims-based authentication, including configuring AD FS.</li>\r\n<li>Installing and configuring Microsoft Dynamics CRM Server claims-based authentication for internal access, external access (IFD), or both internal and external access.</li>\r\n<li>Federation trusts, Microsoft Office Outlook connections, and other configuration considerations.</li>\r\n</ol>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "CRMConfigureIFD.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For docx files, Microsoft Office Word 2003 or later versions, or a compatible viewer. For pdf files, an Adobe PDF reader is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button to start the download.</li>\r\n<li>To copy the file to your computer, click Save to save this file to disk.</li>\r\n<li>To extract the document, double-click the compressed file.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41701",
+    "downloadPreload": true
+}

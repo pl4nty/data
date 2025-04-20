@@ -1,0 +1,190 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update MS14-042 for Service Bus 1.1 (KB2972621)",
+    "downloadDescription": "This security update addresses the security vulnerability for Service Bus 1.1 in MS14-042 and some additional bug fixes",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-FR.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-FR.exe",
+            "size": "2243560",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-PT-BR.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-PT-BR.exe",
+            "size": "2243048",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-RU.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-RU.exe",
+            "size": "2244584",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-IT.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-IT.exe",
+            "size": "2242024",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-JA.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-JA.exe",
+            "size": "2242024",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-KO.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-KO.exe",
+            "size": "2243048",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-EN.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-EN.exe",
+            "size": "2242536",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-ZH-CHT.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-ZH-CHT.exe",
+            "size": "2241512",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-ZH-CHS.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-ZH-CHS.exe",
+            "size": "2241512",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-DE.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-DE.exe",
+            "size": "2241512",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusServer-KB2972621-x64-ES.exe",
+            "url": "https://download.microsoft.com/download/1/9/6/19696733-7b8a-4fea-8743-8fa03be53827/SB11CU1/ServiceBusServer-KB2972621-x64-ES.exe",
+            "size": "2242536",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:20:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This security update addresses the security vulnerability for Service Bus 1.1 in MS14-042 and some additional bug fixes. <BR></BR> Please refer to the Knowledge base article for additional details: \r\n<A href=\"http://support.microsoft.com/kb/2972621\">KB2972621</A>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2972621",
+        "name": "KB2972621"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-042",
+        "name": "MS14-042"
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "ServiceBusServer-KB2972621-x64-FR.exe",
+        "ServiceBusServer-KB2972621-x64-PT-BR.exe",
+        "ServiceBusServer-KB2972621-x64-RU.exe",
+        "ServiceBusServer-KB2972621-x64-IT.exe",
+        "ServiceBusServer-KB2972621-x64-JA.exe",
+        "ServiceBusServer-KB2972621-x64-KO.exe",
+        "ServiceBusServer-KB2972621-x64-EN.exe",
+        "ServiceBusServer-KB2972621-x64-ZH-CHT.exe",
+        "ServiceBusServer-KB2972621-x64-ZH-CHS.exe",
+        "ServiceBusServer-KB2972621-x64-DE.exe",
+        "ServiceBusServer-KB2972621-x64-ES.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR></BR>\r\n<B>Privilege Requirements: </B>Before running the executable, you must have administrative privilege on the computer where you are installing the software. Please refer to <A href=\"http://msdn.microsoft.com/en-us/library/dn282144.aspx\">Service Bus 1.1 Documentation</A> for more information. <BR></BR>\r\n<B>Software Requirements: </B><BR></BR>\r\n<OL>\r\n<LI>Must have Service Bus 1.1 installed on the computer where you are installing the update</LI>\r\n</OL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<B>To install the update for Service Bus 1.1 (KB2972621):</B><BR></BR>\r\n<OL>\r\n<LI>Click the Download button on this page to start the download, or select a different language from the \"Change language\" drop-down list. <BR></BR>\r\n\r\n    Alternatively, you can click Save to download the .exe installer file to your computer. Then, navigate to the location at which you saved the .exe file, double-click the .exe file, and follow the instructions shown in the installer. </LI>\r\n\r\n<LI>This Security Update for Service Bus 1.1 can also be installed directly from the Web Platform Installer. This update can be obtained by downloading and using the Web Platform Installer (WebPI), you agree to the license terms and privacy statement for WebPI. This installer will contact Microsoft over the Internet to retrieve product information.</LI>\r\n</OL>\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43628",
+    "downloadPreload": true
+}

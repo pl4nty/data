@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Teams PSTN Connectivity",
+    "downloadDescription": "Learn about the different methods for connecting Teams Phone enabled users to the PSTN.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Teams - PSTN Connectivity.pptx",
+            "url": "https://download.microsoft.com/download/3/0/6/306b0e48-c977-4b35-985f-e8a1ca7d84dd/Microsoft Teams - PSTN Connectivity.pptx",
+            "size": "135062203",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Teams provides multiple methods for connecting Teams Phone enabled users to the PSTN. You will need to evaluate the various PSTN connectivity models and select the model (or models) that best fit your organizational needs. The available PSTN connectivity models are covered in detail in this presentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Teams - PSTN Connectivity.pptx"
+    ],
+    "detailsSection_file_size": [
+        "128.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft PowerPoint",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk.</b></li>\r\n<li>Select <b>Open file</b> or find the file on your device and open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105126",
+    "downloadPreload": true
+}

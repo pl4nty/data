@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit:  Newsletter Samples",
+    "downloadDescription": "This zipped file contains sample newsletters for Microsoft Lync 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Newsletter_Samples.zip",
+            "url": "https://download.microsoft.com/download/e/f/1/ef18c291-f96f-4b41-b1a8-71e04c408688/Newsletter_Samples.zip",
+            "size": "336301",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:10:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These samples provide examples of newsletters used during the Microsoft Lync 2010 pilot at Microsoft. During your pilot, distribute regular email newsletters like these to highlight key scenarios and keep participants informed. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Newsletter_Samples.zip"
+    ],
+    "detailsSection_file_size": [
+        "328.4 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010; Microsoft Office Word 2007; Microsoft Office Word 2003; Microsoft Office Word 2002",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12333",
+    "downloadPreload": true
+}

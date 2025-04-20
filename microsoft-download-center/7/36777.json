@@ -1,0 +1,125 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Mathematics Add-In 2013 for Word and OneNote ",
+    "downloadDescription": "Microsoft Mathematics Add-in 2013 for Microsoft Word and Microsoft OneNote makes it easy to plot graphs in 2D and 3D, solve equations or inequalities, and simplify algebraic expressions in your Word documents and OneNote notebooks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "edumathaddin.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed918d7c-76e4-40cf-91ee-8624dc174678/edumathaddin.exe",
+            "size": "16808712",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:31:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "With the Microsoft Mathematics Add-in 2013 for Word and OneNote, you can perform mathematical calculations and plot graphs in your Word documents and OneNote notebooks. The add-in also provides an extensive collection of mathematical symbols and structures to display clearly formatted mathematical expressions. You can also quickly insert commonly used expressions and math structures by using the Equation gallery.\r\n<br/>\r\nThe Microsoft Mathematics Add-in helps you: <br/>\r\n<ul>\r\n<li>Compute standard mathematical functions, such as roots and logarithms.</li>\r\n<li>Compute trigonometric functions, such as sine and cosine.</li>\r\n<li>Find derivatives and integrals, limits, and sums and products of series.</li>\r\n<li>Perform matrix operations, such as inverses, addition, and multiplication.</li>\r\n<li>Perform operations on complex numbers.</li>\r\n<li>Plot 2-D graphs in Cartesian and polar coordinates.</li>\r\n<li>Plot 3-D graphs in Cartesian, cylindrical, and spherical coordinates.</li>\r\n<li>Solve equations and inequalities.</li>\r\n<li>Calculate statistical functions, such as mode and variance, on lists of numbers.</li>\r\n<li>Factor polynomials or integers.</li>\r\n<li>Simplify or expand algebraic expressions.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "edumathaddin.exe"
+    ],
+    "detailsSection_file_size": [
+        "16.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n   <li>Microsoft .NET Framework 4.0</li>\r\n   <li>This download works with the following Office programs:</li>\r\n   <ul>\r\n      <li>Microsoft Word 2013 and Microsoft OneNote 2013</li>\r\n      <li>Microsoft Word 2010 and Microsoft OneNote 2010</li>\r\n      <li>Microsoft Office Word 2007</li>\r\n   </ul>\r\n</ul>\r\n<br/>\r\nIf you\u2019re running Windows XP Service Pack 3, please refer to the previous version of <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=17786\">Microsoft Mathematics Add-in for Word and OneNote.</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<b>Installing the add-in:</b><br/>\r\n\r\n<ol>\r\n<li>Click <i>Download</i> next to the edumathaddin.exe file, and save the file to your hard disk.</li>\r\n<li>Make sure that all instances of Word, OneNote, or Send to OneNote (or OneNote Quick Launcher) are closed.</li>\r\n<li>Double-click the edumathaddin.exe program file on your hard disk to start the Setup program.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n<li>After the installation is complete you will be offered to install DirectX. It is recommended that you install it because it will provide better display of graphics.</li>\r\n</ol>\r\n\r\n<br/>This version of Microsoft Mathematics Add-in for Word and OneNote 2013 will uninstall any previous versions automatically.<br/>\r\n\r\n<br/> If you get this error: <i>.NET Programmability Support for Microsoft Office is required to install Microsoft Mathematics Add-in.</i>, try one of these solutions and start the Math Add-in installation again:<br/>\r\n\r\n<ul>\r\n<li>You\u2019re using Windows 8 and have the right component, but it\u2019s not turned on. Go to <i>Control Panel</i>, <i>Programs</i>, and open <i>Programs and Features</i>. In the menu on the left, select <i>Turn Windows features on or off</i>, and make sure that <i>.NET Framework 3.5</i> is checked.</li>\r\n<li>Your Office installation doesn\u2019t include a component the Math Add-in needs. Re-install Office and include the <i>.NET Programmability Support option</i>.</li>\r\n<li>You don\u2019t have Office. Install Office first. You can get the latest version of Office <a href=\"http://www.office.com/\">here</a>.</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n\r\n<b>Getting started with the add-in:</b><br/>\r\n\r\nAfter you install this download, start Word or OneNote. You\u2019ll see the new equation, computation, and graphing options on the Mathematics tab.\r\n <br/><br/>\r\n\r\n<b>Removing the add-in:</b><br/>\r\n\r\n<ol>\r\n<li>Go to <i>Control Panel</i>.</li>\r\n<li>Click <i>Uninstall a program</i>.</li>\r\n<li>In the list of currently installed programs, click <i>Microsoft Mathematics Add-in for Word and OneNote</i>, and then click <i>Remove</i> or <i>Add/Remove</i>. If a dialog box appears, follow the instructions to remove the program.</li>\r\n<li>Click <i>Yes</i> or <i>OK</i> to confirm that you want to remove the program.</li>\r\n</ol>\r\n<br/>When you\u2019re done, don\u2019t forget to delete the edumathaddin.exe installation file that you saved to your hard disk.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Math 4.0",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=15702"
+        },
+        {
+            "title": "microsoft Mathematics Add-In for Word and OneNote",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=17786"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36777",
+    "downloadPreload": true
+}

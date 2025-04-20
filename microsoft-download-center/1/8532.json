@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Transporter Suite for Lotus Domino Demo: Messaging/Calendaring Coexistence and Migration",
+    "downloadDescription": "This flash demo shows the pre-existing configurations in the Microsoft Transporter Tool Suite for Lotus Domino messaging/calendaring coexistence and migration.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TransporterLotusMsgCalCoexMigraDemo.msi",
+            "url": "https://download.microsoft.com/download/7/1/e/71e4e281-adff-4aff-ae3b-ca56941cf713/TransporterLotusMsgCalCoexMigraDemo.msi",
+            "size": "22301184",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This flash demo shows the pre-existing configurations in the Transporter Tool Suite for Lotus Domino messaging/calendaring coexistence and migration.  The demo shows the coexistence capabilities by sending messages and calendar requests between a Domino user and an Exchange user within an organization.  It also demonstrates the user/mailbox migration of an existing Domino user to Active Directory and the Exchange platform.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "TransporterLotusMsgCalCoexMigraDemo.msi"
+    ],
+    "detailsSection_file_size": [
+        "21.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download relates with the following Office program:</b>\n<br/>\n<ul>\n<li>2007 Microsoft Office system</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br /><br />\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\n<li>Double-click the <b>TransporterLotusMsgCalCoexMigraDemo.msi</b> program file on your hard disk to start the Setup program.</li> \n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use:</b><br /><br />\n<ul>\n<li>To launch this demo, click the <b>Start</b> menu, point to <b>All Programs</b>, point to <b>Microsoft Office System Demos</b>, point to this demo and then click <b>Launch Demo</b>.</li>\n</ul><br />\n<b>To remove this download:</b><br /><br />\n<ul>\n<li>On the <b>Start</b> menu, point to <b>All Programs</b>, point to <b>Microsoft Office System Demos</b>, point to this demo, and then click <b>Uninstall Demo</b>.</li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Microsoft Office downloads",
+            "url": "http://office.microsoft.com/downloads/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8532",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Sample MDT 2013 Web Service",
+    "downloadDescription": "This sample web service shows you how to configure a computer name dynamically using the Microsoft Deployment Toolkit (MDT).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MDTSample.zip",
+            "url": "https://download.microsoft.com/download/b/9/5/b95579fa-2787-4f04-a0d0-8d1e11592d72/MDTSample.zip",
+            "size": "22534",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:37:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A powerful way of assigning settings to an operating system deployment is to use web services. Web services are, simply put, web applications that run code on the server side, and the Microsoft Deployment Toolkit (MDT) 2013 has built-in functions to call these web services.  This web service is an example of how you would configure a computer name dynamically using the MDT Web Service functionality in MDT 2013. <br/><br/>(Note: Developing web services can involve a little bit of coding, but for most web services used with MDT, you can use the free Microsoft Visual Studio Express 2013 for Web.)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MDTSample.zip"
+    ],
+    "detailsSection_file_size": [
+        "22.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This web service requires Microsoft Deployment Toolkit (MDT) 2013, which can be downloaded from www.microsoft.com/mdt.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download button and save the file to your local machine.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Deployment Toolkit Resources",
+            "url": "http://technet.microsoft.com/windows/dn475741.aspx?ocid=wc-mscom-dlc"
+        },
+        {
+            "title": "windows 8.1 Deployment Guidance",
+            "url": "http://technet.microsoft.com/windows/hh974336.aspx?ocid=wc-mscom-dlc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42516",
+    "downloadPreload": true
+}

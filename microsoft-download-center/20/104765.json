@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MicrosoftAzureSiteRecoveryConfigurationServer_usgov.ova_9.52.6522.1",
+    "downloadDescription": "MicrosoftAzureSiteRecoveryConfigurationServer_usgov.ova_9.52.6522.1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftAzureSiteRecoveryConfigurationServer_usgov.ova",
+            "url": "https://download.microsoft.com/download/6/7/c/67c4cfa7-db65-416d-a4f5-e38d9ec6cce0/MicrosoftAzureSiteRecoveryConfigurationServer_usgov.ova",
+            "size": "24382211584",
+            "version": "9.52.0",
+            "datePublished": "4/15/2024 4:32:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MicrosoftAzureSiteRecoveryConfigurationServer_usgov.ova_9.52.6522.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.52.0",
+    "detailsSection_file_name": [
+        "MicrosoftAzureSiteRecoveryConfigurationServer_usgov.ova"
+    ],
+    "detailsSection_file_size": [
+        "22.7 GB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Invoke the installer and follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104765",
+    "downloadPreload": true
+}

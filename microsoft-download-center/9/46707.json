@@ -1,0 +1,304 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 3 for Microsoft Dynamics CRM 2013 Service Pack 1  (KB 3016464)",
+    "downloadDescription": "Microsoft has released Update Rollup 3 for Microsoft Dynamics CRM 2013 Service Pack 1 (SP1).  This update rollup contains new updates that improve security, performance, and stability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Router-KB3016464-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Router-KB3016464-ENU-i386.exe",
+            "size": "16910032",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Server-KB3016464-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Server-KB3016464-ENU-amd64.exe",
+            "size": "199901600",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Client-KB3016464-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Client-KB3016464-ENU-i386.exe",
+            "size": "56449112",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Mui-KB3016464-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Mui-KB3016464-ENU-amd64.exe",
+            "size": "33073392",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Router-KB3016464-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Router-KB3016464-ENU-amd64.exe",
+            "size": "17071120",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Mui-KB3016464-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Mui-KB3016464-ENU-i386.exe",
+            "size": "31759392",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Tools-KB3016464-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Tools-KB3016464-ENU-amd64.exe",
+            "size": "1678440",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Client-KB3016464-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Client-KB3016464-ENU-amd64.exe",
+            "size": "64524672",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Srs-KB3016464-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/2/5/d/25ddb0f5-28b2-4186-ba01-1e4f2be85a7c/CRM2013-Srs-KB3016464-ENU-amd64.exe",
+            "size": "20849472",
+            "version": "06.01.0003.0119",
+            "datePublished": "7/15/2024 3:51:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "Microsoft has released Update Rollup 3 for Microsoft Dynamics CRM 2013 Service Pack 1 (SP1) for Microsoft Dynamics CRM 2013 Server, Microsoft Dynamics CRM 2013 for Microsoft Office Outlook, Microsoft Dynamics CRM 2013 Language Packs, and Microsoft Dynamics CRM 2013 Email Router.<br />\n<br />\nFor more information about this release, see Microsoft Knowledge Base article 3016464:<br /><br /><a HREF=\"http://support.microsoft.com/default.aspx?kbid=3016464\">Update Rollup 3 for Microsoft Dynamics CRM 2013 Service Pack 1</a> <br />\n<br />\nTo maintain parity between the application components of Microsoft Dynamics CRM 2013 SP1, this update rollup includes packages for Microsoft Dynamics CRM Server, Microsoft Dynamics CRM for Outlook, Microsoft Dynamics CRM Language Packs, and Microsoft Dynamics CRM Email Router.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3016464",
+        "name": "KB3016464"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06.01.0003.0119",
+    "detailsSection_file_name": [
+        "CRM2013-Router-KB3016464-ENU-i386.exe",
+        "CRM2013-Server-KB3016464-ENU-amd64.exe",
+        "CRM2013-Client-KB3016464-ENU-i386.exe",
+        "CRM2013-Mui-KB3016464-ENU-amd64.exe",
+        "CRM2013-Router-KB3016464-ENU-amd64.exe",
+        "CRM2013-Mui-KB3016464-ENU-i386.exe",
+        "CRM2013-Tools-KB3016464-ENU-amd64.exe",
+        "CRM2013-Client-KB3016464-ENU-amd64.exe",
+        "CRM2013-Srs-KB3016464-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "16.1 MB",
+        "190.6 MB",
+        "53.8 MB",
+        "31.5 MB",
+        "16.3 MB",
+        "30.3 MB",
+        "1.6 MB",
+        "61.5 MB",
+        "19.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Prerequisites:</b>\n<br />\n<ul><li>This update rollup must be installed on a computer that is running Microsoft Dynamics CRM 2013 SP1.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click Download, and then click the file you want to download from the list.<br /><br />\n<b>Important:</b> The language pack must be installed before you can apply the update rollup for that language pack. Download and install a language pack at <a HREF=\"http://www.microsoft.com/en-us/download/details.aspx?id=40340\">Microsoft Dynamics CRM 2013 Language Packs</a>. <br /><br />\n\n<br />\n\nTo install this update, do one of the following:<br />\n<ul><li>To start the installation immediately, click Run.</li>\n<li>To save the download to your computer for installation later, click Save. </li>\n<li>To cancel the download, click Cancel.</li></ul>",
+    "additionalInformationSection": "<b>Components also installed with this update </b>\n<br />\nThe following components, if not already installed, will be installed when you apply this update:\n<ul>\n<li>Microsoft Visual C++ 2010 runtime</li>\n<li>Microsoft ReportViewer 2010 control</li>\n</ul>\n<br /><br />\n<b>Hotfixes and updates that you have to manually enable or configure</b><br />\n<br />\nThis update may contain hotfixes and updates that you must manually enable or configure. To enable or configure these hotfixes on the server that is running Microsoft Dynamics CRM 2013 SP1, see the \"Hotfixes and updates that you have to manually enable or configure\" section of the following Microsoft Knowledge Base article: <br />\n<br /><a HREF=\"http://support.microsoft.com/kb/3016464\">Update Rollup 3 for Microsoft Dynamics CRM 2013 Service Pack 1 (KB 3016464)</a>\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "service Pack 1 for Microsoft Dynamics CRM 2013 (KB 2941390)",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=43109"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "46707",
+    "downloadPreload": true
+}

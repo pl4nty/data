@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_2107",
+    "downloadDescription": "MARS_2107",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064ec740-5307-4cec-9aa3-0debeaf6c98d/MARSAgentInstaller.exe",
+            "size": "44949808",
+            "version": "WIN2K12-R2",
+            "datePublished": "6/15/2024 4:58:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Build version 9226. Contains enhancement in replication flow.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "42.9 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103329",
+    "downloadPreload": true
+}

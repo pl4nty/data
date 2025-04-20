@@ -1,0 +1,243 @@
+{
+    "error": "",
+    "downloadTitle": "Documentation for Windows 7 and Windows Server 2008 R2 Service Pack 1 (KB976932)",
+    "downloadDescription": "The following documentation for Windows 7 and Windows Server 2008 R2 Service Pack 1 is provided here. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Deployment Guide for Windows Server 2008 R2 with SP1 and Windows 7 with SP1.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba55fe2-373a-4351-9346-6d762b79aa69/Deployment Guide for Windows Server 2008 R2 with SP1 and Windows 7 with SP1.doc",
+            "size": "217600",
+            "version": "976932",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Release Notes for Windows 7 with Service Pack 1.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba55fe2-373a-4351-9346-6d762b79aa69/Release Notes for Windows 7 with Service Pack 1.doc",
+            "size": "88576",
+            "version": "976932",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing Windows Server 2008 R2 with SP1.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba55fe2-373a-4351-9346-6d762b79aa69/Installing Windows Server 2008 R2 with SP1.doc",
+            "size": "96256",
+            "version": "976932",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Updates in Win7 and WS08R2 SP1.xls",
+            "url": "https://download.microsoft.com/download/e/b/a/eba55fe2-373a-4351-9346-6d762b79aa69/Updates in Win7 and WS08R2 SP1.xls",
+            "size": "694784",
+            "version": "976932",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Notable Changes in Windows 7 and Windows Server 2008 R2 Service Pack 1.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba55fe2-373a-4351-9346-6d762b79aa69/Notable Changes in Windows 7 and Windows Server 2008 R2 Service Pack 1.doc",
+            "size": "103936",
+            "version": "976932",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Release Notes for Windows Server 2008 R2 with Service Pack 1.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba55fe2-373a-4351-9346-6d762b79aa69/Release Notes for Windows Server 2008 R2 with Service Pack 1.doc",
+            "size": "89088",
+            "version": "976932",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The following documentation for Windows 7 and Windows Server 2008 R2 Service Pack 1 is provided here:<br /><br />\r\n\r\n<LI>Deployment Guide for Windows Server 2008 R2 with SP1 and Windows 7 with SP1</LI>\r\n<LI>Hotfixes and Security Updates included in Windows 7 and Windows Server 2008 R2 Service Pack 1</LI>\r\n<LI>Installing Windows Server 2008 R2 with SP1 (\u201creadme\u201d)</LI>\r\n<LI>Release Notes for Windows 7 with SP1</LI>\r\n<LI>Release Notes for Windows Server 2008 R2 with SP1</LI>\r\n<LI>Notable Changes in Windows 7 and Windows Server 2008 R2 Service Pack 1</LI><br /><br />\r\n\r\nFor additional information (including how to deploy the service pack), please see <a href=\"http://technet.microsoft.com/evalcenter/ff183870.aspx\">http://technet.microsoft.com/evalcenter/ff183870.aspx</a>.    <br /><br />\r\n\r\nSupport URLs:<br /><br />\r\n\r\n<a href=\"http://technet.microsoft.com/evalcenter/ff183870.aspx\">http://technet.microsoft.com/evalcenter/ff183870.aspx</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB976932",
+        "name": "KB976932"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "976932",
+    "detailsSection_file_name": [
+        "Deployment Guide for Windows Server 2008 R2 with SP1 and Windows 7 with SP1.doc",
+        "Release Notes for Windows 7 with Service Pack 1.doc",
+        "Installing Windows Server 2008 R2 with SP1.doc",
+        "Updates in Win7 and WS08R2 SP1.xls",
+        "Notable Changes in Windows 7 and Windows Server 2008 R2 Service Pack 1.doc",
+        "Release Notes for Windows Server 2008 R2 with Service Pack 1.doc"
+    ],
+    "detailsSection_file_size": [
+        "212.5 KB",
+        "86.5 KB",
+        "94.0 KB",
+        "678.5 KB",
+        "101.5 KB",
+        "87.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "<OL><br /><LI>To start the download, click the <B>Download</B> button and then do one of the following, or select another language from <B>Change Language</B> and then click <B>Change</B>.</LI><br /><UL><br /><LI>Click <B>Run</B> to start the installation immediately.</LI><br /><LI>Click <B>Save</B> to copy the download to your computer for installation at a later time.</LI><br /></UL><br /></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/976932"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "269",
+    "downloadPreload": true
+}

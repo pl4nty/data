@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft FAST Search Server 2010 for SharePoint Enterprise Search Evaluation Guide",
+    "downloadDescription": "Describes the enterprise search features provided by Microsoft\u00ae FAST\u2122 Search Server 2010 for SharePoint\u00ae.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FASTSearchServer2010_SearchEvalGuide.xps",
+            "url": "https://download.microsoft.com/download/a/7/f/a7f98d88-bc15-4f3c-8b71-d42a5ed79964/FASTSearchServer2010_SearchEvalGuide.xps",
+            "size": "2773251",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FASTSearchServer2010_SearchEvalGuide.pdf",
+            "url": "https://download.microsoft.com/download/a/7/f/a7f98d88-bc15-4f3c-8b71-d42a5ed79964/FASTSearchServer2010_SearchEvalGuide.pdf",
+            "size": "2079791",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "FASTSearchServer2010_SearchEvalGuide.docx",
+            "url": "https://download.microsoft.com/download/a/7/f/a7f98d88-bc15-4f3c-8b71-d42a5ed79964/FASTSearchServer2010_SearchEvalGuide.docx",
+            "size": "2628742",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This evaluation guide is designed to give business decision makers and IT professionals an understanding of the design goals and the details of the enterprise search features provided by FAST Search Server 2010 for SharePoint. This guide is also designed to familiarize you with how to implement enterprise search by using FAST Search Server 2010 for SharePoint.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "FASTSearchServer2010_SearchEvalGuide.xps",
+        "FASTSearchServer2010_SearchEvalGuide.pdf",
+        "FASTSearchServer2010_SearchEvalGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "2.0 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8320",
+    "downloadPreload": true
+}

@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2017 Classic Help",
+    "downloadDescription": "Classic Help in all supported locales",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HtmlHelp.en-W1.cab",
+            "url": "https://download.microsoft.com/download/3/1/6/3168e90a-33d3-4260-98a5-922aacb44276/HtmlHelp.en-W1.cab",
+            "size": "4558117",
+            "version": "10.0",
+            "datePublished": "7/15/2024 4:40:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dynamics NAV 2017 Classic Help in all supported locales to supplement the new Help on the product media. This download helps partners deliver Help Server content for their customers based on the new Help and the rebranded legacy Help. For more information, see https://blogs.msdn.microsoft.com/nav/2016/11/04/dynamics-nav-and-help-a-new-world/",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "HtmlHelp.en-W1.cab"
+    ],
+    "detailsSection_file_size": [
+        "4.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the relevant CAB files, extract the relevant HTML file,s and then add them to your Dynamics NAV 2017 Help Server.",
+    "relatedResourcesSection": [
+        {
+            "title": "dynamics NAV 2017 Help - A NewWorld",
+            "url": "https://blogs.msdn.microsoft.com/nav/2016/11/04/dynamics-nav-and-help-a-new-world/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54315",
+    "downloadPreload": true
+}

@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure SharePoint Server 2013 in a Three-Tier Farm",
+    "downloadDescription": "This paper provides a brief introduction to SharePoint Server 2013 and illustrates how to create a three-tier test lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tlg-sp2013-three-tier.docx",
+            "url": "https://download.microsoft.com/download/4/7/9/47977bab-b81f-496b-a9e6-6c1909f17944/tlg-sp2013-three-tier.docx",
+            "size": "164947",
+            "version": "3",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "tlg-sp2013-three-tier.pdf",
+            "url": "https://download.microsoft.com/download/4/7/9/47977bab-b81f-496b-a9e6-6c1909f17944/tlg-sp2013-three-tier.pdf",
+            "size": "584460",
+            "version": "3",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint Server 2013 and step-by-step instructions for creating a test lab that contains a three-tier SharePoint farm that is based on the Base Configuration test lab guide (http://go.microsoft.com/fwlink/p/?LinkId=198140) and the SQL Server 2012 test lab guide (http://go.microsoft.com/fwlink/p/?LinkID=256663). It also demonstrates the facilities of a default team site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "tlg-sp2013-three-tier.docx",
+        "tlg-sp2013-three-tier.pdf"
+    ],
+    "detailsSection_file_size": [
+        "161.1 KB",
+        "570.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\nopen it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30386",
+    "downloadPreload": true
+}

@@ -1,0 +1,239 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 for Outlook, version 9.0 Update Rollup 2",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics 365 for Outlook, version 9.0 Update Rollup 2.  This is a tested, cumulative set of updates for Microsoft Dynamics 365 for Outlook, version 9.0. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Client-KB4523788-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/1/8/e/18e623ca-a414-4c76-9065-9ebb36131fce/CRM9.0-Client-KB4523788-ENU-I386.exe",
+            "size": "283287840",
+            "version": "09.01.0000.7250",
+            "datePublished": "7/15/2024 4:28:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM9.0-Client-KB4523788-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/1/8/e/18e623ca-a414-4c76-9065-9ebb36131fce/CRM9.0-Client-KB4523788-ENU-Amd64.exe",
+            "size": "402755280",
+            "version": "09.01.0000.7250",
+            "datePublished": "7/15/2024 4:28:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        }
+    ],
+    "detailsSection": "\n      Microsoft has released Update Rollup 2 for Dynamics 365 for Outlook, version 9.0 (online and on-premises) .<br />\n      <br />\n      For more information about this release, see Microsoft Knowledge Base article 4523788:<br /><br /><a HREF=\"https://support.microsoft.com/en-us/help/4523788\">Microsoft Dynamics 365 for Outlook, version 9.0 Update Rollup 2</a> <br />\n      <br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4523788",
+        "name": "KB4523788"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.01.0000.7250",
+    "detailsSection_file_name": [
+        "CRM9.0-Client-KB4523788-ENU-I386.exe",
+        "CRM9.0-Client-KB4523788-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "270.2 MB",
+        "384.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      <b>Prerequisites:</b>\n      <br />\n      <ul>\n        <li>This update must be installed on a computer that is running Dynamics 365 for Outlook, version 9.0 or later update. </li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "\n      Select Download, and then select the file you want to download from the list.<br /><br />\n\n      To install this update, do one of the following:<br />\n      <ul>\n        <li>\n          To start the installation immediately, select <b>Run</b>.\n        </li>\n        <li>\n          To save the download to your computer for installation later, select <b>Save</b>.\n        </li>\n        <li>\n          To cancel the download, select <b>Cancel</b>.\n        </li>\n      </ul>\n    ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100431",
+    "downloadPreload": true
+}

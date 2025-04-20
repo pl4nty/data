@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Copilot for Education Control",
+    "downloadDescription": "Manage the EDU classification for your tenant members",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ConfigureTenantEduType.ps1",
+            "url": "https://download.microsoft.com/download/4ae47dd8-fbab-4136-8b23-58737769f28d/ConfigureTenantEduType.ps1",
+            "size": "6233",
+            "version": "1",
+            "datePublished": "4/10/2025 8:52:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Manage the EDU classification for your tenant members through a PowerShell script that admins are authorized to modify.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ConfigureTenantEduType.ps1"
+    ],
+    "detailsSection_file_size": [
+        "6.1 KB"
+    ],
+    "detailsSection_file_date": "4/10/2025",
+    "systemRequirementsSection": "Windows system and PowerShell",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Select the Download button to start the download.\nThe download should start automatically. If prompted, select Save or Save this program to disk.\nEXAMPLE\n    Specify the education type using the -eduType parameter:\n        1 = Primary/Secondary/K-12\n        2 = Higher Education\n        3 = Other\n\n    Example usage:\n        PS C:\\> .\\ConfigureTenantEduType.ps1 -eduType 1\n   \n    Note: If you don\u2019t provide the -eduType parameter, the script will return the tenant's current education type classification.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108133",
+    "downloadPreload": true
+}

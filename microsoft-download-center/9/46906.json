@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Skype Room System Administrative Web Portal for Skype for Business Server 2015\u00a0 ",
+    "downloadDescription": "A Skype for Business Server web component that allows IT administrators to monitor and manage their organization's Skype Room Systems v1 devices.\u00a0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MeetingRoomPortalInstaller.msi",
+            "url": "https://download.microsoft.com/download/e/4/d/e4df23fa-08d4-4e8f-a820-16b2c9114eae/MeetingRoomPortalInstaller.msi",
+            "size": "2797568",
+            "version": "1525.1",
+            "datePublished": "7/15/2024 3:42:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype Room Systems v1 edition is a new Microsoft Skype for Business unified communications client that has been optimized for Skype for Business meetings in physical conference rooms. Install this web component on Skype for Business Server 2015 Front End servers in the pool where the Skype Room System accounts reside.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1525.1",
+    "detailsSection_file_name": [
+        "MeetingRoomPortalInstaller.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b> Pre-requisites </b>\r\n<br/><br/>\r\nIn order to use Microsoft Skype Room System Administrative Portal, you must also have the following installed:\r\n<br/><br/>\r\nSkype for Business Server 2015",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<br/>\r\n<ol>\r\n<li>Click the Download box and save the file to your hard disk. </li>\r\n<li>Follow the Microsoft Skype Room System Administrative Web Portal deployment instructions, which can be found <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=324183\">here</a>. </li>\r\n</ol>\r\n<br/>\r\n<b>To remove the download file: </b>\r\n<br/>\r\n<ol>\r\n<li>To remove the download file, delete the MeetingRoomPortalInstaller.msi file saved to your hard disk. </li>\r\n</ol>\r\n<br/>\r\n<b>To uninstall this program: </b>\r\n<br/>\r\n<ol>\r\n<li>Go to the control panel and remove the application \u201cMicrosoft Skype Room System Administrative Web Portal\u201d from Add or Remove programs </li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46906",
+    "downloadPreload": true
+}

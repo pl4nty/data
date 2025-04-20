@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Database Experimentation Assistant 2.6",
+    "downloadDescription": "Database Experimentation Assistant (DEA) is a new A/B testing solution for SQL Server upgrades. It will assist in evaluating a targeted version of SQL for a given workload. Customers who are upgrading from previous SQL Server versions (SQL Server 2005 and above) to any new version of the SQL Server will be able to use these analysis metrics.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DatabaseExperimentationAssistantV2.6.exe",
+            "url": "https://download.microsoft.com/download/4/8/e/48e74878-38cb-4282-9abc-68ded082f704/DatabaseExperimentationAssistantV2.6.exe",
+            "size": "56675976",
+            "version": "2.7.1",
+            "datePublished": "7/15/2024 3:02:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This version of DEA offers the following capabilities.\r\n<ul>\r\n  <li>Capture and replay of production database workloads through automated setup.</li>\r\n  <li>Support for server side traces and XEvents.</li>\r\n  <li>Perform <b>statistical analysis</b> on traces and/or XEvents collected using both old and new instances.</li>\r\n  <li>Visualize data through analysis report via rich user experience.</li>\r\n  <li>Ability to use SQL Authentication to both capture and replay.</li>\r\n  <li>An Inbuilt replay tool in addition to already supported SQL Server Distributed Replay for simple workloads.</li>\r\n  <li>Removed the dependencies of R and R-Interop.</li>\r\n  <li>Ability to capture and replay on <b>Azure SQL Database</b>, <b>Azure SQL Managed Instance</b> and <b>SQL Server on Linux</b>.</li>\r\n  <li>Reporting improvements.</li>\r\n  <li>Bug fixes and other performance improvements.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4045678",
+        "name": "KB4045678"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.7.1",
+    "detailsSection_file_name": [
+        "DatabaseExperimentationAssistantV2.6.exe"
+    ],
+    "detailsSection_file_size": [
+        "54.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016, Windows Server 2012, Windows 10, Windows 8.1\r\nNET Framework 4.5 64-bit or above\r\nSQL Server 2014 or above",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and run 'DatabaseExperimentationAssistant.exe'",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Blog",
+            "url": "https://blogs.msdn.microsoft.com/datamigration/2017/07/25/dea-2-1-general-availability-release-overview-database-experimentation-assistant/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54090",
+    "downloadPreload": true
+}

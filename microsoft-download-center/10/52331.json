@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "PhyloDet",
+    "downloadDescription": "PhyloDet is a scalable tree visualization that enables biologists to visualize multiple traits or attributes mapped to large evolutionary trees with thousands of leaf nodes representing the species. Last published: July 16, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PhyloDetSetup.msi",
+            "url": "https://download.microsoft.com/download/e/d/6/ed62466a-ce2b-4a2b-86c1-f66ccd64dfb1/PhyloDetSetup.msi",
+            "size": "1637888",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PhyloDet is a scalable tree visualization that enables biologists to visualize multiple traits or attributes mapped to large evolutionary trees with thousands of leaf nodes representing the species. It also preserves branch lengths that indicate the genetic similarity between two species. PhyloDet is interactive, enabling users to set any node of the tree as the root and to show or hide any branches without re-layout of the tree. PhyloDet enables biologists to visualize complex interactions and how they relate to the evolutionary history of the species.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PhyloDetSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52331",
+    "downloadPreload": true
+}

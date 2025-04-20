@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Updated Outlook Holiday (.hol) file for Outlook 2007 and Outlook 2010",
+    "downloadDescription": "This updated Outlook Holiday (.hol) file corrects issues with multiple holidays in Outlook 2007 and Outlook 2010 products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "outlookhol_7130_5000_en-us.hol",
+            "url": "https://download.microsoft.com/download/5/b/6/5b667951-04c6-4fdb-b5ba-943470970ce5/outlookhol_7130_5000_en-us.hol",
+            "size": "1290210",
+            "version": "2007",
+            "datePublished": "7/15/2024 3:57:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        }
+    ],
+    "detailsSection": "This updated Outlook Holiday (.hol) file corrects issues with holidays in previous versions of the .hol file in Outlook 2007 and Outlook 2010 products. It can be installed to fix incorrect holidays in those products.  More information on this issue can be found at <a href=\"http://support.microsoft.com/kb/2764690\">KB2764690</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2007",
+    "detailsSection_file_name": [
+        "outlookhol_7130_5000_en-us.hol"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 Service Pack 1, Windows XP Service Pack 2, Windows Vista for Outlook 2007<br/><br/>\r\nWindows XP Service Pack 3, Windows Vista Service Pack 1, Windows 7, Windows Server 2003 R2, Windows Server 2008 for Outlook 2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Follow these steps to update your existing Outlook Holiday file.<br/><br/>\r\n\r\n1. Exit Outlook if it is running.<br/><br/>\r\n\r\n2. In Microsoft Windows Explorer, delete the following file:<br/>\r\n\r\ndrive:\\Program Files\\Microsoft Office\\Office xx\\LCID\\outlook.hol where xx is 12 for 2007 Microsoft Office and 14 for Office 2010.<br/><br/>\r\nNote LCID is your locale identification (LCID) number. For more information about LCID numbers, see <a href=\"http://support.microsoft.com/kb/2764690\">KB2764690</a>.<br/><br/>\r\n\r\n3. Paste updated outlook.hol into same directory.<br/><br/>\r\n\r\n4. Restart Outlook.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45484",
+    "downloadPreload": true
+}

@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Connectors v1.2 for Oracle and Teradata",
+    "downloadDescription": "Download the SSIS Connectors Version 1.2 for Oracle and Teradata that provide additional value for SQL Server Integration Services (SSIS).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISTeraAdaptersSetup.msi",
+            "url": "https://download.microsoft.com/download/7/5/b/75b45ca0-988d-46e7-a1b9-aacbb3d8c926/AttunitySSISTeraAdaptersSetup.msi",
+            "size": "2846720",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISOraAdaptersSetup.msi",
+            "url": "https://download.microsoft.com/download/7/5/b/75b45ca0-988d-46e7-a1b9-aacbb3d8c926/AttunitySSISOraAdaptersSetup.msi",
+            "size": "2244096",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunitySSISOraAdaptersSetupX64.msi",
+            "url": "https://download.microsoft.com/download/7/5/b/75b45ca0-988d-46e7-a1b9-aacbb3d8c926/AttunitySSISOraAdaptersSetupX64.msi",
+            "size": "3945984",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AttunitySSISTeraAdaptersSetupX64.msi",
+            "url": "https://download.microsoft.com/download/7/5/b/75b45ca0-988d-46e7-a1b9-aacbb3d8c926/AttunitySSISTeraAdaptersSetupX64.msi",
+            "size": "5123072",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b> Microsoft Connector Version 1.2 for Oracle by Attunity</b> - The Oracle source and destination components are written to achieve optimal performance when loading data into Oracle or unloading data from Oracle in the context of Microsoft SSIS.<br />\n<br />\n<b> Microsoft Connector Version 1.2 for Teradata by Attunity </b> - The components are written to achieve optimal performance when loading data into Teradata or unloading data from Teradata in the context of Microsoft SSIS. <br/>\r\n<br/>\r\nMicrosoft SSIS Connectors by Attunity Version 1.2 is a minor release.  It includes performance enhancements, bug fixes, and continued improvements for ease of use. <br/> <br />\r\n\r\nThe following enhancements were made:\r\n<ul>\r\n<li>Teradata Enhancement - Support for TPT API 14.0 and TPT API 13.10.</li>\r\n<li>Support was added for Teradata 13.10 and Teradata 14.0 by supporting TPT API version 13.0 and TPT API version 14.0 (14.00.00.02 or higher). Previous versions of the TPT API are still supported.</li>\r\n<li>Teradata Enhancement - Starting from Teradata 13.0 Teradata database supports DDL with no primary index which was introduced specifically for loading data faster into Teradata; these tables were not listed in the table dropdown list.</li>\r\n<li>Teradata Bug Fix - Teradata DDL supports column names being reserved words. Teradata Connector could not work with tables having such columns.</li>\r\n<li>Teradata Bug Fix - Teradata destination component failed to read problematic rows from the error table with the following error: \u201cErrors while trying to read error tables. Invalid TPT operator.\u201d</li>\r\n   </ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "AttunitySSISTeraAdaptersSetup.msi",
+        "AttunitySSISOraAdaptersSetup.msi",
+        "AttunitySSISOraAdaptersSetupX64.msi",
+        "AttunitySSISTeraAdaptersSetupX64.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB",
+        "2.1 MB",
+        "3.8 MB",
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b> Required operating environment  </b>: Enterprise or Developer edition of SQL Server 2008 Integration Services<br /></li></ul>\r\n<ul><li><b> Supported Oracle databases </b>: Oracle 9.2.0.4 and higher; Oracle 10.x; Oracle 11.x </li></ul><br />\n<ul><li><b> Supported Teradata databases </b>: Teradata Database version 2R6.0; Teradata Database version 2R6.1; Teradata Database version 2R6.2; Teradata Database version 12.0; Teradata Database version 13.0; Teradata Database 13.10; Teradata Database 14.0<br /></li></ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul><li>Download the appropriate file by clicking the correct DOWNLOAD button as outlined below, then run the downloaded file to install that package.<br />\n</li></ul><br />\n<ul><li><b>Microsoft Connector Version 1.2 for Oracle</b><br />\nThe Microsoft Connector for Oracle is a set of managed components for transferring data from or to an Oracle database. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2008 Integration Services and will only operate in those environments. To install the component, run the platform-specific installer for x86 or x64 computers respectively. Read the installation topic in the Help file for installation prerequisites and additional information.<br />\n<br />\nX86 Package (AttunitySSISOraAdaptersSetup.msi)  <br/>\r\nX64 Package (AttunitySSISOraAdaptersSetupX64.msi)\r\n</li></ul><br />\r\n\n<ul><li><b>Microsoft Connector Version 1.2 for Teradata</b><br />\nThe Microsoft Connector for Teradata is a set of managed components for transferring data from or to Teradata database. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2008 Integration Services. To install the component, run the platform-specific installer for x86 or x64 computers respectively. Read the installation topic in the Help file for installation prerequisites and additional information.<br />\n<br />\nX86 Package (AttunitySSISTeraAdaptersSetup.msi) <br/>\r\nX64 Package (AttunitySSISTeraAdaptersSetupX64.msi) \r\n\n</li></ul>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29284",
+    "downloadPreload": true
+}

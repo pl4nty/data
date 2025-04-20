@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dataset for Inferring Missing Entity Type Instances for Knowledge Base Completion",
+    "downloadDescription": "This is a dataset that can be used for training and evaluating knowledge base completion approaches for inferring missing entity type instances. Last published: March 18, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "release_v1.0.zip",
+            "url": "https://download.microsoft.com/download/0/4/d/04dc6f53-cc7a-4155-8270-0fe2d6be85b6/release_v1.0.zip",
+            "size": "1094456546",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a dataset that can be used for training and evaluating knowledge base completion approaches for inferring missing entity type instances. We construct our training snapshot by taking the Freebase snapshot on 3rd September, 2013 and consider entities that have a link to their Wikipedia page. The development and test data consists of facts that were added to the 1st June, 2014 snapshot of Freebase. To get negative data, we make a closed world assumption treating any unobserved instance in Freebase as a negative example. Unobserved instances in the Freebase snapshot on 3rd September, 2013 and 1st June, 2014 are used as negative examples in training and testing respectively.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "release_v1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52589",
+    "downloadPreload": true
+}

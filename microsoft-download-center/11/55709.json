@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Set Guest Allow Block Domain Policy",
+    "downloadDescription": "Provides way to set, update and remove the allow and deny list of domains for guests in the organization.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Set-GuestAllowBlockDomainPolicy.ps1",
+            "url": "https://download.microsoft.com/download/3/e/f/3ef1a572-47e6-4694-999d-ce7a583bdcf3/Set-GuestAllowBlockDomainPolicy.ps1",
+            "size": "22024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:37:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Helps admin to update the AzureADPolicy for Allow/Block domain list for inviting external Users. Using this script IT Admin can set-up:\r\n<UL>\r\n<LI>Allow list, guest users of this domain list can only be invited to O365 Groups.</LI>\r\n<LI>Block list, guest users of this domain list cannot be invited to O365 Groups.</LI>\r\n</UL>\r\nThis policy works independently of SharePoint Online allow/block list.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Set-GuestAllowBlockDomainPolicy.ps1"
+    ],
+    "detailsSection_file_size": [
+        "21.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>PowerShell version 2.0 or later.</LI>\r\n<LI>Azure AD Preview 2.0, see <A HREF=\"https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0\">here</A></LI>\r\n<LI>SharePoint Online PowerShell module. Download it from <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=35588\">here</a></LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Release Candidate",
+        "Windows Server 2012 Standard",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Perform the following steps:\r\n<OL>\r\n<LI>Download this script and place it in a folder of your choice.</LI>\r\n<LI>Start Windows PowerShell version 2.0 or later.</LI>\r\n<LI>Connect to AzureAD. More details <A HREF=\"https://docs.microsoft.com/en-us/powershell/azure/active-directory/install-adv2?view=azureadps-2.0\">here</A></LI>\r\n<LI>Connect to SharePoint Online. More details <A HREF=\"https://technet.microsoft.com/en-us/library/fp161372.aspx\">here</A>. This step is necessary if you do plan to import existing allow/block list from SharePoint Online.</LI>\r\n<LI>Execute Set-GuestAllowBlockDomainPolicy.ps1 with parameters that set, update, import, or remove the allow/block domain list.</LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55709",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Video Cube",
+    "downloadDescription": "VideoCube allows one to load an AVI movie file as a volume, and play back the movie sampling space and time in different ways. Last published: March 16, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VideoCube.exe",
+            "url": "https://download.microsoft.com/download/b/9/8/b98f2cb7-2b3f-453e-a504-1d09a881970f/VideoCube.exe",
+            "size": "1021312",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:17:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "VideoCube allows one to load an AVI movie file as a volume, and play back the movie sampling space and time in different ways. It also provides a single cutting plane for interactively viewing single spacetime slices of the video.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "VideoCube.exe"
+    ],
+    "detailsSection_file_size": [
+        "997.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52646",
+    "downloadPreload": true
+}

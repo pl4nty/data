@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Visual Studio Authoring Extensions for Visual Studio 2022",
+    "downloadDescription": "The System Center Visual Studio Authoring Extensions\u2014VSAE\u2014is an add-in for Visual Studio 2022 (all editions) which provides Lifecycle Management Tools to support Management Pack Authoring.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VisualStudio2022AuthoringConsole_x64.msi",
+            "url": "https://download.microsoft.com/download/4/6/e/46e6f247-d7fb-4923-84c7-38dffe6bc9be/VisualStudio2022AuthoringConsole_x64.msi",
+            "size": "49827840",
+            "version": "1.4.1.1",
+            "datePublished": "7/15/2024 4:32:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Visual Studio Authoring Extensions\u2014VSAE\u2014is an add-in for Visual Studio 2022 (all editions) which provides Lifecycle Management Tools to support Management Pack Authoring. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<ul>\r\n<li> VS Projects for Monitoring MPs, System Center 2012 and later MPs including Operations Manager and Service Manager. </li>\r\n<li> MP Item Templates for quick creation of MP Items. </li>\r\n<ul>\r\n<li> XML MP Item Templates (generates MP XML for editing). </li>\r\n<li> Template Group Item Templates (Abstract your intent from MP XML). </li><li> Snippet Templates (generates MP XML from CSV)\u00a0\u00a0</li>\r\n</ul>\r\n<li> IntelliSense for MP XML for the following versions: </li>\r\n<ul>\r\n<li> System Center Operations Manager 2012 and later </li>\r\n<li> System Center Operations Manager 2016 </li>\r\n<li> System Center Operations Manager 2019 </li>\r\n<li> System Center Operations Manager 2022 </li>\r\n<li> System Center Service Manager 2012 and later </li>\r\n</ul>\r\n<li> Integrates into Visual Studio Project System with *.mpproj. </li>\r\n<ul>\r\n<li> Enables building within VS & MSBuild. </li>\r\n<li> Supports custom build tasks (simply edit *.mpproj or *.sln) </li>\r\n<li> Build multiple MPs (multiple *.mpproj) in a solution. </li>\r\n<li> Integrates into any VS supported Source Control systems. </li>\r\n</ul>\r\n<li> MP Navigation Features</li>\r\n<ul>\r\n<li> Management Pack Browser for browsing MP Items.</li>\r\n<li> Go to Definition</li>\r\n<li> Find All References</li>\r\n</ul>\r\n<li> ResKit Tools integrated </li>\r\n<ul>\r\n<li> Workflow Simulator </li>\r\n<li> Generate Visio Diagram</li>\r\n<li> MP Best Practice Analyzer </li>\r\n<li> MP Spell Checker </li>\r\n<li> MP Cookdown Analyzer </li>\r\n</ul>\r\n</ul>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>8/29/2022 - version 1.4.1.1</li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.1.1",
+    "detailsSection_file_name": [
+        "VisualStudio2022AuthoringConsole_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "47.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b>Microsoft Visual Studio 2022</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<b>Before you begin</b>\r\n<br/>\r\n<ul>\r\n<li>For Fresh installation - VSAE for Visual Studio 2022 is available only for Visual Studio 2022.</li>\r\n<li>\r\nFor Upgrade scenario\u00a0(If you already have older version of Visual Studio Authoring Extension installed on your computer) - You first need to uninstall the older version of VSAE. </li>\r\n</ul>\r\n<br/>\r\n<b>Installation steps</b>\r\n<ol>\r\n<li> Download the MSI.</li>\r\n<li> Ensure Microsoft Visual Studio is not running.</li>\r\n<li> Execute the MSI to install.</li>\r\n<li> Open Microsoft Visual Studio 2022. Click <b>File - New - Project - Management Pack</b>.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104504",
+    "downloadPreload": true
+}

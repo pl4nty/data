@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "SOA Applications, Infrastructure and Management with Windows\u00ae HPC 2008 R2",
+    "downloadDescription": "This article provides a technical overview of cluster-enabled SOA application development, and of infrastructre and management of SOA solutions on a Windows HPC 2008 R2 cluster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SOAandHPC2008R2.doc",
+            "url": "https://download.microsoft.com/download/3/0/8/3081bb10-d453-40d2-bc81-04b34a56da2f/SOAandHPC2008R2.doc",
+            "size": "2315264",
+            "version": "January 2012",
+            "datePublished": "7/15/2024 3:15:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows HPC Server 2008 R2 provides a scalable, reliable, and secure interactive application platform that empowers developers to rapidly develop and easily modify cluster-enabled interactive applications that are based on the Service Oriented Architecture programming model. \r\n<br /><br />\r\nThis article provides a technical overview of cluster-enabled SOA application development. The HPC Class library includes the APIs that a client application can use to create sessions on the cluster. The APIs support creating reliable sessions and client interaction models such as file and recollect, batch, and shared session clients. This article also addresses the service configuration file, the Windows HPC infrastructure that supports SOA workloads, and broker node and session management and monitoring.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2012",
+    "detailsSection_file_name": [
+        "SOAandHPC2008R2.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word of Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "c# Cluster-SOA Debugger for Windows HPC 2008 R2",
+            "url": "http://msdn.microsoft.com/en-us/library/ff686940.aspx"
+        },
+        {
+            "title": "walkthrough: Debugging a Durable Session Client on a Windows HPC 2008 R2 Cluster",
+            "url": "http://msdn.microsoft.com/en-us/library/ff686939.aspx"
+        },
+        {
+            "title": "windows HPC Server 2008 R2 Technical Library",
+            "url": "http://technet.microsoft.com/en-us/library/ee783547(WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11540",
+    "downloadPreload": true
+}

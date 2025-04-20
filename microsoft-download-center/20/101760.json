@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Purchasing in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Purchasing module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_PO.zip",
+            "url": "https://download.microsoft.com/download/7/8/a/78a90d55-04dd-4430-ad93-6ac220641b80/SL2015_ENUS_PO.zip",
+            "size": "6330290",
+            "version": "NA.",
+            "datePublished": "12/15/2023 4:36:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bAudience This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Purchasing module in Microsoft Dynamics SL.\r\n\r\n\u200bAt Training Material Completion On completing this course you will be well acquainted with:\r\n\u2022Enter Purchase Orders, Receipts and Returns\r\n\u2022Use inquiry windows and reports to extract appropriate information for business processes\r\n\u2022Enter Landed Costs at the time you enter the receipt of inventory\r\n\u2022Enter Landed Costs after the items have been received\r\n\u2022Close the Purchasing module\r\n\u2022Define set up options for the module that allow you to customize your system to better fit your organization's unique needs\r\nPrerequisites Before reviewing this training, it is recommended that individuals have: \r\n\u2022Knowledge of basic navigation functions in Microsoft Dynamics SL.\r\n\u2022Completion of General Ledger and/or Accounts Payable, training course required.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_PO.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101760",
+    "downloadPreload": true
+}

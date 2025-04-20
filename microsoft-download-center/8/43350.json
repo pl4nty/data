@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Point of Service for .NET v1.14 (KB2959943)",
+    "downloadDescription": "Resolves an issue that might occur with the POS for .Net v1.14",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB2959943.exe",
+            "url": "https://download.microsoft.com/download/9/8/1/981cd5e7-aa3f-4d50-bf02-7837fc456475/KB2959943.exe",
+            "size": "802488",
+            "version": "1.14",
+            "datePublished": "7/15/2024 3:53:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2959943 fixes the following issue:\r\n<br/>\r\nWhere POS for .NET v.1.14 applications are unable to claim multiple devices.\r\n<br/>\r\n<br/>\r\nIf more than one device is claimed in a single or multiple applications there is an exception thrown:\u00a0 POSControlException ErrorCode(Timeout) ExtendedErrorCode(0) occurred: Another application has exclusive access to the device and did not relinquish control before timeout milliseconds expired.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.14",
+    "detailsSection_file_name": [
+        "KB2959943.exe"
+    ],
+    "detailsSection_file_size": [
+        "783.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<i>This update can be installed on any legal and valid installation of Microsoft Point of Service for .NET v1.14.</i>",
+    "systemRequirementsSection_supportedOS": [
+        "Embedded 8 Industry",
+        "POSReady 7",
+        "Windows 7",
+        "Windows 8.1",
+        "Windows Embedded Industry 8.1"
+    ],
+    "installInstructionSection": "The self extracting executable creates a directory kb2959943. Review the readme.txt file for installation details.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Point of Service for .NET v1.14 (POS for .NET)",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=42081"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43350",
+    "downloadPreload": true
+}

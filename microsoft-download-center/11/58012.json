@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics AX 2009 SP1 - KB2737697",
+    "downloadDescription": "AX2009 KB2737697",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB2737697-SP1.EXE",
+            "url": "https://download.microsoft.com/download/1/e/8/1e8a8032-9c7b-4bc6-94d9-7b2444ea1a93/DynamicsAX2009-KB2737697-SP1.EXE",
+            "size": "71626240",
+            "version": "5.0.1600.4415",
+            "datePublished": "7/15/2024 3:03:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the fix for KB2737697 - \"KB 2704190 does not work for RBSL and Derogatory\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2737697",
+        "name": "KB2737697"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.1600.4415",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB2737697-SP1.EXE"
+    ],
+    "detailsSection_file_size": [
+        "68.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "AX 2009 installed prior to downloading this fix.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Unzip the file locally and run the Axupdate.exe to start the installation",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58012",
+    "downloadPreload": true
+}

@@ -1,0 +1,146 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6.1 (Web Installer) for Windows 7 SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2 SP1, Windows Server 2012 and Windows Server 2012 R2",
+    "downloadDescription": "The Microsoft .NET Framework 4.6.1 is a highly compatible, in-place update to the Microsoft .NET Framework 4, Microsoft .NET Framework 4.5, Microsoft .NET Framework 4.5.1, Microsoft .NET Framework 4.5.2 and Microsoft .NET Framework 4.6. The web installer is a small package that automatically determines and downloads only the components applicable for a particular platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP461-KB3102438-Web.exe",
+            "url": "https://download.microsoft.com/download/3/5/9/35980f81-60f4-4de3-88fc-8f962b97253b/NDP461-KB3102438-Web.exe",
+            "size": "1424328",
+            "version": "4.6.1",
+            "datePublished": "7/15/2024 4:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This is a web installer. There are separate installers for web and offline installation. If you intend to redistribute either of these installers in the setup for your own product or application, we recommend that you choose the web installer because it is smaller and typically downloads faster. The web installer is a small package (less than 1 MB) that automatically determines and downloads only the components applicable for a particular platform. The web installer also installs the language pack matching the language of the user\u2019s operating system.\nThe offline package can be used in situations where the web installer cannot be used due to lack of internet connectivity.  This package is larger than the web installer and does not include the language packs. You can download the offline installer from <a href=\"http://go.microsoft.com/fwlink/?LinkId=671744\">here</a>. You can download and install the language packs from  <a href=\"http://go.microsoft.com/fwlink/?LinkId=671747\">here</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.1",
+    "detailsSection_file_name": [
+        "NDP461-KB3102438-Web.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating Systems:</b>   \n<ul> \n <li>Windows 7 SP1 (x86 and x64)</li> \n <li>Windows 8 (x86 and x64)</li>  \n <li>Windows 8.1 (x86 and x64)</li>\n <li>Windows 10</li>\n <li>Windows Server 2008 R2 SP1 (x64)</li> \n <li>Windows Server 2012 (x64)</li>\n <li>Windows Server 2012 R2 (x64)</li>\n</ul>\n<b>Minimum Hardware Requirements:</b>\n<ul>  \n<li>1 GHz or faster processor</li>   \n<li>512 MB of RAM</li>     \n<li>2.5 GB of available hard disk space (x86)</li>  \n<li>2.5 GB of available hard disk space (x64)</li> \n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul>On this page, choose the <b>Download</b> button.\n <ul>\n <li>To install the software now, choose the <b>Run</b> button.</li>\n <li>To install the software later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n </ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=671730\">KB3102438</a> for more information.\n<br/><br/>\nWhen you install this package you will see following packages/updates installed as per operating system:\n<ul>\n <li>On Windows 7 SP1 / Windows Server 2008 R2 SP1, you will see the <b>Microsoft .NET Framework 4.6.1</b> as an installed product under <b>Programs and Features</b> in <b>Control Panel</b>.</li>\n <li>On Windows 8 / Windows Server 2012 you can find this as <b>Update for Microsoft Windows (KB3102439)</b> under <b>Installed Updates</b> in <b>Control Panel</b>.</li>\n <li>On Windows 8.1 / Windows Server 2012 R2 you can find this as <b>Update for Microsoft Windows (KB3102467)</b> under <b>Installed Updates</b> in <b>Control Panel</b>.</li>\n <li>On Windows 10 you can find this as <b>Update for Microsoft Windows (KB3102495)</b> under <b>Installed Updates</b> in <b>Control Panel</b>.</li>\n</ul>\n<br/>\nThis version of the .NET Framework runs side-by-side with the .NET Framework 3.5 SP1 and earlier versions, but performs an in-place update for the .NET Framework 4, .NET Framework 4.5, .NET Framework 4.5., .NET Framework 4.5.2, and .NET Framework 4.6.\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=671749\">.NET Framework 4.6.1 Readme File</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49981",
+    "downloadPreload": true
+}

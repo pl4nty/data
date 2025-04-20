@@ -1,0 +1,148 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6.1 Language Pack (Offline Installer) for Windows 7 SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2 SP1, Windows Server 2012 and Windows Server 2012 R2",
+    "downloadDescription": "The .NET Framework 4.6.1 Language Pack contains localized resources for supported languages.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme1.htm",
+            "url": "https://download.microsoft.com/download/9/c/6/9c671ddd-7cf3-44d2-a93d-0b5fad1c7b7e/Readme1.htm",
+            "size": "583",
+            "version": "4.6.1",
+            "datePublished": "7/15/2024 4:06:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.6.1 Language Pack contains translated error messages and other UI text for languages other than English. If you don't install a language pack, this text is displayed in English. You can install multiple language packs on one computer, each for a different language. \nYou need to download and install the .NET Framework 4.6.1 (offline installer) prior to installing the language packs. You can find the .NET Framework 4.6.1 (offline installer) <a href=\"http://go.microsoft.com/fwlink/?LinkId=671744\">here</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.1",
+    "detailsSection_file_name": [
+        "Readme1.htm"
+    ],
+    "detailsSection_file_size": [
+        "583 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating Systems:</b>   \n<ul> \n <li>Windows 7 SP1 (x86 and x64)</li> \n <li>Windows 8 (x86 and x64)</li>  \n <li>Windows 8.1 (x86 and x64)</li>\n <li>Windows 10</li>\n <li>Windows Server 2008 R2 SP1 (x64)</li> \n <li>Windows Server 2012 (x64)</li>\n <li>Windows Server 2012 R2 (x64)</li>\n</ul><br/>\n<b>Minimum Hardware Requirements:</b>\n<ul>  \n<li>1 GHz or faster processor</li>   \n<li>512 MB of RAM</li>     \n<li>640 MB of available hard disk space </li>  \n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ul>On this page, choose the <b>Download</b> button.\n <ul>\n <li>To install the software now, choose the <b>Run</b> button.</li>\n <li>To install the software later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n </ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=671748\">KB3102437</a> for more information.\n<br/><br/>\nThis version of the .NET Framework language pack installs side-by-side with the .NET Framework 3.5 SP1 language pack and earlier versions, but performs an in-place update for the .NET Framework 4, .NET Framework 4.5, .NET Framework 4.5., .NET Framework 4.5.2 and .NET Framework 4.6 language packs.\n<br/><br/>\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=671749\">.NET Framework 4.6.1  Readme File</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49977",
+    "downloadPreload": true
+}

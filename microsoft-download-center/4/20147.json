@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Israel Features (Israel GLS layer)",
+    "downloadDescription": "This document provides information for partners about country/region functionality for Israel.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GLS Israel Features_EN-US.xps",
+            "url": "https://download.microsoft.com/download/9/4/a/94ad69fd-81ae-41be-bf21-69c627545cbb/GLS Israel Features_EN-US.xps",
+            "size": "866404",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "GLS Israel Features_EN-US.pdf",
+            "url": "https://download.microsoft.com/download/9/4/a/94ad69fd-81ae-41be-bf21-69c627545cbb/GLS Israel Features_EN-US.pdf",
+            "size": "586633",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides an overview of features in Microsoft Dynamics AX 2009 that are specific to users in Israel. It includes a description of each feature, information about the forms that are affected by each feature, and procedural information to help you use the feature. The features are available only if the configuration key for Israel is selected. <br />\r\nThe following are the Israel-specific features:<br />\r\n<UL><LI>Validations</LI>\r\n<LI>VAT file</LI>\r\n<LI>Report 6111</LI>\r\n<LI>Invoice</LI>\r\n<LI>Clearing</LI>\r\n<LI>Receipts</LI>\r\n<LI>Open format</LI>\r\n<LI>Withholding taxes</LI>\r\n<LI>Automatic bank reconciliation</LI></UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "GLS Israel Features_EN-US.xps",
+        "GLS Israel Features_EN-US.pdf"
+    ],
+    "detailsSection_file_size": [
+        "846.1 KB",
+        "572.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "hotfix rollup 3 for Microsoft Dynamics AX 2009",
+            "url": "https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb$en-us$974407"
+        },
+        {
+            "title": "service Pack 1 for Microsoft Dynamics AX 2009",
+            "url": "https://mbs.microsoft.com/customersource/downloads/servicepacks/DynamicsAX2009sp1.htm#layers"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20147",
+    "downloadPreload": true
+}

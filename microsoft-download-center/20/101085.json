@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Enabling Remote Work",
+    "downloadDescription": "A guide to enabling remote workers to stay connected, productive, and secure",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Enable Remote Work.pdf",
+            "url": "https://download.microsoft.com/download/2/c/3/2c3bea49-e3f5-44b4-b34c-865104ff1ebc/Enable Remote Work.pdf",
+            "size": "2252992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:22:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft is making public health our first priority and we are doing everything we can to help with the effects of COVID-19. We recognize the vital role our technology plays in the lives of people every day, and we want you to know that we are here to help any way we can. Like Microsoft, organizations around the world are putting the safety of their employees, customers and communities first. With stay-at-home, shelter-in-place, and similar social distancing mandates in place, many organizations have pivoted to a remote workforce.\r\n\r\nThis document provides our initial guidance for enabling a remote workforce to have secure access to the organizational information, tools, and resources they need. If your workforce is suddenly working remotely and you want to roll out software and services, use our prescriptive guidance, which is designed to help you quickly enable remote workers.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Enable Remote Work.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Linux",
+        "Macintosh",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the PDF file and open with a PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101085",
+    "downloadPreload": true
+}

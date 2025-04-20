@@ -1,0 +1,208 @@
+{
+    "error": "",
+    "downloadTitle": "January 2013 Security Release ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on January 8, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_KB913086_2013-01.iso",
+            "url": "https://download.microsoft.com/download/3/b/b/3bb65f15-63fe-4fd0-a464-a0a46e53ae7a/Windows_KB913086_2013-01.iso",
+            "size": "1505503232",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on January 8, 2013. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://technet.microsoft.com/en-us/security/bulletin\">http://technet.microsoft.com/en-us/security/bulletin</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />  The below Operating Systems will contain the following number of languages unless otherwise noted: <br /><ul><li>Windows XP - 24 languages</li><li>Windows XP x64 Edition - 2 languages</li><li>Windows Server 2003 - 18 languages</li><li>Windows Server 2003 x64 Edition - 11 languages</li><li>Windows Server 2003 for Itanium-based Systems - 4 languages</li><li>Windows Vista - 36 languages</li><li>Windows Vista for x64-based Systems - 36 languages</li><li>Windows Server 2008 - 19 languages</li><li>Windows Server 2008 x64 Edition - 19 languages</li><li>Windows Server 2008 for Itanium-based Systems - 4 languages</li><li>Windows Server 2008 R2 x64 Edition - 19 languages</li><li>Windows Server 2008 R2 for Itanium-based Systems - 4 languages</li><li>Windows 7 - 36 languages</li><li>Windows 7 for x64-based Systems - 36 languages</li></ul><br /><br />    This DVD5 image contains the following updates: <br /><b>\r\n <a href=\"http://support.microsoft.com/kb/2736416\">KB2736416</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-007\">(MS13-007)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2736418\">KB2736418</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-007\">(MS13-007)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2736422\">KB2736422</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-007\">(MS13-007)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2736428\">KB2736428</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-007\">(MS13-007)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2736693\">KB2736693</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-007\">(MS13-007)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742595\">KB2742595</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742596\">KB2742596</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742597\">KB2742597</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742598\">KB2742598</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742599\">KB2742599</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742601\">KB2742601</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742604\">KB2742604</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows Server 2003</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742607\">KB2742607</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows XP</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742613\">KB2742613</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742614\">KB2742614</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows RT</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2742616\">KB2742616</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2753596\">KB2753596</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-007\">(MS13-007)</a>\r\n</b><ul>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2753842\">KB2753842</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS12-078\">(MS12-078)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows RT</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2756918\">KB2756918</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2756919\">KB2756919</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2756920\">KB2756920</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2756921\">KB2756921</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2756923\">KB2756923</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-004\">(MS13-004)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2757638\">KB2757638</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-002\">(MS13-002)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows RT</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2758694\">KB2758694</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-002\">(MS13-002)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2758696\">KB2758696</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-002\">(MS13-002)</a>\r\n</b><ul>\r\n<li>Windows XP</li>\r\n<li>Windows XP x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2769369\">KB2769369</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-001\">(MS13-001)</a>\r\n</b><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2778930\">KB2778930</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-005\">(MS13-005)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows RT</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2785220\">KB2785220</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS13-006\">(MS13-006)</a>\r\n</b><ul>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows RT</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB913086",
+        "name": "KB913086"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-078; MS13-001; MS13-002; MS13-004; MS13-005; MS13-006; MS13-007",
+        "name": "MS12-078; MS13-001; MS13-002; MS13-004; MS13-005; MS13-006; MS13-007"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows_KB913086_2013-01.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.4 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Service Pack 1",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36277",
+    "downloadPreload": true
+}

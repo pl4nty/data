@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Database Compare Utility",
+    "downloadDescription": "Tool that allows comparison of SQL Server to SQL Server databases or Oracle, Db2, MySQL, PostgreSQL, Sybase, Teradata or Netezza databases to SQL Server.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DatabaseCompareV2.10.9.zip",
+            "url": "https://download.microsoft.com/download/2/6/c/26c24621-a735-4a31-90d4-f21549c8a044/DatabaseCompareV2.10.9.zip",
+            "size": "16145286",
+            "version": "2.10.9",
+            "datePublished": "2/13/2025 5:07:06 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A database migration from one database platform to another often requires verification that the data is identical on both source and target platforms. The Database Compare application is a Windows console application, written in C#, that allow comparison of SQL Server to SQL Server databases or Oracle, Db2, MySQL, PostgreSQL, Sybase, Teradata or Netezza databases to SQL Server.  For information related to support for this tool, please refer the license agreement that is included in the download.\u00a0",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.10.9",
+    "detailsSection_file_name": [
+        "DatabaseCompareV2.10.9.zip"
+    ],
+    "detailsSection_file_size": [
+        "15.4 MB"
+    ],
+    "detailsSection_file_date": "2/13/2025",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a zipped folder that contains Database Compare Utility Tool and associated documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103016",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Bits only will go live",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallationConfig.doc",
+            "url": "https://download.microsoft.com/download/c/e/d/ced15b37-f870-4278-ad0d-bfafe2c63849/InstallationConfig.doc",
+            "size": "374272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Description Template",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "InstallationConfig.doc"
+    ],
+    "detailsSection_file_size": [
+        "365.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34093",
+    "downloadPreload": true
+}

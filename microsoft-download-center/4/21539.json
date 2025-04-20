@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Project Server Cumulative Update (CU) information",
+    "downloadDescription": "Slide shows about Project Server cumulative updates",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Project June 2010 Cumulative Update.pptx",
+            "url": "https://download.microsoft.com/download/7/2/0/7200f29a-8088-4410-b547-2e77d93643c0/Microsoft Project June 2010 Cumulative Update.pptx",
+            "size": "682171",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:57:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The goal of this series is to provide an overview of the updates released for Microsoft Project Server 2010 and Project Server 2007 server products as well as Microsoft Project 2010 and Project 2007 desktop products, and to address related questions you might have about these products updates. \r\nThese webcasts are scheduled every two months (two weeks after each Cumulative Update release) for the next six CU. Presenters are experts from Microsoft Customer Support and Services. \r\nCumulative updates are a new method of providing hotfix releases on a scheduled delivery basis for Office Server products, including Project Server and Project desktop 2007 and 2010. Through this model, Office hotfixes are released every two months in the form of a downloadable package of current and previous hotfixes. The primary goal is to deliver high-quality fixes on a predictable schedule. The updated releases are accompanied by a Knowledge Base article describing the contents of the update. The first Project Server cumulative update was released in August, 2008. \r\nCumulative updates apply to all versions of Office that are currently in mainstream support. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Project June 2010 Cumulative Update.pptx"
+    ],
+    "detailsSection_file_size": [
+        "666.2 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "To download and read this file, you must have Microsoft PowerPoint 2010, Office PowerPoint 2007, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=181980\">PowerPoint Viewer 2007</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Microsoft PowerPoint to read it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21539",
+    "downloadPreload": true
+}

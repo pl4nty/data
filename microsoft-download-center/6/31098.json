@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Creating Multi-lingual Applications and Websites with Microsoft Visual Studio 2005",
+    "downloadDescription": "Visual Studio 2005 introduces improvements for multi-lingual Windows Forms and web applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "a316.ppt",
+            "url": "https://download.microsoft.com/download/1/a/b/1ab566e8-fb67-422c-a9be-b3b9fc94ec8b/a316.ppt",
+            "size": "686592",
+            "version": "1",
+            "datePublished": "7/15/2024 3:16:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Visual Studio 2005 introduces improvements for multi-lingual Windows Forms and web applications. Building on new features in .NET Framework resources it adds a resource editor as well as designer support for the creation of multi-lingual applications and websites. This provides comprehensive support for creating and maintaining applications and websites that need to support multiple languages. In combination with the globalization support in the .NET Framework this allows software developers to target multiple international markets using different languages with the same code base. This talk will introduce the new features as well as demonstrate how these can be integrated into a localization process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "a316.ppt"
+    ],
+    "detailsSection_file_size": [
+        "670.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "MS Powerpoint",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "None",
+    "additionalInformationSection": "Presentation from the Twenty-seventh Internationalization and Unicode Conference, April 6-8, 2005, Berlin, Germany.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31098",
+    "downloadPreload": true
+}

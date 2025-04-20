@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 SP2 (KB5004861)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 SP2 (KB5004861)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIMSyncService_x64_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMSyncService_x64_KB5004861.msp",
+            "size": "27889664",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIMService_x64_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMService_x64_KB5004861.msp",
+            "size": "136380416",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMServiceLP_x64_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMServiceLP_x64_KB5004861.msp",
+            "size": "13611008",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x86_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMAddinsExtensions_x86_KB5004861.msp",
+            "size": "4759552",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x64_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMAddinsExtensions_x64_KB5004861.msp",
+            "size": "11767808",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x86_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMAddinsExtensionsLP_x86_KB5004861.msp",
+            "size": "3002368",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x64_KB5004861.msp",
+            "url": "https://download.microsoft.com/download/5/7/3/573b606f-d87a-4310-bce1-b29d2f705a19/4.6.531.0/MIMAddinsExtensionsLP_x64_KB5004861.msp",
+            "size": "4124672",
+            "version": "4.6.531.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a hotfix for Microsoft Identity Manager 2016 Service Pack 2. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016. Additionally, this update contains stability and performance improvements outlined in <a href=\"http://support.microsoft.com/?kbid=5004861\">Knowledge Base Article 5004861</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5004861",
+        "name": "KB5004861"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.531.0",
+    "detailsSection_file_name": [
+        "MIMSyncService_x64_KB5004861.msp",
+        "MIMService_x64_KB5004861.msp",
+        "MIMServiceLP_x64_KB5004861.msp",
+        "MIMAddinsExtensions_x86_KB5004861.msp",
+        "MIMAddinsExtensions_x64_KB5004861.msp",
+        "MIMAddinsExtensionsLP_x86_KB5004861.msp",
+        "MIMAddinsExtensionsLP_x64_KB5004861.msp"
+    ],
+    "detailsSection_file_size": [
+        "26.6 MB",
+        "130.1 MB",
+        "13.0 MB",
+        "4.5 MB",
+        "11.2 MB",
+        "2.9 MB",
+        "3.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016 Service Pack 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/microsoft-identity-manager/"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release History",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103467",
+    "downloadPreload": true
+}

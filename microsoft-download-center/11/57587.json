@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Data Modernization On-Premises DemoMate Demo",
+    "downloadDescription": "Data Modernization On-Premises DemoMate",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Modernize your data platform with SQL Server 2017 on Linux Installer.exe",
+            "url": "https://download.microsoft.com/download/f/4/1/f410874a-49f7-41f2-84e4-d5d9beefbaf9/Modernize your data platform with SQL Server 2017 on Linux Installer.exe",
+            "size": "46489672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Modernize your data platform with SQL Server 2017 on Linux",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Modernize your data platform with SQL Server 2017 on Linux Installer.exe"
+    ],
+    "detailsSection_file_size": [
+        "44.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, 8 or 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download and install DemoMate",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57587",
+    "downloadPreload": true
+}

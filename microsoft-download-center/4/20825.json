@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Information Rights Management in Office for Mac 2011 Deployment Guide",
+    "downloadDescription": "The Information Rights Management in Office for Mac 2011 deployment guide is for IT managers, system administrators, or other people who are responsible for testing IRM implementation in Office for Mac.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InformationRightsManagement.pdf",
+            "url": "https://download.microsoft.com/download/8/0/5/8059b208-2938-4b26-9353-feba1061990f/InformationRightsManagement.pdf",
+            "size": "149113",
+            "version": "4",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Information Rights Management in Office for Mac 2011 deployment guide is for IT managers, system administrators, or other people who are responsible for testing IRM implementation in Office for Mac. This guide describes the step-by-step process to set up Active Directory Rights Management Service (AD RMS) in a test environment, configure this server to work with the Mac clients, and use IRM with Office for Mac.<BR/><BR/>\r\n\r\nThe Information Rights Management in Office for Mac 2011 Deployment Guide covers the following:\r\n\r\n<UL><LI><b>Overview</b><br/>&nbsp;</LI>\r\n<LI><b>About this document</b><br/>&nbsp;</LI>\r\n<LI><b>Setting up IRM for Office for Mac</b><br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Step 1: Prepare to install the AD RMS role on Windows 7 and Windows Server 2008 R2 SP1 RC or a later version<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Step 2: Install the AD RMS role on Windows 7 and Windows Server 2008 R2 SP1 RC or a later version<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Step 3: Configure AD RMS to connect to a Mac computer<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Step 4: Enable certification of server services<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Step 5: Verify the AD RMS setup<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Step 6: Verify the IRM functionality<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;Troubleshooting the setup<br/><br/></LI>\r\n<LI><b>Providing custom rights management policy templates in Office for Mac 2011</b><br/>&nbsp;</LI>\r\n<LI><b>Using IRM in Office for Mac</b><br/>\r\nPredefined groups of permissions<br/>\r\n</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "InformationRightsManagement.pdf"
+    ],
+    "detailsSection_file_size": [
+        "145.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Note:</b> To view the Information Rights Management in Office for Mac 2011 Deployment Guide .pdf in Windows, you will need the free software program, Adobe Reader.<br/><br/>\r\nFor information about the system requirements for Information Rights Management in Office for Mac 2011, see the \"Setting up IRM for Office for Mac\" section in the Information Rights Management in Office for Mac 2011 Deployment Guide.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<B>To install this download on Mac OS X:</B>\r\n<OL>\r\n  <LI>Print this page if you want to use it as a reference when you are offline.</LI>\r\n  <LI>Click the download.</LI>\r\n  <LI>Follow the instructions on the screen to save the file to your hard disk. If you are using Safari, the downloaded file is saved to the desktop unless you specified a different location in the <B>Preferences</B> dialog box of Safari. To check your preferences, on the <B>Safari</B> menu, click <B>Preferences</B>, and then click <B>General</B>).</LI>\r\n  <LI>On your hard disk, double-click the file that you downloaded.</LI>\r\n</OL>\r\n\r\n<br/><B>To install this download on Windows:</B>\r\n<OL>\r\n  <LI>Print this page if you want to use it as a reference when you are offline.</LI>\r\n  <LI>Click the download.</LI>\r\n  <LI>Do one of the following:\r\n  <UL>\r\n <LI>To start the installation immediately, click <B>Open</B> or <B>Run</B>.</LI>\r\n <LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n</UL></LI>\r\n  <LI>On your hard disk, double-click the file that you downloaded.</LI>\r\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office for Mac 2011 Administrator Guide (online)",
+            "url": "http://mac2.microsoft.com/help/office/14/en-us/admin"
+        },
+        {
+            "title": "communicator for Mac 2011 Deployment Guide (online)",
+            "url": "http://mac2.microsoft.com/help/office/14/en-us/deploy"
+        },
+        {
+            "title": "office for Mac Web site",
+            "url": "http://www.microsoft.com/mac"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20825",
+    "downloadPreload": true
+}

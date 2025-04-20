@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "The resource account - Module 4",
+    "downloadDescription": "Learn what a resource account is in deploying Microsoft Teams Rooms.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Module 4 - Creating the Resource Account.pptx",
+            "url": "https://download.microsoft.com/download/a/9/8/a98a2ef3-83c9-483a-86ad-03a63feeef1c/Module 4 - Creating the Resource Account.pptx",
+            "size": "76471249",
+            "version": "v2.0",
+            "datePublished": "7/15/2024 4:33:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn what a resource account is, understand how to create one using Microsoft 365 admin center and PowerShell, learn how to configure additional options, and secure the resource account.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v2.0",
+    "detailsSection_file_name": [
+        "Module 4 - Creating the Resource Account.pptx"
+    ],
+    "detailsSection_file_size": [
+        "72.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft PowerPoint",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk.</b></li>\r\n<li>Select <b>Open file</b> or find the file on your device and open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104749",
+    "downloadPreload": true
+}

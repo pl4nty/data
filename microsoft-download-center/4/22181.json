@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework SDK version 2.0 Samples Download",
+    "downloadDescription": "This file contains the latest samples for the Microsoft .NET Framework SDK version 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MICROSOFT .NET FRAMEWORK 2.0 SDK SAMPLES.EXE",
+            "url": "https://download.microsoft.com/download/0/8/a/08af3ce2-ee2a-4de2-816f-f5425eeaed1f/MICROSOFT .NET FRAMEWORK 2.0 SDK SAMPLES.EXE",
+            "size": "5576528",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This self-extracting Zip file contains the latest Technology and Application samples available for the .NET Framework SDK 2.0 release. The Technology and Application samples demonstrate code functionality found in version 2.0 of the .NET Framework and Visual Studio 2005.  <br />\n<br />\nUsing these samples requires installation of the <a href=\"http://go.microsoft.com/fwlink/?LinkId=56260\">.NET Framework 2.0  redistributable</a> and the <a href=\"http://go.microsoft.com/fwlink/?LinkId=56260\">.NET Framework SDK 2.0 </a>, also available on Download Center.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MICROSOFT .NET FRAMEWORK 2.0 SDK SAMPLES.EXE"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"http://go.microsoft.com/fwlink/?LinkId=56260\">.NET Framework 2.0 redistributable</a> <br />\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=56260\">.NET Framework 2.0 Software Development Kit</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "To download and install the .NET Framework SDK 2.0 samples self-extracting Zip file:<br />\n<br />\n1. Download and install the <a href=\"http://go.microsoft.com/fwlink/?LinkId=56260\">.NET Framework 2.0 redistributable</a>.<br />\n2. Download and install the <a href=\"http://go.microsoft.com/fwlink/?LinkId=56260\">.NET Framework SDK 2.0</a>.<br />\n3. Click the Download button on this page to start the download<br />\n4. Do one of the following:<br />\nTo start the installation immediately, click Open or Run this program from its current location.<br />\nTo copy the download to your computer for installation at a later time, click Save or Save this program to disk.<br />\n5. Double-click the self-extracting Zip file",
+    "additionalInformationSection": "The samples included in this file work on x86, IA64, and AMD64 platforms.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework 2.0 redistributable and SDK",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=56260"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22181",
+    "downloadPreload": true
+}

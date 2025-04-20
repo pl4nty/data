@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2012 SP4 (KB4532098)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2012 SP4",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB4532098-x86.exe",
+            "url": "https://download.microsoft.com/download/5/6/b/56bfd2a1-48db-434a-9572-4d8dbf7ef047/SQLServer2012-KB4532098-x86.exe",
+            "size": "594836080",
+            "version": "11.0.7493.4",
+            "datePublished": "7/15/2024 4:24:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2012-KB4532098-x64.exe",
+            "url": "https://download.microsoft.com/download/5/6/b/56bfd2a1-48db-434a-9572-4d8dbf7ef047/SQLServer2012-KB4532098-x64.exe",
+            "size": "909123184",
+            "version": "11.0.7493.4",
+            "datePublished": "7/15/2024 4:24:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft SQL Server Reporting Services when it incorrectly handles page requests. An attacker who successfully exploited this vulnerability could execute code in the context of the Report Server service account.<br/>\r\nTo exploit the vulnerability, an authenticated attacker would need to submit a specially crafted page request to an affected Reporting Services instance.<br/>\r\nThe security update addresses the vulnerability by modifying how the Microsoft SQL Server Reporting Services handles page requests.<br/><br/>\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article - <a name=\"KB4532098\"></a><a href=\"http://support.microsoft.com/help/4532098\">KB4532098</a><br/><br/>\r\n\r\nThe following SQL Server security updates contain this SQL Server Reporting Services fix and are available for download:<br/>\r\n<a name=\"KB4535706\"></a><a href=\"http://support.microsoft.com/help/4535706\">Security Update for SQL Server 2016 SP2 CU11 (KB4535706)</a><br /><br />\r\n<a name=\"KB4532097\"></a><a href=\"http://support.microsoft.com/help/4532097\">Security Update for SQL Server 2016 SP2 GDR (KB4532097)</a><br /><br />\r\n<a name=\"KB4535288\"></a><a href=\"http://support.microsoft.com/help/4535288\">Security Update for SQL Server 2014 SP3 CU4 (KB4535288)</a><br /><br />\r\n<a name=\"KB4532095\"></a><a href=\"http://support.microsoft.com/help/4532095\">Security Update for SQL Server 2014 SP3 GDR (KB4532095)</a><br /><br />\r\n<a name=\"KB4532098\"></a><a href=\"http://support.microsoft.com/help/4532098\">Security Update for SQL Server 2012 SP4 GDR (KB4532098)</a><br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.7493.4",
+    "detailsSection_file_name": [
+        "SQLServer2012-KB4532098-x86.exe",
+        "SQLServer2012-KB4532098-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "567.3 MB",
+        "867.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2012 SP4 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or save it on your local disk to install at a later time.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100915",
+    "downloadPreload": true
+}

@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual C++ 2008 Redistributable Package ATL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Microsoft Visual C++ 2008 Redistributable Package.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vcredist_x86.exe",
+            "url": "https://download.microsoft.com/download/a/5/3/a53b40ca-f75c-4678-852a-3c15ea82f186/vcredist_x86.exe",
+            "size": "1846728",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_x64.exe",
+            "url": "https://download.microsoft.com/download/a/5/3/a53b40ca-f75c-4678-852a-3c15ea82f186/vcredist_x64.exe",
+            "size": "2397640",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_ia64.exe",
+            "url": "https://download.microsoft.com/download/a/5/3/a53b40ca-f75c-4678-852a-3c15ea82f186/vcredist_IA64.exe",
+            "size": "4205512",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Microsoft Visual C++ 2008 Redistributable Package and gain complete control over it. You can help protect your computer by installing this update from Microsoft.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB973551",
+        "name": "KB973551"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS09-035",
+        "name": "MS09-035"
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "vcredist_x86.exe",
+        "vcredist_x64.exe",
+        "vcredist_ia64.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "2.3 MB",
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkId=158316\">KB973551</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 973551",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=158316"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10430",
+    "downloadPreload": true
+}

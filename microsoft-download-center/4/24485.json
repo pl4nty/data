@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Automotive 5.0 SP2 Application Programming Guide",
+    "downloadDescription": "Windows Automotive 5.0 SP2 Application Programming Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded Automotive 7 Datasheet.pdf",
+            "url": "https://download.microsoft.com/download/0/a/1/0a1e07d6-7562-4566-aacf-e04df4ff8879/Windows Embedded Automotive 7 Datasheet.pdf",
+            "size": "203062",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WE-ADK 2 0 Data Sheet.pdf",
+            "url": "https://download.microsoft.com/download/0/a/1/0a1e07d6-7562-4566-aacf-e04df4ff8879/WE-ADK 2 0 Data Sheet.pdf",
+            "size": "3601846",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "A Technical Companion to Windows Embedded Automotive 7 (final).pdf",
+            "url": "https://download.microsoft.com/download/0/a/1/0a1e07d6-7562-4566-aacf-e04df4ff8879/A Technical Companion to Windows Embedded Automotive 7 (final).pdf",
+            "size": "6175852",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Application Programming Guide gives a design overview and explains development methods, examples, samples, and other concepts concerning middle- and high-level applications that use Windows Automotive. Since Windows Automotive is a flexible platform development package based on Platform Builder, there are many other development methods other than those introduced in this manual. Please reference this manual for the recommended development approach for an automotive information system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows Embedded Automotive 7 Datasheet.pdf",
+        "WE-ADK 2 0 Data Sheet.pdf",
+        "A Technical Companion to Windows Embedded Automotive 7 (final).pdf"
+    ],
+    "detailsSection_file_size": [
+        "198.3 KB",
+        "3.4 MB",
+        "5.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Vista, Windows XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000"
+    ],
+    "installInstructionSection": "Double click the link above to begin the download process",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24485",
+    "downloadPreload": true
+}

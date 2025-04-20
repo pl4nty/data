@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Using iSCSI with Virtual Server 2005 R2",
+    "downloadDescription": "This paper provides brief background information about iSCSI and describes ways to use iSCSI with Microsoft Virtual Server 2005 R2. With iSCSI, the hardware needed for connecting servers to storage is less expensive and less complex than with the common alternative, Fibre Channel.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "iSCSI_and_Virtual_Server.doc",
+            "url": "https://download.microsoft.com/download/6/4/b/64bab57e-e0ab-474e-8a60-8987a4466585/iSCSI_and_Virtual_Server.doc",
+            "size": "171008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper provides brief background information about iSCSI and describes ways to use iSCSI with Microsoft Virtual Server 2005 R2.<br />\nThe iSCSI protocol, which unifies the TCP/IP networking protocol with the SCSI storage protocol, defines the rules and processes for transmitting and receiving block storage data over TCP/IP networks. Support for iSCSI is provided with Microsoft\u00ae Windows Server\u2122 2003, Microsoft Windows\u00ae 2000, and Microsoft Windows XP, and in Microsoft Virtual Server 2005 R2. With iSCSI, the hardware needed for connecting servers to storage is less expensive and less complex than with the common alternative, Fibre Channel.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "iSCSI_and_Virtual_Server.doc"
+    ],
+    "detailsSection_file_size": [
+        "167.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows Server 2003<br />\nMicrosoft Windows XP<br />\nMicrosoft Virtual Server 2005 R2<br />\nMicrosoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Storage Technologies - iSCSI",
+            "url": "http://go.microsoft.com/fwlink/?linkid=50522"
+        },
+        {
+            "title": "microsoft iSNS Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=55830"
+        },
+        {
+            "title": "virtual Server Host Clustering Step-by-Step Guide for Virtual Server 2005 R2",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=55644"
+        },
+        {
+            "title": "microsoft iSCSI Software Initiator Version 2.0",
+            "url": "http://go.microsoft.com/fwlink/?linkid=44352"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15146",
+    "downloadPreload": true
+}

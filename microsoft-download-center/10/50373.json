@@ -1,0 +1,165 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2016 Email Router",
+    "downloadDescription": "The Microsoft Dynamics CRM 2016 Email Router is an interface between Microsoft Dynamics CRM 2016 and an email system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Router-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/f/1/8/f18563f6-7223-4401-8dc0-dfffc817f5ea/CRM2016-Router-ENU-i386.exe",
+            "size": "25867432",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Router-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/f/1/8/f18563f6-7223-4401-8dc0-dfffc817f5ea/CRM2016-Router-ENU-amd64.exe",
+            "size": "26545376",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics CRM 2016 Email Router is an interface between the Microsoft Dynamics CRM system and one or more Exchange servers or POP3 servers for incoming email, and one or more SMTP or Exchange servers for outgoing email. Email messages come into the Microsoft Dynamics CRM system through the Email Router.<br/><br/>\r\n\r\nThe three main components that can be installed during Email Router Setup are as follows:\r\n<ul><li>Microsoft Dynamics CRM Email Router Service </li>\r\n<li>Microsoft Dynamics CRM Email Configuration Manager</li>\r\n<li>Microsoft Dynamics CRM Email Rule Deployment Wizard </li></ul>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.00.0000.1088",
+    "detailsSection_file_name": [
+        "CRM2016-Router-ENU-i386.exe",
+        "CRM2016-Router-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "24.7 MB",
+        "25.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics CRM 2016 <br/>\r\nExchange Server or POP3 email service\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click <b>Download</b>.</li>\r\n<li>Save the download to your computer by clicking <b>Save</b>.</li>\r\n<li>To install the Email Router, follow the instructions in <a href=\"https://technet.microsoft.com/en-us/library/hh699734(v=crm.8).aspx\">Install Email Router and Rule Deployment Wizard</a>. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "email Router",
+            "url": "https://technet.microsoft.com/en-us/library/dn832088(v=crm.8).aspx"
+        },
+        {
+            "title": "install Email Router and Rule Deployment Wizard",
+            "url": "https://technet.microsoft.com/en-us/library/hh699734(v=crm.8).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50373",
+    "downloadPreload": true
+}

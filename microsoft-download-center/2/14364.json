@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 ISV White Paper",
+    "downloadDescription": "This white paper is a helpful guide for ISVs and developers to build line of business applications using Microsoft Dynamics CRM 2011 and the Microsoft platform. For technical decision makers, it is a valuable resource to understand what the xRM Framework, which underpins Microsoft Dynamics CRM 2011, has to offer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2011_ISV_WhitePaper_Nov2010.pdf",
+            "url": "https://download.microsoft.com/download/f/e/6/fe6f3347-35a8-4780-90fc-a57c668e2a4a/CRM2011_ISV_WhitePaper_Nov2010.pdf",
+            "size": "2031421",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper is a helpful guide for ISVs and developers to build line of business applications using Microsoft Dynamics CRM 2011 and the Microsoft platform. For technical decision makers, it is a valuable resource to understand what the xRM Framework, which underpins Microsoft Dynamics CRM 2011, has to offer. In this white paper, we cover various aspects of Microsoft Dynamics CRM 2011 development including:\r\n<br/>\r\n<li>Business data modeling</li>\r\n<li>Building user experiences</li>\r\n<li>Visualizations and reporting of data</li>\r\n<li>Cloud Development with Microsoft Dynamics CRM Online and Windows Azure</li>\r\n<li>Programmability of Microsoft Dynamics CRM 2011 including OData, WCF Web Services, LINQ, and workflows</li>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CRM2011_ISV_WhitePaper_Nov2010.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any. Also requires Adobe Acrobat Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, and then do one of the following:\n<ul><li>\r\n\r\nTo view the file immediately, click <b>Open</b>.</li>\n<li>\r\n\r\nTo copy the file to your computer for use at a later time, click <b>Save</b>.\r\n</li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2011 Beta SDK",
+            "url": "http://download.microsoft.com/download/3/1/D/31D357F3-4EE1-48E7-8D75-F090D8FC97DF/MicrosoftDynamicsCRM2011BetaSDK.exe"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14364",
+    "downloadPreload": true
+}

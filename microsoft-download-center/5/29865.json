@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows Developer Toolkit v1.5.0",
+    "downloadDescription": "The Kinect for Windows Developer Toolkit contains source code samples, Kinect Studio, Face Tracking SDK, and other resources to simplify developing Kinect for Windows applications. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "KinectDeveloperToolkit-v1.5.0-Setup.exe",
+            "url": "https://download.microsoft.com/download/b/6/2/b62ad950-6a1f-49a7-87ad-847303d938f9/KinectDeveloperToolkit-v1.5.0-Setup.exe",
+            "size": "62053720",
+            "version": "1.5.0.145",
+            "datePublished": "7/15/2024 3:29:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Kinect for Windows Developer Toolkit includes the following:\r\n<ul>\r\n<li>Source code samples</li>\r\n<li>Kinect Studio</li>\r\n<li>The Face Tracking SDK</li>\r\n<li>Other valuable development resources</li>\r\n<li>Note: The Kinect for Windows Developer Toolkit requires that the <a href=\"http://go.microsoft.com/fwlink/?LinkID=247938\" target=\"_blank\">Kinect for Windows SDK v1.5</a> be installed</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5.0.145",
+    "detailsSection_file_name": [
+        "KinectDeveloperToolkit-v1.5.0-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "59.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>Windows Embedded Standard 7</ul><br/><br/>\r\n\r\n<ul>\r\n<li><b>Hardware Requirements</b></li>\r\n<ul>\r\n<li>32-bit (x86) or 64-bit (x64) processor</li>\r\n<li>Dual-core 2.66-GHz or faster processor </li>\r\n<li>Dedicated USB 2.0 bus </li>\r\n<li>2 GB RAM</li>\r\n<li>A Microsoft Kinect for Windows sensor</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=247938\" target=\"_blank\">Kinect for Windows SDK v1.5</a></li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "To install the Kinect for Windows Developer Toolkit:<br/>\r\n<ol>\r\n<li>Make sure you have the <a href=\"http://go.microsoft.com/fwlink/?LinkID=247938\" target=\"_blank\">Kinect for Windows SDK v1.5</a> installed</li>\r\n<li>From the download location, double-click on KinectDeveloperToolkit-v1.5.0-Setup.exe. This single installer works for both 32-bit and 64-bit Windows.</li>\r\n<li>To view the tools or samples, install stamples, or explore other resources, start the Developer Toolkit Browser via the start menu: Kinect for Windows SDK 1.5 -> Developer Toolkit Browser v1.5.0 (Kinect for Windows)</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29865",
+    "downloadPreload": true
+}

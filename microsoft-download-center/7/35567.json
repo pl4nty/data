@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Excel 2013 SDK: Excel 2013 XLL Software Development Kit",
+    "downloadDescription": "The Microsoft Office Excel 2013 XLL Software Development Kit (SDK) contains conceptual overviews, programming tasks, and sample projects to guide you in developing Excel 2013 XLLs.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "excelxllsdk.msi",
+            "url": "https://download.microsoft.com/download/d/a/c/dac9c321-279c-4625-b381-bcb044eef7b2/excelxllsdk.msi",
+            "size": "4820992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:05:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Excel 2013 XLL SDK includes the following: <br/>\r\n<br/>\r\n<br/>\u2022 <b>C API</b> includes header and source files that enable a DLL to access Excel 2010 functionality, and a description of the interface that a DLL should expose to work with the Excel Add-in Manager. \r\n<br/>\u2022 <b>Microsoft Visual Studio 2008 projects</b> includes C/C++ source code and shows how to use the C API. \r\n<br/>\u2022 <b>Documentation</b> includes the API function reference, conceptual, and how-to Help topics. \r\n<br/>\r\n<br/>\r\nIn conjunction with Microsoft Excel 2013, the Microsoft Excel 2013 XLL Software Development Kit (SDK) includes support for the following new features:\r\n<br/>\r\n<br/>\u2022 <b>New Functions</b> The Microsoft Excel 2010 XLL SDK supports calling back to all of Excel 2013's new worksheet functions.\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "excelxllsdk.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following applications:</b></li>\n<ul><br />\n<li>Microsoft Visual Studio 2005 <br/>\r\n-OR-<br/>\r\nMicrosoft Visual Studio 2008 for 64-bit XLLs </li><br />\n<li>Microsoft Excel 2013</li><br />\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<br/>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk drive.</li>\r\n<li>Double-click the <b>ExcelXLLSDK.msi</b> program file on your hard disk drive to start the setup program.</li> \r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35567",
+    "downloadPreload": true
+}

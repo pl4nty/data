@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Purview Information Protection Viewer",
+    "downloadDescription": "Install the Microsoft Purview Information Protection client (PurviewInfoProtectionViewer) to view protected non-Office files on Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PurviewInfoProtectionViewer.exe",
+            "url": "https://download.microsoft.com/download/4ce84ca1-00b9-4f8f-a13f-3b8713c6f27b/PurviewInfoProtectionViewer.exe",
+            "size": "113796616",
+            "version": "3.1.218.0",
+            "datePublished": "4/7/2025 8:15:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>This viewer from <a href=\"https://azure.microsoft.com/en-us/services/information-protection\">Microsoft Purview Information Protection</a> lets you open and view protected files that were shared with you:<br/>\n<li>Open and use protected files such as PDF, text files, images and any other file format that has a .pfile extension.</li> \n<li>View your permissions, and print or save the file without protection \u2013 if permission allows.</li>\n\n<br/><b>Note:</b> to open and use Microsoft Office documents and emails that are protected, you don\u2019t need this viewer. Just open them using your Office application (Word, Excel, PowerPoint, and Outlook). \n<br/>\n<br/>If you want to label and protect your documents and emails, download and install one of the <a href=\"https://learn.microsoft.com/purview/information-protection-client\">Microsoft Purview Information Protection clients.</a>\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.218.0",
+    "detailsSection_file_name": [
+        "PurviewInfoProtectionViewer.exe"
+    ],
+    "detailsSection_file_size": [
+        "108.5 MB"
+    ],
+    "detailsSection_file_date": "4/7/2025",
+    "systemRequirementsSection": "<br/>List of <a href=\"https://learn.microsoft.com/purview/information-protection-client#requirements-for-deploying-the-information-protection-client\">prerequisites</a> is in the documentation<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<br/>Download one of the installation files and then run it.<br/>\n<br/>Use the viewer - instructions:<br/>\n<ul>\n<br/><li><a href=\"https://go.microsoft.com/fwlink/?linkid=2266677\"> For the Microsoft Purview Information Protection viewer</a></li>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54536",
+    "downloadPreload": true
+}

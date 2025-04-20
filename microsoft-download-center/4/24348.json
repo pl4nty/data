@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Foundation 2010 performance and capacity test results and recommendations",
+    "downloadDescription": "These white papers describe the performance and capacity impact of specific feature sets included in Microsoft SharePoint Foundation 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SearchforSPFoundation2010CapacityPlanningDoc.docx",
+            "url": "https://download.microsoft.com/download/a/d/e/ade29813-4cfd-4806-a183-52178b11119d/SearchforSPFoundation2010CapacityPlanningDoc.docx",
+            "size": "569166",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These white papers describe the performance and capacity impact of specific feature sets included in SharePoint Server 2010. These white papers include information about the performance and capacity characteristics of the feature and how it was tested by Microsoft, including: \r\n<UL>\r\n<LI>Test farm characteristics</LI>\r\n<LI>Test results </LI>\r\n<LI>Recommendations </LI>\r\n<LI>Troubleshooting performance and scalability</LI>\r\n</UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SearchforSPFoundation2010CapacityPlanningDoc.docx"
+    ],
+    "detailsSection_file_size": [
+        "555.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Requirements: To download and read a white paper, you must have Microsoft Word.\r\n</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <B>Download</B>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24348",
+    "downloadPreload": true
+}

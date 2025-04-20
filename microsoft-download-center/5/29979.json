@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 20: Model BPMN and SharePoint Workflows in Visio 2010 (working files)",
+    "downloadDescription": "Practice working with Business Process Modeling Notation (BPMN) diagrams and Microsoft SharePoint workflows in Microsoft Visio 2010 with these diagrams, part of the Visio 2010 MVP Sessions, Video 20.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MVPSession20SharePointWorkflow.vsd",
+            "url": "https://download.microsoft.com/download/9/9/0/990a9dff-a2ee-4d26-bf07-fd21838ffe97/MVPSession20SharePointWorkflow.vsd",
+            "size": "261120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP document workflow.vwi",
+            "url": "https://download.microsoft.com/download/9/9/0/990a9dff-a2ee-4d26-bf07-fd21838ffe97/SP document workflow.vwi",
+            "size": "131314",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP document workflow AFTER.vwi",
+            "url": "https://download.microsoft.com/download/9/9/0/990a9dff-a2ee-4d26-bf07-fd21838ffe97/SP document workflow AFTER.vwi",
+            "size": "138220",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MVPSession20CustomEngravingProcess.vsd",
+            "url": "https://download.microsoft.com/download/9/9/0/990a9dff-a2ee-4d26-bf07-fd21838ffe97/MVPSession20CustomEngravingProcess.vsd",
+            "size": "498176",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession20SharePointWorkflowSlides.vsd",
+            "url": "https://download.microsoft.com/download/9/9/0/990a9dff-a2ee-4d26-bf07-fd21838ffe97/MVPSession20SharePointWorkflowSlides.vsd",
+            "size": "260608",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice working with BPMN diagrams and SharePoint workflows in Visio 2010 with these diagrams, created as companions to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 20. MVP Sessions Video 20 covers the basics of the BPMN and SharePoint workflow templates in Visio 2010. Use these working files to follow along with the video and practice creating an executable workflow compliant to BPMN standards or the SharePoint Workflow Rules Engine using Visio 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession20SharePointWorkflow.vsd",
+        "SP document workflow.vwi",
+        "SP document workflow AFTER.vwi",
+        "MVPSession20CustomEngravingProcess.vsd",
+        "MVPSession20SharePointWorkflowSlides.vsd"
+    ],
+    "detailsSection_file_size": [
+        "255.0 KB",
+        "128.2 KB",
+        "135.0 KB",
+        "486.5 KB",
+        "254.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the working files to your computer. Open the Visio diagrams with Visio 2010. Follow the instructions in the video to practice importing the SharePoint workflow (.vwi) file into a Visio diagram.  ",
+    "additionalInformationSection": "Watch the Model BPMN and SharePoint Workflows video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Session-20-Model-BPMN-and-SharePoint-workflows.aspx).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29979",
+    "downloadPreload": true
+}

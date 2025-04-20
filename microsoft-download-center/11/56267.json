@@ -1,0 +1,572 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Office 2010 (KB4011618) 64-Bit Edition",
+    "downloadDescription": "A security vulnerability exists in Microsoft Office 2010 64-Bit Edition that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-ja-jp.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-ja-jp.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-hr-hr.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-hr-hr.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-el-gr.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-el-gr.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-en-us.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-en-us.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-sk-sk.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-sk-sk.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-da-dk.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-da-dk.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-cs-cz.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-cs-cz.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-kk-kz.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-kk-kz.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-hi-in.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-hi-in.exe",
+            "size": "1522016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-it-it.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-it-it.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-pt-pt.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-pt-pt.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-sv-se.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-sv-se.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-es-es.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-es-es.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-ru-ru.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-ru-ru.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-hu-hu.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-hu-hu.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-zh-cn.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-zh-cn.exe",
+            "size": "1522040",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-ko-kr.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-ko-kr.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-zh-tw.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-zh-tw.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-et-ee.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-et-ee.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-nb-no.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-nb-no.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-fi-fi.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-fi-fi.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-lt-lt.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-lt-lt.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-ro-ro.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-ro-ro.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-sr-latn-cs.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-sr-latn-cs.exe",
+            "size": "1522560",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-th-th.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-th-th.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-pl-pl.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-pl-pl.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-bg-bg.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-bg-bg.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-fr-fr.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-fr-fr.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-uk-ua.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-uk-ua.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-ar-sa.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-ar-sa.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-he-il.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-he-il.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-pt-br.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-pt-br.exe",
+            "size": "1522040",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-sl-si.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-sl-si.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-lv-lv.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-lv-lv.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-nl-nl.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-nl-nl.exe",
+            "size": "1522024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-tr-tr.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-tr-tr.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eqnedt322010-kb4011618-fullfile-x64-de-de.exe",
+            "url": "https://download.microsoft.com/download/8/1/9/8196e932-5d1a-48dd-986d-893c2b30b249/eqnedt322010-kb4011618-fullfile-x64-de-de.exe",
+            "size": "1522032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"https://support.microsoft.com/kb/4011618\">Security Update for Microsoft Office 2010 (KB4011618) 64-Bit Edition</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4011618",
+        "name": "KB4011618"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "eqnedt322010-kb4011618-fullfile-x64-ja-jp.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-hr-hr.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-el-gr.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-en-us.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-sk-sk.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-da-dk.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-cs-cz.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-kk-kz.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-hi-in.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-it-it.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-pt-pt.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-sv-se.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-es-es.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-ru-ru.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-hu-hu.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-zh-cn.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-ko-kr.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-zh-tw.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-et-ee.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-nb-no.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-fi-fi.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-lt-lt.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-ro-ro.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-sr-latn-cs.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-th-th.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-pl-pl.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-bg-bg.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-fr-fr.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-uk-ua.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-ar-sa.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-he-il.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-pt-br.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-sl-si.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-lv-lv.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-nl-nl.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-tr-tr.exe",
+        "eqnedt322010-kb4011618-fullfile-x64-de-de.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<br />\r\n\r\nTo start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time</li>\r\n</ul>\r\n<br />\r\n<br />\r\n\r\n<b>IT professional resources</b><br />\r\nIT professional working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"https://technet.microsoft.com/en-us/office/desktop/default.aspx\">Microsoft Office Desktop Applications TechCenter</a>. Command line instructions can be found in Knowledge Base article <a href=\"https://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56267",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "GB18030 to Unicode Conversion Tool (gbunicnv.exe)",
+    "downloadDescription": "Tool to convert text files between GB18030-2000 and Unicode",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GB18030 Conversion Tool.zip",
+            "url": "https://download.microsoft.com/download/8/b/a/8ba99695-1f73-41ad-8b14-f252afc038e9/GB18030 Conversion Tool.zip",
+            "size": "76458",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The \u201cGB18030 to Unicode Conversion Tool\u201d download contains the gbunicnv.exe tool previously included on the Windows Installation Media in the support\\tools folder. <br />\r\n<br />\r\nThis tool allows conversion of plain text files between GB18030 and Unicode.  It is intended to help users migrate data from GB18030 to Unicode.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "GB18030 Conversion Tool.zip"
+    ],
+    "detailsSection_file_size": [
+        "74.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8 and higher.<br />\r\nWindows Server 2012 and higher.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "1. Download the GB18030 Conversion Tool.zip to a location it can be run from, such as the Downloads folder or Desktop.  The zip contains the end user license agreement and the gbunicnv.exe executable.<br />\r\n2. Extract the files from the compressed zip folder.<br />\r\n3. Read the license terms in the EULA English.doc or EULA Chinese.doc files.<br />\r\n4. Double click on the extracted gbunicnv.exe to run it.<br />\r\n5. Select Open and locate the desired source file.<br />\r\n6. Select the required conversion Option.<br />\r\n7. Select Convert to convert the input file.<br />\r\n8. By default the output file has the same name as the input with either \u201cUnicode\u201d or \u201cGB\u201d appended before the extension.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40334",
+    "downloadPreload": true
+}

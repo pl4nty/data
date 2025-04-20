@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "BridgeData V2-compatible set of robotic manipulation trajectories collected at Microsoft Research",
+    "downloadDescription": "BridgeData V2-compatible set of robotic manipulation trajectories collected at Microsoft Research",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSR__bridge_data_v2.zip",
+            "url": "https://download.microsoft.com/download/e/0/4/e04af046-0001-4304-a0b3-bc104dbcf630/MSR__bridge_data_v2.zip",
+            "size": "22569366572",
+            "version": "March 14 2024",
+            "datePublished": "7/15/2024 5:01:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LICENSE (1).txt",
+            "url": "https://download.microsoft.com/download/e/0/4/e04af046-0001-4304-a0b3-bc104dbcf630/LICENSE (1).txt",
+            "size": "191",
+            "version": "March 14 2024",
+            "datePublished": "7/15/2024 5:01:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A set of object manipulation trajectories collected at Microsoft Research on a WidowX-250 robot in a setup and format compatible with UC Berkeley's BridgeData V2 (https://rail-berkeley.github.io/bridgedata/)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 14 2024",
+    "detailsSection_file_name": [
+        "MSR__bridge_data_v2.zip",
+        "LICENSE (1).txt"
+    ],
+    "detailsSection_file_size": [
+        "21.0 GB",
+        "191 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105937",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "RML Utilities for SQL Server - Update Dec 2022",
+    "downloadDescription": "Tools to help database administrators manage the performance of Microsoft SQL Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RMLSetup.msi",
+            "url": "https://download.microsoft.com/download/a/a/d/aad67239-30df-403b-a7f1-976a4ac46403/RMLSetup.msi",
+            "size": "4894208",
+            "version": "09.04.0102",
+            "datePublished": "7/15/2024 4:33:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Do you know which databases or applications are using the most resources on your server?  How will a service pack upgrade, configuration change or application change affect your production SQL Server?  The RML Utilities for SQL Server provide you a set of tools and processes to answer these questions and much more.\r\n<br />\r\n<br />\r\nThe RML utilities allow you to process SQL Server trace files and view reports showing how SQL Server is performing.  For example, you can quickly see:<br />\r\n<ul>\r\n<li>Which application, database or login is using the most resources, and which queries are responsible for that</li>\r\n<li>Whether there were any plan changes for a batch during the time when the trace was captured and how each of those plans performed</li>\r\n<li>What queries are running slower in today's data compared to a previous set of data</li>\r\n</ul>\r\n\r\nYou can also test how the system will behave with some change (different service pack or hotfix build, changing a stored procedure or function, modifying or adding indexes, and so forth) by using the provided tools to replay the trace files against another instance of SQL Server.  If you capture trace during this replay you can use the tools to directly compare to the original baseline capture.<br/>\r\n<br/>\r\nSupports SQL Server versions 2005 and 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.04.0102",
+    "detailsSection_file_name": [
+        "RMLSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016 or newer \r\nWindows 10 and newer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "The RML Utilities require additional dependencies to be install. See the instructions available at https://docs.microsoft.com/en-us/troubleshoot/sql/tools/replay-markup-language-utility",
+    "additionalInformationSection": "This update package is a rollup of all fixes made in the 9.00 version of the utilities.  All prior versions of the RML Utilities must be uninstalled before running this package.\r\n<br />\r\n<br />\r\nThis package includes:\r\n<br />\r\n<ul>\r\n<li>Azure SQL \u2013 Connectivity and ReadTrace/Reporter database storage support</li>\r\n<li>SQL Server 2012/2022 Client and Server Versions supported</li>\r\n<li>SQL Server 2005 through 2022 Engine TRC support</li>\r\n<li>SQL Server 2008 through 2022 XEL ReadTrace support, including XEL to TRC conversion</li>\r\n<li>Improved compressed file handling (types and performance \u2013 See Expander documentation for complete details)</li>\r\n<li>Includes ReadTrace, OStress and Reporter support for MARS connections</li>\r\n<li>Reduced memory footprint across all utilities</li>\r\n<li>Changed target to .NET 4.x Framework</li>\r\n<li>Performance enhancements (> 64 CPU support, processor group awareness, NUMA awareness)</li>\r\n<li>Parallel worker pools used internally to boost performance and reduce system impact</li>\r\n<li>Logging enhancements and additions</li>\r\n<li>SHA256 signed binaries and package (Aug 2021)</li>\r\n<li>Bug fixes for detected missing column in ReadTrace.exe and strong name validation failure of Reporter.exe (Dec 2022)</li>\r\n</ul>\r\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "description of RML Utilities",
+            "url": "https://docs.microsoft.com/troubleshoot/sql/tools/replay-markup-language-utility"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104868",
+    "downloadPreload": true
+}

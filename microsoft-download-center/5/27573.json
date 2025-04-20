@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Scale Test Report for Very Large-Scale Document Repositories",
+    "downloadDescription": "This white paper provides details about a test lab that was run at Microsoft to show large scale SharePoint Server 2010 content databases.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "scalability-test-lab-report.docx",
+            "url": "https://download.microsoft.com/download/9/4/3/9432ebfe-0343-4487-ac55-a0bb5db787b1/scalability-test-lab-report.docx",
+            "size": "3272286",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "scalability-test-lab-report.pdf",
+            "url": "https://download.microsoft.com/download/9/4/3/9432ebfe-0343-4487-ac55-a0bb5db787b1/scalability-test-lab-report.pdf",
+            "size": "2747291",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "This white paper provides details about a test lab that was run at Microsoft to show large scale SharePoint Server 2010 content databases. It includes information about how two SharePoint Server content databases were populated with a total of 120 million documents over 30 terabytes (TB) of SQL Server databases. It details how this content was indexed by FAST Search Server 2010 for SharePoint. It describes load testing that was performed on the completed SharePoint Server and FAST Search Server 2010 for SharePoint and shows results from that testing and conclusions about the results from the testing. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "scalability-test-lab-report.docx",
+        "scalability-test-lab-report.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007, Microsoft Word 2010, or Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27573",
+    "downloadPreload": true
+}

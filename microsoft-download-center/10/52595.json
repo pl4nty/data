@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Differentially Private Network-Trace-Analysis Tools",
+    "downloadDescription": "Research and analysis related to computer networks is often hampered by the tension between the need for accurate network packet traces to study, and the concern that these traces may contain sensitive information. Last published: August 18, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPTraceAnalysis.zip",
+            "url": "https://download.microsoft.com/download/8/b/8/8b8f8cd3-8cf8-40cf-bfea-17249893474c/DPTraceAnalysis.zip",
+            "size": "163921",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Research and analysis related to computer networks is often hampered by the tension between the need for accurate network packet traces to study, and the concern that these traces may contain sensitive information. Starting from recent work on differential privacy, we have produced a toolkit and a collection of standard network trace analyses using these tools that guarantee differential privacy. The download demonstrates the tools, and how they can be used to analyze network trace data while providing strong privacy guarantees.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DPTraceAnalysis.zip"
+    ],
+    "detailsSection_file_size": [
+        "160.1 KB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52595",
+    "downloadPreload": true
+}

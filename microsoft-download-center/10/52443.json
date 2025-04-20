@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Tweet Entity Linking Data: IE-driven and IR-driven sets",
+    "downloadDescription": "In this dataset, we release the labeled data for people to evaluate and compare entity linking systems on tweets. Last published: December 17, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "twitterData.zip",
+            "url": "https://download.microsoft.com/download/b/1/f/b1f6ec54-542e-478e-b8c7-33a976537037/twitterData.zip",
+            "size": "61296",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In this dataset, we release the labeled data for people to evaluate and compare entity linking systems on tweets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "twitterData.zip"
+    ],
+    "detailsSection_file_size": [
+        "59.9 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52443",
+    "downloadPreload": true
+}

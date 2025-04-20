@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "New Office Visio Stencil",
+    "downloadDescription": "These stencils contain more than 300 icons to help you create visual representations of Microsoft Office or Microsoft Office 365 deployments including Skype for Business, Microsoft Exchange Server, Microsoft Skype for Business Server, Microsoft Lync Server, and Microsoft SharePoint Server. Symbols sets from 2016, 2014, and 2012 are all available. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeSymbols_2014.zip",
+            "url": "https://download.microsoft.com/download/e/8/f/e8fb742e-788d-4019-acc3-e2e0d7c9473a/OfficeSymbols_2014.zip",
+            "size": "4004367",
+            "version": "Jul2016",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeSymbols_2016.zip",
+            "url": "https://download.microsoft.com/download/e/8/f/e8fb742e-788d-4019-acc3-e2e0d7c9473a/OfficeSymbols_2016.zip",
+            "size": "1196318",
+            "version": "Jul2016",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeSymbols_2012and2014.zip",
+            "url": "https://download.microsoft.com/download/e/8/f/e8fb742e-788d-4019-acc3-e2e0d7c9473a/OfficeSymbols_2012and2014.zip",
+            "size": "6316018",
+            "version": "Jul2016",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Creating visual representations of your Microsoft Office and Office 365 architectures, including Microsoft Exchange, SharePoint, and Skype for Business is a helpful way to communicate your deployment. These Visio stencils provide more than 300 icons -- many depicting servers, server roles, services and applications -- that you can use in architecture diagrams, charts, and posters. These icons are primarily centered around deployments of Microsoft Exchange Server, Microsoft Skype for Business, and Microsoft SharePoint Server as well as hybrid Office 365 deployments of aforementioned technologies. \r\n<br/><br/>\r\nThe download files now include stencil sets from 2016, 2014 and 2012. If you want only the latest stencils, download the \"2016\" file. If you also want the older symbols, download the \"2012and2014\" file which contains both of those sets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jul2016",
+    "detailsSection_file_name": [
+        "OfficeSymbols_2014.zip",
+        "OfficeSymbols_2016.zip",
+        "OfficeSymbols_2012and2014.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB",
+        "1.1 MB",
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following Office applications: Microsoft Office Visio 2003 or later.\r\nThe file is a Microsoft Visio stencil. Users who don\u2019t have Microsoft Visio can view this document using the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=205698\">Visio 2010: Visio Viewer</A>. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35772",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2013 Deployment Tool for Click-to-Run",
+    "downloadDescription": "The Office 2013 Deployment Tool allows the administrator to customize and manage Office 2013 Click-to-Run deployments. This tool will help adminstrators to manage installations sources, product/language combinations, and deployment configuration options for Office Click-to-Run.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "officedeploymenttool_x86_5031-1000.exe",
+            "url": "https://download.microsoft.com/download/6/2/3/6230f7a2-d8a9-478b-ac5c-57091b632fcf/officedeploymenttool_x86_5031-1000.exe",
+            "size": "846256",
+            "version": "2013",
+            "datePublished": "7/15/2024 4:45:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>NOTE: </b> For managing Office 2016 products that use Click-to-Run, use this version of the Office Deployment Tool: <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=49117\">Office 2016 Deployment Tool for Click-to-Run</a><br/><br/>\r\n\r\nBy default, Office 2013 installations that use Click-to-Run will download the Office product from the Internet, with full UI, and with automatic updates enabled. <br/>\r\nSome administrators will need more control beyond the default Click-to-Run installation behavior in order to work best in their environments.<br/>\r\nUsing the Office Deployment Tool, an administrator may:<br/>\r\n\u2022 Download an Office installation source to a network share location <br/>\r\n\u2022 Configure an installation to use a network share as the installation source instead of the Internet<br/>\r\n\u2022 Configure an installation to suppress all UI <br/>\r\n\u2022 Configure the logging for an installations <br/>\r\n\u2022 Configure whether Office will automatically update or not<br/> \r\n\u2022 Configure which products and languages to install<br/> \r\n\u2022 Remove Office Click-to-Run products<br/> \r\n<br/>Administrators run the Office Deployment Tool at the command line.  The tool creates a configuration file, which the administrator can modify to specify what the desired action is.\r\n<br/>Learn more about the Office Deployment Tool and the options expressed in the configuration file from these links:<br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=253344\">Customization overview for Click-to-Run</a> <br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=253345\">Office Deployment Tool for Click-to-Run</a><br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=253346\">Click-to-Run for Office 365 Configuration.xml file</a><br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=253347\">Download Click to Run for Office 365 products by using the Office Deployment Tool</a> <br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=257844\">Deploy Click-to-Run for Office 365 products by using the Office Deployment Tool</a><br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "officedeploymenttool_x86_5031-1000.exe"
+    ],
+    "detailsSection_file_size": [
+        "826.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To download the Office Deployment Tool: <br/>\r\n1. Download the Office Deployment Tool <br/>\r\n2. Download the sample configuration file<br/>\r\n<br/><br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36778",
+    "downloadPreload": true
+}

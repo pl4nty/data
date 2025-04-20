@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Font to display equations created by Microsoft Equation Editor 3.0",
+    "downloadDescription": "This font will enable display of Math equations created using Microsoft Equation Editor 3.0. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MTEXTRA.TTF",
+            "url": "https://download.microsoft.com/download/3/b/c/3bc07d0c-2748-4300-84dd-694857e582f1/MTEXTRA.TTF",
+            "size": "7656",
+            "version": "3.01",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Equation Editor 3.0 is no longer supported. Math Equations created using Microsoft Equation Editor 3.0 may not display due to absence of MT Extra font. To fix the issue download and install MT Extra font and restart the Office application. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.01",
+    "detailsSection_file_name": [
+        "MTEXTRA.TTF"
+    ],
+    "detailsSection_file_size": [
+        "7.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "To install this font on a single PC:<br/>\r\n1. Locate the MTEXTRA.TTF font file you just downloaded.<br/>\r\n2. Right-click the font file and choose <b>Install</b>.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56828",
+    "downloadPreload": true
+}

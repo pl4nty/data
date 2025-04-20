@@ -1,0 +1,197 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Technical Preview 5 Operations Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-4.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-8.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-7.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-1.bin",
+            "size": "735663104",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-6.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-5.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-11.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OMTP_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/OMTP_VHDEVAL.docx",
+            "size": "71345",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-14.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-14.bin",
+            "size": "569278254",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-2.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-3.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-10.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-9.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-13.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD-12.bin",
+            "size": "736000000",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCTP5_SCOM_VHD.exe",
+            "url": "https://download.microsoft.com/download/3/0/b/30bf5312-835f-4e92-8235-debe3560953f/SCTP5_SCOM_VHD.exe",
+            "size": "352768",
+            "version": "TP5",
+            "datePublished": "7/15/2024 4:16:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center Technical Preview 5 and Windows Server Technical Preview 5. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center Technical Preview 5 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=9bf2e5ee-9b38-4949-a6aa-3a927147bffc\">System Center Technical Preview 5 Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d2e35ffd-3118-49a3-88d0-1d32b3cca8f7\">System Center Technical Preview 5 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=e58dd5f9-2deb-4151-9147-327af287c08d\">System Center Technical Preview 5 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=e957f9e3-0fcc-4799-8d75-4ab9ff1edc9c\">System Center Technical Preview 5 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d97e6391-493d-4153-8baf-0db1c1294b79\">System Center Technical Preview 5 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "TP5",
+    "detailsSection_file_name": [
+        "SCTP5_SCOM_VHD-4.bin",
+        "SCTP5_SCOM_VHD-8.bin",
+        "SCTP5_SCOM_VHD-7.bin",
+        "SCTP5_SCOM_VHD-1.bin",
+        "SCTP5_SCOM_VHD-6.bin",
+        "SCTP5_SCOM_VHD-5.bin",
+        "SCTP5_SCOM_VHD-11.bin",
+        "OMTP_VHDEVAL.docx",
+        "SCTP5_SCOM_VHD-14.bin",
+        "SCTP5_SCOM_VHD-2.bin",
+        "SCTP5_SCOM_VHD-3.bin",
+        "SCTP5_SCOM_VHD-10.bin",
+        "SCTP5_SCOM_VHD-9.bin",
+        "SCTP5_SCOM_VHD-13.bin",
+        "SCTP5_SCOM_VHD-12.bin",
+        "SCTP5_SCOM_VHD.exe"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.6 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "69.7 KB",
+        "542.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "344.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cOMTP_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCTP5_SCOM_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51953",
+    "downloadPreload": true
+}

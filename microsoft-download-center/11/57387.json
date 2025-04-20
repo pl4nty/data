@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Longitudinal, daily, per-county activity periods of aggregated Twitter users",
+    "downloadDescription": "This data set consists of timelines of geo-located Twitter activity per U.S. county over ~4 years, from Jan 1, 2011 through April 30, 2014. Each county-timeline represents the amount of Twitter activity seen coming from publicly visible geo-located tweets in the given county. This activity timeline is intended to enable fundamental research of circadian rhythms over time, seasons, across weather p",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "twitter_daily_activities_v1.zip",
+            "url": "https://download.microsoft.com/download/4/5/9/459cc0ec-05dc-4a6f-884e-d5dcd9d909be/twitter_daily_activities_v1.zip",
+            "size": "746232928",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This data set consists of timelines of geo-located Twitter activity per U.S. county over ~4 years, from Jan 1, 2011 through April 30, 2014. Each county-timeline represents the amount of Twitter activity seen coming from publicly visible geo-located tweets in the given county. This activity timeline is intended to enable fundamental research of circadian rhythms over time, seasons, across weather patterns, etc.  Such understanding is important for understanding, for example, how people's sleep and work habits (and thus productivity, error rates, health, etc.) may be affected.  The data contains no user identifiers, text, or other data/metadata.  Furthermore, only counties that have a median activity level of 50 unique daily users over the dataset time period are included.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "twitter_daily_activities_v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "711.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57387",
+    "downloadPreload": true
+}

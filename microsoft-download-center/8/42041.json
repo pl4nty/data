@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 SAML 2.0 Federation Implementers Guide",
+    "downloadDescription": "A guide for implementation of SAML 2.0 federation with Office 365",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office 365 SAML 2.0 Federation Implementers Guide rev1.0.docx",
+            "url": "https://download.microsoft.com/download/1/b/c/1bc4178f-648f-445e-b2b6-61e31fb41a38/Office 365 SAML 2.0 Federation Implementers Guide rev1.0.docx",
+            "size": "267493",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:39:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains instructions for solution implementers of a Microsoft cloud service who want to provide their Azure Active Directory users with sign-on validation using a SAML 2.0 compliant SP-Lite profile based Identity Provider as their preferred Security Token Service (STS) / Identity Provider (IDP). This is useful where the solution implementer already has a user directory and password store on-premises that can be accessed using SAML 2.0. This existing user directory can be used for sign-on to Office 365 and other Azure Active Directory secured resources. The SAML 2.0 SP-Lite profile is based on the widely used Security Assertion Markup Language (SAML) federated identity standard to provide a sign-on and attribute exchange framework.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Office 365 SAML 2.0 Federation Implementers Guide rev1.0.docx"
+    ],
+    "detailsSection_file_size": [
+        "261.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Microsoft Word Viewer is required to view the document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the document and open it with Microsoft Word or the Microsoft Word Viewer",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42041",
+    "downloadPreload": true
+}

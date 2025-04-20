@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Upgrade Guide",
+    "downloadDescription": "Provides information about and instructions for upgrading to Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AXUpgradeGuide.pdf",
+            "url": "https://download.microsoft.com/download/8/a/8/8a808654-7931-4c2b-ab8d-f459dfe85254/AXUpgradeGuide.pdf",
+            "size": "1021652",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AXUpgradeGuide.xps",
+            "url": "https://download.microsoft.com/download/8/a/8/8a808654-7931-4c2b-ab8d-f459dfe85254/AXUpgradeGuide.xps",
+            "size": "1472255",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2009 Upgrade Process.pdf",
+            "url": "https://download.microsoft.com/download/8/a/8/8a808654-7931-4c2b-ab8d-f459dfe85254/Microsoft Dynamics AX 2009 Upgrade Process.pdf",
+            "size": "186433",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2009 Upgrade Process.xps",
+            "url": "https://download.microsoft.com/download/8/a/8/8a808654-7931-4c2b-ab8d-f459dfe85254/Microsoft Dynamics AX 2009 Upgrade Process.xps",
+            "size": "349578",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The Upgrade Guide provides information about upgrading from Microsoft Dynamics 3.0 (formerly known as Microsoft Business Solutions\u2013Axapta 3.0) with a supported service pack or from Microsoft Dynamics AX 4.0 to Microsoft Dynamics AX 2009. \r\n  <br /> \r\n  <br /> \r\n  This guide includes the following information: \r\n  <br /> \r\n <UL>\r\n  <LI>Troubleshooting information for upgrade tasks</LI> \r\n    <LI>Best practices for upgrading</LI> \r\n   <LI>Installation steps as they pertain to the upgrade process</LI> \r\n   <LI>Application upgrade issues for specific features</LI> \r\n  </UL>\r\n  <br /> \r\nYou also can download the Microsoft Dynamics AX 2009 Upgrade Process document , which contains diagrams of the upgrade process. These diagrams provide high-level and detailed views of the upgrade process for the development, test, and production environments. \r\n<br /> \r\n<br /> \r\n<b>Note:</b> For the most up-to-date information for Microsoft Dynamics AX administrators, see the <a href=\"http://technet.microsoft.com/en-us/library/dd309624.aspx\">Microsoft Dynamics AX 2009 Technical Library</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "AXUpgradeGuide.pdf",
+        "AXUpgradeGuide.xps",
+        "Microsoft Dynamics AX 2009 Upgrade Process.pdf",
+        "Microsoft Dynamics AX 2009 Upgrade Process.xps"
+    ],
+    "detailsSection_file_size": [
+        "997.7 KB",
+        "1.4 MB",
+        "182.1 KB",
+        "341.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n  <LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.</LI> \r\n    <LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack.</LI> \r\n <LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI>\r\n  </UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\r\n    <LI>Save the file to your computer.</LI> \r\n  </OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "upgrade Information for Microsoft Dynamics AX 2009",
+            "url": "https://mbs.microsoft.com/customersource/documentation/setupguides/ax2009_upgrade.htm?printpage=false"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24412",
+    "downloadPreload": true
+}

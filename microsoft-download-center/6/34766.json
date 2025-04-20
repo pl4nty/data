@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Microsoft Windows Server 2012 AD RMS",
+    "downloadDescription": "This management pack provides an early warning to administrators on issues that could affect services so that administrators can investigate and take corrective action, if necessary. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AD RMS 2012 Monitoring Management Pack.msi",
+            "url": "https://download.microsoft.com/download/5/d/d/5ddfc926-02cd-4df5-90ce-881d375b46b5/AD RMS 2012 Monitoring Management Pack.msi",
+            "size": "491520",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_2012_MP_ADRMS.doc",
+            "url": "https://download.microsoft.com/download/5/d/d/5ddfc926-02cd-4df5-90ce-881d375b46b5/OpsMgr_2012_MP_ADRMS.doc",
+            "size": "297984",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Management pack provides an early warning to administrators on issues that could affect services so that administrators can investigate and take corrective action, if necessary. The management pack helps to simplify the administrative environment by providing a single console for the administrator to perform a number of useful management tasks. To help troubleshoot common issues, the management pack contains helpful product knowledge and a way to extend this knowledge through adding your own company or organization knowledge related to an issue. This management pack provides an early warning to administrators on issues that could affect services so that administrators can investigate and take corrective action, if necessary. The management pack helps to simplify the administrative environment by providing a single console for the administrator to perform a number of useful management tasks. To help troubleshoot common issues, the management pack contains helpful product knowledge and a way to extend this knowledge through adding your own company or organization knowledge related to an issue. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThe System Center Management Pack for Active Directory Rights Management Services provides monitoring for the following core areas and scenarios:<br/>\r\n<ul>\r\n<li> Cluster Availability </li> \r\n<li> Logging Failures</li>\r\n<li> Database Availability</li>\r\n<li> Client Activation Issues</li>\r\n<li> Rights Policy Template Integration</li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>9/25/2012 - Original English release for Windows Server 2012 AD RMS, version 7.0.8560.0</li>\r\n<li>2/11/2013 - Localized version release, version 7.0.8560.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8560.0",
+    "detailsSection_file_name": [
+        "AD RMS 2012 Monitoring Management Pack.msi",
+        "OpsMgr_2012_MP_ADRMS.doc"
+    ],
+    "detailsSection_file_size": [
+        "480.0 KB",
+        "291.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center 2012 - Operations Manager </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "\u200b\u200bRefer to the management pack guide included in this download for detailed instructions on working with this management pack. For the latest MP Guide, please download the .doc file below.\u200b\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "active Directory Rights Management Services Overview",
+            "url": "http://technet.microsoft.com/en-us/library/hh831364"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34766",
+    "downloadPreload": true
+}

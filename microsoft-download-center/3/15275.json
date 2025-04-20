@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory Performance Testing Tool (ADTest.exe)",
+    "downloadDescription": "ADTest.exe is an Active Directory load-generation tool that simulates client transactions on a host server to assess the performance of the Microsoft\u00ae Active Directory\u2122 within Microsoft\u00ae Windows\u00ae Server 2003 and Microsoft\u00ae Active Directory Application Mode\u2122.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "adtest.msi",
+            "url": "https://download.microsoft.com/download/a/2/9/a29d783d-e1de-493f-acf1-5e8b4ef8bb95/adtest.msi",
+            "size": "1100288",
+            "version": "5.2.3790.1064",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ADTest is an Active Directory load-generation tool. It allows you to simulate client transactions on the host server. By varying client load, you can relate the transaction rate to resource utilization on the server and get some idea about the requirements for your environment. Because ADTest can perform generic Active Directory requests, it can also create an organizational unit structure inside Active Directory. You can add many organizational units and user objects in those ADTest-created organizational units. You can also add attributes to the user objects. Once you have created the Active Directory structure you require, you can use ADTest to perform various Active Directory requests, including Modify and Search. Several pre-built tests have been written to reproduce some typical activities you might want to evaluate. Examples of these pre-built tests are: an interactive logon, a batch logon, a search for a random user, and a modification of an attribute of a random user. By varying your hardware environment or other test parameters, you can gain insight into the performance sensitivities of your particular setup.<br><br>Remember that benchmarking and performance exercises are useful for comparing platforms or for getting a general understanding of the hardware requirements for common implementation scenarios. However, because these tests are run in constrained environments, such as an isolated lab, they do not necessarily translate directly to deployable scenarios. Therefore, it is important to understand that while this tool is meant to help you prepare for a fairly comprehensive server-sizing and capacity-planning effort, any data generated is only meant for general sizing, benchmarking, or deployment recommendations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.2.3790.1064",
+    "detailsSection_file_name": [
+        "adtest.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br>You can target ADTest.exe against servers that are based on the following platforms:<BR/><UL><LI>Windows 2000 Server</LI><LI>Windows 2000 Advanced Server</LI><LI>Windows 2000 Datacenter Server</LI><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/>You can install and use ADTest.exe on the following operating systems:<BR/><UL><LI>Windows XP Professional</LI><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&displaylang=en"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://www.microsoft.com/windowsserver2003/techinfo/reskit/resourcekit.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15275",
+    "downloadPreload": true
+}

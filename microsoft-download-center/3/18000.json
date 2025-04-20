@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Mobile (KB949168)",
+    "downloadDescription": "This is the Microsoft Windows Mobile 5.0 and Windows Mobile 6 (Pocket PC and Smartphone) update to address DST related issues in 2008 due to revised Daylight Saving Time laws in many countries.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WMDST2008-1.CAB",
+            "url": "https://download.microsoft.com/download/1/4/8/14883aeb-334f-4601-97b0-3272caa5dc22/WMDST2008-1.CAB",
+            "size": "23287",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release updates time zone registry data for Eastern Australia and Baghdad time zones in addition to New Zealand, Western Australia, US, Canada, and Mexico DST related issues in 2008. For complete details regarding the updates in this release, please download the WMDST2008-1.cab file above.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB949168",
+        "name": "KB949168"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "WMDST2008-1.CAB"
+    ],
+    "detailsSection_file_size": [
+        "22.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Mobile 5.0 for Pocket PC.<br />\nWindows Mobile 5.0 for Smartphone.<br />\nWindows Mobile 6 Professional.<br />\nWindows Mobile 6 Standard.<br />\nWindows Mobile 6 Classic.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 5.0",
+        "Windows Mobile 6"
+    ],
+    "installInstructionSection": "1. Click the download above to download the file<br />\n2. Please copy the file to the device and click on it to execute it. (There are multiple ways to copy a file to the device - one of them is to use ActiveSync)",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18000",
+    "downloadPreload": true
+}

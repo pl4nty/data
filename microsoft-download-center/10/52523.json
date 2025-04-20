@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Dense Visual Annotation Corpus",
+    "downloadDescription": "We introduce a new dataset of human annotations of objects, parts, attributes and activities in images. Last published: August 28, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DenseVisualAnnotationCorpus.zip",
+            "url": "https://download.microsoft.com/download/a/5/5/a55fed73-3b56-4eb2-8bd5-0bf746e53676/DenseVisualAnnotationCorpus.zip",
+            "size": "962543",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We introduce a new dataset of human annotations of objects, parts, attributes and activities in images. The purpose of this annotation effort is to approximate gold standard visual recognition, and to enable the study of what visual information is required in downstream tasks such as image-to-text generation. This annotation was gathered using Amazon Mechanical Turk and consists of 4,000 object instances and 100,000 textual labels annotated on 500 images.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DenseVisualAnnotationCorpus.zip"
+    ],
+    "detailsSection_file_size": [
+        "940.0 KB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52523",
+    "downloadPreload": true
+}

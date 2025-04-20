@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Consumerization of IT Test Lab Guide: Windows To Go with DirectAccess",
+    "downloadDescription": "Microsoft has enabled Consumerization of IT (CoIT) through many technologies for many years and now helps IT managers face security, compliance and compatibility issues they might deal with and give users access to corporate intellectual property from ubiquitous devices, both managed and unmanaged. Together, Windows Server 2012 and Windows 8 Enterprise add unique features to enable such scenarios.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CoIT-Windows-to-Go-with-DirectAccessv1.1.docx",
+            "url": "https://download.microsoft.com/download/b/8/0/b80f1458-7e0b-405e-83b6-b37201cff81a/CoIT-Windows-to-Go-with-DirectAccessv1.1.docx",
+            "size": "701152",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Consumerization of IT is now a reality and users expect to be able to use their own devices, such as smartphones, tablets or laptops, for their work. In enterprises, IT departments can prevent problems by enabling these typical scenarios and being aware and ready to meet both users\u2019 needs and security policies.<br/><br/>\r\n\r\nTest Lab Guides (TLGs) that allow you to get hands-on experience using a pre-defined and tested methodology that results in a working configuration for the most frequent and relevant CoIT scenarios. When you use a TLG to create a CoIT test lab, instructions tell you what servers to create, how to configure the operating systems and platform services, and how to install and configure any additional products, technologies or devices. A TLG experience enables you to see all of the components and the configuration steps on both the front-end and back-end that go into a single- or multi-product or technology solution.<br/><br/>\r\n\r\nThis TLG demonstrates how forthcoming Microsoft technologies such as Windows Server 2012 and Windows 8 Enterprise can allow to work anywhere with a personal computer and just an USB key or an external hard drive protected by BitLocker, while enjoying connectivity to his workplace.<br/><br/>\r\n\r\nAs of this writing, it comes as an addition to a series of TLGs entitled <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=29574\">Consumerization of IT Test Lab Guides</a> that illustrates key CoIT scenarios with current Microsoft technologies.<br/><br/>\r\n\r\nThis document contains instructions for setting up the Windows To Go feature with DirectAccess test lab by:<br/>\r\n<ul>\r\n<li>Deploying three server computers running Windows Server 2012 as Hyper-V virtual machines (VMs), one physical client computer running Windows 8 Enterprise and one Windows To Go Workspace.</li>\r\n<li>Setting up the virtual networks, the Active Directory infrastructure, and the DirectAccess server.</li>\r\n</ul>\r\nThe resulting configuration simulates a private intranet and the Internet.<br/><br/>\r\n\r\n<b>Important Note:</b> Microsoft has tested this TLG successfully with the Windows Server 2012 Hyper-V virtualization technology, Windows Server 2012 virtual machines, and <b>Windows 8 Enterprise</b> for the client systems. Please make sure you have access to these products before attempting to build this test Lab, as the Windows 8 edition does not have the demonstrated features. It is important to notice that this guide is independent in the sense that it <b>allows to build a full functional lab</b> on its own and does NOT require to follow other guides to implement the expected scenario.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "CoIT-Windows-to-Go-with-DirectAccessv1.1.docx"
+    ],
+    "detailsSection_file_size": [
+        "684.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To be able to build the lab according to the provided guides, you need at least:<br/>\r\n\r\n<ul>\r\n<li>One Windows Server 2012 server, with 64-bit dual-core, 2GHz CPU, 4GB RAM, 60GB of available disk space and two network adapters, and with the Hyper-V role installed.</li>\r\n<li>One Windows 8 Enterprise compatible laptop with an USB 3.0 interface.</li>\r\n<li>The Windows Server 2012 ISO distribution file.</li>\r\n<li>The Windows 8 Enterprise (32-bit or 64-bit) ISO distribution file.</li>\r\n<li>A Windows To Go compatible USB 3.0 Drive or Key.</li>\r\n\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8 Release Preview",
+        "Windows Server 2012 Release Candidate"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29990",
+    "downloadPreload": true
+}

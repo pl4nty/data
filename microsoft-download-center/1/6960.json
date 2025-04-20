@@ -1,0 +1,132 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Small Business Server 2003 Service Pack 1 (SP1)",
+    "downloadDescription": "Microsoft Windows Small Business Server 2003 Service Pack 1 (SP1) offers the latest software and security updates to Windows Small Business Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ToDownLoadFilesandReadInstructions.htm",
+            "url": "https://download.microsoft.com/download/e/0/f/e0fee8ce-768d-41c0-8871-9bc48e0b3fc3/ToDownLoadFilesandReadInstructions.htm",
+            "size": "20364",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Microsoft&#174; Windows&#174; Small Business Server 2003 Service Pack 1 (SP1) offers the latest software and security updates to Windows Small Business Server 2003 (Windows SBS) including: enhanced security and performance, increased reliability, and improved productivity and collaboration. For more detailed technical information about this service pack, see <a href = \"http://go.microsoft.com/fwlink/?LinkId=40097\">What\u2019s New for Windows SBS 2003 SP1 </a>(http://go.microsoft.com/fwlink/?LinkId=40097).\n<br />\n<br />\n<b>Downloading the service pack</b>. The download for Windows SBS SP1 includes the service packs necessary for the Standard Edition of Windows SBS 2003. As a part of this process, you must download five separate files, which could take a considerable amount of time depending upon the speed of your Internet connection.  If any of service packs 1-4 are already installed, it is not necessary to do so again. <br />\n<ul><br />\n1.\tService Pack 1 for the Windows Server&#174;  2003 operating system<br />\n2.\tWindows SharePoint&#174;  Services 2.0 Service Pack 1 <br />\n3.\tExchange Server 2003 Service Pack 1<br />\n4.\tWindows XP SP2 for Client Deployment<br />\n5.\tWindows Small Business Server 2003 SP1<br />\n</ul><br />\nTo download each of these service packs, click <a href=\"http://go.microsoft.com/fwlink/?LinkId=50694\"> \u201cDownloading and Installing Windows Small Business Server 2003 Service Pack 1\u201d</a>. The file provides links to download all of the necessary service packs, along with detailed instructions for how to complete the install.<br />\n<br />\n<b>Important</b>   If you are running the Premium Edition of Windows SBS 2003, you can still download the Standard Edition of the service pack. However, you must also order the CD package to install the additional service packs necessary for the Premium Edition. <br />\n<br />\n<b>Ordering the CD package</b>. When you order the CD package, there is a nominal fee, including shipping and handling and applicable taxes. For more information on the CD ordering process, go to the <a href = \"http://go.microsoft.com/fwlink/?LinkId=50685\">Windows Small Business Server 2003 Service Pack 1</a> web site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ToDownLoadFilesandReadInstructions.htm"
+    ],
+    "detailsSection_file_size": [
+        "19.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Small Business Server 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Small Business Server 2003 "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "small Business Server Home Page",
+            "url": "http://go.microsoft.com/?linkid=3316123"
+        },
+        {
+            "title": "release Notes for Windows SBS with SP1",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=41392"
+        },
+        {
+            "title": "instructions for Installing SP1 for Windows SBS Standard Edition from CD.",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=44298"
+        },
+        {
+            "title": "instructions for Installing SP1 for Windows SBS Premium Technologies from CD.",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=44602"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6960",
+    "downloadPreload": true
+}

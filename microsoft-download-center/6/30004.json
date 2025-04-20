@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2010: Planning for User Readiness Training",
+    "downloadDescription": "This whitepaper provides guidance for training end users on Office",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office 2010 User Readiness Training Whitepaper.docx",
+            "url": "https://download.microsoft.com/download/5/b/a/5ba93f7c-2fa2-49e1-b44f-00b41e935282/Office 2010 User Readiness Training Whitepaper.docx",
+            "size": "6624628",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "This whitepaper provides guidance to help your organization prepare your users for the switch to Microsoft Office 2010.  The paper describes the different challenges faced by end user readiness training and outlines strategies for success in this area.  Four common denominators of successful user readiness training plans are identified, namely: integrating user readiness training into your overall deployment strategy; implementing user readiness training in waves to drive adoption; enlisting the assistance and cooperation of innovators and early adopters; and identifying the various learning resources available and selecting those most appropriate.  The paper then outlines how these different strategies can be applied to the task of preparing a typical organization for Office 2010 deployment and especially migration from previous versions of Office.  These strategies are then demonstrated using a sample scenario involving a fictional company named Contoso Ltd. that is migrating their Office 2003 users to Office 2010.  The paper includes a detailed look at the Office 2010 readiness training resources available on the Springboard Series site on Microsoft TechNet, on the Microsoft Download Center, and through Software Assurance for Volume Licensing customers. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Office 2010 User Readiness Training Whitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "6.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Office",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows XP"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [
+        {
+            "title": "end User Readiness and Training Resources",
+            "url": "http://technet.microsoft.com/en-US/office/ff381682.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30004",
+    "downloadPreload": true
+}

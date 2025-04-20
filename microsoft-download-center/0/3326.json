@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Hosting Environments for SharePoint 2010 Products",
+    "downloadDescription": "Summarizes the support for hosting environments and illustrates common hosting architectures.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Hosting_SharePointProducts2010.vsd",
+            "url": "https://download.microsoft.com/download/7/5/4/7546ddd5-c8b3-46f0-8087-8a7a37f739e6/Hosting_SharePointProducts2010.vsd",
+            "size": "3426304",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hosting_SharePointProducts2010.pdf",
+            "url": "https://download.microsoft.com/download/7/5/4/7546ddd5-c8b3-46f0-8087-8a7a37f739e6/Hosting_SharePointProducts2010.pdf",
+            "size": "931342",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hosting_SharePointProducts2010.xps",
+            "url": "https://download.microsoft.com/download/7/5/4/7546ddd5-c8b3-46f0-8087-8a7a37f739e6/Hosting_SharePointProducts2010.xps",
+            "size": "1159130",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model summarizes the support for hosting environments and illustrates common hosting architectures using Microsoft SharePoint 2010 Products.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Hosting_SharePointProducts2010.vsd",
+        "Hosting_SharePointProducts2010.pdf",
+        "Hosting_SharePointProducts2010.xps"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB",
+        "909.5 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\n<ul>\r\n<li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Tips for using posters</b>\r\n<br></br>\r\nIf you have a plotter, you can print these posters in their full size. If you don\u2019t have plotter, use the following steps to print on smaller paper.\r\n<br></br>\r\n<b>To print posters on smaller paper</b>\r\n<br></br>\r\n<ol>\r\n<li>Open the poster in Office Visio.</li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>. </li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down.</li>\r\n\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>. </li>\r\n\r\n<li>On the <b>File</b> menu, click <b>Print</b>. </li>\r\n</ol>\r\n<br></br>\r\nIf you want to create posters that use the same symbols as these posters, you can download Visio stencils for Office IT Pro posters (http://go.microsoft.com/fwlink/?LinkId=148756).\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3326",
+    "downloadPreload": true
+}

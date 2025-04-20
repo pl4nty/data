@@ -1,0 +1,160 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Malicious Software Removal Tool 32-bit",
+    "downloadDescription": "Windows Malicious Software Removal Tool (MSRT) helps keep Windows computers free from prevalent malware. MSRT finds and removes threats and reverses the changes made by these threats. MSRT is generally released monthly as part of Windows Update or as a standalone tool available here for download. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows-KB890830-V5.132.exe",
+            "url": "https://download.microsoft.com/download/4/a/a/4aa524c6-239d-47ff-860b-5b397199cbf8/Windows-KB890830-V5.132.exe",
+            "size": "79582872",
+            "version": "5.132",
+            "datePublished": "2/11/2025 4:17:06 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<br />\n<b>Use this tool:</b>\n<UL><LI>If you have automatic updates for Windows turned off. Windows Update automatically downloads and runs MSRT in the background.</LI>\n<LI>If you suspect an infection from prevalent malware families (<a href=\"https://support.microsoft.com/en-us/kb/890830#releaseinfo\">see covered threats</a>).</LI>\n<LI>To complement your antimalware product. This tool does not replace full-fledged antimalware such as <a href=\"https://www.microsoft.com/en-us/windows/windows-defender\">Windows Defender Antivirus</a>.</LI></UL><br />\nMSRT targets prevalent malware families only. For comprehensive malware detection and removal, consider using <a href=\"https://www.microsoft.com/security/scanner/en-us/default.aspx\">Microsoft Safety Scanner</a>.\n<br />\n<br />\n<br />\n<B>Integration with automatic updates</B>\n<br />\n<br />\nEnable automatic updates to regularly get MSRT with Windows Update. The integrated version automatically runs in the background. If you would like to run MSRT on demand, run the standalone version.\n<br />\n<br />\n<br />\n<B>Release schedule</B>\n<br />\n<br />\nMicrosoft generally delivers MSRT with Windows Update the second Tuesday of the month. The standalone version available on this page is delivered at the same time.\n<br />\n<br />\n<br />\n<B>Removal results and log file</B>\n<br />\n<br />\nAfter the standalone version of MSRT scans the computer and removes threats, it displays a report that lists the threats. It also generates the following log file:<br /><br />\n%windir%\\debug folder\\mrt.log\n<br />\n<br />\n<br />\n<B>Information for IT administrators and advanced users (KB890830)</B>\n<br />\n<br />\nFor advanced information, <a href=\"https://support.microsoft.com/en-us/help/890830/the-microsoft-windows-malicious-software-removal-tool-helps-remove-specific,-prevalent-malicious-software-from-computers-that-are-running-supported-versions-of-windows\">read KB890830 at support.microsoft.com</a>.\n<br />\n<br />\nThis KB entry contains information about MSRT and provides links to related topics. Visit this KB entry for more information about:\n<UL><LI>Supported comand-line switches</LI><LI>Release information, including the complete list of covered malware families</LI><LI>Data collected during errors and detections</LI><LI>Removing the tool</LI></UL>\n<br />\nFor detailed information about deploying MSRT, IT administrators can <a href=\"https://support.microsoft.com/en-us/help/891716/deployment-of-the-microsoft-windows-malicious-software-removal-tool-msrt-in-an-enterprise-environment\">read KB891716</a>.\n<br />\n<br />\n<br />\n<B>MSRT blog</B>\n<br />\n<br />\nTo learn more about the latest MSRT detections, <a href=\"https://blogs.technet.microsoft.com/mmpc/category/msrt/\">read the posts about MSRT</a> in the Microsoft Malware Protection Center blog.\n<br />\n<br />\n<br />\n<B>Language support</B>\n<br />\n<br />\nMSRT supports multiple languages. If the operating system language is not supported, MSRT uses United States English (en-us).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB890830",
+        "name": "KB890830"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.132",
+    "detailsSection_file_name": [
+        "Windows-KB890830-V5.132.exe"
+    ],
+    "detailsSection_file_size": [
+        "75.9 MB"
+    ],
+    "detailsSection_file_date": "2/11/2025",
+    "systemRequirementsSection": "<B>Note:</B> This tool must be run with local administrator privileges.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1",
+        "Windows 10 Tech Preview"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the tool immediately after it downloads, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for launch later, click <B>Save</B>.</LI>\n  </UL>\n  <LI>Open the tool to start scanning.</LI>\n</OL>\n<br />\n<B>Note:</B> This tool must be run with local administrator privileges. ",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Defender Antivirus",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=37595"
+        },
+        {
+            "title": "msrt entries in the MMPC blog",
+            "url": "https://blogs.technet.microsoft.com/mmpc/category/msrt/"
+        },
+        {
+            "title": "microsoft Security Essentials (for Windows 7 users)",
+            "url": "https://support.microsoft.com/en-us/help/14210/security-essentials-download"
+        },
+        {
+            "title": "safety Scanner (for advanced users)",
+            "url": "https://www.microsoft.com/security/scanner/en-us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16",
+    "downloadPreload": true
+}

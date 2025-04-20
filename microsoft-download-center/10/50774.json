@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Backup in Azure - Technical deployment kit with deployment guidance",
+    "downloadDescription": "This zipped file contains technical guidance and technical deck for hosted or on-premises SQL backup to Azure Blob Storage scenario.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Backup in Azure - Technical deployment kit with deployment guidance.zip",
+            "url": "https://download.microsoft.com/download/c/e/0/ce062973-ef7e-4afb-9798-2ea5e5f517c4/SQL Backup in Azure - Technical deployment kit with deployment guidance.zip",
+            "size": "123199088",
+            "version": "January 2014",
+            "datePublished": "12/15/2023 4:09:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped file contains technical guidance and technical deck for hosted or on-premises SQL backup to Azure Blob Storage scenario\n\n\n1.Technical Deck describing the solution and deployment \n\n2.Technical guidance, Reference Architecture and code snippets of solution prototype being deployed with CSP APIs and Azure\n\n3. Video demonstrating how to deploy the solution using the information mentioned in the technical guidance\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "SQL Backup in Azure - Technical deployment kit with deployment guidance.zip"
+    ],
+    "detailsSection_file_size": [
+        "117.5 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50774",
+    "downloadPreload": true
+}

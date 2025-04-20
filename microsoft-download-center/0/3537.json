@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 White Paper: Planning for Security",
+    "downloadDescription": "This document is designed to make you aware of actions that you can complete to help make your Microsoft Dynamics GP data as secure as possible.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SecurityPlanning.pdf",
+            "url": "https://download.microsoft.com/download/e/b/c/ebc1c2fc-63fd-40b8-8ba7-5c8a2dea123b/SecurityPlanning.pdf",
+            "size": "630876",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SecurityPlanning.xps",
+            "url": "https://download.microsoft.com/download/e/b/c/ebc1c2fc-63fd-40b8-8ba7-5c8a2dea123b/SecurityPlanning.xps",
+            "size": "1331094",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As the foundation for Microsoft Dynamics GP, Windows provides sophisticated standards-based network security. In the broadest sense, security involves planning and considering tradeoffs. You need to consider how to make the network as secure as possible without sacrificing usability. Because the size of Microsoft Dynamics GP implementations can vary a great deal, it is important to carefully consider the needs of a smaller business and to weigh the effectiveness of security against the costs that may be involved. Use your best judgment to recommend a policy that helps to meet security needs.\n<br />\n<br />\nThis document discusses the following topics: \n<UL><LI>Basic security recommendations</LI>\n<LI>Securing the server operating system</LI>\n<LI>Network security</LI>\n<LI>Virus protection</LI>\n<LI>Microsoft Dynamics GP security</LI>\n<LI>The Microsoft Dynamics GP database security model</LI>\n<LI>Core application security tasks</LI>\n<LI>Frequently asked questions about security in Microsoft Dynamics GP</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "SecurityPlanning.pdf",
+        "SecurityPlanning.xps"
+    ],
+    "detailsSection_file_size": [
+        "616.1 KB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Vista Business",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3537",
+    "downloadPreload": true
+}

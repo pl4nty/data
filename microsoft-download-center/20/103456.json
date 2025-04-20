@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Migrating from Teradata to Azure SQL Data Warehouse / Synapse Analytics",
+    "downloadDescription": "Migrating from Teradata to Azure SQL Data Warehouse / Synapse Analytics",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Migrating from Teradata to Azure SQL Data Warehouse v1.2.pdf",
+            "url": "https://download.microsoft.com/download/7/e/f/7ef931e3-00bf-4966-9447-78f3b446ecd6/Migrating from Teradata to Azure SQL Data Warehouse v1.2.pdf",
+            "size": "4366457",
+            "version": "1.2",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document gives insight into how to approach a Teradata to Azure SQL Data Warehouse migration. \r\nThis whitepaper is broken into sections which detail the migration phases, the preparation required for data \r\nmigration including schema migration, migration of the business logic, the actual data migration approach and \r\ntesting strategy. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "Migrating from Teradata to Azure SQL Data Warehouse v1.2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Whitepaper / Documentation",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Documentation",
+    "additionalInformationSection": "This document gives insight into how to approach a Teradata to Azure SQL Data Warehouse migration. \r\nThis whitepaper is broken into sections which detail the migration phases, the preparation required for data \r\nmigration including schema migration, migration of the business logic, the actual data migration approach and \r\ntesting strategy. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103456",
+    "downloadPreload": true
+}

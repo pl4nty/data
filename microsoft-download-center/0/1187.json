@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Design Search Architectures for Microsoft SharePoint Server 2010",
+    "downloadDescription": "This model describes the steps to determine a basic design for a SharePoint Server 2010 search architecture.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Search Model 4 of 4 - Farm-level design.xps",
+            "url": "https://download.microsoft.com/download/a/7/1/a7132fdd-db95-47d0-9d4b-92ae2a1f1502/Search Model 4 of 4 - Farm-level design.xps",
+            "size": "694794",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Search Model 4 of 4 - Farm-level design.pdf",
+            "url": "https://download.microsoft.com/download/a/7/1/a7132fdd-db95-47d0-9d4b-92ae2a1f1502/Search Model 4 of 4 - Farm-level design.pdf",
+            "size": "438520",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Search Model 4 of 4 - Farm-level design.vsd",
+            "url": "https://download.microsoft.com/download/a/7/1/a7132fdd-db95-47d0-9d4b-92ae2a1f1502/Search Model 4 of 4 - Farm-level design.vsd",
+            "size": "1137664",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model outlines four major steps to achieve a design for search in a SharePoint Server 2010 deployment. Starting with identifying business requirements, corpus volume, and key performance metrics, each successive step helps to refine the starting-point architecture.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Search Model 4 of 4 - Farm-level design.xps",
+        "Search Model 4 of 4 - Farm-level design.pdf",
+        "Search Model 4 of 4 - Farm-level design.vsd"
+    ],
+    "detailsSection_file_size": [
+        "678.5 KB",
+        "428.2 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. <br/> To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a><br/>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1187",
+    "downloadPreload": true
+}

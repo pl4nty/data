@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 1809 GP OS Administrative Guide",
+    "downloadDescription": "Windows 10 1809 GP OS Administrative Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows 10 version 1809 GP OS Administrative Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/f/1/ff186e32-35cf-47db-98b0-91ff11763d74/Windows 10 version 1809 GP OS Administrative Guide.pdf",
+            "size": "1054940",
+            "version": "1",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the Administrative Guide document for the Common Criteria GP OS evaluation of Windows 10 version 1809. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows 10 version 1809 GP OS Administrative Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A browser or other PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download and open the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100300",
+    "downloadPreload": true
+}

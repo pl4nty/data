@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Zune Player and Zune HD Player Product Manuals",
+    "downloadDescription": "Online copies of the Zune Player and Zune HD Player product manuals.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "zuneplayers.pdf",
+            "url": "https://download.microsoft.com/download/d/8/2/d82e47fd-1566-4e0a-b464-9e784b15aa2a/ZunePlayer/zuneplayers.pdf",
+            "size": "651590",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "zunehd.pdf",
+            "url": "https://download.microsoft.com/download/d/8/2/d82e47fd-1566-4e0a-b464-9e784b15aa2a/ZunePlayer/zunehd.pdf",
+            "size": "1998274",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the online copies of the printed Zune Player and Zune HD Player product manuals.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "zuneplayers.pdf",
+        "zunehd.pdf"
+    ],
+    "detailsSection_file_size": [
+        "636.3 KB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The files are in Adobe Acrobat (.pdf) format.  Please make sure that you have the appropriate reader for the files. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Please download the files with .zip extension relevant to your device.</li>\r\n<li>Right click on the file and choose \"Open With\"->\"Compressed (zipped) Folders\".</li>\r\n<li>There should be a file with .pdf extension in the compressed folder. </li>\r\n<li>Double click on the .pdf file to open it or you can copy it to another folder before you open it. </li>\r\n</ol>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30468",
+    "downloadPreload": true
+}

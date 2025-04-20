@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Services Datasheet",
+    "downloadDescription": "This datasheet provides a quick summary of Microsoft .NET Services, part of the Azure Services Platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_NET_Services_Datasheet.pdf",
+            "url": "https://download.microsoft.com/download/a/5/1/a5196724-865a-478d-a9dd-0858ed114bcd/Microsoft_NET_Services_Datasheet.pdf",
+            "size": "294789",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This datasheet provides a quick summary of Microsoft .NET Services, part of the Azure Services Platform. <br />\n<br />\nMicrosoft .NET Services is a set of loosely coupled services that make it easy to realize many of the benefits offered by cloud-based software. These services are particularly useful for integration scenarios\u2014by using .NET Services, you can develop federated cloud-based applications without having to entirely depend on your internal infrastructure team. It enables you to make your applications more scalable and flexible, resulting in more rapid deployments while keeping your local infrastructure intact.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_NET_Services_Datasheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "287.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Hyper-V Server 2008",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download to read the PDF",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2025",
+    "downloadPreload": true
+}

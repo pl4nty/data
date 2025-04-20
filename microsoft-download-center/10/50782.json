@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "DR for SQL Server - Campaigns",
+    "downloadDescription": "This zipped folder includes campaign materials like banner ads, search keywords, print ad templates, email templates etc. for CSP partners interested in launching SQL Disaster Recovery for hosted or on-premises data  in Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DR for SQL Server - Campaigns.zip",
+            "url": "https://download.microsoft.com/download/1/e/8/1e873616-2c88-46cd-ba4a-f3b6f8c1b331/DR for SQL Server - Campaigns.zip",
+            "size": "33872849",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 4:01:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes campaign materials like banner ads, search keywords, print ad templates, email templates etc. for CSP partners interested in launching SQL Disaster Recovery for hosted or on-premises data  in Azure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "DR for SQL Server - Campaigns.zip"
+    ],
+    "detailsSection_file_size": [
+        "32.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50782",
+    "downloadPreload": true
+}

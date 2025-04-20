@@ -1,0 +1,113 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2008 Service Pack 3 (KB2977322)",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2008 Service Pack 3 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB2977322-x86.exe",
+            "url": "https://download.microsoft.com/download/8/3/d/83d3eb48-51f1-4b62-aeab-6ac966c507de/SQLServer2008-KB2977322-x86.exe",
+            "size": "158372520",
+            "version": "10.00.5869.00",
+            "datePublished": "7/15/2024 3:38:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB2977322-x64.exe",
+            "url": "https://download.microsoft.com/download/8/3/d/83d3eb48-51f1-4b62-aeab-6ac966c507de/SQLServer2008-KB2977322-x64.exe",
+            "size": "221134496",
+            "version": "10.00.5869.00",
+            "datePublished": "7/15/2024 3:38:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB2977322-IA64.exe",
+            "url": "https://download.microsoft.com/download/8/3/d/83d3eb48-51f1-4b62-aeab-6ac966c507de/SQLServer2008-KB2977322-IA64.exe",
+            "size": "219549344",
+            "version": "10.00.5869.00",
+            "datePublished": "7/15/2024 3:38:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server 2008 Service Pack 3 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2984340; KB2977322",
+        "name": "KB2984340; KB2977322"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-044",
+        "name": "MS14-044"
+    },
+    "detailsSection_file_version": "10.00.5869.00",
+    "detailsSection_file_name": [
+        "SQLServer2008-KB2977322-x86.exe",
+        "SQLServer2008-KB2977322-x64.exe",
+        "SQLServer2008-KB2977322-IA64.exe"
+    ],
+    "detailsSection_file_size": [
+        "151.0 MB",
+        "210.9 MB",
+        "209.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2008 SP3 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43956",
+    "downloadPreload": true
+}

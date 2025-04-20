@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2010 Transport Server Role Architecture Diagrams",
+    "downloadDescription": "This download contains architectural diagrams that illustrate the Microsoft Exchange Server 2010 Hub Transport server role and Hub Transport extensibility. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2010_HubTransportRoleArchitecture.pdf",
+            "url": "https://download.microsoft.com/download/a/1/1/a114432b-84b7-4ef6-8671-7de62d9ec8aa/Exchange2010_HubTransportRoleArchitecture.pdf",
+            "size": "679654",
+            "version": "Nov2009",
+            "datePublished": "7/15/2024 3:26:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2010_HubTransportExtensibility.pdf",
+            "url": "https://download.microsoft.com/download/a/1/1/a114432b-84b7-4ef6-8671-7de62d9ec8aa/Exchange2010_HubTransportExtensibility.pdf",
+            "size": "683249",
+            "version": "Nov2009",
+            "datePublished": "7/15/2024 3:26:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Many components are involved in the transport of messages through the Exchange Server 2010 mail flow pipeline. The Hub Transport server role diagram can help you understand the role each component plays in the processing of messages that enter the Exchange 2010 mail flow pipeline. Exchange administrators can use this information to help diagnose mail flow problems. The Hub Transport extensibility diagram can help you understand how the agents process a message that is in the Exchange 2010 mail flow pipeline. Developers can use this information to help create third-party agents and applications to work with Exchange 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2009",
+    "detailsSection_file_name": [
+        "Exchange2010_HubTransportRoleArchitecture.pdf",
+        "Exchange2010_HubTransportExtensibility.pdf"
+    ],
+    "detailsSection_file_size": [
+        "663.7 KB",
+        "667.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is an Adobe Acrobat PDF document. Users who do not have Adobe Acrobat can download the <A HREF=\"http://get.adobe.com/reader/\">Adobe Acrobat Reader</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server 2010 TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=137085"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21987",
+    "downloadPreload": true
+}

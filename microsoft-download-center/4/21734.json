@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Global solutions for SharePoint 2010 Products",
+    "downloadDescription": "This model illustrates supported architectures for deploying Microsoft SharePoint 2010 Products geographically.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Global Solutions for SharePoint 2010 Products.vsd",
+            "url": "https://download.microsoft.com/download/1/e/7/1e77cd96-abc7-4dd5-a391-27c2226f2fc9/Global Solutions for SharePoint 2010 Products.vsd",
+            "size": "1104384",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Global Solutions for SharePoint 2010 Products.pdf",
+            "url": "https://download.microsoft.com/download/1/e/7/1e77cd96-abc7-4dd5-a391-27c2226f2fc9/Global Solutions for SharePoint 2010 Products.pdf",
+            "size": "553298",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Global Solutions for SharePoint 2010 Products.xps",
+            "url": "https://download.microsoft.com/download/1/e/7/1e77cd96-abc7-4dd5-a391-27c2226f2fc9/Global Solutions for SharePoint 2010 Products.xps",
+            "size": "1907596",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model illustrates supported architectures for deploying Microsoft SharePoint 2010 Products geographically.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Global Solutions for SharePoint 2010 Products.vsd",
+        "Global Solutions for SharePoint 2010 Products.pdf",
+        "Global Solutions for SharePoint 2010 Products.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "540.3 KB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating Systems</b>: Windows 7; Windows Server 2003; Windows Server 2008; Windows XP; and Windows Vista<br/><ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007 or Microsoft Visio 2010. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2010: Visio Viewer</a> to view the model.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href =\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n<li>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essential Pack</a>.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Tips for using posters<br/>\r\nIf you have a plotter, you can print these posters in their full size.  If you do not have plotter, use the following steps to print on smaller paper.<br/>\r\n<b>To print posters on smaller paper </b><br/>\r\n<ol><li>Open the poster in Office Visio.</li>\r\n<li>On the <b>File</b> menu, click <b>Page Setup</b>.</li>\r\n<li>On the <b>Print Setup</b> tab, in the <b>Printer paper</b> section, select the size of paper you want to print on.</li>\r\n<li>On the <b>Print Setup</b> tab, in the <b>Print zoom</b> section, click <b>Fit to</b>, and then enter 1 sheet across by 1 sheet down. </li>\r\n<li>On the <b>Page Size</b> tab, click <b>Size to fit drawing contents</b>, and then click <b>OK</b>.</li>\r\n<li>On the <b>File</b> menu, click <b>Print</b>. </li>\r\n</ol>\r\nIf you want to create posters that use the same symbols as these posters, you can download Visio stencils for Office IT Pro posters (http://go.microsoft.com/fwlink/?LinkId=148756).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21734",
+    "downloadPreload": true
+}

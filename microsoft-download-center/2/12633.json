@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Enabling Quality of Service with Microsoft Lync Server 2010 ",
+    "downloadDescription": "If your Windows Server network supports Quality of Service (QoS) management, you can take advantage of this functionality to optimize media traffic in your Microsoft Lync Server 2010 deployment. This guide shows you how.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LS_Deploy_QoS.doc",
+            "url": "https://download.microsoft.com/download/2/0/d/20dc4689-c7b5-4a2b-b12c-db2bc6f50c7f/LS_Deploy_QoS.doc",
+            "size": "193536",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If your Windows Server network supports Quality of Service (QoS) management, you can take advantage of this functionality to optimize media traffic in your Microsoft Lync Server 2010 deployment. This guide shows you how to use Group Policy objects on Windows 7, Windows Vista, Windows Server 2008 R2, and Windows Server 2008 based computers to simplify the process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2012",
+    "detailsSection_file_name": [
+        "LS_Deploy_QoS.doc"
+    ],
+    "detailsSection_file_size": [
+        "189.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12633",
+    "downloadPreload": true
+}

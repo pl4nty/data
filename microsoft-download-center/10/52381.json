@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "JPEGXR Plug-in for Photoshop (Mac)",
+    "downloadDescription": "A file-formats plug-in for the Mac version of Photoshop that enables the loading and saving of JPEGXR images. Last published: June 7, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "JPEGXR_Mac.zip",
+            "url": "https://download.microsoft.com/download/4/8/e/48ef59ca-2072-49f8-ac73-6bc568dacc6d/JPEGXR_Mac.zip",
+            "size": "391582",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A file-formats plug-in for the Mac version of Photoshop that enables the loading and saving of JPEGXR images.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "JPEGXR_Mac.zip"
+    ],
+    "detailsSection_file_size": [
+        "382.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Apple Macintosh OS X</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Macintosh"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52381",
+    "downloadPreload": true
+}

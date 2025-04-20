@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Debuggers for SOA and MPI Applications with HPC Pack 2012 Service Pack 1",
+    "downloadDescription": "This download provide an Visual Studio Add-on for debugging HPC SOA program and an extension to Windbg that facilitates debugging of multiple MPI processes at the same time. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msmpidbg.msi",
+            "url": "https://download.microsoft.com/download/6/8/c/68ce3cd0-2f98-420e-960b-9e9c10751578/msmpidbg.msi",
+            "size": "991744",
+            "version": "4.1.4174.0",
+            "datePublished": "7/15/2024 3:17:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mpi_debugger_ext_install_quickstart.rtf",
+            "url": "https://download.microsoft.com/download/6/8/c/68ce3cd0-2f98-420e-960b-9e9c10751578/mpi_debugger_ext_install_quickstart.rtf",
+            "size": "56999",
+            "version": "4.1.4174.0",
+            "datePublished": "7/15/2024 3:17:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SoaDebugger.vsix",
+            "url": "https://download.microsoft.com/download/6/8/c/68ce3cd0-2f98-420e-960b-9e9c10751578/SoaDebugger.vsix",
+            "size": "571756",
+            "version": "4.1.4174.0",
+            "datePublished": "7/15/2024 3:17:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This package includes two features to ease debugging HPC applications. <br/><br/>\r\n\r\nThe first feature enables an \u2018F5\u2019 experience for Cluster-SOA applications for debugging on the cluster. Three different debugging styles are enabled: (i) debugging all of the services simultaneously, (ii) debugging all requests made to a service on a specified machine, and (iii) debugging specific requests. Cluster-SOA clients that use Durable Sessions are able to use debugging style (i) and (ii) above. Once your break points are set and the debugger settings are specified you only have to press \u2018F5\u2019 to launch the debugger. Pressing \u2018F5\u2019 deploys your application binaries and the remote debugger, and submits a job to the scheduler. When the job is scheduled the Cluster-SOA service processes start under the control of the remote debugger. <br/><br/>\r\n\r\nThe second feature is an MSMPI Debugger Extension (MSMPIDBG) is an extension to Windbg that facilitates debugging of multiple MPI processes at the same time. The extension has the following features:<br/>\r\n<ul>\r\n<li>Supports the debugging of multiple MPI processes from one debugging session of Windbg/CDB.</li>\r\n<li>Supports three major debugging scenarios: launch under the debuggers, attach to running processes, and post-mortem debugging of dump files.</li>\r\n<li>Scales reasonably well to over 1K processes.</li>\r\n<li>Merges output from multiple processes to help with problem analysis.</li>\r\n<li>Supplies several built-in utilities that provides the user with MPI-specific information such as message queues, MPI handles (datatype, communicator, request), and connectivity information.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1.4174.0",
+    "detailsSection_file_name": [
+        "msmpidbg.msi",
+        "mpi_debugger_ext_install_quickstart.rtf",
+        "SoaDebugger.vsix"
+    ],
+    "detailsSection_file_size": [
+        "968.5 KB",
+        "55.7 KB",
+        "558.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "SOA debugger is a Visual Studio 2012 add-on. it requires Visual Studio 2012.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>SOA Debugger:</b> <br/>\r\n1. Download the SoaDebugger.vsix package to the same machine where you are developing using Visual Studio. <br/>\r\n2. Close Visual Studio. <br/>\r\n3. Install the package by double clicking on the icon.<br/>\r\n<br/>\r\n<b>MPI Debugger Extension:</b><br/>\r\nPlease refer to the document \"mpi_debugger_ext_install_quickstart.docx\" in this download for installation instructions. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39964",
+    "downloadPreload": true
+}

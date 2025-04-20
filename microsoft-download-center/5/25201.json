@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Governance guide for Microsoft SharePoint Server 2010",
+    "downloadDescription": "Provides guidance to determine the aspects of a Microsoft SharePoint Server 2010 deployment to govern and the governance techniques to use. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePtServGovernance.pdf",
+            "url": "https://download.microsoft.com/download/8/7/1/871af83f-17d3-45a9-9abf-06c87a8272b4/SharePtServGovernance.pdf",
+            "size": "609802",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServGovernance.xps",
+            "url": "https://download.microsoft.com/download/8/7/1/871af83f-17d3-45a9-9abf-06c87a8272b4/SharePtServGovernance.xps",
+            "size": "793332",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePtServGovernance.doc",
+            "url": "https://download.microsoft.com/download/8/7/1/871af83f-17d3-45a9-9abf-06c87a8272b4/SharePtServGovernance.doc",
+            "size": "396800",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Governance-guide-for-Microsoft-SharePoint-Server-2010.epub",
+            "url": "https://download.microsoft.com/download/8/7/1/871af83f-17d3-45a9-9abf-06c87a8272b4/Governance-guide-for-Microsoft-SharePoint-Server-2010.epub",
+            "size": "246090",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Governance-guide-for-Microsoft-SharePoint-Server-2010.mobi",
+            "url": "https://download.microsoft.com/download/8/7/1/871af83f-17d3-45a9-9abf-06c87a8272b4/Governance-guide-for-Microsoft-SharePoint-Server-2010.mobi",
+            "size": "347569",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This book provides guidance to help you determine the aspects of a Microsoft SharePoint Server 2010 deployment to govern and the governance techniques to use. Governance is the set of policies, roles, responsibilities, and processes that you establish in your enterprise to guide, direct, and control how it uses technologies to accomplish business goals. To strike the right balance between the needs of the users of your SharePoint Server 2010 deployment and the IT professionals who deploy and operate SharePoint Server 2010, we recommend that you form a governance body that includes representatives of all stakeholders in the SharePoint Server 2010 deployment. This body can then create and enforce rules that govern the use of SharePoint Server 2010. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePtServGovernance.pdf",
+        "SharePtServGovernance.xps",
+        "SharePtServGovernance.doc",
+        "Governance-guide-for-Microsoft-SharePoint-Server-2010.epub",
+        "Governance-guide-for-Microsoft-SharePoint-Server-2010.mobi"
+    ],
+    "detailsSection_file_size": [
+        "595.5 KB",
+        "774.7 KB",
+        "387.5 KB",
+        "240.3 KB",
+        "339.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2003, Windows Server 2008, Windows XP, Windows Vista. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25201",
+    "downloadPreload": true
+}

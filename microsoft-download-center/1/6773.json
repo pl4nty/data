@@ -1,0 +1,112 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2010 Release Notes",
+    "downloadDescription": "This download contains a stand-alone version of the Exchange Server 2010 Release Notes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Relnotes.htm",
+            "url": "https://download.microsoft.com/download/f/e/5/fe58232a-1853-494f-9fd5-7140aa693411/Relnotes.htm",
+            "size": "34294",
+            "version": "Feb2010",
+            "datePublished": "7/15/2024 3:14:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        }
+    ],
+    "detailsSection": "The Exchange Server 2010 Release Notes contain late-breaking information about Exchange Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2010",
+    "detailsSection_file_name": [
+        "Relnotes.htm"
+    ],
+    "detailsSection_file_size": [
+        "33.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Exchange Server 2010</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=21573"
+        },
+        {
+            "title": "exchange 2010 Online Help",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=132764"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6773",
+    "downloadPreload": true
+}

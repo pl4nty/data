@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide:  Installing Forefront Identity Manager 2010 Synchronization Service",
+    "downloadDescription": "Create a test lab with Forefront Identity Manager 2010 Synchronization Service",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_GS_TLG_FIM_Sync.docx",
+            "url": "https://download.microsoft.com/download/6/a/d/6adf7459-4299-412e-8120-88808f49e354/FIM_GS_TLG_FIM_Sync.docx",
+            "size": "526978",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Forefront Identity Manager 2010 is a comprehensive solution for managing identities, credentials, and identity-based access policies across heterogeneous environments.  This document contains an introduction to Microsoft Forefront Identity Manager 2010 and step-by-step instructions for extending the Base Configuration test lab to include just the FIM 2010 Synchronization Service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FIM_GS_TLG_FIM_Sync.docx"
+    ],
+    "detailsSection_file_size": [
+        "514.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems:  Windows Server 2008 R2\n\nMicrosoft SQL Server 2008 with Service Pack 2\n\nMicrosoft Exchange 2010 with Service Pack 1\n\nMicrosoft Forefront Identity Manager 2010\n\nUpdate 1 for Microsoft Forefront Identity Manager 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28014",
+    "downloadPreload": true
+}

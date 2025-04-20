@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Context-Free Parsing Algorithms",
+    "downloadDescription": "Reference implementations in Perl 5 of several parsing algorithms for context-free grammars. Last published: April 4, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "cfg-parsing-algorithms.tar.gz",
+            "url": "https://download.microsoft.com/download/4/b/f/4bfc3f0b-fbb2-4edb-aec0-e4d801584203/cfg-parsing-algorithms.tar.gz",
+            "size": "23971",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:09:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Reference implementations in Perl 5 of several parsing algorithms for context-free grammars.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "cfg-parsing-algorithms.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "23.4 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52563",
+    "downloadPreload": true
+}

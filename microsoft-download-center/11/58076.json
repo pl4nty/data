@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 KB2830391",
+    "downloadDescription": "Failed to create the Excel Template by Wizard  on Windows 8+ AX2009+ Office 2013",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB2830391-SP1.EXE",
+            "url": "https://download.microsoft.com/download/0/2/b/02b81542-25f1-467f-ba4e-e9229de503c1/DynamicsAX2009-KB2830391-SP1.EXE",
+            "size": "870400",
+            "version": "AX2009 SP1",
+            "datePublished": "7/15/2024 3:04:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Failed to create the Excel Template by Wizard  on Windows 8+ AX2009+ Office 2013",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2830391",
+        "name": "KB2830391"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX2009 SP1",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB2830391-SP1.EXE"
+    ],
+    "detailsSection_file_size": [
+        "850.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "AX2009 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the self-extracting zip and run the AxUpdate.exe",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58076",
+    "downloadPreload": true
+}

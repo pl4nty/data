@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Migration Assistant for DB2",
+    "downloadDescription": "Microsoft SQL Server Migration Assistant (SSMA) for DB2 is a tool to automate migration from IBM DB2 database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSMAforDB2_9.5.0_x86.msi",
+            "url": "https://download.microsoft.com/download/a/a/b/aab25c07-6bb4-48f9-90a7-4f86495d356b/SSMAforDB2_9.5.0_x86.msi",
+            "size": "9576448",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:24:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforDB2_9.5.0.msi",
+            "url": "https://download.microsoft.com/download/a/a/b/aab25c07-6bb4-48f9-90a7-4f86495d356b/SSMAforDB2_9.5.0.msi",
+            "size": "9576448",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:24:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforDB2_10.1.0_x86.msi",
+            "url": "https://download.microsoft.com/download/db684447-f21f-42a4-abd8-cc73f210c2f8/SSMAforDB2_10.1.0_x86.msi",
+            "size": "12398592",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:24:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforDB2_10.1.0.msi",
+            "url": "https://download.microsoft.com/download/db684447-f21f-42a4-abd8-cc73f210c2f8/SSMAforDB2_10.1.0.msi",
+            "size": "12398592",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:24:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server Migration Assistant (SSMA) is a free supported tool from Microsoft that simplifies database migration process from DB2 to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance. SSMA automates all aspects of migration including migration assessment analysis, schema and SQL statement conversion and data migration. \n<br/><br/>\nThis download includes a GUI client based application to manage migration process. The GUI client will install functionalities in SQL Server, Azure SQL Database or Azure SQL Database Managed Instance to emulate DB2 features not natively supported by the target database. \n<br/><br/>\nSSMA for DB2 is designed to support migration from DB2 on z/OS versions 9.0 and 10.0, DB2 on Linux/Unix/Windows (LUW) versions 9.7 and 10.1 and DB2 for i version 7.1 and higher to SQL Server 2016 onwards, Azure SQL Database and Azure SQL Database Managed Instance.\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "SSMAforDB2_9.5.0_x86.msi",
+        "SSMAforDB2_9.5.0.msi",
+        "SSMAforDB2_10.1.0_x86.msi",
+        "SSMAforDB2_10.1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.1 MB",
+        "9.1 MB",
+        "11.8 MB",
+        "11.8 MB"
+    ],
+    "detailsSection_file_date": "4/1/2025",
+    "systemRequirementsSection": "<ul>\n<li>Windows 10+, Windows Server 2016+</li>\n</ul>\n<br/>\n<b>Requirements for the SSMA for DB2 client:</b>\n<ul>\n<li>The Microsoft .NET Framework version 4.7.2 or a later version. You can obtain it from the .NET Framework Developer Center.</li>\n<li>The Microsoft OLEDB Provider for DB2 version 6. You can obtain the provider as part of the Microsoft\u00ae SQL Server\u00ae 2017 Feature Pack here: https://www.microsoft.com/en-us/download/details.aspx?id=55992</li>\n<li>Access to and sufficient permissions on the computer that hosts the target instance of SQL Server.</li>\n<li>4 GB RAM.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "After the download, you must install SSMA for DB2.\n<br/>\n<br/>\n<b>Installing the SSMA for DB2 Client</b>\n<ol>\n<li>Double-click SSMAforDB2_<i>n</i>.msi, where <i>n</i> is the version number.</li>\n<li>On the 'Welcome' page, click Next.</li>\n<li>If you do not have the prerequisites installed, a message will appear that indicates that you must first install required components. Make sure that you have installed all prerequisites, and then run the installation program again.</li>\n<li>Read the End User License Agreement. If you agree to the terms, select \"I accept the agreement\" option and click Next.</li>\n<li>On the 'Choose Setup Type' page, click Typical.</li>\n<li>Click Install.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54254",
+    "downloadPreload": true
+}

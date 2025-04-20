@@ -1,0 +1,128 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Automated Transition Planning Guide",
+    "downloadDescription": "This document is intended to help you understand the requirements and tasks for transitioning your organization from Microsoft CTP to the new environment using the Microsoft Dynamics CRM Online transition process.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Automated_Transition_Planning_Guide.pdf",
+            "url": "https://download.microsoft.com/download/5/9/c/59c151b0-dcd6-4260-a0df-b1870c1c758e/Automated_Transition_Planning_Guide.pdf",
+            "size": "1787126",
+            "version": "2",
+            "datePublished": "7/15/2024 3:34:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        }
+    ],
+    "detailsSection": "On July 19th, 2012 Microsoft Dynamics CRM Online on-boarded to a new administration portal and billing platform. Together the portal and billing platform are referred to as the Microsoft online services environment. This environment is designed to streamline and improve the customer experience across all Microsoft online services. It enables customers to manage their Microsoft Dynamics CRM Online and Office 365 subscriptions from one location and also delivers enhanced regulatory and industry compliance.\r\n\r\nAs an enterprise IT administrator for Microsoft Dynamics CRM Online you should understand that there are a number of tasks that need to be completed in order to achieve a smooth transition.  This document is designed to help you determine and plan the tasks necessary for your transition strategy.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Automated_Transition_Planning_Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For docx files, Microsoft Office Word 2003 or later versions, or a compatible viewer. For pdf files, an Adobe PDF reader is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button to start the download.</li>\r\n<li>To copy the file to your computer, click Save to save this file to disk.</li>\r\n<li>To extract the document, double-click the compressed file. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38808",
+    "downloadPreload": true
+}

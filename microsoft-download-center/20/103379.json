@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager Management Pack for Microsoft 365",
+    "downloadDescription": "This Management Pack for SCOM enables you to monitor the availability and performance of Microsoft 365 services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft 365 MP Operations Guide.docx",
+            "url": "https://download.microsoft.com/download/b/b/c/bbc54f4f-efcc-4314-a7c7-af109efee99a/Microsoft 365 MP Operations Guide.docx",
+            "size": "3743049",
+            "version": "10.2.0.0",
+            "datePublished": "9/17/2024 11:31:27 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Microsoft 365.msi",
+            "url": "https://download.microsoft.com/download/b/b/c/bbc54f4f-efcc-4314-a7c7-af109efee99a/Microsoft System Center Management Pack for Microsoft 365.msi",
+            "size": "6250496",
+            "version": "10.2.0.0",
+            "datePublished": "9/17/2024 11:31:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft 365 Management Pack can be used to:\r\n<br/>\r\n<ul>\r\n<li> Proactively monitor the service level being provided by Microsoft 365 services including email, Teams and SharePoint (which includes OneDrive) by securely performing synthetic transactions using Graph API. </li>\r\n<li> Monitor Microsoft 365 license use and alert when usage meets certain criteria. </li>\r\n<li> Monitor email transactions to and from on-premises Exchange server. </li>\r\n<li> Monitor the health of connections between various locations and the Microsoft 365 service. </li>\r\n<li> Reflect Microsoft 365 Incidents, Message Center, and Planned Maintenance messages for the subscription to the Operations Manager alerts. </li>\r\n<li> Visualize the subscriptions\u2019 health and corresponding alerts via the dashboards and alert views including HTML5 dashboards (requires Operations Manager 2019). </li>\r\n</ul>\r\n<br/>\r\nUpdates in this release include:\r\n<ul>\r\n<li> Allow client secret, delegated or certificate authentication </li>\r\n<li> Support Teams Network Assessment tool </li>\r\n<li> SKU license warning and critical thresholds are now defined as specific numbers rather than percentages and are defined on a per-SKU basis rather than one value applying equally to all SKUs </li>\r\n<li> Office response time performance collection rule can now test against TCP ports (for example, HTTPS or port 443) </li>\r\n<li> Fixes several bugs with Service Health alerts reported by users</li>\r\n<li> Add Teams Chat to Teams synthetic transaction (delegated authentication only)  </li>\r\n<li> Allow management servers and gateways to be used as watcher nodes </li>\r\n<li> Add monitor for certificates used in watcher node subscriptions </li>\r\n\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.2.0.0",
+    "detailsSection_file_name": [
+        "Microsoft 365 MP Operations Guide.docx",
+        "Microsoft System Center Management Pack for Microsoft 365.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.6 MB",
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "9/17/2024",
+    "systemRequirementsSection": "This Management Pack requires System Center Operations Manager 2019 or System Center Operations Manager 2022.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring refer to the management pack guide.\r\n<br/>\r\nPlease leave your feedback, comments, new feature requests along with the MP version at <a href=\"mailto:m365mp@microsoft.com?subject=[Feedback%20on%20M365%20MP]%20%3cInsert%20Company%20Name%3e&body=Company%20Name%3A%0AM365%20total%20licenses%3A%0ASCOM%20Infra%20details%3A%0AIssues%20faced%3A%0ASuggested%20Enhancements%3A\" >M365 MP Feedback</a> .\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103379",
+    "downloadPreload": true
+}

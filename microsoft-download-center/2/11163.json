@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server Intelligent Message Filter v2 Operations Guide",
+    "downloadDescription": "This guide provides overall operational information to help optimize the performance of Exchange Server Intelligent Message Filter.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IMF_SP2.doc",
+            "url": "https://download.microsoft.com/download/a/9/1/a91c80b3-f762-4b32-8d2c-8cf74056b735/IMF_SP2.doc",
+            "size": "344576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft Exchange Server Intelligent Message Filter v2 helps companies reduce the amount of unsolicited commercial e-mail (UCE), also known as spam, received by users. This guide provides overall operational information to help optimize the performance of Exchange Server Intelligent Message Filter.<br />\n<br />\n<b>Important</b><br />\nThe first version of Intelligent Message Filter was a stand-alone tool, and is no longer supported. Version 2 of the Intelligent Message Filter, to which this Operations Guide information applies, is installed automatically with Exchange Server 2003 Service Pack 2 (SP2). For download information about SP2, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=54751\">Service Pack 2 for Exchange Server 2003</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IMF_SP2.doc"
+    ],
+    "detailsSection_file_size": [
+        "336.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><LI>\nClick the <b>Download</b> button on this page to start the download.\n</LI><br />\n<LI>Do one of the following:</LI></OL>\n<UL>\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<br />\n</LI><br />\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n</LI>\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Intelligent Message Filter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=21607"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11163",
+    "downloadPreload": true
+}

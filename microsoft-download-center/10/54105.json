@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2017 Product Overview and Capability Guide",
+    "downloadDescription": "This guide provides an overview of the new packaging available and product capabilities within Microsoft Dynamics NAV 2017 and how they address across your business.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsNAV2017_CapabilityGuide_EN.pdf",
+            "url": "https://download.microsoft.com/download/e/c/b/ecb8e02c-2dfe-48d4-b6c8-772bed9d30b9/DynamicsNAV2017_CapabilityGuide_EN.pdf",
+            "size": "6763319",
+            "version": "NAV 2017",
+            "datePublished": "7/15/2024 4:39:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide provides an overview of the new packaging available and product capabilities within Microsoft Dynamics NAV 2017 and how they address across your business.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NAV 2017",
+    "detailsSection_file_name": [
+        "DynamicsNAV2017_CapabilityGuide_EN.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "read",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54105",
+    "downloadPreload": true
+}

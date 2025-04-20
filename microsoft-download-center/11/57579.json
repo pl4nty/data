@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "App Modernization using AKS DemoMate",
+    "downloadDescription": "Simplify management of Kubernetes applications with AKS Installer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Simplify management of Kubernetes applications with AKS Installer.exe",
+            "url": "https://download.microsoft.com/download/6/6/0/660db688-450e-41db-80bb-ab0e037e4f27/Simplify management of Kubernetes applications with AKS Installer.exe",
+            "size": "49607744",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:53:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Simplify management of Kubernetes applications with Microsoft Azure Kubernetes Services. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Simplify management of Kubernetes applications with AKS Installer.exe"
+    ],
+    "detailsSection_file_size": [
+        "47.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, 8, 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download and install DemoMate",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57579",
+    "downloadPreload": true
+}

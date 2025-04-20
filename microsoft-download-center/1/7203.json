@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Team System 2005 Team Explorer",
+    "downloadDescription": "Microsoft Visual Studio Team System 2005 Team Explorer is a simplified Visual Studio Team System 2005 environment used solely to access Team Foundation Server services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VSTFClient.img",
+            "url": "https://download.microsoft.com/download/2/a/d/2ad44873-8ccb-4a1b-9c0d-23224b3ba34c/VSTFClient.img",
+            "size": "258947072",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio Team System 2005 Team Explorer can be used as a standalone rich client for accessing Visual Studio Team System 2005 Team Foundation Server. It enables users to join the software development life cycle with integrated support for source control, work item tracking,  build management, and detailed reports showing bug trends, project velocity and quality indicators.\n<br/><br/>\nYou must have a Team Foundation Server Client Access License (CAL) to use Team Explorer to access a Team Foundation Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "VSTFClient.img"
+    ],
+    "detailsSection_file_size": [
+        "247.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Processor</b>: 2.0 GHz</LI><br />\n<LI><b>RAM</b>: 256 MB</LI><br />\n<LI><b>Hard disk</b>: 5 GB</LI><br/>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>Download instructions</b>\n<br/><ul>1. Click on the image download available on this page and save to your hard drive in a temporary directory. <br/>\n\n</ul>\n<ul>2.\nFollow the ISO handling instructions below. </ul>\n\n\n<br/>\n\n<br /><b>Options for handling downloaded ISO Images.</b> <br/>Following 2 options are available for CD image handling.<br />\n<ul>1. Write the image file to blank CD (Recommended)</ul>\n<ul>2.  Mount image file virtually as CD devices.</ul>\n<ul>For details of the options listed above, see \"What are ISO image files and how do I use them?\" topic available on this <a href=\" http://go.microsoft.com/fwlink/?LinkId=95676\">FAQ page</a>. </ul>\n\n<br/><b>Installation Instructions</b><br/>\n<ul>1. On the CD, locate <b>Setup.exe</b> and double click to initiate installation.</ul>\n<ul>2. Follow the <b>Setup Wizard</b> instructions to completion. </ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Team System 2008 Team Explorer",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=0ED12659-3D41-4420-BBB0-A46E51BFCA86&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7203",
+    "downloadPreload": true
+}

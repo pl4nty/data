@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "AVD - Enable Insider RDP",
+    "downloadDescription": "Enable access to Insider RDP and enable support for MMR.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AVDEnableInsiderRDP.msi",
+            "url": "https://download.microsoft.com/download/d/a/c/dace64e0-7cba-4cdc-be6e-1607d2381831/AVDEnableInsiderRDP.msi",
+            "size": "199680",
+            "version": "1.0.1",
+            "datePublished": "7/15/2024 4:59:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This installer updates your registry to enable access to the Insider version of Remote Desktop and enables support for using MMR to accelerate VOIP calls.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "AVDEnableInsiderRDP.msi"
+    ],
+    "detailsSection_file_size": [
+        "195.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 10</li>\r\n<li>Windows 11</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>\r\nFirst, you need to install the RDP client if you haven't already. Download and run one of the following downloads if you are missing \"Remove Desktop\" in your start menu.\r\n<ul>\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2068602\">Windows 64-bit</a></li>\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2098960\">Windows 32-bit</a></li>\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2098961\">Windows ARM64</a></li>\r\n</ul>\r\n</li>\r\n<li>Next, download this installer from the Download Center and run it. Step through the prompts to complete installation.</li>\r\n<li>To confirm that the installation is successful, close \"Remote Desktop\" if it is already open, then open it again.  In the title bar, you should see \"Remote Desktop (Insider)\".</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105304",
+    "downloadPreload": true
+}

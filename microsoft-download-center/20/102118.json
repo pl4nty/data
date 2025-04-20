@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2019 Management Pack for Open Source Software",
+    "downloadDescription": "The Management Packs for Open Source Software enable discovering, monitoring, and managing MySQL Server and Apache HTTP Server with System Center 2019 Operations Manager ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center 2019 UR2 Management Pack for OSS.msi",
+            "url": "https://download.microsoft.com/download/6/1/e/61e1bb7e-b4e6-412f-bffa-67f46ee8e2e8/Microsoft System Center 2019 UR2 Management Pack for OSS.msi",
+            "size": "348160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ApacheMPGuide.docx",
+            "url": "https://download.microsoft.com/download/6/1/e/61e1bb7e-b4e6-412f-bffa-67f46ee8e2e8/ApacheMPGuide.docx",
+            "size": "89011",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MySQLMPGuide.docx",
+            "url": "https://download.microsoft.com/download/6/1/e/61e1bb7e-b4e6-412f-bffa-67f46ee8e2e8/MySQLMPGuide.docx",
+            "size": "85568",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Management Packs for Open Source Software enable discovering, monitoring, and managing MySQL Server and Apache HTTP Server with System Center 2019 - Operations Manager. They provide reactive and proactive monitoring of MySQL Server and Apache HTTP Server running on Linux operating systems. The monitoring provided by the Open Source Software management packs includes availability and configuration monitoring, performance data collection, and default thresholds. In addition to health monitoring capabilities, the Open Source Software management packs include reports, diagnostics, tasks, and views that enable near real-time diagnosis and resolution of detected issues. \r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2019 UR2 Management Pack for OSS.msi",
+        "ApacheMPGuide.docx",
+        "MySQLMPGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "340.0 KB",
+        "86.9 KB",
+        "83.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Linux"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Install the latest UNIX and Linux management packs for the UNIX and Linux versions you are using. These management packs are located on the System Center Operations Manager media or as part of Update Rollup releases</li>\r\n<li> Download and install the management packs for the Open Source Software components you are using (MySQL Server or Apache HTTP Server)</li>\r\n<li> Follow the configuration options located in the MySQL or Apache MP guide</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102118",
+    "downloadPreload": true
+}

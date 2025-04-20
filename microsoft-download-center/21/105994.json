@@ -1,0 +1,137 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvc_554_9.61.7032.1",
+    "downloadDescription": "ASRMobSvc_554_9.61.7032.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_pushinstallclient_9.61.7032.1.exe",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/Windows_pushinstallclient_9.61.7032.1.exe",
+            "size": "4942856",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-20.04-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/UBUNTU-20.04-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "size": "4352617",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-18.04-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/UBUNTU-18.04-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "size": "6384514",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES15-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/SLES15-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "size": "6020805",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLES12-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/SLES12-64_pushinstallclient_9.61.7032.1.tar.gz",
+            "size": "5904124",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7032.1_Windows_GA_03Apr2024_release.exe",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/Microsoft-ASR_UA_9.61.7032.1_Windows_GA_03Apr2024_release.exe",
+            "size": "231606160",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7032.1_UBUNTU-20.04-64_GA_03Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/Microsoft-ASR_UA_9.61.7032.1_UBUNTU-20.04-64_GA_03Apr2024_release.tar.gz",
+            "size": "88992684",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7032.1_UBUNTU-18.04-64_GA_03Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/Microsoft-ASR_UA_9.61.7032.1_UBUNTU-18.04-64_GA_03Apr2024_release.tar.gz",
+            "size": "124288336",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.61.7032.1_SLES15-64_GA_03Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/Microsoft-ASR_UA_9.61.7032.1_SLES15-64_GA_03Apr2024_release.tar.gz",
+            "size": "112157113",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.61.7032.1_SLES12-64_GA_03Apr2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/3/5/9/359a5209-f9e4-41f3-98c4-506d0594badf/Microsoft-ASR_UA_9.61.7032.1_SLES12-64_GA_03Apr2024_release.tar.gz",
+            "size": "109134973",
+            "version": "9.61.7032.1",
+            "datePublished": "4/4/2024 5:11:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvc_554_9.61.7032.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.61.7032.1",
+    "detailsSection_file_name": [
+        "Windows_pushinstallclient_9.61.7032.1.exe",
+        "UBUNTU-20.04-64_pushinstallclient_9.61.7032.1.tar.gz",
+        "UBUNTU-18.04-64_pushinstallclient_9.61.7032.1.tar.gz",
+        "SLES15-64_pushinstallclient_9.61.7032.1.tar.gz",
+        "SLES12-64_pushinstallclient_9.61.7032.1.tar.gz",
+        "Microsoft-ASR_UA_9.61.7032.1_Windows_GA_03Apr2024_release.exe",
+        "Microsoft-ASR_UA_9.61.7032.1_UBUNTU-20.04-64_GA_03Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7032.1_UBUNTU-18.04-64_GA_03Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7032.1_SLES15-64_GA_03Apr2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.61.7032.1_SLES12-64_GA_03Apr2024_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB",
+        "4.2 MB",
+        "6.1 MB",
+        "5.7 MB",
+        "5.6 MB",
+        "220.9 MB",
+        "84.9 MB",
+        "118.5 MB",
+        "107.0 MB",
+        "104.1 MB"
+    ],
+    "detailsSection_file_date": "4/4/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105994",
+    "downloadPreload": true
+}

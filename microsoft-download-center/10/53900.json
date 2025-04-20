@@ -1,0 +1,227 @@
+{
+    "error": "",
+    "downloadTitle": " System Center Operations Manager Management Packs for Windows Server 2016 Essentials",
+    "downloadDescription": "SC MP for Windows Server 2016 Essentials",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Essentials 2016.msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016.msi",
+            "size": "544768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(TRK).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(TRK).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(SVE).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(SVE).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(RUS).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(RUS).msi",
+            "size": "528384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(PTG).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(PTG).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(PTB).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(PTB).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(PLK).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(PLK).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(NLD).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(NLD).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(KOR).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(KOR).msi",
+            "size": "536576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(JPN).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(JPN).msi",
+            "size": "528384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(ITA).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(ITA).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(HUN).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(HUN).msi",
+            "size": "528384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(FRA).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(FRA).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(ESN).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(ESN).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(DEU).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(DEU).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(CSY).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(CSY).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(CHT).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(CHT).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for Essentials 2016(CHS).msi",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/SC Management Pack for Essentials 2016(CHS).msi",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Essentials Guide for System Center Management Pack.docx",
+            "url": "https://download.microsoft.com/download/2/4/1/2412c1ab-b5c4-4a16-8cb4-d1db36533779/Essentials Guide for System Center Management Pack.docx",
+            "size": "64700",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack help administrators monitor Windows Server 2016 Essentials ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for Essentials 2016.msi",
+        "SC Management Pack for Essentials 2016(TRK).msi",
+        "SC Management Pack for Essentials 2016(SVE).msi",
+        "SC Management Pack for Essentials 2016(RUS).msi",
+        "SC Management Pack for Essentials 2016(PTG).msi",
+        "SC Management Pack for Essentials 2016(PTB).msi",
+        "SC Management Pack for Essentials 2016(PLK).msi",
+        "SC Management Pack for Essentials 2016(NLD).msi",
+        "SC Management Pack for Essentials 2016(KOR).msi",
+        "SC Management Pack for Essentials 2016(JPN).msi",
+        "SC Management Pack for Essentials 2016(ITA).msi",
+        "SC Management Pack for Essentials 2016(HUN).msi",
+        "SC Management Pack for Essentials 2016(FRA).msi",
+        "SC Management Pack for Essentials 2016(ESN).msi",
+        "SC Management Pack for Essentials 2016(DEU).msi",
+        "SC Management Pack for Essentials 2016(CSY).msi",
+        "SC Management Pack for Essentials 2016(CHT).msi",
+        "SC Management Pack for Essentials 2016(CHS).msi",
+        "Essentials Guide for System Center Management Pack.docx"
+    ],
+    "detailsSection_file_size": [
+        "532.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "516.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "524.0 KB",
+        "516.0 KB",
+        "512.0 KB",
+        "516.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "512.0 KB",
+        "63.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\n\r\nWindows Server 2016 Essentials\r\n\u2022Other Software:  \r\n\u2022This management pack is supported to run in System Center 2016 Operations Manager\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server Tech Preview "
+    ],
+    "installInstructionSection": "Please refer to MP Guide ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53900",
+    "downloadPreload": true
+}

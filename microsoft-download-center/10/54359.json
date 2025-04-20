@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack (Community Technology Preview) for Azure SQL Database",
+    "downloadDescription": "This management pack provides capabilities to discover, monitor, and manage your Microsoft Azure SQL Databases",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServerDashboardsGuide.pdf",
+            "url": "https://download.microsoft.com/download/f/8/4/f84ba247-3317-4341-9f1c-1fcdef91fc85/SQLServerDashboardsGuide.pdf",
+            "size": "1643497",
+            "version": "7.0.25.0",
+            "datePublished": "7/15/2024 4:36:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SqlServer.Azure.ManagementPack.CTP.msi",
+            "url": "https://download.microsoft.com/download/f/8/4/f84ba247-3317-4341-9f1c-1fcdef91fc85/Microsoft.SqlServer.Azure.ManagementPack.CTP.msi",
+            "size": "3813376",
+            "version": "7.0.25.0",
+            "datePublished": "7/15/2024 4:36:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureSQLDatabaseMPGuide.pdf",
+            "url": "https://download.microsoft.com/download/f/8/4/f84ba247-3317-4341-9f1c-1fcdef91fc85/AzureSQLDatabaseMPGuide.pdf",
+            "size": "2391474",
+            "version": "7.0.25.0",
+            "datePublished": "7/15/2024 4:36:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Azure SQL Database Management Pack enables you to monitor the availability and performance of applications that are running on Microsoft Azure SQL Database.<br/>\r\n<br/>\r\nNote: This Management Pack is not part of <a href='https://www.microsoft.com/download/details.aspx?id=50013'>Microsoft System Center Management Pack for Microsoft Azure</a>. The Management Pack is designed to provide enhanced monitoring of Microsoft Azure SQL Database metrics. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nAfter configuration, the Microsoft Azure SQL Database Monitoring Management Pack offers the following functionalities: <br/>\r\n<ul>\r\n  <li> User-friendly wizard to discover Microsoft Azure SQL Database servers. </li>\r\n  <li> Multiple subscriptions and multiple Microsoft Azure SQL Database servers are supported. </li>\r\n  <li> Two options for getting information on Azure SQL Database health: Azure Resource Manager (Azure REST API) and T-SQL queries to SQL Server system views. </li>\r\n  <li> Azure AD authentication is supported. </li>\r\n  <li> Collects and monitors health of Microsoft Azure SQL Database databases:\r\n    <ul>\r\n   <li> Database availability </li>\r\n      <li> Database space monitoring </li>\r\n      <li> Track the total number of databases per server </li>\r\n      <li> Successful connections count </li>\r\n      <li> Failed connections count </li>\r\n      <li> Number of deadlocks </li>\r\n      <li> Throttling/long transactions count </li>\r\n      <li> Connections blocked by firewall count </li>\r\n    </ul>\r\n  </li>\r\n  <li> Collects and monitors health of Microsoft Azure SQL Database servers:\r\n    <ul>\r\n   <li> Server availability </li>\r\n      <li> Average memory per session </li>\r\n      <li> Total memory per session </li>\r\n      <li> Total CPU time per session </li>\r\n      <li> Total I/O per session </li>\r\n      <li> Number of database sessions </li>\r\n      <li> Maximum Transaction execution time </li>\r\n      <li> Maximum Transaction lock count </li>\r\n      <li> Maximum Transaction log space used </li>\r\n      <li> Network Egress/Ingress bandwidth </li>\r\n      <li> Percentage of CPU used </li>\r\n      <li> Percentage of workers used </li>\r\n      <li> Percentage of CPU used </li>\r\n    </ul>\r\n  </li>\r\n  <li> Health monitoring for Elastic Pools. </li>\r\n  <li> Health monitoring for Database Geo-Replication. </li>\r\n  <li> Ability to define custom thresholds for each monitor to configure the warning and critical alerts. </li>\r\n  <li> Run-as profile to securely connect to Microsoft Azure SQL Database. </li>\r\n  <li> Detailed knowledge to guide the IT operator with troubleshooting the problem. </li>\r\n  <li> Custom tasks to redirect the user to the Microsoft Azure SQL Database online portal. </li>\r\n  <li> Custom query support to enable application-specific availability and performance monitoring. </li>\r\n  <li> Dashboard functionality. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.25.0",
+    "detailsSection_file_name": [
+        "SQLServerDashboardsGuide.pdf",
+        "Microsoft.SqlServer.Azure.ManagementPack.CTP.msi",
+        "AzureSQLDatabaseMPGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "3.6 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed system requirements refer to the management pack guide.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration and monitoring refer to the management pack guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54359",
+    "downloadPreload": true
+}

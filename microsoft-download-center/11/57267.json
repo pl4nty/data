@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2016 SP1 CU (KB4293808)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2016 SP1 CU.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016-KB4293808-x64.exe",
+            "url": "https://download.microsoft.com/download/9/5/a/95a24b96-514f-488d-94d9-799995b434ef/SQLServer2016-KB4293808-x64.exe",
+            "size": "799882936",
+            "version": "13.0.4522.0",
+            "datePublished": "7/15/2024 4:56:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Executing a specially crafted query involving calculating difference between values of different date types and aggregation of the results, could lead to stack corruption, if the query runs in batch mode. Depending on particular values processed by such query, this could lead to terminating the SQL Server process, or a possibility of remote code execution.  \nMore information about the vulnerability can be found here: \n<a name=\"KB4293808\"></a><a href=\"http://support.microsoft.com/help/4293808\">SQL Server 2016 SP1 CU </a> <br /><br />\n\n\n\nFor other impacted SQL Server releases, please see:\t<br /><br />\n\n<a name=\"KB4293808\"></a><a href=\"http://support.microsoft.com/help/4293808\">Security Update for SQL Server 2016 SP1 CU(CU10+GDR)*</a> <br />\n\n<a name=\"KB4293801\"></a><a href=\"http://support.microsoft.com/help/4293801\">Security Update for SQL Server 2016 SP1 GDR\t</a> <br />\n\n<a name=\"KB4293807\"></a><a href=\"http://support.microsoft.com/help/4293807\">Security Update for SQL Server 2016 SP2 CU (CU2+GDR)*</a> <br />\n\n<a name=\"KB4293802\"></a><a href=\"http://support.microsoft.com/help/4293802\">Security Update for SQL Server 2016 SP2 GDR</a> <br />\n\n<a name=\"KB4293805\"></a><a href=\"http://support.microsoft.com/help/4293805\">Security Update for SQL Server 2017 RTM CU (CU9+GDR)*</a> <br />\n\n<a name=\"KB4293808\"></a><a href=\"http://support.microsoft.com/help/4293803\">Security Update for SQL Server 2017 RTM GDR</a> <br />\n\n* These security updates are for SQL Server instances that have applied a Cumulative Update.<br /> <br />      \n\n\n\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. \n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.4522.0",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB4293808-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "762.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 SP1 CU instances installed on supported Windows Operating System.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2016 SP1 CU that have had a Cumulative Update applied (versions 13.0.4411.0(CU1) to 13.0.4514.0(CU10).<br />\nFor Microsoft SQL Server 2016 SP1 CU instances that have not had any Cumulative Update applied (versions 13.0.4001.0 to 13.0.4210.6), please see <a name=\"KB4293801\"></a><a href=\"http://support.microsoft.com/help/4293801\">2016 SP1 GDR</a>. After you install this update, you may have to restart your computer.\n",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4293808",
+            "url": "https://support.microsoft.com/en-us/help/4293808"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57267",
+    "downloadPreload": true
+}

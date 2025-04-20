@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "BIOS Update for Microsoft Surface",
+    "downloadDescription": "This problem address a problem if Microsoft Surface units occasionally stop responding to input.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BIOS Updates for a Microsoft Surface Unit_Developers.pdf",
+            "url": "https://download.microsoft.com/download/3/6/4/36404e56-468e-481e-a57f-9cd1e3b4b4b0/BIOS Updates for a Microsoft Surface Unit_Developers.pdf",
+            "size": "334845",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "P5LD2-VM-CR-MS-SI-0206.ROM",
+            "url": "https://download.microsoft.com/download/3/6/4/36404e56-468e-481e-a57f-9cd1e3b4b4b0/P5LD2-VM-CR-MS-SI-0206.ROM",
+            "size": "524288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Some Microsoft Surface units might occasionally stop responding (that is, lock up or freeze) to any input, including touch input, a keyboard, or a mouse, even if the SCM status indicator lights in the I/O connections area show Green-Green-Green (which indicates no problems). To fix this problem, this download package includes an updated BIOS file and setup instructions that you can use on any Microsoft Surface units that are experiencing this problem.\r\n<br /><br />\r\n<b>Note:</b> This fix is intended only to correct the problem if it already exists. You should apply this fix only to Microsoft Surface units that are experiencing this specific problem. This fix might receive additional testing.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BIOS Updates for a Microsoft Surface Unit_Developers.pdf",
+        "P5LD2-VM-CR-MS-SI-0206.ROM"
+    ],
+    "detailsSection_file_size": [
+        "327.0 KB",
+        "512.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><ul><li>Windows Vista</li></ul></li>\r\n<li><b>Applicable Microsoft Surface Software Platforms:</b>\r\n  <ul>\r\n<li>Microsoft Surface Runtime 1.0</li>\r\n<li>Microsoft Surface SDK 1.0</li>\r\n<li>Microsoft Surface Runtime 1.0 SP1</li>\r\n<li>Microsoft Surface SDK 1.0 SP1</li>\r\n\r\n  </ul>\r\n</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On a Microsoft Surface unit, download the update files.</li>\r\n<li>Follow the installation instructions in the included PDF file.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7190",
+    "downloadPreload": true
+}

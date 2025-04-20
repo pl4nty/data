@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2017 Reporting Services",
+    "downloadDescription": "SQL Server Reporting Services\u00a0is a server-based reporting platform that provides comprehensive reporting functionality.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServerReportingServices.exe",
+            "url": "https://download.microsoft.com/download/e/6/4/e6477a2a-9b58-40f7-8ad6-62bb8491ea78/SQLServerReportingServices.exe",
+            "size": "98579864",
+            "version": "14.0.601.20",
+            "datePublished": "7/15/2024 3:01:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Reporting Services offers\n<ul>\n<li>Paginated reports optimized for document generation and printing.</li>\n<li>Mobile reports\u00a0optimized for mobile devices, with responsive layout that adapts to different devices and the different ways you hold them.</li>\n<li>A modern web portal\u00a0you can view in any modern web browser.</li>\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.601.20",
+    "detailsSection_file_name": [
+        "SQLServerReportingServices.exe"
+    ],
+    "detailsSection_file_size": [
+        "94.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You'll need\n<ul>\n<li>.NET Framework 4.5.2 or later</li>\n<li>SQL Server Database Engine (2012 SP4 or later), to store the report server database</li>\n</ul>\n\nLinks:\n<ul>\n<li><a href=\"https://www.microsoft.com/en-us/sql-server/sql-server-downloads\">Download the Evaluation Edition of Microsoft SQL Server</a></li>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<ol>\n<li>Install SQL Server Reporting Services (SQLServerReportingServices.exe)</li>\n<li>Configure your report server using Report Server Configuration Manager</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55252",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "End User Security and Exchange Server",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "End User Security and Exchange Server.pdf",
+            "url": "https://download.microsoft.com/download/3/3/f/33f72acf-aa8f-4129-bf20-11ca0c8cad6c/End User Security and Exchange Server.pdf",
+            "size": "276393",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In this talk we will look at how you can secure your end users authentication to Exchange Server using Modern Authentication. Given the changes in the business and personal landscape over the past two years you almost certainly have lots of users working remotely or even still working remotely and you might have enabled that quite quickly. We will look at how you can easily turn on a secure authentication service for your on-premises Exchange Servers using Azure AD or, if you have no cloud technology at all in use, how you can do it completely on-premises. We will look at tips and tricks from doing this in large organizations and how you can safely role this out with a minimal impact.\r\n\r\nRecording of presentation by Brian Reid is at https://youtu.be/rTuGhc6YWAQ.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "End User Security and Exchange Server.pdf"
+    ],
+    "detailsSection_file_size": [
+        "269.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file in PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104607",
+    "downloadPreload": true
+}

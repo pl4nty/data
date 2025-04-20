@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Canadian Payroll",
+    "downloadDescription": "Canadian Payroll manual for Microsoft Dynamics GP 10.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PayrollCAN.xps",
+            "url": "https://download.microsoft.com/download/8/f/6/8f6fe35b-5e55-42cb-b4d1-ee7b387bdb9b/PayrollCAN.xps",
+            "size": "6297854",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:27:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Explains how to set up Canadian Payroll and codes, enter transactions, print reports, and complete routine procedures. Also includes integration information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "PayrollCAN.xps"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics GP 10.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 x64 editions",
+        "Windows Small Business Server 2003 "
+    ],
+    "installInstructionSection": "Download the XPS version of the Canadian Payroll manual.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26797",
+    "downloadPreload": true
+}

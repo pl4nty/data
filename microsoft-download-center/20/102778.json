@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Mixed Reality Feature Tool",
+    "downloadDescription": "The Mixed Reality Feature Tool is an application that enables developers to discover, update, and add Mixed Reality feature packages into Unity projects.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EULA.rtf",
+            "url": "https://download.microsoft.com/download/2/e/c/2ec9f49d-a3d6-40be-9501-a957f045b961/EULA.rtf",
+            "size": "206920",
+            "version": "1.0.2209.0",
+            "datePublished": "7/15/2024 5:06:18 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MixedRealityFeatureTool.exe",
+            "url": "https://download.microsoft.com/download/2/e/c/2ec9f49d-a3d6-40be-9501-a957f045b961/MixedRealityFeatureTool.exe",
+            "size": "71439152",
+            "version": "1.0.2209.0",
+            "datePublished": "7/15/2024 5:06:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Mixed Reality Feature Tool is an application that enables developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.\r\n\r\n<BR/><BR/>\r\n\r\nNew in version 1.0.2209.0 Preview\r\n<UL>\r\n<LI>Added 'show preview features' option to the discover features view</LI>\r\n<LI>Updated to .NET 6</LI>\r\n<LI>Consolidated into a single executable for easier distribution</LI>\r\n</UL>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.2209.0",
+    "detailsSection_file_name": [
+        "EULA.rtf",
+        "MixedRealityFeatureTool.exe"
+    ],
+    "detailsSection_file_size": [
+        "202.1 KB",
+        "68.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Windows 10 or Windows 11</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n<li>When the download completes, unzip the file and run MixedRealityFeatureTool.exe.</li> \r\n</ol> \r\n\r\nFor more information on using the Mixed Reality Feature Tool, please refer to the <A HREF=\"https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool\">tool documentation.</A>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102778",
+    "downloadPreload": true
+}

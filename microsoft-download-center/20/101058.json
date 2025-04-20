@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Implement a payment connector and a payment device",
+    "downloadDescription": "This document explains how to implement a payment connector, a payment accepting web app, and a payment device to handle various payment processing scenarios.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "The Guide to Implementing Payment Connector and Payment Device_update.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e2735c65-1e66-4b8d-8a3c-e6ef3a319137/The Guide to Implementing Payment Connector and Payment Device_update.pdf",
+            "size": "1176933",
+            "version": "1",
+            "datePublished": "7/15/2024 4:21:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This technical articles describes several scenarios for implementing a payment connector.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "The Guide to Implementing Payment Connector and Payment Device_update.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics AX (February 2016)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to download the technical article.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101058",
+    "downloadPreload": true
+}

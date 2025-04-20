@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 11 Beta Update Files",
+    "downloadDescription": "Localized zip file that contains the required files to update your team project",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "upgradeproject.zip",
+            "url": "https://download.microsoft.com/download/d/f/b/dfb20a6b-1ffa-4049-b9f3-5cfaef06db4a/upgradeproject.zip",
+            "size": "34537",
+            "version": "VS11",
+            "datePublished": "5/15/2024 3:16:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The zip file contains a batch file and the required localized files to update an Agile, Scrum or CMMI team project from Team Foundation Server 2010 to Team Foundation Server 11.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "VS11",
+    "detailsSection_file_name": [
+        "upgradeproject.zip"
+    ],
+    "detailsSection_file_size": [
+        "33.7 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Team Foundation Server 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "The detailed instruction can be found at http://msdn.microsoft.com/en-us/library/ff432837(VS.110).aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29047",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Patterns and Practices for parallel programming in C++",
+    "downloadDescription": "A document detailing common patterns of parallelism and best implementation practices using the new native C++ concurrency libraries in Visual Studio 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConcRT_Patterns_and_Practices.pdf",
+            "url": "https://download.microsoft.com/download/a/8/6/a86cb0e9-5431-415a-ab1d-e8cf73056f19/ConcRT_Patterns_and_Practices.pdf",
+            "size": "980245",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a detailed exploration of common patterns of parallelism and how they can be expressed with the Parallel Patterns Library, the Asynchronous Agents Library, and the Concurrency Runtime within Visual Studio 2010.  This includes a discussion of best practices around the use of these libraries as well as cautions around practices yielding less than optimal behavior.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ConcRT_Patterns_and_Practices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "957.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Ultimate N",
+        "Windows 98"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22499",
+    "downloadPreload": true
+}

@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 11 for Exchange Server 2019 (KB5005334)",
+    "downloadDescription": "Cumulative Update 11 for Exchange Server 2019 (KB5005334)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ExchangeServer2019-x64-CU11.ISO",
+            "url": "https://download.microsoft.com/download/5/3/e/53e75dbd-ca33-496a-bd23-1d861feaa02a/ExchangeServer2019-x64-CU11.ISO",
+            "size": "6259685376",
+            "version": "15.02.0986.005",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Cumulative Update 11 for Exchange Server 2019 resolves issues that were found in Exchange Server 2019 since the software was released. This update rollup is highly recommended for all Exchange Server 2019 customers.<br /> <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5005334",
+        "name": "KB5005334"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.0986.005",
+    "detailsSection_file_name": [
+        "ExchangeServer2019-x64-CU11.ISO"
+    ],
+    "detailsSection_file_size": [
+        "5.8 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2019 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2019 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2019 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2019 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2019 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103477",
+    "downloadPreload": true
+}

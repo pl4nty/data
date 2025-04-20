@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business \u2013 App SDK for Android ",
+    "downloadDescription": "The Skype for Business App SDK enables apps to seamlessly integrate messaging, audio, and video experiences.  See http://aka.ms/skypeappsdk to learn more.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SkypeForBusinessAppSDKAndroid-1.5.42.zip",
+            "url": "https://download.microsoft.com/download/2/4/5/245d401f-1806-4ef8-8fdc-327ae43063df/SkypeForBusinessAppSDKAndroid-1.5.42.zip",
+            "size": "51877345",
+            "version": "1.5.42",
+            "datePublished": "7/15/2024 3:04:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download was originally released on January 26th, 2017.\r\n<br/>\r\nThe Skype for Business App SDK enables apps to seamlessly integrate messaging, audio, and video experiences. \r\nThe initial focus of the SDK is to enable consumer apps to embed communications from \u201cguests\u201d to Skype for Business users within an organization, via the \"guest meeting join\" capability.  Over time, the SDK's capabilities will expand to cover other scenarios.\r\nSee http://aka.ms/skypeappsdk for background information, tutorials and samples.\r\n<br/>\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5.42",
+    "detailsSection_file_name": [
+        "SkypeForBusinessAppSDKAndroid-1.5.42.zip"
+    ],
+    "detailsSection_file_size": [
+        "49.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See: http://aka.ms/skypeappsdk",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "See: http://aka.ms/skypeappsdk",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51961",
+    "downloadPreload": true
+}

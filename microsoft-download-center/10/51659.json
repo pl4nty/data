@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Online, Meeting Migration Tool (64-bit)",
+    "downloadDescription": "The Skype for Business Online, Meeting Update Tool helps you to update all of your existing meetings after you are enabled for PSTN Conferencing in Skype for Business Online.  The latest update fixes MMT access violation that may happen when running non-English OS/Office. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeforBusinessMeetingUpdate.msi",
+            "url": "https://download.microsoft.com/download/9/b/9/9b9eccf2-2ae3-4cf8-b15b-0d9a1c0b76f1/SkypeforBusinessMeetingUpdate.msi",
+            "size": "983040",
+            "version": "8308.1149",
+            "datePublished": "7/15/2024 5:04:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Skype for Business Online, Meeting Update Tool helps you to update all of your existing meetings after you are enabled for PSTN Conferencing in Skype for Business Online. \r\n<br/>\r\n<br/>\r\nThis tool finds your existing meetings with outdated information and automatically sends updated meeting invitations to all the participants. After the tool is run, your meetings will reflect the new information that should be used by you and your participants to join it. The tool will update the Conference URL of the meeting as the phone number and conference ID that can be used to join it via PSTN Conferencing. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8308.1149",
+    "detailsSection_file_name": [
+        "SkypeforBusinessMeetingUpdate.msi"
+    ],
+    "detailsSection_file_size": [
+        "960.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\nSupported Outlook clients:\r\n<ul>\r\n<li>Outlook 2013</li>\r\n<li>Outlook 2016</li>\r\n</ul>\r\n<br/>\r\nSupported Skype for Business/Lync clients:\r\n<ul>\r\n<li>Skype for Business 2016</li>\r\n<li>Skype for Business 2015</li>\r\n<li>Lync 2013</li>\r\n</ul>\r\n<br/>\r\n.NET Framework:\r\n<ul>\r\n<li>.NET framework 4.5 or above</li>\r\n</ul>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install this download:\r\n<ul>\r\n<li>Click the download button and save the SkypeforBusinessMeetingUpdateTool.msi program to your hard drive.</li>\r\n<li>Double click on the SkypeforBusinessMeetingUpdateTool.msi program on your hard drive to begin the installation.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51659",
+    "downloadPreload": true
+}

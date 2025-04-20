@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2016 CU5 (KB4018588)",
+    "downloadDescription": "Security Update For Exchange Server 2016 CU5 (KB4018588)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB4018588-x64-en.msp",
+            "url": "https://download.microsoft.com/download/4/2/b/42bb0712-ecb1-4415-b284-4cf3cfbd7eb7/Exchange2016-KB4018588-x64-en.msp",
+            "size": "119357440",
+            "version": "15.01.845.036",
+            "datePublished": "6/15/2024 4:33:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  A security issue has been identified that could allow an attacker to run programs and access data on a computer running Microsoft\u00ae Exchange Server 2016. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4018588",
+        "name": "KB4018588"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.845.036",
+    "detailsSection_file_name": [
+        "Exchange2016-KB4018588-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "113.8 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Information About This Download",
+            "url": "http://support.microsoft.com/kb/2859928"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55588",
+    "downloadPreload": true
+}

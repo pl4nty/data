@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Team Foundation Server 2012 Software Development Kit for Java",
+    "downloadDescription": "For the newest version of Team Explorer Everywhere and the TFS Java SDK, please visit http://dl.microsoft.com/eclipse/tfs.  This is an old version. The Team Foundation Server SDK for Java includes documentation, samples and redistributable components to help you develop software products that integrate with Microsoft Visual Studio Team Foundation Server 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "license.html",
+            "url": "https://download.microsoft.com/download/5/9/9/5993f89b-aef0-4381-9cee-d3d7ba9ea33b/license.html",
+            "size": "11772",
+            "version": "11.0.0.1306",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFS-SDK-11.0.0.1306.zip",
+            "url": "https://download.microsoft.com/download/5/9/9/5993f89b-aef0-4381-9cee-d3d7ba9ea33b/TFS-SDK-11.0.0.1306.zip",
+            "size": "19628474",
+            "version": "11.0.0.1306",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For the newest version of Team Explorer Everywhere and the TFS Java SDK, please visit http://dl.microsoft.com/eclipse/tfs.  This is an old version. This release of the Team Foundation Server SDK for Java includes documentation, samples and redistributable components to help you develop software products that integrate with Microsoft Visual Studio Team Foundation Server 2012. By downloading the SDK from the link below you agree to the <a href=\"http://download.microsoft.com/download/5/9/9/5993F89B-AEF0-4381-9CEE-D3D7BA9EA33B/license.html\">Microsoft Visual Studio Team Foundation Server 2012 Software Development Kit for Java license terms</a>.\r\n<br/><br/>\r\nThe SDK contains the following components:\r\n<ul>\r\n<li>Redistributable library (jar file) containing the TFS API\u2019s</li>\r\n<li>Redistributable native code libraries required by the SDK for Java</li>\r\n<li>API Documentation in Javadoc format</li>\r\n<li>Check-in policy code sample</li>\r\n<li>Custom work item control code sample</li>\r\n<li>Console application code sample</li>\r\n<li>Code snippets</li>\r\n</ul>\r\nFor more information and help in using the SDK or the associated code samples then please see the <a href=\"http://social.msdn.microsoft.com/Forums/en-US/tee/threads\">Team Foundation Server - Eclipse and Cross Platform forum</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.0.1306",
+    "detailsSection_file_name": [
+        "license.html",
+        "TFS-SDK-11.0.0.1306.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.5 KB",
+        "18.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems:  Windows XP SP2 , Windows Vista, or Windows 7 (x86, x64), or Linux with GLIBC 2.3 to 2.11 (x86, x86_64, PowerPC), or Mac OS X 10.5 to 10.8 (PowerPC, Intel), or Solaris 8, 9, 10 (SPARC, x86, x86-64), or AIX 5.2 to 6.1 (POWER), or HP-UX 11i v1 to v3 (PA-RISC, Itanium).<br />\r\n<br />\r\nFor integration into Eclipse, Eclipse versions 3.5 to 4.2 supported on Windows, Linux, Mac OS X.<br />\r\n<br />\r\nAny of the following versions of the Java runtime:<br />\r\n- Sun Java\u2122 1.5 to 6, or IBM Java\u2122 1.5 to 6 on Microsoft Windows<br />\r\n- Apple Java\u2122 1.5 to 6 on Mac OS X<br />\r\n- Sun Java\u2122 1.5 to 6 on Linux or Solaris<br />\r\n- IBM Java\u2122 1.5 to 6 on Linux or AIX<br />\r\n- HP Java\u2122 1.5 to 6 on HP-UX<br />\r\n<br />\r\nRequires Visual Studio 2012 Team Foundation Server, Visual Studio 2010 Team Foundation Server or Visual Studio Team Foundation Server 2008.<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Solaris",
+        "Unix",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "If you agree to the <a href=\"http://download.microsoft.com/download/5/9/9/5993F89B-AEF0-4381-9CEE-D3D7BA9EA33B/license.html\">Microsoft Visual Studio Team Foundation Server 2012 Software Development Kit for Java license terms</a>, download the archive file TFS-SDK-11.0.0.1303.zip and follow the instructions in the readme.html file.",
+    "relatedResourcesSection": [
+        {
+            "title": "team Foundation Server - Eclipse and Cross Platform forum",
+            "url": "http://social.msdn.microsoft.com/Forums/en-US/tee/threads"
+        },
+        {
+            "title": "team Explorer Everywhere for Team Foundation Server 2012 RC",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=9bfd43b5-d9a1-44bf-b159-64f03fc68a87"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22616",
+    "downloadPreload": true
+}

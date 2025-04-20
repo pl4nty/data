@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 Universal C Runtime",
+    "downloadDescription": "The Windows 10 Universal C Runtime (CRT) is a Windows operating system component.  The Windows Update package on this page allows Windows desktop applications that depend on the Windows 10 Universal CRT release to run on Windows Vista SP2, Windows 7 SP1, Windows 8, and Windows 8.1 S14.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsUCRT.zip",
+            "url": "https://download.microsoft.com/download/c/5/d/c5d68aa1-f62e-422a-9084-4ad85ceb8d4d/WindowsUCRT.zip",
+            "size": "8062495",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:49:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The following package is intended for developers that need to create Windows desktop applications that target Windows operating system versions that precede Windows 10.\r\n<br/><br/>The package consists of the following redistributable packages:\n\r\n<ul><li>X64-based Windows 8.1 requires S14 update(KB2919355), Windows Server 2012 R2: <b>Windows8.1-KB2999226-x64.msu</b></li>\n<li>X86-based Windows 8.1 requires S14 update(KB2919355): <b>Windows8.1-KB2999226-x86.msu</b></li>\n<li>Arm-based Windows 8.1 requires S14 update(KB2919355): <b>Windows8.1-KB2999226-arm.msu</b></li>\n<li>X64-based Windows 8, Windows Server 2012:  <b>Windows8-RT-KB2999226-x64.msu</b></li>\n<li>X86-based Windows 8:  <b>Windows8-RT-KB2999226-x86.msu</b></li>\n<li>Arm-based Windows 8:  <b>Windows8-RT-KB2999226-arm.msu</b></li>\n<li>x64-based Windows 7 SP1 or greater, Windows Server 2008 R2: <b>Windows6.1-KB2999226-x64.msu</b></li>\n<li>X86-based Windows 7 SP1 or greater: <b>Windows6.1-KB2999226-x86.msu </b></li>\n<li>X64-based Windows Vista SP2 or greater, Windows Server 2008:  <b>Windows6.0-KB2999226-x64.msu</b></li>\n<li>X86-based Windows Vista SP2 or greater, Windows Server 2008:  <b>Windows6.0-KB2999226-x86.msu</b></li></ul>\n <br/>\r\nThese packages will also be available from Windows Update.\nFor additional information on the Windows 10 Universal CRT, go to: <a href=\"http://go.microsoft.com/fwlink/?LinkID=617977\">http://go.microsoft.com/fwlink/?LinkID=617977.</a>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WindowsUCRT.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Vista or later \n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to save the ZIP file.</LI><LI>Open the ZIP file and extract its contents. </LI><br/></OL>\r\n<b>To deploy the package:</b>\r\n<LI>Run the installer (.MSU) targeting your current OS configuration.</LI><br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48234",
+    "downloadPreload": true
+}

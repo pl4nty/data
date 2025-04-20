@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Question-Answering Corpus",
+    "downloadDescription": "This download consists of data only: a text file containing 1.4K questions aimed at the text of Encarta 98, the full text of Encarta 98, and a set of human annotations identifying pieces of text in Encarta that fully or partially answer the question. Last published: November 13, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR Encarta QA Corpus.msi",
+            "url": "https://download.microsoft.com/download/2/a/6/2a6f85e0-dec4-4cbb-a9e4-6bce79a451dc/MSR Encarta QA Corpus.msi",
+            "size": "38543872",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:03:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download consists of data only: a text file containing 1.4K questions aimed at the text of Encarta 98, the full text of Encarta 98, and a set of human annotations identifying pieces of text in Encarta that fully or partially answer the question. These annotations additionally specify information about the precise nature of the match, such as whether the linguistic forms of the question and the answer are similar. The annotation data has been split in two different ways to facilitate different algorithm-training methodologies: 1) 10 files, each containing 10 percent of the original 1.4K questions, along with the full set of answers for each question, and 2) 10 files, each containing 10 percent of the full, pooled set of 10K+ question/answer pairs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "MSR Encarta QA Corpus.msi"
+    ],
+    "detailsSection_file_size": [
+        "36.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52318",
+    "downloadPreload": true
+}

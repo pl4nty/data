@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Control Spy 2.0",
+    "downloadDescription": "Control Spy is a tool to help developers understand common controls, the application of styles to them, and their response to messages and notifications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ControlSpy.msi",
+            "url": "https://download.microsoft.com/download/a/3/1/a315b133-03a8-4845-b428-ec585369b285/ControlSpy.msi",
+            "size": "685056",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With Control Spy, you can see instantly how different styles affect the behavior and appearance of each control, and also how you can change the state of each control by sending messages. <br />\nTwo versions of Control Spy are available, one for Comctl32.dll version 5.x and one for Comctl32.dll version 6.0 and later. ControlSpyV6.exe has an application manifest built in so that it uses the newer, themed controls, whereas ControlSpyV5.exe does not and therefore defaults to the older version.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "ControlSpy.msi"
+    ],
+    "detailsSection_file_size": [
+        "669.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Embedded",
+        "Windows XP Home Edition N",
+        "Windows XP",
+        "Windows XP for Itanium-based Systems Version 2003",
+        "Windows XP Professional 64-Bit Edition (Itanium) 2003",
+        "Windows XP Embedded Service Pack 1",
+        "Windows XP Professional N",
+        "Windows XP Service Pack 1",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Tablet PC Edition ",
+        "Windows XP 64-bit",
+        "Windows XP Home Edition ",
+        "Windows XP Starter Edition",
+        "Windows XP Embedded Service Pack 2 ",
+        "Windows XP Professional 64-Bit Edition (Itanium) ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "See the enclosed .doc file for usage instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Controls",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/wincontrols.asp"
+        },
+        {
+            "title": "using Windows XP Visual Styles",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/shellcc/platform/commctls/userex/cookbook.asp"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4635",
+    "downloadPreload": true
+}

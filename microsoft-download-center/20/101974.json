@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Drivers and Firmware for Windows 10/11 Pro and Enterprise OS on Surface Hub 2S and Surface Hub 3",
+    "downloadDescription": "All current firmware and drivers for the Surface Hub 2S and Surface Hub 3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceHub2S_Win10_19045_25.031.6341.0.msi",
+            "url": "https://download.microsoft.com/download/e421ce83-c5a6-47a9-83a5-35ed280d6ef1/SurfaceHub2S_Win10_19045_25.031.6341.0.msi",
+            "size": "1104027648",
+            "version": "1.0",
+            "datePublished": "4/4/2025 7:50:13 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceHub3_Hub2S_Win11_22621_25.033.33447.0.msi",
+            "url": "https://download.microsoft.com/download/e421ce83-c5a6-47a9-83a5-35ed280d6ef1/SurfaceHub3_Hub2S_Win11_22621_25.033.33447.0.msi",
+            "size": "1104515072",
+            "version": "1.0",
+            "datePublished": "4/4/2025 7:50:13 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following packages will continue to be updated with the latest drivers and firmware until the date listed in the <a href=\"https://learn.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-driver-and-firmware-lifecycle-period\">Surface Driver and Firmware Support Lifecycle Policy.</a>\r\n<br></br>\r\n<a href=\"https://docs.microsoft.com/en-us/surface-hub/surface-hub-update-history\">Surface Hub update history</a>\r\n<br></br>\r\nCumulative and current drivers and firmware for the Surface Hub 2S running Windows 10/11 Pro or Enterprise OS, version 1909 or greater.\r\n<br></br>\r\nCumulative and current drivers and firmware for the Surface Hub 3 running Windows 11 Pro or Enterprise OS, version 22H2 or greater.\r\n<br></br>\r\nThis package contains drivers for all of the components in the Surface Hub, as well as updates to the system firmware that have been released via Windows Update. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n________________________________________________________________________________________________________________________________________\r\n<br></br>\r\n<b>Archive Section</b>\r\n<br></br>\r\n Consistent with our build lifecycle support, the following MSI packages are no longer being updated with latest drivers and firmware. \r\n<ul>\r\n<li><a href=\"https://download.microsoft.com/download/C/5/D/C5D16DE9-19E3-4A02-9483-B045EDC63A1E/SurfaceHub2S_Win10_18363_22.052.18245.0.msi\">SurfaceHub2S_Win10_18363_22.052.18245.0.msi</a></li>\r\n<li><a href=\"https://download.microsoft.com/download/C/5/D/C5D16DE9-19E3-4A02-9483-B045EDC63A1E/SurfaceHub2S_Win10_19041_23.082.23000.0.msi\">SurfaceHub2S_Win10_19041_23.082.23000.0.msi</a></li>\r\n</ul>\r\n<br></br>\r\nPlease refer to end of lifecycle support:\r\n<br></br>\r\n<a href=\"https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-hub-driver-and-firmware-support-lifecycle\">End of Servicing Date</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_10_version_history\">Windows 10 version history</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_11_version_history\">Windows 11 version history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceHub2S_Win10_19045_25.031.6341.0.msi",
+        "SurfaceHub3_Hub2S_Win11_22621_25.033.33447.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 GB",
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "4/4/2025",
+    "systemRequirementsSection": "Surface Hub 2S running Windows 10/11 Pro or Enterprise OS, version 1909 or greater is required for compatibility with these drivers.\r\nSurface Hub 3 running Windows 11 Pro or Enterprise OS, version 22H2 or greater is required for compatibility with these drivers.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface Hub 2 and Surface Hub 3. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [
+        {
+            "title": "surface Hub Admin Guide",
+            "url": "https://docs.microsoft.com/en-us/surface-hub/surface-hub-2s-migrate-os"
+        },
+        {
+            "title": "surface Hub Update History",
+            "url": "https://docs.microsoft.com/en-us/surface-hub/surface-hub-update-history"
+        },
+        {
+            "title": "end of Servicing Date",
+            "url": "https://learn.microsoft.com/en-us/surface-hub/surface-hub-driver-firmware-accessories-lifecycle"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101974",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Tools for Applications 2022 SDK",
+    "downloadDescription": "Microsoft Visual Studio Tools for Applications lets you enable end users to customize your existing applications using Visual Basic and Visual C#.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vsta_sdk.exe",
+            "url": "https://download.microsoft.com/download/bb5a2847-3f7f-43b9-b800-35caa90730d1/vsta_sdk.exe",
+            "size": "5495392",
+            "version": "17.0",
+            "datePublished": "4/8/2025 9:41:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio Tools for Applications lets you enable end users to customize your existing applications using Visual Basic and Visual C#. Since the VSTA 2012 release, several changes have been introduced to the licensing model as well as to how you integrate VSTA into your applications: \n<li>There is no longer a licensing fee for the VSTA redistributable components. Your organization can distribute and use the VSTA redistributable components free of charge. </li>\n<li>VSTA no longer provides its own Visual Studio Environment for authoring macros. Instead, a supported version of Visual Studio (Community Edition or above) is required to develop VSTA macros and add-ins. VSTA has two primary modes of operation: with Visual Studio (Community Edition or above) installed and standalone. In standalone mode, VSTA provides your application with the means to load, compile, and run end user customizations. With a supported version of Visual Studio (Community Edition or above) installed on your user\u2019s machine, VSTA extends that functionality with the means to edit and debug those customizations. </li>\n<li>VSTA 2022 supports .NET Framework 4.5.1 and above. </li>\n<li>VSTA 2022 presents a simplified API for integrating design-time experiences into your application using either managed (Visual C# or Visual Basic .NET) or unmanaged (Visual C++) code. It simplifies tasks such as finding the installation of Visual Studio, launching the external process, and synchronizing save state, making integration significantly easier than previous versions. </li>\n<li>VSTA 2022 provides the ability to upgrade VSTA projects from Visual Studio 2005 and Visual Studio 2008, compile, and run them. It also maintains compatibility with VSTA 2012 and VSTA 2013 projects.</li>\n<li>VSTA no longer requires your application host to provide a runtime library in order to run. This gives you the flexibility to choose the method of running user code best tailored to the host application. </li>\n<br/>\nThe Microsoft Visual Studio Tools for Applications 2013 - Update 1 release enables the following two scenarios, which are also included in VSTA 2022:\n<li>Provides an option to specify whether the VSTA customization project files will be auto-saved when the VS IDE loses focus. </li>\n<li>Triggers a new event when a pending change to a VSTA customization project is committed. </li>\n<br/>\nMore information can be found in the <a src=\"https://msdn.microsoft.com/en-us/library/dn707392.aspx\">VSTA documentation at MSDN</a>. \n<br/>\n<br>\n<br>\nThis version contains a fix for CVE-2025-29803. Please see https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-29803 for more information",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17.0",
+    "detailsSection_file_name": [
+        "vsta_sdk.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "4/8/2025",
+    "systemRequirementsSection": "<b>Supported Microsoft Visual Studio version:</b><br/>\nMicrosoft Visual Studio 2022 (Community Edition or above)<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105122",
+    "downloadPreload": true
+}

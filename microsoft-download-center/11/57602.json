@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Update 3 fixes",
+    "downloadDescription": "This update fixes some issues of HPC Pack 2012 R2 Update 3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB4470565_x64.exe",
+            "url": "https://download.microsoft.com/download/5/a/e/5aea0aaf-909e-4c24-848f-6b6a42a85cae/KB4470565_x64.exe",
+            "size": "5386824",
+            "version": "4.05.5199",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB4470565_x86.exe",
+            "url": "https://download.microsoft.com/download/5/a/e/5aea0aaf-909e-4c24-848f-6b6a42a85cae/KB4470565_x86.exe",
+            "size": "5316984",
+            "version": "4.05.5199",
+            "datePublished": "7/15/2024 4:51:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update fixes some known issues of HPC Pack 2012 R2 Update 3 as described below<br/>\r\n<br/>\r\n<b>HPC Pack fixes</b> <br/>\r\n- Fix an issue that an error dialog will pop up when closing Cluster/Job Manager GUI<br/>\r\n- In Cluster/Job Manager GUI, make \"Failed Tasks\" column in job list view and \"State\" column in task list view to be sortable.<br/>\r\n- Add column \"Free Disk Space (MB)\" in the node list view of Cluster Manager GUI. <br/>\r\n- Support Kerberos authentication in HPC SOA; Support none secure backend binding for HPC SOA Broker. <br/>\r\n- Fix issue that auto grow shrink service may under grow azure resource if the azure nodes have configured under subscribed cores. <br/>\r\n- Improve auto grow shrink service to use job's ComputedMax instead of using job's max resource setting. <br/>\r\n- Fix scheduling issue when compute node name contains lower case characters. <br/>\r\n<br/>\r\nNote: this QFE has been regerated (from build 4.5.5197 to 4.5.5199) to address a regression: You may fail to stop an Azure IaaS node in build 4.5.5197.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.05.5199",
+    "detailsSection_file_name": [
+        "KB4470565_x64.exe",
+        "KB4470565_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB",
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "HPC Pack 2012 R2 Update 3 (build 4.5.5079.0) with QFE KB4344029 (build 4.5.5194.0) installed",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This update needs to be run on all head nodes, broker nodes, workstation nodes, compute nodes and clients<br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2012 R2 Update 3 is installed. The version number (in HPC Cluster Manager, click <b>Help</b>><b>About</b>) should be 4.5.5194.0 or 4.5.5197.0. Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\n<b>Applying the update</b><br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB4470565_x64.exe for the 64-bit version, KB4470565_x86.exe for the 32-bit version) and then:<br/>\r\n<br/>\r\n1. Click Save to copy the download to your computer.<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows.<br/>\r\nNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update.<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node.<br/>\r\nNote: If you have high availability head nodes, run the fix on the active node, move the node to passive, and after failover occurs run the fix on the new active node. Do this for all head nodes in the cluster.<br/>\r\n4. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes.\r\n<br/>\r\nTo use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa. Copy the appropriate version of the update to a shared folder such as \\\\headnodename\\HPCUpdates .<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclusrun /nodegroup:ComputeNodes \\\\headnodname\\HPCUpdates\\KB4470565_x64.exe -unattend -SystemReboot<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclusrun /nodegroup:BrokerNodes \\\\headnodname\\HPCUpdates\\KB4470565_x64.exe -unattend -SystemReboot<br/>\r\n<b>Note</b>: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\n<b>Note</b>: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc .To update workstation nodes and unmanaged server nodes you may need to reboot.<br/>\r\n<br/>\r\n5. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb. Run the update executable<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc. Reboot your client computer<br/>\r\n<br/>\r\n6. You can run get-hpcpatchstatus.ps1 on headnode/computenodes/client under %CCP_HOME%bin to check the patch status. And the client version and server version will be 4.05.5199.0<br/>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack 2012 R2 Update 3",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=49922"
+        },
+        {
+            "title": "hpc Pack QFE KB3189996",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=54772"
+        },
+        {
+            "title": "hpc Pack QFE KB4344029",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=57161"
+        },
+        {
+            "title": "hpc Pack QFE KB4032368",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?WT.mc_id=rss_alldownloads_all&id=55650"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57602",
+    "downloadPreload": true
+}

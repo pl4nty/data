@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2016 CU3 (KB4012178)",
+    "downloadDescription": "Security Update For Exchange Server 2016 CU3 (KB4012178)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2016-KB4012178-x64-en.msp",
+            "url": "https://download.microsoft.com/download/5/7/7/577f87c3-b162-43ff-a1aa-ddc16e1be418/Exchange2016-KB4012178-x64-en.msp",
+            "size": "129478656",
+            "version": "15.01.0544.030",
+            "datePublished": "7/15/2024 4:38:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  An elevation of privilege vulnerability exists in the way that Microsoft Exchange Outlook Web Access (OWA) fails to properly handle web requests. To exploit the vulnerability, an attacker who successfully exploited this vulnerability could, perform script/content injection attacks, and attempt to trick the user into disclosing sensitive information. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4012178",
+        "name": "KB4012178"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS17-015",
+        "name": "MS17-015"
+    },
+    "detailsSection_file_version": "15.01.0544.030",
+    "detailsSection_file_name": [
+        "Exchange2016-KB4012178-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "123.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional 64-bit",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        },
+        {
+            "title": "more Information About This Download",
+            "url": "http://support.microsoft.com/kb/2859928"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54849",
+    "downloadPreload": true
+}

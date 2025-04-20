@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Universe 2013 Poster",
+    "downloadDescription": ".NET Universe Poster (2013) showing the main .NET SDKs, libraries and packages clasified by application type and package type (NuGet, official support, etc.)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NET_Universe_Poster_2013.zip",
+            "url": "https://download.microsoft.com/download/c/e/7/ce7152b0-4a47-494b-b514-7f1b7541dd8f/NET_Universe_Poster_2013.zip",
+            "size": "8193238",
+            "version": "0.9",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster shows how the trends are changing in .NET as we\u00b4re moving from a single large .NET Framework to a more loosely coupled and autonomous libraries and sub-frameworks, many of them even published as NuGet packages and evolving continuosly. The number of those libs and packages is evolving and growing, so having a visual photo of it can be helpful.\r\n\r\nThe main idea of the poster is to show that you can create any kind of application with .NET, from the largest applications to the smaller apps: in the cloud, on the web, on desktops, tablets, phones, and in embedded environments (even watches!). Any of those application types is shown as category/bucket in the poster and within each bucket we\u00b4re tossing the main libraries/SDKs/packages out.\r\nThen we\u00b4re also showing cross-cutting concerns buckets like Security, Data Access, and .NET Extension libs.\r\nThe main categories are the following:\r\n- Emerging application patterns (Mobile, Web & Cloud)\r\n- Established application patterns (Desktop and Embedded)\r\n- Cross-Cutting concerns\r\n\r\nFinally, the poster is putting a check/mark on every lib/SDK bullet depending if they are or not complaint with the following:\r\n- NuGet package\r\n- Open Source\r\n- Microsoft Official Supported\r\nYou can print it out or use it as in electronic format (.PDF). Using the electronic format (.PDF) allows you to access each content URL/page related.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.9",
+    "detailsSection_file_name": [
+        "NET_Universe_Poster_2013.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Apple Mac OS X v. 10.4 Tiger",
+        "Apple Mac OS X v. 10.5 Leopard",
+        "Linux",
+        "Macintosh",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 7",
+        "Windows 7 Home Premium",
+        "Windows 7 Professional",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Starter",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 8",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8 Release Preview",
+        "Windows 8.1",
+        "Windows 8.1 Preview",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows Vista",
+        "Windows Vista Business",
+        "Windows Vista Enterprise",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Service Pack 2",
+        "Windows Vista Starter",
+        "Windows Vista Ultimate",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Home Edition ",
+        "Windows XP Home Edition N",
+        "Windows XP Professional 64-Bit Edition (Itanium) ",
+        "Windows XP Professional 64-Bit Edition (Itanium) 2003",
+        "Windows XP Professional Edition ",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Download and open the document using any .PDF reader.\r\nEach item (SDK, NuGet package, etc.) has a related URL to its main page.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39952",
+    "downloadPreload": true
+}

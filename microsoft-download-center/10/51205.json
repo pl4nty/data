@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft R Open 3.2.2 for Revolution R Enterprise 8.0.1",
+    "downloadDescription": "Microsoft R Open is a free, complete open source platform for statistical analysis and data science. It includes the open source distribution of R 3.2.2 as well as some enhanced R features, and supports a variety of big data statistics, predictive modeling, and machine learning capabilities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MRO-3.2.2-for-RRE-8.0.1-Windows.exe",
+            "url": "https://download.microsoft.com/download/6/7/7/677b93d3-78b5-41aa-b19e-87fdb5b07d04/MRO-3.2.2-for-RRE-8.0.1-Windows.exe",
+            "size": "59826680",
+            "version": "1",
+            "datePublished": "7/15/2024 4:16:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "R is the world\u2019s most powerful programming language for statistical computing, machine learning, and graphics, with a thriving global community of users, developers, and contributors. Microsoft R Open is provided by Microsoft to support R development using Revolution R Enterprise for scalable, distributed R solutions. <br />\r\n\r\nThis download contains the installer for the current release of Microsoft R Open for 64-bit Windows (MRO-3.2.2-for-RRE-8.0.1). When you install Microsoft R Open, you can easily build R packages using your own custom code, or use additional packages that you download from CRAN. <br /> \r\nMicrosoft R Open is a prerequisite for installing Revolution R Enterprise 8.0. Although the enterprise tools are not required for basic R package development, Revolution R Enterprise lets you create R packages that can use parallel processing and run in a scalable environment. \r\nYou can use Microsoft R Open and Revolution R Enterprise to connect to an instance of SQL Server 2016 that has enabled the Advanced Analytic Extensions, and execute your R packages in SQL Server. This provides far greater memory for your R solutions as well as the convenience of in-database analytics. <b>You can also use Microsoft R Open to develop solutions that run in Microsoft R Server.</b>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MRO-3.2.2-for-RRE-8.0.1-Windows.exe"
+    ],
+    "detailsSection_file_size": [
+        "57.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>.NET Framework 3.5 (includes 2.0) is required before installation</li>\r\n<li>Disk space (local drive only; network drive not supported): 350 MB</li>\r\n<li>Memory: 4GB of RAM is recommended</li>\r\n</ul>\r\n\r\nThis download and Revolution R Enterprise are both required for using SQL Server R Services. Be sure to choose the version that matches the version of SQL Server R Services.\r\nThis release is intended to be used with SQL Server 2016 RC0 and higher. If you are using SQL Server 2016 CTP 3.0, 3.1, or 3.2, you should install Revolution R Open instead (https://www.microsoft.com/en-us/download/details.aspx?id=49525)\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click Download and run the installer for Microsoft R Open 3.2.2 for Revolution R Enterprise 8.0.1.</li>\r\n<li>Follow-the on-screen prompts. By default, the installer installs both the R runtime and the open source components.</li>\r\n<li> Optionally, click this link to immediately begin downloading the modified GPL/LGPL \\source code ((<a href=\"http://go.microsoft.com/fwlink/?LinkId=733422\">http://go.microsoft.com/fwlink/?LinkId=733422- 126MB</a>). This is made available in compliance with the GNU General Public License, but is not required to install or use Microsoft R Open.</li>\r\n<li>After installation of MRO is complete, download and install Revolution R Enterprise 8.0.1.</li>\r\n</ol>\r\n<b>Notes</b><br />\r\nTo use SQL Server R Services, you must also enable the feature, Advanced Analytics Extensions in SQL Server 2016 RC0. For more information, see the setup instructions in Books Online.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51205",
+    "downloadPreload": true
+}

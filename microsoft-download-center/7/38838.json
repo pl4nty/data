@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Profit and Loss Data Modeling and Analysis with Microsoft PowerPivot in Excel",
+    "downloadDescription": "Downloads on this page include the Profit and Loss Data Modeling and Analysis with Microsoft PowerPivot in Excel article and the ContosoPnL sample Excel workbook.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ContosoPnLData.zip",
+            "url": "https://download.microsoft.com/download/b/e/c/becf5873-6b88-4920-9096-2c10ba98de60/ContosoPnLData.zip",
+            "size": "10148862",
+            "version": "1",
+            "datePublished": "7/15/2024 3:34:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContosoPnL_Excel2010.zip",
+            "url": "https://download.microsoft.com/download/b/e/c/becf5873-6b88-4920-9096-2c10ba98de60/ContosoPnL_Excel2010.zip",
+            "size": "5584590",
+            "version": "1",
+            "datePublished": "7/15/2024 3:34:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContosoPnL_Excel2013.zip",
+            "url": "https://download.microsoft.com/download/b/e/c/becf5873-6b88-4920-9096-2c10ba98de60/ContosoPnL_Excel2013.zip",
+            "size": "6592017",
+            "version": "1",
+            "datePublished": "7/15/2024 3:34:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The article, along with the ContosoPnL.xlsx sample Excel workbook, can provide business, accounting, and finance professionals help with creating PowerPivot data models to analyze budget, forecasting, and other profit and loss account metrics, such as:<br />\r\n<br />\r\n<ul>\r\n<li>Aggregate, or value measures such as sums and averages for currency and headcount.</li>\r\n<li>Comparison measures such as year-over-year, year-to-date, and variance for currency and headcount.</li>\r\n<li>Performance, or ratio measures such as percentage, cost per head, and rate and volume variances. All of which calculate on different combinations of value and comparison measures.</li>\r\n</ul><br />\r\n<br />\r\nThere are two versions of the ContosoPnL workbook, one for Excel 2010, and one for Excel 2013. While both versions include the PowerPivot data model and a number of PivotTables, the Excel 2013 version also includes several example Power View sheets to show even more ways to explore the data.<br />\r\n<br />\r\nYou can also download the ContosoPnL Data Access database. The database is not necessary to use the ContosoPnL workbook. All of the data in the ContosoPnL Access database has already been imported into the ContosoPnL workbook\u2019s PowerPivot data model. The database is provided as a separate download in case you want to create your own test data model and use it as a data source. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ContosoPnLData.zip",
+        "ContosoPnL_Excel2010.zip",
+        "ContosoPnL_Excel2013.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.7 MB",
+        "5.3 MB",
+        "6.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Further system requirements located in the downloadable article.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Further instructions located in the downloadable article.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38838",
+    "downloadPreload": true
+}

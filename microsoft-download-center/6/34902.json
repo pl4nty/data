@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server Reporting Services 2000 Service Pack 2 (KB983814)",
+    "downloadDescription": "A security issue has been identified in the SQL Server Reporting Services 2000 Service Pack 2 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL2000.RS-KB983814-v8.00.1077.00-ENG.EXE",
+            "url": "https://download.microsoft.com/download/b/f/e/bfee4d44-efc8-4582-b8f0-cf08b72ce427/ENG/SQL2000.RS-KB983814-v8.00.1077.00-ENG.EXE",
+            "size": "5438968",
+            "version": "8.00.1077",
+            "datePublished": "7/15/2024 3:09:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server Reporting Services 2000 Service Pack 2 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB983814",
+        "name": "KB983814"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-070",
+        "name": "MS12-070"
+    },
+    "detailsSection_file_version": "8.00.1077",
+    "detailsSection_file_name": [
+        "SQL2000.RS-KB983814-v8.00.1077.00-ENG.EXE"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "SQL Server 2000 Reporting Services 2000 Service Pack 2 RTM",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34902",
+    "downloadPreload": true
+}

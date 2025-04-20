@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Host Integration Server 2013 Management Pack",
+    "downloadDescription": "This management pack includes monitors and rules to effectively monitor the availability and health of Host Integration Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HostIntegrationServer2013MP.msi",
+            "url": "https://download.microsoft.com/download/5/f/8/5f869089-f95f-42f4-b2b6-616e3dec2978/HostIntegrationServer2013MP.msi",
+            "size": "659456",
+            "version": "9.0.2060.1 ",
+            "datePublished": "7/15/2024 3:18:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Host Integration Server 2013 MP Guide.doc",
+            "url": "https://download.microsoft.com/download/5/f/8/5f869089-f95f-42f4-b2b6-616e3dec2978/Microsoft Host Integration Server 2013 MP Guide.doc",
+            "size": "1097216",
+            "version": "9.0.2060.1 ",
+            "datePublished": "7/15/2024 3:18:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack includes monitors and rules to monitor the availability and health of Host Integration Server 2013 using either System Center Operations Manager 2007 R2 or System Center Operations Manager 2012..",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0.2060.1 ",
+    "detailsSection_file_name": [
+        "HostIntegrationServer2013MP.msi",
+        "Microsoft Host Integration Server 2013 MP Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "644.0 KB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>You have one of the following versions of System Center Operations Manager deployed:</B>\r\n<LI>System Center Operations Manager 2007 R2</LI>\r\n<LI>System Center Operations Manager 2012</LI>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39978",
+    "downloadPreload": true
+}

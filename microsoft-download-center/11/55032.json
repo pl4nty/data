@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Identity and Device Protection for Office 365",
+    "downloadDescription": "Get an overview of recommended capabilities for protecting identities and devices that access Office 365, other SaaS services, and on-premises applications published with Azure AD Application Proxy.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_identity&device_protection.pdf",
+            "url": "https://download.microsoft.com/download/2/2/9/229c15fb-88cf-4210-9c6c-d1b2dc117ec8/MSFT_cloud_architecture_identity&device_protection.pdf",
+            "size": "274493",
+            "version": "1",
+            "datePublished": "7/15/2024 4:57:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_identity&device_protection.vsdx",
+            "url": "https://download.microsoft.com/download/2/2/9/229c15fb-88cf-4210-9c6c-d1b2dc117ec8/MSFT_cloud_architecture_identity&device_protection.vsdx",
+            "size": "170015",
+            "version": "1",
+            "datePublished": "7/15/2024 4:57:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download this poster to get an overview of and choose the right set of capabilities for your organization. This document can help you secure your data, identities, and devices. Capabilities are recommended in three tiers \u2014 baseline protection, sensitive protection, and protection for environments with highly regulated or classified data. It's important to use consistent levels of protection across your data, identities, and devices. For example, if you protect sensitive data at a higher level, be sure to protect the identities and devices that access this data at a comparable level. This document shows you which capabilities are comparable. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_identity&device_protection.pdf",
+        "MSFT_cloud_architecture_identity&device_protection.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "268.1 KB",
+        "166.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": " This poster is available in Visio (VSD or VSDX) and PDF versions in 28x36 format. You will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. You will need the Adobe Acrobat reader for the PDF version.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55032",
+    "downloadPreload": true
+}

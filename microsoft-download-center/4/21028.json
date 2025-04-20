@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Visual Basic\u00ae for Applications Update - KB923167",
+    "downloadDescription": "An identified security issue in Microsoft\u00ae Visual Basic\u00ae for Applications could allow an attacker to compromise a Microsoft Windows\u00ae-based system and then take a variety of actions. By installing this update, you can help protect your computer.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vba64-kb923167-x86-enu.exe",
+            "url": "https://download.microsoft.com/download/5/c/4/5c492ea7-4d73-4cd0-b400-074980dc3477/VBA64-KB923167-X86-ENU.exe",
+            "size": "1325832",
+            "version": "6.4.9972",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An identified security issue in Microsoft\u00ae Visual Basic\u00ae for Applications could allow an attacker to compromise a Microsoft Windows\u00ae-based system and then take a variety of actions. For example, an attacker could read files on your computer or run programs on it. By installing this update, you can help protect your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB921645",
+        "name": "KB921645"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS06-047",
+        "name": "MS06-047"
+    },
+    "detailsSection_file_version": "6.4.9972",
+    "detailsSection_file_name": [
+        "vba64-kb923167-x86-enu.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 2000",
+        "Windows NT",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "The update available from this page is for applications using Microsoft\u00ae Visual Basic\u00ae for Applications (VBA). If you are a Microsoft Office 2000 or Microsoft Office XP user, please obtain a patch for this issue from the Office Update site in addition to installing this patch. You will find a link to OfficeUpdate under the Related Resources links at the right of this page.<br/>\n\nTo download and install this patch:<br/>\n<OL><LI>Click the <b>Download</b> link to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</LI><LI>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</LI></UL></OL><br/>\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "become an MSDN Subscriber",
+            "url": "http://msdn.microsoft.com/subscriptions/"
+        },
+        {
+            "title": "visual Basic for Applications Developer Center",
+            "url": "http://msdn.microsoft.com/vba/"
+        },
+        {
+            "title": "microsoft Office Update",
+            "url": "http://office.microsoft.com/ProductUpdates/default.aspx"
+        },
+        {
+            "title": "microsoft Security and Privacy",
+            "url": "http://www.microsoft.com/security/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21028",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Automated video looping with progressive dynamism",
+    "downloadDescription": "An application to extract a 5-second looping video from a non-looping input video. Last published: December 10, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VideoLoops_v2.zip",
+            "url": "https://download.microsoft.com/download/d/6/1/d618f41a-bebf-401e-aa4f-6a389948f8b2/VideoLoops_v2.zip",
+            "size": "64234111",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:04:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An application to extract a 5-second looping video from a non-looping input video. Also a viewer application to enable both interactive control over the level of dynamism of the output video, as well as manual editing of which regions animate or are static.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "VideoLoops_v2.zip"
+    ],
+    "detailsSection_file_size": [
+        "61.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52024",
+    "downloadPreload": true
+}

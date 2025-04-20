@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MongoDB to Cosmos DB Migration via Azure Databricks",
+    "downloadDescription": "MongoDB to Cosmos DB Migration via Azure Databricks",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MongoDB to Cosmos DB Migration via Azure Databricks.pdf",
+            "url": "https://download.microsoft.com/download/8/7/3/8732d55c-b83d-4f1b-a379-455cf80876c4/MongoDB to Cosmos DB Migration via Azure Databricks.pdf",
+            "size": "479044",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide offers architectural guidance on how to migrate and transform complex NoSQL data \r\nfrom MongoDB to Azure Cosmos DB.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MongoDB to Cosmos DB Migration via Azure Databricks.pdf"
+    ],
+    "detailsSection_file_size": [
+        "467.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103470",
+    "downloadPreload": true
+}

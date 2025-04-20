@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Introduction to Windows 10 subscriptions in the Cloud Solution Provider program",
+    "downloadDescription": "Get guidance to help you sell, deploy, and manage managed services via the Cloud Solution Provider (CSP) program.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-10-subscriptions-in-the-CSP-program.pdf",
+            "url": "https://download.microsoft.com/download/1/c/5/1c5c2733-6aa0-4c92-8ba1-267051ab0448/Windows-10-subscriptions-in-the-CSP-program.pdf",
+            "size": "1369726",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:53:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The CSP program provides a pay-as-you-go subscription model with per-user, per-month pricing that enables businesses to scale up or down from month to month as their needs change. By working with an expert CSP partner, even companies with limited or no IT staff can stay secure, productive, and in control. <br/>\r\nThis document outlines the benefits of the CSP program for customers and partners, then provides technical guidance on how to:\r\n<ul>\r\n<li>Perform discovery and prepare the customer environment.</li>\r\n<li>Purchase subscriptions and assign to users.</li>\r\n<li>Upgrade or update devices to Windows 10 Pro Anniversary Update or later.</li>\r\n<li>Activate subscriptions on end-user devices.</li>\r\n<li>Configure newly accessible functionality on end-user devices (as necessary).</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows-10-subscriptions-in-the-CSP-program.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Reader, Microsoft Edge, Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "the role of Azure Active Directory in Windows 10 cloud subscriptions",
+            "url": "https://aka.ms/w10-identity-csp"
+        },
+        {
+            "title": "windows 10 upgrade benefits for customers with subscriptions in CSP",
+            "url": "https://aka.ms/w10-upgrade-benefits-csp"
+        },
+        {
+            "title": "microsoft Cloud Solution Provider program",
+            "url": "https://partnercenter.microsoft.com/en-us/partner/cloud-solution-provider"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56601",
+    "downloadPreload": true
+}

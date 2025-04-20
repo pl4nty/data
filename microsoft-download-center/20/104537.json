@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Deploy Windows 10 in an enterprise: Windows AutoPilot",
+    "downloadDescription": "One-page, 11x17 poster in portrait mode that shows the Windows 10 Deployment in an enterprise: Windows AutoPilot.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Deploy-WindowsAutoPilot.pdf",
+            "url": "https://download.microsoft.com/download/2/7/2/272ab543-4c8d-428e-b94c-fe52fc7f7f81/Deploy-WindowsAutoPilot.pdf",
+            "size": "338509",
+            "version": "1",
+            "datePublished": "7/15/2024 4:32:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This PDF helps IT professionals to know how to successfully deploy Windows 10 in their enterprise environments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Deploy-WindowsAutoPilot.pdf"
+    ],
+    "detailsSection_file_size": [
+        "330.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requires a PDF viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li>Select <b>Open</b> file or find the file on your device and open it.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104537",
+    "downloadPreload": true
+}

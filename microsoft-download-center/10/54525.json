@@ -1,0 +1,297 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for ADDS",
+    "downloadDescription": "The Management Pack for Windows Server Active Directory Domain Services.  Monitors Windows Server 2016, 2019 and 2022 Domain Controllers and domain health.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Guide for Windows Server Active Directory Domain Services MP.docx",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Guide for Windows Server Active Directory Domain Services MP.docx",
+            "size": "122952",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for ADDS.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS.msi",
+            "size": "1351680",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS TRK.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS TRK.msi",
+            "size": "856064",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS SVE.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS SVE.msi",
+            "size": "851968",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS RUS.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS RUS.msi",
+            "size": "876544",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS PTG.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS PTG.msi",
+            "size": "860160",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS PTB.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS PTB.msi",
+            "size": "864256",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS PLK.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS PLK.msi",
+            "size": "876544",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS NLD.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS NLD.msi",
+            "size": "860160",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS KOR.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS KOR.msi",
+            "size": "815104",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS JPN.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS JPN.msi",
+            "size": "811008",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS ITA.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS ITA.msi",
+            "size": "851968",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS HUN.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS HUN.msi",
+            "size": "880640",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS FRA.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS FRA.msi",
+            "size": "872448",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS ESN.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS ESN.msi",
+            "size": "851968",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS DEU.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS DEU.msi",
+            "size": "884736",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS CSY.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS CSY.msi",
+            "size": "872448",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS CHT.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS CHT.msi",
+            "size": "786432",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for ADDS CHS.msi",
+            "url": "https://download.microsoft.com/download/a/5/e/a5e87602-fa1f-45ee-a1ae-cf55294934c1/Microsoft System Center Management Pack for ADDS CHS.msi",
+            "size": "778240",
+            "version": "10.0.2.4",
+            "datePublished": "7/15/2024 4:47:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Active Directory\u00ae Management Pack provides both proactive and reactive monitoring of your Active Directory deployment.  It monitors the overall health of the Active Directory system and alerts you to critical performance issues. <br/><br/>\r\nThe monitoring provided by this management pack includes monitoring of the domain controllers and monitoring of health from the perspective of clients utilizing Active Directory resources. To monitor the domain controllers, the Active Directory Management Pack provides a predefined, ready-to-run set of processing rules, monitoring scripts, and reports that are designed specifically to monitor the performance and availability of the Active Directory domain controllers.  <br/><br/>\r\nThe client in your environment might experience connectivity and service issues even though the domain controller appears to be operating correctly. The Active Directory Domain Member Management Pack, included in the Active Directory Management Pack, helps to identify these issues. This management pack monitors the services provided by the domain controller. It provides information in addition to that collected directly on the domain controller about whether they are available by running synthetic transactions against the directory service, such as Lightweight Directory Access Protocol (LDAP) binds and LDAP pings.   <br/> <br/>\r\nIn addition to health monitoring capabilities, this management pack provides a complete Active Directory monitoring solution by monitoring the health of vital processes that your Active Directory deployment depends upon, including the following:   <br/>\r\n<ul>\r\n<li>Replication</li>\r\n<li> Lightweight Directory Access Protocol (LDAP) </li>\r\n<li> Domain Controller Locator </li>\r\n<li>Trusts</li>\r\n<li> Net Logon service</li>\r\n<li> File Replication Service (FRS)</li>\r\n<li> Intersite Messaging service</li>\r\n<li> Windows Time service</li>\r\n<li> Active Directory Web Services (ADWS)</li>\r\n<li> Active Directory Management Gateway Service</li>\r\n<li> Key Distribution Center (KDC)</li>\r\n<li> Monitoring service availability</li>\r\n<li> Collecting key performance data</li>\r\n<li> Providing comprehensive reports, including reports about service availability and service health and reports that can be used for capacity planning\r\nWith this management pack, information technology (IT) administrators can automate one-to-many management of users and computers, simplifying administrative tasks and reduce IT costs. Administrators can efficiently implement security settings, enforce IT policies, and minimize service outages.  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.2.4",
+    "detailsSection_file_name": [
+        "Guide for Windows Server Active Directory Domain Services MP.docx",
+        "Microsoft System Center Management Pack for ADDS.msi",
+        "Microsoft System Center Management Pack for ADDS TRK.msi",
+        "Microsoft System Center Management Pack for ADDS SVE.msi",
+        "Microsoft System Center Management Pack for ADDS RUS.msi",
+        "Microsoft System Center Management Pack for ADDS PTG.msi",
+        "Microsoft System Center Management Pack for ADDS PTB.msi",
+        "Microsoft System Center Management Pack for ADDS PLK.msi",
+        "Microsoft System Center Management Pack for ADDS NLD.msi",
+        "Microsoft System Center Management Pack for ADDS KOR.msi",
+        "Microsoft System Center Management Pack for ADDS JPN.msi",
+        "Microsoft System Center Management Pack for ADDS ITA.msi",
+        "Microsoft System Center Management Pack for ADDS HUN.msi",
+        "Microsoft System Center Management Pack for ADDS FRA.msi",
+        "Microsoft System Center Management Pack for ADDS ESN.msi",
+        "Microsoft System Center Management Pack for ADDS DEU.msi",
+        "Microsoft System Center Management Pack for ADDS CSY.msi",
+        "Microsoft System Center Management Pack for ADDS CHT.msi",
+        "Microsoft System Center Management Pack for ADDS CHS.msi"
+    ],
+    "detailsSection_file_size": [
+        "120.1 KB",
+        "1.3 MB",
+        "836.0 KB",
+        "832.0 KB",
+        "856.0 KB",
+        "840.0 KB",
+        "844.0 KB",
+        "856.0 KB",
+        "840.0 KB",
+        "796.0 KB",
+        "792.0 KB",
+        "832.0 KB",
+        "860.0 KB",
+        "852.0 KB",
+        "832.0 KB",
+        "864.0 KB",
+        "852.0 KB",
+        "768.0 KB",
+        "760.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\r\n<ul>\r\n<li>System Center Operations Manager 2022</li>\r\n<li>System Center Operations Manager 2019</li>\r\n<li>System Center Operations Manager 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See the Management Pack Guide for detailed instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54525",
+    "downloadPreload": true
+}

@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "A series of guides to demo Azure Arc enabled Kubernetes",
+    "downloadDescription": "Designed as step-by-step walkthroughs, this series of guides document contains all the necessary information to help you get started on your own journey to organize and govern across environments your Kubernetes clusters on any infrastructure, and manage at scale the containerized applications in the nowadays hybrid and multi-cloud environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Use GitOps for Kubernetes cluster configuration.pdf",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b91b61-f11f-4829-8323-89d7ad6975a7/Use GitOps for Kubernetes cluster configuration.pdf",
+            "size": "1171779",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Use Azure Policy for Kubernetes cluster configuration at scale.pdf",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b91b61-f11f-4829-8323-89d7ad6975a7/Use Azure Policy for Kubernetes cluster configuration at scale.pdf",
+            "size": "797590",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Prepare your Kubernetes environment for Azure Arc.pdf",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b91b61-f11f-4829-8323-89d7ad6975a7/Prepare your Kubernetes environment for Azure Arc.pdf",
+            "size": "229704",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Azure Arc enabled Kubernetes Demo (Minikube).pdf",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b91b61-f11f-4829-8323-89d7ad6975a7/Azure Arc enabled Kubernetes Demo (Minikube).pdf",
+            "size": "877861",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Azure Arc enabled Kubernetes Demo (MicroK8s).pdf",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b91b61-f11f-4829-8323-89d7ad6975a7/Azure Arc enabled Kubernetes Demo (MicroK8s).pdf",
+            "size": "830459",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Azure Arc enabled Kubernetes Demo (Docker Desktop WSL 2 backend).pdf",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b91b61-f11f-4829-8323-89d7ad6975a7/Azure Arc enabled Kubernetes Demo (Docker Desktop WSL 2 backend).pdf",
+            "size": "714649",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Designed as step-by-step walkthroughs, this series of guides document contains all the necessary information to help you get started on your own journey to organize & govern across environments your Linux and Windows in the nowadays hybrid and multi-cloud environments.\r\n<br/><br/>\r\n<a href=\"https://azure.microsoft.com/en-us/services/azure-arc/\">Azure Arc</a> is a set of technologies that extends Azure management and enables Azure services to run on-premises, multi-cloud, and the edge. Azure Arc brings Azure management, Azure services, Azure security, and cloud practices like DevOps to any infrastructure in local data centers on-premises, cloud services from multiple providers and edge locations.\r\n<br/><br/>\r\n<a href=\"https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/\">Azure Arc enabled Kubernetes</a> is one of Azure Arc technologies to extend Azure Resource Manager (ARM) capabilities to <a href=\"https://kubernetes.io/\">Kubernetes (K8s)</a>clusters on any infrastructure anywhere to inventory, organize, manage and govern them at scale centrally from Azure.\r\n<br/><br/>\r\nThis series of demo guides intended for IT professionals helps you better understand in a step-by-step approach the Azure Arc enabled Kubernetes scenarios:\r\n<ul>\r\n<li>Connecting Kubernetes running outside of Azure for inventory, grouping, and tagging.</li>\r\n<li>Deploy applications and apply configuration using GitOps-based configuration management.</li>\r\n<li>Use Azure Monitor for containers to view and monitor your clusters.</li>\r\n<li>Apply policies using Azure Policy for Kubernetes.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Use GitOps for Kubernetes cluster configuration.pdf",
+        "Use Azure Policy for Kubernetes cluster configuration at scale.pdf",
+        "Prepare your Kubernetes environment for Azure Arc.pdf",
+        "Azure Arc enabled Kubernetes Demo (Minikube).pdf",
+        "Azure Arc enabled Kubernetes Demo (MicroK8s).pdf",
+        "Azure Arc enabled Kubernetes Demo (Docker Desktop WSL 2 backend).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "778.9 KB",
+        "224.3 KB",
+        "857.3 KB",
+        "811.0 KB",
+        "697.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the PDF file(s) and open it/them with the PDF reader of your choices.",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Arc",
+            "url": "https://azure.microsoft.com/en-us/services/azure-arc/"
+        },
+        {
+            "title": "azure Arc enabled Kubernetes",
+            "url": "https://docs.microsoft.com/en-us/azure/azure-arc/kubernetes/"
+        },
+        {
+            "title": "build 2020 Azure Arc and Kubernetes: a Developer Story",
+            "url": "https://www.youtube.com/watch?v=8_4CKxKLS-Q"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101319",
+    "downloadPreload": true
+}

@@ -1,0 +1,156 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Windows Server 2012 R2 Windows Deployment Services",
+    "downloadDescription": "\u200bThe Windows Deployment Services Management Pack includes monitors, rules, views, tasks and knowledge for the monitoring of your Windows Deployment Services infrastructure for Windows Server 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Windows Deployment Services 2012 R2.msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for Windows Deployment Services 2012 R2.msi",
+            "size": "655360",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (RUS).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (RUS).msi",
+            "size": "700416",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (PTB).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (PTB).msi",
+            "size": "659456",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (JPN).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (JPN).msi",
+            "size": "651264",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (ITA).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (ITA).msi",
+            "size": "667648",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (FRA).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (FRA).msi",
+            "size": "643072",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (ESN).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (ESN).msi",
+            "size": "626688",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (DEU).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (DEU).msi",
+            "size": "630784",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (CHT).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (CHT).msi",
+            "size": "651264",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for WDS 2012 R2 (CHS).msi",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/SC Management Pack for WDS 2012 R2 (CHS).msi",
+            "size": "684032",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Deployment Services 2012 R2 Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/9/9/f/99f638bd-0851-45e0-a600-4bcfdd08f2e9/Windows Deployment Services 2012 R2 Management Pack Guide.docx",
+            "size": "87868",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bThe Windows Deployment Services Management Pack includes monitors, rules, views, tasks and knowledge for the monitoring of your Windows Deployment Services infrastructure for Windows Server 2012 R2. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<ul>\r\n<li> Windows Server 2012 R2 Support  </li>\r\n<li> Service Health Monitoring  </li>\r\n<li> State and Alert Views  </li>\r\n<li> Performance Monitoring  </li>\r\n<li> Alert Knowledge Base Information </li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>10/18/2013 - version 7.1.10100.0 </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10100.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for Windows Deployment Services 2012 R2.msi",
+        "SC Management Pack for WDS 2012 R2 (RUS).msi",
+        "SC Management Pack for WDS 2012 R2 (PTB).msi",
+        "SC Management Pack for WDS 2012 R2 (JPN).msi",
+        "SC Management Pack for WDS 2012 R2 (ITA).msi",
+        "SC Management Pack for WDS 2012 R2 (FRA).msi",
+        "SC Management Pack for WDS 2012 R2 (ESN).msi",
+        "SC Management Pack for WDS 2012 R2 (DEU).msi",
+        "SC Management Pack for WDS 2012 R2 (CHT).msi",
+        "SC Management Pack for WDS 2012 R2 (CHS).msi",
+        "Windows Deployment Services 2012 R2 Management Pack Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "640.0 KB",
+        "684.0 KB",
+        "644.0 KB",
+        "636.0 KB",
+        "652.0 KB",
+        "628.0 KB",
+        "612.0 KB",
+        "616.0 KB",
+        "636.0 KB",
+        "668.0 KB",
+        "85.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b></li>\r\n<ul>\r\n<li> Windows Server 2012 R2 with Windows Deployment Services Role</li>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2</li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\u200bPlease refer to WDS 2012 R2 MP Guide for instructions.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Home Page",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "windows Deployment Services on TechNet",
+            "url": "http://technet.microsoft.com/en-us/library/hh831764.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40800",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research IME Corpus",
+    "downloadDescription": "This download consists of data only: it provides a test data set for the task of Japanese character conversion for text input. Last published: December 21, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSRIMECorpus.zip",
+            "url": "https://download.microsoft.com/download/e/1/a/e1a32344-dde0-49b4-94aa-019112e04e27/MSRIMECorpus.zip",
+            "size": "4495451",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download consists of data only: it provides a test data set for the task of Japanese character conversion for text input. The data set consists of: (1) reference files, which consist of Japanese sentences that are randomly extracted from news articles (no more than one sentence has been extracted per news article); (2) reading files, which consist of corresponding kana readings for the sentences in the reference files; (3) n-best files, which contain 100-best conversion candidates for each sentence in the reading files. More detailed information about the corpus is found in the technical report, Microsoft Research IME Corpus, MSR-TR-2005-168.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSRIMECorpus.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52316",
+    "downloadPreload": true
+}

@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Microsoft Dynamics CRM 2011 ",
+    "downloadDescription": "The System Center Management Pack for Microsoft Dynamics CRM 2011 enables you to administer the Microsoft Dynamics CRM 2011 application in Microsoft System Center Operations Manager (SCOM) 2007 SP1 and System Center Operations Manager 2007 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Monitoring Pack for Microsoft Dynamics CRM 2011.msi",
+            "url": "https://download.microsoft.com/download/9/f/3/9f3736ad-5435-408c-a0cf-578f5aa412d4/Monitoring Pack for Microsoft Dynamics CRM 2011.msi",
+            "size": "565248",
+            "version": "5.0.0.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2007R2_MP_CRM2011.doc",
+            "url": "https://download.microsoft.com/download/9/f/3/9f3736ad-5435-408c-a0cf-578f5aa412d4/OM2007R2_MP_CRM2011.doc",
+            "size": "437760",
+            "version": "5.0.0.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The views, monitors, rules, and knowledge specific to Microsoft Dynamics CRM 2011 that comprise this Management Pack provide the means for System Center Operations Manager users to centrally manage the server application, its component services, and the computers on which they run. The Monitoring Pack for Microsoft Dynamics CRM 2011 also contains monitoring for the Microsoft Dynamics CRM 2011 E-mail Router and Microsoft Dynamics CRM 2011 Reporting Extensions. <br/>\r\n<br/>\r\nBy managing these Microsoft Dynamics CRM components in System Center Operations Manager, the administrator can respond quickly to critical events and key performance indicators, and take action to prevent service outages, reduce the resolution time for alert conditions, and increase the overall availability and performance of the Microsoft Dynamics CRM system. <br/>\r\n<br/>\r\n<b>Feature Summary </b>\r\n<ul>\r\n<li> Monitors the availability and heath of the following components </li>\r\n<ul>\r\n<li> Microsoft Dynamics CRM Server 2011 </li>\r\n<li> Microsoft Dynamics CRM 2011 E-mail Router </li>\r\n<li> Microsoft Dynamics CRM 2011 Reporting Extensions </li>\r\n</ul>\r\n<li> Monitors the availability and health of the following component services: </li>\r\n<ul>\r\n<li> Microsoft Dynamics CRM Asynchronous Processing Service  </li>\r\n<li> Microsoft Dynamics CRM Asynchronous Processing Service (maintenance) </li>\r\n<li> Microsoft Dynamics CRM Sandbox Processing Service </li>\r\n<li> Microsoft Dynamics CRM E-mail Router Service </li>\r\n<li> Microsoft Dynamics CRM Unzip Service </li>\r\n<li> World Wide Web Publishing Service </li>\r\n<li> Indexing Service </li>\r\n</ul>\r\n<li> Monitors the availability and health of the following application components and functionality:  </li>\r\n<ul>\r\n<li> Operability of ISV plug-ins  </li>\r\n<li> Web application requests processing, SOAP exceptions, and unexpected failures  </li>\r\n</ul>\r\n<li> Monitors the performance metrics of the following components:  </li>\r\n<ul>\r\n<li> Web application requests processing  </li>\r\n<li> Database query processing  </li>\r\n</ul>\r\n<li> Monitors the system for configuration-related failures.  </li>\r\n</ul>\r\n<br/>\r\n<b>Release History </b>\r\n<ul>\r\n<li>7/12/2012 - Initial Release, version 5.0.0  </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.0.0",
+    "detailsSection_file_name": [
+        "Monitoring Pack for Microsoft Dynamics CRM 2011.msi",
+        "OM2007R2_MP_CRM2011.doc"
+    ],
+    "detailsSection_file_size": [
+        "552.0 KB",
+        "427.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <b>Other Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2007 SP1 or System Center Operations Manager 2007 R2 (recommended)</li>\r\n<li> Microsoft Dynamics CRM Server 2011</li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<b>To download the Management Pack:</b><br/>\r\n<ol>\r\n<li> Click the Download button at the top of the page. </li>\r\n<li> In the File Download \u2013 Security Warning dialog box, click Run. </li>\r\n<li> If the Internet Explorer \u2013 Security Warning dialog box appears, click Run. </li>\r\n<li> Follow the instructions to download the Management Pack. </li>\r\n</ol><br/>\r\n<b>To import the Monitoring Pack: </b><br/>\r\n<ol>\r\n<li> On a System Center Operations Manager server, open the Administration console. </li>\r\n<li> Right click on the Management Packs node, and then click Import Management Packs. </li>\r\n<li> Follow the instructions to import the Management Pack. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft System Center Homepage",
+            "url": "http://www.microsoft.com/systemcenter/en/us/default.aspx"
+        },
+        {
+            "title": "dynamic CRM 4.0 Management Pack",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=c2c9c4b6-69d5-432a-9560-8e4a6e01573a"
+        },
+        {
+            "title": "dynamic CRM 2011 Homepage",
+            "url": "http://crm.dynamics.com/en-us"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2011 Implementation Guide",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=9886ab96-3571-420f-83ad-246899482fb4"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26795",
+    "downloadPreload": true
+}

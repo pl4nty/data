@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Cloud Hosting Summit 2017 - March 23 Breakouts ",
+    "downloadDescription": "Cloud Hosting Summit 2017 - March 23 Breakouts",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Infra - Identity Driven Security.pdf",
+            "url": "https://download.microsoft.com/download/e/5/6/e5688a39-6e0f-41b8-aa04-4f4bbe0137e7/Infra - Identity Driven Security.pdf",
+            "size": "2589483",
+            "version": "March 23 2017",
+            "datePublished": "7/15/2024 4:36:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Apps - Building and Growing your Dynamics 365 Business.pdf",
+            "url": "https://download.microsoft.com/download/e/5/6/e5688a39-6e0f-41b8-aa04-4f4bbe0137e7/Apps - Building and Growing your Dynamics 365 Business.pdf",
+            "size": "1792300",
+            "version": "March 23 2017",
+            "datePublished": "7/15/2024 4:36:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Marketing - Three partners delivering big transformation in small business.pdf",
+            "url": "https://download.microsoft.com/download/e/5/6/e5688a39-6e0f-41b8-aa04-4f4bbe0137e7/Marketing - Three partners delivering big transformation in small business.pdf",
+            "size": "3250210",
+            "version": "March 23 2017",
+            "datePublished": "7/15/2024 4:36:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Licensing - Modern Licensing for Cloud Solutions.pdf",
+            "url": "https://download.microsoft.com/download/e/5/6/e5688a39-6e0f-41b8-aa04-4f4bbe0137e7/Licensing - Modern Licensing for Cloud Solutions.pdf",
+            "size": "2370581",
+            "version": "March 23 2017",
+            "datePublished": "7/15/2024 4:36:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Cloud MSP - ISV_Combined.pdf",
+            "url": "https://download.microsoft.com/download/e/5/6/e5688a39-6e0f-41b8-aa04-4f4bbe0137e7/Cloud MSP - ISV_Combined.pdf",
+            "size": "5380937",
+            "version": "March 23 2017",
+            "datePublished": "7/15/2024 4:36:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Infra - Azure Stack_Hybrid Opportunity Update.pdf",
+            "url": "https://download.microsoft.com/download/e/5/6/e5688a39-6e0f-41b8-aa04-4f4bbe0137e7/Infra - Azure Stack_Hybrid Opportunity Update.pdf",
+            "size": "3809660",
+            "version": "March 23 2017",
+            "datePublished": "7/15/2024 4:36:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download one or all of the Microsoft Cloud and Hosting Summit 2017 presentations from the breakouts on Thursday March 23rd. This invite-only event brings together the leading worldwide cloud service providers which include pure-play hosters, Telco\u2019s, MSPs, ISVs and SI.\r\n\r\nApplications Breakout: Building and Growing your Dynamics 365 Business\r\nThe Dynamics 365 business continues to see market momentum. Join this session to gain insights into the Dynamics business and how to build your Dynamics 365 practice.\r\n\r\nCloud MSP Breakout: Drive transformative change with Advanced Analytics\r\nAdvanced analytics a key differentiator as it helps business gain strategic insights to trends & opportunities in real time. Microsoft has several rich analytics offerings that build on familiar tools that significantly reduce deployment and training time. In this session, you will get a glimpse into Cortana Intelligence services such as Azure Machine Learning, IOT, Data Factory, Stream Analytics, the new Intelligence services such as Cognitive Services and Bot Framework, and the business value it provides.\u00a0\u00a0\r\n\r\nInfrastructure Breakout: Azure Stack \u2013 Hybrid Azure Opportunity Update\r\nAzure provides a rich platform for developers to modernize their applications, and in fact most applications are moving to public cloud quickly. Some applications however face technological and regulatory obstacles; regulation, latency, data sensitivity, and customization needs are primary examples. Azure Stack provides a way to run the same applications in on-premises environments. In this session you we will update you with the latest Azure Stack information and help you make a decision on how and when to deploy Azure Stack in your datacenter.\u00a0\u00a0\r\n\r\nMarketing Breakout: Three Partners Delivering Big Transformation in Small Business \r\nLearn how hosting and cloud service providers help SMBs to transform and grow their business. Panel discussion with 3 partners who have evolved their portfolio together with Microsoft to serve the changing needs of SMBs.\r\n\r\nCloud MSP Breakout: Investing in Cloud Tooling - Margin expansion in a high growth hyper scale cloud market\r\nCloud tooling is a critical investment to allow for margin expansion as you drive high velocity growth. Critical areas to focus are Assessment & Migration, Security, Automation and DevOps, Monitoring and Management, Automated Provisioning & Deployment etc. Enabling ISVs executives will share with you their value proposition, integration with Azure ARM/CSP APIs and business model to enable you to build automated Cloud Tooling.\u00a0\u00a0\r\n\r\nInfrastructure Breakout: Identity Driven Security\r\nWinning and Managing Identity: The fundamental workload for any customer moving to Public/Private/Hybrid Cloud.\r\n\r\nLicensing Breakout: Modern Licensing for Cloud Solutions\r\nIn this session you will learn about recent updates to Microsoft licensing programs for Cloud & Hosting partners. Modern licensing enables you to leverage Microsoft software & Online Services for your hybrid cloud solutions. We will discuss the Microsoft services presented in breakout sessions from a licensing perspective. We will also touch on Azure Stack licensing for service providers.\u00a0\u00a0\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 23 2017",
+    "detailsSection_file_name": [
+        "Infra - Identity Driven Security.pdf",
+        "Apps - Building and Growing your Dynamics 365 Business.pdf",
+        "Marketing - Three partners delivering big transformation in small business.pdf",
+        "Licensing - Modern Licensing for Cloud Solutions.pdf",
+        "Cloud MSP - ISV_Combined.pdf",
+        "Infra - Azure Stack_Hybrid Opportunity Update.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "1.7 MB",
+        "3.1 MB",
+        "2.3 MB",
+        "5.1 MB",
+        "3.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Choose download and select one or all PDF files to save to your computer for review.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54951",
+    "downloadPreload": true
+}

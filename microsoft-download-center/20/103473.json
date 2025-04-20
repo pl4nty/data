@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Oracle to Azure Database for PostgreSQL Migration Cookbook",
+    "downloadDescription": "Oracle to Azure Database for PostgreSQL Migration Cookbook",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Oracle to Azure PostgreSQL Migration Cookbook.pdf",
+            "url": "https://download.microsoft.com/download/f/3/9/f39f43ca-79ba-48c0-b766-06182cbc04de/Oracle to Azure PostgreSQL Migration Cookbook.pdf",
+            "size": "745481",
+            "version": "2.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document's purpose is to provide Architects, Consultants, DBAs and related roles with a guide for quick \r\nmigrating workloads from Oracle to Azure Database for PostgreSQL using ora2pg tool.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Oracle to Azure PostgreSQL Migration Cookbook.pdf"
+    ],
+    "detailsSection_file_size": [
+        "728.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103473",
+    "downloadPreload": true
+}

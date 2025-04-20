@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 4.0 Documentation Updates",
+    "downloadDescription": "List of changes to the Microsoft Dynamics AX  Help documentation since the product RTM.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DynAX_4_UpdatedHelp_on_MSDN.DocX",
+            "url": "https://download.microsoft.com/download/5/d/5/5d50760d-c906-4aa4-87da-35cc058b0f16/DynAX_4_UpdatedHelp_on_MSDN.DocX",
+            "size": "42149",
+            "version": "1.08.02",
+            "datePublished": "7/15/2024 3:14:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "List of changes to the Microsoft Dynamics AX  Help documentation since the product RTM. This material is available online at http://msdn.microsoft.com/en-us/library/aa155234.aspx.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.08.02",
+    "detailsSection_file_name": [
+        "DynAX_4_UpdatedHelp_on_MSDN.DocX"
+    ],
+    "detailsSection_file_size": [
+        "41.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This Help file can be read on any version of Windows.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click <b>Download</b> to start the download.</li><br />\n<br />\n<li>Copy the file to your computer by clicking the <b>Save</b> button.</li><br />\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8786",
+    "downloadPreload": true
+}

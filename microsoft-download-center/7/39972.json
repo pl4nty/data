@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Tools for Microsoft Dynamics GP 2013 Sample Applications",
+    "downloadDescription": "Use these sample applications as examples of integrations you can make with Visual Studio Tools for Microsoft Dynamics GP 2013",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LookupsDemoGP2013.zip",
+            "url": "https://download.microsoft.com/download/1/9/9/1991787b-11c6-4bc1-838f-93e77fde1dce/LookupsDemoGP2013.zip",
+            "size": "166147",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:28:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TableAccess-GP2013.zip",
+            "url": "https://download.microsoft.com/download/1/9/9/1991787b-11c6-4bc1-838f-93e77fde1dce/TableAccess-GP2013.zip",
+            "size": "145928",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:28:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PostSOPBatchDemoGP2013.zip",
+            "url": "https://download.microsoft.com/download/1/9/9/1991787b-11c6-4bc1-838f-93e77fde1dce/PostSOPBatchDemoGP2013.zip",
+            "size": "136376",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:28:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains various sample applications created with Visual Studio Tools for Microsoft Dynamics GP 2013.\n<br />\n<br />\nThe following samples are included:\n<UL><LI><b>PostSOPBatchDemo2013.zip</b> \u2013 Demonstrates how to post a batch in Sales Order Processing</LI>\n<LI><b>TableAccess-GP2013.zip</b> \u2013 Demonstrates table access techniques for Visual Studio Tools integrations.</LI>\r\n<LI><b>LookupsDemoGP2013.zip</b> \u2013 Demonstrates using lookups for Visual Studio Tools integrations.</LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "LookupsDemoGP2013.zip",
+        "TableAccess-GP2013.zip",
+        "PostSOPBatchDemoGP2013.zip"
+    ],
+    "detailsSection_file_size": [
+        "162.3 KB",
+        "142.5 KB",
+        "133.2 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Microsoft Dynamics GP 2013 is required to use these samples.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to save each file to your computer.</LI></OL>",
+    "additionalInformationSection": "All sample code used in production applications will need to be fully understood and maintained by the application developer.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        },
+        {
+            "title": "using Microsoft Dynamics GP 2010",
+            "url": "http://www.microsoft.com/dynamics/gp/using/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39972",
+    "downloadPreload": true
+}

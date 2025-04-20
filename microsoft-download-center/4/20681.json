@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "OBA Composition Reference Toolkit",
+    "downloadDescription": "The OBA Composition Reference Toolkit brings to surface the underlying composition capabilities of the 2007 Microsoft Office system.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OCRTV2_MSIs.zip",
+            "url": "https://download.microsoft.com/download/c/8/7/c87275d8-3c10-47a7-81fe-3da84433a8c1/OCRTV2_MSIs.zip",
+            "size": "22866016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The 2007 Microsoft Office System is a powerful platform for building role based, collaborative, and analytical applications that extend the reach of Line of Business systems and backend applications to information workers across the organization. These Office Business Applications combine the powerful platform capabilities of the Microsoft Office System with the user familiarity of the Office Clients to surface line of business data, information, and processes to information workers directly within the business productivity tools, interfaces, and devices that they use to execute and complete their business tasks.<br />\n<br />\nThe OBA Composition Reference Toolkit brings to surface the underlying composition capabilities of the 2007 Microsoft Office system. It integrates seamlessly with the Microsoft Office 2007 System to enable a prescriptive application composition experience for Information Workers to build and deploy Office Business Applications (OBAs) using semantically related OBA Components like Workflows, SharePoint document libraries and lists, SharePoint Pages, Web Parts, VSTO Office Client Add-ins, BI Reports, BI Dashboards etc. The  toolkit comprises an OBA Composition Server and an OBA Composer. The OBA Composition Server implements metadata and provisioning services to enable cataloging OBA components, defining semantic relationships between components, defining the bindings between components and LOB systems, and to support deploying OBAs composed by users. The OBA Composer is a WPF application that consumes and uses the services of the OBA Composition Server to enable a rich client and prescriptive user experience for composing and deploying OBAs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OCRTV2_MSIs.zip"
+    ],
+    "detailsSection_file_size": [
+        "21.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 SP2 (or higher)<br />\nInternet Information Server 6.0 (or higher)<br />\nSQL Server 2005 Developer or Enterprise Edition with SP2 (or higher)<br />\no              A default instance accessible as localhost is required<br />\no              SQL Server Reporting Services (SSRS) must be installed to deploy/test SSRS Report components<br />\no              SQL Server Analysis Services (SSAS) must be installed to deploy/test SSAS OLAP Databases and components like SSRS Reports and Excel Services Reports that use an SSAS OLAP Database<br />\n.NET 3.5 Framework<br />\nMicrosoft Office SharePoint Server 2007 Enterprise Edition<br />\no              Enterprise features like the Business Data Catalog, Excel Services, and InfoPath Forms Services must be installed and activated to deploy/test related components.<br />\no              SQL Server Reporting Services (SSRS) must be configured in the SharePoint integrated mode to deploy/test SSRS Report Components<br />\nOffice 2007 Professional Edition<br />\nVisual Studio Tools for Office System 3.0 Runtime",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2"
+    ],
+    "installInstructionSection": "See file \u201cOBA Composition Reference Toolkit Installation and Setup Guide.pdf\u201d",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20681",
+    "downloadPreload": true
+}

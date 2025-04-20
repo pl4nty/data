@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Measuring the Immeasurable: Using Xbox 360 GPU Performance Counters for Fun and Profit (UK)",
+    "downloadDescription": "Gamefest 2011 Presentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Graphics_Measuring_the_Immeasurable_UK.zip",
+            "url": "https://download.microsoft.com/download/0/7/7/077d76a7-d181-4275-a26f-04cc8f2ccaea/Graphics_Measuring_the_Immeasurable_UK.zip",
+            "size": "51803702",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:09:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The first step to tackling any performance problem is to profile and measure. PIX provides an excellent tool for finding GPU performance bottlenecks; however, it is not necessarily the best tool for all situations. Perhaps you want to create a simple and quick interface for your art asset pipeline or a fancy real time in game overlay. By using the D3D performance counter APIs, we can develop custom tools to measure the GPU's performance and present the information in the way that best suits our needs. This talk covers how to obtain solid measurements for many common GPU bottlenecks so that you can create tools to match your workflow.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Graphics_Measuring_the_Immeasurable_UK.zip"
+    ],
+    "detailsSection_file_size": [
+        "49.4 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "PowerPoint, WMA",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "PowerPoint presentation and WMA",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28125",
+    "downloadPreload": true
+}

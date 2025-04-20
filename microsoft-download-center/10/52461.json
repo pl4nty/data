@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Spec Explorer",
+    "downloadDescription": "Spec Explorer is a software-development tool for advanced model-based specification and conformance testing. Last published: September 12, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SpecExplorer.9520.msi",
+            "url": "https://download.microsoft.com/download/9/9/6/996e1330-da16-47ab-a90f-efac1dd213e0/SpecExplorer.9520.msi",
+            "size": "12698112",
+            "version": "1.0.9315",
+            "datePublished": "7/15/2024 4:03:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Spec Explorer is a software-development tool for advanced model-based specification and conformance testing. Spec Explorer can help software-development teams detect errors in the design, the specification, and the implementation of their systems. The tool is intended to be used by software testers, designers, and implementers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.9315",
+    "detailsSection_file_name": [
+        "SpecExplorer.9520.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52461",
+    "downloadPreload": true
+}

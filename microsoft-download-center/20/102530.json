@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 Field Service Mobile Adoption Playbook v2.2",
+    "downloadDescription": "This playbook is intended to help customers, partners and Microsoft field roles plan and execute adoption of Field Service Mobile and to manage new deployments and migrations ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics 365 Field Service Mobile Adoption Playbook v2.2.pptx",
+            "url": "https://download.microsoft.com/download/e/e/e/eee7ac47-7534-47ed-bef4-874fc0945dbd/Dynamics 365 Field Service Mobile Adoption Playbook v2.2.pptx",
+            "size": "24472878",
+            "version": "2.2",
+            "datePublished": "7/15/2024 4:29:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This playbook is intended to help customers, partners and Microsoft field roles plan and execute adoption of Field Service Mobile and to manage new deployments and migrations \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2",
+    "detailsSection_file_name": [
+        "Dynamics 365 Field Service Mobile Adoption Playbook v2.2.pptx"
+    ],
+    "detailsSection_file_size": [
+        "23.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 Field Service v8.8.22+",
+    "systemRequirementsSection_supportedOS": [
+        "iOS",
+        "Android"
+    ],
+    "installInstructionSection": "Download the powerpoint for guidance",
+    "relatedResourcesSection": [
+        {
+            "title": "implement the right mobile app for your technicians",
+            "url": "https://docs.microsoft.com/dynamics365/field-service/mobile-2020-power-platform"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102530",
+    "downloadPreload": true
+}

@@ -1,0 +1,149 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 Master Data Services Add-in For Microsoft\u00ae Excel\u00ae",
+    "downloadDescription": "The Master Data Services Add-in for Excel gives multiple users the ability to update master data in a familiar tool without compromising the data\u2019s integrity in Master Data Services. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MasterDataServicesExcelAddin.msi",
+            "url": "https://download.microsoft.com/download/f/9/a/f9a850de-e589-4a1a-8b1b-6e3178315754/ENU/x64/MasterDataServicesExcelAddin.msi",
+            "size": "3268608",
+            "version": "13.0.5030.56",
+            "datePublished": "7/15/2024 4:56:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MasterDataServicesExcelAddin.msi",
+            "url": "https://download.microsoft.com/download/f/9/a/f9a850de-e589-4a1a-8b1b-6e3178315754/ENU/x86/MasterDataServicesExcelAddin.msi",
+            "size": "3080192",
+            "version": "13.0.5030.56",
+            "datePublished": "7/15/2024 4:56:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        }
+    ],
+    "detailsSection": "\r\n<br/>\n\nFrom within the Add-in, users can publish data to the MDS database with the click of a button. Administrators can use the Add-in to create new model objects and load data without ever launching any administrative tools, helping to speed deployment. With the Master Data Services Add-in for Excel, all master data remains centrally managed in MDS, while the ability to read or update the data is distributed to those who need it.<br/>\r\n<br/>\r\nThe Master Data Services (MDS) Add-in for Microsoft Excel is a data management tool that delivers a multitude of master data management capabilities with ease and efficiency. Manage MDS data within an interface you already know and love \u2013 Microsoft\u00ae Excel. Leverage existing Excel functionality to share your managed lists with others, knowing these lists can be secured and monitored with all of the features provided by Master Data Services.<br/>\r\n<br/>\r\n<ul>\r\n<li>Quickly and easily load new managed data sets into the Master Data Services database.</li>\r\n<li>Administrators, easily create new entities to store sets of managed data.</li>\r\n<li>Make bulk data changes to pre-existing models.</li>\r\n<li>Correct all issues discovered through the validation process and seamlessly publish updates to the MDS server.</li>\r\n<li>Add and update columns in your entities with a few clicks, creating constrained columns on the fly.</li>\r\n<li>Send defined queries to other users through Outlook Email for a rich collaboration experience leveraging Master Data Services Security</li>\r\n<li>Determine data matches with the new Data Quality Services for SQL Server 2016</li>\r\n\r\n\r\n<br/>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.5030.56",
+    "detailsSection_file_name": [
+        "MasterDataServicesExcelAddin.msi",
+        "MasterDataServicesExcelAddin.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<ul>\r\n<li>500 MHz 32-bit or 64-bit processor or higher</li>\r\n<li>Minimum of 1 GB of RAM (2 GB or more is recommended.</li>\r\n<li>3.5 GB of available hard disk space</li>\r\n<li> Internet access</li>\r\n<li>A working MDS installation</li>\r\n<li>Microsoft Office 2010 or later</li>\r\n<li>Microsoft .NET Framework  4.5.1 or later </li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=48217\"> Visual Studio 2010 Tools for Office Runtime</a></li>\r\n</ul>\r\n<br/>\r\nHere is a link to the detailed <a href=\"https://go.microsoft.com/fwlink/?linkid=834547\"> Hardware and Software Requirements.</a><br />\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<br/>\r\n<b>Important:</b> If you install the 32-bit version of Excel, you must use the 32-bit version of the MDS Add-in. If you install the 64-bit version of Excel, you must use the 64-bit version of the Add-in.<br/>\r\n<br/>\r\n<ol>\r\n<li>Double-click the .msi file to start the Setup wizard.</li>\r\n<li>Click Next</li>\r\n<li>Accept the license agreement, and then click Next.</li>\r\n<li> Enter your name, and then click Next.</li>\r\n<li>Click Install.</li>\r\n<li> Click Finish.</li>\r\n</ol>\r\n<br/>\r\nAfter successful completion, open Excel and a new Master Data tab is displayed on the ribbon.<br/>\r\n<br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=217348\"> For instructions on using the Add-in</a><br />\r\n",
+    "additionalInformationSection": "Your feedback is important. Help improve SQL Server by <a href=\"http://go.microsoft.com/fwlink/?LinkID=168586\">submitting bugs to Microsoft\u00ae Connect</a>.<br /><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52677",
+    "downloadPreload": true
+}

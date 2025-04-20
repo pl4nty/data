@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Server 2013 Cumulative Update KB 2809243",
+    "downloadDescription": "This download includes all available updates for Lync Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LyncServerUpdateInstaller.exe",
+            "url": "https://download.microsoft.com/download/b/e/4/be44ac91-c665-4522-ba93-ce72b0934daf/LyncServerUpdateInstaller.exe",
+            "size": "140389808",
+            "version": "8308.1198",
+            "datePublished": "7/15/2024 4:32:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This cumulative update download for Microsoft Lync Server 2013 is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/2809243\">2809243</A>. \n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2809243",
+        "name": "KB2809243"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8308.1198",
+    "detailsSection_file_name": [
+        "LyncServerUpdateInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "133.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following program:</b></li><br />\n<ul><li>Microsoft Lync Server 2013</li>\r\n<li>Lync Server 2013 Multitenant Hosting Pack</li></ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> buttons and saving the files to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/?kbid=2809243\">2809243</A> for installation details.</li>\n</ol>\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36820",
+    "downloadPreload": true
+}

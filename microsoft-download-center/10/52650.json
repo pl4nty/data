@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2016 Architectural Models",
+    "downloadDescription": "Fundamental SharePoint Server 2016 Architectures",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePoint2016ArchitecturalModels.vsdx",
+            "url": "https://download.microsoft.com/download/4/f/a/4fa0f94b-ee2f-41db-a047-d9864fef41e9/SharePoint2016ArchitecturalModels.vsdx",
+            "size": "1456377",
+            "version": "Aug2016",
+            "datePublished": "7/15/2024 4:03:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint2016ArchitecturalModels.pdf",
+            "url": "https://download.microsoft.com/download/4/f/a/4fa0f94b-ee2f-41db-a047-d9864fef41e9/SharePoint2016ArchitecturalModels.pdf",
+            "size": "691076",
+            "version": "Aug2016",
+            "datePublished": "7/15/2024 4:03:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": ".PDF and .VSDX versions of the Sharepoint Server 2016 architectural models.  Download the .VSDX if you have Visio, otherwise download the .PDF for the Adobe Acrobat Reader version.  These are in 11x17 (tabloid) format for easy printing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug2016",
+    "detailsSection_file_name": [
+        "SharePoint2016ArchitecturalModels.vsdx",
+        "SharePoint2016ArchitecturalModels.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "674.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio or Adobe Acrobat reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the .VSDX if you have Visio, otherwise download the .PDF for the Adobe Acrobat Reader version.",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Server 2016 documentation on TechNet",
+            "url": "https://technet.microsoft.com/library/cc303422(v=office.16)"
+        },
+        {
+            "title": "technical diagrams for SharePoint Server 2016",
+            "url": "https://technet.microsoft.com/library/cc263199(v=office.16).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52650",
+    "downloadPreload": true
+}

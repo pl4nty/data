@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Customization Guide for Microsoft Dynamics Retail Management System(RMS) ",
+    "downloadDescription": "This Customization Guide is a \u201ctechnical readiness\u201d resource that documents how to customize Microsoft Dynamics Retail Management System (RMS). For the first time, the areas of Retail Management System that can be customized and are available for integration to 3rd party products are clearly identified and documented. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Customization Guide September 2007.zip",
+            "url": "https://download.microsoft.com/download/e/f/4/ef4693b6-efae-481a-854e-cda15b66c403/Customization Guide September 2007.zip",
+            "size": "2047506",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\n   Customizing Retail Management System to create tailored solutions and address \u201cone-off\u201d customer requirements gives you a significant competitive advantage in the marketplace. Other retail solutions targeted at small and medium businesses are not nearly as customizable as Retail Management System. By addressing the unique needs of your customers, you can add further value and improve customer satisfaction.<br/>\r\n  \r\n      Who should utilize the \r\n         Customization Guide?<br/>The \r\n      Customization Guide is ideal for technically savvy partners who understand APIs (Application Program Interface), product technology, and how to provide great service to customers. The Guide also allows you to create your own suite of Retail Management System customizations and market them to other customers. If a partner is focused on selling Retail Management System \u201cout-of-the-box\u201d, the \r\n      Implementation Guide may be more appropriate for your needs.<br/>\r\n    The \r\n      Customization Guide is written specifically for Microsoft Dynamics Retail Management System&#160;(RMS). For future releases of Retail Management System, the tool provided to partners enabling customization will be modified with the architecture of the product changing and becoming more .NET enabled. <br/>\r\n   \r\n      How is the \r\n         Customization Guide being supported?<br/>If you have support related questions pertaining to any of the developer tools you are using with the release of the Customization Guide, open a support incident using PartnerSource and create a new support incident. Visit \r\n      <a href=\"https://mbs.microsoft.com/support/newstart.aspx\">https://mbs.microsoft.com/support/newstart.aspx</a> and create a new support incident. Choose Retail Management and RMS Customization Guide Request as the Product and Module choices and indicate in the message that you have specific support questions regarding the \r\n      Customization Guide. The fee for support incidents regarding the \r\n      Customization Guide will be based on your current support plan. <br/>\r\n  \r\n      Which release of Retail Management System does the \r\n         Customization Guide pertain to?<br/>The \r\n      Customization Guide applies to Microsoft Dynamics Retail Management System (RMS) 1.2&#160;or later.<br/>\r\n   \r\n      What are the areas of customization in Retail Management System?<br/>The following table outlines specific areas of customization found within the \r\n      Customization Guide:<br/> \r\n   \r\n Custom POS Buttons documentation<br/> \r\n   Custom buttons may be added by partners that extend the functionality of the POS.&#160; The custom buttons are usually displayed on the right hand side of the screen and may trigger HTML windows, internal commands, COM objects and external programs.<br/> \r\n   The Guide includes documenting the function of each of the types of buttons and includes examples of uses for the buttons.<br/> \r\n   \r\n 2.Custom Hooks documentation<br/> \r\n   There are currently 9 Hooks in the POS and 6 Hooks in the Manager application that serve as entry points that external applications may use to trigger processing at a specific point in time (i.e. at the beginning of the tender process).&#160; The external application may include its own UI and database tables and may interact with Microsoft Retail Management System through access to the QSRules COM object.<br/>\r\n   The Guide documents each of the hooks (describing exactly at which point in the transaction they take place).&#160; It also will include creating custom examples to show how the hooks should be used.<br/> \r\n  \r\n   3.QSRules documentation<br/> \r\n   A primary means for customizations to interact with Microsoft Retail Management System is through access to the set of objects that define a transaction (i.e. Transaction class, Tender class, etc.).&#160; These objects are contained in a COM DLL called QSRules that contains the business and data tiers for the POS.&#160; <br/> \r\n   The Guide includes a description of the class hierarchy, critical classes that are likely to be interacted with in customizations and key properties in the classes.&#160; The custom examples included in the Guide will interface with QSRules classes to demonstrate the proper mechanism.<br/> \r\n\r\n 4.QSBridge documentation<br/> \r\n   Most functions in the UI tier of the POS are contained in QSBridge.&#160; The same procedures that are triggered by various UI internal commands (i.e. Item Lookup) are available by call from an external function.<br/> \r\n   The Guide will include documentation of the approximately 100 functions defined in QSBridge.&#160; The documentation for each QSBridge procedure will include a brief description of the function of the procedure, the UI command that invokes it and any parameters required by the procedure.&#160; In addition, QSBridge calls will be included in the code samples included with the Guide<br/> \r\n  \r\n   5.Active Reports documentation<br/> \r\n   Microsoft Retail Management System contains a report engine that can decipher commands contained in a custom report definition (essentially a text file), and display a sophisticated report with drilldown/sort/filter capabilities.<br/> \r\n  The Guide will include commands that can be interpreted by the report engine and include sample custom reports.<br/> \r\n   \r\n   6.Receipts documentation<br/> \r\n   Microsoft Retail Management System contains a receipt engine that can decipher commands contained in an XML receipt template.&#160; The result is the generated graphical receipt that is stored in the database and printed for the customer.<br/>\r\n   The Guide will include the receipt variables that are recognized by the engine (~550) as well as the rendering commands (the receipt logic is capable of decision points and loops).&#160;&#160; The Guide will also include examples of custom receipts.<br/> \r\n  \r\n   7.HTML Status Bar Documentation<br/> \r\n   Microsoft Retail Management System contains an HTML status bar that may be displayed at the top of the screen.&#160; This provides a very useful area for customizations to display information not shown by the core product.&#160; The Guide will document how to display and update the HTML status bar as well as provide examples of status bar customizations.<br/> \r\n   \r\n   8.Internal Browser Documentation<br/> \r\n  The main transaction screen may be replaced with an internal browser to display information.&#160; The Guide will document how to display and update the browser as well as provide examples through customizations<br/> \r\n  \r\n   9.Database Description<br/> \r\n  This section will describe the tables and columns in the Store Operations and HQ databases. <br/> \r\n   10.Web Order Documentation<br/> \r\n   This section will describe how to interface Microsoft Retail Management System Store Operations with online stores to allow the downloading and processing of orders by store operations.<br/> \r\n   \r\n      Note: In order to view the contents of the unzipped Customization Guide, you may need to complete the following steps: <br/>\r\n   1. Right-click on the file downloaded and select properties.<br/>2. At the bottom of the General page there will be a message&#160; saying &quot;This file came from another computer and might be blocked to help protect this computer.&quot;<br/>3. There will be an Unlock button - click it.<br/>4. Click the Apply button.<br/>\r\n   \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "Customization Guide September 2007.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102007",
+    "downloadPreload": true
+}

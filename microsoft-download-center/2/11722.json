@@ -1,0 +1,135 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Intelligence Report volume 8 (July - December 2009)",
+    "downloadDescription": "This is the eighth volume of the Microsoft Security Intelligence Report",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report _volume_8_Key_Findings_Summary_English.xps",
+            "url": "https://download.microsoft.com/download/4/3/8/438be24d-4d58-4d9a-900a-a1fc58220813/Microsoft_Security_Intelligence_Report _volume_8_Key_Findings_Summary_English.xps",
+            "size": "4064361",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report _volume_8_Key_Findings_Summary_English.pdf",
+            "url": "https://download.microsoft.com/download/4/3/8/438be24d-4d58-4d9a-900a-a1fc58220813/Microsoft_Security_Intelligence_Report _volume_8_Key_Findings_Summary_English.pdf",
+            "size": "2557431",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft_Security_Intelligence_Report _volume8_July-Dec2009_English.xps",
+            "url": "https://download.microsoft.com/download/4/3/8/438be24d-4d58-4d9a-900a-a1fc58220813/Microsoft_Security_Intelligence_Report _volume8_July-Dec2009_English.xps",
+            "size": "42448115",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report _volume8_July-Dec2009_English.pdf",
+            "url": "https://download.microsoft.com/download/4/3/8/438be24d-4d58-4d9a-900a-a1fc58220813/Microsoft_Security_Intelligence_Report _volume8_July-Dec2009_English.pdf",
+            "size": "24387249",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "Volume 8 of the Microsoft\u00ae Security Intelligence Report provides an in-depth perspective on malicious and potentially unwanted software, software exploits, security breaches and software vulnerabilities (both in Microsoft software and in third-party software). Microsoft developed these perspectives based on detailed analysis over the past several years, with a focus on the second half of 2009.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_Security_Intelligence_Report _volume_8_Key_Findings_Summary_English.xps",
+        "Microsoft_Security_Intelligence_Report _volume_8_Key_Findings_Summary_English.pdf",
+        "Microsoft_Security_Intelligence_Report _volume8_July-Dec2009_English.xps",
+        "Microsoft_Security_Intelligence_Report _volume8_July-Dec2009_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.9 MB",
+        "2.4 MB",
+        "40.5 MB",
+        "23.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the SIR and/or the Key Findings Summary. Both are available as a PDF or an XPS. In order to view the XPS document, you will need to install the reader (included in Windows 7 and Windows Vista).",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11722",
+    "downloadPreload": true
+}

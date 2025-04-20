@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Management Pack for BizTalk Server 2013 R2",
+    "downloadDescription": "Management Pack for BizTalk Server 2013 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BizTalkMP.msi",
+            "url": "https://download.microsoft.com/download/a/6/1/a61a6e84-2adc-4c8f-a18c-c0ed47348053/BizTalkMP.msi",
+            "size": "614400",
+            "version": "7.0.2008.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Server 2013  R2 Monitoring Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/a/6/1/a61a6e84-2adc-4c8f-a18c-c0ed47348053/BizTalk Server 2013  R2 Monitoring Management Pack Guide.docx",
+            "size": "99745",
+            "version": "7.0.2008.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server 2013 R2 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components. It allows administrators to monitor health state of various BizTalk artifacts such as Send Ports, Orchestrations etc. and platform artifacts such as Host Instances (BizTalk service). Further, this mp includes performance views, diagnostic capability and alerts.<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 19 Feb 2015 - Initial English release, version 7.0.2008.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2008.0",
+    "detailsSection_file_name": [
+        "BizTalkMP.msi",
+        "BizTalk Server 2013  R2 Monitoring Management Pack Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "600.0 KB",
+        "97.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "BizTalk Server 2013 R2\r\nSystem Center Operations Manager 2012",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click the download link on this page to begin the download process for this management pack package. Save the MSI file and run it or run it directly from the download prompt. Please read the MP guide for further installation details.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45884",
+    "downloadPreload": true
+}

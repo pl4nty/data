@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Technical Reference Guide for CMMC 2.0",
+    "downloadDescription": "Microsoft Technical Reference Guide for CMMC 2.0",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Technical Reference Guide for CMMC L2 - Preview Sept 2024.docx",
+            "url": "https://download.microsoft.com/download/c/a/6/ca67ab87-4832-476e-8f01-b1572c7a740c/Microsoft Technical Reference Guide for CMMC L2 - Preview Sept 2024.docx",
+            "size": "998719",
+            "version": "1.0 Preview",
+            "datePublished": "10/17/2024 1:18:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Technical Reference Guide for CMMC (Cybersecurity Maturity Model Certification) includes implementation statements for an organization pursuing CMMC while leveraging relevant Microsoft services. This includes descriptions of relevant Microsoft services and products, and links to further implementation guidance. The guide focuses on CMMC Level 2. The intended audience are Government Personnel, Government Contractors, Managed Service Providers, Compliance Personnel, and IT Security Architects who are responsible for evaluating Microsoft services for controls alignment, and implementation to meet CMMC requirements.\r\n<br /><br />\r\nThe Microsoft Technical Reference Guide for CMMC is especially useful when paired with the Microsoft Product Placemat for CMMC. The Product Placemat is available at https://aka.ms/cmmc/productplacemat.\r\n<br /><br />\r\nDISCLAIMER: The Microsoft Technical Reference Guide for CMMC 2.0 is based upon available information to date and is provided as a sample resource only. Microsoft is not a CMMC accrediting body and thus cannot guarantee any outcome under the formal CMMC review process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0 Preview",
+    "detailsSection_file_name": [
+        "Microsoft Technical Reference Guide for CMMC L2 - Preview Sept 2024.docx"
+    ],
+    "detailsSection_file_size": [
+        "975.3 KB"
+    ],
+    "detailsSection_file_date": "10/17/2024",
+    "systemRequirementsSection": "PDF viewer and a basic understanding of the Microsoft cloud and CMMC practices",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "1. Click the Download button, save the file to a location on your computer, and view in a PDF viewer\r\n<br />\r\n2. Share feedback at https://aka.ms/cmmc/techrefguidefeedback",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft and CMMC",
+            "url": "https://aka.ms/cmmc"
+        },
+        {
+            "title": "microsoft Technical Reference Guide Feedback",
+            "url": "https://aka.ms/cmmc/techrefguidefeedback"
+        },
+        {
+            "title": "microsoft Product Placemat for CMMC",
+            "url": "https://aka.ms/cmmc/productplacemat"
+        },
+        {
+            "title": "microsoft CMMC Acceleration Program Updates",
+            "url": "https://aka.ms/CMMCAccelerationProgramUpdate"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103401",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Pablo Castro on Astoria",
+    "downloadDescription": "Pablo Castro from the SQL Server Product Group at Microsoft talks about his work with Astoria, an infrastructure for bringing web technologies and data sources together. Astoria uses the Entity Framework, which Pablo is also involved with.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071113PCastro.zip",
+            "url": "https://download.microsoft.com/download/6/7/8/678c3634-6005-4c48-9dd3-4fc40f808749/20071113PCastro.zip",
+            "size": "49150915",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Pablo is a Technical Lead in the Microsoft SQL Server team. He has contributed extensively to several areas of SQL Server and the .NET Framework including SQL-CLR integration, database type-system extensibility, the TDS client-server protocol and the ADO.NET API. Pablo is currently involved with the development of the ADO.NET Entity Framework and also leads the Astoria project, looking at how to bring data and web technologies together. Before joining Microsoft Pablo worked in various companies on a broad set of topics that range from distributed inference systems for credit scoring/risk analysis to collaboration and groupware applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071113PCastro.zip"
+    ],
+    "detailsSection_file_size": [
+        "46.9 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20131",
+    "downloadPreload": true
+}

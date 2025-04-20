@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Group Policy Inventory (GPInventory.exe)",
+    "downloadDescription": "Group Policy Inventory (GPInventory.exe) allows administrators to collect Group Policy and other information from any number of computers in their network.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "gpinventory.msi",
+            "url": "https://download.microsoft.com/download/8/e/1/8e11df5e-10b6-4741-9eed-516a2ef54ddd/gpinventory.msi",
+            "size": "315904",
+            "version": "1.0.1361.27800",
+            "datePublished": "7/15/2024 3:11:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Group Policy Inventory (GPInventory.exe) allows administrators to collect Group Policy and other information from any number of computers in their network by running multiple Resultant Set of User Policy (RSOP) or Windows Management Instrumentation (WMI) queries. The query results can be exported to either an XML or a text file, and can be analyzed in Excel.<b>Typical usage scenarios</b><i>RSOP Queries:</i><ul><li>Do a software inventory for users and computers in a domain or OU</li><li>See which applications are installed on computers in the domain</li><li>Track the rollout of new GPOs on a domain</li><li>Find computers that have not downloaded and applied new GPOs</li></ul><i>WMI Queries:</i><ul><li>Do a complete hardware inventory (processor, memory, hard disk space, etc) for all computers in the domain</li><li>Scan all computers to see if a particular hotfix is applied</li><li>See the amount of disk space that is available on computers</li><li>Test a WMI filter before implementing it in the domain</li></ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1361.27800",
+    "detailsSection_file_name": [
+        "gpinventory.msi"
+    ],
+    "detailsSection_file_size": [
+        "308.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and use GPInventory.exe on any of the following platforms:<UL><LI>Windows 2000</LI><LI>Windows XP</LI><LI>Windows Server 2003</LI></UL><BR/><B>Additional Requirements:</B><UL><LI>.NET Framework version 1.0 or later</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://go.microsoft.com/?linkid=2847938"
+        },
+        {
+            "title": "newsgroups for Windows Server 2003",
+            "url": "http://go.microsoft.com/?linkid=2847939"
+        },
+        {
+            "title": "windows Server 2003 TechCenter",
+            "url": "http://go.microsoft.com/?linkid=2847940"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://go.microsoft.com/?linkid=2847941"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14126",
+    "downloadPreload": true
+}

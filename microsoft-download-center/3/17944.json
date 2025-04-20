@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "PerformancePoint 2010 and PowerPivot",
+    "downloadDescription": "Integration between PerformancePoint Services and PowerPivot for Excel",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PerformancePoint Services and PowerPivot for Excel.docx",
+            "url": "https://download.microsoft.com/download/b/2/e/b2e414aa-86f2-413b-8f22-e7d335b71fe3/PerformancePoint Services and PowerPivot for Excel.docx",
+            "size": "29284633",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document covers the basics of integration between PerformancePoint Services in Microsoft SharePoint Server 2010 and Microsoft SQL Server 2008 R2 PowerPivot. It describes the basics of using a PowerPivot model in PerformancePoint and expands on the issues one should expect in using the two products in conjunction with one another.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PerformancePoint Services and PowerPivot for Excel.docx"
+    ],
+    "detailsSection_file_size": [
+        "27.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Microsoft Office Word 2007. You can also use Office Word 2003 or Word XP and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=78517\">Microsoft Office Compatibility Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17944",
+    "downloadPreload": true
+}

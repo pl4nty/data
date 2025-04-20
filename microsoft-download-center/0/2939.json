@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Accelerating Excel 2010 with Windows HPC Server 2008 R2: Building VBA applications and workbooks for a Windows HPC Cluster",
+    "downloadDescription": "This article and accompanying Excel 2010 workbook and VBA samples address how to build workbooks that can run in parallel on a Windows HPC 2008 R2 cluster.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ExcelHPC_BuildingVBAApplications.docx",
+            "url": "https://download.microsoft.com/download/7/d/a/7da05ca0-386e-4cc4-8cab-8723111e1cbd/ExcelHPC_BuildingVBAApplications.docx",
+            "size": "621829",
+            "version": "July 2010",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ExcelHPC_BuildingVBAApplications.zip",
+            "url": "https://download.microsoft.com/download/7/d/a/7da05ca0-386e-4cc4-8cab-8723111e1cbd/ExcelHPC_BuildingVBAApplications.zip",
+            "size": "167362",
+            "version": "July 2010",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Note: </b> Article and samples were updated for the RC release of Windows HPC 2008 R2. For more information about updating Excel solutions from Beta 2 to RC, see the <a href=\"http://blogs.msdn.com/b/accelerating_things/archive/2010/07/06/excel-workbook-offloading-beta-transition-guide.aspx\">Excel Workbook Offloading Beta Transition Guide</a>.<br /><br />\r\n\r\nHPC Services for Excel supports a variety of new programming models that allow you to run Excel calculations on an HPC cluster.  In this article we\u2019ll discuss how to use Excel VBA macros to build workbooks that utilize an HPC cluster to run calculations in parallel. To support HPC Services for Excel, your workbook needs to include a set of macros that implement the asynchronous functions.  This article describes the macro framework and how to define calculations within the framework.  This article includes walkthroughs of how to build a workbook from scratch, and of how to convert an existing workbook to run on a cluster.<br /><br />\r\nThe zipped file that is available in this download includes sample Excel 2010 workbooks and .bas files. The .bas files include skeleton macro files you can import into your workbooks to simplify the development process. The samples are referenced in the walkthrough sections of the article. For example, the ConvertiblePricing workbook is used to demonstrate how to convert an existing workbook to use the HPC macro framework. <br /><br />\r\n<b>Note:</b> The workbooks contain macros. When you open the workbooks, you may see a security warning indicating that the macros have been disabled. You can enable the macros by clicking \"Enable Content\".<br /><br />\r\n<b>Note:</b> Microsoft provides programming examples for illustration only, without warranty either expressed or implied, including, but not limited to, the implied warranties of merchantability and/or fitness for a particular purpose.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2010",
+    "detailsSection_file_name": [
+        "ExcelHPC_BuildingVBAApplications.docx",
+        "ExcelHPC_BuildingVBAApplications.zip"
+    ],
+    "detailsSection_file_size": [
+        "607.3 KB",
+        "163.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word of Word Viewer,\r\nMicrosoft Excel 2010,\r\nWindows HPC Server 2008 R2 cluster\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "white Papers for Windows HPC 2008 R2",
+            "url": "http://technet.microsoft.com/en-us/library/ff627850(WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2939",
+    "downloadPreload": true
+}

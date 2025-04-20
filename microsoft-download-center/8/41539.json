@@ -1,0 +1,287 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Microsoft Windows Server 2012 R2 Message Queuing 6.3",
+    "downloadDescription": "System Center 2012 Management Pack for Microsoft Windows Server 2012 R2 MSMQ 6.3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.TRK.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.TRK.msi",
+            "size": "712704",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.SVE.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.SVE.msi",
+            "size": "712704",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.RUS.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.RUS.msi",
+            "size": "765952",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.PTG.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.PTG.msi",
+            "size": "684032",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.PTB.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.PTB.msi",
+            "size": "724992",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.PLK.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.PLK.msi",
+            "size": "720896",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.NLD.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.NLD.msi",
+            "size": "684032",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.KOR.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.KOR.msi",
+            "size": "880640",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.JPN.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.JPN.msi",
+            "size": "700416",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.ITA.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.ITA.msi",
+            "size": "733184",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.HUN.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.HUN.msi",
+            "size": "733184",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.FRA.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.FRA.msi",
+            "size": "716800",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.ESN.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.ESN.msi",
+            "size": "692224",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.DEU.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.DEU.msi",
+            "size": "704512",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.CSY.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.CSY.msi",
+            "size": "737280",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.CHT.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.CHT.msi",
+            "size": "692224",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for MSMQ.CHS.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for MSMQ.CHS.msi",
+            "size": "724992",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Message Queuing.msi",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/SC Management Pack for Message Queuing.msi",
+            "size": "757760",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for MSMQ for Windows Server 2012 R2.docx",
+            "url": "https://download.microsoft.com/download/9/1/5/915f1081-22da-4dec-9bb7-54f99e4af1df/Management Pack Guide for MSMQ for Windows Server 2012 R2.docx",
+            "size": "100946",
+            "version": "7.1.10148.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "System Center 2012 Management Pack for Microsoft Windows Server 2012 R2 MSMQ 6.3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10148.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for MSMQ.TRK.msi",
+        "SC Management Pack for MSMQ.SVE.msi",
+        "SC Management Pack for MSMQ.RUS.msi",
+        "SC Management Pack for MSMQ.PTG.msi",
+        "SC Management Pack for MSMQ.PTB.msi",
+        "SC Management Pack for MSMQ.PLK.msi",
+        "SC Management Pack for MSMQ.NLD.msi",
+        "SC Management Pack for MSMQ.KOR.msi",
+        "SC Management Pack for MSMQ.JPN.msi",
+        "SC Management Pack for MSMQ.ITA.msi",
+        "SC Management Pack for MSMQ.HUN.msi",
+        "SC Management Pack for MSMQ.FRA.msi",
+        "SC Management Pack for MSMQ.ESN.msi",
+        "SC Management Pack for MSMQ.DEU.msi",
+        "SC Management Pack for MSMQ.CSY.msi",
+        "SC Management Pack for MSMQ.CHT.msi",
+        "SC Management Pack for MSMQ.CHS.msi",
+        "SC Management Pack for Message Queuing.msi",
+        "Management Pack Guide for MSMQ for Windows Server 2012 R2.docx"
+    ],
+    "detailsSection_file_size": [
+        "696.0 KB",
+        "696.0 KB",
+        "748.0 KB",
+        "668.0 KB",
+        "708.0 KB",
+        "704.0 KB",
+        "668.0 KB",
+        "860.0 KB",
+        "684.0 KB",
+        "716.0 KB",
+        "716.0 KB",
+        "700.0 KB",
+        "676.0 KB",
+        "688.0 KB",
+        "720.0 KB",
+        "676.0 KB",
+        "708.0 KB",
+        "740.0 KB",
+        "98.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The MSMQ 6.3 Management Pack for Operations Manager is designed for the following versions of System Center Operations Manager.\r\n\u2022 System Center Operations Manager 2012\r\n\u2022 System Center Operations Manager 2012 SP1\r\n\u2022 System Center Operations Manager 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41539",
+    "downloadPreload": true
+}

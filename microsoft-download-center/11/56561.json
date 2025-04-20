@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 1801+ Service Manager Authoring Tool",
+    "downloadDescription": "System Center 1801+ Service Manager Authoring Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM_Auth_1801.exe",
+            "url": "https://download.microsoft.com/download/3/f/a/3fa6b86a-72e9-46d6-aa6c-f7fbe0fde4fc/SCSM_Auth_1801.exe",
+            "size": "1644002776",
+            "version": "7.7.16.0",
+            "datePublished": "7/15/2024 4:51:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The System Center 1801+ Service Manager Authoring Tool is a tool for customization and extension of the built in functionality in System Center Service Manager. This release supports modifying existing process management packs and creating new management packs that define extensions to the Service Manager database for tracking additional information, customizations of forms or new forms, and new workflows. This release is available in 10 languages.\r\n\r\n<br/>\r\n<br/>\r\nThis release is compatible with System Center 1801- Service Manager. It contains the final set of features for this version, including: \r\n<ul>\r\n<li>Form customization, supporting an extended library of controls</li>\r\n<li>Creating new simple forms to support custom classes</li>\r\n<li>Class editor for creating and extending classes and relationships in the Service Manager database</li>\r\n<li>Creation of workflows with detailed trigger criteria and extensible library of actions</li>\r\n<li>Management pack support including sealing</li>\r\n<li>Class Browser and Form Browser to easily locate classes and forms regardless of management pack</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.7.16.0",
+    "detailsSection_file_name": [
+        "SCSM_Auth_1801.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.5 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 1801 Service Manager and future releases",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Install Microsoft Visual C++ 2012 redistributable before deploying Service Manager 2016 Authoring Tool.</li>\r\n<li>Download the self-extracing package for Service Manager 1801+ Authoring Tool and save it locally.</li>\r\n<li>Double-click the executable to extract the content.</li>\r\n<li>Execute the \"Setup.exe\" in the extracted content, and follow the instructions of setup wizard.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56561",
+    "downloadPreload": true
+}

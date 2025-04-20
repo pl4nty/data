@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "What's new in Skype TX version X",
+    "downloadDescription": "and a short description",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Whats_New_Skype_TX_2024_100126.html",
+            "url": "https://download.microsoft.com/download/9/1/1/911e7203-231f-4cb1-801e-00e38b61a4d4/Whats_New_Skype_TX_2024_100126.html",
+            "size": "438",
+            "version": "2024.10.01.10",
+            "datePublished": "7/15/2024 3:03:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "What\u2019s new in Skype TX \r\n\r\nLatest version of Skype TX channel 2.17.125.3 and Skype TX controller app 2.17.118.1 is currently available for download. These versions includes support for new Next Generation Skype clients along with a number of fixes and some UI changes listed below.\r\n\r\nChannel:\r\n1. Enhancement to available diagnostic information.\r\n2. Support for full 1080p video return.\r\n3. Support for incoming 1080p with capable devices.\r\n4. Support for new features exposed in Skype TX controller app.\r\n\r\nController:\r\n1. Enhanced diagnostic information in the Skype TX information pane.\r\n2. Simple one button call back capability.\r\n3. Auto selection of available channel.\r\n4. Support for 23 languages.\r\n5. Avatar support in the contact list.\r\n6. Improved version management.\r\n7. Simplified audio processing control.\r\n**Controller downloads available here\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2024.10.01.10",
+    "detailsSection_file_name": [
+        "Whats_New_Skype_TX_2024_100126.html"
+    ],
+    "detailsSection_file_size": [
+        "438 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "system reqs",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Let them know how easy it is to upgrade.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54306",
+    "downloadPreload": true
+}

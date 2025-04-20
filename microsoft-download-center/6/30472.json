@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 7 (KB2721923)",
+    "downloadDescription": "Resolves an issue that might occur with the Registry Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2721923-v2-x64.msu",
+            "url": "https://download.microsoft.com/download/b/1/5/b151d3ad-0038-44bd-81b1-796110a8bda1/Windows6.1-KB2721923-v2-x64.msu",
+            "size": "254605",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB2721923-v2-x64.cab",
+            "url": "https://download.microsoft.com/download/b/1/5/b151d3ad-0038-44bd-81b1-796110a8bda1/Windows6.1-KB2721923-v2-x64.cab",
+            "size": "81011",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2721923-v2-x86.msu",
+            "url": "https://download.microsoft.com/download/b/1/5/b151d3ad-0038-44bd-81b1-796110a8bda1/Windows6.1-KB2721923-v2-x86.msu",
+            "size": "248456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2721923-v2-x86.cab",
+            "url": "https://download.microsoft.com/download/b/1/5/b151d3ad-0038-44bd-81b1-796110a8bda1/Windows6.1-KB2721923-v2-x86.cab",
+            "size": "75157",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2721923 fixes the following issue:\r\n<br></br>\r\nWhere the registry filter does not take the customer registry setting correctly.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2721923",
+        "name": "KB2721923"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2721923-v2-x64.msu",
+        "Windows6.1-KB2721923-v2-x64.cab",
+        "Windows6.1-KB2721923-v2-x86.msu",
+        "Windows6.1-KB2721923-v2-x86.cab"
+    ],
+    "detailsSection_file_size": [
+        "248.6 KB",
+        "79.1 KB",
+        "242.6 KB",
+        "73.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded POSReady 7",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>POSReady7 image</b>: \r\n<br></br>\r\nA) Executing the appropriate msu file\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2721923-v2-x86.msu</li>\r\n<li>64bit Windows6.1-KB2721923-v2-x64.msu</li>\r\n</ul>\r\nOR\r\n<br></br>\r\nB) Installing the cab file via the command line with administrator privileges: \u201cDISM /online /add-package\"\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2721923-x86.cab</li>\r\n<li>64bit Windows6.1-KB2721923-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30472",
+    "downloadPreload": true
+}

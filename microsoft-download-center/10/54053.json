@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SIDH for Open SSL",
+    "downloadDescription": "This release contains a patch for OpenSSL 1.0.2g to support the Supersingular Isogeny-based Diffie-Hellman (SIDH) key exchange [1], using the implementation of Microsoft Research [2]. This scheme provides approximately 128 bits of quantum security and 192 bits of classical security.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sidh-for-openssl-1.0.2g.patch",
+            "url": "https://download.microsoft.com/download/4/3/1/4316f685-ce36-43ff-b2cf-787dd811e5f6/sidh-for-openssl-1.0.2g.patch",
+            "size": "509712",
+            "version": "v1",
+            "datePublished": "7/15/2024 4:39:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The library specifies four ciphersuites\r\n* SIDH-ECDSA-AES128-GCM-SHA256\r\n* SIDH-RSA-AES128-GCM-SHA256\r\n* SIDH-ECDHE-ECDSA-AES128-GCM-SHA256\r\n* SIDH-ECDHE-RSA-AES128-GCM-SHA256\r\n\r\nThe first two consist of a SIDH key exchange, as described in [1], authentication based on ECDSA or RSA digital signatures, authenticated encryption (with associated data) (AEAD) \r\nbased on AES-128 in GCM (Galois Counter Mode); and key derivation and hashing based on SHA-256. The last two offer hybrid ciphersuites that are as above, except the key exchange \r\nincludes both SIDH and ECDH key exchange; the pre-master secret is the concatenation of the ECDH shared secret and the SIDH shared secret. All these ciphersuites require TLSv1.2 because \r\nof the use of AES-GCM.\r\n\r\nREFERENCES\r\n----------\r\n\r\n[1] Craig Costello, Patrick Longa, and Michael Naehrig (Microsoft Research). \"Efficient algorithms for supersingular isogeny Diffe-Hellman.\" https://eprint.iacr.org/2016/413.pdf.\r\n[2] http://research.microsoft.com/en-us/projects/sidh/\r\n[3] https://openssl.org/source/old/1.0.2/openssl-1.0.2g.tar.gz",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v1",
+    "detailsSection_file_name": [
+        "sidh-for-openssl-1.0.2g.patch"
+    ],
+    "detailsSection_file_size": [
+        "497.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>This patch is for OpenSSL 1.0.2g \u2013 it is cross-platform to the OS (supports Windows, Unix, Mac) </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Unix",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54053",
+    "downloadPreload": true
+}

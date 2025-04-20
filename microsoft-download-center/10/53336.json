@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "OneNote Diagnostics Tool",
+    "downloadDescription": "The OneNote Client Diagnostics Tool enables users to collect and send Diagnostic Logs to the OneNote team. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "onenotediagnosticsinstaller.msi",
+            "url": "https://download.microsoft.com/download/9/a/7/9a798d60-ccb1-4b90-b612-8ea3745b7cbe/onenotediagnosticsinstaller.msi",
+            "size": "1835008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The OneNote Client Diagnostics Tool enables users to collect and send Diagnostics Logs from within OneNote to help the Support team when working with Customers on issues they are experiencing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "onenotediagnosticsinstaller.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7/8.1/10, OneNote 2013/2015 desktop clients, OneNote Universal",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Download the file by clicking the Download button above\r\n2. Double-click the onenotediagnosticsinstaller.msi program file on your hard disk to start the Setup program\r\n3. Follow the instructions on the screen to complete the installation\r\n4. Run OneNoteDiagnostics.exe from C:\\Program Files (x86)\\OneNoteDiagnostics",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53336",
+    "downloadPreload": true
+}

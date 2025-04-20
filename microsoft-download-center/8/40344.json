@@ -1,0 +1,165 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2013 for Microsoft Office Outlook (Outlook Client)",
+    "downloadDescription": "Install Microsoft Dynamics CRM 2013 for Outlook, also known as the Outlook client. CRM for Outlook enables access to your CRM data through Outlook. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Client-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/5/8/558abead-65db-4cd0-9ca8-420a631faf91/CRM2013-Client-ENU-amd64.exe",
+            "size": "164137176",
+            "version": "06.00.0000.0809",
+            "datePublished": "7/15/2024 3:17:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Client-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/5/5/8/558abead-65db-4cd0-9ca8-420a631faf91/CRM2013-Client-ENU-i386.exe",
+            "size": "161303448",
+            "version": "06.00.0000.0809",
+            "datePublished": "7/15/2024 3:17:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This download installs Microsoft Dynamics CRM 2013 for Microsoft Office Outlook.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06.00.0000.0809",
+    "detailsSection_file_name": [
+        "CRM2013-Client-ENU-amd64.exe",
+        "CRM2013-Client-ENU-i386.exe"
+    ],
+    "detailsSection_file_size": [
+        "156.5 MB",
+        "153.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Running Microsoft Dynamics CRM 2013 on a computer that has less than the recommended requirements may result in inadequate performance. For information, see: \r\n<ul><li><a href=\"http://go.microsoft.com/fwlink/?LinkId=317779\">Microsoft Dynamics CRM 2013 for Outlook hardware requirements</a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=317782\">Microsoft Dynamics CRM 2013 for Outlook software requirements</a></li></ul>\r\n\r\nMicrosoft Dynamics CRM 2013 for Outlook can be installed on computers that have any combination of the following: <br/><br/>\r\nWindows operating systems:\r\n<ul>\r\n<li>Windows 8 (64- or 32-bit)</li>\r\n<li>Windows 7 (64- or 32-bit)\r\n</li>\r\n<li>Windows Vista (64- or 32-bit)\r\n</li>\r\n<li>Windows Server 2008 or Windows Server 2012 when running with Remote Desktop Services (formerly Terminal Services) </li>\r\n</ul>\r\n\r\nMicrosoft Office:\r\n<ul>\r\n<li>Microsoft Office 2016 (64- or 32-bit) </li>\r\n<li>Microsoft Office 2013 (64- or 32-bit) </li>\r\n<li>Microsoft Office 2010 (64- or 32-bit) </li>\r\n<li>Microsoft Office 2007 (32-bit) </li>\r\n</ul>\r\n\r\nInternet Explorer:\r\n<ul>\r\n<li>Internet Explorer 10 </li>\r\n<li>Internet Explorer 9 </li>\r\n<li>Internet Explorer 8</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>.</li>\r\n<li>When the <b>File Download</b> dialog box appears, click <b>Save</b> to save the file to your computer.</li>\r\n<li>When you are ready to install the product, double-click the executable file, and then follow the instructions on the screen.</li>\r\n</ol>",
+    "additionalInformationSection": "For installation instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=317780\">Microsoft Dynamics CRM 2013 for Outlook Installation Instructions</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2013 updates and hotfixes",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=314118"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2013 for Outlook Installation Instructions",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=317780"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40344",
+    "downloadPreload": true
+}

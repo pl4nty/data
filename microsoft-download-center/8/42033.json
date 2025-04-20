@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Attestation of Compliance - Service Providers - Payment Card Industry (PCI) Data Security Standard",
+    "downloadDescription": "PCI AoC Document for Microsoft Azure Feb 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure PCI AOC Feb 2015.pdf",
+            "url": "https://download.microsoft.com/download/7/1/e/71e02a19-d1a4-448f-8cea-d6a19398abda/Azure PCI AOC Feb 2015.pdf",
+            "size": "479486",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:39:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Attestation of Compliance for Microsoft Azure as of Feb 2015.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Azure PCI AOC Feb 2015.pdf"
+    ],
+    "detailsSection_file_size": [
+        "468.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download file and open with Adobe Reader or other compatible viewer application.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42033",
+    "downloadPreload": true
+}

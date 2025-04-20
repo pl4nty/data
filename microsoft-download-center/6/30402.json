@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Services in SharePoint Server 2013",
+    "downloadDescription": "This illustration provides information about services that are available in SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "svs-single-farm-sharepoint-services-2013.pdf",
+            "url": "https://download.microsoft.com/download/7/0/3/703fd10d-75c3-4f41-86de-add6f9148cd7/svs-single-farm-sharepoint-services-2013.pdf",
+            "size": "1198473",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "svs-single-farm-sharepoint-services-2013.vsd",
+            "url": "https://download.microsoft.com/download/7/0/3/703fd10d-75c3-4f41-86de-add6f9148cd7/svs-single-farm-sharepoint-services-2013.vsd",
+            "size": "3164672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "In addition to listing available services in SharePoint Server 2013, this illustration also includes diagrams that illustrate the services infrastructure. Architectural examples help you visual services in various example environments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "svs-single-farm-sharepoint-services-2013.pdf",
+        "svs-single-farm-sharepoint-services-2013.vsd"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010 or Microsoft Visio 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30402",
+    "downloadPreload": true
+}

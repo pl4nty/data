@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual C++ UWP Desktop Runtime Package",
+    "downloadDescription": "UWPDesktop Downloadable AppX Package ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Readme.txt",
+            "url": "https://download.microsoft.com/download/4/7/c/47c6134b-d61f-4024-83bd-b9c9ea951c25/Readme.txt",
+            "size": "273",
+            "version": "14.0.29231.0",
+            "datePublished": "7/15/2024 4:26:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a downloadable file containing the Microsoft Visual C++ UWP Desktop Runtime Package for various architectures.\r\nThe recommended way to obtain these packages is by creating a reference to it in your application's manifest; in such case it will be automatically downloaded from the store. \r\nHowever, in a few scenarios; such as Windows Sandbox (https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-architecture), where there's no store download support, so developers may choose to pre-download this set of packages and manually install it.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.29231.0",
+    "detailsSection_file_name": [
+        "Readme.txt"
+    ],
+    "detailsSection_file_size": [
+        "273 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 or Windows Server 2019\r\nOne of the supported architectures: x86, x64, ARM or ARM64\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2019",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download and copy the appx relevant to your architecture to the device or machine where it's needed\r\nInstall the appx from the, either by double clicking (Windows 10), or using Powershell Add-AppxPackage cmdlet (https://docs.microsoft.com/en-us/powershell/module/appx/add-appxpackage?view=win10-ps)\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102159",
+    "downloadPreload": true
+}

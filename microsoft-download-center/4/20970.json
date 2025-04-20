@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "WCF, WF and .NET 3.5 Whitepapers by David Chappell",
+    "downloadDescription": "Collection of whitepapers authored by David Chappell on .NET Framework 3.5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Introducing_WF_in_NET_Framework_35_v1.doc",
+            "url": "https://download.microsoft.com/download/f/3/2/f32ff4c6-174f-4a2f-a58f-ed28437d7b1e/Introducing_WF_in_NET_Framework_35_v1.doc",
+            "size": "1051648",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WCF_Diversity_Paper_v1.doc",
+            "url": "https://download.microsoft.com/download/f/3/2/f32ff4c6-174f-4a2f-a58f-ed28437d7b1e/WCF_Diversity_Paper_v1.doc",
+            "size": "2386432",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Introducing_NET_Framework_35_v1.doc",
+            "url": "https://download.microsoft.com/download/f/3/2/f32ff4c6-174f-4a2f-a58f-ed28437d7b1e/Introducing_NET_Framework_35_v1.doc",
+            "size": "3262464",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Introducing_WCF_in_NET_Framework_35_v1.doc",
+            "url": "https://download.microsoft.com/download/f/3/2/f32ff4c6-174f-4a2f-a58f-ed28437d7b1e/Introducing_WCF_in_NET_Framework_35_v1.doc",
+            "size": "2109440",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Collection of whitepapers authored by David Chappell on .NET Framework 3.5. This includes an introduction to Windows Communication Foundation, an introduction to Windows Workflow Foundation and an overall introduction to .NET Framework 3.5. There's also a paper describing the diverse array of communications protocols and transports supported by WCF.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Introducing_WF_in_NET_Framework_35_v1.doc",
+        "WCF_Diversity_Paper_v1.doc",
+        "Introducing_NET_Framework_35_v1.doc",
+        "Introducing_WCF_in_NET_Framework_35_v1.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "2.3 MB",
+        "3.1 MB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or the Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download and review",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20970",
+    "downloadPreload": true
+}

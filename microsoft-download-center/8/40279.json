@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded 8.1 Industry Release Notes",
+    "downloadDescription": "Windows Embedded 8.1 Industry Release Notes for Windows Embedded 8.1 Industry Pro & Enterprise",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Industry 8.1 Release Notes.htm",
+            "url": "https://download.microsoft.com/download/b/2/a/b2ac66c0-9805-4abe-8805-f9ddbb4e78a2/Industry 8.1 Release Notes.htm",
+            "size": "15467",
+            "version": "1",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides Windows Embedded 8.1 Industry Release Notes for\r\n<ul>\r\n<li>Windows Embedded 8.1 Industry Pro</li>\r\n<li>Windows Embedded 8.1 Industry Enterprise</li>\r\n</ul>\r\nWindows Embedded 8.1 Industry extends Windows 8.1 to a range of edge devices across retail, manufacturing, healthcare and any other industries in which powerful line-of-business applications and the ability to perform a specialized function in a secure and reliable way is paramount.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Industry 8.1 Release Notes.htm"
+    ],
+    "detailsSection_file_size": [
+        "15.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded 8.1 Industry Pro\r\n<br></br>\r\nWindows Embedded 8.1 Industry Enterprise\r\n<br></br>\r\n<br></br>\r\n<i>To browse the Release Notes file you will need a Web browser or other application that allows you to view htm files.</i>",
+    "systemRequirementsSection_supportedOS": [
+        "Embedded 8 Industry"
+    ],
+    "installInstructionSection": "Click the Download button on this page to start the download.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Technical references",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/developers.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40279",
+    "downloadPreload": true
+}

@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Malware Protection Center Threat Report: Rootkits",
+    "downloadDescription": "Rootkits provide stealth capabilities  to malware. This Microsoft Malware Protection Center threat report examines how attackers use rootkits, and how rootkits function on affected computers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Malware Protection Center Threat Report Rootkits_English.pdf",
+            "url": "https://download.microsoft.com/download/d/2/c/d2c47748-0310-4d6f-ac72-3d298be58108/Microsoft Malware Protection Center Threat Report Rootkits_English.pdf",
+            "size": "559456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Rootkits provide stealth capabilities  to malware. This Microsoft Malware Protection Center report examines how attackers use rootkits, and how rootkits function on affected computers. The report describes some of the more prevalent malware families that use rootkit functionality in the wild today, before presenting some recommendations that can help organizations mitigate the risk from rootkits.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Malware Protection Center Threat Report Rootkits_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "546.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34797",
+    "downloadPreload": true
+}

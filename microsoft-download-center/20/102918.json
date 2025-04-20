@@ -1,0 +1,246 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Service Desk 4.2 for Microsoft Dynamics 365",
+    "downloadDescription": "Download the client application and sample packages for Unified Service Desk.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics365-USD-4.2.0.71-amd64.exe",
+            "url": "https://download.microsoft.com/download/d/1/0/d10b7215-f7a6-418a-a2b6-ee0d463dd366/Dynamics365-USD-4.2.0.71-amd64.exe",
+            "size": "402025248",
+            "version": "4.2",
+            "datePublished": "9/27/2024 10:59:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics365-USD-4.2.0.71-i386.exe",
+            "url": "https://download.microsoft.com/download/d/1/0/d10b7215-f7a6-418a-a2b6-ee0d463dd366/Dynamics365-USD-4.2.0.71-i386.exe",
+            "size": "380688416",
+            "version": "4.2",
+            "datePublished": "9/27/2024 10:59:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics365-USD-PackageDeployer-4.2.0.71.exe",
+            "url": "https://download.microsoft.com/download/d/1/0/d10b7215-f7a6-418a-a2b6-ee0d463dd366/Dynamics365-USD-PackageDeployer-4.2.0.71.exe",
+            "size": "140935920",
+            "version": "4.2",
+            "datePublished": "9/27/2024 10:59:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        }
+    ],
+    "detailsSection": "Unified Service Desk for Microsoft Dynamics 365 provides a configuration-based framework for quickly building agent applications for call centers. You can aggregate customer information from different areas in Microsoft Dynamics 365 into a single desktop and get a 360\u00b0 view of customer interactions. For more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=856273\">Unified Service Desk Guide</a>.<br/><br/>\r\nThis download contains the setup for the following:\r\n<ul>\r\n<li>Unified Service Desk client application</li>\r\n<li>Unified Service Desk sample packages</li>\r\n</ul>\r\nThe right to use Unified Service Desk is limited to the user or device to whom the qualifying Professional Use Client Access License (CAL) is assigned.  You may not access or use Unified Service Desk after your Software Assurance or Enhancement Plan coverage expires.  For Product Use Rights, click <a href=\"http://www.microsoft.com/licensing/products/products.aspx\">here</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.2",
+    "detailsSection_file_name": [
+        "Dynamics365-USD-4.2.0.71-amd64.exe",
+        "Dynamics365-USD-4.2.0.71-i386.exe",
+        "Dynamics365-USD-PackageDeployer-4.2.0.71.exe"
+    ],
+    "detailsSection_file_size": [
+        "383.4 MB",
+        "363.1 MB",
+        "134.4 MB"
+    ],
+    "detailsSection_file_date": "9/27/2024",
+    "systemRequirementsSection": "Unified Service Desk requires an instance of Microsoft Dynamics 365 for Customer Engagement apps and Microsoft Dynamics 365 for Customer Engagement apps (on-premises).<br/><br/>\r\nFor detailed information about the minimum system requirements for installing the Unified Service Desk client application and deploying the sample packages, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=856274\">Unified Service Desk system requirements</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows 8",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click <b>Download</b>.</li>\r\n<li>Choose the file that you want to download, and click <b>Next</b>.</li> \r\n<li>You'll be prompted to run or save the file. Click <b>Save</b> to save the file to your computer.</li>\r\n<ul>\r\n<li>If you downloaded the Dynamics365-USD-i386.exe or Dynamics365-USD-amd64.exe file, run the file to install the Unified Service Desk client application.</li>\r\n<li>If you downloaded the Unified Service Desk package executable file, run the executable file to extract the contents of the package. Next, run the PackageDeployer.exe file in the extracted folder to select and deploy a Unified Service Desk package.</li>\r\n</ul><br/>\r\nFor more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=856275\">Install and Deploy Unified Service Desk</a>.\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102918",
+    "downloadPreload": true
+}

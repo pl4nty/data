@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - It's the ALT.NET Show!",
+    "downloadDescription": "Jeremy Miller and David Laribee discuss their work with ALT.NET, a \"self-organizing, ad-hoc community of developers bound by a desire to improve ourselves, challenge assumptions, and help each other pursue excellence in the practice of software development.\"",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080415AltNet.zip",
+            "url": "https://download.microsoft.com/download/9/8/9/98917658-fe2a-4e3f-a5cb-c28b8a7fc45d/20080415AltNet.zip",
+            "size": "40586006",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Jeremy Miller is the chief architect for Bayern Software in Austin, TX. Jeremy began his IT career writing \"Shadow IT\" applications to automate his engineering documentation, then wandered into software development because it looked like more fun. Jeremy previously worked as a systems architect building mission critical supply chain software for a Fortune 100 company and learned agile development practices as a .Net consultant at ThoughtWorks, one of the pioneers of agile development.<br />\n<br />\nDavid Laribee is President of Xclaim Software, an ISV offering a platform for building document management applications. He has 10+ years experience designing, developing, and architecting enterprise applications with Microsoft technologies. David has worked with the .NET Framework since the zero-day in internal IT, product development, consulting, and rapid prototyping contexts across a wide variety of industries.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080415AltNet.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.7 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11768",
+    "downloadPreload": true
+}

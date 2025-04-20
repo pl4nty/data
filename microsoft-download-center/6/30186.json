@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Online security and compliance planning guide",
+    "downloadDescription": "This document is designed to help readers understand the key compliance and security considerations associated with planning for a deployment of Microsoft Dynamics CRM Online in environments that may include enterprise directory integration services such as directory synchronization and single sign-on.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics CRM Online security and compliance planning guide.pdf",
+            "url": "https://download.microsoft.com/download/b/4/a/b4a6fde3-a5ed-43a8-99cb-e218e51ae106/Microsoft Dynamics CRM Online security and compliance planning guide.pdf",
+            "size": "442819",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:15:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With on-premises deployments of Microsoft Dynamics CRM, customers have control of and responsibility for their environment from end-to-end. However, customers contemplating a move to the cloud with Microsoft Dynamics CRM Online often have questions about security, data protection, privacy, and data ownership. Microsoft takes these concerns seriously and has applied its years of cloud and on-premises experience with security and privacy to development of its online services offerings, including Microsoft Dynamics CRM Online.<br />\r\nThe Microsoft Dynamics CRM Online service provides secure access across platforms and devices, with anti-spam and antivirus technologies that are automatically updated to protect against the latest threats. The security features and services associated with Microsoft Dynamics CRM Online are built in, which can help to reduce the time and cost associated with securing customer IT systems. At the same time, Microsoft Dynamics CRM Online enables administrators to easily control permissions, policies, and features through online administration and management consoles. This means that customers can configure the service to meet specific security and compliance requirements.<br />\r\nThis document is designed to help readers understand the key compliance and security considerations associated with planning for a deployment of Microsoft Dynamics CRM Online in environments that may include enterprise directory integration services such as directory synchronization and single sign-on.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM Online security and compliance planning guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "432.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe Reader</LI><br />\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30186",
+    "downloadPreload": true
+}

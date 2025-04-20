@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "VAMT- ESU Configuration August 2022",
+    "downloadDescription": "Update to the VAMT Configuration files",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "pkconfig_winServer2012R2.xrm-ms",
+            "url": "https://download.microsoft.com/download/e/a/8/ea8087a4-56c0-44e7-8009-c3ad7395f340/pkconfig_winServer2012R2.xrm-ms",
+            "size": "571168",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "pkconfig_winServer2012.xrm-ms",
+            "url": "https://download.microsoft.com/download/e/a/8/ea8087a4-56c0-44e7-8009-c3ad7395f340/pkconfig_winServer2012.xrm-ms",
+            "size": "368632",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "pkconfig_vista.xrm-ms",
+            "url": "https://download.microsoft.com/download/e/a/8/ea8087a4-56c0-44e7-8009-c3ad7395f340/pkconfig_vista.xrm-ms",
+            "size": "693474",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "pkconfig_win7.xrm-ms",
+            "url": "https://download.microsoft.com/download/e/a/8/ea8087a4-56c0-44e7-8009-c3ad7395f340/pkconfig_win7.xrm-ms",
+            "size": "1103860",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update enables the VAMT tool to deploy and activate keys for Windows 7 SP1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012 and Windows Server 2012 R2  Extended Security Update programs",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "pkconfig_winServer2012R2.xrm-ms",
+        "pkconfig_winServer2012.xrm-ms",
+        "pkconfig_vista.xrm-ms",
+        "pkconfig_win7.xrm-ms"
+    ],
+    "detailsSection_file_size": [
+        "557.8 KB",
+        "360.0 KB",
+        "677.2 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Latest ADK/VAMT installed on the machine,  SQL server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows Server 2008 R2",
+        "Windows Server 2008",
+        "Windows 7"
+    ],
+    "installInstructionSection": "1) Download the configuration file for the respective platform \r\nFor Windows 7, Windows Server 2008R2: pkconfig_win7.xrm-ms\r\nFor Windows Server 2008 pkconfig_vista.xrm-ms\r\nFor Windows Server 2012R2  pkconfig_winServer2012R2.xrm-ms\r\nFor Windows Server 2012 pkconfig_winServer2012.xrm-ms\r\n\r\n\r\n2) Replace the files here: C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\VAMT3\\pkconfig with the new files\r\n\r\nGet the latest ADK/VAMT here: https://docs.microsoft.com/en-us/windows-hardware/get-started/adk-install\r\n\r\nFor VAMT Setup and Activation, Refer to: https://docs.microsoft.com/en-us/windows/deployment/volume-activation/introduction-vamt\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104503",
+    "downloadPreload": true
+}

@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2019 - Orchestrator  Integration Packs",
+    "downloadDescription": "System Center 2019 - Orchestrator  Integration Packs contain Integration packs to extend core System Center Orchestrator functionality to work with System Center 2019 components and other technologies",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC2019_IPs.EXE",
+            "url": "https://download.microsoft.com/download/0/0/1/00188e32-1586-4646-b49b-47e8b02b24fa/SC2019_IPs.EXE",
+            "size": "16177120",
+            "version": "2019",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint IP with OAuth.docx",
+            "url": "https://download.microsoft.com/download/0/0/1/00188e32-1586-4646-b49b-47e8b02b24fa/SharePoint IP with OAuth.docx",
+            "size": "1781815",
+            "version": "2019",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200b<b>System Center 2019 Orchestrator Integration Packs </b><br/><br/>\r\nSystem Center 2019 - Orchestrator Integration Packs extend the core System Center 2019- Orchestrator component to enable the authoring of datacenter automation using System Center 2019 components as well as other Microsoft server products. These integration packs can be used for future releases of System Center also.<br/><br/>\r\nThis download includes Integration Packs for the following System Center 2019 Components: <br/><br/>\r\n<ul>\r\n<li> System Center Integration Pack for System Center 2019 Configuration Manager and future releases </li>\r\n<li> System Center Integration Pack for System Center 2019 Data Protection Manager and future releases</li>\r\n<li> System Center Integration Pack for System Center 2019 Operations Manager and future releases</li>\r\n<li> System Center Integration Pack for System Center 2019 Service Manager and future releases</li>\r\n<li> System Center Integration Pack for System Center 2019 Virtual Machine Manager and future releases</li>\r\n</ul><br/>\r\n\r\n<br/><br/>\r\nThe following Integration Packs are also included in this download. <br/>\r\n<ul>\r\n<li> System Center Integration Pack for REST </li><br/>\r\nThe Integration Pack for REST is an add-on for System Center 2019 Orchestrator that enables you to create activities within runbooks that make requests to REST web services to get data or perform functions.\r\nThe Invoke REST Service activity is used in a runbook to make requests to RESTful web services and retrieve data or execute functions. <br/><br/>\r\n<li> System Center Integration Pack for Exchange User </li><br/>\r\nThe Integration Pack for Exchange Users is an add-on for System Center 2019 Orchestrator that enables you to facilitate the automation of user centric tasks, such as sending e-mail messages, creating appointments and updating tasks<br/><br/>\r\n<li> System Center Integration Pack for Exchange Admin</li><br/>\r\nThe Integration Pack for Exchange Admin is an add-on for System Center 2019 Orchestrator that enables you to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote or cloud based environments in Microsoft Exchange and Office 365.<br/><br/>\r\n<li> System Center Integration Pack for File Transfer Protocol (FTP)</li><br/>\r\nThe Integration Pack for FTP enables you to automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.<br/><br/>\r\n<li> System Center Integration Pack for Active Directory</li><br/>\r\nThe Integration Pack for Active Directory is an add-on for System Center 2019 Orchestrator that enables you to connect Orchestrator to your Active Directory Server to automate its management.<br/><br/>\r\n<li> System Center Integration Pack for Windows Azure </li><br/>\r\nThe Integration Pack for Windows Azure is an add-on for System Center 2019 Orchestrator that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines. <br/><br/>\r\n<li> System Center 2019 Integration Pack for Microsoft SharePoint </li><br/>\r\nThe System Center Integration Pack for Microsoft SharePoint is a compliant integration pack that enables integration with Microsoft SharePoint to facilitate the automation of SharePoint tasks.<br/><br/>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<br/>\r\n<li> April 2019 - Original release </li>\r\n<br/>\r\n<li> March 2021 - OAuth support for SharePoint Online in SharePoint Integration Pack</li>\r\n<br/>\r\n<li> April 2021 - Token Cache added to prevent rate-limiting by AAD in SharePoint Integration Pack </li>\r\n<br/>\r\n<li> January 2023 - OAuth support for Exchange Online in Exchange User Integration Pack </li>\r\n<br/>\r\n<li> February 2023 - OAuth support for Exchange Online in Exchange Admin Integration Pack </li>\r\n<br/>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2019",
+    "detailsSection_file_name": [
+        "SC2019_IPs.EXE",
+        "SharePoint IP with OAuth.docx"
+    ],
+    "detailsSection_file_size": [
+        "15.4 MB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\nSystem Center 2019 - Orchestrator or above should be installed prior to installing the System Center Integration Packs.\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe.",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center 2019 Home Page",
+            "url": "https://docs.microsoft.com/en-us/system-center/"
+        },
+        {
+            "title": "integration Pack Guide",
+            "url": "https://docs.microsoft.com/en-us/system-center/orchestrator/list-of-orchestrator-integration-packs?view=sc-orch-2019"
+        },
+        {
+            "title": "release Notes",
+            "url": "https://docs.microsoft.com/en-in/system-center/orchestrator/release-notes-orch?view=sc-orch-1801"
+        },
+        {
+            "title": "orchestrator Integration Toolkit",
+            "url": "https://docs.microsoft.com/en-us/system-center/orchestrator/orch-integration-toolkit/orchestrator-integration-toolkit-overview?view=sc-orch-2019"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58111",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Office Sample: Antivirus API for Office 2010 Header File: msoav.h",
+    "downloadDescription": "The Antivirus API for Office 2010 msoav.h header file supports development for the Antivirus API.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msoav.h",
+            "url": "https://download.microsoft.com/download/e/7/c/e7ca666b-7b2f-46e6-9449-797d251cbf39/msoav.h",
+            "size": "2277",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Antivirus API for Office 2010 msoav.h header file supports development for the Antivirus API. The Antivirus API enables software vendors to design and implement antivirus applications that interface with a Microsoft Office host application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "msoav.h"
+    ],
+    "detailsSection_file_size": [
+        "2.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7; Windows Server 2003; Windows Server 2008; Windows Vista; Windows XP Service Pack 2</li>\r\n<li><b>This download works with the following Office applications:</b><br/>\r\n<ul>\r\n<li>Office 2010</li>\r\n<li>2007 Microsoft Office system</li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/><br/>\r\nDownload the file by clicking the Download link (above) and saving the file to your hard disk drive.\r\n<br/><br/>\r\n<b>Instructions for use:</b><br/><br/>\r\nAfter you have installed this download, include the header file in your source code to develop solutions based on Microsoft Office. \r\n<br/><br/>\r\n<b>Remove of this download:</b><br/><br/>\r\nThere is no removal feature for this download.",
+    "additionalInformationSection": "<b>NOTE:</b> This package does not collect any personal information. \r\n<br/><br/>\r\n<b>Supplemental Notice for Microsoft Office 2010 software</b>\r\n<br/><br/>\r\n<b>PLEASE NOTE:</b> Microsoft Corporation (or based on where you live, one of its affiliates) licenses this supplement to you. You may use a copy of this supplement with each validly licensed copy of Microsoft Office 2010 software (the \u201csoftware\u201d). You may not use the supplement if you do not have a license for the software. The license terms for the software apply to your use of this supplement. To read the license terms, go to the \u201cHelp\u201d menu in the software. Microsoft provides support services for the supplement as described at www.support.microsoft.com/common/international.aspx.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "antivirus API for Office 2010",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=195087"
+        },
+        {
+            "title": "microsoft Office Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23065",
+    "downloadPreload": true
+}

@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2019",
+    "downloadDescription": "HPC Pack 2019 provides enterprise-class tools, performance and scalability for a highly productive HPC environment either on premises, Hybrid or Azure Cloud.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HPC Pack 2019_refreshed_6.0.7214.zip",
+            "url": "https://download.microsoft.com/download/c/e/b/ceb6122c-1006-44f8-99b1-1792f928f155/HPC Pack 2019_refreshed_6.0.7214.zip",
+            "size": "1131867272",
+            "version": "6.0.7214.0",
+            "datePublished": "7/15/2024 4:24:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC Pack 2019.zip",
+            "url": "https://download.microsoft.com/download/c/e/b/ceb6122c-1006-44f8-99b1-1792f928f155/HPC Pack 2019.zip",
+            "size": "1137446968",
+            "version": "6.0.7214.0",
+            "datePublished": "7/15/2024 4:24:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "HPC Pack 2019 is a high performance computing (HPC) solution that combines a comprehensive set of deployment, administration, job scheduling, and monitoring tools for your HPC cluster environment, and a flexible platform for developing and running HPC applications. It delivers enterprise-class tools, performance and scalability for a highly productive HPC environment, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface (MPI) and Service-Oriented Architecture (SOA) interactive application support, cluster management & monitoring tools. HPC Pack 2019 also delivers cloud ready solutions for Hybrid and Cloud on Microsoft Azure.<br/>\r\n<br/>\r\nNote: HPC Pack 2019.zip is the original release version for 6.0.7205 and HPC Pack 2019_refreshed_6.0.7214.zip is the latest refreshed version including two additional fixes: 1) a setup fix to support managed identify for Azure SQL databases; 2) a Linux node agent fix for memory/CPU leaks. Please consider to use the latest refreshed version whenever possible.<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.7214.0",
+    "detailsSection_file_name": [
+        "HPC Pack 2019_refreshed_6.0.7214.zip",
+        "HPC Pack 2019.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 GB",
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2019 supported Operating Systems</b>\r\n<li>Head nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 (no support for SQL Express 2019)</li>\r\n<li>Compute nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Broker nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 8.1 Pro or Enterprise, windows 10</li>\r\n<li>Unmanaged server nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Linux Compute nodes: Red Hat Enterprise Linux 7.5 - 7.8, CentOS-based 7.5 - 7.8, Ubuntu Server 14.04 LTS, Ubuntu Server 16.04 LTS, Ubuntu Server 18.04 LTS, SUSE Linux Enterprise Server 12</li>\r\n<li>Client: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows 10, Windows 8.1</li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 4GB<br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 10",
+        "Windows 8.1",
+        "Linux",
+        "Red Hat",
+        "Ubuntu",
+        "SUSE"
+    ],
+    "installInstructionSection": "Prior to installation, please review the  '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/what-s-new-in-hpc-pack-2019?view=hpc19-ps\">What's New</a>' and '<a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing/release-notes-for-hpc-pack-2019?view=hpc19-ps\">Release Notes</a>' available on the <a href=\"https://docs.microsoft.com/en-us/powershell/high-performance-computing\">Microsoft HPC Pack Documentations</a>.<br/><br/>\r\nDownload the 'HPC Pack 2019.zip' file, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack 2019 installation wizard on a supported Windows Server based computer.<br/><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack Documentations",
+            "url": "https://aka.ms/hpcpack"
+        },
+        {
+            "title": "hpc Pack GitHub",
+            "url": "https://aka.ms/hpcgit"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101360",
+    "downloadPreload": true
+}

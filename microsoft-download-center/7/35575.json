@@ -1,0 +1,163 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Service Pack 1 (SP1)",
+    "downloadDescription": "Download Service Pack 1 for Microsoft\u00ae SQL Server\u00ae 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-KB2674319-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-KB2674319-x64-ENU.exe",
+            "size": "974353904",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-FullSlipstream-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-FullSlipstream-x86-ENU.exe",
+            "size": "133752",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-FullSlipstream-x64-ENU.box",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-FullSlipstream-x64-ENU.box",
+            "size": "3566690820",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-FullSlipstream-ENU-x64.iso",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-FullSlipstream-ENU-x64.iso",
+            "size": "3900762112",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-FullSlipstream-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-FullSlipstream-x64-ENU.exe",
+            "size": "133752",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2012SP1-FullSlipstream-ENU-x86.iso",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-FullSlipstream-ENU-x86.iso",
+            "size": "3352350720",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-KB2674319-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-KB2674319-x86-ENU.exe",
+            "size": "672732656",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP1-FullSlipstream-x86-ENU.box",
+            "url": "https://download.microsoft.com/download/3/b/d/3bd9dd65-d3e3-43c3-bb50-0ed850a82ad5/SQLServer2012SP1-FullSlipstream-x86-ENU.box",
+            "size": "3100839893",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:30:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "<br/>\r\n<b>NOTE: MANDATORY SP1 Hotfix available:</b> SP1 installations are currently experiencing an issue in certain configurations as described in Knowledge Base article <a href =\"http://support.microsoft.com/kb/2793634\"> KB2793634</a>. The article provides a fix for this issue that is currently available for download, and is MANDATORY for application immediately following a Service Pack 1 installation.  The fix is also being made available on Microsoft Update.<br/>\r\n<br/>\r\n\r\nMicrosoft SQL Server 2012 service packs are cumulative updates and upgrade all editions and service levels of SQL Server 2012 to SP1. This service pack contains SQL Server 2012 Cumulative Update 1 (CU1) and Cumulative Update 2 (CU2).  <br/>\r\n<br/>\r\nThis download site contains the following packages and service patches for the Microsoft SQL Server 2012 SP1 release:<br/><br/>\r\n<ol>\r\n<li><b>Microsoft SQL Server 2012 SP1 Update</b> - this package contains the Microsoft SQL Server 2012 Service Pack 1 update to be applied to existing SQL Server 2012 installations.</li><br/>\r\n<li><b>Microsoft SQL Server 2012 SP1 Slipstream</b>- This package provides the capability to perform new SQL Server 2012 instance installations (or SQL Server 2008/SQL Server 2008 R2 Upgrades) culminating with Service Pack 1 pre-installed. The slipstream installation package consists of a compressed self-extracting .exe and a \u2018.box\u2019 payload file that contains the original SQL Server 2012 release along with Service Pack 1. The .exe file can be directly executed, or utilized from the command prompt just as SQL Server 2012 Setup.exe would be (See <a href=\"http://go.microsoft.com/fwlink/?LinkID=269740\">Install SQL Server 2012 from the Command Prompt</a>).</li> <br/>\r\n</ol>\r\n<br/>\r\n<b>Note:</b> SQL Server 2012 Express with SP1 (slipstream) packages may be obtained from the <a href=\"http://go.microsoft.com/fwlink/?LinkID=267905\">Microsoft SQL Server 2012 SP1 Express</a> packages from the download <a href=\"http://go.microsoft.com/fwlink/?LinkID=267905\">page</a>\r\n<br />\r\n<br/>\r\n<b>Microsoft SQL Server 2012 SP1 Documentation:</b><br />\r\n<br />\r\n<ul>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=219959\">What's new in Microsoft SQL Server 2012 and Microsoft SQL Server 2012 Service Pack 1</a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=216743\">Microsoft SQL Server 2012 Privacy Statement </a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=219962\">Microsoft SQL Server 2012 License Terms </a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=219960\"> Microsoft SQL Server 2012 Systems Requirements</a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=247920\">Microsoft SQL Server 2012 SP1 Release Notes</a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=272146\"> Microsoft SQL Server 2012 SP1 Readme</a>\r\n    <br />\r\n    <br />\r\n  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2674319; KB2793634",
+        "name": "KB2674319; KB2793634"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.3000.00",
+    "detailsSection_file_name": [
+        "SQLServer2012SP1-KB2674319-x64-ENU.exe",
+        "SQLServer2012SP1-FullSlipstream-x86-ENU.exe",
+        "SQLServer2012SP1-FullSlipstream-x64-ENU.box",
+        "SQLServer2012SP1-FullSlipstream-ENU-x64.iso",
+        "SQLServer2012SP1-FullSlipstream-x64-ENU.exe",
+        "SQLServer2012SP1-FullSlipstream-ENU-x86.iso",
+        "SQLServer2012SP1-KB2674319-x86-ENU.exe",
+        "SQLServer2012SP1-FullSlipstream-x86-ENU.box"
+    ],
+    "detailsSection_file_size": [
+        "929.2 MB",
+        "130.6 KB",
+        "3.3 GB",
+        "3.6 GB",
+        "130.6 KB",
+        "3.1 GB",
+        "641.6 MB",
+        "2.9 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>For complete system requirements, please reference the detailed  <a href=\"http://go.microsoft.com/fwlink/?LinkID=219960\"> Systems Requirements</a> page</li>\r\n<li>2.2 GB of available hard disk space for the Service Pack update, 6 GB for a Slipstream installation</li>\n<li> Service Pack 1 can be applied to any of the following Microsoft SQL Server 2012 editions: </li>\r\n<br /><ul>\r\n  <li>Microsoft SQL Server 2012 Enterprise</li>\r\n  <li> Microsoft SQL Server 2012 Developer</li>\r\n  <li>Microsoft SQL Server 2012 Standard</li>\r\n  <li>Microsoft SQL Server 2012 Business Intelligence</li>\r\n  <li>Microsoft SQL Server 2012 Web</li>\r\n  <li>Microsoft SQL Server 2012 Express</li>\r\n</ul><br />\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<br/>\r\n<b>Note:</b> You must have administrative rights on the computer to install SQL Server 2012 SP1. <br/>\r\n<br/>\r\n<u><b>Microsoft SQL Server 2012 SP1 Update: </b></u><br/>\r\n<br/>\r\n<ol>\r\n<li>Review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=247920\">Microsoft SQL Server 2012 SP1 Release Notes.</a> </li>\r\n<li>Download the following file from the \"DOWNLOAD\" section on this page to your device:</li> \r\n<ul> \r\n<li><b>SQLServer2012SP1-KB2674319-architecture-language.exe</b></li> </ul> \r\n<li>Once the download is complete, click RUN to begin the installation process immediately or SAVE to install at a later time.</li>\r\n</ol>\r\n <br/>\r\n  <br />\r\n<br />\r\n<u><b>Microsoft SQL Server 2012 SP1 Slipstream Installation: </b></u><br/>\r\n<br />\r\nThere are two methods available to download and install Microsoft SQL Server 2012 SP1 Slipstream: <br/><br/>\r\n\r\n<b>SQL Server 2012 SP1 Slipstream DVD Image:</b> You can use this image (ISO) to burn your own DVD.  There is a separate image file for x86 and x64 architectures.<br/>\r\n<ol>\r\n<li>Click the download button for the .ISO file in the <b>DOWNLOAD</b> section on this page above</li><br/>\r\n<br/>\r\n<li>Using your DVD-burning software, select the options to burn a DVD from an .ISO image. When you are prompted for a file to use, select the image file that you downloaded. After burning the DVD, locate and double-click Setup.exe on the DVD to begin the SP1 Slipstream installation.</li><br/>\r\n</ol>\r\n<br/>\r\n<b>SQL Server 2012 SP1 SlipStream CAB file:</b>\r\n<ol>\r\n<li>Download the following files from the <b>DOWNLOAD</b> section on this page to a temporary directory on your device:</li>\r\n<ul>\r\n<li>SQLServer2012SP1-FullSlipstream-architecture-language.box</li>\r\n<li>SQLServer2012SP1-FullSlipstream-architecture-language.exe</li>\r\n</ul>\r\n<li>Once the download(s) are complete, double click on the <b>SQLServer2012SP1-FullSlipstream-architecture-language.exe</b> to begin the installation process. Alternatively, the .exe file can be executed from the command prompt (See <a href=\"http://go.microsoft.com/fwlink/?LinkID=269740\">Install SQL Server 2012 from the Command Prompt</a>). </li>\r\n</ol>\r\n  <br />\r\n<br/>\r\n ",
+    "additionalInformationSection": "If you have questions about  SQL Server 2012, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkID=205125\"> SQL Server  2012 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2012 by submitting bugs to <a href=\"http://go.microsoft.com/fwlink/?LinkID=223170\">Microsoft Connect.</a><br/>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35575",
+    "downloadPreload": true
+}

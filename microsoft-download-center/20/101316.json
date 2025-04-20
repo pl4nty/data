@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "A complete guide to demonstrate passwordless authentication in Azure AD Hybrid environments by using FIDO2 security keys",
+    "downloadDescription": "Designed as a step-by-step guide, this document contains necessary information to help you get started on your own passwordless journey by using FIDO2 security keys in Hybrid environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure AD FIDO2 - Hybrid Demo v1.2.pdf",
+            "url": "https://download.microsoft.com/download/3/8/d/38d25f7b-3431-460e-a6fb-52e79fa755a8/Azure AD FIDO2 - Hybrid Demo v1.2.pdf",
+            "size": "2990146",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This demonstration guide, intended for IT professionals and security professionals, covers the use of FIDO2 security key in Azure AD Hybrid environments, explains how to confidently get started with the new version of Windows 10 May 2020 Update (also referred to as version 2004), describes how to configure the latest version of Azure AD connect with <a href=\" https://docs.microsoft.com/en-us/azure/active-directory/devices/hybrid-azuread-join-managed-domains\"> Hybrid Azure AD join</a> and <a href=\" https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises\"> FIDO2 hybrid access </a>, and finally how to implement the <a href=\" https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-vpn-client-configuration-azure-cert\">Always On VPN device tunnel</a> in order to have line of sight to the domain controller for the first sign-in with a FIDO2 security key.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure AD FIDO2 - Hybrid Demo v1.2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux, Windows, Mac",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the PDF file(s) and open it with the PDF reader of your choices.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101316",
+    "downloadPreload": true
+}

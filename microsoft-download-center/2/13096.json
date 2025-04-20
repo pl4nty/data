@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Imaging File Format (WIM)",
+    "downloadDescription": "This paper defines the internal format of a Windows Imaging (WIM) file format.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Imaging File Format.rtf",
+            "url": "https://download.microsoft.com/download/f/e/f/fefdc36e-392d-4678-9e4e-771ffa2692ab/Windows Imaging File Format.rtf",
+            "size": "2282364",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper defines the internal format of a Windows Imaging (WIM) file format. This information may be used to build .wim file creation or extraction tools, or other WIM-enabled applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Windows Imaging File Format.rtf"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This document is for use with the Windows Automated Installation Kit.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. Download the document.<br />\n2. Open the document by using an application that can read .doc files.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13096",
+    "downloadPreload": true
+}

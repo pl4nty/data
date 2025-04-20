@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows UI 2.6 Figma Toolkit",
+    "downloadDescription": "A Figma toolkit with elements of Windows UI version 2.6",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows UI 2.6 (Community).fig",
+            "url": "https://download.microsoft.com/download/e/2/1/e2194981-a338-40e4-a28e-983c65616c14/Windows UI 2.6 (Community).fig",
+            "size": "21014982",
+            "version": "WinUI 2.6",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "The Windows UI Toolkit is a resource for creating experiences on Windows. It contains a control library and examples of how those controls are used within the WinUI platform.\r\n\r\nThis toolkit represents an archived copy of the version 2.6 release, originally released in June of 2021.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WinUI 2.6",
+    "detailsSection_file_name": [
+        "Windows UI 2.6 (Community).fig"
+    ],
+    "detailsSection_file_size": [
+        "20.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Segoe UI Variable font, Segoe Fluent Icons font",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download this file and open it in Figma.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103464",
+    "downloadPreload": true
+}

@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Visio 2010: Software Development Kit",
+    "downloadDescription": "The Microsoft Visio 2010 Software Development Kit (SDK) contains the latest documentation, samples, header files, libraries, and tools that you need to develop custom solutions for Visio 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VisioSDK32bit.exe",
+            "url": "https://download.microsoft.com/download/3/1/d/31d5fa1e-cea7-4f90-8330-315edbf8cad1/VisioSDK32bit.exe",
+            "size": "7480776",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VisioSDK64bit.exe",
+            "url": "https://download.microsoft.com/download/3/1/d/31d5fa1e-cea7-4f90-8330-315edbf8cad1/VisioSDK64bit.exe",
+            "size": "7526744",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Visio 2010 SDK contains the following items to help you develop custom solutions for Visio 2010:<br/><br/>\r\n<b>Code samples</b>\r\n<ul>\r\n<li>Code Samples Library&mdash;Provides a database of reusable Visio code samples.</li>\r\n<li>Flowchart sample application&mdash;Shows how to create a Component Object Model (COM) add-in that automates the creation of a flowchart drawing from an Excel spreadsheet.</li>\r\n<li>TreeView sample application&mdash;Shows how to create a hierarchical drawing and its accompanying tree view in Visio.</li>\r\n<li>Office Plan sample application&mdash;Shows how you can use the Visio 2010 Drawing Control to create an application that takes advantage of the drawing features of Visio 2010 in a Microsoft Windows Form.</li>\r\n<li>VSTO Add-in sample application&mdash;Shows how to create an add-in, based on Microsoft Office development tools in Microsoft Visual Studio 2010, that includes custom Visio content and is deployed by using ClickOnce installation.<br/><br/>\r\n<b>Note</b>&nbsp;&nbsp;The Office development tools in Visual Studio were known as the Visual Studio Tools for Office (VSTO) in previous versions of Visual Studio.</li>\r\n</ul>\r\n<b>Tools</b>\r\n<ul>\r\n<li>Persistent Events tool&mdash;Provides a user interface that lets you add persistent events in an active Visio document and modify existing persistent events.</li>\r\n<li>Event Monitor tool&mdash;Monitors and reports events that are raised by an instance of Visio, so you can debug a solution that handles events.</li>\r\n<li>Print ShapeSheet tool&mdash;Provides a user interface that enables you to print the contents of a ShapeSheet.</li>\r\n<li>Solution Publishing tool&mdash;Lets you add Visio-specific entries to the PublishComponent table of a Windows Installer (.msi) file for publishing custom Visio content.</li>\r\n</ul>\r\n<b>Type libraries</b>\r\n<ul>\r\n<li>The Visio SDK provides three type libraries that Visio 2010 exposes. In addition, it provides support files to help C++ developers automate Visio.</li>\r\n</ul>\r\n<b>Add-on wizards</b>\r\n<ul>\r\n<li>The Visio SDK installs wizards for creating Visio add-on projects in Microsoft Visual Studio 2005 and Microsoft Visual Studio 2008</li>\r\n</ul>\r\n<b>Documentation</b>\r\n<ul>\r\n<li>The Visio SDK contains the Visio Automation Reference, Save as Web Reference, ShapeSheet Reference, Viewer Reference, and XML Schema Reference.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VisioSDK32bit.exe",
+        "VisioSDK64bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.1 MB",
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following program:</b><br/>\n<ul>\n<li>Microsoft Visio 2010</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install this download</b><br/>\n<br/>\r\nThe Visio 2010 SDK is available in both 32-bit and 64-bit versions. Each contains a different version of the Persistent Events tool, the Event Monitor tool, and the Print ShapeSheet tool. To run the 32-bit versions of the tools, you must have 32-bit Visio 2010 installed on your computer. To run the 64-bit versions, you must have 64-bit Visio 2010 installed. To download the SDK, use the following instructions:\n<ol>\n<li>Download the file by clicking the <b>Download</b> button for the appropriate SDK version and saving the file to your hard disk. </li>\n<li>Double-click the <b>VisioSDK32bit.exe</b> or <b>VisioSDK64bit.exe</b> program file on your hard disk to start the setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use</b> \n<br/><br/>\nAfter installation, refer to the included documentation and tools for use of the SDK.\n\n<br/><br/>\n<b>To remove this download</b>\r\n<ul>\n<li>To remove the download file, delete the <b>VisioSDK32bit.exe</b> or <b>VisioSDK64bit.exe</b> file from your hard disk</li>\r\n<li>To remove the installed files, use Control Panel to uninstall <b>Microsoft Visio 2010 SDK</b>.</li>\r\n</ul>\n",
+    "additionalInformationSection": "You do not need to have Visio 2010 installed on your computer to be able to install the Visio 2010 SDK; however, for selected code samples and tools to run properly, Visio 2010, along with other Microsoft applications, are required.<br />\n<br />\nNote: These files do not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "visio Developer Center",
+            "url": "http://msdn.microsoft.com/office/aa905478.aspx"
+        },
+        {
+            "title": "office Online",
+            "url": "http://office.microsoft.com"
+        },
+        {
+            "title": "visio 2010: Visio Viewer",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=f9ed50b0-c7df-4fb8-89f8-db2932e624f7"
+        },
+        {
+            "title": "microsoft Office Developer Center",
+            "url": "http://msdn.microsoft.com/office"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12365",
+    "downloadPreload": true
+}

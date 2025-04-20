@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Accelerator for SWIFT - Message Pack 2017",
+    "downloadDescription": "BizTalk A4Swift Message Pack 2017",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Installing Microsoft BizTalk Accelerator for SWIFT 2017 Message Pack.doc",
+            "url": "https://download.microsoft.com/download/8/9/b/89b5bb44-4eac-46a3-b595-9fa5cc92370c/Installing Microsoft BizTalk Accelerator for SWIFT 2017 Message Pack.doc",
+            "size": "157696",
+            "version": "4.3.912.0",
+            "datePublished": "7/15/2024 4:44:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP_2017.exe",
+            "url": "https://download.microsoft.com/download/8/9/b/89b5bb44-4eac-46a3-b595-9fa5cc92370c/MP_2017.exe",
+            "size": "8638456",
+            "version": "4.3.912.0",
+            "datePublished": "7/15/2024 4:44:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP2017Sample.zip",
+            "url": "https://download.microsoft.com/download/8/9/b/89b5bb44-4eac-46a3-b595-9fa5cc92370c/MP2017Sample.zip",
+            "size": "1008",
+            "version": "4.3.912.0",
+            "datePublished": "7/15/2024 4:44:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Accelerator for SWIFT Message Pack 2017.<br/>\r\nThis release updates the flat-file (MT) messaging schemas used by Microsoft BizTalk Accelerator for SWIFT to correspond to the SWIFT messaging standards for Service Release 2017.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.912.0",
+    "detailsSection_file_name": [
+        "Installing Microsoft BizTalk Accelerator for SWIFT 2017 Message Pack.doc",
+        "MP_2017.exe",
+        "MP2017Sample.zip"
+    ],
+    "detailsSection_file_size": [
+        "154.0 KB",
+        "8.2 MB",
+        "1008 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft BizTalk Server 2016 with Microsoft BizTalk Server Accelerator for SWIFT 2016,\r\nor Microsoft BizTalk Server 2013 R2 with Microsoft BizTalk Server Accelerator for SWIFT 2013 R2,\r\nor Microsoft BizTalk Server 2013 with Microsoft BizTalk Server Accelerator for SWIFT 2013.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Before installing the BizTalk Accelerator for SWIFT - Message Pack 2017, we recommend that you download and review the Installation Guide. This guide contains important information about how to install and configure the message pack to help reduce downtime in the Microsoft BizTalk Server environment. See the download section above to obtain this guide.<br/>\r\nPlease uninstall any prior versions of this Message Pack 2017 before installing this latest version.<br/>\r\nDownload the self-extracting archive, then execute it to extract the setup program to a temporary directory.  From the temporary location, execute the setup.exe program, which will install the Message Pack.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55762",
+    "downloadPreload": true
+}

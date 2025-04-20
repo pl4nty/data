@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft ACTS Executive Briefing",
+    "downloadDescription": "Microsoft ACTS, Microsoft's Advanced Cloud Transparency Services initiative overview",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft ACTS Executive Overview.pdf",
+            "url": "https://download.microsoft.com/download/0/3/5/035c5e62-e153-4b70-9224-acf4cab9596d/Microsoft ACTS Executive Overview.pdf",
+            "size": "5539663",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:58:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "In 2020, Microsoft pledged our commitment to helping governments achieve transparency in and improve public confidence in government with ACTS, our Advanced Cloud Transparency Services initiative. We, in partnership with governments and NGOs, continue to deliver on those commitments by harnessing the power of the cloud and the breakthrough innovations of Microsoft Research (MSR) to prove the value of AI-based approaches to transparency. With the innovation and local expertise of Microsoft partners on the ground, we empower government officials around the world to increase the transparency of their vital revenue, procurement, taxation, and other operations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft ACTS Executive Overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word and/or Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the PDF, and use Microsoft Word or Adobe Reader to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105221",
+    "downloadPreload": true
+}

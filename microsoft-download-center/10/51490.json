@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Windows PowerShell scripts to configure cloud hybrid search for SharePoint",
+    "downloadDescription": "Download these Windows PowerShell scripts to configure cloud hybrid search for SharePoint. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Cloud_Hybrid_Search_Scripts_May2023.zip",
+            "url": "https://download.microsoft.com/download/c/b/f/cbffe59d-bf9e-4437-ae2d-451fe32213f4/Cloud_Hybrid_Search_Scripts_May2023.zip",
+            "size": "9259",
+            "version": "May2023",
+            "datePublished": "7/15/2024 3:05:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When you configure cloud hybrid search for SharePoint, follow the instructions in <A href=\"https://technet.microsoft.com/en-us/library/dn720906(v=office.16).aspx\">Configure cloud hybrid search \u2013 roadmap</A>. The instructions include running the Windows PowerShell script <b>CreateCloudSSA.ps1</b> to create and configure a cloud Search service application (cloud SSA) on a SharePoint Server 2013 or SharePoint Server 2016 server. You'll also find instructions for running the PowerShell script <b>Onboard-CloudHybridSearch.ps1</b> to connect your cloud SSA and your Office 365 tenant and set up server-to-server authentication for the two environments. <br/>\r\n<br/>\r\nThe Windows PowerShell script <b>CreateCloudSSA.ps1</b> works for all Office 365 plans. The Windows PowerShell script <b>Onboard-CloudHybridSearch.ps1</b> works for all Office 365 plans except Office 365 US Government Defense.<br/>\r\n<br/>\r\nVersion history<br/>\r\nApr20: The parameter 'Credential' of Onboard-CloudHybridSearch.ps1 becomes unnecessary.<br/>\r\nJun18: Updated Onboard-CloudHybridSearch.ps1 to support the MSOnline AAD Powershell module installed from <A href=\"https://www.powershellgallery.com/packages/MSOnline\">the PowerShell Gallery</A>. Previously the msi was available from the Microsoft Connect portal, but this portal has been retired.\r\nSep17: Added option to create the cloud SSA with search architecture that supports high availability (across two servers).<br/>\r\nJul17: Added suport for Office 365 US Government Defense.<br/>\r\nJun17: Added support for Office 365 operated by 21 Vianet and Office 365 US Government Community.<br/>\r\nApr17: Added support for Office 365 Germany.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May2023",
+    "detailsSection_file_name": [
+        "Cloud_Hybrid_Search_Scripts_May2023.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The file is a zipped folder that contains two Windows PowerShell script (ps1) files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ol> \r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n<li>Choose <b>Save</b> or <b>Save this program to disk</b> to copy the download to your computer.</li> \r\n</ol> ",
+    "relatedResourcesSection": [
+        {
+            "title": "configure cloud hybrid search - roadmap",
+            "url": "https://docs.microsoft.com/en-us/SharePoint/hybrid/configure-cloud-hybrid-searchroadmap"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51490",
+    "downloadPreload": true
+}

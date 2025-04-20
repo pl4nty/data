@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Hive ODBC Driver",
+    "downloadDescription": "Microsoft\u00ae Hive ODBC Driver is a connector to Apache Hadoop Hive available as part of HDInsight clusters. Microsoft\u00ae Hive ODBC Driver enables Business Intelligence, Analytics and Reporting on data in Apache Hive.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HiveODBC64.msi",
+            "url": "https://download.microsoft.com/download/f/4/a/f4a2ca7d-5d14-4177-a7ce-b938ef3f3c24/HiveODBC64.msi",
+            "size": "34951168",
+            "version": "2.6.12.1012",
+            "datePublished": "7/15/2024 4:51:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HiveODBC32.msi",
+            "url": "https://download.microsoft.com/download/f/4/a/f4a2ca7d-5d14-4177-a7ce-b938ef3f3c24/HiveODBC32.msi",
+            "size": "29933568",
+            "version": "2.6.12.1012",
+            "datePublished": "7/15/2024 4:51:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ODBC is one of the most established APIs for connecting to and working with databases. Microsoft\u00ae Hive ODBC Driver provides HiveQL access from ODBC based applications to HDInsight Apache Hadoop Hive. This driver is available for both 32 and 64 bit Windows platform. \r\n<br/>\r\n<br/>\r\nSee <a href=\"http://www.windowsazure.com/en-us/manage/services/hdinsight/connect-excel-with-hive-ODBC/\">this</a> page for instructions on how to configure a DSN with this driver and use it to import data from Hive into Excel.\r\n<br/>\r\n<br/>\r\nDetailed documentation in the form of PDF files is also installed with the driver in the location specified during installation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.6.12.1012",
+    "detailsSection_file_name": [
+        "HiveODBC64.msi",
+        "HiveODBC32.msi"
+    ],
+    "detailsSection_file_size": [
+        "33.3 MB",
+        "28.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft\u00ae Hive ODBC Driver is supported with either of the following HDInsight versions:<br/>\r\n<ul>\r\n<li> <a href=\"http://www.windowsazure.com/en-us/manage/services/hdinsight/\"> Windows Azure HDInsight Service</a> cluster versions 1.6 or greater.</li>\r\n<li> <a href=\"http://go.microsoft.com/fwlink/?LinkID=328216\"> Windows Azure HDInsight Emulator</a> version 1.0.0.0 or greater.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "There are two versions of this installation package (32-bit and 64-bit). You should install the version that matches the version of the application where you will be using the ODBC driver. Both packages can be installed on the same machine if you need both versions of the driver. <br/>\r\n<br/>\r\nYou will need administrator privileges to install the driver.\r\n<br/>\r\n<br/>\r\nTo install the ODBC driver:<br/>\r\n<ul>\r\n<li>Download the installation package, double click on it to start the installation.</li>\r\n<li>Accept the license terms.</li>\r\n<li>Open the ODBC Data Source Administrator from the Control Panel.</li>\r\n<li>Create a ODBC DSN that you can use to connect from your ODBC application.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40886",
+    "downloadPreload": true
+}

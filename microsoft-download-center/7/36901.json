@@ -1,0 +1,232 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows 8 (KB2811660)",
+    "downloadDescription": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows 8 experience.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows8-RT-KB2811660-x86.msu",
+            "url": "https://download.microsoft.com/download/5/9/3/593693c9-934b-4161-923b-c5337e2e876a/Windows8-RT-KB2811660-x86.msu",
+            "size": "11837324",
+            "version": "2811660",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2812829-x86.msu",
+            "url": "https://download.microsoft.com/download/5/9/3/593693c9-934b-4161-923b-c5337e2e876a/Windows8-RT-KB2812829-x86.msu",
+            "size": "900520",
+            "version": "2811660",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2823233-x86.msu",
+            "url": "https://download.microsoft.com/download/5/9/3/593693c9-934b-4161-923b-c5337e2e876a/Windows8-RT-KB2823233-x86.msu",
+            "size": "353343",
+            "version": "2811660",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2800088-x86.msu",
+            "url": "https://download.microsoft.com/download/5/9/3/593693c9-934b-4161-923b-c5337e2e876a/Windows8-RT-KB2800088-x86.msu",
+            "size": "762463",
+            "version": "2811660",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2815769-x86.msu",
+            "url": "https://download.microsoft.com/download/5/9/3/593693c9-934b-4161-923b-c5337e2e876a/Windows8-RT-KB2815769-x86.msu",
+            "size": "2124198",
+            "version": "2811660",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows 8 experience. We recommend that you apply all of these updates as part of your regular maintenance routines. Failure to install all of the packages listed above could leave your machine in an untested state.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2811660",
+        "name": "KB2811660"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2811660",
+    "detailsSection_file_name": [
+        "Windows8-RT-KB2811660-x86.msu",
+        "Windows8-RT-KB2812829-x86.msu",
+        "Windows8-RT-KB2823233-x86.msu",
+        "Windows8-RT-KB2800088-x86.msu",
+        "Windows8-RT-KB2815769-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "11.3 MB",
+        "879.4 KB",
+        "345.1 KB",
+        "744.6 KB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul><li>Repeat this process until all of the following KBs have been installed: KB2811660, KB2815769, KB2800088, KB2812829, KB2823233</li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2811660"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36901",
+    "downloadPreload": true
+}

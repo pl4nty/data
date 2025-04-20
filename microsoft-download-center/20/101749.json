@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Cash Manager in Microsoft Dynamics SL 2015",
+    "downloadDescription": "This training provides individuals with the knowledge and skills to build a comprehensive understanding of the Cash Manager module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_CA.zip",
+            "url": "https://download.microsoft.com/download/0/b/9/0b9fc7ba-0dac-49c5-bb8d-62f8a9efba91/SL2015_ENUS_CA.zip",
+            "size": "4817292",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b> </b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Cash Manager module in Microsoft Dynamics SL. At Training Material Completion<b> </b>After reviewing this training, individuals will have: <ul><li>A Description of the transaction cycle along with explanation of how to enter, process, and verify cash transactions and transfers and check and deposit transactions from the Accounts Payable and Accounts Receivable modules.</li><li>Review of how the transaction cycle coincides with the accounting cycle, along with a description of how to complete the accounting cycle.</li><li>Exposure to other important features of the Cash Manager system such as entering and maintaining Entry Types, Cash Accounts, and performing Bank Reconciliation and Cash Flow Projections. </li></ul> Prerequisites<b> </b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>General Ledger training course. </li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_CA.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101749",
+    "downloadPreload": true
+}

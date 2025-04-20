@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Certification Test Tool for SQL Server 2016",
+    "downloadDescription": "Use this test tool to validate application compatibility and certify your application for SQL Server 2016 certified logo.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Cert Tool for SQL Server 2016.msi",
+            "url": "https://download.microsoft.com/download/3/6/c/36c62f8c-b9fa-4b64-b69b-7b5d6a42aec3/Cert Tool for SQL Server 2016.msi",
+            "size": "3394560",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:40:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Certification Test Tool for SQL Server 2016 is designed to help test your applications for compatibility and validate implementation of best practices for the SQL Server 2016 platform including Hyper-V, Server Core and Nano Server.  \r\nTest Results Package generated from the test tool can be submitted as part of the logo certification program and Microsoft Partner Network competency requirements. \r\n\r\nThis tool is also recommended for Customers to evaluate third party applications and for testing Line of Business applications.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Cert Tool for SQL Server 2016.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This test tool is designed to run in various configurations including Hyper-V Virtual Machines and Microsoft Azure Virtual Machines",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and extract the test tool package. Navigate to the specified folder, launch the and follow directions of the wizard style tool.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54430",
+    "downloadPreload": true
+}

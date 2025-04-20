@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Network Diagram template for Visio 2010",
+    "downloadDescription": "Create a simple network diagram for your organization with this Visio 2010 template.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visio sample network.xlsx",
+            "url": "https://download.microsoft.com/download/1/6/1/16115776-ca55-4af9-91d6-ca06d6c99994/Visio sample network.xlsx",
+            "size": "19323",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Network Sample Diagram.vst",
+            "url": "https://download.microsoft.com/download/1/6/1/16115776-ca55-4af9-91d6-ca06d6c99994/Network Sample Diagram.vst",
+            "size": "1043968",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 template to create a visual overview of your network. This template provides a sample network diagram with various equipment and connections, including devices and services with full Internet access, a virtual private network (VPN), an FTP server with a dedicated firewall and a company network protected by an additional firewall. It uses standard Visio shapes for detailed network diagrams, network and peripherals, servers, and computers and monitors linked to an external data source to track data for each shape. Use the included Microsoft Excel spreadsheet to customize this template with your own network assets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visio sample network.xlsx",
+        "Network Sample Diagram.vst"
+    ],
+    "detailsSection_file_size": [
+        "18.9 KB",
+        "1019.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the template to your computer.  To customize the data linked to the template, download Visio sample network.xlsx and populate it with your own asset data.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26527",
+    "downloadPreload": true
+}

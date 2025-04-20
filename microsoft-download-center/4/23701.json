@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2008 GDIPLUS.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Visual Studio 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs90-kb972221-x86.exe",
+            "url": "https://download.microsoft.com/download/4/d/8/4d82eb85-dd88-48df-925d-6ed5db26351d/VS90-KB972221-x86.exe",
+            "size": "3612584",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Visual Studio 2008 and gain complete control over it. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB972221",
+        "name": "KB972221"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS09-062",
+        "name": "MS09-062"
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "vs90-kb972221-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<B>Note:</B> More information about Service Pack levels currently supported for the platforms listed above can be found in the following page: <a href=\"http://go.microsoft.com/fwlink/?LinkId=164675\">Microsoft Product Support Lifecycle</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkId=162544\">KB972221</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 972221",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=162544"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23701",
+    "downloadPreload": true
+}

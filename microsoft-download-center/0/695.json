@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2003 Document: Office 2003 Service Pack 3 White Paper",
+    "downloadDescription": "This white paper discusses the benefits of deploying Microsoft Office 2003 Service Pack 3 (SP3) before upgrading to the 2007 Microsoft Office system, and details improvements to security and user experience.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Office 2003 Service Pack 3.docx",
+            "url": "https://download.microsoft.com/download/9/d/5/9d59c5d2-8e8d-4d29-b2b5-0f5877fcc997/Microsoft Office 2003 Service Pack 3.docx",
+            "size": "224604",
+            "version": "1",
+            "datePublished": "7/15/2024 3:09:27 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Office 2003 Service Pack 3.doc",
+            "url": "https://download.microsoft.com/download/9/d/5/9d59c5d2-8e8d-4d29-b2b5-0f5877fcc997/Microsoft Office 2003 Service Pack 3.doc",
+            "size": "304640",
+            "version": "1",
+            "datePublished": "7/15/2024 3:09:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper discusses the benefits of deploying Office 2003 SP3 before upgrading to the 2007 Office system, and details improvements to security and user experience. Office 2003 SP3 is the culmination of several years of improvements to the product suite. Office 2003 SP3 improves performance and simplifies use of key Microsoft Office programs while providing tighter coupling to the new Microsoft Windows Vista operating system and 2007 Microsoft Office system. Also included with Office 2003 SP3 is a crucial update that addresses security issues for legacy file formats and new tools to protect the company\u2019s IT and intellectual assets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Office 2003 Service Pack 3.docx",
+        "Microsoft Office 2003 Service Pack 3.doc"
+    ],
+    "detailsSection_file_size": [
+        "219.3 KB",
+        "297.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download applies to the following Microsoft Office program:</b> <br/>\n<ul>\n<li>Microsoft Office 2003</li> \n</ul>\n</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/><br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> link (above).</li>\n<li>Select the file and then save it to your hard disk.</li>\n</ol>\n<b>Instructions for use:</b> <br/><br/>\nOpen this document in Microsoft Word to read or print it.\n<br/><br/>\n\n<b>To remove this download:</b>\n<br/>\n<br/>\nDelete the document from your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "more Microsoft Office Downloads",
+            "url": "http://office.microsoft.com/downloads/default.aspx"
+        },
+        {
+            "title": "office 2003 Service Pack 3",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=E25B7049-3E13-433B-B9D2-5E3C1132F206"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "695",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Single Sign-On from Active Directory to a Windows Azure Application Whitepaper",
+    "downloadDescription": "Single Sign-On from Active Directory to a Windows Azure Application Whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Single Sign-On from Active Directory to a Windows Azure Application Whitepaper-RTW.docx",
+            "url": "https://download.microsoft.com/download/f/2/6/f26e80c5-c43b-4913-99ab-f2e4dfbfcbbf/Single Sign-On from Active Directory to a Windows Azure Application Whitepaper-RTW.docx",
+            "size": "1126613",
+            "version": "December 2010",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Single Sign-On from Active Directory to a Windows Azure Application Whitepaper-RTW.pdf",
+            "url": "https://download.microsoft.com/download/f/2/6/f26e80c5-c43b-4913-99ab-f2e4dfbfcbbf/Single Sign-On from Active Directory to a Windows Azure Application Whitepaper-RTW.pdf",
+            "size": "1736082",
+            "version": "December 2010",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains step-by-step instructions for using Windows\u00ae Identity Foundation, Windows Azure, and Active Directory Federation Services (AD FS) 2.0 for achieving SSO across web applications that are deployed both on premises and in the cloud. Previous knowledge of these products is not required for completing the proof of concept (POC) configuration. This document is meant to be an introductory document, and it ties together examples from each component into a single, end-to-end example. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "December 2010",
+    "detailsSection_file_name": [
+        "Single Sign-On from Active Directory to a Windows Azure Application Whitepaper-RTW.docx",
+        "Single Sign-On from Active Directory to a Windows Azure Application Whitepaper-RTW.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010\r\nAdobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Download the document to your local drive and open using either Microsoft Word 2010 or Adobe Reader, depending of the document format",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13789",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "hash files - Hotfix update for Exchange Server 2016 CU23",
+    "downloadDescription": "hash",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange_2016_CU23_HU15.csv",
+            "url": "https://download.microsoft.com/download/4a073217-88ca-40e4-a3fd-1e3e04fbf1c6/Exchange_2016_CU23_HU15.csv",
+            "size": "1898",
+            "version": "CU23",
+            "datePublished": "4/17/2025 6:08:12 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "multi-locale hash files for Hotfix update for Exchange Server 2016 CU23",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5050674",
+        "name": "5050674"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "CU23",
+    "detailsSection_file_name": [
+        "Exchange_2016_CU23_HU15.csv"
+    ],
+    "detailsSection_file_size": [
+        "1.9 KB"
+    ],
+    "detailsSection_file_date": "4/17/2025",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "none",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108140",
+    "downloadPreload": true
+}

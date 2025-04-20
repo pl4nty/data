@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Platform Ready Test Tool 4.1 (MPR Test Tool)",
+    "downloadDescription": "Download the Microsoft Platform Ready Test Tool v4.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Requirements for Windows Server App Certification Program_Windows Server 2012 R2.xps",
+            "url": "https://download.microsoft.com/download/8/a/0/8a08a736-718c-4934-b42c-288c130a87b8/Requirements for Windows Server App Certification Program_Windows Server 2012 R2.xps",
+            "size": "1745015",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:12:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Platform Ready Test Tool is designed to help test your applications for compatibility with latest technologies and platforms from Microsoft. Use this tool to achieve testing status in the Microsoft Platform Ready programs.\r\nThe MPR Test Tool is a fully automated, wizard style tool that implements technical requirements described in the Microsoft Platform Ready Test Requirements Criteria.\r\nThis tool is also recommended for Customers to evaluate third party applications and for testing Line of Business applications.\r\nDepending on the platform the tool is installed, a different set of Competency checks will be available.\r\nThis tool is required to be used to qualify for the Microsoft Platform Ready Programs and the Windows Server 2012 Application Certification. \r\nThe Windows Server 2012 test in this tool can help improve compatibility and Security of Server Applications. Testing with this tool is required to participate in the Windows Server Application Certification Program.\r\n\r\n\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Requirements for Windows Server App Certification Program_Windows Server 2012 R2.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "The MPR Test Tool supports the limited resources of Windows Server 2012 Server Core. \r\nRun MPRConsole.exe located in the Program Files installation directory when testing on Server Core.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52048",
+    "downloadPreload": true
+}

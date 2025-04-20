@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "Authentication in SharePoint 2013",
+    "downloadDescription": "This model summarizes the types of authentication that are available in SharePoint 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SP2013_authentication.pdf",
+            "url": "https://download.microsoft.com/download/7/d/c/7dcaee6b-4429-4a2a-801a-00bcf26b9ac4/SP2013_authentication.pdf",
+            "size": "274498",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:33:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP2013_authentication.vsd",
+            "url": "https://download.microsoft.com/download/7/d/c/7dcaee6b-4429-4a2a-801a-00bcf26b9ac4/SP2013_authentication.vsd",
+            "size": "808960",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:33:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "SharePoint 2013 supports user authentication, app authentication, and server-to-server authentication. In addition to descriptions of the types of authentication, this model includes illustrations that demonstrate the flow of data during each type of authentication.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "SP2013_authentication.pdf",
+        "SP2013_authentication.vsd"
+    ],
+    "detailsSection_file_size": [
+        "268.1 KB",
+        "790.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39072",
+    "downloadPreload": true
+}

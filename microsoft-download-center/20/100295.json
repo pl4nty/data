@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Reset Windows Search PowerShell script",
+    "downloadDescription": "Use this script to reset Windows Search",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ResetWindowsSearchBox.ps1",
+            "url": "https://download.microsoft.com/download/c/b/5/cb56cadd-1de8-4a8a-9fb0-71796d3a0596/ResetWindowsSearchBox.ps1",
+            "size": "3898",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Fix problems with Windows Search by running the ResetWindowsSearchBox.ps1 PowerShell script. You must have Administrator permissions to run this script.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4520146",
+        "name": "4520146"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "ResetWindowsSearchBox.ps1"
+    ],
+    "detailsSection_file_size": [
+        "3.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 May 2019 Update",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "If the Windows 10 May 2019 Update or a later update is installed, use Windows PowerShell to reset Windows Search. To do this, follow these steps.\r\n<BR/>\r\n<BR/>\r\n<B>Note</B> You must have administrator permissions to run this script.\r\n<OL>\r\n<LI>Click the <B>Download</B> button and save ResetWindowsSearchBox.ps1 to a local folder.</LI>\r\n<LI>Right-click the file that you saved, and select <B>Run with PowerShell</B>.</LI>\r\n<LI>If you are asked \"Do you want to allow this app to make changes to your device?,\" select <B>Yes</B>.</LI>\r\n<LI>The PowerShell script resets the Windows Search feature. When the word \"Done\" appears, close the PowerShell window.</LI>\r\n<LI>If you receive a \"Cannot be loaded because running scripts is disabled on this system\" error message, enter the following command on the command line of the PowerShell window, and then press Enter:\r\n<BR/>\r\n<BR/>\r\n<B>Get-ExecutionPolicy</B>\r\n<BR/>\r\n<BR/>\r\n<B>Note</B> The current policy appears in the window. For example, you might see <B>Restricted</B>. We recommend that you note this value because you'll have to use it later.\r\n<BR/>\r\n</LI>\r\n<LI>Enter the following command on the command line of the PowerShell window, and then press Enter:\r\n<BR/>\r\n<BR/>\r\n<B>Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted</B>\r\n<BR/>\r\n<BR/>\r\n<B>Note</B> You'll receive a warning message that explains the security risks of an execution policy change. Press Y, and then press Enter to accept the change.\r\n<BR/>\r\n<BR/>\r\nTo learn more about PowerShell execution policies, see <a href=\"https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7\">About Execution Policies</a>.\r\n<BR/>\r\n</LI>\r\n<LI>After the policy change is completed, close the window, and then repeat steps 2\u20134. However, when the \"Done\" message appears this time, DON'T close the PowerShell window. Instead, press any key to continue.</LI>\r\n<LI>Revert to your previous PowerShell execution policy setting. To do this, enter the following command on the command line of the PowerShell window, press the Spacebar, enter the policy value that you noted in step 5, and then press Enter: \r\n<BR/>\r\n<BR/>\r\n<B>Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy</B>\r\n<BR/>\r\n<BR/>\r\nFor example, if the policy that you noted in step 5 was <B>Restricted</B>, the command would resemble the following:\r\n<BR/>\r\n<BR/>\r\n<B>Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Restricted</B>\r\n<BR/>\r\n<BR/>\r\n<B>Note</B> You'll receive a warning message that explains the security risks of an execution policy change. Press Y, and then press Enter to accept the change and revert to your previous policy setting.\r\n<BR/>\r\n</LI>\r\n<LI>Close the PowerShell window.</LI>\r\n</OL>\r\n<B>Note</B> If your organization has disabled the ability to run scripts, contact your administrator for help.",
+    "relatedResourcesSection": [
+        {
+            "title": "fix problems in Windows Search",
+            "url": "https://internal.support.services.microsoft.com/en-us/help/4520146/fix-problems-in-windows-search"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100295",
+    "downloadPreload": true
+}

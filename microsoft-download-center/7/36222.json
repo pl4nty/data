@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Tools Documentation: Resource Descriptions",
+    "downloadDescription": "This help file describes the Resource Descriptions tool that helps you find technical information about Dexterity-based applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ResDesc.chm",
+            "url": "https://download.microsoft.com/download/4/c/1/4c1f6a38-7447-4836-bb9b-bb8465589747/ResDesc.chm",
+            "size": "67294",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:31:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the Resource Descriptions help (Resdesc.chm), which describes the Resource Descriptions tool information in HTML Help format. The help is in .chm file format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "ResDesc.chm"
+    ],
+    "detailsSection_file_size": [
+        "65.7 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>You must be using Microsoft Dynamics GP 2013 </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the help file.</LI>\n<LI>Save the file to your computer.</LI>\n<LI>We recommend that you save it to the appropriate folder in your Microsoft Dynamics GP 2013 installation folder, so you can access the updated help from within the product.</LI>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36222",
+    "downloadPreload": true
+}

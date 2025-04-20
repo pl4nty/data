@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "OMS Log Analytics Forwarder (Public Preview)",
+    "downloadDescription": "The OMS Forwarder is a tool that sends data from devices with no Internet connectivity to OMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OMG Log Analytics Forwarder Official Documentation.docx",
+            "url": "https://download.microsoft.com/download/9/8/8/9881bf4c-c16a-4ab9-bb9b-0611b7fe1c82/OMG Log Analytics Forwarder Official Documentation.docx",
+            "size": "207278",
+            "version": "Private Preview",
+            "datePublished": "7/15/2024 4:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft OMS Log Analytics Forwarder.msi",
+            "url": "https://download.microsoft.com/download/9/8/8/9881bf4c-c16a-4ab9-bb9b-0611b7fe1c82/Microsoft OMS Log Analytics Forwarder.msi",
+            "size": "888832",
+            "version": "Private Preview",
+            "datePublished": "7/15/2024 4:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The OMS Log Analytics Forwarder enables customers send data to a central server which has access to the Internet. OMS Log Analytics Forwarder is a HTTP forward proxy that supports HTTP tunneling via HTTP CONNECT command. The Forwarder can handle up to 1000 OMS concurrent connected devices if run on a 4 core CPU, 8GB Windows Server with a 1Gbps network connection. In order to use the OMS Log Analytics Forwarder, you neeed to install the OMS agent on the Forwarder Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Private Preview",
+    "detailsSection_file_name": [
+        "OMG Log Analytics Forwarder Official Documentation.docx",
+        "Microsoft OMS Log Analytics Forwarder.msi"
+    ],
+    "detailsSection_file_size": [
+        "202.4 KB",
+        "868.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022Client SKU: Windows 7, Windows 8.1, Windows 10 \r\n\r\n\r\n\u2022Server SKU: W2K8 R2, W2012, W2012R2\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "1. Install the OMS agent on the server you are going to install the Forwarder\r\n\r\n2. Install the OMS Log Analytics Forwarder\r\n\r\n3. Configure OMS agents to use the OMS Log Analytics Forwarder to send data",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51603",
+    "downloadPreload": true
+}

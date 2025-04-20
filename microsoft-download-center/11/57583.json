@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Secure and Manage Your Microsoft Azure Resources Installer",
+    "downloadDescription": "Secure and Manage Your Microsoft Azure Resources Installer",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Secure and manage your Microsoft Azure resources Installer.exe",
+            "url": "https://download.microsoft.com/download/a/4/2/a4277af8-e1bd-476c-9237-a976d61941fa/Secure and manage your Microsoft Azure resources Installer.exe",
+            "size": "53058632",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the installer for the Security and Management DemoMate demo titled \"Secure and Manage Your Microsoft Azure Resources.\" ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Secure and manage your Microsoft Azure resources Installer.exe"
+    ],
+    "detailsSection_file_size": [
+        "50.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, 8 or 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Downloand and install",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57583",
+    "downloadPreload": true
+}

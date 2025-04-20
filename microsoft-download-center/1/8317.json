@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Framework 4 Beta 1 enabled to use Software Transactional Memory (STM.NET Version 1.0)",
+    "downloadDescription": "MSDN DevLab of Software Transactional Memory",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "STM_User_Guide.pdf",
+            "url": "https://download.microsoft.com/download/9/5/6/9560741a-eefc-4c02-822c-bb0afe860e31/STM_User_Guide.pdf",
+            "size": "2674963",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Software Transactional Memory (STM.NET) is a mechanism for efficient isolation of shared state.  The programmer demarcates a region of code as operating within a transaction that is \u201catomic\u201d and \u201cisolated\u201d from other transacted code running concurrently.\r\n\r\nTransactional memory is considered a promising technology by the academic community and is repeatedly brought up as a welcome technology for the upcoming wave of applications which scale on modern multi-core hardware. The goal is to be able to exploit concurrency by using components written by experts and consumed by application programmers who can then compose together these components using STM. Transactional memory provides an easy-to-use mechanism to do this safely.\r\n\r\nSTM is not a 1:1 lock replacement and provides more functionality than critical sections, reader-writer locks, and other traditional synchronization methods. This functionality has overhead; the hope is that the scalability, productivity, and deadlock freedom gained by this mechanism outweigh the degradation in serial performance.\r\n\r\nThis is an experimental release of the .NET Framework that allows C# programmers to try out this technology, specifically a particular implementation of STM. We are interested in your feedback on your experience using this programming model. Is it valuable and easy-to-use? Does it provide enough functionality? Are you willing to pay with serial performance losses to gain greater scalability? Our implementation is integrated with the framework and tools, it has been extended to provide coexistence with locks, interoperate with traditional transactional technologies, and safely work with existing code.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "STM_User_Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Xp x32\r\nWindows Vista x32\r\nVisual Studio 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "STM.NET cannot be installed on a system with Visual Studio 2010 or an with an existing .NET Framework V4.\r\n\r\n1. Download and Install the .NET Framework enabled to use Software Transactional Memory. (dotNetFx40_STMNet_10_x86.exe)\r\n2. Download and Install the samples, documentation, and configuration files necessary to use Visual Studio 2008 with .NET Framework installed in the previous step.\r\n (STM.NET_v1_Samples_and_Documents.msi)\r\n3. Read the STM Programming Guide to get started with STM.NET.\r\n(STM_USer_Guide.pdf)\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "stM.NET Team Blog",
+            "url": "http://blogs.msdn.com/stmteam"
+        },
+        {
+            "title": "stM.NET Forum",
+            "url": "http://social.msdn.microsoft.com/Forums/en-US/stmdevlab/threads"
+        },
+        {
+            "title": "msdn Devlabs Home",
+            "url": "http://www.msdn.microsoft.com/devlabs/"
+        },
+        {
+            "title": "msdn Devlab STM Home",
+            "url": "http://www.msdn.microsoft.com/en-us/devlabs/ee334183.aspx."
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8317",
+    "downloadPreload": true
+}

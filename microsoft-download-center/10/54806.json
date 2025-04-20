@@ -1,0 +1,281 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Remote Desktop Services Management Pack for Windows Server 2016 and above",
+    "downloadDescription": "The Remote Desktop Services Management Pack helps you manage computers that are running Remote Desktop Services on Windows Server 2016 and above.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2016 and above MP Guide for Remote Desktop Services.docx",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Windows Server 2016 and above MP Guide for Remote Desktop Services.docx",
+            "size": "104491",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "System Center MP for Remote Desktop Services 2016 and above.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/System Center MP for Remote Desktop Services 2016 and above.msi",
+            "size": "671744",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.TRK.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.TRK.msi",
+            "size": "815104",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.SVE.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.SVE.msi",
+            "size": "806912",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.RUS.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.RUS.msi",
+            "size": "847872",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.PTG.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.PTG.msi",
+            "size": "815104",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.PTB.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.PTB.msi",
+            "size": "819200",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.PLK.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.PLK.msi",
+            "size": "839680",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.NLD.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.NLD.msi",
+            "size": "815104",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.KOR.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.KOR.msi",
+            "size": "761856",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.JPN.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.JPN.msi",
+            "size": "761856",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.ITA.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.ITA.msi",
+            "size": "811008",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.HUN.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.HUN.msi",
+            "size": "843776",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.FRA.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.FRA.msi",
+            "size": "831488",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.ESN.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.ESN.msi",
+            "size": "815104",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.DEU.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.DEU.msi",
+            "size": "843776",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.CSY.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.CSY.msi",
+            "size": "839680",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.CHT.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.CHT.msi",
+            "size": "729088",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Windows Server 2016 Management Pack for RDS.CHS.msi",
+            "url": "https://download.microsoft.com/download/6/b/c/6bcec205-3ce4-46fc-adf7-aa92b4a05af7/Microsoft Windows Server 2016 Management Pack for RDS.CHS.msi",
+            "size": "733184",
+            "version": "10.0.6.0",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Remote Desktop Services Management Pack helps you manage your computers that are running Remote Desktop Services on Windows Server 2016 and above by monitoring the health of the following Remote Desktop Services role services: \r\n<ul>\r\n<li> Remote Desktop Session Host</li>\r\n<li> Remote Desktop Licensing</li>\r\n<li> Remote Desktop Web Access</li>\r\n<li> Remote Desktop Gateway</li>\r\n<li> Remote Desktop Connection Broker</li>\r\n<li> Remote Desktop Virtualization Host</li>\r\n</ul>\r\n<br/><br/>\r\nWhen there is problem with the availability or performance of one of these components, uses the Windows Server 2016 Remote Desktop Services Management Pack to detect the issue and alert you so that you can diagnose the problem and fix it. \r\n<br/><br/>\r\nThe management pack can help you identify issues before they disrupt your infrastructure, improving the availability and performance of the Windows-based servers that your business depends on. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.6.0",
+    "detailsSection_file_name": [
+        "Windows Server 2016 and above MP Guide for Remote Desktop Services.docx",
+        "System Center MP for Remote Desktop Services 2016 and above.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.TRK.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.SVE.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.RUS.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.PTG.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.PTB.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.PLK.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.NLD.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.KOR.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.JPN.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.ITA.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.HUN.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.FRA.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.ESN.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.DEU.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.CSY.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.CHT.msi",
+        "Microsoft Windows Server 2016 Management Pack for RDS.CHS.msi"
+    ],
+    "detailsSection_file_size": [
+        "102.0 KB",
+        "656.0 KB",
+        "796.0 KB",
+        "788.0 KB",
+        "828.0 KB",
+        "796.0 KB",
+        "800.0 KB",
+        "820.0 KB",
+        "796.0 KB",
+        "744.0 KB",
+        "744.0 KB",
+        "792.0 KB",
+        "824.0 KB",
+        "812.0 KB",
+        "796.0 KB",
+        "824.0 KB",
+        "820.0 KB",
+        "712.0 KB",
+        "716.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\r\n<ul>\r\n<li>System Center Operations Manager 2022</li>\n<li>System Center Operations Manager 2019</li>\n<li>System Center Operations Manager 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "\u2022 Note: There are multiple files available for this download. Once you click on the \"Download\" button, you will be prompted to select the files you need.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54806",
+    "downloadPreload": true
+}

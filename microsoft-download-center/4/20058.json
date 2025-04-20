@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "CGI Case Study",
+    "downloadDescription": "With Microsoft's patterns & practices technical and architectural guidance, CGI was able to provide Revenu Qu\u00e9bec with the proper tools for the design and implementation of their new system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MRQCaseStudyForPnPShowcase v2 0.pdf",
+            "url": "https://download.microsoft.com/download/a/8/9/a8929029-7e7c-4539-bdae-75e59e57be46/MRQCaseStudyForPnPShowcase v2 0.pdf",
+            "size": "146081",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Revenu Qu\u00e9bec decided to redesign the systems that supported two of its mission-critical business processes, i.e. the administration of personal and corporate income tax. A total of 6 systems are involved in the mission critical business processes that are to be<br />\noverhauled. Revenu Qu\u00e9bec called upon CGI's Qu\u00e9bec city business unit to undertake this project after being selected through a formal public RFP/proposal process. Providing the proper tools for the design and implementation of theses systems and the means of favoring productivity and consistent work are elements of the strategy to ensure the quality delivery of theses conerstone systems.  This resulted in the creation of the XP Toolbox in the means of providing end-to-end services that automate and guide the software development process so that focus may be put on the business functionality at hand.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MRQCaseStudyForPnPShowcase v2 0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "142.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "None",
+    "additionalInformationSection": "For additional information contact MicrosoftDev@cgi.com",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20058",
+    "downloadPreload": true
+}

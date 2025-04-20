@@ -1,0 +1,197 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 SP3 PowerPivot\u00ae for Microsoft SharePoint\u00ae 2016",
+    "downloadDescription": "Microsoft SQL Server 2016 SP3 PowerPivot for SharePoint 2016 extends SharePoint Server 2016 to add server-side data refresh processing, collaboration, and management support for PowerPivot workbooks.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "spPowerPivot16.msi",
+            "url": "https://download.microsoft.com/download/7/8/b/78bf9a97-809a-45c0-97d7-d9ac0e4f6c0d/spPowerPivot16.msi",
+            "size": "105160704",
+            "version": "13.0.6300.2",
+            "datePublished": "6/15/2024 4:59:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2016 SP3 PowerPivot for SharePoint 2013 extends SharePoint Server 2016 to add server-side data refresh processing, collaboration, and management support for PowerPivot workbooks and Excel workbooks with advanced data models to SharePoint. This package is only available in a 64-bit version. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.6300.2",
+    "detailsSection_file_name": [
+        "spPowerPivot16.msi"
+    ],
+    "detailsSection_file_size": [
+        "100.3 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "\n<ul>\n<li>See <a href=\"http://go.microsoft.com/fwlink/?LinkID=232658\"> Hardware and software requirements for SharePoint</a></li>\n<li>The computer must have the following installed: Microsoft SharePoint Server 2016.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To install and use Microsoft SQL Server 2016 SP3 PowerPivot for Microsoft SharePoint, complete the following steps in this order:<br />\n<br />\n<ol>\n<li>Run SpPowerPivot16.msi.</li>\n<li>Click Next on the Welcome page.</li>\n<li>Review and accept the license agreement, then click Next.</li>\n<li>On the Feature Selection page, all of the features are selected by default.</li>\n<li>Click Next.</li>\n<li>Click Install to install to finish the installation.</li>\n\n\n</ol>\n\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103441",
+    "downloadPreload": true
+}

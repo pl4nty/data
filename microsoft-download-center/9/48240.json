@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Enhanced Mitigation Experience Toolkit (EMET 5.2)",
+    "downloadDescription": "This paper contains an introduction to the Enhanced Mitigation Experience Toolkit (EMET) and step-by-step instructions for creating a test lab that demonstrates the deployment and configuration of EMET 5.2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TLG EMET 5.2.docx",
+            "url": "https://download.microsoft.com/download/8/9/5/89536019-2252-4788-9894-7901811f980f/TLG EMET 5.2.docx",
+            "size": "1001666",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Enhanced Mitigation Experience Toolkit (EMET) is an anti-vulnerability exploitation toolkit that can be layered onto the Windows OS in addition to other security technologies to raise the bar for exploits to work properly.  It has been increasingly recommended by various IT Security frameworks and governing bodies.  EMET provides additional memory corruption protection for commonly used Internet facing applications.  In the past 2 years EMET has commonly been detailed as a known mitigation for 0-day vulnerabilities that were actively being exploited.\r\n\r\nFor more information about EMET, see http://Microsoft.com/EMET & http://aka.ms/EMET\r\n\r\nMicrosoft Test Lab Guides (TLGs) are a set of documents that step you through the configuration and demonstration of a Microsoft technology or product in a standardized test lab environment, which starts with a common base configuration that mimics a simplified intranet and the Internet. TLGs are designed to be modular, extensible, and stackable to configure complex, multi-product solutions. TLGs make learning about products, technologies, and solutions easier by providing that crucial hands-on, \u201cI built it out myself\u201d experience.\r\n\r\nFor more information, see Test Lab Guides at http://microsoft.com/testlabguides.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TLG EMET 5.2.docx"
+    ],
+    "detailsSection_file_size": [
+        "978.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\n\r\nWindows 7, Windows 8, Windows 8.1, Windows Server 2003, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Vista  \r\n\r\n\r\n- EMET 5.2 requires .NET Framework 4. \r\n - For Internet Explorer 10 on Windows 8 you need to install KB2790907 \u2013 a mandatory Application Compatibility update that has been released on March 12th, 2013 or any other Application Compatibility updates for Windows 8 after that. \r\n\r\n\r\n EMET 5.2 supports the following operating systems and service pack levels: \r\n\r\n\r\nClient Operating Systems\r\n \u2022 Windows Vista Service Pack 2\r\n \u2022 Windows 7 Service Pack 1\r\n \u2022 Windows 8 \r\n \u2022 Windows 8.1 \r\n\r\n\r\nServer Operation Systems\r\n \u2022 Windows Server 2003 Service Pack 2\r\n \u2022 Windows Server 2008 Service Pack 2\r\n \u2022 Windows Server 2008 R2 Service Pack 1 \r\n \u2022 Windows Server 2012 \r\n \u2022 Windows Server 2012 R2 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Instructions included in this guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48240",
+    "downloadPreload": true
+}

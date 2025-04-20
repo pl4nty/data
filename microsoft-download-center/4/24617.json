@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Michael Howard Teaches Threat Modeling",
+    "downloadDescription": "In this session, Michael Howard discusses threat modeling and the important role it plays in the Microsoft Security Development Lifecycle (SDL)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Michael Howard Threat Modeling.wmv",
+            "url": "https://download.microsoft.com/download/b/f/9/bf92d114-76f1-4046-a54c-5b3887dd09f7/Michael Howard Threat Modeling.wmv",
+            "size": "31435945",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:47:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Michael Howard Threat Modeling.ppsx",
+            "url": "https://download.microsoft.com/download/b/f/9/bf92d114-76f1-4046-a54c-5b3887dd09f7/Michael Howard Threat Modeling.ppsx",
+            "size": "3091109",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:47:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "At Microsoft, threat modeling is a critical step in developing more secure software and an integral part of the Microsoft Security Development Lifecycle (SDL).  <br />\nIn this session, Michael Howard explains all about threat modeling - the theory and practice behind it, including an interactive threat modeling exercise.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Michael Howard Threat Modeling.wmv",
+        "Michael Howard Threat Modeling.ppsx"
+    ],
+    "detailsSection_file_size": [
+        "30.0 MB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2003 or later; Media player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.<br />\n2. Do one of the following:<br />\n\t\u25cb To start the installation immediately, click Open or Run this program from its current location.<br />\n\t\u25cb To copy the download to your computer for installation at a later time, click Save or Save this program to disk.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Development Lifecycle (SDL)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=2412C443-27F6-4AAC-9883-F55BA5B01814&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24617",
+    "downloadPreload": true
+}

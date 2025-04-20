@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 R2 Standard on Windows Server 2008 R2 SP1 Standard (x64)",
+    "downloadDescription": "This download comes as a pre-configured VHD. This download enables you evaluate SQL Server 2008 R2 Standard Edition VHD for 180 days.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TD03WS08SFR2SP1x64_SQL08.part05.rar",
+            "url": "https://download.microsoft.com/download/4/b/7/4b7fce20-87c7-4c27-b529-0c253deddee9/TD03WS08SFR2SP1x64_SQL08.part05.rar",
+            "size": "1048576000",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TD03WS08SFR2SP1x64_SQL08.part01.exe",
+            "url": "https://download.microsoft.com/download/4/b/7/4b7fce20-87c7-4c27-b529-0c253deddee9/TD03WS08SFR2SP1x64_SQL08.part01.exe",
+            "size": "1048576000",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TD03WS08SFR2SP1x64_SQL08.part02.rar",
+            "url": "https://download.microsoft.com/download/4/b/7/4b7fce20-87c7-4c27-b529-0c253deddee9/TD03WS08SFR2SP1x64_SQL08.part02.rar",
+            "size": "1048576000",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TD03WS08SFR2SP1x64_SQL08.part06.rar",
+            "url": "https://download.microsoft.com/download/4/b/7/4b7fce20-87c7-4c27-b529-0c253deddee9/TD03WS08SFR2SP1x64_SQL08.part06.rar",
+            "size": "798269112",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TD03WS08SFR2SP1x64_SQL08.part04.rar",
+            "url": "https://download.microsoft.com/download/4/b/7/4b7fce20-87c7-4c27-b529-0c253deddee9/TD03WS08SFR2SP1x64_SQL08.part04.rar",
+            "size": "1048576000",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TD03WS08SFR2SP1x64_SQL08.part03.rar",
+            "url": "https://download.microsoft.com/download/4/b/7/4b7fce20-87c7-4c27-b529-0c253deddee9/TD03WS08SFR2SP1x64_SQL08.part03.rar",
+            "size": "1048576000",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Start evaluating SQL Server 2008 R2 Standard today.  SQL Server 2008 R2 provides a trusted, productive and intelligent data platform that enables you to run your most demanding mission-critical applications, reduce time and cost of development and management of applications, and deliver actionable insight to your entire organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "TD03WS08SFR2SP1x64_SQL08.part05.rar",
+        "TD03WS08SFR2SP1x64_SQL08.part01.exe",
+        "TD03WS08SFR2SP1x64_SQL08.part02.rar",
+        "TD03WS08SFR2SP1x64_SQL08.part06.rar",
+        "TD03WS08SFR2SP1x64_SQL08.part04.rar",
+        "TD03WS08SFR2SP1x64_SQL08.part03.rar"
+    ],
+    "detailsSection_file_size": [
+        "1000.0 MB",
+        "1000.0 MB",
+        "1000.0 MB",
+        "761.3 MB",
+        "1000.0 MB",
+        "1000.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Hyper-V is required to run this virtual machine.  In addition to Hyper-V, you will need a 64-bit system with hardware-assisted virtualization enabled, as well as data execution prevention (DEP).<br/>\r\n<br/>\r\nHyper-V can be run from one of the following OS environments:<br/>\r\n - Windows Server 2008 SP2<br/>\r\n - Windows Server 2008 R2<br/>\r\n - Windows Server 2008 R2 SP1<br/>\r\n<br/>\r\nPrerequisites, installation steps, OS recommendations and known issues of Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc753637(WS.10).aspx\">here</a>.<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "1.  Download all 6 parts<br/>\r\n2.  Run the self-extracting RAR archive.  You will be prompted to accept the EULA, after which the VM files will be extracted.<br/>\r\n3.  Import the VM into Hyper-V<br/>\r\n4.  VM local admin password is <b>pass@word1</b><br/>\r\n<br/>\r\n\r\nBy default, this VM comes configured <b>without</b> a virtual NIC defined.  You will need to configure one in order to connect to the Internet - a requirement to begin your 180 day evaluation.<br/>\r\n<br/>\r\nAlso, if you want to add more memory beyond the defaulted 2GB, do so before you launch the VM (Note: You can add a virtual NIC while the VM is running)<br/>\r\n<br/>\r\nSpecific details on how to add this image to the Hyper-V library can be found in the README file included in this VM package.<br/>\r\n<br/>\r\nIf you have any questions, please contact <a href=\"mailto:vhdinfo@microsoft.com\">vhdinfo</a><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hyper-V",
+            "url": "http://technet.microsoft.com/en-us/library/cc753637(WS.10).aspx"
+        },
+        {
+            "title": "sql Server 2008 R2",
+            "url": "http://www.microsoft.com/sqlserver/2008/en/us/R2.aspx"
+        },
+        {
+            "title": "windows Server 2008 R2",
+            "url": "http://www.microsoft.com/windowsserver2008/en/us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26113",
+    "downloadPreload": true
+}

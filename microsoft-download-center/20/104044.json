@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Database Migration between Azure SQL (DB/MI) and SQL Server using SmartBulkCOpy",
+    "downloadDescription": "Migrate databases between the various Azure SQL offerings as well as reverse migrate the databases back to on-premises SQL Servers running in the customers environments. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DatabaseMigrationSBC.zip",
+            "url": "https://download.microsoft.com/download/a/c/5/ac5be82b-cfd0-4e6f-a303-fdeb11347e5b/DatabaseMigrationSBC.zip",
+            "size": "45828",
+            "version": "1.0s",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Database Migration / Reverse Migration between Azure SQL (DB/MI) and SQL Server using SmartBulkCopy. Migrate databases between the various Azure SQL offerings as well as reverse migrate the databases back to on-premises SQL Servers running in the customers environments.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0s",
+    "detailsSection_file_name": [
+        "DatabaseMigrationSBC.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a zipped folder that contains Database Compare Utility Tool and associated documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104044",
+    "downloadPreload": true
+}

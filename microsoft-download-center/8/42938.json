@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 and Retail POS Localization for Brazil",
+    "downloadDescription": "This white paper describes the country-specific features for Microsoft Dynamics AX 2012 R3 and Retail POS released for Brazil.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Retail and Enterprise POS Localization for Brazil.pdf",
+            "url": "https://download.microsoft.com/download/e/a/7/ea77dcd2-0d43-4071-b881-a65898eb3f14/Retail and Enterprise POS Localization for Brazil.pdf",
+            "size": "491674",
+            "version": "AX 2012 R3",
+            "datePublished": "7/15/2024 3:38:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper explains how to set up Microsoft Dynamics AX 2012 R3 and Retail Point of Sale (POS), which are necessary to meet the requirements for the Programa Aplicativo Fiscal-Emissor de Cupom Fiscal (PAF-ECF) legislation specific to Brazil.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX 2012 R3",
+    "detailsSection_file_name": [
+        "Retail and Enterprise POS Localization for Brazil.pdf"
+    ],
+    "detailsSection_file_size": [
+        "480.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42938",
+    "downloadPreload": true
+}

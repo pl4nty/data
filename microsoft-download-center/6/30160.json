@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 NIC Teaming (LBFO) Deployment and Management",
+    "downloadDescription": "LBFO",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[Windows Server 2012 NIC Teaming (LBFO) Deployment and Management].docx",
+            "url": "https://download.microsoft.com/download/f/6/5/f65196aa-2ab8-49a6-a427-373647880534/[Windows Server 2012 NIC Teaming (LBFO) Deployment and Management].docx",
+            "size": "1478384",
+            "version": "April 2012",
+            "datePublished": "7/15/2024 3:29:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "NIC teaming, also known as Load Balancing/Failover (LBFO), allows multiple network adapters to be placed into a team for the purposes of bandwidth aggregation, and/or traffic failover to maintain connectivity in the event of a network component failure. This guide describes how to deploy and manage NIC Teaming with Windows Server 2012.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2012",
+    "detailsSection_file_name": [
+        "[Windows Server 2012 NIC Teaming (LBFO) Deployment and Management].docx"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 Release Candidate"
+    ],
+    "installInstructionSection": "Download this document to learn how to deploy and manage NIC Teaming, a Windows Server 2012 High Speed Networking component.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30160",
+    "downloadPreload": true
+}

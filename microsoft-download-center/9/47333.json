@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Application Request Routing 3.0 (x64)",
+    "downloadDescription": "Microsoft Application Request Routing (ARR) 3 for IIS is a proxy based routing module that forwards HTTP requests to application servers based on HTTP headers and server variables, and load balance algorithms.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "requestRouter_amd64.msi",
+            "url": "https://download.microsoft.com/download/e/9/8/e9849d6a-020e-47e4-9fd0-a023e99b54eb/requestRouter_amd64.msi",
+            "size": "2498560",
+            "version": "3.0.5311",
+            "datePublished": "7/15/2024 4:46:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Application Request Routing (ARR) for IIS is a proxy-based routing module that forwards HTTP requests to application servers based on HTTP headers, server variables, and load balance algorithms.<br /><br />\r\nARR Version 3 is an incremental release that includes all of the features from Version 2, and adds the following features:<br />\r\n<li>Websocket support</li><br />\r\n<li>Support for application-triggered session affinity opt out</li><br />\r\n<li>failcheck reliability improvements</li><br />\r\n<li>Various bug fixes</li><br /><br />\r\nARR version 3 and previous released cannot be installed side-by-side.<br /><br />\r\n\r\n<br />\r\n   <b>IMPORTANT - Changes in this release</b>\r\n   <ul>\r\n    <li>\r\n     Windows 10 Support - It is now possible to install ARR 3 on Windows 10 with this release\r\n    </li>\r\n    <li>\r\n     Web Farm Framework 1.1 is no longer required, Application Request Routing no longer has a dependency on Web Farm Framework 1.1\r\n    </li>\r\n    <li><b>Changes to load balancing algorithms available.</b>  The following algorithms have been <b>REMOVED</b> from Application Request Routing:\r\n     <ol>\r\n      <li>Weighted Total Traffic</li>\r\n      <li>Least Current Request</li>\r\n      <li>Least Response Time</li>\r\n     </ol>\r\n    </li>\r\n    <li>\r\n     Buffering on SignalR responses is now disabled.\r\n    </li>\r\n    <li>\r\n     Logging improvements made to help diagnose why requests failed with Status Code 502.3\r\n    </li>\r\n    <li>\r\n     This release also incorporates fixes in <A HREF=\"https://support.microsoft.com/en-us/kb/3016062\">KB3016062</A> \r\n    </li>\r\n   </ul>\r\n   <br />\r\n<br />\r\nClick the <b>Download</b> button on this page to start the download, then do one of the following:<br />\r\n<ul><li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li><br />\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li><br />\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.5311",
+    "detailsSection_file_name": [
+        "requestRouter_amd64.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li>Internet Information Services 7.0 or later must be installed</li>\r\n<li>For WebSockets support, Internet Information Services 8.0 or later is required, and the WebSockets module must be enabled</li>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012 Standard",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "ARR is dependent on several components:<br />\r\n<li>URL Rewrite</li><br />\r\n<li>External Cache module</li><br /><br />\r\nDo not attempt to install this package directly due to this dependency. To install ARR and all its components in the appropriate order, use the Microsoft Web Platform Installer (http://www.microsoft.com/web/downloads/platform.aspx) and search for ARR within it. Alternatively, read the following blog post for instructions on installing ARR manually: http://blogs.technet.com/b/erezs_iis_blog/archive/2013/11/27/installing-arr-manually-without-webpi.aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47333",
+    "downloadPreload": true
+}

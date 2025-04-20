@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Role-based Security Use Patterns for Developers",
+    "downloadDescription": "This white paper describes how the role-based security artifacts work together.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Role based security use patterns for developers_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/e/7/e/e7e0acab-9352-41d7-8036-87700a4de4ca/Role based security use patterns for developers_AX2012.pdf",
+            "size": "714939",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:27:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper explains to Microsoft Dynamics AX developers how the security artifacts should be configured when they are applied to various programming objects in the AOT. The challenges of under-permissioning, over-permissioning, and practical ease of use guide this discussion.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Role based security use patterns for developers_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "698.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39068",
+    "downloadPreload": true
+}

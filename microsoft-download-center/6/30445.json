@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "White Paper: Office 2013--Access Services Setup for an On-Premises Installation",
+    "downloadDescription": "This white paper provides instructions that will help you configure SQL Server 2012 for Access Services in SharePoint Server 2013. It includes instructions for an on-premises installation and configuration of Access Services on a server that is running SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AccessServices2013OnPremInstall.docx",
+            "url": "https://download.microsoft.com/download/8/0/4/8041d29a-8fd1-486e-bd2e-68558ba8af1f/AccessServices2013OnPremInstall.docx",
+            "size": "1113613",
+            "version": "4",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Because an Access app is a SharePoint app, you must first configure SharePoint Server 2013 as a SharePoint app server so that Access Services can successfully run Access apps. In addition, Access Services setup requires specific SQL Server 2012 configurations so that SQL Server 2012 can successfully store and manage the data for Access apps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "AccessServices2013OnPremInstall.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007, Microsoft Word 2010, Microsoft Word 2013, or Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save As to save this white paper to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30445",
+    "downloadPreload": true
+}

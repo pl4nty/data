@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Compact 2013 Update 5",
+    "downloadDescription": "Windows Embedded Compact 2013 Toolkit",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Compact2013Update5_Full.ISO",
+            "url": "https://download.microsoft.com/download/2/a/4/2a4eeb29-ebd6-4e9f-b219-face69c04a78/Compact2013Update5_Full.ISO",
+            "size": "2313261056",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:25:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\r\n<b>Attention!</b> \r\n<br/>\r\n<br/>\r\nYou will need to request a product activation key from <a href=\"http://www.microsoft.com/windowsembedded/en-us/downloads.aspx\">here</a> to install the product.\r\n<br/><br/>\r\n<b> Windows Embedded Compact 2013</b> is an OS delivered by Microsoft for small footprint devices that require flexible hardware and hard realtime support. With Compact 2013, OEMs in Retail, Healthcare and Manufacturing can bring intelligent systems to market that stand out through attractive, intuitive user experiences and seamless connections to cloud services.<br/><br/>\r\n\r\nDevelopers can customize and build a broad range of <b>small footprint</b> specialized devices with real time capabilities by using Platform Builder, a powerful embedded-specific development tool that works as an add-in to the familiar development environment of Microsoft Visual Studio 2012 or Visual Studio 2013.<br/><br/>\r\n\r\n<b>Functionality:</b> \r\n<br/>\r\n<br/>\r\nThis no-cost, downloadable Windows Embedded Compact 2013 toolkit gives you unrestricted access to all of Windows Embedded Compact 2013 and includes Platform Builder, the Compact Test Kit, and several board support packages for ARM and x86-based architectures so you can begin evaluating Windows Embedded Compact 2013 today. With the Compact 2013 toolkit, you can design, develop, build, and show prototype devices. \r\n<br/>\r\nYou will need to enter your full product license key during the installation. \r\n<br/><br/>\r\n<b>Important: </b>\r\n<br/>\r\n<br/>\r\nYou need to accept the End User License Agreement in the installer before you can use this product. If you do not accept the terms of the license agreement, you will not be able to install the product.\r\n<br/>\r\n<br/>\r\n<b>NOTE:</b>\r\n<br/>\r\n<br/>\r\nWindows Embedded Compact 2013 is also available for download as part of your <a href=\"http://msdn.microsoft.com/en-us/subscriptions/downloads/\">MSDN subscription</a>.\r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "Compact2013Update5_Full.ISO"
+    ],
+    "detailsSection_file_size": [
+        "2.2 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\u2022     Windows 7 (x86-based and x64-based) and any available service packs\r\n<br/>\r\n\u2022     Windows 8 (x86-based and x64-based) and any available service packs\r\n<br/>\r\n\u2022     Windows 8.1 (x86-based and x64-based) and any available service packs\r\n<br/>\r\n\u2022     Windows Server 2008 R2 (x64-based) and any available service packs.\r\n<br/>\r\n\u2022     Windows Server 2012 (x64-based) and any available service packs.\r\n<br/>\r\n<br />\r\n<b> Required hardware</b><br />\r\n<br/>\r\nYour computer must meet the following hardware requirements:\r\n<br/><br/>\r\n\u2022 100 GB (NTFS) of available hard disk space<br/>\r\n\u2022 2.4 GHz processor<br/>\r\n\u2022 5400 RPM hard drive<br/>\r\n\u2022 2 GB of RAM<br/>\r\n\u2022 A DirectX 9-capable video card running at 1024 x 768 or higher display resolution<br/>\r\n\u2022 An optical drive that supports DVD\r\n<br/>\r\n<br /><b> Required software</b><br />\r\n<br/>\r\nYour computer must have the following software installed, and installed in the following order:\r\n<br />\r\n<br />\r\n\u2022 Microsoft .NET Framework 3.5 Service Pack 1. You can download the installation file from the Microsoft Download Center  <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=252977\">here</a>.\r\n<br />\r\n\u2022 Application Builder for Visual Studio 2013 or 2012. You can download the installation file from the Microsoft Download Center  <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=38819\">here</a>.\r\n<br />\r\n<br />\r\n<br />\r\n<b>Optional Software</b>\r\n<br/>\r\n<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=cd991b01-830d-4e08-b52f-e5d1774e1fb8\">Monotype iType for Windows Embedded Compact 2013</a> Monotype iType\u00ae font engine delivers a compact solution for the CCJK character ranges (Simplified Chinese, Traditional Chinese, Japanese and Korean).\r\n<br />\r\n<br />\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded CE"
+    ],
+    "installInstructionSection": "<br/>\r\n<br/>\r\nWindows Embedded Compact 2013 is also available for download as part of your <a href=\"http://msdn.microsoft.com/en-us/subscriptions/downloads/\">MSDN subscription</a>.\r\n<br/>\r\n<br/>\r\nBefore you install Windows Embedded Compact 2013, do the following:<br /><br/>\r\n\u2022 You have a recent, complete backup of your IDE computer.<br />\r\n\u2022 You have completely uninstalled any previous versions of Windows Embedded Compact and Platform Builder.<br/>\r\n\u2022 You have your installation disks and product keys available.<br />\r\n\u2022 You have time to install the Compact 2013 Tools. The actual time depends on the number of features that you install. A full installation can take several hours.\r\n<br/><br/>\r\n<b>Note:</b> Do not let your computer restart, hibernate, or sleep during this installation. <br /><br />\r\n<b>Install the Windows Embedded Compact 2013 developer tools</b><br />\r\n<br/>\r\n1. Insert the installation disk for Windows Embedded Compact 2013 <br />\r\n2. Follow the instructions in the Compact 2013 installation wizard. On the Product Key page, enter your product key including the hyphens<br />\r\n3. If the <b>User Account Control</b> dialog box appears, select <b>Yes</b> <br />\r\n4. After Compact 2013 completes the installation, you will have the opportunity to register for and install Windows Embedded Developer Update. Your response to this offer has no effect on the Compact 2013 installation. <br />\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Windows Embedded Web Site",
+            "url": "http://msdn.microsoft.com/en-us/windowsembedded/default.aspx"
+        },
+        {
+            "title": "windows Embedded Web Site",
+            "url": "http://www.microsoft.com/windowsembedded"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42287",
+    "downloadPreload": true
+}

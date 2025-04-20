@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2013 SDK (Preview)",
+    "downloadDescription": "Microsoft Lync 2013 SDK (Preview) is the client-side API set that enables the integration and extension of Lync experiences.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncSDK_English_x86.exe",
+            "url": "https://download.microsoft.com/download/4/7/c/47c5d475-605f-4fd8-b120-9f4ac9add19b/LyncSDK_English_x86.exe",
+            "size": "28313576",
+            "version": "15.0.4128.1014",
+            "datePublished": "7/15/2024 3:15:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Lync 2013 SDK (Preview) includes Microsoft Lync 2013 API, a managed-code platform API that developers use to build applications that leverage the Microsoft Lync 2013 collaboration features. In addition to Lync 2013 API, Lync SDK includes a set of controls that can be used to add Lync features to a Microsoft Windows Presentation Foundation (WPF), or Microsoft Silverlight 4.0 application. \r\n<br/><br/>\r\nWith Lync SDK, you can add Lync 2013 features to an existing business application, or create a custom client that includes Lync 2013 features. In either case, Lync 2013 must be a running process on the client computer that hosts a Lync 2013 API application. \r\n<br/><br/>\r\nTo add Lync 2013 features to an application, use a drag-and-drop operation to move XAML controls from Lync SDK into a WPF or Silverlight application. For more advanced scenarios, use a .NET Framework language to incorporate Lync 2013 API features into your application. \r\n<br/><br/>\r\nLync 2013 API is commonly used to start a new conversation within your custom application, after which you will participate in that conversation using the Lync 2013 conversation window. You can also start and participate in a conversation within your custom application without displaying the Lync 2013 conversation window. Lync 2013 API can also be used to generate a contact list within your custom application using data obtained from Lync 2013.\r\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4128.1014",
+    "detailsSection_file_name": [
+        "LyncSDK_English_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "27.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Note:</b>  Lync SDK is installed in the %root%\\program files (x86) folder. In Microsoft Visual Studio development system, set your custom application build platform target to <b>Any CPU</b> so that your application runs on either 32-bit or 64-bit operating systems.\r\n</ul>\r\n<br/>\r\n<ul>\r\n<li><b>Application Development</b></li>\r\n<br/><br/>\r\nThe following requirements must be met before developing applications with Lync SDK.<br/>\r\n<ul>\r\n<li>Visual Studio 2010 RTM for Microsoft Windows Forms or WPF development.</li>\r\n<li>Visual Studio 2010 SP1 for Silverlight development.</li>\r\n<li>Microsoft .NET Framework 4.0 or later service pack.</li>\r\n<li>Microsoft Silverlight 5.0 runtime.</li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28358\">Microsoft Silverlight 5 Tools for Visual Studio 2010 SP1</a>.</li>\r\n</ul>\r\n<br/>\r\n<li><b>Custom Application Deployment</b></li>\r\n<br/><br/>\r\nTo deploy a Lync SDK application, application users must sign in to Lync 2013, and the following components must be present on the target computer.\r\n<br/>\r\n<ul>\r\n<li>Lync SDK redistributable components:</li>\r\n<ul>\r\n<li>Microsoft.Office.uc.dll</li>\r\n<li>Microsoft.Lync.Model.dll desktop version</li>\r\n<li>Microsoft.Lync.Model.dll Silverlight version</li>\r\n<li>Microsoft Lync 2013</li>\r\n<li>Microsoft .NET Framework 3.5 or 4.</li>\r\n</ul>\r\n</ul>\r\n<li><b>Hardware Recommendation</b></li>\r\n<ul>\r\n<li>Use typical current hardware configurations with a minimum of 2 GB RAM for the supported operating systems.</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8 Release Preview"
+    ],
+    "installInstructionSection": "<br/>\r\n<b>Installation</b>\r\n<br/><br/>\r\nThe following prerequisite components must be installed prior to installing Lync SDK.\r\n<ul>\r\n<li>Lync 2013</li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28358\">Microsoft Silverlight 5 Tools for Visual Studio 2010 SP1</a></li>\r\n</ul>\r\n<br/>\r\n<b>Installed Components</b>\r\n<br/><br/>\r\nLync SDK setup installs the following components.\r\n<ul>\r\n<li>Lync SDK assemblies for desktop and Silverlight applications.</li>\r\n<li>LyncSdkRedist.msi for redistributing the runtime assemblies that support your custom Lync application.</li>\r\n<li>Lync 2013 API sample applications.</li>\r\n</ul>\r\n<br/>\r\n<b>To install this download</b>\r\n<ol>\r\n<li>Download LyncSDK_English_x86.exe.</li>\r\n<li>Launch LyncSDK_English_x86.exe and follow the instructions to complete the installation.</li>\r\n</ol>\r\n<br/>\r\n<b>To uninstall this download</b>\r\n<ol>\r\n<li>On the taskbar, click <b>Start</b>, and then click <b>Control Panel</b>.</li>\r\n<li>In <b>Control Panel</b>, click <b>Programs and Features</b>.</li>\r\n<li>Using the right-click menu for <b>Microsoft Office Lync Software Development Kit</b>, select <b>Uninstall</b>.</li>\r\n</ol>\r\n<br/>\r\n<b>Next Steps</b>\r\n<ul>\r\n<li>Create a new project in Visual Studio and add references to %root%\\Program Files (x86)\\Microsoft Lync\\SDK\\Assemblies\\Desktop\\Microsoft.LyncModel.dll to your project.</li>\r\n<li>If you create a Silverlight application, see %root%\\Program Files (x86)\\Microsoft Lync\\SDK\\Assemblies\\Silverlight\\ folder.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30350",
+    "downloadPreload": true
+}

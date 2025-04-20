@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Letter of Approval for New Zealand",
+    "downloadDescription": "Information on how to transfer/port your existing phone numbers to Microsoft Teams for New Zealand",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LOA-NZ-GEO-EN.pdf",
+            "url": "https://download.microsoft.com/download/e/6/7/e67f46ef-e1cd-4e70-a5cc-f53fd74285aa/LOA-NZ-GEO-EN.pdf",
+            "size": "60084",
+            "version": "1",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LNS-EN-NZ-TN.pdf",
+            "url": "https://download.microsoft.com/download/e/6/7/e67f46ef-e1cd-4e70-a5cc-f53fd74285aa/LNS-EN-NZ-TN.pdf",
+            "size": "94313",
+            "version": "1",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LOA-EN-NZ-TN.pdf",
+            "url": "https://download.microsoft.com/download/e/6/7/e67f46ef-e1cd-4e70-a5cc-f53fd74285aa/LOA-EN-NZ-TN.pdf",
+            "size": "60084",
+            "version": "1",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "letter-of-authorization-(loa)-for-new-zealand-(all-numbers)-(v1.0)-(en-nz).pdf",
+            "url": "https://download.microsoft.com/download/e/6/7/e67f46ef-e1cd-4e70-a5cc-f53fd74285aa/letter-of-authorization-(loa)-for-new-zealand-(all-numbers)-(v1.0)-(en-nz).pdf",
+            "size": "60084",
+            "version": "1",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A form for requesting the transfer/porting of your existing phone numbers to Microsoft Teams for New Zealand.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "LOA-NZ-GEO-EN.pdf",
+        "LNS-EN-NZ-TN.pdf",
+        "LOA-EN-NZ-TN.pdf",
+        "letter-of-authorization-(loa)-for-new-zealand-(all-numbers)-(v1.0)-(en-nz).pdf"
+    ],
+    "detailsSection_file_size": [
+        "58.7 KB",
+        "92.1 KB",
+        "58.7 KB",
+        "58.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PDF viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103046",
+    "downloadPreload": true
+}

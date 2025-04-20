@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Search Technologies for SharePoint 2010 Products",
+    "downloadDescription": "Compares and contrasts search technologies in SharePoint 2010 Products",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Search Model 1 of 4 - Search Technologies.vsd",
+            "url": "https://download.microsoft.com/download/0/0/0/00015e0a-67cd-490c-9c1b-dcfa8e9baefc/Search Model 1 of 4 - Search Technologies.vsd",
+            "size": "1064448",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This technical diagram compares the search capabilities in Microsoft SharePoint Foundation 2010, Microsoft Search Server 2010 and Microsoft Search Server Express 2010, Microsoft SharePoint Server 2010, and Microsoft FAST Search Server for SharePoint 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Search Model 1 of 4 - Search Technologies.vsd"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. <br/> To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a><br/>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14763",
+    "downloadPreload": true
+}

@@ -1,0 +1,230 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for Windows Server Operating System 2016 and above",
+    "downloadDescription": "Microsoft System Center Management Pack for Windows Server Operating System 2016 and above",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.NLD.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.NLD.msi",
+            "size": "724992",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.HUN.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.HUN.msi",
+            "size": "737280",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.CHS.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.CHS.msi",
+            "size": "671744",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.RUS.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.RUS.msi",
+            "size": "745472",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.DEU.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.DEU.msi",
+            "size": "733184",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.SVE.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.SVE.msi",
+            "size": "716800",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.PTB.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.PTB.msi",
+            "size": "720896",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.ESN.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.ESN.msi",
+            "size": "724992",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.PLK.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.PLK.msi",
+            "size": "729088",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.CHT.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.CHT.msi",
+            "size": "675840",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.TRK.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.TRK.msi",
+            "size": "716800",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.KOR.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.KOR.msi",
+            "size": "708608",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.ITA.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.ITA.msi",
+            "size": "724992",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.PTG.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.PTG.msi",
+            "size": "720896",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.CSY.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.CSY.msi",
+            "size": "724992",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.FRA.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.FRA.msi",
+            "size": "724992",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center MP for WS2016 and above.JPN.msi",
+            "url": "https://download.microsoft.com/download/d/8/e/d8eb49e9-744e-4f83-b62c-cbba2b72927c/System Center MP for WS2016 and above.JPN.msi",
+            "size": "704512",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for Windows Server 2016 and above.docx",
+            "url": "https://download.microsoft.com/download/c0becab2-ada7-435e-9215-42ef7dd44727/Management Pack Guide for Windows Server 2016 and above.docx",
+            "size": "1779480",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for Windows Server 2016 and 1709 Plus.msi",
+            "url": "https://download.microsoft.com/download/c0becab2-ada7-435e-9215-42ef7dd44727/Microsoft System Center Management Pack for Windows Server 2016 and 1709 Plus.msi",
+            "size": "2293760",
+            "version": "10.1.1.0",
+            "datePublished": "4/16/2025 10:54:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack for Windows Server Operating System 2016 and above",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1.1.0",
+    "detailsSection_file_name": [
+        "System Center MP for WS2016 and above.NLD.msi",
+        "System Center MP for WS2016 and above.HUN.msi",
+        "System Center MP for WS2016 and above.CHS.msi",
+        "System Center MP for WS2016 and above.RUS.msi",
+        "System Center MP for WS2016 and above.DEU.msi",
+        "System Center MP for WS2016 and above.SVE.msi",
+        "System Center MP for WS2016 and above.PTB.msi",
+        "System Center MP for WS2016 and above.ESN.msi",
+        "System Center MP for WS2016 and above.PLK.msi",
+        "System Center MP for WS2016 and above.CHT.msi",
+        "System Center MP for WS2016 and above.TRK.msi",
+        "System Center MP for WS2016 and above.KOR.msi",
+        "System Center MP for WS2016 and above.ITA.msi",
+        "System Center MP for WS2016 and above.PTG.msi",
+        "System Center MP for WS2016 and above.CSY.msi",
+        "System Center MP for WS2016 and above.FRA.msi",
+        "System Center MP for WS2016 and above.JPN.msi",
+        "Management Pack Guide for Windows Server 2016 and above.docx",
+        "Microsoft System Center Management Pack for Windows Server 2016 and 1709 Plus.msi"
+    ],
+    "detailsSection_file_size": [
+        "708.0 KB",
+        "720.0 KB",
+        "656.0 KB",
+        "728.0 KB",
+        "716.0 KB",
+        "700.0 KB",
+        "704.0 KB",
+        "708.0 KB",
+        "712.0 KB",
+        "660.0 KB",
+        "700.0 KB",
+        "692.0 KB",
+        "708.0 KB",
+        "704.0 KB",
+        "708.0 KB",
+        "708.0 KB",
+        "688.0 KB",
+        "1.7 MB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "4/16/2025",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\n<ul>\n<li>System Center Operations Manager 2025</li>\n<li>System Center Operations Manager 2022</li>\n<li>System Center Operations Manager 2019</li>\n<li>System Center Operations Manager 2016</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Microsoft.Windows.Server.Html5.Dashboard is installable only in SCOM 2019 and SCOM 2022. Please don't import this on SCOM 2016, 1801 or 1807.\nSee MP Guide for installation and usage instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54303",
+    "downloadPreload": true
+}

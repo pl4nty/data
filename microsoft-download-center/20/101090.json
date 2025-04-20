@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "CVE-2020-1022 for Microsoft Dynamics NAV 2013 R2",
+    "downloadDescription": "Security update for Microsoft Dynamics NAV 2013 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CVE-2020-1022.zip",
+            "url": "https://download.microsoft.com/download/5/3/1/531eff18-e1ad-4fc0-8f47-24f146522acd/CVE-2020-1022.zip",
+            "size": "758926827",
+            "version": "7.1.51833",
+            "datePublished": "6/15/2024 4:15:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Follow the link to learn more about this release: \r\nhttps://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1022",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.51833",
+    "detailsSection_file_name": [
+        "CVE-2020-1022.zip"
+    ],
+    "detailsSection_file_size": [
+        "723.8 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "System requirements for Microsoft Dynamics NAV 2013 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Install instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101090",
+    "downloadPreload": true
+}

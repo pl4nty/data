@@ -1,0 +1,210 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft .NET Native for Windows 8.1 and Windows Server 2012 R2 - KB2954879",
+    "downloadDescription": "Update for Microsoft .NET Native for Windows 8.1 and Windows Server 2012 R2 - KB2954879",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2954879-v2-arm.msu",
+            "url": "https://download.microsoft.com/download/5/0/a/50a5bbba-68ac-469d-ac7f-746de045dfa5/Windows8.1-KB2954879-v2-arm.msu",
+            "size": "245433",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:40:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2954879-v2-x86.msu",
+            "url": "https://download.microsoft.com/download/5/0/a/50a5bbba-68ac-469d-ac7f-746de045dfa5/Windows8.1-KB2954879-v2-x86.msu",
+            "size": "244036",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:40:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2954879-v2-x64.msu",
+            "url": "https://download.microsoft.com/download/5/0/a/50a5bbba-68ac-469d-ac7f-746de045dfa5/Windows8.1-KB2954879-v2-x64.msu",
+            "size": "281989",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:40:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Install this update to improve performance and error reporting for Microsoft .NET Native applications. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article <a href=\"http://go.microsoft.com/fwlink/?LinkID=394768\"> KB2954879</a> for more information.\r\n<br /><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2954879",
+        "name": "KB2954879"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2954879-v2-arm.msu",
+        "Windows8.1-KB2954879-v2-x86.msu",
+        "Windows8.1-KB2954879-v2-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "239.7 KB",
+        "238.3 KB",
+        "275.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\r\n<B>Note:</B> More information about Service Pack levels currently supported for the platforms listed above can be found in the following page: <a href=\"http://go.microsoft.com/fwlink/?LinkId=164675\">Microsoft Product Support Lifecycle</a>.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows RT 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=394768\">KB2954879</a> for more information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42380",
+    "downloadPreload": true
+}

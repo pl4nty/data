@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Team Services Guidance for Consulting Teams and System Integrators",
+    "downloadDescription": "Key considerations and best practices for consulting team and system integrators using Visual Studio Team Services",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visual-Studio-Online-Guidance-for-Consulting-and-SI-Datasheet.pdf",
+            "url": "https://download.microsoft.com/download/a/4/8/a489d1c2-e12a-48e8-bb7d-e6fc647e07e9/Visual-Studio-Online-Guidance-for-Consulting-and-SI-Datasheet.pdf",
+            "size": "529177",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Visual-Studio-Online-Guidance-for-Consulting-and-SI.pdf",
+            "url": "https://download.microsoft.com/download/a/4/8/a489d1c2-e12a-48e8-bb7d-e6fc647e07e9/Visual-Studio-Online-Guidance-for-Consulting-and-SI.pdf",
+            "size": "1519793",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "One of the most popular scenarios for adopting Visual Studio Team Services has been with consulting teams and system integrators to begin and manage customer projects.  Visual Studio Team Services provides a hosted solution for development teams to work across organizations including the ability to invite external stakeholders to participate in the process. \r\n\r\nWe have put together a set of guidance based on four patterns we have seen consulting teams and system integrators taking including the pros and cons for each.  Additionally, we have provided our guidance on recommended approaches and sample workflows for managing Visual Studio Online accounts in these scenarios. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visual-Studio-Online-Guidance-for-Consulting-and-SI-Datasheet.pdf",
+        "Visual-Studio-Online-Guidance-for-Consulting-and-SI.pdf"
+    ],
+    "detailsSection_file_size": [
+        "516.8 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Unix",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and open PDF",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42283",
+    "downloadPreload": true
+}

@@ -1,0 +1,120 @@
+{
+    "error": "",
+    "downloadTitle": "Volume Licensing Program Guides, Datasheets, and FAQs",
+    "downloadDescription": "Volume Licensing documents, including program guides, datasheets, and FAQs",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "open_programs_overview.pdf",
+            "url": "https://download.microsoft.com/download/8/9/a/89a3f8b9-94de-4956-a56e-f6d2b215d0e6/open_programs_overview.pdf",
+            "size": "130167",
+            "version": "Oct. 7, 2022",
+            "datePublished": "4/15/2025 5:47:10 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Open_Programs_Guide.pdf",
+            "url": "https://download.microsoft.com/download/8/9/a/89a3f8b9-94de-4956-a56e-f6d2b215d0e6/Open_Programs_Guide.pdf",
+            "size": "315876",
+            "version": "Oct. 7, 2022",
+            "datePublished": "4/15/2025 5:47:10 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Services_Provider_License_Agreement_Program_Guide.pdf",
+            "url": "https://download.microsoft.com/download/8/9/a/89a3f8b9-94de-4956-a56e-f6d2b215d0e6/Services_Provider_License_Agreement_Program_Guide.pdf",
+            "size": "4098365",
+            "version": "Oct. 7, 2022",
+            "datePublished": "4/15/2025 5:47:10 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Services_Provider_License_Agreement_Reference_Card.pdf",
+            "url": "https://download.microsoft.com/download/8/9/a/89a3f8b9-94de-4956-a56e-f6d2b215d0e6/Services_Provider_License_Agreement_Reference_Card.pdf",
+            "size": "172925",
+            "version": "Oct. 7, 2022",
+            "datePublished": "4/15/2025 5:47:10 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        }
+    ],
+    "detailsSection": "The Microsoft Volume Licensing program guides provide comprehensive descriptions of Volume Licensing programs, including information about Microsoft Software Assurance. Download these guides to get details about things such as program features, benefits, requirements, pricing, and agreement structure.<br />\n<br />\nThe datasheets provide an overview of Volume Licensing programs. Use these documents to get at-a-glance information about benefits, licensing options, pricing, Software Assurance benefits, and more.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Oct. 7, 2022",
+    "detailsSection_file_name": [
+        "open_programs_overview.pdf",
+        "Open_Programs_Guide.pdf",
+        "Services_Provider_License_Agreement_Program_Guide.pdf",
+        "Services_Provider_License_Agreement_Reference_Card.pdf"
+    ],
+    "detailsSection_file_size": [
+        "127.1 KB",
+        "308.5 KB",
+        "3.9 MB",
+        "168.9 KB"
+    ],
+    "detailsSection_file_date": "4/15/2025",
+    "systemRequirementsSection": "Microsoft Office Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Enterprise agreement on the Volume Licensing Web site",
+            "url": "http://www.microsoft.com/licensing/programs/ent/default.mspx"
+        },
+        {
+            "title": "microsoft Open License on the Volume Licensing Web site",
+            "url": "http://www.microsoft.com/licensing/programs/open/default.mspx"
+        },
+        {
+            "title": "microsoft Open Value on the Volume Licensing Web site",
+            "url": "http://www.microsoft.com/licensing/programs/open/openvalue.mspx"
+        },
+        {
+            "title": "microsoft Select License on the Volume Licensing Web site",
+            "url": "http://www.microsoft.com/licensing/programs/sel/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5778",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Fiscal books integration between Microsoft Dynamics AX 2009 and Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "This white paper describes how to configure and use the Fiscal books integration between Microsoft Dynamics AX 2009 SP1 RU8 and Microsoft Dynamics AX 2012 R2 to perform fiscal books analysis and reporting. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Fiscal books integration from AX 2009 to AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/3/3/3/3335c2f9-5af2-40dd-8b5f-14dfd0df1880/Fiscal books integration from AX 2009 to AX 2012.pdf",
+            "size": "924430",
+            "version": "2012",
+            "datePublished": "6/13/2024 12:18:59 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "This white paper describes how to configure and use the Fiscal books integration between Microsoft Dynamics AX 2009 SP1 RU8 and Microsoft Dynamics AX 2012 R2 to perform fiscal books analysis and reporting. You can manage your business in Microsoft Dynamics AX 2009, and then transfer fiscal documents and inventory transactions to Microsoft Dynamics AX 2012, where you can perform fiscal books reporting tasks. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Fiscal books integration from AX 2009 to AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "902.8 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39271",
+    "downloadPreload": true
+}

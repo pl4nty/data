@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SkipNet and applications",
+    "downloadDescription": "SkipNet is an overlay network providing both practical locality properties and efficient communication. Last published: February 5, 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SkipNet_Release_1.0.zip",
+            "url": "https://download.microsoft.com/download/2/9/2/2924304c-b33a-4b65-be21-c46818730d5d/SkipNet_Release_1.0.zip",
+            "size": "14785559",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:20:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SkipNet is an overlay network providing both practical locality properties and efficient communication. This release contains sources for the SkipNet overlay network and two other technologies built using it: the Overlook distributed name service, and the FUSE lightweight distributed failure notification system, plus applications exercising them. The SkipNet code and applications can be run in one of two environments: a simulation environment, in which all nodes run within a single program communicate via a simulated network topology, and a live or \"cluster\" environment, in which each node runs as a separate program and communicates with other nodes via TCP connections. Please visit http://research.microsoft.com/sn/Herald/ for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SkipNet_Release_1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "14.1 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52545",
+    "downloadPreload": true
+}

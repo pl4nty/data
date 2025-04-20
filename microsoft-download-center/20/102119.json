@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Edge Customer Adoption Kit",
+    "downloadDescription": "Guides, email templates, and digital signage to support the deployment and adoption of the new Microsoft Edge.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Edge Adoption Kit_en-US_Nov22.zip",
+            "url": "https://download.microsoft.com/download/0/4/2/0426ffdf-e33c-4177-b0f8-a13a43719c63/Microsoft Edge Adoption Kit_en-US_Nov22.zip",
+            "size": "27871839",
+            "version": "3",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "The customer adoption kit contains the following material: \r\n<ul>\r\n<li>Internet Explorer Retirement Kit\r\n<ul>\r\n<li>Adoption emails</li>\r\n<li>Flyers</li>\r\n<li>Infographic</li>\r\n<li>Site Collection Form</li>\r\n</ul>\r\n</li>\r\n<li>General Adoption Kit\r\n<ul>\r\n<li>IT Deployment Guide</li>\r\n<li>How to Get Started User Guide</li>\r\n<li>Adoption Email Templates</li>\r\n<li>Banners</li>\r\n<li>Digital Signage</li>\r\n<li>One-Pagers</li>\r\n<li>Demo Video and GIFs</li>\r\n<li>Web Resource Links</li>\r\n</ul>\r\n</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "Microsoft Edge Adoption Kit_en-US_Nov22.zip"
+    ],
+    "detailsSection_file_size": [
+        "26.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Any program to decompress ZIP files.</li>\r\n<li>Any reader for PDF files.</li>\r\n<li>Microsoft Outlook to use email templates.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b>  or <b>Save this program to disk</b>.</li>\r\n<li>Select <b> Open file</b>,  or find the file on your device and open it.</li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102119",
+    "downloadPreload": true
+}

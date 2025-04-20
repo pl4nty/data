@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Save Money Architecture Diagrams",
+    "downloadDescription": "Saving Money_Architecture Diagrams",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Save_Money_Architecture_Diagrams.zip",
+            "url": "https://download.microsoft.com/download/3/9/0/390c1b63-b387-4ad5-ad9e-4f2342fb41d8/Save_Money_Architecture_Diagrams.zip",
+            "size": "13170280",
+            "version": "1",
+            "datePublished": "4/15/2024 3:32:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped file provides conceptual, logical, and physical architectures for each of the three solution phases, and describes about how to customize the solution for the client\u2019s specific priorities. Conceptual Diagram lists the usage scenarios that interact with our solution and also shows the interaction with any external systems. Physical diagram depicts the implementation of physical servers, network, client systems and firewall. Logical diagrams consists of combination of Logical layer and physical layer (information flow, components and their interaction)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Save_Money_Architecture_Diagrams.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.6 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2007/2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "diagram\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35521",
+    "downloadPreload": true
+}

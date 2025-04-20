@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "CrowdMOS",
+    "downloadDescription": "CrowdMOS is a set of scripts and tools for performing evaluations of the subjective quality of media such as audio or images using crowdsourcing via Amazon Mechanical Turk. Last published: April 26, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "crowdMOS-0.1.zip",
+            "url": "https://download.microsoft.com/download/5/7/3/573b70ab-cfaa-4cc5-a936-a7c3bae31e5e/crowdMOS-0.1.zip",
+            "size": "1027232",
+            "version": "0.1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CrowdMOS is a set of scripts and tools for performing evaluations of the subjective quality of media such as audio or images using crowdsourcing via Amazon Mechanical Turk. This package is designed to enable low cost, efficient assessments of signal processing algorithms, e.g., compression,  denoising, or enhancement,  using standard tests such as MOS (Mean Opinion Score) or MUSHRA (MUltiple Stimuli with Hidden Reference and Anchor).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "crowdMOS-0.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "1003.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52578",
+    "downloadPreload": true
+}

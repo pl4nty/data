@@ -1,0 +1,172 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Service Pack 1 (SP1) Express",
+    "downloadDescription": "Microsoft\u00ae SQL Server\u00ae 2012 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLManagementStudio_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLManagementStudio_x86_ENU.exe",
+            "size": "985454008",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLManagementStudio_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLManagementStudio_x64_ENU.exe",
+            "size": "966412088",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPR_x64_ENU.exe",
+            "size": "155281408",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR32_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPR32_x86_ENU.exe",
+            "size": "134170096",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPRADV_x64_ENU.exe",
+            "size": "2019448208",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRWT_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPRWT_x64_ENU.exe",
+            "size": "1115478712",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPRADV_x86_ENU.exe",
+            "size": "1918246040",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPR_x86_ENU.exe",
+            "size": "139571184",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRWT_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/2/9/529fef7b-2efb-439e-a2d1-a1533227cd69/SQLEXPRWT_x86_ENU.exe",
+            "size": "1117333248",
+            "version": "11.0.3000.00",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "\r\nMicrosoft SQL Server 2012 Express with SP1 are a free, feature-rich editions of SQL Server that is ideal for learning, developing, powering desktop, web & small server applications, and for redistribution by ISVs. The SQL Server 2012 SP1 Express release includes the full version of SQL Server 2012 Management Studio with SP1 instead of SQL Server 2012 Management Studio Express. For a complete list of supported features in SQL Server Management Studio, see <a href=\" http://msdn.microsoft.com/en-us/library/ms174219.aspx\"> Features in SQL Server Management Studio</a>.\r\n\r\n<br />\r\n<br />\r\n<b>LocalDB (SqlLocalDB)</b>\r\n<ul>\r\n<li>LocalDB is a lightweight version of Express that has all its programmability features, yet runs in user mode and has a fast, zero-configuration installation and short list of pre-requisites. Use this if you need a simple way to create and work with databases from code. It can be bundled with Application and Database Development tools like Visual Studio and or embedded with an application that needs local databases.</li>\r\n</ul>\r\n<b>Express (SQLEXPR)</b>\r\n<ul>\r\n  <li>\r\n    Express edition includes the SQL Server database engine only. Best suited to accept remote connections or administer remotely.\r\n  </li>\r\n</ul>\r\n  <b>Express with Tools (SQLEXPRWT)</b>\r\n<ul>\r\n  <li>This package contains everything needed to install and configure SQL Server as a database server including the full version of SQL Server 2012 Management Studio with SP1. Choose either LocalDB or Express depending on your needs above.</li>\r\n</ul>\r\n  <b>SQL Server Management Studio Express (SQLManagementStudio)</b>\r\n<ul>\r\n  <li>This does not contain the database, but only the tools to manage SQL Server instances, including LocalDB, SQL Express, SQL Azure, full version of SQL Server 2012 Management Studio with SP1, etc. Use this if you already have the database and only need the management tools.</li>\r\n</ul>\r\n  <b>Express with Advanced Services (SQLEXPRADV)</b>\r\n<ul>\r\n  <li>This package contains all the components of SQL Server Express including the full version of SQL Server 2012 Management Studio with SP1. This is a larger download than \u201cwith Tools,\u201d as it also includes both Full Text Search and Reporting Services.  </li>\r\n  <br />\r\n</ul>\r\n<br />To learn more about the features supported by the SQL server, please visit the <a href=\" http://msdn.microsoft.com/en-us/library/cc645993.aspx\">MSDN SQL Server 2012 supported features site</a>.\r\n<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.3000.00",
+    "detailsSection_file_name": [
+        "SQLManagementStudio_x86_ENU.exe",
+        "SQLManagementStudio_x64_ENU.exe",
+        "SQLEXPR_x64_ENU.exe",
+        "SQLEXPR32_x86_ENU.exe",
+        "SQLEXPRADV_x64_ENU.exe",
+        "SQLEXPRWT_x64_ENU.exe",
+        "SQLEXPRADV_x86_ENU.exe",
+        "SQLEXPR_x86_ENU.exe",
+        "SQLEXPRWT_x86_ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "939.8 MB",
+        "921.6 MB",
+        "148.1 MB",
+        "128.0 MB",
+        "1.9 GB",
+        "1.0 GB",
+        "1.8 GB",
+        "133.1 MB",
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n <ul>\n    </ul>\n <li>\n  <b>Processor</b> \n  </li>\n <ul>\n  <li>Intel - compatible processor with a minimum speed of 1 GHz or a faster processor</li> \n  </ul>\n <li>\n  <b>RAM</b> \n  </li>\n <ul>\n  <li>Minimum 512 MB for SQL Server Express with Tools, and SQL Server Express with Advanced Services and 4 GB for Reporting Services that installs with SQL Server Express with Advanced Services</li> \n  </ul>\n <li>\n  <b>Hard Disk Space</b> \n  </li>\n <ul>\n  <li>4.2 GB of Disk Space</li> \n  </ul>\n  </ul>\n  <br /> \n  <b>Limitations :</b> \n  Microsoft SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<b> Installation for the NEW users</b> <br/><br/>\r\n<b>Step 1: </b>Enable\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=120550\">Microsoft .Net Framework 3.5 SP1.</a> and \r\n    Download and install \r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=186791\">Microsoft .Net Framework 4.0.</a><br />\r\n<br/>\r\n<ul>\r\n<b>Note:</b> SQL Server Express (with database engine only) can work with either .NET 3.5 SP1 or .NET 4, there is no need to have both enabled.<br /><br/>\r\n</ul>\r\n<b> Step 2: </b> Download Microsoft\u00ae SQL Server\u00ae 2012 Express by clicking the appropriate link earlier, run it, and follow the instructions in the setup wizard to install.\r\n<br/>\r\n<br/>\r\n\r\n<b>Installation for the Existing Users </b> <br/> <br/>\r\n\r\nIf you have an existing installation of Express with Tools, SQL Server Management Studio Express, or Express with Advanced Services, and want to add the complete SQL Server Management Studio feature to your Express instance, do the following:\r\n<br/>\r\n<br/>\r\n\r\n<b>Step 1: </b>Download the required Microsoft\u00ae SQL Server\u00ae 2012 Express SP1 file to update your current SQL Server 2012 Express installation by clicking the appropriate link earlier.\r\n\r\n<br/> <br/>\r\n<b>Step 2: </b>Run the file, and follow the instructions in the setup wizard to install. On the Installation Type page, select Add features to an existing instance of SQL Server, and select the instance you would like to update. \r\n\r\n<br/> <br/>\r\n<b>Step 3: </b>On the Feature Selection page, select the Management Tools \u2013 Complete check box, and then proceed to complete the installation. \r\n<br/>\r\n\r\n<br />\r\n<ul>\r\n<b>Note: </b>  Microsoft\u00ae SQL Server\u00ae 2012 Express includes both 32-bit and 64-bit versions. SQLEXPR32_x86 is a smaller package that can be used to install SQL Server 2012 Express SP1 onto only 32-bit operating systems. SQLEXPR_x86 is the same product but supports installation onto both 32-bit and 64-bit (WoW) operating systems. SQLEXPR_x64 is a native 64-bit SQL Server 2012 Express SP1 and supports installation onto only 64-bit operating systems. There is no other difference between these packages. Microsoft\u00ae SQL Server\u00ae 2012 Express is not supported on IA64 systems. \r\n<br/>\r\n<br/>\r\n</ul>\r\n\r\n",
+    "additionalInformationSection": "<b>Note:</b>  The Microsoft SQL Server 2012 SP1 Express with Advanced Services (SQLEXPRADV_arch_lang id.msi) End User License Agreement (EULA) that is displayed during the setup process is missing terms and conditions related to BING map functionality, which is outlined below for ease of reference. By downloading and installing the .MSI you are accepting these BING map functionality terms.<br/>\r\n<br/>\r\n\r\n\"SQL Server Reporting Services Map Report Item. The software may include features that retrieve content such as maps, images and other data through the Bing Maps (or successor branded) application programming interface (the \u201cBing Maps APIs\u201d). The purpose of these features is to create reports displaying data on top of maps, aerial and hybrid imagery. If these features are included, you may use them to create and view dynamic or static documents. This may be done only in conjunction with and through methods and means of access integrated in the software. You may not otherwise copy, store, archive, or create a database of the content available through the Bing Maps APIs. You may not use the following for any purpose even if they are available through the Bing Maps APIs:\r\n\r\n<ul>\r\n\r\n<li>the Bing Maps API to provide sensor based guidance/routing, or</li>\r\n<li>any Road Traffic Data or Bird\u2019s Eye Imagery (or associated metadata).\r\nYour use of the Bing Maps APIs and associated content is also subject to the additional terms and conditions at go.microsoft.com/fwlink/?LinkId=21969.\"</li>\r\n</ul>\r\n<br/>\r\n<br/>\r\n\r\n\r\nIf you have a specific technical question about Microsoft\u00ae SQL Server\u00ae 2012 Express SP1 please visit <a href=\" http://go.microsoft.com/fwlink/?LinkId=186769\">the SQL Server Express Forum </a>.\r\n<br/><br/>\r\n- If you have questions about SQL Server Express SP1, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35579",
+    "downloadPreload": true
+}

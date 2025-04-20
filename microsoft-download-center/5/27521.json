@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Communications",
+    "downloadDescription": "Unified Communications describes how customers should manage and secure their communications infrastructure from viruses, SPAM, and malware. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Unified Communications.zip",
+            "url": "https://download.microsoft.com/download/b/7/9/b79ede29-3019-458f-bd1d-f789a32219c6/Unified Communications.zip",
+            "size": "17999761",
+            "version": "1",
+            "datePublished": "4/15/2024 3:15:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Unified Communications describes how customers should manage and secure their communications infrastructure from viruses, SPAM, and malware.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Unified Communications.zip"
+    ],
+    "detailsSection_file_size": [
+        "17.2 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "PowerPoint 2007/2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27521",
+    "downloadPreload": true
+}

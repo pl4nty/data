@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Installing Forefront Identity Manager 2010 Certificate Management with Constrained Delegation, Update 1, and FIM 2010 Integration",
+    "downloadDescription": "Install FIM CM with Constrained Delegation, Update 1, and FIM 2010 in a test lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_CM_TLG.docx",
+            "url": "https://download.microsoft.com/download/0/e/b/0eb28b8e-7020-4e34-9f2b-7ed3fad192ce/FIM_CM_TLG.docx",
+            "size": "2160219",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document will assist architects, consultants, system engineers, and system administrators in deploying Microsoft\u00ae Forefront\u00ae Identity Manager 2010 Certificate Management with constrained delegation and update 1 in a test lab environment that also contains Microsoft\u00ae Forefront\u00ae Identity Manager 2010.  The resulting FIM CM test lab can be used to show FIM 2010 integration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FIM_CM_TLG.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems:  Windows Server 2008 R2\n\nMicrosoft SQL Server 2008 with Service Pack 2\n\nMicrosoft Exchange 2010 with Service Pack 1\n\nMicrosoft Forefront Identity Manager 2010\n\nUpdate 1 for Microsoft Forefront Identity Manager 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional",
+        "Windows 7 Ultimate",
+        "Windows Server 2008 R2 Enterprise"
+    ],
+    "installInstructionSection": "\r\n\r\nClick Download to download this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26138",
+    "downloadPreload": true
+}

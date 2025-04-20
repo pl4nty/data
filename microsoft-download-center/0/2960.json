@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Installation Guide",
+    "downloadDescription": "This document provides information about and instructions for installing Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AXInstallationGuide.xps",
+            "url": "https://download.microsoft.com/download/d/e/c/dec57d45-1238-4e8a-804d-64df723bab85/AXInstallationGuide.xps",
+            "size": "2151604",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:14:16 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AXInstallationGuide.pdf",
+            "url": "https://download.microsoft.com/download/d/e/c/dec57d45-1238-4e8a-804d-64df723bab85/AXInstallationGuide.pdf",
+            "size": "1655052",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:14:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The Installation Guide for Microsoft Dynamics AX 2009 provides step-by-step instructions for installing Microsoft Dynamics AX components. This document also includes instructions for performing initial configuration using the initialization checklist.\r\n<br /> \r\n<br /> \r\n<b>Note:</b> For the most up-to-date information for Microsoft Dynamics AX administrators, see the <a href=\"http://technet.microsoft.com/en-us/library/dd309624.aspx\">Microsoft Dynamics AX 2009 Technical Library</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "AXInstallationGuide.xps",
+        "AXInstallationGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n  <LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.</LI> \r\n   <LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack.</LI> \r\n  <LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI>\r\n  </UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\r\n    <LI>Save the file to your computer.</LI> \r\n  </OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2960",
+    "downloadPreload": true
+}

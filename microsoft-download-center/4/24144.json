@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate DirectAccess",
+    "downloadDescription": "Create a test lab to demonstrate DirectAccess with a simulated Internet, intranet, and home network.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DirectAccess_StepByStep.doc",
+            "url": "https://download.microsoft.com/download/2/0/4/204bc37f-4adf-401e-8958-712bbc7b78a4/DirectAccess_StepByStep.doc",
+            "size": "2326528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). This document contains an introduction to DirectAccess and step-by-step instructions for extending the Base Configuration test lab to demonstrate DirectAccess in Windows Server 2008 R2 with a simulated Internet, intranet, and home network.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DirectAccess_StepByStep.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 Ultimate; Windows Server 2008 R2 Enterprise Edition; Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [
+        {
+            "title": "test Lab Guide: Troubleshoot DirectAccess",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=181160"
+        },
+        {
+            "title": "test Lab Guide: Base Configuration",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=198140"
+        },
+        {
+            "title": "directAccess TechNet Web page",
+            "url": "http://technet.microsoft.com/en-us/network/dd420463.aspx"
+        },
+        {
+            "title": "test Lab Guide: Demonstrate DirectAccess with Network Access Protection (NAP)",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=186697"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24144",
+    "downloadPreload": true
+}

@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Technical Documentation Download for System Center 2012 \u2013 Virtual Machine Manager",
+    "downloadDescription": "This page lists the technical documentation downloads that are available for the Virtual Machine Manager component of System Center 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VMM2012_FiberChannel_Brocade.docx",
+            "url": "https://download.microsoft.com/download/d/7/a/d7abad5e-24e2-414e-99d4-b786d6ebe189/VMM2012_FiberChannel_Brocade.docx",
+            "size": "236943",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC2012_VMM_Documentation.docx",
+            "url": "https://download.microsoft.com/download/d/7/a/d7abad5e-24e2-414e-99d4-b786d6ebe189/SC2012_VMM_Documentation.docx",
+            "size": "1407541",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012_VMM_Documentation.pdf",
+            "url": "https://download.microsoft.com/download/d/7/a/d7abad5e-24e2-414e-99d4-b786d6ebe189/SC2012_VMM_Documentation.pdf",
+            "size": "6123948",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VMM2012_FiberChannel_Brocade.pdf",
+            "url": "https://download.microsoft.com/download/d/7/a/d7abad5e-24e2-414e-99d4-b786d6ebe189/VMM2012_FiberChannel_Brocade.pdf",
+            "size": "379618",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The downloadable files listed on this page contain the product documentation for the Virtual Machine Manager component of System Center 2012 R2. The available downloads include:<BR></BR>\r\n\r\n<UL><LI>System Center 2012 R2 \u2013 Virtual Machine Manager Technical Documentation, last updated March 10, 2014 (pdf & docx)</LI>\r\n<LI>White Paper - Managing Fibre Channel in System Center 2012 R2 Virtual Machine Manager, last updated April 22, 2014 (pdf & docx)</LI></UL><BR></BR>\r\n\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "VMM2012_FiberChannel_Brocade.docx",
+        "SC2012_VMM_Documentation.docx",
+        "SC2012_VMM_Documentation.pdf",
+        "VMM2012_FiberChannel_Brocade.pdf"
+    ],
+    "detailsSection_file_size": [
+        "231.4 KB",
+        "1.3 MB",
+        "5.8 MB",
+        "370.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI>\r\n<LI>Microsoft Word 2013</LI>\r\n<LI>Microsoft Word 2010</LI>\r\n<LI>Microsoft Word 2007</LI>\r\n<LI>Microsoft Word 2003</LI>\r\n<LI>Microsoft Word 2002</LI>\r\n<LI>Microsoft Word 2000</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Documentation for Virtual Machine Manager in the TechNet Library ",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=209605"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6346",
+    "downloadPreload": true
+}

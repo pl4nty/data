@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Content Series- Exchange Services Publishing Solution Guide",
+    "downloadDescription": "Forefront UAG Content Series - Exchange Services Publishing Solution Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExchangeSolution.docx",
+            "url": "https://download.microsoft.com/download/5/a/5/5a549b44-6759-44ac-a12f-0363b8fb0d4d/ExchangeSolution.docx",
+            "size": "69496",
+            "version": "January 2010",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use Forefront UAG to provide remote access to Microsoft Exchange Server mail services, including Outlook Web Access, Outlook Anywhere (RPC-over-HTTP), and Exchange ActiveSync. This solution guide provides an overview of Exchange publishing, a summary of the advantages of publishing Exchange via Forefront UAG; planning information; and detailed deployment steps. It is also available online at the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd857315.aspx).\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2010",
+    "detailsSection_file_name": [
+        "ExchangeSolution.docx"
+    ],
+    "detailsSection_file_size": [
+        "67.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System requirements are available at the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd903051.aspx).\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the solution guide.",
+    "relatedResourcesSection": [
+        {
+            "title": "forefront UAG Publishing Design Guide",
+            "url": "http://technet.microsoft.com/en-us/library/dd857279.aspx"
+        },
+        {
+            "title": "forefront UAG Publishing Deployment Guide",
+            "url": "http://technet.microsoft.com/en-us/library/ee406199.aspx"
+        },
+        {
+            "title": "forefront UAG TechCenter library",
+            "url": "http://technet.microsoft.com/en-us/library/dd861463.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "205",
+    "downloadPreload": true
+}

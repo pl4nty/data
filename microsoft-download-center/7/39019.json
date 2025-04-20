@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Internet Explorer 8 in Windows Server 2008 x64 Edition (KB2847204)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-038. To find out if other security updates are available for you, see the Additional Information section at the bottom of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE8-Windows6.0-KB2847204-x64.msu",
+            "url": "https://download.microsoft.com/download/6/2/c/62cc04d5-c8d7-4f9e-96c3-098ff892fa88/IE8-Windows6.0-KB2847204-x64.msu",
+            "size": "7010977",
+            "version": "2847204",
+            "datePublished": "7/15/2024 3:12:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br />\n\t\t\t<br />\n\t\t",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2847204",
+        "name": "KB2847204"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-038",
+        "name": "MS13-038"
+    },
+    "detailsSection_file_version": "2847204",
+    "detailsSection_file_name": [
+        "IE8-Windows6.0-KB2847204-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update applies to Internet Explorer 8 with the following operating systems:<br />\n\t\t\t<ul>\n\t\t\t\t<li>Windows Server 2008 Service Pack 2 (x64-bit)</li>\n\t\t\t</ul>\n\t\t",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "\n\t\t\t<ol>\n\t\t\t\t<li>\n          Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.\n        </li>\n\t\t\t\t<li>Do one of the following:</li>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>\n            To start the installation immediately, click <b>Run</b>.\n          </li>\n\t\t\t\t\t<li>\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\n          </li>\n\t\t\t\t\t<li>\n            To cancel the installation, click <b>Cancel</b>.\n          </li>\n\t\t\t\t</ul>\n\t\t\t</ol>\n\t\t",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin MS13-038",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=299892"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39019",
+    "downloadPreload": true
+}

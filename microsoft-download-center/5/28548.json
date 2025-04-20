@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "FAST Search Server 2010 for SharePoint Add or Remove an Index Column ",
+    "downloadDescription": "This whitepaper describes how to add or remove an index column in FAST Search Server 2010 for SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FASTSearchSharePoint2010AddRemoveIndexColumn.docx",
+            "url": "https://download.microsoft.com/download/6/e/e/6eebffba-1c40-422b-b719-4a869169db64/FASTSearchSharePoint2010AddRemoveIndexColumn.docx",
+            "size": "164741",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft FAST Search Server 2010 for SharePoint Cumulative Update for December 2011 introduces a new procedure that enables you to add or remove an index column with minimal search downtime. This whitepaper provides information about how to use the new procedure and supporting tools. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2597067",
+        "name": "KB2597067"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FASTSearchSharePoint2010AddRemoveIndexColumn.docx"
+    ],
+    "detailsSection_file_size": [
+        "160.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Requirements: To download and read a whitepaper, you must have Microsoft Word.\r\n</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <B>Download</B>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28548",
+    "downloadPreload": true
+}

@@ -1,0 +1,152 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Chart Controls for Microsoft .NET Framework 3.5",
+    "downloadDescription": "ASP.NET and Windows Forms Chart Controls for .NET Framework 3.5 SP1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSChart.exe",
+            "url": "https://download.microsoft.com/download/c/c/4/cc4dcac6-ea60-4868-a8e0-62a8510aa747/MSChart.exe",
+            "size": "1851904",
+            "version": "3.5.0.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Supplemental Redist License_English.docx",
+            "url": "https://download.microsoft.com/download/c/c/4/cc4dcac6-ea60-4868-a8e0-62a8510aa747/Supplemental Redist License_English.docx",
+            "size": "38436",
+            "version": "3.5.0.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "Microsoft Chart Controls for Microsoft .NET Framework 3.5 will install new assemblies that contain the ASP.NET and Windows Forms Chart Controls.<br/>\r\n<br/>\r\n\r\n<b>Distribution of MSChart.exe:</b> Use of MSChart.exe is subject to the license terms included in the \u201cMSChart.exe\u201d download file. Those terms do not include rights to distribute MSChart.exe.  If you wish to distribute MSChart.exe with your programs, you must:<br/>\r\n<br/>\r\n<ul>\r\n<li>Download the above \u201cSupplemental Redist License.docx\u201d  and review the enclosed Microsoft Software Supplemental License Terms for Microsoft Chart Controls for Microsoft .NET Framework 3.5  with additional use terms for Distributable Code (Supplemental Terms). Distribution of MSChart.exe is subject to these Supplemental Terms.</li>\r\n<li>Print and retain a copy of the Supplemental Terms for your records</li>\r\n<li><b>If you do not agree to the Supplemental Terms enclosed in the \u201cSupplemental Redist License.docx\u201d, you do not have any rights under the Supplemental Terms.</b> </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.0.0",
+    "detailsSection_file_name": [
+        "MSChart.exe",
+        "Supplemental Redist License_English.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "37.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\n<LI><b>.NET Framework: </b>.NET Framework 3.5 SP1<br/></LI>\n<LI><b>Processor: </b>400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)<br/></LI>\n<LI><b>RAM:</b>96 MB (Minimum); 256 MB (Recommended)<br/></LI>\n<LI> <b>Hard Disk: </b>Up to 500 MB of available space may be required<br/></LI>\n<LI> <b>CD or DVD Drive: </b> Not required<br/></LI>\n<LI> <b>Display:</b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)<br/></LI>\n\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI> <b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. </LI><br />\n<LI> Before you can install this download, make sure that Microsoft .NET Framework 3.5 SP1 is installed on the computer.</LI> <br />\n<LI>Click the <b>Download</b> button on this page to start the download </LI><br />\n<LI>To save the download to your computer for installation at a later time, click <b>Save</b>.</LI><br />\n<LI>To cancel the installation, click <b>Cancel</b>. </LI><br />\n\n<br />\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14422",
+    "downloadPreload": true
+}

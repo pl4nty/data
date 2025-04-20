@@ -1,0 +1,166 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 for Microsoft Office Outlook (Outlook Client)",
+    "downloadDescription": "Install Microsoft Dynamics CRM for Outlook, also known as the CRM 2011 Outlook client. Microsoft Dynamics CRM for Outlook enables access to your Microsoft Dynamics CRM data through Outlook. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CRM2011-Client-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/4/6/6/466ba2ea-4a6b-4623-86a4-b205a7b3a7f9/CRM2011-Client-ENU-amd64/Package/CRM2011-Client-ENU-amd64.exe",
+            "size": "89329280",
+            "version": "05.00.9690.1992",
+            "datePublished": "7/15/2024 4:22:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Client-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/4/6/6/466ba2ea-4a6b-4623-86a4-b205a7b3a7f9/CRM2011-Client-ENU-i386/Package/CRM2011-Client-ENU-i386.exe",
+            "size": "87543144",
+            "version": "05.00.9690.1992",
+            "datePublished": "7/15/2024 4:22:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "This download installs Microsoft Dynamics CRM for Microsoft Office Outlook.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "05.00.9690.1992",
+    "detailsSection_file_name": [
+        "CRM2011-Client-ENU-amd64.exe",
+        "CRM2011-Client-ENU-i386.exe"
+    ],
+    "detailsSection_file_size": [
+        "85.2 MB",
+        "83.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Running Microsoft Dynamics CRM 2011 on a computer that has less than the recommended requirements may result in inadequate performance. For information, see: \r\n<ul><li><a href=\"http://technet.microsoft.com/en-us/library/hh699680.aspx\">Microsoft Dynamics CRM 2011 for Outlook hardware requirements</a></li>\r\n<li><a href=\"http://technet.microsoft.com/en-us/library/hh699818.aspx\">Microsoft Dynamics CRM 2011 for Outlook software requirements</a></li></ul>\r\n\r\nMicrosoft Dynamics CRM for Outlook can be installed on computers that have any combination of the following: <br/><br/>\r\nWindows operating systems:\r\n<ul>\r\n<li>Windows 8 (see Additional Information section below) </li>\r\n<li>Windows 7 (both 64-bit and 32-bit versions)\r\n</li>\r\n<li>Windows Vista (both 64-bit and 32-bit versions)\r\n</li>\r\n<li>Windows XP with SP3 </li>\r\n<li>Windows Server 2008 and Windows Server 2003 when running with Remote Desktop Services (formerly Terminal Services) </li>\r\n</ul>\r\n\r\nMicrosoft Office:\r\n<ul>\r\n<li>Microsoft Office 2013 (32 or 64-bit versions. See Additional Information section below) </li>\r\n<li>Microsoft Office 2010 (32 or 64-bit versions) </li>\r\n<li>Microsoft Office 2007 (32-bit versions) </li>\r\n<li>Microsoft Office 2003 SP3 (32-bit versions) </li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>.</li>\r\n<li>When the <b>File Download</b> dialog box appears, click <b>Save</b> to save the file to your computer.</li>\r\n<li>When you are ready to install the product, double-click the executable file, and then follow the instructions on the screen.</li>\r\n</ol>",
+    "additionalInformationSection": "Running Microsoft Dynamics CRM 2011 for Outlook on Windows 8 or with Microsoft Office 2013 requires Microsoft Dynamics CRM 2011 Update Rollup 11 or a later update rollup. For more information, see <a href=\"http://support.microsoft.com/kb/2727137\">Unable to configure the Microsoft Dynamics CRM 2011 Outlook client on a Windows 8 computer</a> and \r\n<a href=\"http://support.microsoft.com/kb/2744957\">Support with Microsoft Dynamics CRM 2011 and Microsoft Office 2013</a>.   <br />\r\n<br />For installation instructions, see <a href=\"http://technet.microsoft.com/en-us/library/hh699713.aspx\">Microsoft Dynamics CRM for Outlook Installation Instructions</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM for Outlook Installation Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=200051"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2011 updates and hotfixes",
+            "url": "http://support.microsoft.com/kb/2555051"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27821",
+    "downloadPreload": true
+}

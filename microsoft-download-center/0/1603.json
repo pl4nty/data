@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Video: Adding Video or Audio Media to an ASP.NET Web Application",
+    "downloadDescription": "This video introduces the ASP.NET MediaPlayer server control for Silverlight-based applications.  See Related Resources for documentation and for a code example that accompanies this video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "video-silverlight01.wmv",
+            "url": "https://download.microsoft.com/download/c/9/c/c9cb546f-580b-4cfa-9f24-0ad7f6e0164d/video-silverlight01.wmv",
+            "size": "8821861",
+            "version": "0.1",
+            "datePublished": "7/15/2024 3:14:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The ASP.NET <b>MediaPlayer</b> server control lets you add video and audio to a Silverlight-enabled Web site. This video shows how to include a <b>MediaPlayer</b> control in a Web site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "video-silverlight01.wmv"
+    ],
+    "detailsSection_file_size": [
+        "8.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Windows Media Player</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><br />\n<li>Click the <b>Download</b> button on this page to start the video.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "silverlight Documentation on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=110063"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1603",
+    "downloadPreload": true
+}

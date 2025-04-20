@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Web Client Service Reference",
+    "downloadDescription": "This page contains the download for the Microsoft Dynamics GP 2013 Web Client Service Reference documentation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsGPWebClientServiceRef.chm",
+            "url": "https://download.microsoft.com/download/e/0/3/e03ef6c7-f3e4-41ef-abe7-42a21c446963/DynamicsGPWebClientServiceRef.chm",
+            "size": "142025",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:17:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This documentation describes the interfaces for the services that are part of the web client for Microsoft Dynamics GP 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "DynamicsGPWebClientServiceRef.chm"
+    ],
+    "detailsSection_file_size": [
+        "138.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>This download contains only documentation, so there are no requirements before installing it. It is expected, however, that you are familiar with installing and using the Microsoft Dynamics GP web client.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI> Download the DynamicsGPWebClientServiceRef.chm file to your computer.</LI>\n</OL><br /><br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39971",
+    "downloadPreload": true
+}

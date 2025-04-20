@@ -1,0 +1,133 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2016 Update 1 Preview",
+    "downloadDescription": "HPC Pack 2016 Update 1 Preview",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "5.1.6039.0.zip",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/5.1.6039.0.zip",
+            "size": "1009368830",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "New Set of HPC Pack Scheduler REST API.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/New Set of HPC Pack Scheduler REST API.pdf",
+            "size": "643227",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Burst to Azure Batch with Microsoft HPC Pack 2016 Update 1.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/Burst to Azure Batch with Microsoft HPC Pack 2016 Update 1.pdf",
+            "size": "1508468",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HpcSqlConnectionStringPlugin.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/HpcSqlConnectionStringPlugin.pdf",
+            "size": "399253",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Using Docker in HPC Pack.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/Using Docker in HPC Pack.pdf",
+            "size": "799194",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Burst to Azure IaaS nodes in HPC Pack.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/Burst to Azure IaaS nodes in HPC Pack.pdf",
+            "size": "1128351",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Step by step for using AAD for SOA job.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/Step by step for using AAD for SOA job.pdf",
+            "size": "398981",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "What's New in HPC Pack Update 1 Preview.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb8782a-faaf-457d-af3d-0b157feedf4c/What's New in HPC Pack Update 1 Preview.pdf",
+            "size": "516212",
+            "version": "4.04.4868",
+            "datePublished": "7/15/2024 4:57:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>HPC Pack 2016 Update 1 GA is now available <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=56360\">Microsoft HPC Pack 2016 Update 1 GA</a>. Please download the GA version instead of this preview.</b><br/>\r\n<br/>\r\nHPC Pack 2016 Update 1 Preview delivers tools, performance and scalability for a highly productive HPC environment, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface v2 (MPI2) and Service-Oriented Architecture (SOA) interactive application support, cluster management &amp; monitoring tools.<br/>\r\nThis preview is target for customers trying the new features and provide us feedbacks. <br/>\r\nBelow we will list the new features and changes that are available in Microsoft HPC Pack 2016 Update 1 Preview, comparing with the HPC Pack 2016 RTM. And please note that these features may change in the HPC Pack 2016 Update 1 RTM build. You can download and install HPC Pack 2016 Update 1 Preview in your on-premises computers, or you can just use the <a href=\"https://github.com/MsHpcPack/HPCPack2016Preview\">preview deployment templates</a> to create a cluster on Azure with HPC Pack 2016 Update 1 Preview.<br/>\r\n<br/>\r\n<b>Removed Dependency on Service Fabric for Single Head node Installation</b><br/>\r\nService Fabric is not required for single head node cluster installation. But it is still required for 3 head nodes cluster setup.<br/>\r\n<br/>\r\n<b>Azure AD (AAD) integration for SOA Job</b><br/>\r\nIn HPC Pack 2016 RTM we added AAD support but only for HPC Batch jobs. Now we added support for HPC SOA jobs. Please refer to doc \u201cstep by step using AAD for SOA job\u201d.<br/>\r\n<br/>\r\n<b>Burst to Azure Batch Improvement</b><br/>\r\nIn this version, we improved bursting to Azure Batch pools including \u201cLow Priority\u201d VM support and Linux IaaS VM support. For more details please check doc \u201cBurst to Azure Batch with Microsoft HPC Pack 2016 Update 1\u201d.<br/>\r\n<br/>\r\n<b>Use Docker in HPC Pack</b><br/>\r\nHPC Pack is now integrated with Docker. Job users can submit a job requesting a Docker image, and the HPC Job Scheduler will start the task within Docker. Please check this doc \u201cUsing docker in HPC Pack\u201d for more details. NVIDIA Docker GPU jobs and cross-Docker MPI jobs are both supported.<br/>\r\n<br/>\r\n<b>Manage Azure Resource Manager(RM) VMs in HPC Pack</b><br/>\r\nOne of the advantages of HPC Pack is that it makes it much easier to manage Azure compute resource for cluster administration through node templates. In addition to the Azure Windows PaaS node template and Azure Batch pool template, we now introduce a new type of template: Azure RM VM template. It enables you to add, deploy, remove and manage RM VMs from one central place. For more details please check doc \u201cBurst to Azure IaaS nodes in HPC Pack\u201d<br/>\r\n<br/>\r\n<b>Support Excel 2016</b><br/>\r\nIf you\u2019re using Excel Workbook offloading in HPC Pack, the good news for you is that Excel 2016 is supported by default. The way you use Excel Workbook offloading hasn\u2019t been changed.\r\nAnd if you\u2019re using O365, you need to manually active the Excel on all compute nodes.<br/>\r\n<br/>\r\n<b>Improved auto grow-shrink operation log</b><br/>\r\nOriginally you had to dig into the management logs to check what was happening to the auto grow shrink operations, which is not very convenient. Now you\u2019re able to read the logs within the HPC Cluster Manager GUI (Resource Management &rarr; Operations &rarr; AzureOperations). If you have auto grow shrink enabled, you will see one active \u201cAuto grow shrink report\u201d operation every 30 minutes. This operation logs is never archived and instead is purged after 48 hours, which is a different behavior from other operations.<br/>\r\nPlease note that this feature already exists in HPC Pack 2012 R2 Update 3 with <a href=\"www.microsoft.com/en-us/download/details.aspx?id=55650\">QFE4032368</a>.<br/>\r\n<br/>\r\n<b>Peek output for a running task</b><br/>\r\nBefore HPC Pack 2016 Update 1, you\u2019re only able to see the last 5K output from the task if the task hasn\u2019t specified output redirection. And you\u2019re not able to know the output of a running task as well unless you open the task output directly if the task redirected to a file. This situation was worse if your job and task were running in Azure nodes as your client is not able to access the Azure nodes directly.\r\nNow if you go to a job view dialog from job manager GUI, by selecting a running task and click \u201cPeek Output\u201d button, we show you the latest 4K output or standard error. <br/>\r\nYou can also use the command line tool \u201ctask view &lt;jobId&gt;.&lt;TaskId&gt; &frasl;peekoutput\u201d to get the latest 4K output and standard error from the running task.<br/>\r\nPlease note that:<br/>\r\n1. This feature does not work if your task is running on an Azure batch pool node, and not work for SOA job;<br/>\r\n2. Peek output may fail if your task redirected the output to a share that the compute node account cannot access.<br/>\r\n<br/>\r\n<b>Backward Compatibility</b><br/>\r\nIn HPC Pack Update 1 we added compatibility with previous versions of HPC Pack. Mainly we support below scenarios:<br/>\r\n1. With the new SDK we release with HPC Pack Update 1, you\u2019re able to connect to previous versions (HPC Pack 2012 and HPC Pack 2012 R2) of HPC Pack Cluster and submit&frasl;manage your batch jobs.<br/>\r\n2. You\u2019re able to connect to HPC Pack 2016 Update 1 from previous versions (HPC Pack 2012 and HPC Pack 2012 R2) of the HPC Pack SDK to submit and manage batch jobs. Please note that this only works if your HPC Pack 2016 Update 1 cluster nodes are domain joined.<br/>\r\nPlease note, SDK from Update 1 will not work for HPC Pack 2016 RTM.<br/>\r\nThe Preview SDK is available <a href=\"https://www.nuget.org/packages/Microsoft.HPC.SDK/\">here</a><br/>\r\n<br/>\r\n<b>SqlConnectionStringProvider plugin</b><br/>\r\nHPC Pack 2016 Update 1 supports the plugin to provide a customized SQL connection string. This is mainly for managing the SQL connection strings in a separate security system from HPC Pack 2016 Update 1. For example, the connection strings change frequently or it contains secret information that it is improper to save it in windows registry, or the service fabric cluster property store. Please refer to doc \u201cHPCSqlConnectionStringPlugin\u201d for how to develop and deploy the plugin.<br/>\r\n<br/>\r\n<b>New Set of HPC Pack Scheduler REST API</b><br/>\r\nWhile we keep the original <a href=\"https://msdn.microsoft.com/en-us/library/hh560258(v=vs.85).aspx\">REST API</a>  for backward compatibility, we introduced a new set of REST API for Azure AD integration and added JSON format support. Please refer to doc \u201cNew Set of HPC Pack Scheduler API\u201d for more details.<br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.04.4868",
+    "detailsSection_file_name": [
+        "5.1.6039.0.zip",
+        "New Set of HPC Pack Scheduler REST API.pdf",
+        "Burst to Azure Batch with Microsoft HPC Pack 2016 Update 1.pdf",
+        "HpcSqlConnectionStringPlugin.pdf",
+        "Using Docker in HPC Pack.pdf",
+        "Burst to Azure IaaS nodes in HPC Pack.pdf",
+        "Step by step for using AAD for SOA job.pdf",
+        "What's New in HPC Pack Update 1 Preview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "962.6 MB",
+        "628.2 KB",
+        "1.4 MB",
+        "389.9 KB",
+        "780.5 KB",
+        "1.1 MB",
+        "389.6 KB",
+        "504.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2016 Update 1 supported Operating Systems</b>\r\n<li>Head nodes: Windows Server 2016, Windows Server 2012 R2</li>\r\n<li>Compute nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Broker nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 8.1 Pro or Enterprise, windows 10</li>\r\n<li>Unmanaged server nodes: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Linux Compute nodes: SUSE Linux Enterprise Server 12, Red Hat Enterprise Linux 7.1, CentOS-based 6.7, Ubuntu Server 14.04 LTS and 16.04 LTS</li>\r\n<li>Client: Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1 </li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 4GB<br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Prior to installation, please review the '<a href=\"https://technet.microsoft.com/en-us/library/mt744885(v=ws.11).aspx\">Microsoft HPC Pack 2016</a>' available on the <a href=\"http://go.microsoft.com/fwlink/?LinkID=263697\">Windows HPC TechNet site</a>.<br/><br/>\r\nMost of the content from HPC Pack 2016 RTM shall apply to HCP Pack 2016 Update 1 unless it is stated in the \"What's New in HPC Pack Update 1 Preview\" doc.\r\nDownload the 5.1.6039.0'.zip' archive, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack installation wizard on a supported Windows Server based computer.<br/><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        },
+        {
+            "title": "windows HPC TechNet site",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=263697"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56112",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager 2016 inbox MP hotfix for WMI health monitor issue",
+    "downloadDescription": "Microsoft System Center Operations Manager 2016 inbox MP hotfix for WMI health monitor issue",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 Core Monitoring Inbox MP.msi",
+            "url": "https://download.microsoft.com/download/8/8/a/88aa913d-a984-4921-b1db-ed84257dbbcf/Microsoft System Center 2016 Core Monitoring Inbox MP.msi",
+            "size": "671744",
+            "version": "7.2.11907.0",
+            "datePublished": "7/15/2024 4:43:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The WMI health monitor was not working when \r\n<ul>\r\n<li> 1. WINRM was configured to use https only </li>\r\n<li> 2. The Service Principal Name was registered to set http/servername to a user account </li>\r\n</ul>\r\n<br/>\r\nThe issue has been fixed, the protocol used by the script that was causing the failure has been modified to use the DCOM protocol as in SCOM 2012 R2. \r\n\r\nInstallation - Import the .msi package on to the SCOM 2016 machine and install the files. If the MPs already exists, they will be upgraded with the latest files. <br/>\r\n\r\nThe package has 2 inbox MPs, their names and versions are given below \r\n<ul>\r\n<li> Microsoft.SystemCenter.2007.mp - 7.2.11907.0 </li> \r\n<li> Microsoft.SystemCenter.Internal.mp  7.0.8437.10 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.11907.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2016 Core Monitoring Inbox MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "656.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Operations Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Import and install the msi package on to the SCOM 2016 machine",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55792",
+    "downloadPreload": true
+}

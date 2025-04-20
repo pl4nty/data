@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "RcmReplicationAgent_1.37.8652.31040",
+    "downloadDescription": "RcmReplicationAgent_1.37.8652.31040",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmReplicationAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/b/3/1/b315d668-ee3d-4797-b137-9e98375042d6/RcmReplicationAgentSetup.msi",
+            "size": "17276928",
+            "version": "1.37.8652.31040",
+            "datePublished": "9/15/2023 5:07:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RcmReplicationAgent_1.37.8652.31040",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.37.8652.31040",
+    "detailsSection_file_name": [
+        "RcmReplicationAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "16.5 MB"
+    ],
+    "detailsSection_file_date": "9/15/2023",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Follow wizard instructions RcmReplicationAgent installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105030",
+    "downloadPreload": true
+}

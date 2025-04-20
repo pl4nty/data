@@ -1,0 +1,220 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2013 List Component for Microsoft SharePoint Server 2010 and Microsoft SharePoint Server 2013 (for multiple browsers)",
+    "downloadDescription": "Microsoft Dynamics CRM 2013 List Component for SharePoint",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-SharePointList2013-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/0/6/1/061911c7-e1b4-4a9b-9776-c19151e2c130/CRM2013-SharePointList2013-ENU-amd64.exe",
+            "size": "1258512",
+            "version": "6.1.0000.1044",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-SharePointList2010-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/0/6/1/061911c7-e1b4-4a9b-9776-c19151e2c130/CRM2013-SharePointList2010-ENU-amd64.exe",
+            "size": "1257848",
+            "version": "6.1.0000.1044",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics CRM 2013 List component for SharePoint makes Microsoft Dynamics CRM documents that are stored on SharePoint available to you in a format that has the look and feel of Microsoft Dynamics CRM. This feature also enables Microsoft Dynamics CRM to automatically create folders that will be used to store documents related to Microsoft Dynamics CRM records on SharePoint.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.1.0000.1044",
+    "detailsSection_file_name": [
+        "CRM2013-SharePointList2013-ENU-amd64.exe",
+        "CRM2013-SharePointList2010-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><ul><li>For SharePoint Server 2010 system requirements and browser support, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=272538\">Hardware and software requirements (SharePoint Server 2010)</a>.</li>\r\n<li>For SharePoint Server 2013 system requirements and browser support, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=272539\">System requirements for SharePoint 2013</a>.</li></ul></ul>\r\n<ul><li><b>Other Requirements</b>: </li><br />\r\n<ul><li> Microsoft Dynamics CRM 2013</li><br />\r\nThere are two versions of the Microsoft Dynamics CRM 2013 List Component for Microsoft SharePoint: \r\n<ul><li><b>Microsoft Dynamics CRM 2013 List Component for Microsoft SharePoint Server 2013</b>. This version works with Microsoft SharePoint Server 2013  and <a href=\"http://blogs.office.com/b/sharepoint/archive/2013/05/08/upgrading-to-the-new-sharepoint-online.aspx\r\n\">SharePoint Online</a>. It doesn't work with SharePoint 2010 or SharePoint Server Foundation 2013 .</li>\r\n<li><b>Microsoft Dynamics CRM 2013 List Component for Microsoft SharePoint Server 2010</b>. This version works with Microsoft SharePoint Server 2010 and Microsoft SharePoint Foundation 2010. It doesn't work with SharePoint 2013 and  SharePoint Online.</li>\r\n</ul></ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li> To start the download, click <b>Download</b> for the list component that you want to install. </li><br />\r\n<li> To save the file to your computer, click <b>Save</b>, specify a location, and click <b>Save</b> again.</li><br/>\r\n</ol><br />\r\n<b>Important</b>\r\n<ul>\r\n<li>You must be a SharePoint site collection administrator to be able to install the Microsoft  Dynamics CRM List component on Microsoft SharePoint Server.</li>\r\n<li>(<b>For SharePoint (on-premises) only</b>) The Microsoft Dynamics CRM List component is a site collection-level solution. If you want to enable the Microsoft Dynamics CRM List component at the farm level, you must write a script that does the following:</li>\r\n<ul><li>Retrieves all SharePoint site collections from SharePoint server.</li>\r\n<li>Installs and activates the List component on each of these site collections.</li>\r\n</ul>\r\n</ul>\r\n<b>To install the Microsoft Dynamics CRM List component</b>\r\n<ol>\r\n<li>Navigate to the folder where you downloaded <b>CRM2013-SharePointList2013-ENU-amd64.exe</b> or <b>CRM2013-SharePointList2010-ENU-amd64.exe</b>, and double-click it.</li>\r\n<li>In the <b>Open File - Security Warning</b> dialog box, click <b>Run</b>.</li>\r\n<li>To accept the license agreement, click <b>Yes</b>.</li>\r\n<li>Select a folder to store the extracted files, and click <b>OK</b>.</li><br />\r\nIf you downloaded <b>CRM2013-SharePointList2013-ENU-amd64.exe</b>, the following files are extracted:\r\n<ul><li><b>AllowHtcExtn.ps1</b></li>\r\n<li><b>crmlistcomponent.wsp</b></li></ul><br />\r\nIf you downloaded <b>CRM2013-SharePointList2010-ENU-amd64.exe</b>, the <b>crmlistcomponent.wsp</b> file is extracted.\r\n<li>Open your browser.</li>\r\n<li>In the address bar, type the URL of the site collection on which you want to install the Microsoft Dynamics CRM List component, and press Enter.</li>\r\n<li>Navigate to Solution Gallery in SharePoint: </li>\r\n<ul><li>If you are using SharePoint 2010: Click <b>Site Actions</b>, then <b>Site Settings</b>, and then under <b>Galleries</b>, click <b>Solutions</b>.</li><br />\r\n<li>If you are using SharePoint 2013: Click <b>Settings</b> icon in the top-right corner, then <b>Site Settings</b>, and then under <b>Web Designer Galleries</b>, click <b>Solutions</b>.</li></ul>\r\n<li>On the <b>Solutions </b>tab, in the <b>New</b> group, click <b>Upload Solution</b>.</li>\r\n<li>Click <b>Browse</b>, locate the <b>crmlistcomponent.wsp</b> file, and then click <b>OK</b>.</li>\r\n<li>On the <b>Solutions </b>tab, in the <b>Commands</b> group, click <b>Activate</b>.</li>\r\n</ol> <br />\r\n<br />\r\n<br />\r\n<b>Uninstall Instructions</b>\r\n<ol>\r\n<li>Open the site collection URL on which the Microsoft Dynamics CRM List component is installed.</li>\r\n<li>Navigate to Solution Gallery in SharePoint: </li>\r\n<ul><li>If you are using SharePoint 2010: Click <b>Site Actions</b>, then <b>Site Settings</b>, and then under <b>Galleries</b>, click <b>Solutions</b>.</li><br />\r\n<li>If you are using SharePoint 2013: Click <b>Settings</b> icon in the top-right corner, then <b>Site Settings</b>, and then under <b>Web Designer Galleries</b>, click <b>Solutions</b>.</li></ul>\r\n<li>Select the option for the <b>crmlistcomponent.wsp</b> file, and on the <b>Solutions</b> tab, in the <b>Commands</b> group, click <b>Deactivate</b>.</li>\r\n<li>In the <b>Deactivate Solutions</b> dialog box, in the <b>Commands</b> group, click <b>Deactivate</b> again.</li>\r\n<li>On the <b>Solutions</b> tab, in the <b>Commands</b> group, click <b>Delete</b>.</li>\r\n<li>Click <b>OK</b>.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40345",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2010 Japanese IME addin for Windows 8",
+    "downloadDescription": "This is an addin for integrated feature of Office 2010 & Windows 8 IME for Japanese.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "imeaddinsetup_64bit.exe",
+            "url": "https://download.microsoft.com/download/4/4/b/44b42c32-9c5d-4df7-b8a6-b2a7780f4302/imeaddinsetup_64bit.exe",
+            "size": "1044424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "imeaddinsetup_32bit.exe",
+            "url": "https://download.microsoft.com/download/4/4/b/44b42c32-9c5d-4df7-b8a6-b2a7780f4302/imeaddinsetup_32bit.exe",
+            "size": "994224",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Office 2010 supports Sharepoint Dictionary and Outlook Dictionary. This addin offers the same functionality between Office 2010 and Windows 8 IME for Japanese.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "imeaddinsetup_64bit.exe",
+        "imeaddinsetup_32bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "1019.9 KB",
+        "970.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NO specific requiremenst beyond Office 2010 and Windows 8.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\r\n<li>To use the 32-bit version of the files, double-click the <b>imeaddinsetup_32bit.exe</b> program file on your hard disk to start the Setup program.</li>\r\n<li>To use the 64-bit version of the files, double-click the <b>imeaddinsetup_64bit.exe</b> program file on your hard disk to start the Setup program.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35839",
+    "downloadPreload": true
+}

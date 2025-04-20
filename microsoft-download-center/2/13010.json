@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 Benchmark Performance White Paper: 1,000 Concurrent Users with Microsoft SQL Server 2005",
+    "downloadDescription": "This white paper documents performance benchmark testing for running Microsoft Dynamics GP 10.0 with 1,000 constant concurrent users, all engaged in heavy transaction processing or analysis activity across various functional areas of the solution.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Scalability_Microsoft_Dynamics_GP_10.pdf",
+            "url": "https://download.microsoft.com/download/7/9/f/79f3257e-690a-4629-9b1a-f12cae7b2b8e/Scalability_Microsoft_Dynamics_GP_10.pdf",
+            "size": "405849",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Scalability_Microsoft_Dynamics_GP_10.xps",
+            "url": "https://download.microsoft.com/download/7/9/f/79f3257e-690a-4629-9b1a-f12cae7b2b8e/Scalability_Microsoft_Dynamics_GP_10.xps",
+            "size": "1067341",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper demonstrates how Microsoft Dynamics GP delivers a business system that can scale with growing organizations by successfully handling massive amounts of transactions and data. Whether it\u2019s managing sheer transaction volume in a particular business function, database size, or number of users and machines, Microsoft Dynamics GP can handle the peaks and valleys of regular business cycles, as well as the long-term, upward path that reflects growth. This white paper documents performance benchmark testing for running Microsoft Dynamics GP 10.0 with 1,000 constant concurrent users, all engaged in heavy transaction processing or analysis activity across various functional areas of the solution. The performance benchmark demonstrates a sample customer environment processing more than 2.6 million business transactions (with a total of 8.3 million transaction line items) within an 8-hour workday. <br /><br />\nFor organizations challenged by demanding payroll processes, this paper offers additional benchmark testing of a year-end payroll run for 30,000 employees, with Microsoft Dynamics GP completing a full year-end payroll processing and reporting scenario in 11.2 hours. The paper also includes real-world examples of transaction processing throughput from some of our customers.<br /><br /> \nThe combination of this information will help you assess how Microsoft Dynamics GP can scale to meet your organizational needs and goals.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "Scalability_Microsoft_Dynamics_GP_10.pdf",
+        "Scalability_Microsoft_Dynamics_GP_10.xps"
+    ],
+    "detailsSection_file_size": [
+        "396.3 KB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics GP 10.0, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=220476\">System requirements for Microsoft Dynamics GP 10.0</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "For additional information regarding scalability, contact Microsoft or your Microsoft Dynamics GP Partner.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13010",
+    "downloadPreload": true
+}

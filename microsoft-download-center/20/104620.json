@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Simplify Your Exchange Administrator Experience",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Simplify Your Exchange Administrator Experience.pdf",
+            "url": "https://download.microsoft.com/download/0/6/0/060831df-65c0-42c7-a292-b7043792e281/Simplify Your Exchange Administrator Experience.pdf",
+            "size": "660550",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Are you performing several tasks on a regular basis, e.g., daily, weekly or monthly? Are you in charge of several Exchange on-premises and/or online environments? If you're interested in simplifying your daily admin experience, tweaking your own existing toolset for free, and leveraging LDAP, Microsoft Graph or Azure AD, you should attend this session! You will learn how you can customize your own toolbox based on your own needs.\r\n\r\nRecording of presentation by Ingo Gegenwarth is at https://youtu.be/mViY77bZwGM.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Simplify Your Exchange Administrator Experience.pdf"
+    ],
+    "detailsSection_file_size": [
+        "645.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Open file in PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104620",
+    "downloadPreload": true
+}

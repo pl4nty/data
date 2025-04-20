@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business, SDN Interface 2.4.1",
+    "downloadDescription": "The Skype for Business, SDN (Software-Defined Networking) Interface allows developers to build applications and services that can monitor, isolate and correct issues on the network that affect Skype for Business quality of experience.  The installer application also provides customers with the ability to interface with qualified 3rd party applications built on the Skype for Business, SDN API.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_SDN_Interface_schema.chm",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/Skype_for_Business_SDN_Interface_schema.chm",
+            "size": "877275",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_SDN_Interface.pdf",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/Skype_for_Business_SDN_Interface.pdf",
+            "size": "1854066",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_SDN_ReleaseNotes.pdf",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/Skype_for_Business_SDN_ReleaseNotes.pdf",
+            "size": "414393",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_SDN_Interface.Schema.C.xsd",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/Skype_for_Business_SDN_Interface.Schema.C.xsd",
+            "size": "63204",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_SDN_Interface.Schema.D.xsd",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/Skype_for_Business_SDN_Interface.Schema.D.xsd",
+            "size": "91017",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SkypeForBusinessDialogListener.msi",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/SkypeForBusinessDialogListener.msi",
+            "size": "3219456",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SkypeForBusinessSDNManager.msi",
+            "url": "https://download.microsoft.com/download/1/1/6/1162d4d6-deb0-491a-b2d5-d203d09a632e/SkypeForBusinessSDNManager.msi",
+            "size": "4419584",
+            "version": "7.0.1123.2",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype for Business Server and Lync Server provide customers with an unmatched unified communications and collaboration experience. Since both Skype for Business and Lync rely on the underlying network, sometimes the quality of experience can be affected by underperforming or improperly configured network elements. Applications built on the Skype for Business, SDN Interface provide the ability to quickly detect quality-affecting issues on the network, and deliver prescriptive resolutions and traffic prioritization.\r\n<br/><br/>\r\nA qualified 3rd party Skype for Business, SDN Interface solution is required for this download.  You can find qualified solutions built on the Skype for Business, SDN Interface at this <a href=\"http://technet.microsoft.com/en-us/lync/hh972602.aspx\">list of qualified Skype for Business, SDN Interface solution providers on TechNet</a>.\r\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.1123.2",
+    "detailsSection_file_name": [
+        "Skype_for_Business_SDN_Interface_schema.chm",
+        "Skype_for_Business_SDN_Interface.pdf",
+        "Skype_for_Business_SDN_ReleaseNotes.pdf",
+        "Skype_for_Business_SDN_Interface.Schema.C.xsd",
+        "Skype_for_Business_SDN_Interface.Schema.D.xsd",
+        "SkypeForBusinessDialogListener.msi",
+        "SkypeForBusinessSDNManager.msi"
+    ],
+    "detailsSection_file_size": [
+        "856.7 KB",
+        "1.8 MB",
+        "404.7 KB",
+        "61.7 KB",
+        "88.9 KB",
+        "3.1 MB",
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b> PLEASE NOTE:  Skype for Business, SDN Interface supports Skype for Business Server 2015, Lync Server 2013 AND Lync Server 2010 deployments</b>\r\n<br />\r\n<br/>\r\nThe following requirements must be met for using Skype for Business, SDN Interface:\r\n<ul>\r\n<li>Valid licenses for Skype for Business Server 2015, Lync Server 2010 or Lync Server 2013 are required</li>\r\n<li>Supported operating systems are the same supported operating systems for Skype for Business Server 2015, Lync Server 2010 and Lync Server 2013 </li>\r\n<li>.NET 4.5 or higher for the Skype for Business, Dialog Listener.</li>\r\n<li>.NET 4.5 or higher for the Skype for Business, SDN Manager</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "This download includes an installation guide that should be read prior to beginning installation. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51195",
+    "downloadPreload": true
+}

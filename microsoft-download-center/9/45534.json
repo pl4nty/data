@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Set up Lync Online external communications \u2013 end-user email template",
+    "downloadDescription": "Once you\u2019ve decided to allow people in your organization to add external contacts, you can use this email template to let them know how it works, and where to go for more information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "O365_LECSA_end_user_email_template.doc",
+            "url": "https://download.microsoft.com/download/c/b/d/cbd06981-8f2f-4229-a478-04b1531b560a/O365_LECSA_end_user_email_template.doc",
+            "size": "169984",
+            "version": "Feb2015",
+            "datePublished": "7/15/2024 3:58:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If you want to let your Lync users IM and talk with Lync contacts in other organizations, and also to Skype users who are signed in with a Microsoft account (formerly Windows Live ID), you\u2019ll want to make sure they know how the new feature works, and where they can find more information \u2013 including troubleshooting tips.  Use this email template to compose an announcement email. You can edit it to describe just the features available in your organization, and even add contact info for your helpdesk if you need to.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2015",
+    "detailsSection_file_name": [
+        "O365_LECSA_end_user_email_template.doc"
+    ],
+    "detailsSection_file_size": [
+        "166.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync External Communications Setup Assistant",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=309651"
+        },
+        {
+            "title": "let Lync Online users communicate with external Lync or Skype contacts",
+            "url": "https://support.office.microsoft.com/en-us/article/Let-Lync-Online-users-communicate-with-external-Lync-or-Skype-contacts-b414873a-0059-4cd5-aea1-e5d0857dbc94?CorrelationId=a5dd71a4-fd71-42a0-9062-e5325378f8d2&ui=en-US&rs=en-US&ad=US"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45534",
+    "downloadPreload": true
+}

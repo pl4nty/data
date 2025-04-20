@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2020 CU2",
+    "downloadDescription": "Microsoft BizTalk Server 2020 CU2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2020MQSeries-KB4539546-ENU.exe",
+            "url": "https://download.microsoft.com/download/a/c/5/ac533733-a39c-48c4-9ec1-23ac75ae4e50/BTS2020MQSeries-KB4539546-ENU.exe",
+            "size": "480120",
+            "version": "3.13.785.0",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BTS2020-KB5003151-ENU.exe",
+            "url": "https://download.microsoft.com/download/a/c/5/ac533733-a39c-48c4-9ec1-23ac75ae4e50/BTS2020-KB5003151-ENU.exe",
+            "size": "45934456",
+            "version": "3.13.785.0",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2020 CU2",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.13.785.0",
+    "detailsSection_file_name": [
+        "BTS2020MQSeries-KB4539546-ENU.exe",
+        "BTS2020-KB5003151-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "468.9 KB",
+        "43.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 4.8 <br/>\r\nVisual Studio 2019 <br/>\r\nSQL Server 2016 or SQL Server 2017 or SQL Server 2019 <br/>\r\nMicrosoft BizTalk Server 2020 <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation. <br/>\r\nFor BizTalk Developer Tools, in addition to installing CU package, also update/install new version of BizTalk Server Visual Studio extension (3.13.2.0). The extension can be installed from <a href=\"https://marketplace.visualstudio.com/items?itemName=ms-biztalk.BizTalk\">BizTalk Server extension</a> or within Visual Studio - Manage Extensions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103008",
+    "downloadPreload": true
+}

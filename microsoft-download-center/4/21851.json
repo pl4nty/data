@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2008 for Mac 12.1.3 Update",
+    "downloadDescription": "This update contains several improvements to enhance stability and performance. In addition, this update includes fixes for vulnerabilities that an attacker can use to overwrite the contents of your computer's memory with malicious code.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2008-1213UpdateEN.dmg",
+            "url": "https://download.microsoft.com/download/4/d/4/4d4368a3-10f9-4814-823b-4e5ad0c5ca7e/Office2008-1213UpdateEN.dmg",
+            "size": "161866790",
+            "version": "12.1.3",
+            "datePublished": "7/15/2024 3:11:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "This update contains several improvements to enhance stability and performance. In addition, this update includes fixes for vulnerabilities that an attacker can use to overwrite the contents of your computer's memory with malicious code. For more information about this update, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=129070\" target=\"_blank\">Microsoft Web site</a>.<br/><br/>\n<b>Applies to:</b> Office 2008, Office 2008 Home and Student Edition, Office 2008 Special Media Edition, Word 2008, Excel 2008, PowerPoint 2008, Entourage 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.1.3",
+    "detailsSection_file_name": [
+        "Office2008-1213UpdateEN.dmg"
+    ],
+    "detailsSection_file_size": [
+        "154.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Operating System Versions:</b>&nbsp; Mac OS&nbsp;X version&nbsp;10.4.9 (Tiger) or a later version of Mac OS</li>\n</ul>\nBefore you install this update, make sure that the <a href=\"http://go.microsoft.com/fwlink/?LinkId=119965\" target=\"_blank\">Microsoft Office 2008 for Mac Service Pack 1 (12.1.0)</a> is installed on your computer. To verify that you have installed this update, open any Microsoft Office 2008 application (for example, open Word), and then on the <b>Word</b> menu, click <b>About Word</b>. In the dialog box, compare the version number next to <b>Latest Installed Update</b>.<br/><br/>\n<b>Note&nbsp;&nbsp;</b> To verify that your computer meets these minimum requirements, on the <b>Apple</b> menu, click <b>About This Mac</b>.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>To install this update</b>\n<ol>\n<li>Print this page if you want to use it as a reference when you are offline.</li>\n<li>Quit any applications that are running, including all Office applications, Microsoft Messenger, and Office Notifications, because they might interfere with the installation.</li>\n<li>Make sure that your computer meets the minimum system requirements.</li>\n<li>Click <b>Download</b>, or click the link for the language version that you want.</li>\n<li>Follow the instructions on the screen to save the file to your hard disk. If you are using Safari, the downloaded file is saved to the desktop unless you specified a different location in the <b>Preferences</b> dialog box of Safari. To check your preferences, on the <b>Safari</b> menu, click <b>Preferences</b>, and then click <b>General</b>.</li>\n<li>Double-click the file that you downloaded in step 5 to place the Office 2008 12.1.3 Update volume on your desktop, and then double-click the <b>Office 2008 12.1.3 Update</b> volume to open it. This step might have been performed for you.</li>\n<li>In the Office 2008 12.1.3 Update volume window, double-click the <b>Office 2008 12.1.3 Update</b> application to start the update process, and then follow the instructions on the screen.</li>\n<li>If the installation finishes successfully, you can remove the update installer from your hard disk. To remove the update installer, first drag the <b>Office 2008 12.1.3 Update</b> volume to the Trash, and then drag the file that you downloaded to the Trash.</li>\n</ol>\n<b>Note</b>&nbsp;&nbsp; This update is also available from Microsoft AutoUpdate, an application that can automatically keep your Microsoft software up to date. To use AutoUpdate, open an Office application, and then on the <b>Help</b> menu, click <b>Check for Updates</b>.<br/><br/>\n<b>To remove this update</b><br/><br/>\nThis update does not include an uninstall feature. To restore your application to its original state, delete it from your hard disk, reinstall it from your original installation disk, and then install the updates that you want.",
+    "additionalInformationSection": "If you have trouble installing this update or using Office 2008 applications after you install this update, try the following:<br/><br/>\n<ul>\n<li>Make sure that the Microsoft Office 2008 folder is located in the Applications folder on the startup volume. If it is at another location on your computer, move it to the Applications folder on your startup volume, and then try installing the update again.</li>\n<li>Restart your computer and try installing the update again.</li>\n<li>Make sure that the user account you use to authenticate the update installer is an administrator account. For more information about administrator accounts, see Mac Help.</li>\n<li>Make sure that you downloaded the correct language version of the update for your copy of Office.</li>\n<li>If you rename or modify any of the files in the Microsoft Office 2008 folder, you cannot install product updates. To correct this issue, drag the Microsoft Office 2008 folder to the Trash, and then reinstall Office 2008 from your original installation disk.</li>\n<li>If you experience problems opening Office applications after you install this update, restart your computer. If you continue to experience problems after you restart, reinstall Office from your original installation disk, and then install this update again.</li>\n</ul>\nFor additional assistance, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=92011\" target=\"_blank\">Microsoft Web site</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21851",
+    "downloadPreload": true
+}

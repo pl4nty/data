@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2012 Extensions for the Windows Library for JavaScript ",
+    "downloadDescription": "The Visual Studio 2012 Extensions for the Windows Library for JavaScript contain resources that enable you to more easily build Windows Store apps using Visual Studio 2012 and Blend, such as files to supplement debugging and IntelliSense, templates for projects in Visual Studio, and design-time resources for Blend. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WinLibJS_VSE.exe",
+            "url": "https://download.microsoft.com/download/4/4/b/44b84e08-0134-43a5-8415-3ccc3e056893/WinLibJS_VSE.exe",
+            "size": "3719488",
+            "version": "1.0.9200.20789",
+            "datePublished": "7/15/2024 3:31:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If you're using Visual Studio 2013 and Blend 2013, <a href=\"http://www.microsoft.com/download/details.aspx?id=40793\">a new version is available</a>.\r\n<br/>\r\n<br/>\r\nThe Visual Studio 2012 Extensions for the Windows Library for JavaScript contain resources that enable you to more easily build Windows Store apps using Visual Studio 2012 and Blend, such as files to supplement debugging and IntelliSense, templates for projects in Visual Studio, and design-time resources for Blend. The Windows Library for JavaScript is a set of JavaScript controls, objects, and helper APIs and patterns, as well as a number of CSS styles that make it easier for you to create highly responsive, reliable, and touch-enabled Windows Store apps using JavaScript, HTML, CSS, and the Windows Runtime. For more information, see <a href=\"http://msdn.microsoft.com/en-us/library/windows/apps/hh770842.aspx\">Writing code for Windows Store apps</a>.\r\n<br/><br/>\r\nFrom this page you can download the current version of the Visual Studio Extensions for the Windows Library for JavaScript that was installed by Visual Studio, or for use with a different development environment. The installer contains resources in all languages supported by Visual Studio 2012 and Blend 2012.\r\n<br/><br/>\r\n<b>Supported Versions</b><br/>\r\nThis release supports the following version of the Windows Library for JavaScript:\r\n<ul>\r\n<li>'Microsoft.WinJS.1.0' version 1.0.9200.20789 (Aug 8, 2013)</li>\r\n</ul>\r\nThis release replaces the following versions of the Visual Studio Extensions for the Windows Library for JavaScript:\r\n<ul>\r\n<li>'Microsoft.WinJS.1.0' version 1.0.9200.20602 (Feb 12, 2013)</li>\r\n<li>'Microsoft.WinJS.1.0' version 1.0.9200.20512 (September 26, 2012)</li>\r\n<li>'Microsoft.WinJS.1.0' version 1.0.9200.20498 (September 4, 2012)</li>\r\n<li>'Microsoft.WinJS.1.0' version 1.0.8514.0 (RTM)</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.9200.20789",
+    "detailsSection_file_name": [
+        "WinLibJS_VSE.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><b>Other Requirements</b><br/>\r\nVisual Studio 2012\r\n<br/><b>Disk Space Requirements</b><br/>\r\nThe complete installation of the Visual Studio Extensions for the Windows Library for JavaScript requires 23 megabytes (MB) of hard disk space for installation. If the minimum required disk space is not available, setup will return a fatal error.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>Installing and Uninstalling</b><br/>\r\nTo optimize your setup experience, we strongly recommend that you install the latest updates and patches from Visual Studio Update and Microsoft Update and close Visual Studio before you begin installing the Visual Studio Extensions for the Windows Library for JavaScript.\r\n<br/><br/>\r\nWhen you uninstall the Visual Studio Extensions for the Windows Library for JavaScript through Programs and Features, the components will be uninstalled automatically. \r\n<br/><br/>\r\n<b>How to migrate your existing projects and Windows Store apps to the latest release of the Windows Library for JavaScript</b><br/>\r\nIf your app depends upon Microsoft.WinJS.1.0, then you will simply need to rebuild, test, and republish your app to the Windows Store. If your app depends upon Microsoft.WinJS.1.0.RC or an older version of the Windows Library for JavaScript, see <a href=\"http://msdn.microsoft.com/en-us/library/windows/apps/jj126963.aspx\">Migrating a Windows Store app to the latest Windows Library for JavaScript</a> for instructions on how to migrate an existing project or Windows Store app the latest release of the Windows Library for JavaScript.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "readme for Visual Studio 2012",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=255962"
+        },
+        {
+            "title": "kb 2744862 ",
+            "url": "http://support.microsoft.com/kb/2744862"
+        },
+        {
+            "title": "visual Studio 2013 Extensions for Windows Library for JavaScript",
+            "url": "http://www.microsoft.com/download/details.aspx?id=40793"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30687",
+    "downloadPreload": true
+}

@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Web Service Security Guide",
+    "downloadDescription": "Scenarios, Patterns, and Implementation Guidance for Web Services Enhancements 3.0. This guide will help you quickly make the most appropriate security decisions in the context of your Web service's requirements while providing the rationale and education for each option.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MS_WSS_Dec_05.pdf",
+            "url": "https://download.microsoft.com/download/8/d/6/8d608524-0763-48b5-840b-0ae446996a14/MS_WSS_Dec_05.pdf",
+            "size": "5032011",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide will help you quickly make the most appropriate security decisions in the context of your Web service's requirements while providing the rationale and education for each option. A scenario-driven approach is provided to demonstrate situations where different security patterns are successful. The guide also combines a series of decision matrices to assist you in applying your own criteria to use the Web service security patterns to meet the requirements of your environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MS_WSS_Dec_05.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader 4.0 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and run the .exe file, extract the .zip file, and view the .pdf using Adobe Reader.",
+    "relatedResourcesSection": [
+        {
+            "title": "web Services Developer Center",
+            "url": "http://msdn.microsoft.com/webservices/"
+        },
+        {
+            "title": "web Services Enhancements (WSE)",
+            "url": "http://msdn.microsoft.com/webservices/webservices/building/wse/default.aspx"
+        },
+        {
+            "title": "web and Application Services",
+            "url": "http://www.microsoft.com/windowsserver2003/technologies/webapp/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6485",
+    "downloadPreload": true
+}

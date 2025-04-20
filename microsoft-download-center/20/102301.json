@@ -1,0 +1,159 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 SP2 (KB4585922)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 SP2 (KB4585922)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MIMSyncService_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMSyncService_x64_KB4585922.msp",
+            "size": "27426816",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMService_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMService_x64_KB4585922.msp",
+            "size": "136065024",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMServiceLP_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMServiceLP_x64_KB4585922.msp",
+            "size": "13570048",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMCM_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMCM_x64_KB4585922.msp",
+            "size": "20041728",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMCMClient_x86_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMCMClient_x86_KB4585922.msp",
+            "size": "7970816",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMCMClient_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMCMClient_x64_KB4585922.msp",
+            "size": "8548352",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMCMBulkClient_x86_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMCMBulkClient_x86_KB4585922.msp",
+            "size": "15421440",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x86_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMAddinsExtensions_x86_KB4585922.msp",
+            "size": "4759552",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensions_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMAddinsExtensions_x64_KB4585922.msp",
+            "size": "11726848",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x86_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMAddinsExtensionsLP_x86_KB4585922.msp",
+            "size": "2994176",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIMAddinsExtensionsLP_x64_KB4585922.msp",
+            "url": "https://download.microsoft.com/download/a/0/9/a090deec-c69f-42ae-916b-ddf944481110/4.6.359.0/MIMAddinsExtensionsLP_x64_KB4585922.msp",
+            "size": "4124672",
+            "version": "4.6.359.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released a hotfix for Microsoft Identity Manager 2016 Service Pack 2. This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016. Additionally, this update contains stability and performance improvements outlined in <a href=\"http://support.microsoft.com/?kbid=4585922\">Knowledge Base Article 4585922</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4585922",
+        "name": "KB4585922"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.359.0",
+    "detailsSection_file_name": [
+        "MIMSyncService_x64_KB4585922.msp",
+        "MIMService_x64_KB4585922.msp",
+        "MIMServiceLP_x64_KB4585922.msp",
+        "MIMCM_x64_KB4585922.msp",
+        "MIMCMClient_x86_KB4585922.msp",
+        "MIMCMClient_x64_KB4585922.msp",
+        "MIMCMBulkClient_x86_KB4585922.msp",
+        "MIMAddinsExtensions_x86_KB4585922.msp",
+        "MIMAddinsExtensions_x64_KB4585922.msp",
+        "MIMAddinsExtensionsLP_x86_KB4585922.msp",
+        "MIMAddinsExtensionsLP_x64_KB4585922.msp"
+    ],
+    "detailsSection_file_size": [
+        "26.2 MB",
+        "129.8 MB",
+        "12.9 MB",
+        "19.1 MB",
+        "7.6 MB",
+        "8.2 MB",
+        "14.7 MB",
+        "4.5 MB",
+        "11.2 MB",
+        "2.9 MB",
+        "3.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016 Service Pack 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Perform a backup of your data and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/microsoft-identity-manager/"
+        },
+        {
+            "title": "microsoft Identity Manager Version Release History",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/reference/version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102301",
+    "downloadPreload": true
+}

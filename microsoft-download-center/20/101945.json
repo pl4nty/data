@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Inbound Consignment Inventory Demo Script for Microsoft Dynamics 365 Operations",
+    "downloadDescription": "\u200bThis document provides a demonstration script for the new inbound consignment inventory capabilities in Microsoft Dynamics 365 for Operations. It also describes some of the design limitations for the Dynamics 365 for Operations 1611 release.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "InboundconsignmentinventorydemoscriptDynamics365Operations.docx",
+            "url": "https://download.microsoft.com/download/f/c/e/fce81a77-9b24-4502-96b6-3a012aab8ecf/InboundconsignmentinventorydemoscriptDynamics365Operations.docx",
+            "size": "3138979",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bConsignment inventory is inventory that is owned by a vendor but stored at your site. When you're ready to consume or use the inventory, you take over ownership of the inventory. This document includes information about how to physically receive vendor-owned on\u2011hand inventory without creating general ledger transactions, how to start a production process where the vendor-owned inventory can be physically reserved, and how to change the ownership of the raw material so that you can process the consumption as part of production order processing. There is also some information about how vendors can monitor consumption of their inventory by using the vendor collaboration interface.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "InboundconsignmentinventorydemoscriptDynamics365Operations.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101945",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Smart Selection Dataset",
+    "downloadDescription": "Smart selection is the task of predicting the span of text that a user intended to select after they touched on a single word on a touch-enabled device. Last published: April 10, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "smartselection.zip",
+            "url": "https://download.microsoft.com/download/d/5/7/d579c527-628f-4b07-9aac-5faf9fdfe3ec/smartselection.zip",
+            "size": "11058351",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Smart selection is the task of predicting the span of text that a user intended to select after they touched on a single word on a touch-enabled device. The Smart Selection Dataset consists of crowd-sourced smart selection annotations on publicly available data. Specifically, we start from book from Wikibooks.org, which consists of publicly available textbooks. We randomly sampled 100 textbooks from Wikibooks.org and further randomly sampled one paragraph from each textbook. For each paragraph, we asked 100 crowd workers to select the phrases in the paragraph that they find interesting and would like to learn more about. See Pantel et al. 2014 (ACL) for a detailed description of the training and test data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "smartselection.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52526",
+    "downloadPreload": true
+}

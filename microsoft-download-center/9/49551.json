@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "KB3107629: Visual Studio IsoShell crash on Tools->Options",
+    "downloadDescription": "Visual Studio Isolated Shell can crash on Tools->Options->SearchOptions",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB3107629.exe",
+            "url": "https://download.microsoft.com/download/8/3/a/83ae0880-211a-43f7-94b1-f18b1a1b8648/VS12-KB3107629.exe",
+            "size": "5640936",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:04:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A customer installs the Visual Studio Isolated Shell or a 3rd party's Isolated Shell based IDE. They open the tools/options page and attempt to search for a page or setting. The program crashes due to an uncaught exception. There is no workaround for this.  This fix addresses that problem.\n\nPlease see the KB article for more information about this update: <a href=\"https://support.microsoft.com/en-us/kb/3107629 \">https://support.microsoft.com/en-us/kb/3107629</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "VS12-KB3107629.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 System Requirements",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the patch, run it, follow the install instructions in the patch.  Nothing other than running the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49551",
+    "downloadPreload": true
+}

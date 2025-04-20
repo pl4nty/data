@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Examples of Bank Statement Formats and Technical Layouts",
+    "downloadDescription": "Examples of Bank Statement Formats and Technical Layouts",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAXMT940Layout1.xlsx",
+            "url": "https://download.microsoft.com/download/6/3/8/63835587-3444-4cc7-b863-36f8a73f88bb/DynamicsAXMT940Layout1.xlsx",
+            "size": "28488",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAXISO20022Layout1.xlsx",
+            "url": "https://download.microsoft.com/download/6/3/8/63835587-3444-4cc7-b863-36f8a73f88bb/DynamicsAXISO20022Layout1.xlsx",
+            "size": "30170",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAXBAI2Layout1.xlsx",
+            "url": "https://download.microsoft.com/download/6/3/8/63835587-3444-4cc7-b863-36f8a73f88bb/DynamicsAXBAI2Layout1.xlsx",
+            "size": "29805",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MT940StatementExample.pdf",
+            "url": "https://download.microsoft.com/download/6/3/8/63835587-3444-4cc7-b863-36f8a73f88bb/MT940StatementExample.pdf",
+            "size": "177241",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:26:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BAI2StatementExample.pdf",
+            "url": "https://download.microsoft.com/download/6/3/8/63835587-3444-4cc7-b863-36f8a73f88bb/BAI2StatementExample.pdf",
+            "size": "174044",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ISO20022StatementExample.pdf",
+            "url": "https://download.microsoft.com/download/6/3/8/63835587-3444-4cc7-b863-36f8a73f88bb/ISO20022StatementExample.pdf",
+            "size": "203153",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:26:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes examples of the technical layout definitions for advanced bank reconciliation import files and three related bank statement example files for Microsoft Dynamics 365 for Operations.<br/>\r\n\r\n\u200bFor more information, see the help topic associated with these examples: Import of a bank statement file fails or has incorrect results.<br/>\r\n\r\nTechnical Layout definition:<br/>\r\n_____________________________<br/>\r\nDynamicsAXMT940Layout <br/>\r\nDynamicsAXISO20022Layout <br/>\r\nDynamicsAXBAI2Layout <br/>    \r\n<br/><br/>\r\n\r\nBank Statement example file: <br/>\r\n_____________________________<br/>\r\nMT940StatementExample<br/>\r\nISO20022StatementExample <br/>\r\nBAI2StatementExample<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "DynamicsAXMT940Layout1.xlsx",
+        "DynamicsAXISO20022Layout1.xlsx",
+        "DynamicsAXBAI2Layout1.xlsx",
+        "MT940StatementExample.pdf",
+        "BAI2StatementExample.pdf",
+        "ISO20022StatementExample.pdf"
+    ],
+    "detailsSection_file_size": [
+        "27.8 KB",
+        "29.5 KB",
+        "29.1 KB",
+        "173.1 KB",
+        "170.0 KB",
+        "198.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102289",
+    "downloadPreload": true
+}

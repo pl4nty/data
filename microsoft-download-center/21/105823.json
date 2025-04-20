@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Entra security workaids",
+    "downloadDescription": "Use these workaids to configure and troubleshoot security in your organization",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Copilot for M365 Adoption Checklist.docx",
+            "url": "https://download.microsoft.com/download/4/7/9/4793b9f2-35fe-4513-9c7e-31482a003bbc/Copilot for M365 Adoption Checklist.docx",
+            "size": "46130",
+            "version": "1.0",
+            "datePublished": "1/27/2025 7:00:41 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SMB Security Checklist.docx",
+            "url": "https://download.microsoft.com/download/4/7/9/4793b9f2-35fe-4513-9c7e-31482a003bbc/SMB Security Checklist.docx",
+            "size": "62245",
+            "version": "1.0",
+            "datePublished": "1/27/2025 7:00:41 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Token_Theft_Workflow.zip",
+            "url": "https://download.microsoft.com/download/4/7/9/4793b9f2-35fe-4513-9c7e-31482a003bbc/Token_Theft_Workflow.zip",
+            "size": "88289",
+            "version": "1.0",
+            "datePublished": "1/27/2025 7:00:41 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use these workaids to configure and troubleshoot security in your organization",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Copilot for M365 Adoption Checklist.docx",
+        "SMB Security Checklist.docx",
+        "Token_Theft_Workflow.zip"
+    ],
+    "detailsSection_file_size": [
+        "45.0 KB",
+        "60.8 KB",
+        "86.2 KB"
+    ],
+    "detailsSection_file_date": "1/27/2025",
+    "systemRequirementsSection": "Microsoft Office 2013 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download these workaids to configure and troubleshoot security in your organization",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105823",
+    "downloadPreload": true
+}

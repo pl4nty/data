@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae ODBC Driver 1.0 for Linux ",
+    "downloadDescription": "The Microsoft SQL Server ODBC Driver for Linux provides native connectivity from Linux to Microsoft SQL Server.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sqlncli-11.0.1790.0.tar.gz",
+            "url": "https://download.microsoft.com/download/6/a/b/6ab27e13-46ae-4ce9-affd-406367cadc1d/Linux5/sqlncli-11.0.1790.0.tar.gz",
+            "size": "947669",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:34 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sqlncli-11.0.1790.0.tar.gz",
+            "url": "https://download.microsoft.com/download/6/a/b/6ab27e13-46ae-4ce9-affd-406367cadc1d/Linux6/sqlncli-11.0.1790.0.tar.gz",
+            "size": "938489",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The 64 bit version of the Microsoft SQL Server ODBC Driver for Linux provides robust data access to Microsoft SQL Server. It allows native C and C++ applications to leverage the standard ODBC API and connect to Microsoft SQL Server 2012. Microsoft SQL Server ODBC Driver for Linux also comes with powerful tools - sqlcmd and bcp.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sqlncli-11.0.1790.0.tar.gz",
+        "sqlncli-11.0.1790.0.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "925.5 KB",
+        "916.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Either 64-bit Red Hat Enterprise Linux 5 or 64-bit Red Hat Enterprise Linux 6 with the following RPM packages installed from your distribution\u2019s package repository: <br/>\r\n<br/>\r\n<b><u>64-bit Red Hat Enterprise Linux 5</u></b>\r\n<ul>\r\n<li>glibc-2.5</li>\r\n<li>libgcc-4.1.2</li>\r\n<li>libstdc++-4.1.2</li>\r\n<li>e2fsprogs-libs-1.39</li>\r\n<li>krb5-libs-1.6.1</li>\r\n<li>openssl-0.9.8e</li>\r\n</ul>\r\n<br/>\r\n<b><u>64-bit Red Hat Enterprise Linux 6</u></b>\r\n<ul>\r\n<li>glibc-2.5</li>\r\n<li>libgcc-4.4.6</li>\r\n<li>libstdc++-4.4.6</li>\r\n<li>libuuid-2.17.2</li>\r\n<li>krb5-libs-1.9</li>\r\n<li>openssl-1.0.0</li>\r\n</ul>\r\n<br/>\r\nThe unixODBC 2.3.0 Driver Manager built and installed according to the following instructions.\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "If you previously installed the Microsoft SQL Server ODBC Driver for Linux Community Technology Preview (CTP), please follow the <b>\u201cUpgrade from Community Technology Preview\u201d</b> instructions below instead of these installation instructions.<br/>\r\n<br/>\r\nDownload the Microsoft SQL Server ODBC Driver or Linux package for your platform by clicking one of the download buttons.<br/>\r\n<br/>\r\nVerify the integrity of your download:<br/>\r\n<br/>\r\n<b><u>64-bit Red Hat Enterprise Linux 5</u></b>\r\n<ul>\r\n<li>MD5: 479f9535c5f899f44f2f6b987e526c2b</li>\r\n<li>SHA1: 7e13b288a46b5caa5862d1270edac0fbdafa2a9d</li>\r\n</ul>\r\n<br/>\r\n<b><u>64-bit Red Hat Enterprise Linux 6</u></b>\r\n<ul>\r\n<li>MD5: 36aca6fdfaa6e87754c477e08969fed4</li>\r\n<li>SHA1: ba8a27b1fc91b933a31d987805a6f78e29f893b4</li>\r\n</ul>\r\n<br/>\r\n<b>Extract the Microsoft SQL Server ODBC Driver 1.0 for Linux package:</b><br/>\r\n<ol>\r\n<li>Navigate to the directory where you downloaded sqlncli-11.0.1790.0.tar.gz and extract it:<br/>\r\n<b>cd ~/Downloads/ <br/>\r\ntar xvf sqlncli-11.0.1790.0.tar.gz.</b></li><br/>\r\n</ol>\r\n<br/>\r\n<b>Install the unixODBC 2.3.0 Driver Manager:</b>\r\n<ol>\r\n<li>Make sure that you have root permissions.</li>\r\n<li>Remove any older installed version of unixODBC (for example, unixODBC 2.2.11): yum remove unixODBC</li>\r\n<li>Change to the sqlncli-11.0.1790.0 directory, where you can run build_dm.sh to install the unixODBC Driver Manager:<br/>\r\n<b>cd ./sqlncli-11.0.1790.0<br/>\r\n./build_dm.sh --help</b><br/></li>\r\n<li>You can install the driver manager by executing the following command:<br/>\r\n<b>./build_dm.sh</b><br/>\r\nNote: you can also download the driver manager manually at http://www.unixodbc.org/ and use the downloaded archive locally:<br/>\r\n<b>./build_dm.sh --download-url=file://unixODBC-2.3.0.tar.gz</b></li>\r\n<li>Type \"YES\" to proceed with unpacking the files. This part of the process can take up to five minutes to complete.</li>\r\n<li>After the script stops running, follow the instructions on the screen to install the unixODBC Driver Manager.</li>\r\n</ol>\r\n<br/>\r\n<b>Install the Microsoft SQL Server ODBC Driver 1.0 for Linux:</b>\r\n<ol>\r\n<li>Make sure that you have root permissions. </li>\r\n<li>Change to the sqlncli-11.0.1790.0 directory, where you can run install.sh to install the driver:<br/>\r\n<b>cd ./sqlncli-11.0.1790.0<br/>\r\n./install.sh --help<br/></b></li>\r\n<li>(Optional) You may want to make a backup of odbcinst.ini. The driver installation will update odbcinst.ini. odbcinst.ini contains the list of drivers that are registered with the unixODBC Driver Manager. Execute the following command to discover the location of odbcinst.ini on your computer:<br/>\r\n<b>odbc_config \u2013odbcinstini.</b><br/></li>\r\n<li>Before you install the driver, you may run a verify step to check if your computer has the required software to support the Microsoft SQL Server ODBC Driver 1.0 for Linux:<br/>\r\n<b>./install.sh verify</b><br/></li>\r\n<li>When you are ready to install the Microsoft SQL Server ODBC Driver 1.0 for Linux, run the install script:<br/>\r\n<b>./install.sh install</b><br/></li>\r\n<li>After reviewing the license agreement, type \"YES\" to continue with the installation. </li>\r\n<li>Verify that Microsoft SQL Server ODBC Driver 1.0 for Linux was registered successfully: <br/>\r\n<b>odbcinst -q -d -n \"SQL Server Native Client 11.0\"</b></li>\r\n</ol>\r\n<br/>\r\n<br/>\r\n<b><u>Upgrade from Community Technology Preview</u></b><br/>\r\n<br/>\r\nIf you previously installed the Microsoft SQL Server ODBC Driver for Linux Community Technology Preview (CTP), it is important to remove the CTP before installing the Microsoft SQL Server ODBC Driver 1.0 for Linux. However, you do not need to uninstall or reinstall the unixODBC 2.3.0 Driver Manager that you used with the CTP.<br/>\r\n<br/>\r\nDownload the Microsoft SQL Server ODBC Driver 1.0 for Linux package for your platform by clicking one of the download buttons.<br/>\r\n<br/>\r\nVerify the integrity of your download:<br/>\r\n<br/>\r\n<b><u>64-bit Red Hat Enterprise Linux 5</u></b>\r\n<ul>\r\n<li>MD5: 479f9535c5f899f44f2f6b987e526c2b</li>\r\n<li>SHA1: 7e13b288a46b5caa5862d1270edac0fbdafa2a9d</li>\r\n</ul>\r\n<br/>\r\n<b><u>64-bit Red Hat Enterprise Linux 6</u></b>\r\n<ul>\r\n<li>MD5: 36aca6fdfaa6e87754c477e08969fed4</li>\r\n<li>SHA1: ba8a27b1fc91b933a31d987805a6f78e29f893b4</li>\r\n</ul>\r\n<br/>\r\n<b>Extract the Microsoft SQL Server ODBC Driver 1.0 for Linux package:</b><br/>\r\n<ol>\r\n<li>Navigate to the directory where you downloaded sqlncli-11.0.1790.0.tar.gz and extract it:<br/>\r\n<b>cd ~/Downloads/ <br/>\r\ntar xvf sqlncli-11.0.1790.0.tar.gz.</b></li><br/>\r\n</ol>\r\n<br/>\r\n<b>Remove the Microsoft SQL Server ODBC Driver for Linux Community Technology Preview:</b><br/>\r\n<ol>\r\n<li>Make sure that you have root permissions.</li>\r\n<li>Remove the CTP files and symbolic links:<br/>\r\n<b>rm /usr/bin/bcp<br/>\r\nrm /usr/bin/sqlcmd<br/>\r\nodbcinst -u -d -n \"SQL Server Native Client 11.0\"<br/>\r\nrm -r /opt/microsoft/sqlncli<br/></b></li>\r\n</ol>\r\n<br/>\r\nIf you used the --bin-dir option to place the bcp and sqlcmd applications into a different directory when you installed the CTP, be sure to remove both applications from that directory as well.<br/>\r\n<br/>\r\n<b>Install the Microsoft SQL Server ODBC Driver 1.0 for Linux:</b>\r\n<ol>\r\n<li>Make sure that you have root permissions. </li>\r\n<li>Change to the sqlncli-11.0.1790.0 directory, where you can run install.sh to install the driver:<br/>\r\n<b>cd ./sqlncli-11.0.1790.0<br/>\r\n./install.sh --help<br/></b></li>\r\n<li>(Optional) You may want to make a backup of odbcinst.ini. The driver installation will update odbcinst.ini. odbcinst.ini contains the list of drivers that are registered with the unixODBC Driver Manager. Execute the following command to discover the location of odbcinst.ini on your computer:<br/>\r\n<b>odbc_config \u2013odbcinstini.</b><br/></li>\r\n<li>Before you install the driver, you may run a verify step to check if your computer has the required software to support the Microsoft SQL Server ODBC Driver 1.0 for Linux:<br/>\r\n<b>./install.sh verify</b><br/></li>\r\n<li>When you are ready to install the Microsoft SQL Server ODBC Driver 1.0 for Linux, run the install script:<br/>\r\n<b>./install.sh install</b><br/></li>\r\n<li>After reviewing the license agreement, type \"YES\" to continue with the installation. </li>\r\n<li>Verify that Microsoft SQL Server ODBC Driver 1.0 for Linux was registered successfully: <br/>\r\n<b>odbcinst -q -d -n \"SQL Server Native Client 11.0\"</b></li>\r\n</ol>\r\n<br/>",
+    "additionalInformationSection": "Community Support: <a href=\"http://social.technet.microsoft.com/Forums/en/sqldataaccess/threads\">ODBC, OLE DB and SQL Server Native Client Forum.</a><br/>\r\nSubmit Feedback: <a href=\"http://connect.microsoft.com/sqlserver\">Microsoft SQL Server Feedback Center.</a><br/>\r\nDocumentation:  <a href=\"http://go.microsoft.com/fwlink/?LinkID=125813\">ODBC Driver on Linux Documentation.</a><br/>\r\nTeam Blog: <a href=\"http://blogs.msdn.com/sqlnativeclient/default.aspx\">Microsoft SQL Server Native Client Team Blog </a><br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28160",
+    "downloadPreload": true
+}

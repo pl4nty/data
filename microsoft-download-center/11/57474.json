@@ -1,0 +1,113 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2014 Service Pack 3 (SP3)",
+    "downloadDescription": "Download Service Pack 3 for Microsoft\u00ae SQL Server\u00ae 2014",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/7/9/f/79f4584a-a957-436b-8534-3397f33790a6/Readme.htm",
+            "size": "13601",
+            "version": "12.0.6024.0",
+            "datePublished": "7/15/2024 4:54:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2014SP3-KB4022619-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/9/f/79f4584a-a957-436b-8534-3397f33790a6/SQLServer2014SP3-KB4022619-x86-ENU.exe",
+            "size": "479608912",
+            "version": "12.0.6024.0",
+            "datePublished": "7/15/2024 4:54:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2014SP3-KB4022619-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/9/f/79f4584a-a957-436b-8534-3397f33790a6/SQLServer2014SP3-KB4022619-x64-ENU.exe",
+            "size": "829491488",
+            "version": "12.0.6024.0",
+            "datePublished": "7/15/2024 4:54:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2014 service packs are cumulative updates and upgrade all editions and service levels of SQL Server 2014 to SP3. This service pack contains up to and including SQL Server 2014 SP2 Cumulative Update 13 (CU13).  <br />\n<br />\nThis download site contains the following packages and service patches for the Microsoft SQL Server 2014 SP3 release:<br /><br />\n<ul>\n<li><b>Microsoft SQL Server 2014 SP3 Update</b> - this package contains the Microsoft SQL Server 2014 Service Pack 3 update to be applied to existing SQL Server 2014 installations.</li><br />\n</ul>\nTo evaluate SQL Server 2014 SP3 on a new instance of SQL Server 2014 Evaluation Edition, please goto <a href=\"https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2014\">Microsoft Evaluation Center</a> for SQL Server 2014 SP3 Slipstream installation packages.<br /><br />\n<b>Microsoft SQL Server 2014 SP3 Documentation:</b><br />\n<br />\n<ul>\n <li>\n    <a href=\"https://go.microsoft.com/fwlink/?linkid=2034581\">Microsoft SQL Server 2014 SP3 Release Information</a>\n  </li> \n<li> \n     <a href=\"http://go.microsoft.com/fwlink/?LinkID=524559\">Microsoft SQL Server 2014 Privacy Statement </a>\n  </li>\n  <li>\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=524560\"> Microsoft SQL Server 2014 Systems Requirements</a>\n  </li>\n     <br />\n    <br />\n  </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0.6024.0",
+    "detailsSection_file_name": [
+        "Readme.htm",
+        "SQLServer2014SP3-KB4022619-x86-ENU.exe",
+        "SQLServer2014SP3-KB4022619-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "13.3 KB",
+        "457.4 MB",
+        "791.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>For complete system requirements, please reference the detailed  <a href=\"http://go.microsoft.com/fwlink/?LinkID=524560\"> Systems Requirements</a> page</li>\n<li>6 GB of available hard disk space for the Service Pack update, 10 GB for a Slipstream installation</li>\n<li> Service Pack 3 can be applied to any of the following Microsoft SQL Server 2014 editions: </li>\n<br /><ul>\n  <li>Microsoft SQL Server 2014 Enterprise</li>\n  <li> Microsoft SQL Server 2014 Developer</li>\n  <li>Microsoft SQL Server 2014 Standard</li>\r\n  <li>\u2022Microsoft SQL Server 2014 Business Intelligence</li>\n  <li>Microsoft SQL Server 2014 Web</li>\n  <li>Microsoft SQL Server 2014 Express</li>\n</ul><br />\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<br />\n<b>Note:</b> You must have administrative rights on the computer to install SQL Server 2014 SP3. <br />\n<br />\n<u><b>Microsoft SQL Server 2014 SP3 Update: </b></u><br />\n<br />\n<ol>\n<li>Review the  <a href=\"https://go.microsoft.com/fwlink/?linkid=2034581\">Microsoft SQL Server 2014 SP3 Release Information</a>\n  </li>\n  <li>Download the following file from the \"DOWNLOAD\" section on this page to your device:</li> \n<ul> \n<li><b>SQLServer2014SP3-KB4022619-architecture-language.exe</b></li> </ul> \n<li>Once the download is complete, click RUN to begin the installation process immediately or SAVE to install at a later time.</li>\n</ol>\n <br />\n  <br />\n<br />\n",
+    "additionalInformationSection": "If you have questions about  SQL Server 2014 SP3, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=816922\"> SQL Server  2014 SP3 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2014 SP3 by submitting issues to <a href=\"http://go.microsoft.com/fwlink/?LinkID=223170\">Microsoft Connect.</a><br />\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57474",
+    "downloadPreload": true
+}

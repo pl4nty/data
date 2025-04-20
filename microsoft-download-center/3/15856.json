@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Jeff Palermo on ASP.NET MVC",
+    "downloadDescription": "Jeff Palermo introduces the nascent ASP.NET Model View Controller Framework. He easily explains the benefits, pitfalls, and techniques you can use to implement a MVC pattern in ASP.NET.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071219JPalermo.zip",
+            "url": "https://download.microsoft.com/download/7/9/2/792ddb77-e371-4601-977d-a1ede667a025/20071219JPalermo.zip",
+            "size": "43987884",
+            "version": "1.0",
+            "datePublished": "11/15/2023 3:08:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Jeffrey Palermo is a software management consultant and the CTO of Headspring Systems in Austin, TX. Jeffrey specializes in Agile coaching and helps companies double the productivity of software teams. Jeffrey is an MCSD.Net , Microsoft MVP, Certified Scrummaster, Austin .Net User Group leader, AgileAustin board member, INETA speaker, INETA Membership Mentor, Christian, husband, father, motorcyclist, Eagle Scout, U.S. Army Veteran, and Texas A&M University graduate.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071219JPalermo.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.0 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15856",
+    "downloadPreload": true
+}

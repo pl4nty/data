@@ -1,0 +1,174 @@
+{
+    "error": "",
+    "downloadTitle": "November 2006 Security Releases ISO Image",
+    "downloadDescription": "These ISO-9660 CD image files contain the security updates for Windows released on Windows Update on November 14th, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200611-3.iso",
+            "url": "https://download.microsoft.com/download/3/a/7/3a7aee27-39ed-4b2d-a390-8105a9261c32/Windows-KB913086-200611-3.iso",
+            "size": "314277888",
+            "version": "913086",
+            "datePublished": "6/13/2024 12:09:12 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200611-2.iso",
+            "url": "https://download.microsoft.com/download/3/a/7/3a7aee27-39ed-4b2d-a390-8105a9261c32/Windows-KB913086-200611-2.iso",
+            "size": "511309824",
+            "version": "913086",
+            "datePublished": "6/13/2024 12:09:12 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows-KB913086-200611-1.iso",
+            "url": "https://download.microsoft.com/download/3/a/7/3a7aee27-39ed-4b2d-a390-8105a9261c32/Windows-KB913086-200611-1.iso",
+            "size": "294860800",
+            "version": "913086",
+            "datePublished": "6/13/2024 12:09:12 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These ISO-9660 CD image files contain the security updates for Windows released on Windows Update on November 14th, 2006. They do not contain security updates for other Microsoft products.  These CD images are intended for corporate administrators who manage large multinational organizations, who need to download multiple individual language versions of each security update, and who do not use an automated solution such as WSUS.  Use these images to download multiple updates in all languages at the same time. <br /><br />\n\nCaution: Be sure to check the individual security bulletins at http://www.microsoft.com/technet/security prior to deployment of these updates to ensure that the files have not been updated at a later date.  <br /><br />\n\nThese CD images contain the following updates: <br />\n<B><a href=\"http://support.microsoft.com/kb/920213\">KB920213</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=69724\">(MS06-068)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages </LI>\n<LI>Windows Server 2003 x64 Edition \u2013 2 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition \u2013 2 languages </LI>\n<LI>Windows 2000 - 24 languages </LI>\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/922760\">KB922760</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=69562\">(MS06-067)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages </LI>\n<LI>Windows Server 2003 x64 Edition \u2013 2 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition \u2013 2 languages </LI>\n<LI>Windows 2000 - 24 languages </LI>\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/923789\">KB923789</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=69564\">(MS06-069)</a></B>\n<UL>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition \u2013 2 languages </LI>\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/923980\">KB923980</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=73852\">(MS06-066)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows 2000 - 24 languages </LI>\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/924270\">KB924270</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=73860\">(MS06-070)</a></B>\n<UL>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows 2000 - 24 languages </LI>\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/927977\">KB927977</a> / <a href=\"http://support.microsoft.com/kb/927977\">(MS06-071)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 13 languages </LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 13 languages </LI>\n<LI>Windows Server 2003 x64 Edition \u2013 13 languages </LI>\n<LI>Windows XP - 13 languages </LI > \n<LI>Windows XP x64 Edition \u2013 13 languages </LI>\n<LI>Windows 2000 - 13 languages </LI>\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/927978\">KB927978</a> / <a href=\"http://support.microsoft.com/kb/927978\">(MS06-071)</a></B>\n<UL>\n<LI>Windows Vista - 9 languages </LI>\n<LI>Windows Server 2003 (32-bit x86) - 9 languages </LI>\n<LI>Windows Server 2003 for Itanium-based Systems in WoW mode - 9 languages </LI>\n<LI>Windows Server 2003 x64 Edition in WoW mode \u2013 9 languages </LI>\n<LI>Windows XP - 9 languages </LI > \n<LI>Windows XP x64 Edition in WoW mode \u2013 9 languages </LI>\n<LI>Windows 2000 - 9 languages </LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB923980; KB922760; KB920213; KB923789; KB924270; KB927977; KB927978",
+        "name": "KB923980; KB922760; KB920213; KB923789; KB924270; KB927977; KB927978"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS06-066; MS06-067; MS06-068; MS06-069; MS06-070; MS06-071",
+        "name": "MS06-066; MS06-067; MS06-068; MS06-069; MS06-070; MS06-071"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200611-3.iso",
+        "Windows-KB913086-200611-2.iso",
+        "Windows-KB913086-200611-1.iso"
+    ],
+    "detailsSection_file_size": [
+        "299.7 MB",
+        "487.6 MB",
+        "281.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Vista",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Select a file to download at the bottom of this page, or choose a different language from the drop-down list and click <B>Change</B>.</LI><br />\n<LI>To copy the ISO Image download to your computer to burn a CD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI><br /><LI>Use the directions for your CD burner to create a CD from the ISO Image</LI><br />\n<br />\n<B>Download Information</B> <br/> \n<UL>\n<LI>Windows-KB913086-200611-1.iso contains KB920213, KB923980, KB924270, KB927977, KB927978 for Windows 2000; KB922760 for IE for Windows 2000</LI> <br/> <LI>Windows-KB913086-200611-2.iso contains KB920213, KB923980, KB927977, KB927978 for Windows Server 2003; KB922760 for IE for Windows Server 2003</LI><LI>Windows-KB913086-200611-3.iso contains KB920213, KB923789, KB923980, KB924270, KB927977, KB927978 for Windows XP; KB922760 for IE for Windows XP; KB927978 for Windows Vista</LI><br/>\n</UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21436",
+    "downloadPreload": true
+}

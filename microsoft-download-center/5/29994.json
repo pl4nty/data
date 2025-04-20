@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Book Download: Building Elastic and Resilient Cloud Applications - Developer's Guide to the Enterprise Library 5.0 Integration Pack for Windows Azure",
+    "downloadDescription": "The Microsoft Enterprise Library Integration Pack for Windows Azure is an extension to the Microsoft Enterprise Library 5.0 that can be used with Windows Azure. It includes the Autoscaling Application Block, the Transient Fault Handling Application Block, a protected configuration provider and the Blob configuration source.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Building Elastic and Resilient Cloud Applications.mobi",
+            "url": "https://download.microsoft.com/download/7/c/6/7c6da1f9-52d4-4ebe-9ad6-840db1c2ef50/Building Elastic and Resilient Cloud Applications.mobi",
+            "size": "6479244",
+            "version": "5.01",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Building Elastic and Resilient Cloud Applications.epub",
+            "url": "https://download.microsoft.com/download/7/c/6/7c6da1f9-52d4-4ebe-9ad6-840db1c2ef50/Building Elastic and Resilient Cloud Applications.epub",
+            "size": "3639524",
+            "version": "5.01",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Building Elastic and Resilient Cloud Applications.pdf",
+            "url": "https://download.microsoft.com/download/7/c/6/7c6da1f9-52d4-4ebe-9ad6-840db1c2ef50/Building Elastic and Resilient Cloud Applications.pdf",
+            "size": "8346781",
+            "version": "5.01",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Authors: <i>Dominic Betts, J\u00e9r\u00e9mi Bourgault, Julian Dominguez, Ercenk Keresteci, Grigori Melnik, Fernando Simonazzi and Erwin van der Valk</i>.\r\n<br/><br/>\r\nThis guide covers many new features for Windows Azure application developers and IT professionals:\r\n<br/><br/>\r\n<ul>\r\n  <li>Two new application blocks: \r\n    <ul>\r\n      <li><b>Autoscaling Application Block </b>(\"Wasabi\") </li>\r\n      <li><b>Transient Fault Handling Application Block </b>(\"Topaz\")</li>\r\n    </ul>\r\n  </li>\r\n  <li><b>Blob configuration source</b></li> \r\n  <li><b>Windows PowerShell cmdlets </b> for Wasabi</li>\r\n  <li><b>Protected configuration provider</b></li>\r\n  <li>Updated <b>database creation scripts</b></li>\r\n  <li>On-premises <b>sample application</b> for hosting the Autoscaling Application Block and exploratory testing (packaged with the Integration Pack Source and located under (install location)/WindowsAzure/Autoscaling/Hosts/ConsoleAutoscaler)</li>\r\n  <li>Experience guidance:\r\n    <ul>\r\n      <li><b>Reference documentation</b></li>\r\n      <li><b>Developer\u2019s guide</b></li>\r\n      <li><b>Tailspin Surveys sample application</b></li>\r\n    </ul>\r\n  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.01",
+    "detailsSection_file_name": [
+        "Building Elastic and Resilient Cloud Applications.mobi",
+        "Building Elastic and Resilient Cloud Applications.epub",
+        "Building Elastic and Resilient Cloud Applications.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.2 MB",
+        "3.5 MB",
+        "8.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <li>A document reader capable of displaying EPUB, Kindle/MOBI or PDF format documents</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the document format appropriate to your reader software.",
+    "additionalInformationSection": "For help and support visit the <a href=\"http://entlib.codeplex.com\">Enterprise Library Codeplex community site</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "channel9 Video: Windows Azure App Scaling to Need",
+            "url": "http://channel9.msdn.com/Events/Patterns-Practices-Symposium-Online/Patterns-Practices-Symposium-Online-2012/Windows-Azure-App-Scaling-to-Need"
+        },
+        {
+            "title": "cloudCover Episode on Autoscaling",
+            "url": "http://channel9.msdn.com/Shows/Cloud+Cover/Episode-74-Autoscaling-and-Endpoint-Protection-in-Windows-Azure"
+        },
+        {
+            "title": "microsoft Enterprise Library 5.0 Integration Pack for Windows Azure Sources and Binaries",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=28189"
+        },
+        {
+            "title": "microsoft Enterprise Library on MSDN",
+            "url": "http://msdn.microsoft.com/entlib"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29994",
+    "downloadPreload": true
+}

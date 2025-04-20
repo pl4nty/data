@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory Sorting Weight Table",
+    "downloadDescription": "Detailed character weight specifications for sorting and comparison of Unicode strings.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Active Directory Sort Table v02.zip",
+            "url": "https://download.microsoft.com/download/2/f/f/2ff4075b-dcb8-4e0e-8a5b-8c5b8cd8f025/Active Directory Sort Table v02.zip",
+            "size": "25846722",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:08:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document contains detailed character weight specifications that permit consistent sorting and comparison of Unicode strings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Active Directory Sort Table v02.zip"
+    ],
+    "detailsSection_file_size": [
+        "24.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "The documentation is available in the Adobe Portable Document Format (PDF) which you can open using Adobe Reader, available at <a href=\"http://www.adobe.com\">http://www.adobe.com</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "The data in this document is not used by itself, but rather as one of the inputs to the comparison algorithm specified in [MS-ADTS] section 6.5. The layout and format of data in this file is also specified there.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1175",
+    "downloadPreload": true
+}

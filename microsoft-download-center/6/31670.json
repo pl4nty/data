@@ -1,0 +1,857 @@
+{
+    "error": "",
+    "downloadTitle": "TechNet Quarter 3 FY07  Downloadable Documents",
+    "downloadDescription": "See how to mazimize your business potential with Microsoft solutions.  TechNet sessions are learning resources designed to meet the needs of IT professionals.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_demo3.wmv",
+            "size": "335942",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-03_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-03_demo1.wmv",
+            "size": "2533154",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-14_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-14_ppt_and_transcript.exe",
+            "size": "4358656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-05.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-05.exe",
+            "size": "43634176",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-14.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-14.exe",
+            "size": "35967488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_FULL.mp3",
+            "size": "16278709",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dsk-05_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/dsk-05_demo3.wmv",
+            "size": "742800",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dsk-05_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/dsk-05_demo2.wmv",
+            "size": "2534520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-16_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-16_demo4.wmv",
+            "size": "940502",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_demo1.wmv",
+            "size": "1529910",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_20_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_20_FULL.wma",
+            "size": "10530744",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-16.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-16.exe",
+            "size": "34291712",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_ppt_and_transcript.exe",
+            "size": "3480576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_10_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_10_FULL.mp3",
+            "size": "11833572",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-20_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-20_demo1.wmv",
+            "size": "1026676",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-13_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-13_demo2.wmv",
+            "size": "784632",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_FULL.wma",
+            "size": "11416668",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_3_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_3_FULL.mp3",
+            "size": "17043491",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_20_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_20_FULL.mp3",
+            "size": "15015108",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_10_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_10_FULL.wma",
+            "size": "8300159",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-20_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-20_ppt_and_transcript.exe",
+            "size": "5335552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD-66_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD-66_demo2.wmv",
+            "size": "1103314",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-113_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-113_ppt_and_transcript.exe",
+            "size": "2190848",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-03.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-03.exe",
+            "size": "47797248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-14_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-14_demo4.wmv",
+            "size": "1196036",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-16_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-16_demo2.wmv",
+            "size": "1385010",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_12_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_12_FULL.mp3",
+            "size": "14946852",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-12_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-12_demo3.wmv",
+            "size": "3602452",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-13_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-13_demo3.wmv",
+            "size": "1650872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD_66_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD_66_FULL.mp3",
+            "size": "11433252",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-13_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-13_ppt_and_transcript.exe",
+            "size": "3983872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-20_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-20_demo2.wmv",
+            "size": "2988176",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-12_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-12_demo2.wmv",
+            "size": "1395020",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_14_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_14_FULL.wma",
+            "size": "12177654",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-12.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-12.exe",
+            "size": "33182720",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD-66_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD-66_demo1.wmv",
+            "size": "327826",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DSK-13.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-13.exe",
+            "size": "53440512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-14_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-14_demo1.wmv",
+            "size": "2089928",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-113_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-113_demo2.wmv",
+            "size": "1294154",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-12_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-12_ppt_and_transcript.exe",
+            "size": "4192768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-16_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-16_demo1.wmv",
+            "size": "2769998",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-16_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-16_demo3.wmv",
+            "size": "3970978",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_13_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_13_FULL.mp3",
+            "size": "14355012",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_16_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_16_FULL.mp3",
+            "size": "13912788",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-10_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-10_ppt_and_transcript.exe",
+            "size": "4586496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD-66.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD-66.exe",
+            "size": "30489600",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-113_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-113_demo4.wmv",
+            "size": "2302656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_14_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_14_FULL.mp3",
+            "size": "17364036",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-113_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-113_demo1.wmv",
+            "size": "999422",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111.exe",
+            "size": "35078656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_16_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_16_FULL.wma",
+            "size": "9757769",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-10_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-10_demo3.wmv",
+            "size": "468294",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-03_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-03_demo4.wmv",
+            "size": "1364760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_demo2.wmv",
+            "size": "881722",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD-66_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD-66_demo3.wmv",
+            "size": "1077748",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_13_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_13_FULL.wma",
+            "size": "10068221",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dsk-05_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/dsk-05_demo1.wmv",
+            "size": "2157528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-10.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-10.exe",
+            "size": "31191552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-113.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-113.exe",
+            "size": "30348800",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_12_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_12_FULL.wma",
+            "size": "10482788",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC_113_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC_113_FULL.wma",
+            "size": "12020535",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-10_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-10_demo2.wmv",
+            "size": "1288222",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-20.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-20.exe",
+            "size": "32562688",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-05_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-05_ppt_and_transcript.exe",
+            "size": "8235008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-03_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-03_demo2.wmv",
+            "size": "211542",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-03_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-03_ppt_and_transcript.exe",
+            "size": "7540736",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-16_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-16_ppt_and_transcript.exe",
+            "size": "2980864",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC_112_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC_112_FULL.wma",
+            "size": "9601281",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-03_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-03_demo3.wmv",
+            "size": "1349588",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD-66_ppt_and_transcript.exe",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD-66_ppt_and_transcript.exe",
+            "size": "3252224",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-113_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-113_demo3.wmv",
+            "size": "2617286",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-12_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-12_demo1.wmv",
+            "size": "1161864",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-13_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-13_demo1.wmv",
+            "size": "4123378",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK_3_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK_3_FULL.wma",
+            "size": "11953018",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-10_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-10_demo4.wmv",
+            "size": "1873462",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC-111_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC-111_demo4.wmv",
+            "size": "1256264",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-14_demo3.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-14_demo3.wmv",
+            "size": "880782",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-14_demo2.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-14_demo2.wmv",
+            "size": "2428058",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD-66_demo4.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD-66_demo4.wmv",
+            "size": "1015746",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EXC_113_FULL.mp3",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/EXC_113_FULL.mp3",
+            "size": "17139541",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DSK-10_demo1.wmv",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/DSK-10_demo1.wmv",
+            "size": "976980",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADD_66_FULL.wma",
+            "url": "https://download.microsoft.com/download/2/6/c/26c9b90d-8434-499a-83b2-5d0203a8193b/ADD_66_FULL.wma",
+            "size": "8019364",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\n\n\n<li><b>ADD-66:</b>Windows Deployment Services Technical Overview</li><br />\n<li><b>ADD-66 Demo 1:</b> Demo 1: Upgrading RIS to WDS</li> <br />\n<li><b>ADD-66 Demo 2:</b> Demo 2: Configuring the WDS Server</li> <br />\n<li><b>ADD-66 Demo 3:</b> Demo 3: Customizing a WDS Server</li> <br />\n<li><b>ADD-66 Demo 4:</b> Demo 4: Capturing a Base Image</li> <br />\n\n<br />\n\n\n\n<li><b>DSK-03:</b>Deploying Vista and 2007 Office System with BDD 2007</li><br />\n<li><b>DSK-03 Demo 1:</b> Demo 1: Using the BDD Workbench</li> <br />\n<li><b>DSK-03 Demo 2:</b> Demo 2: Adding 2007 Office System Source Files</li> <br />\n<li><b>DSK-03 Demo 3:</b> Demo 3: Deploying 2007 Office System with Windows Vista using BDD</li> <br />\n<li><b>DSK-03 Demo 4:</b> Demo 4: Deploying 2007 Office System with SMS 2003</li> <br />\n\n<br />\n\n<li><b>DSK-05:</b>Exchange Server 2007 Overview</li><br />\n<li><b>DSK-05 Demo 1:</b> Demo 1: Exchange Management Console</li> <br />\n<li><b>DSK-05 Demo 2:</b> Demo 2: Exchange Management Shell</li> <br />\n<li><b>DSK-05 Demo 3:</b> Demo 3: Exchange Outlook Web Access</li> <br />\n<li><b>DSK-05 Demo 4:</b> Demo 4: Securing the Organization</li> <br />\n\n<br />\n\n<li><b>DSK-10:</b>The Application Compatibility Toolkit Version 5.0 Beta</li><br />\n<li><b>DSK-10 Demo 1:</b> Demo 1: Addressing Compatibility Issues</li> <br />\n<li><b>DSK-10 Demo 2:</b> Demo 2: Beginning Life Cycle Management</li> <br />\n<li><b>DSK-10 Demo 3:</b> Demo 3: Analyzing the Application Portfolio</li> <br />\n<li><b>DSK-10 Demo 4:</b> Demo 4: Completing Life Cycle Management</li> <br />\n\n<br />\n\n\n<li><b>DSK-12:</b>Exchange Server 2007: Giving the Administrator More Control </li><br />\n<li><b>DSK-12 Demo 1:</b> Demo 1: Server Deployment</li> <br />\n<li><b>DSK-12 Demo 2:</b> Demo 2: The Exchange Management Console</li> <br />\n<li><b>DSK-12 Demo 3:</b> Demo 3: Wizard Interface</li> <br />\n<li><b>DSK-12 Demo 4:</b> Demo 4: The Exchange Management Shell</li> <br />\n<li><b>DSK-12 Demo 5:</b> Demo 5: Script Automation</li> <br />\n<li><b>DSK-12 Demo 6:</b> Demo 6: Reporting in the Exchange Management Shell</li> <br />\n\n<br />\n\n\n<li><b>DSK-13:</b>Deploying IPsec with Windows Vista</li><br />\n<li><b>DSK-13 Demo 1:</b> Demo 1: Monitoring Windows Firewall Rules</li> <br />\n<li><b>DSK-13 Demo 2:</b> Demo 2: Isolating a Server</li> <br />\n<li><b>DSK-13 Demo 3:</b> Demo 3: Auditing IPsec and Diagnostics</li> <br />\n\n\n<br />\n\n\n<li><b>DSK-14:</b>Overview of Networking in Vista</li><br />\n<li><b>DSK-14 Demo 1:</b> Demo 1: Connecting to the Network</li> <br />\n<li><b>DSK-14 Demo 2:</b> Demo 2: Administering Network Security</li> <br />\n<li><b>DSK-14 Demo 3:</b> Demo 3: Configuring QoS Policy</li> <br />\n<li><b>DSK-14 Demo 4:</b> Demo 4: Managing Wireless Connections</li> <br />\n\n<br />\n\n<li><b>DSK-16:</b>Windows Vista Client Manageability Overview</li><br />\n<li><b>DSK-16 Demo 1:</b> Demo 1: Reviewing User Account Control</li> <br />\n<li><b>DSK-16 Demo 2:</b> Demo 2: Using Group Policy</li> <br />\n<li><b>DSK-16 Demo 3:</b> Demo 3: Using Windows Eventing</li> <br />\n<li><b>DSK-16 Demo 4:</b> Demo 4: Reviewing the Reliability Monitor</li> <br />\n\n<br />\n\n\n<li><b>DSK-20:</b>Why Deploy iPv6?</li><br />\n<li><b>DSK-20 Demo 1:</b> Demo 1: Working with IPv6</li> <br />\n<li><b>DSK-20 Demo 2:</b> Demo 2: Networking with Windows Vista</li> <br />\n\n<br />\n\n<li><b>EXC-111:</b>Exchange Server 2007 Deployment and Migration Strategies</li><br />\n<li><b>EXC-111 Demo 1:</b> Demo 1: Performing an Attended Setup</li> <br />\n<li><b>EXC-111 Demo 2:</b> Demo 2: Verifying Setup</li> <br />\n<li><b>EXC-111 Demo 3:</b> Demo 3: Performing an Unattended Installation</li> <br />\n<li><b>EXC-111 Demo 4:</b> Demo 4: Provisioning a Server</li> <br />\n\n<br />\n\n<li><b>EXC-113:</b>Disaster Recovery in Exchange 2007</li><br />\n<li><b>EXC-113 Demo 1:</b> Demo 1: Establishing Dial-tone Access</li> <br />\n<li><b>EXC-113 Demo 2:</b> Demo 2: Using LCR</li> <br />\n<li><b>EXC-113 Demo 3:</b> Demo 3: Moving a Database</li> <br />\n<li><b>EXC-113 Demo 4:</b> Demo 4: Creating a Recovery Storage Group</li> <br />\n\n<br />\n<br />\n\n\n\n<li><b>ADD-66 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-03 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-05 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-10 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-12 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-13 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-14 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-16 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>DSK-20 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>EXC-111 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<li><b>EXC-113 Presentation Powerpoint and Transcript:</b> Synchronized Presentation Powerpoint Deck and Transcript</li> <br />\n<br />\n\n<li><b>ADD-66 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-03 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-05 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-10 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-12 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-13 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-14 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-16 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>DSK-20 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>EXC-111 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />\n<li><b>EXC-113 Podcast Source File</b> Full Length Audio File for TechNet Session in both WMA and MP3 formats</li> <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "EXC-111_demo3.wmv",
+        "DSK-03_demo1.wmv",
+        "DSK-14_ppt_and_transcript.exe",
+        "DSK-05.exe",
+        "DSK-14.exe",
+        "EXC-111_FULL.mp3",
+        "dsk-05_demo3.wmv",
+        "dsk-05_demo2.wmv",
+        "DSK-16_demo4.wmv",
+        "EXC-111_demo1.wmv",
+        "DSK_20_FULL.wma",
+        "DSK-16.exe",
+        "EXC-111_ppt_and_transcript.exe",
+        "DSK_10_FULL.mp3",
+        "DSK-20_demo1.wmv",
+        "DSK-13_demo2.wmv",
+        "EXC-111_FULL.wma",
+        "DSK_3_FULL.mp3",
+        "DSK_20_FULL.mp3",
+        "DSK_10_FULL.wma",
+        "DSK-20_ppt_and_transcript.exe",
+        "ADD-66_demo2.wmv",
+        "EXC-113_ppt_and_transcript.exe",
+        "DSK-03.exe",
+        "DSK-14_demo4.wmv",
+        "DSK-16_demo2.wmv",
+        "DSK_12_FULL.mp3",
+        "DSK-12_demo3.wmv",
+        "DSK-13_demo3.wmv",
+        "ADD_66_FULL.mp3",
+        "DSK-13_ppt_and_transcript.exe",
+        "DSK-20_demo2.wmv",
+        "DSK-12_demo2.wmv",
+        "DSK_14_FULL.wma",
+        "DSK-12.exe",
+        "ADD-66_demo1.wmv",
+        "DSK-13.exe",
+        "DSK-14_demo1.wmv",
+        "EXC-113_demo2.wmv",
+        "DSK-12_ppt_and_transcript.exe",
+        "DSK-16_demo1.wmv",
+        "DSK-16_demo3.wmv",
+        "DSK_13_FULL.mp3",
+        "DSK_16_FULL.mp3",
+        "DSK-10_ppt_and_transcript.exe",
+        "ADD-66.exe",
+        "EXC-113_demo4.wmv",
+        "DSK_14_FULL.mp3",
+        "EXC-113_demo1.wmv",
+        "EXC-111.exe",
+        "DSK_16_FULL.wma",
+        "DSK-10_demo3.wmv",
+        "DSK-03_demo4.wmv",
+        "EXC-111_demo2.wmv",
+        "ADD-66_demo3.wmv",
+        "DSK_13_FULL.wma",
+        "dsk-05_demo1.wmv",
+        "DSK-10.exe",
+        "EXC-113.exe",
+        "DSK_12_FULL.wma",
+        "EXC_113_FULL.wma",
+        "DSK-10_demo2.wmv",
+        "DSK-20.exe",
+        "DSK-05_ppt_and_transcript.exe",
+        "DSK-03_demo2.wmv",
+        "DSK-03_ppt_and_transcript.exe",
+        "DSK-16_ppt_and_transcript.exe",
+        "EXC_112_FULL.wma",
+        "DSK-03_demo3.wmv",
+        "ADD-66_ppt_and_transcript.exe",
+        "EXC-113_demo3.wmv",
+        "DSK-12_demo1.wmv",
+        "DSK-13_demo1.wmv",
+        "DSK_3_FULL.wma",
+        "DSK-10_demo4.wmv",
+        "EXC-111_demo4.wmv",
+        "DSK-14_demo3.wmv",
+        "DSK-14_demo2.wmv",
+        "ADD-66_demo4.wmv",
+        "EXC_113_FULL.mp3",
+        "DSK-10_demo1.wmv",
+        "ADD_66_FULL.wma"
+    ],
+    "detailsSection_file_size": [
+        "328.1 KB",
+        "2.4 MB",
+        "4.2 MB",
+        "41.6 MB",
+        "34.3 MB",
+        "15.5 MB",
+        "725.4 KB",
+        "2.4 MB",
+        "918.5 KB",
+        "1.5 MB",
+        "10.0 MB",
+        "32.7 MB",
+        "3.3 MB",
+        "11.3 MB",
+        "1002.6 KB",
+        "766.2 KB",
+        "10.9 MB",
+        "16.3 MB",
+        "14.3 MB",
+        "7.9 MB",
+        "5.1 MB",
+        "1.1 MB",
+        "2.1 MB",
+        "45.6 MB",
+        "1.1 MB",
+        "1.3 MB",
+        "14.3 MB",
+        "3.4 MB",
+        "1.6 MB",
+        "10.9 MB",
+        "3.8 MB",
+        "2.8 MB",
+        "1.3 MB",
+        "11.6 MB",
+        "31.6 MB",
+        "320.1 KB",
+        "51.0 MB",
+        "2.0 MB",
+        "1.2 MB",
+        "4.0 MB",
+        "2.6 MB",
+        "3.8 MB",
+        "13.7 MB",
+        "13.3 MB",
+        "4.4 MB",
+        "29.1 MB",
+        "2.2 MB",
+        "16.6 MB",
+        "976.0 KB",
+        "33.5 MB",
+        "9.3 MB",
+        "457.3 KB",
+        "1.3 MB",
+        "861.1 KB",
+        "1.0 MB",
+        "9.6 MB",
+        "2.1 MB",
+        "29.7 MB",
+        "28.9 MB",
+        "10.0 MB",
+        "11.5 MB",
+        "1.2 MB",
+        "31.1 MB",
+        "7.9 MB",
+        "206.6 KB",
+        "7.2 MB",
+        "2.8 MB",
+        "9.2 MB",
+        "1.3 MB",
+        "3.1 MB",
+        "2.5 MB",
+        "1.1 MB",
+        "3.9 MB",
+        "11.4 MB",
+        "1.8 MB",
+        "1.2 MB",
+        "860.1 KB",
+        "2.3 MB",
+        "991.9 KB",
+        "16.3 MB",
+        "954.1 KB",
+        "7.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 52 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31670",
+    "downloadPreload": true
+}

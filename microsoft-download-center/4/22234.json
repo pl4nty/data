@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Server Update Services 3.0 SP2 Deployment Guide",
+    "downloadDescription": "This guide describes how to deploy Microsoft Windows Server Update Services 3.0 SP2 (WSUS 3.0 SP2), including server and client workstation setup.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WSUS30SP2DeployGuide.pdf",
+            "url": "https://download.microsoft.com/download/9/b/e/9be3ca3b-b032-4029-8c08-3afa5dcab08d/WSUS30SP2DeployGuide.pdf",
+            "size": "1765895",
+            "version": "3.0 SP2",
+            "datePublished": "7/15/2024 3:26:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WSUS30SP2DeployGuide.doc",
+            "url": "https://download.microsoft.com/download/9/b/e/9be3ca3b-b032-4029-8c08-3afa5dcab08d/WSUS30SP2DeployGuide.doc",
+            "size": "1312256",
+            "version": "3.0 SP2",
+            "datePublished": "7/15/2024 3:26:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide describes how to deploy Microsoft Windows Server Update Services 3.0 SP2 (WSUS 3.0 SP2). You will find a comprehensive description of how WSUS functions, as well as descriptions of WSUS scalability and bandwidth management features. This guide also offers procedures for installation and configuration of the WSUS server and how to configure client workstations and servers that will be updated by WSUS. Also included are steps for setting up a WSUS server on an isolated segment of your network and manually importing updates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0 SP2",
+    "detailsSection_file_name": [
+        "WSUS30SP2DeployGuide.pdf",
+        "WSUS30SP2DeployGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Small Business Server 2011 Essentials",
+        "Windows Small Business Server 2011 Standard",
+        "Windows Vista",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "downloads for Microsoft Windows Server Update Services",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=148066"
+        },
+        {
+            "title": "windows Server Update Services Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=117694"
+        },
+        {
+            "title": "windows Server Update Services TechNet Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=94242"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22234",
+    "downloadPreload": true
+}

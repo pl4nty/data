@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft HPC Pack 2019 Preview",
+    "downloadDescription": "HPC Pack 2019 Preview",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HPCPack2019Preview.docx",
+            "url": "https://download.microsoft.com/download/9/8/8/9881d2dc-b984-4a25-aedf-a7a5e3c8dbd1/HPCPack2019Preview.docx",
+            "size": "237190",
+            "version": "6.0.7121",
+            "datePublished": "7/15/2024 4:29:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HPCPack2019Preview-Full-v7121.zip",
+            "url": "https://download.microsoft.com/download/9/8/8/9881d2dc-b984-4a25-aedf-a7a5e3c8dbd1/HPCPack2019Preview-Full-v7121.zip",
+            "size": "1212087540",
+            "version": "6.0.7121",
+            "datePublished": "7/15/2024 4:29:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "HPC Pack 2019 delivers tools, performance and scalability for a highly productive HPC environment for on-premises, hybrid and cloud, providing an integrated cluster environment featuring the HPC Job Scheduler, Message Passing Interface v2 (MPI2) and Service-Oriented Architecture (SOA) interactive application support, cluster management &amp; monitoring tools.<br/>\r\n<br/>\r\nYou can download and install HPC Pack 2019 Preview in your on-premises computers, or you can just use the <a href=\"https://github.com/Azure/hpcpack-template/tree/master/HPCPack2019\">deployment templates</a> to create a cluster on Azure with HPC Pack 2019 Preview. <br/>\r\n<br/>\r\nThe following downloads available:<br/>\r\n<br/>\r\n<li><b>HPCPack2019Preview-Full-v7121.zip</b> Download this .zip file for a full installation package to set up an HPC Pack 2019 Preview cluster. If you install this package on an existing HPC Pack node, please uninstall existing HPC Pack components first.</li><br/>\r\n<li><b>HPCPack2019Preview.docx</b> Download this doc for what's new in HPC Pack 2019 Preview.</li>\r\n<br/>\r\n<br/>\r\nAny feedbacks and requests are welcome, please just open issues in <a href=\"https://github.com/azure/hpcpack\">GitHub repo</a>.<br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.7121",
+    "detailsSection_file_name": [
+        "HPCPack2019Preview.docx",
+        "HPCPack2019Preview-Full-v7121.zip"
+    ],
+    "detailsSection_file_size": [
+        "231.6 KB",
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>HPC Pack 2019 Preview supported Operating Systems</b>\r\n<br/>\r\n<li>Head nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2 (without install SQL Express 2019)</li>\r\n<li>Compute nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Broker nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012</li>\r\n<li>Workstation nodes: x86 or x64 versions of Windows 8.1 Pro or Enterprise, windows 10</li>\r\n<li>Unmanaged server nodes: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, or x64-based versions of Windows Server 2008 R2 SP1</li>\r\n<li>Linux Compute nodes: SUSE Linux Enterprise Server 12, Red Hat Enterprise Linux 7.1, CentOS-based 6.7/7.3, Ubuntu Server 14.04 LTS and 16.04 LTS</li>\r\n<li>Client: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, Windows 10, Windows 8.1, Windows 8, Windows 7 SP1 </li>\r\n\r\n<br/><br/>\r\n<b>Additional notes:</b>\r\n<br/>\r\nCPU: x64 architecture computer, except for Workstation nodes which may run x86-based or x64-based processors<br/>\r\nRAM: 4GB<br/>\r\nMinimum disk space for setup: 50 GB<br/>\r\nNetwork interface card: At least one network interface card (NIC) is required. Additional NICs may be required depending on the selected network topology<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the archive, unlock the file, extract the contents to the root of your drive and run 'setup.exe' to start the HPC Pack installation wizard on a supported Windows Server based computer.<br/>\r\n<br/>\r\n<b>More instructions:</b>\r\n<br/>\r\nPlease read the attached doc (HPCPack2019Preview.doc) for detailed installation instructions.<br/>\r\n<br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack Docs",
+            "url": "https://aka.ms/hpcpack"
+        },
+        {
+            "title": "hpc Pack GitHub repo",
+            "url": "https://github.com/azure/hpcpack"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100592",
+    "downloadPreload": true
+}

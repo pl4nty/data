@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Get Ready for Basic Auth Deprecation in Exchange Online",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Get Ready for Basic Auth Deprecation in Exchange Online.pdf",
+            "url": "https://download.microsoft.com/download/f/a/6/fa66d91d-9ceb-4b5f-acf4-fca9ee176c87/Get Ready for Basic Auth Deprecation in Exchange Online.pdf",
+            "size": "1363689",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Once upon a time, back in 2019 we said we would turn off Basic auth in Exchange Online. In 2021, we started doing it. By the start of 2022 we had already disabled it for millions of tenants, but we\u2019re not done yet. This session will give you the inside story on how we are doing it, how it\u2019s going, what we built to help us along the way, where we're going, and for the first time, we will share some details on our progress.\r\n\r\nRecording of presentation by Greg Taylor is at https://youtu.be/Db_OYLXJQF4.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Get Ready for Basic Auth Deprecation in Exchange Online.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file with PDF Reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104614",
+    "downloadPreload": true
+}

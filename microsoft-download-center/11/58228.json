@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Connector for Oracle V1.0",
+    "downloadDescription": "Download the Microsoft Connector for Oracle V1.0 that provide additional value for SQL Server Integration Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftSSISOracleConnectorX64.msi",
+            "url": "https://download.microsoft.com/download/9/f/c/9fcd89bf-d8b0-4fbf-98c0-7b873f9ca9b0/MicrosoftSSISOracleConnectorX64.msi",
+            "size": "17596416",
+            "version": "15.0.2000.110",
+            "datePublished": "7/15/2024 3:01:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSSISOracleConnectorX86.msi",
+            "url": "https://download.microsoft.com/download/9/f/c/9fcd89bf-d8b0-4fbf-98c0-7b873f9ca9b0/MicrosoftSSISOracleConnectorX86.msi",
+            "size": "9109504",
+            "version": "15.0.2000.110",
+            "datePublished": "7/15/2024 3:01:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b> Microsoft Connector for Oracle V1.0</b> - The Oracle source and destination components are written to achieve optimal performance when loading data into Oracle or unloading data from Oracle in the context of Microsoft SSIS.<br />\n<br />\r\nMicrosoft Connector for Oracle V1.0 is a minor release. It supports SQL Server 2019 Integration Services and includes bug fixes and support for updated Oracle product releases. <br/> <br />\r\nThe following changes and enhancements were made:\r\n<ul>\r\n<li>Microsoft Connector for Oracle will not be included in SSDT for VS2017 and VS2019 from SSDT version 15.9.3. To use Microsoft Connector for Oracle in SSDT, you need to install it separately.<br/></li>\r\n<li>Microsoft Connector for Oracle does not support the version lower than 15.0.4003.23 in SQL Server 2019. Please installed the latest CU patch for SQL Server 2019 in order to use Microsoft Connector for Oracle. Link for <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=100809\">SQL Server 2019 CU1</a><br/></li>\r\n<li>Bug fix - Fixed an issue that the connector was not properly loaded in some cases when designing packages in Visual Studio. In those cases, you will constantly encounter connection failure even you set the connection manager correctly.<br/></li>\r\n<li>Bug fix - The program now shows in the App&Feature<br/></li>\r\n<li>Improvement - some performance improvements<br/></li>\r\n<li>Improvement - support OCM connection method<br/></li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.110",
+    "detailsSection_file_name": [
+        "MicrosoftSSISOracleConnectorX64.msi",
+        "MicrosoftSSISOracleConnectorX86.msi"
+    ],
+    "detailsSection_file_size": [
+        "16.8 MB",
+        "8.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b> Required operating environment  </b>: Enterprise or Developer edition of SQL Server 2019 Integration Services </li></ul>\r\n\r\n<ul><li><b> Supported Oracle databases </b>: Oracle 10.x; Oracle 11.x; Oracle 12c; Oracle 18c; Oracle 19c</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ul><li>Download the appropriate file by clicking the correct DOWNLOAD button as outlined below, then run the downloaded file to install that package.<br></br>\n</li></ul>\r\n\r\n<ul><li><b>Microsoft Connector for Oracle V1.0</b>\nThe Microsoft Connector for Oracle V1.0 is a set of managed components for transferring data from or to an Oracle database. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2019 Integration Services and will only operate in those environments. To install the component, run the platform-specific installer for x86 or x64 computers respectively. Read the installation topic in the Help file for installation prerequisites and additional information.\n<br></br>\nX86 Package (MicrosoftSSISOracleConnectorX86.msi)  <br></br>\r\nX64 Package (MicrosoftSSISOracleConnectorX64.msi)\r\n</li></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "attunity v2.0",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=29283"
+        },
+        {
+            "title": "attunity v3.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=44582"
+        },
+        {
+            "title": "attunity v4.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=52950"
+        },
+        {
+            "title": "attunity v5.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=55179"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58228",
+    "downloadPreload": true
+}

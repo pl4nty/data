@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Working with Microsoft Exchange Server 2003 Stores",
+    "downloadDescription": "The Microsoft\u00ae Exchange Server 2003 store is a storage platform that provides a single repository in which you can manage multiple types of unstructured information. This guide provides in-depth information to make administration and troubleshooting tasks easier for you to perform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WorkingE2k3Store.doc",
+            "url": "https://download.microsoft.com/download/4/5/9/45956ea2-fb7e-4b59-9b34-36a44153fad1/WorkingE2k3Store.doc",
+            "size": "1835520",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae Exchange Server 2003 store is a storage platform that provides a single repository in which you can manage multiple types of unstructured information. A single Exchange topology may include store components (mailbox stores and public folder stores) that reside on multiple servers. <br />\nBecause of the inherent complexity and flexibility of the store components, the store can be one of the most difficult parts of Exchange Server 2003 to administer. This guide provides in-depth information to make administration and troubleshooting tasks easier for you to perform.<br />\nThis guide builds on the basic concepts presented in the Exchange Server 2003 Administration Guide. It examines several features of the store in depth, such as the way in which public folders replicate, how free/busy folders work, and how offline address books work. This information includes detailed explanations of how these features work, and guidance for using them effectively.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "WorkingE2k3Store.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word 2003 Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "working with Store Permissions in Microsoft Exchange 2000 and 2003",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47594"
+        },
+        {
+            "title": "exchange Server 2003 Administration Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47617"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13555",
+    "downloadPreload": true
+}

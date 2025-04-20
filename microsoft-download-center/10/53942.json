@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 1607 Script fix to unblock update for Windows Insiders",
+    "downloadDescription": "Script to fix issues with the install of KB3194496 (Cumulative Update 14393.222).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UpdateRegistry.msi",
+            "url": "https://download.microsoft.com/download/1/e/9/1e92bdc3-34c0-479b-b96f-8f5f424fe37c/UpdateRegistry.msi",
+            "size": "53248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:33:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Script to fix issues with the install of KB3194496 (Cumulative Update 14393.222).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "UpdateRegistry.msi"
+    ],
+    "detailsSection_file_size": [
+        "52.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53942",
+    "downloadPreload": true
+}

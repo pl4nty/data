@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix (KB3214755) for System Center 2012 R2 Service Manager Self Service Portal",
+    "downloadDescription": "Hotfix (KB3214755) for System Center 2012 R2 Service Manager Self Service Portal",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SelfServicePortal_CU_KB3214755_amd64_7.5.3079.579.exe",
+            "url": "https://download.microsoft.com/download/1/f/9/1f948b5e-be84-4323-9808-297a7cd2f0e3/SelfServicePortal_CU_KB3214755_amd64_7.5.3079.579.exe",
+            "size": "45221928",
+            "version": "7.5.3079.579",
+            "datePublished": "7/15/2024 4:37:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n  <br />\r\nThis article describes the bug fixes that are included in this hotfix - <br />\r\n  <br />\r\n  <b>Important</b>: This hotfix is only applicable for deployments that have Update Rollup 8 (new HTML self-service portal) for System Center 2012 R2 Service Manager and <a href=\"https://support.microsoft.com/en-us/help/3144617/update-3-kb3144617-for-system-center-2012-r2-service-manager-self-service-portal\">Update 3 (KB3144617)</a> for System Center 2012 R2 Service Manager Self Service Portal installed.<br />\r\n  <br />\r\n<b><u>Issues that are fixed in this hotfix-</u></b><br />\r\n  <ul>\r\n<li>The Self Service Portal may add the wrong user in the CreatedBy and AffectedUser fields when a request is created. This issue occurs when the Service Manager database has users from different domains but having the same username.</li>\r\n<li>Requests that are created through the Self Service Portal always have the Source field of the work item set as Portal, and the Status field set as New. These values are not overwritten when a template or Request Offering input mapping is applied.</li>\r\n<li>The Self Service Portal does not display the full name of users (such as the reviewers list for Review Activity and implementer for Manual Activity) but instead only displays the Domain\\Username information for the user.</li>\r\n<li>Request Offering form crashes if it contains an empty Simple List.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.579",
+    "detailsSection_file_name": [
+        "SelfServicePortal_CU_KB3214755_amd64_7.5.3079.579.exe"
+    ],
+    "detailsSection_file_size": [
+        "43.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This hotfix is only applicable for deployments that have Update Rollup 8 (new HTML self-service portal) for System Center 2012 R2 Service Manager and <a href=\"https://support.microsoft.com/en-us/help/3144617/update-3-kb3144617-for-system-center-2012-r2-service-manager-self-service-portal\">Update 3 (KB3144617)</a> for System Center 2012 R2 Service Manager Self Service Portal installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/3214755\">KB3214755</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54654",
+    "downloadPreload": true
+}

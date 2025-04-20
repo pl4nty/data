@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research WikiQA Corpus",
+    "downloadDescription": "The WikiQA corpus is a new publicly available set of question and sentence pairs, collected and annotated for research on open-domain question answering. Last published: August 28, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WikiQACorpus.zip",
+            "url": "https://download.microsoft.com/download/e/5/f/e5fcfcee-7005-4814-853d-daa7c66507e0/WikiQACorpus.zip",
+            "size": "7094233",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The WikiQA corpus is a new publicly available set of question and sentence pairs, collected and annotated for research on open-domain question answering. In order to reflect the true information need of general users, we used Bing query logs as the question source. Each question is linked to a Wikipedia page that potentially has the answer. Because the summary section of a Wikipedia page provides the basic and usually most important information about the topic, we used sentences in this section as the candidate answers. With the help of crowdsourcing, we included 3,047 questions and 29,258 sentences in the dataset, where 1,473 sentences were labeled as answer sentences to their corresponding questions. More detail of this corpus can be found in our EMNLP-2015 paper, \"WikiQA: A Challenge Dataset for Open-Domain Question Answering\" [Yang et al. 2015]. In addition, this download also includes the experimental results in the paper, an evaluation script for judging the \"answer triggering\" task, as well as the answer phrases labeled by the authors of the paper.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WikiQACorpus.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52419",
+    "downloadPreload": true
+}

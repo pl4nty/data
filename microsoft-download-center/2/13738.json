@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Extensibility Hands-on Labs for Microsoft Enterprise Library 5.0",
+    "downloadDescription": "A set of extensibility hands-on labs for Microsoft Enterprise Library 5.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Enterprise_Library_Extensibility_Hands-On_Labs.zip",
+            "url": "https://download.microsoft.com/download/c/d/b/cdb65779-4363-48a3-b9dc-c13bf135a9f7/Enterprise_Library_Extensibility_Hands-On_Labs.zip",
+            "size": "11464777",
+            "version": "5",
+            "datePublished": "3/15/2024 3:10:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Extensibility Hands-on Labs for Microsoft Enterprise Library 5.0 will guide you through the techniques to build your:\r\n<li>custom exception handler </li>\r\n<li>custom logging trace listener </li>\r\n<li>custom configuration source</li>\r\n<li>custom application block</li>\r\n\r\nIn addition, you will learn how to customize the design time experience, including: \r\n<li>\u201cbare-bones\u201d configuration tool integration (basic name/value pairs) </li>\r\n<li>full design time integration (more intuitive configuration options, validation, tool-tips, editors like type picker etc.) </li>\r\n<li>fluent interface configuration builder support (improved programmatic support) </li>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5",
+    "detailsSection_file_name": [
+        "Enterprise_Library_Extensibility_Hands-On_Labs.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.9 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Enterprise Library 5.0 / Unity 2.0 installed </li>\r\n<li>SQL Express 2008 installed </li>\r\n<li>Visual Studio 2010 Pro (or better) installed</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Unzip the archive. The before and after source code and instructions are provided for each lab. Note that the Enterprise Library DLLs are included, so an installation of Enterprise Library is not required.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Unity 2.0",
+            "url": "http://msdn.microsoft.com/en-us/library/ff663144.aspx"
+        },
+        {
+            "title": "microsoft Enterprise Library 5.0",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=4&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=bcb166f7-dd16-448b-a152-9845760d9b4c&u=http%3a%2f%2fmsdn.microsoft.com%2fen-us%2flibrary%2fff632023.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13738",
+    "downloadPreload": true
+}

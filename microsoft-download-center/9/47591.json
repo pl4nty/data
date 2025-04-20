@@ -1,0 +1,207 @@
+{
+    "error": "",
+    "downloadTitle": "June 2015 Security Release ISO Image",
+    "downloadDescription": "June 2015 Security Release ISO Image",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-201506.iso",
+            "url": "https://download.microsoft.com/download/0/c/5/0c5344fd-b92b-4100-8999-5c2acf79aced/Windows-KB913086-201506.iso",
+            "size": "3558055936",
+            "version": "3033890",
+            "datePublished": "7/15/2024 3:45:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on June 2015. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://technet.microsoft.com/en-us/security/bulletin\">http://technet.microsoft.com/en-us/security/bulletin</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />  This DVD5 image contains the following updates: <br /><b><a href=\"http://support.microsoft.com/kb/3033890\">KB3033890</a></b> / <b><a href=\"\">(MS15-057)</a></b><ul><li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li></ul><b><a href=\"http://support.microsoft.com/kb/3057839\">KB3057839</a></b> / <b><a href=\"\">(MS15-061)</a></b><ul><li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li></ul><b><a href=\"http://support.microsoft.com/kb/3059317\">KB3059317</a></b> / <b><a href=\"\">(MS15-060)</a></b><ul><li>Windows Vista</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li></ul><b><a href=\"http://support.microsoft.com/kb/3062577\">KB3062577</a></b> / <b><a href=\"\">(MS15-062)</a></b><ul><li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2012</li></ul><b><a href=\"http://support.microsoft.com/kb/3063858\">KB3063858</a></b> / <b><a href=\"\">(MS15-063)</a></b><ul><li>Windows Vista</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li></ul><b><a href=\"http://support.microsoft.com/kb/3062760\">KB3062760</a></b> / <b><a href=\"\">()</a></b><ul><li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li></ul><b><a href=\"http://support.microsoft.com/kb/3058515\">KB3058515</a></b> / <b><a href=\"\">(MS15-056)</a></b><ul><li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li></ul><b><a href=\"http://support.microsoft.com/kb/3065820\">KB3065820</a></b> / <b><a href=\"\">()</a></b><ul><li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li></ul><b><a href=\"http://support.microsoft.com/kb/3070641\">KB3070641</a></b> / <b><a href=\"\">(MS15-000)</a></b><ul><li>Windows Next</li>\r\n<li>Windows Next Server</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3033890; KB3057839; KB3059317; KB3062577; KB3063858; KB3062760; KB3058515; KB3065820; KB3070641",
+        "name": "KB3033890; KB3057839; KB3059317; KB3062577; KB3063858; KB3062760; KB3058515; KB3065820; KB3070641"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS15-057; MS15-061; MS15-060; MS15-062; MS15-063; MS15-056; MS15-000",
+        "name": "MS15-057; MS15-061; MS15-060; MS15-062; MS15-063; MS15-056; MS15-000"
+    },
+    "detailsSection_file_version": "3033890",
+    "detailsSection_file_name": [
+        "Windows-KB913086-201506.iso"
+    ],
+    "detailsSection_file_size": [
+        "3.3 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Embedded Standard 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "47591",
+    "downloadPreload": true
+}

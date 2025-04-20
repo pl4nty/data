@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "U-SQL - Table design, incremental data load, and partition management",
+    "downloadDescription": "U-SQL - Table design, incremental data load, and partition management",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "U-SQL - Table design, incremental data load, and partition management.pdf",
+            "url": "https://download.microsoft.com/download/7/2/f/72ffa6ba-69f0-4968-83ee-68a90b06dea0/U-SQL - Table design, incremental data load, and partition management.pdf",
+            "size": "909100",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Data Lake Analytics (U-SQL) originates from the world of Big Data, in which data is processed in a scale-out manner by using multiple nodes. These nodes can access the data in several formats, from flat files to U-SQL tables.\r\nThis document focuses on U-SQL tables, with details about table design strategy, different types of partitions that can be created on U-SQL tables and how they differ from each other, the process for incrementally loading data into a partitioned table, and how to manage partitions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "U-SQL - Table design, incremental data load, and partition management.pdf"
+    ],
+    "detailsSection_file_size": [
+        "887.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Azure Data Lake Analytics (U-SQL) originates from the world of Big Data, in which data is processed in a scale-out manner by using multiple nodes. These nodes can access the data in several formats, from flat files to U-SQL tables.\r\nThis document focuses on U-SQL tables, with details about table design strategy, different types of partitions that can be created on U-SQL tables and how they differ from each other, the process for incrementally loading data into a partitioned table, and how to manage partitions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103885",
+    "downloadPreload": true
+}

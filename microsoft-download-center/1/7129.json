@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Creating and Customizing TFS Reports",
+    "downloadDescription": "This article provides an introduction to the important concepts and step by step instructions to Create and Customize Reports for Microsoft\u00ae Visual Studio\u00ae Team Foundation Server (TFS).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TFSReports.zip",
+            "url": "https://download.microsoft.com/download/4/7/d/47dfba00-3d39-46bd-b6a6-669436e62fe5/TFSReports.zip",
+            "size": "4288260",
+            "version": "Aug-2007",
+            "datePublished": "6/13/2024 11:55:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If you\u2019ve used Microsoft\u00ae Visual Studio\u00ae Team Foundation Server (TFS), you may have seen reports that you would like to customize. Working with reports can be very intimidating because it uses different technologies that you may not be familiar with. This article provides an introduction to the important concepts you\u2019ll need to learn a \u201cminimal path\u201d through the technologies. Reporting in TFS is built on top of Microsoft SQL Server Reporting Services and Microsoft SQL Server Analysis Services. You\u2019ll also need some additional tools on top of Visual Studio, such as Business Intelligence Development Studio.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug-2007",
+    "detailsSection_file_name": [
+        "TFSReports.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Visual Studio Team Foundation Server, Windows Server 2003, Windows XP, or Windows Vista",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Download the zip file and extract the contents to a folder on your <br />\n\tcomputer. The zip file contains the following items:<ol type=\"i\"><br />\n\t\t<li>PDF Document: Creating and Customizing TFS Reports.pdf</li><br />\n\t\t<li>TFS Reports<ol type=\"a\"><br />\n\t\t\t<li>Bug Trends.rdl</li><br />\n\t\t\t<li>Remaining Work by Count.rdl</li><br />\n\t\t\t<li>Remaining Work by Size.rdl</li><br />\n\t\t\t<li>Status by Area.rdl</li><br />\n\t\t</ol><br />\n\t\t</li><br />\n\t\t<li>PDF Documents explaining the TFS reports<ol type=\"a\"><br />\n\t\t\t<li>Bugs Trends.pdf (for Bug Trends.rdl report)</li><br />\n\t\t\t<li>Remaining Work.pdf (for Remaining Work by Count.rdl and <br />\n\t\t\tRemaining Work by Size.rdl reports)</li><br />\n\t\t\t<li>Status by Area.pdf (for Status by Area.rdl report)</li><br />\n\t\t</ol><br />\n\t\t</li><br />\n\t\t<li>PDF Document: How To Install a Report to TFS Project.pdf</li><br />\n\t\t<li>readme.txt</li><br />\n\t</ol><br />\n\t</li><br />\n\t<li>Follow the directions in the readme.txt</li><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "process Templates and Tools",
+            "url": "http://msdn2.microsoft.com/en-us/teamsystem/aa718795.aspx"
+        },
+        {
+            "title": "visual Studio Team System Developer Center",
+            "url": "http://msdn2.microsoft.com/en-us/teamsystem/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7129",
+    "downloadPreload": true
+}

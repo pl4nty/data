@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Lean Manufacturing - Kanban and Pull-based Manufacturing in Microsoft Dynamics AX 2012 ",
+    "downloadDescription": "This white paper introduces a variety of kanban and pull-based manufacturing scenarios and how they can be supported with lean manufacturing for Microsoft Dynamics AX.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lean manufacturing_Kanban and pull based manufacturing_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/5/1/d/51dc9131-9607-4b17-958a-08785dda6af2/Lean manufacturing_Kanban and pull based manufacturing_AX2012.pdf",
+            "size": "2419892",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:16:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document gives an overview of how to use the kanban framework in Microsoft Dynamics AX 2012 to support lean manufacturing and pull-based manufacturing scenarios. It introduces the concepts of kanbans as a signal and kanban rules as supply policies, describes how to model pull scenarios, and provides application examples. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Lean manufacturing_Kanban and pull based manufacturing_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26918",
+    "downloadPreload": true
+}

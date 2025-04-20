@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - TechEd 2008 Software Quality Panel",
+    "downloadDescription": "This is as close to Jerry Springer as we get! A great panel discussion from TechEd 2008 about balancing software quality with other factors such as cost and time taken.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080710SQPanel.zip",
+            "url": "https://download.microsoft.com/download/9/a/7/9a7ab97d-990f-4694-8945-2962683df39b/20080710SQPanel.zip",
+            "size": "39539563",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This was a great discussion. Don't miss it!",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080710SQPanel.zip"
+    ],
+    "detailsSection_file_size": [
+        "37.7 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "150",
+    "downloadPreload": true
+}

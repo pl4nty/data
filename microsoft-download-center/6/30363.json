@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Databases that support SharePoint 2013",
+    "downloadDescription": "This model illustrates the databases that that support SharePoint 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "itpro-2013-db-poster.pdf",
+            "url": "https://download.microsoft.com/download/d/2/a/d2ae15b9-6f47-4328-878d-276f851c9e06/itpro-2013-db-poster.pdf",
+            "size": "416480",
+            "version": "4",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "itpro-2013-db-poster.vsd",
+            "url": "https://download.microsoft.com/download/d/2/a/d2ae15b9-6f47-4328-878d-276f851c9e06/itpro-2013-db-poster.vsd",
+            "size": "1515520",
+            "version": "4",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "SharePoint deployments can include various databases depending on the configuration of an environment. This model illustrates the products and SKUs to which each database applies.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "itpro-2013-db-poster.pdf",
+        "itpro-2013-db-poster.vsd"
+    ],
+    "detailsSection_file_size": [
+        "406.7 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30363",
+    "downloadPreload": true
+}

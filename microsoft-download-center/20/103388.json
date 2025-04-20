@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "RACI Matrix",
+    "downloadDescription": "An Accountabilities and Responsibilities table that is a part of the Well-Architected Recommendation Process (WARP).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RACI-WARP-program.xlsx",
+            "url": "https://download.microsoft.com/download/2/d/0/2d023bc8-be61-4936-abba-ea4b1c8f1fd7/RACI-WARP-program.xlsx",
+            "size": "26954",
+            "version": "21H1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An Accountabilities and Responsibilities table that is a part of the Well-Architected Recommendation Process (WARP).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "21H1",
+    "detailsSection_file_name": [
+        "RACI-WARP-program.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "26.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10; Excel",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103388",
+    "downloadPreload": true
+}

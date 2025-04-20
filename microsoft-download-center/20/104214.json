@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "ViewerRT Tool",
+    "downloadDescription": "Tool to visualize heatmaps.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "viewerrt.appx",
+            "url": "https://download.microsoft.com/download/0/9/0/0904a52f-e58e-404c-ada4-9afe52a0dc70/viewerrt.appx",
+            "size": "5333719",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:32:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tool to visualize heatmaps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "viewerrt.appx"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows 10+",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the tool, and run the application to visualize touch heatmaps.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104214",
+    "downloadPreload": true
+}

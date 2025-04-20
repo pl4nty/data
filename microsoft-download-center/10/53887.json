@@ -1,0 +1,167 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2016 Service Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-6.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-7.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD.exe",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD.exe",
+            "size": "348960",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-8.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-10.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-3.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-1.bin",
+            "size": "735666688",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-5.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM2016_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SM2016_VHDEVAL.docx",
+            "size": "55774",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-4.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-2.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-11.bin",
+            "size": "54540352",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCSM_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/2/6/6/26613faf-8c4a-4ce5-8cb2-e4e6c93fc220/SC2016_SCSM_VHD-9.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:47:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center 2016 and Windows Server 2016. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center 2016 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=5d4c2490-4101-44fc-b3ae-583a80f3872e\">System Center 2016 Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=6c35c568-6a7c-46ba-81f1-0e3a08d82329\">System Center 2016 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=bb6a6d9c-de72-470f-b85e-a4ee540bc366\">System Center 2016 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f79c1898-f954-4125-a1ad-b768af854dc4\">System Center 2016 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=1e442566-b8c1-43fc-a8bc-057c7c317863\">System Center 2016 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "SC2016_SCSM_VHD-6.bin",
+        "SC2016_SCSM_VHD-7.bin",
+        "SC2016_SCSM_VHD.exe",
+        "SC2016_SCSM_VHD-8.bin",
+        "SC2016_SCSM_VHD-10.bin",
+        "SC2016_SCSM_VHD-3.bin",
+        "SC2016_SCSM_VHD-1.bin",
+        "SC2016_SCSM_VHD-5.bin",
+        "SM2016_VHDEVAL.docx",
+        "SC2016_SCSM_VHD-4.bin",
+        "SC2016_SCSM_VHD-2.bin",
+        "SC2016_SCSM_VHD-11.bin",
+        "SC2016_SCSM_VHD-9.bin"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "340.8 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.6 MB",
+        "701.9 MB",
+        "54.5 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "52.0 MB",
+        "701.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cSM2016_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SC2016_SCSM_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53887",
+    "downloadPreload": true
+}

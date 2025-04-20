@@ -1,0 +1,147 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Silverlight\u2122 1.0",
+    "downloadDescription": "Microsoft Silverlight Browser Plug-in",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "silverlight.html",
+            "url": "https://download.microsoft.com/download/1/4/5/14507474-0bee-4542-b8f1-77b37ff62ae6/silverlight.html",
+            "size": "112",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Silverlight is a cross-browser, cross-platform plug-in for delivering the next generation of Microsoft .NET\u2013based media experiences and rich interactive applications for the Web. Download it today and enhance your browser.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "silverlight.html"
+    ],
+    "detailsSection_file_size": [
+        "112 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Internet Explorer 6, 7<br />\nFirefox 1.5, 2.0<br />\nSafari",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click on the download button to install Silverlight. The browser will then refresh to show Silverlight content. If you are running in Firefox or Safari, you will need to restart your browser to complete the installation.<br />\n<br />\nAlternatively, you can access the runtime from the<br />\n<a href=\"http://www.microsoft.com/silverlight/install.aspx\">Silverlight Installation  Page</a>",
+    "additionalInformationSection": "Alternatively, you can access the runtime from the<br />\n<a href=\"http://www.microsoft.com/silverlight/install.aspx\">Silverlight Installation  Page</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Silverlight Home",
+            "url": "http://www.microsoft.com/silverlight"
+        },
+        {
+            "title": "silverlight Community Site (English)",
+            "url": "http://www.silverlight.net"
+        },
+        {
+            "title": "expression Home Page",
+            "url": "http://www.microsoft.com/expression"
+        },
+        {
+            "title": "silverlight Showcase (English)",
+            "url": "http://www.silverlight.net/showcase"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3873",
+    "downloadPreload": true
+}

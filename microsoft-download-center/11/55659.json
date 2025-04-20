@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Hardware Offload of Audio Processing test - Updated test binary containing fix for test failure on Windows 10 Creators Update Service Pack 6D 15063.447.170619-1819 onwards",
+    "downloadDescription": "Interface ID mismatch between Test binary and OS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RS2_6D_HLK_Fix.exe",
+            "url": "https://download.microsoft.com/download/b/2/f/b2f595d3-676a-4aaf-a454-da9162041882/RS2_6D_HLK_Fix.exe",
+            "size": "425597",
+            "version": "15063_SVC_6D",
+            "datePublished": "7/15/2024 4:43:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "UUID for Audio stack component changed and all corresponding dependent binaries should use the same. The HLK test HAPTest.dll in the Creators Update HLK is using the older UUID and should be updated to this release. HLK and OS releases are managed separately and hence the binary mismatch between the test and the binaries released as part of Creators Update Service pack 6D onwards for all Creators Update releases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15063_SVC_6D",
+    "detailsSection_file_name": [
+        "RS2_6D_HLK_Fix.exe"
+    ],
+    "detailsSection_file_size": [
+        "415.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 Creators Update Service pack 6D 15063.447.170619-1819 onwards.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Run the self-extracting package<br />\n2. Copy \"HAPTest.dll\" files into architecture specific folders in the HLK Controller in the location: \"C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\<b><i>[architecture]</i></b>\\audio-test\\bin\"<br />\r\n3. Run the HLK job again with the private binary<br />\r\n4. If the controller is installed again these binaries need to be replaced as well.<br />\r\n5. If there are any issues please contact Microsoft Audio team.<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55659",
+    "downloadPreload": true
+}

@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud Storage for Enterprise Architects",
+    "downloadDescription": "The Microsoft cloud offers a wide variety of storage services and solutions to meet your needs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_storage.pdf",
+            "url": "https://download.microsoft.com/download/1/8/0/18066e9a-7775-4dca-b21c-e235c215a37a/MSFT_cloud_architecture_storage.pdf",
+            "size": "916930",
+            "version": "Sept2016",
+            "datePublished": "7/15/2024 4:08:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_storage.vsd",
+            "url": "https://download.microsoft.com/download/1/8/0/18066e9a-7775-4dca-b21c-e235c215a37a/MSFT_cloud_architecture_storage.vsd",
+            "size": "3580416",
+            "version": "Sept2016",
+            "datePublished": "7/15/2024 4:08:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Integrating your storage by using Microsoft cloud services gives you access to a broad range of services and cloud platform options. You can use prepackaged solutions that are bundled with existing services, use existing services as a starting point for your storage solution with additional configuration or coding for a custom fit, or use storage building blocks, along with coding, to create your own storage solution or apps from scratch.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Sept2016",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_storage.pdf",
+        "MSFT_cloud_architecture_storage.vsd"
+    ],
+    "detailsSection_file_size": [
+        "895.4 KB",
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This poster is available in Visio (VSD or VSDX) and PDF versions in 11x17 (tabloid) format for easy printing. \r\n\r\nYou will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. \r\n\r\nYou will need the Adobe Acrobat reader for the PDF version.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft's Enterprise Cloud Roadmap",
+            "url": "http://aka.ms/cloudarchitecture"
+        },
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "https://technet.microsoft.com/library/dn919927.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49552",
+    "downloadPreload": true
+}

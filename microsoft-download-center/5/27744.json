@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Whitepaper: Roslyn Project Overview",
+    "downloadDescription": "Get an overview of how the Roslyn project exposes the Visual Basic and C# compilers\u2019 code analysis. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Roslyn Project Overview.docx",
+            "url": "https://download.microsoft.com/download/e/a/d/eadec33e-fba3-43bf-9226-427bdac27610/Roslyn Project Overview.docx",
+            "size": "425728",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Get an overview of how the Roslyn project exposes the Visual Basic and C# compilers\u2019 code analysis. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v.3",
+    "detailsSection_file_name": [
+        "Roslyn Project Overview.docx"
+    ],
+    "detailsSection_file_size": [
+        "415.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The Microsoft Word document download requires 58 KB of disk space to download and install. It also requires Microsoft Word or <a href=\"http://go.microsoft.com/fwlink/?LinkID=47975\">Microsoft Word Viewer</a> to view.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button to start the download.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "roslyn on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=228399"
+        },
+        {
+            "title": "roslyn on Microsoft Download Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=228400"
+        },
+        {
+            "title": "roslyn Forums",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=230758"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27744",
+    "downloadPreload": true
+}

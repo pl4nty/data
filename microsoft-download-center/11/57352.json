@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Project Service Automation Sample Data V3",
+    "downloadDescription": "The Project Service sample data package installs the \"Fabrikam Manufacturing Master Data\" (v3.0.0.0) solution with approximately ~4k records across 33 entities",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "v902PSMasterData_3_0_0_6.exe",
+            "url": "https://download.microsoft.com/download/7/5/d/75db3052-407a-4451-b1b1-feb7192f8d1a/v902PSMasterData_3_0_0_6.exe",
+            "size": "14832960",
+            "version": "v3.0.0.0",
+            "datePublished": "7/15/2024 4:45:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To become familiar with Dynamics 365 for Project Service Automation(PSA), it's useful to have a small, pre-configured dataset that makes it easy to trace through end to end scenarios.\r\n\r\nFor this purpose, we've created a seperate PSA only sample data installation package(English-language only at this time) that makes it easier to explore and learn about PSA.\r\n\r\nRunning this install performs the following:\r\n1) Provide setup data which wil default the behaviour of PSA\r\n2) Installs other sample data such as Bookable Resources, Roles, Sales and Cost Price Lists, Org Units and other reference data\r\n\r\nIMPORTANT: Currently, there is no way to un-install this sample data. This package should only be used on demonstration, evaluation, training and test systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v3.0.0.0",
+    "detailsSection_file_name": [
+        "v902PSMasterData_3_0_0_6.exe"
+    ],
+    "detailsSection_file_size": [
+        "14.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics 365 (v9.0) with Project Service Automation(v3+)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Please visit \"https://aka.ms/fpsrefdata\" for the latest and greatest instructions.\r\nDownload the self-extracting file, extract the contents to a working folder and update the necessary configuration files as specified in the instructions in the PkgFolder sub-folder.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57352",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Daylight Saving Time",
+    "downloadDescription": "This is the Microsoft Windows Mobile 5.0 (Pocket PC and Smartphone) update to address DST related issues in 2007 due to revised Daylight Saving Time laws in many countries.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WM5DST2007-2.cab",
+            "url": "https://download.microsoft.com/download/f/5/b/f5b552ad-743a-4e3e-a08b-b59b986e9cc5/WM5DST2007-2.cab",
+            "size": "66424",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release updates time zone registry data for New Zealand and Western Australia in addition to US, Canada, and Mexico DST related issues in 2007. For complete details regarding the updates in this release, please download the WM5DST2007-2.cab file below.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "WM5DST2007-2.cab"
+    ],
+    "detailsSection_file_size": [
+        "64.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Mobile 5.0 SW for Pocket PC.<br />\nWindows Mobile 5.0 SW for Smartphone. <br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 5.0 software for Pocket PC",
+        "Windows Mobile 5.0 software for Smartphone"
+    ],
+    "installInstructionSection": "1. Click the download above to download the file.<br />\n2. Please copy the file to the device and click on it to execute it. (There are multiple ways to copy a file to the device - one of them is to use ActiveSync).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22041",
+    "downloadPreload": true
+}

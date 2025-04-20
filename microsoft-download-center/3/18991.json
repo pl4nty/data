@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM for E-mail Router Installing Guide for use with Microsoft Dynamics CRM Online",
+    "downloadDescription": "Download instructions for installing Microsoft Dynamics CRM E-mail Router for use with Microsoft Dynamics CRM Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRMOnlineERinstal_PRN.docx",
+            "url": "https://download.microsoft.com/download/2/7/6/27698946-3cc7-4efa-b31a-0271155d6dc5/CRMOnlineERinstal_PRN.docx",
+            "size": "139348",
+            "version": "2016 Update",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the Microsoft Dynamics CRM E-mail Router Installing Guide document that contains installation instructions for use with Microsoft Dynamics CRM Online. <br/><br/>\r\nThis document is also available online. \r\n<a href=\"http://technet.microsoft.com/en-us/library/hh871393.aspx\">View on TechNet</a>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016 Update",
+    "detailsSection_file_name": [
+        "CRMOnlineERinstal_PRN.docx"
+    ],
+    "detailsSection_file_size": [
+        "136.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007, Office Word 2010, or a compatible viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click Download. </li>\r\n<li>If the File Download dialog box appears, do one of the following: </li>\r\n<ul><li>To start the download immediately, click Run. </li>\r\n<li>To copy the download to your computer to view at a later time, click Save. </li></ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18991",
+    "downloadPreload": true
+}

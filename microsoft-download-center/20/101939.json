@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Item Tracing Performance White Paper for Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "This paper includes performance information for the new item tracing feature in cumulative update 6 for Microsoft Dynamics AX 2012 R2. This feature enables users to investigate root causes and initiate product recalls based on tracking dimensions, such as item and batch numbers, within a legal entity.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ItemTracingPerformanceInDynamicsAX.pdf",
+            "url": "https://download.microsoft.com/download/7/9/9/7999cfcb-8803-4de8-ad2f-7b1de46c28d9/ItemTracingPerformanceInDynamicsAX.pdf",
+            "size": "687183",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bTracing involves searching through a large amount of  data for an item. During development, one of the requirements was to make sure that the feature performs with large sets of data.\u200b  To test performance, a set of master data was developed to simulate a real-world business. The data was then used to make a series of performance measurements. This document describes the data and measurements that were used to test performance, and the results that were obtained.Click the link to view or download the document.\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "ItemTracingPerformanceInDynamicsAX.pdf"
+    ],
+    "detailsSection_file_size": [
+        "671.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101939",
+    "downloadPreload": true
+}

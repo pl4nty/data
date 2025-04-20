@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Mail-enabled Public Folders - directory sync from EXO to On-Prem script.",
+    "downloadDescription": "Script to syncronize mail public folder objects from EXO AD to on-premise for hybrid access.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Sync-MailPublicFoldersCloudToOnprem.ps1",
+            "url": "https://download.microsoft.com/download/b/f/e/bfeaf966-0740-4029-83cb-ef726d1faade/Sync-MailPublicFoldersCloudToOnprem.ps1",
+            "size": "36678",
+            "version": "15.01.0493.000",
+            "datePublished": "7/15/2024 4:16:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncMailPublicFoldersCloudToOnprem.strings.psd1",
+            "url": "https://download.microsoft.com/download/b/f/e/bfeaf966-0740-4029-83cb-ef726d1faade/SyncMailPublicFoldersCloudToOnprem.strings.psd1",
+            "size": "4594",
+            "version": "15.01.0493.000",
+            "datePublished": "7/15/2024 4:16:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Import-PublicFolderMailboxes.ps1",
+            "url": "https://download.microsoft.com/download/b/f/e/bfeaf966-0740-4029-83cb-ef726d1faade/Import-PublicFolderMailboxes.ps1",
+            "size": "40902",
+            "version": "15.01.0493.000",
+            "datePublished": "7/15/2024 4:16:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ImportPublicFolderMailboxes.strings.psd1",
+            "url": "https://download.microsoft.com/download/b/f/e/bfeaf966-0740-4029-83cb-ef726d1faade/ImportPublicFolderMailboxes.strings.psd1",
+            "size": "2668",
+            "version": "15.01.0493.000",
+            "datePublished": "7/15/2024 4:16:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<UL>\r\nUse this script if you need to do one of the following - \r\n<LI>Synchronization of mail enabled public folder objects from Exchange Online Active Directory to on-premise</LI>\r\n</UL>\r\n\r\n<UL>\r\nThis script syncs mail-enabled public folder objects from O365 into the local Exchange deployment . It uses O365 as master to determine what changes need to be applied to the local Exchange deployment. The script will create, update or delete mail-enabled public folder objects on the local Exchange deployment based on what exists in O365 Active Directory.\r\n</UL>\r\n<UL>\r\nThe script must be executed from local Exchange Management Shell window providing access to manupulate the objects in the local Exchange deployment. Then, using the credentials provided the script will create a session against Exchange Online, which will be used to read O365 Active Directory objects remotely.\r\n</UL>\r\n\r\n<UL>NOTE - Before running the script, copy the SyncMailPublicFoldersCloudToOnprem.strings.psd1 file in the same directory as the Sync-MailPublicFoldersCloudToOnprem.ps1 script file.</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.0493.000",
+    "detailsSection_file_name": [
+        "Sync-MailPublicFoldersCloudToOnprem.ps1",
+        "SyncMailPublicFoldersCloudToOnprem.strings.psd1",
+        "Import-PublicFolderMailboxes.ps1",
+        "ImportPublicFolderMailboxes.strings.psd1"
+    ],
+    "detailsSection_file_size": [
+        "35.8 KB",
+        "4.5 KB",
+        "39.9 KB",
+        "2.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Review the <A HREF=\"https://technet.microsoft.com/en-us/library/dn249373%28v=exchg.150%29.aspx\">Technical Documentation</A> for detailed instructions on configuring Public Folder cross-premise access</LI>\r\n<LI>Exchange Server should be installed on the server where the script will be run. See Instructions for details on Exchange Server versions. </LI>\r\n<LI>PowerShell 2.0 or later</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "<UL><b>Script usage examples: </b> <br></br>\r\n<b>Example 1: </b><i>.\\Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv  </i><br></br>\r\nThis example shows how to sync mail-public folders from Exchange Online to your local deployment. Note that the script outputs a CSV file listing all operations executed, and possibly errors encountered, during sync. <br></br>\r\n<b>Example 2: </b><i>.\\Sync-MailPublicFoldersCloudToOnprem.ps1 -Credential (Get-Credential) -CsvSummaryFile:sync_summary.csv -ConnectionUri:\"https://partner.outlook.cn/PowerShell\"  </i><br></br>\r\nThis example shows how to use the script with a different URI to connect to Exchange Online and sync mail-public folders to your local deployment.<br></br>\r\n</UL>\r\n\r\n<UL><b>Required parameters:</b>\r\n<LI>Credential - Exchange Online user name and password</LI>\r\n<LI>CsvSummaryFile - The file path where sync operations and errors will be logged in a CSV format </LI>\r\n</UL>\r\n\r\n<UL><b>Optional parameters:</b>\r\n<LI>ConnectionUri - The Exchange Online remote PowerShell connection uri. If you are an Office 365 operated by 21Vianet customer in China, use \"https://partner.outlook.cn/PowerShell\".</LI>\r\n</UL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52037",
+    "downloadPreload": true
+}

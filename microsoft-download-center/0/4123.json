@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server Integration Services Balanced Data Distributor",
+    "downloadDescription": "Microsoft\u00ae SSIS Balanced Data Distributor (BDD) is a new SSIS transform. This transform takes a single input and distributes the incoming rows to one or more outputs uniformly via multithreading.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BalancedDataDistributor-x64.msi",
+            "url": "https://download.microsoft.com/download/6/1/b/61b686f7-14c6-4c7f-9882-6c0fc009324d/BalancedDataDistributor-x64.msi",
+            "size": "1789440",
+            "version": "v1.0",
+            "datePublished": "7/15/2024 3:14:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BalancedDataDistributor-x86.msi",
+            "url": "https://download.microsoft.com/download/6/1/b/61b686f7-14c6-4c7f-9882-6c0fc009324d/BalancedDataDistributor-x86.msi",
+            "size": "1404416",
+            "version": "v1.0",
+            "datePublished": "7/15/2024 3:14:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "License_ SQL Server Integration Services Balanced Data Distributor Transformation.docm",
+            "url": "https://download.microsoft.com/download/6/1/b/61b686f7-14c6-4c7f-9882-6c0fc009324d/License_ SQL Server Integration Services Balanced Data Distributor Transformation.docm",
+            "size": "49539",
+            "version": "v1.0",
+            "datePublished": "7/15/2024 3:14:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\r\nMicrosoft\u00ae SSIS Balanced Data Distributor (BDD) is a new SSIS transform. This transform takes a single input and distributes the incoming rows to one or more outputs uniformly via multithreading. The transform takes one pipeline buffer worth of rows at a time and moves it to the next output in a round robin fashion. It\u2019s balanced and synchronous so if one of the downstream transforms or destinations is slower than the others, the rest of the pipeline will stall so this transform works best if all of the outputs have identical transforms and destinations. The intention of BDD is to improve performance via multi-threading. Several characteristics of the scenarios BDD applies to: 1) the destinations would be uniform, or at least be of the same type. 2) the input is faster than the output, for example, reading from flat file to OleDB.\r\n<br/>\r\n<br/><b>NOTE:</b> &nbsp;An updated version of Microsoft SSIS Balanced Data Distributor (BDD) is available.  This includes a fix for the problem causing BIDS to crash when removing the BDD transform. For more details, and download information, see <A HREF=\"http://support.microsoft.com/kb/2616527\">KB 2616527</A>.\r\n<br/>\r\n<br/>\r\nFor a demonstration of the SSIS Balanced Data Distributor, see the <a href=\"http://technet.microsoft.com/en-us/sqlserver/hh369962\">Balanced Data Distributor (SQL Server Video).</a><br/>\r\n<br/>\r\nFor a discussion of when to use the SSIS Balanced Data Distributor, refer <a href=\"http://sqlcat.com/toolbox/archive/2011/05/25/the-balanced-data-distributor-for-ssis.aspx\"> this link.</a>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v1.0",
+    "detailsSection_file_name": [
+        "BalancedDataDistributor-x64.msi",
+        "BalancedDataDistributor-x86.msi",
+        "License_ SQL Server Integration Services Balanced Data Distributor Transformation.docm"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "1.3 MB",
+        "48.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\nSQL Server 2008  or SQL Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<br/>\r\n<ol>\r\n<li> <b>Please note</b> By downloading the product you are accepting all conditions that are outlined in the EULA (End User License Agreement) located on this page.</li><br/>\r\n<br/>\r\n<li> Please read the EULAs on this page, once completed please download the appropraite file (X86 or X64 version of the software).</li><br/>\r\n<br/>\r\n<li>In order to design an SSIS package, you have to install Business Intelligence Development Studio (BIDS). This is a 32-bit application even if the SQL Server is 64-bit.</li><br/>\r\n<br/>\r\n<li>Some tools such as dtexec.exe have both 32-bit and 64-bit versions under 64-bit installation of SQL server.</li><br/>\r\n<br/>\r\n<li>Refer to the following article for more information on 64 bit considerations for Integration Services  - http://msdn.microsoft.com/en-us/library/ms141766.aspx </li><br/>\r\n<br/>\r\n<li>Once you have installed BDD, you will need to open the SSIS template in BIDS, right click on toolbox, select \u201cChoose Items\u2026\u201d, go to \u201cSSIS Data Flow Items\u201d tab, check \u201cBalanced Data Distributor\u201d and hit OK. \u201cBalanced Data Distributor\u201d should now be in the toolbox in the \u201cTransformation\u201d section, ready to be used.</li><br/>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4123",
+    "downloadPreload": true
+}

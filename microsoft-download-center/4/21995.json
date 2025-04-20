@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Data Access Components (MDAC) 2.8 Software Development Kit",
+    "downloadDescription": "The MDAC 2.8 SDK is for developers who are building applications using ADO, OLE DB, and ODBC. It contains updated documentation, headers, libs and typelibs for x86, IA64 and AMD64 platforms, as well as updated sample applications and developer tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mdac28sdk.msi",
+            "url": "https://download.microsoft.com/download/9/a/1/9a1256c9-d301-4fdc-93b9-370c5b2f9827/mdac28sdk.msi",
+            "size": "15454208",
+            "version": "2.80",
+            "datePublished": "7/15/2024 3:27:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The MDAC 2.8 SDK is for developers who are building applications using ADO, OLE DB, and ODBC. It contains updated documentation, headers, libs and typelibs for x86, IA64 and AMD64 platforms, as well as updated sample applications and developer tools.<br />\n<br />\nThe MDAC 2.8 SDK is designed for use with MDAC 2.8, which is also available for download from the Microsoft Download Center.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.80",
+    "detailsSection_file_name": [
+        "mdac28sdk.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>The Windows Installer needs to be installed on the machine.</LI></UL><BR /><b>Note:</b> The MDAC 2.8 SDK is available in English only, but has been tested on the following international operating systems: German, Japanese, Korean, Simpified Chinese, and Traditional Chinese.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "download the MDAC Security Patch MS04-003",
+            "url": "http://go.microsoft.com/?linkid=2352166"
+        },
+        {
+            "title": "developer Resources for Data Access",
+            "url": "http://go.microsoft.com/?linkid=664633"
+        },
+        {
+            "title": "data Access Newsgroups",
+            "url": "http://go.microsoft.com/?linkid=664634"
+        },
+        {
+            "title": "download MDAC 2.8",
+            "url": "http://go.microsoft.com/?linkid=664635"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21995",
+    "downloadPreload": true
+}

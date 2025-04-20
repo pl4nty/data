@@ -1,0 +1,292 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2015 Update 0.2 (KB 3075889)",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics CRM 2015 Update 0.2. This is a tested, cumulative set of updates for Microsoft Dynamics CRM 2015. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Mui-KB3075889-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Mui-KB3075889-ENU-Amd64.exe",
+            "size": "58948776",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Router-KB3075889-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Router-KB3075889-ENU-Amd64.exe",
+            "size": "19572264",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Mui-KB3075889-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Mui-KB3075889-ENU-I386.exe",
+            "size": "46020032",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Srs-KB3075889-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Srs-KB3075889-ENU-Amd64.exe",
+            "size": "24101016",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Server-KB3075889-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Server-KB3075889-ENU-Amd64.exe",
+            "size": "118140352",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Tools-KB3075889-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Tools-KB3075889-ENU-amd64.exe",
+            "size": "1831112",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Router-KB3075889-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/f/5/2/f525da1e-4cc7-4eae-84bc-41049fdc5e86/CRM2015-Router-KB3075889-ENU-I386.exe",
+            "size": "19425032",
+            "version": "07.0.0002.0053",
+            "datePublished": "6/13/2024 12:50:04 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Microsoft has released Microsoft Dynamics CRM 2015 Server Update 0.2, Microsoft Dynamics CRM 2015 Report Authoring Extension Update 0.2, Microsoft Dynamics CRM 2015 Language Pack Update 0.2, and Microsoft Dynamics CRM 2015 Email Router Update 0.2.<br />\n<br />\nFor more information about this release, see Microsoft Knowledge Base article 3075889:<br /><br /><a HREF=\"http://support.microsoft.com/kb/3075889\">Microsoft Dynamics CRM 2015 Update 0.2 is available</a> <br /><br />\r\n\nTo maintain parity between the application components of Microsoft Dynamics CRM 2015, this update includes packages for Microsoft Dynamics CRM Server, Microsoft Dynamics CRM 2015 Report Authoring Extension,  Microsoft Dynamics CRM Language Packs, and Microsoft Dynamics CRM Email Router. <br />\n<br />\r\nNotice that this release doesn't include an update for Microsoft Dynamics CRM for Outlook. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3075889",
+        "name": "KB3075889"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "07.0.0002.0053",
+    "detailsSection_file_name": [
+        "CRM2015-Mui-KB3075889-ENU-Amd64.exe",
+        "CRM2015-Router-KB3075889-ENU-Amd64.exe",
+        "CRM2015-Mui-KB3075889-ENU-I386.exe",
+        "CRM2015-Srs-KB3075889-ENU-Amd64.exe",
+        "CRM2015-Server-KB3075889-ENU-Amd64.exe",
+        "CRM2015-Tools-KB3075889-ENU-amd64.exe",
+        "CRM2015-Router-KB3075889-ENU-I386.exe"
+    ],
+    "detailsSection_file_size": [
+        "56.2 MB",
+        "18.7 MB",
+        "43.9 MB",
+        "23.0 MB",
+        "112.7 MB",
+        "1.7 MB",
+        "18.5 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<b>Prerequisites:</b>\n<br />\n<ul><li>This update must be installed on a computer that is running Microsoft Dynamics CRM 2015.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click Download, and then select the file you want to download from the list.<br /><br />\n<b>Important:</b> The language pack must be installed before you can apply the update for that language pack. Download and install a language pack at <a HREF=\"http://www.microsoft.com/en-US/download/details.aspx?id=45014\">Microsoft Dynamics CRM 2015 Language Packs</a>. <br /><br />\n\n<br />\n\nTo install this update, do one of the following:<br />\n<ul><li>To start the installation immediately, click Run.</li>\n<li>To save the download to your computer for installation later, click Save. </li>\n<li>To cancel the download, click Cancel.</li></ul>",
+    "additionalInformationSection": "\n<b>Hotfixes and updates that you have to manually enable or configure</b><br />\n<br />\nThis Microsoft Dynamics CRM 2015 update may contain hotfixes and updates that have to be manually enabled or configured. To enable or configure these hotfixes on the server that is running Microsoft Dynamics CRM 2015, see the \"Hotfixes and updates that you must enable or configure manually\" section of the following Microsoft Knowledge Base article: <br />\n<br /><a HREF=\"http://support.microsoft.com/kb/3075889\">Microsoft Dynamics CRM 2015 Update 0.2 is available (3075889)</a>\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49550",
+    "downloadPreload": true
+}

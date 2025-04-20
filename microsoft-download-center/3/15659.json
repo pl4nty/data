@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Emre Kiciman on AjaxView",
+    "downloadDescription": "Carl and Richard talk to Emre Kiciman about AjaxView, a project from Microsoft Research to analyze the performance of web applications from the client side.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080313EKiciman.zip",
+            "url": "https://download.microsoft.com/download/7/e/1/7e14e6ac-7dda-4c39-ade3-ffedbce7b6a6/20080313EKiciman.zip",
+            "size": "39304689",
+            "version": "1.0",
+            "datePublished": "12/15/2023 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Emre Kiciman is a researcher in the Internet Services Research Center (ISRC) at Microsoft Research, Redmond, where his interests are broadly in the area of large-scale Internet services, their operations and their end-to-end reliability. Often, his work focuses on monitoring and machine learning analysis of system behavior to improve reliability and performance. Most recently, his research has focused on web applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080313EKiciman.zip"
+    ],
+    "detailsSection_file_size": [
+        "37.5 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15659",
+    "downloadPreload": true
+}

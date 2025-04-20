@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 Customer Engagement Portals Source Code",
+    "downloadDescription": "Self-hosted Portals Source code for Dynamics 365 Customer Engagement",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Self-hosted_Installation_Guide_for_Portals.pdf",
+            "url": "https://download.microsoft.com/download/5/6/7/56753a0a-2f40-4f9c-8222-31e8355ec786/Self-hosted_Installation_Guide_for_Portals.pdf",
+            "size": "1859567",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:43:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamics365PortalsSource.exe",
+            "url": "https://download.microsoft.com/download/5/6/7/56753a0a-2f40-4f9c-8222-31e8355ec786/MicrosoftDynamics365PortalsSource.exe",
+            "size": "25253376",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:43:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamics365PortalsSolutions.exe",
+            "url": "https://download.microsoft.com/download/5/6/7/56753a0a-2f40-4f9c-8222-31e8355ec786/MicrosoftDynamics365PortalsSolutions.exe",
+            "size": "835552896",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:43:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the Dynamics 365 Customer Engagement Portals Source Code which will allow you to customize portal as per your requirements and to deploy it to Dynamics 365 (on-premises) as well as Dynamics 365 (online). It is compatible with Dynamics 365 (online and on-premises) versions 8.1 and later. The download consists of the following files:\r\n<ul>\r\n<li><i>MicrosoftDynamics365PortalsSolutions.exe</i>: The solution files. </li>\r\n<li><i>MicrosoftDynamics365PortalsSource.exe</i>: The source code. </li>\r\n<li><i>Self-hosted_Installation_Guide_for_Portals</i>: The deployment instructions for the source code.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Self-hosted_Installation_Guide_for_Portals.pdf",
+        "MicrosoftDynamics365PortalsSource.exe",
+        "MicrosoftDynamics365PortalsSolutions.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "24.1 MB",
+        "796.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For a complete listing of the requirements for this software, please view the Self-hosted Installation Guide included.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>.\r\nIf the <b>File Download</b> dialog box appears, do one of the following:\r\n<ul><li>To start the download immediately, click <b>Open</b>. </li>\r\n<li>To copy the download to your computer to view later, click <b>Save</b>. </li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55789",
+    "downloadPreload": true
+}

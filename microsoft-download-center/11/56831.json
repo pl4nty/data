@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 5 for System Center 2016 Service Manager",
+    "downloadDescription": "Update Rollup 5 for System Center 2016 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4093685_amd64_7.5.7487.130.exe",
+            "url": "https://download.microsoft.com/download/e/1/a/e1a0c299-1254-427a-88a5-5a6a6b5955ff/SCSM2016_CU_KB4093685_amd64_7.5.7487.130.exe",
+            "size": "72173304",
+            "version": "7.5.7487.130",
+            "datePublished": "7/15/2024 4:51:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4093685_i386_7.5.7487.130.exe",
+            "url": "https://download.microsoft.com/download/e/1/a/e1a0c299-1254-427a-88a5-5a6a6b5955ff/SCSM2016_CU_KB4093685_i386_7.5.7487.130.exe",
+            "size": "71863536",
+            "version": "7.5.7487.130",
+            "datePublished": "7/15/2024 4:51:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n  <br />\r\nThis article describes the bug fixes that are included in this Update Rollup.<br />\r\n  <br />\r\n<b><u>Issues that are fixed in this Update Rollup-</u></b><br />\r\n <ul>\r\n<li> System Center Operations Manager (SCOM) Console and System Center Service Manager (SCSM) Console or PowerShell components can now coexist on the same server. Note that <a href=\"https://support.microsoft.com/help/4090987\">Update Rollup 5</a>for System Center 2016 Operations Manager must also be installed to resolve this issue.</li>\r\n<li> The date and time format in some of the views is made to be consistent with the settings on the local machine</li>\r\n<li> SCSM Console is fixed to release the memory used as soon as the respective window (UI) is closed</li>\r\n<li> Console crashes (non en-us locale) that occur when importing a connector as a CSV file are fixed</li>\r\n<li> Console crashes that occur when it is brought back into focus after it is left out of focus for some time are fixed</li>\r\n<li> Introduced indexes to make the workflow status view load faster</li>\r\n<li> DW Cube processing is made faster (query enhancement) and thereby preventing stale reports</li>\r\n<li> DateDim tables in DWDataMart are now extended till 12/31/2050 </li>\r\n<li> TargetWarningDate in Service Level Objects (SLO) is now fixed to take into consideration the working hours and days defined in the associated calendar</li>\r\n<li> While creating requests with files as attachments in Self Service Portal erroneous failure messages were generated when the requests were successfully generated, this has been fixed</li>\r\n<li> For synchronizing the Active Directory (AD) connector with a specific Domain Controller, users can now specify the Domain Controller in the LDAP query of the Active Directory (AD) connector</li>\r\n\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.7487.130",
+    "detailsSection_file_name": [
+        "SCSM2016_CU_KB4093685_amd64_7.5.7487.130.exe",
+        "SCSM2016_CU_KB4093685_i386_7.5.7487.130.exe"
+    ],
+    "detailsSection_file_size": [
+        "68.8 MB",
+        "68.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Service Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4093685\">KB4093685</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56831",
+    "downloadPreload": true
+}

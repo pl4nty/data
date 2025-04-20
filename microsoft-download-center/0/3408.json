@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Databases That Support SharePoint 2010 Products",
+    "downloadDescription": "Describes the Microsoft SQL Server databases on which SharePoint 2010 Products run.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OIT2010_Model_Databases.vsd",
+            "url": "https://download.microsoft.com/download/4/1/7/4178f3b2-664a-43dc-a12c-7ec4ca65b8b2/OIT2010_Model_Databases.vsd",
+            "size": "1501696",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server databases are integral to Microsoft SharePoint 2010 Products. The databases used\r\nin a specific environment are determined by the product, version, edition, and features that are running. Database\r\nsize, and the edition of SQL Server that you run will be determined by the capacity and feature requirements of your\r\nenvironment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OIT2010_Model_Databases.vsd"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. </li><li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a></li><li>To view the XPS version of the model, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3408",
+    "downloadPreload": true
+}

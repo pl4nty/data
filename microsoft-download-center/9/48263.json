@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Team Foundation Server PreUpgrade Tool 2015",
+    "downloadDescription": "TFS tool used to help reduce downtime when upgrading to TFS 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TfsPreupgrade.zip",
+            "url": "https://download.microsoft.com/download/0/5/5/055f18bb-d17b-4b36-9f89-025f88fb4ae1/TfsPreupgrade.zip",
+            "size": "28063170",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:46:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "README.txt",
+            "url": "https://download.microsoft.com/download/0/5/5/055f18bb-d17b-4b36-9f89-025f88fb4ae1/README.txt",
+            "size": "109",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:46:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Upgrading to Team Foundation Server 2015 can take a significant amount of time depending on the size of your database. Team Foundation Server has to be offline while the databases are being upgraded. TfsPreUpgrade.exe can be used to do the most expensive parts of the work to upgrade to Team Foundation Server 2015 while your Team Foundation Server 2013 deployment is still online, greatly shortening your offline time. We recommend running this tool for collection databases that exceed 1 TB in size. \r\n<br/>\r\n<br/>\r\n11/25/2015 Update: New version of TfsPreUpgrade posted which includes a fix for a performance issue related to pre-upgrading one of the TFS Build tables. Both the original version of TfsPreUpgrade.exe and this version are compatible with Team Foundation Server 2015 RTM and Team Foundation Server 2015 Update 1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "TfsPreupgrade.zip",
+        "README.txt"
+    ],
+    "detailsSection_file_size": [
+        "26.8 MB",
+        "109 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Team Foundation Server deployments which:\r\n<br/>\r\n<ul>\r\n<li> Are currently on Team Foundation Server Update 4 or Team Foundation Server Update 5. </li>\r\n<li> Have their relevant collection databases on an Enterprise edition of SQL Server. </li>\r\n<li> Have their relevant collection databases on either SQL Server 2012 SP1 (or greater) or SQL Server 2014 CU3 (or greater). </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download TfsPreUpgrade.exe to a machine from which you can access the collection databases. </li>\r\n<li> Unzip it to a local directory. </li>\r\n<li> As a user who is a sysadmin on the SQL Server instance, run TfsPreUpgrade on your large (> 1 TB) TFS collection databases. You can run it on any smaller collection databases, but it\u2019s not that helpful since the offline time for databases smaller than 1 TB tends to be short.\r\n<br/>\r\n&thinsp;&thinsp; &thinsp; &thinsp; &thinsp; &thinsp;<b> TfsPreUpgrade.exe Run /TargetDatabaseNames:\"{SQL Instance};{Collection Database Name}\" </b><br/>\r\n&thinsp;&thinsp; &thinsp; &thinsp; &thinsp; &thinsp; You can specify more than one collection database using a comma-separated list of {SQL instance};{collection database name}. <br/>\r\n&thinsp;&thinsp; &thinsp; &thinsp; &thinsp; &thinsp; If you do, each collection database will be prepared in sequential order. If you want to run them in parallel, run theTfsPreUpgrade.exe command once for each collection database.\r\n</li></ol>\r\nTfsPreUpgrade.exe will run for quite some time, depending on the size of the collection database(s) that it is running against. It will report progress along the way so that you can have some idea of how far along it is and how much time might be left. Once TfsPreUpgrade.exe has completed, the triggers that it installs will keep any additional changes made due to the server being online flowing into the migrated tables. As such, there is no need to run it again before performing your offline upgrade to Team Foundation Server 2015. ",
+    "relatedResourcesSection": [
+        {
+            "title": "tfs  PreUpgrade MSDN Documentation",
+            "url": "https://msdn.microsoft.com/en-us/library/vs/alm/tfs/upgrade/pre-upgrade"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48263",
+    "downloadPreload": true
+}

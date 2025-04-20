@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Security Trends in Retail Organizations",
+    "downloadDescription": "Security Trends in Retail Organizations - Key Findings and Recommendations",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Security-Trends-in-Retail-Organizations.pdf",
+            "url": "https://download.microsoft.com/download/f/4/3/f43ce517-84c2-4af6-a032-79fc24d5a6bc/Security-Trends-in-Retail-Organizations.pdf",
+            "size": "311311",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This report identifies security trends in retail organizations and outlines key findings and recommendations. Cloud computing can help improve the security profiles of retail organizations by shifting the burden of assuring safe, secure computing practices to cloud service providers.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Security-Trends-in-Retail-Organizations.pdf"
+    ],
+    "detailsSection_file_size": [
+        "304.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the PDF. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42677",
+    "downloadPreload": true
+}

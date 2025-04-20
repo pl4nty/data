@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Character Outline Geometries Gone Wild",
+    "downloadDescription": "Manipulating character outlines lets you create weird and wonderful text effects. Charles Petzold shows you how to obtain character outline geometries in a Windows 8 application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VBCode_Petzold.DirectXFactor.1213.zip",
+            "url": "https://download.microsoft.com/download/4/a/6/4a63009b-4a09-45e6-9bdb-8353be9ed58a/VBCode_Petzold.DirectXFactor.1213.zip",
+            "size": "357655",
+            "version": "1",
+            "datePublished": "5/15/2024 3:18:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Code_Petzold.DirectXFactor.1213.zip",
+            "url": "https://download.microsoft.com/download/4/a/6/4a63009b-4a09-45e6-9bdb-8353be9ed58a/Code_Petzold.DirectXFactor.1213.zip",
+            "size": "317677",
+            "version": "1",
+            "datePublished": "5/15/2024 3:18:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Manipulating character outlines lets you create weird and wonderful text effects. Charles Petzold shows you how to obtain character outline geometries in a Windows 8 application.\r\n<a href=\"http://msdn.microsoft.com/magazine/dn532210\">Read the article online</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VBCode_Petzold.DirectXFactor.1213.zip",
+        "Code_Petzold.DirectXFactor.1213.zip"
+    ],
+    "detailsSection_file_size": [
+        "349.3 KB",
+        "310.2 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "See article for details",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "See article for details",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Magazine home page",
+            "url": "http://msdn.microsoft.com/magazine/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41202",
+    "downloadPreload": true
+}

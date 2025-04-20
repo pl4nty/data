@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guides: Business Portal Installation",
+    "downloadDescription": "These guides include step-by-step instructions for installing Business Portal 6.0 or 6.1. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BusinessPortalInstallation6_1.pdf",
+            "url": "https://download.microsoft.com/download/6/b/8/6b897b16-5020-4e41-bc21-68fe64b67570/BusinessPortalInstallation6_1.pdf",
+            "size": "1884702",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BusinessPortalInstallation.pdf",
+            "url": "https://download.microsoft.com/download/6/b/8/6b897b16-5020-4e41-bc21-68fe64b67570/BusinessPortalInstallation.pdf",
+            "size": "1475087",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These guides also include maintenance and troubleshooting information and describes how to set up Business Portal for extranet access. Which guide you'll need depends on the version of SharePoint that you're using:\r\n<ul><li><b>BusinessPortalInstallation.pdf</b> - Use this guide if you're running Business Portal 6.0 on SharePoint 2010.</li>\r\n<li><b>BusinessPortalInstallation6_1.pdf</b> - Use this guide if you're running Business Portal 6.1 on SharePoint 2013.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "BusinessPortalInstallation6_1.pdf",
+        "BusinessPortalInstallation.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF files, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to download the file to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38824",
+    "downloadPreload": true
+}

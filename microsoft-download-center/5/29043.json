@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Application Compatibility and API Support for SMB 3.0, CSVFS, and ReFS",
+    "downloadDescription": "Documentation regarding which application compatibility and API support for SMB 3.0, Cluster Shared Volume file system, and Resilient File System. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "File Directory Volume Support.xlsx",
+            "url": "https://download.microsoft.com/download/c/b/3/cb3561dc-6bf6-443d-b5b9-9676acdf7f75/File Directory Volume Support.xlsx",
+            "size": "52136",
+            "version": "August 2012",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Application Compatibility with ReFS.docx",
+            "url": "https://download.microsoft.com/download/c/b/3/cb3561dc-6bf6-443d-b5b9-9676acdf7f75/Application Compatibility with ReFS.docx",
+            "size": "134188",
+            "version": "August 2012",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Application Compatibility with Resilient File System document provides an introduction to Resilient File System (ReFS) and an overview of changes that are relevant to developers interested in ensuring application compatibility with ReFS. The File Directory Volume Support spreadsheet provides documentation for APIs support for SMB 3.0, CSVFS, and ReFS that fall into the following categories: file management functions, directory management functions, volume management functions, security functions, file and directory support codes, volume control code, and memory mapped files.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2012",
+    "detailsSection_file_name": [
+        "File Directory Volume Support.xlsx",
+        "Application Compatibility with ReFS.docx"
+    ],
+    "detailsSection_file_size": [
+        "50.9 KB",
+        "131.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 8 Beta"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29043",
+    "downloadPreload": true
+}

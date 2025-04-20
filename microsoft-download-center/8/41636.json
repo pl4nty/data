@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide:  Creating a Windows Azure AD and Windows Server AD Environment with Federation (SSO)",
+    "downloadDescription": "This document will assist IT professionals, administrators, architects, and developers with in creating a test lab that uses Windows Azure Active Directory and Windows Server AD.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Federated_TLG.docx",
+            "url": "https://download.microsoft.com/download/4/5/a/45a7d968-e4a9-4c86-b28e-66935a46e7eb/Federated_TLG.docx",
+            "size": "1303053",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:20:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document will assist IT professionals, administrators, architects, and developers with in creating a test lab that uses Windows Azure Active Directory and Windows Server AD using AD FS and on-premise authenticaiton.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Federated_TLG.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2\r\nWindows 8.1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41636",
+    "downloadPreload": true
+}

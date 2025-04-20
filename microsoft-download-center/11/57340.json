@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_1808_hotfix",
+    "downloadDescription": "MARS_1808_hotfix",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/a/d/3/ad31d76f-43ad-4e60-97b8-5fce9041740e/MARSAgentInstaller.exe",
+            "size": "41000272",
+            "version": "WIN2K12-R2",
+            "datePublished": "7/15/2024 4:52:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Build Version 9145. Branch Rec_Ber1. Contains hotfix for MARS agent crashes in DataMover.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57340",
+    "downloadPreload": true
+}

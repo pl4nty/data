@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "AsmL for Microsoft .NET",
+    "downloadDescription": "AsmL is an industrial-strength executable specification language. Last published: November 17, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AsmL_for_Microsoft1.NETv2.2.4382.Ext.msi",
+            "url": "https://download.microsoft.com/download/5/5/c/55c2bc06-f82a-41b8-b66b-8ffd00141ff0/AsmL_for_Microsoft1.NETv2.2.4382.Ext.msi",
+            "size": "6758400",
+            "version": "2.2.4382",
+            "datePublished": "6/13/2024 12:58:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "AsmL is an industrial-strength executable specification language. It can be used at any stage of the programming process: design, coding, or testing. It is fully integrated into the Microsoft .NET environment: AsmL models can interoperate with any other .NET assembly, no matter what source language it is written in. AsmL uses XML and Word for literate specifications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2.4382",
+    "detailsSection_file_name": [
+        "AsmL_for_Microsoft1.NETv2.2.4382.Ext.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.4 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52032",
+    "downloadPreload": true
+}

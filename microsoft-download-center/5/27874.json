@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visio 2010 Demo Content Pack",
+    "downloadDescription": "Microsoft Visio demo content pack can be downloaded by partners, customers and enthusiasts to get a good understanding of various compelling capabilities that Visio 2010 has to offer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visio 2010 Demo Content Pack Setup Instructions.pdf",
+            "url": "https://download.microsoft.com/download/4/6/5/465f28e9-986c-41e6-96fb-e312cba48186/Visio 2010 Demo Content Pack Setup Instructions.pdf",
+            "size": "670259",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Visio_Content_Pack_2_0_2.zip",
+            "url": "https://download.microsoft.com/download/4/6/5/465f28e9-986c-41e6-96fb-e312cba48186/Visio_Content_Pack_2_0_2.zip",
+            "size": "474033629",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Whether you\u2019re creating an org chart, network diagram, business process, or a more technical drawing, Visio 2010\u2019s new tools and intuitive interface make it easy to visually bring your dynamic information to life and share with others. Microsoft Visio demo content pack is intended to help partners, customers and enthusiasts gain deeper insight into key Visio use cases. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visio 2010 Demo Content Pack Setup Instructions.pdf",
+        "Visio_Content_Pack_2_0_2.zip"
+    ],
+    "detailsSection_file_size": [
+        "654.5 KB",
+        "452.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Windows Server 2008 R2 (SP1 recommended) with the Hyper-V role enabled.\r\n\u2022 Drive Formatting: NTFS\r\n\u2022 Processor: Intel VT or AMD-V capable\r\n\u2022 RAM: 8 GB or more recommended\r\n\u2022 Hard disk space required for install: 100 GB\r\n\u2022 Hyper V or Virtual machine downloaded from http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=27417 \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "\u2022 Start the 2010 Information Worker Demonstration and Evaluation Virtual Machine (SP1) (Download here)\r\n\u2022 Download and unzip the files\r\n\u2022 Open ISO folder and run the AutoRun.bat\r\n\u2022 Follow the instructions to install the content pack\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27874",
+    "downloadPreload": true
+}

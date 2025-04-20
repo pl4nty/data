@@ -1,0 +1,389 @@
+{
+    "error": "",
+    "downloadTitle": "WHDC White Papers",
+    "downloadDescription": "White papers for driver and hardware developers working with Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mem-mgmt.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/mem-mgmt.doc",
+            "size": "342016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IoCsqArt.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/IoCsqArt.doc",
+            "size": "92160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WLP_FC-Raid.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/WLP_FC-Raid.doc",
+            "size": "70656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "USB-HC_PwrMgmt.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/USB-HC_PwrMgmt.doc",
+            "size": "144384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "synch_table.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/synch_table.doc",
+            "size": "99328",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PCIe_LockedOperations.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/PCIe_LockedOperations.doc",
+            "size": "117248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP_issues.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/MP_issues.doc",
+            "size": "395264",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Locks.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/Locks.doc",
+            "size": "340480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HD-aud_PnP.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/HD-aud_PnP.doc",
+            "size": "191488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RenewUSBprintRequest.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/RenewUSBprintRequest.doc",
+            "size": "46592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HW-FirmwareforHeadlessWindows-v100a.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/HW-FirmwareforHeadlessWindows-v100a.doc",
+            "size": "302592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FilterDriverDeveloperGuide.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/FilterDriverDeveloperGuide.doc",
+            "size": "259072",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MCEVid.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/MCEVid.doc",
+            "size": "2214400",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WLP-HDaudio.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/WLP-HDaudio.doc",
+            "size": "82432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "multipathmpio.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/multipathmpio.doc",
+            "size": "280576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NewUSBprintRequest.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/NewUSBprintRequest.doc",
+            "size": "44032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IRQL_thread.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/IRQL_thread.doc",
+            "size": "288768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DTC-FT_ServerSubmission.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/DTC-FT_ServerSubmission.doc",
+            "size": "76288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "2kuptoXP.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/2kuptoXP.doc",
+            "size": "126976",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "InstallFAQ.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/InstallFAQ.doc",
+            "size": "163328",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DrvTest_BestPrac.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/DrvTest_BestPrac.doc",
+            "size": "810496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Alloc-Alt.xls",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/Alloc-Alt.xls",
+            "size": "27136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dchct.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/dchct.doc",
+            "size": "325632",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LegacyToMiniCheatSheet.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/LegacyToMiniCheatSheet.doc",
+            "size": "49152",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WLP21a_FAQ.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/WLP21a_FAQ.doc",
+            "size": "73728",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VolTable.docx",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/VolTable.docx",
+            "size": "141902",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PCI-Express_Windows.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/PCI-Express_Windows.doc",
+            "size": "163840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HDAudioDdi11.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/HDAudioDdi11.doc",
+            "size": "822272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WDFpreview_BMc.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/WDFpreview_BMc.doc",
+            "size": "130048",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "subsys_perf.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/subsys_perf.doc",
+            "size": "236032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UAA_Overview.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/UAA_Overview.doc",
+            "size": "107520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wmadrv.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/wmadrv.doc",
+            "size": "109056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SerialATA-Hard-Disk_Test-Procedures.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/SerialATA-Hard-Disk_Test-Procedures.doc",
+            "size": "75776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KM-UMGuide.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/KM-UMGuide.doc",
+            "size": "166912",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SetupAPILog.doc",
+            "url": "https://download.microsoft.com/download/e/b/a/eba1050f-a31d-436b-9281-92cdfeae4b45/SetupAPILog.doc",
+            "size": "339456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "White papers, specifications, and other documentation for system designers, driver and hardware developers, and test engineers who are designing and testing products to run with the Microsoft Windows family of operating systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "mem-mgmt.doc",
+        "IoCsqArt.doc",
+        "WLP_FC-Raid.doc",
+        "USB-HC_PwrMgmt.doc",
+        "synch_table.doc",
+        "PCIe_LockedOperations.doc",
+        "MP_issues.doc",
+        "Locks.doc",
+        "HD-aud_PnP.doc",
+        "RenewUSBprintRequest.doc",
+        "HW-FirmwareforHeadlessWindows-v100a.doc",
+        "FilterDriverDeveloperGuide.doc",
+        "MCEVid.doc",
+        "WLP-HDaudio.doc",
+        "multipathmpio.doc",
+        "NewUSBprintRequest.doc",
+        "IRQL_thread.doc",
+        "DTC-FT_ServerSubmission.doc",
+        "2kuptoXP.doc",
+        "InstallFAQ.doc",
+        "DrvTest_BestPrac.doc",
+        "Alloc-Alt.xls",
+        "dchct.doc",
+        "LegacyToMiniCheatSheet.doc",
+        "WLP21a_FAQ.doc",
+        "VolTable.docx",
+        "PCI-Express_Windows.doc",
+        "HDAudioDdi11.doc",
+        "WDFpreview_BMc.doc",
+        "subsys_perf.doc",
+        "UAA_Overview.doc",
+        "wmadrv.doc",
+        "SerialATA-Hard-Disk_Test-Procedures.doc",
+        "KM-UMGuide.doc",
+        "SetupAPILog.doc"
+    ],
+    "detailsSection_file_size": [
+        "334.0 KB",
+        "90.0 KB",
+        "69.0 KB",
+        "141.0 KB",
+        "97.0 KB",
+        "114.5 KB",
+        "386.0 KB",
+        "332.5 KB",
+        "187.0 KB",
+        "45.5 KB",
+        "295.5 KB",
+        "253.0 KB",
+        "2.1 MB",
+        "80.5 KB",
+        "274.0 KB",
+        "43.0 KB",
+        "282.0 KB",
+        "74.5 KB",
+        "124.0 KB",
+        "159.5 KB",
+        "791.5 KB",
+        "26.5 KB",
+        "318.0 KB",
+        "48.0 KB",
+        "72.0 KB",
+        "138.6 KB",
+        "160.0 KB",
+        "803.0 KB",
+        "127.0 KB",
+        "230.5 KB",
+        "105.0 KB",
+        "106.5 KB",
+        "74.0 KB",
+        "163.0 KB",
+        "331.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows 95 / Windows NT 4.0 or later versions<br>\nMicrosoft Word 95 or later versions, or Microsoft Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53425",
+    "downloadPreload": true
+}

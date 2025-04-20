@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2013 Documentation",
+    "downloadDescription": "HIS2013DOCS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Installation_Guide.htm",
+            "url": "https://download.microsoft.com/download/f/1/f/f1fa5e0c-7d86-4779-966d-2a061d69cd91/Installation_Guide.htm",
+            "size": "33670",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:17:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "README.htm",
+            "url": "https://download.microsoft.com/download/f/1/f/f1fa5e0c-7d86-4779-966d-2a061d69cd91/README.htm",
+            "size": "144677",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:17:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Host Integration Server 2013 technologies and tools enable enterprise organizations to integrate existing IBM host systems, programs, messages and data with new Microsoft server applications based on Windows 8, Windows Server 2012, Visual Studio 2012, .NET Framework 4, SQL Server 2012, and BizTalk Server 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "Installation_Guide.htm",
+        "README.htm"
+    ],
+    "detailsSection_file_size": [
+        "32.9 KB",
+        "141.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Windows\u00ae 8.1</li>\r\n<li>Microsoft Windows 8</li>\r\n<li>Microsoft Windows 7 SP1</li>\r\n<li>Microsoft Windows Server\u00ae 2012 R2</li>\r\n<li>Microsoft Windows Server 2012</li>\r\n<li>Microsoft Windows Server 2008 R2 SP1</li>\r\n<li>Virtualization with Hyper-V\u00ae</li>\r\n<li>Virtualization with Windows Azure\u2122</li>\r\n</ul>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>Click the Download button. </li>\r\n<li>Save the file or files to your hard drive. </li>\r\n<li>Click the file to view in your Internet browser.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39951",
+    "downloadPreload": true
+}

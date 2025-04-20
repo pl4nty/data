@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Forefront Security for Exchange Server with Service Pack 1 Readme",
+    "downloadDescription": "Help protect your Exchange server from viruses and other malware.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme.htm",
+            "url": "https://download.microsoft.com/download/8/7/1/871fd54f-4407-4f27-8ce6-fe0811f1269d/readme.htm",
+            "size": "48191",
+            "version": "10.1",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Forefront Security for Exchange Server SP1 integrates multiple scan engines from industry-leading security firms into a comprehensive, layered solution, helping protect your Microsoft Exchange Server messaging environments from viruses, worms, spam, and inappropriate content. <br /><br />This new release provides support for Exchange Server 2007 SP1 and Windows Server 2008, as well as content filtering and manageability enhancements. These enhancements include:<br />\n<UL>\n<LI>Seamless support for organizations running IPv6.</LI><br />\n<LI>Improved content filtering with installable keyword lists that can be used to eliminate email containing profanity in eleven supported languages.</LI><br />\n<LI>Improved integration with Microsoft System Center Operations Manager through new management packs that allow administrators to proactively monitor the state of their Exchange 2007 protection.</LI><br />\n<LI>Increased flexibility for scanning or blocking high compression zip files and RAR archives.</LI>\n</UL>\n<br/><b>Note: </b>Forefront Security for Exchange users who are running Exchange 2007 RTM and wish to upgrade to Exchange 2007 SP1 must first upgrade to Forefront Security for Exchange SP1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "47.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Longhorn (Windows Code Name) ",
+        "Windows Server 2003 x64 editions",
+        "Windows Small Business Server 2003 "
+    ],
+    "installInstructionSection": "Click on the \"Download\" button to begin your download. <br />\nSelect the file for download, and specify a location to Save the file.<br />",
+    "additionalInformationSection": "To read and post feedback on Microsoft Forefront Security for Exchange Server please visit the \n<A href=\"http://forums.microsoft.com/forefront/default.aspx?siteid=41\">Forefront Forums</A>. A Microsoft Passport account is required. <br />",
+    "relatedResourcesSection": [
+        {
+            "title": "download Exchange Server 2007",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79013"
+        },
+        {
+            "title": "forefront Security for Exchange Overview",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79012"
+        },
+        {
+            "title": "microsoft Forefront Client Security",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79019"
+        },
+        {
+            "title": "microsoft Antigen Home",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79014"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "369",
+    "downloadPreload": true
+}

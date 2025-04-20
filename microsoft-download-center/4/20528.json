@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "patterns & practices Security Engineering Explained",
+    "downloadDescription": "Download the patterns & practices Security Engineering approach which describes the specific security-related activities to integrate into your software engineering process.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SecurityEngineeringExplained.pdf",
+            "url": "https://download.microsoft.com/download/a/9/f/a9fb9bb3-140a-44a2-819f-a572d1653a0e/SecurityEngineeringExplained.pdf",
+            "size": "385390",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download describes the patterns & practices Security Engineering approach that can be used to integrate security into your application development life cycle. The Security Engineering approach contains activities for identifying security objectives, applying secure design guidelines, creating threat models, conducting security architecture and design reviews, performing security code reviews, security testing, and conducting security deployment reviews.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SecurityEngineeringExplained.pdf"
+    ],
+    "detailsSection_file_size": [
+        "376.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat 4.0 or later (to read the PDF file)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the download link to download the PDF file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20528",
+    "downloadPreload": true
+}

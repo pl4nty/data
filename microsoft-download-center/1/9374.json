@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration Specification of Additional Restricted-Mode Profiles for MPEG-1 VLD and Combined MPEG-1 and MPEG-2 VLD Video Decoding",
+    "downloadDescription": "Defines extensions to DirectX Video Acceleration (DXVA) to support variable-length decoding (VLD) modes for MPEG-1 and MPEG-2 video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_MPEG1_VLD.xps",
+            "url": "https://download.microsoft.com/download/b/1/7/b172a3c8-56f2-4210-80f1-a97bea9182ed/DXVA_MPEG1_VLD.xps",
+            "size": "464184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DXVA_MPEG1_VLD.pdf",
+            "url": "https://download.microsoft.com/download/b/1/7/b172a3c8-56f2-4210-80f1-a97bea9182ed/DXVA_MPEG1_VLD.pdf",
+            "size": "338575",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Defines extensions to DirectX Video Acceleration (DXVA) to support variable-length decoding (VLD) modes for MPEG-1 and MPEG-2 video.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DXVA_MPEG1_VLD.xps",
+        "DXVA_MPEG1_VLD.pdf"
+    ],
+    "detailsSection_file_size": [
+        "453.3 KB",
+        "330.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9374",
+    "downloadPreload": true
+}

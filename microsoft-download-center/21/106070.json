@@ -1,0 +1,373 @@
+{
+    "error": "",
+    "downloadTitle": "Web Deploy v4.0",
+    "downloadDescription": "The Web Deployment Tool simplifies migration, management and deployment of IIS Web servers, Web applications and Web sites.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "webdeploy_amd64_en-US.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_en-US.msi",
+            "size": "6037504",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_de-DE.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_de-DE.msi",
+            "size": "6103040",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_cs-CZ.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_cs-CZ.msi",
+            "size": "6098944",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_fr-FR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_fr-FR.msi",
+            "size": "6107136",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_es-ES.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_es-ES.msi",
+            "size": "6098944",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_ja-JP.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_ja-JP.msi",
+            "size": "6148096",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_it-IT.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_it-IT.msi",
+            "size": "6103040",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_pt-BR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_pt-BR.msi",
+            "size": "6098944",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_pl-PL.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_pl-PL.msi",
+            "size": "6098944",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_ko-KR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_ko-KR.msi",
+            "size": "6283264",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_ru-RU.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_ru-RU.msi",
+            "size": "6111232",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_zh-TW.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_zh-TW.msi",
+            "size": "6111232",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_zh-CN.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_zh-CN.msi",
+            "size": "6111232",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "webdeploy_amd64_tr-TR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/webdeploy_amd64_tr-TR.msi",
+            "size": "6094848",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_it-IT.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_it-IT.msi",
+            "size": "5820416",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_cs-CZ.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_cs-CZ.msi",
+            "size": "5816320",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_en-US.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_en-US.msi",
+            "size": "5726208",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_de-DE.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_de-DE.msi",
+            "size": "5820416",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_fr-FR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_fr-FR.msi",
+            "size": "5820416",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_es-ES.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_es-ES.msi",
+            "size": "5816320",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_ko-KR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_ko-KR.msi",
+            "size": "5996544",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_ja-JP.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_ja-JP.msi",
+            "size": "5861376",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_ru-RU.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_ru-RU.msi",
+            "size": "5828608",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_pt-BR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_pt-BR.msi",
+            "size": "5816320",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_pl-PL.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_pl-PL.msi",
+            "size": "5816320",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_tr-TR.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_tr-TR.msi",
+            "size": "5812224",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_zh-TW.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_zh-TW.msi",
+            "size": "5828608",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebDeploy_x86_zh-CN.msi",
+            "url": "https://download.microsoft.com/download/b/d/8/bd882ec4-12e0-481a-9b32-0fae8e3c0b78/WebDeploy_x86_zh-CN.msi",
+            "size": "5828608",
+            "version": "10.0.2000",
+            "datePublished": "5/30/2024 6:10:46 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "The Web Deployment Tool simplifies the migration, management and deployment of IIS Web servers. . The Web Deployment Tool also enables administrators and delegated users to use IIS Manager to deploy ASP.NET and PHP applications to an IIS 7.0  and  later servers.\r\n<br/>\r\n<br/>\r\n<b>Synchronize your server farm efficiently</b><br/>\r\nThe Web Deployment Tool allows you to efficiently synchronize sites, applications or servers across your IIS 10.0 server farm by detecting differences between the source and destination content and transferring only those changes which need synchronization. The tool simplifies the synchronization process by automatically determining the configuration, content, databases and certificates to be synchronized for a specific site. In addition to the default behavior, you still have the option to specify additional providers for the synchronization, including COM, GAC and registry settings.\r\n<br/>\r\n<br/>\r\n<b>Package, archive and deploy Web applications more easily</b><br/>\r\nThe Web Deployment Tool enables you to package configuration and content of your installed Web applications and use the packages for storage or redeployment. These packages can be deployed using IIS Manager without requiring administrative privileges.\r\n<br/>\r\n<br/>\r\nFor more information, see the following articles:<br/>\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=258201\">Introduction to Web Deploy </a> </li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=258202\">Installing and Configuring Web Deploy</a> </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.2000",
+    "detailsSection_file_name": [
+        "webdeploy_amd64_en-US.msi",
+        "webdeploy_amd64_de-DE.msi",
+        "webdeploy_amd64_cs-CZ.msi",
+        "webdeploy_amd64_fr-FR.msi",
+        "webdeploy_amd64_es-ES.msi",
+        "webdeploy_amd64_ja-JP.msi",
+        "webdeploy_amd64_it-IT.msi",
+        "webdeploy_amd64_pt-BR.msi",
+        "webdeploy_amd64_pl-PL.msi",
+        "webdeploy_amd64_ko-KR.msi",
+        "webdeploy_amd64_ru-RU.msi",
+        "webdeploy_amd64_zh-TW.msi",
+        "webdeploy_amd64_zh-CN.msi",
+        "webdeploy_amd64_tr-TR.msi",
+        "WebDeploy_x86_it-IT.msi",
+        "WebDeploy_x86_cs-CZ.msi",
+        "WebDeploy_x86_en-US.msi",
+        "WebDeploy_x86_de-DE.msi",
+        "WebDeploy_x86_fr-FR.msi",
+        "WebDeploy_x86_es-ES.msi",
+        "WebDeploy_x86_ko-KR.msi",
+        "WebDeploy_x86_ja-JP.msi",
+        "WebDeploy_x86_ru-RU.msi",
+        "WebDeploy_x86_pt-BR.msi",
+        "WebDeploy_x86_pl-PL.msi",
+        "WebDeploy_x86_tr-TR.msi",
+        "WebDeploy_x86_zh-TW.msi",
+        "WebDeploy_x86_zh-CN.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.9 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "6.0 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.8 MB",
+        "5.6 MB",
+        "5.5 MB",
+        "5.5 MB",
+        "5.6 MB",
+        "5.6 MB",
+        "5.5 MB",
+        "5.7 MB",
+        "5.6 MB",
+        "5.6 MB",
+        "5.5 MB",
+        "5.5 MB",
+        "5.5 MB",
+        "5.6 MB",
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "5/30/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The supported platform is 64-bit for this download.</li>\r\n<li>The .NET 4.0 Framework or greater must be installed.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10"
+    ],
+    "installInstructionSection": "To install the Web Deployment Tool:<br/>\r\n<ul>\r\n<li>Download and run the setup file. </li>\r\n<li>Accept the End User License Agreement(s).</li>\r\n<li>Choose whether to install Typical, Custom or Complete.</li>\r\n<li>Complete the setup.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106070",
+    "downloadPreload": true
+}

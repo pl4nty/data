@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows, Windows Server, Azure Stack Security Target (21H2 et al)",
+    "downloadDescription": "Microsoft Windows, Windows Server, Azure Stack Security Target (21H2 et al)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows, Windows Server, Azure Stack Security Target (21H2 et al).pdf",
+            "url": "https://download.microsoft.com/download/c/5/9/c59832ff-414b-4f15-8273-d0c349a0b154/Microsoft Windows, Windows Server, Azure Stack Security Target (21H2 et al).pdf",
+            "size": "1993945",
+            "version": "1",
+            "datePublished": "7/15/2024 5:06:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Security Target (21H2 et al) for Microsoft Windows, Windows Server, Azure Stack for Common Criteria",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Windows, Windows Server, Azure Stack Security Target (21H2 et al).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "browser and pdf reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10",
+        "Windows Server 2022",
+        "Windows Server 2019",
+        "Azure Stack HCI"
+    ],
+    "installInstructionSection": "Download and open",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104957",
+    "downloadPreload": true
+}

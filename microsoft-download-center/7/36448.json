@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Office Visio Stencil for Exchange 2013",
+    "downloadDescription": "This stencil contains Exchange 2013 specific icons to help you create visual representations of Microsoft Exchange 2013 deployments, including on-premises, hybrid, and Office 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange 2013 Office Visio Stencil.vss",
+            "url": "https://download.microsoft.com/download/f/a/f/fafd95dd-5ad3-4fb4-9874-5995ae293c46/Exchange 2013 Office Visio Stencil.vss",
+            "size": "2112000",
+            "version": "Jan2013",
+            "datePublished": "7/15/2024 3:33:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Creating visual representations of your on-premises, hybrid and Office 365 architectures, including Microsoft Exchange icons is helpful way to communicate your deployment. This Visio stencil provides icons -- many depicting servers, server roles, services, and applications -- that you can use in architecture diagrams, charts, and posters. These icons are primarily centered around on-premise deployments of Microsoft Exchange Server 2013, as well as hybrid Office 365 deployments of Exchange 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jan2013",
+    "detailsSection_file_name": [
+        "Exchange 2013 Office Visio Stencil.vss"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following Office applications: Microsoft Office Visio 2003 or later. The file is a Microsoft Visio stencil. Users who don\u2019t have Microsoft Visio can view this document using the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=205698\">Visio 2010: Visio Viewer</a>.\r\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36448",
+    "downloadPreload": true
+}

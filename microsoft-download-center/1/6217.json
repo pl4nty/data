@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Project Server 2010 Upgrade Paths",
+    "downloadDescription": "The options for upgrading from Project Server 2003 or 2007 to Project Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Project Server 2010 Upgrade Paths.vsd",
+            "url": "https://download.microsoft.com/download/9/c/4/9c459966-e52a-406c-888c-9bc9eb1a3940/Project Server 2010 Upgrade Paths.vsd",
+            "size": "2302976",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Project Server 2010 Upgrade Paths.pdf",
+            "url": "https://download.microsoft.com/download/9/c/4/9c459966-e52a-406c-888c-9bc9eb1a3940/Project Server 2010 Upgrade Paths.pdf",
+            "size": "881780",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Project Server 2010 Upgrade Paths.xps",
+            "url": "https://download.microsoft.com/download/9/c/4/9c459966-e52a-406c-888c-9bc9eb1a3940/Project Server 2010 Upgrade Paths.xps",
+            "size": "1149896",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster discusses the options you have for upgrading from Project Server 2003 or 2007 to Project Server 2010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Project Server 2010 Upgrade Paths.vsd",
+        "Project Server 2010 Upgrade Paths.pdf",
+        "Project Server 2010 Upgrade Paths.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "861.1 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Visio 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click a <b>download</b> button to copy a file to your computer. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6217",
+    "downloadPreload": true
+}

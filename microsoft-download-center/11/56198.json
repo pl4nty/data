@@ -1,0 +1,317 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Virtual Machine Manager Preview, version 1711 \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-22.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-22.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-4.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-3.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-26.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-26.bin",
+            "size": "354298070",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-12.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-9.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-11.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-20.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-20.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-25.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-25.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-15.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-15.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-24.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-24.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-19.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-19.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-17.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-17.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-10.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-6.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-14.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-14.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-21.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-21.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-13.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD.exe",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD.exe",
+            "size": "551912",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-16.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-16.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-5.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHDEVAL.DOCX",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHDEVAL.DOCX",
+            "size": "62705",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-2.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-7.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-1.bin",
+            "size": "735463936",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-8.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-18.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-18.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCVMM_Preview_1711_VHD-23.bin",
+            "url": "https://download.microsoft.com/download/e/c/2/ec2eb22a-686c-428a-873d-1f345d515621/SCVMM_Preview_1711_VHD-23.bin",
+            "size": "736000000",
+            "version": "Preview",
+            "datePublished": "7/15/2024 4:46:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center Preview 1711 and Windows Server 2016. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center Preview, version 1711 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=eb6244ee-6cb7-47c3-8164-920d1c70cf30\">System Center Data Protection Manager Preview, version 1711 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=1ab6fc70-cff8-46d4-a18a-336b315aeb2e\">System Center Operations Manager Preview, version 1711 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=00a9e377-17c2-4068-8ec6-b3439eed675b\">System Center Orchestrator Preview, version 1711 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=2ce56f5d-ced1-4bb8-a5cc-bd1c5fae419f\">System Center Service Manager Preview, version 1711 \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=90073a38-616e-44b5-a34e-12c91b425948\">System Center Virtual Machine Manager Preview, version 1711 \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Preview",
+    "detailsSection_file_name": [
+        "SCVMM_Preview_1711_VHD-22.bin",
+        "SCVMM_Preview_1711_VHD-4.bin",
+        "SCVMM_Preview_1711_VHD-3.bin",
+        "SCVMM_Preview_1711_VHD-26.bin",
+        "SCVMM_Preview_1711_VHD-12.bin",
+        "SCVMM_Preview_1711_VHD-9.bin",
+        "SCVMM_Preview_1711_VHD-11.bin",
+        "SCVMM_Preview_1711_VHD-20.bin",
+        "SCVMM_Preview_1711_VHD-25.bin",
+        "SCVMM_Preview_1711_VHD-15.bin",
+        "SCVMM_Preview_1711_VHD-24.bin",
+        "SCVMM_Preview_1711_VHD-19.bin",
+        "SCVMM_Preview_1711_VHD-17.bin",
+        "SCVMM_Preview_1711_VHD-10.bin",
+        "SCVMM_Preview_1711_VHD-6.bin",
+        "SCVMM_Preview_1711_VHD-14.bin",
+        "SCVMM_Preview_1711_VHD-21.bin",
+        "SCVMM_Preview_1711_VHD-13.bin",
+        "SCVMM_Preview_1711_VHD.exe",
+        "SCVMM_Preview_1711_VHD-16.bin",
+        "SCVMM_Preview_1711_VHD-5.bin",
+        "SCVMM_Preview_1711_VHDEVAL.DOCX",
+        "SCVMM_Preview_1711_VHD-2.bin",
+        "SCVMM_Preview_1711_VHD-7.bin",
+        "SCVMM_Preview_1711_VHD-1.bin",
+        "SCVMM_Preview_1711_VHD-8.bin",
+        "SCVMM_Preview_1711_VHD-18.bin",
+        "SCVMM_Preview_1711_VHD-23.bin"
+    ],
+    "detailsSection_file_size": [
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "337.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "539.0 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "61.2 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.4 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cSCVMM_Preview_1711_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCVMM_Preview_1711_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56198",
+    "downloadPreload": true
+}

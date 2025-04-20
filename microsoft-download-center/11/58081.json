@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager Authoring Tool 2019",
+    "downloadDescription": "System Center Service Manager Authoring Tool 2019",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM_Auth_Tool_2019.exe",
+            "url": "https://download.microsoft.com/download/e/1/2/e128945f-1770-4990-950b-0eb806e15c13/SCSM_Auth_Tool_2019.exe",
+            "size": "42181088",
+            "version": "2019",
+            "datePublished": "7/15/2024 3:05:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The System Center Service Manager Authoring Tool 2019 is a tool for customization and extension of the built in functionality in System Center Service Manager. This release supports modifying existing process management packs and creating new management packs that define extensions to the Service Manager database for tracking additional information, customizations of forms or new forms, and new workflows. This release is available in 10 languages. \r\n<br/>\r\n\r\nThis release is compatible with System Center Service Manager 2019. It contains the final set of features for this version, including:\r\n<br/>\r\n<ul>\r\n<li>Form customization, supporting an extended library of controls</li>\r\n<li>Creating new simple forms to support custom classes</li>\r\n<li>Class editor for creating and extending classes and relationships in the Service Manager database</li>\r\n<li>Creation of workflows with detailed trigger criteria and extensible library of actions</li>\r\n<li>Management pack support including sealing</li>\r\n<li>Class Browser and Form Browser to easily locate classes and forms regardless of management pack</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2019",
+    "detailsSection_file_name": [
+        "SCSM_Auth_Tool_2019.exe"
+    ],
+    "detailsSection_file_size": [
+        "40.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating Systems</b><br/>\r\nWindows Server 2016, Windows Server 2019, Windows 10\r\n<br/>\r\nSystem Center Service Manager 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Install Microsoft Visual C++ 2012 redistributable before deploying Service Manager Authoring Tool 2019</li>\r\n<li>Install VS 2015 Isoshell from <a href=\"https://aka.ms/VS2015/IsoShell/en-US\">here</a></li>\r\n<li>Install VS 2015 Update 3 patch. Guidance is <a href=\"http://aka.ms/vs/14/docs/2015_update3\">here</a></li>\r\n<li>Go to Microsoft Update and install the security patches issued for VS 2015 Update3</li>\r\n<li>Download the self-extracing package for Service Manager Authoring Tool 2019 and save it locally</li>\r\n<li>Double-click the executable to extract the content</li>\r\n<li>Execute the \"Setup.exe\" in the extracted content, and follow the instructions of setup wizard</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58081",
+    "downloadPreload": true
+}

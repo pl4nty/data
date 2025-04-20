@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Sample Files for Chinese Golden Tax Data Entity Import",
+    "downloadDescription": "Sample Files for Chinese Golden Tax Data Entity Import",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ImportSampleFile.xml",
+            "url": "https://download.microsoft.com/download/0/6/a/06af33e5-ed7a-4c8f-a759-5b3e8dace561/ImportSampleFile.xml",
+            "size": "236",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:27:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bTo practice the Chinese Golden Tax data entity import in Dynamics 365 for Operations, you can use the demo data company CNMF with the two sample files in this d\u200bownload:<br/>\r\n\r\n\u2022 \u200b\u200bImportSampleFile.xml<br/>\r\nThis file is the Chinese Golden Tax data entity composite.<br/>\r\n\r\n\u2022 Tax-Import-to-XML.xslt<br/>\r\nThis file is used as the transformational file mapping.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "ImportSampleFile.xml"
+    ],
+    "detailsSection_file_size": [
+        "236 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102288",
+    "downloadPreload": true
+}

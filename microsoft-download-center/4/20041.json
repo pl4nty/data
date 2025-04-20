@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Stacy Harris Does Home Automation!",
+    "downloadDescription": "Charles Stacy Harris talks about technologies used to automate his home using .NET interfaces. Geek out!",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080731SHarris.zip",
+            "url": "https://download.microsoft.com/download/6/6/a/66a5af8b-73da-46d8-8170-bfcaa832e4f1/20080731SHarris.zip",
+            "size": "40165221",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:12:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Charles Stacy Harris III - Is a Senior Software Architect with Microsoft Services. Stacy has been part of Microsoft's field services organization since 1992. In that time he has developed a wide range of software including device drivers for custom hardware, customer service applications, e-commerce web sites, prototypes for advanced aircraft instrumentation and was even on loan to the Microsoft Cluster Server development team for a short time.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080731SHarris.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.3 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20041",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2013 Custom Code Validation Tool",
+    "downloadDescription": "Microsoft Dynamics CRM 2013 Custom Code Validation Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "customcodevalidationtool.exe",
+            "url": "https://download.microsoft.com/download/3/d/9/3d9e931d-c9ea-4f7d-9742-fb75f35cff18/customcodevalidationtool.exe",
+            "size": "1333272",
+            "version": "2.0.0.1",
+            "datePublished": "7/15/2024 3:29:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To help you prepare for your upgrade to Microsoft Dynamics CRM 2013, we have created the Custom Code Validation Tool for Microsoft Dynamics CRM 2013.  When using JavaScript code in Microsoft Dynamics CRM, it is possible that some code will stop working or cause an error when you upgrade. The Microsoft Dynamics CRM Custom Code Validation Tool helps identify potential problems so that a developer can fix them.\r\n\r\nPlease run this tool on your CRM instance to help identify potential issues with custom JavaScript in JavaScript libraries and HTML web resources. It will detect issues in the custom web resources that will no longer work after the upgrade is completed.  The most common issues that this tool targets are:\r\n<ul><li>CRM v4 client SDK calls</li>\r\n<li>CRM 2007 end points</li>\r\n<li>Common DOM manipulations</li></ul>\r\nRunning this tool before upgrade will enable you to identify issues and fix them prior to your scheduled upgrade so that your upgrade process can run smoothly. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0.1",
+    "detailsSection_file_name": [
+        "customcodevalidationtool.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Prerequisites:</b>\n<br />\n<ul><li>You must use a Microsoft CRM user account with the Import Customizations privilege to install this managed solution. The System Administrator and System Customizer security roles typically have this privilege.</li></ul>\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Click Download to download the CustomCodeValidationTool.exe file. <br />\r\n2. Run the executable and accept the license terms to extract the contents. <br />\r\n3. Select a location on your computer to store the extracted files. <br />\r\n4. When the extraction is complete, navigate to the location on your computer where you extracted the files. <br />\r\n5. Read the Microsoft Dynamics CRM 2013 Custom Code Validation Tool ReadMe.docx file to learn more about the Custom Code Validation tool. <br />\r\n    See the Microsoft Dynamics CRM 2013 Custom Code Validation Tool Setup section for instructions about how to install and use the solution. <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30151",
+    "downloadPreload": true
+}

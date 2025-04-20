@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Visual C++ Compiler November 2012 CTP",
+    "downloadDescription": "This CTP contains a preview of the work in progress to add several new C++11 features to the Visual C++ compiler. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visual C++ Nov 2012 CTP Breaking changes.docx",
+            "url": "https://download.microsoft.com/download/5/1/6/5169aa1e-d7a4-4dc2-a9ae-0a9dfd2601ab/Visual C   Nov 2012 CTP Breaking changes.docx",
+            "size": "20341",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "vc_compilerCTPNov2012.exe",
+            "url": "https://download.microsoft.com/download/5/1/6/5169aa1e-d7a4-4dc2-a9ae-0a9dfd2601ab/vc_compilerCTPNov2012.exe",
+            "size": "11050496",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Visual C++ Compiler November 2012 CTP contains a preview release of the Visual C++ compiler that adds the the following C++11 features to the list of features already supported in Visual Studio 2012: uniform initialization, initializer lists, variadic templates, function template default arguments, delegating constructors, explicit conversion operators and raw strings.\r\n\r\nA tour of these features is available on Channel 9 Core C++ episode 6: http://aka.ms/vc-ctp-tour. More details on this release are available on the Visual C++ Blog: http://aka.ms/vc-ctp-blog",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Visual C++ Nov 2012 CTP Breaking changes.docx",
+        "vc_compilerCTPNov2012.exe"
+    ],
+    "detailsSection_file_size": [
+        "19.9 KB",
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This package requires Visual Studio 2012 preinstalled on the machine. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "After downloading and installing the program, you can launch Visual Studio 2012, load your C++ project and you can switch to the new compilers. We recommend you create a separate project configuration from menu Build > Configuration Manager by duplicating your existing configuration and then follow the steps below:\r\n\r\n1.Open Project Property Pages (Alt+F7 under the Visual C++ mappings or right-click on the project in Solution Explorer)\r\n2.From the \u2018General\u2019 tab, change \u2018Platform toolset\u2019 from \u2018Visual Studio 2012 (v110)\u2019 to \u2018Microsoft Visual C++ Compiler Nov 2012 CTP (v120_CTP_Nov)\u2019 and close the Property Pages\r\n3.Launch a full rebuild of your project\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35515",
+    "downloadPreload": true
+}

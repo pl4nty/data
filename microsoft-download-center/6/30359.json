@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Online Management Shell Preview ",
+    "downloadDescription": "The SharePoint Online Management Shell is a tool that contains a Windows PowerShell Module to manage your SharePoint Online subscription in the Office 365 Preview.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sharepointonlinemanagementshell_English_x64.msi",
+            "url": "https://download.microsoft.com/download/e/8/4/e84d0adc-97a1-4acb-b0fe-e71b07a76d56/sharepointonlinemanagementshell_English_x64.msi",
+            "size": "1060864",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:05:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sharepointonlinemanagementshell_English_x86.msi",
+            "url": "https://download.microsoft.com/download/e/8/4/e84d0adc-97a1-4acb-b0fe-e71b07a76d56/sharepointonlinemanagementshell_English_x86.msi",
+            "size": "995328",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:05:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SharePoint Online Management Shell has a new Windows PowerShell module that lets O365 administrators manage their SharePoint Online subscription using PowerShell. The focus is around site collection management.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sharepointonlinemanagementshell_English_x64.msi",
+        "sharepointonlinemanagementshell_English_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "972.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PowerShell 3.0 is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8 Release Preview",
+        "Windows Server 2008 R2",
+        "Windows Server 2012 Release Candidate"
+    ],
+    "installInstructionSection": "Download and run the file on this page.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30359",
+    "downloadPreload": true
+}

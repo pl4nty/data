@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Time Series Foundation",
+    "downloadDescription": "Time Series Foundation (TSF) is an open, .NET platform for exploring and prototyping new algorithms in time series analysis and forecasting. Last published: January 26, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TSFbeta206.zip",
+            "url": "https://download.microsoft.com/download/1/2/7/12766e32-8a05-48e2-87bf-ad3a3b5b18b7/TSFbeta206.zip",
+            "size": "10380689",
+            "version": "Beta 2.0.6",
+            "datePublished": "5/15/2024 4:10:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Time Series Foundation (TSF) is an open, .NET platform for exploring and prototyping new algorithms in time series analysis and forecasting. TSF is based on state space model methodology that includes all types of exponential smoothing, some autoregressive algorithms, and innovative algorithms for event detection and calendar event impact prediction. TSF relies on Excel charting and presentation APIs by implementing an Excel interop layer. Numerical and graphical results of time series analysis and forecasting can be put in programmatically generated workbooks with the help of this layer. TSF also offers an Excel add-in that exposes a large subset of the platform's functionality through the Excel ribbon UI.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Beta 2.0.6",
+    "detailsSection_file_name": [
+        "TSFbeta206.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.9 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52484",
+    "downloadPreload": true
+}

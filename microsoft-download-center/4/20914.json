@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft XNA Framework Redistributable 4.0",
+    "downloadDescription": "The XNA Framework Redistributable download provides game developers with the XNA Framework run-time libraries they can include with their product for redistribution on the Windows platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "xnafx40_redist.msi",
+            "url": "https://download.microsoft.com/download/a/c/2/ac2c903b-e6e8-42c2-9fd7-bebac362a930/xnafx40_redist.msi",
+            "size": "7054848",
+            "version": "4.0",
+            "datePublished": "7/15/2024 5:02:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The XNA Framework Redistributable provides the necessary runtime components to execute a game on Windows that was developed using Microsoft XNA Game Studio 4.0. This release contains improved functionality as well as new features.  Installation of this runtime is unnecessary on systems with Microsoft XNA Game Studio 4.0 already installed.  The Microsoft Software License Terms for Microsoft XNA Game Studio 4.0 covers the terms under which developers may use the Redistributable. For full details, review the Microsoft XNA Game Studio 4.0 license terms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "xnafx40_redist.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To run XNA Framework games on a computer running a Windows operating system, you need a graphics card that supports, at minimum, Shader Model 1.1 and DirectX 9.0c. We recommend using a graphics card that supports Shader Model 2.0, which is required by some samples and starter kits.  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. Click the Download button.\r\n2. To start the installation immediately, click Run.\r\n3. To save the download to your computer for installation at a later time, click Save.\r\n4. To cancel the installation, click Cancel.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20914",
+    "downloadPreload": true
+}

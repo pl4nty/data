@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Templates (ADMX) for Windows Server 2008",
+    "downloadDescription": "This download details page provides the complete set of Administrative templates (ADMX) for Windows Server 2008. Additionally, there is a separate download that includes the ADMX and ADML files for Group Policy preferences.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "2008ADMX.msi",
+            "url": "https://download.microsoft.com/download/6/e/a/6ea1bfb3-4900-4e65-b52f-6bf8c05ba872/2008ADMX.msi",
+            "size": "12064256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "preferences.msi",
+            "url": "https://download.microsoft.com/download/6/e/a/6ea1bfb3-4900-4e65-b52f-6bf8c05ba872/preferences.msi",
+            "size": "331776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Administrative templates provide Group Policy setting information for the items that appear under Administrative Templates. Group Policy tools use Administrative template files to populate policy settings in the user interface. This allows administrators to manage registry-based policy settings.<br />\n<br />\nAdministrative template files in Windows Server 2008 and Windows Vista are divided into ADMX (language-neutral) and ADML (language-specific) files. ADML files are XML-based ADM language files that are stored in a language-specific folder. By default, the %Systemroot%\\PolicyDefinitions folder on a local computer stores all ADMX files, and ADML files for all languages that are enabled on the computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "2008ADMX.msi",
+        "preferences.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.5 MB",
+        "324.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Windows Vista with Service Pack 1 with Remote Server Administration Tools (RSAT). You can download RSAT from either of the following locations:<br />\n<ul><br />\n<li>Microsoft Remote Server Administration Tools for Windows Vista SP1 32-bit Edition (KB941314) (<a href=\"http://go.microsoft.com/fwlink/?LinkId=115118\">http://go.microsoft.com/fwlink/?LinkId=115118</a>)</li><br />\n<li>Microsoft Remote Server Administration Tools for Windows Vista SP1 64-bit Edition (KB941314) (<a href=\"http://go.microsoft.com/fwlink/LinkId=112367\">http://go.microsoft.com/fwlink/LinkId=112367</a>)</li></ul><br />\n</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\n<li>Double-click the .msi file that corresponds to the Administrative templates you want to install, and then follow the instructions in the wizard to complete the installation.\nBy default, the new ADMX files will be downloaded to the following directory on your local computer: C:\\Program Files\\Microsoft Group Policy\\Windows Server 2008\\PolicyDefinitions. Under the PolicyDefinitions directory, the new ADML files will be downloaded to the appropriate language-specific subdirectories for all 34 languages for which this release is available.</li>\n<li>To ensure that the new ADMX and ADML files are propagated throughout the domain, on the computer on which you downloaded the new ADMX and ADML files, copy the new PolicyDefinitions directory to the appropriate location under SYSVOL on the appropriate domain controller. Doing so will ensure that all language-specific subdirectories are also copied to SYSVOL.\n<br /><br />\n<b>Important</b>: Updates to SYSVOL are replicated to all domain controllers in the domain, which results in increased network traffic and load placed on the domain controllers. Therefore, to minimize the impact of this operation in your domain, we recommend that you schedule the copying of updated ADMX and ADML files to SYSVOL outside core business hours.</li>\n</ol>\n<br />\nFor more information about administering Administrative template policy settings, see the Managing Group Policy ADMX Files Step-by-Step Guide (<a href=\"http://go.microsoft.com/fwlink/?LinkID=60363\">http://go.microsoft.com/fwlink/?LinkId=60363</a>).",
+    "additionalInformationSection": "This download includes the Administrative template released for Windows Server 2008, in the following languages:<br />\n<ul><br />\n<li>bg-BG Bulgarian - Bulgaria</li> <br />\n<li>cs-CZ Czech - Czech Republic</li> <br />\n<li>da-DK Danish - Denmark</li> <br />\n<li>de-DE German - Germany</li> <br />\n<li>el-GR Greek - Greece</li> <br />\n<li>en-US English - United States</li> <br />\n<li>es-ES Spanish - Spain</li> <br />\n<li>et-EE Estonian - Estonia</li> <br />\n<li>fi-FI Finnish - Finland</li> <br />\n<li>fr-FR French - France</li> <br />\n<li>he-IL Hebrew - Israel</li> <br />\n<li>hr-HR Croatian - Croatia</li> <br />\n<li>hu-HU Hungarian - Hungary</li> <br />\n<li>it-IT Italian - Italian</li><br />\n<li>ja-JP Japanese - Japan</li> <br />\n<li>ko-KR Korean - Korea</li> <br />\n<li>lt-LT Lithuanian - Lithuania</li> <br />\n<li>lv-LV Latvian - Latvia</li> <br />\n<li>nb-NO Norwegian (Bokm\u00e5l) - Norway</li> <br />\n<li>nl-NL Dutch - The Netherlands</li> <br />\n<li>pl-PL Polish \u2013 Poland</li><br />\n<li>pt-BR Portuguese - Brazil</li> <br />\n<li>pt-PT Portuguese - Portugal</li> <br />\n<li>ro-RO Romanian - Romania</li> <br />\n<li>ru-RU Russian - Russia</li> <br />\n<li>sk-SK Slovak - Slovakia</li> <br />\n<li>sl-SI Slovenian - Slovenia</li> <br />\n<li>sr-latn-cs Serbian (latin) \u2013 Serbia</li><br />\n<li>sv-SE Swedish - Sweden</li> <br />\n<li>th-TH Thai - Thailand</li> <br />\n<li>uk-UA Ukrainian - Ukraine</li> <br />\n<li>zh-CN Chinese - China</li> <br />\n<li>zh-HK Chinese - Hong Kong SAR</li><br />\n<li>zh-TW Chinese - Taiwan</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "manage Microsoft Windows with Group Policy Preferences",
+            "url": "http://support.microsoft.com/Default.aspx?kbid=943729"
+        },
+        {
+            "title": "group Policy ADMX Syntax Reference Guide",
+            "url": "http://technet2.microsoft.com/windowsserver2008/en/library/1db6fd85-d682-4d7d-9223-6b8dfafddc1c1033.mspx?mfr=true"
+        },
+        {
+            "title": "managing Group Policy ADMX Files Step-by-Step Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=60363"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14355",
+    "downloadPreload": true
+}

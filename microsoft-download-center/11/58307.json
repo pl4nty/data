@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Mixed Reality Spatial Data Packager",
+    "downloadDescription": "Unsupported tool for use in Location Based Entertainment scenarios using Windows Mixed Reality HMD's",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MixedRealitySpatialDataPackager.zip",
+            "url": "https://download.microsoft.com/download/a/1/2/a12b8a90-b3f7-4ed9-a4bb-d59ddcdaa125/MixedRealitySpatialDataPackager.zip",
+            "size": "94966",
+            "version": "18897.1000.19051",
+            "datePublished": "7/15/2024 3:06:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Unsupported tool for use in Location Based Entertainment scenarios using Windows Mixed Reality HMD's",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "18897.1000.19051",
+    "detailsSection_file_name": [
+        "MixedRealitySpatialDataPackager.zip"
+    ],
+    "detailsSection_file_size": [
+        "92.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Details here: https://docs.microsoft.com/en-us/windows/mixed-reality/",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58307",
+    "downloadPreload": true
+}

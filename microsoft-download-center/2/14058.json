@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Whitepaper: Asynchrony in .NET",
+    "downloadDescription": "Get an overview of the new asynchronous features being developed for C#, Visual Basic and the .NET Framework.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "(Whitepaper) Asynchrony in .NET.docx",
+            "url": "https://download.microsoft.com/download/a/e/f/aef28dcd-fadf-452b-9191-98243816d30d/(Whitepaper) Asynchrony in .NET.docx",
+            "size": "58449",
+            "version": "CTP",
+            "datePublished": "7/15/2024 3:11:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Get an overview of the new asynchronous features being developed for C#, Visual Basic and the .NET Framework.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "CTP",
+    "detailsSection_file_name": [
+        "(Whitepaper) Asynchrony in .NET.docx"
+    ],
+    "detailsSection_file_size": [
+        "57.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The Microsoft Word document download requires 58 KB of disk space to download and install. It also requires Microsoft Word or <a href=\"http://go.microsoft.com/fwlink/?LinkID=47975\">Microsoft Word Viewer</a> to view.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download link to start the download.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</li>\r\n</ol> ",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Async CTP Download",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203690"
+        },
+        {
+            "title": "visual Studio Async CTP on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=204842"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14058",
+    "downloadPreload": true
+}

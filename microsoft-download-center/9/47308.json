@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Platform Ready Test Waiver form",
+    "downloadDescription": "Download the Microsoft Platform Ready Test Waiver Form",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Platform_Ready_Test_Waiver_Request_Document.doc",
+            "url": "https://download.microsoft.com/download/4/f/0/4f069ca5-05e8-4b35-8fa3-a1ee36427d75/Microsoft_Platform_Ready_Test_Waiver_Request_Document.doc",
+            "size": "675840",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:47:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Platform Ready Test Tool is designed to help test your applications for compatibility with latest technologies and platforms from Microsoft. Use this tool to achieve testing status in the Microsoft Platform Ready programs.\r\nThe program requirements are designed for most applications and exceptions are sometime necessary to address specific application types or test compliance dependency situations.  In such cases, you may be directed to the exception process, requiring to upload test results and describe in details the situation in the exception and waiver request document. \r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "Microsoft_Platform_Ready_Test_Waiver_Request_Document.doc"
+    ],
+    "detailsSection_file_size": [
+        "660.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8.1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Essentials "
+    ],
+    "installInstructionSection": "Step-by-step instructions are provided in the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47308",
+    "downloadPreload": true
+}

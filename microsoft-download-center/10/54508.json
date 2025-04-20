@@ -1,0 +1,287 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2016 Data Protection Manager \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD.exe",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD.exe",
+            "size": "549032",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-23.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-23.bin",
+            "size": "266294776",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-5.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-5.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-1.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-1.bin",
+            "size": "735467008",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-8.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-8.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-10.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-10.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-12.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-12.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-17.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-17.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-6.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-6.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-22.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-22.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-21.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-21.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-2.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-2.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-19.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-19.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-9.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-9.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-15.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-15.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-16.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-16.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-20.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-20.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-14.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-14.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DPM2016_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/DPM2016_VHDEVAL.docx",
+            "size": "77927",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-4.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-4.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-11.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-11.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-18.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-18.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-7.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-7.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-13.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-13.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2016_SCDPM_VHD-3.bin",
+            "url": "https://download.microsoft.com/download/9/a/4/9a430edd-cddb-433b-b9d6-89e772c2cfba/SC2016_SCDPM_VHD-3.bin",
+            "size": "736000000",
+            "version": "RTM",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center 2016 and Windows Server 2016. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center 2016 components that ship Evaluation VHDs can be found at the following locations:\r\n<ul>\r\n\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=5d4c2490-4101-44fc-b3ae-583a80f3872e\">System Center 2016 Data Protection Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=6c35c568-6a7c-46ba-81f1-0e3a08d82329\">System Center 2016 Operations Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=bb6a6d9c-de72-470f-b85e-a4ee540bc366\">System Center 2016 Orchestrator \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f79c1898-f954-4125-a1ad-b768af854dc4\">System Center 2016 Service Manager \u2013 Evaluation (VHD)</a></li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=1e442566-b8c1-43fc-a8bc-057c7c317863\">System Center 2016 Virtual Machine Manager \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "SC2016_SCDPM_VHD.exe",
+        "SC2016_SCDPM_VHD-23.bin",
+        "SC2016_SCDPM_VHD-5.bin",
+        "SC2016_SCDPM_VHD-1.bin",
+        "SC2016_SCDPM_VHD-8.bin",
+        "SC2016_SCDPM_VHD-10.bin",
+        "SC2016_SCDPM_VHD-12.bin",
+        "SC2016_SCDPM_VHD-17.bin",
+        "SC2016_SCDPM_VHD-6.bin",
+        "SC2016_SCDPM_VHD-22.bin",
+        "SC2016_SCDPM_VHD-21.bin",
+        "SC2016_SCDPM_VHD-2.bin",
+        "SC2016_SCDPM_VHD-19.bin",
+        "SC2016_SCDPM_VHD-9.bin",
+        "SC2016_SCDPM_VHD-15.bin",
+        "SC2016_SCDPM_VHD-16.bin",
+        "SC2016_SCDPM_VHD-20.bin",
+        "SC2016_SCDPM_VHD-14.bin",
+        "DPM2016_VHDEVAL.docx",
+        "SC2016_SCDPM_VHD-4.bin",
+        "SC2016_SCDPM_VHD-11.bin",
+        "SC2016_SCDPM_VHD-18.bin",
+        "SC2016_SCDPM_VHD-7.bin",
+        "SC2016_SCDPM_VHD-13.bin",
+        "SC2016_SCDPM_VHD-3.bin"
+    ],
+    "detailsSection_file_size": [
+        "536.2 KB",
+        "254.0 MB",
+        "701.9 MB",
+        "701.4 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "76.1 KB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB",
+        "701.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft Windows Server 2012R2 SP1 with Hyper-V is required to use this VHD to create a virtual machine.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and the all other \u201c.bin\" files </li>\n<li> Download the <b>\u201cDPM2016_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SC2016_SCDPM_VHD.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54508",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Guide for IT Pros for Microsoft Office Web Apps Beta",
+    "downloadDescription": "Provides information to help IT pros understand an Office Web Apps on-premises solution. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeWebAppsAll.doc",
+            "url": "https://download.microsoft.com/download/1/5/3/15341fba-4c63-4719-b50d-f200c40f863c/OfficeWebAppsAll.doc",
+            "size": "784384",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document supports a preliminary release of Microsoft Office 2010 Beta. The content in the book covers information about how to understand and use Microsoft Office Web Apps Beta.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "OfficeWebAppsAll.doc"
+    ],
+    "detailsSection_file_size": [
+        "766.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4021",
+    "downloadPreload": true
+}

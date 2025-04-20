@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 Document: Reference Guide",
+    "downloadDescription": "This document provides background and reference material for administrators who are deploying or have deployed Microsoft Office Live Communications Server 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LCS_2005_Reference.doc",
+            "url": "https://download.microsoft.com/download/5/9/4/5941c331-2889-49de-a7ad-2ef432fc9e7f/LCS_2005_Reference.doc",
+            "size": "1259008",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:13:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides background and reference material for administrators who are deploying or have deployed Live Communications Server 2005. The following topics are featured:<br />\n<ul><br />\n<li>Active Directory schema extensions</li><br />\n<li>Archiving database structure and schema</li><br />\n<li>Back end database maintenance</li><br />\n<li>BENOTIFY request</li><br />\n<li>Error messages</li><br />\n<li>Flat file logging</li><br />\n<li>Performance counters</li><br />\n<li>Permissions</li><br />\n<li>Proxy registration keys</li><br />\n<li>Server certificate revocation</li><br />\n<li>Message routing diagrams</li><br />\n<li>Additional references</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "LCS_2005_Reference.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download relates to the following Office program:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Communications Server 2005</li>\n</ul></li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>LCS_2005_Reference_Guide.exe</b> program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the document as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>LCS_2005_Reference_Guide.exe</b>.\n<br/>\n<br/>\nTo remove the document, delete the file <b>LCS_2005_Reference_Guide.doc</b>.",
+    "relatedResourcesSection": [
+        {
+            "title": "downloads for Live Communications Server 2005",
+            "url": "http://office.microsoft.com/en-us/officeupdate/CD011516661033.aspx"
+        },
+        {
+            "title": "live Communications Server 2005 on Office Online",
+            "url": "http://office.microsoft.com/en-us/FX010908711033.aspx"
+        },
+        {
+            "title": "more Office downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5024",
+    "downloadPreload": true
+}

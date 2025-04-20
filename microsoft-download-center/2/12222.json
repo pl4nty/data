@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Forefront Identity Manager Certificate Management (FIM CM) Backup and Restore",
+    "downloadDescription": "This document describes the steps for backing up and restoring FIM CM 2010 installations. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_CM_Backup.doc",
+            "url": "https://download.microsoft.com/download/c/3/9/c3928f9a-d506-4188-b9b6-173b05fd0b83/FIM_CM_Backup.doc",
+            "size": "113152",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This topic describes the necessary steps for backing up and restoring the FIM CM data. This document describes the configuration files and databases that must be backed up in order to successfully restore FIM CM service",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FIM_CM_Backup.doc"
+    ],
+    "detailsSection_file_size": [
+        "110.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the document and open in Word or Word Viewer.",
+    "additionalInformationSection": "This document describes the recommended backup schedule for the FIM CM Service. Also, this document covers the important configuration data that must be backed up for the FIM CM Service. This document also walks you through the steps required to restore the service. This document assumes that all data is backed up and restored in the same Active Directory\u00ae forest. Moving data across forests is not supported.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12222",
+    "downloadPreload": true
+}

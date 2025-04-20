@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Securing and Hardening Network Device Enrollment Service for Microsoft Intune and System Center Configuration Manager",
+    "downloadDescription": "This whitepaper describes best practices for securing and hardening NDES to enable the deployment of certificates with Microsoft Intune and System Center Configuration Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Securing and Hardening Network Device Enrollment Service for Microsoft Intune and System Center Configuration Manager.docx",
+            "url": "https://download.microsoft.com/download/8/d/7/8d7fd801-5e2b-4654-9bc7-486f815e31e2/Securing and Hardening Network Device Enrollment Service for Microsoft Intune and System Center Configuration Manager.docx",
+            "size": "861353",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper discusses the architectural and configuration practices to secure a deployment of the Network Device Enrollment Service (NDES). It describes the best practices for designing network security, operating system configuration and service modifications to increase the integrity of issued certificates and minimize security risks. The paper also addresses the new Windows Server 2012 R2 NDES policy module feature and its configuration for Microsoft Intune and System Center Configuration Manager deployments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Securing and Hardening Network Device Enrollment Service for Microsoft Intune and System Center Configuration Manager.docx"
+    ],
+    "detailsSection_file_size": [
+        "841.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word is required to view the whitepaper document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the document and view in Microsoft Word.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46406",
+    "downloadPreload": true
+}

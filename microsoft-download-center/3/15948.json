@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Online for Outlook Installation Instructions (Microsoft Dynamics CRM Online editions)",
+    "downloadDescription": "Download instructions for installing Microsoft Dynamics CRM Online for Outlook.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Dynamics_CRM_Online_for_Outlook.doc",
+            "url": "https://download.microsoft.com/download/2/4/e/24e2e720-c18d-4e6e-8772-f922dbf0e5ae/Microsoft_Dynamics_CRM_Online_for_Outlook.doc",
+            "size": "84992",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:15:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document has installation instructions for Microsoft Dynamics CRM Online for Microsoft Office Outlook (Microsoft Dynamics CRM Online editions).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_CRM_Online_for_Outlook.doc"
+    ],
+    "detailsSection_file_size": [
+        "83.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2003, or later version, or a compatible viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "The download is an Office Word document file. To start the download:\n<ol><br />\n<li>Click <b>Download</b>.</li><br />\n<li>If the File Download dialog box appears, do one of the following:</li><br />\r\n<ul>\n<li>To start the download immediately, click <b>Run</b>. </li><br />\n<li>To copy the download to your computer to view at a later time, click <b>Save</b>. </li><br />\r\n</ul>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM Online for Outlook",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=113479"
+        },
+        {
+            "title": "word Viewer 2003",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=2&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=1ceb5e01-de9f-48c0-8ce2-51633ebf4714&u=http%3a%2f%2fgo.microsoft.com%2ffwlink%2f%3fLinkID%3d105897"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2011 for E-mail Router Installing Guide for use with Microsoft Dynamics CRM ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=18991"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15948",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Forefront UAG DirectAccess with Network Access Protection (NAP)",
+    "downloadDescription": "Create a Test Lab to demonstrate how UAG DirectAccess and NAP work together",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_DemonstrateUAG_DA_NAP.docx",
+            "url": "https://download.microsoft.com/download/d/c/f/dcfdf6dc-de41-409c-8b31-666b8823fec0/TestLabGuide_DemonstrateUAG_DA_NAP.docx",
+            "size": "396987",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows 7 and Windows Server 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Forefront Unified Access Gateway (UAG) 2010 extends the DirectAccess Windows DirectAccess value by adding support for highly available DirectAccess arrays and integrated support for IPv4 intranet resources.  Network Access Protection (NAP) monitors and assesses the health of client computers when they attempt to connect or communicate on a network. NAP with DirectAccess allows you to specify that only DirectAccess clients that meet system health requirements can reach intranet resources. This paper contains step-by-step instructions for extending the Test Lab Guide: Demonstrate UAG DirectAccess to demonstrate UAG DirectAccess with NAP on a simulated Internet, intranet, and home network.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_DemonstrateUAG_DA_NAP.docx"
+    ],
+    "detailsSection_file_size": [
+        "387.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14474",
+    "downloadPreload": true
+}

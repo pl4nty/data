@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "PXE Boot and System Center 2012 Configuration Manager",
+    "downloadDescription": "PXE boot in System Center 2012 Configuration Manager (ConfigMgr 2012) enables administrators to easily access the Windows Preinstallation Environment (WinPE) across the network via the Preboot Execution Environment (PXE). PXE is an industry standard created by Intel that provides pre boot services within the devices firmware which enables devices to download network boot programs to client compute",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PXE and Configuration Manger 2012 R2.pdf",
+            "url": "https://download.microsoft.com/download/a/1/2/a12fe19c-1015-42f0-ad3c-118c20909842/PXE and Configuration Manger 2012 R2.pdf",
+            "size": "1026491",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\n\r\nPXE boot in System Center 2012 Configuration Manager (ConfigMgr 2012) enables administrators to easily access the Windows Preinstallation Environment (WinPE) across the network via the Preboot Execution Environment (PXE). PXE is an industry standard created by Intel that provides pre boot services within the devices firmware which enables devices to download network boot programs to client computers.\r\n\r\nPXE boot issues are one of the biggest call generators for the Configuration Manager Global Business Support (GBS) team which is in part due to the reliance on and interdependencies with networking protocols such as DHCP and TFTP. The whitepaper here contains a detailed description of the PXE booting process in relation to ConfigMgr 2012 and also attempts to provide some deeper insights into the causes and resolutions for some of the more common PXE issues that can occur.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PXE and Configuration Manger 2012 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1002.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft System Center 2012 Configuration Manager, System Center 2012 Configuration Manager SP1 and Microsoft System Center 2012 R2 Configuration Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download</li>\r\n<li>Where you see a company or publisher listed in a security message, make sure the company name is <b>Microsoft Corporation</b>, and then click <b>Continue</b>, or <b>Allow</b>. </li>\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44598",
+    "downloadPreload": true
+}

@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Server 2008 R2 Hyper-V Common Criteria Security Target",
+    "downloadDescription": "Microsoft Windows Server 2008 R2 Hyper-V Common Criteria Security Target",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hyper-V Server 2008 R2 Security Target.pdf",
+            "url": "https://download.microsoft.com/download/f/7/b/f7b1df77-430a-4729-97a2-24a7badb080a/Hyper-V Server 2008 R2 Security Target.pdf",
+            "size": "1122195",
+            "version": "2.6",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is the Security Target for the Common Criteria evaluation of the Microsoft Server 2008 R2 Hyper-V RTM virtualization product. It is conformant to the Common Criteria for Information Technology Security Evaluation Version 3.1 Release 3[CC].\r\n\r\nThe Microsoft Windows Server 2008 R2 Hyper-V Common Criteria Security Target is primarily for IT professionals, security specialists, network architects, computer engineers, and other IT consultants who plan application or infrastructure development and deployments of Windows Server 2008 R2 Hyper-V in an enterprise environment. It is not intended for home users.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.6",
+    "detailsSection_file_name": [
+        "Hyper-V Server 2008 R2 Security Target.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Product: Microsoft Hyper-V Server 2008 R2 (6.1.7600)<br />\r\nLanguage: English<br />\r\nUnderlying processors: Hardware-assisted virtualization.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.<br />\r\n2. Do one of the following:<br />\r\n     a. To read the file immediately, click the Open button.<br />\r\n     b. To copy the file to your computer for later use, click the Save button.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "common Criteria",
+            "url": "http://technet.microsoft.com/en-us/dd229319.aspx"
+        },
+        {
+            "title": "hyper-V Security Guide",
+            "url": "http://technet.microsoft.com/en-us/library/dd569113.aspx"
+        },
+        {
+            "title": "microsoft Security Compliance Manager",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=16776"
+        },
+        {
+            "title": "windows Server 2008 Security Guide",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=17606"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29305",
+    "downloadPreload": true
+}

@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Planning guide for Microsoft SharePoint Foundation 2010 ",
+    "downloadDescription": "Information and guidelines to lead a team through the steps of planning the deployment of SharePoint Foundation 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundPlan.xps",
+            "url": "https://download.microsoft.com/download/5/d/6/5d68a3bd-c35e-4d29-b394-95372ef73def/SharePointFoundPlan.xps",
+            "size": "3453211",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePointFoundPlan.doc",
+            "url": "https://download.microsoft.com/download/5/d/6/5d68a3bd-c35e-4d29-b394-95372ef73def/SharePointFoundPlan.doc",
+            "size": "2617344",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundPlan.pdf",
+            "url": "https://download.microsoft.com/download/5/d/6/5d68a3bd-c35e-4d29-b394-95372ef73def/SharePointFoundPlan.pdf",
+            "size": "2713377",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This book provides information and guidelines to lead a team through the steps of planning the deployment of a solution based on Microsoft SharePoint Foundation 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePointFoundPlan.xps",
+        "SharePointFoundPlan.doc",
+        "SharePointFoundPlan.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB",
+        "2.5 MB",
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the lower right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16261",
+    "downloadPreload": true
+}

@@ -1,0 +1,112 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 R2 Private Cloud Virtualization and Storage Poster and Mini-Posters",
+    "downloadDescription": "Provides a visual reference for understanding key private cloud storage and virtualization technologies in Windows Server 2012 R2. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Storage Spaces and Deduplication Mini Poster.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Storage Spaces and Deduplication Mini Poster.pdf",
+            "size": "253075",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hyper-V and Failover Clustering Mini Poster.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Hyper-V and Failover Clustering Mini Poster.pdf",
+            "size": "214538",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Virtual Hard Disk Sharing Mini Poster.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Virtual Hard Disk Sharing Mini Poster.pdf",
+            "size": "249398",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Understanding Storage Architecture Mini Poster.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Understanding Storage Architecture Mini Poster.pdf",
+            "size": "252401",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Virtual Hard Disk and Cluster Shared Volumes Mini Poster.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Virtual Hard Disk and Cluster Shared Volumes Mini Poster.pdf",
+            "size": "210815",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2012 R2 Private Cloud Virtualization and Storage.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Windows Server 2012 R2 Private Cloud Virtualization and Storage.pdf",
+            "size": "601555",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Scale-Out and SMB Mini Poster.pdf",
+            "url": "https://download.microsoft.com/download/a/a/f/aafb7563-505b-4928-9179-7232734143e6/Scale-Out and SMB Mini Poster.pdf",
+            "size": "254814",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:39:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These posters provide a visual reference for understanding key private cloud storage and virtualization technologies in Windows Server 2012 R2. They focus on understanding storage architecture, virtual hard disks, cluster shared volumes, scale-out file servers, storage spaces, data deduplication, Hyper-V, Failover Clustering, and virtual hard disk sharing. <BR></BR>\r\n<B>Note</B>: There are multiple files available for this download. When you click <B>Download</B>, you will be prompted to select the files you want. The posters include: <BR></BR>\r\nWindows Server 2012 R2 Private Cloud Virtualization and Storage Poster (whole poster) <BR></BR>\r\nMini-posters<BR></BR>\r\n<UL><LI>Virtual Hard Disk and Cluster Shared Volumes Mini Poster</LI>\r\n<LI>Virtual Hard Disk Sharing Mini Poster</LI>\r\n<LI>Understanding Storage Architecture Mini Poster</LI>\r\n<LI>Storage Spaces and Deduplication Mini Poster</LI>\r\n<LI>Scale-Out and SMB Mini Poster</LI>\r\n<LI>Hyper-V and Failover Clustering Mini Poster</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Storage Spaces and Deduplication Mini Poster.pdf",
+        "Hyper-V and Failover Clustering Mini Poster.pdf",
+        "Virtual Hard Disk Sharing Mini Poster.pdf",
+        "Understanding Storage Architecture Mini Poster.pdf",
+        "Virtual Hard Disk and Cluster Shared Volumes Mini Poster.pdf",
+        "Windows Server 2012 R2 Private Cloud Virtualization and Storage.pdf",
+        "Scale-Out and SMB Mini Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "247.1 KB",
+        "209.5 KB",
+        "243.6 KB",
+        "246.5 KB",
+        "205.9 KB",
+        "587.5 KB",
+        "248.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".pdf viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2012 R2 Hyper-V Component Architecture Poster and Hyper-V Mini-Posters",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=40732"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41665",
+    "downloadPreload": true
+}

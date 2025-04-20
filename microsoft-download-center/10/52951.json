@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Project Service Automation Sample Reports",
+    "downloadDescription": "Sample reports and Excel templates for Dynamics CRM PSA",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PSASampleReports.EXE",
+            "url": "https://download.microsoft.com/download/3/4/2/3424e3b9-4700-40ad-b2b0-2e3ca655b14c/PSASampleReports.EXE",
+            "size": "2582016",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sample unmanages solution containing sample SSRS reports and sample Excel templates for Microsoft Dynamics CRM PSA.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "PSASampleReports.EXE"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "CRM online 2016 Spring update, PSA solution",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Expand the file after downloading and follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52951",
+    "downloadPreload": true
+}

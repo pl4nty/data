@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Install SQL Server 2012 Enterprise",
+    "downloadDescription": "This paper contains a brief introduction to SQL Server 2012 Enterprise and step-by-step instructions for installing SQL Server 2012 Enterprise on the APP1 computer in the base configuration test lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tlg-sqlserver2012.pdf",
+            "url": "https://download.microsoft.com/download/8/d/4/8d40106e-c261-4c51-9a3a-e5b402dbfb07/tlg-sqlserver2012.pdf",
+            "size": "397463",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "tlg-sqlserver2012.docx",
+            "url": "https://download.microsoft.com/download/8/d/4/8d40106e-c261-4c51-9a3a-e5b402dbfb07/tlg-sqlserver2012.docx",
+            "size": "105881",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "SQL Server 2012 delivers several breakthrough capabilities that enable your organization to scale database operations with confidence, improve IT and developer efficiency, and enable highly scalable and well managed business intelligence on a self-service basis for your users. This paper explains how to install SQL Server 2012 Enterprise on the APP1 computer in the base configuration test lab.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "tlg-sqlserver2012.pdf",
+        "tlg-sqlserver2012.docx"
+    ],
+    "detailsSection_file_size": [
+        "388.1 KB",
+        "103.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007, Microsoft Word 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29572",
+    "downloadPreload": true
+}

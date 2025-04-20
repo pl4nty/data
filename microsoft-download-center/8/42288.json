@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP Workspace License Terms and Third Party Notices",
+    "downloadDescription": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WorkspaceInstructions.pdf",
+            "url": "https://download.microsoft.com/download/6/7/1/6712ef6e-7577-4714-b3cf-69d6393e64c5/WorkspaceInstructions.pdf",
+            "size": "541168",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:25:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBS (EULA) - Dynamics GP Workspace (Final - 2.13.2014).pdf",
+            "url": "https://download.microsoft.com/download/6/7/1/6712ef6e-7577-4714-b3cf-69d6393e64c5/MBS (EULA) - Dynamics GP Workspace (Final - 2.13.2014).pdf",
+            "size": "399136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:25:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBS (Attribution) - Dynamics GP Workspace (Final - 4 28 2014).pdf",
+            "url": "https://download.microsoft.com/download/6/7/1/6712ef6e-7577-4714-b3cf-69d6393e64c5/MBS (Attribution) - Dynamics GP Workspace (Final - 4 28 2014).pdf",
+            "size": "271902",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:25:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WorkspaceInstructions.pdf",
+        "MBS (EULA) - Dynamics GP Workspace (Final - 2.13.2014).pdf",
+        "MBS (Attribution) - Dynamics GP Workspace (Final - 4 28 2014).pdf"
+    ],
+    "detailsSection_file_size": [
+        "528.5 KB",
+        "389.8 KB",
+        "265.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42288",
+    "downloadPreload": true
+}

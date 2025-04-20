@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Kerberos Configuration Manager for SQL Server\u00ae",
+    "downloadDescription": "Microsoft Kerberos Configuration Manager for SQL Server is a diagnostic tool that helps troubleshoot Kerberos related connectivity issues with SQL Server, SQL Server Reporting Services, and SQL Server Analysis Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KerberosX86MSI.msi",
+            "url": "https://download.microsoft.com/download/3/0/0/30097741-2498-4cd4-a475-eac04df6877a/KerberosX86MSI.msi",
+            "size": "1040384",
+            "version": "v4.2.1",
+            "datePublished": "7/15/2024 3:08:32 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "KerberosX64MSI.msi",
+            "url": "https://download.microsoft.com/download/3/0/0/30097741-2498-4cd4-a475-eac04df6877a/KerberosX64MSI.msi",
+            "size": "1039360",
+            "version": "v4.2.1",
+            "datePublished": "7/15/2024 3:08:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Kerberos authentication provides a highly secure method to authenticate client and server entities (security principals) on a network. To use Kerberos authentication with SQL Server, a Service Principal Name (SPN) must be registered with Active Directory, which plays the role of the Key Distribution Center in a Windows domain. In addition, many customers also enable delegation for multi-tier applications using SQL Server. In such a setup, it may be difficult to troubleshoot the connectivity problems with SQL Server when Kerberos authentication fails.<br />\n<br />\nThe Kerberos Configuration Manager for SQL Server is a diagnostic tool that helps troubleshoot Kerberos related connectivity issues with SQL Server, SQL Server Reporting Services, and SQL Server Analysis Services.   It can perform the following functions:<br />\n<ul>\n<li>Gather information on OS, Microsoft SQL Server instances and Always On Availability Group Listeners installed on a server.</li>\n<li>Report on all SPN and delegation configurations on the server. </li>\n<li>Identify potential problems in SPNs and delegations.</li>\n<li>Fix potential SPN problems.</li>\n</ul>\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v4.2.1",
+    "detailsSection_file_name": [
+        "KerberosX86MSI.msi",
+        "KerberosX64MSI.msi"
+    ],
+    "detailsSection_file_size": [
+        "1016.0 KB",
+        "1015.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported SQL Server versions</b> \r\n<br /><br />\r\nSQL Server 2008 through SQL Server 2019\r\n<br /><br />\r\n<b>Support notes:</b>\n<ul>\r\n<li>SQL Server 2008 and SQL Server 2008 R2 are no longer supported. For more information, refer to <a href=\"https://docs.microsoft.com/sql/sql-server/end-of-support/sql-server-end-of-life-overview\">SQL Server end of support options</a>.<br /></li>\n<li>SQL Server Reporting Services in SharePoint mode is not supported.<br /></li> \r\n<li>For Always On Availability Group Listeners discovery, run this tool from the owner node.<br /></li>\r\n<li>Microsoft Kerberos Configuration Manager for SQL Server requires a user with permission to connect to the WMI service on any machine its connecting to. For more information, refer to <a href=\"https://docs.microsoft.com/windows/win32/wmisdk/securing-a-remote-wmi-connection\">Securing a Remote WMI Connection</a>.<br /></li>\n<li>The following are required on the machine where the Kerberos Configuration Manager for SQL Server is launched: </li>\n<ul>\n<li>.NET framework 4.0 or higher.</li>\n</ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<b>To install:</b>\n<br />\n<ol>\n<li>Download the 32-bit or 64-bit version of the Kerberos Configuration Manager (KCM) installer that matches your computer\u2019s OS architecture.</li>\n<li>Click <b>Open</b> to start the installation immediately or click Save to save the installation .msi file to disk and install it later.</li>\n<li>Accept the license term of this tool.</li>\n<li>Click <b>Next</b> to complete the installation.</li>\n<li>By default, this application is installed under %SystemDrive%:\\Program Files\\Microsoft\\Kerberos Configuration Manager for SQL Server.</li>\n<br />\n</ol>\n<br />\n<b>To launch the KCM tool:</b>\r\n<br />\n<ol>\n<li> After the installation is complete successfully, double click <b>KerberosConfigMgr.exe</b> to launch the application.</li>\n<li> To troubleshoot a connectivity issue with SQL Server, connect to the target computer with a domain user account that has user permission to that computer.</li>\n<li> To troubleshoot a connectivity issue with SQL Reporting Services, connect to the target computer with a domain user account that has administrator level permissions to that computer.</li>\n</ol>\n<br />\n<b>To generate the SPN list from the command line:</b>\r\n<br />\n<ol>\n<li>Open a command line window. </li>\r\n<ul>\n<li>IMPORTANT: To troubleshoot connectivity issue with SQL Reporting Services, launch the command line window as an administrator.</li>\n</ul>\n<li>Switch to the folder where KerberosConfigMgr.exe is located.</li>\n<li>Type KerberosConfigMgr.exe -q -l</li>\n<li>For more command line option, type <b>KerberosConfigMgr.exe -h</b></li>\n</ol>\n<br />\n<b>To save a server\u2019s Kerberos configuration information:</b>\r\n<br />\n<ol>\n<li>Connect to the target Windows machine.</li>\n<li>Click on <b>Save</b> button on the toolbar.</li>\n<li>Specify the location where you want the file to be saved to.  It can be on a local drive or a network share.</li>\n<li>The file will be saved as XML.</li>\n</ol>\n<br />\n<b>To view a server\u2019s Kerberos configuration information from a saved file:</b>\n<br />\n<ol>\n<li>Click on the <b>Load</b> button on the toolbar.</li>\n<li>Open the XML file generated by Kerberos Configuration Manager.</li>\n</ol>\n<br />\n<b>To generate a script to fix an SPN from the command line:</b>\r\n<br />\n<ol>\n<li>Click on the <b>Generate</b> button for the SPN entry.</li>\n<li>The generated script can be used by a user who has privilege to fix the SPN on the server.</li>\n</ol>\n<br />\n<b>To see the log files for the KCM tool:</b>\n<br />\n<ol>\n<li> By default, a log file is generated each time the application is executed, and placed in the user\u2019s application data folder: %APPDATA%\\Microsoft\\KerberosConfigMgr</li>\n</ol>\n<br />\n<b>Options to get help:</b>\r\n<br />\n<ul>\n<li>Hover the mouse cursor over the command for tooltip.</li>\n<li>Run <b>KerberosConfigMgr.exe \u2013h</b> from command line.</li>\n<li>Click the <b>Help</b> button in the toolbar.</li>\n</ul>",
+    "additionalInformationSection": "Kerberos is a complicated subject to comprehend and troubleshoot. The following reading materials provide additional reference information.<br />\n<ul>\n<li><a href=\"https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831553(v=ws.11)\"> Kerberos Authentication Overview</a></li>\n<li><a href=\"https://support.microsoft.com/help/319723\"> How to use Kerberos authentication in SQL Server</a></li>\n<li><a href=\"https://docs.microsoft.com/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections\"> Register a Service Principal Name (SPN) for Kerberos Connections </a></li>\n<li><a href=\"https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc739740(v=ws.10)\"> Delegating authentication</a></li>\n<li><a href=\"http://www.microsoft.com/download/details.aspx?id=4754\"> Troubleshooting Kerberos Delegation</a></li>\n<li><a href=\"https://support.microsoft.com/help/4009936\"> Solving Connectivity errors to SQL Server</a></li>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39046",
+    "downloadPreload": true
+}

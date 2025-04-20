@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2005 Data Mining Add-ins for Microsoft Office 2007",
+    "downloadDescription": "Download SQL Server 2005 Data Mining Add-ins for Office 2007.  This package includes two add-ins for Microsoft Office Excel 2007 (Table Analysis Tools and Data Mining Client) and one add-in for Microsoft Office Visio 2007 (Data Mining Templates).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2005_DMAddin.msi",
+            "url": "https://download.microsoft.com/download/f/a/6/fa688721-1a3f-4f4e-88d0-d68436dd781f/SQLServer2005_DMAddin.msi",
+            "size": "14438912",
+            "version": "9.00.3154",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DMAddins_Office2007_Readme.htm",
+            "url": "https://download.microsoft.com/download/f/a/6/fa688721-1a3f-4f4e-88d0-d68436dd781f/DMAddins_Office2007_Readme.htm",
+            "size": "24738",
+            "version": "9.00.3154",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2005 Data Mining Add-ins for Microsoft Office 2007 (Data Mining Add-ins) allow you take advantage of SQL Server 2005 predictive analytics in Office Excel 2007 and Office Visio 2007. The download includes the following components:<br/><br/>\n<ul>\n  <li><b>Table Analysis Tools for Excel:</b> This add-in provides easy-to-use tasks that leverage SQL Server 2005 Data Mining to perform powerful analytics on your spreadsheet data.</li>\n  <li><b>Data Mining Client for Excel:</b> This add-in allows you to go through the full data mining model development lifecycle within Excel 2007 using either your spreadsheet data or external data accessible through your SQL Server 2005 Analysis Services instance.</li>\n  <li><b>Data Mining Templates for Visio:</b> This add-in allows you to render and share your mining models as annotatable Visio 2007 drawings.</li>\n</ul><br/>\nIf you choose, you can install each of these components separately.<br/><br/>\n<b>Note:</b> If you downloaded and installed this package prior to March 21, you should download it again and follow the steps in the Instructions section on this page to remove the older version and reinstall.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.3154",
+    "detailsSection_file_name": [
+        "SQLServer2005_DMAddin.msi",
+        "DMAddins_Office2007_Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "13.8 MB",
+        "24.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>Microsoft .NET Framework 2.0.</li>\n  <li>If installing the Table Analysis Tools or Data Mining Client for Excel, Microsoft Office 2007 with .NET Programmability Support.<br/>Supported editions of Office 2007 include:</li>\n  <ul>\n    <li>Professional</li>\n    <li>Professional Plus</li>\n    <li>Ultimate</li>\n    <li>Enterprise</li>\n  </ul>\n  <li>If installing the Data Mining Templates for Visio, Microsoft Viso Professional 2007 with .NET Programmability Support.</li>\n  <li>40 MB of available hard disk space.</li>\n  <li><b>Note:</b> If SQL Server 2005 is installed on the computer where you are installing the Data Mining Add-ins, make sure that the version of SQL Server 2005 is a final release version (RTM, SP1, or SP2). The Data Mining Add-ins will not work correctly with Community Technology Preview (CTP) versions of SQL Server 2005 SP2.</li>\n  <li><b>Note:</b> The Data Mining Add-ins require a connection to one of the following versions of SQL Server 2005 Analysis Services:</li>\n  <ul>\n    <li>Enterprise Edition (RTM, SP1 or SP2)</li>\n    <li>Standard Edition (SP2) with <a href=\"http://support.microsoft.com/default.aspx?scid=kb;en-us;933097\">cumulative hotfix package build 3152</a> applied</li>\n  </ul>\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ul>\n  <b>Note:</b> If you have an earlier version of the Data Mining Add-ins installed, you must remove it using Add/Remove Programs in Control Panel before installing the latest version. User settings, such as Connections, will not be removed.<br/><br/>\n  <b>Step 1:</b> Verify that you have Microsoft Office 2007 installed.<br/><br/>\n  <b>Step 2:</b> If you do not already have Microsoft .NET Framework 2.0, download and install <a href = \"http://go.microsoft.com/fwlink/?LinkId=55731\">the 32-bit version of Microsoft .NET Framework 2.0</a>.<br/><br/>\n  <b>Note:</b> If you intend to install  the Table Analysis Tools for Excel or the Data Mining Client for Excel, verify that the .NET Programmability Support component is installed under Microsoft Office Excel by running Microsoft Office 2007 Setup from Add/Remove Programs in Control Panel.  The default install of Microsoft Office Excel includes this component.<br/><br/>\n  <b>Note:</b> If you intend to install the Data Mining Templates for Visio, verify that the .NET Programmability Support component is installed under Microsoft Office Visio by running Microsoft Office Visio 2007 Setup from Add/Remove Programs in Control Panel.  The default install of Microsoft Office Visio includes this component.<br/><br/>\n  <b>Step 3:</b> Download the Data Mining Add-ins by clicking the SQLServer2005_DMAddin.msi link later on this page. To start the installation immediately, click <b>Run</b>. To install at a later time, click <b>Save</b>. The license and documentation are installed with the Data Mining Add-ins.\n</ul><br/>",
+    "additionalInformationSection": "<ul>\n  <li>If you have questions about the Data Mining Add-ins, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=82744\">SQL Server Data Mining Forum on MSDN</a>.</li><br/><br/>\n  <li>Help improve the Data Mining Add-ins by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li><br/><br/>\n  <li>Read the <a href=\"http://go.microsoft.com/fwlink/?LinkId=86356\">SQL Server 2005 Integration with Office 2007 white paper</a> for more detailed product information, including more details on each of the add-ins.</li><br/><br/>\n  <li>Visit  the <a href=\"http://go.microsoft.com/fwlink/?LinkId=86358\">SQL Server Data Mining Add-ins Technologies</a> page for links to video tutorials, webcasts and other resources to help you get started.</li>\n</ul><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=42457"
+        },
+        {
+            "title": "looking for new downloads? Sign up to be notified.",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=74520"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=51634"
+        },
+        {
+            "title": "home page for Microsoft SQL Server 2005 Data Mining",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=82281"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8569",
+    "downloadPreload": true
+}

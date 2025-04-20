@@ -1,0 +1,155 @@
+{
+    "error": "",
+    "downloadTitle": "February 2006 Security and Critical Releases ISO Image",
+    "downloadDescription": "This ISO-9660 CD image file contains all security and critical updates for Windows released on Windows Update on February 14th, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200602-1.iso",
+            "url": "https://download.microsoft.com/download/1/0/0/1001a722-f7f9-49a7-a431-96278bcb8d22/Windows-KB913086-200602-1.iso",
+            "size": "339361792",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This ISO-9660 CD image file contains all security and critical updates for Windows released on Windows Update on February 14th, 2006. This does not contain security updates for other Microsoft products.  This CD image is intended for corporate administrators who manage large multinational organizations, who need to download multiple individual language versions of each security update, and who do not use an automated solution such as WSUS.  Use this image to download multiple updates in all languages at the same time. <br /><br />\n\nCaution: Be sure to check the individual security bulletins at http://www.microsoft.com/technet/security prior to deployment of these updates to ensure that the files have not been updated at a later date.  <br /><br />\n\nThis CD image contains the following updates: <br />\n<B><a href=\"http://support.microsoft.com/kb/910620\">KB910620</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=57064\">(MS06-004)</a></B>\n<UL>\n<LI>IE 5.01 SP4 w/Win2k SP4</LI>\n<LI>IE 5.5 SP2</LI>\n<LI> IE 6.0 Gold</LI>\n</UL>\n<B><a href=\"http://support.microsoft.com/kb/911565\">KB911565</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=59277\">(MS06-005)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows 2000 - 25 languages </LI >\n</UL>\n<B><a href=\"http://support.microsoft.com/kb/911564\">KB911564</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=59278\">(MS06-006)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI> \n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition - 2 languages </LI >\n<LI>Windows 2000 - 25 languages </LI >\n</UL>\n<B><a href=\"http://support.microsoft.com/kb/913446\">KB913446</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=59797\">(MS06-007)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI> \n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition - 2 languages </LI >\n</UL>\n<B><a href=\"http://support.microsoft.com/kb/911927\">KB911927</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=59441\">(MS06-008)</a></B>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI> \n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition - 2 languages </LI >\n<LI>Windows 2000 - 25 languages </LI >\n</UL>\n<B><a href=\"http://support.microsoft.com/kb/901190\">KB901190</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=49512\">(MS06-009)</a></B><br/>\n<UL>\n<LI>Windows Server 2003 (32-bit x86) - 18 languages </LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI> \n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages </LI>\n<LI>Windows XP - 24 languages </LI > \n<LI>Windows XP x64 Edition - 2 languages </LI >\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB901620; KB911565; KB911564; KB913446; KB911927; KB901190",
+        "name": "KB901620; KB911565; KB911564; KB913446; KB911927; KB901190"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS06-004; MS06-005; MS06-006; MS06-007; MS06-008; MS06-009",
+        "name": "MS06-004; MS06-005; MS06-006; MS06-007; MS06-008; MS06-009"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200602-1.iso"
+    ],
+    "detailsSection_file_size": [
+        "323.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 x64 editions",
+        "Windows XP",
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the <B>Download</B> link on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><br />\n<LI>To copy the ISO Image download to your computer to burn a CD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI><br /><LI>Use the directions for your CD burner to create a CD from the ISO Image</LI><br />\n<br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 913086",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13998",
+    "downloadPreload": true
+}

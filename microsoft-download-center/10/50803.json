@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Admin on Behalf of AOBO in CSP",
+    "downloadDescription": "This zipped folder contains various technical documents essential to implementing the foundational elements of CSP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Level 200 - Admin on Behalf of AOBO in CSP.PPTX",
+            "url": "https://download.microsoft.com/download/5/3/e/53e1faf9-7c3a-4440-920d-cb5be4ce2bf7/Level 200 - Admin on Behalf of AOBO in CSP.PPTX",
+            "size": "2967914",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:59:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains various technical documents essential to implementing the foundational elements of CSP. This includes\n\n1. CSP Foundation - AOBO in CSP - A presentation summarizing the Admin-on-behalf-model for CSP - which forms the basis of how CSP partners provide managed services to end customer\n\n2. CSP Foundation - Partner Center and APIs -- A detailed presentation on CSP partner center and CSP partner center APIs (CREST, GRAPH, Usage and Rate card) that provide the tooling required by CSP partner to manage end customer's subscriptions, identity, usage and billing\n\n3. CSP Foundation - Technical Deep dive -  A detailed presentation which talks about Azure in CSP and its foundational technical elements - ARM, partner center APIs, service APIs, billing, hybrid networking, identity and other related technical concepts required to launch offers in market\n\n4. CSP Foundation - Partner center detailed walkthrough - A presentation that provides screenshot by screenshot walkthrough of the CSP partner center\n\n5. Technical guide which provides a step by step overview of all CSP technical integration requirements ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Level 200 - Admin on Behalf of AOBO in CSP.PPTX"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50803",
+    "downloadPreload": true
+}

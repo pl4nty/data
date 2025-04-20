@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Synapse DW  Pool Best Practices",
+    "downloadDescription": "Azure Synapse DW  Pool Best Practices",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure Synapse DW  Pool Best Practices & Field Guidance.pdf",
+            "url": "https://download.microsoft.com/download/e/c/3/ec3fe9b2-f987-4117-af5c-82799f0461ec/Azure Synapse DW  Pool Best Practices & Field Guidance.pdf",
+            "size": "837110",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document covers Best Practices and Configurations we should plan for implementing and \r\nsetting up Azure Synapse Pool / DW.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure Synapse DW  Pool Best Practices & Field Guidance.pdf"
+    ],
+    "detailsSection_file_size": [
+        "817.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103458",
+    "downloadPreload": true
+}

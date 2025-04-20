@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "MSR Abstractive Text Compression Dataset",
+    "downloadDescription": "This dataset contains sentences and short paragraphs with corresponding shorter (compressed) versions. There are up to five compressions for each input text, together with quality judgements of  their meaning preservation and grammaticality. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Release.zip",
+            "url": "https://download.microsoft.com/download/c/c/a/cca10a93-4372-44cb-a2a3-b433adb27276/Release.zip",
+            "size": "18341587",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This dataset contains sentences and short paragraphs with corresponding shorter (compressed) versions. There are up to five compressions for each input text, together with quality judgements of  their meaning preservation and grammaticality. The dataset is derived using source texts from the Open American National Corpus (ww.anc.org) and crowd-sourcing. More details can be found in the included README and the paper: \u201cA dataset and evaluation metrics for abstractive compression of sentences and short paragraphs\u201d [Toutanova, Brockett, Tran, and Amershi, EMNLP 2016].",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Release.zip"
+    ],
+    "detailsSection_file_size": [
+        "17.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X, Linux </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54262",
+    "downloadPreload": true
+}

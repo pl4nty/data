@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Compact Framework 1.0 SP3 Redistributable",
+    "downloadDescription": "The Microsoft\u00ae .NET Compact Framework 1.0 SP3 Redistributable includes everything you need to run .NET Compact Framework applications, including the Common Language Runtime and the .NET Compact Framework class library.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NETCFSetup.msi",
+            "url": "https://download.microsoft.com/download/d/d/5/dd5e5e2b-84ae-4184-ab52-d10539736f88/NETCFSetup.msi",
+            "size": "15157248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae .NET Compact Framework 1.0 SP3 Redistributable includes everything you need to run .NET Compact Framework applications, including the Common Language Runtime and the .NET Compact Framework class library.<BR /><BR /><b>Important:</b> Visual Studio .NET 2003 is required to create .NET Compact Framework-based applications. Follow the Visual Studio .NET 2003 link in the Related Resources section on the right for more information.<BR /><BR /><BR /><br />\nThis package uses ActiveSync to update the device.  Make sure to dock your device before running NETCFSetup.msi.  You can run the ActiveSync setup later by going to your install folder and running NCFSetup.exe once the device is docked.  Those not using ActiveSync can run the CAB files which match the device found in the install folder directly on the device.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "NETCFSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Supported Device Operating Systems:</b> Pocket PC 2000, Pocket PC 2002 and Windows Mobile Software for Pocket PC 2003, Windows CE .NET 4.1 and higher.</LI></UL><BR /><b>Important:</b> This download utilitizes Microsoft\u00ae Windows\u00ae Installer technology. Windows 98 and Windows ME users should install the <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&amp;FamilyID=CEBBACD8-C094-4255-B702-DE3BB768148F\">Microsoft\u00ae Windows\u00ae Installer 2.0</a> before proceeding with this download.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": ".NET Compact Framework 1.0 Service Pack 3 details: <BR /><BR />\n<B>Fixed Issues:</B><br />\n- Transitions between managed and native code can cause memory leaks on ARM platforms.<BR />\n- A NullReferenceException is thrown when a Web Method returns an empty array using the xsi:Nil attribute.<BR />\n- Modifying the SoapClientMessage.ContentType property does not modify the Http requests ContentType header.<BR />\n- Stack corruption can occur on ARM platforms when local variables are created but never used.<BR />\n- Invoking a multicast delegate from a catch handler throws a MissingMethodException on ARM platforms.<BR />\n- Command line arguments containing double byte characters are truncated to a single byte.<BR />\n- An ObjectDisposedException is thrown when a asynchronous web request is aborted before the response is received.<BR />\n- Invoke on a disposed control hangs the application.<BR />\n- Any array containing one or more elements is not sent to the Web Service correctly.<BR />\n- An application may hang when invoking a Web Method that uses multiple XmlElementAttributes on a single argument, member or property.<BR />\n- Memory corruption can occur on devices that have the native security model enabled and both .NET CF V1 SP3 and a pre-release version of .NET CF V2 installed.<BR />\n- Deadlocks can occur when running under severe resource constraints.<BR />\n- Tool Bar's on Windows Mobile 2003 SE no longer lose their images when removed from the form.<BR />\n- An uncatchable ObjectDisposedException is thrown when the server closes the socket connection.<BR />\n- Setting the Minimum and Maximum properties of a progressbar no longer crashes the application.<BR />\n- Unexpected exception while adding an image to an imagelist on an Hx4700 and hx4705.<BR />\n- Data Misalignment occurs on Decimal fields in MIPSIV devices.<BR />\n- Data is missing or loaded incorrectly by DataSet.ReadXml() in some cases.<BR />",
+    "relatedResourcesSection": [
+        {
+            "title": "mobile and Embedded Application Developer Center",
+            "url": "http://go.microsoft.com/?linkid=664374"
+        },
+        {
+            "title": "download Microsoft Windows Installer 2.0",
+            "url": "http://go.microsoft.com/?linkid=664375"
+        },
+        {
+            "title": "order the Microsoft .NET Compact Framework Core Reference",
+            "url": "http://go.microsoft.com/?linkid=664376"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24690",
+    "downloadPreload": true
+}

@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2017 Feature Pack",
+    "downloadDescription": "The Microsoft SQL Server 2017 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBV6_x86.msi",
+            "url": "https://download.microsoft.com/download/c/1/9/c1917410-8976-4ae0-98bf-1104349ea1e6/DB2OLEDBV6_x86.msi",
+            "size": "3145728",
+            "version": "17",
+            "datePublished": "7/15/2024 3:07:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBV6_x64.msi",
+            "url": "https://download.microsoft.com/download/c/1/9/c1917410-8976-4ae0-98bf-1104349ea1e6/DB2OLEDBV6_x64.msi",
+            "size": "4698112",
+            "version": "17",
+            "datePublished": "7/15/2024 3:07:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2017 Feature Pack is a collection of stand-alone packages which provide additional value for Microsoft SQL Server. It includes the latest versions of:<br />\n<ul>\n  <li>Tool and components for Microsoft\u00ae SQL Server 2017</li>\n  <li>Add-on providers for Microsoft SQL Server 2017</li>\n  </ul><br />\n\n<br/>Please reference the Instructions section of this page to learn more about each component.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "17",
+    "detailsSection_file_name": [
+        "DB2OLEDBV6_x86.msi",
+        "DB2OLEDBV6_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "4.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "      <br />\r\n      <b>Note:</b>\r\n      System requirements vary among the install packages included in the Feature Pack.\r\n      <br />\r\n      <b>Note:</b> \r\n      When an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<a name=\"MDS Add-in\"></a>\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=836816\">\r\n    Microsoft\u00ae SQL Server\u00ae Master\r\n    Data Service Add-in for Microsoft Excel\u00ae\r\n  </a>\r\n</b>\r\n<br />\r\n<ul>\r\n  The Master Data Services Add-in for Excel gives multiple users the ability to update master\r\n  data in a familiar tool without compromising the data\u2019s integrity in MDS. From within the\r\n  Add-in, users can publish data to the MDS database with the click of a button. Administrators\r\n  can use the Add-in to create new model objects and load data without ever launching any\r\n  administrative tools, helping to speed deployment. With the Master Data Services Add-in for\r\n  Excel, all master data remains centrally managed in MDS, while the ability to read or update\r\n  the data is distributed to those who need it.<br />\r\n  <br />\r\n  The Master Data Services (MDS) Add-in for Microsoft Excel is a data management tool that\r\n  delivers a multitude of master data management capabilities with ease and efficiency.  Manage\r\n  MDS data within an interface you already know and love - Microsoft Excel.  Leverage existing\r\n  Excel functionality to share your managed lists with others, knowing these lists can be\r\n  secured and monitored with all of the features provided by Master Data Services. <br />\r\n</ul>\r\n<a name=\"Attunity Designer and Service\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  Microsoft\u00ae Change Data Capture Designer and Service for Oracle by Attunity for Microsoft\r\n  SQL Server\u00ae\r\n</b>\r\n<ul>\r\n  Microsoft Change Data Capture Designer and Service for Oracle by Attunity allow you to\r\n  continually copy data from Oracle to SQL Server. This can be useful in both migration and data\r\n  warehouse scenarios by allowing you to both; synchronize critical tables throughout the\r\n  migration timeframe by copying changes made to the Oracle tables into the SQL Server tables as\r\n  well as capture changes from your Oracle database and send them to SQL Server databases to\r\n  keep data warehouses in sync.\r\n  <br />\r\n  <ul>\r\n    <b>Filename X86 and X64 Package</b> (AttunityOraleCdcService.msi)<br />\r\n    <b>Filename X86 and X64 Package</b> (AttunityOraleCdcDesigner.msi)<br />\r\n  </ul>\r\n</ul>\r\n<a name=\"SAP BW\"></a>\r\n<br />\r\n<br />\r\n<b>Microsoft\u00ae Connector for SAP BW for Microsoft SQL Server\u00ae</b>\r\n<ul>\r\n  The Microsoft Connector for SAP BW is a set of managed components for transferring data to or\r\n  from an SAP NetWeaver BW version 7.0 system. The component is designed to be used with SQL\r\n  Server Integration Services. To install the component, run the platform-specific installer for\r\n  x86 or x64 respectively. For more information see the Readme and the installation topic in the\r\n  Help file.\r\n  <br />\r\n  <ul>\r\n    <b>Filename: X86 and x64 Package</b> (SAPBI.msi)<br />\r\n    <br />\r\n  </ul>\r\n</ul>\r\n<a name=\"Analysis Services Client Libraries\"></a>\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=853574\">Microsoft\u00ae Analysis Services Client Libraries </a>\r\n</b>\r\n<ul>\r\n  The Microsoft Analysis Services client libraries encapsulate application programming interfaces (APIs) to authenticate and exchange requests and responses with Microsoft SQL Server Analysis Services 2005 or higher, Microsoft Azure Analysis Services, and Microsoft Power BI. These client libraries also included object models that enables software developers to create client-side applications to manage, administer, and monitor Analysis Services servers and databases.\r\n</ul>\r\n<ul>\r\n  Microsoft Analysis Services client libraries include the following setup packages: <br /> <br />\r\n  <b> Microsoft Analysis Services ADOMD.NET </b>  ADOMD.NET is a Microsoft ADO.NET provider with enhancements for online analytical processing (OLAP) and data mining to access Analysis Services server properties as well as metadata and data stored in Analysis Services databases.\r\n  <br />\r\n  <b> Filename: </b> SQL_AS_ADOMD.msi (x86 and x64 Package)\r\n  <br />\r\n  <b> Note: </b> The English ADOMD.NET setup package installs support for all SQL Server 2017 languages. <br /> <br />\r\n  <b> Microsoft Analysis Services OLE DB Provider (MSOLAP) </b>  MSOLAP is a COM component that implements both the OLE DB specification and the specification\u2019s extensions for online analytical processing (OLAP) and data mining to access Analysis Services server properties as well as metadata and data stored in Analysis Services databases.\r\n  <br />\r\n  <b> Filename: </b> SQL_AS_OLEDB.msi (x86 and x64 Package)\r\n  <br />\r\n  <b> Note: </b> MSOLAP requires Microsoft Core XML Services (MSXML) 6.0. <br /> <br />\r\n  <b> Microsoft Analysis Management Objects (AMO) </b>   AMO is a .NET Framework object model that enables software developers to create client-side applications to manage and administer Analysis Services servers and databases.\r\n  <br />\r\n  <b> Filename: </b> SQL_AS_AMO.msi (x86 and x64 Package)\r\n  <br />\r\n  <b> Note: </b> AMO includes the Tabular Object Model (TOM) libraries.\r\n  <br /> <br />\r\n</ul>\r\n<a name=\"Report Builder\"></a>\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=852609\">\r\n    Microsoft\u00ae SQL Server\u00ae Report\r\n    Builder for Microsoft SQL Server\r\n  </a>\r\n</b>\r\n<br />\r\n<ul>\r\n  Report Builder provides a productive report-authoring environment for IT professionals and\r\n  power users. It supports the full operational reporting capabilities of SQL Server\r\n  Reporting Services. The download provides a stand-alone installer for Report Builder.<br />\r\n</ul>\r\n<a name=\"JDBC\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=841535\">\r\n    Microsoft\u00ae JDBC Driver for\r\n    Microsoft SQL Server\u00ae\r\n  </a>\r\n</b>\r\n<ul>\r\n  The Microsoft JDBC Driver for SQL Server provides access to SQL Server from any Java\r\n  application, application server, or Java-enabled applet. <br/>\r\n</ul>\r\n<a name=\"ODBC\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=852531\">Microsoft\u00ae ODBC Drivers for Microsoft SQL Server\u00ae </a>\r\n</b>\r\n<ul>\r\n  The Microsoft ODBC Drivers for SQL Server provides native connectivity from Windows and Unix\r\n  to Microsoft SQL Server and Microsoft Azure SQL Database.\r\n  <br />\r\n</ul><a name=\"PHP Driver 3.0\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=852539\">\r\n    Microsoft\u00ae Drivers for PHP for\r\n    Microsoft\u00ae SQL Server\u00ae\r\n  </a>\r\n</b>\r\n<ul>\r\n  The Microsoft Drivers for PHP for SQL Server are extensions for PHP 7 and above that allows for the reading\r\n  and writing of SQL Server data from within PHP scripts. The SQLSRV extension provides a\r\n  procedural interface while the PDO_SQLSRV extension implements PDO for accessing data in all\r\n  editions of SQL Server 2005 and later.<br />\r\n  <br />\r\n</ul>\r\n<a name=\"Semantic Full Text Search\"></a>\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=856104\">\r\n    Microsoft\u00ae SQL Server\u00ae\r\n    Semantic Language Statistics\r\n  </a>\r\n</b>\r\n<br />\r\n<ul>\r\n  The Semantic Language Statistics Database is a required component for the Statistical Semantic\r\n  Search feature in Microsoft SQL Server. You can download this database from this page,\r\n  attach it to your SQL Server instance, and register it to use the new Semantic Search\r\n  features. <br />\r\n</ul>\r\n<a name=\"dacframework\"></a>\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=852577\">\r\n    Microsoft\u00ae SQL Server\u00ae Data-Tier\r\n    Application Framework\r\n  </a>\r\n</b>\r\n<i> (located on the SSDT download page) </i>\r\n<br />\r\n<ul>\r\n  The SQL Server Data-tier Application (DAC) framework is a component based on the .NET\r\n  Framework that provides application lifecycle services for database development and\r\n  management. Application lifecycle services include extract, build, deploy, upgrade, import,\r\n  and export for data-tier applications in SQL Azure, and SQL Server.\r\n  <br />Note: Microsoft SQL Server 2016 Data-tier Application Framework requires Microsoft SQL\r\n  Server System CLR Types which is available on this page.<br />\r\n  <br />\r\n</ul>\r\n<a name=\"sqlsysclrtypes\"></a>\r\n<br />\r\n<b>\r\n    Microsoft\u00ae System CLR Types for SQL Server\u00ae\r\n</b>\r\n<ul>\r\n  The SQL Server System CLR Types package contains the components implementing the geometry, \r\ngeography, and hierarchy id types in SQL Server. This component can be installed separately \r\nfrom the server to allow client applications to use these types outside of the server.<br />\r\n<br /> <b> Note: </b> This component also requires <b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">\r\n   Windows Installer 4.5\r\n  </a> </b> <br />\r\n <ul>\r\n    <b>Filename: X86 and x64 Package</b> (SQLSysClrTypes.msi)<br />\r\n    <br />\r\n</ul>\r\n</ul>\r\n\r\n<a name=\"T-SQL Language Service\"></a>\r\n<br />\r\n<br />\r\n<b>Microsoft\u00ae SQL Server\u00ae Transact-SQL Language Service </b>\r\n<ul>\r\n  The SQL Server Transact-SQL Language Service is a component based on the .NET Framework which\r\n  provides parsing validation and IntelliSense services for Transact-SQL for SQL Server.\r\n  <br />\r\n  <ul>\r\n    <b>Filename: X86 and x64 Package</b> (tsqllanguageservice.msi)<br />\r\n    <br />\r\n  </ul>\r\n</ul>\r\n<a name=\"RBS\"></a>\r\n<br />\r\n<br />\r\n<b>Microsoft\u00ae SQL Server\u00ae Remote Blob Store </b>\r\n<ul>\r\n  The SQL Server Remote Blob Store is a method for storing blobs of unstructured data in an\r\n  external Content Addressable data store. The component consists of a client-side DLL that is\r\n  linked into a user application, as well as a set of stored procedures to be installed on SQL\r\n  Server.  Run the self-extracting download package to create an installation folder.  <br />\r\n  <ul>\r\n    <b>Filename: X86 and x64 Package</b> (RBS.msi)<br />\r\n  </ul>\r\n</ul>\r\n<a name=\"SSBEA\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  Microsoft\u00ae SQL Server\u00ae Service Broker External Activator for Microsoft SQL Server\r\n</b>\r\n<ul>\r\n  The Microsoft SQL Server Service Broker External Activator is an extension of the internal\r\n  activation feature in SQL Server that lets you move the logic for receiving and processing\r\n  Service Broker messages from the Database Engine service to an application executable that\r\n  runs outside SQL Server. <br />\r\n  <ul>\r\n    <b>Filename: X86 and x64 Package</b> (SSBEAS.msi)<br />\r\n  </ul>\r\n</ul>\r\n<a name=\"SsisAzureFeaturePack\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=853573\">Microsoft\u00ae Integration Services Feature Pack for Azure\u00ae </a>\r\n</b>\r\n<ul>\r\n  The Microsoft Integration Services Feature Pack for Azure provides tools for using IS to connect to the Azure stack.\r\n  <br />\r\n</ul>\r\n<a name=\"DB2OLEDB v6.0\"></a>\r\n<br />\r\n<br />\r\n<b>Microsoft\u00ae OLEDB Provider for DB2 v6.0 for Microsoft SQL Server\u00ae</b>\r\n<ul>\r\n  The Microsoft OLE DB Provider for DB2 v6.0 offers a set of technologies and tools for\r\n  integrating vital data stored in IBM DB2 databases with new solutions. SQL Server developers\r\n  and administrators can use the data provider with Integration Services, Analysis Services,\r\n  Replication, Reporting Services, and Distributed Query Processor. Read the Installing Data\r\n  Provider section of the product documentation, which is available \r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=241539\"> online</a>.\r\n  <ul>\r\n    <b>Filename: X86 and x64 Package</b> (DB2OLEDB6_x86.msi and DB2OLEDB6_x64.msi)<br />\r\n  </ul>\r\n</ul>\r\n<a name=\"Report Viewer\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=856682\">Microsoft\u00ae Report Viewer control for ASP.NET Web Forms apps </a>\r\n</b>\r\n<ul>\r\n  This Report Viewer control enables you to embed SQL Server Reporting Services paginated reports (*.rdl, *.rdlc) into your ASP.NET Web Forms apps.\r\n  <br />\r\n</ul>\r\n<br />\r\n<b>\r\n  <a href=\"http://go.microsoft.com/fwlink/?LinkID=856683\">Microsoft\u00ae Report Viewer control for Windows Forms apps </a>\r\n</b>\r\n<ul>\r\nThis Report Viewer control enables you to embed SQL Server Reporting Services paginated reports (*.rdl, *.rdlc) into your Windows Forms apps.\r\n  <br />\r\n</ul>",
+    "additionalInformationSection": "- If you have questions about SQL Server 2017, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55992",
+    "downloadPreload": true
+}

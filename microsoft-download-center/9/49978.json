@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6.1 Developer Pack and Language Packs for Windows 7 SP1, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2 SP1, Windows Server 2012 and Windows Server 2012 R2",
+    "downloadDescription": "The Microsoft .NET Framework 4.6.1 Developer Pack installs the .NET Framework 4.6.1, the .NET 4.6.1 Targeting Pack and the .NET 4.6.1 SDK.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP461-DevPack-KB3105179-ENU.exe",
+            "url": "https://download.microsoft.com/download/f/1/d/f1deb8db-d277-4ef9-9f48-3a65d4d8f965/NDP461-DevPack-KB3105179-ENU.exe",
+            "size": "92529544",
+            "version": "4.6.1",
+            "datePublished": "7/15/2024 4:06:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        }
+    ],
+    "detailsSection": "The Microsoft .NET Framework 4.6.1 Developer Pack is a single package that bundles the .NET Framework 4.6.1, the .NET 4.6.1 Targeting Pack and the .NET 4.6.1 SDK. The corresponding language pack for Dev Pack contains the .NET Framework 4.6.1 language pack, .NET 4.6.1 SDK language pack and the Intellisense files. Developers can use this package to install all the different components for .NET 4.6.1 and build applications targeting the .NET Framework 4.6.1 using either Visual Studio 2015, Visual Studio 2013, Visual Studio 2012 or third party IDEs. \n\n<br/><br/>\nThis package installs the following components:\n<ul>\n<li><b>.NET Framework 4.6.1 Developer Pack (NDP461-DevPack-KB3105179-ENU.exe): </b> This package contains the .NET Framework 4.6.1, .NET 4.6.1 Targeting Pack, .NET 4.6.1 SDK and the ENU Intellisense. For ENU machines you only need to install this package and do not need the second package.</li>\n<li><b>.NET Framework 4.6.1 Developer Pack language pack (NDP461-DevPack-KB3105179-(<i>Lang</i>).exe):</b> This package contains the corresponding .NET Framework 4.6.1 language pack, .NET 4.6.1 SDK Language Pack and the language Intellisense for getting localized resources in languages other than English.</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6.1",
+    "detailsSection_file_name": [
+        "NDP461-DevPack-KB3105179-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "88.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating Systems:</b>   \n<ul> \n <li>Windows 7 SP1 (x86 and x64)</li> \n <li>Windows 8 (x86 and x64)</li>  \n <li>Windows 8.1 (x86 and x64)</li>\n <li>Windows 10</li>\n <li>Windows Server 2008 R2 SP1 (x64)</li> \n <li>Windows Server 2012 (x64)</li>\n <li>Windows Server 2012 R2 (x64)</li>\n</ul>\n<b>Minimum Hardware Requirements:</b>\n<ul>  \n<li>1 GHz or faster processor</li>   \n<li>512 MB of RAM</li>     \n<li>2.6 GB of available hard disk space (x86)</li>  \n<li>2.6 GB of available hard disk space (x64)</li> \n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul>On this page, choose the <b>Download</b> button.\n <ul>\n <li>To install the software now, choose the <b>Run</b> button.</li>\n <li>To install the software later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n </ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=690707\"> KB3105179</a> for more information.\n<br/><br/>\nThis version of the .NET Framework runs side-by-side with the .NET Framework 3.5 SP1 and earlier versions, but performs an in-place update for the .NET Framework 4, .NET Framework 4.5, .NET Framework 4.5., .NET Framework 4.5.2 and .NET Framework 4.6.\n\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=671749\">.NET Framework 4.6.1  Readme File</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49978",
+    "downloadPreload": true
+}

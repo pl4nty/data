@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Log Analysis and Tuning Using Analytics and Tuning Studio",
+    "downloadDescription": "This whitepaper discusses using Analytics and Tuning Studio, which is included in Microsoft Office Communications Server 2007 Speech Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TuningWhitePaper.doc",
+            "url": "https://download.microsoft.com/download/1/d/0/1d0727e9-f3d0-4613-a5d8-1c33ef98205e/TuningWhitePaper.doc",
+            "size": "1130496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper discusses using Analytics and Tuning Studio, which is included in Microsoft Office Communications Server 2007 Speech Server. Topics covered include an overview of analysis and tuning scenarios, a summary of trace logging configurations, application development decisions that impact application tuning, and best practices for speech application tuning. This paper also describes how to reduce no-recognitions due to out of grammar utterances, as well as how to perform various session, task, and turn analysis tasks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TuningWhitePaper.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n\t<li>\n\t<b>This download works with the following Office applications:</b>\n\t<br/>\n\t\t<ul>\n\t\t<li>Microsoft Office Word 2007</li>\n\t\t<li>Microsoft Office Word 2003</li>\n\t\t<li>Microsoft Office Word 2002</li>\n\t\t</ul>\n\t</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/><br/>\nSave the file to a directory on your computer.\n<br/><br/>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you save the file, open the document as you typically would.\n<br/><br/>\n<b>To remove this download:</b>\n<br/><br/>\nDelete the file from the directory where you saved it.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office Communications Server 2007 Trial Download",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=103949"
+        },
+        {
+            "title": "microsoft Office Communications Server 2007 Speech Server Release Notes",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=94652"
+        },
+        {
+            "title": "microsoft Office Communications Server 2007 Speech Server Developer Edition",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=70208"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10551",
+    "downloadPreload": true
+}

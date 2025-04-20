@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Project Daytona: Iterative MapReduce on Windows Azure",
+    "downloadDescription": "Microsoft has developed an iterative MapReduce runtime for Windows Azure, code-named Daytona. Last published: November 28, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Daytona-CTP-1.2-refresh.zip",
+            "url": "https://download.microsoft.com/download/7/e/a/7ea50986-69d3-4b75-8b08-c6b02265fd30/Daytona-CTP-1.2-refresh.zip",
+            "size": "12485476",
+            "version": "1.2",
+            "datePublished": "3/15/2024 4:07:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has developed an iterative MapReduce runtime for Windows Azure, code-named Daytona. Project Daytona is designed to support a wide class of data analytics and machine-learning algorithms. It can scale to hundreds of server cores for analysis of distributed data. Project Daytona was developed as part of the eXtreme Computing Group\u2019s Cloud Research Engagement Initiative.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "Daytona-CTP-1.2-refresh.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.9 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52431",
+    "downloadPreload": true
+}

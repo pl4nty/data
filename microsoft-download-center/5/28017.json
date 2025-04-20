@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2008 R2 Service Pack 3",
+    "downloadDescription": "HPC Pack 2008 R2 Service Pack 3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sp3 media integration package.zip",
+            "url": "https://download.microsoft.com/download/d/b/7/db7a011b-241d-4844-937c-740cc71c491f/sp3 media integration package.zip",
+            "size": "749059375",
+            "version": "3.3.3950",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC2008R2-SP3-Update-x86.zip",
+            "url": "https://download.microsoft.com/download/d/b/7/db7a011b-241d-4844-937c-740cc71c491f/HPC2008R2-SP3-Update-x86.zip",
+            "size": "141894552",
+            "version": "3.3.3950",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HPC2008R2-SP3-Update-x64.zip",
+            "url": "https://download.microsoft.com/download/d/b/7/db7a011b-241d-4844-937c-740cc71c491f/HPC2008R2-SP3-Update-x64.zip",
+            "size": "144987020",
+            "version": "3.3.3950",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC2008R2-MonitoringPack-SP3SP4.zip",
+            "url": "https://download.microsoft.com/download/d/b/7/db7a011b-241d-4844-937c-740cc71c491f/HPC2008R2-MonitoringPack-SP3SP4.zip",
+            "size": "335369",
+            "version": "3.3.3950",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This service pack updates the HPC Pack 2008 R2 products listed in the 'System Requirements' section. It provides improved reliability as well as an enhanced feature set including:<br/>\r\n<ul>\r\n<li>The Windows Azure bursting scenarios has reduced the number of ports you have to open in your firewall, using port 443 for most communication</li>\r\n<li>The ability to install the HPC Pack software on a server not dedicated to your cluster (e.g. a team file server) for use in a manner similar to the existing Workstation Node functionality</li></ul>\r\n\r\n<br/>\r\n<br/>For more information on what's new in this release please refer to the documentation at <a href=\"http://technet.microsoft.com/en-us/library/hh536248(WS.10).aspx\">http://technet.microsoft.com/en-us/library/hh536248(WS.10).aspx</a><br/><br/>\r\nIn the 'Downloads' section you will three files:<br/>\r\n<ul><li>HPC2008R2SP3-Update-x64 : Download this .zip file to obtain the updater for use on your head nodes, compute nodes, broker nodes, and x64-based clients and workstation nodes. It also contains the Web Components (REST and Web Portal), Azure VM, and KSP ('soft card') installers necessary to use those features.</li>\r\n<li>HPC2008R2SP3-Update-x86 : This .zip file contains the updated for use on 32-bit clients and workstation nodes. It also contains the KSP ('soft card') installer for 32-bit clients.</li>\r\n<li>SP3 Media Integration Package : For customers who will be doing multiple new cluster installations (setting up brand new head nodes, not just updating existing clusters) you can use this package to update your original ('RTM') installation media to have SP3 integrated from the beginning. (Instead of installing from your RTM DVD, then applying SP1, then applying SP2, then applying SP3.) Please refer to the instructions on the <a href=\"http://blogs.technet.com/b/windowshpc/archive/2011/06/09/creating-a-service-pack-integrated-installation-point.aspx\">HPC team blog</a> for more information.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.3.3950",
+    "detailsSection_file_name": [
+        "sp3 media integration package.zip",
+        "HPC2008R2-SP3-Update-x86.zip",
+        "HPC2008R2-SP3-Update-x64.zip",
+        "HPC2008R2-MonitoringPack-SP3SP4.zip"
+    ],
+    "detailsSection_file_size": [
+        "714.4 MB",
+        "135.3 MB",
+        "138.3 MB",
+        "327.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "An HPC Pack 2008 R2-based cluster with <a href=\"http://www.microsoft.com/download/details.aspx?id=26646\">Service Pack 2</a> installed including:<br/>\r\nHPC Pack 2008 R2 Express, HPC Pack 2008 R2 Enterprise, Windows HCP Server 2008 R2 Suite, HPC Pack 2008 R2 Client Utilities, HPC Pack 2008 R2 MS-MPI Redistributable\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows HPC Server 2008 R2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "This service pack need to be run on all nodes and client machines.<br/>\r\n<br/>\r\nPlease refer to the documentation at <a href=\"http://technet.microsoft.com/en-us/library/ff919349(WS.10).aspx\">http://technet.microsoft.com/en-us/library/ff919349(WS.10).aspx</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28017",
+    "downloadPreload": true
+}

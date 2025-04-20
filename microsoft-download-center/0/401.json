@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Governance Planning",
+    "downloadDescription": "This white paper focuses on the \u201cfront end\u201d of the SharePoint environment \u2013 the business aspect of governance - the areas that impact business users.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-governance-planning.pdf",
+            "url": "https://download.microsoft.com/download/d/0/4/d043c484-38e1-46b2-84a4-92be2ca0bb3a/oit2010-whitepaper-governance-planning.pdf",
+            "size": "655021",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:08:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "oit2010-whitepaper-governance-planning.doc",
+            "url": "https://download.microsoft.com/download/d/0/4/d043c484-38e1-46b2-84a4-92be2ca0bb3a/oit2010-whitepaper-governance-planning.doc",
+            "size": "186880",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "A Governance Plan describes how your SharePoint environment will be managed. It describes the roles, responsibilities, and rules that are applied to both the back end (hardware, farm, application, database configuration and maintenance) and the front end (information architecture, taxonomy, user experience). This white paper focuses on the \u201cfront end\u201d of the SharePoint environment \u2013 the business aspect of governance - the areas that impact business users.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "oit2010-whitepaper-governance-planning.pdf",
+        "oit2010-whitepaper-governance-planning.doc"
+    ],
+    "detailsSection_file_size": [
+        "639.7 KB",
+        "182.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "401",
+    "downloadPreload": true
+}

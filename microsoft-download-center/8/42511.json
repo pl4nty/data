@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 Retail SDK Components",
+    "downloadDescription": "This document lists the AX 2012 R3 Retail SDK components for E-Commerce Solution, Enterprise Point of Sale (POS), Modern Point of Sale (POS) [Pre-release], Retail Server, Hardware Station, and Scale-out Deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Retail SDK Components.pdf",
+            "url": "https://download.microsoft.com/download/7/3/1/73115b11-481a-4225-822f-788063489e80/Retail SDK Components.pdf",
+            "size": "437299",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:53:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document lists the AX 2012 R3 Retail SDK components for E-Commerce Solution, Enterprise Point of Sale (POS), Modern Point of Sale (POS) [Pre-release], Retail Server, Hardware Station, and Scale-out Deployment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Retail SDK Components.pdf"
+    ],
+    "detailsSection_file_size": [
+        "427.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42511",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 Performance Benchmark SDK",
+    "downloadDescription": "The Microsoft Dynamics AX Performance Benchmark Software Development Toolkit (SDK) provides partners and customers with extensible features to develop benchmarks that closely mimic their custom implementation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 Performance Benchmark SDK.pdf",
+            "url": "https://download.microsoft.com/download/7/d/5/7d574422-c110-40ce-ab6a-ef1e16917fd1/Microsoft Dynamics AX 2012 Performance Benchmark SDK.pdf",
+            "size": "1865803",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:34:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Benchmark SDK lets partners and customers quickly develop managed tests that simulate multiple-user activity on Microsoft Dynamics AX. The Benchmark SDK is developed by using Microsoft Visual Studio 2010; therefore, you can use the Load Test functionality to run stress and performance tests for Microsoft Dynamics AX. This lets you set benchmarks for any Microsoft Dynamics AX scenario more easily, because you can collect test results from the Benchmark SDK.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 Performance Benchmark SDK.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39082",
+    "downloadPreload": true
+}

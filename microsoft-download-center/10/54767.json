@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager Nano Agent cab file for RTM",
+    "downloadDescription": "Microsoft System Center Operations Manager Nano Agent cab file for RTM",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MOMNanoAgent.cab",
+            "url": "https://download.microsoft.com/download/e/1/6/e169898d-39ca-4b56-8621-b07fa39da47d/MOMNanoAgent.cab",
+            "size": "9739551",
+            "version": "10905.0",
+            "datePublished": "7/15/2024 4:36:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Nano agent can be installed by running InstallNanoServerScomAgentOnline.ps1 packaged in the cab file in Powershell script. \r\n\r\nFor more details, please check the technet article on Monitoring Nano Server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10905.0",
+    "detailsSection_file_name": [
+        "MOMNanoAgent.cab"
+    ],
+    "detailsSection_file_size": [
+        "9.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Nano agent is available only for System Center Operations Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please see the technet for instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54767",
+    "downloadPreload": true
+}

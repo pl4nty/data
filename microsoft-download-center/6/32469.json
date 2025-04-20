@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Macintosh Keyboard Layouts",
+    "downloadDescription": "Keyboard resource files for European keyboards",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Keyboard Layouts.dmg",
+            "url": "https://download.microsoft.com/download/b/5/e/b5e10957-381a-4398-8898-fbb7c222718a/Microsoft Keyboard Layouts.dmg",
+            "size": "133829",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Microsoft keyboards with European SKUs are not properly supported on the Macintosh platform due to inconsistencies between the MacOS keyboard layouts available and the key set mapping on the Microsoft keyboards.  This download contains keyboard resources to handle Tier 1 country keyboard SKUs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Keyboard Layouts.dmg"
+    ],
+    "detailsSection_file_size": [
+        "130.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Mac OS X v10.1.5 and greater",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "Microsoft keyboards purchased outside the United States may have different physical layouts or different labels on the keyboard keys. This can cause disparity between the key pressed and the character displayed.  To provide a consistent experience, Microsoft now offers the following keyboard layouts: British, French, French Canadian, U.S. International (Intl), German, and Swiss German.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32469",
+    "downloadPreload": true
+}

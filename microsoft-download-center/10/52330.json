@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "NLP Data Sets for Comparative Study of Parameter-Estimation Methods",
+    "downloadDescription": "Data sets for comparative study of parameter-estimation methods for statistical natural-language processing. Last published: June 2, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msr_ime_feature.zip",
+            "url": "https://download.microsoft.com/download/e/4/1/e41f2f8b-4017-4e4a-9d63-ca8622d3054e/msr_ime_feature.zip",
+            "size": "47269154",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Data sets for comparative study of parameter-estimation methods for statistical natural-language processing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "msr_ime_feature.zip"
+    ],
+    "detailsSection_file_size": [
+        "45.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52330",
+    "downloadPreload": true
+}

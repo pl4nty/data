@@ -1,0 +1,120 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Server 2003 (KB2998527)",
+    "downloadDescription": "Install this update to resolve issues in Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003-KB2998527-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/3/6/e3694c5b-d3d4-437c-9dae-f5348622fcc1/WindowsServer2003-KB2998527-x86-ENU.exe",
+            "size": "525024",
+            "version": "2998527",
+            "datePublished": "7/15/2024 3:53:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        }
+    ],
+    "detailsSection": "Install this update to resolve issues in Windows. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article for more information. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2998527",
+        "name": "KB2998527"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-000",
+        "name": "MS14-000"
+    },
+    "detailsSection_file_version": "2998527",
+    "detailsSection_file_name": [
+        "WindowsServer2003-KB2998527-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "512.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2998527"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44292",
+    "downloadPreload": true
+}

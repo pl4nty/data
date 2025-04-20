@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Security and Authentication in Microsoft Dynamics CRM: Connectivity and Firewall Port Requirements in On-Premise Deployments",
+    "downloadDescription": "This document provides guidance on the connectivity requirements between Microsoft Dynamics CRM 4.0 and other systems to assist readers with proper firewall configuration in customer environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM4 NB - SEC - Connectivity and Firewall Port Reqs - On-Prem.pdf",
+            "url": "https://download.microsoft.com/download/2/3/9/2392d8ca-3ba2-49c1-bd45-91c478bb7f9f/CRM4 NB - SEC - Connectivity and Firewall Port Reqs - On-Prem.pdf",
+            "size": "554496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Many data centers include firewalls between the end-users and the servers and other integrated systems that support an implementation of Microsoft Dynamics CRM 4.0. This document provides guidance on the connectivity requirements between Microsoft Dynamics CRM 4.0 and other systems to assist readers with proper firewall configuration in customer environments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CRM4 NB - SEC - Connectivity and Firewall Port Reqs - On-Prem.pdf"
+    ],
+    "detailsSection_file_size": [
+        "541.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Additional Requirements</b><br/>\r\nMicrosoft Dynamics CRM 4.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, click <b>Go</b>, and then do one of the following:<br />\r\n<br />\r\nTo start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.<br />\r\n<br />\r\nTo copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.",
+    "relatedResourcesSection": [
+        {
+            "title": "security and Authentication in Microsoft Dynamics CRM: Field-level Security in Microsoft Dynamics CRM: Options and Constraints",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=471f8670-47b3-4525-b25d-c11a6774615c"
+        },
+        {
+            "title": "security and Authentication in Microsoft Dynamics CRM: The Microsoft Dynamics CRM Security Model",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=fb4bb16b-586f-4aae-aa4b-790023e95b61"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12774",
+    "downloadPreload": true
+}

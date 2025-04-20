@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Visio 2010 Add-in for System Center",
+    "downloadDescription": "The Visio 2010 add-in for System Center provides a comprehensive list of alerts from System Center Operations Manager 2007 and system information, user group information and patch information from System Center Configuration Manager 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Visio 2010 Add-In for System Center-User Guide.doc",
+            "url": "https://download.microsoft.com/download/b/2/e/b2e7e211-a0c9-40ec-9b81-0bd4765bd308/Visio 2010 Add-In for System Center-User Guide.doc",
+            "size": "1750528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visio 2010 add-in for System Center provides a comprehensive list of alerts from System Center Operations Manager 2007 and system information, user group information & patch information from System Center Configuration Manager 2007 in a single consolidated view. This add-in has a client and a server component. The client component requires Visio professional 2010 or Visio Premium 2010 and the server component requires SharePoint Server 2010. The server side component makes it possible to publish the data linked diagram to SharePoint Server 2010 and refresh it in real-time for broader consumption. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visio 2010 Add-In for System Center-User Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 3.5\r\nMicrosoft Visio 2010 Professional or Premium",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1"
+    ],
+    "installInstructionSection": "1. Download the file by clicking the Download link (above) and saving the file to your hard drive.\r\n2. Follow the instructions in the Visio 2010 Add-in for System Center-User Guide to install the add-in.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26234",
+    "downloadPreload": true
+}

@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework Client Profile Offline Installer",
+    "downloadDescription": "The Microsoft .NET Framework Client Profile Offline Installer contains the .NET Framework assemblies needed for the installation and distribution of .NET Framework client applications during offline user scenarios.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DotNetFx35Client.exe",
+            "url": "https://download.microsoft.com/download/c/d/c/cdc0f321-4f72-4a08-9bac-082f3692ecd9/DotNetFx35Client.exe",
+            "size": "267963920",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The .NET Framework Client Profile Offline Installer download will enable developers to create a deployment experience for users that are not connected to the internet. The download package contains the .NET Framework Client Profile and the full .NET Framework 3.5 Service Pack 1. <br/>\n<br />\nThe .NET Framework 3.5 Service Pack 1 package contains all the binaries an end-user may need to install the correct version of the .NET Framework. This includes binaries for the appropriate OS, like Windows XP or Windows Vista, and the appropriate CPU type, like x86 or amd64. For more details on the deployment of the <a href=\"http://msdn.microsoft.com/en-us/library/cc160716.aspx\" Title=\".NET Framework 3.5 Deployment Guide\">.NET Framework 3.5 please see the .NET Framework 3.5 Deployment Guide</a>.<br />\n<br/>\nThe Microsoft .NET Framework Client Profile is the subset of features and functionality needed for the installation and distribution of .NET Framework Client Profile for client applications. The subset of features contained in the Microsoft .NET Framework Client Profile are:<br />\n<UL><br />\n<LI>Common Language Runtime</LI><br />\n<LI>ClickOnce</LI> <br />\n<LI>Windows Forms</LI><br />\n<LI>Windows Presentation Foundation</LI><br />\n<LI>Windows Communication Foundation</LI><br />\n</UL><br />\nThe .NET Framework Client Profile enables:<br />\n<UL><br />\n<LI>Faster installation of .NET Framework components</LI><br />\n<LI>Automatic updates for computers that have parts of the .NET Framework installed</LI><br />\n<LI>Integrated deployment of client applications with the .NET Framework Client Profile</LI><br />\n<LI>Customizable deployment of client applications when deployed using the Client Profile</LI><br />\n</UL><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "DotNetFx35Client.exe"
+    ],
+    "detailsSection_file_size": [
+        "255.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI><b>Processor:</b> 400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)</LI><br />\n<LI><b>RAM:</b> 96 MB (Minimum); 256 MB (Recommended)</LI><br />\n<LI><b>Hard Disk:</b> Up to 500 MB of available space may be required</LI><br />\n<LI><b>CD or DVD Drive:</b> Not required</LI><br />\n<LI><b>Display: </b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)</LI><br />\n</UL><br />\n.NET Framework development tools like Visual Studio, will not function on .NET Framework 3.5 Client Profile. Developers will need to install full .NET Framework 3.5 Service Pack 1.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Important: Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. <br />\n<br />\n1. Click the Download button on this page to start the download <br />\n<br />\n2. To save the download to your computer for installation at a later time, click Save.<br />\n<br />\n3. To cancel the installation, click Cancel.<br />\n<br />\n<b>NOTE:</b> DotNetFx35Client.exe is the \"offline\" installer of the Client Profile that contains all the components necessary to install the Client Profile locally. This package contains the .NET Framework 3.5 SP1 package. This package does not contain any localized resources.<br />",
+    "additionalInformationSection": "If you have installed earlier pre-release versions of .NET Framework 3.5 Client Profile, then you must uninstall them prior to running this installation by using Add or Remove Programs. <br />\n<br />\nThe .NET Framework 3.5 Client Profile contains the installer for the full framework, .NET Framework 3.5 Service Pack 1. For additional information on .NET Framework 3.5 SP1, please see the Related Resources. <br />\n<br />\nFor additional information on deploying client applications using the .NET Framework 3.5 Client Profile, please see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=122534\" Title=\".NET Framework 3.5 Client Profile Deployment Guide\">.NET Framework 3.5 Client Profile Deployment Guide</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework 3.5 SP1 Readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=122089"
+        },
+        {
+            "title": ".NET Framework 3.5 SP1 Download",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=D0E5DEA7-AC26-4AD7-B68C-FE5076BBA986&displaylang=en"
+        },
+        {
+            "title": ".NET Framework 3.5 Client Profile Readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=122533"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5007",
+    "downloadPreload": true
+}

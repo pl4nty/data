@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Getting started with Microsoft SharePoint Server 2010 ",
+    "downloadDescription": "Provides basic information about how to get started with Microsoft SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePtServGetStarted.doc",
+            "url": "https://download.microsoft.com/download/d/6/9/d69cedd5-e59c-4ebd-b476-0dabe43a90ec/SharePtServGetStarted.doc",
+            "size": "442880",
+            "version": "3",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServGetStarted.pdf",
+            "url": "https://download.microsoft.com/download/d/6/9/d69cedd5-e59c-4ebd-b476-0dabe43a90ec/SharePtServGetStarted.pdf",
+            "size": "463323",
+            "version": "3",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServGetStarted.xps",
+            "url": "https://download.microsoft.com/download/d/6/9/d69cedd5-e59c-4ebd-b476-0dabe43a90ec/SharePtServGetStarted.xps",
+            "size": "927937",
+            "version": "3",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book provides basic information about the capabilities of and requirements for Microsoft SharePoint Server 2010. The audiences for this book include application specialists, line-of-business application specialists, information architects, IT generalists, program managers, and infrastructure specialists who are just starting to learn about SharePoint Server 2010 and want a quick introduction plus installation steps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "SharePtServGetStarted.doc",
+        "SharePtServGetStarted.pdf",
+        "SharePtServGetStarted.xps"
+    ],
+    "detailsSection_file_size": [
+        "432.5 KB",
+        "452.5 KB",
+        "906.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Office 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the lower right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8834",
+    "downloadPreload": true
+}

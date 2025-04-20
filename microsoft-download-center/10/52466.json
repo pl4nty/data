@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR NLP Empty Category Rules",
+    "downloadDescription": "The MSR NLP Empty Category Rules package includes a single source file containing G-language functions for computing empty categories on previously deserialized syntax trees formerly represented in the Penn Treebank text format. Last published: April 25, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.msi",
+            "url": "https://download.microsoft.com/download/a/d/4/ad454331-e59e-49ff-9db9-21b22a60f2b2/setup.msi",
+            "size": "109568",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The MSR NLP Empty Category Rules package includes a single source file containing G-language functions for computing empty categories on previously deserialized syntax trees formerly represented in the Penn Treebank text format. These rules are described in an ACL 2004 paper by Rich Campbell to be found here: http://acl.ldc.upenn.edu/acl2004/main/pdf/101_pdf_2-col.pdf",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "107.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52466",
+    "downloadPreload": true
+}

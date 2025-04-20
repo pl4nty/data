@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Configuring a SQL Server Reporting Services scale-out deployment to run on a Network Load Balancing cluster",
+    "downloadDescription": "This white paper explains how to configure a SQL Server Reporting Services scale-out deployment to run in a Network Load Balancing cluster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSRSforMicrosoftDynamicsAX_NLB.pdf",
+            "url": "https://download.microsoft.com/download/6/3/1/6311373e-7c78-46c9-99a0-d41cc8015782/SSRSforMicrosoftDynamicsAX_NLB.pdf",
+            "size": "600570",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A SQL Server Reporting Services (SSRS) scale-out deployment includes two or more report server instances that share a single report server database. By using a scale-out deployment, you can increase the number of users who can access reports at the same time, and improve the availability of the report server.<br />\r\n<br />\r\nThis white paper will help IT professionals configure a scale-out deployment for use in their Microsoft Dynamics AX environments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "SSRSforMicrosoftDynamicsAX_NLB.pdf"
+    ],
+    "detailsSection_file_size": [
+        "586.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "planning considerations for reporting",
+            "url": "http://technet.microsoft.com/EN-US/library/dd309577.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29421",
+    "downloadPreload": true
+}

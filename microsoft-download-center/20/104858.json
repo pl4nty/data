@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager Management Pack for Certificates Monitoring",
+    "downloadDescription": "This Management Pack for SCOM enables you to monitor PKI certificates and Certificate Revocation Lists (CRLs) ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Microsoft Certificates.msi",
+            "url": "https://download.microsoft.com/download/0/3/e/03e83355-c5cc-49f9-aff4-ac655e14dff7/Microsoft System Center Management Pack for Microsoft Certificates.msi",
+            "size": "1638400",
+            "version": "2.0.0.1",
+            "datePublished": "7/15/2024 4:33:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Certificates MP Operations Guide.docx",
+            "url": "https://download.microsoft.com/download/0/3/e/03e83355-c5cc-49f9-aff4-ac655e14dff7/Microsoft Certificates MP Operations Guide.docx",
+            "size": "442545",
+            "version": "2.0.0.1",
+            "datePublished": "7/15/2024 4:33:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Certificates Monitoring Management Pack can be used to:\r\n<br/>\r\n<ul>\r\n<li> Proactively monitor the expiry of PKI certificates. </li>\r\n<li> Monitor validity of PKI certificates through certificate chain verification. </li>\r\n<li> Proactively monitor updating of Certificate Revocation Lists (CRLs). </li>\r\n<li> Receive certificate expiry and verification, and CRL update related warning and errors as Operations Manager alerts.  </li>\r\n<li> Visualize the certificate and CRLs health and corresponding alerts via the dashboards and alert views including HTML5 dashboard.  </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0.1",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Microsoft Certificates.msi",
+        "Microsoft Certificates MP Operations Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "432.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This Management Pack requires System Center Operations Manager 2019 or System Center Operations Manager 2022.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring refer to the management pack guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104858",
+    "downloadPreload": true
+}

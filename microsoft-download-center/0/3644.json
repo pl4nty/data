@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio .NET 2002 Service Pack 1 MFC70.DLL Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise a computer running Visual Studio .NET 2002 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS7.0sp1-KB924642-X86.exe",
+            "url": "https://download.microsoft.com/download/6/b/e/6be11d8a-e0c7-429c-ac8c-9860e313ced9/VS7.0sp1-KB924642-X86.exe",
+            "size": "65317744",
+            "version": "7.0",
+            "datePublished": "7/15/2024 3:14:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise a computer running Visual Studio .NET 2002 Service Pack 1 and gain access to confidential data. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB924642",
+        "name": "KB924642"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-012",
+        "name": "MS07-012"
+    },
+    "detailsSection_file_version": "7.0",
+    "detailsSection_file_name": [
+        "VS7.0sp1-KB924642-X86.exe"
+    ],
+    "detailsSection_file_size": [
+        "62.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows NT",
+        "Windows XP Home Edition ",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?linkid=74616\">KB924642</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 924642",
+            "url": "http://go.microsoft.com/fwlink/?linkid=74616"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3644",
+    "downloadPreload": true
+}

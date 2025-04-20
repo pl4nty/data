@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 SP1 Interdomain Federation Profile",
+    "downloadDescription": "This document explains the federation profile used by Live Communications Server 2005 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LCS Public Federation Spec.doc",
+            "url": "https://download.microsoft.com/download/1/d/9/1d90d3ec-95a9-49e0-b026-efb50cb101a1/LCS Public Federation Spec.doc",
+            "size": "118784",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Office Live Communications Server supports a standards-based federation interface for instant messaging (IM) and presence functionality between Live Communications Server deployments, as well as between Live Communications Server and third-party public IM deployments such as AOL\u00ae, MSN\u00ae, and Yahoo!\u00ae.<br />\n<br />\n <br />\n<br />\nThe federation model that is implemented in Live Communications Server is based on the IETF (Internet Engineering Task Force) draft document \u201cBest Current Practices for Interdomain Instant Messaging using SIP/SIMPLE.\"  There are several topics in this draft where multiple mechanisms are described to enable certain features. This document provides specific details on those areas, as well as Live Communications Server-specific implementation details that are relevant to the federated interface.<br />\n<br />\n <br />\n<br />\nThis document provides third parties with all the information required to implement a federated interface with a Live Communications Server 2005 SP1 deployment in order to enable federated presence and IM scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LCS Public Federation Spec.doc"
+    ],
+    "detailsSection_file_size": [
+        "116.0 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office application:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Communication Server 2005 SP1</li>\n</ul></li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. \n</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16488",
+    "downloadPreload": true
+}

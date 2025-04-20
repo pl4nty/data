@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server Adapter for Logic Apps",
+    "downloadDescription": "BizTalk Server uses the Logic Apps adapter to receive messages from an Azure logic app, or send messages to an Azure logic app.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LogicAppAdapter.iso",
+            "url": "https://download.microsoft.com/download/6/4/1/641c2755-4c2c-4f01-92c5-5664e27bbb99/LogicAppAdapter.iso",
+            "size": "7585792",
+            "version": "1.0.11116.0",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server applications can integrate with cloud based SaaS providers using the send side adapter included in this package. Logic Apps will be able to integrate with On-Premise Line of Business systems through the BizTalk Connector and receive side adapter of this package. These adapters and connectors are designed to work together to enable Microsoft's hybrid Integration platform. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.11116.0",
+    "detailsSection_file_name": [
+        "LogicAppAdapter.iso"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft BizTalk Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download BizTalk Server Adapter for Logic Apps \r\n<br />\r\nExtract the files, and install LogicAppAdapter.iso\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "logic App Adapter",
+            "url": "https://msdn.microsoft.com/en-us/library/mt787163.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54287",
+    "downloadPreload": true
+}

@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Feature Integration Across Microsoft Office Products",
+    "downloadDescription": "Illustrations for cross-server features: This multi-tab file includes descriptions and architecture illustrations for features that work across Microsoft Office server products. (Exchange Server, Lync Server, SharePoint Server) ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SPEL_FeatureIntegration.vsd",
+            "url": "https://download.microsoft.com/download/3/3/8/338dc64b-d27d-4f53-b770-47855c7fd3aa/SPEL_FeatureIntegration.vsd",
+            "size": "6264320",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:27:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPEL_FeatureIntegration.pdf",
+            "url": "https://download.microsoft.com/download/3/3/8/338dc64b-d27d-4f53-b770-47855c7fd3aa/SPEL_FeatureIntegration.pdf",
+            "size": "817990",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:27:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This multi-tab file includes descriptions and architecture illustrations for features that work across Microsoft Office server products, including server-to-server authentication, high-resolution user photos, unified contact store, site mailboxes, Exchange task synchronization, Lync presence in Outlook, and voicemail. \r\n \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "SPEL_FeatureIntegration.vsd",
+        "SPEL_FeatureIntegration.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB",
+        "798.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\n<ul>\r\n<li>To view the Visio version of the model, you must have Microsoft Visio 2007 or a more recent version.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<br></br>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39348",
+    "downloadPreload": true
+}

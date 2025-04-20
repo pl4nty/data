@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone 8.1 Update and Emulators",
+    "downloadDescription": "The Windows Phone 8.1 Update Emulators package adds additional emulator images to an existing installation of Visual Studio 2015 or Visual Studio 2013 Update 2 or later. With this update installed, you can create and test apps that will run on devices that have Windows Phone 8.1 Update.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "windowsphone81sdkupdate1.iso",
+            "url": "https://download.microsoft.com/download/e/7/d/e7d9744a-06a6-46fb-aea4-50faaec6ce73/windowsphone81sdkupdate1.iso",
+            "size": "986316800",
+            "version": "8.10.14141.167",
+            "datePublished": "7/15/2024 3:21:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "windowsphone81sdkupdate1.exe",
+            "url": "https://download.microsoft.com/download/e/7/d/e7d9744a-06a6-46fb-aea4-50faaec6ce73/windowsphone81sdkupdate1.exe",
+            "size": "1164600",
+            "version": "8.10.14141.167",
+            "datePublished": "7/15/2024 3:21:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Phone 8.1 Update Emulators package adds the following to an existing installation of Visual Studio 2015 or Visual Studio 2013 Update 2 or later:\r\n<ul>\r\n<li>Windows Phone SDK 8.1 Update</li>\r\n<li>New Windows Phone Emulator 8.1 Update WVGA 4 inch</li>\r\n<li>New Windows Phone Emulator 8.1 Update WVGA 4 inch 512MB</li>\r\n<li>New Windows Phone Emulator 8.1 Update WXGA 4.5 inch</li>\r\n<li>New Windows Phone Emulator 8.1 Update qHD 5 inch</li>\r\n<li>New Windows Phone Emulator 8.1 Update 720p 4.7 inch</li>\r\n<li>New Windows Phone Emulator 8.1 Update 1080p 5.5 inch</li>\r\n<li>New Windows Phone Emulator 8.1 Update 1080p 6 inch</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.10.14141.167",
+    "detailsSection_file_name": [
+        "windowsphone81sdkupdate1.iso",
+        "windowsphone81sdkupdate1.exe"
+    ],
+    "detailsSection_file_size": [
+        "940.6 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2015\r\nVisual Studio 2013 Update 2 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Ensure that you have Visual Studio 2015 or Visual Studio 2013 Update 2 or later installed. Click the Download button for WindowsPhone81SDKUpdate1.exe, then select the option to Run, and follow the instructions that appear.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio 2013 Updates",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=390521"
+        },
+        {
+            "title": "visual Studio 2013",
+            "url": "http://www.visualstudio.com/downloads/download-visual-studio-vs"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43719",
+    "downloadPreload": true
+}

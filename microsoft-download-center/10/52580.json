@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "F7: Refinement Types for F# (2012)",
+    "downloadDescription": "F7 is an enhanced type checker for the F# programming language. Last published: November 29, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "f7-release-2.0.11129.zip",
+            "url": "https://download.microsoft.com/download/4/6/7/467283fa-268f-4609-b5c3-c9593d905d05/f7-release-2.0.11129.zip",
+            "size": "12233973",
+            "version": "2.0",
+            "datePublished": "4/15/2024 4:09:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "F7 is an enhanced type checker for the F# programming language. F7 supports static checking of properties expressed with refinement types. Our motivation is to check various security properties of F# implementation code by typing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "f7-release-2.0.11129.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.7 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52580",
+    "downloadPreload": true
+}

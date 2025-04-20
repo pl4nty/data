@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Sonar.exe: File Replication Service (FRS) Status Viewer",
+    "downloadDescription": "Sonar.exe is a graphical tool that allows administrators to monitor key statistics and status about members of a file replication service (FRS) replica set. Administrators can use Sonar to watch key statistics on a replica set in order to monitor traffic levels, backlogs, and free space.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sonar_setup.exe",
+            "url": "https://download.microsoft.com/download/4/4/9/449b0038-ac27-4b24-bf11-dd8ebdf5cca6/sonar_setup.exe",
+            "size": "1064008",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sonar.exe monitors key statistics and status, including traffic levels, backlogs, and free space of file replication service (FRS) replica set members.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sonar_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and use Sonar.exe on any of the following platforms:<BR/><UL><LI>Windows 2000 Professional</LI><LI>Windows 2000 Server</LI><LI>Windows 2000 Advanced Server</LI><LI>Windows 2000 Datacenter</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI><LI>Windows Server 2003, Web Edition</LI></UL><BR/><BR/><B>Additional Files Required</B><BR/><UL><LI>Ntfrsapi.dll (on local computers)</LI><LI>The 1.1 .NET Framework Common Language Runtime, if not already installed. The .NET Framework is not automatically installed with Windows 2000 operating systems. Sonar should be used with version 1.1 of the .NET Framework Common Language Runtime. This can be downloaded from MSDN at <A HREF=\"http://msdn.microsoft.com\">http://msdn.microsoft.com</A></LI></UL><BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a self-extracting executable (.exe) file. By running the file, you install the tool and documentation on your computer.<BR /><BR />When you install a tool, you are prompted to choose an install directory. If the Windows 2000 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Resource Kit.",
+    "relatedResourcesSection": [
+        {
+            "title": "training Center for Windows 2000",
+            "url": "http://www.microsoft.com/traincert/centers/windows2000.asp"
+        },
+        {
+            "title": "windows Server Community Resources",
+            "url": "http://www.microsoft.com/windows2000/community/default.asp"
+        },
+        {
+            "title": "windows 2000 Resource Kits (Includes Documentation)",
+            "url": "http://www.microsoft.com/windows2000/techinfo/reskit/default.asp"
+        },
+        {
+            "title": "windows 2000 Resource Kit: More Tool Downloads",
+            "url": "http://www.microsoft.com/windows2000/techinfo/reskit/tools/default.asp"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3745",
+    "downloadPreload": true
+}

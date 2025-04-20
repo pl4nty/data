@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for ActiveX Killbits for Windows Server 2012 R2 (KB2900986)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-090. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2900986-x64.msu",
+            "url": "https://download.microsoft.com/download/b/2/b/b2b48ce0-ab4a-4ab5-b5eb-a173fa7cf3d6/Windows8.1-KB2900986-x64.msu",
+            "size": "208227",
+            "version": "2900986",
+            "datePublished": "7/15/2024 3:13:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified in Active X controls that could allow an attacker to compromise a system running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2900986",
+        "name": "KB2900986"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-090",
+        "name": "MS13-090"
+    },
+    "detailsSection_file_version": "2900986",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2900986-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "203.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update applies to the following operating systems:<BR /><UL>\n        <LI>Windows Server 2012 R2 </LI>\n      </UL>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\n      <OL>\n        <LI>\n          Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.\n        </LI>\n        <LI>Do one of the following:</LI>\n        <UL>\n          <LI>\n            To start the installation immediately, click <B>Run</B>.\n          </LI>\n          <LI>\n            To save the download to your computer for installation at a later time, click <B>Save</B>.\n          </LI>\n          <LI>\n            To cancel the installation, click <B>Cancel</B>.\n          </LI>\n        </UL>\n      </OL>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin MS13-090",
+            "url": "http://go.microsoft.com/fwlink/?Linkid=329834"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40976",
+    "downloadPreload": true
+}

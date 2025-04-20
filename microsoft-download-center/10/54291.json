@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2016 Monitoring Management Pack",
+    "downloadDescription": "BizTalk Server 2016 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Server 2016 Monitoring Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/7/b/a/7ba95084-13ee-4dd8-9316-d302ede2bb90/BizTalk Server 2016 Monitoring Management Pack Guide.docx",
+            "size": "100961",
+            "version": "7.0.2014.0",
+            "datePublished": "7/15/2024 4:34:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Server 2016 Management Pack offers monitoring capabilities for BizTalk artifacts and BizTalk-related platform components. It allows administrators to monitor health state of various BizTalk artifacts such as Send Ports, Orchestrations etc. and platform artifacts such as Host Instances (BizTalk service). Further, this mp includes performance views, diagnostic capability and alerts.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nBizTalk Server 2016 MP includes the following enhancements: <br/>\r\n<ul>\r\n<li> Discover multiple version of Biztalk server </li>\r\n<li> Fixed the issue with the discovery of the installed BizTalk Server version  </li>\r\n<li> Show biztalk .net performance counter for localized language</li>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2014.0",
+    "detailsSection_file_name": [
+        "BizTalk Server 2016 Monitoring Management Pack Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "98.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Required Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2012 R2 Or System Center Operations Manager 2016 </li>\r\n<li> Microsoft BizTalk Server 2016 </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Click the download link on this page to begin the download process for this management pack package. Save the MSI file and run it or run it directly from the download prompt. Please read the MP guide for further installation details. <br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54291",
+    "downloadPreload": true
+}

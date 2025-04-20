@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Setting Up the BizTalk Adapter for DB2 Using Send Ports",
+    "downloadDescription": "This document shows how to configure Microsoft\u00ae BizTalk\u00ae Server 2006 with the BizTalk Adapter for DB2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DB2 Adapter Send Ports.doc",
+            "url": "https://download.microsoft.com/download/b/c/9/bc9aeb27-257b-4a02-a126-b45d1e51815a/DB2 Adapter Send Ports.doc",
+            "size": "678400",
+            "version": "v.",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document shows how to configure Microsoft\u00ae BizTalk\u00ae Server 2006 with the BizTalk Adapter for DB2. Specifically, the document addresses using send ports to submit commands to the DB2 database.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v.",
+    "detailsSection_file_name": [
+        "DB2 Adapter Send Ports.doc"
+    ],
+    "detailsSection_file_size": [
+        "662.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the Download button.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20439",
+    "downloadPreload": true
+}

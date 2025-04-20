@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "WinMine Toolkit",
+    "downloadDescription": "The WinMine Toolkit contains a set of tools that allow you to build statistical models from data. Last published: February 19, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WinMineToolkit.exe",
+            "url": "https://download.microsoft.com/download/7/b/e/7be35eef-1d1d-4831-8d71-9af553241392/WinMineToolkit.exe",
+            "size": "2760504",
+            "version": "2.5",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The WinMine Toolkit contains a set of tools that allow you to build statistical models from data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.5",
+    "detailsSection_file_name": [
+        "WinMineToolkit.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52333",
+    "downloadPreload": true
+}

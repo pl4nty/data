@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory Migration Tool (ADMT) Guide: Migrating and Restructuring Active Directory Domains",
+    "downloadDescription": "Guidance on performing migration of domains using the Active Directory Migration Tool.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ADMTV32MigGuide.doc",
+            "url": "https://download.microsoft.com/download/c/2/a/c2a8ad1d-5ad8-4d4b-9bdd-7583e409896d/ADMTV32MigGuide.doc",
+            "size": "1676288",
+            "version": "June 2014",
+            "datePublished": "7/15/2024 4:55:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This guide assists Active Directory administrators in performing domain migration through the use of the Active Directory Migration Tool version 3.2  (ADMT v3.2).  ADMT v3.2 has recently been updated and re-released. The version remains v3.2 because it\u2019s functionally the same as its predecessor (that is, there are no new features). This final release includes various bug fixes and can be used with all supported Windows operating systems and versions of Windows Server Active Directory. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2014",
+    "detailsSection_file_name": [
+        "ADMTV32MigGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right-hand corner of this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "admt v32",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=401534"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19188",
+    "downloadPreload": true
+}

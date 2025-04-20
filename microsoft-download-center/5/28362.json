@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "A Guide to Claims-Based Identity and Access Control, Second Edition - Book Download",
+    "downloadDescription": "A Guide to Claims-Based Identity and Access Control, Second Edition - Book Download",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ClaimsBasedIdentityandAccessControl.epub",
+            "url": "https://download.microsoft.com/download/f/1/4/f1475a9b-5ad3-4b54-b16d-8b34cd416159/ClaimsBasedIdentityandAccessControl.epub",
+            "size": "9490751",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Claims-based Identity Second Edition device.pdf",
+            "url": "https://download.microsoft.com/download/f/1/4/f1475a9b-5ad3-4b54-b16d-8b34cd416159/Claims-based Identity Second Edition device.pdf",
+            "size": "20259721",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:28:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A PDF file of the \"Guide to Claims-Based Identity and Access Control, Second Edition\" book.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "ClaimsBasedIdentityandAccessControl.epub",
+        "Claims-based Identity Second Edition device.pdf"
+    ],
+    "detailsSection_file_size": [
+        "9.1 MB",
+        "19.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A compatabile PDF viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the PDF.",
+    "additionalInformationSection": "Note that the code samples mentioned in this book are available in the related downloads section.",
+    "relatedResourcesSection": [
+        {
+            "title": "identity Team Blog",
+            "url": "http://blogs.msdn.com/card"
+        },
+        {
+            "title": "eugenio Pace blog",
+            "url": "http://blogs.msdn.com/eugeniop"
+        },
+        {
+            "title": "vittorio Bertocci blog",
+            "url": "http://blogs.msdn.com/vbertocci/"
+        },
+        {
+            "title": "project Community Site",
+            "url": "http://claimsid.codeplex.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28362",
+    "downloadPreload": true
+}

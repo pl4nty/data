@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Active Directory Rights Management Services 2012 and 2012 R2",
+    "downloadDescription": "This management pack helps administrators monitor ADRMS 2012 and 2012 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for ADRMS.msi",
+            "url": "https://download.microsoft.com/download/9/2/0/920b6109-8988-4281-8eb6-b0a24cfe4dc1/SC Management Pack for ADRMS.msi",
+            "size": "671744",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_2012_MP_ADRMS.doc",
+            "url": "https://download.microsoft.com/download/9/2/0/920b6109-8988-4281-8eb6-b0a24cfe4dc1/OpsMgr_2012_MP_ADRMS.doc",
+            "size": "294400",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack helps administrators monitor ADRMS 2012 and 2012 R2\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>11/8/2013 - 2012 R2 version 7.1.10100.0 and updated ADRMS 2012 version 7.0.8561.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10100.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for ADRMS.msi",
+        "OpsMgr_2012_MP_ADRMS.doc"
+    ],
+    "detailsSection_file_size": [
+        "656.0 KB",
+        "287.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> </li>\r\n<ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager , System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2. </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to mp guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40797",
+    "downloadPreload": true
+}

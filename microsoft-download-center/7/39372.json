@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Discover SharePoint",
+    "downloadDescription": "Discover SharePoint: download the use case catalog and adoption guide.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sharepoint_Adoption_Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/6/5/f65d8ab6-772f-400b-8982-7d6439fa7d9b/Sharepoint_Adoption_Guide.pdf",
+            "size": "259452",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:27:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Discover SharePoint.pdf",
+            "url": "https://download.microsoft.com/download/f/6/5/f65d8ab6-772f-400b-8982-7d6439fa7d9b/Discover SharePoint.pdf",
+            "size": "1667018",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:27:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint 2013 Adoption Kit.zip",
+            "url": "https://download.microsoft.com/download/f/6/5/f65d8ab6-772f-400b-8982-7d6439fa7d9b/SharePoint 2013 Adoption Kit.zip",
+            "size": "4858042",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:27:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting_to_know_Office_365.pdf",
+            "url": "https://download.microsoft.com/download/f/6/5/f65d8ab6-772f-400b-8982-7d6439fa7d9b/Getting_to_know_Office_365.pdf",
+            "size": "1656450",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:27:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Check out the resources below to find out more about what is SharePoint and learn how you can drive organic adoption within your organization. Alternatively, you can also visit <a href=\"http://DiscoverSharePoint.com\">http://DiscoverSharePoint.com</a>.\r\n<br/><br/>\r\n\r\nDiscoverSharePoint.pdf&mdash;<b>Getting to know SharePoint</b>&nbsp;&nbsp; What is SharePoint? SharePoint is about giving you and the people you work with a better way to get things done together. Check out the scenarios in this book to see some of the ways SharePoint can help you work better together.\r\n<br/><br/>\r\nGetting_to_know_Office_365.pdf&mdash;<b>Getting to know Office 365</b>Office 365 is your personal Office and more. It lets you work from  virtually anywhere on almost any device, whether you\u2019re online  or offline. It helps you do your best work, the way you want to,  wherever you are. That means more powerful tools for creating  content, better ways to work together, and easier ways to share. \r\n<br/><br/>\r\nSharePoint_Adoption_Guide.docx&mdash;<b>SharePoint 2013 Adoption Guide</b>&nbsp;&nbsp;  Adoption of new technologies at work, like SharePoint, won\u2019t happen all at once. In this paper, learn how to craft an effective plan, aligned with business goals, that will demonstrate how SharePoint will benefit business people personally, how it will make their job easier, and how it will address the pain points they experience at work.<br/><br/>\r\n<b>SharePointAdoptionKit.zip</b>&nbsp;&nbsp;  The adoption kit contains resources to help you drive adoption as explained in the adoption guide, featuring a use case catalog, videos & how to guides, posters, and email templates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "Sharepoint_Adoption_Guide.pdf",
+        "Discover SharePoint.pdf",
+        "SharePoint 2013 Adoption Kit.zip",
+        "Getting_to_know_Office_365.pdf"
+    ],
+    "detailsSection_file_size": [
+        "253.4 KB",
+        "1.6 MB",
+        "4.6 MB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For PDF files, you need a PDF reader, such as the reader included with Windows 8 or Adobe Acrobat Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click the button next to the file you want to download.",
+    "relatedResourcesSection": [
+        {
+            "title": "discoverSharePoint.com",
+            "url": "http://discoversharePoint.com"
+        },
+        {
+            "title": "discover SharePoint guides (download)",
+            "url": "http://www.microsoft.com/download/details.aspx?id=39351"
+        },
+        {
+            "title": "discover SharePoint videos (download)",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=39343"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39372",
+    "downloadPreload": true
+}

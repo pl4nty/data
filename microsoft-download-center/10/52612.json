@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Colombo SDK",
+    "downloadDescription": "The Colombo SDK is a software-development kit and simulator environment for experimenting with software-defined radio (SDR) protocol code. Last published: June 28, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "colombo_release_280611.zip",
+            "url": "https://download.microsoft.com/download/7/7/a/77a965a0-710b-4261-8b9a-640cc60b465f/colombo_release_280611.zip",
+            "size": "252994",
+            "version": "1.1.0",
+            "datePublished": "12/15/2023 4:18:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Colombo SDK is a software-development kit and simulator environment for experimenting with software-defined radio (SDR) protocol code. It enables development and testing of the distributed SDR code on a PC before testing on real SDR platforms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.0",
+    "detailsSection_file_name": [
+        "colombo_release_280611.zip"
+    ],
+    "detailsSection_file_size": [
+        "247.1 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52612",
+    "downloadPreload": true
+}

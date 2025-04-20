@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "Building a Release Pipeline with Team Foundation Server 2012 \u2013 Book Download",
+    "downloadDescription": "This is a PDF version of the on-line guidance \"Building a Release Pipeline with Team Foundation Server 2012.\"",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Building a Release Pipeline with Team Foundation Server 2012 - PDF.pdf",
+            "url": "https://download.microsoft.com/download/e/e/f/eefd30ba-c124-4e8c-accf-1fb789b1e1e2/Building a Release Pipeline with Team Foundation Server 2012 - PDF.pdf",
+            "size": "19206914",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Building a Release Pipeline with Team Foundation Server 2012 - EPUB.epub",
+            "url": "https://download.microsoft.com/download/e/e/f/eefd30ba-c124-4e8c-accf-1fb789b1e1e2/Building a Release Pipeline with Team Foundation Server 2012 - EPUB.epub",
+            "size": "6476410",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The goal of Building a Release Pipeline with Team Foundation Server 2012 is to put you on the road toward continuous delivery. It explains how to progressively evolve the process you use to release software through techniques such as versioning, continuous integration, automation, and environment management. The guidance moves through a series of small iterations so that no single change you make is too drastic or disruptive. <br  />\r\nThis is a PDF version of the on-line guidance \"Building a Release Pipeline with Team Foundation Server 2012.\"\r\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Building a Release Pipeline with Team Foundation Server 2012 - PDF.pdf",
+        "Building a Release Pipeline with Team Foundation Server 2012 - EPUB.epub"
+    ],
+    "detailsSection_file_size": [
+        "18.3 MB",
+        "6.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read the PDF or epub, you will need a document reader capable of displaying PDF / epub documents.\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the 'Download' button to start the download. </li>\r\n<li>Save the file to your hard drive. </li>\r\n</ol>\r\n",
+    "additionalInformationSection": "The accompanying Hands-on Labs are available at <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=40295\">Building a Release Pipeline with Team Foundation Server 2012 \u2013 Hands-on Labs </a>. <br />\r\nFor help and support visit <a href=\"http://msdn.microsoft.com/en-us/library/dn449957.aspx\">Building a Release Pipeline with Team Foundation Server 2012</a> MSDN Home Page or the <a href=\"https://tig.codeplex.com/\">Test Infrastructure Guidance Community Site</a>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "building a Release Pipeline with Team Foundation Server 2012 - MSDN Home Page",
+            "url": "http://msdn.microsoft.com/en-us/library/dn449957.aspx"
+        },
+        {
+            "title": "testing for Continuous Delivery with Visual Studio 2012",
+            "url": "http://msdn.microsoft.com/en-us/library/jj159345.aspx"
+        },
+        {
+            "title": "test Infrastructure Guidance Community Site",
+            "url": "https://tig.codeplex.com/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40337",
+    "downloadPreload": true
+}

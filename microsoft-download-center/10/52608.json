@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Bilingual Sentence Aligner",
+    "downloadDescription": "When people translate documents from one language to another, not all sentences are translated one-for-one. Last published: May 14, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "bilingual-sentence-aligner.tar.gz",
+            "url": "https://download.microsoft.com/download/8/f/7/8f7f7cff-46a2-40e0-80ac-2c3c3274c67b/bilingual-sentence-aligner.tar.gz",
+            "size": "19480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When people translate documents from one language to another, not all sentences are translated one-for-one.  This Perl code implements an algorithm for finding which sentences do translate one-for-one in a parallel bilingual corpus.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "bilingual-sentence-aligner.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "19.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52608",
+    "downloadPreload": true
+}

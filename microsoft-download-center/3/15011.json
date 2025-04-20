@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Fuzzy Lookup Add-In for Excel",
+    "downloadDescription": "The Fuzzy Lookup Add-In for Excel performs fuzzy matching of textual data in Excel. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Setup.exe",
+            "url": "https://download.microsoft.com/download/1/9/8/198838b0-4ddf-4a50-aae3-7210680c3be6/Setup.exe",
+            "size": "1436360",
+            "version": "1.3.0.0",
+            "datePublished": "7/15/2024 3:01:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The <b>Fuzzy Lookup Add-In for Excel</b> was developed by Microsoft Research and performs fuzzy matching of textual data in Microsoft Excel. It can be used to identify fuzzy duplicate rows within a single table or to fuzzy join similar rows between two different tables. The matching is robust to a wide variety of errors including spelling mistakes, abbreviations, synonyms and added/missing data. For instance, it might detect that the rows \u201cMr. Andrew Hill\u201d, \u201cHill, Andrew R.\u201d and \u201cAndy Hill\u201d all refer to the same underlying entity, returning a similarity score along with each match. While the default configuration works well for a wide variety of textual data, such as product names or customer addresses, the matching may also be customized for specific domains or languages.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3.0.0",
+    "detailsSection_file_name": [
+        "Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li>Preinstalled Software (Prerequisites): Microsoft Excel 2007, 2010, 2013, or 2016</li>\r\n<li>1 GHz processor, 1 core or higher</li>\r\n<li>1 GB of RAM</li>\r\n<li>2 GB of available hard disk space</li>\r\n\r\nThe following libraries are required and will be installed if necessary:\r\n\r\n<li>.NET 4.5</li>\r\n<li>VSTO 4.0</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To install and use Fuzzy Lookup Add-In for Excel, complete the following steps:\r\n<ul>\r\n<li>Uninstall any previous versions of Fuzzy Lookup Add-In for Excel.</li>\r\n</ul>\r\n<ul>\r\n<li>Run Setup.exe to install the add-in per-user.</li>\r\n- or -\r\n<li>Save Setup.exe, right-click Setup.exe and Run As Administrator.</li>\r\n</ul>\r\n<ul>\r\n<li>An option for per-machine installation is available when Setup.exe is run as Administrator and may resolve any Trusted Publisher errors encountered in a per-user install.</li>\r\n<li>Running Setup.exe as Administrator may resolve error 0x80070659 encountered during installation.</li>\r\n</ul>\r\n<ul>\r\n<li>Read the license terms in the 'LicenseTerms.rtf' document.</li>\r\n<li>Read the 'README.docx' document for further installation and usage instructions.</li>\r\n</ul>\r\n\r\nIt may be necessary to disable the following option in Excel if Trusted Publisher errors are encountered: \r\n<ul>\r\n<li>Excel Options => Trust Center => Trust Center Settings... => Add-ins => Require Application Add-ins to be signed by Trusted Publisher</li>\r\n</ul>\r\n\r\nIf setup error  0x80070659 is encountered, run Setup.exe as Administrator or add/set the following DWORD registry value. If this registry setting does not exist on certain Windows Server operating systems, the default is 1 which will cause setup to fail if not run as Administrator. \r\n<ul><li>HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Installer\\</li>\r\n           DisableMsi = 0\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15011",
+    "downloadPreload": true
+}

@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 16: Build and Apply Reports from Shape Data in Visio 2010 (working files)",
+    "downloadDescription": "Practice extracting and presenting shape data as reports in Microsoft Visio 2010 with these diagrams, part of the Visio 2010 MVP Sessions, Video 16.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MVPSession16CircuitDiagram.vsd",
+            "url": "https://download.microsoft.com/download/f/4/1/f41e0690-878b-4ee4-b208-fe7b2d141d2f/MVPSession16CircuitDiagram.vsd",
+            "size": "316416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession16SpacePlan.vsd",
+            "url": "https://download.microsoft.com/download/f/4/1/f41e0690-878b-4ee4-b208-fe7b2d141d2f/MVPSession16SpacePlan.vsd",
+            "size": "417280",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession16NetworkDiagram.vsd",
+            "url": "https://download.microsoft.com/download/f/4/1/f41e0690-878b-4ee4-b208-fe7b2d141d2f/MVPSession16NetworkDiagram.vsd",
+            "size": "606720",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice extracting and presenting shape data as reports in Visio 2010 with these diagrams, created as companions to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 16. MVP Sessions Video 16 covers how Shape Reports, a Visio 2010 feature, allow you to create reports about shapes within a diagram, as well as data associated with those shapes, and view that information in various formats. Use these working files to follow along with the video and practice creating dynamic reports with a few clicks, customizing existing reports, and displaying them on the diagram to simplify complexity.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession16CircuitDiagram.vsd",
+        "MVPSession16SpacePlan.vsd",
+        "MVPSession16NetworkDiagram.vsd"
+    ],
+    "detailsSection_file_size": [
+        "309.0 KB",
+        "407.5 KB",
+        "592.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the diagrams to your computer and then open them with Visio 2010.",
+    "additionalInformationSection": "Watch the Build and Apply Reports from Shape Data video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Session-16-Build-and-apply-reports-from-shape-data.aspx).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29563",
+    "downloadPreload": true
+}

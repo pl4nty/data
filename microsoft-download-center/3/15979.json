@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "ASP.NET Web Pages with Razor Syntax",
+    "downloadDescription": "ASP.NET Web Pages with Razor Syntax is a web framework and part of WebMatrix which gives you everything you need to build Web sites using Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ASPNET-Razor-RTW-Samples.zip",
+            "url": "https://download.microsoft.com/download/c/9/2/c9288b42-5c25-474d-a51a-1ba3749c4dbf/ASPNET-Razor-RTW-Samples.zip",
+            "size": "2492335",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AspNetWebPages.msi",
+            "url": "https://download.microsoft.com/download/c/9/2/c9288b42-5c25-474d-a51a-1ba3749c4dbf/AspNetWebPages.msi",
+            "size": "850432",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ASPNETWebPagesWithRazorSyntax-Book.pdf",
+            "url": "https://download.microsoft.com/download/c/9/2/c9288b42-5c25-474d-a51a-1ba3749c4dbf/ASPNETWebPagesWithRazorSyntax-Book.pdf",
+            "size": "4860402",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "ASP.NET Web Pages with Razor Syntax is a web framework and part of WebMatrix. WebMatrix is everything you need to build Web sites using Windows. It includes IIS Developer Express (a development Web server), ASP.NET (a Web framework), and SQL Server Compact (an embedded database). It streamlines Web site  development and makes it easy to start Web sites  from popular open-source apps. The skills and code you develop with WebMatrix transition seamlessly to Visual Studio and SQL Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ASPNET-Razor-RTW-Samples.zip",
+        "AspNetWebPages.msi",
+        "ASPNETWebPagesWithRazorSyntax-Book.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB",
+        "830.5 KB",
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "ASP.NET 4; .NET 4",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "For more information about this release, visit http://asp.net/webmatrix",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15979",
+    "downloadPreload": true
+}

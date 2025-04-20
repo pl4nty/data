@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server and Microsoft Teams Integration",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange Server and Microsoft Teams Integration.pdf",
+            "url": "https://download.microsoft.com/download/b/5/0/b50a6dfe-2cef-4dcc-bfe6-fefb49c3a7f1/Exchange Server and Microsoft Teams Integration.pdf",
+            "size": "628951",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This session provides insights, capabilities, and architectural understanding when using Microsoft Teams in combination with Exchange Server mailboxes.\r\n\r\nRecording of presentation by Ralf Leistner is at https://youtu.be/Uo_yOiQrolk.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Exchange Server and Microsoft Teams Integration.pdf"
+    ],
+    "detailsSection_file_size": [
+        "614.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file in PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104613",
+    "downloadPreload": true
+}

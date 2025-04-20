@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_2005",
+    "downloadDescription": "MARS_2005",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/4/1/e/41e6aa70-f551-485a-b73e-f99f7796a382/MARSAgentInstaller.exe",
+            "size": "41364936",
+            "version": "WIN2K12-R2",
+            "datePublished": "7/15/2024 4:24:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Build Version 9184. Branch Rec_Ber1. Contains fix for crash during StartResync for V2A scenarios, if previous resync session is not completed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101450",
+    "downloadPreload": true
+}

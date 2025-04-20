@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 R2 CU8",
+    "downloadDescription": "Microsoft BizTalk Server 2013 R2 CU8",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-ITA.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-ITA.exe",
+            "size": "33422840",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-ESP.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-ESP.exe",
+            "size": "33419256",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-CHS.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-CHS.exe",
+            "size": "33420784",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-DEU.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-DEU.exe",
+            "size": "33446392",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-KOR.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-KOR.exe",
+            "size": "33389048",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-CHT.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-CHT.exe",
+            "size": "33410040",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-ENU.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-ENU.exe",
+            "size": "31516152",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-JPN.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-JPN.exe",
+            "size": "33442288",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-KB4052527-FRA.exe",
+            "url": "https://download.microsoft.com/download/0/3/1/031e55e9-9fd0-4f70-b37f-907a45543b5e/BTS2013R2-KB4052527-FRA.exe",
+            "size": "33457136",
+            "version": "3.11.304.2",
+            "datePublished": "7/15/2024 4:46:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 R2 CU8",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.11.304.2",
+    "detailsSection_file_name": [
+        "BTS2013R2-KB4052527-ITA.exe",
+        "BTS2013R2-KB4052527-ESP.exe",
+        "BTS2013R2-KB4052527-CHS.exe",
+        "BTS2013R2-KB4052527-DEU.exe",
+        "BTS2013R2-KB4052527-KOR.exe",
+        "BTS2013R2-KB4052527-CHT.exe",
+        "BTS2013R2-KB4052527-ENU.exe",
+        "BTS2013R2-KB4052527-JPN.exe",
+        "BTS2013R2-KB4052527-FRA.exe"
+    ],
+    "detailsSection_file_size": [
+        "31.9 MB",
+        "31.9 MB",
+        "31.9 MB",
+        "31.9 MB",
+        "31.8 MB",
+        "31.9 MB",
+        "30.1 MB",
+        "31.9 MB",
+        "31.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2013 or 2010\r\n.NET Framework 4.5 and .NET Framework 4.5.1\r\nVisual Studio 2013\r\nSQL Server 2014 or SQL Server 2012 SP1\r\nSharePoint 2013 SP1\r\nMicrosoft BizTalk Server 2013 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56714",
+    "downloadPreload": true
+}

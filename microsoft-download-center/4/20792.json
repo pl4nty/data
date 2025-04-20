@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Treasury and Cash Management - Click-Through Demo",
+    "downloadDescription": "This is a portable, interactive demo that closely simulates the UI and functionality of an actual solution. Installs to your Start menu and includes a presenter script.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "12TCM_setup.msi",
+            "url": "https://download.microsoft.com/download/d/6/4/d6488386-adba-4dc9-9fca-df9cd0c7b367/12TCM_setup.msi",
+            "size": "8402944",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a portable, interactive demo that closely simulates the UI and functionality of an actual solution. Installs to your Start menu and includes a presenter script.  <br />\nScenario summary: <br />\nTreasury and cash management is an increasingly strategic and important function for companies. Hindered by manual-intensive processes and a lack of quick, integrated, comprehensive and accurate financial information, employees are challenged to meet financial objectives and regulatory demands while keeping costs down. Through greater data integration, enhanced reporting & analytics, streamlined processes and improved document and data management, a solution built using the 2007 Microsoft Office system helps an organization\u2019s treasury employees to maximize investment returns, effectively manage risk and reduce operational costs \u2013 while maintaining better control and financial transparency.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "12TCM_setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP Service Pack 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "To install this download: <br />\n1. Click the Download button on this page to start the download <br />\n2. Click Run to start installation<br />\n3. Follow the instructions on the installation wizard to complete the installation<br />\n4. To launch this demo, click the Start menu, point to All Programs, point to Microsoft Office System Demos, point to this demo, and then click Launch Demo.<br />\n<br />\nTo save this download:<br />\nTo save the download to your computer for installation at a later time, click Save. <br />\n<br />\nTo remove this download:<br />\nOn the Start menu, point to All Programs, point to Microsoft Office System Demos, point to this demo, and then click uninstall demo.",
+    "relatedResourcesSection": [
+        {
+            "title": "solution Showcase - Customer Web Site",
+            "url": "http://www.microsoft.com/office/showcase/default.mspx"
+        },
+        {
+            "title": "solution Showcase for Restaurant Business Intelligence - Partner Web Site",
+            "url": "https://partner.microsoft.com/40025022"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20792",
+    "downloadPreload": true
+}

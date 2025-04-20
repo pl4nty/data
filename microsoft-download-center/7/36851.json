@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint 2013 Indexing Connector for Documentum",
+    "downloadDescription": "Microsoft SharePoint 2013 Indexing Connector for Documentum enables your SharePoint 2013 products to index the contents of an EMC Documentum repository.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dctmindexconn.exe",
+            "url": "https://download.microsoft.com/download/c/f/6/cf6316ae-d4ab-4502-8cb9-92c1737cdf5f/dctmindexconn.exe",
+            "size": "562384",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SharePoint 2013 Indexing Connector for Documentum enables SharePoint 2013 products to index the contents of an EMC Documentum repository.  Once indexed, users of SharePoint 2013 products can search full text contents of Documentum repository. These capabilities are based on the indexing connector's ability to natively access the appropriate file content, metadata and security implementation of the EMC Documentum system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "dctmindexconn.exe"
+    ],
+    "detailsSection_file_size": [
+        "549.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n<li>\r\nWindows Server 2008 R2, Windows Server 2008 Service Pack 2, and Windows Server 2012\r\n</li>\r\n</ul>\r\n</ul>\r\n<ul>\r\n<li><b>The SharePoint 2013 Indexing Connector for Documentum works with the following SharePoint 2013 products:</b>\r\n<br/>\r\n<ul>\r\n<li>Microsoft SharePoint Server 2013 Enterprise, Microsoft SharePoint Server 2013 Standard</li>\r\n</ul></li>\r\n</ul>\r\n<ul>\r\n<li><b>The following Documentum components are also required to setup the SharePoint 2013 Indexing Connector for Documentum:</b><br/>\r\n<ul>\r\n<li>A Documentum Foundation Services (DFS) Server with a version that is compatible with DFS Productivity Layer 6.7 SP2 is installed on a Windows host</li>\r\n<li>DFS Productivity Layer 6.7 SP2 is installed and you have access to the .NET assemblies that are included in the DFS Productivity Layer 6.7 SP2. The Indexing Connector for Documentum uses DFS as the connectivity API to access Documentum repositories.</li>\r\n<li>Documentum Content Server is installed. The supported versions of Documentum Content Server are determined by DFS v6.7 SP2. You can find a detailed list in the DFS Productivity Layer v6.7 SP2 release notes. You can download the release notes from the EMC customer support site <a href='http://powerlink.emc.com'>http://powerlink.emc.com</a></li>\r\n\r\n\r\n\r\n</ul></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "A comprehensive <a href='http://go.microsoft.com/fwlink/?LinkId=286290'>guide</a> is available on TechNet that provides detailed instructions on how to install and configure the SharePoint 2013 Indexing Connector for Documentum.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36851",
+    "downloadPreload": true
+}

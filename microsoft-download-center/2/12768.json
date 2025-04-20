@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 performance and capacity test results and recommendations",
+    "downloadDescription": "These white papers describe the performance and capacity impact of specific feature sets included in Microsoft SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MySitesSocialComputingCapacityPlanningDoc.docx",
+            "url": "https://download.microsoft.com/download/7/f/0/7f069d0b-b6bd-4692-868b-e8555bb72445/MySitesSocialComputingCapacityPlanningDoc.docx",
+            "size": "265805",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointServerCachesPerformance.docx",
+            "url": "https://download.microsoft.com/download/7/f/0/7f069d0b-b6bd-4692-868b-e8555bb72445/SharePointServerCachesPerformance.docx",
+            "size": "745308",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeWebAppsCapacityPlanningDoc.docx",
+            "url": "https://download.microsoft.com/download/7/f/0/7f069d0b-b6bd-4692-868b-e8555bb72445/OfficeWebAppsCapacityPlanningDoc.docx",
+            "size": "241113",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "These white papers describe the performance and capacity impact of specific feature sets included in SharePoint Server 2010. These white papers include information about the performance and capacity characteristics of the feature and how it was tested by Microsoft, including:\r\n<UL>\r\n<LI>Test farm characteristics</LI>\r\n<LI>Test results</LI>\r\n<LI>Recommendations</LI>\r\n<LI>Troubleshooting performance and scalability</LI>\r\n</UL>\r\nFor a complete list of white papers and articles related to performance and capacity test results and recommendations, see <a href=\"http://technet.microsoft.com/en-us/library/ff608068.aspx\">Performance and capacity test results and recommendations (SharePoint Server 2010)</a>.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "MySitesSocialComputingCapacityPlanningDoc.docx",
+        "SharePointServerCachesPerformance.docx",
+        "OfficeWebAppsCapacityPlanningDoc.docx"
+    ],
+    "detailsSection_file_size": [
+        "259.6 KB",
+        "727.8 KB",
+        "235.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><B>Requirements:</B> To download and read a white paper, you must have Microsoft Word.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12768",
+    "downloadPreload": true
+}

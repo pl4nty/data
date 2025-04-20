@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Back up and restore: SharePoint Server 2013",
+    "downloadDescription": "This model illustrates various ways that you can back up and restore a SharePoint environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "itpro-2013-br-poster.pdf",
+            "url": "https://download.microsoft.com/download/9/b/7/9b7f2298-9640-425b-a435-047a58c3fbbd/itpro-2013-br-poster.pdf",
+            "size": "411236",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "itpro-2013-br-poster.vsd",
+            "url": "https://download.microsoft.com/download/9/b/7/9b7f2298-9640-425b-a435-047a58c3fbbd/itpro-2013-br-poster.vsd",
+            "size": "1660416",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Use this model to help you understand how to plan to back up and restore a SharePoint environment. The model explains the scenarios that backup and restore supports, and it includes a diagram of tasks that comprise the process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "itpro-2013-br-poster.pdf",
+        "itpro-2013-br-poster.vsd"
+    ],
+    "detailsSection_file_size": [
+        "401.6 KB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30365",
+    "downloadPreload": true
+}

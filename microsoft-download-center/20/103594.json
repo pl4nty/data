@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "HBase BulkLoader-Using Hive To HBase Integration Approach",
+    "downloadDescription": "HBase Bulk Loader using Hive\u0002HBase Integration Method on Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HBaseBulkLoader-UsingHiveToHBaseIntegrationApproach.pdf",
+            "url": "https://download.microsoft.com/download/5/d/d/5dd77b5e-5f7e-49e9-8ea9-c5656d51c77b/HBaseBulkLoader-UsingHiveToHBaseIntegrationApproach.pdf",
+            "size": "783879",
+            "version": "1.0",
+            "datePublished": "4/15/2024 5:03:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Hive-HBase integration approach offers a way to use Hive SQL capabilities to administer and \r\nmanage entities defined in HBase data store. HBase offers a bulkloader \r\napproach to ingest large volumes of data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HBaseBulkLoader-UsingHiveToHBaseIntegrationApproach.pdf"
+    ],
+    "detailsSection_file_size": [
+        "765.5 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Whitepaper / Documentation",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Documentation",
+    "additionalInformationSection": "\r\nHBase BulkLoader-Using Hive To HBase Integration Approach",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103594",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Intune Connector for Active Directory",
+    "downloadDescription": "Intune Connector for Active Directory",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ODJConnectorBootstrapper.exe",
+            "url": "https://download.microsoft.com/download/c/6/d/c6daa9fd-7dca-4577-9016-ae72a8150149/ODJConnectorBootstrapper.exe",
+            "size": "5020768",
+            "version": "6.2304.38.4",
+            "datePublished": "7/15/2024 4:59:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "On-premises Intune Connector for Active Directory<br/>\r\n<br/>\r\n<b>Release History</b>\r\n<ul>\r\n<li> 05/16/2023 - Update release,  version 6.2304.38.4, Security improvement</li>\r\n<li> 06/10/2022 - Update release,  version 6.2204.38.3, Security improvement</li>\r\n<li> 08/31/2018 - Original release, version 6.1810.101.7 </li>\r\n</ul>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.2304.38.4",
+    "detailsSection_file_name": [
+        "ODJConnectorBootstrapper.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft .Net Framework 4.7.2 or later<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Install from Intune Connector for Active Directory page<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105392",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Thin PC (KB3168658)",
+    "downloadDescription": "Resolves an issue that might occur with the Keyboard Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB3168658-x86.msu",
+            "url": "https://download.microsoft.com/download/3/5/e/35e4f51f-d547-49f5-95b9-f53103215560/Windows6.1-KB3168658-x86.msu",
+            "size": "243798",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB3168658 fixes the following issue:\r\n<br></br>\r\nWhere a system becomes unresponsive after a USB keyboard is unplugged and re-plugged back in while holding down a key.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB3168658-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "238.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Thin PC "
+    ],
+    "installInstructionSection": "This update is installed by executing file <b>Windows6.1-KB3168658-x86.msu</b> on a Windows Thin PC image. \r\n",
+    "additionalInformationSection": "This KB supersedes KB2685747",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53343",
+    "downloadPreload": true
+}

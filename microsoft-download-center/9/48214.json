@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 2009 (KB3055973)",
+    "downloadDescription": "Adds support for TLS 128-bit & 256-bit Advanced Encryption Standard (AES) cipher suites",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB3055973-v3-x86-Embedded-ENU.exe",
+            "url": "https://download.microsoft.com/download/2/e/5/2e520cef-fd33-4e02-a7b0-9930c44c06af/WindowsXP-KB3055973-v3-x86-Embedded-ENU.exe",
+            "size": "689904",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB3055973 adds the following functionality:\r\n<br></br>\r\nThis update adds support for the following Advanced Encryption Standard (AES) cipher suites in the Schannel.dll module for Windows Embedded POSReady 2009:\r\n<ul> \r\n<li>TLS_RSA_WITH_AES_128_CBC_SHA AES128-SHA</li>\r\n<li>TLS_RSA_WITH_AES_256_CBC_SHA AES256-SHA</li>\r\n</ul>\r\nNote: These cipher suites are based on the RC4 algorithm.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "WindowsXP-KB3055973-v3-x86-Embedded-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "673.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded POSReady 2009"
+    ],
+    "installInstructionSection": "Download and run the installer",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded POSReady 2009 MSDN",
+            "url": "https://msdn.microsoft.com/en-US/library/dn441478(v=winembedded.0).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48214",
+    "downloadPreload": true
+}

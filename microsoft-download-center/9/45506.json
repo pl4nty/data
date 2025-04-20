@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Software License Terms for Microsoft Dynamics NAV Image in the Azure Marketplace",
+    "downloadDescription": "Microsoft Software License Terms for a virtual machine image of Microsoft Dynamics NAV on Azure ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (EULA) - NAV on Azure VM (FINAL 1 22 2015).docx",
+            "url": "https://download.microsoft.com/download/7/8/5/785f5bea-a9b7-416e-a69b-b3a27b692b3f/MBS (EULA) - NAV on Azure VM (FINAL 1 22 2015).docx",
+            "size": "39772",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:57:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Software License Terms for a virtual machine image of Microsoft Dynamics NAV on Azure ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MBS (EULA) - NAV on Azure VM (FINAL 1 22 2015).docx"
+    ],
+    "detailsSection_file_size": [
+        "38.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li>Microsoft Dynamics NAV 2015</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Standard "
+    ],
+    "installInstructionSection": "To download the software license terms, choose the Download button.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45506",
+    "downloadPreload": true
+}

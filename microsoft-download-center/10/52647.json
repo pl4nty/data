@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "pfnum: LaTeX Proof-Step Renumbering",
+    "downloadDescription": "This program is for use with the LaTeX pf and pf2 packages. Last published: April 9, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "pfnum-win.zip",
+            "url": "https://download.microsoft.com/download/b/5/5/b5553a6e-cac2-4e87-97d6-da746d548f12/pfnum-win.zip",
+            "size": "39963",
+            "version": "1",
+            "datePublished": "11/15/2023 4:13:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This program is for use with the LaTeX pf and pf2 packages. It makes the symbolic labels of proof steps the same as the printed step numbers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "pfnum-win.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.0 KB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52647",
+    "downloadPreload": true
+}

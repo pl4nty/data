@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Release Management for Microsoft Visual Studio 2013 with Update 4",
+    "downloadDescription": "By using the innovative release and deployment tools in Release Management for Visual Studio 2013, you can automate the deployment of applications across the desktop, the server, and the cloud.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rm_server.exe",
+            "url": "https://download.microsoft.com/download/a/0/5/a05edd18-7318-4691-856d-6eaa97e6901f/rm_server.exe",
+            "size": "1006856",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "rm_client.exe",
+            "url": "https://download.microsoft.com/download/a/0/5/a05edd18-7318-4691-856d-6eaa97e6901f/rm_client.exe",
+            "size": "1006216",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vs2013.4_rm_enu.iso",
+            "url": "https://download.microsoft.com/download/a/0/5/a05edd18-7318-4691-856d-6eaa97e6901f/vs2013.4_rm_enu.iso",
+            "size": "303910912",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "rm_deploymenttrial90.exe",
+            "url": "https://download.microsoft.com/download/a/0/5/a05edd18-7318-4691-856d-6eaa97e6901f/rm_deploymenttrial90.exe",
+            "size": "1003128",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>NOTE: A new version of Release Management is available</b><br />\r\n\r\nStarting with TFS 2015 Update 2, Release Management features are integrated into Team Foundation Server (TFS) and into the RELEASE hub in TFS web access. For more information, see <a href=\"https://msdn.microsoft.com/Library/vs/alm/Release/overview\"> Release Management for TFS 2015 and VS Team Services</a> (https://msdn.microsoft.com/en-us/Library/vs/alm/Release/overview). <br /><br />\r\n\r\nIf you are considering starting with Release Management, you should use the new web-based version. If you are already using the server and client version described in this topic, you should be aware that no new features will be added to this version. We encourage you to move to new web-based version as soon as possible.<br />\r\n\r\nThis download of Release Management for Visual Studio 2013.4 contains the latest updates. These cumulative updates to Visual Studio 2013 include a variety of bug fixes and capability improvements. For information about the latest update, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=272487\">Visual Studio Updates</a> and the <a href=\"http://go.microsoft.com/fwlink/?LinkId=510328\">Visual Studio Update KB Article</a>.\n<br/>\n<br/>\nBy using Release Management for Visual Studio 2013, your development and operations teams can enable additional capabilities in Team Foundation Server 2013 so that they can more easily and more confidently configure and automate complex deployments to a variety of target environments. You can also model release processes, track approvals and sign-offs, and display release status graphically. \n<br/>\n<br/>\nRelease Management for Visual Studio 2013 requires Visual Studio Ultimate 2013, Visual Studio Premium 2013, or Test Professional 2013. The deployment agents are licensed separately for each target server. For licensing requirements refer to <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=13350\">Visual Studio and MSDN Licensing White Paper</a>.\n<br/>\n<br/>\n<b>Note</b>: To enable the release management capabilities, you must also install the Release Management Server for Team Foundation Server 2013. To model release processes and enable graphical views of release status, you must have the Release Management Client for Visual Studio 2013. For agent-based releases, on every target machine to which you want to publish deployments, you must install Microsoft Deployment Agent 2013. For vNext Releases, you don\u2019t need to install Microsoft Deployment Agent on the target machine.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "rm_server.exe",
+        "rm_client.exe",
+        "vs2013.4_rm_enu.iso",
+        "rm_deploymenttrial90.exe"
+    ],
+    "detailsSection_file_size": [
+        "983.3 KB",
+        "982.6 KB",
+        "289.8 MB",
+        "979.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed System Requirements see <a href=\"http://msdn.microsoft.com/en-us/library/dn593703.aspx\">System Requirements for Release Management</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Choose one of these installation options:\n<ul>\n<li>Install over the Internet:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To download an installer that you can run later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n</ul>\n</ul>\n<li>Download the Product Layout for Offline Installation:</li>\n<ul>\n<li>This will enable you to download a complete local copy to your computer. You can run Setup later without contacting the Internet, or you can copy and paste the installation layout in another location.</li> \n<li>On this page, choose the <b>Download</b> button. </li>\n<ul>\n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<li>Choose the <b>Save</b> button.</li>\n<li>Once the download is complete, open a command prompt, navigate to the download location, and run the .exe /layout.</li> \n<li>Specify where to download the files and click the <b>Download</b> button.</li> \n<li>Once downloaded, you can run the .exe from the download location to install the update.</li>\n</ul>\n</ul>\n<li>To download an image to burn on a DVD:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .iso option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>Choose the <b>Save</b> button to download a DVD5 ISO image so that you can burn a DVD later.</li>\n<ul>\n<li>After downloading the ISO file, you should use the <a href=\"http://support.microsoft.com/kb/841290\">File Checksum Integrity Verifier</a> tool to calculate and verify that the SHA-1 value for this file matches the value listed on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=517393\">Visual Studio 2013 ISO Files SHA-1 Values</a> page.</li> \n</ul>\n</ul>\n</ul>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "installation Guide",
+            "url": "http://go.microsoft.com/fwlink/?linkid=335793"
+        },
+        {
+            "title": "user Guide",
+            "url": "http://go.microsoft.com/fwlink/?linkid=335794"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44919",
+    "downloadPreload": true
+}

@@ -1,0 +1,146 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for System Center 2012 - App Controller",
+    "downloadDescription": "The Microsoft System Center 2012 - App Controller management pack is designed to be used for monitoring System Center 2012 - App Controller's health.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_Spanish.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_Spanish.msi",
+            "size": "458752",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_Russian.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_Russian.msi",
+            "size": "466944",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_Portuguese(Brazil).msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_Portuguese(Brazil).msi",
+            "size": "462848",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_Japanese.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_Japanese.msi",
+            "size": "466944",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_Italian.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_Italian.msi",
+            "size": "462848",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_German.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_German.msi",
+            "size": "458752",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_French.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_French.msi",
+            "size": "462848",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AppControllerMP_English.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_English.msi",
+            "size": "393216",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppControllerMP_Chinese.msi",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/AppControllerMP_Chinese.msi",
+            "size": "462848",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center 2012 - App Controller Management Pack Guide.doc",
+            "url": "https://download.microsoft.com/download/1/c/6/1c6962d9-53e7-4a3e-888f-21af609470e2/System Center 2012 - App Controller Management Pack Guide.doc",
+            "size": "260608",
+            "version": "1.0.1200.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft System Center 2012 - App Controller management pack is designed to be used for monitoring System Center 2012 - App Controller's health. It allows you to proactively manage App Controller and identify issues with the App Controller services, website and database. <br/>\r\n<br/>\r\nThe System Center 2012 - App Controller management pack includes rules to monitor and report on the availability of the App Controller services, website and database. <br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>4/6/2012 - Original English Release, version 1.0.1200.0 </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1200.0",
+    "detailsSection_file_name": [
+        "AppControllerMP_Spanish.msi",
+        "AppControllerMP_Russian.msi",
+        "AppControllerMP_Portuguese(Brazil).msi",
+        "AppControllerMP_Japanese.msi",
+        "AppControllerMP_Italian.msi",
+        "AppControllerMP_German.msi",
+        "AppControllerMP_French.msi",
+        "AppControllerMP_English.msi",
+        "AppControllerMP_Chinese.msi",
+        "System Center 2012 - App Controller Management Pack Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "448.0 KB",
+        "456.0 KB",
+        "452.0 KB",
+        "456.0 KB",
+        "452.0 KB",
+        "448.0 KB",
+        "452.0 KB",
+        "384.0 KB",
+        "452.0 KB",
+        "254.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b>System Center Operations Manager 2007 R2 or later </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "To use the English version of the System Center 2012 - App Controller Management Pack, you only need to download and install the English (EN) version of the Monitoring Pack. <br/>\r\n<br/>\r\nIf you want to use a localized version of the management pack, you must first download and install the English version of the monitoring pack. Then, you must download and install the language pack for your respective language. The English version of the management pack includes the prerequisites for all localized versions of the management pack. \r\n\r\nFor detailed information about installing and using this management pack, download and read the Management Pack for System Center 2012 - App Controller's Guide. That guide is available for download on this Web page. \r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center 2012 home page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=215830"
+        },
+        {
+            "title": "system Center 2012 - App Controller documentation",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=214115"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29304",
+    "downloadPreload": true
+}

@@ -1,0 +1,156 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Application Virtualization for Remote Desktop Services 4.6",
+    "downloadDescription": "\u2022 Microsoft Application Virtualization (App-V) for RDS helps solve application compatibility on Remote Desktop Session Hosts/Terminal Servers. App-V for RDS 4.6 now supports 64-bit operating systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MS APP-V FOR RDS v4.6.iso",
+            "url": "https://download.microsoft.com/download/1/7/7/177dbef6-3064-493b-98ca-1233b1f05601/MS APP-V FOR RDS v4.6.iso",
+            "size": "318662656",
+            "version": "4.6",
+            "datePublished": "7/15/2024 3:27:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "In Remote Desktop Services deployments, application conflicts can lead to silos of remote desktop session host servers. To avoid application conflicts, applications typically must undergo significant testing to determine which applications will collide and, therefore, must be separated and run on different session host silos\u2014a time-consuming and costly process. Separating out multiple remote desktop session hosts to accommodate specific applications routinely results in servers being underutilized because each one is locked into a specific configuration, capable of serving only a limited set of non-conflicting applications. Often, 20 servers are required to support 1,000 users. <br/>\r\n<br/>\r\nMicrosoft Application Virtualization for Remote Desktop Services 4.6 helps consolidate remote desktop session host servers by offering the following features and benefits: \r\n<ul>\r\n<li>Reduce app-to-app and multi-user application conflicts and hence the need for regression testing </li>\r\n<li>Accelerate application deployment by reducing the deployment risk </li>\r\n<li>Simplify profile management</li>\r\n<li>App-V for RDS 4.6 now supports 64-bit operating systems.</li>\r\n</ul>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6",
+    "detailsSection_file_name": [
+        "MS APP-V FOR RDS v4.6.iso"
+    ],
+    "detailsSection_file_size": [
+        "303.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "This download offers you the benefits of registering with Microsoft. Click the Continue button near the top of this page to register. After you have gone through the registration process, you will be returned to this page to begin the download",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Application Virtualization (Formerly SoftGrid) 4.5 Trial Guides",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=47&p=1&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=0890d6cd-0d3b-4c9d-b208-231c65d3e55a&u=details.aspx%3ffamilyid%3dAA787491-8D08-4D2F-8960-9E9F00226C7E%26displaylang%3den"
+        },
+        {
+            "title": "application Virtualization Dynamic Suite Composition Tool",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=47&p=2&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=0890d6cd-0d3b-4c9d-b208-231c65d3e55a&u=details.aspx%3ffamilyid%3dDAA898DF-455F-438A-AA2A-421F05894098%26displaylang%3den"
+        },
+        {
+            "title": "application Virtualization Cache Configuration Tool ",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=47&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=0890d6cd-0d3b-4c9d-b208-231c65d3e55a&u=details.aspx%3ffamilyid%3d5E7089FA-C6AB-4150-8562-3B5BC14CD881%26displaylang%3den"
+        },
+        {
+            "title": "application Virtualization SFT Parser Tool ",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=47&p=4&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=0890d6cd-0d3b-4c9d-b208-231c65d3e55a&u=details.aspx%3ffamilyid%3dE5A7DB27-304B-4CD1-9C80-7BA5FDAEA97F%26displaylang%3den"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22011",
+    "downloadPreload": true
+}

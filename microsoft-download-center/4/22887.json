@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 Guides: Manufacturing",
+    "downloadDescription": "This page includes links to the manufacturing documentation resources for Microsoft Dynamics GP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MfgPlanningFunctions.pdf",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgPlanningFunctions.pdf",
+            "size": "2359785",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgCoreFunctions.xps",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgCoreFunctions.xps",
+            "size": "4060444",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgProductionFunctions.pdf",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgProductionFunctions.pdf",
+            "size": "4497479",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgManagementFunctions.xps",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgManagementFunctions.xps",
+            "size": "3008375",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgSetup.xps",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgSetup.xps",
+            "size": "1565244",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgManagementFunctions.pdf",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgManagementFunctions.pdf",
+            "size": "2620553",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgPlanningFunctions.xps",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgPlanningFunctions.xps",
+            "size": "2911439",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgSetup.pdf",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgSetup.pdf",
+            "size": "1679958",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MfgProductionFunctions.xps",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgProductionFunctions.xps",
+            "size": "6175194",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MfgCoreFunctions.pdf",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bbf547-b5dc-439d-9eae-4367c7f291dd/MfgCoreFunctions.pdf",
+            "size": "3882424",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:26:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components: <br />\n<UL><LI><b>Manufacturing Core Functions</b> (MfgCoreFunctions.pdf or MfgCoreFunctions.xps): Includes setup information and describes how Manufacturing extends Inventory Control and Sales Order Processing. Bill of Materials, the Sales Configurator, and manufacturing reports also are discussed.</LI>\n<LI><b>Manufacturing Management Functions</b> (MfgManagementFunctions.pdf or MfgManagementFunctions.xps): Explains how to set up and use information for quality assurance, job costing, and engineering change management.</LI>\r\n<LI><b>Manufacturing Planning Functions</b> (MfgPlanningFunctions.pdf or MfgPlanningFunctions.xps): Explains how to create and use sales forecasts and master production schedules. Describes how to view capacity requirements planning information, and update and calculate material requirements planning information.</LI>\r\n<LI><b>Manufacturing Production Functions</b> (MfgProductionFunctions.pdf or MfgProductionFunctions.xps): Explains how to work with routings and manufacturing orders, including orders for outsourcing. Also discusses work in process information.</LI>\r\n<LI><b>Manufacturing Setup</b> (MfgSetup.pdf or MfgSetup.xps): Explains how to set up your Manufacturing system, including users and each component. You can use Manufacturing to organize and track the daily operations of the manufacturing process.</LI>\r\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "MfgPlanningFunctions.pdf",
+        "MfgCoreFunctions.xps",
+        "MfgProductionFunctions.pdf",
+        "MfgManagementFunctions.xps",
+        "MfgSetup.xps",
+        "MfgManagementFunctions.pdf",
+        "MfgPlanningFunctions.xps",
+        "MfgSetup.pdf",
+        "MfgProductionFunctions.xps",
+        "MfgCoreFunctions.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "3.9 MB",
+        "4.3 MB",
+        "2.9 MB",
+        "1.5 MB",
+        "2.5 MB",
+        "2.8 MB",
+        "1.6 MB",
+        "5.9 MB",
+        "3.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF or XPS file format.</LI>\r\n<LI>Save the files to your computer. When prompted for a location for the files, save them to the Documentation folder in your Microsoft Dynamics GP 2010 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2010\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing files, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the manuals, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22887",
+    "downloadPreload": true
+}

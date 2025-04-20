@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Domain Name System (DNS) Service Product Operations Guide",
+    "downloadDescription": "This guide has been repackaged and rereleased for easier downloading. The material itself has not been updated since its publication in 2003. The guide describes processes and procedures for improving the management of Microsoft Windows Server 2003 Domain Name System (DNS) Service in your infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DNS Service POG.docx",
+            "url": "https://download.microsoft.com/download/4/b/d/4bd0dbb3-2cb8-4c4f-b289-aabe38b94ecc/DNS Service POG.docx",
+            "size": "495432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Operations Framework (MOF) Product Operations Guides (POGs) provide processes and procedures for improving the management of various Microsoft technologies. These guides continue to provide value for users, but because they were developed in 2003, they contain some outdated content. Visit the <a href=\"http://technet.microsoft.com/en-us/solutionaccelerators/dd320379.aspx\" >MOF home page</a> to access newer, more relevant content, and learn more about how MOF 4.0 can save you time and money.<br />\r\n<br />\r\nThe DNS guide is divided into six chapters. The first chapter provides basic background information. The second chapter provides a high-level checklist of the tasks required for maintaining this product. The third chapter takes a more detailed look at the tasks described in the maintenance chapter. The fourth chapter organizes tasks by the MOF role cluster responsible for each task. The fifth chapter provides information about common troubleshooting techniques for the Windows Server 2003 DNS Service. The sixth chapter addresses audit logging behavior that applies to the DNS Service provided with Windows Server 2003.<br />\n<br />Send questions or feedback to us directly at <a href=\"mailto:satfdbk@microsoft.com\">satfdbk@microsoft.com</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DNS Service POG.docx"
+    ],
+    "detailsSection_file_size": [
+        "483.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Microsoft Office Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac&displaylang=en\">Word Viewer</a> (available as a free download) can be used to view the document.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>To start the download process, click the <b>Download</b> button above the Quick Details section.</li><br />\r\n<li>Save the file to the location of your choice on your computer. </li><br /></ol>\r\n",
+    "additionalInformationSection": "<a href=\"http://technet.microsoft.com/en-us/solutionaccelerators/default.aspx\">Solution Accelerators</a> are free, scenario-based guides and automations designed to help IT Professionals who are proactively planning, deploying, and operating IT systems using Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration. <br /><br />\r\n<b>Get  the <i>Solution Accelerator Notifications</i> Newsletter</b><br/><br/>\r\nSubscribe to the <a href=\"http://go.microsoft.com/fwlink/?linkid=54982\"><i>Solution Accelerator Notifications</i></a> newsletter so that you can stay informed about new Solution Accelerator releases and updates. The newsletter covers such areas of interest as<br/><br/>\r\n<ul><li>Communication & Collaboration</li><li>Security, Data Protection, & Recovery</li><li>Deployment</li><li>Operations & Management</li></ul><br/>\r\nYou may also receive invitations to participate in accelerator development via beta programs and customer surveys. <i>Solution Accelerator Notifications</i> is currently available in English only.<br></br><br>If you\u2019ve used a Solution Accelerator within your organization, please share your experience with us by completing this <a href=\"http://go.microsoft.com/fwlink/?LinkID=132579\">short survey</a> (less than ten minutes long).</br>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Operations Framework",
+            "url": "http://technet.microsoft.com/en-us/solutionaccelerators/dd320379.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24497",
+    "downloadPreload": true
+}

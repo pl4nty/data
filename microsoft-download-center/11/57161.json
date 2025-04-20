@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Update 3 fixes",
+    "downloadDescription": "This update fixes some issues of HPC Pack 2012 R2 Update 3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB4344029_x64.exe",
+            "url": "https://download.microsoft.com/download/2/d/c/2dcb84d2-cf2c-46d6-969b-61dc07544c3f/KB4344029_x64.exe",
+            "size": "59317136",
+            "version": "4.05.5194",
+            "datePublished": "7/15/2024 4:57:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB4344029_x86.exe",
+            "url": "https://download.microsoft.com/download/2/d/c/2dcb84d2-cf2c-46d6-969b-61dc07544c3f/KB4344029_x86.exe",
+            "size": "59251600",
+            "version": "4.05.5194",
+            "datePublished": "7/15/2024 4:57:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update fixes some known issue of HPC Pack 2012 R2 Update 3 as described as below<br/>\r\n<br/>\r\n<b>HPC Pack fixes</b> <br/>\r\n- Fix a bug that job will be stuck in queued state if its unit type is Node, has Single Node property and NodeGroup assigned. <br/>\r\n- Fix a bug that activity Log may not refresh in UI. <br/>\r\n- Support operating system with French for compute/workstation/broker node. <br/>\r\n- Add a new value \u201cKEEP\u201d for job environment variable HPC_CREATECONSOLE, when this value specified, we will create a new logon console session if not exists or attach to the existing one and keep the console session after the job completes on the compute nodes. <br/>\r\n- By default, scheduler will use job\u2019s runas user credential to do an \u201cInteractive\u201d logon on the compute node. And sometime the \u201cInteractive\u201d logon permission may be banned by your domain policy. We now introduced a new job environment variable \"HPC_JOBLOGONTYPE\" so that user could specify different logon type to mitigate the issue. The value of job environment variable could be set to 2,3,4,5,7,8,9 as below, more refer to \"https://msdn.microsoft.com/en-us/library/windows/desktop/aa378184(v=vs.85).aspx\"<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsppublic enum LogonType<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp{<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInteractive = 2,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNetwork = 3,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBatch = 4,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspService = 5,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspUnlock = 7,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNetworkClearText = 8,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNewCredentials = 9,<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp}<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.05.5194",
+    "detailsSection_file_name": [
+        "KB4344029_x64.exe",
+        "KB4344029_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "56.6 MB",
+        "56.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "HPC Pack 2012 R2 Update 3 (build 4.5.5079.0) with QFE 3189996 (build 4.5.5161.0) installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This update needs to be run on all head nodes, broker nodes, workstation nodes, compute nodes and clients<br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2012 R2 Update 3 is installed. The version number (in HPC Cluster Manager, click <b>Help</b>><b>About</b>) should be 4.5.5161.0 (or 4.5.5168 if KB4032368 installed, 4.5.5170 if KB4035415 installed, 4.5.5187 if KB4039431 installed). Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\n<b>Applying the update</b><br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB4344029_x64.exe for the 64-bit version, KB4344029_x86.exe for the 32-bit version) and then:<br/>\r\n<br/>\r\n1. Click Save to copy the download to your computer.<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows.<br/>\r\nNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update.<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node.<br/>\r\nNote: If you have high availability head nodes, run the fix on the active node, move the node to passive, and after failover occurs run the fix on the new active node. Do this for all head nodes in the cluster.<br/>\r\n4. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes.\r\n<br/>\r\nTo use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa. Copy the appropriate version of the update to a shared folder such as \\\\headnodename\\HPCUpdates .<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclusrun /nodegroup:ComputeNodes \\\\headnodname\\HPCUpdates\\KB4344029_x64.exe -unattend -SystemReboot<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclusrun /nodegroup:BrokerNodes \\\\headnodname\\HPCUpdates\\KB4344029_x64.exe -unattend -SystemReboot<br/>\r\n<b>Note</b>: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\n<b>Note</b>: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc .To update workstation nodes and unmanaged server nodes you may need to reboot.<br/>\r\n<br/>\r\n5. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb. Run the update executable<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc. Reboot your client computer<br/>\r\n<br/>\r\n6. You can run get-hpcpatchstatus.ps1 on headnode/computenodes/client under %CCP_HOME%bin to check the patch status. And the client version and server version will be 4.05.5194.0<br/>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack QFE KB3189996",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=54772"
+        },
+        {
+            "title": "hpc Pack QFE KB4032368",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?WT.mc_id=rss_alldownloads_all&id=55650"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57161",
+    "downloadPreload": true
+}

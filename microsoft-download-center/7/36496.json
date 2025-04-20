@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for RemoteAccess 2012",
+    "downloadDescription": "\u200bMicrosoft System Center Management Pack for Remote Access helps you monitor the health and availability of computers configured for Remote Access server role and running Windows Server 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows Server 2012 Remote Access_OM 2012.msi",
+            "url": "https://download.microsoft.com/download/4/b/8/4b893f44-69c4-46a5-9419-61ce9043f6d4/Microsoft Windows Server 2012 Remote Access_OM 2012.msi",
+            "size": "585728",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2012_MgtPack_RAS Guide.doc",
+            "url": "https://download.microsoft.com/download/4/b/8/4b893f44-69c4-46a5-9419-61ce9043f6d4/OM2012_MgtPack_RAS Guide.doc",
+            "size": "441856",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bMicrosoft System Center Management Pack for Remote Access helps you monitor the health and availability of computers configured for Remote Access server role and running Windows Server 2012. <br/>\r\n<br/>\r\nSystem Center Management Pack for Remote Access combines monitoring for DirectAccess and RRAS into a single management pack. Monitoring capabilities for DirectAccess have been enhanced to cover more components and encompass larger set of health scenarios. This management pack monitors the following conditions: <br/>\r\n<br/>\r\n<ol>\r\n<li>DirectAccess Monitoring</li>\r\n<ul>\r\n<li>Issues with internal and external network adapter connection and settings such as forwarding </li>\r\n<li>State of transition technologies such as teredo, 6to4 etc</li>\r\n<li>State of underlying services</li>\r\n<li>Heuristics around network security such as DOS attack, spoof attack etc</li>\r\n</ul>\r\n<li>VPN Monitoring</li>\r\n<ul>\r\n<li>Connection failures</li>\r\n<li>Erroneous configuration </li>\r\n<li>Other erroneous conditions such as hardware device error, IP-Sec related failures etc</li>\r\n<li>Support for monitoring performance counters and instrumentation</li>\r\n</ul>\r\nAll existing support for VPN Server monitoring has been ported to this combined pack.\r\n</ol>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>1/25/2013 - Original English release, version 7.0.8560.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8560.0",
+    "detailsSection_file_name": [
+        "Microsoft Windows Server 2012 Remote Access_OM 2012.msi",
+        "OM2012_MgtPack_RAS Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "572.0 KB",
+        "431.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software</b> - System Center 2012 - Operations Manager</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36496",
+    "downloadPreload": true
+}

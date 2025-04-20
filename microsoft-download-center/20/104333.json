@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for Active Directory",
+    "downloadDescription": "The Integration Pack for Active Directory is an add-on for System Center 2022 Orchestrator that enables you to automate common Active Directory management functions.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_2022_IntegrationPack_for_ActiveDirectory.oip",
+            "url": "https://download.microsoft.com/download/4/b/9/4b9924b3-0c94-408d-9d22-0e610706fee7/System_Center_2022_IntegrationPack_for_ActiveDirectory.oip",
+            "size": "957868",
+            "version": "prod",
+            "datePublished": "7/15/2024 4:32:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for Active Directory is an add-on for System Center 2022 Orchestrator that enables you to connect Orchestrator to your Active Directory Server to automate its management.<br />\r\n<b>Release History</b><br />\r\n<ul>\r\n<li> 06/30/2022 - Original English release, version 10.22.1.1 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "prod",
+    "detailsSection_file_name": [
+        "System_Center_2022_IntegrationPack_for_ActiveDirectory.oip"
+    ],
+    "detailsSection_file_size": [
+        "935.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> System Center 2022 - Orchestrator </li>\r\n<li> Windows Server 2019 or higher </li>\r\n<li> .NET Framework 4.0 or higher (.NET 4.7.2 recommended) </li>\r\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the .oip file, register the Integration Pack in Deployment Manager and then deploy the Integration Pack on Runbook Designer and Runbook Server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104333",
+    "downloadPreload": true
+}

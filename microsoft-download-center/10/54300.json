@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Software Defined Networking (SDN) Management Pack",
+    "downloadDescription": "Software Defined Networking (SDN) Management Pack",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for Windows Server 2016 and above SDN.docx",
+            "url": "https://download.microsoft.com/download/a/3/0/a30bf7cc-78c9-4702-b3f2-3859ca824dc5/Management Pack Guide for Windows Server 2016 and above SDN.docx",
+            "size": "135724",
+            "version": "10.0.0.2",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for SDN Monitoring.msi",
+            "url": "https://download.microsoft.com/download/a/3/0/a30bf7cc-78c9-4702-b3f2-3859ca824dc5/Microsoft System Center Management Pack for SDN Monitoring.msi",
+            "size": "770048",
+            "version": "10.0.0.2",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Monitoring Pack allows a SCOM user to monitor the SDN Fabric and Tenant resources in a Windows Server 2016 and above deployment including: Network Controller Nodes, Servers, Virtual Networks, Access Control Lists, Load Balancers, Gateways, and VM NICs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.0.2",
+    "detailsSection_file_name": [
+        "Management Pack Guide for Windows Server 2016 and above SDN.docx",
+        "Microsoft System Center Management Pack for SDN Monitoring.msi"
+    ],
+    "detailsSection_file_size": [
+        "132.5 KB",
+        "752.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016 and above\r\nSCOM 2016 and higher",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "1. Save this Download locally on the machine running SCOM and then Run It to install the MP files\r\n2. Open SCOM Operations Console \r\n3. Click on Administration and Select Device Management | Agentless Managed\r\n4. Add the Network Controller nodes as agentless nodes to be managed\r\n5. In the Administration Pane, Select Management Packs | Installed Management Packs\r\n6. Navigate to Tasks | Import Management Packs ...\r\n7. Click Add and Select \"From Disk\"\r\n8. Navigate to where the MP files are located on disk (e.g. C:\\Program Files (x86)\\System Center Management Packs\\Microsoft System Center 2016 MP for SDN monitoring)\r\n9. Select both the SDNMonitoring and SDNMonitoring.Images MP files and Import the MPs\r\n10. In the Administration Pane , Select Run As Configuration | Accounts and Create a new RunAs account which has group membership in the Network Controller Clients Kerberos Security Group (Specified when the Network Controller was deployed)\r\n11. Update the \"SDN Monitoring Account\" under the Run As Configuration | Account Profiles screen and select the RunAs account previously created\r\n12. Add the Network Controller's REST Endpoint X.509 Certificate (public key only) to the localmachine\\root store on the SCOM VM (used to deploy Network Controller)\r\n13. Go to the Monitoring Tab and select \"SDN Monitoring\"\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54300",
+    "downloadPreload": true
+}

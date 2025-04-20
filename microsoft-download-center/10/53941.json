@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Management 2016 SP1 Privileged Access Management Deployment Scripts",
+    "downloadDescription": "Set of deployment scripts which makes it easier to deploy PAM.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIM 2016 SP1 PAM Deployment Scripts.zip",
+            "url": "https://download.microsoft.com/download/6/f/6/6f68877b-dc8f-45a1-a5e7-4db8d9b2d071/MIM 2016 SP1 PAM Deployment Scripts.zip",
+            "size": "96167",
+            "version": "4.4.1237.0",
+            "datePublished": "7/15/2024 4:47:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This set of deployment powershell scripts will help IT administrators to deploy and setup PAM in their enviroments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.4.1237.0",
+    "detailsSection_file_name": [
+        "MIM 2016 SP1 PAM Deployment Scripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "93.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Identity Management 2016 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Click download to extract this package and read the document file for details.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53941",
+    "downloadPreload": true
+}

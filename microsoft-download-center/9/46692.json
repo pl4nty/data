@@ -1,0 +1,204 @@
+{
+    "error": "",
+    "downloadTitle": "April 2015 Security Release ISO Image",
+    "downloadDescription": "April 2015 Security Release ISO Image",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-201504.iso",
+            "url": "https://download.microsoft.com/download/e/4/d/e4d0ec13-d853-4da4-af40-c3b3d7c531cd/Windows-KB913086-201504.iso",
+            "size": "3273185280",
+            "version": "3045755",
+            "datePublished": "7/15/2024 3:48:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on April 14, 2015. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://technet.microsoft.com/en-us/security/bulletin\">http://technet.microsoft.com/en-us/security/bulletin</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />  This DVD5 image contains the following updates: <br /><b><a href=\"http://support.microsoft.com/kb/3045755\">KB3045755</a></b> / <b><a href=\"\">()</a></b><ul><li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Server 2012 R2</li></ul><b><a href=\"http://support.microsoft.com/kb/3045685\">KB3045685</a></b> / <b><a href=\"\">(MS15-038)</a></b><ul><li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Vista</li>\r\n<li>Windows 8</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li></ul><b><a href=\"http://support.microsoft.com/kb/3046306\">KB3046306</a></b> / <b><a href=\"\">(MS15-035)</a></b><ul><li>Windows 7</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li></ul><b><a href=\"http://support.microsoft.com/kb/3048051\">KB3048051</a></b> / <b><a href=\"\">()</a></b><ul><li>Windows XP</li></ul><b><a href=\"http://support.microsoft.com/kb/3046482\">KB3046482</a></b> / <b><a href=\"\">(MS15-039)</a></b><ul><li>Windows Vista</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows 7</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li></ul><b><a href=\"http://support.microsoft.com/kb/3045711\">KB3045711</a></b> / <b><a href=\"\">(MS15-040)</a></b><ul><li>Windows Server 2012 R2</li></ul><b><a href=\"http://support.microsoft.com/kb/3033395\">KB3033395</a></b> / <b><a href=\"\">(MS15-025)</a></b><ul><li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003</li></ul><b><a href=\"http://support.microsoft.com/kb/3047234\">KB3047234</a></b> / <b><a href=\"\">(MS15-042)</a></b><ul><li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li></ul><b><a href=\"http://support.microsoft.com/kb/3042553\">KB3042553</a></b> / <b><a href=\"\">(MS15-034)</a></b><ul><li>Windows 7 for x64-based Systems</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 7</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2012</li></ul><b><a href=\"http://support.microsoft.com/kb/3045999\">KB3045999</a></b> / <b><a href=\"\">(MS15-038)</a></b><ul><li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows 8 for x64-based Systems</li></ul><b><a href=\"http://support.microsoft.com/kb/3002657\">KB3002657</a></b> / <b><a href=\"\">(MS15-027)</a></b><ul><li>Windows Server 2003</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Server 2003 x64 Edition</li></ul><b><a href=\"http://support.microsoft.com/kb/3038314\">KB3038314</a></b> / <b><a href=\"\">(MS15-032)</a></b><ul><li>Windows Embedded Standard 7 for x64-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 7</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3045755; KB3045685; KB3046306; KB3048051; KB3046482; KB3045711; KB3033395; KB3047234; KB3042553; KB3045999; KB3002657; KB3038314",
+        "name": "KB3045755; KB3045685; KB3046306; KB3048051; KB3046482; KB3045711; KB3033395; KB3047234; KB3042553; KB3045999; KB3002657; KB3038314"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS15-038; MS15-035; MS15-039; MS15-040; MS15-025; MS15-042; MS15-034; MS15-027; MS15-032",
+        "name": "MS15-038; MS15-035; MS15-039; MS15-040; MS15-025; MS15-042; MS15-034; MS15-027; MS15-032"
+    },
+    "detailsSection_file_version": "3045755",
+    "detailsSection_file_name": [
+        "Windows-KB913086-201504.iso"
+    ],
+    "detailsSection_file_size": [
+        "3.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Embedded Standard 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "46692",
+    "downloadPreload": true
+}

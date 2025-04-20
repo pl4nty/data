@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "DDR2 DRAM Controller for BEE3",
+    "downloadDescription": "The distribution consists of: 1) a document describing the design; 2) all Verilog source-code modules required to build the design; 3) a subdirectory containing an assembler for the TC5 RISC processor that is part of the design. Last published: November 25, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DDRCHv11.zip",
+            "url": "https://download.microsoft.com/download/0/1/2/0126ab09-e715-447d-bb68-54f60d753bec/DDRCHv11.zip",
+            "size": "661951",
+            "version": "1.1",
+            "datePublished": "5/15/2024 4:11:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The distribution consists of: 1) a document describing the design; 2) all Verilog source-code modules required to build the design; 3) a subdirectory containing an assembler for the TC5 RISC processor that is part of the design.  This is a Visual Studio C# program; 4) a Xilinx ISE Project File that builds the design; and 5) a Readme.txt file that describes how to install and use the design.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "DDRCHv11.zip"
+    ],
+    "detailsSection_file_size": [
+        "646.4 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52605",
+    "downloadPreload": true
+}

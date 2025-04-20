@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Security Trends in the Public Sector",
+    "downloadDescription": "Security Trends in the Public Sector - Key Findings and Recommendations",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Security-Trends-in-the-Public-Sector.pdf",
+            "url": "https://download.microsoft.com/download/c/b/0/cb07efe4-875a-4ad0-8fb0-90959b21e4f8/Security-Trends-in-the-Public-Sector.pdf",
+            "size": "236473",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:38:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This report identifies security trends in public sector organizations and outlines key findings and recommendations. Public sector organizations today are learning that data and asset protection is becoming more complex because of regulations with which they must comply, such as the European Union Data Protection Directive (EUDPD), and the increasing demand for self-service solutions. Additional resources are needed, but there are consistent and constants pressures to reduce budgets. As a result, public sector organizations worldwide are considering additional cloud-based solutions to achieve cost savings while actually increasing services.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Security-Trends-in-the-Public-Sector.pdf"
+    ],
+    "detailsSection_file_size": [
+        "230.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any Supported Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the PDF.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42937",
+    "downloadPreload": true
+}

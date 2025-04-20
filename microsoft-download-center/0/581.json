@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DNS Server GlobalNamesZone Deployment",
+    "downloadDescription": "DNS Server GNZ Deployment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dns-globalnames-zone-deployment-postbugedit.doc",
+            "url": "https://download.microsoft.com/download/d/a/8/da846926-eebf-4b97-b348-c53d2cc9fae8/dns-globalnames-zone-deployment-postbugedit.doc",
+            "size": "164864",
+            "version": "3",
+            "datePublished": "7/15/2024 3:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how to implement the DNS GlobalNames Zone on Windows Server 2008 (now in beta testing), a new feature that provides single-label name resolution for large enterprise networks that do not deploy Windows Internet Name Service (WINS) and where using DNS name suffixes to provide single-label name resolution is not practical.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "dns-globalnames-zone-deployment-postbugedit.doc"
+    ],
+    "detailsSection_file_size": [
+        "161.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Use this document to better understand the GlobalNames Zone feature in Windows Server 2008.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "581",
+    "downloadPreload": true
+}

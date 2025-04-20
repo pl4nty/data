@@ -1,0 +1,157 @@
+{
+    "error": "",
+    "downloadTitle": "Advanced Group Policy Management 4.0 Documents",
+    "downloadDescription": "These guides provide an overview of  Advanced Group Policy Management (AGPM) 4.0 and step-by-step guidance for installing AGPM 4.0, managing Group Policy objects (GPOs) by using AGPM 4.0, and planning and deploying AGPM 4.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AGPM40_Overview.docx",
+            "url": "https://download.microsoft.com/download/8/4/7/847130f5-6b22-4428-b1bc-997dc18e3778/AGPM40_Overview.docx",
+            "size": "1267432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AGPM40_Step-by-Step_Guide.docx",
+            "url": "https://download.microsoft.com/download/8/4/7/847130f5-6b22-4428-b1bc-997dc18e3778/AGPM40_Step-by-Step_Guide.docx",
+            "size": "117221",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AGPM40_OperationsGuide.docx",
+            "url": "https://download.microsoft.com/download/8/4/7/847130f5-6b22-4428-b1bc-997dc18e3778/AGPM40_OperationsGuide.docx",
+            "size": "180900",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AGPM40_Step-by-Step_Guide.pdf",
+            "url": "https://download.microsoft.com/download/8/4/7/847130f5-6b22-4428-b1bc-997dc18e3778/AGPM40_Step-by-Step_Guide.pdf",
+            "size": "313794",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AGPM40_OperationsGuide.pdf",
+            "url": "https://download.microsoft.com/download/8/4/7/847130f5-6b22-4428-b1bc-997dc18e3778/AGPM40_OperationsGuide.pdf",
+            "size": "1022835",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AGPM40_PlanningGuide.docx",
+            "url": "https://download.microsoft.com/download/8/4/7/847130f5-6b22-4428-b1bc-997dc18e3778/AGPM40_PlanningGuide.docx",
+            "size": "177019",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The following documents about AGPM 4.0 are available for download.\n\n<UL><LI><B>Overview of Microsoft Advanced Group Policy Management</B>: This white paper provides an overview of AGPM and describes its benefits, how it works, and the next steps for evaluating it. This document is designed for people evaluating AGPM.</LI>\n\n<LI><B>Step-by-Step Guide for Microsoft Advanced Group Policy Management 4.0</B>: This guide describes a sample scenario for installing AGPM and performing Group Policy management by using the Group Policy Management Console and AGPM. This guide is designed for people are evaluating AGPM 4.0 and for Group Policy administrators who are installing AGPM 4.0 or are using AGPM 4.0 for the first time. You can also view this document online at <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=153505\">Step-by-Step Guide for AGPM 4.0</A> (http://go.microsoft.com/fwlink/?LinkId=153505).</LI>\n\n<LI><B>Operations Guide for Advanced Group Policy Management 4.0</B>: This guide provides step-by-step instructions for performing tasks by using AGPM 4.0. It includes all of the information in the Help for AGPM. This guide is designed for Group Policy administrators of all levels who are using AGPM 4.0. You can also view this document online at <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=159872\">Operations Guide for AGPM 4.0</A> (http://go.microsoft.com/fwlink/?LinkId=159872).</LI>\n\n<LI><B>Planning Guide for Advanced Group Policy Management 4.0</B>: This guide provides an in-depth description of the processes, procedures, and decisions for planning the deployment of AGPM in a production environment. This guide is designed for administrators. Available in English only.</LI></UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AGPM40_Overview.docx",
+        "AGPM40_Step-by-Step_Guide.docx",
+        "AGPM40_OperationsGuide.docx",
+        "AGPM40_Step-by-Step_Guide.pdf",
+        "AGPM40_OperationsGuide.pdf",
+        "AGPM40_PlanningGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "114.5 KB",
+        "176.7 KB",
+        "306.4 KB",
+        "998.9 KB",
+        "172.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer<br />\nPDF file viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button to start the download.</LI>\n  <LI>Do one of the following: </LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Open</B>.</LI>\n    <LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI>\n    <LI>To cancel the installation, click <B>Cancel</B>.</LI>\n  </UL>\n</OL>\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "advanced Group Policy Management TechNet Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=146846"
+        },
+        {
+            "title": "microsoft Desktop Optimization Pack (MDOP) TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=159870"
+        },
+        {
+            "title": "group Policy TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=31191"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13975",
+    "downloadPreload": true
+}

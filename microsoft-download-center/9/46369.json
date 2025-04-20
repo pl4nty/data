@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business client awareness and readiness resources",
+    "downloadDescription": "Awareness and readiness resources for the Skype for Business client",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SfB_Client_Readiness.zip",
+            "url": "https://download.microsoft.com/download/5/e/c/5ec01224-9782-4ea4-bd23-1e730c6a5bfd/SfB_Client_Readiness.zip",
+            "size": "704890983",
+            "version": "Apr2015",
+            "datePublished": "4/15/2024 3:49:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download provides awareness and readiness resources to help organizations make a smooth transition to the new Skype for Business client. The download provides the following resources: Email Announcement and Countdown templates for communicating changes to an organization; Email Tips and Tricks templates; Videos to introduce the new Skype for Business client; How to videos for the new Skype for Business client; A customizable poster and handout to help evangelize how to run more effective meetings. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Apr2015",
+    "detailsSection_file_name": [
+        "SfB_Client_Readiness.zip"
+    ],
+    "detailsSection_file_size": [
+        "672.2 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "This download works with the following Office applications: Microsoft Office 2007 and later.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer. After you save the file, right-click it, and then extract the the files to a folder. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46369",
+    "downloadPreload": true
+}

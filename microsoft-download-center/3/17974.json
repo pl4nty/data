@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity and Access Management Series",
+    "downloadDescription": "This collection of technical papers is designed to help organizations understand identity and access management issues and related solutions that can be achieved with Microsoft technologies in heterogeneous IT environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Identity_and_Access_Management_Series_v1.4.zip",
+            "url": "https://download.microsoft.com/download/c/d/4/cd410e0a-d462-4a81-91e9-23a80c9ee314/Microsoft_Identity_and_Access_Management_Series_v1.4.zip",
+            "size": "5639776",
+            "version": "1.4",
+            "datePublished": "7/15/2024 3:10:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Overview.doc<br/><br/></b>The overview describes the series, how it is structured and provides information about the following:\n<ul><li>How to access the Tools and Templates</li>\n<li>Style conventions in the papers</li>\n<li>Consulting services and system integrators</li>\n<li>Independent hardware and software vendors</li>\n</ul><br/>\n<b>Fundamental Concepts.doc<br/><br/></b>This paper describes key concepts, terminology, and technologies for identity and access management. It includes common business, technology, and security challenges and approaches for overcoming these challenges. <br/><br/><b>Platform and Infrastructure.doc<br/><br/></b>This paper describes the common platform requirements and technology infrastructure for identity and access management solutions. <br/><br/><b>Identity Aggregation and Synchronization.doc<br/><br/></b>This paper describes the approaches and technologies available for integrating identity stores across a heterogeneous environment. It also provides implementation guidance for identity aggregation and synchronization between Microsoft Active Directory forests, Sun ONE Directory Server 5.1 (formerly iPlanet Directory Server), and Lotus Notes with Microsoft Identity Integration Server 2003, Enterprise Edition (MIIS 2003) with Service Pack 1 (SP1). <br/><br/><b>Password Management.doc<br/><br/></b>This paper describes the approaches and technologies available for managing passwords and enforcing strong password policy. The paper includes step-by-step implementation guidance for: <ul>  <li>Managing intranet passwords</li>  <li>Managing extranet passwords</li>  <li>Enforcing strong password policy</li></ul><br/><b>Provisioning and Workflow.doc</b><br/><br/>This paper discusses how to automatically provision identities into multiple directories and identity stores in a heterogeneous environment. It also discusses managing security and e-mail group memberships, and describes a workflow process that can extend automated processes. You can use the information in this paper to enable the automated administration of user identities and reduce costs while you increase the availability and security of information resources. This paper also provides detailed configuration tasks that you can use to achieve these results by using MIIS 2003 with SP1. <br/><br/><b>Intranet Access Management.doc<br/><br/></b>This paper describes the approaches available for intranet single sign on (SSO), access management, and platform and application integration. It also provides implementation guidance for: <ul>  <li>Integrating UNIX workstations with Active Directory.</li>  <li>Integrating SAP R/3 Application Server authentication using the Kerberos version 5 authentication protocol.</li></ul><br/><b>Extranet Access Management.doc<br/><br/></b>This paper describes the approaches available for extranet SSO, access management, and providing business-to-consumer (B2C), business-to-business (B2B), and business-to-employee (B2E) services. It also provides implementation guidance for: <ul>  <li>B2E extranet Web access and SSO using X.509 certificates.</li>  <li>B2C extranet Web access and SSO using Microsoft Passport.</li></ul><br/><b>Developing Identity-Aware ASP.NET Applications.doc<br/><br/></b>This paper discusses how to develop ASP.NET multi-tier extranet and intranet Web applications in Microsoft Visual C# and Microsoft Visual Basic .NET that are integrated with Microsoft Windows Server 2003 directory and security services. It also provides detailed implementation guidance and ASP.NET code samples (in C# and VB.NET) for: <ul>  <li>Intranet Web applications that use Windows-integrated authentication and Windows Authorization Manager.</li>  <li>Extranet Web applications for B2B, B2C, and B2E scenarios using Windows authentication (including Forms-based authentication, X.509 certificates, and Microsoft Passport) and Windows Authorization Manager.</li></ul><br/><b>Identity and Access Management Tools and Templates.msi<br/><br/></b>Several code samples and configuration files accompany each paper in the Identity and Access Management Tools and Templates.msi file that is part of this download.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4",
+    "detailsSection_file_name": [
+        "Microsoft_Identity_and_Access_Management_Series_v1.4.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=941B3470-3AE9-4AEE-8F43-C6BB74CD1466&mg_id=10049\">Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint File Formats</a> (available as a free download) can be used to open, edit, and save documents, workbooks, and presentations in the file formats new to Microsoft Office 2007.</li> \r\n<li>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Microsoft Word Viewer</a> (available as a free download) can be used to view Word documents.</li> \r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX",
+        "Linux",
+        "Solaris",
+        "Unix",
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ul>  <li>  Click the <b>Download</b> button at the top of the page to start the download. </li>  <li>  Do one of the following: </li>  <ul>  <li>   To start the .zip file extraction immediately, click <b>Open</b> or <b>Run</b>    <b>this program from its current location</b>. Then extract the files to your preferred location on your computer.   </li>  <li>   To save the download to your preferred location on your computer for .zip file extraction at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li></ul></ul> <ul>  <li>     To install the .msi package:   </li>  <ol>  <li>   Navigate to where you extracted the .zip file content on your hard drive.   </li>  <li>   Double-click the Identity and Access Management Tools and Templates.msi file. </li>  <li>   Accept the Microsoft Software License Terms.   </li>  <li>   Follow the steps in the installation dialog to complete the installation.   </li>  <li>   Find the installed files in your My Documents folder or by looking in the <b>Start/All Programs</b> menu for a shortcut.</li></ol></ul>",
+    "additionalInformationSection": "<b>Note</b> In version 1.4, the default install path for the Tools and Templates is %UserProfile%\\My Documents\\Identity and Access Management Tools and Templates. If you have a long user or domain name, you may receive an error message when installing the Tools and Templates. If you do see an error, shorten the length of the installation path, for example, to %UserProfile%\\My Documents\\IdM. <br/><br/>\nSolution Accelerators are free, scenario-based guides and automations designed to help IT Professionals who are proactively planning, deploying, and operating IT systems using Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration.<br /><br /><b>More Information about the <i>Solution Accelerator Notifications</i> Newsletter</b><br/><br/>\n<a href=\"http://technet.microsoft.com/en-us/solutionaccelerators/default.aspx\">Solution Accelerators</a> are free, scenario-based guides and automations designed to help IT \n\nProfessionals who are proactively planning, deploying, and operating IT systems using Microsoft products and technologies. Solution Accelerator scenarios focus on security \n\nand compliance, management and infrastructure, and communication and collaboration. <br /><br />\n<b>Get  the <i>Solution Accelerator Notifications</i> Newsletter</b><br/><br/>\nSubscribe to the <a href=\"http://go.microsoft.com/fwlink/?linkid=54982\"><i>Solution Accelerator Notifications</i></a> newsletter so that you can stay informed about new \n\nSolution Accelerator releases and updates. The newsletter covers such areas of interest as<br/><br/>\n<ul><li>Communication & Collaboration</li><li>Security, Data Protection, & Recovery</li><li>Deployment</li><li>Operations & Management</li></ul><br/>\nYou may also receive invitations to participate in accelerator development via beta programs and customer surveys. <i>Solution Accelerator Notifications</i> is currently \n\navailable in English only.<br></br><br>If you\u2019ve used a Solution Accelerator within your organization, please share your experience with us by completing this <a \n\nhref=\"http://go.microsoft.com/fwlink/?LinkID=132579\">short survey</a> (less than ten minutes long).</br>",
+    "relatedResourcesSection": [
+        {
+            "title": "miis 2003 Product Information",
+            "url": "http://www.microsoft.com/windowsserversystem/miis2003/evaluation/default.mspx"
+        },
+        {
+            "title": "automate Information Access with Identity Management",
+            "url": "http://www.microsoft.com/windowsserversystem/overview/benefits/access/default.mspx"
+        },
+        {
+            "title": "microsoft Identity and Access Management Series",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=14841"
+        },
+        {
+            "title": "miis 2003 Partners",
+            "url": "http://www.microsoft.com/windowsserversystem/miis2003/partners/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17974",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Partner Translation Toolkit for Microsoft Dynamics 365 Business Central",
+    "downloadDescription": "Partner Translation Toolkit",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PartnerTranslationToolkit.zip",
+            "url": "https://download.microsoft.com/download/7/7/d/77db7717-59f7-4a12-9306-2a3ffc904112/PartnerTranslationToolkit.zip",
+            "size": "7694153",
+            "version": "14.x",
+            "datePublished": "7/15/2024 3:02:31 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DynamicsBusinessCentral-CreatingCustomPlatformTranslations.pdf",
+            "url": "https://download.microsoft.com/download/7/7/d/77db7717-59f7-4a12-9306-2a3ffc904112/DynamicsBusinessCentral-CreatingCustomPlatformTranslations.pdf",
+            "size": "921175",
+            "version": "14.x",
+            "datePublished": "7/15/2024 3:02:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics Business Central includes three large areas for translation:\r\n- Application code and metadata in application objects in the database. \r\n- Platform strings maintained in managed assemblies. \r\n- Creating a country/region-specific installer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.x",
+    "detailsSection_file_name": [
+        "PartnerTranslationToolkit.zip",
+        "DynamicsBusinessCentral-CreatingCustomPlatformTranslations.pdf"
+    ],
+    "detailsSection_file_size": [
+        "7.3 MB",
+        "899.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "WiX Toolset version 3.11.1\r\nor the Wix Toolset Visual Studio 2017 Extension",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the tool and follow the instructions in included manual.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58396",
+    "downloadPreload": true
+}

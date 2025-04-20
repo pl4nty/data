@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Documentation Updates",
+    "downloadDescription": "List of changes to the Microsoft Dynamics AX 2009 Help documentation since the product RTM.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynAX_2009_UpdatedHelp_on_MSDN.docx",
+            "url": "https://download.microsoft.com/download/5/2/d/52d3bdfe-0ce8-475d-873e-d46431df4bef/DynAX_2009_UpdatedHelp_on_MSDN.docx",
+            "size": "105723",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "List of changes to the Microsoft Dynamics AX 2009 Help documentation since the product RTM. This material is available online at http://msdn.microsoft.com/en-us/library/aa496071.aspx.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DynAX_2009_UpdatedHelp_on_MSDN.docx"
+    ],
+    "detailsSection_file_size": [
+        "103.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This Help file can be read on any version of Windows.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click <b>Download</b> to start the download.</li><br />\n<br />\n<li>Copy the file to your computer by clicking the <b>Save</b> button.</li><br />\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10001",
+    "downloadPreload": true
+}

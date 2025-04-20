@@ -1,0 +1,377 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Protocol Documentation",
+    "downloadDescription": "The Microsoft SQL Server protocol documentation provides technical specifications for Microsoft proprietary protocols that are implemented and used in Microsoft SQL Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSWSRMNM2005].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RSWSRMNM2005].pdf",
+            "size": "3109311",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BINXML].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-BINXML].pdf",
+            "size": "967273",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SCCSTR].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SCCSTR].pdf",
+            "size": "890471",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSWSSFA].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RSWSSFA].pdf",
+            "size": "778369",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSREST].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RSREST].pdf",
+            "size": "3260688",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerProtocols.zip",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/SQLServerProtocols.zip",
+            "size": "54742109",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSREF].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSREF].pdf",
+            "size": "946818",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSDPWP].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSDPWP].pdf",
+            "size": "1042058",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CEPM].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-CEPM].pdf",
+            "size": "4735503",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSTDS].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSTDS].pdf",
+            "size": "2539246",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSCLRT].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSCLRT].pdf",
+            "size": "1094120",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSNWS].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSNWS].pdf",
+            "size": "1939414",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSAS].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSAS].pdf",
+            "size": "17212929",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ASUR].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-ASUR].pdf",
+            "size": "1123901",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSWSRMSM2006].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RSWSRMSM2006].pdf",
+            "size": "2936642",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSAS-T].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSAS-T].pdf",
+            "size": "5318083",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[ReadmefirstSQL].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[ReadmefirstSQL].pdf",
+            "size": "242595",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RDL].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RDL].pdf",
+            "size": "42501736",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ODBCSTR].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-ODBCSTR].pdf",
+            "size": "806996",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DSDIFFGRAM].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-DSDIFFGRAM].pdf",
+            "size": "764676",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-XSSK].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-XSSK].pdf",
+            "size": "843359",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSSO].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSSO].pdf",
+            "size": "1545507",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSMDSWS].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSMDSWS].pdf",
+            "size": "16971572",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSWSRM2010].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RSWSRM2010].pdf",
+            "size": "3603089",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSAS8].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSAS8].pdf",
+            "size": "3927833",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-LETSF].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-LETSF].pdf",
+            "size": "1320418",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DSDG].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-DSDG].pdf",
+            "size": "1460978",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RSWSRE2005].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RSWSRE2005].pdf",
+            "size": "1762742",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSMDSWS-15].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-SSMDSWS-15].pdf",
+            "size": "14435900",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RPL].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RPL].pdf",
+            "size": "8657889",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-OLEDBSTR].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-OLEDBSTR].pdf",
+            "size": "900752",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RGDI].pdf",
+            "url": "https://download.microsoft.com/download/7/9/3/79326e29-1e2e-45ee-aa73-74043587b17d/[MS-RGDI].pdf",
+            "size": "1923165",
+            "version": "0409",
+            "datePublished": "7/15/2024 3:15:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server protocol documentation provides detailed technical specifications for Microsoft proprietary protocols (including extensions to industry-standard or other published protocols) that are implemented and used in Microsoft SQL Server to interoperate or communicate with Microsoft products. <br />\n<br />\nThe documentation includes a set of companion overview and reference documents that supplement the technical specifications with conceptual background, overviews of inter-protocol relationships and interactions, and technical reference information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0409",
+    "detailsSection_file_name": [
+        "[MS-RSWSRMNM2005].pdf",
+        "[MS-BINXML].pdf",
+        "[MS-SCCSTR].pdf",
+        "[MS-RSWSSFA].pdf",
+        "[MS-RSREST].pdf",
+        "SQLServerProtocols.zip",
+        "[MS-SSREF].pdf",
+        "[MS-SSDPWP].pdf",
+        "[MS-CEPM].pdf",
+        "[MS-SSTDS].pdf",
+        "[MS-SSCLRT].pdf",
+        "[MS-SSNWS].pdf",
+        "[MS-SSAS].pdf",
+        "[MS-ASUR].pdf",
+        "[MS-RSWSRMSM2006].pdf",
+        "[MS-SSAS-T].pdf",
+        "[ReadmefirstSQL].pdf",
+        "[MS-RDL].pdf",
+        "[MS-ODBCSTR].pdf",
+        "[MS-DSDIFFGRAM].pdf",
+        "[MS-XSSK].pdf",
+        "[MS-SSSO].pdf",
+        "[MS-SSMDSWS].pdf",
+        "[MS-RSWSRM2010].pdf",
+        "[MS-SSAS8].pdf",
+        "[MS-LETSF].pdf",
+        "[MS-DSDG].pdf",
+        "[MS-RSWSRE2005].pdf",
+        "[MS-SSMDSWS-15].pdf",
+        "[MS-RPL].pdf",
+        "[MS-OLEDBSTR].pdf",
+        "[MS-RGDI].pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "944.6 KB",
+        "869.6 KB",
+        "760.1 KB",
+        "3.1 MB",
+        "52.2 MB",
+        "924.6 KB",
+        "1017.6 KB",
+        "4.5 MB",
+        "2.4 MB",
+        "1.0 MB",
+        "1.8 MB",
+        "16.4 MB",
+        "1.1 MB",
+        "2.8 MB",
+        "5.1 MB",
+        "236.9 KB",
+        "40.5 MB",
+        "788.1 KB",
+        "746.8 KB",
+        "823.6 KB",
+        "1.5 MB",
+        "16.2 MB",
+        "3.4 MB",
+        "3.7 MB",
+        "1.3 MB",
+        "1.4 MB",
+        "1.7 MB",
+        "13.8 MB",
+        "8.3 MB",
+        "879.6 KB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The protocol specifications are available in the Adobe Portable Document Format (PDF) which you can open by using Adobe Reader, available at http://www.adobe.com.<br/><br/>\n<b>Note:</b> For optimal readability of the PDF documents, it is recommended that they be opened and viewed by using Adobe Reader 8.0. Earlier versions of Adobe Reader might not provide the same reading quality.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Individual PDF files should be stored in a single directory to enable links between the protocol specifications. Note that if you download additional protocol documents from Microsoft, they should also be stored in the same directory to enable linking.<br />\n<br />\nThe self-extracting Zip file (SQLProtocols.zip) in this list of files contains all of the client protocol documents. Please download and read the readme file.\n\nThis package does not collect any personal information.",
+    "additionalInformationSection": "<b>Audience</b><br />\nThe SQL Server protocol documentation is intended for use in conjunction with publicly available standard specifications, network programming art, and Windows-distributed systems concepts. It assumes that the reader either is familiar with this material or has immediate access to it.<br />\n<br />\nThe technical documentation set provides the following levels of audience support:<br />\n<ul><br />\n<li><b>Implementer</b>: Sufficient conceptual and reference information for a successful implementation of one or more protocol specifications for a given task or scenario.</li><br />\n<li><b>Reviewer</b>: A definitive resource for readers who want to evaluate or understand one or more protocols.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Protocol Programs",
+            "url": "http://www.microsoft.com/about/legal/intellectualproperty/protocols/default.mspx"
+        },
+        {
+            "title": "office Protocols on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=112498"
+        },
+        {
+            "title": "sql Server Protocols on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=120222"
+        },
+        {
+            "title": "windows Server Protocols (WSPP)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=7708DD71-8C01-420F-AAE3-044D1691566D&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9130",
+    "downloadPreload": true
+}

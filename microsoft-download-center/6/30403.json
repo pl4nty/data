@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "SqlXml 4.0 Service Pack 1 (SP1)",
+    "downloadDescription": "SQLXML enables XML support for your SQL Server Database. It allows developers to bridge the gap between XML and relational data. You can create XML View of your existing relational data and work with it as if it was an XML file.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sqlxml_x64.msi",
+            "url": "https://download.microsoft.com/download/9/1/c/91c88b06-0922-4272-8cc1-78e445bcc8ab/sqlxml_x64.msi",
+            "size": "12994048",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlxml_IA64.msi",
+            "url": "https://download.microsoft.com/download/9/1/c/91c88b06-0922-4272-8cc1-78e445bcc8ab/sqlxml_IA64.msi",
+            "size": "17664512",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sqlxml_x86.msi",
+            "url": "https://download.microsoft.com/download/9/1/c/91c88b06-0922-4272-8cc1-78e445bcc8ab/sqlxml_x86.msi",
+            "size": "7471104",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:28:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQLXML enables XML support for your SQL Server Database. It allows developers to bridge the gap between XML and relational data. You can create XML View of your existing relational data and work with it as if it was an XML file. SQLXML allows you to:<br/>\n<br/>\n<ul>\n<li>Build Web Services</li>\n<li>Build Web sites to publish data from SQL Server</li>\n<li>Query relational database with XPath</li>\n<li>Update relational data as if it was XML</li>\n<li>Load XML into SQL Server</li>\n<li>Query SQL Server via URLs, OLEDB/ODBC, or .NET Managed Classes</li>\n</ul><br/>\nPlease see SQLXML 4.0 Programming Concepts in Books Online for details. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "sqlxml_x64.msi",
+        "sqlxml_IA64.msi",
+        "sqlxml_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "12.4 MB",
+        "16.8 MB",
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>This release is installed using the Microsoft Windows Installer 2.0. You might need to upgrade your installer to Windows Installer 2.0 prior to installing SQLXML 4.0 SP1.</LI><LI>This release also has a dependency on MSXML version 4.0 SP2. This version of MSXML is included with the download.</LI><LI>SQLXML Managed Classes require .NET Framework RTM to be installed before the SQLXML installation is run. If you do not have .NET Framework RTM installed, SQLXML 4.0 installation will succeed, but the Managed Classes will not be installed.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Uninstall any previous installations of SQLXML 4.0.</LI><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30403",
+    "downloadPreload": true
+}

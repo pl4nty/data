@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Unwrap Mosaic\u2014Embedding",
+    "downloadDescription": "This code was developed as part of the Unwrap Mosaic project. Last published: August 27, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "embedding.zip",
+            "url": "https://download.microsoft.com/download/9/8/d/98df8ed4-9241-4cdf-92c1-962cd2e39f88/embedding.zip",
+            "size": "3072986",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:08:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This code was developed as part of the Unwrap Mosaic project. The purpose of this project is to enable home users to perform special effects in their videos. A paper describing this work was presented during SIGGRAPH 2008. The released code implements the \"embedding\" stage, in which point tracks are embedded into 2-D, directly yielding x and y coordinates for each track. We assume that these tracks are given.  Such tracks can be computed using standard computer-vision algorithms for interest-point detection and tracking. The code is written in MATLAB.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "embedding.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52449",
+    "downloadPreload": true
+}

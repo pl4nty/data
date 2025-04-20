@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Connector SCOM Pack - Intune",
+    "downloadDescription": "System Center Operations Manager management pack for Exchange connector and Intune",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.Intune.Exchange.Connector.mp",
+            "url": "https://download.microsoft.com/download/a/2/b/a2b714d8-7f31-4292-82ad-461978333c05/Microsoft.Intune.Exchange.Connector.mp",
+            "size": "44440",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Operations Manager (SCOM) management pack for Exchange connector can help you parse the Exchange connector logs. This gives you different ways of monitoring the service when you need to troubleshoot issues.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "Microsoft.Intune.Exchange.Connector.mp"
+    ],
+    "detailsSection_file_size": [
+        "43.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Exchange Connector SCOM Pack for Operations Manager is designed for the following versions of System Center Operations Manager: \u2022 System Center Operations Manager 2007 R2 \u2022 System Center Operations Manager 2012 \u2022 System Center Operations Manager 2012 SP1 \u2022 System Center Operations Manager 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "See here for instructions on importing System Center Operations Manager packs: https://technet.microsoft.com/en-us/library/hh212691(v=sc.12).aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55990",
+    "downloadPreload": true
+}

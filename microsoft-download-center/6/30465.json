@@ -1,0 +1,148 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2013 training slides and labs for developers",
+    "downloadDescription": "Download slide decks and lab materials designed to train developers on using the development models and APIs associated with Lync 2013, UCMA 4.0, UC Web API, Persistent Chat, and Outlook apps.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M1_SharingModalities.pptx",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M1_SharingModalities.pptx",
+            "size": "1362865",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M5_OutlookApps.pptx",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M5_OutlookApps.pptx",
+            "size": "994213",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M2_UsingUCMA.zip",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M2_UsingUCMA.zip",
+            "size": "241099",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M3_GettingStartedWithUCWA.pptx",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M3_GettingStartedWithUCWA.pptx",
+            "size": "494737",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Ig15_LC_Dev_M1_AppSharing.zip",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M1_AppSharing.zip",
+            "size": "241946",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M5_OutlookAppBuilding.zip",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M5_OutlookAppBuilding.zip",
+            "size": "1606917",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M4_ChatAPI.zip",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M4_ChatAPI.zip",
+            "size": "1193691",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M4_ChatAPI.pptx",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M4_ChatAPI.pptx",
+            "size": "703374",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ig15_LC_Dev_M2_UpgradeToUCMA.pptx",
+            "url": "https://download.microsoft.com/download/a/a/9/aa9d0790-334b-40c0-b349-f3c4cf455cb1/Ig15_LC_Dev_M2_UpgradeToUCMA.pptx",
+            "size": "828391",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Module 1 walks through <b>using the Lync 2013 Managed API</b> to programmatically start sharing and handle control requests using Application Sharing modality, and how to share and interact with slides, white boards, and files in conversations using Content Sharing modality.\r\n<br />\r\n<br />\r\nModule 2 walks through <b>using the Unified Communications Managed API 4.0</b> to write asynchronous UCMA code using the Async task framework, and how to build a simple phone menu workflow.\r\n<br />\r\n<br />\r\nModule 3 walks through <b>using the Unified Communications Web API</b> to work with familiar capabilities of Lync.\r\n<br />\r\n<br />\r\nModule 4 walks through <b>working with the Persistent Chat Platform in Lync 2013</b>, including how to create add-ins for chat rooms, and how to programmatically create, manage, and interact with chat rooms.\r\n<br />\r\n<br />\r\nModule 5 introduces <b>Outlook apps</b>, including how to build an app for Outlook, using the Office Javascript Object Model, and different security considerations for these apps.\r\n<br />\r\n<br />\r\nEach filename contains a substring \"_M<i>n</i>_\", where \"<i>n</i>\" identifies the number of the module to which the file belongs.\r\n<br />\r\n<br />\r\nCompressed lab folders (.zip files) include both a Microsoft Word document and Visual Studio project files.\r\n<br />\r\n<br />\r\nGo to the <a href=\"http://msdn.microsoft.com/en-us/lync/jj543530\">Lync 2013 training for developers</a> page to watch videos for each module.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Ig15_LC_Dev_M1_SharingModalities.pptx",
+        "Ig15_LC_Dev_M5_OutlookApps.pptx",
+        "Ig15_LC_Dev_M2_UsingUCMA.zip",
+        "Ig15_LC_Dev_M3_GettingStartedWithUCWA.pptx",
+        "Ig15_LC_Dev_M1_AppSharing.zip",
+        "Ig15_LC_Dev_M5_OutlookAppBuilding.zip",
+        "Ig15_LC_Dev_M4_ChatAPI.zip",
+        "Ig15_LC_Dev_M4_ChatAPI.pptx",
+        "Ig15_LC_Dev_M2_UpgradeToUCMA.pptx"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "970.9 KB",
+        "235.4 KB",
+        "483.1 KB",
+        "236.3 KB",
+        "1.5 MB",
+        "1.1 MB",
+        "686.9 KB",
+        "809.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>View slide decks (.pptx files) using:</b><br/>\r\n<ul>\r\n<li>Microsoft PowerPoint 2010 or later, \u2013OR\u2013 <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=13\">PowerPoint Viewer</a></li>\r\n</ul></li>\r\n</ul>\r\n<ul>\r\n<li><b>Work with lab materials using:</b> <br/>\r\n<ul>\r\n<li>Visual Studio 2012</li>\r\n<li>Microsoft Word 2010 or later \u2013OR\u2013 <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=4\">Word Viewer</a></li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<br/>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk drive.</li>\r\n<li>Double-click any .pptx file you saved on your hard disk to view the content.</li>\r\n<li>Right-click any .zip file you saved on your hard disk and then click <b>Extract All</b> to decompress the content.</li>\r\n</ol>\r\n<br/><br/>\r\n<b>Instructions for use:</b><br/>\r\nAfter you have installed this download, use PowerPoint, Word, and Visual Studio as you normally would.\r\n<br/>\r\n<br/>\r\n<b>Removal of this download:</b>\r\n<br/>\r\nThere is no removal feature for this download.\r\n",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server 2013 Persistent Chat Server SDK",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=30352"
+        },
+        {
+            "title": "ucma 4.0 SDK",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=30351"
+        },
+        {
+            "title": "lync Dev Center",
+            "url": "http://msdn.microsoft.com/lync"
+        },
+        {
+            "title": "lync 2013 training for developers",
+            "url": "http://msdn.microsoft.com/en-us/lync/jj543530"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30465",
+    "downloadPreload": true
+}

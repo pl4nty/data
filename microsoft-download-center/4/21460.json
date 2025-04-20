@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Games for Windows: Updates for Windows 7",
+    "downloadDescription": "Presentation from Gamefest 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Games_for_Windows_Updates_for_Windows_7_US.zip",
+            "url": "https://download.microsoft.com/download/7/d/f/7df2d9e0-7750-4efe-9e83-180fc3d57243/Games_for_Windows_Updates_for_Windows_7_US.zip",
+            "size": "43589582",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Each year since the launch of the Games for Windows program in 2006, we\u2019ve updated the Technical Requirements and Test Requirements to address ongoing support issues and provide additional guidance. For 2009, we also needed to address Windows 7 readiness in time for the holidays. This talk will present a short summary of the existing GFW requirements and call out the changes made for the 1.4.0009 updates. We will also cover Windows 7 app-compat guidance, the related TR changes, and explore the latest technical showcases. As the talks \"The Games for Windows Self-Certification Program\" and \"Games for Windows: Updates for Windows 7\" shared a time-slot, please note that the audio file in this download includes both talks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Games_for_Windows_Updates_for_Windows_7_US.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Powerpoint, WMA Audio",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Powerpoint presentation and WMA audio",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21460",
+    "downloadPreload": true
+}

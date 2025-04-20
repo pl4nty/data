@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Hyperlapse Pro (YI Edition)",
+    "downloadDescription": "Microsoft Hyperlapse Pro lets you create smooth and stabilized time lapses from first person videos. Hyperlapse Pro YI Edition is for YI 4K Action Camera that came bundled with Hyperlapse. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hyperlapse-Yi-for-Mac_1.6.116.0.pkg.zip",
+            "url": "https://download.microsoft.com/download/6/b/6/6b6a25d4-8073-4708-9fde-10a0c411f039/Hyperlapse-Yi-for-Mac_1.6.116.0.pkg.zip",
+            "size": "19617235",
+            "version": "1.6",
+            "datePublished": "6/13/2024 12:58:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hyperlapse-Yi-for-64-bit-Windows_1.6-116-d4cb262.msi",
+            "url": "https://download.microsoft.com/download/6/b/6/6b6a25d4-8073-4708-9fde-10a0c411f039/Hyperlapse-Yi-for-64-bit-Windows_1.6-116-d4cb262.msi",
+            "size": "19424256",
+            "version": "1.6",
+            "datePublished": "6/13/2024 12:58:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Hyperlapse Pro lets you create smooth and stabilized time lapses from first person videos. Hyperlapse Pro YI Edition is for YI 4K Action Camera that came bundled with Hyperlapse. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6",
+    "detailsSection_file_name": [
+        "Hyperlapse-Yi-for-Mac_1.6.116.0.pkg.zip",
+        "Hyperlapse-Yi-for-64-bit-Windows_1.6-116-d4cb262.msi"
+    ],
+    "detailsSection_file_size": [
+        "18.7 MB",
+        "18.5 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1, Windows 10.\r\nApple Mac OS X version 10.10 and later.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <B> Download </B>button on this page to start the download </li>\r\n<li>Select the PC or Mac version</li>\r\n<li>Then select one of the following:</li> </ol> \r\n    <ul> <li>To start the installation immediately, click Run.</li>\r\n    <li>To save the download to your computer for installation at a later time, click Save. </li>\r\n    <li>To cancel the installation, click Cancel.</li></ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52773",
+    "downloadPreload": true
+}

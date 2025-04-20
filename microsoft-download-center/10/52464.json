@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "WWMX Location Stamper",
+    "downloadDescription": "Stamps location information into the EXIF tags of JPEG images. Last published: November 17, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WWMXLocationStamperSetup.msi",
+            "url": "https://download.microsoft.com/download/b/2/0/b202499c-5a31-4b52-b0dd-615967d2e37b/WWMXLocationStamperSetup.msi",
+            "size": "441344",
+            "version": "2.2",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Stamps location information into the EXIF tags of JPEG images. The user can either manually drag the image thumbnail onto the map, or the location can be inferred from GPS track information stored in one or more GPX files. Part of the World-Wide Media eXchange project.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2",
+    "detailsSection_file_name": [
+        "WWMXLocationStamperSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "431.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52464",
+    "downloadPreload": true
+}

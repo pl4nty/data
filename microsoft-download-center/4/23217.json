@@ -1,0 +1,137 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Sync Framework 2.1 Software Development Kit (SDK)",
+    "downloadDescription": "Microsoft Sync Framework is a comprehensive synchronization platform that enables collaboration and offline scenarios for applications, services, and devices. Using Microsoft Sync Framework, developers can build applications that synchronize data from any source using any protocol over any network.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SyncSDK-v2.1-x86-ENU.msi",
+            "url": "https://download.microsoft.com/download/e/8/8/e8819a3a-e994-4a1c-b318-1e9dd2e936db/SyncSDK-v2.1-x86-ENU.msi",
+            "size": "21609472",
+            "version": "V2.1RTM",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncSDK-v2.1-x64-ENU.msi",
+            "url": "https://download.microsoft.com/download/e/8/8/e8819a3a-e994-4a1c-b318-1e9dd2e936db/SyncSDK-v2.1-x64-ENU.msi",
+            "size": "22102016",
+            "version": "V2.1RTM",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SyncFramework_2.1_ReleaseNotes.htm",
+            "url": "https://download.microsoft.com/download/e/8/8/e8819a3a-e994-4a1c-b318-1e9dd2e936db/SyncFramework_2.1_ReleaseNotes.htm",
+            "size": "26022",
+            "version": "V2.1RTM",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TraceFormat.zip",
+            "url": "https://download.microsoft.com/download/e/8/8/e8819a3a-e994-4a1c-b318-1e9dd2e936db/TraceFormat.zip",
+            "size": "38348",
+            "version": "V2.1RTM",
+            "datePublished": "7/15/2024 3:15:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Sync Framework 2.1 introduces new features that let you synchronize a SQL Server or SQL Server Compact database on your computer with a SQL Azure database. This release also introduces parameter-based filtering, the ability to remove synchronization scopes and templates from a database, and performance enhancements to make synchronization faster and easier.\r\n<br /><br />\r\n\r\n<b> SQL Azure Synchronization </b>\r\n<br /><br />\r\nWith Sync Framework 2.1, you can extend the reach of your data to the web by leveraging the Windows Azure Platform and SQL Azure Database. By synchronizing a SQL Server database on your business premises to SQL Azure, you make some or all of your data available on the web without the need to provide your customers with a connection to your on premises SQL Server database. After you configure your SQL Azure database for synchronization, users can take the data offline and store it in a client database, such as SQL Server Compact or SQL Server Express, so that your applications operate while disconnected and your customers can stay productive without the need for a reliable network connection. Changes made to data in the field can be synchronized back to the SQL Azure database and ultimately back to the on premises SQL Server database. Sync Framework 2.1 also includes features to interact well with the shared environment of Windows Azure and SQL Azure. These features include performance enhancements, the ability to define the maximum size of a transaction to avoid throttling, and automatic retries of a transaction if it is throttled by Windows Azure.\r\n<br />\r\n\r\nSync Framework gives you flexibility in the way you structure your synchronization community, but two typical ways are to use a 2-tier architecture or an N-tier architecture. <br />\r\n\r\n<UL><br />\r\n <LI>2-tier architecture: Sync Framework runs on the local computer and uses a SqlSyncProvider object to connect directly to the SQL Azure database without going through a middle tier or a web server, such as Internet Information Services (IIS). </LI><br />\r\n <LI> N-tier architecture: A Sync Framework database provider runs in a Windows Azure hosted service and communicates with a proxy provider that runs on the local computer.</LI><br />\r\n</UL><br />\r\n\r\n<b> Bulk Application of Changes </b>\r\n<br /><br />\r\nSync Framework 2.1 takes advantage of the table-valued parameter feature of SQL Server 2008 and SQL Azure to apply multiple inserts, updates, and deletes by using a single stored procedure call, instead of requiring a stored procedure call to apply each change. This greatly increases performance of these operations and reduces the number of round trips between client and server during change application. Bulk procedures are created by default when a SQL Server 2008 or SQL Azure database is provisioned.\r\n<br /><br />\r\n\r\n<b> Parameter-based Filtering </b>\r\n<br /><br />\r\nync Framework 2.1 enables you to create parameter-based filters that control what data is synchronized. Parameter-based filters are particularly useful when users want to filter data based on a field that can have many different values, such as user ID or region, or a combination of two or more fields. Parameter-based filters are created in two steps. First, filter and scope templates are defined. Then, a filtered scope is created that has specific values for the filter parameters. This two-step process has the following advantages:\r\n<br />\r\n\r\n<UL><br />\r\n <LI> Easy to set up. A filter template is defined one time. Creating a filter template is the only action that requires permission to create stored procedures in the database server. This step is typically performed by a database administrator.</LI><br />\r\n <LI> Easy to subscribe. Clients specify parameter values to create and subscribe to filtered scopes on an as-needed basis. This step requires only permission to insert rows in synchronization tables in the database server. This step can be performed by a user.</LI><br />\r\n<LI> Easy to maintain. Even when several parameters are combined and lots of filtered scopes are created, maintenance is simple because a single, parameter-based procedure is used to enumerate changes.</LI><br />\r\n</UL><br /> \r\n\r\n<b> Removing Scopes and Templates </b>\r\n<br /><br />\r\nSync Framework 2.1 adds the SqlSyncScopeDeprovisioning and SqlCeSyncScopeDeprovisioning classes to enable you to easily remove synchronization elements from databases that have been provisioned for synchronization. By using these classes you can remove scopes, filter templates, and the associated metadata tables, triggers, and stored procedures from your databases.\r\n<br /><br />\r\n\r\n<b> Upgrading the Metadata Format </b>\r\n<br /><br />\r\nThe metadata format for the database providers changed in Sync Framework 2.1. The new metadata format is incompatible with previous versions of the database providers. The upgrade to the new metadata format cannot be undone, and when you try to use an earlier version of the database providers to synchronize a database that is in the 2.1 format, Sync Framework throws an exception. However, the SqlSyncProvider class in Sync Framework 2.1 detects whether the metadata is in the 2.0 or 2.1 format, and operates in a backward compatibility mode to synchronize a database that contains metadata in the 2.0 format. Sync Framework can synchronize a database in the 2.0 format with a database in either the 2.0 or the 2.1 format. Therefore, it is not necessary to upgrade all of the databases in your synchronization community at the same time. For example, in an N-tier architecture you can upgrade the server Sync Framework components and database metadata format and continue to synchronize with clients that use Sync Framework 2.0. Clients can then upgrade when it is convenient for them to do so.\r\n<br /><br />\r\n\r\n<b> SQL Server Compact 3.5 SP2 Compatibility </b>\r\n<br /><br />\r\nThe Sync Framework 2.1 SqlCeSyncProvider database provider object uses SQL Server Compact 3.5 SP2. Existing SQL Server Compact databases are automatically upgraded when Sync Framework connects to them. Among other new features, SQL Server Compact 3.5 SP2 makes available a change tracking API that provides the ability to configure, enable, and disable change tracking on a table, and to access the change tracking data for the table. SQL Server Compact 3.5 SP2 can be downloaded <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=e497988a-c93a-404c-b161-3a0b323dce24\">here</a>.\r\n<br /><br />\r\n\r\n<b>Sync Framework 2.1 Redistributable Package</b><br />\r\nTo download the Microsoft Sync Framework 2.1 redistributables, rather than the SDK package, click on the link:\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=c3b2f32b-12a9-40b8-9e83-c452ac546c49\">Microsoft Sync Framework 2.1 Redistributable Package</a>\r\n<br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V2.1RTM",
+    "detailsSection_file_name": [
+        "SyncSDK-v2.1-x86-ENU.msi",
+        "SyncSDK-v2.1-x64-ENU.msi",
+        "SyncFramework_2.1_ReleaseNotes.htm",
+        "TraceFormat.zip"
+    ],
+    "detailsSection_file_size": [
+        "20.6 MB",
+        "21.1 MB",
+        "25.4 KB",
+        "37.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<LI>Supported Operating Systems: Windows 7; Windows Server 2003 and R2; Windows Server 2008 and R2; Windows Vista; Windows XP SP3</LI><br />\n<LI>.NET Framework: Managed components require .NET Framework 2.0 SP1 or .NET Framework 3.x. </LI><br />\r\n<LI>Note that SQL Server 2005 SP2 or greater is required when using the Sync Framework Database Providers. </LI><br />\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<LI>Important: Please uninstall all prerelease versions of Sync Framework prior to installing this release version. This includes Sync Framework 2.0 CTP1 and Sync Framework 2.0 CTP2. Sync Framework 2.1 can be installed and will operate side-by-side with Sync Framework 1.0 and Sync Framework 2.0. Please ensure that you download and install the SDK appropriate for your system. For example, SyncSDK-v2.1-x86-ENU.msi includes the Sync Framework components for x86 machines.</LI>\r\n<LI>It is not possible have full 32-bit Sync Framework 2.1 SDK installed side-by-side with the 64-bit SDK; therefore you will have to install one version of SDK (64-bit) completely and only selected components of other version (32-bit) of SDK. See <a href=\"http://social.technet.microsoft.com/wiki/contents/articles/sync-framework-tips-and-troubleshooting.aspx\">Sync Framework Tips and Troubleshooting topic</a> for details. </LI>\n<br />\n<LI>Make sure you have the latest service pack and critical updates for the version of Windows that you are running. To find recent security updates, visit Windows Update. </LI><br />",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Sync Framework 2.1 Documentation",
+            "url": "http://msdn.microsoft.com/en-us/library/bb902854(v=SQL.110).aspx"
+        },
+        {
+            "title": "microsoft Sync Framework 2.1 Redistributable Package",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=c3b2f32b-12a9-40b8-9e83-c452ac546c49"
+        },
+        {
+            "title": "sync MSDN Developer Center",
+            "url": "http://msdn.microsoft.com/sync"
+        },
+        {
+            "title": "sync Blog",
+            "url": "http://blogs.msdn.com/sync"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23217",
+    "downloadPreload": true
+}

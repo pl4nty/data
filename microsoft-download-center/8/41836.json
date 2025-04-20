@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Forefront Protection 2010 for Exchange Server (2927022)",
+    "downloadDescription": "Applies to systems running Microsoft Forefront Protection 2010 for Exchange Server version 11.0.727.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ForefrontProtectionforExchange-KB2927022-x86.exe",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1ebaa-e9b3-4951-9473-1cfe3f00c633/ForefrontProtectionforExchange-KB2927022-x86.exe",
+            "size": "117692152",
+            "version": "11.0.727.0",
+            "datePublished": "7/15/2024 3:52:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This security update resolves a privately reported vulnerability in Microsoft Forefront. The vulnerability could allow remote code execution if a specially crafted email message is scanned.\r\nThis security update is rated Critical for all supported builds of Microsoft Forefront Protection for Exchange 2010. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2927022",
+        "name": "KB2927022"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-008",
+        "name": "MS14-008"
+    },
+    "detailsSection_file_version": "11.0.727.0",
+    "detailsSection_file_name": [
+        "ForefrontProtectionforExchange-KB2927022-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "112.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Forefront Protection 2010 for Exchange Server version 11.0.727.0, also known as Hotfix Rollup 4 for Microsoft Forefront Protection for Exchange",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "To start the download, click the Download button. \r\n\u2022   Click Run to start the installation immediately.\r\n\u2022   Click Save to copy the download to your computer for installation at a later time.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=390218"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41836",
+    "downloadPreload": true
+}

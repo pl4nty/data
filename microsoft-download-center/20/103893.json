@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "DTU to vCore PowerShell Script",
+    "downloadDescription": "Discovery and conversion calculation script",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DTU-to-vCore.zip",
+            "url": "https://download.microsoft.com/download/a/2/3/a23996c0-5d6e-44a3-872c-134f201c7b76/DTU-to-vCore.zip",
+            "size": "51447",
+            "version": "1.1.0",
+            "datePublished": "7/15/2024 5:06:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "There are deployment flexibility and cost advantages to running on the vCore model of Azure SQL DB. This PowerShell script allows a user to discover all DTU model Azure SQL DBs in any subscription that the user can see and it provides a estimate for the number of vCores required.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.0",
+    "detailsSection_file_name": [
+        "DTU-to-vCore.zip"
+    ],
+    "detailsSection_file_size": [
+        "50.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The file is a zipped folder that contains the PowerShell script and a License Terms document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Choose the Download button on this page to start the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103893",
+    "downloadPreload": true
+}

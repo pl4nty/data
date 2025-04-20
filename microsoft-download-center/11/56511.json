@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft MPI v9.0 (Archived)",
+    "downloadDescription": "Stand-alone, redistributable and SDK installers for Microsoft MPI.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msmpisdk.msi",
+            "url": "https://download.microsoft.com/download/2/e/c/2ec96d7f-687b-4613-80f6-e10f670a2d97/msmpisdk.msi",
+            "size": "2433024",
+            "version": "9.0.12497.9",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "msmpisetup.exe",
+            "url": "https://download.microsoft.com/download/2/e/c/2ec96d7f-687b-4613-80f6-e10f670a2d97/msmpisetup.exe",
+            "size": "6232056",
+            "version": "9.0.12497.9",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft MPI (MS-MPI) v9.0 is the successor to MS-MPI v8.1.1 (v8.1.12438, released on 09/29/2017).<br/>\r\n<br/>\r\nMS-MPI enables you to develop and run MPI applications without having to set up an HPC Pack cluster.<br/>\r\n<br/>\r\nThis release includes the installer for the software development kit (SDK) as a separate file.<br/>\r\n<br/>\r\nThe installers for MS-MPI may be redistributed with your own applications, facilitating stand-alone installations on workstation computers as well as HPC Pack clusters.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0.12497.9",
+    "detailsSection_file_name": [
+        "msmpisdk.msi",
+        "msmpisetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "5.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10, Windows 8.1, Windows 8, Windows 7, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>To install on a workstation computer: </b>\r\n<ol>\r\n<li>Run MSMpiSetup.exe or msmpisdk.msi..</li>\r\n<li>Follow the steps in the installation wizard.</li>\r\n</ol>\r\n<br/>\r\n<b>For redistribution:</b>\r\n<ul>\r\n<li>Please refer to the license agreement for additional information.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56511",
+    "downloadPreload": true
+}

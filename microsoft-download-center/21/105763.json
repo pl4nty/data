@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Printer Metadata Troubleshooter Tool \u2013 January 2024",
+    "downloadDescription": "Microsoft Printer Metadata Troubleshooter Tool January 2024 Release ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PrintMetadataTroubleshooterX86.exe",
+            "url": "https://download.microsoft.com/download/c/f/2/cf2eb746-25ad-43dc-a542-abb2a3633237/PrintMetadataTroubleshooterX86.exe",
+            "size": "219576",
+            "version": "January 2024",
+            "datePublished": "7/15/2024 5:00:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PrintMetadataTroubleshooterX64.exe",
+            "url": "https://download.microsoft.com/download/c/f/2/cf2eb746-25ad-43dc-a542-abb2a3633237/PrintMetadataTroubleshooterX64.exe",
+            "size": "246200",
+            "version": "January 2024",
+            "datePublished": "7/15/2024 5:00:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PrintMetadataTroubleshooterArm64.exe",
+            "url": "https://download.microsoft.com/download/c/f/2/cf2eb746-25ad-43dc-a542-abb2a3633237/PrintMetadataTroubleshooterArm64.exe",
+            "size": "253472",
+            "version": "January 2024",
+            "datePublished": "7/15/2024 5:00:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PrintMetadataTroubleshooterArm32.exe",
+            "url": "https://download.microsoft.com/download/c/f/2/cf2eb746-25ad-43dc-a542-abb2a3633237/PrintMetadataTroubleshooterArm32.exe",
+            "size": "197152",
+            "version": "January 2024",
+            "datePublished": "7/15/2024 5:00:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool is intended to help users and administrators address the known issue: Printer names and icons might be changed and HP Smart app automatically installs(See Related Links for more information on this issue)\r\n<br/><br/>\r\n<ul>\r\n<li>This tool will review your printer information. It will restore any previously downloaded model information and icons and will remove \u201cHP LaserJet M101-M106\u201d model information, icons, and application associations from printers that do not match this name and model.</li>\r\n<li>This tool will uninstall the HP Smart application if incorrect metadata was found, there are no HP printers or HP printer drivers installed, and the application was installed after Nov 25th, 2023. </li>\r\n</ul>\r\n<br/>\r\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\r\n<br/>\r\n<br/>\r\n<b>SUPPLEMENTAL NOTICE</b><br/>\r\n<b>WINDOWS OPERATING SYSTEM </b><br/>\r\n<br/>\r\nMicrosoft Corporation (or based on where you live, one of its affiliates) licenses this executable file (\u201csupplement\u201d) to you.  You may use a copy of this supplement only with a validly licensed copy of the Windows Operating System software (\u201csoftware\u201d).  You may not use the supplement if you do not have a valid license for the software.  The license terms for the software apply to your use of this supplement.\r\n<br/>\r\n<br/>\r\nBY INSTALLING, HAVING INSTALLED, OR USING THIS SUPPLEMENT, YOU ACCEPT THESE SUPPLEMENTAL TERMS.  IF YOU DO NOT AGREE TO THESE SUPPLEMENTAL TERMS, YOU MAY NOT INSTALL, HAVE INSTALLED, OR USE THIS SUPPLEMENT. \r\n<br/>\r\n<br/>\r\nThis tool abides by the <a href=\"http://go.microsoft.com/fwlink/?LinkId=521839\">Microsoft Privacy Statement</a>\r\n<br/>\r\nLearn about the <a href=\"https://support.microsoft.com/en-us/help/824684\">terminology</a> that Microsoft uses to describe software updates.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5034510",
+        "name": "KB5034510"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2024",
+    "detailsSection_file_name": [
+        "PrintMetadataTroubleshooterX86.exe",
+        "PrintMetadataTroubleshooterX64.exe",
+        "PrintMetadataTroubleshooterArm64.exe",
+        "PrintMetadataTroubleshooterArm32.exe"
+    ],
+    "detailsSection_file_size": [
+        "214.4 KB",
+        "240.4 KB",
+        "247.5 KB",
+        "192.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please see KB5034510 to determine the specific system requirements for the servicing release",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Please see KB5034510 article to determine the specific system instructions for the servicing release",
+    "relatedResourcesSection": [
+        {
+            "title": "printer names and icons might be changed and HP Smart app automatically installs.",
+            "url": "https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-23h2#3218msgdesc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "105763",
+    "downloadPreload": true
+}

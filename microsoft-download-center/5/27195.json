@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2010 Service Pack 1 Web Platform Tools",
+    "downloadDescription": "In Visual Studio 2010 SP1, the IDE may crash when you undo a change to a table of a webpage in Design view.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs10sp1-kb2548139-x86.exe",
+            "url": "https://download.microsoft.com/download/3/d/e/3ded3c6d-ff3e-40fc-8154-13256c0da054/VS10SP1-KB2548139-x86.exe",
+            "size": "6946256",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:15:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "In Visual Studio 2010 SP1, the IDE may crash when you undo a change to a table of a webpage in Design view. A Dr. Watson error together with the following faulted symbol is generated:\n\nFPEDITAX.DLL!LaidView::FindProperties",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2548139",
+        "name": "KB2548139"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "vs10sp1-kb2548139-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2010 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2548139",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=219997"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27195",
+    "downloadPreload": true
+}

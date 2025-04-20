@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Hybrid Mobile Apps for ASP.NET Developers",
+    "downloadDescription": "Learn how you can use your web development skills to create hybrid mobile applications for Android, iOS and Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SampleCordovaApp.zip",
+            "url": "https://download.microsoft.com/download/8/7/c/87c46084-092a-498f-bda6-37e01b39683c/SampleCordovaApp.zip",
+            "size": "4989261",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:30:29 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Hybrid mobile apps for ASP NET developers - FINAL - EN.pdf",
+            "url": "https://download.microsoft.com/download/8/7/c/87c46084-092a-498f-bda6-37e01b39683c/Hybrid mobile apps for ASP NET developers - FINAL - EN.pdf",
+            "size": "1493862",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:30:29 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Do you know that as an ASP.NET developer you already have the skills to create mobile apps for Android, iOS and Windows? See how you can quickly get up and running with our whitepaper covering Hybrid Mobile Apps for ASP.NET Developers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SampleCordovaApp.zip",
+        "Hybrid mobile apps for ASP NET developers - FINAL - EN.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<br/><b>Other Software</b><ul>\r\n<li>You will need a PDF reader like Adobe Reader to read the document.</li>\r\n<li>To try the Cordova app sample you will need Visual Studio 2015 CTP 6 or later.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Enterprise N",
+        "Windows 7 Home Basic",
+        "Windows 7 Home Basic 64-bit",
+        "Windows 7 Home Premium",
+        "Windows 7 Home Premium 64-bit",
+        "Windows 7 Home Premium E 64-bit",
+        "Windows 7 Home Premium N",
+        "Windows 7 Home Premium N 64-bit",
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Professional E 64-bit",
+        "Windows 7 Professional K 64-bit",
+        "Windows 7 Professional KN 64-bit",
+        "Windows 7 Professional N",
+        "Windows 7 Professional N 64-bit",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Starter",
+        "Windows 7 Starter 64-bit",
+        "Windows 7 Starter N",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 7 Ultimate E 64-bit",
+        "Windows 7 Ultimate K 64-bit",
+        "Windows 7 Ultimate KN 64-bit",
+        "Windows 7 Ultimate N",
+        "Windows 7 Ultimate N 64-bit",
+        "Windows 8",
+        "Windows 8 Consumer Preview",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8 Release Preview",
+        "Windows 8.1",
+        "Windows 8.1 Preview",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 R2 Standard "
+    ],
+    "installInstructionSection": "<ul>\r\n<li>To read the document, click on the link and either open the file directly from the download center or save it to your computer and then open it locally.</li>\r\n<li>For the sample application, extract the contents of the zip file to a location on your computer.  Open <i>SampleCordovaApp.sln</i> with Visual Studio 2015 where you will see the sample application loaded and ready to be tried.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46407",
+    "downloadPreload": true
+}

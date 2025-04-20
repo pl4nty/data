@@ -1,0 +1,177 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dexterity 2013 Documentation",
+    "downloadDescription": "This documentation describes how to use Dexterity, which is the application development system used to create Microsoft Dynamics GP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PRGV2.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/PRGV2.pdf",
+            "size": "4740158",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IG.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/IG.pdf",
+            "size": "7837149",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FUNCTLIB.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/FUNCTLIB.pdf",
+            "size": "5336611",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CMPINDEX.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/CMPINDEX.pdf",
+            "size": "4938756",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DexUtils.chm",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/DexUtils.chm",
+            "size": "282997",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PRGV1.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/PRGV1.pdf",
+            "size": "5260216",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SANSCRPT.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/SANSCRPT.pdf",
+            "size": "2471191",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "STNDALON.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/STNDALON.pdf",
+            "size": "2162590",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "QSTART.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/QSTART.pdf",
+            "size": "1330072",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IG.chm",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/IG.chm",
+            "size": "2025653",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Dex.chm",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/Dex.chm",
+            "size": "3717351",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DEXUTIL.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/DEXUTIL.pdf",
+            "size": "1712770",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "COMPNT.pdf",
+            "url": "https://download.microsoft.com/download/9/b/8/9b82dd0a-cecb-4946-8eea-0e2917bf0351/Dexterity/COMPNT.pdf",
+            "size": "94830",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components.<br /> <br />\n<b>Help files</b><br />\nThe following help files are available:\n<UL><LI><b>Dexterity Help</b> (Dex.chm): Includes information about building applications using Dexterity, and also includes contextual help for windows in the Dexterity development environment.</LI>\n<LI><b>Dexterity Utilities Help</b> (DexUtils.chm): Describes utilities you can use to construct, compile, and query Dexterity dictionaries.</LI>\n<LI><b>Microsoft Dynamics GP Integration Help</b> (IG.chm): Includes the Microsoft Dynamics GP integration information in HTML Help format.</LI></UL><br /><br />\n<b>Manuals in PDF format</b><br />\nThe following manuals are available:\n<UL><LI><b>Comprehensive Index</b> (CMPINDEX.pdf): Contains a compilation of all the indexes in the Dexterity documentation set, which you can use to look up topics in any of the Dexterity manuals.</LI>\n<LI><b>Dexterity Components</b> (COMPNT.pdf): Describes the components included with Dexterity.</LI>\n<LI><b>Dexterity Utilities</b> (DEXUTIL.pdf): Explains how to use Dexterity Utilities to manage the dictionaries you create using Dexterity, and includes reference information about the utilities and reports that are included. </LI>\n<LI><b>Function Library Reference</b> (FUNCTLIB.pdf): Contains detailed reference information about the functions in each Dexterity function library. </LI>\n<LI><b>Microsoft Dynamics GP Integration Guide</b> (IG.pdf): Explains interface and programming conventions and describes how to develop a Dexterity-based component that integrates with Microsoft Dynamics GP in a runtime environment. </LI>\n<LI><b>Programmer's Guide Volume 1</b> (PRGV1.pdf): Describes the Dexterity development system used to create and package applications and manage development. </LI>\n<LI><b>Programmer's Guide Volume 2</b> (PRGV2.pdf): Introduces sanScript, and explains how to add scripts to a Dexterity application and work with controls and tables. Also describes advanced scripting tools, the development process for Dexterity-based applications, and the integrated source code debugger in Dexterity. </LI>\n<LI><b>Quick Start</b> (QSTART.pdf): Contains overview information and lessons to introduce you to creating applications with Dexterity. </LI>\n<LI><b>sanScript Reference</b> (SANSCRPT.pdf): Contains descriptions of all functions and statements in sanScript. </LI>\n<LI><b>Stand-alone Application Guide</b> (STNDALON.pdf): Explains how to create a stand-alone application. Topics include developing pathname support, online help, and security, as well as using tools such as Modifier and Report Writer. Dictionaries included with Dexterity also are described. </LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "PRGV2.pdf",
+        "IG.pdf",
+        "FUNCTLIB.pdf",
+        "CMPINDEX.pdf",
+        "DexUtils.chm",
+        "PRGV1.pdf",
+        "SANSCRPT.pdf",
+        "STNDALON.pdf",
+        "QSTART.pdf",
+        "IG.chm",
+        "Dex.chm",
+        "DEXUTIL.pdf",
+        "COMPNT.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.5 MB",
+        "7.5 MB",
+        "5.1 MB",
+        "4.7 MB",
+        "276.4 KB",
+        "5.0 MB",
+        "2.4 MB",
+        "2.1 MB",
+        "1.3 MB",
+        "1.9 MB",
+        "3.5 MB",
+        "1.6 MB",
+        "92.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF files, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual or help file.</LI>\n<LI>Save the file to your computer.</LI>\n</OL>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36226",
+    "downloadPreload": true
+}

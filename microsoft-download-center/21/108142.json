@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix update for Exchange Server 2019 CU14",
+    "downloadDescription": "hash for HU for Exchange 2019 CU14",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange_2019_CU14_HU4.csv",
+            "url": "https://download.microsoft.com/download/2ebb873e-300e-4390-82ac-28c0af45db9c/Exchange_2019_CU14_HU4.csv",
+            "size": "1887",
+            "version": "2019",
+            "datePublished": "4/17/2025 8:25:06 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "hash files for Hotfix update for Exchange Server 2019 CU14",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5050673",
+        "name": "5050673"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2019",
+    "detailsSection_file_name": [
+        "Exchange_2019_CU14_HU4.csv"
+    ],
+    "detailsSection_file_size": [
+        "1.8 KB"
+    ],
+    "detailsSection_file_date": "4/17/2025",
+    "systemRequirementsSection": "Exchange Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "none",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108142",
+    "downloadPreload": true
+}

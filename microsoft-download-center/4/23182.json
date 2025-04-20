@@ -1,0 +1,339 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Data Portability Documentation",
+    "downloadDescription": "The SQL Server data portability documentation explains various mechanisms by which user-created data in SQL Server can be extracted for use in other software products. These mechanisms include import/export functionality, documented APIs, industry standard formats, or documented data structures/file formats.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "[MS-RDLRS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-RDLRS].pdf",
+            "size": "1290893",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CSDLBI].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-CSDLBI].pdf",
+            "size": "2708069",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DTSX2].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DTSX2].pdf",
+            "size": "10014448",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerDataPortability.zip",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/SQLServerDataPortability.zip",
+            "size": "38148114",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSISPARAMS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-SSISPARAMS].pdf",
+            "size": "644514",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPIS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPIS].pdf",
+            "size": "621446",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPREP].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPREP].pdf",
+            "size": "539758",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPAD].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPAD].pdf",
+            "size": "656927",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPBACPAC].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPBACPAC].pdf",
+            "size": "541071",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPMDS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPMDS].pdf",
+            "size": "953786",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPRDL].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPRDL].pdf",
+            "size": "628957",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DACPAC].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DACPAC].pdf",
+            "size": "3066690",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPSMDL].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPSMDL].pdf",
+            "size": "561706",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPPDW].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPPDW].pdf",
+            "size": "587849",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPEDM].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPEDM].pdf",
+            "size": "547538",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SSDL].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-SSDL].pdf",
+            "size": "1206588",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPDQS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPDQS].pdf",
+            "size": "912458",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-ISPAC].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-ISPAC].pdf",
+            "size": "838480",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-BCP].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-BCP].pdf",
+            "size": "1117340",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-RDL].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-RDL].pdf",
+            "size": "42501736",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-SMDL].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-SMDL].pdf",
+            "size": "5837441",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPDACPAC].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPDACPAC].pdf",
+            "size": "751240",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-CONNMGR].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-CONNMGR].pdf",
+            "size": "564917",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPBCP].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPBCP].pdf",
+            "size": "608901",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[[ReadmefirstSQL]].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[[ReadmefirstSQL]].pdf",
+            "size": "240370",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-MSL].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-MSL].pdf",
+            "size": "1244722",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DTSX].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DTSX].pdf",
+            "size": "11324128",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DTS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DTS].pdf",
+            "size": "1958005",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPEDMX].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPEDMX].pdf",
+            "size": "545597",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "[MS-DPSSAS].pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175a7833-6f75-418d-8800-86d44d1d712d/[MS-DPSSAS].pdf",
+            "size": "598781",
+            "version": "Version 1",
+            "datePublished": "7/15/2024 3:26:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SQL Server data portability documentation explains various mechanisms by which user-created data in SQL Server can be extracted for use in other software products. These mechanisms include import/export functionality, documented APIs, industry standard formats, or documented data structures/file formats.\r\n<br /> \r\n<br />\r\nThese documents are intended for use in conjunction with other Open Specifications documents, SQL Server Books Online content (http://msdn.microsoft.com/en-us/library/bb545450.aspx) and publicly available standard specifications. They assume that the reader either is familiar with this material or has access to it.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Version 1",
+    "detailsSection_file_name": [
+        "[MS-RDLRS].pdf",
+        "[MS-CSDLBI].pdf",
+        "[MS-DTSX2].pdf",
+        "SQLServerDataPortability.zip",
+        "[MS-SSISPARAMS].pdf",
+        "[MS-DPIS].pdf",
+        "[MS-DPREP].pdf",
+        "[MS-DPAD].pdf",
+        "[MS-DPBACPAC].pdf",
+        "[MS-DPMDS].pdf",
+        "[MS-DPRDL].pdf",
+        "[MS-DACPAC].pdf",
+        "[MS-DPSMDL].pdf",
+        "[MS-DPPDW].pdf",
+        "[MS-DPEDM].pdf",
+        "[MS-SSDL].pdf",
+        "[MS-DPDQS].pdf",
+        "[MS-ISPAC].pdf",
+        "[MS-BCP].pdf",
+        "[MS-RDL].pdf",
+        "[MS-SMDL].pdf",
+        "[MS-DPDACPAC].pdf",
+        "[MS-CONNMGR].pdf",
+        "[MS-DPBCP].pdf",
+        "[[ReadmefirstSQL]].pdf",
+        "[MS-MSL].pdf",
+        "[MS-DTSX].pdf",
+        "[MS-DTS].pdf",
+        "[MS-DPEDMX].pdf",
+        "[MS-DPSSAS].pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "2.6 MB",
+        "9.6 MB",
+        "36.4 MB",
+        "629.4 KB",
+        "606.9 KB",
+        "527.1 KB",
+        "641.5 KB",
+        "528.4 KB",
+        "931.4 KB",
+        "614.2 KB",
+        "2.9 MB",
+        "548.5 KB",
+        "574.1 KB",
+        "534.7 KB",
+        "1.2 MB",
+        "891.1 KB",
+        "818.8 KB",
+        "1.1 MB",
+        "40.5 MB",
+        "5.6 MB",
+        "733.6 KB",
+        "551.7 KB",
+        "594.6 KB",
+        "234.7 KB",
+        "1.2 MB",
+        "10.8 MB",
+        "1.9 MB",
+        "532.8 KB",
+        "584.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The data portability documentation is available in the Adobe Portable Document Format (PDF) which you can open by using Adobe Reader, available at http://www.adobe.com.\r\n<br />\r\n<br />\r\n<b>Note:</b> For optimal readability of the PDF documents, it is recommended that they be opened and viewed by using Adobe Reader version 8.0 or above. Earlier versions of Adobe Reader might not provide the same reading quality.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Individual PDF files should be stored in a single directory to enable links between the data portability documents. Note that if you download additional data portability or protocol documents from Microsoft, they should also be stored in the same directory to enable linking.\r\n<br />\r\n<br />\r\nThe self-extracting Zip file (SQLDataPortability.zip) in this list of files contains all of the data portability documents. Please download and read the readme file. This package does not collect any personal information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23182",
+    "downloadPreload": true
+}

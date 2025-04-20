@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Content Series - Client Endpoint Component Guides",
+    "downloadDescription": "Forefront UAG Client Endpoint Component Deployment Guides",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ComponentPlanning.docx",
+            "url": "https://download.microsoft.com/download/d/8/6/d86817b8-29c8-45db-afbc-054a00b8bcdf/ComponentPlanning.docx",
+            "size": "64683",
+            "version": "February, 2010",
+            "datePublished": "7/15/2024 3:08:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ComponentDeploy.docx",
+            "url": "https://download.microsoft.com/download/d/8/6/d86817b8-29c8-45db-afbc-054a00b8bcdf/ComponentDeploy.docx",
+            "size": "60889",
+            "version": "February, 2010",
+            "datePublished": "7/15/2024 3:08:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Forefront UAG provides a gateway for managed and unmanaged remote client endpoints, from a variety of locations, to access corporate applications and resources. Forefront UAG installs client components on client endpoints to enable a number of remote access features. Different remote access features require different client components on the client endpoint. As soon as the client endpoint attempts to access a Forefront UAG site, Forefront UAG attempts to determine which client components are installed and running on the endpoint computer, using the Forefront UAG Endpoint Detection component. The Endpoint Detection component verifies the identity of the Forefront UAG site against the site\u2019s server certificate, and checks whether the site is on the client endpoint\u2019s Trusted Sites list. Only if the site is trusted, can the component run on the client endpoint, and collect the data that identifies settings and features on the client endpoint, and identify which client components are installed and running on the computer.\r\n\r\nThis download contains a design guide and a deployment guide for planning and configuring the deployment of client endpoint components. The design guide helps you to understand endpoint component concepts, identify deployment goals, and understand the planning required for each deployment goal. After identifying your endpoint component design, use the deployment guide as a step-by-step companion as you configure endpoint component deployment.\r\n\r\nThe design guide is available from the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd857326.aspx). The deployment guide is also available from the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd857277.aspx). ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February, 2010",
+    "detailsSection_file_name": [
+        "ComponentPlanning.docx",
+        "ComponentDeploy.docx"
+    ],
+    "detailsSection_file_size": [
+        "63.2 KB",
+        "59.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52",
+    "downloadPreload": true
+}

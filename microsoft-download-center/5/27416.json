@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Windows and Windows Server compatibility cookbook: Windows 8, Windows 8.1, and Windows Server 2012",
+    "downloadDescription": "This paper provides info about new features of the Windows 8, Windows 8.1, and Windows Server\u00ae 2012 operating systems. It provides guidelines for developers to verify the compatibility of their existing and planned apps with the new operating systems. It assumes that the reader is familiar with previous versions of Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows and Windows Server compatibility cookbook.docx",
+            "url": "https://download.microsoft.com/download/2/c/9/2c9c7b01-a1fc-47b6-9166-2151fb6e007c/Windows and Windows Server compatibility cookbook.docx",
+            "size": "1040350",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows and Windows Server compatibility cookbook.xps",
+            "url": "https://download.microsoft.com/download/2/c/9/2c9c7b01-a1fc-47b6-9166-2151fb6e007c/Windows and Windows Server compatibility cookbook.xps",
+            "size": "2764520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In the Cookbook we provide info about changes to and new features of the Windows\u00ae 8, Windows 8.1, and Windows Server\u00ae 2012 operating systems. We also provide guidelines for you to verify the compatibility of your existing and planned apps with the new operating systems. We assume that you are familiar with previous versions of Windows.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows and Windows Server compatibility cookbook.docx",
+        "Windows and Windows Server compatibility cookbook.xps"
+    ],
+    "detailsSection_file_size": [
+        "1016.0 KB",
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8, Windows 8.1,  or Windows Server 2012",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27416",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Bing Ads Campaign Budget Tool",
+    "downloadDescription": "We removed the Campaign budget tool, so it's no longer available for download. Instead, we're offering a web-based tool that makes it easier to view real time data, calculate daily pacing and adjust your campaign's budget. Please contact Microsoft Advertising Support team if you have any questions or difficulties accessing the new tool.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "setup.exe",
+            "url": "https://download.microsoft.com/download/1/4/b/14bba1c0-71e5-4f41-a289-71f273804d01/setup.exe",
+            "size": "406976",
+            "version": "1.11.5.0",
+            "datePublished": "7/15/2024 5:02:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We removed the Campaign budget tool, so it's no longer available for download. Instead, we're offering a web-based tool that makes it easier to view real time data, calculate daily pacing and adjust your campaign's budget. Please contact Microsoft Advertising Support team if you have any questions or difficulties accessing the new tool.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.11.5.0",
+    "detailsSection_file_name": [
+        "setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "397.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office 64-bit versions",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "This tool has been rename from \"BDRAdin\" to \"Bing Ads Campaign Budget Tool\" in windows \"Settings - Apps & Features\", please uninstall \"Bing Ads Campaign Budget Tool\" before installation.\r\n1. Download the setup.exe file.\r\n2. Double click the setup.exe file to install the tool.\r\n3. Use it via Excel.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54180",
+    "downloadPreload": true
+}

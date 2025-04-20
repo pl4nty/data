@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Visual FoxPro 8.0 Service Pack 1 Security Rollup Update",
+    "downloadDescription": "A security issue has been identified that could compromise your Windows-based system running Visual FoxPro 8.0 Service Pack 1. You can help protect your computer by installing this update from Microsoft. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vfp8sp1-kb955629-x86-enu.msi",
+            "url": "https://download.microsoft.com/download/b/6/6/b66735cd-59a6-468b-b417-6bef9bd81da3/VFP8SP1-KB955629-x86-ENU.msi",
+            "size": "1765376",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This package updates the Microsoft Visual FoxPro 8.0 Common Control mscomctl.ocx. Please refer to the security bulletin for additional details.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2647488",
+        "name": "KB2647488"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-027",
+        "name": "MS12-027"
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vfp8sp1-kb955629-x86-enu.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2003 Service Pack 2",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2647488",
+            "url": "http://support.microsoft.com/kb/2647488"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29355",
+    "downloadPreload": true
+}

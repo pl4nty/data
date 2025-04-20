@@ -1,0 +1,148 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Foundation 2010",
+    "downloadDescription": "Microsoft SharePoint Foundation 2010 is for smaller organizations or departments looking for a low-cost entry-level or pilot solution for secure, Web-based collaboration.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePoint_SP2_en-us.exe",
+            "url": "https://download.microsoft.com/download/9/7/6/97602c6d-45a8-4e0b-ac17-6c814314b857/SharePoint_SP2_en-us.exe",
+            "size": "222431184",
+            "version": "SP2",
+            "datePublished": "7/15/2024 3:05:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "SharePoint Foundation 2010 is the new version of Microsoft Windows SharePoint Services. It is the essential solution for organizations that need a secure, manageable, web-based collaboration platform. \u200bSharePoint helps teams stay connected and productive by providing easy access to the people, documents, and information that they need to make well-informed decisions and get work done. Use SharePoint Foundation to coordinate schedules, organize documents, and participate in discussions through team workspaces, blogs, wikis, and document libraries on the platform that is the underlying infrastructure for SharePoint Server. \r\n<br/>\r\n<br/>\r\n<br/>\r\nSearch Server 2010 Express: If you\u2019re using SharePoint Foundation, you can easily add search capabilities to your collaboration environment across SharePoint sites, file shares, web sites, Exchange Public Folders, and third party repositories using Microsoft Search Server 2010 Express. Click <a href=\"http://go.microsoft.com/?linkid=9726660\">here</a> to download.\r\n\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP2",
+    "detailsSection_file_name": [
+        "SharePoint_SP2_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "212.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please review the <a href=\"http://technet.microsoft.com/en-us/library/cc288751(office.14).aspx\">SharePoint Foundation 2010 system requirements</a> before you proceed. Actual requirements and product functionality may vary based on your system configuration.\r\n<br/>\r\n<br/>\r\nSharePoint Foundation 2010 can also be installed for development purposes on Windows 7 and Windows Vista Service Pack 2. Installing on these operating systems is not supported for production deployments. For instructions on how to install on these operating systems, refer to <a href=\"http://msdn.microsoft.com/en-us/library/ee554869(office.14).aspx\">Setting Up the Development Environment for SharePoint 2010 on Windows Vista, Windows 7, and Windows Server 2008</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download and install the file on this page. Follow the instructions that appear on the screen. \r\nFor more information about installing and using SharePoint Foundation, see the <a href=\"http://go.microsoft.com/?linkid=9726661\">SharePoint Foundation TechCenter</a>.\u200b\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24983",
+    "downloadPreload": true
+}

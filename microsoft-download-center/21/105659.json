@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "LatestComponentsUpload_20231017T124345",
+    "downloadDescription": "LatestComponentsUpload_20231017T124345",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PushInstallAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/b/3/5/b3576cd0-dca4-42a9-a865-f8def8aa1f2a/PushInstallAgentSetup.msi",
+            "size": "23363584",
+            "version": "20231017T124345",
+            "datePublished": "10/17/2023 7:18:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "LatestComponentsUpload_20231017T124345",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20231017T124345",
+    "detailsSection_file_name": [
+        "PushInstallAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "22.3 MB"
+    ],
+    "detailsSection_file_date": "10/17/2023",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "LatestComponents Json file contains the download links for clients.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105659",
+    "downloadPreload": true
+}

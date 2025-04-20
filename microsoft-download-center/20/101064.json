@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2019 Express",
+    "downloadDescription": "Microsoft\u00ae SQL Server\u00ae 2019 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL2019-SSEI-Expr.exe",
+            "url": "https://download.microsoft.com/download/7/f/8/7f8a9c43-8c8a-4f7c-9f92-83c18d96b681/SQL2019-SSEI-Expr.exe",
+            "size": "6379936",
+            "version": "15.0.2000.5",
+            "datePublished": "7/15/2024 4:21:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "\nMicrosoft SQL Server 2019 Express is a free, feature-rich editions of SQL Server that is ideal for learning, developing, powering desktop, web & small server applications, and for redistribution by ISVs. \r\n\n<br />\n<br />\n<b>LocalDB (SqlLocalDB)</b>\n<ul>\n<li>LocalDB is a lightweight version of Express that has all its programmability features, yet runs in user mode and has a fast, zero-configuration installation and short list of pre-requisites. Use this if you need a simple way to create and work with databases from code. It can be bundled with Application and Database Development tools like Visual Studio and or embedded with an application that needs local databases.</li>\n</ul>\n<b>Express (SQLEXPR)</b>\n<ul>\n  <li>\n    Express edition includes the SQL Server database engine only. Best suited to accept remote connections or administer remotely.\n  </li>\n</ul>\n    <b>Express with Advanced Services (SQLEXPRADV)</b>\n<ul>\n  <li>This package contains Polybase and Full Text Search features in addition to SQL Database Engine. </li>\n  <br />\n</ul>\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.5",
+    "detailsSection_file_name": [
+        "SQL2019-SSEI-Expr.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n <li>\n  <b>Processor</b> \n  </li>\n <ul>\n  <li>Intel - compatible processor with a minimum speed of 1 GHz or a faster processor</li> \n  </ul>\n <li>\n  <b>RAM</b> \n  </li>\n <ul>\n  <li>Minimum 512MB</li> \n  </ul>\n <li>\n  <b>Hard Disk Space</b> \n  </li>\n <ul>\n  <li>4.2 GB of Disk Space</li> \n  </ul>\n  </ul>\n  <br /> \n  <b>Limitations :</b> \n  Microsoft SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the SQL Server 2019 Express installer (SQLServer2019-SSEI-Expr) on this page that, when executed, will present options to perform an installation or download media only.",
+    "additionalInformationSection": "If you have a specific technical question about Microsoft\u00ae SQL Server\u00ae 2019 Express please visit <a href=\" http://go.microsoft.com/fwlink/?LinkId=186769\">the SQL Server Express Forum </a>.\n<br /><br />\n- If you have questions about SQL Server Express, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\n<br /><br />\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\n\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101064",
+    "downloadPreload": true
+}

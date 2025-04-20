@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "XAudio2: High Performance Considerations",
+    "downloadDescription": "Presentation from Gamefest 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "XAudio2_High_Performance_Considerations_US.zip",
+            "url": "https://download.microsoft.com/download/3/2/d/32d068fd-94e7-47ec-b7f6-9d86aef44318/XAudio2_High_Performance_Considerations_US.zip",
+            "size": "41464726",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You may be porting your title from XAudio1, or looking to create that next high-performance audio engine from scratch. This talk covers several features in XAudio2 that can be used to enable a more immersive experience for your audience, as well as make your life easier as an audio developer. We cover the changes that XAudio2 brings when porting from XAudio1 or DirectSound, the various file formats available, and architecting a solution around proper voice pooling and audio graph considerations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "XAudio2_High_Performance_Considerations_US.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Powerpoint, WMA Audio",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Powerpoint presentation and WMA audio",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6871",
+    "downloadPreload": true
+}

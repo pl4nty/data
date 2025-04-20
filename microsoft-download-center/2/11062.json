@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "TwC-Privacy-115047-HiResBleed",
+    "downloadDescription": "Protecting Your Privacy on the Internet",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TwC-Privacy-115047-LoRes.pdf",
+            "url": "https://download.microsoft.com/download/4/5/4/45415f27-485c-4322-8558-52d4c42a6217/TwC-Privacy-115047-LoRes.pdf",
+            "size": "395979",
+            "version": "001",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TwC-Privacy-115047-HiResBleed.pdf",
+            "url": "https://download.microsoft.com/download/4/5/4/45415f27-485c-4322-8558-52d4c42a6217/TwC-Privacy-115047-HiResBleed.pdf",
+            "size": "3118552",
+            "version": "001",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TwC-Privacy-115047-HiRes-NoBleed.pdf",
+            "url": "https://download.microsoft.com/download/4/5/4/45415f27-485c-4322-8558-52d4c42a6217/TwC-Privacy-115047-HiRes-NoBleed.pdf",
+            "size": "3016481",
+            "version": "001",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Protecting Your Privacy on the Internet",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "001",
+    "detailsSection_file_name": [
+        "TwC-Privacy-115047-LoRes.pdf",
+        "TwC-Privacy-115047-HiResBleed.pdf",
+        "TwC-Privacy-115047-HiRes-NoBleed.pdf"
+    ],
+    "detailsSection_file_size": [
+        "386.7 KB",
+        "3.0 MB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11062",
+    "downloadPreload": true
+}

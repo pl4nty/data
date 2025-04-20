@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Estimate Performance and Capacity Requirements for Microsoft Project Server 2010",
+    "downloadDescription": "Guidance on the footprint that using Project Server 2010 has on topologies that are running SharePoint Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Estimate Performance and Capacity Requirements for Microsoft Project Server 2010.docx",
+            "url": "https://download.microsoft.com/download/3/4/e/34e51eed-ac63-44c3-995e-57ce2c0f9051/Estimate Performance and Capacity Requirements for Microsoft Project Server 2010.docx",
+            "size": "744638",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This performance and capacity planning document provides guidance on the footprint that usage of Microsoft Project Server 2010 has on topologies that are running Microsoft SharePoint Server 2010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "Estimate Performance and Capacity Requirements for Microsoft Project Server 2010.docx"
+    ],
+    "detailsSection_file_size": [
+        "727.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Microsoft Office Word 2007 or 2010. You can also use Office Word 2003 or Word XP and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=78517\">Microsoft Office Compatibility Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5691",
+    "downloadPreload": true
+}

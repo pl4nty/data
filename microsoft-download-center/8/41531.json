@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "PCI Implementation Guide for Microsoft Dynamics RMS 2.0 CU5",
+    "downloadDescription": "This guide describes how to implement Microsoft Dynamics RMS in compliance with the Payment Card Industry (PCI) Data Security Standard version 2.0. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PCI Implementation Guide RMS CU5.pdf",
+            "url": "https://download.microsoft.com/download/5/0/c/50c582b7-a41e-48a0-81b5-f261dde6c45f/PCI Implementation Guide RMS CU5.pdf",
+            "size": "940655",
+            "version": "2.0 CU5",
+            "datePublished": "7/15/2024 3:24:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The requirements in this guide must be followed to implement Microsoft Dynamics RMS 2.0 CU5 and Payment Services for Microsoft Dynamics ERP (the integrated payment solution from Microsoft) in a manner that is compliant with the Payment Card Industry (PCI) Data Security Standard version 2.0. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0 CU5",
+    "detailsSection_file_name": [
+        "PCI Implementation Guide RMS CU5.pdf"
+    ],
+    "detailsSection_file_size": [
+        "918.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Embedded POSReady 2009",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Small Business Server 2011 Standard",
+        "Windows XP 64-bit"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41531",
+    "downloadPreload": true
+}

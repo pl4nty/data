@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Scalable Security Modeling with Microsoft Dynamics CRM 2011",
+    "downloadDescription": "This paper describes how security modeling features in Microsoft Dynamics CRM 2011 for authorization work at scale, the implications associated with these features functioning at high volumes, and guidance on common and recommended usage patterns for modeling Microsoft Dynamics CRM 2011 security at scale, incorporating teams as appropriate.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Scalable Security Modeling with Microsoft Dynamics CRM 2011.pdf",
+            "url": "https://download.microsoft.com/download/9/c/a/9caf0ffc-db64-4f66-be99-af9b320ae1de/Scalable Security Modeling with Microsoft Dynamics CRM 2011.pdf",
+            "size": "990860",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics CRM 2011 offers a wide range of security modeling features, and it is important to choose the most appropriate approach to implementing a particular solution. Each feature offers a combination of characteristics that provides a balance between granularity of access control, administrative ease, and impact on scalability. Having an understanding of the underlying mechanisms supporting each security modeling feature can be useful when selecting the best approach to solving a particular challenge, especially when planning to develop a large volume system.\r\n\r\nThis paper describes how the security modeling features in Microsoft Dynamics CRM 2011 for authorization work at scale, the implications associated with these features functioning at high volumes, and guidance on common and recommended usage patterns for modeling Microsoft Dynamics CRM 2011 security at scale, incorporating teams as appropriate.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Scalable Security Modeling with Microsoft Dynamics CRM 2011.pdf"
+    ],
+    "detailsSection_file_size": [
+        "967.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe\u00a9 Reader.</LI><br />\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39095",
+    "downloadPreload": true
+}

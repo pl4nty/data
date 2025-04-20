@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "MTP Responder for Windows Embedded CE 6.0 R3 - 091231_KB978465 update",
+    "downloadDescription": "MTP Responder provides Windows\u2122 Device Stage Baseline and Other Portable Device Profile support. It also provides a subset of the official MTP features.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-091231-KB978465-SH4.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-SH4.msi",
+            "size": "64534016",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MTP Responder Development Guide.pdf",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/MTP Responder Development Guide.pdf",
+            "size": "662890",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-091231-KB978465-MIPSII_FP.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-MIPSII_FP.msi",
+            "size": "64787456",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WinCEPB60-091231-KB978465-Armv4I.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-Armv4I.msi",
+            "size": "65155072",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-091231-KB978465-MIPSIV.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-MIPSIV.msi",
+            "size": "64878592",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-091231-KB978465-MIPSII.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-MIPSII.msi",
+            "size": "64779776",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-091231-KB978465-X86.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-X86.msi",
+            "size": "64012288",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-091231-KB978465-MIPSIV_FP.msi",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/WinCEPB60-091231-KB978465-MIPSIV_FP.msi",
+            "size": "64880128",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded CE 6.0_Update_KB978465.htm",
+            "url": "https://download.microsoft.com/download/3/d/a/3da4c937-abca-43f1-a5d7-8ff4c8584faf/Windows Embedded CE 6.0_Update_KB978465.htm",
+            "size": "50989",
+            "version": "R3",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MTP Responder for Windows Embedded 6.0 R3 provides enhances Media Transfer Protocol (MTP) functionality to support Windows 7 Device Stage. Device Stage offers a central location in Windows for your users to discover and use their devices. When you include Device Stage support in your device, users can get detailed information about the device, copy files to and from the device, run device-specific tasks, read a product manual, and buy accessories for the device, all in one handy location. Device Stage provides these capabilities without requiring the user to download or install software.\r\nFor complete details regarding this release, please download the MTP Responder Development Guide.pdf below.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "R3",
+    "detailsSection_file_name": [
+        "WinCEPB60-091231-KB978465-SH4.msi",
+        "MTP Responder Development Guide.pdf",
+        "WinCEPB60-091231-KB978465-MIPSII_FP.msi",
+        "WinCEPB60-091231-KB978465-Armv4I.msi",
+        "WinCEPB60-091231-KB978465-MIPSIV.msi",
+        "WinCEPB60-091231-KB978465-MIPSII.msi",
+        "WinCEPB60-091231-KB978465-X86.msi",
+        "WinCEPB60-091231-KB978465-MIPSIV_FP.msi",
+        "Windows Embedded CE 6.0_Update_KB978465.htm"
+    ],
+    "detailsSection_file_size": [
+        "61.5 MB",
+        "647.4 KB",
+        "61.8 MB",
+        "62.1 MB",
+        "61.9 MB",
+        "61.8 MB",
+        "61.0 MB",
+        "61.9 MB",
+        "49.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=bc247d88-ddb6-4d4a-a595-8eee3556fe46\">Windows Embedded CE 6.0 R3</a> is required to be installed prior to installing this rollup.\n<br/> \n<br/>\nThe following must be installed in order to create a supported Windows Embedded CE 6.0 development environment:\n<br/>\n<br/>\n1. Visual Studio 2005<br/>\n2. <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=bb4a75ab-e2d4-4c96-b39d-37baf6b5b1dc&DisplayLang=en\">Visual Studio 2005 Service Pack 1</a><br />\n3. <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=90e2942d-3ad1-4873-a2ee-4acc0aace5b6\">Visual Studio 2005 Service Pack 1 Update for Windows Vista</a> (if applicable)<br />\n4. Windows Embedded CE 6.0 Platform Builder<br/>\n5. <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=bf0dc0e3-8575-4860-a8e3-290adf242678&DisplayLang=en\">Windows Embedded CE 6.0 SP1</a> (required if PB 6.0 Tools have been installed)<br/>\n6. <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f41fc7c1-f0f4-4fd6-9366-b61e0ab59565&displaylang=en\">Windows Embedded CE 6.0 R2</a><br/>\n7. <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=bc247d88-ddb6-4d4a-a595-8eee3556fe46\">Windows Embedded CE 6.0 R3</a><br/>\r\n8. <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=18a0bc2b-35ad-4b04-bf80-3eb701ceaa2b\">Windows Embedded CE 6.0 R3 Update Rollup</a>\n<br/>\n<br/>\r\n<b>NOTE:</b>\r\n<br/>\r\n<br/>\r\nThis release is required Windows Embedded CE 6.0 R3 install.\r\n<br/>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "<br/> \r\n<b> Important Download Details:</b><br /><ul><li>Each update is contained in a compressed file along with instructions.  All of the updates have been separated to make the download quicker.</li><li>Updates are cumulative; we suggest that you download all of them.  The setup will replace files in your Windows Embedded CE Platform Builder installation.</li><li>If you experience any problems in the download or installation of these updates e-mail qfeadmin@microsoft.com.</li></ul><ol><li>Click the file you want to download from the list below.</li><li>Do one of the following:</li><ul><li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li><li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li></ul></ol>\nThis site provides critical stand-alone updates and monthly rollups of all Windows Embedded CE updates available for evaluation customers only. All licensed OEMs should visit the OEM Windows Embedded Web site for updates. \n<br />\n<br/>\nIf you have trouble installing packages on Windows Vista, open command prompt, choose \"Run as administrator\", confirm UAC prompt, launch an update.\n<br/>\n<br/>\r\n",
+    "additionalInformationSection": "<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=7e286847-6e06-4a0c-8cac-ca7d4c09cb56\">Windows Embedded CE 6.0 Evaluation Edition</a>\r\n<br />\r\n<br />\r\n<a href=\"http://download.microsoft.com/download/2/7/9/2798d28c-72b3-4231-a996-d9a7f1d56166/Blend_Trial_en.exe\">Microsoft Expression Blend 2</a> (to create and edit XAML layouts Silverlight for Windows Embedded)\r\n<br />\r\n<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=527042f7-bb5b-4831-a6ad-5081808824ec\">QQ Messenger Client for Windows Embedded CE 6.0 R3</a>\r\n<br />\r\n<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d2fd14eb-7d5c-428b-951c-343f910047c1\">Viewers for Windows Embedded CE 6.0 R3</a>\r\n<br />\r\n<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d0acb735-fe7f-4885-ab50-840e8979a287\">Monotype iType font engine for Windows Embedded CE 6.0 R3</a>\r\n<br />\r\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded CE",
+            "url": "http://www.microsoft.com/windowsce"
+        },
+        {
+            "title": "windows Embedded Web Site",
+            "url": "http://www.microsoft.com/windowsembedded"
+        },
+        {
+            "title": "msdn Windows Embedded Web Site",
+            "url": "http://msdn.microsoft.com/en-us/windowsembedded/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9332",
+    "downloadPreload": true
+}

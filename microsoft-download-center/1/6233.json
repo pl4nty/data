@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Response Group Deployment Guide",
+    "downloadDescription": "This download guides you through the process of configuring the Response Group feature for Enterprise Voice.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LS_Deploy_RespGroup.doc",
+            "url": "https://download.microsoft.com/download/1/d/6/1d626ae1-02c1-4a50-a4d1-9a7cc0130d92/LS_Deploy_RespGroup.doc",
+            "size": "312832",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download guides you through the process of configuring the Response Group feature of Enterprise Voice. Response Group allows you to route and queue calls to groups of agents, such as for a help desk or general telephone support for a department.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2012",
+    "detailsSection_file_name": [
+        "LS_Deploy_RespGroup.doc"
+    ],
+    "detailsSection_file_size": [
+        "305.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6233",
+    "downloadPreload": true
+}

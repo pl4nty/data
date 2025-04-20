@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Great Plains Receivables Management",
+    "downloadDescription": "Maintain tight control over Accounts Receivable.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "GP_Receivables.pdf",
+            "url": "https://download.microsoft.com/download/6/7/a/67ac858b-d8ed-46f3-a7c1-dd4bd6dd3b12/GP_Receivables.pdf",
+            "size": "884498",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GP_Receivables.xps",
+            "url": "https://download.microsoft.com/download/6/7/a/67ac858b-d8ed-46f3-a7c1-dd4bd6dd3b12/GP_Receivables.xps",
+            "size": "1442884",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Maintain tight control over Accounts Receivable with capabilities that help you track invoices, process receipts, and analyze customer activity, so you can manage sales made on account more effectively and yet maintain lower overhead costs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "GP_Receivables.pdf",
+        "GP_Receivables.xps"
+    ],
+    "detailsSection_file_size": [
+        "863.8 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31268",
+    "downloadPreload": true
+}

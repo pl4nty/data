@@ -1,0 +1,421 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Enterprise Search Labs",
+    "downloadDescription": "Download labs to walk through key scenarios for implementing enterprise search deployments that include Microsoft SharePoint Server 2010 or Microsoft FAST Search Server 2010 for SharePoint. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_ConnectUsingBDC_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_ConnectUsingBDC_1.doc",
+            "size": "101888",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_RelRank_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_RelRank_1.doc",
+            "size": "142848",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_Linguistics_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_Linguistics_1.xps",
+            "size": "574242",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FdrtdSrch_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FdrtdSrch_1.xps",
+            "size": "749598",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvDplyScalability_6.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvDplyScalability_6.xps",
+            "size": "463322",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_UGSP2010FASTSrchforSP_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_UGSP2010FASTSrchforSP_1.xps",
+            "size": "404467",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_ConnectUsingBDC_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_ConnectUsingBDC_1.xps",
+            "size": "346299",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FSAdvDplyScalability_3.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FSAdvDplyScalability_3.xps",
+            "size": "578648",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvDplyScalability_6.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvDplyScalability_6.doc",
+            "size": "80896",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FSAdvDplyScalability_3.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FSAdvDplyScalability_3.doc",
+            "size": "110080",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_SrchReportAnalytics_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_SrchReportAnalytics_1.doc",
+            "size": "89600",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_ConfigSrchUIs_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_ConfigSrchUIs_1.doc",
+            "size": "315392",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvDplyScalability_5.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvDplyScalability_5.xps",
+            "size": "474867",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvSrchSec_2.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvSrchSec_2.doc",
+            "size": "75264",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FSAdvDplyScalability_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FSAdvDplyScalability_1.xps",
+            "size": "464933",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_MntrngSysMngmnt_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_MntrngSysMngmnt_1.xps",
+            "size": "566972",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_DplyScalability_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_DplyScalability_1.xps",
+            "size": "592741",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FSDplyScalability_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FSDplyScalability_1.xps",
+            "size": "559745",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvDplyScalability_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvDplyScalability_1.xps",
+            "size": "448670",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvSrchSec_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvSrchSec_1.xps",
+            "size": "981811",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FdrtdSrch_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FdrtdSrch_1.doc",
+            "size": "600064",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_Linguistics_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_Linguistics_1.doc",
+            "size": "125952",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_ConfigSrchUIs_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_ConfigSrchUIs_1.xps",
+            "size": "569961",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvDplyScalability_5.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvDplyScalability_5.doc",
+            "size": "117760",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SP14EntSearchIT_AdvDplyScalability_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvDplyScalability_1.doc",
+            "size": "95232",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_DplyScalability_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_DplyScalability_1.doc",
+            "size": "103936",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_UGSP2010FASTSrchforSP_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_UGSP2010FASTSrchforSP_1.doc",
+            "size": "110080",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_MntrngSysMngmnt_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_MntrngSysMngmnt_1.doc",
+            "size": "307712",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FSDplyScalability_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FSDplyScalability_1.doc",
+            "size": "86528",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_FSAdvDplyScalability_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_FSAdvDplyScalability_1.doc",
+            "size": "271360",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_RelRank_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_RelRank_1.xps",
+            "size": "414744",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_PwrshellforSrch_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_PwrshellforSrch_1.xps",
+            "size": "489275",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_PpleSrchAdminMngmnt_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_PpleSrchAdminMngmnt_1.doc",
+            "size": "202240",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvSrchSec_2.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvSrchSec_2.xps",
+            "size": "656105",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_PwrshellforSrch_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_PwrshellforSrch_1.doc",
+            "size": "92160",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_PpleSrchAdminMngmnt_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_PpleSrchAdminMngmnt_1.xps",
+            "size": "455299",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_AdvSrchSec_1.doc",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_AdvSrchSec_1.doc",
+            "size": "574976",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchIT_SrchReportAnalytics_1.xps",
+            "url": "https://download.microsoft.com/download/6/a/8/6a83d203-0369-4b6d-b1f2-21d93996b4d6/SP14EntSearchIT_SrchReportAnalytics_1.xps",
+            "size": "230190",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SharePoint 2010 Enterprise Search training course provides a series of hands-on labs, presentations, and videos that demonstrate how to enable high-end enterprise search with Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Use these labs to learn about deployment, search administration, monitoring, analytics, defining the end-user experience, federated search, people search, linguistics, and more.  Audience: IT professionals.\r\n\r\n<ul><li><b>Connectors and Using Business Data Connectivity Services in SharePoint Server 2010.</b> This module covers the Microsoft FAST Search Server 2010 for SharePoint content feeding architecture and connector framework and the FAST Search Server 2010 for SharePoint connectors. In the hands-on lab exercise, you will configure a search center to also search content external to SharePoint. To achieve this, you will create an external content type by using Microsoft Visual Studio 2010, deploy it to SharePoint Server, configure search for this new component, and then perform some queries to confirm that your connector is now available for search. </li>\r\n<li><b>Advanced Search Security for SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module reviews security concepts in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint including item-level security and the FAST Search authorization process. Learn to protect your FAST Search Server 2010 installation, protect query traffic between SSAs, and how to implement HTTPS for query traffic. Also view guidance on security planning for sites and content and SharePoint Server 2010 authentication. </li>\r\n<li><b>Deployment and Scalability for SharePoint Server 2010.</b> This module covers the search environment architecture and fault tolerance options, search environment planning steps, sizing requirements for the various search components, and the process for installing single and multi-node SharePoint search farms.  The hands-on lab exercise walks through how to deploy a simple SharePoint search farm.  </li>\r\n<li><b>Configuring User Interfaces for Search in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> In this module, learn how to create search sites and search pages, configure search Web Parts, configure the refinement panel, and enable federation Web Parts. </li>\r\n<li><b>Monitoring and System Management for SharePoint Server 2010.</b> This module shows you the monitoring, security, and service management features in Microsoft SharePoint Server 2010. It takes you through the process of configuring monitoring in SharePoint Server 2010 and shows you how to view reports and logs, create custom permission levels for a site, and manage shared services. </li>\r\n<li><b>Search Reporting and Analytics for SharePoint Server 2010.</b> This module covers search reports and analytics that are available in Microsoft SharePoint Server 2010. </li>\r\n<li><b>Federated Search in SharePoint Server 2010.</b> This module covers the basics of federated search. The hands-on lab walks you through creating and configuring Web Parts for federated search.  </li>\r\n<li><b>Linguistics for FAST Search Server 2010 for SharePoint.</b> The lab for the linguistics module demonstrates how to work with content in multiple languages, manage keywords and synonyms, and enable managed property stemming in the search interface. </li>\r\n<li><b>People Search Administration and Management for SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module takes you through the process of configuring people search in Microsoft SharePoint Server 2010, adding user profiles, configuring My Site settings, and crawling the profile store. The module examines ways to enhance user profiles to improve people search and customize the people search experience. The hands-on lab guides you through the process of enhancing user profiles to improve people search.</li>\r\n<li><b>Advanced Deployment and Scalability for SharePoint Server 2010.</b> This module focuses on the deployment process for Microsoft SharePoint Server 2010, the topology options available, how to get the most out of cross-farm services, and takes you through the installation and configuration process of a multi-node SharePoint Server 2010 deployment.  </li>\r\n<li><b>Relevancy and Ranking for FAST Search Server 2010 for SharePoint.</b> This module covers how to perform common relevancy tuning tasks for Microsoft FAST Search Server 2010 for SharePoint. Learn to create and configure business-based ranking, rank profiles, and analyze the rank log. </li>\r\n<li><b>Advanced Deployment and Scalability for FAST Search Server 2010 for SharePoint.</b> This module focuses on the different elements that make up Microsoft FAST Search Server 2010 for SharePoint. Learn to use the redundancy and scalability options available in FAST Search Server 2010 for SharePoint to determine when to use single or multiple server installation.  </li>\r\n<li><b>Windows PowerShell for Search</b> This module introduces Windows PowerShell cmdlets for Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint beginning with an overview of benefits and best practices including FAST Search cmdlets for administration, installation, security, and spelling. Windows PowerShell is a task-based command-line shell and scripting language designed especially for system administration. </li>\r\n<li><b>Upgrading from SharePoint Server 2010 to FAST Search Server 2010 for SharePoint.</b> This module describes the advanced search features provided by Microsoft FAST Search Server 2010 for SharePoint and walks you through a single server deployment. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SP14EntSearchIT_ConnectUsingBDC_1.doc",
+        "SP14EntSearchIT_RelRank_1.doc",
+        "SP14EntSearchIT_Linguistics_1.xps",
+        "SP14EntSearchIT_FdrtdSrch_1.xps",
+        "SP14EntSearchIT_AdvDplyScalability_6.xps",
+        "SP14EntSearchIT_UGSP2010FASTSrchforSP_1.xps",
+        "SP14EntSearchIT_ConnectUsingBDC_1.xps",
+        "SP14EntSearchIT_FSAdvDplyScalability_3.xps",
+        "SP14EntSearchIT_AdvDplyScalability_6.doc",
+        "SP14EntSearchIT_FSAdvDplyScalability_3.doc",
+        "SP14EntSearchIT_SrchReportAnalytics_1.doc",
+        "SP14EntSearchIT_ConfigSrchUIs_1.doc",
+        "SP14EntSearchIT_AdvDplyScalability_5.xps",
+        "SP14EntSearchIT_AdvSrchSec_2.doc",
+        "SP14EntSearchIT_FSAdvDplyScalability_1.xps",
+        "SP14EntSearchIT_MntrngSysMngmnt_1.xps",
+        "SP14EntSearchIT_DplyScalability_1.xps",
+        "SP14EntSearchIT_FSDplyScalability_1.xps",
+        "SP14EntSearchIT_AdvDplyScalability_1.xps",
+        "SP14EntSearchIT_AdvSrchSec_1.xps",
+        "SP14EntSearchIT_FdrtdSrch_1.doc",
+        "SP14EntSearchIT_Linguistics_1.doc",
+        "SP14EntSearchIT_ConfigSrchUIs_1.xps",
+        "SP14EntSearchIT_AdvDplyScalability_5.doc",
+        "SP14EntSearchIT_AdvDplyScalability_1.doc",
+        "SP14EntSearchIT_DplyScalability_1.doc",
+        "SP14EntSearchIT_UGSP2010FASTSrchforSP_1.doc",
+        "SP14EntSearchIT_MntrngSysMngmnt_1.doc",
+        "SP14EntSearchIT_FSDplyScalability_1.doc",
+        "SP14EntSearchIT_FSAdvDplyScalability_1.doc",
+        "SP14EntSearchIT_RelRank_1.xps",
+        "SP14EntSearchIT_PwrshellforSrch_1.xps",
+        "SP14EntSearchIT_PpleSrchAdminMngmnt_1.doc",
+        "SP14EntSearchIT_AdvSrchSec_2.xps",
+        "SP14EntSearchIT_PwrshellforSrch_1.doc",
+        "SP14EntSearchIT_PpleSrchAdminMngmnt_1.xps",
+        "SP14EntSearchIT_AdvSrchSec_1.doc",
+        "SP14EntSearchIT_SrchReportAnalytics_1.xps"
+    ],
+    "detailsSection_file_size": [
+        "99.5 KB",
+        "139.5 KB",
+        "560.8 KB",
+        "732.0 KB",
+        "452.5 KB",
+        "395.0 KB",
+        "338.2 KB",
+        "565.1 KB",
+        "79.0 KB",
+        "107.5 KB",
+        "87.5 KB",
+        "308.0 KB",
+        "463.7 KB",
+        "73.5 KB",
+        "454.0 KB",
+        "553.7 KB",
+        "578.8 KB",
+        "546.6 KB",
+        "438.2 KB",
+        "958.8 KB",
+        "586.0 KB",
+        "123.0 KB",
+        "556.6 KB",
+        "115.0 KB",
+        "93.0 KB",
+        "101.5 KB",
+        "107.5 KB",
+        "300.5 KB",
+        "84.5 KB",
+        "265.0 KB",
+        "405.0 KB",
+        "477.8 KB",
+        "197.5 KB",
+        "640.7 KB",
+        "90.0 KB",
+        "444.6 KB",
+        "561.5 KB",
+        "224.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11513",
+    "downloadPreload": true
+}

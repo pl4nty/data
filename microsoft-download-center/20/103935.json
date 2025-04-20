@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Zero Trust Maturity Questionnaire",
+    "downloadDescription": "This Zero Trust Maturity Questionnaire is presented in the form of an Excel file that asks you to answer around ten questions for each of the 6 Zero Trust pillars: identity, device, applications, infrastructure, data and network. Your level of maturity is evaluated for each pillar and a radar chart provides a consolidated representation.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Zero Trust Maturity Questionnaire v1.1.xlsx",
+            "url": "https://download.microsoft.com/download/c/d/3/cd3e0d84-6fdd-4949-b529-73c9c0127b0d/Zero Trust Maturity Questionnaire v1.1.xlsx",
+            "size": "168581",
+            "version": "V 1.1",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "When you think about a Zero Trust project, one of the first questions you will ask is at what level of maturity you are. Indeed, depending on the technical solutions that have already been deployed, you may be relatively advanced, for example on the identity pillar, but less mature in terms of device security management or monitoring.<br /><br />\r\n\r\nThis Zero Trust Maturity Questionnaire is designed to help you position your Zero Trust maturity level on the six pillars of identity, device, application, infrastructure, data and network. Through a series of questions, you will be able to identify the technological building blocks used to implement a Zero Trust model and thus show that, beyond the concepts, the Zero Trust security model can be applied in reality.<br /><br />\r\nThe questionnaire is presented in the form of an Excel file with 6 tabs, each corresponding to a Zero Trust pillar. Each tab contains about ten questions for which you can choose the answer from a drop-down list. The \"More Information\" column provides additional information to help you qualify your answer. A link (URL) is usually provided for further information.<br /><br />\r\n\r\nAs you answer, you can see your score evolving on each pillar. After answering the questions of the 6 pillars, you can visualize the consolidated result in the last tab in the form of a radar graph.<br /><br />\r\n\r\nAlthough solutions are often described by their generic name: CASB (Cloud Access Security Broker), SIEM (Security Information and Event Management), CSPM (Cloud Security Posture Management), etc., the examples reference solutions in the Microsoft portfolio with links to their documentation.<br /><br />\r\n\r\nThis questionnaire is a companion of the white paper \"Initiating a Zero Trust Transformation Project\" available at https://aka.ms/Zero-Trust-guide.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V 1.1",
+    "detailsSection_file_name": [
+        "Zero Trust Maturity Questionnaire v1.1.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "164.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use the Excel file, you must either have Excel installed on your computer or use the free online version available from your browser at https://www.office.com/.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the Excel file and open it with Excel installed on your computer or the free online version at https://www.office.com/.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103935",
+    "downloadPreload": true
+}

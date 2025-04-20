@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment guide for Microsoft SharePoint Server 2010 Beta ",
+    "downloadDescription": "Provides information about how to deploy Microsoft SharePoint Server 2010 Beta.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePointServDeplo.doc",
+            "url": "https://download.microsoft.com/download/5/7/b/57b701b8-2528-4bd5-a5e2-6e19544042f9/SharePointServDeplo.doc",
+            "size": "3013632",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document supports a preliminary release of Microsoft SharePoint Server 2010 Beta.  The content in this book covers information about how to deploy Microsoft SharePoint Server 2010 Beta in an organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePointServDeplo.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14282",
+    "downloadPreload": true
+}

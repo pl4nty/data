@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae OData Source for Microsoft SQL Server\u00ae 2012",
+    "downloadDescription": "Microsoft OData Source for SQL Server 2012 provides the capability of consuming OData services to SQL Server 2012 Integration Services (SSIS). Users can use it in an SSIS package to extract data from an OData service and then perform further ETL processing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ODataSourceForSQLServer2012-amd64.msi",
+            "url": "https://download.microsoft.com/download/1/0/3/103d7dcb-022e-42bb-8100-679cf28f96d3/ODataSourceForSQLServer2012-amd64.msi",
+            "size": "2371584",
+            "version": "11.0.5015.7",
+            "datePublished": "7/15/2024 3:25:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ODataSourceForSQLServer2012-x86.msi",
+            "url": "https://download.microsoft.com/download/1/0/3/103d7dcb-022e-42bb-8100-679cf28f96d3/ODataSourceForSQLServer2012-x86.msi",
+            "size": "2158592",
+            "version": "11.0.5015.7",
+            "datePublished": "7/15/2024 3:25:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Open Data protocol (OData) lets you access a data source, such as a database, by browsing to a specially constructed URL. This allows for a simplified approach for connecting to and working with data sources that are hosted within an organization.<br/>\r\n<br/>\r\nThere are many OData sources available in enterprise and in cloud: <br/>\r\n<ul>\r\n<li>SharePoint Foundation 2010</li>\r\n<li>SharePoint Server 2010</li>\r\n<li>SQL Azure</li>\r\n<li>Windows Azure Table Storage</li>\r\n<li>Windows Azure Marketplace</li>\r\n<li>SQL Server Reporting Services</li>\r\n<li>Microsoft Dynamics CRM 2011</li>\r\n<li>Windows Live</li>\r\n</ul>\r\n<br/>\r\nFor a list of producers of OData services, see the <a href=\"http://www.odata.org/ecosystem/\">Open Data Protocol website</a>.<br/>\r\n<br/>\r\nConnecting to OData sources quickly without any coding is the primary design goal of OData Source for SQL Server 2012. The OData Source component enables SSIS packages to communicate with OData sources. Developers can add the component to an SSIS package and configure it to receive data from an OData source without writing any code.<br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.5015.7",
+    "detailsSection_file_name": [
+        "ODataSourceForSQLServer2012-amd64.msi",
+        "ODataSourceForSQLServer2012-x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> SQL Server 2012 is required</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and run the 32-bit/64-bit installation package to install OData Source for SQL Server 2012 on your computer.<br/>\r\n<br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=390485\">OData Source On-line Help</a>",
+    "additionalInformationSection": "<ul>\n  <li>Help improve SQL Server by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul>\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42280",
+    "downloadPreload": true
+}

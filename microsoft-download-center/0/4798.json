@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2010 Datasheet",
+    "downloadDescription": "Microsoft Office 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2010_Datasheet.pdf",
+            "url": "https://download.microsoft.com/download/6/f/d/6fd6a6c4-4f39-4a76-943a-28cdcc8dfddb/Office2010_Datasheet.pdf",
+            "size": "1202631",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Office 2010 At-A-Glance. What's new and different about Office 2010?",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Office2010_Datasheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "windows xp, windows vista, windows 7",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "download the document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4798",
+    "downloadPreload": true
+}

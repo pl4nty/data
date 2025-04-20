@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Name Template",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme.htm",
+            "url": "https://download.microsoft.com/download/e/4/b/e4bc4153-be1f-460f-800e-69c6a1857d68/readme.htm",
+            "size": "26629",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Description Template",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "26.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server Update Services Support",
+            "url": "http://www.microsoft.com/windowsserversystem/updateservices/support/default.mspx"
+        },
+        {
+            "title": "windows Server Update Services",
+            "url": "http://www.microsoft.com/windowsserversystem/updateservices/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30902",
+    "downloadPreload": true
+}

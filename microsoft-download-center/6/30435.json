@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Project 2013 SDK",
+    "downloadDescription": "The Microsoft Project 2013 software development kit contains documentation, code samples, \"How to\" articles, and programming references to help customize and integrate the Project 2013 clients and Project Server 2013 with other applications for enterprise project management.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Project2013SDK.msi",
+            "url": "https://download.microsoft.com/download/2/1/2/2125fe61-0e1e-49f4-adc1-cce92ff613db/Project2013SDK.msi",
+            "size": "64038400",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Project 2013 SDK helps solution providers, value-added resellers, and other developers learn about new features in the Project 2013 client applications and the Project Server 2013 platform. The Project 2013 SDK shows how to extend and integrate Project Standard, Project Professional, Project Server, and Project Online with other applications for enterprise project management (EPM). It features conceptual and \"How to\" articles, sample code, and programming references for the Project 2013 clients and Project Server 2013.<br /><br />The <b>Project2013SDK.msi</b> download includes the help files that correspond to the Project 2013 conceptual topics, and managed code reference on MSDN. You can also view the <a href='http://msdn.microsoft.com/en-us/library/office/ms512767(v=office.15)'>Project 2013 developer documentation</a> on MSDN online. In addition, the Project2013SDK.msi installs the Reporting database schema reference (<b>ProjectServer2013_ReportingDB.chm</b>) and the OLAP cube schema reference for Project Server 2013.<br /><br />To help develop task pane apps for Project and to develop JavaScript and .NET apps that use the client-side object model (CSOM) and the JavaScript object model (JSOM) with REST endpoints for Project Server, the SDK download includes several complete Visual Studio projects with source files and scripts. To help develop with the Project Server Interface (PSI), the SDK download includes source files, scripts, and instructions to compile and update a proxy assembly for both the Windows Communication Foundation (WCF) services interface and the ASMX (web services) interface of the PSI. In addition, updated XML files for Microsoft Intellisense include descriptions for the CSOM and PSI types and members.<br /><br />The REDIST folder in the installed download includes redistributable assemblies for Project Server development.<br /><b>Note</b> For updated assemblies that include Microsoft.Office.Project.Schema.dll for developing remote event receivers, download the REDIST.zip file in the <a href=\"http://blogs.msdn.com/b/project_programmability/archive/2013/03/19/march-2013-update-of-the-project-2013-sdk-download-file.aspx#10404472\" target=\"_blank\" >Project Programmability blog</a>.<br /><br />Code samples in the Samples subdirectory of the SDK download include the following solutions that relate to topics in the SDK:<ul><li><b>Apps subdirectory</b> includes solutions for task pane apps in Project Professional and a SharePoint-hosted Project Server app.<ul><li><b>Project OM Test</b> shows how to use the JavaScript object model for Project by using a text editor.</li><li><b>HelloProject_OData</b> is a Visual Studio 2012 solution for a task pane app that reads the Project Server reporting OData interface and compares the current project costs with the average costs for all projects in the Project Web App instance.</li><li><b>QuickStatus</b> is a sample statusing app for Project Server and Project Online.</li></ul></li><li><b>CSOM subdirectory</b> includes .NET Framework and JavaScript solutions that use the CSOM.<ul><li><b>AddTaskToProject</b> is a simple example that adds tasks to a specified project.</li><li><b>CSOMLimitTest</b> shows the 2 MB limit for a CSOM request, and shows one way to work around the limit.</li><li><b>GetProjectsJSOM</b> is a basic JavaScript app that gets a list of projects.</li><li><b>QueueCreateProject</b> is a CSOM app that creates projects of a specified enterprise project type.</li><li><b>ReadProjectList</b> is a basic app for .NET that is similar to the <b>GetProjectsJSOM</b> functionality.</li><li><b>WorkWithProjectsJSOM</b> uses JavaScript to create, read, update, and delete projects.</li></ul></li><li><b>OData subdirectory</b> includes solutions that correspond to the <i>Querying OData feeds for Project Server 2013 reporting data</i> article in the SDK.<ul><li><b>ODataQueries_ProjectServerData</b> creates LINQ queries in different ways for projects, tasks in one project, and all tasks.</li><li><b>TestProjectServerData</b> uses simple examples of declarative LINQ syntax and lambda expressions for LINQ queries.</li></ul></li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Project2013SDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "61.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This download works with the following applications:</b><br/>\r\n<ul>\r\n<li>Project Professional 2013</li>\r\n<li>Project Standard 2013 (technologies related to Project Server do not apply).</li>\r\n<li>Project Server 2013</li>\r\n<li>SharePoint Server 2013</li>\r\n<li>Excel 2013. Optional, for use with reports in Project 2013.</li> \r\n<li>SharePoint Designer 2013. Required for creating declarative Project Server 2013 workflows.</li>\r\n<li>Visual Studio 2012. Required for developing apps, Web Parts, managed code workflows, and event receivers for Project Server 2013, and managed code add-ins for Project 2013 (Standard or Professional). Recommended for developing task pane apps for Project 2013.</li>\r\n<li>Visual Studio 2010 SP1 can be used to create solutions that use the CSOM, the PSI, \r\n    and the OData service for ProjectData reports; except for Web Parts, workflows, event receivers, and add-ins for Project 2013.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/><ol><li>Download the file by clicking the <b>Download</b> button near the top of this page and saving the file to your hard disk drive.</li><li>Back up any modifications that you made to previous Project 2013 SDK files.</li><li>Double-click the <b>Project2013SDK.msi</b> file on your hard disk drive to start the installation.</li><li>Follow the instructions on the screen to complete the installation. The default installation path is [Program Files]\\Microsoft SDKs\\Project 2013.<ul><li>To avoid issues with code access security, you can choose a different installation directory, for example, C:\\Project2013_SDK.</li></ul></li><li>To extract the sample projects, run <b>Samples\\Samples.exe</b> <u>as an administrator</u>. You can install the samples in the local directory or to another directory on your computer.</li></ol><b>To remove this download:</b><br/><br/>Uninstall <b>Microsoft Project 2013 SDK [EN-US]</b> by using <b>Programs and Features</b> in the Control Panel. To remove the download, delete the <b>Project2013SDK.msi</b> file.<br/><br/>To remove all the installed files, delete the Project 2013 SDK installation directory.",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "office for developers",
+            "url": "http://msdn.microsoft.com/en-US/office"
+        },
+        {
+            "title": "build apps for Office and SharePoint",
+            "url": "http://msdn.microsoft.com/en-US/office/apps"
+        },
+        {
+            "title": "project for developers",
+            "url": "http://msdn.microsoft.com/en-US/project"
+        },
+        {
+            "title": "sharePoint for developers",
+            "url": "http://msdn.microsoft.com/en-US/sharepoint"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30435",
+    "downloadPreload": true
+}

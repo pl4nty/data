@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Platform Ready Test Tool for SQL Server 2014",
+    "downloadDescription": "Download the MPR Test Tool for SQL Server 2014",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MPR Test Tool 1.0 for SQL Server 2014.msi",
+            "url": "https://download.microsoft.com/download/3/5/2/35200876-0b3c-44e7-a1e3-be72f84cbe9a/MPR Test Tool 1.0 for SQL Server 2014.msi",
+            "size": "4270592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Platform Ready Test Tool for SQL Server 2014 is designed to help test your applications for compatibility with latest platforms from Microsoft. Use this tool to achieve Application Logo Certification and qualify testing status as part of the Microsoft Partner Network Competency program. The MPR Test Tool is a wizard style tool that execute validation of technical requirements described in the Microsoft Platform Ready Test Requirements Criteria document. This tool is also recommended for Customers to evaluate third party applications and for testing Line of Business applications. The test tool can help improve compatibility, Security, and Management of Server Applications for deployment supporting Windows Server Hyper-V and Windows Azure Virtual Machines.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MPR Test Tool 1.0 for SQL Server 2014.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This test tool is designed to run in various configurations including Hyper-V virtual machines, Windows Azure virtual machines.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Setup the test toolkit and follow wizard type, self-test instructions to generate report and test results package.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47310",
+    "downloadPreload": true
+}

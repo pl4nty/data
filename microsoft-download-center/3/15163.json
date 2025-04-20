@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft XNA Framework Redistributable 3.1",
+    "downloadDescription": "The XNA Framework Redistributable ownload provides game developers with the XNA Framework run-time libraries they can include with their product for redistribution on the Windows platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "xnafx31_redist.msi",
+            "url": "https://download.microsoft.com/download/5/9/1/5912526c-b950-4662-99b6-119a83e60e5c/xnafx31_redist.msi",
+            "size": "7672320",
+            "version": "3.1",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The XNA Framework Redistributable provides the necessary runtime components to execute a game on Windows that was developed using Microsoft XNA Game Studio 3.1. This release contains improved functionality along with new features. Installation of this runtime is not necessary on systems that already have Microsoft XNA Game Studio 3.1 installed.\r\n\r\nThe End User License Agreement (EULA) for Microsoft XNA Game Studio 3.1 covers the terms under which developers may use the Redistributable. For full details, please review the Microsoft XNA Game Studio 3.1 EULA.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1",
+    "detailsSection_file_name": [
+        "xnafx31_redist.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To run XNA Framework games on a computer running a Windows operating system, you need a graphics card that supports, at minimum, Shader Model 1.1 and DirectX 9.0c. We recommend using a graphics card that supports Shader Model 2.0, which is required by some samples and starter kits.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3",
+        "Windows Vista Service Pack 1"
+    ],
+    "installInstructionSection": "1. Click the Download button.\r\n2. To start the installation immediately, click Run.\r\n3. To save the download to your computer for installation at a later time, click Save.\r\n4. To cancel the installation, click Cancel.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15163",
+    "downloadPreload": true
+}

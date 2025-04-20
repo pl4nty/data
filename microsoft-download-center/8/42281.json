@@ -1,0 +1,302 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 5 (KB2932678) for Microsoft AppFabric 1.1 for Windows Server ",
+    "downloadDescription": "This Cumulative Update contains a number of bug fixes for AppFabric 1.1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-PTB.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-PTB.exe",
+            "size": "1718592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-DEU.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-DEU.exe",
+            "size": "1717568",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-ESN.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-ESN.exe",
+            "size": "1717056",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-DEU.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-DEU.exe",
+            "size": "1720128",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-RUS.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-RUS.exe",
+            "size": "1721152",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-CHS.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-CHS.exe",
+            "size": "1716032",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-KOR.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-KOR.exe",
+            "size": "1717056",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-FRC.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-FRC.exe",
+            "size": "1720128",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-ENU.exe",
+            "size": "1713472",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-ITA.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-ITA.exe",
+            "size": "1720128",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-ESN.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-ESN.exe",
+            "size": "1718592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-CHT.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-CHT.exe",
+            "size": "1716032",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-RUS.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-RUS.exe",
+            "size": "1722688",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-JPN.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-JPN.exe",
+            "size": "1717568",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-KOR.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-KOR.exe",
+            "size": "1719616",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-ITA.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-ITA.exe",
+            "size": "1717568",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-JPN.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-JPN.exe",
+            "size": "1718592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-ENU.exe",
+            "size": "1715520",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-CHS.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-CHS.exe",
+            "size": "1715008",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x64-FRC.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x64-FRC.exe",
+            "size": "1717056",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-PTB.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-PTB.exe",
+            "size": "1718592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-KB2932678-x86-CHT.exe",
+            "url": "https://download.microsoft.com/download/e/d/9/ed9591f8-8720-4ee7-97d0-b6fd29c6d339/AppFabric1.1-KB2932678-x86-CHT.exe",
+            "size": "1718592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:40:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This Cumulative Update (KB2932678) contains a number of bug fixes for AppFabric 1.1 for Windows Server.<BR></BR>\r\nThese bug fixes are for both the caching and hosting services provided in AppFabric 1.1.<BR></BR><BR></BR>\r\n\r\nPlease refer to the Knowledge Base article for additional details on the fixes included in this update: <A href=\"http://www.support.microsoft.com/kb/2932678\">KB2932678</A>.<BR></BR><BR></BR>\r\n\r\nThis Cumulative Update includes all features and bug fixes that were included in previous Cumulative Updates for AppFabric 1.1 for Windows Server. <BR></BR>\r\n<UL>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2800726\">2800726</A>: Cumulative Update 4 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2787717\">2787717</A>: Cumulative Update 3 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2716015\">2716015</A>: Cumulative Update 2 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2671763\">2671763</A>: Cumulative Update 1 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n</UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2932678",
+        "name": "KB2932678"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "AppFabric1.1-KB2932678-x64-PTB.exe",
+        "AppFabric1.1-KB2932678-x64-DEU.exe",
+        "AppFabric1.1-KB2932678-x64-ESN.exe",
+        "AppFabric1.1-KB2932678-x86-DEU.exe",
+        "AppFabric1.1-KB2932678-x64-RUS.exe",
+        "AppFabric1.1-KB2932678-x86-CHS.exe",
+        "AppFabric1.1-KB2932678-x64-KOR.exe",
+        "AppFabric1.1-KB2932678-x86-FRC.exe",
+        "AppFabric1.1-KB2932678-x64-ENU.exe",
+        "AppFabric1.1-KB2932678-x86-ITA.exe",
+        "AppFabric1.1-KB2932678-x86-ESN.exe",
+        "AppFabric1.1-KB2932678-x64-CHT.exe",
+        "AppFabric1.1-KB2932678-x86-RUS.exe",
+        "AppFabric1.1-KB2932678-x64-JPN.exe",
+        "AppFabric1.1-KB2932678-x86-KOR.exe",
+        "AppFabric1.1-KB2932678-x64-ITA.exe",
+        "AppFabric1.1-KB2932678-x86-JPN.exe",
+        "AppFabric1.1-KB2932678-x86-ENU.exe",
+        "AppFabric1.1-KB2932678-x64-CHS.exe",
+        "AppFabric1.1-KB2932678-x64-FRC.exe",
+        "AppFabric1.1-KB2932678-x86-PTB.exe",
+        "AppFabric1.1-KB2932678-x86-CHT.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>Supported Operating Systems:</B><BR></BR>\r\nWindows Vista Service Pack 2, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2<BR></BR><BR></BR>\r\nAppFabric can be installed on the following operating systems:\r\n<UL>\r\n<LI>Windows Server 2012 R2</LI>\r\n<LI>Windows Server 2012</LI>\r\n<LI>Windows Server 2008 R2</LI>\r\n<LI>Windows Server 2008 Service Pack 2</LI>\r\n</UL><BR></BR>\r\nAppFabric can be installed for development and testing on the following operating systems:\r\n<UL><LI>Windows 8 </LI>\r\n<LI>Windows 7 </LI>\r\n<LI>Windows Vista Service Pack 2</LI>\r\n</UL><BR></BR>\r\n<B>Supported Architectures:</B>\r\n<UL><LI>32-bit (x86)</LI>\r\n<LI>64-bit (x64)</LI>\r\n</UL><BR></BR>\r\n<B>Software Requirements:</B>\r\n<UL><LI>To apply this Cumulative Update package, AppFabric 1.1 for Windows Server must already be installed on the computer. </LI>\r\n<LI>Additionally, you must have the Microsoft .NET Framework 4.5 installed.</LI>\r\n</UL><BR></BR>\r\n<B>Privilege Requirements:</B>\r\n<UL><LI>Before running the executable, you must have administrative privilege on the computer where you are installing the software. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<B>To install the update for AppFabric 1.1 (KB2932678): </B><BR></BR><BR></BR>\r\n<UL>\r\n<LI>Click the Download button on this page to start the download, or select a different language from the \"Change language\" drop-down list.  </LI>\r\n<LI>Alternatively, you can click Save to download the .exe installer file to your computer. Then, navigate to the location at which you saved the .exe file, right-click on it and select 'Run as Administrator', click on 'Yes' when prompted and follow the instructions shown in the installer.</LI>\r\n</UL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42281",
+    "downloadPreload": true
+}

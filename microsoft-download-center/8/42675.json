@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio Tools for Apache Cordova CTP3.2",
+    "downloadDescription": "Use Visual Studio and Apache Cordova\u2122 to easily build hybrid apps that run on iOS, Android, Windows, and Windows Phone using a single project based on HTML and JavaScript. (Note: You must have Visual Studio 2013 Update 5 installed.) ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vs2013mda_0.3.2.exe",
+            "url": "https://download.microsoft.com/download/0/8/1/081c0500-3521-4095-8441-d6ae1f16398d/TAC0.3.2/40728-DLC/vs2013mda_0.3.2.exe",
+            "size": "32429928",
+            "version": "0.3.2",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Visual Studio Tools for Apache Cordova\u2122 provides the ability to build once and deploy to a variety of devices and platforms: iOS, Android, Windows Phone, and Windows Store. Best of all, you get access to native device APIs using only HTML, CSS, and JavaScript. This preview release for Visual Studio 2013 Update 5 supports building apps for the following device targets:\r\n<ul>\r\n<li>Android 4+</li>\r\n<li>iOS 6, iOS 7, iOS 8</li>\r\n<li>Windows 8.0 and Windows 8.1 Store</li>\r\n<li>Windows Phone 8.0 and Windows Phone 8.1</li>\r\n</ul>\r\nNote: Windows 8.0 and Windows Phone 8.0 apps are fully compatible with Windows 8.1 and Windows Phone 8.1 devices. This release requires <a href=\"http://go.microsoft.com/fwlink/?LinkId=510314\">Visual Studio 2013 Update 5</a>, and you must remove any previous Cordova CTP before installing.<br/>\r\n<br/>\r\n(Released 7 August 2015)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.3.2",
+    "detailsSection_file_name": [
+        "vs2013mda_0.3.2.exe"
+    ],
+    "detailsSection_file_size": [
+        "30.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Other Requirements:</b>\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=510314\">Visual Studio 2013 Update 5</a>, with the following features installed: \"Tools for Maintaining Store apps for Windows 8\" and \"Windows Phone 8.0 SDK\".\r\n<ul><li>Note: Before installing Visual Studio 2013 Update 5, you must uninstall Multi-Device Hybrid Apps for Visual Studio 2013 CTP2.0 or Visual Studio Tools for Apache Cordova CTP3.0, if you have that installed.</li></ul></li>\r\n<li>For the Windows Phone emulators, Windows 8.1 (x64) Professional edition or higher, and a processor that supports Client Hyper-V and Second Level Address Translation (SLAT).</li>\r\n<li>For the Android emulator, a processor capable of supporting the <a href=\"https://software.intel.com/en-us/android/articles/installation-instructions-for-intel-hardware-accelerated-execution-manager-windows\">Intel HAXM driver</a> is recommended.</li>\r\n<li>For iOS app development, an Apple Mac capable of running OSX Mavericks and Xcode 6.1, and an active iOS Developer Program account.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Complete installation and usage instructions are in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=397716\">Getting Started Guide for Visual Studio Studio Tools for Apache Cordova\u2122</a>.\r\n<br/><br/>\r\n<ol>\r\n<li>Uninstall Multi-Device Hybrid Apps for Visual Studio 2013 CTP2.0 or earlier, or Visual Studio Tools for Apache Cordova CTP3.0, if you have that installed.</li>\r\n<li>Install Visual Studio 2013 Update 5.</li>\r\n<li>Download and run the installer for Visual Studio Studio Tools for Apache Cordova\u2122 CTP. The installer will download and configure additional dependencies, including\r\n<ul>\r\n<li>Joyent Node.js</li>\r\n<li>Git CLI</li>\r\n<li>Google Chrome</li>\r\n<li>Apache Ant</li>\r\n<li>Oracle Java JDK 7</li>\r\n<li>Android SDK </li>\r\n<li>SQLLite for Windows Runtime</li>\r\n<li>Apple iTunes</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio 2013 Update 4",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=390521"
+        },
+        {
+            "title": "remote Build and Simulation Agent for iOS (vs-mda-remote)",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=397607"
+        },
+        {
+            "title": "known issues and FAQ for Visual Studio Tools for Apache Cordova",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=398033"
+        },
+        {
+            "title": "overview of Visual Studio Tools for Apache Cordova",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=398477"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42675",
+    "downloadPreload": true
+}

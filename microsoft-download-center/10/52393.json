@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Feature-Adaptive-Subdivision Surface Rendering",
+    "downloadDescription": "This project demonstrates how we implemented the rendering technique described in the paper \u201cFeature Adaptive GPU Rendering of Catmull-Clark Subdivision Surfaces,\u201d in ACM Transactions on Graphics, Vol. Last published: September 13, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SubdSmooth8.zip",
+            "url": "https://download.microsoft.com/download/a/d/8/ad89fe39-c736-48c4-b3b4-556912a8e09c/SubdSmooth8.zip",
+            "size": "7567127",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This project demonstrates how we implemented the rendering technique described in the paper \u201cFeature Adaptive GPU Rendering of Catmull-Clark Subdivision Surfaces,\u201d in ACM Transactions on Graphics, Vol. 31, No. 1, Article 6, in January 2012. We use the DirectX compute shader to provide partial subdivision of a control mesh on a GPU. This subdivision occurs only where necessary to generate Bicubic B-Spline patches. These patches then are sent to the hardware tessellator for evaluation and rendering. The resulting surface corresponds exactly to the true Catmull-Clark limit surfaces at triangle vertices, up to machine precision. Furthermore, we are able to render meshes with tagged, semi-sharp edges, as well as hierarchical edits.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SubdSmooth8.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52393",
+    "downloadPreload": true
+}

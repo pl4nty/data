@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio 2008 Service Pack 1 XML Editor Security Update",
+    "downloadDescription": "A security issue has been identified leading to an XML Editor vulnerability your Windows-based system with Visual Studio 2008",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs90sp1-kb2251487-x86.exe",
+            "url": "https://download.microsoft.com/download/4/e/b/4ebab2dc-f048-4c7d-810d-82f05c48e0e6/VS90SP1-KB2251487-x86.exe",
+            "size": "2613680",
+            "version": "9.0",
+            "datePublished": "7/15/2024 3:26:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified leading to an XML Editor vulnerability your Windows-based system with Visual Studio 2008.  You can protect your computer by installing this update from Microsoft.  After you install this item, you may have to restart.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2251487",
+        "name": "KB2251487"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-049",
+        "name": "MS11-049"
+    },
+    "detailsSection_file_version": "9.0",
+    "detailsSection_file_name": [
+        "vs90sp1-kb2251487-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkID=195035\">KB2251487</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2251487",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=195035"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26419",
+    "downloadPreload": true
+}

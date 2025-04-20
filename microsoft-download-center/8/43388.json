@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Lithium Battery Transportation Documents",
+    "downloadDescription": "Battery information for products containing Lithium batteries",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Lithium Ion PDS 20May2024B.pdf",
+            "url": "https://download.microsoft.com/download/a/8/8/a884c9bc-9b95-4201-816b-ead2371344a0/Microsoft Lithium Ion PDS 20May2024B.pdf",
+            "size": "252584",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Lithium Battery UN 38.3 Test Summary 20May2024B.pdf",
+            "url": "https://download.microsoft.com/download/a/8/8/a884c9bc-9b95-4201-816b-ead2371344a0/Microsoft Lithium Battery UN 38.3 Test Summary 20May2024B.pdf",
+            "size": "289108",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Phone Lithium Ion PDS 11.28.2017.pdf",
+            "url": "https://download.microsoft.com/download/a/8/8/a884c9bc-9b95-4201-816b-ead2371344a0/Microsoft Phone Lithium Ion PDS 11.28.2017.pdf",
+            "size": "525673",
+            "version": "1",
+            "datePublished": "7/15/2024 3:07:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Details on products containing Lithium batteries needed for mailing or transport of these products.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Lithium Ion PDS 20May2024B.pdf",
+        "Microsoft Lithium Battery UN 38.3 Test Summary 20May2024B.pdf",
+        "Microsoft Phone Lithium Ion PDS 11.28.2017.pdf"
+    ],
+    "detailsSection_file_size": [
+        "246.7 KB",
+        "282.3 KB",
+        "513.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Home Premium",
+        "Windows 8 Release Preview",
+        "Windows 7 Professional",
+        "Windows 7 Enterprise N",
+        "Windows 7 Home Basic",
+        "Windows 8 Consumer Preview",
+        "Windows 7 Home Premium N",
+        "Windows 7 Home Premium N 64-bit",
+        "Windows 7 Home Premium 64-bit",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 7 Enterprise",
+        "Windows 7 Home Premium E 64-bit",
+        "Windows 7 Home Basic 64-bit",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1 Preview",
+        "Windows 8.1",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download documents for records.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43388",
+    "downloadPreload": true
+}

@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Book Download: Developer's Guide to Microsoft Enterprise Library, 2nd Edition",
+    "downloadDescription": "This is the second edition of the Developer's Guide to Microsoft Enterprise Library covering Enterprise Library v6.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Developer's Guide to Microsoft Enterprise Library - 2nd Edition.epub",
+            "url": "https://download.microsoft.com/download/d/2/0/d204f45f-4b44-4a0d-bc08-f9fa10ba0896/Developer's Guide to Microsoft Enterprise Library - 2nd Edition.epub",
+            "size": "2168308",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Developer's Guide to Microsoft Enterprise Library - 2nd Edition.pdf",
+            "url": "https://download.microsoft.com/download/d/2/0/d204f45f-4b44-4a0d-bc08-f9fa10ba0896/Developer's Guide to Microsoft Enterprise Library - 2nd Edition.pdf",
+            "size": "5670905",
+            "version": "2",
+            "datePublished": "7/15/2024 3:27:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Authors: <i>Dominic Betts, Juli\u00e1n Dom\u00ednguez, Alex Homer, Hernan de Lahitte, Grigori Melnik, Fernando Simonazzi, and Mani Subramanian</i>.<br/>\r\nForewords by <i>S. Somasegar</i> and <i>Scott Guthrie</i>.<br/><br/>\r\nWelcome to the era of software reuse! Microsoft Enterprise Library helps accelerate development by providing reusable components and guidance on  proven practices. This guide helps you to quickly grasp what Enterprise Library v6 can do for you, presents examples that show it in action, and makes it easier for you to start experimenting with Enterprise Library. <br /><br/>\r\nEnterprise Library is made up of a series of application blocks, each aimed at managing specific crosscutting concerns. You can use them out of the box, modify them as required, and distribute them with your applications. The main themes for the latest v6 release are: simplifying the library all around, embracing semantic logging, increasing resiliency to errors, and streamlining programmatic configuration of all blocks. <br /><br/>\r\nThe main themes for the latest v6 release are: <b>simplifying</b> the library all around, embracing <b>semantic logging</b>, increasing <b>resiliency</b> to errors, supporting <b>Windows Store apps</b> (Unity, Transient Fault Handling), and streamlining <b>programmatic configuration</b> of all blocks. <br /><br/>\r\nThe guide explains the concepts that drove development of the blocks, the kinds of tasks they can accomplish, and how they help you implement many well-known design patterns. And, of course, it explains \u2014 by way of code extracts and sample programs \u2014 how you can actually use the blocks in your applications. Benefit from the capabilities of Enterprise Library, spend more time focusing on your business logic and less on the plumbing. Enterprise Library will do the heavy lifting for you! Happy Coding! <br /> <br />\r\n<i>\u201cThis guide is an absolute must read for anybody looking to put Enterprise Library into practice. Its clear and pragmatic advice is invaluable.\u201d</i><br />\r\nS. Somasegar, Corporate Vice President, Microsoft Developer Division <br /><br/>\r\n<i>  \u201cYou are holding in your hands a book that will make your life as an enterprise developer a whole lot easier.\u201d</i><br />\r\nScott Guthrie, Corporate Vice President, Windows Azure <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Developer's Guide to Microsoft Enterprise Library - 2nd Edition.epub",
+        "Developer's Guide to Microsoft Enterprise Library - 2nd Edition.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB",
+        "5.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read the PDF or epub, you will need a document reader capable of displaying PDF/epub format documents.<br /><br />\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "FreeBSD",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Macintosh",
+        "TabletPC",
+        "Unix",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the document format appropriate to your reader software.\r\n\r\nThe Enterprise Library code can be found here: <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=290898\">Enterprise Library 6</a>.<br />\r\nThe Unity book can be found here: <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=290913\">Dependeny Injection with Unity</a>.",
+    "additionalInformationSection": "For help and support visit <a href=\"http://msdn.com/entlib\">Enterprise Library</a> on MSDN or the <a href=\"http://entlib.codeplex.com/\">Enterprise Library community site</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "enterprise Library 6 on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dn169621.aspx"
+        },
+        {
+            "title": "unity 3 on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dn170416.aspx"
+        },
+        {
+            "title": "unity 3 Download",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=38788"
+        },
+        {
+            "title": "enterprise Library 6 Download",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=38789"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41145",
+    "downloadPreload": true
+}

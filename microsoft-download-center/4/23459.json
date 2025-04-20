@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Building a Drop-Down Filter List for a DataGridView Column Header Cell Sample Code",
+    "downloadDescription": "Windows Forms sample code for adding drop-down filter lists to the DataGridView control. This sample code is associated with a white paper on this topic.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DataGridViewAutoFilter.zip",
+            "url": "https://download.microsoft.com/download/4/2/1/4215444a-ed19-45fe-84a9-2eb0b7b9dcbb/DataGridViewAutoFilter.zip",
+            "size": "253939",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:27:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Forms sample code for adding drop-down filter lists to the DataGridView control similar to the AutoFilter feature of Excel. This sample code is associated with a white paper on this topic. For more information, see the associated <a href=\"http://go.microsoft.com/fwlink/?LinkID=70361&clcid=0x409\">Building a Drop-Down Filter List for a DataGridView Column Header Cell white paper</a>. To provide feedback on this sample code and to check for updates, see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=69202&clcid=0x409\">Windows Forms Documentation Updates Blog</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "DataGridViewAutoFilter.zip"
+    ],
+    "detailsSection_file_size": [
+        "248.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2000 or later<br/>\nVisual Studio 2005<br/>\n.NET Framework 2.0 <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional 64-Bit Edition (Itanium) ",
+        "Windows XP Service Pack 2",
+        "Windows XP Starter Edition"
+    ],
+    "installInstructionSection": "To download the Building a Drop-Down Filter List for a DataGridView Column Header Cell Sample Code click the <b>Download</b> button above.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23459",
+    "downloadPreload": true
+}

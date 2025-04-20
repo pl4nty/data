@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2019 CU6 (KB4593465)",
+    "downloadDescription": "Security Update For Exchange Server 2019 CU6 (KB4593465)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2019-KB4593465-x64-en.msp",
+            "url": "https://download.microsoft.com/download/2/8/e/28e106ff-1d00-4ad4-8b62-7478b16c22b1/Exchange2019-KB4593465-x64-en.msp",
+            "size": "162193408",
+            "version": "15.02.0659.011",
+            "datePublished": "7/15/2024 4:27:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4593465",
+        "name": "4593465"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.0659.011",
+    "detailsSection_file_name": [
+        "Exchange2019-KB4593465-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "154.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2019 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2019 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2019 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2019 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2019 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102514",
+    "downloadPreload": true
+}

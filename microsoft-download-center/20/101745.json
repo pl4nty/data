@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Accounts Payable in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training\r\nprovides individuals with the knowledge and skills to build a comprehensive\r\nunderstanding of the Accounts Payable module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_AP.zip",
+            "url": "https://download.microsoft.com/download/b/0/4/b04662fe-2ad3-41a7-896f-39fab42b2f00/SL2015_ENUS_AP.zip",
+            "size": "7476825",
+            "version": "NA.",
+            "datePublished": "5/15/2024 4:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bAudience<b> </b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Accounts Payable module in Microsoft Dynamics SL. At Training Material Completion<b> </b>After reviewing this training, individuals will have: <ul><li>A solid understanding of the transaction cycle and the ability to enter, process, and verify voucher, adjustment and check transactions in the Accounts Payable module.</li><li>An overview of how the transaction cycle coincides with the Microsoft Dynamics\uf0d4 SL accounting cycle</li><li>A review of other important features of the Microsoft Dynamics SL Accounts Payable system, including entering vendor invoices, check printing and processing, voiding checks, and issuing prepayment checks.</li></ul> Prerequisites<b> </b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL</li><li>General Ledger training course.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_AP.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101745",
+    "downloadPreload": true
+}

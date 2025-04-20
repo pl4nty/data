@@ -1,0 +1,124 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2003 Service Pack 2 Administration Tools Pack for x86 editions",
+    "downloadDescription": "The Administration Tools Pack allows administrators to install the Windows Server 2003 SP2 management tools onto a computer running Windows XP Professional or a Windows Server 2003 family operating system to perform remote server management functions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003-KB340178-SP2-x86-ENU.msi",
+            "url": "https://download.microsoft.com/download/f/5/4/f541633c-6e89-4407-a69e-673dc7f2b485/WindowsServer2003-KB340178-SP2-x86-ENU.msi",
+            "size": "14694400",
+            "version": "304178",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The Administration Tools Pack allows administrators to install the Windows Server 2003 SP2 management tools onto a computer running Windows XP Professional or a Windows Server 2003 family operating system to perform remote server management functions. This is the final version of the Administration Tools Pack; you must uninstall all previous versions before installing this version. <BR/><BR/>Please read <A HREF=\"http://support.microsoft.com/kb/304718\">Knowledge Base article 304718</A> for more information on the release process for this file and description of all known issues.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "304178",
+    "detailsSection_file_name": [
+        "WindowsServer2003-KB340178-SP2-x86-ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Windows Server 2003 All Editions (32-bit x86)</LI><br />\n<LI>Windows Server 2003 Itanium-based Editions</LI><br />\n<LI>Windows Server 2003 x64 Editions</LI><br />\n<LI>Windows Server 2003 R2 Editions</LI><br />\n<LI>Windows Server 2003 Storage Server R2 Edition</LI><br />\n<LI>Windows Server 2003 Compute Cluster Edition</LI><br />\n<LI>Windows Server 2003 for Small Business Servers R2 Edition</LI><br />\n<LI>Windows XP Professional</LI><br />\n</UL>\n<BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>To start the download, click the <B>Download</B> button and then do one of the following, or select another language from <B>Change Language</B> and then click <B>Change</B>.</LI><br />\n<UL><br />\n<LI>Click <B>Run</B> to start the installation immediately.</LI><br />\n<LI>Click <B>Save</B> to copy the download to your computer for installation at a later time.</LI><br />\n<LI>See <A HREF=\"http://go.microsoft.com/?linkid=2251933\">Knowledge Base article 304718</A> for known installation issues.</LI><br />\n</UL><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Management Services",
+            "url": "http://go.microsoft.com/?linkid=2251934"
+        },
+        {
+            "title": "adminpak.msi Known Issues (KB article 304718)",
+            "url": "http://go.microsoft.com/?linkid=2251933"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6315",
+    "downloadPreload": true
+}

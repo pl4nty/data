@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix for Microsoft System Center Orchestrator 2016 UR4 (KB 4058492)",
+    "downloadDescription": "This release contains a hotfix for System Center Orchestrator 2016 UR4 (KB 4058492)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center 2016 \u2013 Orchestrator Hotfix (KB 4058492).EXE",
+            "url": "https://download.microsoft.com/download/3/b/a/3ba3e1db-4525-449c-9b87-5dd8bb91f2f9/Microsoft System Center 2016 \u2013 Orchestrator Hotfix (KB 4058492).EXE",
+            "size": "943816",
+            "version": "7.3.185.0",
+            "datePublished": "7/15/2024 4:56:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b>\r\n<br/><br/>\r\nThis release contains a hotfix for System Center Orchestrator 2016 UR4. After applying UR4 the RunbookServerMonitorService.exe may not be able to connect to the database. This release provides a fix for this problem and should only be applied after applying System Center Orchestrator 2016 UR4. This issue has been detailed in KB 4058492.\r\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.3.185.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2016 \u2013 Orchestrator Hotfix (KB 4058492).EXE"
+    ],
+    "detailsSection_file_size": [
+        "921.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please note that this hotfix in only applicable for deployments running Microsoft System Center 2016 Orchestrator which have already applied UR4.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<br/><br/>\r\n<b><u>To install this update, follow these steps:</u></b>\r\n<br/>\r\n<ol>\r\n<li>Download the update file</li>\r\n<li>Click to open the file and accept the license terms</li>\r\n<li>Select the location where you want to extract the files contained in the update</li>\r\n<li>Navigate to the location where the extracted files are present and follow the steps in the Readme file</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56371",
+    "downloadPreload": true
+}

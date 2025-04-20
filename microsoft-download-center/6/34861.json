@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2008 R2 Service Pack 1 (KB2716440)",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2008 R2 SP1 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2008R2-KB2716440-IA64.exe",
+            "url": "https://download.microsoft.com/download/7/a/e/7aecd419-5c0c-4eaa-ac70-6e39421e6d23/ENU/SQLServer2008R2-KB2716440-IA64.exe",
+            "size": "92170696",
+            "version": "10.50.2550.0",
+            "datePublished": "7/15/2024 3:11:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB2716440-x64.exe",
+            "url": "https://download.microsoft.com/download/7/a/e/7aecd419-5c0c-4eaa-ac70-6e39421e6d23/ENU/SQLServer2008R2-KB2716440-x64.exe",
+            "size": "73772488",
+            "version": "10.50.2550.0",
+            "datePublished": "7/15/2024 3:11:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008R2-KB2716440-x86.exe",
+            "url": "https://download.microsoft.com/download/7/a/e/7aecd419-5c0c-4eaa-ac70-6e39421e6d23/ENU/SQLServer2008R2-KB2716440-x86.exe",
+            "size": "57875400",
+            "version": "10.50.2550.0",
+            "datePublished": "7/15/2024 3:11:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server 2008 R2 SP1 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2716440",
+        "name": "KB2716440"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-070",
+        "name": "MS12-070"
+    },
+    "detailsSection_file_version": "10.50.2550.0",
+    "detailsSection_file_name": [
+        "SQLServer2008R2-KB2716440-IA64.exe",
+        "SQLServer2008R2-KB2716440-x64.exe",
+        "SQLServer2008R2-KB2716440-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "87.9 MB",
+        "70.4 MB",
+        "55.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2008 R2 SP1 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34861",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Diagnostics and Recovery Toolset Deployment Guide",
+    "downloadDescription": "This guide helps you choose among DaRT deployment methods, and provides step-by-step guidance for each method.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DaRT Deployment Guide.pdf",
+            "url": "https://download.microsoft.com/download/9/3/5/9358cf79-ab5c-451e-a863-5e3b0d66d960/DaRT Deployment Guide.pdf",
+            "size": "669386",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:32:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide describes how to install DaRT and its prerequisites. It also compares the deployment methods available for DaRT to help you choose the best solutions for your environment; then it offers step-by-step instructions for each method. The methods discussed in this guide are: removable discs and USB media, manual installation to the local hard drive, and installation to the local hard drive using System Center 2012 Configuration Manager.\r\n\uf0b7 Installation to the local hard drive by using Microsoft Deployment Toolkit 2012 (MDT 2012)\r\n\uf0b7 Delivery to PCs as a network service by using Windows Deployment Services (Windows DS)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "DaRT Deployment Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "653.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "daRT Video Tutorials",
+            "url": "http://technet.microsoft.com/windows/ff383366.aspx?ocid=wc-mscom-dlc#DaRT"
+        },
+        {
+            "title": "daRT Technical Resources",
+            "url": "http://technet.microsoft.com/windows/hh826071.aspx?ocid=wc-mscom-dlc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35494",
+    "downloadPreload": true
+}

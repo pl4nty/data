@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Windows System Resource Manager",
+    "downloadDescription": "(WSRM)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "X11-04295.iso",
+            "url": "https://download.microsoft.com/download/f/4/4/f44b87d1-04c6-48f7-95ea-69aa11252e11/X11-04295.iso",
+            "size": "39880704",
+            "version": "WSRMwithSP1",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "With Windows System Resource Manager (WSRM), IT administrators can allocate hardware resources to processes or to Terminal Services users. WSRM can manage the access of each process to system resources and reduce interference of one application with another, allowing multiple applications to coexist on the same system more efficiently.\n<br /><br />\nWSRM enables the allocation of resources, including processor and memory resources, among multiple applications or Terminal Services users based on business priorities. With WSRM, you can implement tight operational processes to help meet your service level requirements, maximize the return on your IT investments, and manage a changing mix of workloads.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WSRMwithSP1",
+    "detailsSection_file_name": [
+        "X11-04295.iso"
+    ],
+    "detailsSection_file_size": [
+        "38.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "WSRM has been updated and is available for use with the following versions of Windows Server 2003:<BR/>\n<UL>\n<LI>Windows Server 2003, Enterprise Edition.</LI>  \n<LI>Windows Server 2003, Datacenter Edition.</LI>  \n<LI>Windows Server 2003, Enterprise x64 Edition.</LI>  \n<LI>Windows Server 2003, Datacenter x64 Edition.</LI>\n<LI>Windows Server 2003, Enterprise for Itanium-based Systems.</LI>\n<LI>Windows Server 2003, Datacenter for Itanium-based Systems.</LI>\n</UL>  \n<br/>\n<b>Note:</b> Only the WSRM administrative client may be installed on Windows Server 2003, Standard Edition, Windows Server 2003, Standard x64 Edition, Windows Server 2003, Web Edition, Windows XP Professional, or Windows XP Professional x64 Edition.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "If you have installed the trial version of Windows Server 2003, you can download WSRM using the download link on this page. Note that the file you will download is in ISO image format and should be burned to CD before installation.<br />\n<br />\nWSRM can also be downloaded and burned to CD by anyone who has Windows Server 2003, Enterprise or Datacenter Edition, or Windows Server 2003, Enterprise x64 or Datacenter x64 Edition.<br /><br />\n<B>Notes:</B> <br />\n<UL>\n<LI>WSRM is included on a CD with every licensed copy of Windows Server 2003, Enterprise and Datacenter Editions, as well as with Windows Server 2003, Enterprise x64 and Datacenter x64 Editions, and is covered by the licenses for these products.</LI>\n<LI>The WSRM administrative client will install on all versions of Windows above Windows 2000 Server with Service Pack 3 except:\n<OL><LI>Windows XP Home Edition</LI>\n<LI>Windows Server 2003 for Itanium-based systems (with no service packs)</LI></OL> \n </LI>\n<LI>WSRM will only install and run on supported operating systems. </LI>\n</UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8120",
+    "downloadPreload": true
+}

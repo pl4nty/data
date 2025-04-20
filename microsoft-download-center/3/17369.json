@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Quick Start Guide for Outlook Voice Access 2007",
+    "downloadDescription": "This download contains a quick reference sheet that can be used when navigating the menu system found in Outlook Voice Access.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ex_OVA_QuickStart.pdf",
+            "url": "https://download.microsoft.com/download/6/7/e/67ef31de-9ee0-47aa-a2ff-a89e62a590f7/Ex_OVA_QuickStart.pdf",
+            "size": "1048275",
+            "version": "3",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Outlook Voice Access lets UM-enabled users to access their Exchange 2007 mailbox using analog, digital, or cellular telephones. By using the menu system found in Outlook Voice Access, UM-enabled users can read e-mail, listen to voice messages, and interact with their Outlook calendar. This quick reference sheet shows the navigational tree and the options that are available to UM-enabled users when they are using Outlook Voice Access.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "Ex_OVA_QuickStart.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1023.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Adobe Acrobat Reader</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li><br />\n<li>Do one of the following:</li><br />\n<ul><li>To start the installation immediately, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li><br />\n</ul><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "quick Reference for Exchange Management Shell",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=64647"
+        },
+        {
+            "title": "outlook Home Page",
+            "url": "http://office.microsoft.com/en-us/outlook/default.aspx"
+        },
+        {
+            "title": "microsoft Exchange Home Page",
+            "url": "http://www.microsoft.com/exchange/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17369",
+    "downloadPreload": true
+}

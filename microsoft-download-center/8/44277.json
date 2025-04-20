@@ -1,0 +1,320 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2008 Service Pack 4 Feature Pack",
+    "downloadDescription": "Download the Microsoft SQL Server 2008 SP4 Feature Pack, a collection of stand-alone install packages that provide additional value for SQL Server 2008 SP4.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSBEAS.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SSBEAS.msi",
+            "size": "2822144",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSBEAS.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SSBEAS.msi",
+            "size": "2252800",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SapBI.msi",
+            "size": "2158592",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharedManagementObjects.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SharedManagementObjects.msi",
+            "size": "10600448",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharedManagementObjects.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SharedManagementObjects.msi",
+            "size": "15933440",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PowerShellTools.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/PowerShellTools.msi",
+            "size": "2306048",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSERVER2008_ASOLEDB10.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SQLSERVER2008_ASOLEDB10.msi",
+            "size": "19943424",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSERVER2008_ASADOMD10.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SQLSERVER2008_ASADOMD10.msi",
+            "size": "4689920",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlCmdLnUtils.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SqlCmdLnUtils.msi",
+            "size": "12378112",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSERVER2008_ASADOMD10.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SQLSERVER2008_ASADOMD10.msi",
+            "size": "7315456",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/RBS.msi",
+            "size": "4755456",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SQLSysClrTypes.msi",
+            "size": "1646592",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SapBI.msi",
+            "size": "3149824",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSERVER2008_ASAMO10.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SQLSERVER2008_ASAMO10.msi",
+            "size": "4804608",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSERVER2008_ASOLEDB10.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SQLSERVER2008_ASOLEDB10.msi",
+            "size": "44937216",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/sqlncli.msi",
+            "size": "8171520",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlCmdLnUtils.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SqlCmdLnUtils.msi",
+            "size": "7311360",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlncli.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/sqlncli.msi",
+            "size": "4689920",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSERVER2008_ASAMO10.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/SQLSERVER2008_ASAMO10.msi",
+            "size": "2994176",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PowerShellTools.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/PowerShellTools.msi",
+            "size": "1802240",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/x64/SQLSysClrTypes.msi",
+            "size": "2043904",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RBS.msi",
+            "url": "https://download.microsoft.com/download/8/d/1/8d13a364-d38e-43c7-b844-64208dfebc3a/ENU/X86/RBS.msi",
+            "size": "3674112",
+            "version": "10.0.6000.29",
+            "datePublished": "7/15/2024 3:41:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The Feature Pack is a collection of stand-alone install packages that provide additional value for SQL Server 2008 SP4. <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2979596",
+        "name": "KB2979596"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.6000.29",
+    "detailsSection_file_name": [
+        "SSBEAS.msi",
+        "SSBEAS.msi",
+        "SapBI.msi",
+        "SharedManagementObjects.msi",
+        "SharedManagementObjects.msi",
+        "PowerShellTools.msi",
+        "SQLSERVER2008_ASOLEDB10.msi",
+        "SQLSERVER2008_ASADOMD10.msi",
+        "SqlCmdLnUtils.msi",
+        "SQLSERVER2008_ASADOMD10.msi",
+        "RBS.msi",
+        "SQLSysClrTypes.msi",
+        "SapBI.msi",
+        "SQLSERVER2008_ASAMO10.msi",
+        "SQLSERVER2008_ASOLEDB10.msi",
+        "sqlncli.msi",
+        "SqlCmdLnUtils.msi",
+        "sqlncli.msi",
+        "SQLSERVER2008_ASAMO10.msi",
+        "PowerShellTools.msi",
+        "SQLSysClrTypes.msi",
+        "RBS.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB",
+        "2.1 MB",
+        "2.1 MB",
+        "10.1 MB",
+        "15.2 MB",
+        "2.2 MB",
+        "19.0 MB",
+        "4.5 MB",
+        "11.8 MB",
+        "7.0 MB",
+        "4.5 MB",
+        "1.6 MB",
+        "3.0 MB",
+        "4.6 MB",
+        "42.9 MB",
+        "7.8 MB",
+        "7.0 MB",
+        "4.5 MB",
+        "2.9 MB",
+        "1.7 MB",
+        "1.9 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\nWindows Server 2003 Service Pack 2; Windows Server 2008; Windows Vista Service Pack 1; Windows XP; Windows XP Service Pack 3\n<br />\n<b>Note:</b> System requirements may vary among the install packages included in the Feature Pack.<br /><br />\n\n<b>Note:</b> When an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\n<br />\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "  \n<ul>\n  Download the appropriate file by clicking one of the links below, then run the downloaded file to install thSat package.<br />\n  Each package indicates the audience(s) for which it was intended, as follows:<br />\n  <ul>\n      </ul>\n<b>Note:</b> To archive a copy of the license terms, prior to accepting them, copy and paste the terms to a word processing program, then print or save the file to your favorite directory.\n\n<a name=\"ADOMD.NET\"></a><br /><br />\n<b>Microsoft ADOMD.NET </b> \n<ul>\nADOMD.NET is a Microsoft .NET Framework object model that enables software developers to create client-side applications that browse metadata and query data stored in Microsoft SQL Server 2008 Analysis Services. ADOMD.NET is a Microsoft ADO.NET provider with enhancements for online analytical processing (OLAP) and data mining.<br /><br />\n<b>Note</b>:The English ADOMD.NET setup package installs support for all SQL Server 2008 languages.<br /><br />\n<ul>\n<b>X86 Package</b>(SQLSERVER2008_ASADOMD10.msi) <br />\n<b>X64 Package</b> (SQLSERVER2008_ASADOMD10.msi)<br />\n</ul>\n</ul>\n\n<a name=\"AMO\"></a><br /><br />\n<b>Microsoft Analysis Management Objects </b> \n<ul>\nAnalysis Management Objects (AMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer Analysis Services objects.<br /><br />\n<ul>\n<b>X86 Package</b>(SQLSERVER2008_ASAMO10.msi)<br />\n<b>X64 Package</b> (SQLSERVER2008_ASAMO10.msi)<br />\n</ul>\n</ul>\n\n<a name=\"ASOLEDB\"></a><br /><br />\n<b>Microsoft SQL Server 2008 Analysis Services 10.0 OLE DB Provider </b> \n<ul>\nThe Analysis Services 10.0 OLE DB Provider is a COM component that software developers can use to create client-side applications that browse metadata and query data stored in Microsoft SQL Server 2008 Analysis Services. This provider implements both the OLE DB specification and the specification\u2019s extensions for online analytical processing (OLAP) and data mining.<br /><br />\n<b>Note:</b> Microsoft SQL Server 2008 Analysis Services 10.0 OLE DB Provider requires <b>Microsoft Core XML Services (MSXML) 6.0</b>, also available on this page.<br /><br />\n<ul>\n<b>X86 Package</b>(SQLServer2008_ASOLEDB10.msi) <br />\n<b>X64 Package</b> (SQLServer2008_ASOLEDB10.msi)<br />\n</ul>\n</ul>\n\n\n<a name=\"SQLCMD\"></a><br /><br />\n<b>Microsoft SQL Server 2008 Command Line Utilities </b> \n<ul>\nThe SQLCMD utility allows users to connect to, send Transact-SQL batches from, and output rowset information from SQL Server 7.0, SQL Server 2000, SQL Server 2005, and SQL Server 2008 instances. The bcp utility bulk copies data between an instance of Microsoft SQL Server 2008 and a data file in a user-specified format. The bcp utility can be used to import large numbers of new rows into SQL Server tables or to export data out of tables into data files.<br /><br />\n<b>Note:</b> This component requires both <b><a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">Windows Installer 4.5</a></b> and <b>Microsoft SQL Server Native Client</b> (which is another component available from this page). <br /><br />\n<ul>\n<b>X86 Package</b>(SqlCmdLnUtils.msi)<br />\n<b>X64 Package</b> (SqlCmdLnUtils.msi)<br />\n</ul>\n</ul>\n\n\n<a name=\"SAP BI\"></a><br /><br />\n<b>Microsoft Connector 1.0 for SAP BI </b>\n<ul>\nThe Microsoft Connector for SAP BI is a set of managed components for transferring data to or from an SAP NetWeaver BI version 7.0 system. The component is designed to be used with the Enterprise and Developer editions of SQL Server 2008 Integration Services. To install the component, run the platform-specific installer for x86, x64, or Itanium computers respectively. For more information see the Readme and the installation topic in the Help file.<br /><br />\n<ul>\n<b>X86 Package</b>(SapBI.msi) <br />\n<b>X64 Package</b> (SapBI.msi)<br />\n</ul>\n</ul>\n \n  \n<a name=\"SMO\"></a><br /><br />\n<b>Microsoft SQL Server 2008 Management Objects</b>\n<ul>\nThe SQL Server Management Objects (SMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer SQL Server objects and services. This object model will work with SQL Server 2000, SQL Server 2005 and SQL Server 2008.<br />\n<b>Note:</b> Microsoft SQL Server 2008 Management Objects Collection requires <b>Microsoft Core XML Services (MSXML) 6.0</b>, Microsoft SQL Server Native Client, and Microsoft SQL Server System CLR Types. These are available on this page.<br /><br />\n <ul>\n      <b>X86 Package</b> (SharedManagementObjects.msi) <br />\n      <b>X64 Package</b> (SharedManagementObjects.msi) <br />\n    </ul>\n</ul>\n\n<a name=\"RBS\"></a><br /><br />\n<b>SQL Server Remote Blob Store</b>\n<ul>\nThe SQL Server Remote Blob Store is a method for storing blobs of unstructured data in an external Content Addressable data store. The component consists of a client-side DLL that is linked into a user application, as well as a set of stored procedures to be installed on SQL Server.  Run the self-extracting download package to create an installation folder.  The setup program contained there will install RBS on X86, X64, and Itanium-based computers.<br /><br />\n<ul>\n      <b>X86 Package</b> (RBS.msi)<br />\n      <b>X64 Package</b> (RBS.msi)<br />\n    </ul>\n</ul>\n\n  <a name=\"SNAC\"></a><br /><br />\n  <b>Microsoft SQL Server 2008 Native Client</b>\n  <ul>\n    Microsoft SQL Server 2008 Native Client (SQL Server Native Client) is a single dynamic-link library (DLL) containing both the SQL OLE DB provider and SQL ODBC driver. It contains run-time support for applications using native-code APIs (ODBC, OLE DB and ADO) to connect to Microsoft SQL Server 2000, 2005, or 2008. SQL Server Native Client should be used to create new applications or enhance existing applications that need to take advantage of new SQL Server 2008 features. This redistributable installer for SQL Server Native Client installs the client components needed during run time to take advantage of new SQL Server 2008 features, and optionally installs the header files needed to develop an application that uses the SQL Server Native Client API.<br /><br />\n    <ul>\n      <b>X86 Package</b> (sqlncli.msi) <br />\n      <b>X64 Package</b> (sqlncli.msi) <br />\n    </ul>\n  </ul>\n\n\n<a name=\"PowerShell\"></a><br /><br />\n  <b>Microsoft Windows PowerShell Extensions for SQL Server</b>\n  <ul>\n    The Microsoft Windows PowerShell Extensions for SQL Server includes a provider and a set of cmdlets that enable administrators and developers to build PowerShell scripts for managing instances of SQL Server. The SQL Server PowerShell Provider delivers a simple mechanism for navigating SQL Server instances that is similar to file system paths. PowerShell scripts can then use the SQL Server Management Objects to administer the instances. The SQL Server cmdlets support operations such as executing Transact-SQL scripts or evaluating SQL Server policies.<br /><br />\n<b>Note:</b> Windows PowerShell Extensions for SQL Server requires <b>SQL Server 2008 Management Objects</b>, also available on this page. This component also requires Windows PowerShell 1.0; download instructions are on the Windows Server 2003 <a href=\"http://go.microsoft.com/fwlink/?LinkId=109843\">Web site</a>.<br /><br />\n    <ul>\n      <b>X86 Package</b> (PowerShellTools.msi) <br />\n      <b>X64 Package</b> (PowerShellTools.msi) <br />\n    </ul>\n  </ul>\n\n\n<a name=\"EA\"></a><br /><br />\n<b>Microsoft SQL Service Broker External Activator </b> \n<ul>\nThe Microsoft SQL Service Broker External Activator is distributed in the Microsoft SQL Server 2008 Feature Pack. It is an extension of the Internal Activation feature in SQL Server 2008 and  lets you move the logic for receiving and processing Service Broker messages from the Database Engine service to an application executable that runs outside the Database Engine service. This can provide a higher level of scale-out performance by moving processing loads from the database server to another computer. The activation application process can also run under a different Windows account from the Database Engine process. This gives administrators additional control over the resources that the activation application can access. Run the self-extracting download package to create an installation folder. The single setup program will install the service on x86 or x64 computers. Read the documentation for more information.<br /><br />\n<ul>\n<b>X86 Package</b>(SSBEAS.msi) <br />\n<b>X64 Package</b> (SSBEAS.msi) <br />\n</ul>\n</ul>\n\n<a name=\"SQLSYSCLR\"></a><br /><br />\n<b>Microsoft SQL Server System CLR Types </b> \n<ul>\nThe SQL Server System CLR Types package contains the components implementing the new geometry, geography, and hierarchyid types in SQL Server 2008.  This component can be installed separately from the server to allow client applications to use these types outside of the server.<br /><br />\n<b>Note:</b> This component also requires <b><a href=\"http://go.microsoft.com/fwlink/?LinkId=123373\">Windows Installer 4.5</a></b>.<br /><br />\n<ul>\n<b>X86 Package</b>(SQLSysClrTypes.msi)<br />\n<b>X64 Package</b> (SQLSysClrTypes.msi)<br />\n</ul>\n</ul>\n</ul>",
+    "additionalInformationSection": "  \n  If you have questions about Feature Pack content, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=202377\">SQL Server forums on MSDN. </a>\n<br />\n<br />\nVisit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=202378\"> <b>Microsoft Connect site </b> </a> to: \n<ul>\n<li> Access more resources, including white papers, training, and webcasts. </li>\n<li> Receive information about future downloads, alerts, newsletters, and more. </li>\n<li> Help improve SQL Server 2008 by submitting feedback. </li>\n<li> Participate in forum discussions. </li>\n</ul>\n<br />\nDownload the SQL Server 2008 <a href=\"http://go.microsoft.com/fwlink/?LinkId=202379\"> Books Online </a>\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server 2008 SP4",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2979596"
+        },
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/sqlserver/default.aspx"
+        },
+        {
+            "title": "looking for new downloads?Signup to be notified.",
+            "url": "http://www.microsoft.com/downloads/en/DownloadNotifications.aspx"
+        },
+        {
+            "title": "home Page for Microsoft SQL Server",
+            "url": "http://www.microsoft.com/sqlserver/2008/en/us/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44277",
+    "downloadPreload": true
+}

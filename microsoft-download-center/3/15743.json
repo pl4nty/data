@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Team Foundation Installation Guide for Visual Studio Team System 2008",
+    "downloadDescription": "The Team Foundation Installation Guide for Microsoft Visual Studio Team System 2008, which includes Team Foundation Server, Team Foundation Build, Team Foundation Server Proxy, and Team Explorer.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TFSInstall-09-June2012.chm",
+            "url": "https://download.microsoft.com/download/a/3/e/a3e348a6-5dca-4c07-a212-28bde1c4edcf/TFSInstall-09-June2012.chm",
+            "size": "368740",
+            "version": "8.0.080918",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This is the Team Foundation Installation Guide for Visual Studio Team System 2008. If you wanted one of the other versions of TFS, use the links below:\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=231702\">TFS 2012 Installation guide</a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=127730\">TFS 2010 Installation guide</a></li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0.080918",
+    "detailsSection_file_name": [
+        "TFSInstall-09-June2012.chm"
+    ],
+    "detailsSection_file_size": [
+        "360.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Team Foundation Installation Guide is a Microsoft Compiled HTML Help file (.chm), which you can open on any computer that supports this file type.",
+    "systemRequirementsSection_supportedOS": [
+        "Longhorn (Windows Code Name) ",
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Looking for an install guide for a different version of TFS? Here are links to some of the other guides available:\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=231702\">TFS 2012 Installation guide</a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=127730\">TFS 2010 Installation guide</a></li>\r\n</ul>\r\n\r\n<b>Note: </b>On computers that have <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, you cannot open Compiled Help Module (CHM) files that you download. For more information, see the <a href=\"http://support.microsoft.com/kb/902225/\">Microsoft Web site</a>.\n<br />\r\n<br />\n\r\nAfter you save the file locally, you can view its contents by using one of the following methods:\n<br />\n<br />\n<b>Method 1</b>\n<ol>\n<li>Double-click the .chm file.</li>\n<li>In the <b>Open File-Security Warning</b> dialog box, clear the <b>Always ask before opening this file</b> check box.</li>\n<li>Click <b>Open</b>.</li>\n</ol>\n<b>Method 2</b> \n<ol>\n<li>Right-click the CHM file, and then click <b>Properties</b>.</li>\n<li>Click <b>Unblock</b>.</li>\n<li>Double-click the .chm file to open the file.</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "team System Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?linkid=35584"
+        },
+        {
+            "title": "team System Forums",
+            "url": "http://go.microsoft.com/fwlink/?linkid=53443"
+        },
+        {
+            "title": "team Foundation Server Administrator\u2019s Guide",
+            "url": "http://go.microsoft.com/fwlink/?linkid=85580"
+        },
+        {
+            "title": "team Foundation Server Readme",
+            "url": "http://go.microsoft.com/fwlink/?linkid=85568"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15743",
+    "downloadPreload": true
+}

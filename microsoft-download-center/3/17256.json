@@ -1,0 +1,120 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 4 for Exchange Server 2007 Service Pack 2 (KB981383)",
+    "downloadDescription": "Update Rollup 4 for Exchange Server 2007 Service Pack 2 (KB981383)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2007-KB981383-x86-EN.msp",
+            "url": "https://download.microsoft.com/download/e/6/6/e66862b1-049b-48c3-8a9a-71bf669e37d0/Exchange2007-KB981383-x86-EN.msp",
+            "size": "47647744",
+            "version": "8.2.254.0",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Exchange2007-KB981383-x64-EN.msp",
+            "url": "https://download.microsoft.com/download/e/6/6/e66862b1-049b-48c3-8a9a-71bf669e37d0/Exchange2007-KB981383-x64-EN.msp",
+            "size": "52067328",
+            "version": "8.2.254.0",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Update Rollup 4 for Exchange Server 2007 Service Pack 2 (SP2) resolves issues that were found in Exchange Server 2007 SP2 since the software was released. This update rollup is highly recommended for all Exchange Server 2007 SP2 customers.<br />\n<br />\nFor a list of changes that are included in this update rollup, see <a href=\"http://support.microsoft.com?kbid=981383\">KB981383</a>.\n<br />\n<br />\n<B>\nThis update rollup does not apply to Exchange Server 2007 Release To Manufacturing (RTM) or Exchange Server 2007 Service Pack 1 (SP1).\r\n</B>\r\nFor a list of update rollups applicable to Exchange Server 2007 RTM or Exchange Server 2007 SP1, refer to the Knowledge Base article <a href=\"http://support.microsoft.com?kbid=937052\">KB937052</a>.\r\n<br />\n<br />\n<b>\nThis is a cumulative update rollup and replaces the following:\n</b>\n<br />\n<ul>\n<li>\n<a href=\"http://support.microsoft.com?kbid=971534\">KB971534</a> Update Rollup 1 for Exchange Server 2007 Service Pack 2 (KB971534)\n</li>\n<li>\n<a href=\"http://support.microsoft.com?kbid=972076\">KB972076</a> Update Rollup 2 for Exchange Server 2007 Service Pack 2 (KB972076)\n</li>\r\n<li>\n<a href=\"http://support.microsoft.com?kbid=979784\">KB979784</a> Update Rollup 3 for Exchange Server 2007 Service Pack 2 (KB979784)\n</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB981383",
+        "name": "KB981383"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS10-024",
+        "name": "MS10-024"
+    },
+    "detailsSection_file_version": "8.2.254.0",
+    "detailsSection_file_name": [
+        "Exchange2007-KB981383-x86-EN.msp",
+        "Exchange2007-KB981383-x64-EN.msp"
+    ],
+    "detailsSection_file_size": [
+        "45.4 MB",
+        "49.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<UL>\n<LI><B>Exchange Server 2007 SP2 must be installed prior to installing this update rollup.</B></LI>\n<LI>\nThis update rollup cannot be installed if you are using Exchange Server 2007 RTM or Exchange Server 2007 SP1.\n</LI>\n<br />\n<br />\n<LI>Any Interim Updates for Exchange Server 2007 must be uninstalled prior to installing this update rollup.</LI>\n<br />\n<br />\n<LI>32-bit editions of Windows Server 2003 with SP2, Windows Server 2003 R2 with SP2, Windows Server 2008, Windows Vista and Windows XP with SP3 are only supported for Exchange Server 2007 management tools.</LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.<br/>\nSelect the file that matches the architecture of your Exchange 2007 system. For example, if you are running the x64 version of Exchange 2007, select the file Exchange2007-KB981383-x64-EN.msp.</LI>\n<LI>Click <B>Save</B> or <B>Save this program to disk</B> to copy the download to your computer for installation.</LI>\r\n<LI>Refer to the <a href=\"http://go.microsoft.com/fwlink/?LinkId=177969\">How to Install the Latest Service Pack or Update Rollup for Exchange 2007</a> topic in the Exchange Server 2007 Technical Documentation Library for instructions to deploy this Update Rollup.\r\n</LI></OL>\r\n<br />\r\nFor additional information, refer to the <a href=\"http://go.microsoft.com/fwlink/?LinkId=159861\">Exchange Server 2007 Servicing</a> topic in the Exchange Server 2007 Technical Documentation Library.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "how to obtain the latest service pack and update rollup for Exchange 2007",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=152570"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=21256"
+        },
+        {
+            "title": "exchange Server 2007 Servicing Strategy",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=89577"
+        },
+        {
+            "title": "more Information About This Download",
+            "url": "http://support.microsoft.com?kbid=981383"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17256",
+    "downloadPreload": true
+}

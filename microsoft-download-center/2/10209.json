@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Expression Design User Guide",
+    "downloadDescription": "Documentation to support Microsoft\u00ae Expression\u00ae Design with Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Design.zip",
+            "url": "https://download.microsoft.com/download/8/c/8/8c809695-4d32-4c7f-9635-f0bd97a101e9/Design.zip",
+            "size": "5431154",
+            "version": "UserGuide_SP1",
+            "datePublished": "7/15/2024 3:11:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download provides documentation that has been updated for <a target=\"_blank\" href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=937ADF32-0FEA-4BB7-B727-CBFBDF3FE032&displaylang=en\">Microsoft Expression Design Service Pack 1</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "UserGuide_SP1",
+    "detailsSection_file_name": [
+        "Design.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Expression Design</li><br />\n<li>Expression Design Service Pack 1</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "The updated User Guide file is not automatically installed when you install the service pack. To install the updated User Guide file, follow these steps:\n<ol>\n<li>Download and then extract the Design.chm file from the .zip archive package.</li><br />\n<li>Copy the Design.chm file to the \"en\" folder in the Expression Design installation folder. By default, this is the following location: <br />\n%ProgramFiles%\\Microsoft Expression\\Design 1.0\\en</li>\n</ol>\n<b>Note</b>   You may want to back up the original Design.chm file before you copy the updated file to the en folder.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10209",
+    "downloadPreload": true
+}

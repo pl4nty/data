@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 Management Pack for Microsoft Windows Server File & iSCSI Services 2012 ",
+    "downloadDescription": "System Center 2012 Management Pack for Microsoft Windows Server File & iSCSI Services 2012 ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center Monitoring Pack for File and Storage Management.msi",
+            "url": "https://download.microsoft.com/download/b/5/2/b5215ffa-b8f4-4967-b152-8e0aba3f53ce/System Center Monitoring Pack for File and Storage Management.msi",
+            "size": "929792",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_DFSReplication_Guide.doc",
+            "url": "https://download.microsoft.com/download/b/5/2/b5215ffa-b8f4-4967-b152-8e0aba3f53ce/MPGuide_DFSReplication_Guide.doc",
+            "size": "421376",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_FileServer2012.doc",
+            "url": "https://download.microsoft.com/download/b/5/2/b5215ffa-b8f4-4967-b152-8e0aba3f53ce/MPGuide_FileServer2012.doc",
+            "size": "470016",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_DFSNRoleMgmt.doc",
+            "url": "https://download.microsoft.com/download/b/5/2/b5215ffa-b8f4-4967-b152-8e0aba3f53ce/MPGuide_DFSNRoleMgmt.doc",
+            "size": "812544",
+            "version": "7.0.8560.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System Center 2012 Management Pack for Microsoft Windows Server File & iSCSI Services 2012. This version of Management Pack for File Server 2012 includes the following changes: <br/>\r\n<ul>\r\n<li> DeDuplication \u2013 Stay current </li>\r\n<li> FSRM </li>\r\n<li> Support for clustered namespaces </li>\r\n<li> Support for clustered replication group members </li>\r\n<li> Agentless monitoring </li>\r\n<li> More detailed product knowledge </li>\r\n<li> Support for clustered replication group members </li>\r\n<li> Agentless monitoring </li>\r\n<li> iSCSI \u2013 iSCSI Target is built inbox first time in Server 2012. This is the first version integrated with File Server.  </li>\r\n<li> NFS \u2013 Stay current. </li>\r\n<li> SMB \u2013 New </li>\r\n</ul>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 10/11/2012 - Original release, version 7.0.8560.0 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.8560.0",
+    "detailsSection_file_name": [
+        "System Center Monitoring Pack for File and Storage Management.msi",
+        "MPGuide_DFSReplication_Guide.doc",
+        "MPGuide_FileServer2012.doc",
+        "MPGuide_DFSNRoleMgmt.doc"
+    ],
+    "detailsSection_file_size": [
+        "908.0 KB",
+        "411.5 KB",
+        "459.0 KB",
+        "793.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> System Center 2012 Operations Manager</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please refer to MP Guide\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34970",
+    "downloadPreload": true
+}

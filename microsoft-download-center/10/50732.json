@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "StorSimple Virtual Array configuration checklists (preview)",
+    "downloadDescription": "Contains pre-release versions of checklists used in the deployment and configuration of a StorSimple Virtual Array as a file server or iSCSI server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftAzureStorSimpleVirtualArrayiSCSIServerConfigurationChecklist.pdf",
+            "url": "https://download.microsoft.com/download/e/e/6/ee690bb0-b442-4b84-8165-4731ee727acf/MicrosoftAzureStorSimpleVirtualArrayiSCSIServerConfigurationChecklist.pdf",
+            "size": "384717",
+            "version": "1",
+            "datePublished": "7/15/2024 3:59:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftAzureStorSimpleVirtualArrayFileServerConfigurationChecklist.pdf",
+            "url": "https://download.microsoft.com/download/e/e/6/ee690bb0-b442-4b84-8165-4731ee727acf/MicrosoftAzureStorSimpleVirtualArrayFileServerConfigurationChecklist.pdf",
+            "size": "384579",
+            "version": "1",
+            "datePublished": "7/15/2024 3:59:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These configuration checklists describe the information that you need to collect before you configure your StorSimple device as a file server or iSCSI server. Preparing this information ahead of time will help streamline the process of deploying the StorSimple device in your environment. We recommend that you review the deployment configuration checklist before you begin the deployment process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MicrosoftAzureStorSimpleVirtualArrayiSCSIServerConfigurationChecklist.pdf",
+        "MicrosoftAzureStorSimpleVirtualArrayFileServerConfigurationChecklist.pdf"
+    ],
+    "detailsSection_file_size": [
+        "375.7 KB",
+        "375.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "StorSimple Virtual Array software",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the appropriate file and open it in any PDF viewer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50732",
+    "downloadPreload": true
+}

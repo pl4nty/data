@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Natural Language Interfaces to Web APIs Dataset",
+    "downloadDescription": "The NL2API dataset includes the web APIs call from the Microsoft Graph API suite, which are respectively used to search a user\u2019s emails and calendar events. Each data points include the API call, its canonical form and its associated natural utterances, as well as the API properties.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "data_release.zip",
+            "url": "https://download.microsoft.com/download/d/e/4/de4c95f6-93d3-42c0-b546-e721e6fd24c4/data_release.zip",
+            "size": "1042907",
+            "version": "April 2019",
+            "datePublished": "6/13/2024 11:43:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This dataset adopts the popular Open Data Protocol for RESTful API, and uses two web APIs from the Microsoft Graph API suite, which are respectively used to search a user\u2019s emails and calendar events. In OData, resources are entities, each associated with a list of properties. For example, the Message entity, which represents email, has properties like subject, from, isRead, receivedDateTime, etc. In addition, OData defines a set of query options to enable advanced resource manipulation. For example, one can search for emails from a specific person or received on a certain date using the FILTER option. The query options we use are listed in Table 1. We call each combination of an HTTP verb and an entity or entity set as an API, e.g., GET-Messages for email search. Each parameterized query option, e.g., FILTER(isRead=False), is called a parameter, and an API call is an API with a list of parameters.   The NL2API dataset is collected via crowdsourcing. We first generated API calls and converted each of them into a canonical command using a simple grammar, and employed crowd workers to paraphrase the canonical commands. We generated API calls solely from the specification of an API.  In addition to the schema items like query options and entity properties, we also needed property values to generate API calls, which are not available in the API specification. For properties of enumerable value type, e.g., Boolean, we enumerate all the possible values (True/False). For properties with unconstrained value type, e.g., Datetime, we synthesized a few representative values for each property, e.g., today or this week for receivedDateTime. Note that these are abstract values at the API frame level and will be converted into real values according to the context (e.g., real-world datetime) when an API frame is converted into a real API call. We can easily enumerate all the combinations of query options, properties, and property values to generate API calls. Simple heuristics can be used to reduce combinations that are not very sensible. For example, TOP must be applied on a sorted list, so has to be used together with ORDERBY. Also, Boolean properties like isRead cannot be used in ORDERBY. But still, due to combinatorial explosion, there are still many API calls for each API.  Average users cannot understand API calls. So we converted an API call into a canonical command. We defined an API-specific lexicon and an API-general grammar. The lexicon supplied a lexical form, along with a syntactic category, for each item (HTTP verbs, entities, properties, and property values). For example, the lexicon entry \u27e8sender \u2192 NP[from]\u27e9 specifies that the lexical form of the property from is \u201csender\u201d, and the syntactic category is noun phrase (NP), which will be used in the grammar. The syntactic category can also be verb (V), verb phrase (VP), adjective (JJ), complementizer phrase (CP), generalized noun phrase which is followed by another noun phrase (NP/NP), generalized prepositional phrase (PP/NP), sentence (S), etc. It is worth noting that although the lexicon is specific to each API and has to be provided by the administrator of the API, the grammar is designed to be general, and can be re-used for any RESTful API following the OData protocol directly or with slight modification.    The 17 grammar rules in the above figure can cover all the API calls used in the data collection process. The grammar specifies how to step by step derive a canonical command from an API call.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2019",
+    "detailsSection_file_name": [
+        "data_release.zip"
+    ],
+    "detailsSection_file_size": [
+        "1018.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58222",
+    "downloadPreload": true
+}

@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "MICROSOFT\u00ae REPORT VIEWER 2015 RUNTIME",
+    "downloadDescription": "The Microsoft Report Viewer 2015 Runtime redistributable package, includes controls for viewing reports designed using Microsoft reporting technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReportViewer.msi",
+            "url": "https://download.microsoft.com/download/a/1/2/a129f694-233c-4c7c-860f-f73139cf2e01/ENU/x86/ReportViewer.msi",
+            "size": "9347072",
+            "version": "12.0.2402.15",
+            "datePublished": "7/15/2024 3:58:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft Report Viewer control enables applications that run on the .NET Framework to display reports designed using Microsoft reporting technology. This redistributable package contains Windows and Web versions of the Report Viewer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0.2402.15",
+    "detailsSection_file_name": [
+        "ReportViewer.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\n<b>Pre-requisites:</b><br/>\r\n<br/>\r\n<ul>\r\n    <li>       Microsoft SQL Server 2008 Reporting Services or higher for server processing mode.    </li>\r\n    <li>  NET Framework 3.5 SP1 or .NET Framework 4.0.    </li>\r\n    <li>            Check C:\\Windows\\Microsoft.NET\\Framework64     </li>    \r\n <li>NET Framework 3.5 is there if we see a folder named v3.5. Further, use the registry to see whether SP1 for v3.5 is there <a href=\"http://support.microsoft.com/kb/318785\">http://support.microsoft.com/kb/318785</a>            </li>\r\n      \r\n    <li>            HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v3.5 needs to have DWORD named Install with value 1    </li>\r\n    <li>If SP1 is not installed, it can be installed from the <a href=\"http://www.microsoft.com/download/details.aspx?id=22\"> Microsoft .NET Framework 3.5 Service Pack 1</a>\r\n    </li>\r\n\r\n\r\n        <li>                NET Framework 4.0 is there if we see a folder named v4.0        </li>\r\n  \r\n    <li>            Microsoft SQL Server System CLR Types package</li>    \r\n            <li>\r\nIt is available in the Install Instructions section of the <a href=\" http://go.microsoft.com/fwlink/?LinkID=306709\"> Microsoft\u00ae SQL Server\u00ae 2014 Feature Pack</a>   page.           </li>\r\n      \r\n\r\n    Microsoft\u00ae System CLR Types for Microsoft\u00ae SQL Server\u00ae 2014\r\n   \r\n \r\n    <li>\r\n            Ensure this order of setup\r\n    </li>\r\n\r\n\r\n    <li>\r\n            Ensure we have the required .NET Framework version per step 1a.\r\n    </li>\r\n    <li>\r\n            Run the SQL Server System CLR Types setup from step 1b.\r\n    </li>\r\n    <li>\r\n            Run the Report Viewer 2015 runtime setup\r\n    </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On this page, click Download to start the download. </li>\r\n<li>Save the download on your device by clicking, \"Save\".</li>\r\n<li>To cancel the installation, click Cancel.</li>\r\n</ol>\r\n\r\n",
+    "additionalInformationSection": "<ul>\n    <li>Help improve the Reporting Services Add-in by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul>\n<br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "x86 - SQLSysClrTypes",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=239643&clcid=0x409"
+        },
+        {
+            "title": "x64 - SQLSysClrTypes",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=239644&clcid=0x409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45496",
+    "downloadPreload": true
+}

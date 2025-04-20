@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Account Lockout and Management Tools",
+    "downloadDescription": "Download tools that you can use to troubleshoot account lockouts, as well as add functionality to Active Directory.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ALTools.exe",
+            "url": "https://download.microsoft.com/download/1/f/0/1f0e9569-3350-4329-b443-822976f29284/ALTools.exe",
+            "size": "871800",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ALTools.exe contains tools that assist you in managing accounts and in troubleshooting account lockouts. Use these tools in conjunction with the <a href=\"http://www.microsoft.com/technet/prodtechnol/windowsserver2003/maintain/operate/BPACTLCK.asp\">Account Passwords and Policies</a> white paper.<br>\n<br>\nALTools.exe includes:<br>\n<ul><br>\n<li><b>AcctInfo.dll</b>. Helps isolate and troubleshoot account lockouts and to change a user's password on a domain controller in that user's site. It works by adding new property pages to user objects in the Active Directory Users and Computers Microsoft Management Console (MMC).</li><br>\n<li><b>ALockout.dll</b>. On the client computer, helps determine a process or application that is sending wrong credentials.</li><br>\n<b>Caution</b>: Do not use this tool on servers that host network applications or services. Also, you should not use ALockout.dll on Exchange servers, because it may prevent the Exchange store from starting.<br>\n<li><b>ALoInfo.exe</b>. Displays all user account names and the age of their passwords.</li><br>\n<li><b>EnableKerbLog.vbs</b>. Used as a startup script, allows Kerberos to log on to all your clients that run Windows&nbsp;2000 and later.</li><br>\n<li><b>EventCombMT.exe</b>. Gathers specific events from event logs of several different machines to one central location.</li><br>\n<li><b>LockoutStatus.exe</b>. Determines all the domain controllers that are involved in a lockout of a user in order to assist in gathering the logs. LockoutStatus.exe uses the NLParse.exe tool to parse Netlogon logs for specific Netlogon return status codes. It directs the output to a comma-separated value (.csv) file that you can sort further, if needed.</li><br>\n<li><b>NLParse.exe</b>. Used to extract and display desired entries from the Netlogon log files.</li><br>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ALTools.exe"
+    ],
+    "detailsSection_file_size": [
+        "851.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "All the tools that are included in this download will run on members of the Windows&nbsp;2000 and Windows&nbsp;2003 Server family. NLParse.exe will also run on Windows&nbsp;NT Server&nbsp;4.0.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows NT",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "You can find installation instructions in the <a href=\"http://www.microsoft.com/technet/prodtechnol/windowsserver2003/technologies/security/bpactlck.mspx\">Account Passwords and Policies</a> white paper.",
+    "relatedResourcesSection": [
+        {
+            "title": "creating Strong Passwords",
+            "url": "http://go.microsoft.com/?linkid=3316137"
+        },
+        {
+            "title": "password Best Practices",
+            "url": "http://go.microsoft.com/?linkid=3316138"
+        },
+        {
+            "title": "account Passwords and Policies",
+            "url": "http://go.microsoft.com/?linkid=3316139"
+        },
+        {
+            "title": "manage Accounts and Domains in a Cluster",
+            "url": "http://go.microsoft.com/?linkid=3316140"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18465",
+    "downloadPreload": true
+}

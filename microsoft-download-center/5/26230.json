@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Disk Space Monitoring add-in for Visio 2010",
+    "downloadDescription": "Get a graphical view of the free space available in the servers on your network with this Visio 2010 add-in.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "User Guide for Visio Add-In for Disk Space Monitoring.docx",
+            "url": "https://download.microsoft.com/download/8/b/1/8b1cd07a-b098-4eb6-b3ce-c6c7fa8503b4/User Guide for Visio Add-In for Disk Space Monitoring.docx",
+            "size": "2061798",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Visio Services Data Provider for Disk Space Monitoring add-in user guide.docx",
+            "url": "https://download.microsoft.com/download/8/b/1/8b1cd07a-b098-4eb6-b3ce-c6c7fa8503b4/Visio Services Data Provider for Disk Space Monitoring add-in user guide.docx",
+            "size": "308259",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this add-in to get a graphical view of the free space available in the servers on your network. The Microsoft Visio 2010 Add-in for Disk Space Monitoring has two components: client component and server component. The client component uses the new data graphics feature of Visio 2010 to display the results of server monitoring. It integrates with Microsoft System Center Operations Manager 2007 to get the disk free space details. And the server component makes it possible to publish the data-linked diagram to Microsoft SharePoint Server 2010 and refresh it in real time, making the information broadly available through a browser.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "User Guide for Visio Add-In for Disk Space Monitoring.docx",
+        "Visio Services Data Provider for Disk Space Monitoring add-in user guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "301.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Microsoft .NET Framework 3.5\r\n\u2022 SharePoint Server 2010\r\n\u2022 Visio Professional 2010 or Visio Premium 2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click Download to download the installation files and user guide. Follow the instructions in the Visio 2010 Add-in for Disk Space Monitoring user guide to install the Visio 2010 Add-in for Disk Space Monitoring. Follow the instructions in the Visio Services Data Provider for Disk Space Monitoring user guide to install the Visio Services Data Provider for Disk Space Monitoring add-in.\r\n",
+    "additionalInformationSection": "LICENSE:\r\nMICROSOFT GRANTS YOU A NON-EXCLUSIVE, WORLDWIDE, ROYALTY-FREE LICENSE TO USE THIS SOFTWARE ADD-IN FOR VISIO. THE SOFTWARE IS LICENSED \u201cAS-IS\u201d AND WE DO NOT PROVIDE SUPPORT SERVICES FOR IT. YOU BEAR THE RISK OF USING IT. MICROSOFT MAKES NO EXPRESS OR IMPLIED WARRANTIES, GUARANTEES OR CONDITIONS. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26230",
+    "downloadPreload": true
+}

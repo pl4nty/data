@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Threat Management Gateway Privacy Statement",
+    "downloadDescription": "This document describes the privacy policy for Microsoft\u00ae Forefront Threat Management Gateway 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TMG Privacy Statement  Oct.htm",
+            "url": "https://download.microsoft.com/download/d/2/a/d2a7de60-f634-452a-9d33-86fbecc78738/TMG Privacy Statement  Oct.htm",
+            "size": "114223",
+            "version": "2.1",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft is committed to protecting your privacy while delivering software and services that bring you the performance, power, and convenience you desire in your personal computing. This privacy statement explains many of the data collection and use practices of Forefront TMG v2.1 (\u201cForefront TMG\u201d). It does not apply to other Microsoft Web sites, products, or services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1",
+    "detailsSection_file_name": [
+        "TMG Privacy Statement  Oct.htm"
+    ],
+    "detailsSection_file_size": [
+        "111.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Forefront Threat Management Gateway",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows XP"
+    ],
+    "installInstructionSection": "1. Click Download, and then click Save. <br />\r\n2. Browse to the location you want to save the file to, and then click Save.<br />\r\n3. Browse to the location where you saved the file.<br />\r\n4. Double-click the file to open it.<br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "forefront Threat Management Gateway 2010  Release Candidate",
+            "url": "http://www.microsoft.com/DOWNLOADS/details.aspx?FamilyID=e05aecbc-d0eb-4e0f-a5db-8f236995bccd&displaylang=en"
+        },
+        {
+            "title": "microsoft Reputation Service Privacy Statement",
+            "url": "http://www.microsoft.com/security/portal/mrs/MRS_Privacy_Statement.htm"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15112",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Data Collection Process for SharePoint",
+    "downloadDescription": "Understanding the data-collection process in SharePoint: This white paper describes how to configure and collect various types of logs for troubleshooting issues that affect Microsoft SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Understanding Data Collection Process for SharePoint.docx",
+            "url": "https://download.microsoft.com/download/7/d/5/7d52f433-5724-4a5b-98e1-00f7be61bd55/Understanding Data Collection Process for SharePoint.docx",
+            "size": "1975092",
+            "version": "1",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "Understanding the data-collection process in SharePoint: This white paper describes how to configure and collect various types of logs for troubleshooting issues that affect Microsoft SharePoint.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Understanding Data Collection Process for SharePoint.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft SharePoint Server 2013, Microsoft SharePoint Foundation 2013, Microsoft SharePoint Server 2010, Microsoft SharePoint Foundation 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 95",
+        "Windows 98 Second Edition",
+        "Windows CE",
+        "Windows ME",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Click Download to download the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43416",
+    "downloadPreload": true
+}

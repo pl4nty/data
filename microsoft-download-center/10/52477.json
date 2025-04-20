@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Guesstimate: A Programming Model for Collaborative Distributed Systems",
+    "downloadDescription": "Guesstimate is a programming model for developing collaborative distributed applications. Last published: August 10, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "guesstimateSetup.msi",
+            "url": "https://download.microsoft.com/download/a/6/b/a6b6e28a-c3e7-487d-9dde-dbdb0e9067cc/guesstimateSetup.msi",
+            "size": "841728",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Guesstimate is a programming model for developing collaborative distributed applications. The goal of Guesstimate is to provide a simple, object-oriented model for developing distributed-systems applications. The programming model is exposed as a C# API. The API enables programmers to develop distributed-systems applications in an object-oriented manner. API methods are provided to create new distributed-systems objects, to subscribe to existing objects, and to issue operations to change the state of the objects. The objects are replicated and distributed across the system, and replicas are provided with a weak consistency guarantee. Language features enable developers to define when concurrent operations conflict and what to do with a conflict.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "guesstimateSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "822.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52477",
+    "downloadPreload": true
+}

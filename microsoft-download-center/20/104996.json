@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Zero Trust identity and device access policies poster",
+    "downloadDescription": "This poster show the set of identity and device access policies to apply Zero Trust protection for Microsoft 365 organizations.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "zero-trust-identity-and-device-access-policies.pdf",
+            "url": "https://download.microsoft.com/download/e/d/0/ed03381c-16ce-453e-9c89-c13967819cea/zero-trust-identity-and-device-access-policies.pdf",
+            "size": "134801",
+            "version": "2.0, March 2024",
+            "datePublished": "7/15/2024 5:06:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster show the Conditional Access, app protection, and device compliance policies for three protection levels (Starting point, Enterprise, Specialized security) that are recommended by Microsoft for Zero Trust protection.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0, March 2024",
+    "detailsSection_file_name": [
+        "zero-trust-identity-and-device-access-policies.pdf"
+    ],
+    "detailsSection_file_size": [
+        "131.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Click Download to download the file to your device.",
+    "relatedResourcesSection": [
+        {
+            "title": "common security policies for Microsoft 365 organizations",
+            "url": "https://learn.microsoft.com/microsoft-365/security/office-365-security/identity-access-policies"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104996",
+    "downloadPreload": true
+}

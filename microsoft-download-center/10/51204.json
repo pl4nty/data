@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Revolution R Enterprise 8.0 (RRE-8.0.1)",
+    "downloadDescription": "Revolution R Enterprise is the fastest, most cost effective, big analytics solution available. RRE 8.0 uses the R language to unlock the insight hidden in data across complex and diverse data infrastructures, including SQL Server 2016, clusters and grids, and enterprise data warehouses.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Revolution-R-Enterprise-Node-SQL-8.0.1-Windows.exe",
+            "url": "https://download.microsoft.com/download/e/a/d/ead66904-02ec-4c50-bcee-befcda310bb0/Revolution-R-Enterprise-Node-SQL-8.0.1-Windows.exe",
+            "size": "92843896",
+            "version": "1",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Revolution R Enterprise is an enterprise-ready platform for data science using the open source R language. Revolution R Enterprise scales and accelerates R, letting you deploy R scripts in a high-performance, parallel architecture\r\nYou should install this download of RRE on both the data science workstation that you use to develop solutions and on the server that you use for deploying R solutions. <b>This download of RRE includes all the libraries and tools needed for R packages to communicate seamlessly with SQL Server or Microsoft R Server and execute R packages in the server context.</b>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Revolution-R-Enterprise-Node-SQL-8.0.1-Windows.exe"
+    ],
+    "detailsSection_file_size": [
+        "88.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This download and Microsoft R Open are both required for using SQL Server R Services and Microsoft R Server.</b><br />\r\n<b>Important:</b>To use SQL Server R Services you must also enable the feature, Advanced Analytics Extensions in SQL Server 2016. For more information, see <a href=\"https://msdn.microsoft.com/library/mt604883(SQL.130).aspx\">SQL Server 2016 Books Online.</a>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>You must uninstall any previous versions of Revolution R Open or Revolution R Enterprise before installing these downloads. </b><br />\r\nIt is important that you install compatible versions of Revolution R Enterprise and Microsoft R Open. If you connect to an instance of SQL Server 2016 that has Advanced Analytics Extensions enabled, your version of Microsoft R Open and Revolution R Enterprise must also be compatible with the version supported by the server.\r\n<ol>\r\n<li> If you have not already downloaded and installed Microsoft R Open, do so now.</li>\r\n<li>Click Download and install Revolution-R-Enterprise-Node-SQL-8.0.1-Windows.exe. This download is required for both client and server installs.</li>\r\n<li>Click Run to install, and follow-the on-screen prompts.</li>\r\n<li>If you are installing the R components on an instance of SQL Server 2016, when installation is complete, run the post-installation scripts described in the following section.</li>\r\n</ol>\r\n\r\n\r\n<b>Post-installation configuration on the server</b>\r\nIf you installed the Advanced Analytics Extensions on SQL Server 2016 RC0 using the default instance name (MSSQLSERVER), you must follow these additional steps on the server computer to enable R connectivity. \r\nFor detailed instructions, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=691820\">http://go.microsoft.com/fwlink/?LinkId=691820</a>.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51204",
+    "downloadPreload": true
+}

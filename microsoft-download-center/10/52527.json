@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Simple Interface for Reconfigurable Computing (SIRC)",
+    "downloadDescription": "This API provides users with a standard FPGA communication interface from C++ code. Last published: November 8, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.msi",
+            "url": "https://download.microsoft.com/download/6/9/0/690f4e29-74be-4931-9cbe-7a659c892c92/setup.msi",
+            "size": "13791232",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This API provides users with a standard FPGA communication interface from C++ code.  It is intended to encourage more widespread adoption of FPGAs and reconfigurable computing platforms \u2014 particularly among Windows application developers.  In addition to a few bug fixes, this version adds two new features: 1)compatibility with the Windows 7 Virtual PC network driver and 2) provides fully plug-compatible Modelsim simulation of the hardware.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "13.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52527",
+    "downloadPreload": true
+}

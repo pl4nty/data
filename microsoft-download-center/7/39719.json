@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Overview of Shredded Storage in SharePoint 2013",
+    "downloadDescription": "This white paper provides an overview of Shredded Storage in SharePoint Server 2013 and the evolution of the SharePoint Products Storage model.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Shredded Storage in SharePoint 2013.doc",
+            "url": "https://download.microsoft.com/download/9/6/6/9661dac2-393d-445a-bdc1-e60743b1231e/Shredded Storage in SharePoint 2013.doc",
+            "size": "831488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Shredded Storage in SharePoint 2013.pdf",
+            "url": "https://download.microsoft.com/download/9/6/6/9661dac2-393d-445a-bdc1-e60743b1231e/Shredded Storage in SharePoint 2013.pdf",
+            "size": "1249636",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Shredded Storage is a new storage model implementation in SharePoint Server 2013 used to provide smoother I/O patterns, improve data transfer performance, and reduce storage utilization when using historical versions with SharePoint. This white paper provides a background of SharePoint products storage evolution and the implementation specifics and benefits of Shredded Storage in SharePoint 2013. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Shredded Storage in SharePoint 2013.doc",
+        "Shredded Storage in SharePoint 2013.pdf"
+    ],
+    "detailsSection_file_size": [
+        "812.0 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader, or Microsoft Word 2003 or a newer version. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button on this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39719",
+    "downloadPreload": true
+}

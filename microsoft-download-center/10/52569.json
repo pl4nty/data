@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Branch-and-Mincut Algorithm for Image Segmentation",
+    "downloadDescription": "This software contains the C++ implementation of the \u201cbranch-and-mincut\u201d framework for image segmentation with various high-level priors as described in the paper \u201cImage Segmentation by Branch-and-Mincut,\u201d written by Victor Lempitsky, Andrew Blake, and Carsten Rother, which appeared in the proceedings of the European Conference on Computer Vision . Last published: April 14, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BranchAndMincut.zip",
+            "url": "https://download.microsoft.com/download/b/1/a/b1a008c9-02fb-403e-9588-eee23be4f6ff/BranchAndMincut.zip",
+            "size": "73580",
+            "version": "1.01",
+            "datePublished": "11/15/2023 4:22:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This software contains the C++ implementation of the \u201cbranch-and-mincut\u201d framework for image segmentation with various high-level priors as described in the paper \u201cImage Segmentation by Branch-and-Mincut,\u201d written by Victor Lempitsky, Andrew Blake, and Carsten Rother, which appeared in the proceedings of the European Conference on Computer Vision in October 2008. The software contains the core algorithm and an example of its application: globally optimal segmentations under the Chan-Vese functional.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.01",
+    "detailsSection_file_name": [
+        "BranchAndMincut.zip"
+    ],
+    "detailsSection_file_size": [
+        "71.9 KB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52569",
+    "downloadPreload": true
+}

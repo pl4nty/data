@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Deploying the Survivable Branch Appliance in Lync Server 2010 for Cisco Integrated Services Router/Service Ready Engine",
+    "downloadDescription": "This white paper describes how to use a Cisco 3925 ISR G2 configured with a SRE-900 Service Module (Cisco Service Ready Engine Virtualization (SRE-V) support platform) to be deployed as a Survivable Branch Appliance (SBA) in a Microsoft Lync Server 2010 environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deploying_SBA_ in_Lync_Server_2010_for_Cisco_ISR_SRE.docx",
+            "url": "https://download.microsoft.com/download/c/2/5/c25bb872-5ca9-45a3-8c49-d5cd362fbed0/Deploying_SBA_ in_Lync_Server_2010_for_Cisco_ISR_SRE.docx",
+            "size": "3120092",
+            "version": "Dec2011",
+            "datePublished": "7/15/2024 3:29:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to use a Cisco 3925 ISR G2 configured with a SRE-900 Service Module (Cisco Service Ready Engine Virtualization (SRE-V) support platform) to be deployed as a Survivable Branch Appliance (SBA) in a Microsoft Lync Server 2010 environment. In this configuration, Lync Server exists on a virtual installation of Windows Server 2008 R2 that is hosted on VMware ESXi. This white paper also includes instructions about how to install the SBA software, configure the device, and integrate it into your Lync Server deployment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Dec2011",
+    "detailsSection_file_name": [
+        "Deploying_SBA_ in_Lync_Server_2010_for_Cisco_ISR_SRE.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</a>.</li> \r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "microsoft Unified Communications Open Interoperability Program",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=214406"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28555",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 KB2840937",
+    "downloadDescription": "SEPA for NL and BE does not have control sums",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB2840937-SP1.EXE",
+            "url": "https://download.microsoft.com/download/1/9/e/19ea4ded-b1e1-44ac-b102-5f8a1207e14e/DynamicsAX2009-KB2840937-SP1.EXE",
+            "size": "71846912",
+            "version": "AX2009 SP1",
+            "datePublished": "7/15/2024 3:05:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SEPA for NL and BE does not have control sums",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2840937",
+        "name": "KB2840937"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX2009 SP1",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB2840937-SP1.EXE"
+    ],
+    "detailsSection_file_size": [
+        "68.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics AX 2009 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Download the file and run AXUpdate.exe ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58054",
+    "downloadPreload": true
+}

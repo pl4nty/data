@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Les Pinter Looks Back",
+    "downloadDescription": "Meet the guy who sold Microsoft Word to Bill Gates! Stories abound in this lively conversation with Les Pinter.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080122LPinter.zip",
+            "url": "https://download.microsoft.com/download/6/0/0/600d4836-4247-492e-bcd4-8ab8da253414/20080122LPinter.zip",
+            "size": "49007029",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:53:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Les Pinter is the most recognized name in the world of Visual FoxPro. Author of 6 books, he has also published a monthly newsletter, The Pinter FoxPro Letter (more recently Les Pinter's Database Journal), for over 10 years. He is a speaker at national and international conferences in the US, Canada, Mexico, France, Spain and Russia and is a member of the INETA Speakers' Bureau; currently scheduled to speak at user groups in Argentina, Colombia and Peru, with talks under development in Brazil, Venezuela and Mexico.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080122LPinter.zip"
+    ],
+    "detailsSection_file_size": [
+        "46.7 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24997",
+    "downloadPreload": true
+}

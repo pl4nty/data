@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Job Aids for Windows Server 2003 Deployment Kit",
+    "downloadDescription": "Job aids are worksheets and resources that can help you create your deployment plan for Windows Server 2003, and are designed to be used in conjunction with the Windows Server 2003 Deployment Kit.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Job_Aids_Automating_and_Customizing_Installations.zip",
+            "url": "https://download.microsoft.com/download/0/0/a/00a285c4-9980-48b9-bef6-a2e6f077d5dd/Job_Aids_Automating_and_Customizing_Installations.zip",
+            "size": "336246",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Job_Aids_Planning_Testing_and_Piloting_Deployment_Projects.zip",
+            "url": "https://download.microsoft.com/download/0/0/a/00a285c4-9980-48b9-bef6-a2e6f077d5dd/Job_Aids_Planning_Testing_and_Piloting_Deployment_Projects.zip",
+            "size": "47933",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Job_Aids_Designing_A_Managed_Environment.zip",
+            "url": "https://download.microsoft.com/download/0/0/a/00a285c4-9980-48b9-bef6-a2e6f077d5dd/Job_Aids_Designing_A_Managed_Environment.zip",
+            "size": "607457",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Job_Aids_Deploying_Network_Services.zip",
+            "url": "https://download.microsoft.com/download/0/0/a/00a285c4-9980-48b9-bef6-a2e6f077d5dd/Job_Aids_Deploying_Network_Services.zip",
+            "size": "349891",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Job_Aids_Designing_and_Deploying_Directory_and_Security_Services.zip",
+            "url": "https://download.microsoft.com/download/0/0/a/00a285c4-9980-48b9-bef6-a2e6f077d5dd/Job_Aids_Designing_and_Deploying_Directory_and_Security_Services.zip",
+            "size": "273381",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Job_Aids_Planning_Server_Deployments.zip",
+            "url": "https://download.microsoft.com/download/0/0/a/00a285c4-9980-48b9-bef6-a2e6f077d5dd/Job_Aids_Planning_Server_Deployments.zip",
+            "size": "417433",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Job aids are worksheets and resources that can help you create your deployment plan for Windows Server 2003, and are designed to be used in conjunction with the Windows Server 2003 Deployment Kit.<BR /><BR />We want to provide high-quality, relevant content for IT Pros who plan, support, deploy, and operate Windows Server 2003 in small, medium, and large organizations. In order for us to improve our content offerings, we want to hear from you. Please <a href=\"mailto:wscg_dpy@microsoft.com?subject=Job Aids for Windows Server 2003 Deployment Kit\">click here</a> to send us your feedback on the usefulness and relevance of this content or any suggestions for content you would like to see.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Job_Aids_Automating_and_Customizing_Installations.zip",
+        "Job_Aids_Planning_Testing_and_Piloting_Deployment_Projects.zip",
+        "Job_Aids_Designing_A_Managed_Environment.zip",
+        "Job_Aids_Deploying_Network_Services.zip",
+        "Job_Aids_Designing_and_Deploying_Directory_and_Security_Services.zip",
+        "Job_Aids_Planning_Server_Deployments.zip"
+    ],
+    "detailsSection_file_size": [
+        "328.4 KB",
+        "46.8 KB",
+        "593.2 KB",
+        "341.7 KB",
+        "267.0 KB",
+        "407.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Word or Word Viewer</LI><LI>Microsoft Excel</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Deployment Kit",
+            "url": "http://www.microsoft.com/windowsserver2003/techinfo/reskit/deploykit.mspx"
+        },
+        {
+            "title": "windows Server 2003: Resources for IT Pros",
+            "url": "http://www.microsoft.com/technet/treeview/default.asp?url=/technet/prodtechnol/windowsserver2003/default.asp"
+        },
+        {
+            "title": "trial Software for Windows Server 2003",
+            "url": "http://www.microsoft.com/windowsserver2003/evaluation/trial/default.mspx"
+        },
+        {
+            "title": "become a Microsoft Certified Desktop Support Technician",
+            "url": "http://go.microsoft.com/?linkid=889748"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9608",
+    "downloadPreload": true
+}

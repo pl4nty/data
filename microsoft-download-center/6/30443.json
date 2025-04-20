@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: System Center 2012 Configuration Manager",
+    "downloadDescription": "Extends the Base Configuration test lab to include System Center 2012 Configuration Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_CM2012.pdf",
+            "url": "https://download.microsoft.com/download/c/9/b/c9bec4fe-c547-4ac3-be36-db13f9fa8ed5/TestLabGuide_CM2012.pdf",
+            "size": "832174",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TestLabGuide_CM2012.xps",
+            "url": "https://download.microsoft.com/download/c/9/b/c9bec4fe-c547-4ac3-be36-db13f9fa8ed5/TestLabGuide_CM2012.xps",
+            "size": "1252290",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Test Lab Guide (TLG) extends the Base Configuration test lab to include System Center 2012 Configuration Manager and walks the user through deploying initial System Center 2012 Configuration Manager Clients.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_CM2012.pdf",
+        "TestLabGuide_CM2012.xps"
+    ],
+    "detailsSection_file_size": [
+        "812.7 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 Enterprise or Ultimate, Windows Server 2008 R2 SP1 Enterprise Edition, Microsoft SQL Server 2008 R2 with Service Pack 2, Microsoft System Center 2012 Configuration Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30443",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX Two-Tier Connector for SAP",
+    "downloadDescription": "The Microsoft Dynamics ERP two-tier connector accelerates deployments between Microsoft Dynamics AX across subsidiaries, divisions or branch entities, with SAP Business Suite installations at the corporate headquarters, is now available for electronic download by Microsoft customers and partners.\u200b ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftDynamicsAX_Two-Tier_Mar-2010.xps",
+            "url": "https://download.microsoft.com/download/b/9/f/b9fa3a21-37db-4c07-a086-f1e39464de3f/MicrosoftDynamicsAX_Two-Tier_Mar-2010.xps",
+            "size": "502070",
+            "version": "NA.",
+            "datePublished": "3/15/2024 4:23:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": " \r\n   <b>Microsoft Dynamics AX Two-Tier Connector For SAP Materials </b>In this page you will find all documents to explain our two-tier ERP approach and about our strategy to provide a solution that focus on providing a great value to our large customers that are looking for:- Standardization by deploying the same solution across the corporation \r\n   - Business Agility, to meet diverse needs without compromise \r\n   - High Value, get more with spending lessThe Microsoft Dynamics AX Two-Tier connector for SAP enables common business process integration scenarios for headquarters and subsidiary locations, including the following:- Financial consolidation: consolidation of financial information from subsidiaries using Microsoft Dynamics AX can be exposed through a central SAP installation, increasing visibility of financial performance across the organization. \r\n   - Regional distribution: integration of intercompany procurement and supply-chain processes between local and regional distribution with centralized fulfillment organizations helps facilitate automated order processing. \r\n   - Regional sourcing / manufacturing: integration of decentralized manufacturing operation or procurement processes into centrally orchestrated planning processes enables more accurate and responsive manufacturing planning or procurement across the organization.The following materials will give you a full understanding of the connector from a functional and technical perspective. \r\n   The Microsoft Dynamics AX two-tier connector is composed of products that help partners and customers to connect Microsoft Dynamics AX to SAP ERP through BizTalk Server.Click Through Demos \r\n   <a href=\"http://www.microsoft.com/global/dynamics/en/us/RichMedia/demoHTML/demo-dynamics-ax-two-tier.htm\" target=\"_blank\">Microsoft Dynamics ERP Connector</a>This is a Silverlight demo that explains basic concept of a two-tier ERP implementation approach and how can this integration work. This demo can be downloaded onto your desktop for offline use by right clicking on the home screen and select \u2018install Microsoft Dynamics two-tier onto this computer\u2019. \r\n   <b> </b>\r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/AX%20Two%20Tier%20Connector%20Regional%20Distribution%20BT.exe\">Regional Distribution Facility Demo</a>This DemoMate click through demo is showcasing the Regional Distribution scenario that include mock up screens of what could be a Corporate ERP solution such as SAP ERP. \r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/AX%20Two%20Tier%20Connector%20Regional%20Sourcing%20BT%20Ins.exe\"> Regional Sourcing / Manufacturing Facility Demo</a>This DemoMate click through demo is showcasing the Regional Sourcing / Manufacturing scenario that include mock up screens of what could be a Corporate ERP solution such as SAP ERP. \r\n   <a name=\"WhitePapers\" id=\"WhitePapers\"></a>Implementation White Papers \r\n   <b> </b>\r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/MicrosoftDynamics_White_Paper_AX_SAP_Regional.docx\">Regional Distribution Scenario: Parent company sells products to the sales office</a>This document describes the Regional Distribution scenario about the integration of intercompany procurement and supply-chain processes between local and regional distribution with centralized fulfillment organizations. In this scenario, the local company will source its items/products from other entity running on SAP. The request will be transferred to SAP and supply chain processes will execute and then update in both environments so users do not have to navigate through multiple user interfaces (UI) to track status of this sourcing and delivery process. \r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/MicrosoftDynamics_White_Paper_AX_SAP_Regional%20%281%29.docx\"> Regional Sourcing / Manufacturing Facility Provides Products to the Parent Company</a>This document describes the Regional Sourcing / Manufacturing scenario for the integration of intercompany procurement and supply-chain processes between local and regional distribution with local fulfillment organizations. In this scenario, the local company will supply its items/products to the other entity running on SAP. The items could be either procured or manufactured by the local subsidiary. The request will be transferred from SAP to AX and supply chain processes will execute. Updates in both environments are completed so users do not have to navigate through multiple user interfaces (UI) to track status of this sourcing and delivery process. \r\n   <b> </b>\r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/MicrosoftDynamics_White_Paper_AX_SAP_Financia.docx\">Financial Consolidation</a>This document describes end-of-month consolidation that takes place in the Corporate Legacy System and is completed by uploading General Ledger balances from Microsoft Dynamics AX to the Corporate Legacy System. The data is exported from Microsoft Dynamics AX and imported into the Corporate Legacy System. \r\n   <b> </b>\r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/MicrosoftDynamics_White_Paper_AX_SAP_AX%20and%20B.docx\">Triggering a BizTalk Orchestration from SAP</a>This document describes how to trigger a BizTalk Orchestration from an SAP document. The document will describe the various processes, technologies, and tools involved in exchanging data between SAP and multiple applications. Detailed configuration scenarios are also provided. \r\n    \r\n   <a name=\"ProductDownload\" id=\"ProductDownload\"></a>Microsoft Dynamics AX Connector For SAP Product DownloadThe connector includes only rights to use the Two-Tier Connector only. The connector does not include any other usage rights. Microsoft Dynamics AX users accessing directly or indirectly to the Microsoft Dynamics AX solution should be licensed according to BRL Licensing Terms and Conditions (Software License Terms and the Dynamics ERP Licensing Guidelines) \r\n   The connector is requiring other technologies such as BizTalk Server as well as Microsoft Dynamics AX and SAP adapters that are required to be acquired/licensed separatelyCustomers should also make sure that they have the adequate SAP licenses required to operate using the connectorPlease refer to the implementation white papers to understand how the Microsoft Dynamics AX Two-Tier Connector for SAP works. \r\n   <b> </b>\r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/AX_AIF_BT_SAP.zip\">Microsoft Dynamics AX connector product download</a>:Download and install the Microsoft Dynamics AX .xpo file that is required to implement the Microsoft Dynamics AX Two-Tier Connector for SAP. \r\n   <b> </b>\r\n   <a href=\"https://download.microsoft.com/download/8/9/2/892db794-64af-4e73-9155-0c404c88ba99/learning/MSI.zip\">Microsoft BizTalk Server connector product download</a>:Download and install the .BizTalk Server msi file that is required to implement the integration orchestration scenario for the Microsoft Dynamics AX Two-Tier Connector for SAP.*Note: The Microsoft Dynamics AX Connector for SAP Solution is in English Only and is not supported by Microsoft Support.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsAX_Two-Tier_Mar-2010.xps"
+    ],
+    "detailsSection_file_size": [
+        "490.3 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101958",
+    "downloadPreload": true
+}

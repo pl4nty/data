@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 365 Government - GCC Setup Tool for Windows 10/11",
+    "downloadDescription": "The Windows 365 Government - GCC Setup Tool helps admins setup the use of Windows 365 features that require an Azure Government subscription.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "GCCSetupTool.zip",
+            "url": "https://download.microsoft.com/download/c/d/2/cd2cf974-c32a-490d-bb3d-df2c322600f1/GCCSetupTool.zip",
+            "size": "100826404",
+            "version": "1.0.0.6",
+            "datePublished": "7/18/2024 8:00:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Beginning in May 2023, the Windows 365 PowerShell script performing tenant mapping for GCC customers is no longer supported.</b> <br />\r\n\r\nWindows 365 Government - GCC Setup Tool performs tenant mapping and grants Windows 365 the permissions in your Microsoft Azure Government subscriptions(s) for use with specific Windows 365 features. Tenant mapping and a Microsoft \r\nAzure Government subscription is not required unless you want to use one or more of the following Windows 365 features: <br />\r\n\r\n<ul>\r\n  <li>Custom images - use your own OS images instead of the default Gallery images pre-optimized for Windows 365</li>\r\n  <li>Azure Network Connections (ANC) - to provision Cloud PCs that are attached to a virtual network that you manage</li>\r\n</ul>\r\n\r\n\r\n<b>IMPORTANT: This is only for GCC customers. There is no equivalent software needed for GCC-H customers. Use of this software requires a valid and working Intune subscription and Active Directory tenant, an \r\n    account with the Global Administrator role in a Microsoft Azure Commercial subscription, and an account with the Global Administrator role in a Microsoft Azure Government subscription. \r\n    Some functionality may not be available in all countries. See the <a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">Microsoft Online Services Privacy Statement(http://go.microsoft.com/fwlink/?LinkID=240296)</a> </b> <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.6",
+    "detailsSection_file_name": [
+        "GCCSetupTool.zip"
+    ],
+    "detailsSection_file_size": [
+        "96.2 MB"
+    ],
+    "detailsSection_file_date": "7/18/2024",
+    "systemRequirementsSection": "<b>Supported Operating System</b> <br />\r\nWindows 10 version 1809 and above <br />\r\nWindows 11 <br />\r\n\r\n<ul>\r\n    <li><b>Note: </b>You must run GCCSetupTool.exe on a 64-bit computer.</li>\r\n    <li><b>Other Requirements: </b>A valid and working Intune and Azure Directory tenant, an account with the Global Administrator role in a Microsoft Azure commercial subscription, \r\n        and an account with the Global Administrator role in a Microsoft Azure Government subscription</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>Download the GCCSetupTool.zip from the Download Center and place it on an accessible share or local folder</li>\r\n    <li>Unzip the zip file and from an elevated Command Prompt, double click the following application:</li>\r\n    <ul>\r\n        <li>GCCSetupTool.exe</li>\r\n    </ul>\r\n    <li>The folder can be deleted after use</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105234",
+    "downloadPreload": true
+}

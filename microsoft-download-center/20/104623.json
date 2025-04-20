@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Power BI Query Template For Teams Voice Applications (Auto Attendant and Call Queue)",
+    "downloadDescription": "Customizable Power BI template you can use to analyze and report on your Teams Voice Applications (Auto Attendants and Call Queues)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Teams Auto Attendant & Call Queue Historical Reports V3.2.0.zip",
+            "url": "https://download.microsoft.com/download/a101b755-c8b3-46bd-8a69-ab243488315c/Teams Auto Attendant & Call Queue Historical Reports V3.2.0.zip",
+            "size": "2376133",
+            "version": "3.2.0",
+            "datePublished": "4/8/2025 12:39:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For Voice Applications (Auto Attendant and Call Queue) reporting, download our Power BI template.  Access can be limited so that users only see the Auto Attendants, Call Queues, or Agents they are authorized for.  You can upload this template to the Power BI Service and can also customize them if needed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.2.0",
+    "detailsSection_file_name": [
+        "Teams Auto Attendant & Call Queue Historical Reports V3.2.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "4/8/2025",
+    "systemRequirementsSection": "Microsoft Power BI",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\n<li>Select the <b>Download</b> button to start the download.</li> \n\n<li>The download should start automatically. If prompted, select <b>Save</b>  or <b>Save this program to disk</b> .</li> \n\n<li>Select <b> Open file</b>,  or find the file on your device and open it</li>\n\n<li>Follow the instructions to load and run the templates at: <a href=\"https://learn.microsoft.com/microsoftteams/aa-cq-cqd-historical-reports\">https://learn.microsoft.com/microsoftteams/aa-cq-cqd-historical-reports</a></li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104623",
+    "downloadPreload": true
+}

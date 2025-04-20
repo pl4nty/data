@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 Field Service mobile app in a day",
+    "downloadDescription": "Dynamics 365 Field Service mobile app in a day",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics 365 Field Service mobile app in a day.docx",
+            "url": "https://download.microsoft.com/download/8/7/8/878c1a17-f961-4cd1-a475-a65095ca9eca/Dynamics 365 Field Service mobile app in a day.docx",
+            "size": "24616825",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:58:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Objectives\r\nBy the end of this training, you will be able to: \r\n\u2022 Understand the context of the Field Service mobile app within Field Service and the Power Platform\r\n\u2022 Install and log into the mobile app and interact with Field Service information like bookings and work orders.\r\n\u2022 Perform common configurations like editing the tables, forms, views, and columns displayed in the mobile app and set up \u2018offline first\u2019 so the mobile app works without internet access.\r\n\u2022 Perform more advanced configurations and customizations to accommodate more business requirements and processes.\r\n\u2022 Learn best practices to implement the Field Service mobile app including migrating from the previous mobile app.\r\nStructure\r\n1. Prerequisites: Installation and setup (60 min)\r\no Create a new environment or use your own.\r\no Add Field Service to an existing environment (if applicable).\r\no Open your Field Service environment\r\no Create a new user to represent a frontline worker\r\no Complete the getting started page to create a frontline worker and schedule a work order to view on the mobile app\r\n2. Introduction to configurations and customizations (60 min)\r\no Edit the Site Map\r\no Edit a mobile view\r\no Add a field to the mobile Booking form\r\no Add a field to the mobile Work Order form\r\no Enable offline first and modify the offline profile\r\n3. Advanced capabilities and customizations (120 min)\r\no Frontline worker address and location tracking\r\no Push notifications\r\no Enable barcode scanning\r\no Run mobile workflows, processes, JavaScript\r\n4. Implementation guidance (30 min)\r\no Mobile adoption playbook\r\no Best practices\r\no Documentation \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Dynamics 365 Field Service mobile app in a day.docx"
+    ],
+    "detailsSection_file_size": [
+        "23.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Dynamics 365 Field Service version 8.8.40+",
+    "systemRequirementsSection_supportedOS": [
+        "iOS",
+        "Android"
+    ],
+    "installInstructionSection": "Simply download the PDF and follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103342",
+    "downloadPreload": true
+}

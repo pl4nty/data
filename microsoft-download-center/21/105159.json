@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft threat actor mapping",
+    "downloadDescription": "List of threat actors previously publicly disclosed old actor names and how it translates to the new naming convention implemented by Microsoft. The list maps the threat actors' old and new names, the origin or motivation, and where applicable, how other security organizations name these actors. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-threat-actor-list.xlsx",
+            "url": "https://download.microsoft.com/download/4/5/2/45208247-c1e9-432d-a9a2-1554d81074d9/Microsoft-threat-actor-list.xlsx",
+            "size": "27033",
+            "version": "1",
+            "datePublished": "12/19/2024 1:40:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We have created a list containing our previously publicly disclosed old actor names and how it translates to our new taxonomy. The list maps the threat actors' previous and new names, the origin or intent, and, where applicable, how other security organizations name these actors.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft-threat-actor-list.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "26.4 KB"
+    ],
+    "detailsSection_file_date": "12/19/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download the threat actor mapping</b> link to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li>Select <b>Open file</b> or find the file on your device and open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105159",
+    "downloadPreload": true
+}

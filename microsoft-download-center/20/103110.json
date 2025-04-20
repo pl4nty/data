@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MariaDB MySQL Migration and Assessment Tools",
+    "downloadDescription": "This article explains how to use the python script expimpmysql.py to migrate data from any regular MariaDB Database to Azure for MariaDB",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MariaDB MySQL Migration and Assessment Tools.zip",
+            "url": "https://download.microsoft.com/download/3/e/9/3e9de247-1a23-43a8-ac21-2e82e63cb725/MariaDB MySQL Migration and Assessment Tools.zip",
+            "size": "470217",
+            "version": "1.0",
+            "datePublished": "1/15/2024 5:02:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article explains how to use the python script expimpmysql.py to migrate data from any regular MariaDB Database to Azure for MariaDB.\r\nThe features of this scripts are:\r\n1. Fully configurable\r\n2. Extract data to a \u201ctab-delimited\u201d format within a gzip file\r\n3. Import the extracted data that are in gzip file to a target database\r\n4. Configurable parallelism, no of chunks, character set, maximum rows per csv file\r\n5. Selectable tables or all tables \r\n6. Obfuscated password is stored in a config, so it doesn\u2019t require to re-enter password when performing data migration\r\n7. Generated a logfile\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MariaDB MySQL Migration and Assessment Tools.zip"
+    ],
+    "detailsSection_file_size": [
+        "459.2 KB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a zipped folder that contains MariaDB MySQL Migration and Assessment Tools and associated documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103110",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft MSF for Agile 2013 Plus Security Development Lifecycle (SDL)",
+    "downloadDescription": "Microsoft MSF for Agile 2013 Plus Security Development Lifecycle (SDL) is a TFS process template that incorporates the SDL for Agile process guidance into the MSF Agile development framework",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSF for Agile 2013 plus Security Development Lifecycle.msi",
+            "url": "https://download.microsoft.com/download/6/b/1/6b17d961-2207-4aa7-b043-019c041e9966/MSF for Agile 2013 plus Security Development Lifecycle.msi",
+            "size": "2830336",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:08:47 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft MSF for Agile 2013 Plus Security Development Lifecycle (SDL) is a TFS process template that incorporates the SDL for Agile process guidance into the MSF Agile development framework. With the Microsoft MSF for Agile 2013 Plus Security Development Lifecycle (SDL) template, any code checked into the Team Foundation Server 2013 source repository by the developer is analyzed to ensure that it complies with SDL secure development practices. The template also automatically creates security workflow tracking items for manual SDL processes such as threat modeling to ensure that these important security activities are not accidentally skipped or forgotten.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSF for Agile 2013 plus Security Development Lifecycle.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Server Operating Systems:\r\nWindows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2\r\n\r\nClient Operating Systems:\r\nWindows 7, Windows 8, Windows 8.1\r\n\r\nServer Requirements:\r\nMicrosoft Visual Studio Team Foundation Server 2013\r\n\r\nClient Requirements:\r\nMicrosoft Visual Studio 2013, Microsoft Visual Studio 2012 or Microsoft Visual Studio 2010 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the accompanying installation file and install it on your Microsoft Visual Studio Team Foundation Server 2013 system. Additional required installation steps are listed in the installation's readme file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42517",
+    "downloadPreload": true
+}

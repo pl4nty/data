@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Server 2012 R2 (KB2962409)",
+    "downloadDescription": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows Server 2012 experience.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2962409-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/9/dc9165be-7ce1-4714-a250-60a6f1ec7172/Windows8.1-KB2962409-x64.msu",
+            "size": "51990848",
+            "version": "2962409",
+            "datePublished": "7/15/2024 3:21:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2973448-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/9/dc9165be-7ce1-4714-a250-60a6f1ec7172/Windows8.1-KB2973448-x64.msu",
+            "size": "357480",
+            "version": "2962409",
+            "datePublished": "7/15/2024 3:21:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2959146-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/9/dc9165be-7ce1-4714-a250-60a6f1ec7172/Windows8.1-KB2959146-x64.msu",
+            "size": "2082287",
+            "version": "2962409",
+            "datePublished": "7/15/2024 3:21:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows Server 2012 experience. We recommend that you apply all of these updates as part of your regular maintenance routines. Failure to install all of the packages listed above could leave your machine in an untested state.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2962409",
+        "name": "KB2962409"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2962409",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2962409-x64.msu",
+        "Windows8.1-KB2973448-x64.msu",
+        "Windows8.1-KB2959146-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "49.6 MB",
+        "349.1 KB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul><li>Repeat this process until all of the following KBs have been installed: KB2962409, KB2959146, KB2973448</li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2962409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43276",
+    "downloadPreload": true
+}

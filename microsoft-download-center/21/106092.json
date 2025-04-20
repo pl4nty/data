@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Rules Composer",
+    "downloadDescription": "Visual tool for authoring and versioning Azure Logic Apps Rules Engine rulesets and vocabularies.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSRuleComposer.exe",
+            "url": "https://download.microsoft.com/download/6/d/e/6def9f73-bede-4f1a-aedd-02400d7cde1e/MSRuleComposer.exe",
+            "size": "1919408",
+            "version": "1.0",
+            "datePublished": "6/6/2024 11:21:03 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Rules Composer is a visual tool that allows you to create and test RuleSets with one or more business rules. It also allows you to browse for facts (XML, and .NET), and use the facts in business rules. In addition, it allows you to create business vocabularies based on facts, and to use the vocabularies in business rules.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSRuleComposer.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "6/6/2024",
+    "systemRequirementsSection": "<b>This release is supported on the following operating systems:</b>\r\n<ul>\r\n<li>Windows 11</li>\r\n<li>Windows Server 2019</li>\r\n<li>Windows Server 2022</li>\r\n<li>Virtualization with Azure and Hyper-V</li>\r\n</ul>\r\n\r\n<b>This release requires the following version of the Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.7.2 or above</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows Server 2019",
+        "Windows 11"
+    ],
+    "installInstructionSection": "By downloading the Microsoft Rules Composer software you agree to these <a href=\"https://aka.ms/msrceula\">License Terms</a>. To learn more about privacy, see the Microsoft Privacy Statement at <a href=\"https://go.microsoft.com/fwlink/?LinkId=521839\">Privacy Statement</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Logic Apps Rules Engine",
+            "url": "https://learn.microsoft.com/azure/logic-apps/rules-engine/rules-engine-overview"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "106092",
+    "downloadPreload": true
+}

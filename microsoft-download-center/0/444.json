@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment worksheet for Duet Enterprise",
+    "downloadDescription": "Record data in this worksheet",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "deploy-worksheet.xps",
+            "url": "https://download.microsoft.com/download/a/6/e/a6ec1311-beb3-4ca7-8daa-6615a96dbbd2/deploy-worksheet.xps",
+            "size": "158215",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "deploy-worksheet.doc",
+            "url": "https://download.microsoft.com/download/a/6/e/a6ec1311-beb3-4ca7-8daa-6615a96dbbd2/deploy-worksheet.doc",
+            "size": "110592",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "deploy-worksheet.pdf",
+            "url": "https://download.microsoft.com/download/a/6/e/a6ec1311-beb3-4ca7-8daa-6615a96dbbd2/deploy-worksheet.pdf",
+            "size": "84057",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Record data in this worksheet to enable administrators of Microsoft SharePoint Server 2010 and SAP systems to exchange information that is required during deployment of Duet Enterprise for Microsoft SharePoint and SAP. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "deploy-worksheet.xps",
+        "deploy-worksheet.doc",
+        "deploy-worksheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "154.5 KB",
+        "108.0 KB",
+        "82.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Office 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "444",
+    "downloadPreload": true
+}

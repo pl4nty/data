@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2016 Feature Update 3 with CU9",
+    "downloadDescription": "Microsoft BizTalk Server 2016 Feature Update 3 with CU9",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BTS2016-KB5005480-ENU.exe",
+            "url": "https://download.microsoft.com/download/5/9/3/5933df69-2366-4c35-a49c-b001ce2b47aa/BTS2016-KB5005480-ENU.exe",
+            "size": "49192848",
+            "version": "3.13.357.2",
+            "datePublished": "7/15/2024 5:04:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2016 Feature Update 3 with CU9. <br />\r\nThis package includes new capabilities in <a href=\"https://aka.ms/bts2016update3\">update 3</a>, all capabilities and fixes from: <br />\r\n<ul>\r\n<li> <a href=\"https://aka.ms/bts2016update1\">Feature update 1</a> </li>\r\n<li> <a href=\"https://aka.ms/bts2016update2\">Feature update 2</a> </li>\r\n<li> <a href=\"https://support.microsoft.com/en-us/help/5005479/\">2016 CU9</a> </li>\r\n</ul>\r\n<br /><br />\r\nMICROSOFT SOFTWARE SUPPLEMENTARY LICENSE TERMS<br />\r\nMICROSOFT BIZTALK SERVER 2016 UPDATE<br /><br />\r\nPLEASE NOTE: Refer to your license terms for Microsoft BizTalk Server 2016 Developer software or Microsoft BizTalk Server 2016 Enterprise software (the \u201csoftware\u201d) to identify the entity licensing this supplement to you and for support information. You may use a copy of this supplement (i) if you are a Microsoft Software Assurance customer, or, running the software in Microsoft Azure under an Enterprise Agreement; and, (ii) with each validly licensed copy of the software. You may not use the supplement if you are not a Microsoft Software Assurance customer or running the software on Microsoft Azure under an Enterprise Agreement and do not have a license for the software. The license terms for the software apply to your use of this supplement.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.13.357.2",
+    "detailsSection_file_name": [
+        "BTS2016-KB5005480-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "46.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2016 or 2013<br />\r\n.NET Framework 4.6<br />\r\nVisual Studio 2015<br />\r\nSQL Server 2016 or SQL Server 2014 SP1<br />\r\nSharePoint 2016 or SharePoint 2013 SP1<br />\r\nMicrosoft BizTalk Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows 8.1",
+        "Windows 7"
+    ],
+    "installInstructionSection": "To install Microsoft BizTalk Server 2016 Update on your x64 BizTalk machine, run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.<br />\r\nThis update is unsupported and cannot be installed on x86 machines. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103480",
+    "downloadPreload": true
+}

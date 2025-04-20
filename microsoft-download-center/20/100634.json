@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 1903 GP OS Certification Report",
+    "downloadDescription": "Windows 10 1903 GP OS Certification Report",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows 10 1903 GP OS Certification Report.pdf",
+            "url": "https://download.microsoft.com/download/2/1/9/219909ad-2f2a-44cc-8fcb-126f28c74d36/Windows 10 1903 GP OS Certification Report.pdf",
+            "size": "877775",
+            "version": "1",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the GP OS Certification Report for the Common Criteria evaluation of Windows 10 1903",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows 10 1903 GP OS Certification Report.pdf"
+    ],
+    "detailsSection_file_size": [
+        "857.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A browser or other PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download and open the document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100634",
+    "downloadPreload": true
+}

@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Tools for Applications 2015",
+    "downloadDescription": "Microsoft Visual Studio Tools for Applications lets you add and run VSTA customizations in applications that are integrated with VSTA.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vsta_setup.exe",
+            "url": "https://download.microsoft.com/download/2/d/f/2dfcd7d9-821c-4637-8f94-3fad73bdd1cd/vsta_setup.exe",
+            "size": "9556472",
+            "version": "14.0",
+            "datePublished": "7/15/2024 3:59:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio Tools for Applications lets you add and run VSTA customizations in applications that are integrated with VSTA. VSTA 2015 has two primary modes of operation: with a supported version of Visual Studio installed and standalone. In standalone mode, VSTA provides the application with the means to load, compile, and run end-user customizations. With a supported version of Visual Studio installed on your machine, VSTA extends that functionality with the means to edit and debug those customizations. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0",
+    "detailsSection_file_name": [
+        "vsta_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "9.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li><b>Runtime requirement:</b> Visual C++ Redistributable for Visual Studio 2015.</li>\r\n<li><b>Supported Microsoft Visual Studio version:</b>\r\nMicrosoft Visual Studio 2012 Professional, Premium or Ultimate; \r\nMicrosoft Visual Studio 2013 (Community Edition or above);\r\nor, Microsoft Visual Studio 2015 (Community Edition or above).</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "visual C++ Redistributable for Visual Studio 2015 ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=48145"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49031",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sample Service Offers",
+    "downloadDescription": "This zipped folder includes sample service offer templates for CSP partners interested in launching Hybrid IaaS offers on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sample service offers.zip",
+            "url": "https://download.microsoft.com/download/6/f/0/6f0740e1-7c56-43ee-a765-7cbe96435a06/Sample service offers.zip",
+            "size": "343243",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 3:59:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes sample service offer templates for CSP partners interested in launching Hybrid IaaS offers on Azure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Sample service offers.zip"
+    ],
+    "detailsSection_file_size": [
+        "335.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50754",
+    "downloadPreload": true
+}

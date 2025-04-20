@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Outlook for Mac for Office 365.  ",
+    "downloadDescription": "This update provides new functionality and various improvements and fixes for Outlook for Mac for Office 365. THIS RELEASE CONTINUES TO BE AVAILABLE TO ELIGIBLE OFFICE 365 SUBSCRIBERS ONLY. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftOutlook15.8.dmg",
+            "url": "https://download.microsoft.com/download/4/3/e/43e4b6c6-616a-46c7-a869-b8baeecd4052/MicrosoftOutlook15.8.dmg",
+            "size": "341787711",
+            "version": "15.8",
+            "datePublished": "7/15/2024 3:58:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update provides improvements and new functionality along with critical fixes. For more information about this update, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkID=525625\" target=\"_blank\">Microsoft Web site</a>.<br /><br />\r\n\r\n\r\n<b>Applies to:</b>Office 365 Home, Office 365 Personal, Office 365 University, Office 365 Business, Office 365 Business Premium, Office 365 Small Business Premium, Office 365 Midsize Business, Office 365 Enterprise E3, Office 365 Enterprise E4, Office 365 ProPlus, Office 365 Government G3, Office 365 Government G4, Office 365 Education A3, Office 365 Education A4, Office 365 ProPlus for Students, and Office 365 ProPlus A for Students \r\n<br /><br />\r\n<a href=\"https://support.office.com/en-us/article/Known-issues-in-Outlook-for-Mac-for-Office-365-af547e5c-4310-4d41-9944-08b1e842ebe4?ui=en-US&rs=en-US&ad=US\" target=\"_blank\">Known issues for Microsoft Outlook for Mac for Office 365 </a>.<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.8",
+    "detailsSection_file_name": [
+        "MicrosoftOutlook15.8.dmg"
+    ],
+    "detailsSection_file_size": [
+        "326.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Mac OS X 10.10 and above",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>To install this update</b>\n<ul>\n<li>Office 365 Commercial customers can get the new Outlook for Mac by accessing their Office 365 Portal, (Gear icon > Office 365 Settings > Software > Outlook for Mac icon) or visiting the <a href=\"https://portal.office.com/ols/mySoftware.aspx\"> Software page</a><br /><br /></li>\n<li>Office 365 consumer subscribers can get the new Outlook for Mac by going to their <a href=\"http://www.office.com/myaccount\"> My Account page.</a><br /><br /></li>\r\n\r\nFor people who already have Office for Mac 2011 and Outlook for Mac 2011 installed on their Mac, check out<a href=\"https://support.office.com/en-us/article/Running-Office-for-Mac-2011-side-by-side-with-Outlook-for-Mac-for-Office-365-dbea7d44-b212-4d8b-85bd-2722ca671c0f?ui=en-US&rs=en-US&ad=US\">  this help article </a>for guidance <br /><br />\r\n\r\n\n</ul>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45915",
+    "downloadPreload": true
+}

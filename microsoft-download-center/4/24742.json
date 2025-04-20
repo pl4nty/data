@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Papers: Services",
+    "downloadDescription": "This series of white papers are related to Microsoft Dynamics AX 2012 services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Consuming_Web_Services_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/2/3/6/2361fd43-64a4-4087-bfa1-8cb8007e5274/Consuming_Web_Services_AX2012.pdf",
+            "size": "513725",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Services_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/2/3/6/2361fd43-64a4-4087-bfa1-8cb8007e5274/Services_AX2012.pdf",
+            "size": "289459",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following white papers are included in this series:<br /><br />\r\n<UL><LI><b>Services in Microsoft Dynamics AX 2012</b> - Gives an overview of different types of services that are available in Microsoft Dynamics AX 2012 and provides guidance to developers and architects in deciding when to use a specific service type.</LI>\r\n<LI><b>Consuming Web Services</b> - Describes how to reference a web service and provides example code that demonstrates how to use the service in X++.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Consuming_Web_Services_AX2012.pdf",
+        "Services_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "501.7 KB",
+        "282.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "The <b>Services in Microsoft Dynamics AX 2012</b> white paper targets developers and architects who are planning to use services in Microsoft Dynamics AX 2012.<br /><br />\r\nTo benefit from this white paper, you must understand the following areas: <br /><br />\r\n<UL><LI>Programming models in Microsoft Dynamics AX 2012</LI>\r\n<LI>The basics of Microsoft Dynamics AX 2012 Services and Application Integration Framework (AIF)</LI></UL><br /><br /><br />\r\n\r\nThe <b>Consuming Web Services</b> white paper is intended for developers who integrate web services with Microsoft Dynamics AX.<br /><br />\r\nTo benefit from this white paper, you should have experience in the following areas:<br /><br />\r\n<UL><LI>Writing code in .NET Framework languages or X++</LI>\r\n<LI>Using Microsoft Visual Studio</LI>\r\n<LI>Setting up Microsoft Dynamics AX</LI></UL><br /><br />\r\nYou must have Microsoft Visual Studio 2010 installed on the computer that is running Microsoft Dynamics AX 2012.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24742",
+    "downloadPreload": true
+}

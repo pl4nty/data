@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Talent extensibility solution: Initiate and Extract Parameters Passed to Powerapps",
+    "downloadDescription": "The Initiate and Extract Parameters Passed to Powerapps template can be used as a starting point for any PowerApps scenario that is specific to Attract. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Candidate Self Assessment_form_initiate and Extract.xlsx",
+            "url": "https://download.microsoft.com/download/0/4/6/046f24b4-9720-4602-a163-5ae6e4d594f8/Candidate Self Assessment_form_initiate and Extract.xlsx",
+            "size": "201693",
+            "version": "1",
+            "datePublished": "6/13/2024 11:46:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "InitiateandExtractParametersPassedtoPowerapps_20190314211305.zip",
+            "url": "https://download.microsoft.com/download/0/4/6/046f24b4-9720-4602-a163-5ae6e4d594f8/InitiateandExtractParametersPassedtoPowerapps_20190314211305.zip",
+            "size": "57850",
+            "version": "1",
+            "datePublished": "6/13/2024 11:46:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Initiate and Extract Parameters Passed to Powerapps template can be used as a starting point for any PowerApps scenario that is specific to Attract. It includes all the default parameters that are passed by Attract, such as Job Application, Candidate ID, and JobID.\r\nThis template can be used to retrieve a candidate assessment form, so that a hiring manager can view the assessment that a candidate filled in.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Candidate Self Assessment_form_initiate and Extract.xlsx",
+        "InitiateandExtractParametersPassedtoPowerapps_20190314211305.zip"
+    ],
+    "detailsSection_file_size": [
+        "197.0 KB",
+        "56.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Dynamics 365 for Talent\r\nMicrosoft PowerApps",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Files will then need to be extracted.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58087",
+    "downloadPreload": true
+}

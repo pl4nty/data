@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "DLC test",
+    "downloadDescription": "DLC test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DlcDemo (1).docx",
+            "url": "https://download.microsoft.com/download/6/a/0/6a085ba5-3568-4cc6-935e-140445914183/DlcDemo (1).docx",
+            "size": "12711",
+            "version": "1",
+            "datePublished": "1/31/2025 2:27:56 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "DLC test",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "DlcDemo (1).docx"
+    ],
+    "detailsSection_file_size": [
+        "12.4 KB"
+    ],
+    "detailsSection_file_date": "1/31/2025",
+    "systemRequirementsSection": "DLC test",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "DLC test",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105657",
+    "downloadPreload": true
+}

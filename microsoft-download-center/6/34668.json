@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: Fixed Asset Management",
+    "downloadDescription": "This document explains how to set up assets, account groups, physical locations, and other information to manage your asset records. It also includes information about transactions, routine procedures, integrations, inquiries, and reports.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FixedAssets.pdf",
+            "url": "https://download.microsoft.com/download/2/3/7/23737704-c3d3-48c1-91fe-f707c95c41d1/FixedAssets.pdf",
+            "size": "1533485",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use Fixed Asset Management to set up, enter, and maintain asset records. When necessary, you can add insurance and user-defined information and create additional records for each asset, including investment tax credit information and lease information.<br />\r\n\r\nYou also can use Fixed Asset Management to complete the following tasks:\r\n<br />\n\r\n<UL><LI>Calculate depreciation</LI>\r\n<LI>Create and use asset groups to make maintaining asset records easier</LI>\r\n<LI>Transfer an asset to a new general ledger account or property tax location</LI>\r\n<LI>Retire an asset, partially retire an asset, or retire a group of assets</LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "FixedAssets.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer. When prompted for a location for the file, save the file to the Documentation folder in your Microsoft Dynamics GP 2013 folder. By default, this is C:\\Program Files\\Microsoft Dynamics\\GP2013\\Documentation.</LI>\r\n<LI> If you\u2019re asked if you want to overwrite the existing file, click Yes. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34668",
+    "downloadPreload": true
+}

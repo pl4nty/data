@@ -1,0 +1,140 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project Server 2010 Evaluation",
+    "downloadDescription": "Project Server 2010 Evaluation ensures organizations select and deliver the right projects, while gaining greater visibility and control of resources leading to improved productivity and better business performance.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "projectserver.exe",
+            "url": "https://download.microsoft.com/download/a/e/3/ae39973c-286b-45ae-ae19-7cd1de85df45/projectserver.exe",
+            "size": "24070952",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Participate in the Microsoft Project Server 2010 evaluation and see how the innovative new capabilities can help organizations to:<br/>\r\n<br/>\u2022 Capture all types of work in a centralized demand management repository <br/>\r\n<br/>\u2022 Select the right project portfolios and maximize resource utilization <br/>\r\n<br/>\u2022 Build and conveniently update project schedules online <br/>\r\n<br/>\u2022 Create powerful dashboards and project reports <br/>\r\n<br/>\r\nBy adding <a href=\" http://www.microsoft.com/downloads/details.aspx?FamilyID=e0253bc8-42a7-4d45-8562-1c3fede6a8aa\"> Microsoft Project Professional 2010</a>, enjoy powerful, visually enhanced ways to successfully manage and deliver a wide range of projects. Easier and more intuitive, Project Professional 2010 provides flexible choices to simplify planning, collaboration and resource management.<br/>\r\n<br/>Please find more information on <a href=\" http://www.microsoft.com/project/\">www.microsoft.com/project/</a>. <br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "projectserver.exe"
+    ],
+    "detailsSection_file_size": [
+        "23.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Project Server 2010 runs on Windows Server 2008. We recommend that you apply all critical updates. You can use the following Windows Server 2008 editions:<br/>\r\n<ul> \u2022 Windows Server 2008, Standard Edition<br/>\r\n\u2022 Windows Server 2008, Enterprise Edition<br/>\r\n\u2022 Windows Server 2008, Datacenter Edition<br/></ul>\r\n<br/>Server Core installations of Windows Server 2008 are not supported.<br/>\r\n<br/><b>IMPORTANT: </b>SharePoint Server 2010 and Project Server 2010 are available in 64-bit editions only and require 64-bit editions of Windows Server 2008.<br/>\r\n<br/>Project Server 2010 requires the following Windows Server 2008 server roles on each application server in the farm:<br/>\r\n<ul>\u2022 Application Server role<br/>\r\n\u2022 Web Server role with Internet Information Services (IIS) 6 Management Compatibility enabled<br/></ul>\r\n<br/>In addition to these server roles, Project Server 2010 also requires that Windows PowerShell be enabled.<br/>\r\n<br/>Both the server roles and PowerShell will be configured automatically by the SharePoint Server 2010 prerequisite installation tool if they are not already enabled.<br/>\r\n<br/><b>Web Browser.</b> Internet Explorer 7.0 or 8.0 is required for a Project Server 2010 installation and for client computers that will be using Project Web Access.<br/>\r\n<br/>SharePoint Server 2010 .  Project Server 2010 runs as a SharePoint Server 2010 service application. As such, SharePoint Server 2010 is a required prerequisite for Project Server installation.<br/>\r\n<br/><b>SQL server.</b> The following versions of SQL Server are supported:<br/>\r\n<ul>\u2022 SQL Server 2005 SP3 CU4 <br/>\r\n\u2022 SQL Server 2008 SP1 CU3</ul>\r\n<br/>The following components of SQL Server are required:<br/>\r\n<ul> \u2022 Database Engine <br/>\r\n \u2022 Analysis Services <br/>\r\n \u2022 Reporting Services <br/>\r\n \u2022 Management tools<br/>\r\n \u2022 Connectivity components<br/></ul>\r\n<br/><b> Software requirements: </b> Project Server 2010 requires <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=230ecdfb-89ec-4d4a-8a85-89fd98329f7b\"> SharePoint Server 2010 </a> and the <a href=\"http://go.microsoft.com/fwlink/?LinkId=130655&clcid=0x409\">SQL Server 2008 AMO objects.</a><br/>\r\n<br/><b> Hardware requirements: </b>The requirements below apply to a single server with built-in database installations and server farm installations that include a single server or multiple servers in the farm.<br/>\r\n<br/><b> Processor: </b>64-bit, dual processor, 3 GHz<br/>\r\n<br/><b> RAM: </b>\r\n<ul> 4 GB for stand-alone or evaluation installation.<br/>\r\n<br/> 8 GB for single server and multiple server farm installation for production use.<br/></ul>\r\n<br/><b> Hard Disk:</b> 80 GB. <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "1. Download the file on this page.<br/>\r\n2. Double-click the executable to start the setup program.<br/>\r\n3. Follow the on-screen instructions for installation.<br/>\r\n4. Enter the Project Server 2010 trial product key when prompted: W7FTF-FPKGY-WHYHD-JCQ9B-K8H2F",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14775",
+    "downloadPreload": true
+}

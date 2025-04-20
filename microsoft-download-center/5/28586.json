@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Designing Devices for Enterprise Management using Windows Embedded Device Manager 2011 SP1",
+    "downloadDescription": "This document is intended for device manufacturers and engineers who design and create devices that are managed by administrators who use Windows Embedded Device Manager 2011 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Designing Devices for Enterprise Management Using Windows Embedded Device Manager 2011.docx",
+            "url": "https://download.microsoft.com/download/2/8/d/28d02e81-18ad-421c-ab2b-74deb00e7a95/Designing Devices for Enterprise Management Using Windows Embedded Device Manager 2011.docx",
+            "size": "81455",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is intended for device manufacturers and engineers who design and create devices that are managed by administrators who use Windows Embedded Device Manager 2011 Service Pack 1. It provides information about how to build an operating system image for devices that are optimized for management with Device Manager 2011. Instructions for creating a virtual Configuration Manager environment are included to assist you with testing such devices.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Designing Devices for Enterprise Management Using Windows Embedded Device Manager 2011.docx"
+    ],
+    "detailsSection_file_size": [
+        "79.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP, Windows Vista, or Windows 7 <br/><br/>\r\n<B>To view this document:</B> Microsoft Office Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right-hand corner of this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To view the document immediately, click <B>Open</B>.</LI><LI>To copy the document to your computer for viewing at a later time, click <B>Save</B>. </LI></UL></OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Device Manager 2011 Administration Guide",
+            "url": "http://technet.microsoft.com/en-us/library/ff522826.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28586",
+    "downloadPreload": true
+}

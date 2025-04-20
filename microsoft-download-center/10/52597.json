@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dual Word Embeddings Trained on Bing Queries",
+    "downloadDescription": "This data is being released for research purposes only. Last published: February 12, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "desm.zip",
+            "url": "https://download.microsoft.com/download/a/7/c/a7c7f0a6-b925-4c07-a14b-04acf8a8e030/desm.zip",
+            "size": "3757822502",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This data is being released for research purposes only. The DESM Word Embeddings dataset may include terms that some may consider offensive, indecent or otherwise objectionable. Microsoft has not reviewed or modified the content of the dataset. Microsoft is providing this dataset as a convenience and is not responsible or liable for any inappropriate content resulting from your use of the dataset. Use of the dataset is at your own risk and discretion. Please contact the paper authors with questions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "desm.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.5 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52597",
+    "downloadPreload": true
+}

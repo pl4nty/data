@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "PersonalVibe",
+    "downloadDescription": "Personal Vibe is a prototype Windows Activity Logger that tracks user actions like moving a window or starting an application. Last published: March 9, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PersonalVibe2.zip",
+            "url": "https://download.microsoft.com/download/e/e/7/ee736d81-bba8-4a8f-b0b7-aa35f2ef565c/PersonalVibe2.zip",
+            "size": "2699823",
+            "version": "2.0.0.0",
+            "datePublished": "5/15/2024 4:18:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Personal Vibe is a prototype Windows Activity Logger that tracks user actions like moving a window or starting an application. The data can be used for a variety of projects from monitoring the actions of study participants to building Vista gadgets that tell you how long you\u2019ve been at work today. The data is stored in a local database that is not remotely accessible. No data is sent from the user\u2019s machine.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0.0",
+    "detailsSection_file_name": [
+        "PersonalVibe2.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52642",
+    "downloadPreload": true
+}

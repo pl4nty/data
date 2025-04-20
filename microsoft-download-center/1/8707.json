@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Integration Server 2003 Technical Reference",
+    "downloadDescription": "The Technical Reference provides essential technical information about MIIS 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIIS_Ports_Rights_and_Permissions.doc",
+            "url": "https://download.microsoft.com/download/3/0/0/30082d6f-69b7-446f-9b29-dbd460b94f8a/MIIS_Ports_Rights_and_Permissions.doc",
+            "size": "211968",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIIS_Run_Profiles.doc",
+            "url": "https://download.microsoft.com/download/3/0/0/30082d6f-69b7-446f-9b29-dbd460b94f8a/MIIS_Run_Profiles.doc",
+            "size": "107520",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIIS_Synchronization_Rules.doc",
+            "url": "https://download.microsoft.com/download/3/0/0/30082d6f-69b7-446f-9b29-dbd460b94f8a/MIIS_Synchronization_Rules.doc",
+            "size": "227840",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MIIS_State_Based_Processing.doc",
+            "url": "https://download.microsoft.com/download/3/0/0/30082d6f-69b7-446f-9b29-dbd460b94f8a/MIIS_State_Based_Processing.doc",
+            "size": "199168",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MIIS_Overview.doc",
+            "url": "https://download.microsoft.com/download/3/0/0/30082d6f-69b7-446f-9b29-dbd460b94f8a/MIIS_Overview.doc",
+            "size": "239616",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Identity Integration Server 2003 Technical Reference is an in-depth documentation collection about identity information management concepts. It is not intended as an operations or implementation guide. Instead, it provides information managers, system architects, and IT generalists with the necessary background they will need to analyze and develop their own identity management solutions. The collection provides information about:<br />\n\u2022\tState-based and event-based architecture <br />\n\u2022\tDirectories and identity management solutions <br />\n\u2022\tCore components of MIIS 2003 <br />\n\u2022\tArchitecture and internal structure of MIIS 2003 <br />\n\u2022\tObjects and data flow in MIIS 2003 <br />\n\u2022\tUpdated system port information for MIIS 2003 Service Pack 1 (SP1) <br />\n\u2022\tUpdated information for management agent minimum rights and permissions",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MIIS_Ports_Rights_and_Permissions.doc",
+        "MIIS_Run_Profiles.doc",
+        "MIIS_Synchronization_Rules.doc",
+        "MIIS_State_Based_Processing.doc",
+        "MIIS_Overview.doc"
+    ],
+    "detailsSection_file_size": [
+        "207.0 KB",
+        "105.0 KB",
+        "222.5 KB",
+        "194.5 KB",
+        "234.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Word or Word Viewer</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Integration Server 2003 Management Pack Guide",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&familyid=2cc47f53-761b-439e-a311-cabebed377c4"
+        },
+        {
+            "title": "home Page for Microsoft Identity Integration Server 2003",
+            "url": "http://www.microsoft.com/windowsserver2003/technologies/directory/miis/default.mspx"
+        },
+        {
+            "title": "product and Technology Catalog",
+            "url": "http://www.microsoft.com/catalog/display.asp?subid=22&site=11711"
+        },
+        {
+            "title": "community Resources",
+            "url": "http://www.microsoft.com/windowsserver2003/community/centers/directoryservices/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8707",
+    "downloadPreload": true
+}

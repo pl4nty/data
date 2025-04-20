@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 white paper: Worker resource scheduling",
+    "downloadDescription": "A number of enhancements to the worker resource management tools in Microsoft Dynamics AX 2012 R3 make it possible to schedule workers for projects and quotations more efficiently.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Worker resource scheduling in Dynamics AX 2012 R3.pdf",
+            "url": "https://download.microsoft.com/download/9/a/2/9a29de9a-b8e9-4eb7-a47b-f9463202a0df/Worker resource scheduling in Dynamics AX 2012 R3.pdf",
+            "size": "2077181",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:24:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes some the new major scenarios that are made possible by enhancements being introduced in Microsoft Dynamics AX 2012 R3. It is meant to provide project managers with an overview of the new options and updated workflows they can use to manage their projects.<br />\r\n<br />\r\nThe following is a summary of the key resource management capabilities that have been introduced or improved in AX 2012 R3 to provide more effective resource scheduling and assignment: <br />\r\n\r\n<UL><LI>Use visual cues, such as color-coded representations of worker availability, to speed up the process of scheduling workers in projects. </LI>\r\n<LI>Form a project team by identifying project roles and competencies required for the team. </LI>\r\n<LI>Search for available workers based on role requirements. </LI>\r\n<LI>Align resource assignments with project schedule changes. </LI>\r\n<LI>Identify schedulable resources, and schedule them on projects. </LI>\r\n<LI>Rationalize team and work breakdown structure (WBS) resource assignments. </LI>\r\n<LI>Assign a percentage of a worker\u2019s capacity to a project. </LI>\r\n<LI>Assign a specific number of hours of a worker\u2019s capacity to a project. </LI>\r\n<LI>Make group resource assignments. </LI>\r\n<LI>Convert all soft-booked hours for a project to hard-booked hours in one step. </LI>\r\n<LI>Utilize enhanced resource assignment inquiries and an Export to Excel tool. </LI>\r\n<LI>Staff projects in the desktop version of Microsoft Project by using workers from Microsoft Dynamics AX. </LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Worker resource scheduling in Dynamics AX 2012 R3.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43112",
+    "downloadPreload": true
+}

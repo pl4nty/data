@@ -1,0 +1,140 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Phone Edition for HP 4110 and HP 4120",
+    "downloadDescription": "Microsoft\u00ae Lync\u2122 Phone Edition for  HP 4110 and HP 4120 is the first generation of software designed specifically for the phones from HP to interoperate with Microsoft\u00ae Lync\u2122 Server 2010. and Microsoft\u00ae Lync\u2122 Server 2013. Lync Phone Edition provides traditional and advanced telephony features, integrated security, manageability and much more.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ucupdates.exe",
+            "url": "https://download.microsoft.com/download/8/8/c/88cdf8c2-30d2-4189-8124-2e57d0078ee5/ucupdates.exe",
+            "size": "28175464",
+            "version": "7577.4531",
+            "datePublished": "7/15/2024 3:28:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This download was originally released on October 19, 2011.  For a complete list of fixes and changes in this latest version, please see KB article <a href=\"http://support.microsoft.com/kb/3108720 \">3108720 </a>.<br /><br />\nMicrosoft\u00ae Lync\u2122 Phone Edition enables users to make calls and receive calls from PBX, PSTN, VoIP or soft- phones inside or outside company firewalls. It offers all the functionality of traditional phones plus more. Read on for a brief description of some of the main features.\n<br /><br />\nNote that some of the features may not be available based on the hardware model you use (such as HP 4110 and HP 4120), the type of account (for example, Common Area account), or the type of authentication (such as PIN-based authentication). Full details are available at this <A HREF=\"http://technet.microsoft.com/en-us/office/ocs/bb970310.aspx\">link</A>.\n<ul>\n<li>Easy sign-in</li>\n<ul>\n<li>Sign in to the phone from the computer when you sign into the Lync client. </li>\n</ul>\n<li>Calendar integration</li>\n<ul>\n<li>View today\u2019s calendar and if they were scheduled using Microsoft\u00ae Lync\u2122 2010 or Microsoft\u00ae Lync\u2122 2013, join those meetings with a single click.</li>\n</ul>\n<li>Contacts</li>\n<ul>\n<li>Search for and call people in the company\u2019s global address list (GAL) without needing to look up phone numbers.</li>\n<li>View the presence and even published personal photos for contacts.</li>\n<li>Easily place calls to contacts, transfer calls, and conference in callers. Transfer calls to your mobile phone with a single click.</li>\n</ul>\n<li>Voicemail</li>\n<ul>\n<li>View and play individual voice mails with a single touch.</li>\n</ul>\n<li>Integration with Lync on the computer</li>\n<ul>\n<li>Click a contact or phone number in your Lync contact list to place a call using the Lync Phone Edition phone. Call controls are synchronized on both the phone and Lync on the computer. If your computer is configured with a webcam, add video with a single click.</li>\n</ul>\n<li>Support for advanced Lync voice features</li>\n<ul>\n<li>Branch Office Resiliency support</li>\n<li>Call Park Service support</li>\n<li>Location for Emergency Services call</li>\n<li>Bandwidth Management support</li>\n<li>Malicious Call Reporting support</li>\n<li>Private-line Incoming Call support</li>\n</ul>\n<li>Superior audio quality</li>\n<ul>\n<li>Latency, audio quality and call setup time have all been improved. When audio quality deteriorates, you will receive alerts explaining the reason.</li>\n</ul>\n<li>PIN-based authentication</li>\n<ul>\n<li>When users do not integrate the phone with the computer, PIN-based authentication allows most tasks to be performed. This mode provides basic features for the signed-in user necessary to perform voice communications and most of the advanced functions. Some features will be limited however such as call logs will be generated for local activity only, voicemail access will be through voice menu only, there will be no calendar information and there will be no Microsoft Outlook Contact integration.</li>\n</ul>\n<li>Common Area phone support</li>\n<ul>\n<li>For common areas such conference rooms, kitchens or lobbies, a phone with traditional voice functionality is all that is needed. Signing in on the phones with Common Area accounts provides that functionality along with other features such as requiring administrator password for viewing or changing settings. The Common Area accounts will use PIN-based authentication.</li>\n</ul>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3194832",
+        "name": "KB3194832"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7577.4531",
+    "detailsSection_file_name": [
+        "ucupdates.exe"
+    ],
+    "detailsSection_file_size": [
+        "26.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<br />\nThis download can be extracted on computers running the latest versions of Window Server 2003, Windows Server 2008, Windows XP (x86/64), Windows Vista (x86/64), Windows 7 (x86/x64) and Windows 8 (x86/x64).\n<br /><br />\nRequirements to run the extracted software:\n<ol>\n<li>Supported phone hardware - <b> HP 4110 and HP 4120</b></li>\n<li>Microsoft Lync Server 2010 or Microsoft Lync Server 2013</li>\n</ol>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "To install this download:\n<ol>\n<li>Download this software and run it on your computer.</li>\n<li>Follow the steps to extract the package.</li>\n<li>To deploy the package to the supported phones in your organization, follow instructions in <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=204933\">Managing and Troubleshooting Microsoft Lync Server 2010 Devices</A>, <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=204935\">Planning for Microsoft Lync Server 2010 Devices</A> and <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=204936\">Deploying Microsoft Lync Server 2010 Devices</A>.</li>\n</ol>\n<br /><br />\nTo remove this download: \n<ol>\n<li>To remove the download file, delete <b>UcUpdates.exe</b>.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28158",
+    "downloadPreload": true
+}

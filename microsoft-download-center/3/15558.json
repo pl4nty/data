@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BTS WSE Adapter 3.0 Management Pack for MOM 2005",
+    "downloadDescription": "Microsoft BTS WSE Adapter 3.0 Management Pack monitors BTS (BizTalk Server) WSE Adapter 3.0 runtime events.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft BTS Adapter MOM 2005 MP.msi",
+            "url": "https://download.microsoft.com/download/0/2/6/026474c0-1a22-440b-a37d-f30ab5849172/Microsoft BTS Adapter MOM 2005 MP.msi",
+            "size": "1144832",
+            "version": "03.0.0000.0000",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server (BTS) Well Enabled Services (WSE) Adapter 3.0 Management Pack for MOM monitors the BTS WSE Adapter 3.0 services application event log. This management pack is build for monitoring BTS WSE Adapter 3.0 service. The events collected indicate critical issues, informational events and error events generated during various BTS WSE Adapter 3.0 configurations and process flows.\n<br/>\n<br/>\n<b>Feature Summary:</b>\n<br/>\n<br/>\nBTS WSE Adapter 3.0 services generated Error and Informational events.\n<br/>\nAlerts indicating configuration issues with adapter\n<br/>\n<br/>\n<b>Release and Update History:</b>\n<br/>\n<br/>\n<b>7/14/2006</b>    Original product release date (Version 03.0.0000.0000).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "03.0.0000.0000",
+    "detailsSection_file_name": [
+        "Microsoft BTS Adapter MOM 2005 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows Server\u2122 2003 Enterprise Edition Service Pack 1 (SP1)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003, Enterprise Edition (32-bit x86)"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15558",
+    "downloadPreload": true
+}

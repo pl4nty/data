@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Forefront Security for Exchange Server with SP2 Documentation",
+    "downloadDescription": "Microsoft Forefront Security for Exchange Server with SP2 Documentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ex_Best_Practices.doc",
+            "url": "https://download.microsoft.com/download/9/e/b/9ebbdff0-28b8-4b94-86d5-8ce6b560228d/Ex_Best_Practices.doc",
+            "size": "297984",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FFSMP10SP1UserGuide.doc",
+            "url": "https://download.microsoft.com/download/9/e/b/9ebbdff0-28b8-4b94-86d5-8ce6b560228d/FFSMP10SP1UserGuide.doc",
+            "size": "865792",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Ex_Users_Guide.doc",
+            "url": "https://download.microsoft.com/download/9/e/b/9ebbdff0-28b8-4b94-86d5-8ce6b560228d/Ex_Users_Guide.doc",
+            "size": "1142272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCOM.doc",
+            "url": "https://download.microsoft.com/download/9/e/b/9ebbdff0-28b8-4b94-86d5-8ce6b560228d/SCOM.doc",
+            "size": "791040",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ex_Cluster_Install.doc",
+            "url": "https://download.microsoft.com/download/9/e/b/9ebbdff0-28b8-4b94-86d5-8ce6b560228d/Ex_Cluster_Install.doc",
+            "size": "226304",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Ex_Quick_Start.doc",
+            "url": "https://download.microsoft.com/download/9/e/b/9ebbdff0-28b8-4b94-86d5-8ce6b560228d/Ex_Quick_Start.doc",
+            "size": "318464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Forefront Security for Exchange Server SP1 integrates multiple scan engines from industry-leading security firms into a comprehensive, layered solution, helping protect your Microsoft Exchange Server messaging environments from viruses, worms, spam, and inappropriate content. <br /><br />This new release provides support for Exchange Server 2007 SP1 and Windows Server 2008, as well as content filtering and manageability enhancements. These enhancements include:<br />\n<UL>\n<LI>Seamless support for organizations running IPv6.</LI><br />\n<LI>Improved content filtering with installable keyword lists that can be used to eliminate email containing profanity in eleven supported languages.</LI><br />\n<LI>Improved integration with Microsoft System Center Operations Manager through new management packs that allow administrators to proactively monitor the state of their Exchange 2007 protection.</LI><br />\n<LI>Increased flexibility for scanning or blocking high compression zip files and RAR archives.</LI>\n</UL>\n<br/><b>Note: </b>Forefront Security for Exchange users who are running Exchange 2007 RTM and wish to upgrade to Exchange 2007 SP1 must first upgrade to Forefront Security for Exchange SP1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Ex_Best_Practices.doc",
+        "FFSMP10SP1UserGuide.doc",
+        "Ex_Users_Guide.doc",
+        "SCOM.doc",
+        "Ex_Cluster_Install.doc",
+        "Ex_Quick_Start.doc"
+    ],
+    "detailsSection_file_size": [
+        "291.0 KB",
+        "845.5 KB",
+        "1.1 MB",
+        "772.5 KB",
+        "221.0 KB",
+        "311.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows Server\u00ae 2003, Windows Small Business Server 2003, or Microsoft Windows Server 2008\r\nMicrosoft Exchange Server 2007 (Standard or Enterprise)\r\n.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Professional Edition ",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click on the \"Download\" button to begin your download. <br />\nSelect the file for download, and specify a location to Save the file.<br />",
+    "additionalInformationSection": "To read and post feedback on Microsoft Forefront Security for Exchange Server please visit the \n<A href=\"http://forums.microsoft.com/forefront/default.aspx?siteid=41\">Forefront Forums</A>. A Microsoft Passport account is required. <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5945",
+    "downloadPreload": true
+}

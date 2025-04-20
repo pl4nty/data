@@ -1,0 +1,207 @@
+{
+    "error": "",
+    "downloadTitle": "March 2010 Security Release ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on March 9th, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-201003.iso",
+            "url": "https://download.microsoft.com/download/b/d/c/bdc684cb-4f9b-42b6-88ce-ecbf733d5e9b/Windows-KB913086-201003.iso",
+            "size": "67547136",
+            "version": "KB913086",
+            "datePublished": "7/15/2024 3:09:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on March 9th, 2010. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />\n\nThis DVD5 ISO image file contains the security updates for Windows released on \r\r\nWindows Update on March 9th, 2010. The image does not contain security updates for \r\r\nother Microsoft products. This DVD5 ISO image is intended for administrators that \r\r\nneed to download multiple individual language versions of each security update and \r\r\nthat do not use an automated solution such as Windows Server Update Services (WSUS). \r\r\nYou can use this ISO image to download multiple updates in all languages at the same \r\r\ntime.<br />\r\n<br />\r\n<b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security \r\r\nbulletins at <a \r\r\nhref=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/se\r\r\ncurity</a> prior to deployment of these updates to ensure that the files have not \r\r\nbeen updated at a later date.<br />\r\n<br />\n\nThis DVD5 image contains the following updates: <br />\r\n<b><a href=\"http://support.microsoft.com/kb/975561\">KB975561</a>\r\n</b> / <b>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=183077\">(MS10-016)</a>\r\n</b>\r\n<ul>\r\n<li>Windows XP - 24 languages</li>\r\n<li>Windows XP x64 Edition - 2 languages</li>\r\n<li>Windows Vista - 36 languages</li>\r\n<li>Windows Vista for x64-based Systems - 36 languages</li>\r\n<li>Windows 7 - 36 languages</li>\r\n<li>Windows 7 for x64-based Systems - 36 languages</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB975561",
+        "name": "KB975561"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS10-016",
+        "name": "MS10-016"
+    },
+    "detailsSection_file_version": "KB913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-201003.iso"
+    ],
+    "detailsSection_file_size": [
+        "64.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n\t\t\t<br />\n\t\t",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Service Pack 2",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "\n\t\t\t<ol>\n\t\t\t\t<li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li>\n\t\t\t\t<ul>\n\t\t\t\t\t<li>Click <b>Run</b> to start the installation immediately.</li>\n\t\t\t\t\t<li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li>\n\t\t\t\t</ul>\n\t\t\t</ol>\n\t\t",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "864",
+    "downloadPreload": true
+}

@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Step-by-Step Guide to Migrating from Windows SharePoint Services 3.0 to Microsoft SharePoint Foundation 2010 on a server running Windows Small Business Server 2008",
+    "downloadDescription": "Learn how to migrate your internal websites (companyweb) to SharePoint Foundation 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SBS_MigrateWSS30_to_SPF2010.doc",
+            "url": "https://download.microsoft.com/download/b/0/e/b0eef900-a2e6-4b6b-8902-6c01b8f9db35/SBS_MigrateWSS30_to_SPF2010.doc",
+            "size": "223232",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Follow the steps in this article to migrate your SharePoint websites from Windows SharePoint Services 3.0 to Microsoft SharePoint Foundation 2010 on a server running Windows\u00ae Small Business Server 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SBS_MigrateWSS30_to_SPF2010.doc"
+    ],
+    "detailsSection_file_size": [
+        "218.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Small Business Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard "
+    ],
+    "installInstructionSection": "1. Click the Download link to start the download.<br/>\r\n2. Do one of the following:<br/>\r\n<br/>\r\nTo view the document immediately, click Open or Run this program from its current location.<br/>\r\n<br/>\r\nTo copy the document to your computer for viewing at a later time, click Save or Save this program to disk.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1921",
+    "downloadPreload": true
+}

@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Communications Phones and Peripherals Datasheets",
+    "downloadDescription": "These datasheets list the phones and peripheral devices that are qualified to display the \"Optimized for Microsoft Lync\" logo.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync IP Phones Comparison Table.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync IP Phones Comparison Table.pdf",
+            "size": "702347",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync PCs Comparison Table.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync PCs Comparison Table.pdf",
+            "size": "571551",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync Video Endpoints Comparison Table.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync Video Endpoints Comparison Table.pdf",
+            "size": "184180",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync IP Phones Comparison Table_Polycom KIRK DECT Wireless.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync IP Phones Comparison Table_Polycom KIRK DECT Wireless.pdf",
+            "size": "308250",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync IP Phones Comparison Table_Polycom SpectraLink Wireless.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync IP Phones Comparison Table_Polycom SpectraLink Wireless.pdf",
+            "size": "263171",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync Comparison Meeting Room Devices Table.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync Comparison Meeting Room Devices Table.pdf",
+            "size": "295138",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Lync USB Devices Comparison Table.pdf",
+            "url": "https://download.microsoft.com/download/f/6/d/f6d987af-967e-4dd5-b768-ac5d194b25af/Lync USB Devices Comparison Table.pdf",
+            "size": "1614763",
+            "version": "December2012",
+            "datePublished": "7/15/2024 3:10:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The powerful communication devices that are listed in these datasheets are optimized to work with Microsoft Lync Server 2010 and  Microsoft Lync 2010, delivering communications solutions that are easy to deploy, use and manage.\r\n<br />\r\n<br />\r\nEach datasheet provides information about each device, including:\r\n<ul>\r\n<li>A thumbnail photo of the device</li>\r\n<li>Hardware type</li>\r\n<li>Name of the partner that produces the device</li>\r\n<li>Product name</li>\r\n<li>A brief description of the device</li>\r\n<li>URL for the partner's Unified Communications landing page</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "December2012",
+    "detailsSection_file_name": [
+        "Lync IP Phones Comparison Table.pdf",
+        "Lync PCs Comparison Table.pdf",
+        "Lync Video Endpoints Comparison Table.pdf",
+        "Lync IP Phones Comparison Table_Polycom KIRK DECT Wireless.pdf",
+        "Lync IP Phones Comparison Table_Polycom SpectraLink Wireless.pdf",
+        "Lync Comparison Meeting Room Devices Table.pdf",
+        "Lync USB Devices Comparison Table.pdf"
+    ],
+    "detailsSection_file_size": [
+        "685.9 KB",
+        "558.2 KB",
+        "179.9 KB",
+        "301.0 KB",
+        "257.0 KB",
+        "288.2 KB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "View the datasheet using Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<ol>\r\n<li>Download the file you want by clicking the <b>Download</b> button next to the file name and saving the file to your hard disk.</li>\r\n<li>Double-click the file you downloaded on your hard disk to view the file.</li>\r\n</ol>\r\n<br />\r\n<b>To remove this download:</b> \r\nDelete the file from your hard disk.\r\n\r\n",
+    "additionalInformationSection": "This document is for informational purposes only. MICROSOFT MAKES NO WARRANTIES, EXPRESS, IMPLIED OR STATUTORY, AS TO THE INFORMATION IN THIS DOCUMENT.\r\n<br />\r\n<br />\r\n&copy; 2011 Microsoft Corporation. All rights reserved.",
+    "relatedResourcesSection": [
+        {
+            "title": "phones and Devices Qualified for Microsoft Lync",
+            "url": "http://technet.microsoft.com/en-us/lync/gg278164.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16857",
+    "downloadPreload": true
+}

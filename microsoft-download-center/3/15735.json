@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Federation",
+    "downloadDescription": "Web services and Identity Federation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CodeSigned Federation.zip",
+            "url": "https://download.microsoft.com/download/6/4/c/64cba941-2440-4b52-bcdb-af8e6d5c5531/CodeSigned Federation.zip",
+            "size": "717567",
+            "version": "1",
+            "datePublished": "6/13/2024 11:56:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a sample application to show identity federation using Web service-based security and federation technology.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "CodeSigned Federation.zip"
+    ],
+    "detailsSection_file_size": [
+        "700.7 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "WSE 3.0, .NET Framework 2.0; Windows XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button on this page to start the download.</li><br />\n<li>Do one of the following:<br />\n<ul><li>To start the installation immediately, click <b>Open</b> or<b> Run this program from its current location</b>.</li><br />\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li></ul></li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15735",
+    "downloadPreload": true
+}

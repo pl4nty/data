@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "PostgreSQL Migration and Assessment Tools",
+    "downloadDescription": "This IP can be used for assessment for migrating Oracle to Azure Database for PostgreSQL and it can be used even for migration after the assessment process. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PostgreSQL Migration and Assessment Tools .zip",
+            "url": "https://download.microsoft.com/download/5/a/0/5a0e5e0e-42fe-4a81-a27f-99140d1fe83c/PostgreSQL Migration and Assessment Tools .zip",
+            "size": "64153",
+            "version": "2.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This IP can be used for assessment for migrating Oracle to Azure Database for PostgreSQL and it can be used even for migration after the assessment process. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "PostgreSQL Migration and Assessment Tools .zip"
+    ],
+    "detailsSection_file_size": [
+        "62.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a zipped folder that contains PostgreSQL Migration and Assessment Tools and associated documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103116",
+    "downloadPreload": true
+}

@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2005 Service Pack 1 ATL for Smart Devices Security Update",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Visual Studio 2005 Service Pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs80sp1-kb973673-x86-intl.exe",
+            "url": "https://download.microsoft.com/download/f/2/9/f2950c8f-234f-4881-a66c-25052ea4c05e/VS80sp1-KB973673-X86-INTL.exe",
+            "size": "14017432",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:14:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to compromise your Windows-based system with Visual Studio 2005 Service Pack 1 and gain complete control over it. You can help protect your computer by installing this update from Microsoft.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB973673",
+        "name": "KB973673"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS09-035",
+        "name": "MS09-035"
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vs80sp1-kb973673-x86-intl.exe"
+    ],
+    "detailsSection_file_size": [
+        "13.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkID=158263\">KB973673</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 973673",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=158311"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9536",
+    "downloadPreload": true
+}

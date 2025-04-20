@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Archiving Deployment Guide",
+    "downloadDescription": "The purpose of the Microsoft Lync Server 2010 Archiving Deployment Guide is to guide you through the process of deploying Lync Server 2010 Archiving Server and the related components that are required to support archiving of instant messaging and web conferencing (meeting) content.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LS_Deploy_Archiving.doc",
+            "url": "https://download.microsoft.com/download/a/4/0/a40808a9-b7d9-49f4-acd6-229f98315f84/LS_Deploy_Archiving.doc",
+            "size": "216576",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "The purpose of the Microsoft Lync Server 2010 Archiving Deployment Guide is to guide you through the process of deploying Lync Server 2010 Archiving Server and the related components that are required to support archiving of instant messaging and web conferencing (meeting) content, such as might be required to meet regulatory compliance requirements. This document provides step-by-step procedures and other information that you need to set up Lync Server archiving support, including the procedures and information you need to meet the hardware and software prerequisites for deployment of the archiving components, design the archiving topology, install the required Lync Server and other software for all archiving components, and complete the initial configuration required to support archiving.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2012",
+    "detailsSection_file_name": [
+        "LS_Deploy_Archiving.doc"
+    ],
+    "detailsSection_file_size": [
+        "211.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4711",
+    "downloadPreload": true
+}

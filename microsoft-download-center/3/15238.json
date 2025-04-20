@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Cached Exchange Mode in a Remote Desktop Session Host environment: planning considerations",
+    "downloadDescription": "How to accurately evaluate Outlook Cached Exchange Mode when you prepare to deploy Microsoft Office 2010 in your Remote Desktop Session Host (RDSH) environment. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Cached Exchange Mode in a Remote Desktop Session Host environment - planning considerations.docx",
+            "url": "https://download.microsoft.com/download/8/f/8/8f8e7f98-b641-4d5f-836e-425b60e9f607/Cached Exchange Mode in a Remote Desktop Session Host environment - planning considerations.docx",
+            "size": "89179",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is provided as an addendum to the document <b>Remote Desktop Session Host Capacity Planning in Windows Server 2008 R2</b> (http://go.microsoft.com/fwlink/?LinkId=196861) and is provided so that you can accurately evaluate Outlook Cached Exchange Mode when you prepare to deploy Microsoft Office 2010 in your Remote Desktop Session Host (RDSH) environment. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Cached Exchange Mode in a Remote Desktop Session Host environment - planning considerations.docx"
+    ],
+    "detailsSection_file_size": [
+        "87.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Office 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15238",
+    "downloadPreload": true
+}

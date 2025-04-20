@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Data Type Conversion Chart",
+    "downloadDescription": "Illustrates all explicit and implicit data type conversions that are allowed for SQL Server system-supplied data types.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server Data Type Conversion Chart.png",
+            "url": "https://download.microsoft.com/download/7/c/a/7ca63122-946a-46b4-bf4f-6978383a8b7a/SQL Server Data Type Conversion Chart.png",
+            "size": "44789",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Illustrates all explicit and implicit data type conversions that are allowed for SQL Server system-supplied data types. \r\nImplicit conversions are those conversions that occur without specifying either the CAST or CONVERT function. Explicit conversions are those conversions that require the CAST or CONVERT function to be specified. The chart is available in both color and grayscale. The chart is intended to be printed and measures 11 x 17, but may also be printed in 8.5 x 11 format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server Data Type Conversion Chart.png"
+    ],
+    "detailsSection_file_size": [
+        "43.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> Other Requirements:<ul>\r\n<li>Adobe Acrobat Reader</li>\r\n</ul></li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Print with these measurements: 11 x 17 or 8.5 x 11",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35834",
+    "downloadPreload": true
+}

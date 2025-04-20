@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Program for TPC-H Data Generation with Skew",
+    "downloadDescription": "The schema and queries of the TPC-H (formerly TPC-D) benchmark are widely used by people in the database community. Last published: April 26, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TPCDSkew.zip",
+            "url": "https://download.microsoft.com/download/6/a/a/6aa77214-3402-457e-938a-e7a1c737639a/TPCDSkew.zip",
+            "size": "251879",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The schema and queries of the TPC-H (formerly TPC-D) benchmark are widely used by people in the database community. One of the requirements of the benchmark is that data for columns in the database are generated from a uniform distribution. However, this requirement makes it hard for users to conclude about the robustness/effectiveness of their system since real world data distributions are often non-uniform. We have therefore created a new data generation program for TPC-H that is capable of generating a database where the columns have non-uniform (skewed) data distributions. In particular, the program can generate data from a Zipfian distribution, where the Zipf value (z), which controls the degree of skew in the data, is a parameter that can be specified to the program. In addition, the program allows the generation of a database with \u201cmixed\u201d data distribution where the skew of a column in the database is randomly chosen from the Zipfian values {0,1,2,3,4}. Note that the total number of rows in the tables and the total database size are not affected by our changes.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "TPCDSkew.zip"
+    ],
+    "detailsSection_file_size": [
+        "246.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52430",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Disk Partition Alignment Best Practices for SQL Server",
+    "downloadDescription": "Disk Partition Alignment Best Practices for SQL Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DiskPartitionAlignment.docx",
+            "url": "https://download.microsoft.com/download/c/e/7/ce7da506-cedf-43db-8179-d73da13668c5/DiskPartitionAlignment.docx",
+            "size": "186682",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Disk partition alignment is a powerful tool for improving SQL Server performance. Configuring optimal disk performance is often viewed as much art as science. A best practice that is essential yet often overlooked is disk partition alignment. Windows Server 2008 attempts to align new partitions out-of-the-box, yet disk partition alignment remains a relevant technology for partitions created on prior versions of Windows.\r\nThis paper documents performance for aligned and nonaligned storage and why nonaligned partitions can negatively impact I/O performance; it explains disk partition alignment for storage configured on Windows Server 2003, including analysis, diagnosis, and remediation; and it describes how Windows Server 2008 attempts to remedy challenges related to partition alignment for new partitions yet does not correct the configuration of preexisting partitions.\r\nThe following topics are also included: background information, implementation, vendor considerations, two essential correlations, valid starting partition offsets, and the simple protocol to align partitions, define file allocation unit size, and assign drive letters. It includes results from tests that show how partition alignment can affect performance for SQL Server 2008.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DiskPartitionAlignment.docx"
+    ],
+    "detailsSection_file_size": [
+        "182.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003; Windows Server 2008; Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Click Save to save the document to your hard disk\r\nClick Open to open the document immediately",
+    "relatedResourcesSection": [
+        {
+            "title": "disk Partition Alignment Best Practices for SQL Server (Online)",
+            "url": "http://msdn.microsoft.com/en-us/library/dd758814.aspx"
+        },
+        {
+            "title": "pre-deployment I/O Best Practices",
+            "url": "http://technet.microsoft.com/en-us/library/cc966412.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21949",
+    "downloadPreload": true
+}

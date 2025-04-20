@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Backup and Disaster Recovery GTM materials",
+    "downloadDescription": "This zipped folder contains GTM materials to for IaaS backup and disaster recovery solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Backup and DR GTM Content.zip",
+            "url": "https://download.microsoft.com/download/4/9/b/49b4cecb-a3af-476d-b27a-cf7d396329b0/Backup and DR GTM Content.zip",
+            "size": "36053997",
+            "version": "July 2016",
+            "datePublished": "5/15/2024 4:20:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains GTM materials to for IaaS backup and disaster recovery solutions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "Backup and DR GTM Content.zip"
+    ],
+    "detailsSection_file_size": [
+        "34.4 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53130",
+    "downloadPreload": true
+}

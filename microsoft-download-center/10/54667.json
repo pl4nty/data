@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Compact 7 Monthly Update December 2016",
+    "downloadDescription": "Download this set of updates for Windows Embedded Compact 7 released during the period of OCT 1 - DEC 31, 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded Compact 7_Update62.htm",
+            "url": "https://download.microsoft.com/download/f/1/8/f18d8e9f-9a73-4e83-8ad7-61f35482bf32/Windows Embedded Compact 7_Update62.htm",
+            "size": "259518",
+            "version": "7.2.2872.0",
+            "datePublished": "6/15/2024 4:31:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsEmbeddedCompact7.exe",
+            "url": "https://download.microsoft.com/download/f/1/8/f18d8e9f-9a73-4e83-8ad7-61f35482bf32/WindowsEmbeddedCompact7.exe",
+            "size": "3702016",
+            "version": "7.2.2872.0",
+            "datePublished": "6/15/2024 4:31:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Due to Security requirements, WEC7 installers prior to Update 61 (SEP 2016) will no longer be able to update to the latest version. i.e. you must use an installer from Update 61 or later to obtain the latest version.\r\n<br/><br/>\r\nThis is a set of updates for Windows Embedded Compact 7 released during the period of OCT 1 - DEC 31 2016. These updates are fixes for problems you may run into during the development and maintenance of your custom platform. To qualify for consideration for an update, a problem needs to cause an excessive amount of work and not have a reasonable workaround.\r\n<br /><br />\r\nFor complete details regarding the updates in this release, please download the HTM file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3213036; KB3197451; KB3205125; KB3215982",
+        "name": "KB3213036; KB3197451; KB3205125; KB3215982"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-149; MS16-144; MS16-142; MS16-118; MS16-095",
+        "name": "MS16-149; MS16-144; MS16-142; MS16-118; MS16-095"
+    },
+    "detailsSection_file_version": "7.2.2872.0",
+    "detailsSection_file_name": [
+        "Windows Embedded Compact 7_Update62.htm",
+        "WindowsEmbeddedCompact7.exe"
+    ],
+    "detailsSection_file_size": [
+        "253.4 KB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Vista, Windows XP Service Pack 3\r\n<br />\r\n<br />\r\nYour computer must have the following software installed: \r\n<ul>\r\n<li>Windows Embedded Compact 7 or <a href=\"http://go.microsoft.com/fwlink/?LinkId=298632\">Windows Embedded Compact 7 Evaluation Edition</a></li>\r\n<li>Visual Studio\u00ae 2008 Professional or Team Edition (including the Smart Device Programmability for Visual C++)</li>\r\n<li>Visual Studio 2008 Service Pack 1</li>\r\n<li>Microsoft .NET Framework 3.5</li>\r\n</ul>\r\nTo develop with Windows\u00ae Embedded Compact 7, your computer should meet the following hardware requirements: \r\n<ul>\r\n<li>Approximately 100 GB of free hard disk space</li>\r\n<li>2.4 GHz or higher CPU, 1024 MB or more RAM, 1280x1024 display, 7200 RPM or higher hard disk</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "Click on the Download button and follow the instructions.\r\n<br/><br/>\r\n<b>UPDATING WINDOWS EMBEDDED COMPACT 7</b>\r\n<br/><br/>\r\n<b>a) Installing WEC7 clean using an installer prior to Update 61 (SEP 2016)</b>\r\n<ul>\r\n<li>Install WEC7 prior to Update 61 with the desired options</li>\r\n<li>Once the installation has completed, obtain the Update61 (or later) installer from MOO, MyOEM or the Download Center</li>\r\n<li>Launch the obtained installer and it will update as normal to that version level</li>\r\n<li>Once the update has completed, subsequent updates (if any) will be detected as normal by the installer</li>\r\n</ul>\r\n<b>b) Updating WEC7 prior to Update 61</b>\r\n<ul>\r\n<li>Download the most recent installer from MOO, MyOEM or the Download Center</li>\r\n<li>Launch \u201cWindowsEmbeddedCompact7.exe\u201d</li>\r\n<li>This will start an update installation, proceed with the update installation</li>\r\n</ul>\r\n<b>c) Updating WEC7 with Update 61 or later</b>\r\n<ul>\r\n<li>Go to the update option from \u201cAdd or Remove programs\u201d and select \u201cUpdate\u201d to successfully check, recognize and download any new available updates</li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Technical references",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/developers.aspx"
+        },
+        {
+            "title": "windows Embedded Compact 7 prior monthly update",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=54107"
+        },
+        {
+            "title": "windows Embedded Compact 7 Documentation",
+            "url": "http://msdn.microsoft.com/en-US/library/gg154201(v=winembedded.70).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54667",
+    "downloadPreload": true
+}

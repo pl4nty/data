@@ -1,0 +1,147 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6 Preview (Offline Installer) for Windows Vista SP2, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2008 SP2 Windows Server 2008 R2 SP1, Windows Server 2012 and Windows Server 2012 R2",
+    "downloadDescription": "The Microsoft .NET Framework 4.6 Preview is a highly compatible, in-place update to the Microsoft .NET Framework 4, .NET Framework 4.5, .NET Framework 4.5.1 and .NET Framework 4.5.2. The offline package can be used in situations where the web installer cannot be used due to lack of internet connectivity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP453-KB2969351-x86-x64-AllOS-ENU.exe",
+            "url": "https://download.microsoft.com/download/2/8/7/2870c339-3c77-49cf-8ddf-ad6189ab8597/NDP453-KB2969351-x86-x64-AllOS-ENU.exe",
+            "size": "65161208",
+            "version": "4.6 Preview",
+            "datePublished": "7/15/2024 3:54:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This is an offline installer. There are separate installers for web and offline installation. If you intend to redistribute either of these installers in the setup for your own product or application, we recommend that you choose the web installer because it is smaller and typically downloads faster. You can download the web installer  <a href=\"http://go.microsoft.com/fwlink/?LinkId=399417\">here</a>.\n<br />\n<br />\nWherever possible, Microsoft recommends you use the Web Installer in lieu of the Offline Package for optimal efficiency and bandwidth requirements.\n<br />\n<br />\nThe offline package can be used in situations where the web installer cannot be used due to lack of internet connectivity.  This package is larger than the web installer and does not include the language packs. You can download and install the language packs from  <a href=\"http://go.microsoft.com/fwlink/?LinkId=399176\">here</a>.\n<br />\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6 Preview",
+    "detailsSection_file_name": [
+        "NDP453-KB2969351-x86-x64-AllOS-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "62.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM </li>\n<li>2.2 GB of available hard disk space (x86)</li>\n<li>3 GB of available hard disk space (x64)</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "On this page, choose the <b>Download</b> button.\n<ul>\n<li>To install the software now, choose the <b>Run</b> button.</li>\n<li>To install the software later, choose the Save button. (When you install, the computer does not have to be connected to the Internet.)</li>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=399403\">KB2969351</a> for more information.\n<br />\n<br />\nThis version of the .NET Framework runs side-by-side with the .NET Framework 3.5 SP1 and earlier versions, but performs an in-place update for the .NET Framework 4, .NET Framework 4.5, .NET Framework 4.5.1 and .NET Framework 4.5.2.\n<br />\n<br />\nTo find out what's new in Visual Studio 2015 Preview, see the <a href=\"http://www.visualstudio.com/news/vs2015-preview-vs\">Visual Studio 2015 Preview release notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=517037\">Visual Studio 2015 Preview KB Article</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44927",
+    "downloadPreload": true
+}

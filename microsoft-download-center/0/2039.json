@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Guide for IT Pros for Microsoft Search Server 2010",
+    "downloadDescription": "How to plan, deploy, and maintain Microsoft Search Server 2010 and Microsoft Search Server 2010 Express. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SearchServerAll.xps",
+            "url": "https://download.microsoft.com/download/1/8/3/183f20b6-b584-46a9-bf42-47261cec322b/SearchServerAll.xps",
+            "size": "2299809",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SearchServerAll.pdf",
+            "url": "https://download.microsoft.com/download/1/8/3/183f20b6-b584-46a9-bf42-47261cec322b/SearchServerAll.pdf",
+            "size": "1788726",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SearchServerAll.doc",
+            "url": "https://download.microsoft.com/download/1/8/3/183f20b6-b584-46a9-bf42-47261cec322b/SearchServerAll.doc",
+            "size": "1595904",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide includes information about how to plan, deploy, and maintain Microsoft Search Server 2010 and Microsoft Search Server 2010 Express in an organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SearchServerAll.xps",
+        "SearchServerAll.pdf",
+        "SearchServerAll.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "1.7 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use this document, you must have a program capable of opening one of the provided file formats. \r\n<ul>\r\n<li>To open the .doc file, you can use Microsoft Word 2010. Microsoft Office Word 2007, or the free <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Word viewer</a>. </li>\r\n<li>To open the .pdf file, you can use a free viewer such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Acrobat</a>.</li>\r\n<li>To open the .xps file, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or the <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> button next to the file you want to download to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your computer and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2039",
+    "downloadPreload": true
+}

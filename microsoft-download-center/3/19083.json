@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Forefront Identity Manager (FIM) Backup and Restore",
+    "downloadDescription": "This document describes the steps for backing up and restoring FIM 2010 installations. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_Backup.doc",
+            "url": "https://download.microsoft.com/download/e/1/6/e16d8c0d-0c51-45d1-8b60-27d48d54579e/FIM_Backup.doc",
+            "size": "152064",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document discusses the recommended backup schedule. The backup and restore procedures for the following FIM 2010 components: FIM Service, FIM Portal, and FIM Synchronization Service are also covered. Most procedures can be started in just a few minutes, but the actual time to back up the data depends on the amount of data there is to back up",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FIM_Backup.doc"
+    ],
+    "detailsSection_file_size": [
+        "148.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the document and open in Word or Word Viewer.",
+    "additionalInformationSection": "This guide covers the steps for locating data in FIM 2010 server-side components, finding resources to perform the actual backup, and then restoring the data in a test environment. This guide and FIM 2010 rely significantly on Microsoft SQL Server 2008 for storing and backing up data. This guide assumes that all data is backed up and restored in the same Microsoft Active Directory\u00ae forest. Moving data across forests is not supported.\r\nThis guide covers backup of the following:\r\n\u2022 The FIM Service database, which includes portal configuration data that is stored in FIM 2010 resource management objects.\r\n\u2022 The FIM Synchronization database, management agent configuration, and FIM portal\r\n\u2022 Configuration settings that are stored in .NET application configuration files\r\n\u2022 Configuration settings that are stored in the registry\r\nThis guide does not cover backup of the following:\r\n\u2022 Client components, such as FIM Add-in for Outlook or FIM Password Reset Client\r\n\u2022 Custom DLLs used for workflow activities\r\n\u2022 The FIM Certificate Management service database and keys, which are described in FIM 2010 Certificate Management Service Backup and Restore.",
+    "relatedResourcesSection": [
+        {
+            "title": "fim 2010 Backup and Restore Guide",
+            "url": "http://technet.microsoft.com/en-us/library/fim-2010-backup-and-restore-guide(WS.10).aspx"
+        },
+        {
+            "title": "fim CM 2010 Backup and Restore Guide",
+            "url": "http://technet.microsoft.com/en-us/library/fim_cm_backup_and_restore(WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19083",
+    "downloadPreload": true
+}

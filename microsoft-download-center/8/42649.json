@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3 Support for IFRS",
+    "downloadDescription": "Microsoft Dynamics AX 2012 R3 support for IFRS White Paper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 R3 Support for IFRS.pdf",
+            "url": "https://download.microsoft.com/download/8/c/f/8cf7ea81-bdfe-455b-864d-ecd0a13fadce/Microsoft Dynamics AX 2012 R3 Support for IFRS.pdf",
+            "size": "1010804",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:52:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PricewaterhouseCoopers LLP and Microsoft developed this paper together to explain how Microsoft Dynamics AX can help organizations appropriately use and apply the International Financial Reporting Standards (IFRS).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 R3 Support for IFRS.pdf"
+    ],
+    "detailsSection_file_size": [
+        "987.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42649",
+    "downloadPreload": true
+}

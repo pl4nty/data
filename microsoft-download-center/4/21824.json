@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2009 Installation Guide and Release Notes",
+    "downloadDescription": "Host Integration Server 2009 Installation Guide and Release Notes ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.docx",
+            "url": "https://download.microsoft.com/download/e/1/c/e1cfc660-3f34-4322-84d3-be6c110897c1/Readme.docx",
+            "size": "56544",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Installation_Guide.htm",
+            "url": "https://download.microsoft.com/download/e/1/c/e1cfc660-3f34-4322-84d3-be6c110897c1/Installation_Guide.htm",
+            "size": "54081",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installation_Guide.docx",
+            "url": "https://download.microsoft.com/download/e/1/c/e1cfc660-3f34-4322-84d3-be6c110897c1/Installation_Guide.docx",
+            "size": "55404",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/e/1/c/e1cfc660-3f34-4322-84d3-be6c110897c1/Readme.htm",
+            "size": "51388",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloads available here are the Host Integration Server 2009 Installation Guide and the Host Integration Server 2009 Release Notes (readme). These documents supercede all previous version including those included on the CD.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Readme.docx",
+        "Installation_Guide.htm",
+        "Installation_Guide.docx",
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "55.2 KB",
+        "52.8 KB",
+        "54.1 KB",
+        "50.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Internet Explorer, Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right-hand corner of this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21824",
+    "downloadPreload": true
+}

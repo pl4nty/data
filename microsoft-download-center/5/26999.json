@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual C++ 2010 Service Pack 1 Redistributable Package MFC Security Update",
+    "downloadDescription": "A security issue has been identified leading to a vulnerability in MFC applications that are built with Visual Studio 2010 and ship the Microsoft Visual C++ 2010 Service Pack 1 Redistributable Package.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vcredist_x86.exe",
+            "url": "https://download.microsoft.com/download/1/6/5/165255e7-1014-4d0a-b094-b6a430a6bffc/vcredist_x86.exe",
+            "size": "8993744",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_x64.exe",
+            "url": "https://download.microsoft.com/download/1/6/5/165255e7-1014-4d0a-b094-b6a430a6bffc/vcredist_x64.exe",
+            "size": "10277328",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vcredist_ia64.exe",
+            "url": "https://download.microsoft.com/download/1/6/5/165255e7-1014-4d0a-b094-b6a430a6bffc/vcredist_ia64.exe",
+            "size": "3034584",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified leading to MFC application vulnerability in DLL planting due to MFC not specifying the full path to system/localization DLLs.  You can protect your computer by installing this update from Microsoft.  After you install this item, you may have to restart.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2565063",
+        "name": "KB2565063"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-025",
+        "name": "MS11-025"
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "vcredist_x86.exe",
+        "vcredist_x64.exe",
+        "vcredist_ia64.exe"
+    ],
+    "detailsSection_file_size": [
+        "8.6 MB",
+        "9.8 MB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkId=221007\">KB2565063</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2565063",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=221007"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26999",
+    "downloadPreload": true
+}

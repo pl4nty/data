@@ -1,0 +1,138 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Configuration Manager Company Portal App",
+    "downloadDescription": "System Center Configuration Manager Company Portal App",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCCMCompanyPortal.exe",
+            "url": "https://download.microsoft.com/download/f/6/b/f6b386c0-40f3-48cd-854f-ec96e60ef48d/SCCMCompanyPortal.exe",
+            "size": "5533888",
+            "version": "4.0.14622.0",
+            "datePublished": "7/15/2024 3:16:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The System Center Configuration Manager Company Portal app allows users of Windows 8, Windows 8.1 and Windows 10 machines to view and install applications made available to the user by their administrators. The machine must be managed by Microsoft System Center 2012 R2 Configuration Manager, or later, with the agent installed. Note: For Window 10 support, Microsoft System Center 2012 R2 Configuration Manager SP1 is required. <br />\r\n<br />\r\nThe app communicates directly with the Configuration Manager on-premise server infrastructure. Note that this contrasts with the Microsoft Intune Company Portal app (available through the Windows Store and the Download Center) which communicates directly with the Microsoft Intune service. <br />\r\n<br />\r\n<b>Requirements</b><br />\r\n<ul>\r\n<li><b>Administrative</b></li>\r\n<ul>\r\n<li> System Center 2012 R2 Configuration Manager, or later</li>\r\n<li> The Application Catalog Web Service and Application Catalog Website Point roles must be operational on one or more primary sites</li>\r\n</ul>\r\n<li><b>End User Machines</b></li>\r\n<ul>\r\n<li> Windows 8 Pro, Windows 8 Enterprise, Windows 8.1 Pro, Windows 8.1 Enterprise, Windows 10 Pro or Windows 10 Enterprise </li>\r\n<li> Machine must be domain-joined</li>\r\n<li> System Center 2012 R2 Configuration Manager (or later) client agent must be installed </li>\r\n<li> User must be logged on with domain credentials</li>\r\n</ul>\r\n<li><b>Sideloading</b></li>\r\nInstallation of a Windows Store app through any source other than the Windows Store is referred to as sideloading. For domain-joined Windows 8 Enterprise or Windows 8.1 Enterprise machines, sideloading is automatically enabled. For Windows 8 Pro or Windows 8.1 Pro devices, sideloading keys must be deployed. For more information, refer to the following TechNet article: <a href=\"http://go.microsoft.com/fwlink/?LinkID=290705\">Planning to Deploy Windows 8 Apps in Configuration Manager </a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=290705\">http://go.microsoft.com/fwlink/?LinkID=290705</a>).\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.14622.0",
+    "detailsSection_file_name": [
+        "SCCMCompanyPortal.exe"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Note:</b> You must run SCCMCompanyPortal.exe on a 64-bit computer to extract the SCCMCompanyPortal.appx file. <br /><br />\n<b>Other Software:</b> System Center 2012 R2 Configuration Manager, or later\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To enable Company Portal app functionality a registry key must be present on target devices. This allows the Configuration Manager agent to communicate with the Company Portal app. The required value is: <br />\n<br />\n<ul>\n<li> Key = <b>[HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\CCM]</b> </li> \n<li> Value Name = <b>PortalPackageFamily</b></li>\n<li> Type = <b>REG_SZ</b></li>\n<li> Value = <b>Microsoft.CorporateAppCenter_8wekyb3d8bbwe</b></li>\n</ul><br />\nTo deploy the Company Portal app, use the following steps:<br />\n<ol>\n<li> Ensure that the Application Catalog role is operational on one or more primary sites. For more information, refer to the following TechNet article: <a href=\"http://go.microsoft.com/fwlink/?LinkID=247211\">Configuring the Application Catalog and Software Center in Configuration Manager</a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=247211\">http://go.microsoft.com/fwlink/?LinkID=247211</a>). </li> \n<li> Deploy the registry value specified above to all clients on which the Company Portal app will be installed. This can be done via Group Policy, the Compliance Settings feature of Configuration Manager, or any other method applicable in your organization.</li>\n<li> Deploy the Company Portal app. You can deploy this app to Windows 8 or Windows 8.1 workstations through the Application Management feature. For more information, refer to the following TechNet article: <a href=\"http://go.microsoft.com/fwlink/?LinkID=247184\">Introduction to Application Management in Configuration Manager</a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=247184\">http://go.microsoft.com/fwlink/?LinkID=247184</a>) and select <b>\u201cWindows app package (*.appx, *.appxbundle)\u201d</b> in the <b>Create Application</b> wizard.</li>\n</ol><br />\n<i><b>Note: </b>The Company Portal app may take up to 15 minutes after installation before it is fully operational </i><br /><br />\n<b>Recommendations and Best Practices</b><br />\nConsider the following when deploying the Company Portal app in your environment.<br />\n<ul>\n<li> The Company Portal app utilizes the default Application Catalog Website Point assigned to the device when communicating with the Configuration Manager infrastructure. For more information, refer to the following TechNet article: <a href=\"http://go.microsoft.com/fwlink/?LinkID=252184\">About Client Settings in Configuration Manager </a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=252184\">http://go.microsoft.com/fwlink/?LinkID=252184</a>). </li>\n<li> If you have multiple primary sites in a hierarchy, we strongly recommend adding a set of Application Catalog roles for each of the primary sites, and using Automatic detection to control the default Application Catalog Website Points. </li>\n<li> When the user browses the list of applications in the Company Portal, the app will display the applications that have been made available to the user, similar to the Configuration Manager Application Catalog functionality. The Company Portal will assess the operating system requirements specified for the deployment type of the application to determine if the application should be available for installation.</li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center 2012 R2 Configuration Manager",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/configuration-manager-2012.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40795",
+    "downloadPreload": true
+}

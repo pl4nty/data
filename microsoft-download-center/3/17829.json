@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Posting to the Ledger",
+    "downloadDescription": "This paper describes the APIs to use when posting to the general ledger from sub-modules.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PostToLedger.xps",
+            "url": "https://download.microsoft.com/download/d/b/a/dba4455a-25c1-495c-bad2-3b316e0e2434/PostToLedger.xps",
+            "size": "508916",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PostToLedger.pdf",
+            "url": "https://download.microsoft.com/download/d/b/a/dba4455a-25c1-495c-bad2-3b316e0e2434/PostToLedger.pdf",
+            "size": "218020",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper describes how to update the general ledger account balances for amounts that are entered in other modules. The information lists the classes that are involved in the process and examples for their use.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "PostToLedger.xps",
+        "PostToLedger.pdf"
+    ],
+    "detailsSection_file_size": [
+        "497.0 KB",
+        "212.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17829",
+    "downloadPreload": true
+}

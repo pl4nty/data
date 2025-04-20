@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2003 to Exchange Server 2010 Active Directory Schema Changes Reference, March 2013",
+    "downloadDescription": "This download includes the Exchange Server Active Directory Schema Reference, which provides information about the changes that Microsoft Exchange Server 2003 to Exchange Server 2010 makes to the Active Directory schema when it is installed.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange Server 2003 to Exchange Server 2010 Active Directory Schema Changes Reference.doc",
+            "url": "https://download.microsoft.com/download/f/f/9/ff924e43-942c-491d-92e7-bd51eddaf9d2/Exchange Server 2003 to Exchange Server 2010 Active Directory Schema Changes Reference.doc",
+            "size": "1291264",
+            "version": "March2013",
+            "datePublished": "7/15/2024 3:14:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes the Exchange Server Active Directory Schema Reference, which provides information about the changes that Microsoft Exchange Server makes to the Active Directory schema when it is installed. The Exchange Server Active Directory Schema Changes Reference includes changes made by Exchange Server 2010 SP3, Exchange Server 2010 SP2, Exchange Server 2010 SP1, Exchange Server 2010,  Exchange Server 2007 SP3, Exchange Server 2007 SP2, Exchange Server 2007 SP1, Exchange Server 2007, and Exchange Server 2003.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2013",
+    "detailsSection_file_name": [
+        "Exchange Server 2003 to Exchange Server 2010 Active Directory Schema Changes Reference.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Access to a computer that is running Microsoft Word or a Microsoft Word viewer.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=79434"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=82737"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5401",
+    "downloadPreload": true
+}

@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Technical Documentation for Windows Azure Pack for Windows Server",
+    "downloadDescription": "This page provides downloadable versions of the technical documentation for Windows Azure Pack for Windows Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WAPv1_Administration.pdf",
+            "url": "https://download.microsoft.com/download/4/1/d/41d52159-2cfb-420b-8b8a-98224a1ee673/WAPv1_Administration.pdf",
+            "size": "1357977",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WAPv1_WebsitesV2_Deployment.docx",
+            "url": "https://download.microsoft.com/download/4/1/d/41d52159-2cfb-420b-8b8a-98224a1ee673/WAPv1_WebsitesV2_Deployment.docx",
+            "size": "667063",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WAPv1_WebsitesV2_Deployment.pdf",
+            "url": "https://download.microsoft.com/download/4/1/d/41d52159-2cfb-420b-8b8a-98224a1ee673/WAPv1_WebsitesV2_Deployment.pdf",
+            "size": "1184494",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WAPv1_Deployment.pdf",
+            "url": "https://download.microsoft.com/download/4/1/d/41d52159-2cfb-420b-8b8a-98224a1ee673/WAPv1_Deployment.pdf",
+            "size": "1507951",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WAPv1_Administration.docx",
+            "url": "https://download.microsoft.com/download/4/1/d/41d52159-2cfb-420b-8b8a-98224a1ee673/WAPv1_Administration.docx",
+            "size": "711865",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WAPv1_Deployment.docx",
+            "url": "https://download.microsoft.com/download/4/1/d/41d52159-2cfb-420b-8b8a-98224a1ee673/WAPv1_Deployment.docx",
+            "size": "1827651",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download package contains Word and PDF versions of the technical documentation for Windows Azure Pack. The following guides are available:<BR></BR>\r\n<UL><LI>Deploy Windows Azure Pack for Windows Server, updated 10/17/13</LI>\r\n<LI>Plan, Deploy, and Configure Windows Azure Pack: Web Sites, updated 10/17/13</LI>\r\n<LI>Administer Windows Azure Pack for Windows Server, updated 10/17/13</LI></UL>\r\n<BR></BR>  \r\n\r\nThis technical documentation is also available in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=309498\">TechNet Library</a>.\r\n<BR></BR>  \r\n\r\nTo download the Cmdlet Reference documentation for Windows Azure Pack for Windows Server, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=331572\" >Cmdlet Reference Download for Windows Azure Pack for Windows Server</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WAPv1_Administration.pdf",
+        "WAPv1_WebsitesV2_Deployment.docx",
+        "WAPv1_WebsitesV2_Deployment.pdf",
+        "WAPv1_Deployment.pdf",
+        "WAPv1_Administration.docx",
+        "WAPv1_Deployment.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "651.4 KB",
+        "1.1 MB",
+        "1.4 MB",
+        "695.2 KB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI> \r\n<LI>Microsoft Word 2013</LI> \r\n<LI>Microsoft Word 2010</LI> \r\n<LI>Microsoft Word 2007</LI> \r\n<LI>Microsoft Word 2003</LI> \r\n<LI>Microsoft Word 2002</LI> \r\n<LI>Microsoft Word 2000</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40792",
+    "downloadPreload": true
+}

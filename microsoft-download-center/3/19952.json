@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory Certificate Services Longhorn Beta3 Key Archival and Recovery Whitepaper",
+    "downloadDescription": "This white paper details the process of key archival and recovery in a Windows Server \u201cLonghorn\u201d\u2013 or Windows Server 2003\u2013based certification authority (CA).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KeyArchivalandManagementinLonghornBeta3_pub.doc",
+            "url": "https://download.microsoft.com/download/0/2/c/02c2ca18-1ed8-414c-b883-1753cd2a8b63/KeyArchivalandManagementinLonghornBeta3_pub.doc",
+            "size": "2985984",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Active Directory\u00ae Certificate Services in Microsoft\u00ae Windows Server\u00ae \u201cLonghorn\u201d, Enterprise Edition continues and extends upon the Windows Server 2003, Enterprise Edition solution for Public Key Infrastructure (PKI) in the area of private key archival, recovery, and management. This white paper details the process of key archival and recovery in a Windows Server \u201cLonghorn\u201d\u2013 or Windows Server 2003\u2013based certification authority (CA). It also covers best practices and procedural steps in a key recovery strategy, as well as migration procedures for moving from a Microsoft Exchange Key Management Server (KMS) environment to a Windows Server 2003 or Windows Server \u201cLonghorn\u201d CA.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "KeyArchivalandManagementinLonghornBeta3_pub.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2003 or 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Longhorn (Windows Code Name) ",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise x64 Edition"
+    ],
+    "installInstructionSection": "Click \"Download\".<br />\nTo save the file to your computer, click Save. <br />\nTo cancel the download, click Cancel.",
+    "relatedResourcesSection": [
+        {
+            "title": "active Directory Certificate Server Enhancements in Windows Server Code Name \u201cLonghorn\u201d",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=9bf17231-d832-4ff9-8fb8-0539ba21ab95&DisplayLang=en"
+        },
+        {
+            "title": "microsoft SCEP Implementation Whitepaper",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=e11780de-819f-40d7-8b8e-10845bc8d446&DisplayLang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19952",
+    "downloadPreload": true
+}

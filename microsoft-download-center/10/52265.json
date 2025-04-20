@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Zentity Source Code",
+    "downloadDescription": "Zentity 2.1 includes a new Resource Manager web user interface that enables users to query the database, review and update records, and create and edit relationships between items that are stored in Zentity. Last published: December 12, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Zentity.zip",
+            "url": "https://download.microsoft.com/download/2/3/0/230b98d6-6ea2-4942-8569-ed1833e63aef/Zentity.zip",
+            "size": "433904571",
+            "version": "2.1",
+            "datePublished": "1/15/2024 4:10:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Zentity 2.1 includes a new Resource Manager web user interface that enables users to query the database, review and update records, and create and edit relationships between items that are stored in Zentity. The Resource Manager will work with custom data models and gives users the ability to save searches for later use. Zentity 2.1 also offers an option to install a localized Spanish-language version of the software.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1",
+    "detailsSection_file_name": [
+        "Zentity.zip"
+    ],
+    "detailsSection_file_size": [
+        "413.8 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52265",
+    "downloadPreload": true
+}

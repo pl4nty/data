@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Host Integration Server 2010 (KB2579599) ",
+    "downloadDescription": "A security issue has been identified in the Host Integration Server 2010 that could cause denial of service vulnerability in Host Integration Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HIS2010-RTM-KB2579599-ENU.exe",
+            "url": "https://download.microsoft.com/download/a/3/2/a32ed7eb-f54c-4e5b-8705-c35d4f34a878/HIS2010-RTM-KB2579599-ENU.exe",
+            "size": "1590128",
+            "version": "HIS 2010",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could cause denial of service vulnerability in Host Integration Server. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2579599",
+        "name": "KB2579599"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-082",
+        "name": "MS11-082"
+    },
+    "detailsSection_file_version": "HIS 2010",
+    "detailsSection_file_name": [
+        "HIS2010-RTM-KB2579599-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Host Integration Server 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27644",
+    "downloadPreload": true
+}

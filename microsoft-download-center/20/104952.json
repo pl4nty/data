@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "CppDev17-230206.101.63885049",
+    "downloadDescription": "WindowsAppSDK MSIX and Installer",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WindowsAppSDK.Cpp.Extension.Dev17.Experimental.Standalone.vsix",
+            "url": "https://download.microsoft.com/download/0/e/0/0e008795-f254-4a60-85ed-88477efd70ce/WindowsAppSDK.Cpp.Extension.Dev17.Experimental.Standalone.vsix",
+            "size": "106833005",
+            "version": "1.3.230202101-e1",
+            "datePublished": "7/15/2024 5:06:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WindowsAppSDK MSIX and Installer",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3.230202101-e1",
+    "detailsSection_file_name": [
+        "WindowsAppSDK.Cpp.Extension.Dev17.Experimental.Standalone.vsix"
+    ],
+    "detailsSection_file_size": [
+        "101.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "17763/RS5 and above",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX"
+    ],
+    "installInstructionSection": "This zipped file contains the MSIX and Installer for WindowsAppSDK",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104952",
+    "downloadPreload": true
+}

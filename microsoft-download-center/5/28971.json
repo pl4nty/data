@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 Single Sign-On with AD FS 2.0 whitepaper",
+    "downloadDescription": "Office 365 Single Sign-On with AD FS 2.0 whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office365-Single Sign-On-with-AD-FS2.0-v1.0a.docx",
+            "url": "https://download.microsoft.com/download/0/7/1/07156662-5b63-404a-8e36-5446fa06a0b0/Office365-Single Sign-On-with-AD-FS2.0-v1.0a.docx",
+            "size": "7582948",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 3:16:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Through its  support for the WS-Federation (WS-Fed) and WS-Trust protocols, Microsoft  Active&nbsp;Directory Federation Services&nbsp;(AD FS) 2.0 provides  claims-based (Web) single sign-on (also known as identity federation) with the  Microsoft Office 365 offering and its Web application and rich client  applications.\r\n<br/>Microsoft  Office 365&nbsp; provides secure anywhere access to professional email, shared  calendars, instant messaging (IM), video conferencing, and document  collaboration. It represents the cloud version of the Microsoft communication  and collaboration products with the latest version of the Microsoft desktop  suite for businesses of all sizes. Office 365 indeed  includes :\r\n<ul>\r\n  <li>Microsoft Office: Microsoft Office Professional  Plus 2010 seamlessly connects with Microsoft Office Web Apps for a productivity  experience across PCs, mobile devices, and browsers;</li>\r\n  <li>Microsoft Exchange Online: Exchange Online  offers cloud-based email, calendar, and contacts with the most current  antivirus and anti-spam solutions. It enables access to email on virtually any  mobile device and takes advantage of options for voice mail, unified messaging,  and archiving;</li>\r\n  <li>Microsoft SharePoint Online: SharePoint Online  is a cloud-based service for creating sites that connect colleagues, partners,  and customers using enterprise social networking and customization;</li>\r\n  <li>Microsoft Lync Online: Lync Online offers  cloud-based IM, presence, and online meeting experiences with screen sharing,  voice and video conferencing.</li>\r\n</ul>\r\n<br/>Building on  existing Microsoft documentation, this document is intended to provide a better  understanding of the different single sign-on deployment options for the  services in services in Office 365, how to enable single sign-on using  corporate Active Directory credentials and AD&nbsp;FS 2.0 to the service in  Office, and the different configuration elements to be aware of for such  deployment.\r\n<br/>This document is intended for  system architects and IT professionals who are interested in understanding the  basics of the single sign-on feature of Office 365 with AD&nbsp;FS&nbsp;2.0  along with planning and deploying such a deployment in their environment. As an  introduction, one can work through the <a href=\"http://technet.microsoft.com/en-us/office365/hh699847\">series of Office 365 virtual labs</a> available on to this topic.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0a",
+    "detailsSection_file_name": [
+        "Office365-Single Sign-On-with-AD-FS2.0-v1.0a.docx"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=36391\">Active Directory from on-premises to the cloud</a></li>\r\n <li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=35464\">Office 365 Single Sign-On with Shibboleth 2 whitepaper</a></li>\r\n   <li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30139\">Information  Protection and Control (IPC) in Microsoft Exchange Online with AD RMS  whitepaper</a></li>\r\n  <li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=34768\">Information  Protection and Control (IPC) in Office 365 Preview with Windows Azure AD Rights  Management whitepaper</a></li>\r\n  </ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28971",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Pro 11th Edition with Intel Drivers and Firmware",
+    "downloadDescription": "All current drivers and firmware for the Surface Pro 11th Edition with Intel",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceProforBusiness11thEditionwithIntel_Win11_26100_25.032.26502.0.msi",
+            "url": "https://download.microsoft.com/download/c26c62fe-da4b-41d1-b276-c855751c247c/SurfaceProforBusiness11thEditionwithIntel_Win11_26100_25.032.26502.0.msi",
+            "size": "1225351168",
+            "version": "1.0",
+            "datePublished": "4/3/2025 6:42:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following packages will continue to be updated with the latest drivers and firmware until the date listed in the <a href=\"https://learn.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-driver-and-firmware-lifecycle-period\">Surface Driver and Firmware Support Lifecycle Policy.</a>\n<br></br>\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\n<br></br>\nCumulative and current drivers and firmware for the Surface Pro 11th Edition with Intel. This package contains drivers for all of the components in the Surface Pro 11th Edition with Intel, as well as updates to the system firmware that have been released via Windows Update. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\n<ul>\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\n</ul>\n________________________________________________________________________________________________________________________________________\n<br></br>\n<b>Archive Section</b>\n<br></br>\n Consistent with our build lifecycle support, the following packages are no longer being updated with newer drivers and firmware. \n<ul>\n\n</ul>\n<br></br>\nPlease refer to end of lifecycle support:\n<br></br>\n<a href=\"https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support\">End of Servicing Date</a>\n<br></br>\n<a href=\"https://en.wikipedia.org/wiki/Windows_11_version_history\">Windows 11 version history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfaceProforBusiness11thEditionwithIntel_Win11_26100_25.032.26502.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "4/3/2025",
+    "systemRequirementsSection": "Surface Pro 11th Edition with Intel required for compatibility with these drivers. These drivers and firmware are compatible with Windows 11, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface Pro 11th Edition with Intel. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108013",
+    "downloadPreload": true
+}

@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2016 SP2 GDR (KB4583460)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2016 SP2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016-KB4583460-x64.exe",
+            "url": "https://download.microsoft.com/download/3/d/a/3dab9493-dd58-493c-9ddf-d15807b162ee/SQLServer2016-KB4583460-x64.exe",
+            "size": "516835144",
+            "version": "13.0.5103.6",
+            "datePublished": "7/15/2024 4:29:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Data can be sent over a network to an affected Microsoft SQL Server instance that might cause code to run against the SQL Server process if a certain extended event is enabled.  <br /><br />\r\n\r\nMore information about the vulnerability can be found here: \r\n<a name=\"KB4583460\"></a><a href=\"http://support.microsoft.com/help/4583460\">KB4583460</a> <br /><br />\r\n\r\nFor other impacted SQL Server releases, please see: <br /><br />\r\n<a name=\"KB4583465\"></a><a href=\"http://support.microsoft.com/help/4583465\">Security Update for SQL Server 2012 SP4 GDR</a> <br />\r\n<a name=\"KB4583462\"></a><a href=\"http://support.microsoft.com/help/4583462\">Security Update for SQL Server 2014 SP3 CU (CU4+GDR fix)*</a> <br />\r\n<a name=\"KB4583463\"></a><a href=\"http://support.microsoft.com/help/4583463\">Security Update for SQL Server 2014 SP3 GDR</a> <br />\r\n<a name=\"KB4583461\"></a><a href=\"http://support.microsoft.com/help/4583461\">Security Update for SQL Server 2016 SP2 CU (CU15+GDR fix)*</a> <br />\r\n<a name=\"KB4583460\"></a><a href=\"http://support.microsoft.com/help/4583460\">Security Update for SQL Server 2016 SP2 GDR</a> <br />\r\n<a name=\"KB4583457\"></a><a href=\"http://support.microsoft.com/help/4583457\">Security Update for SQL Server 2017 RTM CU (CU22+GDR fix)*</a> <br />\r\n<a name=\"KB4583456\"></a><a href=\"http://support.microsoft.com/help/4583456\">Security Update for SQL Server 2017 RTM GDR</a> <br />\r\n<a name=\"KB4583459\"></a><a href=\"http://support.microsoft.com/help/4583459\">Security Update for SQL Server 2019 RTM CU (CU8+GDR fix)*</a> <br />\r\n<a name=\"KB4583458\"></a><a href=\"http://support.microsoft.com/help/4583458\">Security Update for SQL Server 2019 RTM GDR</a> <br />\r\n\r\n* These security updates are for SQL Server instances that have applied a Cumulative Update.<br /> <br />     \r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.5103.6",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB4583460-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "492.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 SP2 instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2016 SP2 Windows that have NOT had a Cumulative Update applied (versions 13.0.5026.0 to 13.0.5102.14).<br /> <br />     \r\n\r\nFor Microsoft SQL Server 2016 SP2 for Windows (versions 13.0.5149.0 (CU1) to 13.0.5850.14(CU15)) that have had any Cumulative Update applied, please see <a name=\"KB4583461\"></a><a href=\"http://support.microsoft.com/help/4583461\">KB4583461</a>. After you install this update, you may have to restart your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4583460",
+            "url": "https://support.microsoft.com/en-us/help/4583460"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102622",
+    "downloadPreload": true
+}

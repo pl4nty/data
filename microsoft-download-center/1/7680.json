@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Aaron Skonnard puts BizTalk and WCF Together",
+    "downloadDescription": "Carl and Richard talk to Aaron Skonnard of Pluralsight about the WCF Adapter for Biztalk Server 2006 R2, among other related topics.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080117ASkonnard.zip",
+            "url": "https://download.microsoft.com/download/2/e/b/2eb7aeed-0e02-44f7-a7b3-143555d031a2/20080117ASkonnard.zip",
+            "size": "49383426",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:50:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Aaron Skonnard is co-founder of Pluralsight, a premier Microsoft .NET training provider. Aaron is the author of Pluralsight's Applied Web Services, Applied BizTalk Server 2006, and Applied WCF courses delivered worldwide. Over the years, Aaron has written numerous articles and books on XML and Web services technologies. He currently writes MSDN Magazine's Service Station column, along with his weblog, which carries the same name - <a href=\"http://pluralsight.com/aaron/\">http://pluralsight.com/aaron/</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080117ASkonnard.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.1 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7680",
+    "downloadPreload": true
+}

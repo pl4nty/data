@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment and Administration Guide for Surface Pro 3",
+    "downloadDescription": "Best practices for deploying Windows to Surface Pro 3 devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Surface-Pro-3-Deployment-Administration-Guide-EN.pdf",
+            "url": "https://download.microsoft.com/download/c/d/0/cd07b45b-4f5f-43cf-ac9b-90b81cedbaf3/Surface-Pro-3-Deployment-Administration-Guide-EN.pdf",
+            "size": "5870172",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:20:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The guide was developed to show best practices for deploying Windows to Surface Pro 3 devices. This guide is organized in a way that minimizes the learning curve for you to understand how to deploy Windows to the Surface Pro 3 devices to your organization. It presents step-by-step procedures that provide essential building blocks for successive chapters. Therefore, it is a good idea to read the chapters in order. The deployment concepts discussed in this guide are valid for all Windows computers, but specifically targets scenarios for Surface Pro 3 devices. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Surface-Pro-3-Deployment-Administration-Guide-EN.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Surface Pro 3",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45292",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.5.1 Language Pack for Windows RT",
+    "downloadDescription": "The .NET Framework 4.5.1 Language Pack contains localized resources for supported languages.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme.htm",
+            "url": "https://download.microsoft.com/download/4/4/d/44d4d785-9f09-448b-b85d-01cc4cbba57a/readme.htm",
+            "size": "758",
+            "version": "4.5.1",
+            "datePublished": "7/15/2024 3:24:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.5.1 Language Pack contains translated error messages and other UI text for languages other than English. If you don't install a language pack, this text is displayed in English. You can install multiple language packs on one computer, each for a different language. \n<br />\nYou need to download and install the .NET Framework 4.5.1 prior to installing the language packs. You can find the .NET Framework 4.5.1 <a href=\"http://download.microsoft.com/download/F/9/F/F9F75EC3-B7BC-459D-8168-11F10AAACEB0/Windows8-RT-KB2881468-arm.msu\">here</a>.\n<br />\n<br />\nThis version of the .NET Framework language pack installs side-by-side with the .NET Framework 3.5 SP1 language pack and earlier versions, but performs an in-place update for the .NET Framework 4 and the .NET Framework 4.5 language packs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2858728",
+        "name": "KB2858728"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.1",
+    "detailsSection_file_name": [
+        "readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "758 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM (1.5 GB if running on a virtual machine)</li>\n<li>850 MB of available hard disk space (x86)</li>\n<li>2 GB of available hard disk space (x64)</li>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows RT"
+    ],
+    "installInstructionSection": "<ul>\n<li>Before you install a Language Pack, install the corresponding language version of the product.</li>\n<li>To download all files and then install:\n</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button.</li>\n</ul>\n</ul>\n</ul>\n",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://support.microsoft.com/KB/2881468\">KB2881468</a> for more information.<br />\n<br />\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=317457\">.NET Framework 4.5.1 Readme File</a>.\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41641",
+    "downloadPreload": true
+}

@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2013 CU12 (KB3150501)",
+    "downloadDescription": "Security Update For Exchange Server 2013 CU12 (KB3150501)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2013-KB3150501-x64-en.msp",
+            "url": "https://download.microsoft.com/download/6/9/7/697d718a-c45d-4a8a-b5fa-6fa2476b5afc/Exchange2013-KB3150501-x64-en.msp",
+            "size": "33173504",
+            "version": "15.00.1178.006",
+            "datePublished": "7/15/2024 4:03:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  A security issue has been identified that could allow an attacker to run programs and access data on a computer running Microsoft\u00ae Exchange Server 2013. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3150501",
+        "name": "KB3150501"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-079",
+        "name": "MS16-079"
+    },
+    "detailsSection_file_version": "15.00.1178.006",
+    "detailsSection_file_name": [
+        "Exchange2013-KB3150501-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "31.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        },
+        {
+            "title": "more Information About This Download",
+            "url": "http://support.microsoft.com/kb/2859928"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52767",
+    "downloadPreload": true
+}

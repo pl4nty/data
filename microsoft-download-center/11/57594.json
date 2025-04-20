@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Microsoft Windows Server File & iSCSI Services 2016 and above",
+    "downloadDescription": "System Center Management Pack for Microsoft Windows Server File & iSCSI Services 2016 and above",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_FileServer 2016 and above.doc",
+            "url": "https://download.microsoft.com/download/a/0/7/a071e8d0-d188-4ed8-8a8c-84dfdc1ac675/MPGuide_FileServer 2016 and above.doc",
+            "size": "486400",
+            "version": "10.1.0.4",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_DFSReplication_Guide.doc",
+            "url": "https://download.microsoft.com/download/a/0/7/a071e8d0-d188-4ed8-8a8c-84dfdc1ac675/MPGuide_DFSReplication_Guide.doc",
+            "size": "403968",
+            "version": "10.1.0.4",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_DFSNRoleMgmt.doc",
+            "url": "https://download.microsoft.com/download/a/0/7/a071e8d0-d188-4ed8-8a8c-84dfdc1ac675/MPGuide_DFSNRoleMgmt.doc",
+            "size": "832512",
+            "version": "10.1.0.4",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SCMP for File and iSCSI Services 2016 and above.msi",
+            "url": "https://download.microsoft.com/download/a/0/7/a071e8d0-d188-4ed8-8a8c-84dfdc1ac675/Microsoft SCMP for File and iSCSI Services 2016 and above.msi",
+            "size": "954368",
+            "version": "10.1.0.4",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack covers the following:<br/>\r\n<ul>\r\n<li> DeDuplication</li>\r\n<li> FSRM</li>\r\n<li> iSCSI</li>\r\n<li> NFS</li>\r\n<li> SMB</li>\r\n<li> Work Folders</li>\r\n<li> DFS Namespaces</li>\r\n<li> DFS Replication</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1.0.4",
+    "detailsSection_file_name": [
+        "MPGuide_FileServer 2016 and above.doc",
+        "MPGuide_DFSReplication_Guide.doc",
+        "MPGuide_DFSNRoleMgmt.doc",
+        "Microsoft SCMP for File and iSCSI Services 2016 and above.msi"
+    ],
+    "detailsSection_file_size": [
+        "475.0 KB",
+        "394.5 KB",
+        "813.0 KB",
+        "932.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Supported SCOM versions</b><br/>\r\n<li>System Center Operations Manager 2016, 2019 and 2022</li>\r\nTo check support of other SCOM versions and Operating systems, please refer links below:<br/>\r\n<br/>\r\nhttps://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2016#microsoft-monitoring-agent-operating-system<br/>\r\n<br/>\r\nhttps://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2019#microsoft-monitoring-agent-operating-system<br/>\r\nhttps://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2022#microsoft-monitoring-agent-operating-system<br/>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57594",
+    "downloadPreload": true
+}

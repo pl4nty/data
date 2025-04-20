@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Project Service Automation Demo Data",
+    "downloadDescription": "Demo dataset for Microsoft Dynamics CRM Project Service Automation capabilities",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PSADemoData.EXE",
+            "url": "https://download.microsoft.com/download/2/d/1/2d1ff047-986c-4ae4-8493-8335fa3f3f00/PSADemoData.EXE",
+            "size": "14043648",
+            "version": "1.0.0.3",
+            "datePublished": "7/15/2024 4:18:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To become familiar with the project service automation capabilities in Microsoft Dynamics CRM, it\u2019s useful to have a pre-configured environment to explore. For this purpose, we\u2019ve created a separate managed solution that makes it easier to explore and learn about the new solution. Running this package deployer performs the following actions:\r\n\u2022 Builds default parameters that drive behavior of project service\r\n\u2022 Creates default working calendars\r\n\u2022 Imports sample data such as resources, projects, prices, roles, and other key information\r\n\u2022 Associates resources with the proper working calendar\r\n\u2022 Updates images of contacts and accounts\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.3",
+    "detailsSection_file_name": [
+        "PSADemoData.EXE"
+    ],
+    "detailsSection_file_size": [
+        "13.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics CRM Online 2016 Update 1 and Project Service Automation capabilities solution",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the self-extracting file and extract the contents.  Read the Using the Demo Data Loader for \r\nProject Service Automation document \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52952",
+    "downloadPreload": true
+}

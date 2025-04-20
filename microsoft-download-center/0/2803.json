@@ -1,0 +1,525 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2008 R2 End User License Agreements",
+    "downloadDescription": "The Microsoft SQL Server 2008 R2 End User License Agreements provide the legal terms and conditions for using the SQL Server 2008 R2 core software",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "license_Upgrade Advsor.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Upgrade Advsor.docx",
+            "size": "38732",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Express.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Express.rtf",
+            "size": "143538",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Analysis Management Objects.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Analysis Management Objects.rtf",
+            "size": "147938",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 ExpressTools_ExpressAdvanced.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 ExpressTools_ExpressAdvanced.rtf",
+            "size": "144042",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_OLE DB for DB2.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_OLE DB for DB2.docx",
+            "size": "38718",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_StreamInsight Server.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_StreamInsight Server.rtf",
+            "size": "37878",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Standard for SB.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Standard for SB.docx",
+            "size": "34006",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Web_OEM .docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Web_OEM .docx",
+            "size": "32549",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_ADOMD.NET.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_ADOMD.NET.rtf",
+            "size": "146774",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Master Data Services.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Master Data Services.docx",
+            "size": "35829",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Web.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Web.docx",
+            "size": "30729",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Books On-line.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Books On-line.rtf",
+            "size": "67215",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Browser.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Browser.rtf",
+            "size": "110265",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Standard_OEM .docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Standard_OEM .docx",
+            "size": "36619",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Service Broker External Activator.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Service Broker External Activator.docx",
+            "size": "38737",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Express Mgm Studio.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Express Mgm Studio.rtf",
+            "size": "152211",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Datacenter.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Datacenter.docx",
+            "size": "39386",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_AS OLE DB Provider.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_AS OLE DB Provider.docx",
+            "size": "38770",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Powershell Extensions.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Powershell Extensions.rtf",
+            "size": "91038",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Report Builder.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Report Builder.rtf",
+            "size": "46339",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_StreamInsight Client.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_StreamInsight Client.rtf",
+            "size": "66456",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Writer.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Writer.rtf",
+            "size": "109400",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_RS SharePoint add-in 2007.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_RS SharePoint add-in 2007.docx",
+            "size": "35933",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQL Server 2008 R2 Evaluation.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Evaluation.docx",
+            "size": "19115",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Enterprise OEM .docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Enterprise OEM .docx",
+            "size": "38033",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Enterprise.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Enterprise.docx",
+            "size": "40681",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_JDBC 3.0.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_JDBC 3.0.docx",
+            "size": "35761",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Standard for SB_OEM.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Standard for SB_OEM.docx",
+            "size": "35270",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Command Line Utilities.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Command Line Utilities.rtf",
+            "size": "148028",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Express redist license.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Express redist license.rtf",
+            "size": "167590",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Standard.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Standard.docx",
+            "size": "39481",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Remote Blob Store.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Remote Blob Store.rtf",
+            "size": "71845",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_SAP BW Connector.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_SAP BW Connector.docx",
+            "size": "38707",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_CLR Types.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_CLR Types.docx",
+            "size": "36227",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Datacenter_OEM .docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Datacenter_OEM .docx",
+            "size": "33932",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Policies.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Policies.docx",
+            "size": "38684",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Workgroup.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Workgroup.docx",
+            "size": "39179",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_RS SharePoint add-in 2010.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_RS SharePoint add-in 2010.docx",
+            "size": "34082",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Workgroup_OEM .docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Workgroup_OEM .docx",
+            "size": "36002",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Shared Management Objects.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Shared Management Objects.docx",
+            "size": "38759",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Native Client.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_Native Client.rtf",
+            "size": "94074",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_PowerPivot for Excel.rtf",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/license_PowerPivot for Excel.rtf",
+            "size": "66210",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2008 R2 Developer.docx",
+            "url": "https://download.microsoft.com/download/4/b/1/4b188cbb-8b48-4aa8-815f-d2baa779f3da/1033/SQL Server 2008 R2 Developer.docx",
+            "size": "21967",
+            "version": "10.50.1600.1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The SQL Server 2008 R2 End User License Agreements provide the legal terms and conditions for the SQL Server 2008 R2  core software.\n<br />\n<b>Note:</b> Some components in the Microsoft\u00ae SQL Server\u00ae 2008 R2  of  SQL Server\u00ae have two different methods to complete the installation process:\n<ul>\n    <li> Attended Installation \u2013 an interactive user interface will guide you through the set-up process and obtain all of the information and consent required to complete the installation. This includes the displaying, acknowledgement, and archiving of the applicable SQL Server license terms.</li>\n<br />\n    <li> Un-attend Installation \u2013 this is a DOS command line set-up process that does not have an interactive user interface to guide you through the set-up process. In this case, you will be required to enter a parameter during installation that indicates your acceptance of the license terms.  The license terms can be downloaded from this site for you to review.</li>\n</ul>\n<br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.50.1600.1",
+    "detailsSection_file_name": [
+        "license_Upgrade Advsor.docx",
+        "SQL Server 2008 R2 Express.rtf",
+        "license_Analysis Management Objects.rtf",
+        "SQL Server 2008 R2 ExpressTools_ExpressAdvanced.rtf",
+        "license_OLE DB for DB2.docx",
+        "license_StreamInsight Server.rtf",
+        "SQL Server 2008 R2 Standard for SB.docx",
+        "SQL Server 2008 R2 Web_OEM .docx",
+        "license_ADOMD.NET.rtf",
+        "license_Master Data Services.docx",
+        "SQL Server 2008 R2 Web.docx",
+        "license_Books On-line.rtf",
+        "license_Browser.rtf",
+        "SQL Server 2008 R2 Standard_OEM .docx",
+        "license_Service Broker External Activator.docx",
+        "SQL Server 2008 R2 Express Mgm Studio.rtf",
+        "SQL Server 2008 R2 Datacenter.docx",
+        "license_AS OLE DB Provider.docx",
+        "license_Powershell Extensions.rtf",
+        "license_Report Builder.rtf",
+        "license_StreamInsight Client.rtf",
+        "license_Writer.rtf",
+        "license_RS SharePoint add-in 2007.docx",
+        "SQL Server 2008 R2 Evaluation.docx",
+        "SQL Server 2008 R2 Enterprise OEM .docx",
+        "SQL Server 2008 R2 Enterprise.docx",
+        "license_JDBC 3.0.docx",
+        "SQL Server 2008 R2 Standard for SB_OEM.docx",
+        "license_Command Line Utilities.rtf",
+        "SQL Server 2008 R2 Express redist license.rtf",
+        "SQL Server 2008 R2 Standard.docx",
+        "license_Remote Blob Store.rtf",
+        "license_SAP BW Connector.docx",
+        "license_CLR Types.docx",
+        "SQL Server 2008 R2 Datacenter_OEM .docx",
+        "license_Policies.docx",
+        "SQL Server 2008 R2 Workgroup.docx",
+        "license_RS SharePoint add-in 2010.docx",
+        "SQL Server 2008 R2 Workgroup_OEM .docx",
+        "license_Shared Management Objects.docx",
+        "license_Native Client.rtf",
+        "license_PowerPivot for Excel.rtf",
+        "SQL Server 2008 R2 Developer.docx"
+    ],
+    "detailsSection_file_size": [
+        "37.8 KB",
+        "140.2 KB",
+        "144.5 KB",
+        "140.7 KB",
+        "37.8 KB",
+        "37.0 KB",
+        "33.2 KB",
+        "31.8 KB",
+        "143.3 KB",
+        "35.0 KB",
+        "30.0 KB",
+        "65.6 KB",
+        "107.7 KB",
+        "35.8 KB",
+        "37.8 KB",
+        "148.6 KB",
+        "38.5 KB",
+        "37.9 KB",
+        "88.9 KB",
+        "45.3 KB",
+        "64.9 KB",
+        "106.8 KB",
+        "35.1 KB",
+        "18.7 KB",
+        "37.1 KB",
+        "39.7 KB",
+        "34.9 KB",
+        "34.4 KB",
+        "144.6 KB",
+        "163.7 KB",
+        "38.6 KB",
+        "70.2 KB",
+        "37.8 KB",
+        "35.4 KB",
+        "33.1 KB",
+        "37.8 KB",
+        "38.3 KB",
+        "33.3 KB",
+        "35.2 KB",
+        "37.9 KB",
+        "91.9 KB",
+        "64.7 KB",
+        "21.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA\n<br />\n<b>Note:</b> The End User License Agreements can be viewed using Microsoft Word or a standard text editior<br /><br />\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<br />\n  Download the appropriate file by clicking the \"Download\" button located in the \"File in this Download\" section of this page. Then open the downloaded file to view the End User License Agreement.<br /><br />\n<br />\n\n\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=26339"
+        },
+        {
+            "title": "home Page for SQL Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=8504"
+        },
+        {
+            "title": "sql Server Tech Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=28107"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2803",
+    "downloadPreload": true
+}

@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Adapters for Host Systems Installation Guide and Release Notes",
+    "downloadDescription": "Migrated from DMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BAHSInstallation_Guide.docx",
+            "url": "https://download.microsoft.com/download/0/f/2/0f254964-e849-472f-b98f-773ea5b152aa/BAHSInstallation_Guide.docx",
+            "size": "56289",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:55:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BAHSInstallation_Guide.htm",
+            "url": "https://download.microsoft.com/download/0/f/2/0f254964-e849-472f-b98f-773ea5b152aa/BAHSInstallation_Guide.htm",
+            "size": "56425",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:55:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BAHSReadme.htm",
+            "url": "https://download.microsoft.com/download/0/f/2/0f254964-e849-472f-b98f-773ea5b152aa/BAHSReadme.htm",
+            "size": "61460",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:55:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BAHSReadme.docx",
+            "url": "https://download.microsoft.com/download/0/f/2/0f254964-e849-472f-b98f-773ea5b152aa/BAHSReadme.docx",
+            "size": "60173",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:55:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloads available here are the BizTalk Adapters for Host Systems Installation Guide and the BizTalk Adapters for Host Systems Release Notes (readme). These documents supercede all previous versions including those on the CD.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "BAHSInstallation_Guide.docx",
+        "BAHSInstallation_Guide.htm",
+        "BAHSReadme.htm",
+        "BAHSReadme.docx"
+    ],
+    "detailsSection_file_size": [
+        "55.0 KB",
+        "55.1 KB",
+        "60.0 KB",
+        "58.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Internet Explorer, Microsoft Word or Word viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right-hand corner of this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6264",
+    "downloadPreload": true
+}

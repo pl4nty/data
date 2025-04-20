@@ -1,0 +1,155 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 3.5",
+    "downloadDescription": "Microsoft .NET Framework 3.5 contains many new features building incrementally upon .NET Framework 2.0 and 3.0, and includes .NET Framework 2.0 service pack 1 and .NET Framework 3.0 service pack 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotNetFx35setup.exe",
+            "url": "https://download.microsoft.com/download/7/0/3/703455ee-a747-4cc8-bd3e-98a615c3aedb/dotNetFx35setup.exe",
+            "size": "2869264",
+            "version": "3.5",
+            "datePublished": "7/15/2024 3:14:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": ".NET Framework 3.5 builds incrementally on the new features added in .NET Framework 3.0. For example, feature sets in Windows Workflow Foundation (WF), Windows Communication Foundation (WCF), Windows Presentation Foundation (WPF) and Windows CardSpace. In addition, .NET Framework 3.5 contains a number of new features in several technology areas which have been added as new assemblies to avoid breaking changes. They include the following: \n<br/>\n<UL><LI>Deep integration of Language Integrated Query (LINQ) and data awareness. This new feature will let you write code written in LINQ-enabled languages to filter, enumerate, and create projections of several types of SQL data, collections, XML, and DataSets by using the same syntax. </LI>\n\n<LI>ASP.NET AJAX lets you create more efficient, more interactive, and highly-personalized Web experiences that work across all the most popular browsers. </LI>\n\n<LI>New Web protocol support for building WCF services including AJAX, JSON, REST, POX, RSS, ATOM, and several new WS-* standards. </LI>\n\n<LI>Full tooling support in Visual Studio 2008 for WF, WCF, and WPF, including the new workflow-enabled services technology. </LI>\n\n<LI>New classes in .NET Framework 3.5 base class library (BCL) that address many common customer requests.</LI> \n\n</UL>\n<br/><b>IMPORTANT:</b>\n<UL><LI> If you have installed earlier pre-release versions of .NET Framework 3.5,  then you must uninstall them prior to running this installation by using Add or Remove Programs.</LI>\n<br/>\nFor more details on this release of the framework, see the following references:\n<br/><a href=\"http://msdn2.microsoft.com/en-us/vstudio/aa700830.aspx\">http://msdn2.microsoft.com/en-us/vstudio/aa700830.aspx </a>\n<br/>\n<a href=\" http://msdn2.microsoft.com/en-us/netframework/default.aspx\"> http://msdn2.microsoft.com/en-us/netframework/default.aspx</a>\n\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5",
+    "detailsSection_file_name": [
+        "dotNetFx35setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Processor: </b>400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)<br/></LI>\n<LI><b>RAM:</b>96 MB (Minimum); 256 MB (Recommended)<br/></LI>\n<LI> <b>Hard Disk: </b>Up to 500 MB of available space may be required<br/></LI>\n<LI> <b>CD or DVD Drive: </b> Not required<br/></LI>\n<LI> <b>Display:</b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)<br/></LI>\n\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI> <b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. In addition, make sure you have <a href=\"http://support.microsoft.com/kb/893803\">Windows Installer 3.1</a> installed before you install this service pack</LI><br />\n<LI>Click the <b>Download</b> button on this page to start the download </LI><br />\n<LI>To save the download to your computer for installation at a later time, click <b>Save</b>.</LI><br />\n<LI>To cancel the installation, click <b>Cancel</b>. </LI><br />\n\n<br />\n</OL>\n----------------------------------------------<br/>\n<b>Full Redistributable Package </b><br/>\nTo download the full redistributable package, rather than the bootstrapper, click on the link below to start the download:<br/>\n<a href=\"http://download.microsoft.com/download/6/0/f/60fc5854-3cb8-4892-b6db-bd4f42510f28/dotnetfx35.exe\">.NET Framework 3.5 full package</a>",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework 2.0 Service Pack 1 KB Article",
+            "url": "http://support.microsoft.com/kb/945757"
+        },
+        {
+            "title": ".NET Framework 3.5 readme",
+            "url": "http://download.microsoft.com/download/9/a/e/9ae0f6cc-7032-408e-9ca7-989f9e4af4ec/dotNetReadMe.htm"
+        },
+        {
+            "title": ".NET Framework 3.0 Service Pack 1 KB Article",
+            "url": "http://support.microsoft.com/kb/945826"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21",
+    "downloadPreload": true
+}

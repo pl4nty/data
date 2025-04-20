@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Article Authoring Add-in for Word",
+    "downloadDescription": "This add-in for Word enables authors and editors to save Word files in the National Library of Medicine's Document Type Definitions format, which is used for publishing and archiving articles and books. Last published: January 11, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Article Authoring Add-In.zip",
+            "url": "https://download.microsoft.com/download/6/a/6/6a66c769-3e97-4600-bc29-bec7303f1ba8/Microsoft Article Authoring Add-In.zip",
+            "size": "15566983",
+            "version": "v2.0",
+            "datePublished": "6/13/2024 12:58:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This add-in for Word enables authors and editors to save Word files in the National Library of Medicine's Document Type Definitions format, which is used for publishing and archiving articles and books. In addition, the add-in enables more metadata to be captured and stored at the authoring stage and enables semantic information to be preserved through the publishing process, which is essential for enabling search and semantic analysis once the articles are archived within information repositories.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v2.0",
+    "detailsSection_file_name": [
+        "Microsoft Article Authoring Add-In.zip"
+    ],
+    "detailsSection_file_size": [
+        "14.8 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52027",
+    "downloadPreload": true
+}

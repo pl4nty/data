@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Foundation 2010 Technical Library in Compiled Help format",
+    "downloadDescription": "Downloadable CHM version of SharePoint Foundation 2010 content on TechNet.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePtFound2010.chm",
+            "url": "https://download.microsoft.com/download/1/f/b/1fba7dd4-8c5a-4e7b-8576-08677aa2aab8/SharePtFound2010.chm",
+            "size": "5452539",
+            "version": "14",
+            "datePublished": "7/15/2024 3:14:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b>Important, before you download:</b><ul>\n<li>If the topics in this file do not appear as you expect (you see \"Page cannot be displayed\" or \"Action canceled,\" for example), see the <a href=\"#instructions\">Instructions</a> section on this page.</li>\n<li>This guide is a compiled Help file and opens in HTML Help.</li>\n<li>This content is also available on the <a href=\"http://go.microsoft.com/fwlink/?LinkID=179205&clcid=0x409\">Web</a>.</li></ul><br/>\n\r\nThe SharePtFound2010.chm is a downloadable CHM that includes content in the Microsoft SharePoint Foundation 2010 technical library. The CHM is current as of the date above. For the latest information, see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=178645&clcid=0x409\">technical library on the Web</a>. <br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14",
+    "detailsSection_file_name": [
+        "SharePtFound2010.chm"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Your computer must be running an operating system that can open compiled help files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\n\r\n<a name=\"instructions\"></a>\n<br/>\r\n\n<b>Known Issue: Text in file does not appear as expected</b>\n\r\n<br/>\n<br/>\nThe text in this file might not appear as expected. The messages \"Navigation canceled,\" \"Action canceled,\" or \"The page cannot be displayed\" might appear. <br/><br/>\r\n\n<b>To open this file to view the text</b>\n\r\n<ol>\n\r\n<li>Click <b>Download</b>. </li>\n\r\n<li>In the <b>File Download</b> dialog box, click <b>Save</b>.</li>\r\n\n<li>Use the <b>Save As</b> dialog box to save the file to your computer. </li>\n\r\n<li>Find the file on your computer, right-click it, and then click <b>Properties</b>.</li>\r\n\n<li>Click <b>Unblock</b>, and then click <b>OK</b>.</li>\r\n<li>Double-click the file to open it.</li></ol>\n\r\nFor more information, see Microsoft Knowledge Base article <a href=\"http://go.microsoft.com/fwlink/?LinkId=49530&clcid=0x409 \">892675</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8472",
+    "downloadPreload": true
+}

@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 12: Design and Use Custom Shapes and Stencils in Visio 2010 (working file)",
+    "downloadDescription": "Practice designing and using custom shapes and stencils in Microsoft Visio 2010 with this diagram, part of the Visio 2010 MVP Sessions, Video 12.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "No Stencil.vss",
+            "url": "https://download.microsoft.com/download/d/c/9/dc909960-f636-4662-b2c6-d94581a58141/No Stencil.vss",
+            "size": "20480",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MVPSession12FlowchartWithCustomizedStencil.vsd",
+            "url": "https://download.microsoft.com/download/d/c/9/dc909960-f636-4662-b2c6-d94581a58141/MVPSession12FlowchartWithCustomizedStencil.vsd",
+            "size": "198656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice designing and using custom shapes and stencils in Visio 2010 with this diagram, created as a companion to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 12. MVP Sessions Video 12 covers how you can customize a shape to meet your needs and then save it as a master shape on a new stencil. Use this working file to follow along with the video and practice creating, saving, and reusing your own frequently used shapes, so you can remove your dependency on predefined templates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "No Stencil.vss",
+        "MVPSession12FlowchartWithCustomizedStencil.vsd"
+    ],
+    "detailsSection_file_size": [
+        "20.0 KB",
+        "194.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the working file to your computer and then open it with Visio 2010.",
+    "additionalInformationSection": "Watch the Design and Use Custom Shapes and Stencils video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Session-12-Design-and-use-custom-shapes-and-stencils.aspx),",
+    "relatedResourcesSection": [
+        {
+            "title": "the Visio 2010 MVP Sessions home page",
+            "url": "http://visio.microsoft.com/MVPSessions"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29240",
+    "downloadPreload": true
+}

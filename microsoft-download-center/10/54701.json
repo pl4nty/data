@@ -1,0 +1,303 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for Windows Server Cluster 2016 and above",
+    "downloadDescription": "Microsoft System Center Management Pack for Windows Server Cluster 2016 and above",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for Failover Cluster.docx",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Management Pack Guide for Failover Cluster.docx",
+            "size": "133687",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.TRK.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.TRK.msi",
+            "size": "745472",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.SVE.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.SVE.msi",
+            "size": "733184",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.RUS.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.RUS.msi",
+            "size": "774144",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PTG.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PTG.msi",
+            "size": "745472",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PTB.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PTB.msi",
+            "size": "745472",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PLK.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PLK.msi",
+            "size": "770048",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.NLD.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.NLD.msi",
+            "size": "741376",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.msi",
+            "size": "1015808",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.KOR.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.KOR.msi",
+            "size": "712704",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.JPN.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.JPN.msi",
+            "size": "704512",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ITA.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ITA.msi",
+            "size": "745472",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.HUN.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.HUN.msi",
+            "size": "774144",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.FRA.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.FRA.msi",
+            "size": "757760",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ESN.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ESN.msi",
+            "size": "749568",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ENU.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ENU.msi",
+            "size": "1015808",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.DEU.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.DEU.msi",
+            "size": "765952",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CSY.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CSY.msi",
+            "size": "765952",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CHT.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CHT.msi",
+            "size": "679936",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CHS.msi",
+            "url": "https://download.microsoft.com/download/b/d/5/bd59d8e4-4bf7-4dac-819a-1ac12e21c965/Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CHS.msi",
+            "size": "675840",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:01:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack for Windows Server Cluster 2016 and above",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1.0.0",
+    "detailsSection_file_name": [
+        "Management Pack Guide for Failover Cluster.docx",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.TRK.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.SVE.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.RUS.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PTG.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PTB.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.PLK.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.NLD.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.KOR.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.JPN.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ITA.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.HUN.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.FRA.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ESN.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.ENU.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.DEU.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CSY.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CHT.msi",
+        "Microsoft SC MP for WS Cluster 2016 and 1709 Plus.CHS.msi"
+    ],
+    "detailsSection_file_size": [
+        "130.6 KB",
+        "728.0 KB",
+        "716.0 KB",
+        "756.0 KB",
+        "728.0 KB",
+        "728.0 KB",
+        "752.0 KB",
+        "724.0 KB",
+        "992.0 KB",
+        "696.0 KB",
+        "688.0 KB",
+        "728.0 KB",
+        "756.0 KB",
+        "740.0 KB",
+        "732.0 KB",
+        "992.0 KB",
+        "748.0 KB",
+        "748.0 KB",
+        "664.0 KB",
+        "660.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>System Center 2016, 2019 and 2022</li>\r\n<li>For the support matrix of other SCOM version, please refer link below:</li>\r\n<li>https://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2016#microsoft-monitoring-agent-operating-system</li>\r\n<li>https://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2019#microsoft-monitoring-agent-operating-system</li>\r\n<li>https://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2022#microsoft-monitoring-agent-operating-system</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See MP Operations Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54701",
+    "downloadPreload": true
+}

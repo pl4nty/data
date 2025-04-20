@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 Workflow Integration Guide",
+    "downloadDescription": "This document describes how to create integrations for workflow.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WorkflowIntegrationGuide.xps",
+            "url": "https://download.microsoft.com/download/d/9/8/d98c1814-6d5a-4a4d-b917-220239ce3662/WorkflowIntegrationGuide.xps",
+            "size": "2549304",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WorkflowIntegrationGuide.pdf",
+            "url": "https://download.microsoft.com/download/d/9/8/d98c1814-6d5a-4a4d-b917-220239ce3662/WorkflowIntegrationGuide.pdf",
+            "size": "2290396",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The manual guides you through the steps to add a new workflow or extend an existing workflow. This document discusses the following topics: <br />\n<UL><LI>Workflow basics: Describes the workflow architecture, the types of workflow integrations you can create, and the sample workflow integration.</LI>\n<LI>Creating a new workflow: Describes how to build the components you need to create a new approval workflow for a back office document.</LI>\n<LI>Extending an existing workflow: Describes how to build the components you need to add new data fields to an existing workflow.</LI>\n<LI>Dynamics Workflow web service: Describes how to connect to and use the Dynamics Workflow web service from an external application.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "WorkflowIntegrationGuide.xps",
+        "WorkflowIntegrationGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you'll need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you'll need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics GP 10.0, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=220476\">System requirements for Microsoft Dynamics GP 10.0</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "Before you use this document, you should be familiar with the workflow administration. It is also assumed that you have previous knowledge of or experience using the following:<br />\n<UL><LI> Microsoft Dynamics GP approval workflow</LI><br />\n<LI> Visual Studio</LI><br />\n<LI> C# programming language</LI><br />\n<LI> Microsoft Dynamics GP Dexterity development </LI><br />\n<LI>Visual Studio Tools for Microsoft Dynamics GP</LI><br />\n<LI>Creation and use of XSLT files</LI><br />\n<LI>Web Services for Microsoft Dynamics GP</LI><br />\n<LI>eConnect for Microsoft Dynamics GP</LI><br />\n<LI>Use of the Dynamics Security Service to update web service security roles</LI><br />\n<LI>SQL Server Management Studio</LI><br />\n<LI>Experience with Internet Information Services (IIS) administration</LI></UL><br />\nAlso, Visual Studio must be installed on the workflow server where you will be creating integrations.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8025",
+    "downloadPreload": true
+}

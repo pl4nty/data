@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2019 Sizing Calculator",
+    "downloadDescription": "Exchange Server 2019 Sizing Calculator Please visit the following link for more info: https://aka.ms/Exchange2019Calc",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Calculator 10-7.xlsm",
+            "url": "https://download.microsoft.com/download/a/b/b/abb2f34f-aa5f-4aa3-b65b-0c98fc3ec3ad/Calculator 10-7.xlsm",
+            "size": "781173",
+            "version": "10.7",
+            "datePublished": "7/15/2024 5:06:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the Exchange Server 2019 Sizing Calculator",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.7",
+    "detailsSection_file_name": [
+        "Calculator 10-7.xlsm"
+    ],
+    "detailsSection_file_size": [
+        "762.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Exchange Server 2019</li>\r\n<li>Excel</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102123",
+    "downloadPreload": true
+}

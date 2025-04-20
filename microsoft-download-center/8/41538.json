@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Lync Server 2013",
+    "downloadDescription": "This paper contains step-by-step instructions to create a test lab containing a server running Lync Server ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tlg-lync-2013.pdf",
+            "url": "https://download.microsoft.com/download/3/f/0/3f0fc26b-af37-4c20-9446-f3d0b995d77a/tlg-lync-2013.pdf",
+            "size": "497765",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:24:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-lync-2013.doc",
+            "url": "https://download.microsoft.com/download/3/f/0/3f0fc26b-af37-4c20-9446-f3d0b995d77a/tlg-lync-2013.doc",
+            "size": "257024",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:24:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The paper describes how to configure a test lab consisting of a server running Lync Server 2013 by using three server computers and two client computers and then verifying that you can use Lync functionality between two Lync clients. The resulting test lab can be used to demonstrate additional Lync Server 2013 functionality.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "tlg-lync-2013.pdf",
+        "tlg-lync-2013.doc"
+    ],
+    "detailsSection_file_size": [
+        "486.1 KB",
+        "251.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li>To view the .doc version of the guide, you must have Microsoft Word 2010 or 2013.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "1. Click the <b>Download</b> button in the upper-right corner of this page to start the download.\r\n2. Click <b>Save</b> or <b>Save this program to disk</b>. \r\n3. Find the file on your hard disk and double-click it to open it. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41538",
+    "downloadPreload": true
+}

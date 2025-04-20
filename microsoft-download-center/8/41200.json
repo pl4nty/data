@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Rendering PDF Content in Windows Store Apps",
+    "downloadDescription": "Learn the new ways Windows 8.1 provides to render PDF documents in Windows Store apps, with options for using Windows Runtime or native APIs.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Code_PoduriPDF1213.zip",
+            "url": "https://download.microsoft.com/download/4/8/8/4885cade-eace-4ce2-8c96-1982d9b10cfd/Code_PoduriPDF1213.zip",
+            "size": "45055",
+            "version": "1",
+            "datePublished": "5/15/2024 3:18:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn the new ways Windows 8.1 provides to render PDF documents in Windows Store apps, with options for using Windows Runtime or native APIs.\r\n<a href=\"http://msdn.microsoft.com/magazine/dn532207\">Read the article online</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Code_PoduriPDF1213.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.0 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "See the article for details",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "See the article for details",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Magazine home page",
+            "url": "http://msdn.microsoft.com/magazine"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41200",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Certification Test Tool for Windows Server 2016",
+    "downloadDescription": "Use this test tool to validate application compatibility and certify your application for Windows Server 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Certification Test Tool Preview for Windows Server 2016.msi",
+            "url": "https://download.microsoft.com/download/9/0/2/90227d25-0870-4603-97a4-9121b1c43f60/Certification Test Tool Preview for Windows Server 2016.msi",
+            "size": "10658816",
+            "version": "0.9",
+            "datePublished": "7/15/2024 4:34:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Certification Test Tool for Windows Server 2016 is designed to help test your applications for compatibility and validate implementation of best practices for the Windows Server 2016 platform.\r\nThis tool is also recommended for Customers to evaluate third party applications and for testing Line of Business applications.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.9",
+    "detailsSection_file_name": [
+        "Certification Test Tool Preview for Windows Server 2016.msi"
+    ],
+    "detailsSection_file_size": [
+        "10.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and extract the test tool package. Navigate to the specified folder, launch the and follow directions of the wizard style tool.\r\n\r\nThe Test Tool supports validation of the following Windows Server 2016 configuration options: \r\n\r\n- Windows Server 2016 in the Desktop Experience (full installation) configuration.  This option requires to install and run your application locally on the machine where the test tool is installed and running Windows Server in the Desktop Experience (full installation) configuration.\r\n\r\n- Windows Server 2016 in the Server Core configuration. This option requires to install and run your application both locally on the machine where the test tool is installed and on another target machine running Windows Server in the Server Core configuration option.\r\n\r\n- Windows Server 2016 in the Nano Server configuration. This option requires to install and run your application both locally on the machine where the test tool is installed and on another target machine running Windows Server in the Nano Server configuration option.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54093",
+    "downloadPreload": true
+}

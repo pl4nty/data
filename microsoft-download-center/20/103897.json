@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Teams TNS One-Pager",
+    "downloadDescription": "Provide an overview of porting best practices for customer consumption.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "IC3_TNS_OnePager_v.1.0.pdf",
+            "url": "https://download.microsoft.com/download/b/1/f/b1f2c788-f139-4909-aa9e-51994b966c98/IC3_TNS_OnePager_v.1.0.pdf",
+            "size": "253381",
+            "version": "V1.0",
+            "datePublished": "7/15/2024 4:32:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "TNS One-Pager provides series of recommendation to perform simple and or complex porting order to our customer. It includes forecasted time, type of number line, porting steps and the tool to create, manage and complete porting.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V1.0",
+    "detailsSection_file_name": [
+        "IC3_TNS_OnePager_v.1.0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "247.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Teams Calling Plan.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "Download the TNS One-Pager, read through and understand the contents to perform number porting.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103897",
+    "downloadPreload": true
+}

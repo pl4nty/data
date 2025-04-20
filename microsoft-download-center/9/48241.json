@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Analytics Platform System Appliance Update 4 Documentation and Client Tools",
+    "downloadDescription": "Download the product documentation, sample database, and client tools for Microsoft Analytics Platform System. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dwloader-x64-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/dwloader-x64-pdwau4.msi",
+            "size": "2416640",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2014-ssis-pdw-destination-adapter-x64-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/sql2014-ssis-pdw-destination-adapter-x64-pdwau4.msi",
+            "size": "3395584",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msft-informatica9-connector-client-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/msft-informatica9-connector-client-pdwau4.msi",
+            "size": "1245696",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2012-ssis-pdw-destination-adapter-x64-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/sql2012-ssis-pdw-destination-adapter-x64-pdwau4.msi",
+            "size": "3395584",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2014-ssis-pdw-destination-adapter-x86-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/sql2014-ssis-pdw-destination-adapter-x86-pdwau4.msi",
+            "size": "3604480",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2012-ssis-pdw-destination-adapter-x86-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/sql2012-ssis-pdw-destination-adapter-x86-pdwau4.msi",
+            "size": "3604480",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msft-informatica9-connector-server64-pdwau4.msi",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/msft-informatica9-connector-server64-pdwau4.msi",
+            "size": "2686976",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "adventureworkspdw2012.zip",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/adventureworkspdw2012.zip",
+            "size": "5364104",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "aps.au4.chm",
+            "url": "https://download.microsoft.com/download/f/7/9/f795f009-69da-4604-b0f5-198221697d0f/aps.au4.chm",
+            "size": "14366793",
+            "version": "1",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<a href=\"https://www.microsoft.com/server-cloud/products/analytics-platform-system/overview.aspx\">Microsoft Analytics Platform System (APS)</a>, a data platform designed for data warehousing and Big Data analytics, offers deep data integration, high-speed query processing, highly scalable storage, and simple maintenance for your end-to-end business intelligence solutions. \n\nUse these downloads to start designing your APS solutions.\n<ul>\n<li><b>aps.au4.chm</b>  \u2013 a one-stop shop for understanding and using Analytics Platform System. If you don\u2019t have access to an appliance, you can still read this to see what APS is all about.</li>\n<li><b>AdventureWorksPDW2012</b> \u2013 a sample database that showcases distributed and replicated tables in a PDW database.</li>\n<li> <b>dwloader command</b>-line loading tool \u2013 a tool for loading data fast and in parallel into PDW.</li>\n<li> <b>SSIS destination adapters</b> \u2013 designed specifically for building and running Integration Services packages that load data into PDW.</li>\n<li><b>Informatica connectors</b> \u2013 designed for Informatica integration with PDW.</li>\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "dwloader-x64-pdwau4.msi",
+        "sql2014-ssis-pdw-destination-adapter-x64-pdwau4.msi",
+        "msft-informatica9-connector-client-pdwau4.msi",
+        "sql2012-ssis-pdw-destination-adapter-x64-pdwau4.msi",
+        "sql2014-ssis-pdw-destination-adapter-x86-pdwau4.msi",
+        "sql2012-ssis-pdw-destination-adapter-x86-pdwau4.msi",
+        "msft-informatica9-connector-server64-pdwau4.msi",
+        "adventureworkspdw2012.zip",
+        "aps.au4.chm"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "3.2 MB",
+        "1.2 MB",
+        "3.2 MB",
+        "3.4 MB",
+        "3.4 MB",
+        "2.6 MB",
+        "5.1 MB",
+        "13.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>dwloader requirements:</b>\n<ul>\n<li>64-bit operating systems only </li>\n<li> .NET Framework 4.0 or later</li>\n<li> dwloader is distributed only in the en-us (English) locale. </li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>Product Documentation</b>\n<br />\nThe security level on your system might be blocking the aps.au4.chm file from displaying the content. To fix this, right-click the chm file and select Properties. On the General tab find the Security item at the bottom and click Unblock. Double-click the CHM file to open it.  <br /><br />\n<b>AdventureWorksPDW2012, dwloader, and SSIS Destination Adapters</b><br />\nFor the complete installation and configuration instructions, see the Client Tools and Applications section in the product documentation. To find this, open the chm file, click the Contents tab in the left sidebar; if you can\u2019t find the Contents pane, click the Show icon in the top left corner to show the left sidebar. Expand the SQL Server Parallel Data Warehouse section, and then expand Client Tools and Applications. You should now see the installation and configuration instructions. <br /><br />\n<b>Informatica Connectors</b><br />\nSee the product documentation for installation and configuration instructions. To find the install topic, open the chm file, click the Contents pane in the left navigation sidebar, expand SQL Server Parallel Data Warehouse, expand Client Tools and Applications, and then expand Informatica Connector User Guide. Click on the topic Install the Informatica Connector.\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48241",
+    "downloadPreload": true
+}

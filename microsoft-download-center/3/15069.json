@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Understanding the Host Integration Server Client",
+    "downloadDescription": "This white paper discusses the HIS Client, including installation, configuration, architecture, and best practices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS_Client.docx",
+            "url": "https://download.microsoft.com/download/8/c/3/8c3ee0a1-af64-4ba7-893a-15bf5800df44/HIS_Client.docx",
+            "size": "700234",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper discusses the Microsoft\u00ae Host Integration Server (HIS) Client. Topics include the installation and configuration of the HIS Client as well as details around some of the underlying HIS client/server architecture and how HIS resources are located by the HIS Client. In addition, some guidance is given around best practices for the HIS Client.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HIS_Client.docx"
+    ],
+    "detailsSection_file_size": [
+        "683.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15069",
+    "downloadPreload": true
+}

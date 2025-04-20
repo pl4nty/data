@@ -1,0 +1,246 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2016 for Microsoft Office Outlook (Outlook client)",
+    "downloadDescription": "Install Microsoft Dynamics CRM 2016 for Outlook, also known as the Outlook client. CRM for Outlook enables access to your CRM data through Outlook. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Client-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/a/6/a/a6a9217d-8980-45d1-baf4-e813107989fa/CRM2016-Client-ENU-i386.exe",
+            "size": "214351608",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Client-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/a/6/a/a6a9217d-8980-45d1-baf4-e813107989fa/CRM2016-Client-ENU-amd64.exe",
+            "size": "216656736",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "This download installs Microsoft Dynamics CRM 2016 for Microsoft Office Outlook.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.00.0000.1088",
+    "detailsSection_file_name": [
+        "CRM2016-Client-ENU-i386.exe",
+        "CRM2016-Client-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "204.4 MB",
+        "206.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      Running Microsoft Dynamics CRM on a computer that has less than the recommended requirements may result in inadequate performance. For information, see:\n      <ul>\n        <li>\n          <a href=\"http://technet.microsoft.com/en-us/library/hh699680(v=crm.8).aspx\">Microsoft Dynamics CRM for Outlook hardware requirements</a>\n        </li>\n        <li>\n          <a href=\"http://technet.microsoft.com/en-us/library/hh699818(v=crm.8).aspx\">Microsoft Dynamics CRM for Outlook software requirements</a>\n        </li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          The download is a self-extracting executable file. To start the download, click <b>Download</b>.\n        </li>\n        <li>\n          When the <b>File Download</b> dialog box appears, click <b>Save</b> to save the file to your computer.\n        </li>\n        <li>\n          When you are ready to install the product, double-click the executable file, and then follow the instructions on the screen. For detailed installation and configuration steps, see <a href=\"https://technet.microsoft.com/library/hh699760(v=crm.8).aspx\">Install CRM for Outlook</a>.\n        </li>\n      </ol>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "upgrade CRM for Outlook",
+            "url": "https://technet.microsoft.com/library/hh699711.aspx"
+        },
+        {
+            "title": "install CRM for Outlook ",
+            "url": "https://technet.microsoft.com/library/hh699760.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50370",
+    "downloadPreload": true
+}

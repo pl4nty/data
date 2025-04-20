@@ -1,0 +1,148 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Service Bus",
+    "downloadDescription": "This management pack helps administrators monitor Service Bus Farms",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusv1.1.PTB.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/ServiceBusv1.1.PTB.msi",
+            "size": "446464",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ServiceBusv1.1.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/ServiceBusv1.1.msi",
+            "size": "573440",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusv1.1.KOR.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/ServiceBusv1.1.KOR.msi",
+            "size": "671744",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusv1.1.JPN.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/ServiceBusv1.1.JPN.msi",
+            "size": "491520",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusv1.1.ITA.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/ServiceBusv1.1.ITA.msi",
+            "size": "438272",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ServiceBusv1.1.FRA.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/ServiceBusv1.1.FRA.msi",
+            "size": "442368",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.ServiceBus.v1.1.ESN.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/Microsoft.ServiceBus.v1.1.ESN.msi",
+            "size": "450560",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.ServiceBus.v1.1.DEU.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/Microsoft.ServiceBus.v1.1.DEU.msi",
+            "size": "446464",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.ServiceBus.v1.1.CHT.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/Microsoft.ServiceBus.v1.1.CHT.msi",
+            "size": "466944",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.ServiceBus.v1.1.CHS.msi",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/Microsoft.ServiceBus.v1.1.CHS.msi",
+            "size": "475136",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftServiceBusMPGuide.v1.2.doc",
+            "url": "https://download.microsoft.com/download/8/c/a/8ca8efed-32be-4eb5-b54f-f7a9d12de872/MicrosoftServiceBusMPGuide.v1.2.doc",
+            "size": "1991680",
+            "version": "1.0.0.26",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Service Bus Management Pack for System Center Operations Manager supports monitoring of the Service Bus Farms.\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<li>12/09/2013 - version 1.0.0.26</li>\r\n<ul/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.26",
+    "detailsSection_file_name": [
+        "ServiceBusv1.1.PTB.msi",
+        "ServiceBusv1.1.msi",
+        "ServiceBusv1.1.KOR.msi",
+        "ServiceBusv1.1.JPN.msi",
+        "ServiceBusv1.1.ITA.msi",
+        "ServiceBusv1.1.FRA.msi",
+        "Microsoft.ServiceBus.v1.1.ESN.msi",
+        "Microsoft.ServiceBus.v1.1.DEU.msi",
+        "Microsoft.ServiceBus.v1.1.CHT.msi",
+        "Microsoft.ServiceBus.v1.1.CHS.msi",
+        "MicrosoftServiceBusMPGuide.v1.2.doc"
+    ],
+    "detailsSection_file_size": [
+        "436.0 KB",
+        "560.0 KB",
+        "656.0 KB",
+        "480.0 KB",
+        "428.0 KB",
+        "432.0 KB",
+        "440.0 KB",
+        "436.0 KB",
+        "456.0 KB",
+        "464.0 KB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> </li>\r\n</ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2</li>\r\n<ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41672",
+    "downloadPreload": true
+}

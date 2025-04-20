@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Defender Antivirus & Exploit Guard protection evaluation guide",
+    "downloadDescription": "This guide will help you evaluate the protection offered by Windows Defender Antivirus & WIndows Defender Exploit Guard in Windows 10. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-Defender-evaluation-guide.pdf",
+            "url": "https://download.microsoft.com/download/4/2/1/421c41a8-1d79-4069-b7e9-fe991c5bd60c/Windows-Defender-evaluation-guide.pdf",
+            "size": "520119",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If you\u2019re an enterprise security administrator, and you want to determine how well Windows Defender Antivirus & Windows Defender Exploit Guard protects you from viruses, malware, and potentially unwanted applications, then this guide is for you.<br />\r\n&nbsp;<br />\r\nIt explains the important features available for both small and large enterprises in Windows Defender ATP's endpoint protection capabilities, and how they will increase malware detection and protection across your network.<br />\r\n&nbsp;<br />\r\nWindows Defender Antivirus is a built-in antimalware solution that provides antimalware protection for PCs running Windows 10 and servers running Windows Server 2016. It is a core part of the security and protection capabilities in Windows 10, and operates as an Endpoint Protection Platform (EPP) alongside Windows Firewall, Device Guard, and other security technologies in Windows 10.<br />\r\nWindows Defender Antivirus makes extensive use of our cloud-based detection, advanced real-time heuristics, and integrated reputation-based identification of files, URLs, and emails. These technologies, along with our detailed and rapid signature delivery system and malware analysis, work together to provide fast detection and pre-infection response \u2013 without the traditional reliance only on periodically downloaded signatures.<br />&nbsp;<br />\r\n\r\n<b>Note:</b> This version of the guide is intended for single-machine evaluations of Windows Defender Antivirus protection. While the instructions are intended for a single machine, you can apply them to a virtual network and deploy them using a configuration or management suite, such as System Center Configuration Manager or Intune, if you wish.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows-Defender-evaluation-guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "507.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 or Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow the instructions contained in this guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54795",
+    "downloadPreload": true
+}

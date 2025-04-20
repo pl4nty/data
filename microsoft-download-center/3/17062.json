@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2010 Filter Packs",
+    "downloadDescription": "Microsoft Office 2010 Filter Packs",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FilterPack64bit.exe",
+            "url": "https://download.microsoft.com/download/0/a/2/0a28bbfa-cbfa-4c03-a739-30cca5e21659/FilterPack64bit.exe",
+            "size": "4068392",
+            "version": "1",
+            "datePublished": "7/15/2024 4:32:46 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "FilterPack32bit.exe",
+            "url": "https://download.microsoft.com/download/0/a/2/0a28bbfa-cbfa-4c03-a739-30cca5e21659/FilterPack32bit.exe",
+            "size": "3650128",
+            "version": "1",
+            "datePublished": "7/15/2024 4:32:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The Microsoft Filter Pack is a single point-of-distribution for Office IFilters. IFilters are components that allow search services to index content of specific file types, letting you search for content in those files. They are intended for use with Microsoft Search Services (Sharepoint, SQL, Exchange, Windows Search). <br/>\r\n <br/>\r\nInstall this product if you want to search for content in the file types listed below.<br/>\r\n <br/>\r\nThe Filter Pack includes:<br/>\r\n <br/>\r\nLegacy Office Filter (97-2003; .doc, .ppt, .xls)<br/>\r\nMetro Office Filter (2007; .docx, .pptx, .xlsx)<br/>\r\nZip Filter<br/>\r\nOneNote filter<br/>\r\nVisio Filter<br/>\r\nPublisher Filter<br/>\r\nOpen Document Format Filter<br/><br/>\r\nStrict Open XML Spreadsheets are not supported for processing by these IFilters<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FilterPack64bit.exe",
+        "FilterPack32bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.9 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Microsoft Filter Pack requires the Microsoft Search Service.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 1",
+        "Windows 7",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download and launch the file on this page to install Microsoft Filter Packs",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17062",
+    "downloadPreload": true
+}

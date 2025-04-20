@@ -1,0 +1,398 @@
+{
+    "error": "",
+    "downloadTitle": "Spelling dictionaries for Internet Explorer 11 Release Preview",
+    "downloadDescription": "Internet Explorer 11 Release Preview brings the \"best in class\" spelling engine and dictionaries used by Microsoft to the browser. Internet Explorer 11 Release Preview also supports autocorrection or \"correction-while-you-type\". Commonly misspelled words will be corrected immediately, making your review process faster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-pt-BR.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-pt-BR.msu",
+            "size": "816662",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-fr.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-fr.msu",
+            "size": "1218849",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-sv.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-sv.msu",
+            "size": "1857101",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-ru.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-ru.msu",
+            "size": "1404251",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-lv.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-lv.msu",
+            "size": "775958",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-sr-Cyrl.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-sr-Cyrl.msu",
+            "size": "738573",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-de.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-de.msu",
+            "size": "5441566",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-ca.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-ca.msu",
+            "size": "1010607",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-eu.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-eu.msu",
+            "size": "635337",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-hi.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-hi.msu",
+            "size": "317752",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-nn.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-nn.msu",
+            "size": "975619",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-hr.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-hr.msu",
+            "size": "597102",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-et.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-et.msu",
+            "size": "557668",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-sk.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-sk.msu",
+            "size": "945556",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-bg.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-bg.msu",
+            "size": "590075",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-es.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-es.msu",
+            "size": "1165893",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-he.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-he.msu",
+            "size": "4814728",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-ar.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-ar.msu",
+            "size": "8311917",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-en.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-en.msu",
+            "size": "1001311",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-ro.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-ro.msu",
+            "size": "646707",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-id.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-id.msu",
+            "size": "623981",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-da.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-da.msu",
+            "size": "1060827",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-uk.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-uk.msu",
+            "size": "1010516",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-el.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-el.msu",
+            "size": "665554",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-pl.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-pl.msu",
+            "size": "1804693",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-fi.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-fi.msu",
+            "size": "1288400",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-sl.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-sl.msu",
+            "size": "636571",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-sr-Latn.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-sr-Latn.msu",
+            "size": "744956",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-gl.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-gl.msu",
+            "size": "437062",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-nl.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-nl.msu",
+            "size": "1322835",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-pt-PT.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-pt-PT.msu",
+            "size": "1138535",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-tr.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-tr.msu",
+            "size": "591545",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-nb.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-nb.msu",
+            "size": "1513812",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-it.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-it.msu",
+            "size": "1450512",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-cs.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-cs.msu",
+            "size": "1682401",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IE-Spelling-lt.msu",
+            "url": "https://download.microsoft.com/download/b/d/9/bd9a7786-6c54-4425-be04-7914e5d77fbc/IE-Spelling-lt.msu",
+            "size": "1372058",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:27:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Internet Explorer 11 Release Preview brings the \"best in class\" spelling engine and dictionaries used by Microsoft to the browser. Internet Explorer 11 Release Preview also supports autocorrection or \"correction-while-you-type.\" Commonly misspelled words will be corrected immediately, making your review process faster.\r\n\r\n<BR/><BR/>Internet Explorer 11 Release Preview Spelling dictionaries are available for the following languages\r\n<LI>ar - Arabic</LI>\r\n<LI>bg - Bulgarian</LI>\r\n<LI>ca - Catalan</LI>\r\n<LI>cs - Czech</LI>\r\n<LI>da - Danish</LI>\r\n<LI>de - German</LI>\r\n<LI>el - Greek</LI>\r\n<LI>en - English</LI>\r\n<LI>es - Spanish</LI>\r\n<LI>et - Estonian</LI>\r\n<LI>eu - Basque</LI>\r\n<LI>fi - Finnish</LI>\r\n<LI>fr - French</LI>\r\n<LI>gl - Galician</LI>\r\n<LI>he - Hebrew</LI>\r\n<LI>hi - Hindi</LI>\r\n<LI>hr - Croatian</LI>\r\n<LI>id - Indonesian</LI>\r\n<LI>it - Italian</LI>\r\n<LI>lt - Lithuanian</LI>\r\n<LI>lv - Latvian</LI>\r\n<LI>nb - Norwegian (Bokm\u00e5l)</LI>\r\n<LI>nl - Dutch</LI>\r\n<LI>nn - Norwegian (Nynorsk)</LI>\r\n<LI>pl - Polish</LI>\r\n<LI>pt-BR - Portuguese (Brazilian)</LI>\r\n<LI>pt-PT - Portuguese (Portugal)</LI>\r\n<LI>ro - Romanian</LI>\r\n<LI>ru - Russian</LI>\r\n<LI>sk - Slovak</LI>\r\n<LI>sl - Slovenian</LI>\r\n<LI>sr-Cyrl - Serbian (Cyrillic)</LI>\r\n<LI>sr-Latn - Serbian (Latin)</LI>\r\n<LI>sv - Swedish</LI>\r\n<LI>tr - Turkish</LI>\r\n<LI>uk - Ukrainian</LI>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2841134",
+        "name": "KB2841134"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.0.0",
+    "detailsSection_file_name": [
+        "IE-Spelling-pt-BR.msu",
+        "IE-Spelling-fr.msu",
+        "IE-Spelling-sv.msu",
+        "IE-Spelling-ru.msu",
+        "IE-Spelling-lv.msu",
+        "IE-Spelling-sr-Cyrl.msu",
+        "IE-Spelling-de.msu",
+        "IE-Spelling-ca.msu",
+        "IE-Spelling-eu.msu",
+        "IE-Spelling-hi.msu",
+        "IE-Spelling-nn.msu",
+        "IE-Spelling-hr.msu",
+        "IE-Spelling-et.msu",
+        "IE-Spelling-sk.msu",
+        "IE-Spelling-bg.msu",
+        "IE-Spelling-es.msu",
+        "IE-Spelling-he.msu",
+        "IE-Spelling-ar.msu",
+        "IE-Spelling-en.msu",
+        "IE-Spelling-ro.msu",
+        "IE-Spelling-id.msu",
+        "IE-Spelling-da.msu",
+        "IE-Spelling-uk.msu",
+        "IE-Spelling-el.msu",
+        "IE-Spelling-pl.msu",
+        "IE-Spelling-fi.msu",
+        "IE-Spelling-sl.msu",
+        "IE-Spelling-sr-Latn.msu",
+        "IE-Spelling-gl.msu",
+        "IE-Spelling-nl.msu",
+        "IE-Spelling-pt-PT.msu",
+        "IE-Spelling-tr.msu",
+        "IE-Spelling-nb.msu",
+        "IE-Spelling-it.msu",
+        "IE-Spelling-cs.msu",
+        "IE-Spelling-lt.msu"
+    ],
+    "detailsSection_file_size": [
+        "797.5 KB",
+        "1.2 MB",
+        "1.8 MB",
+        "1.3 MB",
+        "757.8 KB",
+        "721.3 KB",
+        "5.2 MB",
+        "986.9 KB",
+        "620.4 KB",
+        "310.3 KB",
+        "952.8 KB",
+        "583.1 KB",
+        "544.6 KB",
+        "923.4 KB",
+        "576.2 KB",
+        "1.1 MB",
+        "4.6 MB",
+        "7.9 MB",
+        "977.8 KB",
+        "631.5 KB",
+        "609.4 KB",
+        "1.0 MB",
+        "986.8 KB",
+        "650.0 KB",
+        "1.7 MB",
+        "1.2 MB",
+        "621.7 KB",
+        "727.5 KB",
+        "426.8 KB",
+        "1.3 MB",
+        "1.1 MB",
+        "577.7 KB",
+        "1.4 MB",
+        "1.4 MB",
+        "1.6 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<LI> Internet Explorer 11 Release Preview</LI>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "<ol>\n        <li>\n          Click the <b>Download</b> button on this page to start the download.\n        </li>\n        <li>Do one of the following:</li>\n        <ul>\n          <li>\n            To start the installation immediately, click <b>Run</b>.\n          </li>\n          <li>\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\n          </li>\n          <li>\n            To cancel the installation, click <b>Cancel</b>.\n          </li>\n        </ul>\n      </ol>\n    ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40289",
+    "downloadPreload": true
+}

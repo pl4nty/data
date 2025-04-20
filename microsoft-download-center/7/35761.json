@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "CustomerService Architecture Guides",
+    "downloadDescription": "Improving Customer Service_Architecture Guides",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CustomerService_Architecture_Guide.docx",
+            "url": "https://download.microsoft.com/download/3/7/9/37945924-bc1b-47f7-9995-bbaa5382774e/CustomerService_Architecture_Guide.docx",
+            "size": "14195865",
+            "version": "1",
+            "datePublished": "7/15/2024 3:31:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides reference definitions and conceptual, logical, and physical architectures for each of the three solution phases, and guidance about how to customize the solution for the client\u2019s specific priorities. The Solution Implementation team should use this document as a guide and for reference during an Application Design Session.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "CustomerService_Architecture_Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "13.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007/2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35761",
+    "downloadPreload": true
+}

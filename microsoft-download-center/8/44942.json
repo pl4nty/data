@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Wireless Display Adapter Files",
+    "downloadDescription": "This Download is for files published for Microsoft Wireless Display Adapter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msft_opensourceLicense.html",
+            "url": "https://download.microsoft.com/download/a/5/7/a579d5a2-c441-4d27-987a-0a20c6e59f00/msft_opensourceLicense.html",
+            "size": "1217879",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:53:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Download and release is for files (Firmware, version and OSS files) published for Microsoft Wireless Display Adapter.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "msft_opensourceLicense.html"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8.1 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "For Firmware Download, use Microsoft Wireless Display Adapter app button to download the firmware and update the adapter. Third Party Notices file should be opened in DMS webpage when Third Party Notices is clicked on the app Settings Charm bar.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44942",
+    "downloadPreload": true
+}

@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server White Paper: SQL Server 2008 Compliance Guide",
+    "downloadDescription": "This paper provides an overview of how to approach compliance for the management of the SQL Server database. It describes the compliance-related features of SQL Server 2008 and how to apply them to IT controls. This paper includes tips and scripts to help jump-start compliance solution development.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReachingCompliance.docx",
+            "url": "https://download.microsoft.com/download/b/e/6/be6f02af-882e-4039-b737-8741e0c1b342/ReachingCompliance.docx",
+            "size": "5843277",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Organizations across the globe are being inundated with regulatory requirements. They also have a strong need to better manage their IT systems to ensure they are operating efficiently and staying secure. Microsoft is often asked to provide guidance and technology to assist organizations struggling with compliance. The SQL Server 2008 Compliance Guidance white paper was written to help organizations and individuals understand how to use the features of the Microsoft\u00ae SQL Server\u00ae 2008 database software to address their compliance needs. This paper serves as an accompaniment to the SQL Server 2008 compliance software development kit (SDK), which provides sample code and guidance for understanding SQL Server 2008 compliance features and using them for developing solutions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ReachingCompliance.docx"
+    ],
+    "detailsSection_file_size": [
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Microsoft Word 2007</LI><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button on this page. To open the file immediately, click <b>Open</b>. To save the file to a location on your computer, click <b>Save</b>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6808",
+    "downloadPreload": true
+}

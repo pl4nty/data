@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration Specification for AV1 Video Coding",
+    "downloadDescription": "This specification defines extensions to DirectX Video Acceleration (DXVA) to support decoding of AV1 video.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DXVA_AV1.docx",
+            "url": "https://download.microsoft.com/download/2/7/3/27369285-6fb0-4ec5-af7c-eae2c5a7852b/DXVA_AV1.docx",
+            "size": "120439",
+            "version": "1",
+            "datePublished": "7/15/2024 4:24:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is the specification for support of AV1 according to the AV1 video coding standard as published by the Alliance for Open Media within the Windows DirectX Video Acceleration (DXVA) API/DDI context. The document describes high-level design concepts and specific AV1 extensions to DXVA interfaces and data structures. This document specifies only off-host VLD profiles for AV1 decoding.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "DXVA_AV1.docx"
+    ],
+    "detailsSection_file_size": [
+        "117.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 starting from Windows 10 November 2019 Update",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101577",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Kinect Body Tracking SDK 1.0.1",
+    "downloadDescription": "Azure Kinect Body Tracking SDK is an SDK for tracking bodies from your Azure Kinect DK device. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure Kinect Body Tracking SDK 1.0.1.msi",
+            "url": "https://download.microsoft.com/download/7/1/8/718d3f75-c59e-4418-a355-90d643a4432f/Azure Kinect Body Tracking SDK 1.0.1.msi",
+            "size": "437645312",
+            "version": "1.0.1",
+            "datePublished": "7/15/2024 4:21:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Kinect Body Tracking SDK is an SDK for tracking bodies from your Azure Kinect DK device. <br />\r\nFor more information see <a href=\"https://Azure.com/Kinect\">https://Azure.com/Kinect</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1",
+    "detailsSection_file_name": [
+        "Azure Kinect Body Tracking SDK 1.0.1.msi"
+    ],
+    "detailsSection_file_size": [
+        "417.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Body Tracking SDK is available for the Windows API (Win32) for native C/C++ Windows applications and is not currently available to UWP applications. Azure Kinect DK is not supported for Windows 10 in S mode.<br />\r\nFor more information see <a href=\"https://Azure.com/Kinect\">https://Azure.com/Kinect</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Run the installer. More details are available at <a href=\"https://aka.ms/kinectdocs\">https://aka.ms/kinectdocs</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100942",
+    "downloadPreload": true
+}

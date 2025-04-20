@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Best practices for using fine-grained permissions (SharePoint Products and Technologies)",
+    "downloadDescription": "Describes best practices for using FGP when implementing SharePoint 2010 Products or SharePoint Products and Technologies.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sharepointfgpbestpractices.docx",
+            "url": "https://download.microsoft.com/download/c/1/d/c1d02a30-b2ec-4b7d-a267-b983085f1a91/sharepointfgpbestpractices.docx",
+            "size": "1151495",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This article describes the use of fine-grained permissions (FGP) for SharePoint\u00ae 2010 Products and SharePoint\u00ae Products and Technologies; performance issues related to FGP; and best practices for configuring solutions that include FGP. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sharepointfgpbestpractices.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Requirements: To download and read a white paper, you must have Microsoft Word.\r\n</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <B>Download</B>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9030",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Secure Exchange Online with Privileged Identity Management",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Secure Exchange Online with Privileged Identity Management.pdf",
+            "url": "https://download.microsoft.com/download/6/e/f/6ef94851-1c88-480c-a6de-de6f48f67f3a/Secure Exchange Online with Privileged Identity Management.pdf",
+            "size": "802876",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Exchange Online security should start with securing your tenant using Privileged Identity Management (PIM). Follow the least privilege principle and don't have your administrative accounts granted persistent high permissions. In this session, we'll discuss how a large company implemented PIM for all Exchange admins and how to create custom roles to allow specific Exchange admins to grant admin consent for a subset of OAuth 2.0 permission scopes.\r\n\r\nRecording of presentation by Ingo Gegenwarth is at https://youtu.be/emIrwPDm1wY.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Secure Exchange Online with Privileged Identity Management.pdf"
+    ],
+    "detailsSection_file_size": [
+        "784.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Open file with PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104611",
+    "downloadPreload": true
+}

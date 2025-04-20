@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "PortQry Command Line Port Scanner Version 2.0",
+    "downloadDescription": "Download PortQryV2.exe, a command-line utility that you can use to help troubleshoot TCP/IP connectivity issues. Portqry.exe runs on Windows 2000-based computers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PortQryV2.exe",
+            "url": "https://download.microsoft.com/download/0/d/9/0d9d81cf-4ef2-4aa5-8cea-95a935ee09c9/PortQryV2.exe",
+            "size": "151112",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "PortQryV2.exe is a command-line utility that you can use to help troubleshoot TCP/IP connectivity issues. Portqry.exe runs on Windows 2000-based computers.The utility reports the port status of TCP and UDP ports on a computer you choose. For details, see Knowledge Base Article <A HREF=\"http://support.microsoft.com/default.aspx?scid=kb;en-us;310099\">Knowledge Base Article 310099</A>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "PortQryV2.exe"
+    ],
+    "detailsSection_file_size": [
+        "147.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>TCP/IP must be installed</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "read the Knowledge Base Article About This Download",
+            "url": "http://go.microsoft.com/?linkid=2352232"
+        },
+        {
+            "title": "training Center for Windows 2000",
+            "url": "http://go.microsoft.com/?linkid=2352233"
+        },
+        {
+            "title": "community Resources for Windows Server",
+            "url": "http://go.microsoft.com/?linkid=2352234"
+        },
+        {
+            "title": "tcP/IP Implementation Details for Windows 2000",
+            "url": "http://go.microsoft.com/?linkid=2352235"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17148",
+    "downloadPreload": true
+}

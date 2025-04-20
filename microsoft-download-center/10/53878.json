@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Learning from Explicit and Implicit Supervision Jointly For Algebra Word Problems",
+    "downloadDescription": "This is a public release of the dataset corresponding the paper \"Learning from Explicit and Implicit Supervision Jointly For Algebra Word Problems\" that will appear in EMNLP 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "implicit.zip",
+            "url": "https://download.microsoft.com/download/f/4/5/f454f5ac-fcf1-4b49-86be-4da172c0942f/implicit.zip",
+            "size": "326666",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:41:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a public release of the dataset corresponding the paper \"Learning from Explicit and Implicit Supervision Jointly For Algebra Word Problems\" that will appear in EMNLP 2016.\r\nThis set only contains the implicit supervised examples. (the word problems with noisy and partially annotated solutions.)\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "implicit.zip"
+    ],
+    "detailsSection_file_size": [
+        "319.0 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53878",
+    "downloadPreload": true
+}

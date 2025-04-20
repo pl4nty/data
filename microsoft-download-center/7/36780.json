@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Customer Payment Journal Service (Public Sector Only)",
+    "downloadDescription": "This white paper provides an overview of operations exposed in the Customer payment journal service in Microsoft Dynamics AX 2012. It outlines some common development scenarios and provides step-by-step instructions to integrate with the customer payment journal service. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Customer payment journal service in AX 2012_Public Sector.pdf",
+            "url": "https://download.microsoft.com/download/3/b/8/3b87760e-5588-4522-b511-5a89f9d61954/Customer payment journal service in AX 2012_Public Sector.pdf",
+            "size": "1064234",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:33:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document discusses the customer payment journal service, along with its operations and considerations for its implementation. In Accounts receivable in Microsoft Dynamics AX 2012 R2, payments can be received from customers electronically or through an external cashiering system. The customer payment journal service (LedgerCustPaymJournalService) provides operations to accept external payments and create the required journals and journal lines. The payments are then matched against open transactions and settled automatically based on a system-defined settlement priority. The customer journal payment service can be used in conjunction with the customer transaction service to find a customer and the customer\u2019s open transactions. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Customer payment journal service in AX 2012_Public Sector.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36780",
+    "downloadPreload": true
+}

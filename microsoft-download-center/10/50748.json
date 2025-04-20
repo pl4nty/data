@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sales Materials",
+    "downloadDescription": "This zipped folder includes sales materials like telesales scripts, infographics, sales decks, datasheets etc. for CSP partners interested in launching Hybrid IaaS offers on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sales materials.zip",
+            "url": "https://download.microsoft.com/download/f/3/3/f3326fb4-728e-473e-b389-33369c8e23d7/Sales materials.zip",
+            "size": "1509466",
+            "version": "January 2014",
+            "datePublished": "5/15/2024 4:01:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes sales materials like telesales scripts, infographics, sales decks, datasheets etc. for CSP partners interested in launching Hybrid IaaS offers on Azure\r\n.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Sales materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50748",
+    "downloadPreload": true
+}

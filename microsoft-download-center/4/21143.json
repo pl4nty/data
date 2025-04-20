@@ -1,0 +1,158 @@
+{
+    "error": "",
+    "downloadTitle": "November 2007 Security Releases ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on November 13th, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200711.iso",
+            "url": "https://download.microsoft.com/download/e/2/d/e2dcad50-f514-4b50-b100-d53090ec7e5b/Windows-KB913086-200711.iso",
+            "size": "501325824",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:16:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on\nWindows Update on November 13th, 2007. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all\nlanguages at the same time.<br /><br />\n\n<b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at\n<a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />\n\nThis DVD5 image contains the following updates: <br/>\n<b>\n  <a href=\"http://support.microsoft.com/kb/943460\">KB943460</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=103190\">(MS07-061)</a>\n</b><ul>\n  <LI>Windows Server 2003 - 18 languages</LI>\n  <LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n  <LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n  <LI>Windows XP - 24 languages</LI>\n</ul>\n<b>\n  <a href=\"http://support.microsoft.com/kb/941672\">KB941672</a>\n</b> / <b>\n  <a href=\"http://go.microsoft.com/fwlink/?LinkId=99391\">(MS07-062)</a>\n</b>\n<ul>\n  <LI>Windows 2000 - 24 languages</LI>\n  <LI>Windows Server 2003 - 18 languages</LI>\n  <LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n  <LI>Windows Server 2003 x64 Edition - 11 languages</LI>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB943460; KB941672",
+        "name": "KB943460; KB941672"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-061; MS07-062",
+        "name": "MS07-061; MS07-062"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200711.iso"
+    ],
+    "detailsSection_file_size": [
+        "478.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Select a file to download at the top of this page, or choose a different language from the drop-down list and then click <b>Change</b>.</LI>\n<LI>To download the DVD5 ISO image to your computer and burn a DVD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI>\n<LI>Use the directions for your DVD burner to create a DVD from the image.</LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21143",
+    "downloadPreload": true
+}

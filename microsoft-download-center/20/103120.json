@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "SSMA Assessment Tool Files",
+    "downloadDescription": "SSMA Assessment Tool Files",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SSMA Assessment Tool.zip",
+            "url": "https://download.microsoft.com/download/1/9/a/19ac2aaa-eb0a-4ef0-a8f1-1c9db82e8113/SSMA Assessment Tool.zip",
+            "size": "276083",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:58:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Toolkit to produce the xml files needed to run SSMA assessment in console mode and consolidate all the SSMA assessment reports for a consolidated view of migration efforts required with ability to drill down into a single instance/schema, ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SSMA Assessment Tool.zip"
+    ],
+    "detailsSection_file_size": [
+        "269.6 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>\r\n\r\nThe file is a zipped folder that contains the tool and supporting documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To start the installation immediately, choose <b>Open</b> </li> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103120",
+    "downloadPreload": true
+}

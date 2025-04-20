@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Image-Grounded Conversation dataset",
+    "downloadDescription": "In this update, we introduce an additional dataset to support the novel task of Image Grounded Conversation (IGC), an extension of Visual Question Generation (VQG), now in the context of a conversation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IGC_crowd_test.csv",
+            "url": "https://download.microsoft.com/download/c/d/e/cdeadb58-ced8-4c69-8c71-1796cb0ea4da/IGC_crowd_test.csv",
+            "size": "1754274",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IGC_crowd_val.csv",
+            "url": "https://download.microsoft.com/download/c/d/e/cdeadb58-ced8-4c69-8c71-1796cb0ea4da/IGC_crowd_val.csv",
+            "size": "1049400",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Given an image, the system should 'ask a natural and engaging question' and furthermore, the system should give a natural and interesting response to the question, as a turn in an ongoing conversation. This dataset (IGC) includes image-grounded conversations consisting of an image, a question, a response, and up to four further responses, which together constitute a conversation. In addition, we provide up to four additional questions that could have been asked, and up to four additional responses to a first question, so that the diversity of possible questions and answers can be studied. We provide a test set and a development set, each with approximately 5K images. This dataset is described in <a href=\"https://arxiv.org/abs/1701.08251\">https://arxiv.org/abs/1701.08251</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IGC_crowd_test.csv",
+        "IGC_crowd_val.csv"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows 8, Windows 10, Android, Apple Mac OS X </li></ul> \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Unix",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ul><li>Click <B>Download</B> and follow the instructions. </li></ul> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55324",
+    "downloadPreload": true
+}

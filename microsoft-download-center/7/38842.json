@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Secure Software Trends in Healthcare",
+    "downloadDescription": "This whitepaper explores the importance of secure application development to the healthcare sector. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Secure Software Trends in Healthcare.pdf",
+            "url": "https://download.microsoft.com/download/8/a/d/8ad73ff6-25b6-4d9a-8ad7-a7073351c302/Secure Software Trends in Healthcare.pdf",
+            "size": "237807",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper explores the importance of secure application development to the healthcare sector. The paper examines the risks associated with the move to electronic healthcare records and discusses how the Microsoft Security Development Lifecycle can help organizations build more secure applications and services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Secure Software Trends in Healthcare.pdf"
+    ],
+    "detailsSection_file_size": [
+        "232.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported operating system",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38842",
+    "downloadPreload": true
+}

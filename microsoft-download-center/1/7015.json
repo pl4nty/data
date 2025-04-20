@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Office Add-in: Office Sounds",
+    "downloadDescription": "Install these sounds to receive audio feedback that confirms your actions as you work in Office.  NOTE: In recent Office versions, this add-in is no longer required to enable feedback with sound. See details for more information.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sounds.msi",
+            "url": "https://download.microsoft.com/download/3/e/5/3e5a9490-18eb-4d08-8fb3-97f7111bb132/sounds.msi",
+            "size": "663552",
+            "version": "1",
+            "datePublished": "1/17/2020 10:59:03 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "NOTE:  This add-in is no longer supported or required  to enable feedback with sound for Office 2016 or later versions. The \"Provide feedback with sound\" setting can now be enabled within Word 2016, Excel 2016, PowerPoint 2016, and Outlook 2016 for Windows Desktop. Please visit our Office Sounds support page (listed in the links below) for more information about how to enable sounds in these apps. <br />\r\n<br />\r\nYou can install these sounds to receive audio feedback that confirms your actions as you work in Microsoft Excel, Microsoft Outlook, Microsoft PowerPoint, and Microsoft Word for Windows Desktop. For example, you will hear sounds when you:<br />\n<ul><br />\n<li>Paste or delete content</li><br />\n<li>Are autocorrected</li><br />\n<li>Send e-mail</li><br />\n<li>Open the task pane</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sounds.msi"
+    ],
+    "detailsSection_file_size": [
+        "648.0 KB"
+    ],
+    "detailsSection_file_date": "1/17/2020",
+    "systemRequirementsSection": "Windows minimum requirement:\r\nWindows 7 is the minimum supported version for this download.\r\n\r\n<ul><li><b>This download works with the following Office programs:</b><br />\n<ul><br />\r\n<li>Microsoft Office 2013</li>\r\n<li>Microsoft Office 2010</li>\n<li>Microsoft Office 2007</li>\n</ul><br />\n</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>sounds.msi</b> program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\n<b>Note:</b> If you have used the Office Sounds add-in on your computer with an earlier version of Microsoft Office (for example, if you installed the add-in for Microsoft Office XP and then upgraded to Office 2003), you will need to uninstall and then reinstall this add-in.\n<br />\n<br />\n<b>To start using Office Sounds</b><br /><br /><ol><li>In the <b>File</b> menu, click <b>\n    Options</b>.</li><li>In the <b>Options</b> dialog box, click the <b>Advanced</b> tab, select \n    the <b>Provide feedback with sound</b> check box, and then click <b>OK</b>.</li></ol>\n<b>To select or clear specific sounds</b><br /><br /><ol><li>On the <b>Start</b> menu, point to <b>Settings</b>, click <b>Control \n    Panel</b>, and then double-click the <b>Sounds and Multimedia</b> \n    icon.</li><li>In the <b>Sound Events</b> list, scroll down to <b>Microsoft Office</b>, \n    and select the sound you wish to turn on or off.</li><li>Adjust the volume by sliding the <b>Volume</b> bar.</li><li>Click <b> OK</b>.</li></ol>\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>sounds.exe</b> program file.\n<br/>\n<ol>\n<li>On the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>. </li>\n<li>Double-click <b>Add/Remove Programs</b>. </li>\n<li>In the list of currently installed programs, select <b>Microsoft Office \n      Sounds</b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office Downloads",
+            "url": "http://go.microsoft.com/?linkid=3779694"
+        },
+        {
+            "title": "see How Microsoft Office Has Evolved",
+            "url": "http://go.microsoft.com/?linkid=2501550"
+        },
+        {
+            "title": "sign Up for Microsoft Download Notifications",
+            "url": "http://go.microsoft.com/?linkid=3891130"
+        },
+        {
+            "title": "getting started with Office Sounds",
+            "url": "https://support.office.com/en-us/article/Getting-started-with-Office-Sounds-49fda9be-cce5-4c72-a87f-b11000197f5f?ui=en-US&rs=en-US&ad=US"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7015",
+    "downloadPreload": true
+}

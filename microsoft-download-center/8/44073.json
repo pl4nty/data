@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "StorSimple Adapter for SharePoint",
+    "downloadDescription": "The StorSimple Adapter for SharePoint is a Remote BLOB Storage (RBS) provider that allows you to transparently extend StorSimple storage and data protection to SharePoint server farms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StorSimple_SharePoint_Adapter.msi",
+            "url": "https://download.microsoft.com/download/d/8/f/d8f19a4e-3310-4e87-9a91-82b141329bfd/StorSimple_SharePoint_Adapter.msi",
+            "size": "6406144",
+            "version": "1",
+            "datePublished": "7/15/2024 3:41:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The StorSimple Adapter for SharePoint uses the SQL Server Remote BLOB Storage (RBS) feature to enable your on-premises SharePoint server farm to move Binary Large Object (BLOB) content from the SQL Server content databases to Microsoft Azure StorSimple. The download includes the adapter software and complete instructions for installing, upgrading, and uninstalling the adapter. The StorSimple Adapter for SharePoint plugs into the SharePoint Central Administration portal, allowing you to manage your entire SharePoint solution \u2013 including BLOBs stored on Microsoft Azure StorSimple \u2013 from a central location.\r\n<br /> ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "StorSimple_SharePoint_Adapter.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\r\n<b>Supported SharePoint versions </b> <br /> <br />\r\nSharePoint Server 2010 or SharePoint Server 2013\r\n<br /> <br />\r\n<b> Supported SQL Server versions </b> <br /> <br />\r\nSQL Server 2008 Enterprise Edition, SQL Server 2008 R2 Enterprise Edition, SQL Server 2012 Enterprise Edition <br /> <br />\r\n<b>Supported StorSimple Devices </b> <br /> <br />\r\nStorSimple 8000 series storage array <br /> \r\nStorSimple 7000 series storage array <br /> \r\nStorSimple 5000 series storage array <br /> \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>Copy the installer to a web front-end (WFE) server that is configured to run the SharePoint Central Administration web application.  </li>\r\n<li>Use an account with administrator privileges to log on to the WFE server.  </li>\r\n<li>Double-click the installer. The StorSimple Adapter for SharePoint Setup Wizard starts. Click Next to begin the installation.  </li>\r\n<li>In the StorSimple Adapter for SharePoint setup configuration page, select an installation location, type the IP address for the Azure StorSimple device, and then click Next.  </li>\r\n<li>In the setup confirmation page, click Install.  </li>\r\n<li>Click Finish to close the Setup Wizard. </li>\r\n</ul> <br />\r\nFor complete configuration and installation instructions, go to <a \r\nhref=\"https://azure.microsoft.com/en-us/documentation/articles/storsimple-adapter-for-sharepoint/\">https://azure.microsoft.com/en-us/documentation/articles/storsimple-adapter-for-sharepoint/</a>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44073",
+    "downloadPreload": true
+}

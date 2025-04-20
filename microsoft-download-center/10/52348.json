@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSIL backend for lcc v4.2",
+    "downloadDescription": "An lcc v4.2 backend that emits MSIL. Last published: December 11, 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "lccnet.zip",
+            "url": "https://download.microsoft.com/download/0/d/e/0de7dbb8-7e18-48c5-bb70-c5ffd74d40dc/lccnet.zip",
+            "size": "145077",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An lcc v4.2 backend that emits MSIL. Including this backend in a standard lcc v4.2 distribution makes it possible to run ANSI/ISO C programs under the .NET Framework.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0a",
+    "detailsSection_file_name": [
+        "lccnet.zip"
+    ],
+    "detailsSection_file_size": [
+        "141.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52348",
+    "downloadPreload": true
+}

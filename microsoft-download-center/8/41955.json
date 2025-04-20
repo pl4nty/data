@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Certificates, authentication, and authorization hybrid flow ",
+    "downloadDescription": "Learn about authentication, authorization, and the role of certificates in a one-way inbound SharePoint hybrid topology. A search solution is used as an example of how a request that originates from SharePoint Online flows through this topology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Certificates_authentication_and_ authorization_hybrid_flow.vsd",
+            "url": "https://download.microsoft.com/download/a/c/4/ac47c045-45f9-4d4d-a4bd-51c8622fbaa4/Certificates_authentication_and_ authorization_hybrid_flow.vsd",
+            "size": "627712",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:24:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn about authentication, authorization, and the role of certificates in a one-way inbound SharePoint hybrid topology.  \r\nA search solution is used as an example of how a request that originates from SharePoint Online flows through this topology.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "Certificates_authentication_and_ authorization_hybrid_flow.vsd"
+    ],
+    "detailsSection_file_size": [
+        "613.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Visio document. Users who do not have Microsoft Visio can view this document through the downloadable <A HREF=\" http://www.microsoft.com/en-us/download/details.aspx?id=35811\"> Visio Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.\r\n</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hybrid for SharePoint Server 2013",
+            "url": "http://aka.ms/sphyb"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41955",
+    "downloadPreload": true
+}

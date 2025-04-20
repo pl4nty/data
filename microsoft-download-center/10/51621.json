@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Certification Training Materials",
+    "downloadDescription": "These materials are prepared to explain the Skype for Business Certification related topics.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Unified Skype and Lync video testing.pdf",
+            "url": "https://download.microsoft.com/download/1/7/8/1788d600-2426-4c91-b22b-1d677b3a75e0/Unified Skype and Lync video testing.pdf",
+            "size": "3192807",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:13:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Unified Skype and Lync audio testing.pdf",
+            "url": "https://download.microsoft.com/download/1/7/8/1788d600-2426-4c91-b22b-1d677b3a75e0/Unified Skype and Lync audio testing.pdf",
+            "size": "3901098",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:13:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These training materials address test tools, methods, and provide guidelines to be considered during development of a product that is to meet Skype for Business certification requirements.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Unified Skype and Lync video testing.pdf",
+        "Unified Skype and Lync audio testing.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "3.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A - this download contains docuemntation only.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<br/>\n<b>To install this download</b>\n<br/>\n<br/>\nClick <b>Download</b> and save the file to a directory on your local hard disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51621",
+    "downloadPreload": true
+}

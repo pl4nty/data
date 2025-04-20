@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Office Communicator Web Access: Microsoft Office Communicator Web Access Lab Quick Start",
+    "downloadDescription": "This guide describes the steps necessary to deploy Communicator Web Access in a lab environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CommunicatorWebAccess_QuickStart.doc",
+            "url": "https://download.microsoft.com/download/b/b/a/bba908ce-a17e-4449-8790-7a978a3f6df8/CommunicatorWebAccess_QuickStart.doc",
+            "size": "939520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This guide describes the steps necessary to deploy Communicator Web Access in a lab environment in a single-forest, single-domain topology. <br />\nThis guide contains the following sections:<br />\n<ul><br />\n<li>Lab Scenario Overview: Describes the features that are demonstrated in each of the two lab scenarios.</li><br />\n<li>Lab Scenario 1: Explains the requirements and installation steps for deploying Communicator Web Access for internal client access.</li><br />\n<li>Lab Scenario 2: Explains the requirements and installation steps for deploying Communicator Web Access for remote client access.</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CommunicatorWebAccess_QuickStart.doc"
+    ],
+    "detailsSection_file_size": [
+        "917.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office applications:</b></li>\n<ul>\n<li>Microsoft Office Word 2003</li>\n<li>Microsoft Word 2002</li>\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>CommunicatorWebAccess_QuickStart.doc</b> to open the document. </li>\n</ol>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file CommunicatorWebAccess_QuickStart.doc.",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        },
+        {
+            "title": "microsoft Office Live",
+            "url": "http://www.microsoft.com/office/officelive/default.mspx"
+        },
+        {
+            "title": "live Communications Server Newsgroups",
+            "url": "http://www.microsoft.com/technet/community/newsgroups/server/livecomm.mspx"
+        },
+        {
+            "title": "live Communications Server Deployment Resources",
+            "url": "http://office.microsoft.com/en-us/FX011450741033.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7533",
+    "downloadPreload": true
+}

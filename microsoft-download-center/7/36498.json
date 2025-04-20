@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Variations planning worksheet for SharePoint Server 2013 and SharePoint Online",
+    "downloadDescription": "Use this worksheet to capture necessary details about source sites and target sites when you plan variations for sites in SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Variations-planning-worksheet-2013.xls",
+            "url": "https://download.microsoft.com/download/1/9/7/197206eb-93dc-465e-a084-2596438569d8/Variations-planning-worksheet-2013.xls",
+            "size": "64512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this worksheet to capture necessary details about source sites and target sites when you plan variations for sites in SharePoint Server 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Variations-planning-worksheet-2013.xls"
+    ],
+    "detailsSection_file_size": [
+        "63.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel 2007, Microsoft Excel 2010, Microsoft Excel 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard \r\n\r\ndisk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36498",
+    "downloadPreload": true
+}

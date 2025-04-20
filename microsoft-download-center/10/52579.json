@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Conditional Maximum-Entropy Training Tool",
+    "downloadDescription": "This tool enables training and testing of maximum-entropy models using a general-feature file format. Last published: July 25, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "maxent.msi",
+            "url": "https://download.microsoft.com/download/5/6/4/5643c351-b130-48e0-ba39-d19f207bd407/maxent.msi",
+            "size": "2855936",
+            "version": "1.0.0.2",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool enables training and testing of maximum-entropy models using a general-feature file format. The tool also supports RProp and GIS as training algorithms.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.2",
+    "detailsSection_file_name": [
+        "maxent.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52579",
+    "downloadPreload": true
+}

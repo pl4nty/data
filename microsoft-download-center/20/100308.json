@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 8 for System Center 2016 Service Manager",
+    "downloadDescription": "Update Rollup 8 for System Center 2016 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4516987_i386_7.5.7487.176.exe",
+            "url": "https://download.microsoft.com/download/1/e/1/1e1a6ca6-0cc3-4027-aa88-59752f6baefb/SCSM2016_CU_KB4516987_i386_7.5.7487.176.exe",
+            "size": "72803248",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SCSM2016_CU_KB4516987_amd64_7.5.7487.176.exe",
+            "url": "https://download.microsoft.com/download/1/e/1/1e1a6ca6-0cc3-4027-aa88-59752f6baefb/SCSM2016_CU_KB4516987_amd64_7.5.7487.176.exe",
+            "size": "73035184",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article describes the issues that are fixed in Update Rollup 8 for Microsoft System Center 2016 Service Manager. \r\n<br/>\r\n<b>Issues that are fixed and improvements</b><br/>\r\n<ul>\r\n<li>Fixes an issue that occurs when you create requests that include files as attachments in Self Service Portal that generates erroneous failure messages when the requests are successfully generated.</li>\r\n<li>The user inputs while submitting a service request offering are now persisted in case of validation failures except file attachments and query results.</li>\r\n<li>Filtering in the My Requests page has been enhanced to also search the Description of the requests in addition to their ID, Title and Status.</li>\r\n<li>The email link in the Self-Service Portal has been fixed to compose the mail with the right \u2018To\u2019 address</li>\r\n<li>Fixed an issue which prevented the user to input HTML tag characters in the request details page in Internet Explorer.</li>\r\n<li>Made enhancements to improve the start-up time of the SDK service</li>\r\n</ul><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4516987",
+        "name": "KB4516987"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "SCSM2016_CU_KB4516987_i386_7.5.7487.176.exe",
+        "SCSM2016_CU_KB4516987_amd64_7.5.7487.176.exe"
+    ],
+    "detailsSection_file_size": [
+        "69.4 MB",
+        "69.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows Server 2012 R2, Windows Server 2016\r\n\r\nSystem Center 2016 Service Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4516987\">KB4516987</a> for detailed installation instructions.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100308",
+    "downloadPreload": true
+}

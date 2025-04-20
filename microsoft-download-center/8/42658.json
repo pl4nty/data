@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 R2  Software License Terms and Third Party Notices",
+    "downloadDescription": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (EULA) - GP 2013 R2 - RTM License - June 2014 - English - Final.pdf",
+            "url": "https://download.microsoft.com/download/f/b/e/fbe34b4b-08f3-4bfa-ab97-b9a46a1a4ac0/MBS (EULA) - GP 2013 R2 - RTM License - June 2014 - English - Final.pdf",
+            "size": "674784",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:26:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GP 2013 R2 Third Party Notices.pdf",
+            "url": "https://download.microsoft.com/download/f/b/e/fbe34b4b-08f3-4bfa-ab97-b9a46a1a4ac0/GP 2013 R2 Third Party Notices.pdf",
+            "size": "404426",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:26:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "MBS (EULA) - GP 2013 R2 - RTM License - June 2014 - English - Final.pdf",
+        "GP 2013 R2 Third Party Notices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "659.0 KB",
+        "394.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42658",
+    "downloadPreload": true
+}

@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Azure SQL DB Audit Logs Report Template and Specification",
+    "downloadDescription": "This Excel Reports Template can be used for deep analysis of Azure SQL DB Audit log data. In addition, a specification for Audit Log data is provided.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "02-Azure SQL DB Blob Audit Logs Format Specification.docx",
+            "url": "https://download.microsoft.com/download/d/8/d/d8d90ba1-977f-466b-a839-7823ff37fd02/02-Azure SQL DB Blob Audit Logs Format Specification.docx",
+            "size": "44216",
+            "version": "1",
+            "datePublished": "7/15/2024 4:54:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "01-Azure SQL DB Audit Logs Report Template.xlsx",
+            "url": "https://download.microsoft.com/download/d/8/d/d8d90ba1-977f-466b-a839-7823ff37fd02/01-Azure SQL DB Audit Logs Report Template.xlsx",
+            "size": "192177",
+            "version": "1",
+            "datePublished": "7/15/2024 4:54:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "03-Azure SQL DB Table Audit Logs Format Specification.docx",
+            "url": "https://download.microsoft.com/download/d/8/d/d8d90ba1-977f-466b-a839-7823ff37fd02/03-Azure SQL DB Table Audit Logs Format Specification.docx",
+            "size": "63125",
+            "version": "1",
+            "datePublished": "7/15/2024 4:54:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the Excel template to analyze your Azure SQL DB Audit Logs for Table auditing. Audit logs data can be loaded into the Excel file using the <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=39379\">Power Query for Excel add-in</a>. This template may also be used as a base for creating your own customized reports on top of your Audit data.\r\n<br/>\r\n<br/>\r\nIn addition, a specification detailing the Audit log data is available for both Table and Blob auditing.\r\n<br/>\r\n<br/>\r\nFor detailed instructions on setting up and analyzing Azure SQL DB Audit Logs, please review our <a href=\"http://go.microsoft.com/fwlink/?LinkId=403539\">Get started with SQL database auditing</a> guide.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "02-Azure SQL DB Blob Audit Logs Format Specification.docx",
+        "01-Azure SQL DB Audit Logs Report Template.xlsx",
+        "03-Azure SQL DB Table Audit Logs Format Specification.docx"
+    ],
+    "detailsSection_file_size": [
+        "43.2 KB",
+        "187.7 KB",
+        "61.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> Excel 2013 with Power Query for Excel add-in <i>(It is recommended to use the 64-bit version of Excel) </i> </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the Excel template and save locally, to load your audit log data.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "introduction to Azure SQL DB Auditing",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=403539"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43711",
+    "downloadPreload": true
+}

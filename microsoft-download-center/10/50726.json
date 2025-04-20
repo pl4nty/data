@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 365 Mapping of Cloud Security Alliance Cloud Control Matrix 3.0.1",
+    "downloadDescription": "Provides a detailed overview of how Office 365 maps to the security, privacy, compliance, and risk management controls defined in the Cloud Security Alliance Cloud Control Matrix. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Office 365 Mapping of CSA CCM v3.0.1.pdf",
+            "url": "https://download.microsoft.com/download/5/b/c/5bc63d9a-d3fe-4958-8058-54fbe4590f1f/Microsoft Office 365 Mapping of CSA CCM v3.0.1.pdf",
+            "size": "1158264",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:01:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In this document, Microsoft provides a detailed overview of how Office 365 maps to the security, privacy, compliance, and risk management controls defined in version 3.0.1-11-24-2015 of the Cloud Security Alliance (CSA) Cloud Control Matrix (CCM). The CSA is a not-for-profit, member-driven organization of leading industry practitioners focused on helping customers make the right decisions when moving to the cloud. The CCM provides a listing of security and privacy controls across 16 domains. \nOn the following pages, Office 365 security practices are mapped to the control guidance provided by the CCM. The first two columns (CCM Control Domain and ID and CCM v3.0.1 Control Specification) consist of content directly from the CCM identifying relevant controls.  The third column (Office 365 Response) consists of short explanations of how Office 365 controls satisfy the CSA recommendations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Office 365 Mapping of CSA CCM v3.0.1.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Macintosh",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the PDF file to your computer and open with a PDF reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50726",
+    "downloadPreload": true
+}

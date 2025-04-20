@@ -1,0 +1,164 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4 (Web Installer)",
+    "downloadDescription": "The Microsoft .NET Framework 4 web installer package downloads and installs the .NET Framework components required to run on the target machine architecture and OS. An Internet connection is required during the installation. .NET Framework 4 is required to run and develop applications to target the .NET Framework 4.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotNetFx40_Full_setup.exe",
+            "url": "https://download.microsoft.com/download/1/b/e/1be39e79-7e39-46a3-96ff-047f95396215/dotNetFx40_Full_setup.exe",
+            "size": "889416",
+            "version": "4",
+            "datePublished": "7/15/2024 3:10:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The .NET Framework is Microsoft's comprehensive and consistent programming model for building applications that have visually stunning user experiences, seamless and secure communication, and the ability to model a range of business processes.<br /><br />\r\nThe .NET Framework 4 works side by side with older Framework versions. Applications that are based on earlier versions of the Framework will continue to run on the version targeted by default.<br /><br />\r\nThe Microsoft .NET Framework 4 provides the following new features and improvements:<br /><br />\r\n<ul>\r\n  <li>Improvements in Common Language Runtime (CLR) and Base Class Library (BCL)</li>\r\n    <ul>\r\n      <li>Performance improvement including better multicore support, background garbage collection, and profiler attach on server.</li>\r\n      <li>New memory mapped file and numeric types.</li>\r\n      <li>Easier debugging including dump debugging, Watson minidumps, mixed mode debugging for 64 bit and code contracts.</li>\r\n      <li>For a comprehensive list of enhancements to CLR and BCL go <a href=\"http://msdn.microsoft.com/en-us/library/ms171868(v=VS.100).aspx\">here</a>.</li>\r\n    </ul>\r\n  <li>Innovations in the Visual Basic and C# languages, for example statement lambdas, implicit line continuations, dynamic dispatch, and named/optional parameters.</li>\r\n  <li>Improvements in Data Access and Modeling</li>\r\n    <ul>\r\n      <li>The Entity Framework enables developers to program against relational databases using .NET objects and Language Integrated Query (LINQ). It has many new features, including persistence ignorance and POCO support, foreign key associations, lazy loading, test-driven development support, functions in the model, and new LINQ operators. Additional features include better n-tier support with self-tracking entities, customizable code generation using T4 templates, model first development, an improved designer experience, better performance, and pluralization of entity sets. For more information go <a href=\"http://msdn.microsoft.com/en-us/library/ex6y04yf(VS.100).aspx\">here</a>.</li>\r\n      <li>WCF Data Services is a component of the .NET Framework that enables you to create REST-based services and applications that use the Open Data Protocol (OData) to expose and consume data over the Web. WCF Data Services has many new features, including enhanced BLOB support, data binding, row count, feed customization, projections, and request pipeline improvements. Built-in integration with Microsoft Office 2010 now makes it possible to expose Microsoft Office SharePoint Server data as an OData feed and access that data feed by using the WCF Data Services client library. For more information go <a href=\"http://msdn.microsoft.com/en-us/library/ee373845(VS.100).aspx\">here</a>.</li>\r\n    </ul>\r\n  <li>Enhancements to ASP.NET</li>\r\n    <ul>\r\n      <li>More control over HTML, element IDs and custom CSS that make it much easier to create standards-compliant and SEO-friendly web forms.</li>\r\n      <li>New dynamic data features including new query filters, entity templates, richer support for Entity Framework 4, and validation and templating features that can be easily applied to existing web forms.</li>\r\n      <li>Web forms support for new AJAX library improvements including built-in support for content delivery networks (CDNs).</li>\r\n      <li>For a comprehensive list of enhancements to ASP.NET go <a href=\"http://www.asp.net/learn/whitepapers/aspnet4/\">here</a>.</li>\r\n    </ul>\r\n  <li>Improvements in Windows Presentation Foundation (WPF)</li>\r\n    <ul>\r\n      <li>Added support for Windows 7 multi-touch, ribbon controls, and taskbar extensibility features.</li>\r\n      <li>Added support for Surface 2.0 SDK.</li>\r\n      <li>New line-of-business controls including charting control, smart edit, data grid, and others that improve the experience for developers who build data centric applications.</li>\r\n      <li>Improvements in performance and scalability.</li>\r\n      <li>Visual improvements in text clarity, layout pixel snapping, localization, and interoperability.</li>\r\n      <li>For a comprehensive list of enhancements to WPF go <a href=\"http://msdn.microsoft.com/en-us/library/bb613588(VS.100).aspx\">here</a>.</li>\r\n    </ul>\r\n  <li>Improvements to Windows Workflow (WF) that enable developers to better host and interact with workflows. These include an improved activity programming model, an improved designer experience, a new flowchart modeling style, an expanded activity palette, workflow-rules integration, and new message correlation features. The .NET Framework 4 also offers significant performance gains for WF-based workflows. For a comprehensive list of enhancements to WF go <a href=\"http://msdn.microsoft.com/en-us/library/dd489410(VS.100).aspx\">here</a>.</li>\r\n  <li>Improvements to Windows Communication Foundation (WCF) such as support for WCF Workflow Services enabling workflow programs with messaging activities, correlation support. Additionally, .NET Framework 4 provides new WCF features such as service discovery, routing service, REST support, diagnostics, and performance. For a comprehensive list of enhancements to WCF go <a href=\"http://msdn.microsoft.com/en-us/library/dd456789(VS.100).aspx\">here</a>.</li>\r\n  <li>Innovative new parallel-programming features such as parallel loop support, Task Parallel Library (TPL), Parallel LINQ (PLINQ), and coordination data structures which let developers harness the power of multi-core processors.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "dotNetFx40_Full_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "868.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n  <li>Windows XP SP3</li>\r\n  <li>Windows Server 2003 SP2</li>\r\n  <li>Windows Vista SP1 or later</li>\r\n  <li>Windows Server 2008 (not supported on Server Core Role)</li>\r\n  <li>Windows 7</li>\r\n  <li>Windows Server 2008 R2 (not supported on Server Core Role)</li>\r\n  <li>Windows 7 SP1</li>\r\n  <li>Windows Server 2008 R2 SP1</li>\r\n</ul>\r\n</ul>\r\n<ul>\r\n<li><b>Supported Architectures:</b></li>\r\n<ul>\r\n  <li>x86</li>\r\n  <li>x64</li>\r\n  <li>ia64 (some features are not supported on ia64 for example, WPF)</li>\r\n</ul>\r\n<li><b>Hardware Requirements:</b></li>\r\n<ul>\r\n  <li>Recommended Minimum: Pentium 1 GHz or higher with 512 MB RAM or more</li>\r\n  <li>Minimum disk space:</li>\r\n<ul>\r\n  <li>x86 \u2013 850 MB</li>\r\n  <li>x64 \u2013 2 GB</li>\r\n</ul>\r\n</ul>\r\n<li><b>Prerequisites:</b></li>\r\n<ul>\r\n  <li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=889482fc-5f56-4a38-b838-de776fd4138c&displaylang=en\">Windows Installer 3.1</a> or later</li>\r\n  <li><a href=\"http://www.microsoft.com/windows/downloads/ie/getitnow.mspx\">Internet Explorer 5.01</a> or later</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\r\n<li><b>Important:</b> Make sure that your computer has the latest Windows service pack and critical updates. To find security updates, visit <a href=\"http://www.windowsupdate.com/\">Windows Update</a>. If you are installing on XP 64 bit or Windows 2003 you might need to install the Windows Imaging Component. The Windows Imaging Component 32 bit can be found <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=8E011506-6307-445B-B950-215DEF45DDD8\">here</a> . The Windows Imaging Component 64 bit can be found <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=F64654AC-6E26-41D9-A90A-0E7783B864EE\">here</a> .</li>\r\n<li>On this page, locate the Download button and then click it to start the download.</li>\r\n<li>To start the installation immediately, click <b>Run</b>.</li>  \r\n<li>To save the download to your computer so that you can install it later, click <b>Save</b>.</li>  \r\n<li>To cancel the installation, click <b>Cancel</b>.</li>  \r\n</ol>\r\n<br /><br /><b>Web Developers and Administrators</b><br /><br />\r\nTo install the .NET Framework on a Web server or to setup an entire Web development environment, use the <a href=\"http://www.microsoft.com/web/gallery/install.aspx?appid=NETFX4RTM\">Microsoft Web Platform Installer</a>.",
+    "additionalInformationSection": "<br/><b>Additional Requirements for Server Installation</b><br /><br />\r\nIf you have to perform a server installation, your computer must have the following software in addition to the basic requirements:<br /><br />\r\n<ul>\r\n  <li>Internet Information Services (IIS) version 6.0 or later. To access the features of ASP.NET, IIS with the latest security updates must be installed before the .NET Framework is installed. ASP.NET is supported only on Windows XP Professional, Windows Server 2003, Windows Server 2008, and Windows Server 2008 R2.</li>\r\n  <li>(Recommended) Microsoft Data Access Components 2.8 or later</li>\r\n</ul><br /><br />\r\n<b>NOTE:</b> Most users do not have to perform a server installation. If you are unsure whether to perform a server installation, just perform a basic installation.<br /><br />\r\n\r\n<br />\r\n    <b>Installer for Windows Server 2008 R2 Service Pack 1 Server Core</b><br /><br />\r\n       This version of Microsoft .NET Framework 4 does not support the Server Core role on \r\n       Windows Server 2008 and Windows Server 2008 R2. To get a version of Microsoft .NET Framework 4 \r\n       that supports Server Core role on Windows Server 2008 R2 Service Pack 1 go to <a href=\"http://go.microsoft.com/fwlink/?LinkID=211830\">Microsoft .NET Framework 4 \r\n       (Standalone Installer) for Server Core.</a><br /><br />\r\n\r\n<br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkID=186763\">.NET Framework 4 Readme</a><br/>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "what\u2019s New in the .NET Framework 4?",
+            "url": "http://msdn.microsoft.com/en-us/library/ms171868(v=VS.100).aspx"
+        },
+        {
+            "title": ".NET Framework 4 (Standalone Installer)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "the .NET Framework Developer Center",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=0856eacb-4362-4b0d-8edd-aab15c5e04f5&u=http%3a%2f%2fgo.microsoft.com%2ffwlink%2f%3fLinkId%3d53646"
+        },
+        {
+            "title": "visual Studio 2010 Site",
+            "url": "http://www.microsoft.com/visualstudio/products/2010/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17851",
+    "downloadPreload": true
+}

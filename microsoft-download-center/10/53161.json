@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "O365 Extend GTM materials",
+    "downloadDescription": "This zipped folder contains GTM materials for Office 365 Extend in EMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "O365 Extend GTM materials.zip",
+            "url": "https://download.microsoft.com/download/2/1/c/21cc99dd-fe45-45eb-998a-ed82e097d94d/O365 Extend GTM materials.zip",
+            "size": "41568450",
+            "version": "July 2016",
+            "datePublished": "7/15/2024 4:12:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains GTM materials for Office 365 Extend in EMS.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "O365 Extend GTM materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53161",
+    "downloadPreload": true
+}

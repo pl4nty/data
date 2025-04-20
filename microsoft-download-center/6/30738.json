@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "830578  Description of the NBLookupV1.exe Command-Line Utility",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "NBLookupV1.exe",
+            "url": "https://download.microsoft.com/download/f/3/a/f3adc5b4-2716-4ef3-bbb8-f4cd4446d415/NBLookupV1.exe",
+            "size": "162888",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Description Template",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "NBLookupV1.exe"
+    ],
+    "detailsSection_file_size": [
+        "159.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30738",
+    "downloadPreload": true
+}

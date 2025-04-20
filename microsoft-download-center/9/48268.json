@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2015 Best Practices Documentation",
+    "downloadDescription": "The documents published here contain information about best practices when you implement and customize Microsoft Dynamics CRM. Additional best practice documents will be published here as they become available. This information is useful for IT professionals, customizers, technical architects, and technical decision makers who plan, design, and customize Microsoft Dynamics CRM. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM_UX_Design_Guidelines.pdf",
+            "url": "https://download.microsoft.com/download/9/5/9/95991807-78b5-42ff-b7a0-29b74badde32/CRM_UX_Design_Guidelines.pdf",
+            "size": "1686714",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\r\n<li><b>UX_Design_Guidelines.pdf </b>. There are many variables that affect the impact and success of a CRM implementation. Irrespective of the methodology followed or the variables in play, there are some common traits across most successful CRM implementations. The <i>UX Design Guidelines for Microsoft Dynamics CRM</i> white paper describes in detail the general best practices for designing a user experience (UX) flow, usage recommendations for CRM UX components, and general design guidelines. \r\nApplies to Microsoft Dynamics CRM Online and Microsoft Dynamics CRM 2015. \r\n</li>\r\n\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CRM_UX_Design_Guidelines.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word or Word reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download link to download this document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48268",
+    "downloadPreload": true
+}

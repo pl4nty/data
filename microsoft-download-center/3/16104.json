@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "IM an Expert for Microsoft Lync Server 2010 Documentation Version 1.5",
+    "downloadDescription": "This download provides documentation for the IM an Expert for Microsoft Lync Server 2010 service",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "IMX_Admin_SetupMaintain.doc",
+            "url": "https://download.microsoft.com/download/d/5/a/d5a844a4-36eb-48dd-8a3d-85dae144a51c/IMX_Admin_SetupMaintain.doc",
+            "size": "3068416",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IMX_EndUser_GetStarted.doc",
+            "url": "https://download.microsoft.com/download/d/5/a/d5a844a4-36eb-48dd-8a3d-85dae144a51c/IMX_EndUser_GetStarted.doc",
+            "size": "99840",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download provides documentation for IM an Expert for Microsoft Lync Server 2010, including the IM an Expert for Microsoft Lync Server 2010 Setup and Maintenance Guide for administrators, and the IM an Expert for Microsoft Lync Server 2010 Getting Started Guide for end-users. IM an Expert is an instant messaging question and answer service that you can set up within your organization. IM an Expert enables real-time sharing of expertise within your organization. Users can ask the IM an Expert service a question and the service will locate an expert and connect the asker with the expert. Answers are compiled from dialog between the asker and the expert and posted to the organization\u2019s internal IM an Expert website, where they can be searched. IM an Expert provides a great way for people within an organization to save time by sharing their knowledge and expertise. Perhaps equally important, the retained IM an Expert questions and answers can provide a valuable knowledge base that highlights common questions and resolutions to issues within your organization. Users can become experts by entering their Profile information (keywords and URLs related to their area of expertise) on the IM an Expert Website. The IM an Expert administrator may also elect to use other sources of expertise information to help identify experts.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "IMX_Admin_SetupMaintain.doc",
+        "IMX_EndUser_GetStarted.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB",
+        "97.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Documents included in this download can be viewed with Microsoft Office Word 2003, 2007, or 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the Download links and then save the documents to a file folder.",
+    "relatedResourcesSection": [
+        {
+            "title": "im an Expert for Microsoft Lync Server 2010",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=213950"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16104",
+    "downloadPreload": true
+}

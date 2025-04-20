@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013: App Overview for IT Pro ",
+    "downloadDescription": "The app model in SharePoint 2013 enables SharePoint environments to add functionality quickly and securely. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sp2013_apps-overview.vsd",
+            "url": "https://download.microsoft.com/download/2/2/f/22ff5430-13e7-431f-8980-c7b95ccf3c26/sp2013_apps-overview.vsd",
+            "size": "1764864",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sp2013_apps-overview.pdf",
+            "url": "https://download.microsoft.com/download/2/2/f/22ff5430-13e7-431f-8980-c7b95ccf3c26/sp2013_apps-overview.pdf",
+            "size": "401392",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Apps for SharePoint are applications that provide specific information and funtionality to a SharePoint Site. This overview illustrates how to get, install, use, and manage apps for SharePoint. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sp2013_apps-overview.vsd",
+        "sp2013_apps-overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "392.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30373",
+    "downloadPreload": true
+}

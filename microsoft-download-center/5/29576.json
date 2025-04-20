@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Async Targeting Pack for Visual Studio 2012",
+    "downloadDescription": "Async Targeting Pack for Visual Studio 2012: End-User License Agreement, Installation and Release Notes",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AsyncTargetingPack-EULA.html",
+            "url": "https://download.microsoft.com/download/d/8/9/d89fa559-b8a5-487f-8a25-cb62bffefb43/AsyncTargetingPack-EULA.html",
+            "size": "8825",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 3:29:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AsyncTargetingPack-InstallationAndReleaseNotes.html",
+            "url": "https://download.microsoft.com/download/d/8/9/d89fa559-b8a5-487f-8a25-cb62bffefb43/AsyncTargetingPack-InstallationAndReleaseNotes.html",
+            "size": "12927",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 3:29:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The \"Async Targeting Pack for Visual Studio 2012\" enables projects targeting .NET Framework 4.0 or Silverlight 5 to use the\r\nAsync language feature in C# 5 and Visual Basic 11. This pack requires Visual Studio 2012 and will not work with Visual Studio 2010.\r\n<br /><br />\r\nThe pack contains the API support necessary to use the 'async' and 'await' keywords in C# 5.0 and Visual Basic 11, as well as\r\na set of Task-based adapter APIs that allow using some of the existing asynchronous APIs with the new language keywords.\r\n<br /><br />\r\nThis targeting pack is not required for projects targeting .NET Framework 4.5 or .NET for Windows Store apps. It is only required\r\nfor projects targeting Silverlight 5 and .NET Framework 4.0. Earlier platform releases are not supported.\r\n<br /><br />\r\nMore info on Task-based asynchronous programming in .NET: <a href=\"http://msdn.microsoft.com/async\">http://msdn.microsoft.com/async</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "AsyncTargetingPack-EULA.html",
+        "AsyncTargetingPack-InstallationAndReleaseNotes.html"
+    ],
+    "detailsSection_file_size": [
+        "8.6 KB",
+        "12.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Async Targeting Pack requires Microsoft Visual Studio 2012 RC or RTM.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<b>If you are already familiar with NuGet:</b><br />\r\nThe package ID of the Async Targeting Pack that you can use when searching for it is: &quot;<b>Microsoft.CompilerServices.AsyncTargetingPack</b>&quot;.<br />\r\nJump to the NuGet <a href=\"http://nuget.org/packages/Microsoft.CompilerServices.AsyncTargetingPack/1.0.0\">package information page</a> for management console instructions.\r\n<br /><br />\r\n<b>If you are not yet very familiar with NuGet:</b><br />\r\nDownload the \"<a href=\"http://download.microsoft.com/download/D/8/9/D89FA559-B8A5-487F-8A25-CB62BFFEFB43/AsyncTargetingPack-InstallationAndReleaseNotes.html\">AsyncTargetingPack-InstallationAndReleaseNotes.html</a>\" document from this page and follow the links in that document to learn how to use NuGet with Microsoft Visual Studio.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29576",
+    "downloadPreload": true
+}

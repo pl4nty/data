@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "NPS Extension for Azure MFA",
+    "downloadDescription": "NPS Extension for Azure MFA enables you to add cloud-based MFA to your RADIUS clients",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "release_notes.txt",
+            "url": "https://download.microsoft.com/download/b/f/f/bffb4f12-9c09-4dbc-a4af-08e51875eea9/release_notes.txt",
+            "size": "12217",
+            "version": "1.2.2893.1",
+            "datePublished": "12/3/2024 9:43:04 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "NpsExtnForAzureMfaInstaller.exe",
+            "url": "https://download.microsoft.com/download/b/f/f/bffb4f12-9c09-4dbc-a4af-08e51875eea9/NpsExtnForAzureMfaInstaller.exe",
+            "size": "7040440",
+            "version": "1.2.2893.1",
+            "datePublished": "12/3/2024 9:43:04 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Network Policy Server (NPS) extension for Azure Multi-Factor-Authentication (Azure MFA) provides a simple way to add cloud-based MFA capabilities to your authentication infrastructure using your existing NPS servers. With the NPS extension, you\u2019ll be able to add phone call, SMS, or phone app MFA to your existing authentication flow without having to significantly increase your existing authentication infrastructure. \r\n\r\nMore information: https://go.microsoft.com/fwlink/?linkid=840978\r\n\r\nTo see the release notes, select \"download\" above and download the release_notes text file.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.2893.1",
+    "detailsSection_file_name": [
+        "release_notes.txt",
+        "NpsExtnForAzureMfaInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.9 KB",
+        "6.7 MB"
+    ],
+    "detailsSection_file_date": "12/3/2024",
+    "systemRequirementsSection": "Windows Server 2012 or above with the NPS component enabled",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2016",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Release Candidate",
+        "Windows Server 2012 Standard",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Please read and review the installation instructions on https://go.microsoft.com/fwlink/?linkid=840978 before installing this extension. \r\n\r\nClean install:\r\n1. On the NPS server where you want to install the extension, enable the NPS component, then download and run NpsExtnForAzureMfaInstaller.exe \r\n2. Run the PowerShell script from C:\\Program Files\\Microsoft\\AzureMfa\\Config (where C:\\ is your installation drive)\r\n3. Configure your RADIUS client to forward requests to the NPS server you configured with the extension\r\n\r\nNOTE: If running PS3 or PS4 and PS script fails to find install-module cmdlet, manually install the following package: https://www.microsoft.com/en-us/download/details.aspx?id=51451 \r\n\r\nUpgrade:\r\nUninstall the existing NPS extension from Add/Remove Programs, run NpsExtnForAzureMfaInstaller.exe, and restart NPS.\r\n\r\nFor full instructions and documentations, see https://go.microsoft.com/fwlink/?linkid=840978 . ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54688",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Smart Client Architecture and Design Guide",
+    "downloadDescription": "This guide gives you prescriptive guidance on how to overcome architectural challenges and design issues when building smart client solutions. It also provides guidance on how to combine the benefits of traditional rich client applications with the manageability of thin client applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCAG.pdf",
+            "url": "https://download.microsoft.com/download/9/a/1/9a1115fd-8ba8-4aa0-a82e-07044bd12ac0/SCAG.pdf",
+            "size": "4199383",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Welcome to the Smart Client Architecture and Design guide. Smart client applications are a powerful alternative to thin client applications. They can provide users with a rich and responsive user interface, the ability to work offline, and a way to take advantage of local hardware and software resources. In addition, they can be designed to run on a broad spectrum of client devices, including desktop PCs, Tablet PCs, and handheld mobile devices such as Pocket PCs and Smartphones. Smart clients give users access to information and remote services within a powerful and intuitive client environment, and are an effective solution for flexible user-oriented applications and for increasing user productivity and satisfaction.<br />\n<br />\nSmart client applications can be designed to combine the traditional benefits of a rich client application with the manageability benefits of a thin client application. However, to fully realize the benefits of a smart client application, you need to consider a number of architectural and design issues. This guide describes the architectural and design challenges you will face when designing and implementing a smart client application. It provides guidance on how to overcome these challenges, allowing you realize the benefits of a smart client application in as short a time as possible.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SCAG.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader 4.0 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 95",
+        "Windows 98",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "smart Client Architecture and Design Guide on MSDN",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnpag/html/scag.asp"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10463",
+    "downloadPreload": true
+}

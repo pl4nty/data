@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Windows Server 2012 Base Configuration",
+    "downloadDescription": "This Microsoft Test Lab Guide (TLG) provides you with step-by-step instructions to create the Windows Server 2012 Base Configuration test lab, using computers running Windows Server 2012 and Windows 8. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2012_BaseConfig.docx",
+            "url": "https://download.microsoft.com/download/0/9/1/091f928d-6391-4bb6-ad38-c09226e44f65/WindowsServer2012_BaseConfig.docx",
+            "size": "213122",
+            "version": "March 2013",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Microsoft Test Lab Guide (TLG) provides step-by-step instructions to create the Windows Server 2012 Base Configuration test lab, using computers running Windows Server 2012 and Windows 8. With the resulting test lab environment, you can build test labs based on other TLGs from Microsoft, TLG extensions in the TechNet Wiki, or a test lab of your own design that can include Microsoft or non-Microsoft products. For a test lab based on physical computers, you can image the drives for future test labs. For a test lab based on virtual machines, you can create snapshots of the base configuration virtual machines. This enables you to easily return to the base configuration test lab, where most of the routine infrastructure and networking services have already been configured, so that you can focus on building a test lab for the product, technology, or solution of interest.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2013",
+    "detailsSection_file_name": [
+        "WindowsServer2012_BaseConfig.docx"
+    ],
+    "detailsSection_file_size": [
+        "208.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hosting the Windows Server 2012 Base Configuration test lab with Windows Server 2012 Hyper-V",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/16277.hosting-the-windows-server-2012-base-configuration-test-lab-with-windows-server-2012-hyper-v.aspx"
+        },
+        {
+            "title": "main Test Lab Guides portal page",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/1262.test-lab-guides-en-us.aspx"
+        },
+        {
+            "title": "test Lab Guides for Windows Server 2012",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/7807.windows-server-2012-test-lab-guides-en-us.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29010",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Setting Up the BizTalk Adapter for DB2 Using Receive Ports",
+    "downloadDescription": "The purpose of this document is to show how to configure Microsoft\u00ae BizTalk\u00ae Server 2006 with the BizTalk Adapter for DB2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DB2 Adapter Receive Ports.doc",
+            "url": "https://download.microsoft.com/download/5/0/f/50f52b9b-bcac-4c42-9912-64f4bb8861da/DB2 Adapter Receive Ports.doc",
+            "size": "646144",
+            "version": "v.",
+            "datePublished": "7/15/2024 3:14:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The purpose of this document is to show how to configure Microsoft\u00ae BizTalk\u00ae Server 2006 with the BizTalk Adapter for DB2. Specifically, the document addresses how to use receive ports together with send ports, and how to use receive ports to receive and optionally update data on the DB2 database.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v.",
+    "detailsSection_file_name": [
+        "DB2 Adapter Receive Ports.doc"
+    ],
+    "detailsSection_file_size": [
+        "631.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the Download button.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5668",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "MyAdvisor (formally Skype Operations Framework) Success Resources",
+    "downloadDescription": "MyAdvisor (formally Skype Operations Framework) Success Resources",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MyAdvisor_SOF.zip",
+            "url": "https://download.microsoft.com/download/3/2/3/323e88b5-652d-4845-83b2-c371d54cb04a/MyAdvisor_SOF.zip",
+            "size": "294388226",
+            "version": "1.0.0.0",
+            "datePublished": "5/15/2024 3:04:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MyAdvisor (formally Skype Operations Framework) provides practical deployment guidance tailored towards ensuring your organization is setup for long-term operational success with Cloud Voice. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "MyAdvisor_SOF.zip"
+    ],
+    "detailsSection_file_size": [
+        "280.8 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<ul>\n<ul><li>MyAdvisor Excel, PowerPoint and Word Success resources require either Office 2013 or Office 2016.</li>\r\n<li>MyAdvisor PowerShell scripts require either PowerShell version 3 or version 4.</li></ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul>\n<li><b>This download works with the following program:</b></li>\n<ul><li>Download the file by clicking the Download button and saving the file to your hard disk.</li>\r\n<li>Extract the file to a hard disk location of your choosing.</li></ul>\n</ul>\n\r\n<ul>\n<li><b>To remove this download: </b></li>\n<ul><li>Delete the extracted folder and the downloaded .zip file.</li></ul>\r\n</ul>\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58401",
+    "downloadPreload": true
+}

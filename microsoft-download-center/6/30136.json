@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Installing and Using the Lync Server 2010 Meeting Content Viewer Tool ",
+    "downloadDescription": "This document describes the purpose, installation, and use of the Microsoft Lync Server 2010 Meeting Content Viewer tool that is shipped as part of the cumulative update for Lync Server 2010: June 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Installing_and_Using_the_Microsoft_Lync_Server_2010_Meeting_Content_Viewer_Tool.doc",
+            "url": "https://download.microsoft.com/download/f/2/f/f2f98c77-df63-42ea-9de5-81241722db38/Installing_and_Using_the_Microsoft_Lync_Server_2010_Meeting_Content_Viewer_Tool.doc",
+            "size": "213504",
+            "version": "June2012",
+            "datePublished": "7/15/2024 3:29:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This document describes the purpose, installation, and use of the Microsoft Lync Server 2010 Meeting Content Viewer tool that is shipped as part of the cumulative update for Lync Server 2010: June 2012. The Meeting Content Viewer tool is an administrative tool you can use to convert Lync Server 2010 web conferencing (meeting) content, such as whiteboard and poll files saved in the file store by Lync Server 2010, from its binary format into a viewable format. You can download the tool from <a href=\"http://go.microsoft.com/fwlink/?LinkId=255209\">http://go.microsoft.com/fwlink/?LinkId=255209</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2012",
+    "detailsSection_file_name": [
+        "Installing_and_Using_the_Microsoft_Lync_Server_2010_Meeting_Content_Viewer_Tool.doc"
+    ],
+    "detailsSection_file_size": [
+        "208.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "lync Server 2010 Meeting Content Viewer Tool",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=255209"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30136",
+    "downloadPreload": true
+}

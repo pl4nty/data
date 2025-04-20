@@ -1,0 +1,262 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows 8 for x64-based Systems (KB2770917)",
+    "downloadDescription": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows 8 experience.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2777166-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2777166-x64.msu",
+            "size": "26116161",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2778171-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2778171-x64.msu",
+            "size": "2913630",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2771821-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2771821-x64.msu",
+            "size": "5013587",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2780342-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2780342-x64.msu",
+            "size": "4058216",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2758246-v2-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2758246-v2-x64.msu",
+            "size": "11507984",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2780523-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2780523-x64.msu",
+            "size": "468189",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows8-RT-KB2770917-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2770917-x64.msu",
+            "size": "94873701",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2771744-x64.msu",
+            "url": "https://download.microsoft.com/download/7/8/4/78454588-74bf-436d-b1fe-f2e1b4089afd/Windows8-RT-KB2771744-x64.msu",
+            "size": "6106432",
+            "version": "2770917",
+            "datePublished": "7/15/2024 3:30:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows 8 experience. We recommend that you apply all of these updates as part of your regular maintenance routines. Failure to install all of the packages listed above could leave your machine in an untested state.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2770917",
+        "name": "KB2770917"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2770917",
+    "detailsSection_file_name": [
+        "Windows8-RT-KB2777166-x64.msu",
+        "Windows8-RT-KB2778171-x64.msu",
+        "Windows8-RT-KB2771821-x64.msu",
+        "Windows8-RT-KB2780342-x64.msu",
+        "Windows8-RT-KB2758246-v2-x64.msu",
+        "Windows8-RT-KB2780523-x64.msu",
+        "Windows8-RT-KB2770917-x64.msu",
+        "Windows8-RT-KB2771744-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "24.9 MB",
+        "2.8 MB",
+        "4.8 MB",
+        "3.9 MB",
+        "11.0 MB",
+        "457.2 KB",
+        "90.5 MB",
+        "5.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul><li>Repeat this process until all of the following KBs have been installed: KB2770917, KB2777166, KB2758246, KB2780342, KB2771821, KB2771744, KB2778171, KB2780523</li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2770917"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35670",
+    "downloadPreload": true
+}

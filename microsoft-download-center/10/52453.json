@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "GroupBar",
+    "downloadDescription": "GroupBar is a prototype for demonstrating the use of window-grouping features in an XP TaskBar-like interface. Last published: March 22, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.msi",
+            "url": "https://download.microsoft.com/download/1/a/c/1ac3cebe-ed31-46eb-ab82-c2a10e16aec6/setup.msi",
+            "size": "390144",
+            "version": "1.3.0.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "GroupBar is a prototype for demonstrating the use of window-grouping features in an XP TaskBar-like interface. The window tiles in the GroupBar can be rearranged in any order or dragged and dropped into lightweight \"groups\" that allow one-click task-switching and convenient group operations. (Groupbar is now available for commercial licensing. Interested parties should contact msrlg@microsoft.com.)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3.0.0",
+    "detailsSection_file_name": [
+        "setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "381.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52453",
+    "downloadPreload": true
+}

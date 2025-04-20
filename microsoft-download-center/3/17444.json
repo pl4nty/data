@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Issam Elbaytam and Scott Wileke",
+    "downloadDescription": "Carl talks about Active Reports and other great new tools on the way from the boys at DataDynamics.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080311DataDynamics.zip",
+            "url": "https://download.microsoft.com/download/c/1/e/c1e7fbda-b182-4d9e-a62e-13ee32860cc7/20080311DataDynamics.zip",
+            "size": "39968219",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Scott Willeke is Director of Development at Data Dynamics. He has over 12 years of software development experience and has worked with .NET Framework since early betas. He is currently leading multiple teams to bring next-generation business intelligence, data analysis and reporting components to .NET developers. <br />\n<br />\nIssam Elbaytam is a Founder and Product Manager at Data Dynamics. He is a 20+ year veteran of software development, having started writing scheduling software in Clipper 87 for healthcare and moved to VB3 during a brief consulting career. For the past 12 years he has been helping developers and businesses make the most of their data to support decision makers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080311DataDynamics.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.1 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17444",
+    "downloadPreload": true
+}

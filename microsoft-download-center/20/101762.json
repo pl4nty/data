@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Payroll in Microsoft Dynamics SL 2015",
+    "downloadDescription": "This training provides individuals with the knowledge and skills to build a comprehensive understanding of the Payroll module in Microsoft Dynamics SL 2015.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_PR.zip",
+            "url": "https://download.microsoft.com/download/4/f/5/4f5c4aca-ab94-4f49-8f8f-86463d967b9c/SL2015_ENUS_PR.zip",
+            "size": "9124616",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience\r\n   \r\n      <b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Payroll module in Microsoft Dynamics SL. At Training Material Completion\r\n   \r\n      <b></b>On completing this course you will be well acquainted with:<ul><li>Perform all payroll related data entry functions including: timesheet entry, check processing, manual checks, net checks and voiding checks.</li><li>Perform maintenance on payroll timesheets, and other records such as employees and tax deduction information.</li><li>Use the payroll calculation process to automatically compute payroll earnings, deduction and benefit amounts and make appropriate adjustments to payment amounts prior to check processing.</li><li>Print standard Solomon reports to verify data and perform financial analysis for audit trail purposes. Understand the calculation of tax deduction amounts using tables.</li><li>Create and maintain special deduction types (401K plans, garnishments, etc.).</li><li>Understand the process for updating Accounts Payable with payroll liability information (i.e.: employee withholdings, employer FICA, FUTA, etc.).</li><li>Understand the calculation of workers' compensation premiums and related posting to the general ledger.</li><li>Identify the impact of the Payroll module on other Solomon modules.</li><li>Create and transmit the direct deposit file.</li><li>Troubleshoot and correct operator input errors including incorrect timesheet entries (too many or too few hours).</li><li>Calculate and adjust W-2 wage and tax amounts.</li></ul>\r\n   Prerequisites\r\n   \r\n      <b></b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>Completion of General Ledger training course required. Attendance at Accounts Payable and/or Accounts Receivable recommended. </li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_PR.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.7 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101762",
+    "downloadPreload": true
+}

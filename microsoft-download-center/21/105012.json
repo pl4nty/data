@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Download Microsoft Edge Adoption Kit for Education",
+    "downloadDescription": "This Microsoft Edge adoption kit for Education contains 3 email templates and a guide to Edge\u2019s features including Immersive Reader, Math Solver, and more.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Edge Adoption Kit for Edu.zip",
+            "url": "https://download.microsoft.com/download/b/9/7/b97eb9eb-b712-4788-9e19-a8695db31e09/Microsoft Edge Adoption Kit for Edu.zip",
+            "size": "24769061",
+            "version": "1",
+            "datePublished": "7/15/2024 5:06:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This resource is designed to support Microsoft Edge adoption in the classroom. It includes a deck about how to get started with Edge and make the most of its features. Topics covered include importing browser data, switching between school and personal profiles, Edge features like Immersive Reader, Collections, Citations, Math Solver, and more. The guide also includes 3 emails templates about the benefits of using Edge and how to get started, which you can modify to share with teachers, faculty, and students.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Edge Adoption Kit for Edu.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Ensure that Microsoft Edge is deployed at your organization.",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Windows 11",
+        "iOS"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this file to disk</b>.</li>\r\n<li>Select <b>Open file</b>, or find the file on your device and open it.</li>\r\n<li>Open the \u201cMicrosoft Edge Email and User Guide Kit Instructions\u201d file to learn more about how to use the user guide and email templates.</li>\r\n<li>5. Customize the included email templates, save, and send them out.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105012",
+    "downloadPreload": true
+}

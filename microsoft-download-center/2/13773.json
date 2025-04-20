@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Walkthrough Guide",
+    "downloadDescription": "This walkthrough guide is designed to provide a step-by-step overview of Microsoft\u00ae SharePoint\u00ae 2010.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePoint_2010_Walkthrough_Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/d/d/fdd1c836-514b-4466-9375-b350da8d30c6/SharePoint_2010_Walkthrough_Guide.pdf",
+            "size": "4831383",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint_2010_Walkthrough_Guide.xps",
+            "url": "https://download.microsoft.com/download/f/d/d/fdd1c836-514b-4466-9375-b350da8d30c6/SharePoint_2010_Walkthrough_Guide.xps",
+            "size": "6092154",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide was written as a companion to the SharePoint Server 2010 Evaluation Guide for Technical and Business Decision Makers.  We recommend reading that evaluation guide first, because it provides a tour of the new and improved features in the areas of collaboration, social computing, enterprise content management, search, business intelligence and composite applications.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SharePoint_2010_Walkthrough_Guide.pdf",
+        "SharePoint_2010_Walkthrough_Guide.xps"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB",
+        "5.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li><b>Required Software:</b><br></br>\r\n<ul><li><b>PDFor XPS file reader:</b> The documents in this download is provided in PDF file format and XPS file format, and requires a PDF or XPS reader, depending on the format you choose.</li></ul></li>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the walkthrough guide in either PDF or XPS format, and read it with a PDF or XPS reader, depending on the format you choose.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13773",
+    "downloadPreload": true
+}

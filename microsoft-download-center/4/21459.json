@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4",
+    "downloadDescription": "Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) for .NET Framework 4",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "wf_wcf_samples.exe",
+            "url": "https://download.microsoft.com/download/1/5/9/159d6d71-7728-45d4-bc15-5df1f2ddcd94/WF_WCF_Samples.exe",
+            "size": "16228728",
+            "version": "1",
+            "datePublished": "7/15/2024 4:30:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Easy to understand samples to quickly ramp up on the Windows Communication Foundations and the Windows Workflow Foundation in .NET Framework 4. \r\n\r\nFor details about each of the samples, please see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=167954\">documentation</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "wf_wcf_samples.exe"
+    ],
+    "detailsSection_file_size": [
+        "15.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft .NET Framework 4.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right-hand corner of this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "wcf and WF Samples for .NET Framework 4 (Visual Basic version)",
+            "url": "http://code.msdn.microsoft.com/vb2010samples/Release/ProjectReleases.aspx?ReleaseId=4174"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21459",
+    "downloadPreload": true
+}

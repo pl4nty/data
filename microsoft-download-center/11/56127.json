@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 4 for System Center 2016 Service Manager",
+    "downloadDescription": "Update Rollup 4 for System Center 2016 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4024038_i386_7.5.7487.89.exe",
+            "url": "https://download.microsoft.com/download/b/8/c/b8ce38ba-1531-4c09-aeb8-a282ffd1aa39/SCSM2016_CU_KB4024038_i386_7.5.7487.89.exe",
+            "size": "50259712",
+            "version": "7.5.7487.89",
+            "datePublished": "7/15/2024 4:55:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4024038_amd64_7.5.7487.89.exe",
+            "url": "https://download.microsoft.com/download/b/8/c/b8ce38ba-1531-4c09-aeb8-a282ffd1aa39/SCSM2016_CU_KB4024038_amd64_7.5.7487.89.exe",
+            "size": "50438912",
+            "version": "7.5.7487.89",
+            "datePublished": "7/15/2024 4:55:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n  <br />\r\nThis article describes the bug fixes that are included in this Update Rollup.<br />\r\n  <br />\r\n<b><u>Issues that are fixed in this Update Rollup-</u></b><br />\r\n <ul>\r\n<li>Service Manager 2016 will support TLS 1.2 with this update installed</li>\r\n<li>System Center Configuration Manager 1710 is now supported for Configuration Manager Connectors in Service Manager</li>\r\n<li>Self Service Portal navigation links do not work when the menu is in expanded state</li>\n<li>Regex validation rules are not honoured in the Request offering form elements</li>\n<li>Date/Time type fields reset the value to be stored to 12:00AM for certain time values (when translated time value in GMT is 00:00 hours)</li>\n<li>The changes in a Business service get overwritten, if the Business service is a related item in a Service Request (SR) template which is getting used to create SR from Self Service Portal</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.7487.89",
+    "detailsSection_file_name": [
+        "SCSM2016_CU_KB4024038_i386_7.5.7487.89.exe",
+        "SCSM2016_CU_KB4024038_amd64_7.5.7487.89.exe"
+    ],
+    "detailsSection_file_size": [
+        "47.9 MB",
+        "48.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Service Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4024038\">KB4024038</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56127",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Richard Campbell Tells All!",
+    "downloadDescription": "It's our 300th show! Can you believe it? Carl interviews Richard, who tells many stories of his experiences in electronics and computers. Don't miss the funny stories!",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071220RCampbell.zip",
+            "url": "https://download.microsoft.com/download/f/6/a/f6adf2b0-b5a7-418d-aeee-2ed940641808/20071220RCampbell.zip",
+            "size": "54034144",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:09:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Richard Campbell is one of the co-founders of Strangeloop Networks and today serves as product evangelist, introducing the company's unique story to advisors, investors, patent attorneys, beta-customer candidates, potential employees, etc. Richard has more than 30 years of high-tech experience and is both a Microsoft Regional Director and Microsoft Most Valuable Professional (MVP). He has consulted with a number of leading North American organizations; Barnes&Noble.com, Dow Chemical, Johnson & Johnson Health Care Services, Reuters, Subaru/Isuzu and the U.S. Air Force. In addition to speaking at conferences around the world, Richard is co-host of the \".NET Rocks!, the Internet Audio Talk Show for .NET Developers\" (www.dotnetrocks.com) podcast and the host of \"RunAs Radio, the Internet Audio Talk Show for IT Professionals\" (www.runasradio.com) podcast.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071220RCampbell.zip"
+    ],
+    "detailsSection_file_size": [
+        "51.5 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14143",
+    "downloadPreload": true
+}

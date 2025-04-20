@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Guide: Web Client Installation and Administration Guide",
+    "downloadDescription": "These documents provide installation and administration instructions for the RTM and Service Pack 1 releases of the Microsoft Dynamics GP 2013 Web Client.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WebClientInstallAdmin_SP1.pdf",
+            "url": "https://download.microsoft.com/download/d/0/d/d0d6bab4-7a88-4e4c-a156-7e83c1e96a89/WebClientInstallAdmin_SP1.pdf",
+            "size": "1729069",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WebClientInstallAdmin_RTM.pdf",
+            "url": "https://download.microsoft.com/download/d/0/d/d0d6bab4-7a88-4e4c-a156-7e83c1e96a89/WebClientInstallAdmin_RTM.pdf",
+            "size": "1555963",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the <b>WebClientInstallAdmin_RTM.pdf</b> document to find installation and administration information for the version of the Microsoft Dynamics GP Web Client that was released with Microsoft Dynamics GP 2013 RTM. <br /><br />\r\n\r\nUse the <b>WebClientInstallAdmin_SP1.pdf</b> document to find installation and administration information for the version of the Microsoft Dynamics GP Web Client that was released with Microsoft Dynamics GP 2013 Service Pack 1. This document also contains information about how to apply an update of the web client, and information about using the new features that are included in the update. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "WebClientInstallAdmin_SP1.pdf",
+        "WebClientInstallAdmin_RTM.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF files, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to download the file to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34672",
+    "downloadPreload": true
+}

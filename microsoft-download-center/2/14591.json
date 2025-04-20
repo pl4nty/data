@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Malicious Software Removal Tool: Progress Made, Trends Observed",
+    "downloadDescription": "This report provides an in-depth perspective of the malware landscape based on the data collected by the MSRT, and highlights the impact that the MSRT has had in reducing the impact of malware on Windows users.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSRT - Progress Made Lessons Learned.pdf",
+            "url": "https://download.microsoft.com/download/5/6/d/56d20350-afc8-4051-a0df-677b28298912/MSRT - Progress Made Lessons Learned.pdf",
+            "size": "862921",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft has made significant investments over the past few years in the research of malicious software (or \u201cmalware\u201d) and in developing technology to help customers mitigate the security risk that it creates. As part of this investment, Microsoft has built a dedicated Antimalware team that is responsible for researching malicious software, spyware, and other potentially unwanted software as well as the release and maintenance of the Windows Malicious Software Removal Tool (MSRT) and Windows Defender. The team also supplies the core antimalware technology (including the scanning engine and malware definition updates) to products such as Windows Live OneCare, Windows Live Safety Center Beta, Microsoft Antigen, and the upcoming Microsoft Client Security release.\n\nMicrosoft delivered the first version of the MSRT on January 13, 2005 in 24 languages to users of Windows 2000, Windows XP, and Windows Server 2003 computers. The tool is designed to help identify and remove prevalent malware from customer machines and is available at no charge to licensed Windows users.  As of the writing of this report, Microsoft has shipped 15 additional, enhanced versions of the tool and continues to ship a new version on the second Tuesday of each month, each adding new prevalent malware to detect and remove. Since the initial release of the MSRT, the tool has been executed approximately 2.7 billion times by at least 270 million unique computers.\n\nThis report provides an in-depth perspective of the malware landscape based on the data collected by the MSRT, and highlights the impact that the MSRT has had in reducing the impact of malware on Windows users. Key insights from the data are summarized below and are covered in greater detail in the paper.\n<br/>\n<br/>\n<UL><LI>The MSRT has removed 16 million instances of malicious software from 5.7 million unique Windows computers over the past 15 months. On average, the tool removes at least one instance of malware from every 311 computers it runs on. </LI>\n<br/>\n<br/>\n<LI>Forty-one of the 61 malware families targeted by the MSRT from January 2005 to February 2006 have been detected less frequently since being added to the tool with 21 of the families experiencing decreases greater than 75%.</LI>\n<br/>\n<br/>\n<LI>Backdoor Trojans, which can enable an attacker to control an infected computer and steal confidential information, are a significant and tangible threat to Windows users. The MSRT has removed at least one backdoor Trojan from approximately 3.5 million unique computers. Thus, of the 5.7 million unique computers from which the tool has removed malware, a backdoor Trojan was present in 62% of computers. Bots, a sub-category of backdoor Trojans which communicate through the Internet Relay Chat (IRC) network, represent a majority of the removals.</LI>\n<br/>\n<br/>\n<LI>Rootkits, which make system changes for the purpose of hiding or protecting some other, possibly malicious components, are a potential emerging threat but have not yet reached widespread prevalence. Of the 5.7 million unique computers that the tool has removed malware from, a rootkit was present in 14% of the cases; this figure drops to 8% if WinNT/F4IRootkit, the rootkit distributed on select Sony music CDs, is excluded. In 20% of the cases when a rootkit was found on a computer, at least one backdoor Trojan was found as well.</LI>\n<br/>\n<br/>\n<LI>Social engineering attacks represent a significant source of malware infections. Worms that spread through email, peer-to-peer networks, and instant messaging clients account for 35% of the computers cleaned by the tool.</LI>\n<br/>\n<br/>\n<LI>The malware problem appears to be migratory in nature. Most of the computers cleaned with each release of the MSRT are computers from which the tool has never removed malware. In the March 2006 version of the MSRT, the tool removed malware from approximately 150 thousand computers (20% of all computers cleaned) from which some malware had previously been removed by the tool in an earlier release.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSRT - Progress Made Lessons Learned.pdf"
+    ],
+    "detailsSection_file_size": [
+        "842.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\nThe whitepaper requires Adobe Acrobat Reader to view.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the white paper to your computer and open it in Adobe Acrobat Reader to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14591",
+    "downloadPreload": true
+}

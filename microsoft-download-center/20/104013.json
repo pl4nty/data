@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Guide to the Design and Development of Accessible Web Sites",
+    "downloadDescription": "This white paper is intended to help readers better understand the issues involved in making Web sites accessible to people with disabilities, a legal obligation that also benefits all users of the Web.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Guidelines_for_Designing_and_Developing_Accessible_Web_Sites_v2.docx",
+            "url": "https://download.microsoft.com/download/1/4/8/1489a14b-9d7a-4a6a-bcb9-efd667f970dc/Guidelines_for_Designing_and_Developing_Accessible_Web_Sites_v2.docx",
+            "size": "811643",
+            "version": "2",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper is intended to help readers better understand the issues involved in making Web sites accessible to people with disabilities, a legal obligation that also benefits all users of the Web. We will deal with the current issues in accessibility, as well as the various initiatives, norms, and standards implemented with respect to Web-enabled applications. In this regard, we will examine using Microsoft products and technologies to design and develop Web sites that comply with accessibility guidelines. <br />\nMore specifically, this document describes a set of guidelines that enable you to produce accessible Web sites by using Microsoft Content Management Server 2002 and SharePoint technologies. It defines the extent to which these technologies offer the best possible compliance with, as a minimum, the priority 1 checkpoints of Web Content Accessibility Guidelines (WCAG) 1.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Guidelines_for_Designing_and_Developing_Accessible_Web_Sites_v2.docx"
+    ],
+    "detailsSection_file_size": [
+        "792.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Linux",
+        "TabletPC",
+        "Windows 2000",
+        "Windows Server 2003",
+        "Apple Mac OS X",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104013",
+    "downloadPreload": true
+}

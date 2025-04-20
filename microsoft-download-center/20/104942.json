@@ -1,0 +1,267 @@
+{
+    "error": "",
+    "downloadTitle": "Update 19.16 for Dynamics 365 Business Central 2021 Release Wave 2",
+    "downloadDescription": "Streamline your process, make smarter decisions and accelerate growth with Dynamics 365 Business Central",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics.365.BC.52583.W1.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.W1.DVD.zip",
+            "size": "1487709249",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.US.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.US.DVD.zip",
+            "size": "1522531992",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.SE.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.SE.DVD.zip",
+            "size": "1502996146",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.RU.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.RU.DVD.zip",
+            "size": "1526228599",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.NZ.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.NZ.DVD.zip",
+            "size": "1503564818",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.NO.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.NO.DVD.zip",
+            "size": "1508307668",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.NL.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.NL.DVD.zip",
+            "size": "1512328568",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.MX.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.MX.DVD.zip",
+            "size": "1520045943",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.IT.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.IT.DVD.zip",
+            "size": "1509813068",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.IS.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.IS.DVD.zip",
+            "size": "1504287263",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.IN.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.IN.DVD.zip",
+            "size": "1536087208",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.GB.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.GB.DVD.zip",
+            "size": "1508449282",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.FR.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.FR.DVD.zip",
+            "size": "1506274719",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.FI.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.FI.DVD.zip",
+            "size": "1502912773",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.ES.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.ES.DVD.zip",
+            "size": "1512906337",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.DK.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.DK.DVD.zip",
+            "size": "1522183166",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.DE.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.DE.DVD.zip",
+            "size": "1513450642",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.CZ.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.CZ.DVD.zip",
+            "size": "1550677594",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.CH.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.CH.DVD.zip",
+            "size": "1594050651",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.CA.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.CA.DVD.zip",
+            "size": "1546419483",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.BE.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.BE.DVD.zip",
+            "size": "1546065377",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.AU.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.AU.DVD.zip",
+            "size": "1503931242",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamics.365.BC.52583.AT.DVD.zip",
+            "url": "https://download.microsoft.com/download/e/c/e/ece45259-a788-4f70-8e9b-25b4a557ad90/Release/Dynamics.365.BC.52583.AT.DVD.zip",
+            "size": "1504785838",
+            "version": "52583",
+            "datePublished": "3/15/2024 4:32:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To see what was included in previous updates, please see this article: https://support.microsoft.com/en-us/help/5007780. To learn more about what is included in this update please visit this kb article: https://support.microsoft.com/en-us/help/5023399",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5023399",
+        "name": "5023399"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "52583",
+    "detailsSection_file_name": [
+        "Dynamics.365.BC.52583.W1.DVD.zip",
+        "Dynamics.365.BC.52583.US.DVD.zip",
+        "Dynamics.365.BC.52583.SE.DVD.zip",
+        "Dynamics.365.BC.52583.RU.DVD.zip",
+        "Dynamics.365.BC.52583.NZ.DVD.zip",
+        "Dynamics.365.BC.52583.NO.DVD.zip",
+        "Dynamics.365.BC.52583.NL.DVD.zip",
+        "Dynamics.365.BC.52583.MX.DVD.zip",
+        "Dynamics.365.BC.52583.IT.DVD.zip",
+        "Dynamics.365.BC.52583.IS.DVD.zip",
+        "Dynamics.365.BC.52583.IN.DVD.zip",
+        "Dynamics.365.BC.52583.GB.DVD.zip",
+        "Dynamics.365.BC.52583.FR.DVD.zip",
+        "Dynamics.365.BC.52583.FI.DVD.zip",
+        "Dynamics.365.BC.52583.ES.DVD.zip",
+        "Dynamics.365.BC.52583.DK.DVD.zip",
+        "Dynamics.365.BC.52583.DE.DVD.zip",
+        "Dynamics.365.BC.52583.CZ.DVD.zip",
+        "Dynamics.365.BC.52583.CH.DVD.zip",
+        "Dynamics.365.BC.52583.CA.DVD.zip",
+        "Dynamics.365.BC.52583.BE.DVD.zip",
+        "Dynamics.365.BC.52583.AU.DVD.zip",
+        "Dynamics.365.BC.52583.AT.DVD.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.5 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB",
+        "1.4 GB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/deployment/system-requirements-business-central-v19",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "How to install this update: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/upgrade/upgrading-cumulative-update-v19",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104942",
+    "downloadPreload": true
+}

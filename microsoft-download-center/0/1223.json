@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "CAPIMON (CAPIMON.exe)",
+    "downloadDescription": "CryptoAPI Monitor (CAPIMON) allows an administrator to monitor an application\u2019s CryptoAPI calls and the results.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CAPIMON10_Setup.msi",
+            "url": "https://download.microsoft.com/download/1/4/c/14cfe1eb-7f4e-4c2c-b5fb-83b58f4ab684/CAPIMON10_Setup.msi",
+            "size": "637952",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CryptoAPI, also known as CAPI, helps application developers to make simpler and more effective use of the cryptography and key management features that are provided by the Microsoft\u00ae Windows\u00ae operating system. The generic CryptoAPI calls allow Windows to manage cryptographic and X.509 version 3 certificate functions in a well-constructed and tested environment. This environment helps prevent attacks against the sensitive cryptographic data and functions.<br><br>Because CryptoAPI provides generic cryptographic services, programmers can use the CryptoAPI functions in a variety of ways to accomplish different tasks. Although this provides a benefit to the programmer who is thoroughly familiar with CryptoAPI and cryptography, there are often implementation problems in how the applications use these application program interfaces (APIs). In addition, not all applications can report accurate and detailed errors when CryptoAPI returns anything other than a successful completion result. As a result, applications that use CryptoAPI are often difficult to troubleshoot.\nCryptoAPI Monitor (CAPIMON) is designed specifically to address this issue by allowing the administrator to monitor an application\u2019s CryptoAPI calls and the results. CAPIMON can be used to troubleshoot errors in X.509 version 3 certificate chain building and revocation. It cannot be used to troubleshoot cryptographic service providers (CSP), cryptographic routines, and digital signature operations which are also part of CryptoAPI.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CAPIMON10_Setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "623.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and install CAPIMON.exe on the following operating systems:<BR/><UL><LI>Windows 2000 Professional with Service Pack 3 or later</LI><LI>Windows 2000 Server with Service Pack 3 or later</LI><LI>Windows 2000 Advanced Server with Service Pack 3 or later</LI><LI>Windows 2000 Datacenter Server with Service Pack 3 or later</LI><LI>Windows XP Professional</LI><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. You can install the CAPIMON tool by running the installation package and providing responses to the installation wizard.<BR/><BR/>To install CAPIMON, perform the following steps:<OL><LI>Log on to the computer as a member of the local administrators group.</LI><LI>Double-click the CAPIMON10_Setup.msi file.</LI><LI>On the Welcome to the Microsoft CAPIMON 1.0 Setup Wizard page, click Next.</LI><LI>Review the End User License Agreement, click I Agree if you agree, and then click Next.</LI><LI>Select the location to install CAPIMON and whether to make this tool available to all users or just the logged in user, and then click Next.<br>\nThe default path is C:\\Program Files\\Microsoft CAPIMON 1.0.</LI><LI>Click Next to install CAPIMON.</LI><LI>When CAPIMON is finished installing, click Close to exit the installation program.</LI></OL>When installation is finished, the folder that you specified in the installation process is created. This is where most of the CAPIMON program and configuration files are stored. Although the program files are installed, CAPIMON is not activated and cannot capture data until it is configured. This configuration is covered in the help documentation.",
+    "additionalInformationSection": "<b>Files required for installation:</b><br><br>Before you install CAPIMON on a computer running a Windows 2000 operating system, you must ensure that the Application Compatibility Toolkit version 2.6 is installed on that computer. For more information about installing the toolkit, see the Windows Application Compatibility Toolkit on the Microsoft Web site at http://go.microsoft.com/fwlink/?LinkId=18670. You must also have Service Pack 3 or later installed.<br><br>In addition, computers running Windows 2000 must install the Microsoft XML Parser (MSXML) 3.0 Service Pack 4 before using the CAPIMON viewer. This software is available from the Microsoft Web site at http://go.microsoft.com/fwlink/?LinkId=19870.\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=9d467a69-57ff-4ae7-96ee-b18c4790cffd&displaylang=en"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://www.microsoft.com/windowsserver2003/techinfo/reskit/resourcekit.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1223",
+    "downloadPreload": true
+}

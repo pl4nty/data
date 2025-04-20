@@ -1,0 +1,154 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Server 2012 R2 (KB3000850)",
+    "downloadDescription": "Install this update to resolve issues in Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3000850-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/6/dc69b595-9c62-4b31-b154-b3722250d296/Windows8.1-KB3000850-x64.msu",
+            "size": "745662073",
+            "version": "3000850",
+            "datePublished": "7/15/2024 3:56:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3003057-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/6/dc69b595-9c62-4b31-b154-b3722250d296/Windows8.1-KB3003057-x64.msu",
+            "size": "53964746",
+            "version": "3000850",
+            "datePublished": "7/15/2024 3:56:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3014442-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/6/dc69b595-9c62-4b31-b154-b3722250d296/Windows8.1-KB3014442-x64.msu",
+            "size": "12339049",
+            "version": "3000850",
+            "datePublished": "7/15/2024 3:56:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3016437-x64.msu",
+            "url": "https://download.microsoft.com/download/d/c/6/dc69b595-9c62-4b31-b154-b3722250d296/Windows8.1-KB3016437-x64.msu",
+            "size": "462056",
+            "version": "3000850",
+            "datePublished": "7/15/2024 3:56:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Install this update to resolve issues in Windows. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article for more information. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3000850",
+        "name": "KB3000850"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3000850",
+    "detailsSection_file_name": [
+        "Windows8.1-KB3000850-x64.msu",
+        "Windows8.1-KB3003057-x64.msu",
+        "Windows8.1-KB3014442-x64.msu",
+        "Windows8.1-KB3016437-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "711.1 MB",
+        "51.5 MB",
+        "11.8 MB",
+        "451.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul><li>Repeat this process until all of the following KBs have been installed: KB3000850, KB3003057, KB3016437, KB3014442</li></ol>Update KB3016437 is only applicable to Windows Server 2012 R2 Active Directory Domain Services (AD DS) role enabled. If you attempt to install KB3016437 to a Windows Client or a Windows Server where AD DS role is not turned on, the update will fail to install, with no adverse effect other than reporting an update installation failure.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/3000850"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44975",
+    "downloadPreload": true
+}

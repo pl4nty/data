@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud Security for Enterprise Architects",
+    "downloadDescription": "Learn what IT architects need to know about security in Microsoft cloud services and platforms with the Microsoft Cloud Security for Enterprise Architects poster.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSFT_cloud_architecture_security.pdf",
+            "url": "https://download.microsoft.com/download/6/d/f/6dfd7614-bbcf-4572-a871-e446b8cf5d79/MSFT_cloud_architecture_security.pdf",
+            "size": "854102",
+            "version": "April2021",
+            "datePublished": "7/15/2024 4:56:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Understand Microsoft and customer security responsibilities, licensing, and security solutions, and get the details on key cloud features and integration for identity and device access, threat protection, and information protection.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2021",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_security.pdf"
+    ],
+    "detailsSection_file_size": [
+        "834.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Select which format you want to download.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "http://aka.ms/cloudarch"
+        },
+        {
+            "title": "microsoft 365 solution and architecture center",
+            "url": "https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48121",
+    "downloadPreload": true
+}

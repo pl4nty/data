@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows Developer Toolkit v1.7",
+    "downloadDescription": "The Kinect for Windows Developer Toolkit contains updated and new source code samples, Kinect Fusion, Kinect Interactions, Kinect Studio, and other resources to simplify developing Kinect for Windows applications. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "KinectDeveloperToolkit-v1.7.0-Setup.exe",
+            "url": "https://download.microsoft.com/download/0/6/f/06f7702d-e386-4041-8fee-69ec0e841a6e/KinectDeveloperToolkit-v1.7.0-Setup.exe",
+            "size": "397081816",
+            "version": "1.7.0.510",
+            "datePublished": "7/15/2024 3:16:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Kinect for Windows Developer Toolkit includes the following:\r\n<ul>\r\n<li>Updated and new source code samples</li>\r\n<li>Kinect Fusion</li>\r\n<li>New Kinect controls for adding gesture capabilities to your application</li>\r\n<li>Kinect Studio</li>\r\n<li>The Face Tracking SDK</li>\r\n<li>Other valuable development resources</li>\r\n<li>Note: The Kinect for Windows Developer Toolkit requires that the <a href=\"http://go.microsoft.com/fwlink/?LinkID=264908\" target=\"_blank\">Kinect for Windows SDK v1.7</a> be installed</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.7.0.510",
+    "detailsSection_file_name": [
+        "KinectDeveloperToolkit-v1.7.0-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "378.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\n<ul>\r\n<li><b>Hardware Requirements</b></li>\r\n<br/><br/>Your computer must have the following minimum capabilities:\r\n<ul>\r\n<li>32-bit (x86) or 64-bit (x64) processor</li>\r\n<li>Dual-core 2.66-GHz or faster processor </li>\r\n<li>Dedicated USB 2.0 bus </li>\r\n<li>2 GB RAM</li>\r\n<li>A Microsoft Kinect for Windows sensor</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=264908\" target=\"_blank\">Kinect for Windows SDK v1.7</a></li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 7",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "To install the Kinect for Windows Developer Toolkit:<br/>\r\n<ol>\r\n<li>Make sure you have the <a href=\"http://go.microsoft.com/fwlink/?LinkID=264908\" target=\"_blank\">Kinect for Windows SDK v1.7</a> installed</li>\r\n<li>From the download location, double-click on <b>KinectDeveloperToolkit-v1.7-Setup.exe</b>. This single installer works for both 32-bit and 64-bit Windows.</li>\r\n<li>To view the tools or samples, install stamples, or explore other resources, start the Developer Toolkit Browser via the start menu: Kinect for Windows SDK 1.7 -> Developer Toolkit Browser v1.7 (Kinect for Windows)</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36998",
+    "downloadPreload": true
+}

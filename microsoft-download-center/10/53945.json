@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 CU5",
+    "downloadDescription": "Microsoft BizTalk Server 2013 CU5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-CHT.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-CHT.exe",
+            "size": "19960344",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-CHS.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-CHS.exe",
+            "size": "19955224",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-ENU.exe",
+            "size": "18287128",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-DEU.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-DEU.exe",
+            "size": "19981336",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-FRA.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-FRA.exe",
+            "size": "19982360",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-JPN.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-JPN.exe",
+            "size": "19964952",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-KOR.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-KOR.exe",
+            "size": "19968024",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-ITA.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-ITA.exe",
+            "size": "19976728",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3194301-ESP.exe",
+            "url": "https://download.microsoft.com/download/0/1/3/013ea77f-1316-4e33-a51a-443d11421227/BizTalk2013-KB3194301-ESP.exe",
+            "size": "19978776",
+            "version": "3.10.356.2",
+            "datePublished": "7/15/2024 4:33:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 CU5",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.10.356.2",
+    "detailsSection_file_name": [
+        "BizTalk2013-KB3194301-CHT.exe",
+        "BizTalk2013-KB3194301-CHS.exe",
+        "BizTalk2013-KB3194301-ENU.exe",
+        "BizTalk2013-KB3194301-DEU.exe",
+        "BizTalk2013-KB3194301-FRA.exe",
+        "BizTalk2013-KB3194301-JPN.exe",
+        "BizTalk2013-KB3194301-KOR.exe",
+        "BizTalk2013-KB3194301-ITA.exe",
+        "BizTalk2013-KB3194301-ESP.exe"
+    ],
+    "detailsSection_file_size": [
+        "19.0 MB",
+        "19.0 MB",
+        "17.4 MB",
+        "19.1 MB",
+        "19.1 MB",
+        "19.0 MB",
+        "19.0 MB",
+        "19.1 MB",
+        "19.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows Server 2008 R2, Windows Server 2012, SQL Server 2008 R2 or SQL Server 2012\r\nMicrosoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)\r\nMicrosoft Visual Studio 2012\r\nMicrosoft Office Excel 2010 or 2013 \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53945",
+    "downloadPreload": true
+}

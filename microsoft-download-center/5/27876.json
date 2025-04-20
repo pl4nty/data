@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows SDK Beta 2",
+    "downloadDescription": "The Kinect for Windows SDK beta provides hobbyists and researchers with the tools to develop non-commercial applications that run on the Kinect for Xbox 360.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "KinectSDK-v1.0-beta2-x86.msi",
+            "url": "https://download.microsoft.com/download/f/9/9/f99791f2-d5be-478a-b77a-830ad14950c3/KinectSDK-v1.0-beta2-x86.msi",
+            "size": "21823488",
+            "version": "1.0.0.45",
+            "datePublished": "7/15/2024 3:15:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSDK-v1.0-beta2-x64.msi",
+            "url": "https://download.microsoft.com/download/f/9/9/f99791f2-d5be-478a-b77a-830ad14950c3/KinectSDK-v1.0-beta2-x64.msi",
+            "size": "37900288",
+            "version": "1.0.0.45",
+            "datePublished": "7/15/2024 3:15:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSDK-v1.0-beta2-readme.htm",
+            "url": "https://download.microsoft.com/download/f/9/9/f99791f2-d5be-478a-b77a-830ad14950c3/KinectSDK-v1.0-beta2-readme.htm",
+            "size": "105234",
+            "version": "1.0.0.45",
+            "datePublished": "7/15/2024 3:15:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Kinect for Windows SDK beta provides hobbyists and researchers with the tools to develop non-commercial applications that run on the Kinect for Xbox 360. However, non-commercial deployments using Kinect for Xbox 360, which were allowed using the SDK beta, are no longer permitted.<br/><br/>\r\n\r\nDevelopers are encouraged to take advantage of the additional features and updates available with the Kinect for Windows SDK v1, which enables the development of commercial applications using Kinect for Windows hardware and systems running Windows operating systems.<br/><br/>\r\n\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=242175\" target=\"_blank\">Learn more about the Kinect for Windows SDK v1.5 ></a><br/><br/>\r\n\r\n<b>The Kinect for Windows SDK includes the following:</b><ul>\r\n<li>Drivers, for using Kinect sensor devices on a computer running Windows 7 or Windows 8 developer preview (desktop apps only)</li>\r\n<li>Application programming interfaces (APIs) and device interfaces, along with technical documentation</li>\r\n<li>Source code samples</li></ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.45",
+    "detailsSection_file_name": [
+        "KinectSDK-v1.0-beta2-x86.msi",
+        "KinectSDK-v1.0-beta2-x64.msi",
+        "KinectSDK-v1.0-beta2-readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "20.8 MB",
+        "36.1 MB",
+        "102.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>Windows 8 Developer Preview (September 2011 Build)</ul><br/><br/>\r\n\r\n<ul>\r\n<li><b>Hardware Requirements</b></li>\r\n<ul>\r\n<li>32 bit (x86) or 64 bit (x64) processor</li>\r\n<li>Dual-core 2.66-GHz or faster processor </li>\r\n<li>Dedicated USB 2.0 bus </li>\r\n<li>2 GB RAM</li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=242177\" target=\"_blank\">A retail Kinect for Xbox 360\u00ae sensor</a>, which includes special USB/power cabling</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=240078\" target=\"_blank\">Microsoft\u00ae Visual Studio\u00ae 2010 Express or other Visual Studio 2010 edition</a></li>\r\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkID=240080\" target=\"_blank\">NET Framework 4.0</a></li>\r\n</ul>\r\n  \r\n<br/><br/><b>For C++ Skeletal Viewer samples</b>\r\n<ul>\r\n<li>Microsoft DirectX\u00ae SDK - June 2010 or later version</li>\r\n<li>Runtime for Microsoft DirectX\u00ae 9</li>\r\n</ul>\r\n  \r\n<br/><br/><b>For Speech samples</b>\r\n<ul>\r\n<li>Microsoft Speech Platform Runtime, version 10.2 \u2013 select 32-bit if you are running 32-bit Windows.  If you have 64-bit Windows, we suggest that you install both the 32-bit and 64-bit runtime.</li>\r\n<li>Microsoft Speech Platform - Software Development Kit, version 10.2 \u2013 select 32-bit or 64-bit according to your Windows installation</li>\r\n<li>Kinect for Windows Runtime Language Pack, version 0.9</li>\r\n</ul>\r\n\r\n<br/><br/>For additional requirements see the Readme file.\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "To set up the Kinect for Windows development environment, install all the required software packages listed in the requirements section. Additional instructions can be found in the readme.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft\u00ae Visual Studio\u00ae 2010 Express",
+            "url": "http://www.microsoft.com/express/Downloads/#2010-Visual-CPP"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27876",
+    "downloadPreload": true
+}

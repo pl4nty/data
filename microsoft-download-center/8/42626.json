@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Security Trends in Healthcare ",
+    "downloadDescription": "Security Trends in Healthcare - Key Findings and Recommendations",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Secure Software Trends in Healthcare.pdf",
+            "url": "https://download.microsoft.com/download/b/6/2/b623c8dc-e52b-412a-87a2-5817b0ce293b/Secure Software Trends in Healthcare.pdf",
+            "size": "375298",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This report identifies security trends in healthcare and outlines key findings and recommendations. Cloud computing can help improve the security profiles of healthcare organizations by shifting the burden of assuring safe, secure computing practices to cloud service providers. Expanding regulation and ongoing fragmentation in the medical industry require increased attention from healthcare organizations; using the expertise and experience of cloud service providers to maintain secure operations is a reallocation of responsibility that makes good sense. And a cloud-based electronic health record (EHR) solution could address the needs of medical practitioners while reducing or mitigating risk.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Secure Software Trends in Healthcare.pdf"
+    ],
+    "detailsSection_file_size": [
+        "366.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any Supported Operating System. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the PDF.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42626",
+    "downloadPreload": true
+}

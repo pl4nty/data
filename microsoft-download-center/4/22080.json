@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "The Art of Building a Reusable Class Library",
+    "downloadDescription": "Brad Abrams and Krzysztof Cwalina presentation from PDC 2005",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PRE11_Abrams.ppt",
+            "url": "https://download.microsoft.com/download/a/0/e/a0ebfd11-1bc4-4313-b138-725040b537ec/PRE11_Abrams.ppt",
+            "size": "8502784",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In these slides, Brad Abrams and Krzysztof Cwalina present and discuss the merits of designing and creating the best class libraries. Krzys and Brad leverage real examples from the .NET framework libraries (or even day to day life!) to help give a background and firm infrastructure for the basis of these guidelines, and how you can use them to make your own coding experience more productive.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PRE11_Abrams.ppt"
+    ],
+    "detailsSection_file_size": [
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft PowerPoint or the PowerPoint viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Copy the file to a directory on your local machine and open in Microsoft PowerPoint.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Famework Developer Center",
+            "url": "http://msdn.microsoft.com/netframework"
+        },
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://msdn.microsoft.com/vstudio"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22080",
+    "downloadPreload": true
+}

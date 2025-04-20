@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Information Protection SDK 1.2",
+    "downloadDescription": "The Microsoft Information Protection SDK brings the classification, labeling, and protection capabilities of Microsoft Information Protection into a simple, lightweight, cross-platform software development kit that enables any application to label and protect information.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "mip_sdk_win32_1.2.185.zip",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_win32_1.2.185.zip",
+            "size": "87754657",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_ubuntu1604_1.2.185.tar.gz",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_ubuntu1604_1.2.185.tar.gz",
+            "size": "138301953",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_rhel7_1.2.185.tar.gz",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_rhel7_1.2.185.tar.gz",
+            "size": "139354457",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_macos_1.2.185.tar.gz",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_macos_1.2.185.tar.gz",
+            "size": "292553857",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_ios_1.2.185.tar.gz",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_ios_1.2.185.tar.gz",
+            "size": "381232456",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_debian9_1.2.185.tar.gz",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_debian9_1.2.185.tar.gz",
+            "size": "137048553",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_android_1.2.185.zip",
+            "url": "https://download.microsoft.com/download/1/f/7/1f763830-0e6c-4aff-9209-aa700bb00f7d/mip_sdk_android_1.2.185.zip",
+            "size": "140374769",
+            "version": "1.2.185",
+            "datePublished": "5/15/2024 4:30:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "*** Important: The latest version of the MIP SDK can be found at https://aka.ms/mipsdkbins. \r\n\r\nVersion 1.2 is not the current version.\r\n\r\nThe Microsoft Information Protection SDK brings the classification, labeling, and protection capabilities of Microsoft Information Protection into a simple, lightweight, cross-platform software development kit that enables any application to label and protect information. The labels and protection are consumable by Azure Information Protection, Office apps, Office 365, and any application or service that has integrated the Microsoft Information Protection SDK.\r\n\r\nBringing the labeling and protection capabilities that have existed in Office to line of business applications, as well as third-party PDF viewers, CAD/CAM applications, and other SaaS applications is a critical component of the information protection story. The Microsoft Information Protection SDK enables Microsoft partners and customers to build those integrations to protect data at creation, detect movement across trust boundaries, and to prevent accidental or malicious leakage of sensitive information.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.185",
+    "detailsSection_file_name": [
+        "mip_sdk_win32_1.2.185.zip",
+        "mip_sdk_ubuntu1604_1.2.185.tar.gz",
+        "mip_sdk_rhel7_1.2.185.tar.gz",
+        "mip_sdk_macos_1.2.185.tar.gz",
+        "mip_sdk_ios_1.2.185.tar.gz",
+        "mip_sdk_debian9_1.2.185.tar.gz",
+        "mip_sdk_android_1.2.185.zip"
+    ],
+    "detailsSection_file_size": [
+        "83.7 MB",
+        "131.9 MB",
+        "132.9 MB",
+        "279.0 MB",
+        "363.6 MB",
+        "130.7 MB",
+        "133.9 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<br/><b>Supported Platforms:</b><br/>\r\n<ul>\r\n<li>All supported version of Windows Server and Windows client</li>\r\n<li>MacOS High Sierra or later</li>\r\n<li>Ubuntu 16.04 and later</li>\r\n<li>Debian 9</li>\r\n<li>RedHat Enterprise Linux 7.5</li>\r\n<li>Android - Protection and Policy APIs</li>\r\n<li>iOS - Protection and Policy APIs</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Linux",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Ubuntu",
+        "Red Hat"
+    ],
+    "installInstructionSection": "To get started with the SDK, review the SDK documentation <a href=\"https://go.microsoft.com/fwlink/?linkid=2027647\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100423",
+    "downloadPreload": true
+}

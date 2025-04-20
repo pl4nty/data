@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Site Recovery appliance update config",
+    "downloadDescription": "Azure Site Recovery appliance update config",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LatestComponents.json",
+            "url": "https://download.microsoft.com/download/7/f/c/7fcdaa84-61f8-48e3-8d49-7232cd64abf4/LatestComponents.json",
+            "size": "3220",
+            "version": "5.1.7870",
+            "datePublished": "5/15/2024 4:34:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Site Recovery appliance update config",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1.7870",
+    "detailsSection_file_name": [
+        "LatestComponents.json"
+    ],
+    "detailsSection_file_size": [
+        "3.1 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows Server 2016\r\nWindows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the Json file to get the DLC urls.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104685",
+    "downloadPreload": true
+}

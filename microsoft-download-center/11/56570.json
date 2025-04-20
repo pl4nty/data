@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory Migration Tool version 3.2 (has known problems and limited support)",
+    "downloadDescription": "The Active Directory Migration Tool version 3.2 (ADMT v3.2) provides an integrated toolset to facilitate migration and restructuring tasks in an Active Directory Domain Services infrastructure.    NOTE: this tool has known problems and is in limited support \u2013 please carefully review the ADMT Known Problems and Support Statement link in Related Resources below before using.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "admtsetup32.exe",
+            "url": "https://download.microsoft.com/download/9/1/5/9156937f-1df7-4734-9beb-5f0a4400b29e/admtsetup32.exe",
+            "size": "4309656",
+            "version": "3.2",
+            "datePublished": "7/15/2024 4:26:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Active Directory Migration Tool version 3.2 (ADMT v3.2) simplifies the process of migrating objects and restructuring tasks in an Active Directory\u00ae  Domain Service (AD DS) environment. You can use ADMT v3.2 to migrate users, groups, and computers between AD DS domains in different forests (inter-forest migration) or between AD DS domains in the same forest (intra-forest migration). ADMT can also perform security translation (to migrate local user profiles) when performing inter-forest migrations. <B>NOTE:</B> this tool has known problems and is in limited support \u2013 please carefully review the ADMT Known Problems and Support Statement link in Related Resources below before using.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.2",
+    "detailsSection_file_name": [
+        "admtsetup32.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>See the list of known issues using the link in Related Resources</LI><LI>ADMT can be installed on any computer capable of running the Windows Server 2008 operating system or later, unless they are Read-Only domain controllers or in a Server Core configuration.</LI><LI>Target domain: The target domain must be running Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.</LI><LI> Source domain: The source domain must be running Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, or Windows Server 2012 R2.</LI><LI>The ADMT agent, installed by ADMT on computers in the source domains, can operate on computers running Windows XP, Windows Vista, Windows Server 2008, Windows 7, Windows Server 2008 R2, Windows Server 2012, and Windows Server 2012 R2.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "<UL><LI><B>NOTE:</B> this tool has known problems and is in limited support \u2013 please carefully review the ADMT Known Problems and Support Statement link in Related Resources below before using.</LI></UL>\r\n<UL><LI>PES v3.1 is a separate download also available on the Microsoft Download Center. See the Related Downloads section below.</LI></UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "admt Known Problems and Support Statement",
+            "url": "http://aka.ms/ADMT_known_problems_and_support_statement"
+        },
+        {
+            "title": "active Directory Domain Services",
+            "url": "https://docs.microsoft.com/windows-server/identity/ad-ds/active-directory-domain-services"
+        },
+        {
+            "title": "password Export Server 3.1 (x64)",
+            "url": "https://www.microsoft.com/download/details.aspx?id=1838"
+        },
+        {
+            "title": "password Export Server 3.1 (x86)",
+            "url": "https://www.microsoft.com/download/details.aspx?id=10370"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56570",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Financial Reporting Dashboards - Click-Through Demo",
+    "downloadDescription": "This is a portable, interactive demo that closely simulates the UI and functionality of an actual solution. Installs to your Start menu and includes a presenter script.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FRD_setup.msi",
+            "url": "https://download.microsoft.com/download/3/5/8/35879ee5-3711-4efc-9f9d-ab24292f3091/FRD_setup.msi",
+            "size": "15560704",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a portable, interactive demo that closely simulates the UI and functionality of an actual solution. Installs to your Start menu and includes a presenter script. Scenario Summary: Enterprise financial information is often housed in accounting, customer relationship management (CRM), and other line-of-business systems. The data from these systems is rich and comprehensive, but it is often difficult to use. Regular reports might not have the most current information or address the most critical business questions. A financial dashboard solution built using the Microsoft Office System enables financial decision-makers to retrieve, view, and analyze the data they need from these systems without leaving the familiar Microsoft Office Excel 2003 environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FRD_setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "To install this download: <br />\n1. Click the Download button on this page to start the download <br />\n2. Click Run to start installation<br />\n3. Follow the instructions on the installation wizard to complete the installation<br />\n4. To launch this demo, click the Start menu, point to All Programs, point to Microsoft Office System Demos, point to this demo, and then click Launch Demo.<br />\n<br />\nTo save this download:<br />\nTo save the download to your computer for installation at a later time, click Save. <br />\n<br />\nTo remove this download:<br />\nOn the Start menu, point to All Programs, point to Microsoft Office System Demos, point to this demo, and then click uninstall demo.",
+    "relatedResourcesSection": [
+        {
+            "title": "solution Showcase for Financial Reporting Dashboards \u2013 Partner Web Site",
+            "url": "https://partner.microsoft.com/40024594"
+        },
+        {
+            "title": "solution Showcase for Financial Reporting Dashboards \u2013 Customer Web Site",
+            "url": "http://www.microsoft.com/office/showcase/findashboard/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18455",
+    "downloadPreload": true
+}

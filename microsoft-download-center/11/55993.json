@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft \u00aeSQL Server\u00ae 2017 FileStream Driver - Windows Logo Certification",
+    "downloadDescription": "Catalog file for Microsoft SQL Server 2017 FileStream Driver that is certified for Windows Server 2016. It meets Microsoft standards for compatibility and recommended practices with the Windows Server 2016 operating systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rsfx0500[1].cat",
+            "url": "https://download.microsoft.com/download/c/e/f/cefacafe-51c2-4dd3-8e4c-78ba60f214a9/rsfx0500[1].cat",
+            "size": "9899",
+            "version": "0500",
+            "datePublished": "7/15/2024 4:49:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\r\nApplications seeking Windows Server Logo Certification are required to meet Microsoft standards for compatibility and recommended practices with the Windows Server 2016 operating systems. If the application includes drivers, they must be independently tested and signed by the Windows Logo Program (for Hardware, formally known as WHQL). SQL Server 2014 FileStream Driver has been signed with a WHQL signature, though in order to verify signature, the corresponding catalog file must be downloaded and installed for the FileStream RsFx driver. You may download and install the above catalog file on your devices for your use solely with the FileStream FsFX driver.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0500",
+    "detailsSection_file_name": [
+        "rsfx0500[1].cat"
+    ],
+    "detailsSection_file_size": [
+        "9.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\nSQL Server 2017",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<br/>\r\n<ol>\r\n<li> Download and install the appropriate catalog file from this page</li>\r\n<li> Install the .cat file per the instructions on found on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=242549\"> MSDN Instructions page.</a></li>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55993",
+    "downloadPreload": true
+}

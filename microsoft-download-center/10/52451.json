@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Spec# for Visual Studio 2005",
+    "downloadDescription": "Spec# is an experimental language that extends C# with several design-by-contract features. Last published: April 11, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SpecSharp.msi",
+            "url": "https://download.microsoft.com/download/8/5/b/85b7463a-821d-4a37-8768-8ec5e4ba8a48/SpecSharp.msi",
+            "size": "6013440",
+            "version": "1.0.20411",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Spec# is an experimental language that extends C# with several design-by-contract features. The new features of Spec# include a non-null type system, method pre- and post-conditions, loop invariants, and object invariants. The Spec# Programming System provides design-time checking, run-time checking, and a static verifier. This version of Spec# runs on .NET Framework version 2.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.20411",
+    "detailsSection_file_name": [
+        "SpecSharp.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52451",
+    "downloadPreload": true
+}

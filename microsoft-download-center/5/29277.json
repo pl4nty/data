@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 13: Use Drawing Explorer and Document Stencils in Visio 2010 (working files)",
+    "downloadDescription": "Practice using the Drawing Explorer and document stencils in Microsoft Visio 2010 with these diagrams, part of the Visio 2010 MVP Sessions, Video 13.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MVPSession13DocumentStencil.vsd",
+            "url": "https://download.microsoft.com/download/2/c/5/2c58f36b-43db-462e-b2fb-cddd9de65a5a/MVPSession13DocumentStencil.vsd",
+            "size": "186368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession13DrawingExplorer.vsd",
+            "url": "https://download.microsoft.com/download/2/c/5/2c58f36b-43db-462e-b2fb-cddd9de65a5a/MVPSession13DrawingExplorer.vsd",
+            "size": "348160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice using the Drawing Explorer and document stencils in Visio 2010 with these diagrams, created as companions to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 13. MVP Sessions Video 13 covers two advanced features that give you a view into the inner workings of a Visio document file: the Drawing Explorer and document stencils. Use these working files to follow along with the video and practice altering master shapes, applying the edits to all other shapes in your document, and using the Drawing Explorer to navigate a document with multiple pages and complex grouped shapes. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession13DocumentStencil.vsd",
+        "MVPSession13DrawingExplorer.vsd"
+    ],
+    "detailsSection_file_size": [
+        "182.0 KB",
+        "340.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the diagrams to your computer and then open them with Visio 2010.",
+    "additionalInformationSection": "Watch the Use Drawing Explorer and Document Stencils video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Session-13-Use-drawing-explorer-and-document-stencils.aspx).",
+    "relatedResourcesSection": [
+        {
+            "title": "the Visio 2010 MVP Sessions home page",
+            "url": "http://visio.microsoft.com/MVPSessions"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29277",
+    "downloadPreload": true
+}

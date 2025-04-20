@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager 2025 \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the respective System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025.7z.003",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025.7z.003",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center 2025_WS_SQL_WADK VHD EULA.rtf",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/System Center 2025_WS_SQL_WADK VHD EULA.rtf",
+            "size": "197815",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025.exe",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025.exe",
+            "size": "223888",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025.7z.005",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025.7z.005",
+            "size": "1185130748",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025.7z.002",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025.7z.002",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025.7z.004",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025.7z.004",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025.7z.001",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025.7z.001",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM_2025_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/7517eab8-05d0-4be0-89de-a4c768c533d7/SCSM_2025_VHDEVAL.docx",
+            "size": "67097",
+            "version": "2025",
+            "datePublished": "4/9/2025 7:52:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHD enables System Center customers to jointly evaluate System Center 2025 and Windows Server 2025. For detailed information about each component, see the component documentation atincluded with these download files.<br />\n<br />\nSystem Center 2025 components that ship Evaluation VHDs can be found at the following locations:\n<ul>\n\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291511\">System Center Orchestrator 2025 \u2013 Evaluation (VHD)</a></li>\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291606\">System Center Operations Manager 2025 \u2013 Evaluation (VHD)</a></li>\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291608\">System Center Virtual Machine Manager 2025 \u2013 Evaluation (VHD) </a></li>\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291607\">System Center Data Protection Manager 2025 \u2013 Evaluation (VHD) </a></li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2025",
+    "detailsSection_file_name": [
+        "SCSM_2025.7z.003",
+        "System Center 2025_WS_SQL_WADK VHD EULA.rtf",
+        "SCSM_2025.exe",
+        "SCSM_2025.7z.005",
+        "SCSM_2025.7z.002",
+        "SCSM_2025.7z.004",
+        "SCSM_2025.7z.001",
+        "SCSM_2025_VHDEVAL.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.0 GB",
+        "193.2 KB",
+        "218.6 KB",
+        "1.1 GB",
+        "2.0 GB",
+        "2.0 GB",
+        "2.0 GB",
+        "65.5 KB"
+    ],
+    "detailsSection_file_date": "4/9/2025",
+    "systemRequirementsSection": "<ul> \n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ol>\n<li> Download the self-extracting exe file and all other \u201c.7z\" files </li>\n<li> Download the <b>\u201cSCSM_2025_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\n<li> Place all downloaded files in the same directory </li>\n<li> Double-click the self-extracting <b>SCSM_2025.exe</b> file to extract the VHD file </li>\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\n\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106283",
+    "downloadPreload": true
+}

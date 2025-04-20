@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Windows LAPS Passphrase Word Lists",
+    "downloadDescription": "Contains list of words used by the Windows LAPS feature to generate",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows LAPS passphrase word list - Electronic Frontier Foundation short words_v1_summary.txt",
+            "url": "https://download.microsoft.com/download/4/a/8/4a869b67-8bfd-420f-85b5-71068910ec28/Windows LAPS passphrase word list - Electronic Frontier Foundation short words_v1_summary.txt",
+            "size": "9284",
+            "version": "1",
+            "datePublished": "7/15/2024 5:00:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows LAPS passphrase word list - Electronic Frontier Foundation short words with unique prefixes_v1_summary.txt",
+            "url": "https://download.microsoft.com/download/4/a/8/4a869b67-8bfd-420f-85b5-71068910ec28/Windows LAPS passphrase word list - Electronic Frontier Foundation short words with unique prefixes_v1_summary.txt",
+            "size": "13031",
+            "version": "1",
+            "datePublished": "7/15/2024 5:00:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows LAPS passphrase word list - Electronic Frontier Foundation long words_v1_summary.txt",
+            "url": "https://download.microsoft.com/download/4/a/8/4a869b67-8bfd-420f-85b5-71068910ec28/Windows LAPS passphrase word list - Electronic Frontier Foundation long words_v1_summary.txt",
+            "size": "71265",
+            "version": "1",
+            "datePublished": "7/15/2024 5:00:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows LAPS supports generation of random passphrases for use as the password for Windows LAPS-managed accounts.  Passphrases are composed of multiple randomly chosen words appended together to form a complete \"passphrase\". \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows LAPS passphrase word list - Electronic Frontier Foundation short words_v1_summary.txt",
+        "Windows LAPS passphrase word list - Electronic Frontier Foundation short words with unique prefixes_v1_summary.txt",
+        "Windows LAPS passphrase word list - Electronic Frontier Foundation long words_v1_summary.txt"
+    ],
+    "detailsSection_file_size": [
+        "9.1 KB",
+        "12.7 KB",
+        "69.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 11, Windows 10, Windows Server 2022, Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10",
+        "Windows Server 2022",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "These files are provided for informational purposes only.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105762",
+    "downloadPreload": true
+}

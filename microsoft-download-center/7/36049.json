@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Print Management Integration Guide",
+    "downloadDescription": "This document describes print management; how to set it up and how to use it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AX 2012 Print Management Integration Guide.pdf",
+            "url": "https://download.microsoft.com/download/9/7/a/97a85347-9ec5-4f81-971f-90a9970753f9/AX 2012 Print Management Integration Guide.pdf",
+            "size": "616734",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes print management in Microsoft Dynamics AX 2012. Print management provides specialized control of print settings for selected reports in Microsoft Dynamics AX. Print settings include the number of copies, the printer destination, and the multi-language text that can be included on the report.<br /> \r\n<br />\r\nYou might use the print management framework if you have reports that require specialized print management, or if you add a new document type to the application that is similar to the document types that are supported by print management.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "AX 2012 Print Management Integration Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "602.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36049",
+    "downloadPreload": true
+}

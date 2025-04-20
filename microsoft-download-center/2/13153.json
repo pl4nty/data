@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 Clustering Whitepapers",
+    "downloadDescription": "Various Whitepapers and Datasheets overviewing Windows Server 2008 Clustering",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WS2008 Multi Site Clustering.doc",
+            "url": "https://download.microsoft.com/download/3/b/5/3b51a025-7522-4686-aa16-8ae2e536034d/WS2008 Multi Site Clustering.doc",
+            "size": "1515109",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WS2008 Failover Clustering Datasheet.doc",
+            "url": "https://download.microsoft.com/download/3/b/5/3b51a025-7522-4686-aa16-8ae2e536034d/WS2008 Failover Clustering Datasheet.doc",
+            "size": "448327",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2008 Failover Clustering Architecture Overview.doc",
+            "url": "https://download.microsoft.com/download/3/b/5/3b51a025-7522-4686-aa16-8ae2e536034d/Windows Server 2008 Failover Clustering Architecture Overview.doc",
+            "size": "84636",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick Migration with Hyper-V.doc",
+            "url": "https://download.microsoft.com/download/3/b/5/3b51a025-7522-4686-aa16-8ae2e536034d/Quick Migration with Hyper-V.doc",
+            "size": "3978752",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Overview of Failover Clustering with Windows Server 2008.doc",
+            "url": "https://download.microsoft.com/download/3/b/5/3b51a025-7522-4686-aa16-8ae2e536034d/Overview of Failover Clustering with Windows Server 2008.doc",
+            "size": "77037",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft High Availability Strategy White Paper.doc",
+            "url": "https://download.microsoft.com/download/3/b/5/3b51a025-7522-4686-aa16-8ae2e536034d/Microsoft High Availability Strategy White Paper.doc",
+            "size": "1034752",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Various Whitepapers and Datasheets overviewing Windows Server 2008 Clustering",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "WS2008 Multi Site Clustering.doc",
+        "WS2008 Failover Clustering Datasheet.doc",
+        "Windows Server 2008 Failover Clustering Architecture Overview.doc",
+        "Quick Migration with Hyper-V.doc",
+        "Overview of Failover Clustering with Windows Server 2008.doc",
+        "Microsoft High Availability Strategy White Paper.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "437.8 KB",
+        "82.7 KB",
+        "3.8 MB",
+        "75.2 KB",
+        "1010.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Open each document as required",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13153",
+    "downloadPreload": true
+}

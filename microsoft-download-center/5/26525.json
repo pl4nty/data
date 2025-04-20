@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "IT Asset Management sample diagram for Visio 2010",
+    "downloadDescription": "Simplify how you monitor the status (deployment, configuration, and usage) of your IT hardware assets, such as workstations, web servers, and database servers, with this Visio 2010 sample diagram.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ITAssetManagement.vst",
+            "url": "https://download.microsoft.com/download/2/b/2/2b2ab6fa-3bca-4e2c-ac74-5d8449dfc7c6/ITAssetManagement.vst",
+            "size": "940544",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 sample diagram to document your existing or proposed IT hardware configuration and topology. This sample shows how you can use Visio 2010 to track the deployment, configuration, and usage status of different IT assets, such as file servers, web servers, and database servers. It uses built-in shapes in Visio 2010 for rack-mounted equipment, servers, network and peripherals, and network locations, automatically linked to imported sample data. By customizing the sample diagram and linking to your own data, such as from your management software, you can quickly build an at-a-glance view into your IT asset inventory. You could also use a sample like this to document the proposed configuration and topology of new IT assets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ITAssetManagement.vst"
+    ],
+    "detailsSection_file_size": [
+        "918.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the sample diagram to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26525",
+    "downloadPreload": true
+}

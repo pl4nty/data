@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 Disaster Recovery Operations Guide",
+    "downloadDescription": "This guide explains how to back up and restore the critical data in your Exchange organization.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DROpsGuide.doc",
+            "url": "https://download.microsoft.com/download/e/c/f/ecf905be-a696-49f1-b9cc-28aeca316eec/DROpsGuide.doc",
+            "size": "2257408",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:09:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "This guide explains how to back up and restore the critical data in your Exchange organization. It covers how to use the backup utility in Microsoft Windows Server 2003 (Backup), how to back up Microsoft Exchange Server 2003, and how to restore Exchange Server 2003. This guide explains how to perform backup and restore procedures so that you can prepare for (back up) and recover from (restore) a failure that causes some or all of your data to become unavailable. This guide is intended for information technology (IT) professionals who perform backup and restore procedures or who write customized backup and restore procedures for their organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "DROpsGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "exchange 2003 High Availability Guide",
+            "url": "http://go.microsoft.com/fwlink/?linkid=47571"
+        },
+        {
+            "title": "exchange 2003 Disaster Recovery Operations Guide",
+            "url": "http://go.microsoft.com/fwlink/?linkid=47570"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "85",
+    "downloadPreload": true
+}

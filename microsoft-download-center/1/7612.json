@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Data Protection Manager 2010 Monitoring Management Pack",
+    "downloadDescription": "The management pack monitors the health status of System Center Data Protection Manager 2010 and its components. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Data Protection Manager 2010 for OpsMgr 2007-EN-US.msi",
+            "url": "https://download.microsoft.com/download/2/3/9/239aadb2-e7cd-4bfc-b48f-7672a06b797e/Data Protection Manager 2010 for OpsMgr 2007-EN-US.msi",
+            "size": "737280",
+            "version": "3.0.7696.12",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2007_MP_DPMv3.docx",
+            "url": "https://download.microsoft.com/download/2/3/9/239aadb2-e7cd-4bfc-b48f-7672a06b797e/OM2007_MP_DPMv3.docx",
+            "size": "166733",
+            "version": "3.0.7696.12",
+            "datePublished": "7/15/2024 4:26:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The management pack monitors the health status of System Center Data Protection Manager 2010 and its components. It alerts the admin on critical health state and it provides certain break fix tasks to take corrective actions. The management pack is targeted to provide central monitoring solution for System Center Data Protection Manager  2010 customers. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThe DPM 2010 Management Pack enables the user to reduce unnecessary alerts appearing on your console by using service level agreement (SLA)-based alerting and duplicate\u2013error suppression. <br/>\r\n<ul>\r\n<li> Through SLA-based alerting, alerts appear only if a particular job has failed for a certain period. </li>\r\n<li> Through duplicate-error suppression, the management pack suppresses alerts raised as a reaction to a root-cause event. For example, if a DPM protection agent service is unreachable, or a protected computer is not working, and the backup jobs of all data sources are failing, the management pack updates the state of each affected data source without raising a data source-specific alert. </li>\r\n<li> If you are using a ticketing system and are using Operations Manager, DPM 2010 Management Pack enables you to use rules instead of the monitors. By default, DPM Management Pack enables monitors. If you want to use rules, you must enable them. </li>\r\n<li> The following alerts are new in this release of the DPM 2010 Management Pack:  </li>\r\n<ul>\r\n<li> Backup metadata enumeration failed </li>\r\n<li> Agent ownership required </li>\r\n<li> Replica allocated and initial replication scheduled </li>\r\n<li> Share path changed </li>\r\n<li> Duplicate disks detected </li>\r\n<li> VHD parent locator fix-up failed </li>\r\n<li> Virtual machine metadata enumeration failed </li>\r\n<li> VHD parent locator fix-up canceled </li>\r\n<li> SharePoint Item Level Catalog failed </li>\r\n<li> Backup without writer metadata </li>\r\n<li> Customer Feedback opt-in </li>\r\n<li> Backup SLA failed </li>\r\n<li> Hyper-V Recovery Success </li>\r\n<li> Global DPMDB Database Not Accessible alert notification </li>\r\n<li> StagingAreaRestore in-progress </li>\r\n<li> StagingAreaRestore success </li>\r\n<li> StagingAreaRestore partial success </li>\r\n<li> StagingAreaRestore failure </li>\r\n<li> Auto Instance Protection failed </li>\r\n<li> DPM Online Recovery Point creation failures </li>\r\n<li> DPM Online Cache volume is missing </li>\r\n<li> Partial Backup success  </li>\r\n<li> Library devices were disabled </li>\r\n</ul>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>10/21/2010 - Original release for this management pack, version 3.0.7696.12 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.7696.12",
+    "detailsSection_file_name": [
+        "Data Protection Manager 2010 for OpsMgr 2007-EN-US.msi",
+        "OM2007_MP_DPMv3.docx"
+    ],
+    "detailsSection_file_size": [
+        "720.0 KB",
+        "162.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center Operations Manager 2007 SP1 or later </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Please refer to MP guide for detailed information.",
+    "relatedResourcesSection": [
+        {
+            "title": "data Protection Manager Home Page",
+            "url": "http://www.microsoft.com/systemcenter/en/us/data-protection-manager/dpm-2010-overview.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7612",
+    "downloadPreload": true
+}

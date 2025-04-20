@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Planning guide for server farms and environments for Microsoft SharePoint Server 2010",
+    "downloadDescription": "Subjects include system requirements, authentication, and business continuity management. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePtServPlanPlatfm.doc",
+            "url": "https://download.microsoft.com/download/3/7/9/379eea83-03cf-4f62-b639-4cc1952b6cae/SharePtServPlanPlatfm.doc",
+            "size": "3158528",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServPlanPlatfm.pdf",
+            "url": "https://download.microsoft.com/download/3/7/9/379eea83-03cf-4f62-b639-4cc1952b6cae/SharePtServPlanPlatfm.pdf",
+            "size": "4631533",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServPlanPlatfm.xps",
+            "url": "https://download.microsoft.com/download/3/7/9/379eea83-03cf-4f62-b639-4cc1952b6cae/SharePtServPlanPlatfm.xps",
+            "size": "4151386",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "This book provides information and guidelines for making decisions about system architecture for a deployment of Microsoft SharePoint Server 2010. Subjects include system requirements, authentication, and business continuity management. Capacity planning information is provided in a separate book (link follows). The audiences for this book are business application specialists, line-of-business specialists, information architects, IT generalists, program managers, and infrastructure specialists who are planning a solution based on SharePoint Server 2010. This book is part of a set of four planning guides that provide comprehensive IT planning information for SharePoint Server. <br/>\r\nFor information about planning for capacity and performance in SharePoint Server 2010, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=208221\">Capacity planning for Microsoft SharePoint Server 2010</a>.<br/>\r\nFor information about planning for sites and solutions created by using SharePoint Server, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=196150\">Planning guide for sites for Microsoft SharePoint Server 2010, Part 1</a> and <a href=\"http://go.microsoft.com/fwlink/?LinkId=208024\">Planning guide for sites and solutions for Microsoft SharePoint Server 2010, Part 2</a>. <br/>\r\n\r\nThe content in this book is a copy of selected content in the <a href=\"http://go.microsoft.com/fwlink/?LinkId=181463\">SharePoint Server 2010 technical library</a> as of the publication date. For the most current content, see the technical library on the Web. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePtServPlanPlatfm.doc",
+        "SharePtServPlanPlatfm.pdf",
+        "SharePtServPlanPlatfm.xps"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB",
+        "4.4 MB",
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use this document, you must have a program capable of opening one of the provided file formats. \r\n<ul>\r\n<li>To open the .doc file, you can use Microsoft Word 2010. Microsoft Office Word 2007, or the free <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Word viewer</a>. </li>\r\n<li>To open the .pdf file, you can use a free viewer such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Acrobat</a>.</li>\r\n<li>To open the .xps file, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or the <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> button next to the file you want to download to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your computer and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21097",
+    "downloadPreload": true
+}

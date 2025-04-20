@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 2016 Management Pack for Orchestrator",
+    "downloadDescription": "The Microsoft System Center 2016 Management Pack for Orchestrator monitors the health and availability of Microsoft System Center 2016 Orchestrator.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2016OrchestratorMPGuide.docx",
+            "url": "https://download.microsoft.com/download/e/8/4/e84891f9-0996-4255-a8ca-cd362622aaa9/SC2016OrchestratorMPGuide.docx",
+            "size": "91134",
+            "version": "7.3.68.0",
+            "datePublished": "7/15/2024 4:39:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_System_Center_2016_Management_Pack_for_Orchestrator.EXE",
+            "url": "https://download.microsoft.com/download/e/8/4/e84891f9-0996-4255-a8ca-cd362622aaa9/Microsoft_System_Center_2016_Management_Pack_for_Orchestrator.EXE",
+            "size": "340728",
+            "version": "7.3.68.0",
+            "datePublished": "7/15/2024 4:39:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft System Center 2016 Management Pack for Orchestrator monitors the health and availability of Microsoft System Center 2016 Orchestrator. <br/>\r\n<br/>\r\n<b> Feature Summary </b><br/>\r\nThe Microsoft System Center 2016 Management  Pack for Orchestrator provides the following capabilities. <br/>\r\n<ul>\r\n<li> Orchestrator Management Server Health - This scenario checks Orchestrator Management Servers for service status and critical log file events.  </li>\r\n<ul>\r\n<li> (monitor) Orchestrator Management Service </li>\r\n<li> (monitor) Orchestrator Runbook Server Monitor      </li> \r\n<li> (alerting rule) Orchestrator Management Server Database Connection Error </li>\r\n<li> (alerting rule) Orchestrator Runbook Server Monitor Database Connection Error     </li> \r\n</ul>  \r\n<li> Orchestrator Runbook Server Health - This scenario checks Orchestrator Runbook Servers for service status and critical log file events   </li> \r\n<ul>\r\n<li>(monitor) Orchestrator Runbook Service </li>\r\n<li> (monitor) Orchestrator Remoting Service </li>\r\n<li> (alerting rule) Orchestrator Runbook Policy Module Fault Alert </li>\r\n<li> (alerting rule) Orchestrator Runbook Server Database Connection Error </li>\r\n<li> (alerting rule) Orchestrator Runbook Update Error  </li>\r\n<li> (alerting rule) Orchestrator Runbook Server ActionServerStorage Call Refused Error    </li>\r\n<li> (non-alerting rule) Orchestrator Runbook Policy Module Working Set Peak Collection </li>\r\n<li> (non-alerting rule) Orchestrator Runbook Policy Module Thread Count Collection </li>\r\n<li> (non-alerting rule) Orchestrator Runbook Policy Module % Processor Time Collection </li>\r\n</ul>\r\n<li> Orchestrator Web Components Health - This scenario implements health roll-up for monitored IIS 7 (or later) components that represent the Orchestrator Web Components    </li> \r\n<ul>\r\n<li> (dependency monitor) Web Components Availability Rollup </li>\r\n</ul>\r\n<br/>\r\nPlease refer to the Monitoring Pack Guide included in the downlaod for more details\r\n</ul>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 10/12/2016 - Original Release, version 7.3.65.0 </li>\r\n<li> 10/24/2017 - Fixed issue that Orchestrator 2016 Management Pack is attached to the root entity health (all machines affected, not only Orchestrator Servers) , version 7.3.68.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.3.68.0",
+    "detailsSection_file_name": [
+        "SC2016OrchestratorMPGuide.docx",
+        "Microsoft_System_Center_2016_Management_Pack_for_Orchestrator.EXE"
+    ],
+    "detailsSection_file_size": [
+        "89.0 KB",
+        "332.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\nThe Monitoring Pack for System Center 2016 - Orchestrator has the following prerequisites: <br/>\r\n<ul>\r\n<li> The Monitoring Pack for System Center 2016 - Orchestrator supports System Center 2016 - Operations Manager. A dedicated management group is not required. </li>\r\n<li> The Windows Server 2008 Internet Information Services 7 Management Pack (version 6.0.6658 or later) must be imported to the management group prior to importing the Monitoring Pack for System Center 2016 - Orchestrator. </li>\r\n<li> Windows PowerShell is required on Orchestrator Management Servers and Runbook Servers </li>\r\n<li> Windows Server 2012 Operating System (Monitoring) or later is needed to see Operating System level alerts </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Once you have reviewed the Monitoring Pack Guide and meet the prerequisites for the Monitoring Pack for System Center 2016 - Orchestrator you can import this management pack module using the Microsoft Operations Manager administrative console and following these steps.  The MP file \u201cMicrosoft.SystemCenter.Orchestrator.Library.mp\u201d should be imported first. <br/>\r\n<br/>\r\n<ol>\r\n<li>  Open the Microsoft Operations Manager Operator console  </li>\r\n<li>  Click on the Administrator pane at the bottom left corner  </li>\r\n<li>  Expand the Management Packs node in the tree view  </li>\r\n<li>  Click on the Import Management Pack on the \u201cActions\u201d pane on the right and then browse to the folder where you extracted the MP and then import it.  </li>\r\n<li>  Follow the instructions until you have finished importing the management pack module.  </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54058",
+    "downloadPreload": true
+}

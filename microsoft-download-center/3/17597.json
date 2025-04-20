@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Stephen Toub on Concurrency - Live in NYC!",
+    "downloadDescription": "Stephen Toub from Microsoft talks about new tools coming forth for dealing with concurrency and asynchronous programming. This was recorded live in front of an audience at the MS Financial Services Developer Conference in NYC last month.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080408SToub.zip",
+            "url": "https://download.microsoft.com/download/7/0/a/70aec119-9531-458d-ae4f-956c735572db/20080408SToub.zip",
+            "size": "34194239",
+            "version": "1.0",
+            "datePublished": "12/15/2023 3:14:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Stephen Toub is a lead program manager on the Parallel Computing Platform team at Microsoft. He's also a Contributing Editor to MSDN Magazine.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080408SToub.zip"
+    ],
+    "detailsSection_file_size": [
+        "32.6 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17597",
+    "downloadPreload": true
+}

@@ -1,0 +1,197 @@
+{
+    "error": "",
+    "downloadTitle": "Walkthroughs: Microsoft \"Roslyn\" CTP",
+    "downloadDescription": "Download all the walkthrough documents for the Roslyn CTP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Interactive - Seeding the Interactive Window from a WPF Project.docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Interactive - Seeding the Interactive Window from a WPF Project.docx",
+            "size": "95780",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Interactive - Scripting Introduction.docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Interactive - Scripting Introduction.docx",
+            "size": "64828",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Interactive - Paint-like Application Scripting.docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Interactive - Paint-like Application Scripting.docx",
+            "size": "62042",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Interactive - Executing Code in the Interactive Window.docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Interactive - Executing Code in the Interactive Window.docx",
+            "size": "49440",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "How to Write a Quick Fix (VB).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/How to Write a Quick Fix (VB).docx",
+            "size": "181303",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "How to Write a Quick Fix (CSharp).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/How to Write a Quick Fix (CSharp).docx",
+            "size": "308998",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Workspace (VB).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Workspace (VB).docx",
+            "size": "57913",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Workspace (CSharp).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Workspace (CSharp).docx",
+            "size": "56553",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Syntax Transformation (VB).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Syntax Transformation (VB).docx",
+            "size": "83704",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Syntax Transformation (CSharp).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Syntax Transformation (CSharp).docx",
+            "size": "68124",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Syntax Analysis (VB).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Syntax Analysis (VB).docx",
+            "size": "185292",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Getting Started - Syntax Analysis (CSharp).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Syntax Analysis (CSharp).docx",
+            "size": "160453",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Semantic Analysis (VB).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Semantic Analysis (VB).docx",
+            "size": "45761",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Getting Started - Semantic Analysis (CSharp).docx",
+            "url": "https://download.microsoft.com/download/f/1/7/f177ea12-7f41-4c9b-b47c-8cddcbe8e119/Getting Started - Semantic Analysis (CSharp).docx",
+            "size": "45252",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download all the walkthrough documents for the Roslyn CTP.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v.3",
+    "detailsSection_file_name": [
+        "Interactive - Seeding the Interactive Window from a WPF Project.docx",
+        "Interactive - Scripting Introduction.docx",
+        "Interactive - Paint-like Application Scripting.docx",
+        "Interactive - Executing Code in the Interactive Window.docx",
+        "How to Write a Quick Fix (VB).docx",
+        "How to Write a Quick Fix (CSharp).docx",
+        "Getting Started - Workspace (VB).docx",
+        "Getting Started - Workspace (CSharp).docx",
+        "Getting Started - Syntax Transformation (VB).docx",
+        "Getting Started - Syntax Transformation (CSharp).docx",
+        "Getting Started - Syntax Analysis (VB).docx",
+        "Getting Started - Syntax Analysis (CSharp).docx",
+        "Getting Started - Semantic Analysis (VB).docx",
+        "Getting Started - Semantic Analysis (CSharp).docx"
+    ],
+    "detailsSection_file_size": [
+        "93.5 KB",
+        "63.3 KB",
+        "60.6 KB",
+        "48.3 KB",
+        "177.1 KB",
+        "301.8 KB",
+        "56.6 KB",
+        "55.2 KB",
+        "81.7 KB",
+        "66.5 KB",
+        "180.9 KB",
+        "156.7 KB",
+        "44.7 KB",
+        "44.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The Microsoft Word document download requires 58 KB of disk space to download and install. It also requires Microsoft Word or <a href=\"http://go.microsoft.com/fwlink/?LinkID=47975\">Microsoft Word Viewer</a> to view.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button to start the download.</li>\r\n<li>Do one of the following:\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "roslyn on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=228399"
+        },
+        {
+            "title": "roslyn on Microsoft Download Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=228400"
+        },
+        {
+            "title": "roslyn Project Overview",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=230702"
+        },
+        {
+            "title": "roslyn Forums",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=230758"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27745",
+    "downloadPreload": true
+}

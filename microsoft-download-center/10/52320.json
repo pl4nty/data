@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Storage Toolkit",
+    "downloadDescription": "The Microsoft Research Storage Toolkit enables effective and accessible research in Software Defined Storage by adding I/O classification functions to the Windows 8.1 storage stack and exposing selected flows of I/O requests to a user-supplied program written in C# which can easily inspect or modify them. Last published: November 6, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MsrStorageToolkit-20141106.zip",
+            "url": "https://download.microsoft.com/download/0/4/c/04cb598d-21b9-49f7-a6e4-3852242d5789/MsrStorageToolkit-20141106.zip",
+            "size": "47113328",
+            "version": "20141106",
+            "datePublished": "6/13/2024 12:54:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Research Storage Toolkit enables effective and accessible research in Software Defined Storage by adding I/O classification functions to the Windows 8.1 storage stack and exposing selected flows of I/O requests to a user-supplied program written in C# which can easily inspect or modify them. Parts of the Toolkit have supported our own recent research efforts, including IoFlow (SOSP13) and VDC (OSDI14), and we are releasing the Toolkit as a contribution to the academic community in the hope of facilitating and encouraging further advances in Software Defined Storage. Please read the setup section in the enclosed document before running the setup program. In the event of problems please email us at msr-storage-tlk@microsoft.com.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20141106",
+    "detailsSection_file_name": [
+        "MsrStorageToolkit-20141106.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.9 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52320",
+    "downloadPreload": true
+}

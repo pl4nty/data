@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 2 for System Center 2019 Service Manager",
+    "downloadDescription": "This article describes the issues that are fixed in Update Rollup 2 for Microsoft System Center 2019 Service Manager. This article also contains the installation instructions for this update.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SCSM2019_UR2_KB4558753.exe",
+            "url": "https://download.microsoft.com/download/8/3/1/831f9403-e2e6-4362-9df6-7dac3c883e70/SCSM2019_UR2_KB4558753.exe",
+            "size": "60876200",
+            "version": "10.19.1035.101",
+            "datePublished": "7/15/2024 4:24:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article describes the issues that are fixed in Update Rollup 2 for Microsoft System Center 2019 Service Manager.<br/>\r\n<br/>\r\n<b>Issues that are fixed and improvements</b>\r\n<ul>\r\n<li>Surface devices imported by SCCM connector will not be marked as virtual machines.</li>\r\n<li>Whenever a customer deletes service offering category, it will check if there are SO\u2019s on that category and prevent the category deletion. It will show an alert on console to delete the SO if they want to delete the category.</li>\r\n<li>End user will still be able to update his other requests even if he is removed as an affected user from one of his requests through Self Service Portal.</li>\r\n<li>Users will be able to scroll properly on all standard forms under work items tab.</li>\r\n<li>Made enhancements to the start-up time of the SDK service.</li>\r\n<li>When a user opens manual activity from any IR/CR and execute custom task, it will execute without any error.</li>\r\n<li>Each Portal Trace log now shows thread ID, Process ID, Date and Time in UTC.</li>\r\n<li>With this fix, Service Manager supports SCCM from 1806 to 2002. However, it is recommended to follow the steps in \u201cAfter the Installation\u201d.</li>\r\n<li>As SQLNCLI is technically out of support, with this update Service Manager now supports MSOLEDBSQL.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4558753",
+        "name": "4558753"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.19.1035.101",
+    "detailsSection_file_name": [
+        "SCSM2019_UR2_KB4558753.exe"
+    ],
+    "detailsSection_file_size": [
+        "58.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "...",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4558753\">KB4558753</a> for detailed installation instructions.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101580",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Live from devLink 2008!",
+    "downloadDescription": "Carl and Richard break out the microphone during Karaoke night (don't worry) at the DoubleTree bar in Murphreesboro, TN, to talk to staff and attendees of the devLink Technical Conference (August 22-23).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080828Devlink.zip",
+            "url": "https://download.microsoft.com/download/0/d/8/0d8b22e1-8ecb-42cd-8581-0e655f511a72/20080828Devlink.zip",
+            "size": "46476650",
+            "version": "1.0",
+            "datePublished": "12/15/2023 3:14:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The devLink Technical Conference provides technical content of interest to Software Developers, Solution Architects, Database Administrators, Project Managers, Business Analysts, Technology Executives and IT professionals looking for the latest and greatest content. You will have the opportunity to learn from industry experts from around the world. You'll get cutting edge techniques to solve your development challenges today and build the next generation applications of tomorrow. No other local event, no corporate trainers, no one else will compare to devLink's standard of excellence and commitment to real-world, practical information designed to take your skills to the next level. Not only are we bringing all this cutting edge information to you in Nashville, but we are doing it for a fraction of the price you would pay at another conference.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080828Devlink.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.3 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24898",
+    "downloadPreload": true
+}

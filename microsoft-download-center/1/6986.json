@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Surface!",
+    "downloadDescription": "Carl and Richard talk to Robert Levy and Doug Kramer at the Microsoft Professional Developers Conference (PDC) in Los Angeles right after they unveiled the Microsoft Surface to the Microsoft developer community.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20081028Surface.zip",
+            "url": "https://download.microsoft.com/download/3/8/5/385a5c6e-f69f-4ff3-ae96-3ecdfbeca3da/20081028Surface.zip",
+            "size": "40415460",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:08:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Robert Levy has led the design and development of APIs and controls in the Surface SDK for two years. Previous projects at Microsoft include the Windows Mobile 2003 SE SDK and the Windows Mobile 5.0 SDK. <br />\n<br />\nDoug Kramer has been at Microsoft for a decade, working on Microsoft Surface since 2003 as one of the original developers on the project. Doug has considerable experience in .NET/C# and WPF, as well as managed DirectX and XNA. Doug is currently a lead on the Surface SDK team.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20081028Surface.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.5 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6986",
+    "downloadPreload": true
+}

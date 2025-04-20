@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "F# Tools for Visual Studio Express 2012 for Web",
+    "downloadDescription": "F# Tools for Visual Studio Express 2012 for Web provides support for building F# 3.0 projects in Visual Studio Express 2012 for Web.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FSharpVWDEULA.rtf",
+            "url": "https://download.microsoft.com/download/0/5/e/05e5c5e3-2a52-434f-a09e-c8150b987d09/FSharpVWDEULA.rtf",
+            "size": "92175",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:31:30 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "VWD_FSharp.exe",
+            "url": "https://download.microsoft.com/download/0/5/e/05e5c5e3-2a52-434f-a09e-c8150b987d09/VWD_FSharp.exe",
+            "size": "8240464",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:31:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "F# is a strongly typed, functional-first programming language for writing simple code to solve complex problems. F# makes it easier to write correct, robust, and efficient analytical components\u2014and it interoperates seamlessly with VB/C# and all .NET libraries. Together, this means that developers can rapidly investigate problem spaces and easily deploy the resulting components. \nThis package provides compiler and IDE support for using F# 3.0 to create ASP.NET services, Windows Azure cloud services, and F# class libraries. F# 3.0 supports information-rich programming, with new features such as query expressions, improved IDE support, auto-implemented properties, and F# type providers for SQL, OData and WSDL.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "FSharpVWDEULA.rtf",
+        "VWD_FSharp.exe"
+    ],
+    "detailsSection_file_size": [
+        "90.0 KB",
+        "7.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>Windows 7 SP1 (x86 and x64)</li>\n<li>Windows 8 (x86 and x64)</li>\n<li>Windows Server 2008 R2 SP1 (x64)</li>\n<li>Windows Server 2012 (x64)</li>\n</ul>\n<a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30669\">Visual Studio Express 2012 for Web</a> is required to use this feature.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Install <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30669\">Visual Studio Express 2012 for Web</a> and close all instances of any edition of Visual Studio 2012 before installing this package.\nFor more information about this release, see the MSDN library article <a href=\"http://go.microsoft.com/fwlink/?LinkId=262848\">What\u2019s New for Visual F# in Visual Studio 2012</a> or the <a href=\"http://www.fsharp.net/\">F# Developer Center</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "what\u2019s New for Visual F# in Visual Studio 2012",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=262848"
+        },
+        {
+            "title": "f# Developer Center",
+            "url": "http://www.fsharp.net/"
+        },
+        {
+            "title": "visual Studio Express 2012 for Web",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=30669"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34675",
+    "downloadPreload": true
+}

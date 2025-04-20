@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013 WAN testing with Visual Studio 2012 walkthrough",
+    "downloadDescription": "This walkthrough uses Visual Studio to create a WAN test scenario.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sp2013-test-walkthrough.pptx",
+            "url": "https://download.microsoft.com/download/3/f/e/3fee2571-9a34-4a20-9b92-7bf790e42491/sp2013-test-walkthrough.pptx",
+            "size": "3356478",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Slides in this PowerPoint present shows how to build a web test and load test for WAN testing that uses Visual Studio 2013. Presentation notes provide additional information to help you understand the process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "sp2013-test-walkthrough.pptx"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft PowerPoint 2010 or Microsoft PowerPoint 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> buttonto start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36534",
+    "downloadPreload": true
+}

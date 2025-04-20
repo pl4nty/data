@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Hybrid Cloud for Enterprise Architects",
+    "downloadDescription": "This poster tells the cross-cloud story on hybrid cloud architecture and scenarios for Azure, Office 365, Microsoft Intune, and Dynamics 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_hybrid.vsd",
+            "url": "https://download.microsoft.com/download/e/a/d/ead964cd-8426-4fff-a3e7-5ef813af1fc8/MSFT_cloud_architecture_hybrid.vsd",
+            "size": "2918912",
+            "version": "September2016",
+            "datePublished": "7/15/2024 4:53:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_hybrid.pdf",
+            "url": "https://download.microsoft.com/download/e/a/d/ead964cd-8426-4fff-a3e7-5ef813af1fc8/MSFT_cloud_architecture_hybrid.pdf",
+            "size": "521952",
+            "version": "September2016",
+            "datePublished": "7/15/2024 4:53:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft hybrid cloud is a set of business scenarios that combine a Microsoft cloud platform with an on-premises component. You can use hybrid cloud as a path to migrate your business and its IT needs to the cloud or integrate cloud platforms and services with your existing on-premises infrastructure as part of your overall IT strategy.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "September2016",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_hybrid.vsd",
+        "MSFT_cloud_architecture_hybrid.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB",
+        "509.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This poster is available in Visio (VSD or VSDX) and PDF versions in 11x17 (tabloid) format for easy printing. \r\n\r\nYou will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. \r\n\r\nYou will need the Adobe Acrobat reader for the PDF version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "https://docs.microsoft.com/office365/enterprise/microsoft-cloud-networking-for-enterprise-architects"
+        },
+        {
+            "title": "article version of this poster",
+            "url": "https://docs.microsoft.com/office365/enterprise/microsoft-hybrid-cloud-for-enterprise-architects"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54424",
+    "downloadPreload": true
+}

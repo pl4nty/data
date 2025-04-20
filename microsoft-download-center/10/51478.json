@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "XPS Specification and Reference Guide",
+    "downloadDescription": "Describes the set of conventions for the use of XML and other widely available technologies to describe the content and appearance of paginated documents.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "print-schema-spec-1-1.zip",
+            "url": "https://download.microsoft.com/download/1/6/a/16acc601-1b7a-42ad-8d4e-4f0aa156ec3e/print-schema-spec-1-1.zip",
+            "size": "4733089",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:30:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This XML Paper Specification, or XPS, describes the set of conventions for the use of XML and other widely available technologies to describe the content and appearance of paginated documents.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "print-schema-spec-1-1.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 98 / Windows 2000 or later<br />\nMicrosoft Office 97 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Select \"Save this file to disk\" to download to your local machine.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51478",
+    "downloadPreload": true
+}

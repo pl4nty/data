@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "OOXML Strict Converter for Office 2010 ",
+    "downloadDescription": "OOXML Strict Converter for Office 2010 allows you to open ISO strict documents in Office 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ImpConv_64bit.exe",
+            "url": "https://download.microsoft.com/download/7/6/7/76769857-d920-4c98-acd2-f93f1134d539/ImpConv_64bit.exe",
+            "size": "1760096",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:02:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ImpConv_32bit.exe",
+            "url": "https://download.microsoft.com/download/7/6/7/76769857-d920-4c98-acd2-f93f1134d539/ImpConv_32bit.exe",
+            "size": "1597280",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:02:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "OOXML Strict Converter for Office 2010 allows you to open ISO strict documents that are created using Office 2013 in Office 2010. It will preserve the fidelity of the document. <br/>\r\nIf you make any changes and save the document, the document will be saved in Transitional format. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "ImpConv_64bit.exe",
+        "ImpConv_32bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following programs: <br/>\r\nMicrosoft Excel 2010<br/>\r\nMicrosoft Word 2010<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "1. Download the file by clicking the Download link and saving the files to your hard disk drive. <br/>\r\n2. Double-click the ImpConv.exe program file on your hard disk drive to start the setup program.<br/>\r\n3. Follow the instructions on the screen to complete the installation.<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38828",
+    "downloadPreload": true
+}

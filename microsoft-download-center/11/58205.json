@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R3",
+    "downloadDescription": "Microsoft Dynamics AX 2012 R3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6.3.164.0 (AX2012R3).zip",
+            "url": "https://download.microsoft.com/download/c/8/5/c8544071-7f8d-4211-bc22-8c2420357c66/6.3.164.0 (AX2012R3).zip",
+            "size": "2992713247",
+            "version": "AX2012 R3",
+            "datePublished": "7/15/2024 3:03:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics AX 2012 R3 - the base release of the product",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX2012 R3",
+    "detailsSection_file_name": [
+        "6.3.164.0 (AX2012R3).zip"
+    ],
+    "detailsSection_file_size": [
+        "2.8 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "https://www.microsoft.com/en-us/download/details.aspx?id=11094",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Unzip the package and run the AXSetup.exe to start the installation process.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58205",
+    "downloadPreload": true
+}

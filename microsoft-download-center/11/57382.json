@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for SQL Server Analysis Services",
+    "downloadDescription": "Microsoft System Center Management Pack for SQL Server Analysis Services enables the discovery and monitoring of SSAS 2014, 2016, 2019, 2022, and upcoming versions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSASMPWorkflowsList.pdf",
+            "url": "https://download.microsoft.com/download/c/c/7/cc76ef46-9fd8-4597-82c6-2692fca2949d/SSASMPWorkflowsList.pdf",
+            "size": "1253410",
+            "version": "7.8.3",
+            "datePublished": "1/23/2025 3:10:58 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SQLServer.AnalysisServices.ManagementPack.msi",
+            "url": "https://download.microsoft.com/download/c/c/7/cc76ef46-9fd8-4597-82c6-2692fca2949d/Microsoft.SQLServer.AnalysisServices.ManagementPack.msi",
+            "size": "3555328",
+            "version": "7.8.3",
+            "datePublished": "1/23/2025 3:10:58 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack for SQL Server Analysis Services supports discovery and monitoring of Instances, Databases, and Partitions of SQL Server Analysis Services 2012, 2014, 2016, 2017, 2019, 2022, and upcoming versions. Due to the lifecycle policy, SQL Server 2012 is no longer tested.<br/>\r\n<br/>\r\nMonitoring gives you the insights about such metrics as performance, availability and configuration monitoring, performance and event data collection. <br/>\r\n<br/>\r\nIn addition to health monitoring capabilities, this management pack includes dashboards, diagrams, state, performance, and alert views.<br/>\r\n<br/>\r\nMicrosoft System Center Management Pack for SQL Server Analysis Services is intended for Operations Manager 2016, Operations Manager 2019, and Operations Manager 2022.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<br/>\r\nThe following list provides a brief overview of the features available in Microsoft System Center Operations Manager Management Pack for SQL Server Analysis Services: <br/>\r\n<ul>\r\n<li>SSAS Instance level monitoring</li>\r\n<li>SSAS Database level monitoring</li>\r\n<li>Partition Storage Free Space</li>\r\n<li>A number of performance collection rules</li>\r\n</ul>\r\nFor more information about this management pack, see the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a>.\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.8.3",
+    "detailsSection_file_name": [
+        "SSASMPWorkflowsList.pdf",
+        "Microsoft.SQLServer.AnalysisServices.ManagementPack.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "1/23/2025",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57382",
+    "downloadPreload": true
+}

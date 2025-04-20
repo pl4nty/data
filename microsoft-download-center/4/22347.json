@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Learning Pack 2.0 ",
+    "downloadDescription": "The Visual Studio Learning Pack 2.0 ( Previous name was Visual Studio Middle School Power Toy) is a software package created by Microsoft to help students learn about computer programming. Improvements in this release include support for Visual Studio 2008 Express and more support for Visual Basic.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VSLPSetup.en.zip",
+            "url": "https://download.microsoft.com/download/0/2/f/02f97285-9ee6-49b6-acbc-87ea6b5d10f9/VSLPSetup.en.zip",
+            "size": "3993050",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:27:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visual Studio Learning Pack 2.0 is a software package created by Microsoft to help students learn about computer programming. It consists of the following five components: <br />\r\n<br />\r\n<ul>\r\n<li>Sort Designer Control is a supplementary teaching tool developed to help students learn the basic concepts, algorithms, and implementations of popular computer sorting algorithms. It supports bubble and insertion sorting. The control generates initial values automatically and demonstrates intermediate states in the sorting process. It also generates sorting source code for both Visual Basic and C#. </li>\r\n<li>Search Designer Control is a teaching tool developed to help students learn the basic concepts, algorithms, and implementations of popular data search algorithms. It supports binary and sequential searches. The control generates initial values automatically and demonstrates intermediate states in the searching process. It also generates source code for both Visual Basic and C#. <br /> </li><br />\r\nUsing the Visual Sort Designer and Visual Search Designer Controls teachers can easily develop a sample program to demonstrate the fundamentals of sorting and searching. They can also customize the control's appearance by simply dragging the control onto a form and setting its properties. These visual demonstrations help in teaching programming concepts and increase students' interest in learning. \r\n<li>Visual Declarative Designer is an intuitive variable declaration tool designed for novice programmers. During the coding process the student can declare variables of various types and generate the corresponding source code. Visual Variable Declarative Designer provides a visual approach to variable declaration. Teachers in the Information Technology (IT) field can use this designer to teach students the basic concepts of variable declaration and naming, variable types, access modifiers, and initial values. </li>\r\n<li>Assistant Class Designer is a visual class designer for novice programmers. This designer guides students through the processes of adding classes, properties, methods and events. The designer also generates the corresponding source code for new classes. By using this designer, teachers and students can easily create and configure complicated classes. Assistant Class Designer provides an intuitive and interactive method for designing classes and helps students to understand key object-oriented programming concepts such as classes, encapsulation, inheritance, and polymorphism.  The Assistant Class Designer generates source code for C# only.</li>\r\n<li>Visual Programming Flow Chart is a supplementary teaching tool designed to help students understand program control flow. It generates flow charts for functions and saves them in the JPG picture format. This tool is easily activated from the Visual Studio Integrated Development Environment (IDE) by simply right-clicking on a function name and choosing \u201cGenerate flow chart\u2026\u201d from the context menu. The resulting flowchart can be customized by changing its colors and other effects. This visual tool provides an intuitive way to explore source code, to examine its control flow, and to identify logic errors. </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "VSLPSetup.en.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Required Software: </b>Microsoft Visual Studio 2008. Microsoft Visual Studio 2008 provides Express Editions for free as well as 90-Day Trial Editions. (Note: Download time may be long due to the large download size.): <br/> </li><br/>\r\n    <ul>\r\n    <li>English Visual Studio 2008 Express Edition can be downloaded from <a href=\"http://www.microsoft.com/express/download/default.aspx\" >http://www.microsoft.com/express/download/default.aspx</a></li>\r\n    <li>English Visual Studio 2008 90-Day Trial Edition can be downloaded from <a href=\"http://msdn.microsoft.com/en-us/evalcenter/bb655861.aspx\">http://msdn.microsoft.com/en-us/evalcenter/bb655861.aspx</a></li>\r\n    </ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Installation</b><br /><br />\r\n1.    First unzip the Microsoft Visual Studio Learning Pack 2.0 zip file (VSLPSetup.en.zip) that was downloaded and locate the file VSLPSetup.en.msi. (By default this package will unzip to the VSLPSetup.en directory)<br />\r\n2.    Run the file VSLPSetup.en.msi, and finish the installation. The default installation directory is \\Program Files\\Microsoft Visual Studio Learning Pack 2.0\\ \r\n<br />\r\n<br/>\r\n<b>Adding the Sort Designer and Search Designer to the Toolbox</b><br /><br />\r\nYou must add the Sort Designer and Search Designer to the Toolbox in order to use them in applications. <br />\r\n1.   Start Visual Studio. <br />\r\n2.   Select \"Tools\" in the Visual Studio Integrated Development Environment (IDE). <br />\r\n3.   Click \"Choose Toolbox Items\" from the menu. <br />\r\n4.   A dialog box will appear, click the \"Browse\" button located on the \".NET Framework Components\" tab. <br />\r\n5.   A File Open dialog will appear, browse to the installation folder (\\Program Files\\Microsoft Visual Studio Learning Pack 2.0\\ by default) and click \"Open\".<br/>\r\n6.   Open the directory \"Visual Search Designer Control\".<br />\r\n7.   Double click the file SearchDesigner.dll, then select SearchDesigner and go back to the \"Choose Toolbox Items\" popup box.<br />\r\n8.   Next click \"Browse\" to return to the installation directory located in Step 5.<br />\r\n9.   Open the directory \"Visual Sort Designer Control\".<br />\r\n10. Double click the file of SortDesigner.dll, then select SortDesigner and go back to the \"Choose Toolbox Items\" dialog box.<br />\r\n11. Click the \"OK\" button. The Visual Search Designer and Visual Sort Designer controls will be available for use in the toolbox.<br />\r\n\r\n",
+    "additionalInformationSection": "<b>Product support: </b><br />\r\n<ul>\r\n<li>Limited Email support is provided for the Microsoft Visual Studio Learning Pack 2.0. If you have feedback on the Microsoft Visual Studio Learning Pack 2.0 or need technical assistance, please email vsintlpk@microsoft.com. </li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "english Visual Studio 2008 Express Edition",
+            "url": "http://www.microsoft.com/express/download/default.aspx"
+        },
+        {
+            "title": "english Visual Studio 2008 90-Day Trial Edition",
+            "url": "http://msdn.microsoft.com/en-us/evalcenter/bb655861.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22347",
+    "downloadPreload": true
+}

@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Azure File Sync Antivirus Compatibility Test Suite ",
+    "downloadDescription": "The Azure File Sync Antivirus Compatibility Test Suite is a self-contained, lightweight test kit that helps identify potential interop issues between Azure File Sync and antivirus solutions. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AFSInteropTestSuite_WS2025.zip",
+            "url": "https://download.microsoft.com/download/b/8/e/b8e12f64-782c-4d7d-a93c-16d2ee2d7835/AFSInteropTestSuite_WS2025.zip",
+            "size": "449866",
+            "version": "2.0",
+            "datePublished": "10/10/2024 8:18:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AFSInteropTestSuite_WS2022.zip",
+            "url": "https://download.microsoft.com/download/b/8/e/b8e12f64-782c-4d7d-a93c-16d2ee2d7835/AFSInteropTestSuite_WS2022.zip",
+            "size": "449866",
+            "version": "2.0",
+            "datePublished": "10/10/2024 8:18:44 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AFSInteropTestSuite_WS2019.zip",
+            "url": "https://download.microsoft.com/download/b/8/e/b8e12f64-782c-4d7d-a93c-16d2ee2d7835/AFSInteropTestSuite_WS2019.zip",
+            "size": "449740",
+            "version": "2.0",
+            "datePublished": "10/10/2024 8:18:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AFSInteropTestSuite_WS2016.zip",
+            "url": "https://download.microsoft.com/download/b/8/e/b8e12f64-782c-4d7d-a93c-16d2ee2d7835/AFSInteropTestSuite_WS2016.zip",
+            "size": "449840",
+            "version": "2.0",
+            "datePublished": "10/10/2024 8:18:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AFSInteropTestSuite_WS2012R2.zip",
+            "url": "https://download.microsoft.com/download/b/8/e/b8e12f64-782c-4d7d-a93c-16d2ee2d7835/AFSInteropTestSuite_WS2012R2.zip",
+            "size": "340267",
+            "version": "2.0",
+            "datePublished": "10/10/2024 8:18:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Azure File Sync Antivirus Compatibility Test Suite is a self-contained, lightweight test kit that helps identify potential interop issues between Azure File Sync and antivirus solutions. The test kit mocks all operations of Azure File Sync and validates the behavior of antivirus using its comprehensive set of tests, and then produces user-friendly test results. The test kit helps identify the \u2018unnecessary\u2019 file reads of AFS tiered files, which often results in unexpected data egress from the cloud. Antivirus vendors can use the test kit to collect their product logs during the test run for further investigations. \r\n<br />\r\n<br />\r\nThe Antivirus Compatibility Test Suite has two components: \r\n<ul> \r\n<li>StorageSync.sys: The Azure File Sync file system filter, which is responsible for tiering files to Azure Files (when cloud tiering is enabled).</li>\r\n<li>AVCompatTestSuite.dll: Defines a comprehensive list of tests, that are executed using the TAEF framework and produces easy to understand results.</li> \r\n</ul>\r\n<br />\r\nThe test suite utilizes the Test Authoring and Execution Framework (TAEF) that is publicly available as part of the Windows Driver Kit (WDK) or standalone installation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "AFSInteropTestSuite_WS2025.zip",
+        "AFSInteropTestSuite_WS2022.zip",
+        "AFSInteropTestSuite_WS2019.zip",
+        "AFSInteropTestSuite_WS2016.zip",
+        "AFSInteropTestSuite_WS2012R2.zip"
+    ],
+    "detailsSection_file_size": [
+        "439.3 KB",
+        "439.3 KB",
+        "439.2 KB",
+        "439.3 KB",
+        "332.3 KB"
+    ],
+    "detailsSection_file_date": "10/10/2024",
+    "systemRequirementsSection": "<br />\r\nOther Requirements\r\n<ul>\r\n<li>The test suite requires Test Authoring and Execution Framework (TAEF), which is part of the <a href=\"https://docs.microsoft.com/windows-hardware/drivers/download-the-wdk#wdk-for-windows-10-version-1903\">Windows Driver Kit (WDK)</a>. It is sufficient to select the lightest Visual Studio Community edition for WDK installation.  </li>\r\n<li>The test suite must be run on a server with a minimum of 2 GiB of memory. The tests should be executed against a locally attached, non-system volume formatted with the NTFS file system.</li>\r\n<li>To run the test kit, ensure the Azure File Sync agent is either not installed, or the FileSyncSvc service is disabled and stopped.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Ensure the Azure File Sync agent is either not installed, or FileSyncSvc is disabled and stopped.</li>\r\n<li>Download the test kit .zip file.</li>\r\n<li>Extract the zip file to a location such as d:\\AFSInteropTestSuite.</li>\r\n<li>Follow the setup instructions in the readme to install the Test Authoring and Execution Framework (TAEF) and the StorageSync.sys filter, and also set up the AV background scan.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58322",
+    "downloadPreload": true
+}

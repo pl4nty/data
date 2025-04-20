@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Information Protection Software Development Kit Version 1.8",
+    "downloadDescription": "The Microsoft Information Protection SDK brings the classification, labeling, and protection capabilities of Microsoft Information Protection into a simple, lightweight, cross-platform software development kit that enables any application to label and protect information. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "mip_sdk_win32_1.8.104.zip",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_win32_1.8.104.zip",
+            "size": "120930083",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_ubuntu1604_1.8.104.tar.gz",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_ubuntu1604_1.8.104.tar.gz",
+            "size": "159287441",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_rhel7_1.8.104.tar.gz",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_rhel7_1.8.104.tar.gz",
+            "size": "142810948",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_macos_1.8.104.tar.gz",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_macos_1.8.104.tar.gz",
+            "size": "1276497576",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_ios_1.8.104.tar.gz",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_ios_1.8.104.tar.gz",
+            "size": "1691171444",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_debian9_1.8.104.tar.gz",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_debian9_1.8.104.tar.gz",
+            "size": "157177953",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mip_sdk_android_1.8.104.zip",
+            "url": "https://download.microsoft.com/download/e/9/0/e90edff1-57f9-4199-a892-e5ca479ddec5/mip_sdk_android_1.8.104.zip",
+            "size": "308816189",
+            "version": "1.8.108",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Information Protection SDK brings the classification, labeling, and protection capabilities of Microsoft Information Protection into a simple, lightweight, cross-platform software development kit that enables any application to label and protect information. The labels and protection are consumable by Azure Information Protection, Office apps, Office 365, and any application or service that has integrated the Microsoft Information Protection SDK.\r\n\r\nBringing the labeling and protection capabilities that have existed in Office to line of business applications, as well as third-party PDF viewers, CAD/CAM applications, and other SaaS applications is a critical component of the information protection story. The Microsoft Information Protection SDK enables Microsoft partners and customers to build those integrations to protect data at creation, detect movement across trust boundaries, and to prevent accidental or malicious leakage of sensitive information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.108",
+    "detailsSection_file_name": [
+        "mip_sdk_win32_1.8.104.zip",
+        "mip_sdk_ubuntu1604_1.8.104.tar.gz",
+        "mip_sdk_rhel7_1.8.104.tar.gz",
+        "mip_sdk_macos_1.8.104.tar.gz",
+        "mip_sdk_ios_1.8.104.tar.gz",
+        "mip_sdk_debian9_1.8.104.tar.gz",
+        "mip_sdk_android_1.8.104.zip"
+    ],
+    "detailsSection_file_size": [
+        "115.3 MB",
+        "151.9 MB",
+        "136.2 MB",
+        "1.2 GB",
+        "1.6 GB",
+        "149.9 MB",
+        "294.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><b>Supported Platforms:</b><br/>\r\n<ul>\r\n<li>All supported version of Windows Server and Windows client</li>\r\n<li>MacOS High Sierra or later</li>\r\n<li>Ubuntu 16.04 and 18.04</li>\r\n<li>Debian 9</li>\r\n<li>RedHat Enterprise Linux 7.5</li>\r\n<li>Android - Protection and Policy APIs</li>\r\n<li>iOS - Protection and Policy APIs</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Linux",
+        "Red Hat",
+        "Windows 10",
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To get started with the SDK, review the SDK documentation <a href=\"https://go.microsoft.com/fwlink/?linkid=2027647\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102627",
+    "downloadPreload": true
+}

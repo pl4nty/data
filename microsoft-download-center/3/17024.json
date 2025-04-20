@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 - Upgrading Parent and Child Farms",
+    "downloadDescription": "This model describes two approaches to upgrading parent and child farms (farms that share services): Upgrade a duplicate of the parent farm, or create a temporary parent farm and upgrade individual child farms.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "oit2010-model-upgrading-parent-and-child-farms.vsd",
+            "url": "https://download.microsoft.com/download/e/e/1/ee1a41bb-5f38-4d61-b58c-77af4539c6af/oit2010-model-upgrading-parent-and-child-farms.vsd",
+            "size": "1421312",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit2010-model-upgrading-parent-and-child-farms.pdf",
+            "url": "https://download.microsoft.com/download/e/e/1/ee1a41bb-5f38-4d61-b58c-77af4539c6af/oit2010-model-upgrading-parent-and-child-farms.pdf",
+            "size": "204824",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit2010-model-upgrading-parent-and-child-farms.xps",
+            "url": "https://download.microsoft.com/download/e/e/1/ee1a41bb-5f38-4d61-b58c-77af4539c6af/oit2010-model-upgrading-parent-and-child-farms.xps",
+            "size": "458037",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can choose one of two approaches to upgrade farms that share services. The recommended approach is to upgrade a duplicate of the parent farm (the farm that hosts the shared services) first and then upgrade the child farms. If you need additional time to complete the upgrade of all farms, you can instead create a temporary parent farm to upgrade the child farms (the farms that consume shared services) until the original parent farm can be fully upgraded. Both approaches require you to create an additional parent farm: In the first case, this parent farm is a duplicate of the original farm that you immediately upgrade; in the second case, this parent farm is a new parent farm built on Microsoft SharePoint Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "oit2010-model-upgrading-parent-and-child-farms.vsd",
+        "oit2010-model-upgrading-parent-and-child-farms.pdf",
+        "oit2010-model-upgrading-parent-and-child-farms.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "200.0 KB",
+        "447.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. </li><li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a></li><li>To view the XPS version of the model, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17024",
+    "downloadPreload": true
+}

@@ -1,0 +1,185 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Identity Foundation",
+    "downloadDescription": "The Windows Identity Foundation helps simplify user access for developers by externalizing user access from applications via claims and reducing development effort with pre-built security logic and integrated .NET tools. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB974405-x86.msu",
+            "url": "https://download.microsoft.com/download/d/7/2/d72fd747-69b6-40b7-875b-c2b40a6b2bdd/Windows6.1-KB974405-x86.msu",
+            "size": "1442683",
+            "version": "1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB974405-x64.msu",
+            "url": "https://download.microsoft.com/download/d/7/2/d72fd747-69b6-40b7-875b-c2b40a6b2bdd/Windows6.1-KB974405-x64.msu",
+            "size": "1547866",
+            "version": "1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB974405-x86.msu",
+            "url": "https://download.microsoft.com/download/d/7/2/d72fd747-69b6-40b7-875b-c2b40a6b2bdd/Windows6.0-KB974405-x86.msu",
+            "size": "1448607",
+            "version": "1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB974405-x64.msu",
+            "url": "https://download.microsoft.com/download/d/7/2/d72fd747-69b6-40b7-875b-c2b40a6b2bdd/Windows6.0-KB974405-x64.msu",
+            "size": "1553298",
+            "version": "1",
+            "datePublished": "7/15/2024 5:04:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Windows Identity Foundation helps .NET developers build claims-aware applications that externalize user authentication from the application, improving developer productivity, enhancing application security, and enabling interoperability.  Developers can enjoy greater productivity, using a single simplified identity model based on claims.  They can create more secure applications with a single user access model, reducing custom implementations and enabling end users to securely access applications via on-premises software as well as cloud services.  Finally, they can enjoy greater flexibility in application development through built-in interoperability that allows users, applications, systems and other resources to communicate via claims. <br/>&nbsp;<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB974405",
+        "name": "KB974405"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows6.1-KB974405-x86.msu",
+        "Windows6.1-KB974405-x64.msu",
+        "Windows6.0-KB974405-x86.msu",
+        "Windows6.0-KB974405-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.5 MB",
+        "1.4 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft&reg; Internet Information Services (IIS) 7.0</li>\r\n<li>Microsoft&reg; .NET Framework 3.5</li>\r\n</ul>\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=be4db6a0-b76d-446d-810c-ea3c25b3969a\">See here for Windows 2003 support see here</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "This download offers you the benefits of registering with Microsoft. Click the Continue button near the top of this page to register. After you have gone through the registration process, you will be returned to this page to begin the download.<br/>&nbsp;<br/>\r\n\r\nDownload the x86 or x64 runtime package appropriate for your system as follows:\r\n<ul>\r\n<li>For Windows Vista and Windows Server 2008, select the msu file with name starting Windows6.0. </li>\r\n<li>For Windows 7 and Windows Server 2008 R2, select the msu file with name starting Windows6.1.</li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Identity Foundation for Windows 2003",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=be4db6a0-b76d-446d-810c-ea3c25b3969a"
+        },
+        {
+            "title": "windows Identity Foundation SDK",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=c148b2df-c7af-46bb-9162-2c9422208504"
+        },
+        {
+            "title": "adfs 2.0",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=118c3588-9070-426a-b655-6cec0a92c10b"
+        },
+        {
+            "title": "cardSpace 2.0",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=8f9389b2-ece0-4485-98ad-b093f18838fe"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17331",
+    "downloadPreload": true
+}

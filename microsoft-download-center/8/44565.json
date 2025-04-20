@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Protect and control your key information assets through information classification",
+    "downloadDescription": "Information Classification Whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Information-classification-framework.xlsx",
+            "url": "https://download.microsoft.com/download/c/b/9/cb96e50d-7c68-480b-bb31-0d2aea52eb2f/Information-classification-framework.xlsx",
+            "size": "86366",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:55:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Protect-your-key-assets-through-information-classification.docx",
+            "url": "https://download.microsoft.com/download/c/b/9/cb96e50d-7c68-480b-bb31-0d2aea52eb2f/Protect-your-key-assets-through-information-classification.docx",
+            "size": "2588405",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:55:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Due to increased regulation, the move the Cloud to save cost and bring agility as a result of the modernization of IT, the Consumerization of IT (CoIT) and the \u201cBring Your Own Device\u201d (BYOD), the explosion of information with dispersed enterprise data, the Social Enterprise and its applications enabling new collaboration, etc., organization of all sizes are facing growing needs to protect and control sensitive information. Questions inevitably arise: How to appropriately identify sensitive information? And then in turn how apply the right level of control for maintaining the security and the privacy of the sensitive data?\r\n\r\nIn this context, this document discusses information classification as the foundation of the cross-organization effort, the suggested approach to sustain such an effort and thus to handle and manage information assets on that basis, as well as the Microsoft services, products, and technologies to consider in this context, such as Azure Information Protection, to implement a relevant information classification and enforcement infrastructure, which constitutes the starting point for an effective information protection (IP) system.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Information-classification-framework.xlsx",
+        "Protect-your-key-assets-through-information-classification.docx"
+    ],
+    "detailsSection_file_size": [
+        "84.3 KB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "The files are Microsoft Word and Excel documents. Users who do not have Microsoft Office can view these documents through the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\">Word Viewer</a> and <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=10\">Excel viewer</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "information Protection whitepapers",
+            "url": "https://aka.ms/ippapers"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44565",
+    "downloadPreload": true
+}

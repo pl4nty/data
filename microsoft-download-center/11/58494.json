@@ -1,0 +1,224 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Power BI Desktop",
+    "downloadDescription": "Microsoft Power BI Desktop is built for the analyst. It combines state-of-the-art interactive visualizations, with industry-leading data query and modeling built-in. Create and publish your reports to Power BI. Power BI Desktop helps you empower others with timely critical insights, anytime, anywhere.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PBIDesktopSetup.exe",
+            "url": "https://download.microsoft.com/download/8/8/0/880bca75-79dd-466a-927d-1abf1f5454b0/PBIDesktopSetup.exe",
+            "size": "617416720",
+            "version": "2.141.1754.0",
+            "datePublished": "4/16/2025 10:10:25 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PBIDesktopSetup_x64.exe",
+            "url": "https://download.microsoft.com/download/8/8/0/880bca75-79dd-466a-927d-1abf1f5454b0/PBIDesktopSetup_x64.exe",
+            "size": "665438640",
+            "version": "2.141.1754.0",
+            "datePublished": "4/16/2025 10:10:25 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "Microsoft Power BI Desktop is a companion desktop application to <a href=\"http://go.microsoft.com/fwlink/?LinkID=522474\">Power BI</a>.\n<br /><br />\nWith Power BI Desktop, you can:\n\n<ul>\n <li>Get data\n  <ul>\n   <li>The Power BI Desktop makes discovering data easy. You can import data from a wide variety of data sources. After you connect to a data source, you can shape the data to match your analysis and reporting needs. </li>\n  </ul>\n </li>\n \n <li>Create relationships and enrich your data model with new measures and data formats\n  <ul>\n   <li>When you import two or more tables, oftentimes you'll need to create relationships between those tables. The Power BI Desktop includes the Manage Relationships dialog and the Relationships view, where you can use Autodetect to let the Power BI Desktop find and create any relationships, or you can create them yourself. You can also very easily create your own measures and calculations or customize data formats and categories to enrich your data for additional insights. </li>\n  </ul>\n </li>\n \n <li>Create reports\n  <ul>\n   <li>The Power BI Desktop includes the Report View. Select the fields you want, add filters, choose from dozens of visualizations, format your reports with custom colors, gradients and several other options. The Report View gives you the same great report and visualizations tools just like when creating a report on PowerBI.com. </li>\n  </ul>\n </li>\n\n <li>Save your reports\n  <ul>\n   <li>With the Power BI Desktop, you can save your work as a Power BI Desktop file. Power BI Desktop files have a .pbix extension.</li>\n  </ul>\n </li>\n <li>Upload or Publish your reports\n  <ul>\n   <li>You can upload the reports you created and saved in the Desktop to your Power BI site. You can also publish them to Power BI right from Power BI Desktop.</li>\n  </ul>\n </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.141.1754.0",
+    "detailsSection_file_name": [
+        "PBIDesktopSetup.exe",
+        "PBIDesktopSetup_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "588.8 MB",
+        "634.6 MB"
+    ],
+    "detailsSection_file_date": "4/16/2025",
+    "systemRequirementsSection": "Microsoft Power BI Desktop requires Internet Explorer 10 or greater.\n<br />\n<br />\nMicrosoft Power BI Desktop is available for 32-bit (x86) and 64-bit (x64) platforms.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the version of Power BI Desktop that matches the architecture (x86 or x64) of your Windows OS. Run the EXE installer and follow the setup steps.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58494",
+    "downloadPreload": true
+}

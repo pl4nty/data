@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Rack Server Virtualization template for Visio 2010",
+    "downloadDescription": "Get started with diagramming a virtualized rack server or data center environment with this Visio 2010 template.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Rack_Server_Virtualization.vst",
+            "url": "https://download.microsoft.com/download/6/5/a/65a32d24-9680-48db-b217-54b135fbc3d2/Rack_Server_Virtualization.vst",
+            "size": "479232",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 template to get started with diagramming a virtualized rack server. This template, based on the Visio 2010 Add-in for Rack Server Virtualization, provides shape stencils for racks and servers. You can use the template to create diagrams of the rack servers (including collocated servers) in your data center environment to help compare power consumption and space utilization before and after consolidating with virtualization. Documenting your server racks with this template can also help support personnel in managing your data center infrastructure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Rack_Server_Virtualization.vst"
+    ],
+    "detailsSection_file_size": [
+        "468.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click Download to save the template to your computer. ",
+    "additionalInformationSection": "LICENSE:\r\nMICROSOFT GRANTS YOU A NON-EXCLUSIVE, WORLDWIDE, ROYALTY-FREE LICENSE TO USE THIS SOFTWARE ADD-IN FOR VISIO. THE SOFTWARE IS LICENSED \u201cAS-IS\u201d AND WE DO NOT PROVIDE SUPPORT SERVICES FOR IT. YOU BEAR THE RISK OF USING IT. MICROSOFT MAKES NO EXPRESS OR IMPLIED WARRANTIES, GUARANTEES OR CONDITIONS. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27735",
+    "downloadPreload": true
+}

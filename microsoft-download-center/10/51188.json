@@ -1,0 +1,167 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visio 2016 Viewer",
+    "downloadDescription": "Microsoft Visio 2016 Viewer allows anyone to view Visio drawings inside their Microsoft Internet Explorer Web browser. Users can also view their Visio files, without installing Visio Viewer on their local computer, by uploading them to SharePoint or OneDrive.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "visioviewer_4339-1001_x64_en-us.exe",
+            "url": "https://download.microsoft.com/download/d/b/7/db790874-4414-417f-adf6-348b29572b9f/visioviewer_4339-1001_x64_en-us.exe",
+            "size": "24055064",
+            "version": "2016",
+            "datePublished": "7/15/2024 5:00:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "visioviewer_4339-1001_x86_en-us.exe",
+            "url": "https://download.microsoft.com/download/d/b/7/db790874-4414-417f-adf6-348b29572b9f/visioviewer_4339-1001_x86_en-us.exe",
+            "size": "12663976",
+            "version": "2016",
+            "datePublished": "7/15/2024 5:00:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "By using Microsoft Visio 2016 Viewer, Visio users can freely distribute Visio drawings (files with a .vsdx, .vsdm, .vsd, .vdx, .vdw, .vstx, .vstm, .vst, or .vtx extension) to team members, partners, customers, or others, even if the recipients do not have Visio installed on their computers. Internet Explorer also allows for printing, although this is limited to the portion of the drawing displayed.<br /><br />\n\nViewing Visio drawings is as simple as double-clicking the drawing file in Windows Explorer. Internet Explorer will open, and Visio Viewer will render the drawing in the browser window. You can then pan and zoom in the drawing window by using toolbar buttons, keyboard shortcuts, or menu items in the shortcut menu. Also, you can see properties on any shape by opening the Properties dialog box and then selecting a shape. Some rendering and display settings are available in the Display tab of the Properties dialog box. Additionally, you can set drawing-layer visibility and colors in the Layers tab, and comment visibility and colors in the Comments tab.<br /><br />\n\nNotes <br />\n\n\u2022Visio Viewer is implemented as an ActiveX control that loads and renders Visio drawings inside Internet Explorer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "visioviewer_4339-1001_x64_en-us.exe",
+        "visioviewer_4339-1001_x86_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.9 MB",
+        "12.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download works with the following program:</b><br />\r\n<ul><li>Microsoft Internet Explorer 8, 9, 10, or 11. </li> </ul>\r\n</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\n<li>To use the 32-bit version of the files, double-click the <b>visioviewer32bit.exe</b> program file on your hard disk to start the Setup program.</li>\n<li>To use the 64-bit version of the files, double-click the <b>visioviewer64bit.exe</b> program file on your hard disk to start the Setup program.</li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n\n</ol>\n\nInstructions for use: <br /><br />\n<ul>\n<li>From Windows Explorer, double-click a Visio drawing. An Internet Explorer window opens and loads Visio Viewer, which then loads and renders the drawing in the browser window.</li>\n<li>On the Internet Explorer File menu, click Open. In the Open dialog box, select a Visio drawing. Internet Explorer loads Visio Viewer, which then renders the drawing in the browser window.</li>\n<li>If an Internet Explorer window is already open, you can drag and drop a Visio drawing file into the window. Internet Explorer loads Visio Viewer, which then renders the drawing in the browser window.</li>\n<li>Click Allow blocked content if Internet Explorer displays a warning like \u201cInternet Explorer restricted this webpage from running scripts or ActiveX controls\u201d. Visio Viewer is implemented as an ActiveX control.</li><br />\n</ul>\nTo remove this download: <br /><br />\n<ul>\n<li>To remove the download file, delete the visioviewer.exe file from your hard disk.</li><br />\n<li>To remove the installed files, use Control Panel to uninstall Microsoft Visio 2016 Viewer.</li><br />\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51188",
+    "downloadPreload": true
+}

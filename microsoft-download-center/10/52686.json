@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project 2002 Retired Content",
+    "downloadDescription": "This download contains content for Project 2002 that has been retired from TechNet. The content you requested has already retired. It's available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Project2002.pdf",
+            "url": "https://download.microsoft.com/download/3/d/b/3db9edc7-8f0a-4b9b-9feb-27fe3e4bad8a/Project2002.pdf",
+            "size": "3654051",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains content for Project 2002, including planning, deployment, maintenance, resource kit, and training courseware, that has been retired from TechNet.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Project2002.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 2000 Professional\r\nWindows XP Professional or later\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 2",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52686",
+    "downloadPreload": true
+}

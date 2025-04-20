@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Server-side data migration: migrating data from an existing volume to a StorSimple volume ",
+    "downloadDescription": "This document describes how to copy and synchronize data from existing file server volumes to volumes created on a StorSimple Series 8000 appliance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrating Data to StorSimple Volumes_09-02-15.pdf",
+            "url": "https://download.microsoft.com/download/9/4/a/94ab8165-ccc4-430b-801b-9fd40c8da340/Migrating Data to StorSimple Volumes_09-02-15.pdf",
+            "size": "936482",
+            "version": "1",
+            "datePublished": "7/15/2024 3:44:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document outlines different methods available for copying and synchronizing the data from existing file server volumes to volumes created on a StorSimple 8000 Series appliance. The methods discussed include disk mirroring (synchronizing data between two volumes by using RAID on the host server) and file copy utilities such as Robocopy and DiskBoss.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Migrating Data to StorSimple Volumes_09-02-15.pdf"
+    ],
+    "detailsSection_file_size": [
+        "914.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Computer with PDF viewr",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download and open in a pdf viewer\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49027",
+    "downloadPreload": true
+}

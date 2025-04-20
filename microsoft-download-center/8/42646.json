@@ -1,0 +1,151 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Intelligence Report Volume 16 (July - December 2013)",
+    "downloadDescription": "This is the sixteenth volume of the Microsoft Security Intelligence Report.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_16_Worldwide_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/7/2/b/72b5de91-04f4-42f4-a587-9d08c55e0734/Microsoft_Security_Intelligence_Report_Volume_16_Worldwide_Threat_Assessment_English.pdf",
+            "size": "3092703",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_16_English.pdf",
+            "url": "https://download.microsoft.com/download/7/2/b/72b5de91-04f4-42f4-a587-9d08c55e0734/Microsoft_Security_Intelligence_Report_Volume_16_English.pdf",
+            "size": "3818629",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_16_Exploitation_Trends_English.pdf",
+            "url": "https://download.microsoft.com/download/7/2/b/72b5de91-04f4-42f4-a587-9d08c55e0734/Microsoft_Security_Intelligence_Report_Volume_16_Exploitation_Trends_English.pdf",
+            "size": "766127",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_16_Key_Findings_Summary_English.pdf",
+            "url": "https://download.microsoft.com/download/7/2/b/72b5de91-04f4-42f4-a587-9d08c55e0734/Microsoft_Security_Intelligence_Report_Volume_16_Key_Findings_Summary_English.pdf",
+            "size": "1051706",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_16_Worldwide_Infection_and_Encounter_Rates.csv",
+            "url": "https://download.microsoft.com/download/7/2/b/72b5de91-04f4-42f4-a587-9d08c55e0734/Microsoft_Security_Intelligence_Report_Volume_16_Worldwide_Infection_and_Encounter_Rates.csv",
+            "size": "4136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_16_Regional_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/7/2/b/72b5de91-04f4-42f4-a587-9d08c55e0734/Microsoft_Security_Intelligence_Report_Volume_16_Regional_Threat_Assessment_English.pdf",
+            "size": "7995211",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Volume 16 of the Microsoft Security Intelligence Report provides an in-depth perspective on malicious and potentially unwanted software, software exploits, security breaches and software vulnerabilities (both in Microsoft software and in third-party software). Microsoft developed these perspectives based on detailed analysis over the past several years, with a focus on the second half of 2013.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_Security_Intelligence_Report_Volume_16_Worldwide_Threat_Assessment_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_16_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_16_Exploitation_Trends_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_16_Key_Findings_Summary_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_16_Worldwide_Infection_and_Encounter_Rates.csv",
+        "Microsoft_Security_Intelligence_Report_Volume_16_Regional_Threat_Assessment_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB",
+        "3.6 MB",
+        "748.2 KB",
+        "1.0 MB",
+        "4.0 KB",
+        "7.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the full SIR, Featured Story, Worldwide Threat Assessment, Key Findings Summary, Regional Threat Assessments and Worldwide Infection and Encounter Rates.  All are available as a PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/msec"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42646",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 1: Get Started with the Right Template in Visio 2010 (working files)",
+    "downloadDescription": "Practice using intelligent shapes to build drawings in Microsoft Visio 2010 with these diagrams, part of the Visio 2010 MVP Sessions, Video 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MVPSession1HVACplan.vsd",
+            "url": "https://download.microsoft.com/download/2/6/9/269ef0fe-4f76-439d-9565-7e29d84815da/MVPSession1HVACplan.vsd",
+            "size": "215040",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession1SimpleTimeline.vsd",
+            "url": "https://download.microsoft.com/download/2/6/9/269ef0fe-4f76-439d-9565-7e29d84815da/MVPSession1SimpleTimeline.vsd",
+            "size": "375296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice using intelligent shapes to build drawings in Visio 2010 with these diagrams, created as companions to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 1. MVP Sessions Video 1 highlights how to create different diagrams from appropriate out-of-the-box templates that each include relevant shape stencils and sometimes include unique, template-specific capabilities. Use these working files to follow along with the video and practice working with intelligent shapes that can automatically orient and snap to appropriate locations at correct angles and even visually adjust with changes to data in the diagram. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession1HVACplan.vsd",
+        "MVPSession1SimpleTimeline.vsd"
+    ],
+    "detailsSection_file_size": [
+        "210.0 KB",
+        "366.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the diagrams to your computer and then open them with Visio 2010.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29194",
+    "downloadPreload": true
+}

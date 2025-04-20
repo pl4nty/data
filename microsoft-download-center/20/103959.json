@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "TNS Porting Helper",
+    "downloadDescription": "TNS Porting Helper provides an automated and guided tool to perform number porting.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Teams_TNS_Helper_v1.0.xlsm",
+            "url": "https://download.microsoft.com/download/e/6/c/e6c64f30-63a8-4355-94ed-911fe469c11d/Teams_TNS_Helper_v1.0.xlsm",
+            "size": "76493",
+            "version": "V1.0",
+            "datePublished": "7/15/2024 4:31:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "TNS Porting Helper provides an automated and guided tool to perform various number of porting activities. This includes complex and general porting guidance while contains a set of instruction to a successful porting event. Whether you're having a calling plan or inter-tenant porting, this spreadsheet will help your journey to porting to Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V1.0",
+    "detailsSection_file_name": [
+        "Teams_TNS_Helper_v1.0.xlsm"
+    ],
+    "detailsSection_file_size": [
+        "74.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Teams calling plan.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "Download the excel sheet and trust the sheet you downloaded from Microsoft. Select the number of country you're porting to, enter in the unlocked cells and enter the required information from there. Helper sheet will indicate the next step.",
+    "relatedResourcesSection": [
+        {
+            "title": "tns Helper",
+            "url": "https://download.microsoft.com/download/e/6/c/e6c64f30-63a8-4355-94ed-911fe469c11d/Teams_TNS_Helper_v1.0.xlsm"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103959",
+    "downloadPreload": true
+}

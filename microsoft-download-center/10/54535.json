@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack (Community Technology Preview) for SQL Server",
+    "downloadDescription": "Microsoft System Center Management Pack (Community Technology Preview) for SQL Server enables the discovery and monitoring of SQL Server 2014, 2016, 2017, 2019, 2022, and upcoming versions.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServerMP.Windows.CTP.msi",
+            "url": "https://download.microsoft.com/download/2/a/1/2a1dbb38-471c-4ad9-b31b-1fd4f99add18/SQLServerMP.Windows.CTP.msi",
+            "size": "4509696",
+            "version": "7.7.23.0",
+            "datePublished": "12/16/2024 9:55:15 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerMP.Linux.CTP.msi",
+            "url": "https://download.microsoft.com/download/2/a/1/2a1dbb38-471c-4ad9-b31b-1fd4f99add18/SQLServerMP.Linux.CTP.msi",
+            "size": "4235264",
+            "version": "7.7.23.0",
+            "datePublished": "12/16/2024 9:55:15 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerMP.CustomMonitoring.CTP.msi",
+            "url": "https://download.microsoft.com/download/2/a/1/2a1dbb38-471c-4ad9-b31b-1fd4f99add18/SQLServerMP.CustomMonitoring.CTP.msi",
+            "size": "2011136",
+            "version": "7.7.23.0",
+            "datePublished": "12/16/2024 9:55:15 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack (Community Technology Preview) for SQL Server is version-agnostic, which means that it supports discovery and monitoring of SQL Server 2012, 2014, 2016, 2017, 2019, 2022, and upcoming versions. Accoring to the lifecycle policy, SQL Server 2012 is no longer being tested.<br/>\n<br/>\nWith this management pack, you can monitor various SQL Server components, such as Database Engines, Databases, and other SQL-related objects.<br/>\n<br/>\nMonitoring gives you the insights about such metrics as performance, availability and configuration monitoring, performance and event data collection.<br/>\n<br/>\nIn addition to health monitoring capabilities, this management pack includes dashboards, diagram views, state views, performance views, alert views, and diagnostic tasks that enable near real-time diagnostic and remediation of detected issues.<br/>\n<br/>\r\nYou can easily integrate monitoring of SQL Server components into your service-oriented monitoring scenarios.<br/>\n<br/>\r\nMicrosoft System Center Management Pack for SQL Server is intended for Operations Manager 2016, Operations Manager 1801/1807, Operations Manager 2019, and Operations Manager 2022.<br/>\n<br/>\n<b>Feature Summary</b><br/>\r\n<br/>\nThe following list provides a brief overview of the features available in Microsoft System Center Operations Manager Management Pack for SQL Server:<br/>\n<ul>\n<li>Cross-platform operation: Monitoring is possible both on Windows and Linux operating systems (SQL Server 2017 and up).</li>\n<li>Agentless monitoring is now available along with traditional agent monitoring.</li>\n<li>Usage of scripts is discontinued in favor of .Net Framework modules.</li>\n<li>SQL Server Dynamic Management Views and Functions are now used for getting information on health and performance. Previously some of these monitors were using WMI and other system data sources.</li>\n</ul>\r\nFor more information about this management pack, see the <a href=\"https://docs.microsoft.com/system-center/scom/sql-server-management-pack-changes-history\">Microsoft SQL Server Management Pack Operations Guide</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.7.23.0",
+    "detailsSection_file_name": [
+        "SQLServerMP.Windows.CTP.msi",
+        "SQLServerMP.Linux.CTP.msi",
+        "SQLServerMP.CustomMonitoring.CTP.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.3 MB",
+        "4.0 MB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "12/16/2024",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/sql-server-management-pack-changes-history\">Microsoft SQL Server Management Pack Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Linux"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/sql-server-management-pack-changes-history\">Microsoft SQL Server Management Pack Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54535",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamic Data Display for Silverlight",
+    "downloadDescription": "Dynamic Data Display adds interactive visualization of dynamic data to your Silverlight application. Last published: October 17, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicDataDisplay.2.0.907.zip",
+            "url": "https://download.microsoft.com/download/d/2/9/d2919dc7-0c71-4862-9ef7-7c504b08bf9c/DynamicDataDisplay.2.0.907.zip",
+            "size": "5066042",
+            "version": "2.0",
+            "datePublished": "6/13/2024 1:00:01 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dynamic Data Display adds interactive visualization of dynamic data to your Silverlight application. The download contains a set of UI controls for creating line graphs, bubble charts, heat maps, and other complex 2-D plots. The library integrates well with the Bing Maps control to show data in latitude/longitude coordinates. The controls are compatible with Expression Blend and Visual Studio Silverlight designers, or they can be operated programmatically.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "DynamicDataDisplay.2.0.907.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52625",
+    "downloadPreload": true
+}

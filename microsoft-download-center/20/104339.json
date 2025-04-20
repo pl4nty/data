@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for System Center 2022 Operations Manager",
+    "downloadDescription": "The integration pack for Operations Manager is an add-in provided by System Center 2022 Orchestrator that enables you to connect an Orchestrator Runbook server to an Operations Manager management server so you can automate various actions.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_2022_IntegrationPack_for_SCOM.oip",
+            "url": "https://download.microsoft.com/download/7/b/3/7b3299fe-5a28-4f41-b052-e8e9a34f7874/System_Center_2022_IntegrationPack_for_SCOM.oip",
+            "size": "592051",
+            "version": "prod",
+            "datePublished": "7/15/2024 4:32:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\n<b>Release History</b><br />\r\n<ul>\r\n<li>06/30/2022 - Original English release, version 10.22.1.1 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "prod",
+    "detailsSection_file_name": [
+        "System_Center_2022_IntegrationPack_for_SCOM.oip"
+    ],
+    "detailsSection_file_size": [
+        "578.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> System Center 2022 - Orchestrator </li>\r\n<li> System Center 2022 -  Operations Manager </li>\r\n<li> Windows Server 2019 or higher </li>\r\n<li> .NET Framework 4.0 or higher (.NET 4.7.2 recommended) </li>\r\n<li> RAM \u2013 minimum 1GB (recommended 2GB) </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the .oip file, register the Integration Pack in Deployment Manager and then deploy the Integration Pack on Runbook Designer and Runbook Server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104339",
+    "downloadPreload": true
+}

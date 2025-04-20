@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Business Connectivity Services Model",
+    "downloadDescription": "Microsoft Business Connectivity Services enable users to interact with external data by using SharePoint lists and Microsoft Office 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BusinessConnectivityServices_model.xps",
+            "url": "https://download.microsoft.com/download/7/b/2/7b2d1acd-dcbd-4322-9f35-9d0e4f3ef844/BusinessConnectivityServices_model.xps",
+            "size": "891282",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BusinessConnectivityServices_model.pdf",
+            "url": "https://download.microsoft.com/download/7/b/2/7b2d1acd-dcbd-4322-9f35-9d0e4f3ef844/BusinessConnectivityServices_model.pdf",
+            "size": "762930",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BusinessConnectivityServices_model.vsd",
+            "url": "https://download.microsoft.com/download/7/b/2/7b2d1acd-dcbd-4322-9f35-9d0e4f3ef844/BusinessConnectivityServices_model.vsd",
+            "size": "3675648",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft Business Connectivity Services are a set of services and features that provide a way to connect solutions based on SharePoint Server 2010 to sources of external data and to define external content types based on that external data. This poster helps to explain how Microsoft Business Connectivity Services interact with data from external systems in SharePoint lists, Web Parts, and in Microsoft Outlook 2010, Microsoft SharePoint Workspace 2010, and Microsoft Word 2010 clients.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "BusinessConnectivityServices_model.xps",
+        "BusinessConnectivityServices_model.pdf",
+        "BusinessConnectivityServices_model.vsd"
+    ],
+    "detailsSection_file_size": [
+        "870.4 KB",
+        "745.0 KB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. <br/> To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a><br/>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2847",
+    "downloadPreload": true
+}

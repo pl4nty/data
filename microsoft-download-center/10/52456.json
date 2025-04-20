@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR RefRef",
+    "downloadDescription": "RefRef is a C# application for viewing co-reference chains in annotated documents using a Web-browser interface. Last published: May 24, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR RefRef 1.0.msi",
+            "url": "https://download.microsoft.com/download/c/c/4/cc4fcc36-4bac-4a51-b07b-65068f0113b5/MSR RefRef 1.0.msi",
+            "size": "224256",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:55:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RefRef is a C# application for viewing co-reference chains in annotated documents using a Web-browser interface. The standard MUC and Kyoto Corpus annotation formats are supported, and source code is provided to enable customization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSR RefRef 1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "219.0 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52456",
+    "downloadPreload": true
+}

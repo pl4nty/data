@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Administration Guide & Windows PowerShell Supplement ",
+    "downloadDescription": "The Lync Server Administration Guide and the Windows PowerShell Supplement contain procedures and guidance for administering a Lync Server 2010 deployment. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Server_2010_Administration_Guide.zip",
+            "url": "https://download.microsoft.com/download/a/0/c/a0c4f98c-db2d-4235-aa11-155f2682a371/Lync_Server_2010_Administration_Guide.zip",
+            "size": "1132567",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LS_Admin_and_Windows_PowerShell_Supplement.zip",
+            "url": "https://download.microsoft.com/download/a/0/c/a0c4f98c-db2d-4235-aa11-155f2682a371/LS_Admin_and_Windows_PowerShell_Supplement.zip",
+            "size": "1132378",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "LS_Admin.doc",
+            "url": "https://download.microsoft.com/download/a/0/c/a0c4f98c-db2d-4235-aa11-155f2682a371/LS_Admin.doc",
+            "size": "3210240",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LS_Admin_Windows_PowerShell_Supplement.doc",
+            "url": "https://download.microsoft.com/download/a/0/c/a0c4f98c-db2d-4235-aa11-155f2682a371/LS_Admin_Windows_PowerShell_Supplement.doc",
+            "size": "434688",
+            "version": "March2012",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "On this page, you can download documents that contain procedures and guidance for administering a Lync Server 2010 deployment. The Lync Server Administration Guide (LS_Admin.doc) covers procedures that you can perform using the Lync Server Control Panel and some command-line procedures. The Windows PowerShell Supplement (LS_Admin_Windows_PowerShell_Supplement.doc) contains guidance for using Windows PowerShell cmdlets to perform management tasks at the command line. You can download the individual files, or the .zip file that contains both documents. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March2012",
+    "detailsSection_file_name": [
+        "Lync_Server_2010_Administration_Guide.zip",
+        "LS_Admin_and_Windows_PowerShell_Supplement.zip",
+        "LS_Admin.doc",
+        "LS_Admin_Windows_PowerShell_Supplement.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.1 MB",
+        "3.1 MB",
+        "424.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13161",
+    "downloadPreload": true
+}

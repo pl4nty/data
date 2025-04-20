@@ -1,0 +1,125 @@
+{
+    "error": "",
+    "downloadTitle": "Fix for a known issue with Update Rollup 9 for System Center 2012 R2 Data Protection Manager",
+    "downloadDescription": "We found an issue with DPM 2012 R2 UR9 where DPM may crash if you are protecting Client machines behind VPN or DA",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UR9ClientFixIssue.ps1",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f87cd5-5590-48ef-ba9d-b500ef0f640e/UR9ClientFixIssue.ps1",
+            "size": "15262",
+            "version": "2012 R2",
+            "datePublished": "7/15/2024 4:08:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "After installing DPM 2012 R2 UR9 you may see DPM crashing if you are protecting Client workloads, the issue will happen only when client backups are triggered while client is using VPM or DA. You will not be impacted if you don't have any client workloads protected by you DPM server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012 R2",
+    "detailsSection_file_name": [
+        "UR9ClientFixIssue.ps1"
+    ],
+    "detailsSection_file_size": [
+        "14.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b> System Center 2012 R2 Data Protection Manager Update Rollup 9 </b>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "Please ensure you are currently running DPM 2012 R2 UR9 before applying the fix. The issue is not applicable to older updates and will be fixed automatically in later updates.\r\n\r\nPlease perform the below steps on all DPM servers that are protecting client machines and are seeing DPM crashes:\r\n1. Login to DPM Server as DPM Admin (you should have read/write access to the DPMDB)\r\n2. Click on \"Download\" button and download UR9ClientFixIssue.ps1 file.\r\n3. Run the PowerShell script downloaded in Step 2 above with DPM Admin privilege.\r\n4. This should fix your issue permanently.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51096",
+    "downloadPreload": true
+}

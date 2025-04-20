@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2007 Component Architecture",
+    "downloadDescription": "This poster highlights the architecture and feature set of Microsoft Exchange Server 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExchangePoster.pdf",
+            "url": "https://download.microsoft.com/download/b/2/0/b20ed7c4-4c29-4e8c-8bce-02f3a7bc0071/ExchangePoster.pdf",
+            "size": "1516637",
+            "version": "07November2007",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Aside from showing the high-level architecture, this poster highlights the feature set of Exchange Server 2007. Sections include: <br />\n<ul><br />\n<li>Management and Monitoring</li><br />\n<li>High Availability</li><br />\n<li>Client Access, Edge Transport, Hub Transport, Mailbox, and Unified Messaging server roles</li> <br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "07November2007",
+    "detailsSection_file_name": [
+        "ExchangePoster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>The poster is a .pdf file and you will need Adobe Reader to view it. </LI><br />\n<LI>When printed, this poster measures 30.5 inches by 20.5 inches.</LI> <br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li><br />\n<li>Do one of the following:</li><br />\n<ul><br />\n<li>To start the installation immediately, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li><br />\n</ul><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4006",
+    "downloadPreload": true
+}

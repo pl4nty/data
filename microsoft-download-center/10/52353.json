@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud-Offloaded GPS Experimental Kit",
+    "downloadDescription": "Cloud-Offloaded GPS (CO-GPS) leverages the power of cloud services to reduce energy requirements for GPS sensing. Last published: May 12, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CoGpsClient_v1.0.0.0.zip",
+            "url": "https://download.microsoft.com/download/2/3/4/2349ea48-b5b2-4c34-ae89-dc0639962f26/CoGpsClient_v1.0.0.0.zip",
+            "size": "11006838",
+            "version": "1.0",
+            "datePublished": "3/15/2024 4:08:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cloud-Offloaded GPS (CO-GPS) leverages the power of cloud services to reduce energy requirements for GPS sensing. This experimentation kit includes a reference hardware design, documentation of the Microsoft CO-GPS web service API, and sample GPS signal traces and code for using the web service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CoGpsClient_v1.0.0.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52353",
+    "downloadPreload": true
+}

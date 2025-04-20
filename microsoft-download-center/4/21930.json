@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 Document: Supportability Guide",
+    "downloadDescription": "This document identifies supported configurations for Microsoft\u00ae Office Live Communications Server 2005, Live Communications Server 2005with Service Pack 1 (SP1), and Microsoft Office Communicator Web Access.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LCS_2005_Supported.doc",
+            "url": "https://download.microsoft.com/download/f/3/1/f31fcae9-fcd3-4a69-940e-a16050e696c5/LCS_2005_Supported.doc",
+            "size": "304128",
+            "version": "2",
+            "datePublished": "7/15/2024 3:16:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This document identifies supported configurations for Microsoft\u00ae Office Live Communications Server 2005, Live Communications Server 2005with Service Pack 1 (SP1), and Microsoft Office Communicator Web Access. <br />\nThis document identifies supported configurations for Microsoft\u00ae Office Live Communications Server 2005, Live Communications Server 2005with Service Pack 1 (SP1), and Microsoft Office Communicator Web Access. Client support is also identified.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "LCS_2005_Supported.doc"
+    ],
+    "detailsSection_file_size": [
+        "297.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office applications:</b>\n<br/>\n<ul>\n<li>Microsoft Office Word 2003</li>\n<li>Microsoft Word 2002</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>LCS_2005_Supported.doc</b> file on your hard disk to open the document. </li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the guide as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>LCS_2005_Supported.doc</b>.\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        },
+        {
+            "title": "live Communications Server home",
+            "url": "http://office.microsoft.com/en-us/FX010908711033.aspx"
+        },
+        {
+            "title": "live Communications Server 2005 Deployment Resources",
+            "url": "http://office.microsoft.com/en-us/FX011526591033.aspx"
+        },
+        {
+            "title": "live Communications Server 2005 downloads",
+            "url": "http://office.microsoft.com/en-us/officeupdate/CD011516661033.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21930",
+    "downloadPreload": true
+}

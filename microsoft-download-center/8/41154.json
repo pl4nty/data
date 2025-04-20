@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure eDiscovery for an Exchange, Lync, SharePoint, and Windows File Shares Test Lab",
+    "downloadDescription": "Use these step-by-step instructions to configure eDiscovery across Exchange Server 2013, Lync Server 2013, SharePoint Server 2013, and Windows Server 2012 file shares.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "eDiscoveryTLG.pdf",
+            "url": "https://download.microsoft.com/download/8/d/6/8d6d6832-f2d5-46f5-bad7-2754a6257ac9/eDiscoveryTLG.pdf",
+            "size": "543170",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eDiscoveryTLG.doc",
+            "url": "https://download.microsoft.com/download/8/d/6/8d6d6832-f2d5-46f5-bad7-2754a6257ac9/eDiscoveryTLG.doc",
+            "size": "255488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Server-to-server authentication is a new feature of Exchange Server 2013, Lync Server 2013, and SharePoint Server 2013. Server-to-server authentication allows one server to make a request on the behalf of a user for resources that are on another server. When two-way server-to-server authentication is configured between SharePoint Server 2013, Exchange Server 2012, and Lync Server 2013, each one of the servers trusts the requests coming from the others.  With server-to-server authentication in place, you can build solutions that use features from all three.  Server-to-server authentication uses the industry standard Open Authorization (OAuth) 2.0 protocol.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "eDiscoveryTLG.pdf",
+        "eDiscoveryTLG.doc"
+    ],
+    "detailsSection_file_size": [
+        "530.4 KB",
+        "249.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li>To view the .doc version of the guide, you must have Microsoft Word 2010 or 2013.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "1. Click the <b>Download</b> button in the upper-right corner of this page to start the download.\r\n2. Click <b>Save</b> or <b>Save this program to disk</b>. \r\n3. Find the file on your hard disk and double-click it to open it. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41154",
+    "downloadPreload": true
+}

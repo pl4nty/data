@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Deploying Lync in a Multi-Forest Architecture (Partner Hosted Lync with Exchange Hybrid) ",
+    "downloadDescription": "How to combine cloud services from Partners and Microsoft while retaining enterprise control mechanisms through Active Directory.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DeployingLyncMulti-ForestArchitecture.doc",
+            "url": "https://download.microsoft.com/download/a/a/d/aad941b9-a2f2-4d5c-80aa-1d8c0377112b/DeployingLyncMulti-ForestArchitecture.doc",
+            "size": "2493952",
+            "version": "Mar2015",
+            "datePublished": "7/15/2024 3:41:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the configuration steps required for a multi-forest architecture in which Lync is delivered as part of a partner hosted private cloud deployment, Exchange online is delivered by Microsoft as part of Office 365 and the customer retains control of their Active Directory User forest. The multi-forest architecture enables the coordination of authentication and application interoperability between the customer\u2019s user forest, the hosting partner\u2019s service infrastructure and Office 365. Microsoft does not recommend this approach for partners to host Skype for Business.  This design does not support hybrid deployments (users split across on-premises and online environments) and does not currently have a migration path to Skype for Business online.  There are no plans to add this support in the future. Therefore, we do not recommend this approach for hosting customers who have made the strategic decision to move the complete range of their communications services (Lync, Skype for Business and/or Exchange) to the cloud, as they will not be able to utilize many of the new features available in Skype for Business. The recommended approach for Partner Hosted Lync is extension of the customer Forest to the partner datacenter rather than the creating a new forest for Lync.  This dramatically simplifies the topology and corresponding effort to build and run.  This is a standard online topology.  To address security concerns in this deployment, refer to this topic: Best Practices for Securing Active Directory at <a href=\"http://go.microsoft.com/fwlink/?LinkId=529936\">http://go.microsoft.com/fwlink/?LinkId=529936</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2015",
+    "detailsSection_file_name": [
+        "DeployingLyncMulti-ForestArchitecture.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44276",
+    "downloadPreload": true
+}

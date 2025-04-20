@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for SQL Server Dashboards",
+    "downloadDescription": "Microsoft System Center Management Pack for SQL Server Dashboards supports the Dashboard functionality in SQL Server DB Engine, Analysis Services, Reporting Services, Replication and Azure SQL Database management packs, and enables the creation of user-generated dashboards.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SQL.Server.Dashboards.ManagementPack.msi",
+            "url": "https://download.microsoft.com/download/9/7/6/97662145-ab0c-4737-8281-81513c5822a0/Microsoft.SQL.Server.Dashboards.ManagementPack.msi",
+            "size": "1167360",
+            "version": "6.7.15.0",
+            "datePublished": "1/23/2025 3:11:27 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack for SQL Server Dashboards supports the Dashboard functionality in SQL Server DB Engine, Analysis Services, Reporting Services, Replication and Azure SQL Database management packs, and enables the creation of user-generated dashboards.<br />\r\n<br />\r\nMicrosoft System Center Management Pack for SQL Server Dashboards is intended for Operations Manager 2016, Operations Manager 2019, and Operations Manager 2022.<br/>\r\n<br />\r\nFor more information about this management pack, see the <a href=\"https://docs.microsoft.com/system-center/scom/sql-server-dashboards-management-pack-changes-history\">Microsoft SQL Server Dashboards Management Pack Operations Guide</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.7.15.0",
+    "detailsSection_file_name": [
+        "Microsoft.SQL.Server.Dashboards.ManagementPack.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "1/23/2025",
+    "systemRequirementsSection": "For detailed system requirements, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/sql-server-dashboards-management-pack-changes-history\">Microsoft SQL Server Dashboards Management Pack Operations Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring, refer to the <a href=\"https://docs.microsoft.com/system-center/scom/sql-server-dashboards-management-pack-changes-history\">Microsoft SQL Server Dashboards Management Pack Operations Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51479",
+    "downloadPreload": true
+}

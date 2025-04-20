@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Business Scorecard Manager - Balanced Scorecard Template Samples",
+    "downloadDescription": "These samples will get you up and running with Office Business Scorecard Manager 2005 using a sample Balanced Scorecard template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Balanced Scorecard Sample.zip",
+            "url": "https://download.microsoft.com/download/b/c/4/bc419322-ffec-4974-bc68-2d1e56c739cc/Balanced Scorecard Sample.zip",
+            "size": "4410",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Readme.doc",
+            "url": "https://download.microsoft.com/download/b/c/4/bc419322-ffec-4974-bc68-2d1e56c739cc/Readme.doc",
+            "size": "92672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These samples will get you up and running with Office Business Scorecard Manager 2005 using a sample Balanced Scorecard template.  These samples do not connect directly to the database as they use fixed values.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Balanced Scorecard Sample.zip",
+        "Readme.doc"
+    ],
+    "detailsSection_file_size": [
+        "4.3 KB",
+        "90.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Business Scorecard Manager 2005",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Follow instructions in the Readme.doc",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6206",
+    "downloadPreload": true
+}

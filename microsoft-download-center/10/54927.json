@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Longitudinal Tweet ID dataset for a selection of Health, Social, and Business Experiences",
+    "downloadDescription": "This data set consists of the tweet IDs collected for the propensity-score analysis of longitudinal social media messages posted by people who mention specific health, social and business domains.  This data set accompanies the paper, \u201cDistilling the Outcomes of Personal Experiences: A Propensity-scored Analysis of Social Media.\u201d",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Longitudinal Tweet ID Dataset.zip",
+            "url": "https://download.microsoft.com/download/d/8/8/d88da069-b992-4fe0-accb-aee65c7d14a8/Longitudinal Tweet ID Dataset.zip",
+            "size": "928890459",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:29:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This data set consists of the tweet IDs collected for the propensity-score analysis of longitudinal social media messages posted by people who mention specific health, social and business domains.  This data set accompanies the paper, \u201cDistilling the Outcomes of Personal Experiences: A Propensity-scored Analysis of Social Media.\u201d\r\nAlso see: https://www.microsoft.com/en-us/research/publication/distilling-outcomes-personal-experiences-propensity-scored-analysis-social-media",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Longitudinal Tweet ID Dataset.zip"
+    ],
+    "detailsSection_file_size": [
+        "885.9 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": " <UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54927",
+    "downloadPreload": true
+}

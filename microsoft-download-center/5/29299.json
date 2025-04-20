@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft IT Enterprise Search Topology Using FAST Search Server 2010 for SharePoint",
+    "downloadDescription": "This download is a Microsoft Visio drawing that shows the logical and physical topology of the enterprise search farm for the Microsoft intranet. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "microsoft-enterprise-search-topology.vsd",
+            "url": "https://download.microsoft.com/download/b/e/2/be22cd91-37de-4a57-9f21-68ffab1d5d38/microsoft-enterprise-search-topology.vsd",
+            "size": "503296",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Microsoft Visio drawing shows the logical and physical topology of the enterprise search farm for the Microsoft intranet, including servers running SharePoint Server 2010, servers running SQL Server 2008, and the rows and columns of servers running FAST Search Server 2010 for SharePoint. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "microsoft-enterprise-search-topology.vsd"
+    ],
+    "detailsSection_file_size": [
+        "491.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29299",
+    "downloadPreload": true
+}

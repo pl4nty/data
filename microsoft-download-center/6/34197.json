@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Downloadable Doc Files",
+    "downloadDescription": "Documents",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Effective_Threat_Modeling_using_TAM.docx",
+            "url": "https://download.microsoft.com/download/0/f/0/0f0ca79d-6a56-4b8b-ab07-8359dcb18335/Effective_Threat_Modeling_using_TAM.docx",
+            "size": "379391",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Effective_Threat_Modeling_using_TAM.pdf",
+            "url": "https://download.microsoft.com/download/0/f/0/0f0ca79d-6a56-4b8b-ab07-8359dcb18335/Effective_Threat_Modeling_using_TAM.pdf",
+            "size": "626525",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sign-up forms, Feed Back forms, Invitations in Microsoft Word format.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Effective_Threat_Modeling_using_TAM.docx",
+        "Effective_Threat_Modeling_using_TAM.pdf"
+    ],
+    "detailsSection_file_size": [
+        "370.5 KB",
+        "611.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 98, Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [
+        {
+            "title": "india",
+            "url": "http://www.microsoft.com/india/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34197",
+    "downloadPreload": true
+}

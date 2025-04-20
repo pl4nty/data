@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "TwC_bro_FinanTrans-111337-HiRes-Bleed",
+    "downloadDescription": "Six Basic Rules for Safer Internet Transactions",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TwC_bro_FinanTrans-111337-LoRes.pdf",
+            "url": "https://download.microsoft.com/download/3/a/2/3a2c118b-3d77-4f1d-80cc-83cfca2b8224/TwC_bro_FinanTrans-111337-LoRes.pdf",
+            "size": "911930",
+            "version": "001",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TwC_bro_FinanTrans-111337-HiRes-NoBleed.pdf",
+            "url": "https://download.microsoft.com/download/3/a/2/3a2c118b-3d77-4f1d-80cc-83cfca2b8224/TwC_bro_FinanTrans-111337-HiRes-NoBleed.pdf",
+            "size": "3702841",
+            "version": "001",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TwC_bro_FinanTrans-111337-HiRes-Bleed.pdf",
+            "url": "https://download.microsoft.com/download/3/a/2/3a2c118b-3d77-4f1d-80cc-83cfca2b8224/TwC_bro_FinanTrans-111337-HiRes-Bleed.pdf",
+            "size": "3812590",
+            "version": "001",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Six Basic Rules for Safer Internet Transactions",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "001",
+    "detailsSection_file_name": [
+        "TwC_bro_FinanTrans-111337-LoRes.pdf",
+        "TwC_bro_FinanTrans-111337-HiRes-NoBleed.pdf",
+        "TwC_bro_FinanTrans-111337-HiRes-Bleed.pdf"
+    ],
+    "detailsSection_file_size": [
+        "890.6 KB",
+        "3.5 MB",
+        "3.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23283",
+    "downloadPreload": true
+}

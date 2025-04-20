@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Online Attendee Training",
+    "downloadDescription": "Learn how to use Microsoft Lync Online Attendee to join meetings, when you don\u2019t have Lync installed.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Lync Online Attendee Training.pptx",
+            "url": "https://download.microsoft.com/download/6/7/2/672f28cd-3b49-4df5-a8dc-a5af5ffef4e5/Microsoft Lync Online Attendee Training.pptx",
+            "size": "811954",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This training course covers the following Lync Online Attendee topics:<br/>\r\n<ul>\r\n<li>Lync Online Attendee overview</li>\r\n<li>Install Lync Online Attendee</li>\r\n<li>Join a meeting and select audio</li>\r\n<li>Set up Lync Online Attendee Options</li> \r\n<li>Manage meeting participants</li>\r\n<li>Share your desktop or application</li>\r\n<li>Deliver a PowerPoint presentation</li>\r\n<li>Use Whiteboard or Poll</li>\r\n<li>Use the file transfer feature</li> \r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Lync Online Attendee Training.pptx"
+    ],
+    "detailsSection_file_size": [
+        "792.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office PowerPoint 97-2007 \r\nMicrosoft PowerPoint 2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer. After you save the file, open the presentation as you typically would. To remove this download, delete the file from the directory where you saved it.   ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26140",
+    "downloadPreload": true
+}

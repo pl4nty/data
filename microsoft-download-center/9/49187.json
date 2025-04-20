@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "KB3095681: Update to fix no images in Visual Studio 2015",
+    "downloadDescription": "This is the download for KB3095681 to fix no images being displayed in Visual Studio 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS14-KB3095681.exe",
+            "url": "https://download.microsoft.com/download/4/8/e/48ee72d7-07c9-4508-9d7b-edd5df11d33b/VS14-KB3095681.exe",
+            "size": "3029768",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:07:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the download for KB3095681 to fix no images being displayed in Visual Studio 2015.\n\nPlease see the KB article for more information about this update: <a href=\"http://support.microsoft.com/kb/3095681\">http://support.microsoft.com/kb/3095681</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "VS14-KB3095681.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"https://www.visualstudio.com/en-us/downloads/visual-studio-2015-system-requirements-vs.aspx\">Visual Studio 2015 System Requirements</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the patch, run it, follow the install instructions in the patch. The only thing to note is that all running instances of VS should be shut down completely be for installing the patch.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49187",
+    "downloadPreload": true
+}

@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Using the HPC Job Scheduler in Windows HPC Server 2008 R2",
+    "downloadDescription": "This paper describes how jobs run on the cluster, job submission methods, and job scheduling policies in Windows HPC Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SchedulerWhitepaperFinal.docx",
+            "url": "https://download.microsoft.com/download/b/a/6/ba689a0c-fac6-4d41-9bd3-3586ce05ae4a/SchedulerWhitepaperFinal.docx",
+            "size": "598665",
+            "version": "09/2010",
+            "datePublished": "7/15/2024 3:14:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper provides an overview of how jobs run and the job life cycle on a Windows HPC Server 2008 R2 cluster. The paper describes job submission methods, including use of the HPC Job Manager console, the command line interface, and the scheduler APIs.  There is also an overview of job scheduling policies that the cluster administrator can configure to define how resources should be allocated for different job types or user groups.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09/2010",
+    "detailsSection_file_name": [
+        "SchedulerWhitepaperFinal.docx"
+    ],
+    "detailsSection_file_size": [
+        "584.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or word viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "job Scheduler Configuration in Windows HPC Server 2008 R2",
+            "url": "http://technet.microsoft.com/en-us/library/ff919436(v=WS.10).aspx"
+        },
+        {
+            "title": "submitting Jobs to a Windows HPC Server 2008 R2 Cluster",
+            "url": "http://technet.microsoft.com/en-us/library/ff919394(v=WS.10).aspx"
+        },
+        {
+            "title": "job Management in Windows HPC Server 2008 R2 Cluster",
+            "url": "http://technet.microsoft.com/en-us/library/ff919466(v=WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6873",
+    "downloadPreload": true
+}

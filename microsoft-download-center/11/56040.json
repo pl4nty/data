@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Service Pack 4 (SP4)",
+    "downloadDescription": "Download Service Pack 4 for Microsoft\u00ae SQL Server\u00ae 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP4-KB4018073-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/a/b/eabf1e75-54f0-42bb-b0ee-58e837b7a17f/SQLServer2012SP4-KB4018073-x64-ENU.exe",
+            "size": "1074394304",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:57:36 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP4-KB4018073-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/a/b/eabf1e75-54f0-42bb-b0ee-58e837b7a17f/SQLServer2012SP4-KB4018073-x86-ENU.exe",
+            "size": "756803264",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:57:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2012 service packs are cumulative updates and upgrade all editions and service levels of SQL Server 2012 to SP4. This service pack contains up to and including SQL Server 2012 Service Pack 3 Cumulative Update 10 (CU10).  <br />\n<br />\nThis download site contains the following packages and service patches for the Microsoft SQL Server 2012 SP4 release:<br /><br />\n<ul>\n<li><b>Microsoft SQL Server 2012 SP4 Update</b> - this package contains the Microsoft SQL Server 2012 Service Pack 4 update to be applied to existing SQL Server 2012 installations.</li><br />\n</ul>\n<br />\n<b>Microsoft SQL Server 2012 SP4 Documentation:</b><br />\n<br />\n<ul>\n <li>\n    <a href=\"https://go.microsoft.com/fwlink/?linkid=846937\">Microsoft SQL Server 2012 SP4 Release Notes</a>\n  </li>\n  <li>\n    <a href=\"https://go.microsoft.com/fwlink/?linkid=846938\">How to obtain the latest service pack for SQL Server 2012</a>\n    <li>\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=216743\">Microsoft SQL Server 2012 Privacy Statement</a>\n  </li>\n  <li>\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=624119\">Microsoft SQL Server 2012 Systems Requirements</a>\n  </li>\n     <br />\n    <br />\n  </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.7001.0",
+    "detailsSection_file_name": [
+        "SQLServer2012SP4-KB4018073-x64-ENU.exe",
+        "SQLServer2012SP4-KB4018073-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.0 GB",
+        "721.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>For complete system requirements, please reference the detailed  <a href=\"http://go.microsoft.com/fwlink/?LinkID=624119\">Systems Requirements</a> page</li>\n<li>6 GB of available hard disk space for the Service Pack update, 10 GB for a Slipstream installation</li>\n<li> Service Pack 4 can be applied to any of the following Microsoft SQL Server 2012 editions: </li>\n<br /><ul>\n  <li>Microsoft SQL Server 2012 Enterprise</li>\n  <li> Microsoft SQL Server 2012 Developer</li>\n  <li>Microsoft SQL Server 2012 Standard</li>\n  <li>Microsoft SQL Server 2012 Business Intelligence</li>\n  <li>Microsoft SQL Server 2012 Web</li>\n  <li>Microsoft SQL Server 2012 Express</li>\n</ul><br />\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<br />\n<b>Note:</b> You must have administrative rights on the computer to install SQL Server 2012 SP4<br />\n<br />\n<u><b>Microsoft SQL Server 2012 SP4 Update: </b></u><br />\n<br />\n<ol>\n<li>Review the  <a href=\"https://go.microsoft.com/fwlink/?linkid=846937\">Microsoft SQL Server 2012 SP4 Release Notes</a>\n  </li>\n  <li>Download the following file from the \"DOWNLOAD\" section on this page to your device:</li> \n<ul> \n<li><b>SQLServer2012SP4-KB4018073-architecture-language-architecture-language.exe</b></li> </ul> \n<li>Once the download is complete, click RUN to begin the installation process immediately or SAVE to install at a later time.</li>\n</ol>\n <br />\n  <br />\n<br />\n",
+    "additionalInformationSection": "If you have questions about  SQL Server 2012 SP4, please visit the <a href=\" http://go.microsoft.com/fwlink/?LinkID=205125\"> SQL Server  2012 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2012 SP4 by submitting bugs to <a href=\" http://go.microsoft.com/fwlink/?LinkID=223170\">Microsoft Connect.</a><br />\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56040",
+    "downloadPreload": true
+}

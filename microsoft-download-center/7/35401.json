@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Delivering Lync Real-Time Communications over Wi-Fi",
+    "downloadDescription": "This white paper describes how Lync Server 2010 communications software can be successfully implemented over wireless local area networks (Wi-Fi) to help administrators ensure a high-quality voice and video Lync experience for all users.   ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Delivering Lync Real-Time Communications over Wi-Fi.docx",
+            "url": "https://download.microsoft.com/download/e/4/6/e46e60fa-f77c-467d-a1e5-3b7175fe3437/Delivering Lync Real-Time Communications over Wi-Fi.docx",
+            "size": "280564",
+            "version": "Oct2012",
+            "datePublished": "7/15/2024 3:30:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This overview of issues and mitigations will help you to ensure a high-quality voice and video Lync experience for all users. To optimize the wireless infrastructure, particularly for real-time media traffic, you\u2019ll find details regarding Wi-Fi (WLAN) technology, configuration settings, and optimization. In addition, this paper provides deployment recommendations and evaluates typical enterprise, public hotspot, and home Wi-Fi deployments for real-time bidirectional media quality.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Oct2012",
+    "detailsSection_file_name": [
+        "Delivering Lync Real-Time Communications over Wi-Fi.docx"
+    ],
+    "detailsSection_file_size": [
+        "274.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "infrastructure qualified for Microsoft Lync",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=268730"
+        },
+        {
+            "title": "lync Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=270854"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35401",
+    "downloadPreload": true
+}

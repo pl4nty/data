@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Readings in Service Orientation",
+    "downloadDescription": "Second book of the MS Architecture Strategy Team",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReadingsInServiceOrientation.zip",
+            "url": "https://download.microsoft.com/download/f/b/5/fb501837-b4c2-4bbe-bd46-d06ba9b93121/ReadingsInServiceOrientation.zip",
+            "size": "3346302",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:14:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Many forces are involved with architecture, but the fundamental principles that govern all<br />\narchitectures are simple: it\u2019s easy, it works, it\u2019s familiar, and it can be trusted.<br />\nThe purpose of this book is to let you form your own opinions about the impact of<br />\nservices orientation on your business and computing environments. This book is not trying<br />\nto be an authoritative reference for service orientation. Rather, presented here is an interesting<br />\nset of classical papers on architecting services by a variety of well-known authors in<br />\nthe architectural space. The topics, or architectural viewpoints covered, go from a perspective<br />\non business architecture, through model-based tools, to map from the business to<br />\ntechnology to the choices in new IT infrastructure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ReadingsInServiceOrientation.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. Click the Download link to start the download.<br />\n2. Do one of the following:<br />\n   - To start the installation immediately, click Open or Run this program from its current location.<br />\n   - To copy the download to your computer for installation at a later time, click Save or Save this program to disk.<br />\n3. View the .pdf file using Adobe Acrobat 4.0 or later",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10086",
+    "downloadPreload": true
+}

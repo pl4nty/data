@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Product Placemat for CMMC 2.0 (Preview)",
+    "downloadDescription": "Microsoft Product Placemat for CMMC 2.0 (Preview)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Product Placemat for CMMC - Preview Sept 2024.xlsm",
+            "url": "https://download.microsoft.com/download/e/8/a/e8ae0228-e786-423f-b624-1574f01bc493/Microsoft Product Placemat for CMMC - Preview Sept 2024.xlsm",
+            "size": "1198319",
+            "version": "2.0 Preview",
+            "datePublished": "10/17/2024 1:17:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Product Placemat for Cybersecurity Maturity Model Certification (CMMC) 2.0 (Preview) is an interactive view representing how Microsoft cloud products and services may satisfy requirements for CMMC practices.\r\n<br /><br />\r\nThe Microsoft Product Placemat for CMMC is especially useful when paired with the Microsoft Technical Reference Guide for CMMC. The Technical Reference Guide is available at https://aka.ms/cmmc/techrefguide\r\n<br /><br />\r\nDISCLAIMER: The Microsoft Product Placemat for CMMC Level 2 is based upon available information to date and is provided as a sample resource only. Microsoft is not a CMMC accrediting body and thus cannot guarantee any outcome under the formal CMMC review process.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0 Preview",
+    "detailsSection_file_name": [
+        "Microsoft Product Placemat for CMMC - Preview Sept 2024.xlsm"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "10/17/2024",
+    "systemRequirementsSection": "1. Microsoft Excel\r\n<br />\r\n2. A basic understanding of Microsoft cloud services and CMMC practices\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download\r\n<br />\r\n2. Save the file to a location on your computer\r\n<br />\r\n3. Open the Microsoft Product Placemat for CMMC 2.0 spreadsheet\r\n<br />\r\n4. Review the Placemat to view the relation between Microsoft cloud services and CMMC practices\r\n<br />\r\n5. Share feedback at https://aka.ms/cmmc/productplacematfeedback",
+    "relatedResourcesSection": [
+        {
+            "title": "product Placemat Feedback",
+            "url": "https://aka.ms/cmmc/productplacematfeedback"
+        },
+        {
+            "title": "blog: Microsoft CMMC Response",
+            "url": "https://aka.ms/CMMCResponse"
+        },
+        {
+            "title": "blog: Microsoft CMMC Acceleration Program Update",
+            "url": "https://aka.ms/CMMCAccelerationProgramUpdate"
+        },
+        {
+            "title": "microsoft and CMMC",
+            "url": "https://aka.ms/cmmc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102536",
+    "downloadPreload": true
+}

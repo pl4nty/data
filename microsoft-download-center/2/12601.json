@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 R2 & Microsoft Hyper-V Server 2008 R2 - Hyper-V Live Migration Overview & Architecture ",
+    "downloadDescription": "One of the most highly anticipated new features in Windows Server\u00ae 2008 R2 Hyper-V\u2122 is live migration.  This  document describes the live migration feature of Windows Server\u00ae 2008 R2 Hyper-V\u2122 in detail, including how live migration moves running VMs and requirements for implementing live migration",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LiveMigrationWhitepaper.xps",
+            "url": "https://download.microsoft.com/download/c/c/7/cc7a50c9-7c10-4d70-a427-c572da006e61/LiveMigrationWhitepaper.xps",
+            "size": "1617630",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With Hyper-V\u2122 live migration, you can move running VMs from one Hyper-V\u2122 physical host to another without any disruption of service or perceived downtime. Live migration is integrated with Windows Server 2008\u00ae R2 Hyper-V\u2122  and Microsoft\u00ae Hyper-V\u2122 Server 2008 R2. \r\n\r\nSince Hyper-V\u2122 live migration can move running virtual machines without downtime, it will facilitate greater flexibility and value:\r\n\u2022 Provides better agility:  Datacenters with multiple Hyper-V\u2122 physical hosts will be able to move running VMs to the best physical computer for performance, scaling, or optimal consolidation without impacting users.\r\n\u2022 Reduces costs and increase productivity: Datacenters with multiple Hyper-V\u2122 physical hosts will be able to service those systems in a more controlled fashion, scheduling maintenance during regular business hours.   Live migration makes it possible to keep VMs online, even during maintenance, increasing productivity for both users and server administrators. Datacenters will be also able to reduce power consumption by dynamically increasing consolidation ratios and powering off un-used physical hosts during times of lower demand.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LiveMigrationWhitepaper.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008\u00ae R2 Hyper-V\u2122 or Microsoft\u00ae Hyper-V\u2122 Server 2008 R2. \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Download the live migration whitepaper and open in Microsoft Word. ",
+    "relatedResourcesSection": [
+        {
+            "title": "hyper-V Technical Guidance",
+            "url": "http://technet.microsoft.com/en-us/library/cc753637.aspx"
+        },
+        {
+            "title": "live Migration Step-By-Step Deployment Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=139667"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12601",
+    "downloadPreload": true
+}

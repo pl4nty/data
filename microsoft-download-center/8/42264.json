@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Fields Moved to Different Tables in Microsoft Dynamics AX 2012 (Affects Upgrade)",
+    "downloadDescription": "When you upgrade from AX 2009 to AX 2012, it is helpful to know the AX 2012 tables to which various AX 2009 fields moved. This Microsoft Excel file shows information which enables you to make such determinations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AX5DiffAX6_TableField_AX62_GM.xlsx",
+            "url": "https://download.microsoft.com/download/3/3/8/33899732-3847-4a67-b0e8-123fffd4690c/AX5DiffAX6_TableField_AX62_GM.xlsx",
+            "size": "2205078",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:40:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The tabs in the Excel file have the following names: \r\n<br /><br />\r\n<ul><li>1-AX5-TableField-NotInAX6</li>\r\n<li>2-AX6-TableField-NotInAX5</li>\r\n<li>3-AX5-Table_NotInAX6</li>\r\n<li>4-AX6-Table_NotInAX5</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "AX5DiffAX6_TableField_AX62_GM.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42264",
+    "downloadPreload": true
+}

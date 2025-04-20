@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sampling software projects",
+    "downloadDescription": "Implementation of algorithms to sample software projects for empirical research. Last published: June 18, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SampleSoftwareProjects-0.1.1.zip",
+            "url": "https://download.microsoft.com/download/e/1/2/e12abeb9-5d93-4c53-93f7-efff7cfa86f3/SampleSoftwareProjects-0.1.1.zip",
+            "size": "6383",
+            "version": "0.1.1",
+            "datePublished": "7/15/2023 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Implementation of algorithms to sample software projects for empirical research.  The implementation is provided as an R package and provides two functions: (1) Score a selection of software projects (sample) with respect to how representative it is of a broader population. (2) Recommend additional projects from the broader population in order to maximize the score from the previous step.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1.1",
+    "detailsSection_file_name": [
+        "SampleSoftwareProjects-0.1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52416",
+    "downloadPreload": true
+}

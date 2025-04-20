@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Viral Economy Simulator",
+    "downloadDescription": "Financial efficiency is the premier performance measure for most systems. Last published: January 21, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.msi",
+            "url": "https://download.microsoft.com/download/0/c/8/0c8b940c-1b0c-4d87-aa8b-e898c7c89283/setup.msi",
+            "size": "163840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Financial efficiency is the premier performance measure for most systems. Existing economic ecosystems for distribution of multimedia leave a lot to be desired: client-server platforms do not scale well, resulting in substantial operational costs, whereas peer-to-peer platforms cannot police copyright control and are thus notorious for not being able to capitalize on their vast delivery potential. This simulator is designed to model various economic ecosystems with an aim at predicting financial performance of both client-server and viral-distribution systems for multimedia. The model consists of several probabilistic components: a global, scale-free viral network of users and a localized user-behavior model that abstracts marketing, pricing, and executed transactions. The simulator includes an efficient dynamic pricing scheme that can be evaluated in considering multimedia distribution scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "160.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52424",
+    "downloadPreload": true
+}

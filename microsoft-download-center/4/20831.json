@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Internal Database x64 (WYukon SP2 x64)",
+    "downloadDescription": "Windows Internal database is a relational data store for Windows roles and features only, such as Windows SharePoint Services and Windows Server Update Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSEE_10.msi",
+            "url": "https://download.microsoft.com/download/0/3/7/037a4b07-a4f2-4f9f-8f15-69047c11ce31/SSEE_10.msi",
+            "size": "52112896",
+            "version": "09.00.3042.3",
+            "datePublished": "7/15/2024 3:15:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update upgrades Windows Internal Database used by Windows components such as Windows SharePoint Services and Windows Server Update Services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB921896",
+        "name": "KB921896"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.00.3042.3",
+    "detailsSection_file_name": [
+        "SSEE_10.msi"
+    ],
+    "detailsSection_file_size": [
+        "49.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is available only on Windows 2003.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Please click the download button to download the Windows Internal Database x64 setup package for Windows Server 2003 OS.<br />\n<br />\nFor a new install of the Windows Internal Database when it does not exist already:<br />\nmsiexec /i SSEE_10.msi CALLERID=OCSetup.exe /qn REBOOT=ReallySupress /l*v [logfilepath]<br />\n<br />\nTo upgrade an existing lower version of the Windows Internal Database:<br />\nmsiexec /i SSEE_10.msi  CALLERID=OCSetup.exe REINSTALL=ALL REINSTALLMODE=vomus /qn REBOOT=ReallySupress /l*v [logfile]<br />\n<br />\nTo completely uninstall the Windows Internal Database:<br />\nstart /wait msiexec /x {BDD79957-5801-4A2D-B09E-852E7FA64D01} CALLERID=OCSetup.exe /qn REBOOT=ReallySupress /l*v [logfile]",
+    "relatedResourcesSection": [
+        {
+            "title": "a list of the bugs that are fixed in SQL Server 2005 Service Pack 2",
+            "url": "http://support.microsoft.com/kb/921896"
+        },
+        {
+            "title": "how to obtain the latest service pack for SQL Server 2005",
+            "url": "http://support.microsoft.com/kb/913089/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20831",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Estimate performance and capacity requirements for Microsoft Search Server 2010 Express",
+    "downloadDescription": "This white paper discusses capacity managment and capacity planning for Microsoft\u00ae Search Server 2010 Express.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Estimate performance and capacity requirements for Search Server 2010 Express.pdf",
+            "url": "https://download.microsoft.com/download/7/5/0/75028a7f-2b76-4d48-91ef-a0ed267b9b73/Estimate performance and capacity requirements for Search Server 2010 Express.pdf",
+            "size": "813158",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Estimate performance and capacity requirements for Search Server 2010 Express.docx",
+            "url": "https://download.microsoft.com/download/7/5/0/75028a7f-2b76-4d48-91ef-a0ed267b9b73/Estimate performance and capacity requirements for Search Server 2010 Express.docx",
+            "size": "398869",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Estimate performance and capacity requirements for Search Server 2010 Express.xps",
+            "url": "https://download.microsoft.com/download/7/5/0/75028a7f-2b76-4d48-91ef-a0ed267b9b73/Estimate performance and capacity requirements for Search Server 2010 Express.xps",
+            "size": "1007692",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper discusses capacity management and planning information for Microsoft Search Server 2010 Express. It includes the following information: test environment specifications, such as hardware, farm topology, and configuration; the workload used for data generation, including the number and class of users, and farm usage characteristics; test farm dataset, including database contents, search indexes and external data sources; health and performance data specific to the tested environment; test data and recommendations for how to determine the hardware and configuration you need to deploy a similar environment, and how to optimize the environment for appropriate capacity and performance characteristics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Estimate performance and capacity requirements for Search Server 2010 Express.pdf",
+        "Estimate performance and capacity requirements for Search Server 2010 Express.docx",
+        "Estimate performance and capacity requirements for Search Server 2010 Express.xps"
+    ],
+    "detailsSection_file_size": [
+        "794.1 KB",
+        "389.5 KB",
+        "984.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14275",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Comega compiler preview",
+    "downloadDescription": "Comega is an experimental language which extends C# with new constructs for relational and semi-structured data access and asynchronous concurrency. Last published: October 28, 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Comega1_1.0.4220.0.msi",
+            "url": "https://download.microsoft.com/download/e/1/8/e180c2bf-170d-484c-910b-753b07946c50/Comega1_1.0.4220.0.msi",
+            "size": "4226048",
+            "version": "1.0.2",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Comega is an experimental language which extends C# with new constructs for relational and semi-structured data access and asynchronous concurrency.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.2",
+    "detailsSection_file_name": [
+        "Comega1_1.0.4220.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52621",
+    "downloadPreload": true
+}

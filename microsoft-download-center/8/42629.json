@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure Media Services Guidance \u2013 Book Download",
+    "downloadDescription": "This guidance helps you become familiar with the basic principles of Microsoft Azure Media Services and learn how to design and implement client applications that use Media Services to provide scalable, cost effective, end-to-end media distribution solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OnDemandMediaService.epub",
+            "url": "https://download.microsoft.com/download/f/2/7/f2725d23-b9b8-42c1-bab3-4050f4763e0b/OnDemandMediaService.epub",
+            "size": "2965390",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OnDemandMediaService.pdf",
+            "url": "https://download.microsoft.com/download/f/2/7/f2725d23-b9b8-42c1-bab3-4050f4763e0b/OnDemandMediaService.pdf",
+            "size": "2778195",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OnDemandMediaService.mobi",
+            "url": "https://download.microsoft.com/download/f/2/7/f2725d23-b9b8-42c1-bab3-4050f4763e0b/OnDemandMediaService.mobi",
+            "size": "4692110",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:52:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide describes how to design and build a video-on-demand application that uses Media Services. It provides an end to end walkthrough of a Windows Store application that communicates with Media Services through a web service, and explains key design and implementation choices.\r\nIn addition to the Windows Store application, the guide also includes client applications for Windows Phone, web, iOS, and Android devices.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OnDemandMediaService.epub",
+        "OnDemandMediaService.pdf",
+        "OnDemandMediaService.mobi"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB",
+        "2.6 MB",
+        "4.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read the PDF, epub, or mobi, you will need a document reader capable of displaying these documents. ",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "IBM AIX",
+        "Linux",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the book format appropriate for your device.",
+    "additionalInformationSection": "For help and support visit the <a href=\"http://wamsg.codeplex.com/\">project community site</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "reference Implementation source code",
+            "url": "http://aka.ms/amsg-code"
+        },
+        {
+            "title": "msdn Home page",
+            "url": "http://msdn.microsoft.com/en-us/library/dn735912.aspx"
+        },
+        {
+            "title": "community site",
+            "url": "http://wamsg.codeplex.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42629",
+    "downloadPreload": true
+}

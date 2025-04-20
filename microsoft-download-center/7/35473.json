@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Azure Poster",
+    "downloadDescription": "Provides an overview of Windows Azure features, services, and common uses.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Azure Poster.txt",
+            "url": "https://download.microsoft.com/download/e/4/1/e41d9aa9-1eff-4b55-8c69-79260a9fe8df/Windows Azure Poster.txt",
+            "size": "140",
+            "version": "1",
+            "datePublished": "7/15/2024 3:32:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Introduces Windows Azure for developers and IT pros. Summarizes benefits such as global coverage and extensive language support. Provides a description of current services by category: app services, data services, compute, networking, and store. Depicts common uses including Cloud Services, Virtual Machines, Web Sites, Mobile Services, and Media Services.\r\n<br />\r\n<br />\r\nThe poster is intended to be printed and measures 26\" x 39\u201d.<br />\r\n<br />\r\n<b>Note:</b> The download on this page is no longer updated. See <a href=\"http://azure.microsoft.com/en-us/documentation/infographics/\">Microsoft Azure Infographics</a> for all Azure infographics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows Azure Poster.txt"
+    ],
+    "detailsSection_file_size": [
+        "140 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><ul>\r\n<li>Windows 7</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 R2</li>\r\n<li>Windows Server 2012</li>\r\n</ul></li>\r\n<li><b>Other Requirements:</b><ul>\r\n<li>Adobe Acrobat Reader</li>\r\n</ul></li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Print with these measurements: 26\" x 39\"",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Azure Poster",
+            "url": "http://azure.microsoft.com/en-us/documentation/infographics/azure/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35473",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "AI Builder governance whitepaper",
+    "downloadDescription": "AI Builder governance whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AI Builder governance whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/5/e/7/5e74d5b4-e737-4f51-9506-ecd403ab655c/AI Builder governance whitepaper.pdf",
+            "size": "601357",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides extensive context on how to administer AI Builder.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AI Builder governance whitepaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "587.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Active AI Builder license",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Open the file and read it",
+    "relatedResourcesSection": [
+        {
+            "title": "ai Builder public documentation",
+            "url": "https://docs.microsoft.com/ai-builder/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "103317",
+    "downloadPreload": true
+}

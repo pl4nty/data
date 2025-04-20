@@ -1,0 +1,105 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Service Pack 2 (SP2)",
+    "downloadDescription": "Download Service Pack 2 for Microsoft\u00ae SQL Server\u00ae 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP2-KB2958429-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/d/f/7/df7bebf9-aa4d-4cfe-b5ae-5c9129d37efd/SQLServer2012SP2-KB2958429-x64-ENU.exe",
+            "size": "1064522432",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP2-KB2958429-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/d/f/7/df7bebf9-aa4d-4cfe-b5ae-5c9129d37efd/SQLServer2012SP2-KB2958429-x86-ENU.exe",
+            "size": "748122816",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2012 service packs are cumulative updates and upgrade all editions and service levels of SQL Server 2012 to SP2. This service pack contains up to and including SQL Server 2012 Service Pack1 Cumulative Update 9 (CU9).  <br/>\r\n<br/>\r\nThis download site contains the following packages and service patches for the Microsoft SQL Server 2012 SP2 release:<br/><br/>\r\n<ul>\r\n<li><b>Microsoft SQL Server 2012 SP2 Update</b> - this package contains the Microsoft SQL Server 2012 Service Pack 2 update to be applied to existing SQL Server 2012 installations.</li><br/>\r\n</ul>\r\n<br/>\r\n<b>Microsoft SQL Server 2012 SP2 Documentation:</b><br />\r\n<br />\r\n<ul>\r\n <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=398725\">Microsoft SQL Server 2012 SP2 Release Notes</a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=398726\"> Microsoft SQL Server 2012 SP2 Readme</a>\r\n    <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=216743\">Microsoft SQL Server 2012 Privacy Statement </a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=219960\"> Microsoft SQL Server 2012 Systems Requirements</a>\r\n  </li>\r\n     <br />\r\n    <br />\r\n  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.5058.0",
+    "detailsSection_file_name": [
+        "SQLServer2012SP2-KB2958429-x64-ENU.exe",
+        "SQLServer2012SP2-KB2958429-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1015.2 MB",
+        "713.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>For complete system requirements, please reference the detailed  <a href=\"http://go.microsoft.com/fwlink/?LinkID=219960\"> Systems Requirements</a> page</li>\r\n<li>6 GB of available hard disk space for the Service Pack update, 10 GB for a Slipstream installation</li>\n<li> Service Pack 2 can be applied to any of the following Microsoft SQL Server 2012 editions: </li>\r\n<br /><ul>\r\n  <li>Microsoft SQL Server 2012 Enterprise</li>\r\n  <li> Microsoft SQL Server 2012 Developer</li>\r\n  <li>Microsoft SQL Server 2012 Standard</li>\r\n  <li>Microsoft SQL Server 2012 Business Intelligence</li>\r\n  <li>Microsoft SQL Server 2012 Web</li>\r\n  <li>Microsoft SQL Server 2012 Express</li>\r\n</ul><br />\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<br/>\r\n<b>Note:</b> You must have administrative rights on the computer to install SQL Server 2012 SP2. <br/>\r\n<br/>\r\n<u><b>Microsoft SQL Server 2012 SP2 Update: </b></u><br/>\r\n<br/>\r\n<ol>\r\n<li>Review the  <a href=\"http://go.microsoft.com/fwlink/?LinkID=398725\">Microsoft SQL Server 2012 SP2 Release Notes</a>\r\n  </li>\r\n  <li>Download the following file from the \"DOWNLOAD\" section on this page to your device:</li> \r\n<ul> \r\n<li><b>SQLServer2012SP2-KB2958429-architecture-language.exe</b></li> </ul> \r\n<li>Once the download is complete, click RUN to begin the installation process immediately or SAVE to install at a later time.</li>\r\n</ol>\r\n <br/>\r\n  <br />\r\n<br />\r\n",
+    "additionalInformationSection": "If you have questions about  SQL Server 2012, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkID=205125\"> SQL Server  2012 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2012 by submitting bugs to <a href=\"http://go.microsoft.com/fwlink/?LinkID=223170\">Microsoft Connect.</a><br/>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43340",
+    "downloadPreload": true
+}

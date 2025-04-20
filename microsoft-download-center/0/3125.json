@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Integrating BizTalk Server and nServiceBus",
+    "downloadDescription": "This paper reviews the common integration scenarios between BizTalk Server and nServiceBus, and discusses various approaches to make the products work together.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sample 1 - Send and Receive.mp4",
+            "url": "https://download.microsoft.com/download/b/0/6/b0678433-88ea-44d4-8c4c-f4aa5dfc4c58/Sample 1 - Send and Receive.mp4",
+            "size": "40013166",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "nServiceBus and BizTalk Server.docx",
+            "url": "https://download.microsoft.com/download/b/0/6/b0678433-88ea-44d4-8c4c-f4aa5dfc4c58/nServiceBus and BizTalk Server.docx",
+            "size": "1262023",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Sample 2 - Publish and Subscribe.mp4",
+            "url": "https://download.microsoft.com/download/b/0/6/b0678433-88ea-44d4-8c4c-f4aa5dfc4c58/Sample 2 - Publish and Subscribe.mp4",
+            "size": "11211307",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Sample 2 - Source Code PubSub.zip",
+            "url": "https://download.microsoft.com/download/b/0/6/b0678433-88ea-44d4-8c4c-f4aa5dfc4c58/Sample 2 - Source Code PubSub.zip",
+            "size": "23630961",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Sample 1 - Source Code Send and Receive.zip",
+            "url": "https://download.microsoft.com/download/b/0/6/b0678433-88ea-44d4-8c4c-f4aa5dfc4c58/Sample 1 - Source Code Send and Receive.zip",
+            "size": "20455739",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper reviews the common integration scenarios between BizTalk Server and nServiceBus, and discusses various approaches to make the products work together.<br></br>\r\n\r\nAlso provided in this download are zip files of samples that demonstrate potential scenarios, and videos that walk you through them.<br></br>\r\n\r\nSample 1 covers the following scenarios:<br></br>\r\n\r\n<UL><LI>Send a one-way message from nServiceBus to BizTalk Server</LI>\r\n<LI>Send a one-way message from BizTalk Server to nServiceBus</LI></UL><br></br>\r\n\r\nSample 2 covers the following scenarios:<br></br>\r\n\r\n<UL><LI>BizTalk Server as a subscriber to nServiceBus messages</LI>\r\n<LI>BizTalk Server as a publisher of nServiceBus messages</LI></UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Sample 1 - Send and Receive.mp4",
+        "nServiceBus and BizTalk Server.docx",
+        "Sample 2 - Publish and Subscribe.mp4",
+        "Sample 2 - Source Code PubSub.zip",
+        "Sample 1 - Source Code Send and Receive.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.2 MB",
+        "1.2 MB",
+        "10.7 MB",
+        "22.5 MB",
+        "19.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the document, use Microsoft Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3125",
+    "downloadPreload": true
+}

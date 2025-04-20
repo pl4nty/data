@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2015, Capacity Calculator",
+    "downloadDescription": "A spreadsheet for calculating a user\u2019s hardware requirements based on information about users and traffic.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_Server_2015_Scenario_Based_Capacity_Calculator.xlsx",
+            "url": "https://download.microsoft.com/download/7/c/2/7c22dbfd-24fa-4cc1-81a5-4c0208fbbee5/Skype_for_Business_Server_2015_Scenario_Based_Capacity_Calculator.xlsx",
+            "size": "34155",
+            "version": "9319.113",
+            "datePublished": "7/15/2024 4:16:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A spreadsheet for calculating a user\u2019s hardware requirements based on information that the admin supplies about number of users, types of communication, and expected traffic.\r\n<br/>\r\n<br/>\r\nFor more information on how to use the Skype for Business Server 2015, Capacioty Calculator, please visit Microsoft TechNet here:  <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=785213\">http://go.microsoft.com/fwlink/p/?LinkId=785213</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9319.113",
+    "detailsSection_file_name": [
+        "Skype_for_Business_Server_2015_Scenario_Based_Capacity_Calculator.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "33.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Excel document. Users who do not have Microsoft Excel can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=212305\">Excel Viewer</A>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51196",
+    "downloadPreload": true
+}

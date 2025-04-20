@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual J# Version 2.0 Redistributable Package",
+    "downloadDescription": "[This product is no longer under support. See https://aka.ms/vjsharpsupportpolicy.] The Microsoft Visual J#\u2122 Redistributable Package version 2.0 includes everything you need to run your Visual J# applications on a computer that already has the Microsoft .NET Framework v2.0 installed.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vjredist.exe",
+            "url": "https://download.microsoft.com/download/9/a/0/9a01eb1e-fe80-41af-a3f8-ea41220918f7/vjredist.exe",
+            "size": "3798912",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "[This product is no longer under support. See https://aka.ms/vjsharpsupportpolicy.] The Visual J# Redistributable Package is not intended to run applications written with other Java-language development tools. Applications and services built with Visual J# will run only on the .NET Framework and will not run on any Java Virtual Machine. Visual J# has been independently developed by Microsoft and is not endorsed or approved by Sun Microsystems, Inc.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "vjredist.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>.NET Framework v2.0:</b> You must install the Microsoft .NET Framework v2.0 redistributable package before you install Microsoft Visual J# 2.0 redistributable package.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 98",
+        "Windows 2000",
+        "Windows ME",
+        "Windows Server 2003",
+        "Windows 98 Second Edition"
+    ],
+    "installInstructionSection": "<OL><LI><b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows that you are running. To find recent security updates, visit Windows Update.</LI><LI>Click the <b>Download</b> button on this page to start the download</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Note: The Visual J# version 2.0 Redistributable Package setup will stop and restart Internet Information Services (IIS).<br/>\n<br/>\nVisual J# v2.0 is a 32-bit only release. On 64-bit systems, it will execute in the Windows-On-Windows environment.",
+    "relatedResourcesSection": [
+        {
+            "title": "support Center Visual J# .NET",
+            "url": "http://support.microsoft.com/default.aspx?scid=fh;en-us;vjnet"
+        },
+        {
+            "title": "visual J# .NET. Community",
+            "url": "http://msdn.microsoft.com/vjsharp/support/community/default.aspx"
+        },
+        {
+            "title": "visual J# Developer Center",
+            "url": "http://msdn.microsoft.com/vjsharp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4712",
+    "downloadPreload": true
+}

@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 3 for System Center 2012 - Data Protection Manager",
+    "downloadDescription": "The Update Rollup 3 for System Center 2012 - Data Protection Manager fixes issues described in KB2756127. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPMManagementShell2012-KB2751230-x86.exe",
+            "url": "https://download.microsoft.com/download/6/d/e/6ded5784-f0a6-444c-ab10-79e99b7159b5/DPMManagementShell2012-KB2751230-x86.exe",
+            "size": "2113616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:18 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DataProtectionManager2012-KB2751230.exe",
+            "url": "https://download.microsoft.com/download/6/d/e/6ded5784-f0a6-444c-ab10-79e99b7159b5/DataProtectionManager2012-KB2751230.exe",
+            "size": "246435440",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DPMManagementShell2012-KB2751230-x64.exe",
+            "url": "https://download.microsoft.com/download/6/d/e/6ded5784-f0a6-444c-ab10-79e99b7159b5/DPMManagementShell2012-KB2751230-x64.exe",
+            "size": "2112416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This hotfix rollup resolves the issues as summarized in KB2756127\r\n<a href=\"http://support.microsoft.com/kb/2756127\">http://support.microsoft.com/kb/2756127</a>\r\n\r\nNote This hotfix rollup package applies to all supported language versions of Microsoft System Center 2012 - Data Protection Manager.\r\n\r\nFor more information about how to download Microsoft support files, click the following article number to view the article in the Microsoft Knowledge Base: \r\n\r\n<a href=\"http://support.microsoft.com/kb/119591\">119591</a> How to obtain Microsoft support files from online services \r\n\r\nMicrosoft scanned this file for viruses. Microsoft used the most current virus-detection software that was available on the date that the file was posted. The file is stored on security-enhanced servers that help prevent any unauthorized changes to the file.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DPMManagementShell2012-KB2751230-x86.exe",
+        "DataProtectionManager2012-KB2751230.exe",
+        "DPMManagementShell2012-KB2751230-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "235.0 MB",
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b></b>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 Standard"
+    ],
+    "installInstructionSection": "This System Center 2012 - Data Protection Manager rollup package consists of following update. To install update, follow these steps: \r\n<ol>\r\n<li>Before installing patch, take a backup of the DPM database.</li>\r\n<li>Install the rollup package on the server that is running System Center 2012 - Data Protection Manager. To do this, run DataProtectionManager2012-KB2751230.exe file on the server. <br/>\r\n<br/>\r\n<b>Note </b>You might have to restart the Data Protection Manager server after you install this rollup package.</li>\r\n\r\n<li>In the DPM Administrator Console, update the protection agents. To do this, use one of the following methods.\r\n<ul>\r\n<li><b>Method 1: Update the protection agents from the DPM Administrator Console</b>\r\n<ol>\r\n<li>Open the DPM Administrator Console. </li>\r\n<li>Click the <b>Management</b> tab, and then click the <b>Agents</b> tab. </li>\r\n<li>In the <b>Protected Computer</b> list, select a computer, and then click <b>Update</b> on the <b>Action</b> pane.</li>\r\n<li>Click <b>Yes</b>, and then click <b>Update Agents</b>. <br/>\r\n<b>Note</b> Reboot might be required for Agent Upgrades. </li>\r\n</ol></li>\r\n<li><b>Method 2: Update the protection agents on the protected computers </b>\r\n<ol>\r\n<li> Obtain the update protection agent package from the \"Data Protection Manager installation location>\\DPM\\DPM\\Agents\\RA\\4.0.1920.0\" directory on the System Center 2012 - Data Protection Manager server.\r\n<ul>\r\n<li><b>For x86-based updates</b>: i386\\1033\\DPMAgentInstaller_KB2751230.exe</li>\r\n<li><b>For x64-based updates</b>: amd64\\1033\\DPMAgentInstaller_KB2751230_AMD64.exe</li>\r\n</ul>\r\nNote The DPMAgentInstaller.exe package applies to all languages.</li>\r\n<li>Run the appropriate DPMAgentInstaller.exe package on each protected computer based on the architecture of the Agent.</li>\r\n<li>Open the DPM Administrator Console on the System Center 2012 - Data Protection Manager server. </li>\r\n<li>Click the <b>Management</b> tab, and then click the <b>Agents</b> tab. </li>\r\n<li>Select the protected computers, Refresh Information, and then verify that the agent version is listed as 4.0.1920.0.</li>\r\n</ol></li>\r\n</ul></li>\r\n</ol>\r\n<b>Additional Installation</b><br/>\r\nRun the applicable <b>DPM Management Shell 2012</b> file on any computer that is used to manage the System Center 2012 - Data Protection Manager  server.\r\n<ul>\r\n<li><b>For x86-based updates</b>: i386\\PatchSelfExtractor\\DPMManagementShell2012-KB2751230-x86.exe</li>\r\n<li><b>For x64-based updates</b>: amd64\\PatchSelfExtractor\\DPMManagementShell2012-KB2751230-x64.exe</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35372",
+    "downloadPreload": true
+}

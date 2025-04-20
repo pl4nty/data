@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 (v8.x) Software Development Kit (SDK)",
+    "downloadDescription": "Contains the complete SDK for Microsoft Dynamics 365 (v8.x), Microsoft Dynamics CRM 2016 (on-premises), and the User Interface Integration (UII) SDK. You can download the latest Dynamics 365 (v9.x) SDK from here: https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-dynamics-365-sdk-v9",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamics365SDK.exe",
+            "url": "https://download.microsoft.com/download/5/e/4/5e4b801f-298f-4a57-90e2-c2b7ca994f92/MicrosoftDynamics365SDK.exe",
+            "size": "88019984",
+            "version": "8.2.1.1",
+            "datePublished": "7/15/2024 4:57:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsCRM2016UII.exe",
+            "url": "https://download.microsoft.com/download/5/e/4/5e4b801f-298f-4a57-90e2-c2b7ca994f92/MicrosoftDynamicsCRM2016UII.exe",
+            "size": "61096856",
+            "version": "8.2.1.1",
+            "datePublished": "7/15/2024 4:57:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "To download the latest Dynamics 365 (v9.x) SDK, visit: <a href=\"https://docs.microsoft.com/dynamics365/customer-engagement/developer/download-dynamics-365-sdk-v9\">Download Dynamics 365 (v9.x) Software Development Kit (SDK)</a>.\r\n<br/>\r\n<br/>\r\nUse this SDK for Dynamics 365 (v8.x) and Dynamics CRM 2016 (on-premises).    <br />\r\n            <br />For information about Dynamics 365 Operations and Dynamics 365 Financials, see:\r\n      <ul>\r\n          <li><a href=\"https://go.microsoft.com/fwlink/?linkid=832755\">Microsoft Dynamics 365 Operations developer documentation</a></li>\r\n          <li><a href=\"https://go.microsoft.com/fwlink/?linkid=832757\">Microsoft Dynamics 365 Financials developer documentation</a></li>\r\n      </ul>\r\n            The documentation contains information and resources for developers who create code-based extensions for Dynamics 365 (formerly known as Dynamics CRM).\r\n            <br />\r\n            <br />\r\n            The SDK includes an architectural overview of Dynamics 365, the entity model, security model, and web services. Sample code and walkthroughs are provided to guide you through the new features. \r\n      It also contains information for developers who customize the web client or Dynamics 365 for Microsoft Office Outlook, including scripting, integration of custom webpages, and sample code.\r\n   <br />\r\n            <br />\r\n            In addition to the documentation, this download package includes the assemblies and tools needed for development, helper code for authentication, and Microsoft Visual Studio projects for the \r\n      sample code found in the documentation.\r\n   <br />\r\n<br />\r\n            You can also download the User Interface Integration (UII) solution framework, which includes a deployment guide, development guide, and API reference. UII uses Microsoft Dynamics 365 \r\n      for the delivery of configuration data for the Integrated Agent Desktop. It includes development and runtime components. Applications built with UII can provide unified access to customer \r\n      information across different systems, and can aggregate different modes of customer interactions or channels.<br />\r\n            <br />\r\n            The UII download package also contains developer assets for Unified Service Desk 2.0, which includes a default Unified Service Desk 2.0 configuration data schema file, default style (theme), \r\n      sample panel layout, developer guide, and sample code for the custom controls available in the sample applications. For more information about Unified Service Desk 2.0, see the \r\n      <a target=\"_blank\" href=\"https://msdn.microsoft.com/en-US/library/dn864923(v=usd.2).aspx\">Unified Service Desk 2.0 Developer Guide</a>.<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.2.1.1",
+    "detailsSection_file_name": [
+        "MicrosoftDynamics365SDK.exe",
+        "MicrosoftDynamicsCRM2016UII.exe"
+    ],
+    "detailsSection_file_size": [
+        "83.9 MB",
+        "58.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visual Studio 2012, Microsoft Visual Studio 2013, Microsoft Visual Studio 2015, or Microsoft Visual Studio 2017",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "            <ol>\r\n                <li>The download is a self-extracting executable file. To start the download, click <b>Download</b>.</li>\r\n                <li>If the <b>File Download</b> dialog box appears, do one of the following:<ul>\r\n                    <li>To start the download immediately, click <b>Run</b>.</li>\r\n                    <li>To copy the download to your computer to view at a later time, click <b>Save</b>.</li>\r\n                </ul>\r\n                </li>\r\n            </ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM Developer Center",
+            "url": "https://msdn.microsoft.com/dynamics/crm/default.aspx"
+        },
+        {
+            "title": "deploying and administering Microsoft Dynamics CRM Online and Microsoft Dynamics CRM 2016",
+            "url": "https://technet.microsoft.com/library/hh699811(v=crm.8).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50032",
+    "downloadPreload": true
+}

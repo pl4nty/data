@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Transition Planning Guide for Enterprises",
+    "downloadDescription": "This document is intended to help you understand the requirements and tasks for transitioning your organization from Microsoft CTP to the new environment using the Microsoft Dynamics CRM Online transition process. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Assisted_Transition_Planning_Guide.pdf",
+            "url": "https://download.microsoft.com/download/8/6/a/86addac9-47ba-4558-9364-f594d9eb0e6b/Assisted_Transition_Planning_Guide.pdf",
+            "size": "1171833",
+            "version": "2.1",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "On July 19th, 2012 Microsoft Dynamics CRM Online on-boarded to a new administration portal and billing platform. Together the portal and billing platform are referred to as the Microsoft online services environment. This environment is designed to streamline and improve the customer experience across all Microsoft online services. It enables customers to manage their Microsoft Dynamics CRM Online and Office 365 subscriptions from one location and also delivers enhanced regulatory and industry compliance.\r\n\r\nAs an enterprise IT administrator for Microsoft Dynamics CRM Online you should understand that there are a number of tasks that need to be completed in order to achieve a smooth transition.  This document is designed to help you determine and plan the tasks necessary for your transition strategy. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1",
+    "detailsSection_file_name": [
+        "Assisted_Transition_Planning_Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For docx files, Microsoft Office Word 2003 or later versions, or a compatible viewer. For pdf files, an Adobe PDF reader is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button to start the download.</li>\r\n<li>To copy the file to your computer, click Save to save this file to disk.</li>\r\n<li>To extract the document, double-click the compressed file. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM Transition Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=275038"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36225",
+    "downloadPreload": true
+}

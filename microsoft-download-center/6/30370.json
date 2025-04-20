@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Upgrade worksheet for SharePoint 2013",
+    "downloadDescription": "Use the upgrade worksheet to plan a process that upgrades to SharePoint 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "upgrade-worksheet-sharepoint-2013.xlsx",
+            "url": "https://download.microsoft.com/download/c/3/3/c336652e-88c0-4a68-ab94-92b980f86ca1/upgrade-worksheet-sharepoint-2013.xlsx",
+            "size": "38291",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Before you upgrade to SharePoint 2013, you should record information about the SharePoint configuration that you're about to upgrade. For example, you should record the components in your environment, such as databases, services, web applications, and so on. Use the \"Upgrade worksheet\" to record this information so that you can use it as you plan and implement an upgrade.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "upgrade-worksheet-sharepoint-2013.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "37.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel 2007, Microsoft Excel 2010, Microsoft Excel 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard \r\n\r\ndisk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30370",
+    "downloadPreload": true
+}

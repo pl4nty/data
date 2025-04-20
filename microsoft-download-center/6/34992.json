@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Communications Managed API 4.0 Runtime",
+    "downloadDescription": "Unified Communications Managed API (UCMA) 4.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UcmaRuntimeSetup.exe",
+            "url": "https://download.microsoft.com/download/2/c/4/2c47a5c1-a1f3-4843-b9fe-84c0032c61ec/UcmaRuntimeSetup.exe",
+            "size": "251773456",
+            "version": "8308.0",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "UCMA provides a flexible managed-code platform for unified communication and collaboration that allows developers to implement communication- and collaboration-enabled middle tier services which take advantage of the fact that you have made investment in Lync Server. It allows you to enable same/similar or better UC scenarios as we could do.\r\n<br/><br/>\r\nAn administrator who is preparing to install a third-party UCMA-enabled application on a deployment computer must download and install UcmaRuntimeSetup.exe. Installing UCMA 4.0 Runtime provides all of the UCMA-related functionality needed by a UCMA-enabled application.\r\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8308.0",
+    "detailsSection_file_name": [
+        "UcmaRuntimeSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "240.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><b>UCMA 4.0 Runtime Requirements</b><br/><br/>\r\nThe following are the hardware and software requirements for installing UCMA 4.0 Runtime.\r\n<ul>\r\n<li>The target platform must be a 64-bit computer.</li>\r\n<li>Microsoft .NET Framework 4.5 or later service packs.</li>\r\n<ul>\r\n<li>Windows Server 2008 R2 SP1 and Windows 7 SP1: UcmaRuntimeSetup.exe requires Microsoft .NET Framework 4.5 to be installed before launching UCMARuntimeSetup.exe.</li>\r\n<li>Windows Server 2012 and Windows 8 comes with Microsoft .NET Framework 4.5.</li>\r\n</ul>\r\n<li>Antivirus software </li>\r\n<ul>\r\n<li>Antivirus software is not recommended for computers running Microsoft Lync Server 2010 or Microsoft Lync Server 2013. For optimal performance for a server that must run antivirus software, include all Communications Server/Lync Server computers in the antivirus software's exception list. </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>Installing UCMA 4.0 Runtime and Microsoft Lync Server 2013 Components</b>\r\n<br/><br/>\r\n<ul>\r\n<b>Installing UCMA 4.0 Runtime</b>\r\n<br/><br/>\r\nYou must have elevated permissions to install UCMA 4.0 Runtime.\r\n<br/><br/>\r\n<ul>\r\n<b>To install UCMA 4.0 Runtime</b>\r\n<ol>\r\n<li>Download UcmaRuntimeSetup.exe.</li>\r\n<li>Launch UcmaRuntimeSetup.exe and follow the screens to accept the End-User License Agreement (EULA). The setup wizard will install all the necessary components.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li>\r\n</ol>\r\n<b>Note</b>: UcmaRuntimeSetup.exe installs the English versions of the Speech Recognition and Text-to-Speech engines. The final screen of the installer provides a link that can be used to download additional engines for other languages.\r\n<br/><br/>\r\n<b>Note</b>: Additional steps are required to install Microsoft Lync Server 2013, Core Components (OCSCore.msi). These steps are described later in this topic.\r\n</ul>\r\n<br/><br/>\r\n<b>UCMA 4.0 Runtime Components</b>\r\n<br/><br/>\r\nUcmaRuntimeSetup.exe installs the following components.\r\n<ul>\r\n<li>o Microsoft VC ++ 11 Redistributable -x64 package</li>\r\n<ul>\r\n<li>Microsoft Unified Communications Managed API 4.0 Runtime is built on Microsoft .NET Framework 4.5 and Visual C++ 11 Redistributable Package (x64).</li>\r\n</ul>\r\n<li>Microsoft Server Speech Platform Runtime (x64) package</li>\r\n<li>Microsoft Server Speech Recognition Language - TELE (en-US)</li>\r\n<li>Microsoft Server Speech Text To Speech Voice (en-US, Helen)</li>\r\n<li>Microsoft Server Speech Platform VXML Runtime (x64)</li>\r\n<li>Microsoft Lync Server 2013, Bootstrapper Prerequisites Installer Package</li>\r\n<ul>\r\n<li>Copies Lync Server 2013 Core Components MSI (OCSCore.msi) and its prerequisites. OCSCore.msi enables running Communications Server -specific PowerShell cmdlets from the local computer. OCSCore.msi also enables the installation of the local Central Management Store replica, which is required by auto-provisioned UCMA applications. </li>\r\n</ul>\r\n</ul>\r\n<b>Note</b>: Side-by-side installations of UCMA 3.0 and UCMA 4.0 are not supported.\r\n<br/><br/>\r\n<b>Installing Microsoft Lync Server 2013 Components</b>\r\n<br/><br/>\r\nOCSCore.msi must be installed either by using Bootstrapper Prerequisites Installer Package installed by UcmaRuntimeSetup.exe (recommended) or by installing the Admin Tools available on the Lync Server DVD.\r\n<br/><br/>\r\n<ul>\r\n<b>To install Microsoft Lync Server 2013 Core Components</b>\r\n<ol>\r\n<li>Confirm that Microsoft PowerShell 3.0 is installed on the deployment computer.</li>\r\n<ol>\r\n<li>Windows 8 and Windows Server 2012</li>\r\n<ul>\r\n<li>This operating system version comes with PowerShell 3.0</li>\r\n</ul>\r\n<li>Windows Server 2008 R2 SP1 and Windows 7 SP1</li>\r\n<ul>\r\n<li>Download <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=266540\">Windows Management Framework 3.0</A> .</li>\r\n</ul>\r\n</ol>\r\n<li>Find OCSCore.msi by navigating to %Installation drive%\\ProgramData\\Microsoft\\Lync Server\\Deployment\\cache\\[Build version]\\Setup\\.</li>\r\n<br/><br/>\r\n<b>Note</b>: By default, the ProgramData folder is hidden, so it might not appear in Windows Explorer.\r\n<br/><br/>\r\n<li>Launch OCSCore.msi and use the default settings in the wizard.</li>\r\n</ol>\r\nFor information about activating a UCMA application, see \u201cActivating a UCMA 4.0 Core Trusted Application\u201d in the Unified Managed API 4.0 Core SDK documentation.\r\n</ul>\r\n<br/><br/>\r\n<b>Uninstalling UCMA 4.0 Runtime and Bootstrapper Prerequisites Installer</b>\r\n<br/><br/>\r\nWhen a customer application is uninstalled, the application uninstall procedure must not automatically uninstall any of the required components (such as .NET Framework 4.5, Visual C++ 11 Redistributable Package, or UCMA 4.0 Runtime), because other applications might require them. An administrator who has ensured that there are no dependencies can follow the instructions in the following procedure to uninstall UCMA 4.0 Runtime.\r\n<br/><br/>\r\n<ul>\r\n<b>To uninstall UCMA 4.0 Runtime and Bootstrapper Prerequisites Installer</b>\r\n<ol>\r\n<li>Navigate to Programs and Features in Control Panel. </li>\r\n<li>On the right-click menu for the <b>Microsoft Unified Communications Managed API 4.0, Runtime</b> entry, select Uninstall.  </li>\r\n<li>A wizard titled \"Unified Communications Managed API 4.0, Runtime Uninstallation\" appears. Follow the instructions on the screen to complete uninstallation.</li>\r\n<li>On the right-click menu for the Lync Server 2013, Bootstrapper Prerequisites Installer Package entry, select Uninstall to remove the installer package.</li>\r\n</ol>\r\n<b>Note</b>: Uninstalling the Bootstrapper Prerequisites Installer Package does not automatically uninstall software components that are individually installed by the user, such as Lync Server 2013, Core Components (OCSCore.msi) and others.\r\n<br/><br/>\r\n</ul>\r\n</ul>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34992",
+    "downloadPreload": true
+}

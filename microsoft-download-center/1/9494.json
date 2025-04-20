@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows Server 2008 R2 Distributed Scan Management Active Directory Schema update",
+    "downloadDescription": "This download contains Active Directory schema updates to enable Distributed Scan Management in a Windows Server 2003 or Windows Server 2008 environment. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DistributedScanManagement.zip",
+            "url": "https://download.microsoft.com/download/0/2/6/0262162f-2437-4777-8766-993d7af25aa9/DistributedScanManagement.zip",
+            "size": "1188",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains Active Directory schema updates to enable Distributed Scan Management in a Windows Server 2003 or Windows Server 2008 environment. \r\nIt enables creation of scan process objects within active directory to support Windows Server 2008 R2 Distributed Scan Servers in a Windows Server 2003 or Windows Server 2008 environment. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DistributedScanManagement.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003, Windows Server 2003 R2 and Windows Server 2008 Operating system. (Both x64 and x86) ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Make sure you are member of \"schema admin\" or \"enterprise admin\" </li>\r\n<li>Download the ZIP file by clicking on the Download button above. </li>\r\n<li>Extract the ldf file module to a folder on your local machine. </li>\r\n<li>Open a command prompt. </li>\r\n<li>Import the file using the following command line (replace \u201cDomainName\u201d with your fully qualitified domain path) \r\n<ul><li>ldifde /i /v /f DistributedScanManagement.ldf /c DC=X \"DC=DomainName,DC=com\" </li></ul> </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9494",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2013 R2 Large Scale hosting on Windows Azure White Paper",
+    "downloadDescription": "\u200b\u200bThis white paper describes in detail how to deploy Microsoft Dynamics NAV 2013 R2 on Windows Azure so you can serve a very large number of customers with high availability\u200b.\u200b\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftDynamicsNAV2013R2_LargeScaleHostingOnWindowsAzure.pdf",
+            "url": "https://download.microsoft.com/download/4/9/5/495eb7c2-a746-451b-931e-381bb914fb33/MicrosoftDynamicsNAV2013R2_LargeScaleHostingOnWindowsAzure.pdf",
+            "size": "2103531",
+            "version": "NA.",
+            "datePublished": "4/15/2024 4:24:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\n   \u200bThe document is intended to be read by those partners who intend to make the investment that is necessary to provide a resilient Managed Service. As we see it, these partners include:<ul class=\"mbsElement-p\" style=\"line-height:16px;font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;\"><li>Hosters who support many Microsoft Dynamics NAV partners.</li><li>Microsoft Dynamics NAV partners who have a vertical solution and serve a significant number of individual clients with the same solution.</li><li>Business Process Outsourcers.\u200b</li></ul>*Download the white paper for more information. \u200b\u200b\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsNAV2013R2_LargeScaleHostingOnWindowsAzure.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101775",
+    "downloadPreload": true
+}

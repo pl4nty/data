@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "GeNeVA - Datasets",
+    "downloadDescription": "Dataset files used for the Generative Neural Visual Artist (GeNeVA) task in https://arxiv.org/abs/1811.09845",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GeNeVA-v1.zip",
+            "url": "https://download.microsoft.com/download/6/d/0/6d074c80-78c0-4976-ab33-880bfa571f3c/GeNeVA-v1.zip",
+            "size": "9640412263",
+            "version": "June 2019",
+            "datePublished": "7/15/2024 3:07:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dataset files used for the Generative Neural Visual Artist (GeNeVA) task in https://arxiv.org/abs/1811.09845. Scripts to generate the HDF5 files from this data are available at http://github.com/Maluuba/GeNeVA_datasets/\r\nhttps://www.microsoft.com/en-us/research/project/generative-neural-visual-artist-geneva/",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2019",
+    "detailsSection_file_name": [
+        "GeNeVA-v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL> ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58387",
+    "downloadPreload": true
+}

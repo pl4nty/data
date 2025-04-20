@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 SP4 Report Builder",
+    "downloadDescription": "Report Builder provides a productive report-authoring environment for IT professionals and power users. It supports the full capabilities of SQL Server 2012 Reporting Services. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReportBuilder3.msi",
+            "url": "https://download.microsoft.com/download/3/2/6/32693ec2-6fb6-4549-b4bf-74693a1e47e0/ReportBuilder3.msi",
+            "size": "26284032",
+            "version": "11.0.7001.0",
+            "datePublished": "7/15/2024 4:51:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Report Builder provides a productive report-authoring environment for IT professionals and power users. The download provides a stand-alone installer for Report Builder.<br />\n<br />\nReport Builder provides data visualizations that include charts, maps, sparklines, and data bars that can help produce new insights well beyond what can be achieved with standard tables and charts. Use Report Builder to create reports and shared datasets. Publish report parts, and then browse the Report Part Gallery to reuse existing report parts as building blocks for creating new reports quickly with a \u201cgrab and go\u201d experience. \n<br />\n<br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.7001.0",
+    "detailsSection_file_name": [
+        "ReportBuilder3.msi"
+    ],
+    "detailsSection_file_size": [
+        "25.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Note:</b> This component also requires <b><a href=\"http://go.microsoft.com/fwlink/?LinkID=186791\">Microsoft .NET Framework 4.0</a></b>.<br />\n<br />\n<UL><LI>80 MB of available hard disk space</LI></UL>\n<UL><LI>512 MB of RAM</LI></UL>\n<ul>\n<br />\n<li> Microsoft\u00ae SQL Server\u00ae Report Builder for Microsoft\u00ae SQL Server\u00ae 2012 SP4. You can use the Report Builder standalone version or the ClickOnce version of Report Builder installed with Reporting Services. </li> \n<li> Access to an instance of the Microsoft\u00ae SQL Server\u00ae 2012 SP4 Database Engine.</li>\n</ul>\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Microsoft\u00ae SQL Server\u00ae Report Builder for Microsoft\u00ae SQL Server\u00ae 2012 SP4 should be installed on the client machine for report authoring.<br />\n<br />\nStep 1: Install Microsoft .NET Framework version 4.0<br />\n<br />\nStep 2: Install Microsoft\u00ae SQL Server\u00ae Report Builder for Microsoft\u00ae SQL Server\u00ae 2012 SP4.<br />\n<br />\nMicrosoft\u00ae SQL Server\u00ae Report Builder for Microsoft\u00ae SQL Server\u00ae 2012 SP4 has two different methods to complete the installation process:\n<ul>\n<li> Attended Installation \u2013 an interactive user interface will guide you through the set-up process and obtain all of the information and consent required to complete the installation. This includes the displaying, acknowledgement, and archiving of the applicable SQL Server license terms.</li>\n<br />\n    <li> Un-attend Installation \u2013 this is a Windows command line set-up process that does not have an interactive user interface to guide you through the set-up process. \n    In this case, you will be required to enter a parameter during installation that indicates your acceptance of the license terms. </li> <br />\n<br /></ul>\n    <br /><br />",
+    "additionalInformationSection": "<ul>\n  <li>If you have questions about Report Builder, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=82743\">SQL Server Reporting Services Forum on MSDN</a>.</li><br /><br />\n  <li>Help improve Report Builder by submitting bugs to the <a href=\"http://go.microsoft.com/fwlink/?LinkID=223170\"> Connect Feedback Center</a>.</li>\n</ul>\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56043",
+    "downloadPreload": true
+}

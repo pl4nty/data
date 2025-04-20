@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk 2013 R2- UDDI Security Fix KB3087119",
+    "downloadDescription": "BizTalk 2013 R2- UDDI Security Fix KB3087119",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UDDI2013R2.exe",
+            "url": "https://download.microsoft.com/download/3/4/1/341d6676-b332-4866-accc-260e061e4759/UDDI2013R2.exe",
+            "size": "221704",
+            "version": " 1.1.0",
+            "datePublished": "3/13/2025 3:56:22 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk 2013 R2- UDDI Security Fix KB3087119",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3087119",
+        "name": "KB3087119"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": " 1.1.0",
+    "detailsSection_file_name": [
+        "UDDI2013R2.exe"
+    ],
+    "detailsSection_file_size": [
+        "216.5 KB"
+    ],
+    "detailsSection_file_date": "3/13/2025",
+    "systemRequirementsSection": "BizTalk 2013 R2. UDDI 3.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012 Essentials"
+    ],
+    "installInstructionSection": "Download and run.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48588",
+    "downloadPreload": true
+}

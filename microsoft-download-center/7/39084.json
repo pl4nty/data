@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Network Planning, Monitoring, and Troubleshooting with Lync Server",
+    "downloadDescription": "Updated June 2015 to replace Call Quality Methodology and Key Health Indicators information with links to the new published content. Lync Server is a real-time unified communications application that relies on an optimized network infrastructure to deliver high-quality media sessions. This guide provides a model for managing the network infrastructure for Lync Server 2010 and Lync Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Server_Networking_Guide_v2.3.zip",
+            "url": "https://download.microsoft.com/download/f/0/c/f0c2688a-2c1c-4005-9df5-0645a9f273f1/Lync_Server_Networking_Guide_v2.3.zip",
+            "size": "2833191",
+            "version": "June '15 Update",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\r\nLync Server communications software is a real-time unified communications application that enables peer-to-peer audio and video (A/V) calling, conferencing, and collaboration and relies on an optimized, reliable network infrastructure to deliver high-quality media sessions between clients. This guide provides a model for managing the network infrastructure for Lync Server 2010 and Lync Server 2013, consisting of three phases\u2014planning, monitoring, and troubleshooting. These phases can apply to new Lync Server deployments or to existing deployments. In new Lync Server deployments, your organization must begin from the planning phase. In existing deployments, your organization can start at the planning phase for major upgrades or for integrating new sites into the Lync Server ecosystem. Organizations with existing deployments can also begin from the monitoring or troubleshooting phases, if you are trying to achieve a healthy state.\r\n<br/>\r\n<br/>\r\n<b>Please note that the CQM Scorecard, Call Quality Methodology and KHI downloads are now available here:</b>\r\n<ul>\r\n<li>CQM Scorecard and Call Quality Methodology Download is <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=615208\">here</a>.</li>\r\n<li>Key Health Indicators for Lync Server 2013 AND Skype for Business Server 2015 are <a href=\"http://go.microsoft.com/fwlink/?LinkId=534843\">here</a>.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June '15 Update",
+    "detailsSection_file_name": [
+        "Lync_Server_Networking_Guide_v2.3.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download is a .zip file containing a Word document and other support files referenced within the document.\r\n<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync 2010 and 2013 Bandwidth Calculator",
+            "url": "http://blogs.technet.com/b/fmustafa/archive/2013/05/14/lync-2010-and-2013-bandwidth-calculator.aspx"
+        },
+        {
+            "title": "notes from the Field: Lync Server 2013 and Active Monitoring with System Center Operations Manager",
+            "url": "http://blogs.technet.com/b/nexthop/archive/2013/05/17/notes-from-the-field-lync-server-2013-and-active-monitoring-with-system-center-operations-manager.aspx"
+        },
+        {
+            "title": "download Microsoft Lync Server 2013 Evaluation",
+            "url": "http://technet.microsoft.com/en-us/evalcenter/hh973393.aspx"
+        },
+        {
+            "title": "microsoft Lync Server 2013",
+            "url": "http://technet.microsoft.com/en-us/library/gg398616.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39084",
+    "downloadPreload": true
+}

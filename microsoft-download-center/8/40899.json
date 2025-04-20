@@ -1,0 +1,163 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Help program (WinHlp32.exe) for Windows 8.1",
+    "downloadDescription": "WinHlp32.exe is required to display 32-bit Help files that have the \".hlp\" file name extension.  To view .hlp files on Windows 8.1, you need to install this application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB917607-x64.msu",
+            "url": "https://download.microsoft.com/download/a/c/9/ac90b7c6-2787-4d97-8a54-b9a1f8c69f81/Windows8.1-KB917607-x64.msu",
+            "size": "942031",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB917607-x86.msu",
+            "url": "https://download.microsoft.com/download/a/c/9/ac90b7c6-2787-4d97-8a54-b9a1f8c69f81/Windows8.1-KB917607-x86.msu",
+            "size": "742402",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Windows Help (WinHlp32.exe) is a Help program that has been included with Microsoft Windows versions starting with the Microsoft Windows 3.1 operating system. However, the Windows Help program has not had a major update for many releases and no longer meets Microsoft's standards. Therefore, starting with the release of Windows Vista and continuing in Windows 8.1, the Windows Help program will not ship as a feature of Windows. If you want to view 32-bit .hlp files, you must download and install the program (WinHlp32.exe) from the Microsoft Download Center.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB917607",
+        "name": "KB917607"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows8.1-KB917607-x64.msu",
+        "Windows8.1-KB917607-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "920.0 KB",
+        "725.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows Help program is available for Windows 8.1 only.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Install Windows Help by clicking the <b>Download</b> button above.<br /> 2. Click <b>Run</b> and then follow the instructions on the screen.",
+    "additionalInformationSection": "For additional information about this download, including known issues and development recommendations, please refer to the Knowledge Base article, <a href='http://support.microsoft.com/kb/917607'>\"Windows Help program (WinHlp32.exe) is no longer included with Windows\"</a>.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "how to determine whether a computer is running a 32-bit version or a 64-bit version of the Windows operating system",
+            "url": "http://support.microsoft.com/kb/827218"
+        },
+        {
+            "title": "windows Help program (WinHlp32.exe) is no longer included with Windows",
+            "url": "http://support.microsoft.com/kb/917607"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40899",
+    "downloadPreload": true
+}

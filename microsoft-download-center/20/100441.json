@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "DTrace On Windows",
+    "downloadDescription": "DTrace is a comprehensive dynamic tracing framework for troubleshooting kernel and application problems on production systems in real time. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DTrace.arm64.msi",
+            "url": "https://download.microsoft.com/download/7/9/d/79d6b79a-5836-4118-a9b7-60bc77c97bf7/DTrace.arm64.msi",
+            "size": "3301376",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DTrace.amd64.msi",
+            "url": "https://download.microsoft.com/download/7/9/d/79d6b79a-5836-4118-a9b7-60bc77c97bf7/DTrace.amd64.msi",
+            "size": "2441216",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:20:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "https://docs.microsoft.com/windows-hardware/drivers/devtest/dtrace",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "DTrace.arm64.msi",
+        "DTrace.amd64.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 build 19040 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Refer to this link for setup instructions: \r\n\r\nhttps://docs.microsoft.com/windows-hardware/drivers/devtest/dtrace\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "dTrace on MSDN",
+            "url": "https://docs.microsoft.com/windows-hardware/drivers/devtest/dtrace"
+        },
+        {
+            "title": "dTrace on GitHub",
+            "url": "https://github.com/microsoft/DTrace-on-Windows"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100441",
+    "downloadPreload": true
+}

@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Virtual PC for Mac Version 6.1.1 Update",
+    "downloadDescription": "With Microsoft\u00ae Virtual PC for Mac version 6.1.1, you can run programs for Microsoft Windows\u00ae on your Macintosh more productively than ever. This update addresses security issues and bugs related to running upcoming Windows XP Professional service packs.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VirtualPC611UpdateEN-DE-FR.bin",
+            "url": "https://download.microsoft.com/download/2/a/0/2a032712-8501-4049-9be2-29e1fcb21df1/VirtualPC611UpdateEN-DE-FR.bin",
+            "size": "15529088",
+            "version": "6.1.1",
+            "datePublished": "7/15/2024 3:09:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VirtualPC611UpdateEN-DE-FR.hqx",
+            "url": "https://download.microsoft.com/download/2/a/0/2a032712-8501-4049-9be2-29e1fcb21df1/VirtualPC611UpdateEN-DE-FR.hqx",
+            "size": "20682715",
+            "version": "6.1.1",
+            "datePublished": "7/15/2024 3:09:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "With Microsoft\u00ae Virtual PC for Mac version 6.1.1, you can run programs for Microsoft Windows\u00ae on your Macintosh more productively than ever. This update addresses <a href=\"http://www.microsoft.com/technet/security/bulletin/MS04-005.mspx\" target=\"_blank\">security issues</a> and bugs related to running upcoming Windows XP Professional service packs.<br /> \n<B>Applies to:</B> Virtual PC for Mac version 6.0, 6.0.1, 6.0.2, or 6.1 in German, English, French, and Japanese",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS04-005",
+        "name": "MS04-005"
+    },
+    "detailsSection_file_version": "6.1.1",
+    "detailsSection_file_name": [
+        "VirtualPC611UpdateEN-DE-FR.bin",
+        "VirtualPC611UpdateEN-DE-FR.hqx"
+    ],
+    "detailsSection_file_size": [
+        "14.8 MB",
+        "19.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Before you can install this Virtual PC for Mac version 6.1.1 update, one or more of the following programs must be installed on your computer: <br/>\nVirtual PC for Mac version 6.0 through 6.1. <br/><br/>\nIn addition, your computer must meet the following minimum requirements: <br/>\n<B>Processor:</B> Macintosh PowerPC, native G3 or G4 machines <br/>\n<B>Operating system:</B> Mac OS 9.2.2 or Mac OS X version 10.1.5 or later<br/>\n<B>Memory:</B> 192 MB of RAM<br/>\n<B>Hard disk:</B> 60 MB of available hard disk space is temporarily required to complete installation; after installation, the program requires 30 MB of hard disk space.<br/>\n<b>Programs:</b> Virtual PC for Mac version 6.0 or later must be installed before you download this update.<br/>\n<B>Internet access:</B> Internet connection through either an Internet service provider (ISP) or a network is required. Internet access might require a fee to an ISP; local or long-distance telephone charges might also apply.<br/><br/>\n<B>Tip</B>   If you're not sure whether your computer meets these requirements, see the Apple System Profiler program included with the Macintosh operating system. If you are using Mac OS 9.x, you can start Apple System Profiler by clicking <B>Apple System Profiler</B> on the <B>Apple</B> menu. If you are using Mac OS X, you can start Apple System Profiler by double-clicking its program file in the Applications/Utilities folder on your hard disk.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Macintosh"
+    ],
+    "installInstructionSection": "<b>Before you install this download:</b>\n<ul><li>Quit any programs that are running, including virus-protection programs.</li> \n<li>If you are using Mac OS 8.6 to 9.2.2, make sure Aladdin Systems StuffIt Expander   version 5.5 or later is installed on your computer. If an earlier version of StuffIt Expander is installed on your computer, you might not be able to install this download.</li></ul>\n<b>To install this download:</b><ol><li>Follow the instructions on the screen to save the file to your hard disk.\n<br/>If you are using Internet Explorer, the Download Manager saves the file to the desktop unless you have specified a different download folder in the <b>Preferences</b> dialog box (<b>Download Options</b> pane).</li>\n<li>On your hard disk, double-click the file that you downloaded to expand it.\n<br/>Depending on the Web browser that you are currently using, this step might be performed for you automatically.</li>\n<li>Double-click the <b>Virtual PC 6.1.1 Update EN-DE-FR</b> to start the setup program.</li>\n</ol> \n<b>To remove this download:</b><br/>\nThis Virtual PC for Mac version 6.1.1 update does not include an uninstall feature.",
+    "additionalInformationSection": "For more information about Virtual PC for Mac version 6.1.1, see the online Help or Read Me file available on the Help menu in Virtual PC for Mac version 6.1.1.<br>\n<br>\n<B>Note:</B> Two different file types are available for this download, MacBinary (.bin) or BinHex (.hqx). A .bin file is typically smaller than an .hqx file, but is less compatible with earlier Macintosh systems, such as Mac OS 7.0, 8.0, and 8.5. An .hqx file is typically larger, but is more compatible with earlier systems.",
+    "relatedResourcesSection": [
+        {
+            "title": "more information on this Security Bulletin",
+            "url": "http://www.microsoft.com/technet/security/bulletin/MS04-005.mspx"
+        },
+        {
+            "title": "mactopia Web Site",
+            "url": "http://www.microsoft.com/mac/"
+        },
+        {
+            "title": "stay Current: Subscribe to the Mactopia Newsletter",
+            "url": "http://www.microsoft.com/mac/resources/resources.aspx?pid=newsletter"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "596",
+    "downloadPreload": true
+}

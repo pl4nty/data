@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Steve Smith on the Transition to Entrepeneur",
+    "downloadDescription": "Steven Smith talk with Carl and Mark Dunn about changing careers from software developer to small business owner. All three have made the jump and share their experiences.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080815SSmith.zip",
+            "url": "https://download.microsoft.com/download/c/5/8/c5844e16-f3f4-400d-a79f-03301cccf480/20080815SSmith.zip",
+            "size": "33007328",
+            "version": "1.0",
+            "datePublished": "12/15/2023 3:09:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Steven Smith is president of AspAlliance.com and AspAdvice.com. He is a Microsoft Regional Director, an ASP.NET MVP, and an ASPInsider Board Member. He is an INETA Speaker Bureau member, and author of two books on ASP.NET. Steve is also an Army Reserve officer, and spent most of 2004 in Iraq in support of Operation Iraqi Freedom.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080815SSmith.zip"
+    ],
+    "detailsSection_file_size": [
+        "31.5 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16794",
+    "downloadPreload": true
+}

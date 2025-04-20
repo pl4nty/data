@@ -1,0 +1,218 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Access 2016 Runtime",
+    "downloadDescription": "The Microsoft Access 2016 Runtime enables you to distribute Access 2016 applications to users who do not have the full version of Access 2016 installed on their computers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "accessruntime_4288-1001_x64_en-us.exe",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd20ef9-a945-4768-aeb0-617bcea2214a/accessruntime_4288-1001_x64_en-us.exe",
+            "size": "330879104",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:05:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "accessruntime_4288-1001_x86_en-us.exe",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd20ef9-a945-4768-aeb0-617bcea2214a/accessruntime_4288-1001_x86_en-us.exe",
+            "size": "247976464",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:05:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Microsoft Access 2016 provides a rich platform for developing database management solutions with easy-to-use customization tools. If no end-user customization is required (including report modifications), you can choose to distribute those Access 2016 solutions so that they run without requiring a full installation of Access 2016. To do so, you must package and distribute your application with the Access 2016 Runtime. \r\n <br/><br/>\r\nThe Access 2016 Runtime is similar to previous runtimes in that all design-related UI is either removed or disabled. \r\n <br/><br/>\r\nYou do not need to buy any special product in order to redistribute the Access 2016 Runtime. You can freely redistribute it or point users to this download. \r\n <br/><br/>\r\nWeb based Apps for SharePoint that are built with Access 2016 do not require a runtime - only a supported web browser is required.\r\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "accessruntime_4288-1001_x64_en-us.exe",
+        "accessruntime_4288-1001_x86_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "315.6 MB",
+        "236.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"http://products.office.com/en-US/office-system-requirements\">System requirements for Office</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To install this download: \r\n<br/>\r\n1. Download the file by clicking Download and saving the file to your computer. Choose the version (x86 or x64) that matches the target Office installation.<br/>\r\n2. Double-click the AccessRuntime.exe file on your computer to start the Setup program.<br/> \r\n3. Follow the instructions on the screen to complete the installation. <br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Access",
+            "url": "http://office.microsoft.com/en-us/access/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50040",
+    "downloadPreload": true
+}

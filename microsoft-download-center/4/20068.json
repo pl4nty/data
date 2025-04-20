@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 2000 Registry Repair Utility",
+    "downloadDescription": "Windows 2000 Registry Repair Utility can help to repair some types of registry corruptions",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ChkReg.EXE",
+            "url": "https://download.microsoft.com/download/8/4/f/84f148fc-f639-466b-bb2a-b58cb1c99342/ChkReg.EXE",
+            "size": "95232",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Registry Corruption in Windows 2000 can prevent your system from booting. The Windows 2000 Registry Repair Utility is a tool that can help to recover a Windows 2000 system from registry corruption. This utility can be downloaded on to floppy disks and then run on the system with the corrupted registry. Six floppy disks are required for downloading this utility. The utility will attempt to repair the corrupted registry and allow your machine to boot again.\n\n<B>Note</B> Depending on the type of registry corruption that has occurred, running this utility could result in some data loss from the registry. Also, this utility may be unable to repair some types of registry corruptions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ChkReg.EXE"
+    ],
+    "detailsSection_file_size": [
+        "93.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP and Windows 2000",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3"
+    ],
+    "installInstructionSection": "Before you download this tool, you will need to download the Windows XP Professional Setup Boot Disks: Windows XP Professional Utility: Setup Disks for Floppy Boot Install\r\n This will require six floppy disks. Be sure to label the disks in order in which you use them for the download. You will need the disk numbers later.\r\n\r\n\r\nNext, download the Windows 2000 Registry Repair Utility by clicking on the link on this page. Clicking on the link will launch an installer that will guide you through the download. You will be asked to insert Disk No. 6 of the Windows XP Setup Boot Disks into your floppy drive, and run the Windows 2000 Registry Repair Utility installer, which will write new files to the floppy disk.\r\n\r\n\r\nNext, insert Windows XP Setup Boot Disk No. 1 into the floppy drive of the machine with the corrupted registry and then boot the system with Disk No. 1 inserted into the floppy drive.\r\n\r\n\r\nThe system will boot into the floppy disk. Insert the other floppy disks as prompted by the system. You will eventually see a screen that gives you a choice of either installing Windows XP or repairing the existing installation. Select the Repair option.\r\n\r\n\r\nOnce you select the Repair option, the Windows 2000 Registry Repair Utility will attempt to repair the corrupted registry and will display whether or not the registry repair was successful.\r\n\r\n\r\nIf the registry repair was successful, you can remove the floppy disk from your drive and boot the system as usual. If the repair failed, you will need to call Microsoft Product Support Services for further assistance.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows XP Professional Utility: Setup Disks for Floppy Boot Install",
+            "url": "http://go.microsoft.com/?linkid=664683"
+        },
+        {
+            "title": "windows Home Page",
+            "url": "http://go.microsoft.com/?linkid=664684"
+        },
+        {
+            "title": "windows Server 2003 Trial Software",
+            "url": "http://go.microsoft.com/?linkid=664685"
+        },
+        {
+            "title": "become a Microsoft Certified Desktop Support Technician",
+            "url": "http://go.microsoft.com/?linkid=889752"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20068",
+    "downloadPreload": true
+}

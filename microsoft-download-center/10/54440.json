@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix (KB3199763) for MIcrosoft AppFabric v1.1 for Windows Server",
+    "downloadDescription": "Hotfix (KB3199763) for MIcrosoft AppFabric v1.1 for Windows Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppFabric-KB3199763-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/c/a/7/ca755941-71b8-4faa-b4ef-73e477152b4b/AppFabric-KB3199763-x64-ENU.exe",
+            "size": "1811136",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:36:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Hotfix (KB3199763) contains a number of bug fixes for Microsfot AppFabric 1.1 for Windows Server.<BR></BR>\r\nThese bug fixes are for the hosting services provided in AppFabric 1.1.<BR></BR>\r\nPlease refer to the Knowledge Base article for additional details on the fixes included in this update: <A href=\"http://www.support.microsoft.com/kb/3199763\">KB3199763</A>.<BR></BR>\r\n\r\nThis Cumulative Update includes all features and bug fixes that were included in previous Cumulative Updates for AppFabric 1.1 for Windows Server. \r\n<UL>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/3092423\">3042099</A>: Cumulative Update 7 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/3042099\">3042099</A>: Cumulative Update 6 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2932678\">2932678</A>: Cumulative Update 5 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2800726\">2800726</A>: Cumulative Update 4 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2787717\">2787717</A>: Cumulative Update 3 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2716015\">2716015</A>: Cumulative Update 2 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n<LI><A href=\"http://www.support.microsoft.com/kb/2671763\">2671763</A>: Cumulative Update 1 for Microsoft AppFabric 1.1 for Windows Server</LI>\r\n</UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "AppFabric-KB3199763-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>Supported Operating Systems:</B><BR></BR>\r\nWindows Vista Service Pack 2, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2<BR></BR><BR></BR>\r\nAppFabric can be installed on the following operating systems:\r\n<UL>\r\n<LI>Windows Server 2012 R2</LI>\r\n<LI>Windows Server 2012</LI>\r\n<LI>Windows Server 2008 R2</LI>\r\n<LI>Windows Server 2008 Service Pack 2</LI>\r\n</UL><BR></BR>\r\nAppFabric can be installed for development and testing on the following operating systems:\r\n<UL><LI>Windows 8 </LI>\r\n<LI>Windows 7 </LI>\r\n<LI>Windows Vista Service Pack 2</LI>\r\n</UL><BR></BR>\r\n<B>Supported Architectures:</B>\r\n<UL><LI>32-bit (x86)</LI>\r\n<LI>64-bit (x64)</LI>\r\n</UL><BR></BR>\r\n<B>Software Requirements:</B>\r\n<UL><LI>To apply this Cumulative Update package, AppFabric 1.1 for Windows Server must already be installed on the computer. </LI>\r\n<LI>Additionally, you must have the Microsoft .NET Framework 4.5 installed.</LI>\r\n</UL><BR></BR>\r\n<B>Privilege Requirements:</B>\r\n<UL><LI>Before running the executable, you must have administrative privilege on the computer where you are installing the software. </LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<B>To install the update for AppFabric Hotfix (KB3199763): </B><BR></BR><BR></BR>\r\n<UL>\r\n<LI>Click the Download button on this page to start the download.</LI>\r\n<LI>Alternatively, you can click Save to download the .exe installer file to your computer. Then, navigate to the location at which you saved the .exe file, right-click on it and select 'Run as Administrator', click on 'Yes' when prompted and follow the instructions shown in the installer.</LI>\r\n</UL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54440",
+    "downloadPreload": true
+}

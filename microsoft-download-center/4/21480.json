@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Visio shapes for SharePoint Server, Project Server, Search Server, and Office posters",
+    "downloadDescription": "Visio shapes to use to create models of server deployment environments. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ITPro_PosterStencils.zip",
+            "url": "https://download.microsoft.com/download/a/6/1/a61f6156-91d0-4944-a78c-c7851d3241f9/ITPro_PosterStencils.zip",
+            "size": "1060013",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download this zip file of Microsoft Visio stencils to create your own diagrams for models of server deployments. For examples of how the IT pro content publishing team for Microsoft Office 2010, Microsoft SharePoint Server 2010, Microsoft Project Server 2010, Microsoft Search Server 2010, and Microsoft SharePoint Foundation used these shapes, see these pages:\r\n<ul>\r\n<li><a href=\"http://technet.microsoft.com/en-us/library/ee683866(office.14).aspx\">Office 2010 technical diagrams</a></li>\r\n<li><a href=\"http://technet.microsoft.com/en-us/library/cc263199(office.14).aspx\">SharePoint Server technical diagrams</a></li>\r\n<li><a href=\"http://technet.microsoft.com/en-us/library/cc287835(office.14).aspx\">SharePoint Foundation technical diagrams</a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ITPro_PosterStencils.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use these stencils, you must have one of the following: \r\n<ul>\r\n<li>Microsoft Office Visio Standard 2003</li>\r\n<li>Visio Professional 2003</li>\r\n<li>Office Visio 2007</li>\r\n<li>Visio 2010</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>Download and uncompress .zip file</b>\r\n<ol>\r\n<li>Download the .zip file by clicking <b>Download</b>.</li>\r\n<li>Find the downloaded file on your computer.</li>\r\n<li>Decompress the .zip file to the folder\r\nC:\\Users\\<i>User_Name</i>\\Documents\\My Shapes, where User_Name is your \r\nWindows user name .</li>\r\n</ol>\r\nThe .zip file contains the following files:\r\n<ul>\r\n<li>ITPro_Poster-Architectural_Elements_source.vss</li>\r\n<li>ITPro_Poster-Callouts_source.vss</li>\r\n<li>ITPro_Poster-Enclosure_Elements_source.vss</li>\r\n<li>ITPro_Poster-Flowchart_Elements_source.vss</li>\r\n<li>ITPro_Poster-Icons_(Ghosted)_source.vss</li>\r\n<li>ITPro_Poster-Icons_(Highlights)_source.vss</li>\r\n<li>ITPro_Poster-Icons_(Primary)_source.vss</li>\r\n<li>ITPro_Poster-Icons_(Secondary)_source.vss</li>\r\n<li>ITPro_Poster-Lines-Arrows-Connectors_source.vss</li>\r\n<li>ITPro_Poster-Text_Elements_source.vss</li>\r\n</ul>\r\n<br />\r\n<b>Open stencils in Visio</b><br/>\r\n<ol>\r\n<li>Open Visio.</li>\r\n<li>Create a new drawing.</li>\r\n<li>On the <b>File</b> menu, click <b>Shapes</b>, point to <b>My Shapes</b>, and then click one of \r\nthe files listed above.</li>\r\n<li>Repeat for all six files. </li>\r\n<li>If you want these shape stencils to open whenever you create this kind of \r\ndrawing, you can save the drawing as a template.</li>\r\n</ol>\r\n\r\n<b>Use shapes in Visio</b>\r\n<ul>\r\n <li>Drag a shape from the Shape pane to the drawing.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21480",
+    "downloadPreload": true
+}

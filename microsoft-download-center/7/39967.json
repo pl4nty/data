@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 SDK with Service Pack 1",
+    "downloadDescription": "The Microsoft HPC Pack 2012 Service Pack 1 SDK was designed to provide the tools and content necessary to write parallel applications for the Windows HPC platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sdk_x86.msi",
+            "url": "https://download.microsoft.com/download/5/a/e/5aea3c34-32a1-4a70-9622-f9734e92981f/sdk_x86.msi",
+            "size": "1435648",
+            "version": "4.1.4174.0",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sdk_x64.msi",
+            "url": "https://download.microsoft.com/download/5/a/e/5aea3c34-32a1-4a70-9622-f9734e92981f/sdk_x64.msi",
+            "size": "1435648",
+            "version": "4.1.4174.0",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NetworkDirect_DDK.zip",
+            "url": "https://download.microsoft.com/download/5/a/e/5aea3c34-32a1-4a70-9622-f9734e92981f/NetworkDirect_DDK.zip",
+            "size": "2545004",
+            "version": "4.1.4174.0",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft HPC Pack 2012 SDK, and its supplements, are designed to provide the tools and content necessary to write parallel applications for the Windows HPC platform.\r\n<br/>\r\nThe Development Kit consists of several components:\r\n<ul><li><i>Required:</i> The <b>Microsoft HPC Pack 2012 SDK</b> core package can be used to write client applications that interact with the job scheduler. Install this from sdk_x64.msi or sdk_x86.msi. You will need the HPC Pack 2012 Service Pack 1 Client Utilities installed as well, those are available through the full HPC Pack 2012 Service Pack 1 installer or through the Client Utilities redistributable available in the related downloads. </li>\r\n<ul><li>Files: sdk_x64.msi, sdk_x86.msi</li></ul>\r\n<li><i>Optional:</i> The <b>HPC Pack 2012 Sample Code</b> package provides a number of examples that to help you learn how to write applications that interact with or run on an HPC cluster.</li>\r\n<ul><li>Files: HPC2012.SampleCode.zip</li></ul>\r\n<li><i>Optional:</i> The <b>NetworkDirect</b> supplemental package provides sample code and tests to implement Windows drivers for NetworkDirect-enabled networking devices.</li>\r\n<ul><li>Files: NetworkDirect_DDK.zip</li></ul>\r\n<li>To develop MPI applications you need the HPC Pack 2012 Service Pack 1 MS-MPI redistributable installer, available through the related downloads.</li></ul>\r\n<br/>\r",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1.4174.0",
+    "detailsSection_file_name": [
+        "sdk_x86.msi",
+        "sdk_x64.msi",
+        "NetworkDirect_DDK.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.4 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Minimum Hardware Required: At least one industry standard personal computer (either 32-bit or 64-bit) with at least 128MB RAM.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1) Download the appropriate SDK msi installer(s) on to your workstation based on processor architecture, run it, and the installer will walk you through the setup process.<br/>\r\n2) If you are developing applications that interact with the job scheduler you will also need to install the HPC Pack 2012 Service Pack 1 Client utilities. <br/>\r\n3) (optional) Download any of the supplements / sample code archives and extract the contents of the zip file to your hard drive.<br/>\r\n4) (optional) If you are developing MPI applications you will also need to install the HPC Pack 2012 Service Pack 1 MS-MPI redistributable.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39967",
+    "downloadPreload": true
+}

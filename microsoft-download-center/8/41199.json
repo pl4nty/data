@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Radial Basis Function Network Training",
+    "downloadDescription": "Following on his previous column in which he explained the details of RBF networks, James McCaffrey now provides practical guidance on implementing RBF network training.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Code_McCaffrey.TestRun.1113.zip",
+            "url": "https://download.microsoft.com/download/6/2/b/62bc956b-0247-4841-9114-2475a469ad3e/Code_McCaffrey.TestRun.1113.zip",
+            "size": "7935",
+            "version": "1",
+            "datePublished": "5/15/2024 3:19:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VBCode_McCaffrey.TestRun.1113.zip",
+            "url": "https://download.microsoft.com/download/6/2/b/62bc956b-0247-4841-9114-2475a469ad3e/VBCode_McCaffrey.TestRun.1113.zip",
+            "size": "8343",
+            "version": "1",
+            "datePublished": "5/15/2024 3:19:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Following on his previous column in which he explained the details of RBF networks, James McCaffrey now provides practical guidance on implementing RBF network training.\r\n\r\n<a href=\"http://msdn.microsoft.com/magazine/dn532201\">Read the article online</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Code_McCaffrey.TestRun.1113.zip",
+        "VBCode_McCaffrey.TestRun.1113.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.7 KB",
+        "8.1 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "See article for more details",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "See article for more details",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Magazine home page",
+            "url": "http://msdn.microsoft.com/magazine/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41199",
+    "downloadPreload": true
+}

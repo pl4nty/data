@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 3.5 LangPack",
+    "downloadDescription": "Microsoft .NET Framework 3.5 Language Packs contain translated text, such as error messages, for each language.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/8/e/2/8e2fce80-38a4-4456-9a3d-a5e0377a36d6/Readme.htm",
+            "size": "2009",
+            "version": "3.5",
+            "datePublished": "7/15/2024 3:27:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "Microsoft .NET Framework 3.5 Language Packs contain translated text, such as error messages, for languages other than English. Without the installation of a Language Pack, these messages are displayed in English by default.  Multiple language packs, each for a different language, can be installed on a single computer.<br/>\n\n<br/><b>Note:</b> To download a specific language pack, select the target language from the change language drop-down.\n<br/>\n\n<br/><b>IMPORTANT:</b>\n<UL><LI> If you have installed earlier pre-release versions of .NET Framework 3.5,  then you must uninstall them prior to running this installation by using Add or Remove Programs.</LI>\n<br/>\nFor more details on this release of the framework, see the following references:\n<br/><a href=\"http://msdn2.microsoft.com/en-us/vstudio/aa700830.aspx\">http://msdn2.microsoft.com/en-us/vstudio/aa700830.aspx </a>\n<br/>\n<a href=\" http://msdn2.microsoft.com/en-us/netframework/default.aspx\"> http://msdn2.microsoft.com/en-us/netframework/default.aspx</a>\n\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Processor: </b>400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)<br/></LI>\n<LI><b>RAM:</b>96 MB (Minimum); 256 MB (Recommended)<br/></LI>\n<LI> <b>Hard Disk: </b>Up to 500 MB of available space may be required<br/></LI>\n<LI> <b>CD or DVD Drive: </b> Not required<br/></LI>\n<LI> <b>Display:</b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)<br/></LI>\n\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<br />\n<LI> <b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. </LI><br />\n<LI>Click the <b>Download</b> button on this page to start the download </LI><br />\n<LI>To save the download to your computer for installation at a later time, click <b>Save</b>.</LI><br />\n<LI>To cancel the installation, click <b>Cancel</b>. </LI><br />\n\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24436",
+    "downloadPreload": true
+}

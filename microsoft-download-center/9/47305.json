@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2015 Software License Terms",
+    "downloadDescription": "This download contains the software license terms for Microsoft Dynamics GP 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBSSLT_GP2015.pdf",
+            "url": "https://download.microsoft.com/download/e/a/5/ea5469f7-609e-4631-9591-5a52cd1047e8/MBSSLT_GP2015.pdf",
+            "size": "674122",
+            "version": "May 2015",
+            "datePublished": "5/15/2024 3:42:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the software license terms for Microsoft Dynamics GP 2015.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May 2015",
+    "detailsSection_file_name": [
+        "MBSSLT_GP2015.pdf"
+    ],
+    "detailsSection_file_size": [
+        "658.3 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows 8\r\nSupported Operating Systems: To view the PDF file, you will need a PDF Reader, such as the free Adobe Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download button to open the file or save it to your computer. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47305",
+    "downloadPreload": true
+}

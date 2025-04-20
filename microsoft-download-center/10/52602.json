@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "BeepBeep Demo",
+    "downloadDescription": "BeepBeep is a high-accuracy acoustic ranging system for mobile phones. Last published: October 28, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BeepBeepSetup.msi",
+            "url": "https://download.microsoft.com/download/b/0/1/b01ea254-5b52-456f-9dbe-889d1ad17f4c/BeepBeepSetup.msi",
+            "size": "781312",
+            "version": "1.0.3",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BeepBeep is a high-accuracy acoustic ranging system for mobile phones. It supports Pocket PC phones running Windows Mobile 5.0 or subsequent versions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.3",
+    "detailsSection_file_name": [
+        "BeepBeepSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "763.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52602",
+    "downloadPreload": true
+}

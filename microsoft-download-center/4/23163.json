@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 Standard Edition x64 (Full Install) VHD",
+    "downloadDescription": "This download comes as a pre-configured VHD. This download enables you evaluate Microsoft Windows Server 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TD01WS08SFR2SP1x64.part03.rar",
+            "url": "https://download.microsoft.com/download/e/2/f/e2f0eb28-6223-4e70-b8ae-024f129cdcdb/TD01WS08SFR2SP1x64.part03.rar",
+            "size": "592958900",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:26:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TD01WS08SFR2SP1x64.part01.exe",
+            "url": "https://download.microsoft.com/download/e/2/f/e2f0eb28-6223-4e70-b8ae-024f129cdcdb/TD01WS08SFR2SP1x64.part01.exe",
+            "size": "1073741824",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:26:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TD01WS08SFR2SP1x64.part02.rar",
+            "url": "https://download.microsoft.com/download/e/2/f/e2f0eb28-6223-4e70-b8ae-024f129cdcdb/TD01WS08SFR2SP1x64.part02.rar",
+            "size": "1073741824",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:26:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download and evaluate Windows Server 2008. You\u2019ll have the opportunity to try new and improved features and functionality of Windows Server 2008 free for 180 days. To find out more about Windows Server 2008, please visit the <a href=\"http://www.microsoft.com/windowsserver2008/en/us/overview.aspx\">product homepage</a>.\r\nPlease note that this product is available for evaluation purposes only and should not be used in a production environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "TD01WS08SFR2SP1x64.part03.rar",
+        "TD01WS08SFR2SP1x64.part01.exe",
+        "TD01WS08SFR2SP1x64.part02.rar"
+    ],
+    "detailsSection_file_size": [
+        "565.5 MB",
+        "1.0 GB",
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 Hyper-V is required to use this virtual machine<br />\r\n\r\nIn addition to the system requirements for Windows Server 2008 as described in the release notes, a 64-bit system with hardware-assisted virtualization enabled and data execution prevention (DEP) is required. <br />\r\nIt is also recommended to ensure that you have a clean install of x64 edition of Windows Server 2008 to be able to use the Hyper-V technology.<br />\r\nPrerequisites, installation steps, OS recommendations, and known issues  of Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc534980.aspx\">here</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "In order to use this evaluation package you will need to have Microsoft Hyper-V installed on a physical machine.<br />\r\nHyper-V is available on Windows Server 2008 only and the details on how to install Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc732470.aspx\">here</a>. Details of how to setup the VHD are included in the documentation that accompanies the product.<br />\r\n<br />\r\nThe local admin password for this VM is 'pass@word1'<br />\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23163",
+    "downloadPreload": true
+}

@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Achieve Reliability for your Apps and Workloads with Microsoft Azure",
+    "downloadDescription": "This whitepaper discusses how reliability can be achieved in the cloud, an ever-changing, constantly evolving environment by nature. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Achieve-Reliability-for-your-Apps-and-Workloads-with-Azure_(Jan_2022).pdf",
+            "url": "https://download.microsoft.com/download/9/5/d/95d6407f-d614-4f99-ad51-274a015f6135/Achieve-Reliability-for-your-Apps-and-Workloads-with-Azure_(Jan_2022).pdf",
+            "size": "2224927",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The cloud emerges as a major disruptive force in shaping the nature of business and plays a major opportunity and allowing dramatic global growth. The cloud brings breakthrough change, and thus represents (for incumbents) a major opportunity and plays a determining role notably in this very specific moment of time we all live. \r\n\r\nAn increasing number of people thus recognize the benefits of locating (and possibly modernizing) existing applications or building new ones in the public cloud as part of their (ongoing) digital transformation or simply, as a mean to an end, as part of the resiliency plan of their organization with the current Coronavirus pandemic. \r\n\r\nOne of the various objectives or the requirements that pave such a journey to the cloud is the reliability of the considered organizations\u2019 (business-critical) applications and workloads, whatever they are and the underlying technology is, e.g. virtual machines (VM), containers and cloud-native related trends, etc. \r\n\r\nReliability is defined as dependability and performing consistently well, and we know uptime is extremely critical to our customer's success. However, the way that you make systems \u2018reliable\u2019 is different in the public cloud, compared to on-premises. \r\n\r\nThis whitepaper discusses how reliability can be achieved in the cloud, an ever-changing, constantly evolving environment by nature. This is a complete different model compared to what IT generally delivered for reliability, which was to gold plate the hardware, deploy software, and leave things alone when they were working, and, in other words, where you can achieve greater availability by avoiding change. \r\n\r\nJust like avoiding change is impossible in the public cloud, avoiding failure is not a reasonable goal \u2013 we all need to plan to respond to failure gracefully: it\u2019s all about resiliency. Resiliency is not about avoiding failures but responding to and survive failure(s) in a way that avoids downtime and data loss. \r\n\r\nThis whitepaper covers:\r\n<li>\r\n<ul>Tirelessly considerable investments \u2013 this is a journey and not a destination similarly to security \u2013 made in global infrastructure, service management, and ensuring transparency in the Azure platform to continuously improve the overall quality and eventually make it the <a href=\"https://azure.microsoft.com/en-us/features/reliability/\">reliable foundation</a> you expect to anchor on top of it your (business-critical) applications and workloads.</ul>\r\n<ul>Resilient services built by Microsoft but operated by customers as a constituent of their own environment in the cloud - Although these features aren\u2019t mandatory, they\u2019re built into the platform so that your applications and workloads that need high availability, disaster recovery, and/or backup can get started quickly on top to achieve the expected reliability. </ul>\r\n<ul>How your (business-critical) applications and workloads can be in turn architected in accordance with the existing <a href=\"https://docs.microsoft.com/en-us/azure/architecture/framework/resiliency/overview\">recommended patterns for building resilient cloud applications</a>.</ul>\r\n</li>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0a",
+    "detailsSection_file_name": [
+        "Achieve-Reliability-for-your-Apps-and-Workloads-with-Azure_(Jan_2022).pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Open the white-paper with you PDF reader of choice",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Reliability",
+            "url": "https://azure.microsoft.com/en-us/features/reliability/"
+        },
+        {
+            "title": "advancing Reliability blog series",
+            "url": "https://azure.microsoft.com/en-us/blog/tag/advancing-reliability/"
+        },
+        {
+            "title": "azure Well-Architected Framework",
+            "url": "https://docs.microsoft.com/en-us/azure/architecture/framework/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102122",
+    "downloadPreload": true
+}

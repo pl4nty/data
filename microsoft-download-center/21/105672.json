@@ -1,0 +1,473 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio 2010 Tools for Office Language Pack (Version 4.0 Runtime)",
+    "downloadDescription": "Microsoft Visual Studio 2010 Tools for Office Language Pack (for version 4.0 of the VSTO Runtime) contains the text of runtime user interface elements, such as error messages, for languages other than English.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_sve.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_sve.exe",
+            "size": "570936",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_rus.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_rus.exe",
+            "size": "576608",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_ptb.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_ptb.exe",
+            "size": "575032",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_plk.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_plk.exe",
+            "size": "577632",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_nor.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_nor.exe",
+            "size": "570424",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_nld.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_nld.exe",
+            "size": "575072",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_kor.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_kor.exe",
+            "size": "564272",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_jpn.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_jpn.exe",
+            "size": "567352",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_ita.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_ita.exe",
+            "size": "569392",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_heb.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_heb.exe",
+            "size": "571488",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_fra.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_fra.exe",
+            "size": "565856",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_fin.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_fin.exe",
+            "size": "578104",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_esn.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_esn.exe",
+            "size": "570464",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "vstor40_LP_x64_deu.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_deu.exe",
+            "size": "566880",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_dan.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_dan.exe",
+            "size": "575032",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_cht.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_cht.exe",
+            "size": "564784",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_chs.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_chs.exe",
+            "size": "567392",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x64_ara.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x64_ara.exe",
+            "size": "578608",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_sve.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_sve.exe",
+            "size": "507448",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_rus.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_rus.exe",
+            "size": "517176",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_ptb.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_ptb.exe",
+            "size": "516152",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_plk.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_plk.exe",
+            "size": "517728",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_nor.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_nor.exe",
+            "size": "510560",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_nld.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_nld.exe",
+            "size": "515168",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_kor.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_kor.exe",
+            "size": "505400",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_jpn.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_jpn.exe",
+            "size": "507960",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_ita.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_ita.exe",
+            "size": "506424",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_heb.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_heb.exe",
+            "size": "511072",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_fra.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_fra.exe",
+            "size": "505400",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_fin.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_fin.exe",
+            "size": "516192",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_esn.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_esn.exe",
+            "size": "512096",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_deu.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_deu.exe",
+            "size": "504376",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_dan.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_dan.exe",
+            "size": "510520",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_cht.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_cht.exe",
+            "size": "503352",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_chs.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_chs.exe",
+            "size": "504880",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vstor40_LP_x86_ara.exe",
+            "url": "https://download.microsoft.com/download/4/9/5/49547753-6372-4e56-ad14-ea5b460c3ff7/vstor40_LP_x86_ara.exe",
+            "size": "520760",
+            "version": "60912.00",
+            "datePublished": "7/15/2024 5:00:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio 2010 Tools for Office Language Pack (for version 4.0 of the VSTO Runtime) contains the text of runtime user interface elements, such as error messages, for languages other than English. \r\n<br/><br/>\r\nNote that on installation of the VSTO runtime, the installer will automatically configure VSTO to use the same language as your copy of Windows.  Therefore, the only time you'll need to explicitly download a language pack is if your copy of Windows uses more than one language setting, or if you switch from one language setting to another after you've already installed the VSTO runtime.\r\n<br/><br/>\r\nEach language pack supports one language.  Please choose a language corresponding to your <b>Operating System</b>(x86 for 32-bit Windows, x64 for 64-bit Windows) and <b>language code</b>.\r\n<br/><br/>\r\nIf no language pack is installed, runtime messages will default to English.\r\n<br/><br/>\r\nThe corresponding <b>VSTO 4.0 Runtime</b> can be downloaded from <a href=\"http://go.microsoft.com/fwlink/?LinkId=140384\">http://go.microsoft.com/fwlink/?LinkId=140384</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "60912.00",
+    "detailsSection_file_name": [
+        "vstor40_LP_x64_sve.exe",
+        "vstor40_LP_x64_rus.exe",
+        "vstor40_LP_x64_ptb.exe",
+        "vstor40_LP_x64_plk.exe",
+        "vstor40_LP_x64_nor.exe",
+        "vstor40_LP_x64_nld.exe",
+        "vstor40_LP_x64_kor.exe",
+        "vstor40_LP_x64_jpn.exe",
+        "vstor40_LP_x64_ita.exe",
+        "vstor40_LP_x64_heb.exe",
+        "vstor40_LP_x64_fra.exe",
+        "vstor40_LP_x64_fin.exe",
+        "vstor40_LP_x64_esn.exe",
+        "vstor40_LP_x64_deu.exe",
+        "vstor40_LP_x64_dan.exe",
+        "vstor40_LP_x64_cht.exe",
+        "vstor40_LP_x64_chs.exe",
+        "vstor40_LP_x64_ara.exe",
+        "vstor40_LP_x86_sve.exe",
+        "vstor40_LP_x86_rus.exe",
+        "vstor40_LP_x86_ptb.exe",
+        "vstor40_LP_x86_plk.exe",
+        "vstor40_LP_x86_nor.exe",
+        "vstor40_LP_x86_nld.exe",
+        "vstor40_LP_x86_kor.exe",
+        "vstor40_LP_x86_jpn.exe",
+        "vstor40_LP_x86_ita.exe",
+        "vstor40_LP_x86_heb.exe",
+        "vstor40_LP_x86_fra.exe",
+        "vstor40_LP_x86_fin.exe",
+        "vstor40_LP_x86_esn.exe",
+        "vstor40_LP_x86_deu.exe",
+        "vstor40_LP_x86_dan.exe",
+        "vstor40_LP_x86_cht.exe",
+        "vstor40_LP_x86_chs.exe",
+        "vstor40_LP_x86_ara.exe"
+    ],
+    "detailsSection_file_size": [
+        "557.6 KB",
+        "563.1 KB",
+        "561.6 KB",
+        "564.1 KB",
+        "557.1 KB",
+        "561.6 KB",
+        "551.0 KB",
+        "554.1 KB",
+        "556.0 KB",
+        "558.1 KB",
+        "552.6 KB",
+        "564.6 KB",
+        "557.1 KB",
+        "553.6 KB",
+        "561.6 KB",
+        "551.5 KB",
+        "554.1 KB",
+        "565.0 KB",
+        "495.6 KB",
+        "505.1 KB",
+        "504.1 KB",
+        "505.6 KB",
+        "498.6 KB",
+        "503.1 KB",
+        "493.6 KB",
+        "496.1 KB",
+        "494.6 KB",
+        "499.1 KB",
+        "493.6 KB",
+        "504.1 KB",
+        "500.1 KB",
+        "492.6 KB",
+        "498.6 KB",
+        "491.6 KB",
+        "493.0 KB",
+        "508.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n    <ul>\r\n      <li>Windows 11</li>    \n      <li>Windows 10</li>      \r\n      <li>Windows 8.1</li>\r\n      <li>Windows 7 Service Pack 1</li>\r\n      <li>Windows Server 2019 </li> \r\n      <li>Windows Server 2016 </li> \n      <li>Windows Server 2012 (x64) - all editions</li>\n      <li>Windows Server 2012 R2 (x64) - all editions</li>\n    </ul>\n</ul>\n<ul>\n    <li><b>Prerequisites:</b></li>\n    <ul>\n      <li>.NET Framework: You must install either the .NET Framework 3.5, .NET Framework 4, .NET Framework 4 Client Profile, or .NET Framework 4.5 on end user computers before installing this runtime.</li>\n      <li>Version of Microsoft Office: Developing and running Office customizations built with Visual Studio Tools for Office 4.0 requires at least one of the following versions of Microsoft Office:</li>\n      <ul>\n        <li>Microsoft Office 2013, 2016 or newer supported versions of Office </li>\n        <li>Microsoft Office Word  2013, 2016 or newer supported versions of Office</li>\n        <li>Microsoft Office Excel 2013, 2016 or newer supported versions of Office</li>\n        <li>Microsoft Office Outlook 2013, 2016 or newer supported versions of Office</li>\n        <li>Microsoft Office PowerPoint 2013, 2016 or newer supported versions of Office</li>\n        <li>Microsoft Office Visio 2013, 2016 or newer supported versions of Office</li>\n        <li>Microsoft Office InfoPath 2013</li>\n        <li>Microsoft Office Project 2013, 2016 or newer supported versions of Office</li>\n      </ul>\n    </ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On this page, click <b>Download</b> to start the download. </li>\r\n<li>To save the download on your computer so that you can install it later, click <b>Save</b>.</li>\r\n<li>To cancel the installation, click <b>Cancel</b>.</li>  \r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105672",
+    "downloadPreload": true
+}

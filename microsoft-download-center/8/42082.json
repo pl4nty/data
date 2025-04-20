@@ -1,0 +1,245 @@
+{
+    "error": "",
+    "downloadTitle": "Language Packs (SP1) for SharePoint Server 2013 SP1 - [English]",
+    "downloadDescription": "These language packs can be used with SharePoint Server SP1 setup packages. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ServerLanguagePack_x64_en-us.img",
+            "url": "https://download.microsoft.com/download/5/c/1/5c1337c5-b9c3-482c-96d7-39e0c6780b05/ServerLanguagePack_x64_en-us.img",
+            "size": "110403584",
+            "version": "15.0.4569.1506",
+            "datePublished": "6/15/2024 4:50:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "prs-af",
+            "name": "Dari"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Language packs enable creation of sites and site collections in multiple languages without requiring separate installations of SharePoint Server 2013 Preview. Multiple language packs can be installed on the same server. Application of a Language Pack will not change the language of the installed Microsoft server product, or the language of the administrative features.\n<br/><br/>\n<b>Notes</b><br/>\n<ul>\n<li>You do not need to download a language pack for the language you installed, these language packs are to support creation of additional languages.</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4569.1506",
+    "detailsSection_file_name": [
+        "ServerLanguagePack_x64_en-us.img"
+    ],
+    "detailsSection_file_size": [
+        "105.3 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li><b>This download works with the following programs:</b><br />\n<ul><br />\n<li>Microsoft SharePoint Server 2013</li>\n<li>Microsoft Project Server 2013</li>\r\n\n</ul><br />\n</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/><br/>\n\nInstall a language pack:\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.</li>\n<li>Run the setup program.</li>\n<li>On the Read the Microsoft Software License Terms page, review the terms, select the <b>I accept the terms of this agreement</b> check box, and then click <b>Continue</b>. </li>\n<li>The setup wizard runs and installs the language pack.</li>\n<li>Rerun the SharePoint Products and Technologies Configuration Wizard, using the default settings.</li>\n</ol>\n\n<b>Note:</b> If you do not run the SharePoint Products and Technologies Configuration Wizard after you install a language pack, the language pack will not be installed properly.<br/>\n<br/>\n\nRerun the SharePoint Products and Technologies Configuration Wizard:\n<ol>\n<li>Click <b>Start</b>, point to <b>All Programs</b>, point to <b>Microsoft SharePoint 2013 Products</b>, and then click <b>SharePoint Products and Technologies Configuration Wizard</b>.</li>\n<li>On the Welcome to SharePoint Products and Technologies page, click <b>Next</b>.</li>\n<li>Click <b>Yes</b> in the dialog box that alerts you that some services might need to be restarted during configuration.</li>\n<li>On the Modify Server Farm Settings page, click <b>Do not disconnect from this server farm</b>, and then click <b>Next</b>.</li>\n<li>If the Modify SharePoint Central Administration Web Administration Settings page appears, do not modify any of the default settings, and then click <b>Next</b>.</li>\n<li>On the Completing the SharePoint Products and Technologies Configuration Wizard page, click <b>Next</b>.</li>\n<li>On the Configuration Successful page, click <b>Finish</b>.</li>\n</ol>\n\n<b>Instructions for use:</b><br/><br/>\nFor usage information, visit the <a href=\"http://technet.microsoft.com/en-us/library/cc262108.aspx\">Install or uninstall language packs for SharePoint 2013</a> site.<br/><br/>\n<b>To remove this download:</b>\n<ol>\n<li>On the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>. </li>\n<li>Double-click <b>Add/Remove Programs</b>. </li>\n<li>In the list of currently installed programs, select the installed item and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program.</li> \n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42082",
+    "downloadPreload": true
+}

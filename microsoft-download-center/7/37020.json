@@ -1,0 +1,171 @@
+{
+    "error": "",
+    "downloadTitle": "Embedded Lockdown Manager",
+    "downloadDescription": "Embedded Lockdown Manager (ELM) is a tool that enables detection and configuration of lockdown features on Windows Embedded 8 Standard and Windows Embedded 8.1 Industry devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3038256-x86.cab",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8.1-KB3038256-x86.cab",
+            "size": "500134",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3038256-x86.msu",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8.1-KB3038256-x86.msu",
+            "size": "676517",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB3036200-x86.cab",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8-RT-KB3036200-x86.cab",
+            "size": "499258",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2932354-x86.msu",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows7-KB2932354-x86.msu",
+            "size": "682994",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2932354-x64.cab",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows7-KB2932354-x64.cab",
+            "size": "497604",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB3036200-x64.msu",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8-RT-KB3036200-x64.msu",
+            "size": "675042",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2932354-x86.cab",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows7-KB2932354-x86.cab",
+            "size": "497820",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows7-KB2932354-x64.msu",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows7-KB2932354-x64.msu",
+            "size": "683572",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB3036200-x64.cab",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8-RT-KB3036200-x64.cab",
+            "size": "501000",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3038256-x64.cab",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8.1-KB3038256-x64.cab",
+            "size": "500262",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3038256-x64.msu",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8.1-KB3038256-x64.msu",
+            "size": "673605",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB3036200-x86.msu",
+            "url": "https://download.microsoft.com/download/d/f/1/df19aaa0-9b81-4640-a13f-4484ed6de94b/Windows8-RT-KB3036200-x86.msu",
+            "size": "672669",
+            "version": "3",
+            "datePublished": "7/15/2024 3:32:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Embedded Lockdown Manager automatically detects which lockdown features are installed on the device, and displays configuration options for only those features.\r\n<br/>\r\nEmbedded Lockdown Manager uses Windows Management Instrumentation (WMI) providers to detect and change configuration settings, and can export the settings to PowerShell scripts.\r\n<br/><br/>\r\nYou can use Embedded Lockdown Manager to configure the following lockdown features for Windows Embedded 8.1 Industry:\r\n<ul>\r\n<li>Windows 8 Application Launcher \u2013 Enables a single Windows Store application to start automatically. Can be configured to disable the Start screen.</li>\r\n<li>USB Filter \u2013 Allows only trusted USB devices to connect to system.</li>\r\n<li>Gesture Filter \u2013 Prevents undesirable edge and corner gestures.</li>\r\n<li>Keyboard Filter - Suppresses unwanted key combinations, such as Ctrl+Alt+Delete; configure Breakout key.</li>\r\n<li>Dialog Filter - Prevents unwanted pop-up windows and dialog boxes from appearing on the screen.</li>\r\n<li>Unified Write Filter - Protects physical media from write operations.</li>\r\n<li>Shell Launcher - Starts an alternate shell instead of the standard Windows shell.</li>\r\n</ul>\r\n<br/>\r\nNote:  In order to use ELM to configure the Windows 8 Application Launcher, you must first install <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=42025\">KB2932074</a> on the Windows Embedded Industry 8.1 device you want to configure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "Windows8.1-KB3038256-x86.cab",
+        "Windows8.1-KB3038256-x86.msu",
+        "Windows8-RT-KB3036200-x86.cab",
+        "Windows7-KB2932354-x86.msu",
+        "Windows7-KB2932354-x64.cab",
+        "Windows8-RT-KB3036200-x64.msu",
+        "Windows7-KB2932354-x86.cab",
+        "Windows7-KB2932354-x64.msu",
+        "Windows8-RT-KB3036200-x64.cab",
+        "Windows8.1-KB3038256-x64.cab",
+        "Windows8.1-KB3038256-x64.msu",
+        "Windows8-RT-KB3036200-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "488.4 KB",
+        "660.7 KB",
+        "487.6 KB",
+        "667.0 KB",
+        "485.9 KB",
+        "659.2 KB",
+        "486.2 KB",
+        "667.6 KB",
+        "489.3 KB",
+        "488.5 KB",
+        "657.8 KB",
+        "656.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "As an alternative to executing the .MSU files below on the appropriate OS, each file has a corresponding .CAB file that can be downloaded and installed as described in the Install Instructions.\r\n<br/><br/>\r\nWindows 7 and Windows Server 2008 R2:\r\n<ul>\r\n<li>Windows7-KB2932354-x64.msu</li>\r\n<li>Windows7-KB2932354-x86.msu</li>\r\n</ul>\r\nWindows 8, Windows Embedded 8 Standard, Windows Embedded 8 Industry and Windows Server 2012:\r\n<ul>\r\n<li>Windows8-RT-KB3036200-x86.msu</li>\r\n<li>Windows8-RT-KB3036200-x64.msu</li>\r\n</ul>\r\nWindows 8.1, Windows Embedded 8.1 Industry, and Windows Server 2012 R2: \r\n<ul>\r\n<li>Windows8.1-KB3038256-x86.msu</li>\r\n<li>Windows8.1-KB3038256-x64.msu</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Embedded 8 Industry",
+        "Embedded 8 Standard",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Embedded Industry 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "A) Copy the appropriate .msu file to your system and double-click to install ELM on your system.  \r\n<br/><br/>\r\nOR\r\n<br/><br/>\r\nB) Install the appropriate .cab file for you system via the command line with administrator privileges: \"DISM /online /add-package\" \r\n",
+    "additionalInformationSection": "IMPORTANT: This tool can be used to make changes directly to the registry. Make configuration changes at your own risk. Validate your changes in a test environment before deploying to a live environment or production device.\r\n<br/><br/>\r\nThe latest release of Embedded Lockdown Manager (ELM) enables you to install ELM on Windows 8.1 devices. This version also includes the following additional new functionality:\r\n<ul>\r\n<li>The ability to configure Windows 8 Application Launcher on Windows Embedded 8.1 Industry devices. (Requires <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=42025\">KB2932074</a>)</li>\r\n<li>The ability to configure Gesture Filter on Windows Embedded 8.1 Industry devices.</li>\r\n<li>The ability to configure USB Filter on Windows Embedded 8.1 Industry devices.</li>\r\n</ul>\r\n<br/><br/>\r\n<b>TROUBLE SHOOTING</b>\r\n<br/><br/>\r\nNote:  Users of Windows 7 or Windows Server 2008 R2 based computers may encounter the following error when launching ELM:  \u201cMMC has detected an error in a snap-in and will unload it\u201d.  \r\n<br/>\r\nMMC has known dependency on .Net Framework 3.5.1 for the above operating systems. Make sure to install .NET Framework 3.5.1 using the following steps:\r\n<br/><br/>\r\nOn a <b>Windows 7</b>-based computer\r\n<ol>\r\n<li>Click on <b>Start</b> button and then click <b>Control Panel</b></li>\r\n<li>Select <b>Programs</b></li>\r\n<li>Under Programs and Features, select <b>Turn Windows features on or off</b></li>\r\n<li>Select the <b>check box</b> next to the Microsoft .NET Framework 3.5.1.</li>\r\n<li>Click on <b>OK</b>.</li>\r\n</ol>\r\n<br/><br/>\r\nOn a <b>Windows Server 2008 R2</b>-based computer\r\n<ol>\r\n<li>Open <b>Server Manager</b>.</li>\r\n<li>Right click <b>Features</b> and select <b>Add Features</b></li>\r\n<li>Expand <b>.Net Framework 3.5.1 Features</b></li>\r\n<li>Select the <b>check box</b> next to the .NET Framework 3.5.1</li>\r\n<li>Click on <b>Install</b>.</li>\r\n</ol>\r\n\r\n\r\n\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "elm Documentation",
+            "url": "http://msdn.microsoft.com/en-us/library/dn449279(v=winembedded.82).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "37020",
+    "downloadPreload": true
+}

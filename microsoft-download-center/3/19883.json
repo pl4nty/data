@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit: Etiquette Guides ",
+    "downloadDescription": "This zipped file contains sample etiquette guides for instant messaging (IM) and online meetings. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Etiquette_Guides.zip",
+            "url": "https://download.microsoft.com/download/3/c/7/3c71d749-e6bd-4c79-8422-8796e4951731/Etiquette_Guides.zip",
+            "size": "182054",
+            "version": "0.1",
+            "datePublished": "4/15/2024 3:10:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These etiquette guides describe generally accepted best practices for instant messaging (IM) and online meetings. You can use these samples when creating materials for Microsoft Lync 2010 rollout and adoption in your organization.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "Etiquette_Guides.zip"
+    ],
+    "detailsSection_file_size": [
+        "177.8 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010; Microsoft Office Word 2007; Microsoft Office Word 2003; Microsoft Office Word 2002",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19883",
+    "downloadPreload": true
+}

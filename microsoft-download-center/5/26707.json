@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific NF-e Update for Brazil for Hotfix Rollup 7",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 7, and that is specific to users in Brazil.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RU7_Country_specific_updates_for_Brazil_NFe.pdf",
+            "url": "https://download.microsoft.com/download/a/f/9/af95d6db-da15-4ec2-b53e-92e6230110a4/RU7_Country_specific_updates_for_Brazil_NFe.pdf",
+            "size": "568869",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RU7_Country_specific_updates_for_Brazil_NFe.xps",
+            "url": "https://download.microsoft.com/download/a/f/9/af95d6db-da15-4ec2-b53e-92e6230110a4/RU7_Country_specific_updates_for_Brazil_NFe.xps",
+            "size": "814012",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Brazil in hotfix rollup 7 for Microsoft Dynamics AX 2009 and 2009 SP1.<br /><br />\r\nThis paper provides information about the Nota Fiscal Electr\u00f4nica (NF-e), fiscal book integration of CIAP (Credit ICMS Control of Permanent Assets Book) with a third-party fiscal book solution, improvements in managing the intermediary database, and mapping Microsoft Dynamics AX companies with fiscal book solution companies. It also includes the procedures necessary to use these features.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base articles 982811, 982812, and 2503850. For more information about other features that apply to Brazil, refer to the Applications and Business Processes Help. Information that is specific to Brazil includes (BRA) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "RU7_Country_specific_updates_for_Brazil_NFe.pdf",
+        "RU7_Country_specific_updates_for_Brazil_NFe.xps"
+    ],
+    "detailsSection_file_size": [
+        "555.5 KB",
+        "794.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26707",
+    "downloadPreload": true
+}

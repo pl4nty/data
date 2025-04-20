@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SDL Progress Report",
+    "downloadDescription": "Progress reducing software vulnerabilities and developing threat mitigations at Microsoft (2004 \u2013 2010).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SDLProgressReport.xps",
+            "url": "https://download.microsoft.com/download/c/e/f/cefb7bf3-de0c-4dcb-995a-c1c69659bf49/SDLProgressReport.xps",
+            "size": "2489098",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SDLProgressReport.pdf",
+            "url": "https://download.microsoft.com/download/c/e/f/cefb7bf3-de0c-4dcb-995a-c1c69659bf49/SDLProgressReport.pdf",
+            "size": "1843942",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "In this report you\u2019ll learn about the evolution of the Microsoft Security Development Lifecycle (SDL) and the progress Microsoft has made in using the SDL and security science to reduce vulnerabilities and mitigate threats to Microsoft software and services. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SDLProgressReport.xps",
+        "SDLProgressReport.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the Microsoft SDL Progress Report. Available as a .PDF or .XPS. In order to view the .XPS document, you will need to install the reader (included in Windows 7 and Windows Vista).",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Engineering Center",
+            "url": "http://www.microsoft.com/security/msec.aspx"
+        },
+        {
+            "title": "microsoft SDL",
+            "url": "http://www.microsoft.com/security/sdl/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14107",
+    "downloadPreload": true
+}

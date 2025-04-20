@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvc_9.60.6974.1",
+    "downloadDescription": "ASRMobSvc_9.60.6974.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-22.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1c663f-bb71-42c9-aa2e-5dc166dc1115/UBUNTU-22.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+            "size": "4529598",
+            "version": "9.60.6974.1",
+            "datePublished": "7/15/2024 5:00:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-20.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1c663f-bb71-42c9-aa2e-5dc166dc1115/UBUNTU-20.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+            "size": "4351464",
+            "version": "9.60.6974.1",
+            "datePublished": "7/15/2024 5:00:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UBUNTU-18.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1c663f-bb71-42c9-aa2e-5dc166dc1115/UBUNTU-18.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+            "size": "6384160",
+            "version": "9.60.6974.1",
+            "datePublished": "7/15/2024 5:00:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.60.6974.1_UBUNTU-22.04-64_GA_05Feb2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1c663f-bb71-42c9-aa2e-5dc166dc1115/Microsoft-ASR_UA_9.60.6974.1_UBUNTU-22.04-64_GA_05Feb2024_release.tar.gz",
+            "size": "79679872",
+            "version": "9.60.6974.1",
+            "datePublished": "7/15/2024 5:00:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-ASR_UA_9.60.6974.1_UBUNTU-20.04-64_GA_05Feb2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1c663f-bb71-42c9-aa2e-5dc166dc1115/Microsoft-ASR_UA_9.60.6974.1_UBUNTU-20.04-64_GA_05Feb2024_release.tar.gz",
+            "size": "89356360",
+            "version": "9.60.6974.1",
+            "datePublished": "7/15/2024 5:00:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.60.6974.1_UBUNTU-18.04-64_GA_05Feb2024_release.tar.gz",
+            "url": "https://download.microsoft.com/download/2/f/1/2f1c663f-bb71-42c9-aa2e-5dc166dc1115/Microsoft-ASR_UA_9.60.6974.1_UBUNTU-18.04-64_GA_05Feb2024_release.tar.gz",
+            "size": "122017212",
+            "version": "9.60.6974.1",
+            "datePublished": "7/15/2024 5:00:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvc_9.60.6974.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.60.6974.1",
+    "detailsSection_file_name": [
+        "UBUNTU-22.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+        "UBUNTU-20.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+        "UBUNTU-18.04-64_pushinstallclient_9.60.6974.1.tar.gz",
+        "Microsoft-ASR_UA_9.60.6974.1_UBUNTU-22.04-64_GA_05Feb2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.60.6974.1_UBUNTU-20.04-64_GA_05Feb2024_release.tar.gz",
+        "Microsoft-ASR_UA_9.60.6974.1_UBUNTU-18.04-64_GA_05Feb2024_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "4.3 MB",
+        "4.1 MB",
+        "6.1 MB",
+        "76.0 MB",
+        "85.2 MB",
+        "116.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105813",
+    "downloadPreload": true
+}

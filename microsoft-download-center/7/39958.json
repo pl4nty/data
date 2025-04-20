@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP White Paper: Using Microsoft Team Foundation 2012 with Microsoft Dexterity",
+    "downloadDescription": "This paper provides the basic instructions for setting up Microsoft Team Foundation 2012 as a source code control repository for Dexterity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UsingTFS2012WithDexterity.pdf",
+            "url": "https://download.microsoft.com/download/2/5/d/25de8174-35cc-46ae-a038-77b497c5b18f/UsingTFS2012WithDexterity.pdf",
+            "size": "614968",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper provides the basic instructions for setting up Microsoft Team Foundation 2012 as a source code control repository for Dexterity. <br /><br />\n\nTopics covered include:\n<UL><LI>Installing Team Foundation Server</LI>\n<LI>Configuring Team Foundation Server</LI>\n<LI>Installing Microsoft Visual Studio Team Explorer</LI>\n<LI>Creating a Team Project</LI>\n<LI>Configuring Source Control for a Team Project</LI>\n<LI>Connecting to the Team Foundation Server</LI>\n<LI>Installing the Dexterity Source Code Control Server</LI>\n<LI>Configuring the Dexterity Source Code Control Server</LI>\n<LI>Configuring Dexterity</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "UsingTFS2012WithDexterity.pdf"
+    ],
+    "detailsSection_file_size": [
+        "600.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF or XPS file format.</LI>\r\n<LI>Save the file to your computer. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the document, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39958",
+    "downloadPreload": true
+}

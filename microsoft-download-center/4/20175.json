@@ -1,0 +1,105 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2007 Release Notes",
+    "downloadDescription": "This download contains a stand-alone version of the Microsoft Exchange Server 2007 Release Notes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RelNotes.htm",
+            "url": "https://download.microsoft.com/download/8/d/c/8dc5a8ca-e75e-47c0-b655-e0f82b90780d/RelNotes.htm",
+            "size": "62885",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The Microsoft Exchange Server 2007 Release Notes contain late-breaking information for Exchange Server 2007.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "RelNotes.htm"
+    ],
+    "detailsSection_file_size": [
+        "61.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>Exchange Server 2007</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li><br />\n<li>Do one of the following:</li><br />\n<ul><li>To start the installation immediately, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li><br />\n</ul><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server 2007 - Learning Portal",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=99341"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server 2007 SP1 Release Notes",
+            "url": "http://go.microsoft.com/fwlink/?linkid=85381"
+        },
+        {
+            "title": "frequently Asked Questions",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=65409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20175",
+    "downloadPreload": true
+}

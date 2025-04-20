@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Visual F# Tools 4.0 RTM",
+    "downloadDescription": "Visual F# Tools 4.0 RTM",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FSharp_BundleLP.exe",
+            "url": "https://download.microsoft.com/download/9/1/2/9122d406-f1e3-4880-a66d-d6c65e8b1545/FSharp_BundleLP.exe",
+            "size": "750360",
+            "version": "4.0.0",
+            "datePublished": "7/15/2024 3:49:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FSharp_Bundle.exe",
+            "url": "https://download.microsoft.com/download/9/1/2/9122d406-f1e3-4880-a66d-d6c65e8b1545/FSharp_Bundle.exe",
+            "size": "33754904",
+            "version": "4.0.0",
+            "datePublished": "7/15/2024 3:49:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RTM release of Visual F# Tools 4.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.0",
+    "detailsSection_file_name": [
+        "FSharp_BundleLP.exe",
+        "FSharp_Bundle.exe"
+    ],
+    "detailsSection_file_size": [
+        "732.8 KB",
+        "32.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n<li>Windows Server 2008 R2</li>\r\n<li>Windows Server 2008 Service Pack 2</li>\r\n<li><b>Recommended Software:</b></li>\r\n<li>Microsoft Visual Studio 2015 RTM</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download</li>\r\n<li>Do one of the following:</li>\r\n</ol>\r\n<ul>\r\n<li>To start the installation immediately, click Run.</li>\r\n<li>To save the download to your computer for installation at a later time, click Save</li>\r\n<li>To cancel the installation, click Cancel</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48179",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Database migrations - Benchmarks and Steps to Import to Azure SQL DB Single Database from BACPAC",
+    "downloadDescription": "Database migrations - Benchmarks and Steps to Import to Azure SQL DB Single Database from BACPAC",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Database migrations - Benchmarks and Steps to Import to Azure SQL DB Single Database from BACPAC.pdf",
+            "url": "https://download.microsoft.com/download/1/2/7/12780258-5789-4fe9-9f76-7dba6a29c4bd/Database migrations - Benchmarks and Steps to Import to Azure SQL DB Single Database from BACPAC.pdf",
+            "size": "240979",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:05:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Whitepaper has been developed to help accelerate migrations from on-premises, IaaS and/or relevant SQL Server implementations that need to be migrated to an Azure SQL DB Single database, using BACPAC backup files, and are not able to leverage Data Migration Service (DMS).\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Database migrations - Benchmarks and Steps to Import to Azure SQL DB Single Database from BACPAC.pdf"
+    ],
+    "detailsSection_file_size": [
+        "235.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "This Whitepaper has been developed to help accelerate migrations from on-premises, IaaS and/or relevant SQL Server implementations that need to be migrated to an Azure SQL DB Single database, using BACPAC backup files, and are not able to leverage Data Migration Service (DMS).\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103673",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Skype URI-specific brand elements",
+    "downloadDescription": "Contains Skype URI-specific brand elements, in various pixels sizes, that you can incorporate as application resources in your Windows 8, Android, and iOS applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "skype-button-assets.zip",
+            "url": "https://download.microsoft.com/download/3/0/a/30a4bdf2-5fc8-4fb1-aa97-4a001234344b/skype-button-assets.zip",
+            "size": "251749",
+            "version": "June2014",
+            "datePublished": "6/13/2024 12:22:19 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Skype URI-specific brand elements download contains Skype URI-specific brand elements, in various pixels sizes, that you can incorporate as application resources in your Windows 8, Android, and iOS applications. \r\nThese elements are included as PNG files in the following pixel sizes: 10, 12, 14, 16, 24, 32, 48, 64, and 80. Color choices are Skype Blue and white, both on transparent backgrounds.\r\nYour app\u2019s use of the Skype logo, name, and other brand elements in your app\u2019s design, appearance, and marketing materials are detailed in and governed by the Skype Branding Guidelines (<a href=\"http://www.skype.com/go/brand-guidelines/\">http://www.skype.com/go/brand-guidelines/</a>).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2014",
+    "detailsSection_file_name": [
+        "skype-button-assets.zip"
+    ],
+    "detailsSection_file_size": [
+        "245.8 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a zip file containing PNG files.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. </li>\r\n<li>Save the zip file. Unzip to access the branding elements.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43127",
+    "downloadPreload": true
+}

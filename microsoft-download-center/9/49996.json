@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Service Pack 3 (SP3)",
+    "downloadDescription": "Download Service Pack 3 for Microsoft\u00ae SQL Server\u00ae 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP3-KB3072779-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/b/1/7/b17f8608-fa44-462d-a43b-00f94591540a/ENU/x86/SQLServer2012SP3-KB3072779-x86-ENU.exe",
+            "size": "749969088",
+            "version": "11.0.6020.0",
+            "datePublished": "7/15/2024 4:08:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012SP3-KB3072779-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/b/1/7/b17f8608-fa44-462d-a43b-00f94591540a/ENU/x64/SQLServer2012SP3-KB3072779-x64-ENU.exe",
+            "size": "1066843840",
+            "version": "11.0.6020.0",
+            "datePublished": "7/15/2024 4:08:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2012 service packs are cumulative updates and upgrade all editions and service levels of SQL Server 2012 to SP3. This service pack contains up to and including SQL Server 2012 Service Pack 2 Cumulative Update 9 (CU9).  <br/>\r\n<br/>\r\nThis download site contains the following packages and service patches for the Microsoft SQL Server 2012 SP3 release:<br/><br/>\r\n<ul>\r\n<li><b>Microsoft SQL Server 2012 SP3 Update</b> - this package contains the Microsoft SQL Server 2012 Service Pack 3 update to be applied to existing SQL Server 2012 installations.</li><br/>\r\n</ul>\r\n<br/>\r\n<b>Microsoft SQL Server 2012 SP3 Documentation:</b><br />\r\n<br />\r\n<ul>\r\n <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=615937\">Microsoft SQL Server 2012 SP3 Release Notes</a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=615938\">Microsoft SQL Server 2012 SP3 Readme</a>\r\n    <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=216743\">Microsoft SQL Server 2012 Privacy Statement</a>\r\n  </li>\r\n  <li>\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=624119\">Microsoft SQL Server 2012 Systems Requirements</a>\r\n  </li>\r\n     <br />\r\n    <br />\r\n  </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.6020.0",
+    "detailsSection_file_name": [
+        "SQLServer2012SP3-KB3072779-x86-ENU.exe",
+        "SQLServer2012SP3-KB3072779-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "715.2 MB",
+        "1017.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>For complete system requirements, please reference the detailed  <a href=\"http://go.microsoft.com/fwlink/?LinkID=624119\">Systems Requirements</a> page</li>\r\n<li>6 GB of available hard disk space for the Service Pack update, 10 GB for a Slipstream installation</li>\n<li> Service Pack 3 can be applied to any of the following Microsoft SQL Server 2012 editions: </li>\r\n<br /><ul>\r\n  <li>Microsoft SQL Server 2012 Enterprise</li>\r\n  <li> Microsoft SQL Server 2012 Developer</li>\r\n  <li>Microsoft SQL Server 2012 Standard</li>\r\n  <li>Microsoft SQL Server 2012 Business Intelligence</li>\r\n  <li>Microsoft SQL Server 2012 Web</li>\r\n  <li>Microsoft SQL Server 2012 Express</li>\r\n</ul><br />\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<br/>\r\n<b>Note:</b> You must have administrative rights on the computer to install SQL Server 2012 SP3<br/>\r\n<br/>\r\n<u><b>Microsoft SQL Server 2012 SP3 Update: </b></u><br/>\r\n<br/>\r\n<ol>\r\n<li>Review the  <a href=\"http://go.microsoft.com/fwlink/?LinkID=615937\">Microsoft SQL Server 2012 SP3 Release Notes</a>\r\n  </li>\r\n  <li>Download the following file from the \"DOWNLOAD\" section on this page to your device:</li> \r\n<ul> \r\n<li><b>SQLServer2012SP3-KB3072779-architecture-language.exe</b></li> </ul> \r\n<li>Once the download is complete, click RUN to begin the installation process immediately or SAVE to install at a later time.</li>\r\n</ol>\r\n <br/>\r\n  <br />\r\n<br />\r\n",
+    "additionalInformationSection": "If you have questions about  SQL Server 2012 SP3, please visit the <a href=\" http://go.microsoft.com/fwlink/?LinkID=205125\"> SQL Server  2012 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2012 SP3 by submitting bugs to <a href=\" http://go.microsoft.com/fwlink/?LinkID=223170\">Microsoft Connect.</a><br/>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49996",
+    "downloadPreload": true
+}

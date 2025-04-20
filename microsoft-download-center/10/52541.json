@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Time-Mapping Matlab Code",
+    "downloadDescription": "The Matlab code is used to generate the results for the CVPR 2014 paper \"Time-mapping using space-time saliency\" by F. Last published: June 4, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "core.zip",
+            "url": "https://download.microsoft.com/download/f/d/9/fd995e18-3fc1-4605-bbc8-34ec2889b5fa/core.zip",
+            "size": "47473",
+            "version": "1.0",
+            "datePublished": "7/15/2023 4:09:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Matlab code is used to generate the results for the CVPR 2014 paper \"Time-mapping using space-time saliency\" by F. Zhou, S.B. Kang, and M.F. Cohen.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "core.zip"
+    ],
+    "detailsSection_file_size": [
+        "46.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52541",
+    "downloadPreload": true
+}

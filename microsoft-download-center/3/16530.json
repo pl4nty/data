@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2005 Team Foundation Installation Guide",
+    "downloadDescription": "The most current version of the Installation Guide for Visual Studio 2005 Team Foundation Server and Team Explorer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TFSInstall-v071210.chm",
+            "url": "https://download.microsoft.com/download/1/d/4/1d4627fb-b45c-498b-9b15-e48f0d19da11/TFSInstall-v071210.chm",
+            "size": "281639",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This is the most current version of the Installation Guide for Visual Studio 2005 Team Foundation Server. It contains any changes that were made to the guide since shipping, including updates to support the installation of Visual Studio 2005 SP1.\n<br /><br />\n<b>Note: </b>On computers with <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, downloaded Compiled Help Module (CHM) files cannot be opened. For more information, see <a href=\"http://support.microsoft.com/kb/902225/\">KB902225</a>.\n<br /><br />\nAfter saving the file locally, you can view the contents using one of the following methods:\n<br /><br />\n<b>Method 1</b>\n<ol>\n<li>Double-click the .chm file.</li>\n<li>In the <b>Open File-Security Warning</b> dialog box, click to clear the <b>Always ask before opening this file</b> check box.</li>\n<li>Click <b>Open</b>.</li>\n</ol>\n<b>Method 2</b> \n<ol>\n<li>Right-click the CHM file, and then click <b>Properties</b>.</li>\n<li>Click <b>Unblock</b>.</li>\n<li>Double-click the .chm file to open the file.</li>\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB902225",
+        "name": "KB902225"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "TFSInstall-v071210.chm"
+    ],
+    "detailsSection_file_size": [
+        "275.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003 Standard (or Enterprise) Edition, Visual Studio 2005 Team Foundation Server, SQL Server 2005 Standard (or Enterprise) Edition, Windows SharePoint Services 2.0 with Service Pack 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and view the Team Foundation Installation Guide\n<br />\n<b>Note: </b>On computers with <a href=\"http://support.microsoft.com/kb/896358/\">security update 896358</a> installed, downloaded Compiled Help Module (CHM) files cannot be opened. For more information, see <a href=\"http://support.microsoft.com/kb/902225/\">KB902225</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "team System Forums",
+            "url": "http://go.microsoft.com/fwlink/?linkid=53443"
+        },
+        {
+            "title": "team Foundation Server Readme",
+            "url": "http://go.microsoft.com/fwlink/?linkid=56519"
+        },
+        {
+            "title": "team Foundation Server Administrator\u2019s Guide",
+            "url": "http://go.microsoft.com/fwlink/?linkid=63526"
+        },
+        {
+            "title": "team System Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?linkid=35584"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16530",
+    "downloadPreload": true
+}

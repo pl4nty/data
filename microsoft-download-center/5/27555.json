@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BitLocker Administration and Monitoring (MBAM) Documentation Resources Download Page",
+    "downloadDescription": "Downloadable MBAM technical documentation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBAM Scalability.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM Scalability.pdf",
+            "size": "265694",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MBAM Administrator's Guide.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM Administrator's Guide.pdf",
+            "size": "910204",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM MDT Deployment.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM MDT Deployment.pdf",
+            "size": "528854",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM Data Retention.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM Data Retention.pdf",
+            "size": "333187",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM Evaluation Guide.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM Evaluation Guide.pdf",
+            "size": "2455083",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM Client Timers.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM Client Timers.pdf",
+            "size": "512784",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBAM Selfhelp Portal.pdf",
+            "url": "https://download.microsoft.com/download/4/a/4/4a482a5e-ca63-426d-8537-04d390f51fb7/MBAM Selfhelp Portal.pdf",
+            "size": "502930",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable MBAM technical documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MBAM Scalability.pdf",
+        "MBAM Administrator's Guide.pdf",
+        "MBAM MDT Deployment.pdf",
+        "MBAM Data Retention.pdf",
+        "MBAM Evaluation Guide.pdf",
+        "MBAM Client Timers.pdf",
+        "MBAM Selfhelp Portal.pdf"
+    ],
+    "detailsSection_file_size": [
+        "259.5 KB",
+        "888.9 KB",
+        "516.5 KB",
+        "325.4 KB",
+        "2.3 MB",
+        "500.8 KB",
+        "491.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF file type viewer ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Select the document you would like to download and read.",
+    "relatedResourcesSection": [
+        {
+            "title": "mbam Documentation",
+            "url": "http://onlinehelp.microsoft.com/mdop/gg703313.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27555",
+    "downloadPreload": true
+}

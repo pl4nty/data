@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 21: Validate Diagrams Against Standards in Visio 2010 (working files)",
+    "downloadDescription": "Practice working with validation rules for Business Process Modeling Notation (BPMN) and other diagrams in Microsoft Visio 2010 with these diagrams, part of the Visio 2010 MVP Sessions, Video 21.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MVPSession21CustomEngravingProcessforValidation.vsd",
+            "url": "https://download.microsoft.com/download/e/a/6/ea6448f5-35c9-460a-8ae7-8577ca2814ab/MVPSession21CustomEngravingProcessforValidation.vsd",
+            "size": "380416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession21ProjectTrackingProcess.vsd",
+            "url": "https://download.microsoft.com/download/e/a/6/ea6448f5-35c9-460a-8ae7-8577ca2814ab/MVPSession21ProjectTrackingProcess.vsd",
+            "size": "329216",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice working with validation rules for BPMN and other diagrams in Visio 2010 with these diagrams,  created as companions to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 21. MVP Sessions Video 21 covers the basics of how to enforce standards when creating workflows and validate the workflows against those standards to correct missteps. Use these working files to follow along with the video and practice the rules validation functionality in Visio 2010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession21CustomEngravingProcessforValidation.vsd",
+        "MVPSession21ProjectTrackingProcess.vsd"
+    ],
+    "detailsSection_file_size": [
+        "371.5 KB",
+        "321.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the working files to your computer and then open them with Visio 2010.",
+    "additionalInformationSection": "Watch the Validate Diagrams Against Standards video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Session-21-Validate-diagrams-against-standards.aspx).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30142",
+    "downloadPreload": true
+}

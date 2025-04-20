@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 R2 CU4",
+    "downloadDescription": "Microsoft BizTalk Server 2013 R2 CU4",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2013R2-3167705-ENU.exe",
+            "url": "https://download.microsoft.com/download/6/f/7/6f7f7925-337e-46a7-8439-47e52b5df581/BTS2013R2-3167705-ENU.exe",
+            "size": "22694432",
+            "version": "3.11.243.2",
+            "datePublished": "7/15/2024 4:18:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 R2 CU4",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.11.243.2",
+    "detailsSection_file_name": [
+        "BTS2013R2-3167705-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "21.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>Microsoft Office Excel 2013 or 2010</li>\r\n <li>.NET Framework 4.5 and .NET Framework 4.5.1</li>\r\n <li>Visual Studio 2013</li>\r\n <li>SQL Server 2014 or SQL Server 2012 SP1</li>\r\n <li>SharePoint 2013 SP1</li>\r\n <li>Microsoft BizTalk Server 2013 R2</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and run the executable",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53341",
+    "downloadPreload": true
+}

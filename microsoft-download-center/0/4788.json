@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "PST Import Tool for Entourage",
+    "downloadDescription": "Microsoft Entourage users who want to import PST files from Microsoft Outlook 2001 for Mac can use the instructions in this document to install the PST Import Tool.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PSTImport101.dmg",
+            "url": "https://download.microsoft.com/download/5/3/6/536980c7-5135-4303-b0ef-a3bb95fc92db/PSTImport101.dmg",
+            "size": "1365721",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:07:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Entourage users who want to import PST files from Microsoft Outlook 2001 for Mac can use the instructions in this document to install the PST Import Tool. Administrators who are deploying the PST Import Tool in their companies will want to review known issues, error messages and troubleshooting information in the Read Me file. The Read Me file is displayed when you run the PST Import Tool. You can also find the information in the PST Import Tool Help.htm file located in the Documentation folder that is included with the tool. Although the documentation makes specific reference to Entourage 2004, the PST Import Tool can be used with versions of Entourage released after Entourage 2004, such as Entourage 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.01",
+    "detailsSection_file_name": [
+        "PSTImport101.dmg"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><LI><b>Operating system versions</b>: 10.2.8 or later.</LI><br />\n<LI><b>Processor</b>: Mac OS X-compatible processor that is a model G3 or higher.</LI><br />\n<LI><b>Memory</b>: 256 MB of RAM.</LI><br />\n<LI><b>Programs</b>: Entourage 2004 version 11.1.0 (Service Pack 1) or later.</LI><br />\n</ul><br />\nWhile the PST Import Tool is importing, you need free hard disk space that is twice the size of the PST file you are importing.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>Before you install the PST Import Tool</b><br />\n<ul>\n  <li>Make sure that Entourage is running.</li>\n  <li>Quit any other programs that are running, including virus-protection programs, because they might interfere with installation.</li>\n</ul>\n<br />\n<b>To install the PST Import Tool</b><br />\n<ol>\n  <li>Print this page if you want to use it as a reference when you are offline.</li>\n  <li>Make sure your computer meets the minimum system requirements.</li>\n  <li>Click the <b>Download</b> button.</li>\n  <li>Follow the instructions on the screen to save the file to your hard disk.<br />\n  If you are using Safari, the file is downloaded to the desktop unless you specified a different folder in the <b>Preferences</b> dialog box of Safari. (To check your preferences, on the <b>Safari</b> menu, click <b>Preferences,</b> and then click <b>General</b>.)<br />\n  If you are using Internet Explorer, the Download Manager saves the file to the desktop unless you specified a different folder in the <b>Preferences</b> dialog box of Internet Explorer. (To check your preferences, on the <b> Explorer</b> menu, click <b>Preferences</b>, and then click <b>Download Options</b> in the left pane). </li>\n  <li>In most Web browsers, the file you downloaded expands automatically. If it does not, on your hard disk, double-click the file that you downloaded in step&nbsp;4 to expand it. </li>\n  <li>Open the <b>PST Import Tool</b> volume on your desktop. This step may have been performed for you.</li>\n  <li>Drag the <b>PST Import Tool</b> program and the <b>Documentation</b> folder from the PST Import Tool volume to your desktop.</li>\n  <li>On the desktop, double-click the <b>PST Import Tool</b> program to start the import process.</li>\n  <li>Follow the steps in the PST Import Tool wizard.</li>\n</ol>\n<br />\n<b>To remove the PST Import Tool</b><br />\nThe PST Import Tool for Entourage does not include an uninstall feature. To remove the PST Import Tool for Entourage, drag it to the Trash.",
+    "additionalInformationSection": "For information about using the PST Import Tool for Entourage, after you install it, see the <b>PST Import Tool Help.htm</b> file, located in the <b>Documentation</b> folder. Although the documentation makes specific reference to Entourage 2004, the PST Import Tool can be used with versions of Entourage released after Entourage 2004, such as Entourage 2008.<br />\n<br />\nFor additional assistance, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=18214\" target=\"_blank\">Microsoft Web site</a> at www.microsoft.com/mac.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4788",
+    "downloadPreload": true
+}

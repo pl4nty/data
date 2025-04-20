@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2010 F# 2.0 SP1 Language Pack",
+    "downloadDescription": "Microsoft Visual Studio 2010 F# language pack SP1 contains translated text, such as error messages, for languages other than English.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme.htm",
+            "url": "https://download.microsoft.com/download/7/0/0/700c69e1-3367-43e0-ace6-2706c024fc96/readme.htm",
+            "size": "692",
+            "version": "2.0 SP1",
+            "datePublished": "7/15/2024 3:14:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio 2010 F# language pack contains translated text, such as error messages, for languages other than English. Without the installation of a Language Pack, these messages are displayed in English by default.Visual F# is a new programming language that provides support for functional as well as object-oriented and procedural programming with the runtime support, libraries, interoperability, tools and object model of the .NET Framework. This combination enables developers to solve problems that range from traditional web and windows applications to more demanding technical and high-performance computing uses.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0 SP1",
+    "detailsSection_file_name": [
+        "readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "692 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n  <ul>\r\n    <li>Windows XP SP3</li>\r\n    <li>Windows Server 2003 SP2</li>\r\n    <li>Windows Vista SP1 or later</li>\r\n    <li>Windows Server 2008 (not supported on Server Core)</li>\r\n    <li>Windows 7</li>\r\n    <li>Windows Server 2008 R2</li>\r\n    <li>Windows 2000 Service Pack 4</li>\r\n  </ul>\r\n  <li><b>Supported Architectures:</b></li>\r\n  <ul>\r\n    <li>x86</li>\r\n    <li>x64</li>\r\n  </ul>\r\n  <li><b>Hardware Requirements:</b></li>\r\n  <ul>\r\n    <li>Rcommended Minimum: Pentium 1 GHz or higher with 512 MB RAM or more</li>\r\n    <li>Minimum disk space: 50MB</li>\r\n  </ul>\r\n  <li><b>Perequisites:</b></li>\r\n  <ul>\r\n    <li>.NET Framework 2.0 or later</li>\r\n    <li>Windows Installer 3.1 or later</li>\r\n  </ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "On this page, click Download to start the download.<br/>\r\nTo save the download on your computer so that you can install it later, click Save.<br/>\r\nTo cancel the installation, click Cancel.<br/>",
+    "additionalInformationSection": "<a href=\"http://go.microsoft.com/fwlink/?LinkID=133421\">Visual Studio 2010 Readme</a><br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=210711\">Visual Studio 2010 SP1 Readme</a>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework 4 Site",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=186913"
+        },
+        {
+            "title": "visual Studio 2010 Site",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=211657"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6144",
+    "downloadPreload": true
+}

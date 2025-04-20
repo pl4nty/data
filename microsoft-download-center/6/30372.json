@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Back up and restore planning worksheet",
+    "downloadDescription": "This worksheet helps you record installed databases and content in a SharePoint environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2013-wksht-plan-backup.xlsx",
+            "url": "https://download.microsoft.com/download/b/f/e/bfebd20b-77e4-40da-b222-85dd27c1e35c/oit2013-wksht-plan-backup.xlsx",
+            "size": "13759",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This worksheet helps you plan to back up and restore a SharePoint environment. Record services, content databases, and web applications that you use on farms so that you can make sure to restore appropriate components.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "oit2013-wksht-plan-backup.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "13.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30372",
+    "downloadPreload": true
+}

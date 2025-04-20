@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Rights Management Service Client 2.1",
+    "downloadDescription": "RMS Client 2.1 is software designed for your client computers to help protect access to and usage of information flowing through applications that use  RMS services in Azure Information Protection and  AD RMS on-premises",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup_msipc_x86.exe",
+            "url": "https://download.microsoft.com/download/3/c/f/3cf781f5-7d29-4035-9265-c34ff2369fa2/setup_msipc_x86.exe",
+            "size": "18954272",
+            "version": "1.0.5406.9",
+            "datePublished": "1/7/2025 1:12:11 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "setup_msipc_x64.exe",
+            "url": "https://download.microsoft.com/download/3/c/f/3cf781f5-7d29-4035-9265-c34ff2369fa2/setup_msipc_x64.exe",
+            "size": "29402144",
+            "version": "1.0.5406.9",
+            "datePublished": "1/7/2025 1:12:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Rights Management Services Client 2.1 is software designed for your client computers to help protect access to and usage of information flowing through applications that use AD RMS on-premise and with Azure Information Protection. <br/> <br/>\r\nThe RMS Client ships as an optional download which can be, with acknowledgment and acceptance of its license agreement, freely distributed with your third-party software to enable client access content that has been rights protected by use and deployment of RMS services in your environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.5406.9",
+    "detailsSection_file_name": [
+        "setup_msipc_x86.exe",
+        "setup_msipc_x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "18.1 MB",
+        "28.0 MB"
+    ],
+    "detailsSection_file_date": "1/7/2025",
+    "systemRequirementsSection": "The following list identifies client and server platforms that can install Active Directory Rights Management Services Client2.1: \r\n<ul>\r\n<li> Windows 11</li>\r\n<li>Windows 10 </li>\r\n<li>Windows Server 2022</li>\r\n<li>Windows Server 2019</li>\r\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2012 R2 </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 11"
+    ],
+    "installInstructionSection": "The RMS Client is contained in a Windows Installer package (.msi) file called Setup.msi. Once downloaded on to your local computer, it can be installed using either of the following installation methods \r\n<br/>\r\n\u2022 Silent mode. By using the /qn switch as part of the command-line options of the Microsoft Windows Installer Tool (Msiexec.exe) you can silently install the RMS Client on client computers.\r\n    For example, the following example command shows the silent mode installation (assuming the RMS Client installer package is already downloaded to C:\\Downloads) msiexec /qn c:\\downloads\\setup.msi \r\n<br/>\r\n\u2022 Interactive mode. Alternately, you can install the RMS Client on client computers using the GUI-based interactive setup provided by the RMS Client Installation Wizard. To launch this type of installation you need only double-click on the RMS Client installer package (Setup.msi) in the folder to which it was copied or downloaded on your local computer.\r\n<br/>\r\nAD RMS Client 2.1 installation package will upgrade RMS Client 2.0 if AD RMS Client 2.0 was already installed on the machine.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38396",
+    "downloadPreload": true
+}

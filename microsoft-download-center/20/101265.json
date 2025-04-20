@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Web Demonstration and Explanation Dataset",
+    "downloadDescription": "Web Demonstration and Explanation Dataset: This data was collected for and used in our ACL 2020 paper that demonstrates the potential to effectively combine explanations and demonstrations to learn web-based procedures. This data consists of 520 explanations and corresponding demonstrations of web-based tasks from the Mini Word-of-Bits.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "explained-demonstrations-data.zip",
+            "url": "https://download.microsoft.com/download/0/a/5/0a5c1e33-7f7a-4b07-85a2-e054d16ff3da/explained-demonstrations-data.zip",
+            "size": "6456058",
+            "version": "May 2020",
+            "datePublished": "7/15/2024 4:23:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Web Demonstration and Explanation Dataset This data was collected for and used in our ACL 2020 paper that demonstrates the potential to effectively combine explanations and demonstrations to learn web-based procedures. This data consists of 520 explanations and corresponding demonstrations of web-based tasks from the Mini Word-of-Bits.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May 2020",
+    "detailsSection_file_name": [
+        "explained-demonstrations-data.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101265",
+    "downloadPreload": true
+}

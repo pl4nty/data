@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Title",
+    "downloadDescription": "Short Desc",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "newrelease.txt",
+            "url": "https://download.microsoft.com/download/d2bbf82b-6371-439b-8894-e45d124950bb/newrelease.txt",
+            "size": "8",
+            "version": "2",
+            "datePublished": "2/14/2025 10:27:52 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Long Description",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/321321323121",
+        "name": "321321323121"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/123123213",
+        "name": "123123213"
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "newrelease.txt"
+    ],
+    "detailsSection_file_size": [
+        "8 bytes"
+    ],
+    "detailsSection_file_date": "2/14/2025",
+    "systemRequirementsSection": "Requirement",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Install ins",
+    "additionalInformationSection": "Some additional information",
+    "relatedResourcesSection": [
+        {
+            "title": "google",
+            "url": "https://www.google.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108006",
+    "downloadPreload": true
+}

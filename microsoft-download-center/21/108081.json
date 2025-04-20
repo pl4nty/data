@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Scenario Testing",
+    "downloadDescription": "Testing",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Page testing.docx",
+            "url": "https://download.microsoft.com/download/bfbd1bd7-6d08-475f-888f-e6896fe8180c/Page testing.docx",
+            "size": "121344",
+            "version": "1",
+            "datePublished": "3/25/2025 5:45:06 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Testing",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Page testing.docx"
+    ],
+    "detailsSection_file_size": [
+        "118.5 KB"
+    ],
+    "detailsSection_file_date": "3/25/2025",
+    "systemRequirementsSection": "Testing",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Apple Mac OS X v. 10.4 Tiger"
+    ],
+    "installInstructionSection": "Testing",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108081",
+    "downloadPreload": true
+}

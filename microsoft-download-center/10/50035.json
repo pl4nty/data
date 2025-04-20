@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 IoT Core for Raspberry Pi 2",
+    "downloadDescription": "This is the core OS image that powers Windows IoT platform on Raspberry Pi 2. Windows 10 IoT Core is the smallest version of the Windows 10 editions that leverages the Windows 10 common core architecture. This edition enables building low-cost devices with fewer resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "10586.0.151029-1700.TH2_Release_IOTCoreRPi_armFRE.ISO",
+            "url": "https://download.microsoft.com/download/b/8/c/b8c74558-9284-4ec0-a706-fbb17afcb383/10586.0.151029-1700.TH2_Release_IOTCoreRPi_armFRE.ISO",
+            "size": "526260224",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:06:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the core OS image that powers Windows IoT platform on Raspberry Pi 2. Windows 10 IoT Core is the smallest version of the Windows 10 editions that leverages the Windows 10 common core architecture. This edition enables building low-cost devices with fewer resources. Development for Windows 10 IoT Core leverages the Universal Windows Platform.\n\nLearn more about Windows 10 IoT Core <a href=\"http://go.microsoft.com/fwlink/?LinkID=619770\">here</a>.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "10586.0.151029-1700.TH2_Release_IOTCoreRPi_armFRE.ISO"
+    ],
+    "detailsSection_file_size": [
+        "501.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating system\n\u2022 Windows 10 (Build 10240 or higher)\n\n Learn about other system requirements <a href=\"http://go.microsoft.com/fwlink/?LinkID=618404\">here</a>.\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "\n<ol>\n<li>Click the Download button on this page to start the download.</li>\n<li>Click Save to save this program to disk.</li>\n<li>Follow the rest of the instructions on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=619771\">Setup Raspberry Pi 2 page</a>.</li>\n<li> To develop Universal Windows Platform apps on Raspberry Pi 2, you will also need to <a href=\"http://go.microsoft.com/fwlink/?LinkID=698523\">set up your PC</a>.</li>\n</ol>\n",
+    "additionalInformationSection": "<a href=\"http://www.windowsondevices.com\">WindowsOnDevices.com</a>\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows 10 Insider Program",
+            "url": "https://insider.windows.com/"
+        },
+        {
+            "title": "visual Studio 2015",
+            "url": "https://www.visualstudio.com/vs-2015-product-editions"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50035",
+    "downloadPreload": true
+}

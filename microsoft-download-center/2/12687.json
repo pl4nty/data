@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 Installation Guide",
+    "downloadDescription": "This document provides information about and instructions for installing Microsoft Dynamics AX 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AX2012InstallationGuide.pdf",
+            "url": "https://download.microsoft.com/download/c/4/2/c42e983d-8990-4b20-a1fe-613c05d7bb0d/AX2012InstallationGuide.pdf",
+            "size": "4149706",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Installation Guide for Microsoft Dynamics AX 2012 provides step-by-step instructions for installing Microsoft Dynamics AX components.\r\n<br />\r\n<br /> \r\n<b>Note:</b> For the most up-to-date information for Microsoft Dynamics AX administrators, see the <a href=\"http://technet.microsoft.com/en-us/library/gg852966.aspx\">Microsoft Dynamics AX 2012 Technical Library</a>. Some of the information in this guide applies only to Microsoft Dynamics AX 2012 R3 installations, and some information applies only to AX 2012 R2, AX 2012 Feature Pack, or AX 2012.<br /><br />\r\nUnless otherwise noted in this guide, all other content applies to AX 2012, AX 2012 Feature Pack, AX 2012 R2, and AX 2012 R3.<br />\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "AX2012InstallationGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12687",
+    "downloadPreload": true
+}

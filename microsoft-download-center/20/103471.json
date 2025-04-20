@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Reference Lambda Architecture for Big Data Platform in Azure",
+    "downloadDescription": "Reference Lambda Architecture for Big Data Platform in Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Reference Lambda Architecture for Big Data Platform in Azure.pdf",
+            "url": "https://download.microsoft.com/download/f/c/0/fc07472e-07e2-4152-ac97-3aea2ea8a7e2/Reference Lambda Architecture for Big Data Platform in Azure.pdf",
+            "size": "902446",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper outlines approaches to build Cloud Data & Analytics Platform (CDAP) on Azure for \r\norganizations looking to leverage benefits of big data on Microsoft Cloud Platform offerings such \r\nas Azure HDInsight, Azure Cosmos DB, Azure Databricks, Azure SQL Data Warehouse, Azure SQL \r\nMI & Azure SQL DB.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Reference Lambda Architecture for Big Data Platform in Azure.pdf"
+    ],
+    "detailsSection_file_size": [
+        "881.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103471",
+    "downloadPreload": true
+}

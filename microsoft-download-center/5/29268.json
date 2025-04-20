@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visio 2010 and SharePoint 2010 Extensions for System Center 2012",
+    "downloadDescription": "Enable Visio diagram to integrate current health state from System Center 2012 - Operations Manager ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visio 2010 and SharePoint 2010 Extensions for System Center 2012.zip",
+            "url": "https://download.microsoft.com/download/6/8/b/68bf2693-325b-4992-830b-9283564884bb/Visio 2010 and SharePoint 2010 Extensions for System Center 2012.zip",
+            "size": "3714954",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Visio 2010 Add-in will enable diagrams to show health states of System Center 2012 - Operations Manager managed objects within the Visio diagram.  This live health state functionality is available both when viewing the document in Visio 2010 and in SharePoint 2010. <br/>\r\n<br/>\r\n<b>Feature Summary </b><br/>\r\n<ul>\r\n<li> Open exported Operations Manager distributed application diagrams in Visio </li>\r\n<li> Associate Visio shapes to objects in Operations Manager </li>\r\n<li> Poll for health updates on the relevant Operations Manager objects to update the health state as shown in Visio </li>\r\n<li> Insert icons from Operations Manager into Visio  </li>\r\n</ul>\r\n<br/>\r\n<ul>\r\n<li> 4/1/2012 - Initial release for System Center 2012, version 2.0 </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Visio 2010 and SharePoint 2010 Extensions for System Center 2012.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> </li>\r\n<ul>\r\n<li> Visio 2010 Premium and (optionally) SharePoint 2010 Enterprise </li>\r\n<li> System Center 2012 - Operations Manager </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "Installation instructions are found at <a href=\"http://go.microsoft.com/fwlink/?LinkId=245190\">http://go.microsoft.com/fwlink/?LinkId=245190</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29268",
+    "downloadPreload": true
+}

@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2009 Scale-out Configurations Poster",
+    "downloadDescription": "This poster describes typical scale-out configurations and options for BizTalk Server 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Server 2009 Scale-out Configurations Poster.pdf",
+            "url": "https://download.microsoft.com/download/7/0/8/708d846c-f90e-4ddd-a8a4-cfcc074d0f06/BizTalk Server 2009 Scale-out Configurations Poster.pdf",
+            "size": "2856954",
+            "version": "January 2009",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This poster describes typical scenarios and commonly used options for scaling out BizTalk Server 2009 physical configurations. It illustrates how to scale out to achieve high availability through load balancing and fault tolerance and how to configure for high-throughput scenarios. The poster is intended for use by IT professionals and developers who need to design, deploy, and manage large-scale implementations of BizTalk Server 2009. The poster dimensions are 26\u201dx38\u201d.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2009",
+    "detailsSection_file_name": [
+        "BizTalk Server 2009 Scale-out Configurations Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Adobe Reader</li><br/>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Before you click <b>Download</b>, you must configure the Adobe Reader to not open a PDF file in your browser. To do this:</li><ol><li>Open <b>Adobe Reader</b>.</li><li>On the Edit menu, click <b>Preferences</b>.</li><li> Under <b>Categories</b>, select <b>Internet</b>.</li><li>Clear the <b>Display PDF in browser</b> option.</li><li>Click <b>OK</b>.</li><li>Close Adobe Reader.</li><li> On the Download page, click the <b>Download</b> button.</li></ol>\r\n\r\n<br><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li></br><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>.</li></ul></ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "bizTalk Server 2006 R2 Posters",
+            "url": "http://msdn.microsoft.com/en-us/library/dd431686(BTS.10).aspx"
+        },
+        {
+            "title": "bizTalk Server 2009 Posters",
+            "url": "http://msdn.microsoft.com/en-us/library/dd450982(BTS.10).aspx"
+        },
+        {
+            "title": "bizTalk Server 2009 Scale-out Configurations Interactive Poster (download page)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&familyID=d9cc7d13-7324-4f24-88de-7b063fde62e8"
+        },
+        {
+            "title": "bizTalk Server 2009 Scale-out Configurations Interactive Poster (online viewing)",
+            "url": "http://www.microsoft.com/biztalk/en/us/technical-posters/sl/default.html"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9729",
+    "downloadPreload": true
+}

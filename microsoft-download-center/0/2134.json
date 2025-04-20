@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "BPOS Deployment Quick Overview Reference",
+    "downloadDescription": "The Deployment Overview Quick Reference provides a brief overview of the Business Productivity Online Standard Suite Deployment guide and methodology.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deployment_Overview_Quick_Reference.pdf",
+            "url": "https://download.microsoft.com/download/6/e/0/6e07e071-038c-4796-b6b1-966da63c255d/Deployment_Overview_Quick_Reference.pdf",
+            "size": "284960",
+            "version": "June 2010",
+            "datePublished": "7/15/2024 3:13:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae makes it easy for your organization to migrate to the Business Productivity Online Standard Suite (BPOS-S). Our proven deployment methodology (with more than a million seats deployed), will help your organization plan, prepare, and migrate into the cloud. \r\n\r\nThe Deployment Overview Quick Reference provides a brief overview of the Business Productivity Online Standard Suite Deployment guide and methodology.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2010",
+    "detailsSection_file_name": [
+        "Deployment_Overview_Quick_Reference.pdf"
+    ],
+    "detailsSection_file_size": [
+        "278.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is PDF document. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Online Standard Service Descriptions",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=c60c0af0-10cc-4b11-bcef-b989c1f168b0"
+        },
+        {
+            "title": "deploying Business Productivity Online Suite",
+            "url": "http://www.microsoft.com/online/deployment/deploy.aspx"
+        },
+        {
+            "title": "microsoft Online TechCenter",
+            "url": "http://technet.microsoft.com/en-us/msonline/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2134",
+    "downloadPreload": true
+}

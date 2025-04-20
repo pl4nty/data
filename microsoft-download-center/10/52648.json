@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Phlat (Prototype for Helpful Lookup and Tagging)",
+    "downloadDescription": "Phlat is a new interface for Windows Desktop Search, enabling search through a user's own e-mail, files, and viewed Web pages. Last published: April 19, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PhlatSetup.msi",
+            "url": "https://download.microsoft.com/download/8/e/0/8e063011-3732-4c1b-8047-3a5f811f63a3/PhlatSetup.msi",
+            "size": "1634816",
+            "version": "1.0.2299.14990",
+            "datePublished": "7/15/2024 4:03:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Phlat is a new interface for Windows Desktop Search, enabling search through a user's own e-mail, files, and viewed Web pages. Phlat makes it easy for users to specify queries and filters, attempting to integrate search and browsing in one intuitive interface. In addition, Phlat supports a unified tagging scheme for organizing personal content across storage systems, such as files and e-mail.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.2299.14990",
+    "detailsSection_file_name": [
+        "PhlatSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52648",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Talent extensibility solution: Flow - Form Connect",
+    "downloadDescription": "The Flow \u2013 Form Connect template can be used to read data from Microsoft Forms and store it in a Common Data Service for Apps entity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Candidate Self Assessment_form_initiate and Extract.xlsx",
+            "url": "https://download.microsoft.com/download/e/d/6/ed68f8ff-93a2-48b3-8e61-da37f8975908/Candidate Self Assessment_form_initiate and Extract.xlsx",
+            "size": "201693",
+            "version": "1",
+            "datePublished": "7/15/2024 3:03:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Flow-FormConnect_20190314210629.zip",
+            "url": "https://download.microsoft.com/download/e/d/6/ed68f8ff-93a2-48b3-8e61-da37f8975908/Flow-FormConnect_20190314210629.zip",
+            "size": "3483",
+            "version": "1",
+            "datePublished": "7/15/2024 3:03:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Flow \u2013 Form Connect template can be used to read data from Microsoft Forms and store it in a Common Data Service for Apps entity.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Candidate Self Assessment_form_initiate and Extract.xlsx",
+        "Flow-FormConnect_20190314210629.zip"
+    ],
+    "detailsSection_file_size": [
+        "197.0 KB",
+        "3.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Talent\r\nMicrosoft Flow",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Files will then need to be extracted.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58084",
+    "downloadPreload": true
+}

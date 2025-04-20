@@ -1,0 +1,143 @@
+{
+    "error": "",
+    "downloadTitle": "Remote Server Administration Tools for Windows 8",
+    "downloadDescription": "Remote Server Administration Tools for Windows 8 enables IT administrators to manage roles and features that are installed on computers that are running Windows Server 2012 from a remote computer that is running Windows 8.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.2-KB2693643-x86.msu",
+            "url": "https://download.microsoft.com/download/4/3/f/43fac524-f605-426e-a2ae-ead03d264fde/Windows6.2-KB2693643-x86.msu",
+            "size": "99918668",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:55:27 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows6.2-KB2693643-x64.msu",
+            "url": "https://download.microsoft.com/download/4/3/f/43fac524-f605-426e-a2ae-ead03d264fde/Windows6.2-KB2693643-x64.msu",
+            "size": "107034814",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:55:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Remote Server Administration Tools for Windows 8 includes Server Manager, Microsoft Management Console (MMC) snap-ins, consoles, Windows PowerShell cmdlets and providers, and command-line tools for managing roles and features that run on Windows Server 2012.  In limited cases, the tools can be used to manage roles and features that are running on Windows Server 2008 R2 or Windows Server 2008. Some of the tools work for managing roles and features on Windows Server 2003.\n<br /><br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.2-KB2693643-x86.msu",
+        "Windows6.2-KB2693643-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "95.3 MB",
+        "102.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>**Remote Server Administration Tools for Windows 8 can be installed ONLY on computers that are running Windows 8.**</b>  Remote Server Administration Tools cannot be installed on computers with an Advanced RISC Machine (ARM) architecture, or other system-on-chip devices.\n<br /><br />\nRemote Server Administration Tools for Windows 8 runs on both x86- and x64-based editions of Windows 8. Download and install the version that matches the architecture of the computer on which you plan to install the administration tools.  If you are not sure whether your computer is x86- or x64-based, see <a href=\"http://support.microsoft.com/kb/827218\">How to determine whether a computer is running a 32-bit version or 64-bit version of the Windows operating system</a>.\n<br /><br />\r\nRemote Server Administration Tools for Windows 8 is available in the following languages:  cs-CZ, de-DE, en-US, es-ES, fr-FR, hu-HU, it-IT, ja-JP, ko-KR, nl-NL, pl-PL, pt-BR, pt-PT, ru-RU, sv-SE, tr-TR, zh-CN, zh-HK, and zh-TW. If the system UI language of your Windows 8 operating system does not match any of the available RSAT languages, you must first install a Windows 8 Language Pack for a language that is supported by RSAT, and then try installing Remote Server Administration Tools for Windows 8 again. Install supported language packs from Windows Update by using instructions in the following KB article: <a href=\"http://support.microsoft.com/kb/2607607\">Windows 8 language packs are available for computers that are running Windows 8</a>.\r\n<br /><br />\n<b>IMPORTANT:</b>  Remove all older versions of Administration Tools Pack or Remote Server Administration Tools\u2014including earlier prerelease versions, and releases of the tools for different languages or locales\u2014from the computer before you install Remote Server Administration Tools for Windows 8. Only one copy at a time of Remote Server Administration Tools can be installed on a computer. If you have upgraded to Windows 8 from Windows 7, you will need to install Remote Server Administration Tools for Windows 8 on the computer; no earlier releases of Remote Server Administration Tools are still installed on a computer that you have upgraded to Windows 8. \n<br /><br />\nRemote Server Administration Tools for Windows 8 includes support for remote management of computers that are running the Server Core installation option or the Minimal Server Graphical Interface configuration of Windows Server 2012, and in limited cases, the Server Core installation options of Windows Server 2008 R2, or Windows Server 2008. However, Remote Server Administration Tools for Windows 8 cannot be installed on any versions of the Windows Server operating system.\n<br /><br />\nEarlier releases of Remote Server Administration Tools (such as those for Windows 7) are not available--nor do they run--on Windows 8. Remote Server Administration Tools for Windows 8 can be used to manage some roles and features that run on Windows Server 2008 R2, but has limited functionality managing roles on servers that are running releases of Windows Server that are older than Windows Server 2012. For a table describing the available tools and the versions of roles and features that they support, see <a href=\"http://social.technet.microsoft.com/wiki/contents/articles/2202.remote-server-administration-tools-rsat-for-windows-vista-windows-7-windows-8-release-preview-windows-server-2008-windows-server-2008-r2-and-windows-server-2012-dsforum2wiki.aspx\">Remote Server Administration Tools (RSAT) for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012</a>.\n<br /><br />\nServer Manager is included with Remote Server Administration Tools for Windows 8; GUI-based tools that are part of this release of Remote Server Administration Tools can be opened by using commands on the Tools menu of the Server Manager console. To use Server Manager to access and manage remote servers that are running Windows Server 2008 or Windows Server 2008 R2, you must install several updates on the older operating systems. For more information about requirements for using Server Manager to manage remote servers, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=241358\">Manage multiple, remote servers with Server Manager</a>.\n<br /><br />\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8 Pro"
+    ],
+    "installInstructionSection": "<b>To install supported language packs when the system UI language is not supported by the download package</b>\r\n<br /><br />\r\n<ol><li>Follow instructions in <a href=\"http://support.microsoft.com/kb/2607607\">KB 2607607</a> to install supported Windows 8 language packs from Windows Update.  Be sure to install one of the language packs that is supported by RSAT as described in the System Requirements section of this page.</li>\r\n<li>When the language pack installation is complete, verify that the language pack is installed by running <b>get-windowspackage -online</b> in a Windows PowerShell session that has been started with elevated user rights (Run as Administrator).</li>\r\n<li>The language pack entry starts with the following:\r\n<br /><br />Microsoft-Windows-Client-LanguagePack-Package~(GUID)~(architecture)~(supported language)~6.2.9200.16384<br /><br /></li>\r\n<li>After you have installed a supported language pack, go on to the next procedure, \"To install Remote Server Administration Tools for Windows 8.\"</li></ol>\r\n<b>To install Remote Server Administration Tools for Windows 8</b>\n<br /><br />\n<ol><li>Download the Remote Server Administration Tools for Windows 8 package that is appropriate for your computer's architecture. You can either run the installer from the Download Center website, or save the download package to a local computer or share. If you save the download package to a local computer or share, double-click the installer program, <b>Windows6.2-KB2693643-x64.msu</b> or <b>Windows6.2-KB2693643-x86.msu</b>, depending on the architecture of the computer on which you want to install the tools.</li>\n<li>When you are prompted by the Windows Update Standalone Installer dialog box to install the update, click <b>Yes</b>.</li>\n<li>Read and accept the license terms. Click <b>I accept.</b> Installation requires a few minutes to finish.</li></ol>\n<br /><br />\n<b>NOTE:</b> In this release of Remote Server Administration Tools, all tools are enabled by default.  There is no need to open <b>Turn Windows features on or off</b> in Windows 8, and enable the tools that you want to use. \n<br /><br />\n<b>To turn off specific tools</b>\n<ol><li>On the desktop, hover in the upper right corner of the screen, and then click <b>Settings</b>.</li>\n<li>On the <b>Desktop</b> menu, click <b>Control Panel</b>.</li>\n<li>Click <b>Programs</b>, and then in <b>Programs and Features</b>, click <b>Turn Windows features on or off</b>.</li>\n<li>In the <b>Windows Features</b> dialog box, expand <b>Remote Server Administration Tools</b>, and then expand either <b>Role Administration Tools</b> or <b>Feature Administration Tools</b>.</li>\n<li>Clear the check boxes for any tools that you want to turn off. Click <b>OK</b>, and then close Control Panel.</li></ol>\n<br /><br />\n<b>To uninstall Remote Server Administration Tools for Windows 8</b>\n<ol><li>On the desktop, hover in the upper right corner of the screen, and then click <b>Settings</b>.</li>\n<li>On the <b>Desktop</b> menu, click <b>Control Panel</b>.</li>\n<li>Under <b>Programs</b>, click <b>Uninstall a program</b>.</li>\n<li>Click <b>View installed updates</b>.</li>\n<li>Right-click <b>Update for Microsoft Windows (KB2693643)</b>, and then click <b>Uninstall</b>.</li>\n<li>When you are asked if you are sure you want to uninstall the update, click <b>Yes</b>.</li></ol>\n\n\n\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "remote Server Administration Tools (RSAT) for Windows Vista, Windows 7, Windows 8, Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=221055"
+        },
+        {
+            "title": "kB2693643: Description of Remote Server Administration Tools for Windows 8",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkId=241376"
+        },
+        {
+            "title": "remote Server Administration Tools for Windows 8 Help",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=238562"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28972",
+    "downloadPreload": true
+}

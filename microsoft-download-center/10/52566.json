@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "CHESS: Disciplined Concurrency Testing",
+    "downloadDescription": "CHESS is a tool for disciplined testing of concurrent programs. Last published: April 19, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CHESS.msi",
+            "url": "https://download.microsoft.com/download/6/8/9/6890825a-f97d-467e-a830-1d274b83a1a3/CHESS.msi",
+            "size": "18980864",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CHESS is a tool for disciplined testing of concurrent programs. CHESS requires users to develop concise concurrent tests for that explore one concurrency scenario\u2014or a few scenarios\u2014in their programs. Given such a test, CHESS systematically enumerates all behaviors of the program being tested to find concurrency errors, data races, deadlocks, and livelocks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "CHESS.msi"
+    ],
+    "detailsSection_file_size": [
+        "18.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52566",
+    "downloadPreload": true
+}

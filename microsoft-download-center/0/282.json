@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Online Protection for Exchange (FOPE) 11.1 Product Documents",
+    "downloadDescription": "This download contains the Administration Center User Guide for the Forefront Online Protection for Exchange (FOPE) 11.1 release.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "en-us-FOPE-User-Guide-11-1.doc",
+            "url": "https://download.microsoft.com/download/4/a/b/4abd7ce3-cc09-4a5b-8c4d-3fddd6fe1ec7/en-us-FOPE-User-Guide-11-1.doc",
+            "size": "3440128",
+            "version": "10.1",
+            "datePublished": "7/15/2024 3:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "<b>Administration Center User Guide:</b> This guide provides in-depth information and instructions for using the Microsoft\u00ae Forefront Online Protection for Exchange (FOPE) Administration Center, a Web-based tool that allows you to manage your email filtering account services. It includes essential information for finding what you need in the Administration Center and using it to optimize your FOPE antispam, antivirus, filtering, user management, and reporting services, among others. The content of this downloadable document may be out of date. To find the latest information about how to use the FOPE service, see the User Guide overview at http://go.microsoft.com/fwlink/?LinkID=132425.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "en-us-FOPE-User-Guide-11-1.doc"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click on the \"Download\" button to begin your download. <br />\nSelect the file for download, and specify a location to Save the file.",
+    "relatedResourcesSection": [
+        {
+            "title": "general product information about FOPE",
+            "url": "http://www.microsoft.com/forefront/online-protection-for-exchange/en/us/default.aspx"
+        },
+        {
+            "title": "techNet product documentation for FOPE",
+            "url": "http://technet.microsoft.com/en-us/library/ff715002.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "282",
+    "downloadPreload": true
+}

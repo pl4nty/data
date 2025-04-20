@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Developing an end-to-end Windows Store app using JavaScript: Hilo (Windows) - Book Download",
+    "downloadDescription": "This is a PDF version of the on-line guidance \"Developing an end-to-end Windows Store app using JavaScript: Hilo (Windows)\"",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HiloJavaScript.pdf",
+            "url": "https://download.microsoft.com/download/a/0/4/a0447d56-1d45-467f-ba99-ee088e016457/HiloJavaScript.pdf",
+            "size": "2233431",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The JavaScript version of the Hilo photo sample provides guidance to JavaScript developers who want to create a Windows 8 app using HTML, CSS, JavaScript, the Windows Runtime, and modern development patterns. Hilo comes with source code and documentation. This is a PDF version of the on-line guidance \"Developing an end-to-end Windows Store app using JavaScript: Hilo (Windows).\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "HiloJavaScript.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li> To run the sample described in this document, you need Windows 8. </li>\r\n  <li>To read the PDF, you will need a document reader capable of displaying PDF format documents.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "To read the PDF, you will need a document reader capable of displaying PDF format documents.\r\n<br/><br/>\r\nThe sample code can be found here: <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=264980\">Hilo JavaScript sample</a>.\r\n\r\n",
+    "additionalInformationSection": "The sample code can be found here: <a href=\"http://aka.ms/hilojs-code\">Hilo JavaScript sample</a>.\r\n<br/><br/>\r\nThe online documentation can be found here: <a href=\"http://msdn.microsoft.com/en-us/library/windows/apps/jj674095.aspx\">Developing an end-to-end Windows Store app using JavaScript: Hilo (Windows)</a>.\r\n<br/><br/>\r\nFor help and support visit the <a href=\"http://hilojs.codeplex.com/\">Hilo JavaScript community site</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "hilo JavaScript sample",
+            "url": "http://aka.ms/hilojs-code"
+        },
+        {
+            "title": "hilo JavaScript community site",
+            "url": "http://hilojs.codeplex.com/"
+        },
+        {
+            "title": "hilo JavaScript online docs",
+            "url": "http://msdn.microsoft.com/en-us/library/windows/apps/jj674095.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36059",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Teams BYOD Rooms and Bookable Desks Manual Device Discovery script",
+    "downloadDescription": "A PowerShell script that queries and exports attached peripheral information.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Get-TeamsBYODSpaceDevices.zip",
+            "url": "https://download.microsoft.com/download/f/2/5/f2514136-8399-491d-8214-f553464eb32c/Get-TeamsBYODSpaceDevices.zip",
+            "size": "6795",
+            "version": "1",
+            "datePublished": "8/26/2024 10:25:01 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A PowerShell script that queries and exports attached peripheral information for use in Microsoft Teams Bring Your Own Device (BYOD) data entry in the Pro Management Portal (PMP) for enhanced reporting.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Get-TeamsBYODSpaceDevices.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.6 KB"
+    ],
+    "detailsSection_file_date": "8/26/2024",
+    "systemRequirementsSection": "<ul><li>PowerShell on Windows</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol><li>Download and extract Get-TeamsBYODSpaceDevices.zip, or check GitHub for a newer version at <a href=\"https://gist.github.com/adthom/b703078806adeb71fe860929df0bd4c1\">https://gist.github.com/adthom/b703078806adeb71fe860929df0bd4c1</a>.</li>\r\n<li>Move the script, Get-TeamsBYODSpaceDevices.ps1, to your preferred location on your computer.</li>\r\n<li>Unblock execution of Get-TeamsBYODSpaceDevices.ps1.</li>\r\n<li>In a PowerShell window, run the script by entering its path and file name. If the current folder is the location of the script, enter: <b>.\\Get-TeamsBYODSpaceDevices.ps1</b>.</li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106063",
+    "downloadPreload": true
+}

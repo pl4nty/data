@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Duo Emulator",
+    "downloadDescription": "Microsoft collects data about your use of the Surface Duo Emulator to improve the product. We respect your privacy. To learn more, please read Microsoft\u2019s online Privacy Statement: https://privacy.microsoft.com/privacystatement",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android12L_arm64_2022.815.115_macOS.dmg",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android12L_arm64_2022.815.115_macOS.dmg",
+            "size": "1246754134",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_macOS.dmg",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_macOS.dmg",
+            "size": "1471505532",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_DebianLinux.deb",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_DebianLinux.deb",
+            "size": "1073085452",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_Windows.exe",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_Windows.exe",
+            "size": "1068151648",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android11_2022.523.3_windows.exe",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android11_2022.523.3_windows.exe",
+            "size": "864114320",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android11_2022.523.3_ubuntu.deb",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android11_2022.523.3_ubuntu.deb",
+            "size": "867567592",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android11_2022.523.3_mac.dmg",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android11_2022.523.3_mac.dmg",
+            "size": "1205707284",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android10_2021.816.1_windows.exe",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android10_2021.816.1_windows.exe",
+            "size": "731296288",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android10_2021.816.1_ubuntu.deb",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android10_2021.816.1_ubuntu.deb",
+            "size": "733874740",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SurfaceDuoEmulator_Android10_2021.816.1_mac.dmg",
+            "url": "https://download.microsoft.com/download/b/7/e/b7ee1e0d-4490-4a68-8ba3-ff41533bca7a/SurfaceDuoEmulator_Android10_2021.816.1_mac.dmg",
+            "size": "1035426445",
+            "version": "2022.815.115",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more, please read Microsoft\u2019s online <a href=\"https://privacy.microsoft.com/privacystatement\">Privacy Statement</a>.\r\n<br></br>\r\nDownload these artifacts to install the Surface Duo Emulator packages, supporting Android 10, 11 and 12L.\r\n<br></br>\r\nDocumentation is located at <a href=\"https://learn.microsoft.com/dual-screen/\">https://learn.microsoft.com/dual-screen</a>.\r\n<br></br>\r\nThese packages contain the Surface Duo Emulator Android OS images. \r\nThe software running in the emulator is pre-release software and is solely intended for Android application developers looking to enhance their apps for dual-screen devices.\r\n<br></br>\r\nYou may be prompted to allow Google to collect data. This is subject to Google\u2019s terms and conditions.\r\n<br></br>\r\n<b>The \"Date Published\" shown on this page represents the last date a file on this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2022.815.115",
+    "detailsSection_file_name": [
+        "SurfaceDuoEmulator_Android12L_arm64_2022.815.115_macOS.dmg",
+        "SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_macOS.dmg",
+        "SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_DebianLinux.deb",
+        "SurfaceDuoEmulator_Android12L_x86_64_2022.815.115_Windows.exe",
+        "SurfaceDuoEmulator_Android11_2022.523.3_windows.exe",
+        "SurfaceDuoEmulator_Android11_2022.523.3_ubuntu.deb",
+        "SurfaceDuoEmulator_Android11_2022.523.3_mac.dmg",
+        "SurfaceDuoEmulator_Android10_2021.816.1_windows.exe",
+        "SurfaceDuoEmulator_Android10_2021.816.1_ubuntu.deb",
+        "SurfaceDuoEmulator_Android10_2021.816.1_mac.dmg"
+    ],
+    "detailsSection_file_size": [
+        "1.2 GB",
+        "1.4 GB",
+        "1023.4 MB",
+        "1018.7 MB",
+        "824.1 MB",
+        "827.4 MB",
+        "1.1 GB",
+        "697.4 MB",
+        "699.9 MB",
+        "987.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "In addition to the <a href=\"https://developer.android.com/studio#Requirements\">Android Studio Requirements</a> and the <a href=\"https://developer.android.com/studio/run/emulator#requirements\">Emulator Requirements</a>,\r\n<br></br>\r\nthe Surface Duo Emulator packages have the following system requirements:\r\n<br></br>\r\n<b>Supported Operating Systems</b>\r\n<li>Microsoft\u00ae Windows\u00ae 10/11 64-bit</li>\r\n<li>Debian\u00ae based Linux\u00ae distributions 64-bit</li>\r\n<li>macOS\u00ae 10.14 (Mojave) or higher 64-bit</li>\r\n<br></br>\r\n<b>Hardware requirements</b>\r\n<li>x86_64 or arm64 CPU architecture with virtualization support</li>\r\n<li>8 GB of RAM, more recommended</li>\r\n<li>15 GB of available disk space, more recommended (4 GB for system images and 11 GB for each virtual device userdata)</li>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10",
+        "Ubuntu",
+        "Linux",
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "Documentation is located at <a href=\"https://learn.microsoft.com/dual-screen\">https://learn.microsoft.com/dual-screen</a>.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100847",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SSREFLECT tactics for Coq",
+    "downloadDescription": "The SSREFLECT package is an extension module for the Coq proof assistant developed at INRIA. Last published: May 5, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ssreflect.msi",
+            "url": "https://download.microsoft.com/download/3/5/4/354ca176-fa0e-4364-a679-532b47befbb4/ssreflect.msi",
+            "size": "160768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SSREFLECT package is an extension module for the Coq proof assistant developed at INRIA. It implements a set of proof tactics designed to support the extensive use of small-scale reflection in formal proofs\u2014using the internal computation of the formal system to automate reliably and efficiently the trivial operations that tend to\r\nclutter formal proofs. Many of the new features supported by SSREFLECT should actually be of interest to most advanced users of Coq; they include support for better layout and control flow in proof scripts, as well as for maintaining and enforcing precise dataflow. SSREFLECT also provides unified facilities for precise induction loading and intensive rewriting. The reflection-specific features are comparatively modest: a short theory file and a \"view\" feature that enables switching seemlessly between the new computational style and the traditional deductive style of proof. For better results, the SSREFLECT package should be compiled and statically linked with the standard Coq system. Finally, the package is fully backward compatible; Coq proofs that do not use the new features should compile unchanged with the extended system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ssreflect.msi"
+    ],
+    "detailsSection_file_size": [
+        "157.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52404",
+    "downloadPreload": true
+}

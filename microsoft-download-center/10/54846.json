@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "The Power of SharePoint",
+    "downloadDescription": "Explores how to build out a basic project-management app based on SharePoint lists, PowerApps, Microsoft Flow, and Power BI.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "spo-scenario.docx",
+            "url": "https://download.microsoft.com/download/a/3/1/a31db39f-d3f0-48ae-b0f5-829ac56cfc18/spo-scenario.docx",
+            "size": "57453",
+            "version": "1",
+            "datePublished": "7/15/2024 4:38:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "project-analysis.pbix",
+            "url": "https://download.microsoft.com/download/a/3/1/a31db39f-d3f0-48ae-b0f5-829ac56cfc18/project-analysis.pbix",
+            "size": "134474",
+            "version": "1",
+            "datePublished": "7/15/2024 4:38:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "project-requests-app.msapp",
+            "url": "https://download.microsoft.com/download/a/3/1/a31db39f-d3f0-48ae-b0f5-829ac56cfc18/project-requests-app.msapp",
+            "size": "37161",
+            "version": "1",
+            "datePublished": "7/15/2024 4:38:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "project-management-app.msapp",
+            "url": "https://download.microsoft.com/download/a/3/1/a31db39f-d3f0-48ae-b0f5-829ac56cfc18/project-management-app.msapp",
+            "size": "32788",
+            "version": "1",
+            "datePublished": "7/15/2024 4:38:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Do you have SharePoint Online and want to integrate it more fully with other Microsoft products? Have you heard of PowerApps, Microsoft Flow, or Power BI, but you\u2019re not sure how to use them with SharePoint Online? You\u2019ve come to the right place! This tutorial series explores how to build out a basic project-management app based on SharePoint lists and three key technologies that integrate with SharePoint Online: PowerApps, Microsoft Flow, and Power BI. These three technologies are all part of the Microsoft business platform, which makes it easy to measure your business, act on the results, and automate your workflows.\r\n\r\nWe have included two finished apps and a Power BI Desktop report as part of the download package for this scenario. You can look at these and learn by example even if you don\u2019t go through the whole tutorial series.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "spo-scenario.docx",
+        "project-analysis.pbix",
+        "project-requests-app.msapp",
+        "project-management-app.msapp"
+    ],
+    "detailsSection_file_size": [
+        "56.1 KB",
+        "131.3 KB",
+        "36.3 KB",
+        "32.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System requirements are determined by the individual technologies that are used in the tutorial series. These technologies are listed in the \"Prerequisites\" section of the tutorial series introduction. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Open spo-scenario.docx, and follow the link to the tutorial series introduction, which describes the role of the other downloads. Before using the sample apps and report, create your own SharePoint lists and update connections in the samples. For more information, see the \"Set up SharePoint Online lists\" article in the tutorial series.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54846",
+    "downloadPreload": true
+}

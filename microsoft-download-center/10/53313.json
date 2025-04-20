@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Internet Explorer 5 Retired ",
+    "downloadDescription": "The content you requested has already retired. It's available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE5_en-us.pdf",
+            "url": "https://download.microsoft.com/download/a/6/0/a609121d-93bf-4168-9887-7595a7b7d9a9/IE5_en-us.pdf",
+            "size": "9453541",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Internet Explorer 5 content, including the Internet Explorer 5 Corporate Deployment Guide, the Internet Explorer Administration Kit, and the Microsoft Internet Explorer 5 Resource Kit, which includes everything the IT professional needs to deploy, manage, and support an enterprise installation of Internet Explorer 5",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IE5_en-us.pdf"
+    ],
+    "detailsSection_file_size": [
+        "9.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 3.1x, Windows NT, Windows 95, Windows 98 SE, Windows 2000, and Windows ME",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53313",
+    "downloadPreload": true
+}

@@ -1,0 +1,151 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2",
+    "downloadDescription": "A security issue has been identified that could allow an attacker to break or bypass a security feature in the affected software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2968296-x86.msu",
+            "url": "https://download.microsoft.com/download/8/8/c/88c26123-a81a-45a9-8411-bebea6d00c24/Windows8.1-KB2968296-x86.msu",
+            "size": "231764",
+            "version": "3.5",
+            "datePublished": "7/15/2024 3:40:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2968296-x64.msu",
+            "url": "https://download.microsoft.com/download/8/8/c/88c26123-a81a-45a9-8411-bebea6d00c24/Windows8.1-KB2968296-x64.msu",
+            "size": "263393",
+            "version": "3.5",
+            "datePublished": "7/15/2024 3:40:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an attacker to break or bypass a security feature in the affected software. You can help protect your system by installing this update from Microsoft. After you install this update, you may have to restart your system.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2968296",
+        "name": "KB2968296"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-057",
+        "name": "MS14-057"
+    },
+    "detailsSection_file_version": "3.5",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2968296-x86.msu",
+        "Windows8.1-KB2968296-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "226.3 KB",
+        "257.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br /> <B>Note:</B> More information about Service Pack levels currently supported for the platforms listed above can be found in the following page: <a href=\"http://go.microsoft.com/fwlink/?LinkId=164675\">Microsoft Product Support Lifecycle</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=511504\">KB2968296</a> for more information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44353",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Platform SDK: Microsoft Active Accessibility 2.0 Redistributable",
+    "downloadDescription": "This download contains the redistributable files for Microsoft Active Accessibility 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSAA20_RDK.exe",
+            "url": "https://download.microsoft.com/download/c/1/c/c1cf13a6-4d7f-4b7d-9f67-51ef3a421fc7/MSAA20_RDK.exe",
+            "size": "753664",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the redistributable files for Microsoft Active Accessibility 2.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MSAA20_RDK.exe"
+    ],
+    "detailsSection_file_size": [
+        "736.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft\u00ae Windows\u00ae Millennium Edition (Windows Me), Microsoft Windows\u00ae 2000 (Professional or Server), Microsoft Windows NT\u00ae version 4.0 (Professional or Server) with Service Pack 6, or Windows 98</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.<LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "subscribe to MSDN and Stay Current with the Latest Updates",
+            "url": "http://go.microsoft.com/?linkid=3316130"
+        },
+        {
+            "title": "platform SDK: Windows Accessibility Features",
+            "url": "http://go.microsoft.com/?linkid=3316129"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21596",
+    "downloadPreload": true
+}

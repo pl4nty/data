@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2012",
+    "downloadDescription": "Installs the Microsoft SQL Server Data Tools Business Intelligence project templates for Analysis Services, Integration Services, and Reporting Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSDTBI_VS2012_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/5/c/4/5c4afd6f-c26f-4e3a-8be9-8ac43f9039e3/SSDTBI_VS2012_x86_ENU.exe",
+            "size": "828127640",
+            "version": "11.0.5583.0",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Installs Microsoft SQL Server Data Tools Business Intelligence project templates for Analysis Services, Integration Services, and Reporting Services that support Visual Studio 2012. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.5583.0",
+    "detailsSection_file_name": [
+        "SSDTBI_VS2012_x86_ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "789.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n<li>Windows 7 (x86 and x64)</li>\r\n<li>Windows 8 (x86 and x64)</li>\r\n<li>Windows Server 2008 R2 (x64)</li>\r\n<li>Windows Server 2012 (x64)</li>\r\n</ul>\r\n<br/>\r\n<li><b>Supported architectures:</b></li>\r\n<ul>\r\n<li>32-bit (x86)</li>\r\n<li>64-bit (x64)</li>\r\n</ul>\r\n<br/>\r\n<li><b>Hardware requirements:</b></li>\r\n<ul>\r\n<li>1.6 GHz or faster processor</li>\r\n<li>1 GB of RAM (1.5 GB if running on a virtual machine)</li>\r\n<li>10 GB (NTFS) of available hard disk space</li>\r\n<li>5400 RPM hard drive</li>\r\n<li>DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\r\n</ul>\r\n<br/>\r\n<li><b>Prerequisites:</b></li>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.5</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Isolated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Integrated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio Tools for Applications 2012</li>\r\n<li>Microsoft Report Viewer 2012 Runtime</li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<br/>\r\n1. On this page, click Download to start the download. \r\n<br/>\r\n2. To save the download on your computer so that you can install it later, click Save.\r\n<br/>\r\n3. To cancel the installation, click Cancel.\r\n<br/>\r\n",
+    "additionalInformationSection": "Installing SQL Server Data Tools - Business Intelligence for Visual Studio 2012 also installs the following, if they are not already installed on the computer: \r\n<br/>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.5</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Isolated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Integrated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio Tools for Applications 2012</li>\r\n<li>Microsoft Report Viewer 2012 Runtime</li>\r\n</ul>\r\nWhat's new in this version:\r\n<br/>\r\n<ul>\r\n<li>SSDT is enhanced to support DAXMD</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36843",
+    "downloadPreload": true
+}

@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server\u00ae 2017 for Microsoft\u00ae Windows Latest Cumulative Update",
+    "downloadDescription": "Cumulative Update Package 31 Azure Connect Pack for SQL Server 2017 - KB5050533",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2017-KB5050533-x64.exe",
+            "url": "https://download.microsoft.com/download/c/4/f/c4f908c9-98ed-4e5f-88d5-7d6a5004aebd/SQLServer2017-KB5050533-x64.exe",
+            "size": "568546880",
+            "version": "14.0.3490.10",
+            "datePublished": "3/6/2025 8:37:32 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "<b>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2017 and contains all updates released since the release of SQL Server 2017 RTM.</b>\n<br />\n<ul>\n  <li>This Cumulative Update includes all fixes from all previous RTM Cumulative Updates, therefore it can be installed to resolve issues fixed in any previous RTM CU</li>\n  <li>The latest 2017 update is <a name=\"KB5050533\"></a><a href=\"http://support.microsoft.com/help/5050533 \">CU31 Azure Connect Pack - KB5050533</a></li>\n    </ul><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.3490.10",
+    "detailsSection_file_name": [
+        "SQLServer2017-KB5050533-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "542.2 MB"
+    ],
+    "detailsSection_file_date": "3/6/2025",
+    "systemRequirementsSection": "<br />\n      For complete system requirements, please reference the detailed <a name=\"ms143506\"></a><a href=\"https://msdn.microsoft.com/en-us/library/ms143506.aspx\">Systems Requirements</a> page.\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<br />\nAfter the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions.\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56128",
+    "downloadPreload": true
+}

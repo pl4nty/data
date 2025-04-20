@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Cloud Accelerated Hybrid Scenarios with SharePoint and Office 365",
+    "downloadDescription": "This pocket guide provides an overview of Microsoft SharePoint and Microsoft Office 365 hybrid scenarios, including basic details on successfully configuring one or more hybrid workloads.  For detailed documentation and support for these scenarios, refer to Microsoft TechNet.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Cloud-Accelerated-Hybrid-Scenarios-with-SharePoint-and-Office-365.pdf",
+            "url": "https://download.microsoft.com/download/6/2/5/625caf19-a88b-45b0-9ccc-5471a77e782c/Cloud-Accelerated-Hybrid-Scenarios-with-SharePoint-and-Office-365.pdf",
+            "size": "16300111",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:35:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cloud computing has become ubiquitous, and cloud services\u2014such as Office 365\u2014can be an attractive alternative to on-premises SharePoint business solutions. However, for a variety of reasons, you might want or need to deploy specific solutions in the cloud while still maintaining your on-premises SharePoint Server farm. Some enterprises may wish to gradually move their existing on-premises SharePoint Server services to the cloud, using a staged migration in which SharePoint Server workloads are moved one at a time to SharePoint Online or Office 365. Hybrid functionality in on-premises SharePoint and Office 365 enables you to extend your on-premises investment to the cloud by integrating services like SharePoint Search, Office 365 Video, Microsoft Business Connectivity Services (BCS), Microsoft OneDrive for Business, Microsoft Office Delve, Microsoft Yammer, and Microsoft/SAP Duet Enterprise Online.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Cloud-Accelerated-Hybrid-Scenarios-with-SharePoint-and-Office-365.pdf"
+    ],
+    "detailsSection_file_size": [
+        "15.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is an Adobe Reader file. Users who do not have Adobe Reader can download it from <A HREF=\"http://get.adobe.com/reader/\">Adobe.</A></LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55243",
+    "downloadPreload": true
+}

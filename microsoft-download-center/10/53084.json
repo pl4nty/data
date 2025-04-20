@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics CRM Field Service Demo Data",
+    "downloadDescription": "Demo data for Dynamics CRM Field Service",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FS_Demo_Data.EXE",
+            "url": "https://download.microsoft.com/download/e/b/0/eb077c4b-14a6-490d-a06e-6f21f3687e60/FS_Demo_Data.EXE",
+            "size": "4163072",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:12:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Demo data for Dynamics CRM Field Service",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "FS_Demo_Data.EXE"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the archive file and extract it.  Add file and dll to the package deployer folder and run package deployer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53084",
+    "downloadPreload": true
+}

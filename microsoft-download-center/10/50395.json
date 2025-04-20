@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Management Framework 5.0 (Superceeded by WMF 5.1 RTM version: http://aka.ms/wmf5download)",
+    "downloadDescription": "**WMF 5.0 RTM has been superceeded by WMF 5.1. Please download the RTM version of WMF 5.1 from http://aka.ms/wmf5download.**  Windows Management Framework 5.0 includes updates to Windows PowerShell, Windows PowerShell Desired State Configuration (DSC), Windows Remote Management (WinRM), Windows Management Instrumentation (WMI).  Release notes: http://go.microsoft.com/fwlink/?LinkID=717903",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WMF_5_1_Redirect.txt",
+            "url": "https://download.microsoft.com/download/2/c/6/2c6e1b4a-ebe5-48a6-b225-2d2058a9cefb/WMF_5_1_Redirect.txt",
+            "size": "446",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:53:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Management Framework (WMF) 5.0 brings functionality that has been updated from WMF 4.0. WMF 5.0 is available for installation only on Windows Server 2012 R2, Windows Server 2012, Windows 2008 R2, Windows 8.1, and Windows 7 SP1.  Some of the new and updated features in this release include:\r\n<br/>\r\n<ul>\r\n<li>Just Enough Administration (JEA)</li>\r\n<li>Creating Custom Types using PowerShell Classes</li>\r\n<li>Improvements in PowerShell Script Debugging</li>\r\n<li>Improvements in Desired State Configuration (DSC)</li>\r\n<li>Audit PowerShell Usage using Transcription and Logging</li>\r\n<li>Software Discovery, Install and Inventory with PackageManagement</li>\r\n<li>PowerShell Module Discovery, Install and Inventory with PowerShellGet</li>\r\n<li>PowerShell Script Discovery, Install and Management with PowerShellGet</li>\r\n<li>New and updated cmdlets based on community feedback</li>\r\n<li>Information Stream</li>\r\n<li>Generate PowerShell Cmdlets based on OData Endpoint</li>\r\n<li>Network Switch Management with PowerShell</li>\r\n<li>Software Inventory Logging (SIL)</li>\r\n</ul>\r\n<br/>\r\nYour feedback about Windows Management Framework 5.0 is valuable to us; we invite you to provide feedback at all times. For important information about changes in behavior from Windows PowerShell 5.0, and a list of known issues with this release, be sure to read the <a href=\"http://go.microsoft.com/fwlink/?LinkID=717903&clcid=0x409\">WMF 5.0 release notes</a>. You can log bugs and suggestions by using the <a href=\"http://windowsserver.uservoice.com/forums/301869-powershell\">PowerShell forum</a> within the <a href=\"https://windowsserver.uservoice.com/forums/295047-general-feedback\">Windows Server UserVoice</a>. \r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WMF_5_1_Redirect.txt"
+    ],
+    "detailsSection_file_size": [
+        "446 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows Server 2008 R2 SP1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 7 SP1</li>\r\n</ul>\r\n<br/>\r\n<b>**IMPORTANT**</b><br/>\r\n<ul>\r\n<li>Please see <a href=\"http://go.microsoft.com/fwlink/?LinkID=823123\">release notes</a> for the list of products that are compatible and incompatible with Windows Management Framework 5.0. </li>\r\n<li>WMF 5.0 requires Microsoft .NET Framework 4.5 or above. You can install Microsoft .NET Framework 4.5 or above by following the instructions at <a href=\"https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx\">Installing the .NET Framework</a>.</li>\r\n</ul>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please see <a href=\"http://go.microsoft.com/fwlink/?LinkID=823124\">release notes</a> for installation instructions.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50395",
+    "downloadPreload": true
+}

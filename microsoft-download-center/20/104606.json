@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Developing Third-Party Applications with Exchange APIs",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Developing Third-Party Applications with Exchange APIs.pdf",
+            "url": "https://download.microsoft.com/download/3/7/f/37fa4ef0-8458-407e-a66e-9129a0b377f4/Developing Third-Party Applications with Exchange APIs.pdf",
+            "size": "560097",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This session is a deep dive into the challenges associated with developing third-party applications that access Exchange data in Office 365, Hybrid and on-premises Exchange organizations. Topics to be covered include authentication, discovery, and using Exchange Web Services and the Microsoft Graph to access and search Mailbox data. It also covers how you can enhance email applications by adding interoperability with Microsoft Teams.\r\n\r\nRecording of presentation by Glen Scales is at https://youtu.be/a8ECVg_0hQI.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Developing Third-Party Applications with Exchange APIs.pdf"
+    ],
+    "detailsSection_file_size": [
+        "547.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file with PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104606",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Tark: A Tool Kit to Mine Linear Temporal Rules",
+    "downloadDescription": "With this tool kit, users can mine linear temporal rules involving multiple events. Last published: June 17, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Tark_5.zip",
+            "url": "https://download.microsoft.com/download/1/8/5/1851fe34-ead4-45fc-9aff-3f3b3d54a0fe/Tark_5.zip",
+            "size": "568398",
+            "version": "5.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With this tool kit, users can mine linear temporal rules involving multiple events. The mined rules can capture data constraints on event fields and data-flow constraints between event fields via quantification. The tool kit can be used to mine rules over different views of events using event abstractions. In addition, the tool kit can be used to mine non-temporal rules involving single events, similar to frequent item sets. The tools operate on a well-defined, publicly available custom XML trace format. While users can generate traces conformant to this format, they also could use the converters in the tool kit to convert trace data such as call traces and network traces in various common formats\u2014comma-separated values, Netmon, and PDML\u2014to the custom trace format supported by the tools.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "Tark_5.zip"
+    ],
+    "detailsSection_file_size": [
+        "555.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52534",
+    "downloadPreload": true
+}

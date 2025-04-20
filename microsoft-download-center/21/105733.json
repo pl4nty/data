@@ -1,0 +1,226 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project",
+    "downloadDescription": "The Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project gives users the ability to manage their Project Operations project plans in the familiar project management tool, Microsoft Project. Compatible with D365 for Project Operations 4.88+",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project x86.msi",
+            "url": "https://download.microsoft.com/download/1/c/d/1cddcf97-f26c-45d6-93d6-a9adf3a98fc2/Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project x86.msi",
+            "size": "4853760",
+            "version": "4.88",
+            "datePublished": "7/15/2024 5:00:31 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project x64.msi",
+            "url": "https://download.microsoft.com/download/1/c/d/1cddcf97-f26c-45d6-93d6-a9adf3a98fc2/Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project x64.msi",
+            "size": "4841472",
+            "version": "4.88",
+            "datePublished": "7/15/2024 5:00:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        }
+    ],
+    "detailsSection": "The Project Operations Add-in for Microsoft Project lets users manage their Project Operations project plans in Microsoft Project, a project management tool. From the add-in, users can read and publish project plans to Project Operations at the click of a button.\r\n<ul>\r\n<li>Quickly and easily import project plans from Project Operations into Microsoft Project.</li>\r\n<li>Publish project plans to Project Operations.</li>\r\n<li>Create project teams inside Project Operations from Microsoft Project.</li>\r\n<li>Find Project Operations resources and assign them to project plans from Microsoft Project.</li>\r\n</ul>\r\nFor versions of Project Service Automation (V3.X), download the add-in from <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=57956\">Microsoft Download Center.</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.88",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project x86.msi",
+        "Microsoft Dynamics 365 Project Operations Add-in for Microsoft Project x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB",
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 10 or Windows 11</li>\r\n<li>Microsoft Project Professional 2016</li>\r\n<li>A working Dynamics 365 Project Operations implementation, version 4.88+</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Important! If you install the 32-bit version of Microsoft Project, you must use the 32-bit version of the add-in. If you install the 64-bit version of Microsoft Project, you must use the 64-bit version of the add-in.\r\n<ol>\r\n<li>Double-click the <b>.msi</b> file to start the <b>Setup wizard.</b></li>\r\n<li>Click <b>Next.</b></li>\r\n<li>Accept the license agreement, and then click <b>Next.</b></li>\r\n<li>Click <b>Install.</b></li>\r\n<li>Click <b>Finish.</b></li>\r\n</ol>\r\nAfter successful completion, open Microsoft Project and a new <b>Project Operations</b> tab is displayed on the ribbon.<br/>\r\nTo install this update rollup, do one of the following:<br />\r\n<ul>\r\n<li>To start the installation immediately, click <b>Run.</b></li>\r\n<li>To save the download to your computer for installation later, click <b>Save. </b></li>\r\n<li>To cancel the installation, click <b>Cancel.</b></li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105733",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Visio 2013 SDK",
+    "downloadDescription": "The Microsoft Visio 2013 Software Development Kit (SDK) contains the latest documentation, samples, header files, libraries, and tools that you need to develop custom solutions for Visio 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VisioSDK32bit.exe",
+            "url": "https://download.microsoft.com/download/6/a/0/6a06bd3c-2f82-4e43-905e-2d8df5eabd81/VisioSDK32bit.exe",
+            "size": "13575984",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VisioSDK64bit.exe",
+            "url": "https://download.microsoft.com/download/6/a/0/6a06bd3c-2f82-4e43-905e-2d8df5eabd81/VisioSDK64bit.exe",
+            "size": "14250888",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visio 2013 SDK contains the following items to help you develop custom solutions for Visio 2013:<br/>\r\nCode samples <br/>\r\n\u2022 Code Samples Library\u2014Provides a database of reusable Visio code samples. <br/>\r\n\u2022 Flowchart sample application\u2014Shows how to create a Component Object Model (COM) add-in that automates the creation of a flowchart drawing from an Excel spreadsheet. <br/>\r\n\u2022 TreeView sample application\u2014Shows how to create a hierarchical drawing and its accompanying tree view in Visio. <br/>\r\n\u2022 Office Plan sample application\u2014Shows how you can use the Visio 2013 Drawing Control to create an application that takes advantage of the drawing features of Visio 2013 in a Microsoft Windows Form. <br/>\r\n\u2022 Sample Visual Studio 2012 project \u2013 Sample project that can be used a template for VSL applications. <br/>\r\n\u2022 VSTO Add-in sample application\u2014Shows how to create an add-in, based on Microsoft Office development tools in Microsoft Visual Studio 2012, that includes custom Visio content and is deployed by using ClickOnce installation. <br/>\r\nNote:  The Office development tools in Visual Studio were known as the Visual Studio Tools for Office (VSTO) in previous versions of Visual Studio. <br/> <br/>\r\nTools <br/>\r\n\u2022 Persistent Events tool\u2014Provides a user interface that lets you add persistent events in an active Visio document and modify existing persistent events. <br/>\r\n\u2022 Event Monitor tool\u2014Monitors and reports events that are raised by an instance of Visio, so you can debug a solution that handles events. <br/>\r\n\u2022 Print ShapeSheet tool\u2014Provides a user interface that enables you to print the contents of a ShapeSheet. <br/>\r\n\u2022 Solution Publishing tool\u2014Lets you add Visio-specific entries to the PublishComponent table of a Windows Installer (.msi) file for publishing custom Visio content. <br/> <br/>\r\nType libraries  <br/>\r\nThe Visio SDK provides three type libraries that Visio 2013 exposes. In addition, it provides support files to help C++ developers automate Visio. <br/> <br/>\r\nDocumentation  <br/>\r\nThe Visio SDK contains the Visio Automation Reference, Save as Web Reference, ShapeSheet Reference, Viewer Reference, and XML Schema Reference.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VisioSDK32bit.exe",
+        "VisioSDK64bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.9 MB",
+        "13.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following program: <br/>\r\n               Microsoft Visio 2013\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To install this download\r\nThe Visio 2013 SDK is available in both 32-bit and 64-bit versions. Each contains a different version of the Persistent Events tool, the Event Monitor tool, and the Print ShapeSheet tool. To run the 32-bit versions of the tools, you must have 32-bit Visio 2013 installed on your computer. To run the 64-bit versions, you must have 64-bit Visio 2013 installed. To download the SDK, use the following instructions: <br/> <br/>\r\n1.Download the file by clicking the Download button for the appropriate SDK version and saving the file to your hard disk.  <br/>\r\n2.Double-click the VisioSDK32bit.exe or VisioSDK64bit.exe program file on your hard disk to start the setup program.  <br/>\r\n3.Follow the instructions on the screen to complete the installation. <br/> <br/>\r\nInstructions for use: <br/>\r\nAfter installation, refer to the included documentation and tools for use of the SDK. <br/> <br/>\r\nTo remove this download <br/>\r\n\u2022To remove the download file, delete the VisioSDK32bit.exe or VisioSDK64bit.exe file from your hard disk <br/>\r\n\u2022To remove the installed files, use Control Panel to uninstall Microsoft Visio 2013 SDK.\r\n ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36825",
+    "downloadPreload": true
+}

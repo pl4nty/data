@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2013 CU4 (i386)",
+    "downloadDescription": "Host Integration Server 2013 CU4",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2013-RTM-KB4038900-i386-ENU.exe",
+            "url": "https://download.microsoft.com/download/b/a/1/ba147f72-40ba-4461-b0b1-75cba0cc1c44/HIS2013-RTM-KB4038900-i386-ENU.exe",
+            "size": "10948648",
+            "version": "9.0.2504.2",
+            "datePublished": "7/15/2024 4:37:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Host Integration Server 2013 CU4",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0.2504.2",
+    "detailsSection_file_name": [
+        "HIS2013-RTM-KB4038900-i386-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Host Integration Server 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and install the exe.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55852",
+    "downloadPreload": true
+}

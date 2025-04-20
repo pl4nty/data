@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Software License Terms: Cumulative Update 7 for Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SLT for AX 2012 R2 CU7_English final.pdf",
+            "url": "https://download.microsoft.com/download/2/d/2/2d248b12-9f0b-4550-8519-64153164dbbe/SLT for AX 2012 R2 CU7_English final.pdf",
+            "size": "97796",
+            "version": "2012",
+            "datePublished": "6/13/2024 11:59:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These license terms are an agreement between Microsoft Corporation and you. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "SLT for AX 2012 R2 CU7_English final.pdf"
+    ],
+    "detailsSection_file_size": [
+        "95.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40900",
+    "downloadPreload": true
+}

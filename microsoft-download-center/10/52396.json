@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SharpSAT Managed Code Benchmark",
+    "downloadDescription": "SharpSATbench is a CLI managed-code benchmark based on a clause-based satisfiability solver where the logic formula is written in Conjunctive Normal Form. Last published: June 24, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharpSATbench.zip",
+            "url": "https://download.microsoft.com/download/f/5/4/f5496475-7e36-4e18-9f2e-1652dc814150/SharpSATbench.zip",
+            "size": "448952",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SharpSATbench is a CLI managed-code benchmark based on a clause-based satisfiability solver where the logic formula is written in Conjunctive Normal Form. SharpSATbench is compute-intensive, requiring a moderate-sized heap. There are 10,900 lines of code in the C# source of the benchmark.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SharpSATbench.zip"
+    ],
+    "detailsSection_file_size": [
+        "438.4 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52396",
+    "downloadPreload": true
+}

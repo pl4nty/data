@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows, Windows Server, Azure Stack Validation Report (21H2 et al)",
+    "downloadDescription": "Microsoft Windows, Windows Server, Azure Stack Validation Report (21H2 et al)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows, Windows Server, Azure Stack Validation Report (21H2 et al).pdf",
+            "url": "https://download.microsoft.com/download/e/3/7/e374af1a-3c5d-42ee-8e19-df47d2c0e3d6/Microsoft Windows, Windows Server, Azure Stack Validation Report (21H2 et al).pdf",
+            "size": "387441",
+            "version": "1",
+            "datePublished": "7/15/2024 5:06:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Validation Report (21H2 et al) Microsoft Windows, Windows Server, Azure Stack for Common Criteria",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Windows, Windows Server, Azure Stack Validation Report (21H2 et al).pdf"
+    ],
+    "detailsSection_file_size": [
+        "378.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Browser and pdf reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2022",
+        "Azure Stack HCI"
+    ],
+    "installInstructionSection": "download and open",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104956",
+    "downloadPreload": true
+}

@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Local Security Authority Merged IDL File",
+    "downloadDescription": "The merged IDL file for the Local Security Authority interface.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Combined_IDL_for_MS_LSAD_and_MS_LSAT_Protocols_v1_05.idl",
+            "url": "https://download.microsoft.com/download/c/7/2/c72dbf42-34a6-4143-9ebf-fd27e6a40568/Combined_IDL_for_MS_LSAD_and_MS_LSAT_Protocols_v1_05.idl",
+            "size": "42325",
+            "version": "1.05",
+            "datePublished": "7/15/2024 4:47:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains the complete set of IDL definitions for the lsarpc interface, which is associated with the [MS-LSAD] and [MS-LSAT] protocol documents. It has been created by merging the \"Full IDL\" sections of said documents.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.05",
+    "detailsSection_file_name": [
+        "Combined_IDL_for_MS_LSAD_and_MS_LSAT_Protocols_v1_05.idl"
+    ],
+    "detailsSection_file_size": [
+        "41.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 2000",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Compilation requires the use of the IDL definitions from the [MS-DTYP] protocol document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3367",
+    "downloadPreload": true
+}

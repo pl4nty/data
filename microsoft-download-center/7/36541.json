@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Changes to credit card processing in Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "This document explains what has changed in the implementation of credit card processing in Accounts receivable in Microsoft Dynamics AX 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Changes to Credit Card Processing in Microsoft Dynamics AX 2012 R2.pdf",
+            "url": "https://download.microsoft.com/download/8/2/2/82243dff-267e-4b42-81dc-6693d7a3817f/Changes to Credit Card Processing in Microsoft Dynamics AX 2012 R2.pdf",
+            "size": "681448",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:31:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes what has changed in the implementation of credit card processing in Accounts receivable in Microsoft Dynamics AX 2012 R2. These changes are driven primarily by the switch from a single credit card processor that uses a proprietary interface in Microsoft Dynamics AX 2012, to support for multiple credit card processors that are based on a published interface in Microsoft Dynamics AX 2012 R2. Support for multiple credit card processors is a benefit of using the Payment SDK. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Changes to Credit Card Processing in Microsoft Dynamics AX 2012 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "665.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36541",
+    "downloadPreload": true
+}

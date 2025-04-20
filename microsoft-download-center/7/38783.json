@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate profile synchronization for SharePoint Server 2013",
+    "downloadDescription": "This paper provides a brief introduction to SharePoint Server 2013 and illustrates how to configure profile synchronization.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-sharePoint-2013-user-profiles-sync.pdf",
+            "url": "https://download.microsoft.com/download/3/9/c/39ce950b-b776-4793-9da4-18fb936ff303/tlg-sharePoint-2013-user-profiles-sync.pdf",
+            "size": "941691",
+            "version": "2",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-sharePoint-2013-user-profiles-sync.docx",
+            "url": "https://download.microsoft.com/download/3/9/c/39ce950b-b776-4793-9da4-18fb936ff303/tlg-sharePoint-2013-user-profiles-sync.docx",
+            "size": "204246",
+            "version": "2",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint Server 2013 Server and step-by-step instructions to create a test lab that contains the SharePoint Server synchronization tool and demonstrate how to set up the User Profile service application. This paper does not describe how to install and configure SharePoint Server in a pilot or production environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "tlg-sharePoint-2013-user-profiles-sync.pdf",
+        "tlg-sharePoint-2013-user-profiles-sync.docx"
+    ],
+    "detailsSection_file_size": [
+        "919.6 KB",
+        "199.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Microsoft Word 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper-right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38783",
+    "downloadPreload": true
+}

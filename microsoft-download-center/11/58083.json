@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Talent extensibility solution: Flow - SQL Connect and execute",
+    "downloadDescription": "The Flow \u2013 SQL Connect and execute template connects to Microsoft SQL Server and enables SQL queries to be run.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PowerAutomate\u2013SQLConnectandexecute_20200205043214.zip",
+            "url": "https://download.microsoft.com/download/2/c/6/2c6ff726-e354-400a-8099-73aad51e8af4/PowerAutomate\u2013SQLConnectandexecute_20200205043214.zip",
+            "size": "4067",
+            "version": "1",
+            "datePublished": "7/15/2024 3:03:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Flow \u2013 SQL Connect and execute template connects to Microsoft SQL Server and enables SQL queries to be run.\r\nAlthough this template is designed to read and update SQL tables, it can be extended so that it can be used for other scenarios. For example, it can be used to fill a staging table in Common Data Service for Apps with records from SQL Server, and to periodically synchronize the staging table by using an incremental push from SQL Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PowerAutomate\u2013SQLConnectandexecute_20200205043214.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Talent\r\nMicrosoft SQL Server",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Files will then need to be extracted.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58083",
+    "downloadPreload": true
+}

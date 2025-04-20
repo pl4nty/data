@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MFA business documentation",
+    "downloadDescription": "This zipped folder contains business documentation for MFA with EMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MFA business documentation.zip",
+            "url": "https://download.microsoft.com/download/b/1/e/b1e36581-229a-4126-9ab8-7318d8c53d69/MFA business documentation.zip",
+            "size": "8315325",
+            "version": "July 2016",
+            "datePublished": "11/15/2023 4:24:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains business documentation for MFA with EMS.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "MFA business documentation.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.9 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53158",
+    "downloadPreload": true
+}

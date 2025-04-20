@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Protecting Your Privacy Online Fact Sheet",
+    "downloadDescription": "Learn what steps you can take to help protect your personal information online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Protecting-Your-Privacy-Online-factsheet.pdf",
+            "url": "https://download.microsoft.com/download/c/7/6/c76e4ad2-7210-4dc7-a7f2-97ee4bebefc5/Protecting-Your-Privacy-Online-factsheet.pdf",
+            "size": "239018",
+            "version": "001",
+            "datePublished": "7/15/2024 3:55:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This fact sheet provides guidance on how to help protect your personal information in the cloud and includes key considerations around information security and online fraud.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "001",
+    "detailsSection_file_name": [
+        "Protecting-Your-Privacy-Online-factsheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "233.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Open or save the file to your device.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Privacy",
+            "url": "http://www.microsoft.com/privacy"
+        },
+        {
+            "title": "your Privacy Is Our Priority",
+            "url": "http://www.microsoft.com/security/online-privacy/overview.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39631",
+    "downloadPreload": true
+}

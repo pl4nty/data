@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration (DXVA) Specification for H.264/MPEG-4 Scalable Video Coding (SVC) Off-Host VLD Mode Decoding",
+    "downloadDescription": "This document is the specification for support of Scalable Video Coding (SVC) according to the H.264/MPEG-4 video coding standard within the Microsoft Windows DirectX Video Acceleration (DXVA) API/DDI context.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_SVC_2012_06.xps",
+            "url": "https://download.microsoft.com/download/c/8/a/c8ad9f1b-57d1-4c10-85a0-09e3eac50322/DXVA_SVC_2012_06.xps",
+            "size": "698051",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DXVA_SVC_2012_06.pdf",
+            "url": "https://download.microsoft.com/download/c/8/a/c8ad9f1b-57d1-4c10-85a0-09e3eac50322/DXVA_SVC_2012_06.pdf",
+            "size": "505931",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is the specification for support of Scalable Video Coding (SVC) according to the H.264/MPEG-4 video coding standard within the Windows DirectX Video Acceleration (DXVA) API/DDI context. The document describes high-level design concepts and specific SVC extensions to DXVA interfaces and data structures of H.264/MPEG-4 AVC decoding. This document specifies only off-host VLD profiles for H.264/MPEG4 SVC decoding.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "DXVA_SVC_2012_06.xps",
+        "DXVA_SVC_2012_06.pdf"
+    ],
+    "detailsSection_file_size": [
+        "681.7 KB",
+        "494.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP, Windows Vista, Windows 7, Windows 8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download this specification in your choice of the following formats: PDF file or XPS file. (PDF format requires Adobe Acrobat Reader to view.)",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30154",
+    "downloadPreload": true
+}

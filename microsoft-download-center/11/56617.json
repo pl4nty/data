@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Subject Interface Packages for Digitally Signing VBA Projects",
+    "downloadDescription": "This download includes the Subject Interface Packages (SIPs) that enable the digital signing and signature verification of Visual Basic for Applications projects within most Microsoft Office file formats that support VBA macros.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "officesips_16.0.16507.43425.exe",
+            "url": "https://download.microsoft.com/download/f/b/4/fb46f8ca-6a6f-4cb0-b8f4-06bf3d44da48/officesips_16.0.16507.43425.exe",
+            "size": "2376576",
+            "version": "16.0.16507.43425",
+            "datePublished": "7/15/2024 4:52:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes two Subject Interface Package (SIP) libraries that support the digital signing and signature verification of Visual Basic for Applications projects within most Office file formats that support VBA macros. One of the SIPs supports the Open Office XML file formats, and the other supports all other supported file formats. A SIP is a library that integrates with the Windows Operating System cryptographic stack to enable the OS to perform cryptographic operations on file formats for which the OS is not aware by default.<br/>\r\n<br/>\r\nOnce installed, existing tools and code that utilize the Windows cryptographic APIs to sign and verify files can be additionally used to sign and verify Office files containing VBA projects.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.16507.43425",
+    "detailsSection_file_name": [
+        "officesips_16.0.16507.43425.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "   <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2 Standard ",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install this download:<br/>\r\n1. Download the file by clicking the Download button (above) and saving the file to your hard disk.<br/>\r\n2. Run the downloaded self-extracting executable and choose a location for the unpacking of the files.<br/>\r\n3. Once unpacked, refer to the included readme.txt file for detailed instruction on how to register the SIP components and for examples on how the functionality that they provide can be invoked.<br/>\r\nThis package and the tools that it includes do not require an existing Office install to function. To remove the components, unregister the libraries using the \u2018regsvr32 /u\u2019 option and delete the files. <br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56617",
+    "downloadPreload": true
+}

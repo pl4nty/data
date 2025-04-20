@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "ClickOnce Bootstrapper package for the .NET Framework 4.5.2 on Visual Studio 2013",
+    "downloadDescription": "The ClickOnce Bootstrapper package for the .NET Framework 4.5.2 enables the .NET Framework 4.5.2 entry in the list of available prerequisites in Visual Studio 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB2961101.exe",
+            "url": "https://download.microsoft.com/download/2/6/b/26bb1c3c-ea42-401b-b748-370ec6fc4d15/VS12-KB2961101.exe",
+            "size": "1511712",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:38:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The ClickOnce Bootstrapper package for the .NET Framework 4.5.2 enables the .NET Framework 4.5.2 entry in the list of available prerequisites in Visual Studio 2013. Developers can build applications targeting the .NET Framework 4.5.2 using Visual Studio 2013 and then select the .NET Framework 4.5.2 as a prerequisite when they publish applications for ClickOnce deployments.\r\n<br/>\r\n<br/>\n<br/>\n<b>You need to install the Microsoft .NET Framework 4.5.2 Developer Pack from <a href=\"http://go.microsoft.com/fwlink/?LinkId=397421\">here </a> if you also need to build applications targeting the .NET Framework 4.5.2.  </b>\n<br/>\n<br/>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2",
+    "detailsSection_file_name": [
+        "VS12-KB2961101.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM </li>\n<li>850 MB of available hard disk space (x86)</li>\n<li>2 GB of available hard disk space (x64)</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Small Business Server 2011 Standard"
+    ],
+    "installInstructionSection": "To download all files and then install:\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n</ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=396863\"> KB2961101</a> for more information.\r\n<br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=245422"
+        },
+        {
+            "title": "knowledge Base Article 2901951",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=397421"
+        },
+        {
+            "title": "knowledge Base Article 2961101",
+            "url": "http://support.microsoft.com/kb/2961101"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42638",
+    "downloadPreload": true
+}

@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 31 For Exchange 2010 SP3 (KB4593467)",
+    "downloadDescription": "Update Rollup 31 For Exchange 2010 SP3 (KB4593467)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2010-KB4593467-x64-en.msp",
+            "url": "https://download.microsoft.com/download/2/9/1/2910688b-c964-498b-9a20-c7629049ee35/Exchange2010-KB4593467-x64-en.msp",
+            "size": "59674624",
+            "version": "14.03.0509.000",
+            "datePublished": "7/15/2024 4:27:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Update Rollup 31 for Exchange Server 2010 Service Pack 3 (SP3) resolves issues that were found in Exchange Server 2010 SP3 RU29 since the software was released. This update rollup is highly recommended for all Exchange Server 2010 SP3 customers.<br />\n<br />\nFor a list of changes that are included in this update rollup, see <a href=\"http://support.microsoft.com?kbid=4509410\">KB4509410</a>.\n<br />\n<br />\n<B>\nThis update rollup does not apply to Exchange Server 2010 Release To Manufacturing (RTM), Exchange Server 2010 Service Pack 1 (SP1) or Exchange Server 2010 Service Pack 2 (SP2).\n</B><br />\n<br />For a list of update rollups applicable to Exchange Server 2010 RTM , Exchange Server 2010 Service Pack 1 (SP1) or Exchange Server 2010 Service Pack 2 (SP2), refer to the Knowledge Base article <a href=\"http://support.microsoft.com?kbid=4503028\">KB4509410</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4593467",
+        "name": "4593467"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.03.0509.000",
+    "detailsSection_file_name": [
+        "Exchange2010-KB4593467-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "56.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2010 SP3 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2010 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=194323\">Exchange 2010 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=194325\">Exchange 2010 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration and specific features installed. For more detailed system requirements, please refer to the Exchange Server 2010 <a href=\"http://go.microsoft.com/fwlink/?LinkId=135761\">Technical Documentation Library</a>.\nFor a list of Windows Server 2008 requirements, visit <a href=\"http://technet.microsoft.com/windowsserver/2008\">http://technet.microsoft.com/windowsserver/2008.</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102519",
+    "downloadPreload": true
+}

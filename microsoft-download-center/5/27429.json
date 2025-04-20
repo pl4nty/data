@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Scripts to Enable Microsoft Help Viewer for Microsoft SQL Server 2012 and Microsoft SQL Server 2014",
+    "downloadDescription": "Microsoft SQL Server 2012 and Microsoft SQL Server 2014 supports systems running with only IPv6 enabled. The scripts in this download are used to enable Microsoft Help Viewer to work with only IPv6 enabled and to remove those settings if it is no longer necessary to run with only IPv6 enabled.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftHelpViewerIPv6ConfigurationScripts.exe",
+            "url": "https://download.microsoft.com/download/1/7/9/179d37ea-4579-412a-9d09-58a1f59ad805/MicrosoftHelpViewerIPv6ConfigurationScripts.exe",
+            "size": "155520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The CreateHelpViewerIPv6Settings.ps1 PowerShell cmdlet creates the following registry entry and sets the ACL for the newly created registry entry.<br/><br/>\r\n\r\nRegistry entry:<br/><br/>\r\n\r\n[HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Help\\v1.0]<br/>\r\n\"IPv6\"=dword:00000001<br/><br/><br/>\r\n\r\n\r\nACL:<br/>\r\n    Reserved URL            : http://[::1]:47873/help/ <br/>\r\n        User: \\Everyone<br/>\r\n            Listen: Yes<br/>\r\n            Delegate: No<br/>\r\n            SDDL: D:(A;;GX;;;WD)<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MicrosoftHelpViewerIPv6ConfigurationScripts.exe"
+    ],
+    "detailsSection_file_size": [
+        "151.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Vista Service Pack 2, Windows Server 2008 Service Pack 2, Windows 7 Service Pack 1, Windows Server 2008 R2 SP1",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "1. Click the <b>Download</b> button on this page to start the download.<br/>\r\n2. Click <b>Save</b> to save the download to your computer for installation.<br/>\r\n3. Double click the self-extracting EXE to unpack the contents.<br/>\r\n4. Specify a location of your choice to extract the contents to.<br/>\r\n5. Double click the CreateHelpViewerIPv6Settings.ps1 PowerShell cmdlet to create the settings to enable Help Viewer for IPv6.<br/>\r\n\r\nNOTE: It may be necessary to run this script with Administrator privileges.<br/>\r\n6. To remove the settings created by the CreateHelpViewerIPv6Settings.ps1 PowerShell cmdlet, run the RemoveHelpViewerIPv6Settings.ps1.<br/><br/>\r\n<br/><br/>\r\nFor more information on how to enable Microsoft Help Viewer in environments that run IPv6 exclusively see, <a href=\"http://go.microsoft.com/fwlink/?LinkID=232686\"> SQL Server 2012 Release Notes</a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27429",
+    "downloadPreload": true
+}

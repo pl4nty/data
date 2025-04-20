@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Forefront\u00ae Identity Manager 2010  R2 Language Packs",
+    "downloadDescription": "This package contains the language packs for Forefront Identity Manager 2010 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM 2010 R2 Language Packs.zip",
+            "url": "https://download.microsoft.com/download/4/7/8/47819065-0b47-48eb-a01d-0408e1281761/FIM 2010 R2 Language Packs.zip",
+            "size": "124013991",
+            "version": "4.1.2273.0",
+            "datePublished": "6/13/2024 12:11:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package contains the client and server language packs for Forefront Identity Manager 2010 R2 (FIM 2010 R2). The Add-ins and Extensions Language Pack is for the FIM 2010 R2 client components. The Service and Portal Language Pack is for the FIM 2010 R2 server components. Note that these are not for FIM 2010 R2 SP1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1.2273.0",
+    "detailsSection_file_name": [
+        "FIM 2010 R2 Language Packs.zip"
+    ],
+    "detailsSection_file_size": [
+        "118.3 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "The respective FIM 2010 R2 client or server components must first be installed before installing their language packs. See the FIM 2010 TechNet library for specific requirements of those components.\r\n<br />\r\n<br />\r\n<br /><b>Note</b>: These language packs are only for use with FIM 2010 R2. For the FIM 2010 R2 SP1 language packs, see the download at <a href=\"http://www.microsoft.com/download/en/details.aspx?id=36432\">http://www.microsoft.com/download/en/details.aspx?id=36432</a>. For the FIM 2010 language packs, see the download at <a href=\"http://www.microsoft.com/download/en/details.aspx?id=3137\">http://www.microsoft.com/download/en/details.aspx?id=3137</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "- Download and extract this package.<br />\r\n- For a client language pack installation go to the Add-ins and and Extensions Language Pack folder, then either the x86 or x64 folder.<br />\r\n- For a server language pack installation go to the Server and Portal Language Pack folder.<br />\r\n- Run setup.exe and follow the prompts.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29577",
+    "downloadPreload": true
+}

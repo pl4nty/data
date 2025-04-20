@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft XNA Game Studio 4.0 Refresh",
+    "downloadDescription": "Microsoft XNA Game Studio 4.0 Refresh updates XNA Game Studio 4.0 to fix bugs and add support for developing games that target Windows Phone OS 7.1 and developing games in Visual Basic.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "XNAGS40_setup.exe",
+            "url": "https://download.microsoft.com/download/e/c/6/ec68782d-872a-4d58-a8d3-87881995cdd4/XNAGS40_setup.exe",
+            "size": "42809792",
+            "version": "4.0 Refresh",
+            "datePublished": "7/15/2024 5:02:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft XNA Game Studio 4.0 Refresh updates XNA Game Studio 4.0 to fix bugs and add support for developing games that target Windows Phone OS 7.1 and developing games in Visual Basic.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0 Refresh",
+    "detailsSection_file_name": [
+        "XNAGS40_setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "40.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To run XNA Framework games on a computer running a Windows operating system, you need a graphics card that supports, at minimum, Shader Model 1.1 and DirectX 9.0c. We recommend using a graphics card that supports Shader Model 2.0, which is required by some samples and starter kits.  To execute and debug XNA Framework games for Windows Phone with the Windows Phone emulator, you need a graphics card that supports, at minimum, DirectX 10, with a supporting WDDM 1.1 driver.  To develop XNA Framework games for Xbox 360, you need a hard disk installed on your Xbox 360 console.  Other hardware requirements for XNA Game Studio 4.0 are identical to those for Microsoft Visual Studio 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 7"
+    ],
+    "installInstructionSection": "1. Install Microsoft Visual Studio 2010.\r\n2. Obtain the latest updates for Visual Studio from Microsoft Update.\r\n3. Download and run the Microsoft XNA Game Studio 4.0 Refresh installer.\r\n4. Follow the setup instructions.\r\n5. Launch Visual Studio 2010 from Microsoft XNA Game Studio 4.0 Refresh on the Start menu.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27599",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Adaptive Sampling Framework for Efficient Dynamic Analysis",
+    "downloadDescription": "This release contains Phoenix-based binary-rewriting infrastructure that provides generic capabilities for adaptive sampling. Last published: August 25, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "setup.msi",
+            "url": "https://download.microsoft.com/download/2/4/e/24e074d5-5805-4d9b-a1de-3799d5762aed/setup.msi",
+            "size": "812032",
+            "version": "0.1",
+            "datePublished": "6/13/2024 12:49:12 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release contains Phoenix-based binary-rewriting infrastructure that provides generic capabilities for adaptive sampling. The release contains an implementation of well-known techniques for runtime profiling.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "793.0 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52030",
+    "downloadPreload": true
+}

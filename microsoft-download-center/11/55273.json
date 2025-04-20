@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Government Infographic",
+    "downloadDescription": "Visual overview of how Azure Government helps federal, state, and local agencies",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure Government Infographic.pdf",
+            "url": "https://download.microsoft.com/download/1/f/8/1f87e7f7-ccd9-42a6-b505-ed0cc4222d15/Azure Government Infographic.pdf",
+            "size": "2398347",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:37:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Government cloud adoption is accelerating. Federal spending on cloud services is expected\r\nto reach $6.5B by 2019. Microsoft Azure Government is the most comprehensive, trusted,\r\nand flexible cloud solely dedicated to approved U.S. federal, state, and local government entities.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure Government Infographic.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Web browser",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click to download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55273",
+    "downloadPreload": true
+}

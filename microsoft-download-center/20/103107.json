@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Bulk Database Creation with PowerShell",
+    "downloadDescription": "Bulk Database Creation with PowerShell",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Bulk Database Creation with PowerShell.zip",
+            "url": "https://download.microsoft.com/download/a/9/1/a9191df2-961c-4c38-8ca1-73f22149e46c/Bulk Database Creation with PowerShell.zip",
+            "size": "43108",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure SQL Bulk Database Creation with PowerShell",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Bulk Database Creation with PowerShell.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> \r\n\r\n<LI>The file is a zip file containing a folder with three PowerShell scripts and a readme. </LI>  \r\n\r\n</UL> \r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103107",
+    "downloadPreload": true
+}

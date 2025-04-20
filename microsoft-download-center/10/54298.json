@@ -1,0 +1,219 @@
+{
+    "error": "",
+    "downloadTitle": "Power BI Report Template for Connected Field Service for Microsoft Dynamics 365",
+    "downloadDescription": "Enables users to publish the Power BI report that displays the live heart beat of connected devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PowerBI Report Template for Connected Field Service for Microsoft Dynamics 365.pbix",
+            "url": "https://download.microsoft.com/download/e/b/5/eb5ed97a-a36a-4cae-8c04-333a1e463b4f/PowerBI Report Template for Connected Field Service for Microsoft Dynamics 365.pbix",
+            "size": "67947",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:40:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        }
+    ],
+    "detailsSection": "This template is used to publish a sample report to Power BI for Office 365 so that the temperature reading of connected devices are displayed on asset, device and IoT alert screens for customers that have Connected Field Service solution.  Out of the box four different tiles are supported as below:\r\n1. Device temperature reading\r\n2. Count of device reading by device\r\n3. Device reading and threshold\r\n4. A tabular device reading\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3201574",
+        "name": "KB3201574"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PowerBI Report Template for Connected Field Service for Microsoft Dynamics 365.pbix"
+    ],
+    "detailsSection_file_size": [
+        "66.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A working Dynamics 365 Field Service implementation\r\nConnected Field Service solution installed\r\nHaving a Power BI PRO license\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "\r\nYou need to download and configure the Power BI Desktop file named \u201cPower BI Report Template for Connected Field Service for Microsoft Dynamics 365\u201d from the Microsoft Download Center:\r\n1. Download the Power BI designer file (PBIX) from the Microsoft Download Center.\r\n2. Enter your Azure SQL database credentials for Power BI Desktop, and then sign in to Power BI for Office 365. \r\n3. Update the query to point it to your Azure SQL DB data store.\r\n4. Publish the report to your Power BI for Office 365 account.\r\n5. Pin the tile to your Power BI dashboard.\r\n6. Share it with Dynamics 365 users that have Power BI subscriptions (Power BI Pro SKU is required).\r\n7. Either on an asset, IoT Device, or IoT Alert forms, configure the Power BI chart by clicking the Power BI section on the screen and choosing the dashboard and tile that you want to use.\r\nNote: Connected Device Reading shows up only for registered devices.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54298",
+    "downloadPreload": true
+}

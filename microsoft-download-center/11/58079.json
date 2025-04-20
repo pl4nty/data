@@ -1,0 +1,264 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics for Outlook, version 9.0 Update 1.0",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics for Outlook, version 9.0 (online and on-premises) Update 1.0.  This is a tested, cumulative set of updates for Dynamics for Outlook, version 9.0. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Client-KB4491851-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064df302-3f2b-4bff-b806-0162fa368adb/CRM9.0-Client-KB4491851-ENU-I386.exe",
+            "size": "220933048",
+            "version": "09.01.0000.1511",
+            "datePublished": "7/15/2024 3:06:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Mui-KB4491851-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064df302-3f2b-4bff-b806-0162fa368adb/CRM9.0-Mui-KB4491851-ENU-Amd64.exe",
+            "size": "66074176",
+            "version": "09.01.0000.1511",
+            "datePublished": "7/15/2024 3:06:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Client-KB4491851-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064df302-3f2b-4bff-b806-0162fa368adb/CRM9.0-Client-KB4491851-ENU-Amd64.exe",
+            "size": "321532760",
+            "version": "09.01.0000.1511",
+            "datePublished": "7/15/2024 3:06:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Mui-KB4491851-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064df302-3f2b-4bff-b806-0162fa368adb/CRM9.0-Mui-KB4491851-ENU-I386.exe",
+            "size": "28941088",
+            "version": "09.01.0000.1511",
+            "datePublished": "7/15/2024 3:06:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        }
+    ],
+    "detailsSection": "\n      Microsoft has released Update 1.0 for Dynamics for Outlook, version 9.0 (online and on-premises) .<br />\n      <br />\n      For more information about this release, see Microsoft Knowledge Base article  4491851:<br /><br /><a HREF=\"https://support.microsoft.com/en-us/help/4491851 \">Microsoft Dynamics for Outlook, version 9.0 Update 1.0</a> <br />\n\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4490601",
+        "name": "KB4490601"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.01.0000.1511",
+    "detailsSection_file_name": [
+        "CRM9.0-Client-KB4491851-ENU-I386.exe",
+        "CRM9.0-Mui-KB4491851-ENU-Amd64.exe",
+        "CRM9.0-Client-KB4491851-ENU-Amd64.exe",
+        "CRM9.0-Mui-KB4491851-ENU-I386.exe"
+    ],
+    "detailsSection_file_size": [
+        "210.7 MB",
+        "63.0 MB",
+        "306.6 MB",
+        "27.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      <b>Prerequisites:</b>\n      <br />\n      <ul>\n        <li>This update must be installed on a computer that is running Dynamics for Outlook, version 9.0 . </li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\n      Select Download, and then select the file you want to download from the list.<br /><br />\n      <b>Important: </b>The language pack must be installed before you can apply the update for that language pack. Download and install a language pack at <a HREF=\"https://www.microsoft.com/en-us/download/details.aspx?id=56970\">Dynamics 365 for Customer Engagement, version 9.0 Language Packs</a>. <br /><br />\n\n      <br />\n\n      To install this update, do one of the following:<br />\n      <ul>\n        <li>\n          To start the installation immediately, select <b>Run</b>.\n        </li>\n        <li>\n          To save the download to your computer for installation later, select <b>Save</b>.\n        </li>\n        <li>\n          To cancel the download, select <b>Cancel</b>.\n        </li>\n      </ul>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "dynamics 365 for Outlook, version 9.0 (Outlook client) ",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=56972"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58079",
+    "downloadPreload": true
+}

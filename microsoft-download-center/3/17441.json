@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Configuring IP-DLC Link Service for IBM Enterprise Extender",
+    "downloadDescription": "This white paper aids Mainframe Programmers, IBM i Administrators, and Microsoft Host Integration Server (HIS) specialists in configuring IP-DLC (Internet Protocol \u2013 Data Link Control) link service which ships with HIS 2020",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Configuring_IPDLC_white_paper_HIS2020.docx",
+            "url": "https://download.microsoft.com/download/9/e/7/9e78182d-2716-4573-ae69-48447a996914/Configuring_IPDLC_white_paper_HIS2020.docx",
+            "size": "8105212",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:01:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper aids Mainframe Programmers, IBM i Administrators, and Microsoft Host Integration Server (HIS) administrators in configuring IP-DLC (Internet Protocol \u2013 Data Link Control) link service which ships with HIS.  This document is also a reference for use with online documentation in diagnosing and troubleshooting connectivity and configuration issues with Host Integration Server.  IP-DLC is also known as IBM Enterprise Extender.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Configuring_IPDLC_white_paper_HIS2020.docx"
+    ],
+    "detailsSection_file_size": [
+        "7.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17441",
+    "downloadPreload": true
+}

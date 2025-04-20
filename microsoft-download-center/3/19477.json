@@ -1,0 +1,154 @@
+{
+    "error": "",
+    "downloadTitle": "Windows CE .NET 4.2 - Cumulative Product Update Rollup Package (through 12/31/2008)",
+    "downloadDescription": "Download the full set of updates for Windows CE .NET 4.2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows CE .NET 4.2_Product_Update_Rollup_2008.htm",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/Windows CE .NET 4.2_Product_Update_Rollup_2008.htm",
+            "size": "272142",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-ARMV4.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-ARMV4.msi",
+            "size": "216448512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-MIPSIV_FP.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-MIPSIV_FP.msi",
+            "size": "222555136",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-X86.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-X86.msi",
+            "size": "188895232",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-MIPSII.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-MIPSII.msi",
+            "size": "217998336",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-MIPSIV.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-MIPSIV.msi",
+            "size": "222555648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-ARMV4I.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-ARMV4I.msi",
+            "size": "216415232",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-SH4.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-SH4.msi",
+            "size": "208669696",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-MIPSII_FP.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-MIPSII_FP.msi",
+            "size": "218287104",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB42-081231-Product-Update-Rollup-SH3.msi",
+            "url": "https://download.microsoft.com/download/c/b/5/cb528a94-2b29-4655-bf64-7a5305e72f1f/WinCEPB42-081231-Product-Update-Rollup-SH3.msi",
+            "size": "200211456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a full set of updates for Windows CE .NET 4.2. Please see the associated Readme for a list of the included updates. For more information, see the <a href=\"http://www.microsoft.com/embedded\">Windows Embedded web site</a>.\n<br/>\n<br/>\nFor complete details regarding the updates in this release, please download the \nWindows CE .NET 4.2_Product_Update_Rollup_2007.htm file below.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows CE .NET 4.2_Product_Update_Rollup_2008.htm",
+        "WinCEPB42-081231-Product-Update-Rollup-ARMV4.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-MIPSIV_FP.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-X86.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-MIPSII.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-MIPSIV.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-ARMV4I.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-SH4.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-MIPSII_FP.msi",
+        "WinCEPB42-081231-Product-Update-Rollup-SH3.msi"
+    ],
+    "detailsSection_file_size": [
+        "265.8 KB",
+        "206.4 MB",
+        "212.2 MB",
+        "180.1 MB",
+        "207.9 MB",
+        "212.2 MB",
+        "206.4 MB",
+        "199.0 MB",
+        "208.2 MB",
+        "190.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows CE .NET 4.2 Platform Builder</LI><LI>200 MB of disk space required to download, install, and operate per processor</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "<b>Important Download Details:</b><BR /><UL><LI>Each update is contained in a compressed file along with instructions.  All of the updates have been separated to make the download quicker.</LI><LI>Updates are cumulative; we suggest that you download all of them.  The setup will replace files in your Windows CE Platform Builder installation.</LI><LI>If you experience any problems in the download or installation of these updates e-mail qfeadmin@microsoft.com.</LI></UL><OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\nThis site provides critical stand-alone updates and monthly rollups of all Windows CE updates available for evaluation customers only. All licensed OEMs should visit the OEM Windows Embedded Web site for updates. <br />",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Community",
+            "url": "http://msdn.microsoft.com/embedded/community/default.aspx"
+        },
+        {
+            "title": "windows CE Documentation",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/windowsce.asp"
+        },
+        {
+            "title": "windows Embedded Books",
+            "url": "http://msdn.microsoft.com/embedded/community/community/books/default.aspx"
+        },
+        {
+            "title": "windows CE Home Page",
+            "url": "http://msdn.microsoft.com/embedded/windowsce/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19477",
+    "downloadPreload": true
+}

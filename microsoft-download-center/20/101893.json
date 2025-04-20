@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Provisioning Users for Microsoft Dynamics ERP RapidStart Services - Microsoft Dynamics AX",
+    "downloadDescription": "Provisioning Users for Microsoft Dynamics ERP RapidStart Services - Microsoft Dynamics AX\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RapidStartServicesGuideDecember2011.pdf",
+            "url": "https://download.microsoft.com/download/d/8/2/d82bb5bb-2f0b-4919-914e-2fc829936c9a/RapidStartServicesGuideDecember2011.pdf",
+            "size": "6279329",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics ERP RapidStart Services provides partners and customers with the ability to configure a Microsoft Dynamics AX 2012 installation by using a cloud-based interview-style questionnaire. The questionnaire uses general business process terminology instead of terms that are specific to Microsoft Dynamics AX. Partners can create, maintain and reuse configurations that reflect their custom solutions, and also create additional question groups and questions to enlarge the scope of a configuration. \r\nThis guide is intended to walk you through the steps of activating RapidStart Services for your organization, defining users and user roles, and the installation components that need to be deployed on the Microsoft Dynamics AX 2012 installation to connect RapidStart Services to the target Dynamics AX 2012 instance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "RapidStartServicesGuideDecember2011.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101893",
+    "downloadPreload": true
+}

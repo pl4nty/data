@@ -1,0 +1,189 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2008 R2 SP2 - Express Edition",
+    "downloadDescription": "Microsoft SQL Server 2008 R2 Express with Service Pack 2 is a free and feature-rich database for developing and deploying SQL Server 2008 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPR_x64_ENU.exe",
+            "size": "128331696",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLManagementStudio_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLManagementStudio_x86_ENU.exe",
+            "size": "165938632",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLManagementStudio_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLManagementStudio_x64_ENU.exe",
+            "size": "168845768",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPRADV_x64_ENU.exe",
+            "size": "1057589704",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLEXPR_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPR_x86_ENU.exe",
+            "size": "115763632",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRWT_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPRWT_x64_ENU.exe",
+            "size": "357075912",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR32_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPR32_x86_ENU.exe",
+            "size": "102126536",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPRADV_x86_ENU.exe",
+            "size": "937497032",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRWT_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/4/b/04be03cd-eaf3-4797-9d8d-2e08e316c998/SQLEXPRWT_x86_ENU.exe",
+            "size": "333840840",
+            "version": "10.50.4000.0",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2008 R2 Express with Service Pack 2 is a free, feature-rich edition of SQL Server that is ideal for learning, developing, powering desktop, web & small server applications, and for redistribution by ISVs. \n  <br /> \n  <br /> \n  <b>Key Features Offered By SQL Server 2008 R2 SP2 Express:</b> \n <ul>\n  <li>Supports stored procedures, triggers, functions, and views</li> \n  <li>Store all kinds of business data with native support for relational data, XML, FILESTREAM and spatial data</li> \n  <li>Improved performance, usability, visualization, in addition to integration with the Microsoft 2007 Office System in SQL Server Reporting Services</li> \n  <li>Simplify development efforts by leveraging existing T-SQL skills, ADO.NET Entity Framework and LINQ</li> \n  <li>Closely integrated with Visual Studio and Visual Web Developer</li> \n  </ul>\n<br />\n  <b>SQL Server 2008 R2 SP2 Express Editions:</b> \n <ul>\n <li>\n  <b>SQL Server 2008 R2 Express with Tools</b> \n  </li>\n  <br /> \n  Core edition of Express that supports development. Includes SQL Server 2008 Database Engine and SQL Server Management Studio Express \n <li>\n  <b>SQL Server 2008 R2 Express with Advanced Services</b> \n  </li>\n  <br /> \n  Extends SQL Server 2008 Express with tools to include support for Integrated Full-text Search and Reporting Services \n <li>\n  <b>SQL Server 2008 R2 Express (Runtime Only)</b> \n  </li>\n  <br /> \n  Includes the SQL Database Engine only and is designed for deployments and ISV redistribution \n  <br /> \n<li><b>SQL Server 2008 R2 SP2 Management Studio Express</b></li><br />\nFree, easy-to-use graphical management tool for configuring, managing, and administering SQL Server 2008 R2 SP2 Express. It can also manage instances of the SQL Server Database Engine created by any edition of SQL Server 2008 R2 SP2. \n  </ul>\n  <br /> \nCustomers looking to download SQL Server Express and SQL Server Management Studio Express for the first time, please download the bundle: SQL Server 2008 Express with Tools. <br/> <br/>\n<a href=\"http://support.microsoft.com/kb/2630458\">KB article 2630458</a> provides additional information about key fixes in SQL Server 2008 R2 SP2 for all SQL Server Editions.  To learn more about SQL Server 2008 R2 SP2 please review <a href=\"http://go.microsoft.com/fwlink/?LinkID=247920 \">SQL Server 2008 R2 SP2 Release Notes</a>.\n<br /><br /> ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2630458",
+        "name": "KB2630458"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.50.4000.0",
+    "detailsSection_file_name": [
+        "SQLEXPR_x64_ENU.exe",
+        "SQLManagementStudio_x86_ENU.exe",
+        "SQLManagementStudio_x64_ENU.exe",
+        "SQLEXPRADV_x64_ENU.exe",
+        "SQLEXPR_x86_ENU.exe",
+        "SQLEXPRWT_x64_ENU.exe",
+        "SQLEXPR32_x86_ENU.exe",
+        "SQLEXPRADV_x86_ENU.exe",
+        "SQLEXPRWT_x86_ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "122.4 MB",
+        "158.3 MB",
+        "161.0 MB",
+        "1008.6 MB",
+        "110.4 MB",
+        "340.5 MB",
+        "97.4 MB",
+        "894.1 MB",
+        "318.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n     <li><b>System Memory:</b></li>\r\n    <ul>\r\n      <li>Minimum 512 MB for SQL Server Express with Tools, and SQL Server Express with \n          Advanced Services and 4 GB for Reporting Services that installs with SQL Server \n          Express with Advanced Services</li>\r\n    </ul>\r\n    <li><b>Hard Disk:</b></li>\r\n    <ul>\r\n      <br/>\r\n        <li>2.2 GB of Disk Space</li>\r\n      <br/>\r\n    </ul>\r\n    <li><b>Processors:</b></li>\r\n    <ul>\r\n      <br/>\r\n      <b>X86:</b>\r\n      <br/>\r\n        <li>Pentium III-compatible processor or faster (Processor Speed - 1.0 GHz or faster)</li>\r\n      <br/>\r\n      <b>X64:</b>\r\n      <br/>\r\n        <li>Minimum: AMD Opteron, AMD Athlon 64, Intel Xeon with Intel EM64T support, Intel Pentium IV with EM64T support (Processor Speed - 1.0 GHz or faster)</li>\r\n      <br/>\r\n      <b>IA64:</b>\r\n      <br/>\r\n        <li>Itanium processor or faster (Processor Speed - 1.0 GHz or faster)</li>\r\n      </ul>\r\n</ul>\n    <b>Limitations :</b> \n  SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\n    <b>Prerequisites</b><br />To install or update SQL Server 2008 R2 SP2 one will need adminstrative rights on the computer.\n    <br />\n    <br />\n    <ul>\n  <b>Step 1:</b> \n  Install Microsoft .NET Framework 2.0 or later from the \n  <a href=\"http://www.microsoft.com/downloads/en/default.aspx\">Microsoft Download Center</a> \n<br />\n<br />\n  <b>Step 2:</b> \n  Download SQL Server Express by clicking the SQLEXPR.EXE or SQLEXPR32.EXE link on this page. To start the installation immediately, click Run. To install SQL Server Express at a later time, click Save. \n  <br /> \n  <b>Note:</b> \n  SQLEXPR32.EXE is a smaller package that can be used to install SQL Server Express on 32-bit operating systems only. The SQLEXPR.EXE package supports installing onto both 32-bit and 64-bit (WOW install) operating systems. There is no other difference between these packages. \n<br />\n<br />\n  <b>Step 3:</b> \n  Follow the installation instructions provided in the Readme. Known issues may be found in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=247920 \">SQL Server 2008 R2 SP2 Release Notes</a>.\n  </ul>\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server 2008 R2 SP2",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=251790"
+        },
+        {
+            "title": "sql Server 2008 R2 SP2 Feature Packs",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=251792"
+        },
+        {
+            "title": "knowledge Base article for Microsoft SQL Server 2008 R2 SP2",
+            "url": "http://support.microsoft.com/kb/2630458"
+        },
+        {
+            "title": "sql Server 2008 R2 Hardware and Software requirements",
+            "url": "http://technet.microsoft.com/en-us/library/ms143506.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30438",
+    "downloadPreload": true
+}

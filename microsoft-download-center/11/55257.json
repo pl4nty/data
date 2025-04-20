@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Host Integration Server 2016 Software Development Kit",
+    "downloadDescription": "Microsoft Host Integration Server 2016 SDK",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2016SDK.msi",
+            "url": "https://download.microsoft.com/download/9/4/9/949accd8-2402-4a67-8efe-66dcd0528e52/HIS2016SDK.msi",
+            "size": "2482176",
+            "version": "10.0.2462.0",
+            "datePublished": "7/15/2024 4:36:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Host Integration Server 2016 SDK provides headers, libraries and code samples which developers can use to create applications that utilize features of Host Integration Server 2016. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.2462.0",
+    "detailsSection_file_name": [
+        "HIS2016SDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This release is supported on the following operating systems:</b>\r\n<ul>\r\n<li>Windows 10</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Virtualization with Azure and Hyper-V</li>\r\n</ul>\r\n\r\n<b>The resources in this SDK can be used with any of the following versions of Visual Studio:</b>\r\n<ul>\r\n<li>Visual Studio 2013</li>\r\n<li>Visual Studio 2015</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button on this page to start the download.</li>\r\n<li>Do one of the following:</li></ol>\r\n<ul><li>To start the installation immediately, click <b>Run</b>.</li>\r\n<li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li>\r\n<li>To cancel the download, click <b>Cancel</b>.</li></ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55257",
+    "downloadPreload": true
+}

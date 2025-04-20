@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Considerations of Data Partitioning on Spark during Data Loading on Clustered ColumnStore Index",
+    "downloadDescription": "Considerations of Data Partitioning on Spark during Data Loading on Clustered ColumnStore Index",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Considerations of Data Partitioning on Spark during Data Loading on Clustered ColumnStore Index.pdf",
+            "url": "https://download.microsoft.com/download/d/9/1/d9104528-c9a9-4f20-8df5-5d31fe0ea8e2/Considerations of Data Partitioning on Spark during Data Loading on Clustered ColumnStore Index.pdf",
+            "size": "1057813",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:59:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Considerations of Data Partitioning on Spark during Data Loading on Clustered ColumnStore Index",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Considerations of Data Partitioning on Spark during Data Loading on Clustered ColumnStore Index.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Bulk load methods on SQL Server are by default serial, which means for example, one BULK INSERT statement would spawn only one thread to insert the data into a table. However, for concurrent loads you may insert into the same table using multiple BULK INSERT statements, provided there are multiple files to be read.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103585",
+    "downloadPreload": true
+}

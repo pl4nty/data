@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Integrating Microsoft Dynamics AX 2009 with Microsoft Office Project Server 2007",
+    "downloadDescription": "This white paper describes how to integrate Microsoft Dynamics AX 2009 with Microsoft Office Project Server 2007 so that you can use the features of both programs to manage your projects. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OfficeProjectServerIntegration_ax2009_WP.xps",
+            "url": "https://download.microsoft.com/download/5/9/b/59b2fb5d-d4f7-418f-9bf9-cd26404c927b/OfficeProjectServerIntegration_ax2009_WP.xps",
+            "size": "717016",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:08:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "OfficeProjectServerIntegration_ax2009_WP.pdf",
+            "url": "https://download.microsoft.com/download/5/9/b/59b2fb5d-d4f7-418f-9bf9-cd26404c927b/OfficeProjectServerIntegration_ax2009_WP.pdf",
+            "size": "664908",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:08:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "By integrating the Microsoft Dynamics AX 2009 Project accounting module with Office Project Server 2007, you can draw on features of both products for more granular control of the projects that your company manages. For example, you might want to use the complex resource scheduling capabilities of Office Project Server for a project that you are managing in Microsoft Dynamics AX.<br /> \r\n<br />\r\nWhen you integrate the two programs, data changes in one program can be transferred to the other, so that all of your project records are current and synchronized in both programs.<br />\r\n<br />\r\nBy using the flexible task hierarchy in Office Project Server, you can create a hierarchical structure that is similar to the hierarchical structure in Microsoft Dynamics AX. Corresponding hierarchies make it possible for information about projects, subprojects, and activities to flow between the two programs. As part of the synchronization process, actuals for labor, expenses, and revenue that are posted in Microsoft Dynamics AX are transferred to Office Project Server, and any changes to project or activity information in Office Project Server are transferred to the Microsoft Dynamics AX database.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "OfficeProjectServerIntegration_ax2009_WP.xps",
+        "OfficeProjectServerIntegration_ax2009_WP.pdf"
+    ],
+    "detailsSection_file_size": [
+        "700.2 KB",
+        "649.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2125",
+    "downloadPreload": true
+}

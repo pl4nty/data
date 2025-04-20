@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Intune Company Portal App for Windows Phone 8.1",
+    "downloadDescription": "The Microsoft Intune Company Portal app helps users search, browse and install apps made available to them by their company. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsPhoneSSPBootstrapper.exe",
+            "url": "https://download.microsoft.com/download/4/5/7/457d283b-1c86-437e-8b42-4760651974fb/WindowsPhoneSSPBootstrapper.exe",
+            "size": "7346416",
+            "version": "4.2.50.2\u200b\u200b\u200b",
+            "datePublished": "7/15/2024 3:51:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b>Beginning in August 2020, the Company Portal app for Windows Phone 8.1 is no longer supported.</b>\r\n<br/>\r\n<br/>\r\nThe Microsoft Intune Company Portal app helps users search, browse and install apps made available to them by their company, through the Microsoft Intune online service. Apps can be installed without requiring a connection to the corporate network. Users can also add their personal computers and devices to the service and locate contact information for their IT team. <br/>\r\n<br/>\r\nThe Microsoft Intune Company Portal app is available from the Windows Phone Store to allow end users to download and install the app to their own device. For devices without access to the Windows Phone Store, administrators can download and deploy the Microsoft Intune Company Portal app for Windows Phone 8.1. Note: if users are able to access the Windows Phone Store to download the Company Portal app, you do not need to deploy this version of the app. Functionality is identical between versions. <br/>\r\n<br/>\r\n<b>IMPORTANT: Use of this software requires an organizational account and connectivity to the company\u2019s valid subscription to Microsoft Intune\u2122. Updates to the service may be required for proper performance. Some functionality may not be available in all countries. See the <a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">Microsoft Online Services Privacy Statement </a> (<a href=\"http://go.microsoft.com/fwlink/?LinkID=240296\">http://go.microsoft.com/fwlink/?LinkID=240296</a>). </b><br/>\r\n<br/>\r\n<b>Feature Summary </b>\r\n<ul>\r\n<li> Company apps \u2013 Browse, search and install apps made available by the IT team </li> \r\n<li> Computer/device enrollment \u2013 Manage enrollment with Windows Intune for computer and devices, as well as the ability to remote wipe certain device types</li> \r\n<li> Contact IT \u2013 Easily locate contact information</li> \r\n</ul>\r\n<br/>\r\nFor details about what\u2019s new in the latest update, see <a href=\" http://aka.ms/intuneupdates \"> http://aka.ms/intuneupdates </a>. \r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.2.50.2\u200b\u200b\u200b",
+    "detailsSection_file_name": [
+        "WindowsPhoneSSPBootstrapper.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\n<b>Note: </b>On a 64-bit computer you must run WindowsPhoneSSPBootstrapper.exe to extract the CompanyPortal.appx file and then run the WinPhoneCompanyPortal.ps1 signing script to sign the appx file. <br/>\r\n<br/>\r\n<b>Other Requirements: </b>\r\n<ul>\r\n<li> A Microsoft Intune subscription or System Center 2012 R2 Configuration Manager with a Microsoft Intune subscription</li> \r\n<li> An Enterprise Mobile Code-Signing Certificate from Symantec</li> \r\n<li> The Windows SDK for Windows 8.1 (<a href=\" http://go.microsoft.com/fwlink/?LinkId=613525 \"> http://go.microsoft.com/fwlink/?LinkId=613525 </a>) </li> \r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Phone 8.1"
+    ],
+    "installInstructionSection": "After downloading the Company Portal App, sign the CompanyPortal.appx file with your Enterprise Mobile Code-Signing Certificate from Symantec and then distribute the signed Company Portal app to the target devices via System Center 2012 Configuration Manager with the Microsoft Intune subscription or via Microsoft Intune.  \r\n<br/>\r\n<ul>\r\n<li> You can use the WinPhoneCompanyPortal.ps1 PowerShell script to help you with the signing process. For details on how to use the script, see (<a href=\" http://go.microsoft.com/fwlink/?LinkId=615384\"> http://go.microsoft.com/fwlink/?LinkId=615384</a>. Help is also included with the script file. </li> \r\n<li> An Enterprise Mobile Code-Signing Certificate from Symantec</li> \r\n<li> The Windows SDK for Windows 8.1 (<a href=\" http://go.microsoft.com/fwlink/?LinkId=613525 \"> http://go.microsoft.com/fwlink/?LinkId=613525 </a> </li> \r\n</ul>\r\n<br/>\r\nFor more information about using the app in a Microsoft Intune environment, see <a href=\"https://technet.microsoft.com/en-us/library/dn764959.aspx\">Start managing Windows devices with Microsoft Intune</a> (<a href=\"https://technet.microsoft.com/en-us/library/dn764959.aspx\">https://technet.microsoft.com/en-us/library/dn764959.aspx</a>)<br/>\r\n<br/>\r\nFor more information about using the app in an environment with both Configuration Manager and Microsoft Intune, see <a href=\"http://technet.microsoft.com/en-us/library/jj884158.aspx\">How to Manage Mobile Devices by Using Configuration Manager and Windows Intune</a> (<a href=\"http://technet.microsoft.com/en-us/library/jj884158.aspx\">http://technet.microsoft.com/en-us/library/jj884158.aspx</a>)<br/>\r\n<br/>\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46445",
+    "downloadPreload": true
+}

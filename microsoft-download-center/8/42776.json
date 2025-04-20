@@ -1,0 +1,206 @@
+{
+    "error": "",
+    "downloadTitle": "May 2014 Security Release ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on May 13, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-201405.iso",
+            "url": "https://download.microsoft.com/download/4/3/4/434013de-ac72-447b-ab7b-1c0da8833801/Windows-KB913086-201405.iso",
+            "size": "1167714304",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:26:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on May 13, 2014. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all languages at the same time.<br /><br /><b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at <a href=\"http://technet.microsoft.com/en-us/security/bulletin\">http://technet.microsoft.com/en-us/security/bulletin</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />  This DVD5 image contains the following updates: <br /><b>\r\n <a href=\"http://support.microsoft.com/kb/2871997\">KB2871997</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/\">()</a>\r\n</b><ul>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows RT</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2920189\">KB2920189</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/\">()</a>\r\n</b><ul>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2957151\">KB2957151</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/\">()</a>\r\n</b><ul>\r\n<li>Windows Server 2012</li>\r\n<li>Windows RT</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows RT 8.1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2961887\">KB2961887</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/\">()</a>\r\n</b><ul>\r\n<li>Windows Server 2012</li>\r\n<li>Windows RT</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows RT 8.1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2962140\">KB2962140</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/\">()</a>\r\n</b><ul>\r\n<li>Windows RT 8.1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2928120\">KB2928120</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-025\">(MS14-025)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931352\">KB2931352</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows Server 2003</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931354\">KB2931354</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931356\">KB2931356</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931358\">KB2931358</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931365\">KB2931365</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2003</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931366\">KB2931366</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows RT 8.1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931367\">KB2931367</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows RT</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2931368\">KB2931368</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2932079\">KB2932079</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-026\">(MS14-026)</a>\r\n</b><ul>\r\n<li>Windows Server 2003</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2926765\">KB2926765</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-027\">(MS14-027)</a>\r\n</b><ul>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows RT</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows RT 8.1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2933826\">KB2933826</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-028\">(MS14-028)</a>\r\n</b><ul>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows Server 2012 R2</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2953522\">KB2953522</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-029\">(MS14-029)</a>\r\n</b><ul>\r\n<li>Windows Server 2003</li>\r\n<li>Windows Server 2003 x64 Edition</li>\r\n<li>Windows Server 2003 for Itanium-based Systems</li>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 for Itanium-based Systems</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows Server 2008 R2 for Itanium-based Systems</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n</ul><b>\r\n <a href=\"http://support.microsoft.com/kb/2953522\">KB2953522</a>\r\n</b> / <b>\r\n <a href=\"http://technet.microsoft.com/en-us/security/bulletin/MS14-029\">(MS14-029)</a>\r\n</b><ul>\r\n<li>Windows Vista</li>\r\n<li>Windows Vista for x64-based Systems</li>\r\n<li>Windows Server 2008</li>\r\n<li>Windows Server 2008 x64 Edition</li>\r\n<li>Windows Server 2008 R2 x64 Edition</li>\r\n<li>Windows 7</li>\r\n<li>Windows 7 for x64-based Systems</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows RT</li>\r\n<li>Windows 8</li>\r\n<li>Windows 8 for x64-based Systems</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows RT 8.1</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 8.1 for x64-based Systems</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2871997; KB2920189; KB2926765; KB2928120; KB2931352; KB2931354; KB2931356; KB2931358; KB2931365; KB2931366; KB2931367; KB2931368; KB2932079; KB2933826; KB2953522; KB2957151; KB2961887; KB2962140",
+        "name": "KB2871997; KB2920189; KB2926765; KB2928120; KB2931352; KB2931354; KB2931356; KB2931358; KB2931365; KB2931366; KB2931367; KB2931368; KB2932079; KB2933826; KB2953522; KB2957151; KB2961887; KB2962140"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-025; MS14-026; MS14-027; MS14-028; MS14-029",
+        "name": "MS14-025; MS14-026; MS14-027; MS14-028; MS14-029"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-201405.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Service Pack 1"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42776",
+    "downloadPreload": true
+}

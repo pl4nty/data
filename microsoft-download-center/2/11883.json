@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit: All IT Pro Resources",
+    "downloadDescription": "This download contains the IT Pro and Project Manager resources that are referenced in the Microsoft Lync 2010 Adoption and Training Kit.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_IT_Pro_Resources.zip",
+            "url": "https://download.microsoft.com/download/d/f/4/df4a5f8e-5f44-4834-bb0a-2d6757581e8b/Lync_IT_Pro_Resources.zip",
+            "size": "7229021",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:15:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the IT Pro and Project Manager resources that are referenced throughout the Microsoft Lync 2010 Adoption and Training kit. These resources, which consist of guidance, examples, templates, and user education and training resources, are designed to help organizations successfully roll out Lync.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_IT_Pro_Resources.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.9 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2010; Microsoft Office 2007; Microsoft Office 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Lync 2010 Custom Intranet Site",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=213804"
+        },
+        {
+            "title": "microsoft Lync 2010 Training Download Package",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=213807"
+        },
+        {
+            "title": "microsoft Lync 2010 Training Videos",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=218119"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11883",
+    "downloadPreload": true
+}

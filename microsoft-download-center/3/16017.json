@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Application Analysis Envisioning Process for Lotus Domino Applications",
+    "downloadDescription": "This guide discusses the Application Analysis Envisioning Process (AAEP) for Lotus Domino applications. The AAEP provides you with a process to identify and classify Lotus Domino infrastructure, understand their core components and functionality, and guidance for a recommended target solution.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AAEP.doc",
+            "url": "https://download.microsoft.com/download/e/7/1/e7104c20-3c67-4b8f-9f75-30ea18f3cf5c/AAEP.doc",
+            "size": "909312",
+            "version": "26February2008",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This guide discusses the Application Analysis Envisioning Process (AAEP) for Lotus Domino applications. The AAEP provides you with a process to identify and classify Lotus Domino infrastructure, understand their core components and functionality, and accurate guidance for a recommended target solution. The primary goal of this process is to encourage a standard approach that you can use to define migration and target solution recommendations, as well as estimate migration costs and timelines. New versions of the Application Analyzer and the Application Transporter tool for Lotus Domino have been released as part of the Microsoft Transporter Suite for Lotus Domino. This document contains information about the Microsoft Application Analyzer 2006 for Lotus Domino and the Exchange Transporter versions of the tools.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "26February2008",
+    "detailsSection_file_name": [
+        "AAEP.doc"
+    ],
+    "detailsSection_file_size": [
+        "888.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> <br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li><br />\n<li>Do one of the following:</li><br />\n<ul><br />\n<li>To start the installation immediately, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li><br />\n</ul><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "application Templates for Windows SharePoint Services 3.0",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=55928"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "resources for Interoperatbility and Migration from Lotus Domino",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=58466"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16017",
+    "downloadPreload": true
+}

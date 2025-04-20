@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX on Windows 2408.05 (August 2024)",
+    "downloadDescription": "What's New: Custom Mesh/Texture Visualizers, faster playback, and a lot more",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIX-2408.05-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/7/3/d/73d366e3-860d-4e3d-a7db-244a3674f6b0/PIX-2408.05-Installer-x64.exe",
+            "size": "204436664",
+            "version": "2408.05",
+            "datePublished": "12/10/2024 3:35:19 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2408.05-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/7/3/d/73d366e3-860d-4e3d-a7db-244a3674f6b0/PIX-2408.05-Installer-ARM64.exe",
+            "size": "169605336",
+            "version": "2408.05",
+            "datePublished": "12/10/2024 3:35:19 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "See the <a href=\" https://devblogs.microsoft.com/pix/pix-2408-05/\">PIX 2408.05 blog post</a> for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2408.05",
+    "detailsSection_file_name": [
+        "PIX-2408.05-Installer-x64.exe",
+        "PIX-2408.05-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "195.0 MB",
+        "161.7 MB"
+    ],
+    "detailsSection_file_date": "12/10/2024",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Click the Download button on this page to start the download, then follow the instructions in the installer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106343",
+    "downloadPreload": true
+}

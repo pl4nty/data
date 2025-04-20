@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Cloud Identity for Enterprise Architects",
+    "downloadDescription": "What IT architects need to know about designing identity for organizations using Microsoft cloud services and platforms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_identity.vsd",
+            "url": "https://download.microsoft.com/download/2/3/8/238228e6-9017-4f6c-bd3c-5559e6708f82/MSFT_cloud_architecture_identity.vsd",
+            "size": "3788800",
+            "version": "AUG2016",
+            "datePublished": "7/15/2024 4:36:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSFT_cloud_architecture_identity.pdf",
+            "url": "https://download.microsoft.com/download/2/3/8/238228e6-9017-4f6c-bd3c-5559e6708f82/MSFT_cloud_architecture_identity.pdf",
+            "size": "1255133",
+            "version": "AUG2016",
+            "datePublished": "7/15/2024 4:36:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Integrating your identities with the Microsoft cloud provides access to a broad range of services and applications. Learn how to design Azure Active Directory (AD) to be your Identity as a Service (IaaS) provider for Microsoft's SaaS cloud offerings (Office 365, Dynamics 365, and Intune), Azure PaaS apps, and to provide domain services for virtual machines running in Azure IaaS.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AUG2016",
+    "detailsSection_file_name": [
+        "MSFT_cloud_architecture_identity.vsd",
+        "MSFT_cloud_architecture_identity.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.6 MB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This poster is available in Visio (VSD or VSDX) and PDF versions in 11x17 (tabloid) format for easy printing. \r\n\r\nYou will need Microsoft Visio or the Microsoft Visio 2016 Viewer (https://www.microsoft.com/en-us/download/details.aspx?id=51188) for the Visio version. \r\n\r\nYou will need the Adobe Acrobat reader for the PDF version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft's Enterprise Cloud Roadmap",
+            "url": "http://aka.ms/cloudarchitecture"
+        },
+        {
+            "title": "microsoft cloud IT architecture resources",
+            "url": "https://technet.microsoft.com/library/dn919927.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54431",
+    "downloadPreload": true
+}

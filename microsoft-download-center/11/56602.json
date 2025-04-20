@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 upgrade benefits for customers with subscriptions in the CSP program",
+    "downloadDescription": "Resources and guidance for Cloud Solution Provider (CSP) customers upgrading devices from Windows 7 and Windows 8/8.1 to Windows 10",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-10-upgrade-benefits-for-customers-with-CSP-subscriptions.pdf",
+            "url": "https://download.microsoft.com/download/5/9/b/59bd9d49-1391-45df-9630-1abb95a821ed/Windows-10-upgrade-benefits-for-customers-with-CSP-subscriptions.pdf",
+            "size": "1726749",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:55:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Organizations with active subscriptions in the Cloud Solution Provider (CSP) program, that include Windows, can upgrade their Windows 7 and Windows 8/8.1 PCs and devices to Windows 10. This is an important added benefit as it enables companies still on Windows 7 Pro or Windows 8/8.1 Pro to move to the most secure Windows ever without the need to purchase additional device upgrade licenses. This document explains how businesses can upgrade PCs and devices still running Windows 7 or Windows 8/8.1 to Windows 10 at no additional cost via upgrade benefits included with Windows subscriptions (including Microsoft 365 offerings) in the CSP program.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows-10-upgrade-benefits-for-customers-with-CSP-subscriptions.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Reader, Microsoft Edge, Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "the role of Azure Active Directory in Windows 10 cloud subscriptions",
+            "url": "https://aka.ms/w10-identity-csp"
+        },
+        {
+            "title": "introduction to Windows 10 subscriptions in the Cloud Solution Provider program",
+            "url": "https://aka.ms/w10-subscr-csp-intro"
+        },
+        {
+            "title": "microsoft Cloud Solution Provider program",
+            "url": "https://partner.microsoft.com/en-US/cloud-solution-provider/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56602",
+    "downloadPreload": true
+}

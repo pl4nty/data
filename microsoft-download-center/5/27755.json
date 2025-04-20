@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Advanced Group Policy Management (AGPM) Documentation Resources Download Page",
+    "downloadDescription": "AGPM Documentation Downloads",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AGPM v4 Deployment Guide.docx",
+            "url": "https://download.microsoft.com/download/1/6/2/1621cd1e-9724-4bc3-9cf8-0bbb0bcfb04b/AGPM v4 Deployment Guide.docx",
+            "size": "203201",
+            "version": "11/2010",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable AGPM documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11/2010",
+    "detailsSection_file_name": [
+        "AGPM v4 Deployment Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "198.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".docx or .pdf file type viewer. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select the document you would like to download and read.",
+    "relatedResourcesSection": [
+        {
+            "title": "agpm Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/dd420466.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27755",
+    "downloadPreload": true
+}

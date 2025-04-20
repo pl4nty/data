@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Accelerator for SWIFT - Message Pack 2014",
+    "downloadDescription": "Update for SWIFT schemas and validation rules used in BizTalk Server Accelerator for SWIFT. Updates to support integration with Alliance Access using MQ Host Adaptor. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MP2014Sample.zip",
+            "url": "https://download.microsoft.com/download/7/9/5/7954c957-acea-458d-bd57-28e4ede820f6/MP2014Sample.zip",
+            "size": "956",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:20:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing Microsoft BizTalk Accelerator for SWIFT 2014 Message Pack.doc",
+            "url": "https://download.microsoft.com/download/7/9/5/7954c957-acea-458d-bd57-28e4ede820f6/Installing Microsoft BizTalk Accelerator for SWIFT 2014 Message Pack.doc",
+            "size": "134656",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:20:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP_2014.exe",
+            "url": "https://download.microsoft.com/download/7/9/5/7954c957-acea-458d-bd57-28e4ede820f6/MP_2014.exe",
+            "size": "8414352",
+            "version": "2014",
+            "datePublished": "7/15/2024 3:20:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Accelerator for SWIFT - Message Pack 2014 includes the following features: \r\n\u2022 The repackaging of all SWIFT FIN FF message types and of all business rules \r\n\u2022 Updates to schemas and to business rules to make the schemas and the business rules fully compliant with the SWIFT 2014 standards \r\n\u2022 Updates to FRR schemas to support integration with Alliance Access using MQ Host Adaptor\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2014",
+    "detailsSection_file_name": [
+        "MP2014Sample.zip",
+        "Installing Microsoft BizTalk Accelerator for SWIFT 2014 Message Pack.doc",
+        "MP_2014.exe"
+    ],
+    "detailsSection_file_size": [
+        "956 bytes",
+        "131.5 KB",
+        "8.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "BizTalk Accelerator for SWIFT - Message Pack 2014 does not contain any components other than schemas, business rules, and Microsoft Office InfoPath forms.\r\nSupported Operating Systems: Windows 7, Windows Server 2008 R2, Windows 8, Windows Server 2012, Windows 8.1, Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "BizTalk Accelerator for SWIFT Message Pack 2014 requires installation of Microsoft BizTalk Accelerator 2013 R2 for SWIFT or Microsoft BizTalk Accelerator 2013 for SWIFT or Microsoft BizTalk Accelerator 2010 for SWIFT as appropriate for the version of BizTalk Accelerator for SWIFT that you deployed. BizTalk Server 2006, BizTalk Server 2006 R2, BizTalk Server 2006 R2 SP1 and BizTalk Server 2009 are not supported.\r\n\r\nBefore installing the BizTalk Accelerator for SWIFT - Message Pack 2014, we recommend that you download and review the Installation Guide. This guide contains important information about how to install and configure the message pack to help reduce downtime in the Microsoft BizTalk Server environment. See the dowload section above to obtain this guide. \r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "bizTalk Server Accelerator for SWIFT - Message Pack 2013",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=40299"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44048",
+    "downloadPreload": true
+}

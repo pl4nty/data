@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Team Foundation Server 2013 Process Template Samples - Support for Scaled Agile Framework (SAFe)",
+    "downloadDescription": "This download includes samples of TFS 2013.2 process templates updated with changes that enable support for SAFe.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Team Foundation Server 2013.3 Process Templates - SAFe Enabled.zip",
+            "url": "https://download.microsoft.com/download/e/1/7/e178777e-48be-4cbf-8558-2cc813fb0fe6/Team Foundation Server 2013.3 Process Templates - SAFe Enabled.zip",
+            "size": "1568297",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:41:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Scaled Agile Framework, or SAFe, is gaining popularity among organizations looking to scale Agile practices to the enterprise level. SAFe is a comprehensive framework, covering practices from portfolio level planning to release planning to coding practices. \r\n\r\nWhile TFS does not provide full support for all SAFe practices, TFS can be used to implement many of the planning practices. The following whitepaper provides practical guidance on how to implement SAFe practices using TFS:\r\n<a href=\"http://msdn.microsoft.com/en-us/library/dn798712.aspx\">Scaled Agile Framework: Using TFS to support epics, release trains, and multiple backlogs</a>\r\n\r\nThe section: \"Customize TFS process to support SAFe\" details the changes to the Scrum, Agile, and CMMI process templates which enable SAFe support.\r\n\r\nThis download includes the 2013.3 process templates with the changes already applied.\r\n\r\nThe process templates in this download should be treated as code samples. They are not an official release and do not come with support, implied or otherwise. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Team Foundation Server 2013.3 Process Templates - SAFe Enabled.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Team Foundation Server 2013 and above.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "After downloading and extracting the zip file, you should have three zip files. One for each process template:\r\n\r\n<ul>\r\n<li>Microsoft Visual Studio Scrum 2013.3 - Scaled Agile Framework Enabled.zip</li>\r\n<li>MSF for Agile Software Development 2013.3 - Scaled Agile Framework Enabled.zip</li>\r\n<li>MSF for CMMI Process Improvement 2013.3 - Scaled Agile Framework Enabled.zip</li>\r\n</ul>\r\n\r\nFrom Visual Studio 2013 Client, open the Team Explorer tool window and select Settings, then select Process Template Manager.\r\nFrom the Process Template Manager window, select Upload, and browse to one of the files listed above to upload the process template.\r\nFor more information on managing process templates, you can read <a href=\"http://msdn.microsoft.com/en-us/library/ms181510.aspx\">this Microsoft document.</a>\r\n\r\nAfter the template is uploaded, you can select the new process template when creating new team projects.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44222",
+    "downloadPreload": true
+}

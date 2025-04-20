@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2020 CU6",
+    "downloadDescription": "Microsoft BizTalk Server 2020 CU6",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BTS2020-KB5043408-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/e/4/7e4a2a44-6133-46ee-b0a6-c378ff8cf584/BTS2020-KB5043408-ENU.exe",
+            "size": "51636256",
+            "version": "3.13.895.0",
+            "datePublished": "11/21/2024 8:32:27 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2020 CU6",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.13.895.0",
+    "detailsSection_file_name": [
+        "BTS2020-KB5043408-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "49.2 MB"
+    ],
+    "detailsSection_file_date": "11/21/2024",
+    "systemRequirementsSection": ".Net Framework 4.8 <br/>\r\nVisual Studio 2019 <br/>\r\nSQL Server 2016 or SQL Server 2017 or SQL Server 2019 or SQL Server 2022 <br/>\r\nMicrosoft BizTalk Server 2020 <br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation. <br/>\r\nFor BizTalk Developer Tools, in addition to installing CU package, also update/install the latest version of BizTalk Server Visual Studio extension (3.13.2.0). The extension can be installed from <a href=\"https://marketplace.visualstudio.com/items?itemName=ms-biztalk.BizTalk\">BizTalk Server extension</a> or within Visual Studio - Manage Extensions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106333",
+    "downloadPreload": true
+}

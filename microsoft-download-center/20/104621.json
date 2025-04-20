@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Upgrading to Exchange Server 2019",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Upgrading to Exchange Server 2019.pdf",
+            "url": "https://download.microsoft.com/download/4/c/d/4cdf6d29-2172-4b3f-a1a3-2858eb6f1647/Upgrading to Exchange Server 2019.pdf",
+            "size": "625248",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Are you still on Exchange 2013, Exchange 2016, or even an older, legacy version of Exchange Server? Following the Exchange Server 2019 prerequisites sounds easy. But upgrading to a new Exchange Server version is not only about the technical requirements. Thomas and Sigi will share in this session their experience and address best practices to make the upgrade process as smooth as possible. Learn how to upgrade your On-Premises Exchange environment to the latest Exchange Server version.\r\n\r\nRecording of presentation by Siegfried Jagott and Thomas Stensitzki is at https://youtu.be/D6yY0bTfHy0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Upgrading to Exchange Server 2019.pdf"
+    ],
+    "detailsSection_file_size": [
+        "610.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Open file in PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104621",
+    "downloadPreload": true
+}

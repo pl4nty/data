@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Switching Linear Dynamic Model",
+    "downloadDescription": "This code enables training and evaluation of a switching linear dynamic model for enhancing cepstral streams for automatic speech recognition, as described in our ICASSP 2004 paper, Noise Robust Speech Recognition with a Switching Linear Dynamic Model. Last published: December 28, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SLDM.2004.2.msi",
+            "url": "https://download.microsoft.com/download/8/6/7/86706524-2078-459b-8fd6-3e2cd3385274/SLDM.2004.2.msi",
+            "size": "548352",
+            "version": "2004.2",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This code enables training and evaluation of a switching linear dynamic model for enhancing cepstral streams for automatic speech recognition, as described in our ICASSP 2004 paper, Noise Robust Speech Recognition with a Switching Linear Dynamic Model.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2004.2",
+    "detailsSection_file_name": [
+        "SLDM.2004.2.msi"
+    ],
+    "detailsSection_file_size": [
+        "535.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52475",
+    "downloadPreload": true
+}

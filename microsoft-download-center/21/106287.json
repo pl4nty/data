@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "RML Utilities for SQL Server - Update Oct 2024",
+    "downloadDescription": "Tools to help database administrators manage the performance of Microsoft SQL Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RMLSetup.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/65855c73-97a1-438c-b95e-d610a9bb05b0/RMLSetup.msi",
+            "size": "8829952",
+            "version": "09.04.0103",
+            "datePublished": "10/15/2024 5:22:10 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Do you know which databases or applications are using the most resources on your server?  How will a service pack upgrade, configuration change or application change affect your production SQL Server?  The RML Utilities for SQL Server provide you a set of tools and processes to answer these questions and much more.\r\n<br />\r\n<br />\r\nThe RML utilities allow you to process SQL Server trace files and view reports showing how SQL Server is performing.  For example, you can quickly see:<br />\r\n<ul>\r\n<li>Which application, database or login is using the most resources, and which queries are responsible for that</li>\r\n<li>Whether there were any plan changes for a batch during the time when the trace was captured and how each of those plans performed</li>\r\n<li>What queries are running slower in today's data compared to a previous set of data</li>\r\n</ul>\r\n\r\nYou can also test how the system will behave with some change (different service pack or hotfix build, changing a stored procedure or function, modifying or adding indexes, and so forth) by using the provided tools to replay the trace files against another instance of SQL Server.  If you capture trace during this replay you can use the tools to directly compare to the original baseline capture.<br/>\r\n<br/>\r\nSupports SQL Server versions 2008, 2008 R2, 2012, 2014, 2016, 2017, 2019, 2022.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "09.04.0103",
+    "detailsSection_file_name": [
+        "RMLSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.4 MB"
+    ],
+    "detailsSection_file_date": "10/15/2024",
+    "systemRequirementsSection": "Windows Server 2016 or newer \r\nWindows 10 and newer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "The RML Utilities can be installed using the setup RMLSetup.msi file. They require additional dependencies to be installed. See the instructions available at https://docs.microsoft.com/en-us/troubleshoot/sql/tools/replay-markup-language-utility",
+    "additionalInformationSection": "This update package is a rollup of all fixes made in the 9.00 version of the utilities.  All prior versions of the RML Utilities must be uninstalled before running this package.\r\n<br />\r\n<br />\r\nThis package includes:\r\n<br />\r\n<ul>\r\n<li>Bug fix that allows you to run RML Utilities on a system that doesn't have the SQL Native Client driver installed (e.g. SQL Server 2022 only). Instead RML Utilities will use the Microsoft ODBC or OLE DB Driver for SQL Server</li>\r\n<li>Accessibility fixes or enhancements for Reporter.exe (contrast themes, contrast rations, narrator fixes, etc)</li>\r\n</ul>\r\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "description of RML Utilities",
+            "url": "https://docs.microsoft.com/troubleshoot/sql/tools/replay-markup-language-utility"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "106287",
+    "downloadPreload": true
+}

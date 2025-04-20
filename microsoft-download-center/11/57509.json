@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2019, Capacity Calculator",
+    "downloadDescription": "A spreadsheet for calculating a user\u2019s hardware requirements based on information about users and traffic.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_Server_2019_Scenario_Based_Capacity_Calculator.xlsx",
+            "url": "https://download.microsoft.com/download/2/3/5/2356d309-4ab6-4533-8d3c-2abd84e1f402/Skype_for_Business_Server_2019_Scenario_Based_Capacity_Calculator.xlsx",
+            "size": "34935",
+            "version": "2046.19",
+            "datePublished": "7/15/2024 4:54:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A spreadsheet for calculating a user\u2019s hardware requirements based on information that the admin supplies about number of users, types of communication, and expected traffic.\r\n<br/>\r\n<br/>\r\nFor more information on how to use the Skype for Business Server 2019, Capacioty Calculator, please visit Microsoft TechNet here:  <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=785213\">http://go.microsoft.com/fwlink/p/?LinkId=785213</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2046.19",
+    "detailsSection_file_name": [
+        "Skype_for_Business_Server_2019_Scenario_Based_Capacity_Calculator.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "34.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Excel document. Users who do not have Microsoft Excel can view this document through the downloadable <A HREF=\"https://support.microsoft.com/en-us/help/273711/how-to-obtain-the-latest-excel-viewer\">Excel Viewer</A>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57509",
+    "downloadPreload": true
+}

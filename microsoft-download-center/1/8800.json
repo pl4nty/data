@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Content Series - SharePoint Publishing Solution Guide",
+    "downloadDescription": "Forefront UAG Content Series - SharePoint Publishing Solution Guide",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharepointSolution.docx",
+            "url": "https://download.microsoft.com/download/b/1/f/b1fee254-e68a-40c5-8f8b-76a5a1d368d6/SharepointSolution.docx",
+            "size": "150148",
+            "version": "January 2010",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use Forefront UAG to provides remote access to Microsoft SharePoint applications. This solution guide provides an overview of SharePoint publishing, a summary of the advantages of publishing SharePoint via Forefront UAG; planning information; and detailed deployment steps. It is also available online at the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/dd861393.aspx). \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2010",
+    "detailsSection_file_name": [
+        "SharepointSolution.docx"
+    ],
+    "detailsSection_file_size": [
+        "146.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Publishing Solution Guide",
+            "url": "http://technet.microsoft.com/en-us/library/dd861393.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8800",
+    "downloadPreload": true
+}

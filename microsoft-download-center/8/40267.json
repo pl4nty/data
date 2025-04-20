@@ -1,0 +1,288 @@
+{
+    "error": "",
+    "downloadTitle": "Test Drive - Lync Server 2013 - Part 2 of 3",
+    "downloadDescription": "This download comes as a pre-configured set of VHD's. This download enables you to fully evaluate the Microsoft Lync 2013, Microsoft Exchange 2013, SharePoint 2013, and UC developer platform APIs including the Microsoft Lync 2013 SDK, the Exchange Web Services Managed API 2.0  as well as the Microsoft Lync Server 2013 SDK and the Microsoft Unified Communications Managed API 4.0. Also, Lync Server ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-1.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-1.bin",
+            "size": "999663616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-6.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-6.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-4.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-4.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-7.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-7.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-5.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-5.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-7.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-7.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-9.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-9.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-4.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-4.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-9.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-9.bin",
+            "size": "15168053",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-3.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-3.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-11.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-11.bin",
+            "size": "193340594",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-6.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-6.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-5.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-5.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP.exe",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP.exe",
+            "size": "336254",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LyncServer2013_QuickStartGuide_Final.docx",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/LyncServer2013_QuickStartGuide_Final.docx",
+            "size": "175053",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-10.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-10.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-2.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-2.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-1.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-1.bin",
+            "size": "999663616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-2.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-2.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT-8.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT-8.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-3.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-3.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_SP-8.bin",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_SP-8.bin",
+            "size": "1000000000",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_MGT.exe",
+            "url": "https://download.microsoft.com/download/4/b/3/4b300c83-a439-4e9f-b889-60fd8b83d7f2/Lync2013_MGT.exe",
+            "size": "336233",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Evaluate Microsoft's Lync Server 2013!<br/>\r\n<br/>\r\nMicrosoft Lync is an enterprise-ready unified communications platform. Lync connects people everywhere, on Windows 8 and other devices, as part of their everyday productivity experience. Lync provides a consistent, single client experience for presence, instant messaging, voice, video and a great meeting experience. Lync 2013 supports multiparty HD video conferencing, modern \u201ctouch first\u201d capabilities for fast and natural communications, and work anywhere scenarios that do not require a VPN for encryption. Lync 2013 users can connect to anyone on Skype, enabling rich communication with hundreds of millions of people around the world!<br/>\r\n<br/>\r\nHow it works<br/>\r\n<br/>\r\n<b>Work Anywhere</b><br/>\r\nLync allows users to communicate securely and stay connected with colleagues and customers, from virtually wherever they chose to work.<br/>\r\n<br/>\r\n<b>Lync Across Devices</b><br/>\r\nUsers can switch among devices as they choose based on their needs. Lync offers familiar and consistent user experience across PC, phone, browser and tablets.<br/>\r\n<br/>\r\n<b>Connected Experiences</b><br/>\r\nLync connects millions of people, their communications and the applications they use every day - together. Multiparty HD video conferencing brings life and expression to Lync Meetings.<br/>\r\n<br/>\r\n<b>Simpler to Manage</b><br/>\r\nLync is a dependable platform for all real-time communications. A single system reduces complexity in Enterprise IT.<br/>\r\n<br/>\r\n<b>Deployment Flexibility</b><br/>\r\nLync lets you reach your vision of unified communications \u2013 on your timeline following your blueprint.<br/>\r\n<br/>\r\n<br/>\r\nMinimum Demo Requirements<br/>\r\nThe complete topology consists of 7 virtual machines that require a minimum of 24GB of RAM and a powerful dual core or any quad core host machine, and up to 150 Gb of disk space for the full topology.<br/>\r\n<br/>\r\nA minimal Unified Communications Developer\u2019s topology consisting of the DC virtual machine, the Lync Server 2013 Front End  Edition virtual machine, the Exchange Server 2013 Unified Messaging Virtual Machine and the Terminal Services virtual machine can be run in 16GB of RAM.<br/>\r\n<br/>\r\nNotes:<br/>\r\n1.  This trial is split over 3 download releases.  The links for parts 1 and 3 are located below in the Additional Information section.<br/>\r\n2.  This trial software is intended for evaluation purposes or proof of concept prototyping only.<br/>\r\n3.  There is no product support for this trial. You are welcome to share your trial experience with others and to ask for advice by participating in the <a href=\"http://social.msdn.microsoft.com/Forums/lync/en-US/home?category=lync\">MSDN forums of Microsoft Lync</a> and <a href=\"http://social.technet.microsoft.com/forums/en-US/exchangesvrdevelopment/threads/\">Microsoft Exchange\u2019s developer forum</a> on Technet.   IT Pros can send their questions <a href=\"http://social.technet.microsoft.com/Forums/lync/en-US/home\">here</a>.<br/>\r\n4. The VHD set has an initial grace period of 10 days and can be activated for up to an additional 180 days. Look for instructions on how to activate the VHDs in the Quick Start Guide located on this download site.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync2013_SP-1.bin",
+        "Lync2013_SP-6.bin",
+        "Lync2013_MGT-4.bin",
+        "Lync2013_SP-7.bin",
+        "Lync2013_SP-5.bin",
+        "Lync2013_MGT-7.bin",
+        "Lync2013_SP-9.bin",
+        "Lync2013_SP-4.bin",
+        "Lync2013_MGT-9.bin",
+        "Lync2013_MGT-3.bin",
+        "Lync2013_SP-11.bin",
+        "Lync2013_MGT-6.bin",
+        "Lync2013_MGT-5.bin",
+        "Lync2013_SP.exe",
+        "LyncServer2013_QuickStartGuide_Final.docx",
+        "Lync2013_SP-10.bin",
+        "Lync2013_MGT-2.bin",
+        "Lync2013_MGT-1.bin",
+        "Lync2013_SP-2.bin",
+        "Lync2013_MGT-8.bin",
+        "Lync2013_SP-3.bin",
+        "Lync2013_SP-8.bin",
+        "Lync2013_MGT.exe"
+    ],
+    "detailsSection_file_size": [
+        "953.4 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "14.5 MB",
+        "953.7 MB",
+        "184.4 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "328.4 KB",
+        "171.0 KB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.4 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "953.7 MB",
+        "328.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2 Standard<br/>\r\nWindows Server 2008 R2 Enterprise<br/>\r\nWindows Server 2012 Standard<br/>\r\nWindows Server 2012 Datacenter<br/>\r\n<br/>\r\nWindows Server 2008 R2 or Windows Server 2012 Hyper-V is required to use this virtual machine. In addition to the system requirements for Windows Server 2008 R2 or Windows Server 2012 as described in the release notes, a 64-bit system with hardware-assisted virtualization enabled and data execution prevention (DEP) is required.<br/>\r\n<br/>\r\nIt is also recommended to ensure that you have a clean install of x64 edition of Windows Server 2008 R2 or Windows Server 2012 to be able to use the Hyper-V technology.<br/>\r\n<br/>\r\nPrerequisites, installation steps, OS recommendations, and known issues of Hyper-V can be found <a href=\"http://technet.microsoft.com/en-us/library/cc534980.aspx\">here.</a>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "In order to use this evaluation package you will need to have Microsoft Hyper-V installed on a physical machine.<br/>\r\n<br/>\r\nHyper-V is available on Windows Server 2008 R2 or Windows Server 2012 and the details on how to install Hyper-V can be found here.  Details of how to setup the VHD are included in the documentation that accompanies the product.<br/>\r\n<br/>\r\nTo find out more about the VHD Test Drive program, please visit <a href=\"http://www.microsoft.com/vhd\">www.microsoft.com/vhd</a><br/>\r\n<br/>\r\nTo find more information about Lync Server 2013, please visit <a href=\"http://www.microsoft.com/lync\">www.microsoft.com/lync</a><br/>\r\n<br/>\r\nTo find more information about Lync Platform Development, please visit <a href=\"http://www.msdn.com/lync\">www.msdn.com/lync</a><br/>\r\n<br/>\r\nUserName: Contoso\\Administrator<br/>\r\nPassword: pass@word1<br/>",
+    "additionalInformationSection": "This trial is split over 3 download releases.  You can access parts 2 and 3 from the following locations:<br/>\r\n<br/>\r\nPart 1 - <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=40266\">http://www.microsoft.com/en-us/download/details.aspx?id=40266</a>.<br/>\r\nPart 3 - <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=40265\">http://www.microsoft.com/en-us/download/details.aspx?id=40265</a>.<br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Forums",
+            "url": "http://social.technet.microsoft.com/Forums/en-US/category/ocs"
+        },
+        {
+            "title": "hyper-V",
+            "url": "http://technet.microsoft.com/en-us/windowsserver/dd448604.aspx"
+        },
+        {
+            "title": "vhd Test Drive - Lync Server 2013 VHD - Part 3",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=40265"
+        },
+        {
+            "title": "vhd Test Drive - Lync Server 2013 VHD - Part 1",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=40266"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40267",
+    "downloadPreload": true
+}

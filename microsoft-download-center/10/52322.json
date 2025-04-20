@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft InkSeine Beta",
+    "downloadDescription": "InkSeine is a prototype inking application for Tablet PC and UMPC devices that offers the unique ability to search for objects directly from ink without transcribing queries to a search box. Last published: May 21, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InkSeine.msi",
+            "url": "https://download.microsoft.com/download/b/b/d/bbd3064b-4114-4c45-b9d8-da36a3c8ba0d/InkSeine.msi",
+            "size": "19651072",
+            "version": "1.2.1720.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "InkSeine is a prototype inking application for Tablet PC and UMPC devices that offers the unique ability to search for objects directly from ink without transcribing queries to a search box. InkSeine makes it easy to get to your information without having to use a file system or switch to a separate search application. With InkSeine, you can circle a handwritten phrase within your notes to create a query. The query persists in place as an icon that gets saved in perpetuity, just like any other part of your notes. If you use InkSeine to create a Web search for \u201cTablet PC,\u201d for example, that search persists and can be revisited whenever you need to see what is new on the Web about Tablet PCs. InkSeine also assists project collaboration: Search for your collaborator\u2019s name and filter the search using a couple of quick pen gestures to show only recent e-mails. Then, whenever you context-switch to that project, you can reopen the search with the flick of a pen and see all recent correspondence. When searches reveal items you need, you can drag any document, e-mail, or Web page into your notes as an icon that lets you retrieve the document in a fraction of a second. InkSeine provides a great way to gather and work with everything you need for your projects. The Tablet PC offers a terrific sandbox for ideation and creative design sketching; InkSeine is a tool for thought that lets you get the most out of inking on your Tablet.  It\u2019s never been easier or quicker to gather and annotate all the information you need to think through a decision",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.1720.0",
+    "detailsSection_file_name": [
+        "InkSeine.msi"
+    ],
+    "detailsSection_file_size": [
+        "18.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52322",
+    "downloadPreload": true
+}

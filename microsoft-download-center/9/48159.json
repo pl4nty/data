@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Build Tools 2015",
+    "downloadDescription": "Microsoft Build Tools 2015 provides the essential tools for building managed applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BuildTools_Full.exe",
+            "url": "https://download.microsoft.com/download/e/e/d/eedf18a8-4aed-4ce0-bebe-70a83094fc5a/BuildTools_Full.exe",
+            "size": "25644816",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "If you don't already have Visual Studio installed on your computer, Microsoft Build Tools 2015 provides the essential tools for building managed applications.  These tools previously were included in the .NET Framework, but they are now available as this separate download.  The Visual Basic and C# compilers are also included in this download.\n<br/>\n<br/>\nTo find out what's new in Visual Studio 2015, see the <a href=\"https://docs.microsoft.com/en-us/visualstudio/releasenotes/vs2015-update3-vs\">Visual Studio 2015 Release Notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=613260\">Visual Studio 2015 KB Article</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "BuildTools_Full.exe"
+    ],
+    "detailsSection_file_size": [
+        "24.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For additional information on Operating System support, see the <a href=\"https://www.visualstudio.com/en-us/visual-studio-2015-compatibility-vs\">Visual Studio 2015 Compatibility page</a>.\n\n<b>Hardware Requirements:</b>\n<ul>\n<li>Computer that has a 1.6GHz or faster processor </li>\n<li>1 GB RAM for x86</li> \n<li>2 GB RAM for x64</li>\n<li>An additional 512 MB RAM if running in a Virtual Machine</li> \n<li>200 MB of available hard disk space</li>\n<li>5400 RPM hard disk drive</li>\n</ul>\n<b>Additional Requirements:</b>\n<ul>\n<li>.NET Framework 4.5</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ul>\n    <li>On this page, choose the <b>Download</b> button.</li>\n    <li>Select the .exe option and then choose the <b>Next</b> button.</li>\n    <ul>\n        <li>To install now, choose the <b>Run</b> button.</li>\n        <li>To install later, choose the <b>Save</b> button. </li>\n    </ul>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center:",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48159",
+    "downloadPreload": true
+}

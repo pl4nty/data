@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Stack VM Size Calculator for MABS",
+    "downloadDescription": "Calculate the MABS VM size needed to backup your workloads in Azure Stack",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure Stack VM for MABS - Size Calculator.xlsx",
+            "url": "https://download.microsoft.com/download/e/f/0/ef070e10-a460-4a53-a3b5-03360a1f2967/Azure Stack VM for MABS - Size Calculator.xlsx",
+            "size": "22132",
+            "version": "1",
+            "datePublished": "6/15/2024 4:39:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Workloads as SQL, SharePoint, Exchange, FIles and Folders in Azure Stack can be backed up using Microsoft Azure Backup Server(MABS). This calculator will help you calculate the size and kind of the VM that needs to be provisioned for MABS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Azure Stack VM for MABS - Size Calculator.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "21.6 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Microsoft Excel",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the calculator, and add the details as the Source Details, retention range, and churn. Based on the values entered, the calculator will suggest the estimated VM size of MABS needed on Azure Stack, and the storage that would be needed. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56832",
+    "downloadPreload": true
+}

@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "BI Reporting: Reports and Subscriptions Solution",
+    "downloadDescription": "The files on this page show a scenario that uses Report Builder 3.0, SharePoint Server 2010, and Microsoft Excel 2010 together to create a reporting solution. The scenario features data analysis, rich report design, and flexible delivery of content. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ReportingScenarioMindMap.pdf",
+            "url": "https://download.microsoft.com/download/d/c/e/dcead383-6d60-4e4b-a3fb-683ee7477fdc/ReportingScenarioMindMap.pdf",
+            "size": "1781760",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Reporting_Solution_Package.zip",
+            "url": "https://download.microsoft.com/download/d/c/e/dcead383-6d60-4e4b-a3fb-683ee7477fdc/Reporting_Solution_Package.zip",
+            "size": "3103420",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContosoProductDetails.xlsx",
+            "url": "https://download.microsoft.com/download/d/c/e/dcead383-6d60-4e4b-a3fb-683ee7477fdc/ContosoProductDetails.xlsx",
+            "size": "742449",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContosoBIRptDetail.rdl",
+            "url": "https://download.microsoft.com/download/d/c/e/dcead383-6d60-4e4b-a3fb-683ee7477fdc/ContosoBIRptDetail.rdl",
+            "size": "62014",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContosBIRptSummary.rdl",
+            "url": "https://download.microsoft.com/download/d/c/e/dcead383-6d60-4e4b-a3fb-683ee7477fdc/ContosBIRptSummary.rdl",
+            "size": "114234",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BI_Reporting_Solution.docx",
+            "url": "https://download.microsoft.com/download/d/c/e/dcead383-6d60-4e4b-a3fb-683ee7477fdc/BI_Reporting_Solution.docx",
+            "size": "634601",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Together, the files on this page provide a business intelligence reporting scenario, a visual summary diagram of the solution described in that scenario, and details about the fictional company, Contoso. The scenario describes the report requirements and how Contoso employees used Microsoft applications to provide a meaningful and useful reporting solution. Download the materials on this page for comprehensive information about this reporting scenario. Documents: \r\n\r\n<ol>\r\n<li><b>BI_Reporting_Solution.docx</b>: The complete, step-by-step Business Intelligence reporting scenario</li>\r\n<li><b>* ContosBIRptSummary.rdl</b>: A report definition file for a summary report featuring sparkline charts, with parameterized links to a detailed report</li>\r\n<li><b>* ContosoBIRptDetail.rdl</b>: A report definition file for a flat detailed report with parameters for product channel and category</li>\r\n<li><b>ContosoProductDetails.xlsx</b>: An Excel workbook containing data that was exported from ContosoBIRptDetail.rdl, cleaned up, and then saved to the current Excel format</li>\r\n<li><b>Reporting_Solution_Package.zip</b>: A compressed file that contains the scenario and all supporting files</li>\r\n<li><b>ReportingScenarioMindMap.pdf</b>: A visual representation of the steps taken in the BI Reporting and Subscriptions solution</li>\r\n</ol>\r\n* Note: These Report Builder 3.0 report definition (.rdl) files require a connection to a Contoso data source like the ones described in this scenario. After you have configured the data sources as described, modify the .rdl files to connect to your data sources. Download the <a href=\"http://go.microsoft.com/fwlink/?LinkId=191575\">Microsoft Contoso BI Demo Dataset for Retail Industry</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "ReportingScenarioMindMap.pdf",
+        "Reporting_Solution_Package.zip",
+        "ContosoProductDetails.xlsx",
+        "ContosoBIRptDetail.rdl",
+        "ContosBIRptSummary.rdl",
+        "BI_Reporting_Solution.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "3.0 MB",
+        "725.0 KB",
+        "60.6 KB",
+        "111.6 KB",
+        "619.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Server:</li>\r\n<ul>\r\n<li>SharePoint Server 2010, Enterprise Edition</li>\r\n<li>SQL Server 2008 R2, including the following: </li>\r\n<ul>\r\n<li>Analysis Services</li>\r\n<li>Reporting Services</li>\r\n</ul>\r\n</ul>\r\n<li>Client: </li>\r\n<ul>\r\n<li>Office 2010, including the following:</li>\r\n<ul>\r\n<li>Excel</li>\r\n</ul>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Five individual files are available for this scenario. You can download them separately, or you can download the compressed .zip file, which includes all the files. To extract the entire contents of a compressed folder, right-click the folder, click Extract All, and then follow the instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16175",
+    "downloadPreload": true
+}

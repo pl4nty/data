@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2014 Service Pack 1 CU (KB3194722)",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2014 Service Pack 1 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sqlserver2014-kb3194722-x86.exe",
+            "url": "https://download.microsoft.com/download/b/2/8/b2894457-1cc6-4945-b9a4-146e26dbeb30/sql2014sp1cu9/x86/sqlserver2014-kb3194722-x86.exe",
+            "size": "359244992",
+            "version": "12.0.4491.0",
+            "datePublished": "7/15/2024 4:43:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlserver2014-kb3194722-x64.exe",
+            "url": "https://download.microsoft.com/download/b/2/8/b2894457-1cc6-4945-b9a4-146e26dbeb30/sql2014sp1cu9/x64/sqlserver2014-kb3194722-x64.exe",
+            "size": "596959936",
+            "version": "12.0.4491.0",
+            "datePublished": "7/15/2024 4:43:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "KB Articles: KB3194722\nSecurity bulletins:SQL Server 2014 MS16-136\nSecurity issues have been identified in SQL Server 2014 Service Pack 1 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer. \n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3194722",
+        "name": "KB3194722"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-136",
+        "name": "MS16-136"
+    },
+    "detailsSection_file_version": "12.0.4491.0",
+    "detailsSection_file_name": [
+        "sqlserver2014-kb3194722-x86.exe",
+        "sqlserver2014-kb3194722-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "342.6 MB",
+        "569.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2014 Service Pack 1 CU instances on supported Operating Systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Note: There are multiple files available for this download. Once you click on the \"Download\" button, you will be prompted to select the files you need. After the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions. This CU update is cumulative, it encompasses SQL Server 2014 SP1 CU1 to CU9.  ",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54186",
+    "downloadPreload": true
+}

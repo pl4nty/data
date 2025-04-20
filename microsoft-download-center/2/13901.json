@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Tablet PC: Advanced Development with Stylus Input APIs (C#)",
+    "downloadDescription": "The objective of this lab is to familiarize you with using the Tablet PC RealTimeStylus (RTS) APIs.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "STYLUSINPUTAPI_HOL_CS.exe",
+            "url": "https://download.microsoft.com/download/b/7/2/b72ac374-d3ac-431b-8304-12f01d32556b/STYLUSINPUTAPI_HOL_CS.exe",
+            "size": "349512",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:32:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The objective of this lab is to familiarize you with using the Tablet PC RealTimeStylus (RTS) APIs. To do so, you will create a pair of RTS plug-ins. The first plug-in is a packet filtering plug-in that demonstrates packet modification by constraining all (x,y) packet data within a rectangular area. The second plug-in is a custom dynamic renderer plug-in that renders stylus input by drawing a small circle around each (x,y) point. You will then use your plug-ins in a sample application that is provided for you.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "STYLUSINPUTAPI_HOL_CS.exe"
+    ],
+    "detailsSection_file_size": [
+        "341.3 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows XP with Tablet PC SDK v 1.7 or later; or Microsoft Windows SDK for Windows Vista",
+    "systemRequirementsSection_supportedOS": [
+        "TabletPC"
+    ],
+    "installInstructionSection": "Save the file to your computer, and then double click the application to start the installation. By default, the install will place the code in the C:\\HOL folder, creating one if necessary. If you choose another install location, adjust the navigation steps in the manual accordingly.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13901",
+    "downloadPreload": true
+}

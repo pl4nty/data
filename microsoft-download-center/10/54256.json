@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Migration Assistant for SAP Adaptive Server Enterprise (formerly SAP Sybase ASE).",
+    "downloadDescription": "Microsoft SQL Server Migration Assistant (SSMA) for SAP ASE is a tool to automate migration from SAP ASE database(s) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSMAforSybase_9.5.0_x86.msi",
+            "url": "https://download.microsoft.com/download/8/1/f/81ff8f1e-e391-4081-8766-6108449e6431/SSMAforSybase_9.5.0_x86.msi",
+            "size": "9842688",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:14:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforSybase_9.5.0.msi",
+            "url": "https://download.microsoft.com/download/8/1/f/81ff8f1e-e391-4081-8766-6108449e6431/SSMAforSybase_9.5.0.msi",
+            "size": "9842688",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:14:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforSybaseExtensionPack_9.5.0.msi",
+            "url": "https://download.microsoft.com/download/8/1/f/81ff8f1e-e391-4081-8766-6108449e6431/SSMAforSybaseExtensionPack_9.5.0.msi",
+            "size": "1978368",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:14:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforSybase_10.1.0.msi",
+            "url": "https://download.microsoft.com/download/4ecb8ef2-abce-4d58-88da-4ec5c8044bf1/SSMAforSybase_10.1.0.msi",
+            "size": "12660736",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:14:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforSybase_10.1.0_x86.msi",
+            "url": "https://download.microsoft.com/download/4ecb8ef2-abce-4d58-88da-4ec5c8044bf1/SSMAforSybase_10.1.0_x86.msi",
+            "size": "12660736",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:14:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSMAforSybaseExtensionPack_10.1.0.msi",
+            "url": "https://download.microsoft.com/download/4ecb8ef2-abce-4d58-88da-4ec5c8044bf1/SSMAforSybaseExtensionPack_10.1.0.msi",
+            "size": "1982464",
+            "version": "10.1",
+            "datePublished": "4/1/2025 10:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SQL Server Migration Assistant (SSMA) is a free supported tool from Microsoft that simplifies database migration process from SAP Adaptive Server Enterprise (formerly SAP Sybase ASE) to SQL Server, Azure SQL Database and Azure SQL Database Managed Instance. SSMA automates all aspects of migration including migration assessment analysis, schema and SQL statement conversion, data migration as well as migration testing. \n<br/><br/>\nThis download includes a GUI client based application to manage migration process. A seperate extension pack will install functionalities in SQL Server to emulate SAP ASE features not natively supported in SQL Server. \n<br/><br/>\nSSMA for SAP ASE is designed to support migration from SAP ASE version 11.9 and higher to all editions of SQL Server 2016 onwards, Azure SQL Database and Azure SQL Database Managed Instance.\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "SSMAforSybase_9.5.0_x86.msi",
+        "SSMAforSybase_9.5.0.msi",
+        "SSMAforSybaseExtensionPack_9.5.0.msi",
+        "SSMAforSybase_10.1.0.msi",
+        "SSMAforSybase_10.1.0_x86.msi",
+        "SSMAforSybaseExtensionPack_10.1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.4 MB",
+        "9.4 MB",
+        "1.9 MB",
+        "12.1 MB",
+        "12.1 MB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "4/1/2025",
+    "systemRequirementsSection": "<ul>\n<li>Windows 10+, Windows Server 2016+</li>\n</ul>\n<br/>\n<b>Requirements for the SSMA for SAP ASE client:</b>\n<ul>\n<li>The Microsoft .NET Framework version 4.7.2 or a later version. You can obtain it from the .NET Framework Developer Center.</li>\n<li>The SAP ASE OLEDB/ADO.Net/ODBC provider and connectivity to the SAP ASE database server that contains the databases you want to migrate. You can install providers from the SAP ASE product media.</li>\n<li>Access to and sufficient permissions on the computer that hosts the target instance of SQL Server.</li>\n<li>4 GB RAM.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "After the download, you must install SSMA for SAP ASE. \n<br/>\n<br/>\n<b>Installing the SSMA for SAP ASE Client</b>\n<ol>\n<li>Double-click SSMAforSybase_<i>n</i>.msi, where <i>n</i> is the version number.</li>\n<li>On the 'Welcome' page, click Next.</li>\n<li>If you do not have the prerequisite SAP ASE OLE DB provider installed, a message will appear indicating that you must first install the providers. You can install the SAP ASE OLE DB provider from the SAP ASE product media.</li>\n<li>Read the End User License Agreement. If you agree to the terms, select \"I accept the agreement\" option and click Next.</li>\n<li>On the 'Choose Setup Type' page, click Typical.</li>\n<li>Click Install.</li>\n</ol>\n<br/>\nIn addition to the SSMA program files, you must also install the SSMA for SAP ASE Extension Pack on the SQL Server machine. \n<br/>\n<br/>\n<b>Installing the SSMA for SAP ASE Extension Pack</b>\n<br/>\nInstalling the extension pack creates a new database, sysdb, on the instance of SQL Server. The extension pack adds tables, stored procedures, and user-defined functions.\n<ol>\n<li>Double-click SSMA for SSMAforSybaseExtensionPack_<i>n</i>.msi file, where <i>n</i> is the version number.</li>\n<li>On the 'Welcome' page, click Next.</li>\n<li>Read the End User License Agreement. If you agree to the terms, select \"I accept the agreement\" option and click Next.</li>\n<li>On the 'Ready to Install' page, click Install.</li>\n<li>On the 'Completed the First Step of Installation' page, click Next. A new dialog box will appear, in which you select the instance of SQL Server for the extension pack installation.</li>\n<li>Select the instance of SQL Server where you will be migrating SAP ASE schemas, and then click Next. The default instance has the same name as the computer. Named instances will be followed by a backslash and the instance name.</li>\n<li>On the connection page, select the authentication method and then click Next. Windows Authentication will use your Windows credentials to try to log on to the instance of SQL Server. If you select SQL Server Authentication, you must enter a SQL Server login name and password.</li>\n<li>On the next page, select Install Utilities Database <i>n</i>, where <i>n</i> is the version number, and then click Next. The sysdb database is created and the user-defined functions and stored procedures are created in that database.</li>\n<li>To install the utilities to another instance of SQL Server, select Yes, and then click Next. Or, to exit the wizard, click No.</li>\n</ol>\n<b>NOTE:</b> Extension pack and its functionality is not supported for SQL Server on Linux, Azure SQL Database and Azure SQL Database Managed Instance.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54256",
+    "downloadPreload": true
+}

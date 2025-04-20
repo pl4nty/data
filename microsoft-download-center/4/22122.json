@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Report Viewer Redistributable 2008 SP1 Language Pack",
+    "downloadDescription": "The Microsoft Report Viewer Redistributable 2008 SP1 Language Pack includes Windows Forms and ASP.NET Web server controls for viewing reports designed using Microsoft reporting technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/e/d/1/ed18cb5d-d639-4e3f-9361-1369ccaf0479/Readme.htm",
+            "size": "2035",
+            "version": "SP1",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Report Viewer Redistributable 2008 SP1 Language Pack contains the text of the redist user interface elements, such as error messages, for languages other than English. If one or more end users have non-English settings for Windows, you can install the Report Viewer Redistributable language pack to show runtime messages in the same language as Windows.<br/>\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP1",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>Required Software</b>: \n<ul><li><b>.NET Framework version 3.5 SP1 and the .NET Framework Language Pack SP1</b>: You must install the Microsoft .NET Framework version 3.5 SP1 and the associated language pack before you install the Report Viewer Redistributable 2008 SP1 Language Pack.<br/></li>\n<li><b>Report Viewer Redistributable 2008 SP1</b>: You must install the Report Viewer Redistributable before you install the language pack.</li></ul></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI><b>Important: </b>Make sure you have the latest service pack and critical updates for the version of Windows that you are running. To find recent security updates, visit Windows Update.</LI><LI>Click the <b>Download</b> button on this page to start the download</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=105532&clcid=0x409"
+        },
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=105533&clcid=0x409"
+        },
+        {
+            "title": ".Net Framework Communitiesmsdn.microsoft.com/netframework/community/default.aspx",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=105534&clcid=0x409"
+        },
+        {
+            "title": ".NET Framework Downloads",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=105535&clcid=0x409"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22122",
+    "downloadPreload": true
+}

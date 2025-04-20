@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Understanding Networking with Hyper-V ",
+    "downloadDescription": "This guide will step you through Hyper-V's networking concepts, best practices and deployment steps",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Understanding_Networking_w_Hyper-V_FINAL.xps",
+            "url": "https://download.microsoft.com/download/0/0/a/00a6eddb-6386-4266-ad77-91fe3c2f2e80/Understanding_Networking_w_Hyper-V_FINAL.xps",
+            "size": "2825028",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide will step you through Hyper-V's networking concepts, best practices and deployment steps including:\r\n\r\n\u2022 Current Landscape and Challenges of Virtual Networking \r\n\u2022 Live Migration Networking Scenario Recommendations\r\n\u2022 Hyper-V MAC Address Management\r\n\u2022 Dynamic MAC Address\r\n\u2022 Virtual Network Setup \r\n\u2022 Networking with iSCSI Shared Storage \r\n\u2022 Hyper-V Networking Best Practices\r\n\u2022 Updates in Windows Server 2008 R2\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Understanding_Networking_w_Hyper-V_FINAL.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Hyper-V",
+    "systemRequirementsSection_supportedOS": [
+        "Hyper-V Server 2008",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Use an XPS read to view this document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9843",
+    "downloadPreload": true
+}

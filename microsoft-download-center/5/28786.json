@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Calendar Checking Tool for Outlook",
+    "downloadDescription": "The Calendar Checking Tool for Outlook (CalCheck) is a program that checks the Microsoft Outlook Calendar and items for problems or for potential problems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "calcheck2.5.2_x86.zip",
+            "url": "https://download.microsoft.com/download/3/b/7/3b7a0c99-29ab-4189-ac96-de86b579c4d2/calcheck2.5.2_x86.zip",
+            "size": "2483408",
+            "version": "2.5.2",
+            "datePublished": "7/15/2024 4:54:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "calcheck2.5.2_x64.zip",
+            "url": "https://download.microsoft.com/download/3/b/7/3b7a0c99-29ab-4189-ac96-de86b579c4d2/calcheck2.5.2_x64.zip",
+            "size": "3045013",
+            "version": "2.5.2",
+            "datePublished": "7/15/2024 4:54:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Calendar Checking Tool for Outlook is a command-line program that checks Outlook Calendars for problems. To use this tool, the Outlook calendar must reside on a Microsoft Exchange Server. The tool does not work with IMAP, with POP3, or with other non-Exchange mail servers.<br/><br/>\r\n\r\nThe tool opens an Outlook profile, opens the Outlook Calendar, and then checks several things such as permissions, free/busy publishing, and auto booking. Then, the tool checks each item in the calendar folder for problems that can cause items to seem to be missing or that might otherwise cause problems in the Calendar.\r\n\r\nPlease visit:  <a href=\"https://github.com/rtopken/CalCheck/releases\">https://github.com/rtopken/CalCheck/releases</a> <br/>\r\nThis contains the latest build of CalCheck and will be the location for download moving forward. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2678030",
+        "name": "KB2678030"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.5.2",
+    "detailsSection_file_name": [
+        "calcheck2.5.2_x86.zip",
+        "calcheck2.5.2_x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following:\r\n\r\n<ul>\r\n<li> Microsoft Office Outlook 2003</li>\r\n<li> Microsoft Office Outlook 2007</li>\r\n<li> Microsoft Office Outlook 2010 (32-bit)</li>\r\n<li> Microsoft Office Outlook 2010 (64-bit)</li>\r\n<li> Microsoft Office Outlook 2013 (32-bit)</li>\r\n<li> Microsoft Office Outlook 2013 (64-bit)</li>\r\n<li> Microsoft Office Outlook 2016 (32-bit)</li>\r\n<li> Microsoft Office Outlook 2016 (64-bit)</li>\r\n<li> Microsoft Exchange Server 2003</li>\r\n<li> Microsoft Exchange Server 2007</li>\r\n<li> Microsoft Exchange Server 2010</li>\r\n<li> Microsoft Exchange Server 2013</li>\r\n<li> Microsoft Exchange Server 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install the latest download:</b><br/>\r\n\r\n<ol>\r\n<li>Please visit:  <a href=\"https://github.com/rtopken/CalCheck/releases\">https://github.com/rtopken/CalCheck/releases</a> <br/>\r\nThis contains the latest build of CalCheck and will be the location for download moving forward.  </li>\r\n<li> Unzip the compressed file that you downloaded in a blank directory on your computer.</li>\r\n</ol>\r\n\r\n<b>Instructions for how to use this tool:</b><br/><br/>\r\n\r\nAfter you install this download, open a Command Prompt window in the directory that contains the CalCheck.exe file. To obtain detailed instructions, type the calcheck /? command in the Command Prompt window, and then press Enter.  <br/><br/>\r\n\r\nHere is a list of command-line switches for CalCheck.exe:<br/><br/>\r\n   CalCheck [-P <i>&lt;Profile name&gt;</i>] [-L &lt;path\\file&gt;] [-M &lt;LegacyExchangeDN&gt;] [-N &lt;DisplayName&gt;] [-O &lt;path&gt;] [-C &lt;Version&gt;] [-A] [-F] [-R] [-V] <br/> \r\n   CalCheck -?<br/><br/>\r\n\r\n   -P      Profile name (If absent, will prompt for profile)<br/>\r\n   -L      &lt;List File&gt; (file including Name and LegDN) of mailbox(es) to check<br/>\r\n   -M     Mailbox DN  Used with -N (if specified, only process the mailbox specified.)<br/>\r\n   -N     &lt;DisplayName&gt; Used with -M (if specified, only process the mailbox specified)<br/>\r\n   -O     &lt;Output Path&gt; (path to place output files - default is the current directory)<br/>\r\n   -C      &lt;Version&gt; Click To Run scenario with Office 2013 - load a specific MAPI version<br/>\r\n   -A      All calendar items output to CALCHECK.CSV<br/>\r\n   -F      Create CalCheck Folder and move flagged error items there<br/>\r\n   -R      Put a Report message in the Inbox with the CalCheck.log file<br/>\r\n   -V      Verbose output to the command window<br/>\r\n   -?       Print this message<br/>\r\n\r\n<br/><br/>\r\n\r\n<b>Additional instructions for CalCheck: </b><br/><br/>\r\nThe following Knowledge Base article contains additional instructions for using CalCheck:<br/><br/>\r\nInformation about the Calendar Checking Tool for Outlook (CalCheck)<br/>\r\n<a href=\"http://support.microsoft.com/kb/2678030\">http://support.microsoft.com/kb/2678030</a><br/>\r\n\r\n<br/>\r\n<b>To remove this download: </b><br/><br/>\r\nTo remove CalCheck, delete the directory where it is installed on the hard disk.<br/>\r\n\r\n<br/>\r\n<b>Privacy Note:</b><br/><br/>\r\nThe data files that CalCheck produces can contain personally identifiable information such as email addresses. Please delete these files from your system after analysis or after you send them to Microsoft for analysis.<br/>\r\n<br/>\r\nFor more information about the privacy standards and practices for Microsoft, please visit the following Microsoft website:<br/><br/>\r\n<a href=\"http://privacy.microsoft.com/en-us/default.mspx\">http://privacy.microsoft.com/en-us/default.mspx</a><br/>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28786",
+    "downloadPreload": true
+}

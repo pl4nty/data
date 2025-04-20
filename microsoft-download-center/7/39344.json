@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "ASP.NET and Web Tools for Visual Studio 2013 Preview Refresh",
+    "downloadDescription": "This contains an update to Visual Studio 2013 and Visual Studio 2013 for Web.  It includes additional templates, tooling and features for ASP.NET.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AspNetWebTools2013Setup.exe",
+            "url": "https://download.microsoft.com/download/2/3/f/23fc41d4-b3fe-4563-9b99-bb04ee4b9dc0/AspNetWebTools2013Setup.exe",
+            "size": "91008456",
+            "version": "Preview Refresh",
+            "datePublished": "7/15/2024 3:34:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release updates Visual Studio 2013 Preview with updates for ASP.NET and associating tooling.  Features and updates include:\r\n\r\n\u2022 One ASP.NET with updated templates\r\n\u2022 Extensible Scaffolding Fx with new Web Forms Scaffolds and improved MVC scaffolds\r\n\u2022 VS tooling enhancements - Libra, Browser Link\r\n\u2022 New Authentication & Identity Model\r\n\u2022 New Web API and SignalR functionality\r\n\r\nFor more information about using this release, please see the Release Notes: ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Preview Refresh",
+    "detailsSection_file_name": [
+        "AspNetWebTools2013Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "86.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\n\r\nWindows 7 Service Pack 1, Windows 8, Windows 8.1 Preview, Windows Server 2008 R2, Windows Server 2012\r\nMicrosoft Visual Studio 2013 or Microsoft Visual Studio Express 2013 for Web is required to use this update.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1 Preview",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "1.  Download and Run the file to install",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39344",
+    "downloadPreload": true
+}

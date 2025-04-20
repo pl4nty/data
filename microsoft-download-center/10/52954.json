@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Windows PowerShell script to delete all on-premises metadata from the Office 365 search index",
+    "downloadDescription": "Download this Windows PowerShell script to delete on-premises metadata from the Office 365 search index.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Delete-CloudHybridSearchContent.zip",
+            "url": "https://download.microsoft.com/download/0/7/6/07634920-6324-4797-93a0-927cb8164cac/Delete-CloudHybridSearchContent.zip",
+            "size": "1639",
+            "version": "October2020",
+            "datePublished": "7/15/2024 4:18:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In a cloud hybrid search solution, the cloud Search service application crawls your on-premises content and pushes the metadata to the Office 365 search index. We recommend that you test the cloud hybrid search solution with a small content source first. After the test, you may want to delete the metadata for all the on-premises test items from the search index in Office 365. If the deletion fails, there might be on-premises orphan items left in the search index in Office 365. To remove ALL on-premises items from the Office 365 index, run the Windows PowerShell script Delete-CloudHybridSearchContent.ps1. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "October2020",
+    "detailsSection_file_name": [
+        "Delete-CloudHybridSearchContent.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\nThe file is a zipped folder that contains a Windows PowerShell (ps1) file.\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Copy the download to your computer, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ol> \r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "deleting metadata for all on-premises items in the Office 365 search index",
+            "url": "https://technet.microsoft.com/EN-US/library/dn518363.aspx#BKMK_RemoveAllOnPremItems"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52954",
+    "downloadPreload": true
+}

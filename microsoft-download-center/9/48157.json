@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio 2015 Language Pack",
+    "downloadDescription": "The Visual Studio 2015 Language Pack is a free add-on that you can use to switch the language that's displayed in the Visual Studio user interface.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vs_langpack.exe",
+            "url": "https://download.microsoft.com/download/0/2/8/02851f14-44a7-4b31-80f4-e3a428ac58b8/vs_langpack.exe",
+            "size": "3026176",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:52:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The Visual Studio 2015 Language Pack enables the display of the UI in different languages. After you install the Language Pack, you can switch among the languages. Visual Studio Enterprise 2015, Visual Studio Professional 2015, or Visual Studio Community 2015 must be installed before you can install the Language Pack. \n<br/>\n<br/>\nTo find out what's new in Visual Studio 2015, see the <a href=\"http://www.visualstudio.com/news/vs2015-vs\">Visual Studio 2015 Release Notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=613260\">Visual Studio 2015 KB Article</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "vs_langpack.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For additional information on Operating System support, see the <a href=\"https://www.visualstudio.com/en-us/visual-studio-2015-compatibility-vs\">Visual Studio 2015 Compatibility page</a>.\n\n<b>Hardware Requirements:</b>\n<ul>\n<li>1.6 GHz or faster processor</li>\n<li>1 GB of RAM (1.5 GB if running on a virtual machine)</li>\n<li>600 MB of available hard disk space</li>\n<li>5400 RPM hard drive</li>\n<li>DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Before you install a Language Pack, install the corresponding version of the product.\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li>\n<li>Select the .exe options and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install the software now, choose the <b>Run</b> button.</li>\n<li>To install the software later, choose the <b>Save</b> button.</li>\n</ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center:",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48157",
+    "downloadPreload": true
+}

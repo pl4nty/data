@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 7 (KB3168658)",
+    "downloadDescription": "Resolves an issue that might occur with the Keyboard Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB3168658-x64.msu",
+            "url": "https://download.microsoft.com/download/a/e/e/aeecf727-ef51-4c75-a162-d8c60f9a65eb/Windows6.1-KB3168658-x64.msu",
+            "size": "249599",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB3168658-x86.msu",
+            "url": "https://download.microsoft.com/download/a/e/e/aeecf727-ef51-4c75-a162-d8c60f9a65eb/Windows6.1-KB3168658-x86.msu",
+            "size": "243798",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB3168658-x86.cab",
+            "url": "https://download.microsoft.com/download/a/e/e/aeecf727-ef51-4c75-a162-d8c60f9a65eb/Windows6.1-KB3168658-x86.cab",
+            "size": "68074",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB3168658-x64.cab",
+            "url": "https://download.microsoft.com/download/a/e/e/aeecf727-ef51-4c75-a162-d8c60f9a65eb/Windows6.1-KB3168658-x64.cab",
+            "size": "75350",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB3168658 fixes the following issue:\r\n<br></br>\r\nWhere a system becomes unresponsive after a USB keyboard is unplugged and re-plugged back in while holding down a key.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB3168658-x64.msu",
+        "Windows6.1-KB3168658-x86.msu",
+        "Windows6.1-KB3168658-x86.cab",
+        "Windows6.1-KB3168658-x64.cab"
+    ],
+    "detailsSection_file_size": [
+        "243.7 KB",
+        "238.1 KB",
+        "66.5 KB",
+        "73.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>POSReady7 image</b>: \r\n<br></br>\r\nA) Executing the appropriate msu file\r\n<ul>\r\n<li>32bit Windows6.1-KB3168658-x86.msu</li>\r\n<li>64bit Windows6.1-KB3168658-x64.msu</li>\r\n</ul>\r\nOR\r\nB) Installing the cab file via the command line with administrator privileges: \u201cDISM /online /add-package\"\r\n<ul>\r\n<li>32bit Windows6.1-KB3168658-x86.cab</li>\r\n<li>64bit Windows6.1-KB3168658-x64.cab</li>\r\n</ul>",
+    "additionalInformationSection": "This KB supersedes KB2685747",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53342",
+    "downloadPreload": true
+}

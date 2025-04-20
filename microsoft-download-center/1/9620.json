@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Ribbon: Samples",
+    "downloadDescription": "Downloadable code sample(s) that demonstrate the Windows Ribbon API, markup, and features.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DropDownColorPicker.zip",
+            "url": "https://download.microsoft.com/download/1/0/e/10e681e3-d789-4015-8a99-236a82a946de/DropDownColorPicker.zip",
+            "size": "119186",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContextPopup.zip",
+            "url": "https://download.microsoft.com/download/1/0/e/10e681e3-d789-4015-8a99-236a82a946de/ContextPopup.zip",
+            "size": "43553",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HTMLEditRibbon.zip",
+            "url": "https://download.microsoft.com/download/1/0/e/10e681e3-d789-4015-8a99-236a82a946de/HTMLEditRibbon.zip",
+            "size": "82152",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SimpleRibbon.zip",
+            "url": "https://download.microsoft.com/download/1/0/e/10e681e3-d789-4015-8a99-236a82a946de/SimpleRibbon.zip",
+            "size": "38752",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Gallery.zip",
+            "url": "https://download.microsoft.com/download/1/0/e/10e681e3-d789-4015-8a99-236a82a946de/Gallery.zip",
+            "size": "184138",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FontControl.zip",
+            "url": "https://download.microsoft.com/download/1/0/e/10e681e3-d789-4015-8a99-236a82a946de/FontControl.zip",
+            "size": "37479",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable code sample(s) that demonstrate the Windows Ribbon API, markup, and features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.01",
+    "detailsSection_file_name": [
+        "DropDownColorPicker.zip",
+        "ContextPopup.zip",
+        "HTMLEditRibbon.zip",
+        "SimpleRibbon.zip",
+        "Gallery.zip",
+        "FontControl.zip"
+    ],
+    "detailsSection_file_size": [
+        "116.4 KB",
+        "42.5 KB",
+        "80.2 KB",
+        "37.8 KB",
+        "179.8 KB",
+        "36.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Visual Studio 2008 (Express Edition supported)</LI>\r\n<LI>Windows SDK (v7.0)</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "See the ReadMe.txt file included in each sample for instructions on how to build and run the sample.",
+    "relatedResourcesSection": [
+        {
+            "title": "channel 9: Windows 7 Ribbon Markup Overview",
+            "url": "http://channel9.msdn.com/posts/yochay/Windows-7-Ribbon-Markup-Overview/"
+        },
+        {
+            "title": "channel 9: Windows 7 Ribbon Deep Dive",
+            "url": "http://channel9.msdn.com/posts/yochay/Windows-7-Ribbon-Deep-Dive/"
+        },
+        {
+            "title": "windows Ribbon: Introductory Tutorial",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=f62039ad-a224-4979-ae7f-67b4e09cd81e&displaylang=en"
+        },
+        {
+            "title": "windows Ribbon Documentation (MSDN)",
+            "url": "http://msdn.microsoft.com/en-us/library/dd371191.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9620",
+    "downloadPreload": true
+}

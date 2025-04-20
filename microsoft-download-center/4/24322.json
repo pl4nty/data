@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Selecting the Best Development Technology for Your Application Development Scenario",
+    "downloadDescription": "This white paper provides an overview of the common development patterns, programming models, and development tool changes in Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Selecting_the_Best_Development_Technology_for_Your_Application_Development_Scenario_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/5/c/c/5cc05daa-2e5a-4dec-a2cb-9afc902202b5/Selecting_the_Best_Development_Technology_for_Your_Application_Development_Scenario_AX2012.pdf",
+            "size": "1024086",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides guidelines for selecting the best development technology for your business application development scenario. The following topics are discussed:<br /><br />\r\n<UL><LI>Development patterns in Microsoft Dynamics AX 2012</LI>\r\n<LI>Programming models available in Microsoft Dynamics AX 2012</LI>\r\n<LI>Changes to the core development framework in Microsoft Dynamics AX 2012</LI>\r\n<LI>Selecting the appropriate programming model for your development patterns</LI>\r\n<LI>The Microsoft Dynamics AX development technologies road map</LI></UL><br /><br />\r\nThis white paper helps you pick the best programming model for your business application development scenario. Each programming model has advantages and disadvantages, and in some cases, the models may overlap in functionality. It is important that you choose the right programming model for your scenario because the choices you make initially can simplify the development experience and improve developer productivity. This can result in faster time to market and better supportability of the resulting business application.<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Selecting_the_Best_Development_Technology_for_Your_Application_Development_Scenario_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1000.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "This white paper is intended for anyone involved in developing business applications in the Microsoft Dynamics AX environment. Familiarity with Microsoft Visual Studio, the .NET Framework, the MorphX development environment, and the Business Connector is assumed.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24322",
+    "downloadPreload": true
+}

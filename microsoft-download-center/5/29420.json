@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure SharePoint Server 2010 in a Three-Tier Farm",
+    "downloadDescription": "This paper contains step-by-step instructions for creating a test lab containing a three-tier SharePoint farm.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-demonstrate-sp2010-three-tier.docx",
+            "url": "https://download.microsoft.com/download/9/a/0/9a0eea94-fde9-46a0-87af-d1c00f443369/tlg-demonstrate-sp2010-three-tier.docx",
+            "size": "123184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-demonstrate-sp2010-three-tier.pdf",
+            "url": "https://download.microsoft.com/download/9/a/0/9a0eea94-fde9-46a0-87af-d1c00f443369/tlg-demonstrate-sp2010-three-tier.pdf",
+            "size": "399734",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to SharePoint Server 2010 and step-by-step instructions for creating a test lab containing a three-tier SharePoint farm. The farm is based on the Base Configuration test lab guide (http://go.microsoft.com/fwlink/p/?LinkId=198140) and the SQL Server 2008 R2 test lab guide (http://go.microsoft.com/fwlink/p/?LinkID=206340). The paper also demonstrates the facilities of a default team site.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "tlg-demonstrate-sp2010-three-tier.docx",
+        "tlg-demonstrate-sp2010-three-tier.pdf"
+    ],
+    "detailsSection_file_size": [
+        "120.3 KB",
+        "390.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007, Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29420",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Search Topology Operations in SharePoint Server 2010",
+    "downloadDescription": "This white paper describes how to use the Windows PowerShell\u2122 command-line interface to add components to scale out the search topology in Microsoft\u00ae SharePoint\u00ae Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Search Topology Operations in SharePoint Server 2010.xps",
+            "url": "https://download.microsoft.com/download/d/7/3/d73579df-6ae6-4a6f-9c69-5ea191b20821/Search Topology Operations in SharePoint Server 2010.xps",
+            "size": "735221",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Search Topology Operations in SharePoint Server 2010.pdf",
+            "url": "https://download.microsoft.com/download/d/7/3/d73579df-6ae6-4a6f-9c69-5ea191b20821/Search Topology Operations in SharePoint Server 2010.pdf",
+            "size": "563464",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Search Topology Operations in SharePoint Server 2010.docx",
+            "url": "https://download.microsoft.com/download/d/7/3/d73579df-6ae6-4a6f-9c69-5ea191b20821/Search Topology Operations in SharePoint Server 2010.docx",
+            "size": "456483",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to use the Windows PowerShell\u2122 command-line interface to add components to scale out the search topology in Microsoft\u00ae SharePoint\u00ae Server 2010. It also describes how to perform a full topology import and export.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Search Topology Operations in SharePoint Server 2010.xps",
+        "Search Topology Operations in SharePoint Server 2010.pdf",
+        "Search Topology Operations in SharePoint Server 2010.docx"
+    ],
+    "detailsSection_file_size": [
+        "718.0 KB",
+        "550.3 KB",
+        "445.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13910",
+    "downloadPreload": true
+}

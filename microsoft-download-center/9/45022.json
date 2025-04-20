@@ -1,0 +1,139 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Implementation Guide for CRM 2015 (on-premises)",
+    "downloadDescription": "This guide contains comprehensive information about how to plan, install, configure, customize, and maintain Microsoft Dynamics CRM 2015 (on-premises).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Dynamics_CRM_2015_IG.zip",
+            "url": "https://download.microsoft.com/download/0/0/d/00d8dd31-8701-4707-8f6c-06b8e68aed79/Dynamics_CRM_2015_IG.zip",
+            "size": "27087622",
+            "version": "7.0",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRMIGv7_AdministrationGuide.pdf",
+            "url": "https://download.microsoft.com/download/0/0/d/00d8dd31-8701-4707-8f6c-06b8e68aed79/CRMIGv7_AdministrationGuide.pdf",
+            "size": "17310963",
+            "version": "7.0",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRMIGv7_PlanandDeploy.pdf",
+            "url": "https://download.microsoft.com/download/0/0/d/00d8dd31-8701-4707-8f6c-06b8e68aed79/CRMIGv7_PlanandDeploy.pdf",
+            "size": "5142738",
+            "version": "7.0",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRMIGv7_ReportingGuide.pdf",
+            "url": "https://download.microsoft.com/download/0/0/d/00d8dd31-8701-4707-8f6c-06b8e68aed79/CRMIGv7_ReportingGuide.pdf",
+            "size": "1362162",
+            "version": "7.0",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "<a href=\"http://technet.microsoft.com/en-us/library/hh699811(v=crm.7).aspx\">This is the same documentation that is available online on TechNet</a>. <br/><br/>\r\n\r\nThe  <i>Dynamics_CRM_2015_IG.zip</i> file contains the <i>Microsoft Dynamics CRM Implementation Guide for CRM 2015 (on-premises)</i> and consists of the following documents:\r\n<ul><li><i>Planning and deploying CRM 2015 on-premises </i>: This document contains the following guides.</li>\r\n<ul>\r\n<li><i>Planning  on-premises CRM 2015</i>: This guide gives you information that helps you get your organization ready for Microsoft Dynamics CRM 2015 on-premises. It includes two main aspects of planning for a customer relationship management (CRM) system: \r\n<ul><li>Technical: These topics focus on areas such as the supported topologies, system requirements, and technical considerations to address before you install. </li>\r\n<li>Implementation: These topics cover the business management, requirements, and project management aspects that are needed when you deploy a CRM system. </li></ul></li>\r\n<li><i>Installing on-premises CRM 2015</i>: This guide provides the information that you need to install Microsoft Dynamics CRM 2015 applications, such as step-by-step instructions for running Setup, and command-line instructions for silent installations.</li>\r\n<li><i>Operating on-premises CRM 2015</i>: This guide gives you information about how to back up, restore, and provide data recovery for Microsoft Dynamics CRM 2015. Additionally, this guide provides operational procedures and troubleshooting steps for known issues.</li>\r\n</ul>\r\n<li><i>Administering CRM on-premises CRM 2015</i>: This Word document contains resources and topics designed to help you manage, configure, and implement customizations of on-premises Microsoft Dynamics CRM 2015 deployments.\r\n</li>\r\n\r\n<li><i>Report writing with CRM 2015 for on-premises</i>: This Word document covers how to author custom reports for use with Microsoft Dynamics CRM.</li>\r\n<li>The Microsoft Dynamics CRM 2015 Implementation Guide Compiled HTML Help file (CRMIGv7.chm) includes the contents of all the documents listed previously and provides full-text search that lets you search across the entire set of Implementation Guide documents. </li></ul><br/>\r\n\r\nThe <i>CRM2015_PlanandDeploy.pdf</i>, <i>CRM2015_AdministrationGuide.pdf</i>, and <i>CRM2015_ReportingGuide.pdf</i> files  contain the same content as described in the <i>Dynamics_CRM_2015_IG.zip</i> file but are in PDF format. This format works well to view on a standard computer screen, but we suggest using this format for viewing on other devices such as tablets, ereaders, and mobile phones. <br/><br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0",
+    "detailsSection_file_name": [
+        "Dynamics_CRM_2015_IG.zip",
+        "CRMIGv7_AdministrationGuide.pdf",
+        "CRMIGv7_PlanandDeploy.pdf",
+        "CRMIGv7_ReportingGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "25.8 MB",
+        "16.5 MB",
+        "4.9 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Office Word 2007, Word 2010, Word 2013, or a compatible viewer</li>\r\n<li>Adobe PDF Reader</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol><li>The downloads is a compressed folder file or PDF files. To start the download, click <b>Download</b>.</li>\r\n<li>If the <b>File Download</b> dialog box appears, do one of the following:\r\n<ul><li>To start the download immediately, click <b>Open</b>. </li>\r\n<li>To copy the download to your computer to view later, click <b>Save</b>. </li></ul>\r\n</li></ol>\r\n<b>Important</b><br/>\r\nTo view the Microsoft Dynamics CRM 2015 Implementation Guide Help file (CRMIGv7.chm):\r\n<ol><li>After the download is completed, right-click the Dynamics_CRM_2015_IG file that has a compressed (.zip) file name extension and then click <b>Extract All</b>. Extract the files into a folder on your local computer. </li>\r\n<li>Double-click the CRMIGv7.chm file. </li>\r\n<li>If prompted, clear the \"Always ask before opening this file\" check box. </li>\r\n<li>If you still can't view the file, right-click the CRMIGv7.chm file, click <b>Properties</b>, and select the the procedure that is most appropriate for you. </li>\r\n<ul><li> Clear <b>This file came from another computer and may be unsafe</b>, and then click <b>OK</b>. </li>\r\n<li>Click <b>Unblock</b>, and then click <b>OK</b>. </li></ul>\r\n<li>Double-click the CRMIGv7.chm file to view it. </li></ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM IT Pro Technical Library",
+            "url": "http://technet.microsoft.com/en-us/library/jj992623.aspx"
+        },
+        {
+            "title": "crm Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/crm/dn467921"
+        },
+        {
+            "title": "deploying and administering Microsoft Dynamics CRM Online and Microsoft Dynamics CRM 2016",
+            "url": "https://technet.microsoft.com/en-US/library/hh699811.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45022",
+    "downloadPreload": true
+}

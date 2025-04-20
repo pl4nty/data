@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Accelerate GDPR compliance with Windows 10",
+    "downloadDescription": "Learn how Windows 10 can support GDPR compliance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows10andGDPRwhitepaper.pdf",
+            "url": "https://download.microsoft.com/download/4/9/a/49a95bf1-3ccf-46f0-8666-ea7223eb9a08/Windows10andGDPRwhitepaper.pdf",
+            "size": "1926771",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:44:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how Windows 10 can support your compliance with the European Union (EU) General Data Protection Regulation (GDPR) as well as approaches, recommended practices and techniques to support your GDPR compliance journey.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows10andGDPRwhitepaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Microsoft Edge, Adobe Reader, or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows for IT Pros Blog",
+            "url": "https://blogs.technet.microsoft.com/windowsitpro"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55765",
+    "downloadPreload": true
+}

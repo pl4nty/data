@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Keyboard Layout Creator (MSKLC) Version 1.4",
+    "downloadDescription": "The Microsoft Keyboard Layout Creator allows users to create or modify keyboard layouts.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSKLC.exe",
+            "url": "https://download.microsoft.com/download/6/f/5/6f5ce43a-e892-4fd1-b9a6-1a0cbb64e6e2/MSKLC.exe",
+            "size": "12411688",
+            "version": "1.4",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Ever wanted to quickly and easily define your own keyboard layout for a language Microsoft doesn't support? Or define your own keyboard layout so you can quickly and easily enter your favorite symbols with a simple keystroke? Well, want no more: the Microsoft Keyboard Layout Creator is here!<BR /><BR />The Microsoft Keyboard Layout Creator extends the international functionality of Windows 10, Windows 2000, Windows XP and Windows Server 2003 systems by allowing users to:<BR /><UL><LI>Create new keyboard layouts from scratch</LI><LI>Base a new layout on an existing one</LI><LI>Modify an existing keyboard layout (.KLC) file and build a new layout from it</LI><LI>Package the resulting keyboard layouts for subsequent deployment and installation.</LI></UL>This minor update to MSKLC fixes several customer-reported bugs in diverse areas such as support  for the Tibetan Tsek character on the spacebar and support for ligatures in the AltGr shift state.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4",
+    "detailsSection_file_name": [
+        "MSKLC.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To install and use the Microsoft Keyboard Layout Creator tool, your system must meet the following requirements:<BR /><UL><LI>Windows 10, Windows 2000, Windows XP, or Windows Server 2003 (MSKLC will not run on Windows NT 4.0, Windows 95, Windows 98, or Windows Me).</LI><LI>Microsoft .NET Framework v1.0 or v1.1 must be installed</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows XP",
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102134",
+    "downloadPreload": true
+}

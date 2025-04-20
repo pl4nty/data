@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "FSOCS performance analysis and capacity planning document",
+    "downloadDescription": "Document provides insights into performance testing and analysis conducted for the Forefront security for Office Communication Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FSOCS Performance Analysis.doc",
+            "url": "https://download.microsoft.com/download/c/0/0/c002f488-ea55-4fdf-89a7-cb1f950a2b43/FSOCS Performance Analysis.doc",
+            "size": "91136",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Document provides insights into performance testing and analysis conducted for the Forefront security for Office Communication Server. The document also provides the user with the information needed to petform capacity planning for the deployment and installation of Forefront Security for Office Communication Server.\r\n\r\n\r\n\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "FSOCS Performance Analysis.doc"
+    ],
+    "detailsSection_file_size": [
+        "89.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003\r\nWindows Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Click Download, and then click Save. <br /> \r\nBrowse to the location you want to save the file to, and then click Save. <br /> \r\nBrowse to the location where you saved the file. <br /> \r\nDouble-click the file to open it. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14315",
+    "downloadPreload": true
+}

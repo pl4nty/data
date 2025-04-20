@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Data Protection Manager 2025 \u2013 Evaluation (VHD)",
+    "downloadDescription": "This download consists of files that you extract into a single pre-configured VHD file for this System Center component. The VHD enables you to create a virtual machine to evaluate the different System Center components.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPM2025_VHDEVAL.docx",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/DPM2025_VHDEVAL.docx",
+            "size": "70215",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_2025.7z.001",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/SCDPM_2025.7z.001",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_2025.7z.002",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/SCDPM_2025.7z.002",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_2025.7z.003",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/SCDPM_2025.7z.003",
+            "size": "2147483648",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_2025.7z.004",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/SCDPM_2025.7z.004",
+            "size": "1717175079",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCDPM_2025.exe",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/SCDPM_2025.exe",
+            "size": "223848",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center 2025_WS_SQL_WADK VHD EULA.rtf",
+            "url": "https://download.microsoft.com/download/0aaffd1a-5327-4d52-a865-0cb53c756bbe/System Center 2025_WS_SQL_WADK VHD EULA.rtf",
+            "size": "197815",
+            "version": "2025",
+            "datePublished": "4/2/2025 9:01:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This VHDX enables System Center customers to jointly evaluate System Center 2025 and Windows Server 2025. For detailed information about each component, see the component documentation included with these download files.<br />\r\n<br />\r\nSystem Center 2025 components that ship Evaluation VHDXs can be found at the following locations:\r\n<ul>\r\n\r\n\r\n\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291511\">System Center Orchestrator 2025 \u2013 Evaluation (VHDX)</a></li>\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291512\">System Center Service Manager 2025 \u2013 Evaluation (VHDX)</a></li>\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291606\">System Center Operations Manager 2025 \u2013 Evaluation (VHDX)</a></li>\r\n<li><a href=\"https://go.microsoft.com/fwlink/?linkid=2291608\">System Center Virtual Machine Manager 2025 \u2013 Evaluation (VHD) </a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2025",
+    "detailsSection_file_name": [
+        "DPM2025_VHDEVAL.docx",
+        "SCDPM_2025.7z.001",
+        "SCDPM_2025.7z.002",
+        "SCDPM_2025.7z.003",
+        "SCDPM_2025.7z.004",
+        "SCDPM_2025.exe",
+        "System Center 2025_WS_SQL_WADK VHD EULA.rtf"
+    ],
+    "detailsSection_file_size": [
+        "68.6 KB",
+        "2.0 GB",
+        "2.0 GB",
+        "2.0 GB",
+        "1.6 GB",
+        "218.6 KB",
+        "193.2 KB"
+    ],
+    "detailsSection_file_date": "4/2/2025",
+    "systemRequirementsSection": "<ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows Server Tech Preview "
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download the self-extracting exe file and all other \u201c.bin\" files </li>\r\n<li> Download the <b>\u201cSCDPM_2025_VHDEVAL.docx\"</b> step-by-step instructions for how to use the VHD to create a virtual machine </li>\r\n<li> Place all downloaded files in the same directory </li>\r\n<li> Double-click the self-extracting <b>SCDPM_2025.exe</b> file to extract the VHD file </li>\r\n<li> Follow the instructions in the documentation file to complete the setup of the VHD </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106285",
+    "downloadPreload": true
+}

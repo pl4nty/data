@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "CSP Foundation Code Sample",
+    "downloadDescription": "This zipped file includes reference architecture, technical guides, and code samples.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CSP Foundation Code samples.zip",
+            "url": "https://download.microsoft.com/download/7/3/6/73685f1c-5162-415f-8f45-8ca8349931e7/CSP Foundation Code samples.zip",
+            "size": "85723315",
+            "version": "January 2016",
+            "datePublished": "3/15/2024 3:59:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\"This contains three different code samples\n\n1. Sample code for using the CSP Usage API and extracting customer usage information\n\n2. Sample code for building a custom control panel that talks to the partner center APIs (CREST, GRAPH) as well as service APIs for common IaaS services (Network , Compute, Storage)\n\n3. Sample powershell scripts for key scenarios like AAD integration, ASR, using the service REST API and granting AOBO using ARM\"\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2016",
+    "detailsSection_file_name": [
+        "CSP Foundation Code samples.zip"
+    ],
+    "detailsSection_file_size": [
+        "81.8 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "All",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50749",
+    "downloadPreload": true
+}

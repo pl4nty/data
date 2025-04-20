@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 1801+ - Orchestrator  Integration Packs",
+    "downloadDescription": "System Center 1801 - Orchestrator  Integration Packs contain Integration packs to extend core System Center Orchestrator functionality to work with System Center 1801 components and other technologies",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC_SCO_IPs.EXE",
+            "url": "https://download.microsoft.com/download/5/f/a/5fa89db3-3650-439e-9244-c55c9e39f450/SC_SCO_IPs.EXE",
+            "size": "12627176",
+            "version": "7.4.18",
+            "datePublished": "7/15/2024 3:05:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200b<b>System Center 1801+ Orchestrator Integration Packs </b><br/><br/>\r\nSystem Center 1801+ - Orchestrator Integration Packs extend the core System Center 1801 - Orchestrator component to enable the authoring of datacenter automation using System Center 1801 components as well as other Microsoft server products. These integration packs can be used for future releases of System Center also.<br/><br/>\r\nThis download includes Integration Packs for the following System Center 1801 Components: <br/><br/>\r\n<ul>\r\n<li> System Center Integration Pack for System Center 1801 Configuration Manager and future releases </li>\r\n<li> System Center Integration Pack for System Center 1801 Data Protection Manager and future releases</li>\r\n<li> System Center Integration Pack for System Center 1801 Operations Manager and future releases</li>\r\n<li> System Center Integration Pack for System Center 1801 Service Manager and future releases</li>\r\n<li> System Center Integration Pack for System Center 1801 Virtual Machine Manager and future releases</li>\r\n</ul><br/>\r\n\r\n<br/><br/>\r\nThe following Integration Packs are also included in this download. <br/>\r\n<ul>\r\n<li> System Center Integration Pack for REST </li><br/>\r\nThe Integration Pack for REST is an add-on for System Center 1801 Orchestrator that enables you to create activities within runbooks that make requests to REST web services to get data or perform functions.\r\nThe Invoke REST Service activity is used in a runbook to make requests to RESTful web services and retrieve data or execute functions. <br/><br/>\r\n<li> System Center Integration Pack for Exchange User </li><br/>\r\nThe Integration Pack for Exchange Users is an add-on for System Center 1801 Orchestrator that enables you to facilitate the automation of user centric tasks, such as sending e-mail messages, creating appointments and updating tasks<br/><br/>\r\n<li> System Center Integration Pack for Exchange Admin</li><br/>\r\nThe Integration Pack for Exchange Admin is an add-on for System Center 1801 Orchestrator that enables you to facilitate the automation of Exchange administration tasks, such as mailbox management, for on-premise, remote or cloud based environments in Microsoft Exchange and Office 365.<br/><br/>\r\n<li> System Center Integration Pack for File Transfer Protocol (FTP)</li><br/>\r\nThe Integration Pack for FTP enables you to automate FTP operations which include creating a folder, deleting a file or folder, downloading, uploading, file and folder listing and synchronization.<br/><br/>\r\n<li> System Center Integration Pack for Active Directory</li><br/>\r\nThe Integration Pack for Active Directory is an add-on for System Center 2016 Orchestrator that enables you to connect Orchestrator to your Active Directory Server to automate its management.<br/><br/>\r\n<li> System Center Integration Pack for Windows Azure </li><br/>\r\nThe Integration Pack for Windows Azure is an add-on for System Center 1801 Orchestrator that enables you to automate Windows Azure operations related to certificates, deployments, cloud services, storage, and virtual machines. <br/><br/>\r\n<li> System Center 1801 Integration Pack for Microsoft SharePoint 2013</li><br/>\r\nThe System Center Integration Pack for Microsoft SharePoint is a compliant integration pack that enables integration with Microsoft SharePoint to facilitate the automation of SharePoint tasks.<br/><br/>\r\n</ul><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<br/>\r\n<li> 12 February 2018 - Original release </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.4.18",
+    "detailsSection_file_name": [
+        "SC_SCO_IPs.EXE"
+    ],
+    "detailsSection_file_size": [
+        "12.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\nSystem Center 1801 - Orchestrator or above should be installed prior to installing the System Center Integration Packs.\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe.",
+    "relatedResourcesSection": [
+        {
+            "title": "orchestrator Integration Toolkit",
+            "url": "http://msdn.microsoft.com/en-us/library/hh855853"
+        },
+        {
+            "title": "system Center 1801 Home Page",
+            "url": "https://docs.microsoft.com/en-us/system-center/"
+        },
+        {
+            "title": "integration Pack Guide",
+            "url": "https://docs.microsoft.com/en-us/system-center/orchestrator/list-of-orchestrator-integration-packs?view=sc-orch-1801"
+        },
+        {
+            "title": "release Notes",
+            "url": "https://docs.microsoft.com/en-us/system-center/orchestrator/release-notes-1801?view=sc-orch-1801"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56605",
+    "downloadPreload": true
+}

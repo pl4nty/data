@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "KB 3054225: Wizard engine dependency on VSLanguageManager (RTM branch)",
+    "downloadDescription": "KB 3054225: Wizard engine dependency on VSLanguageManager (RTM branch)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB3054225.exe",
+            "url": "https://download.microsoft.com/download/6/d/2/6d28583d-65e0-4377-a6f8-c53848557306/VS12-KB3054225.exe",
+            "size": "1218760",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:45:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "After deploying a custom VS 2013 Isolated Shell application, you encounter an error message, when attempting to create a project or add a project item that contains a C or C++ source file.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3054225",
+        "name": "KB3054225"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VS12-KB3054225.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "VS 2013 Isolated Shell",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Professional N",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click download to install the patch.\r\n\r\nhttp://download.microsoft.com/download/6/D/2/6D28583D-65E0-4377-A6F8-C53848557306/VS12-KB3054225.exe",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47745",
+    "downloadPreload": true
+}

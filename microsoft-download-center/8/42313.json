@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Data Tools - Business Intelligence for Visual Studio 2013 ",
+    "downloadDescription": "Installs Microsoft SQL Server Data Tools Business Intelligence project templates for Analysis Services, Integration Services, and Reporting Services that support Visual Studio 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSDTBI_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/c/9/c/c9c9afb9-9fa2-4639-a0ad-92c6cc232ea2/SSDTBI_x86_ENU.exe",
+            "size": "1120451984",
+            "version": "12.0.2430.0",
+            "datePublished": "7/15/2024 3:25:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Installs Microsoft SQL Server Data Tools Business Intelligence project templates for Analysis Services, Integration Services, and Reporting Services that support Visual Studio 2013 and SQL Server 2014. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0.2430.0",
+    "detailsSection_file_name": [
+        "SSDTBI_x86_ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Supported architectures:</b></li>\r\n<ul>\r\n<li>32-bit (x86)</li>\r\n<li>64-bit (x64)</li>\r\n</ul>\r\n<br/>\r\n<li><b>Hardware requirements:</b></li>\r\n<ul>\r\n<li>1.6 GHz or faster processor</li>\r\n<li>4 GB of RAM (4.5 GB if running on a virtual machine)</li>\r\n<li>10 GB (NTFS) of available hard disk space</li>\r\n<li>DirectX 9-capable video card running at 1024 x 768 or higher display resolution</li>\r\n</ul>\r\n<br/>\r\n<li><b>Prerequisites:</b></li>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.5.1</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Isolated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Integrated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2013 Shell (Isolated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2013 Shell (Integrated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio Tools for Applications 2012</li>\r\n<li>Microsoft Report Viewer 2014 Runtime</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<br/>\r\n1. On this page, click Download to start the download. \r\n<br/>\r\n2. To save the download on your computer so that you can install it later, click Save.\r\n<br/>\r\n3. To cancel the installation, click Cancel.\r\n<br/>\r\n",
+    "additionalInformationSection": "Installing SQL Server Data Tools - Business Intelligence for Visual Studio 2013 also installs the following, if they are not already installed on the computer: \r\n<br/>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.5.1</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Isolated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2012 Shell (Integrated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2013 Shell (Isolated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio 2013 Shell (Integrated) Redistributable Package</li>\r\n<li>Microsoft Visual Studio Tools for Applications 2012</li>\r\n<li>Microsoft Report Viewer 2014 Runtime</li>\r\n</ul>\r\nWhat's new in this version:\r\n<br/>\r\n<ul>\r\n<li>SSDT BI is enhanced to support VS 2013</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42313",
+    "downloadPreload": true
+}

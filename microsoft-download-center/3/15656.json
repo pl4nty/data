@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows\u00ae Server 2003 SP1 Platform SDK ISO Install",
+    "downloadDescription": "The Platform SDK for Microsoft\u00ae Windows\u00ae Server 2003 SP1 contains the information and tools you need to develop Windows-based applications. You can use this SDK to develop both 32- and 64-bit applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "5.2.3790.1830.15.PlatformSDK_Svr2003SP1_rtm.img",
+            "url": "https://download.microsoft.com/download/7/5/e/75ec7f04-4c8c-4f38-b582-966e76602643/5.2.3790.1830.15.PlatformSDK_Svr2003SP1_rtm.img",
+            "size": "414361600",
+            "version": "3790.1830",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\n==========\n<br/>\n<b>NOTE:</b> This version of the Platform SDK has been superceded by the  Windows SDK for Windows Server 2008 and .NET Framework 3.5.  This version of the Windows SDK is available as either a \n<ul>\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en\">Web Install</a> or\n</li>\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=F26B1AA4-741A-433A-9BE5-FA919850BDBF&displaylang=en\">DVD ISO image</a>\n</li>\n</ul>\n<br/>\n==========\n<br/>\n<br/>\n<B> This is no longer the most recent edition of the Platform SDK.  </B>\nThe Microsoft\u00ae Windows\u00ae Software Development Kit (SDK) provides the documentation, samples, header files, libraries, and tools you need to develop applications that run on Windows. The applications you develop with this edition of the SDK can run on the x86, x64 and Itanium-based versions of Windows Server 2003 SP1, Windows XP SP2,  Windows XP x64 Pro Edition, and Windows 2000.  A new custom install allows you to select components you wish to install on a more granular level.\n<br></br>\nThis edition of the SDK replaces the previous SDKs for Windows XP SP2 and Windows Server 2003 and can be used to develop applications for those platforms.\n<br></br>\n<b>This SDK is also available as a low-cost CD.  You can also order some of the legacy releases of the SDK at the site.  To order a CD,</b> click <a href=\"http://go.microsoft.com/fwlink/?LinkId=48615&clcid=0x409\">Order</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3790.1830",
+    "detailsSection_file_name": [
+        "5.2.3790.1830.15.PlatformSDK_Svr2003SP1_rtm.img"
+    ],
+    "detailsSection_file_size": [
+        "395.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\n<ul>\n<li><b>Hard Disk Space.</b> Choose a disk drive with a minimum of 1 GB of free space. </li>\n<br></br>\n<li><b>High-Speed Internet Connection.</b> If your connection speed is 56 Kbps or less, it is best to purchase the low-cost SDK CD (US/Canada or International) or install the Web Download.</li>\n<br></br>\n<li><b>Development Tools.</b> To build the C/C++ samples, you must have a C/C++ compiler. If you are using Microsoft Visual C/C++\u00ae, run it at least once before installing the SDK. This will ensure that the environment variables are correctly configured. To build the Visual Basic samples, you must have Microsoft Visual Basic\u00ae.  This SDK does not support working with Microsoft Visual C/C++\u00ae, 6.0 as support for VC 6.0 has ended.  The last SDK that will work with VC 6.0 is the February 2003 Edition, you can order a CD on the fulfillment site.  Side by side installations are not supported. </li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows XP 64-bit"
+    ],
+    "installInstructionSection": "<ul>\n<li><b>To run the installation</b> program over the Internet, choose to download the Platform SDK for Windows Server 2003 SP1 Web Install. The installation program will install the components you select.</li>\n\n<br></br>\n<li><b>To download the Platform SDK</b> in 25-MB packages and run the installation program locally, choose Platform SDK for Windows Server 2003 SP1 Full Download. The installation program will install the components you select.</li> \n<br></br>\n<li><b>To download images</b> that you can burn to a CD, choose Platform SDK for Windows Server 2003 SP1 ISO Image Download.</li>\n<br></br>\n<li>For more information, see the <b><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=149187AC-7008-4F49-A00A-26DCEBE0FC32&displaylang=en\">FAQ</a></b>.</li>\n</ul>",
+    "additionalInformationSection": "Redistributable components allow new APIs to be supported on previous versions of Windows. Individual redistributable components have separate licenses that typically allow you to ship the files with your applications. The specific licensing details are covered in two files, License.txt and Redist.txt, which are downloaded with each redistributable component.  \n<br></br>\n\n<b>The following redistributable components are available for all versions of Windows:</b>\n<UL>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?ReleaseID=44155\">CAPICOM 2.1</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=30324\">DirectX Media version 6.0 Patch</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=6a63ab9c-df12-4d41-933c-be590feaa05a&DisplayLang=en\">GDI+</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=30328\">HTML Help version 1.3</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=30343\">Instant Messenger version 6.0.4611.0</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=39790\">Microsoft Active Accessibility version 2.0</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=30332\">Microsoft Agent version 2.0</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=39917\">Microsoft Management Console version 1.2</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=30334\">MSMQ Triggers version 2.4.1.0</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/details.aspx?familyid=b46d4b83-a821-40bc-aa85-c9ee3d6e9699&displaylang=en\">Tablet PC Platform SDK V1.7</A>\n</UL>\n\n<br></br>\n<b>The following are the redistributable components for Windows XP:</b>\n\n<ul>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=39521\">COM+ Java Runtime Support</A>\n</ul>\n\n<br></br>\n<b>The following are the redistributable components for Windows 2000:</b>\n\n<ul>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=29130\">Microsoft Windows Text Services Framework version 1.0</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=32832\">Windows Installer Unicode (Windows NT/2000/XP) version 2.0</A>\n<LI STYLE=\"color:#FF9900;\"/>\n<A Target=\"_blank\" HREF=\"http://www.microsoft.com/downloads/release.asp?releaseid=35751\">WMI Redistributable Components version 1.0</A>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15656",
+    "downloadPreload": true
+}

@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2019 CU11 SU9 (KB5022193)",
+    "downloadDescription": "Security Update For Exchange Server 2019 CU11 SU9 (KB5022193)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2019-KB5022193-x64-en.exe",
+            "url": "https://download.microsoft.com/download/4/4/4/4447cb74-ce40-45bd-ac3c-9cedc97077f7/Exchange2019-KB5022193-x64-en.exe",
+            "size": "163382768",
+            "version": "15.02.0986.037",
+            "datePublished": "7/15/2024 4:33:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5022193",
+        "name": "5022193"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.0986.037",
+    "detailsSection_file_name": [
+        "Exchange2019-KB5022193-x64-en.exe"
+    ],
+    "detailsSection_file_size": [
+        "155.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2019 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2019 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2019 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2019 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2019 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "We recommend that you restart your computer before you install a security update. Then, follow these steps:<br/>\r\n<ol start=\"1\" type=\"1\">\r\n <li>\r\n  Temporarily disable any anti-virus software.\r\n </li>\r\n <li>\r\n  To start the download, select the Download button, and then do one of the following:\r\n </li>\r\n</ol>\r\n<ul type=\"disc\">\r\n <li>\r\n  To start the installation immediately, select <b>Run</b>.\r\n </li>\r\n <li>\r\n  To copy the download file to your computer for installation at a later time, select <b>Save</b>.<br/>\r\n </li>\r\n</ul>\r\n\r\n    <b>Note:</b> To change the display language for this webpage, open the Select Language list, and then select the language that you want.\r\n\r\n<ol start=\"3\" type=\"1\">\r\n <li>\r\n  After the installation is completed, re-enable the antivirus software, and then restart your computer. (The installation program may prompt you to restart. We strongly recommend that you restart the computer even if you are not prompted to do this.) \r\n </li>\r\n</ol>\r\n\r\n<br/>If problems occur during or after the installation, please see\r\n<a href=\"https://nam06.safelinks.protection.outlook.com/?url=https:%2f%2faka.ms%2fexupdatefaq&amp;data=05%7c01%7cchristys%40microsoft.com%7cdf601c59a4c54b9624ca08da8eeaafb4%7c72f988bf86f141af91ab2d7cd011db47%7c1%7c0%7c637979435867281629%7cUnknown%7cTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7c3000%7c%7c%7c&amp;sdata=HhqMSuZ7xfTxwoKb8oSyVfUM7MqVE14Z%2BtKPoKx3tCE%3D&amp;reserved=0\">\r\n  Repair failed installations of Exchange Cumulative and Security updates\r\n    </a>\r\n before you contact Microsoft Support.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104913",
+    "downloadPreload": true
+}

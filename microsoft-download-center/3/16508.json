@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Micro Framework SDK V2.5",
+    "downloadDescription": "Download the .NET Micro Framework Software Development Kit to develop for embedded devices using Visual Studio, C#, and .NET technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft .NET Micro Framework 2.5 SDK.zip",
+            "url": "https://download.microsoft.com/download/4/a/8/4a8400d0-8f17-46de-8e0a-34962c751f65/Microsoft .NET Micro Framework 2.5 SDK.zip",
+            "size": "9278947",
+            "version": "V2.5",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nThe Microsoft\u00ae .NET Micro Framework combines the reliability and efficiency of  managed code with the premier development tools of Microsoft Visual Studio\u00ae to deliver exceptional productivity for developing embedded applications on small devices.<br />\n<br />\nThe Microsoft .NET Micro Framework SDK supports development of code, including device I/O, in the C# language using a subset of the .NET libraries, and is fully integrated with the Microsoft Visual Studio\u00ae development environment.<br />\n<br />\nThis download is the full SDK, which lets you develop C# code for the .NET Micro Framework and run it on our extensible emulator. Then choose from several development kits to deploy your code to real hardware.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V2.5",
+    "detailsSection_file_name": [
+        "Microsoft .NET Micro Framework 2.5 SDK.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><B>Supported Development Environments:</B> Microsoft Visual Studio 2005 with Service Pack 1, Standard Edition or greater </LI></UL><br />\n<B>Note: </B> The Micro Framework SDK is not compatible with Express Editions of Visual Studio.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows Vista Home Premium",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Change</B>.</LI><LI>Copy the download to your computer for installation at a later time by clickin <B>Save</B> or <B>Save this program to disk</B>.</LI><LI>Unzip the downloaded file, and run <B>Setup.exe</B>.</LI></OL>",
+    "additionalInformationSection": "The .NET Micro Framework SDK Version 2.5 includes the following features:<br />\n<UL><LI><B>Microsoft Visual Studio Integration</B><br />\nThe .NET Micro Framework SDK integrates into the Visual Studio environment, supporting C# development with productivity-boosting features such as on-device debugging, object browsing, IntelliSense\u00ae, and integrated build and deployment.</LI><br />\n<LI><B>Managed Libraries and Drivers</B> <br />\nAn on-device implementation of a subset of the .NET Common Language Runtime (CLR)\nbrings the advantages of .NET development to small devices. Write device drivers and interrupt routines in C# for hardware connected through standard interfaces, such as SPI, I2C, GPIO, and USART.</LI><br />\n<LI><B>Extensible Emulator</B> <br />\nExtend the core emulator included in the SDK to reflect your target hardware capabilities. Add simulated peripheral devices, such as sensors, displays, buttons, and servo controls. Then deploy to your customized emulator and test your code on the virtual hardware.</LI><br />\n<LI><B>Flash Management tool</B> <br />\nMFDeploy, included as part of the SDK,  has been enhanced to provide device key management and application signing features.</LI><br />\n<LI><B>Font Generation tool</B> <br />\nThe TFConvert tool allows you to convert .TTF fonts to run on your device.</LI><br />\n<LI><B>Flash Protection</B> <br />\nTo prevent unauthorized code from being uploaded to your device, Service Pack 1 adds the ability to sign applications and to store keys on your device.</LI><br />\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Micro Framework home page",
+            "url": "http://msdn.microsoft.com/embedded/netmf"
+        },
+        {
+            "title": "visual Studio 2005 Professional Edition 90-day trial",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=B2C27A7F-D875-47D5-B226-E2578A116E12"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16508",
+    "downloadPreload": true
+}

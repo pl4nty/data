@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Thin PC (KB2612905)",
+    "downloadDescription": "Resolves an issue that might occur with the Operating System Loader",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2612905-v4-x86.msu",
+            "url": "https://download.microsoft.com/download/0/6/1/061b9e77-bcbb-4942-8bce-d69efef0be58/Windows6.1-KB2612905-v4-x86.msu",
+            "size": "778417",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2612905 fixes the following issue:\r\n<br></br>\r\nThis is an update for the Windows Operating System Loader that resolves issues that might occur with HORM functionality.\r\n<i>This KB solution is comprised of the following KB update package: Security Advisory \r\n<A href=\"http://support.microsoft.com/kb/2506014\">KB2506014</A>.</i>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2506014",
+        "name": "KB2506014"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2612905-v4-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "760.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Thin PC",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Thin PC "
+    ],
+    "installInstructionSection": "This update is installed by executing  file <b>Windows6.1-KB2612905-x86.msu</b> on a Windows Thin PC image.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29902",
+    "downloadPreload": true
+}

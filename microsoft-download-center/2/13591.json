@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange 2010 Unified Messaging PBX Configuration Note for Cisco Unified Communications Manager 8.0",
+    "downloadDescription": "This PBX configuration note contains information about deploying Exchange 2010 Service Pack 1 (SP1) with Cisco Unified Communications Manager 8.0 using a direct SIP connection. The PBX configuration note contains configuration settings that are specific to Cisco Unified Communications Manager 8.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Cisco-CuCM_8. 0_Direct_SIP_with_Exchange_2010_UM.doc",
+            "url": "https://download.microsoft.com/download/b/2/f/b2f00eb7-0247-446a-9299-821d4b7177fd/Cisco-CuCM_8. 0_Direct_SIP_with_Exchange_2010_UM.doc",
+            "size": "1740288",
+            "version": "Mar2011",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the PBX configuration note for Microsoft Exchange 2010 Unified Messaging with:\r\n<ul>\r\n<li>PBX Vendor: Cisco</li>\r\n<li>PBX model: Unified Communications Manager 8.0</li>\r\n<li>PBX software: 8.0.3.10000-8</li> \r\n<li>Protocol: Direct SIP Connection</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2011",
+    "detailsSection_file_name": [
+        "Cisco-CuCM_8. 0_Direct_SIP_with_Exchange_2010_UM.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13591",
+    "downloadPreload": true
+}

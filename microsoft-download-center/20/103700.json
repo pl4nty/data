@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk ESB Toolkit Hotfix - KB 5009301",
+    "downloadDescription": "Microsoft BizTalk ESB Toolkit Hotfix - KB 5009301",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB5009301-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/3/5/3357ee45-ee15-4070-bfbf-489ca949f9e0/BTS2016-KB5009301-ENU.exe",
+            "size": "4823920",
+            "version": "2.2, 2.3, 2.4",
+            "datePublished": "7/15/2024 5:05:14 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BTS2013R2-KB5009301-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/3/5/3357ee45-ee15-4070-bfbf-489ca949f9e0/BTS2013R2-KB5009301-ENU.exe",
+            "size": "4826016",
+            "version": "2.2, 2.3, 2.4",
+            "datePublished": "7/15/2024 5:05:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2013-KB5009301-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/3/5/3357ee45-ee15-4070-bfbf-489ca949f9e0/BTS2013-KB5009301-ENU.exe",
+            "size": "4786592",
+            "version": "2.2, 2.3, 2.4",
+            "datePublished": "7/15/2024 5:05:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk ESB Toolkit Hotfix - KB 5009301",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2, 2.3, 2.4",
+    "detailsSection_file_name": [
+        "BTS2016-KB5009301-ENU.exe",
+        "BTS2013R2-KB5009301-ENU.exe",
+        "BTS2013-KB5009301-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB",
+        "4.6 MB",
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft BizTalk Server 2016:\r\n.NET Framework 4.6\r\nVisual Studio 2015 \r\nSQL Server 2016 or SQL Server 2014 SP1 \r\n\r\n\r\nMicrosoft BizTalk Server 2013R2:\r\n.NET Framework 4.6.x or .NET Framework 4.5.x\r\nVisual Studio 2013\r\nSQL Server 2014 or SQL Server 2012 SP1 \r\n\r\n\r\nMicrosoft BizTalk Server 2013:\r\n.NET Framework 4.5.x\r\nVisual Studio 2012\r\nSQL Server 2012 or SQL Server 2008 R2 SP1 \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 7 Service Pack 1",
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103700",
+    "downloadPreload": true
+}

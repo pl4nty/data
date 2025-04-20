@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Debug Diagnostic Tool v2 Update 3.2",
+    "downloadDescription": "The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DebugDiagx64.msi",
+            "url": "https://download.microsoft.com/download/9/3/a/93ae9fb0-2f2a-43f1-b0b5-5381b9f629ca/DebugDiagx64.msi",
+            "size": "28676096",
+            "version": "2.3.2.11",
+            "datePublished": "7/15/2024 5:04:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process. The tool includes built-in analysis rules focused on Internet Information Services (IIS) applications, web data access components, COM+, SharePoint and related Microsoft technologies. Debugdiag 2.0 family introduced a new analysis engine host with built-in reporting framework that can be accessed from .NET.  This new analysis engine simplifies analysis rule development in .NET.  Starting with Debugdiag 2.0, the analysis engine relies on Microsoft.Diagnostics.Runtime for .NET analysis.\r\n<ul>\r\n<li>DebugDiag 2 Update 2  (x64 and x86 versions)</li>\r\n<li>DebugDiag 2 Update 3   </li> (x64 version only, but supports x86 debugging ) \r\n<li>DebugDiag 2 Update 3.1 </li> (x64 version only, but supports x86 debugging )\r\n \r\n </ul>\r\n\r\n<br> </br>\r\n<br>DebugDiag 2 Update 3.1 addressed a couple of analysis issues that were reported in update 2.3.   </br>\r\n\r\n<br> </br>\r\nSummary of fixes \r\n<br>=================</br>\r\n<br> </br>\r\n<ul>\r\n<li>Workaround missing process uptime data in 'snapshot' dumps (PerfAnalysis CPU calcs need it)</li>\r\n<li>Fix owner/grouping in hang analysis summary section for threads waiting on .NET locks</li>\r\n<li>Fix InnerException info in Crash Analysis</li>\r\n<li>Fix broken links in CrashAnalysis when option to always run hang analysis is off (off by default)</li>\r\n<li>Fix NullReferenceException in PerfAnalysis DoVersionsMatch</li>\r\n<li>Avoid false 'blocked while blocking other threads' message by checking for 'error' string in rpc/soc</li>\r\n<li>Fixes to SampleAnalysisRules</li>\r\n<li>Fix NullReferenceException during managed heap enumeration</li>\r\n</ul>\r\n\r\n\r\n<br> </br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.3.2.11",
+    "detailsSection_file_name": [
+        "DebugDiagx64.msi"
+    ],
+    "detailsSection_file_size": [
+        "27.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Only x64 architecture is supported!\r\n\r\nCollection Module: \r\n<br>============</br>\r\n<ul>\r\n\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2019</li>\r\n</ul>\r\n<br></br>\r\nAnalysis Module:\r\n<br>============</br>\r\n<ul>\r\n<li>.NET 4.0 </li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n<li>Windows Server 2016</li>\r\n<li>Windows Server 2019</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "- Remove any previous version\r\n- Run the MSI",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103453",
+    "downloadPreload": true
+}

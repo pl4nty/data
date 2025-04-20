@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009: What's New for Staff Accounting and Payroll for Russia",
+    "downloadDescription": "This document describes a new feature in the Microsoft Dynamics AX 2009 release that is required by the Russian Federation Labor Code, and also provides brief descriptions about some of the other features for Staff accounting and payroll.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "What's new GDL_PR_Russia_EN-US.pdf",
+            "url": "https://download.microsoft.com/download/e/e/e/eeee7d47-6b68-4e77-862d-f9eaaa83aac0/What's new GDL_PR_Russia_EN-US.pdf",
+            "size": "175946",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "What's new GDL_PR_Russia_EN-US.xps",
+            "url": "https://download.microsoft.com/download/e/e/e/eeee7d47-6b68-4e77-862d-f9eaaa83aac0/What's new GDL_PR_Russia_EN-US.xps",
+            "size": "312819",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a detailed description of a new feature for payroll in Microsoft Dynamics AX 2009. The new feature was added to meet the requirements for the Russian Federation Labor Code article 140, which specifies when an employer must make final payment to an individual whose employment has been terminated. This document also summarizes enhancements made to many of the Russia payroll features that were initially included or updated in the Staff accounting module in the Microsoft Dynamics AX 2009 release.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "What's new GDL_PR_Russia_EN-US.pdf",
+        "What's new GDL_PR_Russia_EN-US.xps"
+    ],
+    "detailsSection_file_size": [
+        "171.8 KB",
+        "305.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics AX 2009 White Paper: One Single World-Wide Instance (Eastern Europe/Russia GLS layer)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=b02a5f56-bd27-4fcc-84a1-70e2beeb8ef0"
+        },
+        {
+            "title": "service Pack 1 for Microsoft Dynamics AX 2009",
+            "url": "https://mbs.microsoft.com/customersource/downloads/servicepacks/dynamicsax2009sp1.htm"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4416",
+    "downloadPreload": true
+}

@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Remote Desktop assistant",
+    "downloadDescription": "On the Windows PC you want to connect to remotely, download the Microsoft Remote Desktop assistant to configure your PC for remote access.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rdassistant.application",
+            "url": "https://download.microsoft.com/download/1/3/2/1322897e-11c1-4e30-9efc-70c1c2219048/Application Files/rdassistant_1_0_0_103/rdassistant.application",
+            "size": "16338",
+            "version": "1.0.103",
+            "datePublished": "7/15/2024 4:46:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "*** Starting with Windows 10 Fall Creators Update (1709), look for <b>Remote Desktop</b> under <b>System</b> in the <b>Settings</b> app instead of using the Remote Desktop Assistant ***\r\n\r\nMicrosoft Remote Desktop assistant allows you to configure your PC for remote access<br /><br />\r\n\r\nFrom your Windows PC, access the <a href=\"http://www.aka.ms/rdassistant\">Microsoft Remote Desktop assistant</a> to configure it for remote access from another device using the Remote Desktop apps for Windows, macOS, iOS or Android. <br /><br />\r\n\r\n<a href=\"mailto:?to=&subject=Microsoft%20Remote%20Desktop%20assistant&body=From%20your%20Windows%20PC,%20access%20www.aka.ms/rdassistant%20to%20configure%20it%20for%20remote%20access%20from%20another%20device%20such%20as%20your%20phone,%20tablet,%20PC%20or%20Mac%20using%20the%20Remote%20Desktop%20applications.\">Email myself a link to the Microsoft Remote Desktop Assistant</a>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.103",
+    "detailsSection_file_name": [
+        "rdassistant.application"
+    ],
+    "detailsSection_file_size": [
+        "16.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The following editions of Windows 7, Windows 8.1 and Windows 10 are supported:\r\n<br /><br />\r\n<ol>\r\n<li>Professional</li>\r\n<li>Ultimate</li>\r\n<li>Enterprise</li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Enterprise",
+        "Windows 7 Professional",
+        "Windows 7 Ultimate",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro"
+    ],
+    "installInstructionSection": "To start the download, click the <b>Download</b> button. The application will start and you can run the application by clicking <b>Install</b>. After this, launch the application and accept the license terms to begin setting up your PC for remote access.<br /><br />\r\n\r\nAfter completing configuration you are now ready to use our Remote Desktop applications from another device to access your PC. To get started follow the instructions below for your specific device: <br /><br />\r\n\r\n<ol>\r\n<li><a href=\"https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-android\">Android</a></li>\r\n<li><a href=\"https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-ios\">iOS</a></li>\r\n<li><a href=\"https://docs.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac\">Mac</a></li>\r\n<li><a href=\"https://www.microsoft.com/store/apps/9wzdncrfj3ps\">Windows 10</a></li>\r\n</ol>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50042",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Jeffrey Richter on the Direction of Hardware",
+    "downloadDescription": "Carl and Richard welcome back Jeffrey Richter to the show. Jeff is a consultant for Microsoft with a unique perspective on the evolution of Windows and PC hardware.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080520JRichter.zip",
+            "url": "https://download.microsoft.com/download/2/d/b/2dbfdfc0-2959-40ef-b2de-fad6884a6209/20080520JRichter.zip",
+            "size": "44620544",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Jeffrey Richter is a cofounder of Wintellect (www.Wintellect.com), an architecture review, consulting, and training firm. He is the author of several books, including Windows via C/C++ (Microsoft Press, 2007) and CLR via C# (Microsoft Press, 2006). Jeffrey is also a contributing editor to MSDN Magazine and has been consulting with Microsoft since 1990.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080520JRichter.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.6 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5259",
+    "downloadPreload": true
+}

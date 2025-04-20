@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Delivering Lync 2013 Real-Time Communications over Wi-Fi",
+    "downloadDescription": "Lync 2013 communications software can be successfully implemented over wireless local area networks (Wi-Fi) for voice and video (real-time media). User experiences and best practices are summarized, including detailed configuration settings for enterprise, public hotspot, and home Wi-Fi deployments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Delivering_Lync_2013_Real-Time Communications_over_Wi-Fi.doc",
+            "url": "https://download.microsoft.com/download/b/5/7/b57fc5ad-6446-4aab-905c-f24cec214047/Delivering_Lync_2013_Real-Time Communications_over_Wi-Fi.doc",
+            "size": "421888",
+            "version": "Jan2013",
+            "datePublished": "7/15/2024 3:33:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Lync 2013 communications software on multiple platforms and device types is now validated with voice and video (real-time media) workloads over wireless local area networks (Wi-Fi networks). The guidance and documentation provided here also applies to Lync 2010 deployments and earlier releases. However, full Wi-Fi support will be available only with a Lync 2013 client. Changes in the Lync media stack available with Lync 2013 will improve overall performance on high-loss, high-jitter wired or wireless networks. To optimize the wireless infrastructure, in particular for real-time media traffic, this guide provides details regarding Wi-Fi (WLAN) technology, configuration settings, and optimization. In addition, this guide provides deployment recommendations and evaluates typical enterprise, public hotspot, and home Wi-Fi deployments for real-time bidirectional media quality. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jan2013",
+    "detailsSection_file_name": [
+        "Delivering_Lync_2013_Real-Time Communications_over_Wi-Fi.doc"
+    ],
+    "detailsSection_file_size": [
+        "412.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Lync Server 2013",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=265372"
+        },
+        {
+            "title": "lync Server for IT Pros",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkId=279537"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36494",
+    "downloadPreload": true
+}

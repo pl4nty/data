@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6 Targeting Pack for Windows Vista SP2, Windows 7 SP1, Windows 8, Windows 8.1, Windows Server 2008 SP2 Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2 and Windows 10",
+    "downloadDescription": "The .NET Framework 4.6 Targeting Pack is a package that enables developers to build applications targeting the .NET Framework 4.6 using either Visual Studio 2013, Visual Studio 2012 or third party IDEs. You need to download and install the .NET Framework 4.6 prior to installing the targeting pack.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP46-TargetingPack-KB3045566-ENU.exe",
+            "url": "https://download.microsoft.com/download/8/2/f/82ff2034-83e6-4f93-900d-f88c7ad9f3ee/NDP46-TargetingPack-KB3045566-ENU.exe",
+            "size": "7005200",
+            "version": "4.6",
+            "datePublished": "7/15/2024 3:49:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NDP46-TargetingPack-KB3045566.exe",
+            "url": "https://download.microsoft.com/download/8/2/f/82ff2034-83e6-4f93-900d-f88c7ad9f3ee/NDP46-TargetingPack-KB3045566.exe",
+            "size": "13535856",
+            "version": "4.6",
+            "datePublished": "7/15/2024 3:49:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "You need to download and install the .NET Framework 4.6 prior to installing the targeting pack. You can find the .NET Framework 4.6 (offline installer) <a href=\"http://go.microsoft.com/fwlink/?LinkId=528233\">here</a> or the .NET Framework 4.6 (web installer) <a href=\"http://go.microsoft.com/fwlink/?LinkId=528259\">here</a>.\n\nThis package installs the following components\n\u2022 .NET Framework 4.6 Targeting Pack: Contains the language neutral reference assemblies needed to build apps that target the .NET Framework 4.6.\n\u2022 .NET Framework 4.6 Targeting Pack Language Packs : Contains the IntelliSense files to display help while building apps that target the .NET Framework 4.6 through Visual Studio and third party IDEs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6",
+    "detailsSection_file_name": [
+        "NDP46-TargetingPack-KB3045566-ENU.exe",
+        "NDP46-TargetingPack-KB3045566.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB",
+        "12.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:     \no Windows Vista SP2 (x86 and x64)\no Windows 7 SP1 (x86 and x64)    \no Windows 8 (x86 and x64)    \no Windows 8.1 (x86 and x64)\no Windows Server 2008 SP2 (x86 and x64)    \no Windows Server 2008 R2 SP1 (x64)    \no Windows Server 2012 (x64)  \no Windows Server 2012 R2 (x64)\no Windows 10 (x86 and x64)\n\nMinimum Hardware Requirements:         \no 1 GHz or faster processor      \no 512 MB of RAM      \no 850 MB of available hard disk space (x86)      \no 2 GB of available hard disk space (x64)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "On this page, choose the Download button.\no To install the software now, choose the Run button.\no To install the software later, choose the Save button.",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=528264\">KB 3045566</a> for more information.\n\nNote: This package should not be used if you intend to redistribute the .NET Framework. In that case you should download the web installer from <a href=\"http://go.microsoft.com/fwlink/?LinkId=528259\">here</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48136",
+    "downloadPreload": true
+}

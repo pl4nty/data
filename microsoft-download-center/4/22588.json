@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft XNA Framework Redistributable 3.0",
+    "downloadDescription": "The XNA Framework Redistributable download provides game developers with the XNA Framework run-time libraries they can include with their product for redistribution on Windows XP and Windows Vista.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "xnafx30_redist.msi",
+            "url": "https://download.microsoft.com/download/0/f/f/0ff8780d-f50a-41ef-a31a-09db7c0589a2/xnafx30_redist.msi",
+            "size": "7982080",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The XNA Framework Redistributable provides the necessary runtime components to execute a game on Windows that was developed using Microsoft XNA Game Studio 3.0.  This release contains improved functionality along with new features.  Installation of this runtime is not necessary on systems that already have Microsoft XNA Game Studio 3.0 installed.<br/>\n<br/>\nThe End User License Agreement (EULA) for Microsoft XNA Game Studio 3.0 covers the terms under which developers may use the Redistributable.  For full details, please review the Microsoft XNA Game Studio 3.0 EULA.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "xnafx30_redist.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A graphics card that supports DirectX 9.0c and Shader Model 1.1 is required.<br/>\nShader Model 2.0 is recommended and required for some Starter Kits.<br/>\n.NET Framework 2.0 or higher is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click the Download button on this page to start the download.<br />\nDo one of the following:<br />\nTo start the installation immediately, click Run.<br />\nTo save the download to your computer for installation at a later time, click Save.<br />\nTo cancel the installation, click Cancel.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "directX 9 Runtime",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=56513&clcid=0x409"
+        },
+        {
+            "title": "xna Creators Club",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=82963&clcid=0x409"
+        },
+        {
+            "title": ".NET Framework",
+            "url": "http://msdn.microsoft.com/en-us/netframework/cc378097.aspx"
+        },
+        {
+            "title": "xna Developer Center",
+            "url": "http://msdn2.microsoft.com/en-us/xna/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22588",
+    "downloadPreload": true
+}

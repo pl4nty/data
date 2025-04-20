@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Financial Consolidations and Currency Translation White Paper for Microsoft Dynamics AX 2012",
+    "downloadDescription": "This white paper shows the approach Management Reporter and Microsoft Dynamics AX 2012 use to consolidate multi-company and multi-currency data. It is intended for finance and accounting end users and application consultants.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Financial consolidations and currency translation.pdf",
+            "url": "https://download.microsoft.com/download/2/0/d/20d27a5c-6aa5-4fa9-a6e9-ab6f244b38da/Financial consolidations and currency translation.pdf",
+            "size": "1584887",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:08:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper steps through the approach both AX 2012 and Management Reporter use for consolidations. This paper describes multi-company reporting, aggregation, elimination, and minority interest scenarios, and also describes how to handle special situations, such as legal entities that have different fiscal periods or different charts of accounts, and how to access data sources outside Microsoft Dynamics ERPs. Calculating balances with currency translation and the prerequisites for AX 2012 are also discussed. This white paper is written for end users and IT Pros, and it assumes readers have a general understanding of Management Reporter and AX 2012. Basic setup is not covered. This white paper is intended for finance and accounting end users and application consultants who want to use Management Reporter and AX 2012 to consolidate multi-company and multi-currency data. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Financial consolidations and currency translation.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41645",
+    "downloadPreload": true
+}

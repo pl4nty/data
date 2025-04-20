@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Web Services for Microsoft Dynamics GP 2013 Sample Applications",
+    "downloadDescription": "Use these sample applications as examples of integrations you can make with Web Services for Microsoft Dynamics GP 2013",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SOPInvoiceTaxesSample.zip",
+            "url": "https://download.microsoft.com/download/9/8/3/983a5412-440e-4fcc-83eb-190105034a1b/SOPInvoiceTaxesSample.zip",
+            "size": "4191101",
+            "version": "12.0",
+            "datePublished": "5/15/2024 3:18:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains sample applications created with Web Services for Microsoft Dynamics GP 2013.\n<br />\n<br />\nThe following samples are included:\n<UL><LI><b>SOPInvoiceTaxesSample.zip</b> - Provides examples of policy settings required for a Web Service application to provide unit price and tax detail information, rather than having the Dynamics GP Web Service default this information. This sample also has the code necessary to create pricing and tax information in a Web Services application.</LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "SOPInvoiceTaxesSample.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Microsoft Dynamics GP 2013 with Web Services for Microsoft Dynamics GP installed.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to save the file to your computer.</LI>\n</OL>",
+    "additionalInformationSection": "All sample code used in production applications will need to be fully understood and maintained by the application developer.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39970",
+    "downloadPreload": true
+}

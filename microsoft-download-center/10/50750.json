@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Azure IaaS technical decks",
+    "downloadDescription": "This zipped folder contains several powerpoint decks that provide an introduction to Azure IaaS offerings.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure IaaS technical decks.zip",
+            "url": "https://download.microsoft.com/download/d/7/9/d791437a-7544-42a5-9642-506af005dda6/Azure IaaS technical decks.zip",
+            "size": "16920013",
+            "version": "January 2014",
+            "datePublished": "7/15/2024 4:01:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains several powerpoint decks that provide an introduction to Azure IaaS offerings. The files included are\n\n1. Overview of Azure IaaS offerings \n2. A deep dive of azure IaaS offerings \n3. intro To Azure Storage - A presentation providing an overview of Azure Storage services like Blob, table, queue storage, premium storage, File storage and other storage capabilities\n4. Intro to Azure ExpressRoute - A presentation providing an overview of Azure Expressroute and its networking capabilities\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Azure IaaS technical decks.zip"
+    ],
+    "detailsSection_file_size": [
+        "16.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "All",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50750",
+    "downloadPreload": true
+}

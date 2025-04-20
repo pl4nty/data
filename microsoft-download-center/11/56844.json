@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Learning to Represent Programs with Graphs Dataset - ICLR 2018",
+    "downloadDescription": "Dataset for ICLR 2018 paper \"Learning to Represent Programs with Graphs\"",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "graph-dataset.zip",
+            "url": "https://download.microsoft.com/download/7/8/4/784863fe-8883-4840-8228-211abe680364/graph-dataset.zip",
+            "size": "14654161628",
+            "version": "0.1",
+            "datePublished": "7/15/2024 4:56:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This downloads contains the graphs (parsed source code) for the open-source projects used in the ICLR 2018 paper \"Learning to Represent Programs with Graphs\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "graph-dataset.zip"
+    ],
+    "detailsSection_file_size": [
+        "13.6 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 10 </LI></UL>  ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56844",
+    "downloadPreload": true
+}

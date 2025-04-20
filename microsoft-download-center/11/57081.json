@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Packs (Community Technology Preview) for SQL Server Reporting Services and Analysis Services",
+    "downloadDescription": "Microsoft System Center Management Packs (Community Technology Preview) for SQL Server Reporting Services and Analysis Services enable the discovery and monitoring of SSAS Instances, Databases, and Partitions, as well as SSRS Instances and Deployments of SQL Server 2014, 2016, 2017, 2019, 2022, and upcoming versions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SQLServer.ReportingServices.ManagementPack.CTP.msi",
+            "url": "https://download.microsoft.com/download/b/2/2/b2236016-b6cf-4d7d-9751-ff3b60590ebd/Microsoft.SQLServer.ReportingServices.ManagementPack.CTP.msi",
+            "size": "2899968",
+            "version": "7.7",
+            "datePublished": "12/16/2024 12:49:52 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SQLServer.AnalysisServices.ManagementPack.CTP.msi",
+            "url": "https://download.microsoft.com/download/b/2/2/b2236016-b6cf-4d7d-9751-ff3b60590ebd/Microsoft.SQLServer.AnalysisServices.ManagementPack.CTP.msi",
+            "size": "3579904",
+            "version": "7.7",
+            "datePublished": "12/16/2024 12:49:52 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Packs (Community Technology Preview) for SQL Server Reporting Services and Analysis Services support discovery and monitoring of SSAS Instances, Databases, and Partitions, as well as SSRS Instances and Deployments of SQL Server 2012, 2014, 2016, 2017, 2019, 2022, and upcoming versions. According to the lifecycle policy, SQL Server 2012 is no longer being tested.<br/>\r\n<br/>\r\nMonitoring gives you the insights about such metrics as performance, availability and configuration monitoring, performance data collection, and default thresholds. <br/>\r\n<br/>\r\nIn addition to health monitoring capabilities, these management packs include dashboard views and extensive knowledge that enable near real-time diagnosis and resolution of detected issues. <br/>\r\n<br/>\r\nBoth management packs are intended for Operations Manager 2012 R2, Operations Manager 2016, Operations Manager 1801/1807, Operations Manager 2019, and Operations Manager 2022. Due to the lifecycle policy, Operations Manager 2012 R2 is no longer being tested.<br/>\r\n<br/>\r\nFor more information about these management packs, see <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a> and <a href=\"https://docs.microsoft.com/system-center/scom/reporting-services-management-pack-changes-history\">Management Pack for SQL Server Reporting Services Operation Guide</a>.\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.7",
+    "detailsSection_file_name": [
+        "Microsoft.SQLServer.ReportingServices.ManagementPack.CTP.msi",
+        "Microsoft.SQLServer.AnalysisServices.ManagementPack.CTP.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB",
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "12/16/2024",
+    "systemRequirementsSection": "For detailed system requirements refer to the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a> and <a href=\"https://docs.microsoft.com/system-center/scom/reporting-services-management-pack-changes-history\">Management Pack for SQL Server Reporting Services Operation Guide</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring refer to the <a href=\"https://docs.microsoft.com/system-center/scom/analysis-services-management-pack-changes-history\">Management Pack for SQL Server Analysis Services Operations Guide</a> and <a href=\"https://docs.microsoft.com/system-center/scom/reporting-services-management-pack-changes-history\">Management Pack for SQL Server Reporting Services Operation Guide</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57081",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Migrate your Windows Phone 8.0 DirectX Project to Windows Phone 8.1",
+    "downloadDescription": "In Windows Phone 8.1, apps are delivered as AppX packages just like store apps for Windows 8.1\u2014previously, Windows Phone apps were delivered as Xap packages; this difference brings changes to the project file in Windows Phone 8.1 projects.  This document describes how you can manually upgrade an existing solution for your Windows Phone 8.0 C++ and DirectX app to target Windows Phone 8.1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrate your WP80 DirectX Project to WP81.docx",
+            "url": "https://download.microsoft.com/download/7/7/a/77a6ab92-e400-4962-b957-6556745f0dde/Migrate your WP80 DirectX Project to WP81.docx",
+            "size": "39590",
+            "version": "1",
+            "datePublished": "7/15/2024 3:23:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In Windows Phone 8.1, apps are delivered as AppX packages just like store apps for Windows 8.1\u2014previously, Windows Phone apps were delivered as Xap packages; this difference brings changes to the project file in Windows Phone 8.1 projects together with a different kind of manifest file. Unlike other kinds of projects, Visual Studio doesn\u2019t upgrade C++ and DirectX projects to Windows Phone 8.1 automatically.  This document describes how you can manually upgrade an existing solution for your Windows Phone 8.0 C++ and DirectX app to target Windows Phone 8.1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Migrate your WP80 DirectX Project to WP81.docx"
+    ],
+    "detailsSection_file_size": [
+        "38.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Phone 8"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42319",
+    "downloadPreload": true
+}

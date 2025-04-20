@@ -1,0 +1,96 @@
+{
+    "error": "",
+    "downloadTitle": "Office Communicator Web Access: Microsoft Office Communicator Web Access Getting Started Guide",
+    "downloadDescription": "This guide describes how to use the instant messaging (IM) and presence features of Microsoft\u00ae Office Communicator Web Access.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CommunicatorWebAccess_GettingStarted.doc",
+            "url": "https://download.microsoft.com/download/5/9/c/59c1b5e0-df78-40c6-a301-4fb4bc33a7be/CommunicatorWebAccess_GettingStarted.doc",
+            "size": "679424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "This guide describes how to use the instant messaging (IM) and presence features of Communicator Web Access.  <br /><br />\nThis guide contains the following sections:\n<ul><br />\n<li>Getting connected to Communicator Web Access.</li><br />\n<li>Managing your contacts.</li><br />\n<li>Setting your presence information to indicate whether you are available for instant messaging.</li><br />\n<li>Checking another user's presence information.</li><br />\n<li>Sending an instant message.</li><br />\n<li>Setting options to customize Communicator Web Access features.</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CommunicatorWebAccess_GettingStarted.doc"
+    ],
+    "detailsSection_file_size": [
+        "663.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li><b>This download works with the following Office applications:</b></li><br />\n<ul><br />\n<li>Microsoft Office Word 2003</li><br />\n<li>Microsoft Word 2002</li><br />\n</ul><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>CommunicatorWebAccess_GettingStarted.doc</b> to open the document. </li>\n</ol>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file CommunicatorWebAccess_GettingStarted.doc.",
+    "relatedResourcesSection": [
+        {
+            "title": "live Communications Server Deployment Resources",
+            "url": "http://office.microsoft.com/en-us/FX011450741033.aspx"
+        },
+        {
+            "title": "live Communications Server Newsgroups",
+            "url": "http://www.microsoft.com/technet/community/newsgroups/server/livecomm.mspx"
+        },
+        {
+            "title": "microsoft Office Live",
+            "url": "http://www.microsoft.com/office/officelive/default.mspx"
+        },
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8909",
+    "downloadPreload": true
+}

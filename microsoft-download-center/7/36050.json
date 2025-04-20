@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 Core Network Companion Guide: Group Policy Deployment",
+    "downloadDescription": "This guide provides instructions for deploying Group Policy settings to a set of client computers or users by using membership groups rather than account location in the OU hierarchy of a domain.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2012CNCG_GroupPolicy.doc",
+            "url": "https://download.microsoft.com/download/5/a/e/5aea0926-8e8a-4427-947e-388cf466d38d/WindowsServer2012CNCG_GroupPolicy.doc",
+            "size": "189952",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide provides instructions for deploying Group Policy settings to a set of client computers or users by using membership groups rather than account location in the OU hierarchy of a domain.The method described in this guide shows you how to create a single membership group into which you can add the user or computer accounts that are to receive a configuration through the use of GPOs. Membership in the group, rather than the account location in the OU hierarchy, determines whether the computer receives one of the GPOs associated with the membership group. In addition, Windows Management Instrumentation (WMI) filters are used to ensure that only the GPO with the settings that correspond to the version of Windows running on the computer is applied.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WindowsServer2012CNCG_GroupPolicy.doc"
+    ],
+    "detailsSection_file_size": [
+        "185.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2012 Core Network Guide",
+            "url": "http://technet.microsoft.com/library/hh911995.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36050",
+    "downloadPreload": true
+}

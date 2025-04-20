@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Assessment Troubleshooting Script",
+    "downloadDescription": "This script is to troubleshoot Microsoft Assessments issues",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "How to read Assessment Troubleshooting script zip folder.pdf",
+            "url": "https://download.microsoft.com/download/6/5/b/65b4cec5-25b6-44ea-a784-d947bc4e3bef/How to read Assessment Troubleshooting script zip folder.pdf",
+            "size": "470614",
+            "version": "2.2",
+            "datePublished": "7/15/2024 3:03:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AssessmentTroubleshooting.ps1",
+            "url": "https://download.microsoft.com/download/6/5/b/65b4cec5-25b6-44ea-a784-d947bc4e3bef/AssessmentTroubleshooting.ps1",
+            "size": "47897",
+            "version": "2.2",
+            "datePublished": "7/15/2024 3:03:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Users can use this PowerShell script to troubleshoot Microsoft Assessments issues. This script collects information from your registry, collected data and assessment logs and bundles them altogether on your desktop into a zip file. Once you run this script please attach the zip file that gets created on the desktop and send an email to serviceshubteam@ppas.uservoice.com. Please review the contents of the folder before uploading them or passing them on as they may contain some of your environment configuration details that we would need to further investigate.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2",
+    "detailsSection_file_name": [
+        "How to read Assessment Troubleshooting script zip folder.pdf",
+        "AssessmentTroubleshooting.ps1"
+    ],
+    "detailsSection_file_size": [
+        "459.6 KB",
+        "46.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Computer machine with PowerShell is required.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "1. Download this script and run as Administrator \r\n2. After successful execution of the script, you will see a folder in Desktop with name \"Date-Time Stamp\"\r\n3. Extract the folder and open the \"Report.html\" to see all issues",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58089",
+    "downloadPreload": true
+}

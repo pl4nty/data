@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Electronic Ledger Accounting (Mexico)",
+    "downloadDescription": "This document provides information about the Mexico electronic ledger accounting hotfix for AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AX2009_Electronic_Ledger_Accounting.pdf",
+            "url": "https://download.microsoft.com/download/d/8/c/d8c6b606-c438-4d29-84ee-16da5c4770f1/AX2009_Electronic_Ledger_Accounting.pdf",
+            "size": "340695",
+            "version": "AX 2009",
+            "datePublished": "7/15/2024 3:22:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides information about the business process, reports, and fields that are affected by hotfix 2987417.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX 2009",
+    "detailsSection_file_name": [
+        "AX2009_Electronic_Ledger_Accounting.pdf"
+    ],
+    "detailsSection_file_size": [
+        "332.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44957",
+    "downloadPreload": true
+}

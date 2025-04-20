@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Search Environment Planning for Microsoft SharePoint Server 2010",
+    "downloadDescription": "This model describes primary architecture design decisions for search environments.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Search Model 2 of 4 - Search Environment Planning.pdf",
+            "url": "https://download.microsoft.com/download/d/2/d/d2d4efdb-60f3-4919-9bc4-56d7913a8d28/Search Model 2 of 4 - Search Environment Planning.pdf",
+            "size": "632496",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Search Model 2 of 4 - Search Environment Planning.vsd",
+            "url": "https://download.microsoft.com/download/d/2/d/d2d4efdb-60f3-4919-9bc4-56d7913a8d28/Search Model 2 of 4 - Search Environment Planning.vsd",
+            "size": "1890816",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Search Model 2 of 4 - Search Environment Planning.xps",
+            "url": "https://download.microsoft.com/download/d/2/d/d2d4efdb-60f3-4919-9bc4-56d7913a8d28/Search Model 2 of 4 - Search Environment Planning.xps",
+            "size": "1658763",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This enterprise search model steps you through design decisions based on where users and content are located and presents four different designs for geographically dispersed deployments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Search Model 2 of 4 - Search Environment Planning.pdf",
+        "Search Model 2 of 4 - Search Environment Planning.vsd",
+        "Search Model 2 of 4 - Search Environment Planning.xps"
+    ],
+    "detailsSection_file_size": [
+        "617.7 KB",
+        "1.8 MB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. <br/> To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a><br/>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5642",
+    "downloadPreload": true
+}

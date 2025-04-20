@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Certification Test Tool for Azure Certified",
+    "downloadDescription": "Download the Microsoft Certification Test Tool for Azure Certified Virtual Machines",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Certification Test Tool 1.6 for Azure Certified.msi",
+            "url": "https://download.microsoft.com/download/a/f/1/af1bfced-edbf-4991-a78e-775ca8dab151/Certification Test Tool 1.6 for Azure Certified.msi",
+            "size": "5109760",
+            "version": "1.6",
+            "datePublished": "7/15/2024 5:03:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Certification Test Tool for Azure Certified is designed to provide an assessment of compliance to technical requirements as part of the Azure Certified program. \r\n\r\nThe test tool includes a wizard style automated section and questionnaire section to assess characteristics of a Virtual Machine image running in Microsoft Azure and generate results logs.\r\n\r\nMore information on the Azure Certified program is available at: http://www.azure.com/certified\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6",
+    "detailsSection_file_name": [
+        "Certification Test Tool 1.6 for Azure Certified.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8, Windows Server 2012 R2, Microsoft Azure Virtual Machine",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2019",
+        "Linux",
+        "Ubuntu",
+        "Red Hat"
+    ],
+    "installInstructionSection": "Install the test tool on a Windows OS machine.  Run the test tool and specify the Microsoft Azure Virtual Machine to validate.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44299",
+    "downloadPreload": true
+}

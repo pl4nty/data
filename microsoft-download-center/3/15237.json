@@ -1,0 +1,168 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Small Business Server 2008 Premium Trial Software Download",
+    "downloadDescription": "This software is for evaluation and testing purposes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DVD4_SQL2008.iso",
+            "url": "https://download.microsoft.com/download/f/6/c/f6c5ed5e-1da5-4190-a9ca-8e25156eb96d/DVD4_SQL2008.iso",
+            "size": "2303410176",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dvd3_addserverinstallationx64.iso",
+            "url": "https://download.microsoft.com/download/f/6/c/f6c5ed5e-1da5-4190-a9ca-8e25156eb96d/dvd3_addserverinstallationx64.iso",
+            "size": "2661783552",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dvd2_addserverinstallationx86.iso",
+            "url": "https://download.microsoft.com/download/f/6/c/f6c5ed5e-1da5-4190-a9ca-8e25156eb96d/dvd2_addserverinstallationx86.iso",
+            "size": "1881049088",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dvd1_installation.iso",
+            "url": "https://download.microsoft.com/download/f/6/c/f6c5ed5e-1da5-4190-a9ca-8e25156eb96d/dvd1_installation.iso",
+            "size": "4098934784",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This software is for evaluation and testing purposes. <br/><br/>\nEvaluating Windows Small Business Server 2008 does not require that you activate the product or enter a product key. <br/><br/>\nIf you need more time to evaluate the software, you can reset (or rearm) the 60-day evaluation period up to three times, extending the original 60-day evaluation period by up to 180 days, for a total possible evaluation time of 240 days. After the evaluation period ends, you need to uninstall the software or upgrade to a fully licensed version of Windows Small Business Server 2008.<br/><br/>\n\nIf you want to extend the initial evaluation and testing period, please go <A href=\" http://support.microsoft.com/kb/948472\">here</A> and follow the instructions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "DVD4_SQL2008.iso",
+        "dvd3_addserverinstallationx64.iso",
+        "dvd2_addserverinstallationx86.iso",
+        "dvd1_installation.iso"
+    ],
+    "detailsSection_file_size": [
+        "2.1 GB",
+        "2.5 GB",
+        "1.8 GB",
+        "3.8 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please refer to the Windows Small Business Server 2008 System Requirements found <A href=\" http://www.microsoft.com/sbs/en/us/system-requirements.aspx \">here</A> prior to installation.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard "
+    ],
+    "installInstructionSection": "1. Download and create media for all four disc images. <br />\n<br />\nThe files for the 2nd server download are also platform-specific, where \u201cx86\u201d is intended for 32-bit platforms and \u201cx64\u201d is intended for 64-bit platforms.<br/><br/>\n\nIf you do not have a download manager or are unsure, click the links in this section for a facilitated download of each file.<br/><br/>\nFacilitated: <A href=\"http://care.dlservice.microsoft.com/download/F/6/C/F6C5ED5E-1DA5-4190-A9CA-8E25156EB96D/DVD1_Installation.iso?lcid=1033\">DVD1_Installation.iso</A><br/><br/>\nFacilitated: <A href=\"http://care.dlservice.microsoft.com/download/F/6/C/F6C5ED5E-1DA5-4190-A9CA-8E25156EB96D/DVD2_AddServerInstallationx86.iso?lcid=1033\">DVD2_AddServerInstallationx86.iso</A><br/><br/>\nFacilitated: <A href=\"http://care.dlservice.microsoft.com/download/F/6/C/F6C5ED5E-1DA5-4190-A9CA-8E25156EB96D/DVD3_AddServerInstallationx64.iso?lcid=1033\">DVD3_AddServerInstallationx64.iso</A><br/><br/>\nFacilitated: <A href=\"http://care.dlservice.microsoft.com/download/F/6/C/F6C5ED5E-1DA5-4190-A9CA-8E25156EB96D/DVD4_SQL2008.iso?lcid=1033\">DVD4_SQL2008.iso</A><br/><br/>\n\n2. Download and follow the steps in the Deployment Documentation found <A href=\" http://technet.microsoft.com/en-us/library/cc527593.aspx\">here</A>.",
+    "additionalInformationSection": "This trial software is not supported by Customer Services and Support (CSS). <br/><br/>\nIf you have questions about Windows Small Business Server 2008 Evaluation, visit the Windows Small Business Server TechCenter  <A href=\" http://technet.microsoft.com/en-us/sbs/default.aspx \">here</A> or find postings on the Official SBS Blog <A href=\" http://blogs.technet.com/sbs/\">here</A>.<br/><br/>Getting Started Documentation can be found <A href=\" http://technet.microsoft.com/en-us/library/cc816569.aspx\">here</A>.<br/><br/>The Windows Small Business Server 2008 Installation Guide is located <A href=\" http://go.microsoft.com/fwlink/?LinkID=125717\">here</A>.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft.com Windows Small Business Server 2008 site",
+            "url": "http://www.microsoft.com/sbs/en/us/default.aspx"
+        },
+        {
+            "title": "windows Small Business Server 2008 Planning and Architecture Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/cc527472.aspx"
+        },
+        {
+            "title": "windows Small Business Server 2008 Technical Library",
+            "url": "http://technet.microsoft.com/en-us/library/cc527559.aspx"
+        },
+        {
+            "title": "windows Small Business Server 2008 Deployment Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/cc527593.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15237",
+    "downloadPreload": true
+}

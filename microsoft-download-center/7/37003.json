@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "HDInsight Sample Log File",
+    "downloadDescription": "Log file for the HDInsight Documentation Articles",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Actors.txt",
+            "url": "https://download.microsoft.com/download/7/f/3/7f35e2c0-b84f-4b45-a9f2-2a888d51c1d9/Actors.txt",
+            "size": "14134044",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sample.log",
+            "url": "https://download.microsoft.com/download/7/f/3/7f35e2c0-b84f-4b45-a9f2-2a888d51c1d9/sample.log",
+            "size": "99271",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This sample file is referenced from the help topics for Windows Azure HDInsight. Download this file if you are working through the interactive scenarios for HDInsight.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Actors.txt",
+        "sample.log"
+    ],
+    "detailsSection_file_size": [
+        "13.5 MB",
+        "96.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "37003",
+    "downloadPreload": true
+}

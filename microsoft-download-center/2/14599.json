@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 Upgrade Guide",
+    "downloadDescription": "This document contains complete instructions for upgrading to the latest versions of Microsoft Dynamics AX 2012. (May 2014 revision)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AX 2012 Upgrade Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/b/0/fb0bcf14-5268-4913-a1b9-715d2cec7d64/AX 2012 Upgrade Guide.pdf",
+            "size": "3323913",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides end-to-end guidance for system administrators who are upgrading to any of the following Microsoft Dynamics AX versions:\r\n<br />\r\n<br /> \r\n<ul><li>Microsoft Dynamics AX 2012 R3</li>\r\n<li>Microsoft Dynamics AX 2012 R2</li>\r\n<li>Microsoft Dynamics AX 2012 Feature Pack</li>\r\n<li>Microsoft Dynamics AX 2012</li></ul>\r\n<br />\r\n<br />\r\nUpgrade scenarios from any of the following versions are supported:\r\n<br />\r\n<br />\r\n<ul><li>Microsoft Dynamics AX 4.0</li>\r\n<li>Microsoft Dynamics AX 2009</li>\r\n<li>Microsoft Dynamics AX 2009 for Retail</li>\r\n<li>Microsoft Dynamics AX 2012</li>\r\n<li>Microsoft Dynamics AX 2012 Feature Pack</li></ul>\r\n<b>Note:</b> For the most up-to-date information for Microsoft Dynamics AX administrators, see the <a href=\"http://technet.microsoft.com/en-us/library/gg852966.aspx\">Microsoft Dynamics AX 2012 Technical Library</a>. <br />\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "AX 2012 Upgrade Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14599",
+    "downloadPreload": true
+}

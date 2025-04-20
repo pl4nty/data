@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded POSReady 2009 Evaluation CD",
+    "downloadDescription": "POSReady 2009 is a flexible operating system designed to seamlessly connect point-of-service solutions with peripherals, servers, and services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "POSready2009_CD.iso",
+            "url": "https://download.microsoft.com/download/6/3/6/636e5b38-ea04-4f25-a059-ca6edf773f79/POSready2009_CD.iso",
+            "size": "678625280",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Embedded POSReady 2009 is a flexible operating system designed to seamlessly connect point-of-service solutions with peripherals, servers, and services.\r\nPOSReady 2009 combines the power and familiarity of Windows XP Professional with a smaller footprint and specific features for point of \r\nservice (POS) computers. POSReady is a significant update to Windows Embedded for Point of Service that incorporates a new product name, new technologies, and \r\nimprovements in core functionality. \r\nWith built-in networking capabilities and standards-based plug-and-play support, Windows Embedded POSReady 2009 makes it easy to connect POS devices to \r\nperipherals, servers, and services.&nbsp; Plus you can help reduce costs and security threats by customizing POSReady 2009 to use only the components \r\nrequired for your POS solution.\r\n\r\nPOSReady 2009 can be managed with the same software you use to manage your desktop systems - with all the reliability and ongoing service and system \r\nupdates you expect from the Windows platform. You will aslo benefit from the dedicated community of industry-leading partners and resources available to \r\nsupport you at every step in the development cycle.\r\n\r\nEVALUATION KIT FUNCTIONALITY: The Windows Embedded POSReady 2009 evaluation includes the full functionality of the English version. Once you have installed your evaluation version, you will have 120 days to sample the features of POSReady 2009. To continue using the product after 120 days, you must acquire the full product license and product key, rerun setup, and then follow the installation instructions for the full version.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "POSready2009_CD.iso"
+    ],
+    "detailsSection_file_size": [
+        "647.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To install and use Windows Embedded POSReady 2009 on your POS system, you need:\r\n<ul>\r\n <li>PC with Pentium II 233-MHz or faster processor</li>\r\n <li>64 MB of RAM (with Virtual Memory enabled); 512 MB recommended*</li>\r\n <li>520 MB of available hard disk space**</li>\r\n <li>VGA or higher resolution monitor; 1024 x 768 display recommended</li>\r\n</ul>\r\n* If Virtual Memory is disabled or you are installing to a USB device, the minimum RAM is 512 MB.\r\n** Additional available hard disk space may be required if you are installing over a network.\r\n\r\nActual requirements will vary based on your system configuration and the applications and features you choose to install.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded POSReady 2009"
+    ],
+    "installInstructionSection": "Download Evaluation\r\n<ul>\r\n <li>Click the Download button on this page to start the download.</li>\r\n <li>Click Save or Save this program to your computer. POSReady 2009 EVAL CD \r\n is distributed as an .ISO file.</li>\r\n</ul>\r\nCreate CD\r\n<ul>\r\n <li>Burn the saved ISO to a CD.</li>\r\n</ul>\r\nInstall to Test System \r\n<ul>\r\n <li>Insert the CD into test system.</li>\r\n <li>Boot from the CD to run Setup.</li>\r\n</ul>\r\nIMPORTANT NOTE - Do not run setup on personal system. Installation will reformat and replace an existing operating system.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded POSReady 2009 MSDN",
+            "url": "https://msdn.microsoft.com/en-US/library/dn441478(v=winembedded.0).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11196",
+    "downloadPreload": true
+}

@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "System Center MP for Unix and Linux",
+    "downloadDescription": "System Center 2019 MP for Unix and Linux",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center 2019 MP for Unix and Linux.msi",
+            "url": "https://download.microsoft.com/download/4/7/f/47f95f5f-75e6-4c7e-a4ac-9a722b0466ca/Microsoft System Center 2019 MP for Unix and Linux.msi",
+            "size": "158334976",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:25:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack supports monitoring of Unix and Linux environments .",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft System Center 2019 MP for Unix and Linux.msi"
+    ],
+    "detailsSection_file_size": [
+        "151.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Unix and Linux environments .",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "This management pack supports monitoring of Unix and Linux environments .",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center MP for Unix and Linux",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=46924"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102011",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 1801+ Integration Pack for HP iLO and OA ",
+    "downloadDescription": "The Integration Pack for HP Lights-Out (iLO) and Onboard Administrator (OA) is an add-on for System Center 1801 - Orchestrator that enables you to automate HP iLO and OA commands.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_Integration_Pack_for_HP_iLO_OA.exe",
+            "url": "https://download.microsoft.com/download/f/8/1/f81c8907-a395-4224-9055-b739ede62888/System_Center_Integration_Pack_for_HP_iLO_OA.exe",
+            "size": "434864",
+            "version": "7.4.7.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for HP iLO and OA is an add-on for System Center 1801 Orchestrator that enables you to create activities within runbooks that make requests to the HP iLO and OA products to get data or perform functions. <br />\n<br />\n<b>Feature Summary</b><br />\nThis integration pack adds the HP iLO and OA category to the Activities pane in the Runbook Designer. This category contains the following activities:<br />\n<ul>\n<li>Run iLO Command </li>\n<li> Run OA Command </li>\n</ul><br />\n<b>Release History</b><br />\n<ul>\n<li>12 February 2018 - Original English release, version 7.3.22.0 . </li>\n</ul>\n\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.4.7.0",
+    "detailsSection_file_name": [
+        "System_Center_Integration_Pack_for_HP_iLO_OA.exe"
+    ],
+    "detailsSection_file_size": [
+        "424.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 1801 - Orchestrator and future releases\n</ul><br/>\r\n<ul>\r\n<b>Other Requirements:</b> <br/>\r\n<ul>\r\n<li> RAM \u2013 minimum 1GB recommended 2GB </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n<li> .Net 3.5 </li>\r\n</ul>\r\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe. <br/><br/>\r\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Homepage",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        },
+        {
+            "title": "hp iLO and OA Integration Pack",
+            "url": "https://technet.microsoft.com/en-us/system-center-docs/orch/manage/hp-ilo-and-oa-integration-pack"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56606",
+    "downloadPreload": true
+}

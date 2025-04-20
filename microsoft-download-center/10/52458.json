@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Tiled-Vectors Demo",
+    "downloadDescription": "The tiled-vectors technique enables the display of enormous data sets as vectors in client-side map browsers by tiling the vectors into constant-size files. Last published: February 12, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TiledVectorsDemo-1.2.tgz",
+            "url": "https://download.microsoft.com/download/3/3/a/33a1f294-34b2-496b-aa36-3219aa212069/TiledVectorsDemo-1.2.tgz",
+            "size": "966301",
+            "version": "1.2",
+            "datePublished": "5/15/2024 4:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The tiled-vectors technique enables the display of enormous data sets as vectors in client-side map browsers by tiling the vectors into constant-size files.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "TiledVectorsDemo-1.2.tgz"
+    ],
+    "detailsSection_file_size": [
+        "943.7 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52458",
+    "downloadPreload": true
+}

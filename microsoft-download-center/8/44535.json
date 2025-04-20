@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Push Notifications Service (MPNS) Public IP ranges",
+    "downloadDescription": "File containing the Microsoft Push Notifications Service Public IP ranges for whitelisting the service",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MPNSPublicIPs_20160310.xml",
+            "url": "https://download.microsoft.com/download/e/7/a/e7a77d5f-c5b2-4d26-9656-6c3a5fe9f6b6/MPNSPublicIPs_20160310.xml",
+            "size": "1685",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:55:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains the FQDNs, VIPs, and IP address ranges used by the Microsoft Push Notification Service (MPNS). Endpoints in CloudService nodes are used for cloud services to send notifications to MPNS. Only FQDN based whitelisting is supported for cloud services at this time. Endpoints in Client nodes are used by devices to receive notifications from MPNS.\r\n  \r\nA new text file will be uploaded every time a new VIP or IP range is released in production. New VIPs or IP ranges will be effective one week after it is uploaded. Please download the file and perform the necessary changes on your site.\r\n  \r\nFor Windows 8 and Windows Phone 8.1 and above devices please see the Windows Notification Service (WNS) VIP and IP Ranges in the Related Resources section.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "MPNSPublicIPs_20160310.xml"
+    ],
+    "detailsSection_file_size": [
+        "1.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Phone",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Phone",
+        "Windows Phone 7",
+        "Windows Phone 8",
+        "Windows Phone 8.1"
+    ],
+    "installInstructionSection": "The IP ranges are for whitelisting the Microsoft Push Notifications Service.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Notification Service (WNS) VIP and IP Ranges ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=44238"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44535",
+    "downloadPreload": true
+}

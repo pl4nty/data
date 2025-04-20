@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Cloud Design Patterns \u2013 Sample Code",
+    "downloadDescription": "The example applications for use in conjunction with the Cloud Design Pattern guide. It consists of 10 samples to show how to implement design patterns using the features of Windows Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Cloud Design Patterns Examples.zip",
+            "url": "https://download.microsoft.com/download/e/4/2/e42da161-9ccb-4ad4-a058-3a5cce13e644/Cloud Design Patterns Examples.zip",
+            "size": "7551881",
+            "version": "1",
+            "datePublished": "7/15/2024 3:22:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The example applications for use in conjunction with Cloud Design Pattern guide. It consists of 10 samples to show how to implement design patterns using the features of Windows Azure.\r\n<br /><br />\r\nSee the Readme for information about the sample code. Each sample has a corresponding readme for information about how to run the sample.\r\n<br /><br />\r\n<b>Note</b>: The samples are simplified to focus on and demonstrate the essential features of each pattern. They are not designed to be used in production scenarios. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Cloud Design Patterns Examples.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><a href=\" http://www.microsoft.com/net/ \">Microsoft .NET Framework version 4.5</a></li>\r\n<li><a href=\"http://www.visualstudio.com/en-us \">Microsoft Visual Studio 2012</a>or <a href=\"http://www.visualstudio.com/en-us \">Microsoft Visual Studio 2013</a></li>\r\n<li><a href=\"http://www.windowsazure.com/en-us/develop/downloads/\">Windows Azure SDK for .NET</a>  (includes the Visual Studio Tools for Windows Azure) </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Select the 'Download Now' link to commence the download. <br />\r\nSave the file to your hard drive. The samples are packaged as a zip file. <br />\r\nThe files will be extracted to your chosen destination folder. This must not be a folder in your profile. Use a folder near the root of your drive with a short name to avoid issues with the length of filenames. <br />\r\nSee the \"readme.txt\"  file  for information about the specific versions required, and installing and configuring the sample.<br />\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "moving Applications to the Cloud",
+            "url": "http://msdn.microsoft.com/en-us/library/ff728592.aspx"
+        },
+        {
+            "title": "cloud Design Patterns on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dn568099.aspx"
+        },
+        {
+            "title": "developing Multi-tenant Applications for the Cloud",
+            "url": "http://msdn.microsoft.com/en-us/library/ff966499.aspx"
+        },
+        {
+            "title": "project Community ",
+            "url": "http://wag.codeplex.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41673",
+    "downloadPreload": true
+}

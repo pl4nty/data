@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Julie Lerman on the Entity Framework",
+    "downloadDescription": "Julie Lerman calls in to tell us about her experiences with the Entity Framework.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080226JLerman.zip",
+            "url": "https://download.microsoft.com/download/9/b/c/9bc55fef-ae03-4b98-bacc-f2de6a0381c3/20080226JLerman.zip",
+            "size": "46563632",
+            "version": "1.0",
+            "datePublished": "1/15/2024 3:10:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Julie Lerman is an independent consultant and .NET Mentor who has been designing and writing software applications for more than 20 years. Julie is well known in the .NET community as a Microsoft MVP, ASPInsider and INETA Speaker. She is a prolific blogger, a frequent presenter at technical conferences around the world and writes articles for many well-known technical publications. Julie lives in Vermont where she runs the Vermont.NET User Group, is a board member of the Vermont Software Developers Alliance, and a member of the Champlain College Software Engineering Advisory Board. You can read Julie's blog at www.thedatafarm.com/blog. Julie is currently writing Programming Entity Framework for O\u2019Reilly which should be available in Fall 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080226JLerman.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.4 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15860",
+    "downloadPreload": true
+}

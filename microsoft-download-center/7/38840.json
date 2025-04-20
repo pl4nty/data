@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure eDiscovery for SharePoint Server 2013",
+    "downloadDescription": "This paper contains a brief introduction to the eDiscovery features in SharePoint Server 2013 and step-by-step instructions for how to configure eDiscovery.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tlg-sp2013-configure-eDiscovery.docx",
+            "url": "https://download.microsoft.com/download/4/7/a/47a5c458-c10a-4c39-8ae9-5ea8e9eceaf2/tlg-sp2013-configure-eDiscovery.docx",
+            "size": "161530",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "tlg-sp2013-configure-eDiscovery.pdf",
+            "url": "https://download.microsoft.com/download/4/7/a/47a5c458-c10a-4c39-8ae9-5ea8e9eceaf2/tlg-sp2013-configure-eDiscovery.pdf",
+            "size": "556293",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains a brief introduction to the eDiscovery features in SharePoint Server 2013 and step-by-step instructions for how to configure eDiscovery.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "tlg-sp2013-configure-eDiscovery.docx",
+        "tlg-sp2013-configure-eDiscovery.pdf"
+    ],
+    "detailsSection_file_size": [
+        "157.7 KB",
+        "543.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word, Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38840",
+    "downloadPreload": true
+}

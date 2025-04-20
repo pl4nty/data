@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR JavaScript Cryptography Library",
+    "downloadDescription": "The Microsoft Research JavaScript Cryptography Library has been developed for use with cloud services in an HTML5 compliant and forward-looking manner. The latest version of this code can be found at:  https://github.com/microsoft/MSR-JavaScript-Crypto",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSR-JavaScript-Crypto.zip",
+            "url": "https://download.microsoft.com/download/c/a/c/cacb6f6b-4855-4ed2-935f-a3db277e6b3d/MSR-JavaScript-Crypto.zip",
+            "size": "293",
+            "version": "7.2018",
+            "datePublished": "7/15/2024 4:52:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "*The latest version of this code can be found at: https://github.com/microsoft/MSR-JavaScript-Crypto*\r\n\r\nThe Microsoft Research JavaScript Cryptography Library has been developed for use with cloud services in an HTML5 compliant and forward-looking manner. The algorithms are exposed via the W3C WebCrypto interface, and are tested against the Microsoft Edge implementation of that interface. The library currently supports RSA encrypt/decrypt (PKCS#1 v1.5, OAEP, and PSS), AES-CBC and GCM encrypt/decrypt, SHA-256/384/512, HMAC with supported hash functions, PRNG (AES-CTR based) as specified by NIST, ECDH, ECDSA, and KDF (Concat mode). The library is tested on IE8,9,10,11, Microsoft Edge and latest Firefox, Chrome, Opera, and Safari browsers. This library includes big-number integer arithmetic to support the aforementioned cryptographic algorithms. It supports unsigned big integer arithmetic with addition, subtraction, multiplication, division, reduction, inversion, GCD, extended Euclidean algorithm (EEA), Montgomery multiplication, and modular exponentiation. It provides useful utility functions, such as endianness management and conversion routines. The big integer library is likely to change in future releases. There are also unit tests and some sample code. This library is under active development. Future updates to this library may change the programming interfaces.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2018",
+    "detailsSection_file_name": [
+        "MSR-JavaScript-Crypto.zip"
+    ],
+    "detailsSection_file_size": [
+        "293 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52439",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "KB 3025941: Address wizard engine dependency on VCLanguageManager Visual Studio 2013 (Update 4)",
+    "downloadDescription": "KB 3025941: Address wizard engine dependency on VCLanguageManager Visual Studio 2013 (Update 4)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB3025941.exe",
+            "url": "https://download.microsoft.com/download/d/d/f/ddf4bff2-1724-4002-9d0a-0ecb30b1a7c3/VS12-KB3025941.exe",
+            "size": "1292640",
+            "version": "1",
+            "datePublished": "7/15/2024 3:45:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "After deploying a custom VS 2013 Isolated Shell application, you encounter an error, when attempting to create a project or add a project item that contains a C or C++ source file.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3025941",
+        "name": "KB3025941"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VS12-KB3025941.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 Update 4",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click download to install the path.VCLanguageManager\r\n\r\nhttp://download.microsoft.com/download/D/D/F/DDF4BFF2-1724-4002-9D0A-0ECB30B1A7C3/VS12-KB3025941.exe",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47746",
+    "downloadPreload": true
+}

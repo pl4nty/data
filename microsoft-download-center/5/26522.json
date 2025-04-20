@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Service Design template for Visio 2010",
+    "downloadDescription": "Create a visual overview of your enterprise service design with this Visio 2010 template.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Enterprise Service Design.vst",
+            "url": "https://download.microsoft.com/download/e/5/9/e592f512-1b98-430d-a7d6-3317c28d2029/Enterprise Service Design.vst",
+            "size": "1070080",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Enterprise System Architecture Sample Data.xlsx",
+            "url": "https://download.microsoft.com/download/e/5/9/e592f512-1b98-430d-a7d6-3317c28d2029/Enterprise System Architecture Sample Data.xlsx",
+            "size": "15746",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 template to create a visual overview of your enterprise network services by location. The template provides custom shapes designed to represent architecture details of hub and branch sites. In this case, the example has two branch sites, and the relevant shapes have been linked to sample data. This template could be further extended with standard Visio shapes to document a complete network environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Enterprise Service Design.vst",
+        "Enterprise System Architecture Sample Data.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "15.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the template to your computer.\r\n\r\nTo customize the data linked to the template, download Enterprise System Architecture Sample Data.xlsx and populate it with your own network data.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26522",
+    "downloadPreload": true
+}

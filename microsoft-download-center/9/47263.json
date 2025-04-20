@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2015, Debugging Tools",
+    "downloadDescription": "Skype for Business Server 2015, Debugging Tools are provided to help IT Administrators with troubleshooting deployments of Skype for Business Server 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SkypeForBusinessDebugTools.msi",
+            "url": "https://download.microsoft.com/download/a/6/0/a603fc51-2c03-48b2-a072-587fa1d3dfaf/SkypeForBusinessDebugTools.msi",
+            "size": "5779456",
+            "version": "6.0",
+            "datePublished": "7/15/2024 4:51:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype for Business Server 2015, Debugging Tools is a collection of additional tools for use by IT Admins to aid in troubleshooting Skype for Business Server 2015 deployments.  The collection of tools include:\n<ul>\n<li>Snooper </li>\n<li>CLSLogger</li>\n<li>CLSScenarioEdit.psm1</li>\n</ul>\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "SkypeForBusinessDebugTools.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Additional Software:</b> Skype for Business Server 2015</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please note, if you have a higher version installed previously, you need to un-install it first and re-install. \r\n<br/>\r\n<b>To install this download</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button and saving the file to your hard disk. </li>\n<li>Browse to the location you downloaded the file and run the SkypeforBusinessDebgTools.msi.</li>\r\n<li>The installation will drop the files (by default) to C:\\Program Files\\Skype for Business Server 2015\\Debugging Tools.  Browse to this directory to find the tools.</li>\n</ol>\n<br /><br />\n<b>To uninstall this download</b>\n<ol>\n<li>Click the <b>Start</b> button, and then select <b>Control Panel</b>.</li>\n<li>Click <b>Uninstall a program</b> from the <b>Programs</b> item.</li>\n<li>Right click <b>Skype for Business Server, Debugging Tools</b> to select <b>Uninstall</b>.</li>\n<li>Follow the wizard to finish uninstalling this download.</li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47263",
+    "downloadPreload": true
+}

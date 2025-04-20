@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual Earth MapCruncher",
+    "downloadDescription": "MapCruncher lets users quickly convert existing maps into an online format that\u2019s as fast and easy to use as Virtual Earth. Last published: June 21, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MapCruncher-3.1.4ve.zip",
+            "url": "https://download.microsoft.com/download/a/b/d/abdcbd3c-c3e9-435f-abbd-06cedea49073/MapCruncher-3.1.4ve.zip",
+            "size": "3513016",
+            "version": "3.1.4",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MapCruncher lets users quickly convert existing maps into an online format that\u2019s as fast and easy to use as Virtual Earth. PDF and raster maps can be converted in minutes just by clicking on corresponding landmarks on the user's map and the global maps in Virtual Earth. MapCruncher re-projects the user's map, rendering correctly registered and zoomed tiles that can be mashed up seamlessly with Virtual Earth\u2019s standard road and aerial imagery.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.4",
+    "detailsSection_file_name": [
+        "MapCruncher-3.1.4ve.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52546",
+    "downloadPreload": true
+}

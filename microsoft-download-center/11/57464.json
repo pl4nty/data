@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Group Policy Settings Reference Spreadsheet Windows 1809",
+    "downloadDescription": "This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with the Windows operating systems specified. You can configure these policy settings when you edit Group Policy Objects.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows10andWindowsServer2019PolicySettings--1809.xlsx",
+            "url": "https://download.microsoft.com/download/c/3/a/c3ae00cc-0ccc-4c30-8828-209b4ca397ec/Windows10andWindowsServer2019PolicySettings--1809.xlsx",
+            "size": "724410",
+            "version": "1809",
+            "datePublished": "7/15/2024 4:56:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use the filtering capabilities that are included in this spreadsheet to view a specific subset of data, based on one value or a combination of values that are available in one or more of the columns. In addition, you can click Custom in the drop-down list of any of the column headings to add additional filtering criteria within that column. <BR></BR>\r\nTo view a specific subset of data, click the drop-down arrow in the column heading of cells that contain the value or combination of values on which you want to filter, and then click the desired value in the drop-down list. For example, to view policy settings that are available for Windows Server 2012 R2 or Windows 8.1, in the Administrative Template worksheet, click the drop-down arrow next to <B>Supported On</B>, and then click <B>At least Microsoft Windows Server 2012 R2 or Windows 8.1</B>.<BR></BR>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1809",
+    "detailsSection_file_name": [
+        "Windows10andWindowsServer2019PolicySettings--1809.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "707.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Excel or Excel Viewer</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57464",
+    "downloadPreload": true
+}

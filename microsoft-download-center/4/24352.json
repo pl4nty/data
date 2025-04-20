@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 Administrators and Owners Worksheet",
+    "downloadDescription": "Use this worksheet to record owners for servers, sites and site collections, shared services, and central administration.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Administrators and Owners Worksheet_Server.xls",
+            "url": "https://download.microsoft.com/download/e/2/e/e2e0fe90-f845-4d1a-a23d-144e5fc3473f/Administrators and Owners Worksheet_Server.xls",
+            "size": "57344",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this worksheet to record owners for servers, sites and site collections, shared services, and central administration in your SharePoint Server 2010 environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Administrators and Owners Worksheet_Server.xls"
+    ],
+    "detailsSection_file_size": [
+        "56.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2007; Microsoft Office Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this file to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24352",
+    "downloadPreload": true
+}

@@ -1,0 +1,124 @@
+{
+    "error": "",
+    "downloadTitle": "Release Management for Visual Studio 2015",
+    "downloadDescription": "Release Management for Visual Studio 2015 supports you to automate the deployment of applications across the desktop, the server, and the cloud.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rm_deploymenttrial90.exe",
+            "url": "https://download.microsoft.com/download/6/f/0/6f0f4274-0d0f-4b5f-bbbd-ec5672e7cc27/rm_deploymenttrial90.exe",
+            "size": "1878672",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:49:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "rm_server.exe",
+            "url": "https://download.microsoft.com/download/6/f/0/6f0f4274-0d0f-4b5f-bbbd-ec5672e7cc27/rm_server.exe",
+            "size": "1879280",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:49:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "rm_client.exe",
+            "url": "https://download.microsoft.com/download/6/f/0/6f0f4274-0d0f-4b5f-bbbd-ec5672e7cc27/rm_client.exe",
+            "size": "1878960",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:49:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vs2015.rm_enu.iso",
+            "url": "https://download.microsoft.com/download/6/f/0/6f0f4274-0d0f-4b5f-bbbd-ec5672e7cc27/vs2015.rm_enu.iso",
+            "size": "343470080",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:49:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "<b>NOTE: A new version of Release Management is available</b><br />\r\n\r\nStarting with TFS 2015 Update 2, Release Management features are integrated into Team Foundation Server (TFS) and into the RELEASE hub in TFS web access. For more information, see <a href=\"https://msdn.microsoft.com/Library/vs/alm/Release/overview\"> Release Management for TFS 2015 and VS Team Services</a> (https://msdn.microsoft.com/en-us/Library/vs/alm/Release/overview). <br /><br />\r\n\r\nIf you are considering starting with Release Management, you should use the new web-based version. If you are already using the server and client version described in this topic, you should be aware that no new features will be added to this version. We encourage you to move to new web-based version as soon as possible.\r\n\r\nRelease Management for Visual Studio 2015 supports you to configure, approve and deploy your applications for any environment. Create automated deployment orchestrations for each environment no matter how complex the configuration. Delivering your software more frequently and easily to an environment allows your testers to get to work validating your system and keeps your stakeholders involved in giving feedback. \n<br/>\n<br/>\nRelease Management for Visual Studio 2015 requires Visual Studio Enterprise 2015 or Test Professional 2015. For licensing requirements refer to <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=13350\">Visual Studio and MSDN Licensing White Paper</a>. \n<br/>\n<br/>\n<b>Note</b>:\nTo enable the release management capabilities, you must also install the Release Management Server for Team Foundation Server 2015. To model release processes and enable graphical views of release status, you must have the Release Management Client for Visual Studio 2015. For agent-based releases, on every target machine to which you want to publish deployments, you must install Microsoft Deployment Agent 2015. For vNext Releases, you don\u2019t need to install Microsoft Deployment Agent on the target machine.\n<br/>\n<br/>\nTo find out what's new in Visual Studio 2015, see the <a href=\"http://www.visualstudio.com/news/vs2015-vs\">Visual Studio 2015 Release Notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=613260\">Visual Studio 2015 KB Article</a>.\n<br/>\n<br/>\nPlease Note: This is a 90-day trial version of Release Management. For information about obtaining a non-trial version, see <a href=\"http://www.visualstudio.com/en-us/release-mgmt-licensing-vs.aspx\">Software and licensing requirements for Release Management</a>. If you are an MSDN subscriber, you can download a non-trial version from the MSDN Subscriber website.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "rm_deploymenttrial90.exe",
+        "rm_server.exe",
+        "rm_client.exe",
+        "vs2015.rm_enu.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.8 MB",
+        "1.8 MB",
+        "327.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed System Requirements see <a href=\"http://msdn.microsoft.com/en-us/library/dn593703.aspx\">System Requirements for Release Management</a>. \nFor additional information on Operating System support, see the <a href=\"https://www.visualstudio.com/en-us/visual-studio-2015-compatibility-vs\">Visual Studio 2015 Compatibility page</a>.\n\n<b>Supported Visual Studio Team Foundation Server Versions:</b>\n<br/>\n<ul>\n<li>Team Foundation Server 2015</li>\n<li>Team Foundation Server 2013</li>\n<li>Team Foundation Server 2012</li>\n<li>Team Foundation Server 2010</li>\n\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Choose one of these installation options:\n<ul>\n<li>Install over the Internet:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To download an installer that you can run later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n</ul>\n</ul>\n<li>Download the Product Layout for Offline Installation:</li>\n<ul>\n<li>This will enable you to download a complete local copy to your computer. You can run Setup later without contacting the Internet, or you can copy and paste the installation layout in another location.</li> \n<li>On this page, choose the <b>Download</b> button. </li>\n<ul>\n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<li>Choose the <b>Save</b> button.</li>\n<li>Once the download is complete, open a command prompt, navigate to the download location, and run the .exe /layout.</li> \n<li>Specify where to download the files and click the <b>Download</b> button.</li> \n<li>Once downloaded, you can run the .exe from the download location to install the update.</li>\n</ul>\n</ul>\n<li>To download an image to burn on a DVD:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .iso option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>Choose the <b>Save</b> button to download a DVD5 ISO image so that you can burn a DVD later.</li>\n<ul>\n<li>After downloading the ISO file, you should use the <a href=\"http://support.microsoft.com/kb/841290\">File Checksum Integrity Verifier</a> tool to calculate and verify that the SHA-1 value for this file matches the value listed on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=517606\">Visual Studio 2015 ISO Files SHA-1 Values</a> page.</li> \n</ul>\n</ul>\n</ul>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center:",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48153",
+    "downloadPreload": true
+}

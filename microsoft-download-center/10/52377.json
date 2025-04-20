@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Computational Science Laboratory C# Tools 1.0 template",
+    "downloadDescription": "A C# template, with examples, showcasing the integration number of the tools produced by the Computational Science Laboratory (Flizbach, SDS and FetchClimate) to enable MCMC parameter estimation for user-specified models. Last published: September 28, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CSToolsCodeTemplate.zip",
+            "url": "https://download.microsoft.com/download/4/6/d/46d7039a-7c08-4584-8f7b-411f1bad2e65/CSToolsCodeTemplate.zip",
+            "size": "1662163",
+            "version": "1.0",
+            "datePublished": "3/15/2024 4:08:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A C# template, with examples, showcasing the integration number of the tools produced by the Computational Science Laboratory (Flizbach, SDS and FetchClimate) to enable MCMC parameter estimation for user-specified models.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CSToolsCodeTemplate.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52377",
+    "downloadPreload": true
+}

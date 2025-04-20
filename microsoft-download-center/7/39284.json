@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Windows Server 2012 R2 Hyper-V Network Virtualization with System Center 2012 R2 VMM",
+    "downloadDescription": "Provides instructions to create the Windows Server 2012 R2 Network Virtualization with System Center 2012 R2 Virtual Machine Manager (VMM) test lab, using computers running Windows Server 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2012 R2 Hyper-V Network Virtualization with System Center 2012 R2 VMM Test Lab_RTM.docx",
+            "url": "https://download.microsoft.com/download/7/d/5/7d512a75-1432-4cb1-9d9e-a4a2d78b865b/Windows Server 2012 R2 Hyper-V Network Virtualization with System Center 2012 R2 VMM Test Lab_RTM.docx",
+            "size": "411426",
+            "version": "September 2013",
+            "datePublished": "7/15/2024 3:34:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Microsoft Test Lab Guide (TLG) provides you with step-by-step instructions to create the Windows Server 2012 R2 Network Virtualization with System Center 2012 R2 Virtual Machine Manager (VMM) test lab, using computers running Windows Server 2012 R2. This test lab is based on four physical computers, each hosting multiple virtual machines. Updated September 2013 to include forwarding gateway and NAT functionality.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "September 2013",
+    "detailsSection_file_name": [
+        "Windows Server 2012 R2 Hyper-V Network Virtualization with System Center 2012 R2 VMM Test Lab_RTM.docx"
+    ],
+    "detailsSection_file_size": [
+        "401.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "main Test Lab Guides portal page",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/1262.test-lab-guides.aspx"
+        },
+        {
+            "title": "windows Server 2012 Test Lab Guides",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/7807.windows-server-2012-test-lab-guides.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39284",
+    "downloadPreload": true
+}

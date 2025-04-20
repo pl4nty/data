@@ -1,0 +1,105 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Template files (ADMX/ADML) for Visual Studio 2017, Visual Studio 2019, and Visual Studio 2022",
+    "downloadDescription": "This download includes the Group Policy Administrative Template files (ADMX/ADML) for Visual Studio 2017, Visual Studio 2019, and Visual Studio 2022. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "VisualStudioAdminTemplates.exe",
+            "url": "https://download.microsoft.com/download/a/b/e/abe6e205-6a57-4bdf-87cf-4c6c36448be9/VisualStudioAdminTemplates.exe",
+            "size": "1100840",
+            "version": "1.0.137.47574",
+            "datePublished": "2/11/2025 7:07:13 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "This download includes the Group Policy Administrative Template files (ADMX/ADML) for Visual Studio 2017 and higher. These files are used by Group Policy to configure installations of Visual Studio, such as Visual Studio Enterprise and Visual Studio Professional.\r\n<br/><br/>\r\nThe following languages are supported:\r\n<br/><br/>\r\n<ul>\r\n<li>cs-CZ Czech - Czech Republic</li>\r\n<li>de-DE German - Germany</li>\r\n<li>en-US English - United States</li>\r\n<li>es-ES Spanish - Spain</li>\r\n<li>fr-FR French - France</li>\r\n<li>it-IT Italian - Italy</li>\r\n<li>ja-JP Japanese - Japan</li>\r\n<li>ko-KR Korean - Korea</li>\r\n<li>pl-PL Polish - Poland</li>\r\n<li>pt-BR Portuguese - Brazil</li>\r\n<li>ru-RU Russian - Russia</li>\r\n<li>tr-TR Turkish - Turkey</li>\r\n<li>zh-CN Chinese - China</li>\r\n<li>zh-TW Chinese - Taiwan</li>\r\n </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.137.47574",
+    "detailsSection_file_name": [
+        "VisualStudioAdminTemplates.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "2/11/2025",
+    "systemRequirementsSection": "These Administrative Templates can be installed on any operating system supported by Visual Studio.  Refer to the appropriate system requirements documentation for details.\r\n<br/><br/>\r\n<ul><li><a href=\"https://docs.microsoft.com/en-us/visualstudio/releases/2022/system-requirements\">Visual Studio 2022 system requirements</a></li>\r\n<li><a href=\"https://docs.microsoft.com/en-us/visualstudio/releases/2019/system-requirements\">Visual Studio 2019 system requirements</a></li>\r\n<li><a href=\"https://docs.microsoft.com/en-us/visualstudio/releases/2017/vs2017-system-requirements-vs\">Visual Studio 2017 system requirements</a></li>\r\n</ul>\r\n<br/><br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 8.1",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<b>To download and extract the ADMX/ADML files:</b>\r\n<ol>\r\n<li>Click the <b>Download</b> button (above) to download the files. </li>\r\n<li>Click <b>Next</b> and choose where to save the files.</li>\r\n<li>Go to the location where you saved the downloaded files, and double-click the admin templates executable (.exe) file, and follow the instructions to extract the files to a location of your choosing.  We recommend to put the extracted files in the C:\\Windows\\PolicyDefinitions\\ directory.</li>\r\n</ol>\r\n<br/>\r\nIf you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure settings for Visual Studio by using Group Policy. Copy the ADMX/ADML files to your AD DS environment and then use the Group Policy Management administrative tool to configure the Group Policy settings for Visual Studio.\r\n<br/><br/>\r\nPlease report bugs or provide feedback with the <a href=\"https://aka.ms/vs/admx/feedback\">Visual Studio Administrative Templates</a> here.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Administrator Guide",
+            "url": "https://aka.ms/vs/admin/guide"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104405",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Pilot Success Kit",
+    "downloadDescription": "The Lync Pilot Success Kit is a collection of tools, documentation, and templates to help project teams plan, deploy, monitor, and evaluate the success of the Pilot Phase of a Lync rollout.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncPilotSuccessKit.zip",
+            "url": "https://download.microsoft.com/download/6/b/1/6b15455f-256c-4483-aecc-91e5d3c5b498/LyncPilotSuccessKit.zip",
+            "size": "11543094",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Lync Pilot Success Kit (PSK) is a collection of tools, documentation, and templates to help project teams plan, deploy, monitor, and evaluate the success of the Pilot Phase of a Lync rollout. The Pilot Success Kit helps with project planning, staffing needs and expectations, user communications, defining success criteria, and proactive monitoring, troubleshooting, and support. Experience with organizations deploying Lync has shown that user-satisfaction levels are higher when a successful pilot has been run.  In order to know if an organization is prepared for a broad roll-out, success criteria must be defined, measured and evaluated.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LyncPilotSuccessKit.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office 97-2003 or a later version; Microsoft Visio and Project 97-2003 or later versions are optionally required for viewing Visio and Project files. The optional Lync Pilot Custom Intranet Site requires SharePoint Server 2010 SP1 or later version. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install this download, save the LPSK.zip file to a directory on your computer, and then extract the .zip files to a local folder. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34965",
+    "downloadPreload": true
+}

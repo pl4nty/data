@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Leveraging the Value of Your Host Systems with Real World SOA",
+    "downloadDescription": "This document walks you through an example of implementing a real-world SOA by using Microsoft\u00ae BizTalk\u00ae Server 2006 and the BizTalk Adapters for Host Systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Host_Systems_with_SOA.doc",
+            "url": "https://download.microsoft.com/download/5/3/3/5331ec38-6a0b-4008-b14f-45f6bec418d0/Host_Systems_with_SOA.doc",
+            "size": "1106944",
+            "version": "Version",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Starting with a concrete business problem, this document attempts to walk the reader through many considerations and different approaches available when integrating with IBM host systems. Following a real world SOA approach, it provides details on how to leverage legacy systems by using Microsoft\u00ae BizTalk\u00ae Server 2006 and the BizTalk Adapters for Host Systems.<br />\n<br />\n\r\n\r\n<b>Applies to:</b> Microsoft BizTalk Server 2006, BizTalk Server 2006 R2,  and BizTalk Server 2009",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Version",
+    "detailsSection_file_name": [
+        "Host_Systems_with_SOA.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><br />\r\n<LI>Do one of the following:<br />\r\n</LI><UL><LI>To start the installation immediately, click <B>Open</B>.<br />\r\n</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.<br />\r\n</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20799",
+    "downloadPreload": true
+}

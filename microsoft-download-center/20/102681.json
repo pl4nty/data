@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2015",
+    "downloadDescription": "Security Update Guide - Cross-site Scripting Vulnerability",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "NAV2105_52075.zip",
+            "url": "https://download.microsoft.com/download/a/e/0/ae0f3622-7987-46f6-b149-d8fe18a23dad/NAV2105_52075.zip",
+            "size": "568011796",
+            "version": "8.0.52075",
+            "datePublished": "7/15/2024 5:01:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about this update, please visit https://support.microsoft.com/help/4602915",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0.52075",
+    "detailsSection_file_name": [
+        "NAV2105_52075.zip"
+    ],
+    "detailsSection_file_size": [
+        "541.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements can be found at https://msdn.microsoft.com/en-us/dynamics-nav/system-requirements-for-microsoft-dynamics-nav",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 Standard",
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8"
+    ],
+    "installInstructionSection": "How to install this Cumulative Update: https://support.microsoft.com/en-us/help/3021418",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102681",
+    "downloadPreload": true
+}

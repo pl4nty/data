@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Report 340 (Spain)",
+    "downloadDescription": "This paper provides information about Report 340 and how you work with this new report in Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Report_340_ENUS.pdf",
+            "url": "https://download.microsoft.com/download/5/1/2/51250b25-9013-4019-a23b-bc724c72f91d/Report_340_ENUS.pdf",
+            "size": "207882",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Report_340_ENUS.xps",
+            "url": "https://download.microsoft.com/download/5/1/2/51250b25-9013-4019-a23b-bc724c72f91d/Report_340_ENUS.xps",
+            "size": "332570",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Report 340 is a new report that will eventually replace two existing reports (Sales and Purchases Statutory Books) that all Spanish companies currently send in hard copy to the Spanish tax authorities. Although Report 340 will replace the sales and purchase statutory books, these reports will not be deleted from Microsoft Dynamics AX, and companies can send either Report 340 or the statutory books to the tax authorities. <br /> <br />\r\nThis white paper provides the following information about Report 340:<br />\r\n<UL><LI>About Report 340</LI>\r\n<LI>Basic setup</LI>\r\n<LI>Statutory requirements</LI>\r\n<LI>File format</LI>\r\n<LI>Data types</LI>\r\n<LI>Development process</LI>\r\n<LI>Validation</LI>\r\n<LI>Forms used to generate the report</LI></UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Report_340_ENUS.pdf",
+        "Report_340_ENUS.xps"
+    ],
+    "detailsSection_file_size": [
+        "203.0 KB",
+        "324.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>In the language list, select the appropriate language for the download.</LI>\n<LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19292",
+    "downloadPreload": true
+}

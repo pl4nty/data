@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 8 Accessibility ",
+    "downloadDescription": "Windows 8 fact sheet for printing and and Accessibility guide for Windows 8. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Win8_Accessibility_Tutorials.pdf",
+            "url": "https://download.microsoft.com/download/7/e/4/7e4154ae-7ac2-4235-a2f1-3d25b1d161cd/Win8_Accessibility_Tutorials.pdf",
+            "size": "1982045",
+            "version": "001",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Accessibility_in_Windows8_Factsheet.pdf",
+            "url": "https://download.microsoft.com/download/7/e/4/7e4154ae-7ac2-4235-a2f1-3d25b1d161cd/Accessibility_in_Windows8_Factsheet.pdf",
+            "size": "583999",
+            "version": "001",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Win8_Accessibility_Tutorials.doc",
+            "url": "https://download.microsoft.com/download/7/e/4/7e4154ae-7ac2-4235-a2f1-3d25b1d161cd/Win8_Accessibility_Tutorials.doc",
+            "size": "5073920",
+            "version": "001",
+            "datePublished": "7/15/2024 3:31:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows 8 Accessibility informaiton available includes a customer ready, printable Fact sheet in PDF, as well as an 88 page Accessible file in both PDF and .docx providing an overview of Accessibility in Windows 8 including What\u2019s New in Windows 8 Accessibility, Ease of Access, Personalization, Mouse and Keyboard, Keyboard Shortcuts ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "001",
+    "detailsSection_file_name": [
+        "Win8_Accessibility_Tutorials.pdf",
+        "Accessibility_in_Windows8_Factsheet.pdf",
+        "Win8_Accessibility_Tutorials.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "570.3 KB",
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "enable Products",
+            "url": "http://www.microsoft.com/enable/products/windows8/default.aspx"
+        },
+        {
+            "title": "enable Training Keyboard",
+            "url": "http://www.microsoft.com/enable/training/windows8/change-keyboard.aspx"
+        },
+        {
+            "title": "enable Training Mouse",
+            "url": "http://www.microsoft.com/enable/training/windows8/change-mouse.aspx"
+        },
+        {
+            "title": "enable Training",
+            "url": "http://www.microsoft.com/enable/training/windows8/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35751",
+    "downloadPreload": true
+}

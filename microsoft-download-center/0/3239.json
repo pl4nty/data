@@ -1,0 +1,160 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 4.0 Server Readme",
+    "downloadDescription": "This document provides important late-breaking information for Microsoft Dynamics CRM 4.0 Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Dynamics_CRM_4.0_Server_Readme.htm",
+            "url": "https://download.microsoft.com/download/4/3/e/43e45d90-079e-471f-9b0c-427c9e551004/Microsoft_Dynamics_CRM_4.0_Server_Readme.htm",
+            "size": "108923",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:14:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "This document provides important late-breaking information about Microsoft Dynamics CRM 4.0 Server that supplements the Microsoft Dynamics CRM documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_CRM_4.0_Server_Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "106.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Other Requirements: </b>\n<ul>\n<li>Internet Browser application, such as Microsoft Internet Explorer.</li><br />\n<br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>To start the download, click <b>Download</b>.</LI><br />\n<LI>If the <b>File Download</b> dialog box appears, do one of the following:</LI><br />\n<UL><br />\n<LI>To start the download immediately, click <B>Open</B>.</LI>\n<LI>To copy the download to your computer to view at a later time, click <B>Save</B>.</LI>\n</UL> \n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 4.0 Trial",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=106177"
+        },
+        {
+            "title": "microsoft Dynamics CRM 4.0 E-mail Router readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=104412"
+        },
+        {
+            "title": "microsoft Dynamics CRM 4.0 Implementation Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=104413"
+        },
+        {
+            "title": "microsoft Dynamics CRM 4.0 for Microsoft Office Outlook readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=104507"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3239",
+    "downloadPreload": true
+}

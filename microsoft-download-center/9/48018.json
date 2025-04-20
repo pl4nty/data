@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2012 Service Pack 1 (KB3045317) ",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2012 Service Pack 1 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB3045317-x64.exe",
+            "url": "https://download.microsoft.com/download/4/6/0/4606dfd6-1f1e-4dcf-8f0f-a0492929d31b/SQLServer2012-KB3045317-x64.exe",
+            "size": "819123904",
+            "version": "11.0.3513.0",
+            "datePublished": "7/15/2024 3:45:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2012-KB3045317-x86.exe",
+            "url": "https://download.microsoft.com/download/4/6/0/4606dfd6-1f1e-4dcf-8f0f-a0492929d31b/SQLServer2012-KB3045317-x86.exe",
+            "size": "509131968",
+            "version": "11.0.3513.0",
+            "datePublished": "7/15/2024 3:45:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server 2012 Service Pack 1 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3045317",
+        "name": "KB3045317"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS15-058",
+        "name": "MS15-058"
+    },
+    "detailsSection_file_version": "11.0.3513.0",
+    "detailsSection_file_name": [
+        "SQLServer2012-KB3045317-x64.exe",
+        "SQLServer2012-KB3045317-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "781.2 MB",
+        "485.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2012 Service Pack 1 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48018",
+    "downloadPreload": true
+}

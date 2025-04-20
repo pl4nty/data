@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Attack Surface Analyzer 2.0",
+    "downloadDescription": "Analyzes changes to system attack surface ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.txt",
+            "url": "https://download.microsoft.com/download/e/8/c/e8c9cce4-a915-4e47-bbf7-ca03c266a4db/Readme.txt",
+            "size": "140",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:03:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Attack Surface Analyzer 2.0 is available for download or as source code on <a href=\"https://github.com/microsoft/attacksurfaceanalyzer\">Github</a> where you can subscribe/watch for additional updates.<br /><br/>\r\n\r\nAttack Surface Analyzer is developed by the Microsoft Customer Security and Trust group.  It is the same tool used by Microsoft's internal product groups to catalogue changes made to operating system attack surface by the installation of new software.  <b>This</b> version represents a rewrite of the classic tool 1.0 version of the tools released in 2012 which was dedicated to older versions of Windows.<br /><br/>\r\n\r\nAttack Surface Analyzer takes a snapshot of your system state before and after the installation of other software product(s) and displays changes to a number of key elements of the system attack surface.  It also allows developers to view changes in the attack surface resulting from the introduction of their code to assess the aggregate attack surface of an organization's line of business applications or on potential customer systems.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Readme.txt"
+    ],
+    "detailsSection_file_size": [
+        "140 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See the Attack Surface Analyzer ReadMe.md, wiki and other project files on the project home page on <a href=\"https://github.com/microsoft/attacksurfaceanalyzer\">Github</a> for any additional system requirements.\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10"
+    ],
+    "installInstructionSection": "For questions and support see the project home page on <a href=\"https://github.com/microsoft/attacksurfaceanalyzer\">Github</a>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "attack Surface Analyzer 1.0 (classic)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=24487"
+        },
+        {
+            "title": "microsoft SDL Practices",
+            "url": "https://www.microsoft.com/en-us/securityengineering/sdl/practices"
+        },
+        {
+            "title": "microsoft SDL Resources",
+            "url": "https://www.microsoft.com/en-us/securityengineering/sdl/resources"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58105",
+    "downloadPreload": true
+}

@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Accelerator for SWIFT v2.1 Service Pack 1 Migration Guide",
+    "downloadDescription": "Provides documentation on migrating to BizTalk Accelerator for SWIFT v2.1 Service Pack 1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "A4SWIFT2.1_Migration.chm",
+            "url": "https://download.microsoft.com/download/0/5/e/05e9b78f-247b-49dc-8ab7-4d5de35b8410/A4SWIFT2.1_Migration.chm",
+            "size": "99370",
+            "version": "779",
+            "datePublished": "7/15/2024 3:27:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Migration Guide for BizTalk Accelerator for SWIFT v2.3 for guidance on the installation and configuration of Microsoft BizTalk Accelerator for SWIFT version 2.3 Service Pack 1  to ensure minimum downtime.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB923603",
+        "name": "KB923603"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "779",
+    "detailsSection_file_name": [
+        "A4SWIFT2.1_Migration.chm"
+    ],
+    "detailsSection_file_size": [
+        "97.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li/><b>Other Software: </b>BizTalk Accelerator for SWIFT v2.3, Biztalk Server 2006, SQL Server 2000 SP4.</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Click the Download button to begin downloading.",
+    "relatedResourcesSection": [
+        {
+            "title": "bizTalk Accelerator for SWIFT",
+            "url": "http://www.microsoft.com/biztalk/evaluation/swift/default.mspx"
+        },
+        {
+            "title": "kb Article 922264",
+            "url": "http://support.microsoft.com/kb/922264/en-us"
+        },
+        {
+            "title": "bizTalk Accelerator for SWIFT v2.1 Service Pack 1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=E4DCA895-E216-46B6-AE05-1902B8FF14ED&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22097",
+    "downloadPreload": true
+}

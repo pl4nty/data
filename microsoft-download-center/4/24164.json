@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Internet Security and Acceleration (ISA) Server 2004, and 2006 Management Pack for Operations Manager 2007",
+    "downloadDescription": "The ISA Server Management Pack monitors ISA Server events and alerts for the ISA Server versions 2004 and 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft ISA 2004-2006 System Center Operations Manager 2007 MP.msi",
+            "url": "https://download.microsoft.com/download/4/d/f/4dfa671a-1dae-457e-a436-894fc39e2527/Microsoft ISA 2004-2006 System Center Operations Manager 2007 MP.msi",
+            "size": "2034176",
+            "version": "6.0.5000.00",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The ISA Server Management Pack monitors ISA Server events and alerts for the ISA Server versions 2004 and 2006. With detailed alert information you can quickly identify and troubleshoot ISA Server issues, minimizing time-to-resolution when problems occur. Collect and analyze performance trends and metrics. Performance information allows you to manage bottlenecks, identify capacity requirements, and proactively manage your ISA Server configuration to resolve issues before problems occur.\n<br />\n<br />\nRequires OpsMgr 2007 MOM 2005 Backward Compatibility MP Update) 6.0.5000.12 (or higher)<br />\n<br />\n<b>Release History:</b><br />\nInitial Release for OpsMgr 2007  8/31/2007  Version 6.0.5000.0<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.5000.00",
+    "detailsSection_file_name": [
+        "Microsoft ISA 2004-2006 System Center Operations Manager 2007 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required Software: <br />\nSystem Center Operations Manager 2007, <br />\nMicrosoft ISA Server 2004, or 2006 <br />\nOpsMgr 2007 MOM 2005 Backward Compatibility MP Update 6.0.5000.12 (or higher)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 x64 editions"
+    ],
+    "installInstructionSection": "Please review the MP guide",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Home",
+            "url": "http://www.microsoft.com/systemcenter/"
+        },
+        {
+            "title": "system Center Operations Manager Home",
+            "url": "http://www.microsoft.com/systemcenter/opsmgr/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24164",
+    "downloadPreload": true
+}

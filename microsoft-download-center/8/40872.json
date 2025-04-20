@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Operational Security for Online Services Overview",
+    "downloadDescription": "This white paper provides insight into how Microsoft applies its resources to online services in ways that extend beyond traditional standards and methodology to deliver industry-leading capabilities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Operational-Security-for-Online-Services-Overview.pdf",
+            "url": "https://download.microsoft.com/download/9/d/b/9dba2020-5e81-4a54-8c5d-4938b0fae042/Operational-Security-for-Online-Services-Overview.pdf",
+            "size": "614411",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Operational Security Assurance (OSA) is an important process that Microsoft uses to make its networks more resilient to attack and increase the security of its cloud-based services. OSA helps Microsoft achieve this increased resilience and security by extending the foundation of Microsoft cloud-based services to protect against Internet-based security threats and by incorporating best practices and methodology to continuously update services to improve security and resolve incidents as quickly as possible.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Operational-Security-for-Online-Services-Overview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "600.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF. ",
+    "relatedResourcesSection": [
+        {
+            "title": "global Foundation Services",
+            "url": "http://www.globalfoundationservices.com/"
+        },
+        {
+            "title": "microsoft Security Development Lifecylce",
+            "url": "http://www.microsoft.com/sdl"
+        },
+        {
+            "title": "microsoft Trusted Cloud",
+            "url": "http://www.microsoft.com/trustedcloud"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40872",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Order Management in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Order Management module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_OM.zip",
+            "url": "https://download.microsoft.com/download/5/9/9/59929b29-0467-429d-b963-1269c0e77631/SL2015_ENUS_OM.zip",
+            "size": "28728915",
+            "version": "NA.",
+            "datePublished": "11/15/2023 4:40:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience\r\n   \r\n      <b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Order Management module in Microsoft Dynamics SL. At Training Material Completion\r\n   After reviewing this training, individuals will have:<ul style=\"font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;line-height:16px;\"><li>Create Sales Orders, process Shippers, and Confirm Shipment.</li><li>\u200bCreate price plans and enter master data that will automatically price items for a Sales Order.</li><li>Execute reports and use inquiry windows to obtain information for business processes.</li><li>Understand how the Order Management module interacts with the Inventory, Purchasing, and Accounts Receivable modules.</li><li>Close the Order Management module.</li><li>Define set up options for the module that allow you to customize your system to better fit your organization's unique needs.</li></ul>\r\n      <b></b> Prerequisites\r\n   \r\n      <b></b>Before reviewing this training, it is recommended that individuals have:<ul style=\"font-family:&quot;segoe ui&quot;, segoe, tahoma, arial;font-size:16px;font-style:normal;font-variant:normal;line-height:16px;\"><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>Completion of any of the following: General Ledger, Accounts Payable, or Accounts Receivable training course.\u200b</li></ul>\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_OM.zip"
+    ],
+    "detailsSection_file_size": [
+        "27.4 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101759",
+    "downloadPreload": true
+}

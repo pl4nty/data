@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Thin PC Basic Deployment Guide v1.0",
+    "downloadDescription": "Learn how to configure and deploy a Windows Thin PC image with this basic guide.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Thin PC Basic Deployment Guide v1 0.pdf",
+            "url": "https://download.microsoft.com/download/e/f/2/ef2893cf-a973-45f5-8de0-757ebacc5324/Windows Thin PC Basic Deployment Guide v1 0.pdf",
+            "size": "536263",
+            "version": "All",
+            "datePublished": "7/15/2024 3:27:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows\u00ae Automated Installation Kit (Windows AIK) is designed to help IT professionals deploy the Windows operating system.\r\nThis same toolkit is used to deploy Windows Thin PC.\r\nThis document demonstrates a basic example of how to configure and deploy a Windows Thin PC image. At the end of this process,\r\nyou will have a valid answer file, a bootable Windows Preinstallation Environment (Windows PE) CD, and you will have deployed your\r\nfirst custom Windows Thin PC image. After creating this basic answer file, you can modify it to include additional customizations.\r\nYou can also automate parts of the process by scripting some of the manual steps in this scenario. For a comprehensive description\r\nof all the tools and deployment methods, see the Windows Automated Installation Kit (Windows AIK) User\u2019s Guide (Waik.chm) or\r\nhttp://go.microsoft.com/fwlink/?LinkId=121503.\r\nIn this example, you build a basic answer file, and then install Windows Thin PC using that answer file. This process includes:\r\nStep 1: Building an Answer File\r\nStep 2: Building a Reference Installation\r\nStep 3: Creating Bootable Windows PE Media\r\nStep 4: Capturing the Installation onto a Network Share\r\nStep 5: Deploying from a Network Share",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "All",
+    "detailsSection_file_name": [
+        "Windows Thin PC Basic Deployment Guide v1 0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "523.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Enterprise"
+    ],
+    "installInstructionSection": "Download ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26676",
+    "downloadPreload": true
+}

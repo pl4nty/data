@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Using TMG and UAG to Securely Publish Outlook Web App and Exchange ActiveSync with Certificate Based Authentication",
+    "downloadDescription": "This white paper provides detailed information about publishing Microsoft Exchange Server 2010 using Forefront TMG or Forefront UAG to secure access for Exchange ActiveSync and Outlook Web App when used with certificate authentication.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UsingTMGandUAGtoSecurelyPublishOutlookWebAppAndExchangeActiveSyncWithCertificateBasedAuthentication.docx",
+            "url": "https://download.microsoft.com/download/9/1/f/91fda58a-0e2d-488f-bcaf-fa142e2544b8/UsingTMGandUAGtoSecurelyPublishOutlookWebAppAndExchangeActiveSyncWithCertificateBasedAuthentication.docx",
+            "size": "2459985",
+            "version": "Dec2010",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When you publish Exchange, Microsoft offers two software-based options: Microsoft Forefront Threat Management Gateway 2010 and Microsoft Forefront Unified Access Gateway 2010. Both options offer publishing wizards and security features to provide secure access to Exchange when it's accessed from outside the safety of the corporate network. \r\nThis white paper provides detailed information about publishing Microsoft Exchange Server 2010 using Forefront TMG or Forefront UAG, including how to choose between them for different scenarios, and provides specific steps you can take to configure Forefront TMG and Forefront UAG to publish Exchange 2010 while using certificate based authentication. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Dec2010",
+    "detailsSection_file_name": [
+        "UsingTMGandUAGtoSecurelyPublishOutlookWebAppAndExchangeActiveSyncWithCertificateBasedAuthentication.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "302",
+    "downloadPreload": true
+}

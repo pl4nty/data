@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit: Research Samples",
+    "downloadDescription": "This zipped file contains sample interview guides and surveys for use during rollout and adoption of Microsoft Lync 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Research_Samples.zip",
+            "url": "https://download.microsoft.com/download/e/2/d/e2d4a93f-b3a4-4e81-9feb-6e43f3906b1f/Research_Samples.zip",
+            "size": "194142",
+            "version": "0.1",
+            "datePublished": "3/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package contains interview guides and surveys that will help you gather feedback from your end users and technical staff about their experiences during the Lync rollout. You can use the questions at the start of the pilot to establish a baseline and again at the end of the pilot to gather feedback on the pilot rollout.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "Research_Samples.zip"
+    ],
+    "detailsSection_file_size": [
+        "189.6 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010; Microsoft Office Word 2007; Microsoft Office Word 2003; Microsoft Office Word 2002",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20910",
+    "downloadPreload": true
+}

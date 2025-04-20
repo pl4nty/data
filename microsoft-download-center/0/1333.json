@@ -1,0 +1,144 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4 Full Language Pack (x86)",
+    "downloadDescription": "Microsoft .NET Framework 4 Language Pack contain translated text, such as error messages, for each language.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/4/e/5/4e5fdbba-9c31-4e54-be99-db3f3a9c0a88/Readme.htm",
+            "size": "2014",
+            "version": "4",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Microsoft .NET Framework 4 Language Pack contain translated text, such as error messages, for languages other than English. Without the installation of a Language Pack, these messages are displayed in English by default.  Multiple language packs, each for a different language, can be installed on a single computer.<br/>\n\n<br/><b>Note:</b> To download a specific language pack, select the target language from the change language drop-down.\nFor more details on this release of the framework, see the following references:\n<a href=\" http://msdn.microsoft.com/en-us/netframework/default.aspx\"> http://msdn.microsoft.com/en-us/netframework/default.aspx</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n  <li>Windows XP SP3</li>\r\n  <li>Windows Server 2003 SP2</li>\r\n  <li>Windows Vista SP1 or later</li>\r\n  <li>Windows Server 2008 (not supported on Server Core Role)</li>\r\n  <li>Windows 7</li>\r\n  <li>Windows Server 2008 R2 (not supported on Server Core Role)</li>\r\n</ul>\r\n</ul>\r\n<ul>\r\n<li><b>Supported Architectures:</b></li>\r\n<ul>\r\n  <li>x86</li>\r\n  <li>x64</li>\r\n  <li>ia64 (some features are not supported on ia64 for example, WPF)</li>\r\n</ul>\r\n<li><b>Hardware Requirements:</b></li>\r\n<ul>\r\n  <li>Recommended Minimum: Pentium 1 GHz or higher with 512 MB RAM or more</li>\r\n  <li>Minimum disk space:</li>\r\n<ul>\r\n  <li>x86 \u2013 850 MB</li>\r\n  <li>x64 \u2013 2 GB</li>\r\n</ul>\r\n</ul>\r\n<li><b>Prerequisites:</b></li>\r\n<ul>\r\n  <li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=889482fc-5f56-4a38-b838-de776fd4138c&displaylang=en\">Windows Installer 3.1</a> or later</li>\r\n  <li><a href=\"http://www.microsoft.com/windows/downloads/ie/getitnow.mspx\">Internet Explorer 5.01</a> or later</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\r\n<li><b>Important:</b> Make sure that your computer has the latest Windows service pack and critical updates. To find security updates, visit <a href=\"http://www.windowsupdate.com/\">Windows Update</a>. If you are installing on XP 64 bit or Windows 2003 you might need to install the Windows Imaging Component. The Windows Imaging Component 32 bit can be found <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=8E011506-6307-445B-B950-215DEF45DDD8\">here</a> . The Windows Imaging Component 64 bit can be found <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=F64654AC-6E26-41D9-A90A-0E7783B864EE\">here</a> .</li>\r\n<li>On this page, locate the Download button and then click it to start the download.</li>\r\n<li>To start the installation immediately, click <b>Run</b>.</li>  \r\n<li>To save the download to your computer so that you can install it later, click <b>Save</b>.</li>  \r\n<li>To cancel the installation, click <b>Cancel</b>.</li>  \r\n</ol>\r\n<br /><br /><b>Web Developers and Administrators</b><br /><br />\r\nTo install the .NET Framework on a Web server or to setup an entire Web development environment, use the <a href=\"http://www.microsoft.com/web/gallery/install.aspx?appid=NETFX4RTM\">Microsoft Web Platform Installer</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1333",
+    "downloadPreload": true
+}

@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Server 2013 On-Premises Architectures Poster",
+    "downloadDescription": "A poster outlining architectures in Lync Server 2013 On-Premises.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_Architectures.pdf",
+            "url": "https://download.microsoft.com/download/8/f/4/8f446a19-f6cb-4b52-8de3-02c2cc4c0084/Lync2013_Architectures.pdf",
+            "size": "834733",
+            "version": "Feb2014",
+            "datePublished": "7/15/2024 3:24:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync2013_Architectures.vsdx",
+            "url": "https://download.microsoft.com/download/8/f/4/8f446a19-f6cb-4b52-8de3-02c2cc4c0084/Lync2013_Architectures.vsdx",
+            "size": "1865845",
+            "version": "Feb2014",
+            "datePublished": "7/15/2024 3:24:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Technical diagram for Lync Server 2013 On-Premises architectures. Provides architectural design guidance for planning and deployment of Lync Server 2013. Includes sections on the components of a Lync Server 2013 deployment, example architectures for increasing high availability and disaster recovery, example architectures for small, medium and large organizations, installation overview, server roles descriptions, and what\u2019s new in Lync Server 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2014",
+    "detailsSection_file_name": [
+        "Lync2013_Architectures.pdf",
+        "Lync2013_Architectures.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "815.2 KB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is an Adobe Reader file. Users who do not have Adobe Reader can download it from <A HREF=\"http://get.adobe.com/reader/\">Adobe.</A></LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server 2013 on TechNet",
+            "url": "http://technet.microsoft.com/en-us/library/gg398616.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41952",
+    "downloadPreload": true
+}

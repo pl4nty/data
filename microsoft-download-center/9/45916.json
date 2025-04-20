@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Installation Guide for Microsoft Dynamics AX 2012 R2 Cumulative Update 8",
+    "downloadDescription": "This document explains how to install cumulative update 8 for Microsoft Dynamics AX 2012 R2 (CU8).  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallGuide_CU8_AX2012R2.pdf",
+            "url": "https://download.microsoft.com/download/c/6/2/c6283c54-f828-4e0a-9790-bea430153e85/InstallGuide_CU8_AX2012R2.pdf",
+            "size": "426432",
+            "version": "AX 2012 R2",
+            "datePublished": "7/15/2024 3:56:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document explains how to install cumulative update 8 for Microsoft Dynamics AX 2012 R2 (CU8).  \r\nTwo methods are available to install CU8. Choose a method based on whether AX 2012 R2 is already installed in your environment. If AX 2012 R2 is already installed, you must use the Update wizard and complete the update process to apply CU8. If you are installing AX 2012 R2 for the first time, you can use the Setup wizard and the slipstreaming process to install CU8 together with the rest of the product. When updates are slipstreamed, Setup automatically detects and applies them.  \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX 2012 R2",
+    "detailsSection_file_name": [
+        "InstallGuide_CU8_AX2012R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "416.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 7, Windows 8, Windows Server 2008, Windows Server 2012 \r\n\u2022To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. \r\n\u2022For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Ultimate",
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 Standard"
+    ],
+    "installInstructionSection": "1.Click Download to download the manual in PDF file format.\r\n2.Save the file to your computer.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "apply updates and hotfixes [AX 2012]",
+            "url": "http://technet.microsoft.com/en-us/library/hh335183.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45916",
+    "downloadPreload": true
+}

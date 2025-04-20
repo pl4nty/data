@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 8.1 API allow list",
+    "downloadDescription": "List of allowed APIs for testing Windows Phone apps on Windows",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AllowList81.xml",
+            "url": "https://download.microsoft.com/download/a/c/2/ac2a8699-40bc-4118-87a3-c01d24ed3ff0/AllowList81.xml",
+            "size": "98233",
+            "version": "3",
+            "datePublished": "7/15/2024 3:46:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows ACK uses a list of allowable APIs as a whitelist for developers testing their apps with the kit.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "AllowList81.xml"
+    ],
+    "detailsSection_file_size": [
+        "95.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows App Certification Kit and Windows 8, Windows 8.1 or Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This list should download automatically via the kit.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47328",
+    "downloadPreload": true
+}

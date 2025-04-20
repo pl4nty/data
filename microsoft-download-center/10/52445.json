@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Query Representation and Understanding Set",
+    "downloadDescription": "The Query Representation and Understanding (QRU) data set contains a set of similar queries that can be used in web research such as query transformation and relevance ranking. Last published: August 9, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "QRU.zip",
+            "url": "https://download.microsoft.com/download/e/1/e/e1e8d570-47ec-449e-8427-d66eb908d8eb/QRU.zip",
+            "size": "10253",
+            "version": "1.0",
+            "datePublished": "12/15/2023 4:19:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Query Representation and Understanding (QRU) data set contains a set of similar queries that can be used in web research such as query transformation and relevance ranking. QRU contains similar queries that are related to existing benchmark data sets, such as TREC query sets. The QRU data set was created by extracting 100 TREC queries, training a query-generation model and a commercial search engine, generating similar queries from TREC queries with the model, and removal of mistakenly generated queries.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "QRU.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.0 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52445",
+    "downloadPreload": true
+}

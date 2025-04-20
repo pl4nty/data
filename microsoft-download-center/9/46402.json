@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Requirements for Microsoft Platform Ready Tests",
+    "downloadDescription": "Download the Requirements for MPR Tests",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Platform Ready - Test Requirements Criteria.xps",
+            "url": "https://download.microsoft.com/download/1/7/1/171a415e-eed8-46f3-b36f-f2c3660900a5/Microsoft Platform Ready - Test Requirements Criteria.xps",
+            "size": "1673397",
+            "version": "March 2015",
+            "datePublished": "7/15/2024 3:50:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document gives an overview of the Microsoft Platform Ready Program and details the prerequisites and test criteria for all the products that are covered by the Microsoft Platform Ready program.  \r\n\r\nThe Microsoft Platform Ready Test Tool is designed to help test your applications for compatibility with latest technologies and platforms from Microsoft. Use this tool to achieve testing status in the Microsoft Platform Ready programs.\r\nThe MPR Test Tool is an automated, wizard style self-test tool that implements technical requirements described in the Microsoft Platform Ready Test Requirements.\r\nThis tool is also recommended for Customers to evaluate third party applications and for testing Line of Business applications.\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2015",
+    "detailsSection_file_name": [
+        "Microsoft Platform Ready - Test Requirements Criteria.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2, Windows Server 2012, Windows 7, Windows 8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "1) Download the Requirements for Microsoft Platform Ready Tests and Application Logo Certification Program\r\n2) Test your applications with the Microsoft Platform Ready Test Tool\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46402",
+    "downloadPreload": true
+}

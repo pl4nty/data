@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Threading Library End User License Agreement",
+    "downloadDescription": "This document is the end-user license agreement for the Visual Studio Threading Library.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LICENSE.docx",
+            "url": "https://download.microsoft.com/download/0/1/9/019f3501-f96e-43f7-9de6-8c61bf5642a3/LICENSE.docx",
+            "size": "42268",
+            "version": "11.0",
+            "datePublished": "7/15/2024 4:07:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LICENSE.rtf",
+            "url": "https://download.microsoft.com/download/0/1/9/019f3501-f96e-43f7-9de6-8c61bf5642a3/LICENSE.rtf",
+            "size": "184217",
+            "version": "11.0",
+            "datePublished": "7/15/2024 4:07:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is the end-user license agreement for the Microsoft\u00ae Visual Studio Threading Library software known as Microsoft.VisualStudio.Threading.dll and the VSIX that packages that for downlevel Visual Studio versions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0",
+    "detailsSection_file_name": [
+        "LICENSE.docx",
+        "LICENSE.rtf"
+    ],
+    "detailsSection_file_size": [
+        "41.3 KB",
+        "179.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not applicable.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Click Download, and then click Save.<br />\n2. Browse to the location you want to save the file to, and then click Save.<br />\n3. Browse to the location where you saved the file. <br />\n4. Double-click the file to open it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50396",
+    "downloadPreload": true
+}

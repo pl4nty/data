@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "RMS Protection Tool ",
+    "downloadDescription": "The Rights Management Protection Tool is being replaced by the Azure Information Protection client. Support for the RMS Protection tool will retire on February 10th 2018.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Info.txt",
+            "url": "https://download.microsoft.com/download/0/6/6/06619015-6bd2-4cb5-9b66-5ff015457976/Info.txt",
+            "size": "622",
+            "version": "1.0.2322.0",
+            "datePublished": "7/15/2024 3:04:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The RMS Protection Tool contains PowerShell cmdlets designed for developers and IT professionals who want to use scripting mechanisms to bulk protect and unprotect documents. <br/> <br/>\r\n\r\n<b> End of support notification </b> <br/>\r\nThe Rights Management Protection Tool is being replaced by the <a href=\"http://aka.ms/aipClient\">Azure Information Protection client</a>. The RMS Protection tool has been retired on February 10th 2018.\r\n<br/>\r\n\r\nOnce you install the <a href=\"http://aka.ms/aipClient\">Azure Information Protection client</a>, visit the AIP cmdlet documentation <a href=\"https://docs.microsoft.com/en-us/powershell/module/AzureInformationProtection/\">page</a> to learn more about the cmdlets.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.2322.0",
+    "detailsSection_file_name": [
+        "Info.txt"
+    ],
+    "detailsSection_file_size": [
+        "622 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The following list identifies client and server platforms that can install the RMS Protection Tool. \r\n<UL>\r\n<LI> Windows 10</LI>\r\n<LI> Windows Server 2012 R2</LI>\r\n<LI> Windows 8.1</LI>\r\n<LI> Windows Server 2012</LI>\r\n<LI> Windows Server 2008 R2 SP1</LI>\r\n<LI> Windows 7 SP1</LI>\r\n</UL>\r\n\r\nIn addition, the following components are also required:\r\n<UL>\r\n<LI> Latest version of AD RMS Client 2.1 (http://www.microsoft.com/en-us/download/details.aspx?id=38396)</LI>\r\n<LI> PowerShell 4.0 (Download this for Windows 7 SP1 machines) </LI>\r\n<LI> .NET 4.5</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<UL>\r\n\r\n<LI>  Download the installer package that matches your operating system platform, and then run it on your computer. The RMS Protection tool installs the Windows PowerShell module, RMSProtection. </LI>\r\n\r\n<LI>   Read the latest information about the RMS Protection cmdlets on MSDN (https://msdn.microsoft.com/library/azure/mt433195.aspx). This includes information about the supported scenarios, prerequisites, any current limitations, and links to each cmdlet help. </LI>\r\n\r\n<LI>   Before you begin to use the cmdlets, make sure you read the additional prerequisites and instructions for your deployment of RMS:\r\n<UL>\r\n\r\n<LI>  For Azure RMS: about_RMSProtection_AzureRMS (https://msdn.microsoft.com/library/azure/mt433202.aspx or \"Get-Help about_RMSProtection_AzureRMS\" in your Windows PowerShell session).</LI>\r\n<LI>  For AD RMS: about_RMSProtection_ADRMS (https://msdn.microsoft.com/library/azure/mt433203.aspx or \"Get-Help about_RMSProtection_ADRMS\" in your Windows PowerShell session).</LI>\r\n</UL>\r\n</LI>\r\n\r\n</UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47256",
+    "downloadPreload": true
+}

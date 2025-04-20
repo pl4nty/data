@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer 7 in Windows Server 2008 x64 Edition (KB2809289)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-021. To find out if other security updates are available for you, see the Additional Information section at the bottom of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2809289-x64.msu",
+            "url": "https://download.microsoft.com/download/0/e/f/0ef28cb6-2352-4660-ac63-ca3e597ce7d0/Windows6.0-KB2809289-x64.msu",
+            "size": "13080645",
+            "version": "2809289",
+            "datePublished": "7/15/2024 3:12:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2809289",
+        "name": "KB2809289"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-021",
+        "name": "MS13-021"
+    },
+    "detailsSection_file_version": "2809289",
+    "detailsSection_file_name": [
+        "Windows6.0-KB2809289-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "12.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update applies to Internet Explorer 7 with the following operating systems:<br /><ul>\n        <li>Windows Server 2008 Service Pack 2 (x64-bit)</li>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.\n        </li>\n        <li>Do one of the following:</li>\n        <ul>\n          <li>\n            To start the installation immediately, click <b>Run</b>.\n          </li>\n          <li>\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\n          </li>\n          <li>\n            To cancel the installation, click <b>Cancel</b>.\n          </li>\n        </ul>\n      </ol>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin MS13-021",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=279923"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36869",
+    "downloadPreload": true
+}

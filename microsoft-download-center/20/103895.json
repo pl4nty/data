@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Search Admin Training Guide",
+    "downloadDescription": "his training guide introduces you to the tasks you may be asked to perform as Global admins, Search admins, or Search editors in support of Microsoft Search.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Search Admin Training Guide_April2021.pdf",
+            "url": "https://download.microsoft.com/download/2/9/0/290bf4a0-37a0-4627-97fb-943d781e0234/Microsoft Search Admin Training Guide_April2021.pdf",
+            "size": "2662037",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:06:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This training guide introduces you to the tasks you may be asked to perform as Global admins, Search admins, or Search editors in support of Microsoft Search.\r\n\r\nWe introduce the Search & intelligence admin center and some basic administrative tasks, like provisioning users and managing roles in lessons 1 and 2. These topics are covered here primarily for the benefit of new admins.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Search Admin Training Guide_April2021.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10, Windows 11, Winfows 7, Windows 8",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer. Important: After you save the file, open the downloaded .pdf. To remove this download, delete the file from the directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103895",
+    "downloadPreload": true
+}

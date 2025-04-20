@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Excel Cloud Data Analytics",
+    "downloadDescription": "Excel Cloud Data Analytics is a Microsoft Excel add-in that enables users to execute a variety of data-centric tasks on Windows Azure through a custom Ribbon in Excel. Last published: November 29, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExcelCloudDataAnalytics.zip",
+            "url": "https://download.microsoft.com/download/3/5/b/35b9ff30-10cc-41c9-834f-59cfcd86f3d0/ExcelCloudDataAnalytics.zip",
+            "size": "6160396",
+            "version": "1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Excel Cloud Data Analytics is a Microsoft Excel add-in that enables users to execute a variety of data-centric tasks on Windows Azure through a custom Ribbon in Excel. This add-in can be used to connect to data stored in the Windows Azure cloud and can be extended to connect to a variety of other data sources. It also provides a general framework in which the user can create data-analytics methods and run them in Windows Azure. The current code base supports the execution in Windows Azure via built-in access to Daytona, an iterative MapReduce runtime for Windows Azure. Using Excel Cloud Data Analytics, users can upload data to Windows Azure, select and run registered data-analysis algorithms in the cloud through Windows Azure, monitor the execution of the data analysis, and retrieve results for display or further processing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "ExcelCloudDataAnalytics.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52548",
+    "downloadPreload": true
+}

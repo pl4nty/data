@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Products backup and recovery planning workbook",
+    "downloadDescription": "Workbook to help you plan your backup and recovery strategy for SharePoint 2010 Products",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OIT2010_Wksht_BackupPlanning.xlsx",
+            "url": "https://download.microsoft.com/download/4/e/6/4e66aa4b-1265-44c7-86f6-aa71b6768722/OIT2010_Wksht_BackupPlanning.xlsx",
+            "size": "20916",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this workbook to identify what you plan to back up, to ensure that you have all the information that you need before you implement a backup strategy.\r\n\r\nFill out the \"Requirements and Decisions\" worksheet to get a complete understanding of the servers, service applications, and Web applications in your environment. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OIT2010_Wksht_BackupPlanning.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "20.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page.</li>\r\n<li>Save the file to your hard disk.</li>\r\n<li>Find the file on your hard disk and double-click it to open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10895",
+    "downloadPreload": true
+}

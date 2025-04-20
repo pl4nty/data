@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "FaST-LMM-EWASher - R version",
+    "downloadDescription": "This is an R version of FaST-LMM-EWASher, which performs epigenome-wide association analysis in the presence of confounders such as cell-type heterogeneity. Last published: February 19, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "fastlmm-ewasher.R.zip",
+            "url": "https://download.microsoft.com/download/3/9/d/39d7a6d4-3b0c-47ca-8e66-7699084ad491/fastlmm-ewasher.R.zip",
+            "size": "65127255",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:11:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is an R version of FaST-LMM-EWASher, which performs epigenome-wide association analysis in the presence of confounders such as cell-type heterogeneity. A python version of this software is also available as part of Fast-LMM-Py. This software is associated with the paper: Epigenome-wide association studies without the need for cell-type composition. Nature Methods 2014, doi:10.1038/NMETH.2815.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "fastlmm-ewasher.R.zip"
+    ],
+    "detailsSection_file_size": [
+        "62.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52501",
+    "downloadPreload": true
+}

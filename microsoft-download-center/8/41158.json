@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Locale Builder 2.0",
+    "downloadDescription": "Locale Builder allows creation of custom formats for Windows language and region data.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LocaleBuilderSetup.exe",
+            "url": "https://download.microsoft.com/download/c/6/8/c68bddc5-50cb-47e1-9ef7-b5651d68bddf/LocaleBuilderSetup.exe",
+            "size": "2571872",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:17:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Windows 8.1 ships with locale data that provide formatting support for hundreds of language and region combinations.  This covers only a fraction of the speakers and languages worldwide.  Locale Builder is intended to allow system administrators, vendors, developers and users to provide their own formatting data for cases when support is not provided in box.<br/>\r\n<br />\r\nLocale Builder allows the user to extend and modify the set of locales that Microsoft ships with his or her own regional and cultural data.  This application was created to support users in regions without built-in Windows locales, as well as users seeking to modify locales that they are already using.  With Locale Builder, users are able to add formatting support on their own timeline without the need to wait for new releases of Windows.<br />\r\n<br />\r\nLocale Builder also allows corporations, governments, universities, and special-interest groups to easily create custom locales on Windows 8.1.<br/>\r\n<br />\r\nThis version of Locale Builder replaces the obsolete Microsoft Locale Builder (beta 2), and has been updated to run on Windows 10.<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "LocaleBuilderSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating System for Locale Builder</b><br />\r\n<br />\r\n\u2022 Windows 10 <br/>\r\n\u2022 Windows Server 2012 R2 <br/>\r\n\u2022 Windows 8.1 <br />\r\n<br />\r\n<b>Supported Operating System for Locales built with Locale Builder</b><br />\r\n<br />\r\n\u2022 Windows 10 <br/>\r\n\u2022 Windows Server 2012 R2<br/>\r\n\u2022 Windows 8.1<br />\r\n\u2022 Windows RT 8.1<br />\r\n<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Select the file you want to download and then do one of the following: <br />\r\n<br />\r\n 1. To start the installation, click <b>Open</b>.  <br />\r\n 2. To save the download to your computer for installation at a later time, click <b>Save</b>. <br />\r\n",
+    "additionalInformationSection": "Documentation of the data that Locale Builder allows editing of are included in the help file.<br />\r\n<br />\r\nUsers can collaborate on locales by exporting and sharing Locale Builder LDML files.  Additionally, users and organizations are encouraged to share the final locales with other users with the same locale needs, either locally or through sites like codeplex.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "shawn Steele's Locale Blog",
+            "url": "http://blogs.msdn.com/b/shawnste/archive/tags/custom+cultures+_2f00_+locales+_2f00_+cultureinfo/"
+        },
+        {
+            "title": "custom Locales on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dd317785.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41158",
+    "downloadPreload": true
+}

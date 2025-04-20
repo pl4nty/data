@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2019 Additional Software License Terms and Information",
+    "downloadDescription": "Microsoft SQL Server 2019 Additional Software License Terms and Information site provides the legal terms and conditions for using the Additional Software included alongside Microsoft SQL Server software.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ReadMe_ENU.txt",
+            "url": "https://download.microsoft.com/download/b/6/e/b6ee0f15-53e9-4c99-a16d-4edfedf7fa0a/ReadMe_ENU.txt",
+            "size": "110",
+            "version": "15.0.2000.5",
+            "datePublished": "6/15/2024 4:22:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2019 Additional Software License terms and Information provides the legal terms and conditions for the Additional Software included alongside Microsoft SQL Server software. <br/>\r\n<br/>\r\nMicrosoft SQL Server 2019 includes other Microsoft programs which are listed below. These programs are licensed under the terms and conditions associated with them. You may only use these programs in conjunction with the software licensed here. If you do not accept the license terms associated with a program, you may not use that program.\r\n<br />\r\n<br/>\r\n<b>Note:</b> Below you will find the following End User License Agreements and terms applicable for this release:\r\n<ul>\r\n    <li> Other Microsoft Program Licenses - SQL Server software also contains other Microsoft Programs, each of which are licensed under the terms and conditions of their respective program\u2019s license.</li>\r\n<ul>\r\n<li>Microsoft Visual Studio Add-ons, Visual Studio Shells and C++ Redistrubutable</li>\r\n</ul>\r\n</ul>\r\n<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.5",
+    "detailsSection_file_name": [
+        "ReadMe_ENU.txt"
+    ],
+    "detailsSection_file_size": [
+        "110 bytes"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "For Visual Studio Product License Terms please see https://visualstudio.microsoft.com/license-terms/mlt552233/",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "For Visual Studio Product License Terms please see https://visualstudio.microsoft.com/license-terms/mlt552233/",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100449",
+    "downloadPreload": true
+}

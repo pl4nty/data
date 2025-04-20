@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Load Generator 2013",
+    "downloadDescription": "Exchange Load Generator is a simulation tool to measure the impact of MAPI, OWA, ActiveSync, IMAP, POP and SMTP clients on Exchange servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Exchange Load Generator 2013.doc",
+            "url": "https://download.microsoft.com/download/9/4/5/94594963-5ea9-44f1-82c2-2160cc68681d/Microsoft Exchange Load Generator 2013.doc",
+            "size": "771584",
+            "version": "15.0.805.0",
+            "datePublished": "7/15/2024 3:16:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Loadgen.msi",
+            "url": "https://download.microsoft.com/download/9/4/5/94594963-5ea9-44f1-82c2-2160cc68681d/Loadgen.msi",
+            "size": "21860352",
+            "version": "15.0.805.0",
+            "datePublished": "7/15/2024 3:16:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use Microsoft Exchange Load Generator 2013 (LoadGen) as a simulation tool to measure the impact of MAPI, OWA, ActiveSync, IMAP, POP and SMTP clients on Exchange 2013 servers. LoadGen allows you to test how a server running Exchange 2013 responds to e-mail loads. To simulate the delivery of these messaging requests, you run LoadGen tests on client computers. These tests send multiple messaging requests to the Exchange server, thereby causing a mail load. LoadGen is a useful tool for administrators who are sizing servers and validating a deployment plan. Specifically, LoadGen helps you determine if each of your servers can handle the load to which they are intended to carry. Another use for LoadGen is to help validate the overall solution.<br />\r\n<br />\r\nThis version is intended for Microsoft Exchange 2013 Servers only.\r\n<br />\n<br />\n<b>Important!</b> LoadGen should be used only in laboratories that have no connection to the production environment. This tool should not be used in any way in a production environment or an environment that is mission critical or contains important information of any kind anywhere in the network.\n<br />\n<br />\r\nThe tool is provided as-is.  At this time, there are no updates or patches planned for future release.  No formal support is provided for the tool.  Some minimal support may be provided by Microsoft but not all reported issues will be able to be addressed or resolved.  \r\n\r\n<br/><br/>\r\nYou can also try the <a href=\"http://go.microsoft.com/fwlink/?LinkID=60612\">Exchange Server Forums on TechNet</a> for help.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.805.0",
+    "detailsSection_file_name": [
+        "Microsoft Exchange Load Generator 2013.doc",
+        "Loadgen.msi"
+    ],
+    "detailsSection_file_size": [
+        "753.5 KB",
+        "20.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<LI>.NET Framework 4.5</LI>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<LI>Click the <b>Download</b> button on this page to start the download</LI>",
+    "additionalInformationSection": "Your use of the Exchange Load Generator Tool is governed by the terms and conditions of the end user license agreement which can be found in the self-extract package.<BR /><BR />If you do not agree with those terms and conditions, do not use the software.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40726",
+    "downloadPreload": true
+}

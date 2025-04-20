@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "TPM Platform Crypto-Provider Toolkit",
+    "downloadDescription": "The TPM Platform Crypto Provider and Toolkit contains sample code, utilities and documentation for using TPM-related functionality in Windows 8. Last published: October 31, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PCPToolKit.zip",
+            "url": "https://download.microsoft.com/download/e/f/8/ef8c367f-52d0-4827-8339-8a3886f0ce45/PCPToolKit.zip",
+            "size": "5233579",
+            "version": "1.00",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The TPM Platform Crypto Provider and Toolkit contains sample code, utilities and documentation for using TPM-related functionality in Windows 8.  Subsystems described include the TPM-backed Crypto-Next-Gen (CNG) platform crypto-provider, and how attestation-service providers can use the new Windows features.  Both TPM1.2 and TPM2.0-based systems are supported.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.00",
+    "detailsSection_file_name": [
+        "PCPToolKit.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52487",
+    "downloadPreload": true
+}

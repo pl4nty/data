@@ -1,0 +1,169 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2005 Reporting Services Add-in for Microsoft SharePoint Technologies",
+    "downloadDescription": "The Microsoft SQL Server 2005 Reporting Services Add-in for Microsoft SharePoint Technologies is a Web download that provides features for running a report server within a larger deployment of Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme_rsaddin.htm",
+            "url": "https://download.microsoft.com/download/f/d/c/fdcb3a53-0cb1-4e67-a1b6-45b89b3c59cf/readme_rsaddin.htm",
+            "size": "72067",
+            "version": "9.00.3294",
+            "datePublished": "7/15/2024 3:07:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointRS.msi",
+            "url": "https://download.microsoft.com/download/f/d/c/fdcb3a53-0cb1-4e67-a1b6-45b89b3c59cf/SharePointRS.msi",
+            "size": "38351872",
+            "version": "9.00.3294",
+            "datePublished": "7/15/2024 3:07:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePointRS_x64.msi",
+            "url": "https://download.microsoft.com/download/f/d/c/fdcb3a53-0cb1-4e67-a1b6-45b89b3c59cf/SharePointRS_x64.msi",
+            "size": "38653952",
+            "version": "9.00.3294",
+            "datePublished": "7/15/2024 3:07:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2005 Reporting Services Add-in for SharePoint Technologies (Reporting Services Add-in) allows you to take advantage of SQL Server 2005 Service Pack 2 (SP2) report processing and management capabilities within Windows SharePoint Services 3.0 or Microsoft Office SharePoint Server 2007. The download provides the following functionality:<br/><br/>\n<ul>\n  <li>A Report Viewer Web Part that provides report viewing capability, export to other rendering formats, page navigation, search, print, and zoom.</li>\n  <li>Web application pages so that you can create subscriptions and schedules, and manage reports, models, and data sources.</li>\n  <li>Support for using standard Windows SharePoint Services features including document management, collaboration, security, and deployment with report server content types. </li>\n</ul><br/>\nThe Reporting Services Add-in works together with SP2, which is required on the report server. SP2 provides the following functionality for a report server that is configured for SharePoint integrated mode:<br/><br/>\n<ul>\n  <li>Synchronization from SharePoint content database to the report server database.</li>\n  <li>A custom security extension that uses SharePoint permissions to control access to report server operations.</li>\n  <li>A new delivery extension that you can use in subscriptions to deliver reports to SharePoint libraries.</li>\n  <li>A revised Reporting Services Configuration tool that you can use to configure a report server for SharePoint integrated operations.</li>\n  <li>A new SOAP endpoint for managing report server content in SharePoint integrated mode.</li>\n</ul><br/>\n<b>Warning: Requires Microsoft Security Bulletin MS08-052</b><br/>\nTo use this version of the Reporting Services Add-in, the SQL Server Reporting Services server deployment used in conjunction with the Reporting Services Add-in must be patched with the updates listed under <b>Microsoft SQL Server</b> in <a href=\" http://go.microsoft.com/fwlink/?LinkID=125468&clcid=0x409\">Microsoft Security Bulletin MS08-052</a><br/><br/>\n\n\n<b>Warning: No automatic upgrade support</b><br/>\nPre-release (CTP) versions of the Reporting Services Add-in cannot be upgraded to this released version.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.3294",
+    "detailsSection_file_name": [
+        "readme_rsaddin.htm",
+        "SharePointRS.msi",
+        "SharePointRS_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "70.4 KB",
+        "36.6 MB",
+        "36.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>The Microsoft .NET Framework 3.0.</li>\n  <li>40 MB of available hard disk space.</li>\n  <li>2 gigabytes of RAM.</li>\n</ul><br/>\nThe computer must meet the following software requirements:\n<ul>\n  <li>Microsoft Office SharePoint Server 2007 or Windows SharePoint Services 2007 with .NET Programmability Support.</li>\n  <li>Microsoft Windows Server 2003 with the latest service packs (x86 only), configured to run as an Application Server with ASP.NET 2.0 enabled.</li>\n  <li>SQL Server 2005 SP2 Reporting Services. (Supported SQL Server editions include Standard, Evaluation, Developer, and Enterprise. Server integration is not supported on the Workgroup Edition of Reporting Services or SQL Server 2005 Express with Advanced Services.)</li>\n <li>SQL Server 2005 SP2 Reporting Services must be patched with updates listed under <b>Microsoft SQL Server</b> in <a href=\" http://go.microsoft.com/fwlink/?LinkID=125468&clcid=0x409\">Microsoft Security Bulletin MS08-052</a>\n<ul>\n<li>Either: Security Update for <a href=\"http://go.microsoft.com/fwlink/?LinkID=132078&clcid=0x409\">SQL Server 2005 Service Pack 2 (KB954606)</a> (build 9.00.3073.00)</li>\n<li>OR: Security Update for <a href=\"http://go.microsoft.com/fwlink/?LinkID=132079&clcid=0x409\">SQL Server 2005 Service Pack 2 (KB954607)</a> (build 9.00. 3282.00)</li>\n</ul>\n</li>\n  <li>Windows SharePoint Services 3.0 or Office SharePoint Server 2007. The Reporting Services Add-in is not supported on earlier versions of Windows SharePoint Services.</li>\n  <li>The Web sites cannot be enabled for Anonymous access.</li>\n  <li>Microsoft Internet Explorer 6.0 with SP2 or later. Microsoft Internet Explorer 7.0 is strongly recommended.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1"
+    ],
+    "installInstructionSection": "You can install and configure the servers in any order, but integrated operations will not be available until the configuration steps are complete for both servers. For detailed information on the installation steps, see the Readme for the Reporting Services Add-in.<br/><br/>\n<ul>\n  <b>Step 1:</b> Install a SharePoint technology instance.<br/><br/>\n  <b>Step 2:</b> Install Reporting Services, apply <a href=\"http://go.microsoft.com/fwlink/?LinkId=82758\">SQL Server 2005 Service Pack 2</a>, and apply updates listed under <b>Microsoft SQL Server</b> in <a href=\" http://go.microsoft.com/fwlink/?LinkID=125468&clcid=0x409\">Microsoft Security Bulletin MS08-052</a>.<br/><br/>\n  <b>Step 3:</b> Configure Reporting Services.<br/><br/>\n  <b>Step 4:</b> Download the Reporting Services Add-in by clicking the SharePointRS.msi link later on this page. To start the installation immediately, click <b>Run</b>. To install at a later time, click <b>Save</b>.<br/><br/>\n  <b>Step 5:</b> Install the Reporting Services Add-in and configure the Report Server on the SharePoint technology instance.<br/><br/>\n  <b>Step 6:</b> Set permissions and add Reporting Services content types.<br/><br/>\n  <b>Step 7:</b> Verify the installation.\n</ul><br/>",
+    "additionalInformationSection": "<ul>\n  <li>If you have questions about the Reporting Services Add-in, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=82743\">SQL Server Reporting Services Forum on MSDN</a>.</li><br/><br/>\n  <li>Help improve the Reporting Services Add-in by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=42457"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=51634"
+        },
+        {
+            "title": "home page for Microsoft SQL Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=14968"
+        },
+        {
+            "title": "looking for new downloads? Sign up to be notified.",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=74520"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1848",
+    "downloadPreload": true
+}

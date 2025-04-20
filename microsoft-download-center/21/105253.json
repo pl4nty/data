@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "ASL Citizen",
+    "downloadDescription": "ASL Citizen: A Community-Sourced Dataset for Advancing Isolated Sign Language Recognition",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Demographics.zip",
+            "url": "https://download.microsoft.com/download/b/8/8/b88c0bae-e6c1-43e1-8726-98cf5af36ca4/Demographics.zip",
+            "size": "5077",
+            "version": "Version 1.0",
+            "datePublished": "10/15/2024 10:25:42 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ASL_Citizen.zip",
+            "url": "https://download.microsoft.com/download/b/8/8/b88c0bae-e6c1-43e1-8726-98cf5af36ca4/ASL_Citizen.zip",
+            "size": "45924134223",
+            "version": "Version 1.0",
+            "datePublished": "10/15/2024 10:25:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For details about the dataset, the associated license, and accompanying research results, please see the ASL Citizen project page at https://www.microsoft.com/en-us/research/project/asl-citizen/.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Version 1.0",
+    "detailsSection_file_name": [
+        "Demographics.zip",
+        "ASL_Citizen.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.0 KB",
+        "42.8 GB"
+    ],
+    "detailsSection_file_date": "10/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105253",
+    "downloadPreload": true
+}

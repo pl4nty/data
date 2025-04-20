@@ -1,0 +1,463 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office ScreenTip Language 2013",
+    "downloadDescription": "Use ScreenTip translations to show the text of display elements \u2013 such as buttons, menus and dialog boxes \u2013 in another language.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "screentiplanguage_mn-mn_64bit.exe",
+            "url": "https://download.microsoft.com/download/b/e/9/be940000-9eaa-423b-b66a-ec5865bef764/screentiplanguage_mn-mn_64bit.exe",
+            "size": "1504592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "screentiplanguage_mn-mn_32bit.exe",
+            "url": "https://download.microsoft.com/download/b/e/9/be940000-9eaa-423b-b66a-ec5865bef764/screentiplanguage_mn-mn_32bit.exe",
+            "size": "1493704",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "screentiplanguage_en-us_64bit.exe",
+            "url": "https://download.microsoft.com/download/b/e/9/be940000-9eaa-423b-b66a-ec5865bef764/screentiplanguage_en-us_64bit.exe",
+            "size": "1657144",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:45 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "screentiplanguage_en-us_32bit.exe",
+            "url": "https://download.microsoft.com/download/b/e/9/be940000-9eaa-423b-b66a-ec5865bef764/screentiplanguage_en-us_32bit.exe",
+            "size": "1644016",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "mt-mt",
+            "name": "Maltese"
+        },
+        {
+            "cultureCode": "ur-pk",
+            "name": "Urdu - Pakistan"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "kn-in",
+            "name": "Kannada"
+        },
+        {
+            "cultureCode": "ky-kg",
+            "name": "Kyrgyz"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ha-latn-ng",
+            "name": "Hausa"
+        },
+        {
+            "cultureCode": "tk-tm",
+            "name": "Turkmen (Latin) - Turkmenistan"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "fil-ph",
+            "name": "Filipino"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        },
+        {
+            "cultureCode": "mi-nz",
+            "name": "M\u0101ori"
+        },
+        {
+            "cultureCode": "si-lk",
+            "name": "Sinhala"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "ml-in",
+            "name": "Malayalam"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "hy-am",
+            "name": "Armenian"
+        },
+        {
+            "cultureCode": "tn-za",
+            "name": "Setswana (South Africa)"
+        },
+        {
+            "cultureCode": "km-kh",
+            "name": "Khmer"
+        },
+        {
+            "cultureCode": "xv-es",
+            "name": "Valencian - Spain"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "rw-rw",
+            "name": "Kinyarwanda"
+        },
+        {
+            "cultureCode": "bn-bd",
+            "name": "Bangla (Bangledsh) - Bangladesh"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "ta-in",
+            "name": "Tamil"
+        },
+        {
+            "cultureCode": "bn-in",
+            "name": "Bengali (India)"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "sq-al",
+            "name": "Albanian"
+        },
+        {
+            "cultureCode": "ti-et",
+            "name": "Tigrinya - Ethiopia"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ka-ge",
+            "name": "Georgian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "tt-ru",
+            "name": "Tatar"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "gu-in",
+            "name": "Gujarati"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ig-ng",
+            "name": "Igbo"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "mn-cyrl-mn",
+            "name": "Mongolian (Cyrillic) - Mongolia"
+        },
+        {
+            "cultureCode": "uz-latn-uz",
+            "name": "Uzbek (Latin)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pa-in",
+            "name": "Punjabi"
+        },
+        {
+            "cultureCode": "zu-za",
+            "name": "isiZulu"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "quz-pe",
+            "name": "Quechua (Peru)"
+        },
+        {
+            "cultureCode": "nso-za",
+            "name": "Sesotho sa Leboa"
+        },
+        {
+            "cultureCode": "xh-za",
+            "name": "isiXhosa"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "as-in",
+            "name": "Assamese"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "tg-cyrl-tj",
+            "name": "Tajik - Tajikistan"
+        },
+        {
+            "cultureCode": "gd-gb",
+            "name": "Scottish Gaelic - United Kingdom"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "lb-lu",
+            "name": "Luxembourgish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sw-ke",
+            "name": "Kiswahili"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "mr-in",
+            "name": "Marathi"
+        },
+        {
+            "cultureCode": "be-by",
+            "name": "Belarusian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "prs-af",
+            "name": "Dari"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "yo-ng",
+            "name": "Yoruba"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "kok-in",
+            "name": "Konkani"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "am-et",
+            "name": "Amharic"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        }
+    ],
+    "detailsSection": "Change the ScreenTip language to show translations of display elements \u2013 such as buttons, menus and dialog boxes \u2013 in another language and help users navigate Microsoft Office applications installed in a language they do not understand.\n<br />\n<br />\n<br />\n<b>Some usage scenario examples are:</b>\n<ul>\n<li>Bi-lingual and multi-lingual language assistance </li>\n<li>Help Engineers can extend support for languages they do not understand</li>\n<li>Users that temporarily use Office in a foreign language or for a temporary period of time (Roaming users)</li>\n<li>Shared PC language usage </li>\n</ul>\r\n<br/>\r\n<b>Additional Languages</b>\r\n<ul>\r\n<li><a href=\"http://download.microsoft.com/download/8/8/9/889E072F-74AA-4AEB-9FB7-3BA59282D521/screentiplanguage_mn-mn_32bit.exe\">Mongolian (Cyrillic) - Mongolia 32Bit</a></li>\r\n<li><a href=\"http://download.microsoft.com/download/8/8/9/889E072F-74AA-4AEB-9FB7-3BA59282D521/screentiplanguage_mn-mn_64bit.exe\">Mongolian (Cyrillic) - Mongolia 64Bit</a></li>\r\n<li><a href=\"http://download.microsoft.com/download/C/A/B/CABB537E-A522-4DA2-A2E4-A1BB04D2F7E5/screentiplanguage_tk-tm_32bit.exe\">Turkmen (Latin) - Turkmenistan 32Bit</a></li>\r\n<li><a href=\"http://download.microsoft.com/download/C/A/B/CABB537E-A522-4DA2-A2E4-A1BB04D2F7E5/screentiplanguage_tk-tm_64bit.exe\">Turkmen (Latin) - Turkmenistan 64Bit</a></li>\r\n<li><a href=\"http://download.microsoft.com/download/2/5/8/258EE79D-796E-4380-9F77-E9789AE1DBFB/screentiplanguage_ur-pk_32bit.exe\">Urdu - Pakistan 32Bit</a></li>\r\n<li><a href=\"http://download.microsoft.com/download/2/5/8/258EE79D-796E-4380-9F77-E9789AE1DBFB/screentiplanguage_ur-pk_64bit.exe\">Urdu - Pakistan 64Bit</a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "screentiplanguage_mn-mn_64bit.exe",
+        "screentiplanguage_mn-mn_32bit.exe",
+        "screentiplanguage_en-us_64bit.exe",
+        "screentiplanguage_en-us_32bit.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.4 MB",
+        "1.6 MB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> <li> <b> Supported Microsoft Office Applications:</b> </li> </ul> \n<ul> <ul> Microsoft Office Word 2013, Microsoft Office Excel 2013, Microsoft Office Outlook 2013, Microsoft Office PowerPoint 2013, Microsoft Office OneNote 2013, Microsoft Office Visio 2013, Microsoft Office Publisher 2013 </ul> </ul>\n<ul> <li> <b> Software required: </b> </li> </ul> \n<ul> <ul> East Asian and Complex Script languages may require support files to be installed. This can be done through the Control Panel in \u2018Regional and Language Options\u2019. </ul> </ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8 Release Preview"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Click the <b>Download</b> button on this page to start.</li>\n<li>Do one of the following:</li>\n<ul>\n<li>To start the installation immediately, click <b>Run</b>.</li>\n<li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li> \n<li>To cancel the installation, click <b>Cancel</b>.</li>\n</ul>\n</ol>\n<br />\n<b>To turn off or change the ScreenTip Language:</b>\n<ol>\n<li>Click on the Office File button, select Options, select Language and set ScreenTip Language to 'Match Display Language'. </li>\n</ol>\n<br />\n<b>To remove this download:</b>\n<ol>\n<li>From the <b>Start</b> menu, go to <b>Control Panel</b>. </li>\n<li>Double-click <b>Add/Remove Programs</b>. </li>\n<li>In the list of currently installed programs, select <b>Microsoft Office ScreenTip Language</b>, and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\n</ol>",
+    "additionalInformationSection": "<a href=\"http://download.microsoft.com/download/8/8/9/889E072F-74AA-4AEB-9FB7-3BA59282D521/screentiplanguage_mn-mn_32bit.exe\">Mongolian (Cyrillic) - Mongolia 32Bit</a>\r\n<a href=\"http://download.microsoft.com/download/8/8/9/889E072F-74AA-4AEB-9FB7-3BA59282D521/screentiplanguage_mn-mn_64bit.exe\">Mongolian (Cyrillic) - Mongolia 64Bit</a>\r\n<a href=\"http://download.microsoft.com/download/C/A/B/CABB537E-A522-4DA2-A2E4-A1BB04D2F7E5/screentiplanguage_tk-tm_32bit.exe\">Turkmen (Latin) - Turkmenistan 32Bit</a>\r\n<a href=\"http://download.microsoft.com/download/C/A/B/CABB537E-A522-4DA2-A2E4-A1BB04D2F7E5/screentiplanguage_tk-tm_64bit.exe\">Turkmen (Latin) - Turkmenistan 64Bit</a>\r\n<a href=\"http://download.microsoft.com/download/2/5/8/258EE79D-796E-4380-9F77-E9789AE1DBFB/screentiplanguage_ur-pk_32bit.exe\">Urdu - Pakistan 32Bit</a>\r\n<a href=\"http://download.microsoft.com/download/2/5/8/258EE79D-796E-4380-9F77-E9789AE1DBFB/screentiplanguage_ur-pk_64bit.exe\">Urdu - Pakistan 64Bit</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30397",
+    "downloadPreload": true
+}

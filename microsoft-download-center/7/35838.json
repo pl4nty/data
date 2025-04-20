@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Application Request Routing Version 3 beta for IIS 8",
+    "downloadDescription": "Microsoft Application Request Routing (ARR) for IIS8 is a proxy based routing module that forwards HTTP requests to application servers based on HTTP headers and server variables, and load balance algorithms.   ARR Version 3 adds support for WebSockets.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "requestRouter_x86.msi",
+            "url": "https://download.microsoft.com/download/5/5/4/554fbb3e-a572-4642-a97c-5c01ee889254/requestRouter_x86.msi",
+            "size": "1716224",
+            "version": "V3 Beta",
+            "datePublished": "7/15/2024 3:30:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Application Request Routing v3 BETA 10-23-2012.rtf",
+            "url": "https://download.microsoft.com/download/5/5/4/554fbb3e-a572-4642-a97c-5c01ee889254/Application Request Routing v3 BETA 10-23-2012.rtf",
+            "size": "173061",
+            "version": "V3 Beta",
+            "datePublished": "7/15/2024 3:30:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "requestRouter_x64.msi",
+            "url": "https://download.microsoft.com/download/5/5/4/554fbb3e-a572-4642-a97c-5c01ee889254/requestRouter_x64.msi",
+            "size": "2043904",
+            "version": "V3 Beta",
+            "datePublished": "7/15/2024 3:30:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Application Request Routing (ARR) for IIS 8 is a proxy-based routing module that forwards HTTP requests to application servers based on HTTP headers, server variables, and load balance algorithms.\r\n\r\nARR Version 3 is an incremental release that includes all of the features from Version 2,&nbsp;and adds support for WebSockets. \r\n&lt;br /&gt;&lt;br /&gt;ARR Version 3 includes the following key features:\r\n\r\n&lt;UL&gt;\r\n&lt;LI&gt;WebSocket Support : ARRv3 supports proxying and load balancing of Websocket connections.\r\n\r\n&lt;LI&gt;Retries for URL health check : It supports multiple retries of URL health check before marking server unhealthy.&lt;/LI&gt;\r\n\r\nThe ARR version 2 and ARR version 3 cannot be installed&nbsp;side-by-side.\r\n\r\nMore details can be found on www.iis.net \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V3 Beta",
+    "detailsSection_file_name": [
+        "requestRouter_x86.msi",
+        "Application Request Routing v3 BETA 10-23-2012.rtf",
+        "requestRouter_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "169.0 KB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Internet Information Services 8.0 must be installed</li>\r\n<li>WebSockets module must be enabled</li>\r\n<br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please follow How to install ARR without WebPI blog (http://blogs.iis.net/wonyoo/archive/2011/04/20/how-to-install-application-request-routing-arr-2-5-without-web-platform-installer-webpi.aspx) for installation instructions.\r\nOnce ARR2.5 is installed, download and install ARRv3.0 beta to upgrade from ARRv2.5 to ARRv3.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35838",
+    "downloadPreload": true
+}

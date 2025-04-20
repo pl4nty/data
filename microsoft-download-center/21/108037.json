@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Test replace multiple files",
+    "downloadDescription": "Test replace multiple files",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "R.jpg",
+            "url": "https://download.microsoft.com/download/83f3f8ac-4fb3-4525-8c73-6fb55e8eed30/TestingMultiReplaceFile.jpg",
+            "size": "121012",
+            "version": "232",
+            "datePublished": "3/17/2025 3:50:15 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        }
+    ],
+    "detailsSection": "Test replace multiple files",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "232",
+    "detailsSection_file_name": [
+        "R.jpg"
+    ],
+    "detailsSection_file_size": [
+        "118.2 KB"
+    ],
+    "detailsSection_file_date": "3/17/2025",
+    "systemRequirementsSection": "Test replace multiple files",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Apple Mac OS X v. 10.4 Tiger",
+        "Apple Mac OS X v. 10.5 Leopard"
+    ],
+    "installInstructionSection": "Test replace multiple files",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108037",
+    "downloadPreload": true
+}

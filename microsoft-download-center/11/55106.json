@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Linux Integration Services v4.3 for Hyper-V and Azure",
+    "downloadDescription": "A set of drivers that enable synthetic device support in supported Linux virtual machines under Hyper-V. See the Details section of this page for a link to more information about the latest Linux Integration Services (LIS) availability and supported distributions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "lis-rpms-4.3.5.x86_64.tar.gz",
+            "url": "https://download.microsoft.com/download/6/8/f/68fe11b8-faa4-4f8d-8c7d-74da7f2cfc8c/lis-rpms-4.3.5.x86_64.tar.gz",
+            "size": "118664294",
+            "version": "4.3.5",
+            "datePublished": "7/15/2024 3:07:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "lis-rpms-4.3.5.i686.tar.gz",
+            "url": "https://download.microsoft.com/download/6/8/f/68fe11b8-faa4-4f8d-8c7d-74da7f2cfc8c/lis-rpms-4.3.5.i686.tar.gz",
+            "size": "55429064",
+            "version": "4.3.5",
+            "datePublished": "7/15/2024 3:07:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LinuxIC-4.3.5.x86_64.iso",
+            "url": "https://download.microsoft.com/download/6/8/f/68fe11b8-faa4-4f8d-8c7d-74da7f2cfc8c/LinuxIC-4.3.5.x86_64.iso",
+            "size": "120279040",
+            "version": "4.3.5",
+            "datePublished": "7/15/2024 3:07:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LinuxIC-4.3.5.i686.iso",
+            "url": "https://download.microsoft.com/download/6/8/f/68fe11b8-faa4-4f8d-8c7d-74da7f2cfc8c/LinuxIC-4.3.5.i686.iso",
+            "size": "56932352",
+            "version": "4.3.5",
+            "datePublished": "7/15/2024 3:07:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Linux Integration Services v4-3-5.pdf",
+            "url": "https://download.microsoft.com/download/6/8/f/68fe11b8-faa4-4f8d-8c7d-74da7f2cfc8c/Linux Integration Services v4-3-5.pdf",
+            "size": "371997",
+            "version": "4.3.5",
+            "datePublished": "7/15/2024 3:07:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Current version: 4.3.5<br></br>\r\n\r\nPlease refer to the <a href=\"http://technet.microsoft.com/library/dn531030.aspx\">Linux Virtual Machines on Hyper-V</a> topics for up to date information on the Linux Integration Services feature set, availability, and download locations.<br></br>\r\n\r\nNew with Linux Integration Services 4.3 and newer:<br></br>\r\n\r\n* SRIOV (Accelerated Networking) support for Red Hat Enterprise Linux, CentOS, and Oracle Linux with the Red Hat Compatible Kernel versions 6.7-6.10 (64-bit only)\r\n\r\nNew with Linux Integration Services 4.3.4 and newer:\r\n\r\n* 64-bit and 32-bit RPMs have been separated into different tar files and ISOs. Please refer to the release notes for more information.\r\n\r\nLIS is applicable to Red Hat Enterprise Linux, CentOS, and the Oracle Linux Red Hat Compatible Kernel 5.2-5.11, 6.0-6.10, and 7.0-7.7",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.5",
+    "detailsSection_file_name": [
+        "lis-rpms-4.3.5.x86_64.tar.gz",
+        "lis-rpms-4.3.5.i686.tar.gz",
+        "LinuxIC-4.3.5.x86_64.iso",
+        "LinuxIC-4.3.5.i686.iso",
+        "Linux Integration Services v4-3-5.pdf"
+    ],
+    "detailsSection_file_size": [
+        "113.2 MB",
+        "52.9 MB",
+        "114.7 MB",
+        "54.3 MB",
+        "363.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Hyper-V Operating Systems:<br></br>\r\nMicrosoft Hyper-V Server 2008 R2, 2012, 2012 R2, 2016, and 2019<br></br>\r\nWindows Server 2008 R2, 2012, 2012 R2, 2016, and 2019<br></br>\r\nWindows 8 Pro, 8.1 Pro, and 10<br></br>\r\nMicrosoft Azure",
+    "systemRequirementsSection_supportedOS": [
+        "Red Hat",
+        "Linux"
+    ],
+    "installInstructionSection": "Refer to the PDF file for installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55106",
+    "downloadPreload": true
+}

@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Team Foundation Server 2013 with Update 4",
+    "downloadDescription": "Visual Studio Team Foundation Server 2013 is the source-code-control, project-management, and team-collaboration platform at the core of the Microsoft suite of Application Lifecycle Management (ALM) tools, which help teams be more agile, collaborate more effectively, and deliver quality software more consistently.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vs2013.4_tfs_enu.iso",
+            "url": "https://download.microsoft.com/download/3/1/1/31149d54-ce97-4403-99e2-ebbeb790b718/vs2013.4_tfs_enu.iso",
+            "size": "2640107520",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tfs_server.exe",
+            "url": "https://download.microsoft.com/download/3/1/1/31149d54-ce97-4403-99e2-ebbeb790b718/tfs_server.exe",
+            "size": "827200",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:22:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This download is a trial version. You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate product key.\r\n<br/>\r\n<br/>\r\nThis download of Visual Studio Team Foundation Server 2013.4 contains the latest updates. These cumulative updates to Visual Studio 2013 include a variety of bug fixes and capability improvements. For information about the latest update, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=272487\">Visual Studio Updates</a> and the <a href=\"http://go.microsoft.com/fwlink/?LinkId=510328\">Visual Studio Update KB Article</a>.\n<br/>\n<br/>\nVisual Studio Team Foundation Server 2013 provides the collaboration hub at the center of the Application Lifecycle Management (ALM) solution. By automating the software delivery process, entire teams can collaborate across roles and track team actions and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. Team Foundation Server 2013 enables team rooms, comprehensive reporting, and dashboards that provide historical trending, full traceability, and real-time visibility into software quality.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "vs2013.4_tfs_enu.iso",
+        "tfs_server.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.5 GB",
+        "807.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed System Requirements see <a href=\"http://go.microsoft.com/fwlink/?LinkId=393282\">System Requirements for Team Foundation Server</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Choose one of these installation options:\n<ul>\n<li>Install over the Internet:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To download an installer that you can run later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n</ul>\n</ul>\n<li>To download an image to burn on a DVD:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .iso option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>Choose the <b>Save</b> button to download a DVD5 ISO image so that you can burn a DVD later.</li>\n<ul>\n<li>After downloading the ISO file, you should use the <a href=\"http://support.microsoft.com/kb/841290\">File Checksum Integrity Verifier</a> tool to calculate and verify that the SHA-1 value for this file matches the value listed on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=517393\">Visual Studio 2013 ISO Files SHA-1 Values</a> page.</li> \n</ul>\n</ul>\n</ul>\n</ul>\nWhen the installation is complete, visit the <a href=\"http://msdn.microsoft.com/library/vstudio/dd631902(v=vs.120).aspx\">MSDN Library</a> for guidance about how to configure or upgrade Team Foundation Server.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        },
+        {
+            "title": "visual Studio Team Foundation Server Express 2013",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=510320"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44911",
+    "downloadPreload": true
+}

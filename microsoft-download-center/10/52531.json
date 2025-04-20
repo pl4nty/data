@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Asia Chinese Word-Segmentation Data Set",
+    "downloadDescription": "A set of manually annotated Chinese word-segmentation data and specifications for training and testing a Chinese word-segmentation system for research purposes. Last published: August 16, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msra-chinese-word-segmentation-data-v1.zip",
+            "url": "https://download.microsoft.com/download/1/a/7/1a7000b0-bc7f-4e6a-bfae-f92e51af2971/msra-chinese-word-segmentation-data-v1.zip",
+            "size": "4585552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A set of manually annotated Chinese word-segmentation data and specifications for training and testing a Chinese word-segmentation system for research purposes. The data was extracted from the People's Daily, which we have licensed for commercial usage, and the annotation was done by the Natural Language Computing group within Microsoft Research Asia.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "msra-chinese-word-segmentation-data-v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52531",
+    "downloadPreload": true
+}

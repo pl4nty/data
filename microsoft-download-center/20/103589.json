@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "LatestComponents_2110Canary3",
+    "downloadDescription": "LatestComponents_2110Canary3",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LatestComponents.json",
+            "url": "https://download.microsoft.com/download/a/6/9/a6906dcb-2785-4665-b7e0-2f5d7f9f9e30/LatestComponents.json",
+            "size": "3212",
+            "version": "2110Canary3",
+            "datePublished": "5/15/2024 5:06:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "LatestComponents_2110Canary3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2110Canary3",
+    "detailsSection_file_name": [
+        "LatestComponents.json"
+    ],
+    "detailsSection_file_size": [
+        "3.1 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Rcm components DLC link upload to DLC with hash.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103589",
+    "downloadPreload": true
+}

@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2016 CU7",
+    "downloadDescription": "Microsoft BizTalk Server 2016 CU7",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4528776-DEU.exe",
+            "url": "https://download.microsoft.com/download/1/2/c/12c2dfe1-3763-4820-bf23-1ff54a9db77e/BTS2016-KB4528776-DEU.exe",
+            "size": "23836528",
+            "version": "3.12.859.2",
+            "datePublished": "7/15/2024 4:21:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4528776-ESP.exe",
+            "url": "https://download.microsoft.com/download/1/2/c/12c2dfe1-3763-4820-bf23-1ff54a9db77e/BTS2016-KB4528776-ESP.exe",
+            "size": "23801200",
+            "version": "3.12.859.2",
+            "datePublished": "7/15/2024 4:21:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BTS2016-KB4528776-FRA.exe",
+            "url": "https://download.microsoft.com/download/1/2/c/12c2dfe1-3763-4820-bf23-1ff54a9db77e/BTS2016-KB4528776-FRA.exe",
+            "size": "23845744",
+            "version": "3.12.859.2",
+            "datePublished": "7/15/2024 4:21:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "BTS2016-KB4528776-ENU.exe",
+            "url": "https://download.microsoft.com/download/1/2/c/12c2dfe1-3763-4820-bf23-1ff54a9db77e/BTS2016-KB4528776-ENU.exe",
+            "size": "22037360",
+            "version": "3.12.859.2",
+            "datePublished": "7/15/2024 4:21:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2016 CU7",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.12.859.2",
+    "detailsSection_file_name": [
+        "BTS2016-KB4528776-DEU.exe",
+        "BTS2016-KB4528776-ESP.exe",
+        "BTS2016-KB4528776-FRA.exe",
+        "BTS2016-KB4528776-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.7 MB",
+        "22.7 MB",
+        "22.7 MB",
+        "21.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2016 or 2013 \r\n.NET Framework 4.6\r\nVisual Studio 2015 \r\nSQL Server 2016 or SQL Server 2014 SP1 \r\nSharePoint 2016 or SharePoint 2013 SP1 \r\nMicrosoft BizTalk Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100845",
+    "downloadPreload": true
+}

@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Configure an Integrated Exchange, Lync, and SharePoint Test Lab",
+    "downloadDescription": "Step-by-step instructions to create a test lab containing integrated servers running Exchange Server 2013, Lync Server 2013, and SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-spel-integrated.docx",
+            "url": "https://download.microsoft.com/download/3/1/5/3154fc1f-ff17-4b16-b6b5-440152772269/tlg-spel-integrated.docx",
+            "size": "167753",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:35:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-spel-integrated.pdf",
+            "url": "https://download.microsoft.com/download/3/1/5/3154fc1f-ff17-4b16-b6b5-440152772269/tlg-spel-integrated.pdf",
+            "size": "697542",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:35:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper contains step-by-step instructions to create a test lab containing integrated servers running Exchange Server 2013, Lync Server 2013, and SharePoint Server 2013.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "tlg-spel-integrated.docx",
+        "tlg-spel-integrated.pdf"
+    ],
+    "detailsSection_file_size": [
+        "163.8 KB",
+        "681.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39616",
+    "downloadPreload": true
+}

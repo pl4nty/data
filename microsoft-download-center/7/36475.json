@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Files for Updatable Help for Windows PowerShell module Microsoft.PowerShell.Host",
+    "downloadDescription": "This download contains the files Update-Help needs in a network that is not connected to the Internet. They are the same files that Save-Help downloads.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.Powershell.Host_56d66100-99a0-4ffc-a12d-eee9a6718aef_HelpInfo.xml",
+            "url": "https://download.microsoft.com/download/8/1/c/81cb1124-1bd0-445a-9c10-580524897a88/Microsoft.Powershell.Host_56d66100-99a0-4ffc-a12d-eee9a6718aef_HelpInfo.xml",
+            "size": "391",
+            "version": "October 2012",
+            "datePublished": "7/15/2024 3:33:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.Powershell.Host_56d66100-99a0-4ffc-a12d-eee9a6718aef_en-us_HelpContent.cab",
+            "url": "https://download.microsoft.com/download/8/1/c/81cb1124-1bd0-445a-9c10-580524897a88/Microsoft.Powershell.Host_56d66100-99a0-4ffc-a12d-eee9a6718aef_en-us_HelpContent.cab",
+            "size": "8366",
+            "version": "October 2012",
+            "datePublished": "7/15/2024 3:33:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When a computer cannot directly access the Internet, you can use the SourcePath parameter of Update-Help to get the updated help files from a file system location, such as a shared folder, and install them on the computer. Normally, you would populate the shared folder by running the Save-Help cmdlet from a computer that both has access to the Internet, and has the required feature or server role installed.  \r\n\r\nHowever, in some environments with strict network restrictions, finding a computer that meets both requirements can be difficult. As an alternative, you can download the Help files manually, and copy them to an shared folder on your network, or a local folder that the restricted computers can access.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "October 2012",
+    "detailsSection_file_name": [
+        "Microsoft.Powershell.Host_56d66100-99a0-4ffc-a12d-eee9a6718aef_HelpInfo.xml",
+        "Microsoft.Powershell.Host_56d66100-99a0-4ffc-a12d-eee9a6718aef_en-us_HelpContent.cab"
+    ],
+    "detailsSection_file_size": [
+        "391 bytes",
+        "8.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This procedure requires: \r\n(1) a computer that can access the Internet and download the Help files from the Microsoft Download Center, and \r\n(2) a means of copying the files to a shared folder on the isolated network containing the computers on which you want to install the Windows PowerShell Help files.\r\n\r\nDo not rename the files you download. The files must remain named as they are on this page in order for Update-Help to find them.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "If you can run the Save-Help cmdlet on a computer connected to the Internet to get the Help files, then do not use this manual procedure. This procedure should be used only when you cannot run the Save-Help cmdlet.\r\n1.      Download these files and copy them to a shared folder that the computers on which you want to install the Help can access.  If you have a folder in which you have already stored the output of the Save-Help cmdlet, you can copy these files to that folder. \r\n2.      On the computers on which you want to install Help, run the command Update-Help -SourcePath foldername, where foldername is the path to the shared folder to which you copied the Help files in step 1\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "understanding and Using Updatable PowerShell Help",
+            "url": "http://blogs.technet.com/b/heyscriptingguy/archive/2012/08/31/understanding-and-using-updatable-powershell-help.aspx"
+        },
+        {
+            "title": "windows PowerShell Support for Windows Server 2012",
+            "url": "http://technet.microsoft.com/library/hh801904.aspx"
+        },
+        {
+            "title": "about_Updatable_Help",
+            "url": "http://technet.microsoft.com/library/hh847735.aspx"
+        },
+        {
+            "title": "windows Management Framework 3.0",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=34595"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36475",
+    "downloadPreload": true
+}

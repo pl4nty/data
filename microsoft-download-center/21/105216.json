@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test doc",
+    "downloadDescription": "test",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "test.txt",
+            "url": "https://download.microsoft.com/download/1/f/6/1f6f8c9b-4f5b-432b-a09b-d6640d431e56/test.txt",
+            "size": "4",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:58:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "See more information on privacy statement (<a href = \"https://go.microsoft.com/fwlink/?linkid=521839\">here</a>)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "test.txt"
+    ],
+    "detailsSection_file_size": [
+        "4 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "test",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Dummy doc for testing.\r\n\r\nBy downloading and installing this application you agree to the <a href = \"https://go.microsoft.com/fwlink/?linkid=2234557\"> Terms and Conditions</a>, <a href = \"https://go.microsoft.com/fwlink/?linkid=2234558\">Preview Supplemental Terms</a> and <a href = \"https://go.microsoft.com/fwlink/?linkid=521839\">Privacy statement</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105216",
+    "downloadPreload": true
+}

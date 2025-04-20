@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Developer Analytics Tools for Visual Studio, v7.0.2",
+    "downloadDescription": "Developer Analytics Tools for Visual Studio add-in, v7.0.2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VSWinExpress.msi",
+            "url": "https://download.microsoft.com/download/8/1/7/81722309-caf1-44a4-9d79-1b007cc460db/AppInsights_VSWinExpress.msi",
+            "size": "6283264",
+            "version": "7.0.2",
+            "datePublished": "7/15/2024 4:12:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VWDExpress.msi",
+            "url": "https://download.microsoft.com/download/8/1/7/81722309-caf1-44a4-9d79-1b007cc460db/AppInsights_VWDExpress.msi",
+            "size": "6283264",
+            "version": "7.0.2",
+            "datePublished": "7/15/2024 4:12:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppInsights_VisualStudio.msi",
+            "url": "https://download.microsoft.com/download/8/1/7/81722309-caf1-44a4-9d79-1b007cc460db/AppInsights_VisualStudio.msi",
+            "size": "6283264",
+            "version": "7.0.2",
+            "datePublished": "7/15/2024 4:12:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Developer Analytics Tools v7.0.1 (formerly Application Insights Tools for Visual Studio) comes with the following improvements:\r\n\r\nSupport for adding Application Insights to ASP.NET Core RC2 projects from Visual Studio.\r\nDiagnostic Tools events for ASP.NET 5 RC1 and ASP.NET Core RC2 projects.\r\nAutomatic refreshes of Application Insights Search when detail filters, time ranges, and events are selected.\r\nGo to Code from requests in Search.\r\nImproved \u201cFind telemetry for this\u2026\u201d menu in Search.\r\nImproved HockeyApp sign-in experience.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.2",
+    "detailsSection_file_name": [
+        "AppInsights_VSWinExpress.msi",
+        "AppInsights_VWDExpress.msi",
+        "AppInsights_VisualStudio.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB",
+        "6.0 MB",
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See Visual Studio 2015",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This is installed via Visual Studio 2015 tools->Extensions and Update dialog. Customers should not need to download and install this directly",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52999",
+    "downloadPreload": true
+}

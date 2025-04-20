@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Intelligent Data Management Framework for Microsoft Dynamics AX: Installation and Administration Guides",
+    "downloadDescription": "These documents describe the system requirements and the steps to install, administer, and use the Intelligent Data Management Framework for Microsoft Dynamics AX.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Data_Management_Framework_Administration_Guide.pdf",
+            "url": "https://download.microsoft.com/download/0/e/0/0e0971c9-de3d-4252-bb0c-142edc70a607/Data_Management_Framework_Administration_Guide.pdf",
+            "size": "2069412",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Data_Management_Framework_Administration_Guide.xps",
+            "url": "https://download.microsoft.com/download/0/e/0/0e0971c9-de3d-4252-bb0c-142edc70a607/Data_Management_Framework_Administration_Guide.xps",
+            "size": "2588232",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Data_Management_Framework_Installation.xps",
+            "url": "https://download.microsoft.com/download/0/e/0/0e0971c9-de3d-4252-bb0c-142edc70a607/Data_Management_Framework_Installation.xps",
+            "size": "628621",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Data_Management_Framework_Installation.pdf",
+            "url": "https://download.microsoft.com/download/0/e/0/0e0971c9-de3d-4252-bb0c-142edc70a607/Data_Management_Framework_Installation.pdf",
+            "size": "525926",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Intelligent Data Management Framework for Microsoft Dynamics AX (Data Management Framework) enables system administrators to optimize the performance of Microsoft Dynamics AX installations. The framework assesses the health of the Microsoft Dynamics AX application, analyzes current usage patterns, and assists in reducing database size. These white papers are designed for database and system administrators who are responsible for administration and maintenance of the Microsoft Dynamics AX application and SQL Server database.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "Data_Management_Framework_Administration_Guide.pdf",
+        "Data_Management_Framework_Administration_Guide.xps",
+        "Data_Management_Framework_Installation.xps",
+        "Data_Management_Framework_Installation.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "2.5 MB",
+        "613.9 KB",
+        "513.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16111",
+    "downloadPreload": true
+}

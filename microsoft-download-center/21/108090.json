@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Test Download",
+    "downloadDescription": "Test Download",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DemoFile.txt",
+            "url": "https://download.microsoft.com/download/13710485-c091-4e0b-a26c-386289d95663/DemoFile.txt",
+            "size": "29",
+            "version": "1",
+            "datePublished": "3/27/2025 9:20:24 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test Download",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "DemoFile.txt"
+    ],
+    "detailsSection_file_size": [
+        "29 bytes"
+    ],
+    "detailsSection_file_date": "3/27/2025",
+    "systemRequirementsSection": "Test Download",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "Test Download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108090",
+    "downloadPreload": true
+}

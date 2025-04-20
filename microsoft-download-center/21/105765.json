@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 2020 Migration Tool",
+    "downloadDescription": "Host Integration Server 2020 Migration Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HisMigration.exe",
+            "url": "https://download.microsoft.com/download/9/f/1/9f1b6cf0-ddbb-40f0-ba9f-cd5b0f338b0b/HisMigration.exe",
+            "size": "4406712",
+            "version": "11.0.2213.0",
+            "datePublished": "7/15/2024 5:00:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Host Integration Server 2020 Migration Tool assists with migrating to Host Integration Server 2020 from earlier versions of Host Integration Server as well as assisting with migrating the configuration from an existing Host Integration Server 2020 installation to another server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2213.0",
+    "detailsSection_file_name": [
+        "HisMigration.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This release requires the following version of the Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.8</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105765",
+    "downloadPreload": true
+}

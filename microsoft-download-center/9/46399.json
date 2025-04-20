@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded 8.1 Industry (KB3036202)",
+    "downloadDescription": "Resolves an issue that might occur with the eshell",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3036202-x86.msu",
+            "url": "https://download.microsoft.com/download/7/0/b/70b40996-2400-436f-a33e-7bbb825090a2/Windows8.1-KB3036202-x86.msu",
+            "size": "323991",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:50:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3036202-x64.msu",
+            "url": "https://download.microsoft.com/download/7/0/b/70b40996-2400-436f-a33e-7bbb825090a2/Windows8.1-KB3036202-x64.msu",
+            "size": "338632",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:50:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3036202-x64.cab",
+            "url": "https://download.microsoft.com/download/7/0/b/70b40996-2400-436f-a33e-7bbb825090a2/Windows8.1-KB3036202-x64.cab",
+            "size": "163699",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:50:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB3036202-x86.cab",
+            "url": "https://download.microsoft.com/download/7/0/b/70b40996-2400-436f-a33e-7bbb825090a2/Windows8.1-KB3036202-x86.cab",
+            "size": "149353",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:50:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This KB resolves a crash issue in eshell that would happen when running explorer.exe as the custom shell, it could crash with the error message\r\n<br />\r\n \"Shell Launcher has stopped working\".",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.1",
+    "detailsSection_file_name": [
+        "Windows8.1-KB3036202-x86.msu",
+        "Windows8.1-KB3036202-x64.msu",
+        "Windows8.1-KB3036202-x64.cab",
+        "Windows8.1-KB3036202-x86.cab"
+    ],
+    "detailsSection_file_size": [
+        "316.4 KB",
+        "330.7 KB",
+        "159.9 KB",
+        "145.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "-Windows Embedded 8.1 Industry Pro\r\n<br />\r\n-Windows Embedded 8.1 Industry Enterprise",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Industry 8.1"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>Windows Embedded 8.1 Industry</b> image: \r\n<br />\r\nA) Executing the appropriate msu file\r\n<br />\r\n<ul>\r\n<li>32bit Windows8.1-KB3036202-x86.msu</li>\r\n<li>64bit Windows8.1-KB3036202-x64.msu</li>\r\n</ul>\r\nOR\r\n<br />\r\nB) Installing the cab file via the command line with administrator privileges via.\r\n<br />\r\n\"DISM /online /add-package /packagepath:&ltLocation&gt\\&ltfilename.cab&gt\"\r\n<ul>\r\n<li>32bit Windows8.1-KB3036202-x86.cab</li>\r\n<li>64bit Windows8.1-KB3036202-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46399",
+    "downloadPreload": true
+}

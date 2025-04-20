@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "WindowsMT_9.42",
+    "downloadDescription": "WindowsMT_9.42",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.42.0.0_Windows_GA_08Apr2021_release.exe",
+            "url": "https://download.microsoft.com/download/8/2/4/824354d1-ea59-4563-ac26-8d0eaa885b58/Microsoft-ASR_UA_9.42.0.0_Windows_GA_08Apr2021_release.exe",
+            "size": "151858112",
+            "version": "9.42.0.0",
+            "datePublished": "12/15/2023 5:18:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WindowsMT_9.42",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.42.0.0",
+    "detailsSection_file_name": [
+        "Microsoft-ASR_UA_9.42.0.0_Windows_GA_08Apr2021_release.exe"
+    ],
+    "detailsSection_file_size": [
+        "144.8 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Double click on the installer and follow instuctions on the wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102927",
+    "downloadPreload": true
+}

@@ -1,0 +1,123 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX End-User Runtime Web Installer",
+    "downloadDescription": "The Microsoft DirectX\u00ae End-User Runtime installs a number of runtime libraries from the legacy DirectX SDK for some games that use D3DX9, D3DX10, D3DX11, XAudio 2.7, XInput 1.3, XACT, and/or Managed DirectX 1.1. Note that this package does not modify the DirectX Runtime installed on your Windows OS in any way.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "dxwebsetup.exe",
+            "url": "https://download.microsoft.com/download/1/7/1/1718ccc4-6315-4d8e-9543-8e28a4e18c4c/dxwebsetup.exe",
+            "size": "295320",
+            "version": "9.29.1974.1",
+            "datePublished": "7/15/2024 4:30:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft DirectX\u00ae is already included in Windows XP Service Pack 2, Windows Server 2003 Service Pack 1, Windows Vista, Windows 7, Windows 8.0, Windows 8.1, Windows 10, and Windows Server equivalents. This DirectX End-User Runtime does not change the version of DirectX, but does install a number of optional side-by-side technologies from the legacy DirectX SDK that are used by some older games. For a detailed explanation see <A HREF=\"https://aka.ms/dxsetup\">https://aka.ms/dxsetup</A>.\r\n<br></br>\r\nNote that Desktop Bridge applications that use D3DX9, D3DX10, D3DX11, XAudio 2.7, XInput 1.3, or XACT must use the <A HREF=\"https://aka.ms/directx_x86_appx\">Microsoft.DirectX.x86</A> / <A HREF=\"https://aka.ms/directx_x64_appx\">Microsoft.DirectX.x64</A> framework to deploy these legacy DirectX SDK side-by-side components. Alternatively, developers can remove all such dependencies. See <A HREF=\"https://docs.microsoft.com/en-us/windows/win32/directx-sdk--august-2009-\">Microsoft Docs</A> for more details.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.29.1974.1",
+    "detailsSection_file_name": [
+        "dxwebsetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "288.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP Service Pack 3",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows 7",
+        "Windows XP Service Pack 2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "<ul>\r\n\r\n<li>The DirectX end-user installation includes the D3DX, HLSL Compiler, XInput, XAudio, and Managed DirectX 1.1 \r\n\r\ncomponents.</li>\r\n\r\n<li>Note that the DirectX Runtime (Direct3D, DirectInput, DirectSound) is not part of this package as it is included as part \r\n\r\nof the Windows operating system, and therefore cannot be installed or uninstalled. Updating the DirectX Runtime is achieved \r\n\r\nby installing the latest Service Pack or obtaining a newer version of Windows.</li>\r\n\r\n<li>For information on obtaining DirectX 11 for Windows Vista or Windows Server 2008, see <a \r\n\r\nhref=\"http://go.microsoft.com/fwlink/?linkid=160189\">Microsoft Knowledge Base article 971644.</a></li>\r\n\r\n<li>The <a href=\"http://go.microsoft.com/fwlink/?linkid=56511&amp;clcid=0x409\">DirectX End-User Runtimes installer</a> \r\n\r\ncontains all of the components installed by the Web Installer in a single package and is recommended for those users that do \r\n\r\nnot have an Internet connection during installation.</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "where is the DirectX SDK?",
+            "url": "https://docs.microsoft.com/en-us/windows/win32/directx-sdk--august-2009-"
+        },
+        {
+            "title": "directX (June 2010) Runtime",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=194352"
+        },
+        {
+            "title": "directX Landing Page",
+            "url": "https://devblogs.microsoft.com/directx/landing-page/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35",
+    "downloadPreload": true
+}

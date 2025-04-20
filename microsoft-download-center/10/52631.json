@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Skype for Business Server 2015 Resource Kit Tools",
+    "downloadDescription": "Microsoft Skype for Business Server 2015 Resource Kit Tools are provided to help make some routine tasks easier for IT administrators who deploy and manage Skype for Business Server 2015. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OCSReskit.msi",
+            "url": "https://download.microsoft.com/download/4/6/9/469bfe52-9f8b-4398-8998-d3460619d2b2/OCSReskit.msi",
+            "size": "9551872",
+            "version": "9319.548",
+            "datePublished": "7/15/2024 4:30:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\n<br/><br/>\r\nThe Microsoft Skype for business Server 2015 Resource Kit Tools contain the following tools. The details of each tool and their usage are described in the accompanying documentation. \r\n<ul>\r\n<li>ABSConfig</li>\r\n<li>Audio Extractor</li>\r\n<li>Bandwidth Policy Service Monitor</li>\r\n<li>Bandwidth Utilization Analyzer</li>\r\n<li>Call Parkometer</li>\r\n<li>Cleanup Storage Service Data</li>\r\n<li>DBAnalyze</li>\r\n<li>Import Storage Service Data</li>\r\n<li>LCSSync </li>\r\n<li>Lookup User Console</li>\r\n<li>MsTurnPing</li>\r\n<li>Network Configuration Viewer</li>\r\n<li>Response Group Agent Live</li>\r\n<li>SEFAUtil</li>\r\n<li>Unassigned Number Announcements Migration</li>\r\n<li>Watson Support Tool for Lync Phone Edition</li>\r\n<li>Web Conf Data</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4488491",
+        "name": "KB4488491"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9319.548",
+    "detailsSection_file_name": [
+        "OCSReskit.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Installation and usage of the Reskit Tools are detailed in the accompanying documentation located here: <A HREF=\"http://go.microsoft.com/fwlink/p/?LinkId=285350\">http://go.microsoft.com/fwlink/p/?LinkId=285350</A>",
+    "relatedResourcesSection": [
+        {
+            "title": "documentation for Lync Server 2013 Resource Kit",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkId=285350"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52631",
+    "downloadPreload": true
+}

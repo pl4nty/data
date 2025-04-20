@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Posting Sales Tax Amounts for Intercompany Transactions",
+    "downloadDescription": "When you post an intercompany transaction, you can select which legal entity to post sales tax amounts to \u2013 the destination legal entity or the source legal entity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Posting sales tax amounts for intercompany transactions.pdf",
+            "url": "https://download.microsoft.com/download/7/3/8/7386078a-64ca-4558-8a53-14878ff64fd8/Posting sales tax amounts for intercompany transactions.pdf",
+            "size": "500562",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:34:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In Microsoft Dynamics AX, you can create intercompany transactions, which are transactions between legal entities of the same organization. Those transactions are posted to general ledger accounts that are consolidated, or combined, into accounts for a single, consolidated legal entity.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Posting sales tax amounts for intercompany transactions.pdf"
+    ],
+    "detailsSection_file_size": [
+        "488.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38803",
+    "downloadPreload": true
+}

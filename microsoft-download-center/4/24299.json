@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - YSlow! Steve Souders finds Website Bottlenecks",
+    "downloadDescription": "Carl and Richard talk to Steven Souders, creator of YSlow, an analysis tool for finding website bottlenecks on the client side of the equation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20081030SSouders.zip",
+            "url": "https://download.microsoft.com/download/5/e/0/5e05ef67-4ef9-4d6a-b4ec-3a32bef9cf3b/20081030SSouders.zip",
+            "size": "45808627",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Steve Souders works at Google on web performance and open source initiatives. His book High Performance Web Sites explains his best practices for performance along with the research and real-world results behind them. Steve is the creator of YSlow, the performance analysis extension to Firebug. Steve is co-chair of Velocity, the web performance and operations conference from O'Reilly, and co-founder of the Firebug Working Group. He teaches CS193H High Performance Web Sites at Stanford, and frequently speaks at conferences including OSCON, The Ajax Experience, SXSW, Rich Web Experience, Future of Web Apps, and Web 2.0 Expo.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20081030SSouders.zip"
+    ],
+    "detailsSection_file_size": [
+        "43.7 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24299",
+    "downloadPreload": true
+}

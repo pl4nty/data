@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV Developer Preview Software License Terms and Third Party Notices",
+    "downloadDescription": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "3PN - Dynamics NAV Developer Preview (December 2016).pdf",
+            "url": "https://download.microsoft.com/download/e/0/5/e05f7d08-c6af-48fa-b6ee-7a7a50ee1982/3PN - Dynamics NAV Developer Preview (December 2016).pdf",
+            "size": "441712",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:39:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLT - NAV 2017 Developer Preview VS Extension (December .2016).pdf",
+            "url": "https://download.microsoft.com/download/e/0/5/e05f7d08-c6af-48fa-b6ee-7a7a50ee1982/SLT - NAV 2017 Developer Preview VS Extension (December .2016).pdf",
+            "size": "256757",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:39:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLT - NAV 2017 Development Preview VHD (December 2016) .pdf",
+            "url": "https://download.microsoft.com/download/e/0/5/e05f7d08-c6af-48fa-b6ee-7a7a50ee1982/SLT - NAV 2017 Development Preview VHD (December 2016) .pdf",
+            "size": "257493",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:39:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "3PN - Dynamics NAV Developer Preview (December 2016).pdf",
+        "SLT - NAV 2017 Developer Preview VS Extension (December .2016).pdf",
+        "SLT - NAV 2017 Development Preview VHD (December 2016) .pdf"
+    ],
+    "detailsSection_file_size": [
+        "431.4 KB",
+        "250.7 KB",
+        "251.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54521",
+    "downloadPreload": true
+}

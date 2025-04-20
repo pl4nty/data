@@ -1,0 +1,162 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 CU4",
+    "downloadDescription": "Microsoft BizTalk Server 2013 CU4",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-JPN.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-JPN.exe",
+            "size": "19732504",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-ESP.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-ESP.exe",
+            "size": "19748376",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-CHT.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-CHT.exe",
+            "size": "19744272",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-ENU.exe",
+            "size": "18072600",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-DEU.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-DEU.exe",
+            "size": "19774488",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-FRA.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-FRA.exe",
+            "size": "19795992",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-KOR.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-KOR.exe",
+            "size": "19740696",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-CHS.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-CHS.exe",
+            "size": "19723800",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB3152055-ITA.exe",
+            "url": "https://download.microsoft.com/download/7/6/8/76862837-c16e-4998-80ea-8b130e8b9ccb/BizTalk2013-KB3152055-ITA.exe",
+            "size": "19761688",
+            "version": "3.10.350.2",
+            "datePublished": "7/15/2024 4:14:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 CU4. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.10.350.2",
+    "detailsSection_file_name": [
+        "BizTalk2013-KB3152055-JPN.exe",
+        "BizTalk2013-KB3152055-ESP.exe",
+        "BizTalk2013-KB3152055-CHT.exe",
+        "BizTalk2013-KB3152055-ENU.exe",
+        "BizTalk2013-KB3152055-DEU.exe",
+        "BizTalk2013-KB3152055-FRA.exe",
+        "BizTalk2013-KB3152055-KOR.exe",
+        "BizTalk2013-KB3152055-CHS.exe",
+        "BizTalk2013-KB3152055-ITA.exe"
+    ],
+    "detailsSection_file_size": [
+        "18.8 MB",
+        "18.8 MB",
+        "18.8 MB",
+        "17.2 MB",
+        "18.9 MB",
+        "18.9 MB",
+        "18.8 MB",
+        "18.8 MB",
+        "18.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n <li>Microsoft Office Excel 2010 or 2013</li>\r\n <li>Microsoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)</li>\r\n <li>Microsoft Visual Studio 2012</li>\r\n <li>SQL Server 2008 R2 or SQL Server 2012</li>\r\n <li>SharePoint 2013</li>\r\n <li>Microsoft BizTalk Server 2013</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51931",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Porting the .NET Micro Framework",
+    "downloadDescription": "Discusses issues related to porting the .NET Micro Framework to new hardware",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Porting_the_Micro_Framework.pdf",
+            "url": "https://download.microsoft.com/download/a/c/b/acbd926c-25fc-4831-8f5b-436baa0eaadb/Porting_the_Micro_Framework.pdf",
+            "size": "477881",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nThe .NET Micro Framework not only inherits the hardware independence of .NET, it ncludes two abstraction layers that further isolate applications from hardware details. This makes it straightforward for board makers, device makers, and developers of Windows SideShow-capable devices to port the .NET Micro Framework to new hardware platforms.<br />\n<br />\nThis white paper introduces the .NET Micro Framework architecture with a view toward porting it to a new hardware platform. It then discusses the essentials of the porting process, including the structure of the .NET Micro Framework Porting Kit, the required skill sets, estimates for resource commitments, and contact information for taking the next step.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Porting_the_Micro_Framework.pdf"
+    ],
+    "detailsSection_file_size": [
+        "466.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "If this document does not appear in your browser window, download it to your local disk and open it using Adobe Reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14640",
+    "downloadPreload": true
+}

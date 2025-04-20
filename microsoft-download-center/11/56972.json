@@ -1,0 +1,250 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Outlook, version 9.0 (Outlook client) ",
+    "downloadDescription": "Download Dynamics 365 for Outlook, version 9.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CRM9.0-Client-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/f/4/a/f4a544bc-b91a-40db-974e-c5d0fe6ec2ba/CRM9.0-Client-ENU-amd64.exe",
+            "size": "235292968",
+            "version": "9.00.0002.0426",
+            "datePublished": "7/15/2024 4:54:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Client-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/f/4/a/f4a544bc-b91a-40db-974e-c5d0fe6ec2ba/CRM9.0-Client-ENU-i386.exe",
+            "size": "188340616",
+            "version": "9.00.0002.0426",
+            "datePublished": "7/15/2024 4:54:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Effective March 2020, the legacy Dynamics 365 for Outlook (also referred to as Outlook COM Add-in) is deprecated. Customers must transition to the modern <a href=\"https://docs.microsoft.com/dynamics365/outlook-app/overview\">Dynamics 365 App for Outlook</a> before October 1, 2020. Microsoft will continue to provide support, security, and other critical updates to the Outlook COM Add-in until October 1, 2020.  <br/>\r\nFor more information and steps to make a smooth transition, see the <a href=\"https://aka.ms/OutlookCOMPlaybook\">Outlook COM Add-In Playbook</a>. <br/><br/>\r\n\r\nDownload and install Dynamics 365 for Outlook, version 9.0.  Dynamics 365 for Outlook, also known as the Outlook client, enables access to your customer engagement data through Outlook. <br/>\r\nThis version works with the following Dynamics 365 for Customer Engagement versions: \r\n<ul>\r\n<li>Dynamics 365 for Customer Engagement (online), version 9.0 or later version </li>\r\n<li>Dynamics 365 for Customer Engagement on-premises, version 9.0 </li>\r\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.0002.0426",
+    "detailsSection_file_name": [
+        "CRM9.0-Client-ENU-amd64.exe",
+        "CRM9.0-Client-ENU-i386.exe"
+    ],
+    "detailsSection_file_size": [
+        "224.4 MB",
+        "179.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Running Dynamics 365 for Outlook on a computer that has less than the recommended requirements may result in inadequate performance. For information, see: \r\n<a href=\"https://docs.microsoft.com/dynamics365/customer-engagement/outlook-addin/admin-guide/hardware-requirements\">Microsoft Dynamics 365 for Outlook hardware requirements </a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>. </li>\n<li>When the File Download dialog box appears, click <b>Save</b> to save the file to your computer. </li>\n<li>When you're ready to install the product, run the executable file, and then follow the instructions on the screen. </li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2016 Readme",
+            "url": "http://www.microsoft.com/en-us/dynamics/crm-customer-center/Microsoft_Dynamics_CRM_2015_CRM_Online_Readme.htm"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2016 SDK",
+            "url": "http://msdn.microsoft.com/en-us/library/hh547453(v=crm.7).aspx"
+        },
+        {
+            "title": "install or upgrade Microsoft Dynamics CRM Server",
+            "url": "http://technet.microsoft.com/en-us/library/hh699706(v=crm.7).aspx"
+        },
+        {
+            "title": "microsoft Dynamics 365 for Outlook software requirements",
+            "url": "https://technet.microsoft.com/library/hh699818.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56972",
+    "downloadPreload": true
+}

@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Which hybrid topology should I use? For SharePoint Server 2013 with Office 365",
+    "downloadDescription": "This model explains how to choose a topology for using SharePoint Server 2013 with Office 365 in a hybrid environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sp-2013-hybrid-topologies.vsd",
+            "url": "https://download.microsoft.com/download/7/3/c/73c7c66b-3a56-4400-b208-c5589b495848/sp-2013-hybrid-topologies.vsd",
+            "size": "1939456",
+            "version": "1",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sp-2013-hybrid-topologies.pdf",
+            "url": "https://download.microsoft.com/download/7/3/c/73c7c66b-3a56-4400-b208-c5589b495848/sp-2013-hybrid-topologies.pdf",
+            "size": "274308",
+            "version": "1",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A hybrid environment that uses SharePoint Server 2013 and SharePoint Online enables solutions that integrate functionality between services and features such as Search, Microsoft Business Connectivity Services, and Duet Enterprise Online for Microsoft SharePoint and SAP in both environments. Microsoft supports three topologies for hybrid SharePoint solutions. You decide which hybrid topology to use based on a combination of the solution you want to use and the users you want to support.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sp-2013-hybrid-topologies.vsd",
+        "sp-2013-hybrid-topologies.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "267.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39948",
+    "downloadPreload": true
+}

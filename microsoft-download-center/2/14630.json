@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Management Studio Express Service Pack 3",
+    "downloadDescription": "Microsoft SQL Server Management Studio Express (SSMSE) is a free, easy-to-use graphical management tool for managing SQL Server 2005 Express Edition and SQL Server 2005 Express Edition with Advanced Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2005_SSMSEE.msi",
+            "url": "https://download.microsoft.com/download/9/a/a/9aa2328c-b0f7-49e1-a4f9-322792a0dd1c/SQLServer2005_SSMSEE.msi",
+            "size": "45357056",
+            "version": "9.00.4035",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2005_SSMSEE_x64.msi",
+            "url": "https://download.microsoft.com/download/9/a/a/9aa2328c-b0f7-49e1-a4f9-322792a0dd1c/SQLServer2005_SSMSEE_x64.msi",
+            "size": "45900800",
+            "version": "9.00.4035",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server Management Studio Express (SSMSE) is a free, easy-to-use graphical management tool for managing SQL Server 2005 Express Edition and SQL Server 2005 Express Edition with Advanced Services. SSMSE can also manage instances of the SQL Server Database Engine created by any edition of SQL Server 2005.<br/><br/>\n<b>Note:</b> SSMSE cannot manage SQL Server Analysis Services, Integration Services, Notification Services, Reporting Services, SQL Server Agent, or SQL Server 2005 Mobile Edition.<br/><br/>\nFor more information about SQL Server Express, including other editions and downloadable components now available, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=82745\">SQL Server Express page on MSDN</a>.<br/><br/>\nFor a list of new features and improvements that are included in SQL Server 2005 SP3, review the <a href=\"http://go.microsoft.com/fwlink/?LinkId=131442\">What's New document</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.4035",
+    "detailsSection_file_name": [
+        "SQLServer2005_SSMSEE.msi",
+        "SQLServer2005_SSMSEE_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "43.3 MB",
+        "43.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <li>Computer with Intel or compatible Pentium III 600 MHz or faster processor (1 GHz or faster is recommended.)</li>\n  <li>Minimum of 192 MB of RAM (512 MB or more is recommended.)</li>\n  <li>100 MB of available hard disk space</li>\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Note: </b> You must have administrative rights on the computer to install SSMSE.<br/><br/>\n<ul>\n  <b>Step 1:</b> Install Microsoft .NET Framework 2.0 or later from the <a href = \"http://go.microsoft.com/fwlink/?LinkId=135926\">Microsoft Download Center</a>.<br/><br/>\n  <b>Note:</b> If you have already installed SQL Server 2005 or Visual Studio 2005, you already have Microsoft .NET Framework 2.0.<br/><br/>\n  <b>Step 2:</b> Download and install the latest <a href=\"http://go.microsoft.com/fwlink/?LinkId=135934\">Microsoft Core XML Services (MSXML) 6.0 version</a>.<br/><br/>\n  <b>Step 3:</b> Download SSMSE by clicking the SQLServer2005_SSMSEE.msi link later on this page. To start the installation immediately, click <b>Run</b>. To install SSMSE at a later time, click <b>Save</b>.<br/><br/>\n  <b>Step 4:</b> Follow the installation instructions provided in the <a href=\"http://go.microsoft.com/fwlink/?LinkId=130542\">Readme</a>.\n</ul><br/>",
+    "additionalInformationSection": "<ul>\n  <li>Get updated product documentation for SSMSE from the <a href=\"http://go.microsoft.com/fwlink/?linkid=130167\">SQL Server 2005 Books Online</a>.</li><br/><br/>\n  <li>Download samples and sample databases from the <a href=\"http://go.microsoft.com/fwlink/?linkid=31046\">Microsoft Download Center</a>.</li><br/><br/>\n  <li>SSMSE is supported on x64 and EMT64 systems in Windows On Windows (WOW). <b>SSMSE is not supported on IA64 systems</b>.</li><br/><br/>\n  <li>If you have questions about SSMSE, visit the <a href=\"http://go.microsoft.com/fwlink/?linkid=52347\">SQL Server Express forums on MSDN</a>.</li><br/><br/>\n  <li>Help improve SSMSE by <a href=\"http://go.microsoft.com/fwlink/?LinkId=34178\">submitting bugs to the Connect Feedback Center</a>.</li>\n</ul><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "home page for Microsoft SQL Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=14968"
+        },
+        {
+            "title": "looking for new downloads? Sign up to be notified.",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=74520"
+        },
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=42457"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=51634"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14630",
+    "downloadPreload": true
+}

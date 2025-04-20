@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Best Practices for Insider Risk and Communication Compliance in Exchange Online",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Best Practices for Insider Risk and Communication Compliance in Exchange Online.pdf",
+            "url": "https://download.microsoft.com/download/f/9/6/f96013e9-b7f4-4d02-a91b-bb81740b96ef/Best Practices for Insider Risk and Communication Compliance in Exchange Online.pdf",
+            "size": "4350968",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:26:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Exchange is one of the most important communication tools in organizations worldwide. Moreover it\u00b4s the foundation for Microsoft 365 Groups, Microsoft Teams, and the most Compliance features. This session covers the how, what, and why of Insider Risk Management and Communication Compliance and Exchange. Come learn how to use these to tools to be more compliant.\r\n\r\nRecording of presentation by Raphael K\u00f6llner is at https://youtu.be/d_4Y3wtVwps.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Best Practices for Insider Risk and Communication Compliance in Exchange Online.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file with any PDF reader.",
+    "relatedResourcesSection": [
+        {
+            "title": "mec Airlift 2022 - Recorded Sessions",
+            "url": "https://aka.ms/MEC2022"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104605",
+    "downloadPreload": true
+}

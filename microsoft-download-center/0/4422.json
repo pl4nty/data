@@ -1,0 +1,105 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual C++ 2010 Service Pack 1 Compiler Update for the Windows SDK 7.1",
+    "downloadDescription": "Install this update to restore the Visual C++ compilers and libraries that may have been removed when Visual Studio 2010 Service Pack 1 (SP1) was installed. The compilers and libraries are part of the Microsoft Windows Software Development Kit for Windows 7 and the .NET Framework 4 (later referred to as the Windows SDK 7.1).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vc-compiler-kb2519277.exe",
+            "url": "https://download.microsoft.com/download/7/5/0/75040801-126c-4591-bce4-4cd1fd1499aa/VC-Compiler-KB2519277.exe",
+            "size": "126890440",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:14:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "readme.htm",
+            "url": "https://download.microsoft.com/download/7/5/0/75040801-126c-4591-bce4-4cd1fd1499aa/readme.htm",
+            "size": "6840",
+            "version": "7.1",
+            "datePublished": "7/15/2024 3:14:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Install this update to restore the Visual C++ compilers and libraries that may have been removed when Visual Studio 2010 Service Pack 1 (SP1) was installed. The compilers and libraries are part of the Microsoft Windows Software Development Kit for Windows 7 and the .NET Framework 4 (later referred to as the Windows SDK 7.1).\n \nImportant: Before you install this update, review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=213290\">readme</a>, which has the latest information about this release.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2519277",
+        "name": "KB2519277"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1",
+    "detailsSection_file_name": [
+        "vc-compiler-kb2519277.exe",
+        "readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "121.0 MB",
+        "6.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The Windows SDK 7.1 must be installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows XP Service Pack 3",
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the file by clicking the link below, then run the downloaded file to install the package.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2519277",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=212358"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4422",
+    "downloadPreload": true
+}

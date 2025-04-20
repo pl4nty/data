@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Live Meeting 2005 Document: Live Meeting 2005 Deployment Guide",
+    "downloadDescription": "This guide provides the information you need to plan, understand, and perform a deployment of the Microsoft Office Live Meeting 2005 console in your environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Live Meeting 2005 Deployment Guide.doc",
+            "url": "https://download.microsoft.com/download/5/b/8/5b8a70c9-f82e-4086-b988-f0445cbe8465/Live Meeting 2005 Deployment Guide.doc",
+            "size": "579584",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide provides the information you need to plan, understand, and perform a deployment of the Live Meeting 2005 console in your environment. This guide also includes special instructions and considerations for upgrading to Live Meeting 2005 from previous Live Meeting versions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Live Meeting 2005 Deployment Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "566.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office program:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Meeting 2005</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>Live Meeting 2005 Deployment Guide.doc</b> on your hard disk to open the document. </li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the document as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>Live Meeting 2005 Deployment Guide.doc</b>.",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        },
+        {
+            "title": "live Meeting on Office Online",
+            "url": "http://office.microsoft.com/en-us/FX010909711033.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12125",
+    "downloadPreload": true
+}

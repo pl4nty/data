@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "App-V 5 SP2 Application Publishing and Client Interaction",
+    "downloadDescription": "This guide is designed to help both new and experienced users of Microsoft Application Virtualization (App-V) gain a better understanding of how the App-V 5.0 SP2 Client processes packages and presents them to users.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppV5_AppPub_and_Client_Inter.pdf",
+            "url": "https://download.microsoft.com/download/d/3/f/d3f96ab9-1dc0-47af-b12d-89743409eb11/AppV5_AppPub_and_Client_Inter.pdf",
+            "size": "1270836",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:24:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide is designed to help both new and experienced users of Microsoft Application Virtualization (App-V) gain a better understanding of how the App-V 5.0 SP2 Client processes packages and presents them to users. It provides details around typical client operations with important locations for data storage, how the publishing refresh process works, and the available integration points with the local operating system. Topics discussed in the paper include: App-V Files and Data Storage Locations, Package Registry, App-V Package Store Behavior, Roaming Registry and Data, App-V Client Application Lifecycle Management, Integration of App-V Packages, Dynamic Configuration, Side by Side Assemblies, and Client Logging.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AppV5_AppPub_and_Client_Inter.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [
+        {
+            "title": "application Virtualization TechCenter",
+            "url": "http://technet.microsoft.com/windows/hh826068.aspx?ocid=wc-mscom-dlc"
+        },
+        {
+            "title": "application Virtualization Technical Library",
+            "url": "http://technet.microsoft.com/library/jj680850.aspx?ocid=wc-mscom-dlc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41635",
+    "downloadPreload": true
+}

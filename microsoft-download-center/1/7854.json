@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 and 2009 SP1 White Paper: Country-Specific Update for Germany",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 6, and that is specific to users in Germany.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for Germany.xps",
+            "url": "https://download.microsoft.com/download/a/f/b/afb4b9e5-13b9-40e3-8394-1d0492d7a12d/Country-specific update for Germany.xps",
+            "size": "391713",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Country-specific update for Germany.pdf",
+            "url": "https://download.microsoft.com/download/a/f/b/afb4b9e5-13b9-40e3-8394-1d0492d7a12d/Country-specific update for Germany.pdf",
+            "size": "311220",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Germany in hotfix rollup 6 for Microsoft Dynamics AX 2009 and 2009 SP1.<br /><br />\r\nGerman businesses that supply goods to other companies in the European Union (EU) must submit periodic reports to the German tax authorities that itemize their sales transactions. The EU sales list reports the value of goods sold to VAT-registered customers in other EU member countries. In accordance with German legislation, the EU sales list must be generated as an XML file and submitted on a monthly, bimonthly, quarterly, or yearly basis, depending on business volume. You can submit the report electronically and upload it to the Bundeszentralamt f\u00fcr Steuern (BZST) portal.<br /><br />\r\nThe following changes have been implemented in the EU sales list:<br />\r\n<UL><LI>Addition of monthly and bimonthly reporting periods</LI>\r\n<LI>Updated XML file structure</LI>\r\n<LI>Updated printed report</LI></UL><br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base articles <a href=\"https://mbs.microsoft.com/knowledgebase/KBDisplay.aspx?scid=kb$en-us$2405514\">2405514</a> and <a href=\"https://mbs2.microsoft.com/Knowledgebase/KBDisplay.aspx?scid=kb$en-us$2405516\">2405516</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Country-specific update for Germany.xps",
+        "Country-specific update for Germany.pdf"
+    ],
+    "detailsSection_file_size": [
+        "382.5 KB",
+        "303.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7854",
+    "downloadPreload": true
+}

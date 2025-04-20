@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 System Requirements",
+    "downloadDescription": "This document lists the system requirements for Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 System Requirements.pdf",
+            "url": "https://download.microsoft.com/download/4/3/c/43cc518c-072d-409c-ac1d-020b7da3a5fb/Microsoft Dynamics AX 2012 System Requirements.pdf",
+            "size": "801563",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides information about the hardware and software requirements for Microsoft Dynamics AX 2012, including information about cumulative updates. Before installing Microsoft Dynamics AX, be sure that the system you are working with meets or exceeds the minimum hardware and software requirements. <br />\r\n<br />\r\n<b>Note:</b> Some of the information in this guide applies only to Microsoft Dynamics AX 2012 R3 installations, and some information applies only to AX 2012 R2, AX 2012 Feature Pack, or AX 2012.<br /><br />\r\nUnless otherwise noted in this guide, all other content applies to AX 2012, AX 2012 Feature Pack, AX 2012 R2, and AX 2012 R3.<br />\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 System Requirements.pdf"
+    ],
+    "detailsSection_file_size": [
+        "782.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "system requirements for Microsoft Dynamics AX 2009",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=26568"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11094",
+    "downloadPreload": true
+}

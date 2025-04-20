@@ -1,0 +1,176 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Service Pack 2 (SP2) Express",
+    "downloadDescription": "Microsoft\u00ae SQL Server\u00ae 2012 Express is a powerful and reliable free data management system that delivers a rich and reliable data store for lightweight Web Sites and desktop applications. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPRADV_x86_ENU.exe",
+            "size": "1935569840",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR32_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPR32_x86_ENU.exe",
+            "size": "261937736",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRADV_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPRADV_x64_ENU.exe",
+            "size": "2038984856",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLManagementStudio_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLManagementStudio_x86_ENU.exe",
+            "size": "1010111096",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPR_x86_ENU.exe",
+            "size": "274628920",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPR_x64_ENU.exe",
+            "size": "310443304",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRWT_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPRWT_x64_ENU.exe",
+            "size": "1154608280",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLManagementStudio_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLManagementStudio_x64_ENU.exe",
+            "size": "996342608",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPRWT_x86_ENU.exe",
+            "url": "https://download.microsoft.com/download/0/1/e/01e0d693-2b4f-4442-9713-27a796b327bd/SQLEXPRWT_x86_ENU.exe",
+            "size": "1149511136",
+            "version": "11.0.5058.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "\r\nMicrosoft SQL Server 2012 Express with SP2 are a free, feature-rich editions of SQL Server that is ideal for learning, developing, powering desktop, web & small server applications, and for redistribution by ISVs. The SQL Server 2012 SP2 Express release includes the full version of SQL Server 2012 Management Studio with SP2 instead of SQL Server 2012 Management Studio Express. For a complete list of supported features in SQL Server Management Studio, see <a href=\" http://msdn.microsoft.com/en-us/library/ms174219.aspx\"> Features in SQL Server Management Studio</a>.\r\n\r\n<br />\r\n<br />\r\n<b>LocalDB (SqlLocalDB)</b>\r\n<ul>\r\n<li>LocalDB is a lightweight version of Express that has all its programmability features, yet runs in user mode and has a fast, zero-configuration installation and short list of pre-requisites. Use this if you need a simple way to create and work with databases from code. It can be bundled with Application and Database Development tools like Visual Studio and or embedded with an application that needs local databases.</li>\r\n</ul>\r\n<b>Express (SQLEXPR)</b>\r\n<ul>\r\n  <li>\r\n    Express edition includes the SQL Server database engine only. Best suited to accept remote connections or administer remotely.\r\n  </li>\r\n</ul>\r\n  <b>Express with Tools (SQLEXPRWT)</b>\r\n<ul>\r\n  <li>This package contains everything needed to install and configure SQL Server as a database server including the full version of SQL Server 2012 Management Studio with SP2. Choose either LocalDB or Express depending on your needs above.</li>\r\n</ul>\r\n  <b>SQL Server Management Studio Express (SQLManagementStudio)</b>\r\n<ul>\r\n  <li>This does not contain the database, but only the tools to manage SQL Server instances, including LocalDB, SQL Express, SQL Azure, full version of SQL Server 2012 Management Studio with SP2, etc. Use this if you already have the database and only need the management tools.</li>\r\n</ul>\r\n  <b>Express with Advanced Services (SQLEXPRADV)</b>\r\n<ul>\r\n  <li>This package contains all the components of SQL Server Express including the full version of SQL Server 2012 Management Studio with SP2. This is a larger download than \u201cwith Tools,\u201d as it also includes both Full Text Search and Reporting Services.  </li>\r\n  <br />\r\n</ul>\r\n<br />To learn more about the features supported by the SQL server, please visit the <a href=\" http://msdn.microsoft.com/en-us/library/cc645993.aspx\">MSDN SQL Server 2012 supported features site</a>.\r\n<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.5058.0",
+    "detailsSection_file_name": [
+        "SQLEXPRADV_x86_ENU.exe",
+        "SQLEXPR32_x86_ENU.exe",
+        "SQLEXPRADV_x64_ENU.exe",
+        "SQLManagementStudio_x86_ENU.exe",
+        "SQLEXPR_x86_ENU.exe",
+        "SQLEXPR_x64_ENU.exe",
+        "SQLEXPRWT_x64_ENU.exe",
+        "SQLManagementStudio_x64_ENU.exe",
+        "SQLEXPRWT_x86_ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 GB",
+        "249.8 MB",
+        "1.9 GB",
+        "963.3 MB",
+        "261.9 MB",
+        "296.1 MB",
+        "1.1 GB",
+        "950.2 MB",
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n <ul>\n    </ul>\n <li>\n  <b>Processor</b> \n  </li>\n <ul>\n  <li>Intel - compatible processor with a minimum speed of 1 GHz or a faster processor</li> \n  </ul>\n <li>\n  <b>RAM</b> \n  </li>\n <ul>\n  <li>Minimum 512 MB for SQL Server Express with Tools, and SQL Server Express with Advanced Services and 4 GB for Reporting Services that installs with SQL Server Express with Advanced Services</li> \n  </ul>\n <li>\n  <b>Hard Disk Space</b> \n  </li>\n <ul>\n  <li>4.2 GB of Disk Space</li> \n  </ul>\n  </ul>\n  <br /> \n  <b>Limitations :</b> \n  Microsoft SQL Server Express supports 1 physical processor, 1 GB memory, and 10 GB storage\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<b> Installation for the NEW users</b> <br/><br/>\r\n<b>Step 1: </b>Enable\r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=120550\">Microsoft .Net Framework 3.5 SP1.</a> and \r\n    Download and install \r\n    <a href=\"http://go.microsoft.com/fwlink/?LinkId=186791\">Microsoft .Net Framework 4.0.</a><br />\r\n<br/>\r\n<ul>\r\n<b>Note:</b> SQL Server Express (with database engine only) can work with either .NET 3.5 SP1 or .NET 4, there is no need to have both enabled.<br /><br/>\r\n</ul>\r\n<b> Step 2: </b> Download Microsoft\u00ae SQL Server\u00ae 2012 Express by clicking the appropriate link earlier, run it, and follow the instructions in the setup wizard to install.\r\n<br/>\r\n<br/>\r\n\r\n<b>Installation for the Existing Users </b> <br/> <br/>\r\n\r\nIf you have an existing installation of Express with Tools, SQL Server Management Studio Express, or Express with Advanced Services, and want to add the complete SQL Server Management Studio feature to your Express instance, do the following:\r\n<br/>\r\n<br/>\r\n\r\n<b>Step 1: </b>Download the required Microsoft\u00ae SQL Server\u00ae 2012 Express SP2 file to update your current SQL Server 2012 Express installation by clicking the appropriate link earlier.\r\n\r\n<br/> <br/>\r\n<b>Step 2: </b>Run the file, and follow the instructions in the setup wizard to install. On the Installation Type page, select Add features to an existing instance of SQL Server, and select the instance you would like to update. \r\n\r\n<br/> <br/>\r\n<b>Step 3: </b>On the Feature Selection page, select the Management Tools \u2013 Complete check box, and then proceed to complete the installation. \r\n<br/>\r\n\r\n<br />\r\n<ul>\r\n<b>Note: </b>  Microsoft\u00ae SQL Server\u00ae 2012 Express includes both 32-bit and 64-bit versions. SQLEXPR32_x86 is a smaller package that can be used to install SQL Server 2012 Express SP2 onto only 32-bit operating systems. SQLEXPR_x86 is the same product but supports installation onto both 32-bit and 64-bit (WoW) operating systems. SQLEXPR_x64 is a native 64-bit SQL Server 2012 Express SP2 and supports installation onto only 64-bit operating systems. There is no other difference between these packages. \r\n<br/>\r\n<br/>\r\n</ul>\r\n\r\n",
+    "additionalInformationSection": "If you have a specific technical question about Microsoft\u00ae SQL Server\u00ae 2012 Express SP2 please visit <a href=\" http://go.microsoft.com/fwlink/?LinkId=186769\">the SQL Server Express Forum </a>.\r\n<br/><br/>\r\n- If you have questions about SQL Server Express SP2, visit  <a href=\" http://go.microsoft.com/fwlink/?LinkId=186778\"> the SQL Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43351",
+    "downloadPreload": true
+}

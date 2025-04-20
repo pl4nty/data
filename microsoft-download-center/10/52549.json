@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "BitTorrent Simulator",
+    "downloadDescription": "A simulator of the BitTorrent peer-to-peer protocol. Last published: December 21, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR_BTP_Sim.msi",
+            "url": "https://download.microsoft.com/download/e/e/e/eee22163-5e6a-49f7-987d-30aa9c0e28b7/MSR_BTP_Sim.msi",
+            "size": "4782592",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A simulator of the BitTorrent peer-to-peer protocol. This simulator enables variation of BitTorrent parameters and study of BitTorrent performance under various traffic scenarios. Particular attention is paid to bandwidth utilization, efficiency, and fairness.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSR_BTP_Sim.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52549",
+    "downloadPreload": true
+}

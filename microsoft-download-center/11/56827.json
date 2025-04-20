@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Integration Services (SSIS) Tutorial Files",
+    "downloadDescription": "Sample files and lesson packages for the tutorials in the SQL Server Integration Services (SSIS) documentation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deploying Packages.zip",
+            "url": "https://download.microsoft.com/download/3/1/4/314a4169-d540-4e9e-9776-585bfbfc2cc5/Deploying Packages.zip",
+            "size": "70865",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:41 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Creating a Simple ETL Package.zip",
+            "url": "https://download.microsoft.com/download/3/1/4/314a4169-d540-4e9e-9776-585bfbfc2cc5/Creating a Simple ETL Package.zip",
+            "size": "186065",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the sample files and lesson packages for the tutorials in the SQL Server Integration Services (SSIS) documentation at <a href=\"https://docs.microsoft.com/en-us/sql/integration-services/integration-services-tutorials?view=sql-server-2017\">Integration Services Tutorials</a>.\r\n<ul>\r\n<li><a href=\"https://docs.microsoft.com/en-us/sql/integration-services/ssis-how-to-create-an-etl-package?view=sql-server-2017\">SSIS How to Create an ETL Package</a>.</li>\r\n<li><a href=\"https://docs.microsoft.com/en-us/sql/integration-services/deploy-packages-with-ssis?view=sql-server-2017\">Deploy Packages with SSIS</a>.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Deploying Packages.zip",
+        "Creating a Simple ETL Package.zip"
+    ],
+    "detailsSection_file_size": [
+        "69.2 KB",
+        "181.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Both tutorials require the following software:\r\n<ul>\r\n<li>SQL Server Data Tools (SSDT), or Visual Studio with SQL Server Data Tools. (Download the latest release of SSDT from <a href=\"https://docs.microsoft.com/en-us/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-2017\">Download SQL Server Data Tools (SSDT)</a>.)</li>\r\n<li>SQL Server 2012 or later to host the sample database. (Download a free evaluation or developer edition of SQL Server from <a href=\"https://www.microsoft.com/en-us/sql-server/sql-server-downloads\">SQL Server downloads</a>.)</li>\r\n</ul>\r\nor additional requirements specific to the individual tutorials, see the introductory page for the tutorial.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download the Zip file that you want and extract its contents.</li>\r\n<li>Use the files as you follow the steps of the corresponding tutorial:\r\n<ul>\r\n<li><a href=\"https://docs.microsoft.com/en-us/sql/integration-services/ssis-how-to-create-an-etl-package?view=sql-server-2017\">SSIS How to Create an ETL Package</a>.</li>\r\n<li><a href=\"https://docs.microsoft.com/en-us/sql/integration-services/deploy-packages-with-ssis?view=sql-server-2017\">Deploy Packages with SSIS</a>.</li>\r\n</ul>\r\n</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56827",
+    "downloadPreload": true
+}

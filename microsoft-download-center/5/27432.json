@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Live Communications Server to Microsoft Lync Server 2010 Migration Strategy",
+    "downloadDescription": "This white paper outlines a migration strategy for migrating from Live Communications Server 2005 Service Pack 1 (SP1) to Lync Server 2010. As part of this strategy, this white paper introduces a newly supported scenario for interim coexistence of clients running Office Communicator 2005 and Lync 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Live_Communications_Server_2005_to_Lync_Server_2010_Migration_Strategy.doc",
+            "url": "https://download.microsoft.com/download/1/6/9/1696ae0b-daa1-4972-8d26-d60929114537/Live_Communications_Server_2005_to_Lync_Server_2010_Migration_Strategy.doc",
+            "size": "395264",
+            "version": "Sept2011",
+            "datePublished": "7/15/2024 3:28:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Given that there is no supported migration path directly from Live Communications Server 2005 SP1 to Lync Server 2010, the proposed migration strategy requires you to perform several interim steps to move users to Lync Server 2010. At a high level, the migration strategy takes the following phased migration approach:\r\n<OL>\r\n<LI>Validate the existing environment as an updated and stable Live Communications Server 2005 SP1 environment where the latest updates are installed and all clients are running Office Communicator 2005.</LI>\r\n<LI>Migrate the Live Communications Server environment to an interim Office Communications Server 2007 R2 environment, leaving all clients running Office Communicator 2005.</LI>\r\n<LI>Decommission all Live Communications Server 2005 SP1 server infrastructure.</LI>\r\n<LI>Upgrade clients to Lync 2010.</LI>\r\n<LI>Move users from the interim Office Communications Server 2007 R2 environment to a Lync Server 2010 environment, with all users upgraded to clients running Lync 2010.</LI>\r\n<LI>Decommission the Office Communications Server 2007 R2 environment.</LI>\r\n</OL>\r\nIt is important to note that the final move of clients to Lync Server 2010 requires that you update all user accounts to support enhanced presence. After users have been moved to Lync Server 2010, clients running Office Communicator 2005 cannot sign in. \r\n<br/><br/>\r\nThis document does not discuss or support a strategy in which servers running Live Communications Server 2005 SP1 and servers running Lync Server 2010 coexist. Deploying a Lync Server 2010 topology into an environment that consists of servers running Live Communications Server 2005 SP1 is not supported. The strategy discussed in this document is for organizations that want to preserve data (for example, contact objects) contained within the Live Communications Server 2005 SP1 environment as they migrate to Lync Server 2010 and allow for a coexistence of clients running Office Communicator 2005 with clients running Lync 2010. If data preservation is not a requirement, you can move directly from Live Communications Server 2005 SP1 to Lync Server 2010 by fully decommissioning the Live Communications Server environment and then setting up a new Lync Server environment.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Sept2011",
+    "detailsSection_file_name": [
+        "Live_Communications_Server_2005_to_Lync_Server_2010_Migration_Strategy.doc"
+    ],
+    "detailsSection_file_size": [
+        "386.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27432",
+    "downloadPreload": true
+}

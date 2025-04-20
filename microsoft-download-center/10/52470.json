@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "FetchClimate Client",
+    "downloadDescription": "For a given geographic area and time interval, the FetchClimate client retrieves environmental parameters such as air temperature or precipitation. Last published: April 21, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FetchClient_ClientTools.zip",
+            "url": "https://download.microsoft.com/download/5/3/1/53101e61-cb03-4893-bdd0-f57cd488c144/FetchClient_ClientTools.zip",
+            "size": "3560309",
+            "version": "2.0",
+            "datePublished": "5/15/2024 4:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For a given geographic area and time interval, the FetchClimate client retrieves environmental parameters such as air temperature or precipitation. It can be used as a standalone command-line tool or can be linked to your program in C, C#, or another Microsoft .NET language.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "FetchClient_ClientTools.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52470",
+    "downloadPreload": true
+}

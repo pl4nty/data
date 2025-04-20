@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM for Microsoft Office Outlook Compatibility with Citrix XenApp 6",
+    "downloadDescription": "Microsoft, working with Citrix\u00ae Corporation, completed functional verification of Microsoft Dynamics CRM for Outlook and Citrix XenApp 6 and its components. This white paper documents the successful compatibility verification of Microsoft Dynamics CRM for Microsoft Office Outlook when deployed with Microsoft Office 2007 on Citrix XenApp 6.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics CRM for Outlook Compatibility with Citrix XenApp 6.pdf",
+            "url": "https://download.microsoft.com/download/d/f/0/df09ac48-4735-48ac-ae35-c88c0b634b46/Microsoft Dynamics CRM for Outlook Compatibility with Citrix XenApp 6.pdf",
+            "size": "1321472",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft, working with Citrix\u00ae Corporation completed functional verification of Microsoft Dynamics CRM for Outlook and Citrix XenApp 6 and its components. This white paper documents the successful compatibility verification of Microsoft Dynamics CRM for Microsoft Office Outlook when deployed with Microsoft Office 2007 on Citrix XenApp 6.\r\nThis white paper also details the results of scalability testing of Microsoft Dynamics CRM for Outlook on Citrix XenApp 6 running on an Intel Xeon processor-based server.  Included are:\r\n<ul><li>Instructions for setting up and deploying the test environment</li>\r\n<li> A description of the Microsoft Dynamics CRM implementation and the methods used to obtain the results</li>\r\n<li> Details of the hardware configuration and software settings</li>\r\n<li> A summary of the key test parameters and results achieved</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM for Outlook Compatibility with Citrix XenApp 6.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe\u00a9 Reader.</LI><br />\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26667",
+    "downloadPreload": true
+}

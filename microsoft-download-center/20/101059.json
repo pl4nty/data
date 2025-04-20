@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "PA-DSS Implementation Guide for Microsoft Dynamics 365 for Finance and Operations 10.0",
+    "downloadDescription": "How to implement Finance and Operations in compliance with PCI Data Security Standard version 3.2.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PA-DSS Implementation Guide for Microsoft Dynamics 365 for Finance and Operations_Version10.pdf",
+            "url": "https://download.microsoft.com/download/d/5/f/d5ff8a03-ce38-4693-952d-126390ad5097/PA-DSS Implementation Guide for Microsoft Dynamics 365 for Finance and Operations_Version10.pdf",
+            "size": "1038944",
+            "version": "1",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document explains how to implement Microsoft Dynamics 365 for Finance and Operations version 10.0 (1792 with Platform update 26) in a way that complies with the Payment Card Industry (PCI) Data Security Standard version 3.2. \r\n\r\nThis document is intended for customers, Microsoft Certified Partners, resellers, and integrators who are deploying Microsoft Dynamics 365 for Finance and Operations in a retail organization where electronic credit card and debit card payments are accepted, and where Finance and Operations is used as the payment application.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PA-DSS Implementation Guide for Microsoft Dynamics 365 for Finance and Operations_Version10.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1014.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Finance and Operations apps\r\nDynamics 365 Commerce",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101059",
+    "downloadPreload": true
+}

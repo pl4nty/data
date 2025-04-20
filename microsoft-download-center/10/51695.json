@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2016 Software License Terms and Third Party Notices",
+    "downloadDescription": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (EULA) - GP 2016 - RTM License - May2016 - English Final.pdf",
+            "url": "https://download.microsoft.com/download/e/e/4/ee41cd72-e409-489f-9157-7c0177444ed8/MBS (EULA) - GP 2016 - RTM License - May2016 - English Final.pdf",
+            "size": "674100",
+            "version": "GP 2016",
+            "datePublished": "7/15/2024 4:13:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MBS (Attribution) - Third Party Notice - Dynamics GP 2016.pdf",
+            "url": "https://download.microsoft.com/download/e/e/4/ee41cd72-e409-489f-9157-7c0177444ed8/MBS (Attribution) - Third Party Notice - Dynamics GP 2016.pdf",
+            "size": "365140",
+            "version": "GP 2016",
+            "datePublished": "7/15/2024 4:13:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These Third Party Notices and Software License Terms are provided by Microsoft Corporation. They apply to the software named above, which includes the media on which you received it, if any. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "GP 2016",
+    "detailsSection_file_name": [
+        "MBS (EULA) - GP 2016 - RTM License - May2016 - English Final.pdf",
+        "MBS (Attribution) - Third Party Notice - Dynamics GP 2016.pdf"
+    ],
+    "detailsSection_file_size": [
+        "658.3 KB",
+        "356.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51695",
+    "downloadPreload": true
+}

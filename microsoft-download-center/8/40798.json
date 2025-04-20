@@ -1,0 +1,237 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows Server 2012 R2 Hyper-V",
+    "downloadDescription": "\u200bMicrosoft System Center Management Pack for Windows Server 2012 R2 Hyper-V helps you monitor the health and availability of computers configured for Hyper-V server role and running Windows Server 2012 R2. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.TRK.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.TRK.msi",
+            "size": "741376",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.SVE.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.SVE.msi",
+            "size": "745472",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.RUS.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.RUS.msi",
+            "size": "782336",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.PTG.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.PTG.msi",
+            "size": "708608",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.PTB.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.PTB.msi",
+            "size": "749568",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.PLK.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.PLK.msi",
+            "size": "737280",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.NLD.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.NLD.msi",
+            "size": "708608",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.KOR.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.KOR.msi",
+            "size": "933888",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.JPN.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.JPN.msi",
+            "size": "753664",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.ITA.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.ITA.msi",
+            "size": "757760",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.HUN.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.HUN.msi",
+            "size": "741376",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.FRA.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.FRA.msi",
+            "size": "733184",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.ESN.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.ESN.msi",
+            "size": "716800",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.DEU.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.DEU.msi",
+            "size": "716800",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.DAN.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.DAN.msi",
+            "size": "741376",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.CSY.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.CSY.msi",
+            "size": "749568",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.CHT.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.CHT.msi",
+            "size": "761856",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center Management Pack for Hyper V.CHS.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/System Center Management Pack for Hyper V.CHS.msi",
+            "size": "794624",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows Server HyperV 2012 R2 MP.msi",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/Microsoft Windows Server HyperV 2012 R2 MP.msi",
+            "size": "737280",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_WS_HyperV.docx",
+            "url": "https://download.microsoft.com/download/c/c/9/cc92b4ca-fc62-4dec-8c94-0432d4d82630/OpsMgr_MP_WS_HyperV.docx",
+            "size": "77434",
+            "version": "7.1.10107.0",
+            "datePublished": "7/15/2024 4:26:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bMicrosoft System Center Management Pack for Windows Server 2012 R2 Hyper-V helps you monitor the health and availability of computers configured for Hyper-V server role and running Windows Server 2012 R2. \r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 4/24/2015 - version  7.1.10107.0</li>\r\n<li> 10/18/2013 - version 7.1.10104.0</li>\r\n<li>1/25/2013 - Original English release, version 7.0.8560.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10107.0",
+    "detailsSection_file_name": [
+        "System Center Management Pack for Hyper V.TRK.msi",
+        "System Center Management Pack for Hyper V.SVE.msi",
+        "System Center Management Pack for Hyper V.RUS.msi",
+        "System Center Management Pack for Hyper V.PTG.msi",
+        "System Center Management Pack for Hyper V.PTB.msi",
+        "System Center Management Pack for Hyper V.PLK.msi",
+        "System Center Management Pack for Hyper V.NLD.msi",
+        "System Center Management Pack for Hyper V.KOR.msi",
+        "System Center Management Pack for Hyper V.JPN.msi",
+        "System Center Management Pack for Hyper V.ITA.msi",
+        "System Center Management Pack for Hyper V.HUN.msi",
+        "System Center Management Pack for Hyper V.FRA.msi",
+        "System Center Management Pack for Hyper V.ESN.msi",
+        "System Center Management Pack for Hyper V.DEU.msi",
+        "System Center Management Pack for Hyper V.DAN.msi",
+        "System Center Management Pack for Hyper V.CSY.msi",
+        "System Center Management Pack for Hyper V.CHT.msi",
+        "System Center Management Pack for Hyper V.CHS.msi",
+        "Microsoft Windows Server HyperV 2012 R2 MP.msi",
+        "OpsMgr_MP_WS_HyperV.docx"
+    ],
+    "detailsSection_file_size": [
+        "724.0 KB",
+        "728.0 KB",
+        "764.0 KB",
+        "692.0 KB",
+        "732.0 KB",
+        "720.0 KB",
+        "692.0 KB",
+        "912.0 KB",
+        "736.0 KB",
+        "740.0 KB",
+        "724.0 KB",
+        "716.0 KB",
+        "700.0 KB",
+        "700.0 KB",
+        "724.0 KB",
+        "732.0 KB",
+        "744.0 KB",
+        "776.0 KB",
+        "720.0 KB",
+        "75.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software</b> </li>\r\n<ul>\r\n<li> This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1, and System Center 2012 Operations Manager R2. </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40798",
+    "downloadPreload": true
+}

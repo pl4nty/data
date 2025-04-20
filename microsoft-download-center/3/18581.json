@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Windows PowerShell compiled Help for Office Web Apps",
+    "downloadDescription": "Downloadable .chm file that contains Help for Windows PowerShell cmdlets for Office Web Apps.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExcelServicesApplicationCmdlets.chm",
+            "url": "https://download.microsoft.com/download/8/a/4/8a42a810-bb55-4fa8-9332-88d50e3e424d/ExcelServicesApplicationCmdlets.chm",
+            "size": "108743",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "OfficeWebAppsCmdlets.chm",
+            "url": "https://download.microsoft.com/download/8/a/4/8a42a810-bb55-4fa8-9332-88d50e3e424d/OfficeWebAppsCmdlets.chm",
+            "size": "52171",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Important, before you download:</b><ul>\n<li>If the topics in this file do not appear as you expect (you see \"Page cannot be displayed\" or \"Action canceled,\" for example), see the <a href=\"#instructions\">Instructions</a> section on this page.</li>\n<li>This is a compiled Help file that opens in HTML Help.</li>\n</ul><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ExcelServicesApplicationCmdlets.chm",
+        "OfficeWebAppsCmdlets.chm"
+    ],
+    "detailsSection_file_size": [
+        "106.2 KB",
+        "50.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Your computer must be running an operating system that can open compiled help files.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\n\r\n<a name=\"instructions\"></a>\n<br/>\r\n\n<b>Known Issue: Text in file does not appear as expected</b>\n\r\n<br/>\n<br/>\nThe text in this file might not appear as expected. The messages \"Navigation canceled,\" \"Action canceled,\" or \"The page cannot be displayed\" might appear. <br/><br/>\r\n\n<b>To open this file to view the text</b>\n\r\n<ol>\n\r\n<li>Click <b>Download</b>. </li>\n\r\n<li>In the <b>File Download</b> dialog box, click <b>Save</b>.</li>\r\n\n<li>Use the <b>Save As</b> dialog box to save the file to your computer. </li>\n\r\n<li>Find the file on your computer, right-click it, and then click <b>Properties</b>.</li>\r\n\n<li>Click <b>Unblock</b>, and then click <b>OK</b>.</li>\r\n<li>Double-click the file to open it.</li></ol>\n\r\nFor more information, see Microsoft Knowledge Base article <a href=\"http://go.microsoft.com/fwlink/?LinkId=49530&clcid=0x409 \">892675</a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18581",
+    "downloadPreload": true
+}

@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Payment Card Industry Data Security Standard Compliance Planning Guide",
+    "downloadDescription": "The Payment Card Industry Data Security Standard Compliance Planning Guide is designed to help organizations meet Payment Card Industry Data Security Standard (PCI DSS) requirements.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PCI_DSS_Compliance_Planning_Guide.docx",
+            "url": "https://download.microsoft.com/download/5/9/f/59fc8c44-bd4c-4ff3-9083-d25a75ad85cd/PCI_DSS_Compliance_Planning_Guide.docx",
+            "size": "199320",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:15:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The <i>Payment Card Industry Data Security Standard Compliance Planning Guide</i> version 1.2 is targeted for merchants that accept payment cards, financial institutions that process payment card transactions, and service providers\u2014third-party companies that provide payment card processing or data storage services. IT solutions for each of these groups must meet all PCI DSS requirements. The guide is intended to augment the <i>IT Compliance Management Guide</i>, which introduces a framework-based approach to creating IT controls as part of your efforts to comply with multiple regulations and standards. This guide also describes Microsoft products and technology solutions that you can use to implement a series of IT controls to help meet PCI DSS requirements, and many other regulatory obligations.\r\n<br/>\r\nRelease Notes:\r\n<ul>\r\n<li>Version 1.0 was released July 9, 2007</li>\r\n<li>New in version 1.2: <br/>\r\nGuide updated for PCI DSS standards 1.2<br/>\r\nUpdates to all identified Microsoft products and version</li>\r\n</ul>\r\nTo read an overview of this accelerator online at TechNet <a href=\"http://go.microsoft.com/fwlink/?LinkId=165791\">click here.</a>\r\n<br/><br/> \r\nSend questions or feedback to us directly at <a href=\"mailto:SECwish@microsoft.com?subject=Feedback%20on%20PCIDSS_Compliance_Planning_Guide\">SECWISH@microsoft.com</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "PCI_DSS_Compliance_Planning_Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "194.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=941B3470-3AE9-4AEE-8F43-C6BB74CD1466&mg_id=10049\">Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint File Formats</a> (available as a free download) can be used to open, edit, and save documents, workbooks, and presentations in the file formats new to Microsoft Office 2007.</li> \r\n<li>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Microsoft Word Viewer</a> (available as a free download) can be used to view Word documents.</li> \r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n <li>Click the <b>Download</b> button at the top of the page to start the download.</li>\r\n <li><b>Save</b> the .zip file to your preferred location on your computer.</li>\r\n</ol>\r\n",
+    "additionalInformationSection": "<a href=\"http://technet.microsoft.com/en-us/solutionaccelerators/default.aspx\">Solution Accelerators</a> are free, scenario-based guides and tools designed to help IT Professionals who are proactively planning, deploying, and operating IT systems using Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration. \r\n\r\n<br /><br/>\r\n<b>Get the <i>Solution Accelerator Notifications</i> Newsletter</b>\r\n<br /><br/>\r\nSubscribe to the <i>Solution Accelerator Notifications</i> newsletter so that you can stay informed about new Solution Accelerator releases and updates. The newsletter covers of the following interest areas:\r\n<ul>\r\n<li> Communication & Collaboration </li>\r\n<li> Security, Data Protection, & Recovery</li> \r\n<li> Deployment</li> \r\n<li> Operations & Management</li>\r\n</ul>\r\n\r\nYou may also receive invitations to participate in accelerator development via beta programs and customer surveys. <i>Solution Accelerator Notifications</i> is currently available in English only.\r\n<br /><br/>\r\nIf your organization has used a Solution Accelerator, please share your experience with us by completing this <a href=\"http://go.microsoft.com/fwlink/?LinkID=132579\">short survey</a> (less than 10 minutes long).\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "it Compliance Management Guide",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=BD930882-0D39-4900-9A79-B91F213ED15D&displaylang=en"
+        },
+        {
+            "title": "it Governance and Compliance Solution Accelerators",
+            "url": "http://technet.microsoft.com/solutionaccelerators/dd229342.aspx"
+        },
+        {
+            "title": "microsoft Operations Framework 4.0",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=457ed61d-27b8-49d1-baca-b175e8f54c0c&DisplayLang=en"
+        },
+        {
+            "title": "security Compliance Management Toolkit Series",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=5534BEE1-3CAD-4BF0-B92B-A8E545573A3E&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18015",
+    "downloadPreload": true
+}

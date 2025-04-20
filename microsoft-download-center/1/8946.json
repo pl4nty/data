@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Publishing Exchange Server 2010 with Forefront Unified Access Gateway 2010 and Forefront Threat Management Gateway 2010 ",
+    "downloadDescription": "This white paper provides information about publishing Microsoft Exchange Server 2010 using Forefront Unified Access Gateway 2010 and Forefront Threat Management Gateway 2010, including how to choose between them for different scenarios, and provides specific steps you can take to configure Forefront TMG and Forefront UAG to publish Exchange 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PublishingExchangeServer2010withForefront.doc",
+            "url": "https://download.microsoft.com/download/e/5/6/e56acb6e-7bcc-40f1-8f18-e636b7bfe088/PublishingExchangeServer2010withForefront.doc",
+            "size": "3617280",
+            "version": "Nov2010",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Allowing access to corporate resources from any location, perhaps using devices that are not controlled by the organization, presents additional risk to the security of the data and services being accessed. Therefore it's critical to take measures to ensure that the data is being accessed securely, which means implementing technologies such as certificates, firewalls, enforcing pre-authentication, and device or endpoint validation.\r\nThis white paper provides detailed information about publishing Microsoft Exchange Server 2010 using Forefront Unified Access Gateway 2010 and Forefront Threat Management Gateway 2010, including how to choose between them for different scenarios, and provides specific steps you can take to configure Forefront TMG and Forefront UAG to publish Exchange 2010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2010",
+    "detailsSection_file_name": [
+        "PublishingExchangeServer2010withForefront.doc"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8946",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 and Exchange 2000 Server Memory Dump File Concepts and Processes Whitepaper",
+    "downloadDescription": "This white paper describes memory dump files and the tools that are used to collect them.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MemoryDumpFileConceptsandProcesses.doc",
+            "url": "https://download.microsoft.com/download/b/8/b/b8b36faf-00f1-460f-b32b-98a20102da4e/MemoryDumpFileConceptsandProcesses.doc",
+            "size": "174080",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes memory dump files, the tools that are used to collect them, and the techniques that support engineers use to troubleshoot the processes that Exchange relies on.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MemoryDumpFileConceptsandProcesses.doc"
+    ],
+    "detailsSection_file_size": [
+        "170.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable Word Viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9217",
+    "downloadPreload": true
+}

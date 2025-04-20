@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Achieving governmental identity standards with the Microsoft Identity Platform",
+    "downloadDescription": "Publications guiding architects and other decision makers on how to achieve NIST guidelines by using the Microsoft Identity Platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Achieving NIST Authentication Assurance Levels with the Microsoft Identity Platform.pdf",
+            "url": "https://download.microsoft.com/download/b/3/c/b3c71ea7-910a-46ba-b57f-62cf63514dd5/Achieving NIST Authentication Assurance Levels with the Microsoft Identity Platform.pdf",
+            "size": "449148",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:24:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "The first document in this series, Achieving National Institute of Standards and Technology Authenticator Assurance Levels with the Microsoft Identity Platform guides architects in their planning and implementation of NIST AALs.\r\nFuture publications on additional NIST standards and other governmental standards are under consideration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Achieving NIST Authentication Assurance Levels with the Microsoft Identity Platform.pdf"
+    ],
+    "detailsSection_file_size": [
+        "438.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To implement the solutions in this white paper you must have an Azure subscription with Azure Active Directory",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 2000 Advanced Server",
+        "Windows 7",
+        "Windows 7 Enterprise"
+    ],
+    "installInstructionSection": "Implement the solutions that most align to your organiational needs.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101446",
+    "downloadPreload": true
+}

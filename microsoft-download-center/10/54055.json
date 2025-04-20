@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "RLWE for Open SSL",
+    "downloadDescription": "This release contains a patch for OpenSSL 1.0.2g to support Peikert's Ring Learning With Errors (RLWE) key exchange [1], using the instantiation of Alkim, Ducas, P\u00f6ppelmann and Schwabe [2], and the improvements and implementation of Microsoft Research [3]. The OpenSSL integration follows the one of Bos, Costello, Naehrig, Stebila; we refer to their paper [4] for more details.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "rlwe-for-openssl-1.0.2g.patch",
+            "url": "https://download.microsoft.com/download/4/8/8/4886b796-d33c-4c77-8d1a-913cd2185bd1/rlwe-for-openssl-1.0.2g.patch",
+            "size": "415745",
+            "version": "v1",
+            "datePublished": "7/15/2024 4:39:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The library specifies four ciphersuites\r\n* RLWE-ECDSA-AES128-GCM-SHA256\r\n* RLWE-RSA-AES128-GCM-SHA256\r\n* RLWE-ECDHE-ECDSA-AES128-GCM-SHA256\r\n* RLWE-ECDHE-RSA-AES128-GCM-SHA256\r\n\r\nThe first two consist of a RLWE key exchange, as described in [4], authentication based on ECDSA or RSA digital signatures, authenticated encryption (with associated data) (AEAD) based on AES-128 in GCM (Galois Counter Mode); and key derivation and hashing based on SHA-256. The last two offer hybrid ciphersuites that are as above, except the key exchange includes both RLWE and ECDH key exchange; the pre-master secret is the concatenation of the ECDH shared secret and the RLWE shared secret. All these ciphersuites require TLSv1.2 because of the use of AES-GCM.\r\n\r\nREFERENCES\r\n----------\r\n\r\n[1] C. Peikert, \"Lattice cryptography for the internet\", in Post-Quantum Cryptography - 6th International Workshop (PQCrypto 2014), LNCS 8772, pp. 197-219. Springer, 2014.\r\n[2] E. Alkim, L. Ducas, T. P\u00f6ppelmann and P. Schwabe, \"Post-quantum key exchange - a new hope\", IACR Cryptology ePrint Archive, Report 2015/1092, 2015.\r\n[3] LatticeCrypto library. MSR. https://www.microsoft.com/en-us/download/details.aspx?id=52371.\r\n[4] Joppe W. Bos, Craig Costello, Michael Naehrig, Douglas Stebila. \"Post-quantum key exchange for the TLS protocol from the ring learning with errors problem,\" in Proc. IEEE Symposium on Security and Privacy (S&P) 2015, pp. 553-570. IEEE, May 2015.\r\n[5] https://openssl.org/source/old/1.0.2/openssl-1.0.2g.tar.gz\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v1",
+    "detailsSection_file_name": [
+        "rlwe-for-openssl-1.0.2g.patch"
+    ],
+    "detailsSection_file_size": [
+        "406.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>This patch is for OpenSSL 1.0.2g \u2013 it is cross-platform to the OS (supports Windows, Unix, Mac)</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Unix",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<UL><LI>Cick <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54055",
+    "downloadPreload": true
+}

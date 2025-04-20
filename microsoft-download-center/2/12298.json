@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Word Add-in For MediaWiki",
+    "downloadDescription": "Save documents from Microsoft Office Word straight into MediaWiki.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftOfficeWordAddinForMediaWiki.msi",
+            "url": "https://download.microsoft.com/download/2/a/2/2a2e0988-7d08-4504-8d46-6e9e5cac4c43/MicrosoftOfficeWordAddinForMediaWiki.msi",
+            "size": "2315264",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 3:10:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Allows you to save your Microsoft Office Word 2007 and 2010 documents straight into MediaWiki.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "MicrosoftOfficeWordAddinForMediaWiki.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or above",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and run the installer file with Administrator rights.  Follow to setup steps to install the add-in.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12298",
+    "downloadPreload": true
+}

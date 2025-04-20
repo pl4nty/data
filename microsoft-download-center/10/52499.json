@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Tree-reweighted message passing algorithm for energy minimization",
+    "downloadDescription": "This software implements two algorithms for minimizing energy functions of discrete variables with unary and pairwise terms. Last published: November 28, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TRW_S-v1.3.zip",
+            "url": "https://download.microsoft.com/download/6/e/d/6ed0e6cf-c06e-4d4e-9f70-c5932795cc12/TRW_S-v1.3.zip",
+            "size": "42440",
+            "version": "1.3",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This software implements two algorithms for minimizing energy functions of discrete variables with unary and pairwise terms. Such energy functions commonly occur in computer vision. The two algorithms are max-product belief propagation (BP, Pearl'88) and sequential tree-reweighted max-product message passing (TRW-S, Kolmogorov'05).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3",
+    "detailsSection_file_name": [
+        "TRW_S-v1.3.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52499",
+    "downloadPreload": true
+}

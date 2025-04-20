@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX\u00ae Video Acceleration Specification for Windows Media Video\u00ae v8, v9 and vA Decoding (Including SMPTE 421M \"VC-1\")",
+    "downloadDescription": "Defines extensions to DirectX Video Acceleration (DXVA) to support decoding of Windows Media Video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_WMV.xps",
+            "url": "https://download.microsoft.com/download/5/d/c/5dc91455-0a8c-4d57-8975-0afe1cfaf0dd/DXVA_WMV.xps",
+            "size": "1721564",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DXVA_WMV.pdf",
+            "url": "https://download.microsoft.com/download/5/d/c/5dc91455-0a8c-4d57-8975-0afe1cfaf0dd/DXVA_WMV.pdf",
+            "size": "1004220",
+            "version": "3.0",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Defines extensions to DirectX Video Acceleration (DXVA) to support decoding of Windows Media Video (WMV) 8, WMV 9, and SMPTE VC-1.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "DXVA_WMV.xps",
+        "DXVA_WMV.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "980.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download this white paper in your choice of the following formats: PDF file or XPS file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25228",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "White Paper: Precision Considerations for Analysis Services Users",
+    "downloadDescription": "This white paper covers accuracy and precision considerations in SQL Server 2005 Analysis Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PrecisionforSSAS.doc",
+            "url": "https://download.microsoft.com/download/4/0/1/40119d1a-e5fb-4099-96fb-2706d6e0ed12/PrecisionforSSAS.doc",
+            "size": "747520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper covers accuracy and precision considerations in SQL Server 2005 Analysis Services. For example, it is possible to query Analysis Services with similar queries and obtain two different answers. While this appears to be a bug, it actually is due to the fact that Analysis Services caches query results and the imprecision that is associated with approximate data types. This white paper discusses how these issues manifest themselves, why they occur, and best practices to minimize their effect.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "PrecisionforSSAS.doc"
+    ],
+    "detailsSection_file_size": [
+        "730.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click Save to save the document to your hard disk<br />\nClick Open to open the document immediately",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4106",
+    "downloadPreload": true
+}

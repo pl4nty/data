@@ -1,0 +1,75 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual PC 2004 SP1",
+    "downloadDescription": "The Microsoft Software License Terms for Microsoft Virtual PC 2004 included in the download package supersedes the license terms displayed during the setup of Microsoft Virtual PC 2004. By downloading and using this software, you agree to these new license terms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Virtual PC 2004 SP1.zip",
+            "url": "https://download.microsoft.com/download/2/5/3/253e22d9-b8a4-4219-9596-ee30c83699bf/Virtual PC 2004 SP1.zip",
+            "size": "19058331",
+            "version": "582.27",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Save time and money as Virtual PC allows you to maintain the compatibility of legacy and custom applications during migration to new operating systems and increases the efficiency of support, development, and training staffs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "582.27",
+    "detailsSection_file_name": [
+        "Virtual PC 2004 SP1.zip"
+    ],
+    "detailsSection_file_size": [
+        "18.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Processor: Athlon\u00ae, Duron\u00ae, Celeron\u00ae, Pentium\u00ae II, Pentium III, or Pentium 4<br />\n<br />\nProcessor speed: 400 MHz minimum (1 GHz or higher recommended)<br />\n<br />\nRAM: Add the RAM requirement for the host operating system that you will be using to the requirement for the guest operating system that you will be using. If you will be using multiple guest operating systems simultaneously, total the requirements for all the guest operating systems that you need to run simultaneously. <br />\n<br />\nAvailable disk space: To determine the hard disk space required, add the requirement for each guest operating system that will be installed.<br />\n<br />\nVirtual PC 2004 SP1 runs on: Windows 2000 Professional SP4, Windows XP Professional, and Windows XP Tablet PC Edition.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Once you have completed the download, double-click Setup.exe file to begin the installation process.",
+    "additionalInformationSection": "If you are running Virtual PC on a notebook, the hotfix contained in the Laptop Hotfix folder should be applied after installation. For more information on the hotfix, please visit http://support.microsoft.com/?kbid=889677 .",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Virtual PC Home Page",
+            "url": "http://www.microsoft.com/windows/virtualpc/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3243",
+    "downloadPreload": true
+}

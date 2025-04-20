@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Search Server 2010 Express",
+    "downloadDescription": "This is the full version of Search Server 2010 Express.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SearchServerExpress_SP2_en-us.exe",
+            "url": "https://download.microsoft.com/download/4/8/a/48a49da0-f524-4ba0-9134-325c044fa664/SearchServerExpress_SP2_en-us.exe",
+            "size": "661399472",
+            "version": "SP2",
+            "datePublished": "7/15/2024 3:05:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "For customers just getting started with search, Search Server 2010 Express is a standalone search server that is free to download and easy to deploy. It incorporates many enhancements over its predecessor, Search Server 2008 Express.\r\n\r\n<br/>\r\n<br/>\r\nSearch Server 2010 Express delivers powerful, web-style search across your corporate intranet sites quickly, easily, and for free. Search Server Express delivers great entry-level search through an engaging, conversational user experience across 51 languages.  Search all your content sources, including SharePoint sites, file shares, websites, Exchange Public Folders, and third party repositories.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP2",
+    "detailsSection_file_name": [
+        "SearchServerExpress_SP2_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "630.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/><b> Hardware requirements </b><br/>\r\n<br/><b> Processor: </b>64-bit, quad-core, 2.5 GHz or higher.<br/>\r\n<br/><b> RAM: </b>\r\n<ul> 4 GB for stand-alone or evaluation installation.<br/>\r\n<br/> 8 GB for production use.<br/>\r\n<br/> 16 GB for production use if SQL server is running on the same machine. <br/> </ul>\r\n<br/> Software Requirements depend on configuration.  Click <a href=\"http://go.microsoft.com/?linkid=9724345\">here</a> for details regarding your configuration scenario.\r\n<br/><br/>More information about the Operating System requirements:<br/>\r\n<br/>\u2022 The 64-bit edition of Windows Server 2008 Standard, Enterprise, Data Center, or Web Server with Service Pack 2 (SP2). If you are running Windows Server 2008 without SP2, the Microsoft SharePoint Products Preparation Tool installs Windows Server 2008 SP2 automatically.\r\n<br/>\u2022 The 64-bit edition of Windows Server 2008 R2 Standard, Enterprise, Data Center, or Web Server.\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<br/><b> To install this download:</b><br/><br/>\r\n<ul><br/> 1. Download the file by clicking the <b> Download</b> button (above) and saving the file to your hard disk.<br/>\r\n<br/> 2. Double-click on the <b> SearchServerExpress.exe </b> program file on your hard disk to start the Microsoft Search Server 2010 Express splash screen.<br/>\r\n<br/> 3. From the splash screen, you can follow the link to read the installation instructions. <br/>\r\n<br/> These installation instructions are also available online <a href=\" http://go.microsoft.com/?linkid=9724345\">here</a>. <br/><br/></ul>\r\n<br/><b> Instructions for use:</b><br/><br/>\r\n<ul><br/> 1. Additional online documentation can be accessed on <a href=\" http://go.microsoft.com/?linkid=9724344\">Microsoft TechNet</a>. <br/>\r\n<br/> 2. For further information about Microsoft Search Server 2010 Express, including links to online forums and bug reporting, visit the <a href=\"http://go.microsoft.com/?linkid=9724343\">product website</a>. <br/></ul>\r\n<br/><b> To uninstall this download:</b><br/><br/>\r\n<ul/><br/>\r\n<br/> 1. On the <b>Start</b> menu, point to <b> Settings</b> and then click <b> Control Panel.</b><br/>\r\n<br/> 2. Double-click <b>Add/Remove Programs.</b><br/>\r\n<br/> 3. In the list of currently installed programs, select <b>Microsoft Search Server 2010 Express</b> and then click <b> Remove</b> or <b> Add/Remove.</b>  if a dialog box appears, follow the instructions to remove the program.<br/>\r\n<br/> Click <b>Yes </b> or <b>OK </b> to confirm that you want to remove the program.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "18914",
+    "downloadPreload": true
+}

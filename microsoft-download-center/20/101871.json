@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Demand Forecasting White Paper for Microsoft Dynamics AX 2012 R3",
+    "downloadDescription": "\u200bThis paper describes the main features of the demand forecasting tool and how  they integrate with Microsoft Dynamics AX 2012. It also describes how demand  forecasting uses the Microsoft platform and products.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DemandForecastinginAX2012R3.pdf",
+            "url": "https://download.microsoft.com/download/7/2/8/72845873-dd96-44d2-ab73-483f1bb0fa3e/DemandForecastinginAX2012R3.pdf",
+            "size": "3186535",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200b\u200bThese features include the generation of baseline forecast based on historical  data, use of forecast dimensions, visualization of demand trends, adjustment of  demand forecast, removal of outliers, and forecast accuracy KPIs. This paper also describes how demand forecasting uses the Microsoft platform. These  products include Microsoft SQL Server, Microsoft SQL Server Analysis Services,  and Microsoft Excel.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "DemandForecastinginAX2012R3.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101871",
+    "downloadPreload": true
+}

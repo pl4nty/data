@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Implementing Claims-Based Authentication with SharePoint Server 2010",
+    "downloadDescription": "Implementing Claims-Based Authentication with SharePoint Server 2010 provides information about claims-based authentication for the IT Pro and developer audience.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "oit2010-whitepaper-claims-based-authentication.docx",
+            "url": "https://download.microsoft.com/download/9/0/c/90c74e4c-56dd-4fbd-bd50-909ae36e9235/oit2010-whitepaper-claims-based-authentication.docx",
+            "size": "2598055",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-claims-based-authentication.pdf",
+            "url": "https://download.microsoft.com/download/9/0/c/90c74e4c-56dd-4fbd-bd50-909ae36e9235/oit2010-whitepaper-claims-based-authentication.pdf",
+            "size": "2389218",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper provides guidance for IT professionals and developers about designing and deploying solutions that support claims-based authentication in SharePoint Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "oit2010-whitepaper-claims-based-authentication.docx",
+        "oit2010-whitepaper-claims-based-authentication.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007, Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27569",
+    "downloadPreload": true
+}

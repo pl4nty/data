@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update 01 for Microsoft Dynamics NAV 2013",
+    "downloadDescription": "Over the last few years we've shipped a series of new releases that have transformed Microsoft Dynamics NAV and your market opportunity. The goal is to make it even easier to use and adding capabilities design to support SMB business ambitions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "April 2013 Update Rollup for Microsoft Dynamics NAV 2013 DE.zip",
+            "url": "https://download.microsoft.com/download/a/b/e/abe78709-ed83-4505-a7ec-e56142051cdf/April 2013 Update Rollup for Microsoft Dynamics NAV 2013 DE.zip",
+            "size": "799371611",
+            "version": "7.0.34587",
+            "datePublished": "7/15/2024 3:06:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "April 2013 Update Rollup for Microsoft Dynamics NAV 2013 W1.zip",
+            "url": "https://download.microsoft.com/download/a/b/e/abe78709-ed83-4505-a7ec-e56142051cdf/April 2013 Update Rollup for Microsoft Dynamics NAV 2013 W1.zip",
+            "size": "741205371",
+            "version": "7.0.34587",
+            "datePublished": "7/15/2024 3:06:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To learn more about what is included in this cumulative update please visit this kb article:\r\nhttps://support.microsoft.com/en-us/help/2829782 \r\n\r\nTo learn more about other cumulative updates already released for Microsoft Dynamics NAV 2013 please see this kb article:\r\nhttps://support.microsoft.com/en-us/help/2842257",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.34587",
+    "detailsSection_file_name": [
+        "April 2013 Update Rollup for Microsoft Dynamics NAV 2013 DE.zip",
+        "April 2013 Update Rollup for Microsoft Dynamics NAV 2013 W1.zip"
+    ],
+    "detailsSection_file_size": [
+        "762.3 MB",
+        "706.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements can be found at:\r\nhttps://docs.microsoft.com/en-us/dynamics-nav/system-requirements-for-microsoft-dynamics-nav",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "How to install this Cumulative Update\r\nhttps://support.microsoft.com/en-us/help/2834770",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57829",
+    "downloadPreload": true
+}

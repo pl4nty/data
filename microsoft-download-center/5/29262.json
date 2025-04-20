@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for India",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX 2009 feature, released in rollup 8, that is specific to users in India.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RU8 Country_specific update for India.pdf",
+            "url": "https://download.microsoft.com/download/8/a/3/8a3e2e68-b67d-4d35-a8ce-88722773e5a6/RU8 Country_specific update for India.pdf",
+            "size": "411140",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For more information about other features that apply to India, refer to the Help. Information that is specific to India includes (IND) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "RU8 Country_specific update for India.pdf"
+    ],
+    "detailsSection_file_size": [
+        "401.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29262",
+    "downloadPreload": true
+}

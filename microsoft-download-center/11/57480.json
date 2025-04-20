@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "NAIL agent language model",
+    "downloadDescription": "Language model for the NAIL agent",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "nail_agent_lm.zip",
+            "url": "https://download.microsoft.com/download/b/8/8/b88dddc1-f316-412a-94b3-025788436054/nail_agent_lm.zip",
+            "size": "8595180119",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LICENSE.pdf",
+            "url": "https://download.microsoft.com/download/b/8/8/b88dddc1-f316-412a-94b3-025788436054/LICENSE.pdf",
+            "size": "68285",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the zipped language model used by the NAIL agent.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "nail_agent_lm.zip",
+        "LICENSE.pdf"
+    ],
+    "detailsSection_file_size": [
+        "8.0 GB",
+        "66.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Download this file to the language_model directory, and unzip it there.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57480",
+    "downloadPreload": true
+}

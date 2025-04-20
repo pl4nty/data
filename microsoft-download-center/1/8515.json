@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Micro Framework 4.1 SDK",
+    "downloadDescription": "This is the Version 4.1 release of the .NET Micro Framework SDK for developing managed applications on small devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SDK.zip",
+            "url": "https://download.microsoft.com/download/0/9/5/0958cb08-e209-4dfd-a945-9da0fe64b3a4/SDK.zip",
+            "size": "18799987",
+            "version": "4.1",
+            "datePublished": "7/15/2024 3:14:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nThe .NET Micro Framework is a .NET implemenation for very small, resource constrained devices.  With version 4.1, we have added VS 2010 compatibility with multi targeting to support development for NETMF versions 3.0, 4.0, and 4.1.  We have also added support for Big Endian processors.  In addition, we have included ports for the Following Renesas processors and development boards: SH7216 RSK, SH7264 M3A HS64, SH7264 RSK, SH7619 EVB. We have added new applications diagnostics and DPWS custom bindings and  additional samples.   Finally, we have added the Hashtable type and enhanced the SPI type.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1",
+    "detailsSection_file_name": [
+        "SDK.zip"
+    ],
+    "detailsSection_file_size": [
+        "17.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>Supported Development Environments:</B> Microsoft Visual Studio 2010 or Microsoft Visual C# Express Edition 2010 \r\n<B>Supported Operating Systems:</B> Windows XP; Windows Vista; Windows Server 2008; Windows 7",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Copy the download to your computer for installation at a later time by clicking <B>Save</B> or <B>Save this program to disk</B>.</LI><LI>Run the self-extracting executable that you downloaded.</LI><LI>Click <b>Setup</b>.</LI></OL>\r\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8515",
+    "downloadPreload": true
+}

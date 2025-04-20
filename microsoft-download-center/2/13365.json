@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2010 Attendee Update KB 3171502 (Admin level install)",
+    "downloadDescription": "This download includes all available updates for Lync 2010 Attendee.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AttendeeAdmin.msp",
+            "url": "https://download.microsoft.com/download/2/f/7/2f7b791f-16df-4a08-b6e9-8cdac28c1e6a/AttendeeAdmin.msp",
+            "size": "17620992",
+            "version": "7577.4504",
+            "datePublished": "7/15/2024 3:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download for Microsoft Lync 2010 Attendee is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/3165438\">3165438</A>. \n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2853846",
+        "name": "KB2853846"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7577.4504",
+    "detailsSection_file_name": [
+        "AttendeeAdmin.msp"
+    ],
+    "detailsSection_file_size": [
+        "16.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office program:</b></li><br />\n<ul><li>Microsoft Lync 2010 Attendee (Admin level install)</li></ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button and saving the file to your hard disk. </li>\n</ol>\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "additional Lync Server and Skype for Business Server configuration required after you install Security Bulletin MS16-065 ",
+            "url": "https://support.microsoft.com/en-us/kb/3165438"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13365",
+    "downloadPreload": true
+}

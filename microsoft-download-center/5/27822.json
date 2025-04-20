@@ -1,0 +1,152 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Server 2011",
+    "downloadDescription": "Download Microsoft Dynamics CRM Server 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CRM2011-Server-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/9/9/b/99b71940-d7e5-4de1-9372-2c637d98bf7f/CRM2011-Server-ENU-amd64.exe",
+            "size": "121979528",
+            "version": "05.00.9690.1992",
+            "datePublished": "7/15/2024 4:21:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        }
+    ],
+    "detailsSection": "Download Microsoft Dynamics CRM Server 2011. This download also includes Microsoft Dynamics CRM Reporting Extensions.<br /><br/>\r\nAfter the download is complete, run Microsoft Dynamics CRM Server Setup, during which you may insert a valid commercial product key or use one of the following 90-day trial keys. <br/><br/>\n<ul><li>Microsoft Dynamics CRM Workgroup Server 2011 (5 CAL limit): H84KC-JH8DF-7PDYK-TXBXR-2RMMT </li>\n<li>Microsoft Dynamics CRM Server 2011 (no CAL limit): MQM2H-JYYRB-RRD6J-8WBBC-CVBD3 </li></ul><br/><br/>\r\nNotice that, if you use a 90-day trial key, you can enter a valid commercial product key at any time during the trial period to continue to use the product.<br/><br/>\r\n<b>Important</b>   If you want to upgrade to Microsoft Dynamics CRM 2011 from Microsoft Dynamics CRM 3.0 or an earlier version, see <a href=\"http://support.microsoft.com/kb/2568685\">How to Upgrade to Microsoft Dynamics CRM 2011 from Microsoft CRM 3.0 or Microsoft CRM 1.2</a>. \r\n\n\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "05.00.9690.1992",
+    "detailsSection_file_name": [
+        "CRM2011-Server-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "116.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For the latest information about Microsoft Dynamics CRM 2011 hardware and software requirements, and installation instructions, see the <a href=\"http://go.microsoft.com/fwlink/?LinkID=200050\">Microsoft Dynamics CRM 2011 Implementation Guide</a>.\n\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\n<li>The download is a self-extracting executable file. To start the download, click <b>Download</b>. </li>\n<li>When the File Download dialog box appears, click <b>Save</b> to save the file to your computer. </li>\n<li>When you are ready to install the product, double-click the executable file, and then follow the instructions on the screen. </li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2011 Readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203042"
+        },
+        {
+            "title": "microsoft Dynamics CRM 2011 SDK",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=207027"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27822",
+    "downloadPreload": true
+}

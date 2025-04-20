@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Application Builder for Windows Embedded Compact 2013",
+    "downloadDescription": "Application Builder for Windows Embedded Compact 2013 (with the latest fixes as of Sep 2017) provides the tools you need to develop applications that target Windows Embedded Compact 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppBuilderSetup_VS2015_v25520.zip",
+            "url": "https://download.microsoft.com/download/b/c/4/bc4fa89d-4f7b-4022-a4c1-2b3b6e08d8be/AppBuilderSetup_VS2015_v25520.zip",
+            "size": "7037724",
+            "version": "14.0.25520",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppBuilderSetup_VS2013_v60801.zip",
+            "url": "https://download.microsoft.com/download/b/c/4/bc4fa89d-4f7b-4022-a4c1-2b3b6e08d8be/AppBuilderSetup_VS2013_v60801.zip",
+            "size": "6031076",
+            "version": "14.0.25520",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Application_Builder_WEC2013.htm",
+            "url": "https://download.microsoft.com/download/b/c/4/bc4fa89d-4f7b-4022-a4c1-2b3b6e08d8be/Application_Builder_WEC2013.htm",
+            "size": "1653",
+            "version": "14.0.25520",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppBuilderSetup_VS2012_v50806.zip",
+            "url": "https://download.microsoft.com/download/b/c/4/bc4fa89d-4f7b-4022-a4c1-2b3b6e08d8be/AppBuilderSetup_VS2012_v50806.zip",
+            "size": "5881729",
+            "version": "14.0.25520",
+            "datePublished": "7/15/2024 3:33:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Application Builder for Windows Embedded Compact 2013 enables managed and native application development using Visual Studio 2012, Visual Studio 2013 or Visual Studio 2015. It also provides an easy application deployment mechanism and other Visual Studio integration features.\r\n<br /><br />\r\nIf the <b>Build.Deploy Solution/Project</b> menu item is missing or grayed-out then this is likely due to corruption of the MEF Component Cache. \r\n<br />\r\nTo resolve this issue, the MEF Component Cache needs to be cleared via one of the following options\r\n<ol>\r\n<li>installing the Visual Studio extension <a href=\"https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ClearMEFComponentCache\">Clear MEF Component Cache</a> from the\r\n <a href=\"https://marketplace.visualstudio.com/\">Visual Studio Marketplace</a></li>\r\n<li>manually deleting the cache files located at <b>%localappdata%\\Microsoft\\VisualStudio\\&lt;nn&gt;\\ComponentModelCache</b></li>\r\n</ol>\r\nVisual Studio needs to be restarted after clearing the cache.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.25520",
+    "detailsSection_file_name": [
+        "AppBuilderSetup_VS2015_v25520.zip",
+        "AppBuilderSetup_VS2013_v60801.zip",
+        "Application_Builder_WEC2013.htm",
+        "AppBuilderSetup_VS2012_v50806.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB",
+        "5.8 MB",
+        "1.6 KB",
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Visual Studio 2012 Update 2 or higher</li>\r\n<li>Visual Studio 2012 or Visual Studio 2013 Professional, Premium, or Ultimate edition</li>\r\n<li>Visual Studio 2015</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download the appropriate version for your system</li>\r\n<li>Extract the zip file contents</li>\r\n<li>Execute VSEmbedded_AppBuilder.exe to install Application Builder and the necessary components</li>\r\n</ol>\r\n",
+    "additionalInformationSection": "Visual Studio 2015 versions\r\n<ul>\r\n<li>14.0.25520 - Sep 2017</li>\r\n<li>14.0.25322 - Jun 2017</li>\r\n<li>14.0.25123 - Apr 2017</li>\r\n<li>14.0.24930 - Feb 2017</li>\r\n<li>14.0.24128 - Aug 2016</li>\r\n<li>14.0.23801 - Mar 2016</li>\r\n<li>14.0.23428 - RTM Base Release (Oct 2015)</li>\r\n</ul>\r\nVisual Studio 2013 versions\r\n<ul>\r\n<li>12.0.60801 - Sep 2017</li>\r\n<li>12.0.50608 - Aug 2016</li>\r\n<li>12.0.50115 - Mar 2016</li>\r\n<li>12.0.40625 - Sep 2015</li>\r\n<li>12.0.40302 - Mar 2015</li>\r\n<li>12.0.30808 - Sep 2014</li>\r\n<li>12.0.30527 - Aug 2014</li>\r\n<li>12.0.30226 - RTM Base Release</li>\r\n</ul>\r\nVisual Studio 2012 versions\r\n<ul>\r\n<li>11.0.50806 - Aug 2016</li>\r\n<li>11.0.50805 - Mar 2016</li>\r\n<li>11.0.50801 - Sep 2015</li>\r\n<li>11.0.50730 - Mar 2015</li>\r\n<li>11.0.50729 - Sep 2014</li>\r\n<li>11.0.50728 - Aug 2014</li>\r\n<li>11.0.50727 - RTM Base Release</li>\r\n</ul>\r\nThe Sep 2017 (12.0.60801 & 14.0.25520) releases resolves the following issues:\r\n<ul>\r\n<li>Remote tools connection fails when device has multiple active NICs</li>\r\n</ul>\r\nThe Jun 2017 (14.0.25322) release resolves the following VS2015 issues:\r\n<ul>\r\n<li>Existing folder contents are removed during deployment</li>\r\n</ul>\r\nThe Apr 2017 (14.0.25123) release resolves the following VS2015 issues:\r\n<ul>\r\n<li>VS2015 freezes once you enter the device IP during application debug</li>\r\n</ul>\r\nThe Feb 2017 (14.0.24930) release resolves the following VS2015 issues:\r\n<ul>\r\n<li>Access Denied error when deploying a second time to a mounted volume</li>\r\n<li>CE application debugger steps into (F11) functions when you select step over (F10)</li>\r\n</ul>\r\nThe Aug 2016 (11.0.50806, 12.0.50608 & 14.0.24128) release resolves the following issues:\r\n<ul>\r\n<li>Debugging fails if spaces at start/end of IP address</li>\r\n<li>Large number of messages when debugging/deploying using Serial Port (VS2015 only)</li>\r\n</ul>\r\nThe Mar 2016 (11.0.50805, 12.0.50115 & 14.0.23801) release resolves the following issues:\r\n<ul>\r\n<li>Implement the StackFrame class in .NET CF 3.9.</li>\r\n<li>Missing Application Tab in Project Properties for .NET CF 3.9/C# projects.</li>\r\n<li>Enable Configuration Type Utility.</li>\r\n</ul>\r\nThe Sep 2015 (11.0.50801 & 12.0.40625) release resolves the following issues:\r\n<ul>\r\n<li>COM registration for additional files is ignored.</li>\r\n<li>Remote Directory for additional files is ignored.</li>\r\n</ul>\r\nThe Mar 2015 (11.0.50730 & 12.0.40302) release resolves the following issues:\r\n<ul>\r\n<li>Now supports deploying of only a DLL.</li>\r\n<li>Console window from msvsmon.exe takes foreground window.</li>\r\n<li>Reference to interop DLL error.</li>\r\n</ul>\r\nThe Sep 2014 (11.0.50729 & 12.0.30808) release resolves the following issue:\r\n<ul>\r\n<li>Execution and debugging a C++ application fails when the remote directory is changed.</li>\r\n</ul>\r\nThe Aug 2014 (11.0.50728 & 12.0.30527) release resolves the following issues:\r\n<ul>\r\n<li>The Debug.Start Debugging option will delete the deployment directory contents.</li>\r\n<li>You cannot deploy a class library to the device if the solution does not contain an executable project.</li>\r\n<li>You cannot specify an external program to execute when run is clicked.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38819",
+    "downloadPreload": true
+}

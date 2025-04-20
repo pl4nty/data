@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Flight Simulator X SP2 English",
+    "downloadDescription": "Flight Simulator X Service Pack 2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "fsx_sp2_ENU.msi",
+            "url": "https://download.microsoft.com/download/d/6/9/d69519cc-b2bb-44c1-84d3-b9f77507f813/fsx_sp2_ENU.msi",
+            "size": "174091264",
+            "version": "61472",
+            "datePublished": "3/13/2025 4:08:29 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Flight Simulator X Service Pack 2 addresses these post-release customer concerns:<br />\nMultiplayer compatibility<br />\nDirectX\u00ae 10 preview",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "61472",
+    "detailsSection_file_name": [
+        "fsx_sp2_ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "166.0 MB"
+    ],
+    "detailsSection_file_date": "3/13/2025",
+    "systemRequirementsSection": "2.0 GHz processor with 1GB of Ram<br />\n<br />\nDX9 Shader model 2.0 graphics card and 256MB of video memory<br />\n<br />\n30GB free hard disk space<br />\n<br />\nAudio card with speakers and/or headphones<br />\n<br />\nMultiplayer requires network connectivity with at least 56.6k bidirectional speeds",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the service pack to the existing Flight Simulator X installation.<br />\n<br />\nThe service pack is one download per supported language. It detects Standard versus Deluxe SKUs and installs appropriately.<br />\n<br />\nYour Flight Simulator X installation must have all original files unchanged: a repair may be necessary if you have changed any files.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "flight Sim Insider",
+            "url": "http://www.fsinsider.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8986",
+    "downloadPreload": true
+}

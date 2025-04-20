@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Backup to Azure GTM materials",
+    "downloadDescription": "This zipped folder contains campaigns, sample service offers, and templates for SQL backup to Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Backup to Azure GTM materials.zip",
+            "url": "https://download.microsoft.com/download/3/c/a/3ca4940f-06ac-49b0-953c-eb4313fdff32/SQL Backup to Azure GTM materials.zip",
+            "size": "26550103",
+            "version": "July 2016",
+            "datePublished": "7/15/2024 4:11:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains campaigns, sample service offers, and templates for SQL backup to Azure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "SQL Backup to Azure GTM materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "25.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53108",
+    "downloadPreload": true
+}

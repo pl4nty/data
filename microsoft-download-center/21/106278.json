@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2017 RTM CU (KB5046061)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2017 RTM CU.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2017-KB5046061-x64.exe",
+            "url": "https://download.microsoft.com/download/8/8/b/88b75d5b-92dc-433b-9ccb-3532394f5e77/SQLServer2017-KB5046061-x64.exe",
+            "size": "565128752",
+            "version": "14.0.3480.1",
+            "datePublished": "10/8/2024 3:35:50 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLEXPR_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/8/8/b/88b75d5b-92dc-433b-9ccb-3532394f5e77/SQLEXPR_x64_ENU.exe",
+            "size": "473714224",
+            "version": "14.0.3480.1",
+            "datePublished": "10/8/2024 3:35:50 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLEXPRADV_x64_ENU.exe",
+            "url": "https://download.microsoft.com/download/8/8/b/88b75d5b-92dc-433b-9ccb-3532394f5e77/SQLEXPRADV_x64_ENU.exe",
+            "size": "1183303328",
+            "version": "14.0.3480.1",
+            "datePublished": "10/8/2024 3:35:50 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/>\r\nYou can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\r\n\r\nMore information about the vulnerability can be found here: \r\n<a name=\"KB5046061\"></a><a href=\"https://support.microsoft.com/help/5046061\">KB5046061</a><br /><br />\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. \r\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5046061",
+        "name": "KB5046061"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.3480.1",
+    "detailsSection_file_name": [
+        "SQLServer2017-KB5046061-x64.exe",
+        "SQLEXPR_x64_ENU.exe",
+        "SQLEXPRADV_x64_ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "538.9 MB",
+        "451.8 MB",
+        "1.1 GB"
+    ],
+    "detailsSection_file_date": "10/8/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2017 RTM instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2017 RTM Windows instances that have had a Cumulative Update applied.<br />After you install this update, you may have to restart your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106278",
+    "downloadPreload": true
+}

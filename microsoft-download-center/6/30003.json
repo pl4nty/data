@@ -1,0 +1,145 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Monitoring Pack for Server App-V",
+    "downloadDescription": "This management pack monitors a Server App-V v1.0 environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "(RUS) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(RUS) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "346112",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(DEU) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(DEU) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "345088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(FRA) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(FRA) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "345088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(PTB) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(PTB) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "344064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SAV_MPGuide v2.doc",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/SAV_MPGuide v2.doc",
+            "size": "199680",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "(ENU) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(ENU) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "342528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(ITA) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(ITA) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "343552",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(ESN) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(ESN) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "342528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(CHS) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(CHS) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "349696",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "(JPN) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "url": "https://download.microsoft.com/download/1/0/d/10d2a42c-62c2-4b01-9c1b-04fb081a3cf0/(JPN) System Center Monitoring Pack for Microsoft Server App-V.msi",
+            "size": "349696",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack monitors a Server App-V v1.0 environment. <br/>\r\n<br/>\r\n<b>Feature Summary</b> <br/>\r\nThis monitoring pack supports up to 3 events: <br/>\r\n<ol>\r\n<li> Monitor for the Server Application Virtualization Agent service health </li>\r\n<li> Monitor for the Server Application Virtualization Agent virtual registry health </li>\r\n<li> Monitor for virtual environment health  </li>\r\n</ol><br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>6/8/2012 - Original English release, version 1.0 </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "(RUS) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(DEU) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(FRA) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(PTB) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "SAV_MPGuide v2.doc",
+        "(ENU) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(ITA) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(ESN) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(CHS) System Center Monitoring Pack for Microsoft Server App-V.msi",
+        "(JPN) System Center Monitoring Pack for Microsoft Server App-V.msi"
+    ],
+    "detailsSection_file_size": [
+        "338.0 KB",
+        "337.0 KB",
+        "337.0 KB",
+        "336.0 KB",
+        "195.0 KB",
+        "334.5 KB",
+        "335.5 KB",
+        "334.5 KB",
+        "341.5 KB",
+        "341.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <b>Other Software: </b>System Center Operations Manager 2007 SP1 or later </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "Import the \u200bServerAppV.MP file to monitor a Server App-V environment.\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Homepage",
+            "url": "http://www.microsoft.com/systemcenter/en/us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30003",
+    "downloadPreload": true
+}

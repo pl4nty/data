@@ -1,0 +1,112 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae Backup to Microsoft Azure\u00aeTool",
+    "downloadDescription": "Microsoft SQL Server Backup to Microsoft Azure Tool enables backup to Azure Blob Storage and encrypts and compresses SQL Server backups stored locally or in the cloud.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLBackup2Azure_Win32.msi",
+            "url": "https://download.microsoft.com/download/6/5/7/6570354e-3e88-43b1-8f9b-07f184c4d38e/ENU/x86/SQLBackup2Azure_Win32.msi",
+            "size": "9453568",
+            "version": "v2.0",
+            "datePublished": "7/15/2024 3:19:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLBackup2Azure_x64.msi",
+            "url": "https://download.microsoft.com/download/6/5/7/6570354e-3e88-43b1-8f9b-07f184c4d38e/ENU/x64/SQLBackup2Azure_x64.msi",
+            "size": "10027008",
+            "version": "v2.0",
+            "datePublished": "7/15/2024 3:19:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SQL Server Backup to Windows Azure Tool.docx",
+            "url": "https://download.microsoft.com/download/6/5/7/6570354e-3e88-43b1-8f9b-07f184c4d38e/ENU/Microsoft SQL Server Backup to Windows Azure Tool.docx",
+            "size": "98880",
+            "version": "v2.0",
+            "datePublished": "7/15/2024 3:19:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "In conjunction with in-the-box Cloud Backup in SQL Server 2014, Microsoft SQL Server Backup to Microsoft Azure Tool enables a single cloud backup strategy across all versions of SQL Server. Reduce CAPEX and OPEX by shifting from on-premises storage to secure and cost-effective  Azure Blob Storage Service, and protect your data and with the durability of the Microsoft Azure platform.<br/>\r\n<br/>\r\nFor prior versions of SQL Server, the Tool provides:<br/>\r\n<ul>\r\n<li>Easy integration with Azure Blob Storage.</li>\r\n<li>Off-site SQL Server backups, accessible from anywhere. </li>\r\n<li> Encryption and compression for cloud and on-premises SQL Server backups.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v2.0",
+    "detailsSection_file_name": [
+        "SQLBackup2Azure_Win32.msi",
+        "SQLBackup2Azure_x64.msi",
+        "Microsoft SQL Server Backup to Windows Azure Tool.docx"
+    ],
+    "detailsSection_file_size": [
+        "9.0 MB",
+        "9.6 MB",
+        "96.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Internet Access",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\r\n<ol>\r\n<li>Download the 32bit or 64bit version of the SQL Server Backup to Microsoft Azure Tool installer that matches your computer\u2019s OS architecture. </li>\r\n<li> Click Open to start the installation immediately or click Save to save the installation .msi file to disk and install it later. </li>\r\n<li>Accept the license term of this tool. </li>\r\n<li> Click Next to complete the installation.</li>\r\n</ol>\r\n",
+    "additionalInformationSection": "Your feedback is important. Help improve SQL Server by <a href=\"http://go.microsoft.com/fwlink/?LinkID=168586\">submitting bugs to Microsoft\u00ae Connect</a>.<br /><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40740",
+    "downloadPreload": true
+}

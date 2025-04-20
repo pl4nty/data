@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SQL 2014 DR hybrid kit",
+    "downloadDescription": "This zipped file contains SQL 2014 Hybrid deployment kit",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL 2014 DR hybrid kit.zip",
+            "url": "https://download.microsoft.com/download/7/2/8/72865995-d8c3-4d8c-af5f-107d3e8624b2/SQL 2014 DR hybrid kit.zip",
+            "size": "25673258",
+            "version": "January 2014",
+            "datePublished": "11/15/2023 4:10:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped file contains SQL 2014 Hybrid deployment kit containing\n\n1. Technical deck containing the details of the Hybrid solution for hosted or on-premises environment to Azure using CSP\n2. Technical deck containing the details of how to create a dev/test environment in Azure via CSP\n3. Hybrid Network lab enabling hybrid communication via hosted or on-premises environment with Azure\n4. Hybrid Disaster Recovery Lab \n5. Hybrid Dev/Test Lab\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "SQL 2014 DR hybrid kit.zip"
+    ],
+    "detailsSection_file_size": [
+        "24.5 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50772",
+    "downloadPreload": true
+}

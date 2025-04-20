@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2010 Professional Whitepaper",
+    "downloadDescription": "The Microsoft Visual Studio 2010 Professional development system is an integrated environment that simplifies creating, debugging, and deploying applications. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VisualStudio2010Professional_Whitepaper.xps",
+            "url": "https://download.microsoft.com/download/b/8/b/b8b99d93-cab3-4ad5-94bd-e0ccc554f177/VisualStudio2010Professional_Whitepaper.xps",
+            "size": "2566608",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Visual Studio 2010 Professional development system is an integrated environment that simplifies creating, debugging, and deploying applications. Unleash your creativity and bring your vision to life with powerful design surfaces and innovative collaboration methods for developers and designers. Work within a personalized environment by targeting a growing number of platforms, including Microsoft SharePoint and cloud applications, and accelerate the coding process by using your existing skills.  Integrated support for test-first development and new debugging tools let you find and fix bugs quickly and easily to ensure high quality solutions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VisualStudio2010Professional_Whitepaper.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the Visual Studio 2010 Professional whitepaper",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10142",
+    "downloadPreload": true
+}

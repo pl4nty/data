@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Navigate the DevOps Journey White Paper",
+    "downloadDescription": "This IDG white paper discusses how achieving the goals of continuous delivery and improvement requires overcoming cultural barriers and finding the right balance of technology tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MS_WP0515_FINAL.pdf",
+            "url": "https://download.microsoft.com/download/2/6/b/26b75599-f16e-4bf7-8264-140f05e7bb61/MS_WP0515_FINAL.pdf",
+            "size": "690034",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:51:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DevOps is a journey that requires previously segregated teams to overcome cultural barriers. Focus on business value and shared solution responsibility transcends individual roles and traditional barriers. The journey is unique to every organization, but there are tenets and practices that are generally consistent. Success in speeding up application development with agile and similar methodologies and processes have, in turn, spurred a \u201cbottom-up\u201d initiative to more tightly align the development teams that build software and the operations teams that run the software.\r\n\r\nThis white paper takes a look at the reasons why DevOps is rapidly going mainstream and Microsoft's set of products that support the underlying desire of DevOps to be more efficient and to become more effective in the software delivery process.\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MS_WP0515_FINAL.pdf"
+    ],
+    "detailsSection_file_size": [
+        "673.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\nAdobe Acrobat Reader (PDF version) \r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Please open this file with Adobe Acrobat Reader.\r\n\r\n1. Choose the Download button on this page to start the download. Or, select a different language from the drop-down list, and then Choose Go.\r\n\r\n2. Do one of the following: \r\n\r\n- To start the installation immediately, choose Open or Run this program from its current location.\r\n\r\n- To copy the download to your computer for installation at a later time, choose Save or Save this program to disk.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47599",
+    "downloadPreload": true
+}

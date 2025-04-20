@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 mapping of CSA Security, Compliance and Privacy Cloud Control Matrix requirements",
+    "downloadDescription": "These White Papers describe how Office 365, Windows Azure, and Microsoft Dynamics CRM Online fulfill the security, compliance and risk management requirements as defined by the Cloud Security Alliance, Cloud Control Matrix.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Standard Response to Request For InformationCRMOLSecurity-Privacy_Dec_2013.docx",
+            "url": "https://download.microsoft.com/download/7/4/9/749df9e9-4357-4a73-8fd8-9602b1f7a2e1/Standard Response to Request For InformationCRMOLSecurity-Privacy_Dec_2013.docx",
+            "size": "4159786",
+            "version": "6/28/2011 ",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx",
+            "url": "https://download.microsoft.com/download/7/4/9/749df9e9-4357-4a73-8fd8-9602b1f7a2e1/StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx",
+            "size": "407961",
+            "version": "6/28/2011 ",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Office 365 mapping of CSA Security Compliance and Privacy Cloud Control Matrix requirements_FINALv2final_final.docx",
+            "url": "https://download.microsoft.com/download/7/4/9/749df9e9-4357-4a73-8fd8-9602b1f7a2e1/Office 365 mapping of CSA Security Compliance and Privacy Cloud Control Matrix requirements_FINALv2final_final.docx",
+            "size": "4570601",
+            "version": "6/28/2011 ",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Cloud Security Alliance published the Cloud Control Matrix, to support consumers in the evaluation of cloud services and to identify questions prudent to have answered before moving to cloud services.  In response to this publication, Microsoft has created this document to outline how we meet the suggested principals and mapped them to the International Standards Organization (ISO) 27001:2005 and ISO 27002.\r\nWith this standardized response we would like to empower customers with in-depth information to evaluate different offerings in the market place today.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6/28/2011 ",
+    "detailsSection_file_name": [
+        "Standard Response to Request For InformationCRMOLSecurity-Privacy_Dec_2013.docx",
+        "StandardResponsetoRequestforInformationWindowsAzureSecurityPrivacy.docx",
+        "Office 365 mapping of CSA Security Compliance and Privacy Cloud Control Matrix requirements_FINALv2final_final.docx"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB",
+        "398.4 KB",
+        "4.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Online TechCenter",
+            "url": "http://technet.microsoft.com/en-us/msonline/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26647",
+    "downloadPreload": true
+}

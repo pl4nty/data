@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager Authoring Tool 2022",
+    "downloadDescription": "System Center Service Manager Authoring Tool 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center 2022 Service Manager Authoring Tool.exe",
+            "url": "https://download.microsoft.com/download/2/b/8/2b86c70b-dc92-4940-a0e8-9c1d10ece2ed/System Center 2022 Service Manager Authoring Tool.exe",
+            "size": "55257760",
+            "version": "2022",
+            "datePublished": "7/15/2024 5:06:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Service Manager Authoring Tool 2022 is a tool for customization and extension of the built in functionality in System Center Service Manager. This release supports modifying existing process management packs and creating new management packs that define extensions to the Service Manager database for tracking additional information, customizations of forms or new forms, and new workflows. This release is available in 10 languages (English, Spanish, German, French, Italian, Chinese - Simplified, Chinese - Traditional, Korean, Japanese, Russian). \r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2022",
+    "detailsSection_file_name": [
+        "System Center 2022 Service Manager Authoring Tool.exe"
+    ],
+    "detailsSection_file_size": [
+        "52.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This release is compatible with System Center Service Manager 2022. It contains the final set of features for this version, including:\r\n<br/>\r\n<ul>\r\n<li>Form customization, supporting an extended library of controls</li>\r\n<li>Creating new simple forms to support custom classes</li>\r\n<li>Class editor for creating and extending classes and relationships in the Service Manager database</li>\r\n<li>Creation of workflows with detailed trigger criteria and extensible library of actions</li>\r\n<li>Management pack support including sealing</li>\r\n<li>Class Browser and Form Browser to easily locate classes and forms regardless of management pack</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows Server 2019",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<b>Supported Service Manager Versions</b><br/>\r\nSystem Center Service Manager 2022",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105032",
+    "downloadPreload": true
+}

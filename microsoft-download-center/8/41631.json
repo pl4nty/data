@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Client Utilities Redistributable Package",
+    "downloadDescription": "A stand-alone, and redistributable, installer for the Microsoft HPC Pack 2012 R2 client utilities",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HpcClient_x86.Msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3ba65c-669d-4f2f-a295-6a16aa730b59/HpcClient_x86.Msi",
+            "size": "17677824",
+            "version": "4.2.4400.0",
+            "datePublished": "7/15/2024 4:30:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HpcClient_x64.Msi",
+            "url": "https://download.microsoft.com/download/7/a/3/7a3ba65c-669d-4f2f-a295-6a16aa730b59/HpcClient_x64.Msi",
+            "size": "17837056",
+            "version": "4.2.4400.0",
+            "datePublished": "7/15/2024 4:30:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This package installs a subset of the HPC Pack 2012 R2 client utilities that can be installed with the HPC Pack 2012 R2 release.  <br/>\r\n <br/>\r\nYou can now develop applications that interact with an HPC Pack 2012 R2-based cluster without requiring your users to already have the HPC Pack client utilities installed on their computers. You can also use the package to quickly deploy the client utilities to workstations at your organization through your standard application deployment process. <br/>\r\n <br/>\r\nYou may redistribute this client utilities installation package with your own applications. Please refer to the license agreement for additional details. \r",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.2.4400.0",
+    "detailsSection_file_name": [
+        "HpcClient_x86.Msi",
+        "HpcClient_x64.Msi"
+    ],
+    "detailsSection_file_size": [
+        "16.9 MB",
+        "17.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A computer running one of the supported operating systems: Windows Server 2012 R2, Windows 8.1, Windows Server 2012, Windows 8, Windows Server 2008 R2, Windows 7, Windows Server 2008, Windows Vista   ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install on a workstation: Run either the HpcClient_x64.msi or HpcClient_x86.msi as appropriate to your hardware platform. <br/>\r\nFor redistribution: You must include the entire installer on your installation media. Your setup program can run the MSI to install the client utilities, but you may not bundle any of the individual files in your own installer. Refer to the license agreement for additional information.<br/>\r\n<B>Important:</B> This package installs HPC Job Manager and command-line commands, but does not enable the Windows HPC PowerShell job submission cmdlets for use by default. If you want to run the HPC PowerShell job submission cmdlets on a client computer, see <a href=\"http://technet.microsoft.com/library/dn595130.aspx\">Enable HPC PowerShell with the Client Redistributable Package</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack 2012 R2",
+            "url": "http://www.microsoft.com/download/details.aspx?id=41630"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41631",
+    "downloadPreload": true
+}

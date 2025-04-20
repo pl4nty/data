@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Host Integration Server 2006 for x64",
+    "downloadDescription": "This update provides a fix for a security vulnerability in the SNA RPC Service.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HIS2006-KB956695-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/1/8/2/182a952e-dbf1-4eac-9490-a69ca3c51c86/HIS2006-KB956695-x64-ENU.exe",
+            "size": "243056",
+            "version": "956695",
+            "datePublished": "7/15/2024 3:15:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update provides a fix for a security vulnerability in the SNA RPC Service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB956695",
+        "name": "KB956695"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS08-059",
+        "name": "MS08-059"
+    },
+    "detailsSection_file_version": "956695",
+    "detailsSection_file_name": [
+        "HIS2006-KB956695-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "237.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Host Integration Server 2006 (x64)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 x64 editions",
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11548",
+    "downloadPreload": true
+}

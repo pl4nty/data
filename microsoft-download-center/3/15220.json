@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 Upgrade Technical Reference Guide",
+    "downloadDescription": "This 490-page document covers the essential phases and steps to upgrade existing instances of SQL Server 2000 and 2005 to SQL Server 2008 by using best practices. These include preparation tasks, upgrade tasks, and post-upgrade tasks. It is intended to be a supplement to SQL Server 2008 Books Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL2008UpgradeTechnicalReferenceGuide.docx",
+            "url": "https://download.microsoft.com/download/d/2/2/d22d16c3-7637-41d3-99da-10e7cebad290/SQL2008UpgradeTechnicalReferenceGuide.docx",
+            "size": "7318119",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A successful upgrade to SQL Server 2008 should be smooth and trouble-free. To achieve that smooth transition, you must devote plan sufficiently for the upgrade, and match the complexity of your database application. Otherwise, you risk costly and stressful errors and upgrade problems.\r\n\r\nLike all IT projects, planning for every contingency and then testing your plan gives you confidence that you will succeed. But if you ignore the planning process, you increase the chances of running into difficulties that can derail and delay your upgrade.\r\n\r\nThis document covers the essential phases and steps involved in upgrading existing SQL Server 2000 and 2005 instances to SQL Server 2008 by using best practices. These include preparation tasks, upgrade tasks, and post-upgrade tasks. \r\n<ul>\r\n<li>Chapter 1 gives an overview of the technical issues and decisions that are involved in an upgrade to SQL Server 2008, as well as recommendations for planning and deploying an upgrade. </li>\r\n<li>Chapter 2 addresses issues related to upgrading to SQL Server 2008 Management Tools.</li>\r\n<li>Chapters 3 through 8 focus on upgrade issues for SQL Server relational databases. </li>\r\n<li>Chapter 9 addresses upgrading to SQL Server 2008 Express.</li>\r\n<li>Chapters 10 through 14 focus on upgrading to SQL Server 2008 Business Intelligence components: Analysis Services, Data Mining, Integration Services, and Reporting Services.</li>\r\n<li>Chapter 15 addresses the implications of upgrading to SQL Server 2008 for other Microsoft applications and platforms.</li>\r\n<li>Appendix 1 contains a table of allowed SQL Server 2008 version and edition upgrade paths.</li>\r\n<li>Appendix 2 contains an upgrade planning checklist.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL2008UpgradeTechnicalReferenceGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Word 2007</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button on this page to download the Word document to a folder on your computer.",
+    "relatedResourcesSection": [
+        {
+            "title": "resources for Upgrading to SQL Server 2008",
+            "url": "http://msdn.microsoft.com/en-us/library/cc936623.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15220",
+    "downloadPreload": true
+}

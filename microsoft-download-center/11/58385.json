@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Kinect Office Sample Recordings",
+    "downloadDescription": "Recording files from the Azure Kinect showing different settings.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OFFICE_SAMPLE_NFOV_UNBINNED.zip",
+            "url": "https://download.microsoft.com/download/7/a/f/7af845b3-1fe6-4b89-8960-f2ee2f6d52e9/OFFICE_SAMPLE_NFOV_UNBINNED.zip",
+            "size": "276710411",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OFFICE_SAMPLE_WFOV_UNBINNED.zip",
+            "url": "https://download.microsoft.com/download/7/a/f/7af845b3-1fe6-4b89-8960-f2ee2f6d52e9/OFFICE_SAMPLE_WFOV_UNBINNED.zip",
+            "size": "253494491",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OFFICE_SAMPLE_NFOV_2X2BINNED.zip",
+            "url": "https://download.microsoft.com/download/7/a/f/7af845b3-1fe6-4b89-8960-f2ee2f6d52e9/OFFICE_SAMPLE_NFOV_2X2BINNED.zip",
+            "size": "150286477",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OFFICE_SAMPLE_WFOV_2X2BINNED.zip",
+            "url": "https://download.microsoft.com/download/7/a/f/7af845b3-1fe6-4b89-8960-f2ee2f6d52e9/OFFICE_SAMPLE_WFOV_2X2BINNED.zip",
+            "size": "209165239",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Recording files from the Azure Kinect showing different settings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "OFFICE_SAMPLE_NFOV_UNBINNED.zip",
+        "OFFICE_SAMPLE_WFOV_UNBINNED.zip",
+        "OFFICE_SAMPLE_NFOV_2X2BINNED.zip",
+        "OFFICE_SAMPLE_WFOV_2X2BINNED.zip"
+    ],
+    "detailsSection_file_size": [
+        "263.9 MB",
+        "241.8 MB",
+        "143.3 MB",
+        "199.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This files can be viewed with Azure Kinect Viewer, see https://aka.ms/kinectdocs",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "See https://aka.ms/kinectdocs",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58385",
+    "downloadPreload": true
+}

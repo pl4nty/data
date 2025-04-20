@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2003/2003 R2 Retired Content",
+    "downloadDescription": "Windows Server 2003, Windows Server 2003 SP1 and SP2, and Windows Server 2003 R2 retired content. The content you requested has already retired. It's available to download on this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2003_en-us.pdf",
+            "url": "https://download.microsoft.com/download/3/5/0/3502f151-5e4c-48e1-8abe-c89e73cb1291/Windows Server 2003_en-us.pdf",
+            "size": "154752614",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:18:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Complete set of content formerly published at Windows TechNet for Windows Server 2003, Server 2003 Service Pack 1 and 2, and Windows Server 2003 R2. Includes all content shipped in the Windows Server 2003 product, along with content concerning Operations, Security and Protection, Technical Reference, Glossary, System Requirements, Getting Started, Planning and Architecture, and Deployment. Also includes technical library content for Windows Server 2003 Service Pack 1 and 2. For Windows Server 2003 R2, content includes Installation, Product Evaluation, Getting Started, Planning and Architecture, Deployment, and content included in the product.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows Server 2003_en-us.pdf"
+    ],
+    "detailsSection_file_size": [
+        "147.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any application capable of displaying PDF files",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>The download is a pdf file. To start the download, click Download.</LI>\r\n<LI>If the File Download dialog box appears, do one of the following:</LI>\r\n       <UL><LI>To start the download immediately, click Open.</LI>\r\n       <LI>To copy the download to your computer to view at a later time, click Save.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53314",
+    "downloadPreload": true
+}

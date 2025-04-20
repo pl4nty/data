@@ -1,0 +1,162 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 CU3",
+    "downloadDescription": "Microsoft BizTalk Server 2013 CU3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-CHS.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-CHS.exe",
+            "size": "19485720",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-KOR.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-KOR.exe",
+            "size": "19494936",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-DEU.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-DEU.exe",
+            "size": "19524632",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-ITA.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-ITA.exe",
+            "size": "19532824",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-FRA.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-FRA.exe",
+            "size": "19539992",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-ENU.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-ENU.exe",
+            "size": "17991192",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-ESP.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-ESP.exe",
+            "size": "19526168",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-CHT.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-CHT.exe",
+            "size": "19498008",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013CU3-KB3088676-JPN.exe",
+            "url": "https://download.microsoft.com/download/5/a/b/5abfb370-3715-4aec-aa69-ea9d30f8075e/BizTalk2013CU3-KB3088676-JPN.exe",
+            "size": "19531288",
+            "version": "3.10.344.2",
+            "datePublished": "7/15/2024 4:04:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 CU3",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.10.344.2",
+    "detailsSection_file_name": [
+        "BizTalk2013CU3-KB3088676-CHS.exe",
+        "BizTalk2013CU3-KB3088676-KOR.exe",
+        "BizTalk2013CU3-KB3088676-DEU.exe",
+        "BizTalk2013CU3-KB3088676-ITA.exe",
+        "BizTalk2013CU3-KB3088676-FRA.exe",
+        "BizTalk2013CU3-KB3088676-ENU.exe",
+        "BizTalk2013CU3-KB3088676-ESP.exe",
+        "BizTalk2013CU3-KB3088676-CHT.exe",
+        "BizTalk2013CU3-KB3088676-JPN.exe"
+    ],
+    "detailsSection_file_size": [
+        "18.6 MB",
+        "18.6 MB",
+        "18.6 MB",
+        "18.6 MB",
+        "18.6 MB",
+        "17.2 MB",
+        "18.6 MB",
+        "18.6 MB",
+        "18.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows Server 2008 R2, Windows Server 2012, SQL Server 2008 R2 or SQL Server 2012\r\nMicrosoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)\r\nMicrosoft Visual Studio 2012\r\nMicrosoft Office Excel 2010 or 2013 \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49190",
+    "downloadPreload": true
+}

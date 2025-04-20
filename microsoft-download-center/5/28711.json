@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Templates by Edition sample diagram for Visio 2010",
+    "downloadDescription": "Quickly see which templates are included in each edition of Visio 2010 with this sample diagram, developed using the Organizational Chart template for the Visio 2010 MVP Sessions, Video 1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MVPSession1TemplatesbyEdition.vsd",
+            "url": "https://download.microsoft.com/download/c/f/1/cf18f758-972e-4788-b41d-d624a6d36326/MVPSession1TemplatesbyEdition.vsd",
+            "size": "828416",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Quickly see which templates are included in each edition of Microsoft Visio 2010 with this sample diagram, created as a companion to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 1. MVP Sessions Video 1 highlights how to create different diagrams from appropriate out-of-the-box templates that each include relevant shape stencils and sometimes include unique, template-specific capabilities. This sample diagram uses custom data graphics with the out-of-the-box Organizational Chart template to highlight in color the different template options for each edition of Visio 2010. Clicking each box also instantly provides more information in the Shape Data window. You can use similar techniques to show, for example, the difference between your current organizational structure and a proposed reorganization. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession1TemplatesbyEdition.vsd"
+    ],
+    "detailsSection_file_size": [
+        "809.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the sample diagram to your computer and then open it with Visio 2010.  To see the available templates by edition:\r\n1. Press Ctrl+A to select the entire chart area.\r\n2. In the ribbon on the Data tab, in the Display Data section, click Data Graphics and then click one of the three options under Available Data Graphics. (If you pause the pointer over each option, the tool tip will show that from left to right, they are Is in Standard, Is in Pro, and Is in Premium.)\r\n",
+    "additionalInformationSection": "Watch the Get Started with the Right Template video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Get-started-with-the-right-template.aspx).",
+    "relatedResourcesSection": [
+        {
+            "title": "the Visio 2010 MVP Sessions home page",
+            "url": "http://visio.microsoft.com/MVPSessions"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28711",
+    "downloadPreload": true
+}

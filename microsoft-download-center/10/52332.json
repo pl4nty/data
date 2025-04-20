@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SSD Extension for DiskSim Simulation Environment",
+    "downloadDescription": "This package extends the DiskSim disk-simulation environment from Carnegie Mellon University to provide limited support for solid-state-disk (SSD) simulation. Last published: March 6, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ssd-add-on.zip",
+            "url": "https://download.microsoft.com/download/9/7/a/97a84df6-e0f6-4f52-aeab-c5ae453ce61d/ssd-add-on.zip",
+            "size": "2752206",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package extends the DiskSim disk-simulation environment from Carnegie Mellon University to provide limited support for solid-state-disk (SSD) simulation.  This is not a simulator for any specific SSD, but rather a simulator for an idealized SSD that is parameterized by the properties of NAND flash chips such as read, write, erase latency, number of chips, connectivity, and chip bandwidth. DiskSim is primarily a trace-driven simulator, but it has some functionality for generating random workloads.  This add-on is delivered as a source subdirectory of DiskSim, along with a patch file to modify an existing DiskSim source tree to be compatible with the add-on.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ssd-add-on.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52332",
+    "downloadPreload": true
+}

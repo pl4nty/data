@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Server Manager Step-by-Step Guide - Scenarios",
+    "downloadDescription": "Server Manager is a new tool available with the Windows Server\u00ae 2008 operating system. This step-by-step guide provides an overview of Server Manager and walkthroughs of several common scenarios for using Server Manager in your enterprise",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Server Manager Step-by-Step Guide - Scenarios.doc",
+            "url": "https://download.microsoft.com/download/b/0/b/b0b33e1c-abab-478e-b639-0d6e3225e237/Server Manager Step-by-Step Guide - Scenarios.doc",
+            "size": "227840",
+            "version": "2008",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Server Manager is a new tool that is included in Windows Server\u00ae 2008 to guide information technology administrators through the process of installing, configuring, and managing server roles and features that are part of Windows Server 2008.\r\nThis step-by-step guide provides an overview of Server Manager and walkthroughs of several common scenarios for using Server Manager in your enterprise, focusing on new and enhanced features of Server Manager. This guide helps you learn about how Server Manager functions as a server role deployment, decommissioning, and management tool. The guide also describes how Server Manager helps improve productivity, so IT pros can spend less time deploying, managing, and maintaining their infrastructures, and spend more time using Windows Server 2008 software packages to add business value.\r\nThe scenarios described in this step-by-step guide include initial server configuration tasks as well as deployment, management, and removal of server roles and features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2008",
+    "detailsSection_file_name": [
+        "Server Manager Step-by-Step Guide - Scenarios.doc"
+    ],
+    "detailsSection_file_size": [
+        "222.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button to start the download.</li><li>Do one of the following:</li><ul><li>To start the installation immediately, click <b>Open</b>.</li><li>To copy the download to your computer for installation at a later time, click <b>Save</b>.</li><li>To cancel the installation, click <b>Cancel</b>.</li></ul></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13553",
+    "downloadPreload": true
+}

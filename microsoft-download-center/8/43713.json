@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "MSN default homepage & Bing default search engine",
+    "downloadDescription": "Set MSN as your default homepage and Bing as your default search engine ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DefaultPack.EXE",
+            "url": "https://download.microsoft.com/download/f/9/7/f97aa4b4-ae3c-4dcc-b7bd-80417bea77f9/U270/DefaultPack.EXE",
+            "size": "3090296",
+            "version": "1.7.26",
+            "datePublished": "7/15/2024 4:53:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "You can check out MSN.com each day for the latest news, entertainment, sports and get search and suggestions from Bing.\r\n<ul>\r\n<li><b>Note: </b>By clicking <b>Download</b>, you agree to the <a href=\"http://g.msn.com/1ewenusDefaultPack/MSA_Link\">Microsoft Service Agreement</a> and <a href=\"http://g.msn.com/1ewenusDefaultPack/Privacy_Link\">Privacy Statement</a>.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.7.26",
+    "detailsSection_file_name": [
+        "DefaultPack.EXE"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 8.1; Windows 8; Windows 7; Windows Vista; Windows XP with Service Pack (SP) 3</li><br />\r\n<li>Internet Explorer 7 or later </li><br />\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, Run the EXE and follow the instructions. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43713",
+    "downloadPreload": true
+}

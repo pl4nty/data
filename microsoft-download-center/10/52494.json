@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Mppt",
+    "downloadDescription": "Mppt is an add-in for PowerPoint that allows a presenter to multicast PowerPoint slides, including animations and effects, to a group of viewers. Last published: March 16, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "mpptv1.31.exe",
+            "url": "https://download.microsoft.com/download/7/8/9/789d583e-ac80-46b7-8501-7550fcfacb20/mpptv1.31.exe",
+            "size": "580984",
+            "version": "1.31",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mppt is an add-in for PowerPoint that allows a presenter to multicast PowerPoint slides, including animations and effects, to a group of viewers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.31",
+    "detailsSection_file_name": [
+        "mpptv1.31.exe"
+    ],
+    "detailsSection_file_size": [
+        "567.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52494",
+    "downloadPreload": true
+}

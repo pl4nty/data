@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Running Up the Score: Using Secure Score to Quickly Harden Your Exchange & Azure AD Environments",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Running Up The Score.pdf",
+            "url": "https://download.microsoft.com/download/e/0/c/e0ce470e-7811-47fc-862a-1f0ceb20b8cd/Running Up The Score.pdf",
+            "size": "1121745",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can\u2019t improve what you don\u2019t measure, and Microsoft has done their part by giving us a broad set of tools for measuring security and compliance implementation quality through the Secure Score and Compliance Score mechanisms. In this session, we\u2019ll talk about what these scores mean, how they\u2019re calculated, and how to use them to quickly find and fix the highest-value security configuration issues you may have in your tenant. Anyone with a Secure Score over 80% is excused from attending this session, but the rest of y\u2019all should plan to attend. You know who you are.\r\n\r\nRecording of presentation by Paul Robichaux is at https://youtu.be/KdrZ-hlJTBw.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Running Up The Score.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2022",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Open file with PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104618",
+    "downloadPreload": true
+}

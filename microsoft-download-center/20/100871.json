@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "New perspectives for cloud-native applications with the Open Application Model (OAM), and the Distributed Application Runtime (Dapr)",
+    "downloadDescription": "This series of guides is part of the ongoing dynamics of the recent announcements of OAM and Dapr",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Understanding-and-leveraging-Dapr-Part1.pdf",
+            "url": "https://download.microsoft.com/download/b/8/e/b8ecef54-3612-4883-a73c-6b9f6dd63a61/Understanding-and-leveraging-Dapr-Part1.pdf",
+            "size": "4704060",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Understanding-and-leveraging-OAM-&-Rudr-Part2.pdf",
+            "url": "https://download.microsoft.com/download/b/8/e/b8ecef54-3612-4883-a73c-6b9f6dd63a61/Understanding-and-leveraging-OAM-&-Rudr-Part2.pdf",
+            "size": "1250520",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Understanding-and-leveraging-OAM-&-Rudr-Part1.pdf",
+            "url": "https://download.microsoft.com/download/b/8/e/b8ecef54-3612-4883-a73c-6b9f6dd63a61/Understanding-and-leveraging-OAM-&-Rudr-Part1.pdf",
+            "size": "2181904",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Understanding-and-leveraging-Dapr-Part2.pdf",
+            "url": "https://download.microsoft.com/download/b/8/e/b8ecef54-3612-4883-a73c-6b9f6dd63a61/Understanding-and-leveraging-Dapr-Part2.pdf",
+            "size": "4289470",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Install-a-single-node-cluster-of-Kubernetes-on-Windows-10.pdf",
+            "url": "https://download.microsoft.com/download/b/8/e/b8ecef54-3612-4883-a73c-6b9f6dd63a61/Install-a-single-node-cluster-of-Kubernetes-on-Windows-10.pdf",
+            "size": "3275838",
+            "version": "1.0a",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<a href=\"https://www.gartner.com/smarterwithgartner/6-best-practices-for-creating-a-container-platform-strategy/\">Gartner predicts</a> that \u201cby 2022, more than 75% of global organizations will be running containerized applications in production\u201d whereas <a href=\"https://www.idc.com/getdoc.jsp?containerId=prUS44417618\">IDC foresees</a> for the same time frame that \u201c35% of all production applications will be cloud-native vs. less than 10% today\u201d. \r\n<br/><br/>\r\nIn this context, <a href=\"https://kubernetes.io/\">Kubernetes (K8s)</a>, a <a href=\"https://cncf.io/\">Cloud Native Computing Foundation (CNCF)</a> graduated open source project for automating deployment, scaling, and management of containerized applications, imposed itself, over the last few years, as the leading container orchestration environment shaping the future app development and management:\r\n<ul>\r\n<li><b>Kubernetes is widely used</b>. It benefits from a huge adoption and is in production for <a href=\"https://kubernetes.io/case-studies/\">global companies across industries</a>.</li>\r\n<li><b>Kubernetes is vendor neutral</b>. Such a success has driven the more than noticeable growth of (fully managed) Kubernetes services on public clouds. A <a href=\"https://www.prnewswire.com/news-releases/cloud-native-computing-foundation-announces-kubernetes-as-first-graduated-project-300609071.html\">variety of cloud providers</a> offers robust Kubernetes support, <a href=\"https://azure.microsoft.com/en-us/services/kubernetes-service\">Azure Kubernetes Service (AKS)</a>, a certified Kubernetes conformant, being one example on Azure.</li>\r\n<li><b>Kubernetes is community-supported</b>. There\u2019s a huge community of active contributors supporting Kubernetes. Kubernetes collects wisdom, code, and efforts from hundreds of corporate contributors and thousands of individual contributors: 90,000 commits, 2,500 contributors, and <a href=\"https://github.com/kubernetes/kubernetes\">#1 GitHub project</a>.</li>\r\n</ul>\r\nThe Kubernetes community is a more than vibrant one and people are constantly looking for ways to make Kubernetes easier for organizations to adopt and easier for developers to use. Microsoft is part of this vibrant community and leads in the associated committees to help shape the future of Kubernetes and its ecosystem.\r\n<br/><br/>\r\nAs an example, <a href=\"https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-open-application-model/\">Microsoft</a> and <a href=\"https://www.alibabacloud.com/blog/595450?spm=a2c41.13537873.0.0\">Alibaba Cloud</a> have jointly created and recently announced the new <a href=\"https://oam.dev/\">Open Application Model (OAM)</a> project, a specification for building cloud-native applications, and <a href=\"https://github.com/oam-dev/rudr\">Rudr</a>, a reference implementation for Kubernetes. <b>The new Open Application Model (OAM) and Rudr enable application developers and operators to describe apps in way that makes them portable cross different cloud and edge infrastructures.</b> \r\n<br/><br/>\r\n<a href=\"https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/\">Microsoft</a> also recently announced the <a href=\"https://dapr.io/\">Distributed Application Runtime (Dapr)</a> project. <b>Dapr makes it possible for enterprise developers to write scalable, highly reliable applications with any language, any framework and anywhere (Cloud+Edge).</b> \r\n<br/><br/>\r\nThis series of guides is part of the ongoing dynamics of the above recent announcements for considering these new perspectives that by themselves represent a look at the future of cloud-native app development and deployment.\r\n<br/><br/>\r\nFor that purpose, this series of guides for developers comprises:\r\n<ol>\r\n<li>\u201cUnderstanding and leveraging the Open Application Model (OAM) and Rudr \u2013 A starter guide for developers and others - Part 1\u201d,</li>\r\n<li>\u201cUnderstanding and leveraging the Open Application Model (OAM) and Rudr \u2013 A starter guide for developers and others - Part 2\u201d,</li>\r\n<li>\u201cUnderstanding and leveraging the Distributed Application Runtime (Dapr) \u2013 A starter guide for developers - Part 1\u201d,</li>\r\n<li>\u201cUnderstanding and leveraging the Distributed Application Runtime (Dapr) \u2013 A starter guide for developers - Part 2\u201d,</li>\r\n<li>And eventually \u201cInstall a single node cluster of Kubernetes on Windows 10 \u2013 A companion guide for developers\u201d.</li>\r\n</ol>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0a",
+    "detailsSection_file_name": [
+        "Understanding-and-leveraging-Dapr-Part1.pdf",
+        "Understanding-and-leveraging-OAM-&-Rudr-Part2.pdf",
+        "Understanding-and-leveraging-OAM-&-Rudr-Part1.pdf",
+        "Understanding-and-leveraging-Dapr-Part2.pdf",
+        "Install-a-single-node-cluster-of-Kubernetes-on-Windows-10.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.5 MB",
+        "1.2 MB",
+        "2.1 MB",
+        "4.1 MB",
+        "3.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the PDF files for the above guides and open them with the PDF reader of your choice. ",
+    "relatedResourcesSection": [
+        {
+            "title": "cloud-native applications on Azure",
+            "url": "https://azure.microsoft.com/en-us/overview/cloudnative/"
+        },
+        {
+            "title": "kubernetes on Azure",
+            "url": "https://azure.microsoft.com/en-us/topic/what-is-kubernetes/"
+        },
+        {
+            "title": "open source on Azure",
+            "url": "https://azure.microsoft.com/en-us/overview/choose-azure-opensource/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "100871",
+    "downloadPreload": true
+}

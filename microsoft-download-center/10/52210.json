@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Hub Tools for IT",
+    "downloadDescription": "Surface Hub Tools for IT",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SurfaceHub_Recovery_v2.7.139.0.msi",
+            "url": "https://download.microsoft.com/download/8/3/f/83fd5089-d14e-42e3-af7c-6fc36f80d347/SurfaceHub_Recovery_v2.7.139.0.msi",
+            "size": "2015232",
+            "version": "1.1.003",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SurfaceHubReplacementPCDrivers.1.1.003.msi",
+            "url": "https://download.microsoft.com/download/8/3/f/83fd5089-d14e-42e3-af7c-6fc36f80d347/SurfaceHubReplacementPCDrivers.1.1.003.msi",
+            "size": "2404352",
+            "version": "1.1.003",
+            "datePublished": "7/15/2024 5:03:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "From this site, you can download the Microsoft Surface Hub Recovery Tool or the Surface Hub Replacement PC drivers.\r\n\r\nThe Surface Hub Recovery Tool helps you re-image your Surface Hub Solid State Drives (SSD) using a Windows 10 desktop device without a need for calling for support or replacing the SSD itself.  With this tool, you can reimage an SSD that has an unknown Administrator password, boot errors, was unable to complete a cloud recovery, or for a device that has an older version of the OS. The tool will not fix physically damaged SSDs. This download is meant to be used with the <A href=\"https://docs.microsoft.com/surface-hub/surface-hub-recovery-tool\">Surface Hub Admin Guide</A>, which contains further details on using the Surface Hub Recovery Tool.\r\n\r\nThe Surface Hub Replacement PC driver set is available for those customers who have chosen to disable the Surface Hub\u2019s internal PC and use an external computer with their 84\u201d or 55\u201d Surface Hub. This download is meant to be used with the <A href=\"https://docs.microsoft.com/surface-hub/connect-and-display-with-surface-hub#replacement-pc-mode\">Surface Hub Admin Guide</A>, which contains further details on configuring a Surface Hub Replacement PC.\r\n\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n<br>\r\n<a href=\"https://docs.microsoft.com/en-us/surface-hub/surface-hub-update-history\">Surface Hub update history</a>\r\n</br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.003",
+    "detailsSection_file_name": [
+        "SurfaceHub_Recovery_v2.7.139.0.msi",
+        "SurfaceHubReplacementPCDrivers.1.1.003.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Window 10 64 bit",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "To use Surface Hub Recovery Tool:\r\n<OL>\n  <LI>Read <A href=\"https://docs.microsoft.com/surface-hub/surface-hub-recovery-tool\">the instructions for configuring your Surface Hub into Replacement PC mode</A>. You\u2019ll need an external PC to act as the host PC. You will also need to remove the SSD from the Surface Hub, or have an SSD provided by Microsoft Support. For instructions on removing the SSD, see <a href=\"http://download.microsoft.com/download/1/F/2/1F202254-7156-459F-ABD2-39CF903A25DE/surface-hub-ssd-replacement-guide_en-us.pdf\">Surface Hub SSD Replacement Guide (PDF)</a>.</LI>\n\n<LI>Download and install the Surface Hub Recovery Tool package by clicking the <B>Download</B> button above from the computer you\u2019d like to use as a host PC.</LI>\n\n<LI>If your browser prompts you to <b>Save</b> or <b>Run</b> the file, click <b>Run</b> to start the installation immediately or click <b>Save</b> to copy the download to your computer for installation at a later time.</LI>\n\n<LI>On the host PC, when the installer launches, click <b>Yes</b> to allow the program to make changes to your computer.</LI>\n\n<LI>Follow the instructions on the screen to install the Surface Hub Recovery Tool.</LI>\n\n</OL>\r\n\r\nTo use Replacement PC Drivers:\r\n<OL>\n  <LI>Read <A href=\"https://docs.microsoft.com/surface-hub/connect-and-display-with-surface-hub#replacement-pc-mode\">the instructions for configuring your Surface Hub into Replacement PC mode</A>. You\u2019ll need an external PC to act as the Replacement PC.</LI>\n\n<LI>Download and install the Surface Hub Replacement PC driver package by clicking the <B>Download</B> button above from the computer you\u2019d like to use as a Replacement PC.</LI>\n\n<LI>If your browser prompts you to <b>Save</b> or <b>Run</b> the file, click <b>Run</b> to start the installation immediately or click <b>Save</b> to copy the download to your computer for installation at a later time.</LI>\n\n<LI>On the Replacement PC, when the installer launches, click <b>Yes</b> to allow the program to make changes to your computer.</LI>\n\n<LI>Follow the instructions on the screen to install the Surface Hub Replacement PC drivers.</LI>\n\n<LI>After exiting the install application, reboot your computer to take advantage of an array of peripherals in the Hub, including the screen, pen, and touch systems.</LI>\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52210",
+    "downloadPreload": true
+}

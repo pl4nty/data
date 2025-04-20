@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer for Windows XP (KB2888505)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-088. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB2888505-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/6/7/c/67cfd0ef-5b2d-40ed-8a70-14a5cc785102/WindowsXP-KB2888505-x86-ENU.exe",
+            "size": "4233968",
+            "version": "2888505",
+            "datePublished": "6/13/2024 11:49:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2888505",
+        "name": "KB2888505"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-088",
+        "name": "MS13-088"
+    },
+    "detailsSection_file_version": "2888505",
+    "detailsSection_file_name": [
+        "WindowsXP-KB2888505-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer 6 with the following operating systems:<ul><li>Windows XP SP3</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</li>\n  <li>Do one of the following:</li>\n  <ul>\n    <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\n    <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\n  </ul>\n</ol>",
+    "additionalInformationSection": "<b>Other critical security updates are available:</b> To find the latest security updates for you visit <a href=\"http://windowsupdate.microsoft.com \">Windows Update</a> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <a href=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</a> and follow the 3 easy steps to ensure you\u2019re protected.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "security Guidance Center for Developers & IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1396223"
+        },
+        {
+            "title": "maintain Security with Internet Explorer",
+            "url": "http://go.microsoft.com/?linkid=1396224"
+        },
+        {
+            "title": "microsoft Security Bulletin MS13-088",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=325357"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41064",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2013: Introduction to apps for Office 2013 Preview",
+    "downloadDescription": "This white paper introduces a new Office solution type, apps for Office, built on web technologies like HTML5, CSS3, JavaScript, REST, OData, and OAuth.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Introduction to apps for Office 2013 Preview.docx",
+            "url": "https://download.microsoft.com/download/d/d/7/dd767cf0-b36a-441f-97aa-9a0d50cea890/Introduction to apps for Office 2013 Preview.docx",
+            "size": "829309",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Introduction to apps for Office 2013 Preview.pdf",
+            "url": "https://download.microsoft.com/download/d/d/7/dd767cf0-b36a-441f-97aa-9a0d50cea890/Introduction to apps for Office 2013 Preview.pdf",
+            "size": "634822",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Apps for Office is a new solution framework built on web technologies like HTML5, CSS3, JavaScript, REST, OData, and OAuth. Apps for Office enables you to run the same solution across applications, platforms, and devices. It provides an enhanced experience within Office applications by integrating rich content and services from the web.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Introduction to apps for Office 2013 Preview.docx",
+        "Introduction to apps for Office 2013 Preview.pdf"
+    ],
+    "detailsSection_file_size": [
+        "809.9 KB",
+        "619.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Office 2010; XPS Viewer or Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download, view and/or print the white paper.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30360",
+    "downloadPreload": true
+}

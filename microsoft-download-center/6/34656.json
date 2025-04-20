@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2010 Service Pack 1 (KB2748141)",
+    "downloadDescription": "This update will provide an extension point to Visual Studio 2010 SP1 that will allow for Web Publishing Updates.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS10SP1-KB2748141-x86.exe",
+            "url": "https://download.microsoft.com/download/f/5/6/f56ebebf-41a0-4e71-bafc-6defa354f5a5/VS10SP1-KB2748141-x86.exe",
+            "size": "2941992",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:29:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update will provide an extension point to Visual Studio 2010 SP1 that will allow for Web Publishing Updates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2748141",
+        "name": "KB2748141"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "VS10SP1-KB2748141-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Architectures:\n<br />\n<ul><li>32-Bit(x86)</li><li>64-Bit(x64) (WOW)</li></ul>\n<br />\n<ul><li>1.6GHz or faster processor</li><li>1024 MB RAM (1.5 GB if running in a virtual machine)</li><li>5.5 GB of available hard-disk space</li><li>5400 RPM hard drive</li><li>DirectX 9 capable video card running at 1024 x 768 or higher-resolution display</li><li>DVD-ROM drive</li></ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL>\n\u00a0 <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list.</LI>\n\u00a0 <LI>Do one of the following:</LI>\n\u00a0 <UL>\n\u00a0\u00a0\u00a0 <LI>To start the installation immediately, click <B>Run</B>.</LI>\n\u00a0\u00a0\u00a0 <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI>\n    <LI>To cancel the installation, click <B>Cancel</B>.</LI>\n  </UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2748141",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=262890"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "34656",
+    "downloadPreload": true
+}

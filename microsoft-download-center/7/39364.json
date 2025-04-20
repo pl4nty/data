@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Upgrading Microsoft Dynamics AX for Retail Point of Sale Customizations",
+    "downloadDescription": "This white paper describes the upgrade of code customizations and extensions to Microsoft Dynamics for Retail Point of Sale (POS). ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Upgrading Microsoft Dynamics Ax Retail Point of Sale customizations.pdf",
+            "url": "https://download.microsoft.com/download/d/f/1/df13c849-3dc5-48c3-a661-53b9e448bba3/Upgrading Microsoft Dynamics Ax Retail Point of Sale customizations.pdf",
+            "size": "536609",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:34:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the upgrade of code customizations and extensions to Microsoft Dynamics for Retail Point of Sale (POS). These include the customizations and extensions done to the POS Services and Trigger modules, which are then ported to Microsoft Dynamics AX 2012 R2. The white paper is targeted a developers who customize or extend Microsoft Dynamics Retail Point of Sale and are upgrading those customizations to newer versions of the product.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Upgrading Microsoft Dynamics Ax Retail Point of Sale customizations.pdf"
+    ],
+    "detailsSection_file_size": [
+        "524.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39364",
+    "downloadPreload": true
+}

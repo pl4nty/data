@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "FIM 2010 Planning and Architecture Collection",
+    "downloadDescription": "The Planning and Architecure Collection contains information for capacity and topology planning for a FIM 2010 deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "fim preinstallation and topology configuration.docx",
+            "url": "https://download.microsoft.com/download/f/7/2/f72787a7-3668-41b8-868b-1a645f485dd5/dlc/fim preinstallation and topology configuration.docx",
+            "size": "87486",
+            "version": "FIM 2010",
+            "datePublished": "7/15/2024 3:15:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "fim capacity planning.docx",
+            "url": "https://download.microsoft.com/download/f/7/2/f72787a7-3668-41b8-868b-1a645f485dd5/dlc/fim capacity planning.docx",
+            "size": "155142",
+            "version": "FIM 2010",
+            "datePublished": "7/15/2024 3:15:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Planning and Architecure Collection contains information for capacity and topology planning for a FIM 2010 deployment",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "FIM 2010",
+    "detailsSection_file_name": [
+        "fim preinstallation and topology configuration.docx",
+        "fim capacity planning.docx"
+    ],
+    "detailsSection_file_size": [
+        "85.4 KB",
+        "151.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "\r\n<OL><LI>Click the <b>Download</b> button next to the document that you want to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\r\n \r\n\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9094",
+    "downloadPreload": true
+}

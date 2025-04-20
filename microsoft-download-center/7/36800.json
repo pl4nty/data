@@ -1,0 +1,188 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update for Workflow Manager 1.0 (KB2799754)",
+    "downloadDescription": "This Cumulative Update adds improved Workflow Instance Management capability and contains a number of bug fixes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-ZH-CHT.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-ZH-CHT.exe",
+            "size": "3241864",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-ZH-CHS.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-ZH-CHS.exe",
+            "size": "3236736",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-RU.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-RU.exe",
+            "size": "3242368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-PT-BR.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-PT-BR.exe",
+            "size": "3245440",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-KO.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-KO.exe",
+            "size": "3240320",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-JA.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-JA.exe",
+            "size": "3242384",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-IT.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-IT.exe",
+            "size": "3245440",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-FR.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-FR.exe",
+            "size": "3246464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-ES.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-ES.exe",
+            "size": "3247488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WorkflowManager-KB2799754-x64-EN.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-EN.exe",
+            "size": "3243392",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WorkflowManager-KB2799754-x64-DE.exe",
+            "url": "https://download.microsoft.com/download/3/b/b/3bbbbe7d-5d9b-4add-9a53-bddf002f4abb/WorkflowManager-KB2799754-x64-DE.exe",
+            "size": "3241344",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<BR></BR>\r\nThis Cumulative Update adds improved Workflow Instance Management capability by adding the ability to Suspend a running Workflow instance. The corresponding ability to Resume a suspended instance has also been added. Additionally, this updates contains a number of bug fixes.<BR></BR>\r\n\r\nThis update contains fixes for both Workflow Manager 1.0 and/or Workflow Manager Client 1.0. <BR></BR>\r\n\r\nPlease refer to the Knowledge base article for additional details: <A href=\"http://go.microsoft.com/fwlink/?LinkID=283971\">KB2799754</A>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WorkflowManager-KB2799754-x64-ZH-CHT.exe",
+        "WorkflowManager-KB2799754-x64-ZH-CHS.exe",
+        "WorkflowManager-KB2799754-x64-RU.exe",
+        "WorkflowManager-KB2799754-x64-PT-BR.exe",
+        "WorkflowManager-KB2799754-x64-KO.exe",
+        "WorkflowManager-KB2799754-x64-JA.exe",
+        "WorkflowManager-KB2799754-x64-IT.exe",
+        "WorkflowManager-KB2799754-x64-FR.exe",
+        "WorkflowManager-KB2799754-x64-ES.exe",
+        "WorkflowManager-KB2799754-x64-EN.exe",
+        "WorkflowManager-KB2799754-x64-DE.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB",
+        "3.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR></BR>\r\nThis update can be applied to machines that either have Workflow Manager 1.0 or Workflow Manager Client installed. If the computer has Workflow Manager 1.0 installed, both Workflow Manager Client and Workflow Manager will be updated. If the computer only has Workflow Manager Client 1.0 installed, then only Workflow Manager Client will be updated.\r\n<BR></BR><BR></BR><B>Software Requirements: </B><BR></BR>\r\n<OL>\r\n  <LI> Must have <A href=\"http://go.microsoft.com/fwlink/?LinkId=282734\">PowerShell 3.0</A> installed on the computer where you are installing this update </LI>\r\n   <LI> Must have Workflow Manager Client 1.0 installed on the computer where you are installing this update </LI>\r\n   <LI> For machines with Workflow Manager 1.0 installed, additional requirements are:</LI>\r\n    <UL>\r\n  <LI> Must have the <A href=\"http://go.microsoft.com/fwlink/?LinkId=282733\">Cumulative Update for Service Bus 1.0 (KB2799752)</A> installed on the entire computer farm before installing this update for Workflow Manager 1.0</LI>\r\n  <LI> Must have Service Bus 1.0 and Workflow Manager 1.0 installed on the computer where you are installing this update</LI>\r\n  </UL>\r\n</OL><BR></BR>\r\n<B>Supported Operating Systems: </B> Windows Server 2008 R2 SP1, Windows Server 2012<BR></BR>\r\n<UL><LI>Workflow Manager Client 1.0 can also be independently installed on Windows 7, Windows 8, and Windows Server 2008 for both x86 and x64</LI>\r\n</UL>\r\n<BR></BR>\r\n<B>Privilege Requirements:</B> Before running the executable, you must have administrative privilege on the computer where you are installing the software. Please refer to <A href=\"http://go.microsoft.com/fwlink/?LinkId=257579\">Workflow Manager 1.0 Documentation</A> for more information. <BR></BR>\r\n<BR></BR>\r\n\r\n\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<BR></BR>\r\nIf the computer has Workflow Manager 1.0 installed, the <A href=\"http://go.microsoft.com/fwlink/?LinkId=282733\">Cumulative Update for Service Bus 1.0 (KB2799752)</A> must be installed on the machine before installing this update (KB2799754)<BR></BR>\r\n<BR></BR>\r\nTo install the update for Workflow Manager 1.0 (KB2799754)\r\n<OL>\r\n<LI>Click the Download button on this page to start the download, or select a different language from the \"Change language\" drop-down list. <BR></BR>\r\n\r\n    Alternatively, you can click Save to download the .exe installer file to your computer. Then, navigate to the location at which you saved the .exe file, double-click the .exe file, and follow the instructions shown in the installer. </LI>\r\n\r\n<LI>This Cumulative Update for Workflow Manager 1.0 can also be installed directly from the Web Platform Installer. This update can be obtained by downloading and using the Web Platform Installer (WebPI), you agree to the license terms and privacy statement for WebPI. This installer will contact Microsoft over the Internet to retrieve product information.</LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36800",
+    "downloadPreload": true
+}

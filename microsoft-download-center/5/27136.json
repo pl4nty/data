@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "PerformancePoint Services for Microsoft Project Server 2010",
+    "downloadDescription": "This document describes BI features in PerformancePoint Services that users of Project Server 2010 can take advantage of.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftProjectServer2010_ReportingPerformancePointServices.xps",
+            "url": "https://download.microsoft.com/download/2/f/8/2f8d6fab-5746-448d-b46b-f96482a74a3f/MicrosoftProjectServer2010_ReportingPerformancePointServices.xps",
+            "size": "4806957",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftProjectServer2010_ReportingPerformancePointServices.docx",
+            "url": "https://download.microsoft.com/download/2/f/8/2f8d6fab-5746-448d-b46b-f96482a74a3f/MicrosoftProjectServer2010_ReportingPerformancePointServices.docx",
+            "size": "10938813",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftProjectServer2010_ReportingPerformancePointServices.pdf",
+            "url": "https://download.microsoft.com/download/2/f/8/2f8d6fab-5746-448d-b46b-f96482a74a3f/MicrosoftProjectServer2010_ReportingPerformancePointServices.pdf",
+            "size": "3658114",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a detailed guide for Microsoft Project Server 2010 users who want to avail themselves of the Business Intelligence (BI) features and functionality provided in the host platform of Project Server, Microsoft SharePoint Server 2010 Enterprise Edition. Specifically, this document covers PerformancePoint Services, which is an inherent service on SharePoint Server 2010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MicrosoftProjectServer2010_ReportingPerformancePointServices.xps",
+        "MicrosoftProjectServer2010_ReportingPerformancePointServices.docx",
+        "MicrosoftProjectServer2010_ReportingPerformancePointServices.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.6 MB",
+        "10.4 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read this paper, you must have XPS Viewer, Adobe Reader, or Microsoft Word 2010.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27136",
+    "downloadPreload": true
+}

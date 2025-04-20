@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2019 CU10 (KB5012698)",
+    "downloadDescription": "Security Update For Exchange Server 2019 CU10 (KB5012698)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2019-KB5012698-x64-en.msp",
+            "url": "https://download.microsoft.com/download/1/2/0/120adb28-ceaf-49cc-8c39-1b1cd59feb4e/Exchange2019-KB5012698-x64-en.msp",
+            "size": "162902016",
+            "version": "15.02.0922.027",
+            "datePublished": "7/15/2024 4:31:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5012698",
+        "name": "5012698"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.02.0922.027",
+    "detailsSection_file_name": [
+        "Exchange2019-KB5012698-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "155.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2019 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2019 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624053\">Exchange 2019 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=624054\">Exchange 2019 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration. For more detailed system requirements, please refer to the Exchange Server 2019 <a href=\"http://go.microsoft.com/fwlink/?LinkId=532633\">Technical Documentation Library</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "We recommend restarting your computer before installing a security update. Then follow these steps: <br/>\r\n<ol>\r\n<li> Disable the anti-virus software. </li>\r\n<li> Open an elevated Command Prompt window (not PowerShell) as an administrator, like this: </li>\r\n<ul>\r\n<li> Select <b> Start </b> and then enter <b> cmd </b>. </li>\r\n<li> Right-click <b> Command Prompt </b> in the results and select <b> Run as administrator </b>. </li>\r\n<li> If the <b> User Account Control </b> dialog box appears, select <b> Yes </b> and then <b> Next </b>. </li>\r\n</ul>\r\n<li> At the command prompt, enter the full path to the folder that contains the 'MSP file', then press 'Enter'. <br />\r\n<b> Note: </b> Do not double-click the 'MSP file' to run it. </li>\r\n<li> When the installation is complete, re-enable the antivirus software and restart your computer. (The installation program may prompt you to restart.) </li>\r\n</ol>\r\n<br/> If problems occur during or after this installation, please refer to <a href=\"https://aka.ms/exupdatefaq\"> Repair failed installations of Exchange Cumulative and Security updates </a> before contacting Microsoft Support.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103997",
+    "downloadPreload": true
+}

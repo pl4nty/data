@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 8 and Windows Server 2012 Common Criteria Supplemental Administrative Guidance for Software Full Disk Encryption Clients",
+    "downloadDescription": "This document provides supplemental administrative guidance for BitLocker software full disk encryption.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Administrative Guidance for Software Full Disk Encryption Clients.pdf",
+            "url": "https://download.microsoft.com/download/0/8/4/08468080-540b-4326-91bf-f2a33b7e1764/Administrative Guidance for Software Full Disk Encryption Clients.pdf",
+            "size": "858185",
+            "version": "1",
+            "datePublished": "7/15/2024 3:57:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides administrative guidance to configure and use BitLocker for full disk encryption.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Administrative Guidance for Software Full Disk Encryption Clients.pdf"
+    ],
+    "detailsSection_file_size": [
+        "838.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click the download button on this page to start the download.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45489",
+    "downloadPreload": true
+}

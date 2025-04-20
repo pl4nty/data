@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "UCS Compatibility Log Collection Tool",
+    "downloadDescription": "Wrapper for collecting a standard set of trace logs",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UCSLogTool_Installer.msi",
+            "url": "https://download.microsoft.com/download/6/5/f/65f11cef-3839-48a0-afdd-961bfcf400fa/UCSLogTool_Installer.msi",
+            "size": "77311449",
+            "version": "7.40.17",
+            "datePublished": "7/15/2024 4:57:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Wrapper for collecting a standard set of trace logs",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.40.17",
+    "detailsSection_file_name": [
+        "UCSLogTool_Installer.msi"
+    ],
+    "detailsSection_file_size": [
+        "73.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Unzip and save the installers locally. Choose the correct tool version (x64 or x86) and install the corresponding MSI by double clicking on it. Once you install the package, a shortcut for the 'UCSLogTool' and the Readme will appear on your desktop. Double click the icon to run the tool.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54320",
+    "downloadPreload": true
+}

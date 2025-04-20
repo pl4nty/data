@@ -1,0 +1,213 @@
+{
+    "error": "",
+    "downloadTitle": "Office Licensing Diagnostic Tool",
+    "downloadDescription": "Office Licensing Diagnostic Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OfficeLicenseDiagnostic.zip",
+            "url": "https://download.microsoft.com/download/0/5/4/0543c1bc-56ce-4a28-9c15-016aad6a866b/OfficeLicenseDiagnostic.zip",
+            "size": "113573",
+            "version": "2016",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "OfficeLicenseDiagnostic can be run by an admin to collect Office licensing related data for the Microsoft Office licensing team to analyze to help determine root cause of licensing related issues on customer devices. <br/><br/>\r\n\r\nCollecting licensing logs are an integral part of the debugging process and by running the licensing diagnostic tool we will be able to get the necessary information to facilitate the debugging process. In case of centennial this isn\u2019t included and is necessary to run this to understand the licenses installed on the machine.<br /><br />\r\n\r\n<b>Using this tool you can: </b>\r\n<ul>\r\n<li>Understand all the licenses (including both legacy ones and modern ones) that were installed on the machine</li>\r\n<li>Install licenses if you have a product key in hand</li>\r\n<li>Uninstall a product key from a machine</li>\r\n<li>Activate the product key that has already been installed on the machine</li>\r\n<li>Collect all the logs that are necessary to get the debugging process started</li>\r\n</ul>\r\n<br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "OfficeLicenseDiagnostic.zip"
+    ],
+    "detailsSection_file_size": [
+        "110.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>Install Instructions:</b>\r\n<ul>\r\n<li>Download the tool and extract the contents</li>\r\n<li>Open a command prompt as a normal user</li>\r\n<li>Browse to the location of the extracted files</li>\r\n<li>Run &lsquo;licenseInfo.cmd&rsquo;</li>\r\n<li>Exit any running Office application</li>\r\n<li>Press a key to continue</li>\r\n<li>Boot an application and reproduce the issue (You should go through the same steps as you did when you saw the issue for the logs to make sense)</li>\r\n<li>Press any key to continue. The script will start collection logs</li>\r\n<li>The file name and location will be in the cmd windows output</li>\r\n<li>Talk with your support agent to help get your logs to the right people</li>\r\n</ul>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55948",
+    "downloadPreload": true
+}

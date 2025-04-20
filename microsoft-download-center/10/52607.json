@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Biocharts",
+    "downloadDescription": "The Biocharts tool enables biologists and modelers to construct high-level theories and models of biological systems, capturing biological hypotheses, inferred mechanisms, and experimental results within the same framework. Last published: October 17, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Biocharts.zip",
+            "url": "https://download.microsoft.com/download/d/6/a/d6ae53d6-0a6f-436f-94d7-fb126b80f44d/Biocharts.zip",
+            "size": "1419326",
+            "version": "0.9.0",
+            "datePublished": "6/13/2024 12:55:38 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Biocharts tool enables biologists and modelers to construct high-level theories and models of biological systems, capturing biological hypotheses, inferred mechanisms, and experimental results within the same framework. Among the key features of the tool are convenient ways to represent several competing theories and the interactive nature of building and running the models using an intuitive, rigorous, scenario-based visual language. The main biological areas we are applying the tool are in developmental biology and stem-cell research.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.9.0",
+    "detailsSection_file_name": [
+        "Biocharts.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52607",
+    "downloadPreload": true
+}

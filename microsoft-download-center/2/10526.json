@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Sandcastle - Version 2.4.10520",
+    "downloadDescription": "Enabling managed class library developers throughout the world to easily create accurate, informative documentation with a common look and feel.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sandcastle.msi",
+            "url": "https://download.microsoft.com/download/8/5/f/85f66a16-4f3a-4d9a-a850-cc0684fc1b81/Sandcastle.msi",
+            "size": "8150016",
+            "version": "2.4.10520",
+            "datePublished": "7/15/2024 3:14:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sandcastle produces accurate, MSDN style, comprehensive documentation by reflecting over the source assemblies and  optionally integrating XML Documentation Comments. Sandcastle has the following key features:<br />\n<br />\n<li> Works with or without authored comments </li><br />\n<li> Supports Generics and .NET Framework 2.0 </li><br />\n<li> Sandcastle has 2 main components (MrefBuilder and Build Assembler) </li><br />\n<li>  MrefBuilder generates reflection xml file for Build Assembler </li><br />\n<li> Build Assembler includes syntax generation, transformation..etc </li><br />\n<li> Sandcastle is used internally to build .Net Framework documentation </li>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.4.10520",
+    "detailsSection_file_name": [
+        "Sandcastle.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Required Software: </b><br />\n<UL><LI>Microsoft .NET Framework Version 2.0, available <a href=\"http://msdn.microsoft.com/netframework/downloads/updates/default.aspx\">\nhere </a></LI><br />\n<LI> HTML Help Workshop available <a href =\"http://msdn.microsoft.com/library/default.asp?url=/library/en-us/htmlhelp/html/hwMicrosoftHTMLHelpDownloads.asp\">here</a></LI></UL>\n<b>Optional  Software: </b><br />\n<UL><LI>Visual Studio 2005</LI><br />\n <LI>MS Help Compiler from VS SDK <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=51a5c65b-c020-4e08-8ac0-3eb9c06996f4&DisplayLang=en\">here</a></LI><br /></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "1. Uninstall previous versions of Sandcastle.<br />\n2. Click on the \"Download\" button above to install Sandcastle.<br />\n3. After installing Sandcastle, follow the steps <a href=\"https://blogs.msdn.com/sandcastle/archive/2006/07/29/682398.aspx\">here</a> to create a sample CHM or HxS build.<br />\n4. Visit <a href=\"http://blogs.msdn.com/sandcastle\">Sandcastle blog</a> for the release notes and latest information.<br />\n<br />\n<b> Note:</b> Installing VS SDK after installing Sandcastle will cause Sandcastle not to work properly as VS SDK installer updates both the PATH and DXROOT environment variables in the registry",
+    "additionalInformationSection": "Please post all Sandcastle related questions and discussions at <a href=\"http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=66&SiteID=1\">http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=66&SiteID=1</a>. Please send you bugs and feature requests to <A href=\"mailto:sandchlp@microsoft.com\">sandchlp@microsoft.com</A>",
+    "relatedResourcesSection": [
+        {
+            "title": "sandcastle Help Forum",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=66&SiteID=1"
+        },
+        {
+            "title": "sandcastle Site at MSDN",
+            "url": "http://msdn2.microsoft.com/en-us/vstudio/bb608422.aspx"
+        },
+        {
+            "title": "sandcastle Blogs",
+            "url": "https://blogs.msdn.com/sandcastle"
+        },
+        {
+            "title": "create CHM or HxS build using Sandcastle",
+            "url": "https://blogs.msdn.com/sandcastle/archive/2006/07/29/682398.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10526",
+    "downloadPreload": true
+}

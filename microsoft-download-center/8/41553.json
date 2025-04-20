@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Update Cleanup (Tool) for Windows Embedded 7 for Windows Thin PC",
+    "downloadDescription": "This adds a new plugin to the Disk Cleanup wizard. See +Details below for Licensing information that applies if you click download.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2852386-x86.msu",
+            "url": "https://download.microsoft.com/download/9/3/2/9322597d-7a69-4fc2-8eed-16d5f79dfc5e/Windows6.1-KB2852386-x86.msu",
+            "size": "530893",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "By clicking Download you agree that your use of the \u201cWindows Update Cleanup (Tool) for Windows Embedded 7\u201d for Windows ThinPC is subject to the terms and conditions of the license agreement by which you acquired the software.  For instance, if you are a Volume Licensing customer, use of this software is subject to your Volume License Agreement.  You may not use this software if you have not validly acquired a license for the software from Microsoft or its licensed distributors. \r\n<br></br>\r\nAfter you install this update, you can use the Windows Update Cleanup option to delete Windows updates that you no longer need. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2852386",
+        "name": "KB2852386"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2852386-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "518.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Thin PC",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Thin PC "
+    ],
+    "installInstructionSection": "This update is installed by executing file <b>Windows6.1-KB2852386-x86.msu</b> on a Windows Thin PC image.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/2852386"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41553",
+    "downloadPreload": true
+}

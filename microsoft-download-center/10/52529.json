@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Site Analyzer",
+    "downloadDescription": "Our library can support basic features for site analysis, such as site-map building, forum-page structuralization, URL-pattern generation, and page random sampling. Last published: July 27, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SiteAnalyzer.zip",
+            "url": "https://download.microsoft.com/download/2/f/6/2f6bb011-461e-4046-a352-3b7875dc258b/Microsoft.SiteAnalyzer.zip",
+            "size": "114540",
+            "version": "1.0.000",
+            "datePublished": "5/15/2024 4:11:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Our library can support basic features for site analysis, such as site-map building, forum-page structuralization, URL-pattern generation, and page random sampling.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.000",
+    "detailsSection_file_name": [
+        "Microsoft.SiteAnalyzer.zip"
+    ],
+    "detailsSection_file_size": [
+        "111.9 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52529",
+    "downloadPreload": true
+}

@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Team Foundation Server Express 2013 with Update 4",
+    "downloadDescription": "Visual Studio Team Foundation Server Express 2013 is the source-code-control, project-management, and team-collaboration platform at the core of the Microsoft suite of Application Lifecycle Management (ALM) tools, which help individuals and small teams be more agile, collaborate more effectively, and deliver quality software more consistently.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tfs_express.exe",
+            "url": "https://download.microsoft.com/download/d/f/c/dfcaaa9b-7902-4445-a746-0efd0e09ac2d/tfs_express.exe",
+            "size": "816112",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:53:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vs2013.4_tfs_exp_enu.iso",
+            "url": "https://download.microsoft.com/download/d/f/c/dfcaaa9b-7902-4445-a746-0efd0e09ac2d/vs2013.4_tfs_exp_enu.iso",
+            "size": "556328960",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:53:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This download of Visual Studio Team Foundation Server Express 2013.4 contains the latest updates. These cumulative updates to Visual Studio 2013 include a variety of bug fixes and capability improvements. For information about the latest update, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=272487\">Visual Studio Updates</a> and the <a href=\"http://go.microsoft.com/fwlink/?LinkId=510328\">Visual Studio Update KB Article</a>.\n<br/>\n<br/>\nVisual Studio Team Foundation Server Express 2013 provides the collaboration hub at the center of the Application Lifecycle Management (ALM) solution. By automating the software delivery process, entire teams can track team actions, transactions, and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. Team Foundation Server Express 2013 enables comprehensive reporting and dashboards that provide historical trending, full traceability, and real-time visibility into software quality.\n<br/>\n<br/>\nNote: TFS Express is limited to five (5) users. Larger teams can use <a href=\"http://go.microsoft.com/fwlink/?LinkId=402294\">Visual Studio Team Foundation Server 2013</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "tfs_express.exe",
+        "vs2013.4_tfs_exp_enu.iso"
+    ],
+    "detailsSection_file_size": [
+        "797.0 KB",
+        "530.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed System Requirements see <a href=\"http://go.microsoft.com/fwlink/?LinkId=393282\">System Requirements for Team Foundation Server</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Choose one of these installation options:\n<ul>\n<li>Install over the Internet:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To download an installer that you can run later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n</ul>\n</ul>\n<li>To download an image to burn on a DVD:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .iso option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>Choose the <b>Save</b> button to download a DVD5 ISO image so that you can burn a DVD later.</li>\n<ul>\n<li>After downloading the ISO file, you should use the <a href=\"http://support.microsoft.com/kb/841290\">File Checksum Integrity Verifier</a> tool to calculate and verify that the SHA-1 value for this file matches the value listed on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=517393\">Visual Studio 2013 ISO Files SHA-1 Values</a> page.</li> \n</ul>\n</ul>\n</ul>\n</ul>\nWhen the installation is complete, visit the <a href=\"http://msdn.microsoft.com/library/vstudio/dd631902(v=vs.120).aspx\">MSDN Library</a> for guidance about how to configure or upgrade Team Foundation Server.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        },
+        {
+            "title": "visual Studio Team Foundation Server 2013",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=510319"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44910",
+    "downloadPreload": true
+}

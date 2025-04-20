@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Social Features for SharePoint Server 2013",
+    "downloadDescription": "Introduction to the social features in SharePoint Server 2013 and step-by-step instructions for configuring and then demonstrating My Sites, Newsfeeds, Community Sites, and Team Site feeds.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-sp2013-demonstrate-social.docx",
+            "url": "https://download.microsoft.com/download/a/6/b/a6b25d77-b3d2-4c38-84d1-2c282050bcb4/tlg-sp2013-demonstrate-social.docx",
+            "size": "168284",
+            "version": "3",
+            "datePublished": "7/15/2024 3:31:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-sp2013-demonstrate-social.pdf",
+            "url": "https://download.microsoft.com/download/a/6/b/a6b25d77-b3d2-4c38-84d1-2c282050bcb4/tlg-sp2013-demonstrate-social.pdf",
+            "size": "505488",
+            "version": "3",
+            "datePublished": "7/15/2024 3:31:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This paper provides a brief introduction to the social features in SharePoint Server 2013. It also provides step-by-step instructions for configuring and then demonstrating My Sites, Newsfeeds, Community Sites, and Team Site feeds.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "tlg-sp2013-demonstrate-social.docx",
+        "tlg-sp2013-demonstrate-social.pdf"
+    ],
+    "detailsSection_file_size": [
+        "164.3 KB",
+        "493.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34682",
+    "downloadPreload": true
+}

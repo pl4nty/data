@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Silverlight (KB2961137)",
+    "downloadDescription": "This update to Silverlight includes fixes outlined in update KB2961137. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_Developer.dmg",
+            "url": "https://download.microsoft.com/download/d/6/6/d66cf013-1021-437b-9a65-983871ccb3e6/30317.00/Silverlight_Developer.dmg",
+            "size": "20560941",
+            "version": "5.1.30317.0",
+            "datePublished": "7/15/2024 3:53:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight.dmg",
+            "url": "https://download.microsoft.com/download/d/6/6/d66cf013-1021-437b-9a65-983871ccb3e6/30317.00/Silverlight.dmg",
+            "size": "15219026",
+            "version": "5.1.30317.0",
+            "datePublished": "7/15/2024 3:53:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update to Silverlight includes fixes outlined in update <a href=\"http://support.microsoft.com/kb/2961137\">KB2961137</a>.  This update is backward compatible with web applications built using previous versions of Silverlight.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1.30317.0",
+    "detailsSection_file_name": [
+        "Silverlight_Developer.dmg",
+        "Silverlight.dmg"
+    ],
+    "detailsSection_file_size": [
+        "19.6 MB",
+        "14.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See the \"System Requirements\" section of http://www.microsoft.com/getsilverlight/ \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "Install the appropriate runtime from the choices below.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42533",
+    "downloadPreload": true
+}

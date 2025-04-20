@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Tool Pack",
+    "downloadDescription": "The tool pack contains utilities that can be used with HPC Pack 2012 R2 Update 3 clusters",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ganglia Integration.docx",
+            "url": "https://download.microsoft.com/download/b/2/a/b2a719e3-a604-4f2f-b317-854985b261e0/Ganglia Integration.docx",
+            "size": "77813",
+            "version": "4.05.5110",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ganglia_x64.Msi",
+            "url": "https://download.microsoft.com/download/b/2/a/b2a719e3-a604-4f2f-b317-854985b261e0/ganglia_x64.Msi",
+            "size": "1052672",
+            "version": "4.05.5110",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "One updated tool is available in this tool pack:<br/>\r\n<br/><br/>\r\n<b>Ganglia Integration Components</b> <i>Updated: 6/22/2016</i> - The Ganglia Integration Components provide a way to export HPC Pack 2012 R2 Update 3 based cluster performance metrics for use in your Ganglia-based system monitoring process. This installer must be run on an HPC Pack 2012 R2 Update 3 based head node. Please refer to the Ganglia Integration document for additional information.\r\n<br/><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.05.5110",
+    "detailsSection_file_name": [
+        "Ganglia Integration.docx",
+        "ganglia_x64.Msi"
+    ],
+    "detailsSection_file_size": [
+        "76.0 KB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\nAn HPC Pack 2012 R2 Update 3 cluster.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>Ganglia Integration Components</b><br/>Download the appropriate installer and run the ganglia_x64.msi installation wizard.<br/><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52984",
+    "downloadPreload": true
+}

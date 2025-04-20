@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Search architectures for SharePoint Server 2013",
+    "downloadDescription": "This design sample shows the search architecture for a medium size server farm.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "oit2013-model-sharepoint-search-architecture.pdf",
+            "url": "https://download.microsoft.com/download/a/b/2/ab2bc4c9-6aa8-4b7d-96ab-cb2a19046ee2/oit2013-model-sharepoint-search-architecture.pdf",
+            "size": "536458",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit2013-model-sharepoint-search-architecture.vsd",
+            "url": "https://download.microsoft.com/download/a/b/2/ab2bc4c9-6aa8-4b7d-96ab-cb2a19046ee2/oit2013-model-sharepoint-search-architecture.vsd",
+            "size": "1035776",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This design sample shows the logical architecture and interaction of search components, and an example of a fault-tolerant server farm that provides enterprise search for a content corpus that contains approximately 40 million items. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "oit2013-model-sharepoint-search-architecture.pdf",
+        "oit2013-model-sharepoint-search-architecture.vsd"
+    ],
+    "detailsSection_file_size": [
+        "523.9 KB",
+        "1011.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30374",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "CSP Technical Overview for Partners",
+    "downloadDescription": "A general and introductory technical overview of CSP's architecture, entities, workflows and tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CSP Technical Overview for Partners.docx",
+            "url": "https://download.microsoft.com/download/2/c/3/2c36d949-1145-4cd2-827f-00591479ff37/CSP Technical Overview for Partners.docx",
+            "size": "1298031",
+            "version": "Feb2017",
+            "datePublished": "7/15/2024 4:36:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CSP Technical Overview for Partners.pdf",
+            "url": "https://download.microsoft.com/download/2/c/3/2c36d949-1145-4cd2-827f-00591479ff37/CSP Technical Overview for Partners.pdf",
+            "size": "1751161",
+            "version": "Feb2017",
+            "datePublished": "7/15/2024 4:36:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guidance document has been created for Microsoft cloud partners that require a deeper, technical introduction and overview to working with the Cloud Solution Provider (CSP) program. The aim of this document is to provide a primarily technical understanding of the basic platforms, components and workflows that enable the CSP program.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2017",
+    "detailsSection_file_name": [
+        "CSP Technical Overview for Partners.docx",
+        "CSP Technical Overview for Partners.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\u00a0\r\n<LI>The file is an Adobe Reader file. Users who do not have Adobe Reader can download it from <A HREF=\"http://get.adobe.com/reader/\">Adobe.</A></LI>\u00a0\u00a0\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\u00a0\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\u00a0\r\n<li>Do one of the following:</li>\u00a0\r\n<ul>\u00a0\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\u00a0\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\u00a0\r\n</ul>\u00a0\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54797",
+    "downloadPreload": true
+}

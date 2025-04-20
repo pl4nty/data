@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "SLP Services:  Whitepapers",
+    "downloadDescription": "SLP Services Whitepapers",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SLP Services - Protect Your Code Nov-2007.pdf",
+            "url": "https://download.microsoft.com/download/9/e/2/9e266514-699c-48e1-8bd5-92dbcae24e6a/SLP Services - Protect Your Code Nov-2007.pdf",
+            "size": "640497",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLP Services - ISVs Challenges Nov-2007.pdf",
+            "url": "https://download.microsoft.com/download/9/e/2/9e266514-699c-48e1-8bd5-92dbcae24e6a/SLP Services - ISVs Challenges Nov-2007.pdf",
+            "size": "668825",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLP Services - Technology Overview Nov-2007.pdf",
+            "url": "https://download.microsoft.com/download/9/e/2/9e266514-699c-48e1-8bd5-92dbcae24e6a/SLP Services - Technology Overview Nov-2007.pdf",
+            "size": "1028027",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SLP Services Whitepapers:<br />\n1. SLP Services - Technology Overview: Microsoft Software Licensing and Protection Services <br />\n2. SLP Services - Fight Back Against Piracy: Protect Your Code <br />\n3. SLP Services - ISVs: Bridging the Gaps Between Protection, Agility, and Customer Satisfaction",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SLP Services - Protect Your Code Nov-2007.pdf",
+        "SLP Services - ISVs Challenges Nov-2007.pdf",
+        "SLP Services - Technology Overview Nov-2007.pdf"
+    ],
+    "detailsSection_file_size": [
+        "625.5 KB",
+        "653.1 KB",
+        "1003.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft SLP Services Site",
+            "url": "http://www.microsoft.com/slps/"
+        },
+        {
+            "title": "support Forum",
+            "url": "http://forums.microsoft.com/MSDN/default.aspx?ForumGroupID=421&SiteID=1"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14733",
+    "downloadPreload": true
+}

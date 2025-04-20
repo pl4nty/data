@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "UCMA 5.0 SDK",
+    "downloadDescription": "Unified Communications Managed API (UCMA) 5.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft\u2019s Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UcmaSdkSetup.exe",
+            "url": "https://download.microsoft.com/download/3/7/9/3797d760-115c-4264-9280-2e255a42f164/UcmaSdkSetup.exe",
+            "size": "402979528",
+            "version": "9319.48",
+            "datePublished": "7/15/2024 3:42:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download was originally released on May. 1, 2015.\n<br /><br />\nUnified Communications Managed API (UCMA) 5.0 is a managed-code platform that developers use to build applications that provide access to and control over Microsoft\u2019s Enhanced Presence information, instant messaging, telephone and video calls, and audio/video conferencing. In addition to text conversations, UCMA 5.0 supports speech-technology enabled voice conversations and collaboration. UCMA 5.0 supports the development of server side, middle-tier applications targeting Microsoft Skype for Business 2015 and Microsoft Skype for Business Server 2015. UCMA 5.0 contains a SIP stack, a media stack, and speech engines for both automatic speech recognition (ASR) as well as speech synthesis (TTS). \n<br /><br />\nUCMA 5.0 can be used to add communications capabilities to your business software and processes and can be used to create outbound applications such as alerts or notifications and surveys, inbound speech-technology enabled interactive voice response applications, and automated agents known as query-response bots. UCMA 5.0 API provides access to Skype for Business Server 2015 presence information and can be used to build role agents that use Enhanced Presence information to streamline communications between people. \n<br /><br />\nAdvanced UCMA 5.0 scenarios can be used to develop various applications: \n<ul>\n<li>Automated Call Distributors that perform skill-based routing.</li>\n<li>Call recording.</li>\n<li>Conferencing services such as conference access control.</li>\n<li>Custom client gateways that interface with, for example, other communications networks, Interactive Voice Response platforms, and speech servers using the Microsoft ASR and TTS engines.</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9319.48",
+    "detailsSection_file_name": [
+        "UcmaSdkSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "384.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<br />\n<b>Microsoft Visual Studio development system</b>\n<ul>\n<li>Microsoft Visual Studio 2013 and above</li>\n<li>Microsoft Visual Studio 2012 with latest update</li>\n</ul>\n<br />\n<b>Notes: </b>\n<ul>\n<li>The UCMA 5.0 SDK requires the Microsoft .NET Framework 4.5 to be installed.</li>\n<li>Side-by-side installations of UCMA 5.0 with previous versions is not supported.</li>\n<li>In order to be able to install the UCMA 5.0 SDK on Windows Server 2008 R2, the Windows Server 2008 R2 feature of Desktop Experience needs to be installed and enabled.</li>\n<li>In order to be able to install the UCMA 5.0 SDK on Windows Server 2012, the Windows Server 2012 Media Foundation feature needs to be installed.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>UCMA 5.0 SDK Installation </b>\n<ol>\n<li>Download UcmaSdkSetup.exe.</li>\n<li>Launch UcmaSdkSetup.exe with elevated privileges and follow the instructions to complete the installation.</li>\n</ol>\nNote: By default, UCMA 5.0 SDK is installed in the %Program Files%\\Microsoft UCMA 5.0 directory.\n<br /><br />\nUCMA 5.0 SDK is 64-bit only.\n<br /><br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47345",
+    "downloadPreload": true
+}

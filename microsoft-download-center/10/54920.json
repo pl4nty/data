@@ -1,0 +1,217 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Access Database Engine 2016 Redistributable ",
+    "downloadDescription": "This download will install a set of components that can be used to facilitate transfer of data between Microsoft Office System files and non-Microsoft Office applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "accessdatabaseengine_X64.exe",
+            "url": "https://download.microsoft.com/download/3/5/c/35c84c36-661a-44e6-9324-8786b8dbe231/accessdatabaseengine_X64.exe",
+            "size": "83400344",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:01:40 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "accessdatabaseengine.exe",
+            "url": "https://download.microsoft.com/download/3/5/c/35c84c36-661a-44e6-9324-8786b8dbe231/accessdatabaseengine.exe",
+            "size": "81621424",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:01:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This download will install a set of components that facilitate the transfer of data between existing Microsoft Office files such as Microsoft Office Access (*.mdb and *.accdb) files and Microsoft Office Excel (*.xls, *.xlsx, and *.xlsb) files to other data sources such as Microsoft SQL Server. Connectivity to existing text files is also supported. For more information, including the End User License Agreement (EULA) see <a href=\"https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9\">Download and install Microsoft 365 Access Runtime</a>.\n\nODBC and OLEDB drivers are installed for application developers to use in developing their applications with connectivity to Office file formats.\n<br /><br />\nThe Access Database Engine 2016 Redistributable is not intended:\r\n<br /><br />\r\n<ol>\r\n<li>As a general replacement for Jet (If you need a general replacement for Jet you should use <a href=\"https://www.microsoft.com/en-us/cloud-platform/sql-server-editions-express\">SQL Server Express Edition</a>).</li>\r\n<li>As a replacement for the Jet OLEDB Provider in server-side applications. </li>\r\n<li>As a general word processing, spreadsheet or database management system\r\n-To be used as a way to create files. (You can use Microsoft Office or Office automation to create the files that Microsoft Office supports.) \r\n</li>\r\n<li>To be used by a system service or server-side program where the code will run under a system account, or will deal with multiple users identities concurrently, or is highly reentrant and expects stateless behavior.  Examples would include a program that is run from task scheduler when no user is logged in, or a program called from server-side web application such as ASP.NET, or a distributed component running under COM+ services.</li>\r\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "accessdatabaseengine_X64.exe",
+        "accessdatabaseengine.exe"
+    ],
+    "detailsSection_file_size": [
+        "79.5 MB",
+        "77.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 11, Windows 10, Windows 8.1, Windows 8, Windows 7 Service Pack 1, Windows 10 Server, Windows Server 2012 R2, Windows Server 2012, or Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>Note:</b> Before installing this download, you must first remove any previous versions of the Access Database Engine from your computer by using Add/Remove Programs in the Control Panel.\r\n<br /><br />\r\n<b>To install this download: </b>\r\n<ol>\r\n<li>Download the file by clicking the <b>Download</b> button and saving the file to your hard disk. </li>\r\n<li>Double-click the <b>AccessDatabaseEngine.exe </b>program file on your hard disk to start the setup program. </li>\r\n<li>Follow the instructions on the screen to complete the installation. </li>\r\n</ol>\r\n<b>To use this download: </b>\r\n<ol>\r\n<li>If you are the user of an application, consult your application documentation for details on how to use the appropriate driver. </li>\r\n<li>If you are an application developer using OLEDB, set the Provider argument of the ConnectionString property to \u201cMicrosoft.ACE.OLEDB.12.0\u201d <br/><br/>\r\nIf you are connecting to Microsoft Office Excel data, add the appropriate Extended Properties of the OLEDB connection string based on the Excel file type: \r\n<br/><br/>\r\nFile Type (extension)    &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Extended Properties<br/>\r\n---------------------------------------------------------------------------------------------<br/>\r\nExcel 97-2003 Workbook (.xls)&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\"Excel 8.0\"<br/>\r\nExcel Workbook (.xlsx)&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  \"Excel 12.0 Xml\"<br/>\r\nExcel Macro-enabled workbook (.xlsm)&nbsp; &nbsp; &nbsp; \"Excel 12.0 Macro\"<br/>\r\nExcel Non-XML binary workbook (.xlsb)&nbsp; &nbsp; &nbsp; \"Excel 12.0\"<br/>\r\n<br/>\r\n</li>\r\n<li>If you are an application developer using ODBC to connect to Microsoft Office Access data, set the Connection String to \u201cDriver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=path to mdb/accdb file\u201d </li>\r\n<li>If you are an application developer using ODBC to connect to Microsoft Office Excel data, set the Connection String to \u201cDriver={Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)};DBQ=path to xls/xlsx/xlsm/xlsb file\u201d</li>\r\n</ol>\r\n<b>To remove this download: </b>\r\n<br/>\r\nTo remove the download file itself, delete the file <b>AccessDatabaseEngine.exe</b> <br/>\r\n<ol>\r\n<li>On the Start menu, point to Settings and then click <b>Control Panel. </b></li>\r\n<li>Double-click <b>Add/Remove Programs.</b></li>\r\n<li>In the list of currently installed programs, select <b>\u201cMicrosoft Access database engine 2016\u201d</b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\r\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\r\n</ol>",
+    "additionalInformationSection": "The Office System Drivers are only supported under certain scenarios, including:\r\n<br /><br />\r\n<ol>\n<li>Desktop applications which read from and write to various files formats including Microsoft Office Access, Microsoft Office Excel and text files.</li>\r\n<li>To transfer data between supported file formats and a database repository, such as SQL Server.   For example, to transfer data from an Excel workbook into SQL Server using the SQL Server Import and Export Wizard or SQL Server Integration Services (provided the SSIS jobs run in the context of a logged-on user with a valid HKEY_CURRENT_USER registry hive).</li>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "download and install Microsoft 365 Access Runtime",
+            "url": "https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54920",
+    "downloadPreload": true
+}

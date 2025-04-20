@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Fine: A Type-Preserving Compiler for End-to-End Security Verification",
+    "downloadDescription": "This is a source release of the Fine compiler and several example programs. Last published: May 28, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "fine-0.3-alpha.zip",
+            "url": "https://download.microsoft.com/download/0/e/2/0e2946ef-c7eb-4d56-ba05-bccc5399391b/fine-0.3-alpha.zip",
+            "size": "5158445",
+            "version": "0.3-alpha",
+            "datePublished": "12/15/2023 4:19:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a source release of the Fine compiler and several example programs. The Fine compiler implements a type system that enables the enforcement of rich, stateful authorization and information-flow policies to be verified. Our compilation technique produces verifiable target code in a language called DCIL, an extension of CIL, the language of the .NET runtime. Code consumers can check DCIL target programs using a syntactic byte-code verifier to establish the security of the code.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.3-alpha",
+    "detailsSection_file_name": [
+        "fine-0.3-alpha.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52429",
+    "downloadPreload": true
+}

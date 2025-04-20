@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Migration Guide for the BizTalk Accelerator for SWIFT 2006 Message Pack",
+    "downloadDescription": "Provides documentation for updating the schema of the BizTalk Accelerator for SWIFT to comply with SWIFT industry standards.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "2006_Msg_Pk_Migration.chm",
+            "url": "https://download.microsoft.com/download/4/4/7/447bdd65-c431-4d84-9282-0e4739d58d28/2006_Msg_Pk_Migration.chm",
+            "size": "129483",
+            "version": "1066",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Migration Guide for the BizTalk Accelerator for SWIFT 2006 Message Pack for guidance on the installation and configuration of BizTalk Accelerator for SWIFT 2006 Message Pack v2.1, and v2.3, to ensure minimum downtime.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB925731",
+        "name": "KB925731"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1066",
+    "detailsSection_file_name": [
+        "2006_Msg_Pk_Migration.chm"
+    ],
+    "detailsSection_file_size": [
+        "126.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li/><b>Other Software: </b>BizTalk Accelerator for SWIFT v2.1 or v2.3, BizTalk Server 2004 or BizTalk Server 2006, SQL Server2000 SP4</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Click the Download button to begin downloading.",
+    "relatedResourcesSection": [
+        {
+            "title": "bizTalk Accelerator for SWIFT",
+            "url": "http://www.microsoft.com/biztalk/evaluation/swift/default.mspx"
+        },
+        {
+            "title": "bizTalk Accelerator for SWIFT 2006 Message Pack v2.1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=834C4C2E-A61D-41F0-B27D-3BB7C9017F19&displaylang=en"
+        },
+        {
+            "title": "kb Article 925731",
+            "url": "http://support.microsoft.com/kb/925731/en-us"
+        },
+        {
+            "title": "bizTalk Accelerator for SWIFT 2006 Message Pack v2.3",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=95C8535B-CD6C-4727-8022-2741E3642B8C&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24517",
+    "downloadPreload": true
+}

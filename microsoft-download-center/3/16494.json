@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Stateful communication with SAP NetWeaver Web services",
+    "downloadDescription": "Some applications require stateful oriented communication. If these function modules are published as Web services state oriented communication is supported for the server side using HTTP sessions that can be used by .NET based Web services clients to achieve consistency.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StatefulNetWeaverCommunication.pdf",
+            "url": "https://download.microsoft.com/download/a/2/8/a287c141-b72e-4e9e-aac5-826e3f0d6d76/StatefulNetWeaverCommunication.pdf",
+            "size": "901010",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:51:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Some applications require stateful oriented communication. If these function modules are published as Web services state oriented communication is supported for the server side using HTTP sessions that can be used by .NET based Web services clients to achieve consistency.<br />\nInstead of stateful communication SAP recommends to use SAP Enterprise Services<br />\nbecause they are using a stateless model and ensure consistency of the called backend<br />\napplication.<br />\nThis scenario however is applicable in a situation where no SAP Enterprise Services can<br />\nbe used and where for example an existing stateful RFC communication is to be<br />\nreplaced by a Web service based communication calling the same function modules.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "StatefulNetWeaverCommunication.pdf"
+    ],
+    "detailsSection_file_size": [
+        "879.9 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Microsoft Windows<br />\nAdobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 95",
+        "Windows 98",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP",
+        "Windows XP 64-bit"
+    ],
+    "installInstructionSection": "Right click to download or run remotely.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16494",
+    "downloadPreload": true
+}

@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual Machine Servicing Tool 2012",
+    "downloadDescription": "This Solution Accelerator provides automated tools and guidance that IT professionals can use to update offline virtual machines, templates, and virtual hard disks efficiently and without exposing them to security risks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Virtual Machine Servicing Tool 2012 Release.zip",
+            "url": "https://download.microsoft.com/download/7/7/1/771ab535-8f04-478f-94c4-012914fcb52f/Virtual Machine Servicing Tool 2012 Release.zip",
+            "size": "2656189",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:11:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Virtual Machine Servicing Tool (VMST) 2012 is designed to work with System Center 2012 \u2013Virtual Machine Manager (VMM), System Center 2012  Configuration Manager and Windows Server Update Services  (WSUS) 3.0 SP2. <br/><br/>\r\n\r\nVMST 2012 helps you reduce IT costs by making it easier to update your offline virtual machines, templates, and virtual hard disks with the latest operating system and application patches\u2014without introducing vulnerabilities into your IT infrastructure.<br /><br/>\r\nThis Solution Accelerator includes the following components:<br />\r\n<ul><li><b>Brief Overview.</b> Available online only on <a href=\"http://technet.microsoft.com/en-us/library/jj149757.aspx\">Microsoft TechNet</a>. Summary for business and technical managers that briefly explains how this Solution Accelerator can fit into an organization\u2019s IT infrastructure management strategy.</li>\r\n<li><b>VMServicing_x64</b> and <b>VMServicing_x86.</b> Setup files for the tool, for 64 bit and 32 bit versions of Windows with System Center 2012 - Virtual Machine Manager.</li>\r\n<li><b>Virtual Machine Servicing Tool Getting Started Guide.</b> Provides information about how the tool works, explains prerequisites for the tool, and describes how to install and configure the tool.</li>\r\n<li><b>VM_Servicing_Tool_2012_Release_Notes</b> Notes provide information about this release, describe known issues in the tool, and include feedback instructions.</li>\r\n</ul><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Virtual Machine Servicing Tool 2012 Release.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li>Microsoft System Center 2012 - Virtual Machine Manager</li> \r\n<li>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Microsoft Word Viewer 2003</a> (available as a free download) can be used to view Word documents</li>\r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=941B3470-3AE9-4AEE-8F43-C6BB74CD1466&mg_id=10049\">Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint File Formats</a> (available as a free download) can be used to open, edit, and save documents, workbooks, and presentations in the file formats new to Microsoft Office.</li> \r\n\r\n\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ol>\n<li>Click the <b>Download</b> button at the top of the page to start the download.</li>\r\n<li>Do one of the following:</li>\n<ul>\n<li>To start the .zip file extraction immediately, click <b>Open</b> or <b>Run this program from its current location</b>. Then extract the files to the preferred location on your computer. <br/>\n<b>Note</b>   The Release Notes and <i>Getting Started Guide </i> are available in the .zip package outside the .msi files for optional viewing before tool installation.</li>\n<li>To save the download to the preferred location on your computer for .zip file extraction at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li></ul>\n<li>To install the .msi package (VMServicing_X86.msi or VMServicing_X64.msi): </li>\n<ol><li>Navigate to where you extracted the .zip file content on your hard drive.</li>\n<li>Double-click the .msi file you want to install.</li>\n<li>Accept the Microsoft Software License Terms.</li>\n<li>Follow the steps in the installation process to complete the installation.</li>\n<li>Find the installed files in C:\\Program Files on your computer in the folder Microsoft Virtual Machine Servicing Tool.</li></ol></ol>",
+    "additionalInformationSection": "<a href=\"http://technet.microsoft.com/en-us/solutionaccelerators/default.aspx\">Solution Accelerators</a> are free, scenario-based guides and automations designed to help IT Professionals who are proactively planning, deploying, and operating IT systems using Microsoft products and technologies. Solution Accelerator scenarios focus on security and compliance, management and infrastructure, and communication and collaboration. <br /><br />\n<b>Get  the <i>Solution Accelerator Notifications</i> Newsletter</b><br/><br/>\nSubscribe to the <a href=\"http://go.microsoft.com/fwlink/?linkid=54982\"><i>Solution Accelerator Notifications</i></a> newsletter so that you can stay informed about new Solution Accelerator releases and updates. The newsletter covers such areas of interest as<br/><br/>\n<ul><li>Communication & Collaboration</li><li>Security, Data Protection, & Recovery</li><li>Deployment</li><li>Operations & Management</li></ul><br/>\nYou may also receive invitations to participate in accelerator development via beta programs and customer surveys. <i>Solution Accelerator Notifications</i> is currently available in English only.",
+    "relatedResourcesSection": [
+        {
+            "title": "virtual Machine Servicing Tool 3.0",
+            "url": "http://technet.microsoft.com/en-us/library/cc501231.aspx"
+        },
+        {
+            "title": "system Center Virtual Machine Manager",
+            "url": "http://technet.microsoft.com/en-us/systemcenter/hh278293"
+        },
+        {
+            "title": "windows Server Update Services",
+            "url": "http://technet.microsoft.com/en-us/windowsserver/bb332157.aspx"
+        },
+        {
+            "title": "system Center Configuration Manager",
+            "url": "http://www.microsoft.com/systemcenter/configurationmanager/en/us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30470",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (22H2)",
+    "downloadDescription": "This is the Administrative Guide for the Common Criteria GPOS evaluation of the 22H2 release of Windows products.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (22H2).pdf",
+            "url": "https://download.microsoft.com/download/c/8/3/c83090c7-d299-4d26-a1c3-fb2bf2d77a7b/Microsoft Windows, Windows Server, Azure Stack Administrative Guide (22H2).pdf",
+            "size": "1166459",
+            "version": "1",
+            "datePublished": "7/15/2024 5:00:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the Administrative Guide for the Common Criteria GPOS evaluation of the 22H2 release of Windows products.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Windows, Windows Server, Azure Stack Administrative Guide (22H2).pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Android, iOS, Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Select the <b>Download</b> button to start the download.</li> \r\n\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105803",
+    "downloadPreload": true
+}

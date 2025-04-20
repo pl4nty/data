@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange 2013: CHKSGFILES API library and header files for backup and restore applications",
+    "downloadDescription": "This download includes a 64-bit native-code library and header file that can be used to verify the integrity of Exchange Server 2013 databases that are to be backed up.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "chksgfiles.zip",
+            "url": "https://download.microsoft.com/download/b/5/b/b5bc83f9-fa5b-4bec-b670-411c1d9e44d4/chksgfiles.zip",
+            "size": "6174",
+            "version": "1",
+            "datePublished": "7/15/2024 4:50:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Using Volume Shadow Copy Services (VSS), you can create a custom backup and restore application for your Exchange 2013 databases. Exchange 2013 includes a CHKSGFILES.dll that is used to verify the integrity of your Exchange databases. This download includes the CHKSGFILE.lib library and CHKSGFILES.hxx header file for use in your custom application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "chksgfiles.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>This download contains native-code files for use with your custom backup and restore application. You will need one of the following products to work with these files:\r\n<LI>Visual Studio 2010</LI>\r\n<LI>Visual Studio 2012</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click the Download link above and save the CHKSGFILES.zip file to your hard disk.</LI>\r\n<LI>Open the .zip file on your hard disk and save the files with the Visual Studio project that you are using to create your backup and restore application.</LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36802",
+    "downloadPreload": true
+}

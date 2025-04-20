@@ -1,0 +1,307 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for Windows Print Server 2016 and 1709 plus",
+    "downloadDescription": "This management pack monitors the performance and availability of the Print Server role running on Windows Server 2016 and 1709 plus operating systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.TRK.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.TRK.msi",
+            "size": "573440",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.SVE.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.SVE.msi",
+            "size": "569344",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.RUS.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.RUS.msi",
+            "size": "581632",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PTG.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PTG.msi",
+            "size": "569344",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PTB.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PTB.msi",
+            "size": "569344",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PLK.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PLK.msi",
+            "size": "577536",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.NLD.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.NLD.msi",
+            "size": "569344",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.msi",
+            "size": "602112",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.KOR.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.KOR.msi",
+            "size": "573440",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.JPN.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.JPN.msi",
+            "size": "565248",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ITA.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ITA.msi",
+            "size": "569344",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.HUN.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.HUN.msi",
+            "size": "581632",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.FRA.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.FRA.msi",
+            "size": "573440",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ESN.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ESN.msi",
+            "size": "569344",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ENU.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ENU.msi",
+            "size": "561152",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.DEU.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.DEU.msi",
+            "size": "577536",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CSY.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CSY.msi",
+            "size": "577536",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CHT.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CHT.msi",
+            "size": "557056",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CHS.msi",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CHS.msi",
+            "size": "557056",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Management Pack Guide for Print Server.docx",
+            "url": "https://download.microsoft.com/download/c/e/5/ce5796c9-7bd6-4fea-beed-0384e0677e47/Management Pack Guide for Print Server.docx",
+            "size": "107454",
+            "version": "10.1.0.0",
+            "datePublished": "7/15/2024 3:04:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft Windows Server Print Server Management Pack monitors the performance and availability of print servers. In addition to monitoring the health of print servers, the management pack can also provide insight into the status of shared printers. By detecting, alerting on, and automatically responding to critical events and performance indicators, this management pack helps indicate, correct, and prevent possible operating system service outages.  <br/>\n<br/>\n<b>Feature Summary</b><br/>\nThe management pack provides functionality to:<br/>\n<ul>\n<li> Monitor performance and Windows events </li>\n<li> Display detailed monitoring data through views </li>\n<li> Allow operator to manage print servers </li>\n<li> Ensure correct configurations </li>\n</ul><br/>\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1.0.0",
+    "detailsSection_file_name": [
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.TRK.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.SVE.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.RUS.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PTG.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PTB.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.PLK.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.NLD.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.KOR.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.JPN.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ITA.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.HUN.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.FRA.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ESN.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.ENU.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.DEU.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CSY.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CHT.msi",
+        "Microsoft SC MP for Windows Print Server 2016 and 1709 Plus.CHS.msi",
+        "Management Pack Guide for Print Server.docx"
+    ],
+    "detailsSection_file_size": [
+        "560.0 KB",
+        "556.0 KB",
+        "568.0 KB",
+        "556.0 KB",
+        "556.0 KB",
+        "564.0 KB",
+        "556.0 KB",
+        "588.0 KB",
+        "560.0 KB",
+        "552.0 KB",
+        "556.0 KB",
+        "568.0 KB",
+        "560.0 KB",
+        "556.0 KB",
+        "548.0 KB",
+        "564.0 KB",
+        "564.0 KB",
+        "544.0 KB",
+        "544.0 KB",
+        "104.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Supported SCOM versions</b><br/>\r\n<li>System Center Operations Manager 2019 and System Center Operations Manager 2016</li>\r\nTo check support of other SCOM versions and Operating systems, please refer links below:<br/>\r\nhttps://docs.microsoft.com/en-us/previous-versions/system-center/system-center-2012-R2/dn281931(v%3dsc.12)<br/>\r\nhttps://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2016#microsoft-monitoring-agent-operating-system<br/>\r\nhttps://docs.microsoft.com/en-us/system-center/scom/system-requirements?view=sc-om-2019#microsoft-monitoring-agent-operating-system<br/>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer to MP guide.<br/>\r\n<br/>\r\n<b>Note:</b> To use the language packs, you must install the English version of the management pack first.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54588",
+    "downloadPreload": true
+}

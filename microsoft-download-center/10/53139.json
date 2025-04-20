@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "O365 Extend readiness materials",
+    "downloadDescription": "This zipped folder contains readiness materials for Office 365 Extend with EMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "O365 Extend readiness materials.zip",
+            "url": "https://download.microsoft.com/download/4/f/b/4fb9c0d8-da36-4060-89e1-1af02c035504/O365 Extend readiness materials.zip",
+            "size": "27449902",
+            "version": "July 2016",
+            "datePublished": "5/15/2024 4:20:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains readiness materials for Office 365 Extend with EMS.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "O365 Extend readiness materials.zip"
+    ],
+    "detailsSection_file_size": [
+        "26.2 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53139",
+    "downloadPreload": true
+}

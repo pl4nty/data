@@ -1,0 +1,152 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack IaaS Deployment Script",
+    "downloadDescription": "The HPC Pack IaaS deployment script provides an easy and fast way to deploy HPC clusters in Azure infrastructure services (IaaS) on either the Azure Global or Azure China service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.4.0.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.4.0.zip",
+            "size": "170395",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.4.2.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.4.2.zip",
+            "size": "174389",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.5.2.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.5.2.zip",
+            "size": "188484",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.5.1.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.5.1.zip",
+            "size": "182109",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.3.1.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.3.1.zip",
+            "size": "142133",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.3.4.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.3.4.zip",
+            "size": "147535",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.3.2.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.3.2.zip",
+            "size": "142198",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.3.3.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.3.3.zip",
+            "size": "146997",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.4.1.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.4.1.zip",
+            "size": "173918",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPCPackIaaSDeploymentScript_4.5.0.zip",
+            "url": "https://download.microsoft.com/download/e/9/d/e9db9ead-218c-4788-9056-cf2d4332bc9a/HPCPackIaaSDeploymentScript_4.5.0.zip",
+            "size": "180852",
+            "version": "4.5.2",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The HPC Pack IaaS deployment script provides an easy and fast way to deploy HPC clusters in Azure infrastructure services (IaaS) on either the Azure Global or Azure China service. It utilizes the HPC Pack VM image in the Azure Gallery for fast deployment and provides a comprehensive set of configuration parameters to make the deployment both easy and flexible.\r\n<br/>\r\nFor more details, see <a href=\"https://azure.microsoft.com/documentation/articles/virtual-machines-hpcpack-cluster-powershell-script/\">Create an HPC Cluster with the HPC Pack IaaS Deployment Script</a>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2",
+    "detailsSection_file_name": [
+        "HPCPackIaaSDeploymentScript_4.4.0.zip",
+        "HPCPackIaaSDeploymentScript_4.4.2.zip",
+        "HPCPackIaaSDeploymentScript_4.5.2.zip",
+        "HPCPackIaaSDeploymentScript_4.5.1.zip",
+        "HPCPackIaaSDeploymentScript_4.3.1.zip",
+        "HPCPackIaaSDeploymentScript_4.3.4.zip",
+        "HPCPackIaaSDeploymentScript_4.3.2.zip",
+        "HPCPackIaaSDeploymentScript_4.3.3.zip",
+        "HPCPackIaaSDeploymentScript_4.4.1.zip",
+        "HPCPackIaaSDeploymentScript_4.5.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "166.4 KB",
+        "170.3 KB",
+        "184.1 KB",
+        "177.8 KB",
+        "138.8 KB",
+        "144.1 KB",
+        "138.9 KB",
+        "143.6 KB",
+        "169.8 KB",
+        "176.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A computer running a Windows operating system with Microsoft Azure Powershell installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To run this script, you need an Azure subscription and a client computer with Microsoft Azure PowerShell 0.8.7 or above installed. For more information about how to install and configure Azure PowerShell, see <a href=\"http://azure.microsoft.com/documentation/articles/install-configure-powershell\">How to install and configure Azure PowerShell</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44949",
+    "downloadPreload": true
+}

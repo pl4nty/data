@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Windows 10 and above Operating System",
+    "downloadDescription": "This management pack provides basic monitoring for computers running Windows 10 and above operating system",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows 10 and above Client MP Guide.docx",
+            "url": "https://download.microsoft.com/download/2/e/5/2e5d2441-2939-443f-a439-de68463b823f/Windows 10 and above Client MP Guide.docx",
+            "size": "100629",
+            "version": "10.0.0.2",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Windows 10 and above.msi",
+            "url": "https://download.microsoft.com/download/2/e/5/2e5d2441-2939-443f-a439-de68463b823f/SC Management Pack for Windows 10 and above.msi",
+            "size": "1155072",
+            "version": "10.0.0.2",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows 10 and above Monitoring Management Pack is built to detect, diagnose, and resolve hardware and software problems pertaining to Windows 10 and above operating system. Information and analysis on the issues that the system detected are collected by the MP through an agent on the client machine, and sent to OpsMgr where this data is converted into health state, alerts (if need be) and processed for business critical and aggregate reports. The MP gives a clear picture of catastrophic failures in your mission critical machines, trend-based alerts of significant changes to computer groups, in-depth views of health of individual machines, and reports that provide a landscape view of the health of all monitored clients. <br/>\r\n<br/>\r\n<b> Feature Summary </b><br/>\r\n<ul>\r\n<li> Key Processor Performance Indicators </li> \r\n<li> Logical and Physical disk performance and free space  </li>\r\n<li> Memory utilization  </li>\r\n<li> Network health  </li>\r\n<li> Health monitoring of key Windows Operating System services  </li>\r\n<li> Comprehensive performance collections  </li>\r\n<li> Availability and event reports  </li>\r\n</ul><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.0.2",
+    "detailsSection_file_name": [
+        "Windows 10 and above Client MP Guide.docx",
+        "SC Management Pack for Windows 10 and above.msi"
+    ],
+    "detailsSection_file_size": [
+        "98.3 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center 2016 Operations Manager or later</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Please refer to the MP guide for detailed instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51189",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project Server 2010: A look at Demand Management",
+    "downloadDescription": "This white paper describes the Demand Management capability in Project Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Project2010DemandMgt.pdf",
+            "url": "https://download.microsoft.com/download/6/8/2/682774d2-9c22-43d6-93e8-fdf7eae0161b/Project2010DemandMgt.pdf",
+            "size": "1385628",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper is written from an end user\u2019s perspective to discuss the Demand Management capability in Microsoft Project Server 2010, also known as Project Lifecycle Management (PLM).  Demand Management represents a deliberate attempt to reconcile and combine multiple lifecycle management tasks within a single, unified approach. The specifications, assumptions, delivery, and costs dictate the project demand curves. The project demand curves will take a variety of shapes depending on the traceability path of related projects within any given portfolio.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Project2010DemandMgt.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Adobe Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": " Click <b>Download</b>, and then save the file to your computer. Open the file in Adobe Reader to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4906",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR ECCLib",
+    "downloadDescription": "MSR ECCLib is an efficient cryptographic library that provides functions for computing essential elliptic curve operations on a new set of high-security curves. Last published: June 8, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR_ECClib_v2.0.zip",
+            "url": "https://download.microsoft.com/download/6/9/e/69e05a73-b1a4-4dec-8bb6-aa7de191548b/MSR_ECClib_v2.0.zip",
+            "size": "157592",
+            "version": "2.0",
+            "datePublished": "5/15/2024 4:10:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MSR ECCLib is an efficient cryptographic library that provides functions for computing essential elliptic curve operations on a new set of high-security curves. All computations on secret data exhibit regular, constant-time execution, providing protection against timing and cache attacks. For more information, see http://research.microsoft.com/en-us/projects/nums/default.aspx.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MSR_ECClib_v2.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "153.9 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52511",
+    "downloadPreload": true
+}

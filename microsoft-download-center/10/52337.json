@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Pitch Change Toolbox",
+    "downloadDescription": "This Matlab toolbox implements the pitch-change algorithm described by Slaney, Shriberg and Huang in their Interspeech 2013 paper \u201cPitch-gesture modeling using subband autocorrelation change detection.\u201d Calculating speaker pitch (or f0) is typically the first computational step in modeling tone and intonation for spoken language understanding. Last published: October 28, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PitchChangeVersion1.1.zip",
+            "url": "https://download.microsoft.com/download/b/3/2/b3210fd8-3526-46a8-9fa0-1a208dd124bb/PitchChangeVersion1.1.zip",
+            "size": "12673339",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Matlab toolbox implements the pitch-change algorithm described by Slaney, Shriberg and Huang in their Interspeech 2013 paper \u201cPitch-gesture modeling using subband autocorrelation change detection.\u201d Calculating speaker pitch (or f0) is typically the first computational step in modeling tone and intonation for spoken language understanding. Usually pitch is treated as a fixed, single-valued quantity. The inherent ambiguity of judging the octave of pitch, as well as spurious values, leads to errors in modeling pitch gestures that propagate in a computational pipeline. This toolbox implements an alternative that instead measures changes in the harmonic structure using a subband autocorrelation change detector (SACD). This approach builds upon new machine-learning ideas for how to integrate autocorrelation information across subbands. Importantly however, for modeling gestures, we preserve multiple hypotheses and integrate information from all harmonics over time.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "PitchChangeVersion1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "12.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52337",
+    "downloadPreload": true
+}

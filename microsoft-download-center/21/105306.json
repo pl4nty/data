@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "LatestComponentsUpload_20230629T155239",
+    "downloadDescription": "LatestComponentsUpload_20230629T155239",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LatestComponents.json",
+            "url": "https://download.microsoft.com/download/2/c/f/2cfc9ece-0f6a-40e9-bd0c-901eacb7bb67/LatestComponents.json",
+            "size": "3267",
+            "version": "20230629T155239",
+            "datePublished": "7/15/2024 4:59:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "LatestComponentsUpload_20230629T155239",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20230629T155239",
+    "detailsSection_file_name": [
+        "LatestComponents.json"
+    ],
+    "detailsSection_file_size": [
+        "3.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "LatestComponents Json file contains the download links for clients.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105306",
+    "downloadPreload": true
+}

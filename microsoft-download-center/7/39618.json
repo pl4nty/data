@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: GDPdU Setup",
+    "downloadDescription": "This white paper explains how to configure GDPdU data export for organizations in Germany and Austria.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GDPdU setup for Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/0/2/a/02a51c24-edeb-4591-807a-782915c16332/GDPdU setup for Microsoft Dynamics AX 2012.pdf",
+            "size": "1628325",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:35:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For each type of data that can be exported, the required tables and fields are explained, and an illustration of the exported text file is provided. You can export master data and transactions for main accounts, customers, vendors, items, fixed assets, and sales taxes.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "GDPdU setup for Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39618",
+    "downloadPreload": true
+}

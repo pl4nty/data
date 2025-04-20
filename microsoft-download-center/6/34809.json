@@ -1,0 +1,159 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows Language Packs v11.0",
+    "downloadDescription": "Kinect for Windows language packs are add-ins for the Kinect for Windows Runtime that enable speech recognition for the way a language is spoken in different locales.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_ja-JP.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_ja-JP.exe",
+            "size": "15415056",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_it-IT.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_it-IT.exe",
+            "size": "19804736",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_fr-FR.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_fr-FR.exe",
+            "size": "16982616",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_fr-CA.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_fr-CA.exe",
+            "size": "17315680",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_es-MX.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_es-MX.exe",
+            "size": "16477312",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_es-ES.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_es-ES.exe",
+            "size": "21064176",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_en-NZ.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_en-NZ.exe",
+            "size": "15699240",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_en-IE.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_en-IE.exe",
+            "size": "18848216",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_en-GB.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_en-GB.exe",
+            "size": "18197352",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_en-CA.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_en-CA.exe",
+            "size": "32873760",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KinectSpeechLanguagePack_en-AU.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_en-AU.exe",
+            "size": "15691824",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "KinectSpeechLanguagePack_de-DE.exe",
+            "url": "https://download.microsoft.com/download/1/a/1/1a10a86f-1575-4881-927a-30b72c31f1d6/KinectSpeechLanguagePack_de-DE.exe",
+            "size": "19258064",
+            "version": "11.0.7413",
+            "datePublished": "7/15/2024 3:31:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the appropriate language pack to enable speech recognition for a particular locale:\r\n<ul>\r\n<li>English/Great Britain - KinectSpeechLanguagePack_en-GB</li>\r\n<li>English/Ireland - KinectSpeechLanguagePack_en-IE</li>\r\n<li>English/Australia - KinectSpeechLanguagePack_en-AU</li>\r\n<li>English/New Zealand - KinectSpeechLanguagePack_en-NZ</li>\r\n<li>English/Canada - KinectSpeechLanguagePack_en-CA</li>\r\n<li>French/France - KinectSpeechLanguagePack_fr-FR</li>\r\n<li>French/Canada - KinectSpeechLanguagePack_fr-CA</li>\r\n<li>German/Germany - KinectSpeechLanguagePack_de-DE</li>\r\n<li>Italian/Italy - KinectSpeechLanguagePack_it-IT</li>\r\n<li>Japanese/Japan - KinectSpeechLanguagePack_ja-JP</li>\r\n<li>Spanish/Spain - KinectSpeechLanguagePack_es-ES</li>\r\n<li>Spanish/Mexico - KinectSpeechLanguagePack_es-MX</li>\r\n<li>Note: Kinect for Windows language packs require that Kinect for Windows SDK or Kinect for Windows Runtime v1.5 or greater be installed</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.7413",
+    "detailsSection_file_name": [
+        "KinectSpeechLanguagePack_ja-JP.exe",
+        "KinectSpeechLanguagePack_it-IT.exe",
+        "KinectSpeechLanguagePack_fr-FR.exe",
+        "KinectSpeechLanguagePack_fr-CA.exe",
+        "KinectSpeechLanguagePack_es-MX.exe",
+        "KinectSpeechLanguagePack_es-ES.exe",
+        "KinectSpeechLanguagePack_en-NZ.exe",
+        "KinectSpeechLanguagePack_en-IE.exe",
+        "KinectSpeechLanguagePack_en-GB.exe",
+        "KinectSpeechLanguagePack_en-CA.exe",
+        "KinectSpeechLanguagePack_en-AU.exe",
+        "KinectSpeechLanguagePack_de-DE.exe"
+    ],
+    "detailsSection_file_size": [
+        "14.7 MB",
+        "18.9 MB",
+        "16.2 MB",
+        "16.5 MB",
+        "15.7 MB",
+        "20.1 MB",
+        "15.0 MB",
+        "18.0 MB",
+        "17.4 MB",
+        "31.4 MB",
+        "15.0 MB",
+        "18.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\n<ul>\r\n<li><b>Hardware Requirements</b></li>\r\n<ul>\r\n<li>32-bit (x86) or 64-bit (x64) processor</li>\r\n<li>Dual-core 2.66-GHz or faster processor </li>\r\n<li>Dedicated USB 2.0 bus </li>\r\n<li>2 GB RAM</li>\r\n<li>A Microsoft Kinect for Windows sensor</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li>Kinect for Windows SDK or Kinect for Windows Runtimer v1.5 or greater</li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 7",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "To install a language pack:\r\n<ol>\r\n<li>Make sure that you have the Kinect for Windows SDK or Kinect for Windows Runtime v1.5 or greater installed.</li>\r\n<li>Download the appropriate language pack.</li>\r\n<li>From the download location, double-click on the language pack install application and follow the on-screen instructions.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34809",
+    "downloadPreload": true
+}

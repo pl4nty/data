@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: eBook for SharePoint Server 2013 Intranet and Team Sites",
+    "downloadDescription": "Download this free ebook to learn how to create a test lab containing intranet and team sites in a SharePoint Server 2013 three-tier farm.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_IntranetAndTeamSites_ebook.mobi",
+            "url": "https://download.microsoft.com/download/6/9/9/6992ffa2-6a03-4d20-8730-c45c3dd28692/TestLabGuide_IntranetAndTeamSites_ebook.mobi",
+            "size": "228438",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TestLabGuide_IntranetAndTeamSites_ebook.docx",
+            "url": "https://download.microsoft.com/download/6/9/9/6992ffa2-6a03-4d20-8730-c45c3dd28692/TestLabGuide_IntranetAndTeamSites_ebook.docx",
+            "size": "252371",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_IntranetAndTeamSites_ebook.pdf",
+            "url": "https://download.microsoft.com/download/6/9/9/6992ffa2-6a03-4d20-8730-c45c3dd28692/TestLabGuide_IntranetAndTeamSites_ebook.pdf",
+            "size": "523463",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_IntranetAndTeamSites_ebook.epub",
+            "url": "https://download.microsoft.com/download/6/9/9/6992ffa2-6a03-4d20-8730-c45c3dd28692/TestLabGuide_IntranetAndTeamSites_ebook.epub",
+            "size": "138984",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book provides step-by-step instructions for building out and demonstrating the SharePoint Server 2013 three-tier farm with intranet and team sites test lab. The audiences for this book include IT professionals and implementers who are evaluating SharePoint Server 2013.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "TestLabGuide_IntranetAndTeamSites_ebook.mobi",
+        "TestLabGuide_IntranetAndTeamSites_ebook.docx",
+        "TestLabGuide_IntranetAndTeamSites_ebook.pdf",
+        "TestLabGuide_IntranetAndTeamSites_ebook.epub"
+    ],
+    "detailsSection_file_size": [
+        "223.1 KB",
+        "246.5 KB",
+        "511.2 KB",
+        "135.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word, Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li>\r\n<li>Click <b>Save</b> or <b>Save this program to disk</b>. </li>\r\n<li>Find the file on your hard disk and double-click it to open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38839",
+    "downloadPreload": true
+}

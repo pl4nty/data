@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Media Feature Pack for N and KN versions of Windows 8.1",
+    "downloadDescription": "The Media Feature Pack for N and KN versions of Windows 8.1 will install Media Player and related technologies on a computer running Windows 8.1 N or Windows 8.1 KN editions. For further information, please see http://support.microsoft.com and query the Knowledge Base for the article number KB2835517.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.3-KB2835517-x86.msu",
+            "url": "https://download.microsoft.com/download/d/f/9/df92cb69-abb8-4c81-9621-78a8e57531a3/Windows6.3-KB2835517-x86.msu",
+            "size": "63505058",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.3-KB2835517-x64.msu",
+            "url": "https://download.microsoft.com/download/d/f/9/df92cb69-abb8-4c81-9621-78a8e57531a3/Windows6.3-KB2835517-x64.msu",
+            "size": "89137031",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:19:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        }
+    ],
+    "detailsSection": "Windows 8.1 N and Windows 8.1 KN editions include the same functionality as Windows 8.1, except that these versions of Windows do not include Windows Media Player, and related technologies. \n<br /><br />\n End-user customers can enable the media functionality to work properly by installing the Media Feature Pack for N and KN versions of Windows 8.1 (KB2835517). \n<br /><br />\n This feature pack can be applied to computers running either Windows 8.1 N or Windows 8.1 KN editions.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.3-KB2835517-x86.msu",
+        "Windows6.3-KB2835517-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "60.6 MB",
+        "85.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8.1 N, Windows 8.1 Pro N, Windows 8.1 Enterprise N, or Windows 8.1 KN, Windows 8.1 Pro KN, Windows 8.1 Enterprise KN",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download, or select a different language from the Change language drop-down list and click Go.\n<br /><br />\n 2. Do one of the following:\n<br /><br />\n\n\u2022To start the installation immediately, click Run.<br />\n\u2022To save the download to your computer for installation at a later time, click Save.<br />\n\u2022To cancel the installation, click Cancel.\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40744",
+    "downloadPreload": true
+}

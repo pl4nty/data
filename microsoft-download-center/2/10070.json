@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2005 Compact Edition Developer Software Development Kit",
+    "downloadDescription": "SQL Server 2005 Compact Edition Developer SDK contains the files required for installing SQL Server 2005 Compact Edition on mobile devices, desktop and tablet PC. It also has the Help File, and the Header files for native development, and the Northwind sample application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSCE31SDK-ENU.msi",
+            "url": "https://download.microsoft.com/download/e/5/b/e5b19eb6-4141-4dba-a1fb-e95693c1538f/SSCE31SDK-ENU.msi",
+            "size": "38246400",
+            "version": "3.1",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2005 Compact Edition (SQL Server 2005 Compact Edition) is designed for developers who need light weight, in process relational database solution for their applications that can be developed and deployed on desktop, tablet PC and mobile devices. SQL Server 2005 Compact Edition Developer SDK contains the following for developing applications with SQL Server 2005 Compact Edition as a database store for the applications:  <br /><BR /><ul><li>CAB files for installing SQL Server 2005 Compact on mobile devices </li><li>MSI file for installing SQL Server 2005 Compact Edition on desktop and tablet PC </li><li>Header files required for developing a native SQL Server Compact application </li><li>MSI for installing the SQL Server 2005 Compact Edition Help Files</li><li>Northwind sample application<br /></li></ul><br />\nThe English version of SQL Server Compact Edition Developer SDK contains only the English version of SQL Server Compact Edition Runtime. The localized version of SQL Server Compact Edition Developer SDK contains the English version of SQL Server Compact Edition Runtime and the localized version SQL Server Compact Edition Runtime. After you install SQL Server Compact Edition Developer SDK, the installer package for SQL Server Compact Edition Runtime is located in the following folder: \n%programfiles%\\Microsoft SQL Server Compact Edition\\v3.1\\SDK\\bin\\Desktop\n<B>To install the localized version of SQL Server 2005 Compact Edition Runtime </B>from the localized version of SQL Server 2005 Compact Edition Developer SDK, follow these steps:\n<ul><li>Open the following folder: \n%programfiles%\\Microsoft SQL Server Compact Edition\\v3.1\\SDK\\bin\\Desktop\n</li><li> Install the English version of SQL Server Compact Edition Runtime (SQLServerCE31-EN.msi). \n</li><li>Install the localized version of SQL Server Compact Edition Runtime (SQLServerCE31-[LN].msi)</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB920700",
+        "name": "KB920700"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1",
+    "detailsSection_file_name": [
+        "SSCE31SDK-ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "36.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR />Development Computer<BR /><UL><LI>38 MB of available hard disk space. (An additional 38 MB of space must be also available for temporary setup files.)</LI><BR /><LI>Microsoft Internet Explorer 6.0 or later</LI><BR /><LI>Active Sync 4.0 or later</LI><BR /><LI>Visual Studio 2005</LI><BR /></UL> <BR />Mobile Devices<BR /><UL><LI>Any device that runs Microsoft Windows CE 5.0, Windows Mobile 2003 Software for Pocket PC, or Windows Mobile 5.0</LI><BR /><LI>2\u20133 MB of available storage space, depending on processor type, operating system version, and components installed.</LI><BR /></UL><BR />Desktop and Tablet PC<BR /><UL><LI> Windows XP Professional SP2, Windows XP Home Edition SP2, Windows XP Media Center Edition 2002 SP2, Windows XP Media Center Edition 2004 SP2, Windows XP Media Center Edition 2005, Windows XP Tablet PC Edition SP2, Windows Server 2003, Standard Edition SP1, Windows Server 2003, Enterprise Edition SP1, Windows Server 2003, Datacenter Edition SP1, Windows Server 2003 R2, Standard Edition, Windows Server 2003 R2, Enterprise Edition, Windows Server 2003 R2, Datacenter Edition, Windows Server 2000 Professional SP4, Windows Server 2000 Server SP4</LI><BR /><LI>2\u20133 MB of available storage space, depending on processor type, operating system version, and components installed.</LI><BR /></UL><BR />For Merge Replication and Remote Data Access (RDA) <BR /><UL><LI>SQL Server 2000 with Service Pack 3a or higher </LI><BR /><LI>IIS 5.0 or later versions: Supported on Windows Server 2003, Windows 2000 SP4 or later versions, and Windows XP; 120 MB of available disk space on the server</LI><BR /></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows CE",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows Mobile 5.0",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 2",
+        "Windows XP Tablet PC Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "SQL Server 2005 Compact Edition runtime for desktop and tablet PC, includes a Microsoft Windows Installer (.msi) file. The .msi file installs redistributable components to a specific location on the destination computer. To ensure serviceability and technical support, use the .msi file to deliver software components. Please see Redist.txt included in the package for component information.\n<br /><br />SQL Server 2005 Compact Edition can be installed by running the installer - SQLServerCE31-EN.msi. Installing SQL Server 2005 Compact Edition by running SQLServerCE31-EN.msi installs the provider (System.Data.SqlServerCe.dll) in the GAC (global assembly cache) and registers the OLEDB provider (sqlceoledb30.dll). Doing this ensures that the components can be serviced in future by Microsoft Update. Administrator privileges are required on the machine for installing SQL Server 2005 Compact Edition. Independent Software Vendors and application developers redistributing SQL Server 2005 Compact Edition components or DLL\u2019s as part of their application will need to take care of the serviceability of SQL Server 2005 Compact Edition components. Microsoft Update can only service SQL Server 2005 Compact Edition components that are deployed by using the installer - SQLServerCE31-EN.msi.",
+    "relatedResourcesSection": [
+        {
+            "title": "subscribe to MSDN and Stay Current with the Latest Updates",
+            "url": "http://go.microsoft.com/fwlink?linkid=11936"
+        },
+        {
+            "title": "community Resources for SQL Server",
+            "url": "http://go.microsoft.com/fwlink?linkid=14819"
+        },
+        {
+            "title": "microsoft SQL Server 2005 Compact Edition Runtime",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=85E0C3CE-3FA1-453A-8CE9-AF6CA20946C3&displaylang=en"
+        },
+        {
+            "title": "home Page for SQL Server 2005 Compact Edition",
+            "url": "http://www.microsoft.com/sql/editions/compact/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10070",
+    "downloadPreload": true
+}

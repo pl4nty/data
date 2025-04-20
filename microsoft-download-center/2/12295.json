@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Capacity Calculator",
+    "downloadDescription": "A spreadsheet for calculating a user\u2019s hardware requirements based on information about users and traffic.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Lync_Server _2010 _Scenario _Based _Capacity _Calculator.xlsx",
+            "url": "https://download.microsoft.com/download/9/1/4/91472c19-5460-4a4d-9b0e-97e20eced7ac/Lync_Server _2010 _Scenario _Based _Capacity _Calculator.xlsx",
+            "size": "28776",
+            "version": "Feb2012",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync Server 2010 Capacity Planning Calculator Guide.docx",
+            "url": "https://download.microsoft.com/download/9/1/4/91472c19-5460-4a4d-9b0e-97e20eced7ac/Lync Server 2010 Capacity Planning Calculator Guide.docx",
+            "size": "32040",
+            "version": "Feb2012",
+            "datePublished": "7/15/2024 3:10:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A spreadsheet for calculating a user\u2019s hardware requirements based on information that the admin supplies about number of users, types of communication, and expected traffic. Includes a Microsoft Word document explaining the tool and how to use it. \r\n\r\n<br/><br/>The spreadsheet was updated in April 2011 to modify some calculated cells. \r\n\r\n<br/><br/>\r\nThe Lync Server 2010 Stress and Performance Tool is available for download at <a href=\"http://go.microsoft.com/fwlink/?LinkId=212599\">http://go.microsoft.com/fwlink/?LinkId=212599</a>.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2012",
+    "detailsSection_file_name": [
+        "Lync_Server _2010 _Scenario _Based _Capacity _Calculator.xlsx",
+        "Lync Server 2010 Capacity Planning Calculator Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "28.1 KB",
+        "31.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Excel document. Users who do not have Microsoft Excel can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=212305\">Excel Viewer</A>.</LI> \r\n<LI>The documentation file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\">Word Viewer</A>.</LI>\r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "lync Server 2010 Capacity Calculator ",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=212599"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12295",
+    "downloadPreload": true
+}

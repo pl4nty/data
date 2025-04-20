@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Products scripted deployment SPModule .zip file",
+    "downloadDescription": "The SPModule.zip file is a sample Windows PowerShell module related to farm installation. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SPModule.zip",
+            "url": "https://download.microsoft.com/download/a/8/f/a8fb4651-86d6-440e-9f41-8f638e1fddde/SPModule.zip",
+            "size": "24767",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Version.txt",
+            "url": "https://download.microsoft.com/download/a/8/f/a8fb4651-86d6-440e-9f41-8f638e1fddde/Version.txt",
+            "size": "3",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SPModule.zip file is an unsupported sample of a Windows PowerShell module written by members of the SharePoint Product Group. The module can be used to perform simple administrative tasks related to installing a SharePoint farm. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SPModule.zip",
+        "Version.txt"
+    ],
+    "detailsSection_file_size": [
+        "24.2 KB",
+        "3 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>A 64-bit version of Windows Server 2008 or Windows Server 2008 R2. For server farms, you must also have a 64-bit version of SQL Server 2005 or SQL Server 2008. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "The SPModule.zip file must be used in conjunction with the \"Install SharePoint Foundation 2010 by using Windows PowerShell\" or \"Install SharePoint Server 2010 by using Windows PowerShell\" articles on TechNet. Also, be aware that you need to download both the .zip and .txt files.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6194",
+    "downloadPreload": true
+}

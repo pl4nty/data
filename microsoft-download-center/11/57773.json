@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ADF V1 to V2 Migration Tool October 2018 (63370)",
+    "downloadDescription": "The Azure Data Factory V1 to V2 Migration Tool helps convert entities from Version 1 to Version 2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AdfUpgrader_63370.msi",
+            "url": "https://download.microsoft.com/download/9/a/9/9a9535cf-1f63-4912-a3b4-d0c4caf59b4b/AdfUpgrader_63370.msi",
+            "size": "3002368",
+            "version": "63370",
+            "datePublished": "7/15/2024 3:06:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Azure Data Factory V1 to V2 Migration Tool helps convert entities from Version 1 to Version 2.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "63370",
+    "detailsSection_file_name": [
+        "AdfUpgrader_63370.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 , Windows 7 Service Pack 1, Windows 8.1, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016\r\n\r\nMicrosoft Azure Data Factory Migration Tool requires a 64-bit Operating System with .NET Framework 4.6.1 or above. The recommended configuration for the Integration Runtime (Self-hosted) machine is 2 GHz, 4 Core CPU, 8 GB Memory and 80 GB disk.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and run the AzureDataFactoryMigrationTool.msi (64-bit) to install the Migration Tool on your computer. You may also save AzureDataFactoryMigrationTool.msi to your local disk to install later.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57773",
+    "downloadPreload": true
+}

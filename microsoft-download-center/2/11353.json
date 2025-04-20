@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 Document: Configuring Certificates",
+    "downloadDescription": "This document explains how Microsoft Office Live Communications Server 2005 with SP1 uses certificates and how to configure certificates for each server role using your existing certificate infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LCS_2005_Conf_Certs.doc",
+            "url": "https://download.microsoft.com/download/2/6/f/26fb31d4-1c41-42fa-9a27-3c29d028c22d/LCS_2005_Conf_Certs.doc",
+            "size": "706048",
+            "version": "2.2",
+            "datePublished": "7/15/2024 3:14:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document explains how Live Communications Server 2005 uses certificates and how to configure certificates for each server role using your existing certificate infrastructure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2",
+    "detailsSection_file_name": [
+        "LCS_2005_Conf_Certs.doc"
+    ],
+    "detailsSection_file_size": [
+        "689.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office application:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Communication Server 2005</li>\n</ul></li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. \n\n</li>\n<li>Double-click the <b>LCS_2005_Conf_Certs.exe</b> program file on your hard disk to start the Setup \n\nprogram. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the document as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>LCS_2005_Conf_Certs.exe</b>.\n<br/>\n<br/>\nTo remove the document, delete it from the folder where it was saved.",
+    "relatedResourcesSection": [
+        {
+            "title": "live Communications Server 2005 on Office Online",
+            "url": "http://office.microsoft.com/en-us/FX010908711033.aspx"
+        },
+        {
+            "title": "downloads for Live Communications Server 2005",
+            "url": "http://office.microsoft.com/en-us/officeupdate/CD011516661033.aspx"
+        },
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11353",
+    "downloadPreload": true
+}

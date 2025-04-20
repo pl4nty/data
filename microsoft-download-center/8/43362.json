@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Hybrid Courseware and Curriculum",
+    "downloadDescription": "This zip file contains the PowerPoint slide decks for the SharePoint Hybrid Courseware and Curriculum.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePoint Hybrid Courseware and Curriculum.zip",
+            "url": "https://download.microsoft.com/download/4/9/d/49dc51da-7b20-40c8-9913-a92f7b1bf509/SharePoint Hybrid Courseware and Curriculum.zip",
+            "size": "6268536",
+            "version": "Aug2014",
+            "datePublished": "5/15/2024 3:54:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zip file contains the PowerPoint slide decks for the SharePoint Hybrid Courseware and Curriculum. You can view the videos for this courseware from this TechNet page or download them from this area of Channel 9.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug2014",
+    "detailsSection_file_name": [
+        "SharePoint Hybrid Courseware and Curriculum.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file contains Microsoft PowerPoint files. Users who do not have Microsoft PowerPoint can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=320727\"> PowerPoint Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Hybrid Courseware and Curriculum (on Channel 9)",
+            "url": "http://channel9.msdn.com/series/SharePoint-Hybrid-Courseware-and-Curriculum"
+        },
+        {
+            "title": "sharePoint Hybrid Courseware and Curriculum (on TechNet)",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=402040"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43362",
+    "downloadPreload": true
+}

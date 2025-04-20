@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013 and SharePoint Online solution packs",
+    "downloadDescription": "The SharePoint 2013 and SharePoint Online solution packs contain code samples and documentation that demonstrate how to use site branding and site provisioning techniques, create and use UX components, address search customization scenarios, customize enterprise content management, provide localization, and work with user profile properties in SharePoint 2013 and SharePoint Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePoint2013andSharePointOnlineSolutionPacks.zip",
+            "url": "https://download.microsoft.com/download/0/b/b/0bb8eed0-2de1-45c4-8c0a-2f8916b0ca3e/SharePoint2013andSharePointOnlineSolutionPacks.zip",
+            "size": "5553606",
+            "version": "Apr2015",
+            "datePublished": "6/13/2024 12:07:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SharePoint 2013 and SharePoint Online solution packs contain code samples and documentation that demonstrate how to use site branding and site provisioning techniques, create and use UX components, address search customization scenarios, customize enterprise content management, provide localization, and work with user profile properties in SharePoint 2013 and SharePoint Online. For new and updated solution guidance, see <a href=\"https://msdn.microsoft.com/en-us/library/office/dn904529(v=office.15).aspx\">Office 365 development patterns and practices solution guidance</a>.\r\n\r\n<br/><br/>\r\n The Branding and Site Provisioning solution pack contains code samples and documentation that demonstrate how to use the SharePoint 2013 cloud app model (CAM) and a new site provisioning pattern called remote provisioning to apply branding elements to sites. This solution pack contains seven modules, supported by ten code samples. \r\n<br/><br/>\r\n The Search solution pack contains code samples and documentation that describe search and demonstrate techniques for customizing search for SharePoint 2013 and SharePoint Online. This solution pack contains two modules, supported by three code samples. \r\n<br/><br/>\r\n The UX components solution pack contains code samples and documentation that demonstrate how to use apps for SharePoint to customize the user experience both on SharePoint sites and in provider-hosted apps that interact with SharePoint. \r\n<br/><br/>\r\n The Composite business apps solution pack describes how to create apps that integrate tightly with your business processes and other line of business technologies (databases, web services, etc.). \r\n<br/><br/>\r\n The Enterprise Content Management solution pack contains code samples and documentation that describe enterprise content management and demonstrate techniques for customizing enterprise content management in SharePoint 2013 and SharePoint Online. This solution pack contains eight modules with eight code samples.\r\n<br/><br/>\r\nThe Localization solution pack contains code samples and documentation that describe how to implement localization in SharePoint 2013 and SharePoint Online. This solution pack contains two modules with two code samples.\r\n<br/><br/>\r\nThe User Profile solution pack contains code samples and documentation that describe working with user profile properties and how to implement personalization in SharePoint 2013 and SharePoint Online. This solution pack contains four modules with four code samples.\r\n<br/><br/>\r\nThe Patterns and Practices solution pack contains guidance on patterns that can be applied to many scenarios. This solution pack includes guidance on SharePoint Online throttling, customizing your SharePoint site using JavaScript, adding a custom ribbon, connected app parts, external sharing in Office 365, remote event receivers, transforming farm solutions to the SharePoint app model, using the SharePoint change log, and using Microsoft Azure WebJobs with Office 365.\r\n<br/><br/>\r\nSee the <a href=\"https://github.com/OfficeDev/PnP/tree/dev\">Office 365 Developer patterns and practices</a> project on GitHub which contains many of the samples described in these solution packs. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Apr2015",
+    "detailsSection_file_name": [
+        "SharePoint2013andSharePointOnlineSolutionPacks.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.3 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is an executable file that includes a zip file containing nine Word documents and ten code samples. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42030",
+    "downloadPreload": true
+}

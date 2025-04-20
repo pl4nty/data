@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Mataki",
+    "downloadDescription": "Mataki is an open, reconfigurable, flexible, wirelessly-enabled, low-cost GPS tracking technology with wireless communication. Last published: November 18, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Mataki.zip",
+            "url": "https://download.microsoft.com/download/b/e/b/beb5d55f-1a31-4d89-8366-f8d82ad17870/Mataki.zip",
+            "size": "2824650",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mataki is an open, reconfigurable, flexible, wirelessly-enabled, low-cost GPS tracking technology with wireless communication. Our aim is to keep Mataki low-cost and readily reprogrammable to allow researchers to explore novel tracking approaches by developing their own firmware and applications. We already provide firmware for tracking and base-station applications with a flexible set of parameters that should allow researchers to apply the devices in a number of tracking scenarios without any modifications or new development.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Mataki.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52483",
+    "downloadPreload": true
+}

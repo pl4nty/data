@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Silverlight 4 Application Themes",
+    "downloadDescription": "Application themes for Silverlight 4 templates",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SL4Themes-RawAssets.zip",
+            "url": "https://download.microsoft.com/download/8/4/0/8409dc65-4594-4038-84ac-613a9feb5af2/SL4Themes-RawAssets.zip",
+            "size": "239902",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SL4Themes-templates.zip",
+            "url": "https://download.microsoft.com/download/8/4/0/8409dc65-4594-4038-84ac-613a9feb5af2/SL4Themes-templates.zip",
+            "size": "3774355",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "README_FIRST.txt",
+            "url": "https://download.microsoft.com/download/8/4/0/8409dc65-4594-4038-84ac-613a9feb5af2/README_FIRST.txt",
+            "size": "1392",
+            "version": "1.6",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "4 new application themes for Silverlight 4: JetPack, Accent Color, Windows 7 and Cosmopolitan.  These themes can be used for the navigation template provided by the Silverlight 4 Tools installer or using the various resource dictionaries provided in this download.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6",
+    "detailsSection_file_name": [
+        "SL4Themes-RawAssets.zip",
+        "SL4Themes-templates.zip",
+        "README_FIRST.txt"
+    ],
+    "detailsSection_file_size": [
+        "234.3 KB",
+        "3.6 MB",
+        "1.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2010 and/or Expression Blend 4, Silverlight 4 Tools for Visual Studio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "View the README_FIRST file for instructions on installing the templates for Visual Studio 2010 and Expression Blend 4.  Also included are the raw asset files (resource dictionaries) for each theme to use in your own application.",
+    "relatedResourcesSection": [
+        {
+            "title": "silverlight Learning Resources",
+            "url": "http://www.silverlight.net"
+        },
+        {
+            "title": "wcf RIA Services",
+            "url": "http://www.silverlight.net/riaservices"
+        },
+        {
+            "title": "silverlight 4 Tools for Visual Studio",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=177428"
+        },
+        {
+            "title": "tim Heuer's Blog",
+            "url": "http://timheuer.com/blog/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14590",
+    "downloadPreload": true
+}

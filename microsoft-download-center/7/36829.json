@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft ASP.NET and Frameworks 2012.2",
+    "downloadDescription": "ASP.NET and Frameworks 2012.2 provides updates to the web frameworks that shipped with Visual Studio 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AspNetWebTools2012Setup.exe",
+            "url": "https://download.microsoft.com/download/6/5/6/6562afbe-9503-4e64-970c-1427133fcd73/AspNetWebTools2012Setup.exe",
+            "size": "33667928",
+            "version": "2012.2",
+            "datePublished": "7/15/2024 3:26:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release updates ASP.NET and includes updates to Visual Studio 2012 or Visual Studio 2012 Web Express. For more information see instructions in the release notes at <a href=\"http://go.microsoft.com/fwlink/?LinkID=275132\">http://go.microsoft.com/fwlink/?LinkID=275132</a>. Features and updates: \r\n\r\n<b>ASP.NET Web API</b>\r\nASP.NET Web API now includes support for OData endpoints that support both ATOM and JSON-light formats. With OData you get support for rich query semantics, paging, $metadata, CRUD operations, and custom actions over any data source. Read more about ASP.NET Web API OData support at <a href=\"http://go.microsoft.com/fwlink/?LinkID=271141\">http://go.microsoft.com/fwlink/?LinkID=271141</a>.  \r\n\r\nNew built-in tracing functionality lets you easily diagnose problems with Web API whether you\u2019re running in Visual Studio or on Windows Azure. Tracing output from Web API is automatically written to the Visual Studio output window, IntelliTrace, and any other trace listener that you would like, including Windows Azure Diagnostics. The output shows the full Web API pipeline for all requests, including any exceptions or errors that occur, what controller and action were selected, model binding, the format that was negotiated, and the response. \r\n\r\nUpdated Web API projects now contain a link to an automatically generated help page that shows how to call your web API. The help page shows all of your API endpoints, the HTTP verbs they support, parameters, and sample request and response messages. You can customize the help page as you like. For more information see <a href=\"http://go.microsoft.com/fwlink/?LinkID=285385\">http://go.microsoft.com/fwlink/?LinkID=285385</a>. \r\n\r\n<b>ASP.NET SignalR</b>\r\nASP.NET SignalR is a new library for ASP.NET developers that simplifies the process of adding real-time web functionality to your applications. Real-time web functionality is the ability to have server-side code push content to connected clients instantly as it becomes available. \r\n\r\nYou may have heard of the HTML5 WebSocket API that enables efficient bidirectional communication between the browser and server. SignalR uses Websockets when it is supported by the browser and the server, and gracefully falls back to other techniques and technologies when it is not. Either way, your application code stays the same. \r\n\r\nSignalR provides a simple API for creating server-to-client remote procedure calls (RPC) that call JavaScript functions in client browsers from server-side .NET code. SignalR also includes API for connection management (for instance, connect and disconnect events), grouping connections, and authorization. \r\n\r\nRead more about SignalR at <a href=\"http://go.microsoft.com/fwlink/?LinkID=285432\">http://go.microsoft.com/fwlink/?LinkID=285432</a>.\r\n\r\n<b>ASP.NET MVC</b>\r\nThe new Facebook Application template makes writing Facebook Canvas applications easy. In a few simple steps, you can create a Facebook application that gets data from a logged in user and integrates with their friends. The template includes a new library to take care of all the plumbing involved in building a Facebook app, including authentication, permissions, accessing Facebook data and more. This lets you focus on building the business logic in your app. The Facebook apps you can build with this new template are hosted on the web and displayed inside the Facebook chrome via an iframe. \r\n\r\nA new Single Page Application MVC template allows developers to build interactive client-side web apps using HTML 5, CSS 3, and the popular Knockout and jQuery JavaScript libraries, on top of ASP.NET Web API. The template creates a \u201ctodo\u201d list application that demonstrates common practices for building a JavaScript HTML5 application that uses a RESTful server API. You can read more at <a href=\"http://go.microsoft.com/fwlink/?LinkID=285433\">http://go.microsoft.com/fwlink/?LinkID=285433</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012.2",
+    "detailsSection_file_name": [
+        "AspNetWebTools2012Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "32.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visual Studio 2012 or Microsoft Visual Studio Express 2012 for Web is required to use this update.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "For more information about installing this release, please see the Installation section of the release notes at <a href=\"http://go.microsoft.com/fwlink/?LinkID=279941\">http://go.microsoft.com/fwlink/?LinkID=279941</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36829",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Architecture approaches for Microsoft 365 cloud tenant-to-tenant migrations",
+    "downloadDescription": "Get planning guidance on several architectural approaches for mergers, acquisitions, divestitures, and other scenarios that might lead you to migrate to a new Microsoft 365 tenant.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "microsoft-365-tenant-to-tenant-migration.pdf",
+            "url": "https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf",
+            "size": "547284",
+            "version": "May 2021",
+            "datePublished": "7/15/2024 5:02:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Get planning guidance on several architectural approaches for mergers, acquisitions, divestitures, and other scenarios that might lead you to migrate to a new Microsoft 365 tenant.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May 2021",
+    "detailsSection_file_name": [
+        "microsoft-365-tenant-to-tenant-migration.pdf"
+    ],
+    "detailsSection_file_size": [
+        "534.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The ability to read PDF files",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this file to disk</b>.</li>\r\n<li>Select <b>Open file</b>, or find the file on your device and open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102777",
+    "downloadPreload": true
+}

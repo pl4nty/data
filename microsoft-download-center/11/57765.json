@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Performance Best Practices in Mainframe Migration to .NET and SQL Server",
+    "downloadDescription": "Performance Best Practices in Mainframe Migration to .NET and SQL Server",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Performance Best Practices in Mainframe Migration to .NET and SQL Server.pdf",
+            "url": "https://download.microsoft.com/download/9/7/8/9785f928-4071-4ef2-9731-f50713832154/Performance Best Practices in Mainframe Migration to .NET and SQL Server.pdf",
+            "size": "268681",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:06:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This topic discusses some of the options for performing database queries when migrating from a Mainframe to .NET and SQL Server. Because of the architecture differences between SQL Server and Mainframe, what works well in the Mainframe world might not be a good practice when directly translated into the .NET + Microsoft SQL Server world.\r\nIn Mainframe batch processes, it is typical that workloads use one central loop over a database cursor to get the objects to be processed and then generate tens of separated queries for each object.  In the Mainframe world, In Mainframe architectures the application code usually executes in an environment that is very close to the database and therefore the latency of database interactions is extremely low. DB2 queries for example execute very quickly therefore Because of this Mainframe Mainframe applications often make liberal use of the DB2 databases even though the queriesand their interactions with databases often end up being very are \u201cchatty\u201d. \r\nHoweverHowever,, in the  .NET + SQL Server world, because of the client-server architecture, in addition to query execution there are costs in network latencies, communication, serialization, and deserialization. The best practice is to reduce database roundtrips by doing batch processing.\r\nThis document describes some general performance considerationsrecommendations, several query batching strategies with their pros and cons, as well as a list of helpful performance turning resources.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Performance Best Practices in Mainframe Migration to .NET and SQL Server.pdf"
+    ],
+    "detailsSection_file_size": [
+        "262.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To start the download, click Download, click Go, and then do one of the following: To start the installation immediately, click Open or Run this program from its current location. To copy the download to your computer for installation at a later time, click Save or Save this program to disk.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57765",
+    "downloadPreload": true
+}

@@ -1,0 +1,135 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Windows Server 2012 (KB2871690)",
+    "downloadDescription": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows Server 2012 experience.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2871777-x64.msu",
+            "url": "https://download.microsoft.com/download/9/7/7/977ec649-b9b2-4c0a-9e0d-04396569fe5d/Windows8-RT-KB2871777-x64.msu",
+            "size": "10365032",
+            "version": "2871690",
+            "datePublished": "7/15/2024 3:19:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2871690-v2-x64.msu",
+            "url": "https://download.microsoft.com/download/9/7/7/977ec649-b9b2-4c0a-9e0d-04396569fe5d/Windows8-RT-KB2871690-v2-x64.msu",
+            "size": "210808",
+            "version": "2871690",
+            "datePublished": "7/15/2024 3:19:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These updates (*.msu) provide a collection of performance and reliability improvements that are designed to improve the Windows Server 2012 experience. We recommend that you apply all of these updates as part of your regular maintenance routines. Failure to install all of the packages listed above could leave your machine in an untested state.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2871690",
+        "name": "KB2871690"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2871690",
+    "detailsSection_file_name": [
+        "Windows8-RT-KB2871777-x64.msu",
+        "Windows8-RT-KB2871690-v2-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "9.9 MB",
+        "205.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul><li>These KB's must be installed in the following order: KB2871777, KB2871690</li></ol>",
+    "additionalInformationSection": "<b>Other critical security updates are available:</b> To find the latest security updates for you, visit <a HREF='http://update.microsoft.com'>Windows Update</a> and click <b>Express Install</b>. To have the latest security updates delivered directly to your computer, visit the <a HREF='http://go.microsoft.com/fwlink/?LinkId=82023'>Security At Home</a> web site and follow the steps to ensure you're protected.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin",
+            "url": "http://support.microsoft.com/kb/2871690"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41243",
+    "downloadPreload": true
+}

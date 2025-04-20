@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Capacity Planner for Hyper-V Replica",
+    "downloadDescription": "The Capacity Planner for Hyper-V Replica guides the IT administrator to design the server, storage and network infrastructure which is required to successfully deploy Hyper-V Replica. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Capacity Planner for Hyper-V Replica.docx",
+            "url": "https://download.microsoft.com/download/7/0/6/7061117d-788b-4c8d-8af2-b1422cadcd9d/Capacity Planner for Hyper-V Replica.docx",
+            "size": "875612",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:34:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HVRCapacityPlanner.exe",
+            "url": "https://download.microsoft.com/download/7/0/6/7061117d-788b-4c8d-8af2-b1422cadcd9d/HVRCapacityPlanner.exe",
+            "size": "487416",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:34:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Hyper-V administrators of Windows Server 2012 and Windows Server 2012 R2 can replicate their virtual machines from a primary server/cluster to a replica server/cluster for business continuity and disaster recovery purposes. The Capacity Planner for Hyper-V Replica provides server, storage and network provisioning guidance which would allow IT administrators to successfully plan for a Hyper-V Replica deployment. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Capacity Planner for Hyper-V Replica.docx",
+        "HVRCapacityPlanner.exe"
+    ],
+    "detailsSection_file_size": [
+        "855.1 KB",
+        "476.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 with Hyper-V enabled, or Windows Server 2012 R2 with Hyper-V enabled",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "- Download the tool (HVRCapacityPlanner.exe) and follow the instructions listed in the document titled 'Capacity Planner for Hyper-V Replica'. <br/>\r\n- The Capacity Planner for Hyper-V Replica tool is offered 'as is' with no official Microsoft support. You can post your questions in the community <a href=\"http://social.technet.microsoft.com/Forums/en-US/winserverhyperv\">support forum</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "virtualization Blog",
+            "url": "http://blogs.technet.com/b/virtualization/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39057",
+    "downloadPreload": true
+}

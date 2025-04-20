@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit: Web Banners",
+    "downloadDescription": "This zipped file contains sample web banners for Microsoft Lync 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Web_Banners.zip",
+            "url": "https://download.microsoft.com/download/b/a/9/ba9fa4b8-3663-4251-babf-301af318de64/Web_Banners.zip",
+            "size": "360396",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:14:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These sample web banners can be used on your internal web sites or other awareness materials during rollout and adoption of Microsoft Lync 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Web_Banners.zip"
+    ],
+    "detailsSection_file_size": [
+        "351.9 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Programs compatible with Portable Network Graphics (PNG) files",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8980",
+    "downloadPreload": true
+}

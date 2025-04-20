@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Server 2010 Trial ",
+    "downloadDescription": "This is the trial for Microsoft SharePoint Server 2010 Enterprise and Standard editions",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePointServer.exe",
+            "url": "https://download.microsoft.com/download/4/c/9/4c9aa003-7724-4175-88b5-b390a8ea9648/SharePointServer.exe",
+            "size": "587745856",
+            "version": "1",
+            "datePublished": "7/15/2024 3:02:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        }
+    ],
+    "detailsSection": "This is the trial for Microsoft SharePoint Server 2010. There are four versions:\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>SharePoint Server 2010 with Enterprise Client Access License features</b>\r\n<br/>\r\n<br/>\r\nFor organizations looking to expand their business collaboration platform to enable advanced scenarios. Use the Enterprise capabilities of SharePoint to fully interoperate with external line-of-business applications, Web services, and Microsoft Office client applications; make better decisions with rich data visualization, dashboards, and advanced analytics; and build robust forms and workflow-based solutions. Trial Product key: VK7BD-VBKWR-6FHD9-Q3HM9-6PKMX\r\n<br/>\r\n<br/>\r\n<b>SharePoint Server 2010 for Internet Sites, Enterprise</b>\r\n<br/>\r\n<br/>\r\nFor organizations looking to create customer-facing public internet sites and private extranets using the full enterprise capabilities of SharePoint. This provides full SharePoint Enterprise functionality and no other technical limits. Trial Product key: VK7BD-VBKWR-6FHD9-Q3HM9-6PKMX\r\n<br/>\r\n<br/><b>SharePoint Server 2010 with Standard Client Access License features </b>\r\n<br/><br/>\r\nFor organizations looking to deploy a business collaboration platform across all types of content. Use the core capabilities of SharePoint to manage content and business processes, find and share information and expertise, and simplify how people work together across organizational boundaries. Trial Product key: PTTCF-PCY26-D9V8F-8JF8B-XH8JP\r\n<br/>\r\n<br/>\r\n<b>SharePoint Server 2010 for Internet Sites, Standard</b>\r\n<br/>\r\n<br/>\r\nFor small and mid-sized organizations looking to create public Internet sites or basic extranets using the Standard features of SharePoint Server 2010. Trial product key: PTTCF-PCY26-D9V8F-8JF8B-XH8JP\r\n\u200b <br/>\r\n<br/>\r\nThe trial period is 180 days. You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate product key in central administration.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SharePointServer.exe"
+    ],
+    "detailsSection_file_size": [
+        "560.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please review the SharePoint Server 2010 <a href=\"http://go.microsoft.com/?linkid=9708856\">system requirements</a> before you proceed. Actual requirements and product functionality may vary based on your system configuration.\u200b\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<br/><br/>\r\nMicrosoft SharePoint Server 2010 Standard: \r\nSharePoint Server 2010 for Internet Sites, Standard:\r\nMicrosoft SharePoint Server 2010 Enterprise:\r\nSharePoint Server 2010 for Internet Sites, Enterprise: \r\n<br/><br/>\r\nDownload the file by clicking the Download button and save the file to your hard disk. \r\n<br/>\r\nRefer to the following documentation for installation guidance: \r\n<br/>\r\n <br/><a href=\"http://go.microsoft.com/?linkid=9726654\">Deployment guide</a>  \r\n <br/> <a href=\"http://go.microsoft.com/?linkid=9726655\">Known Issues/Readme</a> \r\n <br/> <a href=\"http://go.microsoft.com/?linkid=9726656\">Upgrading to Microsoft SharePoint Server 2010</a> \r\n<br/><a href=\"http://go.microsoft.com/?linkid=9726657\">SharePoint 2010 Reviewer's Guide </a> \r\n<br/>\r\n <a href=\"http://go.microsoft.com/?linkid=9726658\">Microsoft SharePoint Server 2010 Evaluation Guide for IT Professionals</a> \r\n<br/>\r\n <a href=\"http://go.microsoft.com/?linkid=9726658\">Microsoft SharePoint 2010 Professional Developer's Evaluation Guide</a> \r\n<br/><br/>\r\nComplete the installation by following the documentation. \r\n<br/>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>To remove this download: </b>\r\n<br/>\r\n<br/>\r\n<br/>\r\nOn the Start menu, point to Settings and then click Control Panel. <br/>\r\nDouble-click Add/Remove Programs. <br/>\r\nIn the list of currently installed programs, select Microsoft SharePoint Server 2010 Trial Version and then click Remove or Add/Remove. If a dialog box appears, follow the instructions to remove the program. <br/>\r\nClick Yes or OK to confirm that you want to remove the program. <br/>\r\n<br/>\u200b\r\n<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16631",
+    "downloadPreload": true
+}

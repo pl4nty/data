@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Cost Optimization on Azure",
+    "downloadDescription": "Cost Optimization on Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Cost Optimization on Azure.pdf",
+            "url": "https://download.microsoft.com/download/7/2/2/7225b0f3-dc5c-4b49-a2a0-c2ca0a8fa77b/Cost Optimization on Azure.pdf",
+            "size": "268697",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cost Optimization on Azure",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Cost Optimization on Azure.pdf"
+    ],
+    "detailsSection_file_size": [
+        "262.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "This whitepaper outlines the best practice for cost optimization in Microsoft Azure Platform. It provides you with a practical approach to cost management and highlights the tools available to you as you address your organization\u2019s cost challenges. Azure makes it easy to build and deploy cloud solutions. However, it's important that those solutions are optimized to minimize the cost to your organization. Following the principles outlined in this document and using our tools will help to make sure your organization is prepared for success.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103586",
+    "downloadPreload": true
+}

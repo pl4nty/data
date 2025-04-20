@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Rights Management sharing application for Mac",
+    "downloadDescription": "RMS sharing app enables you to view protected files that others have shared with you (.ppdf, .ptxt, .pxml, .pjpg, .pjpeg, .ppng, .ptiff, .pgif, .pbmp, and .pfile file extensions).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RMS_sharing.pkg",
+            "url": "https://download.microsoft.com/download/7/e/e/7eebf100-54f1-42c5-9be4-9726a8e48dfe/RMS_sharing.pkg",
+            "size": "2080179",
+            "version": "1.3.8",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA.htm",
+            "url": "https://download.microsoft.com/download/7/e/e/7eebf100-54f1-42c5-9be4-9726a8e48dfe/EULA.htm",
+            "size": "45820",
+            "version": "1.3.8",
+            "datePublished": "7/15/2024 3:04:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "NOTE: You need to have RMS for individuals or an RMS enabled Office 365 account to use Microsoft Rights Management sharing application (RMS sharing app). You can register at https://portal.aadrm.com. You cannot use Microsoft Account (Live, Hotmail or Outlook.com) account to sign in. <br/> <br/>\r\n\r\nBy downloading the software, you agree to the license terms provided here as EULA.htm. If you do not agree to the license terms, do not download the software.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3.8",
+    "detailsSection_file_name": [
+        "RMS_sharing.pkg",
+        "EULA.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "44.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "OS X 10.14 or later, 64-bit processor",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "RMS sharing app lets you breathe easy knowing your files are safe and can only be opened by users you trust and share with.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47726",
+    "downloadPreload": true
+}

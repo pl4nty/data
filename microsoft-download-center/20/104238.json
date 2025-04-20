@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Updates in Microsoft Teams app lookbook",
+    "downloadDescription": "This is a lookbook showing what you can do with Updates desktop and mobile experiences.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Updates _ Lookbook _ May 2022.pdf",
+            "url": "https://download.microsoft.com/download/b/1/9/b19c5f52-2109-4ef6-a96c-d0e8cd066a8e/Updates _ Lookbook _ May 2022.pdf",
+            "size": "13658567",
+            "version": "1",
+            "datePublished": "7/15/2024 4:31:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a PDF with images and descriptions of the capabilities of the Updates in Microsoft Teams app.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Updates _ Lookbook _ May 2022.pdf"
+    ],
+    "detailsSection_file_size": [
+        "13.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104238",
+    "downloadPreload": true
+}

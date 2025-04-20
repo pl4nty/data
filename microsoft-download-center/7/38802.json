@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Country-specific Update for France",
+    "downloadDescription": "This white paper describes the country-specific update that is released for France in Cumulative Update 5 (CU\u20135) for Microsoft Dynamics AX 2012. See Microsoft Knowledge Base article 2828929 for hotfix download information. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for France_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/7/3/d/73db17d2-5efa-4068-bf21-ed0389a5efcd/Country-specific update for France_AX2012.pdf",
+            "size": "363936",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:33:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to apply penalties when customer payments are past due in Microsoft Dynamics AX 2012 R2 using the hotfix that is included in KB2797761. The Microsoft Feature Reference number for this country-specific update is FR \u2013 00018.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country-specific update for France_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "355.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38802",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR Strider URL Tracer",
+    "downloadDescription": "The Strider URL Tracer is a tool that enables users to investigate third-party domains that are contacted behind the scenes when a first-party Web site is visited. Last published: April 6, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StriderURLTracer1.0.1.0.msi",
+            "url": "https://download.microsoft.com/download/3/2/2/322102f2-529e-4bac-9094-4398a6e4e698/StriderURLTracer1.0.1.0.msi",
+            "size": "744960",
+            "version": "1.0.1.0",
+            "datePublished": "7/15/2024 4:10:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Strider URL Tracer is a tool that enables users to investigate third-party domains that are contacted behind the scenes when a first-party Web site is visited. It provides a Top Domains view that highlights those popular third-party domains. It also comes with a Typo-Patrol feature that automatically generates and scans typo-squatting domains of a given target domain. See http://research.microsoft.com/URLTracer and http://research.microsoft.com/Typo-Patrol/ for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1.0",
+    "detailsSection_file_name": [
+        "StriderURLTracer1.0.1.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "727.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52290",
+    "downloadPreload": true
+}

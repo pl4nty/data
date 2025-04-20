@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SQL backup in Azure Blob Storage - Sales materials",
+    "downloadDescription": "This zipped folder includes sales materials like telesales scripts, discussion guide, and personas  for CSP partners interested in launching Backup and long-term retention offerings on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL backup in Azure Blob Storage - Sales.zip",
+            "url": "https://download.microsoft.com/download/c/1/2/c12c11d3-b46c-4ab8-9695-45ead8c674d6/SQL backup in Azure Blob Storage - Sales.zip",
+            "size": "859903",
+            "version": "January 2014",
+            "datePublished": "12/15/2023 4:09:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes sales materials like telesales scripts, discussion guide, and personas  for CSP partners interested in launching Backup and long-term retention offerings on Azure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "SQL backup in Azure Blob Storage - Sales.zip"
+    ],
+    "detailsSection_file_size": [
+        "839.7 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50787",
+    "downloadPreload": true
+}

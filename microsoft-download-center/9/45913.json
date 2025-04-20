@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "StorSimpleQFE3Hotfix",
+    "downloadDescription": "QFE3 hotfix -  to be applied if a controller is replaced with a new controller with CA version  of  PLX Chip",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsBlue-KB2828230-x64.msu",
+            "url": "https://download.microsoft.com/download/4/8/9/4893bb18-b6a6-4cfa-bfc3-2d5d301e1b1d/WindowsBlue-KB2828230-x64.msu",
+            "size": "4914327",
+            "version": "Server 2012 R2",
+            "datePublished": "6/13/2024 12:21:06 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "QFE3 contains an update to a driver which manages an internal PLX Chip within the Controller (Current version is BA) in StorSimple. The change in the driver is due to the fact that there will be a new version of the PLX chip (new version is CA) that will ship in the appliances from the factory from March onwards.\r\nThis hotfix should be applied in a scenario where an appliance with a controller with BA chip needs a controller replacement,  and gets a new controller with the CA chip as a replacement from MSFT",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Server 2012 R2",
+    "detailsSection_file_name": [
+        "WindowsBlue-KB2828230-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "StorSimple 8000 series array",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Ensure you have a Microsoft support engineer to help you with the update process  \r\n1. Download the fix (.msu file) as instructed by support engineer to a network path that can be accessible from the appliance .\r\n2. Run below command to install hotfix \r\nStart-HcsHotfix -Path QFE3HotfixPath\r\n3. Respond to confirmation prompts as applicable \r\n4. Monitor the update with command \r\nGet-CauRun\r\n5. See the result of the update by command :- \r\nget-caureport -last \u2013Detailed\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45913",
+    "downloadPreload": true
+}

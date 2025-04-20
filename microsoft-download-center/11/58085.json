@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Talent extensibility solution: Integration with Office 365",
+    "downloadDescription": "The Integration with Office 365, PowerAutomate app can be used to extract team information for signed-in users from Microsoft Office 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CDS Enity Storing Clock In Data imported from SQL.xlsx",
+            "url": "https://download.microsoft.com/download/c/9/4/c94fcbb7-af7f-4077-8f76-b0e24a3309b8/CDS Enity Storing Clock In Data imported from SQL.xlsx",
+            "size": "596867",
+            "version": "1",
+            "datePublished": "7/15/2024 3:05:27 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "IntegrationwithOffice365,PowerAutomate_20200205042852.zip",
+            "url": "https://download.microsoft.com/download/c/9/4/c94fcbb7-af7f-4077-8f76-b0e24a3309b8/IntegrationwithOffice365,PowerAutomate_20200205042852.zip",
+            "size": "394625",
+            "version": "1",
+            "datePublished": "7/15/2024 3:05:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration with Office 365, PowerAutomate app can be used to extract team information for signed-in users from Microsoft Office 365. It references workers in Talent to extract clock-in and clock-out details and exception recordings. Clock-in and Clock-out details are stored in custom Common Data Service for Apps entities. The assumption is that these details are filled in from third-party systems via integration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "CDS Enity Storing Clock In Data imported from SQL.xlsx",
+        "IntegrationwithOffice365,PowerAutomate_20200205042852.zip"
+    ],
+    "detailsSection_file_size": [
+        "582.9 KB",
+        "385.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Dynamics 365 for Talent\r\nOffice 365",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Files will then need to be extracted.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58085",
+    "downloadPreload": true
+}

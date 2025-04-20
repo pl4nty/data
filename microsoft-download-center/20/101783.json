@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Item Tracking in Microsoft Dynamics NAV 2013",
+    "downloadDescription": "As the flow of goods in today\u2019s supply chain becomes more and more complex, the ability to keep track of items is increasingly important to the companies involved. Monitoring an item\u2019s transaction flow is a legal requirement in the business of medical and chemical supply, but other businesses may want to monitor products with warranties or expiration dates for customer service reasons.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ItemTrackingMSDNAV2013.pdf",
+            "url": "https://download.microsoft.com/download/0/5/1/05183e06-541b-41bd-9017-e79a92e3e251/ItemTrackingMSDNAV2013.pdf",
+            "size": "498341",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An item tracking system should provide a company with easy handling of serial and lot numbers, considering each unique piece of merchandise: when and where received, where stored, when and where sold. Microsoft Dynamics NAV has gradually expanded its coverage of this business requirement and today provides application-wide functionality and a solid core on which to develop extensions.\r\nThe content in this white paper is also available in Help for Microsoft Dynamics NAV 2013 under the topic label &quot;Design Details: Item Tracking&quot;.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "ItemTrackingMSDNAV2013.pdf"
+    ],
+    "detailsSection_file_size": [
+        "486.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101783",
+    "downloadPreload": true
+}

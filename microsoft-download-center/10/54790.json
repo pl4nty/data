@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Operations Manager Nano Agent cab file for UR2",
+    "downloadDescription": "Microsoft System Center Operations Manager Nano Agent cab file for UR2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB3209591-8.0.10913.0-NanoAgent.cab",
+            "url": "https://download.microsoft.com/download/e/4/5/e4597d3b-d0d5-4850-8088-16d44f7cc944/KB3209591-8.0.10913.0-NanoAgent.cab",
+            "size": "2696266",
+            "version": "10913",
+            "datePublished": "7/15/2024 4:40:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Installing Updates to Nano Agent can be done by two methods\r\n1. Push updates from management server\r\n2. Download and install updates manaually through Powershell script\r\nTo install the updates manually down the cab file available on this resource and run the UpdateNanoServerScomAgentOnline.ps1 script\r\n\r\nFor more details, please check the technet on Monitoring Nano Server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10913",
+    "detailsSection_file_name": [
+        "KB3209591-8.0.10913.0-NanoAgent.cab"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Nano agent is available only for System Center Operations Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please see the technet for instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54790",
+    "downloadPreload": true
+}

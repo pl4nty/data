@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Schemas in BizTalk Server 2013 RosettaNet Accelerator (BTARN) \u2013 Converting DTD to XSD",
+    "downloadDescription": "This page lists the technical documentation download that is available for BizTalk 2010\u3000and 2013 Accelerator for Rosettanet.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AdditionalPIPs_FinalVersion.docx",
+            "url": "https://download.microsoft.com/download/a/f/9/af9a61d7-6406-4a0e-b7b5-c6ca29365b5d/AdditionalPIPs_FinalVersion.docx",
+            "size": "155454",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:20:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "RosettaNet Partner Interface Processes (PIPs) define business processes between trading partners in a supply chain. Microsoft BizTalk 2013 Accelerator for RosettaNet (BTARN) provides a set of PIPs out-of-the-box and you can create additional PIPs.  RosettaNet specifies all PIP message schemas in the form of Document Type Definitions (DTDs).  However, BTARN implements these DTDs as XML Schema Definition files (XSDs), because Microsoft BizTalk Server 2013 represents documents by using XSDs, not DTDs. This document outlines the steps to convert any RosettaNet PIP\u2019s DTD into an XSD",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AdditionalPIPs_FinalVersion.docx"
+    ],
+    "detailsSection_file_size": [
+        "151.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Biztalk ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download</li>\r\n<li>Where you see a company or publisher listed in a security message, make sure the company name is <b>Microsoft Corporation</b>, and then click <b>Continue</b>, or <b>Allow</b>. </li>\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43415",
+    "downloadPreload": true
+}

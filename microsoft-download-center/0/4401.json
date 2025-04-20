@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Tools for Agility - A White paper by Kent Beck, Three Rivers Institute",
+    "downloadDescription": "Kent Beck shares his thoughts on how tools have evolved in supporting agile software development.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Tools for Agility white paper by Kent Beck.pdf",
+            "url": "https://download.microsoft.com/download/b/d/7/bd7c9ff8-510d-4a0e-a82c-f846f05ac955/Tools for Agility white paper by Kent Beck.pdf",
+            "size": "494534",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Tools for Agility white paper by Kent Beck.xps",
+            "url": "https://download.microsoft.com/download/b/d/7/bd7c9ff8-510d-4a0e-a82c-f846f05ac955/Tools for Agility white paper by Kent Beck.xps",
+            "size": "647833",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Tools for Agility white paper by Kent Beck.docx",
+            "url": "https://download.microsoft.com/download/b/d/7/bd7c9ff8-510d-4a0e-a82c-f846f05ac955/Tools for Agility white paper by Kent Beck.docx",
+            "size": "1173026",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In this white paper, Kent Beck share his thoughts on the relationship between tools and agile software development. He looks at how tools have evolved in aiding software flow, efficient transition and team transparency.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Tools for Agility white paper by Kent Beck.pdf",
+        "Tools for Agility white paper by Kent Beck.xps",
+        "Tools for Agility white paper by Kent Beck.docx"
+    ],
+    "detailsSection_file_size": [
+        "482.9 KB",
+        "632.6 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the Word document, you'll need a copy of Microsoft Office Word 2007, or Microsoft Word 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.<br />\nTo view the PDF file, you'll need a PDF reader, such as the free Adobe Acrobat Reader.<br />\nTo view the XPS file, you'll need Windows Vista, or the Microsoft XML Paper Specification Essentials Pack.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download this white paper and view it in Microsoft Office Word 2007, or Microsoft Word 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Team System Developer Center",
+            "url": "http://msdn.microsoft.com/teamsystem"
+        },
+        {
+            "title": "patterns & practices Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/practices/"
+        },
+        {
+            "title": "visual Studio Team System - Process Templates and Tools",
+            "url": "http://msdn.microsoft.com/process"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4401",
+    "downloadPreload": true
+}

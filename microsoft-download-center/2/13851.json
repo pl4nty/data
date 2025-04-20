@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "UNIX Side Components for Identity Management for UNIX \u2013 Shipped with Microsoft Windows Server 2003 R2",
+    "downloadDescription": "These are the set of UNIX side utilities that enable password synchronization between Windows and UNIX machines.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ssod.tar.gz",
+            "url": "https://download.microsoft.com/download/8/8/2/882ffb24-3ffb-4478-ad90-ea5410b637d7/ssod.tar.gz",
+            "size": "5247285",
+            "version": "9.0.3790.2075-13",
+            "datePublished": "5/15/2024 3:09:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Identity Management for UNIX -> Password Synchronization for Windows Server 2003 R2 helps integrate Windows and UNIX networks by simplifying the process of maintaining secure passwords in both environments. Users are freed of the difficulty of maintaining separate passwords for their Windows and UNIX accounts or having to remember to change the password wherever it is used. With Password Synchronization, whenever a user's password is changed on a Windows-based computer or domain, the password can also be automatically changed on every UNIX host for which the user has an account. Password Synchronization can also be configured to change the user's Windows password when the user's UNIX password is changed.<br />\n<br />\nWhen Password Synchronization is configured for Windows-to-UNIX synchronization and a password is changed on a Windows-based computer running Password Synchronization, the Password Synchronization service determines whether the user's password is to be synchronized on UNIX computers. If it is, the service encrypts the password and sends it to the Password Synchronization daemon on each computer with which the Windows-based computer is configured to be synchronized. The ssod daemon then decrypts the password and changes the password on the UNIX host. If the UNIX host is an NIS master server and it is configured to do so, the daemon also runs make to propagate the password change throughout the NIS domain.<br />\n<br />\nWhen Password Synchronization is configured for UNIX-to-WINDOWS synchronization, passwords that are changed on UNIX hosts are synchronized on Windows-based computers and domains. The Password Synchronization PAM module makes this possible by intercepting the password change request on the UNIX host, encrypting the password, and then sending the password change request to the Password Synchronization service running on the Windows-based computers with which it is configured to be synchronized.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0.3790.2075-13",
+    "detailsSection_file_name": [
+        "ssod.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Password Synchronization component on Windows Server 2003 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions"
+    ],
+    "installInstructionSection": "1.\tCopy this source binary file from the website to /usr/bin or /usr/local/bin on the UNIX computer, and change its name to ssod. The name of the source binary file depends on the version of UNIX you are using. <br />\no\tIf the computer is running Hewlett-Packard HP-UX version 11i, the source binary file name is ssod.hpx. <br />\no\tIf the computer is running Red Hat Linux version 8.0, the source binary file name is ssod.lnx. <br />\no\tIf the computer is running Sun Microsystems Solaris version 7 or 8, the source binary file name is ssod.sol. <br />\no\tIf the computer is running IBM AIX version 5L 5.2, the source binary file name is ssod.aix. <br />\n2.\tUsing a binary file-copy method such as File Transfer Protocol (FTP) to avoid corrupting CR/LF (carriage-return/line-feed) pairs, copy Sso.cfg from the tar file to /etc on the UNIX computer, and change its name to sso.conf. <br />\n3.\tOpen sso.conf with a text editor. <br />\n4.\tIf you have changed the default encryption key, edit the following line to specify the new default key. This value must match the default key specified on all domain controllers with which this computer will synchronize passwords: <br />\nENCRYPT_KEY=encryptionKey<br />\n5.\tIf you have changed the default port, edit the following line to specify the new port. This value must match the port number specified on all domain controllers with which this computer will synchronize passwords. <br />\nPORT_NUMBER=portNumber<br />\n6.\tEdit the following line to specify one domain controller in each Windows domain with which the computer is to synchronize passwords. If you have specified a nondefault port number or encryption key for the UNIX computer when configuring Password Synchronization on the Windows domain controllers, specify that value where indicated; otherwise, leave the value blank: <br />\nSYNC_HOSTS=(domainController[, portNumber [, encryptionKey]]) ...<br />\nEach entry in the list must be enclosed by parentheses (the \"(\" and \")\" characters) and separated from the next entry by a blank space.<br />\n7.\tIf the computer is a Network Information Service (NIS) master server, and if you want passwords to be synchronized throughout the NIS domain, edit the following line as shown to enable NIS synchronization: <br />\nUSE_NIS=1<br />\nAlso, if required, edit the following line to specify the location of the NIS makefile:<br />\nNIS_UPDATE_PATH=makefilePath<br />\n8.\tSet the file permissions of sso.conf to read/write for the root user only, and deny access to all other users. <br />\n9.\tIf the computer is running Linux, copy /etc/pam.d/system-auth to /etc/pam.d/ssod. <br />\nImportant<br />\n\u2022\tThe sso.conf file contains encryption keys and other sensitive information. For this reason, it must be accessible only by system administrators.",
+    "relatedResourcesSection": [
+        {
+            "title": "uniX-Related Downloads",
+            "url": "http://www.microsoft.com/downloads/results.aspx?productID=&freetext=unix&DisplayLang=en"
+        },
+        {
+            "title": "windows Services for UNIX Home Page",
+            "url": "http://www.microsoft.com/windowsserversystem/sfu/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13851",
+    "downloadPreload": true
+}

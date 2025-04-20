@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Evaluation Guide for System Center 2012 R2 and the Windows Azure Pack",
+    "downloadDescription": "This documentation provides the information to help you set up and test an evaluation environment for tenant and administrator portals. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC2012R2_EvaluationGuide.docx",
+            "url": "https://download.microsoft.com/download/0/1/5/015dad2a-48e5-47e4-bdaa-e62ace4b3b12/SC2012R2_EvaluationGuide.docx",
+            "size": "399084",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC2012R2_EvaluationGuide.pdf",
+            "url": "https://download.microsoft.com/download/0/1/5/015dad2a-48e5-47e4-bdaa-e62ace4b3b12/SC2012R2_EvaluationGuide.pdf",
+            "size": "1215069",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Evaluation Guide for System Center 2012 R2 and the Windows Azure Pack is designed for hosting providers and large enterprises who want to create tenant and administrator portals to provide the same Infrastructure as a Service experience that is available through the Windows Azure Portal. Use this guide to set up and test these capabilities. The deployment guide describes how to set up the evaluation environment and the walkthroughs demonstrate the value and functionality of key scenarios enabled in this release.\r\n<BR></BR>\r\n<UL><LI>Evaluation Guide for System Center 2012 R2 and the Windows Azure Pack \u2013 last updated June 24, 2013</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SC2012R2_EvaluationGuide.docx",
+        "SC2012R2_EvaluationGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "389.7 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Word Viewer</LI>\r\n<LI>Microsoft Word 2010</LI>\r\n<LI>Microsoft Office Word 2007</LI>\r\n<LI>Microsoft Office Word 2003</LI>\r\n<LI>Microsoft Word 2002</LI>\r\n<LI>Microsoft Word 2000</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "what\u2019s New in System Center 2012 R2",
+            "url": "http://technet.microsoft.com/en-us/library/dn249519.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39297",
+    "downloadPreload": true
+}

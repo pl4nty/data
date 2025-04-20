@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 3.0 Setup Progress Tracking Sample",
+    "downloadDescription": "Microsoft .NET Framework 3.0 Setup Progress Tracking Sample",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SetupWatcher.h",
+            "url": "https://download.microsoft.com/download/d/3/3/d333475c-42fe-4b2d-ad79-240203b2af94/SetupWatcher.h",
+            "size": "21479",
+            "version": "3.0.04324",
+            "datePublished": "7/15/2024 3:14:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The .NET Framework 3.0 is a redistributable runtime. The .NET Framework 3.0 setup may often be included as a prerequisite component in the setup of applications. To present a customized or unified setup experience for applications that require the .NET Framework 3.0, you may want to silently launch and track the .NET Framework 3.0 setup process while showing your own view of the setup progress. To enable this, the .NET Framework 3.0 setup process (which can be \"watched\") sends frequent progress messages to the main setup process (called the \"watcher\"). The watcher process may respond to any of the progress messages by using a code that indicates whether the setup should be cancelled.<br />\nUse of this sample source code is subject to the terms specified at <a href='http://www.microsoft.com/info/cpyright.htm'>http://www.microsoft.com/info/cpyright.htm</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.04324",
+    "detailsSection_file_name": [
+        "SetupWatcher.h"
+    ],
+    "detailsSection_file_size": [
+        "21.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Please reference the document at: <a href='http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnlong/html/NETFX3StPrg.asp'>http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnlong/html/NETFX3StPrg.asp</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 3.0",
+            "url": "http://msdn.microsoft.com/winfx/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5148",
+    "downloadPreload": true
+}

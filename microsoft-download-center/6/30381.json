@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Downloadable eBook: Deployment guide for Duet Enterprise 2.0 for Microsoft SharePoint and SAP Server 2.0",
+    "downloadDescription": "Download this free ebook to learn how to install and configure Duet Enterprise 2.0. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-Duet-Enterprise-2.0.epub",
+            "url": "https://download.microsoft.com/download/b/9/1/b915206a-6df6-4156-8dbf-586e639648d5/Deployment-guide-for-Duet-Enterprise-2.0.epub",
+            "size": "124354",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-Duet-Enterprise-2.0.pdf",
+            "url": "https://download.microsoft.com/download/b/9/1/b915206a-6df6-4156-8dbf-586e639648d5/Deployment-guide-for-Duet-Enterprise-2.0.pdf",
+            "size": "642138",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Deployment-guide-for-Duet-Enterprise-2.0.doc",
+            "url": "https://download.microsoft.com/download/b/9/1/b915206a-6df6-4156-8dbf-586e639648d5/Deployment-guide-for-Duet-Enterprise-2.0.doc",
+            "size": "361984",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Deployment-guide-for-Duet-Enterprise-2.0.mobi",
+            "url": "https://download.microsoft.com/download/b/9/1/b915206a-6df6-4156-8dbf-586e639648d5/Deployment-guide-for-Duet-Enterprise-2.0.mobi",
+            "size": "130902",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:29:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book provides deployment instructions for Duet Enterprise for Microsoft SharePoint and SAP Server 2.0. The audiences for this book include application specialists, line-of-business application specialists, and IT administrators who are ready to deploy Duet Enterprise 2.0.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "Deployment-guide-for-Duet-Enterprise-2.0.epub",
+        "Deployment-guide-for-Duet-Enterprise-2.0.pdf",
+        "Deployment-guide-for-Duet-Enterprise-2.0.doc",
+        "Deployment-guide-for-Duet-Enterprise-2.0.mobi"
+    ],
+    "detailsSection_file_size": [
+        "121.4 KB",
+        "627.1 KB",
+        "353.5 KB",
+        "127.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007 or 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li>\r\n<li>Click <b>Save</b> or <b>Save this program to disk</b>. </li>\r\n<li>Find the file on your hard disk and double-click it to open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30381",
+    "downloadPreload": true
+}

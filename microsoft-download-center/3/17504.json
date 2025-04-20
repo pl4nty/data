@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Visual FoxPro 9.0 EULA (end-user license agreement)",
+    "downloadDescription": "Visual FoxPro 9.0 EULA (end user license agreement) and the Distributable and Restricted Visual FoxPro Features and Files documents.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VFP9_EULA.zip",
+            "url": "https://download.microsoft.com/download/7/e/8/7e88e8c8-ae2c-4edb-b462-e6d05c47342d/VFP9_EULA.zip",
+            "size": "19399",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Visual FoxPro 9.0 EULA (end user license agreement) and the Distributable and Restricted Visual FoxPro Features and Files documents. These files are included with Visual FoxPro 9.0 and are here for download for reference in text file format. As with any contract, you should seek your own legal counsel\u2019s advice when interpreting your rights and obligations under the Visual FoxPro End User License Agreement.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VFP9_EULA.zip"
+    ],
+    "detailsSection_file_size": [
+        "18.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual FoxPro 9.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download ZIP file to extract the VFP9_EULA.txt and VFP9_redist.txt text files.",
+    "additionalInformationSection": "For additional information on Visual FoxPro 9.0, refer to the Visual FoxPro Developer center at <a href=\"http://msdn.com/vfoxpro\">http://msdn.com/vfoxpro</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17504",
+    "downloadPreload": true
+}

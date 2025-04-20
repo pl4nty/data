@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Windows HTTP Services Certificate Configuration Tool (WinHttpCertCfg.exe)",
+    "downloadDescription": "The Microsoft Windows HTTP Services (WinHTTP) Certificate Configuration Tool, WinHttpCertCfg.exe, enables administrators to install and configure client certificates in any certificate store that can be accessed by the Internet Server Web Application Manager (IWAM) account.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "winhttpcertcfg.msi",
+            "url": "https://download.microsoft.com/download/4/5/b/45bab62d-cdd8-42c7-85d0-0275b96db2c5/winhttpcertcfg.msi",
+            "size": "293888",
+            "version": "5.2.3790.1060",
+            "datePublished": "7/15/2024 3:10:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Windows HTTP Services (WinHTTP) Certificate Configuration Tool, WinHttpCertCfg.exe, enables administrators to install and configure client certificates in any certificate store that can be accessed by the Internet Server Web Application Manager (IWAM) account.<br><br>This update addresses the following issue:<ul><li>Users with administrative privileges were unable to grant access to private key of client certificate for domain accounts</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.2.3790.1060",
+    "detailsSection_file_name": [
+        "winhttpcertcfg.msi"
+    ],
+    "detailsSection_file_size": [
+        "287.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br>You can download and use WinHttpCertCfg.exe on any of the following platforms:<UL><LI>Windows 2000 Professional with Service Pack 3 or later</LI><LI>Windows 2000 Server with Service Pack 3 or later </LI><LI>Windows 2000 Advanced Server with Service Pack 3 or later </LI><LI>Windows 2000 Datacenter Server with Service Pack 3 or later </LI><LI>Windows XP Professional with Service Pack 1 or later</LI><LI>Windows Server 2003, Web Edition</LI><LI>Windows Server 2003, Standard Edition</LI><LI>Windows Server 2003, Enterprise Edition</LI><LI>Windows Server 2003, Datacenter Edition</LI></UL><BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://go.microsoft.com/?linkid=2165208"
+        },
+        {
+            "title": "newsgroups for Windows Server 2003",
+            "url": "http://go.microsoft.com/?linkid=2165209"
+        },
+        {
+            "title": "windows Server 2003 Resources for IT Pros",
+            "url": "http://go.microsoft.com/?linkid=2165210"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://go.microsoft.com/?linkid=2165211"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19801",
+    "downloadPreload": true
+}

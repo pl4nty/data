@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics AX 2009 SP1 - KB3207942",
+    "downloadDescription": "AX2009 KB 3207942",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB3207942-SP1.EXE",
+            "url": "https://download.microsoft.com/download/7/7/c/77cf9bd8-fd5c-4800-af13-169eb4325adf/DynamicsAX2009-KB3207942-SP1.EXE",
+            "size": "71836672",
+            "version": "5.0.1600.4454",
+            "datePublished": "7/15/2024 3:01:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the fix for KB 3207942 - \"LT\\PL - RegF - SAF-T data export Q4 2016 5.0 SP1\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2704190",
+        "name": "KB2704190"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.1600.4454",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB3207942-SP1.EXE"
+    ],
+    "detailsSection_file_size": [
+        "68.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "AX 2009 installed prior to downloading this fix.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Standard "
+    ],
+    "installInstructionSection": "Unzip the file locally and run the Axupdate.exe to start the installation",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57914",
+    "downloadPreload": true
+}

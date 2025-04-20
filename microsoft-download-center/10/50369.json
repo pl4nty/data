@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Rapid Deployment Guide for Azure Rights Management",
+    "downloadDescription": "The Rapid Deployment Guide helps you quickly deploy and use Azure Rights Management (Azure RMS) by choosing from a list of specific scenarios to implement.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AzureRMS_RapidDeploy.docx",
+            "url": "https://download.microsoft.com/download/4/8/d/48dc1fc5-bf46-41dc-9c60-8da1ee991bee/AzureRMS_RapidDeploy.docx",
+            "size": "167638",
+            "version": "1",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AzureRMS_RapidDeploy.pdf",
+            "url": "https://download.microsoft.com/download/4/8/d/48dc1fc5-bf46-41dc-9c60-8da1ee991bee/AzureRMS_RapidDeploy.pdf",
+            "size": "817436",
+            "version": "1",
+            "datePublished": "7/15/2024 3:59:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This downloadable guide supplements the technical documentation in the TechNet library (https://technet.microsoft.com/library/jj585024.aspx) and it contains both administrator instructions and accompanying end user documentation for Azure Rights Management. Before you give the documentation (instructions or announcements) to your end users, you will need to copy and paste it, and customize it for your business requirements and existing work flows. The guide includes instructions for how to customize the end user documentation with an example that shows how the final end user documentation might look. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "AzureRMS_RapidDeploy.docx",
+        "AzureRMS_RapidDeploy.pdf"
+    ],
+    "detailsSection_file_size": [
+        "163.7 KB",
+        "798.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and open",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50369",
+    "downloadPreload": true
+}

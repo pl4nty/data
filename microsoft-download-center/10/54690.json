@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Policy worksheet SharePoint Server 2010",
+    "downloadDescription": "Worksheet for policy",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2010-wksht-policyworksheet-sharepointserver.xls",
+            "url": "https://download.microsoft.com/download/e/a/c/eacfc749-b92b-43d7-b53d-e7ad7d77e68b/oit2010-wksht-policyworksheet-sharepointserver.xls",
+            "size": "67584",
+            "version": "2",
+            "datePublished": "7/15/2024 4:37:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A worksheet for policy",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "oit2010-wksht-policyworksheet-sharepointserver.xls"
+    ],
+    "detailsSection_file_size": [
+        "66.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54690",
+    "downloadPreload": true
+}

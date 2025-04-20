@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Key Vault client samples",
+    "downloadDescription": "Code samples that show how to use Azure Key Vault from an application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.Azure.KeyVault.Samples-2016.11.22.zip",
+            "url": "https://download.microsoft.com/download/4/d/b/4db72b9b-e671-44d8-985d-a16d00aab63e/Microsoft.Azure.KeyVault.Samples-2016.11.22.zip",
+            "size": "365009",
+            "version": "2016.11.22",
+            "datePublished": "7/15/2024 3:58:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zip contains code samples that show how to use the Azure Key Vault service from a C# application.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016.11.22",
+    "detailsSection_file_name": [
+        "Microsoft.Azure.KeyVault.Samples-2016.11.22.zip"
+    ],
+    "detailsSection_file_size": [
+        "356.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ol>\r\n<li>Visual Studio 2015/2013/2012</li>\r\n\r\n<li><a href=\"http://azure.microsoft.com/blog/2014/11/12/announcing-azure-sdk-2-5-for-net-and-visual-studio-2015-preview/\">Azure SDK 2.8 for .Net or newer.</a></li>\r\n\r\n<li><a href=\"http://azure.microsoft.com/en-us/documentation/articles/install-configure-powershell/\">Azure PowerShell version 1.0.0 or newer.</a></li>\r\n\r\n<li><a href=\"http://azure.microsoft.com/en-us/pricing/free-trial/\">An active Azure subscription.</a></li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Extract the zip file on this page to your local computer.</li>\r\n\r\n<li>Read the README.md file (this is a text file) and follow the instructions.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45343",
+    "downloadPreload": true
+}

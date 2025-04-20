@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide:  Forefront Identity Manager 2010",
+    "downloadDescription": "Create a test lab with Forefront Identity Manager 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_FIM2010v4.docx",
+            "url": "https://download.microsoft.com/download/8/4/e/84e71f83-31fc-4fdd-9a10-b236c1e8dcec/TestLabGuide_FIM2010v4.docx",
+            "size": "1866177",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Forefront Identity Manager 2010 is a comprehensive solution for managing identities, credentials, and identity-based access policies across heterogeneous environments.  This document contains an introduction to Microsoft Forefront Identity Manager 2010 and step-by-step instructions for extending the Base Configuration test lab to include FIM 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_FIM2010v4.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems:  Windows Server 2008 R2\n\nMicrosoft SQL Server 2008 with Service Pack 2\n\nMicrosoft Exchange 2010 with Service Pack 1\n\nMicrosoft Forefront Identity Manager 2010\n\nUpdate 1 for Microsoft Forefront Identity Manager 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Enterprise"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10269",
+    "downloadPreload": true
+}

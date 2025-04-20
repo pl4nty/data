@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Deployment guide for Microsoft SharePoint Foundation 2010",
+    "downloadDescription": "Contains information about deployment scenarios, step-by-step installation instructions, and post-installation configuration steps for a deployment of SharePoint Foundation 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePointFoundDeplo.doc",
+            "url": "https://download.microsoft.com/download/a/1/8/a1873614-479d-4c9f-bba7-22385cd75d6a/SharePointFoundDeplo.doc",
+            "size": "2224640",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundDeplo.pdf",
+            "url": "https://download.microsoft.com/download/a/1/8/a1873614-479d-4c9f-bba7-22385cd75d6a/SharePointFoundDeplo.pdf",
+            "size": "2443464",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointFoundDeplo.xps",
+            "url": "https://download.microsoft.com/download/a/1/8/a1873614-479d-4c9f-bba7-22385cd75d6a/SharePointFoundDeplo.xps",
+            "size": "3228766",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This book contains information about deployment scenarios, step-by-step installation instructions, and post-installation configuration steps for a deployment of Microsoft SharePoint Foundation 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePointFoundDeplo.doc",
+        "SharePointFoundDeplo.pdf",
+        "SharePointFoundDeplo.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB",
+        "2.3 MB",
+        "3.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the lower right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6841",
+    "downloadPreload": true
+}

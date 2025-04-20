@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Navigation term set planning worksheet for SharePoint Server 2013",
+    "downloadDescription": "Fill in the Navigation term set tab of this worksheet by using the information in the following article on TechNet: \"Plan navigation term sets in SharePoint Server 2013.\"",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit-2013-worksheet-sharepoint-server-navigation-term-set-planning.xlsx",
+            "url": "https://download.microsoft.com/download/9/a/9/9a945fe0-5893-4ed7-a70f-3df4b8238d45/oit-2013-worksheet-sharepoint-server-navigation-term-set-planning.xlsx",
+            "size": "14953",
+            "version": "2",
+            "datePublished": "7/15/2024 3:31:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this worksheet to record the decisions you make about the navigation term set, including the level in the hierarchy, the term set that you will pin from, whether to show in current and global navigation, and term-driven pages. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "oit-2013-worksheet-sharepoint-server-navigation-term-set-planning.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "14.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36052",
+    "downloadPreload": true
+}

@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM: How it works documentation",
+    "downloadDescription": "The documents published here contain detailed information about how Microsoft Dynamics CRM features work. Additional how it works documents will be published here as they become available. This information is useful for IT professionals, customizers, technical architects, and technical decision makers who plan, design, and customize Microsoft Dynamics CRM.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "serversidesyncwithDynamicsCRM.pdf",
+            "url": "https://download.microsoft.com/download/7/1/d/71d44c6e-cb78-4573-bdff-77a6e137ba5c/serversidesyncwithDynamicsCRM.pdf",
+            "size": "926461",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:44:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Outlook_Synchronization_in_CRM_2015.pdf",
+            "url": "https://download.microsoft.com/download/7/1/d/71d44c6e-cb78-4573-bdff-77a6e137ba5c/Outlook_Synchronization_in_CRM_2015.pdf",
+            "size": "801776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:44:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul><li><b>Outlook Synchronization in CRM 2015.pdf. </b> The <i>Outlook Synchronization in Microsoft Dynamics CRM</i> white paper discusses in detail how CRM data synchronization occurs between the central Dynamics CRM database, Outlook, the CRM for Outlook offline database, and the Exchange or POP3-based email server.\r\n</li>\r\n<li><b>serversidesyncwithDynamicsCRM.pdf. </b> The <i>Server-side Synchronization in Dynamics CRM and Dynamics CRM Online</i> white paper describes how the server-side process for synchronizing appointments, contacts, tasks, and email messages between Exchange Server and Microsoft Dynamics CRM Server operates. </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "serversidesyncwithDynamicsCRM.pdf",
+        "Outlook_Synchronization_in_CRM_2015.pdf"
+    ],
+    "detailsSection_file_size": [
+        "904.7 KB",
+        "783.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Mac OS X, Windows 10, Windows 7, Windows 8, Windows 8.1</li>\r\n</ul>\r\nThis download works with the following Office applications: \r\nMicrosoft Office Word or Word reader \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the Download link to download this document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48718",
+    "downloadPreload": true
+}

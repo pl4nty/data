@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Development Lifecycle (SDL) Process Guidance - Version 5.2",
+    "downloadDescription": "Microsoft Security Development Lifecycle (SDL) Process Guidance - Version 5.2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SDL_Version 5.2.docx",
+            "url": "https://download.microsoft.com/download/3/4/3/343bafcb-c685-4a70-9639-ff76bcbb609c/Microsoft SDL_Version 5.2.docx",
+            "size": "2372954",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In order to provide transparency on its internal software security development process, Microsoft makes its Security Development Lifecycle (SDL) process guidance available to the public. The Microsoft SDL process guidance illustrates the way Microsoft applies the SDL to its products and technologies, including security and privacy requirements and recommendations for secure software development at Microsoft. It addresses SDL guidance for Waterfall and Spiral development, Agile development, web applications and Line of Business applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft SDL_Version 5.2.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29884",
+    "downloadPreload": true
+}

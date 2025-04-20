@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded CE 6.0 Monthly Update March 2017",
+    "downloadDescription": "Download this set of updates for Windows Embedded CE 6.0 R3 environment released during the period of Jan 1 - Mar 31, 2017",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-Armv4I.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-Armv4I.msi",
+            "size": "52002816",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-MIPSII_FP.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-MIPSII_FP.msi",
+            "size": "49201152",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-SH4.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-SH4.msi",
+            "size": "48402432",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-MIPSIV_FP.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-MIPSIV_FP.msi",
+            "size": "49573888",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-MIPSII.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-MIPSII.msi",
+            "size": "49172480",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Embedded CE 6.0 R3_Update_170331_2017M03.htm",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/Windows Embedded CE 6.0 R3_Update_170331_2017M03.htm",
+            "size": "9541",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-MIPSIV.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-MIPSIV.msi",
+            "size": "49565696",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB60-170331-2017M03-X86.msi",
+            "url": "https://download.microsoft.com/download/1/4/8/14840063-0675-4c54-a6d7-9969bc6b07ac/WinCEPB60-170331-2017M03-X86.msi",
+            "size": "42905600",
+            "version": "6 R3",
+            "datePublished": "7/15/2024 4:38:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a set of updates for Windows Embedded CE 6.0 released during the period of Jan 1 - Mar 31, 2017. These updates are fixes for Windows Embedded CE 6.0 operating system problems you run into during the development and maintenance of your custom platform. To qualify for consideration for an update, a problem needs to cause an excessive amount of work and not have a reasonable workaround.<br /><br />\r\nFor complete details regarding the updates in this release, please download the readme HTM.\r\n<br/>\r\n<br/>\r\n<b>Additional update release notification:</b>\r\n<br/>\r\n<br/>\r\nThere is an update posted for <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=19922\">Viewers 97, 2000, 2003, XP & 2007 for Windows Embedded CE 6.0 R3</a>\r\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4016557; KB4017844; KB4017845; KB4015673; KB4018157; KB4016198; KB4019386",
+        "name": "KB4016557; KB4017844; KB4017845; KB4015673; KB4018157; KB4016198; KB4019386"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS17-004; MS16-142; MS17-015",
+        "name": "MS17-004; MS16-142; MS17-015"
+    },
+    "detailsSection_file_version": "6 R3",
+    "detailsSection_file_name": [
+        "WinCEPB60-170331-2017M03-Armv4I.msi",
+        "WinCEPB60-170331-2017M03-MIPSII_FP.msi",
+        "WinCEPB60-170331-2017M03-SH4.msi",
+        "WinCEPB60-170331-2017M03-MIPSIV_FP.msi",
+        "WinCEPB60-170331-2017M03-MIPSII.msi",
+        "Windows Embedded CE 6.0 R3_Update_170331_2017M03.htm",
+        "WinCEPB60-170331-2017M03-MIPSIV.msi",
+        "WinCEPB60-170331-2017M03-X86.msi"
+    ],
+    "detailsSection_file_size": [
+        "49.6 MB",
+        "46.9 MB",
+        "46.2 MB",
+        "47.3 MB",
+        "46.9 MB",
+        "9.3 KB",
+        "47.3 MB",
+        "40.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded CE 6.0 R3 is required to be installed prior to installing this rollup.\n<br/>\nThe following must be installed in order to create a supported Windows Embedded CE 6.0 development environment:\n<ol>\n<li>Visual Studio 2005</li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=5553\">Visual Studio 2005 Service Pack 1</a></li>\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=7524\">Visual Studio 2005 Service Pack 1 Update for Windows Vista</a> (if applicable)</li>\n<li>Windows Embedded CE 6.0 Platform Builder</li>\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=4097\">Windows Embedded CE 6.0 SP1</a> (required if PB 6.0 Tools have been installed)</li>\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=18111\">Windows Embedded CE 6.0 R2</a></li>\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=14226\">Windows Embedded CE 6.0 R3</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=54953\r\n\">Windows Embedded CE 6.0 Cumulative Product Update Rollup Package</a></li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>Each update is contained in a compressed file along with instructions. </li>\r\n<li>Updates are cumulative; we suggest that you download all of them.  The setup will replace files in your Windows Embedded CE Platform Builder installation.</li>\r\n<li>This site provides critical stand-alone updates and monthly rollups of all Windows Embedded CE updates available for evaluation customers only. All licensed OEMs should visit the MyOEM website for updates.</li>\n<li>If you have trouble installing packages on Windows Vista, open command prompt, choose \"Run as administrator\", confirm UAC prompt, launch an update.</li>\r\n</ul>",
+    "additionalInformationSection": "<a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=7732\">Microsoft Expression Blend 2</a> (to create and edit XAML layouts Silverlight for Windows Embedded)\r\n<br /><br />\r\n<a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=8079\">QQ Messenger Client for Windows Embedded CE 6.0 R3</a>\r\n<br /><br />\r\n<a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=13194\">Monotype iType font engine for Windows Embedded CE 6.0 R3</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows CE 6.0 R3 Development",
+            "url": "http://msdn.microsoft.com/en-US/library/gg144991(v=winembedded.0).aspx"
+        },
+        {
+            "title": "windows Embedded Technical References",
+            "url": "http://www.microsoft.com/windowsembedded/en-us/developers.aspx"
+        },
+        {
+            "title": "windows CE 6.0 Prior Update",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=54953"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55109",
+    "downloadPreload": true
+}

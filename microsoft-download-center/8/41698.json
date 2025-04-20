@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Call Quality Methodology poster",
+    "downloadDescription": "Learn about CQM, the Call Quality Methodology for Lync 2013 and 2010 that helps you find and eliminate issues affecting call quality and user experience for Lync implementations that include enterprise voice features.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CQM.zip",
+            "url": "https://download.microsoft.com/download/1/4/f/14f1319b-d1d5-4905-9971-e2029b1f42f2/CQM.zip",
+            "size": "2249846",
+            "version": "Mar2014",
+            "datePublished": "5/15/2024 3:22:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Call Quality Methodology is a new troubleshooting and service management framework that can better focus efforts to improve enterprise voice services in Lync. In this article, you can learn more about CQM, the kinds of servers and solutions that are monitored, and what to do with the collected telemetry data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2014",
+    "detailsSection_file_name": [
+        "CQM.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is an Adobe Reader file. Users who do not have Adobe Reader can download it from <A HREF=\"http://get.adobe.com/reader/\">Adobe.</A></LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "network Planning, Monitoring, and Troubleshooting with Lync Server ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=39084"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41698",
+    "downloadPreload": true
+}

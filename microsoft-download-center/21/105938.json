@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Administrator Template files (ADMX/ADML) for Dev Tunnels",
+    "downloadDescription": "This download includes the Group Policy Administrative Template files (ADMX/ADML) for Dev Tunnels in Visual Studio, port forwarding built into Visual Studio Code, the devtunnel CLI, and the Visual Studio Code Remote - Tunnels extension.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TunnelsPolicies.adml",
+            "url": "https://download.microsoft.com/download/0/a/8/0a833318-9800-43fd-8d90-076c223bb338/TunnelsPolicies.adml",
+            "size": "3063",
+            "version": "V1.0.0",
+            "datePublished": "7/15/2024 5:01:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TunnelsPolicies.admx",
+            "url": "https://download.microsoft.com/download/0/a/8/0a833318-9800-43fd-8d90-076c223bb338/TunnelsPolicies.admx",
+            "size": "3112",
+            "version": "V1.0.0",
+            "datePublished": "7/15/2024 5:01:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes the Group Policy Administrative Template files (ADMX/ADML) for Dev Tunnels in Visual Studio, port forwarding built into Visual Studio Code, the devtunnel CLI, and the Visual Studio Code Remote - Tunnels extension.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V1.0.0",
+    "detailsSection_file_name": [
+        "TunnelsPolicies.adml",
+        "TunnelsPolicies.admx"
+    ],
+    "detailsSection_file_size": [
+        "3.0 KB",
+        "3.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems\r\n\r\nWindows Server 2016, Windows Server 2019, Windows Server 2022, Windows 8.1, Windows 10, Windows 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To download and extract the ADMX/ADML files:\r\n- Click the Download button (above) to download the files.\r\n- Click Next and choose where to save the files.\r\n- Go to the location where you saved the downloaded files, and double-click the admin templates executable (.exe) file, and follow the instructions to extract the files to a location of your choosing. We recommend to put the extracted files in the C:\\Windows\\PolicyDefinitions\\ directory.\r\n\r\nIf you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure settings for Dev Tunnels by using Group Policy. Copy the ADMX/ADML files to your AD DS environment and then use the Group Policy Management administrative tool to configure the Group Policy settings for Dev Tunnels.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105938",
+    "downloadPreload": true
+}

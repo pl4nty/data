@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Server 2019, Call Quality Dashboard",
+    "downloadDescription": "Skype for Business Server 2019, Call Quality Dashboard offers quick and easy access to aggregated call quality information for on-premise deployments.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CallQualityDashboard.msi",
+            "url": "https://download.microsoft.com/download/0/9/8/0984354a-c40b-4900-9904-1777ddb5e80c/CallQualityDashboard.msi",
+            "size": "4014080",
+            "version": "2436.47",
+            "datePublished": "7/15/2024 4:26:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype for Business Server 2019, Call Quality Dashboard (CQD) follows the Call Quality Methodology (CQM) and provides an alternative to the scorecard included in the Skype Networking Guide.  In addition to a set of system reports that will be created as part of the install to help you view and diagnose network infrastructure issues affecting call quality, you will also be able to quickly and easily create additional reports tailored to your needs. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2436.47",
+    "detailsSection_file_name": [
+        "CallQualityDashboard.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>Please see Skype for Business Server 2019 System Requirements</ul>\r\n<br></br>\r\nThis download works with the following software components:\r\n<li>Microsoft Lync Server 2013</li>\r\n<li>Skype for Business Server 2015</li>\r\n<li>Skype for Business Server 2019</li>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To install this download:\r\n<ul>\r\n<li>Download the file by clicking the Download button and saving the file to your hard disk.</li>\r\n<li>Refer to <a href=\"http://go.microsoft.com/fwlink/?LinkID=529961\">http://go.microsoft.com/fwlink/?LinkID=529961</a> for installation details.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57510",
+    "downloadPreload": true
+}

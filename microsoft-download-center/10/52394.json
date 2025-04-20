@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "NS-2 Simulator",
+    "downloadDescription": "This is a port of the NS-2 simulator version 2.1b9 to Windows. Last published: July 26, 2002.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NetSim.zip",
+            "url": "https://download.microsoft.com/download/f/8/9/f896564f-9adf-4810-9189-e14c6d9dfe66/NetSim.zip",
+            "size": "16930403",
+            "version": "2.1b9",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a port of the NS-2 simulator version 2.1b9 to Windows.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1b9",
+    "detailsSection_file_name": [
+        "NetSim.zip"
+    ],
+    "detailsSection_file_size": [
+        "16.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52394",
+    "downloadPreload": true
+}

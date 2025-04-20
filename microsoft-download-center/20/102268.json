@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Transition your organization to Microsoft 365 for enterprise",
+    "downloadDescription": "Use this checklist to identify what elements of your organization's IT infrastructure need to be updated to transform your business with Microsoft 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "transition-org-to-m365.pdf",
+            "url": "https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf",
+            "size": "168925",
+            "version": "1",
+            "datePublished": "7/15/2024 4:26:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This two-page poster is a quick way to inventory your existing infrastructure. It helps you to find guidance and move to the corresponding product or service in Microsoft 365 for enterprise. It includes Windows and Office products and other infrastructure and security elements, such as device management, identity, and information and threat protection.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "transition-org-to-m365.pdf"
+    ],
+    "detailsSection_file_size": [
+        "165.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li>Select <b>Open file,</b> or find the file on your device and open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102268",
+    "downloadPreload": true
+}

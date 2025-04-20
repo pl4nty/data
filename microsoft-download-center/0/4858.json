@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Surface 1.0 SP1 Administration Guide",
+    "downloadDescription": "The Microsoft Surface 1.0 SP1 Administration Guide describes core administration tasks that you can perform with Microsoft Surface units that include the Microsoft Surface 1.0 SP1 software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSurfaceAdministrationGuide.chm",
+            "url": "https://download.microsoft.com/download/9/1/6/916296cb-663b-42ab-8e12-0f438e8588ba/MicrosoftSurfaceAdministrationGuide.chm",
+            "size": "5780625",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "The Microsoft Surface 1.0 SP1 Administration Guide describes core administration tasks that you can perform with Microsoft Surface units that include the Microsoft Surface 1.0 SP1 software. \r\n<br /> <br />\r\nFor the latest Microsoft Surface documentation, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=164671\">Microsoft Surface</a> in the TechNet Library. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MicrosoftSurfaceAdministrationGuide.chm"
+    ],
+    "detailsSection_file_size": [
+        "5.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul><li>Download the Administration Guide.</li>\r\n</ul>\r\n<br /> <br />\r\nFor the latest Microsoft Surface documentation, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=164671\">Microsoft Surface</a> in the TechNet Library. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4858",
+    "downloadPreload": true
+}

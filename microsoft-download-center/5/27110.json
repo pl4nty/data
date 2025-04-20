@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio 2010 SP1 Language Packs",
+    "downloadDescription": "The Visual Studio 2010 SP1 Language Packs are free add-ons which enable the user to switch the English Visual Studio Professional User Interface into localized languages. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/3/a/7/3a7323c7-b002-491b-a200-4df1da1688b0/Readme.htm",
+            "size": "1959",
+            "version": "2010 SP1",
+            "datePublished": "7/15/2024 3:16:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\nThe Visual Studio 2010 SP1 Language Packs are free add-ons which can be installed on top of the English versions of Visual Studio 2010 and Visual Studio 2010 SP1 Professional. Language Packs provide partial localization for the Software User Interface (UI) and error messages. After installation of the language packs, a user can choose to switch the user interface between English and the localized language. Visual Studio 2010 SP1 Language Packs are the result of close collaboration between Microsoft and local academic communities.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010 SP1",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "1.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n  <li>Windows XP (x86) with Service Pack 3 - all editions except Starter Edition</li>\r\n  <li>Windows Vista (x86 and x64) with Service Pack 2 - all editions except Starter Edition</li>\r\n  <li>Windows 7 (x86 and x64)</li>\r\n  <li>Windows Server 2003 (x86 and x64) with Service Pack 2 - all editions (MSXML6 must be installed)</li>\r\n  <li>Windows Server 2003 R2 (x86 and x64) - all editions</li>\r\n  <li>Windows Server 2008 (x86 and x64) with Service Pack 2 - all editions</li>\r\n  <li>Windows Server 2008 R2 (x64) - all editions</li>\r\n</ul>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<br />\r\n<b>Visual Studio 2010 SP1 Professional Language Pack pre-requisites: </b>\r\n<br />\r\n<UL><li>Visual Studio 2010 Professional - English</li></UL>\r\n<UL><li>Optional: Visual Studio 2010 Professional Language Pack</li></UL>\r\n<UL><li>.NET Framework 4 Language Pack</li></UL>\r\n<UL><li>Visual Studio 2010 SP1 - English</li></UL>\r\n\r\n<br />\r\n<br />\r\n1. It is necessary to install the English versions of Visual Studio 2010 Professional before installing the Language Packs.  \r\n<br /><br />\r\n2. Visual Studio 2010 Language Packs do not include .NET Framework 4 Language Packs.  The .NET Framework 4 Language Packs need to be installed separately.\r\n<br /><br />\r\n3. Install the Visual Studio 2010 SP1 Professional Language Packs by running\r\n<UL><li>VS10sp1-CLP-lang.exe</li></UL>\r\n<UL><li>HelpSetupLP_x86_lang.exe or HelpSetupLP_x64_lang.exe</li><br /></UL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio",
+            "url": "http://msdn.microsoft.com/en-us/vstudio/default.aspx"
+        },
+        {
+            "title": "microsoft .NET Framework 4 (Web Installer)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?familyid=9CFB2D51-5FF4-4491-B0E5-B386F32C0992&displaylang=en"
+        },
+        {
+            "title": "asP.NET Community",
+            "url": "http://www.asp.net/"
+        },
+        {
+            "title": "microsoft .NET Framework 4 Full Language Pack (x86)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=6fd7e428-0aa8-40e3-a48d-0df2d76e24a8&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27110",
+    "downloadPreload": true
+}

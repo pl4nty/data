@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Technical support documents for Deeper insights offer",
+    "downloadDescription": "Implementation guidance and technical details for the Deeper insights offer",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Real-time operational analytics.zip",
+            "url": "https://download.microsoft.com/download/8/8/c/88cacb5e-bd60-4d1f-a386-221aef66a401/Deeper Insights/Real-time operational analytics.zip",
+            "size": "10133248",
+            "version": "1.0",
+            "datePublished": "12/15/2023 4:19:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package you will find all technical documents that support the implementation of secure database offer, includes the real-time operational analytics",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Real-time operational analytics.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.7 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the technical supporting materials you need to implement a secure database offer. You may want to download all of them or chose the ones you need.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52988",
+    "downloadPreload": true
+}

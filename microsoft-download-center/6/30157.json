@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "The Microsoft Approach to Cloud Transparency",
+    "downloadDescription": "Using the Cloud Security Alliance\u2019s Security, Trust & Assurance Registry (STAR)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "The Microsoft Approach to Cloud Transparency.pdf",
+            "url": "https://download.microsoft.com/download/8/8/9/88987deb-b87a-4f0a-abad-e6366e8f76de/The Microsoft Approach to Cloud Transparency.pdf",
+            "size": "591223",
+            "version": "1.0",
+            "datePublished": "6/13/2024 11:53:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper provides an overview of various risk, governance, and information security frameworks and standards. It also introduces the cloud-specific framework of the Cloud Security Alliance (CSA), known as the Security, Trust & Assurance Registry (STAR).\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "The Microsoft Approach to Cloud Transparency.pdf"
+    ],
+    "detailsSection_file_size": [
+        "577.4 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download The Microsoft Approach to Cloud Transparency, available as a PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "global Foundation Services",
+            "url": "http://www.globalfoundationservices.com/"
+        },
+        {
+            "title": "trustworthy Computing",
+            "url": "http://www.microsoft.com/about/twc/en/us/default.aspx"
+        },
+        {
+            "title": "windows Azure",
+            "url": "http://www.windowsazure.com/"
+        },
+        {
+            "title": "cloud Security Alliance",
+            "url": "https://cloudsecurityalliance.org/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30157",
+    "downloadPreload": true
+}

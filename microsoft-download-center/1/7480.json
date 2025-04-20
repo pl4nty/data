@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 performance and capacity technical case studies",
+    "downloadDescription": "Technical case studies that describe specific deployments of Microsoft SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SPServer2010CaseStudyEnterpriseIntranetCollabEnvironment.docx",
+            "url": "https://download.microsoft.com/download/d/e/6/de645a2c-fdfb-49f7-b451-21cb2be4f2de/SPServer2010CaseStudyEnterpriseIntranetCollabEnvironment.docx",
+            "size": "487616",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPServer2010LabStudyEnterpriseIntranetCollabEnvironment.docx",
+            "url": "https://download.microsoft.com/download/d/e/6/de645a2c-fdfb-49f7-b451-21cb2be4f2de/SPServer2010LabStudyEnterpriseIntranetCollabEnvironment.docx",
+            "size": "595213",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SPServer2010CaseStudyCollabEnvironment.docx",
+            "url": "https://download.microsoft.com/download/d/e/6/de645a2c-fdfb-49f7-b451-21cb2be4f2de/SPServer2010CaseStudyCollabEnvironment.docx",
+            "size": "134609",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPServer2010CaseStudyIntranetPublishEnvironment.docx",
+            "url": "https://download.microsoft.com/download/d/e/6/de645a2c-fdfb-49f7-b451-21cb2be4f2de/SPServer2010CaseStudyIntranetPublishEnvironment.docx",
+            "size": "123019",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPServer2010CaseStudySocialEnvironment.docx",
+            "url": "https://download.microsoft.com/download/d/e/6/de645a2c-fdfb-49f7-b451-21cb2be4f2de/SPServer2010CaseStudySocialEnvironment.docx",
+            "size": "421021",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following technical case studies that describe specific deployments of SharePoint Server 2010. Compare the scenarios in these documents to your planned workload and usage characteristics. If your planned design is similar, you can use the documented deployment as a starting point for your own installation.  \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SPServer2010CaseStudyEnterpriseIntranetCollabEnvironment.docx",
+        "SPServer2010LabStudyEnterpriseIntranetCollabEnvironment.docx",
+        "SPServer2010CaseStudyCollabEnvironment.docx",
+        "SPServer2010CaseStudyIntranetPublishEnvironment.docx",
+        "SPServer2010CaseStudySocialEnvironment.docx"
+    ],
+    "detailsSection_file_size": [
+        "476.2 KB",
+        "581.3 KB",
+        "131.5 KB",
+        "120.1 KB",
+        "411.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><B>Requirements:</B> To download and read a white paper, you must have Microsoft Word.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7480",
+    "downloadPreload": true
+}

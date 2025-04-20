@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Case Study: Office 365 Connectivity via IPv4 and IPv6 Protocols  ",
+    "downloadDescription": "Office 365 IPv6 Test Plan for Chiayi Educational Network Center ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Case Study Chiayi Client Connectivity via IPv6 Protocols.docx",
+            "url": "https://download.microsoft.com/download/8/c/0/8c0eacb6-394d-4d56-9d45-c0d696fa1d9e/Case Study Chiayi Client Connectivity via IPv6 Protocols.docx",
+            "size": "41538312",
+            "version": "All",
+            "datePublished": "7/15/2024 3:56:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "Chiayi Educational Network Center (CENC) is responsible for network service operation, maintenance, training, and planning for 127 elementary and 23 junior high schools in Taiwan. It also manages the Office 365 subscriptions for these schools.  As a leading-edge IT operation, CENC was interested in continuing to build out their modern infrastructure to operate all Office 365 scenarios over Internet Protocol version 6 (IPv6), and agreed to work with Microsoft to implement and test this configuration. \r\n\r\nIn this document we will describe the steps required to configure and test Office 365 to operate entirely over IPv6 and what CENC encountered as they deployed it. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "All",
+    "detailsSection_file_name": [
+        "Case Study Chiayi Client Connectivity via IPv6 Protocols.docx"
+    ],
+    "detailsSection_file_size": [
+        "39.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Enterprise N",
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Professional E 64-bit",
+        "Windows 7 Professional K 64-bit",
+        "Windows 7 Professional KN 64-bit",
+        "Windows 7 Professional N",
+        "Windows 7 Professional N 64-bit",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 7 Ultimate E 64-bit",
+        "Windows 7 Ultimate K 64-bit",
+        "Windows 7 Ultimate KN 64-bit",
+        "Windows 7 Ultimate N",
+        "Windows 7 Ultimate N 64-bit",
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "None.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45879",
+    "downloadPreload": true
+}

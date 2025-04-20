@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Lifecycle Management Solution with Project Server 2010",
+    "downloadDescription": "The SharePoint Lifecycle Management Solution with Project Server 2010 provides a framework for managing SharePoint business requests and includes white papers and sample data.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePoint Lifecycle Management Solution with Project Server 2010.docx",
+            "url": "https://download.microsoft.com/download/1/6/7/167b715e-3b8c-448b-a223-ea1458d7306c/SharePoint Lifecycle Management Solution with Project Server 2010.docx",
+            "size": "1533233",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointLMSolutionArtifacts.zip",
+            "url": "https://download.microsoft.com/download/1/6/7/167b715e-3b8c-448b-a223-ea1458d7306c/SharePointLMSolutionArtifacts.zip",
+            "size": "25855496",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint Lifecycle Management Solution w PS2010- Install Guide.docx",
+            "url": "https://download.microsoft.com/download/1/6/7/167b715e-3b8c-448b-a223-ea1458d7306c/SharePoint Lifecycle Management Solution w PS2010- Install Guide.docx",
+            "size": "1403617",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SharePoint Server 2010 provides a vast number of capabilities that empower both business users and IT to create solutions quickly. For this reason, many organizations consider implementing SharePoint as a central platform to address a wide array of business solutions. For those organizations, it's likely that they\u2019ll need a good way to track, manage, and prioritize those business requests.  <BR /><BR />\r\n\r\nThe SharePoint Lifecycle Management Solution with Project Server 2010 provides a framework and guidance for managing SharePoint business requests and includes two white papers and a sample dataset.\r\n\r\nThis no-code solution includes:\r\n<ul><li>Business Decision Maker/Technical Decision Maker white paper that describes the business solution and benefits</li>\r\n<li>Technical white paper that describes how to install and configure the solution</li>\r\n<li>Project Server 2010 sample databases and templates that can be used to illustrate concepts</li>\r\n</ul>\r\n<BR /><BR />\r\nThe sample dataset requires a farm that has a working installation of Microsoft SharePoint 2010 with Project Server 2010 fully configured (please refer to <a href=\"http://technet.microsoft.com/en-us/projectserver/ee263909\">Project Server 2010 Tech Center</a>); and the Dynamic Workflow and Workflow  Visualization web part solutions from <a href=\"http://archive.msdn.microsoft.com/P2010SolutionStarter\">Microsoft Project 2010 Solution Starters</a>. \r\n<BR /><BR />\r\nFor an overview of the solution (video and slides), please watch this recent recording from Tech.Ed North America: <a href=\"http://channel9.msdn.com/Events/TechEd/NorthAmerica/2011/OSP202\">http://channel9.msdn.com/Events/TechEd/NorthAmerica/2011/OSP202</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SharePoint Lifecycle Management Solution with Project Server 2010.docx",
+        "SharePointLMSolutionArtifacts.zip",
+        "SharePoint Lifecycle Management Solution w PS2010- Install Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "24.7 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 for the white papers and Windows 2008 or higher for the Microsoft Project Server 2010 for the sample data.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the files to your computer. Then double-click the file to open it. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17058",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Surface 1.0 Management Pack for Operations Manager 2007",
+    "downloadDescription": "This management pack includes a set of rules, views, operations, and monitors to help you manage Microsoft Surface 1.0 units.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.Surface.1.0.mp",
+            "url": "https://download.microsoft.com/download/6/6/6/66696092-1aae-421e-bc28-6d03eaf1d6e3/Microsoft.Surface.1.0.mp",
+            "size": "36864",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Surface 1.0 Management Pack Guide.pdf",
+            "url": "https://download.microsoft.com/download/6/6/6/66696092-1aae-421e-bc28-6d03eaf1d6e3/Microsoft Surface 1.0 Management Pack Guide.pdf",
+            "size": "328367",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack includes a set of rules, views, operations, and monitors to help you manage Microsoft Surface 1.0 units. These resources can help you keep your organization's Microsoft Surface environment in a healthy state.\r\n<br /><br />\r\nFor specific information about Microsoft System Center Operations Manager 2007, see the <a href=\"http://go.microsoft.com/fwlink/?linkid=79243\">Microsoft System Center Operations Manager</a> Web site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft.Surface.1.0.mp",
+        "Microsoft Surface 1.0 Management Pack Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "36.0 KB",
+        "320.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><ul><li>Windows Vista</li></ul></li>\r\n<li><b>Applicable Microsoft Surface Software Platforms:</b>\r\n  <ul>\r\n<li>Microsoft Surface Runtime 1.0</li>\r\n<li>Microsoft Surface SDK 1.0</li>\r\n\r\n  </ul>\r\n</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>On a Microsoft Surface unit, download the files.</li>\r\n<li>Follow the installation instructions in the included PDF file.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10858",
+    "downloadPreload": true
+}

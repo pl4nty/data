@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Message Queuing 4.0 Management Pack for Operations Manager 2007",
+    "downloadDescription": "The Message Queuing Management Pack provides monitoring for Microsoft Message Queuing Services (MSMQ) version 4.0. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Message Queuing 4.0 Operations Manager 2007 MP.msi",
+            "url": "https://download.microsoft.com/download/e/8/2/e82fcd63-859a-4ade-a8b1-e3392fc92b37/Message Queuing 4.0 Operations Manager 2007 MP.msi",
+            "size": "634880",
+            "version": "6.0.6700.83",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM2007_MP_MSMQ_4.0.doc",
+            "url": "https://download.microsoft.com/download/e/8/2/e82fcd63-859a-4ade-a8b1-e3392fc92b37/OM2007_MP_MSMQ_4.0.doc",
+            "size": "482816",
+            "version": "6.0.6700.83",
+            "datePublished": "7/15/2024 4:26:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Message Queuing (also known as MSMQ) is a server application that enables applications to communicate across heterogeneous networks and systems that may be temporarily offline or otherwise inaccessible. Instead of an application communicating with a service on another computer, it sends its information to Message Queuing, which sends the information to a Message Queuing service on the target computer where it is made available to the other application. Message Queuing provides guaranteed delivery, efficient routing, security, and priority based messaging.  <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThe Message Queuing Management Pack provides monitoring for the following: <br/>\r\n<ul>\r\n<li> MSMQ Servers </li>\r\n<li> MSMQ Triggers  </li>\r\n<li> MSMQ Queues  </li>\r\n<li> Dependant Clients </li>\r\n</ul> <br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>3/31/2010 - Initial Release, version 6.0.6700.83 Refer to the MP guides for further details. </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.6700.83",
+    "detailsSection_file_name": [
+        "Message Queuing 4.0 Operations Manager 2007 MP.msi",
+        "OM2007_MP_MSMQ_4.0.doc"
+    ],
+    "detailsSection_file_size": [
+        "620.0 KB",
+        "471.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <b>Other Software:</b> System Center Operations Manager 2007, 2007 SP1, or 2007 R2. </li> <br/>\r\nAll management packs (MPs) included in this download are supported on System Center Operations Manager 2007, including 2007 Service Pack 1 and 2007 R2. The Message Queuing Management Pack for Operations Manager 2007 is designed to monitor Message Queuing version 4.0 only. The Message Queuing Management Pack supports the following platforms:<br/>\r\n<ul>\r\n<li> Windows Server 2008</li>\r\n<li> Windows Vista</li>\r\n</ul>\r\n<br/>\r\nAll support is subject to Microsoft\u2019s overall support lifecycle (<a href=\"http://go.microsoft.com/fwlink/?Linkid=26134\">http://go.microsoft.com/fwlink/?Linkid=26134</a>) and the Operations Manager 2007 SP1 Supported Configurations (<a href=\"http://go.microsoft.com/fwlink/?Linkid=90676\">http://go.microsoft.com/fwlink/?Linkid=90676</a>) document. <br/>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Refer to the \u201cSystem Requirements\u201d section of this page and the downloaded MP guide, OM2007_MP_MSMQ_4.0.doc, for detailed instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        },
+        {
+            "title": "system Center Home Page",
+            "url": "http://www.microsoft.com/systemcenter/en/us/default.aspx"
+        },
+        {
+            "title": "system Center Operations Manager Home Page",
+            "url": "http://www.microsoft.com/systemcenter/operationsmanager/en/us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1653",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Certification Test Tool Preview for System Center 2016 \u2013 Management Packs",
+    "downloadDescription": "Use this test tool to validate compatibility and certify your Management Pack for System Center 2016 certified logo.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MPR Test Tool Preview for System Center 2016 MP.msi",
+            "url": "https://download.microsoft.com/download/f/e/4/fe4b1e33-8b08-458f-a8c6-c2ced26aa57a/MPR Test Tool Preview for System Center 2016 MP.msi",
+            "size": "5138944",
+            "version": "0.9",
+            "datePublished": "7/15/2024 4:34:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Certification Test Tool for System Center 2016 is designed to help validate your Operations Manager Management Pack for compatibility and compliance to best practices.  Test Results Package generated from the test tool can be submitted as part of the logo certification program and Microsoft Partner Network competency requirements. \r\n\r\nThis tool is also recommended for Customers to evaluate third party Management Packs for best practices.\r\n\r\nLearn more about the Logo Certification at http://aka.ms/enterprisecloudcertified\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.9",
+    "detailsSection_file_name": [
+        "MPR Test Tool Preview for System Center 2016 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windoiws 10; Windows 8.1\r\nWindows Server 2016; Windows Server 2012 R2\r\nDo not require System Center or Operations Manager to be installed. \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and extract the test tool package. Navigate to the specified folder, launch the and follow directions of the wizard style tool.\r\n\r\nThe Test Tool execute a static analysis of Management Pack files provided.  \r\n\r\nInstalling System Center is not necessary for this test tool.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54091",
+    "downloadPreload": true
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "PIX on Windows 2405.15 (May 2024)",
+    "downloadDescription": "What's New: Agility SDK 1.614 support and misc bug fixes",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PIX-2405.15.002-OneBranch_release-Installer-x64.exe",
+            "url": "https://download.microsoft.com/download/9/8/3/9839adc3-8bb8-4e27-8b42-b85edc517fd6/PIX-2405.15.002-OneBranch_release-Installer-x64.exe",
+            "size": "174564528",
+            "version": "2405.15",
+            "datePublished": "12/10/2024 3:34:30 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PIX-2405.15.002-OneBranch_release-Installer-ARM64.exe",
+            "url": "https://download.microsoft.com/download/9/8/3/9839adc3-8bb8-4e27-8b42-b85edc517fd6/PIX-2405.15.002-OneBranch_release-Installer-ARM64.exe",
+            "size": "141395632",
+            "version": "2405.15",
+            "datePublished": "12/10/2024 3:34:30 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "See the <a href=\"https://devblogs.microsoft.com/pix/pix-2405-15/\">PIX 2405.15 blog post</a> for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2405.15",
+    "detailsSection_file_name": [
+        "PIX-2405.15.002-OneBranch_release-Installer-x64.exe",
+        "PIX-2405.15.002-OneBranch_release-Installer-ARM64.exe"
+    ],
+    "detailsSection_file_size": [
+        "166.5 MB",
+        "134.8 MB"
+    ],
+    "detailsSection_file_date": "12/10/2024",
+    "systemRequirementsSection": "Windows 10 or 11",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Click the Download button on this page to start the download, then follow the instructions in the installer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106165",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for Exchange User",
+    "downloadDescription": "The Integration Pack for Exchange User is an add-on for System Center 2022 Orchestrator that enables you to facilitate the automation of user centric tasks, such as sending e-mail messages, creating appointments and updating tasks",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_2022_IntegrationPack_for_ExchangeUser.oip",
+            "url": "https://download.microsoft.com/download/e/9/6/e965a28a-b7ff-405b-af9a-f06bcfe81b88/System_Center_2022_IntegrationPack_for_ExchangeUser.oip",
+            "size": "1681211",
+            "version": "prod",
+            "datePublished": "7/15/2024 4:32:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\n<b>Release History</b><br />\r\n<ul>\r\n<li>06/30/2022 - version 10.22.2.1, Original English release</li>\r\n<li>06/11/2024 - version 10.22.2.20, Support added for Private and Gov clouds</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "prod",
+    "detailsSection_file_name": [
+        "System_Center_2022_IntegrationPack_for_ExchangeUser.oip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> System Center 2022 - Orchestrator </li>\r\n<li> Windows Server 2019 or higher </li>\r\n<li> Microsoft Exchange 2010 Service Pack 1 or Microsoft Exchange 2013 or Microsoft Exchange Online/Microsoft 365 </li>\r\n<li> .NET Framework 4.0 or higher (.NET 4.7.2 recommended) </li>\r\n<li> RAM \u2013 minimum 1GB (recommended 2GB) </li>\r\n<li> Disk space minimum 200MB </li>\r\n<li> CPU Dual Core or better </li>\r\n</ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the .oip file, register the Integration Pack in Deployment Manager and then deploy the Integration Pack on Runbook Designer and Runbook Server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104336",
+    "downloadPreload": true
+}

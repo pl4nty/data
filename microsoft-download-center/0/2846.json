@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Terminator 2.5",
+    "downloadDescription": "The BizTalk Terminator tool allows the user to easily address common BizTalk issues via SQL, WMI, and PowerShell based tasks provided by the BizTalk team.  Additional functionality includes the ability to suspend, resume, and terminate in bulk by date range, make performance tuning changes, and integrate with the MessageBox Viewer utility.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BTSTerminator2.5.6.9.zip",
+            "url": "https://download.microsoft.com/download/4/8/c/48c1808a-6014-4da9-8c6b-c8fdcae6e557/BTSTerminator2.5.6.9.zip",
+            "size": "899961",
+            "version": "2.5.6.9",
+            "datePublished": "12/3/2024 3:44:20 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The BizTalk Terminator tool allows the user to easily address common BizTalk issues via SQL, WMI, and PowerShell based tasks provided by the BizTalk team.  It also replaces terminate.vbs with additional functionality including the ability to suspend, resume, and terminate in bulk by date range as well as make performance tuning changes.   Integration with mbvcleanupscripts.xml from the MessageBox Viewer Utility allows Terminator to quickly resolve issues identified by MBV.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.5.6.9",
+    "detailsSection_file_name": [
+        "BTSTerminator2.5.6.9.zip"
+    ],
+    "detailsSection_file_size": [
+        "878.9 KB"
+    ],
+    "detailsSection_file_date": "12/3/2024",
+    "systemRequirementsSection": "<b>Supported BizTalk Versions</b>\r\n<br /><br />\r\nBizTalk Server 2004, 2006, 2006 R2, 2009, 2010, 2013, 2013 R2.  \r\n<br /><br />\r\n<b>Additional Requirements</b>\r\n<br /><br />\r\n\u2022 Requires a minimum of .NET 2.0.  \r\n<br />\r\n\u2022 For full functionality, user should be a member of BizTalk Administrators group, local Administrators group on all BizTalk machines, and SysAdmin in SQL servers hosting BizTalk databases.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\u2022 No installation required.  Run BTSTerminator.exe to start the tool.\r\n<br />\r\n\u2022 Before using this tool, make sure to back up BizTalk databases, stop all BizTalk host instances (in process and isolated), and stop SQL Agent. \r\n<br />\r\n\u2022 Read and understand the full description of each task before running it.  \r\n<br />\r\n\u2022 For more information on how and when to use BizTalk Terminator, see <a href=\"http://blogs.msdn.com/biztalkcpr/pages/using-biztalk-terminator-to-resolve-issues-identified-by-biztalk-msgboxviewer.aspx\">http://blogs.msdn.com/biztalkcpr/pages/using-biztalk-terminator-to-resolve-issues-identified-by-biztalk-msgboxviewer.aspx</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2846",
+    "downloadPreload": true
+}

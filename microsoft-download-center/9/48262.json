@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure HDInsight PowerShell cmdlet cheat sheet for common Hadoop jobs",
+    "downloadDescription": "Quick reference to PowerShell cmdlets, and usage, provided by Microsoft Azure HDInsight to perform common Hadoop tasks on HDInsight clusters",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HDI_PowerShell_Cmdlet_CheatSheet.pdf",
+            "url": "https://download.microsoft.com/download/b/7/d/b7dbb509-164d-4343-9894-12d1fb053776/HDI_PowerShell_Cmdlet_CheatSheet.pdf",
+            "size": "1016350",
+            "version": "1",
+            "datePublished": "6/13/2024 12:30:10 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Quick reference to PowerShell cmdlets, and usage, provided by Microsoft Azure HDInsight to perform common Hadoop tasks on HDInsight clusters\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "HDI_PowerShell_Cmdlet_CheatSheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "992.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "download document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48262",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "External Collaboration Toolkit for SharePoint",
+    "downloadDescription": "This solution allows users to create collaboration environments that use the familiar SharePoito deploy a SharePoint-based environment for collaboration with people outside your firewall. The accelerator allows users to create collaboration environments that use the familiar SharePoint interface. Because the solution is easy to use, end users are more likely to use it rather than revert to e-mail.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "External_Collaboration_Toolkit_for_Sharepoint.docx",
+            "url": "https://download.microsoft.com/download/3/5/5/3559e92c-9646-4e4e-b535-3976c3981f6e/External_Collaboration_Toolkit_for_Sharepoint.docx",
+            "size": "14898",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The External Collaboration Toolkit for SharePoint is now being maintained and supported by the open source community.  To access these resources, visit the <a href=\"http://www.codeplex.com/CKS\">Community Kit for SharePoint on CodePlex</a> and start contributing to the ECTS community.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "External_Collaboration_Toolkit_for_Sharepoint.docx"
+    ],
+    "detailsSection_file_size": [
+        "14.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li><a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=941B3470-3AE9-4AEE-8F43-C6BB74CD1466&mg_id=10049\">Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint File Formats</a> (available as a free download) can be used to open, edit, and save documents, workbooks, and presentations in the file formats new to Microsoft Office 2007.</li> \r\n<li>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Microsoft Word Viewer</a> (available as a free download) can be used to view Word documents.</li> \r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<ol>\n<li>Click the <b>Download</b> button next to a file to start the download.</li><br />\n<li>Do one of the following:</li>\n<ul> \n<li>To open the document immediately, click <b>Open</b>.  </li><br />\n<li>To save the download to your preferred location on your computer, click <b>Save</b> or <b>Save to disk</b>.</li></ul><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint \u2013 Collaboration Forum",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=2012&SiteID=1"
+        },
+        {
+            "title": "source Code on CodePlex",
+            "url": "http://www.codeplex.com/cks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3058",
+    "downloadPreload": true
+}

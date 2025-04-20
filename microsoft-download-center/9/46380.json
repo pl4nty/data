@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Go-To-Market Services Resources",
+    "downloadDescription": "Resources for Microsoft Go-To-Market Services",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IDC Microsoft Azure ISV Partner Success Guide.pdf",
+            "url": "https://download.microsoft.com/download/1/5/0/150c1948-2465-4e53-9e49-f9a2acac09ce/IDC Microsoft Azure ISV Partner Success Guide.pdf",
+            "size": "397309",
+            "version": "1",
+            "datePublished": "7/15/2024 3:44:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Commercial ISV Marketing Playbook.pdf",
+            "url": "https://download.microsoft.com/download/1/5/0/150c1948-2465-4e53-9e49-f9a2acac09ce/Commercial ISV Marketing Playbook.pdf",
+            "size": "2485268",
+            "version": "1",
+            "datePublished": "7/15/2024 3:44:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Resources for Microsoft Go-To-Market Services (www.MicrosoftGoToMarket.com)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "IDC Microsoft Azure ISV Partner Success Guide.pdf",
+        "Commercial ISV Marketing Playbook.pdf"
+    ],
+    "detailsSection_file_size": [
+        "388.0 KB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows, Microsoft Office",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download files for resources related to Microsoft Go-To-Market Services",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46380",
+    "downloadPreload": true
+}

@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2013 SP1 (KB4018588)",
+    "downloadDescription": "Security Update For Exchange Server 2013 SP1 (KB4018588)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2013-KB4018588-x64-en.msp",
+            "url": "https://download.microsoft.com/download/8/7/8/878041a4-e75a-484c-997a-5e3c1686816c/Exchange2013-KB4018588-x64-en.msp",
+            "size": "131481600",
+            "version": "15.00.847.055",
+            "datePublished": "7/15/2024 4:35:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "<b>About this download:</b>  A security issue has been identified that could allow an attacker to run programs and access data on a computer running Microsoft\u00ae Exchange Server 2013 SP1. You can help protect your computer by installing this update from Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4018588",
+        "name": "KB4018588"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.00.847.055",
+    "detailsSection_file_name": [
+        "Exchange2013-KB4018588-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "125.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55590",
+    "downloadPreload": true
+}

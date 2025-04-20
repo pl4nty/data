@@ -1,0 +1,137 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Team Explorer Everywhere 2015 (Out-of-date versions 14.0.2-14.0.3 for legacy systems)",
+    "downloadDescription": "For the newest version of Team Explorer Everywhere, please visit https://github.com/Microsoft/team-explorer-everywhere/releases. Team Explorer Everywhere includes the Eclipse plug-in and the cross-platform, command-line client for Visual Studio Team Foundation Server 2010, 2012, 2013, 2015 and Visual Studio Team Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TEE-CLC-14.0.2.zip",
+            "url": "https://download.microsoft.com/download/8/f/6/8f68ddc8-4e75-4bea-951e-c14bff336e81/TEE-CLC-14.0.2.zip",
+            "size": "18887572",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:51:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFS-SDK-14.0.3.zip",
+            "url": "https://download.microsoft.com/download/8/f/6/8f68ddc8-4e75-4bea-951e-c14bff336e81/TFS-SDK-14.0.3.zip",
+            "size": "25460342",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:51:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFS-SDK-14.0.2.zip",
+            "url": "https://download.microsoft.com/download/8/f/6/8f68ddc8-4e75-4bea-951e-c14bff336e81/TFS-SDK-14.0.2.zip",
+            "size": "25393053",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:51:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TEE-CLC-14.0.3.zip",
+            "url": "https://download.microsoft.com/download/8/f/6/8f68ddc8-4e75-4bea-951e-c14bff336e81/TEE-CLC-14.0.3.zip",
+            "size": "19087074",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:51:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFSEclipsePlugin-UpdateSiteArchive-14.0.2.zip",
+            "url": "https://download.microsoft.com/download/8/f/6/8f68ddc8-4e75-4bea-951e-c14bff336e81/TFSEclipsePlugin-UpdateSiteArchive-14.0.2.zip",
+            "size": "24943223",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:51:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFSEclipsePlugin-UpdateSiteArchive-14.0.3.zip",
+            "url": "https://download.microsoft.com/download/8/f/6/8f68ddc8-4e75-4bea-951e-c14bff336e81/TFSEclipsePlugin-UpdateSiteArchive-14.0.3.zip",
+            "size": "25145511",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:51:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "For the newest version of Team Explorer Everywhere, please visit https://github.com/Microsoft/team-explorer-everywhere/releases. Team Explorer Everywhere includes the Eclipse plug-in and the cross-platform, command-line client for Visual Studio Team Foundation Server 2010, 2012, 2013, 2015 and Visual Studio Team Services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "TEE-CLC-14.0.2.zip",
+        "TFS-SDK-14.0.3.zip",
+        "TFS-SDK-14.0.2.zip",
+        "TEE-CLC-14.0.3.zip",
+        "TFSEclipsePlugin-UpdateSiteArchive-14.0.2.zip",
+        "TFSEclipsePlugin-UpdateSiteArchive-14.0.3.zip"
+    ],
+    "detailsSection_file_size": [
+        "18.0 MB",
+        "24.3 MB",
+        "24.2 MB",
+        "18.2 MB",
+        "23.8 MB",
+        "24.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "     <ul xmlns=\"\">\r\n      <li>Windows 10 (x86, x64)</li>\r\n      <li>Windows 8.1 (x86, x64)</li>\r\n      <li>Windows 8 (x86, x64)</li>\r\n      <li>Windows 7 (x86, x64)</li>\r\n      <li>Windows Vista (x86, x64)</li>\r\n      <li>Windows Server 2008 R2 (x86, x64)</li>\r\n      <li>Windows Server 2012 (x86, x64)</li>\r\n      <li>Windows Server 2012 R2 (x86, x64)</li>\r\n      <li>Linux with GLIBC 2.3+ (x86, x86_64, PowerPC)</li>\r\n      <li>Mac OS X 10.8+ (Intel only)</li>\r\n      <li>Solaris 8 to 11 (SPARC,x64)</li>\r\n      <li>AIX 5.2 to 7.1(32 and 64 bit)</li>\r\n      <li>HP-UX 11i v1 to v3 (PA-RISC, Itanium)</li>\r\n     </ul>\r\n\r\n      <b>Integrated development environment (IDE) requirements:</b>\r\n     <ul xmlns=\"\">\r\n      <li>IDEs that are based on Eclipse 3.5 to 4.5 on Windows, Linux, Mac OS X, Solaris, AIX, or HP-UX.</li>\r\n     </ul>\r\n      <b>Java runtime requirements:</b>\r\n\r\n     <ul xmlns=\"\">\r\n      <li>Oracle Java\u2122 1.6+ or IBM Java\u2122 1.6+ on Microsoft Windows</li>\r\n      <li>Apple Java\u2122 1.6+ on Mac OS X</li>\r\n      <li>Oracle Java\u2122 1.6+ on Linux or Solaris</li>\r\n      <li>IBM Java\u2122 1.6+ on Linux or AIX</li>\r\n      <li>HP Java\u2122 1.6+ on HP-UX</li>\r\n     </ul>\r\n\r\n      <b>Team Foundation Server requirements:</b>\r\n\r\n     <ul xmlns=\"\">\r\n      <li>Visual Studio Team Services</li>\r\n      <li>Visual Studio Team Foundation Server 2015</li>\r\n      <li>Visual Studio Team Foundation Server 2013</li>\r\n      <li>Visual Studio Team Foundation Server 2012</li>\r\n      <li>Visual Studio Team Foundation Server 2010</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "HP-UX",
+        "Linux",
+        "Solaris",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>Installing the Team Foundation Server Plug-in For Eclipse</b><br/>\r\n<br/>\r\nYou must install the plug-in before you can use it in your development processes.  You can install into Eclipse directly from the update site, or you can install from the Eclipse Update Site Archive.<br/>\r\n<br/>\r\nTo install from the Eclipse update site:\r\n<ol>\r\n<li>Open Eclipse.</li>\r\n<li>On the <b>Help</b> menu, choose <b>Install New Software.</b></li>\r\n<li>The <b>Install</b> dialog box appears.</li>\r\n<li>Choose the <b>Add</b> button.</li>\r\n<li>The <b>Add Repository</b> dialog box appears.</li>\r\n<li>For the name, enter \"TFS plug-in for Eclipse\"</li>\r\n<li>Specify the location of the update site: <b>http://dl.microsoft.com/eclipse/tfs</b></li>\r\n<li>Choose the <b>OK</b> button. </li>\r\n<li>In the list of features in the Install dialog box, select the check box that corresponds to the <b>Team Foundation Server Plug-in for Eclipse</b>. If you don't see this option, use the pull-down menu for <b>Work with</b> and find the update site URL you just entered in the list and select it, then select the check box beside the plug-in mentioned above.</li>\r\n<li>Choose the <b>Next</b> button <u>two</u> times.</li>\r\n<li>If you agree to the Microsoft Software License Terms, accept them and then choose the <b>Finish</b> button.</li>\r\n<li>Restart Eclipse when you are prompted.</li>\r\n</ol>\r\n<br/>\r\nTo install the plug-in from the update site archive:\r\n<ol>\r\n<li>Use the link on this page to download TFSEclipsePlugin-UpdateSiteArchive-14.0.3.zip.</li>\r\n<li>Open Eclipse.</li>\r\n<li>On the <b>Help</b> menu, choose <b>Install New Software</b>. </li>\r\n<li>The <b>Install</b> dialog box appears. </li>\r\n<li>Choose the <b>Add</b> button.</li>\r\n<li>The <b>Add Repository</b> dialog box appears.</li>\r\n<li>For the name, enter \"Local TFS plug-in for Eclipse update archive\".</li>\r\n<li>Choose the <b>Archive</b> button.</li>\r\n<li>The <b>Repository archive</b> dialog box appears.</li>\r\n<li>Find and select the downloaded \"<b>TFSEclipsePlugin-UpdateSiteArchive-14.0.3.zip</b>\" file as the File name.</li>\r\n<li> Choose the <b>Open</b> button.</li>\r\n<li>Choose the <b>OK</b> button. </li>\r\n<li>In the list of features in the Install dialog box, select the check box that corresponds to the <b>Team Foundation Server Plug-in for Eclipse</b>.</li>\r\n<li>Choose the <b>Next</b> button <u>two</u> times.</li>\r\n<li>If you agree to the Microsoft Software License Terms, accept them and then choose the <b>Finish</b> button.</li>\r\n<li>Restart Eclipse when you are prompted.</li>\r\n</ol>\r\n<br/>\r\n<b>Installing the Cross-platform Command-line Client for Team Foundation Server</b><br/>\r\n<br/>\r\nYou can perform many version-control operations from the cross-platform command-line client for Team Foundation Server. Before you can use this client, you must install it and configure your shell or system path to include the installation folder.<br/>\r\n<br/>\r\nTo install the Cross-Platform Command-Line Client for Team Foundation Server\r\n<ol>\r\n<li>Use the link on this page to download TEE-CLC-14.0.3.zip.</li>\r\n<li>Unzip the archive (TEE-CLC-14.0.3.zip file) that contains the client.</li>\r\n<li>Configure your shell or system path to include the folder to which you unzipped the archive.</li>\r\n<li>To verify that the client is working, at a command prompt, type <b>tf</b>, and then press the\u00a0ENTER key.</li>\r\n</ol>\r\nIf the client is correctly installed, output appears, starting with \"Microsoft Team Explorer Everywhere Command-line Client (version 14.0.3)\".<br/>\r\n<br/>\r\nFor information about any of the commands, you can type <b>tf help Command</b>, where <b>Command</b> is the name of the command for which you want information. For example, you could type <b>tf help checkin</b>. You can also type <b>tf command /help</b> or <b>tf command -help</b> to obtain help.<br/><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "team Foundation Server: Eclipse and Cross-Platform Tools Forum",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=184187"
+        },
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "47727",
+    "downloadPreload": true
+}

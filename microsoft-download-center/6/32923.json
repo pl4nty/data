@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Office Home and Student 2007 Assets",
+    "downloadDescription": "Graphics to use to promote Microsoft\u00ae Office Home and Student 2007",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Tabbed_MPU_300x250_Rugby.zip",
+            "url": "https://download.microsoft.com/download/4/9/f/49ff61d9-e0db-4975-b615-4db2557485c5/Tabbed_MPU_300x250_Rugby.zip",
+            "size": "776473",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Tabbed_MPU_300x250_Cookin1.zip",
+            "url": "https://download.microsoft.com/download/4/9/f/49ff61d9-e0db-4975-b615-4db2557485c5/Tabbed_MPU_300x250_Cookin1.zip",
+            "size": "1349183",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Tabbed_MPU_300x250_Gardenin2.zip",
+            "url": "https://download.microsoft.com/download/4/9/f/49ff61d9-e0db-4975-b615-4db2557485c5/Tabbed_MPU_300x250_Gardenin2.zip",
+            "size": "966973",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "300x250_MPU_officeSpeech.zip",
+            "url": "https://download.microsoft.com/download/4/9/f/49ff61d9-e0db-4975-b615-4db2557485c5/300x250_MPU_officeSpeech.zip",
+            "size": "60230",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Graphics to use to promote Microsoft\u00ae Office Home and Student 2007",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Tabbed_MPU_300x250_Rugby.zip",
+        "Tabbed_MPU_300x250_Cookin1.zip",
+        "Tabbed_MPU_300x250_Gardenin2.zip",
+        "300x250_MPU_officeSpeech.zip"
+    ],
+    "detailsSection_file_size": [
+        "758.3 KB",
+        "1.3 MB",
+        "944.3 KB",
+        "58.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download zip files to obtain ve assets",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32923",
+    "downloadPreload": true
+}

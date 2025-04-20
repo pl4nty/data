@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Steps to Run SSMA for Oracle Including Data Migration",
+    "downloadDescription": "This document is meant to be used as a Quick Start Guide to migrate schema & data from Oracle to Azure SQL DB using SSMA for Oracle v7.6.0. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Steps to Run SSMA for Oracle - Including Data Migration v1.0.pdf",
+            "url": "https://download.microsoft.com/download/c/9/d/c9de28dd-9e0e-4d64-bbd8-29074a332245/Steps to Run SSMA for Oracle - Including Data Migration v1.0.pdf",
+            "size": "2276464",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:04:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is meant to be used as a Quick Start Guide to migrate schema & data from Oracle to Azure SQL DB using SSMA for Oracle v7.6.0. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Steps to Run SSMA for Oracle - Including Data Migration v1.0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Mircosoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To start the download, click Download, click Go, and then do one of the following: To start the installation immediately, click Open or Run this program from its current location. To copy the download to your computer for installation at a later time, click Save or Save this program to disk.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57457",
+    "downloadPreload": true
+}

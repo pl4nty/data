@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "K-12 Classroom Collaboration  - Click-Through Demo",
+    "downloadDescription": "This is a portable, interactive demo that closely simulates the UI and functionality of an actual solution. Installs to your Start menu and includes a presenter script.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KCC_setup.msi",
+            "url": "https://download.microsoft.com/download/3/e/2/3e28d8d5-10ee-41cc-a921-e11d52dbde75/KCC_setup.msi",
+            "size": "7287296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a portable, interactive demo that closely simulates the UI and functionality of an actual solution. Installs to your Start menu and includes a presenter script. Scenario Summary: Teachers are under increasing pressure to improve student performance while engaging parents and making activities within the classroom transparent. Unfortunately, school districts are struggling with swelling student-to-teacher ratios, disengaged parents, and increased performance reporting requirements. A K-12 classroom collaboration for students, teachers, and parents solution based on the Microsoft Office System enables teachers to give parents access to curriculum and assignments, enables peer-to-peer collaboration with teacher and parent involvement, and helps parents engage in the educational process within and outside of the classroom.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "KCC_setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "To install this download: <br />\n1. Click the Download button on this page to start the download <br />\n2. Click Run to start installation<br />\n3. Follow the instructions on the installation wizard to complete the installation<br />\n4. To launch this demo, click the Start menu, point to All Programs, point to Microsoft Office System Demos, point to this demo, and then click Launch Demo.<br />\n<br />\nTo save this download:<br />\nTo save the download to your computer for installation at a later time, click Save. <br />\n<br />\nTo remove this download:<br />\nOn the Start menu, point to All Programs, point to Microsoft Office System Demos, point to this demo, and then click uninstall demo.",
+    "relatedResourcesSection": [
+        {
+            "title": "solution Showcase for K-12 Classroom Collaboration \u2013 Customer Web Site",
+            "url": "http://www.microsoft.com/office/showcase/classroomcollab/default.mspx"
+        },
+        {
+            "title": "solution Showcase for K-12 Classroom Collaboration \u2013 Partner Web Site",
+            "url": "https://partner.microsoft.com/40026771"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7303",
+    "downloadPreload": true
+}

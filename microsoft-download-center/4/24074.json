@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 White Paper: Planning for Security in Business Portal",
+    "downloadDescription": "This document describes the Business Portal architecture and explains concepts related to securing the network, the Web server, the Web site, and data.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BusinessPortalSecurity.pdf",
+            "url": "https://download.microsoft.com/download/2/e/e/2ee792b1-c424-47b0-b9f5-f0cf1c44c1c0/BusinessPortalSecurity.pdf",
+            "size": "820779",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BusinessPortalSecurity.xps",
+            "url": "https://download.microsoft.com/download/2/e/e/2ee792b1-c424-47b0-b9f5-f0cf1c44c1c0/BusinessPortalSecurity.xps",
+            "size": "818482",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:27:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Business Portal extends Microsoft Dynamics GP, providing a browser interface to securely access back office data over an intranet or an extranet. This distributed computing model results in security challenges, with levels of integration between clients, servers, and services. This model requires that security be an integral part of every implementation.\n<br />\n<br />\nThis document discusses the following topics: \n<UL><LI>Portal architecture</LI>\n<LI>Securing the network</LI>\n<LI>Securing the Web server</LI>\n<LI>Securing sites, pages, and content</LI>\n<LI>Securing data through the Microsoft Business Framework or Web Services for Microsoft Dynamics GP</LI>\n<LI>Securing Microsoft Dynamics GP reports displayed in Business Portal</LI>\n<LI>The Microsoft Dynamics Security Synchronization Utility</LI>\n<LI>Terminal Services</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "BusinessPortalSecurity.pdf",
+        "BusinessPortalSecurity.xps"
+    ],
+    "detailsSection_file_size": [
+        "801.5 KB",
+        "799.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics GP 10.0, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=220476\">System requirements for Microsoft Dynamics GP 10.0</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows Small Business Server 2003 ",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "security Synchronization Utility",
+            "url": "https://mbs.microsoft.com/customersource/downloads/servicepacks/mdgp10sl70_bpsecuritysynchronizationutility.htm?printpage=false"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24074",
+    "downloadPreload": true
+}

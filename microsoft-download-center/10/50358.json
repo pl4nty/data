@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "AdlCopy",
+    "downloadDescription": "AdlCopy is a command-line tool that allows you to copy data from Azure Storage Containers or Blobs into Azure Data Lake Store. More details are available in documentation on Azure.microsoft.com under Analytics -> Azure Data Lake Store.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AdlCopy.msi",
+            "url": "https://download.microsoft.com/download/7/f/4/7f420c7d-5654-4dee-97c6-130b31e2f317/AdlCopy.msi",
+            "size": "5451776",
+            "version": "1.0.13",
+            "datePublished": "7/15/2024 4:05:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "AdlCopy is a command-line tool that allows you to copy data from Azure Storage Containers or Blobs into Azure Data Lake Store. More details are available in documentation on Azure.microsoft.com under Analytics -> Azure Data Lake Store.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.13",
+    "detailsSection_file_name": [
+        "AdlCopy.msi"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Detailed instructions are available in documentation on Azure.microsoft.com under Analytics -> Azure Data Lake Store.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50358",
+    "downloadPreload": true
+}

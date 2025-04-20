@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Installing and Configuring UDDI Services 3.0",
+    "downloadDescription": "Guidance for installing and configuring UDDI Services 3.0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrating from UDDI Services 2.0 to UDDI Services 3.0.docx",
+            "url": "https://download.microsoft.com/download/1/d/b/1db82c5a-aa35-4691-8179-4a6feded48b0/Migrating from UDDI Services 2.0 to UDDI Services 3.0.docx",
+            "size": "43678",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing and Configuring Microsoft UDDI Services 3.0 on Windows Server 2008 R2.docx",
+            "url": "https://download.microsoft.com/download/1/d/b/1db82c5a-aa35-4691-8179-4a6feded48b0/Installing and Configuring Microsoft UDDI Services 3.0 on Windows Server 2008 R2.docx",
+            "size": "53109",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Installing and Configuring Microsoft UDDI Services 3.0.docx",
+            "url": "https://download.microsoft.com/download/1/d/b/1db82c5a-aa35-4691-8179-4a6feded48b0/Installing and Configuring Microsoft UDDI Services 3.0.docx",
+            "size": "52884",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Guidance for installing and configuring UDDI Services 3.0",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Migrating from UDDI Services 2.0 to UDDI Services 3.0.docx",
+        "Installing and Configuring Microsoft UDDI Services 3.0 on Windows Server 2008 R2.docx",
+        "Installing and Configuring Microsoft UDDI Services 3.0.docx"
+    ],
+    "detailsSection_file_size": [
+        "42.7 KB",
+        "51.9 KB",
+        "51.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button next to the document that you want.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15933",
+    "downloadPreload": true
+}

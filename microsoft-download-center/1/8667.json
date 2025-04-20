@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Billing SBE 3.0 Management Pack for MOM 2005",
+    "downloadDescription": "Microsoft Billing SBE 3.0 Management Pack monitors Billing SBE 3.0 services and their availability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Billing SBE 3.0 MOM 2005 MP.msi",
+            "url": "https://download.microsoft.com/download/c/3/8/c388b981-9e38-4442-8df9-79b85ced9c8e/Microsoft Billing SBE 3.0 MOM 2005 MP.msi",
+            "size": "1572352",
+            "version": "03.0.0000.0000",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Billing Standard Business Event (SBE) 3.0 Management Pack for MOM monitors the Billing SBE 3.0 services application event log. This management pack is build for monitoring both Billing SBE 3.0 Web and Windows services generated events. It includes event rules for the Batched Delivery windows service and Billing SBE Runtime web service. The events collected from each individual service indicate critical issues, informational events and error events generated during various Billing SBE 3.0 configurations and process flows. In addition different monitoring and corrective tasks allows detection and curing of service outages.\n<br/>\n<br/>\n<b>Feature Summary:</b>\n<br/>\n<br/>\n Billing SBE 3.0 services generated Error and Informational events.\n<br/>\nBilling SBE 3.0 service monitoring events indicating services health status.\n<br/>\nAlerts indicating configuration issues for services\n<br/>\nState monitoring view for various component services health status\n<br/>\nTasks to facilitate monitoring and control Billing SBE 3.0 services \n<br/>\nNotification if windows services outrage\n<br/>\n<br/>\n<b>Release and Update History:</b>\n<br/>\n<br/>\n<b>9/19/2006</b>    Original product release date (Version 03.0.0000.0000)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "03.0.0000.0000",
+    "detailsSection_file_name": [
+        "Microsoft Billing SBE 3.0 MOM 2005 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows Server\u2122 2003 Enterprise Edition Service Pack 1 (SP1)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003, Standard Edition (32-bit x86)"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "mom Home Page",
+            "url": "http://www.microsoft.com/mom/default.mspx"
+        },
+        {
+            "title": "mom Support",
+            "url": "http://www.microsoft.com/mom/support/default.mspx"
+        },
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        },
+        {
+            "title": "mom Community",
+            "url": "http://www.microsoft.com/technet/community/en-us/mom/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8667",
+    "downloadPreload": true
+}

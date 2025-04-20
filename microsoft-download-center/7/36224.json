@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Tools Documentation: Modifier with Visual Basic for Applications (VBA)",
+    "downloadDescription": "This documentation describes how to use Modifier with VBA, which is a customization tool used to modify the appearance and functionality of Microsoft Dynamics GP windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VBA.chm",
+            "url": "https://download.microsoft.com/download/d/2/9/d291dab8-aa9f-49c5-950c-ac63caf73b6f/Modifier/VBA.chm",
+            "size": "454695",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:16:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "VBADevelopersGuide.pdf",
+            "url": "https://download.microsoft.com/download/d/2/9/d291dab8-aa9f-49c5-950c-ac63caf73b6f/Modifier/VBADevelopersGuide.pdf",
+            "size": "2518555",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:16:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ModifierQuickStart.pdf",
+            "url": "https://download.microsoft.com/download/d/2/9/d291dab8-aa9f-49c5-950c-ac63caf73b6f/Modifier/ModifierQuickStart.pdf",
+            "size": "862973",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:16:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MOD.chm",
+            "url": "https://download.microsoft.com/download/d/2/9/d291dab8-aa9f-49c5-950c-ac63caf73b6f/Modifier/MOD.chm",
+            "size": "735221",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:16:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ModifierUsersGuide.pdf",
+            "url": "https://download.microsoft.com/download/d/2/9/d291dab8-aa9f-49c5-950c-ac63caf73b6f/Modifier/ModifierUsersGuide.pdf",
+            "size": "1793918",
+            "version": "12.0",
+            "datePublished": "7/15/2024 3:16:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components. <br />\n<br />\n<b>Help files</b>\n<br />\nThis download includes the following help files: \n<UL><LI><b>Modifier Help</b> (Mod.chm): Includes the Modifier User's Guide in HTML Help format, with additional help for Modifier windows.</LI>\n<LI><b>VBA Help</b> (VBA.chm): Includes the VBA Developer's Guide in HTML Help format.</LI></UL>\n<br />\n<br />\n<b>Guides</b>\n<br />\nThis download includes the following files in PDF format: \n<UL><LI><b>Modifier Quick Start</b> (ModifierQuickStart.pdf): Includes an overview of Modifier and specific lessons.</LI>\n<LI><b>Modifier User's Guide</b> (ModifierUsersGuide.pdf): Explains how to modify forms and the user interface. Also describes the Forms dictionary, how to control access to modifications you have created, and how to make global modifications.</LI>\n<LI><b>VBA Developer's Guide</b> (VBADevelopersGuide.pdf) Explains how to program windows, window fields, grids, and reports. Also describes how to store application data and distribute projects, and includes reference information about properties and events for objects.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0",
+    "detailsSection_file_name": [
+        "VBA.chm",
+        "VBADevelopersGuide.pdf",
+        "ModifierQuickStart.pdf",
+        "MOD.chm",
+        "ModifierUsersGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "444.0 KB",
+        "2.4 MB",
+        "842.7 KB",
+        "718.0 KB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF files, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the guides or help files.</LI>\n<LI>Save the file to your computer.</LI>\n</OL>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36224",
+    "downloadPreload": true
+}

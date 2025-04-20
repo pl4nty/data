@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Cloud Ecosystem Poster: Microsoft Azure, Windows Server 2012 R2, System Center 2012 R2",
+    "downloadDescription": "Provides a visual reference for understanding key Microsoft private cloud and on-premises cloud technologies.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Cloud Ecosystem Poster.pdf",
+            "url": "https://download.microsoft.com/download/e/1/f/e1f24341-432e-4569-bfd3-fa30ce444553/Microsoft Cloud Ecosystem Poster.pdf",
+            "size": "269361",
+            "version": "August 2014",
+            "datePublished": "7/15/2024 3:21:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a visual reference for understanding key Microsoft private cloud and on-premises cloud technologies. This poster includes information about:\r\n<ul><li> Microsoft Azure Services including Service Categories, Compute Services, Data Services, and App Services</li>\r\n<li> System Center 2012 R2 including App Controller, Virtual Machine Manager, Operations Manager, Configuration Manager, Service Manager, Orchestrator, Data Protection Manager and Azure Pack</li>\r\n<li>Windows Server 2012 R2 including Storage Spaces, Data Deduplication, Resilient File System, SMB Transparent Failover, Storage Quality of Service, Generation 2 Virtual Machines, Online VHDX Resize, Enhanced Session Mode, Live Migration, Failover Clustering, Cluster Shared Volumes, Scale-Out File Server, Shared Virtual Hard Disks, Hyper-V Extensible Switch, Remote Desktop Services, SMB Direct, SMB Multi-channel, and NIC Teaming</li></ul>\r\nThis visual reference is available as a complete wall poster. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2014",
+    "detailsSection_file_name": [
+        "Microsoft Cloud Ecosystem Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "263.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".pdf viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43718",
+    "downloadPreload": true
+}

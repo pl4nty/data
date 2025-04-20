@@ -1,0 +1,313 @@
+{
+    "error": "",
+    "downloadTitle": "Active Directory Lightweight Directory Services (ADLDS) Management Pack",
+    "downloadDescription": "The Active Directory Lightweight Directory Services (ADLDS) Management Pack monitors Windows Server 2008 and above Active Directory Lightweight Directory Services Instances.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.TRK.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.TRK.msi",
+            "size": "598016",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.SVE.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.SVE.msi",
+            "size": "602112",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.RUS.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.RUS.msi",
+            "size": "643072",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.PTG.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.PTG.msi",
+            "size": "569344",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.PTB.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.PTB.msi",
+            "size": "606208",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.PLK.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.PLK.msi",
+            "size": "598016",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.NLD.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.NLD.msi",
+            "size": "569344",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for ADLDS.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.msi",
+            "size": "745472",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.KOR.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.KOR.msi",
+            "size": "790528",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.JPN.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.JPN.msi",
+            "size": "610304",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.ITA.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.ITA.msi",
+            "size": "614400",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.HUN.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.HUN.msi",
+            "size": "598016",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.FRA.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.FRA.msi",
+            "size": "589824",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.ESN.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.ESN.msi",
+            "size": "573440",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.DEU.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.DEU.msi",
+            "size": "577536",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.CSY.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.CSY.msi",
+            "size": "610304",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.CHT.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.CHT.msi",
+            "size": "618496",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for ADLDS.CHS.msi",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/SC Management Pack for ADLDS.CHS.msi",
+            "size": "651264",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OM_MP_ADLDS.doc",
+            "url": "https://download.microsoft.com/download/3/3/1/331cd3f8-42af-46e1-ae67-739a3e88586c/OM_MP_ADLDS.doc",
+            "size": "325120",
+            "version": "6.0.8228.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Active Directory Lightweight Directory Services (AD LDS) Management Pack provides both proactive and reactive monitoring of your AD LDS deployment running on Windows Server\u00ae 2008 or above. It monitors events that are placed in the Application, System, and Service event logs by various AD LDS components and subsystems. It also monitors the overall health of the AD LDS system and alerts you to critical performance issues. \r\n<br/>\r\n <br/>\r\nThe monitoring that is provided by this management pack includes monitoring of the Active Directory Lightweight Directory Services (AD LDS) instances and monitoring of health from the perspective of clients that use AD LDS resources. The AD LDS Management Pack provides a predefined, ready-to-run set of processing rules, monitoring scripts, and reports that are designed specifically to monitor the performance and availability of the AD LDS instances. <br/>\r\n <br/>\r\nAn AD LDS client in your environment might experience connectivity and service issues even though your AD LDS server appears to be operating correctly. The AD LDS Client Perspective Management Pack, which is included in the Management Pack files to download, helps to identify these issues. This management pack monitors the services that the AD LDS instances provide. It provides information in addition to the information that is collected directly for the AD LDS instances about whether they are available by running transactions, such as Lightweight Directory Access Protocol (LDAP) binds, against the directory service. <br/>\r\n <b>Release History</b><br/>\r\n<ul>\r\n<li>10/18/2013 version 6.0.8228.0 </li>\r\n</ul>\r\n<ul>\r\n<li>6/22/2010 - Initial release, version 6.0.7220.0 </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.8228.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for ADLDS.TRK.msi",
+        "SC Management Pack for ADLDS.SVE.msi",
+        "SC Management Pack for ADLDS.RUS.msi",
+        "SC Management Pack for ADLDS.PTG.msi",
+        "SC Management Pack for ADLDS.PTB.msi",
+        "SC Management Pack for ADLDS.PLK.msi",
+        "SC Management Pack for ADLDS.NLD.msi",
+        "SC Management Pack for ADLDS.msi",
+        "SC Management Pack for ADLDS.KOR.msi",
+        "SC Management Pack for ADLDS.JPN.msi",
+        "SC Management Pack for ADLDS.ITA.msi",
+        "SC Management Pack for ADLDS.HUN.msi",
+        "SC Management Pack for ADLDS.FRA.msi",
+        "SC Management Pack for ADLDS.ESN.msi",
+        "SC Management Pack for ADLDS.DEU.msi",
+        "SC Management Pack for ADLDS.CSY.msi",
+        "SC Management Pack for ADLDS.CHT.msi",
+        "SC Management Pack for ADLDS.CHS.msi",
+        "OM_MP_ADLDS.doc"
+    ],
+    "detailsSection_file_size": [
+        "584.0 KB",
+        "588.0 KB",
+        "628.0 KB",
+        "556.0 KB",
+        "592.0 KB",
+        "584.0 KB",
+        "556.0 KB",
+        "728.0 KB",
+        "772.0 KB",
+        "596.0 KB",
+        "600.0 KB",
+        "584.0 KB",
+        "576.0 KB",
+        "560.0 KB",
+        "564.0 KB",
+        "596.0 KB",
+        "604.0 KB",
+        "636.0 KB",
+        "317.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> </li>\r\n<ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1, System Center 2012 Operations Manager R2, and System Center 2016 Operations Manager. </li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        },
+        {
+            "title": "system Center Operations Manager MP Catalog",
+            "url": "http://pinpoint.microsoft.com/en-US/systemcenter/managementpackcatalog"
+        },
+        {
+            "title": "system Center Operations Manager Home",
+            "url": "http://www.microsoft.com/systemcenter/en/us/operations-manager.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1451",
+    "downloadPreload": true
+}

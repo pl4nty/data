@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2016 - Service Manager Self Service Portal upgrade fix",
+    "downloadDescription": "Service Manager 2016 Self Service Portal upgrade fix",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SM2016SSP_UpgradeFix_20160601.EXE",
+            "url": "https://download.microsoft.com/download/6/0/8/60816a2e-b398-4d86-bc16-1d9f7bcc6c47/SM2016SSP_UpgradeFix_20160601.EXE",
+            "size": "172784",
+            "version": "1",
+            "datePublished": "7/15/2024 4:39:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This patch is required for inplace upgrade to Self Service Portal in System Center 2016 - Service Manager, when System Center 2012 R2 - Service Manager HTML based Self Service Portal (<a href=\"https://support.microsoft.com/en-in/kb/3096383\">Update Rollup 8</a>) is installed on the same machine as Service Manager management server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SM2016SSP_UpgradeFix_20160601.EXE"
+    ],
+    "detailsSection_file_size": [
+        "168.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 - Service Manager HTML based Self Service Portal (<a href=\"https://support.microsoft.com/en-in/kb/3096383\">Update Rollup 8</a>) installed on the same machine as Service Manager management server.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ul>\r\n<li>\r\n<u><b>Steps for upgrading the HTML5-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager <i>secondary management server</i></b></u>\r\n<ol>\r\n<li><b>Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state</b></li>\r\n<li>Download and install the patch \"SM2016SSP_UpgradeFix_20160601.exe\" on the server where the 2012 R2 Self Service Portal is installed.</li>\r\n<li>Upgrade both primary and secondary Management Servers from Service Manager 2012 R2 to Service Manager 2016.</li>\r\n<li>Self Service Portal will also get upgraded along with the secondary management server.</li>\r\n</ol>\r\n</li>\r\n\r\n<li>\r\n<u><b>Upgrading the HTML5-based Self Service Portal from Service Manager 2012 R2, which is installed on same computer as the Service Manager <i>primary management server</i></b></u>\r\n<br/>\r\n<i>Installing the Self Service portal on the same computer as the primary management server is not recommended. However, in the event that you are using this combination, then use the following steps to upgrade to Service Manager 2016.</i>\r\n<br/><br/>\r\n<ol>\r\n<li><b>Do not uninstall the Self Service Portal or Management Server, attempting uninstallation might create an unstable state</b></li>\r\n<li>Download and install the patch \"SM2016SSP_UpgradeFix_20160601.exe\" on the server where the 2012 R2 Self Service Portal is installed.</li>\r\n<li>Upgrade the primary Management Server from Service Manager 2012 R2 to Service Manager 2016.</li>\r\n<li>Self Service Portal will also get upgraded along with the primary management server.</li>\r\n</ol>\r\n</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54060",
+    "downloadPreload": true
+}

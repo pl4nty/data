@@ -1,0 +1,157 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 9 for System Center 2012 R2 Service Manager",
+    "downloadDescription": "This update contains a number of fixes for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM2012R2_CU_KB3129780_i386_7.5.3079.607.exe",
+            "url": "https://download.microsoft.com/download/b/6/1/b61b4d4c-3bfa-4740-a557-dd0162873f03/SCSM2012R2_CU_KB3129780_i386_7.5.3079.607.exe",
+            "size": "79871008",
+            "version": "7.5.3079.607",
+            "datePublished": "7/15/2024 4:01:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RemoveDuplicateBillableItem.ps1",
+            "url": "https://download.microsoft.com/download/b/6/1/b61b4d4c-3bfa-4740-a557-dd0162873f03/RemoveDuplicateBillableItem.ps1",
+            "size": "5882",
+            "version": "7.5.3079.607",
+            "datePublished": "7/15/2024 4:01:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM2012R2_CU_KB3129780_AMD64_7.5.3079.607.exe",
+            "url": "https://download.microsoft.com/download/b/6/1/b61b4d4c-3bfa-4740-a557-dd0162873f03/SCSM2012R2_CU_KB3129780_AMD64_7.5.3079.607.exe",
+            "size": "80003104",
+            "version": "7.5.3079.607",
+            "datePublished": "7/15/2024 4:01:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b style=\"color:red\">\r\nThe original UR9 package (v 7.5.3079.571) is withdrawn and is replaced with a new install package (v 7.5.3079.607). \r\n<br/><br/>\r\n<ul>\r\n<li>If you have already installed the UR 9 3079.571 (old patch), then you will observe that some unsealed MPs of your deployment have got overwritten. In that case \u2013\r\n<ol>\r\n<li>Re-import the following unsealed MPs \u2013\r\n<ul>\r\n<li>ServiceManager.IncidentManagement.Configuration.xml</li>\r\n<li>ServiceManager.ServiceRequest.Configuration.xml</li>\r\n<li>ServiceManager.ProblemManagement.Configuration.xml</li>\r\n<li>ServiceManager.KnowledgeManagement.Configuration.xml</li>\r\n</ul>\r\n</li>\r\n<li>Then, apply this new update patch (v 3079.607). Please note that this new patch (v 3079.607) is the official UR9 release and older patch (v 3079.571) will no longer be supported.</li>\r\n</ol>\r\n</li>\r\n<li>If you have not installed the UR 9 3079.571 (old patch), then you can simply skip the older patch and can directly update your deployment with the latest patch (v 3079.607).</li>\r\n<li>Please note that v 3079.607 is the supported UR9 version, hence please install the new UR9 update patch if your deployment is on the old UR9 patch (v 3079.571 or v 3079.601).</li>\r\n</ul>\r\n<br/>\r\n---------\r\n</b>\r\n<br/><br/>\r\nThis update contains a set of bug fixes to the System Center 2012 R2 Service Manager release. It should be applied to all Service Manager 2012 R2 server installations. <br/>\r\nThere are the available executable files: <br/>\r\nSCSM2012R2_CU_KB3129780_AMD64_ 7.5.3079.607.exe <br/>\r\nSCSM2012R2_CU_ KB3129780_i386_ 7.5.3079.607.exe <br/>\r\n<b>Note:</b> The System Center 2012 R2 Service Manager Update Rollups are cumulative, hence this UR9 contains new payload for the following updates along with the content shipped with System Center 2012 R2 Service Manager <a href=\"https://support.microsoft.com/kb/3063263\">UR7</a>, <a href=\"https://support.microsoft.com/en-us/kb/3039363\">UR6</a>, <a href=\"https://support.microsoft.com/en-us/kb/3009517\">UR5</a>, <a href=\"https://support.microsoft.com/kb/2989601\">UR4</a>, <a href=\"https://support.microsoft.com/kb/2962041\">UR3</a>, and <a href=\"https://support.microsoft.com/kb/2904710\">UR2</a>. <br/>\r\n<br/>\r\nPlease be aware that this release does not contain the payload of <a href = \"https://support.microsoft.com/kb/3124091\">Update Rollup 8</a>, because UR8 contains the new HTML based Self Service Portal and requires separate installation.\r\n<br/>\r\n<b><u>Issues that are fixed in this update rollup</u></b><br/>\r\n<ul>\r\n<li>System Center Configuration Manager (SCCM) 1511, 1602, 1606 and 1610 are supported with this update in Service Manager for SCCM connectors.</li>\r\n<li><i style=\"text-decoration: line-through;\">Scroll wheel does not work in console forms</i> (Removed from UR9)</li>\r\n<li>AD connector goes for a full sync after you update a LDAP query through PowerShell</li>\r\n<li>With Update Rollup 7 installed, Incidents become non-editable and throw insufficient permission error when the user tries to update them</li>\r\n<li>The exception which is raised on simultaneous conflicting changes on same item by multiple analysts or analyst & workflows, it does not contain the details of fields & values which have caused the conflict. With this update, the raised exception will have the details of fields (and their values) which have conflicting updates, so the analyst can save rest of the changes after resolving the conflict</li>\r\n<li>SM console does not show the details about the settings which have changed and caused the noncompliance issue in case of DCM incidents</li>\r\n<li>Runbook Activity does not change the status when the associated Runboook job is groomed out of Orchestrator</li>\r\n<li>SQL CoreEnterprise64 is not detected as an enterprise edition by Service Manager</li>\r\n<li>With Update Rollup 7 installed, the AD connector fails with InvalidCastException</li>\r\n<li>With UR7 installed, service component is not available for some Business Services imported from SCOM</li>\r\n</ul>\r\n<br/><br/>\r\n<b>Note:</b> A new update for HTML Self Service Portal is also available separately. You can get it from here - <a href=\"https://support.microsoft.com/kb/3134286\">KB3134286</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.607",
+    "detailsSection_file_name": [
+        "SCSM2012R2_CU_KB3129780_i386_7.5.3079.607.exe",
+        "RemoveDuplicateBillableItem.ps1",
+        "SCSM2012R2_CU_KB3129780_AMD64_7.5.3079.607.exe"
+    ],
+    "detailsSection_file_size": [
+        "76.2 MB",
+        "5.7 KB",
+        "76.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 Service Manager ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/3129780\">KB3129780</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50744",
+    "downloadPreload": true
+}

@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Retail Extensibility in Dynamics AX 2012 R3 CU8",
+    "downloadDescription": "This document teaches you some of the basic steps to create a simple retail customization.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Retail SDK CU8 - Extensibility Sample 1.zip",
+            "url": "https://download.microsoft.com/download/2/6/d/26d803f8-fa7c-4869-9ab1-a0186ac9adfa/Retail SDK CU8 - Extensibility Sample 1.zip",
+            "size": "166503",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:08:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Retail Extensibility in Dynamics AX 2012 R3 CU8.docx",
+            "url": "https://download.microsoft.com/download/2/6/d/26d803f8-fa7c-4869-9ab1-a0186ac9adfa/Retail Extensibility in Dynamics AX 2012 R3 CU8.docx",
+            "size": "2793367",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:08:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Retail SDK CU8 - Extensibility Sample 2.zip",
+            "url": "https://download.microsoft.com/download/2/6/d/26d803f8-fa7c-4869-9ab1-a0186ac9adfa/Retail SDK CU8 - Extensibility Sample 2.zip",
+            "size": "239268",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:08:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The first part of the white paper focuses on a very simple customization and covers the following basic steps:\r\n<ul>\r\n<li>Extend the Microsoft Dynamics AX commerce runtime (CRT) by writing a new CRT service. (No change will be made to existing Retail software development kit [SDK] code.)</li>\r\n<li>Extend Retail Server by writing a new customer action.</li>\r\n<li>Make changes to the Retail Modern POS (MPOS) UI design in Microsoft Dynamics AX, and push the changes to the store.</li>\r\n<li>Extend MPOS by using the new Retail Server/CRT functionality from the UI.</li>\r\n</ul>\r\nThe second part of the white paper covers the following steps:\r\n<ul>\r\n<li>Microsoft Dynamics AX: Add a new data entity that is related to a retail store, and populate it by using a job (no UI).</li>\r\n<li>Commerce Data Exchange (CDX): Configure CDX to include the new table in data synchronizations.</li>\r\n<li>CRT: Add a new data entity and new service.</li>\r\n<li>Retail Server: Expose a new controller for the new entity, and add a new OData action.</li>\r\n<li>MPOS: Add plumbing to call Retail Server, and update the UI to expose data.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Retail SDK CU8 - Extensibility Sample 1.zip",
+        "Retail Extensibility in Dynamics AX 2012 R3 CU8.docx",
+        "Retail SDK CU8 - Extensibility Sample 2.zip"
+    ],
+    "detailsSection_file_size": [
+        "162.6 KB",
+        "2.7 MB",
+        "233.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The steps are performed on the Contoso sample virtual machine (VM) image that you can request via Microsoft Dynamics Lifecycle Services (LCS, https://lcs.dynamics.com/Logon/Index), Most partners have access to the Contoso sample VM available from LCS. Alternatively, you can use PartnerSource (https://mbs.microsoft.com/partnersource/northamerica/) to download the VM. Make sure that you get the CU8 version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to download the whitepaper and sample code.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49489",
+    "downloadPreload": true
+}

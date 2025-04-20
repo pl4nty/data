@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Moving from Exchange Web Services to OAuth and the Graph API",
+    "downloadDescription": "Presentation from the Microsoft Exchange Community (MEC) Technical Airlift - September 13-14, 2022",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Moving from Exchange Web Services to OAuth and the Graph API.pdf",
+            "url": "https://download.microsoft.com/download/f/9/3/f93fac1a-2468-46e8-bc6f-47470183368e/Moving from Exchange Web Services to OAuth and the Graph API.pdf",
+            "size": "711130",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This session will detail the planning requirements and key factors to consider as you migrate from Exchange Web Services to OAuth and the Graph API.\r\n\r\nRecording of presentation by Julian Stephan is at https://youtu.be/mNABlCeTfTA.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Moving from Exchange Web Services to OAuth and the Graph API.pdf"
+    ],
+    "detailsSection_file_size": [
+        "694.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Macintosh",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Open file in PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104615",
+    "downloadPreload": true
+}

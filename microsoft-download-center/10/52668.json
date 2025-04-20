@@ -1,0 +1,428 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Proofing Tools 2016 - English",
+    "downloadDescription": "Microsoft Office Proofing Tools enable editing in additional languages.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "proofingtools2016_en-us-x64.exe",
+            "url": "https://download.microsoft.com/download/9/5/a/95a40083-4ada-4173-be42-0c9f88ad8c0f/proofingtools2016_en-us-x64.exe",
+            "size": "12863784",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:13:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "proofingtools2016_en-us-x86.exe",
+            "url": "https://download.microsoft.com/download/9/5/a/95a40083-4ada-4173-be42-0c9f88ad8c0f/proofingtools2016_en-us-x86.exe",
+            "size": "12626648",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:13:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "gu-in",
+            "name": "Gujarati"
+        },
+        {
+            "cultureCode": "zu-za",
+            "name": "isiZulu"
+        },
+        {
+            "cultureCode": "sw-ke",
+            "name": "Kiswahili"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pa-in",
+            "name": "Punjabi"
+        },
+        {
+            "cultureCode": "tt-ru",
+            "name": "Tatar"
+        },
+        {
+            "cultureCode": "gd-gb",
+            "name": "Scottish Gaelic - United Kingdom"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "lb-lu",
+            "name": "Luxembourgish"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ky-kg",
+            "name": "Kyrgyz"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "kok-in",
+            "name": "Konkani"
+        },
+        {
+            "cultureCode": "ta-in",
+            "name": "Tamil"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "xh-za",
+            "name": "isiXhosa"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "ur-pk",
+            "name": "Urdu - Pakistan"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "bn-in",
+            "name": "Bengali (India)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ps-af",
+            "name": "Pashto"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "mt-mt",
+            "name": "Maltese"
+        },
+        {
+            "cultureCode": "sq-al",
+            "name": "Albanian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "rm-ch",
+            "name": "Romansh"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "si-lk",
+            "name": "Sinhala"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "ha-latn-ng",
+            "name": "Hausa"
+        },
+        {
+            "cultureCode": "ka-ge",
+            "name": "Georgian"
+        },
+        {
+            "cultureCode": "as-in",
+            "name": "Assamese"
+        },
+        {
+            "cultureCode": "mi-nz",
+            "name": "M\u0101ori"
+        },
+        {
+            "cultureCode": "nso-za",
+            "name": "Sesotho sa Leboa"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "uz-latn-uz",
+            "name": "Uzbek (Latin)"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "bn-bd",
+            "name": "Bangla (Bangledsh) - Bangladesh"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "yo-ng",
+            "name": "Yoruba"
+        },
+        {
+            "cultureCode": "tn-za",
+            "name": "Setswana (South Africa)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hy-am",
+            "name": "Armenian"
+        },
+        {
+            "cultureCode": "or-in",
+            "name": "Oriya"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "kn-in",
+            "name": "Kannada"
+        },
+        {
+            "cultureCode": "ml-in",
+            "name": "Malayalam"
+        },
+        {
+            "cultureCode": "wo-sn",
+            "name": "Wolof"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        },
+        {
+            "cultureCode": "mr-in",
+            "name": "Marathi"
+        },
+        {
+            "cultureCode": "sr-cyrl-ba",
+            "name": "Serbian (Cyrillic) - Bosnia and Herzegovina"
+        },
+        {
+            "cultureCode": "rw-rw",
+            "name": "Kinyarwanda"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "ig-ng",
+            "name": "Igbo"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Do you want to check spelling for a language that wasn't automatically installed by Office? You're in the right place. Microsoft Office Proofing Tools includes the full set of proofing tools available for Office in this language. Just install and restart Office, and proofing tools for your language are ready to go.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "proofingtools2016_en-us-x64.exe",
+        "proofingtools2016_en-us-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.3 MB",
+        "12.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download works with the following programs: <br/>\r\n<ul>\r\n<li>Microsoft Office Excel 2016</li>\r\n<li>Microsoft Office OneNote 2016</li>\r\n<li>Microsoft Office Outlook 2016</li>\r\n<li>Microsoft Office PowerPoint 2016</li>\r\n<li>Microsoft Office Word 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/> <br/>\r\n<b>Install the proofing tools:</b> <br/> <br/>\r\n<ol>\r\n<li>Download the file by clicking the Download button (above) and saving the file to your hard disk.</li>\r\n<li>Run the setup program.</li>\r\n<li>On the Read the Microsoft Software License Terms page, review the terms, select the \"Click here to accept the Microsoft Software License Terms\" check box, and then click Continue.</li>\r\n<li>The setup wizard runs and installs the proofing tools.</li>\r\n<li>After the installation has completed, restart your open Office applications.</li>\r\n</ol>\r\n<br/><br/>\r\n<b>Instructions for use:</b> Just use the proofing tools as you normally would - you should now see them for your newly installed language. For example, you can set your proofing language to the new language to use spell check (if available) - to learn how to do that, see <a href=\"https://support.office.com/article/1C2242C0-FE15-4BC3-99BC-535DE6F4F258\"> Switch between different languages by using the Language bar </a> \r\n\r\n<br/><br/>\r\n<b>To remove this download: </b><br/>\r\n<ol>\r\n<li>On the Start menu, point to Settings and then click Control Panel.</li>\r\n<li>Double-click Add/Remove Programs.</li>\r\n<li>In the list of currently installed programs, select Microsoft Office Proofing Tools 2016 - English and then click Uninstall, Remove, or Add/Remove. If a dialog box appears, follow the instructions to remove the program.</li>\r\n<li>Click Yes or OK to confirm that you want to remove the program. </li>\r\n\r\n</ol>\r\n<br/><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "change the proofing language in Office to check the spelling",
+            "url": "https://support.office.com/article/80592feb-4946-4737-bbd6-f4fd6a7c6741"
+        },
+        {
+            "title": "language Accessory Pack for Office 2016",
+            "url": "https://support.office.com/article/82ee1236-0f9a-45ee-9c72-05b026ee809f"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52668",
+    "downloadPreload": true
+}

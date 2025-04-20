@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Compact 3.5 Service Pack 2 for Windows Mobile",
+    "downloadDescription": "SQL Server Compact 3.5 SP2 for devices Windows Installer (MSI) file contains the CAB files and the DLLs for installing SQL Server Compact 3.5 SP2 on the Windows mobile devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SSCEDeviceRuntime-ENU.msi",
+            "url": "https://download.microsoft.com/download/e/e/4/ee46192b-000c-407a-9b39-b9dd298b1994/SSCEDeviceRuntime-ENU.msi",
+            "size": "23245312",
+            "version": "3.5.8080.0",
+            "datePublished": "7/15/2024 4:21:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "SQL Server Compact 3.5 SP2 for devices is the service pack release of SQL Server Compact 3.5 for devices. <B>The download does not ship with Visual Studio 2008 SP1 or Visual Studio 2010 and is only available as a Web download</B>. For more information, see the following:\n<UL><LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=187303\">SQL Server Compact 3.5 SP2 Books Online</a>.\r\n</LI></UL><br /> \r\n<B>Support Options:</B><br /><br />\r\nYour feedback is important to us. \r\n<UL><LI>If you have questions about SQL Server Compact, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=66523\">SQL Server Compact MSDN Forum</a>.</LI><br />\r\n<LI>Help improve SQL Server Compact by submitting and tracking bugs using <a href=\"http://go.microsoft.com/fwlink/?LinkId=104039\"> Microsoft Connect</a> website. Be sure to select <B>SQL Server Compact</B> as the version and provide detailed repro steps to help us identify the problem.</LI><br />\r\n<LI>Contact <a href=\"http://go.microsoft.com/fwlink/?LinkId=104699\">Microsoft Professional Support</a>. For deeper support needs, purchase a Professional Support package and have experts available to help out in case of any issues.</LI><br />\r\n<LI>Find out what support options are available if you are located outside the United States or Canada at <a href=\"http://go.microsoft.com/fwlink/?LinkId=104700\">Worldwide Support Options</a>.</LI><br />\r\n<LI>Search the <a href=\"http://go.microsoft.com/fwlink/?LinkId=104701\">Knowledge Base Articles</a>. Get the answers you need about SQL Server Compact from the Microsoft Knowledge Base. This is the same database of technical articles used by Microsoft Support Professionals.</LI><br />\r\n<LI>To participate in the future SQL Server Compact Technology Adoption Program (TAP) send us an <a href=\"mailto:ssc35tap@microsoft.com\">email</a>.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.8080.0",
+    "detailsSection_file_name": [
+        "SSCEDeviceRuntime-ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "22.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>For the <b>Windows desktop platform</b>, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=187300\">SQL Server Compact 3.5 SP2 for Windows desktop</a> download page.</LI></UL><BR/><b>Development Computer</b><UL><LI>48 MB of available hard disk space. An additional 48 MB of space must be also available for temporary setup files.</LI><BR /><LI>Microsoft Internet Explorer 6.0 or later.</LI><BR /><LI>Active Sync 4.0 or later.</LI><BR /><LI> Visual Studio 2008 SP1 for Visual Studio designer support for developing application for Windows mobile devices. Visual Studio 2010 is not supported for developing applications for Windows mobile devices.</LI><BR /><LI>Visual Studio 2005 SP1 supported for code based scenarios for Windows desktop and mobile devices.</LI><BR /><LI>.NET Compact Framework 2.0 or 3.5 for managed application development.</LI><BR /></UL> <BR /><b>Windows Mobile Devices</b><UL><LI>Any device that runs Microsoft Windows CE 4.2, Windows CE 5.0, Windows CE 6.0, Windows Mobile 2003 Software for Pocket PC, Windows Mobile 5.0, Windows Mobile 6.0, or Windows Mobile 6.5.</LI><BR /><LI>2\u20133 MB of available storage space on the Windows mobile device, depending on processor type, operating system version, and components installed.</LI><BR /></UL><BR />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 6",
+        "Windows CE",
+        "Windows Mobile 6.5 Professional",
+        "Windows Mobile 5.0",
+        "Windows Mobile 6.5 Standard",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows Mobile 6.1 "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "<UL><LI>SQL Server Compact 3.5 SP2 is freely redistributable under a redistribution license agreement. Application developers redistributing SQL Server Compact 3.5 SP2 can optionally register at the <a href=\"http://go.microsoft.com/fwlink/?LinkID=94589\">SQL Server Compact 3.5 SP2 redistribution site</a>. Registering will help the developers in getting information about SQL Server Compact critical security patches and hot fixes that can be further applied to the client installations.</LI><br />\n<LI>Installing SQL Server Compact 3.5 SP2 for devices Windows Installer (MSI) file upgrades the existing installation of SQL Server Compact 3.5 for devices or SQL Server Compact 3.5 SP1 for devices on the computer to SQL Server Compact 3.5 SP2 for devices.</LI><br />\n<LI>Other downloads for SQL Server Compact 3.5 SP2 are listed below:<UL><LI>\n <a href=\"http://go.microsoft.com/fwlink/?LinkId=187302\"> SQL Server Compact 3.5 SP2 Server Tools</a>.</LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=123283\">Synchronization Services for ADO.NET version 1.0 SP1 for Windows mobile devices</a>.</LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=123281\">Synchronization Services for ADO.NET version 1.0 SP1 Books Online</a>.</LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=189400\">Microsoft Sync Framework Developer Center</a>.\r\n</LI></UL></LI></UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Compact MSDN Forum",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=66523"
+        },
+        {
+            "title": "visual Studio 2008 Downloads",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=104043"
+        },
+        {
+            "title": "sql Server Compact Blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=67575"
+        },
+        {
+            "title": "sql Server Compact Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=103197"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8831",
+    "downloadPreload": true
+}

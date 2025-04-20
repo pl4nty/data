@@ -1,0 +1,217 @@
+{
+    "error": "",
+    "downloadTitle": "Installing the OneNote Class Notebook Add-in in Your Organization",
+    "downloadDescription": "How to install the OneNote Class Notebook Add-in in Your Organization",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ClassNotebook.msi",
+            "url": "https://download.microsoft.com/download/a/1/7/a171d312-cbad-4e00-819b-0f56956dac88/ClassNotebook.msi",
+            "size": "3813376",
+            "version": "3.5.0.0",
+            "datePublished": "7/15/2024 3:01:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GroupPolicyTemplates.zip",
+            "url": "https://download.microsoft.com/download/a/1/7/a171d312-cbad-4e00-819b-0f56956dac88/GroupPolicyTemplates.zip",
+            "size": "98807",
+            "version": "3.5.0.0",
+            "datePublished": "7/15/2024 3:01:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The information on this page is for IT professionals who wish to deploy the installation of the free Class Notebooks add-in for OneNote to PCs across their organization. It explains the system requirements and configuration options for the Class Notebooks add-in. \r\n<br />\r\n<br />\r\n\r\nFor IT based installations, the provided MSI file will perform per-machine installation so that the Class Notebooks add-in will be available to all users on the machine. \r\n<br />\r\n<br />\r\n\r\nThere are 2 prerequisites for installing the Class Notebooks add-in: OneNote 2013 or higher and Microsoft .NET 4.5. Before running setup via the MSI file, OneNote 2013 or higher and Microsoft .NET 4.5 must be installed first. \r\n<br />\r\n<br />\r\n\r\nThe latest versions of the add-in now have the ability to configure Learning Management Systems (LMS) through Windows Group Policy. The Group Policy templates are available to download here. For more information on how to configure your LMS please visit <a href=\"https://aka.ms/classnotebookaddingrouppolicy\" target=\"_blank\">https://aka.ms/classnotebookaddingrouppolicy</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.0.0",
+    "detailsSection_file_name": [
+        "ClassNotebook.msi",
+        "GroupPolicyTemplates.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.6 MB",
+        "96.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ol>\r\n<li>Microsoft OneNote 2013 or OneNote 2016.</li>\r\n<li>Windows 7 or higher</li>\r\n<li>Microsoft .NET 4.5</li>\r\n<li>Administrative privileges to install and update.</li>\r\n</ol>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<b>To install using an MSI file:</b>\r\n<br/>\r\n<ol>\r\n<li>Install Microsoft .NET 4.5 by using the following deployment information:\r\n<ul>\r\n<li>Deploying the .NET Framework: <a href=\"https://msdn.microsoft.com/en-us/library/ee390831(v=vs.110).aspx\" target=\"_blank\">https://msdn.microsoft.com/en-us/library/ee390831(v=vs.110).aspx</a> </li>\r\n<li>.NET Framework Deployment Guide for Administrators (uses System Center to create and deploy a package for the .NET installer EXE file): <a href=\"https://msdn.microsoft.com/en-us/library/ee390831(v=vs.110).aspx\" target=\"_blank\">https://msdn.microsoft.com/en-us/library/ee390831(v=vs.110).aspx</a> </li>\r\n</ul>\r\n</li>\r\n<li>Install the Class Notebook add-in by deploying the MSI file using Microsoft System Center, Group Policy Software Installation or another equivalent deployment mechanism.</li>\r\n</ol>\r\n<br/>\r\n<b>To install an Update of the Class Notebook add-in MSI:</b>\r\n<br/>\r\n<ol>\r\n<li>Use the following Windows Installer properties: <b>REINSTALL=ALL REINSTALLMODE=vomus REBOOT=ReallySuppress UILevel=2 </b></li>\r\n<li> Or, if using msiexec.exe: <b>msiexec.exe /fvomus ClassNotebook.msi /quiet /norestart </b></li> \r\n<br />\r\n</ol>\r\n<b>Updates</b>\r\n<br/>\r\n<br/>\r\nIn accordance with the organization\u2019s deployment schedule, IT can deploy updates as they become available on the Class Notebook add-in Download Center page. This will ensure that all users are running the latest version of the Class Notebook add-in and a consistent user experience is maintained across the organization.\r\n<br/>\r\n<br/>\r\nCurrently, client updates to the Class Notebook add-in are released approximately every few weeks. While installing the latest update is not mandatory, it is recommended in order for users to take advantage of any bug fixes as well as the new features that are being continuously added to the Class Notebook add-in.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51934",
+    "downloadPreload": true
+}

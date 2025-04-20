@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Authentication flow in Duet Enterprise Online for Microsoft SharePoint and SAP ",
+    "downloadDescription": "These two models show high-level views of how authentication works in a Duet Enterprise Online environment. One model shows the forward flow authentication, when a user pulls data from the SAP system. The other model shows the reverse flow authentication, when the SAP system pushes data such as reports, workflow tasks, or alerts to SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Duet-Enterprise-Online-authentication-forward-flow.vsd",
+            "url": "https://download.microsoft.com/download/7/7/3/77383856-989e-4d0f-8183-6b2cccacdded/Duet-Enterprise-Online-authentication-forward-flow.vsd",
+            "size": "271360",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Duet-Enterprise-Online-authentication-forward-flow.pdf",
+            "url": "https://download.microsoft.com/download/7/7/3/77383856-989e-4d0f-8183-6b2cccacdded/Duet-Enterprise-Online-authentication-forward-flow.pdf",
+            "size": "261490",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Duet-Enterprise-Online-authentication-reverse-flow.pdf",
+            "url": "https://download.microsoft.com/download/7/7/3/77383856-989e-4d0f-8183-6b2cccacdded/Duet-Enterprise-Online-authentication-reverse-flow.pdf",
+            "size": "214254",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Duet-Enterprise-Online-authentication-reverse-flow.vsd",
+            "url": "https://download.microsoft.com/download/7/7/3/77383856-989e-4d0f-8183-6b2cccacdded/Duet-Enterprise-Online-authentication-reverse-flow.vsd",
+            "size": "222208",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These two models show high-level views of how authentication works in a Duet Enterprise Online environment. One model shows the forward flow authentication, when a user pulls data from the SAP system. The other model shows the reverse flow authentication, when the SAP system pushes data such as reports, workflow tasks, or alerts to SharePoint.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Duet-Enterprise-Online-authentication-forward-flow.vsd",
+        "Duet-Enterprise-Online-authentication-forward-flow.pdf",
+        "Duet-Enterprise-Online-authentication-reverse-flow.pdf",
+        "Duet-Enterprise-Online-authentication-reverse-flow.vsd"
+    ],
+    "detailsSection_file_size": [
+        "265.0 KB",
+        "255.4 KB",
+        "209.2 KB",
+        "217.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI>\r\n<LI>Click <B>Save</B> or <B>Save this program</B> to disk. </LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36853",
+    "downloadPreload": true
+}

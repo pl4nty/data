@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Spelling-Correction Data",
+    "downloadDescription": "Strings including before-and-after spelling-correction pairs in English and Japanese, derived automatically by processing keystroke logs collected through Amazon\u2019s Mechanical Turk. Last published: April 24, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR Spelling Correction Data.zip",
+            "url": "https://download.microsoft.com/download/b/8/e/b8e6ef6b-7d0b-456c-a774-d9e454765efc/MSR Spelling Correction Data.zip",
+            "size": "203875",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Strings including before-and-after spelling-correction pairs in English and Japanese, derived automatically by processing keystroke logs collected through Amazon\u2019s Mechanical Turk.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSR Spelling Correction Data.zip"
+    ],
+    "detailsSection_file_size": [
+        "199.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52418",
+    "downloadPreload": true
+}

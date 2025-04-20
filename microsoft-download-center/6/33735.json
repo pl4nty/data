@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft India Security Briefings",
+    "downloadDescription": "Short Description Template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ramshanker Krishnan - ASAP.ppt",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3214b2-6bf8-4882-adb1-57c4c881a999/Ramshanker Krishnan - ASAP.ppt",
+            "size": "1332224",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Steve Riley - Security Policies.ppt",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3214b2-6bf8-4882-adb1-57c4c881a999/Steve Riley - Security Policies.ppt",
+            "size": "3979264",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Steve Riley - TCPIP for security administrators - interface network transport.ppt",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3214b2-6bf8-4882-adb1-57c4c881a999/Steve Riley - TCPIP for security administrators - interface network transport.ppt",
+            "size": "3101184",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Steve Riley - Security Myths.ppt",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3214b2-6bf8-4882-adb1-57c4c881a999/Steve Riley - Security Myths.ppt",
+            "size": "9710592",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Detlef Eckert - Microsoft Security Strategy.ppt",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3214b2-6bf8-4882-adb1-57c4c881a999/Detlef Eckert - Microsoft Security Strategy.ppt",
+            "size": "4226560",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dave Glover - Developer Security.ppt",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3214b2-6bf8-4882-adb1-57c4c881a999/Dave Glover - Developer Security.ppt",
+            "size": "4340224",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:31:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Presentations for the event",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Ramshanker Krishnan - ASAP.ppt",
+        "Steve Riley - Security Policies.ppt",
+        "Steve Riley - TCPIP for security administrators - interface network transport.ppt",
+        "Steve Riley - Security Myths.ppt",
+        "Detlef Eckert - Microsoft Security Strategy.ppt",
+        "Dave Glover - Developer Security.ppt"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "3.8 MB",
+        "3.0 MB",
+        "9.3 MB",
+        "4.0 MB",
+        "4.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 98, Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [
+        {
+            "title": "india",
+            "url": "http://www.microsoft.com/india/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "33735",
+    "downloadPreload": true
+}

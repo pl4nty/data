@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Continuous Flash",
+    "downloadDescription": "By acquiring two digital images of a scene, one with flash and one without flash, we let the user subsequently interpolate the images to obtain any continuous flash intensity, and even extrapolate beyond the original images. Last published: October 3, 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "interpimages_20031001.zip",
+            "url": "https://download.microsoft.com/download/1/9/6/196c6876-283d-4307-9237-07b58dbc4b77/interpimages_20031001.zip",
+            "size": "462512",
+            "version": "20031001",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "By acquiring two digital images of a scene, one with flash and one without flash, we let the user subsequently interpolate the images to obtain any continuous flash intensity, and even extrapolate beyond the original images.  This demo shows one such example.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20031001",
+    "detailsSection_file_name": [
+        "interpimages_20031001.zip"
+    ],
+    "detailsSection_file_size": [
+        "451.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52611",
+    "downloadPreload": true
+}

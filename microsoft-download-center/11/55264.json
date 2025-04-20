@@ -1,0 +1,134 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Analysis Server\u00ae Feature Pack",
+    "downloadDescription": "The Microsoft Analysis Server Feature Pack is a collection of stand-alone packages which help in building client applications for Microsoft Analysis Server. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_AMO.msi",
+            "url": "https://download.microsoft.com/download/4/8/2/482e5799-9b8e-4724-8a4c-f301bae788ee/1033/amd64/SQL_AS_AMO.msi",
+            "size": "7196672",
+            "version": "13.0.2164.1",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_ADOMD.msi",
+            "url": "https://download.microsoft.com/download/4/8/2/482e5799-9b8e-4724-8a4c-f301bae788ee/1033/amd64/SQL_AS_ADOMD.msi",
+            "size": "5353472",
+            "version": "13.0.2164.1",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_ADOMD.msi",
+            "url": "https://download.microsoft.com/download/4/8/2/482e5799-9b8e-4724-8a4c-f301bae788ee/1033/x86/SQL_AS_ADOMD.msi",
+            "size": "3284992",
+            "version": "13.0.2164.1",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_AMO.msi",
+            "url": "https://download.microsoft.com/download/4/8/2/482e5799-9b8e-4724-8a4c-f301bae788ee/1033/x86/SQL_AS_AMO.msi",
+            "size": "4509696",
+            "version": "13.0.2164.1",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_OLEDB.msi",
+            "url": "https://download.microsoft.com/download/4/8/2/482e5799-9b8e-4724-8a4c-f301bae788ee/1033/amd64/SQL_AS_OLEDB.msi",
+            "size": "66187264",
+            "version": "13.0.2164.1",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_AS_OLEDB.msi",
+            "url": "https://download.microsoft.com/download/4/8/2/482e5799-9b8e-4724-8a4c-f301bae788ee/1033/x86/SQL_AS_OLEDB.msi",
+            "size": "31617024",
+            "version": "13.0.2164.1",
+            "datePublished": "7/15/2024 3:07:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "The Microsoft Analysis Server Feature Pack is a collection of stand-alone packages which help in building client applications for Microsoft Analysis Server.\n<br/><br/>Please reference the Instructions section of this page to learn more about each component.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.2164.1",
+    "detailsSection_file_name": [
+        "SQL_AS_AMO.msi",
+        "SQL_AS_ADOMD.msi",
+        "SQL_AS_ADOMD.msi",
+        "SQL_AS_AMO.msi",
+        "SQL_AS_OLEDB.msi",
+        "SQL_AS_OLEDB.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.9 MB",
+        "5.1 MB",
+        "3.1 MB",
+        "4.3 MB",
+        "63.1 MB",
+        "30.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "      Windows 10 , Windows 7, Windows 7 Service Pack 1, Windows 8, Windows 8.1, Windows Server 2008, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2<br /><br />\r\n      <b>Note:</b>\r\n      System requirements vary among the install packages included in the Feature Pack.\r\n      <br />\r\n      <b>Note:</b> \r\n      When an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<a name=\"ADOMD.NET\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2016 ADOMD.NET </b> \r\n<ul>\r\nADOMD.NET is a Microsoft .NET Framework object model that enables software developers to \r\r\ncreate client-side applications that browse metadata and query data stored in Microsoft SQL \r\r\nServer 2016 Analysis Services. ADOMD.NET is a Microsoft ADO.NET provider with enhancements for \r\r\nonline analytical processing (OLAP) and data mining.<br /><br />\r\n<b>Note</b>:The English ADOMD.NET setup package installs support for all SQL Server 2016 \r\r\nlanguages.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQL_AS_ADOMD.msi)<br />\r\n</ul>\r\n</ul>\r\n<a name=\"ASOLEDB\"></a><br /><br />\r\n<b>Microsoft\u00ae Analysis Services OLE DB Provider for Microsoft SQL Server\u00ae 2016</b> \r\n<ul>\r\nThe Analysis Services OLE DB Provider is a COM component that software developers can use to \r\r\ncreate client-side applications that browse metadata and query data stored in Microsoft SQL \r\r\nServer 2016 Analysis Services. This provider implements both the OLE DB specification and the \r\r\nspecification\u2019s extensions for online analytical processing (OLAP) and data mining.<br /><br \r\r\n/>\r\n<b>Note:</b> Microsoft Analysis Services OLE DB Provider requires <b>Microsoft Core XML \r\r\nServices (MSXML) 6.0</b><br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQL_AS_OLEDB.msi)<br />\r\n </ul>\r\n</ul>\r\n<a name=\"AMO\"></a><br /><br />\r\n<b>Microsoft\u00ae SQL Server\u00ae 2016 Analysis Management Objects </b> \r\n<ul>\r\nAnalysis Management Objects (AMO) is a .NET Framework object model that enables software \r\r\ndevelopers to create client-side applications to manage and administer Analysis Services \r\r\nobjects.<br />\r\n<ul>\r\n<b>Filename: X86 and x64 Package</b> (SQL_AS_AMO.msi)<br />\r\n</ul>\r\n</ul>\r\n",
+    "additionalInformationSection": "- If you have questions about Microsoft Analysis Server, visit  <a href=\"http://go.microsoft.com/fwlink/?LinkId=828718\"> the Microsoft Analysis Server forums on MSDN </a>.\r\n<br/><br/>\r\n- Help improve SQL Server by <a href=\" http://go.microsoft.com/fwlink/?LinkID=168586\"> submitting bugs to Microsoft\u00ae Connect </a>.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55264",
+    "downloadPreload": true
+}

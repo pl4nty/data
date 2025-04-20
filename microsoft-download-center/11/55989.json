@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Migrate Collector limited preview v1.0.8.25",
+    "downloadDescription": "This virtual appliance can be used to collect on-premises virtual machine data and assess the machines for suitability for Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure-Migrate-Collector-v1.0.8.25.ova",
+            "url": "https://download.microsoft.com/download/b/4/8/b48b4bcf-c3bd-4f3f-8f5e-61510b96f59a/Azure-Migrate-Collector-v1.0.8.25.ova",
+            "size": "9954531328",
+            "version": "1.0.8.25",
+            "datePublished": "7/15/2024 4:45:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This virtual appliance can be used to collect on-premises virtual machine data and assess the machines for suitability for Azure. You can find the cost of running the virtual machines in Azure and also find which virtual machines are ready to migrate. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.8.25",
+    "detailsSection_file_name": [
+        "Azure-Migrate-Collector-v1.0.8.25.ova"
+    ],
+    "detailsSection_file_size": [
+        "9.3 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "vCenter environment with ESXi host.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the OVA and deploy it.\r\nLog into the virtual machine and launch the collector UI",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55989",
+    "downloadPreload": true
+}

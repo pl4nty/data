@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Tomas Petricek on PHP in ASP.NET and Silverlight!",
+    "downloadDescription": "Carl and Richard talk to Tomas Petricek about Phalanger, a managed code PHP language compiler, as well as his thoughts on F# Web Tools, a toolkit which lets you write both client-side and server-side code at the same time, and the client gets converted to JavaScript.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071211TPetricek.zip",
+            "url": "https://download.microsoft.com/download/f/9/8/f98f2cbe-4f5e-4874-bda9-63e323d225fa/20071211TPetricek.zip",
+            "size": "38746390",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tomas Petricek is C# MVP and a student of computer science at Charles University, which is located in Prague, the capital city of Czech Republic. Tomas is a big fan of functional programming, and lately the F# language. He spent 3 months as an intern in Microsoft Research in Cambridge working with the F# team on a project that simplifies development of client/server web applications in F# called F# WebTools. He is also contributor and now also administrator of the open-source PHP compiler for .NET called Phalanger, which makes it possible to use .NET libraries from PHP and most lately also supports the Silverlight platform.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071211TPetricek.zip"
+    ],
+    "detailsSection_file_size": [
+        "37.0 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12130",
+    "downloadPreload": true
+}

@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mixed Reality driver version 10.0.18362.1024 (Windows 10 Version 1809 or newer)",
+    "downloadDescription": "The Windows Mixed Reality driver enables improved features and performance on Windows Mixed Reality headsets. This driver is applicable to PCs running Windows 10 Version 1809 or newer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HololensSensors_10.0.18362.1024.zip",
+            "url": "https://download.microsoft.com/download/5/4/c/54c8732d-474f-4260-9864-8693f0a79419/HololensSensors_10.0.18362.1024.zip",
+            "size": "5910073",
+            "version": "10.0.18362.1024",
+            "datePublished": "7/15/2024 3:03:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mixed reality will unleash the creativity of every person and every organization on the planet. Our journey has been filled with key moments in time that have shown us what is possible as we enter this next era of computing, the era of mixed reality. For more information about this driver, please visit <a href=\"https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software\">https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software#mixed-reality-headset-and-motion-controller-driver-release-history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.18362.1024",
+    "detailsSection_file_name": [
+        "HololensSensors_10.0.18362.1024.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A PC with Windows 10 Version 1809, Windows 10 Version 1903, or newer compatible with Windows Mixed Reality, and a Windows Mixed Reality headset",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download the driver package.<br />\r\n2. Once the driver package has been downloaded, extract its contents to a location on your PC.<br />\r\n3. Connect your HMD to your PC. Close the Mixed Reality Portal that automatically opens.<br />\r\n4. Open Device Manager. You can do this by clicking on Start, and typing \"Device Manager\" into the Search box.<br />\r\n5. In Device manager, expand the \"Mixed Reality Devices\" section.<br />\r\n6. Right click on your HMD, and click \"Update driver\"<br />\r\n7. In the \"Update Drivers\" new dialog box that appears, click \"Browse my computer for driver software\"<br />\r\n8. Click \"Let me pick from a list of available drivers on my computer\"<br />\r\n9. Click \"Have Disk...\"<br />\r\n10. In the new \"Install From Disk\" dialog box that appears, click \"Browse...\"<br />\r\n11. In the new \"Locate File\" dialog box that appears, navigate to the location where your driver package was extracted to, and double click on HololensSensors (HololensSensors.inf).<br />\r\n12. The \"Locate File\" dialog box should disappear and take you back to the \"Install From Disk\" dialog box. Click \"OK\".<br />\r\n13. The \"Install From Disk\" dialog box should disappear and take you to the \"Update Drivers\" dialog box. Click Next.<br />\r\n14. You should now see \"Installing drivers...\", and in a few moments, \"Windows has successfully updated your drivers\". Click \"Close\".",
+    "relatedResourcesSection": [
+        {
+            "title": "enthusiast's Guide to Windows Mixed Reality",
+            "url": "https://developer.microsoft.com/en-us/windows/mixed-reality/category/Enthusiast's_Guide"
+        },
+        {
+            "title": "mixed Reality software overview and release history",
+            "url": "https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software"
+        },
+        {
+            "title": "windows Mixed Reality",
+            "url": "https://www.microsoft.com/en-us/windows/windows-mixed-reality"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58225",
+    "downloadPreload": true
+}

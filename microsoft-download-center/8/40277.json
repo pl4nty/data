@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows Runtime v1.8",
+    "downloadDescription": "The Kinect for Windows Runtime provides the drivers and runtime environment required by Kinect for Windows applications using Kinect sensor technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "KinectRuntime-v1.8-Setup.exe",
+            "url": "https://download.microsoft.com/download/e/c/5/ec50686b-82f4-4dbf-a922-980183b214e6/KinectRuntime-v1.8-Setup.exe",
+            "size": "116273144",
+            "version": "1.8.0.595",
+            "datePublished": "7/15/2024 3:16:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Kinect for Windows Runtime v1.8 is 100% compatible with Kinect for Windows v1.0 , v1.5, v1.6, v1.7, and v1.8 applications. \r\n<br/><br/>\r\n\r\n<b>Note:</b> The Kinect for Windows Runtime only includes the Kinect for Windows driver and runtime environment. To start developing Kinect for Windows applications, visit us <a href=\"http://www.microsoft.com/en-us/kinectforwindows/develop/\" target=\"_blank\">here</a>. The Kinect for Windows Runtime is provided for users that are missing the necessary drivers and runtime environment to run Kinect for Windows applications.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.0.595",
+    "detailsSection_file_name": [
+        "KinectRuntime-v1.8-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "110.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\n<ul>\r\n<li><b>Hardware Requirements</b></li>\r\n<ul>\r\n<li>32-bit (x86) or 64-bit (x64) processor</li>\r\n<li>Dual-core 2.66-GHz or faster processor </li>\r\n<li>Dedicated USB 2.0 bus </li>\r\n<li>2 GB RAM</li>\r\n<li>A Microsoft Kinect for Windows sensor</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=17851\" target=\"_blank\">.NET Framework 4.0</a> or <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30653\" target=\"_blank\">.NET Framework 4.5</a></li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 7",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install the Kinect for Windows Runtime:<br/>\r\n<ol>\r\n<li>Make sure the Kinect sensor is not plugged into any of the USB ports on the computer.</li>\r\n<li>Remove any other drivers for the Kinect sensor.</li>\r\n<li>From the download location, double-click on <b>KinectRuntime-v1.8-Setup.exe</b>. This single installer works for both 32-bit and 64-bit Windows.</li>\r\n<li>Once the Kinect for Windows Runtime has completed installing successfully, ensure the Kinect sensor is plugged into an external power source and then plug the Kinect sensor into the PC's USB port. The drivers will load automatically. </li>\r\n<li>The Kinect sensor should now be working correctly. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40277",
+    "downloadPreload": true
+}

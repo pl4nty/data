@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Hybrid IaaS Technical Guides",
+    "downloadDescription": "This zipped folder contains three technical guides fro Hybrid IaaS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hybrid IaaS - Technical guides.zip",
+            "url": "https://download.microsoft.com/download/a/e/2/ae27c729-8b9c-440a-8646-6676e20216c3/Hybrid IaaS - Technical guides.zip",
+            "size": "11500227",
+            "version": "January 2014",
+            "datePublished": "12/15/2023 4:08:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains three technical guides\r\n\r\n1. The CSP Foundation technical guide providing a step-by-step overview of all CSP foundational elements around APIs, partner center, networking and identity\r\n\r\n2. The Azure reference architecture (AZRA)\r\n\r\n\r\n3. A step by step technical guide for creating a VM in Azure (with screenshots and sample scripts)\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Hybrid IaaS - Technical guides.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.0 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50757",
+    "downloadPreload": true
+}

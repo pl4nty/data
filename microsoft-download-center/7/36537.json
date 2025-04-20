@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "PCI Implementation Guide for Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "This guide describes how to implement Microsoft Dynamics AX 2012 R2 in compliance with the Payment Card Industry (PCI) Data Security Standard version 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PCI Implementation Guide AX 2012 R2.pdf",
+            "url": "https://download.microsoft.com/download/8/3/f/83fda2da-3541-41e3-9c4c-f00b22eaaee2/PCI Implementation Guide AX 2012 R2.pdf",
+            "size": "720976",
+            "version": "2012",
+            "datePublished": "6/13/2024 12:14:41 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The requirements in this guide must be followed to implement Microsoft Dynamics AX 2012 R2 and Payment Services for Microsoft Dynamics ERP (the integrated payment solution from Microsoft) in a manner that is compliant with the Payment Card Industry (PCI) Data Security Standard version 2.0.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "PCI Implementation Guide AX 2012 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "704.1 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36537",
+    "downloadPreload": true
+}

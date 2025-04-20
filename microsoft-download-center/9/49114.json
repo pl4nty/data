@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Yu Gothic Yu Mincho Font Pack",
+    "downloadDescription": "Yu Gothic Yu Mincho Font Pack provides Yu Gothic and Yu Mincho fonts, included in Microsoft Office 2016, for Microsoft Office 2010/2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "eayufontpack.exe",
+            "url": "https://download.microsoft.com/download/e/3/2/e324a90f-5173-49f9-a9b4-fe2aff558748/eayufontpack.exe",
+            "size": "55828448",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:05:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Yu Gothic Yu Mincho Font Pack provides Yu Gothic and Yu Mincho fonts, included in Microsoft Office 2016, for Microsoft Office 2010/2013.\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "eayufontpack.exe"
+    ],
+    "detailsSection_file_size": [
+        "53.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Office 2013/2010, Windows 8/7",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "1. Click [Download] in this page and follow the instructions.\r\n2. Double-click on the downloaded setup file to start the setup program.\r\n3. Follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49114",
+    "downloadPreload": true
+}

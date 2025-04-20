@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Space Planning with Asset Data sample diagram for Visio 2010",
+    "downloadDescription": "Help simplify asset management and space planning by incorporating asset information into a space plan using this Visio 2010 sample diagram.   ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Space Data.xlsx",
+            "url": "https://download.microsoft.com/download/4/5/f/45fd30ea-08f8-4d91-8acf-45c0e62d5919/Space Data.xlsx",
+            "size": "18079",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Space Plan with Asset Data.vst",
+            "url": "https://download.microsoft.com/download/4/5/f/45fd30ea-08f8-4d91-8acf-45c0e62d5919/Space Plan with Asset Data.vst",
+            "size": "1433600",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 sample diagram to simplify asset management and space planning. This sample shows how you can create a space plan for your office and incorporate detailed asset information for the contents of each room, such as manufacturer, network name, IP address, hard drive size, installation and lease dates, and so on. This sample diagram could also be extended by adding more detail, such as human resources (HR) data about the occupants of each office from your HR database.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Space Data.xlsx",
+        "Space Plan with Asset Data.vst"
+    ],
+    "detailsSection_file_size": [
+        "17.7 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the sample diagram to your computer.\r\n\r\nTo customize the data linked to the template, download Space Data.xlsx and populate it with your own space plan data.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26515",
+    "downloadPreload": true
+}

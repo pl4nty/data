@@ -1,0 +1,156 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 3.5 Service pack 1 (Full Package)",
+    "downloadDescription": "Microsoft .NET Framework 3.5 service pack 1 is a cumulative update that contains many new features building incrementally upon .NET Framework 2.0, 3.0, 3.5, and includes .NET Framework 2.0 service pack 2 and .NET Framework 3.0 service pack 2 cumulative updates.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotnetfx35.exe",
+            "url": "https://download.microsoft.com/download/2/0/e/20e90413-712f-438c-988e-fdaa79a8ac3d/dotnetfx35.exe",
+            "size": "242743296",
+            "version": "SP1",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": ".NET Framework version 3.5 Service Pack 1 provides the following new features and improvements: <br />\n<UL><br />\n<LI>ASP.NET Dynamic Data, which provides a rich scaffolding framework that allows rapid data driven development without writing code, and a new addition to ASP.NET AJAX that provides support for managing browser history (back button support). For more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=116273\">What\u2019s New in ASP.NET and Web Development</a>.</LI><br />\n<LI>Core improvements to the common language runtime that include better layout of .NET Framework native images, opting out of strong-name verification for fully trusted assemblies, improved application startup performance, better generated code that improves end-to-end application execution time, and opting managed code to run in ASLR (Address Space Layout Randomization) mode if supported by the operating system. Additionally, managed applications that are opened from network shares have the same behavior as native applications by running with full trust.</LI><br />\n<LI>Performance improvements to Windows Presentation Foundation, including a faster startup time and improved performance for Bitmap effects. Additional functionality for WPF includes better support for line of business applications, native splash screen support, DirectX pixel shader support, and the new WebBrowser control.</LI><br />\n<LI>ClickOnce application publishers can decide to opt out of signing and hashing as appropriate for their scenarios, developers can programmatically install ClickOnce applications that display a customized branding, and ClickOnce error dialog boxes support links to application-specific support sites on the Web. </LI><br />\n<LI>The Entity Framework is an evolution of the existing suite of ADO.NET data access technologies. The Entity Framework allows developers to program against relational databases in terms of application-specific domain models instead of the underlying database models. For more information see <a href=\"http://go.microsoft.com/fwlink/?LinkId=116274\">Getting Started with the Entity Framework</a>. The Entity Framework introduces some additional features, including support for new SQL Server 2008 types, default graph serialization of Entities, and the Entity Data Source. With this release, the Entity Framework supports the new date and file stream capabilities in SQL Server 2008. The graph serialization work helps developers who want to build Windows Communication Foundation (WCF) services that model full graphs as data contracts. The Entity Data Source provides a traditional data source experience for ASP.NET application builders who want to work with the Entity Framework. </LI><br />\n<LI>LINQ to SQL includes new support for the new date and file stream capabilities in SQL Server 2008.</LI><br />\n<LI>The ADO.NET Data Services Framework consists of a combination of patterns and libraries, which enable data to be exposed as a flexible REST (Representational State Transfer)-based data service that can be consumed by Web clients within a corporate network or across the Internet. The ADO.NET Data Services Framework makes data service creation over any data source. A conceptual view model of the underlying storage schema can easily be exposed through rich integration with the ADO.NET Entity Framework. Services created using the ADO.NET Data Services Framework, as well as compatible Windows Live (dev.live.com) services, can be easily accessed from any platform. For client applications running on Microsoft platforms, a set of client libraries are provided to make interaction with data services simple. For example, .NET Framework-based clients can use LINQ to query data services and a simple .NET Framework object layer to update data in the service.</LI><br />\n<LI>Windows Communication Foundation now makes the DataContract Serializer easier to use by providing improved interoperability support, enhancing the debugging experience in partial trust scenarios, and extending syndication protocol support for wider usage in Web 2.0 applications.</LI><br />\n<LI>The .NET Framework Data Provider for SQL Server (SqlClient) adds new support for file stream and sparse column capabilities in SQL Server 2008.</LI><br />\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP1",
+    "detailsSection_file_name": [
+        "dotnetfx35.exe"
+    ],
+    "detailsSection_file_size": [
+        "231.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Processor: </b>400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)<br/></LI>\n<LI><b>RAM: </b>96 MB (Minimum); 256 MB (Recommended)<br/></LI>\n<LI> <b>Hard Disk: </b>Up to 500 MB of available space may be required<br/></LI>\n<LI> <b>CD or DVD Drive: </b> Not required<br/></LI>\n<LI> <b>Display:</b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)<br/></LI>\n\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI><b>Important</b>: Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. </LI><br />\n<br />\n<LI>Click the <b>Download</b> button on this page to start the download </LI><br />\n<br />\n<LI>To save the download to your computer for installation at a later time, click <b>Save</b>.</LI><br />\n<br />\n<LI>To cancel the installation, click <b>Cancel</b>. </LI><br />\n</OL>\n----------------------------------------------<br/>\n<b>Bootstrapper</b><br/>\nTo download the bootstrapper, rather than the full package, click on the link below:<br/>\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=AB99342F-5D1A-413D-8319-81DA479AB0D7&displaylang=en \">.NET Framework 3.5 Service Pack 1 (Bootstrapper)</a>\r\n<br />\r\n<br />\r\n<b>IMPORTANT:</b> After installing the .NET Framework 3.5 SP1 update you should immediately install the update <a href=\"http://go.microsoft.com/fwlink/?LinkId=136730\">KB959209</a> to address a set of known application compatibility issues.\r\n",
+    "additionalInformationSection": "To provide feedback on the Service Pack, please visit <a href=\"https://connect.microsoft.com/VisualStudio\">https://connect.microsoft.com/VisualStudio</a><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework 3.0 SP1 KB Article",
+            "url": "http://support.microsoft.com/kb/945826"
+        },
+        {
+            "title": ".NET Framework 3.5 SP1 Readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=122089"
+        },
+        {
+            "title": ".NET Framework 2.0 SP1 KB Article",
+            "url": "http://support.microsoft.com/kb/945757"
+        },
+        {
+            "title": ".NET Framework 3.5 SP1 KB Article",
+            "url": "http://support.microsoft.com/kb/951847"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "25150",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Virtual WiFi",
+    "downloadDescription": "Virtual WiFi helps a user connect to multiple IEEE 802.11 networks with one WiFi card. Last published: August 23, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSRMesh-VirtualWIFI.MSI",
+            "url": "https://download.microsoft.com/download/0/2/1/0219db4f-7550-4233-b742-ada241bca06c/MSRMesh-VirtualWIFI.MSI",
+            "size": "12766208",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Virtual WiFi helps a user connect to multiple IEEE 802.11 networks with one WiFi card. VIt works by exposing multiple virtual adapters, one for each wireless network to which connectivity is desired. Virtual WiFi uses a network hopping scheme to switch the wireless card across the desired wireless networks. Switching between networks is transparent to the applications, such that the user feels she is connected to multiple wireless networks simultaneously. Virtual WiFi is implemented as an NDIS intermediate driver, and a user-level service in Windows XP. Virtual WiFi interacts with the card device driver at the lower end, and network protocols at the upper end. The buffering protocol is implemented in the kernel and the switching logic is implemented as a user-level service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSRMesh-VirtualWIFI.MSI"
+    ],
+    "detailsSection_file_size": [
+        "12.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52425",
+    "downloadPreload": true
+}

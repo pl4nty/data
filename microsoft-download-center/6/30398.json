@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Solution: Surface external data from AdventureWorks in SharePoint 2013 Preview and Office 2013 Preview (white paper)",
+    "downloadDescription": "Learn how to use a customer view in an external data source, configure SharePoint 2013 Preview services and accounts, choose and implement an authentication mode, define an external content type, create and authorize access to an external list, and connect an external list to Outlook.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Walkthrough-BCS-AdventureWorks-SharePoint-2013-Preview.pdf",
+            "url": "https://download.microsoft.com/download/c/1/3/c13b4c6e-1aa6-4db6-9381-2921bf5faa43/Walkthrough-BCS-AdventureWorks-SharePoint-2013-Preview.pdf",
+            "size": "720359",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Walkthrough-BCS-AdventureWorks-SharePoint-2013-Preview.docx",
+            "url": "https://download.microsoft.com/download/c/1/3/c13b4c6e-1aa6-4db6-9381-2921bf5faa43/Walkthrough-BCS-AdventureWorks-SharePoint-2013-Preview.docx",
+            "size": "175589",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the exercises in this white paper to learn how to use a customer view in an external data source, configure SharePoint 2013 Preview services and accounts, choose and implement an authentication mode, define an external content type, create and authorize access to an external list, and connect an external list to Outlook.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Walkthrough-BCS-AdventureWorks-SharePoint-2013-Preview.pdf",
+        "Walkthrough-BCS-AdventureWorks-SharePoint-2013-Preview.docx"
+    ],
+    "detailsSection_file_size": [
+        "703.5 KB",
+        "171.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2007 or 2010, Adobe Portable Document File Reader ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30398",
+    "downloadPreload": true
+}

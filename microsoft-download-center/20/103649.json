@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Performance Best Practices in Mainframe Migration to .NET & SQL Server",
+    "downloadDescription": "Performance Best Practices in Mainframe Migration to .NET & SQL Server",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Performance Best Practices in Mainframe Migration to .NET and SQL Server.pdf",
+            "url": "https://download.microsoft.com/download/c/7/5/c752e818-a83c-4e8f-91ec-c03bbe4de86a/Performance Best Practices in Mainframe Migration to .NET and SQL Server.pdf",
+            "size": "255613",
+            "version": "1.0",
+            "datePublished": "6/15/2024 5:00:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes some general performance recommendations, several query batching \r\nstrategies with their pros and cons, as well as a list of helpful performance turning resources.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Performance Best Practices in Mainframe Migration to .NET and SQL Server.pdf"
+    ],
+    "detailsSection_file_size": [
+        "249.6 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>\r\n\r\nThe file is a zipped folder that contains the whitepaper.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To start the installation immediately, choose <b>Open</b> </li> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103649",
+    "downloadPreload": true
+}

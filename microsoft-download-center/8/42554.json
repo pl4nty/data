@@ -1,0 +1,119 @@
+{
+    "error": "",
+    "downloadTitle": "Windows PowerShell 4.0 and Other Quick Reference Guides",
+    "downloadDescription": "Quickly learn tips, shortcuts, and common operations in Windows Powershell 4.0, Windows PowerShell Desired State Configuration, Windows PowerShell Workflow, Windows PowerShell ISE, Windows PowerShell Web Access, Server Manager for Windows Server 2012 R2, WinRM, WMI, and WS-Man.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PowerShell_ISE_v4.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/PowerShell_ISE_v4.pdf",
+            "size": "263545",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick_Reference_DSC_WS12R2.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/Quick_Reference_DSC_WS12R2.pdf",
+            "size": "304886",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick_Reference_WMI_ITPro_WS12R2.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/Quick_Reference_WMI_ITPro_WS12R2.pdf",
+            "size": "290162",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerShell_LangRef_v4.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/PowerShell_LangRef_v4.pdf",
+            "size": "296428",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick_Reference_WMI_Devs_WS12R2.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/Quick_Reference_WMI_Devs_WS12R2.pdf",
+            "size": "303136",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerShell_Examples_v4.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/PowerShell_Examples_v4.pdf",
+            "size": "270508",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Quick_Reference_SM_WS12R2.pdf",
+            "url": "https://download.microsoft.com/download/4/3/1/43113f44-548b-4dea-b471-0c2c8578fbf8/Quick_Reference_SM_WS12R2.pdf",
+            "size": "461095",
+            "version": "1",
+            "datePublished": "7/15/2024 3:38:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The PDF files in this download are short-form Quick Reference (also called \"cheat sheet\") guides for IT professionals, developers, and scripting enthusiasts who want to learn tips, shortcuts, common operations, limitations, and proper syntax for using Windows PowerShell 4.0, Windows PowerShell Desired State Configuration (DSC), Windows PowerShell ISE, Windows PowerShell Web Access, Server Manager, WMI, and WS-Man in Windows Server 2012 R2 and Windows 8.1.\r\n<br /><br />\r\nThe following files are contained in this download.\r\n<ul><li><b>PowerShell_LangRef_v4.pdf</b> - This four-page reference describes operators, arrays, useful commands, methods, and other tips for using Windows PowerShell 4.0. Also included is a Windows PowerShell reading and tutorial resource list. This quick reference is provided by <a href=\"http://www.powershellmagazine.com\">PowerShell Magazine</a>.</li>\r\n<li><b>PowerShell_ISE_v4.pdf</b> - This two-page reference describes keyboard shortcuts and hotkeys that you can use to navigate Windows PowerShell Integrated Scripting Environment (ISE) more quickly, and describes the updated ISE object model. Also included are tips for configuring $ps.ISE options, profiles, and properties. This quick reference is provided by <a href=\"http://www.powershellmagazine.com\">PowerShell Magazine</a>.</li>\r\n<li><b>PowerShell_Examples_v4.pdf</b> - This two-page reference describes how to perform popular IT management and scripting tasks by using Windows PowerShell 4.0, including how to fetch data by using Management OData IIS Services, how to schedule jobs, how to add a #Requires statement to a script, and how to save Help for a module that is not necessarily installed on the local computer. This quick reference is provided by <a href=\"http://www.powershellmagazine.com\">PowerShell Magazine</a>.</li>\r\n<li><b>PowerShell_DSC_v4.pdf</b> - Windows PowerShell Desired State Configuration (DSC) is new for Windows PowerShell 4.0. This two-page reference provides an overview of how DSC works, and describes the DSC cmdlets, available resources, Local Configuration Manager, and advanced resource properties.</li>\r\n<li><b>Quick_Reference_SM_WS12.pdf</b> - This two-page reference describes common tasks that you can perform in the Server Manager console in Windows Server 2012 R2. Quickly learn how to manage remote servers that are running older versions of Windows Server by using Server Manager; how to run Server Manager deployment cmdlets for Windows PowerShell; how to save and export Server Manager settings, such as the servers you have added to the server pool, and custom server groups that you have created; where to find Server Manager log files; how to run popular WinRM commands such as creating a new listener; how to install roles and features on offline VHDs; and where to find documentation to help you manage multiple, remote servers by using Server Manager and Windows PowerShell.</li>\r\n<li><b>Quick_Reference_WMI_ITPro_WS12R2.pdf</b> - This two-page reference describes features that were introduced to Windows Management Instrumentation (WMI) starting in Windows PowerShell 3.0. Included are examples of how to find namespaces and classes in WMI, and detailed information about CimSession, CimInstance, CIM operations, and invoking a CIM method. The quick reference describes how to get a list of new CIM cmdlets, and defines associations, WQL, WS-Man, WinRM, and CIM indications.</li>\r\n<li><b>Quick_Reference_WMI_Devs_WS12R2.pdf</b> - This two-page reference describes features that were introduced to Windows Management Instrumentation (WMI) starting in Windows PowerShell 3.0 for developers. Included are examples of APIs and tools in WMI, and information about Convert-MofToProvider.</li></ul>\r\n<br /><br />\r\nNo warranties or guarantees are provided with the documentation available for download on this site. Use of this documentation and any recommendations contained herein is entirely at your own risk.\r\n<br /><br />\r\nContent in this download package that is produced by <a href=\"http://www.powershellmagazine.com\">PowerShell Magazine</a> is solely the property of PowerShell Magazine, is under copyright, and should not be reproduced or excerpted without the permission of the PowerShell Magazine editorial board. Statements or opinions expressed in content provided by PowerShell Magazine do not represent the views of Microsoft Corporation. \r\n<br /><br />\r\nInformation in these documents, including URL and other Internet Web site references, is subject to change without notice. Unless otherwise noted, the companies, organizations, products, domain names, email addresses, logos, people, places, and events depicted in examples herein are fictitious. No association with any real company, organization, product, domain name, email address, logo, person, place, or event is intended or should be inferred. Complying with all applicable copyright laws is the responsibility of the user. Without limiting the rights under copyright, no part of this content may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Microsoft Corporation.\r\n<br /><br />\r\nMicrosoft may have patents, patent applications, trademarks, copyrights, or other intellectual property rights covering subject matter in this content. Except as expressly provided in any written license agreement from Microsoft, the furnishing of this content does not give you any license to these patents, trademarks, copyrights, or other intellectual property.\r\n<br /><br />\r\n&#0169; 2014 Microsoft Corporation. All rights reserved.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PowerShell_ISE_v4.pdf",
+        "Quick_Reference_DSC_WS12R2.pdf",
+        "Quick_Reference_WMI_ITPro_WS12R2.pdf",
+        "PowerShell_LangRef_v4.pdf",
+        "Quick_Reference_WMI_Devs_WS12R2.pdf",
+        "PowerShell_Examples_v4.pdf",
+        "Quick_Reference_SM_WS12R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "257.4 KB",
+        "297.7 KB",
+        "283.4 KB",
+        "289.5 KB",
+        "296.0 KB",
+        "264.2 KB",
+        "450.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The PDFs are readable in Adobe&#0174; Reader&#0174; 10.0 or newer. To download and install Adobe Reader, go to <a href=\"http://get.adobe.com/reader\">http://get.adobe.com/reader</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Phone 7",
+        "Windows Phone 8",
+        "Windows RT",
+        "Windows RT 8.1",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to download the PDF of the quick reference that you want. When you are prompted, click <b>Save</b> or <b>Save As</b>, and save the PDF file to a convenient location.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42554",
+    "downloadPreload": true
+}

@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft PowerPivot for Excel 2010 and PowerPivot in Excel 2013 Samples",
+    "downloadDescription": "PowerPivot empowers users of all levels to access and mashup data from virtually any source. Users can create their own compelling reports and analytical applications, easily share insights, and collaborate with colleagues through Microsoft Excel and SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PowerPivotExamplesExcel2013.zip",
+            "url": "https://download.microsoft.com/download/0/2/c/02c5d169-11fe-4d7a-9ade-ebdd469e249b/PowerPivotExamplesExcel2013.zip",
+            "size": "93227452",
+            "version": "version 1.0",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PowerPivotExamplesExcel2010.zip",
+            "url": "https://download.microsoft.com/download/0/2/c/02c5d169-11fe-4d7a-9ade-ebdd469e249b/PowerPivotExamplesExcel2010.zip",
+            "size": "93240988",
+            "version": "version 1.0",
+            "datePublished": "7/15/2024 3:08:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "There are two versions of the download file. <br />\r\n<br />\r\nPowerPivotExamplesExcel2010.zip \u2013 Includes samples for Microsoft SQL Server 2012 SP1 PowerPivot for Excel 2010. This version requires you have SQL Server 2012 SP1 PowerPivot for Excel 2010 (<a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=29074\">http://www.microsoft.com/en-us/download/details.aspx?id=29074</a>) Add-in installed. <br />\r\n<br />\r\nPowerPivotExamplesExcel2013.zip \u2013 Includes samples for Microsoft PowerPivot in Excel 2013. <br />\r\n<br />\r\nIf you open a sample for PowerPivot for Excel 2010 in PowerPivot in Excel 2013, you will get a notification stating you must upgrade the data model in the workbook. You cannot open a sample for PowerPivot in Excel 2013 data model in PowerPivot for Excel 2010.<br />\r\n<br />\r\nEach sample file contains three Business Intelligence samples:<br />\r\n<br />\r\n<ul>\r\n<li>PowerPivot Healthcare Audit.xlsx</li>\r\n<li>PowerPivot Tutorial Sample.xlsx </li>\r\n<li>LCA BI - Financial Report Usage.xlsx</li>\r\n</ul>\r\n<br />\r\nThese PowerPivot workbooks provide examples on how PowerPivot can be used to import data, create relationships, create calculated columns and measures, and add PivotTables, slicers and PivotCharts. <br />\r\n<br />\r\n<b>NOTE:</b> To fully interact with these samples, you must have Excel 2010 and the PowerPivot for Excel 2010 add-in installed and enabled, or Excel 2013 and the PowerPivot in Excel 2013 add-in enabled.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "version 1.0",
+    "detailsSection_file_name": [
+        "PowerPivotExamplesExcel2013.zip",
+        "PowerPivotExamplesExcel2010.zip"
+    ],
+    "detailsSection_file_size": [
+        "88.9 MB",
+        "88.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8<br />\r\nWindows 7<br />\r\nWindows Server 2008 R2 (64-bit)<br />\r\nWindows XP with SP3 (32-bit)<br />\r\nWindows Vista with SP2 (32-bit or 64-bit)*<br />\r\nWindows Server 2008 with SP2 (32-bit or 64-bit)*<br />\r\nWindows Server 2003 R2 (32-bit or 64-bit) with MSXML 6.0 installed+ <br />\r\nTerminal Server and Windows on Windows (WOW)-- which allow you to instal 32-bit versions of Office 2010 on 64-bit operating system-- are supported.<br />\r\n<br />\r\n* Also requires <a href=\"http://go.microsoft.com/fwlink/?LinkId=186051\"> Platform Update for Windows Vista/Windows Server 2008.</a><br />\r\n+ Only 32-bit Microsoft\u00aeOffice 2010/PowerPivot for Microsoft\u00ae Excel 2010 is supported on 64-bit Windows Server 2003 R2.<br />\r\n<br />\r\n<ul> \r\n<li>500 MHz 32-bit or 64-bit processor or higher  </li>\r\n<li>Minimum of 1 GB of RAM (2 GB or more is recommended.)</li>\r\n<li>3.5 GB of available hard disk space</li>\r\n<li>Internet access </li>\r\n</ul>\r\n<br />\r\nHere is the copy of the detailed <a href=\"http://go.microsoft.com/fwlink/?LinkId=141682\"> Hardware and Software Requirements </a> for your review.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "To open and interact with the content of these workbooks, do the following:<br />\r\n<br />\r\n<ol>\r\n<li>Follow the instructions to install Microsoft Office 2010 and PowerPivot for Excel found <a href=\"http://go.microsoft.com/fwlink/?LinkId=155905\">here</a>.</li>\r\n<li>Download and save these samples to a folder on your local computer.</li>\r\n<li>Start Excel 2010.</li>\r\n<li>On the File menu, click Open.</li>\r\n<li>Open the sample file that you want to view.</li>\r\n<li>To view the data embedded in the workbook, click PowerPivot Window Launch on the PowerPivot tab.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102",
+    "downloadPreload": true
+}

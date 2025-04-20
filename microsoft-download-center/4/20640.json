@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office - Collecting Information from multiple sources",
+    "downloadDescription": "Microsoft Office - Collecting Information from multiple sources",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Office - Collecting information from multiple sources.xps",
+            "url": "https://download.microsoft.com/download/d/d/9/dd9a082f-b180-466b-9a4d-5a564433f88a/Microsoft Office - Collecting information from multiple sources.xps",
+            "size": "4070350",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Office - Collecting information from multiple sources.pdf",
+            "url": "https://download.microsoft.com/download/d/d/9/dd9a082f-b180-466b-9a4d-5a564433f88a/Microsoft Office - Collecting information from multiple sources.pdf",
+            "size": "3409061",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Office - Collecting Information from multiple sources",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Office - Collecting information from multiple sources.xps",
+        "Microsoft Office - Collecting information from multiple sources.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.9 MB",
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat Reader to view the PDF file or Internet Explorer 7.0 to view XPS file",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF document to your computer and open it in Adobe Acrobat Reader to view, or download the XPS document to view it in Internet Explorer 7.0",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20640",
+    "downloadPreload": true
+}

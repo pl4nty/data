@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Entra Connect Health Agent",
+    "downloadDescription": "Install Microsoft Entra Connect Health Agent for Sync, ADDS, ADFS or MIM",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftEntraConnectHealthAgentSetup.exe",
+            "url": "https://download.microsoft.com/download/dd957367-194c-492f-893d-37a297880f8e/MicrosoftEntraConnectHealthAgentSetup.exe",
+            "size": "10676016",
+            "version": "4.5.2520.0",
+            "datePublished": "3/27/2025 11:27:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "Install Microsoft Entra Connect Health Agent for Sync, ADDS, ADFS or MIM by selecting the appropriate checkbox when installing the agent",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.2520.0",
+    "detailsSection_file_name": [
+        "MicrosoftEntraConnectHealthAgentSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.2 MB"
+    ],
+    "detailsSection_file_date": "3/27/2025",
+    "systemRequirementsSection": "Supported Operating Systems\n\nWindows Server 2016, Windows Server 2019, Windows Server 2022",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Please refer to instructions available at https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-health-agent-install",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108088",
+    "downloadPreload": true
+}

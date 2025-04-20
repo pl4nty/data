@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Grante Inference and Estimation Library",
+    "downloadDescription": "The grante library enables estimation and inference in discrete factor graph models using a variety of methods. Last published: February 22, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "grante-1.0.zip",
+            "url": "https://download.microsoft.com/download/d/5/6/d564560a-950c-468c-adcb-2a60ffcbe183/grante-1.0.zip",
+            "size": "673801",
+            "version": "1.0",
+            "datePublished": "1/15/2024 4:09:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The grante library enables estimation and inference in discrete factor graph models using a variety of methods. It is a native C++ library but comes with a interface to Matlab. A detailed description of all supported methods is available in the archive.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "grante-1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "658.0 KB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52437",
+    "downloadPreload": true
+}

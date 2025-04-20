@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "SDVBench",
+    "downloadDescription": "Microsoft Static Driver Verifier Benchmarks",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SdvBench.zip",
+            "url": "https://download.microsoft.com/download/4/a/f/4af74f20-a4eb-4b06-8d5f-2547fc6ac028/SdvBench.zip",
+            "size": "1418706932",
+            "version": "1.0",
+            "datePublished": "5/15/2024 4:42:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This repository contains a subset of the internal tests used by Microsoft's Static Driver Verifier tool. These tests are generated from Window's Device Drivers while checking for one of the various properties that WDM drivers must satisfy. For more information, go to: <a href=\"https://github.com/boogie-org/sdvbench\">https://github.com/boogie-org/sdvbench</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SdvBench.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.3 GB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 10, iOS </LI></UL> \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55656",
+    "downloadPreload": true
+}

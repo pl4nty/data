@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "RIN Studio Authoring Tool",
+    "downloadDescription": "Rich Interactive Narratives (RIN) seamlessly combines cinematic experiences with user exploration to create rich interactive and immersive narratives. Last published: January 6, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RINStudio_RINAuthoringTool.zip",
+            "url": "https://download.microsoft.com/download/7/4/b/74bc11a0-9a2a-4884-9ff0-558fc11ad906/RINStudio_RINAuthoringTool.zip",
+            "size": "51788714",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:09:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Rich Interactive Narratives (RIN) seamlessly combines cinematic experiences with user exploration to create rich interactive and immersive narratives. RIN Studio is an authoring tool for creating Rich Interactive Narratives without coding by providing an interface similar to video editing tools. It produces RIN JSON files that can be hosted by using RIN JS on any web server. The narratives can also be published as apps in the Windows Store.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "RINStudio_RINAuthoringTool.zip"
+    ],
+    "detailsSection_file_size": [
+        "49.4 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52446",
+    "downloadPreload": true
+}

@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual TrueType",
+    "downloadDescription": "Visual TrueType enables font designers to review and optimize the rendering of fonts on Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Visual TrueType-64.msi",
+            "url": "https://download.microsoft.com/download/c/8/1/c816a1aa-d4be-4b70-a26e-d9efb653b9e5/Microsoft Visual TrueType-64.msi",
+            "size": "6619136",
+            "version": "6.34",
+            "datePublished": "7/15/2024 4:27:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Visual TrueType-32.msi",
+            "url": "https://download.microsoft.com/download/c/8/1/c816a1aa-d4be-4b70-a26e-d9efb653b9e5/Microsoft Visual TrueType-32.msi",
+            "size": "5906432",
+            "version": "6.34",
+            "datePublished": "7/15/2024 4:27:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Visual TrueType is a software tool for viewing, editing, and adding hinting instructions to the outlines of TrueType and OpenType/TTF fonts. You use Visual TrueType after creating a font in a font editor or after converting an existing font to the TrueType format. <br />\r\n<br />\r\n\r\nHints make the individual glyphs in a font look better at small point sizes, especially on low-resolution screens, printers, and other devices with fewer pixels for accurately and legibly matching the glyph outline. The lower the device resolution and the smaller the point size, the more hinting improves the accuracy and legibility of the outline. Hinting matters most for displaying TrueType fonts on screens (72-120 dpi, or dots per inch). It also improves text on high resolution screens and consumer printers (150-600dpi). However, hinting has minimal effect on high-resolution (1,200+ dpi) devices.  Hints can also assemble component-based strokes, and match existing bitmap glyphs.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.34",
+    "detailsSection_file_name": [
+        "Microsoft Visual TrueType-64.msi",
+        "Microsoft Visual TrueType-32.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.3 MB",
+        "5.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual TrueType runs on 32-bit and 64-bit versions versions of Windows.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL>\r\n  <li>Click the Download button</li>\r\n  <li>When prompted, Run the downloaded file. Alternatively, you can save the download for later.</li>\r\n</OL>\r\n\r\nThe setup program will install VTT and create a folder called \"Visual TrueType\" in your Documents folder. This folder will contain documentation, VTT templates, and a sample font file.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "vtt on the Microsoft Typography web site",
+            "url": "https://docs.microsoft.com/en-us/typography/tools/vtt/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102520",
+    "downloadPreload": true
+}

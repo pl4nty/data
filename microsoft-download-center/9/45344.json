@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Connector for Microsoft Azure Key Vault",
+    "downloadDescription": "The SQL Server Connector for Microsoft Azure Key Vault enables SQL Server encryption to use the Microsoft Azure Key Vault as an extensible key management (EKM) provider to protect its encryption keys.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServerConnectorforMicrosoftAzureKeyVault.msi",
+            "url": "https://download.microsoft.com/download/8/0/9/809494f2-bac9-4388-ad07-7eaf9745d77b/1033_15.0.2000.440_Nov_2024/SQLServerConnectorforMicrosoftAzureKeyVault.msi",
+            "size": "1351680",
+            "version": "15.0.2000.440",
+            "datePublished": "1/16/2025 12:53:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The SQL Server Connector for Microsoft Azure Key Vault enables SQL Server encryption to use the Microsoft Azure Key Vault as an extensible key management (EKM) provider to protect its encryption keys.  \r\n<br/><br/>\r\nAn organization can use SQL Server encryption to protect sensitive data. SQL Server encryption includes Transparent Data Encryption (TDE), Column Level Encryption (CLE), and Backup Encryption. In all of these cases the data is encrypted using a symmetric data encryption key. The symmetric data encryption key is further protected by wrapping (encrypting) it with an asymmetric key. The EKM provider architecture lets Microsoft SQL Server leverage the security of the Azure Key Vault as an external cryptographic provider to store and manage the asymmetric keys and perform data encryption key wrapping and unwrapping functions.\r\n<br/><br/>\r\nAzure Key Vault helps safeguard cryptographic keys and secrets used by cloud applications and services. By using Azure Key Vault, you can encrypt keys and secrets (such as authentication keys, storage account keys, data encryption keys, .PFX files, and passwords) by using keys that are protected by hardware security modules (HSMs). For added assurance, you can import or generate keys in HSMs (keys never leave the HSM boundary). HSMs are certified to FIPS 140-2 level 2.\r\n<br/><br/>\r\nThe download consists of the SQL Server Connector as well as Sample Scripts to enable a SQL Server Administrator learn how to configure the Connector and enable SQL Server Encryption scenarios.  For more information, review the topic <a href=\" http://go.microsoft.com/fwlink/p/?LinkId=521690\">Extensible key management using Key Vault (SQL Server)</a>.\r\n<br/><br/>\r\nUse the <a href=\" https://social.msdn.microsoft.com/Forums/en-US/AzureKeyVault\"> Azure Key Vault forum</a> to ask questions, share insights and discuss the SQL Server Connector.\r\n<br/><br/>\r\nStarting with version 1.0.3.0, the SQL Server Connector reports relevant error messages to the Windows event logs for troubleshooting.\r\n<br/><br/>\r\nStarting with version 1.0.4.0, there is support for private Azure clouds, including Azure China, Azure Germany, and Azure Government.\r\n<br/><br/>\nStarting with version 1.0.5.0 (August 2020), the SQL Server Connector supports filtering messages and network request retry logic\r\n<br/><br/>\nStarting with SQL Server Connector version 1.0.5.0 (November 2024), SQL Server on Azure VM (SQL Server 2022 CU17 and later versions) supports authentication with Azure Key Vault using managed identity.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.440",
+    "detailsSection_file_name": [
+        "SQLServerConnectorforMicrosoftAzureKeyVault.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "1/16/2025",
+    "systemRequirementsSection": "The SQL Server versions supported are:<br/>\r\n<ul>\r\n<li>SQL Server 2022 RTM Enterprise 64-bit</li>\r\n<li>SQL Server 2019 RTM Enterprise 64-bit</li>\r\n<li>SQL Server 2017 RTM Enterprise 64-bit</li>\r\n<li>SQL Server 2016 RTM Enterprise 64-bit</li>\r\n<li>SQL Server 2014 RTM Enterprise 64-bit</li>\r\n<li>SQL Server 2012 SP2 Enterprise 64-bit</li>\r\n<li>SQL Server 2012 SP1 CU6 Enterprise 64-bit</li>\r\n<li>SQL Server 2008 R2 SP2 CU8 Enterprise 64-bit</li>\r\n</ul>\r\n<br/>\r\nOn SQL Server 2008 and 2012 versions lower than the ones listed above, the patch specified in the following kb needs to be installed: <a href=\"http://support2.microsoft.com/kb/2859713\">http://support2.microsoft.com/kb/2859713</a>.\r\n<br/><br/>\r\nThe SQL Server Connector for Microsoft Azure Key Vault also requires .NET Version 4.5.1 on the Microsoft SQL Server Virtual Machine on Azure.  This should be installed before you install the Connector.\r\n<br/><br/>\r\nHave the appropriate version of the Visual Studio C++ redistributable installed based on the version of SQL Server that you are running: for SQL Server versions 2008, 2008 R2, 2012, and 2014, install the <a href = \"https://www.microsoft.com/download/details.aspx?id=40784\">2013 Visual C++ Redistributable</a>; for SQL Server 2016, install the <a href = \"https://www.microsoft.com/download/details.aspx?id=48145\">2015 Visual C++ Redistributable</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022",
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download.<br/>\r\n2. Do one of the following:<br/>\r\n<ul>\r\n<li>To start the installation immediately, click Run.</li>\r\n<li>To save the download to your computer for installation at a later time, click Save.</li>\r\n<li>To cancel the installation, click Cancel.</li>\r\n</ul>\r\n\r\n<br />\r\nTo upgrade the SQL Server Connector (Version: 1.0.5.0 with a date of September 2020) to the latest version DLL Crypto provider, you must follow these steps.\r\n<ul>\r\n<li>Stop SQL Server service using SQL Server Configuration Manager</li>\n<li>Uninstall the old version using Control Panel\\Programs\\Programs and Features</li>\n<li>Install (upgrade) new SQL Server Connector for Microsoft Azure Key Vault</li>\n<li>Start SQL Server service</li>\n<li>Test encrypted DB(s) is/are accessible</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45344",
+    "downloadPreload": true
+}

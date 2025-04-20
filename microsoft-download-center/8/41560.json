@@ -1,0 +1,167 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Distributed Transaction Coordinator on Windows Server 2012 R2",
+    "downloadDescription": "This management pack provides monitoring on local MSDTC service and clustered MSDTC.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DTC 2012 R2.KOR.msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/SC Management Pack for DTC 2012 R2.KOR.msi",
+            "size": "753664",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (RUS).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (RUS).msi",
+            "size": "618496",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (PTB).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (PTB).msi",
+            "size": "581632",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (JPN).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (JPN).msi",
+            "size": "577536",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (ITA).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (ITA).msi",
+            "size": "589824",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (FRA).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (FRA).msi",
+            "size": "565248",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (ESN).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (ESN).msi",
+            "size": "544768",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (DEU).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (DEU).msi",
+            "size": "552960",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (CHT).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (CHT).msi",
+            "size": "581632",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center (CHS).msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center (CHS).msi",
+            "size": "614400",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC Management Pack for DTC 2012 R2.msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/SC Management Pack for DTC 2012 R2.msi",
+            "size": "761856",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MSDTC 2012 R2 Management Pack for Microsoft System Center.msi",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MSDTC 2012 R2 Management Pack for Microsoft System Center.msi",
+            "size": "643072",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_MSDTC2012R2v2.docx",
+            "url": "https://download.microsoft.com/download/e/3/2/e32e9da6-d4c3-4bdb-b6c5-f15be8a8a3ea/MPGuide_MSDTC2012R2v2.docx",
+            "size": "93234",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\r\n<li>12/20/2013 - Version 7.1.10100.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10100.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for DTC 2012 R2.KOR.msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (RUS).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (PTB).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (JPN).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (ITA).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (FRA).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (ESN).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (DEU).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (CHT).msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center (CHS).msi",
+        "SC Management Pack for DTC 2012 R2.msi",
+        "MSDTC 2012 R2 Management Pack for Microsoft System Center.msi",
+        "MPGuide_MSDTC2012R2v2.docx"
+    ],
+    "detailsSection_file_size": [
+        "736.0 KB",
+        "604.0 KB",
+        "568.0 KB",
+        "564.0 KB",
+        "576.0 KB",
+        "552.0 KB",
+        "532.0 KB",
+        "540.0 KB",
+        "568.0 KB",
+        "600.0 KB",
+        "744.0 KB",
+        "628.0 KB",
+        "91.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1, and System Center 2012 Operations Manager R2</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to MP guide for instruction.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41560",
+    "downloadPreload": true
+}

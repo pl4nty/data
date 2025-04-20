@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Creating OpenType Fonts Using the Visual OpenType Layout Tool (VOLT)",
+    "downloadDescription": "This step-by-step tutorial will help you learn more about the Microsoft Visual OpenType Layout Tool (VOLT)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VoltTrainingVideo_WMV.20080423.052100.zip",
+            "url": "https://download.microsoft.com/download/5/b/d/5bd8078e-f61f-44d2-a4ee-5b4421696197/VoltTrainingVideo_WMV.20080423.052100.zip",
+            "size": "32039500",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This step-by-step tutorial will help you learn more about the Microsoft Visual OpenType Layout Tool (VOLT). VOLT provides an easy-to-use graphical user interface to add OpenType layout tables to fonts with TrueType outlines.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VoltTrainingVideo_WMV.20080423.052100.zip"
+    ],
+    "detailsSection_file_size": [
+        "30.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Extract files from zipped folder and double-click on VoltTrainingVideo_WMV.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21959",
+    "downloadPreload": true
+}

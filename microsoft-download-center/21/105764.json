@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server Client 2020",
+    "downloadDescription": "Host Integration Server 2020 Client installation packages",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HISClient64.msi",
+            "url": "https://download.microsoft.com/download/a/6/9/a6974261-7838-4513-9d55-f25761dea317/HISClient64.msi",
+            "size": "48328704",
+            "version": "11.0.2020",
+            "datePublished": "7/15/2024 5:00:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Host Integration Server 2020 Client enables applications to access IBM mainframe and midrange systems via the SNA Gateway in Host Integration Server 2020.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2020",
+    "detailsSection_file_name": [
+        "HISClient64.msi"
+    ],
+    "detailsSection_file_size": [
+        "46.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This release is supported on the following operating systems:</b>\r\n<ul>\r\n<li>Windows 10</li>\r\n<li>Windows 11</li>\r\n<li>Windows Server 2019</li>\r\n<li>Windows Server 2022</li>\r\n<li>Virtualization with Azure and Hyper-V</li>\r\n</ul>\r\n\r\n<b>This release requires the following version of the Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.8</li>\r\n</ul>\r\n\r\n<b>This release is licensed for use only with Host Integration Server 2020</b>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105764",
+    "downloadPreload": true
+}

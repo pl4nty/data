@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Ted Neward on the New Language Renaissance",
+    "downloadDescription": "Ted Neward is back to tell us his ideas around the recent downpour of language technology. He also answers a few questions left over from Carl's interview of his Java-developer brother, Jay Franklin, in show #326.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080410TNeward.zip",
+            "url": "https://download.microsoft.com/download/b/4/7/b47683f2-e8d6-499b-803e-f6a5a2c30c20/20080410TNeward.zip",
+            "size": "48888053",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Ted Neward is an independent consultant specializing in high-scale enterprise systems, working with clients ranging in size from Fortune 500 corporations to small 10-person shops. He is an authority in Java and .NET technologies, particularly in the areas of Java/.NET integration (both in-process and via integration tools like Web services), back-end enterprise software systems, and virtual machine/execution engine plumbing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080410TNeward.zip"
+    ],
+    "detailsSection_file_size": [
+        "46.6 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10954",
+    "downloadPreload": true
+}

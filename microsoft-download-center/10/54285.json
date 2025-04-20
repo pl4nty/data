@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "KB3171055_MRSPatch_Linux_8.0.5",
+    "downloadDescription": "KB3171055 MRS Patch for Linux 8.0.5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB3171055_patch_Linux_8.0.5.tar.gz",
+            "url": "https://download.microsoft.com/download/a/8/9/a89f9801-33c1-4c08-a1d0-49de8a5001bf/KB3171055_patch_Linux_8.0.5.tar.gz",
+            "size": "36701963",
+            "version": "All Linux Distro",
+            "datePublished": "6/15/2024 4:28:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB3171055_patch_Linux_7.4.1.tar.gz",
+            "url": "https://download.microsoft.com/download/a/8/9/a89f9801-33c1-4c08-a1d0-49de8a5001bf/KB3171055_patch_Linux_7.4.1.tar.gz",
+            "size": "33227616",
+            "version": "All Linux Distro",
+            "datePublished": "6/15/2024 4:28:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB3171055_patch_Linux_8.0.0.tar.gz",
+            "url": "https://download.microsoft.com/download/a/8/9/a89f9801-33c1-4c08-a1d0-49de8a5001bf/KB3171055_patch_Linux_8.0.0.tar.gz",
+            "size": "34429344",
+            "version": "All Linux Distro",
+            "datePublished": "6/15/2024 4:28:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the patch to allow more than 4GB data frame to be called by various R functions. \r\n\r\nThis download include three patch versions of Microsoft R Server for Linux, which include:-\r\n1. Revolution Analytics 7.4.1 Linux patch - file name: KB3171055_patch_Linux_7.4.1.tar.gz\r\n2. Microsoft R Server 8.0.0 Linux patch - file name: KB3171055_patch_Linux_8.0.0.tar.gz\r\n3. Microsoft R Server 8.0.5 Linux patch - file name: KB3171055_patch_Linux_8.0.5.tar.gz",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3171055",
+        "name": "KB3171055"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "All Linux Distro",
+    "detailsSection_file_name": [
+        "KB3171055_patch_Linux_8.0.5.tar.gz",
+        "KB3171055_patch_Linux_7.4.1.tar.gz",
+        "KB3171055_patch_Linux_8.0.0.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "35.0 MB",
+        "31.7 MB",
+        "32.8 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Please refer to KB3171055",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54285",
+    "downloadPreload": true
+}

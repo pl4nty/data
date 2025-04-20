@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft ACTS Overview",
+    "downloadDescription": "Overview of Microsoft ACTS, Microsoft's Advanced Cloud Transparency Services initiative",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ACTS-Overview_one-pager_[ENGLISH].pdf",
+            "url": "https://download.microsoft.com/download/7/a/7/7a7b1bca-5963-48c3-aee8-07d05e34f386/ACTS-Overview_one-pager_[ENGLISH].pdf",
+            "size": "472822",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:32:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Through public-private partnerships, Microsoft ACTS develops solutions tailored to currently available data and local requirements. ACTS employs the expertise of local partners in the regions in which we work. Together, we\u2019re committed to supporting government to increase transparency and anti-corruption efforts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ACTS-Overview_one-pager_[ENGLISH].pdf"
+    ],
+    "detailsSection_file_size": [
+        "461.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word and/or Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the PDF, and use Microsoft Word or Adobe Reader to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104588",
+    "downloadPreload": true
+}

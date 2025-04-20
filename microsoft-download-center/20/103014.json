@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "File share and SharePoint Server content migration to Microsoft 365 posters",
+    "downloadDescription": "Migrate File shares and SharePoint Server content to Microsoft 365",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "m-365-migration-posters-mm-spmt.vsdx",
+            "url": "https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx",
+            "size": "309155",
+            "version": "1s",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "m365-migration-posters-mm-spmt.pdf",
+            "url": "https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf",
+            "size": "172950",
+            "version": "1s",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft provides tools to migrate your on-premises network file shares and SharePoint Server sites to Microsoft 365 with an emphasis on protecting and ensuring your content's security during migration.\r\n\r\n \r\n\r\nThis set of illustrations demonstrates the various methods available to move your content to SharePoint, Teams, and OneDrive and how your data flows through the process.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1s",
+    "detailsSection_file_name": [
+        "m-365-migration-posters-mm-spmt.vsdx",
+        "m365-migration-posters-mm-spmt.pdf"
+    ],
+    "detailsSection_file_size": [
+        "301.9 KB",
+        "168.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows or macOS",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li> \r\n\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103014",
+    "downloadPreload": true
+}

@@ -1,0 +1,203 @@
+{
+    "error": "",
+    "downloadTitle": "February 2007 Security Releases ISO Image",
+    "downloadDescription": "These ISO-9660 CD image files contain the security updates for Windows released on Windows Update on February 13th, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200702-4.iso",
+            "url": "https://download.microsoft.com/download/1/7/5/175d6690-f816-40e5-929a-b7e9addb93d2/Windows-KB913086-200702-4.iso",
+            "size": "176898048",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Windows-KB913086-200702-1.iso",
+            "url": "https://download.microsoft.com/download/1/7/5/175d6690-f816-40e5-929a-b7e9addb93d2/Windows-KB913086-200702-1.iso",
+            "size": "321908736",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200702-5.iso",
+            "url": "https://download.microsoft.com/download/1/7/5/175d6690-f816-40e5-929a-b7e9addb93d2/Windows-KB913086-200702-5.iso",
+            "size": "619405312",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200702-2.iso",
+            "url": "https://download.microsoft.com/download/1/7/5/175d6690-f816-40e5-929a-b7e9addb93d2/Windows-KB913086-200702-2.iso",
+            "size": "415774720",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200702-3.iso",
+            "url": "https://download.microsoft.com/download/1/7/5/175d6690-f816-40e5-929a-b7e9addb93d2/Windows-KB913086-200702-3.iso",
+            "size": "261300224",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200702-6.iso",
+            "url": "https://download.microsoft.com/download/1/7/5/175d6690-f816-40e5-929a-b7e9addb93d2/Windows-KB913086-200702-6.iso",
+            "size": "376961024",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "These ISO-9660 CD image files contain the security updates for Windows released on Windows Update on February 13th, 2007. These do not contain security updates for other Microsoft products. \nThese CD images are intended for corporate administrators who manage large multinational organizations, who need to download multiple individual language versions of each security update and who do not use an automated solution such as WSUS. Use \nthese images to download multiple updates in all languages at the same time. <br /><br />\n\nCaution: Be sure to check the individual security bulletins at \n<a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.  <br /><br />\n\nThese CD images contain the following updates: <br />\n<B><a href=\"http://support.microsoft.com/kb/918118\">KB918118</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=78442\">(MS07-013)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/923723\">KB923723</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=73911\">(MS07-005)</a></B>\n<UL>\n<LI>Windows Server 2003 - 12 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 12 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/924667\">KB924667</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=78446\">(MS07-012)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/926436\">KB926436</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=78518\">(MS07-011)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/927779\">KB927779</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=80877\">(MS07-009)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/928090\">KB928090</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=79655\">(MS07-016)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/927802\">KB927802</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=77834\">(MS07-007)</a></B>\n<UL>\n<LI>Windows XP - 24 languages</LI > \n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/928255\">KB928255</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=81736\">(MS07-006)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n\n</UL>\n\n<B><a href=\"http://support.microsoft.com/kb/928843\">KB928843</a> / <a href=\"http://go.microsoft.com/fwlink/?LinkId=81191\">(MS07-008)</a></B>\n<UL>\n<LI>Windows Server 2003 - 18 languages</LI>\n<LI>Windows Server 2003 for Itanium-based Systems - 4 languages</LI>\n<LI>Windows Server 2003 x64 Edition - 2 languages</LI>\n<LI>Windows XP - 24 languages</LI > \n<LI>Windows XP x64 Edition - 2 languages</LI>\n<LI>Windows 2000 - 24 languages</LI>\n\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB918118; KB923723; KB924667; KB926436; KB927779; KB927802; KB928255; KB928843; KB928090",
+        "name": "KB918118; KB923723; KB924667; KB926436; KB927779; KB927802; KB928255; KB928843; KB928090"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS07-013; MS07-005; MS07-012; MS07-011; MS07-009; MS07-007; MS07-006; MS07-008; MS07-016",
+        "name": "MS07-013; MS07-005; MS07-012; MS07-011; MS07-009; MS07-007; MS07-006; MS07-008; MS07-016"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200702-4.iso",
+        "Windows-KB913086-200702-1.iso",
+        "Windows-KB913086-200702-5.iso",
+        "Windows-KB913086-200702-2.iso",
+        "Windows-KB913086-200702-3.iso",
+        "Windows-KB913086-200702-6.iso"
+    ],
+    "detailsSection_file_size": [
+        "168.7 MB",
+        "307.0 MB",
+        "590.7 MB",
+        "396.5 MB",
+        "249.2 MB",
+        "359.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows Server 2003 Itanium-based editions",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Select a file to download at the bottom of this page, or choose a different language from the drop-down list and then click <b>Change</b>.</LI>\n<LI>To download the ISO image to your computer and burn a CD at a later time click <B>Save</B> or <B>Save this program to disk</B>.</LI>\n<LI>Use the directions for your CD burner to create a CD from the ISO Image.</LI><br />\n</OL>\n<B>Download Information</B> <br/> \n<UL>\n<LI>Windows-KB913086-200702-1.iso contains KB918118, KB923723, KB924667, KB923436, KB927779 and KB928843 for Windows 2000.</LI>\n<LI>Windows-KB913086-200702-2.iso contains KB918118, KB923723, KB924667, KB923436, KB927779, KB928255 and KB928843 for Windows Server 2003.</LI>\n<LI>Windows-KB913086-200702-3.iso contains KB918118, KB923723, KB924667, KB923436, KB927779, KB927802, KB928255 and KB928843 for Windows XP.</LI>\n<LI>Windows-KB913086-200702-4.iso contains KB928090 for IE for Windows 2000.</LI>\n<LI>Windows-KB913086-200702-5.iso contains KB928090 for IE for Windows Server 2003.</LI>\n<LI>Windows-KB913086-200702-6.iso contains KB928090 for IE for Windows XP.</LI>\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17456",
+    "downloadPreload": true
+}

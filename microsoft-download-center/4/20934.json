@@ -1,0 +1,194 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Software Inventory Analyzer Documents",
+    "downloadDescription": "Support documents for the Microsoft Software Inventory Analyzer tool.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LogonScriptSetup.rtf",
+            "url": "https://download.microsoft.com/download/c/f/9/cf9af9d7-7a3f-46c8-892e-21e9558cbb24/LogonScriptSetup.rtf",
+            "size": "73718",
+            "version": "06-2009",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Readme.txt",
+            "url": "https://download.microsoft.com/download/c/f/9/cf9af9d7-7a3f-46c8-892e-21e9558cbb24/Readme.txt",
+            "size": "3927",
+            "version": "06-2009",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSIAFAQ.doc",
+            "url": "https://download.microsoft.com/download/c/f/9/cf9af9d7-7a3f-46c8-892e-21e9558cbb24/MSIAFAQ.doc",
+            "size": "96256",
+            "version": "06-2009",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MSIAUserGuide.doc",
+            "url": "https://download.microsoft.com/download/c/f/9/cf9af9d7-7a3f-46c8-892e-21e9558cbb24/MSIAUserGuide.doc",
+            "size": "819712",
+            "version": "06-2009",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "The Microsoft Software Inventory Analyzer (MSIA) is a free tool that can help with your software inventory. Using this tool, you can generate an inventory of core Microsoft products that are installed on your local computer or throughout a network. The MSIA is built specifically to be a starting point to working with Software Asset Management (SAM). To that end, the MSIA will work with networks that have 250 computers or fewer, and it will locate only Microsoft software. Also note: The results of the scan performed by the MSIA are completely confidential and not sent to Microsoft. \r\n\r\nFor more information about the MSIA, see the MSIA Online User's Guide, or read our FAQ (frequently asked questions).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06-2009",
+    "detailsSection_file_name": [
+        "LogonScriptSetup.rtf",
+        "Readme.txt",
+        "MSIAFAQ.doc",
+        "MSIAUserGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "72.0 KB",
+        "3.8 KB",
+        "94.0 KB",
+        "800.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "DOC files require Microsoft Word. PDF files require Adobe Acrobat.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click Download and save the file to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20934",
+    "downloadPreload": true
+}

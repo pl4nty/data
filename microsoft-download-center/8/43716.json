@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Health Monitor",
+    "downloadDescription": "BHM is an MMC snap-in that allows the user to monitor the health of BizTalk Server environments and execute maintenance tasks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BHM45.exe",
+            "url": "https://download.microsoft.com/download/6/d/3/6d38d0f5-9674-484d-b193-223caf7ef984/BHM45.exe",
+            "size": "9177672",
+            "version": "5.0/4.5",
+            "datePublished": "4/9/2025 1:53:39 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BHM50.exe",
+            "url": "https://download.microsoft.com/download/6/d/3/6d38d0f5-9674-484d-b193-223caf7ef984/BHM50.exe",
+            "size": "9023656",
+            "version": "5.0/4.5",
+            "datePublished": "4/9/2025 1:53:39 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Health Monitor (BHM) is an MMC snap-in that allows the user to monitor the health of BizTalk Server environments and execute maintenance tasks.\r\n<br /><br />\r\n<b>BHM Download Options:</b>\r\n<br />\u2022         BHM50.exe \u2013 This is BHM 5.0 and requires a minimum of .NET 4.5. \r\n<br />\u2022         BHM45.exe \u2013 This is BHM 4.5 and is available for backwards compatibility with older versions of BizTalk and requires only .NET 2.0/3.5. \r\n<br /><br />\r\nBHM can be added to the existing BizTalk Administration Console or run individually to provide the following features:\r\n<br />\u2022         Customizable dashboard displaying overall health of BizTalk environment\r\n<br />\u2022         Two kind of profiles: Health Check Profile (for detailed health information) and Monitoring Profile (for continuous monitoring of key metrics) \r\n<br />\u2022         Generate and view MBV reports\r\n<br />\u2022         Run Terminator tasks for maintenance\r\n<br />\u2022         Create custom queries\r\n<br />\u2022         Send email notifications \r\n<br />\u2022         Schedule report collection via Windows Service or Windows Task Scheduler \r\n<br />\u2022         Perfmon integration with preloaded scenario-based counters\r\n<br />\u2022         Monitor multiple BizTalk Environments\r\n<br />\u2022         Store reports in SQL \r\n<br /><br />\r\nv5.0/4.5 Release Notes (5/4/2021): \r\n<br />\u2022         Improved Topology report graph in HTML and in the BHM Snap-in to include detected clusters\r\n<br />\u2022         Improved cluster detection so now collects cluster resources and groups details with node owner\r\n<br />\u2022         Improved detection and warnings related to MSDTC clustered configurations and mappings\r\n<br />\u2022         Added support for detecting BizTalk 2016 CU8 and FP3 (Feature Pack 3)\r\n<br />\u2022         Added support for detecting BizTalk 2020 CU2\r\n<br />\u2022         Added EULA dialogue and privacy link after new setup\r\n<br />\u2022         Added correct version of .NET 4.X in topology output\r\n<br />\u2022         Added rules for deprecated adapters SMTP and POP3 in BizTalk 2020\r\n<br />\u2022         Added new \u201cSSO reg key setting\u201d query targeting all SSO servers and associated warnings\r\n<br />\u2022         Added rules and warnings for SQL database scoped configurations including MDOP (minimum SQL 2016) \r\n<br />\u2022         Added rules and warnings related to backup and restore history table counts\r\n<br />\u2022         Added rules and warnings related to TLS 1.2 .NET registry keys\r\n<br />\u2022         Added query for BAM Partition sizes per activity \r\n<br />\u2022         Added total of memory and thread count used for all host instances on a BTS server in the KPI view\r\n<br />\u2022         Added additional performance counters and instances\r\n<br />\u2022         Fixed some display and formatting issues\r\n<br /><br />\r\nv4.3 Release Notes (2/12/2019): \r\n<br />\u2022         Added detection for BizTalk 2013 CU7, BizTalk 2013 R2 CU8, BizTalk 2016 CU4-5, and BizTalk 2016 FP3 (Feature Pack 3) \r\n<br />\u2022         New Quick collect profile menu option in addition to Full\r\n<br />\u2022         Updated query and rules repository \r\n<br />\u2022         Fixed minor issues\r\n<br /><br />\r\nv4.2 Release Notes (1/12/2018): \r\n<br />\u2022         Added support for SQL Always On Availability Groups\r\n<br />\u2022         Added detection for BizTalk 2013 CU6, BizTalk 2013 R2 CU7, BizTalk 2016 CU3, and BizTalk 2016 FP2 (Feature Pack 2) \r\n<br />\u2022         Added detection for HIS 2013 CU4, HIS 2016 CU2\r\n<br />\u2022         Capture TLS and SSL reg key values\r\n<br />\u2022         Get version of WINSCP components if installed\r\n<br />\u2022         Get version of IBM WebSphere MQ layer installed and check for v7 usage with BTS2016\r\n<br />\u2022         Detect custom databases hosted on BizTalk SQL instances\r\n<br />\u2022         New SQL query to list adapters and their handler\r\n<br />\u2022         Detect additional EDI tables\r\n<br />\u2022         Retrieve error messages of failed steps of a SQL job\r\n<br />\u2022         Detect version of targeted MQSeries and OracleDB servers when possible (if they are runing on Windows) and check for supported versions\r\n<br />\u2022         Updated query and rules repository \r\n<br />\u2022         Fixed minor issues\r\n<br /><br />\r\nv4.1 Release Notes (5/15/2017): \r\n<br />\u2022         Fixed issue with losing monitoring configuration \r\n<br />\u2022         Upgraded update mechanism to handle all components of BHM \r\n<br />\u2022         Added support for displaying each view of a BHM report in HTML format \r\n<br />\u2022         Improved update to happen on secondary thread \r\n<br />\u2022         Improved the ChkBHMRep.exe tool \r\n<br />\u2022         Added support for BizTalk 2013 R2 CU6, BizTalk 2016 CU1, and BizTalk 2016 FP1 (Feature Pack 1) \r\n<br />\u2022         Improved report to provide DTA purge job parameters with improved formatting \r\n<br />\u2022         Added warning for infinite max SQL memory config \r\n<br />\u2022         Fixed some issues with detecting Host Integration Server CUs \r\n<br />\u2022         Removed BizTalk 2013 R2 .NET 4.6.x warning since it is now supported \r\n<br />\u2022         Updated query and rules repository \r\n<br /><br />\r\nv4.0 Release Notes (12/14/2016): \r\n<br />\u2022         Added Realtime Monitoring Capabilities \r\n<br />\u2022         Added Report-scheduling via Windows service \r\n<br />\u2022         Added Full Support for BizTalk 2016 \r\n<br />\u2022         Improved handling of incomplete reports - including new Trace Log node for analysis of report failures \r\n<br />\u2022         Improved repository auto-update feature (now done in background) \r\n<br />\u2022         Added full screen mode for queries and rules lists for better visibility \r\n<br />\u2022         Updated query and rules repository \r\n<br />\u2022         Fixed a crash issue on MMC termination \r\n<br /><br />\r\nv3.2 Release Notes (12/23/2015): \r\n<br />\u2022         Decoupled Query/Rules and Maintenance repositories from BHM \r\n<br />\u2022         Provided update mechanism for repositories\r\n<br />\u2022         Provided ability to analyze multiple profiles at startup or from within BHM\r\n<br />\u2022         Provided ability to import BHM reports for viewing purposes\r\n<br />\u2022         Updated <i>Count Instances (and Save Messages)</i> task to include instance status filter\r\n<br />\u2022         Modified WMI engine to better handles failures when calling into BizTalk WMI API \r\n<br /><br />\r\nv3.1 Release Notes (06/29/2015):\r\n<br />\u2022         Added BHM Setup Application \r\n<br />\u2022         Updated query and rules repository \r\n<br />\u2022         Improved auto-proposal of maintenance tasks using From latest BHM report \r\n<br />\u2022         Added View Current Shape of Orchestrations to BHM report \r\n<br />\u2022         Added Terminate Caching Items (Hard Termination) to maintenance node \r\n<br /><br />\r\nv3 Release Notes (03/12/2015):\r\n<br />\u2022         Added Terminator integration\r\n<br />\u2022         Added custom SQL query support\r\n<br />\u2022         Added SQL store for reports\r\n<br />\u2022         Added force full report option\r\n<br />\u2022         Updated query repository\r\n<br /><br />\r\nv2 Release Notes (12/01/2014):\r\n<br />\u2022         Added customizable dashboard \r\n<br />\u2022         Added custom query support\r\n<br />\u2022         Added custom rules support\r\n<br />\u2022         Profile enhancements\r\n<br /><br />\r\nv1 Release Notes (08/01/2014):\r\n<br />\u2022         Initial release",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/4.5",
+    "detailsSection_file_name": [
+        "BHM45.exe",
+        "BHM50.exe"
+    ],
+    "detailsSection_file_size": [
+        "8.8 MB",
+        "8.6 MB"
+    ],
+    "detailsSection_file_date": "4/9/2025",
+    "systemRequirementsSection": "<b>Supported BizTalk Versions</b>\r\n<br /><br />\r\nBizTalk Server 2020, BizTalk Server 2016, BizTalk Server 2013, BizTalk Server 2013 R2, BizTalk Server 2016\r\n<br /><br />\r\n<b>Supported .NET Versions</b>\r\n<br /><br />\r\n.NET 4.5 for BHM 5.0, .NET 2.0/3.5 for BHM 4.5",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>INSTALLATION</b>\r\n<br />\r\n1. Run the .exe to extract to a folder.\r\n<br />\r\n2. Go to the extracted location and run (as Admin) <b>BHMSetup.exe</b>.\r\n<br />\r\n3. Click <b>Start Installing</b> (Change default installation options first if needed)\r\n<br />\r\n4. Click <b>Exit</b> once it shows <i>Installation Completed</i>\r\n<br /><br />\r\n<b>GENERATE A FULL REPORT FOR MICROSOFT SUPPORT</b> \r\n<br />\r\n1. Open BHM and expand the <b>BizTalk Health Monitor</b> node.\r\n<br />\r\n2. Right-click on the profile and select <b>Force Full Analyze > Include custom queries and rules</b>.\r\n<br />\r\n3. Once completed, expand the profile and right-click on the current datetime and select <b>Compress the report</b>.\r\n<br />\r\n4. The folder containing the compressed report will be opened.  Send Microsoft the <i>MBVOutput_[DATETIME]_[PROFILENAME].zip</i> file.\r\n<br /><br />\r\n<b>Note:</b> If BHM is installed on a BizTalk server, a default profile will be created automatically.  To manually create a profile, right-click on the <b>BizTalk Health Monitor node</b> and select <b>New > Health Check profile</b>.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43716",
+    "downloadPreload": true
+}

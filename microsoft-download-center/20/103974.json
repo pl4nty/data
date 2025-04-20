@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "SCOM Management Pack for Microsoft Exchange Server 2013 and above (CTP Release)",
+    "downloadDescription": "This management pack includes monitors and rules to effectively monitor Exchange Server 2013 and above on its performance, availability, and reliability of its server roles.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Exchange 2013 and above.msi",
+            "url": "https://download.microsoft.com/download/6/5/1/6513097c-c679-4e20-9cf0-db2dc87adac1/SC Management Pack for Exchange 2013 and above.msi",
+            "size": "958464",
+            "version": "15.0.669.23",
+            "datePublished": "7/15/2024 4:31:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MP Guide for Exchange 2013 and above MP (CTP).docx",
+            "url": "https://download.microsoft.com/download/6/5/1/6513097c-c679-4e20-9cf0-db2dc87adac1/MP Guide for Exchange 2013 and above MP (CTP).docx",
+            "size": "731293",
+            "version": "15.0.669.23",
+            "datePublished": "7/15/2024 4:31:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Overview</b>\r\n<ul></ul>\r\nThe Microsoft Exchange Server 2013 and above Management Pack provides comprehensive service health information for your Exchange organization.<ul></ul>\r\nThe Exchange 2013 Management Pack is engineered for organizations that include servers running Exchange 2013 and above. <ul></ul>\r\n<ul></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.669.23",
+    "detailsSection_file_name": [
+        "SC Management Pack for Exchange 2013 and above.msi",
+        "MP Guide for Exchange 2013 and above MP (CTP).docx"
+    ],
+    "detailsSection_file_size": [
+        "936.0 KB",
+        "714.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul></ul>\r\n<b>You have one of the following versions of System Center Operations Manager deployed: </b>\r\n<ul></ul>\r\n<li>System Center Operations Manager 2016 or later</li>\r\n<ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See the MP Guide for detailed instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103974",
+    "downloadPreload": true
+}

@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Business Intelligence Dashboards: Sales Solution",
+    "downloadDescription": "This solution scenario walks you through the process of creating and then using a basic dashboard to track organizational performance. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Dashboard_Swimlane_by_Role.vsd",
+            "url": "https://download.microsoft.com/download/2/f/d/2fde9cd2-ac21-4491-adc5-4dcbdbef99f1/Dashboard_Swimlane_by_Role.vsd",
+            "size": "142336",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dashboard_Scenario.zip",
+            "url": "https://download.microsoft.com/download/2/f/d/2fde9cd2-ac21-4491-adc5-4dcbdbef99f1/Dashboard_Scenario.zip",
+            "size": "3048731",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Sales Dashboard_pdf.pdf",
+            "url": "https://download.microsoft.com/download/2/f/d/2fde9cd2-ac21-4491-adc5-4dcbdbef99f1/Sales Dashboard_pdf.pdf",
+            "size": "1562304",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dashboard_Swimlane_by_Phase.vsd",
+            "url": "https://download.microsoft.com/download/2/f/d/2fde9cd2-ac21-4491-adc5-4dcbdbef99f1/Dashboard_Swimlane_by_Phase.vsd",
+            "size": "146944",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Creating and Using a Sales Dashboard.docx",
+            "url": "https://download.microsoft.com/download/2/f/d/2fde9cd2-ac21-4491-adc5-4dcbdbef99f1/Creating and Using a Sales Dashboard.docx",
+            "size": "1455434",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This solution scenario walks you through the process of creating and then using a basic dashboard to track organizational performance. The dashboard includes various report views that empower users to quickly and easily gain insights through Microsoft business intelligence. \r\nFollow the guidance on the corresponding <a href=\"http://go.microsoft.com/fwlink/?LinkId=195259\">Sales Dashboards solution scenario resource center</a> to get started, and download the materials on this page for comprehensive information to learn how to create and use a corporate sales dashboard that contains a variety of reports. \r\nDocuments: \r\n<ol>\r\n<li>Creating and Using a Sales Dashboard.docx: Detailed description of the scenario</li>\r\n<li>Dashboard_Swimlane_by_Phase.vsd: Visio diagram outlining the scenario by phase</li>\r\n<li>Dashboard_Swimlane_by_Role.vsd: Visio diagram outlining the scenario by role</li>\r\n<li>Sales Dashboard_pdf.pdf:  Interactive sales dashboard diagram designed to provide a visual flow of tasks for an overall look as you customize the scenario to meet your own corporate needs.</li>\r\n</ol>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Dashboard_Swimlane_by_Role.vsd",
+        "Dashboard_Scenario.zip",
+        "Sales Dashboard_pdf.pdf",
+        "Dashboard_Swimlane_by_Phase.vsd",
+        "Creating and Using a Sales Dashboard.docx"
+    ],
+    "detailsSection_file_size": [
+        "139.0 KB",
+        "2.9 MB",
+        "1.5 MB",
+        "143.5 KB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Server:\r\n<ul>\r\n<li>SharePoint Server 2010, Enterprise Edition, including the following:</li>\r\n <ul>\r\n  <li>PerformancePoint Services in Microsoft SharePoint Server 2010</li>\r\n  <li>Excel Services</li>\r\n </ul>\r\n<li>SQL Server 2008 R2, including the following:</li>\r\n<ul>\r\n  <li>Analysis Services</li>\r\n  <li>Database Engine (for the Contoso DW database)</li>\r\n  <li>Reporting Services (installed in SharePoint Integrated mode)</li>\r\n  <li>Reporting Services Add-in for SharePoint Products and Technologies</li>\r\n </ul>\r\n</ul>\r\n\r\nClient:\r\n<ul>\r\n<li>Office 2010, including the following:</li>\r\n <ul>\r\n  <li>Excel</li>\r\n  <li>PowerPoint</li>\r\n </ul>\r\n<li>Microsoft Silverlight 3</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "There are four files available in this scenario. You can download them separately, or you can download them all together by getting the compressed .zip file. After download, to extract the entire contents of a compressed folder, right-click the folder, click Extract All, and then follow the instructions. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22341",
+    "downloadPreload": true
+}

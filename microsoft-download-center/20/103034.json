@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Template files (ADMX/ADML) for the Windows Package Manager",
+    "downloadDescription": "This download includes the Group Policy Administrative Template files (ADMX/ADML) for the Windows Package Manager.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DesktopAppInstallerPolicies.zip",
+            "url": "https://download.microsoft.com/download/d/a/b/dab7acb4-deae-47c8-b107-a4752b7c6eee/DesktopAppInstallerPolicies.zip",
+            "size": "115703",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes the Group Policy Administrative template files (ADMX/ADML). These files are used by Group Policy to configure the Windows Package Manager.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DesktopAppInstallerPolicies.zip"
+    ],
+    "detailsSection_file_size": [
+        "113.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Click the <b>Download</b> button (above).<br/>\r\n2. Choose where to save the file.<br/>\r\n3. Extract the files to the location of your choosing.<br/><br/>\r\nIf you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure settings for Windows Package Manager by using Group Policy. Copy the ADMX/ADML files to your AD DS environment and then use the Group Policy Management administrative tool to configure the Group Policy Settings for the Windows Package Manager.<br/><br/>\r\n<b>Note:</b> The Policy is Desktop App Installer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103034",
+    "downloadPreload": true
+}

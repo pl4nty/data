@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Prism 5.0 for WPF - Book Download",
+    "downloadDescription": "This is a PDF version of the on-line guidance \"Developer's Guide to Microsoft Prism Library 5.0 for WPF .\" Prism provides guidance designed to help you more easily design and build rich, flexible, and easy to maintain Windows Presentation Foundation (WPF) desktop applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Prism5forWPF.mobi",
+            "url": "https://download.microsoft.com/download/5/2/6/52627b2b-ae05-4781-aa5d-7ebcc4c86d9b/Prism5forWPF.mobi",
+            "size": "13142006",
+            "version": "5",
+            "datePublished": "7/15/2024 3:38:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Prism5forWPF.epub",
+            "url": "https://download.microsoft.com/download/5/2/6/52627b2b-ae05-4781-aa5d-7ebcc4c86d9b/Prism5forWPF.epub",
+            "size": "8113386",
+            "version": "5",
+            "datePublished": "7/15/2024 3:38:15 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Prism5forWPF.pdf",
+            "url": "https://download.microsoft.com/download/5/2/6/52627b2b-ae05-4781-aa5d-7ebcc4c86d9b/Prism5forWPF.pdf",
+            "size": "7451484",
+            "version": "5",
+            "datePublished": "7/15/2024 3:38:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Prism provides guidance designed to help you more easily design and build rich, flexible, and easy to maintain Windows Presentation Foundation (WPF) desktop applications. Using design patterns that embody important architectural design principles, such as separation of concerns and loose coupling, Prism helps you to design and build applications using loosely coupled components that can evolve independently but which can be easily and seamlessly integrated into the overall application. Such applications are often referred to as composite applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5",
+    "detailsSection_file_name": [
+        "Prism5forWPF.mobi",
+        "Prism5forWPF.epub",
+        "Prism5forWPF.pdf"
+    ],
+    "detailsSection_file_size": [
+        "12.5 MB",
+        "7.7 MB",
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To read the book, you will need a document reader capable of displaying PDF, epub, or mobi format documents. \r\n<br />\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "IBM AIX",
+        "Linux",
+        "TabletPC",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the document format appropriate to your reader software.\r\n<br />\r\nThe source code and samples can be found here: <a href=\"http://aka.ms/prism-wpf-code\">Prism source code</a>\r\n<br />\r\nThe online documentation can be found here: <a href=\"http://aka.ms/prism-wpf-doc\">MSDN content</a>\r\n<br />\r\nFor help and support visit the <a href=\"http://compositewpf.codeplex.com/\">Prism community site</a>.",
+    "additionalInformationSection": "The source code and samples can be found here: <a href=\"http://aka.ms/prism-wpf-code\">Prism source code</a>\r\n<br />\r\nThe online documentation can be found here: <a href=\"http://aka.ms/prism-wpf-doc\">MSDN content</a>\r\n<br />\r\nFor help and support visit the <a href=\"http://compositewpf.codeplex.com/\">Prism community site</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "prism source code",
+            "url": "http://aka.ms/prism-wpf-code"
+        },
+        {
+            "title": "msdn Home page",
+            "url": "http://aka.ms/prism-wpf-doc"
+        },
+        {
+            "title": "prism community site",
+            "url": "http://compositewpf.codeplex.com/"
+        },
+        {
+            "title": "unity Application Block",
+            "url": "http://msdn.microsoft.com/en-us/library/ff647202.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42572",
+    "downloadPreload": true
+}

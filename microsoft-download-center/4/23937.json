@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Mobile Device Manager 2008 Service Pack 1 Management Pack for Operations Manager 2007",
+    "downloadDescription": "This Microsoft System Center Mobile Device Manager Service Pack 1 (MDM SP1) 2008 Management Pack provides proactive monitoring of your Microsoft System Center Mobile Device Manager 2008 SP1 environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SCMDM_2008_SP1_MP.msi",
+            "url": "https://download.microsoft.com/download/1/7/4/174020bb-f078-4968-9a88-8208c802f5b2/SCMDM_2008_SP1_MP.msi",
+            "size": "946176",
+            "version": "1.0.2430.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Mobile Device Manager Service Pack 1 2008 Management Pack for Operations Manager 2007 provides proactive monitoring of your Microsoft System Center Mobile Device Manager 2008 SP1 environment. This management pack includes: <br/>\r\n<br/>\r\n<ul>\r\n<li> Detection and monitoring of all MDM SP1 servers and dependent services </li>\r\n<li> The alert-driven state  </li>\r\n<li> Performance and backlog monitoring and configuration  </li>\r\n</ul>\r\nBefore you install the MDM SP1 management pack, read the MDM Management Pack Guide document, which includes instructions for properly deploying and configuring the management pack.<br/>\r\n<br/>\r\n<b>Feature Summary </b><br/>\r\nThe System Center Mobile Device Manager 2008 SP1 (MDM SP1) Management Pack for Operations Manager 2007 provides capabilities for MDM SP1 monitoring, including the following: <br/>\r\n<ul>\r\n<li> Collection of events from MDM Device Management Server, MDM Enrollment Server, MDM Gateway Server, and MDM Self Service Portal. </li>\r\n<li> Health state monitoring and alerting for MDM service errors requiring administrative intervention. </li>\r\n<li> Collection of MDM performance counters from MDM Device Management Server, MDM Enrollment Server, MDM Gateway Server, and MDM Self Service Portal. </li>\r\n<li> Events indicating service outages. </li>\r\n<li> Alerts indicating configuration and data source connectivity issues. </li>\r\n<li> Verification that all dependent services are functioning properly. </li>\r\n</ul><br/>\r\n<b>Release History </b><br/>\r\n<ul>\r\n<li> 12/15/2008 - Version 1.0.2430.0, Subsequent release of the Management Pack for MDM SP1 </li>\r\n<li> 6/30/2008 - Version 1.0.2300.0, <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=b9785235-826e-442b-aeaf-12f44bae5517\">Original release of the English version of the Management Pack </a> </li>\r\n</ul>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.2430.0",
+    "detailsSection_file_name": [
+        "SCMDM_2008_SP1_MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "924.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \r\n<li> <b>Other Software:</b></li>\r\n<ul>\r\n<li> Microsoft System Center Mobile Device Manager 2008 SP1 </li>\r\n<li> Microsoft System Center Operations Manager 2007 SP1 </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<ul>\r\n<li> Install the Microsoft System Center Mobile Device Manager 2008 SP1 Management Pack </li>\r\n<li> From the Operations Manager console, import the two MDM management pack files </li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Mobile for Enterprise",
+            "url": "http://www.microsoft.com/windowsmobile/en-us/business/solutions/enterprise/default.mspx"
+        },
+        {
+            "title": "system Center Home Page",
+            "url": "http://www.microsoft.com/systemcenter/en/us/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23937",
+    "downloadPreload": true
+}

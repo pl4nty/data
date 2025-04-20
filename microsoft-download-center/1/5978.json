@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "VIDEO: Cumulative Time Zone Update for Microsoft Windows and Windows Mobile",
+    "downloadDescription": "This video will aid customers in installing the Cumulative Time Zone Update for Microsoft Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DST2007_WindowsTZUpdateAugust_Video.zip",
+            "url": "https://download.microsoft.com/download/1/c/b/1cbc69fb-966d-496c-8a9f-b9fd289f4d1c/DST2007_WindowsTZUpdateAugust_Video.zip",
+            "size": "50579485",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Cumulative Time Zone Update for Microsoft Windows is a patch which updates the Windows time zone database with the latest worldwide DST changes per time zone.  This video was put together by Joel Schaeffer, Escalation Engineer in our Platforms Global Escalation Services team in Microsoft Product Support.  It will guide the viewer through installing and validating the patch, manually updating non-mainstream Windows versions, as well as how to update a Windows Mobile device.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB933360; KB931836; KB941898",
+        "name": "KB933360; KB931836; KB941898"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DST2007_WindowsTZUpdateAugust_Video.zip"
+    ],
+    "detailsSection_file_size": [
+        "48.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player 9.0 (or greater), Internet Explorer (6.0 or greater)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Mobile 5.0 software for Pocket PC",
+        "Windows Mobile 5.0 software for Smartphone",
+        "Windows Mobile 6",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Small Business Server 2003 ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and unzip the file to a folder, then double-click on \"Cumulative Time Zone Update for Microsoft Windows.html\" to launch the video.  Use the Table Of Contents on the left-hand side of the page as a reference as you plan your DST remediation strategy.",
+    "relatedResourcesSection": [
+        {
+            "title": "how to configure daylight saving time for Microsoft Windows operating systems",
+            "url": "http://support.microsoft.com/?id=914387"
+        },
+        {
+            "title": "august 2007 cumulative time zone update for Microsoft Windows operating systems",
+            "url": "http://support.microsoft.com/?id=933360"
+        },
+        {
+            "title": "an August 2007 daylight saving time update for Windows Mobile-based devices is available",
+            "url": "http://support.microsoft.com/?id=941898"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5978",
+    "downloadPreload": true
+}

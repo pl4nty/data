@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for Internet Explorer for Windows XP x64 Edition (KB2846071)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-055. To find out if other security updates are available for you, see the Additional Information section at the bottom of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003.WindowsXP-KB2846071-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/4/e/d/4ed9cf15-a394-4494-bb53-253f7e26013a/WindowsServer2003.WindowsXP-KB2846071-x64-ENU.exe",
+            "size": "11056288",
+            "version": "2846071",
+            "datePublished": "6/13/2024 11:53:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2846071",
+        "name": "KB2846071"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-055",
+        "name": "MS13-055"
+    },
+    "detailsSection_file_version": "2846071",
+    "detailsSection_file_name": [
+        "WindowsServer2003.WindowsXP-KB2846071-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer with the following operating systems:<br /><ul><li>Windows XP Pro (x64-bit)</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP 64-bit"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.</li>\n  <li>Do one of the following:</li>\n  <ul>\n    <li>To start the installation immediately, click <b>Run</b>.</li>\n    <li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li> <li>To cancel the installation, click <b>Cancel</b>.</li></ul>\n</ol>",
+    "additionalInformationSection": "<b>Other critical security updates are available:</b> To find the latest security updates for you visit <a href=\"http://go.microsoft.com/?LinkID=275655 \">Windows Update</a> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <a href=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</a> and follow the 3 easy steps to ensure you\u2019re protected.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "maintain Security with Internet Explorer",
+            "url": "http://go.microsoft.com/?linkid=1644917"
+        },
+        {
+            "title": "stay up to Speed on PC Security",
+            "url": "http://go.microsoft.com/?LinkID=997684"
+        },
+        {
+            "title": "microsoft Security Bulletin MS13-055",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=309324"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39571",
+    "downloadPreload": true
+}

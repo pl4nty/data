@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "DPM 2010 PowerShell Script - Hyper-V Auto-Protection",
+    "downloadDescription": "sample PowerShell scripts for enabling DPM 2010 auto-protection of Hyper-V",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AddNewStandAloneVM.ps1",
+            "url": "https://download.microsoft.com/download/f/6/7/f679933f-8a6f-4ead-b122-eafb5c117cee/AddNewStandAloneVM.ps1",
+            "size": "3160",
+            "version": "1.0 2009-12",
+            "datePublished": "7/15/2024 3:15:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In any virtualized environment, adding new VMs is a frequent operation. While backup administrators can protect an entire Hyper-V host using the DPM Management Console, the protection group had to be modified manually to include the new virtual machines that have come up on the Hyper-V host. \r\n\r\nThese scripts are expected to work with DPM 2010 Beta. By using them, you should be able to quickly put together a script that can enable the auto protection of your hyper-v hosts.  Note: These scripts work on an existing protection group and do not create a fresh protection group.\r\n\r\n The attached scripts automate the task of adding any new virtual machines recognized in the Hyper-V hosts protected by the DPM server into existing protection groups. There are different scripts for Hyper-V clusters (AddNewClusteredVM.ps1) and standalone Hyper-V hosts (AddNewStandAloneVM.ps1). You would still use the script for standalone servers to automatically protect the non-clustered virtual machines of any Hyper-V host that is part of a cluster. \r\n\r\nTo add new VMs that are added in your primary DPM server, to be protected on the secondary DPM server as well you can use the scripts AddNewClusteredVMToDRServer.ps1  and AddNewStandAloneVMToDRServer.ps1 .\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0 2009-12",
+    "detailsSection_file_name": [
+        "AddNewStandAloneVM.ps1"
+    ],
+    "detailsSection_file_size": [
+        "3.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "DPM 2010 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Please provide feedback on these via the DPM blog -- http://blogs.technet.com/DPM",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20446",
+    "downloadPreload": true
+}

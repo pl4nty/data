@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Eric Swedin Looks Back in Time",
+    "downloadDescription": "Mark Dunn joins Carl for this fun look back at the history of computers with Eric Swedin, author of Computers: The Life Story of a Technology.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080807ESwedlin.zip",
+            "url": "https://download.microsoft.com/download/2/8/4/284656e2-2bbe-49de-9bad-8ab0e3cf2ecd/20080807ESwedlin.zip",
+            "size": "49283101",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:07:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Eric G. Swedin is an associate professor at Weber State University in the Information Systems and Technologies department, specializing in information security and interdisciplinary studies. He teaches students how to be hackers so that they may defend against hackers. His doctorate is in the history of science and technology and he regularly teaches history classes at Weber State. His publications include numerous articles, three history books, and a historical mystery novel, The Killing of Greybird (2004). Eric lives in a 125 year old house with his wife Betty and four children. His web site is <a href=\"http://www.swedin.org/\">www.swedin.org</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080807ESwedlin.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.0 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10150",
+    "downloadPreload": true
+}

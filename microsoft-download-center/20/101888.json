@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX Split Payment Setup Country Specific Update for Italy",
+    "downloadDescription": "\u200bThis document describes how to set up tax to enable posting and reporting of tax under Italian split \r\npayment.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WhitepaperCountrySpecificUpdateforItalySplitpaymentsetup.pdf",
+            "url": "https://download.microsoft.com/download/a/2/d/a2d4a22a-b0b1-48ca-9f5e-1175510a4897/WhitepaperCountrySpecificUpdateforItalySplitpaymentsetup.pdf",
+            "size": "1845951",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "It shows how to meet the requirements for Split payment in Microsoft Dynamics AX 2012 R3. The approach is also applicable Microsoft Dynamics AX 2009, Microsoft Dynamics AX 2012, and Microsoft Dynamics AX 2012 R2. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "WhitepaperCountrySpecificUpdateforItalySplitpaymentsetup.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101888",
+    "downloadPreload": true
+}

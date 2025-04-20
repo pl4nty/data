@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 10 for System Center 2016 Service Manager",
+    "downloadDescription": "Update Rollup 10 for System Center 2016 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SCSM2016_CU_KB4580255_i386_7.5.7487.231.exe",
+            "url": "https://download.microsoft.com/download/b/a/2/ba213168-f01c-4ec0-bbfb-3d5c0dfd0232/SCSM2016_CU_KB4580255_i386_7.5.7487.231.exe",
+            "size": "75032504",
+            "version": "2016 UR 10",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4580255_amd64_7.5.7487.231.exe",
+            "url": "https://download.microsoft.com/download/b/a/2/ba213168-f01c-4ec0-bbfb-3d5c0dfd0232/SCSM2016_CU_KB4580255_amd64_7.5.7487.231.exe",
+            "size": "75142576",
+            "version": "2016 UR 10",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article describes the issues that are fixed in Update Rollup 10 for Microsoft System Center 2016 Service Manager. \r\n<br/>\r\n<ul>\r\n<li>Users will be able to scroll seamlessly on all standard forms under work items tab.</li>\r\n<li>When a user opens manual activity from any Incident Request or Change Request form and executes custom task, it will execute without any error.</li>\r\n<li>Surface devices imported by SCCM connector will not be marked as virtual machines.</li>\r\n<li>With this fix, end user will still be able to update his/her requests even if the user is removed as an affected user from their requests through Self Service Portal.</li>\r\n<li>Enhancements to start-up time of the SDK service have been implemented which prevents any slowness.</li>\r\n<li>With this fix, end users will now be able to read/update the manual activity from Self Service Portal.</li>\r\n<li>Supports the SCCM 1806, 1810, 1902, 1906, 1910, 2002 and 2006 releases. However, the size of the devices that are supported by SCCM is limited to less than 2 PB.</li>\r\n<li>The logging on Self Service Portal logs will now show Process ID, Thread ID and Date/Time.</li>\r\n<li>When a user deletes a service offering category, it will verify if there is any offering with that category. If available, it will prevent the deletion and a window pops up to delete Service offerings.</li>\r\n<li>Users will be able to hide the count of \u2018In progress\u2019 activities which is shown on \u201cMy Activities\u201d tab in Self-service portal by adding a new setting called \u201cCalculateNotificationsCount\u201d in web.config file and setting its value to false.</li>\r\n<li>Enables support for MSOLEDBSQL driver so that users may move from SQL Native Client. Manual steps are required to use MSOLEDBSQL driver with SQL Server Analysis Server (SSAS), which are provided in the article <a href=\"https://support.microsoft.com/en-in/help/4546987\">KB4546987</a>.</li>\r\n</ul><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4580255",
+        "name": "4580255"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016 UR 10",
+    "detailsSection_file_name": [
+        "SCSM2016_CU_KB4580255_i386_7.5.7487.231.exe",
+        "SCSM2016_CU_KB4580255_amd64_7.5.7487.231.exe"
+    ],
+    "detailsSection_file_size": [
+        "71.6 MB",
+        "71.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows Server 2012 R2, Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 Standard",
+        "Windows Server 2019",
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/en-in/help/4580255\">KB4580255</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102136",
+    "downloadPreload": true
+}

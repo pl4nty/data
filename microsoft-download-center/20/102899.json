@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Using Azure ExpressRoute with Microsoft 365",
+    "downloadDescription": "This document is designed to ensure that Microsoft 365 customers have all the information they need to deliver the best connectivity model for the enterprise, and to help them understand that ExpressRoute does not provide the best connectivity model for Microsoft 365 in almost all circumstances.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Using Azure ExpressRoute with Microsoft 365.pdf",
+            "url": "https://download.microsoft.com/download/5/0/e/50eff047-e211-44ea-8858-6c1717b45476/Using Azure ExpressRoute with Microsoft 365.pdf",
+            "size": "1183930",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides you with detailed information required to understand the achievable outcomes from using ExpressRoute with Microsoft 365 and the steps required to successfully implement ExpressRoute. The goal is to allow you to assess whether your specific scenario is one of the few scenarios where ExpressRoute is the right connectivity model for Microsoft 365.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Using Azure ExpressRoute with Microsoft 365.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Macintosh",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download PDF file and open with PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102899",
+    "downloadPreload": true
+}

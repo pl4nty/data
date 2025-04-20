@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2013 R2 Best Practices Analyzer",
+    "downloadDescription": "The BizTalk Server Best Practices Analyzer examines a BizTalk Server deployment and generates a list of best practices issues it discovers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BPAZipFile.exe",
+            "url": "https://download.microsoft.com/download/7/0/2/702cbc49-3162-4665-bdf8-ccee51a972d3/BPAZipFile.exe",
+            "size": "1663344",
+            "version": "1.2.139.0",
+            "datePublished": "7/15/2024 3:25:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The BizTalk Server Best Practices Analyzer examines a BizTalk Server deployment and generates a list of best practices issues it discovers. \r\n\r\n The BizTalk Server Best Practices Analyzer performs configuration level verification, by reading and reporting only, and uses the gathered data to determine whether best practices are being followed. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.139.0",
+    "detailsSection_file_name": [
+        "BPAZipFile.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\n\r\nWindows 8, Windows Server 2012 Windows Server 2012 R2\r\nFor HTM files: Microsoft Internet Explorer or other HTML viewer.\r\n\r\n For CHM files: No special software required. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows 7 Enterprise",
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install the Best Practices Analyzer, download the entire BPA.zip file, extract it, and then run Setup.exe.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43382",
+    "downloadPreload": true
+}

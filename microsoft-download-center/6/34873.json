@@ -1,0 +1,115 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2008 Service Pack 3 (KB2716436)",
+    "downloadDescription": "A security issue has been identified in the SQL Server 2008 Service Pack 3 that could allow an attacker to compromise your system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2008-KB2716436-x86.exe",
+            "url": "https://download.microsoft.com/download/a/c/d/acdbd0a3-4134-4b8f-8dbf-9e7fcf62827a/ENU/SQLServer2008-KB2716436-x86.exe",
+            "size": "52996560",
+            "version": "10.00.5512.00",
+            "datePublished": "7/15/2024 3:09:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB2716436-x64.exe",
+            "url": "https://download.microsoft.com/download/a/c/d/acdbd0a3-4134-4b8f-8dbf-9e7fcf62827a/ENU/SQLServer2008-KB2716436-x64.exe",
+            "size": "60227024",
+            "version": "10.00.5512.00",
+            "datePublished": "7/15/2024 3:09:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2008-KB2716436-IA64.exe",
+            "url": "https://download.microsoft.com/download/a/c/d/acdbd0a3-4134-4b8f-8dbf-9e7fcf62827a/ENU/SQLServer2008-KB2716436-IA64.exe",
+            "size": "77273040",
+            "version": "10.00.5512.00",
+            "datePublished": "7/15/2024 3:09:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the SQL Server 2008 Service Pack 3 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2716436",
+        "name": "KB2716436"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-070",
+        "name": "MS12-070"
+    },
+    "detailsSection_file_version": "10.00.5512.00",
+    "detailsSection_file_name": [
+        "SQLServer2008-KB2716436-x86.exe",
+        "SQLServer2008-KB2716436-x64.exe",
+        "SQLServer2008-KB2716436-IA64.exe"
+    ],
+    "detailsSection_file_size": [
+        "50.5 MB",
+        "57.4 MB",
+        "73.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2008 SP3 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34873",
+    "downloadPreload": true
+}

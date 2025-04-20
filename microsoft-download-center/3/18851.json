@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Andy Leonard on Unit Testing your Database",
+    "downloadDescription": "Carl and Richard chat with Andy Leonard about database testing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080131ALeonard.zip",
+            "url": "https://download.microsoft.com/download/0/a/7/0a78336c-b089-4bf3-88d0-f26b55681366/20080131ALeonard.zip",
+            "size": "46261472",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Andy Leonard is a Solid Quality Mentor, SQL Server MVP, SQL Server database and Integration Services developer, and engineer. He is a co-author of Professional SQL Server 2005 Integration Services, Professional Software Testing with Visual Studio 2005 Team System: Tools for Software Developers and Test Engineers, and MCITP Self-Paced Training Kit (Exam 70-441): Designing Database Solutions by Using Microsoft SQL Server 2005. Andy founded and manages VSTeamSystemCentral.com in August 2005 and maintains two blogs there: Applied Team System and Applied Business Intelligence. He also blogs for SQLBlog.com. Andy's experience includes web application architecture and development, VB.Net, ASP, and ASP.Net; SQL Server Integration Services (SSIS); data warehouse development using SQL Server 2000 and 2005; and test-driven database development.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080131ALeonard.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.1 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18851",
+    "downloadPreload": true
+}

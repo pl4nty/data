@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Teams emergency calling labels",
+    "downloadDescription": "Contains emergency calling labels",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "emergency-calling-label-(en-us)-(v.1.0).zip",
+            "url": "https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip",
+            "size": "12354033",
+            "version": "1",
+            "datePublished": "7/15/2024 5:02:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a zip file that contains emergency calling labels for Microsoft Teams.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "emergency-calling-label-(en-us)-(v.1.0).zip"
+    ],
+    "detailsSection_file_size": [
+        "11.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not applicable",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol><li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n<li>Select <b> Open file</b>, or find the file on your device and open it.</li></ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102730",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "FSLogix 25.02",
+    "downloadDescription": "FSLogix 25.02",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FSLogix_25.02.zip",
+            "url": "https://download.microsoft.com/download/ca0afdc8-5387-4ca8-b5e5-16a583d0f6b8/FSLogix_25.02.zip",
+            "size": "94811366",
+            "version": "3.25.202.4223",
+            "datePublished": "3/21/2025 6:52:42 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release is a change in versioning and release structure. This update to v3 introduces a versioning that is date / time formatted and based on when the product was created. While not feature packed, we made significant updates and improvements to enhance overall stability. Additionally, this release has retired various features from the product and will no longer support 32-bit operating systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.25.202.4223",
+    "detailsSection_file_name": [
+        "FSLogix_25.02.zip"
+    ],
+    "detailsSection_file_size": [
+        "90.4 MB"
+    ],
+    "detailsSection_file_date": "3/21/2025",
+    "systemRequirementsSection": "<b>Eligibility</b><br>\n<u>You're eligible to use FSLogix if you have one of the following licenses:</u><br>\n<ul>\n  <li>Microsoft 365 E3/E5</li>\n  <li>Microsoft 365 A3/A5/ Student Use Benefits</li>\n  <li>Microsoft 365 F1/F3</li>\n  <li>Microsoft 365 Business</li>\n  <li>Windows 10/11 Enterprise E3/E5</li>\n  <li>Windows 10/11 Education A3/A5</li>\n  <li>Windows 10/11 VDA per user</li>\n  <li>Remote Desktop Services (RDS) Client Access License (CAL)</li>\n  <li>Remote Desktop Services (RDS) Subscriber Access License (SAL)</li>\n  <li>Azure Virtual Desktop per-user access license</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>Install FSLogix Apps (Core Product)</b><br>\n<ol>\n  <li>Extract the downloaded zip file.</li>\n  <li>Navigate to the directory where the files were extracted.</li>\n  <li>Double-click on <i>x64 (64-bit)</i>.</li>\n  <li>Double-click on <i>Release</i>.</li>\n  <li>Double-click on <i>FSLogixAppsSetup.exe</i>.</li>\n  <li>Agree to the licensing terms, select <b>Install</b>.</li>\n  <li>Reboot when complete.</li>\n</ol>\n<br>\n<b>FSLogix Apps Rule Editor</b><br>\n<ol>\n  <li>Extract the downloaded zip file.</li>\n  <li>Navigate to the directory where the files were extracted.</li>\n  <li>Double-click on <i>x64 (64-bit)</i>.</li>\n  <li>Double-click on <i>Release</i>.</li>\n  <li>Double-click on <i>FSLogixAppsRuleEditorSetup.exe</i>.</li>\n  <li>Agree to the licensing terms, select <b>Install</b>.</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "release Notes",
+            "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes#fslogix-2502-3252024223"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "108056",
+    "downloadPreload": true
+}

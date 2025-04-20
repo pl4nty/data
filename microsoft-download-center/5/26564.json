@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Updating the Uses of the Ledger Posting Framework",
+    "downloadDescription": "This document describes how to convert existing code patterns to the new patterns in the updated ledger posting framework in Microsoft Dynamics AX 2012. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Updating the Uses of the Ledger Posting Framework for Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/0/1/5/015e8cad-0417-4be5-8f6b-87dd28a8bed7/Updating the Uses of the Ledger Posting Framework for Microsoft Dynamics AX 2012.pdf",
+            "size": "375517",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:26:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The ledger posting framework is the API that is used to post to the general ledger in Microsoft Dynamics AX 2012. This document provides information that developers can leverage to update uses of the ledger posting framework in Microsoft Dynamics AX 2012. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Updating the Uses of the Ledger Posting Framework for Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "366.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26564",
+    "downloadPreload": true
+}

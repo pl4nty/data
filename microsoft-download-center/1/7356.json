@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Office Accounting 2009 Spanish Language Pack",
+    "downloadDescription": "Microsoft Office Accounting Language Packs for 2009 are designed to meet the needs of multilingual small businesses. Language Packs, can be installed onto any edition of the US version of Office Accounting 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MOA2009LangPack.msi",
+            "url": "https://download.microsoft.com/download/b/7/7/b772a929-2bc5-497d-9088-d962cf2b8627/MOA2009LangPack.msi",
+            "size": "52319744",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Bilingual capability at your fingertips</b>\n<br/><br/>\nMicrosoft Office Accounting Language Packs for 2009 are designed to meet the needs of multilingual small businesses. Language Packs, can be installed onto any edition of the US version of Office Accounting 2009. \n<br/><br/>\nYou will have the ability to customize your Office Accounting experience and to easily switch between your base language and your installed languages for your: \n<ul>\n<li>User Interface</li>\n<li>Offline Help</li>\n</ul>\nThe language preference located on the general tab in the programs preference dialog allows each user to select the desired language.\n<br/><br/>\nWhat that means for small businesses is increased productivity, collaboration, and effectiveness among your multilingual workers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MOA2009LangPack.msi"
+    ],
+    "detailsSection_file_size": [
+        "49.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following programs:</b>\n<br/>\n<ul>\n<li>Microsoft Office Accounting 2009</li>\n<li>Microsoft Office Word 2002 or later is required to create customized invoices, sales orders, quotes, customer credit memos, customer statements, and purchase orders</li>\n<li>Microsoft Internet Explorer\u00ae 6 or later, 32-bit browser only</li>\n</ul></li>\n</ul>\n<ul>\n<li><b>The following is also required:</b><br/>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM or more</li>\n<li>300 MB of available hard-disk space; a portion of this disk space will be freed after installation if the original download package is removed from the hard drive</li>\n<li>1024 x 768 or higher-resolution monitor</li>\n<li>Internet functionality requires Internet access (fees may apply)</li>\n</ul></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button for the locale that you want and saving the file to your hard disk.\n<ul>\n<li>United States (English): <b>MOA2009LangPack.msi</b>\n</li></ul>\n</li>\n<li>On your hard disk, double-click the file that you downloaded in step 1 to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this program, on the taskbar, click the <b>Start</b> button, click <b>All Programs</b>, click <b>Microsoft Office</b>, and then click <b>Microsoft Office Accounting 2009</b>.\nYou can change the language setting located on the general tab in the programs preference dialog.\n<br/>\n<br/>\n<br/>\n<b>To uninstall this download:</b>\n<br/>\n<br/>\n<ol>\n<li>On the <b>Start</b> menu click <b>Control Panel</b>.</li>\n<li>\n<ul>\n<li>In Windows XP, double-click <b>Add/Remove Programs</b>.</li>\n<li>In Windows Vista, double-click <b>Programs and Features</b>.</li>\n</ul>\n</li>\n<li>In the list of currently installed programs, select <b>Microsoft Office Accounting 2009 Spanish Language Pack</b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office downloads",
+            "url": "http://office.microsoft.com/downloads/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7356",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Steps to Run Attunity Replicate for Microsoft Migrations v1.0",
+    "downloadDescription": "Steps to Run Attunity Replicate for Microsoft Migrations v1.0",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Steps to Run Attunity Replicate for Microsoft Migrations v1.0.pdf",
+            "url": "https://download.microsoft.com/download/4/0/a/40af07eb-c0e9-4ccd-98c8-68f9d1b5e651/Steps to Run Attunity Replicate for Microsoft Migrations v1.0.pdf",
+            "size": "1082461",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:05:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is meant to be used as a Quick Start Guide to migrate schema & data from \r\nOracle to Azure SQL DB using Attunity Replicate for Microsoft Migrations tool.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Steps to Run Attunity Replicate for Microsoft Migrations v1.0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a Whitepaper in the form of a pdf document. \r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103602",
+    "downloadPreload": true
+}

@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "SYSVOL Replication Migration Guide: FRS to DFS Replication",
+    "downloadDescription": "How to upgrade an existing domain and migrate replication of the SYSVOL folder to DFS Replication to improve the performance, scalability and reliability of SYSVOL replication.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SYSVOL Replication Migration Guide - FRS to DFS Replication.doc",
+            "url": "https://download.microsoft.com/download/7/e/3/7e32d5be-868b-4b96-a2e7-c74eed1522a6/SYSVOL Replication Migration Guide - FRS to DFS Replication.doc",
+            "size": "425984",
+            "version": "September 2009",
+            "datePublished": "7/15/2024 3:11:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To improve the performance, scalability and reliability of SYSVOL replication, use DFS Replication (DFS-R) to replicate the SYSVOL folder, which stores Group Policy objects and logon scripts. To do so, you can either create a new domain that uses the Windows Server 2008 domain functional level, or you can use the procedure that is discussed in this document to upgrade an existing domain and migrate replication to DFS Replication.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "September 2009",
+    "detailsSection_file_name": [
+        "SYSVOL Replication Migration Guide - FRS to DFS Replication.doc"
+    ],
+    "detailsSection_file_size": [
+        "416.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>.</li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "sysvol Replication Migration Guide: FRS to DFS Replication",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=93057"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4843",
+    "downloadPreload": true
+}

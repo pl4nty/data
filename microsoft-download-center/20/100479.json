@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 - KB4528140",
+    "downloadDescription": "Latest kernel fix for AX 2009 SP1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DynamicsAX2009-KB4528140-SP1-BinaryOnly.EXE",
+            "url": "https://download.microsoft.com/download/c/1/f/c1f05f94-433a-4beb-aee9-1dafebb53845/DynamicsAX2009-KB4528140-SP1-BinaryOnly.EXE",
+            "size": "116080640",
+            "version": "AX2009 SP1",
+            "datePublished": "7/15/2024 4:29:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Latest kernel fix for AX 2009 SP1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4528140",
+        "name": "KB4528140"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX2009 SP1",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB4528140-SP1-BinaryOnly.EXE"
+    ],
+    "detailsSection_file_size": [
+        "110.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "AX 2009 SP1 installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Extract the DynamicsAX2009-KB4528140-SP1-BinaryOnly.EXE file and run the axupdate.exe to apply the latest kernel. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100479",
+    "downloadPreload": true
+}

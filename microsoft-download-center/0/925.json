@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 10.0 White Paper: Recording Test Cases with the Macro System",
+    "downloadDescription": "This paper describes how to use the macro system in the Dexterity runtime to record test cases for use in regression testing.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RecordingTestCases.pdf",
+            "url": "https://download.microsoft.com/download/f/f/b/ffbdb321-98dd-4e8d-b864-3be3fb03cf56/RecordingTestCases.pdf",
+            "size": "332514",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:09:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RecordingTestCases.xps",
+            "url": "https://download.microsoft.com/download/f/f/b/ffbdb321-98dd-4e8d-b864-3be3fb03cf56/RecordingTestCases.xps",
+            "size": "423169",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:09:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document explains how to use the macro system provided by the Dexterity runtime to record test cases for your integrating application. After the test cases have been recorded, they can be used for regression testing. In regression testing, the macros are played back on future builds of your integrating application to verify that it is still functioning properly. <br /><br />\n\nThis document does not explain how to write test cases. Instead, it focuses on how to use the macro system to record test cases so that regression testing can be automated. Topics covered include:\n<UL><LI>Starting Data</LI>\n<LI>Setting up the Microsoft Dynamics GP Environment</LI>\n<LI>Recording a Test Case</LI>\n<LI>Tips When Recording Test Cases</LI>\n<LI>Application Problems When Recording Test Cases</LI>\n<LI>Running a Regression</LI>\n<LI>Verifying the Test Case Results</LI>\n<LI>Maintaining Test Case Macros</LI>\n<LI>Additional Resources</LI>\n<LI>Conclusion</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "RecordingTestCases.pdf",
+        "RecordingTestCases.xps"
+    ],
+    "detailsSection_file_size": [
+        "324.7 KB",
+        "413.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics GP 10.0, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=220476\">System requirements for Microsoft Dynamics GP 10.0</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "925",
+    "downloadPreload": true
+}

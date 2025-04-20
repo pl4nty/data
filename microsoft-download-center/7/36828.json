@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Server 2013 Capacity Calculator",
+    "downloadDescription": "A spreadsheet for calculating a user\u2019s hardware requirements based on information about users and traffic.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Lync_Server _2013 _Scenario _Based _Capacity _Calculator.xlsx",
+            "url": "https://download.microsoft.com/download/e/1/7/e17ebae3-fe5e-47a9-8974-ad284fe4b8cc/Lync_Server _2013 _Scenario _Based _Capacity _Calculator.xlsx",
+            "size": "36153",
+            "version": "2",
+            "datePublished": "12/15/2023 3:30:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Lync Server 2013 Capacity Planning Calculator Guide.docx",
+            "url": "https://download.microsoft.com/download/e/1/7/e17ebae3-fe5e-47a9-8974-ad284fe4b8cc/Lync Server 2013 Capacity Planning Calculator Guide.docx",
+            "size": "25622",
+            "version": "2",
+            "datePublished": "12/15/2023 3:30:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A spreadsheet for calculating a user\u2019s hardware requirements based on information that the admin supplies about number of users, types of communication, and expected traffic. Includes a Microsoft Word document explaining the tool and how to use it.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Lync_Server _2013 _Scenario _Based _Capacity _Calculator.xlsx",
+        "Lync Server 2013 Capacity Planning Calculator Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "35.3 KB",
+        "25.0 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Excel document. Users who do not have Microsoft Excel can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=212305\">Excel Viewer</A>.</li>\r\n<li>The documentation file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\">Word Viewer</A>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36828",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Overview of the Microsoft RTAudio Speech codec",
+    "downloadDescription": "This document provides an overview of the Speech codec used in Microsoft Real Time Communication platforms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RTAudio Overview.doc",
+            "url": "https://download.microsoft.com/download/3/8/0/3803da3e-3f1e-4faa-ba22-b217385df052/RTAudio Overview.doc",
+            "size": "172544",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The document provides a functional description of the Microsoft RTAudip speech encoder and decoder. A list of core capabilities is provided. Also, a detailed list of features such as rate control and forward error correction is included to show how the codec can be used in Voice over IP and other IP Ntwork-based media communication solutions. Finally, the document includes information for licensing this technology from Microsoft Corporation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "RTAudio Overview.doc"
+    ],
+    "detailsSection_file_size": [
+        "168.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>RTAudio Overview.doc</b> file on your hard disk to open the document. </li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the file as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>RTAudio Overview.doc</b>.\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "more Office downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7515",
+    "downloadPreload": true
+}

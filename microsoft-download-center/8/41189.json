@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Genetec Case Study",
+    "downloadDescription": "Video security provider offers customers cloud-based security and reliability",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Genetec_Case_Study.pdf",
+            "url": "https://download.microsoft.com/download/5/8/e/58ed9d98-1f4e-4a55-ad4f-445d92e08ac7/Genetec_Case_Study.pdf",
+            "size": "322787",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:17:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Genetec developed a cloud-based solution, creating its Stratocast application for deployment on the Windows Azure Platform.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Genetec_Case_Study.pdf"
+    ],
+    "detailsSection_file_size": [
+        "315.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41189",
+    "downloadPreload": true
+}

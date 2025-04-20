@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Advanced Bank Reconciliation \u2013 Implementation, and Processing and Troubleshooting white papers",
+    "downloadDescription": "In Microsoft Dynamics AX 2012 R2, you can import electronic bank statements and reconcile the imported bank statements with bank documents.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Electronic banking_advanced bank reconciliation.pdf",
+            "url": "https://download.microsoft.com/download/5/7/a/57aeb3b9-cd9f-4e7a-96c4-cd82ebfd8210/Electronic banking_advanced bank reconciliation.pdf",
+            "size": "1164933",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Bank reconciliation_implementation considerations.pdf",
+            "url": "https://download.microsoft.com/download/5/7/a/57aeb3b9-cd9f-4e7a-96c4-cd82ebfd8210/Bank reconciliation_implementation considerations.pdf",
+            "size": "796155",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "If there are issues with the import process, the Advanced Bank Reconciliation \u2013 Processing and Troubleshooting white paper provides some steps to debug issues between .xslt files and the file being imported, as well as troubleshooting issues. In March 2015, we added the Bank reconciliation: Implementation considerations white paper. This white paper describes business scenarios related to reconciling bank accounts and the steps to take in each of them. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Electronic banking_advanced bank reconciliation.pdf",
+        "Bank reconciliation_implementation considerations.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "777.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39090",
+    "downloadPreload": true
+}

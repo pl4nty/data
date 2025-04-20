@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server\u00ae 2022 for Microsoft\u00ae Windows Latest Cumulative Update",
+    "downloadDescription": "Cumulative Update Package 18 for SQL Server 2022 - KB5050771",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2022-KB5050771-x64.exe",
+            "url": "https://download.microsoft.com/download/a89001cb-9c99-48d3-9f14-ded054b35fe4/SQLServer2022-KB5050771-x64.exe",
+            "size": "483605760",
+            "version": "16.0.4185.3",
+            "datePublished": "3/13/2025 4:42:07 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "<b>The latest Cumulative Update (CU) download is the most recent CU released for SQL Server 2022 and contains all updates released since the release of SQL Server 2022 RTM.</b>\n<br />\n<ul>\n  <li>This Cumulative Update includes all fixes from all previous RTM Cumulative Updates, therefore it can be installed to resolve issues fixed in any previous RTM CU</li>\n  <li>The latest 2022 update is <a name=\"KB5050771\"></a><a href=\"https://learn.microsoft.com/troubleshoot/sql/releases/sqlserver-2022/cumulativeupdate18\">CU18 - KB5050771</a></li>\n    </ul><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4185.3",
+    "detailsSection_file_name": [
+        "SQLServer2022-KB5050771-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "461.2 MB"
+    ],
+    "detailsSection_file_date": "3/13/2025",
+    "systemRequirementsSection": "<br />\n      For complete system requirements, please reference the detailed <a href=\"https://learn.microsoft.com/en-us/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server-2022?view=sql-server-ver16\">Systems Requirements</a> page.\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<br />\nAfter the download has completed, execute the download package on the system where the SQL Server components to be updated are installed and follow the instructions.\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105013",
+    "downloadPreload": true
+}

@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 Performance and Scalability Guide",
+    "downloadDescription": "This guide provides information about Microsoft Exchange Server 2003 performance and scalability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3Perf_ScalGuide.doc",
+            "url": "https://download.microsoft.com/download/f/7/f/f7fedc04-ecd8-4489-9297-97025f4aa111/E2k3Perf_ScalGuide.doc",
+            "size": "1266688",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This guide provides information about Microsoft Exchange Server 2003 performance and scalability. You will learn about the various factors that affect performance, and it provides recommendations about how to optimize your Exchange 2003 environment. Finally, the guide reviews how Exchange performs under various user loads and provides a method to determine your hardware needs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3Perf_ScalGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "exchange Server 2003 Deployment Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47569"
+        },
+        {
+            "title": "troubleshooting Exchange Server 2003 Performance",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47588"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "606",
+    "downloadPreload": true
+}

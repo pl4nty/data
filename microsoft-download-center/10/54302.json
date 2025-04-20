@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Security Incident Management in Microsoft Office 365",
+    "downloadDescription": "How Microsoft handles security incidents in Office 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office 365 Security Incident Management.pdf",
+            "url": "https://download.microsoft.com/download/2/f/1/2f16a9ca-8d4f-4bb5-8f85-3a362131a95b/Office 365 Security Incident Management.pdf",
+            "size": "978578",
+            "version": "2.0",
+            "datePublished": "7/15/2024 4:36:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes how Microsoft handles security incidents in Microsoft Office 365.  Microsoft works continuously to provide highly secure, enterprise-grade services for Office 365 customers. This document describes how Microsoft handles security incidents in Office 365. A security incident refers to any unlawful access to customer data stored on Microsoft\u2019s equipment or in Microsoft\u2019s facilities, or unauthorized access to such equipment or facilities that has the potential to result in the loss, disclosure, or alteration of customer data. Microsoft\u2019s goals when responding to security incidents are to protect customer data and the Office 365 services.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Office 365 Security Incident Management.pdf"
+    ],
+    "detailsSection_file_size": [
+        "955.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Macintosh",
+        "TabletPC",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Phone 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download PDF file and open with a PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54302",
+    "downloadPreload": true
+}

@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for the Microsoft Analytics Platform System",
+    "downloadDescription": "This management pack provides capabilities to discover, monitor, and manage your Analytics Platform System (APS), formally known as the SQL Server 2012 Parallel Data Warehouse appliance (PDW). The management pack simplifies the monitoring process for APS.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "APSMP.msi",
+            "url": "https://download.microsoft.com/download/6/d/0/6d0251e4-b365-4567-892d-43f2c95e03c4/APSMP.msi",
+            "size": "954368",
+            "version": "1",
+            "datePublished": "7/15/2024 3:53:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "APS_MPGuide.docx",
+            "url": "https://download.microsoft.com/download/6/d/0/6d0251e4-b365-4567-892d-43f2c95e03c4/APS_MPGuide.docx",
+            "size": "804063",
+            "version": "1",
+            "datePublished": "7/15/2024 3:53:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Management Pack for Microsoft Analytics Platform System provides capabilities to discover, monitor, and manage your Microsoft APS. The management pack simplifies the monitoring process for APS. This version of management packs has also added monitoring for the new components that are added in APS.\r\n<br/>\r\n<br/>\r\nIn addition to health monitoring capabilities, this monitoring pack includes a custom diagram view to visualize appliance health. The custom view has detailed knowledge about the health states for the hardware and software components. The custom view enables near real-time diagnosis and resolution of detected issues.\r\n<br/>\r\n<br/>\r\n<b>Important Pre-Requisite Notes: </b> <br/>\r\nYou need to import the SQL Server Base Appliance Management Pack before importing the Analytics Platform System Management Pack. You can download the SQL Server Appliance Base Management Pack <a href=\"http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=11436\">here </a>\r\n<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThe following list gives an overview of the features of this management pack for APS. Refer to the Management Pack for APS guide for more details.  \r\n<br/>\r\n<ul>\r\n<li> Discovers APS, including the hardware manufacturer. </li>\r\n<li> Monitors both hardware and software components of APS. This includes: </li>\r\n<ul>\r\n<li> The ability to roll up the overall health information across hardware and software components, across SQL Server PDW and HDInsight workloads. </li>\r\n<li> The ability to detect and monitor nodes that belong to different failover clusters. </li>\r\n<li> Custom diagram view to visually represent the APS hierarchy comprising of hardware and software components. This includes these three views: </li>\r\n<ul>\r\n<li> Appliance view \u2013 high level health information of the overall appliance health and their individual nodes.  </li>\r\n<li> Appliance nodes \u2013 view to represent the health of each of the nodes and their roles. </li>\r\n<li> Alerts view \u2013view for the IT operator to look at proactive monitoring alerts and take appropriate actions. </li>\r\n</ul>\r\n</ul>\r\n<li> Custom e-mail template to provide more detailed information regarding the alerts. </li>\r\n<li> Tasks to integrate with the various APS admin console views. </li>\r\n<li> Run-as profile to securely connect to APS appliance for discovery and monitoring. </li>\r\n</ul> \r\n<br/>\r\n<b>Release History </b>\r\n<br/>\r\n<ul>\r\n<li> 2/28/2014 - Original Release, version 2.1.0.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "APSMP.msi",
+        "APS_MPGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "932.0 KB",
+        "785.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li><b>Other Software: </b></li>\r\n<ul>\r\n<li>System Center Operations Manager Operations Manager 2007 R2. </li>\r\n<li>System Center Operations Manager 2012.  </li>\r\n<li>System Center Operations Manager 2012 R2. </li>\r\n<li>SQL Server 2012 Parallel Data Warehouse. </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please refer to MP Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42522",
+    "downloadPreload": true
+}

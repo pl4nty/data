@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Connecting SharePoint 2010 to Line-of-Business Systems to Deliver Business-Critical Solutions",
+    "downloadDescription": "Siloed information and processes can limit business performance and consume IT resources. This white paper discusses how enterprise architects can use SharePoint Server 2010 to connect users to business data that currently resides in disparate systems, allowing solutions that streamline processes and result in better, faster decisions. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Connecting SharePoint 2010 to LOB Systems Technical White Paper.docx",
+            "url": "https://download.microsoft.com/download/b/1/0/b10c4e97-11a7-48db-8ed4-a38362a03ec1/Connecting SharePoint 2010 to LOB Systems Technical White Paper.docx",
+            "size": "3286210",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Connecting SharePoint 2010 to LOB Systems Technical White Paper.pdf",
+            "url": "https://download.microsoft.com/download/b/1/0/b10c4e97-11a7-48db-8ed4-a38362a03ec1/Connecting SharePoint 2010 to LOB Systems Technical White Paper.pdf",
+            "size": "1184787",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Business users at every level of your organization should have access to important data and be connected to processes that enable them to support operations. However, critical business data often is stored in disparate systems, and ad hoc processes block efficiencies. Users frequently call on IT to assist them in reaching and reconciling this business data, which can divert important IT resources away from strategic work that positions IT as a business partner, rather than a cost center.<br/>\r\n<br/>\r\nThis white paper is intended for enterprise architects who have the challenge of providing organizations and end users with an easier way to access the information locked in back-end systems. Using the interoperability capabilities of Microsoft SharePoint Server Server 2010\u2014including Business Connectivity Services\u2014IT can build cost-effective, manageable integrations to deliver increased productivity and return on investment (ROI) to their business clients. <br/>\r\n<br/>\r\nYou can also download information about these solutions from the perspective of <a href=\"http://www.microsoft.com/download/en/details.aspx?id=28133\">technical decision makers</a> or <a href=\"http://www.microsoft.com/download/en/details.aspx?id=28156\">business decision makers</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Connecting SharePoint 2010 to LOB Systems Technical White Paper.docx",
+        "Connecting SharePoint 2010 to LOB Systems Technical White Paper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.1 MB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>To download and read a whitepaper, you must have Microsoft Word or Adobe Reader.</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI>\r\n<LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28812",
+    "downloadPreload": true
+}

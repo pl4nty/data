@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Network Assessment Tool",
+    "downloadDescription": "The Skype for Business Network Assessment Tool provides the ability to perform a simple test of network performance and network connectivity to determine how well the network would perform for a Microsoft Teams and Skype for Business Online calls.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftSkypeForBusinessNetworkAssessmentTool.exe",
+            "url": "https://download.microsoft.com/download/d/d/6/dd65ca90-94cf-4b10-88a2-67432d8eb78f/MicrosoftSkypeForBusinessNetworkAssessmentTool.exe",
+            "size": "25894992",
+            "version": "1.2.0.0",
+            "datePublished": "7/15/2024 4:56:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The tool tests the connection to Microsoft Network Edge by streaming a set of packets to the nearest edge site and back for approximately 20s for a configured number of iterations.  The tool reports:\r\n\r\nPC must meet the requirements for Skype for Business Online systems described here: \r\n\r\n<ol>\r\n<li><b>Network performance</b> \u2013 Test the connection to Microsoft Network Edge by streaming audio packets to the nearest edge site and back for approximately 17 seconds for a configured number of iterations. The tool collects, packet loss, jitter, round-trip latency and packet reorder percentage from each call. The results from set of test calls can be analyzed to determine if it meets the media quality and performance targets described here: <a href=\"https://support.office.com/en-us/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917  \">https://support.office.com/en-us/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917 </a>. These targets and testing apply for both <b>Microsoft Teams </b> and <b> Skype for Business Online </b> calls.</li>\r\n<li><b>Network connectivity</b> \u2013 Verify network and network elements between the test location and the Microsoft Network are correctly configured to enable communication to the IP addresses and ports needed for Microsoft Teams calls. The addresses and ports are described here: <a href=\"https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams\">https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams</a>. These tests are performed using UDP and TCP transport protocol. </li>\r\n</ol>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.0.0",
+    "detailsSection_file_name": [
+        "MicrosoftSkypeForBusinessNetworkAssessmentTool.exe"
+    ],
+    "detailsSection_file_size": [
+        "24.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7 or later</li>\r\n<li>PC must meet the requirements for Skype for Business Online systems described here: <a href=\"https://products.office.com/en-US/office-system-requirements#subscription-plans-section\">https://products.office.com/en-US/office-system-requirements#subscription-plans-section</a></li>\r\n<li>For Windows Server edition, ensure the Desktop Experience feature is enabled.</li>\r\n<li>For Windows N or KN versions, ensure the Media Feature pack is installed: <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=49919\">https://www.microsoft.com/en-us/download/details.aspx?id=49919</a></li>\r\n<li> Only a single instance of the tool running on PC instance. This tool is not intended for load/stress testing. </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "This download includes an installation guide (usage.docx) that should be read prior to beginning installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53885",
+    "downloadPreload": true
+}

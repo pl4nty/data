@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "AdaRank",
+    "downloadDescription": "The basic idea of AdaRank is constructing \u201cweak rankers\u201d repeatedly based on reweighted training queries and linearly combining the weak rankers for making ranking predictions. Last published: April 11, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AdaRank.zip",
+            "url": "https://download.microsoft.com/download/7/0/0/7004ea1f-4bc7-4c75-b002-879e35255a9c/AdaRank.zip",
+            "size": "933047",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:04:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The basic idea of AdaRank is constructing \u201cweak rankers\u201d repeatedly based on reweighted training queries and linearly combining the weak rankers for making ranking predictions. In learning, AdaRank minimizes a loss function directly defined on performance measures. The details of AdaRank can be found in the paper \u201cAdaRank: A Boosting Algorithm for Information Retrieval.\u201d.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AdaRank.zip"
+    ],
+    "detailsSection_file_size": [
+        "911.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52031",
+    "downloadPreload": true
+}

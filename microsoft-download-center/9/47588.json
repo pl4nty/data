@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Customer On Demand Diagnostics Tool",
+    "downloadDescription": "The Microsoft Customer On Demand Diagnostics tool tests connectivity with Domain Name Server (DNS) , ability to access the Internet, and ability of client to communicate with Exchange Online Dedicated client access servers. By downloading Customer On Demand Diagnostics you are hereby consenting to the installation of this program to analyze Microsoft Exchange Service programs on your computer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CustomerOnDemandDiagnostics.zip",
+            "url": "https://download.microsoft.com/download/2/0/1/201f2baa-ca6a-4c29-8ddb-00dd3b6f78b5/CustomerOnDemandDiagnostics.zip",
+            "size": "687414",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:44:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The CODD tool is used to address access issues that members of your organization are experiencing when\r\nattempting to use Office 365 Dedicated services. The following, for example, represent possible issues that\r\ncan occur when attempting to access Exchange Online Dedicated:\r\n<br/>\r\nOutlook Web App (OWA) main page failing to load or unable to interact with the Client Access server that provides OWA access<br/>\r\nMail transport (SMTP related) issues<br/>\r\nOutlook client connectivity failures<br/>\r\n\r\nIn addition to interaction with your servers and network equipment, the tests performed by the tool involve interaction with Exchange Online Dedicated. Even though the tests involve the Exchange service, results of several of the tests can be useful for troubleshooting issues involving other Office 365\r\nDedicated services.\r\n<br/>\r\nBy downloading Customer On Demand Diagnostics you are hereby consenting to the installation of this program to analyze Microsoft Exchange Service programs on your computer, review our <a href=\"http://www.microsoft.com/privacystatement/en-us/OnlineServices/default.aspx\" target=\"_blank\">Privacy Statement</a>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CustomerOnDemandDiagnostics.zip"
+    ],
+    "detailsSection_file_size": [
+        "671.3 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "The following minimum version of the Microsoft .NET Framework is required:\r\n<br/>\r\n<ul>\r\n<li> Microsoft .NET Framework Version 4.5</li>\r\n</ul>\r\n\u00a0\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To download and execute this program, follow these steps: \r\n\u00a0\r\n<ol>\r\n<li> Click the <b>Download</b> button on this page, and then save <b>CustomerOnDemand.zip</b> to your hard disk.</li>\r\n<li> Extract the CustomerOnDemand.zip on your hard disk.</li>\r\n<li> Double-click the customerondemand.exe file on your hard disk to start the application</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47588",
+    "downloadPreload": true
+}

@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Live Meeting 2005 Document: Live Meeting 2005 Registration Quick Start Administrator Guide",
+    "downloadDescription": "The Live Meeting 2005 Registration Quick Start Administrator Guide provides information to help customers to start administering Live Meeting Registration.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RegistrationAdminQuickStart.doc",
+            "url": "https://download.microsoft.com/download/6/1/6/616d6ee7-ebd7-4ddd-9032-feda84afaab1/RegistrationAdminQuickStart.doc",
+            "size": "237056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Live Meeting 2005 Registration is a feature set of Live Meeting Professional Edition that allows meeting organizers to create event registration pages and manage the registration process for marketing events, training seminars, or any session where an organization needs to track or control attendance.<br /><br />\nLive Meeting administrators not only have visibility to all events created using Live Meeting Registration, they can also establish default settings that facilitate the rapid creation of events for their meeting organizers.<br /><br />\nThis Quick Start guide provide basic instruction for administrators on establishing the two primary default settings in Live Meeting Registration:<br />\n<ul><li>default preferences for meetings that are added to event schedules and</li>\n<li>default branding for event registration pages</li></ul><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "RegistrationAdminQuickStart.doc"
+    ],
+    "detailsSection_file_size": [
+        "231.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This download applies to the following Live Meeting application:</b> <br />\n<ul><li>Live Meeting 2005</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows 98",
+        "Windows ME",
+        "Windows Server 2003",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To download this document:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the <b>RegistrationAdminQuickStart.doc</b> file on your hard disk to open the document.</li>\n\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the document as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b>RegistrationAdminQuickStart.doc</b>.",
+    "relatedResourcesSection": [
+        {
+            "title": "live Meeting Intranet Portal",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=40&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=96cbbabe-f4fd-48db-a298-ad8ce2a65450&u=http%3a%2f%2fwww.microsoft.com%2fdownloads%2fdetails.aspx%3fFamilyId%3d429BB528-FD1B-45B7-AF2B-CBBF4A8E65FF%26displa"
+        },
+        {
+            "title": "live Meeting Home Page",
+            "url": "http://office.microsoft.com/home/office.aspx?assetid=FX010909711033&CTT=6&Origin=EC010963431033"
+        },
+        {
+            "title": "live Meeting on Office Online",
+            "url": "http://office.microsoft.com/en-us/FX010909711033.aspx"
+        },
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1687",
+    "downloadPreload": true
+}

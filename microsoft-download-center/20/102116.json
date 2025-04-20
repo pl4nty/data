@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Discovery Management Pack for AD CS 2016 TLS 1.2 Support",
+    "downloadDescription": "ADCS Discovery Management Pack 2016 with TLS 1.2 Support",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Windows Active Directory Certificate Services 2016 Discovery TLS 1.2.zip",
+            "url": "https://download.microsoft.com/download/f/9/0/f9020b79-a192-4281-99c3-b54ff2f2a986/Microsoft Windows Active Directory Certificate Services 2016 Discovery TLS 1.2.zip",
+            "size": "249282",
+            "version": "10.0.0.1",
+            "datePublished": "1/15/2024 4:25:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This discovery management pack for ADCS adds support for TLS 1.2",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.0.1",
+    "detailsSection_file_name": [
+        "Microsoft Windows Active Directory Certificate Services 2016 Discovery TLS 1.2.zip"
+    ],
+    "detailsSection_file_size": [
+        "243.4 KB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows Server 2016\r\n\r\nSystem Center Operations Manager 2012 and above",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer the MP guide\r\nIncludes all languages supported by management packs.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102116",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Field Service Automation Sample Data v3",
+    "downloadDescription": "The Field Service sample data package installs the \"Fabrikam Manufacturing Master Data\" (v3.0.0.0) solution with approximately 1.3k records across ~30 entities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "v902FSMasterData_3_0_0_6.exe",
+            "url": "https://download.microsoft.com/download/6/5/3/653105c0-4c19-47d2-a069-dc6bc0c21cbf/v902FSMasterData_3_0_0_6.exe",
+            "size": "14716248",
+            "version": "v3.0.0.0",
+            "datePublished": "7/15/2024 4:45:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "To become familiar with Dynamics 365 for Field Service, it's useful to have a small, pre-configured dataset that makes it easy to trace through end to end scenarios.\r\n\r\nFor this purpose, we've created a seperate sample data installation package (English-language only at this time) that makes it easier to explore and learn about FS.\r\nRunning this install performs the following:\r\n1) The package will provide setup data which will default behaviour of Field Service\r\n2) Imports sample data such as Bookable Resources, Roles and other reference data.\r\n\r\nIMPORTANT: Currently, there is no way to un-install this sample data. This should only be used on demonstration, evaluation, training and test systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v3.0.0.0",
+    "detailsSection_file_name": [
+        "v902FSMasterData_3_0_0_6.exe"
+    ],
+    "detailsSection_file_size": [
+        "14.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics 365(v9.0) with Field Service (v8+) ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Please visit \"https://aka.ms/fpsrefdata\" for the latest and greatest instructions.\r\nDownload the self-extracting file, extract contents to a working folder and update the necessary configuration files as specified in the instructions in the PkgFolder sub-folder.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57353",
+    "downloadPreload": true
+}

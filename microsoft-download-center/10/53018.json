@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Purview Information Protection client",
+    "downloadDescription": "Install the Microsoft Purview Information Protection client (PurviewInfoProtection) for information protection experiences on Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PurviewInfoProtection.exe",
+            "url": "https://download.microsoft.com/download/5e62f7f5-d616-49f8-b506-f1c6b4f79ba7/PurviewInfoProtection.exe",
+            "size": "150315944",
+            "version": "3.1.218.0",
+            "datePublished": "4/7/2025 10:36:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PurviewInfoProtection.msi",
+            "url": "https://download.microsoft.com/download/5e62f7f5-d616-49f8-b506-f1c6b4f79ba7/PurviewInfoProtection.msi",
+            "size": "150552576",
+            "version": "3.1.218.0",
+            "datePublished": "4/7/2025 10:36:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br/>\nThe <b>Microsoft Purview Information Protection client</b> helps you classify and label data in your organization at the time of creation, as well as apply protection, based on encryption and usage rights for sensitive data. Labels, and protection are persistent, traveling with the data throughout its lifecycle, so that it\u2019s detectable and controlled at all times \u2013 regardless of where it\u2019s stored or with whom it\u2019s shared \u2013 internally or externally.\n<br/>\n<br/>For more information, see <a href=\"https://azure.microsoft.com/services/information-protection/\">the Microsoft Purview Information Protection site</a>.\n<br/>\n<br/>\n<b>Microsoft Purview Information Protection client in General Availability:</b> <a href=\"https://learn.microsoft.com/purview/information-protection-client-relnotes#version-312180\">version 3.1.218.0</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.218.0",
+    "detailsSection_file_name": [
+        "PurviewInfoProtection.exe",
+        "PurviewInfoProtection.msi"
+    ],
+    "detailsSection_file_size": [
+        "143.4 MB",
+        "143.6 MB"
+    ],
+    "detailsSection_file_date": "4/7/2025",
+    "systemRequirementsSection": "<br/>List of <a href=\"https://learn.microsoft.com/purview/information-protection-client#requirements-for-deploying-the-information-protection-client\">prequisites</a> is in the documentation<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<b>Install the Microsoft Purview Information Protection client- instructions:</b><br/>\n<a href=\"https://learn.microsoft.com/purview/information-protection-client#install-or-upgrade-the-information-protection-client\"> Extend sensitivity labeling on Windows</a>\n\n<br/>\n\n<br/> For more information, see our <a href=\"https://learn.microsoft.com/purview/information-protection-client\">technical documentation.</a><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53018",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront UAG DirectAccess Proof of Concept Lab Guide",
+    "downloadDescription": "Step by step instructions for creating a UAG DirectAccess Proof of Concept lab",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "POC_Lab_Guide.docx",
+            "url": "https://download.microsoft.com/download/8/e/7/8e7ac459-2678-450d-b710-227ff57f8a4a/POC_Lab_Guide.docx",
+            "size": "638224",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:14:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Forefront UAG DirectAccess extends the benefits of Windows DirectAccess across your infrastructure by enhancing availability and scalability, as well as simplifying deployments and ongoing management. This paper contains an introduction to DirectAccess and step-by-step instructions for creating a Proof of Concept test lab that breaks out the UAG DirectAccess server and DirectAccess client machines into a forest separate from the production forest.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "POC_Lab_Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "623.3 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9949",
+    "downloadPreload": true
+}

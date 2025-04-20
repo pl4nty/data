@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Adoption and Training - Awareness Resources",
+    "downloadDescription": "Awareness resources for Lync Adoption and Training, including email templates, form templates for sign-up and feedback, and poster templates",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncAwarenessResources.zip",
+            "url": "https://download.microsoft.com/download/2/e/7/2e7da857-c000-44e0-9010-35e0bb01e06f/LyncAwarenessResources.zip",
+            "size": "5157109",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains Awareness Resources, including email templates for a pilot program, form templates for signing users up for a Lync pilot program, and poster and t-shirt templates for creating posters and t-shirts to help generate excitement and awareness for Lync in an organization. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LyncAwarenessResources.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: Windows 2000. Windows Vista; Windows XP; Windows 7. This download works with the following Office applications: Microsoft Office 2003; Microsoft Office 2007; Microsoft Office Word 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the file to a directory on your computer. After you save the file, extract the .zip file to a folder. To remove the download, delete the file from the directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8737",
+    "downloadPreload": true
+}

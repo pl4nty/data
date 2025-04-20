@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Office 2010: Developer Map Poster",
+    "downloadDescription": "The Microsoft Office 2010 Developer Map helps you visualize the different kinds of applications, services, client/server data-access technologies, on-premise servers, platform products and technologies, and tools that can help developers build multiple line-of-business solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office2010DevMapPoster.pdf",
+            "url": "https://download.microsoft.com/download/8/3/c/83ca5abd-29f3-4538-9b8c-879b3e09dd2c/Office2010DevMapPoster.pdf",
+            "size": "48210336",
+            "version": "Jan11",
+            "datePublished": "7/15/2024 3:15:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains a .pdf version of the Office 2010 Developer Map poster. The poster highlights the following:\r\n<ul>\r\n<li>Office 2010 development</li>\r\n<li>Office 2010 desktop applications</li>\r\n<li>Office Mobile applications</li>\r\n<li>Office 365 and Office Web Apps</li>\r\n<li>Client/server data-access technologies for custom solutions</li>\r\n<li>On-premise servers</li>\r\n<li>Tools</li>\r\n<li>Platform products and technologies</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jan11",
+    "detailsSection_file_name": [
+        "Office2010DevMapPoster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "46.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Adobe Reader</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<br/>\r\n<ul>\r\n<li>Download the file by clicking the <b>Download</b> link and saving the file to your hard disk.</li>\r\n</ul>\r\n<br/>\r\n\r\nThere is no removal feature for this download.\r\n\r\n",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office 2010 Developer Map",
+            "url": "http://msdn.microsoft.com/office2010devmap"
+        },
+        {
+            "title": "office 2010 Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/ee513173.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20802",
+    "downloadPreload": true
+}

@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "User profile properties and profile synchronization planning worksheets for SharePoint Server 2010",
+    "downloadDescription": "The following planning worksheets can assist you when planning user profiles or planning and configuring profile synchronization.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Profile synchronization planning worksheet.xls",
+            "url": "https://download.microsoft.com/download/3/5/a/35ab14c9-dd2d-49da-9c93-22301b49e706/Profile synchronization planning worksheet.xls",
+            "size": "40960",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "External content type planning worksheet.xls",
+            "url": "https://download.microsoft.com/download/3/5/a/35ab14c9-dd2d-49da-9c93-22301b49e706/External content type planning worksheet.xls",
+            "size": "31744",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Connection planning worksheet.xls",
+            "url": "https://download.microsoft.com/download/3/5/a/35ab14c9-dd2d-49da-9c93-22301b49e706/Connection planning worksheet.xls",
+            "size": "49152",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "User Profile Properties Worksheet.xls",
+            "url": "https://download.microsoft.com/download/3/5/a/35ab14c9-dd2d-49da-9c93-22301b49e706/User Profile Properties Worksheet.xls",
+            "size": "45056",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "There are four worksheets available for download, as follow:\r\n<ul>\r\n<li>The User Profile Properties Planning worksheet should be used with the <a href=\"http://technet.microsoft.com/en-us/library/ee721054.aspx\">Plan user profiles</a> (http://technet.microsoft.com/en-us/library/ee721054.aspx), <a href=\"http://technet.microsoft.com/en-us/library/ff182925.aspx\">Plan for profile synchronization</a> (http://technet.microsoft.com/en-us/library/ff182925.aspx), and <a href=\"http://technet.microsoft.com/en-us/library/ee721049.aspx\">Configure profile synchronization</a> (http://technet.microsoft.com/en-us/library/ee721049.aspx) topics on TechNet.</li>\r\n<li>The Connection Planning worksheet specifies information that you will need to gather for each directory service with which you will synchronize profile information. It should be used with the <a href=\"http://technet.microsoft.com/en-us/library/ff182925.aspx\">Plan for profile synchronization</a> (http://technet.microsoft.com/en-us/library/ff182925.aspx) and <a href=\"http://technet.microsoft.com/en-us/library/ee721049.aspx\">Configure profile synchronization</a> (http://technet.microsoft.com/en-us/library/ee721049.aspx) topics on TechNet.</li>\r\n<li>The External Content Types Planning worksheet should be used with the <a href=\"http://technet.microsoft.com/en-us/library/ff182925.aspx\">Plan for profile synchronization</a> (http://technet.microsoft.com/en-us/library/ff182925.aspx) topic on TechNet if you need to synchronize user profiles with business systems.</li>\r\n<li>The <b>Profile sync</b> worksheet tab of the Profile Synchronization Planning worksheet specifies information that you might need to gather if you have not already configured the SharePoint Server infrastructure. It is used with the <a href=\"http://technet.microsoft.com/en-us/library/ee721049.aspx\">Configure profile synchronization</a> (http://technet.microsoft.com/en-us/library/ee721049.aspx) topic on TechNet. The <b>Property mapping</b> worksheet tab is obsolete; it has been replaced by the User Profile Properties Planning worksheet.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Profile synchronization planning worksheet.xls",
+        "External content type planning worksheet.xls",
+        "Connection planning worksheet.xls",
+        "User Profile Properties Worksheet.xls"
+    ],
+    "detailsSection_file_size": [
+        "40.0 KB",
+        "31.0 KB",
+        "48.0 KB",
+        "44.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Excel",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page.</li>\r\n<li>Save the file to your hard disk.</li>\r\n<li>Find the file on your hard disk and double-click it to open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16076",
+    "downloadPreload": true
+}

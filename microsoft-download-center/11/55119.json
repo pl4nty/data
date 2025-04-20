@@ -1,0 +1,125 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Invoicing Connector",
+    "downloadDescription": "If you\u2019re using QuickBooks Desktop back at the office, but you\u2019re usually out at customer sites, Microsoft Invoicing can help you do some accounting while you\u2019re on the move.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Invoicing connector_en-ca.msi",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/Microsoft Invoicing connector_en-ca.msi",
+            "size": "4354048",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Invoicing connector_fr-ca.msi",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/Microsoft Invoicing connector_fr-ca.msi",
+            "size": "4341760",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLT - Microsoft Invoicing Connector Fr.pdf",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/SLT - Microsoft Invoicing Connector Fr.pdf",
+            "size": "178893",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "3PN - Microsoft Invoicing Connector.pdf",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/3PN - Microsoft Invoicing Connector.pdf",
+            "size": "388492",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SLT - Microsoft Invoicing Connector En.pdf",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/SLT - Microsoft Invoicing Connector En.pdf",
+            "size": "172129",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Invoicing connector_en-us.msi",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/Microsoft Invoicing connector_en-us.msi",
+            "size": "4354048",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Invoicing connector_en-gb.msi",
+            "url": "https://download.microsoft.com/download/1/c/8/1c874dd7-5835-4941-8c23-820cd9d665b0/Microsoft Invoicing connector_en-gb.msi",
+            "size": "4354048",
+            "version": "1.0.8.128",
+            "datePublished": "7/15/2024 4:47:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<BR>Microsoft Invoicing connector is the component of Microsoft Invoicing that lets you share data with QuickBooks Desktop through your Office 365 account. It watches for changes in information in the two apps, and keeps things up-to-date.</BR>\r\n\r\n<BR>Use the Microsoft Invoicing connector to manage data connections between Microsoft Invoicing and QuickBooks Desktop. This lets the apps share the data that invoices require:</BR>\r\n<UL>\u2022 Customer names, and contact information like phone numbers, email addresses, and a postal address. For the name, we share the name from the Full Name field in QuickBooks Desktop.</UL>\r\n<UL>\u2022 Items, which we always shared as non-inventory, and marked as taxable.</UL>\r\n<UL>\u2022 Tax settings, so that invoices apply correct tax amounts.</UL>\r\n\r\n<BR>With Microsoft Invoicing connector, you can do things like:</BR>\r\n<UL>\u2022 Monitor the status of connections, including companies and databases</UL>\r\n<UL>\u2022 Share data whenever you want</UL>\r\n<UL>\u2022 Connect to new QuickBooks Desktop companies</UL>\r\n<UL>\u2022 Stop sharing with a QuickBooks Desktop companies</UL>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.8.128",
+    "detailsSection_file_name": [
+        "Microsoft Invoicing connector_en-ca.msi",
+        "Microsoft Invoicing connector_fr-ca.msi",
+        "SLT - Microsoft Invoicing Connector Fr.pdf",
+        "3PN - Microsoft Invoicing Connector.pdf",
+        "SLT - Microsoft Invoicing Connector En.pdf",
+        "Microsoft Invoicing connector_en-us.msi",
+        "Microsoft Invoicing connector_en-gb.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB",
+        "4.1 MB",
+        "174.7 KB",
+        "379.4 KB",
+        "168.1 KB",
+        "4.2 MB",
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR>Before you install Microsoft Invoicing connector, make sure that your computer meets the following minimum software requirements:</BR>\r\n\r\n<BR><U>Supported Operating System</U></BR>\r\n<BR>Windows 8.1, Windows 10, or later.</BR>\r\n<BR></BR>\r\n<BR><U>Supported Office 365 plan</U></BR>\r\n<BR>Office 365 Business Premium</BR>\r\n<BR></BR>\r\n<BR><U>Supported versions of QuickBooks Desktop</U></BR>\r\n<BR>QuickBooks Pro 2016, QuickBooks Premier 2016, or later. We do not support any Mac Desktop versions.</BR>\r\n<BR></BR>\r\n<BR><U>Additional requirements</U></BR>\r\n<BR><UL>MSXML 4.3. You can install it for free from the Microsoft Download Center.</UL></BR>\r\n<BR><UL>.NET Framework 4.5.1 or later. This is also free on the Microsoft Download Center.</UL></BR>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<BR>To install this download:</BR>\r\n<OL>1. To download the setup file, choose Download, and then save the file on your computer.</OL>\r\n<OL>2. Run the installer, and follow the instructions on the screen to complete the installation.</OL>\r\n<BR></BR>\r\n<BR></BR>\r\n<BR>To remove this download:</BR>\r\n<OL>1. Delete the file Microsoft Invoicing connector_language code.msi.</OL>\r\n<OL>2. On the Start menu, point to Settings, and then choose Control Panel.</OL>\r\n<OL>3. In the list of installed programs, choose Microsoft Invocing connector, and then choose Remove or Add/Remove. If a dialog box appears, follow the instructions to remove the program.</OL>\r\n<OL>4. In the list of installed programs, choose Microsoft Invoicing connector, and then choose Remove or Add/Remove. If a dialog box appears, follow the instructions to remove the program.</OL>\r\n<OL>5. Choose Yes or OK to confirm that you want to remove the program.</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "msxml 4.3",
+            "url": "https://go.microsoft.com/fwlink/?linkid=839923"
+        },
+        {
+            "title": "get Help with Microsoft Invoicing",
+            "url": "https://portal.office.com/support/help.aspx?sid=invoice#/"
+        },
+        {
+            "title": ".NET Framework 4.5.2",
+            "url": "https://www.microsoft.com/en-us/download/confirmation.aspx?id=42643"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55119",
+    "downloadPreload": true
+}

@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Streets and Trips 2008 Construction Update",
+    "downloadDescription": "Download the latest construction data to keep your maps current.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ConstructionA7031618.dat",
+            "url": "https://download.microsoft.com/download/d/7/b/d7bd7578-19f7-4418-8b53-5eddf39944f9/ConstructionA7031618.dat",
+            "size": "113460",
+            "version": "2008",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the latest road construction data to keep your Streets and Trips 2008 maps current.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2008",
+    "detailsSection_file_name": [
+        "ConstructionA7031618.dat"
+    ],
+    "detailsSection_file_size": [
+        "110.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Close Streets & Trips.</LI><br />\n<LI>Click the <b>download</b> link to start the download.</LI><br />\n<LI>Click <b>Save</b>  or <b>Save this program to disk</b>.</LI><br />\n<LI>Save the file in the Data folder</LI> \n<UL><LI>For XP <br/><b>C:\\Documents and Settings\\&lt;User&gt;\\Local Settings\\Application Data\\Microsoft\\Microsoft Streets & Trips\\15.0\\Data</b><br/>\n<b><br/>NOTE:&nbsp;</b>&lt;User&gt; in the path string is the username logged into the computer.<br/></LI><br/>\n<LI>For Vista <br/>\n<b>C:\\Users\\&lt;User&gt;\\AppData\\Local\\Microsoft\\Microsoft Streets & Trips\\15.0\\Data </b>\n</LI>\n</UL>\n<LI>Restart Streets & Trips.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "streets and Trips Home Page",
+            "url": "http://www.microsoft.com/streets/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21613",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Database Compare (SSDBC) Utility",
+    "downloadDescription": "SQL Server Database Compare Utility",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SSDBCV1.3.6.zip",
+            "url": "https://download.microsoft.com/download/3/e/8/3e81f427-ff12-4847-b4c1-0982131e1d2a/SSDBCV1.3.6.zip",
+            "size": "8209936",
+            "version": "1.3.6",
+            "datePublished": "2/13/2025 5:07:05 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Utility to compare two SQL Server databases for differences and generate a differences script.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3.6",
+    "detailsSection_file_name": [
+        "SSDBCV1.3.6.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.8 MB"
+    ],
+    "detailsSection_file_date": "2/13/2025",
+    "systemRequirementsSection": "<UL>\r\n<li>Download the zip file to a Windows machine and unzip it into a local folder. Edit the app.config and run the utility.</li>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. </li>\r\n<li>Do the following:</li> \r\n<ul> \r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n</ul> \r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105766",
+    "downloadPreload": true
+}

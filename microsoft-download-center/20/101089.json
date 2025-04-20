@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "CVE-2020-1022 for Microsoft Dynamics NAV 2015",
+    "downloadDescription": "Security update for Microsoft Dynamics NAV 2015",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CVE-2020-1022.zip",
+            "url": "https://download.microsoft.com/download/e/d/a/edabe524-c8ac-49d4-ac1d-2134565d09c1/CVE-2020-1022.zip",
+            "size": "567924432",
+            "version": "8.0.51812",
+            "datePublished": "7/15/2024 4:22:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Follow the link to learn more about this release: \r\nhttps://portal.msrc.microsoft.com/en-us/security-guidance/advisory/CVE-2020-1022",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.0.51812",
+    "detailsSection_file_name": [
+        "CVE-2020-1022.zip"
+    ],
+    "detailsSection_file_size": [
+        "541.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System requirements for Microsoft Dynamics NAV 2015",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Install instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101089",
+    "downloadPreload": true
+}

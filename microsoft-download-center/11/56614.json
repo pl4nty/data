@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2012 R2 Update 3 fixes",
+    "downloadDescription": "This update fixes some issues of HPC Pack 2012 R2 Update 3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB4039431_x64.exe",
+            "url": "https://download.microsoft.com/download/3/2/1/3219256b-1317-49b6-b79a-5414938047db/KB4039431_x64.exe",
+            "size": "59263888",
+            "version": "4.05.5187",
+            "datePublished": "6/15/2024 4:50:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "KB4039431_x86.exe",
+            "url": "https://download.microsoft.com/download/3/2/1/3219256b-1317-49b6-b79a-5414938047db/KB4039431_x86.exe",
+            "size": "59194256",
+            "version": "4.05.5187",
+            "datePublished": "6/15/2024 4:50:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b>Fast Balanced Scheduling Mode</b> <br/>\r\nFast Balanced mode is a new mode in addition to Queued and Balanced mode. In this mode, cores are allocated to jobs according to their extended priority. Different from the Balanced mode which calculates balance quota among running jobs, the Fast Balanced mode calculate the balance quota among queued and running jobs together and the preemption in this mode happens in node group level and gracefully, so that it can achieve final balance state more efficiently.\r\nThe Fast Balanced mode has some constraints on job settings. Non-compatible jobs will fail with validation error.\r\n. To enable the fast balanced mode you need to run below powershell cmdlet:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp set-hpcclusterproperty -schedulingmode FastBalanced<br/>\r\n <br/>\r\nThis update fixes some known issue of HPC Pack 2012 R2 Update 3 as described as below<br/>\r\n<br/>\r\n<b>HPC Pack fixes</b> <br/>\r\n- Fix an issue which causes folder C:\\programdata\\Microsoft\\Crypto\\RSA\\MachineKeys being filled up with temporary files<br/>\r\n- In a rare case, HPCSync may fail with Access Denied error when moving the extracted temp folder to the target. We handle it a bit nicer this time.<br/>\r\n- Make the hard coded 4 hour and 15 minute auto grow timeout into a configurable parameter GrowTimeout. The default value is 60 minutes. You can change it through below cmdlet:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp set-hpcclusterproperty -growtimeout &ltyour_own_timeout&gt<br/>\r\n- Fix the issue that cluster manager keeps crashing after clicking \u201cNode Templates\u201d if there is un-approved node. <br/>\r\n- Fix the wrong display name issue in script ConfigARMAutoGrowShrinkCert.ps1.<br/>\r\n- The speed of selecting a node in the node list in HPC Cluster Manager is improved, especially when there are a large number of nodes in the cluster. <br/>\r\n- Now you can modify task commandline within job submission filter which is not possible before this fix. <br/>\r\n- Add command \u201chpccred listcreds\u201d for listing credentials. Add parameter \u201cowner\u201d for command \u201chpccred setcreds\u201d so that cluster admin could set credentials for other users. <br/>\r\n- Automatically recover the scheduler service in case the https server is faulted <br/>\r\n- Fix a memory leak in HpcBrokerWorker which happens when there are lots of requests.<br/>\r\n- Auto grow would count the online/OK nodes in the excluded node groups for the capacity check. E.g. if there are 2 online/OK nodes in the excluded node group and the queued jobs/tasks require 3 nodes, it would be possible to grow only 1 node for the workload. <br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.05.5187",
+    "detailsSection_file_name": [
+        "KB4039431_x64.exe",
+        "KB4039431_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "56.5 MB",
+        "56.5 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "HPC Pack 2012 R2 Update 3 (build 4.5.5079.0) with QFE 3189996 (build 4.5.5161.0) installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This update needs to be run on all head nodes, broker nodes, workstation nodes, compute nodes and clients<br/>\r\n<br/>\r\nBefore applying the update, please check if HPC Pack 2012 R2 Update 3 is installed. The version number (in HPC Cluster Manager, click <b>Help</b>><b>About</b>) should be 4.5.5161.0 (or 4.5.5168 if KB4032368 installed, 4.5.5170 if KB4035415 installed). Please take all nodes offline and ensure all active jobs finished or canceled. If there are Azure nodes, please make sure they are stopped before applying this patch. After all active operations on the cluster have stopped, please back up the head node (or head nodes) and all HPC databases by using a backup method of your choice.<br/>\r\n<br/>\r\n<b>Applying the update</b><br/>\r\n<br/>\r\nTo start the download, click the Download button next to the appropriate file (KB4039431-x64.exe for the 64-bit version, KB4039431-x86.exe for the 32-bit version) and then:<br/>\r\n<br/>\r\n1. Click Save to copy the download to your computer.<br/>\r\n2. Close any open HPC Cluster Manager or HPC Job Manager windows.<br/>\r\nNote: Any open instances of HPC Cluster Manager or HPC Job Manager may unexpectedly quit or show an error message during the update process if left open. This does not affect installation of the update.<br/>\r\n3. Run the download on the head node using an administrator account, and reboot the head node.<br/>\r\nNote: If you have high availability head nodes, run the fix on the active node, move the node to passive, and after failover occurs run the fix on the new active node. Do this for all head nodes in the cluster.<br/>\r\n4. Log on interactively, or use clusrun to deploy the fix to the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes.\r\n<br/>\r\nTo use clusrun to patch the QFE on the compute nodes, broker nodes, unmanaged server nodes, and workstation nodes:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa. Copy the appropriate version of the update to a shared folder such as \\\\headnodename\\HPCUpdates .<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb. Open an elevated command prompt window and type the appropriate clusrun command for the operating system of the patch, e.g.:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclusrun /nodegroup:ComputeNodes \\\\headnodname\\HPCUpdates\\KB4039431-x64.exe -unattend -SystemReboot<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspclusrun /nodegroup:BrokerNodes \\\\headnodname\\HPCUpdates\\KB4039431-x64.exe -unattend -SystemReboot<br/>\r\n<b>Note</b>: HPC Pack updates, other than Service Packs, do not get automatically applied when you add a new node to the cluster or re-image an existing node. You must either manually/clusrun apply the update after adding or reimaging a node or modify your node template to include a line to install the appropriate updates from a file share on your head node.<br/>\r\n<b>Note</b>: If the cluster administrator doesn\u2019t have administrative privileges on workstation nodes and unmanaged server node, the clusrun utility may not be able to apply the update. In these cases the update should be performed by the administrator of the workstation and unmanaged servers.<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc .To update workstation nodes and unmanaged server nodes you may need to reboot.<br/>\r\n<br/>\r\n5. To update computers that run HPC Pack client applications apply the following actions:<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspa. Stop any HPC client applications including HPC Job Manager and HPC Cluster Manager<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspb. Run the update executable<br/>\r\n&nbsp&nbsp&nbsp&nbsp&nbsp&nbspc. Reboot your client computer<br/>\r\n<br/>\r\n6. You can run get-hpcpatchstatus.ps1 on headnode/computenodes/client under %CCP_HOME%bin to check the patch status. And the client version and server version will be 4.05.5187.0<br/>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack QFE KB3189996",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=54772"
+        },
+        {
+            "title": "hpc Pack QFE KB4032368",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?WT.mc_id=rss_alldownloads_all&id=55650"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56614",
+    "downloadPreload": true
+}

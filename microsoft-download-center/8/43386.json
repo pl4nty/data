@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Facility Management Sample for Microsoft Dynamics AX 2009",
+    "downloadDescription": "A sample application that demonstrates developing for Microsoft Dynamics AX 2009",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FCM_AX2009.exe",
+            "url": "https://download.microsoft.com/download/1/2/0/120015c6-94ce-43f6-80ac-cf0c3fe4d879/FCM_AX2009.exe",
+            "size": "780296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Facility Management for Microsoft Dynamics AX 2009 is a developer sample that provides examples of how to implement common functionality in Microsoft Dynamics AX. Use it to learn how you could implement functionality in your integrating applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "FCM_AX2009.exe"
+    ],
+    "detailsSection_file_size": [
+        "762.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics AX 2009",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Run the installer to extract the sample application. Follow the instructions in the PDF to install and learn about the Facility Management sample application.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43386",
+    "downloadPreload": true
+}

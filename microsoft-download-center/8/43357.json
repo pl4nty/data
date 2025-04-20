@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Hosted SharePoint Partner Playbook",
+    "downloadDescription": "Partner facing playbook and resource guide for hosted SharePoint.  Includes channel development strategies, GTM resources such as messaging framework and copy blocks, licensing, compete guidance, and technical resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Hosted_SharePoint_Partner_Playbook.docx",
+            "url": "https://download.microsoft.com/download/6/c/9/6c9dc39d-9295-4cb3-a64a-53b130bc74b5/Hosted_SharePoint_Partner_Playbook.docx",
+            "size": "1027537",
+            "version": "June2014",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Partner facing playbook and resource guide for hosted SharePoint.  Includes channel development strategies, GTM resources such as messaging framework and copy blocks, licensing, compete guidance, and technical resources.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2014",
+    "detailsSection_file_name": [
+        "Hosted_SharePoint_Partner_Playbook.docx"
+    ],
+    "detailsSection_file_size": [
+        "1003.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hosted Applications Playbook",
+            "url": "http://aka.ms/hsp_ms_AppPlay"
+        },
+        {
+            "title": "sharePoint environment planning",
+            "url": "http://technet.microsoft.com/en-us/library/dn659290(v=office.15).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43357",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Rapid.Addition.White.Paper",
+    "downloadDescription": "Rapid Addition leverages Microsoft .NET 3.5 Framework to build ultra-low latency FIX and FAST processing",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RapidAdditionWhitePaper.pdf",
+            "url": "https://download.microsoft.com/download/9/9/c/99ca11e6-774e-41c1-88b5-09391a70af02/RapidAdditionWhitePaper.pdf",
+            "size": "287382",
+            "version": "All",
+            "datePublished": "7/15/2024 3:10:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper describes how Rapid Addition built their ultra low latency FIX and FAST message processing software using the Microsoft .NET 3.5 Framework. By following a disciplined design and development, Rapid Addition was able to meet stringent latency requirements while retaining the advantages that managed code brings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "All",
+    "detailsSection_file_name": [
+        "RapidAdditionWhitePaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "280.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Please launch this file with Adobe Acrobat Reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20918",
+    "downloadPreload": true
+}

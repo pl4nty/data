@@ -1,0 +1,109 @@
+{
+    "error": "",
+    "downloadTitle": "Local Administrator Password Solution (LAPS)",
+    "downloadDescription": "The \"Local Administrator Password Solution\" (LAPS) provides management of local account passwords of domain joined computers. Passwords are stored in Active Directory (AD) and protected by ACL, so only eligible users can read it or request its reset. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LAPS_OperationsGuide.docx",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aad914-a8a6-4904-88a1-29e657445d03/LAPS_OperationsGuide.docx",
+            "size": "641378",
+            "version": "6.2",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LAPS.x86.msi",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aad914-a8a6-4904-88a1-29e657445d03/LAPS.x86.msi",
+            "size": "1073152",
+            "version": "6.2",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LAPS.x64.msi",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aad914-a8a6-4904-88a1-29e657445d03/LAPS.x64.msi",
+            "size": "1118208",
+            "version": "6.2",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LAPS.ARM64.msi",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aad914-a8a6-4904-88a1-29e657445d03/LAPS.ARM64.msi",
+            "size": "1159168",
+            "version": "6.2",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LAPS_TechnicalSpecification.docx",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aad914-a8a6-4904-88a1-29e657445d03/LAPS_TechnicalSpecification.docx",
+            "size": "72683",
+            "version": "6.2",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LAPS_Datasheet.docx",
+            "url": "https://download.microsoft.com/download/c/7/a/c7aad914-a8a6-4904-88a1-29e657445d03/LAPS_Datasheet.docx",
+            "size": "104422",
+            "version": "6.2",
+            "datePublished": "7/15/2024 5:02:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Important Deprecation Notice</b>\r\n<br/>\r\n<br/>\r\nNOTE: The legacy Microsoft LAPS product is deprecated as of Windows 11 23 H2 and later. Installation of the legacy Microsoft LAPS MSI package is blocked on newer OS versions. Microsoft will no longer consider code changes for the legacy Microsoft LAPS product.\r\n<br/>\r\n<br/>\r\nPlease use Windows LAPS, available on Windows Server 2019 and above, and on supported Windows 10 and Windows 11 clients, for managing local administrator account passwords. See <A HREF=\"https://aka.ms/laps\">https://aka.ms/laps</A> for more information on Windows LAPS.\r\n<br/>\r\n<br/>\r\nMicrosoft will continue to support the legacy Microsoft LAPS product on older versions of Windows (prior to Windows 11 23 H2) on which it was previously supported. That support will end upon the normal End of Support for those OSes.\r\n<br/>\r\n<br/>\r\nSee <A HREF=\"https://aka.ms/LegacyLAPSDeprecation\">https://aka.ms/LegacyLAPSDeprecation</A> for more information.\r\n<br/>\r\n<br/>\r\n<b>End Deprecation Notice</b>\r\n<br/>\r\n<br/>\r\nNote: the only change in this release is that the binaries and installer package have been recompiled and signed with SHA256.  No functionality has been added or modified.\r\n<br/>\r\n<br/>\r\nFor environments in which users are required to log on to computers without domain credentials, password management can become a complex issue. Such environments greatly increase the risk of a Pass-the-Hash (PtH) credential replay attack. The Local Administrator Password Solution (LAPS) provides a solution to this issue of using a common local account with an identical password on every computer in a domain. LAPS resolves this issue by setting a different, random password for the common local administrator account on every computer in the domain. Domain administrators using the solution can determine which users, such as helpdesk administrators, are authorized to read passwords. <br/>\r\n<br/>\r\nLAPS simplifies password management while helping customers implement recommended defenses against cyberattacks. In particular, the solution mitigates the risk of lateral escalation that results when customers use the same administrative local account and password combination on their computers. LAPS stores the password for each computer\u2019s local administrator account in Active Directory, secured in a confidential attribute in the computer\u2019s corresponding Active Directory object. The computer is allowed to update its own password data in Active Directory, and domain administrators can grant read access to authorized users or groups, such as workstation helpdesk administrators.<br/>\r<br/>\rUse LAPS to automatically manage local administrator passwords on domain joined computers so that passwords are unique on each managed computer, randomly generated, and securely stored in Active Directory infrastructure. The solution is built on Active Directory infrastructure and does not require other supporting technologies. LAPS uses a Group Policy client-side extension (CSE) that you install on managed computers to perform all management tasks. The solution\u2019s management tools provide easy configuration and administration. <br/>\r<br/>\r <br/> \r\n<b>How does LAPS work?</b><br/> \r\nThe core of the LAPS solution is a GPO client-side extension (CSE) that performs the following tasks and can enforce the following actions during a GPO update:<br/> \r\n\u2022 Checks whether the password of the local Administrator account has expired.<br/> \r\n\u2022 Generates a new password when the old password is either expired or is required to be changed prior to expiration.<br/> \r\n\u2022 Validates the new password against the password policy.<br/> \r\n\u2022 Reports the password to Active Directory, storing it with a confidential attribute with the computer account in Active Directory.<br/> \r\n\u2022 Reports the next expiration time for the password to Active Directory, storing it with an attribute with the computer account in Active Directory.<br/> \r\n\u2022 Changes the password of the Administrator account.<br/> \r\nThe password then can be read from Active Directory by users who are allowed to do so. Eligible users can request a password change for a computer.<br/> \r\n<br/> \r\n<b>What are the features of LAPS?</b><br/> \r\nLAPS includes the following features:<br/> \r\n\u2022 Security that provides the ability to:<br/> \r\n&nbsp&nbsp\u2022 Randomly generate passwords that are automatically changed on managed machines.<br/> \r\n&nbsp&nbsp\u2022 Effectively mitigate PtH attacks that rely on identical local account passwords.<br/> \r\n&nbsp&nbsp\u2022 Enforced password protection during transport via encryption using the Kerberos version 5 protocol.<br/> \r\n&nbsp&nbsp\u2022 Use access control lists (ACLs) to protect passwords in Active Directory and easily implement a detailed security model.<br/> \r\n\u2022 Manageability that provides the ability to:<br/> \r\n&nbsp&nbsp\u2022 Configure password parameters, including age, complexity, and length.<br/> \r\n&nbsp&nbsp\u2022 Force password reset on a per-machine basis.<br/> \r\n&nbsp&nbsp\u2022 Use a security model that is integrated with ACLs in Active Directory.<br/> \r\n&nbsp&nbsp\u2022 Use any Active Directory management tool of choice; custom tools, such as Windows PowerShell, are provided.<br/> \r\n&nbsp&nbsp\u2022 Protect against computer account deletion.<br/> \r\n&nbsp&nbsp\u2022 Easily implement the solution with a minimal footprint.<br/> \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.2",
+    "detailsSection_file_name": [
+        "LAPS_OperationsGuide.docx",
+        "LAPS.x86.msi",
+        "LAPS.x64.msi",
+        "LAPS.ARM64.msi",
+        "LAPS_TechnicalSpecification.docx",
+        "LAPS_Datasheet.docx"
+    ],
+    "detailsSection_file_size": [
+        "626.3 KB",
+        "1.0 MB",
+        "1.1 MB",
+        "1.1 MB",
+        "71.0 KB",
+        "102.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Active Directory: </b> (requires AD schema extension)<br/>\r\n&nbsp&nbsp\u2022 Windows 2003 SP1 or later. <br/>\r\n<b>Managed machines: </b><br/>\r\n&nbsp&nbsp\u2022 Windows Server 2003 SP2 or later, or Windows Server 2003 x64 Edition SP2 or later. <br/>\r\n&nbsp&nbsp&nbsp&nbsp <b>Note:</b> Itanium-based machines are not supported. <br/>\r\n<b>Management tools: </b><br/>\r\n&nbsp&nbsp\u2022 .NET Framework 4.0 <br/>\r\n&nbsp&nbsp\u2022 PowerShell 2.0 or later<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2008",
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows 8.1",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>The following steps need to be performed to configure LAPS</b><br/>\r\n<br/>\r\n\u2022 Installation of GP CSE (Group Policy Client Side Extension) via MSI installation<br/>\r\n&nbsp&nbsp\u2022 On management computers <br/>\r\n&nbsp&nbsp\u2022 On clients to be managed <br/>\r\n\u2022 AD preparation <br/>\r\n&nbsp&nbsp\u2022 schema extension <br/>\r\n&nbsp&nbsp\u2022 Permission updates <br/>\r\n\u2022 Group policy configuration <br/>\r\n<br/>\r\nFurther details can be found in the operations guide. <br/> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46899",
+    "downloadPreload": true
+}

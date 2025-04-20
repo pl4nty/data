@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "S-MSRSeg",
+    "downloadDescription": "Version 1 of the S-MSRSeg was developed by Natural Language Computing Group at Microsoft Research Asia, and is released in 2004. Last published: February 14, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "s-msrseg.v1.zip",
+            "url": "https://download.microsoft.com/download/d/9/7/d97e69a2-74c3-4298-81da-09b2dffa01b4/s-msrseg.v1.zip",
+            "size": "11155513",
+            "version": "1.0",
+            "datePublished": "11/15/2023 4:22:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Version 1 of the S-MSRSeg was developed by Natural Language Computing Group at Microsoft Research Asia, and is released in 2004. S-MSRSeg is a simplified version of the MSRSeg system (the generic segmenter) described in Gao et al. (2005), see cl-05.gao.pdf in this package. S-MSRSeg does not provide the functionalities of new word identification, morphology analysis, and standards adaptation.\r\n\r\nCitation:\r\nJianfeng Gao, Mu Li, Andi Wu and Chang-Ning Huang.  Chinese word segmentation and named entity recognition: a pragmatic approach. Computational Linguistics, 31(4).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "s-msrseg.v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.6 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52522",
+    "downloadPreload": true
+}

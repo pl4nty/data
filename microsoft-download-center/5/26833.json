@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "Using Microsoft Dynamics Retail Management System (RMS)",
+    "downloadDescription": "These documents can help you effectively use Microsoft Dynamics RMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InventoryManagementSeries-AnOverviewOfItemTypes.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/InventoryManagementSeries-AnOverviewOfItemTypes.pdf",
+            "size": "408447",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CreateACustomPOSButtonForFrequentlyUsedItems.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/CreateACustomPOSButtonForFrequentlyUsedItems.pdf",
+            "size": "348230",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UsingItemLabels.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/UsingItemLabels.pdf",
+            "size": "441739",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RMSSystemRequirements_March2015.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/RMSSystemRequirements_March2015.pdf",
+            "size": "465929",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RMSPrivacyStatement.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/RMSPrivacyStatement.pdf",
+            "size": "14562",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ManagingPromotions.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/ManagingPromotions.pdf",
+            "size": "378144",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PaymentProcessingFAQ.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/PaymentProcessingFAQ.pdf",
+            "size": "376331",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "InventoryManagementSeries-Introduction.pdf",
+            "url": "https://download.microsoft.com/download/e/2/7/e27028b1-d82c-46f9-ac23-efea185666c3/InventoryManagementSeries-Introduction.pdf",
+            "size": "398352",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:26:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is your one-stop source for information and tools to help you deploy, use, maintain, and customize Microsoft Dynamics Retail Management System (RMS). \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "InventoryManagementSeries-AnOverviewOfItemTypes.pdf",
+        "CreateACustomPOSButtonForFrequentlyUsedItems.pdf",
+        "UsingItemLabels.pdf",
+        "RMSSystemRequirements_March2015.pdf",
+        "RMSPrivacyStatement.pdf",
+        "ManagingPromotions.pdf",
+        "PaymentProcessingFAQ.pdf",
+        "InventoryManagementSeries-Introduction.pdf"
+    ],
+    "detailsSection_file_size": [
+        "398.9 KB",
+        "340.1 KB",
+        "431.4 KB",
+        "455.0 KB",
+        "14.2 KB",
+        "369.3 KB",
+        "367.5 KB",
+        "389.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This document details supported operations systems, versions of Microsoft SQL Server, and more. To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Embedded for Point of Service ",
+        "Windows Server 2003",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the documents in PDF file format.</LI><br />\r\n<LI>Save the files to your computer.</LI><br />\r\n<LI>Repeat these steps on each computer where you want to install the documents, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26833",
+    "downloadPreload": true
+}

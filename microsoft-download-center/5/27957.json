@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-Specific Update for Norway",
+    "downloadDescription": "This white paper describes the country-specific update that was released for Norway in Cumulative Update 2 (CU\u20132) for Microsoft Dynamics AX 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for Norway_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/3/b/1/3b14673a-6d8a-49da-8630-24a42456db98/Country-specific update for Norway_AX2012.pdf",
+            "size": "364653",
+            "version": "2012",
+            "datePublished": "3/15/2024 3:27:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Norwegian companies must submit sales order invoices, free text invoices, project invoices, and credit notes as .xml files to the government. These .xml files must comply with the Offentlig Information Online Universal Business Language (OIOUBL) standards.<br /><br />\r\nThis paper describes the following information: <br />\r\n<UL><LI>Prerequisites for installing the hotfix</LI>\r\n<LI>Setting up OIOUBL electronic invoicing</LI>\r\n<LI>Posting invoices and generating .xml files</LI>\r\n<LI>Modified form information</LI></UL><br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base article 2494888. For more information about other features that apply to Norway, refer to the Help. Information that is specific to Norway includes (NOR) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country-specific update for Norway_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "356.1 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27957",
+    "downloadPreload": true
+}

@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2012 Data-Tier Application Framework (March 2013)",
+    "downloadDescription": "The Microsoft\u00ae SQL Server\u00ae 2012 Data-Tier Application Framework (March 2013) provides application lifecycle services for database development and management.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DACFramework.msi",
+            "url": "https://download.microsoft.com/download/9/2/c/92cbe583-5250-4afd-a87a-da707065cb9e/ENU/x86/DACFramework.msi",
+            "size": "3612672",
+            "version": "11.1.2824.1 ",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlDom.msi",
+            "url": "https://download.microsoft.com/download/9/2/c/92cbe583-5250-4afd-a87a-da707065cb9e/ENU/x86/SqlDom.msi",
+            "size": "2334720",
+            "version": "11.1.2824.1 ",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SqlDom.msi",
+            "url": "https://download.microsoft.com/download/9/2/c/92cbe583-5250-4afd-a87a-da707065cb9e/ENU/x64/SqlDom.msi",
+            "size": "2539520",
+            "version": "11.1.2824.1 ",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/9/2/c/92cbe583-5250-4afd-a87a-da707065cb9e/ENU/x64/SQLSysClrTypes.msi",
+            "size": "2527232",
+            "version": "11.1.2824.1 ",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DACFramework.msi",
+            "url": "https://download.microsoft.com/download/9/2/c/92cbe583-5250-4afd-a87a-da707065cb9e/ENU/x64/DACFramework.msi",
+            "size": "3821568",
+            "version": "11.1.2824.1 ",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLSysClrTypes.msi",
+            "url": "https://download.microsoft.com/download/9/2/c/92cbe583-5250-4afd-a87a-da707065cb9e/ENU/x86/SQLSysClrTypes.msi",
+            "size": "2199552",
+            "version": "11.1.2824.1 ",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae SQL Server\u00ae 2012 Data-Tier Application Framework (DACFx) is a component which provides application lifecycle services for database development and management for Microsoft\u00ae SQL Server\u00ae and Windows Azure SQL Databases. \r\n<br/><br/>\r\nDacFX supports various database deployment and management scenarios for SQL Server and Windows Azure SQL Databases including extracting/exporting a live database to a DAC package, deploying a DAC package to a new or existing database, and migrating from on-premise SQL Server to Windows Azure. This functionality is exposed via the DACFx managed API. DACFx can target SQL Server 2005 SP4, 2008 SP1, 2008R2, 2012, and Windows Azure SQL Databases. DACFx also provides the command-line utility SqlPackage.exe for creating and deploying .dacpac and .bacpac packages. DACFx supports scenarios provided by SQL Server client tooling including SQL Server Data Tools and SQL Server Management Studio 2012.<br/>\r\n<br/><br/>\r\nThis download will install the Data-Tier Application Framework and will upgrade previous installations of DACFx. \r\n<br />\r\nNOTE: If you are on an x64 machine, you will need to install both the x64 and x86 versions of the MSIs above.  \r\n<br /><br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.1.2824.1 ",
+    "detailsSection_file_name": [
+        "DACFramework.msi",
+        "SqlDom.msi",
+        "SqlDom.msi",
+        "SQLSysClrTypes.msi",
+        "DACFramework.msi",
+        "SQLSysClrTypes.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB",
+        "2.2 MB",
+        "2.4 MB",
+        "2.4 MB",
+        "3.6 MB",
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li/>32-bit systems \r\n<ul><li/>Computer with Intel or compatible 1GHz or faster processor (2 GHz or faster is recommended.)</ul>\r\n<li/>64-bit systems \r\n<ul><li/>1.4 GHz or faster processor</ul>\r\n<li/>Minimum of 1 GB of RAM (2 GB or more is recommended.)\r\n<li/>2.2 GB of available hard disk space\r\n</ul>\r\n<br />\r\n<br />\r\n<b>Dependencies</b><br/><br/>\r\nMicrosoft SQL Server 2012 Data-Tier Application Framework requires Microsoft SQL Server System CLR Types, and Microsoft SQL Server Transact-SQL ScriptDom (SQLSysCLRTypes.msi and SQLDOM.msi) both of which are available on this page. If you are on an x64 machine, you will need to install both the x64 and x86 versions of the MSIs above. \r\n<br />\r\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<br />\r\n  Download the appropriate file by clicking one of the links below, then run the downloaded file to install that package.<br /><br />",
+    "additionalInformationSection": "<ul>\nVisit the <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=94486\"><B>Microsoft Connect site</B></A> to:\n\n<UL><LI>Access more resources, including white papers, training, and webcasts.</LI>\n<LI>Receive information about future downloads, alerts, newsletters, and more.</LI><LI>Help improve DacFX by submitting feedback.</LI>\n<LI>Participate in forum discussions.</LI></UL>\n<br /><br />\n</ul>\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36842",
+    "downloadPreload": true
+}

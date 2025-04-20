@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mobile 6 Professional and Standard Software Development Kits Refresh",
+    "downloadDescription": "The Windows Mobile 6 SDK Refresh adds documentation, sample code, header and library files, emulator images and tools to Visual Studio that let you build applications for Windows Mobile 6.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows Mobile 6 Professional SDK Refresh.msi",
+            "url": "https://download.microsoft.com/download/f/2/3/f232f773-7edc-4300-be07-d3b76a5b3a91/Windows Mobile 6 Professional SDK Refresh.msi",
+            "size": "476838400",
+            "version": "6",
+            "datePublished": "7/15/2024 3:14:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Mobile 6 Standard SDK Refresh.msi",
+            "url": "https://download.microsoft.com/download/f/2/3/f232f773-7edc-4300-be07-d3b76a5b3a91/Windows Mobile 6 Standard SDK Refresh.msi",
+            "size": "220790784",
+            "version": "6",
+            "datePublished": "7/15/2024 3:14:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Mobile 6 SDKs add documentation, sample code, header and library files, emulator images and tools to Visual Studio that let you build applications for Windows Mobile 6.<br />\n<br />\nWith Windows Mobile 6, we are revising our SKU taxonomy and naming to better align our brand and products with the realities of today\u2019s mobile device marketplace. The historical form-factor based distinction between Windows Mobile powered Smartphone and Windows Mobile powered Pocket PC Phone Edition is blurring dramatically. We want our taxonomies and terminology to evolve to better reflect the evolution of the mobile device industry.<br />\n<br />\nThe list below summarizes the changes  and the SDK that must be used when targeting the platforms (Previous Categories = New Categories):<br />\n<ul><br />\n<li>Windows Mobile for Smartphone   =   Windows Mobile Standard (download the Windows Mobile 6 Standard SDK)</li><br /><br />\n<li>Windows Mobile for Pocket PC   =   Windows Mobile Classic (download the Windows Mobile 6 Professional SDK)</li><br /><br />\n<li>Windows Mobile for Pocket PC Phone Edition   =   Windows Mobile Professional (download the Windows Mobile 6 Professional SDK)</li><br /><br />\n</ul><br />\nThe Windows Mobile 6 SDKs reflect these changes in the naming of &quot;Project Templates&quot; and &quot;Emulator Images&quot;.\n    <br />\n    <br />\n    The following emulator images are included in the SDKs:<br /><br />\n<ul>\n        <li><u>Windows Mobile 6 Standard SDK</u><ul>\n\t\t\t<li>Windows Mobile 6 Standard (176x220 pixels - 96 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Standard Landscape QVGA (240x320 pixels - 131 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Standard QVGA (320x240 pixels - 131 dpi)</li>\n\t\t</ul>\n\t\t</li>\n    </ul>\n<ul>\n        <li><u>Windows Mobile 6 Professional SDK</u><ul>\n\t\t\t<li>Windows Mobile 6 Classic (240x320 pixels - 96 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Professional (240x320 pixels - 96 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Professional Square (240x240 pixels - \n\t\t\t96 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Professional Square QVGA (320x320 \n\t\t\tpixels - 128 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Professional Square VGA (480x480 \n\t\t\tpixels - 192 dpi)</li>\n\t\t\t<li>Windows Mobile 6 Professional VGA (480x640 pixels - 192 \n\t\t\tdpi)</li>\n\t\t</ul>\n\t\t</li>\n    </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6",
+    "detailsSection_file_name": [
+        "Windows Mobile 6 Professional SDK Refresh.msi",
+        "Windows Mobile 6 Standard SDK Refresh.msi"
+    ],
+    "detailsSection_file_size": [
+        "454.7 MB",
+        "210.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The following software is required. Please check each application's system requirements individually.\n    <br />\n    <br />\n    <b>Windows Server 2003<br />\n    </b>\n    <ul>\n        <li>Windows Server 2003 Service Pack 2.</li>\n        <li>Microsoft Visual Studio 2008 Professional Edition and above or Microsoft Visual Studio 2005, Standard Edition or above (Express Editions are not supported). <a href=\"http://go.microsoft.com/fwlink/?LinkId=77643\">SP1 recommended.</a>\n        </li>\n        <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=86934&clcid=0x409\">\n            Microsoft .NET Compact Framework v2 SP2</a>. </li>\n        <li>ActiveSync 4.5. If not currently installed, it is available from <a href=\"http://go.microsoft.com/fwlink/?LinkId=82622\">\n            Microsoft Windows Mobile web site</a>. </li>\n    </ul>\n    <b>Windows XP<br />\n    </b>\n    <ul>\n        <li>\nMicrosoft Windows XP Service Pack 2. </li>\n        <li>Microsoft Visual Studio 2008 Professional Edition and above or Microsoft Visual Studio 2005, Standard Edition or above (Express Editions are not supported). <a href=\"http://go.microsoft.com/fwlink/?LinkId=77643\">SP1 recommended.</a>\n        </li>\n        <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=86934&clcid=0x409\">\n            Microsoft .NET Compact Framework v2 SP2</a>. </li>\n        <li>ActiveSync 4.5. If not currently installed, it is available from <a href=\"http://go.microsoft.com/fwlink/?LinkId=82622\">\n            Microsoft Windows Mobile web site</a>. </li>\n    </ul>\n    <b>\nWindows Vista<br />\n    </b>\n    <ul>\n        <li>\nMicrosoft Windows Vista.</li>\n        <li>Microsoft Visual Studio 2008 Professional Edition and above or Microsoft Visual Studio 2005, Standard Edition or above (Express Editions are not supported).  <a href=\"http://go.microsoft.com/fwlink/?LinkId=77643\">SP1</a> and <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=90e2942d-3ad1-4873-a2ee-4acc0aace5b6&displaylang=en\">SP1 Update for Windows Vista</a> required.\n        </li>\n        <li><a href=\"http://go.microsoft.com/fwlink/?LinkId=86934&clcid=0x409\">\n            Microsoft .NET Compact Framework v2 SP2</a>. </li>\n        <li>\nFor synchronizing data, the Windows Mobile Device Center is required. It is available from <a href=\"http://go.microsoft.com/fwlink/?LinkId=82622\">Microsoft Windows Mobile\n                web site</a>. </li>\n    </ul>\n<br />\n<b>Important: </b>\"Visual C++ Smart Device Programmability\", which is an option of Microsoft Visual Studio Setup, must be selected and installed during Visual Studio installation.        \n    <br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>Uninstall previous versions of the Windows Mobile 6 SDK before installing the SDK Refresh.</b><br /><br />\n<OL><LI>Click on the buttons below on this page to start the download</LI><LI>Do one of the following: </LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "<ul><br />\n<li>Windows Mobile 6 Professional SDK Refresh does not contain the Windows Mobile Standard SDK Refresh and you will need to download both to target both platforms.</li><br />\n<li>Windows Mobile 6 Professional SDK Refresh contains Windows Mobile 6 Professional emulator images and one Windows Mobile 6 Classic emulator image.</li>\n</ul><br />\n<br /><b>Known Issues:</b><br />\n<ol>\n<li>Uninstalling one of the SDKs may remove the Cellular Emulator shortcut from the Start Menu. Repairing the installed SDK will re-create the shortcut.\t</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Mobile Developers Wiki",
+            "url": "http://channel9.msdn.com/wiki/default.aspx/MobileDeveloper.HomePage"
+        },
+        {
+            "title": "what's New for Developers in Windows Mobile 6",
+            "url": "http://msdn2.microsoft.com/en-us/library/bb278115.aspx"
+        },
+        {
+            "title": "windows Mobile Developer Center",
+            "url": "http://msdn.microsoft.com/windowsmobile/"
+        },
+        {
+            "title": "windows Mobile Team Blog",
+            "url": "http://blogs.msdn.com/windowsmobile/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6135",
+    "downloadPreload": true
+}

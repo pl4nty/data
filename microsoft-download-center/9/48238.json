@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 Enterprise Proof of Concept",
+    "downloadDescription": "Microsoft is working hard to make sure Windows 10 is the most productive operating system we have built to help employees get their projects done in less time.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-10-Enterprise-Proof-of-Concept-from-Microsoft-Services.pdf",
+            "url": "https://download.microsoft.com/download/5/9/8/5982a299-9706-4c1f-bbc8-bc12dfe6f7f9/Windows-10-Enterprise-Proof-of-Concept-from-Microsoft-Services.pdf",
+            "size": "585423",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft is working hard to make sure Windows 10 is the most productive operating system we have built to help employees get their projects done in less time.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows-10-Enterprise-Proof-of-Concept-from-Microsoft-Services.pdf"
+    ],
+    "detailsSection_file_size": [
+        "571.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48238",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 White Paper: Microsoft Dynamics GP Companion Application Services Configurator",
+    "downloadDescription": "This paper describes how to configure the Microsoft Dynamics GP environment for using Microsoft Dynamics GP companion apps.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics GP Companion Application Services Configurator White Paper.pdf",
+            "url": "https://download.microsoft.com/download/f/0/1/f017fb01-cfb7-4be5-8431-efa5442959f7/Microsoft Dynamics GP Companion Application Services Configurator White Paper.pdf",
+            "size": "758196",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:09:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper provides instructions for installing and configuring the Microsoft Dynamics GP Companion Application Services. This white paper also provides information about how a Microsoft Dynamics GP environment must be set up so that your company can use Microsoft Dynamics GP companion apps for tablet and PC devices. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics GP Companion Application Services Configurator White Paper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "740.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40912",
+    "downloadPreload": true
+}

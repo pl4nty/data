@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Security Target for Microsoft Windows 10 IPsec VPN Client",
+    "downloadDescription": "This is the Security Target documentation for the completed Common Criteria evaluation of Microsoft Windows 10 IPsec VPN Client",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "st_vid10746-st.pdf",
+            "url": "https://download.microsoft.com/download/3/7/2/372beb03-b1ed-4bb6-9b9b-b8f43afc570d/st_vid10746-st.pdf",
+            "size": "1755465",
+            "version": "1511",
+            "datePublished": "7/15/2024 4:40:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the Security Target documentation for the completed Common Criteria evaluation of Microsoft Windows 10 IPsec VPN Client",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1511",
+    "detailsSection_file_name": [
+        "st_vid10746-st.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PDF file reader application",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Open the document using a PDF file reader application",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54433",
+    "downloadPreload": true
+}

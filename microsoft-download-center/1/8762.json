@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Testing Guidance",
+    "downloadDescription": "This paper includes basic testing guidance provided by the Microsoft Dynamics AX 2009 internal development team in support of Independent Software Vendors (ISVs) building product extensions.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dynamics AX Testing Guidance White Paper.pdf",
+            "url": "https://download.microsoft.com/download/d/2/1/d21c6fd8-c6f7-45eb-8788-b83e6ff5bcf9/Microsoft Dynamics AX Testing Guidance White Paper.pdf",
+            "size": "376275",
+            "version": "2009/5.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX Testing Guidance White Paper.xps",
+            "url": "https://download.microsoft.com/download/d/2/1/d21c6fd8-c6f7-45eb-8788-b83e6ff5bcf9/Microsoft Dynamics AX Testing Guidance White Paper.xps",
+            "size": "433968",
+            "version": "2009/5.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ProjAccountingTestCase002.docx",
+            "url": "https://download.microsoft.com/download/d/2/1/d21c6fd8-c6f7-45eb-8788-b83e6ff5bcf9/ProjAccountingTestCase002.docx",
+            "size": "116723",
+            "version": "2009/5.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TestCaseTCM_Template.xlsx",
+            "url": "https://download.microsoft.com/download/d/2/1/d21c6fd8-c6f7-45eb-8788-b83e6ff5bcf9/TestCaseTCM_Template.xlsx",
+            "size": "32159",
+            "version": "2009/5.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ISVs and implementation partners typically do not have much guidance or tools available to help in their efforts to guarantee a quality deployment for customers. This paper is a first step in providing some guidance. <br /><br />\nThere are many factors that impact the quality of software. This paper will address only a few factors that are typically associated with the discipline of software testing. The remainder of the paper has the following sections:<br /><br />\n<ul><li> Don\u2019t Test Quality In</li>\n<li> Testing Approaches</li>\n<li> To Automate or Not to Automate?</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009/5.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX Testing Guidance White Paper.pdf",
+        "Microsoft Dynamics AX Testing Guidance White Paper.xps",
+        "ProjAccountingTestCase002.docx",
+        "TestCaseTCM_Template.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "367.5 KB",
+        "423.8 KB",
+        "114.0 KB",
+        "31.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>To view the Word or Excel document, you will need a copy of Microsoft Word or Excel 2007, or Microsoft Word or Excel 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.</LI><LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format. You can also download the associated template and test case for more information.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "additionalInformationSection": "<ul><li>This paper outlines some basic testing guidance for ISVs who build extensions for Microsoft Dynamics AX 2009. Much of this guidance also applies to Microsoft Dynamics AX implementation partners and customers who customize the application. </li><br />\n<li>This paper also refers to the associated documents ProjAccountingTestCase002.docx and TestCaseTCM_Template.xlsx for more information.</li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "8762",
+    "downloadPreload": true
+}

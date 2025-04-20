@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.6 ClickOnce Bootstrapper for Visual Studio 2013",
+    "downloadDescription": "The ClickOnce Bootstrapper package for the .NET Framework 4.6 enables the .NET Framework 4.6 entry in the list of available prerequisites in Visual Studio 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "netfx_46bootstrapper.exe",
+            "url": "https://download.microsoft.com/download/0/2/b/02b4165b-5c67-48a6-80e7-6faa1427d7f1/netfx_46bootstrapper.exe",
+            "size": "867344",
+            "version": "4.6",
+            "datePublished": "7/15/2024 3:49:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The .NET Framework 4.6 ClickOnce Bootstrapper package updates the prerequisite components list in Visual Studio 2013, by installing the required files that enable Visual Studio 2013 to offer the .NET Framework 4.6 entry in the list of available prerequisites. Once available, you can select the .NET Framework 4.6 as a prerequisite when you publish applications for ClickOnce deployments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.6",
+    "detailsSection_file_name": [
+        "netfx_46bootstrapper.exe"
+    ],
+    "detailsSection_file_size": [
+        "847.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>Supported Operating Systems:</b></li>\n <ul>\n<li>Windows Vista SP2 (x86 and x64)</li>\n<li>Windows 7 SP1 (x86 and x64)</li>\n<li>Windows 8 (x86 and x64)</li>\n<li>Windows 8.1 (x86 and x64)</li>\n<li>Windows 10</li> \n<li>Windows Server 2008 SP2 (x86 and x64)</li>\n<li>Windows Server 2008 R2 SP1 (x64)</li>\n<li>Windows Server 2012 (x64)</li>\n<li>Windows Server 2012 R2 (x64)</li>\n</ul>\n<li><b>Minimum Hardware Requirements:</b></li>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM</li>\n<li>850 MB of available hard disk space (x86)</li>\n<li>2 GB of available hard disk space (x64)</li>\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ul>\n<li>On this page, choose the <b>Download</b> button.</li>\n<ul>\n<li>To install the software now, choose the <b>Run</b> button.</li>\n<li>To install the software later, choose the <b>Save</b> button.</li>\n</ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=615218\">KB 3069797</a> for more information.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48132",
+    "downloadPreload": true
+}

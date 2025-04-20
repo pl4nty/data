@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Business Portal Security Synchronization Utility for Microsoft Dynamics SL",
+    "downloadDescription": "This White Paper discusses the the process of using the Security Synchronization Utility for Business Portal for Microsoft Dynamics SL.  The Security Synchronization Utility is a Microsoft\u00ae Management Console snap-in that allows you to synchronize security permissions between applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft_Dynamics_SL_BP_Security_Sync.pdf",
+            "url": "https://download.microsoft.com/download/9/e/f/9ef9fc27-7ff4-4270-b59d-70bfdaabd1f2/Microsoft_Dynamics_SL_BP_Security_Sync.pdf",
+            "size": "442228",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Summary of Changes lists all the product changes in Microsoft Dynamics\u00ae SL 2011. The list is sorted by module, screen or report ID, and defect tracking number.\r\nThis document, SummaryOfChange.PDF, can also be found on the Microsoft Dynamics SL 2011 download in the \\DynamicsSL folder. The document is also installed with the Microsoft Dynamics SL application files in the \\Applications\\Help folder.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_SL_BP_Security_Sync.pdf"
+    ],
+    "detailsSection_file_size": [
+        "431.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101769",
+    "downloadPreload": true
+}

@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 13 For Exchange 2010 SP3 (KB3141339)",
+    "downloadDescription": "Update Rollup 13 For Exchange 2010 SP3 (KB3141339)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2010-KB3141339-x64-en.msp",
+            "url": "https://download.microsoft.com/download/d/c/2/dc2ae92f-80da-45b0-8046-5e4110324509/Exchange2010-KB3141339-x64-en.msp",
+            "size": "46428160",
+            "version": "14.03.0294.000",
+            "datePublished": "7/15/2024 4:13:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Update Rollup 13 for Exchange Server 2010 Service Pack 3 (SP3) resolves issues that were found in Exchange Server 2010 SP3 RU12 since the software was released. This update rollup is highly recommended for all Exchange Server 2010 SP3 customers.<br />\n<br />\nFor a list of changes that are included in this update rollup, see <a href=\"http://support.microsoft.com?kbid=3141339\">KB3141339</a>.\n<br />\n<br />\n<B>\nThis update rollup does not apply to Exchange Server 2010 Release To Manufacturing (RTM), Exchange Server 2010 Service Pack 1 (SP1) or Exchange Server 2010 Service Pack 2 (SP2).\r\n</B><br />\n<br />For a list of update rollups applicable to Exchange Server 2010 RTM , Exchange Server 2010 Service Pack 1 (SP1) or Exchange Server 2010 Service Pack 2 (SP2), refer to the Knowledge Base article <a href=\"http://support.microsoft.com?kbid=937052\">KB937052</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3141339",
+        "name": "KB3141339"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.03.0294.000",
+    "detailsSection_file_name": [
+        "Exchange2010-KB3141339-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "44.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2010 SP3 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2010 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=194323\">Exchange 2010 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=194324\">Exchange 2010 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration and specific features installed. For more detailed system requirements, please refer to the Exchange Server 2010 <a href=\"http://go.microsoft.com/fwlink/?LinkId=135761\">Technical Documentation Library</a>.\nFor a list of Windows Server 2008 requirements, visit <a href=\"http://technet.microsoft.com/windowsserver/2008\">http://technet.microsoft.com/windowsserver/2008.</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51496",
+    "downloadPreload": true
+}

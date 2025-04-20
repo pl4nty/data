@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2010 Response Group Application",
+    "downloadDescription": "This download contains the Response Group Application chapter of the Microsoft Lync Server 2010 Resource Kit book. This book is currently being developed. Chapters will be available for download while this book is being completed. This chapter takes a deep dive into the Response Group application.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftLyncServer2010ResponseGroupApplication.doc",
+            "url": "https://download.microsoft.com/download/6/0/4/604d2a75-12e3-4b5a-9753-659005fa745c/MicrosoftLyncServer2010ResponseGroupApplication.doc",
+            "size": "7290880",
+            "version": "Mar2011",
+            "datePublished": "5/15/2024 3:14:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains the Response Group Application chapter of the <i>Microsoft Lync Server 2010 Resource Kit</i> book. This book is currently being developed. Chapters will be available for download while this book is being completed. For information about the continuing release of chapters, check <a href=\"http://go.microsoft.com/fwlink/?LinkId=204593\">DrRez</a>.\r\n<br/><br/>\r\nThe internal workings of the Response Group application require several components and data stores that work together to accomplish things such as selecting agents, handling queue timeouts and overflow, and maintaining resiliency. Understanding the logic behind these components can be immensely helpful in troubleshooting.\r\n<br/><br/>\r\nYou can download all the available Lync Server 2010 Resource Kit chapters as separate Word documents or together as a .zip file from <a href=\"http://go.microsoft.com/fwlink/?LinkID=214301\">here</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Mar2011",
+    "detailsSection_file_name": [
+        "MicrosoftLyncServer2010ResponseGroupApplication.doc"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "drRez",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=204593"
+        },
+        {
+            "title": "lync Technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201687"
+        },
+        {
+            "title": "nextHop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=204623"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5645",
+    "downloadPreload": true
+}

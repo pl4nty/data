@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2013: Operations Framework and Checklists",
+    "downloadDescription": "This document provides information, such as checklists for daily, weekly, and monthly tasks, which are related to the operations management of a Microsoft\u00ae SharePoint\u00ae Server 2013 environment. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2013-whitepaper-sharepoint-operations-checklist.docx",
+            "url": "https://download.microsoft.com/download/6/d/9/6d9013ef-52bc-492b-8371-79c2041d6f43/oit2013-whitepaper-sharepoint-operations-checklist.docx",
+            "size": "632656",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:53:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides information, such as checklists for daily, weekly, and monthly tasks, which are related to the operations management of a Microsoft\u00ae SharePoint\u00ae Server 2013 environment. In addition, guidance is provided for using Microsoft System Center Operations Manager 2012 to monitor a SharePoint environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "oit2013-whitepaper-sharepoint-operations-checklist.docx"
+    ],
+    "detailsSection_file_size": [
+        "617.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Server 2013 Library",
+            "url": "http://technet.microsoft.com/en-us/library/cc303422.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42531",
+    "downloadPreload": true
+}

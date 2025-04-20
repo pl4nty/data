@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Aptos Fonts",
+    "downloadDescription": "Microsoft Aptos fonts for local installation.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Aptos Fonts.zip",
+            "url": "https://download.microsoft.com/download/8/6/0/860a94fa-7feb-44ef-ac79-c072d9113d69/Microsoft Aptos Fonts.zip",
+            "size": "2979784",
+            "version": "4.40",
+            "datePublished": "6/4/2024 3:45:16 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Aptos fonts for local installation for use in applications that do not have access to the Office Font Service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.40",
+    "detailsSection_file_name": [
+        "Microsoft Aptos Fonts.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "6/4/2024",
+    "systemRequirementsSection": "Any operating system that supports TrueType or OpenType fonts. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "Extract the fonts from the .zip file and install them. Locally installed versions of these fonts will be used by applications instead of versions provided by the Office Font Service.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106087",
+    "downloadPreload": true
+}

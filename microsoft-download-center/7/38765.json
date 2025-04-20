@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-Specific Update for Norway - EHF Electronic Invoicing",
+    "downloadDescription": "This white paper describes the country-specific update that is released for Norway in Cumulative Update 4 (CU\u20134) for Microsoft Dynamics AX 2012. See Microsoft Knowledge Base article 2765124 for hotfix download information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country specific update for Norway_AX2012_EHF electronic invoicing.pdf",
+            "url": "https://download.microsoft.com/download/f/1/e/f1ece2bf-be76-4949-82a6-e092e0cd7418/Country specific update for Norway_AX2012_EHF electronic invoicing.pdf",
+            "size": "454801",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:16:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to configure and generate Elektronisk HandelsFormat (EHF) electronic documents for collection letters in Microsoft Dynamics AX 2012 after you have installed the hotfix that is included in KB2724140. The Microsoft Feature Reference number for this country-specific update is NO - 00010. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country specific update for Norway_AX2012_EHF electronic invoicing.pdf"
+    ],
+    "detailsSection_file_size": [
+        "444.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38765",
+    "downloadPreload": true
+}

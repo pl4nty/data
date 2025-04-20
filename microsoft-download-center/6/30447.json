@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Implementing Persistent Cookies in SharePoint 2010 Products",
+    "downloadDescription": "This paper describes best practices and scenario requirements for implementing persistent cookies or session cookies within your organization when using Microsoft SharePoint Products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "persistent-cookies-whitepaper.docx",
+            "url": "https://download.microsoft.com/download/9/f/6/9f69feba-614b-483f-9cf2-60225d75e81e/persistent-cookies-whitepaper.docx",
+            "size": "86420",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cookies are used to maintain state information as you navigate to different pages on a web site or return to the web site at a later time.  SharePoint sites can use either session or persistent cookies. This paper explains how to choose the appropriate approach for your sites.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "persistent-cookies-whitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "84.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Microsoft Word 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30447",
+    "downloadPreload": true
+}

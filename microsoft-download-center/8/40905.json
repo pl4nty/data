@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Templates for Internet Explorer",
+    "downloadDescription": "This page provides the Group Policy Administrative Template files for Internet Explorer",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "kb2841134.zip",
+            "url": "https://download.microsoft.com/download/2/c/5/2c5305d8-8dc9-430e-a72c-57396dee8327/kb2841134/kb2841134.zip",
+            "size": "2035747",
+            "version": "11.0.0.0",
+            "datePublished": "7/15/2024 3:35:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Administrative template files are used to populate user interface settings in the Group Policy Object Editor, enabling administrators to manage registry-based policy settings. \r\n<br></br>\r\n\r\nAs part of the <a href=\"http://go.microsoft.com/fwlink/?LinkId=402929\">August 2014 Cumulative Security Update for Internet Explorer (KB2976627)</a>, the Internet Explorer administrative templates were updated with four new Group Policy settings to manage out-of-date ActiveX controls. For information about the new Group Policy settings, read the <a href=\"http://go.microsoft.com/fwlink/?LinkId=507546\">Out-of-date ActiveX control blocking</a> article.\r\n<br></br>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2841134",
+        "name": "KB2841134"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.0.0",
+    "detailsSection_file_name": [
+        "kb2841134.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<ul>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows Server 2008 R2 SP1</li>\r\n<li>Windows Server 2008 SP2</li>\r\n</ul>\r\n</ul>\r\n\r\n<ul>\r\n<b>Supported Internet Explorer Versions:</b>\r\n<ul>\r\n<li>Internet Explorer 11</li>\r\n<li>Internet Explorer 10</li>\r\n<li>Internet Explorer 9</li>\r\n<li>Internet Explorer 8</li>\r\n</ul>\r\n</ul>\r\n\r\n<ul>\r\n<b>This update also requires:</b>\r\n<ul>\r\n<li>User rights to run Group Policy Object Editor (gpedit.msc or gpme.msc)</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<br></br>\r\n<b>Windows Server 2012 R2, Windows Server 2012, Windows Server 2008 R2 SP1, and Windows Server 2008 SP2:</b>\r\n<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download.</li>\r\n<li>Save the ZIP to a directory on your computer.</li>\r\n<li>From an elevated command prompt, use the following command to update the inetres.admx file:</li>\r\n<ul>\r\n<li>copy /y &#37;<i>WINDIR</i>&#37;\\KB2841134\\inetres.admx &#37;<i>SYSTEMROOT</i>&#37;\\PolicyDefinitions\\inetres.admx</li>\r\n</ul>\r\n<li>From an elevated command prompt, use the following command to update the inetres.adml file for the targeted languages:</li>\r\n<ul>\r\n<li>copy /y &#37;<i>WINDIR</i>&#37;\\KB2841134\\&#60;<i>LanguageCode</i>&#62;\\inetres.adml &#37;<i>SYSTEMROOT</i>&#37;\\Windows\\PolicyDefinitions\\&#60;<i>LanguageCode</i>&#62;\\inetres.adml</li>\r\n<li>In the previous command, replace &#60;<i>LanguageCode</i>&#62; with one of the supported languages, using the <i>xx-XX</i> value.</li>\r\n<ul>\r\n<li>cs-CZ: Czech - Czech Republic</li>\r\n<li>da-DK: Danish - Denmark</li>\r\n<li>de-DE: German - Germany</li>\r\n<li>el-GR: Greek - Greece</li>\r\n<li>en-US: English - United States</li>\r\n<li>es-ES: Spanish - Spain</li>\r\n<li>fi-FI: Finnish - Finland</li>\r\n<li>fr-FR: French - France</li>\r\n<li>hu-HU: Hungarian - Hungary</li>\r\n<li>it-IT: Italian - Italy</li>\r\n<li>ja-JP: Japanese - Japan</li>\r\n<li>ko-KR: Korean - Korea</li>\r\n<li>nb-NO: Norwegian (Bokm\u00e5l) - Norway</li>\r\n<li>nb-NO: Norwegian (Bokm\u00e5l) - Norway</li>\r\n<li>nl-NL: Dutch - The Netherlands</li>\r\n<li>pl-PL: Polish - Poland</li>\r\n<li>pt-BR: Portuguese - Brazil</li>\r\n<li>pt-PT: Portuguese - Portugal</li>\r\n<li>ru-RU: Russian - Russia</li>\r\n<li>sv-SE: Swedish - Sweden</li>\r\n<li>tr-TR: Turkish - Turkey</li>\r\n<li>zh-CN: Chinese - China</li>\r\n<li>zh-HK: Chinese - Hong Kong SAR</li>\r\n<li>zh-TW: Chinese \u2013 Taiwan</li>\r\n</ul>\r\n</ul>\r\n</ol>\r\n\r\n<br></br>\r\n<b>Windows Server 2003 (English only): </b>\r\nTo manage Group Policy settings on a mixed environment of Internet Explorer versions from a Windows Server 2003 machine, the Administrative Template files need to be manually imported.\r\n<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download.</li>\r\n<li>Save the ZIP to a directory on your computer.</li>\r\n<li>Copy inetres.adm into %<i>WINDIR</i>%\\inf\\</li>\r\n<li>Open the Group Policy Editor</li>\r\n<ol>\r\n<li>Click Start, click Run, type gpedit.msc, and then click OK. </li>\r\n<li>Expand Local Computer Policy, expand Computer Configuration. </li>\r\n<li>Right click on Administrative Templates. If you see Inetres template on this list, click Remove, and then click Close. </li>\r\n<li>Right click on Administrative Templates and click on Add/Remove Templates. Click Add and locate inetres.adm in %WINDIR%\\inf\\ and click Open to add it again. </li>\r\n<li>Click Close.</li>\r\n</ol>\r\n</ol>\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40905",
+    "downloadPreload": true
+}

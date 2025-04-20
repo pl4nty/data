@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Host Integration Server 3270 Design Tool",
+    "downloadDescription": "Development tool for the IBM 3270 Connector for Azure Logic Apps",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "3270DesignTool.msi",
+            "url": "https://download.microsoft.com/download/a/7/4/a74ae8af-3fc7-427d-a54c-9aebe0fdf486/3270DesignTool.msi",
+            "size": "5177344",
+            "version": "11.0.2260.0",
+            "datePublished": "10/29/2024 4:10:33 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The 3270 Design Tool is a desktop application used to define metadata used by the IBM 3270 Connector for Azure Logic Apps to navigate and interact with your 3270 applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2260.0",
+    "detailsSection_file_name": [
+        "3270DesignTool.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "10/29/2024",
+    "systemRequirementsSection": "<b>This release requires the following version of the Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.8</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows 10"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57962",
+    "downloadPreload": true
+}

@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 1801+ Management Pack for Service Provider Foundation (SPF) ",
+    "downloadDescription": "This management pack helps administrators helps manage SPF installation instances by monitoring the health of the SPF servers. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_SPF1801.docx",
+            "url": "https://download.microsoft.com/download/8/9/4/894a3fe9-0063-4494-9729-0774c05868b9/OpsMgr_MP_SPF1801.docx",
+            "size": "73658",
+            "version": "7.4.58.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Service Provider Foundation Management Pack.msi",
+            "url": "https://download.microsoft.com/download/8/9/4/894a3fe9-0063-4494-9729-0774c05868b9/Service Provider Foundation Management Pack.msi",
+            "size": "3338240",
+            "version": "7.4.58.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This management pack helps administrators manage SPF installation instances by monitoring the health of the SPF servers. <br/>\r\n\r\n\r\n\r\n\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li>8 February, 2018 - Initial release, version 7.4.58.0</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.4.58.0",
+    "detailsSection_file_name": [
+        "OpsMgr_MP_SPF1801.docx",
+        "Service Provider Foundation Management Pack.msi"
+    ],
+    "detailsSection_file_size": [
+        "71.9 KB",
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Operating System</b>\r\n\r\nThis management pack is supported to run for System Center 1801 Operations Manager and future releases of Operations Manager.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer to MP Guide ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56557",
+    "downloadPreload": true
+}

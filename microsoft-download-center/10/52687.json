@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Critical Update for SQL Server 2016 MSVCRT Prerequisites (KB3164398)",
+    "downloadDescription": "This update refreshes the Microsoft VC++ 2013 Runtime binaries, which are installed as a prerequisite by SQL Server 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016-KB3164398-x64.exe",
+            "url": "https://download.microsoft.com/download/b/f/4/bf4f97b4-2968-464c-9751-39afe7b19bc6/SQL2016_RTM_GDR/amd64/SQLServer2016-KB3164398-x64.exe",
+            "size": "361856200",
+            "version": "13.0.1708.0",
+            "datePublished": "7/15/2024 4:17:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Microsoft has identified a problem with the Microsoft VC++ 2013 Runtime binaries, which are installed as a prerequisite by SQL Server 2016.  Without this update to the VC++ Runtime binaries, it is possible that SQL Server 2016 may experience stability issues in certain scenarios.  \r\n\r\nMicrosoft previously published KB3138367 (https://support.microsoft.com/en-us/kb/3138367) updating the Microsoft VC++ 2013 Runtime binaries.  If you previously installed KB3138367, this update (KB3164398) is not required.\r\n\r\n\r\nAfter you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3164398",
+        "name": "KB3164398"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.1708.0",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB3164398-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "345.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 RTM instances on supported Operating Systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "kB3138367",
+            "url": "https://support.microsoft.com/en-us/kb/3138367"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52687",
+    "downloadPreload": true
+}

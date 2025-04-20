@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Identity Manager 2010 Monitoring Management Pack",
+    "downloadDescription": "The FIM 2010 Management Pack discovers and monitors FIM server components.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Forefront Identity Manager (FIM) 2010 Monitoring MP.msi",
+            "url": "https://download.microsoft.com/download/c/4/f/c4f12537-11dc-4444-bc91-59fea7727a3d/Forefront Identity Manager (FIM) 2010 Monitoring MP.msi",
+            "size": "454656",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Forefront Identity Manager 2010 Management Pack Guide.doc",
+            "url": "https://download.microsoft.com/download/c/4/f/c4f12537-11dc-4444-bc91-59fea7727a3d/Forefront Identity Manager 2010 Management Pack Guide.doc",
+            "size": "403968",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The FIM 2010 Management Pack discovers and monitors FIM server components. Server components include: <br/>\r\n<br/>\r\n<ul>\r\n<li> FIM Service </li>\r\n<li> FIM Synchronization Service </li>\r\n<li> FIM Portal </li>\r\n</ul><br/>\r\nClient components such as the FIM Password Reset client and the FIM Add-in for Outlook\u00ae  are not included. Server components for the Password Change Notification Service (PCNS) and Forefront Identity Manager Certificate Management (FIM CM)  are not included.<br/>\r\n <br/>\r\nAdditionally, dependent technologies such as Microsoft\u00ae SQL Server 2008, Active Directory\u00ae Domain Services (AD DS), Internet Information Services, and Windows SharePoint\u00ae Services are not directly monitored or referenced by this management pack.<br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\nThis management pack monitors key health events for the following FIM components:<br/>\r\n<ul>\r\n<li> FIM Service</li> \r\n<li> FIM Synchronization Service</li> \r\n<li> FIM Portal</li> \r\n</ul><br/>\r\nThe key monitoring scenarios covered by this management pack are listed below:<br/>\r\n<ul>\r\n<li> End-User Availability</li>\r\n<li> Synchronization Service Availability</li>\r\n<li> FIM Service and Portal Availability</li>\r\n<li> FIM Portal Errors Shown to End Users</li>\r\n<li> FIM Portal Configuration Errors</li>\r\n<li> FIM Service Internal State</li>\r\n<li> FIM Service Set Corrections</li>\r\n<li> FIM Service Connectivity with Exchange</li>\r\n<li> FIM Synchronization Service Configuration Errors </li> \r\n</ul><br/>\r\nFor more information about what is monitored in the Management Pack, please see the Forefront Identity Manager 2010 Management Pack Guide. <br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 3/31/2011 - Original English release, version 1.0.0.0 </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "Forefront Identity Manager (FIM) 2010 Monitoring MP.msi",
+        "Forefront Identity Manager 2010 Management Pack Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "444.0 KB",
+        "394.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center Operations Manager 2007</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "For instructions about importing a management pack, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=142351\">How to Import a Management Pack in Operations Manager 2007</a>.<br/>\r\n<br/>\r\nAfter the FIM 2010 Management Pack is imported, create a new management pack in which you store overrides and other customizations.<br/>\r\n <br/>\r\nPlease see the Forefront Identity Manager 2010 Management Pack Guide for more information about installation and configuration of this Management Pack.<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19395",
+    "downloadPreload": true
+}

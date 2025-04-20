@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Automatic Graph Layout",
+    "downloadDescription": "Microsoft Automatic Graph Layout is a .NET tool for laying out and visualizing directed graphs. Last published: November 14, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GLEE.msi",
+            "url": "https://download.microsoft.com/download/b/2/0/b20f3a05-61a2-4f8c-97e3-e1f50ca0f194/GLEE.msi",
+            "size": "2004992",
+            "version": "1.2.10000.0",
+            "datePublished": "7/15/2024 4:15:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Automatic Graph Layout is a .NET tool for laying out and visualizing directed graphs. It is available at github.com an open source project.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.10000.0",
+    "detailsSection_file_name": [
+        "GLEE.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52034",
+    "downloadPreload": true
+}

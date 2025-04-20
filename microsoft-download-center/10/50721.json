@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Fluent Calibri and Sitka",
+    "downloadDescription": "These are variants of the Microsoft fonts, Calibri and Sitka Small, which are intended to help readers with visual crowding. Visual crowding is sometimes associated with dyslexia.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Fluent Fonts for non-Windows OS.zip",
+            "url": "https://download.microsoft.com/download/1/6/9/1698b73e-f6c5-44ad-b2cf-88d21d610897/Microsoft Fluent Fonts for non-Windows OS.zip",
+            "size": "2317093",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:59:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Fluent Fonts.msi",
+            "url": "https://download.microsoft.com/download/1/6/9/1698b73e-f6c5-44ad-b2cf-88d21d610897/Microsoft Fluent Fonts.msi",
+            "size": "3191808",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:59:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These are variants of the Microsoft fonts, Calibri and Sitka Small, which are intended to help readers with visual crowding by adding extra space between letters, words, and lines. Visual crowding is sometimes associated with dyslexia.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Fluent Fonts for non-Windows OS.zip",
+        "Microsoft Fluent Fonts.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB",
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Fluent Fonts can be installed on both 32-bit and 64-bit versions of Windows.\r\nFor non-Windows platforms, there must be support for installing system-wide fonts and extracting files from a ZIP file.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "For Windows platforms, select the file \"Microsoft Fluent Fonts.msi\" and open the file. \r\nFor non-Windows platforms that support installing fonts, select the file \"Microsoft Fluent Fonts for non-Windows OS.zip\". Extract the files, read the file \"Microsoft Fluent Fonts EULA.rtf\" in a document viewer, and install the font files.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50721",
+    "downloadPreload": true
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Server 2010 Self-study Installation Guide",
+    "downloadDescription": "Detailed instructions on how to install SharePoint Server 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SharePoint2010_selfstudy_RTM_Install.docx",
+            "url": "https://download.microsoft.com/download/5/4/7/54739083-40f9-4bb7-851d-334e7521cfb2/SharePoint2010_selfstudy_RTM_Install.docx",
+            "size": "12301600",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint2010_selfstudy_RTM_Install.pdf",
+            "url": "https://download.microsoft.com/download/5/4/7/54739083-40f9-4bb7-851d-334e7521cfb2/SharePoint2010_selfstudy_RTM_Install.pdf",
+            "size": "7585010",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This self-study guide helps you install SharePoint Server 2010 and immediately start an evaluation.  \r\nThis document is an experment. For the most complete and correct information, use the <a href =\"http://technet.microsoft.com/en-us/library/cc262957.aspx\">deployment documentation in the TechNet library</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SharePoint2010_selfstudy_RTM_Install.docx",
+        "SharePoint2010_selfstudy_RTM_Install.pdf"
+    ],
+    "detailsSection_file_size": [
+        "11.7 MB",
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader, or Microsoft Word 2007 or Word 2010.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": " Click <b>Download</b>, and then save the file to your computer. Open the file in Adobe Reader or Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27209",
+    "downloadPreload": true
+}

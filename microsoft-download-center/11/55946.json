@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX2012 R3 CU13 - KB4032175",
+    "downloadDescription": "Microsoft Dynamics AX2012 R3 CU13 release",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2012R3-KB4032175.EXE",
+            "url": "https://download.microsoft.com/download/e/e/0/ee001770-e71e-45bb-94ac-d90a88bf422c/DynamicsAX2012R3-KB4032175.EXE",
+            "size": "1440168",
+            "version": "6.3.6000.149",
+            "datePublished": "7/15/2024 4:45:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article contains information about how to obtain and install cumulative update 13 for Microsoft Dynamics AX 2012 R3, and about the issues that are fixed by the cumulative update.\r\n\r\nThe build number for the primary update package is 6.3.6000.149. You will use this package to install individual hotfixes in an existing Microsoft Dynamics AX 2012 R3 environment. Before you install this cumulative update package, we recommend that you read this article carefully.\r\n\r\nThe build number for the kernel and slipstreamable update package is 6.3.6000.151. You will use this package to install the hotfix as part of a new installation of Microsoft Dynamics AX 2012 R3.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4013818",
+        "name": "KB4013818"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.3.6000.149",
+    "detailsSection_file_name": [
+        "DynamicsAX2012R3-KB4032175.EXE"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard "
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55946",
+    "downloadPreload": true
+}

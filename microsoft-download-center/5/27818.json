@@ -1,0 +1,161 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 E-mail Router",
+    "downloadDescription": "The Microsoft Dynamics CRM 2011 E-mail Router is an interface between Microsoft Dynamics CRM 2011 and an e-mail system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2011-Router-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/3/6/7/36791329-9453-4943-b385-abca1a125650/CRM2011-Router-ENU-i386.exe",
+            "size": "9644168",
+            "version": "05.00.9690.1992",
+            "datePublished": "7/15/2024 4:22:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM2011-Router-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/3/6/7/36791329-9453-4943-b385-abca1a125650/CRM2011-Router-ENU-amd64.exe",
+            "size": "9894528",
+            "version": "05.00.9690.1992",
+            "datePublished": "7/15/2024 4:22:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics CRM 2011 E-mail Router is an interface between the Microsoft Dynamics CRM 2011 (on-premises) system and one or more Exchange servers or POP3 servers for incoming e-mail, and one or more SMTP or Exchange servers for outgoing e-mail. E-mail messages come into the Microsoft Dynamics CRM system through the E-mail Router. <br/><br/>\r\n\r\nThe three main components that can be installed during Microsoft Dynamics CRM 2011 E-mail Router Setup are as follows:\r\n<ul><li>Microsoft Dynamics CRM E-mail Router Service </li>\r\n<li>Microsoft Dynamics CRM E-mail Configuration Manager</li>\r\n<li>Microsoft Dynamics CRM E-mail Rule Deployment Wizard </li></ul>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "05.00.9690.1992",
+    "detailsSection_file_name": [
+        "CRM2011-Router-ENU-i386.exe",
+        "CRM2011-Router-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "9.2 MB",
+        "9.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For information about Microsoft Dynamics CRM 2011 E-mail Router hardware and software requirements, see the <a href=\"http://technet.microsoft.com/en-us/library/hh699699.aspx\">Microsoft Dynamics CRM 2011 E-mail Router hardware requirements</a> and <a href=\"http://technet.microsoft.com/en-us/library/hh699689.aspx\">Microsoft Dynamics CRM 2011 E-mail Router software requirements</a>.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click <b>Download</b>.</li>\r\n<li>Save the download to your computer by clicking <b>Save</b>.</li>\r\n<li>To install the E-mail Router, follow the instructions in the topic <a href=\"http://technet.microsoft.com/en-us/library/hh699800.aspx\">Microsoft Dynamics CRM 2011 E-mail Router Installation Instructions</a>. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2011 Implementation Guide",
+            "url": "http://technet.microsoft.com/en-us/library/hh699811.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27818",
+    "downloadPreload": true
+}

@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Forms-Based Authentication with SharePoint Server 2013",
+    "downloadDescription": "This paper explains how to configure and demonstrate form-based authentication for SharePoint Server 2013 based on the Test Lab Guide: Configure SharePoint Server 2013 in a Three-Tier Farm (http://www.microsoft.com/en-us/download/details.aspx?id=30386).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "tlg-sp2013-fba-claims.docx",
+            "url": "https://download.microsoft.com/download/1/2/9/129e9cb3-d9ad-4ee5-ae92-6e7abe5f2a2a/tlg-sp2013-fba-claims.docx",
+            "size": "159889",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:31:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tlg-sp2013-fba-claims.pdf",
+            "url": "https://download.microsoft.com/download/1/2/9/129e9cb3-d9ad-4ee5-ae92-6e7abe5f2a2a/tlg-sp2013-fba-claims.pdf",
+            "size": "571519",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:31:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "Forms-based authentication is an identity management system that is based on ASP.NET membership and role provider authentication. In this test lab, you start with the three-tier SharePoint Server 2013 farm, which uses Active Directory Domain Services (AD DS) as its user directory. You then configure forms-based authentication support for the SharePoint \u2013 80 web application, which corresponds to the default team site for the Contoso Corporation. Lastly, you demonstrate forms-based identity when accessing the default Contoso team site.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "tlg-sp2013-fba-claims.docx",
+        "tlg-sp2013-fba-claims.pdf"
+    ],
+    "detailsSection_file_size": [
+        "156.1 KB",
+        "558.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34684",
+    "downloadPreload": true
+}

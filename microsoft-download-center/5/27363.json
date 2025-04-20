@@ -1,0 +1,214 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft SharePoint Workspace 2010 (KB2566445), 64-Bit Edition",
+    "downloadDescription": "A security vulnerability exists in Microsoft SharePoint Workspace 2010, 64-Bit Edition that could allow arbitrary code to run when a maliciously modified file is opened. This update resolves that vulnerability.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "workspaces2010-kb2566445-fullfile-x64-glb.exe",
+            "url": "https://download.microsoft.com/download/c/e/9/ce943798-0c70-4173-8ae5-9d89fb959518/workspaces2010-kb2566445-fullfile-x64-glb.exe",
+            "size": "23654392",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "You can get specific information about this update in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2566445\">Security Update for Microsoft SharePoint Workspace 2010 (KB2566445), 64-Bit Edition</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2566445",
+        "name": "KB2566445"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-074",
+        "name": "MS11-074"
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "workspaces2010-kb2566445-fullfile-x64-glb.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This update applies to the following product: </b></li> \n<ul>\n<li>Microsoft SharePoint Workspace 2010, 64-Bit Edition</li>\n</ul>\n<br /><li><b>Supported Windows Installer Version:</b> Windows Installer 3.1 or greater</li><ul>\n<li>Windows Server 2003 Service Pack 1 includes Windows Installer 3.1. Windows Installer 3.1 is also available as a separate download at the following location:</li>\n<ul><li><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=889482FC-5F56-4A38-B838-DE776FD4138C&displaylang=en\">Windows Installer 3.1 Redistributable (v2)</a></li>\n</ul></ul></ul><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>Note</b>: IT professionals should refer to the <b>IT professional resources</b> section.<br />\n<br /><b>Installation instructions</b><br />\nIf you have Microsoft SharePoint Workspace 2010, 64-Bit Edition, do one of the following:<br />\n<br />\n<ul><li>Use <a href=\"http://update.microsoft.com/microsoftupdate/v6/default.aspx?ln=en-us\">Microsoft Update</a> (recommended). Microsoft Update consolidates updates provided by Windows Update and Office Update into one location and enables you to choose automatic delivery and installation of high-priority updates.</li>\n<br/><br/><li>Install <b>Security Update for Microsoft SharePoint Workspace 2010 (KB2566445), 64-Bit Edition.</b> To do this, follow these steps:</li><ol><li>Download the .exe file by clicking on the <b>Download</b> button at the top of the page, and then save the file to your hard disk drive.</li>\n<li>It is recommended that you quit any programs you are running.</li><br />\n<li>In Windows Explorer, double-click the .exe file that you saved to your hard disk drive, and follow the instructions on the screen.</li><br />\n</ol></ul><br />\n<b>IT professional resources</b><br />\nIT professionals working in managed environments can find complete resources for deploying Office updates in an organization on the <a href=\"http://technet.microsoft.com/en-us/office/desktop/default.aspx\">Office System Suites and Programs TechCenter</a>.<br /><br />\nThe download for this update is available by clicking on the <b>Download</b> button at the top of the page. You can double-click the executable package to begin installation, or extract the patch files (MSP files) by using a command line. The command line and instructions are included in the Knowledge Base article <a href=\"http://support.microsoft.com/kb/912203\">Command line switches for Microsoft Self-Extractor packages (KB912203)</a>.<br /><br />\nSee the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/2566445\">Description of the Security Update for Microsoft SharePoint Workspace 2010 (KB2566445), 64-Bit Edition</a> for further information about this update.<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27363",
+    "downloadPreload": true
+}

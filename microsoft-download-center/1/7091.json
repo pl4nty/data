@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2010 Quick Start Guides ",
+    "downloadDescription": "Lync 2010 Quick Start Guides ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "QuickStarts.zip",
+            "url": "https://download.microsoft.com/download/c/2/6/c26cac92-763c-4c03-82b9-4bce35b1958d/QuickStarts.zip",
+            "size": "2069282",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Lync 2010 Quick Start Guides provide quick reference information for commonly used features in Lync 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "QuickStarts.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:Windows 2000;Windows Vista;Windows XP; Windows 7\r\nThis download works with the following Office applications: Microsoft Office Word 2007, Microsoft Office Word 2003, Microsoft Office Word 2010.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer. After you save the file, extract the .zip file to a folder. Instructions for modifying the documents are provided with the download. To remove this download, delete the file from the directory where you saved it.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7091",
+    "downloadPreload": true
+}

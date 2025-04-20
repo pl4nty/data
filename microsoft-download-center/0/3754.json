@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit: Sample Forms",
+    "downloadDescription": "This zipped file contains sample forms for use during a Microsoft Lync 2010 pilot program.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Form_Templates.zip",
+            "url": "https://download.microsoft.com/download/6/3/1/631213d9-2349-45fd-b532-ae07c720a70e/Form_Templates.zip",
+            "size": "6084",
+            "version": "0.1",
+            "datePublished": "5/15/2024 3:14:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download package contains two HTML templates that you can use to publish forms on your internal pilot site. It includes a \"Signup for Lync 2010\" form and a sample scenario feedback form.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "Form_Templates.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.9 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3754",
+    "downloadPreload": true
+}

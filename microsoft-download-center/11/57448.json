@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "USQL Table design, incremental data load, and partition management",
+    "downloadDescription": "Table design, incremental data load, and partition management",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "U-SQL - Table design, incremental data load, and partition management.pdf",
+            "url": "https://download.microsoft.com/download/a/e/b/aebfc572-947a-4967-9ed7-551ddf9aa5b6/U-SQL - Table design, incremental data load, and partition management.pdf",
+            "size": "911397",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:05:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Data Lake Analytics (U-SQL) originates from the world of Big Data, in which data is processed in a scale-out manner by using multiple nodes.  These nodes can access the data in several formats, from flat files to U-SQL tables.\r\nThis document focuses on U-SQL tables, with details about table design strategy, different types of partitions that can be created on U-SQL tables and how they differ from each other, the process for incrementally loading data into a partitioned table, and how to manage partitions.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "U-SQL - Table design, incremental data load, and partition management.pdf"
+    ],
+    "detailsSection_file_size": [
+        "890.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "To start the download, click Download, click Go, and then do one of the following: To start the installation immediately, click Open or Run this program from its current location. To copy the download to your computer for installation at a later time, click Save or Save this program to disk.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57448",
+    "downloadPreload": true
+}

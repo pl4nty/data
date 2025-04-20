@@ -1,0 +1,473 @@
+{
+    "error": "",
+    "downloadTitle": "February 2009 Security Release ISO Image",
+    "downloadDescription": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on February 10th, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows-KB913086-200902.iso",
+            "url": "https://download.microsoft.com/download/0/4/a/04ae6b36-bee9-4445-9a75-245a97baa263/Windows-KB913086-200902.iso",
+            "size": "2004062208",
+            "version": "913086",
+            "datePublished": "7/15/2024 3:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "pa-in",
+            "name": "Punjabi"
+        },
+        {
+            "cultureCode": "kn-in",
+            "name": "Kannada"
+        },
+        {
+            "cultureCode": "mr-in",
+            "name": "Marathi"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "az-latn-az",
+            "name": "Azeri (Latin)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nso-za",
+            "name": "Sesotho sa Leboa"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "quz-pe",
+            "name": "Quechua (Peru)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fil-ph",
+            "name": "Filipino"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "lo-la",
+            "name": "Lao"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "rw-rw",
+            "name": "Kinyarwanda"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "be-by",
+            "name": "Belarusian"
+        },
+        {
+            "cultureCode": "ur-in",
+            "name": "Urdu"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "mt-mt",
+            "name": "Maltese"
+        },
+        {
+            "cultureCode": "tn-bw",
+            "name": "Setswana (Botswana)"
+        },
+        {
+            "cultureCode": "rm-ch",
+            "name": "Romansh"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "zu-za",
+            "name": "isiZulu"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "kok-in",
+            "name": "Konkani"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "bs-cyrl-ba",
+            "name": "Bosnian (Cyrillic)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "mi-nz",
+            "name": "M\u0101ori"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ig-ng",
+            "name": "Igbo"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ta-in",
+            "name": "Tamil"
+        },
+        {
+            "cultureCode": "sq-al",
+            "name": "Albanian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "lb-lu",
+            "name": "Luxembourgish"
+        },
+        {
+            "cultureCode": "ha-latn-ng",
+            "name": "Hausa"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "xh-za",
+            "name": "isiXhosa"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ky-kg",
+            "name": "Kyrgyz"
+        },
+        {
+            "cultureCode": "hy-am",
+            "name": "Armenian"
+        },
+        {
+            "cultureCode": "am-et",
+            "name": "Amharic"
+        },
+        {
+            "cultureCode": "ka-ge",
+            "name": "Georgian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "wo-sn",
+            "name": "Wolof"
+        },
+        {
+            "cultureCode": "gu-in",
+            "name": "Gujarati"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "km-kh",
+            "name": "Khmer"
+        },
+        {
+            "cultureCode": "uz-latn-uz",
+            "name": "Uzbek (Latin)"
+        },
+        {
+            "cultureCode": "ms-bn",
+            "name": "Malay (Brunei Darussalam)"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "as-in",
+            "name": "Assamese"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "bn-in",
+            "name": "Bengali (India)"
+        },
+        {
+            "cultureCode": "tn-za",
+            "name": "Setswana (South Africa)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "tt-ru",
+            "name": "Tatar"
+        },
+        {
+            "cultureCode": "yo-ng",
+            "name": "Yoruba"
+        },
+        {
+            "cultureCode": "si-lk",
+            "name": "Sinhala"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "sw-ke",
+            "name": "Kiswahili"
+        },
+        {
+            "cultureCode": "iu-latn-ca",
+            "name": "Inuktitut (Latin)"
+        },
+        {
+            "cultureCode": "ml-in",
+            "name": "Malayalam"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ps-af",
+            "name": "Pashto"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        },
+        {
+            "cultureCode": "or-in",
+            "name": "Oriya"
+        },
+        {
+            "cultureCode": "bn-bd",
+            "name": "Bangla (Bangledsh) - Bangladesh"
+        }
+    ],
+    "detailsSection": "This DVD5 ISO image file contains the security updates for Windows released on Windows Update on February 10th, 2009. The image does not contain security updates for other Microsoft products. This DVD5 ISO image is intended for administrators that need to download multiple individual language versions of each security update and that do not use an automated solution such as Windows Server Update Services (WSUS). You can use this ISO image to download multiple updates in all\r\nlanguages at the same time.<br /><br />\r\n\r\n<b>Important:</b>&nbsp;&nbsp;&nbsp;Be sure to check the individual security bulletins at\r\n<a href=\"http://www.microsoft.com/technet/security\">http://www.microsoft.com/technet/security</a> prior to deployment of these updates to ensure that the files have not been updated at a later date.<br /><br />\r\n\r\nThis DVD5 image contains the following updates: <br/>\r\n<b>\r\n <a href=\"http://support.microsoft.com/kb/960082\">KB960082</a>\r\n</b> / <b>\r\n <a href=\"http://support.microsoft.com/kb/960082\">(MS09-004)</a>\r\n</b><ul>\r\n <li>Windows Server 2003 - 12 languages</li>\r\n <li>Windows Server 2003 x64 Edition - 12 languages</li>\r\n </ul>\r\n<b>\r\n <a href=\"http://support.microsoft.com/kb/960089\">KB960089</a>\r\n</b> / <b>\r\n <a href=\"http://support.microsoft.com/kb/960089\">( MS09-004)</a>\r\n</b><ul>\r\n <li>Windows Server 2003 - 1 language</li>\r\n <li>Windows Server 2003 x64 Edition - 1 language</li>\r\n <li>Windows Server 2008 - 1 language</li>\r\n <li>Windows Server 2008 x64 Edition - 1 language</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB960082; KB960089",
+        "name": "KB960082; KB960089"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS09-004",
+        "name": "MS09-004"
+    },
+    "detailsSection_file_version": "913086",
+    "detailsSection_file_name": [
+        "Windows-KB913086-200902.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.9 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 1 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2008",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Vista",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Enterprise 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows Vista Home Premium 64-bit edition",
+        "Windows Vista Service Pack 1",
+        "Windows Vista Ultimate 64-bit edition",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li>\r\n<ul>\r\n<li>Click <b>Run</b> to start the installation immediately.</li>\r\n<li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/913086"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22128",
+    "downloadPreload": true
+}

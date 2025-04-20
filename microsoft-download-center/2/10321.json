@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office - Keeping presentations across the organization up-to-date",
+    "downloadDescription": "Microsoft Office - Keeping presentations across the organization up-to-date",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Office - Keeping presentations across the organization up-to-date.pdf",
+            "url": "https://download.microsoft.com/download/c/1/f/c1fde208-6dd9-48b4-9839-84ad44650f4a/Microsoft Office - Keeping presentations across the organization up-to-date.pdf",
+            "size": "2597390",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Office - Keeping presentations across the organization up-to-date.xps",
+            "url": "https://download.microsoft.com/download/c/1/f/c1fde208-6dd9-48b4-9839-84ad44650f4a/Microsoft Office - Keeping presentations across the organization up-to-date.xps",
+            "size": "3154286",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Office - Keeping presentations across the organization up-to-date",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Office - Keeping presentations across the organization up-to-date.pdf",
+        "Microsoft Office - Keeping presentations across the organization up-to-date.xps"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB",
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat Reader to view the PDF file or Internet Explorer 7.0 to view XPS file",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF document to your computer and open it in Adobe Acrobat Reader to view, or download the XPS document to view it in Internet Explorer 7.0",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10321",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Extension: System Center 2012 Endpoint Protection",
+    "downloadDescription": "Extend the Base Configuration and System Center 2012 Configuration Manager test lab to include System Center 2012 Endpoint Protection",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabExt_SCEP2012.pdf",
+            "url": "https://download.microsoft.com/download/7/1/e/71ebb88e-3e25-42ae-a781-8525b81df670/TestLabExt_SCEP2012.pdf",
+            "size": "677145",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "TestLabExt_SCEP2012.xps",
+            "url": "https://download.microsoft.com/download/7/1/e/71ebb88e-3e25-42ae-a781-8525b81df670/TestLabExt_SCEP2012.xps",
+            "size": "1079607",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Test Lab Guide (TLG) extension extends the Base Configuration and System Center 2012 Configuration Manager test lab to include the System Center 2012 Endpoint Protection Point site system role.  This document also includes instructions for deploying Endpoint Protection clients and creating an Automatic Deployment Rule for definition updates.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabExt_SCEP2012.pdf",
+        "TestLabExt_SCEP2012.xps"
+    ],
+    "detailsSection_file_size": [
+        "661.3 KB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 Enterprise or Ultimate, Windows Server 2008 R2 SP1 Enterprise Edition, Microsoft SQL Server 2008 R2 SP2 Enterprise Edition, Microsoft System Center 2012 Configuration Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "Click Download to download this document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30449",
+    "downloadPreload": true
+}

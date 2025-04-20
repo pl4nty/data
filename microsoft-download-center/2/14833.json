@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Mobile 5.0 (KB944326)",
+    "downloadDescription": "Microsoft has released an update for Microsoft Windows Mobile 5.0.  This update includes updated time zone definitions for a new time zone for the Bolivarian Republic of Venezuela.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NewCaracasTZWM5.PPC.CAB",
+            "url": "https://download.microsoft.com/download/e/a/9/ea9ca803-be2a-4182-aef1-bc36ab80ffa9/NewCaracasTZWM5.PPC.CAB",
+            "size": "151848",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "NewCaracasTZWM5.SP.CAB",
+            "url": "https://download.microsoft.com/download/e/a/9/ea9ca803-be2a-4182-aef1-bc36ab80ffa9/NewCaracasTZWM5.SP.CAB",
+            "size": "182746",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This update makes a change to your Windows Mobile operating system by installing a new time zone for Caracas, Venezuela. The name of the new time zone is Venezuela Standard Time, and the display name for this time zone is (GMT -04:30) Caracas.<br />\n<br />\nYou can get specific information about this update in the Microsoft Knowledge Base article Description of the Update for Windows SharePoint Services 3.0 (KB944326).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB944326",
+        "name": "KB944326"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "NewCaracasTZWM5.PPC.CAB",
+        "NewCaracasTZWM5.SP.CAB"
+    ],
+    "detailsSection_file_size": [
+        "148.3 KB",
+        "178.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Mobile 5.0 SW for Pocket PC.<br />\nWindows Mobile 5.0 SW for Smartphone. <br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 5.0"
+    ],
+    "installInstructionSection": "1. Click the download above to download the file.<br />\n2. Please copy the file to the device and click on it to execute it. (There are multiple ways to copy a file to the device - one of them is to use ActiveSync).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14833",
+    "downloadPreload": true
+}

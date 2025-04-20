@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2008 R2 Service Pack 2",
+    "downloadDescription": "HPC Pack 2008 R2 Service Pack 2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP2 Media Integration Package.zip",
+            "url": "https://download.microsoft.com/download/b/5/a/b5aa5c2b-137e-45b0-ad7a-bb247c1caf27/SP2 Media Integration Package.zip",
+            "size": "597992925",
+            "version": "3.02.3716",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "HPC2008R2SP2-Update-x86.zip",
+            "url": "https://download.microsoft.com/download/b/5/a/b5aa5c2b-137e-45b0-ad7a-bb247c1caf27/HPC2008R2SP2-Update-x86.zip",
+            "size": "126929131",
+            "version": "3.02.3716",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HPC2008R2SP2-Update-x64.zip",
+            "url": "https://download.microsoft.com/download/b/5/a/b5aa5c2b-137e-45b0-ad7a-bb247c1caf27/HPC2008R2SP2-Update-x64.zip",
+            "size": "129651627",
+            "version": "3.02.3716",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This service pack updates the HPC Pack 2008 R2 products listed in the 'System Requirements' section. It provides improved reliability as well as an enhanced feature set including:<br/>\r\n<ul><li>Enhanced Windows Azure integration - you can now add Azure VM Roles to your cluster, you can Remote Desktop to your Azure nodes, and you can run MPI jobs on Azure nodes.</li>\r\n<li>Use a new 'resource pool' job scheduling policy that ensures resources are available to multiple groups of users.</li>\r\n<li>Access job scheduling services through a REST interface or through an IIS-hosted web portal.</li>\r\n<li>Assigning different submission and activation filters to jobs based on job templates.</li>\r\n<li>Over-subscribe or under-subscribe the number of cores on cluster nodes</li>\r\n</ul><br/>\r\n<br/>For more information on what's new in this release please refer to the documentation at <a href=\"http://technet.microsoft.com/en-us/library/hh184314(WS.10).aspx\">http://technet.microsoft.com/en-us/library/hh184314(WS.10).aspx</a><br/><br/>\r\nIn the 'Downloads' section you will three files:<br/>\r\n<ul><li>HPC2008R2SP2-Update-x64 : Download this .zip file to obtain the updater for use on your head nodes, compute nodes, broker nodes, and x64-based clients and workstation nodes. It also contains the Web Components (REST and Web Portal), Azure VM, and KSP ('soft card') installers necessary to use those features.</li>\r\n<li>HPC2008R2SP2-Update-x86 : This .zip file contains the updated for use on 32-bit clients and workstation nodes. It also contains the KSP ('soft card') installer for 32-bit clients.</li>\r\n<li>SP2 Media Integration Package : For customers who will be doing multiple new cluster installations (setting up brand new head nodes, not just updating existing clusters) you can use this package to update your original ('RTM') installation media to have SP2 integrated from the beginning. (Instead of installing from your RTM DVD, then applying SP1, then applying SP2.) Please refer to the instructions on the <a href=\"http://blogs.technet.com/b/windowshpc/archive/2011/06/09/creating-a-service-pack-integrated-installation-point.aspx\">HPC team blog</a> for more information.</li>\r\n</ul>\r\n\r\n<br/><br/><i>Note: This update does not support 'uninstallation.' Once installed attempting to remove it will completely remove the HPC Pack 2008 R2 software. We suggest initial testing be done on a non-production system, and that a system backup be performed prior to installing the service pack.</i>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.02.3716",
+    "detailsSection_file_name": [
+        "SP2 Media Integration Package.zip",
+        "HPC2008R2SP2-Update-x86.zip",
+        "HPC2008R2SP2-Update-x64.zip"
+    ],
+    "detailsSection_file_size": [
+        "570.3 MB",
+        "121.0 MB",
+        "123.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "An HPC Pack 2008 R2-based cluster with <a href=\"http://www.microsoft.com/download/details.aspx?id=16123\">Service Pack 1</a> installed including:<br/>\r\nHPC Pack 2008 R2 Express, HPC Pack 2008 R2 Enterprise, Windows HCP Server 2008 R2 Suite, HPC Pack 2008 R2 Client Utilities, HPC Pack 2008 R2 MS-MPI Redistributable\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows HPC Server 2008 R2",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "This service pack need to be run on all nodes and client machines.<br/>\r\n<br/>\r\nPlease refer to the documentation at <a href=\"http://technet.microsoft.com/en-us/library/ee783547(WS.10).aspx\">http://technet.microsoft.com/en-us/library/ee783547(WS.10).aspx</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows HPC Home Page",
+            "url": "http://www.microsoft.com/hpc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26646",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Writing Accessible Web Applications",
+    "downloadDescription": "This white paper is intended to help readers better understand the issues involved in making Web applications accessible to people with disabilities, a legal obligation that also benefits all users of the Web.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Writing_Accessible_Web_Applications.doc",
+            "url": "https://download.microsoft.com/download/0/f/5/0f5e941c-c495-401a-9031-eab8315da35e/Writing_Accessible_Web_Applications.doc",
+            "size": "1113600",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper is intended to help readers better understand the issues involved in making Web applications accessible to people with disabilities, a legal obligation that also benefits all users of the Web. The paper describes accessibility goals, explains how accessibility works in the browser, and provides an overview of how assistive technology (AT) devices communicate with client or Web applications. <br />\nMore specifically, this document deals with topics such as designing for accessibility, writing good core HTML, and understanding the requirements of AT devices; it includes guidelines, code samples, and checklists. The recommendations in this paper are based on W3C recommendations, Microsoft guidelines, and user feedback and can be applied to simple HTML, complex DHTML, and Asynchronous JavaScript + XML (AJAX) applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Writing_Accessible_Web_Applications.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "TabletPC",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21577",
+    "downloadPreload": true
+}

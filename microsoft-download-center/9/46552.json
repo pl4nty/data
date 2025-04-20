@@ -1,0 +1,314 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2015 Update 0.1 (KB 3010990)",
+    "downloadDescription": "Microsoft has released Microsoft Dynamics CRM 2015 Update 0.1  This is a tested, cumulative set of updates for Microsoft Dynamics CRM 2015. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Tools-KB3010990-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Tools-KB3010990-ENU-amd64.exe",
+            "size": "1741952",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Router-KB3010990-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Router-KB3010990-ENU-i386.exe",
+            "size": "17304664",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Router-KB3010990-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Router-KB3010990-ENU-amd64.exe",
+            "size": "17445000",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Srs-KB3010990-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Srs-KB3010990-ENU-amd64.exe",
+            "size": "21727616",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Mui-KB3010990-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Mui-KB3010990-ENU-amd64.exe",
+            "size": "57220664",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Mui-KB3010990-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Mui-KB3010990-ENU-i386.exe",
+            "size": "44316440",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Client-KB3010990-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Client-KB3010990-ENU-amd64.exe",
+            "size": "61530280",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Client-KB3010990-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Client-KB3010990-ENU-i386.exe",
+            "size": "56897000",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Server-KB3010990-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/5/f/4/5f43956f-e1cf-4f15-96be-967af29e2005/CRM2015-Server-KB3010990-ENU-amd64.exe",
+            "size": "104172152",
+            "version": "07.00.0001.0129",
+            "datePublished": "7/15/2024 3:50:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        }
+    ],
+    "detailsSection": "<b>Note</b> This update was previously named <i>Update Rollup 1 for Microsoft Dynamics CRM 2015</i>. <br />\r\n<br />\r\nMicrosoft has released Microsoft Dynamics CRM 2015 Server Update 0.1, Microsoft Dynamics CRM 2015 Report Authoring Extension Update 0.1, Microsoft Dynamics CRM 2015 for Outlook Update 0.1, Microsoft Dynamics CRM 2015 Language Pack Update 0.1, and Microsoft Dynamics CRM 2015 Email Router Update 0.1.<br />\n<br />\nFor more information about this release, see Microsoft Knowledge Base article 3010990:<br /><br /><a HREF=\"http://support.microsoft.com/kb/3010990\">Microsoft Dynamics CRM 2015 Update 0.1 is available</a> <br />\n<br />\nTo maintain parity between the application components of Microsoft Dynamics CRM 2015, this update includes packages for Microsoft Dynamics CRM Server, Microsoft Dynamics CRM 2015 Report Authoring Extension, Microsoft Dynamics CRM for Outlook, Microsoft Dynamics CRM Language Packs, and Microsoft Dynamics CRM Email Router.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3010990",
+        "name": "KB3010990"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "07.00.0001.0129",
+    "detailsSection_file_name": [
+        "CRM2015-Tools-KB3010990-ENU-amd64.exe",
+        "CRM2015-Router-KB3010990-ENU-i386.exe",
+        "CRM2015-Router-KB3010990-ENU-amd64.exe",
+        "CRM2015-Srs-KB3010990-ENU-amd64.exe",
+        "CRM2015-Mui-KB3010990-ENU-amd64.exe",
+        "CRM2015-Mui-KB3010990-ENU-i386.exe",
+        "CRM2015-Client-KB3010990-ENU-amd64.exe",
+        "CRM2015-Client-KB3010990-ENU-i386.exe",
+        "CRM2015-Server-KB3010990-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "16.5 MB",
+        "16.6 MB",
+        "20.7 MB",
+        "54.6 MB",
+        "42.3 MB",
+        "58.7 MB",
+        "54.3 MB",
+        "99.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Prerequisites:</b>\n<br />\n<ul><li>This update must be installed on a computer that is running Microsoft Dynamics CRM 2015.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Click Download, and then select the file you want to download from the list.<br /><br />\n<b>Important:</b> The language pack must be installed before you can apply the update for that language pack. Download and install a language pack at <a HREF=\"http://www.microsoft.com/en-US/download/details.aspx?id=45014\">Microsoft Dynamics CRM 2015 Language Packs</a>. <br /><br />\n\n<br />\n\nTo install this update, do one of the following:<br />\n<ul><li>To start the installation immediately, click Run.</li>\n<li>To save the download to your computer for installation later, click Save. </li>\n<li>To cancel the download, click Cancel.</li></ul>",
+    "additionalInformationSection": "\n<b>Hotfixes and updates that you have to manually enable or configure</b><br />\n<br />\nThis Microsoft Dynamics CRM 2015 update may contain hotfixes and updates that have to be manually enabled or configured. To enable or configure these hotfixes on the server that is running Microsoft Dynamics CRM 2015, see the \"Hotfixes and updates that you must enable or configure manually\" section of the following Microsoft Knowledge Base article: <br />\n<br /><a HREF=\"http://support.microsoft.com/kb/3010990\">Microsoft Dynamics CRM 2015 Update 0.1 is available (3010990)</a>\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "46552",
+    "downloadPreload": true
+}

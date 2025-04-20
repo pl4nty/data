@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "ALM for Microsoft Dynamics CRM 2011: CRM Solution Lifecycle Management",
+    "downloadDescription": "The advent of Solution Packages has improved the ability to produce and control how components of a Dynamics CRM application interact with each other, thus enabling ISVs and IT Departments to build on their functionality and take advantage of component reuse. This paper explains the need for a well-defined, structured, and coherent approach to version control, build, and release management.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "alm for crm 2011 - crm solution lifecycle management.pdf",
+            "url": "https://download.microsoft.com/download/4/9/c/49ca213c-d491-42c4-9b34-e8ab9c7a769a/alm for crm 2011 - crm solution lifecycle management.pdf",
+            "size": "4369557",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:34:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As Microsoft Dynamics CRM continues pushing towards the enterprise space, it becomes increasingly important to support the requirements of the enterprise\u2014not only through the product but also in terms of functionality, scale, resilience, and security. From an implementation perspective, enterprises expect to be able to have structured, repeatable processes that are predictable and well documented to manage their application lifecycle. To date, a number of approaches have been articulated through various channels and from a variety of sources, but a definitive and full lifecycle approach has not been concisely communicated by Microsoft. Many customers, partners, and consultants within MCS are reaching out for best practice advice and guidance, and it is Microsoft\u2019s responsibility to deliver on this expectation. This document focuses on providing a coherent end-to-end approach to enterprise development for Dynamics CRM.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "alm for crm 2011 - crm solution lifecycle management.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe Reader</LI><br />\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, choose <b>Download</b>, and then choose <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39044",
+    "downloadPreload": true
+}

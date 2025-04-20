@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Supply Planning in Microsoft Dynamics NAV 2013",
+    "downloadDescription": "This white paper provides detailed technical insight to the concepts and principles that are used within the Supply Planning features in Microsoft Dynamics NAV 2013. It explains how the planning system works and how to adjust the algorithms to meet planning requirements in different environments. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SupplyPlanningMSDNAV2013.pdf",
+            "url": "https://download.microsoft.com/download/0/4/f/04f8c589-9210-42e1-b499-5c9ea10ecc42/SupplyPlanningMSDNAV2013.pdf",
+            "size": "1803323",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "It first introduces central solution concepts and then describes the logic of the central mechanism, supply balancing, before proceeding to explain how inventory planning is performed with the use of reordering policies.\r\nThe content in this white paper is also available in Help for Microsoft Dynamics NAV 2013 under the topic label &quot;Design Details: Supply Planning&quot;.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SupplyPlanningMSDNAV2013.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101786",
+    "downloadPreload": true
+}

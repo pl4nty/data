@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Bing Maps REST Services SDK (CHM)",
+    "downloadDescription": "This documentation provides programming reference and how-to topics for getting started with the Bing Maps REST Services, in the form of a CHM file.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BingMapsRESTServices.zip",
+            "url": "https://download.microsoft.com/download/3/d/1/3d19ea7d-ff25-4d31-ab73-3781b3c0adee/BingMapsRESTServices.zip",
+            "size": "3956379",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This documentation provides programming reference and how-to topics for getting started with the Bing Maps REST Services, in the form of a CHM file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BingMapsRESTServices.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "This documentation is in the form of a .chm file, which requires Internet Explorer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Save the CHM file to your computer. </li><br />\n<li>Double-click the CHM file to open it.</li><br />\r\n<li>If the CHM file does not work correctly, you may have to unblock the CHM file. To unblock the file:\r\n     <ul><li>Right click the file, and select <b>Properties</b>.</li>\r\n               <li>On the <b>General</b> tab look for an <b>Unblock</b> button. If the file is not blocked, this button does not appear.</li>\r\n               <li>Click the <b>Unblock</b> button, and then click <b>OK</b> to close the dialog box.</li>\r\n               <li>Double-click the CHM file to open it, and it should work correctly.</li>\r\n      </ul>\r\n</li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "bing Maps for Developers",
+            "url": "http://www.microsoft.com/maps/developers"
+        },
+        {
+            "title": "bing Maps on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/library/dd877180.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20493",
+    "downloadPreload": true
+}

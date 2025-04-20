@@ -1,0 +1,105 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone SDK update for Windows Phone 7.8",
+    "downloadDescription": "The Windows Phone SDK Update for Windows Phone 7.8 adds two new emulator images to your existing Windows Phone SDK installation. This update supports both the Windows Phone SDK 7.1 and the Windows Phone SDK 8.0. Using this update, you can provide the Windows Phone 8 Start screen experience in your Windows Phone 7.5 apps. You can also test how your apps will run on Windows Phone 7.8 devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WPExpress78_update.exe",
+            "url": "https://download.microsoft.com/download/b/f/d/bfddd630-41c0-4ed4-87b0-fca4d3932dfd/WPExpress78_update.exe",
+            "size": "1160280",
+            "version": "7.8",
+            "datePublished": "7/15/2024 3:33:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Phone 7.8 Release Notes.htm",
+            "url": "https://download.microsoft.com/download/b/f/d/bfddd630-41c0-4ed4-87b0-fca4d3932dfd/Windows Phone 7.8 Release Notes.htm",
+            "size": "16055",
+            "version": "7.8",
+            "datePublished": "7/15/2024 3:33:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The Windows Phone SDK Update for Windows Phone 7.8 adds the following to your existing Windows Phone SDK installation:\r\n<br/>\r\n<UL>\r\n<LI>New Windows Phone Emulator 7.8</LI>\r\n<LI>New Windows Phone Emulator 7.8 256MB</LI>\r\n<LI>Functionality delivered in the <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=29233\">Windows Phone SDK 7.1.1 Update</a> (for Windows Phone SDK 7.1 users)</LI>\r\n</UL>\r\n<br/>\r\n<B>Note: <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=35471\">Windows Phone SDK 8.0</a> or <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=27570\">Windows Phone SDK 7.1</a> must be installed before you can install Windows Phone SDK Update for Windows Phone 7.8.</B>\r\n<br/>\r\nFor more information about Windows Phone 7.8, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=275667\">Windows Phone developer docs</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.8",
+    "detailsSection_file_name": [
+        "WPExpress78_update.exe",
+        "Windows Phone 7.8 Release Notes.htm"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "15.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>\r\nIf you are installing the Windows Phone SDK Update for Windows Phone 7.8 on a computer with Windows Phone SDK 8.0, see the <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=35471\">Windows Phones SDK 8.0 system requirements</a>.\r\n</LI>\r\n<LI>\r\nIf you are installing the Windows Phone SDK Update for Windows Phone 7.8 on a computer with Windows Phone SDK 7.1, see the <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=27570\">Windows Phones SDK 7.1 system requirements</a>.\r\n</LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8 Pro",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Ensure that you have the <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=35471\">Windows Phone SDK 8.0</a> or <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=27570\">Windows Phone SDK 7.1</a> installed.\r\n<br/>\r\nClick the Download button for WPexpress78_update.exe file and then select the option to Run and follow the instructions that appear.\r\n<br/>\r\nNote: If you have both the Windows Phone SDK 8.0 and Windows Phone SDK 7.1 installed on the same computer, both SDKs will be updated.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Phone SDK 7.1",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=27570"
+        },
+        {
+            "title": "windows Phone SDK 8.0",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=35471"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36474",
+    "downloadPreload": true
+}

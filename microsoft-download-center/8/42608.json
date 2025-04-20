@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Internet Explorer 7 for Windows XP (KB2964358)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS14-021. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE7-WindowsXP-KB2964358-x86-custom-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/e/6/ee68010c-ec0d-4534-8aed-2f81bfc881ef/IE7-WindowsXP-KB2964358-x86-custom-ENU.exe",
+            "size": "2215152",
+            "version": "2964358",
+            "datePublished": "7/15/2024 3:26:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        }
+    ],
+    "detailsSection": "Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2964358",
+        "name": "KB2964358"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-021",
+        "name": "MS14-021"
+    },
+    "detailsSection_file_version": "2964358",
+    "detailsSection_file_name": [
+        "IE7-WindowsXP-KB2964358-x86-custom-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer 7 with the following operating systems:<ul><li>Windows XP SP3</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</li>\n  <li>Do one of the following:</li>\n  <ul>\n    <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\n    <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\n  </ul>\n</ol>",
+    "additionalInformationSection": "<b>Other critical security updates are available:</b> To find the latest security updates for you visit <a href=\"http://windowsupdate.microsoft.com \">Windows Update</a> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <a href=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</a> and follow the 3 easy steps to ensure you\u2019re protected.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "security Guidance Center for Developers & IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1396223"
+        },
+        {
+            "title": "microsoft Security Bulletin MS14-021",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=397669"
+        },
+        {
+            "title": "maintain Security with Internet Explorer",
+            "url": "http://www.microsoft.com/windows/products/winfamily/ie/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42608",
+    "downloadPreload": true
+}

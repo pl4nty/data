@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Windows NT Embedded 4.0 Technical Documentation",
+    "downloadDescription": "This is a downloadable archive of the Windows NT Embedded 4.0 technical documentation library that was formerly on MSDN.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsNTEmbedded4.zip",
+            "url": "https://download.microsoft.com/download/3/b/e/3be97945-84f7-47ba-89ea-e217eb7af23f/WindowsNTEmbedded4.zip",
+            "size": "310907",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:13:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows NT Embedded 4.0 technical documentation is retired content for a product that is no longer supported. This retired content is no longer being maintained, but is provided as a courtesy for individuals who are still using Windows NT Embedded 4.0. The content may contain URLs that were valid when originally published, but now link to pages or sites that no longer exist.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "WindowsNTEmbedded4.zip"
+    ],
+    "detailsSection_file_size": [
+        "303.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\r\n<br />\r\nAdditional Requirements:\r\n<br />\r\nThis documentation is in the form of a Microsoft Compiled HTML Help (.chm) file. To view the .chm file, you will need a Windows operating system and Internet Explorer.<br />\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n                <li>The download is a compressed folder file. To start the download, click\r\n                <b>Download</b>.</li>\r\n                <li>If the <b>File Download</b> dialog box appears, do one of the \r\n                following:<ul>\r\n                                <li>To start the download immediately, click <b>Open</b>.</li>\r\n                                <li>To copy the download to your computer to view at a later time, click\r\n                                <b>Save</b>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n                                </li>\r\n                </ul>\r\n                </li>\r\n                <li>After the download is completed, right-click the \r\n                Windows NT Embedded 4.0 Technical Documentation file that has a compressed (.zip) file \r\n                name extension, and then click <b>Extract All</b> to extract the \r\n                file into a folder on your local computer.</li>\r\n                <li>Double-click the Windows NT Embedded 4.0 Technical Documentation.chm file. If prompted, \r\n                clear the <b>Always ask before opening this file</b> check box.</li>\r\n                <li>If you still cannot view the file, right-click the \r\n                Windows NT Embedded 4.0 Technical Documentation file, click <b>Properties</b>, \r\n                and then select the procedure that is most appropriate for you:<ul>\r\n                                <li>Clear the <b>This file came from another computer and may be \r\n                                unsafe check box</b>, and then click <b>OK</b>.</li>\r\n                                <li>Click <b>Unblock</b>, and then click <b>OK</b>.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n                                </li>\r\n                </ul>\r\n                </li>\r\n                <li>Double-click the Windows NT Embedded 4.0 Technical Documentation file to view it.       <br />\r\n                <br />\r\n                </li>\r\n</ol>\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40887",
+    "downloadPreload": true
+}

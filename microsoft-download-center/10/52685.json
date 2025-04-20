@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual C++ 2015 Redistributable Update 3 RC",
+    "downloadDescription": "This update is the latest in a cumulative series of feature additions and bug fixes for Microsoft Visual C++ 2015 Redistributable.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vc_redist.x86.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064f84ea-d1db-4eaa-9a5c-cc2f0ff6a638/vc_redist.x86.exe",
+            "size": "14157672",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:17:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "vc_redist.x64.exe",
+            "url": "https://download.microsoft.com/download/0/6/4/064f84ea-d1db-4eaa-9a5c-cc2f0ff6a638/vc_redist.x64.exe",
+            "size": "14990824",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:17:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft Visual C++ 2015 Redistributable installs run-time components of Visual C++ libraries. These components are required to run C++ applications that are developed using Visual Studio 2015 Update 3 RC and link dynamically to Visual C++ libraries. The packages can be used to run such applications on a computer even if it does not have Visual Studio 2015 installed. These packages also install run-time components of C Runtime (CRT), Standard C++, MFC, C++ AMP, and OpenMP libraries. Microsoft Visual C++ 2015 Redistributable includes bug fixes to the runtime DLLs and also the latest versions for <a href=\"https://support.microsoft.com/en-us/kb/2999226\">KB 2999226</a>.\n\nTo find out what's new in Visual Studio 2015 Update 3 RC, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=798770\">Visual Studio 2015 Update 3 RC Release Notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=798773\">Visual Studio 2015 Update 3 RC MSDN Article</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "vc_redist.x86.exe",
+        "vc_redist.x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "13.5 MB",
+        "14.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"https://www.visualstudio.com/visual-studio-2015-system-requirements-vs.aspx\">System requirements</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<b>Choose one of these installation options:</b>\n<ul>\n    <li>Install over the Internet:</li>\n    <ul>\n        <li>On this page, choose the <b>Download</b> button.</li>\n        <li>Select the .exe option and then choose the <b>Next</b> button.</li>\n            <ul>\n                <li>To install now, choose the <b>Run</b> button.</li>\n                <li>To download an installer that you can run later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n                <li>To create a local copy to install offline, choose the <b>Save</b> button, open a command prompt at that location and run the .exe with the /layout switch.</li>\n            </ul>\n</ul>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52685",
+    "downloadPreload": true
+}

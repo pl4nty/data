@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Holiday file for Iranian holidays (Office 2016)",
+    "downloadDescription": "This Outlook Holiday (.hol) file provides the holidays for Iran for use with Outlook in Office 2016 ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "outlook.hol",
+            "url": "https://download.microsoft.com/download/1/1/a/11a79d89-7f5e-437b-856e-875b254064e4/outlook.hol",
+            "size": "1352214",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:16:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        }
+    ],
+    "detailsSection": "This Outlook Holiday (.hol) file provides the holidays for Iran for use with Outlook in Office 2016  It can be installed in fa-IR, en-US or ar-SA",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "outlook.hol"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows 7 - 32 or 64 bit OS<br/>\r\nMicrosoft Windows 8 - 32 or 64 bit OS<br/>\r\nMicrosoft Windows 10 - 32 or 64 bit OS<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Follow these steps to update your existing Outlook Holiday file.<br/><br/>\r\n\r\n1. Exit Outlook if it is running.<br/><br/>\r\n\r\n2. In Microsoft Windows Explorer, delete the following file:<br/>\r\n\r\ndrive\\Program Files (x86)\\Microsoft Office\\root\\Office16\\LCID\\outlook.hol.<br/>\r\nor<br/>\r\ndrive\\Program Files\\Microsoft Office\\root\\Office16\\LCID\\outlook.hol.<br/><br/>\r\nNote LCID is your locale identification (LCID) number. For more information about LCID numbers, see <a href=\"http://support.microsoft.com/kb/2764690\">KB2764690</a>.<br/><br/>\r\n\r\n3. Paste updated outlook.hol into same directory.<br/><br/>\r\n\r\n4. Restart Outlook.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51930",
+    "downloadPreload": true
+}

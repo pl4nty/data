@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "SECAAS: Promote & Sell - Sales Material - Video Demos",
+    "downloadDescription": "Download assets for Security as a Service Campaign - SECAAS: Promote & Sell - Sales Material - Video Demos",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Customer_iPad_enrollment_experience_with_Intune.zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/Customer_iPad_enrollment_experience_with_Intune.zip",
+            "size": "37687206",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "User _SSO_experience_with_Azure_AD_Premium.zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/User _SSO_experience_with_Azure_AD_Premium.zip",
+            "size": "14296442",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Securing_email_on_an_iPad_with_Intune_MAM.zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/Securing_email_on_an_iPad_with_Intune_MAM.zip",
+            "size": "39559802",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Detecting_cyber_threats_with_ATA (1).zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/Detecting_cyber_threats_with_ATA (1).zip",
+            "size": "10967141",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Using_MFA_for_device-based_authentication_on_unknown_iPad.zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/Using_MFA_for_device-based_authentication_on_unknown_iPad.zip",
+            "size": "15186808",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Managing_Office_Mobile_with_MAM_on_device_with_3rd_party_MDM_client.zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/Managing_Office_Mobile_with_MAM_on_device_with_3rd_party_MDM_client.zip",
+            "size": "35281137",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RMS_document_encryption_tracking_and_revocation.zip",
+            "url": "https://download.microsoft.com/download/e/f/f/eff264cb-88b7-45c2-bc32-39bc2a2c173d/Video Demos/RMS_document_encryption_tracking_and_revocation.zip",
+            "size": "14569084",
+            "version": "June 2017",
+            "datePublished": "7/15/2023 4:43:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SECAAS: Promote & Sell - Sales Material - Video Demos",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2017",
+    "detailsSection_file_name": [
+        "Customer_iPad_enrollment_experience_with_Intune.zip",
+        "User _SSO_experience_with_Azure_AD_Premium.zip",
+        "Securing_email_on_an_iPad_with_Intune_MAM.zip",
+        "Detecting_cyber_threats_with_ATA (1).zip",
+        "Using_MFA_for_device-based_authentication_on_unknown_iPad.zip",
+        "Managing_Office_Mobile_with_MAM_on_device_with_3rd_party_MDM_client.zip",
+        "RMS_document_encryption_tracking_and_revocation.zip"
+    ],
+    "detailsSection_file_size": [
+        "35.9 MB",
+        "13.6 MB",
+        "37.7 MB",
+        "10.5 MB",
+        "14.5 MB",
+        "33.6 MB",
+        "13.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2023",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download to view",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55507",
+    "downloadPreload": true
+}

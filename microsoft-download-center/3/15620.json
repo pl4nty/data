@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Windows Server 2003: KB823728",
+    "downloadDescription": "This update (KB823728) has been replaced by the update that is described in the Microsoft Knowledge Base article (KB838894).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "823728_redirect.htm",
+            "url": "https://download.microsoft.com/download/5/8/0/58046393-7718-4d61-8c92-942ab573dc98/823728_redirect.htm",
+            "size": "2989",
+            "version": "823728",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update (KB823728) has been replaced by the update that is described in the following Microsoft Knowledge Base article:  <A HREF=\"http://support.microsoft.com/default.aspx?scid=KB;%5bLN%5d;838894\"> KB838894</A>. An updated Storport storage drive (version 5.2.3790.173) is available for Windows Server 2003.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB823728",
+        "name": "KB823728"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "823728",
+    "detailsSection_file_name": [
+        "823728_redirect.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15620",
+    "downloadPreload": true
+}

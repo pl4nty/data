@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Using IPsec to Secure Access to Exchange",
+    "downloadDescription": "This white paper will walk you through setting up IPsec for access to Exchange 2010 and configuring Forefront TMG and Forefront UAG to work with IPsec.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UsingIPsecToSecureAccessToExchange.docx",
+            "url": "https://download.microsoft.com/download/8/3/1/831b9fd1-114f-40a1-a134-b4dcb20edd7d/UsingIPsecToSecureAccessToExchange.docx",
+            "size": "2681885",
+            "version": "Feb2011",
+            "datePublished": "7/15/2024 3:27:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "By allowing remote access to Microsoft Exchange to users who are based outside the safety of the corporate network, an organization enables its employees to take full advantage of the technology their company provides. When considering remote access, an organization must also consider how to secure their corporate information. There are several different ways to secure access to corporate information, including VPNs, Direct Access, and IPsec. When enabling and requiring IPsec on the endpoint that\u2019s used to publish Exchange to the Internet, only machines with the right credentials can establish a connection.  \r\n<br/><br/>\r\nMicrosoft offers two software-based options for publishing Exchange to the Internet: Microsoft Forefront Threat Management Gateway 2010 and Microsoft Forefront Unified Access Gateway 2010. Both options offer publishing wizards and security features to provide secure access to Exchange when it is accessed from outside the safety of the corporate network and both work well with an IPsec based security solution. This white paper will walk you through setting up IPsec and configuring Forefront TMG and Forefront UAG to work with IPsec. \r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2011",
+    "detailsSection_file_name": [
+        "UsingIPsecToSecureAccessToExchange.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "23708",
+    "downloadPreload": true
+}

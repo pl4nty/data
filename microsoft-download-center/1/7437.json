@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Forefront Identity Manager (FIM) Capacity Planning Guide",
+    "downloadDescription": "This document describes items to consider when planning the capacity of your FIM 2010 installation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIM_Capacity_Planning.doc",
+            "url": "https://download.microsoft.com/download/f/5/b/f5b4f1d5-2f27-4436-ae71-607a69367d53/FIM_Capacity_Planning.doc",
+            "size": "786432",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document discusses hardware, software, topologies, and general specifications that will help you ensure your FIM installation performs as planned.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "FIM_Capacity_Planning.doc"
+    ],
+    "detailsSection_file_size": [
+        "768.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word Viewer or Microsoft Office Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Download the document and review the information.",
+    "additionalInformationSection": "There are a number of variables that can affect the overall capacity and performance of your FIM 2010 deployment. The ways in which you physically deploy the FIM components (topology), as well as the hardware on which those components run, are important factors in determining the performance and capacity that you can expect from your FIM deployment. The number and complexity of the FIM policy configuration objects may be less obvious, but they are still significant factors to consider when planning for capacity. Finally, the expected scale of the deployment, as well as the load that is expected to be placed on it, are typically more obvious factors that affect performance and capacity",
+    "relatedResourcesSection": [
+        {
+            "title": "fim Capacity Planning Guide Online",
+            "url": "http://technet.microsoft.com/en-us/library/ff400279(WS.10).aspx"
+        },
+        {
+            "title": "fim Planning and Architecture",
+            "url": "http://technet.microsoft.com/en-us/library/ee808044(WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7437",
+    "downloadPreload": true
+}

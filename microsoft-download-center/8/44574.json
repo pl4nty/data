@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Phone 8.1 Emulators",
+    "downloadDescription": "The Windows Phone 8.1 Emulators package provides emulator images for use with Visual Studio 2013 Update 2 or later. With this package, you can create and test apps using an emulator for Windows Phone 8.1. These emulators are included with Visual Studio 2013 Update 2 or later.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MobileTools_EmulatorWP81.exe",
+            "url": "https://download.microsoft.com/download/b/b/5/bb55e3e7-6f82-400a-969f-9b5bb116ef3b/MobileTools_EmulatorWP81.exe",
+            "size": "1203384",
+            "version": "8.10.12358.1191",
+            "datePublished": "7/15/2024 3:38:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Phone 8.1 Emulators package includes the following:\r\n<ul>\r\n<li>Windows Phone Emulator 8.1 WVGA 4 inch</li>\r\n<li>Windows Phone Emulator 8.1 WVGA 4 inch 512MB</li>\r\n<li>Windows Phone Emulator 8.1 WXGA 4.5 inch</li>\r\n<li>Windows Phone Emulator 8.1 720p 4.7 inch</li>\r\n<li>Windows Phone Emulator 8.1 1080p 5.5 inch</li>\r\n<li>Windows Phone Emulator 8.1 1080p 6 inch</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.10.12358.1191",
+    "detailsSection_file_name": [
+        "MobileTools_EmulatorWP81.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 Update 2 or later.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Ensure that you have Visual Studio 2013 Update 2 or later installed. Click the Download button for MobileTools_EmulatorWP81.exe.</li>\r\n<li>Select the option to Run and follow the instructions that appear.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44574",
+    "downloadPreload": true
+}

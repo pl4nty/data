@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Designing high-quality distributed Cloud-Native applications on Azure: An introduction between theory and practice",
+    "downloadDescription": "This e-book covers the latest trends in application development and how to best take advantage of the latest services such as Azure Container Apps, Azure Load Testing, and Azure Chaos to test and scale your apps.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Ebook - Designing high-quality distributed Cloud-Native applications on Azure - V1.1.pdf",
+            "url": "https://download.microsoft.com/download/9/a/8/9a8a312d-3d0e-4bbe-a9f7-511fb2ff54b5/Ebook - Designing high-quality distributed Cloud-Native applications on Azure - V1.1.pdf",
+            "size": "3125455",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:31:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\r\nThis e-book covers the latest trends in application development and how to best take advantage of the latest services such as <b>Azure Container Apps, Azure Load Testing, and Azure Chaos</b> to test and scale your apps. \r\nIt also includes a comprehensive look at the Microsoft Azure Well-Architected Framework and how to apply it to your projects. \r\nTopics such as architecture patterns, choice of cloud services, availability, resilience, and security are discussed in detail. \r\nMoreover, the e-book does not just cover the theory but also provides a complete implementation of an example case\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Ebook - Designing high-quality distributed Cloud-Native applications on Azure - V1.1.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux, Mac, Windows",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Download the PDF file(s) and open it with the PDF reader of your choices.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104260",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Grabbed by the Ghoulies Movie",
+    "downloadDescription": "Promotional Xbox movie for Grabbed by the Ghoulies",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ghoulies_e32k3.wmv",
+            "url": "https://download.microsoft.com/download/f/6/9/f69d2ad5-afb2-4d2e-91a5-863086cf00b3/ghoulies_e32k3.wmv",
+            "size": "4899318",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "E3 2003 promotional movie for Rare's first Xbox title Grabbed by the Ghoulies, released by Microsoft Game Studios in the same year.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ghoulies_e32k3.wmv"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select movie and use Windows Media Player to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6645",
+    "downloadPreload": true
+}

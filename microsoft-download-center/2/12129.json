@@ -1,0 +1,385 @@
+{
+    "error": "",
+    "downloadTitle": "Xbox Game Support Updates",
+    "downloadDescription": "Xbox\u00ae game support enables your Xbox 360\u2122 video game console to play an array of games from your original Xbox video game console. A list of games that are currently backward compatible is available here and we will continue to add support for additional games over time.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "$SystemUpdate_12-2007.zip",
+            "url": "https://download.microsoft.com/download/5/0/8/508cfd6d-ee87-4ceb-837d-4741a99d4155/$SystemUpdate_12-2007.zip",
+            "size": "7110438",
+            "version": "2",
+            "datePublished": "7/15/2024 3:09:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "pa-in",
+            "name": "Punjabi"
+        },
+        {
+            "cultureCode": "kn-in",
+            "name": "Kannada"
+        },
+        {
+            "cultureCode": "mr-in",
+            "name": "Marathi"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nso-za",
+            "name": "Sesotho sa Leboa"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "quz-pe",
+            "name": "Quechua (Peru)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fil-ph",
+            "name": "Filipino"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ur-in",
+            "name": "Urdu"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "mt-mt",
+            "name": "Maltese"
+        },
+        {
+            "cultureCode": "tn-bw",
+            "name": "Setswana (Botswana)"
+        },
+        {
+            "cultureCode": "rm-ch",
+            "name": "Romansh"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "zu-za",
+            "name": "isiZulu"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "kok-in",
+            "name": "Konkani"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "bs-cyrl-ba",
+            "name": "Bosnian (Cyrillic)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "mi-nz",
+            "name": "M\u0101ori"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nn-no",
+            "name": "Norwegian (Nynorsk)"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ta-in",
+            "name": "Tamil"
+        },
+        {
+            "cultureCode": "sq-al",
+            "name": "Albanian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "lb-lu",
+            "name": "Luxembourgish"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "xh-za",
+            "name": "isiXhosa"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "ka-ge",
+            "name": "Georgian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "bs-ba",
+            "name": "Bosnian (Latin)"
+        },
+        {
+            "cultureCode": "gu-in",
+            "name": "Gujarati"
+        },
+        {
+            "cultureCode": "te-in",
+            "name": "Telugu"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "af-za",
+            "name": "Afrikaans"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "bn-in",
+            "name": "Bengali (India)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "sw-ke",
+            "name": "Kiswahili"
+        },
+        {
+            "cultureCode": "iu-latn-ca",
+            "name": "Inuktitut (Latin)"
+        },
+        {
+            "cultureCode": "ml-in",
+            "name": "Malayalam"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "ga-ie",
+            "name": "Irish - Ireland"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ps-af",
+            "name": "Pashto"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "mk-mk",
+            "name": "Macedonian (FYROM)"
+        }
+    ],
+    "detailsSection": "Xbox\u00ae game support enables your Xbox 360\u2122 video game console to play an array of games from your original Xbox video game console. A list of games that are currently backward compatible is available here and we will continue to add support for additional games over time.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "$SystemUpdate_12-2007.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Xbox 360, Zip file utility, a DVD or CD burner, a blank, writeable DVD or CD",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "By downloading this update, you agree to the software license and other related terms set forth in the Xbox Live Terms of Use, located here. Save the update as default.zip\u2014it's about 5MB.<br />\n<br />\nYou will need to unzip the file to get the default.xex file out and put it at a location on your computer. If you are using Windows XP, you can simply open the zip file like you would a folder. If you are using an earlier version of Windows you will need a separate utility to open the zip file, like WinZip. Be sure the update is named default.xex <br />\n<br />\nThe update will not run automatically unless the file is named default.xex and is the only file on the disc (i.e., not in a folder or directory).<br />\n<br />\nCreate a DVD or CD<br />\nTo create an update disc you need the following:<br />\n<br />\nA DVD or CD burner.<br />\nA blank, writeable DVD or CD.<br />\nThe update from Xbox.com.<br />\nThese steps will cover burning the DVD or CD with Windows and the DVD or CD burning software that is part of the operating system. DVDs work better than CD-Rs, which in turn work better than CDRWs.<br />\n<br />\n(For illustration, we're using a CD in a CD burner, but the same steps apply with a DVD in a DVD burner.)<br />\n<br />\nStep 1: Place a blank disc in your burner. Select \"Open Writable CD Folder Using Windows Explorer\" or just open the CD drive icon from Explorer. <br />\n<br />\nIf you choose to use third-party CD/DVD writing software then please follow the instructions for that software in creating a data disc with just the update on the disc.<br />\n<br />\nStep 2: Drag default.xex to the CD Folder. If the CD write window doesn't open by default please drag and drop default.xex on the CD/DVD RW drive.<br />\n<br />\nStep 3: Click \"Write files to CD\" from the CD writing tasks in the Explorer window or select Write these files to CD from the CD/DVD RW drive right mouse click menu.<br />\n<br />\nStep 4: Go through the CD wizard. The first step is to add a label the CD; the default of the date is fine.<br />\n<br />\nStep 5: The CD wizard will create the CD. Wait until the CD is ejected.<br />\n<br />\nStep 6: Remove the CD from the drive\u2014you have created the CD.<br />\n<br />\nUpdate the Console<br />\nUpdate the backward compatibility program as well as the operating system software in your Xbox 360 console. <br />\n<br />\nStep 1: Place the CD in the Xbox 360 console. <br />\n<br />\nStep 2: The update program will start automatically. Select \"Continue\" to apply the update.<br />\n<br />\nStep 3: Wait for the update to complete.<br />\n<br />\nStep 4: Your system needs to have the operating system software updated. Select \"Yes, update now\" and press the A button.<br />\n<br />\nStep 5: The console will reboot and you're done. Insert your original Xbox games and enjoy!",
+    "relatedResourcesSection": [
+        {
+            "title": "xbox Live",
+            "url": "http://www.xbox.com/en-US/live/?WT.svl=nav"
+        },
+        {
+            "title": "xbox Home Page",
+            "url": "http://www.xbox.com/en-US/"
+        },
+        {
+            "title": "xbox Community",
+            "url": "http://www.xbox.com/en-US/community/?WT.svl=nav"
+        },
+        {
+            "title": "support",
+            "url": "http://www.xbox.com/en-US/support/?WT.svl=nav"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12129",
+    "downloadPreload": true
+}

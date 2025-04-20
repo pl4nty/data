@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Template files (ADMX/ADML) for Microsoft Office",
+    "downloadDescription": "This download includes the Group Policy Administrative Template files (ADMX/ADML) for Microsoft 365 Apps for enterprise, Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016 and also includes the OPAX/OPAL files for the Office Customization Tool (OCT) for Office 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "admintemplates_x64_5497.1000_en-us.exe",
+            "url": "https://download.microsoft.com/download/cd208613-5ca8-445f-9855-5081666d124e/admintemplates_x64_5497.1000_en-us.exe",
+            "size": "13354528",
+            "version": "5497.1000",
+            "datePublished": "3/28/2025 9:43:08 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "admintemplates_x86_5497.1000_en-us.exe",
+            "url": "https://download.microsoft.com/download/cd208613-5ca8-445f-9855-5081666d124e/admintemplates_x86_5497.1000_en-us.exe",
+            "size": "13094088",
+            "version": "5497.1000",
+            "datePublished": "3/28/2025 9:43:08 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download includes the Group Policy Administrative Template files (ADMX/ADML). These files are used by Group Policy to configure installations of Microsoft 365 products, such as Microsoft 365 Apps for enterprise, and volume licensed versions of Office LTSC 2024, Office LTSC 2021, Office 2019, and Office 2016.<br/><br/>\nThis download also includes an Admin folder with OPAX/OPAL files. These files are used by the Office Customization Tool (OCT) to customize Windows Installer (MSI) installations of volume licensed versions of Office 2016.<br/><br/>\nFor a list of all the Group Policy and OCT settings, refer to the Office2016GroupPolicyAndOCTSettings.xlsx, which is included as part of the download.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5497.1000",
+    "detailsSection_file_name": [
+        "admintemplates_x64_5497.1000_en-us.exe",
+        "admintemplates_x86_5497.1000_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.7 MB",
+        "12.5 MB"
+    ],
+    "detailsSection_file_date": "3/28/2025",
+    "systemRequirementsSection": "Note: Refer to the <a href=\"https://support.microsoft.com/topic/microsoft-365-and-office-resources-8dabd144-d436-4aae-8c0d-37edca95f7f5\"> System requirements for Office</a> to see the supported operating systems for specific versions of Office.\n<br/><br/>\nThe Administrative Template files (ADMX/ADML) in this download work with the following Office programs:\n<ul><li>Microsoft 365 Apps for enterprise.</li>\n<li>Desktop versions of Project and Visio that come with subscription plans.</li>\n<li>Volume licensed versions of Office LTSC 2024, Project 2024, and Visio LTSC 2024. For example, Office LTSC Professional Plus 2024, Project Standard 2024, and Visio LTSC Professional 2024.</li>\n<li>Volume licensed versions of Office LTSC 2021, Project 2021, and Visio LTSC 2021. For example, Office LTSC Professional Plus 2021, Project Standard 2021, and Visio LTSC Professional 2021.</li>\n<li>Volume licensed versions of Office 2019, Project 2019, and Visio 2019. For example, Office Standard 2019 and Visio Professional 2019.</li>\n<li>Volume licensed versions of Office 2016, Project 2016, and Visio 2016. For example, Office Professional Plus 2016 and Project Standard 2016.</li>\n</ul><br/><br/>\nThe Office Customization Tool (OPAX/OPAL) files provided in this download only work with volume licensed versions of Office 2016, Project 2016, and Visio 2016. For example, Office Professional Plus 2016 and Project Standard 2016.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>To download and extract the ADMX/ADML and OPAX/OPAL files:</b>\n<ol>\n<li>Click the <b>Download</b> button (above) and choose whether you want to download the 32-bit (x86) or 64-bit (x64) files, or both. For example, if you\u2019re using the Office Customization Tool (OCT) to customize installations of the 64-bit version of Office, download the 64-bit (x64) files. If you just need the ADMX/AMDL files, you can download either the 32-bit (x86) or 64-bit (x64) files. The ADMX/ADML files are the same for both.</li>\n<li>Click <b>Next</b> and choose where to save the files.</li>\n<li>Go to the location where you saved the downloaded files, and double-click the admintemplates executable (.exe) file, and follow the instructions to extract the files to a location of your choosing.</li>\n</ol>\n<br/><br/>\nIf you have Windows Server and Active Directory Domain Services (AD DS) deployed in your organization, you can configure settings for Office by using Group Policy. Copy the ADMX/ADML files to your AD DS environment and then use the Group Policy Management administrative tool to configure the Group Policy settings for Office.\n<br/><br/>\nIf you\u2019re using the Office Customization Tool (OCT), copy the Admin folder with the OPAX/OPAL files into the folder that contains your Office installation files. For more information about the OCT, see <a href=\"https://docs.microsoft.com/deployoffice/oct/oct-2016-help-overview\">Office Customization Tool (OCT) 2016 Help: Overview.</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49030",
+    "downloadPreload": true
+}

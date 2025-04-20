@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2011 Entity Relationship Diagrams",
+    "downloadDescription": "These Microsoft Office Visio diagrams show the logical database structure for Microsoft Dynamics CRM 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Crm2011DiagramsRTM.zip",
+            "url": "https://download.microsoft.com/download/c/a/e/cae43fac-ef18-4a30-9c0c-82728a51db96/Crm2011DiagramsRTM.zip",
+            "size": "1753798",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These Microsoft Office Visio 2010 diagrams show the logical entity relationships for Microsoft Dynamics CRM 2011. The logical relationships reflect the programming model for Microsoft Dynamics CRM 2011. The underlying implementation of the database is not exposed to developers.\r\n\r\nThese diagrams were generated using the Metadata Diagram sample code included in the Microsoft Dynamics CRM 2011 SDK download (version 5.0.3 or later).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Crm2011DiagramsRTM.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. Click the Download button in the upper-right corner of this page to start the download.\r\n2. To copy the document to your computer, click Save or Save this program to disk.\r\n3. To extract the documents, double-click the file and choose a folder for the extracted files.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2011 SDK",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=420f0f05-c226-4194-b7e1-f23ceaa83b69"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "2640",
+    "downloadPreload": true
+}

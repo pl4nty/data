@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "UCS Compatibility Log Collection Tool Auto-Update",
+    "downloadDescription": "Auto-update file for the Compatibility Log Collection Tool",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InstallerVersion.wxi",
+            "url": "https://download.microsoft.com/download/0/2/c/02c9d3b6-633b-47c9-94dc-e149ca5bbb0c/InstallerVersion.wxi",
+            "size": "265",
+            "version": "7.40.17",
+            "datePublished": "7/15/2024 4:50:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Auto-update file for the Compatibility Log Collection Tool",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.40.17",
+    "detailsSection_file_name": [
+        "InstallerVersion.wxi"
+    ],
+    "detailsSection_file_size": [
+        "265 bytes"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "This file will be used to check for updates each time the log collection tool is run.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54321",
+    "downloadPreload": true
+}

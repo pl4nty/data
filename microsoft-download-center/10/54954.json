@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Manager SP1 2016 Certificate Manager Modern Application",
+    "downloadDescription": "Users can easily manage their physical smart cards, virtual smart cards and software certificates",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIMCMModernApp_1.0.225.104_AnyCPU.zip",
+            "url": "https://download.microsoft.com/download/1/7/6/1760b4ba-ca29-4b74-be24-55393d48a7a7/FIMCMModernApp_1.0.225.104_AnyCPU.zip",
+            "size": "528993",
+            "version": "1.0.225.104",
+            "datePublished": "7/15/2024 4:40:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Users can easily manage their physical smart cards, virtual smart cards and software certificates",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.225.104",
+    "detailsSection_file_name": [
+        "FIMCMModernApp_1.0.225.104_AnyCPU.zip"
+    ],
+    "detailsSection_file_size": [
+        "516.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/><B>Minimum Requirements </B><BR/>\r\n<UL>\r\n<LI>Microsoft Identity Manager 2016 SP1 (MIM2016SP1)</LI>\r\n<LI>Microsoft Identity Manager 2016 (MIM2016)</LI>\r\n<LI>Forefront Identity Manager 2010 R2 (FIM2010R2)</LI>\r\n<LI>Microsoft .NET 4.0 Framework</LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<LI><a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/deploy-use/working-with-mim-certificate-manager\">Working with the MIM Certificate Manager</a></LI>",
+    "relatedResourcesSection": [
+        {
+            "title": "working with the MIM Certificate Manager",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/deploy-use/working-with-mim-certificate-manager"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54954",
+    "downloadPreload": true
+}

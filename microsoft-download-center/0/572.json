@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "[RETIRED] Smart Client Software Factory - May 2007",
+    "downloadDescription": "RETIRED DOWNLOAD: This project is retired. No future releases are planned.     The Smart Client Software Factory provides an integrated set of guidance that assists architects and developers in creating composite smart client applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Smart Client Software Factory - May 2007.msi",
+            "url": "https://download.microsoft.com/download/f/7/8/f7896393-789b-4dd8-beb8-a7a0707c76ac/Smart Client Software Factory - May 2007.msi",
+            "size": "35035648",
+            "version": "May-2007",
+            "datePublished": "7/15/2024 3:08:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>RETIRED DOWNLOAD</b><br />\r\nThis project is retired. No future releases are planned.<br />\r\n<br />\r\n<br />\r\nThe Smart Client Software Factory provides an integrated set of guidance that assists architects and developers in creating composite smart client applications. The software factory includes: QuickStarts, reference implementations, how to's, patterns, and Visual Studio .NET extensions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May-2007",
+    "detailsSection_file_name": [
+        "Smart Client Software Factory - May 2007.msi"
+    ],
+    "detailsSection_file_size": [
+        "33.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft .NET Framework 3.0<br />\nGuidance Automation Extensions  - February 2007 CTP<br />\nGuidance Automation Toolkit  - February 2007 CTP (optional)<br />\nVisual Studio 2005 Extensions for .NET Framework 3.0 (WPF & WCF)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the 'Download button' to commence the download</LI><br />\n<LI>Once the download dialog appears, do one of the following: </LI><br />\n<OL style=\"margin-top: -15; margin-bottom: -15\"><br />\n<LI type=\"a\" value=\"1\">To start the installation immediately, click Open or Run this program from its current location.</LI><br />\n<LI type=\"a\">To copy the download to your computer for installation at a later time, click Save or Save this program to disk. Once you are ready to install Smart Client Software Factory - May 2007, double-click on the saved file</LI><br />\n</OL><br />\n<LI>Follow the instructions in the installer program, including accepting the End User Licensing Agreement</LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "enterprise Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=62506"
+        },
+        {
+            "title": "patterns & practices",
+            "url": "http://msdn.microsoft.com/practices"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "572",
+    "downloadPreload": true
+}

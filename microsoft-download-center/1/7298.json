@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 White Paper: Accessibility for People with Disabilities",
+    "downloadDescription": "This white paper describes how to make Microsoft Dynamics GP more accessible for everyone to use.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Accessibility.xps",
+            "url": "https://download.microsoft.com/download/c/0/2/c0277952-055b-4a5f-b9e4-c131c62fa794/Accessibility.xps",
+            "size": "490535",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Accessibility.pdf",
+            "url": "https://download.microsoft.com/download/c/0/2/c0277952-055b-4a5f-b9e4-c131c62fa794/Accessibility.pdf",
+            "size": "335820",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft is committed to making its products and services easier for everyone to use. This document provides information about the features that make Microsoft Dynamics GP more accessible for people with disabilities.<br /><br />\r\nThis document discusses the following topics:<br />\r\n<UL><LI>Keyboard shortcuts for the menu bar, toolbar, windows, tools, and other common shortcuts</LI>\r\n<LI>Toolbar customization information</LI>\r\n<LI>User-specific changes to the display options</LI>\r\n<LI>Macro information</LI>\r\n<LI>Application shortcuts to windows, SmartList favorites, macros, web pages, and external tasks</LI>\r\n<LI>Accessibility features in the Microsoft Dynamics GP Help and in Windows</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "Accessibility.xps",
+        "Accessibility.pdf"
+    ],
+    "detailsSection_file_size": [
+        "479.0 KB",
+        "327.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Small Business Server 2003 ",
+        "Windows Small Business Server 2008 Premium",
+        "Windows Small Business Server 2008 Standard ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF or XPS file format.</LI>\r\n<LI>Save the file to your computer. </LI>\r\n<LI>Repeat these steps on each computer where you want to install the document, or save the file to a shared folder where other others can access it.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7298",
+    "downloadPreload": true
+}

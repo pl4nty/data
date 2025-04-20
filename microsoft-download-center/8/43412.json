@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Sequences in System Center 2012 Configuration Manager R2",
+    "downloadDescription": "This document series is a best practice guide for using Task Sequences in System Center 2012 Configuration Manager R2. The scenario is presented as a case study for a fictitious company, Fourth Coffee.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Part VII - Lessons Learned from Computer Refresh Task Sequence.docx",
+            "url": "https://download.microsoft.com/download/6/d/b/6db64c2a-e732-4cc7-828f-b46341ba976e/Part VII - Lessons Learned from Computer Refresh Task Sequence.docx",
+            "size": "270505",
+            "version": "1",
+            "datePublished": "7/15/2024 3:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Part V - Create Computer Refresh Task Sequence Wizard.docx",
+            "url": "https://download.microsoft.com/download/6/d/b/6db64c2a-e732-4cc7-828f-b46341ba976e/Part V - Create Computer Refresh Task Sequence Wizard.docx",
+            "size": "630621",
+            "version": "1",
+            "datePublished": "7/15/2024 3:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Part IV - Lessons Learned from Bare Metal Task Sequence.docx",
+            "url": "https://download.microsoft.com/download/6/d/b/6db64c2a-e732-4cc7-828f-b46341ba976e/Part IV - Lessons Learned from Bare Metal Task Sequence.docx",
+            "size": "445692",
+            "version": "1",
+            "datePublished": "7/15/2024 3:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Part III - Examine Bare Metal Task Sequence Steps.docx",
+            "url": "https://download.microsoft.com/download/6/d/b/6db64c2a-e732-4cc7-828f-b46341ba976e/Part III - Examine Bare Metal Task Sequence Steps.docx",
+            "size": "1145028",
+            "version": "1",
+            "datePublished": "7/15/2024 3:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Part II - Create Bare Metal Task Sequence.docx",
+            "url": "https://download.microsoft.com/download/6/d/b/6db64c2a-e732-4cc7-828f-b46341ba976e/Part II - Create Bare Metal Task Sequence.docx",
+            "size": "583986",
+            "version": "1",
+            "datePublished": "7/15/2024 3:55:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Part I - Case Study for Task Sequence Best Practices.docx",
+            "url": "https://download.microsoft.com/download/6/d/b/6db64c2a-e732-4cc7-828f-b46341ba976e/Part I - Case Study for Task Sequence Best Practices.docx",
+            "size": "32021",
+            "version": "1",
+            "datePublished": "7/15/2024 3:55:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "This document series is a best practice guide for using Task Sequences in System Center 2012 Configuration Manager R2. The scenario is presented as a case study for a fictitious company, Fourth Coffee. These documents go through the follow scenarios of using Task Sequences in SCCM 2012 Configuration Manager R2: <br /><br />\r\n \r\n\u2022        Bare Metal Task Sequence and examination of steps<br />\r\n\u2022        Lessons learned from the bare metal process<br />\r\n\u2022        Create Computer Refresh Task Sequence Wizard and examination of the steps<br />\r\n\u2022        Lessons learned from the Create Computer Refresh Task Sequence<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Part VII - Lessons Learned from Computer Refresh Task Sequence.docx",
+        "Part V - Create Computer Refresh Task Sequence Wizard.docx",
+        "Part IV - Lessons Learned from Bare Metal Task Sequence.docx",
+        "Part III - Examine Bare Metal Task Sequence Steps.docx",
+        "Part II - Create Bare Metal Task Sequence.docx",
+        "Part I - Case Study for Task Sequence Best Practices.docx"
+    ],
+    "detailsSection_file_size": [
+        "264.2 KB",
+        "615.8 KB",
+        "435.2 KB",
+        "1.1 MB",
+        "570.3 KB",
+        "31.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8.1, Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8.1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43412",
+    "downloadPreload": true
+}

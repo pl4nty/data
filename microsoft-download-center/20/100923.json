@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Azure AD Partner App Migration Kit",
+    "downloadDescription": "Presentations and other assets to assist Partners in Migration of Apps to AAD",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Partner Webcast Recording.mp4",
+            "url": "https://download.microsoft.com/download/0/b/4/0b4655af-77bf-415d-920b-cecbad08aa4c/Partner Webcast Recording.mp4",
+            "size": "185760184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "App Intgration with Azure AD_Partner.pptx",
+            "url": "https://download.microsoft.com/download/0/b/4/0b4655af-77bf-415d-920b-cecbad08aa4c/App Intgration with Azure AD_Partner.pptx",
+            "size": "7536155",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Application Migration Worksheet.docx",
+            "url": "https://download.microsoft.com/download/0/b/4/0b4655af-77bf-415d-920b-cecbad08aa4c/Application Migration Worksheet.docx",
+            "size": "18978",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "App Integration with Azure AD (Customer Deck).pptx",
+            "url": "https://download.microsoft.com/download/0/b/4/0b4655af-77bf-415d-920b-cecbad08aa4c/App Integration with Azure AD (Customer Deck).pptx",
+            "size": "7792534",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:21:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "App Integration with Azure AD (Customer Deck) - Customer ready slide deck to be delivered by the Partner to the Customer.\r\nApplication Migration Worksheet - Worksheet used to document discoverd applications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Partner Webcast Recording.mp4",
+        "App Intgration with Azure AD_Partner.pptx",
+        "Application Migration Worksheet.docx",
+        "App Integration with Azure AD (Customer Deck).pptx"
+    ],
+    "detailsSection_file_size": [
+        "177.2 MB",
+        "7.2 MB",
+        "18.5 KB",
+        "7.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word\r\nMicrosoft Powerpoint\r\nMedia Viewer with Mp4 support",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the files and open",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100923",
+    "downloadPreload": true
+}

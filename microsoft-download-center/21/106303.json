@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Architecting SAP Extensions with Microsoft Power Platform white paper",
+    "downloadDescription": "Advice and guidance white paper on building SAP-connected solutions with Power Platform.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Architecting SAP Extensions with Microsoft Power Platform.pdf",
+            "url": "https://download.microsoft.com/download/f/e/c/fec6ff75-1046-4f17-94eb-e1391c859035/Architecting SAP Extensions with Microsoft Power Platform.pdf",
+            "size": "1369391",
+            "version": "1.0",
+            "datePublished": "11/6/2024 7:54:31 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SAP is an essential system for organisations, but your unique requirements mean multiple extensions, often integrating with other systems. The Microsoft Power Platform enables faster delivery of extensions using a side-by-side approach. This white paper is for SAP experts (architects, developers, consultants), outlining Power Platform components and key considerations. Power Platform depth is not required. Throughout the document, links are provided for more details on the key subjects.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Architecting SAP Extensions with Microsoft Power Platform.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "11/6/2024",
+    "systemRequirementsSection": "SAP ECC and/or SAP S/4HANA (both on-premises and cloud)\r\nPower Platform including Power Apps, Power Automate, Copilot Studio, AI Builder, Power Pages",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "iOS",
+        "Windows 11",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download this whitepaper for advice and guidance on building SAP-connected solutions with Power Platform.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106303",
+    "downloadPreload": true
+}

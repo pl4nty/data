@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "WWMX GPS Track Downloader",
+    "downloadDescription": "This utility application will download track and waypoint information from an attached Garmin GPS device (support for Magellan devices coming soon) and save the data in the GPX format. Last published: November 17, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TrackDownloadSetup.msi",
+            "url": "https://download.microsoft.com/download/0/6/4/0647822f-6536-4cbe-a330-1ef18ce06cf8/TrackDownloadSetup.msi",
+            "size": "151040",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This utility application will download track and waypoint information from an attached Garmin GPS device (support for Magellan devices coming soon) and save the data in the GPX format. GPX is an XML format that can be read by a large variety of applications. The executables are binary-compatible with the PocketPC platform running the .NET Compact Framework. This application is part of the World-Wide Media eXchange project.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "TrackDownloadSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "147.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52503",
+    "downloadPreload": true
+}

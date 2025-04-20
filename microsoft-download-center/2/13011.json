@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Auto Accept Agent Deployment and Administration Guide",
+    "downloadDescription": "This guide explains how to install, configure, and administer Auto Accept Agent, a store event sink that automatically processes meeting requests for resource mailboxes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AutoAcceptAgent.doc",
+            "url": "https://download.microsoft.com/download/c/d/9/cd9989b3-f18c-4ce7-9af1-4750b165659b/AutoAcceptAgent.doc",
+            "size": "452096",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This guide explains how to install, configure, and administer Auto Accept Agent, a store event sink that automatically processes meeting requests for resource mailboxes. The guide leads you through the installation process, which installs Auto Accept Agent on your computer and registers Auto Accept Agent as a Component Object Model (COM+) component. After you have installed Auto Accept Agent, you then need to configure it and register the resource mailboxes on which you want this event sink to run. In addition, this guide provides you with troubleshooting information relevant to Auto Accept Agent. <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AutoAcceptAgent.doc"
+    ],
+    "detailsSection_file_size": [
+        "441.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "auto Accept Agent README",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=28270"
+        },
+        {
+            "title": "auto Accept Agent Tool",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=28650"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server 2003 Technical Library",
+            "url": "http://go.microsoft.com/fwlink/?linkid=21277"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13011",
+    "downloadPreload": true
+}

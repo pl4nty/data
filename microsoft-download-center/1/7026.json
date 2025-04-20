@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Windows SharePoint Services 3.0 Tools: Visual Studio 2005 Extensions User Guide, Version 1.1",
+    "downloadDescription": "A User Guide, Samples and Walkthroughs in VB.NET and C# for the VSeWSS 1.1 tools for developing custom SharePoint applications with Visual Studio 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VSeWSS11_UserGuide.msi",
+            "url": "https://download.microsoft.com/download/6/a/8/6a8c1b42-c938-4974-8b22-93089a707443/VSeWSS11_UserGuide.msi",
+            "size": "8829952",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the User Guide, Samples and Walkthroughs for the tools for developing custom SharePoint applications with the Visual Studio 2005 extensions for Windows SharePoint Services 3.0, version 1.1 (VSeWSS 1.1). The user guide has sections:\n<ol><li>Starting out in SharePoint Development</li>\n<li>Walkthrough of the VSeWSS User Interface including the WSP View</li>\n<li>The Team Site Project</li>\n<li>The Blank Site Project</li>\n<li>The List Definition Project</li>\n<li>The Web Part Project</li>\n<li>The Workflow Projects</li>\n<li>Project Item Templates</li>\n<li>Best Practices with VSeWSS</li>\n<li>Changes from 1.0 to 1.1</li></ol>\n<br />\nThe User Guide included is an CHM file that does not require any additional software to view. The Samples included are source files and a Visual Studio solution file that can be opened in Visual Studio if the VSeWSS 1.1 tools are installed.<br />\n<br />\nVSeWSS 1.1 is listed as a related resource in the box to the right of this page. The VSeWSS 1.1 tool includes Visual Studio 2005 project templates for Web Parts, site definitions, and list definitions; and a stand-alone utility program, the SharePoint Solution Generator.\n<br />\nThe Visual Studio extensions for Windows SharePoint Services are expected to be released for Visual Studio 2008 in June 2008",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "VSeWSS11_UserGuide.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Visual Studio 2005 (Standard Edition, Professional Edition, or Team System)</li><br />\n<li>Visual Studio 2005 extensions for Windows SharePoint Services 3.0, version 1.1</li><br />\n<li>Windows SharePoint Services v3.0</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> link (above) and saving the file to your hard disk.</li>\n<li>Double-click the <b>VSeWSS11_UserGuide.MSI</b> file on your hard disk to start the setup program.</li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n<li>By default the user guide and samples will install into C:\\Program Files\\Microsoft\\VSeWSS 1.1 User Guide - you can change this folder in the setup program</li>\n</ol>",
+    "additionalInformationSection": "This release is not supported by Microsoft Customer Support Services.",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint MSDN Developer Forum",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=1203&SiteID=1"
+        },
+        {
+            "title": "microsoft Office SharePoint Server Development Center",
+            "url": "http://msdn.microsoft.com/en-us/office/aa905503.aspx"
+        },
+        {
+            "title": "windows SharePoint Services Developer Center",
+            "url": "http://msdn.microsoft.com/sharepoint/"
+        },
+        {
+            "title": "sharePoint Community Portal",
+            "url": "http://sharepoint.microsoft.com/sharepoint/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7026",
+    "downloadPreload": true
+}

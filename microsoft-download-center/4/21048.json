@@ -1,0 +1,110 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Forefront Security for SharePoint with Service Pack 1 Readme",
+    "downloadDescription": "Forefront Security for SharePoint with Service Pack 1 helps business protect their Microsoft Office SharePoint Server 2007 and Windows SharePoint Services 3.0 collaboration environments by eliminating documents containing malicious code, confidential information, and inappropriate content.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme.htm",
+            "url": "https://download.microsoft.com/download/f/6/0/f60d87e2-08a3-4190-a56c-fd227656c516/readme.htm",
+            "size": "33130",
+            "version": "10.1",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Forefront Security for SharePoint manages and integrates multiple scan engines from industry-leading vendors and provides content controls to help protect your Microsoft Office SharePoint Server 2007 and Windows SharePoint Services 3.0 collaboration environments from documents that contain malicious code, confidential information, and inappropriate content. Forefront Security for SharePoint provides comprehensive protection against the latest threats to help ensure documents are safe before they are saved to or retrieved from the SharePoint document library. In addition, documents can be scanned for company sensitive information, profanity or other administrator-defined content policies. The new Forefront Security for SharePoint with SP1 provides an improved user experience around file uploads, manual scanning, keyword filtering, and program administration.  Through deep integration with Office SharePoint 2007 and Windows SharePoint Services 3.0, Forefront Security for SharePoint helps protect your collaboration environment while maintaining uptime and optimizing performance. Forefront Security for SharePoint also enables administrators to easily manage product configuration, operation, automated antivirus signature updates and reporting at the server and enterprise level.\n<br/><br/>\nCustomers who purchase Forefront Security for SharePoint with Service Pack 1 to protect Microsoft Office SharePoint Server 2007 or Microsoft Windows SharePoint Services version 3.0 will also be licensed to use Antigen for SharePoint to protect Microsoft SharePoint Portal Server 2003 and Microsoft Windows SharePoint Services 2.0 environments.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1",
+    "detailsSection_file_name": [
+        "readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "32.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 x64 editions",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition"
+    ],
+    "installInstructionSection": "Please click the Download button and when the download window appears click the Run button.<br />",
+    "additionalInformationSection": "To read and post feedback on Microsoft Forefront Security for SharePoint please visit the \n<A href=\"http://forums.microsoft.com/forefront/default.aspx?siteid=41\">Forefront Forums</A>. A Microsoft Passport account is required. <br />",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Forefront Client Security",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79019"
+        },
+        {
+            "title": "microsoft Antigen Home",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79014"
+        },
+        {
+            "title": "microsoft Forefront Home",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79018"
+        },
+        {
+            "title": "microsoft ISA Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=79020"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21048",
+    "downloadPreload": true
+}

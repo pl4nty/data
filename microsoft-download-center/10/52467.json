@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "TLA+ Tools",
+    "downloadDescription": "The TLA+ tool kit contains a) a parser and syntax checker for TLA+ specifications; b) a model checker and simulator for a subclass of \"executable\" TLA+ specifications; c) a program for typesetting TLA+ specifications; and d) a +Cal to TLA+ translator. Last published: February 28, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tla.zip",
+            "url": "https://download.microsoft.com/download/4/5/d/45d392ed-9d5b-46e5-8488-c0899173dc43/tla.zip",
+            "size": "3467149",
+            "version": "2.1.5",
+            "datePublished": "6/13/2024 12:55:35 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The TLA+ tool kit contains a) a parser and syntax checker for TLA+ specifications; b) a model checker and simulator for a subclass of \"executable\" TLA+ specifications; c) a program for typesetting TLA+ specifications; and d) a +Cal to TLA+ translator.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1.5",
+    "detailsSection_file_name": [
+        "tla.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.3 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52467",
+    "downloadPreload": true
+}

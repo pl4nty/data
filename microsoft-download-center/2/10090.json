@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "IDC Mission Critical Tracker 2005 (Long Version)",
+    "downloadDescription": "This report contains the results of the 2005 IDC Mission Critical Tracker Survey",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IDC-MS-MissionCritical-WW-261005.pdf",
+            "url": "https://download.microsoft.com/download/1/8/a/18a10d4f-deec-4d5e-8b24-87c29c2ec9af/IDC-MS-MissionCritical-WW-261005.pdf",
+            "size": "357869",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "During the spring and summer of 2005, IDC conducted a worldwide survey of the Mission Critical Market for Microsoft. Using their proven, rigorous survey methodology, IDC asked large Enterprises around the world what their Mission Critical IT applications looked like. Questions covered Operating Systems, Application Platforms, Application Servers, Portals, Message Queuing and more. 1918 responses were gathered from 9 Countries, in order to put together a comprehesive picture of the Mission Critical Application Software Market. This document contains the results of that survey.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IDC-MS-MissionCritical-WW-261005.pdf"
+    ],
+    "detailsSection_file_size": [
+        "349.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You will need the Acrobat reader to view the document",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click on the link to view the document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10090",
+    "downloadPreload": true
+}

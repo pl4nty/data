@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft 365 scenarios for frontline workers posters",
+    "downloadDescription": "Posters describing scenarios for Microsoft 365 for frontline workers",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "m365-frontline-healthcare.pdf",
+            "url": "https://download.microsoft.com/download/6/9/5/695c6157-0384-48d2-b474-b54a830c1e87/m365-frontline-healthcare.pdf",
+            "size": "148324",
+            "version": "04/2023",
+            "datePublished": "7/15/2024 4:32:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "m365-frontline-healthcare.vsdx",
+            "url": "https://download.microsoft.com/download/6/9/5/695c6157-0384-48d2-b474-b54a830c1e87/m365-frontline-healthcare.vsdx",
+            "size": "232492",
+            "version": "04/2023",
+            "datePublished": "7/15/2024 4:32:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "m365-frontline-retail.pdf",
+            "url": "https://download.microsoft.com/download/6/9/5/695c6157-0384-48d2-b474-b54a830c1e87/m365-frontline-retail.pdf",
+            "size": "156509",
+            "version": "04/2023",
+            "datePublished": "7/15/2024 4:32:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "m365-frontline-retail.vsdx",
+            "url": "https://download.microsoft.com/download/6/9/5/695c6157-0384-48d2-b474-b54a830c1e87/m365-frontline-retail.vsdx",
+            "size": "234192",
+            "version": "04/2023",
+            "datePublished": "7/15/2024 4:32:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "m365-frontline-scenarios.pdf",
+            "url": "https://download.microsoft.com/download/6/9/5/695c6157-0384-48d2-b474-b54a830c1e87/m365-frontline-scenarios.pdf",
+            "size": "263519",
+            "version": "04/2023",
+            "datePublished": "7/15/2024 4:32:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "m365-frontline-scenarios.vsdx",
+            "url": "https://download.microsoft.com/download/6/9/5/695c6157-0384-48d2-b474-b54a830c1e87/m365-frontline-scenarios.vsdx",
+            "size": "384996",
+            "version": "04/2023",
+            "datePublished": "7/15/2024 4:32:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft 365 for frontline workers can help you connect and engage your workforce, enhance workforce management, and increase operational efficiency. There are several solution areas that can help you achieve these goals. Think of Microsoft 365's foundational security and device management capabilities as setting a secure baseline, above which you can build scenarios that enable, empower, and transform your frontline business. You can use the capabilities included with Microsoft 365 for frontline workers, from Microsoft Teams, to SharePoint, Viva Connections, Yammer, and the Power Platform, or add in solutions from our partners in the digital ecosystem to connect with existing systems or create custom solutions for your business. Use these scenario overviews to start envisioning what your organization can do with Microsoft 365 for frontline workers. Find more information about these scenarios at https://aka.ms/m365frontlinescenarios.\r",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "04/2023",
+    "detailsSection_file_name": [
+        "m365-frontline-healthcare.pdf",
+        "m365-frontline-healthcare.vsdx",
+        "m365-frontline-retail.pdf",
+        "m365-frontline-retail.vsdx",
+        "m365-frontline-scenarios.pdf",
+        "m365-frontline-scenarios.vsdx"
+    ],
+    "detailsSection_file_size": [
+        "144.8 KB",
+        "227.0 KB",
+        "152.8 KB",
+        "228.7 KB",
+        "257.3 KB",
+        "376.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> \r\n\r\n<LI>The files are available as Adobe Reader (PDF) files or Microsoft Visio documents. Users who do not have Adobe Reader can download it from <A HREF=\"http://get.adobe.com/reader/\">Adobe.</A>. Users who do not have Microsoft Visio can view these documents through the downloadable <A HREF=\"https://www.microsoft.com/en-us/download/details.aspx?id=51188#:~:text=Install%20Instructions.%201%20To%20install%20this%20download%3ADownload%20the,then%20loads%20and%20renders%20the%20...%20See%20More.\"> Visio Viewer</A>.</LI>  \r\n\r\n</UL> ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104527",
+    "downloadPreload": true
+}

@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack for Dynamics CRM 2013",
+    "downloadDescription": "The System Center Management Pack for Microsoft Dynamics CRM 2013 enables you to administer the Microsoft Dynamics CRM 2013 application in Microsoft System Center Operations Manager (SCOM) 2007 SP1 or a later version.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft System Center Management Pack for Dynamics CRM 2013.msi",
+            "url": "https://download.microsoft.com/download/1/c/9/1c9659e6-62a4-4a31-a61c-6e022e6fe2bb/Microsoft System Center Management Pack for Dynamics CRM 2013.msi",
+            "size": "475136",
+            "version": "6.0.0.10",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013SCOMPackGuide.docx",
+            "url": "https://download.microsoft.com/download/1/c/9/1c9659e6-62a4-4a31-a61c-6e022e6fe2bb/CRM2013SCOMPackGuide.docx",
+            "size": "125559",
+            "version": "6.0.0.10",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Note: </b>This Microsoft System Center Management Pack for Dynamics CRM 2013.msi package was updated March16, 2015 to address an issue that can occur when you import the management pack into Microsoft System Center Operations Manager 2007. <br/>\r\n<br/>\r\nThe views, monitors, rules, and knowledge specific to Microsoft Dynamics CRM 2013 that comprise this Management Pack provide the means for System Center Operations Manager users to centrally manage the server application, its component services, and the computers on which they run. The Monitoring Pack for Microsoft Dynamics CRM 2013 also contains monitoring for the Microsoft Dynamics CRM 2013 E-mail Router and Microsoft Dynamics CRM 2013 Reporting Extensions. <br/>\r\n<br/>\r\nBy managing these Microsoft Dynamics CRM components in System Center Operations Manager, the administrator can respond quickly to critical events and key performance indicators, and take action to prevent service outages, reduce the resolution time for alert conditions, and increase the overall availability and performance of the Microsoft Dynamics CRM system. <br/>\r\n<br/>\r\n<b>Feature Summary </b>\r\n<ul>\r\n<li> Monitors the availability and heath of the following components </li>\r\n<ul>\r\n<li> Microsoft Dynamics CRM Server 2013 </li>\r\n<li> Microsoft Dynamics CRM 2013 E-mail Router </li>\r\n<li> Microsoft Dynamics CRM 2013 Reporting Extensions </li>\r\n</ul>\r\n<li> Monitors the availability and health of the following component services: </li>\r\n<ul>\r\n<li> Microsoft Dynamics CRM Asynchronous Processing Service  </li>\r\n<li> Microsoft Dynamics CRM Asynchronous Processing Service (maintenance) </li>\r\n<li> Microsoft Dynamics CRM Sandbox Processing Service </li>\r\n<li> Microsoft Dynamics CRM E-mail Router Service </li>\r\n<li> Microsoft Dynamics CRM Unzip Service </li>\r\n<li> World Wide Web Publishing Service </li>\r\n<li> Indexing Service </li>\r\n</ul>\r\n<li> Monitors the availability and health of the following application components and functionality:  </li>\r\n<ul>\r\n<li> Operability of ISV plug-ins  </li>\r\n<li> Web application requests processing, SOAP exceptions, and unexpected failures  </li>\r\n</ul>\r\n<li> Monitors the performance metrics of the following components:  </li>\r\n<ul>\r\n<li> Web application requests processing  </li>\r\n<li> Database query processing  </li>\r\n</ul>\r\n<li> Monitors the system for configuration-related failures.  </li>\r\n</ul>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.0.10",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for Dynamics CRM 2013.msi",
+        "CRM2013SCOMPackGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "464.0 KB",
+        "122.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li> <b>Other Software: </b></li>\r\n<ul>\r\n<li> System Center Operations Manager 2007 SP1 or a later version </li>\r\n<li> Microsoft Dynamics CRM Server 2013</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials"
+    ],
+    "installInstructionSection": "<b>To download the Management Pack:</b><br/>\r\n<ol>\r\n<li> Click the Download button at the top of the page. </li>\r\n<li> In the File Download \u2013 Security Warning dialog box, click Run. </li>\r\n<li> If the Internet Explorer \u2013 Security Warning dialog box appears, click Run. </li>\r\n<li> Follow the instructions to download the Management Pack. </li>\r\n</ol><br/>\r\n<b>To import the Monitoring Pack: </b><br/>\r\n<ol>\r\n<li> On a System Center Operations Manager server, open the Administration console. </li>\r\n<li> Right click on the Management Packs node, and then click Import Management Packs. </li>\r\n<li> Follow the instructions to import the Management Pack. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Management Pack for Microsoft Dynamics CRM 2011",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=26795"
+        },
+        {
+            "title": "dynamic CRM 4.0 Management Pack   ",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?displaylang=en&FamilyID=c2c9c4b6-69d5-432a-9560-8e4a6e01573a"
+        },
+        {
+            "title": "dynamic CRM Homepage",
+            "url": "http://crm.dynamics.com/en-us"
+        },
+        {
+            "title": "microsoft Dynamics CRM Implementation Guide for CRM Online and CRM 2013 (on-premises)",
+            "url": "http://www.microsoft.com/en-gb/download/details.aspx?id=40322"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44279",
+    "downloadPreload": true
+}

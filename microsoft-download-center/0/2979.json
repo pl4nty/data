@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010 design samples: Corporate portal with classic authentication or with claims-based authentication",
+    "downloadDescription": "Design samples illustrating a typical corporate deployment of SharePoint Server 2010 and using two forms of authentication.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SPS_2010_Design Sample_Corporate Portal_ClassicAuth.pdf",
+            "url": "https://download.microsoft.com/download/d/a/4/da4f2a97-8cec-4a64-85f5-8566ed635c35/SPS_2010_Design Sample_Corporate Portal_ClassicAuth.pdf",
+            "size": "501660",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPS_2010_Design Sample_Corporate Portal_ClassicAuth.xps",
+            "url": "https://download.microsoft.com/download/d/a/4/da4f2a97-8cec-4a64-85f5-8566ed635c35/SPS_2010_Design Sample_Corporate Portal_ClassicAuth.xps",
+            "size": "865348",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.vsd",
+            "url": "https://download.microsoft.com/download/d/a/4/da4f2a97-8cec-4a64-85f5-8566ed635c35/SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.vsd",
+            "size": "10430464",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SPS_2010_Design Sample_Corporate Portal_ClassicAuth.vsd",
+            "url": "https://download.microsoft.com/download/d/a/4/da4f2a97-8cec-4a64-85f5-8566ed635c35/SPS_2010_Design Sample_Corporate Portal_ClassicAuth.vsd",
+            "size": "7524864",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.pdf",
+            "url": "https://download.microsoft.com/download/d/a/4/da4f2a97-8cec-4a64-85f5-8566ed635c35/SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.pdf",
+            "size": "593050",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.xps",
+            "url": "https://download.microsoft.com/download/d/a/4/da4f2a97-8cec-4a64-85f5-8566ed635c35/SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.xps",
+            "size": "844083",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These design samples illustrate a typical corporate deployment, with the most common types of SharePoint sites represented. The two samples differ only in the mode of authentication that is implemented -- one uses classic authentication and one uses claims-based authentication.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SPS_2010_Design Sample_Corporate Portal_ClassicAuth.pdf",
+        "SPS_2010_Design Sample_Corporate Portal_ClassicAuth.xps",
+        "SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.vsd",
+        "SPS_2010_Design Sample_Corporate Portal_ClassicAuth.vsd",
+        "SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.pdf",
+        "SPS_2010_Design Sample_Corporate Portal_ClaimsAuth.xps"
+    ],
+    "detailsSection_file_size": [
+        "489.9 KB",
+        "845.1 KB",
+        "9.9 MB",
+        "7.2 MB",
+        "579.2 KB",
+        "824.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. </li><li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li><li>To view the XPS version of the model, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Use an appropriate application to open the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2979",
+    "downloadPreload": true
+}

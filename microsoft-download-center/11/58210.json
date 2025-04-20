@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Debug Diagnostic Tool v2 Update 3",
+    "downloadDescription": "The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DebugDiagx64.msi",
+            "url": "https://download.microsoft.com/download/5/2/8/52862d92-0128-4957-ab9f-2ffed4e036e9/DebugDiagx64.msi",
+            "size": "28659712",
+            "version": "2.3.0.37",
+            "datePublished": "7/15/2024 3:01:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Debug Diagnostic Tool (DebugDiag) is designed to assist in troubleshooting issues such as hangs, slow performance, memory leaks or memory fragmentation, and crashes in any user-mode process. The tool includes built-in analysis rules focused on Internet Information Services (IIS) applications, web data access components, COM+, SharePoint and related Microsoft technologies. Debugdiag 2.0 introduces a new analysis engine host with built-in reporting framework that can be accessed from .NET.  This new analysis engine simplifies analysis rule development in .NET.  Starting with Debugdiag 2.0, the analysis engine relies on Microsoft.Diagnostics.Runtime for .NET analysis.\r\n<ul>\r\n<li>DebugDiag 1.0 released as part of the IIS Diagnostic Toolkit and as a standalone tool (x86 only). </li>\r\n<li> DebugDiag 1.1 released as a standalone tool only (x86 and limited x64 support). </li>\r\n<li> DebugDiag 1.2 released as a standalone tool only (x86 and full x64 support).</li>\r\n<li> DebugDiag 2.2 released as a standalone tool only (x86 and full x64 support).</li>\r\n<li> DebugDiag 2.3 released as a standalone tool only (x64 support only!).</li>\r\n </ul>\r\n\r\n<br> </br>\r\n<br>DebugDiag 2 Update 3 addressed a number of issues that were reported in version 2.2  in both the collection and analysis modules.  It also introduced a number of features. Below is a summary of the new feaures. </br>\r\n\r\n<br> </br>\r\nSummary of Features: \r\n<br>=================</br>\r\n<br> </br>\r\n<ul>\r\n<li>Process Snopshotting capability</li>\r\n<li>Windows 10 Compatibility</li>\r\n<li>WCF Analysis</li>\r\n<li>Mex Framework Integration</li>\r\n<li>Kernel Analysis Preview</li>\r\n</ul>\r\n\r\n\r\n<br> </br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.3.0.37",
+    "detailsSection_file_name": [
+        "DebugDiagx64.msi"
+    ],
+    "detailsSection_file_size": [
+        "27.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Only x64 architecture is supported!\r\n\r\nCollection Module: \r\n<br>============</br>\r\n<ul>\r\n\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n<li>Windows Server 2016</li>\r\n</ul>\r\n<br></br>\r\nAnalysis Module:\r\n<br>============</br>\r\n<ul>\r\n<li>.NET 4.0 </li>\r\n<li>Windows Server 2012</li>\r\n<li>Windows 8</li>\r\n<li>Windows Server 2012 R2</li>\r\n<li>Windows 8.1</li>\r\n<li>Windows 10</li>\r\n<li>Windows Server 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "- Remove any previous version\r\n- Run the MSI",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58210",
+    "downloadPreload": true
+}

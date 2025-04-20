@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Image Cropping Dataset",
+    "downloadDescription": "The Image Cropping Dataset contains the cropping parameters for 1000 images that were manually cropped by an experienced photographer. Last published: October 24, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Cropping parameters.zip",
+            "url": "https://download.microsoft.com/download/e/c/5/ec58bd15-d9c2-4c8a-b0f4-2c3f55e67219/Cropping parameters.zip",
+            "size": "58772",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Image Cropping Dataset contains the cropping parameters for 1000 images that were manually cropped by an experienced photographer. The cropping parameters indicate the coordinates of the upper-left and bottom-right corners of the crop box. The original images can be found at the Image Cropping Dataset website at the Chinese University of Hong Kong. The dataset was compiled for the following publication: \u201cLearning the Change for Automatic Image Cropping\u201d by Jianzhou Yan, Stephen Lin, Sing Bing Kang, and Xiaoou Tang in the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) 2013. Please cite this paper in any work that uses this dataset.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Cropping parameters.zip"
+    ],
+    "detailsSection_file_size": [
+        "57.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52457",
+    "downloadPreload": true
+}

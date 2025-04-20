@@ -1,0 +1,239 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Packs for Open Source Software",
+    "downloadDescription": "The Management Packs for Open Source Software enable discovering, monitoring, and managing MySQL Server and Apache HTTP Server with System Center 2016 Operations Manager and System Center 1801 Operations Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.PTG.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.PTG.msi",
+            "size": "516096",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.PTB.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.PTB.msi",
+            "size": "495616",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.PLK.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.PLK.msi",
+            "size": "516096",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.NLD.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.NLD.msi",
+            "size": "507904",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SC 2016 Management Pack for OSS.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.msi",
+            "size": "462848",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.KOR.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.KOR.msi",
+            "size": "516096",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.JPN.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.JPN.msi",
+            "size": "491520",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.ITA.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.ITA.msi",
+            "size": "520192",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.HUN.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.HUN.msi",
+            "size": "520192",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.FRA.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.FRA.msi",
+            "size": "524288",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.ESN.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.ESN.msi",
+            "size": "495616",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.DEU.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.DEU.msi",
+            "size": "475136",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.CHT.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.CHT.msi",
+            "size": "499712",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.CHS.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.CHS.msi",
+            "size": "483328",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OSS Management Packs for 1801 System Center Operations Manager.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/OSS Management Packs for 1801 System Center Operations Manager.msi",
+            "size": "462848",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.TRK.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.TRK.msi",
+            "size": "495616",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.SVE.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.SVE.msi",
+            "size": "512000",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SC 2016 Management Pack for OSS.RUS.msi",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/SC 2016 Management Pack for OSS.RUS.msi",
+            "size": "536576",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MySQLMPGuide.docx",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/MySQLMPGuide.docx",
+            "size": "77816",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ApacheMPGuide.docx",
+            "url": "https://download.microsoft.com/download/b/4/8/b48450d5-2c2b-4e89-902c-3e2d3ff42b0e/ApacheMPGuide.docx",
+            "size": "81101",
+            "version": "7.7.1129.0",
+            "datePublished": "7/15/2024 5:03:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Management Packs for Open Source Software enable discovering, monitoring, and managing MySQL Server and Apache HTTP Server with System Center 2016 - Operations Manager. They provide reactive and proactive monitoring of MySQL Server and Apache HTTP Server running on Linux operating systems. The monitoring provided by the Open Source Software management packs includes availability and configuration monitoring, performance data collection, and default thresholds. In addition to health monitoring capabilities, the Open Source Software management packs include reports, diagnostics, tasks, and views that enable near real-time diagnosis and resolution of detected issues. <br/>\r\n<br/>\r\n<b>Feature Summary</b>\r\n<br/>\r\n<b> Apache HTTP Server </b> \r\n<ul>\r\n<li> Supports Apache HTTP Server version 2.2 and 2.4</li>\r\n<li> Provides monitoring of busy and idle workers </li> \r\n<li> Provides monitoring of resource usage - memory and CPU </li> \r\n<li> Provides statistics for virtual hosts such as \"Requests per Minute\" and \"Errors per Minute\"</li> \r\n<li> Provides alerting for SSL Certificate expiration</li> \r\n</ul>\r\n<b> MySQL Server </b>\r\n<ul>\r\n<li> Supports MySQL Server version 5.0, 5.1, 5.5, 5.6, and 5.7 </li>\r\n<li> Supports MariaDB Server version 5.5, and 10.0</li>\r\n<li> Provides monitoring of databases</li> \r\n<li> Provides monitoring of disk space usage for server and databases</li> \r\n<li> Provides statistics for Key Cache, Query Cache, and Table Cache</li> \r\n<li> Provides alerting for slow queries, failed connections, and full table scans</li> \r\n</ul>\r\n<br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.7.1129.0",
+    "detailsSection_file_name": [
+        "SC 2016 Management Pack for OSS.PTG.msi",
+        "SC 2016 Management Pack for OSS.PTB.msi",
+        "SC 2016 Management Pack for OSS.PLK.msi",
+        "SC 2016 Management Pack for OSS.NLD.msi",
+        "SC 2016 Management Pack for OSS.msi",
+        "SC 2016 Management Pack for OSS.KOR.msi",
+        "SC 2016 Management Pack for OSS.JPN.msi",
+        "SC 2016 Management Pack for OSS.ITA.msi",
+        "SC 2016 Management Pack for OSS.HUN.msi",
+        "SC 2016 Management Pack for OSS.FRA.msi",
+        "SC 2016 Management Pack for OSS.ESN.msi",
+        "SC 2016 Management Pack for OSS.DEU.msi",
+        "SC 2016 Management Pack for OSS.CHT.msi",
+        "SC 2016 Management Pack for OSS.CHS.msi",
+        "OSS Management Packs for 1801 System Center Operations Manager.msi",
+        "SC 2016 Management Pack for OSS.TRK.msi",
+        "SC 2016 Management Pack for OSS.SVE.msi",
+        "SC 2016 Management Pack for OSS.RUS.msi",
+        "MySQLMPGuide.docx",
+        "ApacheMPGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "504.0 KB",
+        "484.0 KB",
+        "504.0 KB",
+        "496.0 KB",
+        "452.0 KB",
+        "504.0 KB",
+        "480.0 KB",
+        "508.0 KB",
+        "508.0 KB",
+        "512.0 KB",
+        "484.0 KB",
+        "464.0 KB",
+        "488.0 KB",
+        "472.0 KB",
+        "452.0 KB",
+        "484.0 KB",
+        "500.0 KB",
+        "524.0 KB",
+        "76.0 KB",
+        "79.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ol>\r\n<li> System Center 2016 - Operations Manager\r\n</li>\r\n<li> System Center 1801 - Operations Manager\r\n</li>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Linux",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Install the latest UNIX and Linux management packs for the UNIX and Linux versions you are using. These management packs are located on the System Center Operations Manager media or as part of Update Rollup releases</li>\r\n<li> Download and install the management packs for the Open Source Software components you are using (MySQL Server or Apache HTTP Server)</li>\r\n<li> Follow the configuration options located in the MySQL or Apache MP guide</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46924",
+    "downloadPreload": true
+}

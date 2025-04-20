@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Group Policy Settings Reference Spreadsheet for Windows 10 2022 Update (22H2)",
+    "downloadDescription": "This spreadsheet lists the policy settings for computer and user configurations that are included in the Administrative template files delivered with for Windows 10 2022 Update (22H2). You can configure these policy settings when you edit Group Policy Objects",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows10andWindowsServer2019PolicySettings--22H2.xlsx",
+            "url": "https://download.microsoft.com/download/9/3/6/936c1789-04eb-4303-9fb7-a6cfb2f48836/Windows10andWindowsServer2019PolicySettings--22H2.xlsx",
+            "size": "753307",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:33:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use the filtering capabilities that are included in this spreadsheet to view a specific subset of data, based on one value or a combination of values that are available in one or more of the columns. In addition, you can click Custom in the drop-down list of any of the column headings to add additional filtering criteria within that column. <br/>\r\n<br/>To view a specific subset of data, click the drop-down arrow in the column heading of cells that contain the value or combination of values on which you want to filter, and then click the desired value in the drop-down list.\r\n<br/>\r\n<ul>\r\n<li>en-US English - United States</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows10andWindowsServer2019PolicySettings--22H2.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "735.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<br/>\r\n<li><b>Supported Operating System:</b> Windows 10, Windows 7, Windows 8, Windows 8.1, Windows Server 2012, Windows Server 2016, Windows Server 2019, Windows Server 2012 R2, Windows Server 2008 R2</li><br/>\r\n<li>Microsoft Excel or Excel Viewer</li><br/>\r\n</ul>\r\n\r\n\r\n\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "To download the reference spreadsheet: <br/>\r\n<ol><br/>\r\n<li>Click the <b>Download</b> button. </li>\r\n<li>To view the spreadsheet immediately, click <b>Open</b>. </li>\r\n<li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li>\r\n<br/></ol>\r\n<br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "group Policy Settings Reference Spreadsheet for Windows 10 November 2021 Update (21H2)- v2.0",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=104043"
+        },
+        {
+            "title": "administrative Templates (.admx) for Windows 10 2022 Update (22H2)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=104677"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104678",
+    "downloadPreload": true
+}

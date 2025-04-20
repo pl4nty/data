@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Password Export Server version 3.1 (x86)",
+    "downloadDescription": "The Password Export Server version 3.1 (PES v3.1) enables password migrations during account migrations in an Active Directory Domain Services infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "pwdmig.msi",
+            "url": "https://download.microsoft.com/download/2/9/a/29ae0bc7-5bde-4111-92cd-6e23e73d1e6a/pwdmig.msi",
+            "size": "1052672",
+            "version": "3.1",
+            "datePublished": "7/15/2024 4:26:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Password Export Server version 3.1 (PES v3.1) is a part of the Active Directory Migration Tool (ADMT) v3.2 toolset. You can use PES v3.1 to migrate passwords, when performing account migrations between different Active Directory\u00ae  Domain Service (AD DS) environments using ADMT v3.2.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1",
+    "detailsSection_file_name": [
+        "pwdmig.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>The x86 version of PES v3.1 cannot be installed on an x64 version of an operating system. PES v3.1 (x64) is available as a separate download. See the Related Downloads section below.</LI><LI>It is highly recommended that PES v3.1 is installed on operating systems which have the latest applicable Service Pack installed.</LI><LI>PES v3.1 must be installed on a domain controller in the source domain that supports 128-bit encryption and is running a supported operating system.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003",
+        "Windows 2000 Server"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "active Directory Domain Services",
+            "url": "https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/active-directory-domain-services"
+        },
+        {
+            "title": "active Directory Migration Tool v3.2",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=56570"
+        },
+        {
+            "title": "password Export Server v3.1 (x64)",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=1838"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10370",
+    "downloadPreload": true
+}

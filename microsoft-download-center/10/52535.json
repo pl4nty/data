@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MSR Demosaicing Dataset",
+    "downloadDescription": "The Microsoft Research Cambridge demosaicing data set consists of set of raw images, and their downscaled versions which can be used for learning and evaluating demosaicing (and possibly other tasks like denoising), both in linear-space and color-space. Last published: February 28, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR-Demosaicing.zip",
+            "url": "https://download.microsoft.com/download/f/9/0/f9045c9a-fabb-4812-a2f7-a9e65a48258d/MSR-Demosaicing.zip",
+            "size": "2844111803",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Research Cambridge demosaicing data set consists of set of raw images, and their downscaled versions which can be used for learning and evaluating demosaicing (and possibly other tasks like denoising), both in linear-space and color-space.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSR-Demosaicing.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52535",
+    "downloadPreload": true
+}

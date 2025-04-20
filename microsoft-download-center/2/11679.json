@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Scott Stanfield on Deep Zoom and PhotoSynth!",
+    "downloadDescription": "Scott Stanfield talks about Deep Zoom, PhotoSynth, his Mix keynote, and all the cool toys he gets to play with.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080605SStanfield.zip",
+            "url": "https://download.microsoft.com/download/3/a/6/3a6cbf50-9199-423c-b087-55244580274a/20080605SStanfield.zip",
+            "size": "50276878",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:07:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Scott Stanfield is the founder and CEO of Vertigo Software, Inc., a Microsoft Gold Certified Partner for eCommerce Solutions. Scott is a proud member of the MSDN Regional Director community, covering Silicon Valley, and participates in the .NET Partner Architect Council. His company has built the Windows DNA \"Rosetta Stone\" sample application Fitch & Mather Stocks 2000 and the .NET sample IBuySpy.com. He is a frequent speaker and has delivered keynotes at Microsoft events including TechEd, PDC, DevDays and VBITs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080605SStanfield.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.9 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "11679",
+    "downloadPreload": true
+}

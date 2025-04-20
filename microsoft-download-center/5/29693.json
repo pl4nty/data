@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae Express License Terms for Redistribution and Hosting",
+    "downloadDescription": "This site contains the license terms that allow for redistribution of SQL Server Express 2005, 2008, 2008 R2, 2012 and 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "license_Expr_2008.rtf",
+            "url": "https://download.microsoft.com/download/9/4/b/94bc9959-1d2d-4508-b054-ec367e64a557/1033/license_Expr_2008.rtf",
+            "size": "57372",
+            "version": "Express",
+            "datePublished": "7/15/2024 3:29:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL Express 2012 Express (Revised).docx",
+            "url": "https://download.microsoft.com/download/9/4/b/94bc9959-1d2d-4508-b054-ec367e64a557/SQL Express 2012 Express (Revised).docx",
+            "size": "25485",
+            "version": "Express",
+            "datePublished": "7/15/2024 3:29:22 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "license_Expr_2005.rtf",
+            "url": "https://download.microsoft.com/download/9/4/b/94bc9959-1d2d-4508-b054-ec367e64a557/1033/license_Expr_2005.rtf",
+            "size": "57372",
+            "version": "Express",
+            "datePublished": "7/15/2024 3:29:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL 2014 Express_Hosting_Redistribution_EULA.docx",
+            "url": "https://download.microsoft.com/download/9/4/b/94bc9959-1d2d-4508-b054-ec367e64a557/SQL 2014 Express_Hosting_Redistribution_EULA.docx",
+            "size": "19793",
+            "version": "Express",
+            "datePublished": "7/15/2024 3:29:22 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license_Expr_2008 R2.rtf",
+            "url": "https://download.microsoft.com/download/9/4/b/94bc9959-1d2d-4508-b054-ec367e64a557/1033/license_Expr_2008 R2.rtf",
+            "size": "57488",
+            "version": "Express",
+            "datePublished": "7/15/2024 3:29:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This site contains the license terms that allow for redistribution of SQL Server Express 2005, 2008, 2008 R2, 2012 and 2014.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Express",
+    "detailsSection_file_name": [
+        "license_Expr_2008.rtf",
+        "SQL Express 2012 Express (Revised).docx",
+        "license_Expr_2005.rtf",
+        "SQL 2014 Express_Hosting_Redistribution_EULA.docx",
+        "license_Expr_2008 R2.rtf"
+    ],
+    "detailsSection_file_size": [
+        "56.0 KB",
+        "24.9 KB",
+        "56.0 KB",
+        "19.3 KB",
+        "56.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word Editor",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "1. Download the appropriate redistribution license terms for the correct version of software you have<br/><br/>\r\n2. Save a copy of the license terms to your device<br/><br/>\r\n<br/>\r\n<b>Note: By downloading and accepting these License terms, you accept all the terms and conditions contained therein.</b>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29693",
+    "downloadPreload": true
+}

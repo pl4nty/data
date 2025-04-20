@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Data Streamer",
+    "downloadDescription": "Microsoft Data Streamer powers Excel to stream and visualize data from physical computing devices in real time. When combined with a collection of worksheets customized for middle school students, Excel brings to life the data behind scientific principles. It also opens the emerging world of IoT to the classroom and helps educators meet the NGSS and ISTE requirements for data science.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Data Streamer_4_0_0_0.zip",
+            "url": "https://download.microsoft.com/download/4/1/8/4188c95b-5a9f-48cc-a0f5-c6dfb6352e2c/Data Streamer_4_0_0_0.zip",
+            "size": "6796105",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Data Streamer is now part of Office 365. To enable this feature see detailed information <a href=\"https://aka.ms/data-streamer\">here</a>\r\n<br/>\r\n<br/>\r\nMicrosoft Data Streamer gives you the ability to visualize and analyze data on physical computing devices, in real time. Originally created for STEM learning, Data Streamer provides an immersive and inclusive experience for both streaming and static data for all fans of Excel. This is a free download. For examples on how to use Data Streamer, visit <a href=\"http://aka.ms/hackingstem\">Hacking Stem</a> \r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "Data Streamer_4_0_0_0.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating System: Windows 10\r\n<br/>\r\nExcel Version: Microsoft Excel 2016 with an Office 365 subscription with the latest version of Excel.\r\n(Students and teachers are eligible for Office 365 Education, which includes Word, Excel, PowerPoint, and OneNote, plus additional classroom tools for free.)\r\n<br/>\r\n .NET 4.6.1 and VS 2010 Tools for Office\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<b>To install this download: :</b>\r\n<ol>\r\n<li>Download the file by clicking the Download button (above) and saving the file to your hard disk.</li> \r\n<li>Double-click the [insert file name] program file on your hard disk to start the Setup program. </li>\r\n<li>Follow the instructions on the screen to complete the installation. </li>\r\n</ol>\r\n\r\n<b>To check if the installation was successful:</b>\r\n<ol>\r\n<li> Open a blank Excel workbook. </li> \r\n<li>2. The installation will have created a new tab on your ribbon called \u201cData Streamer\u201d in your Excel spreadsheet. </li> \r\n</ol>\r\n",
+    "additionalInformationSection": "\u2022 Hacking STEM is a Microsoft initiative to create accessible, project-based education activities to visualize data across science, technology engineering, and math (STEM) curriculum. We are hacking tools like Excel to meet the modern era.\r\n\u2022 Office 365 Education which includes Word, Excel, PowerPoint, and OneNote, plus additional classroom tools, is free for students and teachers. \r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hacking STEM",
+            "url": "https://aka.ms/hackingstem"
+        },
+        {
+            "title": "office 365 Education",
+            "url": "https://www.microsoft.com/en-us/education/products/office/default.aspx"
+        },
+        {
+            "title": "hacking STEM Support",
+            "url": "https://aka.ms/hackingstemsupport"
+        },
+        {
+            "title": "o365 Data Streamer ",
+            "url": "https://aka.ms/data-streamer"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56976",
+    "downloadPreload": true
+}

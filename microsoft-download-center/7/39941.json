@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Multi-Tenant Scalability Guidance for Exchange Server 2013",
+    "downloadDescription": "This document provides scalability and deployment guidance for multi-tenant deployment based on Microsoft Exchange Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MultiTenantScalabilityGuidanceForExchangeServer2013.docx",
+            "url": "https://download.microsoft.com/download/5/5/1/55173c75-d50c-49a5-acf7-efff6bc8ab85/MultiTenantScalabilityGuidanceForExchangeServer2013.docx",
+            "size": "280936",
+            "version": "Aug2013",
+            "datePublished": "7/15/2024 3:18:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document contains high-level guidance for properly scaling and deploying a multi-tenant Microsoft Exchange Server 2013 solution. It includes details of testing performed in Microsoft labs to validate the scalability of the product and suggests methods that can be used during the design and deployment process to mitigate potential risks associated with such solutions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug2013",
+    "detailsSection_file_name": [
+        "MultiTenantScalabilityGuidanceForExchangeServer2013.docx"
+    ],
+    "detailsSection_file_size": [
+        "274.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Team Blog",
+            "url": "http://blogs.technet.com/b/exchange/"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "multi-Tenancy and Hosting Guidance for Exchange Server 2013",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=36790"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39941",
+    "downloadPreload": true
+}

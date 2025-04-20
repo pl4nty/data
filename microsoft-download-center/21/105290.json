@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "AKS Edge Essentials 1.2.414.0",
+    "downloadDescription": "Enabling Kubernetes (k8s/k3s) to run containerized applications at scale on Windows devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AksEdge-k8s-1.25.4-1.2.414.0.msi",
+            "url": "https://download.microsoft.com/download/0/e/4/0e445e92-e775-498b-859f-a15fce456606/AksEdge-k8s-1.25.4-1.2.414.0.msi",
+            "size": "1097203712",
+            "version": "1.2.414.0",
+            "datePublished": "7/15/2024 4:58:35 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AksEdgeWindows-1.2.414.0.zip",
+            "url": "https://download.microsoft.com/download/0/e/4/0e445e92-e775-498b-859f-a15fce456606/AksEdgeWindows-1.2.414.0.zip",
+            "size": "7113761008",
+            "version": "1.2.414.0",
+            "datePublished": "7/15/2024 4:58:35 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AksEdge-k3s-1.25.8-1.2.414.0.msi",
+            "url": "https://download.microsoft.com/download/0/e/4/0e445e92-e775-498b-859f-a15fce456606/AksEdge-k3s-1.25.8-1.2.414.0.msi",
+            "size": "874147840",
+            "version": "1.2.414.0",
+            "datePublished": "7/15/2024 4:58:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Kubernetes Service Edge Essentials is an on-premises Kubernetes implementation of Azure Kubernetes Service (AKS) that automates running containerized applications at scale. For more details, see [AKS Edge Essentials Overview](https://aka.ms/aks-edge/overview)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.414.0",
+    "detailsSection_file_name": [
+        "AksEdge-k8s-1.25.4-1.2.414.0.msi",
+        "AksEdgeWindows-1.2.414.0.zip",
+        "AksEdge-k3s-1.25.8-1.2.414.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 GB",
+        "6.6 GB",
+        "833.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Operating System</b><br/>\r\n\u2022 Windows 10 IoT Enterprise (build 17763 or later)<br/>\r\n\u2022 Windows 10 Enterprise (build 17763 or later)<br/>\r\n\u2022 Windows 10 Professional (build 17763 or later)<br/>\r\n\u2022 Windows 11 Iot Enterprise (build 22000 or later)<br/>\r\n\u2022 Windows 11 Enterprise (build 22000 or later)<br/>\r\n\u2022 Windows 11 Professional (build 22000 or later)<br/>\r\n\u2022 Windows Server (build 17763 or later)<br/>\r\n<i>Note: Hyper-V must be enabled to support AKS Edge virtual machines.</i><br/>\r\n<br/>\r\n\r\n<b>Memory</b><br/>\r\n\u2022 4GB Minimum Physical Memory- 2GB Minimum Free Memory (Cluster-Only)<br/>\r\n\u2022 8GB Minimum Physical Memory - 4GB Minimum Free Memory (Arc and GitOps) <br/>\r\n<i>Note: Your deployment may require aditional free memory depending on the the size of the virtual machine that you choose during installation.</i><br/>\r\n<br/>\r\n\r\n<b>Storage</b><br/>\r\n\u2022 17GB Minimum Free Storage<br/>\r\n<i>Note: Your deployment may require additional free storage depending on the size of the virtual machine that you choose during installation.</i><br/>\r\n<br/>\r\n\r\n<b>Additional Requirements</b><br/>\r\n\u2022 If you are using a local VM, your hardware must be capable of supporting nested virtualization.<br/>\r\n\u2022 If you are using an Azure VM, you must use a compute unit that is capable of hyper-threading and nested virtualization<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See installation instructions <a href=\"https://aka.ms/aks-edge/quickstart\">here</a>",
+    "additionalInformationSection": "Release Notes:  <a href=\"https://aka.ms/aks-edge/releases\">https://aka.ms/aks-edge/releases</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "documentation",
+            "url": "https://aka.ms/aks-edge/overview"
+        },
+        {
+            "title": "install Instructions",
+            "url": "https://aka.ms/aks-edge/quickstart"
+        },
+        {
+            "title": "releases",
+            "url": "https://aka.ms/aks-edge/releases"
+        },
+        {
+            "title": "powerShell reference",
+            "url": "https://aka.ms/aks-edge/reference"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "105290",
+    "downloadPreload": true
+}

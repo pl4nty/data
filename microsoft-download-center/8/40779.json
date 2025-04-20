@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 4.5.1 (Offline Installer) for Windows Vista SP2, Windows 7 SP1, Windows 8, Windows Server 2008 SP2 Windows Server 2008 R2 SP1 and Windows Server 2012",
+    "downloadDescription": "The Microsoft .NET Framework 4.5.1 is a highly compatible, in-place update to the Microsoft .NET Framework 4 and the Microsoft .NET Framework 4.5. The offline package can be used in situations where the web installer cannot be used due to lack of internet connectivity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NDP451-KB2858728-x86-x64-AllOS-ENU.exe",
+            "url": "https://download.microsoft.com/download/1/6/7/167f0d79-9317-48ae-aedb-17120579f8e2/NDP451-KB2858728-x86-x64-AllOS-ENU.exe",
+            "size": "70087104",
+            "version": "4.5.1",
+            "datePublished": "7/15/2024 3:35:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This is an offline installer. There are separate installers for web and offline installation. If you intend to redistribute either of these installers in the setup for your own product or application, we recommend that you choose the web installer because it is smaller and typically downloads faster. You can download the web installer <a href=\"http://go.microsoft.com/fwlink/?LinkId=321326\">here</a>.\n<br />\n<br />\nWherever possible, Microsoft recommends you use the Web Installer in lieu of the Offline Package for optimal efficiency and bandwidth requirements.\n<br/>\n<br/>\nThe offline package can be used in situations where the web installer cannot be used due to lack of internet connectivity.  This package is larger than the web installer and does not include the language packs. You can download and install the language packs from  <a href=\"http://go.microsoft.com/fwlink/?LinkId=321325\">here</a>.\n<br/>\n<br/>\nThis version of the .NET Framework runs side-by-side with the .NET Framework 3.5 SP1 and earlier versions, but performs an in-place update for the .NET Framework 4 and the .NET Framework 4.5.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5.1",
+    "detailsSection_file_name": [
+        "NDP451-KB2858728-x86-x64-AllOS-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "66.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Hardware Requirements:</b>\n<ul>\n<li>1 GHz or faster processor</li>\n<li>512 MB of RAM </li>\n<li>850 MB of available hard disk space (x86)</li>\n<li>2 GB of available hard disk space (x64)</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "To download all files and then install:\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. (The computer does not have to be connected to the Internet.)</li>\n</ul>\n</ul>",
+    "additionalInformationSection": "Please see the Knowledge Base Article <a href=\"http://go.microsoft.com/fwlink/?LinkId=323551\">KB2858728</a> for more information.<br />\n<br />\nFor important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=317457\">.NET Framework 4.5.1 Readme File</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Framework Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=245422"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40779",
+    "downloadPreload": true
+}

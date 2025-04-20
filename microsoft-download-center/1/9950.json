@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Essential Software Security Training for the Microsoft SDL",
+    "downloadDescription": "This paper discusses why a commitment to software security training is a key tenet of the Microsoft Security Development Lifecycle (SDL) and vital to ensuring that secure software can take its place as a top priority along with software features and delivery timelines.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Essential Software Security Training for the Microsoft SDL.docx",
+            "url": "https://download.microsoft.com/download/3/f/7/3f7135be-e0b5-46d6-907f-07cacfba1cee/Essential Software Security Training for the Microsoft SDL.docx",
+            "size": "358543",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Understanding software security problems is a foundational part of building better software. While computer science and software development are established disciplines in business and education, software security remains something of an afterthought. There seems to be an ongoing misconception that good software security is not compatible with tight schedules and cutting-edge functionality. This paper discusses why a commitment to software security training is a key tenet of the Microsoft Security Development Lifecycle (SDL) and vital to ensuring that secure software can take its place as a top priority along with software features and delivery timelines. It also introduces some of the training resources that Microsoft makes available to the ecosystem.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Essential Software Security Training for the Microsoft SDL.docx"
+    ],
+    "detailsSection_file_size": [
+        "350.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "sdl Portal",
+            "url": "http://www.microsoft.com/security/sdl/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9950",
+    "downloadPreload": true
+}

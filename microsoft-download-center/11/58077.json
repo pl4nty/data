@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Compatibility of IE11 with AX 2009",
+    "downloadDescription": "Download the KB3156728 to fix this issue",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DynamicsAX2009-KB3156728-SP1.EXE",
+            "url": "https://download.microsoft.com/download/3/d/8/3d805997-9d55-45b6-8bf9-05f87ae72838/DynamicsAX2009-KB3156728-SP1.EXE",
+            "size": "115962368",
+            "version": "AX2009 SP1",
+            "datePublished": "7/15/2024 3:05:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "IE11 Compatibility issue has been fixed with KB3156728 ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3158723",
+        "name": "KB3158723"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "AX2009 SP1",
+    "detailsSection_file_name": [
+        "DynamicsAX2009-KB3156728-SP1.EXE"
+    ],
+    "detailsSection_file_size": [
+        "110.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Install the KB3156728",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58077",
+    "downloadPreload": true
+}

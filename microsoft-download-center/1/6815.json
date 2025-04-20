@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Base Configuration",
+    "downloadDescription": "Create the Base Configuration test lab as the foundation for other Microsoft Test Lab Guides (TLGs).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_BaseConfig.doc",
+            "url": "https://download.microsoft.com/download/5/c/7/5c7daebb-43ee-4a0b-9f34-09eebc1f6664/TestLabGuide_BaseConfig.doc",
+            "size": "368640",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Test Lab Guide (TLG) allows you to create the Base Configuration test lab, upon which you can build test labs based on other TLGs from Microsoft, TLG extensions in the TechNet Wiki, or a test lab of your own design that can include Microsoft or third-party products. For a test lab based on physical computers, you can image the drives for future test labs. For a test lab based on virtual computers, you can create snapshots of the base configuration virtual machines. This enables you to easily return to the base configuration where most of the routine infrastructure and networking services have already been configured so that you can focus on building a test lab for the product, technology, or solution of interest.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_BaseConfig.doc"
+    ],
+    "detailsSection_file_size": [
+        "360.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7 Enterprise or Ultimate, Windows Server 2008 R2 Enterprise Edition, Microsoft Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download to download this document.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2008 R2 Evaluation Free 180-Day Trial",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=102582"
+        },
+        {
+            "title": "windows 7 Enterprise 90-day Trial",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=180603"
+        },
+        {
+            "title": "test Lab Guides in the TechNet Wiki",
+            "url": "http://social.technet.microsoft.com/wiki/contents/articles/test-lab-guides.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "6815",
+    "downloadPreload": true
+}

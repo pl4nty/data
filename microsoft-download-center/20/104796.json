@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Active Directory custom branding CSS template",
+    "downloadDescription": "Customize the sign-in experience that use Azure Active Directory as the identity provider.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "custom-styles-template-013023.css",
+            "url": "https://download.microsoft.com/download/7/2/7/727f287a-125d-4368-a673-a785907ac5ab/custom-styles-template-013023.css",
+            "size": "4800",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:33:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For sign-in pages that use Azure Active Directory as the identity provider, organizations can customize the branding, color schemes, and fonts to create a familiar look and feel for customers. This CSS template can be used to customize several details at once.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "custom-styles-template-013023.css"
+    ],
+    "detailsSection_file_size": [
+        "4.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Customizing the branding in Azure Active Directory requires the Global Administrator role.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "To upload a custom CSS file for you company branding, please refer to the following article:<br/>\r\n[https://learn.microsoft.com/azure/active-directory/fundamentals/how-to-customize-branding#layout]([https://learn.microsoft.com/azure/active-directory/fundamentals/how-to-customize-branding#layout).<br/>\r\n<ol>\r\n<li>Download and update the CSS template.</li>\r\n<li>From the Layout tab in the Azure Company Branding experience, upload your CSS template.</li>\r\n<li>Select \"Review + create\" to save the Layout.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104796",
+    "downloadPreload": true
+}

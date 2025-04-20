@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "WWMX Travelogue",
+    "downloadDescription": "Now that you've started location-stamping your digital photos with the WWMX Location Stamper Tool, what can you do with them? Well, using the WWMX Travelogue tool, you can create a set of HTML pages to show off your vacation! This utility takes a set of location-stamped JPEG photos and an optional set of GPS track files and creates an HTML page . Last published: November 17, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WWMXTravelogueSetup.msi",
+            "url": "https://download.microsoft.com/download/1/5/8/1589de6a-b885-4ff7-b984-6b477e0e6df5/WWMXTravelogueSetup.msi",
+            "size": "390656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Now that you've started location-stamping your digital photos with the WWMX Location Stamper Tool, what can you do with them? Well, using the WWMX Travelogue tool, you can create a set of HTML pages to show off your vacation! This utility takes a set of location-stamped JPEG photos and an optional set of GPS track files and creates an HTML page ready for transfer to your personal website, complete with a map overlaid with your tracks and dots for your photos. This 1.0 version is pretty basic, but we're planning on creating much more complex and rich experiences in future releases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WWMXTravelogueSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "381.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52471",
+    "downloadPreload": true
+}

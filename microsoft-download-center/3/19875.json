@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Server Performance Advisor 2003 Management Pack",
+    "downloadDescription": "This SPA management pack for Operations Manager 2007 supports monitoring for Server Performance Advisor 2003. Requires OpsMgr 2007 MOM 2005 Backward Compatibility MP Update 6.0.5000.16",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Server Performance Advisor 2003 SC OM 2007 MP.msi",
+            "url": "https://download.microsoft.com/download/f/e/3/fe3bc165-592b-432d-a437-24680100f538/Server Performance Advisor 2003 SC OM 2007 MP.msi",
+            "size": "569344",
+            "version": "6.0.5000.0",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SPA 2003 Management Pack collects performance data and generates comprehensive diagnostic reports that give you the information you need to analyze problems and develop corrective actions. \n<br />\n<br />\n<b>Management Pack Release History</b> <br />\n2/14/2008 - Initial Release v.6.0.5000.0 <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.5000.0",
+    "detailsSection_file_name": [
+        "Server Performance Advisor 2003 SC OM 2007 MP.msi"
+    ],
+    "detailsSection_file_size": [
+        "556.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Operations Manager 2007 <br />\nMicrosoft Server Performance Advisor 2003 <br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 x64 editions"
+    ],
+    "installInstructionSection": "Please review the MP Guide",
+    "relatedResourcesSection": [
+        {
+            "title": "backward Compatibility",
+            "url": "http://www.microsoft.com/technet/prodtechnol/mom/catalog/catalog.aspx?kw=Backwards%20Compatibility%20MP&vs=2007&ca=&co=All"
+        },
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19875",
+    "downloadPreload": true
+}

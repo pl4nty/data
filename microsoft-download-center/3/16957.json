@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2010 Reviewer's Guide",
+    "downloadDescription": "Visual Studio 2010 Reviewer's Guide is a detail document highlighting the new features and capabilities of the Visual Studio 2010 product.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Visual-Studio-2010-Reviewers-Guide.pdf",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51e6ad-5a3b-4d14-83ef-2894b07107fe/Visual-Studio-2010-Reviewers-Guide.pdf",
+            "size": "14653259",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Visual-Studio-2010-Reviewers-Guide.xps",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51e6ad-5a3b-4d14-83ef-2894b07107fe/Visual-Studio-2010-Reviewers-Guide.xps",
+            "size": "8966659",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Visual Studio 2010 Reviewer's Guide is a detail document highlighting the new features and capabilities of the Visual Studio 2010 product.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Visual-Studio-2010-Reviewers-Guide.pdf",
+        "Visual-Studio-2010-Reviewers-Guide.xps"
+    ],
+    "detailsSection_file_size": [
+        "14.0 MB",
+        "8.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: Windows Vista; Windows 7; Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the Visual Studio 2010 Reviewer's Guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16957",
+    "downloadPreload": true
+}

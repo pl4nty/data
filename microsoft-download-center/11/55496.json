@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) system requirements",
+    "downloadDescription": "System requirements for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) system requirements.pdf",
+            "url": "https://download.microsoft.com/download/6/8/0/680b8ae8-1c32-46f0-b33c-203b2f56b6b6/Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) system requirements.pdf",
+            "size": "1429039",
+            "version": "7.2 OP",
+            "datePublished": "7/15/2024 4:52:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the system requirements for Finance and Operations, Enterprise edition (on-premises). It also includes an overview of the system architecture and data storage.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2 OP",
+    "detailsSection_file_name": [
+        "Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) system requirements.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55496",
+    "downloadPreload": true
+}

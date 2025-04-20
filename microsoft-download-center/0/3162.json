@@ -1,0 +1,303 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 Service Pack 2 Multilingual User Interface Language Packs",
+    "downloadDescription": "Enable a multilingual user interface in a Windows Server\u00ae 2008 Service Pack 2 (SP2) environment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_x86fre_Server_LP_1-KRTMSLP1_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_x86fre_Server_LP_1-KRTMSLP1_DVD.iso",
+            "size": "373798912",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_amd64fre_Server_LP_5-KRTMSxLP5_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_amd64fre_Server_LP_5-KRTMSxLP5_DVD.iso",
+            "size": "311099392",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "6002.18005.090410-1830_amd64fre_Server_LP_6-KRTMSxLP6_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_amd64fre_Server_LP_6-KRTMSxLP6_DVD.iso",
+            "size": "1174925312",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_x86fre_Server_LP_2-KRTMSLP2_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_x86fre_Server_LP_2-KRTMSLP2_DVD.iso",
+            "size": "328245248",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_x86fre_Server_LP_6-KRTMSLP6_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_x86fre_Server_LP_6-KRTMSLP6_DVD.iso",
+            "size": "1042700288",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_ia64fre_Server_LP_2-KRTMIAiLP2_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_ia64fre_Server_LP_2-KRTMIAiLP2_DVD.iso",
+            "size": "204316672",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_ia64fre_Server_LP_1-KRTMIAiLP1_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_ia64fre_Server_LP_1-KRTMIAiLP1_DVD.iso",
+            "size": "322701312",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_amd64fre_Server_LP_1-KRTMSxLP1_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_amd64fre_Server_LP_1-KRTMSxLP1_DVD.iso",
+            "size": "417902592",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_amd64fre_Server_LP_2-KRTMSxLP2_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_amd64fre_Server_LP_2-KRTMSxLP2_DVD.iso",
+            "size": "370505728",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_amd64fre_Server_LP_4-KRTMSxLP4_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_amd64fre_Server_LP_4-KRTMSxLP4_DVD.iso",
+            "size": "376926208",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_x86fre_Server_LP_4-KRTMSLP4_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_x86fre_Server_LP_4-KRTMSLP4_DVD.iso",
+            "size": "328505344",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "6002.18005.090410-1830_x86fre_Server_LP_5-KRTMSLP5_DVD.iso",
+            "url": "https://download.microsoft.com/download/5/b/4/5b4d9f58-5192-4e46-b6ee-371cd5baf9bb/6002.18005.090410-1830_x86fre_Server_LP_5-KRTMSLP5_DVD.iso",
+            "size": "272291840",
+            "version": "971449",
+            "datePublished": "7/15/2024 3:14:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Grouped Language Pack Media (Windows Server\u00ae 2008 SP2 Language Packs) enables a multilingual user interface in a Windows Server\u00ae 2008 SP2 environment. Adding one or more language packs to a Windows Server\u00ae 2008 SP2 image enables one or more languages in the installed Windows Server\u00ae 2008 SP2 operating system. This enables corporations to deploy the same Windows Server\u00ae 2008 SP2 image worldwide while still providing localized user interfaces.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB971449",
+        "name": "KB971449"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "971449",
+    "detailsSection_file_name": [
+        "6002.18005.090410-1830_x86fre_Server_LP_1-KRTMSLP1_DVD.iso",
+        "6002.18005.090410-1830_amd64fre_Server_LP_5-KRTMSxLP5_DVD.iso",
+        "6002.18005.090410-1830_amd64fre_Server_LP_6-KRTMSxLP6_DVD.iso",
+        "6002.18005.090410-1830_x86fre_Server_LP_2-KRTMSLP2_DVD.iso",
+        "6002.18005.090410-1830_x86fre_Server_LP_6-KRTMSLP6_DVD.iso",
+        "6002.18005.090410-1830_ia64fre_Server_LP_2-KRTMIAiLP2_DVD.iso",
+        "6002.18005.090410-1830_ia64fre_Server_LP_1-KRTMIAiLP1_DVD.iso",
+        "6002.18005.090410-1830_amd64fre_Server_LP_1-KRTMSxLP1_DVD.iso",
+        "6002.18005.090410-1830_amd64fre_Server_LP_2-KRTMSxLP2_DVD.iso",
+        "6002.18005.090410-1830_amd64fre_Server_LP_4-KRTMSxLP4_DVD.iso",
+        "6002.18005.090410-1830_x86fre_Server_LP_4-KRTMSLP4_DVD.iso",
+        "6002.18005.090410-1830_x86fre_Server_LP_5-KRTMSLP5_DVD.iso"
+    ],
+    "detailsSection_file_size": [
+        "356.5 MB",
+        "296.7 MB",
+        "1.1 GB",
+        "313.0 MB",
+        "994.4 MB",
+        "194.9 MB",
+        "307.8 MB",
+        "398.5 MB",
+        "353.3 MB",
+        "359.5 MB",
+        "313.3 MB",
+        "259.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<li> Supported Operating Systems: Windows Server 2008 Service Pack 2 </li>\r\n<li> x86 systems require 32-bit (x86) language packs </li>\r\n<li> x64 systems require amd64 (x64) language packs </li>\r\n<li> Itanium-based systems require Itanium (IA-64) language packs </li>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Each language pack is a .cab file. The language pack .cab files are grouped into .iso image download files. The following are the contents of the .iso image download files:\r\n\r\n32-bit (x86) Language Packs\r\n\r\n<li>Group 1 (English, German, Japanese, French, Spanish)</li>\r\n<ul>o File name: 6002.18005.090410-1830_x86fre_Server_LP_1-KRTMSLP1_DVD.iso</ul>\r\n<li>Group 2 (Chinese Simplified, Chinese Hong Kong, Korean, Portuguese (Brazil))</li>\r\n<ul>o File name: 6002.18005.090410-1830_x86fre_Server_LP_2-KRTMSLP2_DVD.iso</ul>\r\n<li>Group4 (Italian, Russian, Portuguese (Portugal), Dutch, Swedish)</li>\r\n<ul>o File name: 6002.18005.090410-1830_x86fre_Server_LP_4-KRTMSLP4_DVD.iso</ul>\r\n<li>Group 5 (Polish, Turkish, Czech, Hungarian)</li>\r\n<ul>o File name: 6002.18005.090410-1830_x86fre_Server_LP_5-KRTMSLP5_DVD.iso</ul>\r\n<li>Group 6 (Arabic, Danish, Norwegian, Finnish, Hebrew, Greek, Thai, Ukrainian, Romanian, Slovakian, Slovenian, Croatian, Serbian Latin, Bulgarian, Lithuanian, Latvian, Estonian)</li>\r\n<ul>o File name: 6002.18005.090410-1830_x86fre_Server_LP_6-KRTMSLP6_DVD.iso</ul>\r\n\r\n<br>AMD64 (x64) Language Packs</br>\r\n\r\n<li>Group 1 (English, German, Japanese, French, Spanish)</li>\r\n<ul>o File name: 6002.18005.090410-1830_AMD64fre_Server_LP_1-KRTMSxLP1_DVD.iso</ul>\r\n<li>Group 2 (Chinese Simplified, Chinese Hong Kong, Korean, Portuguese (Brazil))</li>\r\n<ul>o File name: 6002.18005.090410-1830_AMD64fre_Server_LP_2-KRTMSxLP2_DVD.iso</ul>\r\n<li>Group4 (Italian, Russian, Portuguese (Portugal), Dutch, Swedish)</li>\r\n<ul>o File name: 6002.18005.090410-1830_AMD64fre_Server_LP_4-KRTMSxLP4_DVD.iso</ul>\r\n<li>Group 5 (Polish, Turkish, Czech, Hungarian)</li>\r\n<ul>o File name: 6002.18005.090410-1830_AMD64fre_Server_LP_5-KRTMSxLP5_DVD.iso</ul>\r\n<li>Group 6 (Arabic, Danish, Norwegian, Finnish, Hebrew, Greek, Thai, Ukrainian, Romanian, Slovakian, Slovenian, Croatian, Serbian Latin, Bulgarian, Lithuanian, Latvian, Estonian)</li>\r\n<ul>o File name: 6002.18005.090410-1830_AMD64fre_Server_LP_6-KRTMSxLP6_DVD.iso</ul>\r\n\r\n<br>Itanium (IA-64) Language Packs</br>\r\n\r\n<li>Group 1 (English, German, Japanese, French)</li>\r\n<ul>o File name: 6002.18005.090410-1830_ia64fre_Server_LP_1-KRTMIAiLP1_DVD.iso</ul>\r\n<li>Group 2 (Chinese Simplified, Korean)</li>\r\n<ul>o File name: 6002.18005.090410-1830_ia64fre_Server_LP_2-KRTMIAiLP2_DVD.iso</ul>",
+    "additionalInformationSection": "Additional links to MUI documentation are listed in the \"Related Resources\" box. ",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/948465"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3162",
+    "downloadPreload": true
+}

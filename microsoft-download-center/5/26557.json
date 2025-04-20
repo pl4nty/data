@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Creating Dashboards for Microsoft Project Server 2010",
+    "downloadDescription": "Describes how to create Business Intelligence dashboards that support an EPM Solution",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Creating Dashboards for Microsoft Project Server 2010.xps",
+            "url": "https://download.microsoft.com/download/7/f/f/7ffec55f-656f-42ce-a06f-677570e1087f/Creating Dashboards for Microsoft Project Server 2010.xps",
+            "size": "6514837",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Creating Dashboards for Microsoft Project Server 2010.pdf",
+            "url": "https://download.microsoft.com/download/7/f/f/7ffec55f-656f-42ce-a06f-677570e1087f/Creating Dashboards for Microsoft Project Server 2010.pdf",
+            "size": "4770824",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:37 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The purpose of this document is to provide sufficient detail to fully design and implement Business Intelligence dashboards that support an Enterprise Project Management (EPM) Solution, which consists primarily of Microsoft SharePoint Server 2010 and Microsoft Project Server 2010. This document also includes detailed steps on how to replicate reports and dashboards that are included in the Project Server 2010 demonstration and evaluation pack that is available on the Microsoft Download Center. The purpose is to help you easily create reports and dashboards for your environment with similar characteristics.  For related information, see the <a href=\"http://technet.microsoft.com/en-US/projectserver/ff513702.aspx\">Business Intelligence Resource Center</a> for Project Server 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Creating Dashboards for Microsoft Project Server 2010.xps",
+        "Creating Dashboards for Microsoft Project Server 2010.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.2 MB",
+        "4.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Adobe Reader or XPS Viewer. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26557",
+    "downloadPreload": true
+}

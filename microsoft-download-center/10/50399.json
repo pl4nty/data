@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "KB 3124249: Web Forms Designer crashes with certain CSS",
+    "downloadDescription": "This is the download for KB3124249 to improve the reliability of the Web Forms Designer in Visual Studio 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB3124249.exe",
+            "url": "https://download.microsoft.com/download/2/8/e/28e9c612-208e-428e-a8b2-eae42a1fbb0d/VS12-KB3124249.exe",
+            "size": "8098920",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:07:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the download for KB3124249 to improve the reliability of the Web Forms Designer in Visual Studio 2013. Please see the KB article for more information about this update: <a href=\"https://support.microsoft.com/en-us/kb/3124249\">https://support.microsoft.com/en-us/kb/3124249</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "VS12-KB3124249.exe"
+    ],
+    "detailsSection_file_size": [
+        "7.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update requires Visual Studio 2013 Update 5.\n<br/>\n<br/>\n<b>Supported Operating Systems:</b>\n<br/>\n<br/>\nFor information on operating system support, see <a href=\" https://www.visualstudio.com/en-us/downloads/visual-studio-2015-system-requirements-vs.aspx#31\">Visual Studio System Requirements</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. </li>\n</ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50399",
+    "downloadPreload": true
+}

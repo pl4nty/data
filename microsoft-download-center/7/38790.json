@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Perceptive Pixel Touch Driver",
+    "downloadDescription": "The Perceptive Pixel Touch Driver enables a world class touch and stylus experience on devices from Perceptive Pixel by Microsoft.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PPI-Touch-Driver-1.6.4.778.exe",
+            "url": "https://download.microsoft.com/download/7/4/0/740809a9-1d5b-45b9-9f31-178d3bc7956c/PPI-Touch-Driver-1.6.4.778.exe",
+            "size": "6389472",
+            "version": "1.6.4",
+            "datePublished": "7/15/2024 3:34:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Release 1.6.4 of the Perceptive Pixel Touch Driver improves on several aspects of the Perceptive Pixel experience. Feature updates and bug fixes include:\r\n<br />\r\n<ul>\r\n<li>Changed touch reporting for contact geometry and rotation according to updated Windows Pointer Device Data Delivery Protocol.</li>\r\n<li>Improved noise reduction addressing false touch reports on certain models under rare LCD display conditions.</li>\r\n<li>Added control panel applet warning for video refresh and sensor scan rate mismatch.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6.4",
+    "detailsSection_file_name": [
+        "PPI-Touch-Driver-1.6.4.778.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<br />\r\n<b>Note: A reboot is required after installation of the touch driver, please save your work before beginning the install.</b>\r\n<br />\r\n<ol>\r\n<li>Download and install the Perceptive Pixel Touch driver by clicking the <b>Download</b> button above.</li>\r\n<li>If your browser prompts you to Save or Run the file, click <b>Run</b> to start the installation immediately or click <b>Save</b> to copy the download to your computer for installation at a later time.</li>\r\n<li>When the installer launches, click <b>Yes</b> to allow the program to make changes to your computer.</li>\r\n<li>Follow the instructions on the screen to install the Perceptive Pixel Touch Driver.</li>\r\n<li>After exiting the install application, reboot your computer to take advantage of the latest features.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38790",
+    "downloadPreload": true
+}

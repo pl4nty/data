@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics 365 for Operations - BOM Calculation by Using a Costing Sheet",
+    "downloadDescription": "This document describes how to set up a costing sheet that includes material and manufacturing, and how the setup affects the BOM calculation results. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Dynamics365forOperationsBOMcalculationusingcostingsheet.pdf",
+            "url": "https://download.microsoft.com/download/7/8/d/78d76da2-d5ea-41a8-97cf-a4d55c882473/Dynamics365forOperationsBOMcalculationusingcostingsheet.pdf",
+            "size": "2173338",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": " To better explain the topics, this document provides concrete scenarios and data that demonstrate the effect of the various settings and configurations. We don\u2019t expect that you will follow all these scenarios, because this document doesn't provide enough details to configure them. Nevertheless, if you have the basic knowledge, you can try to do exercises in the Appendix for learning purposes, and use the knowledge that you\u2019ve gained from reading this document to do BOM calculation analysis.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "Dynamics365forOperationsBOMcalculationusingcostingsheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101798",
+    "downloadPreload": true
+}

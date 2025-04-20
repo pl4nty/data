@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 Standard Edition Document: Deployment Guide",
+    "downloadDescription": "This document guides you through the deployment of a Microsoft Office Live Communications Server 2005 Standard Edition.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LCS_2005_Deploy_SE.doc",
+            "url": "https://download.microsoft.com/download/d/a/0/da052de0-a8b5-4088-af07-ebccfe0c93b3/LCS_2005_Deploy_SE.doc",
+            "size": "1616384",
+            "version": "2.1",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "This document guides you through the deployment of a Live Communications Server 2005 Standard Edition. It contains the following sections:<br />\n<ul><br />\n<li>The Live Communications Server 2005 Standard Edition overview which explains how the Standard Edition varies from Enterprise Edition and the type of deployments for which Standard Edition is optimal.</li><br />\n<li>Infrastructure Requirements explains the necessary prerequisites for installing Live Communications Server 2005. For example, Active Directory\u00ae directory service must be deployed, DNS (Domain Name Services) must be configured, and a PKI (Private Key Infrastructure) must be available.</li><br />\n<li>Overview of the Deployment Process guides you through the high level deployment steps.</li><br />\n<li>Deploying Your Standard Edition Server guides you through the process of deploying a Standard Edition Server.</li><br />\n<li>Configuring Certificates and TLS explains how you can configure certificates on Microsoft Windows Server\u2122 2003 Enterprise CA (certification authority) and enable TLS on your servers.</li><br />\n<li>Configuring Live Communications Server for Client Access explains how to configure DNS for your users and your clients accessing Live Communications Server 2005.</li><br />\n<li>Enabling Administration in Multi-Domain Environments explains how to allow various cross-domain administration and user searches across multiple domains.</li><br />\n<li>Back-up and Restore Operations includes procedures for backing up your data and instructions for how to restore Live Communications Server data in the event of data loss.</li><br />\n<li>Removing Live Communications Server describes removing Standard Edition Server from your IT infrastructure.</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1",
+    "detailsSection_file_name": [
+        "LCS_2005_Deploy_SE.doc"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office application:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Communication Server 2005</li>\n</ul></li>\n</ul>\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 3",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. \n\n</li>\n<li>Double-click the <b>LCS_2005_Deploy_SE.exe</b> program file on your hard disk to start the Setup \n\nprogram. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you install this download, open the document as you typically would.\n<br/>\n<br/>\n<b>To remove this download:</b>\n<br/>\n<br/>\nTo remove the download file, delete the file <b> LCS_2005_Deploy_SE.exe</b>.\n<br/>\n<br/>\nTo remove the document, delete it from the folder where it was saved.",
+    "relatedResourcesSection": [
+        {
+            "title": "live Communications Server 2005 on Office Online",
+            "url": "http://office.microsoft.com/en-us/FX010908711033.aspx"
+        },
+        {
+            "title": "more Office Downloads",
+            "url": "http://office.microsoft.com/officeupdate/default.aspx"
+        },
+        {
+            "title": "downloads for Live Communications Server 2005",
+            "url": "http://office.microsoft.com/en-us/officeupdate/CD011516661033.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9563",
+    "downloadPreload": true
+}

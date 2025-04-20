@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 Security Hardening Guide",
+    "downloadDescription": "This document provides guidelines and instructions to help you deploy Microsoft Dynamics AX 2009 more securely.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "AXSecurityHardening.pdf",
+            "url": "https://download.microsoft.com/download/6/b/7/6b716778-b942-409a-b352-bdc6e4c84402/AXSecurityHardening.pdf",
+            "size": "290421",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:07:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AXSecurityHardening.xps",
+            "url": "https://download.microsoft.com/download/6/b/7/6b716778-b942-409a-b352-bdc6e4c84402/AXSecurityHardening.xps",
+            "size": "557859",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:07:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide provides information about how to improve security when deploying Microsoft Dynamics AX 2009. <br /> <br />\nThe following information is included: \n<UL><LI>Helping to secure the Microsoft Dynamics AX client in a production environment using Windows and Windows Server features, such as Terminal Services and RemoteApp</LI>\n<LI>Helping to secure the Microsoft Dynamics AX Application Object Server (AOS) and database</LI>\n<LI>Security best practices</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "AXSecurityHardening.pdf",
+        "AXSecurityHardening.xps"
+    ],
+    "detailsSection_file_size": [
+        "283.6 KB",
+        "544.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Central",
+            "url": "http://www.microsoft.com/security/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "232",
+    "downloadPreload": true
+}

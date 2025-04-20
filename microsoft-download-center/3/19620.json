@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 4.0 E-mail Router Readme (On-Premise and Microsoft Dynamics CRM  4.0 Service Provider Editions)",
+    "downloadDescription": "This document provides important late-breaking information for the Microsoft Dynamics CRM 4.0 E-mail Router (on-premise and Microsoft Dynamics CRM  4.0 Service Provider editions).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Dynamics_CRM_4.0_Email_Router_Readme.htm",
+            "url": "https://download.microsoft.com/download/9/8/9/98929cac-88c6-499a-9eb4-59c04d353656/Microsoft_Dynamics_CRM_4.0_Email_Router_Readme.htm",
+            "size": "14214",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics CRM 4.0 E-mail Router Readme contains important late-breaking information about the Microsoft Dynamics CRM 4.0 E-mail Router that supplements the Microsoft Dynamics CRM documentation.\n<br /><br />\nThe E-mail Router is an interface between the Microsoft Dynamics CRM system and one or more Exchange servers or POP3 servers for incoming e-mail, and one or more SMTP servers for outgoing e-mail. E-mail messages come into the Microsoft Dynamics CRM system through the E-mail Router. <br/>\n<br /><br />\nThe three main components that can be installed during E-mail Router Setup are as follows: \n<ul>\n<li>Microsoft Dynamics CRM E-mail Router Service </li>\n<li>Microsoft Dynamics CRM E-mail Configuration Manager </li>\n<li>Microsoft Dynamics CRM E-mail Rule Deployment Wizard </li>\n</ul>\n\n<br/><br/>\n<b>Important:</b> If you are using Microsoft Dynamics CRM Online, download and read the release version of the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=261A17F6-72C9-45A3-B19A-75AE844B9DD0&displaylang=en\">Microsoft Dynamics CRM Online E-mail Router Release Notes</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_CRM_4.0_Email_Router_Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "13.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Other Requirements: </b>\n<ul>\n<li>Internet Browser application, such as Microsoft Internet Explorer.</li><br />\n<br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>To start the download, click <b>Download</b>.</LI><br />\n<LI>If the <b>File Download</b> dialog box appears, do one of the following:</LI><br />\n<UL><br />\n<LI>To start the download immediately, click <B>Open</B>.</LI>\n<LI>To copy the download to your computer to view at a later time, click <B>Save</B>.</LI>\n</UL> \n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 4.0 Server readme",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=104411"
+        },
+        {
+            "title": "microsoft Dynamics CRM 4.0 Implementation Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=104413"
+        },
+        {
+            "title": "microsoft Dynamics CRM 4.0 E-mail Router (On-Premise and Microsoft Dynamics CRM 4.0 Service Provider Editions)",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=105883"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19620",
+    "downloadPreload": true
+}

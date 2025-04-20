@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Online, Windows PowerShell Module",
+    "downloadDescription": "Module that allows use of Windows PowerShell to manage Skype for Business Online deployments. The latest Teams PowerShell public release is integrated with Skype for Business Online Connector, providing a single module for Teams PowerShell management.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeOnlinePowerShell.exe",
+            "url": "https://download.microsoft.com/download/2/0/5/2050b39b-4da5-48e0-b768-583533b42c3b/SkypeOnlinePowerShell.exe",
+            "size": "16313920",
+            "version": "2046.123",
+            "datePublished": "7/15/2024 4:33:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Skype for Business Online, Windows PowerShell Module allows management of a Skype for Business Online deployment and Skype for Business Online user accounts through the use of Windows PowerShell. <a href=\"https://www.powershellgallery.com/packages/MicrosoftTeams\">Teams PowerShell public release is here</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2046.123",
+    "detailsSection_file_name": [
+        "SkypeOnlinePowerShell.exe"
+    ],
+    "detailsSection_file_size": [
+        "15.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b> Supported Operating Systems </b>\r\n<br/><br/>\r\nWindows 7 64-bit, Windows 8 64-bit, Windows 8.1 64-bit, Windows Server 2008 R2, Window Server 2012, Window Server 2012 R2, Windows Server 2016\r\n<br/><br/>\r\n<b> Pre-requisites </b>\r\n<br/><br/>\r\nIn order to use Skype for Business Online, Windows PowerShell Module to manage Skype for Business Online deployments you must also install the following:\r\n<ol>\r\n<li> Windows PowerShell 5.1\r\n<br/>\r\nSee <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=54616\"> https://www.microsoft.com/en-us/download/details.aspx?id=54616</a> for download details.</li>\r\n<br/>\r\n</ol>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<br/>\r\n<ol>\r\n<li>Download the file by clicking the link below and saving the file to your hard disk. </li>\r\n<li>Double-click the program file on your hard disk to start the Setup program. </li>\r\n<li>Follow the instructions on the screen to complete the installation on the desktop. </li>\r\n</ol>\r\n<br/>\r\n<b>To remove the download file: </b>\r\n<br/>\r\n<ol>\r\n<li>To remove the download file, delete the SkypeOnlinePowershell.exe file saved to your hard disk. </li>\r\n</ol>\r\n<br/>\r\n<b>To uninstall this program: </b>Teams PowerShell public release \r\n<br/>\r\n<ol>\r\n<li>Go to the control panel and remove the application \u201cSkype for Business Online, Windows PowerShell Module\u201d from Add or Remove programs </li>\r\n</ol>\r\n<br/>\r\n<b>Help Documentation: </b>\r\n<br/>\r\n<ol>\r\n<li> For additional information on how to use the Skype for Business Online, Windows PowerShell Module to manage Skype for Business Online deployments, see the help documentation <a href=\"https://docs.microsoft.com/en-us/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell\">here</a>.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39366",
+    "downloadPreload": true
+}

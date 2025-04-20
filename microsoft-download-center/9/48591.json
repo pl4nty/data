@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Foldable Keyboard Firmware Update",
+    "downloadDescription": "This download is for Microsoft Foldable Keyboard Firmware Update tool",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Universal Foldable Keyboard Firmware Update.EXE",
+            "url": "https://download.microsoft.com/download/8/1/8/818e24ba-7e12-41cb-81c0-9b52db51549e/Universal Foldable Keyboard Firmware Update.EXE",
+            "size": "490624",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:44:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Download and Release is for Microsoft Foldable Keyboard Firmware Update tool exe.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Universal Foldable Keyboard Firmware Update.EXE"
+    ],
+    "detailsSection_file_size": [
+        "479.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 8.1\r\nWindows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "After downloading this tool, for Firmware Update user need to pick up the language they want to change their keyboard layout to and press Update button on UI.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48591",
+    "downloadPreload": true
+}

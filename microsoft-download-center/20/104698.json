@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SWIFT Message Pack For Azure Logic Apps",
+    "downloadDescription": "Microsoft SWIFT Message Pack For Azure Logic Apps",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SWIFT Message Pack For Azure Logic Apps - 2022.zip",
+            "url": "https://download.microsoft.com/download/d/e/0/de0bddad-b2be-45bb-93e6-f502a6e5932f/Microsoft SWIFT Message Pack For Azure Logic Apps - 2022.zip",
+            "size": "7544309",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:33:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SWIFT Message Pack Use Terms.pdf",
+            "url": "https://download.microsoft.com/download/d/e/0/de0bddad-b2be-45bb-93e6-f502a6e5932f/SWIFT Message Pack Use Terms.pdf",
+            "size": "175183",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:33:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft SWIFT Message Pack For Azure Logic Apps",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft SWIFT Message Pack For Azure Logic Apps - 2022.zip",
+        "SWIFT Message Pack Use Terms.pdf"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB",
+        "171.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10, Windows 11, Windows Server 2019, Windows Server 2022",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Extract the archived content to get Microsoft SWIFT Message Pack For Azure Logic Apps",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104698",
+    "downloadPreload": true
+}

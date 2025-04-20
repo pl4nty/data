@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Item Tracking White Paper for Microsoft Dynamics NAV 5.0",
+    "downloadDescription": "This paper describes the design of the item tracking system in Microsoft Dynamics NAV.  It also briefly outlines the serial/lot number features of earlier Navision versions.  The functionality referred to in version 3.60 also applies to 3.70, 4.0 and 5.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ItemTrackingTechWhitePaper.pdf",
+            "url": "https://download.microsoft.com/download/e/4/9/e498e9e0-56b4-4034-b0e8-5233a1b6ca4f/ItemTrackingTechWhitePaper.pdf",
+            "size": "158582",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The document is aimed at a broad Microsoft Dynamics NAV audience and, therefore, it focuses on conceptual and logical design.  Design details are provided in Appendix A.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "ItemTrackingTechWhitePaper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "154.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101781",
+    "downloadPreload": true
+}

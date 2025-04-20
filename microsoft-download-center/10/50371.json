@@ -1,0 +1,241 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2016 Language Packs",
+    "downloadDescription": "Install a Microsoft Dynamics CRM 2016 Language Pack. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Mui-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/4/3/4/434a4c02-8834-4a1b-ac55-d05f4cdeee45/CRM2016-Mui-ENU-amd64.exe",
+            "size": "82829368",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 4:07:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2016-Mui-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/4/3/4/434a4c02-8834-4a1b-ac55-d05f4cdeee45/CRM2016-Mui-ENU-i386.exe",
+            "size": "38310512",
+            "version": "08.00.0000.1088",
+            "datePublished": "7/15/2024 4:07:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics CRM 2016 Language Packs contain translated text such as labels, error messages, and Help. This lets you view Microsoft Dynamics CRM in a language other than the base language. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "08.00.0000.1088",
+    "detailsSection_file_name": [
+        "CRM2016-Mui-ENU-amd64.exe",
+        "CRM2016-Mui-ENU-i386.exe"
+    ],
+    "detailsSection_file_size": [
+        "79.0 MB",
+        "36.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics CRM 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "\n      <ol>\n        <li>\n          To view this information in another language and to select a language pack for that language, select the language that you want and click <b>Change</b>.\n        </li>\n        <li>\n          Click <b>Download</b> next to the language pack with the file name that includes the locale that you want.\n        </li>\n        <li>\n          Save the download to your computer by clicking <b>Save</b>.\n        </li>\n        <li>To install the language pack, double-click the download file and then follow the instructions that are on your screen.</li>\n      </ol>\n    ",
+    "additionalInformationSection": "\n      Files are platform-specific, where <i>i386</i> is intended for 32-bit platforms and <i>amd64</i> is intended for 64-bit platforms. <br />\n\n\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "install language packs for Microsoft Dynamics CRM",
+            "url": "http://technet.microsoft.com/en-us/library/hh699674.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "50371",
+    "downloadPreload": true
+}

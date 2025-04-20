@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Information Protection and Control (IPC) in Office 365 with Microsoft Rights Management service (RMS) whitepaper",
+    "downloadDescription": "Information Protection and Control (IPC) in Office 365 with Microsoft Rights Management service (RMS) whitepaper",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IPC-in-Office-365-with-Azure-RMS.DOCX",
+            "url": "https://download.microsoft.com/download/d/7/4/d7429589-4dac-46fa-ac90-eba681e2d82f/IPC-in-Office-365-with-Azure-RMS.DOCX",
+            "size": "5461475",
+            "version": "1.2a",
+            "datePublished": "6/13/2024 12:14:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Due to increased regulation, the Consumerization of IT  (CoIT) and the \u201cBring Your Own Device\u201d (BYOD), the explosion of information  with dispersed enterprise data, the Social Enterprise and its applications  enabling new collaboration, analytics scenarios, etc. enterprises of all sizes  are facing growing needs to protect sensitive information.&nbsp; At the same  time, enterprises have a need to securely share that same information amongst  appropriate employees and other individuals within and outside the corporate  network. <br />\r\n\r\nMicrosoft Rights Management service technology provides the capability to create and consume protected content such as e-mail and documents. As of today, such a capability is part of the New Microsoft Office 365 Enterprise subscription, natively integrated with Exchange Online, SharePoint Online, and Microsoft Office to apply persistent protection to the content to meet the business requirements of your organization.  <br />\r\n\r\n  This document is intended to help you previewing and  evaluating the Microsoft Rights Management service. For that  purpose it contains, as an introduction, a brief information on IPC and the Microsoft Rights Management service that helps you understand what it is,  and how it differs from on-premises Active Directory Rights Management Services  (AD RMS). It provides step-by-step information on how to configure and use the Microsoft Rights Management service to perform rights protection on your corporate  content, as well as other details and requirements you would need to  successfully evaluate the Microsoft Rights Management service in your environment. <br />\r\n  This document is intended for system architects and IT  professionals who are interested in understanding the basics of the Microsoft Rights Management service.<br />\r\n  This  paper is part of a document series on the identity and security features of  Office 365. It indeed completes an initial whitepaper on IPC entitled <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30139\">Information Protection and Control  (IPC) in Microsoft Exchange Online with AD RMS</a> also available on the Microsoft Download Center. This first paper describes the cross-premises support for AD RMS on-premises with the Exchange Online services of the previous version of Microsoft Office 365. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2a",
+    "detailsSection_file_name": [
+        "IPC-in-Office-365-with-Azure-RMS.DOCX"
+    ],
+    "detailsSection_file_size": [
+        "5.2 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "\r\n<ul>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=36391\">Active Directory from on-premises to the cloud</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=28971\">Office 365 Single Sign-On with AD FS  2.0 whitepaper</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=35464\">Office 365 Single Sign-On with  Shibboleth 2 whitepaper</a></li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30139\">Information  Protection and Control (IPC) in Microsoft Exchange Online with AD RMS  whitepaper</a></li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34768",
+    "downloadPreload": true
+}

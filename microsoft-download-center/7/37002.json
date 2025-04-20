@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Workflow Approval via Email",
+    "downloadDescription": "This document highlights the functionality in Microsoft Dynamics AX 2012 R2 that enables workflow to be configured so that a user can take approval action directly from email messages. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Workflow approval via email.pdf",
+            "url": "https://download.microsoft.com/download/7/5/4/754a05ab-0ba7-4289-8bb2-54a92399efbf/Workflow approval via email.pdf",
+            "size": "1720996",
+            "version": "2012",
+            "datePublished": "7/15/2024 4:57:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the email approval workflow. This workflow includes features and email messages that can be configured and the links that can be included in the emails that contain links to documents that require action. For example, an employee enters a timesheet, and then submits it to his or her manager for approval. The manager receives an email message requesting approval. The email message contains a link to the timesheet that the user entered. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Workflow approval via email.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "37002",
+    "downloadPreload": true
+}

@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "Remote BLOB storage for Microsoft SharePoint Server 2010",
+    "downloadDescription": "Use Microsoft SharePoint Server 2010 to optimize database storage resources. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePtServBLOB.pdf",
+            "url": "https://download.microsoft.com/download/9/4/e/94eb3361-beb7-4661-ab89-07179a099914/SharePtServBLOB.pdf",
+            "size": "445030",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:09 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePtServBLOB.doc",
+            "url": "https://download.microsoft.com/download/9/4/e/94eb3361-beb7-4661-ab89-07179a099914/SharePtServBLOB.doc",
+            "size": "296448",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Remote-BLOB-storage-for-Microsoft-SharePoint-Server-2010.mobi",
+            "url": "https://download.microsoft.com/download/9/4/e/94eb3361-beb7-4661-ab89-07179a099914/Remote-BLOB-storage-for-Microsoft-SharePoint-Server-2010.mobi",
+            "size": "239777",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServBLOB.xps",
+            "url": "https://download.microsoft.com/download/9/4/e/94eb3361-beb7-4661-ab89-07179a099914/SharePtServBLOB.xps",
+            "size": "586854",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Remote-BLOB-storage-for-Microsoft-SharePoint-Server-2010.epub",
+            "url": "https://download.microsoft.com/download/9/4/e/94eb3361-beb7-4661-ab89-07179a099914/Remote-BLOB-storage-for-Microsoft-SharePoint-Server-2010.epub",
+            "size": "159925",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "How to use Microsoft SharePoint Server 2010 together with Remote BLOB Storage (RBS) and Microsoft SQL Server 2008 Express and Microsoft SQL Server 2008 R2 Express to optimize database storage resources.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePtServBLOB.pdf",
+        "SharePtServBLOB.doc",
+        "Remote-BLOB-storage-for-Microsoft-SharePoint-Server-2010.mobi",
+        "SharePtServBLOB.xps",
+        "Remote-BLOB-storage-for-Microsoft-SharePoint-Server-2010.epub"
+    ],
+    "detailsSection_file_size": [
+        "434.6 KB",
+        "289.5 KB",
+        "234.2 KB",
+        "573.1 KB",
+        "156.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows Server 2003, Windows Server 2008, Windows XP, Windows Vista",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2002",
+    "downloadPreload": true
+}

@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2013 Volume License Pack",
+    "downloadDescription": "Volume license editions of Office 2013 client products require activation. This download enables IT administrators to set up a Key Management Service (KMS) or configure a domain for Active Directory-Based activation. Either of these volume activation methods can locally activate all Office 2013 clients connected to an organization\u2019s network.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "office2013volumelicensepack_4701-1000_en-us_x86.exe",
+            "url": "https://download.microsoft.com/download/3/4/2/342f1fea-ccb2-4f68-a6de-041934383c18/office2013volumelicensepack_4701-1000_en-us_x86.exe",
+            "size": "437208",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:30:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "If you want to activate volume license editions of Office 2013, Visio 2013, or Project 2013 with a KMS host or Active Directory-Based activation, you need to first install Office 2013 Volume License Pack. When an Office 2013 volume edition client is installed, it will automatically attempt to activate via either Active Directory by using its existing domain pairing or a DNS-discoverable KMS host on your organization network. To set up Active Directory-Based activation, you must be running Windows Server 2012, Windows 8, or newer.\n<br /><br />\nAll volume editions of Office 2013 client products are pre-installed with a Generic Volume License Key (GVLK) key, which supports automatic activation for both KMS and Active Directory-Based Activation, so you will not need to install a product key.\n<br /><br />\nThis download contains an executable file that will extract and install KMS host license files. These license files are required for the KMS host service to recognize Office 2013 KMS host keys. On Windows Server 2012 and volume license editions of Windows 8, you can use your same KMS host key to set up Active Directory-Based activation. \n<br /><br />\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "office2013volumelicensepack_4701-1000_en-us_x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "427.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <ul>\n    <li>\n      <b>KMS Host:</b> Windows Server 2008 R2, Windows 7 (volume editions) or newer</li>\n<li><b>Active Directory-Based Activation</b></li>\n<ul><li><b>Set-up and Configuration:</b> Windows Server 2012, Windows 8 (volume editions) or newer.</li>\n<li><b>Domain controller:</b> Active Directory Domain Services with the Windows Server 2012 schema installed.</li>\n</ul>\n</ul>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\n  <li>You need to perform this step only if you\u2019re setting up a KMS host on Windows Server 2008 R2 or Windows 7 (volume editions). Download and run the update contained in the KB article below. This update enables your Windows Server 2008 R2 or Windows 7-based KMS host to successfully activate Office 2013 clients that are running on Windows 8 or Windows Server 2012:\n<br /><br /><a href=\"http://support.microsoft.com/en-us/kb/2757817\">KB 2757817</a><br /><br />\n</li>\n<li>Download and run the executable file on this page on a supported operating system.</li>\n<li>Enter your Office 2013 KMS host key when prompted.</li>\n<li>Activate the product key online.</li>\n<li>If setting up a KMS host, open port 1688 to allow the KMS host service through the firewall: <ol type=\"a\">\n<li>Open Control Panel and click on the Windows Firewall icon.</li>\n<li>Click the \u201cAllow a program through Windows Firewall\u201d link.</li>\n<li>Click the Change Settings button. </li>\n<li>Check the box for Key Management Service.</li></ol></li>\n<li>To learn more about configuring your KMS host with slmgr.vbs, see the TechNet documentation found on <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=530256\">this page</a>. </li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "required KMS host update for Windows 7 and Windows Server 2008 R2",
+            "url": "http://support.microsoft.com/en-us/kb/2691586"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35584",
+    "downloadPreload": true
+}

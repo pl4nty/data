@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 Channel Integration Framework - Sample",
+    "downloadDescription": "Download the sample to integrate a softphone with Dynamics 365 using Channel Integration Framework.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ChannelIntegrationFramework_Sample.zip",
+            "url": "https://download.microsoft.com/download/5/a/4/5a491622-ec3a-4d44-bb88-d7c860a58073/ChannelIntegrationFramework_Sample.zip",
+            "size": "3018523",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:54:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dynamics 365 Channel Integration Framework is a cloud-to-cloud extensible framework to integrate third-party channel providers with Dynamics 365 Unified Interface Apps using a browser-based JavaScript API library.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ChannelIntegrationFramework_Sample.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed information about the minimum system requirements, see <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=859225\">Channel Integration Frameowrk</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click <b>Download</b>.</li>\r\n<li>Choose the file to download, and click <b>Next</b>.</li> \r\n<li>You'll be prompted to run or save the file. Click <b>Save</b> to save the file to your computer.</li>\r\nFor more information, see <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=859225\">Channel Integration Framework</a>.\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57666",
+    "downloadPreload": true
+}

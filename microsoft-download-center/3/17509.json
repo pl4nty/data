@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae RoundTable\u2122 Deployment Guide",
+    "downloadDescription": "Microsoft\u00ae RoundTable\u2122 Deployment Guide for administrators of RoundTable devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_RoundTable_Deployment_Guide.doc",
+            "url": "https://download.microsoft.com/download/c/3/5/c35686a5-e392-4c7c-84ff-b2d6844dec04/Microsoft_RoundTable_Deployment_Guide.doc",
+            "size": "2573824",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        }
+    ],
+    "detailsSection": "Microsoft RoundTable Deployment Guide is the document that covers the device management, configuration, software/firmware image update process, troubleshooting and diagnostics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_RoundTable_Deployment_Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The document is in Microsoft Word 97-2003 format.  Appropriate software is needed to open the document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "1.  Download the document.<br />\n2.  Make sure that you have a software that can open a document in Microsoft Word 97-2003 format.<br />\n3.  Double click to open the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17509",
+    "downloadPreload": true
+}

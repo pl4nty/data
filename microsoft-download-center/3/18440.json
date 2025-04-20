@@ -1,0 +1,114 @@
+{
+    "error": "",
+    "downloadTitle": "Optimizing Storage for Microsoft Exchange Server 2003",
+    "downloadDescription": "This guide will help you optimize your storage architecture for Exchange Server 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Server_Sizing.xls",
+            "url": "https://download.microsoft.com/download/b/e/0/be072b12-9c30-4e00-952d-c7d0d7bcea5f/Server_Sizing.xls",
+            "size": "23040",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "StoragePerformance.doc",
+            "url": "https://download.microsoft.com/download/b/e/0/be072b12-9c30-4e00-952d-c7d0d7bcea5f/StoragePerformance.doc",
+            "size": "322048",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:10:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Are you planning to deploy Microsoft\u00ae Exchange Server 2003? Are you concerned about availability, fault tolerance and performance? If so, it is critical that you understand how to optimize your storage system for Exchange Server 2003, regardless of the size of your organization.<br />\nDisk subsystem bottlenecks cause more performance problems than server-side CPU or RAM deficiencies, and a poorly designed disk subsystem can leave your organization vulnerable to hardware malfunctions. Specifically, your disk subsystem is performing poorly if it is experiencing:<br />\n<UL><br />\n<LI>Average read and write latencies over 20 ms.</LI><br />\n<LI>Latency spikes over 50 ms that last for more than a few seconds.</LI><br />\n</UL><br />\nHigh disk latency is synonymous with slow performance. To reduce costly disk latency issues, at a minimum, you should:  <br />\n<UL><br />\n<LI>Invest in high performance disks and spindles.</LI><br />\n<LI>Consider performance before capacity.</LI><br />\n<LI>Align your disks by using DiskPar.</LI><br />\n</UL><br />\nAll of these topics are discussed in this guide. In general, to optimize your storage system and avoid high disk latency issues, you need to understand:<br />\n<UL><br />\n<LI>The causes of Exchange disk I/O.</LI><br />\n<LI>How to calculate your disk I/O requirements.</LI><br />\n<LI>How to optimize your specific storage architecture.</LI><br />\n<LI>How to verify the performance of your storage system.</LI><br />\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "Server_Sizing.xls",
+        "StoragePerformance.doc"
+    ],
+    "detailsSection_file_size": [
+        "22.5 KB",
+        "314.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word 2003 Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server 2003 Performance and Scalability Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47576"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "disk Subsystem Performance Analysis for Windows",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34146"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "18440",
+    "downloadPreload": true
+}

@@ -1,0 +1,177 @@
+{
+    "error": "",
+    "downloadTitle": "Visio Add-in for Database Modeling",
+    "downloadDescription": "This Visio add-in for Database Modeling lets you create a database model from an existing database.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visio Add-in for Database Modeling Setup.pdf",
+            "url": "https://download.microsoft.com/download/a/5/f/a5f3a22d-0b11-4d03-bbf8-49dbbf4bc3bf/Visio Add-in for Database Modeling Setup.pdf",
+            "size": "537648",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "visdbre_en-us_x64.msi",
+            "url": "https://download.microsoft.com/download/a/5/f/a5f3a22d-0b11-4d03-bbf8-49dbbf4bc3bf/visdbre_en-us_x64.msi",
+            "size": "5652480",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "visdbre_en-us_x86.msi",
+            "url": "https://download.microsoft.com/download/a/5/f/a5f3a22d-0b11-4d03-bbf8-49dbbf4bc3bf/visdbre_en-us_x86.msi",
+            "size": "5185536",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:39:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "This Visio add-in for Database Modeling lets you create a database model from an existing database. Database models graphically show the structure of a database (without showing the actual data) so you can see how various database elements, such as tables and views, relate to each other. This can help you when you create a new database or try to understand the structure of an existing one.<br/>\r\n<b>Note</b>: This add-in will work only with <a href=\"https://products.office.com/en-us/visio/visio-professional-free-trial-flowchart-software\">Visio Pro for Office 365</a><br/><br/>\r\nVersion 1.0<br/>\r\n<ul>\r\n<li>Visio Add-in for Database Modeling X86.MSI</li>\r\n<li>Visio Add-in for Database Modeling X64.MSI</li>\r\n<li>Visio Add-in for Database Modeling setup.pdf</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "Visio Add-in for Database Modeling Setup.pdf",
+        "visdbre_en-us_x64.msi",
+        "visdbre_en-us_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "525.0 KB",
+        "5.4 MB",
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Visio Pro for O365 with builds 16.0.7726.XXXX and above</li>\r\n<li>Windows 7 SP1 to Windows 10, 32-bit or 64-bit OS only</li>\r\n<li>Database Drivers based on the database the user wants to reverse\r\nengineer</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Click the download button to download the installation file and user guide. Follow the detailed instructions in the user guide to install and use the add-in.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54527",
+    "downloadPreload": true
+}

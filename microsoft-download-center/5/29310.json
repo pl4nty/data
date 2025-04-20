@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 14: Expose dynamic data with text fields in Visio 2010",
+    "downloadDescription": "Watch a brief demonstration of how to display dynamic data with text fields in Visio 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Session_14_Expose_dynamic_data_with_text_fields_1000k.wmv",
+            "url": "https://download.microsoft.com/download/1/2/5/125f834b-c07a-40ad-9a7c-e395729afaf9/Session_14_Expose_dynamic_data_with_text_fields_1000k.wmv",
+            "size": "21147699",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Session_14_Expose_dynamic_data_with_text_fields_8000k.wmv",
+            "url": "https://download.microsoft.com/download/1/2/5/125f834b-c07a-40ad-9a7c-e395729afaf9/Session_14_Expose_dynamic_data_with_text_fields_8000k.wmv",
+            "size": "112311595",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how to display dynamic data as text in Microsoft Visio 2010. This video reviews several ways to expose a variety of information, such as shape dimensions, shape data, or page numbers. It covers how you can add text to shape labels or custom callout shapes using text fields that update as the shape or data changes. It also covers how to display page numbers automatically by adding a text field to background pages. \r\nThis video is part of a series covering the basics of how to use Visio features and capabilities. Visio http://visio.microsoft.com/MVPSessions to learn more and view other videos in this series.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Session_14_Expose_dynamic_data_with_text_fields_1000k.wmv",
+        "Session_14_Expose_dynamic_data_with_text_fields_8000k.wmv"
+    ],
+    "detailsSection_file_size": [
+        "20.2 MB",
+        "107.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "The video has two downloadable resolution: 1000k/lowest and 8000k/highest. Click Download to save the video to your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29310",
+    "downloadPreload": true
+}

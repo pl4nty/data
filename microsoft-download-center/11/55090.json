@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Defender Advanced Threat Protection - Ransomware response playbook",
+    "downloadDescription": "This playbook discusses how enterprises can leverage Windows Defender ATP to detect, investigate, and mitigate ransomware threats in their networks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Defender ATP - Ransomware response playbook.pdf",
+            "url": "https://download.microsoft.com/download/e/4/1/e415bbe3-1de6-4558-8f6b-cb8bbd4aa348/Windows Defender ATP - Ransomware response playbook.pdf",
+            "size": "1770460",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides an overview of how enterprise customers can leverage Windows Defender Advanced Threat Protection (Windows Defender ATP) to detect, investigate, and mitigate ransomware threats in their networks. It walks through different stages of incident response and shows how Windows Defender ATP can serve as an invaluable tool during each of these stages.\r\n\r\nThis playbook refers to a real-world infection involving Cerber ransomware, one of the most active ransomware families. It shows how Windows Defender ATP can help catch a specific Cerber variant and, at the same time, catch ransomware behavior generically.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows Defender ATP - Ransomware response playbook.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Use a web browser or a PDF reader to view this document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "No special instructions required.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55090",
+    "downloadPreload": true
+}

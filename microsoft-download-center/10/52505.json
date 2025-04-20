@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Spectrogram Inversion Toolbox",
+    "downloadDescription": "The Spectrogram Inversion Toolbox allows one to create spectrograms from audio, and, more importantly, estimate the audio that generates any given spectrogram. Last published: September 22, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SpectrogramInversion1.02b.zip",
+            "url": "https://download.microsoft.com/download/f/b/0/fb011761-22ff-4b37-b69c-9ae99675b123/SpectrogramInversion1.02b.zip",
+            "size": "175075",
+            "version": "1.02b",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Spectrogram Inversion Toolbox allows one to create spectrograms from audio, and, more importantly, estimate the audio that generates any given spectrogram. This is useful because often one wants to think about, and modify sounds in the spectrogram domain. This toolbox is provided as Matlab source code. It does not depend on any Mathworks toolboxes. There are two big problems with spectrogram inversion: most importantly, one (generally) drops the phase when computing a spectrogram, and two not every (spectrogram) image corresponds to a valid waveform. This code finds the waveform that has a magnitude spectrogram most like the input spectrogram. The easy solution is to just do the inversion assuming some phase (like 0). Back in the time domain you get an answer, but there is a lot of destructive interference because the segments of adjacent frames do not have consistent phase. Some people advocate starting with a random phase. A better solution to this problem is to use an iterative algorithm proposed by Griffin and Lim many decades ago. It does converge, but slowly. An even better solution is to do the inversion, explicitly looking for a good set of phases. This toolbox does that, after the inverse Fourier transform of each slice, by finding the best time delay so the new frame and the summed frames to now are consistent. This is equivalent to starting with some arbitrary linear phase. The effect of this is to reduce the reconstruction error by an order of magnitude.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.02b",
+    "detailsSection_file_name": [
+        "SpectrogramInversion1.02b.zip"
+    ],
+    "detailsSection_file_size": [
+        "171.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52505",
+    "downloadPreload": true
+}

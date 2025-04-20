@@ -1,0 +1,119 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Critical Update Wizard for Microsoft\u00ae SQL Server\u2122 2000 and Microsoft\u00ae SQL Server Desktop Engine (MSDE) 2000",
+    "downloadDescription": "The SQL Server Critical Update Wizard will scan Microsoft SQL Server 2000 and MSDE 2000 to help detect instances vulnerable to the \"Slammer\" worm, and will attempt to update the affected files.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL-MSDE-CriticalUpdate_ENU.msi",
+            "url": "https://download.microsoft.com/download/1/8/9/1896f7e7-9431-470c-bad7-212b021d0123/SQL-MSDE-CriticalUpdate_ENU.msi",
+            "size": "11652096",
+            "version": "8.00.0194",
+            "datePublished": "7/15/2024 3:11:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "readme_wizard.txt",
+            "url": "https://download.microsoft.com/download/1/8/9/1896f7e7-9431-470c-bad7-212b021d0123/readme_wizard.txt",
+            "size": "5153",
+            "version": "8.00.0194",
+            "datePublished": "7/15/2024 3:11:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "The SQL Server Critical Update Wizard will update editions of Microsoft SQL Server 2000 and MSDE 2000 that are vulnerable to the Slammer worm. All versions of the SQL Server 2000 Evaluation Edition can also be updated with the SQL Critical Update Wizard. However, the Evaluation Edition can not be updated using SP3. MSDE 2000 ships with several Microsoft products, including Office XP. For a complete list of products that ship MSDE 2000, visit the <a href='http://go.microsoft.com/fwlink/?LinkId=13280'>Microsoft Products that include MSDE 2000</a> Web page.<BR \\><BR \\>The SQL Critical Update Wizard was developed specifically for the home and small business user, though enterprise customers may also download and deploy the wizard to their internal customers. The SQL Critical Update Wizard will walk you through the steps of detecting a vulnerability to Slammer and updating the affected files. SQL Critical Update Wizard runs on Windows\u00ae 98, Windows ME, Windows NT\u00ae 4.0, Windows 2000 and Windows XP. Please see <a href='http://support.microsoft.com/?kbid=814372'>Knowledge Base Article: 814372</a> for more information about this wizard. If you want to install SQL Critical Update on a cluster, use the SQL Critical Update tool instead of the wizard. For more information about updating clusters with SQL Critical Update or if you need more flexibility in detecting and removing security vulnerabilities, visit <a href='http://microsoft.com/downloads/details.aspx?FamilyId=9552D43B-04EB-4AF9-9E24-6CDE4D933600&displaylang=en'>SQL Server 2000 Security Tools</a>.<BR \\><BR \\>To send feedback on these tools, send email to SQL Critical Update Kit: <a href=\"mailto:sqlctlkt@microsoft.com?subject=SQL Critical Update Kit\">sqlctlkt@microsoft.com</a>.<br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.00.0194",
+    "detailsSection_file_name": [
+        "SQL-MSDE-CriticalUpdate_ENU.msi",
+        "readme_wizard.txt"
+    ],
+    "detailsSection_file_size": [
+        "11.1 MB",
+        "5.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows Installer 1.1 is required to run the SQL Critical Update Wizard on Windows 98, Windows Me, and Windows NT 4.0. For Windows NT 4.0 see <a href='http://www.microsoft.com/downloads/details.aspx?FamilyID=4b6140f9-2d36-4977-8fa1-6f8a0f5dca8f'>Windows Installer 2.0 Redistributable for Windows NT 4.0 and 2000</a>. For Windows 98 and Me see <a href='http://www.microsoft.com/downloads/details.aspx?FamilyID=CEBBACD8-C094-4255-B702-DE3BB768148F'>Windows Installer 2.0 Redistributable for Windows 9X</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "To obtain the correct localized version of the Critical Update tool for your environment, choose a different language from the drop-down list and click <B>Go</B>.<br>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Security Tools Newsgroup",
+            "url": "http://go.microsoft.com/?linkid=664807"
+        },
+        {
+            "title": "tools for Combating the Slammer Worm",
+            "url": "http://go.microsoft.com/?linkid=664809"
+        },
+        {
+            "title": "finding and Fixing Slammer Vulnerabilities",
+            "url": "http://go.microsoft.com/?linkid=664808"
+        },
+        {
+            "title": "sql Server Training & Events",
+            "url": "http://go.microsoft.com/?linkid=664810"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14303",
+    "downloadPreload": true
+}

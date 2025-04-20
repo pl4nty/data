@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Unloading Master Data from SAP BI 7.0 using Open Hub Service",
+    "downloadDescription": "How to use SAP Open Hub Service for unloading data from",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_BI_Interoperability_with_SAP_White_Paper-042309-r2v100-F5.docx",
+            "url": "https://download.microsoft.com/download/1/7/5/175af735-edab-41db-b762-1b259ec5b362/Microsoft_BI_Interoperability_with_SAP_White_Paper-042309-r2v100-F5.docx",
+            "size": "2079967",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft BI and SAP NetWeaver - XMLA Interface.pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175af735-edab-41db-b762-1b259ec5b362/Microsoft BI and SAP NetWeaver - XMLA Interface.pdf",
+            "size": "1033029",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft BI and SAP NetWeaver - SSIS.pdf",
+            "url": "https://download.microsoft.com/download/1/7/5/175af735-edab-41db-b762-1b259ec5b362/Microsoft BI and SAP NetWeaver - SSIS.pdf",
+            "size": "2044382",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "cy-gb",
+            "name": "Welsh"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper describes how to use SAP Open Hub Service for unloading data from <br />\nSAP NetWeaver BI for integrating with Microsoft Business Intelligence (Microsoft BI). <br />\nThe paper contains a detailed walk-through of how to configure SAP NetWeaver BI <br />\nfor unloading the master data and retrieving this data in Microsoft SQL Server by <br />\nusing SQL Server Integration Services (SSIS).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft_BI_Interoperability_with_SAP_White_Paper-042309-r2v100-F5.docx",
+        "Microsoft BI and SAP NetWeaver - XMLA Interface.pdf",
+        "Microsoft BI and SAP NetWeaver - SSIS.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "1008.8 KB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows<br />\nAdobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right click to download or run remotely.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7534",
+    "downloadPreload": true
+}

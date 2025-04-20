@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Project Server 2010 IT-Professional Webcast Series slide presentations",
+    "downloadDescription": "PowerPoint slides for the Microsoft Project Server 2010 IT-Professional Webcast Series training videos for IT-Professionals who deploy, configure, and maintain Project Server 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Project2010ITProWebcastSlides.zip",
+            "url": "https://download.microsoft.com/download/3/8/7/387f82e9-7b8a-4adc-a7fc-32316ef80d7a/Project2010ITProWebcastSlides.zip",
+            "size": "17582732",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:14:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains seven Microsoft PowerPoint presentations for the Project 2010 IT-Professional Webcast Series of training presentations. The presentations included in this download are: \r\n<ul>\r\n <li>Microsoft Project Server 2010-Performance Part 1 </li>\r\n <li>Microsoft Project Server 2010-Performance Part 2 </li>\r\n <li>Microsoft Project Server 2010-Upgrade and Migration </li>\r\n <li>Microsoft Project Server 2010-Backwards Compatibility Mode </li>\r\n <li>Microsoft Project Server 2010- Coexisting with SharePoint 2010 </li>\r\n <li>Microsoft Project Server 2010- Backup and Restore</li>\r\n <li>Microsoft Project Server 2010- Operations</li>\r\n</ul>\r\nThe Project 2010 IT-Professional Webcast Series is a set of Project Server 2010 training videos presented by Microsoft product managers and architects that are targeted for the IT-Professional audience. These videos are available to view on-demand through the <a href=\"http://www.microsoft.com/events/series/epm.aspx?tab=webcasts\">Microsoft Events and Webcast site</a>. Download and use the corresponding slide presentations to assist in your understanding of the training videos.  For a comprehensive list of the Microsoft Project Server 2010 IT-Professional Webcast Series videos, see the TechNet article <a href=\"http://technet.microsoft.com/library/ff631141.aspx\">Project Server 2010 IT-Professional TechNet Webcasts</a>. For additional technical information referenced in the slides, see the <a href=\"http://technet.microsoft.com/projectserver/ee263909.aspx\">Project Server 2010 TechCenter (TechNet)</a>.  For more information about Project 2010, see the <a href=\"http://www.microsoft.com/project/2010\">Project 2010 Web site</a>. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Project2010ITProWebcastSlides.zip"
+    ],
+    "detailsSection_file_size": [
+        "16.8 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "To download and read this file, you must have Microsoft Office PowerPoint 2007 or <a href=\"http://go.microsoft.com/fwlink/?LinkId=181980\">PowerPoint Viewer 2007</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b> to transfer the compressed file to your computer. Decompress the file, then you can open the individual .pptx files. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3476",
+    "downloadPreload": true
+}

@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Command Line Utilities 11 for SQL Server\u00ae",
+    "downloadDescription": "Microsoft Command Line Utilities 11 for SQL Server",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MsSqlCmdLnUtils.msi",
+            "url": "https://download.microsoft.com/download/5/5/b/55befd44-b899-4b54-acd7-506e03142b34/1033/x64/MsSqlCmdLnUtils.msi",
+            "size": "2682880",
+            "version": "11.0.2270.0",
+            "datePublished": "7/15/2024 3:16:41 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MsSqlCmdLnUtils.msi",
+            "url": "https://download.microsoft.com/download/5/5/b/55befd44-b899-4b54-acd7-506e03142b34/1033/x86/MsSqlCmdLnUtils.msi",
+            "size": "2404352",
+            "version": "11.0.2270.0",
+            "datePublished": "7/15/2024 3:16:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "The SQLCMD utility allows users to connect to, send Transact-SQL batches from, and output rowset information from SQL Server instances. The bcp utility bulk copies data between an instance of Microsoft SQL Server and a data file in a user-specified format. The bcp utility can be used to import large numbers of new rows into SQL Server tables or to export data out of tables into data files.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2270.0",
+    "detailsSection_file_name": [
+        "MsSqlCmdLnUtils.msi",
+        "MsSqlCmdLnUtils.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Note:</b> This component requires both Windows Installer 4.5 and Microsoft ODBC Driver 11 for SQL Server (see Related Downloads). ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Download the appropriate file by clicking one of the links below, then run the downloaded file to install that package.",
+    "additionalInformationSection": "Community Support: <a href=\"http://go.microsoft.com/fwlink/?LinkID=277064\">SQL Server Data Access Forum.</a><br/>\r\nSubmit Feedback: <a href=\"http://go.microsoft.com/fwlink/?LinkID=277065\">Microsoft SQL Server Feedback Center.</a><br/>\r\nDocumentation:  <a href=\"http://go.microsoft.com/fwlink/?LinkID=277066\">ODBC Driver on Windows Documentation.</a><br/>\r\nTeam Blog: <a href=\"http://go.microsoft.com/fwlink/?LinkID=277067\">Microsoft ODBC Driver team blog</a><br/>\r\n<a href=\" http://www.microsoft.com/en-us/download/details.aspx?id=36434\">ODBC Driver</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36433",
+    "downloadPreload": true
+}

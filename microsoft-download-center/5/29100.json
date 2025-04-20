@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae OLEDB Provider for DB2 v4.0 for Microsoft\u00ae SQL Server\u00ae 2012",
+    "downloadDescription": "This download contains the documentation for the Microsoft\u00ae OLEDB Provider for DB2 v4.0 for Microsoft\u00ae SQL Server\u00ae 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DB2OLEDBV4PDF.pdf",
+            "url": "https://download.microsoft.com/download/a/d/7/ad7f3313-54cb-4d2f-8240-9273a017b94b/DB2OLEDBV4PDF.pdf",
+            "size": "1536839",
+            "version": "4.0",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this documentation to learn about the Microsoft\u00ae OLEDB Provider for DB2 v4.0 for Microsoft\u00ae SQL Server\u00ae 2012.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "DB2OLEDBV4PDF.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click Download to download the document in PDF file format.</li>\r\n<li>Save the file to your computer.</li>\r\n<li>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29100",
+    "downloadPreload": true
+}

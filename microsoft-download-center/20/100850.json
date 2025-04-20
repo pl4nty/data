@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Endpoint Configuration Manager - macOS Client (64-bit)",
+    "downloadDescription": "Native 64-bit macOS client for use with Configuration Manager (current branch)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ConfigmgrMacClient.msi",
+            "url": "https://download.microsoft.com/download/3/1/b/31b51209-d743-4124-bca7-84fdc3453e65/ConfigmgrMacClient.msi",
+            "size": "9061376",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:21:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The 64-bit macOS client allows you to manage Apple devices running the macOS using Configuration Manager (current branch)<br/>\r\n<br/>\r\n<b>Release History</b>\r\n<ul>\r\n<li> 7/22/2021 - Update release, version 5.0.9000.1002, including bug fixes and added support for macOS 11</li>\r\n<li> 3/20/2020 - Update release, version 5.0.8743.1000, bug fixes</li>\r\n<li> 1/29/2020 - Original release, version 5.0.8742.1000 added support for macOS 10.15</li>\r\n</ul>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "ConfigmgrMacClient.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> </li>\r\nSupported versions: Microsoft Endpoint Configuration Manager (current branch).\r\n</ul><br/>\r\nSupported configurations and hardware requirements: See the Client Requirements for Mac computers section in the Supported Configurations for Configuration Manager topic. <a href=\"https://go.microsoft.com/fwlink/?linkid=839558\">https://go.microsoft.com/fwlink/?linkid=839558</a>\r\n<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download the Mac client msi file to a Windows system </li>\r\n<li>Run the msi and it will create a dmg file under the default location \u201cC:\\Program Files\\Microsoft\\System Center Configuration Manager for Mac client\\\u201d on the Windows system </li>\r\n<li>Copy the dmg file to a network share or a folder on a Mac computer </li>\r\n<li>Access and open the dmg file on a Mac computer and install the client using instructions in the online documentation. <a href=\"https://go.microsoft.com/fwlink/?linkid=839409\">https://go.microsoft.com/fwlink/?linkid=839409</a></li> \r\n</ol><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100850",
+    "downloadPreload": true
+}

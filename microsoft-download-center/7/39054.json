@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2013 Business Portal Implementation Guide (6.0)",
+    "downloadDescription": "This guide provides information about implementing Business Portal for Microsoft Dynamics GP 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BPImplementationGuide60.pdf",
+            "url": "https://download.microsoft.com/download/f/f/2/ff2ca0eb-a40e-4aed-a74f-5bb9d2773d06/BPImplementationGuide60.pdf",
+            "size": "722361",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:27:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ImplementationChecklist.doc",
+            "url": "https://download.microsoft.com/download/f/f/2/ff2ca0eb-a40e-4aed-a74f-5bb9d2773d06/ImplementationChecklist.doc",
+            "size": "135168",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:27:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContentInventory.xls",
+            "url": "https://download.microsoft.com/download/f/f/2/ff2ca0eb-a40e-4aed-a74f-5bb9d2773d06/ContentInventory.xls",
+            "size": "16384",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:27:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UsersAndRoles.xls",
+            "url": "https://download.microsoft.com/download/f/f/2/ff2ca0eb-a40e-4aed-a74f-5bb9d2773d06/UsersAndRoles.xls",
+            "size": "136192",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:27:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this guide to help walk you through the major stages in the implementation process. In addition to the Implementation Guide, the following components are included:\r\n<UL><LI><b>Business Portal Implementation Checklist</b> (ImplementationChecklist.doc): This template can be tailored to your specific implementation project. It lists the steps involved in implementing and deploying Business Portal. You can use this template to identify who is responsible to make sure the tasks are completed, and also to identify any risks and dependencies.</LI>\r\n<LI><b>Content Inventory template</b> (ContentInventory.xls): This spreadsheet provides an example of a content inventory. This includes a list of 1) where documents are located, 2) what format documents were created in, 3) who is responsible for maintaining the documents, and 4) where the information will be stored within the portal.</LI>\r\n<LI><b>Users and Roles template</b> (UsersAndRoles.xls): This spreadsheet helps you set up users and assign them to SharePoint groups, MBF roles, and web service roles. Complete the template before you add users to Business Portal.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "BPImplementationGuide60.pdf",
+        "ImplementationChecklist.doc",
+        "ContentInventory.xls",
+        "UsersAndRoles.xls"
+    ],
+    "detailsSection_file_size": [
+        "705.4 KB",
+        "132.0 KB",
+        "16.0 KB",
+        "133.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39054",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "55\" ProCap HID interface Version 1.07",
+    "downloadDescription": "Tool used to adjusts color correction and temperature of the 55\" PPI by Microsoft device.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PPI_55_Interface.01.07.exe",
+            "url": "https://download.microsoft.com/download/f/7/5/f75af06b-c6a5-41be-8742-9f06a05b1acf/PPI_55_Interface.01.07.exe",
+            "size": "181760",
+            "version": "1.07",
+            "datePublished": "7/15/2024 3:33:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool provides the ability to adjust the Color Configuration and Color Temperature of the 55\" PPI by Microsoft device.  It can be used to change the network configuration and control the source, brightness and power of the 55\" device.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.07",
+    "detailsSection_file_name": [
+        "PPI_55_Interface.01.07.exe"
+    ],
+    "detailsSection_file_size": [
+        "177.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<br />1.Click the  Download button on this page to start the download\r\n<br />2.Do one of the following:\r\n<ul>\r\n<li>To copy the download to your computer for execution at a later time, click Save or Save this program to disk.</li>\r\n<li>To start the program immediately, click Open or Run this program from its current location.</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38180",
+    "downloadPreload": true
+}

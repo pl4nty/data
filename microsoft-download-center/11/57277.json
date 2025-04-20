@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics AX 2009 SP1 Payroll update 2018 R6 - KB4459492",
+    "downloadDescription": "AX2009 Payroll update - 2018",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KB4459492.zip",
+            "url": "https://download.microsoft.com/download/c/e/7/ce7a420a-5be2-482f-bee1-442fe9283569/KB4459492.zip",
+            "size": "17621285",
+            "version": "5.0.1511.131",
+            "datePublished": "11/15/2023 5:07:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the Dynamics AX 2009 Payroll R6 update.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4459492",
+        "name": "KB4459492"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.1511.131",
+    "detailsSection_file_name": [
+        "KB4459492.zip"
+    ],
+    "detailsSection_file_size": [
+        "16.8 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "AX 2009 installed prior to downloading this fix.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Unzip the file locally and run the Axupdate.exe to start the installation",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57277",
+    "downloadPreload": true
+}

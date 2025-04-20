@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MFA technical guides",
+    "downloadDescription": "This zipped folder contains technical documentation for MFA in EMS. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MFA technical guides.zip",
+            "url": "https://download.microsoft.com/download/1/6/1/1619ed36-ca7c-4193-a018-dd801f994823/MFA technical guides.zip",
+            "size": "24905156",
+            "version": "July 2016",
+            "datePublished": "5/15/2024 4:13:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains technical documentation for MFA in EMS. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2016",
+    "detailsSection_file_name": [
+        "MFA technical guides.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.8 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53150",
+    "downloadPreload": true
+}

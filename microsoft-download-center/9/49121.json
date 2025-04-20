@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Control the health of Windows 10-based devices",
+    "downloadDescription": "This white paper details an end-to-end solution helping to protect high-value assets by enforcing, controlling, and reporting the health of devices running Windows 10.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Control the health of Windows 10-based devices - v1.3.DOCX",
+            "url": "https://download.microsoft.com/download/f/c/9/fc97e83b-a20d-4be2-97c2-194c21263018/Control the health of Windows 10-based devices - v1.3.DOCX",
+            "size": "655082",
+            "version": "1.3",
+            "datePublished": "7/15/2024 4:05:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows 10 is a major step towards an end-to-end secure solution that doesn\u2019t focus only on implementing preventive security defenses. Windows 10 adds device health attestation capabilities enforced by hardware.\r\nIt\u2019s a key feature for enabling Conditional Access Control. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3",
+    "detailsSection_file_name": [
+        "Control the health of Windows 10-based devices - v1.3.DOCX"
+    ],
+    "detailsSection_file_size": [
+        "639.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The file is a Microsoft Word document.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Users who do not have Microsoft Word can download the <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac&displaylang=en\">Word Viewer</a> from the Microsoft Download Center.\r\n\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49121",
+    "downloadPreload": true
+}

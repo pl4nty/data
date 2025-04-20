@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2010 add-in for Visio 2010",
+    "downloadDescription": "Manage, monitor, and administer user mailbox and user distribution group details for Microsoft Exchange Server more easily with this Visio 2010 add-in.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Visio Services Data Provider for Exchange add-in user guide.docx",
+            "url": "https://download.microsoft.com/download/4/5/4/454d00b8-5c57-4215-a9d3-514be3a03404/Visio Services Data Provider for Exchange add-in user guide.docx",
+            "size": "273357",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this add-in to make it easier for your Microsoft Exchange administrators to manage, monitor, and administer user mailbox and user distribution group details. With the Microsoft Visio 2010 Add-in for Exchange Server, your administrators can get a graphical view of user mailbox details in Exchange Server 2010 or Exchange Server 2007. Instead of viewing single user data, administrators can create data-linked Visio diagrams that display Exchange data, such as sites and servers, at a glance, helping dramatically increase productivity. \r\nIn addition to the client component, the add-in also has a server component. With the server component, you can publish your data-linked diagram to Microsoft SharePoint Server 2010 through Visio Services and refresh it in real time, making the latest information broadly available through a browser.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Visio Services Data Provider for Exchange add-in user guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "267.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Microsoft .NET Framework 3.5\r\n\u2022 Visio Professional 2010 or Visio Premium 2010\r\n\u2022 For server component: SharePoint Server 2010 \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click the Download button to download the installation files and user guide. Follow the instructions in the \"Visio Services Data Provider for Exchange add-in\" user guide to install the add-in.\r\n",
+    "additionalInformationSection": "LICENSE:\r\nMICROSOFT GRANTS YOU A NON-EXCLUSIVE, WORLDWIDE, ROYALTY-FREE LICENSE TO USE THIS SOFTWARE ADD-IN FOR VISIO. THE SOFTWARE IS LICENSED \u201cAS-IS\u201d AND WE DO NOT PROVIDE SUPPORT SERVICES FOR IT. YOU BEAR THE RISK OF USING IT. MICROSOFT MAKES NO EXPRESS OR IMPLIED WARRANTIES, GUARANTEES OR CONDITIONS. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26231",
+    "downloadPreload": true
+}

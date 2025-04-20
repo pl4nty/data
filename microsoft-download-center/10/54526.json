@@ -1,0 +1,281 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Active Directory Federation Services",
+    "downloadDescription": "This Management Pack is used to monitor Active Directory Federation Services running on Windows Server",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for Active Directory Federation Services.msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/SC Management Pack for Active Directory Federation Services.msi",
+            "size": "622592",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ADFS_MP_Guide.docx",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/ADFS_MP_Guide.docx",
+            "size": "228717",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (TRK).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (TRK).msi",
+            "size": "581632",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (SVE).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (SVE).msi",
+            "size": "581632",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (RUS).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (RUS).msi",
+            "size": "593920",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (PTG).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (PTG).msi",
+            "size": "581632",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (PTB).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (PTB).msi",
+            "size": "585728",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (PLK).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (PLK).msi",
+            "size": "589824",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (NLD).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (NLD).msi",
+            "size": "585728",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (KOR).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (KOR).msi",
+            "size": "585728",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (JPN).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (JPN).msi",
+            "size": "577536",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (ITA).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (ITA).msi",
+            "size": "581632",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (HUN).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (HUN).msi",
+            "size": "577536",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (FRA).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (FRA).msi",
+            "size": "585728",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (ESN).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (ESN).msi",
+            "size": "581632",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (DEU).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (DEU).msi",
+            "size": "589824",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (CSY).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (CSY).msi",
+            "size": "585728",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (CHT).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (CHT).msi",
+            "size": "565248",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center MP for ADFS (CHS).msi",
+            "url": "https://download.microsoft.com/download/7/7/a/77a51615-0ab6-4dca-b2ae-016e78acf02c/Microsoft System Center MP for ADFS (CHS).msi",
+            "size": "565248",
+            "version": "10.0.3.3",
+            "datePublished": "7/15/2024 4:45:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Active Directory Federation Services (AD FS) Management Pack provides both proactive and reactive monitoring of your AD FS deployment for the federation server role. The management pack monitors events that the AD FS Windows service records in the AD FS event logs, and it monitors the performance data that the AD FS performance counters collect. It also monitors the overall health of the AD FS system and the federation passive application, and it provides alerts for critical issues and warning issues. <br/><br/>\r\nThis management pack includes monitoring of the following core components: token issuance, token acceptance, artifact service, Web sites, trust management, certificate rollover, and Windows Internal Database synchronization. For example, the AD FS Management Pack monitors the following:\r\n<ul>\r\n<li>Events that indicate service outages and operational errors or warnings</li>\r\n<li> Alerts that indicate configuration issues and background tasks failures or warnings</li>\r\n<li> Whether auditing is occurring successfully</li>\r\n<li>Notification of malformed access requests</li>\r\n<li>Service availability</li>\r\n<li>The health of the Secure Sockets Layer (SSL) certificates used by the AD FS servers. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.3.3",
+    "detailsSection_file_name": [
+        "SC Management Pack for Active Directory Federation Services.msi",
+        "ADFS_MP_Guide.docx",
+        "Microsoft System Center MP for ADFS (TRK).msi",
+        "Microsoft System Center MP for ADFS (SVE).msi",
+        "Microsoft System Center MP for ADFS (RUS).msi",
+        "Microsoft System Center MP for ADFS (PTG).msi",
+        "Microsoft System Center MP for ADFS (PTB).msi",
+        "Microsoft System Center MP for ADFS (PLK).msi",
+        "Microsoft System Center MP for ADFS (NLD).msi",
+        "Microsoft System Center MP for ADFS (KOR).msi",
+        "Microsoft System Center MP for ADFS (JPN).msi",
+        "Microsoft System Center MP for ADFS (ITA).msi",
+        "Microsoft System Center MP for ADFS (HUN).msi",
+        "Microsoft System Center MP for ADFS (FRA).msi",
+        "Microsoft System Center MP for ADFS (ESN).msi",
+        "Microsoft System Center MP for ADFS (DEU).msi",
+        "Microsoft System Center MP for ADFS (CSY).msi",
+        "Microsoft System Center MP for ADFS (CHT).msi",
+        "Microsoft System Center MP for ADFS (CHS).msi"
+    ],
+    "detailsSection_file_size": [
+        "608.0 KB",
+        "223.4 KB",
+        "568.0 KB",
+        "568.0 KB",
+        "580.0 KB",
+        "568.0 KB",
+        "572.0 KB",
+        "576.0 KB",
+        "572.0 KB",
+        "572.0 KB",
+        "564.0 KB",
+        "568.0 KB",
+        "564.0 KB",
+        "572.0 KB",
+        "568.0 KB",
+        "576.0 KB",
+        "572.0 KB",
+        "552.0 KB",
+        "552.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported SCOM Versions</b><br/>\r\n<ul>\r\n<li>System Center Operations Manager 2022</li>\r\n<li>System Center Operations Manager 2019</li>\r\n<li>System Center Operations Manager 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See the MP Guide for detailed instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54526",
+    "downloadPreload": true
+}

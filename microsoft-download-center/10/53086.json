@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Windows Embedded POSReady 2009 USB Boot system (KB3139398)",
+    "downloadDescription": "A security issue has been identified for Windows Embedded POSReady 2009 that could affect your system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB3139398-x86-Embedded-ENU.exe",
+            "url": "https://download.microsoft.com/download/8/a/2/8a207601-c05f-431b-958c-e6131c6fb5cd/WindowsXP-KB3139398-x86-Embedded-ENU.exe",
+            "size": "544464",
+            "version": "3139398",
+            "datePublished": "7/15/2024 4:19:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article. \r\nYou can help protect your system by installing this update from Microsoft.\r\n<br/>\r\nAfter you install this update, you may have to restart your system.\r\n<br/>\r\nThe regular (non-boot) USB version of this KB is available via the standard release channels. e.g. Windows Update, etc.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3139398",
+        "name": "KB3139398"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-033",
+        "name": "MS16-033"
+    },
+    "detailsSection_file_version": "3139398",
+    "detailsSection_file_name": [
+        "WindowsXP-KB3139398-x86-Embedded-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "531.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded POSReady 2009"
+    ],
+    "installInstructionSection": "Click Download and follow the instructions.",
+    "relatedResourcesSection": [
+        {
+            "title": "installing POSReady 2009 via USB Flash Drive",
+            "url": "https://msdn.microsoft.com/en-us/library/dd458849(v=winembedded.20).aspx"
+        },
+        {
+            "title": "posReady 2009 KB for Regular USB",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=53089"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "53086",
+    "downloadPreload": true
+}

@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 IoT Core for MinnowBoard MAX",
+    "downloadDescription": "This is the core OS image that powers Windows IoT platform on MinnowBoard MAX. Windows 10 IoT Core is the smallest version of the Windows 10 editions that leverages the Windows 10 common core architecture. This edition enables building low-cost devices with fewer resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IOT Core MBM.ISO",
+            "url": "https://download.microsoft.com/download/d/e/c/dec8e8bc-c870-4033-b92d-6a4aef5ed82d/IOT Core MBM.ISO",
+            "size": "554584064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:43:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is the core OS image that powers Windows IoT platform on MinnowBoard MAX. Windows 10 IoT Core is the smallest version of the Windows 10 editions that leverages the Windows 10 common core architecture. This edition enables building low-cost devices with fewer resources. Development for Windows 10 IoT Core leverages the Universal Windows Platform.\n\nLearn more about Windows 10 IoT Core <a href=\"http://go.microsoft.com/fwlink/?LinkID=619770\">here</a>.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IOT Core MBM.ISO"
+    ],
+    "detailsSection_file_size": [
+        "528.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating system\n\u2022 Windows 10 (Build 10140 or higher)\n\n Learn about other system requirements here.\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Note: Update your MinnowBoard MAX firmware before proceeding with installing Windows 10 IoT Core on MinnowBoard Max. Find the instructions to update the firmware <a href=\"http://go.microsoft.com/fwlink/?LinkID=618405\">here</a>.\n<ol>\n<li> Click the Download button on this page to start the download.</li>\n<li> Click Save to save this program to disk.</li>\n<li> Follow the rest of the instructions on the <a href=\"http://go.microsoft.com/fwlink/?LinkID=619772\">Setup MinnowBoard MAX page</a>.</li>\n</ol>\n",
+    "additionalInformationSection": "<a href=\"http://www.windowsondevices.com\">WindowsOnDevices.com</a>\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows 10 Insider Program",
+            "url": "https://insider.windows.com/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48233",
+    "downloadPreload": true
+}

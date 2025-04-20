@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 32 For Exchange 2010 SP3 (KB5000978)",
+    "downloadDescription": "Update Rollup 32 For Exchange 2010 SP3 (KB5000978)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2010-KB5000978-x64-en.msp",
+            "url": "https://download.microsoft.com/download/8/b/7/8b76e552-9c4e-44ca-aab1-cd413bb9ccfd/Exchange2010-KB5000978-x64-en.msp",
+            "size": "59686912",
+            "version": "14.03.0513.000",
+            "datePublished": "7/15/2024 5:02:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Update Rollup 32 for Exchange Server 2010 Service Pack 3 (SP3) resolves issues that were found in Exchange Server 2010 SP3 RU29 since the software was released. This update rollup is highly recommended for all Exchange Server 2010 SP3 customers.<br />\n<br />\nFor a list of changes that are included in this update rollup, see <a href=\"http://support.microsoft.com?kbid=4509410\">KB4509410</a>.\n<br />\n<br />\n<B>\nThis update rollup does not apply to Exchange Server 2010 Release To Manufacturing (RTM), Exchange Server 2010 Service Pack 1 (SP1) or Exchange Server 2010 Service Pack 2 (SP2).\n</B><br />\n<br />For a list of update rollups applicable to Exchange Server 2010 RTM , Exchange Server 2010 Service Pack 1 (SP1) or Exchange Server 2010 Service Pack 2 (SP2), refer to the Knowledge Base article <a href=\"http://support.microsoft.com?kbid=4503028\">KB4509410</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5000871",
+        "name": "5000871"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.03.0513.000",
+    "detailsSection_file_name": [
+        "Exchange2010-KB5000978-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "56.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Exchange Server 2010 SP3 System Requirements and Prerequisites</b><br />\nFor information about Exchange 2010 system requirements and prerequisites, see the following topics:\n<ul>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=194323\">Exchange 2010 System Requirements</a></li>\n<li><a href=\"http://go.microsoft.com/fwlink/?LinkId=194325\">Exchange 2010 Prerequisites</a></li>\n</ul>\n<br />\nActual requirements will vary based on system configuration and specific features installed. For more detailed system requirements, please refer to the Exchange Server 2010 <a href=\"http://go.microsoft.com/fwlink/?LinkId=135761\">Technical Documentation Library</a>.\nFor a list of Windows Server 2008 requirements, visit <a href=\"http://technet.microsoft.com/windowsserver/2008\">http://technet.microsoft.com/windowsserver/2008.</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows 7 Professional 64-bit"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button on this page to start the download.</LI>\n<LI>Do one of the following:</LI>\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102774",
+    "downloadPreload": true
+}

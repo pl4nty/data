@@ -1,0 +1,117 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2015 Documentation",
+    "downloadDescription": "Microsoft Dynamics GP 2015 Documentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WebClientInstallAdmin.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/WebClientInstallAdmin.pdf",
+            "size": "1832657",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrade.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/Upgrade.pdf",
+            "size": "520815",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TSInstallAdminGuide.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/TSInstallAdminGuide.pdf",
+            "size": "1073940",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SecurityPlanning.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/SecurityPlanning.pdf",
+            "size": "301244",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics GP_R2 WhatsNew.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/Microsoft Dynamics GP_R2 WhatsNew.pdf",
+            "size": "913009",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installation.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/Installation.pdf",
+            "size": "791331",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GPPowerShell.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/GPPowerShell.pdf",
+            "size": "289715",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BenefitsSelfService.pdf",
+            "url": "https://download.microsoft.com/download/b/d/b/bdb3db55-298b-464c-8d0b-6df1617bdb6a/BenefitsSelfService.pdf",
+            "size": "2987135",
+            "version": "1",
+            "datePublished": "7/15/2024 3:56:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This will be the location for the Dynamics GP 2015 documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "WebClientInstallAdmin.pdf",
+        "Upgrade.pdf",
+        "TSInstallAdminGuide.pdf",
+        "SecurityPlanning.pdf",
+        "Microsoft Dynamics GP_R2 WhatsNew.pdf",
+        "Installation.pdf",
+        "GPPowerShell.pdf",
+        "BenefitsSelfService.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB",
+        "508.6 KB",
+        "1.0 MB",
+        "294.2 KB",
+        "891.6 KB",
+        "772.8 KB",
+        "282.9 KB",
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45025",
+    "downloadPreload": true
+}

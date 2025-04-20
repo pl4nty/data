@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Network Equipment Shapes for Microsoft Visio",
+    "downloadDescription": "A set of 24 Microsoft Visio stencils containing manufacturer-specific network equipment shapes for rack and data center diagrams.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NetEquip.zip",
+            "url": "https://download.microsoft.com/download/5/b/9/5b968e14-203d-4373-af8f-0f030c86691b/NetEquip.zip",
+            "size": "40192610",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Create detailed rack and data center diagrams using this set of 2,000 shapes representing network equipment from 3Com, APC, Cisco, Dell, Hewlett-Packard, IBM, Nortel, Panduit, and Sun Microsystems. These shapes are exact replicas of the network devices and are drawn to scale with port-level details. Front and rear views are included for most devices.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "NetEquip.zip"
+    ],
+    "detailsSection_file_size": [
+        "38.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use these stencils, you must have Microsoft Visio 2003 (Standard or Professional) or a later version.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\n<ol>\n<li>Download the .zip file. </li>\n<li>Extract the stencil files (*.vss) from the .zip file to a folder on your computer. </li>\n</ol>\r\n<br/>\n<b>To access these shapes from Visio:</b> \n<br/>\n<ol>\n<li>Copy the stencil files to the \"My Shapes\" folder in your \"Documents\" or \"My Documents\" folder, which will be located on a path that looks similar to this: </li><br/>\r\nC:\\Documents and Settings\\yourname\\My Documents\\My Shapes<br/>\r\n<br/>\r\nor:<br/>\r\nC:\\Users\\yourname\\Documents\\My Shapes<br/>\r\n<br/>\r\nYou can place them in a folder inside of the My Shapes folder if desired.<br/>\r\n<br/>\r\n<li>In Visio 2003 or 2007, with a drawing open, go to the <b>File</b> menu, point to <b>Shapes</b>, and then point to <b>My Shapes</b>. In Visio 2010, click on <b>More Shapes</b> in the Shapes window, and then point to <b>My Shapes</b>. The stencils will be listed in the My Shapes menu. </li>\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4604",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Reporting Services Migration Tool",
+    "downloadDescription": "A tool that migrates reports and other artifacts from one report server to another report server. It can also be used as a backup and restore tool for Reporting Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MigrationTool.zip",
+            "url": "https://download.microsoft.com/download/5/d/0/5d07c627-1233-48ed-93d8-90ca033de08b/MigrationTool.zip",
+            "size": "356700",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:29:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<ul>\r\n  <li>You can use RSMigrationTool or RSMigrationUI to backup your native report server.</li>\r\n  <li>To restore or migrate the native server, run the Migration.ps1 from a PowerShell console.</li>\r\n  <li>Source and target server must be SQL Server Reporting Services 2008 R2 or later.</li>\r\n  <li>Source server</li>\r\n  <ul>\r\n    <li>Source server must be native mode using Windows authentication. (We are working on support for SharePoint integrated mode and other authentication schemes.)</li>\r\n    <li>Permissions and roles from source server are not backed up o Configuration in source server is not backed up.</li>\r\n    <li>Reports and other artifacts in deeply nested subfolders may not be backed up. This is due to Windows OS restriction on the maximum length for the full path of the backup files and folders. (We are working towards a solution.)</li>\r\n    <li>Linked reports are not support in SharePoint mode, hence not backed up.</li>\r\n    <li>Database connection to source server catalog is made using Windows Integrated credentials of the user running the tool.</li>\r\n  </ul>\r\n  <li>Target server</li>\r\n  <ul>\r\n    <li>Target server must be SharePoint integrated mode. (We are working on support for native mode.)</li>\r\n    <li>The web application must be using Windows classic authentication mode. (We are working on support for other authentication schemes.)</li>\r\n    <li>Target server must be correctly configured. Target document library and folder must be created. For SSRS 2012, service application must be created and configured.</li>\r\n    <li>The owner of Reporting artifacts after migration is set to the user who performed migration. (We are working towards a solution.)</li>\r\n    <li>Subscription owners are set after they are migrated. If the owner does not have CreateAlerts/ManagedAlerts permission, the operation will fail.</li>\r\n    <li>Report parts are not linked correctly to the Report. (We are working towards a solution.) o Database connection to target server catalog is made using Windows Integrated credentials of the user running the tool.</li>\r\n  </ul>\r\n</ul>\r\n\r\nFor a walkthrough of RSMigrationTool (command-line) and RSMigrationUE (GUI tool), list of content types migrated, and information about supported migration scenarios, see the following article.<br/><br/>\r\n<a href=\"http://msdn.microsoft.com/en-us/library/dn600370.aspx\">Migrating Content Between Report Servers</a><br/><br/>\r\n\r\nFor a sample Reporting Services RSS Script that copies content items from one SSRS report server to another, and supports both SharePoint mode and Native mode report servers, see the following article. The article also has a description of the sample that includes supported scenarios, required permissions, parameter descriptions, examples, and more. <br/><br/>\r\n<a href=\"http://msdn.microsoft.com/en-us/library/dn531017.aspx\">Sample Reporting Services rs.exe Script to Migrate Content between Report Servers</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MigrationTool.zip"
+    ],
+    "detailsSection_file_size": [
+        "348.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".Net framework 3.5 or above.<br/>\r\nSQL Server Reporting Services 2008 R2<br/>\r\nSQL Server Reporting Services 2012<br/>\r\nSQL Server Reporting Services 2014<br/><br/>\r\n\r\nReporting Services Native mode<br/>\r\nReporting Services SharePoint mode<br/>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "The tool comes in two flavors<br/><br/>\r\n1. Command-line tool (RSMigrationTool.exe):<br/>\r\n&nbsp;&nbsp;<b>RSMigrationTool.exe [-n &lt;native_report_server_url&gt;] -i &lt;native_report_server_instance&gt; [-h] -f &lt;migration_metadata_files_folder&gt; [-p &lt;password&gt;]</b><br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;-n Native report server url (e.g. http://&lt;server&gt;/reportserver). Optional if native instance name is specified. You should specify this option if WMI does not return the correct url.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;-i Name of the native report server instance. Migration tool will use WMI to connect to the remote instance. If the connection cannot be made, native report server url must be specified, and passwords and history snapshots will not be backed up.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;-h Report history will be exported. Please note that migrating report history requires direct modification to data in report server catalog and is not publicly supported. Backing up the catalog before migration and verifying correctness of the reports after migration are strongly recommended.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;-f A folder where the files are to be stored. The folder will be created if it doesn't exist.<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;-p Password that will be used to encrypt password in data source and subscription definitions. If this option is not specified, passwords will not be backed up. <br/><br/>\r\n2. GUI tool (RSMigrationUI.exe):<br/>\r\n&nbsp;&nbsp;You can either type in the parameters in the textboxes, or define your input in an xml file and click \"Load Configuration\". A sample configuration xml file is provided (MigrationSettingsSample.xml).<br/><br/>\r\n3. Either tool will generate a PowerShell script (Migration.ps1) and a set of files that represents a backup of your server. \r\n&nbsp;&nbsp;Usage of the restore script Migration.ps1:<br/>\r\n&nbsp;&nbsp;&nbsp;&nbsp;PS E:\\tmp\\DenaliMigration&gt; <b>.\\Migration.ps1 -TargetSiteUrl http://SharePointSite -Password &lt;SomePassword&gt; -TargetFolderUrl \"http://SharePointSite/Shared Documents\" -TargetCatalogConnectionString \"Data Source=&lt;RS service app catalog server&gt;;Initial Catalog=&lt;SharePoint app catalog&gt;;Integrated Security=True\"</b><br/><br/>\r\n4. Log files:<br/>\r\n<ul>\r\n  <li>Logs generated by the tool is located in the \u201cLogs\u201d folder under the same folder where the tool is located.</li>\r\n  <li>Logs generated by the PowerShell script is located in the \u201cLogs\u201d folder under the folder for migration files.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29560",
+    "downloadPreload": true
+}

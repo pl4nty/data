@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX Video Acceleration Specification of Off-Host VLD Mode for MPEG-4 Part 2 Video Decoding",
+    "downloadDescription": "Defines extensions to DirectX Video Acceleration (DXVA) to support variable-length decoding (VLD) modes for MPEG-4 part 2 video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DXVA_MPEG4pt2_VLD.pdf",
+            "url": "https://download.microsoft.com/download/7/c/c/7cc057c5-a0c9-4728-be5a-ce1c75a70b6c/DXVA_MPEG4pt2_VLD.pdf",
+            "size": "437072",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:47 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DXVA_MPEG4pt2_VLD.xps",
+            "url": "https://download.microsoft.com/download/7/c/c/7cc057c5-a0c9-4728-be5a-ce1c75a70b6c/DXVA_MPEG4pt2_VLD.xps",
+            "size": "637515",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Defines extensions to DirectX Video Acceleration (DXVA) to support variable-length decoding (VLD) modes for MPEG-4 part 2 video.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DXVA_MPEG4pt2_VLD.pdf",
+        "DXVA_MPEG4pt2_VLD.xps"
+    ],
+    "detailsSection_file_size": [
+        "426.8 KB",
+        "622.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21100",
+    "downloadPreload": true
+}

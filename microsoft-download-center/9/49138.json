@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "KB 3090034: Update to improve diagnostic tools in Visual Studio 2015",
+    "downloadDescription": "This is the download for KB3090034 to improve the reliability of the diagnostic tools in Visual Studio 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS2015-KB3090034.exe",
+            "url": "https://download.microsoft.com/download/a/a/5/aa5aff82-0347-4898-a741-ca4b4c924657/VS2015-KB3090034.exe",
+            "size": "3303712",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:06:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This is the download for KB3090034 to improve the reliability of the diagnostic tools in Visual Studio 2015.\n\nPlease see the KB article for more information about this update: <a href=\"https://support.microsoft.com/en-us/kb/3090034\">https://support.microsoft.com/en-us/kb/3090034</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "VS2015-KB3090034.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"https://www.visualstudio.com/en-us/downloads/visual-studio-2015-system-requirements-vs.aspx\">Visual Studio 2015 System Requirements</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To install later, choose the <b>Save</b> button. </li>\n</ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49138",
+    "downloadPreload": true
+}

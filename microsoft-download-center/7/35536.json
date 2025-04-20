@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "The Toolbox Controls Installer",
+    "downloadDescription": "This paper provides guidelines for control authors who want to install their controls in the Visual Studio Toolbox.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TCI_whitepaper.docx",
+            "url": "https://download.microsoft.com/download/8/3/6/836657bd-9ccb-4ed4-b9d2-fb769473b284/TCI_whitepaper.docx",
+            "size": "92078",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:32:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper provides guidelines for control authors who want to install their controls in the Visual Studio Toolbox.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TCI_whitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "89.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and read the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35536",
+    "downloadPreload": true
+}

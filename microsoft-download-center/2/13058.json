@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Breaking Changes between .NET Framework 4 Beta1 and Beta2 for Windows Communication (WCF) and Windows Workflow Foundation (WF)",
+    "downloadDescription": "This document covers the list of breaking changes between .NET 4.Beta 1 and Beta 2 for WCF & WF.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Beta1_To_Beta2_BreakingChanges.docx",
+            "url": "https://download.microsoft.com/download/9/8/a/98a754ff-fe38-4e62-a4fd-e1f8616ad793/Beta1_To_Beta2_BreakingChanges.docx",
+            "size": "52753",
+            "version": "4",
+            "datePublished": "7/15/2024 3:11:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document covers the list of breaking changes between .NET 4.Beta 1 and Beta 2 for WCF & WF.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "Beta1_To_Beta2_BreakingChanges.docx"
+    ],
+    "detailsSection_file_size": [
+        "51.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 4 Beta 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13058",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2016 Training Kit",
+    "downloadDescription": "The SQL Server 2016 Training Kit is a great resource for developers, trainers, consultants and evangelists who need to understand the key improvements introduced in SQL Server 2016. It contains a rich set of presentations, demos, hands-on labs, and videos that are perfect for your self-paced learning or for conducting your own training event and gain valuable insights into the new capabilities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2016 Training Kit.zip",
+            "url": "https://download.microsoft.com/download/7/9/6/796a7b9a-c80d-4f98-a06e-cd1d32f5c803/SQL Server 2016 Training Kit.zip",
+            "size": "54717099",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:34:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SQL Server 2016 Training Kit is a great resource for developers, trainers, consultants and evangelists who need to understand the key improvements introduced in SQL Server 2016. It contains a rich set of presentations, demos, hands-on labs, and videos that are perfect for your self-paced learning or for conducting your own training event and gain valuable insights into the new capabilities in SQL server 2016.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server 2016 Training Kit.zip"
+    ],
+    "detailsSection_file_size": [
+        "52.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2 SP1, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, \r\nSQL Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and extract the training kit package. Navigate to the specified folder and launch the training kit .html file to browse the content.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54089",
+    "downloadPreload": true
+}

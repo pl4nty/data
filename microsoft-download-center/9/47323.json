@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Orchestrator Migration Toolkit",
+    "downloadDescription": "A collection of tools for migrating integration packs, standard activities, and runbooks from System\u00a0Center 2012 \u2013 Orchestrator to Azure Automation\u00a0",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_System_Center_Orchestrator_Migration_Toolkit.exe",
+            "url": "https://download.microsoft.com/download/e/f/3/ef300670-aca8-4c47-95de-2b9e8f62e669/Microsoft_System_Center_Orchestrator_Migration_Toolkit.exe",
+            "size": "1414392",
+            "version": "Beta",
+            "datePublished": "7/15/2024 3:46:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Orchestrator Migration Toolkit consists of the following tools.<br /><br />\r\n\r\n<b>Integration Pack Converter</b><br />\r\nThis tool converts integration packs that were created using the Orchestrator Integration Toolkit to integration modules based on Windows PowerShell that can be imported into Azure Automation.  Using the tool\u2019s wizard, you can select the activities in the integration pack that will be converted to cmdlets in the integration module.  Placeholders are created for monitor activities that are not supported in Azure Automation.<br /><br />\r\n\r\n<b>Standard Activities module</b><br />\r\nIntegration module that contains all of the standard activities used in Orchestrator Runbooks that can be imported into Azure Automation.  This module must be installed in your environment prior to importing any runbook converted with the Runbook Converter.<br /><br />\r\n\r\n<b>Runbook Converter</b><br />\r\nThis tool converts Orchestrator runbooks into graphical runbooks (PowerShell based) that can be imported into Azure Automation.<br /><br />\r\n\r\nFor more information, please refer to the <a href=\"http://azure.microsoft.com/en-us/documentation/articles/automation-orchestrator-migration/\">documentation</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Beta",
+    "detailsSection_file_name": [
+        "Microsoft_System_Center_Orchestrator_Migration_Toolkit.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>RAM \u2013 minimum 1GB recommended 2GB</li>\r\n<li>Disk space minimum 200MB</li>\r\n<li>CPU Dual Core or better</li>\r\n<li>Windows Server 2012 R2</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard "
+    ],
+    "installInstructionSection": "Download the package and run the executable to extract the installation files for each tool.<br /><br />\r\n\r\n<b>Integration Pack Converter</b><br />\r\nRun IPConverterSetup.msi to start the Integration Pack Converter installation.<br /><br />\r\n\r\n<b>Standard Activities module</b><br />\r\nImport the module Microsoft.SystemCenter.Orchestrator.Activities.zip into your automation account.<br /><br />\r\n\r\n<b>Runbook Converter</b><br />\r\nRun RunbookConverterSetup.msi to start the Runbook Converter installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "47323",
+    "downloadPreload": true
+}

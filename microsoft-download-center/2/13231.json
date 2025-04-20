@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Virtual Server 2005 R2 Management Pack Guide",
+    "downloadDescription": "This guide helps you deploy and use the management pack for Virtual Server 2005 on Microsoft Operations Manager (MOM) 2005.The guide explains how to use the management pack to monitor physical computers running the Virtual Server service and the virtual machines that the service hosts, and it describes the reports that the management pack provides.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VSR2MomPackGuide.doc",
+            "url": "https://download.microsoft.com/download/d/0/b/d0b1805c-6c74-4d8d-9323-5b34a62eedf3/VSR2MomPackGuide.doc",
+            "size": "272384",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft\u00ae Virtual Server 2005 R2 Management Pack Guide describes the features and requirements of the Virtual Server 2005 Management Pack for Operations Manager (MOM) 2005 and provides deployment instructions.<br /><br />\nThe Virtual Server Management Pack monitors physical computers running the Virtual Server service and the virtual machines that the service hosts. The management pack also provides reports that help identify candidates for virtualization and track resource usage of virtual machines and hosts.<br /><br />\n<B> Note</B>    In Microsoft Operations Manager 2007 (OpsMgr), the Server Virtualization Management Pack incorporates the features and capabilities of both of the Server Virtualization Management Pack and the Virtual Machine Manager (VMM) Management Pack for MOM 2005. If you have deployed OpsMgr, use the Server Virtualization Management Pack to monitor hosts and virtual machines in Virtual Server even if you have not yet deployed System Center Virtual Machine Manager 2007 (VMM).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VSR2MomPackGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "266.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>Microsoft Word or Word Viewer</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13231",
+    "downloadPreload": true
+}

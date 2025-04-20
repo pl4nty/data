@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Random-Access Vector Graphics",
+    "downloadDescription": "This program demonstrates our work on random-access rendering anti-aliased vector graphics on the GPU. Last published: September 4, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ravg.zip",
+            "url": "https://download.microsoft.com/download/0/8/0/080890ba-5cb1-4fd7-840a-8225c55cd46f/ravg.zip",
+            "size": "6915492",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This program demonstrates our work on random-access rendering anti-aliased vector graphics on the GPU. We support a broad class of vector primitives, including multiple layers of semitransparent fills and strokes, with quadratic outlines and color gradients. Our approach is to create a coarse lattice in which each cell contains a variable-length encoding of the graphics primitives that overlap it. These cell-specialized encodings are interpreted at run time within a pixel shader. Advantages include coherent memory access and the ability to map vector graphics onto arbitrary surfaces or under arbitrary deformations. Most importantly, we perform both pre-filtering and supersampling within a single pixel-shader invocation, achieving inter-primitive anti-aliasing at no added memory-bandwidth cost.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "ravg.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52493",
+    "downloadPreload": true
+}

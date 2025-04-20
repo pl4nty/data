@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Team Explorer Everywhere 2010 with SP1",
+    "downloadDescription": "Eclipse plug-in and cross-platform command-line client for Visual Studio 2010 Team Foundation Server",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "InstallTEE.htm",
+            "url": "https://download.microsoft.com/download/c/b/a/cba6331c-08cc-4e68-80f8-1e8d2bd41d82/InstallTEE.htm",
+            "size": "32693",
+            "version": "10.1.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TFSEclipsePlugin-UpdateSiteArchive-10.1.0.2011121402.zip",
+            "url": "https://download.microsoft.com/download/c/b/a/cba6331c-08cc-4e68-80f8-1e8d2bd41d82/TFSEclipsePlugin-UpdateSiteArchive-10.1.0.2011121402.zip",
+            "size": "12905020",
+            "version": "10.1.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TEE-CLC-10.1.0.2011121402.zip",
+            "url": "https://download.microsoft.com/download/c/b/a/cba6331c-08cc-4e68-80f8-1e8d2bd41d82/TEE-CLC-10.1.0.2011121402.zip",
+            "size": "10261804",
+            "version": "10.1.0",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download Microsoft Visual Studio Team Explorer Everywhere 2010 with Service Pack 1, the Eclipse plug-in and cross-platform command-line client for Visual Studio 2010 Team Foundation Server.  See Instructions below for further details.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1.0",
+    "detailsSection_file_name": [
+        "InstallTEE.htm",
+        "TFSEclipsePlugin-UpdateSiteArchive-10.1.0.2011121402.zip",
+        "TEE-CLC-10.1.0.2011121402.zip"
+    ],
+    "detailsSection_file_size": [
+        "31.9 KB",
+        "12.3 MB",
+        "9.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Hardware:  1 GHz or faster processor.  1 GB RAM or more.  1 GB of available hard-disk space; a portion of this disk space will be freed after installation if the original download package is removed from the hard drive.<br />\r\n<br />\r\nOperating Systems:  Windows XP SP2 , Windows Vista, or Windows 7 (x86, x64), or Linux with GLIBC 2.3 to 2.11 (x86, x86_64, PowerPC), or Mac OS X 10.5 to 10.6 (PowerPC, Intel), or Solaris 8, 9, 10 (SPARC, x86, x86-64), or AIX 5.2 to 6.1 (POWER), or HP-UX 11i v1 to v3 (PA-RISC, Itanium).<br />\r\n<br />\r\nAny of the following IDEs:<br />\r\n-Eclipse 3.2 to 3.6 on Windows, Linux, Mac OS X, Solaris, AIX, or HP-UX.<br />\r\n-IBM Rational Application Developer 7.0 to 7.5 on Windows.<br />\r\n-IBM Rational Application Developer 7.0 to 7.5 on Linux.<br />\r\n-Additional IDEs based on Eclipse 3.2 to 3.6 are supported including Adobe Flex Builder 3  and Aptana Studio 2.0.<br />\r\n<br />\r\nAny of the following versions of the Java runtime:<br />\r\n- Sun Java\u2122 1.5 to 6, or IBM Java\u2122 1.5 to 6 on Microsoft Windows<br />\r\n- Apple Java\u2122 1.5 to 6 on Mac OS X<br />\r\n- Sun Java\u2122 1.5 to 6 on Linux or Solaris<br />\r\n- IBM Java\u2122 1.5 to 6 on Linux or AIX<br />\r\n- HP Java\u2122 1.5 to 6 on HP-UX<br />\r\n<br />\r\nRequires Visual Studio 2005 Team Foundation Server or Visual Studio 2008 Team Foundation Server or Visual Studio Team Foundation Server 2010.<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Solaris",
+        "Unix",
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download and follow the directions given in the file \"InstallTEE.htm\".<br />\r\n<br />\r\nThe file \"TFSEclipsePlugin-UpdateSiteArchive-10.1.0.2011121402.zip\" contains the Team Foundation Server plug-in for Eclipse.<br />\r\n<br />\r\nThe file \"TEE-CLC-10.1.0.2011121402.zip\" contains the Cross-platform command-line client for Team Foundation Server.<br />\r\n<br />",
+    "additionalInformationSection": "For additional information and discussion on Team Explorer Everywhere, and to provide us feedback on the product, please visit our MSDN forum (see Related Resources).",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn forum for Team Explorer Everywhere",
+            "url": "http://social.msdn.microsoft.com/Forums/en-US/tee"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "25125",
+    "downloadPreload": true
+}

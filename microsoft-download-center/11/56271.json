@@ -1,0 +1,146 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Identity Manager 2016 SP1 (KB4050936)",
+    "downloadDescription": "Update for Microsoft Identity Manager 2016 SP1 (KB4050936)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FIMSyncService_x64_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMSyncService_x64_KB4050936.msp",
+            "size": "16011264",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "LANGUAGE Packs.zip",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/LANGUAGE Packs.zip",
+            "size": "135399545",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMService_x64_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMService_x64_KB4050936.msp",
+            "size": "30584832",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMAddinsExtensions_x64_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMAddinsExtensions_x64_KB4050936.msp",
+            "size": "5033984",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCMClient_x86_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMCMClient_x86_KB4050936.msp",
+            "size": "5857280",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMAddinsExtensions_x86_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMAddinsExtensions_x86_KB4050936.msp",
+            "size": "2686976",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCM_x86_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMCM_x86_KB4050936.msp",
+            "size": "20905984",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCMBulkClient_x86_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMCMBulkClient_x86_KB4050936.msp",
+            "size": "5251072",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCM_x64_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMCM_x64_KB4050936.msp",
+            "size": "21073920",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "FIMCMClient_x64_KB4050936.msp",
+            "url": "https://download.microsoft.com/download/1/1/7/1177a25e-910e-49ab-b562-4abbe1852026/4.4.1749.0/FIMCMClient_x64_KB4050936.msp",
+            "size": "6152192",
+            "version": "4.4.1749.0",
+            "datePublished": "7/15/2024 4:46:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has released an update for Microsoft Identity Manager 2016 SP1 . This update provides the latest fixes and enhancements to Microsoft Identity Manager 2016 SP1 . Additionally, this update contains stability and performance improvements outlined in <a href=\"http://support.microsoft.com/?kbid=4050936\">Knowledge Base Article 4050936</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4050936",
+        "name": "KB4050936"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.4.1749.0",
+    "detailsSection_file_name": [
+        "FIMSyncService_x64_KB4050936.msp",
+        "LANGUAGE Packs.zip",
+        "FIMService_x64_KB4050936.msp",
+        "FIMAddinsExtensions_x64_KB4050936.msp",
+        "FIMCMClient_x86_KB4050936.msp",
+        "FIMAddinsExtensions_x86_KB4050936.msp",
+        "FIMCM_x86_KB4050936.msp",
+        "FIMCMBulkClient_x86_KB4050936.msp",
+        "FIMCM_x64_KB4050936.msp",
+        "FIMCMClient_x64_KB4050936.msp"
+    ],
+    "detailsSection_file_size": [
+        "15.3 MB",
+        "129.1 MB",
+        "29.2 MB",
+        "4.8 MB",
+        "5.6 MB",
+        "2.6 MB",
+        "19.9 MB",
+        "5.0 MB",
+        "20.1 MB",
+        "5.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Identity Manager 2016 SP1 4.4.1302.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Preform a backup of your data, and install the msp from an administrative command prompt. Visit the documentation site for more information.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Identity Manager Documentation",
+            "url": "https://docs.microsoft.com/en-us/microsoft-identity-manager/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56271",
+    "downloadPreload": true
+}

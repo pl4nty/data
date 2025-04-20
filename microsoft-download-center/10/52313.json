@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SCARF: A Segmental CRF Speech-Recognition Tool Kit",
+    "downloadDescription": "SCARF is a tool kit for recognizing speech with segmental conditional random fields. Last published: May 6, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCARF.tgz",
+            "url": "https://download.microsoft.com/download/a/7/1/a7139ba2-10c9-45c2-9766-db56caae4b73/SCARF.tgz",
+            "size": "6095074",
+            "version": "1.2.1",
+            "datePublished": "12/15/2023 4:19:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SCARF is a tool kit for recognizing speech with segmental conditional random fields. It supports a broad spectrum of research into segmental features and detection-based speech recognition, and it is intended to support core academic research in this area.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2.1",
+    "detailsSection_file_name": [
+        "SCARF.tgz"
+    ],
+    "detailsSection_file_size": [
+        "5.8 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52313",
+    "downloadPreload": true
+}

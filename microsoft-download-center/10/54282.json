@@ -1,0 +1,141 @@
+{
+    "error": "",
+    "downloadTitle": "Analytics Platform System 2016",
+    "downloadDescription": "Analytics Platform System 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sql2014-ssis-pdw-destination-adapter-x86-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/sql2014-ssis-pdw-destination-adapter-x86-aps2016.msi",
+            "size": "4255744",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2014-ssis-pdw-destination-adapter-x64-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/sql2014-ssis-pdw-destination-adapter-x64-aps2016.msi",
+            "size": "4022272",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2012-ssis-pdw-destination-adapter-x64-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/sql2012-ssis-pdw-destination-adapter-x64-aps2016.msi",
+            "size": "4022272",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dwloader-x64-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/dwloader-x64-aps2016.msi",
+            "size": "2486272",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msft-informatica9-connector-server64-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/msft-informatica9-connector-server64-aps2016.msi",
+            "size": "2724352",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2016-ssis-pdw-destination-adapter-x86-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/sql2016-ssis-pdw-destination-adapter-x86-aps2016.msi",
+            "size": "4255744",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2012-ssis-pdw-destination-adapter-x86-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/sql2012-ssis-pdw-destination-adapter-x86-aps2016.msi",
+            "size": "4255744",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "msft-informatica9-connector-client-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/msft-informatica9-connector-client-aps2016.msi",
+            "size": "1244160",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql2016-ssis-pdw-destination-adapter-x64-aps2016.msi",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/sql2016-ssis-pdw-destination-adapter-x64-aps2016.msi",
+            "size": "4022272",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "adventureworkspdw2012.zip",
+            "url": "https://download.microsoft.com/download/9/c/5/9c55aa63-8180-4b58-a35b-9ae6a356631c/adventureworkspdw2012.zip",
+            "size": "5364104",
+            "version": "13.0.8493.0",
+            "datePublished": "7/15/2024 4:49:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<a href=\"https://www.microsoft.com/server-cloud/products/analytics-platform-system/overview.aspx\">Microsoft Analytics Platform System (APS)</a>, a data platform designed for data warehousing and Big Data analytics, offers deep data integration, high-speed query processing, highly scalable storage, and simple maintenance for your end-to-end business intelligence solutions.  \r\n\r\nThe product documentation is online at <a href=\"https://msdn.microsoft.com/sql/analytics-platform-system\">Analytics Platform System product documentation</a>.\r\n\r\nUse these downloads to start designing your APS solutions.\r\n<ul>\r\n<li><b>AdventureWorksPDW2012</b> \u2013 a sample database that showcases distributed and replicated tables in a PDW database.</li>\r\n<li> <b>dwloader command</b>-line loading tool \u2013 a tool for loading data fast and in parallel into PDW.</li>\r\n<li> <b>SSIS destination adapters</b> \u2013 designed specifically for building and running Integration Services packages that load data into PDW.</li>\r\n<li><b>Informatica connectors</b> \u2013 designed for Informatica integration with PDW.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.8493.0",
+    "detailsSection_file_name": [
+        "sql2014-ssis-pdw-destination-adapter-x86-aps2016.msi",
+        "sql2014-ssis-pdw-destination-adapter-x64-aps2016.msi",
+        "sql2012-ssis-pdw-destination-adapter-x64-aps2016.msi",
+        "dwloader-x64-aps2016.msi",
+        "msft-informatica9-connector-server64-aps2016.msi",
+        "sql2016-ssis-pdw-destination-adapter-x86-aps2016.msi",
+        "sql2012-ssis-pdw-destination-adapter-x86-aps2016.msi",
+        "msft-informatica9-connector-client-aps2016.msi",
+        "sql2016-ssis-pdw-destination-adapter-x64-aps2016.msi",
+        "adventureworkspdw2012.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.1 MB",
+        "3.8 MB",
+        "3.8 MB",
+        "2.4 MB",
+        "2.6 MB",
+        "4.1 MB",
+        "4.1 MB",
+        "1.2 MB",
+        "3.8 MB",
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>dwloader requirements:</b>\r\n<ul>\r\n<li>64-bit operating systems only </li>\r\n<li> .NET Framework 4.0 or later</li>\r\n<li> dwloader is distributed only in the en-us (English) locale. </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>Product Documentation</b>\r\n<br />\r\nThe product documentation is available online at <a href=\"https://msdn.microsoft.com/sql/analytics-platform-system\">Analytics Platform System product documentation</a>. It is no longer distributed in CHM format.<br /><br />\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54282",
+    "downloadPreload": true
+}

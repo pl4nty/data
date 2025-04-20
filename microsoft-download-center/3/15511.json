@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Project 2010 Reference: Software Development Kit",
+    "downloadDescription": "The Microsoft Project 2010 SDK contains documentation, code samples, \"How to\" articles, and programming references to help customize and integrate the Project 2010 clients and Project Server 2010 with other applications for enterprise project management.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Project2010SDK.exe",
+            "url": "https://download.microsoft.com/download/a/3/b/a3bbd4c5-a4c8-489b-bbe1-c167aad808e2/Project2010SDK.exe",
+            "size": "91270520",
+            "version": "July 2011",
+            "datePublished": "7/15/2024 3:15:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Project 2010 SDK helps solution providers, value-added resellers, and other developers learn about new features in the Project 2010 client applications and the Project Server 2010 platform. The Project 2010 SDK shows how to extend and integrate Project Standard, Project Professional, and Project Server with other applications for enterprise project management (EPM). It features conceptual and \"How to\" articles, sample code, and programming references for the Project 2010 clients and Project Server 2010.<br /><br />The <b>Project2010SDK.exe</b> download is updated for Project 2010 Service Pack 1 (SP1). The SDK download includes two help files: <b>Project2010SDK.chm</b> (conceptual topics and managed code reference), and <b>Project2010_ReportingDB.chm</b> (the Reporting database schema reference). Additional references for reporting include the OLAP cube schema reference (<b>OLAPCubeSchemas2010.xlsx</b>) and a pivot table to help select fields in the Reporting database (<b>RDB_Field_Selector.xlsx</b>). The <b>WINPROJ.DEV.hxs</b> file is an update for VBA Help in Project Professional and Project Standard, along with instructions for installation. The SDK download also includes the default Project Guide files, the XML schema for Project 2010, and the XML schema for the <i>ChangeXML</i> parameter for Statusing methods in the Project Server Interface (PSI).<br /><br />To help in developing with the PSI, the SDK download includes source files, scripts, and instructions to compile and update a proxy assembly for both the Windows Communication Foundation (WCF) services interface and the ASMX (web services) interface of the PSI. In addition, updated XML files for Microsoft Intellisense include descriptions for most of the PSI types and members.<br /><br />Code samples in the SDK download include the following Microsoft Visual Studio solutions that relate to topics in the SDK: <ul><li><b>UpdateStatus_ManualTasks</b> shows how to use the <i>changeXml</i> parameter with the <b>UpdateStatus</b> method, for manually scheduled tasks and for other resources.</li><li><b>UsingQueueSystem</b> is a test application that helps to show how the Project Server queue works.</li><li><b>RibbonCustomization</b> shows how to make simple customizations to the ribbon in Project Web App.</li><li><b>ProjTool_P14</b> includes the complete source code for the ProjTool test application, updated for Project Server 2010.</li><li><b>EventHandlers</b> contains sample applications that trap the Custom Field Created post-event and the Project Creating pre-event.</li><li><b>CustomizeProjectCenter</b> modifies the ribbon for the Project Center page in Project Web App and shows how to access data and events in the JS Grid.</li><li><b>WCFImpersonationTest_VS9</b> shows how to use impersonation with the WCF interface of the PSI.</li><li><b>CreateProject4Department</b> and <b>CustomFieldsTest</b> show how to use the <b>QueueCreateProject</b>, <b>ReadCustomFields2</b>, and <b>ReadLookupTables</b> methods in the PSI.</li><li><b>ASMXLogon_MultiAuth</b> and <b>WCFLogon_MultiAuth</b> use multi-authentication to log on an ASMX-based and a WCF-based application.</li><li><b>ProjectGuideAddIn</b> uses the Microsoft Office developer tools in Visual Studio 2010 to create an add-in that displays the Project Guide.</li><li><b>RibbonAddIn</b> includes both Microsoft Visual C# solutions and Visual Basic solutions that add a custom tab and command to the Project 2010 ribbon.</li><li><b>WCFHelloProject</b> includes solutions that configure the WCF settings programmatically and by using an app.config file.</li><li><b>ListProjects</b> and <b>ListProject_Sorting</b> show how to use the <b>ListProjects</b> PSI extension in a Project Server Web Part that uses the JS Grid control.</li><li><b>BranchingWorkflow</b> creates a simple Project Server workflow.</li><li><b>SampleProposal2</b> duplicates the Sample Proposal workflow that is installed with Project Server 2010.</li><li><b>CustomActivityWorkflow</b> shows how to create a custom workflow activity and how to use the custom activity in a Project Server workflow.</li></ul>You can also view the <a href='http://msdn.microsoft.com/en-us/library/ms512767(office.14).aspx'>Project 2010 SDK</a> online in the MSDN Library.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July 2011",
+    "detailsSection_file_name": [
+        "Project2010SDK.exe"
+    ],
+    "detailsSection_file_size": [
+        "87.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download works with the following applications:</b><br/>\r\n<ul>\r\n<li>Microsoft Project Professional 2010</li>\r\n<li>Microsoft Project Standard 2010 (technologies related to Project Server do not apply).</li>\r\n<li>Microsoft Project Server 2010</li>\r\n<li>Microsoft Project Web App 2010. Requires Internet Explorer 7.0 or later for full \r\n    compatability. For more information, see <a href=\"http://blogs.msdn.com/b/project/archive/2011/05/16/project-2010-sp1-multi-browser-support.aspx\" target=\"_blank\">Project 2010 SP1 \u2013 Multi-Browser Support</a></li>\r\n<li>Microsoft SharePoint Server 2010 Enterprise</li>\r\n<li>Microsoft Excel 2010 or Microsoft Office Excel 2007. Optional, for use with Visual Reports in Project 2010.</li>\r\n<li>Microsoft Visual Studio 2010. Required for opening most of the Visual Studio \r\n    solutions in the SDK download. Required for developing Project Server Web Parts, workflows, and add-ins for Project 2010.</li>\r\n<li>Microsoft Visual Studio 2008 SP1 can be used to create solutions and then add other code files in the SDK download, except for Project Server Web Parts, workflows, and add-ins for Project 2010.</li>\r\n</ul></li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>To install this download:</b><br/><ol><li>Download the file by clicking the <b>Download</b> button near the top of this page and saving the file to your hard disk drive.</li><li>Back up any modifications that you made to previous Project 2010 SDK files.</li><li>Double-click the <b>Project2010SDK.exe</b> file on your hard disk drive to extract the <b>Project2010SDK.msi</b> file to the local directory.</li><li>Double-click the <b>Project2010SDK.msi</b> file to start the installation.</li><li>Follow the instructions on the screen to complete the installation. The default installation path is [Program Files]\\Microsoft SDKs\\Project 2010.<ul><li>To avoid issues with code access security, you can choose a different installation directory, for example, C:\\Project_SDK.</li></ul></li><li>To extract the sample projects, run <b>Samples\\Samples.exe</b> <u>as an administrator</u>. You can install the samples in the local directory or to another directory on your computer.</li></ol><b>To remove this download:</b><br/><br/>Uninstall <b>Microsoft Project 2010 SDK [EN-US]</b> by using <b>Programs and Features</b> in the Control Panel. To remove the download, delete the <b>Project2010SDK.exe</b> file and <b>Project2010SDK.msi</b> file.<br/><br/>To remove all the installed files, delete the Project 2010 SDK installation directory.",
+    "additionalInformationSection": "This package does not collect any personal information.",
+    "relatedResourcesSection": [
+        {
+            "title": "office 2010 Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/ee513173.aspx"
+        },
+        {
+            "title": "microsoft SharePoint 2010 Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/sharepoint/ee514561.aspx"
+        },
+        {
+            "title": "project 2010 Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/office/ee695847.aspx"
+        },
+        {
+            "title": "project 2010 SDK in the MSDN Library",
+            "url": "http://msdn.microsoft.com/en-us/library/ms512767(office.14).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15511",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Document Aboutness Dataset",
+    "downloadDescription": "The Microsoft Document Aboutness Dataset consists of randomly sampled URLs (from a HEAD and TAIL distribution), all entities recognized in those documents, and a relevance assessment for each entity/URL pair as to whether or not the entity is salient to the content of the URL. Last published: November 19, 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "r0.0.1.zip",
+            "url": "https://download.microsoft.com/download/0/e/9/0e9161e9-d307-482f-bc15-a40c32399514/r0.0.1.zip",
+            "size": "26081",
+            "version": "0.0.1",
+            "datePublished": "6/13/2024 12:55:36 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Document Aboutness Dataset consists of randomly sampled URLs (from a HEAD and TAIL distribution), all entities recognized in those documents, and a relevance assessment for each entity/URL pair as to whether or not the entity is salient to the content of the URL.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.0.1",
+    "detailsSection_file_name": [
+        "r0.0.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "25.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52295",
+    "downloadPreload": true
+}

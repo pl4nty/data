@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2022 RTM CU (KB5040939)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2022 RTM CU.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2022-KB5040939-x64.exe",
+            "url": "https://download.microsoft.com/download/f/a/2/fa2558e6-9cca-4f0d-aef0-8f4a082a664c/SQLServer2022-KB5040939-x64.exe",
+            "size": "463806984",
+            "version": "16.0.4131.2",
+            "datePublished": "7/9/2024 3:46:01 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/>\r\nYou can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\r\n\r\nMore information about the vulnerability can be found here: \r\n<a name=\"KB5040939\"></a><a href=\"https://support.microsoft.com/help/5040939\">KB5040939</a><br /><br />\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. \r\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5040939",
+        "name": "KB5040939"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4131.2",
+    "detailsSection_file_name": [
+        "SQLServer2022-KB5040939-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "442.3 MB"
+    ],
+    "detailsSection_file_date": "7/9/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2022 RTM instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2022 RTM Windows instances that have had a Cumulative Update applied.<br />After you install this update, you may have to restart your computer.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106151",
+    "downloadPreload": true
+}

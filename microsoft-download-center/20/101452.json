@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Configuration Manager Sample Power BI Reports",
+    "downloadDescription": "Sample Power BI reports for download and use with Configuration Manager current branch.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "ConfigMgrSamplePowerBIReports.exe",
+            "url": "https://download.microsoft.com/download/4/3/2/4329d530-e9b8-49a4-b8c8-7aa3b1aedb22/ConfigMgrSamplePowerBIReports.exe",
+            "size": "848264",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:24:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Starting in version 2002, you can integrate Power BI Report Server with Configuration Manager reporting. These are sample reports that you can install in Configuration Manager.  Reports included are:\r\n<br/>\r\n<ul>\r\n<li>Software Update Compliance Status.</li>\n<li>Software Update Deployment Status</li>\r\n<li>Client Status</li>\r\n<li>Content Status</li>\r\n<li>Microsoft Edge management</li>\r\n</ul>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 10/7/2021 - Update Release. Added new reports for client status, content status and Microsoft Edge management)</li>\r\n<li> 8/11/2020 - Update Release (bug fixes)</li>\r\n<li> 6/23/2020 - Initial Release version</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "ConfigMgrSamplePowerBIReports.exe"
+    ],
+    "detailsSection_file_size": [
+        "828.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Configuration Manager current branch (version 2002 or above) reporting services point with <a href=\"https://docs.microsoft.com/mem/configmgr/core/servers/manage/powerbi-report-server\">Power BI Report Server integrated</a>. </li>\r\n<li>A version of Microsoft Power BI Desktop (Optimized for Power BI Report Server) released between September 2019 and <a href=\"https://www.microsoft.com/download/details.aspx?id=55330\">January 2021</a>.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "For installation instructions see <a href=\"https://docs.microsoft.com/mem/configmgr/core/servers/manage/powerbi-sample-reports\">Install Power BI sample reports</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "documentation",
+            "url": "https://docs.microsoft.com/mem/configmgr/core/servers/manage/powerbi-sample-reports"
+        },
+        {
+            "title": "\u2022 Microsoft Power BI Desktop (Optimized for Power BI Report Server - September 2019)",
+            "url": "https://www.microsoft.com/download/details.aspx?id=57271"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101452",
+    "downloadPreload": true
+}

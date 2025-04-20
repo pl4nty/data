@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Rendering of Terrains Using Geometry Clipmaps",
+    "downloadDescription": "This is a demonstration of geometry clipmaps, a computer-graphics framework\r\nfor rendering terrains using a set of nested regular grids. Last published: March 31, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "gpugcm_20060328.msi",
+            "url": "https://download.microsoft.com/download/9/8/8/9889d622-79f2-41ce-aaf5-373b489dd6e4/gpugcm_20060328.msi",
+            "size": "15282688",
+            "version": "20060328",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a demonstration of geometry clipmaps, a computer-graphics framework\r\nfor rendering terrains using a set of nested regular grids. The terrain is\r\neither incrementally decompressed from a compact in-memory representation or\r\nsynthesized on the fly as auser navigates within an infinite landscape.\r\nThe demo requires a recent graphics card from NVIDIA (GeForce 6 series or\r\nlater) because it uses vertex textures.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20060328",
+    "detailsSection_file_name": [
+        "gpugcm_20060328.msi"
+    ],
+    "detailsSection_file_size": [
+        "14.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52336",
+    "downloadPreload": true
+}

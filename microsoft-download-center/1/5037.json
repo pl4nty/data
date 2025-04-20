@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Mark Miller on the Science of Good UI",
+    "downloadDescription": "Carl and Richard talk SOA with Jim Webber, who has a lot to say on the subject.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080501MMiller.zip",
+            "url": "https://download.microsoft.com/download/2/b/0/2b0160b6-f5e0-4bd4-a73a-5c427aa7a25c/20080501MMiller.zip",
+            "size": "44726237",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:12:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Dr. Jim Webber is the Global Architecture lead for ThoughtWorks where he works on dependable Web Services-based systems for clients worldwide. Jim was formerly a senior researcher with the UK E-Science programme where he developed strategies for aligning Grid computing with Web Services practices and architectural patterns for dependable Service-Oriented computing. Jim has extensive Web Services architecture and development experience as an architect with Arjuna Technologies and was the lead developer with Hewlett-Packard on the industry's first Web Services Transaction solution. Jim is an active speaker in the Web Services space and is co-author of the book \"Developing Enterprise Web Services - An Architect's Guide.\" Jim holds a B.Sc. in Computing Science and Ph.D. in Parallel Computing both from the University of Newcastle upon Tyne. His blog is located at http://jim.webber.name.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080501MMiller.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.7 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5037",
+    "downloadPreload": true
+}

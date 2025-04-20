@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2013 Architecture Poster",
+    "downloadDescription": "Technical Architecture of Exchange Server 2013",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Ex2013Architecture.pdf",
+            "url": "https://download.microsoft.com/download/5/8/a/58a9842a-d30e-48f1-a282-9d68d012b737/Ex2013Architecture.pdf",
+            "size": "493218",
+            "version": "June 2013",
+            "datePublished": "7/15/2024 3:33:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This PDF poster illustrates the technical architecture of Exchange Server 2013",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June 2013",
+    "detailsSection_file_name": [
+        "Ex2013Architecture.pdf"
+    ],
+    "detailsSection_file_size": [
+        "481.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requires PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the PDF file and open on any system that supports PDF format",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39102",
+    "downloadPreload": true
+}

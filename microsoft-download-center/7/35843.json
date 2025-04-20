@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "Deploying highly available and secure cloud solutions",
+    "downloadDescription": "A whitepaper providing examples for deploying robust cloud solutions to maintain highly available and secure client connections.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Deploying Highly Available and Secure Cloud Solutions.pdf",
+            "url": "https://download.microsoft.com/download/8/4/5/845acdaf-0552-4590-920d-066c194e09fa/Deploying Highly Available and Secure Cloud Solutions.pdf",
+            "size": "778536",
+            "version": "001",
+            "datePublished": "7/15/2024 3:11:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This paper showcases examples for deploying robust cloud solutions to maintain highly available and secure client connections. In addition, it uses real-world examples to discuss scalability issues. The goal of this paper is to demonstrate techniques that mitigate the impact of failures, provide highly available services, and create an optimal overall user experience.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "001",
+    "detailsSection_file_name": [
+        "Deploying Highly Available and Secure Cloud Solutions.pdf"
+    ],
+    "detailsSection_file_size": [
+        "760.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [
+        {
+            "title": "an Introduction to Designing Reliable Cloud Services",
+            "url": "http://aka.ms/ryaqlq"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35843",
+    "downloadPreload": true
+}

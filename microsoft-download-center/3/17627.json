@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "The (3D) Sound of Success: X3DAudio and Sound Positioning",
+    "downloadDescription": "Presentation from Gamefest 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "The_3D_Sound_of_Success_X3DAudio_and_Sound_Positioning_US.zip",
+            "url": "https://download.microsoft.com/download/8/0/e/80ea9add-a2c0-49c7-a871-047f80383289/The_3D_Sound_of_Success_X3DAudio_and_Sound_Positioning_US.zip",
+            "size": "7320699",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "XAudio 2 and XACT both abstract their notions of 3D into a separate math library\u2014X3DAudio. This library provides tremendous flexibility for how titles implement 3D, with support for multipoint emitters and multichannel sound sources, independent listener and emitter objects, and transparent calculations that can be utilized, replaced, or enhanced at will by the title. This talk offers a sampling of X3DAudio functionality, with demonstrations of various techniques for making soundscapes immersive and dynamic.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "The_3D_Sound_of_Success_X3DAudio_and_Sound_Positioning_US.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Powerpoint, WMA Audio",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Powerpoint presentation and WMA audio",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17627",
+    "downloadPreload": true
+}

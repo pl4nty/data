@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Adapter Pack 2013 CU5",
+    "downloadDescription": "Microsoft BizTalk Adapter Pack 2013 CU5",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BAP2013-KB4036192-ENU.exe",
+            "url": "https://download.microsoft.com/download/d/3/b/d3b4d21f-174f-4387-aab3-16256e52b954/BAP2013-KB4036192-ENU.exe",
+            "size": "3911184",
+            "version": "3.5.7433.2",
+            "datePublished": "7/15/2024 4:35:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Adapter Pack 2013 CU5",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.7433.2",
+    "detailsSection_file_name": [
+        "BAP2013-KB4036192-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7, Windows 8, Windows Server 2008 R2, Windows Server 2012, SQL Server 2008 R2 or SQL Server 2012</li>\r\n<li>Microsoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)</li>\r\n<li>Microsoft Visual Studio 2012</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55766",
+    "downloadPreload": true
+}

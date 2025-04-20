@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Country-specific Update for Germany",
+    "downloadDescription": "This white paper describes the country-specific updates that are released for Germany in Cumulative Update 5 (CU\u20135) for Microsoft Dynamics AX 2012. See Microsoft Knowledge Base article 2828929 for hotfix download information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific updates for Germany_AX2012.pdf",
+            "url": "https://download.microsoft.com/download/0/4/3/04333bf8-7597-47f2-b68a-d176a8467749/Country-specific updates for Germany_AX2012.pdf",
+            "size": "391461",
+            "version": "2012",
+            "datePublished": "6/13/2024 12:16:22 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes how to calculate the depreciation for additional acquisitions in Microsoft Dynamics AX 2012 after you have installed the hotfix that is included in KB2750868. The Microsoft Feature Reference number for this country-specific update is DE - 00002. <br /> <br />\r\nThis white paper also describes how to generate the EU sales list as an ELMA5 text file in Microsoft Dynamics AX 2012 after you have installed the hotfix that is included in KB2780521. The Microsoft Feature Reference number for this country-specific update is DE - 00009.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country-specific updates for Germany_AX2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "382.3 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38801",
+    "downloadPreload": true
+}

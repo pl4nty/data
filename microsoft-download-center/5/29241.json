@@ -1,0 +1,308 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Update Package 1 for Microsoft AppFabric 1.1 for Windows Server",
+    "downloadDescription": "This is a cumulative update package available for Microsoft AppFabric 1.1 for Windows Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-ITA.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-ITA.exe",
+            "size": "1394864",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-CHT.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-CHT.exe",
+            "size": "1393840",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-JPN.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-JPN.exe",
+            "size": "1393840",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-PBT.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-PBT.exe",
+            "size": "1394864",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-ITA.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-ITA.exe",
+            "size": "1392816",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-ENU.exe",
+            "size": "1399984",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-RUS.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-RUS.exe",
+            "size": "1394864",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-CHS.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-CHS.exe",
+            "size": "1393328",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-KOR.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-KOR.exe",
+            "size": "1394864",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-PBT.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-PBT.exe",
+            "size": "1394864",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-FRA.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-FRA.exe",
+            "size": "1397936",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-FRA.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-FRA.exe",
+            "size": "1398448",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-CHS.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-CHS.exe",
+            "size": "1393840",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-ESN.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-ESN.exe",
+            "size": "1396400",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-DEU.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-DEU.exe",
+            "size": "1395888",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-RUS.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-RUS.exe",
+            "size": "1395376",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-KOR.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-KOR.exe",
+            "size": "1394864",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-ENU.exe",
+            "size": "1397424",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x86-ESN.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x86-ESN.exe",
+            "size": "1397424",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-CHT.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-CHT.exe",
+            "size": "1396912",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-JPN.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-JPN.exe",
+            "size": "1396912",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AppFabric1.1-RTM-KB2671763-x64-DEU.exe",
+            "url": "https://download.microsoft.com/download/7/b/5/7b51d8d1-20fd-4bf0-87c7-4714f5a1c313/AppFabric1.1-RTM-KB2671763-x64-DEU.exe",
+            "size": "1395888",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<ul>This is a cumulative update package available for Microsoft AppFabric 1.1 for Windows Server. For more information about this update, see <a href=\"http://support.microsoft.com/kb/2671763\">http://support.microsoft.com/kb/2671763</a>.</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "AppFabric1.1-RTM-KB2671763-x86-ITA.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-CHT.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-JPN.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-PBT.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-ITA.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-ENU.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-RUS.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-CHS.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-KOR.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-PBT.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-FRA.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-FRA.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-CHS.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-ESN.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-DEU.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-RUS.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-KOR.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-ENU.exe",
+        "AppFabric1.1-RTM-KB2671763-x86-ESN.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-CHT.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-JPN.exe",
+        "AppFabric1.1-RTM-KB2671763-x64-DEU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows 7</li></ul>\r\n<ul><li>Windows Server 2008 R2</li></ul>\r\n<ul><li>Windows Server 2008 <a href=\"http://go.microsoft.com/fwlink/?LinkId=192993\">Service Pack 2</a></li></ul>\r\n<ul><li>Windows Vista <a href=\"http://go.microsoft.com/fwlink/?LinkId=192994\">Service Pack 2</a></li></ul>\r\n<br></br>\r\n<ul>Note that you must first install Microsoft AppFabric 1.1 for Windows Server before applying this update.</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul>Please select a download file that matches your language and architecture.</ul>\r\n<ul>\r\n<ul><li>Chinese - China</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-CHS.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-CHS.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Chinese - Taiwan</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-CHT.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-CHT.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>English</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-ENU.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-ENU.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>French</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-FRA.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-FRA.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>German</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-DEU.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-DEU.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Italian</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-ITA.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-ITA.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Japanese</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-JPN.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-JPN.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Korean</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-KOR.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-KOR.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Portuguese - Brazil</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-PBT.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-PBT.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Russian</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-RUS.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-RUS.exe</b></li></ul>\r\n</ul>\r\n\r\n<ul><li>Spanish - Spain</li>\r\n<ul><li>x86: <b>AppFabric1.1-RTM-KB2671763-x86-ESN.exe</b></li></ul>\r\n<ul><li>x64: <b>AppFabric1.1-RTM-KB2671763-x64-ESN.exe</b></li></ul>\r\n</ul>\r\n</ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft AppFabric 1.1 for Windows Server",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=256625bc-5f00-495c-a04f-fd88376757fd"
+        },
+        {
+            "title": "update Details (KB2671763)",
+            "url": "http://support.microsoft.com/kb/2671763"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29241",
+    "downloadPreload": true
+}

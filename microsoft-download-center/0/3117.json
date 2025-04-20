@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Ted Neward and Joel Pobar on Rotor 2.0",
+    "downloadDescription": "Ted Neward and Joel Pobar talk about Rotor, the open source .NET Framework reference implementation. Ted and Joel have written a book on Rotor 2.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080717NewardPobar.zip",
+            "url": "https://download.microsoft.com/download/a/c/e/aceebb89-e4aa-403a-9e09-d03e94320ba1/20080717NewardPobar.zip",
+            "size": "41632408",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Ted Neward is an independent consultant specializing in high-scale enterprise systems, working with clients ranging in size from Fortune 500 corporations to small 10-person shops. He is an authority in Java and .NET technologies, particularly in the areas of Java/.NET integration (both in-process and via integration tools like Web services), back-end enterprise software systems, and virtual machine/execution engine plumbing. <br />\n<br />\nJoel Pobar is a Program Manager in the Common Language Runtime (CLR) team. He shares his time between late-bound dynamic CLR features (Reflection, Lightweight Code Generation, Code Dom, Delegates), the Shared Source CLI (Rotor) program, Generics and Dynamic languages. He is active in the .NET community, spending his spare time writing blog entries and articles. His prior job experience includes: research positions at the Queensland University of Technology (QUT) Programming Languages and Systems Research Center delving into webservices and compiler technologies, consulting and application development related operations with local technology companies, and systems and network engineering at various Australian Internet Service Providers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080717NewardPobar.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3117",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 3 for System Center 2016 Service Manager",
+    "downloadDescription": "Update Rollup 3 for System Center 2016 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SCSM2016_CU_KB4019979_amd64_7.5.7487.64.exe",
+            "url": "https://download.microsoft.com/download/0/0/3/003e35ff-f6f1-4bdc-a82d-fa315e466e54/SCSM2016_CU_KB4019979_amd64_7.5.7487.64.exe",
+            "size": "46144264",
+            "version": "7.5.7487.64",
+            "datePublished": "7/15/2024 4:36:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n  <br />\r\nThis article describes the bug fixes that are included in this Update Rollup.<br />\r\n  <br />\r\n<b><u>Issues that are fixed in this Update Rollup-</u></b><br />\r\n <ul>\r\n<li>Service Manager 2016 now supports Microsoft SQL Server 2016 SP1</li>\r\n<li>System Center Configuration Manager 1706 is now supported for Configuration Manager Connectors in Service Manager</li>\r\n<li>Extending a class and adding a new property with a default value causes the Active Directory (AD) and System Center Configuration Manager (SCCM) connectors to create incorrect relationships for the extended class objects.</li>\r\n<li>File extension of an attachment uploaded from the self service portal changes when viewing it from the Service Manager console.</li>\r\n<li>Submitting a Request Offering fails in the Self Service Portal, if the description form element contains \u201c&lt\u201d or \u201c&gt\u201d characters.</li>\r\n<li>Self Service Portal fails to honor the attachment file size restriction specified from Service Manager console settings.</li>\r\n<li>The Request Offering page in Self Service Portal fails to load if that Request Offering contains a list form element with ServiceRequestSupportGroupEnum enumeration list.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.7487.64",
+    "detailsSection_file_name": [
+        "SCSM2016_CU_KB4019979_amd64_7.5.7487.64.exe"
+    ],
+    "detailsSection_file_size": [
+        "44.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "System Center Service Manager 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4019979\">KB4019979</a> for detailed installation instructions.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55260",
+    "downloadPreload": true
+}

@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Offers",
+    "downloadDescription": "Offers",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftCashbackTerms.pdf",
+            "url": "https://download.microsoft.com/download/3/6/8/368403fe-693d-4722-b1eb-cb9f9716fc5c/MicrosoftCashbackTerms.pdf",
+            "size": "312534",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Office 2010 Brochure.pdf",
+            "url": "https://download.microsoft.com/download/3/6/8/368403fe-693d-4722-b1eb-cb9f9716fc5c/Microsoft Office 2010 Brochure.pdf",
+            "size": "1609003",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ne-np",
+            "name": "Nepali"
+        }
+    ],
+    "detailsSection": "Offers",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "MicrosoftCashbackTerms.pdf",
+        "Microsoft Office 2010 Brochure.pdf"
+    ],
+    "detailsSection_file_size": [
+        "305.2 KB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Offers",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Offers",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4940",
+    "downloadPreload": true
+}

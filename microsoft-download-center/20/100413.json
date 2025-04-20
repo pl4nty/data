@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure Kinect SDK 1.3.0",
+    "downloadDescription": "Azure Kinect SDK is a user mode SDK to read data from your Azure Kinect DK device.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure Kinect SDK 1.3.0.exe",
+            "url": "https://download.microsoft.com/download/e/6/6/e66482b2-b6c1-4e34-bfee-95294163fc40/Azure Kinect SDK 1.3.0.exe",
+            "size": "24042496",
+            "version": "1.3.0",
+            "datePublished": "7/15/2024 4:28:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Kinect SDK is a user mode SDK to read data from your Azure Kinect DK device.<br />\r\nFor more information see <a href=\"https://Azure.com/Kinect\">https://Azure.com/Kinect</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3.0",
+    "detailsSection_file_name": [
+        "Azure Kinect SDK 1.3.0.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Sensor SDK is available for the Windows API (Win32) for native C/C++ Windows applications and is not currently available to UWP applications. Azure Kinect DK is not supported for Windows 10 in S mode.<br />\r\nFor more information see <a href=\"https://Azure.com/Kinect\">https://Azure.com/Kinect</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Run the installer. More details are available at <a href=\"https://aka.ms/kinectdocs\">https://aka.ms/kinectdocs</a>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100413",
+    "downloadPreload": true
+}

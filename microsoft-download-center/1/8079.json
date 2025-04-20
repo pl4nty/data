@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Mobile QQ Messenger Client for Windows Embedded CE 6.0 R3",
+    "downloadDescription": "Mobile QQ is a 3rd party component instant messenger client for Windows Embedded CE 6.0 R3. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "QQ.zip",
+            "url": "https://download.microsoft.com/download/7/4/5/745357c3-f4e1-4770-b000-d088d99cb0b6/QQ.zip",
+            "size": "1708822",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\nThis instant messenger client, customized for Windows Embedded CE 6.0 R3 devices, enables customers to stay connected through the popular Chinese Instant Messaging service.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "QQ.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Vista, Windows 2000 Service Pack 4, Windows XP Service Pack 3\r\n<br />\r\n<br />\r\n<br />\r\n<b>     \u2022 Hardware requirements: </b>\r\n<br />\r\n<br />\r\n     o      PC with 933 MHz or faster processor. 2 GHz recommended<br />\r\n     o      512 MB of RAM; 1GB recommended<br />\r\n     o      18 GB of available space on installation drive<br />\r\n     o      1 GB of available space on system drive<br />\r\n     o      DVD-ROM drive<br />\r\n     o      Monitor that supports 1024 x 768 screen resolution with 16-bit color<br />\r\n<br />\r\n<br />\r\n<b>     \u2022 Required Software: </b>\r\n<br />\r\n<br />\r\n     o      Windows Embedded CE 6.0<br />\r\n     o      Visual Studio 2005 (except Express)<br />\r\n     o      <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=bb4a75ab-e2d4-4c96-b39d-37baf6b5b1dc&DisplayLang=en\">Visual Studio 2005 Service Pack 1</a><br />\r\n     o      <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=90e2942d-3ad1-4873-a2ee-4acc0aace5b6\">Visual Studio 2005 Service Pack 1 Update for Windows Vista</a> (if applicable)<br />\r\n     o      <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=bf0dc0e3-8575-4860-a8e3-290adf242678&DisplayLang=en\">Windows Embedded CE 6.0 SP1</a> (required if PB 6.0 Tools have been installed)<br/>\r\n     o      <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=f41fc7c1-f0f4-4fd6-9366-b61e0ab59565&displaylang=en\">Windows Embedded CE 6.0 R2</a><br/>  \r\n     o      <a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=bc247d88-ddb6-4d4a-a595-8eee3556fe46\">Windows Embedded CE 6.0 R3</a><br/> \r\n<br />\r\n<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded CE"
+    ],
+    "installInstructionSection": "Click the file you want to download and then do one of the following:\r\n<br />\n<br />\r\n     1. To start the installation immediately, click <b>Open</b> or <b>Run</b> now. \r\n<br />\r\n     2. To save the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.\r\n<br />\r\n     3. Uncompress .zip file\r\n<br />\r\n     4. Run setup.exe\n<br />\n",
+    "additionalInformationSection": "<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=7e286847-6e06-4a0c-8cac-ca7d4c09cb56\">Windows Embedded CE 6.0 Evaluation Edition</a>\r\n<br />\r\n<br />\r\n<a href=\"http://download.microsoft.com/download/2/7/9/2798d28c-72b3-4231-a996-d9a7f1d56166/Blend_Trial_en.exe\">Microsoft Expression Blend 2</a> \r\n<br />\r\n<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=32d56e70-76f7-4c4b-866b-c8baf392bd5f\">Viewers 97, 2000, 2003, XP & 2007 for Windows Embedded CE 6.0 R3</a>\r\n<br />\r\n<br />\r\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=d0acb735-fe7f-4885-ab50-840e8979a287\">Monotype iType font engine for Windows Embedded CE 6.0  R2</a>\r\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "msdn Windows Embedded Web Site",
+            "url": "http://msdn.microsoft.com/en-us/windowsembedded/default.aspx"
+        },
+        {
+            "title": "windows Embedded CE",
+            "url": "http://www.microsoft.com/windowsce"
+        },
+        {
+            "title": "windows Embedded Web Site",
+            "url": "http://www.microsoft.com/windowsembedded"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8079",
+    "downloadPreload": true
+}

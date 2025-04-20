@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Important Update for SQL Server 2016 SP1 Reporting Services (KB3207512)",
+    "downloadDescription": "This update refreshes the Microsoft SQL Server 2016 SP1 Reporting Service, which is an optional feature in SQL Server 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016-KB3207512-x64.exe",
+            "url": "https://download.microsoft.com/download/8/4/f/84f6571d-8763-4446-9148-75e4bda103cc/SQL16SP1GDR/x64/SQLServer2016-KB3207512-x64.exe",
+            "size": "546157208",
+            "version": "13.0.4199.0",
+            "datePublished": "7/15/2024 4:40:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "\n      \tTwo issues were introduced in SQL Server 2016 SP1 that are resolved with this important update: 1) When Reporting Services is set to work in https://, a benign non-secure content warning may be displayed, and 2) in certain scenarios the Print button may no longer be functional.\n      After you install this item, you may have to restart your computer.\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.4199.0",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB3207512-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "520.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 SP1 instances with the Reporting Services feature installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "kB3207512",
+            "url": "https://support.microsoft.com/en-us/kb/3207512"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54294",
+    "downloadPreload": true
+}

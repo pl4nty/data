@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "WMI Code Creator v1.0",
+    "downloadDescription": "The WMI Code Creator tool allows you to generate VBScript, C#, and VB .NET code that uses WMI to complete a management task such as querying for management data, executing a method from a WMI class, or receiving event notifications using WMI.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WMICodeCreator.zip",
+            "url": "https://download.microsoft.com/download/0/c/a/0ca7691c-6335-4143-8f9f-6708969f8212/WMICodeCreator.zip",
+            "size": "124290",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The WMI Code Creator tool generates code that uses WMI to obtain management information or perform management tasks.  You can use the tool to learn how to manage computers using WMI scripting and WMI .NET.  The tool generates code that runs on the local computer, a remote computer, or a group of remote computers based on your selection from the Target Computer menu on the tool.  You can also execute the generated code directly from the tool.<br />\n<br />\nThe tool is meant to help IT Professionals quickly create management scripts and to help developers learn WMI scripting and WMI .NET.  The tool helps take the complexity out of writing code that uses WMI and helps developers and IT Professionals understand how powerful and useful WMI can be for managing computers.<br />\n <br />\nUsing the tool, you can query for management information such as the name and version of an operating system, how much free disk space is on a hard drive, or the state of a service.  You can also use the tool to execute a method from a WMI class to perform a management task.  For example, you can create code that executes the Create method of the Win32_Process class to create a new process such as Notepad or another executable. The tool also allows you to generate code to receive event notifications using WMI.  For example, you can select to receive an event every time a process is started or stopped, or when a computer shuts down.<br />\n<br />\nThe tool also allows you to browse through the available WMI namespaces and classes on the local computer to find their descriptions, properties, methods, and qualifiers.<br />\n<br />\nThe code that creates the tool is also included in the download.  The tool was created using WMI .NET, and the code for the tool can help developers understand how WMI .NET is used to create applications and manage information.  Be sure to read the end-user license agreement that is included in the download.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WMICodeCreator.zip"
+    ],
+    "detailsSection_file_size": [
+        "121.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 1.1 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Home Edition ",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "After downloading the .zip file, extract the contents from the .zip file into a folder of your choice.  Read the end-user license agreement (EULA_WMI_CODE_CREATOR.rtf) and then double-click the WMICodeCreator.exe file to start the tool.  There is a help menu on the tool to help you navigate the user interface of the tool.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Management Instrumentation SDK",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wmisdk/wmi/wmi_start_page.asp"
+        },
+        {
+            "title": "microsoft .NET Framework Version 1.1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=262d25e3-f589-4842-8157-034d1e7cf3a3&DisplayLang=en"
+        },
+        {
+            "title": "scripting Tools and Utilities",
+            "url": "http://www.microsoft.com/technet/scriptcenter/createit.mspx"
+        },
+        {
+            "title": "microsoft TechNet Script Center",
+            "url": "http://www.microsoft.com/technet/scriptcenter/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8572",
+    "downloadPreload": true
+}

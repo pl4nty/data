@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Securing the Future of AI and ML at Microsoft",
+    "downloadDescription": "This document presents some early thinking on new security engineering challenges specific to Artificial Intelligence and Machine Learning while sharing some of Microsoft\u2019s security lessons-learned from designing products/services built on these technologies.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Securing the Future of AI and ML at Microsoft.docx",
+            "url": "https://download.microsoft.com/download/e/9/b/e9b66fe2-ac17-40ef-8466-279a9289cc55/Securing the Future of AI and ML at Microsoft.docx",
+            "size": "65326",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Artificial Intelligence (AI) and Machine Learning (ML) are already making a big impact on how people work, socialize, and live their lives.  As consumption of products and services built around AI/ML increases, specialized actions must be undertaken to safeguard not only your customers and their data, but also to protect your AI and algorithms from abuse, trolling and extraction.  This document shares some of Microsoft\u2019s security lessons-learned from designing products and operating online services built on AI.  While it is difficult to predict how this area will unfold, we have concluded that there are actionable issues to address now.  Moreover, we found that there are strategic problems that the tech industry must get ahead of to insure the long-term safety of customers and security of their data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Securing the Future of AI and ML at Microsoft.docx"
+    ],
+    "detailsSection_file_size": [
+        "63.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57597",
+    "downloadPreload": true
+}

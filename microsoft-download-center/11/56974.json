@@ -1,0 +1,163 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365, version 9.0 Email Router (deprecated and no longer supported)",
+    "downloadDescription": "The Dynamics 365 Email Router is an interface between Dynamics 365 for Customer Engagement and an email system. The Email Router was deprecated on July 17, 2018 and it will no longer function starting April 12, 2021.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM9.0-Router-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/b/1/9/b190b3da-fcee-4f04-abfd-45bffa81f0f0/CRM9.0-Router-ENU-i386.exe",
+            "size": "26246744",
+            "version": "9.00.0002.0426",
+            "datePublished": "7/15/2024 3:07:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CRM9.0-Router-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/1/9/b190b3da-fcee-4f04-abfd-45bffa81f0f0/CRM9.0-Router-ENU-amd64.exe",
+            "size": "28032976",
+            "version": "9.00.0002.0426",
+            "datePublished": "7/15/2024 3:07:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "<b>Important:</b> The Email Router was deprecated on July 17, 2018 and it will no longer function starting April 12, 2021. Although the Email Router might still have worked with Dynamics 365 Customer Engagement (on-premises), this configuration is no longer supported. All email routing functionality should be migrated to use server-side synchronization. For information on migrating email routing functionality to use the server-side synchronization feature, go to: <a href=\"https://docs.microsoft.com/previous-versions/dynamicscrm-2016/administering-dynamics-365/dn832114(v=crm.8)\">Migrate settings from the Email Router to server-side synchronization</a>. <br/><br/>\r\n\r\nThe Dynamics 365 Email Router is an interface between the Dynamics 365 for Customer Engagement system and one or more Exchange servers or POP3 servers for incoming email, and one or more SMTP or Exchange servers for outgoing email. Email messages come into the Dynamics 365 for Customer Engagement system through the Email Router.<br/><br/>\r\n\r\nThe three main components that can be installed during Email Router Setup are as follows:\r\n<ul><li>Dynamics 365 Email Router Service </li>\r\n<li>Dynamics 365 Email Configuration Manager</li>\r\n<li>Dynamics 365 Email Rule Deployment Wizard </li></ul>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.0002.0426",
+    "detailsSection_file_name": [
+        "CRM9.0-Router-ENU-i386.exe",
+        "CRM9.0-Router-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "25.0 MB",
+        "26.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Exchange Server or POP3 email service <br />\r\nThis version works with the following Dynamics 365 for Customer Engagement versions:\r\n<ul>\r\n<li>Dynamics 365 for Customer Engagement (online), version 9.0 or later version </li>\r\n<li>Dynamics 365 for Customer Engagement on-premises, version 9.0 </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click <b>Download</b>.</li>\r\n<li>Save the download to your computer by clicking <b>Save</b>.</li>\r\n<li>To install the Email Router, follow the instructions in <a href=\"https://technet.microsoft.com/library/hh699734(v=crm.8).aspx\">Install Email Router and Rule Deployment Wizard</a>. </li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "install Email Router and Rule Deployment Wizard",
+            "url": "https://technet.microsoft.com/en-us/library/hh699734(v=crm.8).aspx"
+        },
+        {
+            "title": "email Router",
+            "url": "https://technet.microsoft.com/en-us/library/dn832088(v=crm.8).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56974",
+    "downloadPreload": true
+}

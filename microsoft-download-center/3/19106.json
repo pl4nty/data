@@ -1,0 +1,689 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Demos: Enterprise Search Demos & Labs",
+    "downloadDescription": "Download demos and labs to walk through key scenarios for implementing and customizing enterprise search deployments that include Microsoft SharePoint Server 2010 or Microsoft FAST Search Server 2010 for SharePoint. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_13.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_13.docx",
+            "size": "692997",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_AdvSec_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_AdvSec_1.docx",
+            "size": "389533",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_DvlpCstmCnctor_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_DvlpCstmCnctor_1.docx",
+            "size": "686871",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Linguistics_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Linguistics_1.docx",
+            "size": "79949",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_Overview.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_Overview.xps",
+            "size": "219696",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_9.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_9.docx",
+            "size": "50134",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_1.docx",
+            "size": "53196",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_AdvQryProc_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_AdvQryProc_1.docx",
+            "size": "52118",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_7.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_7.docx",
+            "size": "317524",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_10.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_10.xps",
+            "size": "392255",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_API_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_API_1.docx",
+            "size": "172996",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_AdvSec_2.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_AdvSec_2.xps",
+            "size": "434633",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Linguistics_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Linguistics_1.xps",
+            "size": "417730",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Pwrshll_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Pwrshll_1.docx",
+            "size": "48060",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_AdvSec_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_AdvSec_1.xps",
+            "size": "885911",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_12.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_12.docx",
+            "size": "49442",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ContProp_3.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ContProp_3.docx",
+            "size": "49062",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_3.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_3.docx",
+            "size": "91042",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_AdvSec_2.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_AdvSec_2.docx",
+            "size": "48053",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_2.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_2.docx",
+            "size": "166594",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_11.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_11.xps",
+            "size": "465173",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_11.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_11.docx",
+            "size": "146535",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_3.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_3.xps",
+            "size": "471088",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_14.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_14.xps",
+            "size": "591048",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_FASTCrawl_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_FASTCrawl_1.xps",
+            "size": "402544",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_8.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_8.xps",
+            "size": "584097",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SP14EntSearchDev_Labs.zip",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Labs.zip",
+            "size": "21115776",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_1.xps",
+            "size": "377535",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Pwrshll_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Pwrshll_1.xps",
+            "size": "347703",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_12.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_12.xps",
+            "size": "393724",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_6.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_6.docx",
+            "size": "48126",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_DvlpCstmCnctor_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_DvlpCstmCnctor_1.xps",
+            "size": "966253",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Fdrtd_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Fdrtd_1.docx",
+            "size": "506503",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_AdvQryProc_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_AdvQryProc_1.xps",
+            "size": "466154",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_RelRank_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_RelRank_1.docx",
+            "size": "68976",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_4.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_4.xps",
+            "size": "313649",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_8.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_8.docx",
+            "size": "740643",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ConnectUsingBDC_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ConnectUsingBDC_1.docx",
+            "size": "56230",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ContProp_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ContProp_1.docx",
+            "size": "50691",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_QryAPI_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_QryAPI_1.docx",
+            "size": "173770",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Intro.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Intro.xps",
+            "size": "513215",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_6.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_6.xps",
+            "size": "447452",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_FASTCrawl_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_FASTCrawl_1.docx",
+            "size": "58387",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_RelRank_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_RelRank_1.xps",
+            "size": "501327",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_Overview.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_Overview.docx",
+            "size": "49135",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_13.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_13.xps",
+            "size": "918761",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_5.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_5.xps",
+            "size": "485474",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_14.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_14.docx",
+            "size": "511670",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ConfigUIs_1.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ConfigUIs_1.docx",
+            "size": "270562",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ContProp_2.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ContProp_2.docx",
+            "size": "50077",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_2.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_2.xps",
+            "size": "557059",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ContProp_2.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ContProp_2.xps",
+            "size": "401129",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ConnectUsingBDC_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ConnectUsingBDC_1.xps",
+            "size": "492324",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_9.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_9.xps",
+            "size": "451168",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_4.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_4.docx",
+            "size": "46392",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ContProp_3.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ContProp_3.xps",
+            "size": "241813",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Fdrtd_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Fdrtd_1.xps",
+            "size": "744340",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_7.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_7.xps",
+            "size": "675750",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_API_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_API_1.xps",
+            "size": "636886",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_5.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_5.docx",
+            "size": "115441",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_QryAPI_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_QryAPI_1.xps",
+            "size": "531434",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ConfigUIs_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ConfigUIs_1.xps",
+            "size": "429664",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_Intro.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_Intro.docx",
+            "size": "142790",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_ContProp_1.xps",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_ContProp_1.xps",
+            "size": "431473",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SP14EntSearchDev_BAESA_10.docx",
+            "url": "https://download.microsoft.com/download/d/0/9/d09ad711-8796-484c-a339-e0e7ca3bb322/SP14EntSearchDev_BAESA_10.docx",
+            "size": "48597",
+            "version": "0911",
+            "datePublished": "7/15/2024 3:10:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SharePoint 2010 Enterprise Search training course provides a series of hands-on labs, presentations, and videos that demonstrate how to enable high-end enterprise search with Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Learn about crawling and indexing content and defining the end user experience. By completing these modules, you can build most of the Contoso Research Demo and gain a broad understanding of how to apply these design principles to your own site. Audience: Application developers.<br/><br/>\r\n<ul><li><b>Advanced Query Processing in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module demonstrates how to implement advanced query processing in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint by studying common patterns and applications of advanced query processing. Audience: Application developers. </li>\r\n<li><b>Advanced Security in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module reviews security concepts in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint including item-level security and the FAST Search authorization process. Learn to protect your FAST Search Server 2010 installation, protect query traffic between SSAs, and how to implement HTTPS for query traffic. Also view guidance on security planning for sites and content and SharePoint Server 2010 authentication. Audience: Application developers. </li>\r\n<li><b>Building Search Applications in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> In this module, use your knowledge of Microsoft SharePoint 2010 Enterprise Search to build portions of the Contoso Research Application. Assembling portions of the entire search application facilitates an understanding of how to build a complete website. Audience: Application developers. </li>\r\n<li><b>Configuring Search User Interface in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint.</b> In this module, discover how to create custom search sites and pages, configure search Web Parts, configure the refinement panel, and enable federation Web Parts in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Audience: Application developers. </li>\r\n<li><b>Content Processing and Property Extraction in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module describes how to create custom search sites and pages, configure search Web Parts, configure the refinement panel, and enable federation Web Parts in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Audience: Application developers. </li>\r\n<li><b>Developing Custom Connectors for SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module reviews the process for extending and developing custom content connectors for use with both Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Audience: Application developers. </li>\r\n<li><b>Extending the User Interface in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module describes how to extend the user interface in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Audience: application developers.</li>\r\n<li><b>Linguistics Features in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module shows how Microsoft SharePoint 2010 Enterprise Search implements linguistics features including language identification, wordbreaking, tokenization, character normalization, stemming, keywords, synonyms, anti-phrasing, spell checking, offensive content filtering and phonetic search. Linguistic search features support localized search experiences and improve precision and recall by extracting and adding relevant information for use in ranking and results exploration and refinement. Audience: Application developers. </li>\r\n<li><b>Overview of SharePoint 2010 Enterprise Search Connectors and the Business Data Catalog.</b> This module reviews Microsoft SharePoint 2010 enterprise search content feeding architecture and connector framework and connectors in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. In this module, you learn to configure your search center to also search external content by creating an external content type (ECT) using Microsoft Visual Studio 2010, and deploying the ECT to your site, and confirming the connector is available for SharePoint 2010 enterprise search. Audience: Application developers. </li>\r\n<li><b>Query API and Query Languages in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> In this module, learn how to customize queries and develop a methodology for adding queries by reviewing the SharePoint 2010 query API, query language, and how to use FQL operators in Microsoft FAST Search Server 2010 for SharePoint. Audience: Application developers. </li>\r\n<li><b>Relevancy and Ranking in SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module describes how to create custom search sites and pages, configure search Web Parts, configure the refinement panel, and enable federation Web Parts in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Audience: Application developers. </li>\r\n<li><b>SharePoint Server 2010 and FAST Search Server 2010 for SharePoint Federation.</b> This module orients you to the SharePoint 2010 Federation Object Model and Refinement Object Model by reviewing examples of common extensions in Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint. Audience: Application developers. </li>\r\n<li><b>Windows PowerShell for SharePoint Server 2010 and FAST Search Server 2010 for SharePoint.</b> This module introduces Windows PowerShell cmdlets for Microsoft SharePoint Server 2010 and Microsoft FAST Search Server 2010 for SharePoint beginning with an overview of benefits and best practices including FAST Search cmdlets for administration, installation, security, and spelling. Windows PowerShell is a task-based command-line shell and scripting language designed especially for system administration. Windows PowerShell enables you to control and automate the administration of the Windows operating system and applications that run on Windows. Audience: Application developers. </li>\r\n<li><b>Working with FAST Search Server 2010 for SharePoint Web Crawlers.</b> This module describes how to use the Microsoft FAST Search Server 2010 for SharePoint web crawler to crawl complex web sites. It also describes additional configuration options and how to use command-line administration to facilitate large-scale crawls with multiple crawling servers. Audience: Application developers. </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0911",
+    "detailsSection_file_name": [
+        "SP14EntSearchDev_BAESA_13.docx",
+        "SP14EntSearchDev_AdvSec_1.docx",
+        "SP14EntSearchDev_DvlpCstmCnctor_1.docx",
+        "SP14EntSearchDev_Linguistics_1.docx",
+        "SP14EntSearchDev_BAESA_Overview.xps",
+        "SP14EntSearchDev_BAESA_9.docx",
+        "SP14EntSearchDev_BAESA_1.docx",
+        "SP14EntSearchDev_AdvQryProc_1.docx",
+        "SP14EntSearchDev_BAESA_7.docx",
+        "SP14EntSearchDev_BAESA_10.xps",
+        "SP14EntSearchDev_API_1.docx",
+        "SP14EntSearchDev_AdvSec_2.xps",
+        "SP14EntSearchDev_Linguistics_1.xps",
+        "SP14EntSearchDev_Pwrshll_1.docx",
+        "SP14EntSearchDev_AdvSec_1.xps",
+        "SP14EntSearchDev_BAESA_12.docx",
+        "SP14EntSearchDev_ContProp_3.docx",
+        "SP14EntSearchDev_BAESA_3.docx",
+        "SP14EntSearchDev_AdvSec_2.docx",
+        "SP14EntSearchDev_BAESA_2.docx",
+        "SP14EntSearchDev_BAESA_11.xps",
+        "SP14EntSearchDev_BAESA_11.docx",
+        "SP14EntSearchDev_BAESA_3.xps",
+        "SP14EntSearchDev_BAESA_14.xps",
+        "SP14EntSearchDev_FASTCrawl_1.xps",
+        "SP14EntSearchDev_BAESA_8.xps",
+        "SP14EntSearchDev_Labs.zip",
+        "SP14EntSearchDev_BAESA_1.xps",
+        "SP14EntSearchDev_Pwrshll_1.xps",
+        "SP14EntSearchDev_BAESA_12.xps",
+        "SP14EntSearchDev_BAESA_6.docx",
+        "SP14EntSearchDev_DvlpCstmCnctor_1.xps",
+        "SP14EntSearchDev_Fdrtd_1.docx",
+        "SP14EntSearchDev_AdvQryProc_1.xps",
+        "SP14EntSearchDev_RelRank_1.docx",
+        "SP14EntSearchDev_BAESA_4.xps",
+        "SP14EntSearchDev_BAESA_8.docx",
+        "SP14EntSearchDev_ConnectUsingBDC_1.docx",
+        "SP14EntSearchDev_ContProp_1.docx",
+        "SP14EntSearchDev_QryAPI_1.docx",
+        "SP14EntSearchDev_Intro.xps",
+        "SP14EntSearchDev_BAESA_6.xps",
+        "SP14EntSearchDev_FASTCrawl_1.docx",
+        "SP14EntSearchDev_RelRank_1.xps",
+        "SP14EntSearchDev_BAESA_Overview.docx",
+        "SP14EntSearchDev_BAESA_13.xps",
+        "SP14EntSearchDev_BAESA_5.xps",
+        "SP14EntSearchDev_BAESA_14.docx",
+        "SP14EntSearchDev_ConfigUIs_1.docx",
+        "SP14EntSearchDev_ContProp_2.docx",
+        "SP14EntSearchDev_BAESA_2.xps",
+        "SP14EntSearchDev_ContProp_2.xps",
+        "SP14EntSearchDev_ConnectUsingBDC_1.xps",
+        "SP14EntSearchDev_BAESA_9.xps",
+        "SP14EntSearchDev_BAESA_4.docx",
+        "SP14EntSearchDev_ContProp_3.xps",
+        "SP14EntSearchDev_Fdrtd_1.xps",
+        "SP14EntSearchDev_BAESA_7.xps",
+        "SP14EntSearchDev_API_1.xps",
+        "SP14EntSearchDev_BAESA_5.docx",
+        "SP14EntSearchDev_QryAPI_1.xps",
+        "SP14EntSearchDev_ConfigUIs_1.xps",
+        "SP14EntSearchDev_Intro.docx",
+        "SP14EntSearchDev_ContProp_1.xps",
+        "SP14EntSearchDev_BAESA_10.docx"
+    ],
+    "detailsSection_file_size": [
+        "676.8 KB",
+        "380.4 KB",
+        "670.8 KB",
+        "78.1 KB",
+        "214.5 KB",
+        "49.0 KB",
+        "51.9 KB",
+        "50.9 KB",
+        "310.1 KB",
+        "383.1 KB",
+        "168.9 KB",
+        "424.4 KB",
+        "407.9 KB",
+        "46.9 KB",
+        "865.1 KB",
+        "48.3 KB",
+        "47.9 KB",
+        "88.9 KB",
+        "46.9 KB",
+        "162.7 KB",
+        "454.3 KB",
+        "143.1 KB",
+        "460.0 KB",
+        "577.2 KB",
+        "393.1 KB",
+        "570.4 KB",
+        "20.1 MB",
+        "368.7 KB",
+        "339.6 KB",
+        "384.5 KB",
+        "47.0 KB",
+        "943.6 KB",
+        "494.6 KB",
+        "455.2 KB",
+        "67.4 KB",
+        "306.3 KB",
+        "723.3 KB",
+        "54.9 KB",
+        "49.5 KB",
+        "169.7 KB",
+        "501.2 KB",
+        "437.0 KB",
+        "57.0 KB",
+        "489.6 KB",
+        "48.0 KB",
+        "897.2 KB",
+        "474.1 KB",
+        "499.7 KB",
+        "264.2 KB",
+        "48.9 KB",
+        "544.0 KB",
+        "391.7 KB",
+        "480.8 KB",
+        "440.6 KB",
+        "45.3 KB",
+        "236.1 KB",
+        "726.9 KB",
+        "659.9 KB",
+        "622.0 KB",
+        "112.7 KB",
+        "519.0 KB",
+        "419.6 KB",
+        "139.4 KB",
+        "421.4 KB",
+        "47.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>This download works with the following applications:</b><br/>\r\n<ul>\r\n<li>Microsoft Office Word 2010 (.docx)</li>\r\n<li>Any Web browser (.xps)</li>\r\n</ul></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<br/>\r\n<ol>\r\n<li>Download the individual file you want by clicking the <b>Download</b> link (above) and saving the file to your hard disk drive.</li>\r\n<li>Alternatively, you can download all the files by clicking the ZIP file and saving the file to your hard disk drive.</li> \r\n</ol>\r\n<br/><br/>\r\n<b>Instructions for use:</b><br/>\r\nAfter you have installed this download, click the file to open and view the document using Word (.docx) or a Web browser (.xps) as you normally would.\r\n<br/>\r\n<br/>\r\n<b>Remove of this download:</b>\r\n<br/>\r\nThere is no removal feature for this download.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19106",
+    "downloadPreload": true
+}

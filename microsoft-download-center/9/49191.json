@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Adapter Pack 2013 CU2",
+    "downloadDescription": "Microsoft BizTalk Adapter Pack 2013 CU2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BAP2013CU2-KB3100564.exe",
+            "url": "https://download.microsoft.com/download/d/a/0/da0eecee-cf58-4ea0-b31f-14498f21307f/BAP2013CU2-KB3100564.exe",
+            "size": "3853864",
+            "version": "3.5.7410.2",
+            "datePublished": "7/15/2024 4:04:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Adapter Pack 2013 CU2",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.7410.2",
+    "detailsSection_file_name": [
+        "BAP2013CU2-KB3100564.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows Server 2008 R2, Windows Server 2012, SQL Server 2008 R2 or SQL Server 2012\r\nMicrosoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)\r\nMicrosoft Visual Studio 2012\r\nMicrosoft Office Excel 2010 or 2013 \r\nMicrosoft BizTalk Server 2013",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download and Install the executable.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "49191",
+    "downloadPreload": true
+}

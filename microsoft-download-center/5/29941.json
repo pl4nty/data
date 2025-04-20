@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Open Specifications Posters",
+    "downloadDescription": "The Open Specifications Posters (PDF format) make it easy for interoperability developers to explore the Open Specifications overview documents for Office client, Lync, SharePoint, Office file formats, Exchange Server, SQL Server, and Windows. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ExchangeOpenSpecPoster.pdf",
+            "url": "https://download.microsoft.com/download/6/b/c/6bc3c77e-328e-4b51-ace8-6a51868da381/ExchangeOpenSpecPoster.pdf",
+            "size": "894460",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:28:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLOpenSpecPoster.pdf",
+            "url": "https://download.microsoft.com/download/6/b/c/6bc3c77e-328e-4b51-ace8-6a51868da381/SQLOpenSpecPoster.pdf",
+            "size": "299315",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:28:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePointOpenSpecPoster.pdf",
+            "url": "https://download.microsoft.com/download/6/b/c/6bc3c77e-328e-4b51-ace8-6a51868da381/SharePointOpenSpecPoster.pdf",
+            "size": "859250",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:28:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsOpenSpecPoster.pdf",
+            "url": "https://download.microsoft.com/download/6/b/c/6bc3c77e-328e-4b51-ace8-6a51868da381/WindowsOpenSpecPoster.pdf",
+            "size": "2195893",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:28:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OfficeLyncOpenSpecPoster.pdf",
+            "url": "https://download.microsoft.com/download/6/b/c/6bc3c77e-328e-4b51-ace8-6a51868da381/OfficeLyncOpenSpecPoster.pdf",
+            "size": "881124",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:28:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftOpenSpecPoster - Accessiblility Version.pdf",
+            "url": "https://download.microsoft.com/download/6/b/c/6bc3c77e-328e-4b51-ace8-6a51868da381/MicrosoftOpenSpecPoster - Accessiblility Version.pdf",
+            "size": "343769",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:28:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Open Specifications Posters (PDF format) make it easy for interoperability developers to explore the Open Specifications overview documents for Office client, Lync, SharePoint, Office file formats, Exchange Server, SQL Server, and Windows. The posters display, by functional area, the protocols, file formats, and related technologies, as described in each overview document. A high-contrast poster is also provided for those with visual accessibility needs that contains listings for all functional areas .",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "ExchangeOpenSpecPoster.pdf",
+        "SQLOpenSpecPoster.pdf",
+        "SharePointOpenSpecPoster.pdf",
+        "WindowsOpenSpecPoster.pdf",
+        "OfficeLyncOpenSpecPoster.pdf",
+        "MicrosoftOpenSpecPoster - Accessiblility Version.pdf"
+    ],
+    "detailsSection_file_size": [
+        "873.5 KB",
+        "292.3 KB",
+        "839.1 KB",
+        "2.1 MB",
+        "860.5 KB",
+        "335.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Required Software</b>:<br />\r\nPDF file reader: The posters in this download are provided as PDF files and require a PDF reader.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF files and view with a PDF reader or print them. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29941",
+    "downloadPreload": true
+}

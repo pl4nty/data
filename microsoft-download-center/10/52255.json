@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Intelligence Report Volume 20",
+    "downloadDescription": "The Security Intelligence Report (SIR) is an analysis of the current threat landscape based on data from over a billion systems worldwide and some of the Internet\u2019s busiest online services to help you protect your organization, software, and people.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_20_Targeted_Attacks_In_South_And_Southeast_Asia_English.pdf",
+            "url": "https://download.microsoft.com/download/e/8/b/e8b5cee5-9ff6-4419-b7bf-698d2604e2b2/Microsoft_Security_Intelligence_Report_Volume_20_Targeted_Attacks_In_South_And_Southeast_Asia_English.pdf",
+            "size": "1304229",
+            "version": "20.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_20_English.pdf",
+            "url": "https://download.microsoft.com/download/e/8/b/e8b5cee5-9ff6-4419-b7bf-698d2604e2b2/Microsoft_Security_Intelligence_Report_Volume_20_English.pdf",
+            "size": "4359333",
+            "version": "20.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_20_Key_Findings_Summary_English.pdf",
+            "url": "https://download.microsoft.com/download/e/8/b/e8b5cee5-9ff6-4419-b7bf-698d2604e2b2/Microsoft_Security_Intelligence_Report_Volume_20_Key_Findings_Summary_English.pdf",
+            "size": "690096",
+            "version": "20.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_20_Regional_Threat_Assessment_English.pdf",
+            "url": "https://download.microsoft.com/download/e/8/b/e8b5cee5-9ff6-4419-b7bf-698d2604e2b2/Microsoft_Security_Intelligence_Report_Volume_20_Regional_Threat_Assessment_English.pdf",
+            "size": "10369298",
+            "version": "20.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Security_Intelligence_Report_Volume_20_Protecting_Identities_In_The_Cloud_English.pdf",
+            "url": "https://download.microsoft.com/download/e/8/b/e8b5cee5-9ff6-4419-b7bf-698d2604e2b2/Microsoft_Security_Intelligence_Report_Volume_20_Protecting_Identities_In_The_Cloud_English.pdf",
+            "size": "770834",
+            "version": "20.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "The Security Intelligence Report (SIR) is an analysis of the current threat landscape based on data from over a billion systems worldwide and some of the Internet\u2019s busiest online services to help you protect your organization, software, and people.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "20.0",
+    "detailsSection_file_name": [
+        "Microsoft_Security_Intelligence_Report_Volume_20_Targeted_Attacks_In_South_And_Southeast_Asia_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_20_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_20_Key_Findings_Summary_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_20_Regional_Threat_Assessment_English.pdf",
+        "Microsoft_Security_Intelligence_Report_Volume_20_Protecting_Identities_In_The_Cloud_English.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "4.2 MB",
+        "673.9 KB",
+        "9.9 MB",
+        "752.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download the full SIR, Worldwide Threat Assessment, Key Findings Summary and Regional Threat Assessments.  All are available as a PDF.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Malware Protection Center",
+            "url": "http://www.microsoft.com/mmpc"
+        },
+        {
+            "title": "microsoft Security Response Center",
+            "url": "http://www.microsoft.com/MSRC"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "52255",
+    "downloadPreload": true
+}

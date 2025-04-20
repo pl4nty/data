@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Building Windows Phone 7 applications with SharePoint 2010 Products and Unified Access Gateway",
+    "downloadDescription": "This paper describes how to build Windows Phone 7 applications with SharePoint 2010 Products and UAG.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-sharept2010products-windowsphone7-and-uag.pdf",
+            "url": "https://download.microsoft.com/download/f/9/b/f9be8dec-e8b4-43b0-8105-cb4e4726a1b6/oit2010-whitepaper-sharept2010products-windowsphone7-and-uag.pdf",
+            "size": "2859695",
+            "version": "3",
+            "datePublished": "7/15/2024 3:14:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "oit2010-whitepaper-sharept2010products-windowsphone7-and-uag.doc",
+            "url": "https://download.microsoft.com/download/f/9/b/f9be8dec-e8b4-43b0-8105-cb4e4726a1b6/oit2010-whitepaper-sharept2010products-windowsphone7-and-uag.doc",
+            "size": "4644864",
+            "version": "3",
+            "datePublished": "7/15/2024 3:14:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "This white paper describes how to build Windows Phone 7 applications with SharePoint 2010 Products and Microsoft Forefront Unified Access Gateway (UAG). It provides business scenarios that can benefit from custom mobile applications that authenticate by using UAG and use the features of SharePoint for collaboration, and introduces the concepts and code that are required to access SharePoint list data in a secure manner from a Windows Phone 7 device.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "oit2010-whitepaper-sharept2010products-windowsphone7-and-uag.pdf",
+        "oit2010-whitepaper-sharept2010products-windowsphone7-and-uag.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.7 MB",
+        "4.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11238",
+    "downloadPreload": true
+}

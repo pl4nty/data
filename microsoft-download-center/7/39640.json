@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visio Compatibility Pack",
+    "downloadDescription": "The Microsoft Visio Compatibility Pack opens files in Microsoft Visio 2010 that were created in the newer Visio drawing file format.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "visioconverter-en-us.exe",
+            "url": "https://download.microsoft.com/download/9/e/d/9ed1f0ad-cbae-4ce6-b6e0-6fe73e6fab06/visioconverter-en-us.exe",
+            "size": "32448168",
+            "version": "15.0.4454.1509",
+            "datePublished": "7/15/2024 3:35:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Visio Compatibility Pack lets Visio 2010 users open files created in the newer Visio 2013 drawing file format (files with a .vsdx and .vsdm extension). The Microsoft Visio Compatibility Pack opens drawings in the newer file format when used together with the Microsoft Visio 2010 SP2 update.<br />\r\n<br />\r\nViewing Visio drawings is as simple as double-clicking the drawing file in Windows Explorer, or opening the file directly in Visio 2010. The newer file format is converted to a file format supported by Visio 2010 (a file with a .vsd or .vdx extension). You can then edit the converted drawing, or save it to any format supported by your version of Visio. <br />\r\n<br />\r\nThe conversion process may modify diagram formatting, such as theming and shape formatting. A notification appears at the top of a converted drawing, telling you whether any such changes were made during conversion. If so, click <b>Details</b> to see a list of drawing formatting that was changed. If you have the Microsoft Visio 2013 Viewer installed, you can also click on <b>View Original</b> to view the original file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2844302",
+        "name": "KB2844302"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.4454.1509",
+    "detailsSection_file_name": [
+        "visioconverter-en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "30.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Notes</b></li>\r\n<ul>\r\n<li>Microsoft Visio Compatibility Pack requires the most recent Visio software updates. If Visio updates are not installed, Visio may not detect the Visio Compatibility Pack.</li></ul>\r\n<ul>\r\n<li>Some functionality in the Microsoft Visio Compatibility Pack requires the Microsoft Visio 2013 Viewer.</li></ul></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<ol>\r\n<li>Download the file by clicking the Download button and saving the file to your hard disk.</li>\r\n<li>Double-click the <b>VisioConverter.exe</b> program file on your hard disk to start the setup program.</li>\r\n<li>Follow the instructions on the screen to complete the installation.</li></ol><br />\r\n<br />\r\n<b>Instructions for use:</b>\r\n<ul><li><b>From Windows Explorer:</b> double-click a Visio drawing. The file is converted and opens in Visio 2010.</li></ul>\r\n<ul><li><b>From Visio 2010:</b> click <b>File</b> then <b>Open</b>. Select the file to open. The file is converted and opens in Visio 2010.</li></ul>\r\n<ul><li><b>From the command line:</b> type \u201cvisconv.exe &lt;vsdx file&gt; &lt;vsd file&gt;\u201d, where &lt;vsdx file&gt; is the path and file name of the file you want to convert and &lt;vsd file&gt; is path and file name to store the converted file. The file is converted and stored in the location you specify.</li></ul><br />\r\n<br />\r\n<b>Notes</b>\r\n<ul><li>If Visio 2010 doesn\u2019t open files created in the newer Visio drawing file format (files with a .vsdx and .vsdm extension), ensure the most recent software updates for your version of Visio are installed.</li></ul><br />\r\n<br />\r\n<b>To remove this download:</b>\r\n<ul><li>To remove the download file, delete the <b>VisioConverter.exe</b> file from your hard disk.</li></ul>\r\n<ul><li>To remove the installed files, use Control Panel to uninstall <b>Microsoft Visio Compatibility Pack.</b></li></ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Visio 2013 Viewer",
+            "url": "http://www.microsoft.com/en-my/download/details.aspx?id=35811"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39640",
+    "downloadPreload": true
+}

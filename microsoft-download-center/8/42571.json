@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Security Trends in Financial Services",
+    "downloadDescription": "Security Trends in Financial Services - Key Findings and Recommendations",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Security-Trends-in-Financial-Services.pdf",
+            "url": "https://download.microsoft.com/download/0/2/7/027dd039-aaca-4ea5-bfa0-51a8d9fccd9f/Security-Trends-in-Financial-Services.pdf",
+            "size": "237113",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:53:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This report identifies security trends in financial services and outlines key findings and recommendations. Cloud computing can help improve the security profiles of financial organizations by shifting the burden of assuring regulatory compliance and minimizing risk to cloud service providers. Although the cloud offers considerable benefits, organizations that adopt cloud-based solutions can also benefit from having an understanding of the relative maturity of their own security practices.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Security-Trends-in-Financial-Services.pdf"
+    ],
+    "detailsSection_file_size": [
+        "231.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the PDF. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42571",
+    "downloadPreload": true
+}

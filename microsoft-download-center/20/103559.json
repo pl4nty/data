@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "ASRRcmReplicationAgent_1.31.8133.19799",
+    "downloadDescription": "ASRRcmReplicationAgent_1.31.8133.19799",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmReplicationAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/e/b/9/eb90f3ba-ea38-4393-aeaf-86cd9629eeec/RcmReplicationAgentSetup.msi",
+            "size": "16297984",
+            "version": "1.31.8133.19799",
+            "datePublished": "1/15/2024 5:03:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRRcmReplicationAgent_1.31.8133.19799",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.31.8133.19799",
+    "detailsSection_file_name": [
+        "RcmReplicationAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "15.5 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103559",
+    "downloadPreload": true
+}

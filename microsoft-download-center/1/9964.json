@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Port Reporter (PortRptr.exe)",
+    "downloadDescription": "Download Port Reporter a logging service for Windows that logs TCP/IP port usage data.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PortRptr.exe",
+            "url": "https://download.microsoft.com/download/5/7/6/576e0e4c-3ed6-4039-a65d-fda8d8d40d25/PortRptr.exe",
+            "size": "155208",
+            "version": "1.01",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Port Reporter logs TCP and UDP port activity on a local Windows system.  Port Reporter is a small application that runs as a service on Windows 2000, Windows XP, and Windows Server 2003. <br /><br />\nOn Windows XP and Windows Server 2003 this service is able to log which ports are used, which process is using the port, if the process is a service, which modules the process has loaded and which user account is running the process.<br /><br />\nOn Windows 2000 systems, this service is limited to logging which ports are used and when.  In both cases the information that the service provides can be helpful for security purposes, troubleshooting scenarios, and profiling systems\u2019 port usage.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.01",
+    "detailsSection_file_name": [
+        "PortRptr.exe"
+    ],
+    "detailsSection_file_size": [
+        "151.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Downloading PortReptr.exe<br />\n====================<br />\n\n<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B></LI>.<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\n<br /><br />\nBasic Installation of Port Reporter <br />\n=====================<br /><br />\n\nPr-setup.exe is a small single purpose command line installer program.  It installs and/or uninstalls the Port Reporter service.  <br /><br />\n\n<b>Note:</b> You should be logged onto the system as a local administrator and close all applications, including the system's event logs and the services applet (from the control panel) when installing Port Reporter.<br /><br />\n\nRun pr-setup.exe.  Pr-setup will try to find the drive and directory where the Program Files directory is located.  You will be prompted to install Port Reporter in the Program Files directory. If you choose \"yes\" to the prompt, it will create a sub-directory under the Program Files directory called PortReporter. <br /><br />\n\nPortreporter.exe will be copied into this directory and registered as a service in the Service Control Manager.  Pr-setup will also add registry entries necessary for the Port Reporter service to log entries in the system's Application event log.",
+    "relatedResourcesSection": [
+        {
+            "title": "how to Troubleshoot Basic TCP/IP Problems",
+            "url": "http://go.microsoft.com/?linkid=664811"
+        },
+        {
+            "title": "availability and description of the Port Reporter tool",
+            "url": "http://go.microsoft.com/?linkid=664812"
+        },
+        {
+            "title": "security Guidance Center for Developers and IT Pros",
+            "url": "http://go.microsoft.com/?linkid=664813"
+        },
+        {
+            "title": "subscribe to TechNet and Stay Current",
+            "url": "http://go.microsoft.com/?linkid=664814"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9964",
+    "downloadPreload": true
+}

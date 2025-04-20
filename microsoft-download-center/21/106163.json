@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2022 Integration Pack for VMware vSphere",
+    "downloadDescription": "The Integration Pack for VMware vSphere is an add-on for System Center 2022 Orchestrator that enables you to connect System Center 2022 Orchestrator to your VMware vSphere server to automate actions in VMware vSphere",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System_Center_2022_Integration_Pack_for_VMware_vSphere.EXE",
+            "url": "https://download.microsoft.com/download/e/d/7/ed7c0714-007a-4e5f-b7a5-b4a4299ba158/System_Center_2022_Integration_Pack_for_VMware_vSphere.EXE",
+            "size": "2433024",
+            "version": "10.22.0.4",
+            "datePublished": "7/15/2024 7:01:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for VMware vSphere is an add-on for System Center 2022 Orchestrator that enables you to connect System Center 2022 Orchestrator to your VMware vSphere server to automate actions in VMware vSphere and enable complete management of the virtualized computing infrastructure. <br /> \r\n<b> Release History </b> <br/>\r\n<ul>\r\n07/15/2024 - Original English release, version 10.22.0.4\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.22.0.4",
+    "detailsSection_file_name": [
+        "System_Center_2022_Integration_Pack_for_VMware_vSphere.EXE"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b> Other software: </b> System Center 2022 Orchestrator\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe <br/>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106163",
+    "downloadPreload": true
+}

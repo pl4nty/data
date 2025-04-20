@@ -1,0 +1,248 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Power Query for Excel",
+    "downloadDescription": "Microsoft Power Query for Excel is an Excel add-in that enhances the self-service Business Intelligence experience in Excel by simplifying data discovery, access and collaboration. (Note: The Microsoft Power Query add-in for Excel 2010/2013 is no longer being updated by Microsoft. Please upgrade to a newer Excel version.)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Release Notes (English-only).docx",
+            "url": "https://download.microsoft.com/download/e/c/e/ecea1718-b83d-4406-b49d-3488ea5800ec/Release Notes (English-only).docx",
+            "size": "32685",
+            "version": "2.56.5023.1181",
+            "datePublished": "7/15/2024 3:06:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "PowerQuery_2.62.5222.761 (32-bit) [en-us].msi",
+            "url": "https://download.microsoft.com/download/e/c/e/ecea1718-b83d-4406-b49d-3488ea5800ec/PowerQuery_2.62.5222.761 (32-bit) [en-us].msi",
+            "size": "18493440",
+            "version": "2.56.5023.1181",
+            "datePublished": "7/15/2024 3:06:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PowerQuery_2.62.5222.761 (64-bit) [en-us].msi",
+            "url": "https://download.microsoft.com/download/e/c/e/ecea1718-b83d-4406-b49d-3488ea5800ec/PowerQuery_2.62.5222.761 (64-bit) [en-us].msi",
+            "size": "18599936",
+            "version": "2.56.5023.1181",
+            "datePublished": "7/15/2024 3:06:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The Microsoft Power Query add-in for Excel 2010/2013 is no longer being updated by Microsoft. You can still download this version, but if you want to access new Power Query capabilities please upgrade to Excel 2016 or newer, where Power Query capabilities are integrated within the Data tab. <a href=\"https://support.office.com/article/get-transform-in-excel-881c63c6-37c5-4ca2-b616-59e18d75b4de\">More information</a> \r\n<br /><br />\r\n\r\nMicrosoft Power Query for Excel, is a new add-in that provides a seamless experience for data discovery, data transformation and enrichment for Information Workers, BI professionals and other Excel users.\n<br /><br />\nWith Power Query you can:\n<ul>\n   <li>Identify the data you care about from the sources you work with (e.g. relational databases, Excel, text and XML files, OData feeds, web pages, Hadoop HDFS, etc.).</li>\n   <li>Discover relevant data from inside(*) and outside your organization using the search capabilities within Excel.</li>\n   <li>Combine data from multiple, disparate data sources and shape it in order to prepare the data for further analysis in tools like Excel and Power Pivot, or visualization in tools like Power View and Power Map.</li>\n   <li>Share the queries that you created with others within your organization, so they can be easily found via Search. (*)</li>\n</ul>\n<br />\n(*) This capability requires Power BI for Office 365. You can learn more at <a href=\"http://www.powerbi.com\">Power BI for Office 365</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.56.5023.1181",
+    "detailsSection_file_name": [
+        "Release Notes (English-only).docx",
+        "PowerQuery_2.62.5222.761 (32-bit) [en-us].msi",
+        "PowerQuery_2.62.5222.761 (64-bit) [en-us].msi"
+    ],
+    "detailsSection_file_size": [
+        "31.9 KB",
+        "17.6 MB",
+        "17.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>Windows Server 2008 R2</li> \r\n<li>Windows Server 2012</li>\n<li>Windows 7</li>\n<li>Windows 8</li>\n<li>Windows 8.1</li>\n</ul>\n<br />\nThe following Office versions are supported:\n<ul>\r\n<li> Microsoft Office 2010 Professional Plus with Software Assurance</li>\r\n<li> Microsoft Office 2013:</li>\r\n<ul>\r\n<li> Power Query Premium: All Power Query features available for: Professional Plus, Office 365 ProPlus or Excel 2013 Standalone</li> \r\n<li> Power Query Public: Available for all other Office 2013 Desktop SKUs. Includes all Power Query features, except the following ones: Corporate Power BI Data Catalog, Azure-based data sources, Active Directory, HDFS, SharePoint Lists, Oracle, DB2, MySQL, PostgreSQL, Sybase, Teradata, Exchange, Dynamics CRM, SAP BusinessObjects, Salesforce.</li>\r\n</ul>\r\n</ul>\r\n<br />\nMicrosoft Power Query for Excel requires Internet Explorer 9 or greater.\n<br />\n<br />\nMicrosoft Power Query for Excel is available for 32-bit (x86) and 64-bit (x64) platforms, your selection must match architecture of the installed version of Office.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the version of the Power Query add-in that matches the architecture (x86 or x64) of your Office installation. Run the MSI installer and follow the setup steps.",
+    "relatedResourcesSection": [
+        {
+            "title": "\u2022 Experience the Power Query Interactive Tutorial ",
+            "url": "http://labs.office.com/guides/Discovering, Capturing, and Cleaning Online Data with Power Query for Excel.htm"
+        },
+        {
+            "title": "\u2022 Learn more about Power Query for Excel ",
+            "url": "https://support.office.com/en-us/article/Introduction-to-Microsoft-Power-Query-for-Excel-6E92E2F4-2079-4E1F-BAD5-89F6269CD605"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39379",
+    "downloadPreload": true
+}

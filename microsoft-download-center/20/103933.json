@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Oracle Estate Assessment Tools for Migration to SQL Server",
+    "downloadDescription": "A set of scripts to to help with the collection of information for migration assessment across a large Oracle estate.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OracleAssessment.zip",
+            "url": "https://download.microsoft.com/download/6/a/2/6a25a804-39b5-4d92-91b6-dd042cc7b16e/OracleAssessment.zip",
+            "size": "856426",
+            "version": "1.1.0",
+            "datePublished": "6/15/2024 5:00:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Collecting assessment information across a large data estate is a large manual effort. To optimize this process, we have created a set of scripts to collect both Pre-SSMA information (high level CSV information) and SSMA projects.\r\n\r\nEach set of scripts consist of a PowerShell script that is the main execution engine, an Excel spreadsheet that allows the customer to provide required details about each Oracle server and either SQL scripts (Pre-SSMA) or an xml script (for SSMAConsole) to do the actual commands to collect the required information/SSMA project.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.0",
+    "detailsSection_file_name": [
+        "OracleAssessment.zip"
+    ],
+    "detailsSection_file_size": [
+        "836.4 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "The file is a zipped folder that contains the scripts. To run the SSMA collection script, you will need to install the latest SSMA for Oracle.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Choose the Download button on this page to start the download. Unzip the folder on a Windows machine and customize the PowerShell (.ps1) scripts as required for your local environment. Enter your server information in the Excel spreadsheet and run the utility.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103933",
+    "downloadPreload": true
+}

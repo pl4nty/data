@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Viva Pinata Movies - Water Park",
+    "downloadDescription": "'Water Park' movie file from Viva Pinata",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Pinata_WaterPark_Med.wmv",
+            "url": "https://download.microsoft.com/download/8/0/9/809e452b-ce2a-4516-a961-572d60ddaf24/Pinata_WaterPark_Med.wmv",
+            "size": "30422435",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Pinata_WaterPark_Low.wmv",
+            "url": "https://download.microsoft.com/download/8/0/9/809e452b-ce2a-4516-a961-572d60ddaf24/Pinata_WaterPark_Low.wmv",
+            "size": "10962135",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "'Water Park' demonstration movie file from Xbox 360 title Viva Pinata, created by Rare Ltd. and published by Microsoft Game Studios in 2006.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Pinata_WaterPark_Med.wmv",
+        "Pinata_WaterPark_Low.wmv"
+    ],
+    "detailsSection_file_size": [
+        "29.0 MB",
+        "10.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Media Player",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 98",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Choose a version of the file to download (either Medium or Low quality), then use Windows Media Player to view.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9980",
+    "downloadPreload": true
+}

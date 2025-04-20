@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Health Monitor",
+    "downloadDescription": "BizTalk Health Monitor",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BHM50.exe",
+            "url": "https://download.microsoft.com/download/1679486c-d05d-4e3e-8dea-500c2e259e9c/BHM50.exe",
+            "size": "9008960",
+            "version": "5.2025.4.7",
+            "datePublished": "4/9/2025 1:20:05 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk Health Monitor",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.2025.4.7",
+    "detailsSection_file_name": [
+        "BHM50.exe"
+    ],
+    "detailsSection_file_size": [
+        "8.6 MB"
+    ],
+    "detailsSection_file_date": "4/9/2025",
+    "systemRequirementsSection": "Windows 2022, Windows 2019, Windows 2016, Windows 2012R2, Windows 2012, Windows 11, Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Extract all files to temporary folder. \nRun BHMSetup.exe from temporary folder.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108110",
+    "downloadPreload": true
+}

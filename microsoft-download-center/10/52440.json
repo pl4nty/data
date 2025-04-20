@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "HMD Lens for Oculus Rift",
+    "downloadDescription": "This zip file contains CAD files and source code necessary to build and use an improved lens for the Oculus Rift HMD. Last published: July 1, 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HMDLens.zip",
+            "url": "https://download.microsoft.com/download/e/8/d/e8d32429-2436-489c-aa8e-8310103de5e0/HMDLens.zip",
+            "size": "2911693",
+            "version": "1.2",
+            "datePublished": "6/13/2024 12:55:37 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zip file contains CAD files and source code necessary to build and use an improved lens for the Oculus Rift HMD. The source code works with the Unity game engine to correct the lens distortion for the Oculus display. The lens was automatically designed by the LensFactory program developed at Microsoft Research. The optical quality is significantly better than the lenses that come with the Oculus. The lens uses off the shelf lens elements from Edmund Optics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "HMDLens.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52440",
+    "downloadPreload": true
+}

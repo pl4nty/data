@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Moving to Visual Studio 2010 e-Book",
+    "downloadDescription": "It's a book that will help professional developers move from previous versions of Visual Studio (starting with 2003 and on up).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DRAFT Preview - Moving to Microsoft Visual Studio 2010 (VS2005).xps",
+            "url": "https://download.microsoft.com/download/9/d/a/9daa4c79-243e-41a0-9767-e23ca362cd3c/DRAFT Preview - Moving to Microsoft Visual Studio 2010 (VS2005).xps",
+            "size": "34456906",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DRAFT Preview II - Moving to Microsoft Visual Studio 2010 (VS2008).pdf",
+            "url": "https://download.microsoft.com/download/9/d/a/9daa4c79-243e-41a0-9767-e23ca362cd3c/DRAFT Preview II - Moving to Microsoft Visual Studio 2010 (VS2008).pdf",
+            "size": "8390550",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "DRAFT Preview II - Moving to Microsoft Visual Studio 2010 (VS2008).xps",
+            "url": "https://download.microsoft.com/download/9/d/a/9daa4c79-243e-41a0-9767-e23ca362cd3c/DRAFT Preview II - Moving to Microsoft Visual Studio 2010 (VS2008).xps",
+            "size": "42016257",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "DRAFT Preview - Moving to Microsoft Visual Studio 2010 (VS2005).pdf",
+            "url": "https://download.microsoft.com/download/9/d/a/9daa4c79-243e-41a0-9767-e23ca362cd3c/DRAFT Preview - Moving to Microsoft Visual Studio 2010 (VS2005).pdf",
+            "size": "11990719",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The book is not a language primer, a language reference, or a single technology book.  It's a book that will help professional developers move from previous versions of Visual Studio (starting with 2003 and on up).  It will cover the features of Visual Studio 2010 through an application.  It will go through a lot of the exciting new language features and new versions of the most popular technologies without putting the emphasis on the technologies themselves.  It will instead put the emphasis on how you would get to those new tools and features from Visual Studio 2010.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DRAFT Preview - Moving to Microsoft Visual Studio 2010 (VS2005).xps",
+        "DRAFT Preview II - Moving to Microsoft Visual Studio 2010 (VS2008).pdf",
+        "DRAFT Preview II - Moving to Microsoft Visual Studio 2010 (VS2008).xps",
+        "DRAFT Preview - Moving to Microsoft Visual Studio 2010 (VS2005).pdf"
+    ],
+    "detailsSection_file_size": [
+        "32.9 MB",
+        "8.0 MB",
+        "40.1 MB",
+        "11.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the e-book file and start experiencing the new and exciting features in Visual Studio 2010",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16629",
+    "downloadPreload": true
+}

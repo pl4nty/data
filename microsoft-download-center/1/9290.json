@@ -1,0 +1,123 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server Compact 3.5 Service Pack 2 Server Tools",
+    "downloadDescription": "SQL Server Compact 3.5 SP2 Server Tools Windows Installer (MSI) file installs replication components on the computer running the Internet Information Services (IIS) for synchronizing data with SQL Server 2005, SQL Server 2008 and SQL Server 2008 R2 November CTP.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SSCEServerTools_x86-ENU.msi",
+            "url": "https://download.microsoft.com/download/c/3/d/c3d13429-a4e6-4b87-81df-e6e0fbb53e10/SSCEServerTools_x86-ENU.msi",
+            "size": "1408512",
+            "version": "3.5.8080.0",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SSCEServerTools_x64-ENU.msi",
+            "url": "https://download.microsoft.com/download/c/3/d/c3d13429-a4e6-4b87-81df-e6e0fbb53e10/SSCEServerTools_x64-ENU.msi",
+            "size": "1493504",
+            "version": "3.5.8080.0",
+            "datePublished": "7/15/2024 4:22:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "SQL Server Compact 3.5 SP2 Server Tools installs replication components on the computer running the Internet Information Services (IIS) for synchronizing data, using merge replication and remote data access (RDA), between SQL Server Compact 3.5 SP2 database on Windows desktops and mobile devices, and database servers running SQL Server 2005, SQL Server 2008 and SQL Server 2008 R2 November CTP. This installation is not required for Synchronization Services for ADO.NET or for Sync Framework. <br /><br />\r\nFor more information, see the following:\r\n<UL><LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=187303\">SQL Server Compact 3.5 SP2 Books Online</a>.\r\n</LI></UL><br /> \r\n<B>Support Options:</B><br /><br />\r\nYour feedback is important to us. \r\n<UL><LI>If you have questions about SQL Server Compact, visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=66523\">SQL Server Compact MSDN Forum</a>.</LI><br />\r\n<LI>Help improve SQL Server Compact by submitting and tracking bugs using <a href=\"http://go.microsoft.com/fwlink/?LinkId=104039\"> Microsoft Connect</a> website. Be sure to select <B>SQL Server Compact</B> as the version and provide detailed repro steps to help us identify the problem.</LI><br />\r\n<LI>Contact <a href=\"http://go.microsoft.com/fwlink/?LinkId=104699\">Microsoft Professional Support</a>. For deeper support needs, purchase a Professional Support package and have experts available to help out in case of any issues.</LI><br />\r\n<LI>Find out what support options are available if you are located outside the United States or Canada at <a href=\"http://go.microsoft.com/fwlink/?LinkId=104700\">Worldwide Support Options</a>.</LI><br />\r\n<LI>Search the <a href=\"http://go.microsoft.com/fwlink/?LinkId=104701\">Knowledge Base Articles</a>. Get the answers you need about SQL Server Compact from the Microsoft Knowledge Base. This is the same database of technical articles used by Microsoft Support Professionals.</LI><br />\r\n<LI>To participate in the future SQL Server Compact Technology Adoption Program (TAP) send us an <a href=\"mailto:ssc35tap@microsoft.com\">email</a>.</LI></UL> ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5.8080.0",
+    "detailsSection_file_name": [
+        "SSCEServerTools_x86-ENU.msi",
+        "SSCEServerTools_x64-ENU.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>2-3 MB of available hard disk space. An additional 2-3 MB of space must be also available for temporary setup files.</LI><BR /><LI>IIS 5.1, IIS 6.0 or IIS 7.0. IIS is supported on 32-bit and 64-bit versions of Windows Server 2003, Windows XP, Windows Vista, Windows Server 2008, Windows 7 and Windows Server 2008 R2.</LI><LI>SQL Server 2005, SQL Server 2008 or SQL Server 2008 R2 November CTP.</LI><BR /><LI>The latest version of Windows Installer is required to install the 64-bit version of SQL Server Compact 3.5 SP2 Server Tools. Install the latest version of Windows Installer from the <a href=\"http://windowsupdate.microsoft.com\">Windows Update</a> prior to installing the 64-bit version of SQL Server Compact 3.5 SP2 Server Tools.</LI><br /></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 x64 editions",
+        "Windows XP Service Pack 3",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2003 Service Pack 2 x64 Edition",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<b>Important:</b> SQL Server 2005, SQL Server 2008 or SQL Server 2008 November CTP replication components need to be installed on the machine running IIS.  If SQL Server and IIS are installed on the same machine, you may already have the SQL Server replication components installed as part of the initial installation of SQL Server.<BR /><BR /><OL><LI>Click on the 32-bit or the 64-bit <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "<UL><LI>Prior to installing SQL Server Compact 3.5 SP2 Server Tools, uninstall all earlier versions of SQL Server Compact Server Tools, including, SQL Server Compact 3.5 SP2 Server Tools Beta, SQL Server Compact 3.5 SP1 Server Tools, SQL Server Compact 3.5 Server Tools, SQL Server 2005 Compact Edition Server Tools or SQL Server 2005 Mobile Edition Server Tools by using the Add/Remove Programs in the Control Panel. </LI><br />\n<LI>On Windows Vista SP1, Windows Server 2008, Windows 7 or Windows Server 2008 R2 with IIS 7.0, the IIS 6.0 Compatibility Components need to be installed prior to installing SQL Server Compact 3.5 SP2 Server Tools. For more information about installing the IIS 6.0 Compatibility Components, <a href=\" http://go.microsoft.com/fwlink/?LinkID=123284\"> see IIS 6 Compatibility Components</a>. </LI>\n<LI>Other downloads for SQL Server Compact 3.5 SP2 are listed below:<UL><LI>\n<a href=\"http://go.microsoft.com/fwlink/?LinkId=187300\">SQL Server Compact 3.5 SP2 for Windows desktop</a>.</LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=187301\">SQL Server Compact 3.5 SP2 for Windows mobile devices</a>.</LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=123283\">Synchronization Services for ADO.NET version 1.0 SP1 for Windows mobile devices</a>.</LI>\n<LI><a href=\"http://go.microsoft.com/fwlink/?LinkId=123281\">Synchronization Services for ADO.NET version 1.0 SP1 Books Online</a>.</LI></UL></LI></UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Compact Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=103197"
+        },
+        {
+            "title": "steve Lasker Blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=104036"
+        },
+        {
+            "title": "sql Server Compact MSDN Forum",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=66523"
+        },
+        {
+            "title": "sql Server Compact Blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=67575"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9290",
+    "downloadPreload": true
+}

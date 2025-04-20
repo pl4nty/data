@@ -1,0 +1,133 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Silverlight (KB3126036)",
+    "downloadDescription": "This security update to Silverlight includes fixes outlined in Security update KB3126036. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_x64.exe",
+            "url": "https://download.microsoft.com/download/5/3/d/53d3880b-25f8-4714-a4ac-e463a492f96e/41212.00/Silverlight_x64.exe",
+            "size": "13163744",
+            "version": "5.1.41212.0",
+            "datePublished": "7/15/2024 4:00:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight.exe",
+            "url": "https://download.microsoft.com/download/5/3/d/53d3880b-25f8-4714-a4ac-e463a492f96e/41212.00/Silverlight.exe",
+            "size": "7021280",
+            "version": "5.1.41212.0",
+            "datePublished": "7/15/2024 4:00:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_Developer_x64.exe",
+            "url": "https://download.microsoft.com/download/5/3/d/53d3880b-25f8-4714-a4ac-e463a492f96e/41212.00/Silverlight_Developer_x64.exe",
+            "size": "17949472",
+            "version": "5.1.41212.0",
+            "datePublished": "7/15/2024 4:00:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight_Developer.exe",
+            "url": "https://download.microsoft.com/download/5/3/d/53d3880b-25f8-4714-a4ac-e463a492f96e/41212.00/Silverlight_Developer.exe",
+            "size": "9413920",
+            "version": "5.1.41212.0",
+            "datePublished": "7/15/2024 4:00:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Silverlight.dmg",
+            "url": "https://download.microsoft.com/download/5/3/d/53d3880b-25f8-4714-a4ac-e463a492f96e/41212.00/Silverlight.dmg",
+            "size": "14874051",
+            "version": "5.1.41212.0",
+            "datePublished": "7/15/2024 4:00:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This security update to Silverlight includes fixes outlined in Security update <a href=\"http://support.microsoft.com/kb/3126036\">KB3126036</a>.  Non-security related changes are also included in this release and have been documented in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=92598\">Silverlight Release History</a>.  This update is backward compatible with web applications built using previous versions of Silverlight.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3126036",
+        "name": "KB3126036"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-006",
+        "name": "MS16-006"
+    },
+    "detailsSection_file_version": "5.1.41212.0",
+    "detailsSection_file_name": [
+        "Silverlight_x64.exe",
+        "Silverlight.exe",
+        "Silverlight_Developer_x64.exe",
+        "Silverlight_Developer.exe",
+        "Silverlight.dmg"
+    ],
+    "detailsSection_file_size": [
+        "12.6 MB",
+        "6.7 MB",
+        "17.1 MB",
+        "9.0 MB",
+        "14.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "See the \"System Requirements\" section of http://www.microsoft.com/getsilverlight/ \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Install the appropriate runtime from the choices below.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50719",
+    "downloadPreload": true
+}

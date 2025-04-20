@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Rob Tiffany on Windows Mobile",
+    "downloadDescription": "Rob Tiffany stops by to talk about the lastest in Windows Mobile technology. Carl managed to squeeze a hint out of him about what's next for Windows Mobility.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20081009RTiffany.zip",
+            "url": "https://download.microsoft.com/download/2/3/c/23c6b134-397b-4841-afb2-c2f598f5e73a/20081009RTiffany.zip",
+            "size": "44297652",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:07:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Rob Tiffany is an Architect at Microsoft focused on delivering the best possible Windows Mobile solutions for his customers. His expertise lies in combining wireless data technologies, device hardware, Windows Mobile software, and optimized server infrastructures together to form compelling solutions. Prior to his current role, Rob was a Senior Technical Product Manager for Windows Mobile in Microsoft's Mobile and Embedded Devices division where he focused on growing the mobile developer ecosystem. He was also responsible for planning and running one of Microsoft's largest global developer conferences. Prior to joining Microsoft, Rob founded one of the industry's first mobile device management companies. Rob blogs at <a href=\"http://blogs.msdn.com/robtiffany\">http://blogs.msdn.com/robtiffany</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20081009RTiffany.zip"
+    ],
+    "detailsSection_file_size": [
+        "42.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1354",
+    "downloadPreload": true
+}

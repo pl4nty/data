@@ -1,0 +1,247 @@
+{
+    "error": "",
+    "downloadTitle": "Critical Update for Microsoft Dynamics CRM 2015 Update 1.1 (KB3095139)",
+    "downloadDescription": "Microsoft has released a critical update.  This is a tested, cumulative set of updates for Microsoft Dynamics CRM 2015 for Outlook Update 1.1. It includes performance enhancements that are packaged together for easy deployment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Client-KB3095139-ENU-I386.exe",
+            "url": "https://download.microsoft.com/download/6/d/a/6dacf9c2-99e7-4558-8d34-3b8287e4fd0e/CRM2015-Client-KB3095139-ENU-I386.exe",
+            "size": "66214256",
+            "version": "07.01.0001.4414",
+            "datePublished": "6/13/2024 1:01:35 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2015-Client-KB3095139-ENU-Amd64.exe",
+            "url": "https://download.microsoft.com/download/6/d/a/6dacf9c2-99e7-4558-8d34-3b8287e4fd0e/CRM2015-Client-KB3095139-ENU-Amd64.exe",
+            "size": "73921784",
+            "version": "07.01.0001.4414",
+            "datePublished": "6/13/2024 1:01:35 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        }
+    ],
+    "detailsSection": "\n      Microsoft has released a critical update for Microsoft Dynamics CRM 2015 for Microsoft Office Outlook Update 1.1.<br />\n      <br />\n      For more information about this release, see Microsoft Knowledge Base article 3095139:<br /><br /><a HREF=\"http://support.microsoft.com/default.aspx?kbid=3095139\">Microsoft Dynamics CRM 2015 Update 1.1 Critical Update</a> <br />\n     \n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3095139",
+        "name": "KB3095139"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "07.01.0001.4414",
+    "detailsSection_file_name": [
+        "CRM2015-Client-KB3095139-ENU-I386.exe",
+        "CRM2015-Client-KB3095139-ENU-Amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "63.1 MB",
+        "70.5 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "\n<b>Prerequisites:</b>\n<br/>\r\n\r\n<ul>\n        <li>This update must be installed on a computer that is running Microsoft Dynamics CRM 2015 for Outlook Update 1.1.</li>\r\n        <li>This update requires Microsoft .NET Framework 4.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "\n      Click Download and then click the file you want to download from the list.<br /><br />\n     <br />\n      <br />\n\n      To install this critical update, do one of the following:<br />\n      <ul>\n        <li>To start the installation immediately, click Run.</li>\n        <li>To save the download to your computer for installation later, click Save. </li>\n        <li>To cancel the installation, click Cancel.</li>\n      </ul>\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        },
+        {
+            "title": "update 1.1 for Microsoft Dynamics CRM 2015 ",
+            "url": "https://support.microsoft.com/en-us/kb/3072333"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51220",
+    "downloadPreload": true
+}

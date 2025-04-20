@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Demo Scripts for Using Remote Windows PowerShell to Manage Office 365",
+    "downloadDescription": "Sample scripts that enable users to explore the use of remote Windows PowerShell as a tool for managing Office 365 in general, and Lync Online in particular.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Online_Demo_Scripts.zip",
+            "url": "https://download.microsoft.com/download/e/c/b/ecb30321-f11e-4ade-9570-2910524a6b74/Lync_Online_Demo_Scripts.zip",
+            "size": "487239",
+            "version": "Feb2014",
+            "datePublished": "6/13/2024 12:07:11 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These sample scripts walk users through common Office 365 and Lync Online management scenarios, including such tasks as listing all of your Office 365 users; adding domains to your allowed and blocked domains list; and assigning conferencing policies to your Lync-enabled users. The sample scripts use an easy-to-follow menuing system, which means no prior knowledge of Windows PowerShell is required: the scripts will even make the connection and logon to Office 365 for you.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2014",
+    "detailsSection_file_name": [
+        "Lync_Online_Demo_Scripts.zip"
+    ],
+    "detailsSection_file_size": [
+        "475.8 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>This is a .ZIP file containing multiple scripts and information files. The contents should be extracted to a folder, and users should read StartHere.doc and Readme.txt before proceeding. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "using Windows PowerShell to Manage Lync Online",
+            "url": "http://technet.microsoft.com/en-us/library/dn362831.aspx"
+        },
+        {
+            "title": "real-life applications for using Windows PowerShell to manage Office 365",
+            "url": "http://technet.microsoft.com/en-us/library/dn568028.aspx"
+        },
+        {
+            "title": "windows PowerShell in Office 365",
+            "url": "http://technet.microsoft.com/en-us/library/dn568031.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41953",
+    "downloadPreload": true
+}

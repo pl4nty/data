@@ -1,0 +1,173 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server 2009 Installation and Upgrade Guides",
+    "downloadDescription": "Download the installation and upgrade guides for BizTalk Server 2009, BizTalk Server RFID 2009, and BizTalk RFID Mobile 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk RFID on Windows Server 2003 or 2008.htm",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk RFID on Windows Server 2003 or 2008.htm",
+            "size": "107939",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk Server 2009 on Windows Vista.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk Server 2009 on Windows Vista.docx",
+            "size": "299690",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk Server 2009 on Windows XP.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk Server 2009 on Windows XP.docx",
+            "size": "300814",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk Server 2009 on Windows Server 2003.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk Server 2009 on Windows Server 2003.docx",
+            "size": "300439",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk Server RFID on Windows XP or Vista.htm",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk Server RFID on Windows XP or Vista.htm",
+            "size": "86403",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk RFID Mobile.htm",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk RFID Mobile.htm",
+            "size": "43308",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installing BizTalk Server 2009 in a Multicomputer Environment.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk Server 2009 in a Multicomputer Environment.docx",
+            "size": "104273",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Installing BizTalk Server 2009 on Windows Server 2008.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Installing BizTalk Server 2009 on Windows Server 2008.docx",
+            "size": "300266",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Troubleshooting BizTalk Server 2009 Setup.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Troubleshooting BizTalk Server 2009 Setup.docx",
+            "size": "117036",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Upgrading to BizTalk Server 2009 from BizTalk Server 2006.docx",
+            "url": "https://download.microsoft.com/download/7/5/a/75a8d298-127e-4082-b65e-74dc10f26504/Upgrading to BizTalk Server 2009 from BizTalk Server 2006.docx",
+            "size": "309996",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The installation guides explain how to install BizTalk Server 2009, BizTalk Server RFID 2009, and BizTalk RFID Mobile 2009. The upgrade guide explains how to upgrade from BizTalk Server 2006 or BizTalk Server 2006 R2 to BizTalk Server 2009.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Installing BizTalk RFID on Windows Server 2003 or 2008.htm",
+        "Installing BizTalk Server 2009 on Windows Vista.docx",
+        "Installing BizTalk Server 2009 on Windows XP.docx",
+        "Installing BizTalk Server 2009 on Windows Server 2003.docx",
+        "Installing BizTalk Server RFID on Windows XP or Vista.htm",
+        "Installing BizTalk RFID Mobile.htm",
+        "Installing BizTalk Server 2009 in a Multicomputer Environment.docx",
+        "Installing BizTalk Server 2009 on Windows Server 2008.docx",
+        "Troubleshooting BizTalk Server 2009 Setup.docx",
+        "Upgrading to BizTalk Server 2009 from BizTalk Server 2006.docx"
+    ],
+    "detailsSection_file_size": [
+        "105.4 KB",
+        "292.7 KB",
+        "293.8 KB",
+        "293.4 KB",
+        "84.4 KB",
+        "42.3 KB",
+        "101.8 KB",
+        "293.2 KB",
+        "114.3 KB",
+        "302.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer for the .docx files.  Internet browser for the .htm files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><br />\r\n<LI>Do one of the following:<br />\r\n</LI><UL><LI>To start the installation immediately, click <B>Open</B>.<br />\r\n</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.<br />\r\n</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft BizTalk Server 2009 Help",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=146700"
+        },
+        {
+            "title": "bizTalk RFID Mobile 2009 Documentation",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=3e82e3ce-86ce-4460-85e9-38f323782867"
+        },
+        {
+            "title": "microsoft BizTalk Server 2009 Technical Overview",
+            "url": "http://msdn.microsoft.com/en-gb/practices/bb969103.aspx."
+        },
+        {
+            "title": "bizTalk Server RFID 2009 Documentation",
+            "url": "http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=11c7179f-2a19-4a91-9614-9fde46e9733b"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4066",
+    "downloadPreload": true
+}

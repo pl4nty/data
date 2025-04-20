@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft OLE DB Provider for DB2 Version 7.0",
+    "downloadDescription": "Microsoft OLE DB Provider for DB2 Version 7.0",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "DB2OLEDBv7.msi",
+            "url": "https://download.microsoft.com/download/d/0/3/d03e4764-d937-422d-ad21-a9b9ff7d30b4/DB2OLEDBv7.msi",
+            "size": "5185536",
+            "version": "11.0.2068.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft OLE DB Provider for DB2 works with Microsoft SQL Server to connect SQL applications and tools to IBM DB2 databases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.2068.0",
+    "detailsSection_file_name": [
+        "DB2OLEDBv7.msi"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>This release supports the following operating systems:</b>\r\n<ul>\r\n<li>Windows 10</li>\r\n<li>Windows Server 2022</li>\r\n<li>Windows Server 2019</li>\r\n<li>Virtualization with Azure and Hyper-V</li>\r\n</ul>\r\n\r\n<b>This release requires the following Microsoft .NET Framework:</b>\r\n<ul>\r\n<li>Microsoft .NET Framework 4.8</li>\r\n</ul>\r\n\r\n<b>This release requires the following Microsoft Visual C++ runtime libraries:</b>\r\n<ul>\r\n<li>Microsoft Visual C++ 2015-2019 runtime libraries for x86 and x64</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103466",
+    "downloadPreload": true
+}

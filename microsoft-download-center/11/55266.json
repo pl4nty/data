@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Solving the TLS 1.0 Problem",
+    "downloadDescription": "This document presents guidance on rapidly identifying and removing Transport Layer Security (TLS) protocol version 1.0 dependencies in software built on top of Microsoft operating systems.  It is intended to be used as a starting point for building a migration plan to a TLS 1.2+ network environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Solving the TLS 1.0 Problem.docx",
+            "url": "https://download.microsoft.com/download/e/8/6/e86860f7-e44d-4927-bd1c-01d9ca1f6f99/TLSDocUpdate20171127/Solving the TLS 1.0 Problem.docx",
+            "size": "158406",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:51:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Migrated from DMS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Solving the TLS 1.0 Problem.docx"
+    ],
+    "detailsSection_file_size": [
+        "154.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55266",
+    "downloadPreload": true
+}

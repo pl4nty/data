@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 14: Expose Dynamic Data with Text Fields in Visio 2010 (working file)",
+    "downloadDescription": "Practice displaying dynamic data with text fields in Microsoft Visio 2010 with this diagram, part of the Visio 2010 MVP Sessions, Video 14.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MVPSession14ExposeDynamicDataWithTextFields_Before.vsd",
+            "url": "https://download.microsoft.com/download/d/6/e/d6e24b2a-7e1f-4d39-9520-108b7cc40fe3/MVPSession14ExposeDynamicDataWithTextFields_Before.vsd",
+            "size": "236032",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MVPSession14ExposeDynamicDataWithTextFields_After.vsd",
+            "url": "https://download.microsoft.com/download/d/6/e/d6e24b2a-7e1f-4d39-9520-108b7cc40fe3/MVPSession14ExposeDynamicDataWithTextFields_After.vsd",
+            "size": "281088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice displaying dynamic data with text fields in Visio 2010 with this diagram, created as a companion to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSession), Video 14. MVP Sessions Video 14 covers several ways to expose a range of information, such as shape dimensions, shape data, or page numbers. Use this working file to follow along with the video and practice exposing shape and document data in text format with a few simple clicks, labeling shapes and documents with underlying data, and using dynamic text fields to display evolving shape and document properties.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession14ExposeDynamicDataWithTextFields_Before.vsd",
+        "MVPSession14ExposeDynamicDataWithTextFields_After.vsd"
+    ],
+    "detailsSection_file_size": [
+        "230.5 KB",
+        "274.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the working file to your computer and then open it with Visio 2010.",
+    "additionalInformationSection": "Watch the Expose Dynamic Data with Text Fields video (http://visio.microsoft.com/en-us/Get_Started/How_To/Pages/Session-14-Expose-dynamic-data-with-text-fields.aspx).",
+    "relatedResourcesSection": [
+        {
+            "title": "the Visio 2010 MVP Sessions home page",
+            "url": "http://visio.microsoft.com/MVPSessions"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29311",
+    "downloadPreload": true
+}

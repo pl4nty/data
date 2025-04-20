@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Data Center Migration DemoMate Demo",
+    "downloadDescription": "Data Center Migration DemoMate Demo",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure migration - assess and rehost applications Installer.exe",
+            "url": "https://download.microsoft.com/download/5/5/9/55970b16-0298-460b-97ad-8867a0fb5307/Microsoft Azure migration - assess and rehost applications Installer.exe",
+            "size": "102764128",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Azure offers the solutions you need to assess your on-premises applications. This will allow you to discover servers, visualize the dependencies of discovered servers, and confidently plan their migration to Azure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Azure migration - assess and rehost applications Installer.exe"
+    ],
+    "detailsSection_file_size": [
+        "98.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft 7, 8 or 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download and install.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57582",
+    "downloadPreload": true
+}

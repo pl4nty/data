@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2010 Podcasting Hands On Lab",
+    "downloadDescription": "This package provides the content and scripts to support a Hands On Lab using SharePoint 2010 as a platform for a social podcasting site.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Podcasting Hands-on Lab.iso",
+            "url": "https://download.microsoft.com/download/a/8/0/a80bbf1f-ad3a-48f1-80d4-b18f9a571085/Podcasting Hands-on Lab.iso",
+            "size": "127991808",
+            "version": "2.0",
+            "datePublished": "1/15/2024 3:28:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Hands On Lab shows how using the SharePoint 2010 communities, content and search capabilities may be leveraged to enable the podcasting scenario.  The Hands On Lab also shows video contribution and consumption, social commenting and rating, RSS and Zune subscriptions and video centric search all through the lens of social collaboration.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Podcasting Hands-on Lab.iso"
+    ],
+    "detailsSection_file_size": [
+        "122.1 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<br/>\r\nThis Hands On Lab was designed for use in the \"2010 Information Worker Demonstration and Evaluation Virtual Machine (SP1)\".  See \"Related Resources\" below for a link to that download.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "To install the Hands On Lab, please complete the following steps:<br/>\r\n\r\n<ol>\r\n<li>Download and configure the \"2010 Information Worker Demonstration and Evaluation Virtual Machine (SP1)\" using the included instructions.</li>\r\n<li>Download the Hands On Lab .ISO and attach to the running virtual machine as a virtual DVD drive.</li>\r\n<li>Log on to the virtual machine as user \"contoso\\administrator\" with a password of \"pass@word1\".</li>\r\n<li>Open and follow the setup instructions in d:\\HOL_Podcasting_Readme.docx</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "2010 Information Worker Demonstration and Evaluation Virtual Machine (SP1)",
+            "url": "http://www.microsoft.com/download/en/details.aspx?displaylang=en&id=27417"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27592",
+    "downloadPreload": true
+}

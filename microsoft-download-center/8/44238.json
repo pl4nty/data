@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Notification Service (WNS) VIP and IP Ranges",
+    "downloadDescription": "This file contains the VIP's and IP address ranges used by the Windows Notificaton Service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WNSPublicIPs_2022_08_03.xml",
+            "url": "https://download.microsoft.com/download/2/2/9/229e2a0c-e622-4cf3-8f03-88a18d975c75/WNSPublicIPs_2022_08_03.xml",
+            "size": "3072",
+            "version": "1.3",
+            "datePublished": "7/15/2024 3:04:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains the FQDNs, VIPs, and IP address ranges used by the Windows Notification Service. If possible, we strongly suggest allow listing by FQDN as these will not change. If you allow list by FQDN, you do not need to also allow list the IP address ranges.\r\n  \r\nA new text file will be uploaded every time a new VIP or IP range is released in production. New VIPs or IP ranges will be effective one week after it is uploaded. Please download the file and perform the necessary changes on your site. Endpoints in CloudService nodes are used for cloud services to send notifications to WNS. Endpoints in Client nodes are used by devices to receive notifications from WNS. For mobile devices see also Microsoft Push Notifications Service (MPNS) Public IP ranges in the Related Resources section.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3",
+    "detailsSection_file_name": [
+        "WNSPublicIPs_2022_08_03.xml"
+    ],
+    "detailsSection_file_size": [
+        "3.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This file contains the FQDNs, VIPs, and IP address ranges used by the Windows Notification Service. If possible, we strongly suggest allow listing by FQDN as these will not change. If you allow list by FQDN, you do not need to also allow list the IP address ranges.\r\n  \r\nA new text file will be uploaded every time a new VIP or IP range is released in production. New VIPs or IP ranges will be effective one week after it is uploaded. Please download the file and perform the necessary changes on your site. Endpoints in CloudService nodes are used for cloud services to send notifications to WNS. Endpoints in Client nodes are used by devices to receive notifications from WNS. For mobile devices see also Microsoft Push Notifications Service (MPNS) Public IP ranges in the Related Resources section.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Push Notifications Service (MPNS) Public IP ranges",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=44535"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44238",
+    "downloadPreload": true
+}

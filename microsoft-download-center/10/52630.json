@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 and Windows Server 2016 security auditing and monitoring reference",
+    "downloadDescription": "This reference details most advanced security audit events for Windows 10 and Windows Server 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows 10 and Windows Server 2016 Security Auditing and Monitoring Reference.docx",
+            "url": "https://download.microsoft.com/download/7/9/f/79f3e0b9-4a00-4d15-9953-045bc9be9338/Windows 10 and Windows Server 2016 Security Auditing and Monitoring Reference.docx",
+            "size": "9859839",
+            "version": "1",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can record and store security audit events for Windows 10 and Windows Server 2016 to track key system and network activities, monitor potentially harmful behaviors, and mitigate risks. You control the amount of data you collect by controlling the categories of security events you audit, for example, changes to user account and resource permissions, failed attempts to access resources, and attempts to modify system files. The reference in this download can help you decide what to monitor and how to interpret the data you collect.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows 10 and Windows Server 2016 Security Auditing and Monitoring Reference.docx"
+    ],
+    "detailsSection_file_size": [
+        "9.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view this download, you need to use Microsoft Office Word or Word Viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52630",
+    "downloadPreload": true
+}

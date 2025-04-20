@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Open Source Panel Discussion at DevTeach, Vancouver",
+    "downloadDescription": "Carl and Richard host a panel discussion on open source software at the DevTeach developer conference in Vancouver, BC. Panelists: Rod Paddock, Shaun Walker, Rob Chartier, and Sara Ford.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071206OpenSource.zip",
+            "url": "https://download.microsoft.com/download/4/3/2/43288a68-8354-4003-8ee6-39b1e5ba7258/20071206OpenSource.zip",
+            "size": "54901667",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:19 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DevTeach is a professional conference for developers by developers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071206OpenSource.zip"
+    ],
+    "detailsSection_file_size": [
+        "52.4 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12209",
+    "downloadPreload": true
+}

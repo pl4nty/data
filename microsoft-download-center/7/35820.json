@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Unattended Installation of TFS 2012",
+    "downloadDescription": "This feature allows a TFS user to set up a configuration of TFS up front via command line, rather than using the Configuration Wizard.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Unattended Install Whitepaper.docx",
+            "url": "https://download.microsoft.com/download/3/4/2/342ec2a3-51e0-4308-a3fc-9b840965b7a8/Unattended Install Whitepaper.docx",
+            "size": "417331",
+            "version": "TFS 2012",
+            "datePublished": "7/15/2024 3:32:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Unattended install is a feature of Team Foundation Server that lets a user pre-set all configuration parameters for a desired TFS instance in advance.  This allows TFS to be configured from start to finish without pausing for input from the Configuration Wizard during the process.  Unattended Installation takes place via the command prompt.  This paper describes the two commands through which it is performed: Create and Configure.  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "TFS 2012",
+    "detailsSection_file_name": [
+        "Unattended Install Whitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "407.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Must have a copy of Team Foundation Server 2012 or Team Foundation Server Express 2012 and a machine with a supported OS.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "See document",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35820",
+    "downloadPreload": true
+}

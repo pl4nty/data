@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Customer Advisory Team Presentations",
+    "downloadDescription": "Download Microsoft Office PowerPoint slides from the BizTalk Server Customer Advisory team. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BizTalk 2009 Performance Characteristics on Hyper-V and Physical Platforms.pptx",
+            "url": "https://download.microsoft.com/download/f/c/f/fcfa6848-2195-49f8-82d5-a47c80f8b2f7/BizTalk 2009 Performance Characteristics on Hyper-V and Physical Platforms.pptx",
+            "size": "4365159",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk End-to-End Performance Testing Guidance .pptx",
+            "url": "https://download.microsoft.com/download/f/c/f/fcfa6848-2195-49f8-82d5-a47c80f8b2f7/BizTalk End-to-End Performance Testing Guidance .pptx",
+            "size": "2974393",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk 2009 Performance.pptx",
+            "url": "https://download.microsoft.com/download/f/c/f/fcfa6848-2195-49f8-82d5-a47c80f8b2f7/BizTalk 2009 Performance.pptx",
+            "size": "2242655",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk Hyper-V Virtualization Guidance.pptx",
+            "url": "https://download.microsoft.com/download/f/c/f/fcfa6848-2195-49f8-82d5-a47c80f8b2f7/BizTalk Hyper-V Virtualization Guidance.pptx",
+            "size": "1728951",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:57:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download Microsoft Office PowerPoint slides from the BizTalk Server Customer Advisory team.<br></br>\r\n\r\n<b>Overview</b><br></br>\r\n\r\n<OL><LI><b>BizTalk Server 2009: Performance Characteristics on Hyper-V and Physical Platforms; Ewan Fairweather and Paolo Salvatori</b><br></br>\r\nThe BizTalk Customer Advisory Team quantifies performance of BizTalk Server 2009 vs. BizTalk Server 2006 R2, as well as performance of BizTalk Server 2009 on Hyper-V. The team also provides guidance on how to effectively do performance testing of BizTalk Server 2009.</LI><br></br>\r\n\r\n<LI><b>BizTalk Server 2009 Performance; Ewan Fairweather, Tim Wieman, and Paolo Salvatori</b><br></br>\r\nThe BizTalk Customer Advisory Team provides examples of successful performance labs. The team also provides information about the tools, techniques, and processes that were used to run effective BizTalk Server performance labs.</LI><br></br>\r\n\r\n<LI><b>Microsoft BizTalk Server End-to-End Performance Testing Guidance; Ewan Fairweather and Paolo Salvatori</b><br></br>\r\nThe BizTalk Customer Advisory Team discusses how they run BizTalk performance assessments, demonstrate tools and techniques that used during the assessment, and introduce the BizTalk Server Performance Optimization Guide. </LI><br></br>\r\n\r\n<LI><b>BizTalk Hyper-V Virtualization Guidance; Ewan Fairweather and Clint Huffman</b><br></br>\r\nThe BizTalk Customer Advisory Team shares best practices for using BizTalk Server with Hyper-V. They also provide guidance on the performance characteristics of BizTalk Server on Hyper-V, and introduce the BizTalk Server Hyper-V Guide.</LI></OL> \r\n\r\n \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BizTalk 2009 Performance Characteristics on Hyper-V and Physical Platforms.pptx",
+        "BizTalk End-to-End Performance Testing Guidance .pptx",
+        "BizTalk 2009 Performance.pptx",
+        "BizTalk Hyper-V Virtualization Guidance.pptx"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB",
+        "2.8 MB",
+        "2.1 MB",
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view these presentations, you will need to use either PowerPoint 2007, PowerPoint 2003, PowerPoint Viewer 2007 or PowerPoint Viewer 2003.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Once you have downloaded the files, open them with PowerPoint or PowerPoint Viewer to view the presentations.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12417",
+    "downloadPreload": true
+}

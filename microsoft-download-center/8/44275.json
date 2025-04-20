@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 for Business Training",
+    "downloadDescription": "Office 365 for Business Training",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "o365forbusinesstraining.zip",
+            "url": "https://download.microsoft.com/download/3/9/7/397d741e-605e-4b23-bf01-db352b42d3be/o365forbusinesstraining.zip",
+            "size": "18628915",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:41:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Office 365 for Business Training provides training decks for the following scenarios:\r\n- Get it done from anywhere\r\n- Email and Calendar on the go\r\n- Run more effective meetings\r\n- Store, sync, and share files\r\n- Work like a network\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "o365forbusinesstraining.zip"
+    ],
+    "detailsSection_file_size": [
+        "17.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The training decks for this download are provided in .PDF and .PPTX format. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "To install this download, save the file to a directory on your computer and extract the .zip file.  To remove this download, delete the file from the directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44275",
+    "downloadPreload": true
+}

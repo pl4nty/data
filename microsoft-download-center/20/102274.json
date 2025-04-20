@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Tunnel Deployment Guide v3",
+    "downloadDescription": "The Microsoft Tunnel Deployment Guide provides general guidance and the necessary configuration steps to deploy Microsoft Tunnel Gateway to provide Intune MDM-managed mobile devices access to on-premises resources.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MST-Deployment_Guide.pdf",
+            "url": "https://download.microsoft.com/download/1edd5099-da4c-40db-9259-fd6f010c1743/MST-Deployment_Guide.pdf",
+            "size": "5348150",
+            "version": "3.0.0",
+            "datePublished": "3/3/2025 9:46:04 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Tunnel Deployment Guide provides general guidance and the necessary configuration steps to deploy Microsoft Tunnel Gateway for the purpose of providing Intune MDM-managed mobile devices access to on-premises resources. The guide can be used for a lab or as a means of getting started in a production environment. The download also includes a networking insights reference with additional details.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0.0",
+    "detailsSection_file_name": [
+        "MST-Deployment_Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "5.1 MB"
+    ],
+    "detailsSection_file_date": "3/3/2025",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102274",
+    "downloadPreload": true
+}

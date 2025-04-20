@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Brad Abrams and Omar Khan Announce .NET 3.5 SP1 and VS2008 SP1",
+    "downloadDescription": "Brad Abrams and Omar Khan from Microsoft officially announce .NET 3.5 SP1 and Visual Studio 2008 SP1, and detail all the new features and improvements!",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080512DotNetSP1.zip",
+            "url": "https://download.microsoft.com/download/c/5/b/c5b94978-fa7f-4feb-a832-2efa89381a01/20080512DotNetSP1.zip",
+            "size": "49969126",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:11:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Brad Abrams was a founding member of both the Common Language Runtime, and .NET Framework teams at Microsoft Corporation where he is currently the Group Program Manager for the UI Framework and Services team which is responsible for delivering the developer platform that spans both clients and web based applications as well as the common services that are available to all applications. <br />\n<br />\nOmar Khan is Product Unit Manager at Microsoft corporation responsible for running the Visual Web Developer product team. Since joining Microsoft in 1995, Omar has worked on several product releases, including Visual InterDev 1.0 , Visual InterDev 6.0, Visual Studio 2003, Visual Studio 2005, and Visual Studio 2008. Prior to joining Microsoft, Omar attended the University of Michigan - Ann Arbor from 1992-1995, majoring in a Bachelor's of Computer Science.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080512DotNetSP1.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.7 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "4598",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Audio Watermarking Tool",
+    "downloadDescription": "This tool is based upon the publication: D. Last published: August 5, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "audio watermarking.zip",
+            "url": "https://download.microsoft.com/download/f/0/d/f0dd4ff0-221d-487c-81b9-368b4afa4edb/audio watermarking.zip",
+            "size": "177062",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool is based upon the publication: D. Kirovski and H.S. Malvar. Spread Spectrum Watermarking of Audio Signals. IEEE Transactions on Signal Processing, Vol.51, (no.4), pp.1020\u201333, 2003. As mentioned in the publication, it displays solid robustness against traditional signal processing, including arbitrary limited pitch bending and time-scaling. However, targetted procedures such as watermark estimation or the replacement attack can wipe out the watermark while preserving perceptual fidelity. Authors: Darko Kirovski and Rico Malvar, both at Microsoft Research.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "audio watermarking.zip"
+    ],
+    "detailsSection_file_size": [
+        "172.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52287",
+    "downloadPreload": true
+}

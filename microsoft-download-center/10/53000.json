@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Premier OMS Assessment Configuration Scripts",
+    "downloadDescription": "Configuration scripts for the Assessments for Premier offerings on OMS",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Set-SPAssessmentPremier.ps1",
+            "url": "https://download.microsoft.com/download/7/2/c/72cf5940-4021-4405-818b-0830012fa816/Set-SPAssessmentPremier.ps1",
+            "size": "34116",
+            "version": "0.1",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Set-ADAssessmentPremier.ps1",
+            "url": "https://download.microsoft.com/download/7/2/c/72cf5940-4021-4405-818b-0830012fa816/Set-ADAssessmentPremier.ps1",
+            "size": "34134",
+            "version": "0.1",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These configuration scripts will help you set up and configure the Assessments for Premier offerings, built on Microsoft Operations Management Suite (OMS)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "Set-SPAssessmentPremier.ps1",
+        "Set-ADAssessmentPremier.ps1"
+    ],
+    "detailsSection_file_size": [
+        "33.3 KB",
+        "33.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET Framework 4.5\r\nPowershell",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Execute the script from a domain controller (for the Active Directory Assessment for Premier) or a server that's a member of the SharePoint farm to be assessed (for the SharePoint Assessment for Premier)",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53000",
+    "downloadPreload": true
+}

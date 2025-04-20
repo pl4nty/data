@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk 2010- UDDI Security Fix KB3087119",
+    "downloadDescription": "BizTalk 2010- UDDI Security Fix KB3087119",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UDDI2010.exe",
+            "url": "https://download.microsoft.com/download/f/7/8/f783c984-ca48-4f36-a984-e9c6ce989a96/UDDI2010.exe",
+            "size": "223752",
+            "version": " 1.1.0",
+            "datePublished": "3/13/2025 3:55:57 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "BizTalk 2010- UDDI Security Fix KB3087119",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3087119",
+        "name": "KB3087119"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": " 1.1.0",
+    "detailsSection_file_name": [
+        "UDDI2010.exe"
+    ],
+    "detailsSection_file_size": [
+        "218.5 KB"
+    ],
+    "detailsSection_file_date": "3/13/2025",
+    "systemRequirementsSection": "BizTalk 2010, UDDI 3.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download and run.",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48589",
+    "downloadPreload": true
+}

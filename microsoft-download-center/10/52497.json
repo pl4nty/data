@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "TLA Toolbox: Mac 32-bit",
+    "downloadDescription": "An integrated development environment for writing and checking TLA+ specifications. Last published: February 28, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TLAToolbox-1.4.5-macosx.cocoa.x86.zip",
+            "url": "https://download.microsoft.com/download/9/c/d/9cd105e5-060d-4809-a1cb-75192b5467d8/TLAToolbox-1.4.5-macosx.cocoa.x86.zip",
+            "size": "50767594",
+            "version": "1.4.5",
+            "datePublished": "12/15/2023 4:18:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An integrated development environment for writing and checking TLA+ specifications.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.5",
+    "detailsSection_file_name": [
+        "TLAToolbox-1.4.5-macosx.cocoa.x86.zip"
+    ],
+    "detailsSection_file_size": [
+        "48.4 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Apple Macintosh OS X</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Macintosh"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52497",
+    "downloadPreload": true
+}

@@ -1,0 +1,112 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Git-TF for Visual Studio Team Foundation Server and Visual Studio Online",
+    "downloadDescription": "Git-TF is a set of cross-platform, command line tools that facilitate sharing of changes between TFS and Git.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ThirdPartyNotices.html",
+            "url": "https://download.microsoft.com/download/a/e/2/ae23b059-5727-445b-91cc-15b7a078a7f4/ThirdPartyNotices.html",
+            "size": "29885",
+            "version": "2.0.3.1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "license.html",
+            "url": "https://download.microsoft.com/download/a/e/2/ae23b059-5727-445b-91cc-15b7a078a7f4/license.html",
+            "size": "23647",
+            "version": "2.0.3.1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Git-TF_ReleaseNotes.html",
+            "url": "https://download.microsoft.com/download/a/e/2/ae23b059-5727-445b-91cc-15b7a078a7f4/Git-TF_ReleaseNotes.html",
+            "size": "7611",
+            "version": "2.0.3.1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Git-TF_GettingStarted.html",
+            "url": "https://download.microsoft.com/download/a/e/2/ae23b059-5727-445b-91cc-15b7a078a7f4/Git-TF_GettingStarted.html",
+            "size": "18053",
+            "version": "2.0.3.1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "git-tf-2.0.3.20131219.zip",
+            "url": "https://download.microsoft.com/download/a/e/2/ae23b059-5727-445b-91cc-15b7a078a7f4/git-tf-2.0.3.20131219.zip",
+            "size": "13885768",
+            "version": "2.0.3.1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "git-tf-2.0.2.20130214.zip",
+            "url": "https://download.microsoft.com/download/a/e/2/ae23b059-5727-445b-91cc-15b7a078a7f4/git-tf-2.0.2.20130214.zip",
+            "size": "13322610",
+            "version": "2.0.3.1",
+            "datePublished": "7/15/2024 3:30:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Git-TF is a set of cross-platform, command line tools that facilitate sharing of changes between TFS and Git.  These tools allow a developer to use a local Git repository, and configure it to share changes with a TFS server.  Using the tools, changes made in TFS can be pulled into a local Git repository, and changes made in the Git repository can be checked in to TFS.  These tools can be used by individuals or teams collaborating using Git.  By downloading the tools from the link below, you accept the <a href=\"http://download.microsoft.com/download/A/E/2/AE23B059-5727-445B-91CC-15B7A078A7F4/license.html\">Git-TF for Visual Studio Team Foundation Server license agreement</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.3.1",
+    "detailsSection_file_name": [
+        "ThirdPartyNotices.html",
+        "license.html",
+        "Git-TF_ReleaseNotes.html",
+        "Git-TF_GettingStarted.html",
+        "git-tf-2.0.3.20131219.zip",
+        "git-tf-2.0.2.20130214.zip"
+    ],
+    "detailsSection_file_size": [
+        "29.2 KB",
+        "23.1 KB",
+        "7.4 KB",
+        "17.6 KB",
+        "13.2 MB",
+        "12.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating Systems: Windows 8.1, Windows 8, Windows 7 (x86, x64), Windows Server 2012 R2; Linux with GLIBC 2.3 to 2.18 (x86, x64, PowerPC); Mac OS X 10.5 to 10.9 (PowerPC, Intel); Solaris 8, 9, 10 (SPARC, x86, x64); AIX 5.2 to 7.1 (POWER); HP-UX 11i v1 to v3 (PA-RISC, Itanium).\r\n\r\nAny of the following versions of the Java runtime: Oracle Java\u2122 1.5 to 7, or IBM Java\u2122 1.5 to 7 on Windows; Apple Java\u2122 1.5 to 7 on Mac OS X; Sun Java\u2122 1.5 to 7 on Linux or Solaris; IBM Java\u2122 1.5 to 7 on Linux or AIX; HP Java\u2122 1.5 to 7 on HP-UX; \r\n\r\nGit-TF is supported for use with the following versions of TFS: Team Foundation Server 2013, 2012, 2010 or Visual Studio Online",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "HP-UX",
+        "IBM AIX",
+        "Linux",
+        "Solaris",
+        "Unix",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download and follow the instructions given on the CodePlex site (<a href=\"http://gittf.codeplex.com\">http://gittf.codeplex.com</a>) or in the file \u201cGit-TF_GettingStarted.html\u201d\r\n\r\nThe file \u201cgit-tf-2.0.3.20131219.zip\u201d contains the Git-TF tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "git-TF Project Homepage",
+            "url": "http://gittf.codeplex.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30474",
+    "downloadPreload": true
+}

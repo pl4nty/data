@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "ICONICS, Inc. Solution Brief",
+    "downloadDescription": "Windows Vista Technologies Enhance HMI/SCADA Visualization Products",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Iconics Solution Brief_Sept_07.doc",
+            "url": "https://download.microsoft.com/download/1/c/c/1cc184a7-574c-4204-b514-243628471799/Iconics Solution Brief_Sept_07.doc",
+            "size": "2912256",
+            "version": "1.3",
+            "datePublished": "7/15/2024 3:11:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ICONICS, a leader in visualization software for manufacturing and automation, wanted to take advantage of the next generation of technologies delivered with Windows Vista. ICONICS incorporated desktop technologies like Sidebar Gadgets and Search integration as well as core .NET Framework 3.0 technologies like Windows Communication Foundation, Windows Presentation Foundation, and Windows Workflow Foundation, with clear product benefits.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.3",
+    "detailsSection_file_name": [
+        "Iconics Solution Brief_Sept_07.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Vista, XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14749",
+    "downloadPreload": true
+}

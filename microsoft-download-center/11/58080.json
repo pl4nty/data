@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "NSS Labs 2018 Web Browser Security Comparative Reports",
+    "downloadDescription": "NSS Labs conducted independent global tests measuring how effective browsers are at protecting against socially engineered malware (SEM) and phishing attacks. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NSS Labs_Web Browser Security Comparative Report_Protection Against Socially Engineered Malware.pdf",
+            "url": "https://download.microsoft.com/download/0/d/c/0dc0e996-28e3-4ea3-99ee-598c9aa4bf2f/NSS Labs_Web Browser Security Comparative Report_Protection Against Socially Engineered Malware.pdf",
+            "size": "426004",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:06:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "NSS Labs_Web Browser Security Comparative Report_Protection Against Phishing.pdf",
+            "url": "https://download.microsoft.com/download/0/d/c/0dc0e996-28e3-4ea3-99ee-598c9aa4bf2f/NSS Labs_Web Browser Security Comparative Report_Protection Against Phishing.pdf",
+            "size": "320783",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:06:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Focused exclusively on IT security, NSS Labs is known globally as a leading security product testing laboratory, offering in-depth security product test reports, continuous security validation, research, and analyst services.  NSS Labs conducted two global tests measuring how effective browsers are at protecting against socially engineered malware (SEM) and phishing attacks.  The tests were conducted free of charge and NSS Labs did not receive any compensation for browser participation.\r\n<br/><br/>\r\nBrowsers tested Included:\r\n<ul>\r\n<li>Google Chrome: Version 69.0.3497 </li>\r\n<li>Microsoft Edge 42.17134.1.0 </li>\r\n<li>Mozilla Firefox: Version 61</li>\r\n</ul>\r\nLearn more about NSS Labs and this report at https://research.nsslabs.com/reports#cat0=22. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "NSS Labs_Web Browser Security Comparative Report_Protection Against Socially Engineered Malware.pdf",
+        "NSS Labs_Web Browser Security Comparative Report_Protection Against Phishing.pdf"
+    ],
+    "detailsSection_file_size": [
+        "416.0 KB",
+        "313.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\r\nThis report is available in PDF format. To access the file, you will need Adobe Reader or a compatible PDF reader. \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Select the language of your choice and click the Download button to open the file directly or save it to your local machine for future reference. ",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Edge IT Center",
+            "url": "https://www.microsoft.com/itpro/microsoft-edge"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58080",
+    "downloadPreload": true
+}

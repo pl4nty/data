@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 Service Communications API",
+    "downloadDescription": "The Office 365 Service Communications API enables tenants with administrator roles to retrieve real-time service health information as well as Message Center communications for the domain(s) they own or they manage on behalf of their customers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "O365ServiceHealthAPISampleCode.zip",
+            "url": "https://download.microsoft.com/download/1/2/b/12b6959b-4e4b-408b-8405-f518237011c9/O365ServiceHealthAPISampleCode.zip",
+            "size": "3766402",
+            "version": "Aug2014",
+            "datePublished": "6/13/2024 12:06:43 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Office 365 Service Communications API enables tenants with administrator roles to retrieve real-time service health information as well as Message Center communications for the domain(s) they own or they manage on behalf of their customers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Aug2014",
+    "detailsSection_file_name": [
+        "O365ServiceHealthAPISampleCode.zip"
+    ],
+    "detailsSection_file_size": [
+        "3.6 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "office 365 Service Communications API Overview",
+            "url": "http://msdn.microsoft.com/en-us/library/dn776043(v=office.15).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44012",
+    "downloadPreload": true
+}

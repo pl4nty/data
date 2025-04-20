@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Analyze document usage worksheet for SharePoint Server 2010 and SharePoint Server 2013",
+    "downloadDescription": "Analyze the usage of documents",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2010-wksht-analyzedocumentusage-sharepointserver.xls",
+            "url": "https://download.microsoft.com/download/7/b/6/7b6c3336-85af-47c1-b9f7-668f71e6a913/oit2010-wksht-analyzedocumentusage-sharepointserver.xls",
+            "size": "68608",
+            "version": "3",
+            "datePublished": "7/15/2024 3:31:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Analyze the usage of documents",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "oit2010-wksht-analyzedocumentusage-sharepointserver.xls"
+    ],
+    "detailsSection_file_size": [
+        "67.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35769",
+    "downloadPreload": true
+}

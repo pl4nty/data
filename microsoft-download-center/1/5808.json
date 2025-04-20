@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Silverlight 1.0: An SDL Implementation Story",
+    "downloadDescription": "Microsoft Silverlight 1.0: An SDL Implementation Story",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SDL and Silverlight.docx",
+            "url": "https://download.microsoft.com/download/8/b/c/8bcd16fc-1552-4354-a351-e4ec54b0d7d0/SDL and Silverlight.docx",
+            "size": "257519",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper reviews the Microsoft Security Development Lifecycle (SDL) requirements and the work that the Microsoft Silverlight\u2122 team did to both meet and exceed those requirements for every phase of the Silverlight 1.0 release. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SDL and Silverlight.docx"
+    ],
+    "detailsSection_file_size": [
+        "251.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003; Windows Server 2008; Windows 2000; Windows Vista; Windows XP; Windows 7; Microsoft Word 2003 or newer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "This download offers you the benefits of registering with Microsoft. Click the Continue button near the top of this page to register. After you have gone through the registration process, you will be returned to this page to begin the download ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5808",
+    "downloadPreload": true
+}

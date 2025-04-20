@@ -1,0 +1,73 @@
+{
+    "error": "",
+    "downloadTitle": "Refresh CI Policy",
+    "downloadDescription": "Use this tool to refresh and activate policies for Windows Defender Application Control (WDAC)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RefreshPolicy(X86).exe",
+            "url": "https://download.microsoft.com/download/2/d/5/2d598537-6131-40ba-a1e3-f664b97fef6e/RefreshCIPolicy/X86/RefreshPolicy(X86).exe",
+            "size": "17992",
+            "version": "1.0.0",
+            "datePublished": "12/17/2024 11:33:18 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RefreshPolicy(ARM64).exe",
+            "url": "https://download.microsoft.com/download/2/d/5/2d598537-6131-40ba-a1e3-f664b97fef6e/RefreshCIPolicy/ARM64/RefreshPolicy(ARM64).exe",
+            "size": "19352",
+            "version": "1.0.0",
+            "datePublished": "12/17/2024 11:33:18 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RefreshPolicy(AMD64).exe",
+            "url": "https://download.microsoft.com/download/2/d/5/2d598537-6131-40ba-a1e3-f664b97fef6e/RefreshCIPolicy/AMD64/RefreshPolicy(AMD64).exe",
+            "size": "19016",
+            "version": "1.0.0",
+            "datePublished": "12/17/2024 11:33:18 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the Windows Defender Application Control (WDAC) policy refresh tool to force Windows to refresh and activate all WDAC policies deployed to the device. This is a convenient way to apply multiple WDAC policies on devices running Windows 10 1903 or higher when MDM-based policy deployment is not used. This tool will run on Windows 10 1809 (RS5) or Windows Server 2019 and above.<br/>\r\n\r\nNote: Be sure to allow the RefreshPolicy tool in your WDAC policies if you plan to enforce application control policies.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "RefreshPolicy(X86).exe",
+        "RefreshPolicy(ARM64).exe",
+        "RefreshPolicy(AMD64).exe"
+    ],
+    "detailsSection_file_size": [
+        "17.6 KB",
+        "18.9 KB",
+        "18.6 KB"
+    ],
+    "detailsSection_file_date": "12/17/2024",
+    "systemRequirementsSection": "Windows 10 version 1809\r\nWindows 11\r\nWindows Server 2019\r\nWindows Server 2022\r\nWindows Server 2025",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button on this page to start the download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102925",
+    "downloadPreload": true
+}

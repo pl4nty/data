@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Computing supersingular isogenies on Kummer surfaces",
+    "downloadDescription": "Computing supersingular isogenies on Kummer surfaces",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KummerIsogenies.zip",
+            "url": "https://download.microsoft.com/download/b/6/8/b687f54f-9b67-4f23-bae6-6fd4539e4da2/KummerIsogenies.zip",
+            "size": "10848",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:45:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains Magma files that illustrate the computations of (2,2)-isogenies on Kummer surfaces. It accompanies the paper \"Computing supersingular isogenies on Kummer surfaces\".",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "KummerIsogenies.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>  ",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57309",
+    "downloadPreload": true
+}

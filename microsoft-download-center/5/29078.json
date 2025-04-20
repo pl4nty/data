@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "TFS 2010 SP1 Cumulative Update 2 - KB2646719",
+    "downloadDescription": "This download includes all available updates for Team Foundation Server 2010 SP1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS10SP1-KB2643415.exe",
+            "url": "https://download.microsoft.com/download/7/0/9/70900ee3-2c9d-4d86-b755-d79d5eb31098/VS10SP1-KB2643415.exe",
+            "size": "24148064",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This hotfix download for Microsoft Visual Studio Team Foundation Server 2010 SP1 is described in the Knowledge Base article <a href=\"http://go.microsoft.com/fwlink/?LinkID=236949\">KB2646719</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2643415",
+        "name": "KB2643415"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VS10SP1-KB2643415.exe"
+    ],
+    "detailsSection_file_size": [
+        "23.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems:\r\n<ul>\r\n <li>Windows Server 2003 (x86) with Service Pack 2 or later (all \r\n editions)</li>\r\n <li>Windows Server 2003 R2 (x86) or later (all editions)</li>\r\n <li>Windows Vista (x86 and x64) with Service Pack 2 or later (all editions except Starter Edition)</li>\r\n <li>Windows Server 2008 (x86 and x64) with Service Pack 2 or later</li>\r\n <li>Windows 7 (x86 and x64)</li>\r\n <li>Windows Server 2008 R2 (x64)</li>\r\n</ul>\r\nSupported Architectures:\r\n<ul>\r\n <li>32-Bit (x86)</li>\r\n <li>64-Bit (x64)</li>\r\n</ul>\r\nHardware Requirements:\r\n<ul>\r\n <li>Computer that has a 2.2GHz or faster processor</li>\r\n <li>1 GB RAM for x86</li>\r\n <li>8 GB of available hard disk space</li>\r\n</ul>\r\nPrerequisites:\r\n<ul>\r\n <li>Microsoft Visual Studio Team Foundation Server 2010 SP1</li>\r\n</ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n  <li>On this page, click Download to start the download.</li>\r\n  <li>To save the download on your computer so that you can install it later, click Save.</li>\r\n  <li>To cancel the installation, click Cancel.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29078",
+    "downloadPreload": true
+}

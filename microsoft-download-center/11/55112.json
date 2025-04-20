@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Identity Manager Hybrid Reporting Agent",
+    "downloadDescription": "Microsoft Identity Manager Hybrid Reporting Agent for Azure Audit Reporting",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MIMHReportingAgentSetup.exe",
+            "url": "https://download.microsoft.com/download/7/3/1/731d81e1-8c1d-4382-b8eb-e7e7367c0bf2/MIMHReportingAgentSetup.exe",
+            "size": "11983336",
+            "version": "3.1.41.0",
+            "datePublished": "7/15/2024 3:04:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Collect identity management activities across different MIM Service Systems. Hybrid audit reports show you identity management activity from Azure AD and Identity Manager.\r\nExport reporting data. In addition to viewing your audit reports in the Azure portal, you can also export the data to generate your own custom views.\r\nReduce reporting audit system infrastructure cost. Hybrid reporting audit in the cloud means you could eliminate on-premises reporting data-warehouse infrastructure.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.41.0",
+    "detailsSection_file_name": [
+        "MIMHReportingAgentSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "11.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/><B>Minimum Requirements </B><BR/>\r\n<UL>\r\n<LI>Microsoft Identity Manager 2016 SP1 (MIM2016SP1) Service</LI>\r\n<LI>Microsoft Identity Manager 2016 (MIM2016) Service</LI>\r\n<LI>Microsoft .NET 4.0 Framework</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<LI><a href=\"https://docs.microsoft.com/en-us/microsoft-identity-manager/understand-explore/identity-manager-hybrid-reporting-azure\">Microsoft Identity Manager Hybrid Reporting (Audit)</a></LI>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55112",
+    "downloadPreload": true
+}

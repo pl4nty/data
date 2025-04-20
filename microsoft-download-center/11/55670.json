@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft BizTalk Server 2013 CU6",
+    "downloadDescription": "Microsoft BizTalk Server 2013 CU6",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB4032678-JPN.exe",
+            "url": "https://download.microsoft.com/download/3/f/f/3ff13fc5-061f-4ca1-b4fd-88106d6bdd2d/BizTalk2013-KB4032678-JPN.exe",
+            "size": "20226072",
+            "version": "3.10.359.2",
+            "datePublished": "7/15/2024 4:47:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BizTalk2013-KB4032678-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/f/f/3ff13fc5-061f-4ca1-b4fd-88106d6bdd2d/BizTalk2013-KB4032678-ENU.exe",
+            "size": "18484760",
+            "version": "3.10.359.2",
+            "datePublished": "7/15/2024 4:47:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft BizTalk Server 2013 CU6",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.10.359.2",
+    "detailsSection_file_name": [
+        "BizTalk2013-KB4032678-JPN.exe",
+        "BizTalk2013-KB4032678-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "19.3 MB",
+        "17.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 7, Windows 8, Windows Server 2008 R2, Windows Server 2012, SQL Server 2008 R2 or SQL Server 2012\r\nMicrosoft .NET Framework 4 and .NET Framework 3.5 with Service Pack 1 (SP1)\r\nMicrosoft Visual Studio 2012\r\nMicrosoft Office Excel 2010 or 2013 \r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Run the downloaded .EXE from your hard drive and follow the instructions to complete the installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55670",
+    "downloadPreload": true
+}

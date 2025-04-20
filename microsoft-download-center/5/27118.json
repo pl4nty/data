@@ -1,0 +1,79 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Team Explorer Everywhere 2010 SP1 Language Pack",
+    "downloadDescription": "Language Pack for Team Explorer Everywhere 2010 SP1",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "TFSEclipsePlugin-NL1-UpdateSiteArchive-10.1.0-2.zip",
+            "url": "https://download.microsoft.com/download/6/2/7/6276ab41-07ff-4d66-8927-e70610896455/TFSEclipsePlugin-NL1-UpdateSiteArchive-10.1.0-2.zip",
+            "size": "630120",
+            "version": "10.1.0-2",
+            "datePublished": "5/15/2024 3:16:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TEE-CLC-NL1-10.1.0-2.zip",
+            "url": "https://download.microsoft.com/download/6/2/7/6276ab41-07ff-4d66-8927-e70610896455/TEE-CLC-NL1-10.1.0-2.zip",
+            "size": "257287",
+            "version": "10.1.0-2",
+            "datePublished": "5/15/2024 3:16:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "You can use the Team Explorer Everywhere Language Pack to add support for the French, German, Japanese or Brazilian Portuguese languages in the Team Foundation Server Plug-in for Eclipse and the Command-line Client installed as part of Team Explorer Everywhere 2010 Service Pack 1.  <br /><br />The file <i>TFSEclipsePlugin-NL1-UpdateSiteArchive-10.1.0-2.zip</i> is the language pack for the Team Foundation Server Plug-in for Eclipse and the file <i>TEE-CLC-NL1-10.1.0-2.zip</i> is the language pack for the Command-line Client.  See the <a href=\"#Instructions\">instructions</a> section for more information on installation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.1.0-2",
+    "detailsSection_file_name": [
+        "TFSEclipsePlugin-NL1-UpdateSiteArchive-10.1.0-2.zip",
+        "TEE-CLC-NL1-10.1.0-2.zip"
+    ],
+    "detailsSection_file_size": [
+        "615.4 KB",
+        "251.3 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Requires Visual Studio Team Explorer Everywhere 2010 SP1.<br /><br />\r\n\r\nHardware:  1 GHz or faster processor.  1 GB RAM or more.  1 GB of available hard-disk space; a portion of this disk space will be freed after installation if the original download package is removed from the hard drive.<br />\r\n<br />\r\nOperating Systems:  Windows XP SP2 , Windows Vista, or Windows 7 (x86, x64), or Linux with GLIBC 2.3 to 2.11 (x86, x86_64, PowerPC), or Mac OS X 10.5 to 10.6 (PowerPC, Intel), or Solaris 8, 9, 10 (SPARC, x86, x86-64), or AIX 5.2 to 6.1 (POWER), or HP-UX 11i v1 to v3 (PA-RISC, Itanium).<br />\r\n<br />\r\nAny of the following IDEs:<br />\r\n-Eclipse 3.2 to 3.6 on Windows, Linux, Mac OS X, Solaris, AIX, or HP-UX.<br />\r\n-IBM Rational Application Developer 7.0 to 7.5.<br />\r\n-Additional IDEs based on Eclipse 3.2 to 3.6 are supported including Adobe Flex Builder 3  and Aptana Studio 2.0.<br />\r\n<br />\r\nAny of the following versions of the Java runtime:<br />\r\n- Sun Java\u2122 1.5 to 6, or IBM Java\u2122 1.5 to 6 on Microsoft Windows<br />\r\n- Apple Java\u2122 1.5 to 6 on Mac OS X<br />\r\n- Sun Java\u2122 1.5 to 6 on Linux or Solaris<br />\r\n- IBM Java\u2122 1.5 to 6 on Linux or AIX<br />\r\n- HP Java\u2122 1.5 to 6 on HP-UX<br />\r\n<br />\r\nRequires Visual Studio 2005 Team Foundation Server or Visual Studio 2008 Team Foundation Server or Visual Studio Team Foundation Server 2010.<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "HP-UX",
+        "IBM AIX",
+        "Solaris",
+        "Unix",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "        Installing the Team Foundation Server Plug-in and the Command-line Client Language\r\n        Pack<br /><br />\r\n\r\n        You can use the Team Explorer Everywhere Language Pack to add support for the following\r\n        languages in the Team Foundation Server Plug-in and the Command-line Client.<br /><br />\r\n    <ul>\r\n        <li>French </li>\r\n        <li>German </li>\r\n        <li>Japanese </li>\r\n        <li>Brazilian Portuguese </li>\r\n    </ul>\r\n    <br />\r\n    <b>Prerequisites</b><br /><br />\r\n    \r\n        You must have already installed Team Explorer Everywhere 2010 Service Pack 1 and \r\n        the desired language version of Team Foundation Server 2010 to use this language\r\n        pack.<br /><br />\r\n\r\n        <b>Adding Additional Languages to the Team Foundation Server Plug-in For Eclipse</b><br /><br />\r\n\r\n        You can install the language pack plug-in to display messages and windows using\r\n        the chosen Eclipse language if supported by the language pack. If a particular message\r\n        is not available for the chosen language then the default English version will be\r\n        displayed.<br /><br />\r\n\r\n\r\n        Note: You must have Team Explorer Everywhere 2010 Service Pack 1 installed\r\n        to make use of this language pack. In addition, you must install the Eclipse product\r\n        language pack for your language and configure Eclipse to use it. See \r\n        <a href=\"http://www.eclipse.org/babel/\">http://www.eclipse.org/babel/</a> for more information on how to download and\r\n        configure product language packs for Eclipse.<br /><br />\r\n\r\n        <b>To install the Team Explorer Everywhere additional languages into Eclipse</b><br /><br />\r\n    <ol>\r\n        <li>\r\n                Open Eclipse.<br/>\r\n        </li>\r\n        <li>\r\n                On the <b>Help</b> menu, click <b>Install New Software</b>.\r\n                The <b>Install</b> dialog box appears.<br/>\r\n        </li>\r\n        <li>\r\n                Click <b>Add</b>.\r\n                The <b>Add Site</b> dialog box appears.<br/>\r\n        </li>\r\n        <li>\r\n                In <b>Name</b>, type <b>Local Team Explorer Everywhere Language Pack archive</b>.<br/>\r\n        </li>\r\n        <li>\r\n                Click <b>Archive</b>.<br/>\r\n        </li>\r\n        <li>\r\n                Specify the location of the archive file and click <b>Open</b>.\r\n                Selected the downloaded archive file TFSEclipsePlugin-NL1-UpdateSiteArchive-10.1.0-2.zip.<br/>\r\n        </li>\r\n        <li>\r\n                Click <b>OK</b>.<br/>\r\n        </li>\r\n        <li>\r\n                In the list of features in the <b>Install</b> dialog box, select the check box that\r\n                corresponds to Team Explorer Everywhere.<br/>\r\n        </li>\r\n        <li>\r\n                Click <b>Next</b> two times.<br/>\r\n        </li>\r\n        <li>\r\n                Accept the Microsoft Software License Terms, and then click <b>Finish</b>.<br/>\r\n        </li>\r\n        <li>\r\n                Restart Eclipse when prompted.\r\n        </li>\r\n    </ol>\r\n<br /><br />\r\n    <b>Adding Additional Languages to the Cross-platform Command-line Client for Team\r\n            Foundation Server</b><br /><br />\r\n    \r\n        You can install the language pack to provide additional language support to the\r\n        cross-platform command-line client for Team Foundation Server. Locale-specific environment\r\n        variables must be configured for your desired language and character encoding, and\r\n        your terminal program must be configured to display characters in this encoding.\r\n        See the locale(1) manual page and the documentation for your terminal program for\r\n        more information.<br /><br />\r\n\r\n        <b>To install the Cross-Platform Command-Line Client additional languages</b><br /><br />\r\n    <ol>\r\n        <li>\r\n                Unzip the archive file (TEE-CLC-NL1-10.1.0-2.zip) that contains the languages into\r\n                the same location as the cross-platform command-line client.\r\n        </li>\r\n    </ol>\r\n        The archive file contains a single com.microsoft.tfs.client.clc.nl1.jar file that\r\n        is extracted to the /lib directory inside the command-line client installation.\r\n        Confirm that this file is in your installation\u2019s /lib directory to verify that the\r\n        installation has been successful.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27118",
+    "downloadPreload": true
+}

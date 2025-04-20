@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Server 2003 for Itanium-based Systems (KB3020338)",
+    "downloadDescription": "Install this update to resolve issues in Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsServer2003-KB3020338-ia64-ENU.exe",
+            "url": "https://download.microsoft.com/download/b/d/c/bdcfa9f7-f23d-48aa-885f-35e779b928a5/WindowsServer2003-KB3020338-ia64-ENU.exe",
+            "size": "1915096",
+            "version": "3020338",
+            "datePublished": "7/15/2024 3:55:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Install this update to resolve issues in Windows. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article for more information. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3020338",
+        "name": "KB3020338"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3020338",
+    "detailsSection_file_name": [
+        "WindowsServer2003-KB3020338-ia64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article",
+            "url": "http://support.microsoft.com/kb/3020388"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "45717",
+    "downloadPreload": true
+}

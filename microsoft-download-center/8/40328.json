@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Country-specific Update for India \u2013 Tax Threshold",
+    "downloadDescription": "This white paper describes the country-specific update released for India in July 2013 for Microsoft Dynamics AX 2012 R2. See Microsoft Knowledge Base article 2850782 for hotfix download information.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country specific update for India_AX2012R2_TaxThreshold.pdf",
+            "url": "https://download.microsoft.com/download/4/7/5/47509a16-9c75-4d04-aa24-8e31ee37465e/Country specific update for India_AX2012R2_TaxThreshold.pdf",
+            "size": "466480",
+            "version": "2012",
+            "datePublished": "5/15/2024 3:28:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes an update to Microsoft Dynamics \u00ae AX 2012 R2 that is specific to users in India. For more information that is specific to India, refer to the Microsoft Dynamics AX Help on TechNet. Information that is specific to India includes (IND) in the title. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Country specific update for India_AX2012R2_TaxThreshold.pdf"
+    ],
+    "detailsSection_file_size": [
+        "455.5 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40328",
+    "downloadPreload": true
+}

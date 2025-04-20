@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "ASRRcmReprotectAgent_1.32.8144.22850",
+    "downloadDescription": "ASRRcmReprotectAgent_1.32.8144.22850",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "RcmReprotectAgentSetup.msi",
+            "url": "https://download.microsoft.com/download/3/1/2/31245ef1-0c83-4291-a63b-5771063c4d89/RcmReprotectAgentSetup.msi",
+            "size": "16281600",
+            "version": "1.32.8144.22850",
+            "datePublished": "11/15/2023 5:27:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRRcmReprotectAgent_1.32.8144.22850",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.32.8144.22850",
+    "detailsSection_file_name": [
+        "RcmReprotectAgentSetup.msi"
+    ],
+    "detailsSection_file_size": [
+        "15.5 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103576",
+    "downloadPreload": true
+}

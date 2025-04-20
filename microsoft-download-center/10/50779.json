@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "DR for SQL Server - Sales",
+    "downloadDescription": "This zipped folder includes sales materials like telesales scripts, discussion guide, datasheet, personas  for CSP partners interested in launching SQL Disaster Recovery for hosted or on-premises data in Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DR for SQL Server - Sales.zip",
+            "url": "https://download.microsoft.com/download/6/3/a/63ab1e3e-43e0-4b89-8aff-01bc3853d4c9/DR for SQL Server - Sales.zip",
+            "size": "1149032",
+            "version": "January 2014",
+            "datePublished": "6/13/2024 12:46:15 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes sales materials like telesales scripts, discussion guide, datasheet, personas  for CSP partners interested in launching SQL Disaster Recovery for hosted or on-premises data in Azure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "DR for SQL Server - Sales.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50779",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Presence Bootstrapping Tool for Lync Server 2010",
+    "downloadDescription": "The Presence Bootstrapping Tool for Lync Server 2010 sets default presence policies for identities that have never previously signed into a Lync Server client, allowing a user's presence status to be visible to other users according to the default presence privacy mode settings.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PresenceBootstrapper.msi",
+            "url": "https://download.microsoft.com/download/6/9/1/691aafce-6735-4407-95ec-a852b2654ba8/PresenceBootstrapper.msi",
+            "size": "565984",
+            "version": "7577.4111",
+            "datePublished": "7/15/2024 3:11:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Presence Bootstrapping Tool for Lync Server 2010 sets default presence policies for identities that have never previously signed into a Lync Server client.  This utility is intended to be run once for users of some qualified client applications that are not released by Microsoft (for example, Polycom KIRK).  \r\nAny qualified partner solution that requires use of this tool will explicitly direct you to it.  Use this tool only if directed by a qualified partner solution provider or by documentation for the users of that solution.\r\n\r\nFor further information please see Knowledge Base article <a href=\"http://support.microsoft.com/kb/2737277\">2737277</a>.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2737277",
+        "name": "KB2737277"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7577.4111",
+    "detailsSection_file_name": [
+        "PresenceBootstrapper.msi"
+    ],
+    "detailsSection_file_size": [
+        "552.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "The following are the hardware and software requirements for installing Presence Bootstrapping Tool for Lync Server 2010. \r\n<ul><li> The target platform must be a 64-bit computer.</li></ul>\r\n<b>Note: </b>Auto-provisioned applications cannot be deployed on computers running Windows 7 or Windows Vista. \r\n<ul>\r\n    <li>Unified Communications Managed API(UCMA) 3.0 Runtime </li>\r\n    <li>Microsoft .NET Framework 3.5 Service Pack 1 or later service packs\r\n       <ul>\r\n            <li>Windows Server 2008 SP2 and Windows Vista: Microsoft .NET Framework 3.5 Service Pack 1. </li>\r\n           <li>Windows Server 2008 R2: UcmaRuntimeSetup.exe automatically installs .NET Framework 3.5 SP1</li>\r\n           <li>Windows 7 comes with .NET 3.5.</li>\r\n      </ul>\r\n</li></ul>\r\n<br/>\r\n<b>Note: </b> If .NET Framework 4.0 is installed, .NET Framework 3.5 SP 1 (or later service pack) must still be installed. \r\n<br/>\r\n<b>Antivirus software:</b>\r\n      <ul>\r\n           <li>Antivirus software is not recommended for Microsoft Lync Server 2010 computers. For optimal performance for a server that must run antivirus software, include all Lync Server 2010 computers in the antivirus software's exception list.</li>\r\n     </ul>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "Presence Bootstrapping Tool for Lync Server 2010 must be set up and configured as a Lync trusted application before running. The Lync trusted application ID must be set in PresenceBootstrapper.exe.config. \r\n<br/>\r\nSee <a href=\"http://msdn.microsoft.com/en-us/library/hh347354.aspx\">http://msdn.microsoft.com/en-us/library/hh347354.aspx</a> for information on configuring a trusted application. Note that optional steps pertaining to Active Directory Contact Objects may be ignored. \r\n<br/>\r\nThe utility can be run on a single identity or multiple identities.  \r\nExamples:\r\n<ul><li>PresenceBootstrapper sip:adamb@fabrikam.com</li>\r\n<li>PresenceBootstrapper -file URIs.txt where URIs.txt contains a line separated list of URIs:\r\n<ul><li>sip:adamb@fabrikam.com</li>\r\n<li>sip:joses@fabrikam.com</li>\r\n<li>sip:joeb@fabrikam.com</li></ul></li></ul>\r\n<br/>\r\nNotes-\r\n<ul><li>URIs processed will temporarily appear available during execution of this utility, and should return to offline after a few seconds.</li>\r\n<li>When running PresenceBootstrapper, you may experience delays of a minute or more during application startup before URI processing begins. </li></ul>\r\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34590",
+    "downloadPreload": true
+}

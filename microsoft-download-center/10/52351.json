@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Speller Challenge TREC Data",
+    "downloadDescription": "This download is provided for the purpose of the Speller Challenge. Last published: January 14, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Speller Challenge TREC Dataset.zip",
+            "url": "https://download.microsoft.com/download/c/4/0/c40c9c78-8b4a-4550-a4b3-7b14ddaafa93/Speller Challenge TREC Dataset.zip",
+            "size": "337362",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download is provided for the purpose of the Speller Challenge. This is a development dataset based on the publicly available TREC queries (2008 Million Query Track). Queries are annotated by using the same guidelines and processes as in the creation of the Bing Test Dataset.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Speller Challenge TREC Dataset.zip"
+    ],
+    "detailsSection_file_size": [
+        "329.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52351",
+    "downloadPreload": true
+}

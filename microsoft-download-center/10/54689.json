@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Language Translation (MSLT) Corpus",
+    "downloadDescription": "The Microsoft Speech Language Translation Corpus release contains conversational, bilingual speech test and tuning data for English, French, and German collected by Microsoft Research.  The package includes audio data, transcripts, and translations and allows end-to-end testing of spoken language translation systems on real-world data.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSLT_Corpus.zip",
+            "url": "https://download.microsoft.com/download/1/4/8/1489bf45-93aa-4b38-b4da-5ca5678b2121/MSLT_Corpus.zip",
+            "size": "2138729988",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:38:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Speech Language Translation Corpus release contains\r\nconversational, bilingual speech test and tuning data for English, French, and\r\nGerman collected by Microsoft Research.  The package includes audio data,\r\ntranscripts, and translations and allows end-to-end testing of spoken language\r\ntranslation systems on real-world data.\r\n\r\nAll data contained in this release has been created using a non-public version\r\nof Skype Translator.  NO PRIVATE USER DATA HAS BEEN COLLECTED OR RELEASED.\r\nInstead we hired consultants to have loosely constrained conversations, giving\r\nthem a list of predefined topics to talk about and a few related questions\r\nto start the conversations.  Topical constraints were loosely enforced so as\r\nto ensure free-form conversations.  See the IWSLT paper for more details.\r\n\r\nWe release two sets, one containing Test data, the second containing Dev data.\r\nEach set contains data for three languages: English, French, and German.\r\nFor every utterance, we include the audio file in WAVE format, the disfluent\r\ntranscript, a cleaned up, segmented and fluent version of the transcript, and\r\nthe translation from English into French or German or vice versa.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSLT_Corpus.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": " <UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": " <UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54689",
+    "downloadPreload": true
+}

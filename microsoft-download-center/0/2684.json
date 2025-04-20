@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Implementing an ADFS Solution for Microsoft Dynamics CRM by Using IAG",
+    "downloadDescription": "This paper includes high-level guidance on using IAG to implement an ADFS solution for Microsoft Dynamics CRM 4.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Implementing an ADFS Solution for Microsoft Dynamics CRM by Using IAG.docx",
+            "url": "https://download.microsoft.com/download/d/0/1/d01313c0-bff2-41be-8e94-5c288cb964a7/Implementing an ADFS Solution for Microsoft Dynamics CRM by Using IAG.docx",
+            "size": "2135033",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "By default, an on-premise implementation of Microsoft Dynamics CRM 4.0 leverages Active Directory (Integrated Windows) Authentication to accommodate access by internal users. However, many businesses also require the ability to provide external users with access to the highly sensitive information that is stored in the CRM system and to accommodate this access without having to create Active Directory trusts.\r\n\r\nBy using a combination of IAG and Active Directory Federation Services (ADFS) to establish an authentication gateway, companies can provide access to CRM resources by any identity from any organization, from any computer, complete with strong authentication and full Single Sign On from the end user to the internal CRM system with a full audit trail (including username and source IP).\r\n\r\nThis white paper is designed to :\r\n- Explain the business need and common business scenarios for using ADFS and IAG\r\n- Summarize the functionality and benefits associated with using ADFS\r\n- Summarize the functionality and benefits associated with using IAG\r\n- Explain the architecture associated with an ADFS solution for Microsoft Dynamics CRM that leverages IAG\r\n- Illustrate the solution architecture by providing and describing a sample deployment\r\n- Summarize the process for and provide high-level guidance on implementing an ADFS solution for Microsoft Dynamics CRM by using IAG\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Implementing an ADFS Solution for Microsoft Dynamics CRM by Using IAG.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />\n<b>Additional Requirements</b>\n<br />\nMicrosoft Dynamics CRM 4.0\r\nIntelligent Application Gateway (IAG) 2007 SP2<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, click <b>Go</b>, and then do one of the following:<br />\n<br />\nTo start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.<br />\n<br />\nTo copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2684",
+    "downloadPreload": true
+}

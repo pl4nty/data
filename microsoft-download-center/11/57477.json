@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2010 Service Pack 1 (KB2635973)",
+    "downloadDescription": "This update will address a crash in localized versions of Visual Studio 2010 SP1 that may occur when opening a Visual Studio Solution.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS10SP1-KB2635973-x86.exe",
+            "url": "https://download.microsoft.com/download/1/5/7/15745fc9-60e2-4b18-affd-58eca2ea6623/VS10SP1-KB2635973-x86.exe",
+            "size": "1603696",
+            "version": "2010",
+            "datePublished": "7/15/2024 4:56:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update will address a crash in localized versions of Visual Studio 2010 SP1 that may occur when opening a Visual Studio Solution. This crash occurs in Microsoft.VisualStudio.Design.dll's VSTypeResolutionService.get_References.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "VS10SP1-KB2635973-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<OL>\r\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\r\n  <LI>Do one of the following:</LI>\r\n  <UL>\r\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\r\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\r\n</OL>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "kb Article 2635973",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=224792"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "57477",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Optimizing Azure Site Recovery (ASR) with Riverbed\u00ae SteelHead\u2122 WAN Optimizers",
+    "downloadDescription": "This document captures the network optimization delivered by a Riverbed SteelHead solution to optimize Azure bound replication traffic through ASR. The experiments were conducted in the Microsoft\u00ae Engineering Excellence Center (EEC) lab.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure Site Recovery and Riverbed SteelHead.docx",
+            "url": "https://download.microsoft.com/download/4/7/0/470893fd-fdab-48ee-a0ac-46356ccb72c6/Azure Site Recovery and Riverbed SteelHead.docx",
+            "size": "880156",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:04:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Site Recovery (ASR) enables customers to replicate their virtual machines to Microsoft Azure for business continuity and disaster recovery purposes. Virtual machines tend to be quite large. Consequently, customer\u2019s often send large amounts of replication traffic to Azure based on the guest workload pattern. Sending large amounts of data can severely impact your corporate internet connection and potentially lead to longer recovery point objectives (RPO). To address both these issues, an on premise Riverbed SteelHead WAN appliance was paired with an Azure hosted SteelHead virtual machine to optimize ASR traffic. ASR and the Riverbed SteelHeads work out of the box without minimal configuration & deployment change. This document captures the network optimization delivered by Riverbed SteelHead on the Azure bound replication traffic through ASR. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure Site Recovery and Riverbed SteelHead.docx"
+    ],
+    "detailsSection_file_size": [
+        "859.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To start the download, click the Download button, and then do one of the following:\r\n\u2022To start the download immediately, click Open.\r\n\u2022To copy the download to your computer for viewing at a later time, click Save.\r\n\u2022To cancel the download, click Cancel. \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44571",
+    "downloadPreload": true
+}

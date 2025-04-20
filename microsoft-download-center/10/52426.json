@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Scalable Fabric",
+    "downloadDescription": "Scalable Fabric is a task management system for the Windows desktop. Last published: August 8, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Scalable Fabric Installer.msi",
+            "url": "https://download.microsoft.com/download/2/a/7/2a7d76fe-271e-4e70-ab57-792cc43ca0df/Scalable Fabric Installer.msi",
+            "size": "990720",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Scalable Fabric is a task management system for the Windows desktop. A central focus area, defined by you, contains windows that behave in the traditional way. When you drag a window into the periphery, it becomes smaller and continues to get smaller the closer you get to the edge of the screen. This makes it possible to keep windows open all the time, and change \"minimize\" to mean \"return to the periphery\". Groups of windows can easily be created to represent different user tasks. Switching between groups is done simply by clicking on the task marker flag.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "Scalable Fabric Installer.msi"
+    ],
+    "detailsSection_file_size": [
+        "967.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52426",
+    "downloadPreload": true
+}

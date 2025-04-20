@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Papers Trade Agreement Evaluation Policies ",
+    "downloadDescription": "This document explains implementation considerations for the trade agreement (TAE) policies feature in Microsoft Dynamics AX 2012.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Trade agreement evaluation policies in Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/a/e/7/ae7b70b3-225d-4e1a-bcce-b2a96138e133/Trade agreement evaluation policies in Microsoft Dynamics AX 2012.pdf",
+            "size": "508361",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:29:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The TAE policies feature is used in Microsoft Dynamics AX 2012 in the context of purchase orders, sales orders, and sales quotations. It prevents the system from accidentally evaluating and overwriting price and discount fields that are populated manually or by an external source. This document is intended for developers and provides detailed information about applying TAE policies, the architecture of the feature, and how to extend and debug it. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Trade agreement evaluation policies in Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "496.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29863",
+    "downloadPreload": true
+}

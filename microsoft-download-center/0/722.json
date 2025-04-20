@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 R2 System Views Map",
+    "downloadDescription": "The Microsoft SQL Server 2008 R2 System Views Map shows the key system views included in SQL Server 2008 and 2008 R2, and the relationships between them. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL_Server_2008R2_System_Views_Map.pdf",
+            "url": "https://download.microsoft.com/download/0/6/9/06952611-7528-4cee-bbd5-29dc44315dc7/SQL_Server_2008R2_System_Views_Map.pdf",
+            "size": "650610",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_Server_2008R2_System_Views_Map.xps",
+            "url": "https://download.microsoft.com/download/0/6/9/06952611-7528-4cee-bbd5-29dc44315dc7/SQL_Server_2008R2_System_Views_Map.xps",
+            "size": "714087",
+            "version": "1",
+            "datePublished": "7/15/2024 3:13:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2008 R2 System Views Map shows the key system views included in Microsoft SQL Server 2008 and SQL Server 2008 R2, and the relationships between them. The map is similar to the Microsoft SQL Server 2008 version and includes updates which are also applicable for the Microsoft SQL Server 2008.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "SQL_Server_2008R2_System_Views_Map.pdf",
+        "SQL_Server_2008R2_System_Views_Map.xps"
+    ],
+    "detailsSection_file_size": [
+        "635.4 KB",
+        "697.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".XPS file requires XPS Viewer (it may be already installed on your system or available as a free download from  http://www.microsoft.com/whdc/xps/viewxps.mspx) \r\n.PDF file requires Adobe Reader, version 5.x or newer (available as a free download from http://www.adobe.com/products/acrobat/).",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Download either .XPS or .PDF file to view its contents. The content in .XPS and .PDF should be identical.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server Books Online",
+            "url": "http://msdn.microsoft.com/en-us/library/ms130214.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "722",
+    "downloadPreload": true
+}

@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 White Paper: Analysis Services Performance Guide",
+    "downloadDescription": "This white paper describes how application developers can apply query and processing performance-tuning techniques to their SQL Server 2008 Analysis Services OLAP solutions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SSASPerfGuide2008.docx",
+            "url": "https://download.microsoft.com/download/0/3/0/030d780d-e47a-4ae9-b38f-208106b81abd/SSASPerfGuide2008.docx",
+            "size": "1104349",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Because Microsoft SQL Server Analysis Services query and processing performance tuning is a fairly broad subject, this white paper organizes performance tuning techniques into the following three segments.\n<br /><br />\n<b>Enhancing Query Performance</b> - Query performance directly impacts the quality of the end user experience. As such, it is the primary benchmark used to evaluate the success of an online analytical processing (OLAP) implementation. Analysis Services provides a variety of mechanisms to accelerate query performance, including aggregations, caching, and indexed data retrieval. In addition, you can improve query performance by optimizing the design of your dimension attributes, cubes, and Multidimensional Expressions (MDX) queries.\n<br /><br /> \n<b>Enhancing Processing Performance</b> - Processing is the operation that refreshes data in an Analysis Services database. The faster the processing performance, the sooner users can access refreshed data. Analysis Services provides a variety of mechanisms that you can use to influence processing performance, including efficient dimension design, effective aggregations, partitions, and an economical processing strategy (for example, incremental vs. full refresh vs. proactive caching).\n<br /><br />\n<b>Tuning Server Resources</b> \u2013 There are several engine settings that can be tuned that affect both querying and processing performance.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SSASPerfGuide2008.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI>Microsoft Word 2007</LI><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button on this page and choose to open the document immediately or save it to a location on your computer for later reading.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17303",
+    "downloadPreload": true
+}

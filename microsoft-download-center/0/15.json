@@ -1,0 +1,195 @@
+{
+    "error": "",
+    "downloadTitle": "ActiveSync 4.5",
+    "downloadDescription": "Microsoft ActiveSync 4.5 is the latest sync software release for Windows Mobile-powered devices. ActiveSync provides a great synchronization experience with Windows\u00ae-powered PCs and Microsoft Outlook right out of the box.  Note: Microsoft ActiveSync works only with Windows XP SP2 or earlier.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "readme.doc",
+            "url": "https://download.microsoft.com/download/5/4/6/5467c040-a935-4987-aa30-5dcbc36a57db/readme.doc",
+            "size": "66048",
+            "version": "4.5",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "setup.msi",
+            "url": "https://download.microsoft.com/download/5/4/6/5467c040-a935-4987-aa30-5dcbc36a57db/setup.msi",
+            "size": "7886336",
+            "version": "4.5",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "eula.rtf",
+            "url": "https://download.microsoft.com/download/5/4/6/5467c040-a935-4987-aa30-5dcbc36a57db/eula.rtf",
+            "size": "138409",
+            "version": "4.5",
+            "datePublished": "7/15/2024 3:26:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Microsoft ActiveSync 4.5 is the latest sync software release for Windows Mobile-powered devices. ActiveSync provides a great synchronization experience with Windows\u00ae-powered PCs and Microsoft Outlook right out of the box.<br />\n<br />\n\u2022 Faster file transfer speed and photo sync via Outlook are only available for Windows Mobile 5.0 powered devices. <br />\n\u2022 Remote PC Sync (via WiFi or LAN) has been removed due to Enterprise customer feedback around security issues. <br />\n\u2022 Customers using Microsoft Exchange 2003 Service Pack 2 with devices running the Messaging and Security Feature Pack for Windows Mobile 5.0 will benefit from the following feature enhancements included in ActiveSync 4.5: Direct Push Technology, local device wipe, and certificate powered authentication to Microsoft Exchange.<br />\n\u2022 Microsoft\u00ae Outlook\u00ae 2000 is not supported by ActiveSync 4.5. It is highly recommended that users upgrade to Microsoft\u00ae Outlook\u00ae 2003 messaging and collaboration client.<br />\n\u2022 Conversion of database files for use on a mobile device is not supported by ActiveSync 4.5. On previous versions, this feature was limited to devices running Windows Mobile software for Pocket PC 2003 and earlier.<br />\n\u2022 Conversion of font files for use on a mobile device is not supported by ActiveSync 4.5. On previous versions, this feature was limited to devices running Windows Mobile software for Pocket PC 2003 and earlier.<br />\n*Connectivity and synchronization may require separately purchased equipment and/or wireless products (e.g., WiFi card, network software, server hardware, and/or redirector software). Service plans are required for Internet, WiFi and phone access. Features and performance may vary by service provider and are subject to network limitations. See device manufacturer, service provider and/or corporate IT department for details.<br/><br/>\nNote: Microsoft ActiveSync works only with Windows XP SP2 or earlier. If you have Windows Vista, your synchronization settings will be managed through the Windows Mobile Device Center. Windows Mobile Device Center is available through the <a href=\"http://www.microsoft.com/windowsmobile/devicecenter.mspx\"> Windows Mobile Device Center page</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.5",
+    "detailsSection_file_name": [
+        "readme.doc",
+        "setup.msi",
+        "eula.rtf"
+    ],
+    "detailsSection_file_size": [
+        "64.5 KB",
+        "7.5 MB",
+        "135.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems: <br />\n\u2022\tWindows 2000 Service Pack 4; Windows Server 2003 Service Pack 1; Windows Server 2003 Service Pack 1 for Itanium-based Systems; Windows Server 2003, Standard x64 Edition; Windows XP Media Center Edition; Windows XP Professional x64 Edition ; Windows XP Service Pack 1; Windows XP Service Pack 2; Windows XP Tablet PC Edition<br />\n\u2022\tMicrosoft\u00ae Outlook\u00ae XP, Microsoft\u00ae Outlook\u00ae 2003 or Microsoft Outlook 2007\u00ae messaging and collaboration clients required for synchronization to the desktop or portable computer of e-mail, calendar, contacts, tasks, and notes. (Outlook 2007 is recommended)<br />\n\u2022\tMicrosoft\u00ae Office XP, Microsoft\u00ae Office 2003, or Microsoft\u00ae Office 2007<br />\n\u2022\tMicrosoft\u00ae Internet Explorer 6. or later (required)<br />\n\u2022\tMicrosoft\u00ae Systems Management Server 2.0<br />\n<br />\nThe following mobile device operating systems are supported by ActiveSync 4.5:<br />\n\u2022\tMicrosoft\u00ae Windows Mobile\u00ae 6.0<br />\n\u2022\tMicrosoft\u00ae Windows Mobile\u00ae 5.0<br />\n\u2022\tMessaging and Security Feature Pack for Microsoft\u00ae Windows Mobile\u00ae 5.0<br />\n\u2022\tMicrosoft\u00ae Windows Mobile\u00ae 2003 Second Edition<br />\n\u2022\tMicrosoft\u00ae Windows Mobile\u00ae 2003<br />\n\u2022\tMicrosoft\u00ae Pocket PC 2002, Microsoft\u00ae <br />\n\u2022\tMicrosoft\u00ae Smartphone 2002, Microsoft\u00ae",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Embedded",
+        "Windows XP Embedded Service Pack 1",
+        "Windows XP Embedded Service Pack 2 ",
+        "Windows XP for Itanium-based Systems Version 2003",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional 64-Bit Edition (Itanium) ",
+        "Windows XP Professional 64-Bit Edition (Itanium) 2003",
+        "Windows XP Professional Edition ",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Starter Edition",
+        "Windows XP Tablet PC Edition "
+    ],
+    "installInstructionSection": "1. Install the ActiveSync setup software (7.8 MB) to your PC by clicking <b>Setup.msi</b> below. <br />\n2. Select <b>Run</b> and follow the instructions on the screen.",
+    "additionalInformationSection": "Stay up-to-date with information on the latest Microsoft ActiveSync upgrades, setup help and more from Windows Mobile:<br />\n<br />\n\u2022 Receive the Windows Mobile Newsletter \u2014 your source for information on Microsoft ActiveSync and other mobile software upgrades, special offers, new Windows Mobile devices, tips and tricks, cool downloads and more.<br />\n\u2022 Get going quickly with help, Getting Started tutorials, and the E-mail Setup Wizard<br />\n\u2022 Personalize your device with free ringtones* <br />\n\u2022 Work smarter, play harder with free productivity and entertainment software*<br />\n<br />\n*subject to limitations and restrictions, limited time offer, U.S. residents only.<br />\n<br />\nRegister and visit http://www.windowsmobile.com/domore to receive free ringtones and more.",
+    "relatedResourcesSection": [
+        {
+            "title": "sign Up for Microsoft Download Notifications",
+            "url": "http://www.microsoft.com/downloads/render.aspx?displaylang=en&content=notifications"
+        },
+        {
+            "title": "activeSync Troubleshooting Guide",
+            "url": "http://www.microsoft.com/windowsmobile/help/activesync/default.mspx"
+        },
+        {
+            "title": "windows Mobile Home",
+            "url": "http://www.microsoft.com/windowsmobile/default.mspx"
+        },
+        {
+            "title": "windows Mobile Community Resources",
+            "url": "http://www.microsoft.com/windowsmobile/communities/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "15",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)",
+    "downloadDescription": "C++ Runtime v11.0 framework package for Desktop Bridge (Project Centennial)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vc_uwpdesktop.110.exe",
+            "url": "https://download.microsoft.com/download/3/b/c/3bc60f47-6a7c-4d46-8cfb-c2e746ef336e/vc_uwpdesktop.110.exe",
+            "size": "44609592",
+            "version": "2015",
+            "datePublished": "7/15/2024 4:18:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "C++ Runtime framework packages help developers reference the C++ Runtime from their desktop apps that will be distributed through the Store. These framework packages are provided to help developers convert their C++ desktop apps to UWP. \r\n<br/><br/>\r\nMultiple apps can specify a dependency on these framework packages. Once Store is ready to onboard the Centennial apps, the retail frameworks will also be distributed/updated through the Store, similar to the C++ UWP framework packages.\r\n<br/><br/>\r\nVersions supported: We are providing framework packages for version 11.0 of the C++ Runtime.\r\n<br/><br/>\r\nAfter installation succeeds: If you look under the folder \u201cProgram Files (x86)\\Microsoft SDKs\\Windows Kits\\10\\ExtensionSDKs\u201d on your machine, you will see the Microsoft.VCLibs.Desktop.110 folder that contain the framework packages for C++ Runtime 11.0. \r\n<br/><br/>\r\nYou can install these packages manually using Add-AppxPackage cmdlet. In your converted app\u2019s AppxManifest.xml, specify a PackageDependency to the framework package by adding the following element under the Dependencies tag:\r\n<br/><br/>\r\nPackageDependency Name=\"Microsoft.VCLibs.110.00.UWPDesktop\" MinVersion=\"11.0.61135.0\"  Publisher=\"CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US\" \r\n<br/><br/>\r\nNow when you deploy your app, it will be able to load the C++ Runtime DLLs from the dependency package.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "vc_uwpdesktop.110.exe"
+    ],
+    "detailsSection_file_size": [
+        "42.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10\r\n<br/><br/>\r\nRequired Hardware Configuration \r\n<br/><br/>\r\nFor additional information on Operating System support, see the Visual Studio 2015 Compatibility page. Hardware Requirements:\r\n<ul>\r\n<li>1.6 GHz or faster processor</li>\r\n<li>1 GB of RAM (1.5 GB if running on a virtual machine) </li>\r\n<li>50 MB of available hard disk space</li>\r\n<li>5400 RPM hard drive</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "This will install the VC Redist 11.0 framework packages to your ExtensionSDKs folder. For your application to reference the VC runtime dlls, you need to manually install the framework packages using the add-appxpackage cmdlet. \r\n<br/><br/>\r\nRefer to the Details section above for the exact instructions. \r\n<br/><br/>\r\nInstall Instructions: \r\n<ul>\r\n<li>On this page, choose the Download button. </li>\r\n<li>Select the .exe option and then choose the Next button. </li>\r\n<li>To install now, choose the Run button. </li>\r\n<li>To install later, choose the Save button. </li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53340",
+    "downloadPreload": true
+}

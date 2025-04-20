@@ -1,0 +1,296 @@
+{
+    "error": "",
+    "downloadTitle": "Service Pack 1 for Microsoft Dynamics CRM 2013 (KB 2941390)",
+    "downloadDescription": "Microsoft has released Service Pack 1 for Microsoft Dynamics CRM 2013.  SP1 contains new updates that improve security, performance, and stability. Additionally, SP1 is a roll up of all previously released updates. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Mui-KB2941390-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Mui-KB2941390-ENU-amd64.exe",
+            "size": "32966224",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Router-KB2941390-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Router-KB2941390-ENU-i386.exe",
+            "size": "16802824",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Router-KB2941390-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Router-KB2941390-ENU-amd64.exe",
+            "size": "16951304",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Mui-KB2941390-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Mui-KB2941390-ENU-i386.exe",
+            "size": "31707208",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Client-KB2941390-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Client-KB2941390-ENU-amd64.exe",
+            "size": "63922248",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Client-KB2941390-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Client-KB2941390-ENU-i386.exe",
+            "size": "56113592",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Server-KB2941390-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Server-KB2941390-ENU-amd64.exe",
+            "size": "197972672",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Tools-KB2941390-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Tools-KB2941390-ENU-amd64.exe",
+            "size": "1670784",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CRM2013-Srs-KB2941390-ENU-amd64.exe",
+            "url": "https://download.microsoft.com/download/b/7/5/b75c29f2-a88b-433f-a45a-312a72750752/CRM2013-Srs-KB2941390-ENU-amd64.exe",
+            "size": "20706144",
+            "version": "06.01.0000.0581",
+            "datePublished": "7/15/2024 3:24:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "Microsoft has released Service Pack 1 for Microsoft Dynamics CRM 2013 Server, Microsoft Dynamics CRM 2013 for Microsoft Office Outlook, Microsoft Dynamics CRM 2013 Language Packs, and Microsoft Dynamics CRM 2013 Email Router.<br />\n<br />\nFor more information about this release, see Microsoft Knowledge Base article 2941390:<br /><br /><a HREF=\"http://support.microsoft.com/default.aspx?kbid=2941390\">Service Pack 1 is available for Microsoft Dynamics CRM 2013</a> <br />\n<br />\nTo maintain parity between the application components of Microsoft Dynamics CRM 2013, this service pack includes packages for Microsoft Dynamics CRM Server, Microsoft Dynamics CRM for Outlook, Microsoft Dynamics CRM Language Packs, and Microsoft Dynamics CRM Email Router.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2941390",
+        "name": "KB2941390"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06.01.0000.0581",
+    "detailsSection_file_name": [
+        "CRM2013-Mui-KB2941390-ENU-amd64.exe",
+        "CRM2013-Router-KB2941390-ENU-i386.exe",
+        "CRM2013-Router-KB2941390-ENU-amd64.exe",
+        "CRM2013-Mui-KB2941390-ENU-i386.exe",
+        "CRM2013-Client-KB2941390-ENU-amd64.exe",
+        "CRM2013-Client-KB2941390-ENU-i386.exe",
+        "CRM2013-Server-KB2941390-ENU-amd64.exe",
+        "CRM2013-Tools-KB2941390-ENU-amd64.exe",
+        "CRM2013-Srs-KB2941390-ENU-amd64.exe"
+    ],
+    "detailsSection_file_size": [
+        "31.4 MB",
+        "16.0 MB",
+        "16.2 MB",
+        "30.2 MB",
+        "61.0 MB",
+        "53.5 MB",
+        "188.8 MB",
+        "1.6 MB",
+        "19.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Prerequisites:</b>\n<br />\n<ul><li>This service pack must be installed on a computer that is running Microsoft Dynamics CRM 2013.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click Download, and then click the file you want to download from the list.<br /><br />\n<b>Important:</b> The language pack must be installed before you can apply the service pack for that language pack. Download and install a language pack at <a HREF=\"http://www.microsoft.com/en-us/download/details.aspx?id=40340\">Microsoft Dynamics CRM 2013 Language Packs</a>. <br /><br />\n\n<br />\n\nTo install this service pack, do one of the following:<br />\n<ul><li>To start the installation immediately, click Run.</li>\n<li>To save the download to your computer for installation later, click Save. </li>\n<li>To cancel the download, click Cancel.</li></ul>",
+    "additionalInformationSection": "<b>Components also installed with this service pack </b>\n<br />\nThe following components, if not already installed, will be installed when you apply this service pack:\n<ul>\n<li>Visual C++ 2010 runtime </li>\n<li>ReportViewer 2010 control </li>\n</ul>\n<br /><br />\n<b>Hotfixes and updates that you have to manually enable or configure</b><br />\n<br />\nMicrosoft Dynamics CRM 2013 Service Pack 1 may contain hotfixes and updates that you must manually enable or configure. To enable or configure these hotfixes on the server that is running Microsoft Dynamics CRM 2013, see the \"Hotfixes and updates that you have to manually enable or configure\" section of the following Microsoft Knowledge Base article: <br />\n<br /><a HREF=\"http://support.microsoft.com/kb/2941390\">Service Pack 1 is available for Microsoft Dynamics CRM 2013 (KB 2941390)</a>\n<br />\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 4",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=0a391abd-25c1-4fc0-919f-b21f31ab88b7"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43109",
+    "downloadPreload": true
+}

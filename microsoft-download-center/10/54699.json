@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "DPM Tape Library Compatibility Test Tool",
+    "downloadDescription": "This download contains the tool to identify if the concerned Tape Library is Compatible with System Center Data Protection Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DPMLibraryTest.zip",
+            "url": "https://download.microsoft.com/download/4/b/a/4ba3398c-178c-43e7-ab86-903012444262/DPMLibraryTest.zip",
+            "size": "2759310",
+            "version": "1",
+            "datePublished": "7/15/2024 4:58:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "More information on how to run the tool can be found at <a href=\"https://technet.microsoft.com/en-us/library/jj733581(v=sc.12).aspx\" target=\"_blank\">Verify tape library compatibility</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "DPMLibraryTest.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54699",
+    "downloadPreload": true
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Tagged Hands Data Set",
+    "downloadDescription": "Datasets for the paper: Krupka and Karmon et al.  (2017). Toward Realistic Hands Gesture Interface: Keeping it Simple for Developers and Machines. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CHI2017_Krupka_and_Karmon_v1.zip",
+            "url": "https://download.microsoft.com/download/3/6/c/36c17f9b-c2c3-40e4-98d8-cfdbd441441f/CHI2017_Krupka_and_Karmon_v1.zip",
+            "size": "2312517710",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TaggedHands_Data_MSRLA_2017-05-23.docx",
+            "url": "https://download.microsoft.com/download/3/6/c/36c17f9b-c2c3-40e4-98d8-cfdbd441441f/TaggedHands_Data_MSRLA_2017-05-23.docx",
+            "size": "39650",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:41:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This file contains datasets accompanying the paper:\r\n<ul><li>Krupka and Karmon et al.  (2017). Toward Realistic Hands Gesture Interface: Keeping it Simple for Developers and Machines.</li></ul>\r\n\r\nThere are two datasets within:\r\n<ol>\r\n<li>FingersData  - This dataset contains 3,500 labeled depth frames of various hand poses.</li>\r\n<li>GestureClips - This dataset contains 140 gesture clips, of which 100 contain labeled hand gestures and 40 contain non-gesture activity.</li>\r\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "CHI2017_Krupka_and_Karmon_v1.zip",
+        "TaggedHands_Data_MSRLA_2017-05-23.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.2 GB",
+        "38.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ul><li>Click <b>Download</b> and follow the instructions.</li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55328",
+    "downloadPreload": true
+}

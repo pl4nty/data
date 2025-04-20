@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2013 Persistent Chat Resource Kit",
+    "downloadDescription": "The Microsoft Lync Server 2013 Persistent Chat Resource Kit tools are provided to help make routine tasks easier for IT administrators who deploy and manage Lync Server 2013 Persistent Chat.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PersistentChatResKit.msi",
+            "url": "https://download.microsoft.com/download/8/1/1/81154753-e849-46c9-a4d3-47e11838109c/PersistentChatResKit.msi",
+            "size": "1708032",
+            "version": "8308.420",
+            "datePublished": "5/15/2024 5:05:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Lync Server 2013 Persistent Chat Resource Kit contains a number of handy tools for IT administrators who deploy and manage Lync Server 2013 Persistent Chat. The following tools are included in the msi:\r\n<ul>\r\n<li>AffCheck \u2013 This tool confirms that Persistent Chat backend database user and group affiliation records match that in Active Directory</li>\r\n<li>ChatMonitoringSummary \u2013 This tool summarizes the Persistent Chat monitoring information from the monitoring database into a CSV file. Information such as Persistent Chat total sessions, successful sessions, failed sessions with expected and unexpected failures (and their MS diagnostic id, counts and description) from the monitoring database is output so the administrator can understand the service reliability.</li>\r\n<li>ChatStress Tool \u2013 This tool provides an easy way to simulate the usage of Persistent Chat to test your user model that represents your usage patterns.</li>\r\n<li>ChatUpgradeVerifier \u2013 This tool compares your source Group Chat database (OCS 2007 R2 Group Chat or Lync 2010 Group Chat) to your Lync Server 2013 Persistent Chat database. This tool can be used to verify if your migration was successful and give you insights into the discrepancies.</li>\r\n<li>ChatUsageReport \u2013 This tool generates an HTML report of Persistent Chat service usage and includes things such as Top Active Users, Top Active Rooms, Least Active Rooms, Inactive Rooms etc. The administrator can use this information to clean up rooms that are stale and get a better idea of the chat traffic they are seeing.</li>\r\n<li>ScheduleADSyncForPrincipal \u2013 This is a SQL script that can be run from within SQL Server Management Studio and allows you to force Persistent Chat to synchronize it\u2019s records of a user with those in Active Directory rather than waiting for the scheduled synchronization time.</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2846493",
+        "name": "KB2846493"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8308.420",
+    "detailsSection_file_name": [
+        "PersistentChatResKit.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "To Install the Lync Server 2013, Resource Kit Tools, download <b>PersistentChatResKit.msi</b>. Run <b>PersistentChatReskit.msi</b> to do a simple installation. The .msi installs all the tools in the following path:  <b>\\Program Files\\ Microsoft Lync Server 2013\\Persistent Chat Server Resource Kit</b> in their own subfolders.\r\n<br/><br/>\r\nAfter installing the Lync Server 2013 Resource Kit Tools, you must install <b>PsExec.exe</b> and copy PsExec.exe to the following path: <b>\\Program Files\\Microsoft Lync Server 2013\\Persistent Chat Server Resource Kit\\ChatStressTool</b>. If you do not copy PsExec.exe, the Persistent Chat Stress Tool will throw an error exception, and not perform correctly. Please ensure you meet this prerequisite requirement prior to running the tool. For more information on installing PsExec.exe, see <A HREF=\"http://go.microsoft.com/fwlink/p/?LinkId=282246\">http://go.microsoft.com/fwlink/p/?LinkId=282246</A>.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "documentation for Lync Server 2013 Persistent Chat Reskit",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkId=285349"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36827",
+    "downloadPreload": true
+}

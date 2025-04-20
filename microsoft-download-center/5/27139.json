@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Optimizing and maintaining the performance of a Microsoft Dynamics CRM 2011 server infrastructure",
+    "downloadDescription": "This white paper provides information that is designed to help readers achieve and maintain optimal performance of the server infrastructure supporting a Microsoft Dynamics CRM 2011-based business solution deployed in an on-premises or hosted environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Optimizing and maintaining a Microsoft Dynamics CRM 2011 server infrastructure.pdf",
+            "url": "https://download.microsoft.com/download/c/8/5/c85cac9b-bfb2-43d3-bdc7-3826586fb543/Optimizing and maintaining a Microsoft Dynamics CRM 2011 server infrastructure.pdf",
+            "size": "746395",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Successfully optimizing and maintaining the performance of the server infrastructure that supports a business solution based on Microsoft Dynamics CRM 2011 requires familiarity with:\r\n<ul><li> The general approach to optimization and maintenance</li>\r\n<li> The server architecture and components that make up a Microsoft Dynamics CRM implementation</li>\r\n<li> Factors that can adversely affect the performance of CRM system components or the interactions of those components</li></ul>\r\n\r\nIn addition, it requires a solid understanding of:\r\n<ul><li> Options available for configuring the components of a Microsoft Dynamics CRM 2011 solution to overcome potential performance issues</li>\r\n<li> Best practices for customizing the Microsoft Dynamics CRM 2011 solution for optimal performance</li></ul>\r\n\r\nThis white paper addresses these topics, providing information that is designed to help readers achieve and maintain optimal performance of the server infrastructure supporting a Microsoft Dynamics CRM 2011-based business solution deployed in an on-premises or hosted environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Optimizing and maintaining a Microsoft Dynamics CRM 2011 server infrastructure.pdf"
+    ],
+    "detailsSection_file_size": [
+        "728.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Adobe Reader</LI><br />\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\r\n<LI>To start the download, click <b>Download</b>, and then click <b>Go</b>.</LI>\r\n<LI>Do one of the following:</LI>\r\n<UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI>\r\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27139",
+    "downloadPreload": true
+}

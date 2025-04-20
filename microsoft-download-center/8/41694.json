@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Managing Large and Structured Meetings with Lync 2010",
+    "downloadDescription": "This whitepaper describes how to configure your Lync Server 2010 environment to successfully host and participate in large and structured meetings.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Managing Large and Structured Meetings with Lync 2010.docx",
+            "url": "https://download.microsoft.com/download/b/a/0/ba08ea7c-35f3-469e-b4a7-181b1c3af3f8/Managing Large and Structured Meetings with Lync 2010.docx",
+            "size": "7220630",
+            "version": "Feb2014",
+            "datePublished": "7/15/2024 3:24:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This whitepaper describes how to configure your Lync Server 2010 environment to successfully host and participate in large and structured meetings.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2014",
+    "detailsSection_file_name": [
+        "Managing Large and Structured Meetings with Lync 2010.docx"
+    ],
+    "detailsSection_file_size": [
+        "6.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "network Planning, Monitoring, and Troubleshooting with Lync Server",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=39084"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41694",
+    "downloadPreload": true
+}

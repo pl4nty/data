@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Running Critical Application Workloads on Microsoft Azure Virtual Machines ",
+    "downloadDescription": "This paper describes critical performance improvements we developed while working with four organizations on their critical application workloads running on Microsoft Azure virtual machines. We highlight the performance differences between Azure A-Series and the latest D-Series VMs and offer suggestions for improving application performance.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Running critical application workloads on Azure VMs.pdf",
+            "url": "https://download.microsoft.com/download/f/f/1/ff14e6d0-94d9-4919-8b44-5d0d17fa3f8b/Running critical application workloads on Azure VMs.pdf",
+            "size": "952608",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:58:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Many organizations want to port an application designed to run in a traditional data center to Microsoft Azure Virtual Machines (VMs). This scenario is one of the most popular we encounter on the Azure Customer Advisory Team (AzureCAT). Yet some critical application workloads may experience performance issues when moved as-is from custom, high-performance hardware configurations to general-purpose environments where energy and cost management play an important role in the overall economic model. <br /><br />\r\nFortunately, a new generation of hardware components is gradually being introduced  into our public cloud offerings. Called the D-Series, it offers several key performance advantages over the earlier A-Series VMs.<br /><br />\r\nThis article describes critical performance improvements we developed while working with four organizations on their projects. We highlight the performance differences between Azure A-Series and the latest D-Series VMs and offer suggestions for improving application performance:<br /><br />\r\n<ul>\r\n<li>Case 1: How persistent disk latency can directly impact application response times.</li>\r\n<li>Case 2: How limited throughput from persistent disks can impact application performance when SQL Server tempdb use is significant.</li>\r\n<li>Case 3: How SSD-based storage in the application tier can speed temporary file processing.</li>\r\n<li>Case 4: How to reduce compile and startup time for a large ASP.NET web application by moving %temp% folder on temporary drive in a D-Series VM.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Running critical application workloads on Azure VMs.pdf"
+    ],
+    "detailsSection_file_size": [
+        "930.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide can be downloaded and opened on any system that has a pdf viewer installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Save the file locally on your system and double-click to open it with a pdf viewer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45328",
+    "downloadPreload": true
+}

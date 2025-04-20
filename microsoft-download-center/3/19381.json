@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Performance and Scalability with Intel Processor and Solid-State Drive Technologies",
+    "downloadDescription": "Microsoft, working with Intel Corporation, completed benchmark testing of Microsoft Dynamics CRM 4.0 running on Intel server and solid state drive (SSD) hardware. This white paper focuses on benchmark results associated with user scalability.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics CRM 4.0 Performance and Scalability with Intel.docx",
+            "url": "https://download.microsoft.com/download/2/0/b/20b17904-5674-4d4a-a1e0-9d52f90a72a0/Microsoft Dynamics CRM 4.0 Performance and Scalability with Intel.docx",
+            "size": "1279385",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft, working with Intel Corporation, completed benchmark testing of Microsoft Dynamics CRM 4.0 running on Intel server and solid state drive (SSD) hardware. The Microsoft Dynamics CRM 4.0 implementation was not customized (simulating an \u201cout-of-the-box deployment), though standard optimizations were applied per guidelines published in the white papers Optimizing and Maintaining Microsoft Dynamics CRM 4.0 and Improving Microsoft Dynamics CRM Performance and Securing Data with Microsoft SQL Server 2008.<br />\r\n<br />\r\nThis white paper provides the details and results associated with this benchmark effort.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM 4.0 Performance and Scalability with Intel.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Windows Server 2008<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Enterprise"
+    ],
+    "installInstructionSection": "To start the download, click Download, and then in the File Download dialog box, do one of the following:<br />\r\n<br />\r\nTo start the installation immediately, click Open or Run this program from its current location.<br />\r\nTo copy the download to your computer for installation at a later time, click Save or Save this program to disk.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19381",
+    "downloadPreload": true
+}

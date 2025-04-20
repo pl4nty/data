@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2005 Virtual Backup Device Interface (VDI) Specification",
+    "downloadDescription": "The SQL Server 2005 Virtual Backup Device Interface Specification now contains updated information about the Virtual Backup Device interface. Independent software vendors (ISVs) can use the Virtual Backup Device Application Programming Interface (API) to integrate SQL Server into their products.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "v_backup.zip",
+            "url": "https://download.microsoft.com/download/e/1/c/e1c70ea6-d566-4e8c-9578-83d21350fc76/v_backup.zip",
+            "size": "221863",
+            "version": "8.5.001",
+            "datePublished": "7/15/2024 4:21:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The SQL Server 2005 Virtual Backup Device Interface Specification contains updated information about the Virtual Backup Device interface. Independent software vendors (ISVs) can use the Virtual Backup Device application programming interface (API) to integrate SQL Server into their products. This API is engineered to provide maximum reliability and performance, and to support the full range of SQL Server backup and restore functionality, including all hot and shadow-copy backup capabilities. <br/>\n<br/>\nThis download includes:\n<ul>\n<li>The specification document, V_backup.chm</li>\n<li>VDI header files used to build VDI applications</li>\n<li>Sample programs</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.5.001",
+    "detailsSection_file_name": [
+        "v_backup.zip"
+    ],
+    "detailsSection_file_size": [
+        "216.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "You must be running one of the operating systems listed above.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 1",
+        "Windows Small Business Server 2003 ",
+        "Windows 2000 Service Pack 4",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><br />\n<li>Download v_backup.zip. </li><br />\n<li>Double-click the copy of v-backup.zip now stored on your computer. You will be asked to select an installation folder. The updated Virtual Backup Device Interface Specification and associated sample programs will be copied to the location you specified.</li><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Writer in SQL Server 2005",
+            "url": "http://www.microsoft.com/technet/prodtechnol/sql/2005/sqlwriter.mspx"
+        },
+        {
+            "title": "sql Server Developer Center",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/nhp/default.asp?contentid=28000409"
+        },
+        {
+            "title": "sql Server TechCenter",
+            "url": "http://www.microsoft.com/technet/prodtechnol/sql/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17282",
+    "downloadPreload": true
+}

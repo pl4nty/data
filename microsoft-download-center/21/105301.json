@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Data for ABC: Efficient Selection of Machine Learning Configuration on Large Dataset",
+    "downloadDescription": "Compared to using full data to find the exact best configuration, our solution achieves more than two orders of magnitude speedup, while the returned top configuration has identical or close test accuracy. These processed datasets are used in the following paper: \"Efficient Identification of Approximate Best Configuration of Training in Large Datasets\" Silu Huang, Chi Wang, Bolin Ding, Sura",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "dataforabcefficientselectionofmachinelearningconfigurationonlar.zip",
+            "url": "https://download.microsoft.com/download/3/0/8/30881db7-2e4e-41e7-9104-962f23fa96e9/dataforabcefficientselectionofmachinelearningconfigurationonlar.zip",
+            "size": "6388943767",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:58:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These processed datasets are used in the following paper: Efficient Identification of Approximate Best Configuration of Training in Large Datasets Silu Huang, Chi Wang, Bolin Ding, Surajit Chaudhuri Proceedings of the 33rd AAAI Conference on Artificial Intelligence | January 2019 A machine learning configuration refers to a combination of preprocessor, learner, and hyperparameters. Given a set of configurations and a large dataset randomly split into training and testing set, we study how to efficiently select the best configuration with approximately the highest testing accuracy when trained from the training set. To guarantee small accuracy loss, we develop a solution using confidence interval (CI)-based progressive sampling and pruning strategy. Compared to using full data to find the exact best configuration, our solution achieves more than two orders of magnitude speedup, while the returned top configuration has identical or close test accuracy.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "dataforabcefficientselectionofmachinelearningconfigurationonlar.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Windows 8, Windows 10, or Windows 11</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ul><li>Click <b>Download</b> and follow the instructions.</li></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105301",
+    "downloadPreload": true
+}

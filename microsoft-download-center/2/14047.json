@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "ASP.NET Hosting Deployment Guide",
+    "downloadDescription": "The ASP.NET Deployment Guide is a reference for web hosters who are interested in adding ASP.NET 3.5 to their existing Windows hosting service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ASPNET35_HostingDeploymentGuide.doc",
+            "url": "https://download.microsoft.com/download/d/4/b/d4b97c98-670a-4916-91e7-0d5eeba8236a/ASPNET35_HostingDeploymentGuide.doc",
+            "size": "782336",
+            "version": "3.5",
+            "datePublished": "7/15/2024 3:11:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper provides an overview of the features and benefits of Microsoft\u00ae ASP.NET 3.5. Hosters who offer ASP.NET hosting will be able to use the setup and configuration recommendations to integrate ASP.NET into their hosting solution. This whitepaper also includes information that enables hosters who have not yet implemented ASP.NET to evaluate requirements for implementing ASP.NET 3.5 into their hosting environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.5",
+    "detailsSection_file_name": [
+        "ASPNET35_HostingDeploymentGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "764.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Click the link to download this document.",
+    "relatedResourcesSection": [
+        {
+            "title": "asP.NET 3.5 Information",
+            "url": "http://www.asp.net"
+        },
+        {
+            "title": "windows Hosting",
+            "url": "http://www.microsoft.com/hosting"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14047",
+    "downloadPreload": true
+}

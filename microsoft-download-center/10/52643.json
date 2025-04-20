@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Open Solving Library for ODEs",
+    "downloadDescription": "C# library that implements algorithms for the numerical solution of ordinary differential equations. Last published: January 14, 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OpenSolvingLibraryforODEs1.1.zip",
+            "url": "https://download.microsoft.com/download/2/0/9/209e8a63-2d55-48a0-b554-cb5c5b7047e2/OpenSolvingLibraryforODEs1.1.zip",
+            "size": "1571611",
+            "version": "1.2",
+            "datePublished": "7/15/2024 4:14:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "C# library that implements algorithms for the numerical solution of ordinary differential equations. The library incorporates .NET desktop and Silverlight builds.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "OpenSolvingLibraryforODEs1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52643",
+    "downloadPreload": true
+}

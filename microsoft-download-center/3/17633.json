@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Slowing and Stopping E-Mail Transmitted Viruses in an Microsoft Exchange Environment",
+    "downloadDescription": "This document provides you with recommendations about how to fortify a Microsoft Exchange environment against e-mail transmitted viruses and worms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StopEmailVirus.doc",
+            "url": "https://download.microsoft.com/download/0/c/2/0c2ba654-29bc-4955-a9a0-ba016ab0fd89/StopEmailVirus.doc",
+            "size": "354816",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:15:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Viruses and worms transmitted by e-mail have become a destructive reality that many administrators of Microsoft Exchange battle.<br />\nThis document provides you with recommendations on how to fortify a Microsoft\u00ae Exchange environment against e-mail transmitted viruses and worms. Resources for the implementation details related to the recommendations are included. <br />\nIf you are a messaging administrator who is responsible for mail flow at the implementation level, this document is critical because its recommendations and information will help you provide a higher level of service to your clients. If you are a messaging architect, this information will be helpful to you when planning a messaging topology and solution. If you are a desktop administrator, review this article for suggestions for maintaining a virus-free computing environment for your clients. If you are a member of the messaging team, the decision you make about antivirus software should fit into the overall antivirus solution deployed on the desktops. If you are a network or firewall administrator for Microsoft Active Directory directory service, you may also benefit from understanding the recommendations in this document.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "StopEmailVirus.doc"
+    ],
+    "detailsSection_file_size": [
+        "346.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>\nClick the <b>Download</b> button on this page to start the download.\n</LI><br />\n<LI>Do one of the following:</LI></OL>\n<UL>\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<br />\n</LI><br />\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n</LI>\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "slowing and Stopping E-Mail Transmitted Viruses in an Exchange 2003 Environment",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47587"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17633",
+    "downloadPreload": true
+}

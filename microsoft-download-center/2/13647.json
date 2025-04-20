@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Planning Database Configuration",
+    "downloadDescription": "The configuration checklist in this document will help you configure the Microsoft Dynamics AX database for optimal performance. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Planning database configuration for Microsoft Dynamics AX.xps",
+            "url": "https://download.microsoft.com/download/2/e/c/2eccf22e-29ec-4b60-a467-70983b6ec53f/Planning database configuration for Microsoft Dynamics AX.xps",
+            "size": "581703",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Planning database configuration for Microsoft Dynamics AX.pdf",
+            "url": "https://download.microsoft.com/download/2/e/c/2eccf22e-29ec-4b60-a467-70983b6ec53f/Planning database configuration for Microsoft Dynamics AX.pdf",
+            "size": "407617",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:11:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a checklist for Windows Server and Microsoft SQL Server configuration for optimal performance of the Microsoft Dynamics AX 2009 application.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "Planning database configuration for Microsoft Dynamics AX.xps",
+        "Planning database configuration for Microsoft Dynamics AX.pdf"
+    ],
+    "detailsSection_file_size": [
+        "568.1 KB",
+        "398.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13647",
+    "downloadPreload": true
+}

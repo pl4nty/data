@@ -1,0 +1,198 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Lync 2010 (64 -bit) (KB3174301)",
+    "downloadDescription": "Security Update for Microsoft Lync 2010 (64 -bit) (KB3174301)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync.msp",
+            "url": "https://download.microsoft.com/download/c/d/d/cddf1702-0884-43a0-a6bc-a37fd676f77f/Lync.msp",
+            "size": "23445504",
+            "version": "7577.4510",
+            "datePublished": "7/15/2024 4:19:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified that could allow an authenticated remote attacker to compromise your system and gain control over it. You can help protect your system by installing this update from Microsoft. After you install this updated, you may have to restart your system.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3174301",
+        "name": "KB3174301"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-097",
+        "name": "MS16-097"
+    },
+    "detailsSection_file_version": "7577.4510",
+    "detailsSection_file_name": [
+        "Lync.msp"
+    ],
+    "detailsSection_file_size": [
+        "22.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download requires the following Office program: </b></li>\n<ul>\nMicrosoft Lync 2010\n</ul></ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\n<br />\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation. </li>\n</ol>\n<br /><br />\n<b>To remove this download: </b>\n<br />\n<ul>To remove the download file, delete the file <b>Lync.msp</b>. </ul>\n<br /><br />\n<b>To uninstall this program: </b>\n<br />\n<ol>\n<li>On the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>. </li>\n<li>Double-click <b>Add/Remove Programs</b>. </li>\n<li>In the list of currently installed programs, select <b>Microsoft Lync 2010</b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\n</ol>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53447",
+    "downloadPreload": true
+}

@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for System Center 2012 R2 Service Manager",
+    "downloadDescription": "System Center Management Pack for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "System Center 2012 R2 Service Manager MP.msi",
+            "url": "https://download.microsoft.com/download/8/5/d/85dbae5e-52ce-4ff5-8e75-2c40736c543b/System Center 2012 R2 Service Manager MP.msi",
+            "size": "630784",
+            "version": "7.5.3079.0",
+            "datePublished": "7/15/2024 5:03:44 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "System Center 2012 R2 Service Manager MP Guide.docx",
+            "url": "https://download.microsoft.com/download/8/5/d/85dbae5e-52ce-4ff5-8e75-2c40736c543b/System Center 2012 R2 Service Manager MP Guide.docx",
+            "size": "258676",
+            "version": "7.5.3079.0",
+            "datePublished": "7/15/2024 5:03:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        }
+    ],
+    "detailsSection": "This Management Pack should be used to monitor System Center 2012 R2 Service Manager. It includes monitors for the management server as well as the Data Warehouse server. In this release of the management pack, the Data Access Service, Health Service, Configuration Service, and workflows are monitored. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<ul>\r\n<li> Monitoring for the System Center Data Access Service </li>\r\n<li> Monitoring for the System Center Configuration Management Service </li>\r\n<li> Monitoring the Health Service Run As Accounts </li>\r\n<li> Workflows Monitoring </li>\r\n</ul><br/>\r\n<b>Release History</b> <br/>\r\n<ul>\r\n<li> 11/12/2013 - Update release, version 7.5.3079.0 </li>\r\n<li> 6/12/2012 - Original English release, version 7.5.1561.0 </li>\r\n</ul>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.0",
+    "detailsSection_file_name": [
+        "System Center 2012 R2 Service Manager MP.msi",
+        "System Center 2012 R2 Service Manager MP Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "616.0 KB",
+        "252.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center 2012 Operations Manager or later </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download the management pack on a System Center 2012 R2 Operations Manager management server. </li>\r\n<li> Log on to the computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager 2012 R2 management group.</li>\r\n<li> In the Operations console, click <b>Administration</b>.</li>\r\n</ol><br/>\r\n<b>Note: </b>When you run the Operations console on a computer that is not a management server, the <b>Connect To Server</b> dialog box appears. In the <b>Server name</b> text box, type the name of the management server that you want the Operations console to connect to. <br/>\r\n<br/>\r\n<ol>\r\n<li> Right-click the <b>Management Packs</b> node, and then click <b>Import Management Packs</b>. </li>\r\n<li> The<b> Import Management Packs </b>wizard opens. Click <b>Add</b>, and then click <b>Add from disk</b>.</li>\r\n<li> The <b>Select Management Packs</b> to import dialog box appears. If necessary, change to the directory that holds your management pack file. Click one or more management packs to import from that directory, and then click <b>Open</b>.</li>\r\n<li> On the <b>Select Management Packs</b> page, the management packs that you selected for import are listed. An icon next to each management pack in the list indicates the status of the selection, as follows:</li>\r\n<ul>\r\n<li> A green check mark indicates that the management pack can be imported. When all management packs in the list display this icon, click <b>Import</b>.</li>\r\n<li> A red error icon indicates that the management pack is dependent on one or more management packs that are not in the <b>Import </b>list and are not available in the catalog. To view the missing management packs, click <b>Error</b> in the <b>Status</b> column. To remove the management pack with the error from the <b>Import</b> list, right-click the management pack, and then click <b>Remove</b>.</li>\r\n</ul>\r\n<li> More information on importing Management Packs into Operations Manager is available here: <a href=\"http://technet.microsoft.com/en-us/library/hh212691.aspx\">http://technet.microsoft.com/en-us/library/hh212691.aspx</a> </li>\r\n</ol>\r\n<b>Note:</b><br/>\r\nWhen you click <b> Import</b>, any management packs in the<b> Import</b> list that display the Error icon are not imported. <br/>\r\n<ul>\r\nThe <b>Import Management Packs</b> page appears and shows the progress for each management pack. Each management pack is downloaded to a temporary directory, imported to Operations Manager, and then deleted from the temporary directory. If there is a problem at any stage of the import process, select the management pack in the list to view the status details. Click <b>Close</b>. \r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41136",
+    "downloadPreload": true
+}

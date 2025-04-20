@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Sender ID: \"Implementation Tips for the Sender ID Framework\u2014Creating Your SPF Record\"",
+    "downloadDescription": "The print-ready brochure describes the benefits of authenticated e-mail and of Sender ID implementation to both senders and recipients.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sdf_tips.pdf",
+            "url": "https://download.microsoft.com/download/1/1/8/1184dafa-f1c6-4cd6-8fa1-0b06abbebd79/sdf_tips.pdf",
+            "size": "449836",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sdf_tips.xps",
+            "url": "https://download.microsoft.com/download/1/1/8/1184dafa-f1c6-4cd6-8fa1-0b06abbebd79/sdf_tips.xps",
+            "size": "723981",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:07:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Follow this step-by-step guide to create your own SPF record, and learn valuable tips for implementing the Sender ID Framework.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "sdf_tips.pdf",
+        "sdf_tips.xps"
+    ],
+    "detailsSection_file_size": [
+        "439.3 KB",
+        "707.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat 4.0 or later.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "5546",
+    "downloadPreload": true
+}

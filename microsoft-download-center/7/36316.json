@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft XML Core Services 6.0 Service Pack 2 (KB2758696)",
+    "downloadDescription": "A security issue has been identified in Microsoft XML Core Services (MSXML) that could allow an attacker to compromise your Windows-based system and gain control over it.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "msxml6-KB2758696-enu-x86.exe",
+            "url": "https://download.microsoft.com/download/4/3/8/438f6f47-fd29-4489-ab36-918946706858/msxml6-KB2758696-enu-x86.exe",
+            "size": "975304",
+            "version": "2758696",
+            "datePublished": "7/15/2024 3:31:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in Microsoft XML Core Services (MSXML) that could allow an attacker to compromise your Windows-based system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2758696",
+        "name": "KB2758696"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-002",
+        "name": "MS13-002"
+    },
+    "detailsSection_file_version": "2758696",
+    "detailsSection_file_name": [
+        "msxml6-KB2758696-enu-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "952.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol><li>To start the download, click the <b>Download</b> button and then do one of the following, or select another language from <b>Change Language</b> and then click <b>Change</b>.</li><ul><li>Click <b>Run</b> to start the installation immediately.</li><li>Click <b>Save</b> to copy the download to your computer for installation at a later time.</li></ul></ol>",
+    "additionalInformationSection": "<b>Other critical security updates are available:</b> To find the latest security updates for you, visit <a HREF='http://update.microsoft.com'>Windows Update</a> and click <b>Express Install</b>. To have the latest security updates delivered directly to your computer, visit the <a HREF='http://go.microsoft.com/fwlink/?LinkId=82023'>Security At Home</a> web site and follow the steps to ensure you're protected.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=264923"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36316",
+    "downloadPreload": true
+}

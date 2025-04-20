@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2016 SP2 CU11 (KB4535706)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2016 SP2 CU11",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016-KB4535706-x64.exe",
+            "url": "https://download.microsoft.com/download/9/f/a/9fa97512-ff9b-466a-918e-d95214fbfceb/SQLServer2016-KB4535706-x64.exe",
+            "size": "788964688",
+            "version": "13.0.5622.0",
+            "datePublished": "7/15/2024 4:21:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "First Security Vulnerability fix:<br/>\r\nA remote code execution vulnerability exists in Microsoft SQL Server Reporting Services when it incorrectly handles page requests. An attacker who successfully exploited this vulnerability could execute code in the context of the Report Server service account.<br/>\r\nTo exploit the vulnerability, an authenticated attacker would need to submit a specially crafted page request to an affected Reporting Services instance.<br/>\r\nThe security update addresses the vulnerability by modifying how the Microsoft SQL Server Reporting Services handles page requests.<br/><br/>\r\n\r\nSecond Security Vulnerability fix:<br/>\r\nA cross-site scripting (XSS) vulnerability exists when Microsoft SQL Server Reporting Services (SSRS) does not properly sanitize a specially-crafted web request to an affected SSRS server. An attacker who successfully exploited the vulnerability could run scripts in the context of the targeted user. The attacks could allow the attacker to read content that the attacker is not authorized to read, execute malicious code, and use the victim's identity to take actions on the site on behalf of the user, such as change permissions and delete content.<br/>\r\nTo exploit the vulnerability, an attacker would need to convince an authenticated user to click a specially-crafted link to an affected SSRS server.<br/>\r\nThe security update addresses the vulnerability by correcting SSRS URL sanitization.<br/><br/>\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article - <a name=\"KB4535706\"></a><a href=\"http://support.microsoft.com/help/4535706\">KB4535706</a><br/><br/>\r\n\r\nThe following SQL Server security updates contain both SQL Server Reporting Services fixes are available for download:<br/>\r\n<a name=\"KB4535706\"></a><a href=\"http://support.microsoft.com/help/4535706\">Security Update for SQL Server 2016 SP2 CU11 (KB4535706)</a><br />\r\n<a name=\"KB4532097\"></a><a href=\"http://support.microsoft.com/help/4532097\">Security Update for SQL Server 2016 SP2 GDR (KB4532097)</a><br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.5622.0",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB4535706-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "752.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 SP2 CU instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2016 SP2 CU that have had a Cumulative Update applied (versions 13.0.5149.0(CU1) - 13.0.5598.27(CU11).<br/><br/>\r\n\r\nAfter you install this update, you may have to restart your computer.<br/><br/>\r\n\r\nFor Microsoft SQL Server 2016 SP2 instances that have not had any Cumulative Update applied (version 13.0.5026.0-13.0.5101.9), please see <a name=\"KB4532097\"></a><a href=\"http://support.microsoft.com/help/4532097\">Security Update for SQL Server 2016 SP2 GDR (KB4532097).</a><br/><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100911",
+    "downloadPreload": true
+}

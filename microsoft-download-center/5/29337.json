@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Biz Talk Server 2002 Service Pack 1 (KB2645025) ",
+    "downloadDescription": "A security issue has been identified in the BizTalk Server 2002 Service Pack 1 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BizTalkServer2002SP2-KB2645025-ENU.exe",
+            "url": "https://download.microsoft.com/download/3/b/c/3bc5079c-515a-4fbb-8381-bca0322fe64f/BizTalkServer2002SP2-KB2645025-ENU.exe",
+            "size": "790184",
+            "version": "BizTalk 2002",
+            "datePublished": "7/15/2024 3:29:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in the BizTalk Server 2002 Service Pack 1 that could allow an attacker to compromise your system and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2645025",
+        "name": "KB2645025"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS12-027",
+        "name": "MS12-027"
+    },
+    "detailsSection_file_version": "BizTalk 2002",
+    "detailsSection_file_name": [
+        "BizTalkServer2002SP2-KB2645025-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "771.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to BizTalk Server 2002 SP1 instances.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor (x86 or x64) by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "29337",
+    "downloadPreload": true
+}

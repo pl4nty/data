@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "SPLA Reseller Bill of Materials",
+    "downloadDescription": "Assets include a playbook, a tele-discussion guide, and an infographic summarizing best practices for helping SPLA Resellers generate revenues.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "complete-splar-bom.zip",
+            "url": "https://download.microsoft.com/download/f/2/e/f2e69f44-eb19-4e15-a902-da1dd95e1344/complete-splar-bom.zip",
+            "size": "7233118",
+            "version": "April 2015",
+            "datePublished": "6/13/2024 12:30:29 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Assets include a Playbook that outlines key Cloud OS strategies for building your SPLA business; a Tele-discussion guide to assist with your conversations when recruiting Hosters; and an Infographic summarizing best practices for helping SPLA Resellers generate revenues via their service provider / hoster partners.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2015",
+    "detailsSection_file_name": [
+        "complete-splar-bom.zip"
+    ],
+    "detailsSection_file_size": [
+        "6.9 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "all",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "46410",
+    "downloadPreload": true
+}

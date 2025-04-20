@@ -1,0 +1,124 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure StorSimple Getting Started Guides",
+    "downloadDescription": "These downloadable pdf files contain the latest guidance needed when deploying an Azure StorSimple 8000 Series Appliance in your data center.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "X19-32483-02_Microsoft_Azure_StorSimple_8600_Appliance_Hardware_Installation_Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/4/0/f40c0bdf-418d-498b-98d8-efc903917065/X19-32483-02_Microsoft_Azure_StorSimple_8600_Appliance_Hardware_Installation_Guide.pdf",
+            "size": "7024207",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:36:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "X19-32481-02_Microsoft_Azure_StorSimple_8600_Appliance_Configuration_Checklist.pdf",
+            "url": "https://download.microsoft.com/download/f/4/0/f40c0bdf-418d-498b-98d8-efc903917065/X19-32481-02_Microsoft_Azure_StorSimple_8600_Appliance_Configuration_Checklist.pdf",
+            "size": "119029",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:36:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "X19-32482-02_Microsoft_Azure_StorSimple_8100_Appliance_Hardware_Installation_Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/4/0/f40c0bdf-418d-498b-98d8-efc903917065/X19-32482-02_Microsoft_Azure_StorSimple_8100_Appliance_Hardware_Installation_Guide.pdf",
+            "size": "3505895",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:36:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "X19-32480-02_Microsoft_ Azure StorSimple_8100_Appliance_Configuration_Checklist.pdf",
+            "url": "https://download.microsoft.com/download/f/4/0/f40c0bdf-418d-498b-98d8-efc903917065/X19-32480-02_Microsoft_ Azure StorSimple_8100_Appliance_Configuration_Checklist.pdf",
+            "size": "118959",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:36:51 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "X19-32484-01_Microsoft_Azure_StorSimple_Appliance_Safety Guide.pdf",
+            "url": "https://download.microsoft.com/download/f/4/0/f40c0bdf-418d-498b-98d8-efc903917065/X19-32484-01_Microsoft_Azure_StorSimple_Appliance_Safety Guide.pdf",
+            "size": "66991",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:36:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "These downloadable pdf files contain the latest guidance needed when deploying an Azure StorSimple 8000 Series Appliance in your data center.<br/> \r\n<br/>\r\nThe guides include the instructions for safety, unpacking, rackmount installation, cabling and software configuration of your StorSimple 8100 and 8600 appliances.<br/> \r\n<br/>\r\nA print version of these guides was also shipped in the same package as your StorSimple appliance.<br/>\r\n<br/>\r\nDocument Titles and brief description:\r\n<ol>\r\n<li>\r\n<b>Microsoft Azure StorSimple Appliance Safety Guide</b><br/>\r\nThis guide covers important information that will help ensure your safety while installing and using your Microsoft Azure StorSimple Appliances. This is applicable to both the 8100 and 8600 series devices.  It is recommended that prior to unpacking your StorSimple device, you carefully read and follow the instructions detailed in this guide.\r\n</li>\r\n<li>\r\n<b>Microsoft Azure StorSimple 8100 Appliance Hardware Installation Guide</b><br/>\r\nThis guide contains detailed instructions to unpack, rack-mount and cable your Microsoft Azure StorSimple 8100 Series Storage Array prior to configuring the software.\r\n</li>\r\n<li>\r\n<b>Microsoft Azure StorSimple 8600 Appliance Hardware Installation Guide</b><br/>\r\nThis guide contains detailed instructions to unpack, rack-mount and cable your Microsoft Azure StorSimple 8600 Series Storage Array prior to configuring the software.\r\n</li>\r\n<li>\r\n<b>Microsoft Azure StorSimple 8100 Appliance Configuration Checklist</b><br/>\r\nThis checklist summarizes all the hardware installation and software configuration steps required to deploy a Microsoft Azure StorSimple 8100 Storage Array in your data center, including information on where to download the latest documentation for detailed instructions.\r\n</li>\r\n<li>\r\n<b>Microsoft Azure StorSimple 8600 Appliance Configuration Checklist</b><br/>\r\nThis checklist summarizes all the hardware installation and software configuration steps required to deploy a Microsoft Azure StorSimple 8600 Storage Array in your data center, including information on where to download the latest documentation for detailed instructions.\r\n</li>\r\n</ol>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "X19-32483-02_Microsoft_Azure_StorSimple_8600_Appliance_Hardware_Installation_Guide.pdf",
+        "X19-32481-02_Microsoft_Azure_StorSimple_8600_Appliance_Configuration_Checklist.pdf",
+        "X19-32482-02_Microsoft_Azure_StorSimple_8100_Appliance_Hardware_Installation_Guide.pdf",
+        "X19-32480-02_Microsoft_ Azure StorSimple_8100_Appliance_Configuration_Checklist.pdf",
+        "X19-32484-01_Microsoft_Azure_StorSimple_Appliance_Safety Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB",
+        "116.2 KB",
+        "3.3 MB",
+        "116.2 KB",
+        "65.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "These guides can be downloaded and opened on any system that has a pdf viewer installed.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Save the file locally on your system and double-click to open it with a pdf viewer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44233",
+    "downloadPreload": true
+}

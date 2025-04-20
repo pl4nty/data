@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "WaaS-infographic in Agile with Microsoft",
+    "downloadDescription": "WaaS-infographic describes building, deploying, and servicing Windows",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WaaS-infographic.pdf",
+            "url": "https://download.microsoft.com/download/f/d/e/fdee5736-7e97-4490-8708-e79284a5b27e/WaaS-infographic.pdf",
+            "size": "537127",
+            "version": "1",
+            "datePublished": "4/15/2024 4:31:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WaaS-infographic describes building, deploying, and servicing Windows. It also focuses on becoming Agile with Microsoft.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "WaaS-infographic.pdf"
+    ],
+    "detailsSection_file_size": [
+        "524.5 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Requires a PDF viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "iOS",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Select the <b>Download</b> button to start the download.</li>\r\n<li>The download should start automatically. If prompted, select <b>Save</b> or <b>Save this file to disk</b>.</li>\r\n<li>Select <b>Open file</b>, or find the file on your device and open it.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104508",
+    "downloadPreload": true
+}

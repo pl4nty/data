@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Silverlight Installation Experience White Paper and Sample Code (Apr 2009)",
+    "downloadDescription": "Silverlight Installation Experience Paper and Sample",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Installation Experience White Paper - Apr 2009.doc",
+            "url": "https://download.microsoft.com/download/3/c/0/3c0be4c1-a070-47cb-908a-159bf3541261/Installation Experience White Paper - Apr 2009.doc",
+            "size": "2151936",
+            "version": "March 2009",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Installation Experience Sample Code.zip",
+            "url": "https://download.microsoft.com/download/3/c/0/3c0be4c1-a070-47cb-908a-159bf3541261/Installation Experience Sample Code.zip",
+            "size": "1347807",
+            "version": "March 2009",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Silverlight Installation Experience White Paper and Sample Code cover the principals that will help developers and designers produce effective installation experiences on Web sites.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "March 2009",
+    "detailsSection_file_name": [
+        "Installation Experience White Paper - Apr 2009.doc",
+        "Installation Experience Sample Code.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.1 MB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "HTML Editor ; Visual Studio 2008 recommended",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "The \"Installation Experience White Paper - Apr 2009.PDF\" is the document that references \"Installation Experience Sample Code.zip\" sample code. The zip file contains 3 samples in 3 different directories that are referenced from the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15072",
+    "downloadPreload": true
+}

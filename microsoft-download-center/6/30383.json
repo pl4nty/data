@@ -1,0 +1,85 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise search architectures for SharePoint Server 2013",
+    "downloadDescription": "This design sample shows the search architecture for a variety of sizes of server farms. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sp-2013-enterprise-search-model.pdf",
+            "url": "https://download.microsoft.com/download/b/e/3/be3ced38-685d-4598-a4e8-b1cd9918cf68/sp-2013-enterprise-search-model.pdf",
+            "size": "534925",
+            "version": "5",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sp-2013-enterprise-search-model.vsd",
+            "url": "https://download.microsoft.com/download/b/e/3/be3ced38-685d-4598-a4e8-b1cd9918cf68/sp-2013-enterprise-search-model.vsd",
+            "size": "2427904",
+            "version": "5",
+            "datePublished": "7/15/2024 3:30:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This design sample illustrates small, medium, and large-size farm architectures for enterprise search. It contains search and farm topology examples, scaling guidance and hardware requirements. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5",
+    "detailsSection_file_name": [
+        "sp-2013-enterprise-search-model.pdf",
+        "sp-2013-enterprise-search-model.vsd"
+    ],
+    "detailsSection_file_size": [
+        "522.4 KB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30383",
+    "downloadPreload": true
+}

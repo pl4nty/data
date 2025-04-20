@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for System Center 2012 R2 Orchestrator",
+    "downloadDescription": "The Microsoft System Center 2012 R2 Management Pack for System Center 2012 R2 Orchestrator monitors the health and availability of Microsoft System Center 2012 R2 Orchestrator.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC2012_R2_Orchestrator_MP.msi",
+            "url": "https://download.microsoft.com/download/4/f/e/4fe4a23e-630b-4526-9aa0-3c363c99ee08/SC2012_R2_Orchestrator_MP.msi",
+            "size": "536576",
+            "version": "7.2.12.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_Orch2012.docx",
+            "url": "https://download.microsoft.com/download/4/f/e/4fe4a23e-630b-4526-9aa0-3c363c99ee08/OpsMgr_MP_Orch2012.docx",
+            "size": "83729",
+            "version": "7.2.12.0",
+            "datePublished": "7/15/2024 4:26:16 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft System Center 2012 R2 Management Pack for System Center 2012 R2 Orchestrator monitors the health and availability of Microsoft System Center 2012 R2 Orchestrator. <br/>\r\n<br/>\r\n<b> Feature Summary </b><br/>\r\nThe Microsoft System Center Management  Pack for System Center 2012 - Orchestrator provides the following capabilities. <br/>\r\n<ul>\r\n<li> Orchestrator Management Server Health - This scenario checks Orchestrator Management Servers for service status and critical log file events.  </li>\r\n<ul>\r\n<li> (monitor) Orchestrator Management Service </li>\r\n<li> (monitor) Orchestrator Runbook Server Monitor      </li> \r\n<li> (alerting rule) Orchestrator Management Server Database Connection Error </li>\r\n<li> (alerting rule) Orchestrator Runbook Server Monitor Database Connection Error     </li> \r\n</ul>  \r\n<li> Orchestrator Runbook Server Health - This scenario checks Orchestrator Runbook Servers for service status and critical log file events   </li> \r\n<ul>\r\n<li>(monitor) Orchestrator Runbook Service </li>\r\n<li> (monitor) Orchestrator Remoting Service </li>\r\n<li> (alerting rule) Orchestrator Runbook Policy Module Fault Alert </li>\r\n<li> (alerting rule) Orchestrator Runbook Server Database Connection Error </li>\r\n<li> (alerting rule) Orchestrator Runbook Update Error  </li>\r\n<li> (alerting rule) Orchestrator Runbook Server ActionServerStorage Call Refused Error    </li>\r\n<li> (non-alerting rule) Orchestrator Runbook Policy Module Working Set Peak Collection </li>\r\n<li> (non-alerting rule) Orchestrator Runbook Policy Module Thread Count Collection </li>\r\n<li> (non-alerting rule) Orchestrator Runbook Policy Module % Processor Time Collection </li>\r\n</ul>\r\n<li> Orchestrator Web Components Health - This scenario implements health roll-up for monitored IIS 7 components that represent the Orchestrator Web Components    </li> \r\n<ul>\r\n<li> (dependency monitor) Web Components Availability Rollup </li>\r\n</ul>\r\n<br/>\r\nPlease refer to the Monitoring Pack Guide included in the downlaod for more details\r\n</ul>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 11/5/2013 - Updated release, version 7.2.12.0</li>\r\n<li> 4/2/2012 - Original English Release, version 7.0 </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.12.0",
+    "detailsSection_file_name": [
+        "SC2012_R2_Orchestrator_MP.msi",
+        "OpsMgr_MP_Orch2012.docx"
+    ],
+    "detailsSection_file_size": [
+        "524.0 KB",
+        "81.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\nThe Monitoring Pack for System Center 2012 - Orchestrator has the following prerequisites: <br/>\r\n<ul>\r\n<li> The Monitoring Pack for System Center 2012 - Orchestrator supports both System Center 2012 - Operations Manager as well as System Center Operations Manager 2007 R2 or later. A dedicated management group is not required. </li>\r\n<li> The Windows Server 2008 Internet Information Services 7 Management Pack (version 6.0.6658 or later) must be imported to the management group prior to importing the Monitoring Pack for System Center 2012 - Orchestrator. </li>\r\n<li> Windows PowerShell is required on Orchestrator Management Servers and Runbook Servers </li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Once you have reviewed the Monitoring Pack Guide and meet the prerequisites for the Monitoring Pack for System Center 2012 - Orchestrator you can import this management pack module using the Microsoft Operations Manager administrative console and following these steps.  The MP file \u201cMicrosoft.SystemCenter.Orchestrator.Library.mp\u201d should be imported first. <br/>\r\n<br/>\r\n<ol>\r\n<li>  Open the Microsoft Operations Manager Operator console  </li>\r\n<li>  Click on the Administrator pane at the bottom left corner  </li>\r\n<li>  Expand the Management Packs node in the tree view  </li>\r\n<li>  Click on the Import Management Pack on the \u201cActions\u201d pane on the right and then browse to the folder where you extracted the MP and then import it.  </li>\r\n<li>  Follow the instructions until you have finished importing the management pack module.  </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        },
+        {
+            "title": "system Center Online",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=216991"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29269",
+    "downloadPreload": true
+}

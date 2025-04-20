@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Enhanced Write Filter Management Tool for Windows Embedded POSReady 7",
+    "downloadDescription": "Enhanced Write Filter Management Tool for Windows Embedded POSReady 7",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "EWFMgmtToolInstall_x86.msi",
+            "url": "https://download.microsoft.com/download/4/3/1/431403db-cd77-49fc-a5c8-7d163301855f/EWFMgmtToolInstall_x86.msi",
+            "size": "486912",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EWFMgmtToolInstall_x64.msi",
+            "url": "https://download.microsoft.com/download/4/3/1/431403db-cd77-49fc-a5c8-7d163301855f/EWFMgmtToolInstall_x64.msi",
+            "size": "496128",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:26:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This out\u2013of-band feature provides an application to monitor and configure the \u201cEnhanced Write Filter (EWF)\u201d. By default the application will start on system start and will register a notification area icon. The settings, however, allow suppressing the automatic starting. The tool can be started with a command line parameter to open either the overview dialog or (for users with administrative privileges) the configuration dialog. If the tool is started with a command line parameter, the tool will exit as soon as the respective dialog is closed. \r\n<br></br>\r\nIf the tool has registered a tray icon, hovering over the icon will show a tooltip containing the protected volumes. If a command is pending for a volume, it will be shown as well. Left-clicking on the icon or selecting \u201cStatus\u2026\u201d from its context menu opens the overview dialog with more detailed information about the file based write filter configuration. Users with administrative privileges or credentials can open the configuration dialog by selecting \u201cConfigure\u2026\u201d from the icons context menu.\r\n<br></br>\r\nThe Enhanced Write Filter Management Tool has a dependency on the Enhanced Write Filter Provider.  This Provider ships with all versions of POSReady7.  However there is an update to the originally shipped Provider that must be installed. The updated EWF provider is available from the Download Center via <A href=\"http://www.microsoft.com/download/en/details.aspx?id=27142\">KB2539566</A>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "EWFMgmtToolInstall_x86.msi",
+        "EWFMgmtToolInstall_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "475.5 KB",
+        "484.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded POSReady 7",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed as follows on a <b>POSReady7 image</b>: \r\n<br></br>\r\nA) Executing the appropriate .msi file\r\n<br></br>\r\n<ul>\r\n<li>32bit EWFMgmtToolInstall_x86.msi</li>\r\n<li>64bit EWFMgmtToolInstall_x64.msi</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27587",
+    "downloadPreload": true
+}

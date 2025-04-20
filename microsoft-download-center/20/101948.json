@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Operations - Lean Manufacturing: Capable to Promise and Kanban Job Scheduling",
+    "downloadDescription": "\u200bThis document describes the details of kanban job scheduling in Microsoft Dynamics 365 for Operations. It introduces the concept \u200bof sales order taking that uses the capable to promise (CTP) method for delivery date control. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "LeanmanufacturingCapabletopromiseandjobschedulingAX7.pdf",
+            "url": "https://download.microsoft.com/download/c/0/4/c04bf1fb-5ca8-4b63-b5f3-90eacece3ea8/LeanmanufacturingCapabletopromiseandjobschedulingAX7.pdf",
+            "size": "2527451",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bIt also explains how CTP can be combined with event kanbans to model assemble-to-order or build-to-order scenarios.\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "LeanmanufacturingCapabletopromiseandjobschedulingAX7.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101948",
+    "downloadPreload": true
+}

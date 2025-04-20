@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Database Copy (SQLDBCopy) Utility",
+    "downloadDescription": "Utility to copy SQL Server databases between different versions of SQL (Box, Azure SQL DB/HS/MI)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLDBCopyV1.4.5.zip",
+            "url": "https://download.microsoft.com/download/a/a/4/aa4b2b20-8d89-44b0-8387-208a419e5657/SQLDBCopyV1.4.5.zip",
+            "size": "5964353",
+            "version": "1.4.5",
+            "datePublished": "2/13/2025 5:07:10 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A parallel copy utility, similar to SmartBulkCopy, but with more options and flexibility. It will also copy most schema and schema objects as well as users and many of the permissions. Parallel copy can be between tables and either using physical partitions or logical partitions to copy a table in parallel. Indexes can be created before or after the copy operation, the same with foreign keys (tables can be copied in dependency order to allow FKs to be left in place).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.5",
+    "detailsSection_file_name": [
+        "SQLDBCopyV1.4.5.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.7 MB"
+    ],
+    "detailsSection_file_date": "2/13/2025",
+    "systemRequirementsSection": "<UL>\r\n<li>Download the zip file to a Windows machine and unzip it into a local folder. Edit the app.config and run the utility.</li>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. </li>\r\n<li>Do the following:</li> \r\n<ul> \r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n</ul> \r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105024",
+    "downloadPreload": true
+}

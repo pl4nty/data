@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Smart Client Panel at TechEd 2008",
+    "downloadDescription": "Carl and Richard interview Glenn Block, Steve Lasker, and Tim Huckaby on the state of the Smart Client.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080624SmClient.zip",
+            "url": "https://download.microsoft.com/download/6/2/8/628ee18c-b739-439b-a040-88257d1d38b9/20080624SmClient.zip",
+            "size": "36523753",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:11:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Glenn Block, Steve Lasker and Tim Huckaby talked about the current state of the Smart Client at TechEd 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080624SmClient.zip"
+    ],
+    "detailsSection_file_size": [
+        "34.8 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21006",
+    "downloadPreload": true
+}

@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Spreadsheet Management with the new Office",
+    "downloadDescription": "Microsoft now offers a comprehensive toolset of discovery, auditing, and management capabilities. Learn about spreadsheet control management using Microsoft\u2019s Excel client tools that include Spreadsheet Inquire, Spreadsheet Compare, and Database Compare as well as the enterprise server products, Audit and Control Management Server and the Discovery and Risk Assessment Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SpreadsheetControls_Whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/d/e/8/de8429fa-1159-4adb-8ace-5b07a0ebbeca/SpreadsheetControls_Whitepaper.pdf",
+            "size": "377934",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:07 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SpreadsheetControls_Whitepaper.docx",
+            "url": "https://download.microsoft.com/download/d/e/8/de8429fa-1159-4adb-8ace-5b07a0ebbeca/SpreadsheetControls_Whitepaper.docx",
+            "size": "119590",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:33:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft now offers a comprehensive toolset of discovery, auditing, and management capabilities\u2014all with technology that is familiar and integrated with Microsoft Office. Learn about spreadsheet control management using Microsoft\u2019s Excel client tools that include Spreadsheet Inquire, Spreadsheet Compare, and Database Compare as well as the enterprise server products, Audit and Control Management Server and the Discovery and Risk Assessment Server. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SpreadsheetControls_Whitepaper.pdf",
+        "SpreadsheetControls_Whitepaper.docx"
+    ],
+    "detailsSection_file_size": [
+        "369.1 KB",
+        "116.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010 or Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36518",
+    "downloadPreload": true
+}

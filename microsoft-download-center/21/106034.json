@@ -1,0 +1,227 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Power BI Desktop (Optimized for Power BI Report Server - May 2024)",
+    "downloadDescription": "Power BI Desktop helps you empower others with timely critical insights, anytime, anywhere.  It combines state-of-the-art interactive visualizations, with industry-leading data query and modeling built-in. This version of Power BI Desktop is optimized for use with Power BI Report Server (May 2024).",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PBIDesktopSetupRS_x64.exe",
+            "url": "https://download.microsoft.com/download/d/4/c/d4c2af43-e139-47bb-99e0-ac911531e86a/PBIDesktopSetupRS_x64.exe",
+            "size": "531023120",
+            "version": "2.129.6228.0",
+            "datePublished": "1/7/2025 9:40:55 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "PBIDesktopSetupRS.exe",
+            "url": "https://download.microsoft.com/download/d/4/c/d4c2af43-e139-47bb-99e0-ac911531e86a/PBIDesktopSetupRS.exe",
+            "size": "485118424",
+            "version": "2.129.6228.0",
+            "datePublished": "1/7/2025 9:40:55 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        }
+    ],
+    "detailsSection": "      This version of Power BI Desktop is optimized for use with <a href=\"https://go.microsoft.com/fwlink/?linkid=869783\">Power BI Report Server - May 2024</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.129.6228.0",
+    "detailsSection_file_name": [
+        "PBIDesktopSetupRS_x64.exe",
+        "PBIDesktopSetupRS.exe"
+    ],
+    "detailsSection_file_size": [
+        "506.4 MB",
+        "462.6 MB"
+    ],
+    "detailsSection_file_date": "1/7/2025",
+    "systemRequirementsSection": "Microsoft Power BI Desktop (Optimized for Power BI Report Server) requires Internet Explorer 9 or greater.\n      <br />\n      <br />\nMicrosoft Power BI Desktop (Optimized for Power BI Report Server) is available for 32-bit (x86) and 64-bit (x64) platforms.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows 8",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download the version of Power BI Desktop (Optimized for Power BI Report Server) that matches the architecture (x86 or x64) of your Windows OS. Run the MSI installer and follow the setup steps.",
+    "additionalInformationSection": "<ul>\n        <li>\n          <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=56722\">Power BI Report Server May 2022</a>\n        </li>\n        <li>\n          <a href=\"https://powerbi.microsoft.com/en-us/report-server/\">Home Page for Power BI Report Server</a>\n        </li>\n        <li>\n          <a href=\"https://go.microsoft.com/fwlink/?linkid=847000\">Power BI Report Server Documentation</a>\n        </li>\n        <li>\n          <a href=\"https://community.powerbi.com/\">Power BI Forums</a>\n        </li>\n      </ul>\n      <br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106034",
+    "downloadPreload": true
+}

@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Business Applications Services",
+    "downloadDescription": "n/a",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Demand-for-Arbitration.pdf",
+            "url": "https://download.microsoft.com/download/d/f/f/dffb1fc1-9970-4e0f-82ee-d622e2ea9793/Demand-for-Arbitration.pdf",
+            "size": "193485",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Notice-of-Dispute.pdf",
+            "url": "https://download.microsoft.com/download/d/f/f/dffb1fc1-9970-4e0f-82ee-d622e2ea9793/Notice-of-Dispute.pdf",
+            "size": "131950",
+            "version": "2016",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "n/a",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2016",
+    "detailsSection_file_name": [
+        "Demand-for-Arbitration.pdf",
+        "Notice-of-Dispute.pdf"
+    ],
+    "detailsSection_file_size": [
+        "189.0 KB",
+        "128.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52985",
+    "downloadPreload": true
+}

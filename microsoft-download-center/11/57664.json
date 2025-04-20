@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Dynamics NAV 2013 R2 (KB) ",
+    "downloadDescription": "Dynamics NAV Web Client Cross-Site scripting Vulnerability",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WEB CLIENT.zip",
+            "url": "https://download.microsoft.com/download/c/9/f/c9f736c5-16a2-44bd-b095-e763af5d46ba/WEB CLIENT.zip",
+            "size": "4605681",
+            "version": "7.1.50770",
+            "datePublished": "7/15/2024 4:45:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A cross site scripting vulnerability exists when Microsoft Dynamics NAV does not properly sanitize specially crafted web request on affected Dynamics in NAV Web Client. An authenticated attacker could exploit the vulnerability by sending a specially crafted request to an affected Dynamics NAV Web Client.\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4482986",
+        "name": "KB4482986"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.50770",
+    "detailsSection_file_name": [
+        "WEB CLIENT.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Dynamics NAV 2013 R2 system requirements",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "See the following knowledge basse article: https://support.microsoft.com/en-us/help/4482986",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57664",
+    "downloadPreload": true
+}

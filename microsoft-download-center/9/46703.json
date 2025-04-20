@@ -1,0 +1,104 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Tools for IT",
+    "downloadDescription": "By downloading the Surface tools for IT you agree to the license terms under the Details section below.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SurfaceITToolkit.UI_x64.appinstaller",
+            "url": "https://download.microsoft.com/download/8/2/e/82eefb07-1ab3-4557-b654-b34d64c9dd94/Microsoft.SurfaceITToolkit.UI_x64.appinstaller",
+            "size": "797",
+            "version": "1.0",
+            "datePublished": "12/10/2024 1:04:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SurfaceITToolkit.UI_arm64.appinstaller",
+            "url": "https://download.microsoft.com/download/8/2/e/82eefb07-1ab3-4557-b654-b34d64c9dd94/Microsoft.SurfaceITToolkit.UI_arm64.appinstaller",
+            "size": "809",
+            "version": "1.0",
+            "datePublished": "12/10/2024 1:04:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Surface_Diagnostic_Toolkit_for_Business_v2.233.139.0.msi",
+            "url": "https://download.microsoft.com/download/8/2/e/82eefb07-1ab3-4557-b654-b34d64c9dd94/Surface_Diagnostic_Toolkit_for_Business_v2.233.139.0.msi",
+            "size": "129011712",
+            "version": "1.0",
+            "datePublished": "12/10/2024 1:04:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Surface_Diagnostic_Toolkit_for_Business_v2.233.139.0_x86.msi",
+            "url": "https://download.microsoft.com/download/8/2/e/82eefb07-1ab3-4557-b654-b34d64c9dd94/Surface_Diagnostic_Toolkit_for_Business_v2.233.139.0_x86.msi",
+            "size": "122904576",
+            "version": "1.0",
+            "datePublished": "12/10/2024 1:04:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Surface_Dock_FwUpdate_1.53.139_Win10_17763_20.075.44225_0_ARM64.msi",
+            "url": "https://download.microsoft.com/download/8/2/e/82eefb07-1ab3-4557-b654-b34d64c9dd94/Surface_Dock_FwUpdate_1.53.139_Win10_17763_20.075.44225_0_ARM64.msi",
+            "size": "925696",
+            "version": "1.0",
+            "datePublished": "12/10/2024 1:04:54 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Surface_Dock_FwUpdate_1.53.139_Win10_17763_20.075.41193_0_AMD64.msi",
+            "url": "https://download.microsoft.com/download/8/2/e/82eefb07-1ab3-4557-b654-b34d64c9dd94/Surface_Dock_FwUpdate_1.53.139_Win10_17763_20.075.41193_0_AMD64.msi",
+            "size": "978944",
+            "version": "1.0",
+            "datePublished": "12/10/2024 1:04:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download location stores all the right tools you need as a IT Professional when you want to deploy, manage and secure a Surface device in your organization. \r\n\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft.SurfaceITToolkit.UI_x64.appinstaller",
+        "Microsoft.SurfaceITToolkit.UI_arm64.appinstaller",
+        "Surface_Diagnostic_Toolkit_for_Business_v2.233.139.0.msi",
+        "Surface_Diagnostic_Toolkit_for_Business_v2.233.139.0_x86.msi",
+        "Surface_Dock_FwUpdate_1.53.139_Win10_17763_20.075.44225_0_ARM64.msi",
+        "Surface_Dock_FwUpdate_1.53.139_Win10_17763_20.075.41193_0_AMD64.msi"
+    ],
+    "detailsSection_file_size": [
+        "797 bytes",
+        "809 bytes",
+        "123.0 MB",
+        "117.2 MB",
+        "904.0 KB",
+        "956.0 KB"
+    ],
+    "detailsSection_file_date": "12/10/2024",
+    "systemRequirementsSection": "Supported on Surface devices running Windows 8.1, Windows 8.1 Pro, Windows 8.1 Enterprise, and above.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows 11"
+    ],
+    "installInstructionSection": "For installing each of the Surface tools, please refer <a href=\"https://docs.microsoft.com/en-us/surface\">https://docs.microsoft.com/en-us/surface</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "surface tools details",
+            "url": "https://docs.microsoft.com/surface/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "46703",
+    "downloadPreload": true
+}

@@ -1,0 +1,83 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Speech Platform - Runtime (Version 11)",
+    "downloadDescription": "Allows developers to build and deploy Speech Recognition and Text-to-Speech applications ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SpeechPlatformRuntime.msi",
+            "url": "https://download.microsoft.com/download/a/6/4/a64012d6-d56f-4e58-85e3-531e56abc0e6/x64_SpeechPlatformRuntime/SpeechPlatformRuntime.msi",
+            "size": "2674688",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Speech Platform Runtime 11 Licence.rtf",
+            "url": "https://download.microsoft.com/download/a/6/4/a64012d6-d56f-4e58-85e3-531e56abc0e6/Speech Platform Runtime 11 Licence.rtf",
+            "size": "12697",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SpeechPlatformRuntime.msi",
+            "url": "https://download.microsoft.com/download/a/6/4/a64012d6-d56f-4e58-85e3-531e56abc0e6/x86_SpeechPlatformRuntime/SpeechPlatformRuntime.msi",
+            "size": "2342912",
+            "version": "11",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Speech Platform Runtime contains both a managed (.NET) and native (COM) API for developing Server based speech applications. <br/>\r\n<br/>\r\nUse of the Microsoft Speech Platform Runtime is governed by the <a href=\"http://go.microsoft.com/fwlink/?LinkID=224130\"> MICROSOFT SPEECH PLATFORM RUNTIME 11 LICENSE AGREEMENT</a>. By downloading the SpeechPlatformRuntime.msi, you accept the <a href=\"http://go.microsoft.com/fwlink/?LinkID=224130\"> MICROSOFT SPEECH PLATFORM RUNTIME 11 LICENSE AGREEMENT</a>.\r\n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11",
+    "detailsSection_file_name": [
+        "SpeechPlatformRuntime.msi",
+        "Speech Platform Runtime 11 Licence.rtf",
+        "SpeechPlatformRuntime.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB",
+        "12.4 KB",
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\nDevelopment is supported on:\r\n<ul>\r\n    <li>Windows Vista or later</li>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n<br></br>\r\nDeployment is supported on:\r\n<ul>\r\n    <li>Windows 2003 Server or later</li>\r\n    <li>Windows 2008 Server or later</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul>\r\n    <li>Click the file you want to download from the list below.</li>\r\n    <li>Do one of the following:</li>\r\n    <ul>\r\n        <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n        <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n    </ul>\r\n</ul>\r\n\r\n<b>Important File Download Details</b>\r\n<ul>\r\n    <li>Please review the <a href=\"http://go.microsoft.com/fwlink/?LinkID=224076\">release notes</a> for additional information.</li>\r\n    <li>This download is only the runtime installer, for the software development kit, please download the <a href=\"http://go.microsoft.com/fwlink/?LinkID=223570&clcid=0x409\"> Microsoft Speech Platform - Server SDK. </a></li>\r\n</ul>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Speech Platform - Software Development Kit (SDK) 11",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223570&clcid=0x409"
+        },
+        {
+            "title": "microsoft Speech Platform - Languages 11",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=223569&clcid=0x409"
+        },
+        {
+            "title": "microsoft Speech Technologies",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=187246"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27225",
+    "downloadPreload": true
+}

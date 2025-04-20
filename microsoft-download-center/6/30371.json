@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013 Upgrade Process",
+    "downloadDescription": "This model explains the process that you use when you upgrade from SharePoint Foundation 2010 or SharePoint Server 2010 to SharePoint Foundation 2013 or SharePoint Server 2013.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sp2013-upgrade-process.pdf",
+            "url": "https://download.microsoft.com/download/c/3/4/c342c7fa-521a-4de8-b5ce-6a507cb354d3/sp2013-upgrade-process.pdf",
+            "size": "651676",
+            "version": "1",
+            "datePublished": "7/15/2024 3:09:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sp2013-upgrade-process.vsd",
+            "url": "https://download.microsoft.com/download/c/3/4/c342c7fa-521a-4de8-b5ce-6a507cb354d3/sp2013-upgrade-process.vsd",
+            "size": "953856",
+            "version": "1",
+            "datePublished": "7/15/2024 3:09:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Before you upgrade to SharePoint Foundation 2013 or SharePoint Server 2013 , you have to understand the components of you SharePoint 2010 deployment.  This model illustrates how you prepare to upgrade, how to upgrade databases, and how to upgrade sites. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "sp2013-upgrade-process.pdf",
+        "sp2013-upgrade-process.vsd"
+    ],
+    "detailsSection_file_size": [
+        "636.4 KB",
+        "931.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30371",
+    "downloadPreload": true
+}

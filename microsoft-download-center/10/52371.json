@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "LatticeCrypto",
+    "downloadDescription": "LatticeCrypto is a high-performance and portable software library that implements lattice-based cryptographic algorithms. Last published: April 28, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LatticeCrypto_v1.0.zip",
+            "url": "https://download.microsoft.com/download/7/3/3/733a6839-e6f3-4e6d-a91e-cc6e9f4eaaca/LatticeCrypto_v1.0.zip",
+            "size": "42608",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "LatticeCrypto is a high-performance and portable software library that implements lattice-based cryptographic algorithms. The first release of the library provides an implementation of lattice-based key exchange with security based on the Ring Learning With Errors (R-LWE) problem using new algorithms for the underlying Number Theoretic Transform (NTT). The chosen parameters provide at least 128 bits of security against attackers running classical and quantum computers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "LatticeCrypto_v1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52371",
+    "downloadPreload": true
+}

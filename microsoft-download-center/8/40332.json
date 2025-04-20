@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013 Platform Options",
+    "downloadDescription": "What BDMs and architects need to know about Office 365, Microsoft Azure, and on-premises deployments",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePoint 2013 Platform Options.pdf",
+            "url": "https://download.microsoft.com/download/8/9/9/89985bfe-0542-4f44-bf3b-7ab081f9ea57/SharePoint 2013 Platform Options.pdf",
+            "size": "372117",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePoint 2013 Platform Options.vsd",
+            "url": "https://download.microsoft.com/download/8/9/9/89985bfe-0542-4f44-bf3b-7ab081f9ea57/SharePoint 2013 Platform Options.vsd",
+            "size": "1184768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "For BDMs and architects, this model describes the platform options for SharePoint 2013\u2014SharePoint in Office 365, on-premises hybrid with Office 365, Microsoft Azure, and on-premises only deployments. It includes an overview of each architecture, recommendations, license requirements, and lists of architect and IT Pro tasks for each platform. Several SharePoint solutions on Microsoft Azure are highlighted.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SharePoint 2013 Platform Options.pdf",
+        "SharePoint 2013 Platform Options.vsd"
+    ],
+    "detailsSection_file_size": [
+        "363.4 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\n<ul>\r\n<li>To view the Visio version of the model, you must have Microsoft Visio 2007 or a more recent version.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li>\r\n<li>Click <b>Save</b> or <b>Save this program to disk</b>. </li>\r\n<li>Find the file on your hard disk and double-click it to open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40332",
+    "downloadPreload": true
+}

@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Optimizing Hyper-V Replica SSL traffic with Riverbed SteelHead appliances",
+    "downloadDescription": "This document captures the results from the bandwidth optimization experiments on HTTPS traffic, conducted in the Microsoft\u00ae Engineering Excellence Center (EEC) lab by using the Riverbed Steelhead appliance WAN optimization devices with Windows Server 2012 and Windows Server 2012 R2 Hyper-V Replica.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Optimizing SSL Hyper-V replication with Riverbed.docx",
+            "url": "https://download.microsoft.com/download/b/d/7/bd71e45f-e4eb-4e1a-8c66-8977e5d3810d/Optimizing SSL Hyper-V replication with Riverbed.docx",
+            "size": "1472673",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:04:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Hyper-V\u00ae server role in Windows Server\u00ae 2012 and Windows Server\u00ae 2012 R2 includes Hyper-V Replica, which provides the ability to perform asynchronous and frequent replication of virtual machines between a primary and replica datacenter. As virtual machines can be quite large and cross datacenter network traffic is constrained, a WAN optimization solution will provide substantial benefits in bandwidth reduction. This whitepaper examines the benefits delivered by Riverbed Steelhead appliances when replication traffic flows over HTTPS using Hyper-V Replica\u2019s certificate based authentication deployment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Optimizing SSL Hyper-V replication with Riverbed.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 with the Hyper-V role \r\nWindows Server 2012 R2 with the Hyper-V role ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To start the download, click the Download button, and then do one of the following:\r\n\u2022To start the download immediately, click Open.\r\n\u2022To copy the download to your computer for viewing at a later time, click Save.\r\n\u2022To cancel the download, click Cancel. \r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hyper-V Replica and Riverbed",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=36786"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42627",
+    "downloadPreload": true
+}

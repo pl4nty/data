@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "Technical support documents for Secure database offer ",
+    "downloadDescription": "Implementation guidance and technical details for the Secure database offer ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL Server 2016 - Always Encrypted.pptx",
+            "url": "https://download.microsoft.com/download/6/0/0/600828f3-1fd8-4893-a5c4-a2a0272fdc35/Secured DB offer/SQL Server 2016 - Always Encrypted.pptx",
+            "size": "8024003",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Row-Level Security.zip",
+            "url": "https://download.microsoft.com/download/6/0/0/600828f3-1fd8-4893-a5c4-a2a0272fdc35/Secured DB offer/Row-Level Security.zip",
+            "size": "7273175",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Dynamic Data Masking.zip",
+            "url": "https://download.microsoft.com/download/6/0/0/600828f3-1fd8-4893-a5c4-a2a0272fdc35/Secured DB offer/Dynamic Data Masking.zip",
+            "size": "3053088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Contained Database.zip",
+            "url": "https://download.microsoft.com/download/6/0/0/600828f3-1fd8-4893-a5c4-a2a0272fdc35/Secured DB offer/Contained Database.zip",
+            "size": "6652860",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:11:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package you will find all technical documents that support the implementation of secure database offer, includes the contained database, Dynamic data masking, row-level security and always encrypted ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server 2016 - Always Encrypted.pptx",
+        "Row-Level Security.zip",
+        "Dynamic Data Masking.zip",
+        "Contained Database.zip"
+    ],
+    "detailsSection_file_size": [
+        "7.7 MB",
+        "6.9 MB",
+        "2.9 MB",
+        "6.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Download the technical supporting materials you need to implement a secure database offer. You may want to download all of them or chose the ones you needed. ",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52991",
+    "downloadPreload": true
+}

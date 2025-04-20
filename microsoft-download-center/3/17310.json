@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Windows CE 5.0: Standard Software Development Kit (SDK)",
+    "downloadDescription": "The Windows CE 5.0: Standard SDK, in conjunction with the Microsoft eMbedded Visual C++ 4.0 SP4, deliver a complete development environment for creating applications for devices based on Microsoft\u00ae Windows\u00ae CE 5.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "STANDARD_SDK.msi",
+            "url": "https://download.microsoft.com/download/5/2/6/526ee919-6476-4e0a-8851-7bf39b9a56e4/STANDARD_SDK.msi",
+            "size": "117783040",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:10:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Standard SDK contains a subset of common Operating System (OS) APIs that allows an application written to the Standard SDK to run on different Windows CE platforms that have a graphical user interface.  An application that is based on the Standard SDK for Windows CE will run on any device that contains the Standard SDK components. <br />\nIn some cases, an application written using the Standard SDK for Windows CE  will only need to be recompiled to run on Standard SDK based device that utilizes a different CPU.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "STANDARD_SDK.msi"
+    ],
+    "detailsSection_file_size": [
+        "112.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<A href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=4A4ED1F4-91D3-4DBE-986E-A812984318E5&displaylang=en\">Embedded Visual C++ 4.0 SP4 </A><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI>Click the <b>Download</b> link to start the download.</LI><br />\n<LI>Do one of the following:</LI><br />\n<UL><br />\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><br />\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI><br />\n</UL><br />\n</OL><br />",
+    "relatedResourcesSection": [
+        {
+            "title": "community Resources for Windows Embedded",
+            "url": "http://msdn.microsoft.com/embedded/community/default.aspx"
+        },
+        {
+            "title": "windows CE Documentation and Technical Articles",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/windowsce.asp"
+        },
+        {
+            "title": "overview of Windows CE Development",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/wceintro5/html/wce50oriAboutPlatformBuilder.asp"
+        },
+        {
+            "title": "eMbedded Visual C++ 4.0 SP4",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=4A4ED1F4-91D3-4DBE-986E-A812984318E5&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17310",
+    "downloadPreload": true
+}

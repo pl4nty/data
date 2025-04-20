@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "How to Send and Receive Faults in Workflow Services",
+    "downloadDescription": "This article describes how to set up and use custom faults in a .NET 4 workflow service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "How to Send and Receive Faults in Workflow Services.docx",
+            "url": "https://download.microsoft.com/download/0/7/6/07692e17-b806-4106-942c-4406084982c6/How to Send and Receive Faults in Workflow Services.docx",
+            "size": "1359059",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article describes in detail how to configure a fault contract in the Visual Studio 2010 workflow designer for an invalid request scenario. In addition, setting up a declared fault using the Receive and SendReply activities is demonstrated. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "How to Send and Receive Faults in Workflow Services.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "View the document with Microsoft Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4486",
+    "downloadPreload": true
+}

@@ -1,0 +1,158 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 3.0 Service Pack 1 LangPack",
+    "downloadDescription": "Microsoft .NET Framework 3.0 SP1 Language Packs contain translated text, such as error messages, for each language.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/a/3/0/a3055abe-0738-42de-bfd7-63f86872f9fa/Readme.htm",
+            "size": "2197",
+            "version": "SP1",
+            "datePublished": "7/15/2024 3:27:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Microsoft .NET Framework 3.0 Service Pack 1 Language Packs contain translated text, such as error messages, for languages other than English. Without the installation of a Language Pack, these messages are displayed in English by default.  Multiple language packs, each for a different language, can be installed on a single computer.<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP1",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Processor: </b>400 MHz Pentium processor or equivalent (Minimum); 1GHz Pentium processor or equivalent (Recommended)<br/></LI>\n<LI><b>RAM:</b>96 MB (Minimum); 256 MB (Recommended)<br/></LI>\n<LI> <b>Hard Disk: </b>Up to 500 MB of available space may be required<br/></LI>\n<LI> <b>CD or DVD Drive: </b> Not required<br/></LI>\n<LI> <b>Display:</b> 800 x 600, 256 colors (Minimum); 1024 x 768 high color, 32-bit (Recommended)<br/></LI>\n\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><br />\n<LI> <b>Important:</b> Make sure you have the latest service pack and critical updates for the version of Windows on the computer. To look for recent updates, visit Windows Update. </LI><br />\n<LI>Click the <b>Download</b> button on this page to start the download </LI><br />\n<LI>To save the download to your computer for installation at a later time, click <b>Save</b>.</LI><br />\n<LI>To cancel the installation, click <b>Cancel</b>. </LI><br />\n\n<br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft .NET Framework 2.0 Service Pack 1 (IA64)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=32E77AE0-96EF-4ECD-A157-9BF61A7C8DAA&displaylang=en"
+        },
+        {
+            "title": "microsoft .NET Framework 3.0 Service Pack 1",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=EC2CA85D-B255-4425-9E65-1E88A0BDB72A&displaylang=en"
+        },
+        {
+            "title": "microsoft .NET Framework 2.0 Service Pack 1 (x64)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=029196ED-04EB-471E-8A99-3C61D19A4C5A&displaylang=en"
+        },
+        {
+            "title": "microsoft .NET Framework 2.0 Service Pack 1 (x86)",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=79BC3B77-E02C-4AD3-AACF-A7633F706BA5&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22444",
+    "downloadPreload": true
+}

@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Social feature support for SharePoint Server 2013",
+    "downloadDescription": "Discusses the different deployment architectures for SharePoint Server 2013 and the effect those deployment architectures have on the social features.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePoint2013OnPremisesSocial.pdf",
+            "url": "https://download.microsoft.com/download/b/6/e/b6e84696-2306-4994-87ab-bc980005ef3e/SharePoint2013OnPremisesSocial.pdf",
+            "size": "500790",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:17:04 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePoint2013OnPremisesSocial.vsd",
+            "url": "https://download.microsoft.com/download/b/6/e/b6e84696-2306-4994-87ab-bc980005ef3e/SharePoint2013OnPremisesSocial.vsd",
+            "size": "743424",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:17:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This poster discusses the different deployment architectures for SharePoint Server 2013 and the effect those deployment architectures have on the social features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "SharePoint2013OnPremisesSocial.pdf",
+        "SharePoint2013OnPremisesSocial.vsd"
+    ],
+    "detailsSection_file_size": [
+        "489.1 KB",
+        "726.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>\r\n<ul>\r\n<li>To viewe the Visio version of the model, you must have Microsoft Visio 2010 or 2013.</li>\r\n<li>To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button in the upper right corner of this page to start the download.</li>\r\n<li>Click <b>Save</b> or <b>Save this program to disk</b>. </li>\r\n<li>Find the file on your hard disk and double-click it to open it. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39632",
+    "downloadPreload": true
+}

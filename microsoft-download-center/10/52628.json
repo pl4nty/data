@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Diverse Algebra Word Problem Dataset with Derivation Annotations",
+    "downloadDescription": "This dataset provides training and testing examples for solving algebra word problems automatically. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "0.7.zip",
+            "url": "https://download.microsoft.com/download/7/5/3/753757bd-ceeb-459c-a4d1-15bf843a5b2c/0.7.zip",
+            "size": "252466",
+            "version": "0.7",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a public release of the dataset corresponding paper \"Annotating Derivations: A New Evaluation Strategy and Dataset for Algebra Word Problems\". It consists of over 2000 algebra word problems. Each word problem is annotated with the full derivation (template + alignments) of the relevant equations from the word problem. Please refer to the paper for details.\r\n\r\n<br />\r\n<br />\r\n<b>Contents</b>\r\n\r\n<ol>\r\n<li>1000 new training/testing data with diverse templates and narratives crawled from algebra.com. (DRAW dataset in the paper)</li>\r\n<li>Word problems from <a href=\"http://groups.csail.mit.edu/rbg/code/wordprobs/\">http://groups.csail.mit.edu/rbg/code/wordprobs/</a> annotated using our proposed schema. (Alg-514 in the paper) </li>\r\n<li>Word problems from linear-T2 subset from <a href=\"http://research.microsoft.com/en-us/projects/dolphin/\">http://research.microsoft.com/en-us/projects/dolphin/</a> annotated using our proposed schema. (Dolphin-L in the paper) </li>\r\n</ol>\r\n<br />\r\nTemplates annotated in all the above datasets were globally reconciled. The cross validation splits and train-test splits used in the papers are also provided (Thanks to the respective authors for sharing the splits).\r\n<br />\r\nIf you found the dataset useful, please support our work by citing our paper. Please email the authors if you find any problems.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.7",
+    "detailsSection_file_name": [
+        "0.7.zip"
+    ],
+    "detailsSection_file_size": [
+        "246.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52628",
+    "downloadPreload": true
+}

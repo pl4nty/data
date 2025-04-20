@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update For Exchange Server 2013 CU23 (KB5010324)",
+    "downloadDescription": "Security Update For Exchange Server 2013 CU23 (KB5010324)",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Exchange2013-KB5010324-x64-en.msp",
+            "url": "https://download.microsoft.com/download/8/2/9/829126b2-b532-4950-a125-49d50e2fda40/Exchange2013-KB5010324-x64-en.msp",
+            "size": "88281088",
+            "version": "15.00.1497.033",
+            "datePublished": "7/15/2024 4:31:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "A remote code execution vulnerability exists in Microsoft Exchange software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the System user. An attacker could then install programs; view, change, or delete data; or create new accounts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/5010324",
+        "name": "5010324"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.00.1497.033",
+    "detailsSection_file_name": [
+        "Exchange2013-KB5010324-x64-en.msp"
+    ],
+    "detailsSection_file_size": [
+        "84.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<B>The Exchange Server SETUP program will specify any required components that are missing </B>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "We recommend restarting your computer before installing a security update. Then follow these steps: <br/>\r\n<ol>\r\n<li> Disable the anti-virus software. </li>\r\n<li> Open an elevated Command Prompt window (not PowerShell) as an administrator, like this: </li>\r\n<ul>\r\n<li> Select <b> Start </b> and then enter <b> cmd </b>. </li>\r\n<li> Right-click <b> Command Prompt </b> in the results and select <b> Run as administrator </b>. </li>\r\n<li> If the <b> User Account Control </b> dialog box appears, select <b> Yes </b> and then <b> Next </b>. </li>\r\n</ul>\r\n<li> At the command prompt, enter the full path to the folder that contains the 'MSP file', then press 'Enter'. <br />\r\n<b> Note: </b> Do not double-click the 'MSP file' to run it. </li>\r\n<li> When the installation is complete, re-enable the antivirus software and restart your computer. (The installation program may prompt you to restart.) </li>\r\n</ol>\r\n<br/> If problems occur during or after this installation, please refer to <a href=\"https://aka.ms/exupdatefaq\"> Repair failed installations of Exchange Cumulative and Security updates </a> before contacting Microsoft Support.",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=2645995"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "104001",
+    "downloadPreload": true
+}

@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 Management Pack for MOM 2005",
+    "downloadDescription": "This guide describes how the Exchange Server 2003 Management Pack integrates with Microsoft Operations Manager 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MPforMOM_2005.doc",
+            "url": "https://download.microsoft.com/download/3/4/c/34c6dd5e-cadb-4b87-9823-fb687252e39e/MPforMOM_2005.doc",
+            "size": "992256",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:14:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Ensuring that Microsoft Exchange servers are operating reliably is a key objective for daily messaging operations and should be approached systematically based on the principles outlined in the <a href=\"http://go.microsoft.com/fwlink/?linkid=25297\">Microsoft Operations Framework (MOF)</a>. A significant part of daily operations in information technology (IT) is monitoring system health. Monitoring can ensure that service level agreements (SLAs) are met, and it helps you detect and address issues in the Exchange organization before they affect user productivity. Monitoring can also help you estimate future demands based on usage patterns and other performance data.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "MPforMOM_2005.doc"
+    ],
+    "detailsSection_file_size": [
+        "969.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>\nClick the <b>Download</b> button on this page to start the download.\n</LI><br />\n<LI>Do one of the following:</LI></OL>\n<UL>\n<LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.<br />\n</LI><br />\n<LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n</LI>\n</UL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "exchange Server 2003 Management Pack for MOM 2005",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=67356"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8362",
+    "downloadPreload": true
+}

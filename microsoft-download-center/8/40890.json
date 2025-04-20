@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Remote Desktop Services Diagnostic Tool",
+    "downloadDescription": "A tool to help troubleshoot Remote Desktop Services deployments in Windows Server 2012 R2 and  Windows Server 2012",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Rdvdiag.msi",
+            "url": "https://download.microsoft.com/download/1/e/8/1e8aa951-7ee7-4243-8a98-fabeba480693/Rdvdiag.msi",
+            "size": "3549184",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The RDS Diagnostic Tool can be used to get the current status of your Remote Desktop Services deployment or diagnose various types of issues in the deployment. The tool has several tabs that display different aspects of the deployment. For more information, including a description of the tabs, see the Remote Desktop Services Diagnostic Tool post on the Remote Desktop Services Blog at http://blogs.msdn.com/b/rds/.\r\n\r\nNote the following prerequisites for running the tool: \r\n<ul><li>The tool needs to be run under a user account with Administrator privileges on all the servers of the RDS deployment.</li>\r\n<li>The tool needs to be launched on the RD Connection Broker server.</li>\r\n<li>The tool supports Windows Server 2012 and Windows Server 2012 R2 deployments (no support for Windows Server 2008 R2).</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Rdvdiag.msi"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "MSI viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "remote Desktop Services Blog",
+            "url": "http://blogs.msdn.com/b/rds/"
+        },
+        {
+            "title": "remote Desktop Services TechCenter",
+            "url": "http://technet.microsoft.com/en-us/windowsserver/ee236407"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40890",
+    "downloadPreload": true
+}

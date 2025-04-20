@@ -1,0 +1,132 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange 2013/2016 Public Folders Migration Scripts",
+    "downloadDescription": "Use these scripts to migrate public folders from Exchange 2013 or Exchange 2016 to Office 365 and Exchange Online.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SyncModernMailPublicFolders.strings.psd1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/SyncModernMailPublicFolders.strings.psd1",
+            "size": "6182",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Sync-ModernMailPublicFolders.ps1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/Sync-ModernMailPublicFolders.ps1",
+            "size": "53484",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ModernPublicFolderToMailboxMapGenerator.ps1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/ModernPublicFolderToMailboxMapGenerator.ps1",
+            "size": "27529",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Export-ModernPublicFolderStatistics.ps1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/Export-ModernPublicFolderStatistics.ps1",
+            "size": "26976",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Export-ModernPublicFolderStatistics.strings.psd1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/Export-ModernPublicFolderStatistics.strings.psd1",
+            "size": "2530",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SetMailPublicFolderExternalAddress.strings.psd1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/SetMailPublicFolderExternalAddress.strings.psd1",
+            "size": "2666",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ModernPublicFolderToMailboxMapGenerator.strings.psd1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/ModernPublicFolderToMailboxMapGenerator.strings.psd1",
+            "size": "1920",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SetMailPublicFolderExternalAddress.ps1",
+            "url": "https://download.microsoft.com/download/3/d/f/3df1a539-7328-4a97-934d-37b18040e215/SetMailPublicFolderExternalAddress.ps1",
+            "size": "18666",
+            "version": "15.01.0184.006",
+            "datePublished": "7/15/2024 4:51:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use these scripts to migrate public folders from Exchange 2013 or Exchange 2016 to Office 365 and Exchange Online.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.01.0184.006",
+    "detailsSection_file_name": [
+        "SyncModernMailPublicFolders.strings.psd1",
+        "Sync-ModernMailPublicFolders.ps1",
+        "ModernPublicFolderToMailboxMapGenerator.ps1",
+        "Export-ModernPublicFolderStatistics.ps1",
+        "Export-ModernPublicFolderStatistics.strings.psd1",
+        "SetMailPublicFolderExternalAddress.strings.psd1",
+        "ModernPublicFolderToMailboxMapGenerator.strings.psd1",
+        "SetMailPublicFolderExternalAddress.ps1"
+    ],
+    "detailsSection_file_size": [
+        "6.0 KB",
+        "52.2 KB",
+        "26.9 KB",
+        "26.3 KB",
+        "2.5 KB",
+        "2.6 KB",
+        "1.9 KB",
+        "18.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Exchange Server 2013 or Exchange Server 2016 to be installed on the server where the script will be run</LI>\r\n<LI>PowerShell 3.0 or later</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2016",
+        "Windows Server 2012 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2008 Standard without Hyper-V",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 Standard",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Release Candidate",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 Standard",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2008 R2 Standard"
+    ],
+    "installInstructionSection": "Please refer to one of the following articles for instructions on how to use the scripts: ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54855",
+    "downloadPreload": true
+}

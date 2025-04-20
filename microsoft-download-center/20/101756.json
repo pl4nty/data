@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Install and Configuration in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Installation and Configuration of Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_INS.zip",
+            "url": "https://download.microsoft.com/download/5/e/0/5e0748b3-e8c6-49c4-ad71-e70a0ccc3c67/SL2015_ENUS_INS.zip",
+            "size": "5220449",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b> </b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Installation and Configuration of Microsoft Dynamics SL. At Training Material Completion<b> </b>After completing this course, students will be able to:<ul><li>Understand how to install Microsoft Dynamics SL, including a server and client install.</li><li>Understand how to install other components of Microsoft Dynamics SL including Crystal Reports, and Application Server.</li><li>Understand the directory structure of the Microsoft Dynamics SL program files.</li><li>Use tools to troubleshoot performance and monitor errors and access.</li><li>Use the Microsoft Dynamics SL security and access rights features.\u200b</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_INS.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101756",
+    "downloadPreload": true
+}

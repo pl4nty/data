@@ -1,0 +1,193 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Outlook Social Connector Provider for Windows Live Messenger",
+    "downloadDescription": "Connect your Windows Live ID to the Outlook Social Connector and stay up to the minute with the people in your network by accessing everything from e-mail threads to status updates in one single, centralized view.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OSCWL-x86-en-us.exe",
+            "url": "https://download.microsoft.com/download/f/d/0/fd0fb81d-cfa7-4c3e-bd72-e21b4589bdcc/OSCWL-x86-en-us.exe",
+            "size": "12896808",
+            "version": "14.0",
+            "datePublished": "7/15/2024 3:02:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OSCWL-x64-en-us.exe",
+            "url": "https://download.microsoft.com/download/f/d/0/fd0fb81d-cfa7-4c3e-bd72-e21b4589bdcc/OSCWL-x64-en-us.exe",
+            "size": "10630848",
+            "version": "14.0",
+            "datePublished": "7/15/2024 3:02:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "The Microsoft Outlook Social Connector Provider for Windows Live Messenger allows you to connect your Windows Live ID to the Outlook Social Connector and obtain information about your friends and colleagues. You can see status updates and recently posted files from your Windows Live contacts. \r\n<br/>\r\n<br/>\r\nYou can also use Outlook Social Connector to display a quick view of related Outlook content when you click on an email from a contact, such as recent e-mail conversations, meetings, and shared attachments to help you easily track your communications. \r\n<br/>\r\n<br/>\r\n<b>NOTE</b>: The Microsoft Outlook Social Connector Provider requires Microsoft Outlook Social Connector and the related update (KB983403) to be installed. If these components are not already installed on your machine, the Microsoft Outlook Social Connector Provider for Windows Live Messenger will download and install the necessary updates from the Microsoft Download Center before completing the provider installation. \r\n<br/><br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0",
+    "detailsSection_file_name": [
+        "OSCWL-x86-en-us.exe",
+        "OSCWL-x64-en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "12.3 MB",
+        "10.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>Microsoft Windows XP SP3</li>\n<li>Microsoft Windows Vista</li>\n<li>Microsoft Windows 7</li>\r\n</ul>\r\n<br/>\r\n<br/>\n<b>This download works with the following Office programs:</b>\n<br/>\n<ul>\n<li>Microsoft Outlook 2010</li>\n<li>Microsoft Office Outlook 2007</li>\n<li>Microsoft Office Outlook 2003</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2008",
+        "Windows Vista 64-bit Editions Service Pack 1",
+        "Windows Vista Business 64-bit edition",
+        "Windows Vista Home Basic 64-bit edition",
+        "Windows XP 64-bit",
+        "Windows XP Professional 64-Bit Edition (Itanium) 2003",
+        "Windows XP Professional Edition ",
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/>\r\n<br/>\r\nFor Outlook 2010 32-bit, Outlook 2007, and Outlook 2003:\n<ol>\n<li>Download the setup file by clicking the Download button next to <b>OSCWL-x86-en-us.exe</b> (below), and save the file to your hard disk. </li>\n<li>Double-click the <b>OSCWL-x86-en-us.exe</b> program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\r\n<br/>\r\nFor Outlook 2010 64-bit:\r\n<ol>\n<li>Download the setup file by clicking the Download button next to <b>OSCWL-x64-en-us.exe</b> (below), and save the file to your hard disk. </li>\n<li>Double-click the <b>OSCWL-x64-en-us.exe</b> program file on your hard disk to start the Setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>Instructions for use:</b> \n<br/>\r\n<br/>\r\n<ul>\r\n  <li> After you install this download, restart Outlook, and you will be prompted by the Outlook Social Connector configuration wizard to connect to Windows Live Messenger. \r\n     <ol>\r\n     <li>Under <b>Social Network Accounts</b>, select Windows Live Messenger. </li>\r\n     <li>For <b>User Name: </b> enter your Windows Live Messenger email account. </li>\r\n     <li>For <b>Password: </b> enter your Windows Live Messenger password. </li>\r\n     <li>Click <b>Connect</b> </li>\r\n     <li>Once the connection is successfully completed, click <b>Finish</b></li>\r\n    </ol>\r\n  </li>\r\n\r\n  <li> If you were not prompted by the Outlook Social Connector configuration wizard, you can still connect to Windows Live Messenger.<br/>\r\n         For Outlook 2010: \r\n     <ol>\r\n     <li>On the <b>View</b> tab, in the <b>People Pane</b> group, click <b>People Pane</b>, and then click <b> Account Settings</b>. </li>\r\n     <li>Under <b>Social Network Accounts</b>, select Windows Live Messenger. </li>\r\n     <li>For <b>User Name: </b> enter your Windows Live Messenger email account. </li>\r\n     <li>For <b>Password: </b> enter your Windows Live Messenger password. </li>\r\n     <li>Click <b>Connect</b>. </li>\r\n     <li>Once the connection is successfully completed, click <b>Finish</b>.</li>\r\n     </ol>\r\n    <br/>\r\nFor Outlook 2007 and Outlook 2003:\r\n     <ol>\r\n          <li> Click <b>Tools</b>, and then click <b>Social Network Account Settings</b>.</li>\r\n          <li>Under <b>Social Network Accounts</b>, select Windows Live Messenger. </li>\r\n          <li>For <b>User Name: </b> enter your Windows Live Messenger email account. </li>\r\n          <li>For <b>Password: </b> enter your Windows Live Messenger password. </li>\r\n         <li>Click <b>Connect</b>. </li>\r\n          <li>Once the connection is successfully completed, click <b>Finish</b>.</li>\r\n     </ol>\r\n </li>\r\n</ul>\r\n\r\n<br/>\r\n\n<b>To remove this download:</b><br/>\n<br/>\r\nFor Outlook 2010 32-bit, Outlook 2007, and Outlook 2003: <br/>\n<ul>\r\n<li>To remove the download file, delete the file <b>OSCWL-x86-en-us.exe</b>. </li>\r\n</ul>\n<br/>\n\r\nFor Outlook 2010 64-bit:<br/>\n<ul>\r\n<li>To remove the download file, delete the file <b>OSCWL-x64-en-us.exe</b>.</li>\r\n</ul>\r\n<br/>\r\n<br/>\r\n<b> To uninstall the download: </b> <br/><br/>\r\nTo uninstall the Microsoft Outlook Social Connector Provider for Windows Live Messenger: <br/>\r\n\n<ol>\n<li>On the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>. </li>\n<li>Double-click <b>Add/Remove Programs</b>. </li>\n<li>In the list of currently installed programs, select <b>Microsoft Outlook Social Connector Provider for Windows Live Messenger</b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Outlook 2010 Blog",
+            "url": "http://blogs.msdn.com/b/outlook/archive/2010/02/17/outlook-gets-social-with-linkedin_2c00_-facebook_2c00_-and-myspace.aspx"
+        },
+        {
+            "title": "microsoft Outlook Social Connector Provider for Facebook",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=ce8b7517-234c-48a1-a655-324a88893b02"
+        },
+        {
+            "title": "developing a provider for the Outlook Social Connector",
+            "url": "http://blogs.msdn.com/b/outlook/archive/2009/11/19/developing-a-provider-for-the-outlook-social-connector.aspx"
+        },
+        {
+            "title": "microsoft Outlook Social Connector FAQ",
+            "url": "http://support.microsoft.com/kb/2276763"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8810",
+    "downloadPreload": true
+}

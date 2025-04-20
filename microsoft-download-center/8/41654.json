@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Visual F# Out of Band Release 3.1.1",
+    "downloadDescription": "Visual F# Out of Band Release, adds support for Express Skus and some minor bug fixes.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FSharp_Bundle.exe",
+            "url": "https://download.microsoft.com/download/3/0/a/30a5d6dd-5b5c-4e06-b331-a88aa0b53150/FSharp_Bundle.exe",
+            "size": "27410504",
+            "version": "3.1.1",
+            "datePublished": "7/15/2024 3:20:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release enables developers using Visual Studio 2013 Express for Windows Desktop, and Visual Studio 2013 Express for Web to develop using Visual F#.\r\nFixes some minor bugs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.1.1",
+    "detailsSection_file_name": [
+        "FSharp_Bundle.exe"
+    ],
+    "detailsSection_file_size": [
+        "26.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7</li>\r\n<li>Windows 8 Release Preview</li>\r\n<li>Windows Server 2008 R2</li>\r\n<li>Windows Server 2008 Service Pack 2</li>\r\n<li><b>Recommended Software:</b></li>\r\n<li>Microsoft Visual Studio 2013 Professional</li>\r\n<li>Microsoft Visual Studio 2013 Express for Windows Desktop </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Enterprise N",
+        "Windows 7 Home Basic",
+        "Windows 7 Home Basic 64-bit",
+        "Windows 7 Home Premium",
+        "Windows 7 Home Premium 64-bit",
+        "Windows 7 Home Premium E 64-bit",
+        "Windows 7 Home Premium N",
+        "Windows 7 Home Premium N 64-bit",
+        "Windows 7 Professional",
+        "Windows 7 Professional 64-bit",
+        "Windows 7 Professional E 64-bit",
+        "Windows 7 Professional K 64-bit",
+        "Windows 7 Professional KN 64-bit",
+        "Windows 7 Professional N",
+        "Windows 7 Professional N 64-bit",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Starter",
+        "Windows 7 Starter 64-bit",
+        "Windows 7 Starter N",
+        "Windows 7 Ultimate",
+        "Windows 7 Ultimate 64-bit",
+        "Windows 7 Ultimate E 64-bit",
+        "Windows 7 Ultimate K 64-bit",
+        "Windows 7 Ultimate KN 64-bit",
+        "Windows 7 Ultimate N",
+        "Windows 7 Ultimate N 64-bit",
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Datacenter without Hyper-V",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 Enterprise without Hyper-V",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 for Itanium-based Systems",
+        "Windows Server 2008 R2 Foundation",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2008 Standard",
+        "Windows Server 2008 Standard without Hyper-V",
+        "Windows Server 2012",
+        "Windows Server 2012 Beta Essentials",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Essentials ",
+        "Windows Server 2012 R2 Preview",
+        "Windows Server 2012 Release Candidate"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download</li>\r\n<li>Do one of the following:</li>\r\n</ol>\r\n<ul>\r\n<li>To start the installation immediately, click Run.</li>\r\n<li>To save the download to your computer for installation at a later time, click Save</li>\r\n<li>To cancel the installation, click Cancel</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41654",
+    "downloadPreload": true
+}

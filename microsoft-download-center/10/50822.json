@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Sample service offers - IaaS BCDR",
+    "downloadDescription": "This zipped folder includes sample service offer templates for CSP partners interested in launching BCDR offers on Azure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sample service offers - IaaS BCDR.zip",
+            "url": "https://download.microsoft.com/download/f/a/2/fa2995f7-1f2e-47ea-8141-f8f68c042bd9/Sample service offers - IaaS BCDR.zip",
+            "size": "574545",
+            "version": "January 2014",
+            "datePublished": "9/15/2023 4:01:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder includes sample service offer templates for CSP partners interested in launching BCDR offers on Azure\r\n.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Sample service offers - IaaS BCDR.zip"
+    ],
+    "detailsSection_file_size": [
+        "561.1 KB"
+    ],
+    "detailsSection_file_date": "9/15/2023",
+    "systemRequirementsSection": "all",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50822",
+    "downloadPreload": true
+}

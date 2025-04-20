@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "UnifiedSetup_9.42",
+    "downloadDescription": "UnifiedSetup_9.42",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MicrosoftAzureSiteRecoveryUnifiedSetup.exe",
+            "url": "https://download.microsoft.com/download/7/1/5/715a418c-7a0c-4f7f-b7d1-c8c563c98a06/MicrosoftAzureSiteRecoveryUnifiedSetup.exe",
+            "size": "1954146072",
+            "version": "9.42.0.0",
+            "datePublished": "7/15/2024 5:03:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "UnifiedSetup_9.42",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.42.0.0",
+    "detailsSection_file_name": [
+        "MicrosoftAzureSiteRecoveryUnifiedSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.8 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Deploy on on ESX server.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102928",
+    "downloadPreload": true
+}

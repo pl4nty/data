@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfixes for Surface Drivers and Firmware",
+    "downloadDescription": "All current drivers, firmware and hotfixes for Surface devices",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Surface Hotfixes.txt",
+            "url": "https://download.microsoft.com/download/c/4/9/c4952032-7dd2-4975-a081-6cfb2d474695/Surface Hotfixes.txt",
+            "size": "105",
+            "version": "1.0",
+            "datePublished": "1/29/2025 7:45:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cumulative and current drivers, firmware and hotfixes for the Surface devices. The driver MSI files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices.\r\n\r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n<br>\r\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\r\n</br>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Surface Hotfixes.txt"
+    ],
+    "detailsSection_file_size": [
+        "105 bytes"
+    ],
+    "detailsSection_file_date": "1/29/2025",
+    "systemRequirementsSection": "A compatible Surface device is required for these drivers. These drivers, firmware and hotfixes are compatible with Windows 10, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 10 Tech Preview",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface device. The MSI will install all relevant drivers automatically.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57460",
+    "downloadPreload": true
+}

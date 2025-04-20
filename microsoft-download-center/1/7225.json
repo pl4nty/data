@@ -1,0 +1,126 @@
+{
+    "error": "",
+    "downloadTitle": "New, Changed, and Deprecated Features for Microsoft Dynamics AX 2012",
+    "downloadDescription": "This document provides a summary of new and changed features that have been implemented in Microsoft Dynamics AX 2012, Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012 R2, and Microsoft Dynamics AX 2012 R3. It also describes companion apps and tools and services that support AX 2012. It also includes deprecated feature notices that describe features that have been removed in an",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "New Changed and Deprecated Features for Microsoft Dynamics AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/4/7/a/47ada0dc-5644-4f9b-a28a-3f468f4e3067/New Changed and Deprecated Features for Microsoft Dynamics AX 2012.pdf",
+            "size": "6876468",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics AX 2012 introduces many new features and technologies that were not available in previous releases. Additionally, changes introduced in Microsoft Dynamics AX 2012 update a number of existing features and technologies. This document describes new and changed features for Microsoft Dynamics AX 2012, including Microsoft Dynamics AX 2012 Feature Pack, Microsoft Dynamics AX 2012 R2, and Microsoft Dynamics AX 2012 R3. It also describes companion apps and tools and services that support AX 2012. It also includes deprecated feature notices that describe features that have been removed in an AX 2012 release or are planned to be removed in future releases. The most up-to-date What\u2019s New content can be found in the Microsoft Dynamics AX 2012 library on TechNet (http://technet.microsoft.com/en-us/library/af686153-4c0a-458e-b288-60627d5a41d0.aspx)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "New Changed and Deprecated Features for Microsoft Dynamics AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "6.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7225",
+    "downloadPreload": true
+}

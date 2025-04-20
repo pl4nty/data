@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 R2 Integration Pack for VMware vSphere",
+    "downloadDescription": "The Integration Pack for VMware vSphere is an add-on for System Center 2012 R2 - Orchestrator that enables you to connect System Center Orchestrator to your VMware vSphere server to automate actions in VMware vSphere to enable full management of the virtualized computing infrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "System_Center_2012_R2_Integration_Pack_for_VMware_vSphere.EXE",
+            "url": "https://download.microsoft.com/download/9/d/1/9d1a3efe-9909-4d02-b358-80000daf1444/System_Center_2012_R2_Integration_Pack_for_VMware_vSphere.EXE",
+            "size": "2290368",
+            "version": "7.2.105.0",
+            "datePublished": "7/15/2024 3:19:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for VMware vSphere is an add-on for System Center 2012 R2 - Orchestrator that enables you to connect System Center 2012 R2 - Orchestrator to your VMware vSphere server to automate actions in VMware vSphere to enable full management of the virtualized computing infrastructure.<br />\n<br />\n<b>Feature Summary</b><br />\nThe Integration Pack includes the following activities:<br />\n<ul>\n<li> Add Network Adapter  </li>\n<li> Add VM Disk  </li>\n<li> Clone Linux VM  </li>\n<li> Clone Windows VM  </li>\n<li> Create VM  </li>\n<li> Customize VM  </li>\n<li> Delete VM  </li>\n<li> Get Cluster Properties  </li>\n<li> Get Datastore Capacity  </li>\n<li> Get Hosts  </li>\n<li> Get Resource Pool Runtime Info  </li>\n<li> Get Resource Pools  </li>\n<li> Get VM List  </li>\n<li> Get VM Properties  </li>\n<li> Get VM Status  </li>\n<li> Migrate VM  </li>\n<li> Move VM  </li>\n<li> Reconfigure VM  </li>\n<li> Reset VM  </li>\n<li> Revert VM Snapshot  </li>\n<li> Set Guest Info Variables  </li>\n<li> Set VM CD/DVD to ISO Image  </li>\n<li> Set VM Networks  </li>\n<li> Start VM  </li>\n<li> Stop VM  </li>\n<li> Suspend VM  </li>\n<li> Take VM Snapshot  </li>\n<li> Maintenance Mode  </li>\n<li> Get Host Properties  </li>\n<li> Get Host Datastores </li>\n</ul><br />\n<b>Release History </b><br />\n<ul>\n<li> 06/26/2016 - Update 2 (version 7.2.105.0) -  <b>Included fixes: </b> Allow conversion of this Integration Pack to PowerShell module via <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=47323\">System Center Orchestrator Migration Toolkit</a>. The generated PowerShell modules can be used with Azure Automation or Service Management Automation.</li>\n<br/>\n<li> 04/03/2014 - Update 1 (version 7.2.93.0) -  <b>Included fixes: </b>When creating an addtional disk for a VM the resulting .vmdk file will have a GUID incorrectly appended to the name.</li><br/>\n<li>10/25/2013 - Original English release, version 7.2.46.0 </li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.105.0",
+    "detailsSection_file_name": [
+        "System_Center_2012_R2_Integration_Pack_for_VMware_vSphere.EXE"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 2012 R2 - Orchestrator \n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe. <br/>\r\n<br/>\r\nThen follow the instruction on this page to install Integration Packs: <a href=\"http://technet.microsoft.com/en-us/library/hh420346.aspx\">http://technet.microsoft.com/en-us/library/hh420346.aspx</a><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "system Center Homepage",
+            "url": "http://www.microsoft.com/en-us/server-cloud/system-center/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40874",
+    "downloadPreload": true
+}

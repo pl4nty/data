@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2010: Operations Framework and Checklists",
+    "downloadDescription": "Checklists for SharePoint operations",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-sharepoint-operations-checklist.xps",
+            "url": "https://download.microsoft.com/download/8/c/3/8c34ffe4-9b41-46b0-a4b7-1dc20aefc63b/oit2010-whitepaper-sharepoint-operations-checklist.xps",
+            "size": "1355375",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "oit2010-whitepaper-sharepoint-operations-checklist.doc",
+            "url": "https://download.microsoft.com/download/8/c/3/8c34ffe4-9b41-46b0-a4b7-1dc20aefc63b/oit2010-whitepaper-sharepoint-operations-checklist.doc",
+            "size": "910336",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "oit2010-whitepaper-sharepoint-operations-checklist.pdf",
+            "url": "https://download.microsoft.com/download/8/c/3/8c34ffe4-9b41-46b0-a4b7-1dc20aefc63b/oit2010-whitepaper-sharepoint-operations-checklist.pdf",
+            "size": "1092557",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:10:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "This document provides information, such as checklists for daily, weekly, and monthly tasks, which are related to the operations management of a Microsoft SharePoint Server 2010 environment. In addition, guidance is provided for using Microsoft System Center Operations Manager 2007 R2 to monitor a SharePoint environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "oit2010-whitepaper-sharepoint-operations-checklist.xps",
+        "oit2010-whitepaper-sharepoint-operations-checklist.doc",
+        "oit2010-whitepaper-sharepoint-operations-checklist.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "889.0 KB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "12945",
+    "downloadPreload": true
+}

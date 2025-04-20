@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Shingleprinting code for estimating document similarity",
+    "downloadDescription": "This package impelements the Broder et al method for approximating the Jaccard metric for comparing two text files.\r\n\r\nThe Jaccard metric measures the similarity of two sets of features by computing the cardinality of the intersection of the two sets divided by the cardinality of the union.\r\n\r\nThe Broder method (first published in the 1997 . Last published: March 12, 2004.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "release_shingle.zip",
+            "url": "https://download.microsoft.com/download/1/5/0/150e6199-c557-4d8e-95ef-7353da8a4247/release_shingle.zip",
+            "size": "40897",
+            "version": "1.1.1",
+            "datePublished": "12/15/2023 4:19:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package impelements the Broder et al method for approximating the Jaccard metric for comparing two text files.\r\n\r\nThe Jaccard metric measures the similarity of two sets of features by computing the cardinality of the intersection of the two sets divided by the cardinality of the union.\r\n\r\nThe Broder method (first published in the 1997 World-Wide Web Conference) for approximating this uses random one-to-one functions from the space of features to a bounded set of integers to select a single feature from each document for each function.  The probablity of selecting the same feature from two documents is (when averaged over all choices of random functions) equal to the Jaccard metric.\r\n\r\nThis package implements shingling, and a specific family of hash functions for converting text documents into sets of features.  Many of the techniques used here, and most applications of this code, are covered by patents owned by Yahoo, which purchased Overture, which purchased Alta Vista, so only investigative use, consistent with applicable patent laws, is to be pursued using this code without negotiation of appropriate licenses.  Nonetheless, we find this to be of great value as a research tool, and release it in that spirit.\r\n\r\nThe HTML parsing included herein is pretty kludgy; I recommend changing it.\r\n\r\nVersion 1.1.1 fixes a warning message, and compiles correctly.\r\n\r\nVersion 1.1 differs from the 1.0  in that\r\n1) The random number generator is now seeded, badly.\r\n2) The big-endian code is now correct.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.1",
+    "detailsSection_file_name": [
+        "release_shingle.zip"
+    ],
+    "detailsSection_file_size": [
+        "39.9 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52292",
+    "downloadPreload": true
+}

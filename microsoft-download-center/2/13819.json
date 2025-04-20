@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SharePoint Foundation 2010 Management Pack for System Center Operations Manager 2007",
+    "downloadDescription": "This Management Pack enables operators and administrators to manage Microsoft SharePoint Foundation 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft SharePoint Foundation 2010 OpsMgr 2007 MP en-us.msi",
+            "url": "https://download.microsoft.com/download/e/8/8/e883d0f0-1bd0-4a41-a44d-ac2b98ad8805/Microsoft SharePoint Foundation 2010 OpsMgr 2007 MP en-us.msi",
+            "size": "958464",
+            "version": "14.0.4745.1000",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft SharePoint Foundation 2010 Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/e/8/8/e883d0f0-1bd0-4a41-a44d-ac2b98ad8805/Microsoft SharePoint Foundation 2010 Management Pack Guide.docx",
+            "size": "286986",
+            "version": "14.0.4745.1000",
+            "datePublished": "7/15/2024 4:26:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft SharePoint Foundation 2010 management pack is designed to be used for monitoring SharePoint Foundation 2010 events, collecting SharePoint component-specific performance counters in one central location, and for raising alerts for operator intervention as necessary. By detecting, sending alerts, and automatically correlating critical events, this management pack helps indicate, correct, and prevent possible service outages or configuration problems, allowing you to proactively manage SharePoint servers and identify issues before they become critical. The management pack monitors and provides alerts for automatic notification of events indicating service outages, performance degradation, and health monitoring. <br/>\r\n<br/>\r\n<b>Feature Summary</b><br/>\r\n<ul>\r\n<li> Health monitoring of SharePoint Foundation 2010 </li>\r\n<li> Monitors Events and Services and alerts when service outages are detected </li>\r\n<li> Monitors Performance and warns users when SharePoint performance is at risk </li>\r\n<li> Forwards users to up-to-date TechNet knowledge articles </li>\r\n</ul>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<ul>\r\n<li> 4/27/2010 - Original release for SharePoint Foundation, version 14.0.4744.1000</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.4745.1000",
+    "detailsSection_file_name": [
+        "Microsoft SharePoint Foundation 2010 OpsMgr 2007 MP en-us.msi",
+        "Microsoft SharePoint Foundation 2010 Management Pack Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "936.0 KB",
+        "280.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center Operations Manager 2007 SP1 or later</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download the MSI. </li>\r\n<li> Double click the MSI to install. </li>\r\n<li> View the Management Pack Guide for importing and configuration instructions. </li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Home Page",
+            "url": "http://www.microsoft.com"
+        },
+        {
+            "title": "microsoft SharePoint Home Page",
+            "url": "http://sharepoint.microsoft.com"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13819",
+    "downloadPreload": true
+}

@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Rights Management connector",
+    "downloadDescription": "Rights Management connector server for integrating Exchange and SharePoint servers with the Azure-based Microsoft Rights Management",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GenConnectorConfig.ps1",
+            "url": "https://download.microsoft.com/download/d/f/8/df86d5ed-0634-4db0-9e37-8819d4fa8790/GenConnectorConfig.ps1",
+            "size": "28528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "RMSConnectorSetup.exe",
+            "url": "https://download.microsoft.com/download/d/f/8/df86d5ed-0634-4db0-9e37-8819d4fa8790/RMSConnectorSetup.exe",
+            "size": "8701792",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:03:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Microsoft Rights Management (Microsoft RMS) connector is an application that can be used to quickly enable existing on-premises servers such as Microsoft Exchange or Microsoft SharePoint to use their Information Rights Management functionality with the cloud-based Microsoft Rights Management services.\r\nTwo files are available as part of this download: the RMS connector installer and a server configuration tool script which can be utilized to simplify the process of configuring Exchange and SharePoint servers to use the connector. \r\nLearn more about the RMS connector at http://technet.microsoft.com/en-us/library/dn375964.aspx.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "GenConnectorConfig.ps1",
+        "RMSConnectorSetup.exe"
+    ],
+    "detailsSection_file_size": [
+        "27.9 KB",
+        "8.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For connector server: \r\nx64-based server running Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019\r\nAt least 1GB of RAM\r\n64GB of disk space\r\none network interface of 100mbps or faster\r\n\r\nTo use the server configuration tool, follow the instructions at http://technet.microsoft.com/en-us/library/dn375964.aspx.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2 Datacenter",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 Standard",
+        "Windows Server 2012 Datacenter"
+    ],
+    "installInstructionSection": "Download and save the connector install package. Run the package on the installed computer and follow the instructions on the screen. \r\nYou must have your Microsoft Rights Management or Office 365 tenant installed, configured and synchronized with your directory before installing the connector. \r\nAfter the connector is installed, authorize and configure the Exchange and SharePoint servers to utilize the connector. The server configuration tool can be used remotely or on these servers to configure them to use the connector.\r\nFor more information on installing and configuring the connector, as well as to the pre-requisite configurations and methods to configure Exchange and SharePoint servers to utilize Microsoft RMS, see the help in the product's installer or see http://technet.microsoft.com/en-us/library/dn375964.aspx.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40839",
+    "downloadPreload": true
+}

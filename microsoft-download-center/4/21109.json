@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Studio 2005 Team Foundation Server MSSCCI Provider",
+    "downloadDescription": "Enables integrated use of Team Foundation Version Control with products that do not support Team Explorer integration.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Visual Studio Team Foundation Server MSSCCI Provider.msi",
+            "url": "https://download.microsoft.com/download/3/d/7/3d78350f-b761-45f5-b529-f452f1490ce9/Visual Studio Team Foundation Server MSSCCI Provider.msi",
+            "size": "1134592",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Visual Studio Team Foundation Server MSSCCI Provider enables integrated use of Team Foundation Version Control with products that do not support Team Explorer integration.<br /><br />\nThis version (1.2) includes:\n<ul><br />\n<li>Enable handling branched solutions in Visual Studio 2003.</li><br />\n<li>Fixed issues to enable provider to support Toad for SQL Server 2.0.</li><br />\n<li>Enhanced the \"Choose Folder in Team Foundation Server\" dialog.</li><br />\n<li>Fixed bug which prevented Properties Dialog from displaying local path.</li><br />\n<li>Work Items Query list in the Checkin Dialog is loaded and saved on the disk.</li><br />\n<li>\"Get\" operation performance improvements.</li><br />\n<li>Defect fixes</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "Visual Studio Team Foundation Server MSSCCI Provider.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2005 Team Foundation Server<br />\nVisual Studio 2005 Team Explorer<br />\n.NET Framework 2.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download and run Visual Studio Team Foundation Server MSSCCI Provider.msi on a computer with one of the following products:<br />\n<ul>\n<li>Visual Studio .NET 2003 </li>\n<li>Visual C++ 6 SP6 </li>\n<li>Visual Visual Basic 6 SP6</li>\n<li>Visual FoxPro 9 SP1</li>\n<li>Microsoft Access 2003 SP2</li>\n<li>SQL Server Management Studio</li>\n<li>Sparx Systems Enterprise Architect 6.1</li>\n<li>Sybase PowerBuilder 10.5 </li>\n<li>Toad for SQL Server 2.0</li>\n</ul>",
+    "additionalInformationSection": "For support, please visit the <a href=\"http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=478&SiteID=1\">Team Foundation Server - Version Control Forum</a>.<br/>\nTo provide feedback, contact <a href=\"mailto:tfmsscci@microsoft.com\">TFMSSCCI@Microsoft.com</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "support",
+            "url": "http://msdn.microsoft.com/vstudio/teamsystem/support/default.aspx"
+        },
+        {
+            "title": "downloads",
+            "url": "http://msdn.microsoft.com/vstudio/teamsystem/downloads/default.aspx"
+        },
+        {
+            "title": "team Foundation Server - Version Control Forum",
+            "url": "http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=478&SiteID=1"
+        },
+        {
+            "title": "visual Studio 2005 Team Foundation Server Developer Center",
+            "url": "http://msdn.microsoft.com/vstudio/teamsystem/products/tfs/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21109",
+    "downloadPreload": true
+}

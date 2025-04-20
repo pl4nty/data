@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Migrating from .NET Remoting to WCF",
+    "downloadDescription": "This article describes how to migrate an application that uses .NET Remoting to use Windows Communication Foundation (WCF).   It compares similar concepts between these products and then describes how to accomplish several common Remoting scenarios in WCF.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrating from  Net Remoting to WCF.pdf",
+            "url": "https://download.microsoft.com/download/3/1/f/31f38830-241c-40e7-ab21-5e174ada9fd3/Migrating from  Net Remoting to WCF.pdf",
+            "size": "921531",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:20:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Migrating from  Net Remoting to WCF.docx",
+            "url": "https://download.microsoft.com/download/3/1/f/31f38830-241c-40e7-ab21-5e174ada9fd3/Migrating from  Net Remoting to WCF.docx",
+            "size": "58875",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:20:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": ".NET Remoting is a legacy product that is supported only for backward compatibility.  It is not secure across mixed-trust environments because it cannot maintain the separate trust levels between client and server.  For example, you should never expose a .NET Remoting endpoint to the Internet or to untrusted clients.   We recommend existing Remoting applications be migrated to newer and more secure technologies. If the application\u2019s design uses only Http and is RESTful, we recommend ASP.NET Web API. Learn more at ASP.NET Web API. If the application is based on SOAP or requires non-Http protocols such as TCP, we recommend WCF.  Learn more at Windows Communication Foundation.\r\n\r\nThis article compares the two technologies and provides recommendations for migrating to WCF.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Migrating from  Net Remoting to WCF.pdf",
+        "Migrating from  Net Remoting to WCF.docx"
+    ],
+    "detailsSection_file_size": [
+        "899.9 KB",
+        "57.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".NET 4.5.2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Download this Whitepaper to learn how to migrate your existing .NET remoting code to WCF (Windows Communication Foundation), which will improve the security of your code.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44925",
+    "downloadPreload": true
+}

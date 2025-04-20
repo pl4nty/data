@@ -1,0 +1,53 @@
+{
+    "error": "",
+    "downloadTitle": "Fix updates for Office 365 Version 1910 through Configuration Manager",
+    "downloadDescription": "Certain builds of Office 365 Version 1910 deployed through Microsoft System Center Configuration Manager may fail to perform subsequent updates. Use this tool to re-enable Office updates for affected devices. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "OfficeC2R1910Fix.zip",
+            "url": "https://download.microsoft.com/download/7/4/9/7499d47e-f520-4ad0-a17d-c8b8695a12de/OfficeC2R1910Fix.zip",
+            "size": "51642859",
+            "version": "2.0.0.0",
+            "datePublished": "7/15/2024 4:20:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Note: This file can only be downloaded using either the <a href = \"https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium\">Edge based on Chromium</a> or Chrome browsers.<br/><br/>\r\nCertain builds of Office 365 Version 1910 deployed through Microsoft System Center Configuration Manager may fail to perform subsequent updates. Use this tool to re-enable Office updates for affected devices. <a href=\"https://support.microsoft.com/en-us/help/4532996/office-365-version-1910-updates-in-configmgr-do-not-download-or-apply\">Learn more about which devices are affected.</a>\r\n<br/><br/>\r\nThis tool re-enables Office updates on devices managed by Configuration Manager that are unable to update beyond certain builds of Office Version 1910, for both 32-bit and 64-bit editions. \r\n<br/><br/>\r\nThis tool has no effect when run on unaffected devices.\r\n<br/><br/>\r\nUpon running, the tool will:<br/>\r\n1. Check a registry key to see if the tool has already run on this device. If found, the EXE will exit.  Otherwise, the EXE will write this key:<br/> HKLM\\SOFTWARE\\Microsoft\\Office\\ClickToRun\\UpdateSupport\\FC2853FB-9DA8-435D-9B07-A0A9CE876A67<br/>\r\n2. Look for an Office installation on the device. If there are none, the EXE will exit.<br/>\r\n3. Check whether the Office build range is between 16.0.12130.10000 and 16.0.12130.20390. If outside the build range, then the EXE will exit.<br/>\r\n4. If the build is in the required range, the EXE will then stop the ClickToRun system service and copy over the new client files from build 16.0.12130.20410 that is embedded in the tool EXE. Office applications do not need to close down and there will be no impact to end-user productivity. <br/>\r\n5. The EXE then exits, and the device can now resume Office updates.\r\n<br/><br/>\r\nLog files are written under %temp%\\&lt;MachineName&gt;-&lt;Timestamp&gt;.log for the elevated user that ran the EXE, containing information about the machine state and what actions were taken.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0.0.0",
+    "detailsSection_file_name": [
+        "OfficeC2R1910Fix.zip"
+    ],
+    "detailsSection_file_size": [
+        "49.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Note: This file can only be downloaded using either the <a href = \"https://support.microsoft.com/en-us/help/4501095/download-the-new-microsoft-edge-based-on-chromium\">Edge based on Chromium</a> or Chrome browsers.<br/><br/>\r\nDownload and extract the file, which contains an exported Configuration Manager application for the tool. Import into Configuration Manager, then deploy to devices with Office.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100778",
+    "downloadPreload": true
+}

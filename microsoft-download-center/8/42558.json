@@ -1,0 +1,98 @@
+{
+    "error": "",
+    "downloadTitle": "Work Folders for Windows 7 (64 bit)",
+    "downloadDescription": "This download lets you set up Work Folders on a Windows 7 PC and use it to access your work files on file servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2891638-x64.msu",
+            "url": "https://download.microsoft.com/download/6/0/b/60bcca98-774b-4142-a0ac-f9fe84ce7306/Windows6.1-KB2891638-x64.msu",
+            "size": "1745758",
+            "version": "1",
+            "datePublished": "7/15/2024 4:46:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Work Folders is a place to store your work files so that you can get to them from all of your PCs and devices, even when you\u2019re offline.\r\nWork Folders for Windows 7 enables you to use a Windows 7 PC to access your Work Folders, as long as:\r\n<ul>\r\n<li>Your organization offers Work Folders, and has set it up for your domain account </li>\r\n<li>You have a Windows 7 PC that\u2019s joined to your organization\u2019s domain</li>\r\n</ul>\r\n\r\nTo ensure Work Folders continue working after upgrade from Windows 7 to Windows 10, you will need to install this <a href=\"https://support.microsoft.com/en-us/kb/3081954\">KB 3081954</a> on the Windows 7 PC after installing the download package.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2891638",
+        "name": "KB2891638"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2891638-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows 7 Professional </li>\r\n<li>Windows 7 Enterprise</li>\r\n<li>Windows 7 Ultimate </li>\r\n</ul>\r\n\r\nOther requirements:\r\n<ul>\r\n<li>A domain account set up with Work Folders </li>\r\n<li>A Windows 7 PC joined to your work domain</li>\r\n<li>Windows 7 Service Pack 1</li>\r\n</ul>\r\nTo use Work Folders on a PC that\u2019s not joined to your work\u2019s domain, you must upgrade to Windows 8.1.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Enterprise",
+        "Windows 7 Professional",
+        "Windows 7 Ultimate"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Download and run Work Folders for Windows 7. </li>\r\n<li>Follow the instructions to complete the installation. </li>\r\n<li> Go to Control Panel > System and Security > Work Folders </li>\r\n<li> Click Set up Work Folders </li>\r\n</ol>\r\n\r\n\r\n",
+    "additionalInformationSection": "This download includes one MSU file, which includes support for the following languages:\r\nEnglish; Dutch; French; German; Hungarian; Italian; Japanese; Korean; Polish; Portuguese Brazil; Portuguese Portugal; Russian; Spanish; Swedish; Simplified Chinese; Traditional Chinese; Czech\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42558",
+    "downloadPreload": true
+}

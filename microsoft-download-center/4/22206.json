@@ -1,0 +1,100 @@
+{
+    "error": "",
+    "downloadTitle": "Migrate from Exchange Public Folders to Microsoft Business Productivity Online Standard Suite",
+    "downloadDescription": "This paper discusses the most common public folder scenarios and how they are represented in Business Productivity Online Standard Suite services. It also provides the information you need to decide whether Microsoft Online Services is a good match for you based on your current public folder usage.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrate from Public Folders to BPOS.doc",
+            "url": "https://download.microsoft.com/download/2/0/a/20adf3a3-0f0a-48a0-9945-c38971dedbf0/Migrate from Public Folders to BPOS.doc",
+            "size": "112128",
+            "version": "9/15/09",
+            "datePublished": "7/15/2024 3:11:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Exchange public folders are widely used in on-premises Exchange environment. However, Exchange Online does not support customer usage scenarios of public folders. If you or your customers are using Exchange public folders, there are special considerations for moving customers to Microsoft Business Productivity Online Standard Suite. This document outlines these considerations for field representatives, discusses the most common public folder scenarios and how they are represented in Business Productivity Online Standard Suite services. It also provides the information you need to decide whether Microsoft Online Services is a good match for you based on your current public folder usage.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9/15/09",
+    "detailsSection_file_name": [
+        "Migrate from Public Folders to BPOS.doc"
+    ],
+    "detailsSection_file_size": [
+        "109.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Online TechCenter",
+            "url": "http://technet.microsoft.com/en-us/msonline/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22206",
+    "downloadPreload": true
+}

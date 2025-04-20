@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "NCBI BLAST on Windows Azure",
+    "downloadDescription": "A parallel BLAST engine that runs on the Windows Azure cloud fabric, NCBI BLAST on Windows Azure can scale up to hundreds of compute nodes. Last published: July 25, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "NCBI Blast on Windows Azure_V1.1.zip",
+            "url": "https://download.microsoft.com/download/e/b/c/ebc483a9-b239-4485-aeee-517088b444a4/NCBI Blast on Windows Azure_V1.1.zip",
+            "size": "65483581",
+            "version": "V 1.1",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A parallel BLAST engine that runs on the Windows Azure cloud fabric, NCBI BLAST on Windows Azure can scale up to hundreds of compute nodes. This cloud-based implementation of the National Center for Biotechnology Information (NCBI) Basic Local Alignment Search Tool (BLAST) searches all available sequence databases for similarities between a protein or DNA query and known sequences. BLAST on Windows Azure enables researchers to take advantage of the scalability of the Windows Azure platform to execute BLAST jobs on demand in the cloud.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "V 1.1",
+    "detailsSection_file_name": [
+        "NCBI Blast on Windows Azure_V1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "62.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52513",
+    "downloadPreload": true
+}

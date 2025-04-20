@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center Management Pack (Community Technology Preview) for SQL Server Replication",
+    "downloadDescription": "Microsoft System Center Management Pack (Community Technology Preview) for SQL Server Replication enables the monitoring of Replication as a set of technologies for copying and distributing data and database objects from one database to another and then synchronizing between the databases to maintain consistency.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServerReplicationMPWorkflowList.pdf",
+            "url": "https://download.microsoft.com/download/7/c/4/7c4a9109-f2df-4f94-8b67-4fdc7cb84e38/SQLServerReplicationMPWorkflowList.pdf",
+            "size": "717374",
+            "version": "7.0.27.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerReplicationMPGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/c/4/7c4a9109-f2df-4f94-8b67-4fdc7cb84e38/SQLServerReplicationMPGuide.pdf",
+            "size": "476853",
+            "version": "7.0.27.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQLServerDashboardsGuide.pdf",
+            "url": "https://download.microsoft.com/download/7/c/4/7c4a9109-f2df-4f94-8b67-4fdc7cb84e38/SQLServerDashboardsGuide.pdf",
+            "size": "1577835",
+            "version": "7.0.27.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft.SQLServer.Windows.Replication.ManagementPack.CTP.msi",
+            "url": "https://download.microsoft.com/download/7/c/4/7c4a9109-f2df-4f94-8b67-4fdc7cb84e38/Microsoft.SQLServer.Windows.Replication.ManagementPack.CTP.msi",
+            "size": "2572288",
+            "version": "7.0.27.0",
+            "datePublished": "7/15/2024 4:27:01 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft System Center Management Pack (Community Technology Preview) for SQL Server Replication enables the discovery and monitoring of SQL Server Replication 2012, 2014, 2016, 2017, 2019 and upcoming versions of SQL Server as a set of technologies for copying and distributing data and database objects from one database to another and then synchronizing between the databases to maintain consistency. This management pack is designed to run by Operations Manager 2012 R2, Operations Manager 2016, Operations Manager 1801/1807, or Operations Manager 2019. <br/>\r\n<br/>\r\nThis management pack was thoroughly built from the ground up in accordance with Best Practices for SQL Server. The monitoring provided by the management pack includes performance, availability, and configuration monitoring, as well as performance and events data collection. All monitoring workflows have predefined thresholds and complimentary knowledge base articles. You can integrate the monitoring of SQL Server Replication components into your service-oriented monitoring scenarios. <br/>\r\n<br/>\r\nIn addition to health monitoring capabilities, this management pack includes dashboards, diagram views, state views, performance views and alert views that enable near real-time diagnostics and remediation of detected issues. <br/>\r\n<br/>\r\nThe management pack automatically selects the monitoring type used by the management pack for SQL Server to monitor the appropriate SQL Server instance. Replication objects discovered and monitored by the management pack are as follows:\r\n <ul>\r\n  <li>Distributor</li>\r\n  <li>Publisher</li>\r\n  <li>Subscriber</li>\r\n  <li>Publication</li>\r\n  <li>Subscription</li>\r\n </ul>\r\n<b>Feature Summary</b><br/>\r\nThe following list gives an overview of the features introduced by Microsoft System Center Operations Manager Management Pack for SQL Server Replication. Please refer to Microsoft SQL Server Replication Management Pack Guide for more details. <br/>\r\n <ul>\r\n  <li>Agentless monitoring is now available along with traditional agent monitoring.</li>\r\n  <li>Usage of scripts is discontinued in favor of .Net Framework modules.</li>\r\n  <li>SQL Server Dynamic Management Views and Functions are now used for getting information on health and performance. Previously some of these monitors were using WMI and other system data sources.</li>\r\n </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0.27.0",
+    "detailsSection_file_name": [
+        "SQLServerReplicationMPWorkflowList.pdf",
+        "SQLServerReplicationMPGuide.pdf",
+        "SQLServerDashboardsGuide.pdf",
+        "Microsoft.SQLServer.Windows.Replication.ManagementPack.CTP.msi"
+    ],
+    "detailsSection_file_size": [
+        "700.6 KB",
+        "465.7 KB",
+        "1.5 MB",
+        "2.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For detailed system requirements refer to the management pack guide.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 Standard",
+        "Windows Server 2012 R2 Standard ",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "For detailed instructions on setup, configuration, and monitoring refer to the management pack guide.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55098",
+    "downloadPreload": true
+}

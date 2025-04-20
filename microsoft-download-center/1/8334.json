@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Video: Customizing the Appearance and Behavior of Data Fields in the Data Model for ASP.NET Dynamic Data",
+    "downloadDescription": "This video shows how to customize data field appearance and behavior when you use ASP.NET Dynamic Data.  See Related Resources for documentation and for a code example that accompanies this video.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HowTo-CustomizeDataFieldAppearanceandBehaviorintheDataModel.wmv",
+            "url": "https://download.microsoft.com/download/7/1/5/715c0c9a-3f39-4923-b461-2ff9d7e0c7b7/HowTo-CustomizeDataFieldAppearanceandBehaviorintheDataModel.wmv",
+            "size": "11443705",
+            "version": "0.1",
+            "datePublished": "7/15/2024 3:14:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASP.NET Dynamic Data includes field templates that render UI for displaying and editing data fields. This video shows how to customize the UI by changing existing field templates and by creating new custom field templates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "HowTo-CustomizeDataFieldAppearanceandBehaviorintheDataModel.wmv"
+    ],
+    "detailsSection_file_size": [
+        "10.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Windows Media Player</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><br />\n<li>Click the <b>Download</b> button on this page to start the video.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "how to: Customize Data Field Appearance and Behavior in the Data Model",
+            "url": "http://msdn.microsoft.com/en-us/library/cc488557.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8334",
+    "downloadPreload": true
+}

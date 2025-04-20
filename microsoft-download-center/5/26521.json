@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Data Center template for Visio 2010",
+    "downloadDescription": "Create a visual overview of your data center and monitor the status of specific racks with this Visio 2010 template.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Data Center Data.xlsx",
+            "url": "https://download.microsoft.com/download/d/5/b/d5bbed7e-2636-460f-bd60-bc938b4b3a66/Data Center Data.xlsx",
+            "size": "21421",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Data Center.vst",
+            "url": "https://download.microsoft.com/download/d/5/b/d5bbed7e-2636-460f-bd60-bc938b4b3a66/Data Center.vst",
+            "size": "3276288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Data Center Wiring Demo.xlsx",
+            "url": "https://download.microsoft.com/download/d/5/b/d5bbed7e-2636-460f-bd60-bc938b4b3a66/Data Center Wiring Demo.xlsx",
+            "size": "21157",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:27:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this Microsoft Visio 2010 template to create a visual overview of your data center and monitor the status, including the current temperature, power consumption, and availability of specific racks. This template uses standard Visio department shapes, work flow objects, and network shapes to diagram the layout and contents of a data center and provide a detailed view of specific actively monitored racks. It also uses a PivotDiagram to show a hierarchical view of server racks by administrator. This template could be further extended to show the status of departmental IT assets located outside of a centrally managed data center.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Data Center Data.xlsx",
+        "Data Center.vst",
+        "Data Center Wiring Demo.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "20.9 KB",
+        "3.1 MB",
+        "20.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio Premium 2010 or Visio Professional 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the template to your computer.\r\n\r\nTo customize the data linked to the template, download Data Center Data.xlsx and populate it with your own data center data.\r\n\r\nFor a sample of how to document connections between a 48-port switch and devices located in other racks, download Data Center Wiring Demo.xlsx.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26521",
+    "downloadPreload": true
+}

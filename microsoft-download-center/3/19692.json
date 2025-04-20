@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 SP1 White Paper: Country-Specific Update for Mexico",
+    "downloadDescription": "This white paper describes a Microsoft Dynamics AX feature that was released in hotfix rollup 6, and that is specific to users in Mexico.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country-specific update for Mexico.xps",
+            "url": "https://download.microsoft.com/download/5/3/5/535f8cea-af12-4b62-87a8-b28c88a9f5f7/Country-specific update for Mexico.xps",
+            "size": "824489",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Country-specific update for Mexico.pdf",
+            "url": "https://download.microsoft.com/download/5/3/5/535f8cea-af12-4b62-87a8-b28c88a9f5f7/Country-specific update for Mexico.pdf",
+            "size": "540411",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:10:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper describes the country-specific update that was released for Mexico in hotfix rollup 6 for Microsoft Dynamics AX 2009 SP1.<br /><br />\r\nIn accordance with Servicio de Administraci\u00f3n Tributaria (SAT), the Mexican tax authority, companies can generate and issue electronic invoices (Comprobantes fiscales digitales, or CFDs) to their customers. Companies authorized to issue electronic invoices must obtain digital certificates, tax registration numbers, state inscription numbers, and authorization codes from SAT.<br /><br />\r\nWhen you post a sales order, free text invoice, credit note, return order, project invoice, or project sales order as an electronic invoice, the invoice is converted to PDF and XML files, which are sent as email attachments to the customer.<br /><br />\r\nYou can also generate a monthly report of all the electronic and paper invoices issued during the month and submit the report to SAT. A software application, Sistema de comprobantes fiscales digitales CFD Plus (SICOFI), which is available from SAT, can be used to submit the monthly report in .txt format. Instructions to submit the monthly report can be found on the Servicio de Administraci\u00f3n Tributaria website.<br /><br />\r\nFor more information about the hotfix download, see Microsoft Knowledge Base articles 2405516 and 2476222.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Country-specific update for Mexico.xps",
+        "Country-specific update for Mexico.pdf"
+    ],
+    "detailsSection_file_size": [
+        "805.2 KB",
+        "527.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "19692",
+    "downloadPreload": true
+}

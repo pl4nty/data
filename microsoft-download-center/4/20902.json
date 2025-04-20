@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Introducing DPWS",
+    "downloadDescription": "Introduces the .NET Micro Framework v2.5 DPWS technology preview",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Introducing_DPWS.pdf",
+            "url": "https://download.microsoft.com/download/b/5/3/b53ea430-dbe5-440c-a308-df97b10280b7/Introducing_DPWS.pdf",
+            "size": "381707",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:54 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Support for this product is <b>no longer available from Microsoft</b>, please refer to http://www.netmf.com/forum/ for assistance.\r\n<br /><br />\r\nLearn how to use the DPWS libraries in the upcoming .NET Micro Framework v2.5 to create Web services and clients for your small devices. In no time, you'll be exchanging messages with the DPWS-enabled devices on your network.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Introducing_DPWS.pdf"
+    ],
+    "detailsSection_file_size": [
+        "372.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Acrobat Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "This article may appear in your browser. If it does not, download it to an appropriate folder and double-click it to open it in Adobe Reader.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20902",
+    "downloadPreload": true
+}

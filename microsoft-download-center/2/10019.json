@@ -1,0 +1,102 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Basic 6.0 Common Controls",
+    "downloadDescription": "Update for the Microsoft Visual Basic 6.0 Common Controls: mscomctl.ocx and comctl32.ocx.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "visualbasic6-kb896559-v1-enu.exe",
+            "url": "https://download.microsoft.com/download/3/a/5/3a5925ac-e779-4b1c-bb01-af67dc2f96fc/VisualBasic6-KB896559-v1-ENU.exe",
+            "size": "937984",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This package updates two Microsoft Visual Basic 6.0 Common Controls: mscomctl.ocx and comctl32.ocx to address the issues described in the KB articles noted in the Related Resources section on this page. <br />\nThis package will not install these Common Controls if they do not already exist on the target system. This package cannot be uninstalled.<br />\n<br />\nThis package is provided under the terms of the End User License Agreement and is intended for the following customers:<br />\n<OL><LI>Customers who are Microsoft Visual Basic 6.0 and/or Microsoft Visual Studio 6.0 licensees.</LI><LI>Customers who are not licensees of Microsoft Visual Basic 6.0 nor Microsoft Visual Studio 6.0 but are using older versions of the two Common Controls.</LI></OL>Mainstream Support for Microsoft Visual Basic 6.0 ended on March 31, 2005. However, we are releasing this non-security related package because it contains improvements that were ready for release just prior to the end of Mainstream Support. Microsoft Visual Basic 6.0 has transitioned to Extended Support which runs through March 31, 2008. Microsoft is not extending the Mainstream Support phase for Microsoft Visual Basic 6.0 in any way.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB896559",
+        "name": "KB896559"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "visualbasic6-kb896559-v1-enu.exe"
+    ],
+    "detailsSection_file_size": [
+        "916.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 98",
+        "Windows 2000 Professional Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows 2000",
+        "Windows ME",
+        "Windows XP Tablet PC Edition ",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows 2000 Server",
+        "Windows 2000 Advanced Server",
+        "Windows 98 Second Edition",
+        "Windows XP Home Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles KB841999 and KB827217 for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 827217",
+            "url": "http://support.microsoft.com/default.aspx?scid=kb;en-us;827217"
+        },
+        {
+            "title": "knowledge Base Article 896559",
+            "url": "http://support.microsoft.com/default.aspx?scid=kb;en-us;896559"
+        },
+        {
+            "title": "knowledge Base Article 841999",
+            "url": "http://support.microsoft.com/default.aspx?scid=kb;en-us;841999"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10019",
+    "downloadPreload": true
+}

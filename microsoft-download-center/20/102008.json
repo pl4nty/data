@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Business Portal in Microsoft Dynamics GP Customization Whitepaper ",
+    "downloadDescription": "Download the Business Portal Customization Whitepaper for information on customization options and services for Business Portal in Microsoft Dynamics\u2122 GP. This whitepaper contains information on both Microsoft Dynamics\u2122 GP 10.0 with Business Portal 4.0 and Microsoft Dynamics\u2122 GP 2010 with Business Portal 5.0/5.1.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BusinessPortalCustomizationGuide.docx",
+            "url": "https://download.microsoft.com/download/a/4/7/a474583d-dabf-4b8a-abba-0aebbe513229/BusinessPortalCustomizationGuide.docx",
+            "size": "29748",
+            "version": "NA..",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Purpose <br/>\r\n The purpose of this document is to clarify what type of customizations can and cannot be done with Business Portal in Microsoft Dynamics GP. Some customizations are possible by implementers while others are possible through ISVs or Microsoft Dynamics Advanced Product Support Services.&#160; This document will describe the customization options and&#160;Advanced Product Support&#160;Services available as well as which types of customizations are not possible through any type of service.<br/> Support Information \r\n   For technical support questions, log on to \r\n      <a href=\"https://mbs.microsoft.com/support/newstart.aspx\">Microsoft Business Solutions Support </a>and enter a New Support Request. Please choose \r\n      Business Portal SDK as the subcategory selection.<br/>You can also contact Microsoft Business Solutions Technical Support by phone at 888-477-7877 using \r\n      6395 for your quick access code.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA..",
+    "detailsSection_file_name": [
+        "BusinessPortalCustomizationGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "29.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102008",
+    "downloadPreload": true
+}

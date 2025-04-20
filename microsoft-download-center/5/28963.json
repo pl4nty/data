@@ -1,0 +1,81 @@
+{
+    "error": "",
+    "downloadTitle": "MVP Session 8: Dynamically Link Business Data to Shapes in Visio 2010 (working files)",
+    "downloadDescription": "Practice dynamically linking business data to shapes in Microsoft Visio 2010 with this diagram, part of the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 8.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MVPSession8ExternalData2-Chinese.xlsx",
+            "url": "https://download.microsoft.com/download/0/6/f/06f63b7d-2370-4fdb-88fb-89ddc2d50380/MVPSession8ExternalData2-Chinese.xlsx",
+            "size": "8776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MVPSession8DynamicallyLinkDataToShapes_Before.vsd",
+            "url": "https://download.microsoft.com/download/0/6/f/06f63b7d-2370-4fdb-88fb-89ddc2d50380/MVPSession8DynamicallyLinkDataToShapes_Before.vsd",
+            "size": "69120",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession8DynamicallyLinkDataToShapes_After.vsd",
+            "url": "https://download.microsoft.com/download/0/6/f/06f63b7d-2370-4fdb-88fb-89ddc2d50380/MVPSession8DynamicallyLinkDataToShapes_After.vsd",
+            "size": "192512",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MVPSession8ExternalData1-EnglishFrenchGerman.xlsx",
+            "url": "https://download.microsoft.com/download/0/6/f/06f63b7d-2370-4fdb-88fb-89ddc2d50380/MVPSession8ExternalData1-EnglishFrenchGerman.xlsx",
+            "size": "8990",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:28:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Practice dynamically linking business data to shapes in Microsoft Visio 2010 with this diagram, created as a companion to the Visio 2010 MVP Sessions (http://visio.microsoft.com/MVPSessions), Video 8. MVP Sessions Video 8 covers how to link the shapes in your diagrams to external data sources such as Microsoft Excel workbooks, Microsoft SharePoint lists, or Microsoft SQL Server databases. Use this working file to follow along with the video and practice importing data into Visio 2010 and manually and automatically connecting data to multiple shapes in a diagram.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MVPSession8ExternalData2-Chinese.xlsx",
+        "MVPSession8DynamicallyLinkDataToShapes_Before.vsd",
+        "MVPSession8DynamicallyLinkDataToShapes_After.vsd",
+        "MVPSession8ExternalData1-EnglishFrenchGerman.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "8.6 KB",
+        "67.5 KB",
+        "188.0 KB",
+        "8.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visio 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Click Download to save the working files to your computer and then open it with Visio 2010.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28963",
+    "downloadPreload": true
+}

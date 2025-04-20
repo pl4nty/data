@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Outlook Synchronization in Microsoft Dynamics CRM 4.0",
+    "downloadDescription": "This document describes the client synchronization process that is associated with Update Rollup 7 for Microsoft Dynamics CRM 4.0 or later (for on-premise deployments) and with Microsoft Dynamics CRM Online November 2009 Service Update or later (for online deployments).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Outlook_Synchronization_in_MS_CRM_4.0.pdf",
+            "url": "https://download.microsoft.com/download/8/0/b/80bb4590-65c2-4ad3-94da-cc6ee69e3550/Outlook_Synchronization_in_MS_CRM_4.0.pdf",
+            "size": "517096",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Both the online and offline versions of the CRM Outlook Client support synchronizing CRM contacts and CRM activities to Outlook folders, or Outlook synchronization. Outlook synchronization enables Outlook users to view Dynamics CRM information, including contacts, tasks, phone calls, letters, faxes, appointments, and e-mails, within the Outlook interface. This document describes the client synchronization process that is associated with Update Rollup 7 for Microsoft Dynamics CRM 4.0 or later (for on-premise deployments) and with Microsoft Dynamics CRM Online November 2009 Service Update or later (for online deployments).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Outlook_Synchronization_in_MS_CRM_4.0.pdf"
+    ],
+    "detailsSection_file_size": [
+        "505.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Additional Requirements</b><br/>\r\nMicrosoft Dynamics CRM 4.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, click <b>Go</b>, and then do one of the following:<br />\r\n<br />\r\nTo start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.<br />\r\n<br />\r\nTo copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17594",
+    "downloadPreload": true
+}

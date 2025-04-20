@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Software Assurance Benefit Activation Kit",
+    "downloadDescription": "Tools and resources to assist with SA benefit activation",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Software-Assurance-MSCOM-Frequently-Asked-Questions.pdf",
+            "url": "https://download.microsoft.com/download/5/c/7/5c727885-ec15-4920-818b-4d140ec6c38a/Software-Assurance-MSCOM-Frequently-Asked-Questions.pdf",
+            "size": "208310",
+            "version": "Feb. 2023",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Desktop-Deployment-Planning-Services-Customer-Datasheet.pdf",
+            "url": "https://download.microsoft.com/download/5/c/7/5c727885-ec15-4920-818b-4d140ec6c38a/Desktop-Deployment-Planning-Services-Customer-Datasheet.pdf",
+            "size": "140139",
+            "version": "Feb. 2023",
+            "datePublished": "7/15/2024 4:28:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tools and information to help quickly understand what benefits are available, how to choose benefits that are best for your organization, and how to communicate the value of these benefits to your human resources team, IT department, and knowledge workers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb. 2023",
+    "detailsSection_file_name": [
+        "Software-Assurance-MSCOM-Frequently-Asked-Questions.pdf",
+        "Desktop-Deployment-Planning-Services-Customer-Datasheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "203.4 KB",
+        "136.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100296",
+    "downloadPreload": true
+}

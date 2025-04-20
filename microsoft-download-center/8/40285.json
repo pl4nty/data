@@ -1,0 +1,132 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server Essentials Connector for Windows Server 2012 R2",
+    "downloadDescription": "Windows Server Essentials Connector is software that helps you connect your PC or Mac client to Windows Server 2012 R2 with the Windows Server Essentials Experience server role enabled. It also enables and manages key client-side functionality of Windows Server Essentials Experience. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2790621-x64.msu",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/Windows8.1-KB2790621-x64.msu",
+            "size": "5012061",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MacConnector.dmg",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/MacConnector.dmg",
+            "size": "2989368",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2790621-x64.msu",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/Windows6.1-KB2790621-x64.msu",
+            "size": "4867194",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2790621-x86.msu",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/Windows8-RT-KB2790621-x86.msu",
+            "size": "4950264",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2790621-x86.msu",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/Windows8.1-KB2790621-x86.msu",
+            "size": "4954382",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WSEClient-x64.msi",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/WSEClient-x64.msi",
+            "size": "31543576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WSEClient-x86.msi",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/WSEClient-x86.msi",
+            "size": "31461656",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2790621-x86.msu",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/Windows6.1-KB2790621-x86.msu",
+            "size": "4816671",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8-RT-KB2790621-x64.msu",
+            "url": "https://download.microsoft.com/download/3/2/8/3280252f-e15c-4d80-8707-b293ea488faa/Windows8-RT-KB2790621-x64.msu",
+            "size": "5010860",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:18:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Server Essentials Connector is software that helps you connect your PC or Mac client to Windows Server 2012 R2 with the Windows Server Essentials Experience server role enabled. It also enables and manages key client-side functionality of Windows Server Essentials Experience. On a PC, it provides client backup, a tray icon and the Launchpad, the Dashboard for management of remote servers, and a VPN profile with the capability of auto-dialing and monitoring client health from the server side. On a Mac, it provides health monitoring and the Launchpad. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2790621-x64.msu",
+        "MacConnector.dmg",
+        "Windows6.1-KB2790621-x64.msu",
+        "Windows8-RT-KB2790621-x86.msu",
+        "Windows8.1-KB2790621-x86.msu",
+        "WSEClient-x64.msi",
+        "WSEClient-x86.msi",
+        "Windows6.1-KB2790621-x86.msu",
+        "Windows8-RT-KB2790621-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB",
+        "2.9 MB",
+        "4.6 MB",
+        "4.7 MB",
+        "4.7 MB",
+        "30.1 MB",
+        "30.0 MB",
+        "4.6 MB",
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server Essentials Connector is designed to be installed on Windows 7 Service Pack 1 (SP1), Windows 8, Windows 8.1, and Mac OS X 10.6 -10.8. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Choose the package that matches your client system and version details and download it to your local hard drive. You must read and accept the Microsoft Software License Terms when you install Windows Server Essentials Connector. \r\n<br/><br/>\r\nFor help, see the following link: <br/>\r\n<a href=\"http://go.microsoft.com/fwlink/p/?LinkId=298203\"> Deploying Clients in the Windows Server Essentials Network</a><br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server Essentials TechCenter",
+            "url": "http://technet.microsoft.com/sbs"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40285",
+    "downloadPreload": true
+}

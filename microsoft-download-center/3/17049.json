@@ -1,0 +1,136 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Visual Basic\u00ae for Applications Update - Q822150",
+    "downloadDescription": "An identified security issue in Microsoft\u00ae Visual Basic\u00ae for Applications could allow an attacker to compromise a Microsoft Windows\u00ae-based system and then take a variety of actions. By installing this update, you can help protect your computer.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vba64-kb822150-x86-enu.exe",
+            "url": "https://download.microsoft.com/download/3/7/a/37a2f0bf-ec3f-463e-b8e7-0342b5ab0c08/VBA64-KB822150-X86-ENU.exe",
+            "size": "1710584",
+            "version": "6.4",
+            "datePublished": "7/15/2024 3:15:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "An identified security issue in Microsoft\u00ae Visual Basic\u00ae for Applications could allow an attacker to compromise a Microsoft Windows\u00ae-based system and then take a variety of actions. For example, an attacker could read files on your computer or run programs on it. By installing this update, you can help protect your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB822150",
+        "name": "KB822150"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.4",
+    "detailsSection_file_name": [
+        "vba64-kb822150-x86-enu.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP",
+        "Windows 2000",
+        "Windows ME",
+        "Windows NT",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "The update available from this page is for applications using Microsoft\u00ae Visual Basic\u00ae for Applications (VBA). If you are a Microsoft Office 2000 or Microsoft Office XP user, please obtain a patch for this issue from the Office Update site in addition to installing this patch. You will find a link to OfficeUpdate under the Related Resources links at the right of this page.<br/>\n<br/>It is possible to have both VBA version 5 and VBA version 6 installed at the same time. Follow all of the steps below to determine which version(s) of VBA is on your machine:<br/>\n<br/>\n<OL><LI>Open the Windows Explorer</LI><br/>\n<LI>Navigate to the \\Program Files\\Common Files\\Microsoft Shared\\VBA directory</LI><br/>\n<LI>If you see vbe.dll you have VBA version 5. Right click on vbe.dll and choose \"Properties\"</LI><br/>\n<LI>Choose the \"Version\" tab</LI></OL><br/>\n<br/>\nThe version will be the first line of information. For example, after this patch is installed the version of vbe.dll will be 5.0.78.15.<br/>\n<br/>\nNext, navigate to the \\Program Files\\Common Files\\Microsoft Shared\\VBA\\VBA6 directory, if present.\n<OL><LI>If the directory is present you also have VBA version 6 installed. Right click on vbe6.dll and choose \"Properties\"</LI><br/>\n<LI>Choose the \"Version\" tab</LI></OL><br/>\n<br/>\nThe version will be the first line of information. For example, after this patch is installed the version of vbe6.dll will be 6.4.99.69. <br/>\n<br/>\n\nTo download and install this patch:<br/>\n<OL><LI>Click the <b>Download</b> link to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</LI><LI>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</LI></UL></OL><br/>\n<br/>\nRunning this installer once will patch both VBA5 (vbe.dll) and VBA6 (vbe6.dll) if they are found on your machine.",
+    "additionalInformationSection": "To determine if the patch has been applied successfully, follow the the process described above to verify the versions of vbe.dll and/or vbe6.dll.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17049",
+    "downloadPreload": true
+}

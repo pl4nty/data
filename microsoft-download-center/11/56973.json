@@ -1,0 +1,152 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365, version 9.0 Report Authoring Extension (with SQL Server Data Tools support)",
+    "downloadDescription": "Dynamics 365 Report Authoring Extension is required to author custom Fetch-based reports for Dynamics 365 for Customer Engagement by using SQL Server Data Tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "CRM9.0-Bids-ENU-i386.exe",
+            "url": "https://download.microsoft.com/download/1/c/e/1ce3dfc2-c748-4523-bd25-f241d765874c/CRM9.0-Bids-ENU-i386.exe",
+            "size": "23342696",
+            "version": "9.0.26.7",
+            "datePublished": "3/4/2025 7:13:21 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The Dynamics 365 Report Authoring Extension is required to author custom Fetch-based reports for Dynamics 365 customer engagement by using SQL Server Data Tools. Report Authoring Extension is a plug-in that obtains the metadata and data from Dynamics 365 customer engagement. <br />\r\nThis version works with the following Dynamics 365 for Customer Engagement versions:\r\n<ul>\r\n<li>Dynamics 365 for Customer Engagement (online), version 9.0 or later version </li>\r\n<li>Dynamics 365 for Customer Engagement on-premises, version 9.0 </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.0.26.7",
+    "detailsSection_file_name": [
+        "CRM9.0-Bids-ENU-i386.exe"
+    ],
+    "detailsSection_file_size": [
+        "22.3 MB"
+    ],
+    "detailsSection_file_date": "3/4/2025",
+    "systemRequirementsSection": "Install Dynamics 365 Report Authoring Extension on Windows 10. <br /><br />\r\nOne of the following Microsoft Visual Studio and SQL Server Data Tools combinations are required:\r\n   <ul>\r\n        <li>Microsoft Visual Studio 2019 and SQL Server Data Tools. </li>\r\n        <li>Microsoft Visual Studio 2017 and SQL Server Data Tools. </li>\r\n        <li>Microsoft Visual Studio 2015 and SQL Server Data Tools.</li>\r\n </ul>\r\n\r\n<ul>\r\n    <b>Note</b>:<br />\r\n    <li>Dynamics 365 Report Authoring Extension is available only in a 32-bit version. </li>\r\n    <li>The Dynamics 365 Report Authoring Extension also installs Windows Identity Foundation. </li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<b>Important:</b><br/>\r\nIf you have an earlier version of the Report Authoring Extension installed, uninstall it before you download and install the Dynamics 365 (online), version 9.0 Report Authoring Extension. \r\n<ol> <li>To start the download, click <b>Download</b>. </li>\r\n<li>To save the file to your computer, click <b>Save</b>, specify a location, and then click <b>Save</b> again. </li>\r\n<li>Navigate to the folder where you saved the downloaded, and double-click the exe file.</li>\r\n<li>Select a folder to store the extracted files, and click <b>OK</b>.</li>\r\n<li>In the <b>Extraction Complete</b> dialog box, click <b>OK</b>.</li>\r\n<li>Navigate to the location that you extracted the files to, and double-click <b>setupbidsextensions.exe</b>.</li>\r\n<li>Follow the instructions that are on your screen.</li>\r\n<li>For detailed installation instructions, see <a href=\"http://technet.microsoft.com/library/hh699675.aspx\" >Install Microsoft Dynamics CRM Report Authoring Extension</a>.</li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "reporting requirements",
+            "url": "https://docs.microsoft.com/dynamics365/customerengagement/on-premises/deploy/microsoft-dynamics-365-reporting-requirements#report-authoring-extension-requirements"
+        },
+        {
+            "title": "install Dynamics 365 Report Authoring Extension",
+            "url": "https://docs.microsoft.com/en-us/dynamics365/customer-engagement/analytics/install-dynamics-365-report-authoring-extension"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "56973",
+    "downloadPreload": true
+}

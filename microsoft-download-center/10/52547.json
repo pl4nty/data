@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ConferenceXP Archive Service",
+    "downloadDescription": "With the ConferenceXP 4.0 Archive Service, you can record a ConferenceXP session to a connected server and then play back the recorded session. Last published: January 9, 2007.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ArchiveService_Setup.msi",
+            "url": "https://download.microsoft.com/download/8/d/8/8d8753a7-4328-4e30-838f-f3dbe439a871/ArchiveService_Setup.msi",
+            "size": "736768",
+            "version": "4.0",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "With the ConferenceXP 4.0 Archive Service, you can record a ConferenceXP session to a connected server and then play back the recorded session. You can choose which RTP streams\u2014including audio, video, and capabilities, such as ConferenceXP Presentation\u2014you want to record. With Archive Service, you can store recorded sessions on a server running SQL Server, which allows easy storage of numerous streams at once while increasing its versatility and requiring very little processing overhead.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0",
+    "detailsSection_file_name": [
+        "ArchiveService_Setup.msi"
+    ],
+    "detailsSection_file_size": [
+        "719.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52547",
+    "downloadPreload": true
+}

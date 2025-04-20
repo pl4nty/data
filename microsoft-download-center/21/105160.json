@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Migrate applications from SiteMinder to Azure AD",
+    "downloadDescription": "Migrate your applications ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Migrating-applications-from-Symantec-SiteMinder-to-Azure-Active-Directory.pdf",
+            "url": "https://download.microsoft.com/download/5/a/c/5acb3d6b-6e30-4d97-87bd-55a0b60b7dbf/Migrating-applications-from-Symantec-SiteMinder-to-Azure-Active-Directory.pdf",
+            "size": "2105631",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:58:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Active Directory provides secure, easy and cost-effective migration of on-premises applications that are currently protected by Symantec SiteMinder. Azure Active Directory has a full suite of identity management capabilities such as Conditional Access, Multi-Factor Authentication and Single-Sign On. Standardizing your application authentication and authorization to Azure Active Directory enables you to get the benefits these capabilities provide.\r\n \r\n\r\nIn this paper we provide you a three phase approach to migrate your applications from Symantec SiteMinder to Azure Active Directory.\r\n \r\n\r\nIn the first phase, we help you discover and plan your migration. We guide you through inventory and requirements of your current applications, set up the right components of Azure Active Directory along with a decision chart for you to pick the right integration.\r\n \r\n\r\nIn the next phase, we guide you through the deployment of Azure Active Directory, and provide communication strategy.\r\n \r\n\r\nLastly, we provide step by step guidance on application migration and integration options with an example that walks you through actual migration of applications from Symantec SiteMinder to Azure Active Directory.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Migrating-applications-from-Symantec-SiteMinder-to-Azure-Active-Directory.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8 Enterprise"
+    ],
+    "installInstructionSection": "None",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105160",
+    "downloadPreload": true
+}

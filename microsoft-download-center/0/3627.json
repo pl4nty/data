@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Barry Dorrans revisits Security with OpenID and Cardspace",
+    "downloadDescription": "Barry Dorrans has a good time with Carl and Richard talking about his history in the business and his passion for OpenID and Information Cards.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080318BDorrans.zip",
+            "url": "https://download.microsoft.com/download/4/a/2/4a2f3a0c-a033-4c96-9fb7-5e375ee6ee76/20080318BDorrans.zip",
+            "size": "43124189",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:09:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Barry has been \"playing\" with computers since the days of the \"dead flesh\" keyboard on the ZX Spectrum. Graduating to .NET via RPG, QuickBasic, C, C++ and VB his time has been spent in various markets from banking through telecoms and even parts of the record industry. He specialises in .NET and Microsoft Technologies looking at \"whatever takes his fancy\" and running with it to see where it goes, with a passion for sharing the knowledge gathered during each of his code expeditions. For the last few years this has focused on security for developers and recently Information Cards in particular.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080318BDorrans.zip"
+    ],
+    "detailsSection_file_size": [
+        "41.1 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3627",
+    "downloadPreload": true
+}

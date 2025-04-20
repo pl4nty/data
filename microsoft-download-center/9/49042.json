@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Surface Pro 2 Drivers and Firmware",
+    "downloadDescription": "This device has reached the End of Servicing. The following packages are no longer being updated with newer drivers and firmware.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SurfacePro2_Win10_160501_2.zip",
+            "url": "https://download.microsoft.com/download/a/d/f/adf87383-7e81-4157-a1c3-d2cce3446d7b/SurfacePro2_Win10_160501_2.zip",
+            "size": "219583326",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:02:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The following packages will continue to be updated with the latest drivers and firmware until the date listed in the <a href=\"https://learn.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support#surface-driver-and-firmware-lifecycle-period\">Surface Driver and Firmware Support Lifecycle Policy.</a>\r\n<br></br>\r\n<a href=\"https://support.microsoft.com/en-us/help/4036283/surface-surface-update-history\">Surface update history</a>\r\n<br></br>\r\nCumulative and current drivers and firmware for the Surface Pro 2. This package contains drivers for all of the components in the Surface Pro 2, as well as updates to the system firmware that have been released via Windows Update. The ZIP files include all of the drivers and firmware needed to deploy custom images of Windows on your Surface devices. These drivers and firmware are not compatible with Surface RT and Surface Pro (first generation).    \r\n<ul>\r\n<b>The \"Date Published\" represents the last time this page was updated, so the file you are downloading may be older than the actual \"Date Published\".</b>\r\n</ul>\r\n________________________________________________________________________________________________________________________________________\r\n<br></br>\r\n<b>Archive Section</b>\r\n<br></br>\r\n Consistent with our build lifecycle support, the following packages are no longer being updated with newer drivers and firmware. \r\n<ul>\r\n<li><a href=\"https://download.microsoft.com/download/A/D/F/ADF87383-7E81-4157-A1C3-D2CCE3446D7B/SurfacePro2_Win8x_160501_2.zip\">SurfacePro2_Win8x_160501_2.zip</a></li>\r\n</ul>\r\n<br></br>\r\nPlease refer to end of lifecycle support:\r\n<br></br>\r\n<a href=\"https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support\">End of Servicing Date</a>\r\n<br></br>\r\n<a href=\"https://en.wikipedia.org/wiki/Windows_10_version_history\">Windows 10 version history</a>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SurfacePro2_Win10_160501_2.zip"
+    ],
+    "detailsSection_file_size": [
+        "209.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Surface Pro 2 required for compatibility with these drivers. These drivers and firmware are compatible with Windows 8.1 and Windows 10, including Enterprise versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1",
+        "Windows 10 Tech Preview"
+    ],
+    "installInstructionSection": "Use these drivers and firmware to prepare your custom images for enterprise deployment, or to repair problems with custom installations of Windows on your Surface Pro 2. The ZIP file allows you to selectively install or deploy individual drivers. The MSI will install all relevant drivers automatically. For convenience, the Ethernet dongle drivers are included as separate packages, but are also included in the ZIP and MSI. These drivers and firmware are not compatible with Surface RT and Surface Pro (first generation).",
+    "relatedResourcesSection": [
+        {
+            "title": "surface Pro 2 Update History",
+            "url": "https://support.microsoft.com/en-us/help/4023483/surface-surface-pro-2-update-history"
+        },
+        {
+            "title": "supported Operating Systems",
+            "url": "https://support.microsoft.com/en-us/surface/surface-supported-operating-systems-9559cc3c-7a38-31b6-d9fb-571435e84cd1"
+        },
+        {
+            "title": "end of Servicing Date",
+            "url": "https://docs.microsoft.com/en-us/surface/surface-driver-firmware-lifecycle-support"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49042",
+    "downloadPreload": true
+}

@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "Requirements Management with Visual Studio Team System White Paper",
+    "downloadDescription": "This white paper describes requirements management with Team System.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Requirements Management and Visual Studio Team System.xps",
+            "url": "https://download.microsoft.com/download/3/b/e/3bed19ef-7164-42be-a03a-ff3c2b10f120/Requirements Management and Visual Studio Team System.xps",
+            "size": "983122",
+            "version": "1.0.80321",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Requirements Management and Visual Studio Team System.pdf",
+            "url": "https://download.microsoft.com/download/3/b/e/3bed19ef-7164-42be-a03a-ff3c2b10f120/Requirements Management and Visual Studio Team System.pdf",
+            "size": "1053788",
+            "version": "1.0.80321",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Requirements Management and Visual Studio Team System.docx",
+            "url": "https://download.microsoft.com/download/3/b/e/3bed19ef-7164-42be-a03a-ff3c2b10f120/Requirements Management and Visual Studio Team System.docx",
+            "size": "1014214",
+            "version": "1.0.80321",
+            "datePublished": "7/15/2024 3:27:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This white paper outlines how to use Visual Studio Team System for successful requirements management using Visual Studio Team System 2005 or Visual Studio Team System 2008. In addition, you can use this paper to learn about some of the challenges that Microsoft intends to address in the next release: Visual Studio Team System 2010.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.80321",
+    "detailsSection_file_name": [
+        "Requirements Management and Visual Studio Team System.xps",
+        "Requirements Management and Visual Studio Team System.pdf",
+        "Requirements Management and Visual Studio Team System.docx"
+    ],
+    "detailsSection_file_size": [
+        "960.1 KB",
+        "1.0 MB",
+        "990.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view the Word document, you'll need a copy of Microsoft Office Word 2007, or Microsoft Word 97 or later with the free Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats.<br />\nTo view the PDF file, you'll need a PDF reader, such as the free Adobe Acrobat Reader.<br />\nTo view the XPS file, you'll need Windows Vista, or the Microsoft XML Paper Specification Essentials Pack.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download this white paper in your choice of the following formats: Microsoft Word document (DOCX), PDF file or XPS file.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=941b3470-3ae9-4aee-8f43-c6bb74cd1466"
+        },
+        {
+            "title": "microsoft XML Paper Specification Essentials Pack",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyID=b8dcffdd-e3a5-44cc-8021-7649fd37ffee"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24518",
+    "downloadPreload": true
+}

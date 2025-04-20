@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Performance Considerations for Warehouse Management in Microsoft Dynamics AX 2012 R3",
+    "downloadDescription": "\u200bThis whitepaper identifies and describes specific areas of the Warehouse management module where particular attention should be given when implementing and setting up the module.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "PerformanceconsiderationsforWarehousemgmtMsd.pdf",
+            "url": "https://download.microsoft.com/download/1/e/e/1eebaef8-12fc-493d-9a4e-aabc8f2e92b9/PerformanceconsiderationsforWarehousemgmtMsd.pdf",
+            "size": "1059815",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bIt also touches on some of the results of performance investigations done by the Microsoft development team. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "PerformanceconsiderationsforWarehousemgmtMsd.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101875",
+    "downloadPreload": true
+}

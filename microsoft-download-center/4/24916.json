@@ -1,0 +1,116 @@
+{
+    "error": "",
+    "downloadTitle": "Partial Database Availability",
+    "downloadDescription": "SQL Server 2005 features that enable appropriately designed solutions to achieve partial availability and remain online even after a disk subsystem hardware failure.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MSIT_SAP_Data_Tier_HA_DR.docx",
+            "url": "https://download.microsoft.com/download/d/9/4/d948f981-926e-40fa-a026-5bfcf076d9b9/MSIT_SAP_Data_Tier_HA_DR.docx",
+            "size": "96313",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        }
+    ],
+    "detailsSection": "This paper covers SQL Server 2005 features that enable appropriately designed solutions to achieve partial availability and remain online after a disk subsystem hardware failure. Simple design patterns in SQL Server 2005 can mitigate the risk of the entire database being unavailable due to the failure of one of multiple disk cabinets or arrays. The paper expands on the concept of partial database availability and covers related features and usage. Example scenarios enable developers and architects to take advantage of the features in SQL Server 2005 that support partial database availability when they design solutions for large databases.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSIT_SAP_Data_Tier_HA_DR.docx"
+    ],
+    "detailsSection_file_size": [
+        "94.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Hyper-V Server 2008",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Download word document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24916",
+    "downloadPreload": true
+}

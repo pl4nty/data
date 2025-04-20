@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Inventory Replenishment in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Inventory Replenishment module in Microsoft Dynamics SL 2015.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_IR.zip",
+            "url": "https://download.microsoft.com/download/b/7/1/b71ef8a0-1ca3-4fe6-a3db-411f6f0e1be2/SL2015_ENUS_IR.zip",
+            "size": "4514639",
+            "version": "NA.",
+            "datePublished": "11/15/2023 4:40:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience<b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Inventory Replenishment module in Microsoft Dynamics SL. At Training Material CompletionAfter reviewing this training, individuals will have: <ul><li>A solid understanding how to setup and maintain the Inventory Replenishment module including performing demand calculations, managing replenishment orders, and measuring performance and profitability.</li><li>An understanding of how the Inventory Replenishment module interacts with the other Microsoft Dynamics SL modules.</li></ul><b></b> Prerequisites<b></b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>Reviewed the Inventory training course.</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_IR.zip"
+    ],
+    "detailsSection_file_size": [
+        "4.3 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101758",
+    "downloadPreload": true
+}

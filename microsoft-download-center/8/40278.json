@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Kinect for Windows SDK v1.8",
+    "downloadDescription": "The Kinect for Windows Software Development Kit (SDK) enables developers to create applications that support gesture and voice recognition, using Kinect sensor technology on computers running Windows 7, Windows 8, Windows 8.1, and Windows Embedded Standard 7.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "KinectSDK-v1.8-Setup.exe",
+            "url": "https://download.microsoft.com/download/e/1/d/e1dec243-0389-4a23-87bf-f47de869fc1a/KinectSDK-v1.8-Setup.exe",
+            "size": "233219096",
+            "version": "1.8.0.595",
+            "datePublished": "7/15/2024 4:56:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>What's new?</b><br/><br/>\r\nThe Kinect for Windows SDK, driver, and runtime v1.8 are 100% compatible with Kinect for Windows v1.0, 1.5, 1.6, and 1.7 applications.\r\n<br/><br/><br/>\r\n\r\n<b>Learn more about the Kinect for Windows commercial SDK</b><br/><br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkID=280207\" target=\"_blank\">View Release Notes ></a><br/><br/>\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkID=242154\" target=\"_blank\">Explore the features ></a><br/><br/>\r\n\r\nThe Kinect for Windows SDK includes the following:\r\n<ul>\r\n<li>Drivers for using Kinect for Windows sensors on a computer running Windows 7, Windows 8, Windows 8.1, and Windows Embedded Standard 7</li>\r\n<li>Application programming interfaces (APIs) and device interfaces</li>\r\n<li>Note: Samples, tools, and other valuable development resources are available in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=323589\" target=\"_blank\">Kinect for Windows Developer Toolkit.</a></li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.8.0.595",
+    "detailsSection_file_name": [
+        "KinectSDK-v1.8-Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "222.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n\r\n<ul>\r\n<li><b>Hardware Requirements</b></li>\r\n<br/><br/>Your computer must have the following minimum capabilities:\r\n<ul>\r\n<li>32-bit (x86) or 64-bit (x64) processor</li>\r\n<li>Dual-core 2.66-GHz or faster processor </li>\r\n<li>Dedicated USB 2.0 bus </li>\r\n<li>2 GB RAM</li>\r\n<li>A Microsoft Kinect for Windows sensor</li>\r\n</ul>\r\n\r\n<br/><br/>\r\n<li><b>Software requirements</b></li>\r\n<ul>\r\n<li>Visual Studio 2010, or Visual Studio 2012. The free Express editions can be downloaded from <a href=\"http://www.microsoft.com/visualstudio/eng/products/visual-studio-2010-express\" target=\"_blank\">Microsoft Visual Studio 2010 Express</a> or <a href=\"http://www.microsoft.com/visualstudio/11/en-us/products/express\" target=\"_blank\">Microsoft Visual Studio 2012 Express</a>.</li>\r\n<li><a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=17851\" target=\"_blank\">.NET Framework 4</a> (installed with Visual Studio 2010), or <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=30653\" target=\"_blank\">.NET Framwork 4.5</a> (installed with Visual Studio 2012)</li>\r\n<li>To develop speech-enabled Kinect for Windows Applications, you must install the <a href=\"http://go.microsoft.com/fwlink/?LinkID=240081\" target=\"_blank\">Microsoft Speech Platform SDK v11</a></li>\r\n</ul>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 7",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install the SDK:<br/>\r\n<ol>\r\n<li>Make sure the Kinect sensor is not plugged into any of the USB ports on the computer.</li>\r\n<li>If you have a previous version of the Kinect for Windows SDK currently installed, close any open samples, the Sample Browser, etc. and skip to step 5. Kinect for Windows v1.8 will upgrade the previous version.</li>\r\n<li>Remove any other drivers for the Kinect sensor.</li>\r\n<li>If you have Microsoft Server Speech Platform 10.2 installed, uninstall the Microsoft Server Speech Platform Runtime and SDK components including both the x86 and x64 bit versions, plus the Microsoft Server Speech Recognition Language - Kinect Language Pack.</li>\r\n<li>Close Visual Studio. You must close Visual Studio before installing the SDK and then restart it after installation to pick up environment variables that the SDK requires.</li>\r\n<li>From the download location, double-click on <b>KinectSDK-v1.8-Setup.exe</b>. This single installer works for both 32-bit and 64-bit Windows.</li>\r\n<li>Once the SDK has completed installing successfully, ensure the Kinect sensor is plugged into an external power source and then plug the Kinect sensor into the PC's USB port. The drivers will load automatically. </li>\r\n<li>The Kinect sensor should now be working correctly. </li>\r\n<li>Download the <a href=\"http://go.microsoft.com/fwlink/?LinkID=323589\" target=\"_blank\">Kinect for Windows Developer Toolkit</a>, which contains source code samples, tools, and other valuable development resources that simplify developing Kinect for Windows applications.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40278",
+    "downloadPreload": true
+}

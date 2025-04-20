@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "PPM Architecture Diagrams",
+    "downloadDescription": "Project Portfolio Management_Architecture Diagrams",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PPM_Architecture_Diagrams.zip",
+            "url": "https://download.microsoft.com/download/4/5/1/45167f5c-794f-4f21-9d35-6e7f10e2bf56/PPM_Architecture_Diagrams.zip",
+            "size": "12467144",
+            "version": "1",
+            "datePublished": "6/13/2024 11:52:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped file provides conceptual, logical, and physical architectures for each of the three solution phases, and describes about how to customize the solution for the client\u2019s specific priorities. Conceptual Diagram lists the usage scenarios that interact with our solution and also shows the interaction with any external systems. Physical diagram depicts the implementation of physical servers, network, client systems and firewall. Logical diagrams consists of combination of Logical layer and physical layer (information flow, components and their interaction)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PPM_Architecture_Diagrams.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.9 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Microsoft Visio 2007/2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35518",
+    "downloadPreload": true
+}

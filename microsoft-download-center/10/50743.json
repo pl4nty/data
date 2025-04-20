@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Update (KB3134286) for Microsoft System Center Service Manager 2012 R2 Self Service Portal",
+    "downloadDescription": "This release contains new features & bug fixes for new HTML Self Service Portal for Service Manager 2012 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SelfServicePortal_CU_KB3134286_amd64_7.5.3079.548.EXE",
+            "url": "https://download.microsoft.com/download/1/2/7/1271800e-1969-4452-9e18-8a1af49cc037/SelfServicePortal_CU_KB3134286_amd64_7.5.3079.548.EXE",
+            "size": "45207584",
+            "version": "7.5.3079.548",
+            "datePublished": "7/15/2024 4:01:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Summary</u></b><br />\r\n  <br />\r\n  This article describes the new features that are included and the issues that are fixed\r\n  in Update (KB3134286) for Microsoft System Center Service Manager 2012 R2 Self Service\r\n  Portal. Additionally, this article contains the installation instructions for this update.<br />\r\n  <br />\r\n  <b>Important</b>: This update is only applicable for deployments that are running\r\n  Microsoft System Center 2012 R2 Service Manager together with new HTML Self Service\r\n  Portal installed.<br />\r\n  <br />\r\n  <b><u>Other updates that are included</u></b><br />\r\n  System Center 2012 R2 Service Manager Self Service Portal updates are cumulative.\r\n  Therefore, this update contains a new payload along with the payload from the following\r\n  previous update:<br />\r\n\r\n  <ul>\r\n    <li><a href=\"https://support.microsoft.com/en-us/kb/3124091\">3124091</a> A\r\n    hotfix (build 7.5.3079.523) is available for the System Center 2012 R2 Service\r\n    Manager Self-Service Portal</li>\r\n  </ul><br />\r\n  <br />\r\n  <b><u>New features that re included in this release</u></b><br />\r\n\r\n  <ul>\r\n    <li>Query form element in Request offerings now <b>supports all configurations</b>\r\n    including but not limited to:\r\n\r\n      <ul>\r\n        <li>Having custom classes &amp; relationships</li>\r\n\r\n        <li>Query having list criteria depending on selection in other query</li>\r\n\r\n        <li>Having combination classes (Type Projection) for querying</li>\r\n\r\n        <li>Adding selected items of query to sub activities at any level of\r\n        hierarchy</li>\r\n\r\n        <li>User Portal User token in Query criteria</li>\r\n      </ul>\r\n    </li>\r\n\r\n    <li>Portal now filters the Service Offerings based on language</li>\r\n\r\n    <li>Portal now allows to configure Generic request button to have default and\r\n    language specific Request Offerings associated with it. (Read more about portal customizations from <a href = \"https://technet.microsoft.com/en-us/library/mt622142.aspx#Anchor_2\">here.</a>)</li>\r\n\r\n    <li>Access for Announcements can now be controlled with user roles</li>\r\n\r\n    <li>A share button has been added in all Portal pages to easily share a Request\r\n    offering, submitted Request, Activity or a Help article</li>\r\n  </ul><br />\r\n  <b><u>Issues which are fixed in this release</u></b><br />\r\n<br/>\r\n<ul>\r\n<li>User Inputs are not getting populated in Service Requests when filed from Portal</li>\r\n<li>Date picker not coming for date type fields in Request Offering forms</li>\r\n<li>Submitted Service Request and Incidents in Portal goes into closed state</li>\r\n<li>Attached by field is not populated in the work item, when attaching a file from Portal</li>\r\n<li>Un-favorite does not work for Request Offerings.</li>\r\n<li>Help Article Search not returning result from all knowledge articles</li>\r\n<li>List of activities under My Request section are not sorted as per their sequence</li>\r\n<li>Mandatory attachments inside Service Request do not work</li>\r\n<li>Query allows multiple selection even when they are configured to allow single selection only</li>\r\n<li>Pagination and in a Query does not work when the Query is configured to not to show object details</li>\r\n<li>Search box in Query form element does not show up when Query is configured to not to show object details</li>\r\n<li>Query field shows \u201cNo results found\u201d by default, instead of asking user to Refresh and fetch the results</li>\r\n<li>Multiple refreshes distort the Query UI</li>\r\n<li>Regex tooltip does not appear for text fields in Request Offerings, when it is constrained with .Net Regular Expression criteria</li>\r\n<li>Action logs don't expand when any request is opened by using a direct URL</li>\r\n<li>My Activity does not show priority display name properly</li>\r\n<li>User Inputs is shown as XML in Related request of My Activities</li>\r\n<li>Request Offerings using templates with predefined Service Items or Configuration Items give error while submitting</li>\r\n<li>Notes tab is missing from My Activities</li>\r\n<li>Service Offerings appear in arbitrary order \u2013 now they are alphabetically sorted</li>\r\n<li>Description field does not show multi lines</li>\r\n<li>Action log does not show an entry when a file is attached while creating or updating a Request</li>\r\n<li>Full path is shown in file name and \u201cAttached By\u201d property is not set on attaching a file from portal.</li>\r\n<li>My Activities filter does not work with Portugese-Brazalian Language</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.548",
+    "detailsSection_file_name": [
+        "SelfServicePortal_CU_KB3134286_amd64_7.5.3079.548.EXE"
+    ],
+    "detailsSection_file_size": [
+        "43.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Please note that this update in only applicable for deployments running Microsoft System Center 2012 R2 Service Manager with <a href=\"https://support.microsoft.com/en-us/kb/3096383\">new HTML self service portal</a> installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b><u>Before you apply this update, follow these steps:</u></b>\r\n<br/>\r\n<ol>\r\n<li>\r\nIf any customizations are made in the portal sidebar with the steps mentioned in \"Customizing the left menu bar\" section of this document - <a href=\"https://technet.microsoft.com/en-US/library/mt622142.aspx\">https://technet.microsoft.com/en-US/library/mt622142.aspx</a>, then please <b>take backup of Views\\Shared\\Sidebar.cshtml file</b>. \r\n</li>\r\n</ol>\r\n\r\n<br/><br/>\r\n<b><u>To install this update, follow these steps:</u></b>\r\n<br/>\r\n<ol>\r\n<li>Download the update \"SelfServicePortal_CU_KB3134286_amd64_7.5.3079.548\" on the server machine which hosting your Self Service Portal</li>\r\n<li>Click <b>Run as administrator</b></li>\r\n<li>Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard</li>\r\n</ol>\r\n\r\n<br/><br/>\r\n<b><u>To verify the successful installation of this update, follow these steps</u></b>\r\n<br/>\r\n<ol>\r\n<li>In Control Panel, open <b>Programs and Features</b></li>\r\n<li>Click <b>View Installed Updates</b></li>\r\n<li>The installation succeeded if the following is listed on your Self Service Portal server: <b>Hotfix for Microsoft System Center Service Manager R2 Self Service Portal (KB3134286)</b></li>\r\n</ol>\r\n\r\n<br/><br/>\r\n<b><u>After the installation</u></b>\r\n<br/>\r\n<ol>\r\n<li>\r\nIf any customizations were backed up for portal sidebar (as mentioned in Before the installation steps), then merge the required changes in the updated Views\\Shared\\Sidebar.cshtml file</li>\r\n<li>Restart the machine which is hosting your portal IIS server</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50743",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 15 Technical Preview Interoperability API Documentation",
+    "downloadDescription": "This download provides documentation of APIs related to Interoperability with SharePoint 15. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP15InteropAPI.zip",
+            "url": "https://download.microsoft.com/download/8/d/9/8d95d4cd-7679-4c88-b145-7a35964c449a/SP15InteropAPI.zip",
+            "size": "648493",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:29:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Welcome to the SharePoint 15 Technical Preview Interoperability API Documentation download.<br />\r\n<br />\r\nThis download contains the following developer documentation:\r\n<ul>\r\n<li><b>SharePoint 15 Technical Preview Interoperability API Documentation:</b> This compiled help (.chm) file contains reference topics focusing only on types and members that are called by other Microsoft applications. This reference does not document the full SharePoint 15 managed object model. That documentation will accompany a later release of SharePoint 15.</li>\r\n</ul>\r\nWhile we make every effort to ensure the technical accuracy in this documentation, it is preliminary documentation and is subject to change.<br />\r\n<br />\r\nTo suggest content, request more documentation, or report an error, contact us at <a href=\"mailto:docthis@microsoft.com\">docthis@microsoft.com</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SP15InteropAPI.zip"
+    ],
+    "detailsSection_file_size": [
+        "633.3 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "This download applies to the following products and technologies:\r\n<ul>\r\n<li>Microsoft SharePoint Server 15</li>\r\n<li>Microsoft SharePoint Foundation 15</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "<b>To install the documentation: </b>\r\n<ol>\r\n<li>Download the documentation by clicking the above <b>Download</b> link, and then save the file locally.</li>\r\n<li>Unzip the file, and then copy the SP15InteropAPI.chm locally.</li>\r\n</ol>\r\n<b>IMPORTANT:</b> On computers that have security update <a href=\"http://support.microsoft.com/kb/896358/\">896358</a> installed, you cannot open Compiled Help Module (.chm) files that you download. For more information, see the <a href=\"http://support.microsoft.com/kb/902225/\">Microsoft Support Web site</a>. <br />\r\n<br />\r\n<b>To use the documentation: </b><br />\r\n<br />\r\nAfter you save the file locally, you can view its contents by using one of the following methods. <br />\r\n<br />\r\n<b>Method 1</b>\r\n<ol>\r\n<li>Open the SP15InteropAPI.chm file. </li>\r\n<li>In the <b>Open File-Security Warning</b> dialog box that appears, clear the <b>Always ask before opening this file</b> check box. </li>\r\n<li>Choose <b>Open</b>.</li> \r\n</ol>\r\n<b>Method 2 </b>\r\n<ol>\r\n<li>Right-click the .chm file, and then choose <b>Properties</b>. </li>\r\n<li>Choose <b>Unblock</b>. </li>\r\n<li>Double-click the .chm file to open the file. </li>\r\n</ol>\r\n<b>Removal of this download: </b><br />\r\nThere is no removal feature for this download. You must manually delete the .chm file.",
+    "additionalInformationSection": "This package does not collect any personal information. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28768",
+    "downloadPreload": true
+}

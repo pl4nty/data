@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "FaSTLMM.Py",
+    "downloadDescription": "FaST-LMM-Py extends the capabilities of FaST-LMM using Python. Last published: February 27, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FaSTLMM.Py.102.zip",
+            "url": "https://download.microsoft.com/download/7/1/6/716c45b9-af7a-4caa-a780-074da79381d9/FaSTLMM.Py.102.zip",
+            "size": "99678669",
+            "version": "1.02",
+            "datePublished": "6/13/2024 12:55:35 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "FaST-LMM-Py extends the capabilities of FaST-LMM using Python. These features include capabilities such as FaST-LMM-SELECT which selects SNPs for FaST-LMM, FaST-LMM-SET which is a new approach for set tests that can handle confounding, and FaST-LMM-EWASher which performs epigenome-wide association analysis in the presence of confounders such as cell-type heterogeneity.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.02",
+    "detailsSection_file_name": [
+        "FaSTLMM.Py.102.zip"
+    ],
+    "detailsSection_file_size": [
+        "95.1 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52345",
+    "downloadPreload": true
+}

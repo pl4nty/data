@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MSS11SP3_9.42",
+    "downloadDescription": "MSS11SP3_9.42",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.42.0.0_SLES11-SP3-64_GA_08Apr2021_release.tar.gz",
+            "url": "https://download.microsoft.com/download/7/c/4/7c47301a-34be-41ba-9c5f-9911a8a07d5e/Microsoft-ASR_UA_9.42.0.0_SLES11-SP3-64_GA_08Apr2021_release.tar.gz",
+            "size": "98758552",
+            "version": "9.42.0.0",
+            "datePublished": "7/15/2024 5:02:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "MSS11SP3_9.42",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.42.0.0",
+    "detailsSection_file_name": [
+        "Microsoft-ASR_UA_9.42.0.0_SLES11-SP3-64_GA_08Apr2021_release.tar.gz"
+    ],
+    "detailsSection_file_size": [
+        "94.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Linux",
+    "systemRequirementsSection_supportedOS": [
+        "Linux"
+    ],
+    "installInstructionSection": "Extract the installer and invoke install script.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102932",
+    "downloadPreload": true
+}

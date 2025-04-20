@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Skype TX Controller Application",
+    "downloadDescription": "Skype TX Controller Application enables a single operator to control multiple Skype TX units. Please see the details page for additional information.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeTX.msi",
+            "url": "https://download.microsoft.com/download/b/8/f/b8fa8d24-783c-46b6-8b01-4b8ed51fa557/SkypeTX.msi",
+            "size": "11997184",
+            "version": "2.19.805.1",
+            "datePublished": "7/15/2024 4:28:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype TX controller is a management solution for controlling multiple Skype TX units. Using this software, it is possible to manage multiple Skype TX channels and call any contact in your Skype contact list on up to 14 connected Skype TX units.  Physical access to the Skype TX unit is not required during normal operation.  \r\n<br/>\r\n<ul>\r\n \r\n<br/>                                                                     \r\nAvailable versions:\r\n<br/>\r\n                                                                               \r\n2.19.505.1  is the latest Skype TX controller application.\r\n<ul>\r\n</ul>\r\nWhats new in 2.19.505.1 ?\r\n<ul>\r\n\r\n<li>Bug Fixes and Performance Improvements</li>\r\n</ul>                                                                                       \r\n<br/>\r\n<br/>\r\n</ul>\r\n<br/>\r\n<b>More Information</b>\r\n<br/>\r\nSkype TX controller is a software package designed for use in Television production studios and other professional environments that enables you to send Skype calls as SD/HD-SDI video with embedded or balanced analogue audio, providing the best call quality available in an HD video format.  Skype TX can:\r\n<ul>\r\n<li>Optimize the call quality and resizes and adjusts the video content to conform to standard television video resolutions</li>\r\n<li>Monitor the call to determine quality and continuous Skype call both for both incoming and return audio and video</li>\r\n<li>Switch to a still image or a snapshot of the video feed if the call drops below a resolution that you define</li>\r\n<li>Prevent the video from reframing when Skype changes the aspect ratio</li>\r\n<li>Embed the Skype watermark in the video output without using a separate graphics system</li>\r\n</ul>\r\n<br/>\r\nSkype TX controller can run on any Skype TX client, on a Windows server or any Windows PC. At least one Skype TX unit is required to use with this download. Limited functionality will be available without a Skype TX unit. For more information on where to get a Skype TX unit, please visit our partner websites:\r\n<br/>\r\n<br/>\r\n<ul>\r\n<li>Newtek \u2013 <a href=\"http://www.newtek.com\">www.newtek.com</a></li>\r\n<br/>\r\n<li>Quicklink \u2013 <a href=\"http://www.quicklink.tv\">www.quicklink.tv</a></li>\r\n<br/>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.19.805.1",
+    "detailsSection_file_name": [
+        "SkypeTX.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b>Other requirements for Skype TX Controller Application:</b>\r\n<ul>\r\n<li>At least 1 GHz processor</li>\r\n<li>At least 512 MB of RAM</li>\r\n<li> Current installation of SkypeTX (version 1.0.8902.xx or above) running on partner hardware</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\r\n<ol>\r\n<li>Download the file by clicking the download button and saving the file to your hard disk.</li>\r\n<li>Run the installer on your chosen hardware.</li>\r\n<li>Sign into Skype using a valid Skype Name or Microsoft Account.</li>\r\n<li>Add your Skype TX Clients in the Controller Application to connect to them.</li>\r\n<li>Refer to the SkypeTX User Guide for more information on operating the Skype TX Controller Application.</li>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45887",
+    "downloadPreload": true
+}

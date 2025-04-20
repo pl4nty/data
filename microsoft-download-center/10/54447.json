@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business - Event-in-a-Box",
+    "downloadDescription": "Marketing collateral for conducting a Skype for Business Event",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Skype-Event-in-a-Box.zip",
+            "url": "https://download.microsoft.com/download/2/e/d/2edca8af-a622-4a52-8f09-5e7d5b4af861/Skype-Event-in-a-Box.zip",
+            "size": "539495413",
+            "version": "August 2016",
+            "datePublished": "5/15/2024 4:41:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Marketing collateral for conducting a Skype for Business Event",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August 2016",
+    "detailsSection_file_name": [
+        "Skype-Event-in-a-Box.zip"
+    ],
+    "detailsSection_file_size": [
+        "514.5 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "All",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54447",
+    "downloadPreload": true
+}

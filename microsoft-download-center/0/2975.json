@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Foundation 2010 site and content security worksheet",
+    "downloadDescription": "Use this worksheet to record inherited and unique permissions, and record which groups need what level of access.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Site and Content Security Worksheet_Foundation.xls",
+            "url": "https://download.microsoft.com/download/4/3/4/4343116b-e786-4d58-9412-eedb31aad8cd/Site and Content Security Worksheet_Foundation.xls",
+            "size": "57344",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For each securable object in the site hierarchy (for example: top-level Web site, subsite, list, folder, or item), you need to specify which groups need permissions and what permission level to assign to the group. Use this worksheet to record inherited and unique permissions, and record which groups need what level of access.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Site and Content Security Worksheet_Foundation.xls"
+    ],
+    "detailsSection_file_size": [
+        "56.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2007; Microsoft Office Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this file to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2975",
+    "downloadPreload": true
+}

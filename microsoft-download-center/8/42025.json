@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded 8.1 Industry (KB2932074)",
+    "downloadDescription": "This KB adds support to enable the Embedded Lockdown Manager Update to configure the Windows 8 Application Launcher.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2932074-x64.cab",
+            "url": "https://download.microsoft.com/download/d/f/f/dffb03db-d3e6-4ad3-b7a4-841d3f64cf29/Windows8.1-KB2932074-x64.cab",
+            "size": "57859",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2932074-x86.msu",
+            "url": "https://download.microsoft.com/download/d/f/f/dffb03db-d3e6-4ad3-b7a4-841d3f64cf29/Windows8.1-KB2932074-x86.msu",
+            "size": "219148",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2932074-x64.msu",
+            "url": "https://download.microsoft.com/download/d/f/f/dffb03db-d3e6-4ad3-b7a4-841d3f64cf29/Windows8.1-KB2932074-x64.msu",
+            "size": "232506",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-KB2932074-x86.cab",
+            "url": "https://download.microsoft.com/download/d/f/f/dffb03db-d3e6-4ad3-b7a4-841d3f64cf29/Windows8.1-KB2932074-x86.cab",
+            "size": "44042",
+            "version": "8.1",
+            "datePublished": "7/15/2024 3:25:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This update resolves an issue where Windows 8 Application Launcher returns only AUMIDs when using the Embedded Lockdown Manager (ELM) Update.  \r\n<br />\r\n<br />\r\nNote:  In order to use the ELM Update to configure Windows 8 Application Launcher, you must first install KB2932074 on the Windows Embedded Industry 8.1 device you want to configure.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "8.1",
+    "detailsSection_file_name": [
+        "Windows8.1-KB2932074-x64.cab",
+        "Windows8.1-KB2932074-x86.msu",
+        "Windows8.1-KB2932074-x64.msu",
+        "Windows8.1-KB2932074-x86.cab"
+    ],
+    "detailsSection_file_size": [
+        "56.5 KB",
+        "214.0 KB",
+        "227.1 KB",
+        "43.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Industry 8.1"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>Windows Embedded 8.1 Industry image</b>: \r\n<br />\r\nA) Executing the appropriate msu file\r\n<br />\r\n<ul>\r\n<li>32bit Windows8.1-KB2932074-x86.msu</li>\r\n<li>64bit Windows8.1-KB2932074-x64.msu</li>\r\n</ul>\r\nOR\r\n<br />\r\n<br />\r\nB) Installing the cab file via the command line with administrator privileges: \u201cDISM /online /add-package\"\r\n<br />\r\n<ul>\r\n<li>32bit Windows8.1-KB2932074-x86.cab</li>\r\n<li>64bit Windows8.1-KB2932074-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "embedded Lockdown Manager",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=37020"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42025",
+    "downloadPreload": true
+}

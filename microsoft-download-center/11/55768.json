@@ -1,0 +1,235 @@
+{
+    "error": "",
+    "downloadTitle": "On-premises data gateway (personal mode)",
+    "downloadDescription": "The Microsoft On-premises data gateway (personal mode) enables Power BI users to connect to on-premises data sources such as SQL Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "On-premises data gateway (personal mode).exe",
+            "url": "https://download.microsoft.com/download/6/0/2/602a459e-e1a3-4fb9-b07f-fc2b60881900/On-premises data gateway (personal mode).exe",
+            "size": "636637536",
+            "version": "3000.266.4",
+            "datePublished": "4/15/2025 7:07:08 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ms-bn",
+            "name": "Malay (Brunei Darussalam)"
+        },
+        {
+            "cultureCode": "gd-gb",
+            "name": "Scottish Gaelic - United Kingdom"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The On-premises data gateway (personal mode) is a client agent to refresh data from on-premises data sources such as SQL Server, Oracle, Teradata, Files, etc. It empowers business analysts to securely and easily keep their data in Power BI in sync with their on-premises data. Analysts can now refresh content in Power BI without having to depend on the IT department to configure any gateway or data sources. Once the On-premises data gateway (personal mode) is running on the computer, data refresh is seamless. \n\nWhen you run setup, the On-premises data gateway (personal mode) Wizard guides you through configuring your connection from Power BI service to various on-premises data sources.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3000.266.4",
+    "detailsSection_file_name": [
+        "On-premises data gateway (personal mode).exe"
+    ],
+    "detailsSection_file_size": [
+        "607.1 MB"
+    ],
+    "detailsSection_file_date": "4/15/2025",
+    "systemRequirementsSection": ".Net Framework 4.8 or greater",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Run the downloaded executable to install and configure the on-premises data gateway (personal mode).",
+    "relatedResourcesSection": [
+        {
+            "title": "learn about Power BI Gateway \u2013 Personal",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=820922"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55768",
+    "downloadPreload": true
+}

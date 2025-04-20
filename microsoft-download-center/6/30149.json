@@ -1,0 +1,121 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae StreamInsight 2.1",
+    "downloadDescription": "Microsoft StreamInsight is Microsoft\u2019s Complex Event Processing technology to help businesses create event-driven applications and derive better insights by correlating event streams from multiple sources with near-zero latency.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "StreamInsightClient.msi",
+            "url": "https://download.microsoft.com/download/e/2/6/e26a6672-81b1-4215-bf52-e8e9bb84b7db/1033/x86/StreamInsightClient.msi",
+            "size": "8458240",
+            "version": "v2.1",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsight.msi",
+            "url": "https://download.microsoft.com/download/e/2/6/e26a6672-81b1-4215-bf52-e8e9bb84b7db/1033/x64/StreamInsight.msi",
+            "size": "13426688",
+            "version": "v2.1",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsight.msi",
+            "url": "https://download.microsoft.com/download/e/2/6/e26a6672-81b1-4215-bf52-e8e9bb84b7db/1033/x86/StreamInsight.msi",
+            "size": "9986048",
+            "version": "v2.1",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "StreamInsightClient.msi",
+            "url": "https://download.microsoft.com/download/e/2/6/e26a6672-81b1-4215-bf52-e8e9bb84b7db/1033/x64/StreamInsightClient.msi",
+            "size": "11636736",
+            "version": "v2.1",
+            "datePublished": "7/15/2024 3:28:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "<a href=\"http://go.microsoft.com/fwlink/?LinkID=190624\">Microsoft StreamInsight</a> is a platform that enables the continuous and incremental processing of unbounded sequences of events (event streams) from multiple sources with near-zero latency. These requirements, shared by vertical markets such as manufacturing, oil and gas, utilities, financial services, health care, web analytics, and IT and data center monitoring, make traditional store and query techniques impractical for event driven, timely and relevant processing of data. The ability to monitor, analyze and act on data in motion provides significant opportunity to make more informed business decisions in near real-time.\r\n<br/>\r\n<br/>\r\nFurther resources can be found on the <a href=\"http://go.microsoft.com/fwlink/?LinkID=224234\">MSDN Portal</a>, on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=204808\">StreamInsight Blog</a>, and on <a href=\"http://go.microsoft.com/fwlink/?LinkId=204810\">CodePlex</a>.\r\n<br/>\r\n<br/>\r\nMicrosoft StreamInsight 2.1 introduces a new object model that is more clear and consistent than in earlier versions, eliminating the need for complex input and output adapters. This new model allows you to provision, name, and manage data sources and sinks in the StreamInsight server, and you can checkpoint over temporal streams and across multiple processes. Moreover, this version of StreamInsight allows to tightly integrate reactive (Rx) and temporal queries within the same hosting model.\r\n<br/>\r\n<br/>\r\nA SQL Server 2012 license is required to install the full Microsoft StreamInsight 2.1 package.\r\n<br/>\r\n<br/>\r\nThe <b>Microsoft StreamInsight Client</b> package installs a subset of Microsoft StreamInsight which lets you implement only the client side functionality: Connecting to an existing StreamInsight server, managing queries, and using the debugger tool. It does not support running an embedded server or creating a StreamInsight service.\r\n<br/>\r\n<br/>\r\nA product key is not required to install the Microsoft\u00ae StreamInsight Client.\r\n<br/>\r\nMicrosoft\u00ae StreamInsight has two different methods to complete the installation process:\r\n<ul>\r\n    <li> Attended Installation \u2013 an interactive user interface will guide you through the set-up process and obtain all of the information and consent required to complete the installation. This includes the displaying, acknowledgement, and archiving of the applicable SQL Server license terms.</li>\r\n<br/>\r\n    <li> Unattended Installation \u2013 this is a command line set-up process that does not have an interactive user interface to guide you through the set-up process.\r\n    In this case, you will be required to enter a parameter during installation that indicates your acceptance of the license terms.  <br/>\r\n</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v2.1",
+    "detailsSection_file_name": [
+        "StreamInsightClient.msi",
+        "StreamInsight.msi",
+        "StreamInsight.msi",
+        "StreamInsightClient.msi"
+    ],
+    "detailsSection_file_size": [
+        "8.1 MB",
+        "12.8 MB",
+        "9.5 MB",
+        "11.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Notes:</b> Windows XP and Windows Server 2003 (x86 and x64) with restrictions: The event tracing feature of the debugging tool is not functional on these versions.<br/>\r\n<br/>\r\n<b>Other Requirements:</b>\r\n<ul>\r\n<li>This component also requires <b><a href=\"http://go.microsoft.com/fwlink/?LinkID=205493\">Microsoft .NET Framework 4.0</a></b>. </li>\r\n<li>The full StreamInsight installation package requires a SQL Server 2012 license (an instance of SQL Server does not need to be installed).</li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8 Consumer Preview",
+        "Windows Server 2008 R2 SP1",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "Microsoft StreamInsight is a development platform. The installation makes the SDK available through a set of .NET namespaces. For further information on StreamInsight application development please refer to the resources listed above. .<br/><br/>\r\nInstallation instructions for the .msi file:<br/>\r\n<br/>\r\n<ol>\r\n<li>Download and run StreamInsight.msi.</li>\r\n<li>If you intend to install and use the StreamInsight service, or use the persisted metadata store in your own embedded server, or use the checkpointing feature, you will need SQL Server CE. Install SQL Server CE through the included .msi. StreamInsight requires at least Cumulative Update 4 for Microsoft SQL Server Compact 3.5 Service Pack 2. The SQL Server CE .msi will be put into the redist subfolder of the StreamInsight installation folder (typically C:\\Program Files\\Microsoft StreamInsight 2.1 x64 (en)\\redist). </li>\r\n</ol>\r\n\r\n",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30149",
+    "downloadPreload": true
+}

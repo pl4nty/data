@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Describing the Enterprise Architectural Space",
+    "downloadDescription": "This document presents an organizing table that describes the enterprise architectural space, shows relationships among artifacts in the space, and demonstrates how different roles in your enterprise view enterprise architecture.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EntArch.pdf",
+            "url": "https://download.microsoft.com/download/0/c/4/0c42031f-9405-4850-9a07-66cf64aa03d8/EntArch.pdf",
+            "size": "656639",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document presents an organizing table that describes the enterprise architectural space, shows relationships among artifacts in the space, and demonstrates how different roles in your enterprise view enterprise architecture. This document also demonstrates how pattern authors can use the organizing table to organize existing patterns and to identify areas where patterns are not currently documented.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "EntArch.pdf"
+    ],
+    "detailsSection_file_size": [
+        "641.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Reader 4.0 or later",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the link to download the pdf file.<br />\nUse Adobe Reader 4.0 or later to view the file.",
+    "relatedResourcesSection": [
+        {
+            "title": "enterprise Architectural Space Organizing Table",
+            "url": "http://download.microsoft.com/download/0/C/4/0C44F7EB-893F-4048-B2C6-C1C889E06DF1/MOAG_F02.pdf"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17740",
+    "downloadPreload": true
+}

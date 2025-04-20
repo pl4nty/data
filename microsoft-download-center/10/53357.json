@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Post breach: dealing with advanced threats",
+    "downloadDescription": "Explore why a new post-breach approach is needed to address today's threat landscape--and learn about Windows Defender Advanced Threat Protection (ATP) in Windows 10, which detects and responds to advanced attacks.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Post-breach--dealing-with-advanced-threats.pdf",
+            "url": "https://download.microsoft.com/download/a/a/7/aa7f5494-df60-41ea-9b04-7093729f254f/Post-breach--dealing-with-advanced-threats.pdf",
+            "size": "1013899",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:50:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "While antimalware software continues its battle to block mass produced crime-driven malware, a new type of more sophisticated, targeted threat emerges. While antimalware endpoint solutions such as Windows Defender focus on a pre-breach approach, acting as the gate keeper, examining incoming files and memory for malicious content, and blocking threats in real time; a post-breach solution is also needed. With the release of Windows 10 Anniversary Update, Windows will be releasing its own post-breach solution named Windows Defender Advanced Threat Protection (ATP), to complement the existing endpoint security stack of Windows Defender, SmartScreen, and various OS hardening features. The new service, purposely built to detect and respond to advanced attacks, will be leveraging a combination of a deep behavioral sensor integrated into Windows 10, coupled with a powerful security analytics cloud back-end to enable enterprises to detect, investigate, and respond to targeted and sophisticated advanced attacks on their networks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Post-breach--dealing-with-advanced-threats.pdf"
+    ],
+    "detailsSection_file_size": [
+        "990.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This guide is available in PDF format. To access the file. you will need Adobe Reader or a compatible PDF reader.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click the Download button and open the file directly or save it to your local machine for future reference.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "53357",
+    "downloadPreload": true
+}

@@ -1,0 +1,134 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 4 for System Center 2012 R2 Service Manager",
+    "downloadDescription": "This update contains a number of fixes for System Center 2012 R2 Service Manager",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme - UR9 now available.docx",
+            "url": "https://download.microsoft.com/download/b/e/a/bea0559b-1151-418f-91c9-758433ee53cd/Readme - UR9 now available.docx",
+            "size": "13381",
+            "version": "7.5.3079.236",
+            "datePublished": "4/15/2024 3:38:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "<b style=\"color:red\">\r\n[Update]\r\n<br/>\r\n<u>Note: </u>Update Rollup 9 for Service Manager 2012 R2 is now available for download, you can get it from here - <a href=\"http://aka.ms/sm2012R2ur7\">http://aka.ms/smr2ur9</a>\r\n<br/>\r\n<br/>\r\nThe Service Manager update rollups are cumulative, UR9 contains new updates in addition to all the payload which was shipped in <a href=\"https://support.microsoft.com/en-us/kb/3063263\">UR7</a>,<a href=\"https://support.microsoft.com/en-us/kb/3039363\">UR6</a>, <a href=\"https://support.microsoft.com/en-us/kb/3009517\">UR5</a>, <a href=\"https://support.microsoft.com/kb/2989601\">UR4</a>, <a href=\"https://support.microsoft.com/kb/2962041\">UR3</a>, and <a href=\"https://support.microsoft.com/kb/2904710\">UR2</a>. You can directly patch SM 2012 R2 deployment with UR9 to get all the fixes together.\r\n<b>Please be aware</b> that UR9 release does not contain the payload of Update Rollup 8 (https://support.microsoft.com/kb/3124091), because UR8 contains the new HTML based Self Service Portal and requires separate installation.\r\n<br/>\r\n<br/>\r\nHence, now we are removing the Update Rollup 4 files from this Download Center page and those files will be available for on-demand in special cases only. Feel free to reach us at <u>ServiceManager@microsoft.com</u> in case of any queries or concerns.\r\n<br/>\r\n</b>\r\n----------------------------\r\n<br/>\r\n<br/>\r\nThis update contains a set of bug fixes to the System Center 2012 R2 Service Manager release. It should be applied to all Service Manager 2012 R2 server installations. <br/>\r\nThere are two executable files available: <br/>\r\nSCSM2012R2_CU_KB2989601_AMD64_7.5.3079.236.exe <br/>\r\nSCSM2012R2_CU_KB2989601_i386_7.5.3079.236.exe<br/>\r\n<br/>\r\nBug fixes included in this update:\r\n<ol>\r\n<li> ObjectGUID (MT_Microsoft$AD$UserBase) is <b>retained correctly</b> when Users imported into Service Manager using the Active Directory (AD) connector with Group Expansion check enabled. The changes will take effect the next time the workflow runs.</li>\r\n\r\n<li> The Folder and View links on the central pane of the 'Work Items' item of the console, <b>appear correctly</b> when the DataWarehouse Management Server is connected.</li>\r\n\r\n<li> Changes to DisplayName field are <b>replicated correctly</b>, when the title of a Manual Activity is updated.</li>\r\n\r\n<li> Request Offering wizard displays the <b>runbook input parameters only </b>(instead of all the properties) for Service Management Automation (SMA) runbooks.</li>\r\n\r\n<li> Saving a Template containing a Configuration item with an enumeration property that no longer exists <b>works without errors</b>.</li>\r\n\r\n<li> The default value for Data warehouse transform jobs have been increased to <b>180 minutes </b>, up from 60. This value can be configured.</li>\r\n\r\n<li> Service Requests incorrectly entered the <b>\"Completed\" </b>status on rare occasions. This issue has been addressed.</li>\r\n\r\n<li>Creating a new SLA Calendar does not cause an error message to be displayed when the local timezone on the computer is custom.</li>\r\n\r\n<li>Console does not freeze after applying changes to an existing Knowledge Article.</li>\r\n</ol>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2989601",
+        "name": "KB2989601"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.5.3079.236",
+    "detailsSection_file_name": [
+        "Readme - UR9 now available.docx"
+    ],
+    "detailsSection_file_size": [
+        "13.1 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "System Center 2012 R2 Service Manager ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Before you update:\r\n<ol>\r\n<li>Exit all Service Manager-related applications before you apply this cumulative update. For example, exit the Service Manager Console, the Self-Service Portal links, and the authoring tool</li>\r\n<li>Ensure that the Data Warehouse Server has successfully synchronized with the Management Server at least once</li>\r\n<li>Ensure that the update is first installed on Service Manager components in the following order:\r\n<ol>\r\n<li>DataWarehouse Server</li>\r\n<li>Primary Management Server</li>\r\n<li>Secondary Management Servers</li>\r\n<li>All Analyst consoles</li>\r\n<li>Self-Service Portal</li>\r\n</ol>\r\n</li>\r\n<li>It is important to restart all the consoles once the update has been installed</li>\r\n</ol>\r\n<br/>\r\n<b>To install this cumulative update, follow these steps: </b>\r\n<ol>\r\n<li>Download the cumulative update to a target folder. This cumulative update contains both the x86 version and the x64 version. Download the appropriate version for your system.</li>\r\n<li>Open the target folder and right-click the SCSM2012R2_CU_KB2989601_AMD64_7.5.3079.236.exe file or the SCSM2012R2_CU_KB2989601_i386_7.5.3079.236.exe file, and then click Run as administrator</li>\r\n<li>Accept the Microsoft Software License Terms, and then follow the steps in the installation wizard</li>\r\n</ol>\r\n<br/>\r\n<b>How to verify a successful installation of this cumulative update</b>\r\n<ol> \r\n<li>In Control Panel, open Programs and Features.</li>\r\n<li>Click View installed updates.</li>\r\n<li>The following item is listed: Hotfix for Microsoft System Center Service 2012 R2 Service Manager (KB2989601)</li>\r\n</ol>\r\n<br/>\r\n<b>Steps to be followed post application of the UR to resynchronize SCOM (Operations Manager) mount points data:</b>\r\n<ol>\r\n<li>Disable all the OM CI Connector(s) in SM console</li>\r\n<li>In Windows PowerShell, check the current execution policy by executing \"Get-ExecutionPolicy\"</li>\r\n<li>If the current execution policy is Restricted then set to Remotesigned by executing \"Set-ExecutionPolicy \u2013force RemoteSigned\"</li>\r\n<li>Find the PowerShell script \"OMCIConnector_SyncMetadata_UpdateTimestamp.ps1\" in your System Center 2012 R2 installation directory. You should get this file under \"Microsoft System Center 2012 R2\\Service Manager\\PowerShell\".</li>\r\n<li>Execute \"PowerShell .\\OMCIConnector_SyncMetadata_UpdateTimestamp.ps1\" from Primary Management server</li>\r\n<li>Change the execution policy back to the value that you noted in step 2</li>\r\n<li>Enable and Synchronize the relevant OM CI Connector(s)</li>\r\n<li>All the Mount Points data should be populated in SCSM</li>\r\n</ol>\r\n<br/>\u3000\r\n<b>Steps to be followed post application of the UR to configure the timeout period for DataWarehouse Transform jobs:</b><br/>\r\nWith this Update Rollup, the timeout for DataWarehouse Transform jobs is now configurable with the Windows registry. Also now the default timeout has increased to 3 hours (180 minutes).<br/>\r\n<br/>\r\nTo override this, create \r\n<ol>\r\n<li>Key is under \"SOFTWARE\\Microsoft\\System Center\\2010\\Common\\DAL\" and the name should be \"SqlCommandTimeout\" of type DWORD</li>\r\n<li>The value is in seconds and can vary from 0 up to the max integer value, which is 2,147,483,647.</li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44575",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Retail Scheduler Technical Reference for Microsoft Dynamics AX 2012 Feature Pack ",
+    "downloadDescription": "This document provides instructions for setting up and working with the scheduler feature in the Retail module of Microsoft Dynamics AX 2012. This feature is available only if Microsoft Dynamics AX 2012 Feature Pack is installed.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Retail Scheduler Technical Reference.pdf",
+            "url": "https://download.microsoft.com/download/6/f/6/6f66be23-2c83-49dc-ae1e-0b7458b3ce0b/Retail Scheduler Technical Reference.pdf",
+            "size": "312802",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:28:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The scheduler feature in the Retail module of Microsoft Dynamics AX is used to manage the distribution of data between the head office database and the appropriate store and register databases. The Retail scheduler can also be used to manage updates of the head office database with sales and inventory data from the stores.<br /><br />\r\n<b>Note:</b>The information in this guide applies only to Microsoft Dynamics AX 2012 Feature Pack. For information about how to use Retail with Microsoft Dynamics AX 2012 R2, see the <a href=\"http://technet.microsoft.com/EN-US/library/jj710398.aspx\">Microsoft Dynamics AX 2012 Technical Library on TechNet</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Retail Scheduler Technical Reference.pdf"
+    ],
+    "detailsSection_file_size": [
+        "305.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28781",
+    "downloadPreload": true
+}

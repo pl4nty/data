@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "TulaFale: A Security Tool for Web Services",
+    "downloadDescription": "TulaFale is a new specification language for writing machine-checkable descriptions of SOAP-based security protocols and their properties. Last published: May 15, 2006.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TulaFale.msi",
+            "url": "https://download.microsoft.com/download/d/5/8/d58819fd-b6e1-4439-abd6-3bd5f6687e77/TulaFale.msi",
+            "size": "2353664",
+            "version": "1.5",
+            "datePublished": "7/15/2024 4:09:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "TulaFale is a new specification language for writing machine-checkable descriptions of SOAP-based security protocols and their properties. TulaFale is based on the pi calculus (for writing collections of SOAP processors running in parallel), plus XML syntax (to express SOAP messaging), logical predicates (to construct and filter SOAP messages), and correspondence assertions (to specify authentication goals of protocols). Our implementation compiles TulaFale into the applied pi calculus, and then runs Blanchet's resolution-based protocol verifier. Hence, we can automatically verify authentication and secrecy properties of SOAP protocols. \r\n\r\nThis release includes scripts, documentation and example policies from our recent papers \"Secure Sessions for Web Services\" and \"Verifying Policy-based Security for Web Services.\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "TulaFale.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52378",
+    "downloadPreload": true
+}

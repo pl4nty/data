@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft System Center 2012 R2 Operations Manager Management Pack to configure Operations Management Suite",
+    "downloadDescription": "Microsoft System Center 2012 R2 Operations Manager Management Pack for configuring new connections or reconfiguring existing connections to Operations Management Suite ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor.mpb",
+            "url": "https://download.microsoft.com/download/2/1/e/21e75e69-ea02-42ee-89e8-89da6e813d7b/Microsoft.SystemCenter.Advisor.mpb",
+            "size": "598016",
+            "version": "7.1.10226.1402",
+            "datePublished": "7/15/2024 4:57:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.SystemCenter.Advisor.Internal.mpb",
+            "url": "https://download.microsoft.com/download/2/1/e/21e75e69-ea02-42ee-89e8-89da6e813d7b/Microsoft.SystemCenter.Advisor.Internal.mpb",
+            "size": "151552",
+            "version": "7.1.10226.1402",
+            "datePublished": "7/15/2024 4:57:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b><u>Overview:</u></b><br />\r\n  <br />\r\nFor configuring new connections to Operations Management Suite with Microsoft System Center 2012 R2 Operations Manager, you need to import the management packs available in this download. If you have already confirgured connection to OMS with SC 2012 R2 OM then you do not need to import this management pack, however if you reconfigure your exisitng connection then you need to import this management pack.\r\n\r\nThis management pack uses the new APIs to configure connections to Operations Management Suite.\r\n\r\n<b>Feature Summary</b><br/>\r\nThis Management Pack bundle contains one Management packs: <br/>\r\n<ul>\r\n<li> Microsoft.SystemCenter.Advisor.mpb </li>\r\n<li> Microsoft.SystemCenter.Advisor.Internal.mpb </li>\r\n</ul> <br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10226.1402",
+    "detailsSection_file_name": [
+        "Microsoft.SystemCenter.Advisor.mpb",
+        "Microsoft.SystemCenter.Advisor.Internal.mpb"
+    ],
+    "detailsSection_file_size": [
+        "584.0 KB",
+        "148.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft System Center 2012 R2 Operations Manager",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "To configure new connections or reconfigure your exisitng connections to Operations Management Suite with Microsoft System Center 2012 R2 Operations Manager, import \"Microsoft.SystemCenter.Advisor.mpb\" management pack available in this download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57171",
+    "downloadPreload": true
+}

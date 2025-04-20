@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "APS to SQL DW Migration - Data Migration with BCP and SSIS",
+    "downloadDescription": "APS to SQL DW Migration - Data Migration with BCP and SSIS",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "APS to SQL DW Migration - Data Migration with BCP and SSIS.zip",
+            "url": "https://download.microsoft.com/download/f/d/4/fd4103c4-1ae8-4f74-9281-cc9fa2b05df5/APS to SQL DW Migration - Data Migration with BCP and SSIS.zip",
+            "size": "265750",
+            "version": "1.0",
+            "datePublished": "12/15/2023 5:18:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In certain cases when you cannot use Polybase to export the data out from APS, you can use BCP method. This document talks about the tool which migrates the data from APS database to the file system using BCP and SSIS (for parallel exports). ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "APS to SQL DW Migration - Data Migration with BCP and SSIS.zip"
+    ],
+    "detailsSection_file_size": [
+        "259.5 KB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "<UL> \r\n\r\n<LI>The file is zip archive containing a word doc and script file. </LI>  \r\n\r\n</UL> ",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103133",
+    "downloadPreload": true
+}

@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Developing Multi-tenant Applications for the Cloud, 3rd Edition - Book Download",
+    "downloadDescription": "Developing Multi-tenant Applications for the Cloud, 3rd Edition - Book Download",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Developing Multi-tenant Applications for the Cloud on Windows Azure 3rd Edition.epub",
+            "url": "https://download.microsoft.com/download/d/0/6/d0618696-2f91-4f7f-9477-63fc90d4d29e/Developing Multi-tenant Applications for the Cloud on Windows Azure 3rd Edition.epub",
+            "size": "2111953",
+            "version": "3",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Developing Multi-tenant Applications for the Cloud 3rd Edition.pdf",
+            "url": "https://download.microsoft.com/download/d/0/6/d0618696-2f91-4f7f-9477-63fc90d4d29e/Developing Multi-tenant Applications for the Cloud 3rd Edition.pdf",
+            "size": "7521279",
+            "version": "3",
+            "datePublished": "7/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A PDF file of the <a href=\"http://msdn.microsoft.com/en-us/library/ff966499.aspx\">Developing Multi-tenant Applications for the Cloud, 3rd Edition</a>  book.\r\n<br/><br/>\r\nThis guide is the third release of the second volume in a series about Windows Azure. It demonstrates how you can create from scratch a multitenant, Software as a Service (SaaS) application to run in the cloud by using the latest versions of the Windows Azure tools and the increasing range of capabilities of Windows Azure. \r\n<br/><br/>\r\nThe guide is intended for any architect, developer, or information technology (IT) professional who designs, builds, or operates applications and services that are appropriate for the cloud. It is primarily written for people who work with Windows-based systems. You should be familiar with the Microsoft .NET Framework, Microsoft Visual Studio, ASP.NET, SQL Server and Microsoft Visual C#.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "Developing Multi-tenant Applications for the Cloud on Windows Azure 3rd Edition.epub",
+        "Developing Multi-tenant Applications for the Cloud 3rd Edition.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB",
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A compatabile PDF viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the PDF.",
+    "additionalInformationSection": "Note that the code samples mentioned in this book are available in the related downloads section, Windows Azure Architecture Guide \u2013 Part 2 \u2013 Code Samples.\r\n\r\nFor help and support visit the <a href=\"http://wag.codeplex.com/\">Windows Azure Guidance community site</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "moving Applications to the Cloud, 3rd Edition",
+            "url": "http://msdn.microsoft.com/en-us/library/ff728592.aspx"
+        },
+        {
+            "title": "msdn Home page",
+            "url": "http://msdn.microsoft.com/en-us/library/ff966499.aspx"
+        },
+        {
+            "title": "building Hybrid Applications in the Cloud on Windows Azure",
+            "url": "http://msdn.microsoft.com/en-us/library/hh871440.aspx"
+        },
+        {
+            "title": "windows Azure Guidance community site",
+            "url": "http://wag.codeplex.com/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29263",
+    "downloadPreload": true
+}

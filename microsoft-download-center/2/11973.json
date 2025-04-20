@@ -1,0 +1,72 @@
+{
+    "error": "",
+    "downloadTitle": "Systinet Server 5.0 Code Sample",
+    "downloadDescription": "Code Sample for WS-Security Interoperability using WSE 2.0 and Systinet Server 5.0 for Java",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SystinetWSSInterop.msi",
+            "url": "https://download.microsoft.com/download/4/8/0/4800f461-7736-49a9-bd3d-abe75cafd2aa/SystinetWSSInterop.msi",
+            "size": "100352",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article shows Interoperability based on OASIS WS-Security 1.0 between Microsoft WSE 2.0 and Systinet Server for Java 5.0. The walkthroughs in this article will take you through all you need to know to configure the two environments for securely signing and encrypting SOAP requests and responses using X509 certificates.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SystinetWSSInterop.msi"
+    ],
+    "detailsSection_file_size": [
+        "98.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP SP2 or Most Current Version",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows 98 Second Edition",
+        "Windows ME",
+        "Windows Mobile 2002 software for Pocket PCs",
+        "Windows Mobile 2003 software for Pocket PCs",
+        "Windows Mobile 2003 software for Smartphone  ",
+        "Windows NT",
+        "Windows NT Embedded ",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP 64-bit",
+        "Windows XP Embedded",
+        "Windows XP Embedded Service Pack 1",
+        "Windows XP Embedded Service Pack 2 ",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Service Pack 1",
+        "Windows XP Service Pack 2",
+        "Windows XP Tablet PC Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11973",
+    "downloadPreload": true
+}

@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "Captions Language Interface Pack for Microsoft\u00ae Visual Studio\u00ae LightSwitch\u2122 2011",
+    "downloadDescription": "The Microsoft Captions Language Interface Pack (CLIP) is a simple language translation solution that uses tooltip captions to display translations for English user interface terms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Clip for VS Lightswitch 2011.docx",
+            "url": "https://download.microsoft.com/download/c/d/7/cd7a88db-fe48-45ed-930f-800bd265360e/Clip for VS Lightswitch 2011.docx",
+            "size": "177638",
+            "version": "2",
+            "datePublished": "7/15/2024 3:15:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Captions Language Interface Pack (CLIP) is a simple language translation solution that uses tooltip captions to display translations for English user interface terms.<br />\n<br />\nCLIP is designed for those Visual Studio Lightswitch users who are not very fluent in English. CLIP can help those users learn and use Visual Studio Lightswitch by providing translation for the <i>most common</i> user interface elements of the application. <br />\n<br />\nTo use, simply move your mouse around the screen and halt briefly over any text you want translated. Users can also add their own translations and copy and paste any translation results.\n<br />\n<br />\nCLIP for Visual Studio LightSwitch 2011 is available in Czech, Polish and Turkish, i.e. it will display translations from English into these languages. To download it, please select your language from the drop-down box and click the <b>Change</b> button. You will be directed to the specific page.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Clip for VS Lightswitch 2011.docx"
+    ],
+    "detailsSection_file_size": [
+        "173.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n  <ul>\n    <li> Windows XP Service Pack 2 or above</li>\n    <li> Windows Server 2003 Service Pack 1 or above </li>\n    <li> Windows Server 2003 R2 or above </li>\n    <li> Windows Vista </li>\n    <li> Windows Server 2008</li>\n    <li> Windows 7</li>\n  </ul>\n<li><b>Supported Architectures</b></li>\n<ul>\n  <li> x86</li>\n  <li> x64 (WOW)</li>\n</ul>\n<li><b>Hardware Requirements</b></li>\n<ul>\n   <li>Computer with a 1.6GHz or faster processor</li>\n</ul>\n<ul>\n   <li>1024 MB RAM (1.5 GB if running in a virtual machine)</li>  \n   <li>3 GB of available hard-disk space</li>\n   <li>5400 RPM hard drive</li>  \n   <li>DirectX 9 capable video card running at 1024 x 768 or higher-resolution display</li>\n</ul>\n\n</ul>\n<br />\nVisual Studio 2010 Professional, Premium, Test Professional or Ultimate users must install <a href=\"http://go.microsoft.com/fwlink/?LinkId=209902\">Visual Studio 2010 SP1</a> before installing Visual Studio LightSwitch 2011.<br />\nVisual Studio LightSwitch Beta users should uninstall any previous Beta version before installing Visual Studio LightSwitch 2011.\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "<br />\n<br />\n<b>To install this download</b>:<br />\n<ul><br />\n<li>Follow the on-screen installation instructions.</li> <br />\n<li>When the installation completes, CLIP will start automatically.</li> <br />\n</ul><br />\n<b>Instructions for use:</b><br />\n<br />\n<ul><br />\n<li>Once installed, <b>Microsoft Captions Language Interface Pack (CLIP)</b> is already enabled and ready to display translations. All you need to do is move your cursor around the screen and delay briefly over the text you want translated.</li><br />\n<li>There are two types of interface available to show the translation results: the Tooltip caption or the CLIP window. To select how and when the translations are shown, set your preferences using the <b>Options</b> button (represented by two hammers) on the CLIP window, or <b>Options</b> on the system tray menu. </li><br />\n<li>To add a user translation, click on the <b>Add new translation</b> button (represented by a plus sign) in the CLIP window. Note, you can only have 1 user translation at one time. Moreover, CLIP will not show other translations until you have finished adding a user translation.</li><br />\n<li>To edit a user translation, select the user translation in the  CLIP window and click on the down arrow in the translation text box. Note that default translations are not editable.</li><br />\n<li> To access the CLIP window for your selected source text, press the CLIP <b>Window Key + Z</b>. You may then need to move the cursor around a little to bring up the selection menu. Users can copy translation results by using the <b>Copy</b> menu and pasting into other documents.</li><br />\n<li>To temporarily stop or start CLIP, double-click on the system tray icon. Use <b>Exit</b> to shutdown CLIP. </li><br />\n</ul><br />\n<b>To remove this download:</b> <br />\n<ul><br />\n<li>Open the Control Panel from the Start menu.</li><br />\n<li>Select <b>Add</b> or <b>Remove Programs</b>. </li><br />\n<li>In the list of currently installed programs search for <b>Microsoft Captions Language Interface Pack</b> and uninstall your chosen language.</li><br />\n<li>Click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program.</li> <br />\n<li>Click <b>Yes </b>or <b>OK</b> to confirm that you want to remove the program.</li><br />\n</ul>\n",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio LightSwitch Developer Center",
+            "url": "http://msdn.microsoft.com/en-us/lightswitch"
+        },
+        {
+            "title": "visual Studio LightSwitch Forums",
+            "url": "http://social.msdn.microsoft.com/Forums/en-US/category/vslightswitch"
+        },
+        {
+            "title": "visual Studio LightSwitch 2011",
+            "url": "http://www.microsoft.com/download/en/details.aspx?id=26830"
+        },
+        {
+            "title": "visual Studio 2010 Service Pack 1",
+            "url": "http://www.microsoft.com/downloads/en/details.aspx?FamilyID=75568aa6-8107-475d-948a-ef22627e57a5&displaylang=en"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26937",
+    "downloadPreload": true
+}

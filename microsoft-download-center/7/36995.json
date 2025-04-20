@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint 2013 WAN architecture diagrams",
+    "downloadDescription": "These diagrams include information about wide-area network architectures.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "sps2013-wan-architectures.pdf",
+            "url": "https://download.microsoft.com/download/1/f/d/1fdad8ee-6dff-4bb8-80a5-d74d6a83b0cb/sps2013-wan-architectures.pdf",
+            "size": "516267",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:33:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "sps2013-wan-architectures.vsd",
+            "url": "https://download.microsoft.com/download/1/f/d/1fdad8ee-6dff-4bb8-80a5-d74d6a83b0cb/sps2013-wan-architectures.vsd",
+            "size": "557056",
+            "version": "1.1",
+            "datePublished": "7/15/2024 3:33:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Visio file includes full-scale diagrams for Teck that are presented in the following TechNet article: SharePoint Server 2013 WAN case studies: United Airlines, Teck, and Fabrikam. Some diagrams in this file are not included in the article.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "sps2013-wan-architectures.pdf",
+        "sps2013-wan-architectures.vsd"
+    ],
+    "detailsSection_file_size": [
+        "504.2 KB",
+        "544.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2013, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36995",
+    "downloadPreload": true
+}

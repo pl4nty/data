@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 7 (KB2487305)",
+    "downloadDescription": "Resolves an issue that might occur with the Registry Filter",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows6.1-KB2487305-x64.cab",
+            "url": "https://download.microsoft.com/download/c/0/3/c0333f85-58e1-4886-bc67-250f9dbbf7fc/Windows6.1-KB2487305-x64.cab",
+            "size": "72619",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:34:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2487305-x86.cab",
+            "url": "https://download.microsoft.com/download/c/0/3/c0333f85-58e1-4886-bc67-250f9dbbf7fc/Windows6.1-KB2487305-x86.cab",
+            "size": "68283",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:34:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2487305-x86.msu",
+            "url": "https://download.microsoft.com/download/c/0/3/c0333f85-58e1-4886-bc67-250f9dbbf7fc/Windows6.1-KB2487305-x86.msu",
+            "size": "243219",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:34:29 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.1-KB2487305-x64.msu",
+            "url": "https://download.microsoft.com/download/c/0/3/c0333f85-58e1-4886-bc67-250f9dbbf7fc/Windows6.1-KB2487305-x64.msu",
+            "size": "246992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:34:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2487305 fixes the following issue:\r\n<br></br>\r\nWhere the Registry Filter may not start successfully due to timing issues affecting the availability of its ramdisk volume on an Embedded system.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2487305",
+        "name": "KB2487305"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows6.1-KB2487305-x64.cab",
+        "Windows6.1-KB2487305-x86.cab",
+        "Windows6.1-KB2487305-x86.msu",
+        "Windows6.1-KB2487305-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "70.9 KB",
+        "66.7 KB",
+        "237.5 KB",
+        "241.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Embedded POSReady 7",
+    "systemRequirementsSection_supportedOS": [
+        "POSReady 7"
+    ],
+    "installInstructionSection": "This update <i>must</i> be installed by one of the following options on a <b>POSReady7 image</b>: \r\n<br></br>\r\nA) Executing the appropriate msu file\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2487305-x86.msu</li>\r\n<li>64bit Windows6.1-KB2487305-x64.msu</li>\r\n</ul>\r\nOR\r\n<br></br>\r\nB) Installing the cab file via the command line with administrator privileges: \u201cDISM /online /add-package\"\r\n<br></br>\r\n<ul>\r\n<li>32bit Windows6.1-KB2487305-x86.cab</li>\r\n<li>64bit Windows6.1-KB2487305-x64.cab</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38416",
+    "downloadPreload": true
+}

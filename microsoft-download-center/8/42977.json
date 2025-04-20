@@ -1,0 +1,70 @@
+{
+    "error": "",
+    "downloadTitle": "Branding guidelines and logos for OneNote API developers",
+    "downloadDescription": "Guidelines and logos for branding apps that use the OneNote API",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OneNote_API.pdf",
+            "url": "https://download.microsoft.com/download/5/e/c/5ec22def-a3e0-462a-bdb6-ced8f5610c46/OneNote_API.pdf",
+            "size": "327999",
+            "version": "May2014",
+            "datePublished": "7/15/2024 3:23:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OneNote Logos_Final.zip",
+            "url": "https://download.microsoft.com/download/5/e/c/5ec22def-a3e0-462a-bdb6-ced8f5610c46/OneNote Logos_Final.zip",
+            "size": "1748641",
+            "version": "May2014",
+            "datePublished": "7/15/2024 3:23:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains PDF and PNG files that describe the branding guidelines for apps that use the OneNote API and that provide examples of logos that conform to the guidelines.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May2014",
+    "detailsSection_file_name": [
+        "OneNote_API.pdf",
+        "OneNote Logos_Final.zip"
+    ],
+    "detailsSection_file_size": [
+        "320.3 KB",
+        "1.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The PDF files require Adobe Acrobat..</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. </li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "oneNote Dev Center",
+            "url": "http://dev.onenote.com"
+        },
+        {
+            "title": "getting started with the OneNote API",
+            "url": "http://msdn.microsoft.com/en-us/library/office/dn575425.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42977",
+    "downloadPreload": true
+}

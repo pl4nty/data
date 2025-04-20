@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Modal Dialog Performance Fix for Internet Explorer 7 for Windows Server 2008 SP2",
+    "downloadDescription": "This update addresses performance degradation after installing the MS14-037 Cumulative Security Update for Internet Explorer.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.0-KB2991509-x86.msu",
+            "url": "https://download.microsoft.com/download/7/2/4/724a6302-6343-472c-9331-096600908097/Windows6.0-KB2991509-x86.msu",
+            "size": "2103268",
+            "version": "2991509",
+            "datePublished": "7/15/2024 3:20:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "After applying the MS14-037 Cumulative Security Update for Internet Explorer, web applications that implement the use of consecutive modal dialogs can become very slow to update and may become unresponsive over time. After you install this item, you will have to restart your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2991509",
+        "name": "KB2991509"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2991509",
+    "detailsSection_file_name": [
+        "Windows6.0-KB2991509-x86.msu"
+    ],
+    "detailsSection_file_size": [
+        "2.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows Server 2008 SP2</li>\r\n</ul>\r\n\r\n<ul>\r\n<li>Internet Explorer 7</li>\r\n</ul>\r\n\r\n<ul><li><b>Important:</b> You must apply <a href=\"http://go.microsoft.com/fwlink/?LinkId=507027\"> MS14-051 Cumulative Security Update for IE</a> before installing this fix. Failure to do so could cause serious impacts to how IE functions.</li></ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 Service Pack 2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download, or select a different language from the <b>Change language</b> drop-down list and click <b>Go</b>.        \r\n</li>\r\n        <li>Do one of the following:</li>\r\n        <ul>\r\n          <li>\r\n            To start the installation immediately, click <b>Run</b>.\r\n          </li>\r\n          <li>\r\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\r\n          </li>\r\n          <li>\r\n            To cancel the installation, click <b>Cancel</b>.\r\n          </li>\r\n        </ul>\r\n      </ol>\r\n",
+    "additionalInformationSection": "To find the latest security updates for you visit <a href=\"http://go.microsoft.com/?LinkID=275655 \">Windows Update</a> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <a href=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</a> and follow the 3 easy steps to ensure you\u2019re protected.<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Security Bulletin MS14-051",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=507027"
+        },
+        {
+            "title": "microsoft Security Bulletin MS14-037",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=402324"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43976",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Accounts Receivable in Microsoft Dynamics SL 2015",
+    "downloadDescription": "\u200bThis training provides individuals with the knowledge and skills to build a comprehensive understanding of the Accounts Receivable module in Microsoft Dynamics SL 2015.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SL2015_ENUS_AR.zip",
+            "url": "https://download.microsoft.com/download/0/e/a/0ea3856f-6b57-4373-a436-89c1c3b4b05e/SL2015_ENUS_AR.zip",
+            "size": "8484654",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Audience\r\n   \r\n      <b></b>This training is intended for partners, end users, IT professionals or accounting professionals who utilize or maintain the Accounts Payable module in Microsoft Dynamics SL.At Training Material Completion\r\n   \r\n      <b></b>On completing this course you will be well acquainted with:<ul><li>A solid understanding of the tr\u200bansaction cycle along with the various methods of producing documents and transactions, in the Accounts Receivable module.</li><li>An understanding of how the transaction cycle fits in with the Microsoft Dynamics SL accounting cycle, and how to complete the accounting cycle.</li><li>Exposure you to other important features of the Microsoft Dynamics SL Accounts Receivable system, such as payment application reversal, finance charge calculation, aging, and small balance write-off.</li></ul>\r\n   Prerequisites\r\n   \r\n      <b></b>Before reviewing this training, it is recommended that individuals have: <ul><li>General knowledge of Microsoft Windows</li><li>Knowledge of basic navigation functions in Microsoft Dynamics SL.</li><li>General Ledger training course.</li></ul>\r\n   \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "SL2015_ENUS_AR.zip"
+    ],
+    "detailsSection_file_size": [
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101746",
+    "downloadPreload": true
+}

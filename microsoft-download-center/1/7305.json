@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Unified Access Gateway (UAG) Access Control Guides",
+    "downloadDescription": "Forefront UAG Access Control Guides",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AccessControlDeploy.docx",
+            "url": "https://download.microsoft.com/download/2/f/c/2fc6409b-9d79-41a3-acd8-6892daaf7c89/AccessControlDeploy.docx",
+            "size": "122317",
+            "version": "February, 2010",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AccessControlPlanning.docx",
+            "url": "https://download.microsoft.com/download/2/f/c/2fc6409b-9d79-41a3-acd8-6892daaf7c89/AccessControlPlanning.docx",
+            "size": "202964",
+            "version": "February, 2010",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Forefront UAG provides a gateway for remote employees, mobile workers, partners, and other third-parties to access corporate applications and resources. To help secure applications published through the gateway, Forefront UAG provides a number of access control mechanisms which allow you to define which users are allowed to access published applications. Access control mechanisms include client authentication, health policies with which clients must comply in order to gain access, and application authorization to control which users and groups can access specific applications.  \r\n\r\nThis download contains an access control design guide, and a deployment guide. The access control design guide helps you to understand access control concepts, identify deployment goals, and understand the planning required for each deployment goal. After identifying your access control design, use the deployment guide as a step-by-step companion as you configure your selected access control mechanisms.\r\n\r\nThe planning guide is available from the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/ee406189.aspx). The deployment guide is also available from the Forefront UAG TechCenter (http://technet.microsoft.com/en-us/library/ee406178.aspx). \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February, 2010",
+    "detailsSection_file_name": [
+        "AccessControlDeploy.docx",
+        "AccessControlPlanning.docx"
+    ],
+    "detailsSection_file_size": [
+        "119.5 KB",
+        "198.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7305",
+    "downloadPreload": true
+}

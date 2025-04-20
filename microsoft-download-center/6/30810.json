@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Virtual PC Deployment Batch Scripts and Sample Files",
+    "downloadDescription": "Use these deployment batch scripts and sample files to deploy Virtual PC images in your environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VPCDEPLY.zip",
+            "url": "https://download.microsoft.com/download/7/f/8/7f884e3f-71fc-4265-a968-8175e36c3e06/VPCDEPLY.zip",
+            "size": "209590",
+            "version": "1",
+            "datePublished": "6/13/2024 11:53:27 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use these deployment batch scripts and sample files to deploy Virtual PC images in your environment. Please refer to the Virtual PC deployment whitepaper for detailed instructions regarding how to use these scripts and sample files.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VPCDEPLY.zip"
+    ],
+    "detailsSection_file_size": [
+        "204.7 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 95",
+        "Windows 98",
+        "Windows NT",
+        "Windows XP",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "Click on the .exe file and save to your hard drive.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30810",
+    "downloadPreload": true
+}

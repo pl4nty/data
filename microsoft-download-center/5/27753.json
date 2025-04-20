@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Desktop Error Monitoring (DEM) Documentation Resources Download Page",
+    "downloadDescription": "Downloadable DEM technical documentation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DEM Trial Guide.docx",
+            "url": "https://download.microsoft.com/download/4/0/0/4006918f-75e2-4e90-acc1-5cff03f77f69/DEM Trial Guide.docx",
+            "size": "389324",
+            "version": "11/2010",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Downloadable DEM technical documentation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11/2010",
+    "detailsSection_file_name": [
+        "DEM Trial Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "380.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": ".docx or .pdf file type viewer. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Select the document you would like to download and read.",
+    "relatedResourcesSection": [
+        {
+            "title": "dem Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/ff859485.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "27753",
+    "downloadPreload": true
+}

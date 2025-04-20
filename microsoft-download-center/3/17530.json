@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Fibre Channel Information Tool (fcinfo)",
+    "downloadDescription": "Tool for discovery of SAN resources and configuration information on your Fibre Channel SAN",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "fcinfo_amd64.msi",
+            "url": "https://download.microsoft.com/download/0/3/3/0334844e-7c90-405f-ad19-b882eb1269e4/fcinfo_amd64.msi",
+            "size": "456192",
+            "version": "Version",
+            "datePublished": "7/15/2024 3:10:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "fcinfo_ia64.msi",
+            "url": "https://download.microsoft.com/download/0/3/3/0334844e-7c90-405f-ad19-b882eb1269e4/fcinfo_ia64.msi",
+            "size": "538112",
+            "version": "Version",
+            "datePublished": "7/15/2024 3:10:40 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "fcinfo_x86.msi",
+            "url": "https://download.microsoft.com/download/0/3/3/0334844e-7c90-405f-ad19-b882eb1269e4/fcinfo_x86.msi",
+            "size": "425472",
+            "version": "Version",
+            "datePublished": "7/15/2024 3:10:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Tool for gathering configuration information on your Fibre Channel SAN based on the SNIA HBAAPI for management of Fibre Channel Host Bus Adapters and discovery of SAN resources.  For more info on HBAAPI, see: http://www.snia.org/tech_activities/hba_api/ <br />\n<br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Version",
+    "detailsSection_file_name": [
+        "fcinfo_amd64.msi",
+        "fcinfo_ia64.msi",
+        "fcinfo_x86.msi"
+    ],
+    "detailsSection_file_size": [
+        "445.5 KB",
+        "525.5 KB",
+        "415.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "1. Microsoft Windows 2000 SP4 or later<br />or Microsoft Windows Server 2003 or later<br />\n2. A Fibre Channel Storport miniport or SCSIport miniport that supports the HBAAPI (from QLogic, Emulex, LSI) <br />\n--->  EMULEX SUPPORTED ADAPTERS (using either EMULEX  Storport Miniport v1.03 (or later) or SCSIport Miniport v5.10a10 (or later): LP8000; LP8000DC; LP850; LP9002L; LP9002DC; LP9402DC; LP952L; LP9802; LP9802DC; LP982; LP10000; LP10000DC; LP1050; LP1050DC; LP10000Ex; LP101; <br />  \n---> LSI Logic Corp supported adapters (using STORPORT miniport driver 1.20.01.09 or above): LSI40919H, LSI40919LH, LSI40919O, LSI40919LO, LSI44929H, LSI44929LH, LSI44929O, LSI44929LO, LSI7102XP-LC, LSI7202XP-LC and LSI7402XP-LC  <br />\n---> QLOGIC SUPPORTED ADAPTERS (Using driver version 8.2.3.x or 9.x.x.x or above):  QLA2300; QLA2340; QLA2342; QLA2344; QLE2360; QLE2362; HP QLA2340; IBM HS20; HP QLA2342; HP QLA2312; Intel SBFCM-2312; QMC2342; \nQUANTA-QLA2312; HP QLA2312; HP QLA2312; HP QLA2312; HP A6826",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Download and run the MSI.  This is a command line tool, follow the instructions in the readme.txt file",
+    "additionalInformationSection": "This version only runs on x86.  Version for IA64 and x64 will be available soon.<br />\n<br />\nCustomers using Storport miniports in their configurations should consider using the latest Storport QFE from Microsoft.  Details at:<br />\nhttp://support.microsoft.com/?kbid=838894 <br />\n<br />\nAlways check with your storage manufacturer or solution provider before updating drivers.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17530",
+    "downloadPreload": true
+}

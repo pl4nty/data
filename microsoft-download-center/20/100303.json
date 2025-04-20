@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2019 Integration Services Feature Pack",
+    "downloadDescription": "These stand-alone packages provide additional value for Microsoft SQL Server 2019 Integration Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcService_x86.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658596dc-f233-4b3c-bd10-7e945f21a1a3/AttunityOracleCdcService_x86.msi",
+            "size": "2371584",
+            "version": "15.0.2000.238",
+            "datePublished": "7/15/2024 4:32:33 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AttunityOracleCdcService_x64.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658596dc-f233-4b3c-bd10-7e945f21a1a3/AttunityOracleCdcService_x64.msi",
+            "size": "2752512",
+            "version": "15.0.2000.238",
+            "datePublished": "7/15/2024 4:32:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner_x86.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658596dc-f233-4b3c-bd10-7e945f21a1a3/AttunityOracleCdcDesigner_x86.msi",
+            "size": "2301952",
+            "version": "15.0.2000.238",
+            "datePublished": "7/15/2024 4:32:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AttunityOracleCdcDesigner_x64.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658596dc-f233-4b3c-bd10-7e945f21a1a3/AttunityOracleCdcDesigner_x64.msi",
+            "size": "2650112",
+            "version": "15.0.2000.238",
+            "datePublished": "7/15/2024 4:32:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI_x86.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658596dc-f233-4b3c-bd10-7e945f21a1a3/SapBI_x86.msi",
+            "size": "2289664",
+            "version": "15.0.2000.238",
+            "datePublished": "7/15/2024 4:32:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SapBI_x64.msi",
+            "url": "https://download.microsoft.com/download/6/5/8/658596dc-f233-4b3c-bd10-7e945f21a1a3/SapBI_x64.msi",
+            "size": "2727936",
+            "version": "15.0.2000.238",
+            "datePublished": "7/15/2024 4:32:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These stand-alone packages provide additional value for Microsoft SQL Server 2019 Integration Services.<br/>\r\nThis Feature Pack includes Attunity Oracle CDC Designer/Service 6.0.0.385.<br/><br/>\r\nPlease reference the Instructions section of this page to learn more about each package.\r\n<br /><br/>\r\nThe following changes and enhancements were made: <br />\r\n    \u2022 Fixed an overflow in the calculation of the SCN value when writing to change tables. The affected fields are __$start_lsn/__$seqval. This could cause issues with the net changes functions. The fix was to adjust the SCN values size to fit within the LSN fields. <br />\r\n    \u2022 Fixed an issue that tables, having indexes with the same name of the table, could lead to detecting wrong object_ids",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.0.2000.238",
+    "detailsSection_file_name": [
+        "AttunityOracleCdcService_x86.msi",
+        "AttunityOracleCdcService_x64.msi",
+        "AttunityOracleCdcDesigner_x86.msi",
+        "AttunityOracleCdcDesigner_x64.msi",
+        "SapBI_x86.msi",
+        "SapBI_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB",
+        "2.6 MB",
+        "2.2 MB",
+        "2.5 MB",
+        "2.2 MB",
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "      <br />\r\n      <b>Note:</b>\r\n      System requirements vary among the install packages.\r\n      <br />\r\n      <b>Note:</b> \r\n      When an MSI package is redistributed it must not be renamed, otherwise you may see failures if updates are installed for that package.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<a name=\"Attunity Designer and Service\"></a>\r\n<br />\r\n<br />\r\n<b>\r\n  Microsoft\u00ae Change Data Capture Designer and Service for Oracle by Attunity for Microsoft\r\n  SQL Server\u00ae\r\n</b>\r\n<ul>\r\n  Microsoft Change Data Capture Designer and Service for Oracle by Attunity allow you to\r\n  continually copy data from Oracle to SQL Server. This can be useful in both migration and data\r\n  warehouse scenarios by allowing you to both; synchronize critical tables throughout the\r\n  migration timeframe by copying changes made to the Oracle tables into the SQL Server tables as\r\n  well as capture changes from your Oracle database and send them to SQL Server databases to\r\n  keep data warehouses in sync.\r\n  <br />\r\n  <ul>\r\n    <b>Filename X86 and X64 Package</b> (AttunityOraleCdcService.msi)<br />\r\n    <b>Filename X86 and X64 Package</b> (AttunityOraleCdcDesigner.msi)<br />\r\n  </ul>\r\n</ul>\r\n<a name=\"SAP BW\"></a>\r\n<br />\r\n<br />\r\n<b>Microsoft\u00ae Connector for SAP BW for Microsoft SQL Server\u00ae</b>\r\n<ul>\r\n  The Microsoft Connector for SAP BW is a set of managed components for transferring data to or\r\n  from an SAP NetWeaver BW version 7.0 system. The component is designed to be used with SQL\r\n  Server Integration Services. To install the component, run the platform-specific installer for\r\n  x86 or x64 respectively. For more information see the Readme and the installation topic in the\r\n  Help file.\r\n  <br />\r\n  <ul>\r\n    <b>Filename: X86 and x64 Package</b> (SAPBI.msi)<br />\r\n    <br />\r\n  </ul>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100303",
+    "downloadPreload": true
+}

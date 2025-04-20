@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Rocky Lhotka on CSLA.NET 3.5",
+    "downloadDescription": "Rocky is back on .NET Rocks! to talk about the latest iteration of his CSLA.NET Application Framework, as well as to talk about some .NET technologies that are no longer as necessary as they once were.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080403RLhotka.zip",
+            "url": "https://download.microsoft.com/download/6/1/c/61c1881c-4313-4413-b5e1-04d85d75a23c/20080403RLhotka.zip",
+            "size": "42457950",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:07:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Rockford Lhotka is the author of numerous books, including the Expert Visual Basic .NET & C# Business Objects books. He is a Microsoft Software Legend, Regional Director, MVP and INETA speaker. Rockford speaks at many conferences and user groups around the world and is a columnist for MSDN Online. Rockford is the Principal Technology Evangelist for Magenic Technologies, one of the nation's premiere Microsoft Gold Certified Partners dedicated to solving today's most challenging business problems using 100% Microsoft tools and technology.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080403RLhotka.zip"
+    ],
+    "detailsSection_file_size": [
+        "40.5 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5466",
+    "downloadPreload": true
+}

@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2010 Group Chat Admin Tool Hotfix KB 2884631",
+    "downloadDescription": "This download includes all available updates for Lync 2010 Group Chat Admin Tool.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MgcAdmin.msp",
+            "url": "https://download.microsoft.com/download/e/6/e/e6e8b236-57eb-47a1-be92-e7d8b2592797/MgcAdmin.msp",
+            "size": "7491584",
+            "version": "7577.4409",
+            "datePublished": "7/15/2024 4:28:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This hotfix download for Microsoft Lync 2010 Group Chat Admin Tool is described in the Knowledge Base article <A HREF=\"http://support.microsoft.com/kb/2884631\">2884631</A>. \n<br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2884631",
+        "name": "KB2884631"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7577.4409",
+    "detailsSection_file_name": [
+        "MgcAdmin.msp"
+    ],
+    "detailsSection_file_size": [
+        "7.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office program:</b></li><br />\n<ul><li>Microsoft Lync 2010 Group Chat Admin Tool</li></ul>\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3",
+        "Windows Vista Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows 7"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button and saving the file to your hard disk. </li>\n<li>Refer to Knowledge Base article <A HREF=\"http://support.microsoft.com/?kbid=2859585\">2859585</A> for installation details.</li>\n</ol>\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22675",
+    "downloadPreload": true
+}

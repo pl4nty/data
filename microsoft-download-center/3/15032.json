@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Operations guide for servers and server farms for Microsoft SharePoint Server 2010 ",
+    "downloadDescription": "Operate and maintain servers, server farms, sites, and solutions in Microsoft SharePoint Server 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SharePtServOperations.xps",
+            "url": "https://download.microsoft.com/download/7/b/9/7b9e2adc-0eeb-4c6e-b19b-cc2c410d6ff8/SharePtServOperations.xps",
+            "size": "5133085",
+            "version": "2",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SharePtServOperations.pdf",
+            "url": "https://download.microsoft.com/download/7/b/9/7b9e2adc-0eeb-4c6e-b19b-cc2c410d6ff8/SharePtServOperations.pdf",
+            "size": "3729356",
+            "version": "2",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SharePtServOperations.doc",
+            "url": "https://download.microsoft.com/download/7/b/9/7b9e2adc-0eeb-4c6e-b19b-cc2c410d6ff8/SharePtServOperations.doc",
+            "size": "3685376",
+            "version": "2",
+            "datePublished": "7/15/2024 3:11:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes how to operate and maintain servers and server farms in a Microsoft SharePoint Server 2010 environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "SharePtServOperations.xps",
+        "SharePtServOperations.pdf",
+        "SharePtServOperations.doc"
+    ],
+    "detailsSection_file_size": [
+        "4.9 MB",
+        "3.6 MB",
+        "3.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Word 2007 or Microsoft Word 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "15032",
+    "downloadPreload": true
+}

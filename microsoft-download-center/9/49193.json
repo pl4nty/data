@@ -1,0 +1,54 @@
+{
+    "error": "",
+    "downloadTitle": "Deploying Microsoft Dynamics CRM in Microsoft Azure Virtual Machines",
+    "downloadDescription": "This white paper is for architects and system administrators who plan to take advantage of Azure Virtual Machines to deploy Microsoft Dynamics CRM.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DeployDynamicsCRMinAzureVirtual_Machines.pdf",
+            "url": "https://download.microsoft.com/download/e/4/a/e4a0ae9c-d9fa-43d1-99bc-637ce5047794/DeployDynamicsCRMinAzureVirtual_Machines.pdf",
+            "size": "799041",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:04:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Running Dynamics CRM in Azure Virtual Machines gives organizations greater access and control to CRM adminstrators, and allows offloading of the machine infrastructure that on-premises customers would otherwise have to invest in. This white paper describes architectures and guidelines for various deployment sizes of Microsoft Dynamics CRM in Azure Virtual Machines.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DeployDynamicsCRMinAzureVirtual_Machines.pdf"
+    ],
+    "detailsSection_file_size": [
+        "780.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe PDF reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Click the Download link to download this document. ",
+    "relatedResourcesSection": [
+        {
+            "title": "deploy Microsoft Dynamics CRM on Azure FAQ",
+            "url": "https://technet.microsoft.com/en-us/library/mt412323.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49193",
+    "downloadPreload": true
+}

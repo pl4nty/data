@@ -1,0 +1,168 @@
+{
+    "error": "",
+    "downloadTitle": "Readme Files for SQL Server 2005 SP1 and SQL Server 2005 SP1 Express Editions and Tools",
+    "downloadDescription": "Before you install SQL Server 2005 Service Pack 1 (SP1) or SQL Server 2005 SP1 Express editions and tools, review the readme for information about installing SP1 and to learn about common issues that can impact your installation experience or use of the product.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RequirementsSQLEXP2005.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/RequirementsSQLEXP2005.htm",
+            "size": "19996",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RequirementsSQLEXP2005Toolkit.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/RequirementsSQLEXP2005Toolkit.htm",
+            "size": "16724",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReadmeSQLEXP2005Toolkit.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQLEXP2005Toolkit.htm",
+            "size": "27102",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "RequirementsSQLEXP2005Advanced.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/RequirementsSQLEXP2005Advanced.htm",
+            "size": "20156",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReadmeSSMSE2005.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSSMSE2005.htm",
+            "size": "36208",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReadmeSQLEXP2005.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQLEXP2005.htm",
+            "size": "80849",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ReadmeSQLEXP2005Advanced.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQLEXP2005Advanced.htm",
+            "size": "67648",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ReadmeSQL2005SP1.htm",
+            "url": "https://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQL2005SP1.htm",
+            "size": "93374",
+            "version": "9.00.2047",
+            "datePublished": "7/15/2024 3:09:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "SQL Server 2005 SP1 will upgrade all editions of SQL Server 2005 to SP1 except Express Edition. You must use Microsoft SQL Server 2005 Express Edition (SQL Server Express) Service Pack 1 (SP1) to upgrade instances of SQL Server Express to SP1. SP1 also introduces additional Express editions and tools, each with its own readme and installation requirements file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.00.2047",
+    "detailsSection_file_name": [
+        "RequirementsSQLEXP2005.htm",
+        "RequirementsSQLEXP2005Toolkit.htm",
+        "ReadmeSQLEXP2005Toolkit.htm",
+        "RequirementsSQLEXP2005Advanced.htm",
+        "ReadmeSSMSE2005.htm",
+        "ReadmeSQLEXP2005.htm",
+        "ReadmeSQLEXP2005Advanced.htm",
+        "ReadmeSQL2005SP1.htm"
+    ],
+    "detailsSection_file_size": [
+        "19.5 KB",
+        "16.3 KB",
+        "26.5 KB",
+        "19.7 KB",
+        "35.4 KB",
+        "79.0 KB",
+        "66.1 KB",
+        "91.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>A Web browser to read the readme HTML files.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003 Service Pack 1",
+        "Windows Small Business Server 2003 ",
+        "Windows XP Service Pack 2"
+    ],
+    "installInstructionSection": "Open the appropriate file by clicking one of the links below. The following readme files are available for the SP1 product downloads:\n<ul>\n<br/>\n  <b><a href=\"http://go.microsoft.com/fwlink/?LinkId=57414\">SQL Server 2005 Service Pack 1 (SP1)</a></b><br/>\nUpgrades all editions of SQL Server 2005 to SP1, except Express Edition.<br/><br/>\n    <ul>\n      <b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQL2005SP1.htm\">ReadmeSQL2005SP1.htm</a></b>\n  </ul>\n<br/><br/>\n<b><a href=\"http://go.microsoft.com/fwlink/?LinkId=58557\">SQL Server 2005 Express Edition SP1</a></b><br/>\nUpgrades SQL Server Express to SP1.<br/><br/>\n    <ul>\n      <b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQLEXP2005.htm\">ReadmeSQLEXP2005.htm</a></b><br/>\n<b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/RequirementsSQLEXP2005.htm\">RequirementsSQLEXP2005.htm</a></b>\n  </ul>\n<br/><br/><b><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=4C6BA9FD-319A-4887-BC75-3B02B5E48A40&displaylang=en\">SQL Server Express with Advanced Services SP1</a></b><br/>\nNew, free version of SQL Server Express SP1 that includes additional features for reporting and advanced text based searches.<br/><br/>\n    <ul>\n      <b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQLEXP2005Advanced.htm\">ReadmeSQLEXP2005Advanced.htm</a></b><br/>\n<b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/RequirementsSQLEXP2005Advanced.htm\">RequirementsSQLEXP2005Advanced.htm</a></b>\n  </ul>\n<br/><br/><b><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=3C856B93-369F-4C6F-9357-C35384179543\">SQL Server Express Toolkit</a></b><br/>\nProvides tools and resources to manage SQL Server Express and SQL Server Express Edition with Advanced Services.<br/><br/>\n    <ul>\n      <b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSQLEXP2005Toolkit.htm\">ReadmeSQLEXP2005Toolkit.htm</a></b><br/>\n<b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/RequirementsSQLEXP2005Toolkit.htm\">RequirementsSQLEXP2005Toolkit.htm</a></b>\n  </ul>\n<br/><br/><b><a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=C243A5AE-4BD1-4E3D-94B8-5A0F62BF7796&displaylang=en\">SQL Server Management Studio Express</a></b><br/>\nProvides a graphical management tool for managing SQL Server 2005 Express Edition and SQL Server 2005 Express Edition with Advanced Services instances.<br/><br/>\n    <ul>\n      <b><a href=\"http://download.microsoft.com/download/b/d/1/bd1e0745-0e65-43a5-ac6a-f6173f58d80e/ReadmeSSMSE2005.htm\">ReadmeSSMSE2005.htm</a></b>\n  </ul>\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "481",
+    "downloadPreload": true
+}

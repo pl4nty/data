@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Azure SQL MI Link Automation",
+    "downloadDescription": "Tool that allows automated creation of SQL MI Link",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MiLinkAutomation_v1.zip",
+            "url": "https://download.microsoft.com/download/5/b/8/5b8e7bd8-ca6c-4a05-ad97-6c7672f79dc6/MiLinkAutomation_v1.zip",
+            "size": "395424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:33:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This toolkit is intended for customers who are either planning to migrate their on-premises SQL Server databases to Azure SQL Managed Instance or create a disaster recovery or read only replica using Managed Instance Link (MI Link). This document will help you understand the steps involved in preparing the environment and creating a MI Link which allows near real-time data replication between SQL Server and Azure SQL Managed Instance using distributed availability groups, part of the well-known and proven Always On Availability Group (AOAG) technology stack.\r\nThe scripts used in this solution have been jointly created by the Azure SQL CSE team together with the Azure SQL Managed Instance team.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MiLinkAutomation_v1.zip"
+    ],
+    "detailsSection_file_size": [
+        "386.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The file is a zipped folder that contains Azure SQL MI Link Automation Toolkit and associated documentation.\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li> \r\n\r\n<li>Do the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104921",
+    "downloadPreload": true
+}

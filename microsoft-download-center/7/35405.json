@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Server 2013 Documentation Help File",
+    "downloadDescription": "This download contains a compiled help file (.chm) of all the available Lync Server 2013 IT professional documentation in the Technical Library.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncServer2013_ITPro.EXE",
+            "url": "https://download.microsoft.com/download/f/5/9/f59aecfe-007b-4b16-a2e2-47ad2252ec54/LyncServer2013_ITPro.EXE",
+            "size": "26668032",
+            "version": "August2015",
+            "datePublished": "7/15/2024 3:16:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains a compiled help file (.chm) of all the available Lync Server 2013 IT professional documentation in the Technical Library. For the most up-to-date documentation, go to the <a href=\"http://go.microsoft.com/fwlink/?LinkID=254806\">Lync Server 2013 Technical Library</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "August2015",
+    "detailsSection_file_name": [
+        "LyncServer2013_ITPro.EXE"
+    ],
+    "detailsSection_file_size": [
+        "25.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI> The Help file can be viewed on Windows 2000 or later operating systems.</LI> \r\n</UL>\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "nextHop blog",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=203149"
+        },
+        {
+            "title": "lync Server 2013 Technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=254806"
+        },
+        {
+            "title": "lync Server TechCenter home page",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=270854"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35405",
+    "downloadPreload": true
+}

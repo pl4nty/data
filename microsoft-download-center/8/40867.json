@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Service Provider Foundation (SPF) ",
+    "downloadDescription": "This management pack helps administrators helps manage SPF installation instances by monitoring the health of the SPF servers.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Service Provider Foundation Management Pack.msi",
+            "url": "https://download.microsoft.com/download/5/7/1/5712ce43-4542-45a0-be90-69eb5704ccc1/Service Provider Foundation Management Pack.msi",
+            "size": "688128",
+            "version": "7.2.48.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_SPF.docx",
+            "url": "https://download.microsoft.com/download/5/7/1/5712ce43-4542-45a0-be90-69eb5704ccc1/OpsMgr_MP_SPF.docx",
+            "size": "56560",
+            "version": "7.2.48.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This management pack elps administrators helps manage SPF installation instances by monitoring the health of the SPF servers.\r\n<br/>\r\n<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n<li>10/25/2013 - version 7.2.48.0</li>\r\n<ul/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.48.0",
+    "detailsSection_file_name": [
+        "Service Provider Foundation Management Pack.msi",
+        "OpsMgr_MP_SPF.docx"
+    ],
+    "detailsSection_file_size": [
+        "672.0 KB",
+        "55.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software: </b> </li>\r\n</ul>\r\n<li>This management pack is supported to run in System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2</li>\r\n<ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Please refer to MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40867",
+    "downloadPreload": true
+}

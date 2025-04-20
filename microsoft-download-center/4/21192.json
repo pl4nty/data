@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Designing .Net Class Libraries - Rich Type System",
+    "downloadDescription": "Rich Type System  by Brad Abrams",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Rich_Type_300k.exe",
+            "url": "https://download.microsoft.com/download/7/9/2/7920c0ad-24f4-41dc-8cd2-b7f72cd50cf6/Rich_Type_300k.exe",
+            "size": "266411520",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:49 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Rich_Type_100k.exe",
+            "url": "https://download.microsoft.com/download/7/9/2/7920c0ad-24f4-41dc-8cd2-b7f72cd50cf6/Rich_Type_100k.exe",
+            "size": "116556288",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:16:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn what rich constructs from the CLR's type system are available and appropriate for developing APIs. Also, learn when to use reference over value types, delegates, exceptions, attributes, and many other important features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Rich_Type_300k.exe",
+        "Rich_Type_100k.exe"
+    ],
+    "detailsSection_file_size": [
+        "254.1 MB",
+        "111.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 55 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click and save locally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21192",
+    "downloadPreload": true
+}

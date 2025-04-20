@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Planning a Lync Server 2013 Deployment on Virtual Servers ",
+    "downloadDescription": "This paper provides guidance for deploying Lync Server 2013 on virtual servers. It includes recommendations for the configuration of host servers and guest servers, key health indicators to watch during testing and deployment, and observations from Microsoft performance testing of Lync Server 2013 in a virtual environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync Server 2013 Virtualization White Paper.docx",
+            "url": "https://download.microsoft.com/download/6/9/8/6982723e-6a8e-4049-afbc-4ecaca30f9b2/Lync Server 2013 Virtualization White Paper.docx",
+            "size": "992039",
+            "version": "Feb2014",
+            "datePublished": "7/15/2024 3:53:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As a real-time application, Lync Server 2013 requires careful planning when deployed on virtual environments. Performance issues caused by shared resource constraints are hardly noticeable in many applications, but in Lync Server they can cause audio and video issues that make for poor user experience.\r\n<br/><br/>\r\nThis paper provides many configuration recommendations for running Lync Server 2013 in a virtual environment, both for the host servers and the guest servers. It details the 10 most important Key Health Indicators (KHIs) that you should watch both when performing a capacity test prior to deploying, and during deployment. It also explains observations and results from the capacity testing Microsoft performed in a virtualized test environment.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Feb2014",
+    "detailsSection_file_name": [
+        "Lync Server 2013 Virtualization White Paper.docx"
+    ],
+    "detailsSection_file_size": [
+        "968.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server 2013 Documentation",
+            "url": "http://technet.microsoft.com/en-us/library/gg398616.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41936",
+    "downloadPreload": true
+}

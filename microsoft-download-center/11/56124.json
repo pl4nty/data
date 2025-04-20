@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Azure and AWS Cloud Service Map",
+    "downloadDescription": "This document defines how common cloud services are made available via Azure and Amazon Web Services (AWS). ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MS_Azure_AWS_Comparison_eBook_v4.pdf",
+            "url": "https://download.microsoft.com/download/a/8/6/a8660ece-e6c3-4ccd-bd5e-cf149a933a9e/MS_Azure_AWS_Comparison_eBook_v4.pdf",
+            "size": "655662",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:56:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "This document defines how common cloud services are made available via Azure and Amazon Web Services (AWS). We hope that this guide helps developers understand the services that Azure offers, whether they are new to the cloud or just new to Azure. We\u2019ve structured the guide using a table that explains each cloud service capability sorted by service popularity, and maps the capability to the service offering name for both Azure and AWS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MS_Azure_AWS_Comparison_eBook_v4.pdf"
+    ],
+    "detailsSection_file_size": [
+        "640.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows or Mac and an internet browser",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Macintosh",
+        "Ubuntu",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Open the document with any browser that supports PDF files or a PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56124",
+    "downloadPreload": true
+}

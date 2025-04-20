@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Design Sample: Corporate Portal with Host-named Sites for SharePoint Server 2013",
+    "downloadDescription": "This design sample illustrates the use of host-named site collections with all sites deployed in a single web application on the farm. This method is highly scalable and is flexible in managing URLs. ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sps-2013-design-sample-corporate-portal-host-named-sites.pdf",
+            "url": "https://download.microsoft.com/download/5/e/1/5e12e89c-0036-40bd-942a-2e7affa2ade6/sps-2013-design-sample-corporate-portal-host-named-sites.pdf",
+            "size": "458664",
+            "version": "3",
+            "datePublished": "7/15/2024 3:28:48 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sps-2013-design-sample-corporate-portal-host-named-sites.vsd",
+            "url": "https://download.microsoft.com/download/5/e/1/5e12e89c-0036-40bd-942a-2e7affa2ade6/sps-2013-design-sample-corporate-portal-host-named-sites.vsd",
+            "size": "1924096",
+            "version": "3",
+            "datePublished": "7/15/2024 3:28:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "Host-named site collections in SharePoint 2013 provide URL management and scalability of sites within a single web application. This Corporate Portal design sample shows an implementation that is based on the use of the traditional host-named site collections. The sample utilizes claims-based authentication with a single zone. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3",
+    "detailsSection_file_name": [
+        "sps-2013-design-sample-corporate-portal-host-named-sites.pdf",
+        "sps-2013-design-sample-corporate-portal-host-named-sites.vsd"
+    ],
+    "detailsSection_file_size": [
+        "447.9 KB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30362",
+    "downloadPreload": true
+}

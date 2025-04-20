@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server Technical Preview and Hyper-V Server Technical Preview Expiration Extension",
+    "downloadDescription": "This download will allow you to continue using the Windows Server Technical Preview and Hyper-V Server Technical Preview from October 2014 without interruption until the next preview is available in May 2015. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows6.4-KB3056022-x64.cab",
+            "url": "https://download.microsoft.com/download/4/7/6/476af9aa-d8fd-4571-ae69-7a70a08eb6a0/Windows6.4-KB3056022-x64.cab",
+            "size": "3858749",
+            "version": "2009254",
+            "datePublished": "7/15/2024 3:46:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows6.4-KB3056022-x64.msu",
+            "url": "https://download.microsoft.com/download/4/7/6/476af9aa-d8fd-4571-ae69-7a70a08eb6a0/Windows6.4-KB3056022-x64.msu",
+            "size": "4030823",
+            "version": "2009254",
+            "datePublished": "7/15/2024 3:46:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download will allow you to continue using the Windows Server Technical Preview and Hyper-V Server Technical Preview from October 2014 without interruption until the next preview is available in May 2015. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009254",
+    "detailsSection_file_name": [
+        "Windows6.4-KB3056022-x64.cab",
+        "Windows6.4-KB3056022-x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "3.7 MB",
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Windows Server Technical Preview</li>\r\n<li>Hyper-V Server Technical Preview</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server Tech Preview "
+    ],
+    "installInstructionSection": "To install to continue using Windows Server Technical Preview and Hyper-V Server Technical Preview:\r\n<br/>\r\n<ol>\r\n<li>You can either run the installer from the Download Center website, or save the download package to a local computer or share. If you save the download package to a local computer or share, double-click the installer program, Windows6.4-KB3056022-x64.msu.</li>\r\n<li>When you are prompted by the Windows Update Standalone Installer dialog box to install the update, click Yes.</li>\r\n<li> Read and accept the license terms. Click I accept. Installation requires a few minutes to finish.</li>\r\n<li>Reboot after installing. System may require up to 5 minutes to respond. </li>\r\n</ol>\r\n<br/>\r\nImportant Notes: If you installed  Hyper-V server or Server Core (from the Windows Server Technical Preview ISO), you cannot use the .msu package to patch it. You will need to use DISM. <br/>\r\nExample:<br/>\r\ndism /online /add-package /packagepath:Windows6.4-KB3056022-x64.cab<br/>\r\n<br/>\r\nIf after installing the package you still see the expiration notification and the evaluation end date is not set to 10/1/2015, run slmgr /ato command <br/>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "eval Center Windows Server Techincal Preview",
+            "url": "http://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-technical-preview"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "46447",
+    "downloadPreload": true
+}

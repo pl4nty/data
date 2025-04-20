@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "LLDP enablement software for Mac Operating Systems used by Microsoft Teams",
+    "downloadDescription": "Third party LLDP software interface for the Mac Operating System which can be used by Microsoft Teams clients for LLDP based emergency location discovery.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "lldpd_user_auto_add_to_usergroup_sample_script.zip",
+            "url": "https://download.microsoft.com/download/9/e/e/9eeff9aa-6185-48b8-a3f4-60af843b9927/lldpd_user_auto_add_to_usergroup_sample_script.zip",
+            "size": "3494",
+            "version": "1.0.17",
+            "datePublished": "9/11/2024 6:06:44 PM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "lldpd_installer-1.0.17-intel.pkg",
+            "url": "https://download.microsoft.com/download/9/e/e/9eeff9aa-6185-48b8-a3f4-60af843b9927/lldpd_installer-1.0.17-intel.pkg",
+            "size": "207062",
+            "version": "1.0.17",
+            "datePublished": "9/11/2024 6:06:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "lldpd_installer-1.0.17-arm.pkg",
+            "url": "https://download.microsoft.com/download/9/e/e/9eeff9aa-6185-48b8-a3f4-60af843b9927/lldpd_installer-1.0.17-arm.pkg",
+            "size": "197657",
+            "version": "1.0.17",
+            "datePublished": "9/11/2024 6:06:44 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "lldpd_installer1.0.13.pkg",
+            "url": "https://download.microsoft.com/download/9/e/e/9eeff9aa-6185-48b8-a3f4-60af843b9927/lldpd_installer1.0.13.pkg",
+            "size": "199963",
+            "version": "1.0.17",
+            "datePublished": "9/11/2024 6:06:44 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "An installer package for a third party LLDP software package which can be installed on Mac Operating Systems and utilized by Microsoft Teams clients for LLDP emergency location discovery.  Installing this software package on Mac Operating Systems where Teams is running will make the connected Ethernet switch/port LLDP information available for consumption by the Teams client which can then be used to dynamically obtain an emergency location for the Ethernet switch/port if configured by the tenant administrator.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.17",
+    "detailsSection_file_name": [
+        "lldpd_user_auto_add_to_usergroup_sample_script.zip",
+        "lldpd_installer-1.0.17-intel.pkg",
+        "lldpd_installer-1.0.17-arm.pkg",
+        "lldpd_installer1.0.13.pkg"
+    ],
+    "detailsSection_file_size": [
+        "3.4 KB",
+        "202.2 KB",
+        "193.0 KB",
+        "195.3 KB"
+    ],
+    "detailsSection_file_date": "9/11/2024",
+    "systemRequirementsSection": "Mac Operating System",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "To install this download\r\n<br/>\r\n<br/>\r\n1. Download the file by clicking the Download button and saving the file to your hard disk.\r\n<br/><br/>\r\n2. Browse to the location you downloaded the file and run the lldpd_installer.pkg.<br/><br/>\r\n3. Follow the wizard to finish installation.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103383",
+    "downloadPreload": true
+}

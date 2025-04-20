@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for Microsoft Azure Stack Hub",
+    "downloadDescription": "The Management Pack for Microsoft Azure Stack Hub enables you to monitor the availability of the Azure Stack Hub nfrastructure.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "1.0.9.0 Microsoft System Center Management Pack for Microsoft Azure Stack Hub.msi",
+            "url": "https://download.microsoft.com/download/2/a/3/2a318298-df77-4d09-a34e-0b071bf094b0/1.0.9.0 Microsoft System Center Management Pack for Microsoft Azure Stack Hub.msi",
+            "size": "3076096",
+            "version": "1.0.10.0",
+            "datePublished": "7/15/2024 5:05:47 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "1.0.9.0 Azure Stack Hub Management Pack Guide.docx",
+            "url": "https://download.microsoft.com/download/2/a/3/2a318298-df77-4d09-a34e-0b071bf094b0/1.0.9.0 Azure Stack Hub Management Pack Guide.docx",
+            "size": "5288562",
+            "version": "1.0.10.0",
+            "datePublished": "7/15/2024 5:05:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The System Center Management Pack for Microsoft Azure Stack enables you to monitor the availability of the Azure Stack Infrastructure. The management pack runs on a specified resource pool and then uses various Azure Stack APIs to remotely discover and collect instrumentation information, such as a Deployments, Regions and other resources. The Management Pack for Microsoft Azure Stack provides no functionality on import. For each Microsoft Azure Stack deplpoyment you want to manage, you must configure discovery and monitoring by first using the Add Deployment wizard in the administration section of the OM Console.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.10.0",
+    "detailsSection_file_name": [
+        "1.0.9.0 Microsoft System Center Management Pack for Microsoft Azure Stack Hub.msi",
+        "1.0.9.0 Azure Stack Hub Management Pack Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB",
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Azure Stack Hub running 2108 or higher\r\nYou must have an Operations Manager 2012 R2 or later environment, this Management Pack will not import on earlier versions.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "See the Management Pack Guide for detailed instructions on working with this management pack",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55184",
+    "downloadPreload": true
+}

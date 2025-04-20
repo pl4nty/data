@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Designing .Net Class Libraries - Understanding Interoperability",
+    "downloadDescription": "Understanding Interoperability By: Sonja Keserovic",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Interop_100k.exe",
+            "url": "https://download.microsoft.com/download/6/e/9/6e998e20-3a1e-4da7-93e1-0495f399bfb7/Interop_100k.exe",
+            "size": "97177600",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Interop_300k.exe",
+            "url": "https://download.microsoft.com/download/6/e/9/6e998e20-3a1e-4da7-93e1-0495f399bfb7/Interop_300k.exe",
+            "size": "213407232",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:31:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how to interoperate between managed and unmanaged (native) code, including COM interop. Learn how to consume native code from managed libraries, and how to expose managed libraries to native code.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Interop_100k.exe",
+        "Interop_300k.exe"
+    ],
+    "detailsSection_file_size": [
+        "92.7 MB",
+        "203.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 55 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click and save locally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "32985",
+    "downloadPreload": true
+}

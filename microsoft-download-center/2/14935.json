@@ -1,0 +1,185 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft .NET Framework 2.0 Registration Correction Tool on Windows XP, Windows Server 2003, and Windows 2000",
+    "downloadDescription": "On a computer that has Microsoft .NET Framework 2.0 installed, you may receive a an error while installing Microsoft .NET Framework 2.0 Service Pack 1 and the installation may fail.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "clwireg-x86.exe",
+            "url": "https://download.microsoft.com/download/7/2/0/72076b68-c9db-418d-ba8f-39f00d18f5ee/clwireg-x86.exe",
+            "size": "108656",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "clwireg-x64.exe",
+            "url": "https://download.microsoft.com/download/7/2/0/72076b68-c9db-418d-ba8f-39f00d18f5ee/clwireg-x64.exe",
+            "size": "122992",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "clwireg-ia64.exe",
+            "url": "https://download.microsoft.com/download/7/2/0/72076b68-c9db-418d-ba8f-39f00d18f5ee/clwireg-ia64.exe",
+            "size": "279152",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "On a computer that has Microsoft .NET Framework 2.0 installed, you may receive a an error while installing Microsoft .NET Framework 2.0 Service Pack 1 and the installation may fail.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB951950",
+        "name": "KB951950"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "clwireg-x86.exe",
+        "clwireg-x64.exe",
+        "clwireg-ia64.exe"
+    ],
+    "detailsSection_file_size": [
+        "106.1 KB",
+        "120.1 KB",
+        "272.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Professional Edition ",
+        "Windows 2000 Server",
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter Edition for 64-Bit Itanium-Based Systems",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise Edition for Itanium-based Systems",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows XP Home Edition ",
+        "Windows XP Media Center Edition",
+        "Windows XP Professional Edition ",
+        "Windows XP Professional x64 Edition ",
+        "Windows XP Tablet PC Edition "
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Run</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 951950",
+            "url": "http://support.microsoft.com/?id=951950"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14935",
+    "downloadPreload": true
+}

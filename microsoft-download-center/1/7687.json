@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 Business Intelligence platform",
+    "downloadDescription": "SQL Server 2008 Business Intelligence platform",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "T1 - S3 - SQL Server 2008 Business Intelligence Platform.pdf",
+            "url": "https://download.microsoft.com/download/5/b/2/5b2f63b9-a31f-4945-b64a-51866df1e515/T1 - S3 - SQL Server 2008 Business Intelligence Platform.pdf",
+            "size": "4104237",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "T1 - S3 - SQL Server 2008 Business Intelligence Platform.xps",
+            "url": "https://download.microsoft.com/download/5/b/2/5b2f63b9-a31f-4945-b64a-51866df1e515/T1 - S3 - SQL Server 2008 Business Intelligence Platform.xps",
+            "size": "8443443",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn how the new enhancements in SQL server 2008 provide a comprehensive and scalable Business Intelligence platform that enables you to integrate and manage your growing data volumes, comprehensive analysis and enterprise reporting, and deliver insights through Microsoft Office System. This session provides an overview of the new data warehousing, reporting, analysis and integration features in SQL Server 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "T1 - S3 - SQL Server 2008 Business Intelligence Platform.pdf",
+        "T1 - S3 - SQL Server 2008 Business Intelligence Platform.xps"
+    ],
+    "detailsSection_file_size": [
+        "3.9 MB",
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Adobe Acrobat Reader to view the PDF file or Internet Explorer 7.0 to view XPS file",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download the PDF document to your computer and open it in Adobe Acrobat Reader to view, or download the XPS document to view it in Internet Explorer 7.0",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7687",
+    "downloadPreload": true
+}

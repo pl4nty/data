@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Configuring Kerberos Authentication for Microsoft SharePoint 2010 Products ",
+    "downloadDescription": "Describes concepts of identity in SharePoint 2010 Products, Kerberos authentication, and how to use it in various scenarios",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SP2010 Kerberos Guide.docx",
+            "url": "https://download.microsoft.com/download/b/b/f/bbf0c6f3-6e36-4979-8c43-de165ad7ae34/SP2010 Kerberos Guide.docx",
+            "size": "7594191",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:26:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This document provides you with information that helps you understand the concepts of identity in SharePoint 2010 products, how Kerberos authentication plays a critical role in authentication and delegation scenarios, and the situations where Kerberos authentication should be leveraged or may be required in solution designs.  \r\nThe document also shows you how to configure Kerberos authentication end-to-end within your environment, including scenarios which use various service applications in SharePoint Server. Additional tools and resources are described to help you test and validate Kerberos configuration. The \"Step-by-Step Configuration\" sections of this document cover several SharePoint Server 2010 scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "SP2010 Kerberos Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "7.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To download and read this paper, you must have Microsoft Office Word 2007. You can also use Office Word 2003 or Word XP and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=78517\">Microsoft Office Compatibility Pack</a>. ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click <b>Download</b>, and then save the file to your computer. Open the file in Word to read and print it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "23176",
+    "downloadPreload": true
+}

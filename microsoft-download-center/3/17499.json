@@ -1,0 +1,86 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics GP 2010 Tools Documentation: Continuum Application Programmer\u2019s Interface (API)",
+    "downloadDescription": "This documentation describes how to use Continuum API, which is the Component Object Model (COM) API that is available for Microsoft Dynamics GP.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SanScriptSupplement.pdf",
+            "url": "https://download.microsoft.com/download/8/f/8/8f8f1729-a699-4581-8c02-9b5ab6ddc42e/SanScriptSupplement.pdf",
+            "size": "1305037",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContinuumAPIGuide.xps",
+            "url": "https://download.microsoft.com/download/8/f/8/8f8f1729-a699-4581-8c02-9b5ab6ddc42e/ContinuumAPIGuide.xps",
+            "size": "1050917",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SanScriptSupplement.xps",
+            "url": "https://download.microsoft.com/download/8/f/8/8f8f1729-a699-4581-8c02-9b5ab6ddc42e/SanScriptSupplement.xps",
+            "size": "744838",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ContinuumAPIGuide.pdf",
+            "url": "https://download.microsoft.com/download/8/f/8/8f8f1729-a699-4581-8c02-9b5ab6ddc42e/ContinuumAPIGuide.pdf",
+            "size": "1216604",
+            "version": "2010",
+            "datePublished": "7/15/2024 3:15:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use this page to download the following documentation components: <br />\n<UL><LI><b>Continuum API Guide</b> (ContinuumAPIGuide.pdf or ContinuumAPIGuide.xps): Explains how to set up Continuum projects and develop integrations, and includes examples and an object library.</LI>\n<LI><b>sanScript Supplement</b> (SanScriptSupplement.pdf or SanScriptSupplement.xps): Includes information about scripting and integrations, and includes reference information about functions, statements, data types, and messages.</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010",
+    "detailsSection_file_name": [
+        "SanScriptSupplement.pdf",
+        "ContinuumAPIGuide.xps",
+        "SanScriptSupplement.xps",
+        "ContinuumAPIGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.2 MB",
+        "1.0 MB",
+        "727.4 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manuals in PDF file or XPS file format.</LI>\n<LI>Save the files to your computer. </LI>\n<LI>Repeat these steps on each computer where you want to install the manuals, or save the files to a shared folder where other others can access them.</LI></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics GP Developer Center on MSDN",
+            "url": "http://msdn.microsoft.com/en-us/dynamics/gp/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17499",
+    "downloadPreload": true
+}

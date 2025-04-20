@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Script 5.7 for Windows 2000",
+    "downloadDescription": "This download installs Microsoft\u00ae Windows\u00ae Script containing Visual Basic\u00ae Script Edition (VBScript.) Version 5.7, JScript\u00ae Version 5.7, Windows Script Components, Windows Script Host 5.7, and Windows Script Runtime Version 5.7.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "scripten.exe",
+            "url": "https://download.microsoft.com/download/f/f/e/ffea3abf-b55f-4924-b5a5-bde0805ad67c/scripten.exe",
+            "size": "1082224",
+            "version": "5.7.0.16535",
+            "datePublished": "7/15/2024 3:10:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download installs Microsoft\u00ae Windows\u00ae Script containing Visual Basic\u00ae Script Edition (VBScript.) Version 5.7, JScript\u00ae Version 5.7, Windows Script Components, Windows Script Host 5.7, and Windows Script Runtime Version 5.7.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.7.0.16535",
+    "detailsSection_file_name": [
+        "scripten.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "additionalInformationSection": "<B>Update August 30, 2007:</B> In some installation scenarios Windows System File Protection will replace the updated Script 5.7 files with previously installed versions. Download and install the updated Windows Script 5.7 package to resolve the issue.",
+    "relatedResourcesSection": [
+        {
+            "title": "sign Up for Microsoft Download Notifications",
+            "url": "http://go.microsoft.com/?linkid=3891139"
+        },
+        {
+            "title": "windows Script 5.7 Release Notes",
+            "url": "http://download.microsoft.com/download/f/f/e/ffea3abf-b55f-4924-b5a5-bde0805ad67c/Windows Script Release Notes.rtf"
+        },
+        {
+            "title": "techNet Script Center",
+            "url": "http://go.microsoft.com/?linkid=3599611"
+        },
+        {
+            "title": "scripting Webcasts",
+            "url": "http://go.microsoft.com/?linkid=1049625"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20240",
+    "downloadPreload": true
+}

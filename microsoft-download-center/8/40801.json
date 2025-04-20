@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for WSUS on Windows Server 2012 R2",
+    "downloadDescription": "This management pack supports monitoring of WSUS on Windows Server 2012 R2",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SC Management Pack for WSUS 2012 R2.msi",
+            "url": "https://download.microsoft.com/download/e/b/7/eb739015-93a6-4dc6-b791-97773214c0e4/SC Management Pack for WSUS 2012 R2.msi",
+            "size": "622592",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_WSUS.doc",
+            "url": "https://download.microsoft.com/download/e/b/7/eb739015-93a6-4dc6-b791-97773214c0e4/OpsMgr_MP_WSUS.doc",
+            "size": "310784",
+            "version": "7.1.10100.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Windows Server Update Services Management Pack collects performance data and generates comprehensive diagnostic reports that give you the information you need to analyze problems and develop corrective actions. \n<br />\n<br />\n<b>Management Pack Release History</b> <br />\n10/18/2013 - Major Release v.7.1.10100.0, adds support for Server 2012 R2 <br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.1.10100.0",
+    "detailsSection_file_name": [
+        "SC Management Pack for WSUS 2012 R2.msi",
+        "OpsMgr_MP_WSUS.doc"
+    ],
+    "detailsSection_file_size": [
+        "608.0 KB",
+        "303.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This management pack is supported to run in System Center 2012 Operations Manager, System Center 2012 Operations Manager SP1 and System Center 2012 Operations Manager R2\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Please review the MP Guide",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40801",
+    "downloadPreload": true
+}

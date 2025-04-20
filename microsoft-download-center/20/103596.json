@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Haptic Pen Validation Tool",
+    "downloadDescription": "This tool is to validate both required and optional haptic pen features.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "HapticPenValidationTool.appx",
+            "url": "https://download.microsoft.com/download/1/0/5/105212ce-7bb1-4076-ab41-2becbac64645/HapticPenValidationTool.appx",
+            "size": "105127",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 5:04:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Haptic Pen Validation Tool is a tool to validate both required (<B>Test Cases 1 and 2</B>) and optional (<B>Test Cases 3 and 4</B>) haptic pen features.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "HapticPenValidationTool.appx"
+    ],
+    "detailsSection_file_size": [
+        "102.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating System: Windows 11\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "<LI><OL> Right-click on \"HapticPenValidationTool.appx\" </OL></LI>\r\n<LI><OL> Select \"Properties\" </OL></LI>\r\n<LI><OL> Select the \"Digital Signatures\" tab </OL></LI>\r\n<LI><OL> Select the signature in the list </OL></LI>\r\n<LI><OL> Press the \"Details\" button </OL></LI>\r\n<LI><OL> Press the \"View Certificate\" button </OL></LI>\r\n<LI><OL> Press the \"Install Certificate...\" button </OL></LI>\r\n<LI><OL> Select \"Local Machine\" and press the \"Next\" button </OL></LI>\r\n<LI><OL> Select \"Place all certificates in the following store\" and press the \"Browse...\" button </OL></LI>\r\n<LI><OL> Select \"Trusted People\" and press the \"OK\" button </OL></LI>\r\n<LI><OL> Press the \"Next\" button </OL></LI>\r\n<LI><OL> Press the \"Finish\" button  </OL></LI>\r\n<LI><OL> Double-click on \"HapticPenValidationTool.appx\" and press the \"Install\" button </OL></LI>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103596",
+    "downloadPreload": true
+}

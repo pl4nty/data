@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Daylight Saving Time",
+    "downloadDescription": "This is the Microsoft Windows Mobile (Desktop Tool) update to address DST related issues in 2007 due to revised Daylight Saving Time laws in many countries.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DST2007FallUpdate.msi",
+            "url": "https://download.microsoft.com/download/8/d/3/8d3231bf-eaa8-4198-a42f-573ed73d03f5/DST2007FallUpdate.msi",
+            "size": "571904",
+            "version": "1",
+            "datePublished": "7/15/2024 3:27:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This release updates time zone registry data for New Zealand and Western Australia in addition to US, Canada, and Mexico DST related issues in 2007. For complete details regarding the updates in this release, please download the DST2007FallUpdate.msi file below.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "DST2007FallUpdate.msi"
+    ],
+    "detailsSection_file_size": [
+        "558.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Mobile 5.0 SW for Pocket PC.<br />\nWindows Mobile 5.0 SW for Smartphone.<br />\nWindows Mobile 6.0 SW for Pocket PC .<br />\nWindows Mobile 6.0 SW for Smartphone .<br />\nActiveSync ver 4.5.<br />\nWindows Mobile Device Center v6. .<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Mobile 5.0",
+        "Windows Mobile 6"
+    ],
+    "installInstructionSection": "1. Click the download above to download the file.<br />\n2. Ensure that the device is connected to the desktop using the latest Activesync (ver 4.5) or Windows Mobile Device Center (v6).<br />\n3. Execute the file on the PC.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22425",
+    "downloadPreload": true
+}

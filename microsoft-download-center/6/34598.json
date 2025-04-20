@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Deployment on Windows Azure Virtual Machines",
+    "downloadDescription": "This paper provides guidance about the benefits of Windows Azure Virtual Machines and explains how to deploy SharePoint Server 2010 on Windows Azure Virtual Machines.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "install-sharepoint-on-windows-azure-virtual-machines.pdf",
+            "url": "https://download.microsoft.com/download/b/5/b/b5b15b0b-d4be-4ab0-9387-fc6a9d5d42e9/install-sharepoint-on-windows-azure-virtual-machines.pdf",
+            "size": "1061079",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:40 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "install-sharepoint-on-windows-azure-virtual-machines.docx",
+            "url": "https://download.microsoft.com/download/b/5/b/b5b15b0b-d4be-4ab0-9387-fc6a9d5d42e9/install-sharepoint-on-windows-azure-virtual-machines.docx",
+            "size": "2524663",
+            "version": "1",
+            "datePublished": "7/15/2024 3:29:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows Azure Virtual Machines mitigate the need for hardware, so organizations can turn attention from handling high upfront cost and complexity to building and managing infrastructure at scale. This means that they can innovate, experiment, and iterate in hours\u2014as opposed to days and weeks with traditional deployments. The paper demonstrates deployments for several scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "install-sharepoint-on-windows-azure-virtual-machines.pdf",
+        "install-sharepoint-on-windows-azure-virtual-machines.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34598",
+    "downloadPreload": true
+}

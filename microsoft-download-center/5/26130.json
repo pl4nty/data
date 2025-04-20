@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Information Dashboard Add-In for Microsoft Lync 2010 Getting Started Guide",
+    "downloadDescription": "This download provides end-user documentation about the Information Dashboard add-in for Microsoft Lync 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "InformationDashboard_GetStarted.docx",
+            "url": "https://download.microsoft.com/download/8/b/c/8bc37106-2260-479a-b766-8fb2e9835faf/InformationDashboard_GetStarted.docx",
+            "size": "377789",
+            "version": "June2011",
+            "datePublished": "7/15/2024 3:26:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download provides end-user documentation about Information Dashboard for Microsoft Lync 2010. Information Dashboard is a Lync 2010 add-in that helps you start a conversation with a remote contact by providing current information about the contact's location. For example, if you are calling a co-worker or a client in Shanghai, you can open Information Dashboard and enter the location of Shanghai before making the call. Information Dashboard will return the day, date, time, whether you are calling during normal working hours, the weather forecast, and a news feed of articles related to the location.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "June2011",
+    "detailsSection_file_name": [
+        "InformationDashboard_GetStarted.docx"
+    ],
+    "detailsSection_file_size": [
+        "368.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "lync Server Home Page",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=201187"
+        },
+        {
+            "title": "technical Library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=202714"
+        },
+        {
+            "title": "next Hop",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=203149"
+        },
+        {
+            "title": "information Dashboard Add-In for Microsoft Lync 2010",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=220429"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26130",
+    "downloadPreload": true
+}

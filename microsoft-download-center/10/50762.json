@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Why Azure for BCDR?",
+    "downloadDescription": "This zipped folder contains documents that provide an overview of Azure BCDR offerings for partners.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Azure BCDR sales decks.zip",
+            "url": "https://download.microsoft.com/download/8/f/2/8f2d68d0-39a9-465b-ba12-94bded657334/Azure BCDR sales decks.zip",
+            "size": "5220530",
+            "version": "January 2014",
+            "datePublished": "1/15/2024 3:59:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This zipped folder contains documents that provide an overview of Azure BCDR offerings for partners. The files in this folder are\n1. Overview of Azure BCDR offerings - This presentation provides a business overview of Azure BCDR offerings\n2. Azure BCDR offerings-  sales deck and profitability models for partners\n3. Azure BCDR offerings- Concepts and DR planning framework\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "January 2014",
+    "detailsSection_file_name": [
+        "Azure BCDR sales decks.zip"
+    ],
+    "detailsSection_file_size": [
+        "5.0 MB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the file.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50762",
+    "downloadPreload": true
+}

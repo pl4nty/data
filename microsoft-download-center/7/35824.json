@@ -1,0 +1,131 @@
+{
+    "error": "",
+    "downloadTitle": "New Feature List for Microsoft Dynamics AX 2012 R2",
+    "downloadDescription": "This document provides a list of features by area that are added in Microsoft Dynamics AX 2012 R2. It includes only brief descriptions. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "New Feature List AX 2012 R2.pdf",
+            "url": "https://download.microsoft.com/download/a/2/1/a2151c5e-5007-47d2-bb0b-634bcec1221b/New Feature List AX 2012 R2.pdf",
+            "size": "304263",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:09:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "is-is",
+            "name": "Icelandic"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        }
+    ],
+    "detailsSection": "This document provides a list of features by area that are added in Microsoft Dynamics AX 2012 R2. It includes only brief descriptions. For a detailed description of the features, see New, Changed, and Deprecated Features for Microsoft Dynamics AX 2012.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "New Feature List AX 2012 R2.pdf"
+    ],
+    "detailsSection_file_size": [
+        "297.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI><br />\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document.</LI><br />\r\n<LI>Save the file to your computer.</LI><br /></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "new, Changed, and Deprecated Features for Microsoft Dynamics AX 2012",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=7225"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35824",
+    "downloadPreload": true
+}

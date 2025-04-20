@@ -1,0 +1,88 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Tools for the Microsoft Office System (Version 3.0 Runtime) SP1 Language Pack",
+    "downloadDescription": "The Microsoft Visual Studio Tools for the Microsoft Office System (Version 3.0 Runtime) SP1 language pack contains the text of runtime user interface elements, such as error messages, for languages other than English.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Readme.htm",
+            "url": "https://download.microsoft.com/download/0/8/1/081b16a1-a12f-4456-a7ef-f2da3fc3e849/Readme.htm",
+            "size": "2091",
+            "version": "SP1",
+            "datePublished": "7/15/2024 3:10:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        }
+    ],
+    "detailsSection": "The Microsoft Visual Studio Tools for the Microsoft Office System (Version 3.0 Runtime) SP1 language pack contains the text of runtime user interface elements, such as error messages, for languages other than English. If one or more end users have non-English settings for Windows, you can install the VSTO 3.0 Runtime SP1 language pack to show runtime messages in the same language as Windows.<br/>\n<br/>\nEach language pack supports one language. If you deploy a Microsoft Office solution created using Microsoft Visual Studio 2008 to multiple computers, and different computers use different language settings for Windows, you will need to include a language pack for each of those languages in your deployment package to have text from the VSTO 3.0 Runtime available in all of the languages.<br/>\n<br/>  \nIf no language pack is installed, runtime messages are displayed in English by default.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "SP1",
+    "detailsSection_file_name": [
+        "Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "2.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li><b>Required Software</b>: \n<ul><li><b>.NET Framework version 3.5 and the .NET Framework Language Pack</b>: You must install either the .NET Framework 3.5 or .NET Framework Client Profile and the associated language pack on end user computers before installing the VSTO 3.0 Runtime language pack.<br/></li>\n<li><b>Visual Studio Tools for the Office system 3.0 Runtime</b>: You must install the VSTO 3.0 Runtime before you install the language pack.</li></ul></li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li><b>Important</b>: Make sure you have the latest service pack and critical updates for the version of Windows that you are running. To find recent security updates, visit Windows Update.</li><br />\n<li>Click the <b>Download</b> button on this page to start the download.</li><br />\n<li>Do one of the following: <br />\n<ul><li>To start the installation immediately, click <b>Run</b>. </li><br />\n<li>To save the download to your computer for installation at a later time, click <b>Save</b>.</li><br />\n<li>To cancel the installation, click <b>Cancel</b>.</li><br />\n</ul></li></ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "stay Current and Subscribe to MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=53621"
+        },
+        {
+            "title": "microsoft Office Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=53665"
+        },
+        {
+            "title": "books about .NET Framework",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=53622"
+        },
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=85907"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16052",
+    "downloadPreload": true
+}

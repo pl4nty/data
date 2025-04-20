@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Shared Financial Data Management",
+    "downloadDescription": "This white paper provides conceptual information so that you can plan the chart of accounts for your legal entity. It also provides the steps necessary to set up one or more charts of accounts, including procedures for setting up a ledger, shared financial dimensions, shared fiscal calendars, shared account structures, and advanced rules.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 R2 Shared Financial Data Management White Paper.pdf",
+            "url": "https://download.microsoft.com/download/c/2/7/c27f2e17-e439-4eee-9630-0aae6eb44935/Microsoft Dynamics AX 2012 R2 Shared Financial Data Management White Paper.pdf",
+            "size": "696327",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:32:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Organizations with multiple legal entities can set up the same information in those legal entities. Information such as fiscal calendars, currencies, exchange rates, and the chart of accounts is shared between the legal entities, per data partition. Prior to Microsoft Dynamics AX 2012, this setup and maintenance had to be completed for each legal entity. In Microsoft Dynamics AX 2012, you can set up the data once and share it across multiple legal entities.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 R2 Shared Financial Data Management White Paper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "680.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35832",
+    "downloadPreload": true
+}

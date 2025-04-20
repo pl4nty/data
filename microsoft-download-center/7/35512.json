@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Utilities and SDK for Subsystem for UNIX-based Applications in Windows 8 and Windows Server 2012",
+    "downloadDescription": "Utilities and SDK for Subsystem for UNIX-based Applications includes base utilities, software development kits (SDKs), and shells for use with Subsystem for UNIX-based Applications, a feature that is available for installation on Windows 8 Enterprise and Windows Server 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Utilities and SDK for Subsystem for UNIX-based Applications_x86.exe",
+            "url": "https://download.microsoft.com/download/a/9/4/a941bdf0-f342-43a0-9f21-454b997781db/Utilities and SDK for Subsystem for UNIX-based Applications_x86.exe",
+            "size": "265882624",
+            "version": "10.0.7063.0",
+            "datePublished": "7/15/2024 3:32:26 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Utilities and SDK for Subsystem for UNIX-based Applications_AMD64.exe",
+            "url": "https://download.microsoft.com/download/a/9/4/a941bdf0-f342-43a0-9f21-454b997781db/Utilities and SDK for Subsystem for UNIX-based Applications_AMD64.exe",
+            "size": "266969088",
+            "version": "10.0.7063.0",
+            "datePublished": "7/15/2024 3:32:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Utilities and SDK for Subsystem for UNIX-based Applications (SUA) includes the following base utilities, software development kits (SDKs), and shells for use with Subsystem for UNIX-based Applications, a feature that is available for installation on Windows 8 and Windows Server 2012.\r\n<br /><br />\r\n<ul><li>Base subsystem commands and utilities</li>\r\n<li>SVR-5 commands and utilities</li>\r\n<li>Base subsystem SDK</li>\r\n<li>GNU SDK</li>\r\n<li>GNU commands and utilities</li>\r\n<li>SCO commands and utilities</li>\r\n<li>UNIX-based Perl</li>\r\n<li>Microsoft Visual Studio&#0174; Debugger Extension for debugging POSIX applications</li>\r\n<li>Korn and C shells</li>\r\n<li>Subsystem for UNIX-based Applications HTML Help files (*.chm)</li></ul>\r\nThis release allows you to develop x64-based applications by using SUA, and develop and port custom UNIX-based applications to Windows by using the Windows OCI (Oracle Call Interface) and Windows ODBC libraries.\r\n<br /><br />\r\nNote that Subsystem for UNIX-based Applications has been deprecated, and will not be available in future releases of Windows or Windows Server. For more information about alternatives or workarounds, see the \"Subsystem for UNIX-based Applications\" section of <a href=\"http://technet.microsoft.com/en-us/library/hh831568.aspx\">Features Removed or Deprecated in Windows Server 2012</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0.7063.0",
+    "detailsSection_file_name": [
+        "Utilities and SDK for Subsystem for UNIX-based Applications_x86.exe",
+        "Utilities and SDK for Subsystem for UNIX-based Applications_AMD64.exe"
+    ],
+    "detailsSection_file_size": [
+        "253.6 MB",
+        "254.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This download package installs only on computers that are running Windows 8 Enterprise or the full-GUI installation option of Windows Server 2012.\r\n<br /><br />\r\n<b>IMPORTANT:</b>  Uninstall any other versions or copies of the Utilities and SDK for SUA before you install the Windows 8 Utilities and SDK for SUA. If you are currently running the Windows 7 and Windows Server 2008 R2 release of the Utilities and SDK for SUA on your Windows 8 or Windows Server 2012 system, uninstall it to prepare for the Windows 8 Utilities and SDK for SUA. \r\n<br /><br />\r\nBefore downloading and installing the Utilities and SDK for Subsystem for UNIX-based Applications, be sure that SUA is installed on the target computer. On computers that are running Windows 8 Enterprise, open Control Panel/Programs/Programs and Features/Turn Windows features on or off, and then select <b>Subsystem for UNIX-based Applications</b>. On computers that are running Windows Server 2012, open Server Manager, open <b>Add Roles and Features Wizard</b> on the <b>Manage</b> menu, and then select <b>Subsystem for UNIX-based Applications</b> on the <b>Select Features</b> page of the wizard. Complete the wizard and click <b>Install</b> to install SUA. To install SUA on Windows Server 2012 by using Windows PowerShell, run the following command in a Windows PowerShell session that has been opened with elevated rights (Run as Administrator):  <b>Install-WindowsFeature -Name Subsystem-UNIX-Apps</b>.\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click <b>Continue</b> to register with Microsoft before you download this package, or you can opt not to register with Microsoft.  Download the package that matches the architecture of the target computer. If you are not sure whether your computer is x86- or x64-based, see <a href=\"http://support.microsoft.com/kb/827218\">How to determine whether a computer is running a 32-bit version or 64-bit version of the Windows operating system</a>.\r\n<br /><br />\r\nAs you download the executable file, you can choose to run the file, or save it to a convenient location.  When you run the executable, the WinZip Self-Extractor utility opens. Click <b>Setup</b> to run the self-extractor and install the Utilities and SDK for SUA.  When the file extraction is complete, the setup process opens the Utilities and SDK for Subsystem for UNIX-based Applications Setup Wizard. As you progress through the wizard, be sure to accept the terms of the license agreement to continue. Click <b>Install</b> to begin installing the Utilities and SDK for SUA. If desired, you can opt to change case sensitivity, <i>setuid</i>, and other settings at a later time.  The WinZip Self-Extractor utility might remain open for a few minutes after the Utilities and SDK for SUA has finished installing, but it closes automatically; you do not need to close this.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35512",
+    "downloadPreload": true
+}

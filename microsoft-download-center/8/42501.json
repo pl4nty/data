@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Mode Site List Manager (schema v.1)",
+    "downloadDescription": "This tool helps create and manage the Enterprise Mode Site List in the v.1 XML schema for Enterprise Mode.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "EMIESiteListManager.msi",
+            "url": "https://download.microsoft.com/download/d/4/a/d4a4de51-7d25-4aad-b53c-af3b532582eb/EMIESiteListManager.msi",
+            "size": "479232",
+            "version": "5.1",
+            "datePublished": "7/15/2024 3:01:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This tool lets IT Professionals create and update the Enterprise Mode Site List in the version 1.0 (v.1) XML schema. The v.1 Enterprise Mode XML schema is supported on Windows 7, Windows 8.1, and Windows 10. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2942883",
+        "name": "KB2942883"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.1",
+    "detailsSection_file_name": [
+        "EMIESiteListManager.msi"
+    ],
+    "detailsSection_file_size": [
+        "468.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows 7, Windows 8.1, Windows 10 \r\n\r\nMinimum Requirements\r\n                         \u2022 Computer/Processor: 233MHz processor or higher (Pentium processor recommended)\r\n                         \u2022 Memory: 512MB\r\n                         \u2022 Available hard drive space: 70MB\r\n                         \u2022 Display: Super VGA (800 x 600 resolution, or higher) monitor with 256 colors\r\n                         \u2022 Peripherals: Internet connection\r\n                         \u2022 Additional technology: Microsoft .NET Framework 4",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Enterprise",
+        "Windows 7 Home Premium",
+        "Windows 7 Professional",
+        "Windows 7 Service Pack 1",
+        "Windows 7 Starter",
+        "Windows 7 Ultimate",
+        "Windows 8",
+        "Windows 8 Enterprise",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n        <li>\r\n          Click the <b>Download</b> button on this page to start the download.\r\n        </li>\r\n        <li>Do one of the following:</li>\r\n        <ul>\r\n          <li>\r\n            To start the installation immediately, click <b>Run</b>.\r\n          </li>\r\n          <li>\r\n            To save the download to your computer for installation at a later time, click <b>Save</b>.\r\n          </li>\r\n          <li>\r\n            To cancel the installation, click <b>Cancel</b>.\r\n          </li>\r\n        </ul>\r\n      </ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42501",
+    "downloadPreload": true
+}

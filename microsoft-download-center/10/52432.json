@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Research Action Data Set II (Part 3)",
+    "downloadDescription": "This is Part 3 of Microsoft Research Action Data Set II. Last published: March 3, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MSR54_27_36.zip",
+            "url": "https://download.microsoft.com/download/d/f/0/df0c28a8-4590-47e6-a06f-afbba0125b53/MSR54_27_36.zip",
+            "size": "1456882579",
+            "version": "1.0",
+            "datePublished": "3/15/2024 4:07:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is Part 3 of Microsoft Research Action Data Set II. There are five parts in total. Microsoft Research Action Data Set II is an extended version of the Microsoft Research Action Data Set. It consists of 54 video sequences recorded in a crowded environment. Each video sequence consists of multiple actions. There are three action types: hand waving, handclapping, and boxing. These action types are overlapped with the KTH data set. One could perform cross-data-set action recognition by using the KTH data set for training while using this data set for testing.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MSR54_27_36.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.4 GB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52432",
+    "downloadPreload": true
+}

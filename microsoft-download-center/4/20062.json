@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Commerce Server 2007 Install and Readme guides",
+    "downloadDescription": "Download updated versions of the Commerce Server 2007 Installation and Configuration Guide, the Quick Installation Guide, and the Commerce Server 2007 SP2 Readme.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CS07MomPack.doc",
+            "url": "https://download.microsoft.com/download/3/a/4/3a46267f-9640-4623-86a1-c63bbfea9e1d/CS07MomPack.doc",
+            "size": "328192",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CS07SP2-readme-web.htm",
+            "url": "https://download.microsoft.com/download/3/a/4/3a46267f-9640-4623-86a1-c63bbfea9e1d/CS07SP2-readme-web.htm",
+            "size": "59347",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "CS07InstallGuide.doc",
+            "url": "https://download.microsoft.com/download/3/a/4/3a46267f-9640-4623-86a1-c63bbfea9e1d/CS07InstallGuide.doc",
+            "size": "1041408",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "QuickInstallGuide.doc",
+            "url": "https://download.microsoft.com/download/3/a/4/3a46267f-9640-4623-86a1-c63bbfea9e1d/QuickInstallGuide.doc",
+            "size": "389632",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Commerce Server 2007 Readme.htm",
+            "url": "https://download.microsoft.com/download/3/a/4/3a46267f-9640-4623-86a1-c63bbfea9e1d/Commerce Server 2007 Readme.htm",
+            "size": "40401",
+            "version": "1",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can download the Commerce Server 2007 Installation and Configuration Guide, the Quick Installation Guide, the MOM Pack Guide for Commerce Server 2007, the Commerce Server 2007 RTM Readme, and the Commerce Server 2007 SP2 Readme.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "CS07MomPack.doc",
+        "CS07SP2-readme-web.htm",
+        "CS07InstallGuide.doc",
+        "QuickInstallGuide.doc",
+        "Commerce Server 2007 Readme.htm"
+    ],
+    "detailsSection_file_size": [
+        "320.5 KB",
+        "58.0 KB",
+        "1017.0 KB",
+        "380.5 KB",
+        "39.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "Review the readme and installation guide",
+    "additionalInformationSection": "Downloads are available for Commerce Server 2007 Installation and Configuration Guide, Quick Installation Guide, MOM Pack for Commerce Server 2007, Commerce Server 2007 RTM Readme, and the Commerce Server 2007 SP2  Readme.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20062",
+    "downloadPreload": true
+}

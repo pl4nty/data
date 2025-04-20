@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "CHESS: Systematic Concurrency-Testing Tool",
+    "downloadDescription": "CHESS is a tool for systematically testing multithreaded code. Last published: July 1, 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "chessMSR.msi",
+            "url": "https://download.microsoft.com/download/1/4/0/140ab630-030e-4566-9d0a-0d4b2f7f3821/chessMSR.msi",
+            "size": "9628160",
+            "version": "v0.1.30626.0",
+            "datePublished": "7/15/2024 4:14:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "CHESS is a tool for systematically testing multithreaded code. Given a concurrent test, CHESS systematically drives the test along all possible thread interleavings. It uses model-checking techniques to explore effectively the enormously large state space of interleavings and provides quantified coverage guarantees. CHESS can check for assertions, deadlocks, livelocks, and data races. On finding an error, CHESS can reproduce the thread interleaving that exposed an error. CHESS is research tool developed by Microsoft Research. Visit http://research.microsoft.com/projects/CHESS/ for more information.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v0.1.30626.0",
+    "detailsSection_file_name": [
+        "chessMSR.msi"
+    ],
+    "detailsSection_file_size": [
+        "9.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52619",
+    "downloadPreload": true
+}

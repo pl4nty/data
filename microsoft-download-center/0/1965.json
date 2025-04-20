@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Designing .Net Class Libraries - Naming Conventions",
+    "downloadDescription": "Naming Conventions  by Brad Abrams",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Naming_Conventions_300k.exe",
+            "url": "https://download.microsoft.com/download/2/f/a/2fa27a94-859e-40f5-b646-152640cac60a/Naming_Conventions_300k.exe",
+            "size": "108003840",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Naming_Conventions_100k.exe",
+            "url": "https://download.microsoft.com/download/2/f/a/2fa27a94-859e-40f5-b646-152640cac60a/Naming_Conventions_100k.exe",
+            "size": "59921408",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Learn why good naming is a key factor in API design, and what the recommended naming guidelines are to ensure consistency with the rest of the .NET Framework.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Naming_Conventions_300k.exe",
+        "Naming_Conventions_100k.exe"
+    ],
+    "detailsSection_file_size": [
+        "103.0 MB",
+        "57.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Required disk space: 55 MB<br />\nMicrosoft Windows Media Player 6.x or later<br />\nMicrosoft Internet Explorer 5.x or later<br />\nMSXML 4.0 SP2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "Right-click and save locally.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1965",
+    "downloadPreload": true
+}

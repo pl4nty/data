@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Overview of Enterprise Portal",
+    "downloadDescription": "This document describes the modules, features, and business tasks users perform in Enterprise Portal.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Overview of Enterprise Portal in Microsoft Dynamics AX 2009.pdf",
+            "url": "https://download.microsoft.com/download/3/a/9/3a9e6780-a206-4b31-89dc-f4d8f6b85bd3/Overview of Enterprise Portal in Microsoft Dynamics AX 2009.pdf",
+            "size": "399292",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:14:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Overview of Enterprise Portal in Microsoft Dynamics AX 2009.xps",
+            "url": "https://download.microsoft.com/download/3/a/9/3a9e6780-a206-4b31-89dc-f4d8f6b85bd3/Overview of Enterprise Portal in Microsoft Dynamics AX 2009.xps",
+            "size": "502660",
+            "version": "5.0",
+            "datePublished": "7/15/2024 3:14:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics AX provides a set of Web modules that give you access to Microsoft Dynamics AX data and allow you to participate in business processes using Web-based Microsoft Dynamics AX forms. These modules and the portal system are collectively called Enterprise Portal. Enterprise Portal is built on Microsoft\u00ae Windows\u00ae SharePoint\u00ae Services or Microsoft Office\u00ae SharePoint Server. This document provides an overview of the features of Enterprise Portal.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0",
+    "detailsSection_file_name": [
+        "Overview of Enterprise Portal in Microsoft Dynamics AX 2009.pdf",
+        "Overview of Enterprise Portal in Microsoft Dynamics AX 2009.xps"
+    ],
+    "detailsSection_file_size": [
+        "389.9 KB",
+        "490.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6141",
+    "downloadPreload": true
+}

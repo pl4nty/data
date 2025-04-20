@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "OEM System Deployment",
+    "downloadDescription": "This paper discusses tools for determining whether servers meet the minimum hardware requirements for upgrading to Windows Server 2012 R2. A USB drive with Windows To Go is utilized to incorporate automated server testing for common OEM installation scenarios. This tool will run necessary tests which will validate if the hardware can be upgraded to the new OS. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OEM_System_Deployment_Testing.pdf",
+            "url": "https://download.microsoft.com/download/1/b/d/1bdd5739-a046-4e29-9f94-10ddc2b879e8/OEM_System_Deployment_Testing.pdf",
+            "size": "441063",
+            "version": "1",
+            "datePublished": "7/15/2024 3:40:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper discusses tools for determining whether servers meet the minimum hardware requirements for upgrading to Windows Server 2012 R2. A USB drive with Windows To Go is utilized to incorporate automated server testing for common OEM installation scenarios. This tool will run necessary tests which will validate if the hardware can be upgraded to the new OS. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "OEM_System_Deployment_Testing.pdf"
+    ],
+    "detailsSection_file_size": [
+        "430.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 R2 Datacenter Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Datacenter x64 Edition",
+        "Windows Server 2003 R2 Enterprise Edition (32-Bit x86)",
+        "Windows Server 2003 R2 Enterprise x64 Edition",
+        "Windows Server 2003 R2 Standard Edition (32-bit x86)",
+        "Windows Server 2003 R2 Standard x64 Edition ",
+        "Windows Server 2003, Datacenter Edition (32-bit x86)",
+        "Windows Server 2003, Datacenter x64 Edition",
+        "Windows Server 2003, Enterprise Edition (32-bit x86)",
+        "Windows Server 2003, Enterprise x64 Edition",
+        "Windows Server 2003, Standard Edition (32-bit x86)",
+        "Windows Server 2003, Standard x64 Edition",
+        "Windows Server 2003, Web Edition",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2008 Standard",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download</li>\r\n<li>Where you see a company or publisher listed in a security message, make sure the company name is <b>Microsoft Corporation</b>, and then click <b>Continue</b>, or <b>Allow</b>. </li>\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "44021",
+    "downloadPreload": true
+}

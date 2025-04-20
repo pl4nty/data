@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "Lync 2013 Rollout and Adoption Success Kit (RASK) User Education and Training Resources",
+    "downloadDescription": "The Lync 2013 Rollout and Adoption Success Kit (RASK) User Education and Training Resources download contains Quick Reference Cards, Training Modules, Videos, and links to online articles.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "RASK_Training_Resources.zip",
+            "url": "https://download.microsoft.com/download/3/7/1/3717bf87-d7bd-4381-a22c-7908a3cf2270/RASK_Training_Resources.zip",
+            "size": "297532101",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:16:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "The Lync 2013 User Education and Training Resources download contains Quick Reference Cards, Training modules, videos, and links to online articles. The content is organized by product and workload, so you can choose the resources that best serve your organization\u2019s configuration of Lync.  There\u2019s a handy Excel spreadsheet in the download that provides folder locations for downloaded resources and hyperlinks for online resources. You can use the spreadsheet to filter on Resource Categories or Resource Types, so you can view all the assets available for Getting Started, for example, or all the Quick Reference Cards across all Lync workloads. As with previous versions of Lync, the Quick Reference Cards are customizable. \r\nThe download provides resources and links to online resources for the following products and/or categories:\r\n<ul>\r\n<li>Lync 2013</li>\r\n<li>Lync Mobile, including Lync for Windows Phone, Lync for iPhone and iPad</li>\r\n<li>Lync Web App</li>\r\n<li>Lync for Windows Store App</li>\r\n<li>Lync Online</li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "RASK_Training_Resources.zip"
+    ],
+    "detailsSection_file_size": [
+        "283.7 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2013; Microsoft Office 2010; Microsoft Office 2007; Microsoft Office 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "To install this download, save the .zip file to a directory on your computer, and then extract the files to a local folder.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "37032",
+    "downloadPreload": true
+}

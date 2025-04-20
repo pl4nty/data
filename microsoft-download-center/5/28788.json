@@ -1,0 +1,62 @@
+{
+    "error": "",
+    "downloadTitle": "Migrating from Exchange Server 2010 in Hosting Mode to Exchange Server SP2",
+    "downloadDescription": "This white paper provides the recommended and supported path for migrating from an Exchange 2010 organization that was installed using the /hosting switch to Exchange 2010 SP2 installed without using the /hosting switch.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Migrating From Exchange Server 2010 in Hosting Mode to Exchange Server 2010 SP2.zip",
+            "url": "https://download.microsoft.com/download/d/6/2/d6299ab8-2445-4527-830b-0460f69ff417/Migrating From Exchange Server 2010 in Hosting Mode to Exchange Server 2010 SP2.zip",
+            "size": "503696",
+            "version": "Jan2012",
+            "datePublished": "1/15/2024 3:29:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document is intended for service providers, system integrators, and technical consultants who may be involved in the planning and implementation of a migration from Exchange 2010 in /Hosting mode to Exchange 2010 SP2. Microsoft does not support an in-place upgrade from Exchange 2010 /Hosting to Exchange Server 2010 SP2 installed without the /Hosting switch. The only supported scenario is to deploy Exchange Server 2010 SP2 into a new Active Directory forest, and then migrate user accounts, mailboxes, and other resources from the Exchange 2010 /Hosting forest to the new Exchange 2010 SP2 forest. \r\n<br/><br/>\r\nThe migration approach described in this document is a one-step migration of each tenant organization. A different methodology that would allow a gradual migration of a given customer organization (that is, coexistence) is not in scope for this guidance. The complexities and unique requirements that each service provider has for such things as directory synchronization, mail flow, and permissions delegation make it impractical to present a \u201cone size fits all\u201d solution for long-term coexistence.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Jan2012",
+    "detailsSection_file_name": [
+        "Migrating From Exchange Server 2010 in Hosting Mode to Exchange Server 2010 SP2.zip"
+    ],
+    "detailsSection_file_size": [
+        "491.9 KB"
+    ],
+    "detailsSection_file_date": "1/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <a href=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</a>.</li> \r\n</ul>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server 2010 and Multi-Tenancy Solutions and Guidance",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=241670"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "28788",
+    "downloadPreload": true
+}

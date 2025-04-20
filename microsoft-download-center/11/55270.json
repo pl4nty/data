@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 Centralized Deployment Compatibility Checker",
+    "downloadDescription": "Centralized Deployment Compatibility Checker",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "O365CompatibilityChecker.msi",
+            "url": "https://download.microsoft.com/download/e/f/2/ef21c976-280e-45ef-8225-928e7ea64c81/O365CompatibilityChecker.msi",
+            "size": "364544",
+            "version": "1.4.0.0",
+            "datePublished": "7/15/2024 3:07:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "As an Office 365 Administrator that wishes to deploy Add-Ins within your Organization using Centralized Deployment you can use the Compatibility Checker to confirm which users are able to use the functionality. \r\nIt will output a status report for each user in your Organization, whether they have a valid Office License, if they are setup correctly on Exchange and if they are Centralized Deployment ready",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4.0.0",
+    "detailsSection_file_name": [
+        "O365CompatibilityChecker.msi"
+    ],
+    "detailsSection_file_size": [
+        "356.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating Systems\r\nWindows 10, Windows 8, Windows Server 2012, Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download and install the MSI. Documentation is available at https://aka.ms/centralized-deployment-guidance",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "55270",
+    "downloadPreload": true
+}

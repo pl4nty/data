@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Windows Embedded POSReady 2009 (KB2782798)",
+    "downloadDescription": "Resolves an issue that might occur with the French language pack",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB2782798-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/e/3/6/e36b8040-e35d-4677-9e0f-60e687ccc746/WindowsXP-KB2782798-x86-ENU.exe",
+            "size": "518672",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:30:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "KB2782798 fixes the following issue:\r\n<br></br>\r\nWhere user login time is increased significantly after the French language pack is installed.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2782798",
+        "name": "KB2782798"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WindowsXP-KB2782798-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "506.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br></br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded POSReady 2009"
+    ],
+    "installInstructionSection": "Download and run the installer.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded POSReady 2009 MSDN",
+            "url": "https://msdn.microsoft.com/en-US/library/dn441478(v=winembedded.0).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35817",
+    "downloadPreload": true
+}

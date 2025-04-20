@@ -1,0 +1,127 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Library 2.0",
+    "downloadDescription": "Enterprise Library is a collection of reusable and extensible application blocks for enterprise development.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "17MAR2005 Exception Handling Block.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/17MAR2005 Exception Handling Block.ppt",
+            "size": "1634816",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "14MAR2005 Logging Block.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/14MAR2005 Logging Block.ppt",
+            "size": "1896960",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "03MAR2005 EntLib Webcast.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/03MAR2005 EntLib Webcast.ppt",
+            "size": "1797120",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "24MAR2005 Security Block Webcast.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/24MAR2005 Security Block Webcast.ppt",
+            "size": "1748992",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "10MAR2005 Caching Block.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/10MAR2005 Caching Block.ppt",
+            "size": "1568256",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "29MAR2005 BuildingYourOwnBlock.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/29MAR2005 BuildingYourOwnBlock.ppt",
+            "size": "1853952",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "04MAR2005 Config Block Webcast.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/04MAR2005 Config Block Webcast.ppt",
+            "size": "1783296",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "31MAR2005 Entlib Applied Webcast.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/31MAR2005 Entlib Applied Webcast.ppt",
+            "size": "2964992",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "22MAR2005 Crypto Block Webcast.ppt",
+            "url": "https://download.microsoft.com/download/0/a/f/0af3385b-cc09-483e-bd54-bf00dcef6242/22MAR2005 Crypto Block Webcast.ppt",
+            "size": "2435072",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:14:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Enterprise Library, the collection of reusable and extensible application blocks for enterprise development, has been improved and updated specifically for Visual Studio 2005 and the .NET Framework 2.0",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "17MAR2005 Exception Handling Block.ppt",
+        "14MAR2005 Logging Block.ppt",
+        "03MAR2005 EntLib Webcast.ppt",
+        "24MAR2005 Security Block Webcast.ppt",
+        "10MAR2005 Caching Block.ppt",
+        "29MAR2005 BuildingYourOwnBlock.ppt",
+        "04MAR2005 Config Block Webcast.ppt",
+        "31MAR2005 Entlib Applied Webcast.ppt",
+        "22MAR2005 Crypto Block Webcast.ppt"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "1.8 MB",
+        "1.7 MB",
+        "1.7 MB",
+        "1.5 MB",
+        "1.8 MB",
+        "1.7 MB",
+        "2.8 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4095",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Lync Features Comparison Chart",
+    "downloadDescription": "A detailed matrix of supported Lync features comparing Lync Server 2013 with Lync Hoster Pack and Lync Online (Office 365).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync Features Comparison Chart.xlsx",
+            "url": "https://download.microsoft.com/download/4/2/2/42271d56-0d0d-45eb-844f-8d4d2cd615cf/Lync Features Comparison Chart.xlsx",
+            "size": "25296",
+            "version": "July2013",
+            "datePublished": "5/15/2024 3:33:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A detailed matrix of supported Lync features comparing Lync Server 2013 with Lync Hoster Pack and Lync Online (Office 365).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "July2013",
+    "detailsSection_file_name": [
+        "Lync Features Comparison Chart.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "24.7 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>One file is a Microsoft Excel document. Users who do not have Microsoft Excel can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=299473\">Excel Viewer</A>.</LI>\r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click Open or Run this program from its current location.</li>\r\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "38816",
+    "downloadPreload": true
+}

@@ -1,0 +1,82 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Security Development Lifecycle Core Training classes",
+    "downloadDescription": "Microsoft makes its four core SDL Training classes available to the public. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Introduction_to_Threat_Modeling.ppsx",
+            "url": "https://download.microsoft.com/download/9/3/5/935520ec-d9e2-413e-bea7-0b865a79b18c/Introduction_to_Threat_Modeling.ppsx",
+            "size": "2021680",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Basics of Secure Design Development Test.ppsx",
+            "url": "https://download.microsoft.com/download/9/3/5/935520ec-d9e2-413e-bea7-0b865a79b18c/Basics of Secure Design Development Test.ppsx",
+            "size": "4855928",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Introduction to the Microsoft Security Development Lifecycle (SDL).ppsx",
+            "url": "https://download.microsoft.com/download/9/3/5/935520ec-d9e2-413e-bea7-0b865a79b18c/Introduction to the Microsoft Security Development Lifecycle (SDL).ppsx",
+            "size": "2360907",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Privacy in Software Development.ppsx",
+            "url": "https://download.microsoft.com/download/9/3/5/935520ec-d9e2-413e-bea7-0b865a79b18c/Privacy in Software Development.ppsx",
+            "size": "8459501",
+            "version": "1",
+            "datePublished": "7/15/2024 3:15:18 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft makes its four core SDL Training classes available to the public: \r\nIntroduction to the Microsoft Security Development Lifecycle (SDL); Introduction to Microsoft Threat Modeling; Basics of Secure Design, Development, and Test; Privacy for Software Development",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Introduction_to_Threat_Modeling.ppsx",
+        "Basics of Secure Design Development Test.ppsx",
+        "Introduction to the Microsoft Security Development Lifecycle (SDL).ppsx",
+        "Privacy in Software Development.ppsx"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB",
+        "4.6 MB",
+        "2.3 MB",
+        "8.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "n/a",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "16420",
+    "downloadPreload": true
+}

@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Forefront Identity Manager Connector for SharePoint User Profile Store",
+    "downloadDescription": "Forefront Identity Manager Connector for SharePoint User Profile Store helps you synchronize identity information to the User Profile Store in SharePoint.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MIM-SharepointConnector.msi",
+            "url": "https://download.microsoft.com/download/3/7/a/37a820c9-378e-49e9-9f81-2e7d8536ad42/MIM-SharepointConnector.msi",
+            "size": "1085440",
+            "version": "4.4.1800.1",
+            "datePublished": "7/15/2024 3:02:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Forefront Identity Manager Connector for <B>SharePoint User Profile Store </B> helps you synchronize identity information to the User Profile Store in SharePoint.\r\n<BR />\r\n<BR />\r\nSupported server versions:<BR />\r\n<UL>\r\n<LI>Microsoft SharePoint Server 2013</LI>\r\n<LI>Microsoft SharePoint Server 2016</LI>\r\n<LI>Microsoft SharePoint Server 2019</LI>\r\n</UL>\r\n<BR />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.4.1800.1",
+    "detailsSection_file_name": [
+        "MIM-SharepointConnector.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR /><B>Minimum Requirements</B><BR />\r\n<UL>\r\n<LI>The Microsoft .NET Framework 4.5 </LI>\r\n<LI>Forefront Identity Manager 2010 R2 Service Pack 1 (SP1) or a later version including Microsoft Identity Manager 2016 </LI><BR />\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click on the download link to start the download. Save the MSI to your server. Refer to the <a href=\"http://go.microsoft.com/fwlink/?LinkID=331344\">TechNet Documentation</a> for how to install and configure the Connector.",
+    "relatedResourcesSection": [
+        {
+            "title": "connector Version History",
+            "url": "https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnectsync-connector-version-history"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41164",
+    "downloadPreload": true
+}

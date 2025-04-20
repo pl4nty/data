@@ -1,0 +1,149 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Antigen SP2 Documentation",
+    "downloadDescription": "Microsoft Antigen SP2 Documentation",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AEM_Quick_Start_Archive.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/AEM_Quick_Start_Archive.doc",
+            "size": "178688",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_ASM_Best_Practices.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_ASM_Best_Practices.doc",
+            "size": "156160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_SMTP_Users_Guide.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_SMTP_Users_Guide.doc",
+            "size": "1163776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_SMTP_Release_Notes.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_SMTP_Release_Notes.doc",
+            "size": "121856",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_Release_Notes.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_Release_Notes.doc",
+            "size": "125440",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_Quick_Start_Guide.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_Quick_Start_Guide.doc",
+            "size": "208896",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_SMTP_Quick_Start.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_SMTP_Quick_Start.doc",
+            "size": "160768",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Antigen_evalguide_archive.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/Antigen_evalguide_archive.doc",
+            "size": "1371648",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_Ex_Cluster_Install.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_Ex_Cluster_Install.doc",
+            "size": "164352",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "v9_Best_Practices.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_Best_Practices.doc",
+            "size": "212992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "v9_Users_Guide.doc",
+            "url": "https://download.microsoft.com/download/e/7/5/e75313ec-ed01-4c3c-9640-fd500781404b/v9_Users_Guide.doc",
+            "size": "1369088",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Messaging Security Suite includes Antigen for Exchange, Antigen for SMTP Gateways, and Antigen Spam Manager, and provides server-level protection against the latest e-mail threats.\r\n\r\nIn an effort to improve your information experience, we have moved several of the Antigen topics from the TechNet Library into a downloadable document format and made them available here. Archiving our information this way helps us to ensure that most of our customers can find the information they seek most often without being distracted by information that is not as relevant.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "AEM_Quick_Start_Archive.doc",
+        "v9_ASM_Best_Practices.doc",
+        "v9_SMTP_Users_Guide.doc",
+        "v9_SMTP_Release_Notes.doc",
+        "v9_Release_Notes.doc",
+        "v9_Quick_Start_Guide.doc",
+        "v9_SMTP_Quick_Start.doc",
+        "Antigen_evalguide_archive.doc",
+        "v9_Ex_Cluster_Install.doc",
+        "v9_Best_Practices.doc",
+        "v9_Users_Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "174.5 KB",
+        "152.5 KB",
+        "1.1 MB",
+        "119.0 KB",
+        "122.5 KB",
+        "204.0 KB",
+        "157.0 KB",
+        "1.3 MB",
+        "160.5 KB",
+        "208.0 KB",
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Exchange 2000 Server SP1 or Exchange Server 2003\r\nInternet Information Services (IIS) 4.0\r\n.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Advanced Server",
+        "Windows 2000 Service Pack 4",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Please click the Download button and when the download window appears click the Run button.<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13761",
+    "downloadPreload": true
+}

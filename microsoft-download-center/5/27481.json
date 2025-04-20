@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Content Management",
+    "downloadDescription": "Enterprise Content Management describes how customers can manage the full lifecycle of information from inception to archive or deletion.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Enterprise Content Management.zip",
+            "url": "https://download.microsoft.com/download/0/c/7/0c72addb-2223-4380-b070-86b379e59969/Enterprise Content Management.zip",
+            "size": "12497098",
+            "version": "1",
+            "datePublished": "6/13/2024 11:57:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Enterprise Content Management describes how customers can manage the full lifecycle of information from inception to archive or deletion. It helps manage both unstructured and structured data across the organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Enterprise Content Management.zip"
+    ],
+    "detailsSection_file_size": [
+        "11.9 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "PowerPoint 2007/2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27481",
+    "downloadPreload": true
+}

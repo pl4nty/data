@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012, 2009, and 4.0 SP2 White Paper: Country-Specific Update for Italy - Increase in the Standard VAT Rate",
+    "downloadDescription": "This white paper describes the country-specific update released for Italy for Microsoft Dynamics AX 2012, 2009, and 4.0 SP2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Country_specific_update_for_Italy_Increase_in_the_standard_VAT_rate.pdf",
+            "url": "https://download.microsoft.com/download/1/a/b/1ab294ac-5854-4637-8ee1-a7dfd7d21bad/Country_specific_update_for_Italy_Increase_in_the_standard_VAT_rate.pdf",
+            "size": "290622",
+            "version": "2012, 2009, 4.0 ",
+            "datePublished": "7/15/2024 3:15:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "In accordance with the Italian Ministry of Economy and Finance, the standard value added tax (VAT) rate that is applied to transactions on goods and services has been increased to 21 percent.  The VAT rate that is applied to transactions is calculated by using the effective date. <br /><br />\r\nThis paper describes how the effective date is derived and which transactions the increase is applied to. It then describes how to set up the VAT rate, create and assign a VAT code to calculate VAT, and create adjustment VAT codes for credit notes and debit notes. <br /><br />\r\nFor more information about other features that apply to Italy, refer to the Help. Information that is specific to Italy includes (ITA) in the title.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012, 2009, 4.0 ",
+    "detailsSection_file_name": [
+        "Country_specific_update_for_Italy_Increase_in_the_standard_VAT_rate.pdf"
+    ],
+    "detailsSection_file_size": [
+        "283.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 4.0, see <a href=\"https://mbs.microsoft.com/customersource/documentation/systemrequirements/systemrequirementsax40.htm\">System requirements for Microsoft Dynamics AX 4.0</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27765",
+    "downloadPreload": true
+}

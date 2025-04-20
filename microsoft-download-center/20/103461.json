@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Step by Step Guide to Install Hybrid DMS",
+    "downloadDescription": "Step by Step Guide to Install Hybrid DMS",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Step-by-Step Guide to Install Hybrid DMS.pdf",
+            "url": "https://download.microsoft.com/download/e/c/c/ecc45361-0426-48f6-8c7d-af3c0af7339b/Step-by-Step Guide to Install Hybrid DMS.pdf",
+            "size": "886270",
+            "version": "1.o",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Database Migration Service hybrid mode manages database migrations by using a \r\nmigration worker that is hosted on-premises together with an instance of Azure \r\nDatabase Migration Service running in the cloud. Hybrid mode is especially useful for \r\nscenarios in which there's a lack of site-to-site connectivity between the on-premises \r\nnetwork and Azure or if there's limited site-to-site connectivity bandwidth. \r\nThis whitepaper walks you through how to install this migration worker (hybrid mode) on \r\nyour on-premises server.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.o",
+    "detailsSection_file_name": [
+        "Step-by-Step Guide to Install Hybrid DMS.pdf"
+    ],
+    "detailsSection_file_size": [
+        "865.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Readable Document download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103461",
+    "downloadPreload": true
+}

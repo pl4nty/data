@@ -1,0 +1,138 @@
+{
+    "error": "",
+    "downloadTitle": "MUTT USB Tool ",
+    "downloadDescription": "Test tools for validating USB controllers and hubs",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MUTTPackage-2.9.11.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/MUTTPackage-2.9.11.msi",
+            "size": "12050432",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MUTTPackage-2.9.10.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/MUTTPackage-2.9.10.msi",
+            "size": "11935744",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MUTTPackage-2.9.9.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/MUTTPackage-2.9.9.msi",
+            "size": "11927552",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MUTTPackage-2.9.8.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/MUTTPackage-2.9.8.msi",
+            "size": "11927552",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mutt2_96.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/mutt2_96.msi",
+            "size": "9854976",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mutt2_95.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/mutt2_95.msi",
+            "size": "9838592",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mutt2_94.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/mutt2_94.msi",
+            "size": "9781248",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mutt2_9.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/mutt2_9.msi",
+            "size": "7495680",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mutt2_93.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/mutt2_93.msi",
+            "size": "9519104",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mutt2_92.msi",
+            "url": "https://download.microsoft.com/download/c/4/d/c4dd36be-dab4-4e64-8950-37d426586493/mutt2_92.msi",
+            "size": "9519104",
+            "version": "2.9.9",
+            "datePublished": "7/15/2024 3:01:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Test tools for validating USB controllers and hubs",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.9.9",
+    "detailsSection_file_name": [
+        "MUTTPackage-2.9.11.msi",
+        "MUTTPackage-2.9.10.msi",
+        "MUTTPackage-2.9.9.msi",
+        "MUTTPackage-2.9.8.msi",
+        "mutt2_96.msi",
+        "mutt2_95.msi",
+        "mutt2_94.msi",
+        "mutt2_9.msi",
+        "mutt2_93.msi",
+        "mutt2_92.msi"
+    ],
+    "detailsSection_file_size": [
+        "11.5 MB",
+        "11.4 MB",
+        "11.4 MB",
+        "11.4 MB",
+        "9.4 MB",
+        "9.4 MB",
+        "9.3 MB",
+        "7.1 MB",
+        "9.1 MB",
+        "9.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11"
+    ],
+    "installInstructionSection": "Detailed instructions are included in readme.xps in the package.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51604",
+    "downloadPreload": true
+}

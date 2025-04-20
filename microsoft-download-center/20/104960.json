@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "ASRMobSvchf_9.53.6615.1",
+    "downloadDescription": "ASRMobSvchf_9.53.6615.1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_pushinstallclient_9.53.6615.1.exe",
+            "url": "https://download.microsoft.com/download/1/2/1/121df53b-080b-439e-a94e-f391de8cf3bd/Windows_pushinstallclient_9.53.6615.1.exe",
+            "size": "4220296",
+            "version": "9.53.6615.1",
+            "datePublished": "7/15/2024 5:06:20 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft-ASR_UA_9.53.6615.1_Windows_GA_11Feb2023_release.exe",
+            "url": "https://download.microsoft.com/download/1/2/1/121df53b-080b-439e-a94e-f391de8cf3bd/Microsoft-ASR_UA_9.53.6615.1_Windows_GA_11Feb2023_release.exe",
+            "size": "207561632",
+            "version": "9.53.6615.1",
+            "datePublished": "7/15/2024 5:06:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ASRMobSvchf_9.53.6615.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9.53.6615.1",
+    "detailsSection_file_name": [
+        "Windows_pushinstallclient_9.53.6615.1.exe",
+        "Microsoft-ASR_UA_9.53.6615.1_Windows_GA_11Feb2023_release.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.0 MB",
+        "197.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2016",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Follow wizard instructions",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104960",
+    "downloadPreload": true
+}

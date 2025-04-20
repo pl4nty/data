@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office Live Meeting 2007 Intranet-In-A-Box",
+    "downloadDescription": "Live Meeting administrators can use this intranet site template to instantly create an internal resource site for Live Meeting.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IIAB.zip",
+            "url": "https://download.microsoft.com/download/3/5/a/35a876ae-7412-45fd-8d5b-e864416e89bf/IIAB.zip",
+            "size": "89132",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:10:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Office Live Meeting 2007 Intranet-In-A-Box is a site template that administrators can use to instantly create an intranet resource site for Live Meeting. This template includes links to support, training, account creation, and conference center log-in. Additionally, administrators can easily customize this site by adding best practices,  and company policies and procedures.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "IIAB.zip"
+    ],
+    "detailsSection_file_size": [
+        "87.0 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<br/>\n<ul>\n<li><b>This download works with the following Office program:</b>\n<br/>\n<ul>\n<li>Microsoft Office Live Meeting</li>\n</ul></li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/><br/>\nSave the zipped file to a directory on your computer.\n<br/><br/>\n<b>Instructions for use:</b> \n<br/><br/>\nAfter you save the file, unzip the file as you typically would.\n<br/><br/>\n<b>To remove this download:</b>\n<br/><br/>\nDelete the files from the directory where you saved them.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14353",
+    "downloadPreload": true
+}

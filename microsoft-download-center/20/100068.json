@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft.WindowsPreview.Kinect.8.1 2.2.1905.16001",
+    "downloadDescription": "Microsoft Platform Extension required by Windows 8.1 store apps in order to use the Kinect V2 sensor.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "WindowsPreview.Kinect_2.2.1905.16001.zip",
+            "url": "https://download.microsoft.com/download/9/4/7/9475ab46-a3b4-40ca-9715-2f9425362667/WindowsPreview.Kinect_2.2.1905.16001.zip",
+            "size": "1083904",
+            "version": "2.2.1905.16001",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Platform Extension required by Windows 8.1 store apps in order to use the Kinect V2 sensor.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.2.1905.16001",
+    "detailsSection_file_name": [
+        "WindowsPreview.Kinect_2.2.1905.16001.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Recommended Hardware Configuration</b></li>\r\n<ul>\r\n<li>64-bit (x64) processor</li>\r\n<li>4 GB Memory (or more)</li>\r\n<li>Physical dual-core 3.1 GHz (2 logical cores per physical) or faster processor</li>\r\n<li>USB 3.0 controller dedicated to the Kinect for Windows v2 sensor*</li>\r\n<li>DX11 capable graphics adapter**</li>\r\n<li>A Microsoft Kinect v2 sensor, which includes a power hub and USB cabling</li>\r\n</ul><br/>\r\n* If you're adding USB 3.0 functionality to your existing PC through a USB 3.0 host controller adapter, please ensure that it is a Windows 8 compliant device and that it supports Gen-2. See the <a href=\"http://go.microsoft.com/fwlink/?LinkID=403901\" target=\"_blank\">release notes</a> for additional information regarding USB 3.0 compatibility.<br/>\r\n** For the current list of good known adapters click <a href=\"http://go.microsoft.com/fwlink/?LinkID=517722\" target=\"_blank\">here</a>\r\n\r\n<br/><br/>\r\n\r\n<li><b>Software Requirements</b></li>\r\n<ul>\r\n<li> Windows 10 64-bit, Version 1809 or later</li>\r\n</ul>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "To install the Microsoft.WindowsPreview.Kinect.8.1:<br/>\r\n<ol>\r\n<li>Download and extract the contents of <b>WindowsPreview.Kinect_2.2.1905.16001.zip</b> to a location on your PC.</li>\r\n<li>Double click <b>WindowsPreview.Kinect_2.2_Win32.appx</b> and click Install. </li>\r\n<li>Double click <b>WindowsPreview.Kinect_2.2_x64.appx</b> and click Install. </li>\r\n<li>Installation is now complete. </li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100068",
+    "downloadPreload": true
+}

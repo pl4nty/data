@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Point of Service for .NET v1.14.1 (POS for .NET)",
+    "downloadDescription": "Microsoft Point of Service for .NET (POS for .NET) v1.14.1 is a class library that enables POS developers to apply Microsoft .NET technologies in their products. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PosForDotNet-1.14.1.msi",
+            "url": "https://download.microsoft.com/download/9/4/4/9444e977-da6d-469f-8da9-782f0c13cf30/PosForDotNet-1.14.1.msi",
+            "size": "1896448",
+            "version": "1.14.1",
+            "datePublished": "7/15/2024 4:44:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<br />\r\nMicrosoft Point of Service for .NET (POS for .NET) v1.14.1 is a class library that enables POS developers to apply Microsoft .NET technologies in their products. \r\nPOS for .NET v1.14.1 provides the following:\r\n<br />\r\n<br />\r\n\u2022 A simple and consistent interface for.NET Framework applications to interact with POS devices<br /><br />\r\n\u2022 A set of interfaces and classes created to help vendors write applications for common devices such as Cash Drawers or Line Displays<br /><br />\r\n\u2022 A fully compliant implementation of the Unified Point of Service (UnifiedPOS) v1.14.1 international standard<br /><br />\r\n\u2022 Support for Windows Plug and Play functionality<br /><br /><br />\r\n\r\n<b>For Archived Q&A on POS for .NET</b>, please visit <a href=\"https://aka.ms/p4dn.forum\">POS for .NET forum </a> on MSDN.<br /><br />\r\n<b>For Technical Assistance on .NET Framework</b>, please visit <a href=\"https://aka.ms/dnet.forum\"> .NET forum </a> on MSDN.<br /><br />\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.14.1",
+    "detailsSection_file_name": [
+        "PosForDotNet-1.14.1.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "POS for .NET v1.14.1 can be installed on any of the above platforms:<br /><br />\r\nAdditional Requirements include:<br />\r\n\u2022.NET Framework 4.0 and above\r\n\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11",
+        "Windows 10",
+        "POSReady 7",
+        "Windows Embedded Industry 8.1"
+    ],
+    "installInstructionSection": "You can install Microsoft Point of Service for .NET (POS for .NET) v1.14.1 on your device by double-clicking on the <b>POSforDotNet-1.14.1.msi</b> installer and following the installer wizard",
+    "additionalInformationSection": "<br /><b>Where can I find guidance on using POS for .NET v1.14.1?</b><br /><br />\r\nYou can find the documentation online at <a href=\"https://aka.ms/pos4dn.docs\">POS for .NET v1.14.1 SDK Documentation</a> on MSDN.<br /><br />\r\nFor a complete list of changes, see <b>What\u2019s New in POS for .NET v1.14.1</b> on MSDN Documentation<br /><br />\r\n<b>Does POS for .NET v1.14.1 provide support for Windows Store apps?</b><br /><br />\r\nPOS for .NET does not provide any support for the Windows Runtime (WinRT) API. For more details, check POS device support in Universal Windows Platform (UWP),<a href=\"http://aka.ms/pointofservice\">Windows.Devices.PointOfService namespace</a> <br />\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio",
+            "url": "http://msdn.microsoft.com/en-us/vstudio/default.aspx"
+        },
+        {
+            "title": "msdn Documentation",
+            "url": "https://aka.ms/p4dn-docs"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "55758",
+    "downloadPreload": true
+}

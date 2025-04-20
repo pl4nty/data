@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 - Fichier d\u2019\u00e9criture comptable (FEC)",
+    "downloadDescription": "This document provides information about the fichier d\u2019\u00e9criture comptable (FEC) file. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "FranceFECfrfr.pdf",
+            "url": "https://download.microsoft.com/download/e/6/9/e6959993-8bb0-4c6c-9371-b60b1dc79457/FranceFECfrfr.pdf",
+            "size": "911473",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "FranceFECEnglish.pdf",
+            "url": "https://download.microsoft.com/download/e/6/9/e6959993-8bb0-4c6c-9371-b60b1dc79457/FranceFECEnglish.pdf",
+            "size": "607055",
+            "version": "NA.",
+            "datePublished": "7/15/2024 4:25:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "It also provides an example that shows how to set up additional financial dimensions in Microsoft Dynamics AX 2012 to help guarantee that your accounting entry data has enough granularity so that you can prepare a relevant FEC file.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "FranceFECfrfr.pdf",
+        "FranceFECEnglish.pdf"
+    ],
+    "detailsSection_file_size": [
+        "890.1 KB",
+        "592.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101862",
+    "downloadPreload": true
+}

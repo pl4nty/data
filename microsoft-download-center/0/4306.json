@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Standard Cost Conversion Guide",
+    "downloadDescription": "This paper describes the steps needed to convert inventory valuation methods to the revised standard cost method.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Standard Cost Conversion Guide - Microsoft Dynamics AX 2009 - White Paper.xps",
+            "url": "https://download.microsoft.com/download/d/3/2/d32be6a5-a367-46ba-b9ea-8a36bda213d6/Standard Cost Conversion Guide - Microsoft Dynamics AX 2009 - White Paper.xps",
+            "size": "3053036",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Standard Cost Conversion Guide - Microsoft Dynamics AX 2009 - White Paper.pdf",
+            "url": "https://download.microsoft.com/download/d/3/2/d32be6a5-a367-46ba-b9ea-8a36bda213d6/Standard Cost Conversion Guide - Microsoft Dynamics AX 2009 - White Paper.pdf",
+            "size": "2367817",
+            "version": "5.0/2009",
+            "datePublished": "7/15/2024 3:11:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document describes the new Microsoft Dynamics AX 2009 standard cost inventory model and the standard cost conversion tool. This information is intended for administrators, controllers, and accountants who will be converting their inventory valuation method to standard cost. The conversion to standard cost uses a tool that you can use to convert existing non-standard cost items from previous versions to the Microsoft Dynamics AX 2009 standard cost inventory model.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0/2009",
+    "detailsSection_file_name": [
+        "Standard Cost Conversion Guide - Microsoft Dynamics AX 2009 - White Paper.xps",
+        "Standard Cost Conversion Guide - Microsoft Dynamics AX 2009 - White Paper.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.9 MB",
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "4306",
+    "downloadPreload": true
+}

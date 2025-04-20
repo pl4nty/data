@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "MikroKosmos: A Verification-Oriented Model Implementation of an STM in C#",
+    "downloadDescription": "This model implementation of software transactional memory (STM) is based on a 2006 version of the Bartok STM developed at Microsoft and this PLDI \u201906 paper: Tim Harris, Mark Plesko, Avraham Shinnar, David Tarditi. Last published: August 19, 2008.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "bartok-stm-cs-v0_1.zip",
+            "url": "https://download.microsoft.com/download/6/8/3/683c7028-dc69-48c8-8329-1afbbefdfe5a/bartok-stm-cs-v0_1.zip",
+            "size": "31461",
+            "version": "v0.1",
+            "datePublished": "3/15/2024 4:08:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model implementation of software transactional memory (STM) is based on a 2006 version of the Bartok STM developed at Microsoft and this PLDI \u201906 paper: Tim Harris, Mark Plesko, Avraham Shinnar, David Tarditi. \"Optimizing Memory Transactions,\" June 2006. PLDI '06: ACM SIGPLAN 2006 Conference on Programming Language Design and Implementation. This STM implementation is intended to serve as a benchmark for research on the verification of such implementations; it is not intended to provide a practical STM.  To keep the code simple, it abstracts away features such as the multiuse object header word that the Bartok STM uses for interoperability with the rest of the runtime. Interaction with the garbage collector and contention manager are similarly abstracted away, and only features of the STM that ensure serializability of concurrent transactions are included in the code. This model STM implementation has the same API as the Bartok STM library, and its operations and atomic actions have the same granularity level as those of the Bartok STM.  This distinguishes this detailed model implementation from an algorithm-level description of an STM implementation. This release also contains a simple test-bed demonstrating the usage of the STM primitives.  This harness is the TestHarness class in the \u201cmodelSTM\u201d project\u2014Ali Sezgin, Serdar Tasiran, Tim Harris; August 2008.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v0.1",
+    "detailsSection_file_name": [
+        "bartok-stm-cs-v0_1.zip"
+    ],
+    "detailsSection_file_size": [
+        "30.7 KB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52374",
+    "downloadPreload": true
+}

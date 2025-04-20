@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Self-Paced Training Videos",
+    "downloadDescription": "The Lync 2010 training videos are Windows Media Video (.wmv) format versions of the videos presented in Lync 2010 self-paced training courses.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Self_Paced_Training_Videos.zip",
+            "url": "https://download.microsoft.com/download/0/8/f/08f92093-e42c-4ba6-bdf8-62018430971b/Lync_Self_Paced_Training_Videos.zip",
+            "size": "146772547",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:14:15 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Lync 2010 training videos are Windows Media Video (.wmv) format versions of the videos presented in Lync 2010 self-paced training courses. These videos can be posted to a company\u2019s intranet site or incorporated into a company\u2019s training plans. To access Lync 2010 training courses online, visit: http://go.microsoft.com/fwlink/?LinkId=219056.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_Self_Paced_Training_Videos.zip"
+    ],
+    "detailsSection_file_size": [
+        "140.0 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Microsoft Word 2010; Microsoft Office Word 2007; Microsoft Office Word 2003; Microsoft Office Word 2002",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the file to a directory on your computer. After you save the file, open the document as you typically would. To remove the download, delete the file from the directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "11092",
+    "downloadPreload": true
+}

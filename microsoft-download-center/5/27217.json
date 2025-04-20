@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Client Group Policy Documentation",
+    "downloadDescription": "This download package contains the Microsoft Lync 2010 administrative template file (Communicator.adm) and a spreadsheet that lists the Group Policy settings for the Lync 2010 client.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_2010_Policies_Documentation.zip",
+            "url": "https://download.microsoft.com/download/a/f/e/afe141d0-7508-44fa-a751-1dc9dd05cc82/Lync_2010_Policies_Documentation.zip",
+            "size": "16538",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:15:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "System administrators can provide the appropriate registry settings for Microsoft Lync 2010 clients by using an administrative template (.adm) file to define Group Policy settings. Administrative template files contain specific information about which Group Policy settings the application implements, where settings are stored, and how to configure settings.\r\n<br></br>\r\nThis download package contains the Lync 2010 administrative template file (Communicator.adm) and spreadsheet that documents the Group Policy settings for Lync 2010 clients.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_2010_Policies_Documentation.zip"
+    ],
+    "detailsSection_file_size": [
+        "16.2 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>To use the Lync 2010 administrative template (Communicator.adm):</b> User rights to run Group Policy Object Editor (gpedit.msc).</li>\r\n<li><b>To view the documentation:</b> Microsoft Excel or Excel Viewer.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To use this download:</b>\r\n<br></br>\r\nClick <b>Download</b> and save the file to a directory on your computer. After you save the file, extract the files as you typically would. \r\n<br></br>\r\n<b>To use the Lync 2010 administrative template (Communicator.adm):</b>\r\n<br></br>\r\n<ol>\r\n<li>Copy the Communicator.adm file to the %windir%/inf folder.</li>\r\n<li>Open the Microsoft Management Console Group Policy Object Editor: click <b>Start</b>, click <b>Run</b>, type <b>gpedit.msc</b>, and then press ENTER.</li>\r\n<li>In the console tree, expand <b>Computer Configuration</b>, and then select <b>Administrative Templates</b>.</li>\r\n<li>On the <b>Action</b> menu, click <b>Add/Remove Templates</b>.</li>\r\n<li>In the Add/Remove Templates dialog box, click <b>Add</b>.</li>\r\n<li>In the Policy Templates dialog box, open the %windir\\inf directory and select Communicator.adm, and then click <b>Open</b>.</li>\r\n<li>In the console tree, expand <b>Classic Administrative Templates (ADM)</b>, and then expand <b>Microsoft Lync Policy Settings</b>. </li>\r\n<li>Enable or disable specific policy settings.</li>\r\n</ol>\r\n<br></br>\r\n<b>To remove this download:</b>\r\n<br></br>\r\nDelete the files from the directory where you saved them.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "27217",
+    "downloadPreload": true
+}

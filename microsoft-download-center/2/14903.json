@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Volume Activation Deployment Guide Windows 7",
+    "downloadDescription": "Use this guide to systemically deploy Volume Activation, including establishing a KMS host or using MAK within your environment.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Volume_Activation_Deployment_Guide_Windows7.docx",
+            "url": "https://download.microsoft.com/download/4/6/b/46b0c4a9-16a3-4a42-91f0-a50d41c0a360/Volume_Activation_Deployment_Guide_Windows7.docx",
+            "size": "525104",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:26 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide describes Microsoft\u00ae Volume Activation deployment concepts. Volume Activation consists of two technologies\u2014Key Management Service (KMS) and Multiple Activation Key (MAK)\u2014that allow Volume Licensing customers to activate Volume License editions of the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems. The Volume Licensing Service Center at https://www.microsoft.com/licensing/servicecenter/ provides more information about Volume Licensing.\r\n<br /><br />\r\nWhen planning to use Volume Activation, an organization must choose KMS, MAK, or any combination of the two. The activation methods chosen depend on the needs of the organization and the network infrastructure. For more information about planning a Volume Activation deployment, see the Volume Activation Planning Guide. \r\n<br /><br />\r\nNote   This document provides Volume Activation deployment guidance for the Windows 7 and Windows Server 2008 R2 operating systems. This guide does address interoperability between both generations of products, however. For more information about deploying Volume Activation for Windows Vista\u00ae and Windows Server 2008, see http://go.microsoft.com/fwlink/?LinkID=75674.\r\n<br /><br />\r\nNote   This guide describes procedures that run scripts and make changes to the registry. These rights can be delegated to selected information technology (IT) implementers, and the rights to change product keys and perform activations can even be assigned to users, although Microsoft does not recommend this practice.\r\n<br /><br />\r\nIf activation fails, see the Volume Activation Operations Guide for troubleshooting help. The guide includes an error code reference with steps for resolving common issues.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Volume_Activation_Deployment_Guide_Windows7.docx"
+    ],
+    "detailsSection_file_size": [
+        "512.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008 R2; Windows Server 2008; Windows Server 2008 Datacenter; Windows Server 2008 Enterprise; Windows Server 2008 for Itanium-based Systems; Windows Server 2008 Standard; Windows Vista; Windows Vista Business; Windows Vista Enterprise; Windows 7\r\n<UL>\r\n<LI>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=95e24c87-8732-48d5-8689-ab826e7b8fdf&DisplayLang=en\">Microsoft Word Viewer 2003</a> (available as a free download) can be used to view Word documents.</LI>\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 Datacenter",
+        "Windows Server 2008 Enterprise",
+        "Windows Server 2008 for Itanium-based Systems",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Standard",
+        "Windows Vista",
+        "Windows Vista Business",
+        "Windows Vista Enterprise"
+    ],
+    "installInstructionSection": "<OL>\n<LI>Click the <b>Download</b> button at the top of the page to start the download. </LI>\n<LI>Save the file to your preferred location on your computer.</LI>\n<LI>Go to the location where you saved the file.</LI><br />\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14903",
+    "downloadPreload": true
+}

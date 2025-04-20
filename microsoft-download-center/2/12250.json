@@ -1,0 +1,194 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2008 R2 Service Pack 1 Multilingual User Interface Language Packs",
+    "downloadDescription": "Enable a multilingual user interface in a Windows Server 2008 R2 environment",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "7601.17514.101119-1850_x64fre_server_langpacks_1-GRMSXLP1_DVD.iso",
+            "url": "https://download.microsoft.com/download/9/d/6/9d63bd1f-b7a1-4d3d-9767-671a02956edf/7601.17514.101119-1850_x64fre_server_langpacks_1-GRMSXLP1_DVD.iso",
+            "size": "2935537664",
+            "version": "2483139",
+            "datePublished": "7/15/2024 3:10:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Multilingual User Interface (MUI) Language Packs (Windows Server Language Packs) enable a multilingual user interface in a Windows Server 2008 R2 environment. Adding one or more language packs to a Windows Server 2008 R2 image enables one or more languages in the installed Windows Server operating system, allowing corporations to deploy the same Windows Server 2008 R2 image worldwide while still providing localized user interfaces.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2483139",
+    "detailsSection_file_name": [
+        "7601.17514.101119-1850_x64fre_server_langpacks_1-GRMSXLP1_DVD.iso"
+    ],
+    "detailsSection_file_size": [
+        "2.7 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "Each language pack is available as a specific .exe file. If you require further language packs select the appropriate language in the Quick Details section above.\r\n",
+    "additionalInformationSection": "Additional links to MUI documentation are listed in the \"Related Resources\" box. Note that MUI technology is shared between Windows client and Windows Server 2008 R2. Therefore the Windows MUI documentation applies to Windows Server 2008 R2 as well.",
+    "relatedResourcesSection": [
+        {
+            "title": "understanding Multilingual Deployments",
+            "url": "http://technet.microsoft.com/en-us/library/dd744336(WS.10).aspx"
+        },
+        {
+            "title": "add Language Interface Packs",
+            "url": "http://technet.microsoft.com/en-us/library/dd799270(WS.10).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "12250",
+    "downloadPreload": true
+}

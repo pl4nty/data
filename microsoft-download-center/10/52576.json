@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "BioNLP Shared Task 2011 Dev-Set Results",
+    "downloadDescription": "The Natural Language Processing group at Microsoft Research is sharing the development-set results for the BioNLP Shared Task 2011 to help analysis of whether there is an upper bound on recall and precision in the trigger-detection process. Last published: May 3, 2011.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BioNLP Shared Task 2011 Dev-Set Results-1.0.zip",
+            "url": "https://download.microsoft.com/download/b/8/6/b86d458d-28c2-48bd-9a99-d1831848a68b/BioNLP Shared Task 2011 Dev-Set Results-1.0.zip",
+            "size": "119127",
+            "version": "1.0",
+            "datePublished": "4/15/2024 4:09:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Natural Language Processing group at Microsoft Research is sharing the development-set results for the BioNLP Shared Task 2011 to help analysis of whether there is an upper bound on recall and precision in the trigger-detection process. It is interesting to consider whether there are annotations in the development set that cannot be predicted by participating systems.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BioNLP Shared Task 2011 Dev-Set Results-1.0.zip"
+    ],
+    "detailsSection_file_size": [
+        "116.3 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52576",
+    "downloadPreload": true
+}

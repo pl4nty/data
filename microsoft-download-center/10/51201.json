@@ -1,0 +1,382 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Standard 7 SP1 Application Templates",
+    "downloadDescription": "Application Templates for use with Windows Embedded Standard 7 SP1",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dotnet4.5_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/dotnet4.5_64bit.xml",
+            "size": "7218",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql_server_2012_express_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/sql_server_2012_express_sp1_64bit.xml",
+            "size": "9961",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ie10_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/ie10_sp1_64bit.xml",
+            "size": "8708",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mschart_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/mschart_sp1_32bit.xml",
+            "size": "1141",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dotnet4.6_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/dotnet4.6_32bit.xml",
+            "size": "7162",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "visio2010viewer_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/visio2010viewer_sp1_32bit.xml",
+            "size": "8252",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ie11_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/ie11_sp1_32bit.xml",
+            "size": "9105",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "visio2010viewer_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/visio2010viewer_sp1_64bit.xml",
+            "size": "8316",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "windowsupdatecleanup_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/windowsupdatecleanup_sp1_32bit.xml",
+            "size": "1349",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wmf4_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/wmf4_sp1_32bit.xml",
+            "size": "11759",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "silverlight5_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/silverlight5_sp1_32bit.xml",
+            "size": "7492",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "forefrontendpoint2010_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/forefrontendpoint2010_sp1_64bit.xml",
+            "size": "4160",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wmf4_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/wmf4_sp1_64bit.xml",
+            "size": "11851",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wedm_v1_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/wedm_v1_sp1_64bit.xml",
+            "size": "10996",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "kinectruntime1.0_sp1_32bits.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/kinectruntime1.0_sp1_32bits.xml",
+            "size": "8921",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "remote_desktop_connection_8_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/remote_desktop_connection_8_32bit.xml",
+            "size": "13894",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dotnet4.6_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/dotnet4.6_64bit.xml",
+            "size": "7218",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "windowsupdatecleanup_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/windowsupdatecleanup_sp1_64bit.xml",
+            "size": "1357",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sql_server_2012_express_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/sql_server_2012_express_sp1_32bit.xml",
+            "size": "9882",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "forefrontendpoint2010_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/forefrontendpoint2010_sp1_32bit.xml",
+            "size": "5555",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlserver2014express_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/sqlserver2014express_sp1_32bit.xml",
+            "size": "9544",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wmf5_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/wmf5_sp1_64bit.xml",
+            "size": "11851",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "kinectruntime1.0_sp1_64bits.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/kinectruntime1.0_sp1_64bits.xml",
+            "size": "8991",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ie9_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/ie9_sp1_32bit.xml",
+            "size": "6207",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ie10_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/ie10_sp1_32bit.xml",
+            "size": "8640",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ie9_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/ie9_sp1_64bit.xml",
+            "size": "6255",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wmf5_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/wmf5_sp1_32bit.xml",
+            "size": "11759",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "mschart_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/mschart_sp1_64bit.xml",
+            "size": "1147",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "dotnet4.5_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/dotnet4.5_32bit.xml",
+            "size": "7162",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "wedm_v1_sp1_32bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/wedm_v1_sp1_32bit.xml",
+            "size": "10912",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "silverlight5_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/silverlight5_sp1_64bit.xml",
+            "size": "7550",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "remote_desktop_connection_8_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/remote_desktop_connection_8_64bit.xml",
+            "size": "14004",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sqlserver2014express_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/sqlserver2014express_sp1_64bit.xml",
+            "size": "9620",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ie11_sp1_64bit.xml",
+            "url": "https://download.microsoft.com/download/d/b/d/dbd18a91-a2fa-46d3-be0c-f7f234c9ec76/ie11_sp1_64bit.xml",
+            "size": "9177",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:03:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These are application compatibility templates for these Microsoft products for use with the Windows Embedded Standard 7 (WES7) SP1 Toolkit <b>Image Configuration Editor (ICE)</b> tool.\r\n<ul>\r\n<li>Internet Explorer 9</li>\r\n<li>Internet Explorer 10</li>\r\n<li>Internet Explorer 11</li>\r\n<li>Visio 2010 Viewer</li>\r\n<li>Update Rollup 1 for Forefront Endpoint Protection 2010</li>\r\n<li>Silverlight 5</li>\r\n<li>Microsoft Chart Controls for .NET Framework 3.5</li>\r\n<li>Kinect for Windows Runtime</li>\r\n<li>SQL Server 2012 Express</li>\r\n<li>SQL Server 2014 Express</li>\r\n<li>Windows Embedded Device Manager 2011 SP1 Client</li>\r\n<li>Remote Desktop Connection 8 Client Update</li>\r\n<li>Microsoft .NET Framework 4.5</li>\r\n<li>Microsoft .NET Framework 4.6</li>\r\n<li>Windows Management Framework 4.0 (PowerShell)</li>\r\n<li>Windows Management Framework 5.0 (PowerShell)</li>\r\n<li>Windows Update Cleanup (Tool)</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "dotnet4.5_64bit.xml",
+        "sql_server_2012_express_sp1_64bit.xml",
+        "ie10_sp1_64bit.xml",
+        "mschart_sp1_32bit.xml",
+        "dotnet4.6_32bit.xml",
+        "visio2010viewer_sp1_32bit.xml",
+        "ie11_sp1_32bit.xml",
+        "visio2010viewer_sp1_64bit.xml",
+        "windowsupdatecleanup_sp1_32bit.xml",
+        "wmf4_sp1_32bit.xml",
+        "silverlight5_sp1_32bit.xml",
+        "forefrontendpoint2010_sp1_64bit.xml",
+        "wmf4_sp1_64bit.xml",
+        "wedm_v1_sp1_64bit.xml",
+        "kinectruntime1.0_sp1_32bits.xml",
+        "remote_desktop_connection_8_32bit.xml",
+        "dotnet4.6_64bit.xml",
+        "windowsupdatecleanup_sp1_64bit.xml",
+        "sql_server_2012_express_sp1_32bit.xml",
+        "forefrontendpoint2010_sp1_32bit.xml",
+        "sqlserver2014express_sp1_32bit.xml",
+        "wmf5_sp1_64bit.xml",
+        "kinectruntime1.0_sp1_64bits.xml",
+        "ie9_sp1_32bit.xml",
+        "ie10_sp1_32bit.xml",
+        "ie9_sp1_64bit.xml",
+        "wmf5_sp1_32bit.xml",
+        "mschart_sp1_64bit.xml",
+        "dotnet4.5_32bit.xml",
+        "wedm_v1_sp1_32bit.xml",
+        "silverlight5_sp1_64bit.xml",
+        "remote_desktop_connection_8_64bit.xml",
+        "sqlserver2014express_sp1_64bit.xml",
+        "ie11_sp1_64bit.xml"
+    ],
+    "detailsSection_file_size": [
+        "7.0 KB",
+        "9.7 KB",
+        "8.5 KB",
+        "1.1 KB",
+        "7.0 KB",
+        "8.1 KB",
+        "8.9 KB",
+        "8.1 KB",
+        "1.3 KB",
+        "11.5 KB",
+        "7.3 KB",
+        "4.1 KB",
+        "11.6 KB",
+        "10.7 KB",
+        "8.7 KB",
+        "13.6 KB",
+        "7.0 KB",
+        "1.3 KB",
+        "9.7 KB",
+        "5.4 KB",
+        "9.3 KB",
+        "11.6 KB",
+        "8.8 KB",
+        "6.1 KB",
+        "8.4 KB",
+        "6.1 KB",
+        "11.5 KB",
+        "1.1 KB",
+        "7.0 KB",
+        "10.7 KB",
+        "7.4 KB",
+        "13.7 KB",
+        "9.4 KB",
+        "9.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>WES7 SP1 Toolkit Image Configuration Editor (ICE)</li>\r\n<li>For full requirements, see <a href=\"https://msdn.microsoft.com/en-us/library/ff794877(v=winembedded.60).aspx\">MSDN</a></li>\r\n</ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded Standard 7 Service Pack 1"
+    ],
+    "installInstructionSection": "Click the Download button and follow the instructions",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Embedded Standard 7 on MSDN",
+            "url": "https://msdn.microsoft.com/en-US/library/dn609843(v=winembedded.60).aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51201",
+    "downloadPreload": true
+}

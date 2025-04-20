@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Azure SQL DW Load Scripts - Polybase",
+    "downloadDescription": "Azure SQL DW Load Scripts- Polybase",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Azure DW Load Scripts.zip",
+            "url": "https://download.microsoft.com/download/2/1/d/21d2788d-bec2-4c33-8b7d-3865d01ebe18/Azure DW Load Scripts.zip",
+            "size": "74318",
+            "version": "1.0",
+            "datePublished": "5/15/2024 5:05:00 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "READ ME.docx",
+            "url": "https://download.microsoft.com/download/2/1/d/21d2788d-bec2-4c33-8b7d-3865d01ebe18/READ ME.docx",
+            "size": "27601",
+            "version": "1.0",
+            "datePublished": "5/15/2024 5:05:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Sample T-SQL scripts to load table data into SQL DW / Synapse Analytics.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Azure DW Load Scripts.zip",
+        "READ ME.docx"
+    ],
+    "detailsSection_file_size": [
+        "72.6 KB",
+        "27.0 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL>\r\n\r\n<LI>The files comprise a zipped folder that contains T-SQL scripts and a readme file\r\n\r\n</LI>\r\n\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "<ol> \r\n\r\n<li>Choose the <b>Download</b> button on this page to start the download. <b>Go</b>.</li> \r\n\r\n<li>Do one of the following:</li> \r\n\r\n<ul> \r\n\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li> \r\n\r\n</ul> \r\n\r\n</ol> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103106",
+    "downloadPreload": true
+}

@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio 2005 Service Pack 1 XML Editor Security Update",
+    "downloadDescription": "A security issue has been identified leading to an XML Editor vulnerability your Windows-based system with Visual Studio 2005",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "vs80sp1-kb2251481-v3-x86-intl.exe",
+            "url": "https://download.microsoft.com/download/1/f/1/1f10c0c1-278e-4d07-922c-3400cd9c5f69/VS80sp1-KB2251481-v3-X86-INTL.exe",
+            "size": "14107544",
+            "version": "8.0",
+            "datePublished": "7/15/2024 3:26:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified leading to an XML Editor vulnerability your Windows-based system with Visual Studio 2005.  You can protect your computer by installing this update from Microsoft.  After you install this item, you may have to restart.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2251481",
+        "name": "KB2251481"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS11-049",
+        "name": "MS11-049"
+    },
+    "detailsSection_file_version": "8.0",
+    "detailsSection_file_name": [
+        "vs80sp1-kb2251481-v3-x86-intl.exe"
+    ],
+    "detailsSection_file_size": [
+        "13.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br />",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2008 R2",
+        "Windows 7",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "additionalInformationSection": "Please see the Knowledge Base Articles <a href=\"http://go.microsoft.com/fwlink/?LinkID=195034\">KB2251481</a> for more information.",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2251481",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=195034"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "26383",
+    "downloadPreload": true
+}

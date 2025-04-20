@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Dynamics 365 for Project Service Automation Power BI Change Tracking Solution",
+    "downloadDescription": "Dynamics 365 for PSA solution that enables Data Export Service change tracking for Power BI solution template",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PSA Power BI solution template change tracking solution.EXE",
+            "url": "https://download.microsoft.com/download/0/c/4/0c471846-519e-42ba-b85e-99d55d3e7963/PSA Power BI solution template change tracking solution.EXE",
+            "size": "158208",
+            "version": "1.0.0.0",
+            "datePublished": "7/15/2024 4:40:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This self-extracting archive contains a managed solution that enables change tracking for Dynamics 365 Project Service Automation entities necessary for the Data Export Service.  The Data Export Service extracts the relevant entities to the SQL Azure dB used by the Power BI solution template.  More information on the solution template is available on the Power BI solution template site. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0.0",
+    "detailsSection_file_name": [
+        "PSA Power BI solution template change tracking solution.EXE"
+    ],
+    "detailsSection_file_size": [
+        "154.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10\r\nA working Dynamics 365 for Project Service Automation implementation",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<br>Download the self-extracting archive file and open it.</br>\r\n<br>Import the managed solution zip file into your Dynamics 365 for Project Service Automation instance.</br>\r\n<br>You can follow these instructions for importing solutions on TechNet: <a HREF=\"https://technet.microsoft.com/en-us/library/dn531198.aspx#BKMK_ImportUpgradExportSolutions\">Import, update and export solutions</a> </br>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54769",
+    "downloadPreload": true
+}

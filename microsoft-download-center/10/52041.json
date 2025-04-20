@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Whitepaper: Windows apps concept mapping for Android and iOS developers",
+    "downloadDescription": "If you're a developer with Android or iOS skills and/or code, and you want to make the move to Windows 10 and the Universal Windows Platform (UWP), then this resource has all you need to map platform features\u2014and your knowledge\u2014between the three platforms.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_Apps_Concept_Mapping_for_iOS_and_Android_Developers.pdf",
+            "url": "https://download.microsoft.com/download/5/9/3/593a1dc3-a6d2-458e-b3d7-8220fa5a5236/Windows_Apps_Concept_Mapping_for_iOS_and_Android_Developers.pdf",
+            "size": "814465",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:04:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        }
+    ],
+    "detailsSection": "This document defines how fundamental software development concepts map across to Android, iOS and Windows. Developers new to Windows and familiar with Android or iOS will be able to use this reference guide to understand how to work with Windows. The guide will include a master table which draws out the relationship between each pair.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows_Apps_Concept_Mapping_for_iOS_and_Android_Developers.pdf"
+    ],
+    "detailsSection_file_size": [
+        "795.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows or Mac",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Open the document with any browser that supports PDF files or a PDF reader",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52041",
+    "downloadPreload": true
+}

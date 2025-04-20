@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Search Architectures for Microsoft SharePoint Server 2010",
+    "downloadDescription": "This model describes the physical and logical architecture components of the search system.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Search Model 3 of 4 - Search Architectures.xps",
+            "url": "https://download.microsoft.com/download/8/b/7/8b79c531-e81b-460b-a56e-21acd478b5a8/Search Model 3 of 4 - Search Architectures.xps",
+            "size": "704771",
+            "version": "2",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Search Model 3 of 4 - Search Architectures.pdf",
+            "url": "https://download.microsoft.com/download/8/b/7/8b79c531-e81b-460b-a56e-21acd478b5a8/Search Model 3 of 4 - Search Architectures.pdf",
+            "size": "597857",
+            "version": "2",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Search Model 3 of 4 - Search Architectures.vsd",
+            "url": "https://download.microsoft.com/download/8/b/7/8b79c531-e81b-460b-a56e-21acd478b5a8/Search Model 3 of 4 - Search Architectures.vsd",
+            "size": "1103360",
+            "version": "2",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model describes the logical and physical components of the crawl architecture and the query architecture for the search system in SharePoint Server 2010. The new components enable more redundancy within the server farm and each of the crawl components and query components can be scaled out separately based on the needs of the organization. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "Search Model 3 of 4 - Search Architectures.xps",
+        "Search Model 3 of 4 - Search Architectures.pdf",
+        "Search Model 3 of 4 - Search Architectures.vsd"
+    ],
+    "detailsSection_file_size": [
+        "688.3 KB",
+        "583.8 KB",
+        "1.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To edit the Visio version of the model, you must have Microsoft Office Visio 2007. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. <br/> To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a><br/>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "20066",
+    "downloadPreload": true
+}

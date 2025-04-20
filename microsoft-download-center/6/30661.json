@@ -1,0 +1,74 @@
+{
+    "error": "",
+    "downloadTitle": "Team Explorer Everywhere (Out-of-date Version v11 for legacy systems) for Team Foundation Server",
+    "downloadDescription": "For the newest version of Team Explorer Everywhere, please visit http://dl.microsoft.com/eclipse/tfs.  This is an older version (V11) of the Eclipse plug-in and the cross-platform, command-line client for Visual Studio Team Foundation Server, and the Team Foundation Service.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TFSEclipsePlugin-UpdateSiteArchive-11.0.0.1306.zip",
+            "url": "https://download.microsoft.com/download/4/2/7/427ac2cf-8a5b-4de9-8221-22f54b1903e2/TFSEclipsePlugin-UpdateSiteArchive-11.0.0.1306.zip",
+            "size": "17183393",
+            "version": "11.0.0.1306",
+            "datePublished": "7/15/2024 3:30:13 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "TEE-CLC-11.0.0.1306.zip",
+            "url": "https://download.microsoft.com/download/4/2/7/427ac2cf-8a5b-4de9-8221-22f54b1903e2/TEE-CLC-11.0.0.1306.zip",
+            "size": "13146530",
+            "version": "11.0.0.1306",
+            "datePublished": "7/15/2024 3:30:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For the newest version of Team Explorer Everywhere, please visit http://dl.microsoft.com/eclipse/tfs.  This is an old version (V11).  You can download Team Explorer Everywhere for TFS\u2014the Eclipse plug-in and the cross-platform, command-line client for Visual Studio Team Foundation Server and the Team Foundation Service Preview. This download includes Updates 1,2 and 3 of Team Explorer Everywhere for TFS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "11.0.0.1306",
+    "detailsSection_file_name": [
+        "TFSEclipsePlugin-UpdateSiteArchive-11.0.0.1306.zip",
+        "TEE-CLC-11.0.0.1306.zip"
+    ],
+    "detailsSection_file_size": [
+        "16.4 MB",
+        "12.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>Windows 8 (x86 and x64)</li>\n<li>Windows 7 (x86 and x64)</li>\n<li>Windows Vista (x86 and x64)</li>\n<li>Linux with GLIBC 2.3 to 2.11 (x86, x86_64, and\u00a0PowerPC)</li>\n<li>Mac OS X 10.5 to 10.7 (PowerPC and Intel)</li>\n<li>Solaris 8, 9, 10 (SPARC, x86, x86-64)</li>\n<li>AIX 5.2 to 6.1 (POWER)</li>\n<li>HP-UX 11i v1 to v3 (PA-RISC and Itanium)</li>\n<li>IDEs that are based on Eclipse 3.5 to 4.3 on Windows, Linux, Mac OS X, Solaris, AIX, or HP-UX.</li>\n<li>Any of the following versions of the Java runtime:</li>\n</ul>\n<ul>\n<li>Oracle Java\u2122 1.5 to 7, or IBM Java\u2122 1.5 to 6 on Microsoft \nWindows</li>\n<li>Apple Java\u2122 1.5 to 7 on Mac OS X</li>\n<li>Oracle Java\u2122 1.5 to 7 on Linux or Solaris</li>\n<li>IBM Java\u2122 1.5 to 6 on Linux or AIX</li>\n<li>HP Java\u2122 1.5 to 6 on HP-UX</li>\n</ul>\n<br />\n<br />\nWorks with Team Foundation Server 2013 Preview, Team Foundation Server 2012, the <a href=\"http://tfs.visualstudio.com/\">Team Foundation Service</a>, TFS 2010 and TFS 2008.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "HP-UX",
+        "Linux",
+        "Solaris",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1 Preview",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>Installing the Team Foundation Server Plug-in For Eclipse</b>\n<br />\n<br />\nYou must install the plug-in before you can use it in your development processes. Follow the steps in this procedure to install it.\n<br />\n<br />\nTo install from the Eclipse update site:\n<ol>\n<li>Open Eclipse.</li>\n<li>On the <b>Help menu</b>, click <b>Install New Software</b>.</li>\n<li>The <b>Install</b> dialog box appears.</li>\n<li>Choose the <b>Add</b> button.</li>\n<li>The <b>Add Site</b> dialog box appears.</li>\n<li>For the name, enter \"TFS plug-in for Eclipse\".</li>\n<li>Specify the location of the update site to be: <b>http://dl.microsoft.com/eclipse/tfs</b></li>\n<li>Choose the <b>OK</b> button</li>\n<li>In the list of features in the <b>Install</b> dialog box, select the check box that corresponds to the TFS plug-in for Eclipse.</li>\n<li>Choose the <b>Next</b> button two times.</li>\n<li>If you agree to the Microsoft Software License Terms, accept them and then choose the <b>Next</b> button.</li>\n<li>Restart Eclipse when prompted.</li>\n</ol>\n<br />\n<br />\nTo install the plug-in from the update site archive:\n<ol>\n<li>Download TFSEclipsePlugin-UpdateSiteArchive-11.0.0.1306.zip from the link on this page.</li>\n<li>Open Eclipse.</li> \n<li>On the <b>Help</b> menu, choose <b>Install New Software</b>.</li> \n<li>The <b>Install</b> dialog box appears.</li> \n<li>Choose the <b>Add</b> button.</li>\n<li>The <b>Add Site</b> dialog box appears.</li> \n<li>For the name, enter \"Local TFS plug-in for Eclipse update archive\".</li> \n<li>Choose the <b>Archive</b> button.</li> \n<li>Specify the location of the archive file (TFSEclipsePlugin-UpdateSiteArchive-11.0.0.1306.zip) and then choose the <b>Open</b> button.</li> \n<li>Choose the <b>OK</b> button.</li> \n<li>In the list of features in the <b>Install</b> dialog box, select the check box that corresponds to Team Explorer Everywhere.</li> \n<li>Choose the <b>Next</b> button two times.</li> \n<li>If you agree to the Microsoft Software License Terms, accept them and then choose the <b>Next</b> button.</li> \n<li>Restart Eclipse when you are prompted.</li> \n</ol>\n<br />\n<br />\n<b>Installing the Cross-platform Command-line Client for Team Foundation Server</b>\n<br />\n<br />\nYou can perform many version control operations from the Cross-platform Command-line Client for Team Foundation Server. Before you can use this client, you must install it and configure your shell or system path to include the installation folder.\n<br />\n<br />\nTo install the Cross-Platform Command-Line Client for Team Foundation Server\n<ol>\n<li>Unzip the archive (TEE-CLC-11.0.0.1306.zip file) that contains the client.</li>\n<li>Configure your shell or system path to include the folder to which you unzipped the archive.</li>\n<li>To verify that the client is working, at a command prompt, type <b>tf</b>, and then press the\u00a0<b>ENTER</b> key.</li>\n</ol>\nIf the client is correctly installed, output that starts with \"Microsoft Team Explorer Everywhere Command-line Client (version 11.0.0)\" appears.\n<br />\n<br />\nFor information about any of the commands, you can <b>type tf help <i>Command</i></b>, where <b><i>Command</i></b> is the name of the command for which you want information. For example, you could type <b>tf help checkin</b>.",
+    "additionalInformationSection": "For important information about this release, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=255962\">Visual Studio 2012 Readme File</a>",
+    "relatedResourcesSection": [
+        {
+            "title": "team Foundation Server: Eclipse and Cross-Platform Tools Forum",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=184187"
+        },
+        {
+            "title": "visual Studio Developer Center",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30661",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server Deployment Options in Azure",
+    "downloadDescription": "SQL Server Deployment Options in Azure",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL Server Deployment in Azure .pdf",
+            "url": "https://download.microsoft.com/download/0/e/4/0e47ced8-0ff1-4557-a921-8927ab28f680/SQL Server Deployment in Azure .pdf",
+            "size": "577933",
+            "version": "1.0",
+            "datePublished": "7/15/2024 5:04:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guidance document was created to review options you have to migrate your SQL server workload in \r\nAzure as each option is designed to support specific use cases. Azure services include both IaaS and PaaS \r\nofferings which means you can have your SQL Server workloads running in a hosted infrastructure (IaaS) or \r\nin a managed service (PaaS). However, within Azure PaaS, Azure has multiple deployment options and each \r\ndeployment option has multiple service tiers. Purpose of this document is to help you narrow down the \r\noptions and do further due diligence to finalize the target platform for your SQL workload.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL Server Deployment in Azure .pdf"
+    ],
+    "detailsSection_file_size": [
+        "564.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Readable document",
+    "systemRequirementsSection_supportedOS": [
+        "Misc"
+    ],
+    "installInstructionSection": "Download the document. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103472",
+    "downloadPreload": true
+}

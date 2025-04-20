@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Office 2010 KMS Host License Pack",
+    "downloadDescription": "Volume licensing editions of Microsoft Office 2010 suites and applications, Microsoft Project 2010 and Microsoft Visio 2010 require activation.  Key Management Service (KMS) is a local volume activation method.  To activate your Office 2010 client installations with KMS, you will need to set up a KMS host.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "KeyManagementServiceHost_en-us.exe",
+            "url": "https://download.microsoft.com/download/e/4/e/e4ef2b72-9f16-4d5f-9a1d-d9be39a1c127/KeyManagementServiceHost_en-us.exe",
+            "size": "947142",
+            "version": "14.0.6133.5000",
+            "datePublished": "7/15/2024 3:27:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "An Office 2010 KMS host is required if you want to use KMS activation for your volume license editions of Office 2010 suites or applications, Microsoft Project 2010 or Microsoft Visio 2010.  When Office 2010 volume edition client products are installed, they will automatically search for a KMS host on your organization\u2019s DNS server for activation.  All volume editions of Office 2010 client products are pre-installed with a KMS client key, so you will not need to install a product key.<br />\n<br />\nThis download contains an executable file that will extract and install KMS host license files.  Run this file on either 32-bit or 64-bit supported Windows operating systems.  These license files are required for the KMS host service to recognize Office 2010 KMS host keys.  It will also prompt you to enter your Office 2010 KMS host key and activate that key.  After this is done, you may need to use the slmgr.vbs script to further configure your KMS host.\n<br />\n<br />\n<b>Note: Online activation and phone activation are now supported on Windows 8 and Windows Server 2012</b>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0.6133.5000",
+    "detailsSection_file_name": [
+        "KeyManagementServiceHost_en-us.exe"
+    ],
+    "detailsSection_file_size": [
+        "924.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Small Business Server 2003 and Windows Server 2016 are not supported.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Follow these steps to set up a KMS host:<br /><br />\n1. If you are running Windows Server 2003, you will need to perform this extra step. You will need to download and run the files below:<br /><br />\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyId=81D1CB89-13BD-4250-B624-2F8C57A1AE7B\">Windows Server 2003 32-bit</a>\n<br /><br />\n<a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=03fe69b2-6244-471c-80d2-b4171fb1d7a5\">Windows Server 2003 64-bit</a><br /><br />\n2. Download and run the KeyManagementServiceHost.exe file on this page on a supported operating system.<br /><br />\n3. Enter your Office 2010 KMS host key when prompted. <br /><br />\n4. Click OK to continue with activation. <br /><br />\n5. Open port 1688 and allow the KMS host service through the firewall. <br /><br /><ul>\na. Windows 7 volume editions or Windows Server 2008 R2. <br /><br />\ni. Open Control Panel and click on the Windows Firewall icon. <br /><br />\nii. Click on the \u201cAllow a program through Windows Firewall\u201d link. <br /><br />\niii. Click on the Change Settings button. <br /><br />\niv. Check the box for Key Management Service. <br /><br /></ul>\n6. Read the documentation to learn more about configuring your KMS host (including activation by telephone) with slmgr.vbs at <a href=\"http://www.activateoffice.com\">TechNet</a>. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "25095",
+    "downloadPreload": true
+}

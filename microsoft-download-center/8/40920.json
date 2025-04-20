@@ -1,0 +1,153 @@
+{
+    "error": "",
+    "downloadTitle": "Cumulative Security Update for ActiveX Killbits for Windows XP (KB2900986)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS13-090. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsXP-KB2900986-x86-ENU.exe",
+            "url": "https://download.microsoft.com/download/7/d/d/7dd50845-1f44-4455-a062-615dcf0331f4/WindowsXP-KB2900986-x86-ENU.exe",
+            "size": "516848",
+            "version": "2900986",
+            "datePublished": "7/15/2024 3:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        }
+    ],
+    "detailsSection": "\n      Security issues have been identified in Active X controls that could allow an attacker to compromise a system running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2900986",
+        "name": "KB2900986"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS13-090",
+        "name": "MS13-090"
+    },
+    "detailsSection_file_version": "2900986",
+    "detailsSection_file_name": [
+        "WindowsXP-KB2900986-x86-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "504.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      This update applies with the following operating systems:<UL>\n        \n        <LI>Windows XP SP3</LI>\n      </UL>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "\n      <OL>\n        <LI>\n          Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.\n        </LI>\n        <LI>Do one of the following:</LI>\n        <UL>\n          <LI>\n            To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.\n          </LI>\n          <LI>\n            To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.\n          </LI>\n        </UL>\n      </OL>\n    ",
+    "additionalInformationSection": "\n      <B>Other critical security updates are available:</B> To find the latest security updates for you visit <A HREF=\"http://windowsupdate.microsoft.com \">Windows Update</A> and click \"Express Install.\" To have the latest security updates delivered directly to your computer, visit <A HREF=\"http://www.microsoft.com/athome/security/protect/default.aspx \">Protect your PC</A> and follow the 3 easy steps to ensure you\u2019re protected.<br />\n    ",
+    "relatedResourcesSection": [
+        {
+            "title": "security Guidance Center for Developers & IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1396223"
+        },
+        {
+            "title": "maintain Security with Internet Explorer",
+            "url": "http://go.microsoft.com/?linkid=1396224"
+        },
+        {
+            "title": "microsoft Security Bulletin MS13-090",
+            "url": "http://go.microsoft.com/fwlink/?Linkid=329834"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40920",
+    "downloadPreload": true
+}

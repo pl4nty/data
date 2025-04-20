@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2019 Integration Pack for HP Operations Manager",
+    "downloadDescription": "The Integration Pack for HP Operations Manager is an add-on for System Center 2019 Orchestrator that enables you to create activities within runbooks that make requests to the HP Operations Manager product to get data or perform functions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2019_IP_HP_OM.EXE",
+            "url": "https://download.microsoft.com/download/5/b/c/5bc3da8a-4b59-40f3-a7a0-b10a4334f6c5/SC2019_IP_HP_OM.EXE",
+            "size": "758320",
+            "version": "10.19.19",
+            "datePublished": "7/15/2024 3:04:51 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Integration Pack for HP Operations Manager is an add-on for System Center 2019 Orchestrator that enables you to create activities within runbooks that make requests to the HP Operations Manager product to get data or perform functions.<br />\n<br />\n<b>Feature Summary </b><br />\nThis integration pack adds the HP Operations Manager category to the Activity pane in the Runbook Designer. This category contains the following activities: <br />\n<ul>\n<li> Acknowledge Message</li> \n<li> Add Annotation</li> \n<li> Create Message</li> \n<li> Delete Annotation</li> \n<li> Delete Custom Attribute</li> \n<li> Get Annotation</li> \n<li> Get Message</li> \n<li> Launch Tool</li> \n<li> Monitor Message</li> \n<li> Own/Disown Message</li> \n<li> Set Custom Attribute</li> \n<li> Update Annotation</li> \n<li> Update Message</li> \n</ul><br />\n<b>Release History </b><br />\n<ul>\n<li> 2 April 2019- Original English release, version 10.19.19</li>\n</ul>\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.19.19",
+    "detailsSection_file_name": [
+        "SC2019_IP_HP_OM.EXE"
+    ],
+    "detailsSection_file_size": [
+        "740.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<b>Other Software: </b>System Center 2019 - Orchestrator and future releases\r\n<ul>\r\n<li> RAM \u2013 minimum 1GB recommended 2GB </li>\r\n<li> Disk space minimum 200MB</li>\r\n<li> CPU Dual Core or better</li>\r\n<li> .Net 3.5</li>\r\n</ul>\n</ul>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Download the package and extract the files to your computer by running the .exe.  <br/>\r\n\r\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hp OM Integration Pack",
+            "url": "https://docs.microsoft.com/en-us/system-center/orchestrator/hp-operations-manager-integration-pack?view=sc-orch-2019"
+        },
+        {
+            "title": "system Center Homepage",
+            "url": "https://www.microsoft.com/en-us/cloud-platform/system-center"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58108",
+    "downloadPreload": true
+}

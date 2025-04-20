@@ -1,0 +1,106 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Team Foundation Server 2015",
+    "downloadDescription": "Visual Studio Team Foundation Server 2015 is a source-code-control, project-management, and team-collaboration platform at the core of the Microsoft suite of Application Lifecycle Management (ALM) tools, which help teams be more agile, collaborate more effectively, and deliver quality software more consistently.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "tfs_server.exe",
+            "url": "https://download.microsoft.com/download/d/5/5/d55b3b8c-a270-495f-bef9-846ab05f294b/tfs_server.exe",
+            "size": "1886000",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:46:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "tfs2015_server_enu.iso",
+            "url": "https://download.microsoft.com/download/d/5/5/d55b3b8c-a270-495f-bef9-846ab05f294b/tfs2015_server_enu.iso",
+            "size": "955232256",
+            "version": "2015",
+            "datePublished": "7/15/2024 3:46:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Visual Studio Team Foundation Server 2015 provides the collaboration hub at the center of the Microsoft Application Lifecycle Management (ALM) solution. By automating the software delivery process, entire teams can track team actions, transactions, and project artifacts such as requirements, tasks, bugs, source code, build results, and test results. Collaborate, manage your repositories and automate build processes. Your team might be small and just getting started, but with Team Foundation Server, even the smallest team can go big.\n\nTo find out what's new in Team Foundation Server 2015, see the <a href=\"http://www.visualstudio.com/news/tfs2015-vs\"> Team Foundation Server 2015 Release Notes</a>. For a list of fixed bugs and known issues, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=613262\"> Team Foundation Server 2015 KB Article</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2015",
+    "detailsSection_file_name": [
+        "tfs_server.exe",
+        "tfs2015_server_enu.iso"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "911.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "For additional information on Operating System support, see the <a href=\"https://www.visualstudio.com/en-us/visual-studio-2015-compatibility-vs\">Visual Studio 2015 Compatibility page</a>.\n\n<b>Hardware Requirements:</b>\n<ul>\n<li>2.13 GHz or faster processor</li>\n<li>1 GB or more RAM</li>\n<li>8 GB or more of available hard disk space</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server Tech Preview ",
+        "Windows Small Business Server 2011 Standard"
+    ],
+    "installInstructionSection": "Choose one of these installation options:\n<ul>\n<li>Install over the Internet:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .exe option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>To install now, choose the <b>Run</b> button.</li>\n<li>To download an installer that you can run later, choose the <b>Save</b> button. (When you install, the computer must be connected to the Internet.)</li>\n<li>To create a local copy to install offline, choose the <b>Save</b> button, open a command prompt at that location and run the .exe with the /layout switch</li>\n</ul>\n</ul>\n<li>To download an image to burn on a DVD:</li>\n<ul>\n<li>On this page, choose the <b>Download</b> button.</li> \n<li>Select the .iso option and then choose the <b>Next</b> button.</li>\n<ul>\n<li>Choose the <b>Save</b> button to download a DVD5 ISO image so that you can burn a DVD later.</li>\n<ul>\n<li>After downloading the ISO file, you should use the <a href=\"http://support.microsoft.com/kb/841290\">File Checksum Integrity Verifier</a> tool to calculate and verify that the SHA-1 value for this file matches the value listed on the <a href=\" http://go.microsoft.com/fwlink/?LinkId=517606\">Visual Studio 2015 ISO Files SHA-1 Values</a> page.</li> \n</ul>\n</ul>\n</ul>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio Developer Center:",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=241663"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "48260",
+    "downloadPreload": true
+}

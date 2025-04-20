@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Visual C++ 2008 Keybinding Reference Poster",
+    "downloadDescription": "List of keybidings for Visual C++ language within Visual Studio and Visual C++ Express 2008",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VisualCpp2008Poster.zip",
+            "url": "https://download.microsoft.com/download/7/2/5/725ffa78-a24b-407b-8a67-3eba00d193c7/VisualCpp2008Poster.zip",
+            "size": "669261",
+            "version": "1.0",
+            "datePublished": "4/15/2024 3:07:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "A high quality, print-ready PDF containing the useful keybindings for developers that choose the Visual C++ developer profile in Visual Studio 2008 or use Visual C++ Express.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VisualCpp2008Poster.zip"
+    ],
+    "detailsSection_file_size": [
+        "653.6 KB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Adobe Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and unzip PDF file. <br />\nSend to your favorite full color printer/copier.<br />\nPin on wall<br />\nCode<br />\nSmile",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17399",
+    "downloadPreload": true
+}

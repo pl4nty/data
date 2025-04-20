@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 IoT Core",
+    "downloadDescription": "These are the Windows 10 IoT Core Packages that enable the user to build a Windows 10 IoT Core runtime image. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "14393.67.160804-2231.rs1_release_amd64fre_IOTCORE_PACKAGES.iso",
+            "url": "https://download.microsoft.com/download/3/1/9/319f5fdb-4e78-4c20-8696-f71e8b6aa34a/14393.67.160804-2231.rs1_release_amd64fre_IOTCORE_PACKAGES.iso",
+            "size": "2436921344",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:47:46 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These are the Windows 10 IoT Core Packages that enable the user to build a Windows 10 IoT Core runtime image. Windows 10 IoT Core is an edition of Windows 10 designed for building smart things that\u2019s optimized for cost, resources and is available at no cost for all device makers. It\u2019s built to power intelligent edge devices with either no displays like IoT gateways or with displays such as micro-kiosks. \r\n\r\nLearn more about Windows 10 IoT Core <a href=\"http://go.microsoft.com/fwlink/?LinkID=619770\">here</a>.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "14393.67.160804-2231.rs1_release_amd64fre_IOTCORE_PACKAGES.iso"
+    ],
+    "detailsSection_file_size": [
+        "2.3 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Operating system\r\n\u2022 Windows 10 (Build 10140 or higher)\r\n\r\n Learn about other system requirements <a href=\"http://go.microsoft.com/fwlink/?LinkID=618404\">here</a>.\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the Download button on this page to start the download.</li>\r\n<li>Click Save to save this program to disk.</li>\r\n</ol>\n",
+    "additionalInformationSection": "<a href=\"http://www.windowsondevices.com\">WindowsOnDevices.com</a>\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "windows 10 Insider Program",
+            "url": "https://insider.windows.com/"
+        },
+        {
+            "title": "visual Studio 2015",
+            "url": "https://www.visualstudio.com/vs-2015-product-editions"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "53898",
+    "downloadPreload": true
+}

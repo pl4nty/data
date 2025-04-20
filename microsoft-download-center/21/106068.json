@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Customer Advisory Board for Azure Logic Apps Program Terms",
+    "downloadDescription": "Legal terms for Customer Advisory Board for Azure Logic Apps Program",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Customer Advisory Board Program for Azure Logic Apps Terms.pdf",
+            "url": "https://download.microsoft.com/download/c/9/d/c9d15337-f1b0-4668-bd69-59845698022d/Microsoft Customer Advisory Board Program for Azure Logic Apps Terms.pdf",
+            "size": "209880",
+            "version": "1.0",
+            "datePublished": "5/29/2024 7:38:26 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Customer Advisory Board (CAB) Program for Azure Logic Apps, is a Microsoft Azure Logic Apps Product Group led program with the purpose of improving the customer feedback loop, review product strategy, discuss feasibility of new features and drive industry alignment across our customers.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft Customer Advisory Board Program for Azure Logic Apps Terms.pdf"
+    ],
+    "detailsSection_file_size": [
+        "205.0 KB"
+    ],
+    "detailsSection_file_date": "5/29/2024",
+    "systemRequirementsSection": "Supported Operating Systems\r\n\r\nWindows Server 2019, Windows Server 2022, Windows 10, Windows 11 This release requires a PDF Viewer for Windows.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 11"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download, or select a different language from the Change language drop-down list and click Go. \r\n2. Do one of the following: \r\no To open the file immediately, click Open. \r\no To save the download to your computer to open it at a later time, click Save.",
+    "relatedResourcesSection": [
+        {
+            "title": "azure Logic Apps",
+            "url": "https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "106068",
+    "downloadPreload": true
+}

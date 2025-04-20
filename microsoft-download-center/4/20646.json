@@ -1,0 +1,99 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 Client Access Guide",
+    "downloadDescription": "This guide provides information about working with Microsoft\u00ae Exchange Server 2003 and client access. It describes the new features for Exchange 2003 and Office Outlook\u00ae 2003, in addition to improvements in Outlook Web Access 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3ClientAccGuide.doc",
+            "url": "https://download.microsoft.com/download/6/6/e/66e2971b-aa3d-4ac3-84b1-f9d25498233e/E2k3ClientAccGuide.doc",
+            "size": "931328",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:10:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This guide provides information about working with Microsoft\u00ae Exchange Server 2003 and client access. It describes the new features for Exchange Server 2003 and Microsoft Office Outlook\u00ae 2003, in addition to improvements in Outlook Web Access 2003. It contains configuration information, such as how to secure your messaging environment, deploy the server architecture, and configure Exchange servers for your supported client access methods. This guide also describes how to manage protocols, Exchange Virtual Server, Outlook Web Access, Exchange ActiveSync\u00ae, and Outlook Mobile Access.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3ClientAccGuide.doc"
+    ],
+    "detailsSection_file_size": [
+        "909.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP",
+        "Windows XP Service Pack 1"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "exchange Server 2003 Client Access Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47568"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20646",
+    "downloadPreload": true
+}

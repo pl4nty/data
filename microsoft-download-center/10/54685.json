@@ -1,0 +1,97 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business, SDN Interface 3.0",
+    "downloadDescription": "The Skype for Business, SDN (Software-Defined Networking) Interface allows developers to build applications and services that can monitor, isolate and correct issues on the network that affect Skype for Business quality of experience.  The installer application also provides customers with the ability to interface with qualified 3rd party applications built on the Skype for Business, SDN API.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SDN Interface_3.0_Release Notes.pdf",
+            "url": "https://download.microsoft.com/download/c/e/0/ce0a84c4-19ac-4b78-9d1a-57b910456776/SDN Interface_3.0_Release Notes.pdf",
+            "size": "725783",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SDNInterface.Schema.D_3.0.xsd",
+            "url": "https://download.microsoft.com/download/c/e/0/ce0a84c4-19ac-4b78-9d1a-57b910456776/SDNInterface.Schema.D_3.0.xsd",
+            "size": "94665",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SkypeForBusinessSDNManager_3.0.msi",
+            "url": "https://download.microsoft.com/download/c/e/0/ce0a84c4-19ac-4b78-9d1a-57b910456776/SkypeForBusinessSDNManager_3.0.msi",
+            "size": "4759552",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SkypeForBusinessDialogListener_3.0.msi",
+            "url": "https://download.microsoft.com/download/c/e/0/ce0a84c4-19ac-4b78-9d1a-57b910456776/SkypeForBusinessDialogListener_3.0.msi",
+            "size": "3338240",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Skype_for_Business_SDN_Interface_3.0.pdf",
+            "url": "https://download.microsoft.com/download/c/e/0/ce0a84c4-19ac-4b78-9d1a-57b910456776/Skype_for_Business_SDN_Interface_3.0.pdf",
+            "size": "2130347",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SDNInterface.Schema.C_3.0.xsd",
+            "url": "https://download.microsoft.com/download/c/e/0/ce0a84c4-19ac-4b78-9d1a-57b910456776/SDNInterface.Schema.C_3.0.xsd",
+            "size": "63204",
+            "version": "3.0",
+            "datePublished": "7/15/2024 4:19:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Skype for Business Server and Lync Server provide customers with an unmatched unified communications and collaboration experience. Since both Skype for Business and Lync rely on the underlying network, sometimes the quality of experience can be affected by underperforming or improperly configured network elements. Applications built on the Skype for Business, SDN Interface provide the ability to quickly detect quality-affecting issues on the network, and deliver prescriptive resolutions and traffic prioritization.\r\n<br/><br/>\r\nA qualified 3rd party Skype for Business, SDN Interface solution is required for this download.  You can find qualified solutions built on the Skype for Business, SDN Interface at this <a href=\"http://technet.microsoft.com/en-us/lync/hh972602.aspx\">list of qualified Skype for Business, SDN Interface solution providers on TechNet</a>.\r\n<br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "SDN Interface_3.0_Release Notes.pdf",
+        "SDNInterface.Schema.D_3.0.xsd",
+        "SkypeForBusinessSDNManager_3.0.msi",
+        "SkypeForBusinessDialogListener_3.0.msi",
+        "Skype_for_Business_SDN_Interface_3.0.pdf",
+        "SDNInterface.Schema.C_3.0.xsd"
+    ],
+    "detailsSection_file_size": [
+        "708.8 KB",
+        "92.4 KB",
+        "4.5 MB",
+        "3.2 MB",
+        "2.0 MB",
+        "61.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\r\n<b> PLEASE NOTE:  Skype for Business, SDN Interface supports Skype for Business Server 2019, Skype for Business Server 2015, Lync Server 2013 AND Lync Server 2010 deployments</b>\r\n<br />\r\n<br/>\r\nThe following requirements must be met for using Skype for Business, SDN Interface:\r\n<ul>\r\n<li>Valid licenses for Skype for Business Server 2019, Skype for Business Server 2015, Lync Server 2010 or Lync Server 2013 are required</li>\r\n<li>Supported operating systems are the same supported operating systems for Skype for Business Server 2015, Lync Server 2010 and Lync Server 2013 </li>\r\n<li>.NET 4.5 or higher for the Skype for Business, Dialog Listener.</li>\r\n<li>.NET 4.5 or higher for the Skype for Business, SDN Manager</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 SP1"
+    ],
+    "installInstructionSection": "This download includes an installation guide that should be read prior to beginning installation. ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54685",
+    "downloadPreload": true
+}

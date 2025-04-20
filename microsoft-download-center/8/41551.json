@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft \"Roslyn\" CTP - License Extension",
+    "downloadDescription": "This license extends the expiration date of the September 2012 Roslyn CTP",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ROSLYN COMMUNITY TECHNOLOGY PREVIEW-Pre-Release-12DEC2013.pdf",
+            "url": "https://download.microsoft.com/download/4/9/e/49e4bd8a-97e4-4446-8ac3-e101688fee9a/ROSLYN COMMUNITY TECHNOLOGY PREVIEW-Pre-Release-12DEC2013.pdf",
+            "size": "248750",
+            "version": "v.3",
+            "datePublished": "7/15/2024 3:19:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The terms within the in product EULA (Microsoft Software License Terms) of the September 2012 Roslyn CTP are still valid but the term of the license is being extended as shown in the updated document here.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "v.3",
+    "detailsSection_file_name": [
+        "ROSLYN COMMUNITY TECHNOLOGY PREVIEW-Pre-Release-12DEC2013.pdf"
+    ],
+    "detailsSection_file_size": [
+        "242.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000 Server",
+        "Windows 7 Professional",
+        "Windows 8",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "none",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft \"Roslyn\" CTP on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=228399"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41551",
+    "downloadPreload": true
+}

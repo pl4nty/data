@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "AES-CBC + Elephant diffuser",
+    "downloadDescription": "The specifications of the AES-CBC + diffuser algorithm used in BitLocker Drive Encryption",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BitLockerCipher200608.pdf",
+            "url": "https://download.microsoft.com/download/0/2/3/0238acaf-d3bf-4a6d-b3d6-0a0be4bbb36e/BitLockerCipher200608.pdf",
+            "size": "189313",
+            "version": "2006-08",
+            "datePublished": "7/15/2024 3:11:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Bitlocker Drive Encryption feature of Windows Vista poses an interesting set of security and performance requirements on the encryption algorithm used for the disk data. We discuss why no existing cipher satisfies the requirements of this application and document our solution which consists of using AES in CBC mode with a dedicated diffuser to improve the security against manipulation attacks.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2006-08",
+    "detailsSection_file_name": [
+        "BitLockerCipher200608.pdf"
+    ],
+    "detailsSection_file_size": [
+        "184.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "BitLocker is only availble in the Enterprise and Ultimate editions of Windows Vista",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7 Professional",
+        "Windows 8 Pro",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13866",
+    "downloadPreload": true
+}

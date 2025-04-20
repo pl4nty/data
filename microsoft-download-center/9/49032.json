@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Visual Studio Tools for Applications 2015 SDK",
+    "downloadDescription": "Microsoft Visual Studio Tools for Applications lets you enable end users to customize your existing applications using Visual Basic and Visual C#. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "vsta_sdk.exe",
+            "url": "https://download.microsoft.com/download/c/3/2/c325727c-02f1-4ed9-a33b-e90fb1f46f75/vsta_sdk.exe",
+            "size": "11389304",
+            "version": "14.0",
+            "datePublished": "7/15/2024 3:49:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Visual Studio Tools for Applications lets you enable end users to customize your existing applications using Visual Basic and Visual C#. Since the VSTA 2012 release, several changes have been introduced to the licensing model as well as to how you integrate VSTA into your applications: \r\n<li>There is no longer a licensing fee for the VSTA redistributable components. Your organization can distribute and use the VSTA redistributable components free of charge. </li>\r\n<li>VSTA no longer provides its own Visual Studio Environment for authoring macros. Instead, a supported version of Visual Studio Professional (Premium, or Ultimate) is required to develop VSTA macros and add-ins. VSTA has two primary modes of operation: with Visual Studio Professional (Premium, or Ultimate) installed and standalone. In standalone mode, VSTA provides your application with the means to load, compile, and run end user customizations. With a supported version of Visual Studio Professional (Premium, or Ultimate) installed on your user\u2019s machine, VSTA extends that functionality with the means to edit and debug those customizations. </li>\r\n<li>VSTA 2015 supports .NET Framework 4.5.1. </li>\r\n<li>VSTA 2015 presents a simplified API for integrating design-time experiences into your application using either managed (Visual C# or Visual Basic .NET) or unmanaged (Visual C++) code. It simplifies tasks such as finding the installation of Visual Studio, launching the external process, and synchronizing save state, making integration significantly easier than previous versions. </li>\r\n<li>VSTA 2015 provides the ability to upgrade VSTA projects from Visual Studio 2005 and Visual Studio 2008, compile, and run them. It also maintains compatibility with VSTA 2012 and VSTA 2013 projects.</li>\r\n<li>VSTA no longer requires your application host to provide a runtime library in order to run. This gives you the flexibility to choose the method of running user code best tailored to the host application. </li>\r\n<br/>\r\nThe Microsoft Visual Studio Tools for Applications 2013 - Update 1 release enables the following two scenarios, which are also included in VSTA 2015:\r\n<li>Provides an option to specify whether the VSTA customization project files will be auto-saved when the VS IDE loses focus. </li>\r\n<li>Triggers a new event when a pending change to a VSTA customization project is committed. </li>\r\n<br/>\r\nMore information can be found in the <a src=\"https://msdn.microsoft.com/en-us/library/dn707392.aspx\">VSTA documentation at MSDN</a>. \r\n<br/>\r\nHave any questions on VSTA? Check out the VSTA forum at <a src=\"https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsta\">https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsta</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.0",
+    "detailsSection_file_name": [
+        "vsta_sdk.exe"
+    ],
+    "detailsSection_file_size": [
+        "10.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Supported Microsoft Visual Studio version:</b><br/>\r\nMicrosoft Visual Studio 2012 Professional, Premium or Ultimate<br/>\r\nMicrosoft Visual Studio 2013 (Community Edition or above)<br/>\r\nOr, <br/>\r\nMicrosoft Visual Studio 2015 (Community Edition or above)<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "n/a",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Visual Studio Tools for Applications 2015",
+            "url": "http://www.microsoft.com/en-US/download/details.aspx?id=49031"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "49032",
+    "downloadPreload": true
+}

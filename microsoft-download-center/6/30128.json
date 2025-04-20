@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: BOM Calculation Using Costing Sheet",
+    "downloadDescription": "This white paper includes the setup requirements that are associated with specific BOM calculation results. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2009 BOM calculation using Costing Sheet.pdf",
+            "url": "https://download.microsoft.com/download/9/1/8/9182f5b3-3eae-4d6e-a4cd-71f204e52f61/Microsoft Dynamics AX 2009 BOM calculation using Costing Sheet.pdf",
+            "size": "1636806",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The document describes the setup requirements for a costing sheet and includes an overview of how the costing sheet is associated with components such as cost groups, cost categories, and costing versions. The document also contains examples of how the setup affects BOM calculation results. The descriptions are intended to guide you when you set up the application for the calculation of direct and indirect cost on manufactured items.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2009 BOM calculation using Costing Sheet.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the file in PDF format.</LI>\r\n<LI>Save the file to your computer.</LI>\r\n<LI>Repeat these steps on each computer where you want to install the file, or save the file to a shared folder where other others can access it.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30128",
+    "downloadPreload": true
+}

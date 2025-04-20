@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Windows security audit events",
+    "downloadDescription": "This spreadsheet details the security audit events for Windows.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WindowsSecurityAuditEvents.xlsx",
+            "url": "https://download.microsoft.com/download/8/e/1/8e11ad26-98a1-4ee3-9f7f-1db4eb18badf/WindowsSecurityAuditEvents.xlsx",
+            "size": "70075",
+            "version": "November 2015",
+            "datePublished": "7/15/2024 4:08:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can use Windows security and system logs to record and store collected security events so that you can track key system and network activities to monitor potentially harmful behaviors and to mitigate those risks. You customize system log events by configuring auditing based on categories of security events such as changes to user account and resource permissions, failed attempts for user logon, failed attempts to access resources, and attempts to modify system files. The information in this download can help you analyze the data included in event log data. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "November 2015",
+    "detailsSection_file_name": [
+        "WindowsSecurityAuditEvents.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "68.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To view this download, you need to use Microsoft Office Excel or Excel Viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "50034",
+    "downloadPreload": true
+}

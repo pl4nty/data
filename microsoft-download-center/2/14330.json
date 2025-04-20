@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Visual Basic 6.0 to Visual Basic .NET FMStock Upgrade Case Study - Post Upgrade",
+    "downloadDescription": "Visual Basic Upgrade Case Study that illustrates the upgrade of FMStocks from Visual Basic 6.0 to Visual Basic .NET.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "fmstocks_net.msi",
+            "url": "https://download.microsoft.com/download/3/e/8/3e8c9b23-99e4-44cd-98d2-3e9594f31fab/FMStocks_NET.msi",
+            "size": "1329664",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:13 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This case study showcases the process of upgrading a Microsoft Visual Basic 6.0 application to a functionally equivalent Visual Basic .NET application using the Visual Basic Upgrade Assessment Tool, the Visual Basic Upgrade Wizard, and the guidance chapters using the Fitch & Mather Stocks 2000 (FMStocks 2000) application as a reference application. It describes the issues encountered while upgrading the FMStocks 2000 application to Visual Basic .NET, identifies their resolutions, and explains how these resolutions were determined. The aim of this case study is not to identify all the issues involved in upgrading to Visual Basic .NET; the aim is to demonstrate the approach taken<br />\nto identify issues and resolve them.<br />\n<br />\nThis case study will also serve as a starting guide for those who would like to test the assessment tool and upgrade wizard by using FMStocks 2000 as a sample application. This will give developers some familiarity with these tools and with the upgrade process before starting a real upgrade project.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "fmstocks_net.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n\t<li>Microsoft Visual Basic 6.0</li><br />\n\t<li>Microsoft .NET Framework 1.1 (required)</li><br />\n\t<li>Microsoft Visual Studio .NET development system (highly recommended, but <br />\n\tnot required)</li><br />\n\t<li>Microsoft Excel 2003 (required to use the Visual Basic 6.0 Upgrade <br />\n\tAssessment Tool)</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP Professional Edition ",
+        "Windows 2000",
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "Download the msi and launch to install the application.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Basic Downloads",
+            "url": "http://msdn.microsoft.com/isapi/gomscom.asp?target=/downloads/results.aspx?sortCriteria=popularity&OSID=&productID=&CategoryID=&freetext=visual+basic&DisplayLang=en&DisplayEnglishAlso="
+        },
+        {
+            "title": ".Net Framework Communities",
+            "url": "http://msdn.microsoft.com/netframework/community/default.aspx"
+        },
+        {
+            "title": "visual Basic Developer Center",
+            "url": "http://msdn.microsoft.com/vbasic/default.aspx"
+        },
+        {
+            "title": "microsoft .NET Home Page",
+            "url": "http://www.microsoft.com/net/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14330",
+    "downloadPreload": true
+}

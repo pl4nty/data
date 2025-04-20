@@ -1,0 +1,135 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Power BI Report Builder",
+    "downloadDescription": "Power BI Report Builder provides a productive report-authoring environment for IT professionals and power users of the Microsoft Power BI service.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PowerBIReportBuilder.msi",
+            "url": "https://download.microsoft.com/download/a/2/e/a2ea07b5-5a65-41d7-9ac0-b46ac953ab63/PowerBIReportBuilder.msi",
+            "size": "97792000",
+            "version": "15.7.1814.616",
+            "datePublished": "3/25/2025 5:22:30 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "Power BI Report Builder is optimized for authoring paginated reports for the Power BI service. This download provides a stand-alone installer for Power BI Report Builder.<br /><br />\nPower BI Report Builder provides data visualizations that include charts, maps, sparklines, and data bars that can help produce new insights well beyond what can be achieved with standard tables and charts.<br /><br />\nFind product documentation at https://docs.microsoft.com/power-bi/report-builder-power-bi.<br /><br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.7.1814.616",
+    "detailsSection_file_name": [
+        "PowerBIReportBuilder.msi"
+    ],
+    "detailsSection_file_size": [
+        "93.3 MB"
+    ],
+    "detailsSection_file_date": "3/25/2025",
+    "systemRequirementsSection": "<br />\n<b>Note:</b> This component also requires <b><a href=\"https://go.microsoft.com/fwlink/?LinkId=863262\">Microsoft .NET Framework 4.7.2</a></b>.<br />\n<br />\n<UL><LI>80 MB of available hard disk space</LI></UL>\n<UL><LI>512 MB of RAM</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Report Builder should be installed on the client machine for report authoring.<br />\n<br />\nStep 1: Install Microsoft .NET Framework version 4.7.2<br />\n<br />\nStep 2: Install Report Builder<br />\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105942",
+    "downloadPreload": true
+}

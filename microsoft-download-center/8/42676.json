@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange 2013 Platform Options",
+    "downloadDescription": "For BDMs and architects, this model describes the available platform options for Exchange 2013. Customers can choose from Exchange Online with Office 365, Hybrid Exchange, Exchange Server on-premises and Hosted Exchange. The poster includes details of each architectural option, including the most ideal scenarios for each, the license requirements and IT Pro responsibilities.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange 2013 Platform Options.pdf",
+            "url": "https://download.microsoft.com/download/e/f/a/efa3b586-d683-4176-b9d2-2e16a4ae43f3/Exchange 2013 Platform Options.pdf",
+            "size": "589749",
+            "version": "May2014",
+            "datePublished": "7/15/2024 3:26:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange 2013 Platform Options.vsd",
+            "url": "https://download.microsoft.com/download/e/f/a/efa3b586-d683-4176-b9d2-2e16a4ae43f3/Exchange 2013 Platform Options.vsd",
+            "size": "2989568",
+            "version": "May2014",
+            "datePublished": "7/15/2024 3:26:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For BDMs and architects, this model describes the available platform options for Exchange 2013. Customers can choose from Exchange Online with Office 365, Hybrid Exchange, Exchange Server on-premises and Hosted Exchange. The poster includes details of each architectural option, including the most ideal scenarios for each, the license requirements and IT Pro responsibilities.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "May2014",
+    "detailsSection_file_name": [
+        "Exchange 2013 Platform Options.pdf",
+        "Exchange 2013 Platform Options.vsd"
+    ],
+    "detailsSection_file_size": [
+        "575.9 KB",
+        "2.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>To view the Visio version of the model, you must have Microsoft Visio 2007 or a more recent version.</LI>\r\n<LI>To view the PDF version of the model, you must have a PDF viewer, such as <A HREF=\"http://get.adobe.com/reader/\">Adobe Reader.</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Platform Options",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=40332"
+        },
+        {
+            "title": "lync Platform Options",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=41677"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42676",
+    "downloadPreload": true
+}

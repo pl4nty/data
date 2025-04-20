@@ -1,0 +1,76 @@
+{
+    "error": "",
+    "downloadTitle": "Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4",
+    "downloadDescription": "A document providing an in-depth tour of implementing a variety of parallel patterns using the .NET Framework 4.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Patterns_of_Parallel_Programming_VisualBasic.pdf",
+            "url": "https://download.microsoft.com/download/3/4/d/34d13993-2132-4e04-ae48-53d3150057bd/Patterns_of_Parallel_Programming_VisualBasic.pdf",
+            "size": "1583938",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Patterns_of_Parallel_Programming_CSharp.pdf",
+            "url": "https://download.microsoft.com/download/3/4/d/34d13993-2132-4e04-ae48-53d3150057bd/Patterns_of_Parallel_Programming_CSharp.pdf",
+            "size": "1555047",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This document provides a detailed and in-depth tour of support in the Microsoft\u00ae .NET Framework 4 for parallel programming. This includes an examination of common parallel patterns and how they\u2019re implemented without and with this new support in the .NET Framework, as well as covering best practices for developing parallel components utilizing parallel patterns.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Patterns_of_Parallel_Programming_VisualBasic.pdf",
+        "Patterns_of_Parallel_Programming_CSharp.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click the 'Download' link to commence the download.",
+    "additionalInformationSection": "This document was written by Stephen Toub from the Parallel Computing Platform team at Microsoft.  It is based on the .NET Framework 4 and Visual Studio 2010.  Two versions of the document are available, one with code samples in C# and one with code samples in Visual Basic.",
+    "relatedResourcesSection": [
+        {
+            "title": "parallel Programming with .NET Team Blog",
+            "url": "http://blogs.msdn.com/pfxteam"
+        },
+        {
+            "title": "parallel Computing Developer Center",
+            "url": "http://msdn.com/concurrency"
+        },
+        {
+            "title": "visual Studio 2010 and .NET Framework 4",
+            "url": "http://msdn.microsoft.com/en-us/vstudio/dd582936.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "19222",
+    "downloadPreload": true
+}

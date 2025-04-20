@@ -1,0 +1,89 @@
+{
+    "error": "",
+    "downloadTitle": "ImagePairs Testing Data Set",
+    "downloadDescription": "ImagePairs image files for testing a machine-learning model",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ImagePairs - Test Data (5 of 5).zip",
+            "url": "https://download.microsoft.com/download/3/0/f/30f85f48-82f1-4637-9827-cf9d2f96f335/ImagePairs - Test Data (5 of 5).zip",
+            "size": "3510491609",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ImagePairs - Test Data (4 of 5).zip",
+            "url": "https://download.microsoft.com/download/3/0/f/30f85f48-82f1-4637-9827-cf9d2f96f335/ImagePairs - Test Data (4 of 5).zip",
+            "size": "9571927583",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ImagePairs - Test Data (3 of 5).zip",
+            "url": "https://download.microsoft.com/download/3/0/f/30f85f48-82f1-4637-9827-cf9d2f96f335/ImagePairs - Test Data (3 of 5).zip",
+            "size": "9270631053",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:27:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ImagePairs - Test Data (2 of 5).zip",
+            "url": "https://download.microsoft.com/download/3/0/f/30f85f48-82f1-4637-9827-cf9d2f96f335/ImagePairs - Test Data (2 of 5).zip",
+            "size": "8920076850",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:27:34 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ImagePairs - Test Data (1 of 5).zip",
+            "url": "https://download.microsoft.com/download/3/0/f/30f85f48-82f1-4637-9827-cf9d2f96f335/ImagePairs - Test Data (1 of 5).zip",
+            "size": "8669015644",
+            "version": "1.0.0",
+            "datePublished": "7/15/2024 4:27:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ImagePairs image files for testing a machine-learning model.  For more information, see the ImagePairs project description at https://www.microsoft.com/applied-sciences/projects/imagepairs.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.0",
+    "detailsSection_file_name": [
+        "ImagePairs - Test Data (5 of 5).zip",
+        "ImagePairs - Test Data (4 of 5).zip",
+        "ImagePairs - Test Data (3 of 5).zip",
+        "ImagePairs - Test Data (2 of 5).zip",
+        "ImagePairs - Test Data (1 of 5).zip"
+    ],
+    "detailsSection_file_size": [
+        "3.3 GB",
+        "8.9 GB",
+        "8.6 GB",
+        "8.3 GB",
+        "8.1 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any operating system",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Linux",
+        "Macintosh"
+    ],
+    "installInstructionSection": "See the project description at https://www.microsoft.com/applied-sciences/projects/imagepairs and the more detailed publication linked from that page.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102393",
+    "downloadPreload": true
+}

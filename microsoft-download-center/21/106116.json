@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "WinAppSDKx64Installer-240611.0.100785169",
+    "downloadDescription": "WindowsAppSDK MSIX and Installer",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "windowsappruntimeinstall-x64.exe",
+            "url": "https://download.microsoft.com/download/c/9/9/c9900ed3-07f8-47ee-b93f-717e90215722/windowsappruntimeinstall-x64.exe",
+            "size": "64161216",
+            "version": "1.5.240607001",
+            "datePublished": "6/11/2024 5:49:15 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "WindowsAppSDK MSIX and Installer",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5.240607001",
+    "detailsSection_file_name": [
+        "windowsappruntimeinstall-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "61.2 MB"
+    ],
+    "detailsSection_file_date": "6/11/2024",
+    "systemRequirementsSection": "17763/RS5 and above",
+    "systemRequirementsSection_supportedOS": [
+        "HP-UX"
+    ],
+    "installInstructionSection": "This zipped file contains the MSIX and Installer for WindowsAppSDK",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106116",
+    "downloadPreload": true
+}

@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 2013 Best Practices Analyzer",
+    "downloadDescription": "The CRM 2013 Best Practices Analyzer is a diagnostic tool that gathers information about Microsoft Dynamics CRM 2013 server roles and offers recommendations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsCRMBPA.msi",
+            "url": "https://download.microsoft.com/download/0/a/8/0a80289b-9ca8-4a46-bfb3-d56732132db3/MicrosoftDynamicsCRMBPA.msi",
+            "size": "1949696",
+            "version": "06.00.0000.0809",
+            "datePublished": "7/15/2024 3:27:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Dynamics CRM 2013 Best Practices Analyzer is a diagnostic tool that performs the following functions:\r\n<ul>\r\n<li>Gathers information about the CRM 2013 server roles that are installed on that server. </li>\r\n<li>Determines if the configurations are set according to the recommended best practices.</li>\r\n<li>Reports on all configurations, indicating settings that differ from recommendations. </li>\r\n<li>Indicates potential problems in the CRM 2013 features installed. </li>\r\n<li>Recommends solutions to potential problems. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "06.00.0000.0809",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsCRMBPA.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>At least one Microsoft Dynamics CRM 2013 server role on the same computer as the CRM 2013 Best Practices Analyzer</li>\r\n<li>Microsoft Baseline Configuration Analyzer 2.0 installed on the same computer as the CRM 2013 Best Practices Analyzer</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>.\r\n Do one of the following:\r\n<ol>\r\n<li>To start the installation immediately, click <b>Run</b>. </li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b>.</li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Baseline Configuration Analyzer 2.0",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=16475"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "41156",
+    "downloadPreload": true
+}

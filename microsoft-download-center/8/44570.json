@@ -1,0 +1,128 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Site Discovery Toolkit for Internet Explorer",
+    "downloadDescription": "Use this toolkit to enable IE to collect information about sites in your enterprise deployment",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Enterprise Site Discovery v2.1.zip",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/Enterprise Site Discovery v2.1.zip",
+            "size": "195966",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "inetres.admx",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/Group_Policy/inetres.admx",
+            "size": "1668861",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "inetres.adml",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/Group_Policy/inetres.adml",
+            "size": "447759",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCCM_Report-Site_Discovery.rdl",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/SCCM_Report-Site_Discovery.rdl",
+            "size": "142285",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SCCM Report Sample - ActiveX.rdl",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/SCCM Report Sample - ActiveX.rdl",
+            "size": "153179",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IETelemetrySetUp-Win8.ps1",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/IETelemetrySetUp-Win8.ps1",
+            "size": "19686",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IETelemetrySetUp-Win7.ps1",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/IETelemetrySetUp-Win7.ps1",
+            "size": "19690",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IETelemetry.mof",
+            "url": "https://download.microsoft.com/download/9/0/d/90d88e4b-614e-44bf-8a0d-a182003cd4f0/IETelemetry.mof",
+            "size": "14712",
+            "version": "2.1",
+            "datePublished": "7/15/2024 4:25:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Upgrading to the latest version of Windows or browser typically requires Enterprises to do full line of business app compatibility testing with the latest version of Internet Explorer. What makes this a difficult task for most Enterprises is that they often do not know which of their catalog of line of business Web applications are actually used by their employees, as a result all apps are understood to have the same priority. Often times this leads IT Pros to test all of their line of business Web applications, even ones that may not be actively used, which can be a costly and time consuming process. In addition to testing, it can be difficult to mitigate compatibility issues without knowing more about how the application was developed, what document mode is used, which ActiveX controls are needed, and other details.\r\n\r\nEnterprise Site Discovery provides a way for an IT Pro to better understand how their users are browsing with Internet Explorer 8, 9, 10, & 11 and discover Web applications that they may not be aware of. This toolkit enables collecting information from Internet Explorer about sites that are visited by Enterprise users. The sites included in this collection can be scoped by zone or domain. This information will help IT Pros prioritize applications, focusing app compatibility testing to facilitate faster upgrades. This is particularly important as customers upgrade to the latest version of Internet Explorer  before January 2016. This feature also provides additional information on how the site is designed and used by Internet Explorer; that information can then be used to populate the Enterprise Mode site list, mitigating compatibility issues of critical sites. \r\n\r\nBy default, Internet Explorer will not collect this data; you have to enable collection if you want to use it. Once enabled, data will be collected on all sites visited by Internet Explorer except while browsing in an InPrivate browsing session or when configured to limit collection to certain zones or domains. Additionally, this data collection is silent and there is no end user notification that information is being collected. You must make sure that you ask the necessary consent and comply with all applicable local laws and regulatory requirements before enabling this in your deployment of Internet Explorer. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.1",
+    "detailsSection_file_name": [
+        "Enterprise Site Discovery v2.1.zip",
+        "inetres.admx",
+        "inetres.adml",
+        "SCCM_Report-Site_Discovery.rdl",
+        "SCCM Report Sample - ActiveX.rdl",
+        "IETelemetrySetUp-Win8.ps1",
+        "IETelemetrySetUp-Win7.ps1",
+        "IETelemetry.mof"
+    ],
+    "detailsSection_file_size": [
+        "191.4 KB",
+        "1.6 MB",
+        "437.3 KB",
+        "139.0 KB",
+        "149.6 KB",
+        "19.2 KB",
+        "19.2 KB",
+        "14.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Internet Explorer 8, 9, 10 or 8. \r\nWindows 7/8/8.1\r\nThe latest Internet Explorer Cumulative update (March 2015 or later)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Please see Technet Article on the IE Site Discovery Tool Kit here: http://go.microsoft.com/fwlink/?LinkID=517718&clcid=0x409",
+    "relatedResourcesSection": [
+        {
+            "title": "technet Article ",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=517718&clcid=0x409"
+        },
+        {
+            "title": "ie Blog Post",
+            "url": "http://blogs.msdn.com/b/ie/archive/2014/10/24/announcing-the-enterprise-site-discovery-toolkit-for-internet-explorer-11.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44570",
+    "downloadPreload": true
+}

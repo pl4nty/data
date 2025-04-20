@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Embedded Compact 7 Evaluation Edition",
+    "downloadDescription": "Windows Embedded Compact 7 Evaluation Edition toolkit is valid for 180 days from the day of installation.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows Embedded Compact 7_Update_79.htm",
+            "url": "https://download.microsoft.com/download/1/6/e/16ee4223-5f2d-4516-8535-18f6547b7c30/Windows Embedded Compact 7_Update_79.htm",
+            "size": "666031",
+            "version": "7.2.2909.0",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WindowsEmbeddedCompact7.exe",
+            "url": "https://download.microsoft.com/download/1/6/e/16ee4223-5f2d-4516-8535-18f6547b7c30/WindowsEmbeddedCompact7.exe",
+            "size": "4066272",
+            "version": "7.2.2909.0",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Due to Security requirements, WEC7 installers prior to Update 61 (SEP 2016) will no longer be able to update to the latest version. i.e. you must use an installer from Update 61 or later to obtain the latest version.\r\n<br/><br/>\r\n<b>Attention!</b> \r\n<br/>\r\nYou will need to request a product activation key from <a href=\"http://www.microsoft.com/windowsembedded/en-us/downloads/download-windows-embedded-compact-ce.aspx\">here</a> to install the product.\r\n<br/> <br/>\r\nThis download includes an add-in for Visual Studio 2008\u00ae. Windows Embedded Compact 7 supports both Visual Studio 2008 Professional and Team Edition. You will need to have Visual Studio Service Pack 1 installed. If you don\u2019t already have Visual Studio 2008 installed, you can download <a href=\"http://www.microsoft.com/windowsembedded/en-us/products/windowsce/getting-started.mspx\">an evaluation copy</a> of Visual Studio 2008 Professional from the Microsoft download center. If you do not have Visual Studio SP1 installed, <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=fbee1648-7106-44a7-9649-6d9f6d58056e\">click here</a> for download information and instructions.\r\n<br/><br/>\r\n<b> This Windows Embedded Compact 7 Evaluation Edition is a 180-day evaluation software development toolkit that provides you with with everything you need to build a broad range of small footprint devices that need a powerful, componentized, real-time operating system.</b><br/><br/>\r\n\r\n<b>Windows Embedded Compact 7</b> helps original equipment manufacturers (OEMs) get devices to market faster by providing developers with a complete catalog of tested, <b>selectable OS components</b>, integrated development and test tools, <b>source code access</b> and board support packages. Windows Embedded Compact 7 is compatible with  ARM, x86 and MIPS processor architectures. <br/><br/>\r\n\r\n<b>Windows Embedded Compact 7</b> delivers the latest technologies for building the next generation of specialized devices, including Internet Explorer with Flash 10.1 integrated, complete media player and DLNA support, symmetrical multi-processor (multi-core) support, Microsoft Office document viewers, PDF viewers, and a revolutionary new UI framework called Silverlight for Windows Embedded Compact 7 provides developers and UI designers with a powerful real-time OS and a full development tools suite, enabling an integrated, streamlined development experience that helps great speed devices to market<br/><br/>\r\n\r\nDevelopers can customize and build a broad range of <b>small footprint</b> specialized devices with real-time capabilities using Platform Builder, a powerful embedded-specific development tool that works as an add-in to Microsoft\u2019s familiar development environment Visual Studio 2008.<br/><br/>\r\n\r\n<b>Functionality</b>: \r\n<br/>\r\nThis no-cost, downloadable Windows Embedded Compact 7 Evaluation toolkit gives you unrestricted access to all of Windows Embedded Compact 7 and includes Platform Builder, the Compact Test Kit and several board support packages for ARM, x86 and MIPs architectures so you can begin evaluating Windows Embedded Compact 7 today. With the Compact 7 Evaluation toolkit you can design, developed, build and show prototype devices. \r\n<br/>\r\n<br/>\r\nThe Evaluation toolkit includes the full functionality of Windows Embedded Compact 7 and will only expire after 180 days. After 180 days you must uninstall the product, purchase a license for the full version of Windows Embedded Compact 7, install from the full product installation discs. \r\n<br/>\r\nYou\u2019ll have to enter your full product license key during the installation. Full product license keys are unable to unlock evaluation versions of Windows Embedded Compact 7. \r\n<br/>\r\nProjects started with the Windows Embedded Compact 7 Evaluation toolkit are fully compatible with the licensed full product version. <br/><br/>\r\n<b>Upgrade to the full version</b>:\r\n<br/>\r\nFor information about licensing or pricing of the Windows Embedded Compact 7 toolkit and device runtime licenses, please consult your favorite Microsoft Windows Embedded Authorized Distributor. You can find a complete list <a href=\"http://www.microsoft.com/windowsembedded/en-us/evaluate/how-to-buy-windows-embedded-compact-7.aspx\">here</a>. <br/><br/>\r\n\r\n<b>Important</b>: \r\n<br/>\r\nYou need to accept the End User License Agreement in the installer before you can use this product. If you do not accept the terms of the license agreement, you will not be able to install the product.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.2.2909.0",
+    "detailsSection_file_name": [
+        "Windows Embedded Compact 7_Update_79.htm",
+        "WindowsEmbeddedCompact7.exe"
+    ],
+    "detailsSection_file_size": [
+        "650.4 KB",
+        "3.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Your computer must have the following software installed:\r\n<ul>\r\n<li>Visual Studio\u00ae 2008 Professional or Team Edition (including the Smart Device Programmability for Visual C++)</li>\r\n<li>Visual Studio 2008 Service Pack 1</li>\r\n<li>Microsoft .NET Framework 3.5</li>\r\n</ul>\r\nTo develop with Windows\u00ae Embedded Compact 7, your computer should meet the following hardware requirements:\r\n<ul>\r\n<li>Approximately 100 GB of free hard disk space</li>\r\n<li>2.4 GHz or higher CPU, 1024 MB or more RAM, 1280x1024 display, 7200 RPM or higher hard disk</li>\r\n</ul>\r\n<i>Optional: </i>\r\nTo use the revolutionary Microsoft\u00ae Silverlight\u00ae for Windows Embedded UI framework, you will also need to have the following software installed:\r\n<ul>\r\n<li>Microsoft Expression Blend\u00ae 3</li>\r\n<li>Windows Embedded Silverlight Tools</li>\r\n</ul>\r\nEvaluation versions of Expression Blend 3 are available for download. You will find the download details in the installation instructions below.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Embedded CE"
+    ],
+    "installInstructionSection": "Before you install Windows Embedded Compact 7, do the following:\r\n<ol>\r\n<li>Back up important data and programs stored on your development computer</li>\r\n<li>Have your copy of the installation discs and the product keys available to use</li>\r\n</ol>\r\n<b>Step 1: Install Visual Studio 2008</b><br />\r\n<br/>\r\nInstall Visual Studio 2008, including the Smart Device Programmability for Visual C++ if currently not installed. Both Professional and Team Edition platforms of Visual Studio 2008 are supported.\r\n<ol>\r\n<li>Insert the first Visual Studio 2008 disc or click <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=83c3a1ec-ed72-4a79-8961-25635db0192b\">here</a> to download a 90-day evaluation</li>\r\n<li>In the Visual Studio 2008 Setup dialog box, select Install Visual Studio 2008</li>\r\n<li>In the Welcome dialog box, click Next, and follow the instructions</li>\r\n</ol>\r\nNote: You may be prompted to change discs during the installation process if you are installing from DVDs. After installing Visual Studio 2008 you may be prompted to install the MSDN Library for product documentation. \r\n<br/>\r\nThis step is optional and the DVDs containing the MSDN Library are not included with the Windows Embedded Compact 7 toolkit. For the most current documentation visit <a href=\"http://msdn.microsoft.com\">http://msdn.microsoft.com</a>.<br/> <br/>\r\n\r\nAfter the Visual Studio 2008 installation is completed, you will need to install Visual Studio 2008 Service Pack 1. To download this update, <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=fbee1648-7106-44a7-9649-6d9f6d58056e\">click here</a> for information and instructions.<br/><br/>\r\n\r\n<b>Step 2: Installing Microsoft Expression Blend 3 (optional), required for using Silverlight for Windows Embedded</b><ol>\r\n<li>Insert the Microsoft Expression Blend disc or download a copy <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=e82db5e2-7106-419e-80b0-65cce89f06bb\">here</a></li>\r\n<li>When the Welcome dialog box is displayed, click Next, and follow the instructions</li>\r\n</ol>\r\n<b>Step 3: Install Windows Embedded Compact 7</b><br/>\r\n<br/>\r\nBefore you install the latest version of Windows Embedded Compact 7 and Platform Builder, you must first close Visual Studio 2008, uninstall earlier versions of Platform Builder and the Test Kit.\r\n<ol>\r\n<li>Verify that you have administrative credentials on your development computer</li>\r\n<li>Note: You do not have to be logged on with administrator credentials to run the tools after installation is complete</li>\r\n<li>Run WindowsEmbeddedCompact7.exe</li>\r\n<li>When the Welcome dialog box is displayed, click Begin Install, and then follow the instructions</li>\r\n</ol>\r\nNote: During installation, the progress bar may not always accurately reflect the remaining time. Installation times vary depending on installation type and system performance. <br/> <br/>\r\n\r\n<b>Step 4: Install Windows Embedded Compact 7 extra components and related service packs</b>\r\n<ol>\r\n<li>Review the release notes</li>\r\n<li>Install any required Microsoft updates or service packs</li>\r\n<li>Install any optional components that may be available</li>\r\n<li>Install optional or third-party components (if applicable)</li>\r\n</ol>\r\n<br/><br/>\r\n<b>UPDATING WINDOWS EMBEDDED COMPACT 7</b>\r\n<br/><br/>\r\n<b>a) Installing WEC7 clean using an installer prior to Update 61 (SEP 2016)</b>\r\n<ul>\r\n<li>Install WEC7 prior to Update 61 with the desired options</li>\r\n<li>Once the installation has completed, obtain the Update61 (or later) installer from MOO, MyOEM or the Download Center</li>\r\n<li>Launch the obtained installer and it will update as normal to that version level</li>\r\n<li>Once the update has completed, subsequent updates (if any) will be detected as normal by the installer</li>\r\n</ul>\r\n<b>b) Updating WEC7 prior to Update 61</b>\r\n<ul>\r\n<li>Download the most recent installer from MOO, MyOEM or the Download Center</li>\r\n<li>Launch \u201cWindowsEmbeddedCompact7.exe\u201d</li>\r\n<li>This will start an update installation, proceed with the update installation</li>\r\n</ul>\r\n<b>c) Updating WEC7 with Update 61 or later</b>\r\n<ul>\r\n<li>Go to the update option from \u201cAdd or Remove programs\u201d and select \u201cUpdate\u201d to successfully check, recognize and download any new available updates</li>\r\n</ul>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "power Suite Embedded Compact",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=47266"
+        },
+        {
+            "title": "silverlight Tools",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=26227"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "38794",
+    "downloadPreload": true
+}

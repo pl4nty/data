@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Database as a Service Reference Architecture Guide: SQL Server 2014",
+    "downloadDescription": "Explains how to build an infrastructure for hosting Microsoft SQL Server Database as a Service by using the features of SQL Server 2014 and Hyper-V virtual machines with Microsoft System Center 2012.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Database Hosting Reference Architecture Guide_SQL_2014.docx",
+            "url": "https://download.microsoft.com/download/2/4/9/24988ebc-ef23-47bd-93f5-d47173ee6709/Database Hosting Reference Architecture Guide_SQL_2014.docx",
+            "size": "309247",
+            "version": "April 2014",
+            "datePublished": "7/15/2024 3:25:14 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide explains how to build an infrastructure for hosting Microsoft SQL Server Database as a Service (DBaaS). By using the features of SQL Server 2014 and Hyper-V virtual machines with Microsoft System Center 2012, a hosting service provider can start with very small tenant databases and scale to meet the needs of the largest and busiest SQL Server applications. This reference architecture includes information about hardware, software, system design, and component configuration. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April 2014",
+    "detailsSection_file_name": [
+        "Database Hosting Reference Architecture Guide_SQL_2014.docx"
+    ],
+    "detailsSection_file_size": [
+        "302.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "database as a Service Reference Architecture Guide: SQL Server 2012 ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=39295"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42321",
+    "downloadPreload": true
+}

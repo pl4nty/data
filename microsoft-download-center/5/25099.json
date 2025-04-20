@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Future of .NET Panel at DevTeach Toronto",
+    "downloadDescription": "Carl and Richard host a panel comprised of Oren Eine, Ted Neward, and Scott Belware at the DevTeach conference in Toronto. What started out as a discussion about the future turned into a discussion about Microsoft's development tools.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080529DevTeach.zip",
+            "url": "https://download.microsoft.com/download/c/f/8/cf881573-8e04-4b47-8f89-39f3f3fcc976/20080529DevTeach.zip",
+            "size": "61329726",
+            "version": "1.0",
+            "datePublished": "12/15/2023 3:14:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Oren Eini is a .NET developer living in Israel and currently working for We! He is heavily involved in the nHibernate project among other things. You can read his blog at http://www.ayende.com. <br />\n<br />\nTed Neward is an independent consultant specializing in high-scale enterprise systems, working with clients ranging in size from Fortune 500 corporations to small 10-person shops. He is an authority in Java and .NET technologies, particularly in the areas of Java/.NET integration (both in-process and via integration tools like Web services), back-end enterprise software systems, and virtual machine/execution engine plumbing. <br />\n<br />\nScott Bellware is a software design professional living and working in Central Texas. He works with software development teams seeking to achieve competitiveness through a deeper understanding of object-oriented software design and agile methodologies.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080529DevTeach.zip"
+    ],
+    "detailsSection_file_size": [
+        "58.5 MB"
+    ],
+    "detailsSection_file_date": "12/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "25099",
+    "downloadPreload": true
+}

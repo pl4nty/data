@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Windows\u00ae Software Development Kit (SDK) for RC 1 Windows Vista and .NET Framework 3.0 Runtime Components (ISO)",
+    "downloadDescription": "The Windows SDK contains pre-release documentation, samples, and tools designed to help you develop Windows applications and libraries using both Win32\u00ae and .NET Framework 3.0 technologies targeting Windows Vista.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows SDK Release Notes (Online).htm",
+            "url": "https://download.microsoft.com/download/5/6/3/563a1237-b61c-4e06-92be-5138987ae01e/Windows SDK Release Notes (Online).htm",
+            "size": "72743",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:08:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Release notes for Windows SDK for Vista",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "Windows SDK Release Notes (Online).htm"
+    ],
+    "detailsSection_file_size": [
+        "71.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul> \n\n<li>The .NET Framework 3.0 components of the SDK are designed to work on the July CTP release of Windows Vista, on Windows XP SP2 \nor Windows Server SP1 with the .NET Framework 3.0 Runtime Components JulyCTP\ninstalled. If you do not have the .NET Framework 3.0 components installed, some samples, tools \nand other SDK functionality may not work properly.<br/><br/> </li>\n\n<li>Hard Disk Space.  Choose a disk drive with a minimum of 1.5 GB of free space. <br/><br/></li>\n<li>We highly recommend you have your machine fully patched through Microsoft Update before beginning setup.</li>\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": "For this release, the Windows SDK is available as either a  full DVD ISO image that enables you to run setup on a local machine or as a <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=9221a6aa-ac1c-4604-a326-b8cf2b12b6eb&displaylang=en\">Web Download</a> \nthat enables you to launch setup over the web and download only the components you select during setup.<br/> <br/>\n<B>NOTE:</B> Please be aware that the Windows SDK is approximately 1.5 GB, which will take considerable time to download depending on your connection speed. One way to to improve the download time is by running the web setup and selecting only the individual components you need.<BR/>\n<ul><li>For best results, first consult the <b>Readme file </b>available for download \n\tbelow. If you need additional information or asssistance with installing or using the Windows SDK, please vist the <a href=\"http://forums.microsoft.com/MSDN/ShowForum.aspx?ForumID=121&SiteID=1\">Windows SDK Forum</a> or <a href=\"http://blogs.msdn.com/windowssdk\">the Windows SDK team blog</a>.<br/><br/></li>\n\n\n<li>To download the full <b>ISO image</b> containing bits for all platforms, choose \n<b>6.0.5383.1.1.WindowsSDK_Vista_idw.DVD.Rel.img</b> below. After downloading the IMG file, rename it to .ISO before mounting it.<br/><br/>Due to the large size of the ISO file, we highly recommend you use a download manager tool to manage the ISO download.<br/><br/>\n\tTo install the Windows SDK using the ISO file:<UL>\n\t<LI><b>Accessing the ISO File</b> - An ISO image file is an exact representation of \n\ta DVD, including the content and the logical format. The most common use of \n\tan image file is to write it to a blank DVD-R resulting in an identical copy \n\tof the original DVD including file name and volume label information. ISO \n\tImages can also be extracted directly to a file location by many DVD-R \n\tutilities, including the tool below.</LI>\n\t\t\n\t<LI><b>Mounting ISO files virtually</b> - You can use the\n\t<a href=\"http://download.microsoft.com/download/7/b/6/7b6abd84-7841-4978-96f5-bd58df02efa2/winxpvirtualcdcontrolpanel_21.exe\">Virtual CD-ROM Control Panel for Windows XP</a> \n\ttool to mount the ISO image file virtually as CD-ROM devices without burning \n\tthe image to a DVD. This tool is provided here for your convenience, and is unsupported by Microsoft Customer Services and Support.</LI></UL></li>\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows SDK Team Blog",
+            "url": "http://blogs.msdn.com/windowssdk"
+        },
+        {
+            "title": "forums and Newsgroups for Developers",
+            "url": "http://msdn.microsoft.com/windowsvista/community/newsgroups/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "1919",
+    "downloadPreload": true
+}

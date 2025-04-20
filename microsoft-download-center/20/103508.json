@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "TaxiXNLI:  Multi-lingual Category-Annotated NLI Dataset",
+    "downloadDescription": "TaxiXNLI:  Multi-lingual Category-Annotated NLI Dataset",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "datav1.0upload.zip",
+            "url": "https://download.microsoft.com/download/1/9/7/1978be93-e80a-488c-a800-779b82bb211b/datav1.0upload.zip",
+            "size": "25112979",
+            "version": "October 2021",
+            "datePublished": "5/15/2024 5:06:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "We create a multi-lingual extension of TaxiNLI -- our previous effort to categorize the types of reasoning required to perform inferencing in large public NLI datasets.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "October 2021",
+    "detailsSection_file_name": [
+        "datav1.0upload.zip"
+    ],
+    "detailsSection_file_size": [
+        "23.9 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 8, Windows 10, Android, Apple Mac OS X </LI></UL> ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions. </LI></UL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103508",
+    "downloadPreload": true
+}

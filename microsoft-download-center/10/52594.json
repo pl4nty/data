@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "C# Software Transactional Memory",
+    "downloadDescription": "Software Transactional Memory (STM) is an API for multithreaded computation in which shared data is synchronized without using locks. Last published: February 17, 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SXM.zip",
+            "url": "https://download.microsoft.com/download/a/9/e/a9e610ca-90e4-41ed-8e58-41fa5426964f/SXM.zip",
+            "size": "1903708",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Software Transactional Memory (STM) is an API for multithreaded computation in which shared data is synchronized without using locks. Threads synchronize by means of memory transactions, short-lived computations that either commit (take effect) or abort (have no effect). Transactions avoid the well-known problems of locking, including deadlock, priority inversion, and fault-intolerance. The SXM is a software transactional memory package written in C#. It is much easier to use than prior STMs because it uses Reflection.Emit to transparently add synchronization code to sequential data structures.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SXM.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52594",
+    "downloadPreload": true
+}

@@ -1,0 +1,111 @@
+{
+    "error": "",
+    "downloadTitle": "ASP.NET MVC 4 for Visual Studio 2010 SP1 and Visual Web Developer 2010 SP1",
+    "downloadDescription": "ASP.NET MVC 4 provides a Model-View-Controller (MVC) framework for developing Web applications using Visual Studio 2010 SP1 or Visual Web Developer 2010 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AspNetMVC4Setup.exe",
+            "url": "https://download.microsoft.com/download/2/f/6/2f63ccd8-9288-4cc8-b58c-81d109f8f5a3/AspNetMVC4Setup.exe",
+            "size": "37684848",
+            "version": "4",
+            "datePublished": "7/15/2024 3:16:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "ASP.NET MVC 4 is a framework for developing highly testable and maintainable Web applications that follow the Model-View-Controller (MVC) pattern. The framework encourages you to maintain a clear separation of concerns\u2014 views for UI, controllers for handling user input, and models for domain logic. ASP.NET MVC applications are particularly suited for unit testing and using test-driven development (TDD) techniques. ASP.NET MVC 4 makes it easy to write applications for the mobile web through adaptive rendering and device specific display modes.<br/><br/>\r\nASP.NET MVC 4 also includes: <br/><br/>\r\n\r\n\u2022 ASP.NET Web API, a framework for building and consuming HTTP services that can reach a broad range of clients including browsers, phones, and tablets. ASP.NET Web API is great for building services that follow the REST architectural style, plus it supports RPC patterns.<br/><br/>\r\n\u2022 ASP.NET Web Pages and the new Razor syntax provide a fast, approachable, and lightweight way to combine server code with HTML to create dynamic web content.<br/><br/>\r\n\u2022 Web Optimization, a framework for bundling and minifying scripts and CSS files.<br/><br/>\r\n\u2022 NuGet, a free, open source developer focused package management system for the .NET platform intent on simplifying the process of incorporating third party libraries into a .NET application during development.<br/><br/>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4",
+    "detailsSection_file_name": [
+        "AspNetMVC4Setup.exe"
+    ],
+    "detailsSection_file_size": [
+        "35.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "PowerShell 2.0, .NET 4, ASP.NET 4, and Visual Studio 2010 SP1 or Visual Web Developer 2010 SP1 are required to use this feature.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista Service Pack 2",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "For more information about installing this release, please see the <a href=\"http://www.asp.net/whitepapers/mvc4-release-notes\"> ASP.NET MVC 4 Release Notes</a>.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Studio 2010 SP1",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=23691"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "30683",
+    "downloadPreload": true
+}

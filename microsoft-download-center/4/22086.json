@@ -1,0 +1,55 @@
+{
+    "error": "",
+    "downloadTitle": "Windows SharePoint Services 3.0 Technical Library in Compiled Help format",
+    "downloadDescription": "Downloadable CHM version of Windows SharePoint Services 3.0 content on TechNet.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WSS.chm",
+            "url": "https://download.microsoft.com/download/3/7/3/3738aaf5-2c34-4344-8f1d-0cf0ff280864/WSS.chm",
+            "size": "4970482",
+            "version": "9",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "<b>Important, before you download:</b><ul>\n<li>If the topics in this file do not appear as you expect (you see \"Page cannot be displayed\" or \"Action canceled,\" for example), see the <a href=\"#instructions\">Instructions</a> section on this page.</li>\n<li>This guide is a compiled Help file and opens in HTML Help.</li>\n<li>This content is also available on the <a href=\"http://go.microsoft.com/fwlink/?LinkId=126317\">Web</a>.</li></ul><br/>\n\nThis downloadable CHM is a copy of content in the Windows SharePoint Services 3.0 technical library. The CHM is current as of the date above. For the latest information, see the <a href=\"http://go.microsoft.com/fwlink/?LinkId=126317\">technical library on the Web</a>. <br/><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9",
+    "detailsSection_file_name": [
+        "WSS.chm"
+    ],
+    "detailsSection_file_size": [
+        "4.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Your computer must be running an operating system that can open compiled help files.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\n\r\n<a name=\"instructions\"></a>\n<br/>\r\n\n<b>Known Issue: Text in file does not appear as expected</b>\n\r\n<br/>\n<br/>\nThe text in this file might not appear as expected. The messages \"Navigation canceled,\" \"Action canceled,\" or \"The page cannot be displayed\" might appear. <br/><br/>\r\n\n<b>To open this file to view the text</b>\n\r\n<ol>\n\r\n<li>Click <b>Download</b>. </li>\n\r\n<li>In the <b>File Download</b> dialog box, click <b>Save</b>.</li>\r\n\n<li>Use the <b>Save As</b> dialog box to save the file to your computer. </li>\n\r\n<li>Find the file on your computer, right-click it, and then click <b>Properties</b>.</li>\r\n\n<li>Click <b>Unblock</b>, and then click <b>OK</b>.</li>\r\n<li>Double-click the file to open it.</li></ol>\n\r\nFor more information, see Microsoft Knowledge Base article <a href=\"http://go.microsoft.com/fwlink/?LinkId=49530&clcid=0x409 \">892675</a>.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows SharePoint Services 3.0 technical library",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=126317"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "22086",
+    "downloadPreload": true
+}

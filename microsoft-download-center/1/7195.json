@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "For IT professionals: Deployment guide for Microsoft Office 2010 ",
+    "downloadDescription": "Contains information about the fundamentals of deploying Office 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ORKDeployment.xps",
+            "url": "https://download.microsoft.com/download/3/2/8/3280aabe-1017-4c00-960a-9eeef1e20944/ORKDeployment.xps",
+            "size": "2552965",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "ORKDeployment.doc",
+            "url": "https://download.microsoft.com/download/3/2/8/3280aabe-1017-4c00-960a-9eeef1e20944/ORKDeployment.doc",
+            "size": "1619456",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ORKDeployment.pdf",
+            "url": "https://download.microsoft.com/download/3/2/8/3280aabe-1017-4c00-960a-9eeef1e20944/ORKDeployment.pdf",
+            "size": "2003320",
+            "version": "2",
+            "datePublished": "7/15/2024 3:14:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "This book provides how-to information: the recommended steps to execute specific deployment tasks, such as customizing the installation, installing Microsoft Office 2010 system on users' computers, implementing the deployment in many languages, and migrating to the new file format. The audiences for this book are IT professionals who plan, implement, and maintain Office installations in their organizations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "ORKDeployment.xps",
+        "ORKDeployment.doc",
+        "ORKDeployment.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.4 MB",
+        "1.5 MB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To use this document, you must have a program capable of opening one of the provided file formats. \r\n<ul>\r\n<li>To open the .doc file, you can use Microsoft Word 2010. Microsoft Office Word 2007, or the free <a href=\"http://www.microsoft.com/downloads/en/details.aspx?FamilyID=3657ce88-7cfa-457a-9aec-f4f827f20cac\">Word viewer</a>. </li>\r\n<li>To open the .pdf file, you can use a free viewer such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Acrobat</a>.</li>\r\n<li>To open the .xps file, you must have Windows 7, Windows Vista, Windows XP with .NET Framework 3.0, or the <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> button next to the file you want to download to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your computer and double-click it to open it. </LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "7195",
+    "downloadPreload": true
+}

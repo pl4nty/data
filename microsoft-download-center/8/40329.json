@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Room System Administrative Web Portal for Lync Server 2013",
+    "downloadDescription": "A Lync Server 2013 web component that allows IT administrators to monitor and manage their organization's Lync Room System devices.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LyncRoomAdminPortal.exe",
+            "url": "https://download.microsoft.com/download/8/7/8/878da290-f608-4297-b1c7-4a5fc8245ea3/LyncRoomAdminPortal.exe",
+            "size": "2433808",
+            "version": "9319.0",
+            "datePublished": "7/15/2024 3:27:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Lync Room System (LRS) edition is a new Microsoft Lync unified communications client that has been optimized for Lync meetings in physical conference rooms. Install this web component on Lync Server 2013 Front End servers in the pool where the Lync Room System accounts reside.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "9319.0",
+    "detailsSection_file_name": [
+        "LyncRoomAdminPortal.exe"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b> Pre-requisites </b>\r\n<br/><br/>\r\nIn order to use Microsoft Lync Room System Administrative Portal, you must also have the following installed:\r\n<br/><br/>\r\nLync Server 2013 Cumulative Update 2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<b>To install this download: </b>\r\n<br/>\r\n<ol>\r\n<li>Click the Download box and save the file to your hard disk. </li>\r\n<li>Follow the Microsoft Lync Room System Administrative Web Portal deployment instructions, which can be found <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=324183\">here</a>. </li>\r\n</ol>\r\n<br/>\r\n<b>To remove the download file: </b>\r\n<br/>\r\n<ol>\r\n<li>To remove the download file, delete the LyncRoomAdminPortal.exe file saved to your hard disk. </li>\r\n</ol>\r\n<br/>\r\n<b>To uninstall this program: </b>\r\n<br/>\r\n<ol>\r\n<li>Go to the control panel and remove the application \u201cMicrosoft Lync Room System Adninistrative Web Portal\u201d from Add or Remove programs </li></ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40329",
+    "downloadPreload": true
+}

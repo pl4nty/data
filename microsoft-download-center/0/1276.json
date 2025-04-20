@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Upgrade Service for Microsoft SQL Server 2005 Datasheet",
+    "downloadDescription": "This offering gets you up and running by using an upgrade engagement with a robust new data management platform with its advanced data analysis and reporting.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Upgrade_Service.pdf",
+            "url": "https://download.microsoft.com/download/b/2/9/b29d6258-f37f-4b1b-90f0-2abc0f3fdced/Upgrade_Service.pdf",
+            "size": "90214",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:08:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Gets you up and running by using an upgrade engagement with a robust new data management platform with its advanced data analysis and reporting. You can benefit from all that Microsoft SQL Server 2005 offers, such as higher availability, improved scalability, and increased security.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Upgrade_Service.pdf"
+    ],
+    "detailsSection_file_size": [
+        "88.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Vista, XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To download this document, please click the download button.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "1276",
+    "downloadPreload": true
+}

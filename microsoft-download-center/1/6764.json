@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Use AppFabric Caching for Common Data in Windows HPC Server 2008 R2",
+    "downloadDescription": "This paper provides a technical overview of how to integrate Windows HPC Server 2008 R2 with Windows AppFabric Caching to support distributed workloads which require large data sets to be shared among the compute nodes on an HPC cluster.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "LeveragingAppFabricCachingForCommonData.docx",
+            "url": "https://download.microsoft.com/download/4/9/c/49c35127-35dd-454a-ba29-538d900adfb0/LeveragingAppFabricCachingForCommonData.docx",
+            "size": "182554",
+            "version": "Januray 2011",
+            "datePublished": "7/15/2024 3:14:04 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This paper provides a technical overview of how to integrate Windows HPC Server 2008 R2 with Windows AppFabric Caching to support distributed workloads which require large data sets to be shared among the compute nodes on an HPC cluster. Specifically, this addresses workloads that conform to the service-oriented architecture (SOA) model of execution and use the SOA programming model for distributed computation.\r\nThis paper describes how to add cache hosts to your HPC cluster and includes code samples of SOA clients and services that work with cached data. This paper also provides performance data that you can use as a guideline for setting up and monitoring cache hosts and developing custom applications.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Januray 2011",
+    "detailsSection_file_name": [
+        "LeveragingAppFabricCachingForCommonData.docx"
+    ],
+    "detailsSection_file_size": [
+        "178.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word viewer.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows HPC Server 2008 R2"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>.</li></ul></ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "6764",
+    "downloadPreload": true
+}

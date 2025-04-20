@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "User Profile Deletion Utility (Delprof.exe)",
+    "downloadDescription": "Delprof.exe is a command-line utility that you can use to delete user profiles on a local or remote computers running Windows 2000, Windows XP, and Windows Server 2003.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "delprof.msi",
+            "url": "https://download.microsoft.com/download/2/5/3/253fe093-513a-4e59-9bdc-345b13debf27/delprof.msi",
+            "size": "316416",
+            "version": "5.2.3790.1060",
+            "datePublished": "7/15/2024 3:14:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Delprof.exe is available in the Windows Server 2003 Resource Kit. It is a command-line utility that you can use to delete user profiles on a local or remote computers running Windows 2000, Windows XP, and Windows Server 2003. User profiles can grow large and may take up considerable disk space, especially if there are several users using one computer. Because of this, you may want to use Delprof.exe to free disk space by deleting profiles that are no longer required. However, because each profile on the computer is presented in order when you run the utility, you may want to use the graphical interface instead of the command-line tool whenever possible.<BR/><BR/>Note: You must be logged on as administrator or as a member of the Administrators group to delete user profiles.<BR/><BR/><B>WARNING:</B> Delprof.exe deletes all data that is stored in a user profile. This includes desktop settings, favorites, program-specific data that is contained in the Application Data folder, and the contents of the My Documents folder. Please be aware of any user documents that may be deleted before you use this tool.<br><br>This update addresses the following issue:<ul><li>Fixed error where no explanation was provided for the /D option switch</li></ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.2.3790.1060",
+    "detailsSection_file_name": [
+        "delprof.msi"
+    ],
+    "detailsSection_file_size": [
+        "309.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<BR/>You can download and use Delprof.exe on any of the following platforms:<UL><LI>Windows 2000</LI><LI>Windows XP</LI><LI>Windows Server 2003</LI></UL><BR/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> link to start the download.</LI><LI> In the <b>File Download</b> dialog box, select <b>Save this program to disk</b>.</LI><LI>Select a location on your computer to save the file, and then click <b>Save</b>.</LI><LI>In Windows Explorer, go to the location where you saved the downloaded file, double-click the file to start the installation process, and then follow the instructions.</LI></OL>The downloaded file is a Microsoft Software Installer (.msi) file. By running the file, you install the tool and documentation on your computer.<BR/><BR/>When you install a tool, you are prompted to choose an install directory. If the Windows Server 2003 Resource Kit is installed, install the tool in the Resource Kit directory to avoid an overly large system path and to ensure more reliable upgrades. When you install the Resource Kit, the recommended directory is C:\\Program Files\\Windows Resource Kits\\Tools.",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Resource Kit Tools",
+            "url": "http://go.microsoft.com/?linkid=1396590"
+        },
+        {
+            "title": "become a Microsoft Certified Desktop Support Technician",
+            "url": "http://go.microsoft.com/?linkid=1396591"
+        },
+        {
+            "title": "windows Server 2003 Resources for IT Pros",
+            "url": "http://go.microsoft.com/?linkid=1396592"
+        },
+        {
+            "title": "microsoft Windows Server 2003 Resource Kit",
+            "url": "http://go.microsoft.com/?linkid=1396593"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5405",
+    "downloadPreload": true
+}

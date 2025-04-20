@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Catching Up with Michele Leroux Bustamante",
+    "downloadDescription": "Michele Leroux Bustamante talks to Carl and Richard for the first time since she had her first kid! The topic is federated identity services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080930MBustamante.zip",
+            "url": "https://download.microsoft.com/download/1/0/a/10a10e59-4a9d-4b20-b5ba-962b6bbbca73/20080930MBustamante.zip",
+            "size": "47953568",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:08:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Mich\u00e8le Leroux Bustamante is Chief Architect of IDesign Inc., Microsoft Regional Director for San Diego, Microsoft MVP for Connected Systems and a BEA Technical Director. At IDesign Michele provides training, mentoring and high-end architecture consulting services focusing on Web services, scalable and secure architecture design for .NET, interoperability and globalization architecture. She is a member of the International .NET Speakers Association (INETA), a frequent conference presenter, conference chair for SD West, and is frequently published in several major technology journals. Michele is also on the board of directors for IASA (International Association of Software Architects), and a Program Advisor to UCSD Extension. Her latest book is Learning WCF (O\u2019Reilly 2007). See her book blog at <a href=\"http://www.thatindigogirl.com\">www.thatindigogirl.com</a>. Reach her at <a href=\"http://mlb@idesign.net\">mlb@idesign.net</a>, or visit <a href=\"http://www.idesign.net\">www.idesign.net</a> and her main blog at <a href=\"http://www.dasblonde.net\">www.dasblonde.net</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080930MBustamante.zip"
+    ],
+    "detailsSection_file_size": [
+        "45.7 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "16090",
+    "downloadPreload": true
+}

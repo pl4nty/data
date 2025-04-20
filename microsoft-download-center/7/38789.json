@@ -1,0 +1,118 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Enterprise Library 6",
+    "downloadDescription": "Microsoft Enterprise Library is a collection of reusable application blocks designed to assist software developers with common enterprise development challenges. This release includes: Data Access Block, Exception Handling Block, Logging Block, Policy Injection Block, Semantic Logging Block, Transient Fault Handling Block, Validation Block, and Unity.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SemanticLogging-service.exe",
+            "url": "https://download.microsoft.com/download/b/b/4/bb4234fa-f238-4bde-8a63-ffb6b2d81761/SemanticLogging-service.exe",
+            "size": "1089968",
+            "version": "6.0",
+            "datePublished": "7/15/2024 5:00:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft.Practices.EnterpriseLibrary.ConfigConsoleV6.vsix",
+            "url": "https://download.microsoft.com/download/b/b/4/bb4234fa-f238-4bde-8a63-ffb6b2d81761/Microsoft.Practices.EnterpriseLibrary.ConfigConsoleV6.vsix",
+            "size": "743123",
+            "version": "6.0",
+            "datePublished": "7/15/2024 5:00:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EnterpriseLibrary6-source.exe",
+            "url": "https://download.microsoft.com/download/b/b/4/bb4234fa-f238-4bde-8a63-ffb6b2d81761/EnterpriseLibrary6-source.exe",
+            "size": "7892912",
+            "version": "6.0",
+            "datePublished": "7/15/2024 5:00:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EnterpriseLibrary6-QuickStarts-source.exe",
+            "url": "https://download.microsoft.com/download/b/b/4/bb4234fa-f238-4bde-8a63-ffb6b2d81761/EnterpriseLibrary6-QuickStarts-source.exe",
+            "size": "649136",
+            "version": "6.0",
+            "datePublished": "7/15/2024 5:00:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "EnterpriseLibrary6-binaries.exe",
+            "url": "https://download.microsoft.com/download/b/b/4/bb4234fa-f238-4bde-8a63-ffb6b2d81761/EnterpriseLibrary6-binaries.exe",
+            "size": "1090080",
+            "version": "6.0",
+            "datePublished": "7/15/2024 5:00:08 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EnterpriseLibrary6-aExpenseRI-source.exe",
+            "url": "https://download.microsoft.com/download/b/b/4/bb4234fa-f238-4bde-8a63-ffb6b2d81761/EnterpriseLibrary6-aExpenseRI-source.exe",
+            "size": "681504",
+            "version": "6.0",
+            "datePublished": "7/15/2024 5:00:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Enterprise Library is a collection of reusable application blocks addressing common cross-cutting concerns. This release includes: Data Access Application Block, Exception Handling Application Block, Logging Application Block, Policy Injection Application Block, Semantic Logging Application Block, Transient Fault Handling Application Block,  Validation Application Block, and Unity Application Block.<br/>\r\n<br/>\r\nThis major release of Enterprise Library contains many compelling new features and updates that will make developers and IT professionals more productive. Two new application blocks are:\r\n<ul>\r\n <li>Semantic Logging Application Block</li>\r\n <li>Transient Fault Handling Application Block (this application block was previously a part of the Enterprise Library Integration Pack for Windows Azure; in this release it has been generalized and updated to the latest technologies)</li>\r\n</ul>\r\nOther major new features include:\r\n<ul>\r\n <li>New programmatic configuration that doesn\u2019t require a container</li>\r\n <li>AsynchronousTraceListenerWrapper for the Logging Application Block, which enables existing listeners to write messages asynchronously</li>\r\n <li>JSON formatter for the Logging Application Block.</li>\r\n</ul>\r\nNew Unity Application Block includes many improvements:\r\n<ul>\r\n <li>Registration by convention</li>\r\n <li>Support for NetCore (Windows Store apps)</li>\r\n <li>Resolving objects of type Lazy&lt;T&gt;</li>\r\n <li>The Unity assembly is now Security Transparent</li>\r\n <li>Support for ASP.NET MVC and ASP.NET Web API</li>\r\n</ul>\r\nThe detailed list of all changes is included in the <a href=\"http://aka.ms/el6release\">Release Notes</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "SemanticLogging-service.exe",
+        "Microsoft.Practices.EnterpriseLibrary.ConfigConsoleV6.vsix",
+        "EnterpriseLibrary6-source.exe",
+        "EnterpriseLibrary6-QuickStarts-source.exe",
+        "EnterpriseLibrary6-binaries.exe",
+        "EnterpriseLibrary6-aExpenseRI-source.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.0 MB",
+        "725.7 KB",
+        "7.5 MB",
+        "633.9 KB",
+        "1.0 MB",
+        "665.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n   <li>Supported architectures: x86 and x64.</li>\r\n   <li>Operating systems: Microsoft Windows\u00ae 8, Microsoft Windows\u00ae 7, Windows Server 2008 R2, Windows Server 2012.</li>\r\n   <li>Supported .NET Frameworks: Microsoft .NET Framework 4.5, .NET for Windows Store Apps (previously known as WinRT) for Unity and Transient Fault Handling Application Blocks.</li>\r\n</ul>\r\n\r\nFor a <i>rich development environment</i>, the following are recommended:\r\n<ul>\r\n   <li> Microsoft Visual Studio\u00ae 2012 (Professional, Ultimate, or Express editions). </li>\r\n</ul>\r\n\r\nFor the <i>Data Access Application Block</i>, the following is also required:\r\n<ul>\r\n   <li> A database server running a database that is supported by a .NET Framework 4.5 data provider. </li>\r\n</ul>\r\n\r\nFor the  <i>Logging Application Block</i>, the following are also required:\r\n<ul>\r\n   <li> Stores to maintain log messages. If you are using the Message Queuing (MSMQ) Trace Listener to store log messages, you need the Microsoft Message Queuing (MSMQ) components installed. If you are using the Database Trace Listener to store log messages, you need access to a database server. If you are using the E-mail Trace Listener to store log messages, you need access to an SMTP server. </li>\r\n</ul>\r\n\r\nFor the <i>Semantic Logging Application Block</i>, the following may be required:\r\n<ul>\r\n   <li> If you are using the SQL Database Sink to store log messages, you need access to a SQL Server database server. The following are supported: SQL Server 2008 and higher, SQL Server LocalDB, Windows Azure SQL Database.</li>\r\n   <li>If you are using the Windows Azure Sink to store log messages, you need access to a Windows Azure storage account. You must also install the Windows Azure SDK Version 1.8. </li>\r\n</ul>\r\n\r\nIf these dependencies are not met, you may not be able to use certain Enterprise Library features.\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Download the self-extractable zip packages and extract. Review readme instructions included with each package.",
+    "additionalInformationSection": "All application blocks are also available as NuGet packages.",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Enterprise Library on MSDN",
+            "url": "http://msdn.microsoft.com/entlib"
+        },
+        {
+            "title": "microsoft Enterprise Library 6 Documentation",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=290901"
+        },
+        {
+            "title": "microsoft Enterprise Library Support and Community Site",
+            "url": "http://entlib.codeplex.com"
+        },
+        {
+            "title": "microsoft Unity 3 on MSDN",
+            "url": "http://go.microsoft.com/fwlink/p/?LinkID=290899"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "38789",
+    "downloadPreload": true
+}

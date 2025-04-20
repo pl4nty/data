@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "MCT: Presentation Skills Training Providers",
+    "downloadDescription": "This list contains information for presentation skills training providers.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "providers.xls",
+            "url": "https://download.microsoft.com/download/e/f/0/ef0c6561-6eb8-405b-80d0-42233b3978e7/providers.xls",
+            "size": "37888",
+            "version": "1.2",
+            "datePublished": "7/15/2024 3:29:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This list contains information for presentation skills training providers. Passing a presentation skills course is one of the requirements to become a Microsoft Certified Trainer (MCT).",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.2",
+    "detailsSection_file_name": [
+        "providers.xls"
+    ],
+    "detailsSection_file_size": [
+        "37.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2003, Microsoft Excel 2003, Microsoft PowerPoint 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Click on the file to download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "31994",
+    "downloadPreload": true
+}

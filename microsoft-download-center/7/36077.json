@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Word 97 Outlook Message Class Document",
+    "downloadDescription": "Omsgclas.doc is a Word document that uses Office automation to change the message class for all items in an Outlook folder.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Omsgclas.exe",
+            "url": "https://download.microsoft.com/download/4/9/e/49e864eb-eb85-4120-9bf9-fdab8e5b73d3/Omsgclas.exe",
+            "size": "97504",
+            "version": "2000",
+            "datePublished": "7/15/2024 3:31:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can get specific information about this document in the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/201089\">How to use the Omsgclas.doc Word document to automatically change the message class of Outlook items</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2000",
+    "detailsSection_file_name": [
+        "Omsgclas.exe"
+    ],
+    "detailsSection_file_size": [
+        "95.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Outlook 97, Outlook 98, or Outlook 2000 with Word 97 or Word 2000.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 95",
+        "Windows 98",
+        "Windows ME",
+        "Windows NT",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Download and run the self-extracting EXE file. The extracted Word document contains additional instructions.<br /><br />\r\nSee the Microsoft Knowledge Base article <a href=\"http://support.microsoft.com/kb/201089\">How to use the Omsgclas.doc Word document to automatically change the message class of Outlook items</a> for more information about using the Word document.",
+    "relatedResourcesSection": [
+        {
+            "title": "more Information",
+            "url": "http://support.microsoft.com/kb/201089"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "36077",
+    "downloadPreload": true
+}

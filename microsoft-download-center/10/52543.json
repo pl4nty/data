@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Data Structures and Algorithms School Project Code",
+    "downloadDescription": "This is a programming project for the 2010 Mircosoft Algorithms and Data Structures School. Last published: June 1, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "prog_project.zip",
+            "url": "https://download.microsoft.com/download/8/e/a/8ea05248-6a51-4383-94a2-37068b0656e9/prog_project.zip",
+            "size": "25466",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a programming project for the 2010 Mircosoft Algorithms and Data Structures School. Given a graph, such as a road network, the students are expected to devise landmark placement that gives good bounds for distance estimation using the landmarks and triangle inequality. We provide a complete solution using random landmark generation and a function to evaluate a set of landmarks. The students\u2019 goal is to replace random landmark generation with their own that gets as high an evaluation score as possible.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "prog_project.zip"
+    ],
+    "detailsSection_file_size": [
+        "24.9 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52543",
+    "downloadPreload": true
+}

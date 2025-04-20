@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2014 SP3 CU(KB4583462)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2014 SP3 CU.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2014-KB4583462-x86.exe",
+            "url": "https://download.microsoft.com/download/b/2/3/b2335705-f220-403d-988d-8b688b66a0d1/SQLServer2014-KB4583462-x86.exe",
+            "size": "394583440",
+            "version": "12.0.6433.1",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2014-KB4583462-x64.exe",
+            "url": "https://download.microsoft.com/download/b/2/3/b2335705-f220-403d-988d-8b688b66a0d1/SQLServer2014-KB4583462-x64.exe",
+            "size": "625009552",
+            "version": "12.0.6433.1",
+            "datePublished": "7/15/2024 4:29:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Data can be sent over a network to an affected Microsoft SQL Server instance that might cause code to run against the SQL Server process if a certain extended event is enabled.  <br /><br />\r\n\r\nMore information about the vulnerability can be found here: \r\n<a name=\"KB4583462\"></a><a href=\"http://support.microsoft.com/help/4583462\">KB4583462</a> <br /><br />\r\n\r\nFor other impacted SQL Server releases, please see: <br /><br />\r\n<a name=\"KB4583465\"></a><a href=\"http://support.microsoft.com/help/4583465\">Security Update for SQL Server 2012 SP4 GDR</a> <br />\r\n<a name=\"KB4583462\"></a><a href=\"http://support.microsoft.com/help/4583462\">Security Update for SQL Server 2014 SP3 CU (CU4+GDR fix)*</a> <br />\r\n<a name=\"KB4583463\"></a><a href=\"http://support.microsoft.com/help/4583463\">Security Update for SQL Server 2014 SP3 GDR</a> <br />\r\n<a name=\"KB4583461\"></a><a href=\"http://support.microsoft.com/help/4583461\">Security Update for SQL Server 2016 SP2 CU (CU15+GDR fix)*</a> <br />\r\n<a name=\"KB4583460\"></a><a href=\"http://support.microsoft.com/help/4583460\">Security Update for SQL Server 2016 SP2 GDR</a> <br />\r\n<a name=\"KB4583457\"></a><a href=\"http://support.microsoft.com/help/4583457\">Security Update for SQL Server 2017 RTM CU (CU22+GDR fix)*</a> <br />\r\n<a name=\"KB4583456\"></a><a href=\"http://support.microsoft.com/help/4583456\">Security Update for SQL Server 2017 RTM GDR</a> <br />\r\n<a name=\"KB4583459\"></a><a href=\"http://support.microsoft.com/help/4583459\">Security Update for SQL Server 2019 RTM CU (CU8+GDR fix)*</a> <br />\r\n<a name=\"KB4583458\"></a><a href=\"http://support.microsoft.com/help/4583458\">Security Update for SQL Server 2019 RTM GDR</a> <br />\r\n\r\n* These security updates are for SQL Server instances that have applied a Cumulative Update.<br /> <br />     \r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. \r\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12.0.6433.1",
+    "detailsSection_file_name": [
+        "SQLServer2014-KB4583462-x86.exe",
+        "SQLServer2014-KB4583462-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "376.3 MB",
+        "596.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2014 SP3 instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2014 SP3 Windows instances that have had a Cumulative Update applied (versions 12.0.6205.1 (CU1) to 12.0.6372.1 (CU4)).<br /> <br />     \r\n\nFor Microsoft SQL Server 2014 SP3 for Windows instances (versions 12.0.6024.0 to 12.0.6118.4) that have NOT had any Cumulative Update applied, please see <a name=\"KB4583463\"></a><a href=\"http://support.microsoft.com/help/4583463\">KB4583463</a>. After you install this update, you may have to restart your computer.\n\n\n",
+    "relatedResourcesSection": [
+        {
+            "title": "kB4583462",
+            "url": "https://support.microsoft.com/en-us/help/4583462"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "102623",
+    "downloadPreload": true
+}

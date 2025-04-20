@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "PDF file",
+    "downloadDescription": "Release Notes for Business Applicaltion group",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BusinessApps_ReleaseNotes_v18.1.4.pdf",
+            "url": "https://download.microsoft.com/download/d/0/0/d0001082-eedc-41e2-a7c2-4bd05a7fb63a/BusinessApps_ReleaseNotes_v18.1.4.pdf",
+            "size": "23487307",
+            "version": "18.1.1",
+            "datePublished": "7/15/2024 4:57:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Relase Notes for all the producsts in BAG ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "18.1.1",
+    "detailsSection_file_name": [
+        "BusinessApps_ReleaseNotes_v18.1.4.pdf"
+    ],
+    "detailsSection_file_size": [
+        "22.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Nothing",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "iOS",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click on the link from the portal  to download the PDF file",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "57072",
+    "downloadPreload": true
+}

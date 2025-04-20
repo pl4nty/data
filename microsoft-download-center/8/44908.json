@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2010 Service Pack 1 (KB3002340)",
+    "downloadDescription": "This download installs a fix for failing to create ASP.NET Empty Web Application/ASP.NET Web Forms Application after installing Microsoft .NET Framework 4.5.3",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS10SP1-KB3002340-x86.exe",
+            "url": "https://download.microsoft.com/download/6/7/e/67e041a1-00da-4948-90be-75a0146c08f5/VS10SP1-KB3002340-x86.exe",
+            "size": "3531960",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:53:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This download installs a fix for an issue that Visual Studio 2010 SP1 customers will see the following dialog box when creating or opening an existing Windows Azure Project or Web Site project after installing Microsoft .NET Framework 4.5.3.\r\n\u201cConfiguring Web for ASP.NET 4.5 failed. You must manually configure to site for ASP.NET 4.5 in order for the site to run correctly.\u201d",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "VS10SP1-KB3002340-x86.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2010 SP1 \r\n.NET 4.5.3",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 R2 (32-Bit x86)",
+        "Windows Server 2003 R2 x64 editions",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 R2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 2"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 3002340",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=518335"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "44908",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Rack Server Virtualization add-in for Visio 2010",
+    "downloadDescription": "Simplify how you monitor and manage the virtualization of racks, colos, and servers in your data centers with this Visio 2010 add-in.  ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "User Guide for Visio Add-In for Rack Server Virtualization.docx",
+            "url": "https://download.microsoft.com/download/e/c/b/ecb21706-3ae4-444b-a912-1dc7127a69a6/User Guide for Visio Add-In for Rack Server Virtualization.docx",
+            "size": "3130456",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:40 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use this add-in to simplify the virtualization of servers and racks in your data centers. The Microsoft Visio 2010 Add-in for Rack Server Virtualization uses several new features in Visio 2010 to display the details of your servers and racks before and after virtualizing. With the add-in, you can get a consolidated view of your physical racks, servers and colos (collocated equipment), providing a side-by-side view of both their existing status and their proposed status after virtualization. The add-in provides a virtualization configuration wizard that helps you manage the virtualization process; easily document racks, servers and colos; and compare the power consumption and space utilization of your data center before and after virtualization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "User Guide for Visio Add-In for Rack Server Virtualization.docx"
+    ],
+    "detailsSection_file_size": [
+        "3.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\u2022 Microsoft .NET Framework 3.5\r\n\u2022 Visio Professional 2010 or Visio Premium 2010\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008 Service Pack 2",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Click Downloadto download the installation file and user guide. Follow the instructions in user guide to install the add-in and learn how to use its features.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "26233",
+    "downloadPreload": true
+}

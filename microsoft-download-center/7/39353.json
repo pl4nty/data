@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 White Paper: Task Recorder Update",
+    "downloadDescription": "This white paper describes how to use the advanced functions in Task recorder that are available in Knowledgebase article 2863182.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Task recorder update AX 2012.pdf",
+            "url": "https://download.microsoft.com/download/9/6/b/96b4b5cf-093e-42a0-a493-2625cd27d906/Task recorder update AX 2012.pdf",
+            "size": "711444",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:11:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You can generate artifacts that can be uploaded to Business process modeler in Lifecycle Services for Microsoft Dynamics. You can create cross functional flowcharts and task steps that you can modify to identify business process requirements and generate implementation artifacts.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Task recorder update AX 2012.pdf"
+    ],
+    "detailsSection_file_size": [
+        "694.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39353",
+    "downloadPreload": true
+}

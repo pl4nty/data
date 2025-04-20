@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Template Gallery",
+    "downloadDescription": "Template Gallery",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TemplateGallery.zip",
+            "url": "https://download.microsoft.com/download/7/d/3/7d374566-7d38-4cb8-b844-b885bfe7a956/TemplateGallery.zip",
+            "size": "2936214",
+            "version": "All",
+            "datePublished": "4/15/2024 3:08:36 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The content you are downloading is part of a large collection of technology offerings aligned with the Microsoft Connected Health Platform to help you optimize information and communication technology infrastructures for health organizations. You can access this collection and additional resources including contact information from the Health ICT Resource Center found at www.microsoft.com/healthict.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "All",
+    "detailsSection_file_name": [
+        "TemplateGallery.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "4/15/2024",
+    "systemRequirementsSection": "Microsoft Windows",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista"
+    ],
+    "installInstructionSection": ".WSP files within Zip file",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54",
+    "downloadPreload": true
+}

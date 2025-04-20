@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2009 White Paper: Global Address Book",
+    "downloadDescription": "This paper provides information about sharing party records in the global address book across companies and within companies in Microsoft Dynamics AX 2009.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "GAB_AX2009_Whitepaper.pdf",
+            "url": "https://download.microsoft.com/download/e/f/4/ef4be8f4-b15c-4dcb-9a14-75a6eaf6f0de/GAB_AX2009_Whitepaper.pdf",
+            "size": "1512266",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "GAB_AX2009_Whitepaper.xps",
+            "url": "https://download.microsoft.com/download/e/f/4/ef4be8f4-b15c-4dcb-9a14-75a6eaf6f0de/GAB_AX2009_Whitepaper.xps",
+            "size": "2029021",
+            "version": "2009",
+            "datePublished": "7/15/2024 3:15:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The global address book was introduced in Microsoft Dynamics AX 2009. It allows information to be shared across companies and entities through a central repository of people and organizations. These individual records are referred to as party records. The data that is associated with party records includes name, address, contact information, and person or organization details. <br /><br />\r\nThis paper includes scenarios for setting up and maintaining the global address book. It also suggests solutions and implementation steps for importing global address book information, such as customer records.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2009",
+    "detailsSection_file_name": [
+        "GAB_AX2009_Whitepaper.pdf",
+        "GAB_AX2009_Whitepaper.xps"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB",
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>To view the XPS file, you will need Windows Vista or the Microsoft XML Paper Specification Essentials Pack. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2009, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=107378\">System requirements for Microsoft Dynamics AX 2009</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file or XPS file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24651",
+    "downloadPreload": true
+}

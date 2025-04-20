@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Hybrid Hypersacle Architecture and implementation guidance ",
+    "downloadDescription": "Implementation guidance and technical details for the Hybrid Hypersacle offer",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL16 Hybrid Hyperscale.pptx",
+            "url": "https://download.microsoft.com/download/f/8/e/f8e735d8-462b-4336-9c61-f1e83928291e/Hybrid Hyperscale/SQL16 Hybrid Hyperscale.pptx",
+            "size": "1176178",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL16 Hybrid Hyperscale.docx",
+            "url": "https://download.microsoft.com/download/f/8/e/f8e735d8-462b-4336-9c61-f1e83928291e/Hybrid Hyperscale/SQL16 Hybrid Hyperscale.docx",
+            "size": "2479399",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:45 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "You will find the recommended architecture in the deck and detailed implementation guidance in the word document for enhanced performance offer based on SQL 2016  ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL16 Hybrid Hyperscale.pptx",
+        "SQL16 Hybrid Hyperscale.docx"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "2.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "download ",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52987",
+    "downloadPreload": true
+}

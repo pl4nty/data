@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync 2010 Adoption and Training Kit: Lync Custom Intranet Site",
+    "downloadDescription": "This zipped file contains a sample intranet site for Microsoft Lync 2010. ",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Lync_Custom_Intranet_Site_Download_Package.zip",
+            "url": "https://download.microsoft.com/download/4/f/b/4fbc76c0-7fa2-4a36-ad31-aba1c07ac39e/Lync_Custom_Intranet_Site_Download_Package.zip",
+            "size": "77934368",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:14:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These sample webpages are modeled after the internal Microsoft Lync 2010 support site and can help you start to create a dedicated Lync intranet site for your organization. The sample site includes HTML source code for all Help pages. It also includes all the short how-to videos, Help topics, Microsoft PowerPoint training presentations, and other resources currently available online.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Lync_Custom_Intranet_Site_Download_Package.zip"
+    ],
+    "detailsSection_file_size": [
+        "74.3 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Microsoft Office 2010; Microsoft Office 2007; Microsoft Office 2003",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To install the download, save the zipped file to a directory on your computer. After you save it, unzip it by right-clicking the file name, selecting Extract All, selecting a destination where you want the extracted files to reside, and then clicking Extract. To remove the download, delete the file from directory where you saved it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3063",
+    "downloadPreload": true
+}

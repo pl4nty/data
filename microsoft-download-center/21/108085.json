@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Testing",
+    "downloadDescription": "Testing",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Testing 1 2.docx",
+            "url": "https://download.microsoft.com/download/f7014471-2cbb-4422-b93d-78cdeefe9a5b/Testing 1 2.docx",
+            "size": "120320",
+            "version": "1.1.1",
+            "datePublished": "3/25/2025 5:59:39 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Testing",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1.1",
+    "detailsSection_file_name": [
+        "Testing 1 2.docx"
+    ],
+    "detailsSection_file_size": [
+        "117.5 KB"
+    ],
+    "detailsSection_file_date": "3/25/2025",
+    "systemRequirementsSection": "Testing",
+    "systemRequirementsSection_supportedOS": [
+        "Android",
+        "Apple Mac OS X",
+        "Apple Mac OS X v. 10.4 Tiger",
+        "Apple Mac OS X v. 10.5 Leopard"
+    ],
+    "installInstructionSection": "Testing",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "108085",
+    "downloadPreload": true
+}

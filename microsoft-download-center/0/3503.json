@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Duet Enterprise for Microsoft SharePoint and SAP Poster",
+    "downloadDescription": "Duet Enterprise is a new, jointly-developed product from SAP and Microsoft that enables interoperability between SAP applications and Microsoft SharePoint 2010 Enterprise Edition.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "duet-enterprise-poster.vsd",
+            "url": "https://download.microsoft.com/download/2/3/0/230dd8b4-688a-454c-bfa6-9af926d4f8df/duet-enterprise-poster.vsd",
+            "size": "4377600",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "duet-enterprise-poster.xps",
+            "url": "https://download.microsoft.com/download/2/3/0/230dd8b4-688a-454c-bfa6-9af926d4f8df/duet-enterprise-poster.xps",
+            "size": "958293",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "duet-enterprise-poster.pdf",
+            "url": "https://download.microsoft.com/download/2/3/0/230dd8b4-688a-454c-bfa6-9af926d4f8df/duet-enterprise-poster.pdf",
+            "size": "470670",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:28 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        }
+    ],
+    "detailsSection": "Duet Enterprise is a new, jointly-developed product from SAP and Microsoft that enables interoperability between SAP applications and Microsoft SharePoint 2010 Enterprise Edition. Duet Enterprise enables employees to consume and extend SAP processes and information from within SharePoint Server and Microsoft Office 2010 applications. The Duet Enterprise poster is a helpful graphic representation of Duet Enterprise architecture for both the SAP and Microsoft environments that includes detailed explanations of each area. Also presented and discussed are security in Duet Enterprise, and the impact of business unit ownership of applications in a Duet environment.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "duet-enterprise-poster.vsd",
+        "duet-enterprise-poster.xps",
+        "duet-enterprise-poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "4.2 MB",
+        "935.8 KB",
+        "459.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "To edit the Visio version of the model, you must have Microsoft Office Visio 2007 or Microsoft Visio 2010. You can also use Microsoft Internet Explorer and the <a href=\"http://go.microsoft.com/fwlink/?LinkID=118761\">Visio 2007 Viewer</a> to view the model. <br/> To view the PDF version of the model, you must have a PDF viewer, such as <a href=\"http://go.microsoft.com/fwlink/?LinkId=134751\">Adobe Reader</a><br/>To view the XPS version of the model, you must have Windows Vista, Windows XP with .NET Framework 3.0, or <a href=\"http://go.microsoft.com/fwlink/?LinkId=134750\">XPS Essentials Pack</a>.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button above to start the download.</LI><LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "3503",
+    "downloadPreload": true
+}

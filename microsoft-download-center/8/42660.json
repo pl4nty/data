@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "IDC Microsoft Desktop Optimization Pack (MDOP) Study (May 2013)",
+    "downloadDescription": "This IDC White Paper considers the operational experiences of customer sites that are using the Microsoft Desktop Optimization Pack to manage and maintain their PCs and calculates a total cost of ownership (TCO) and ROI model associated with using these products.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MDOP_TCO_0513.pdf",
+            "url": "https://download.microsoft.com/download/e/9/f/e9fa92f9-c3d2-45b3-8408-f3c850345370/MDOP_TCO_0513.pdf",
+            "size": "354525",
+            "version": "Al",
+            "datePublished": "7/15/2024 3:26:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "N/A",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Al",
+    "detailsSection_file_name": [
+        "MDOP_TCO_0513.pdf"
+    ],
+    "detailsSection_file_size": [
+        "346.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 8"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42660",
+    "downloadPreload": true
+}

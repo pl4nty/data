@@ -1,0 +1,52 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate DNS Security Extensions (DNSSEC) in Windows Server \"8\" Beta ",
+    "downloadDescription": "This paper contains an introduction to Windows Server \"8\" Beta DNSSEC and step-by-step instructions for extending the Windows Server \"8\" Beta Base Configuration test lab to demonstrate DNSSEC operation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows_Server_8_Beta_Test_Lab_Guide_Demonstrate_DNSSEC.docx",
+            "url": "https://download.microsoft.com/download/f/c/4/fc4834fd-3825-4498-a093-144f52fe933e/Windows_Server_8_Beta_Test_Lab_Guide_Demonstrate_DNSSEC.docx",
+            "size": "302366",
+            "version": "February 2012",
+            "datePublished": "7/15/2024 3:28:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DNS Security Extensions (DNSSEC) is a suite of extensions that add security to the DNS protocol. RFCs 4033, 4034, 4035, and 5155 specify the core DNSSEC extensions and add origin authority, data integrity, and authenticated denial of existence to DNS. In addition to several new concepts and operations for both the DNS server and the DNS client, DNSSEC introduces new resource records (DNSKEY, RRSIG, NSEC, NSEC3, and DS) to DNS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "February 2012",
+    "detailsSection_file_name": [
+        "Windows_Server_8_Beta_Test_Lab_Guide_Demonstrate_DNSSEC.docx"
+    ],
+    "detailsSection_file_size": [
+        "295.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Word or Word Viewer",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 8 Beta"
+    ],
+    "installInstructionSection": "<ul><li>To start the download, click the <b>Download</b> button, and then do one of the following:</li><ul><li>To start the download immediately, click <b>Open</b>.</li><li>To copy the download to your computer for viewing at a later time, click <b>Save</b>.</li><li>To cancel the download, click <b>Cancel</b>. </li></ul></ul>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "understand and Troubleshoot Windows Server",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=243097"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "29007",
+    "downloadPreload": true
+}

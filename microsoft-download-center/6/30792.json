@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "The Microsoft Office Open XML Format",
+    "downloadDescription": "The Microsoft Office Open XML Format -- Preview for Developers",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FileFormatsPreview.doc",
+            "url": "https://download.microsoft.com/download/6/9/5/695e7c60-0f04-4bb6-b072-350d0bd69034/FileFormatsPreview.doc",
+            "size": "232960",
+            "version": "2",
+            "datePublished": "7/15/2024 3:16:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fa-ir",
+            "name": "Persian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "The Microsoft Office Open XML Format -- Preview for Developers",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2",
+    "detailsSection_file_name": [
+        "FileFormatsPreview.doc"
+    ],
+    "detailsSection_file_size": [
+        "227.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requirements Template",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 2000",
+        "Windows 3.1",
+        "Windows 3.11",
+        "Windows 95",
+        "Windows 98",
+        "Windows 98 Second Edition",
+        "Windows CE",
+        "Windows CE .NET",
+        "Windows ME",
+        "Windows NT",
+        "Windows NT Embedded ",
+        "Windows Server 2003",
+        "Windows Small Business Server 2003 ",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Instructions Template",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "30792",
+    "downloadPreload": true
+}

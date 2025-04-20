@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Third Party Notification for Microsoft Dynamics NAV Universal App for Windows",
+    "downloadDescription": "Third Party Notification for Microsoft Dynamics NAV Universal App for Windows",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MBS (Attribution) - Dynamics NAV for Windows Third Party Notice.docx",
+            "url": "https://download.microsoft.com/download/7/4/3/7437f832-be67-4cb8-9e67-644f6e9c9617/MBS (Attribution) - Dynamics NAV for Windows Third Party Notice.docx",
+            "size": "23557",
+            "version": "NAV 2017",
+            "datePublished": "6/15/2024 4:33:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Third Party Notification for Microsoft Dynamics NAV Universal App for Windows",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NAV 2017",
+    "detailsSection_file_name": [
+        "MBS (Attribution) - Dynamics NAV for Windows Third Party Notice.docx"
+    ],
+    "detailsSection_file_size": [
+        "23.0 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Word",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Download and open the file to read it.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54117",
+    "downloadPreload": true
+}

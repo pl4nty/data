@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Important Update for SQL Server 2016 RTM (KB3210111)",
+    "downloadDescription": "This update refreshes the Microsoft SQL Server 2016 RTM Master Data Services and R Services.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQLServer2016-KB3210111-x64.exe",
+            "url": "https://download.microsoft.com/download/6/1/0/610a9891-83ba-449a-846d-5f91ddc1aa0d/x64/SQLServer2016-KB3210111-x64.exe",
+            "size": "355686728",
+            "version": "13.0.1728.2 ",
+            "datePublished": "7/15/2024 4:39:10 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "\n      Download this update to resolve issues in SQL Server 2016 Master Data Services and R Services features. For a complete listing of the issues that are resolved in this update, see the associated Microsoft Knowledge Base article. After you install this update, you may have to restart your computer.\n    ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.1728.2 ",
+    "detailsSection_file_name": [
+        "SQLServer2016-KB3210111-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "339.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2016 RTM instances with Master Data Services and/or R Services features installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "Download the appropriate file for your computer's processor by clicking one of the links below. You can run the package directly from the link or you can also save it on your local disk to install later",
+    "additionalInformationSection": "Not Available. Migrated from DMS",
+    "relatedResourcesSection": [
+        {
+            "title": "kB3210111",
+            "url": "https://support.microsoft.com/en-us/kb/3210111"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "54512",
+    "downloadPreload": true
+}

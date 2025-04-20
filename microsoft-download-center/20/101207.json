@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Bulk update AAD office locations",
+    "downloadDescription": "Use this utility to update the PhysicalDeliveryOfficeName field in AAD profiles using a CSV file",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "BulkUpdateOfficeLocations.ps1",
+            "url": "https://download.microsoft.com/download/1/c/4/1c4cf0f8-95a9-42d7-848a-4d838b869675/BulkUpdateOfficeLocations.ps1",
+            "size": "1784",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:23:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This PowerShell utility updates the PhysicalDeliveryOfficeName (or Office) field in AAD profiles using a CSV file. The CSV file should contain a mapping between AAD aliases and the office info. It also backs up existing data to ensure that the changes can be rolled back.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "BulkUpdateOfficeLocations.ps1"
+    ],
+    "detailsSection_file_size": [
+        "1.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Requires Windows 10 or Windows Server 2016</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows Server 2016"
+    ],
+    "installInstructionSection": "<ol>\r\n<li style=\"text-align: left;\">Click&nbsp;<b>Download&nbsp;</b>to download the utility.</li>\r\n<li style=\"text-align: left;\"> Create a CSV file. For example, create a file named 'LocationInfo.csv'.</li>\r\n<li style=\"text-align: left;\"> Add rows containing user alias and office location info to the CSV file. For example, <b>AdeleV@contoso.com,2/1173</b>. Ensure you have a separate row for each alias, office location) pair.</li>\r\n<li style=\"text-align: left;\"> Open Windows PowerShell.</li>\r\n<li style=\"text-align: left;\"> From commandline, <b>cd</b> to the folder containing the script.</li>\r\n <li style=\"text-align: left;\"> Run BulkUpdateOfficeLocations.ps1.</li>\r\n  <li style=\"text-align: left;\"> Login using AAD credentials.</li>\r\n  <li style=\"text-align: left;\"> Provide path of CSV file.</li>\r\n  <li style=\"text-align: left;\"> The script will try to update the office field for the AAD aliases in the CSV file and publish a summary.</li>\r\n </ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101207",
+    "downloadPreload": true
+}

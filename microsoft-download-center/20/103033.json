@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "Unified Routing Migration Application",
+    "downloadDescription": "Tool for migrating workstreams created in the Omnichannel Administration app to the Omnichannel admin center app",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MigrateworkstreamsV2.pdf",
+            "url": "https://download.microsoft.com/download/1/b/f/1bf01026-6827-4001-95c2-df7db180ad65/MigrateworkstreamsV2.pdf",
+            "size": "269321",
+            "version": "2.0",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "URMigrationConsoleApp.zip",
+            "url": "https://download.microsoft.com/download/1/b/f/1bf01026-6827-4001-95c2-df7db180ad65/URMigrationConsoleApp.zip",
+            "size": "2813579",
+            "version": "2.0",
+            "datePublished": "7/15/2024 5:03:21 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Use the tool for migrating workstreams created in the Omnichannel Administration app to enable them for unified routing. See the Migrateworkstreams.pdf for instructions.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "MigrateworkstreamsV2.pdf",
+        "URMigrationConsoleApp.zip"
+    ],
+    "detailsSection_file_size": [
+        "263.0 KB",
+        "2.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Omnichannel for Customer Service released in 2021 release wave 1.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Extract the contents of the UnifiedRoutingMigrationApp.zip file into a folder and see the PDF file titled Migrateworkstreams.pdf for information on using the migration tool.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "103033",
+    "downloadPreload": true
+}

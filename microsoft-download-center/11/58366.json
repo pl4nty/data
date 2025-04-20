@@ -1,0 +1,58 @@
+{
+    "error": "",
+    "downloadTitle": "Implementing a Zero Trust approach with Azure Active Directory",
+    "downloadDescription": "An illustrated technical overview for implementing a Zero Trust approach with Azure Active Directory",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Implementing-a-Zero-Trust-approach-with-Azure-Active-Directory.pdf",
+            "url": "https://download.microsoft.com/download/8/2/7/8271584f-a6d6-419a-b262-c37e5ffab593/Implementing-a-Zero-Trust-approach-with-Azure-Active-Directory.pdf",
+            "size": "3579189",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:01:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Most organizations are profoundly challenged by the emergence of all types and sizes of disruptive actors in their markets and are forced to transform to survive. Improving agility and developing a culture of continuous change to become able to continuously redefine what is possible and be able to deploy new optimized operating models, is vital for those organizations. Those are the indispensable foundations to become able to better understand the customer expectations, to improve existing and create new customer experiences, to invent new business models and, ultimately, to generate new sources of revenue.\r\n<br/><br/>\r\nDigital transformation is therefore a key factor of growth, innovation and differentiation in a market with heightened competition. In this context, the increasing usage of the cloud by these organizations, the use of more and more varied types of device, and more and more mobility scenarios, present new challenges to provide adequate security, as part of the processing and data, that are now, de facto, outside the reassuring boundaries of the firewalls.\r\n<br/><br/>\r\nIn light of the above, this white paper proposes to:\r\n<li> \r\n<ul>Revisit the term \"Zero Trust\" and what it covers in its structuring principles,</ul>\r\n<ul>Describe how these principles apply to a computer environment to improve end-to-end security,</ul>\r\n<ul>Discuss how to translate these principles concretely with Azure Active Directory (Azure AD) and Microsoft security services, products and technologies.</ul>\r\n</li>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Implementing-a-Zero-Trust-approach-with-Azure-Active-Directory.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not applicable",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Linux",
+        "Windows 10"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button on this page to start downloading this document.",
+    "relatedResourcesSection": [
+        {
+            "title": "5 steps to secure your security infrastructure",
+            "url": "https://aka.ms/securitysteps"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "58366",
+    "downloadPreload": true
+}

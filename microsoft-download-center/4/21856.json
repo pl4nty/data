@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "PerformancePoint Data Source Inventory template (SharePoint Server 2010)",
+    "downloadDescription": "This PerformancePoint Data Source Inventory template will help you create a data source inventory.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "PerformancePoint-data-source-inventory.xlsx",
+            "url": "https://download.microsoft.com/download/8/b/4/8b4813b5-f398-4eea-8ed3-82f3d9db83ba/PerformancePoint-data-source-inventory.xlsx",
+            "size": "31903",
+            "version": "1",
+            "datePublished": "7/15/2024 3:26:38 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "When you configure PerformancePoint Services in Microsoft SharePoint Server 2010 for your environment, one tool that can save you and dashboard authors much work is a data source inventory. You would typically use a data source inventory to list and track the various data sources that your organization might use with PerformancePoint Services. This PerformancePoint Data Source Inventory template will help you create a data source inventory.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "PerformancePoint-data-source-inventory.xlsx"
+    ],
+    "detailsSection_file_size": [
+        "31.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Office Excel 2007 or Microsoft Excel 2010",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> Click <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to open it. </LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "21856",
+    "downloadPreload": true
+}

@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": "Video: Creating Chapter Markers for the MediaPlayer Control - English",
+    "downloadDescription": "Migrated from DMS.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Walkthrough-CreatingChapterMarkers.wmv",
+            "url": "https://download.microsoft.com/download/0/0/b/00ba1225-8c27-4079-b054-0246301662f7/Walkthrough-CreatingChapterMarkers.wmv",
+            "size": "9024929",
+            "version": "0.1",
+            "datePublished": "7/15/2024 3:14:59 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This video shows how to create chapter markers to use with the ASP.NET MediaPlayer control for Silverlight. See Related Resources for documentation that accompanies this video.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.1",
+    "detailsSection_file_name": [
+        "Walkthrough-CreatingChapterMarkers.wmv"
+    ],
+    "detailsSection_file_size": [
+        "8.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>Windows Media Player</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ul><br />\n<li>Click the <b>Download</b> button on this page to start the video.</li><br />\n</ul>",
+    "relatedResourcesSection": [
+        {
+            "title": "silverlight Documentation on MSDN",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=110063"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "8676",
+    "downloadPreload": true
+}

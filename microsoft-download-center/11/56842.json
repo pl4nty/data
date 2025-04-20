@@ -1,0 +1,236 @@
+{
+    "error": "",
+    "downloadTitle": "Best Practices Analyzer 1.1 for Microsoft Dynamics 365 Unified Service Desk",
+    "downloadDescription": "Download the Best Practices Analyzer sample package for Unified Service Desk.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "BestPracticesAnalyzerPackage_amd64.zip",
+            "url": "https://download.microsoft.com/download/9/d/9/9d9f1378-cc18-4169-b4ff-868df43cbbec/BestPracticesAnalyzerPackage_amd64.zip",
+            "size": "13612662",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "BestPracticesAnalyzerPackage_i386.zip",
+            "url": "https://download.microsoft.com/download/9/d/9/9d9f1378-cc18-4169-b4ff-868df43cbbec/BestPracticesAnalyzerPackage_i386.zip",
+            "size": "13611521",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:50:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "eu-es",
+            "name": "Basque"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "sr-cyrl-rs",
+            "name": "Serbian (Cyrillic)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "id-id",
+            "name": "Indonesian"
+        },
+        {
+            "cultureCode": "vi-vn",
+            "name": "Vietnamese"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ms-my",
+            "name": "Malay (Malaysia)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Best Practices Analyzer for Unified Service Desk analyzes the compliance of Unified Service Desk with best practice rules in certain categories like Unified Service Desk Configurations, System configurations, and Internet Explorer settings.  For more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=872663\">Best Practices Analyzer</a>.<br/><br/>\r\nThis download contains the setup for the following:\r\n<ul>\r\n<li>Best Practices Analyzer sample package for Unified Service Desk</li>\r\n</ul>\r\nThe right to use Unified Service Desk is limited to the user or device to whom the qualifying Professional Use Client Access License (CAL) is assigned.  You may not access or use Unified Service Desk after your Software Assurance or Enhancement Plan coverage expires.  For Product Use Rights, click <a href=\"http://www.microsoft.com/licensing/products/products.aspx\">here</a>. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "BestPracticesAnalyzerPackage_amd64.zip",
+        "BestPracticesAnalyzerPackage_i386.zip"
+    ],
+    "detailsSection_file_size": [
+        "13.0 MB",
+        "13.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Unified Service Desk requires an instance of Microsoft Dynamics 365 (online), Microsoft Dynamics 365 (on-premises), Microsoft Dynamics CRM 2016, Microsoft Dynamics CRM 2015, or Microsoft Dynamics CRM 2013 Service Pack 1 (SP1).<br/><br/>\r\nFor detailed information about the minimum system requirements for installing the Unified Service Desk client application and deploying the sample packages, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=856274\">Unified Service Desk system requirements</a>.\r\n\r\nBest Practices Analyzer is available of Unified Service Desk 4.0 and lower version until Unified Service Desk 2.2. For more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=872663\">Best Practices Analyzer</a>.<br/><br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>To start the download, click <b>Download</b>.</li>\r\n<li>Choose the file that you want to download, and click <b>Next</b>.</li> \r\n<li>You'll be prompted to save the file. Click <b>Save</b> to save the file to your computer.</li>\r\n<ul>\r\n<li>If you downloaded the <b>BestPracticesAnalyzer_amd64</b> or <b>BestPracticesAnalyzer_i386</b> zip package, extract zip folder, and copy and paste the Best Practices Analyzer and Microsoft.Crm.UnifiedServiceDesk.Packages.BestPracticesAnalyzerPackage.dll file in your Package Deployer folder.</li>\r\n<li>If you downloaded the Unified Service Desk package executable file, run the executable file to extract the contents of the package. Next, run the PackageDeployer.exe file in the extracted folder to select and deploy a Unified Service Desk package.</li>\r\n</ul><br/>\r\nFor more information, see <a href=\"http://go.microsoft.com/fwlink/?LinkID=872663\">Install Best Practices Analyzer</a>.\r\n</ol>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56842",
+    "downloadPreload": true
+}

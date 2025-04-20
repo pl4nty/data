@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "MSDN Success Builder Module 3-006: Writing Customer-Driven Documentation",
+    "downloadDescription": "Developer training materials for the Success Builder program from MSDN.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Module3-006.zip",
+            "url": "https://download.microsoft.com/download/f/f/1/ff125995-c9ce-41bd-8709-9f313eb8c436/Module3-006.zip",
+            "size": "9506",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:39 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Ways for developers to acquire a competitive edge by documenting product features in the context of customer needs and workflow. Includes references to Microsoft case studies and practical tips for increasing satisfaction with documentation. 1 section. 10 minutes.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Module3-006.zip"
+    ],
+    "detailsSection_file_size": [
+        "9.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Requires Microsoft Office 2003 or later.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To use the course materials unzip the archive file and extract the included documents to a location on your hard drive.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "2796",
+    "downloadPreload": true
+}

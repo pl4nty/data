@@ -1,0 +1,160 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager 2010 SP1 Product Documentation",
+    "downloadDescription": "Product documentation for System Center Service Manager 2010 SP1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SM_UpgradeSP1.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_UpgradeSP1.docx",
+            "size": "117713",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM_PlanningGuide.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_PlanningGuide.docx",
+            "size": "172627",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM_OperationsGuide.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_OperationsGuide.docx",
+            "size": "115722",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM_job_aids.zip",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_job_aids.zip",
+            "size": "9248288",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM_DisasterRecoveryGuide.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_DisasterRecoveryGuide.docx",
+            "size": "81459",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "SM_DeploymentGuide.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_DeploymentGuide.docx",
+            "size": "420594",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM_AuthoringGuide.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_AuthoringGuide.docx",
+            "size": "443436",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SM_AdminGuide.docx",
+            "url": "https://download.microsoft.com/download/6/c/5/6c51540c-aa37-4f16-a1b6-b395cf01343b/SM_AdminGuide.docx",
+            "size": "232290",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:09:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "This download contains product documentation for System Center Service Manager 2010 SP1.<br></br>\r\n\r\nSystem Center Service Manager 2010 SP1 provides an integrated platform for automating and adapting your organization\u2019s IT service management best practices, such as those found in Microsoft Operations Framework (MOF) and Information Technology Infrastructure Library (ITIL). It provides built-in processes for incident and problem resolution, change control, and asset lifecycle management.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "SM_UpgradeSP1.docx",
+        "SM_PlanningGuide.docx",
+        "SM_OperationsGuide.docx",
+        "SM_job_aids.zip",
+        "SM_DisasterRecoveryGuide.docx",
+        "SM_DeploymentGuide.docx",
+        "SM_AuthoringGuide.docx",
+        "SM_AdminGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "115.0 KB",
+        "168.6 KB",
+        "113.0 KB",
+        "8.8 MB",
+        "79.5 KB",
+        "410.7 KB",
+        "433.0 KB",
+        "226.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word or Word Viewer, Microsoft Excel (for job aids), Microsoft Visio (for job aids)",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button to start the download.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B>.</LI><LI>To cancel the installation, click <B>Cancel</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13605",
+    "downloadPreload": true
+}

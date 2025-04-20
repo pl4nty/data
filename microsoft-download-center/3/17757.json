@@ -1,0 +1,103 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2003 Transport and Routing Guide",
+    "downloadDescription": "This guide explains how transport and routing works in Microsoft\u00ae Exchange Server 2003, and how you can configure Exchange to enable internal and external mail flow.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "E2k3TransnRouting.doc",
+            "url": "https://download.microsoft.com/download/9/8/5/98558ea1-3754-4650-9e8d-8c172649f351/E2k3TransnRouting.doc",
+            "size": "2947584",
+            "version": "12Dec2006",
+            "datePublished": "7/15/2024 3:10:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        }
+    ],
+    "detailsSection": "Microsoft\u00ae Exchange servers use Simple Mail Transfer Protocol (SMTP) to communicate with each other and to send messages. SMTP is part of the Microsoft Windows Server\u2122 2003 or Windows\u00ae 2000 Server operating system. This guide discusses basic components of transport and routing, explains how SMTP works in Exchange Server 2003, provides information on configuring a routing topology, discusses deployment scenarios, suggests ways to help secure your infrastructure, and offers troubleshooting tips.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "12Dec2006",
+    "detailsSection_file_name": [
+        "E2k3TransnRouting.doc"
+    ],
+    "detailsSection_file_size": [
+        "2.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL> <LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> </UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows 2000 Server",
+        "Windows 2000 Service Pack 2",
+        "Windows 2000 Service Pack 3",
+        "Windows 2000 Service Pack 4",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <B>Go</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=34165"
+        },
+        {
+            "title": "exchange Server 2003 Transport and Routing Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47579"
+        },
+        {
+            "title": "exchange Server 2003 Security Hardening Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=47578"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "17757",
+    "downloadPreload": true
+}

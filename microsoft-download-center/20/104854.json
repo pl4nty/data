@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Skype for Business Mobile Client (Android)",
+    "downloadDescription": "Skype for Business, formerly Lync 2013, for Android extends the power of Lync and Skype to your favorite mobile device: voice & video over wireless, rich presence, instant messaging, conferencing, and calling features from a single, easy-to-use interface.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SkypeForBusinessAndroid_6.31.7.apk",
+            "url": "https://download.microsoft.com/download/f/7/1/f71c7304-9311-4d80-afef-38deeb25fe0f/SkypeForBusinessAndroid_6.31.7.apk",
+            "size": "63363715",
+            "version": "6.31.7",
+            "datePublished": "7/15/2024 5:01:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        }
+    ],
+    "detailsSection": "Skype for Business, formerly Lync 2013, for Android extends the power of Lync and Skype to your favorite mobile device: voice & video over wireless, rich presence, instant messaging, conferencing, and calling features from a single, easy-to-use interface.\r\n\r\nKey Features:\r\n-Initiate a group IM or video conversation and invite additional participants\r\n-Join, rejoin and initiate a Skype for Business Meeting to communicate and collaborate on amazing ideas\r\n-Share your video and view speaker's video during a conference\r\n-Control the meeting (mute or remove attendees) and know more about participants\u2019 modalities\r\n-Look at your upcoming meetings and join via one click\r\n-Find your recent conversations and pick them up from where you left\r\n-Search your contacts by name, email, or phone number\r\n-Enhanced security via Active Directory Authentication Library (ADAL)\r\n\r\nAnyone can use the Skype for Business Mobile app when invited to a Skype for Business or Lync 2013 meeting. However, you must have a Skype for Business or Lync account in order to use (and enjoy) the full capability of the Skype for Business Mobile app. Also, some functionality might require an update to Lync or Skype for Business Server or might not be available to all users. If you\u2019re not sure about your account status, please contact your IT department\r\n\r\nIMPORTANT: THIS SOFTWARE REQUIRES CONNECTIVITY TO VALIDLY LICENSED COPIES OF MICROSOFT LYNC OR SKYPE FOR BUSINESS SERVER OR OFFICE 365 / LYNC ONLINE / SKYPE FOR BUSINESS ONLINE AND WILL NOT WORK WITHOUT IT. UPDATES TO MICROSOFT LYNC SERVER OR SKYPE FOR BUSINESS MAY BE REQUIRED FOR PROPER PERFORMANCE. SOME FUNCTIONALITY MAY NOT BE AVAILABLE IN ALL COUNTRIES. IF YOU ARE UNSURE ABOUT YOUR COMPANY\u2019S LICENSE TO AND/OR DEPLOYMENT OF LYNC OR SKYPE FOR BUSINESS, PLEASE CONTACT YOUR IT DEPARTMENT. SKYPE FOR BUSINESS APP IS ONLY AVAILABLE FOR Android 4.0 OR GREATER.\"\r\nPlease upload play store\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.31.7",
+    "detailsSection_file_name": [
+        "SkypeForBusinessAndroid_6.31.7.apk"
+    ],
+    "detailsSection_file_size": [
+        "60.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Android minimum version: Android 4.0",
+    "systemRequirementsSection_supportedOS": [
+        "Android"
+    ],
+    "installInstructionSection": "To allow installing an android application downloaded from the mobile browser:\r\n \r\nGo to the mobile device settings\r\nSearch for the browser application that will download the Skype for business APK\r\nIn the \"App info\", look for the option \"Install unknown apps\"\r\nEnsure the status shows \"Allowed\"\r\n \r\nAfter ensuring the browser application will allow installing unknown apps (because the application will be downloaded through the browser), download the Skype for business application and tap/select the package in the downloads folder from the device's file browsing application to install the package.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104854",
+    "downloadPreload": true
+}

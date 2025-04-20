@@ -1,0 +1,152 @@
+{
+    "error": "",
+    "downloadTitle": "Sorting Weight Tables",
+    "downloadDescription": "These file contains detailed character weight specifications that permit consistent sorting and comparison of Unicode strings.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows 11 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows 11 Sorting Weight Table.txt",
+            "size": "21219085",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2022 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows Server 2022 Sorting Weight Table.txt",
+            "size": "21160593",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows 10 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows 10 Sorting Weight Table.txt",
+            "size": "21156033",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows NT 4.0 through Windows Server 2003 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows NT 4.0 through Windows Server 2003 Sorting Weight Table.txt",
+            "size": "3475135",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows 8 Upper Case Mapping Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows 8 Upper Case Mapping Table.txt",
+            "size": "35546",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows 7 and Windows server 2008 R2 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows 7 and Windows server 2008 R2 Sorting Weight Table.txt",
+            "size": "17304503",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Server 2008 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows Server 2008 Sorting Weight Table.txt",
+            "size": "13255713",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows 8 and Windows Server 2012 Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows 8 and Windows Server 2012 Sorting Weight Table.txt",
+            "size": "17618650",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Vista Sorting Weight Table.txt",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows Vista Sorting Weight Table.txt",
+            "size": "13225824",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows Supported Code Page Data Files.zip",
+            "url": "https://download.microsoft.com/download/c/f/7/cf713a5e-9fbc-4fd6-9246-275f65c0e498/Windows Supported Code Page Data Files.zip",
+            "size": "4020112",
+            "version": "1.0",
+            "datePublished": "12/19/2024 8:30:51 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "These file contains detailed character weight specifications that permit consistent sorting and comparison of Unicode strings.  The data is not to be used by itself but is used as one of the inputs to the comparison algorithm.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows 11 Sorting Weight Table.txt",
+        "Windows Server 2022 Sorting Weight Table.txt",
+        "Windows 10 Sorting Weight Table.txt",
+        "Windows NT 4.0 through Windows Server 2003 Sorting Weight Table.txt",
+        "Windows 8 Upper Case Mapping Table.txt",
+        "Windows 7 and Windows server 2008 R2 Sorting Weight Table.txt",
+        "Windows Server 2008 Sorting Weight Table.txt",
+        "Windows 8 and Windows Server 2012 Sorting Weight Table.txt",
+        "Windows Vista Sorting Weight Table.txt",
+        "Windows Supported Code Page Data Files.zip"
+    ],
+    "detailsSection_file_size": [
+        "20.2 MB",
+        "20.2 MB",
+        "20.2 MB",
+        "3.3 MB",
+        "34.7 KB",
+        "16.5 MB",
+        "12.6 MB",
+        "16.8 MB",
+        "12.6 MB",
+        "3.8 MB"
+    ],
+    "detailsSection_file_date": "12/19/2024",
+    "systemRequirementsSection": "N/A",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows XP",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows 2000",
+        "Windows NT",
+        "Windows Server 2003",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server Tech Preview ",
+        "Windows Vista",
+        "Windows 8.1",
+        "Windows 11",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "N/A",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10921",
+    "downloadPreload": true
+}

@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2012 R2 Test Lab Guide",
+    "downloadDescription": "Microsoft test lab guide for setting up a base configuration using Windows Server 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "W2012_R2_RTM_TLG.docx",
+            "url": "https://download.microsoft.com/download/4/d/7/4d7115b2-a949-4e37-af60-af10eea91c7e/W2012_R2_RTM_TLG.docx",
+            "size": "227516",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:35:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This Microsoft Test Lab Guide (TLG) provides you with step-by-step instructions to create the Windows Base Configuration test lab, using computers running Windows 8.1 or Windows Server 2012 R2, With the resulting test lab environment, you can build test labs based on other Windows Server 2012 R2 TLGs from Microsoft, TLG extensions in the TechNet Wiki, or a test lab of your own design that can include Microsoft or non-Microsoft products. For a test lab based on physical computers, you can image the drives for future test labs. For a test lab based on virtual machines, you can create snapshots of the base configuration virtual machines. This enables you to easily return to the base configuration test lab, where most of the routine infrastructure and networking services have already been configured, so that you can focus on building a test lab for the product, technology, or solution of interest.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "W2012_R2_RTM_TLG.docx"
+    ],
+    "detailsSection_file_size": [
+        "222.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012 R2 \r\nWindows 8.1 ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2 Preview"
+    ],
+    "installInstructionSection": "Download the document.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39638",
+    "downloadPreload": true
+}

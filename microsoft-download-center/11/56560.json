@@ -1,0 +1,303 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Packs for Data Protection Manager Reporting, Discovery and Monitoring",
+    "downloadDescription": "This download contains the management packs required to monitor and generate reports on Data Protection Manager(DPM) Servers using System Center Operations Manager.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (NLD).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (NLD).msi",
+            "size": "593920",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (DEU).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (DEU).msi",
+            "size": "593920",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (PTB).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (PTB).msi",
+            "size": "598016",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (ESN).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (ESN).msi",
+            "size": "598016",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (SVE).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (SVE).msi",
+            "size": "593920",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (HUN).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (HUN).msi",
+            "size": "606208",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (PTG).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (PTG).msi",
+            "size": "593920",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (CHT).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (CHT).msi",
+            "size": "585728",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (FRA).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (FRA).msi",
+            "size": "598016",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (RUS).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (RUS).msi",
+            "size": "606208",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (CSY).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (CSY).msi",
+            "size": "598016",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (CHS).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (CHS).msi",
+            "size": "581632",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (KOR).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (KOR).msi",
+            "size": "602112",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (ENG).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (ENG).msi",
+            "size": "765952",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (JPN).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (JPN).msi",
+            "size": "593920",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (ITA).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (ITA).msi",
+            "size": "593920",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (TRK).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (TRK).msi",
+            "size": "598016",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft System Center Management Pack for DPM (PLK).msi",
+            "url": "https://download.microsoft.com/download/9/c/1/9c18946b-3086-4db7-b988-25c9a6b446e5/Microsoft System Center Management Pack for DPM (PLK).msi",
+            "size": "602112",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "MPGuide_DPMReporting.docx",
+            "url": "https://download.microsoft.com/download/e06ea119-8c03-4ce5-9729-e5d8944e8249/MPGuide_DPMReporting.docx",
+            "size": "232878",
+            "version": "5.0.1401.2",
+            "datePublished": "4/16/2025 10:51:34 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "en-gb",
+            "name": "English - United Kingdom"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ja-zz",
+            "name": "Japanese (NEC)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This download contains the management pack files (*.MP) required to monitor and generate reports on Data Protection Manager (DPM) Servers centrally using System Center Operations Manager (SCOM). The management guide document (*.docx) also provided with this download contains detailed instructions on how to set up, configure, deploy reporting centrally on the Operations Manager server and how to use the new enhanced extensible DPM Reporting Framework to generate custom aggregable reports. SC OpsMgr is required to be installed and running.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "5.0.1401.2",
+    "detailsSection_file_name": [
+        "Microsoft System Center Management Pack for DPM (NLD).msi",
+        "Microsoft System Center Management Pack for DPM (DEU).msi",
+        "Microsoft System Center Management Pack for DPM (PTB).msi",
+        "Microsoft System Center Management Pack for DPM (ESN).msi",
+        "Microsoft System Center Management Pack for DPM (SVE).msi",
+        "Microsoft System Center Management Pack for DPM (HUN).msi",
+        "Microsoft System Center Management Pack for DPM (PTG).msi",
+        "Microsoft System Center Management Pack for DPM (CHT).msi",
+        "Microsoft System Center Management Pack for DPM (FRA).msi",
+        "Microsoft System Center Management Pack for DPM (RUS).msi",
+        "Microsoft System Center Management Pack for DPM (CSY).msi",
+        "Microsoft System Center Management Pack for DPM (CHS).msi",
+        "Microsoft System Center Management Pack for DPM (KOR).msi",
+        "Microsoft System Center Management Pack for DPM (ENG).msi",
+        "Microsoft System Center Management Pack for DPM (JPN).msi",
+        "Microsoft System Center Management Pack for DPM (ITA).msi",
+        "Microsoft System Center Management Pack for DPM (TRK).msi",
+        "Microsoft System Center Management Pack for DPM (PLK).msi",
+        "MPGuide_DPMReporting.docx"
+    ],
+    "detailsSection_file_size": [
+        "580.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "584.0 KB",
+        "580.0 KB",
+        "592.0 KB",
+        "580.0 KB",
+        "572.0 KB",
+        "584.0 KB",
+        "592.0 KB",
+        "584.0 KB",
+        "568.0 KB",
+        "588.0 KB",
+        "748.0 KB",
+        "580.0 KB",
+        "580.0 KB",
+        "584.0 KB",
+        "588.0 KB",
+        "227.4 KB"
+    ],
+    "detailsSection_file_date": "4/16/2025",
+    "systemRequirementsSection": "<b>System Center Operations Manager (SCOM) 2025, 2019, 2016, 2012</b><br/>\n- Recommended: Minimum 8 GB RAM on the SCOM server. See <a href=\"https://docs.microsoft.com/en-us/system-center/scom/plan-system-requirements\" target=\"_blank\">System requirements for System Center - Operations Manager</a>.<br/><br/>\n<b>Data Protection Manager (DPM)</b><br/>\n- See <a href=\"https://docs.microsoft.com/en-us/system-center/dpm/prepare-environment-for-dpm\" target=\"_blank\">System Center Data Protection Manager requirements</a>.<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025"
+    ],
+    "installInstructionSection": "Please download the Management Pack Guide (MPGuide_DPMReporting.docx) available with this download and go through it carefully for detailed instructions and guidance. <br/>\nAlso, select and download only the msi file with the name ending with your language-locale settings.  For example, you will need to download SC Management Pack for DPM (ENG).msi if your language-locale setting is English (United States).<br/>\nExtract the msi file. <br/>\nYou will find three (3) .MP files after extracting the msi. These MP files (Management Packs) need to be imported to your SCOM server carefully following the instructions given in the Management Pack Guide. <br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56560",
+    "downloadPreload": true
+}

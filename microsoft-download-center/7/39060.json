@@ -1,0 +1,84 @@
+{
+    "error": "",
+    "downloadTitle": "Bing XML Sitemap Plugin",
+    "downloadDescription": "The Bing XML Sitemap Plugin is an open source server-side technology that takes care of generating XML Sitemaps compliant with sitemaps.org.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SitemapPlugin_x64_v1.zip",
+            "url": "https://download.microsoft.com/download/a/f/e/afe19469-63b5-4044-a112-f029d1a00ee7/SitemapPlugin_x64_v1.zip",
+            "size": "1359964",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:17:13 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SitemapPlugin_x86_v1.zip",
+            "url": "https://download.microsoft.com/download/a/f/e/afe19469-63b5-4044-a112-f029d1a00ee7/SitemapPlugin_x86_v1.zip",
+            "size": "1298255",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:17:13 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sitemapplugin_linux_Apache.zip",
+            "url": "https://download.microsoft.com/download/a/f/e/afe19469-63b5-4044-a112-f029d1a00ee7/sitemapplugin_linux_Apache.zip",
+            "size": "283744",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:17:13 PM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sitemapplugin_code.zip",
+            "url": "https://download.microsoft.com/download/a/f/e/afe19469-63b5-4044-a112-f029d1a00ee7/sitemapplugin_code.zip",
+            "size": "601586",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:17:13 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Bing XML Sitemap Plugin is an open source server-side technology that takes care of generating XML Sitemaps compliant with sitemaps.org for websites running on Internet Information Services (IIS) for Windows\u00ae Server as well as Apache HTTP Server. Easy to install and highly configurable, the Bing Sitemap Plugin provides an ideal solution for webmasters and web hosting companies looking to enhance search engine discoverability for their own or customer web sites running on their servers.<br /><br />\r\nYou can find more information about the Bing Sitemap Plugin in the topic <a href=\"http://go.microsoft.com/fwlink/p/?LinkID=282674\">Bing XML Sitemap Plugin</a>.<br /><br />\r\nWe also welcome your feedback, suggestions and feature requests in the <a href=\"http://go.microsoft.com/fwlink/?LinkID=282673\">Bing Webmaster forums</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SitemapPlugin_x64_v1.zip",
+        "SitemapPlugin_x86_v1.zip",
+        "sitemapplugin_linux_Apache.zip",
+        "sitemapplugin_code.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.3 MB",
+        "1.2 MB",
+        "277.1 KB",
+        "587.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "For the Bing Sitemap Plugin for IIS:<br />\r\n<ul>\r\n<li>IIS 6 or higher</li>\r\n<li>ISAPI Filter installed as an IIS module</li>\r\n</ul><br />\r\nFor the Bing Sitemap Plugin for Apache:<br />\r\n<ul>\r\n<li>Apache developer package, including the Apache extension tools (apxs) and apr libraries.</li>\r\n<li>zlib developer package.</li>\r\n<li>libtool package.</li>\r\n<li>C & C++ (gcc & g++) package.</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Linux",
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Vista",
+        "Windows XP Professional x64 Edition "
+    ],
+    "installInstructionSection": "To start the download, click the Download button at the top of this page and then do one of the following.<br />\r\n<ul>\r\n<li>Click Run to start the installation immediately.</li>\r\n<li>Click Save to copy the download to your computer for installation at a later time.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "39060",
+    "downloadPreload": true
+}

@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM Implementation Guide for CRM 2013 (on-premises)",
+    "downloadDescription": "This guide contains comprehensive information about how to plan, install, configure, customize, and maintain Microsoft Dynamics CRM 2013, updated for CRM 2013 Service Pack 1 (on-premises). To view the most recent version, see the TechNet link below.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Dynamics_CRM_2013_IG.zip",
+            "url": "https://download.microsoft.com/download/f/7/9/f79dfb2d-d8f3-4cb6-aec7-3fe971c75360/Microsoft_Dynamics_CRM_2013_IG.zip",
+            "size": "13993035",
+            "version": "6.0",
+            "datePublished": "7/15/2024 3:27:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        }
+    ],
+    "detailsSection": "<b>To view the most recent version of this documentation, visit </b><a href=\"http://technet.microsoft.com/en-us/library/hh699811(v=crm.6).aspx\">TechNet </a>. <br/><br/>\r\n\r\nThe  <i>Microsoft_Dynamics_CRM_2013_IG.zip</i> file contains the <i>Microsoft Dynamics CRM Implementation Guide for CRM 2013 (on-premises)</i> and consists of the following documents:\r\n<ul><li><i>Planning Guide</i>: This Microsoft Office Word document gives you information and tools that help you get your organization ready for Microsoft Dynamics CRM 2013. It includes two main aspects of planning for a customer relationship management (CRM) system: \r\n<ul><li>Technical: These topics focus on areas such as the supported topologies, system requirements, and technical considerations to address before you install. </li>\r\n<li>Implementation: These topics cover the business management, requirements, and project management aspects that are needed when you deploy a CRM system. </li></ul></li>\r\n<li><i>Installing Guide</i>: This Word document provides the information that you need to install Microsoft Dynamics CRM 2013 applications, such as step-by-step instructions for running Setup, and command-line instructions for silent installations.</li>\r\n<li><i>Administration Guide</i>: This Word document contains resources and topics designed to help you manage and configure on-premises Microsoft Dynamics CRM 2013 deployments.\r\n</li>\r\n<li><i>Customization Guide</i>: IT Pros and CRM administrators can use the resources and topics in this Word document to help implement customizations in Microsoft Dynamics CRM 2013.\r\n</li>\r\n<li><i>Operating and Maintaining Guide</i>: This Word document gives you information about how to back up, restore, and provide data recovery for Microsoft Dynamics CRM 2013. Additionally, this guide provides operational procedures and troubleshooting steps for known issues.</li>\r\n<li><i>Report Writers Guide</i>: This Word document shows you how to create new reports or change existing reports. Microsoft Dynamics CRM includes reports that provide useful business information to the user. Use these reports as templates for creating your own reports. \r\n</li>\r\n<li>The Microsoft Dynamics CRM 2013 Implementation Guide Compiled HTML Help file (CRMIGv6.chm) includes the contents of all the documents listed previously and provides full-text search that lets you search across the entire set of Implementation Guide documents. </li></ul><br/>\r\n\r\nThe <i>Microsoft_Dynamics_CRM_2013_IG_smallscreen.zip</i> file contains the <i>Microsoft Dynamics CRM 2013 Implementation Guide</i> in PDF format. This format works well to view on a standard computer screen, but we suggest using this format for viewing on other devices such as tablets, ereaders, and mobile phones. <br/><br/>\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0",
+    "detailsSection_file_name": [
+        "Microsoft_Dynamics_CRM_2013_IG.zip"
+    ],
+    "detailsSection_file_size": [
+        "13.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>Microsoft Office Word 2007, Word 2010, Word 2013, or a compatible viewer</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>The download is a compressed folder file. To start the download, click <b>Download</b>.</li>\r\n<li>If the <b>File Download</b> dialog box appears, do one of the following:\r\n<ul><li>To start the download immediately, click <b>Open</b>. </li>\r\n<li>To copy the download to your computer to view later, click <b>Save</b>. </li></ul>\r\n</li></ol>\r\n<b>Important</b><br/>\r\nTo view the Microsoft Dynamics CRM 2013 Implementation Guide Help file (CRMIGv6.chm):\r\n<ol><li>After the download is completed, right-click the Microsoft_Dynamics_CRM_2013_IG file that has a compressed (.zip) file name extension and then click <b>Extract All</b>. Extract the files into a folder on your local computer. </li>\r\n<li>Double-click the CRMIGv6.chm file. </li>\r\n<li>If prompted, clear the \"Always ask before opening this file\" check box. </li>\r\n<li>If you still can't view the file, right-click the CRMIGv6.chm file, click <b>Properties</b>, and select the the procedure that is most appropriate for you. </li>\r\n<ul><li> Clear <b>This file came from another computer and may be unsafe</b>, and then click <b>OK</b>. </li>\r\n<li>Click <b>Unblock</b>, and then click <b>OK</b>. </li></ul>\r\n<li>Double-click the CRMIGv6.chm file to view it. </li></ol>\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM 2013 Software Development Kit (SDK) ",
+            "url": "http://www.microsoft.com/en-us/download/details.aspx?id=40321"
+        },
+        {
+            "title": "microsoft Dynamics CRM IT Pro Center",
+            "url": "http://technet.microsoft.com/en-us/library/jj992623.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40322",
+    "downloadPreload": true
+}

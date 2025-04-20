@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Foveated 3D Graphics",
+    "downloadDescription": "This download represents the source code supporting the 2012 SIGGRAPH paper, \u201cFoveated 3D Graphics\u201d, available at http://research.microsoft.com. Last published: September 17, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Foveated3DGraphics.zip",
+            "url": "https://download.microsoft.com/download/a/3/5/a3550228-b67f-4ec9-ac82-b8b474f91a30/Foveated3DGraphics.zip",
+            "size": "49357623",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:09:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download represents the source code supporting the 2012 SIGGRAPH paper, \u201cFoveated 3D Graphics\u201d, available at http://research.microsoft.com. Dependencies on any specific gaze tracker have been removed, and replaced by function stubs which track the mouse cursor. The stubs may be filled in with calls to any high speed low latency gaze tracker. In particular, the key anti-aliasing techniques as described in the paper are demonstrated. The source code implementing the foveated rendering techniques is isolated into a small library. This library is provided in two formats, supporting both the D3DX API from the June 2010 DirectX SDK, as well as the XVECTOR API of the latest DirectX Windows Kits.\n\nA generic application rendering objects on a terrain is provided to drive the foveated rendering technique, but the technique is general to most real time 3D rendering. The application is provided as a Visual Studio 2010 solution which compiles against the June 2010 DirectX SDK.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Foveated3DGraphics.zip"
+    ],
+    "detailsSection_file_size": [
+        "47.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52390",
+    "downloadPreload": true
+}

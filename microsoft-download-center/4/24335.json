@@ -1,0 +1,107 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 4.0 Language Pack",
+    "downloadDescription": "Microsoft Dynamics CRM 4.0 Language Packs contain translated text, such as labels, error messages, and Help.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MUISetup_1033_amd64.msi",
+            "url": "https://download.microsoft.com/download/e/e/2/ee22f996-8568-4aef-92c9-4902f3c72a9a/MUISetup_1033_amd64.msi",
+            "size": "7931392",
+            "version": "4.0.7333.291",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "MUISetup_1033_i386.msi",
+            "url": "https://download.microsoft.com/download/e/e/2/ee22f996-8568-4aef-92c9-4902f3c72a9a/MUISetup_1033_i386.msi",
+            "size": "10073600",
+            "version": "4.0.7333.291",
+            "datePublished": "7/15/2024 3:26:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        }
+    ],
+    "detailsSection": "Microsoft Dynamics CRM 4.0 Language Packs contain translated text, such as labels, error messages, and Help.<br/><br/>\n By installing a Language Pack on the server that is running Microsoft Dynamics CRM 4.0 and then enabling the language in the Microsoft Dynamics CRM 4.0 Web application, you and other users in your organization can view Microsoft Dynamics CRM 4.0 in a language other than the base language of the installation.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.0.7333.291",
+    "detailsSection_file_name": [
+        "MUISetup_1033_amd64.msi",
+        "MUISetup_1033_i386.msi"
+    ],
+    "detailsSection_file_size": [
+        "7.6 MB",
+        "9.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>For the latest information about Microsoft Dynamics CRM 4.0 Language Pack software requirements and installation instructions, see the <i>Microsoft Dynamics CRM 4.0 Implementation Guide</i>.</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Small Business Server 2003 "
+    ],
+    "installInstructionSection": "<OL><br />\n             <LI>Select the language for which you want to download a Language Pack and click <b>Change</b>.</LI><br />\n             <LI>To start the download, click <b>Download</b>.</LI><br />\n             <LI>Save the download to your computer by clicking <b>Save</b>.</LI>\n<li>To install the Language Pack, follow the instructions in the <i>Microsoft Dynamics CRM 4.0 Installation Guide</i> that is included in the <i>Microsoft Dynamics CRM 4.0 Implementation Guide</i>.</li>\n</OL>",
+    "additionalInformationSection": "Files are platform-specific, where <i>i386</i> is intended for 32-bit platforms and <i>amd64</i> is intended for 64-bit platforms.<br/><br/>\nOpen the Microsoft Dynamics CRM 4.0 Language Pack Readme file (see Related Downloads) for the latest information about Microsoft Dynamics CRM 4.0 Language Packs and related functionality in the Microsoft Dynamics CRM 4.0 Web application. \n<br />\nLearn how to install Microsoft Dynamics CRM 4.0 by using the <i>Microsoft Dynamics CRM 4.0 Implementation Guide</i> (see Related Downloads).",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "24335",
+    "downloadPreload": true
+}

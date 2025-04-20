@@ -1,0 +1,149 @@
+{
+    "error": "",
+    "downloadTitle": "Media Feature Pack for N and KN versions of Windows 10",
+    "downloadDescription": "The Media Feature Pack for N and KN versions of Windows 10 will install Media Player and related technologies on a computer running Windows 10 N or Windows 10 KN editions. For further information, please see http://support.microsoft.com and query the Knowledge Base for the article number KB3010081.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-Windows-MediaFeaturePack-OOB-Package.msu",
+            "url": "https://download.microsoft.com/download/7/f/2/7f2e00a7-f071-41ca-a35b-00dc536d4227/Microsoft-Windows-MediaFeaturePack-OOB-Package.msu",
+            "size": "75898094",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:03 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Microsoft-Windows-MediaFeaturePack-OOB-Package_x64.msu",
+            "url": "https://download.microsoft.com/download/7/f/2/7f2e00a7-f071-41ca-a35b-00dc536d4227/Microsoft-Windows-MediaFeaturePack-OOB-Package_x64.msu",
+            "size": "114150296",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:46:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        }
+    ],
+    "detailsSection": "Windows 10 N and Windows 10 KN editions include the same functionality as Windows 10, except that these versions of Windows do not include Windows Media Player, and related technologies. \n<br /><br />\n End-user customers can enable the media functionality to work properly by installing the Media Feature Pack for N and KN versions of Windows 10 (KB3010081). \n<br /><br />\n This feature pack can be applied to computers running either Windows 10 N or Windows 10 KN editions.\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Microsoft-Windows-MediaFeaturePack-OOB-Package.msu",
+        "Microsoft-Windows-MediaFeaturePack-OOB-Package_x64.msu"
+    ],
+    "detailsSection_file_size": [
+        "72.4 MB",
+        "108.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 Home N, Windows 10 Pro N, Windows 10 Education N, Windows 10 Enterprise N, Windows 10 Enterprise N Evaluation, Windows 10 Enterprise N 2015 LTSB, Windows 10 Enterprise N 2015 LTSB Evaluation, or Windows 10 Home KN, Windows 10 Pro KN, Windows 10 Education KN, Windows 10 Enterprise KN, Windows 10 Enterprise KN Evaluation, Windows 10 Enterprise KN 2015 LTSB, Windows 10 Enterprise KN 2015 LTSB Evaluation",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "1. Click the Download button on this page to start the download, or select a different language from the Change language drop-down list and click Go.\n<br /><br />\n 2. Do one of the following:\n<br /><br />\n\n\u2022To start the installation immediately, click Run.<br />\n\u2022To save the download to your computer for installation at a later time, click Save.<br />\n\u2022To cancel the installation, click Cancel.\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48231",
+    "downloadPreload": true
+}

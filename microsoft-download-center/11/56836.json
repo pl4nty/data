@@ -1,0 +1,93 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae SQL Server\u00ae 2016 Service Pack 2 (SP2)",
+    "downloadDescription": "Download Service Pack 2 for Microsoft\u00ae SQL Server\u00ae 2016",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2016SP2-KB4052908-x64-ENU.exe",
+            "url": "https://download.microsoft.com/download/9/2/b/92bad988-00c5-4f68-811e-b7ffbe009b00/SQLServer2016SP2-KB4052908-x64-ENU.exe",
+            "size": "811699376",
+            "version": "13.0.5026.0",
+            "datePublished": "7/15/2024 4:44:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft SQL Server 2016 service packs are cumulative updates and upgrade all editions and service levels of SQL Server 2016 SP1 to SP2. This service pack contains up to and including SQL Server 2016 SP1 Cumulative Update 8 (CU8).  <br />\n<br />\nThis download site contains the following packages and service patches for the Microsoft SQL Server 2016 SP2 release:<br /><br />\n<ul>\n<li><b>Microsoft SQL Server 2016 SP2 Update</b> - this package contains the Microsoft SQL Server 2016 Service Pack 2 update to be applied to existing SQL Server 2016 installations.</li><br />\n</ul>\nTo evaluate SQL Server 2016 SP2 on a new instance of SQL Server 2016 Evaluation Edition, please goto <a href=\"https://www.microsoft.com/en-us/evalcenter/evaluate-sql-server-2016\">Microsoft Evaluation Center</a> for SQL Server 2016 SP2 Slipstream installation packages.<br /><br />\n<b>Microsoft SQL Server 2016 SP2 Documentation:</b><br />\n<br />\n<ul>\n <li>\n    <a href=\"https://support.microsoft.com/en-us/kb/4052908\">Microsoft SQL Server 2016 SP2 Release Notes</a>\n  </li> \n<li> \n     <a href=\"http://go.microsoft.com/fwlink/?LinkID=398120\">Microsoft SQL Server 2016 Privacy Statement </a>\n  </li>\n  <li>\n    <a href=\"http://go.microsoft.com/fwlink/?LinkID=398123\"> Microsoft SQL Server 2016 Systems Requirements</a>\n  </li>\n     <br />\n    <br />\n  </ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "13.0.5026.0",
+    "detailsSection_file_name": [
+        "SQLServer2016SP2-KB4052908-x64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "774.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li>For complete system requirements, please reference the detailed  <a href=\"http://go.microsoft.com/fwlink/?LinkID=398123\"> Systems Requirements</a> page</li>\n<li>6 GB of available hard disk space for the Service Pack update, 10 GB for a Slipstream installation</li>\n<li> Service Pack 2 can be applied to any of the following Microsoft SQL Server 2016 editions: </li>\n</ul>\r\n<ul><br />\n  <li>Microsoft SQL Server 2016 Enterprise</li>\n  <li>Microsoft SQL Server 2016 Developer</li>\n  <li>Microsoft SQL Server 2016 Standard</li>\n  <li>Microsoft SQL Server 2016 Web</li>\n  <li>Microsoft SQL Server 2016 Express</li>\n</ul><br />\r\n<ul>\n<li><b>Note:</b> Exceptions to the operating system support noted in this section are the following: Business Intelligence features for SQL Server 2016 (13.x) and earlier, which can be installed on Windows Server 2008 R2 SP1 or later:</li>\r\n</ul>\r\n<ul><br />\r\n<li>Reporting Services - SharePoint</li>\r\n<li>Reporting Services Add-in for SharePoint products</li>\r\n</ul><br />\r\n\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "<br />\n<b>Note:</b> You must have administrative rights on the computer to install SQL Server 2016 SP2. <br />\n<br />\n<u><b>Microsoft SQL Server 2016 SP2 Update: </b></u><br />\n<br />\n<ol>\n<li>Review the  <a href=\"https://go.microsoft.com/fwlink/?linkid=869599\">Microsoft SQL Server 2016 SP2 Release Notes</a>\n  </li>\n  <li>Download the following file from the \"DOWNLOAD\" section on this page to your device:</li> \n<ul> \n<li><b>SQLServer2016SP2-KB4052908-architecture-language.exe</b></li> </ul> \n<li>Once the download is complete, click RUN to begin the installation process immediately or SAVE to install at a later time.</li>\n</ol>\n <br />\n  <br />\n<br />\n",
+    "additionalInformationSection": "If you have questions about  SQL Server 2016 SP2, please visit the <a href=\"http://go.microsoft.com/fwlink/?LinkId=816922\"> SQL Server  2016 SP2 forums on MSDN</a>.   Your feedback is important. Help improve SQL Server 2016 SP2 by submitting feedback to <a href=\"https://feedback.azure.com/forums/908035-sql-server\">Microsoft User Voice.</a><br />\n<br />\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "56836",
+    "downloadPreload": true
+}

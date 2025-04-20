@@ -1,0 +1,65 @@
+{
+    "error": "",
+    "downloadTitle": "SQL Server 2008 System Views Map",
+    "downloadDescription": "The Microsoft SQL Server 2008 System Views Map shows the key system views included in SQL Server 2008, and the relationships between them.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SQL_Server_2008_System_Views_Poster.xps",
+            "url": "https://download.microsoft.com/download/b/4/7/b47bb887-29ed-42f5-9289-90689ca1fb10/SQL_Server_2008_System_Views_Poster.xps",
+            "size": "763108",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "SQL_Server_2008_System_Views_Poster.pdf",
+            "url": "https://download.microsoft.com/download/b/4/7/b47bb887-29ed-42f5-9289-90689ca1fb10/SQL_Server_2008_System_Views_Poster.pdf",
+            "size": "866398",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft SQL Server 2008 System Views Map shows the key system views included in SQL Server 2008, and the relationships between them. The map is similar to the Microsoft SQL Server 2005 version and includes updates for the new and updated the Microsoft SQL Server 2008 features such as resource governor, extended events, full-text search, and others.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "SQL_Server_2008_System_Views_Poster.xps",
+        "SQL_Server_2008_System_Views_Poster.pdf"
+    ],
+    "detailsSection_file_size": [
+        "745.2 KB",
+        "846.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li>The .xps file requires XPS Viewer (already installed on Windows Vista or available as a free download from  http://www.microsoft.com/whdc/xps/viewxps.mspx).</li>\r\n<li>The .pdf file requires Adobe Reader, version 5.x or later (available as a free download from http://www.adobe.com/products/acrobat/).</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2",
+        "Windows Server 2008",
+        "Windows Vista Service Pack 1",
+        "Windows XP Service Pack 3"
+    ],
+    "installInstructionSection": "Download either the .xps or .pdf file to view its contents. The content of these system map files is identical.",
+    "relatedResourcesSection": [
+        {
+            "title": "sql Server 2008 Books Online in MSDN Library",
+            "url": "http://msdn.microsoft.com/en-us/library/ms130214.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "9301",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Download: Microsoft Azure StorSimple 8000 Series Appliance Step-by-Step Deployment Guide",
+    "downloadDescription": "This guide describes how to configure your StorSimple 8000 series devices, and includes a pre-installation checklist, configuration prerequisites, and detailed configuration steps. It is recommended that prior to using this guide, you have unpacked, rack-mounted and cabled your StorSimple device as per the instructions in Microsoft Azure StorSimple Getting Started guides.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftAzureStorSimpleDeploymentGuide_20142011.pdf",
+            "url": "https://download.microsoft.com/download/0/e/3/0e3b924b-f6a6-485f-aa77-70b715abe80f/MicrosoftAzureStorSimpleDeploymentGuide_20142011.pdf",
+            "size": "1557275",
+            "version": "1.0",
+            "datePublished": "6/13/2024 12:43:18 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This downloadable pdf file contains the latest guidance needed when deploying an Azure StorSimple 8000 Series Appliance in your datacenter. <br /><br />\r\nThis guide describes how to configure your StorSimple 8000 series device, and includes a pre-installation checklist, configuration prerequisites, and detailed configuration steps. <br /><br />\r\nThis guide is based on the content exported from online MSDN on Novemeber 20, 2014. For the most up-to-date deployment content, go to <a href=\"http://go.microsoft.com/fwlink/?LinkId=521438\">http://go.microsoft.com/fwlink/?LinkId=521438</a>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "MicrosoftAzureStorSimpleDeploymentGuide_20142011.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "These guides can be downloaded and opened on any system that has a pdf viewer installed.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "Save the file locally on your system and double-click to open it with a pdf viewer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "45332",
+    "downloadPreload": true
+}

@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft_Cloud_Privacy",
+    "downloadDescription": "Microsoft employs built-in controls to help its customers address their data security requirements. Learn more in this downloadable eGuide.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft_Cloud_Privacy.pdf",
+            "url": "https://download.microsoft.com/download/3/b/1/3b1406a6-1c8e-4089-a7b7-8f18f507a45e/Microsoft_Cloud_Privacy.pdf",
+            "size": "142876",
+            "version": "1",
+            "datePublished": "5/15/2024 3:53:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft enables customers to meet the legal and regulatory requirements expected when using cloud service providers, and often surpasses the data protection standards recommended by privacy and security professionals. In addition, Microsoft helps its customers meet the data privacy and security standards required for specific regions and within certain regulated industries. Find out more in this detailed eGuide on data privacy and security.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft_Cloud_Privacy.pdf"
+    ],
+    "detailsSection_file_size": [
+        "139.5 KB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Acrobat",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows XP"
+    ],
+    "installInstructionSection": "click to download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "43640",
+    "downloadPreload": true
+}

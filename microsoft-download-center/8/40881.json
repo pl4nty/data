@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 Guide: Using and Modifying the Sales Tax Hierarchy Framework for India",
+    "downloadDescription": "This user guide introduces the sales tax hierarchy framework and describes the sales tax payment design for India.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Using and modifying the Sales Tax Hierarchy Framework for India.pdf",
+            "url": "https://download.microsoft.com/download/a/d/8/ad8d7f7a-c01d-4be3-8463-f68692537108/Using and modifying the Sales Tax Hierarchy Framework for India.pdf",
+            "size": "549330",
+            "version": "2012",
+            "datePublished": "6/13/2024 11:59:00 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide introduces the sales tax hierarchy framework and describes the major changes to the sales tax payment design from both the object model and the physical model perspectives for partners and customers. It also describes, in detail, how and where to customize the sales tax payment code to meet your business requirements.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Using and modifying the Sales Tax Hierarchy Framework for India.pdf"
+    ],
+    "detailsSection_file_size": [
+        "536.5 KB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "<UL>\n  <LI>To view the PDF, you'll need Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click <b>Download</b> to download the PDF.</LI>\n<LI>Save the file to your computer.</LI></OL>\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40881",
+    "downloadPreload": true
+}

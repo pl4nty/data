@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Nikhil Kothari on Facebook.NET and Everything Else!",
+    "downloadDescription": "Nikhil Kothari talks about his eperiences working at Microsoft on all things web, including ASP.NET controls and Facebook.NET. Just read his bio to see where we took this conversation.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20071101NKothari.zip",
+            "url": "https://download.microsoft.com/download/2/e/5/2e550112-d6bd-4f1a-8e34-28510c76a802/20071101NKothari.zip",
+            "size": "42224084",
+            "version": "1.0",
+            "datePublished": "11/15/2023 3:13:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Nikhil Kothari is a software architect in the .NET Developer Platform group within Developer Division at Microsoft. During his 10 years at Microsoft, Nikhil has focused on the Web platform, and has contributed to the design and development of .NET and ASP.NET since their inception, as well as various features in IIS7 and Visual Studio products. He is responsible for the server control framework in ASP.NET, initiated and led the development of ASP.NET AJAX, and now plays a key role in the programming model aspects of the Silverlight platform. He is the author of \"Developing Microsoft ASP.NET Server Controls and Components\", and is also responsible for starting and working on a number of innovative projects such as Web Matrix, Script#, Web Development Helper, and most recently Facebook.NET. He has presented at various Microsoft and industry conferences. Beyond a deep passion for developer tools and frameworks, Nikhil is enthusiastic and interested in digital photography. His blog is at <a href=\"http://www.nikhilk.net\">http://www.nikhilk.net</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20071101NKothari.zip"
+    ],
+    "detailsSection_file_size": [
+        "40.3 MB"
+    ],
+    "detailsSection_file_date": "11/15/2023",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "14714",
+    "downloadPreload": true
+}

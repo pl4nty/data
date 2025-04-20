@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft\u00ae Identity Manager 2016 evaluation historical version",
+    "downloadDescription": "This is an evaluation release of Microsoft Identity Manager 2016 version 4.3.1935.0.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SW_DVD5_Identity_Manager-2016_64Bit_English_Core_EVAL.zip",
+            "url": "https://download.microsoft.com/download/2/7/4/2740fac6-ecbf-4dba-991a-6139860d3320/SW_DVD5_Identity_Manager-2016_64Bit_English_Core_EVAL.zip",
+            "size": "282395566",
+            "version": "4.3.1935.0",
+            "datePublished": "7/15/2024 3:46:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This download contains a time-limited evaluation release of Microsoft\u00ae Identity Manager (MIM) 2016 client and server components, version 4.3.1935.0. <br />\r\n<br />\r\nThis version is provided for historical purposes, and is no longer a supported version of MIM for production use.  Azure AD Premium customers should use <a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=102887\">Microsoft Identity Manager 2016 SP2 for Azure AD Premium customers</a>.  For links to the recent and supported versions of MIM, see <a href=\"https://learn.microsoft.com/en-us/microsoft-identity-manager/reference/version-history\">version history</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.3.1935.0",
+    "detailsSection_file_name": [
+        "SW_DVD5_Identity_Manager-2016_64Bit_English_Core_EVAL.zip"
+    ],
+    "detailsSection_file_size": [
+        "269.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Server components</b><br />\r\n- Microsoft Windows Server 2008 R2 x64, Microsoft Windows Server 2012 or Microsoft Windows Server 2012 R2<br />\r\n- Microsoft SQL Server 2008 R2 x64, Microsoft SQL Server 2012, or Microsoft SQL Server 2014<br />\r\n- Microsoft Exchange Server 2007, Microsoft Exchange Server 2010, or Microsoft Exchange Server 2013<br />\r\n- SharePoint Foundation 2013 with SP1<br />\r\n<br />\r\n<b>Client components<br /></b>\r\n- Microsoft Windows 8.1<br />\r\n- Microsoft Windows 7<br />\r\n- Microsoft Outlook 2007 SP2, Microsoft Outlook 2010, or Microsoft Outlook 2013<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "- Download the package to the local server or client.<br />\r\n- After the files are extracted, burn the ISO image to DVD or mount it.<br />\r\n- Note that the Synchronization and Certificate Management features in this evaluation version will stop working 180 days after first installation.\r\n<br />\r\n<br />",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "48244",
+    "downloadPreload": true
+}

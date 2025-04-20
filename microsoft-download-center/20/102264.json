@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "MARS_2010",
+    "downloadDescription": "MARS_2010",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MARSAgentInstaller.exe",
+            "url": "https://download.microsoft.com/download/a/6/a/a6a3dde5-fb21-4691-8708-36de9a754c74/MARSAgentInstaller.exe",
+            "size": "41429208",
+            "version": "WIN2K12-R2",
+            "datePublished": "7/15/2024 4:26:32 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Build version 9194. Contains a fix for a DI issue in MARS.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "WIN2K12-R2",
+    "detailsSection_file_name": [
+        "MARSAgentInstaller.exe"
+    ],
+    "detailsSection_file_size": [
+        "39.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2012-R2",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "Invoke the installer and follow instructions in the installation wizard.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102264",
+    "downloadPreload": true
+}

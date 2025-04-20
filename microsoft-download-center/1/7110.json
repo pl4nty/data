@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Catching up with Tim Huckaby",
+    "downloadDescription": "Tim is back to talk about things like Office development, the Microsoft/Yahoo story, and more.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080304THuckaby.zip",
+            "url": "https://download.microsoft.com/download/2/7/f/27ffe9d2-79cc-41af-b9d6-987b0b9632fb/20080304THuckaby.zip",
+            "size": "47691263",
+            "version": "1.0",
+            "datePublished": "3/15/2024 3:07:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Called a .NET and Smart Client industry pioneer by the press, Tim Huckaby is CEO of InterKnowlogy \u2013 a custom application development firm comprised of experts in Microsoft .NET, Tools, Servers & Platforms. As a Software Development Lead, Architect, Author, & Speaker, Tim has 25+ years experience including serving on a Microsoft product team as a development lead on an architecture team. Tim sits on many boards and councils at Microsoft including the .NET Partner Advisory Council, the Microsoft eBusiness Partner Advisory Council. Tim is a Microsoft MVP in .NET. Tim was awarded with \u201cMicrosoft Regional Director of the Year\u201d for his work in the Developer Community. Tim is the Microsoft Regional Director for Southern California and sits on the RD advisory council.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080304THuckaby.zip"
+    ],
+    "detailsSection_file_size": [
+        "45.5 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7110",
+    "downloadPreload": true
+}

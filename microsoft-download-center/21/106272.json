@@ -1,0 +1,91 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for SQL Server 2022 RTM CU (KB5046059)",
+    "downloadDescription": "This update refreshes Microsoft SQL Server 2022 RTM CU.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQLServer2022-KB5046059-x64.exe",
+            "url": "https://download.microsoft.com/download/d/9/a/d9a3f894-1a15-4d35-984c-e018bb836aba/SQLServer2022-KB5046059-x64.exe",
+            "size": "476554624",
+            "version": "16.0.4150.1",
+            "datePublished": "10/8/2024 3:18:14 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        }
+    ],
+    "detailsSection": "Security issues have been identified in the SQL Server that could allow an attacker to compromise your system.<br/>\r\nYou can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.<br /><br />\r\n\r\nMore information about the vulnerability can be found here: \r\n<a name=\"KB5046059\"></a><a href=\"https://support.microsoft.com/help/5046059\">KB5046059</a><br /><br />\r\n\r\nFor a complete listing of the issues resolved in this update, see the associated Microsoft Knowledge Base article. \r\n ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB5046059",
+        "name": "KB5046059"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4150.1",
+    "detailsSection_file_name": [
+        "SQLServer2022-KB5046059-x64.exe"
+    ],
+    "detailsSection_file_size": [
+        "454.5 MB"
+    ],
+    "detailsSection_file_date": "10/8/2024",
+    "systemRequirementsSection": "This update is applicable to SQL Server 2022 RTM instances installed on supported Windows operating systems.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "This update refreshes Microsoft SQL Server 2022 RTM Windows instances that have had a Cumulative Update applied.<br />After you install this update, you may have to restart your computer.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "106272",
+    "downloadPreload": true
+}

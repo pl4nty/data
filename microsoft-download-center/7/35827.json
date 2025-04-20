@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Hotfix for Microsoft Application Request Routing Version 2.5 for IIS 8.0  (KB 2785586) ",
+    "downloadDescription": "Hotfix for Microsoft Application Request Routing Version 2.5 for IIS 8.0  (KB 2785586) ",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "requestrouter_amd64.msp",
+            "url": "https://download.microsoft.com/download/6/2/6/6260674b-a3ca-434d-a538-561087eb5d04/requestrouter_amd64.msp",
+            "size": "303104",
+            "version": "KB 2785586",
+            "datePublished": "7/15/2024 3:32:02 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This hotfix addresses a deadlock in Application Request Routing Version 2.5.  \r\nARR can get into deadlock if there is another IIS managed module in request pipeline of ARR server.\r\n\r\nMore details information about this hotfix is in the Microsoft Knowledge Base article, <a href=\"http://support.microsoft.com/kb/2785586\">2785586</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2785586",
+        "name": "KB2785586"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "KB 2785586",
+    "detailsSection_file_name": [
+        "requestrouter_amd64.msp"
+    ],
+    "detailsSection_file_size": [
+        "296.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Supported Operating Systems:</b> Windows Server 2012</li>\r\n<li><b>This update applies to the following product:</b> Microsoft Application Request Routing Version 2.5 for IIS8</li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Click the <b>Download</b> button on this page to start the download, then do one of the followings:\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, clieck <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "35827",
+    "downloadPreload": true
+}

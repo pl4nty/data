@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Creative Commons Add-in for Microsoft Office",
+    "downloadDescription": "This add-in enables you to embed Creative Commons licenses directly into Word, PowerPoint, and Excel documents.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "CreativeCommonsOfficeAddins.zip",
+            "url": "https://download.microsoft.com/download/c/f/3/cf3c3f7a-19c2-4fef-9d06-06e7d4361807/CreativeCommonsOfficeAddins.zip",
+            "size": "1966301",
+            "version": "1.4",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This add-in enables you to embed a Creative Commons license into a document that you create using Microsoft Office Word, Microsoft Office PowerPoint, or Microsoft Office Excel. \r\n\r\nWith a Creative Commons license, authors can express their intentions regarding how their works may be used by others. The add-in downloads the Creative Commons license you designate from the Creative Commons Web site and inserts it directly into your creative work. To learn more about Creative Commons, please visit its web site, http://www.creativecommons.org. To learn more about the choices among the Creative Commons licenses, see http://creativecommons.org/about/licenses/meet-the-licenses. \r\n\r\nMicrosoft Office productivity applications are the most widely used personal productivity applications in the world, and Microsoft\u2019s goal is to enhance the user\u2019s experience with those applications. Empowering Microsoft Office users to express their intentions through Creative Commons licenses is another way Microsoft enables users around the world to exercise their creative freedom while being clear about the rights granted to users of a creative work. In the past, it has not always been easy or obvious to understand the intentions of some authors or artists regarding distribution or use of their intellectual creations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB976477",
+        "name": "KB976477"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.4",
+    "detailsSection_file_name": [
+        "CreativeCommonsOfficeAddins.zip"
+    ],
+    "detailsSection_file_size": [
+        "1.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n<li><b>This download works with the following Office programs:</b><br/>\n<ul>\n<li>Microsoft Office Excel 2007</li>\n<li>Microsoft Office PowerPoint 2007</li>\n<li>Microsoft Office Word 2007</li>\n<li>Microsoft Office Excel 2010</li>\n<li>Microsoft Office PowerPoint 2010</li>\n<li>Microsoft Office Word 2010</li>\r\n<li>Microsoft Office Excel 2013</li>\n<li>Microsoft Office PowerPoint 2013</li>\n<li>Microsoft Office Word 2013</li>\n</ul></li></ul>\n<ul>\n<li><b>The following is also required:</b><br/>\n<ul>\n<li>Microsoft .Net Framework 3.5</li>\r\n<li>Microsoft Knowledge Base patch 976477 (Office 2007 only)</li>\r\n\n</ul></li></ul>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2008",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<br/><br/>\n<b>Note:</b> You must close all Microsoft Office programs before installing this add-in.\n<ol>\n<li>Download the file by clicking the <b>Download</b> link (at top) and saving the file to your hard disk. </li>\n<li>Close all Microsoft Office applications before proceeding. </li>\r\n<li>Open the <b>CCSetup.zip</b> compressed folder</li>\n<li>Double-click the <b>CreativeCommonsOfficeAddIns.exe</b> program file on your hard disk to start the setup program. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n\n</ol>\r\n<br/><br/>\r\n<ol>\r\n<b>NOTE:</b> For installation on Windows 7 or Windows 8, with Office 2007:\r\n<br/><br/>\r\n<li>Ensure that Office 2007 SP1 or SP2 is installed.</li>\r\n<li>Manually install the Microsoft Knowledge Base patch 976477. </li>\r\n<li>Close all Microsoft Office applications before proceeding. </li>\r\n<li>Open the <b>CCSetup.zip</b> compressed folder.</li>\r\n<li>Double-click the <b>setup.exe</b> program file on your hard disk to start the setup program. </li>\r\n<li>Follow instructions for pre-requisites installation.</li>\r\n<li>Your computer may restart after the pre-requisite installation.</li>\r\n<li>After installation, continue you may need to re-start your machine, then continue to install Creative Commons from the saved location. </li>\r\n\r\n</ol>\n\n<b>Instructions for use:</b><br/><br/>\n\nOnce you have installed this download, use your Office program as you normally would. This add-in adds a new <b>Creative Commons</b> tab to the Microsoft Office ribbon.<br/><br/>\n<b>Note:</b>  This application requires Internet access in order to connect to the Creative Commons Web site. As a result, you might experience a slight delay when using the add-in.\n<br/><br/>\n\n<br/>\n\n<b>To remove this download:</b>\n\n<ol>\n\n<li>On the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>. </li>\n\n<li>Double-click <b>Add/Remove Programs</b>. </li>\n\n<li>In the list of currently installed programs, select <b>Creative Commons Add-in </b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program. </li>\n\n<li>Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program. </li>\n\n</ol>\n\n<br/>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "13303",
+    "downloadPreload": true
+}

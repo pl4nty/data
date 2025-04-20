@@ -1,0 +1,170 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Server 2003 Deployment Kit: Automating and Customizing Installations",
+    "downloadDescription": "This book provides comprehensive information about planning, designing, and implementing automated installations in medium and large organizations. Options range from automated installations of a basic operating system to complex installations of a customized operating system and applications.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sample_RIS_Scripts.zip",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/Sample_RIS_Scripts.zip",
+            "size": "23402",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "03_CHAPTER_1_Choosing_an_Automated_Installation_Method.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/03_CHAPTER_1_Choosing_an_Automated_Installation_Method.doc",
+            "size": "978432",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "05_CHAPTER_3_Designing_Image_based_Installations_with_Sysprep.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/05_CHAPTER_3_Designing_Image_based_Installations_with_Sysprep.doc",
+            "size": "1575424",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "09_Index.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/09_Index.doc",
+            "size": "182272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Automating_and_Customizing_Installations.zip",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/Automating_and_Customizing_Installations.zip",
+            "size": "6843084",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "01_Front.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/01_Front.doc",
+            "size": "149504",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "06_CHAPTER_4_Designing_RIS_Installations.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/06_CHAPTER_4_Designing_RIS_Installations.doc",
+            "size": "2319872",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "08_Glossary.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/08_Glossary.doc",
+            "size": "125952",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "02_Intro.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/02_Intro.doc",
+            "size": "1410560",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "04_CHAPTER_2_Designing_Unattended_Installations.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/04_CHAPTER_2_Designing_Unattended_Installations.doc",
+            "size": "1839104",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "07_CHAPTER_5_Migrating_User_State.doc",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/07_CHAPTER_5_Migrating_User_State.doc",
+            "size": "1056256",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Job_Aids_Automating_and_Customizing_Installations.zip",
+            "url": "https://download.microsoft.com/download/e/2/b/e2bfb017-8525-4991-bbd5-7d7081f3d228/Job_Aids_Automating_and_Customizing_Installations.zip",
+            "size": "336246",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:53 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This book provides comprehensive information about planning, designing, and implementing automated installations in medium and large organizations. Options range from automated installations of a basic operating system to complex installations of a customized operating system and applications. The technologies and tools discussed in this book include: unattended installation, image-based installation with the System Preparation (Sysprep) tool, and Remote Installation Services (RIS). IT professionals can use the guidelines discussed in this book to create a functional specification that describes how to automate the installation of Windows Server 2003 and Windows XP Professional.\n<br><br>\n<b>This page contains the following files for download:</b>\n<UL>\n<LI>Book Cover (front)</LI>\n<LI>Introduction</LI>\n<LI>Ch 1: Choosing an Automated Installation Method</LI>\n<LI>Ch 2: Designing Unattended Installations</LI>\n<LI>Ch 3: Designing Image-based Installations with SysPrep</LI>\n<LI>Ch 4: Designing RIS Installations</LI>\n<LI>Ch 5: Migrating User State</LI>\n<LI>Glossary</LI>\n<LI>Index</LI>\n<LI>Entire book as a .zip file</LI>\n<LI>Job aids and worksheets to use with the book</LI>\n<LI>Sample scripts for RIS installations</LI>\n</UL>\n<br>\nWe want to provide high-quality, relevant content for IT Pros who plan, support, deploy, and operate Windows Server 2003 in small, medium, and large organizations. In order for us to improve our content offerings, we want to hear from you. Please <a href=\"mailto:wscg_dpy@microsoft.com?subject=Automating and Customizing Installations\">click here</a> to send us your feedback on the usefulness and relevance of this content or any suggestions for content you would like to see.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Sample_RIS_Scripts.zip",
+        "03_CHAPTER_1_Choosing_an_Automated_Installation_Method.doc",
+        "05_CHAPTER_3_Designing_Image_based_Installations_with_Sysprep.doc",
+        "09_Index.doc",
+        "Automating_and_Customizing_Installations.zip",
+        "01_Front.doc",
+        "06_CHAPTER_4_Designing_RIS_Installations.doc",
+        "08_Glossary.doc",
+        "02_Intro.doc",
+        "04_CHAPTER_2_Designing_Unattended_Installations.doc",
+        "07_CHAPTER_5_Migrating_User_State.doc",
+        "Job_Aids_Automating_and_Customizing_Installations.zip"
+    ],
+    "detailsSection_file_size": [
+        "22.9 KB",
+        "955.5 KB",
+        "1.5 MB",
+        "178.0 KB",
+        "6.5 MB",
+        "146.0 KB",
+        "2.2 MB",
+        "123.0 KB",
+        "1.3 MB",
+        "1.8 MB",
+        "1.0 MB",
+        "328.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Microsoft Word or Word Viewer</LI></UL><br>\n<br>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<OL><LI>To download the entire book, click the .zip file in the list below. To download just one element of the book, click the file name for that element from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "community Resources for Windows Server",
+            "url": "http://www.microsoft.com/windowsserver2003/community/default.asp"
+        },
+        {
+            "title": "home Page for Windows Server 2003",
+            "url": "http://www.microsoft.com/windowsserver2003/default.mspx"
+        },
+        {
+            "title": "top 10 Benefits of Windows Server 2003",
+            "url": "http://www.microsoft.com/windowsserver2003/evaluation/whyupgrade/top10best.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "10182",
+    "downloadPreload": true
+}

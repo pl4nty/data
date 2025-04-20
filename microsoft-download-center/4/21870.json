@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Brian Noyes: WPF Update",
+    "downloadDescription": "Brian Noyes catches us up on the state of WPF, talking about the new Composite WPF project (codename Prism), followed by a discussion on the state of Workflow Foundation (WF).",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080212BNoyes.zip",
+            "url": "https://download.microsoft.com/download/2/f/2/2f2fb9cd-4bc2-413c-b546-0c8ac60ff5d1/20080212BNoyes.zip",
+            "size": "47069908",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:08:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Brian Noyes is Chief Architect with IDesign, Microsoft\u2019s Regional Director for Virginia and a Microsoft Most Valuable Professional (MVP). Brian\u2019s latest book is Data Binding with Windows Forms 2.0, for Addison Wesley, and he is working on his next book, Smart Client Deployment with ClickOnce. Brian publishes articles in a variety of publications and speaks at international conferences and events including Microsoft TechEd US, Europe, and Malaysia, Visual Studio Connections, and DevTeach. Brian is a top-rated speaker on the INETA Speakers Bureau and travels the country frequently speaking to developer user groups. Brian got started with programming to stimulate his brain while flying F-14 Tomcats in the Navy, graduating from Top Gun and U.S. Naval Test Pilot School. You can always find out the latest things Brian is up to through his <a href=\"http://www.softinsight.com/bnoyes/\">blog</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080212BNoyes.zip"
+    ],
+    "detailsSection_file_size": [
+        "44.9 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "21870",
+    "downloadPreload": true
+}

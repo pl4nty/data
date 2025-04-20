@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Discussion Graph Tool",
+    "downloadDescription": "Discussion Graph Tool (DGT) simplifies social media analysis by making it easy to extract high-level features and co-occurrence relationships from raw data. Last published: June 19, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "dgt-0.6a.zip",
+            "url": "https://download.microsoft.com/download/b/1/0/b100e812-818a-487a-b2b8-3640443a9abf/dgt-0.6a.zip",
+            "size": "120899598",
+            "version": "0.6",
+            "datePublished": "3/15/2024 4:08:43 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Discussion Graph Tool (DGT) simplifies social media analysis by making it easy to extract high-level features and co-occurrence relationships from raw data. With just 3-4 simple lines of script, you can load your social media data, extract complex features such as mood, gender and location, and generate a graph among arbitrary features. Throughout, DGT automates best-practices, such as tracking the context of relationships.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.6",
+    "detailsSection_file_name": [
+        "dgt-0.6a.zip"
+    ],
+    "detailsSection_file_size": [
+        "115.3 MB"
+    ],
+    "detailsSection_file_date": "3/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52606",
+    "downloadPreload": true
+}

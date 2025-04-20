@@ -1,0 +1,134 @@
+{
+    "error": "",
+    "downloadTitle": "Windows CE 5.0 Networked Media Device Feature Pack - Cumulative Product Update Rollup Package  (through 12/31/2008)",
+    "downloadDescription": "Download the full set of updates for Windows CE 5.0 Networked Media Device Feature Pack .",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSII_FP.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSII_FP.msi",
+            "size": "15307776",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSIV.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSIV.msi",
+            "size": "15437824",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSII.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSII.msi",
+            "size": "15288320",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-X86.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-X86.msi",
+            "size": "12726272",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-SH4.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-SH4.msi",
+            "size": "14783488",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSIV_FP.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSIV_FP.msi",
+            "size": "15444992",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "WinCEPB50_NMDFP-081231-Product-Update-Rollup-Armv4I.msi",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/WinCEPB50_NMDFP-081231-Product-Update-Rollup-Armv4I.msi",
+            "size": "15254528",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Windows CE 5.0 Networked Media Device Feature Pack_Product_Update_Rollup_2008.htm",
+            "url": "https://download.microsoft.com/download/4/b/4/4b468df9-0104-41ad-b956-5e15178b2e4f/Windows CE 5.0 Networked Media Device Feature Pack_Product_Update_Rollup_2008.htm",
+            "size": "13410",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This is a full set of updates for Windows CE 5.0 Networked Media Device Feature Pack . Please see the associated Readme for a list of the included updates. For more information, see the <a href=\"http://www.microsoft.com/embedded\">Windows Embedded web site</a>.\n<br/>\n<br/>\nFor complete details regarding the updates in this release, please download the Windows CE 5.0 Networked Media Device Feature Pack_Product_Update_Rollup_2008.htm file below.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSII_FP.msi",
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSIV.msi",
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSII.msi",
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-X86.msi",
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-SH4.msi",
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-MIPSIV_FP.msi",
+        "WinCEPB50_NMDFP-081231-Product-Update-Rollup-Armv4I.msi",
+        "Windows CE 5.0 Networked Media Device Feature Pack_Product_Update_Rollup_2008.htm"
+    ],
+    "detailsSection_file_size": [
+        "14.6 MB",
+        "14.7 MB",
+        "14.6 MB",
+        "12.1 MB",
+        "14.1 MB",
+        "14.7 MB",
+        "14.5 MB",
+        "13.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows CE 5.0  Networked Media Device Feature Pack</LI><LI>75 MB of disk space required to download, install, and operate per processor</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows CE"
+    ],
+    "installInstructionSection": "<b>Important Download Details:</b><BR /><UL><LI>Each update is contained in a compressed file along with instructions.  All of the updates have been separated to make the download quicker.</LI><LI>Updates are cumulative; we suggest that you download all of them.  The setup will replace files in your Windows CE Platform Builder installation.</LI><LI>If you experience any problems in the download or installation of these updates e-mail qfeadmin@microsoft.com.</LI></UL><OL><LI>Click the file you want to download from the list below.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B> or <B>Run this program from its current location</B>.</LI><LI>To copy the download to your computer for installation at a later time, click <B>Save</B> or <B>Save this program to disk</B>.</LI></UL></OL>\nThis site provides critical stand-alone updates and monthly rollups of all Windows CE updates available for evaluation customers only. All licensed OEMs should visit the OEM Windows Embedded Web site for updates. <br />",
+    "relatedResourcesSection": [
+        {
+            "title": "windows CE Documentation",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnanchor/html/windowsce.asp"
+        },
+        {
+            "title": "windows Embedded Books",
+            "url": "http://msdn.microsoft.com/embedded/community/community/books/default.aspx"
+        },
+        {
+            "title": "windows Embedded Community",
+            "url": "http://msdn.microsoft.com/embedded/community/default.aspx"
+        },
+        {
+            "title": "windows CE Home Page",
+            "url": "http://msdn.microsoft.com/embedded/windowsce/default.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "20010",
+    "downloadPreload": true
+}

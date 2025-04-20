@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Update Rollup 1 for System Center Service Manager 2019",
+    "downloadDescription": "Update Rollup 1 for System Center Service Manager 2019",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SCSM2019_CU_KB4532891_amd64_10.19.1035.73.exe",
+            "url": "https://download.microsoft.com/download/f/3/1/f3102aa6-de15-4a67-8ba9-fa1a11473c74/SCSM2019_CU_KB4532891_amd64_10.19.1035.73.exe",
+            "size": "48481392",
+            "version": "2019 UR1",
+            "datePublished": "7/15/2024 4:21:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This article describes the issues that are fixed in Update Rollup 1 for Microsoft System Center Service Manager 2019\r\n<br/>\r\n<b>Issues that are fixed and improvements</b><br/>\r\n<ul>\r\n<li>Fixed a bug that appended an additional extension to certain files in the file attachments, while saving them on local machine. </li>\r\n<li>Prefix for work items like Review Activities can now contain space characters. </li>\r\n<li>State changes for Service Requests has been made unambiguous in the SM portal by moving the service request from active to \u2018resolved\u2019 state once all the SR related activities are completed. Earlier, the SR used to move to \u2018closed\u2019 state from active. </li>\r\n<li>Fixed an issue due to which text fields in the portal used to get encrypted and hence became unreadable. This occurred during certain validation errors such as file attachment size error. </li>\r\n<li>User input field on the Request Detail\u2019s page now accepts HTML tag characters. </li>\r\n<li>Email link in the mail icon on the portal has been corrected so that end users may open a ticket via email without any need to remember the service desk\u2019s address. </li>\r\n<li>Fixes an issue that occurs when you create requests that include files as attachments in Self Service Portal that generates erroneous failure messages when the requests are successfully generated. </li><li>The user inputs while submitting a service request offering are now persisted in case of validation failures except file attachments and query results.</li>\r\n<li>Filtering in the My Requests page has been enhanced to also search the Description of the requests in addition to their ID, Title and Status. </li>\r\n<li>The email link in the Self-Service Portal has been fixed to compose the mail with the right \u2018To\u2019 address </li>\r\n<li>Fixed an issue which prevented the user to input HTML tag characters in the request details page in Internet Explorer. </li>\r\n<li>Made enhancements to improve the start-up time of the SDK service. </li>\r\n<li>Fixed an issue where language translation was inconsistent in the portal when querying in non-English languages. </li>\r\n<li>Fixed a bug which prevented the submission of a service request in the portal if request offering has a list item that contains a plus (+) sign. </li>\r\n<li>The simple list questions on service request creation page now does not select the first option by default and the user must select the desired list item. This reduces incorrect categorization of service requests. </li>\r\n<li>Fixed a bug in portal that randomly denied creation of requests with an error \u2018The given key was not present in the dictionary\u2019. This was observed in high traffic environments and led to refilling of form and resubmission of service requests. </li>\r\n<li>Fixed a bug in the portal due to which the custom views for a user are rendered blank when a service request was created using an inherited class which uses the same internal property name as its base class </li>\r\n<li>Service Manager connector for Configuration Manager is being upgraded to support latest Configuration Manager versions. It shall be made available via a hot-fix in near future, and in SCSM 2019 UR2. </li>\r\n</ul><br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB4532891",
+        "name": "KB4532891"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2019 UR1",
+    "detailsSection_file_name": [
+        "SCSM2019_CU_KB4532891_amd64_10.19.1035.73.exe"
+    ],
+    "detailsSection_file_size": [
+        "46.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Supported Operating System\r\nWindows Server 2016, Windows Server 2016\r\n\r\nSystem Center Service Manager 2019",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "Please refer <a href=\"https://support.microsoft.com/kb/4532891\">KB4532891</a> for detailed installation instructions.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100856",
+    "downloadPreload": true
+}

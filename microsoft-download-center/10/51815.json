@@ -1,0 +1,198 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Microsoft Lync 2010 Attendee (user level install) (KB3144428)",
+    "downloadDescription": "Security Update for Microsoft Lync 2010 Attendee (user level install) (KB3144428)",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AttendeeUser.msp",
+            "url": "https://download.microsoft.com/download/a/d/b/adb50734-ee37-4a4c-8d93-f4d41c4698fd/AttendeeUser.msp",
+            "size": "24043520",
+            "version": "7577.4500",
+            "datePublished": "7/15/2024 4:09:50 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ro-ro",
+            "name": "Romanian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "uk-ua",
+            "name": "Ukrainian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "sk-sk",
+            "name": "Slovak"
+        },
+        {
+            "cultureCode": "sr-latn-rs",
+            "name": "Serbian (Latin)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "sl-si",
+            "name": "Slovenian"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "hi-in",
+            "name": "Hindi"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "bg-bg",
+            "name": "Bulgarian"
+        },
+        {
+            "cultureCode": "lv-lv",
+            "name": "Latvian"
+        },
+        {
+            "cultureCode": "lt-lt",
+            "name": "Lithuanian"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "kk-kz",
+            "name": "Kazakh"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "A security issue has been identified in a <b>Microsoft Lync</b> software product that could affect your system. You can help protect your system by installing this update from Microsoft. For a complete listing of the issues that are included in this update, see the associated Microsoft Knowledge Base article.  After you install this update, you may have to restart your system. <br />",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB3144428",
+        "name": "KB3144428"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS16-039",
+        "name": "MS16-039"
+    },
+    "detailsSection_file_version": "7577.4500",
+    "detailsSection_file_name": [
+        "AttendeeUser.msp"
+    ],
+    "detailsSection_file_size": [
+        "22.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "\n      <ul>\n        <li>\n          <b>This download requires the following Office program: </b>\n        </li>\n        <ul>\n          Microsoft Lync 2010 Attendee\n        </ul>\n      </ul>\n    ",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "\n      <b>To install this download: </b>\n      <br />\n      <ol>\n        <li>\n          Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk.\n        </li>\n        <li>Double-click the program file on your hard disk to start the Setup program. </li>\n        <li>Follow the instructions on the screen to complete the installation. </li>\n      </ol>\n      <br />\n      <br />\n      <b>To remove this download: </b>\n      <br />\n      <ul>\n        To remove the download file, delete the file <b>AttendeeUser.msp </b>.\n      </ul>\n      <br />\n      <br />\n      <b>To uninstall this program: </b>\n      <br />\n      <ol>\n        <li>\n          On the <b>Start</b> menu, point to <b>Settings</b> and then click <b>Control Panel</b>.\n        </li>\n        <li>\n          Double-click <b>Add/Remove Programs</b>.\n        </li>\n        <li>\n          In the list of currently installed programs, select <b>Microsoft Lync 2010 Attendee</b> and then click <b>Remove</b> or <b>Add/Remove</b>. If a dialog box appears, follow the instructions to remove the program.\n        </li>\n        <li>\n          Click <b>Yes</b> or <b>OK</b> to confirm that you want to remove the program.\n        </li>\n      </ol>\n    ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51815",
+    "downloadPreload": true
+}

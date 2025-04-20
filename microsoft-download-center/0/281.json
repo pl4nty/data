@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Troubleshoot Forefront UAG DirectAccess with Network Access Protection (NAP)",
+    "downloadDescription": "Learn to troubleshoot UAG DirectAccess in a Test Lab",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UAG_DirectAccessWithNAP_Tshoot_TLG.docx",
+            "url": "https://download.microsoft.com/download/2/e/e/2eeae0a5-18c8-45aa-bdb2-a9841b9d5dc6/UAG_DirectAccessWithNAP_Tshoot_TLG.docx",
+            "size": "684584",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:09:25 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Network Access Protection (NAP), built into Windows Server 2008 R2 and Windows 7, monitors and assesses the health of client computers when they attempt to connect or communicate on a network. NAP with DirectAccess allows you to specify that only DirectAccess clients that meet system health requirements can reach intranet resources.  This white paper is a companion to the Test Lab Guide: Demonstrate UAG DirectAccess with NAP and describes NAP troubleshooting tools, the results of the tools in the working UAG DirectAccess with NAP test lab, and three NAP health validation troubleshooting scenarios.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "UAG_DirectAccessWithNAP_Tshoot_TLG.docx"
+    ],
+    "detailsSection_file_size": [
+        "668.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "281",
+    "downloadPreload": true
+}

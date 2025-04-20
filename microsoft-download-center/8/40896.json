@@ -1,0 +1,122 @@
+{
+    "error": "",
+    "downloadTitle": "System Center 2012 R2 Service Manager Authoring Tool",
+    "downloadDescription": "System Center Management Pack for System Center 2012 R2 Service Reporting",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SC2012_R2_SCSM_AuthoringTool.exe",
+            "url": "https://download.microsoft.com/download/8/9/3/893452dd-a659-4dff-ab4e-897fdd89c470/SC2012_R2_SCSM_AuthoringTool.exe",
+            "size": "38903016",
+            "version": "2012 R2",
+            "datePublished": "7/15/2024 3:35:52 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The System Center 2012 R2 Service Manager Authoring Tool is a tool for customization and extension of the built in functionality in System Center Service Manager. This release supports modifying existing process management packs and creating new management packs that define extensions to the Service Manager database for tracking additional information, customizations of forms or new forms, and new workflows. This release is available in 10 languages. <br/>\r\n<br/>\r\nThis release is compatible with Service Manager 2012 R2. It contains the final set of features for this version, including: <br/>\r\n<ul>\r\n<li> Form customization, supporting an extended library of controls </li>\r\n<li> Creating new simple forms to support custom classes </li>\r\n<li> Class editor for creating and extending classes and relationships in the Service Manager database </li>\r\n<li> Creation of workflows with detailed trigger criteria and extensible library of actions </li>\r\n<li> Management pack support including sealing </li>\r\n<li> Class Browser and Form Browser to easily locate classes and forms regardless of management pack </li>\r\n</ul>\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012 R2",
+    "detailsSection_file_name": [
+        "SC2012_R2_SCSM_AuthoringTool.exe"
+    ],
+    "detailsSection_file_size": [
+        "37.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Other Software: </b>System Center 2012 R2 Service Manager<br/>\r\nPlease see the Authoring Guide document available with this release for detailed system requirements<br/>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2012",
+        "Windows Server 2012 R2"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download the self-extracing package and save it locally. </li>\r\n<li> Download and install Visual Studio 2008 Shell (isolated mode) with Service Pack 1 Redistributable Package from <a href=\"http://www.microsoft.com/en-us/download/details.aspx?id=19670\">http://www.microsoft.com/en-us/download/details.aspx?id=19670</a></li>\r\n<li> Double-click the executable to extract the content and follow the instructions.</li>\r\n<li> Read through the Authoring Guide available at <a href=\"http://technet.microsoft.com/en-us/library/hh542404.aspx\">http://technet.microsoft.com/en-us/library/hh542404.aspx</a> for further installation instructions for the tool.</li>\r\n<li> See release notes for this release at <a href=\"http://technet.microsoft.com/en-us/library/hh524227.aspx\">http://technet.microsoft.com/en-us/library/hh524227.aspx</a></li>\r\n</ol>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40896",
+    "downloadPreload": true
+}

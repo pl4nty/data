@@ -1,0 +1,90 @@
+{
+    "error": "",
+    "downloadTitle": "AKS Edge Essentials 1.6.384.0",
+    "downloadDescription": "Enabling Kubernetes (k8s/k3s) to run containerized applications at scale on Windows devices",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "AksEdgeWindows-1.6.384.0.zip",
+            "url": "https://download.microsoft.com/download/3/d/7/3d7b3eea-51c2-4a2c-8405-28e40191e715/AksEdgeWindows-1.6.384.0.zip",
+            "size": "7422173174",
+            "version": "1.6.384.0",
+            "datePublished": "7/15/2024 5:00:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AksEdge-K8s-1.27.6-1.6.384.0.msi",
+            "url": "https://download.microsoft.com/download/3/d/7/3d7b3eea-51c2-4a2c-8405-28e40191e715/AksEdge-K8s-1.27.6-1.6.384.0.msi",
+            "size": "1087180800",
+            "version": "1.6.384.0",
+            "datePublished": "7/15/2024 5:00:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AksEdge-K8s-1.26.6-1.6.384.0.msi",
+            "url": "https://download.microsoft.com/download/3/d/7/3d7b3eea-51c2-4a2c-8405-28e40191e715/AksEdge-K8s-1.26.6-1.6.384.0.msi",
+            "size": "1141161984",
+            "version": "1.6.384.0",
+            "datePublished": "7/15/2024 5:00:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "AksEdge-K3s-1.27.6-1.6.384.0.msi",
+            "url": "https://download.microsoft.com/download/3/d/7/3d7b3eea-51c2-4a2c-8405-28e40191e715/AksEdge-K3s-1.27.6-1.6.384.0.msi",
+            "size": "892538880",
+            "version": "1.6.384.0",
+            "datePublished": "7/15/2024 5:00:56 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "AksEdge-K3s-1.26.10-1.6.384.0.msi",
+            "url": "https://download.microsoft.com/download/3/d/7/3d7b3eea-51c2-4a2c-8405-28e40191e715/AksEdge-K3s-1.26.10-1.6.384.0.msi",
+            "size": "849203200",
+            "version": "1.6.384.0",
+            "datePublished": "7/15/2024 5:00:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Azure Kubernetes Service Edge Essentials is an on-premises Kubernetes implementation of Azure Kubernetes Service (AKS) that automates running containerized applications at scale. For more details, see [AKS Edge Essentials Overview](https://aka.ms/aks-edge/overview)",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.6.384.0",
+    "detailsSection_file_name": [
+        "AksEdgeWindows-1.6.384.0.zip",
+        "AksEdge-K8s-1.27.6-1.6.384.0.msi",
+        "AksEdge-K8s-1.26.6-1.6.384.0.msi",
+        "AksEdge-K3s-1.27.6-1.6.384.0.msi",
+        "AksEdge-K3s-1.26.10-1.6.384.0.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.9 GB",
+        "1.0 GB",
+        "1.1 GB",
+        "851.2 MB",
+        "809.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Operating System</b><br/>\r\n\u2022 Windows 10 IoT Enterprise (build 17763 or later)<br/>\r\n\u2022 Windows 10 Enterprise (build 17763 or later)<br/>\r\n\u2022 Windows 10 Professional (build 17763 or later)<br/>\r\n\u2022 Windows 11 Iot Enterprise (build 22000 or later)<br/>\r\n\u2022 Windows 11 Enterprise (build 22000 or later)<br/>\r\n\u2022 Windows 11 Professional (build 22000 or later)<br/>\r\n\u2022 Windows Server (build 17763 or later)<br/>\r\n<i>Note: Hyper-V must be enabled to support AKS Edge virtual machines.</i><br/>\r\n<br/>\r\n\r\n<b>Memory</b><br/>\r\n\u2022 4GB Minimum Physical Memory- 2GB Minimum Free Memory (Cluster-Only)<br/>\r\n\u2022 8GB Minimum Physical Memory - 4GB Minimum Free Memory (Arc and GitOps) <br/>\r\n<i>Note: Your deployment may require aditional free memory depending on the the size of the virtual machine that you choose during installation.</i><br/>\r\n<br/>\r\n\r\n<b>Storage</b><br/>\r\n\u2022 17GB Minimum Free Storage<br/>\r\n<i>Note: Your deployment may require additional free storage depending on the size of the virtual machine that you choose during installation.</i><br/>\r\n<br/>\r\n\r\n<b>Additional Requirements</b><br/>\r\n\u2022 If you are using a local VM, your hardware must be capable of supporting nested virtualization.<br/>\r\n\u2022 If you are using an Azure VM, you must use a compute unit that is capable of hyper-threading and nested virtualization<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "See installation instructions <a href=\"https://aka.ms/aks-edge/quickstart\">here</a>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "105824",
+    "downloadPreload": true
+}

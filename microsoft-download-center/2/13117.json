@@ -1,0 +1,125 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Exchange Server 2007 Transport Server Role Architecture Diagrams",
+    "downloadDescription": "This download contains architectural diagrams of the Microsoft Exchange Server 2007 transport server roles.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2007_EdgeTransportRoleArchitecture.pdf",
+            "url": "https://download.microsoft.com/download/f/f/b/ffb96cba-fc3e-476a-a27a-50d63d36d720/Exchange2007_EdgeTransportRoleArchitecture.pdf",
+            "size": "342557",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Exchange2007_HubTransportRoleArchitectureSP1.pdf",
+            "url": "https://download.microsoft.com/download/f/f/b/ffb96cba-fc3e-476a-a27a-50d63d36d720/Exchange2007_HubTransportRoleArchitectureSP1.pdf",
+            "size": "335105",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2007_HubTransportRoleArchitectureRTM.pdf",
+            "url": "https://download.microsoft.com/download/f/f/b/ffb96cba-fc3e-476a-a27a-50d63d36d720/Exchange2007_HubTransportRoleArchitectureRTM.pdf",
+            "size": "334362",
+            "version": "1",
+            "datePublished": "7/15/2024 3:11:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "Many components are involved in the transport of messages through the Exchange Server 2007 mail flow pipeline. These diagrams can help you understand how each component affects the processing of messages that enter the Exchange 2007 mail flow pipeline. Exchange administrators can use this information to help diagnose mail flow problems. Developers can use this information to help create third-party agents and applications to work with Exchange 2007.<br />\nThe Edge Transport server architectural diagram applies to Microsoft Exchange Server 2007 Service Pack 1 (SP1) and the release to manufacturing (RTM) version of Exchange Server 2007. For the Hub Transport server, two architectural diagrams are provided: One for Exchange 2007 SP1 and one for Exchange 2007 RTM.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Exchange2007_EdgeTransportRoleArchitecture.pdf",
+        "Exchange2007_HubTransportRoleArchitectureSP1.pdf",
+        "Exchange2007_HubTransportRoleArchitectureRTM.pdf"
+    ],
+    "detailsSection_file_size": [
+        "334.5 KB",
+        "327.3 KB",
+        "326.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Adobe Acrobat Reader</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol><li>Click the Download button on this page to start the download, or choose a different language from the drop-down list and click Go.</li><br />\n<li>Do one of the following:</li><br />\n<ul><li>To start the installation immediately, click Open or Run this program from its current location.</li><br />\n<li>To copy the download to your computer for installation at a later time, click Save or Save this program to disk.</li><br />\n</ul><br />\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Exchange Solutions Center",
+            "url": "http://support.microsoft.com/default.aspx?scid=ph;en-us;10926&sd=gn"
+        },
+        {
+            "title": "microsoft Exchange Home Page",
+            "url": "http://www.microsoft.com/exchange/default.mspx"
+        },
+        {
+            "title": "microsoft Exchange Server 2007 SDK",
+            "url": "http://msdn.microsoft.com/library/default.asp?url=/library/en-us/exchanchor/htms/msexchsvr_e2k7_sdk.asp"
+        },
+        {
+            "title": "microsoft Exchange Server 2007 on TechNet",
+            "url": "http://www.microsoft.com/technet/prodtechnol/exchange/2007/default.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13117",
+    "downloadPreload": true
+}

@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Enterprise Single Sign-On 2016 Cumulative Update 1",
+    "downloadDescription": "Enterprise Single Sign-On 2016 Cumulative Update 1 installation package",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HIS2016-ESSO-CU1-KB4499611-x64-EN.exe",
+            "url": "https://download.microsoft.com/download/4/b/f/4bf173d4-a262-4daa-9a0d-d1adcd566efe/HIS2016-ESSO-CU1-KB4499611-x64-EN.exe",
+            "size": "4076120",
+            "version": "10.0",
+            "datePublished": "7/15/2024 3:04:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Cumulative Update 1 for Microsoft Enterprise Single Sign-On 2016 contains hotfixes for issues that were fixed after the release of Enterprise Single Sign-On 2016.  We recommend that you test the cumulative update before you deploy it in a production environment. \r\n\r\nThis cumulative update (CU) is a rollup update that contains the following items:\r\n<UL><LI>All previously released hotfixes for Enterprise Single Sign-On 2016.</LI></UL>\r\n\r\n\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "10.0",
+    "detailsSection_file_name": [
+        "HIS2016-ESSO-CU1-KB4499611-x64-EN.exe"
+    ],
+    "detailsSection_file_size": [
+        "3.9 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "These cumulative updates require that Enterprise Single Sign-On 2016 be installed on the system.   These updates can also be applied on top of previous updates.  They are supported on the same operating systems as Enterprise Single Sign-On 2016.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <b>Download</b> button on this page to start the download, and click <B>Next</B>.</LI><LI>Do one of the following:</LI><UL><LI>To start the installation immediately, click <B>Open</B>.</LI><LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the download, click <B>Cancel</B>.</LI></UL></OL> ",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "58493",
+    "downloadPreload": true
+}

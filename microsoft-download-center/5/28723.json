@@ -1,0 +1,101 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Project Server 2010 Integration with SAP ",
+    "downloadDescription": "Use Project Server to provide timely and cost-effective resource forecast business intelligence through integration with SAP and other ERP systems.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Project Server 2010 Integration with SAP.docx",
+            "url": "https://download.microsoft.com/download/4/e/6/4e6cea18-804d-4a21-b8dd-8e9cc574c1fb/Microsoft Project Server 2010 Integration with SAP.docx",
+            "size": "3941935",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:56 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Project Server 2010 Integration with SAP.pdf",
+            "url": "https://download.microsoft.com/download/4/e/6/4e6cea18-804d-4a21-b8dd-8e9cc574c1fb/Microsoft Project Server 2010 Integration with SAP.pdf",
+            "size": "1600420",
+            "version": "1",
+            "datePublished": "7/15/2024 3:28:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        }
+    ],
+    "detailsSection": "This white paper outlines the benefits and scenarios for integrating Microsoft Project Server 2010 with SAP\u2019s ERP; in particular integrating the actual time reporting from SAP with the time-phased planning and resource forecasting power of Project Server 2010.\r\n\r\nThis integration is cost-effective and enables the source of record Actuals (both Cost and Time reporting) to bring actuals to the planning activities that Project/Program Offices or Scheduling groups use Project Server 2010 for.\r\n\r\nThis connection and process enables a large national company to drastically reduce the time spent in planning and trying to map the actuals directly with the way that the organization schedules work. The feature-rich reporting capabilities of Microsoft Project Professional 2010, Project Server 2010, and Microsoft SharePoint Server 2010 are enabled, and that planning and reporting is put directly in the hands of the end users.\r\n\r\nThis white paper is not a Detailed Technical Systems or programming write-up, but a customer solutions case study focused on the value of systems integration of a Project and Resource Planning Organization.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Microsoft Project Server 2010 Integration with SAP.docx",
+        "Microsoft Project Server 2010 Integration with SAP.pdf"
+    ],
+    "detailsSection_file_size": [
+        "3.8 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>Requirements: To download and read a whitepaper, you must have Microsoft Word or Adobe Reader.</LI>\r\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL>\r\n<LI>Click the <b>Download</b> button in the upper right corner of this page to start the download.</LI>\r\n<LI>Click <B>Save</B> or <B>Save this program to disk</B>.</LI>\r\n<LI>Find the file on your hard disk and double-click it to open it. </LI>\r\n</OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28723",
+    "downloadPreload": true
+}

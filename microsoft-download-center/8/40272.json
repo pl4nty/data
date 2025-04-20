@@ -1,0 +1,59 @@
+{
+    "error": "",
+    "downloadTitle": "Office 365 Midsize Business Quick Deployment Guide",
+    "downloadDescription": "Describes how to quickly deploy Office 365 Midsize Business and demonstrates features of Office 365.  This article does not cover migration of data from other programs or services to Office 365.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Office365MidsizeBusinessQuickDeploymentGuide.docx",
+            "url": "https://download.microsoft.com/download/6/f/7/6f75fcfb-cd12-46a1-90f6-b827cb4d59b7/Office365MidsizeBusinessQuickDeploymentGuide.docx",
+            "size": "156085",
+            "version": "April2014",
+            "datePublished": "7/15/2024 3:27:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Describes how to quickly deploy Office 365 Midsize Business and demonstrates features of Office 365.  This article does not cover migration of data from other programs or services to Office 365.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "April2014",
+    "detailsSection_file_name": [
+        "Office365MidsizeBusinessQuickDeploymentGuide.docx"
+    ],
+    "detailsSection_file_size": [
+        "152.4 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Choose the <b>Download</b> button on this page to start the download. Or, select a different language from the drop-down list, and then Choose <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, choose <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, choose <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "office 365 Deployment Center",
+            "url": "http://deployoffice365.com/"
+        },
+        {
+            "title": "office 365 Deployment Guide",
+            "url": "http://technet.microsoft.com/en-us/library/hh852466.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "40272",
+    "downloadPreload": true
+}

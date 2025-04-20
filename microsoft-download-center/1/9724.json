@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Live Communications Server 2005 Virtual Machine Setup Instructions",
+    "downloadDescription": "This document provides you with instructions to create a development environment within the Live Communications Server virtual machine that is necessary for use with samples applications provided on the Live Communications Server Developer Portal.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Live_Communications_Server_Virtual_Machine_Setup_Instructions.doc",
+            "url": "https://download.microsoft.com/download/0/b/c/0bcb59d8-7caf-4f7f-9717-f5bbd439dc9a/Live_Communications_Server_Virtual_Machine_Setup_Instructions.doc",
+            "size": "88576",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "For developers, Microsoft has created a set of samples that include sample code, hands-on-labs, demos, and functional sample applications for Live Communications Server 2005.  These samples can be used within your own environment or by downloading the Microsoft Exchange Server 2007 Virtual Hard Disk (VHD). (See the Related Resources section below.)   This Virtual Machine is a pre-configured VHD that provides you with trial software including Live Communications Server 2005 SP1. <br />\n <br />\nIn order to use the samples with this VHD, you need to follow additional steps to create a fully functional development environment.  This document provides you with the information needed to configure the VHD for use with samples provided.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Live_Communications_Server_Virtual_Machine_Setup_Instructions.doc"
+    ],
+    "detailsSection_file_size": [
+        "86.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><br />\n<LI><b>This download works with the following Office programs:</b></LI><br />\n<ul>\n<li>Microsoft Office Live Communications Server 2005 with SP1</li>\n</ul><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows XP"
+    ],
+    "installInstructionSection": "<b>To install this download:</b>\n<ol>\n<li>Download the file by clicking the <b>Download</b> button (above) and saving the file to your hard disk. </li>\n<li>Double-click the document to open it. </li>\n<li>Follow the instructions on the screen to complete the installation.</li>\n</ol>\n<b>To remove this download, delete the file from your computer.</b>\n<br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "9724",
+    "downloadPreload": true
+}

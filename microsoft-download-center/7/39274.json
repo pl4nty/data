@@ -1,0 +1,63 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Lync Room System Deployment Guide",
+    "downloadDescription": "This document guides you through provisioning Microsoft Lync Room System in Lync Server and Exchange Server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "deployment guide (lrs).doc",
+            "url": "https://download.microsoft.com/download/c/6/8/c68fdc01-de6d-4178-ad4a-82590cb3aa10/deployment guide (lrs).doc",
+            "size": "620032",
+            "version": "Nov2014",
+            "datePublished": "7/15/2024 3:34:48 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft Lync Room System (LRS) edition is a new Microsoft Lync unified communications client that has been optimized for Lync meetings in physical conference rooms. This document guides you through provisioning Microsoft Lync Room System in Lync Server and Exchange Server.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "Nov2014",
+    "detailsSection_file_name": [
+        "deployment guide (lrs).doc"
+    ],
+    "detailsSection_file_size": [
+        "605.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL>\r\n<LI>The file is a Microsoft Word document. Users who do not have Microsoft Word can view this document through the downloadable <A HREF=\"http://go.microsoft.com/fwlink/?LinkId=40014\"> Word Viewer</A>.</LI> \r\n</UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "<ol>\r\n<li>Click the <b>Download</b> button on this page to start the download. Or, choose a different language from the drop-down list, and then click <b>Go</b>.</li>\r\n<li>Do one of the following:</li>\r\n<ul>\r\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\r\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\r\n</ul>\r\n</ol>\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "lync Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=193461"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "39274",
+    "downloadPreload": true
+}

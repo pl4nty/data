@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Retail Deployment Guide for Microsoft Dynamics AX 2012 Feature Pack",
+    "downloadDescription": "Detailed procedures for planning and performing an installation of the Retail components of Microsoft Dynamics AX 2012 Feature Pack.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Retail Deployment Guide.pdf",
+            "url": "https://download.microsoft.com/download/c/4/1/c416476b-2205-433c-8c52-8893f78379be/Retail Deployment Guide.pdf",
+            "size": "1450427",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:28:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Detailed procedures for planning and performing an installation of the Retail components of Microsoft Dynamics AX 2012 Feature Pack.<br /><br />\r\n<b>Note:</b>The information in this guide applies only to Microsoft Dynamics AX 2012 Feature Pack. For information about how to use Retail with Microsoft Dynamics AX 2012 R2, see the <a href=\"http://technet.microsoft.com/EN-US/library/jj710398.aspx\">Microsoft Dynamics AX 2012 Technical Library on TechNet</a>.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Retail Deployment Guide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\r\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the manual in PDF file format.</LI>\r\n<LI>Save the file to your computer.</LI></OL>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28776",
+    "downloadPreload": true
+}

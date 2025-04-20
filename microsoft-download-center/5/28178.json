@@ -1,0 +1,87 @@
+{
+    "error": "",
+    "downloadTitle": "Productivity Hub 2010 SP1",
+    "downloadDescription": "The Productivity Hub is a Microsoft SharePoint Server 2010 SP1 site collection that offers training materials for end-users.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "ContentPack2010SP1-1.exe",
+            "url": "https://download.microsoft.com/download/c/f/e/cfe858cf-f65c-4e22-bdfb-8bcddfa71362/ContentPack2010SP1-1.exe",
+            "size": "482341888",
+            "version": "2010 SP1",
+            "datePublished": "7/15/2024 3:28:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContentPack2010SP1-3.exe",
+            "url": "https://download.microsoft.com/download/c/f/e/cfe858cf-f65c-4e22-bdfb-8bcddfa71362/ContentPack2010SP1-3.exe",
+            "size": "493257728",
+            "version": "2010 SP1",
+            "datePublished": "7/15/2024 3:28:11 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "CoreInstall2010SP1.exe",
+            "url": "https://download.microsoft.com/download/c/f/e/cfe858cf-f65c-4e22-bdfb-8bcddfa71362/CoreInstall2010SP1.exe",
+            "size": "14661632",
+            "version": "2010 SP1",
+            "datePublished": "7/15/2024 3:28:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContentPack2010SP1-2.exe",
+            "url": "https://download.microsoft.com/download/c/f/e/cfe858cf-f65c-4e22-bdfb-8bcddfa71362/ContentPack2010SP1-2.exe",
+            "size": "462865920",
+            "version": "2010 SP1",
+            "datePublished": "7/15/2024 3:28:11 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "ContentPack2010SP1-4.exe",
+            "url": "https://download.microsoft.com/download/c/f/e/cfe858cf-f65c-4e22-bdfb-8bcddfa71362/ContentPack2010SP1-4.exe",
+            "size": "753664000",
+            "version": "2010 SP1",
+            "datePublished": "7/15/2024 3:28:11 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft has developed the Productivity Hub to help support your ongoing end user training efforts. <br /><br />\r\n\r\nThe Hub is a SharePoint Server site collection that serves as a learning community and is fully customizable. It provides a central place for your training efforts, and includes training content from Microsoft\u2019s core products. Microsoft also provides ongoing and updated content packs.   <br /><br />\r\n\r\nThe Hub uses SharePoint Server\u2019s social networking capabilities, such as blogs and discussion groups. In addition, it offers the Coach program, a change management feature to help you train end users to self-help, reducing the burden on your training and IT staff. The Coach program impacts productivity in a collaborative and positive way. <br /><br />\r\n\r\nThe 2010 SP1 version of the Productivity Hub includes a quiz feature, a section called \u2018Get it Done\u2019 that offers training for tasks such as email management and collaboration, and also features Silverlight. However, instructions are also provided to use non-Silverlight web parts, if needed. <br /><br />\r\n\r\nWhat the Productivity Hub is:<br />\r\n<ul>\r\n<li>Format: Pre-loaded SharePoint site collection, optimized for Web 2.0 functionality and easily deployed within SharePoint 2010 SP1 environment</li>\r\n<li>Content: Convenient end user productivity training in a variety of formats \r\n(documents, videos, podcasts, etc.).  Receive free periodic updates of content that you will learn about through the Productivity blog.</li>\r\n<li>Blog: The Productivity blog offers tips and tricks for end user productivity. Use it as is, or your training staff can use the posts as their own to help them get started in running an internal blog.</li>\r\n<li>Train the trainer: Includes IT/Manager section to aid with deployment of the site collection, and guidance to develop the Coach program</li>\r\n<li>Products: Office (2007 & 2010), SharePoint (2007 & 2010), Windows 7, Internet Explorer 9, Project (2007 & 2010), Visio (2007 & 2010), Publisher (2007 & 2010), Live Meeting 2007, Communicator 2007, Groove 2007 and Lync 2010</li>\r\n</ul>\r\n<br />\r\nYou can also download additional content packages that expand the training materials you can make available through the Hub.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2010 SP1",
+    "detailsSection_file_name": [
+        "ContentPack2010SP1-1.exe",
+        "ContentPack2010SP1-3.exe",
+        "CoreInstall2010SP1.exe",
+        "ContentPack2010SP1-2.exe",
+        "ContentPack2010SP1-4.exe"
+    ],
+    "detailsSection_file_size": [
+        "460.0 MB",
+        "470.4 MB",
+        "14.0 MB",
+        "441.4 MB",
+        "718.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows XP or later <br />\r\n2007 Office System <br />\r\nSharePoint Server 2010 SP1 with August 2011 CU <br />\r\nSilverlight 4<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "<b>SharePoint Server 2010 Installed</b><br />\r\n\r\nThe Microsoft Productivity Hub 2010 SP1 solution is packaged as a set of Microsoft Office SharePoint Server 2010 SP1 features with related content. To install the Productivity Hub solution, you must have Microsoft Office SharePoint Server 2010 SP1 Standard edition or Microsoft Office SharePoint Server 2010 SP1 Enterprise edition already installed and configured. <br /><br />\r\n\r\nThis download offers you the benefits of registering with Microsoft. Click the Continue button near the top of this page to register. After you have gone through the registration process, you will be returned to this page to begin the download.<br /><br />\r\n\r\n<b>Add-on Content Packages</b><br />\r\nPeriodically, content packages are added to this download page. These content packages will keep you up to date with the latest help files for Microsoft desktop applications. For example, the 1st content package contains more than 200 additional training materials that you can add to the Microsoft Productivity Hub. The package also includes materials for five new products -- Live Meeting, OneNote, Project, Publisher, and Visio -- as well as additional content for Access, Communicator, Excel, Outlook, PowerPoint, SharePoint, and Word. Make sure to install the Hub and the default content <i>before</i> installing these content packs.<br /><br />\r\n\r\n<b>Search</b><br />\r\nTo enable the search capabilities within the Productivity Hub, a Shared Services Provider must be associated with the Productivity Hub site collection and configured to search the Productivity Hub site collection. <br /><br />\r\n\r\n<b>Disk Space</b><br />\r\nOnce installed, the solution consumes roughly 750 megabytes of disk space. The majority of this is content (e.g. large video files and Office System documents) which SharePoint manages via its content database.\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "28178",
+    "downloadPreload": true
+}

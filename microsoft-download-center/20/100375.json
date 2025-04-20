@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Mixed Reality OpenXR Runtime Compatibility Pack",
+    "downloadDescription": "Enables use of the Windows Mixed Reality OpenXR Runtime on Windows 10 October 2018 Update.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "MixedRealityRuntimeCompatPack.exe",
+            "url": "https://download.microsoft.com/download/1/9/b/19bea745-e57e-4017-9540-9707fe6d789a/MixedRealityRuntimeCompatPack.exe",
+            "size": "759320",
+            "version": "1.0.1.0",
+            "datePublished": "7/15/2024 4:28:29 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Enables use of the Windows Mixed Reality OpenXR Runtime on Windows 10 October 2018 Update.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0.1.0",
+    "detailsSection_file_name": [
+        "MixedRealityRuntimeCompatPack.exe"
+    ],
+    "detailsSection_file_size": [
+        "741.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows 10 October 2018 Update",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "See https://aka.ms/openxr for information on how to use the Windows Mixed Reality OpenXR Runtime.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "100375",
+    "downloadPreload": true
+}

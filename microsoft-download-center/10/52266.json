@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "ZooTracer",
+    "downloadDescription": "ZooTracer is a desktop tool that can be used to trace animal movement in video. Last published: February 24, 2014.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "zootracer.zip",
+            "url": "https://download.microsoft.com/download/d/2/4/d24366d5-4748-4c79-a96a-d07f9885d47e/zootracer.zip",
+            "size": "387740",
+            "version": "1.0",
+            "datePublished": "7/15/2024 4:10:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "ZooTracer is a desktop tool that can be used to trace animal movement in video.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "zootracer.zip"
+    ],
+    "detailsSection_file_size": [
+        "378.7 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52266",
+    "downloadPreload": true
+}

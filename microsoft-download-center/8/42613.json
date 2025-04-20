@@ -1,0 +1,68 @@
+{
+    "error": "",
+    "downloadTitle": "Security Update for Internet Explorer 7 for Windows Server 2003 64-bit Itanium Edition (KB2964358)",
+    "downloadDescription": "This update addresses the vulnerability discussed in Microsoft Security Bulletin MS14-021. To find out if other security updates are available for you, see the Overview section of this page.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IE7-WindowsServer2003-KB2964358-ia64-ENU.exe",
+            "url": "https://download.microsoft.com/download/b/c/c/bcca347e-db10-4614-a208-7c610a1978ac/IE7-WindowsServer2003-KB2964358-ia64-ENU.exe",
+            "size": "6404344",
+            "version": "2964358",
+            "datePublished": "6/13/2024 12:21:57 PM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Security issues have been identified that could allow an attacker to compromise a computer running Microsoft Internet Explorer and gain control over it. You can help protect your computer by installing this update from Microsoft. After you install this item, you may have to restart your computer.\n\n<br /><br />\n<b>Other critical security updates are available:</b> To find the latest security releases for you visit <a href=\"http://go.microsoft.com/?LinkID=275655\">Windows Update</a> and click \"Scan for updates.\" And visit the <a href=\"http://go.microsoft.com/?LinkID=263669\">Protect your PC site</a> to learn how to have the latest security updates delivered directly to your computer.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/KB2964358",
+        "name": "KB2964358"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/MS14-021",
+        "name": "MS14-021"
+    },
+    "detailsSection_file_version": "2964358",
+    "detailsSection_file_name": [
+        "IE7-WindowsServer2003-KB2964358-ia64-ENU.exe"
+    ],
+    "detailsSection_file_size": [
+        "6.1 MB"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "This update applies to Internet Explorer 7 with the following operating system:<br /><ul><li>Windows Server 2003 SP2  Family Itanium 64-bit</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003 Service Pack 2 for Itanium-based Systems"
+    ],
+    "installInstructionSection": "<ol>\n  <li>Click the <b>Download</b> button on this page to start the download, or choose a different language from the drop-down list and click <b>Go</b>.</li>\n  <li>Do one of the following:</li>\n  <ul>\n    <li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\n    <li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\n  </ul>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "windows Server 2003 Home Page",
+            "url": "http://www.microsoft.com/windowsserver2003/default.mspx"
+        },
+        {
+            "title": "microsoft Security Bulletin MS14-021",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=397669"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42613",
+    "downloadPreload": true
+}

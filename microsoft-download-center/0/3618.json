@@ -1,0 +1,64 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics CRM 4.0 Management Pack for Microsoft Operations Manager 2005",
+    "downloadDescription": "The Microsoft Dynamic CRM 4.0 Management Pack enables you to administer the Microsoft Dynamics CRM 4.0 Server application in Microsoft Operations Manager (MOM) 2005.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Microsoft Dynamics CRM 4.0 Operations Manager 2005 MP.MSI",
+            "url": "https://download.microsoft.com/download/c/d/6/cd6e2e4d-fdff-4040-a734-98c16d5da33b/Microsoft Dynamics CRM 4.0 Operations Manager 2005 MP.MSI",
+            "size": "545792",
+            "version": "04.0.0000.0000",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The views, tasks, rules, and knowledge specific to Microsoft Dynamics CRM 4.0 that comprise this Management Pack provide the means for MOM users to centrally manage the server application, its component services, and the computers on which they run. The Microsoft Dynamics CRM 4.0 Management Pack also collects performance analysis and capacity planning data by tracking application performance and user load. <br/>\n<br/>\nBy managing these Microsoft Dynamics CRM components in MOM, the administrator can respond quickly to critical events and key performance indicators, and take action to prevent service outages, reduce the resolution time for alert conditions, and increase the overall availability and performance of the Microsoft Dynamics CRM system.<br/>\n<br/>\n<b> Feature Bullet Summary:</b><br/>\n<UL>\n<LI> Monitors the availability and health of the following component services: </LI>\n<UL>\n<LI> Microsoft Dynamics CRM Asynchronous Processing service </LI> \n<LI> World Wide Web Publishing</LI> \n<LI> Microsoft Dynamics CRM Deletion service</LI> \n<LI> Microsoft Dynamics CRM databases</LI> \n</UL>\n<LI> Monitors the availability and health of the following application components and functionality:</LI>\n<UL>\n<LI> Deletion of deleted records </LI>\n<LI>Operability of ISV plug-ins </LI>\n<LI> Web application requests processing, SOAP exceptions, and unexpected failures</LI>\n</UL>\n<LI> Detects brute-force attacks and denial of service attacks.</LI>\n<LI> Monitors the performance metrics of the following components:. </LI>\n<UL>\n<LI> Web application requests processing</LI>\n<LI> Database query processing</LI>\n</UL>\n<LI>Monitors the system for configuration-related failures. </LI>\n</UL><br/>\n<b>Release History</b>\n<UL>\n<LI> 6/5/2008 - Initial Release, version 04.0.0000.0000.</LI>\n</UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "04.0.0000.0000",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics CRM 4.0 Operations Manager 2005 MP.MSI"
+    ],
+    "detailsSection_file_size": [
+        "533.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI><b>Other Software</b>: </LI><br />\n<UL><LI> Microsoft Operations Manager 2005</LI><br />\n<LI>  Microsoft Dynamics CRM 4.0 Server</LI> </UL><br />\n</UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003"
+    ],
+    "installInstructionSection": "<b> To download the Management Pack</b>:<br/>\n<OL>\n<LI> Click the <b>Download</b> button at the top of the page. </LI><br />\n<LI> In the <b>File Download \u2013 Security Warning</b> dialog box, click <b>Run</b>. </LI><br />\n<LI> If the <b>Internet Explorer \u2013 Security Warning</b> dialog box appears, click <b>Run</b>. </LI><br />\n<LI> Follow the instructions to download the Management Pack. </LI><br />\n</OL>\n<b> To importing the Management Pack</b>:<br />\n<OL>\n<LI> On a MOM Management server, open the <b>Administrator Console</b>. </LI><br />\n<LI> Expand the <b>Microsoft Operations Manager (Default)</b> node. </LI><br />\n<LI> Right click on the <b>Management Packs</b> node, and then click <b>Import/Export Management Pack</b>. </LI><br />\n<LI> Follow the instructions to import the Management Pack. </LI><br />\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "microsoft Dynamics CRM Product Page",
+            "url": "http://crm.dynamics.com"
+        },
+        {
+            "title": "microsoft Dynamics CRM Resource Center",
+            "url": "http://rc.crm.dynamics.com/rc/regcont/en_us/opdefault.aspx"
+        },
+        {
+            "title": "microsoft Dynamics CRM Implementation Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=107128"
+        },
+        {
+            "title": "microsoft Operations Manager 2005 Product Page",
+            "url": "http://technet.microsoft.com/opsmgr/default.aspx?wt.svl=mom"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "3618",
+    "downloadPreload": true
+}

@@ -1,0 +1,78 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2016 Client Components SDK",
+    "downloadDescription": "The SharePoint Server 2016 Client Components SDK can be used to enable remote and local development with SharePoint Server 2016, 2019 and Subscription Edition.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "sharepointclientcomponents_16-4351-1000_x64_en-us.msi",
+            "url": "https://download.microsoft.com/download/f/a/3/fa3b7088-624a-49a6-826e-5ef2ce9095da/sharepointclientcomponents_16-4351-1000_x64_en-us.msi",
+            "size": "1859584",
+            "version": "16.0.4351.1000",
+            "datePublished": "7/15/2024 4:15:33 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "sharepointclientcomponents_16-4351-1000_x86_en-us.msi",
+            "url": "https://download.microsoft.com/download/f/a/3/fa3b7088-624a-49a6-826e-5ef2ce9095da/sharepointclientcomponents_16-4351-1000_x86_en-us.msi",
+            "size": "1859584",
+            "version": "16.0.4351.1000",
+            "datePublished": "7/15/2024 4:15:33 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\r\nThis easy-to-use, redistributable package of the Microsoft Silverlight and Microsoft .NET managed client object models in Microsoft SharePoint 2016 enables developers to reference the client object model.\u200b The package includes a comprehensive collection of client-side object model (CSOM) DLLs.\r\nThis SDK can also be used with SharePoint Server 2019 and Subscription Edition, but please note that the APIs of the features which have been removed from <A href=\"https://learn.microsoft.com/sharepoint/what-s-new/what-s-deprecated-or-removed-from-sharepoint-server-2019\">2019</A> and <A href=\"https://learn.microsoft.com/sharepoint/what-s-new/what-s-deprecated-or-removed-from-sharepoint-server-subscription-edition\">Subscription Edition</A> won't be available.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4351.1000",
+    "detailsSection_file_name": [
+        "sharepointclientcomponents_16-4351-1000_x64_en-us.msi",
+        "sharepointclientcomponents_16-4351-1000_x86_en-us.msi"
+    ],
+    "detailsSection_file_size": [
+        "1.8 MB",
+        "1.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Not Available. Migrated from DMS",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows 10",
+        "Windows 7 Service Pack 1",
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012",
+        "Windows 8.1",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "Download and run the file on this page. ",
+    "relatedResourcesSection": [
+        {
+            "title": "sharePoint Server 2016",
+            "url": "https://www.microsoft.com/download/details.aspx?id=51493"
+        },
+        {
+            "title": "sharePoint Server 2019",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=57462"
+        },
+        {
+            "title": "sharePoint Server Subscription Edition",
+            "url": "https://www.microsoft.com/en-us/download/details.aspx?id=103599"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51679",
+    "downloadPreload": true
+}

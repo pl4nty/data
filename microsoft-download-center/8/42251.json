@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "Update for Microsoft Visual Studio 2013 Update 1 (KB2932965)",
+    "downloadDescription": "This Microsoft Update fixes the issue in Visual Studio 2013 Update 1 that causes the Notifications hub to stop displaying notifications for updates to Visual Studio or installed Visual Studio extensions.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VS12-KB2932965.exe",
+            "url": "https://download.microsoft.com/download/8/a/6/8a65161f-f816-4632-a47b-c03e68db8d9d/VS12-KB2932965.exe",
+            "size": "1442080",
+            "version": "2013",
+            "datePublished": "7/15/2024 3:23:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Visual Studio 2013 Update 1 blocks notifications related to new releases or updates for Visual Studio and installed extensions. \r\nThis fix targets the group of users who have downloaded Update 1 and ensures that they have timely access to future update information in the Notifications hub. Users without Update 1 or users who install future updates will not be impacted. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2013",
+    "detailsSection_file_name": [
+        "VS12-KB2932965.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Visual Studio 2013 with Update 1 applied.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7 Service Pack 1",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 R2",
+        "Windows Small Business Server 2011 Standard"
+    ],
+    "installInstructionSection": "<OL>\n  <LI>Click the <b>Download</b> button on this page to start the download, or select a different language from the <B>Change language</B> drop-down list and click <B>Change</B>.</LI>\n  <LI>Do one of the following:</LI>\n  <UL>\n    <LI>To start the installation immediately, click <B>Run</B>.</LI>\n    <LI>To save the download to your computer for installation at a later time, click <B>Save</B>.</LI> <LI>To cancel the installation, click <B>Cancel</B>.</LI></UL>\n</OL>",
+    "relatedResourcesSection": [
+        {
+            "title": "knowledge Base Article 2932965",
+            "url": "http://go.microsoft.com/fwlink/?LinkID=392346"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "42251",
+    "downloadPreload": true
+}

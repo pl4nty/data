@@ -1,0 +1,385 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2013 UM Language Packs",
+    "downloadDescription": "These downloads contain pre-recorded prompts, grammar files, text to speech data, Automatic Speech Recognition (ASR) files, and Voice Mail Preview capabilities for a specific language that is supported by Exchange 2013 Unified Messaging (UM). Warning: This UM language pack must only be installed as an add-in to Exchange Server 2013 Unified Messaging on an Exchange 2013 Mailbox server.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.sv-SE.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.sv-SE.exe",
+            "size": "92149498",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.en-IN.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.en-IN.exe",
+            "size": "105815372",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.pt-BR.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.pt-BR.exe",
+            "size": "120511787",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.es-ES.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.es-ES.exe",
+            "size": "157691756",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.fr-CA.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.fr-CA.exe",
+            "size": "119756746",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.zh-CN.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.zh-CN.exe",
+            "size": "127662898",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.es-MX.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.es-MX.exe",
+            "size": "129360323",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.nb-NO.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.nb-NO.exe",
+            "size": "104035889",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.de-DE.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.de-DE.exe",
+            "size": "125076450",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.pt-PT.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.pt-PT.exe",
+            "size": "183649415",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.ca-ES.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.ca-ES.exe",
+            "size": "131122137",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.fi-FI.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.fi-FI.exe",
+            "size": "115944169",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.en-AU.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.en-AU.exe",
+            "size": "101166999",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.it-IT.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.it-IT.exe",
+            "size": "169478215",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.en-CA.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.en-CA.exe",
+            "size": "195887355",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.fr-FR.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.fr-FR.exe",
+            "size": "162066242",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.en-GB.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.en-GB.exe",
+            "size": "101011793",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.ru-RU.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.ru-RU.exe",
+            "size": "116009096",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.da-DK.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.da-DK.exe",
+            "size": "110048774",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.zh-TW.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.zh-TW.exe",
+            "size": "116802860",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.ko-KR.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.ko-KR.exe",
+            "size": "114551964",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.pl-PL.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.pl-PL.exe",
+            "size": "150909436",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.zh-HK.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.zh-HK.exe",
+            "size": "118480244",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.nl-NL.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.nl-NL.exe",
+            "size": "109364093",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "UMLanguagePack.en-US.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.en-US.exe",
+            "size": "234439764",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "UMLanguagePack.ja-JP.exe",
+            "url": "https://download.microsoft.com/download/1/0/d/10d3a7ee-f48f-41b4-86e3-e69222b98aa9/UMLanguagePack.ja-JP.exe",
+            "size": "103868879",
+            "version": "15.00.0516.032",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "ca-es",
+            "name": "Catalan"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "zh-hk",
+            "name": "Chinese (Hong Kong SAR)"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Unified Messaging (UM) language packs allow an Exchange Server 2013 Mailbox server running the Microsoft Exchange Unified Messaging service to speak additional languages to callers and recognize other languages when callers use ASR or when voice messages are transcribed. UM language packs contain:\r\n<ul>\r\n<li>Pre-recorded prompts, for example \"After the tone, please record your message. When you\u2019ve finished recording, hang up, or press the # key for more options.\" in the language of the UM language pack.</li>\r\n<li>Grammar files that are used by a Mailbox server to lookup the names of given users in the directory in the language of the UM language pack.</li>\r\n<li>Text to Speech (TTS) translation so that content (e-mail, calendar, contact information, etc.) can be read to callers in the language of the UM language pack.</li>\r\n<li>Support for Automatic Speech Recognition (ASR), which allows callers to interact with UM using the voice user interface (VUI) in the language of the UM language pack.</li>\r\n<li>Support for Voice Mail Preview which allows users to read the transcript of voice mail messages in a specific language from within a supported e-mail client such as Outlook or Outlook Web App.</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "15.00.0516.032",
+    "detailsSection_file_name": [
+        "UMLanguagePack.sv-SE.exe",
+        "UMLanguagePack.en-IN.exe",
+        "UMLanguagePack.pt-BR.exe",
+        "UMLanguagePack.es-ES.exe",
+        "UMLanguagePack.fr-CA.exe",
+        "UMLanguagePack.zh-CN.exe",
+        "UMLanguagePack.es-MX.exe",
+        "UMLanguagePack.nb-NO.exe",
+        "UMLanguagePack.de-DE.exe",
+        "UMLanguagePack.pt-PT.exe",
+        "UMLanguagePack.ca-ES.exe",
+        "UMLanguagePack.fi-FI.exe",
+        "UMLanguagePack.en-AU.exe",
+        "UMLanguagePack.it-IT.exe",
+        "UMLanguagePack.en-CA.exe",
+        "UMLanguagePack.fr-FR.exe",
+        "UMLanguagePack.en-GB.exe",
+        "UMLanguagePack.ru-RU.exe",
+        "UMLanguagePack.da-DK.exe",
+        "UMLanguagePack.zh-TW.exe",
+        "UMLanguagePack.ko-KR.exe",
+        "UMLanguagePack.pl-PL.exe",
+        "UMLanguagePack.zh-HK.exe",
+        "UMLanguagePack.nl-NL.exe",
+        "UMLanguagePack.en-US.exe",
+        "UMLanguagePack.ja-JP.exe"
+    ],
+    "detailsSection_file_size": [
+        "87.9 MB",
+        "100.9 MB",
+        "114.9 MB",
+        "150.4 MB",
+        "114.2 MB",
+        "121.7 MB",
+        "123.4 MB",
+        "99.2 MB",
+        "119.3 MB",
+        "175.1 MB",
+        "125.0 MB",
+        "110.6 MB",
+        "96.5 MB",
+        "161.6 MB",
+        "186.8 MB",
+        "154.6 MB",
+        "96.3 MB",
+        "110.6 MB",
+        "105.0 MB",
+        "111.4 MB",
+        "109.2 MB",
+        "143.9 MB",
+        "113.0 MB",
+        "104.3 MB",
+        "223.6 MB",
+        "99.1 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<b>Note:</b> Windows Server 2012 Core installation (non-Graphical User Interface) is not supported. You must install the server with the graphical user interface option.\r\n<li>Successfully install Exchange 2013 Enterprise Client Access and Mailbox servers in your organization. </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008 R2 Datacenter",
+        "Windows Server 2008 R2 Enterprise",
+        "Windows Server 2008 R2 Standard",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "Download the file and use Exchange Server 2013 setup.exe to install the UM language pack. \r\n<br/><br/>\r\n<UL>Example: Setup.exe /AddUmLanguagePack:<i>UmLanguagePackName</i> /s: d:\\<i>MyLocalFolder</i> /IAcceptExchangeServerLicenseTerms</UL>\r\n<br/>\r\n<b>Note:</b> If you don\u2019t specify the /IAcceptExchangeServerLicenseTerms parameter, you will see the following error: \"Welcome to Microsoft Exchange Server 2013 Unattended Setup. You need to accept the license terms to install Microsoft Exchange Server 2013. To read the license agreement, visit <a href=\"http://go.microsoft.com/fwlink/p/?LinkId=150127\">http://go.microsoft.com/fwlink/p/?LinkId=150127</a>. To accept the license agreement, add the /IAcceptExchangeServerLicenseTerms parameter to the command you're running. For more information, run setup /?\".\r\n<br/><br/>\r\nInstall each language pack on each Mailbox server, select the language on all dial plans to make it available to Outlook Voice Access users or select the language from the list of available languages on auto attendants when you want to make the language available to callers. \r\n<br/><br/>\r\n<b>Warning:</b> These UM language packs must only be installed on Mailbox servers as an add-in to 64-bit Exchange Server 2013 Unified Messaging.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "35368",
+    "downloadPreload": true
+}

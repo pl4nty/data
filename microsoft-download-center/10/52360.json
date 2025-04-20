@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "Generic Worker",
+    "downloadDescription": "The Generic Worker is a worker-role implementation for Windows Azure that eases deployment, instantiation, and remote invocation of existing .NET applications within Azure without changing their source code. Last published: August 4, 2010.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "GenericWorker_v0.9-RMC.zip",
+            "url": "https://download.microsoft.com/download/c/2/5/c25a8567-f60b-4d10-9479-7b9503b51303/GenericWorker_v0.9-RMC.zip",
+            "size": "2723027",
+            "version": "0.9",
+            "datePublished": "7/15/2024 4:03:35 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Generic Worker is a worker-role implementation for Windows Azure that eases deployment, instantiation, and remote invocation of existing .NET applications within Azure without changing their source code. The Generic Worker framework enables multiple .NET methods and dependency libraries to be registered as applications and dynamically downloaded into a virtual machine on demand when a request to run an application is received. The Generic Worker framework provides a command-line client, .NET APIs, and a Trident workflow activity to invoke any registered application, with support for automatic transfer of simple parameters and files between desktop and the virtual machine.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.9",
+    "detailsSection_file_name": [
+        "GenericWorker_v0.9-RMC.zip"
+    ],
+    "detailsSection_file_size": [
+        "2.6 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52360",
+    "downloadPreload": true
+}

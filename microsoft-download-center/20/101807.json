@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "AX 2012 R3 for Retail POS PAF-ECF 02.03 certification - Brazil",
+    "downloadDescription": "\u200bThis document describes the changes that have been made to Microsoft Dynamics AX 2012 R3 for Retail POS in the PAF-ECF operating mode for Brazil to meet the ne\u200bw ER 02.03 specification.\u200b",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "EPOSPAF-ECF0203Certification.pdf",
+            "url": "https://download.microsoft.com/download/0/4/d/04d0092d-ddc6-460a-b1fb-356f212dca07/EPOSPAF-ECF0203Certification.pdf",
+            "size": "793452",
+            "version": "NA.",
+            "datePublished": "6/15/2024 4:18:56 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "\u200bIn Brazil, PAF-ECF operations are regulated by the \u201cATO COTEPE/ICMS 9\u201d law. A new requirement version that is\r\nnamed ER 02.03has been published. To comply with these requirements, Microsoft Dynamics AX 2012 R3 for Retail\r\nPOS had to complete the certification process, and some changes were required before the product could be made\r\navailable to Brazilian market.\u200b",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NA.",
+    "detailsSection_file_name": [
+        "EPOSPAF-ECF0203Certification.pdf"
+    ],
+    "detailsSection_file_size": [
+        "774.9 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "NA.",
+    "systemRequirementsSection_supportedOS": [
+        "Undefined"
+    ],
+    "installInstructionSection": "NA.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101807",
+    "downloadPreload": true
+}

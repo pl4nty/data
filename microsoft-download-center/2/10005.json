@@ -1,0 +1,94 @@
+{
+    "error": "",
+    "downloadTitle": "IbarraReal font download for Windows Users",
+    "downloadDescription": "This download provides Windows users with the Ibero-American cultural font IbarraReal.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "IbarraReal-BoldItalic.otf",
+            "url": "https://download.microsoft.com/download/4/1/2/4125b63f-3cc5-4440-88fe-adb66059e135/Signed/IbarraReal-BoldItalic.otf",
+            "size": "52128",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IbarraReal-Italic.otf",
+            "url": "https://download.microsoft.com/download/4/1/2/4125b63f-3cc5-4440-88fe-adb66059e135/Signed/IbarraReal-Italic.otf",
+            "size": "50920",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Readme.txt",
+            "url": "https://download.microsoft.com/download/4/1/2/4125b63f-3cc5-4440-88fe-adb66059e135/Signed/Readme.txt",
+            "size": "1775",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "IbarraReal-Regular.otf",
+            "url": "https://download.microsoft.com/download/4/1/2/4125b63f-3cc5-4440-88fe-adb66059e135/Signed/IbarraReal-Regular.otf",
+            "size": "99776",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "IbarraReal-Bold.otf",
+            "url": "https://download.microsoft.com/download/4/1/2/4125b63f-3cc5-4440-88fe-adb66059e135/Signed/IbarraReal-Bold.otf",
+            "size": "44828",
+            "version": "1.5",
+            "datePublished": "7/15/2024 3:14:58 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        }
+    ],
+    "detailsSection": "IbarraReal is a public-domain font of Ibero-American character, created in 2005 as a revival of the types cast by Jer\u00f3nimo Gil for the Royal Spanish Academy's edition of Don Quixote, printed in Madrid by Joaqu\u00edn Ibarra in 1780. Its elegant design mixes tradition and modernity and is a genuine badge of Spanish culture.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.5",
+    "detailsSection_file_name": [
+        "IbarraReal-BoldItalic.otf",
+        "IbarraReal-Italic.otf",
+        "Readme.txt",
+        "IbarraReal-Regular.otf",
+        "IbarraReal-Bold.otf"
+    ],
+    "detailsSection_file_size": [
+        "50.9 KB",
+        "49.7 KB",
+        "1.7 KB",
+        "97.4 KB",
+        "43.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "Follow the steps found here to install the font on Windows: http://www.microsoft.com/typography/TrueTypeInstall.mspx",
+    "additionalInformationSection": "PLEASE NOTE: Microsoft Corporation (or based on where you live, one of its affiliates) licenses this supplement to you. You may use it with each validly licensed copy of Microsoft Windows XP, Windows Vista or Windows 7 software (for which this supplement is applicable) (the \u201csoftware\u201d). You may not use the supplement if you do not have a license for the software. The license terms for the software apply to your use of this supplement. Microsoft provides support services for the supplement as described at www.support.microsoft.com/common/international.aspx.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10005",
+    "downloadPreload": true
+}

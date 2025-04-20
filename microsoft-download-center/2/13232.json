@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Upgrading Visual Basic 6.0 Applications to Visual Basic .NET and Visual Basic 2005",
+    "downloadDescription": "This guide is to provide you with the information you need to upgrade an application from Visual Basic 6.0 to Visual Basic .NET.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VBMigDec2005.exe",
+            "url": "https://download.microsoft.com/download/6/a/c/6ac225b3-c038-49e7-8b07-74206c8eb010/VBMigDec2005.exe",
+            "size": "5018775",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This guide is intended for software technical decision makers, solution architects, and software developers who are involved in Visual Basic 6.0 application or component development. It helps you understand the issues and risks that go along with upgrading to Visual Basic .NET. It also provides steps for preparing your applications for a successful and cost-effective upgrade. Finally, it gives ideas and pointers about how advance your application after you successfully upgrade it to Visual Basic .NET.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "VBMigDec2005.exe"
+    ],
+    "detailsSection_file_size": [
+        "4.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\n\t<li>Microsoft Visual Basic 6.0</li><br />\n\t<li>Microsoft .NET Framework 1.1 (required)</li><br />\n\t<li>Microsoft Visual Studio .NET development system (highly recommended, but <br />\n\tnot required)</li><br />\n\t<li>Microsoft Excel 2003 (required to use the Visual Basic 6.0 Upgrade <br />\n\tAssessment Tool)</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows XP Professional Edition "
+    ],
+    "installInstructionSection": "Download and run the .exe file, extract the .zip file, and view the .pdf using Adobe Reader.",
+    "relatedResourcesSection": [
+        {
+            "title": "visual Basic Downloads",
+            "url": "http://msdn.microsoft.com/isapi/gomscom.asp?target=/downloads/results.aspx?sortCriteria=popularity&OSID=&productID=&CategoryID=&freetext=visual+basic&DisplayLang=en&DisplayEnglishAlso="
+        },
+        {
+            "title": ".Net Framework Communities",
+            "url": "http://msdn.microsoft.com/netframework/community/default.aspx"
+        },
+        {
+            "title": "visual Basic Developer Center",
+            "url": "http://msdn.microsoft.com/vbasic/default.aspx"
+        },
+        {
+            "title": "microsoft .NET Home Page",
+            "url": "http://www.microsoft.com/net/"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "13232",
+    "downloadPreload": true
+}

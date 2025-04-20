@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "DirectX 11 Technology Update",
+    "downloadDescription": "Presentation from Gamefest 2010",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "DirectX_11_Technology_Update_US.zip",
+            "url": "https://download.microsoft.com/download/5/f/f/5ff1d7f6-c5fa-4d89-91fe-0a259056f97e/DirectX_11_Technology_Update_US.zip",
+            "size": "45099266",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:10:41 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Direct3D 11 is out and ready for use by your game today to exploit the latest in video hardware features as well as current generation machines. This talk brings you up to speed with the API, offers tips on how to get your renderer up and running, presents key feature overviews, and shows how to deploy your application. Attending this talk is highly recommended if you are attending other DirectX 11 presentations.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "DirectX_11_Technology_Update_US.zip"
+    ],
+    "detailsSection_file_size": [
+        "43.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Powerpoint, WMA Audio",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7"
+    ],
+    "installInstructionSection": "Powerpoint presentation and WMA audio",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "17431",
+    "downloadPreload": true
+}

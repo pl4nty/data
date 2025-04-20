@@ -1,0 +1,119 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Management Pack for System Center 2012 R2 - Service Reporting",
+    "downloadDescription": "The Service Reporting Management Pack will help monitor, alert on the health of the Service Reporting service.",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Service Reporting Management Pack.msi",
+            "url": "https://download.microsoft.com/download/b/9/d/b9dc6d2b-e997-487c-9cf7-ef029c30da9c/Service Reporting Management Pack.msi",
+            "size": "712704",
+            "version": "7.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OpsMgr_MP_SerRept2012R2_Guide.docx",
+            "url": "https://download.microsoft.com/download/b/9/d/b9dc6d2b-e997-487c-9cf7-ef029c30da9c/OpsMgr_MP_SerRept2012R2_Guide.docx",
+            "size": "137475",
+            "version": "7.0",
+            "datePublished": "7/15/2024 4:26:12 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "The Service Reporting Management Pack will help monitor, alert on the health of the Service Reporting service. In the release of this management pack monitors the status of SSAS and SSIS jobs in the SQL database. It discovers and monitors in progress and completed jobs and creates alerts which capture the current state of the service reporting component.<br/>\r\n<br/>\r\n<b>Release History</b><br/>\r\n11/11/2013 - Original English release, version 7.0\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "7.0",
+    "detailsSection_file_name": [
+        "Service Reporting Management Pack.msi",
+        "OpsMgr_MP_SerRept2012R2_Guide.docx"
+    ],
+    "detailsSection_file_size": [
+        "696.0 KB",
+        "134.3 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b>Other Software:</b> System Center 2012 Operations Manager or later </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2008 R2 SP1",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<ol>\r\n<li> Download the management pack on a System Center 2012 R2 Operations Manager management server. </li>\r\n<li> Log on to the computer with an account that is a member of the Operations Manager Administrators role for the Operations Manager 2012 R2 management group.</li>\r\n<li> In the Operations console, click <b>Administration</b>.</li>\r\n</ol><br/>\r\n<b>Note: </b>When you run the Operations console on a computer that is not a management server, the <b>Connect To Server</b> dialog box appears. In the <b>Server name</b> text box, type the name of the management server that you want the Operations console to connect to. <br/>\r\n<br/>\r\n<ol>\r\n<li> Right-click the <b>Management Packs</b> node, and then click <b>Import Management Packs</b>. </li>\r\n<li> The<b> Import Management Packs </b>wizard opens. Click <b>Add</b>, and then click <b>Add from disk</b>.</li>\r\n<li> The <b>Select Management Packs</b> to import dialog box appears. If necessary, change to the directory that holds your management pack file. Click one or more management packs to import from that directory, and then click <b>Open</b>.</li>\r\n<li> On the <b>Select Management Packs</b> page, the management packs that you selected for import are listed. An icon next to each management pack in the list indicates the status of the selection, as follows:</li>\r\n<ul>\r\n<li> A green check mark indicates that the management pack can be imported. When all management packs in the list display this icon, click <b>Import</b>.</li>\r\n<li> A red error icon indicates that the management pack is dependent on one or more management packs that are not in the <b>Import </b>list and are not available in the catalog. To view the missing management packs, click <b>Error</b> in the <b>Status</b> column. To remove the management pack with the error from the <b>Import</b> list, right-click the management pack, and then click <b>Remove</b>.</li>\r\n</ul>\r\n<li> More information on importing Management Packs into Operations Manager is available here: <a href=\"http://technet.microsoft.com/en-us/library/hh212691.aspx\">http://technet.microsoft.com/en-us/library/hh212691.aspx</a> </li>\r\n</ol>\r\n<b>Note:</b><br/>\r\nWhen you click <b> Import</b>, any management packs in the<b> Import</b> list that display the Error icon are not imported. <br/>\r\n<ul>\r\nThe <b>Import Management Packs</b> page appears and shows the progress for each management pack. Each management pack is downloaded to a temporary directory, imported to Operations Manager, and then deleted from the temporary directory. If there is a problem at any stage of the import process, select the management pack in the list to view the status details. Click <b>Close</b>. \r\n</ul>\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "41135",
+    "downloadPreload": true
+}

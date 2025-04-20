@@ -1,0 +1,50 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics NAV 2017 Licensing Guide",
+    "downloadDescription": "Licensing Guide for Microsoft Dynamics NAV 2017",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "MicrosoftDynamicsNAV2017_LicensingGuide.pdf",
+            "url": "https://download.microsoft.com/download/9/8/7/98728214-688d-40a0-a1d7-a3a005af5144/MicrosoftDynamicsNAV2017_LicensingGuide.pdf",
+            "size": "1519915",
+            "version": "NAV 2017",
+            "datePublished": "7/15/2024 4:34:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Licensing Guide for Microsoft Dynamics NAV 2017",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "NAV 2017",
+    "detailsSection_file_name": [
+        "MicrosoftDynamicsNAV2017_LicensingGuide.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "none",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "read",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "54248",
+    "downloadPreload": true
+}

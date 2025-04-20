@@ -1,0 +1,60 @@
+{
+    "error": "",
+    "downloadTitle": "Authentication flow in Duet Enterprise for Microsoft SharePoint and SAP Server 2.0",
+    "downloadDescription": "This model demonstrates the authentication flow of an end user of a Duet Enterprise 2.0-enabled site that pulls data from SAP over an OData connection.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Duet-Enterprise-2-authentication-flow.vsd",
+            "url": "https://download.microsoft.com/download/7/8/3/783c427f-44ad-44e3-9276-c90092866887/Duet-Enterprise-2-authentication-flow.vsd",
+            "size": "210944",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Duet-Enterprise-2-authentication-flow.pdf",
+            "url": "https://download.microsoft.com/download/7/8/3/783c427f-44ad-44e3-9276-c90092866887/Duet-Enterprise-2-authentication-flow.pdf",
+            "size": "216173",
+            "version": "1",
+            "datePublished": "7/15/2024 3:30:17 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This model demonstrates the authentication flow of an end user of a Duet Enterprise 2.0-enabled site that pulls data from SAP over an OData connection.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "Duet-Enterprise-2-authentication-flow.vsd",
+        "Duet-Enterprise-2-authentication-flow.pdf"
+    ],
+    "detailsSection_file_size": [
+        "206.0 KB",
+        "211.1 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Visio 2010, Adobe Portable Document File Reader",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "<OL><LI>Click the <B>Download</B> button in the upper right corner of this page to start the download.</LI><LI> \r\n\r\nClick <B>Save</B> or <B>Save this program to disk</B>. </LI><LI>Find the file on your hard disk and double-click it to \r\n\r\nopen it. </LI></OL> \r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "34977",
+    "downloadPreload": true
+}

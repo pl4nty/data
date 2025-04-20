@@ -1,0 +1,67 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft RMS SDK 3.0 for OS X",
+    "downloadDescription": "Microsoft RMS SDK 3.0  for OS X is a simple SDK for RMS for supporting a lightweight developer experience in creating rights-enabled device applications. By downloading the software, you agree to the license terms provided for the software. If you do not agree to the license terms, do not download the software.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "OSX Microsoft RMS SDK v3.0.zip",
+            "url": "https://download.microsoft.com/download/4/9/8/498f0e29-f5a1-4667-8478-c07792cb8661/OSX Microsoft RMS SDK v3.0.zip",
+            "size": "557267",
+            "version": "3.0",
+            "datePublished": "6/13/2024 11:45:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "EULA.rtf",
+            "url": "https://download.microsoft.com/download/4/9/8/498f0e29-f5a1-4667-8478-c07792cb8661/EULA.rtf",
+            "size": "169223",
+            "version": "3.0",
+            "datePublished": "6/13/2024 11:45:09 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "OSX Microsoft RMS SDK v3.0.zip.md5.txt",
+            "url": "https://download.microsoft.com/download/4/9/8/498f0e29-f5a1-4667-8478-c07792cb8661/OSX Microsoft RMS SDK v3.0.zip.md5.txt",
+            "size": "66",
+            "version": "3.0",
+            "datePublished": "6/13/2024 11:45:09 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Microsoft RMS SDK 3.0  for OS X is a simple SDK for RMS for supporting a lightweight developer experience in creating rights-enabled device applications.\r\n\r\nMicrosoft RMS SDK 3.0 provides the following top features:\r\n\u2022 Integration with Windows Azure Active Directory Rights Management (AADRM)\r\n\u2022 Generic Protection support built right into the SDK APIs\r\n\u2022 Provides best in class protection and consumption UI\r\n \r\nBy downloading the software, you agree to the license terms provided for the software. If you do not agree to the license terms, do not download the software.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "3.0",
+    "detailsSection_file_name": [
+        "OSX Microsoft RMS SDK v3.0.zip",
+        "EULA.rtf",
+        "OSX Microsoft RMS SDK v3.0.zip.md5.txt"
+    ],
+    "detailsSection_file_size": [
+        "544.2 KB",
+        "165.3 KB",
+        "66 bytes"
+    ],
+    "detailsSection_file_date": "6/13/2024",
+    "systemRequirementsSection": "Supported Operating System - Mac OS X 10.7 or above.\r\n\r\nXcode 4.5. \r\nIf you are new to OS X development, you will need the Xcode development tool set. It is available through the Mac App Store.\r\n\r\n\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "Getting started guide is available here: http://msdn.microsoft.com/en-us/library/windows/desktop/dn223672(v=vs.85).aspx",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "40849",
+    "downloadPreload": true
+}

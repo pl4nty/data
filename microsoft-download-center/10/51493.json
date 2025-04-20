@@ -1,0 +1,150 @@
+{
+    "error": "",
+    "downloadTitle": "SharePoint Server 2016",
+    "downloadDescription": "SharePoint Server 2016 has been designed, developed, and tested with the Microsoft Software as a Service (SaaS) strategy at its core.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "officeserver.img",
+            "url": "https://download.microsoft.com/download/0/0/4/004ee264-7043-45bf-99e3-3f74ecae13e5/officeserver.img",
+            "size": "3227725824",
+            "version": "16.0.4351.1000",
+            "datePublished": "7/15/2024 4:49:55 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ar-sa",
+            "name": "Arabic"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "nl-nl",
+            "name": "Dutch"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "da-dk",
+            "name": "Danish"
+        },
+        {
+            "cultureCode": "nb-no",
+            "name": "Norwegian (Bokm\u00e5l)"
+        },
+        {
+            "cultureCode": "th-th",
+            "name": "Thai"
+        },
+        {
+            "cultureCode": "el-gr",
+            "name": "Greek"
+        },
+        {
+            "cultureCode": "hu-hu",
+            "name": "Hungarian"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "pl-pl",
+            "name": "Polish"
+        },
+        {
+            "cultureCode": "tr-tr",
+            "name": "Turkish"
+        },
+        {
+            "cultureCode": "cs-cz",
+            "name": "Czech"
+        }
+    ],
+    "detailsSection": "SharePoint Server 2016 has been designed, developed, and tested with the Microsoft Software as a Service (SaaS) strategy at its core. Drawing extensively from that experience, SharePoint Server 2016 is designed to help you achieve new levels of reliability and performance and empower users while meeting their demands for greater business mobility.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0.4351.1000",
+    "detailsSection_file_name": [
+        "officeserver.img"
+    ],
+    "detailsSection_file_size": [
+        "3.0 GB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<a href=\"http://go.microsoft.com/fwlink/?LinkID=733679\" target=\"_blank\">Hardware and software requirements for SharePoint Server 2016</a><br />\r\n<a href=\"http://go.microsoft.com/fwlink/?LinkID=761495\" target=\"_blank\">Software requirements for Project Server 2016</a>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019"
+    ],
+    "installInstructionSection": "<b>To start the download:</b><br />\r\n<ol>\r\n<li>Select the desired installation language from <b>Select Language.</b></li>\r\n<li>Click the <b>Download</b> button.<br /></li>\r\n<li>Click <b>Save</b> to copy the disc image file to your computer.<br /><br /></li>\r\n</ol>\r\n\r\n<b>To install SharePoint Server 2016:</b><br />\r\n<ol>\r\n<li>Double click the disc image file to mount it as a drive on your computer.</li>\r\n<li>Navigate to the mounted drive.</li>\r\n<li>Run <b>splash.hta</b> to launch the SharePoint Server 2016 Start page.</li>\r\n<li>Click <b>Install software prerequisites</b> to launch the Microsoft SharePoint 2016 Products Preparation Tool.</li>\r\n<li>Follow the instructions in the tool to complete the installation of the software prerequisites.</li>\r\n<li>On the <b>SharePoint Server 2016 Start</b> page, click <b>Install SharePoint Server</b> to launch Microsoft SharePoint Server 2016 Setup.</li>\r\n<li>When prompted, provide a product key.  You can use one of the following trial product keys.  The trial period is 180 days.  You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate product key in Central Administration.</li>\r\n</ol>\r\n<ul style=\"margin-left: 20px\">\r\n<li>Enterprise trial product key: NQGJR-63HC8-XCRQH-MYVCH-3J3QR</li>\r\n<li>Standard trial product key: RTNGH-MQRV6-M3BWQ-DB748-VH7DM</li>\r\n<li>Note: You must use an Enterprise product key for SharePoint to enable Project Server 2016.</li>\r\n</ul>\r\nReview <a href=\"http://go.microsoft.com/fwlink/?LinkID=733641\" target=\"_blank\">Install SharePoint Server 2016</a> for detailed setup instructions.<br /><br />\r\n<b>To enable Project Server 2016:</b><br />\r\n<ol>\r\n<li>Install SharePoint Server 2016 using an Enterprise product key.</li>\r\n<li>Create a SharePoint Server 2016 farm.</li>\r\n<li>Launch the SharePoint 2016 Management Shell.</li>\r\n<li>Execute the following command in the SharePoint 2016 Management shell: Enable-ProjectServerLicense -Key &lt;Project Server License Key&gt;</li>\r\n</ol>\r\n<ul style=\"margin-left: 20px\">\r\n<li>You can use the following trial license key.  The trial period is 180 days.  You can convert to a licensed installation at any time during the trial or after the trial has expired by entering the appropriate license key with this command.</li>\r\n<li>Project Server trial license key: Y2WC2-K7NFX-KWCVC-T4Q8P-4RG9W</li>\r\n<li>Review <a href=\"http://go.microsoft.com/fwlink/?LinkID=761497\" target=\"_blank\">Enable-ProjectServerLicense</a> for detailed setup instructions.</li>\r\n</ul>\r\n\r\nReview <a href=\"http://go.microsoft.com/fwlink/?LinkID=761498\" target=\"_blank\">Deploy Project Server</a> for detailed setup instructions.\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "language Packs for SharePoint Server 2016",
+            "url": "https://www.microsoft.com/download/details.aspx?id=51492"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "51493",
+    "downloadPreload": true
+}

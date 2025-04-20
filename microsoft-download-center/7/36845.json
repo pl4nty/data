@@ -1,0 +1,51 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Dynamics AX 2012 R2 White Paper: Resource Scheduling for Projects",
+    "downloadDescription": "This white paper describes new and improved capabilities for scheduling workers in the Project management and accounting module in Microsoft Dynamics AX 2012 R2.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Dynamics AX 2012 R2 Resource Scheduling for Projects.pdf",
+            "url": "https://download.microsoft.com/download/c/f/c/cfcec91b-f80e-4d5d-9220-8e6bea67719a/Microsoft Dynamics AX 2012 R2 Resource Scheduling for Projects.pdf",
+            "size": "2408552",
+            "version": "2012",
+            "datePublished": "7/15/2024 3:31:23 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Workers are the most important asset in a service organization, and finding workers with the required competencies to satisfy project requirements is crucial to the success of a service organization. This white paper describes new and improved capabilities for scheduling workers in the Project management and accounting module in Microsoft Dynamics AX 2012 R2. It was created for partners, customers, decision makers, enterprise users, and functional users who need information about the resource scheduling capabilities in Microsoft Dynamics AX 2012 R2. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2012",
+    "detailsSection_file_name": [
+        "Microsoft Dynamics AX 2012 R2 Resource Scheduling for Projects.pdf"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>To view the PDF file, you will need a PDF reader, such as the free Adobe Reader. </LI>\n<LI>For information about the system requirements for Microsoft Dynamics AX 2012, see <a href=\"http://go.microsoft.com/fwlink/?LinkId=213071\">System requirements for Microsoft Dynamics AX 2012</a>.</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Server 2012"
+    ],
+    "installInstructionSection": "<OL><LI>Click <b>Download</b> to download the document in PDF file format.</LI>\n<LI>Save the file to your computer.</LI></OL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "36845",
+    "downloadPreload": true
+}

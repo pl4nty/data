@@ -1,0 +1,49 @@
+{
+    "error": "",
+    "downloadTitle": "SIDH Library",
+    "downloadDescription": "SIDH is a fast and portable software library that implements a new suite of algorithms for Supersingular Isogeny Diffie-Hellman (SIDH) key exchange. Last published: December 1, 2016.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SIDH_v1.1.zip",
+            "url": "https://download.microsoft.com/download/7/b/9/7b962bac-18f9-4151-a57e-2d3499b6ad25/SIDH_v1.1.zip",
+            "size": "80505",
+            "version": "1.1",
+            "datePublished": "7/15/2024 4:10:20 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "SIDH is a fast and portable software library that implements a new suite of algorithms for Supersingular Isogeny Diffie-Hellman (SIDH) key exchange. The chosen parameters aim to provide 128 bits of security against attackers running a large-scale quantum computer, and 192 bits of security against classical algorithms. SIDH has the option of a hybrid key exchange that combines supersingular isogeny Diffie-Hellman with a high-security classical elliptic curve Diffie-Hellman key exchange at a small overhead.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.1",
+    "detailsSection_file_name": [
+        "SIDH_v1.1.zip"
+    ],
+    "detailsSection_file_size": [
+        "78.6 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<UL><LI>Windows 7, Windows 8, or Windows 10</LI></UL>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 7",
+        "Windows 8"
+    ],
+    "installInstructionSection": "<UL><LI>Click <B>Download</B> and follow the instructions.</LI></UL>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "52438",
+    "downloadPreload": true
+}

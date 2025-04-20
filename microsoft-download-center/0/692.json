@@ -1,0 +1,95 @@
+{
+    "error": "",
+    "downloadTitle": "Exchange Server 2010 Monitoring Management Pack ",
+    "downloadDescription": "This management pack includes scripts and rules to effectively monitor Exchange 2010 and report on performance, availability, and reliability of its server roles.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Exchange2010ManagementPackForOpsMgr2007-x86.msi",
+            "url": "https://download.microsoft.com/download/7/4/e/74e78016-4e7d-4ff1-90e9-29a718dfb0d2/Exchange2010ManagementPackForOpsMgr2007-x86.msi",
+            "size": "6524928",
+            "version": "14.3.210.2",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Exchange2010ManagementPackForOpsMgr2007-x64.msi",
+            "url": "https://download.microsoft.com/download/7/4/e/74e78016-4e7d-4ff1-90e9-29a718dfb0d2/Exchange2010ManagementPackForOpsMgr2007-x64.msi",
+            "size": "6524928",
+            "version": "14.3.210.2",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange2010PowershellFix.msi",
+            "url": "https://download.microsoft.com/download/7/4/e/74e78016-4e7d-4ff1-90e9-29a718dfb0d2/Exchange2010PowershellFix.msi",
+            "size": "1851392",
+            "version": "14.3.210.2",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Exchange Server 2010 Management Pack Guide.doc",
+            "url": "https://download.microsoft.com/download/7/4/e/74e78016-4e7d-4ff1-90e9-29a718dfb0d2/Exchange Server 2010 Management Pack Guide.doc",
+            "size": "1564160",
+            "version": "14.3.210.2",
+            "datePublished": "7/15/2024 5:03:42 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Microsoft Exchange Server 2010 monitoring management pack is designed to be used for monitoring Exchange 2010 events, collecting Exchange component-specific performance counters in one central location, and for raising alerts for operator intervention as necessary. By detecting, sending alerts, and automatically correlating critical events, this management pack helps indicate, correct, and prevent possible service outages or configuration problems, allowing you to proactively manage Exchange servers and identify issues before they become critical. The management pack monitors and provides alerts for automatic notification of events indicating service outages, performance degradation, and health monitoring. <br/>\r\n<br/>\r\n<b>Feature Summary</b>\r\nThe Exchange Server 2010 Monitoring Management Pack includes rules and scripts to monitor and report on performance, availability, and reliability of all Exchange 2010 server roles including. <br/>\r\n<ul>\r\n<li> Mailbox Server Role </li>\r\n<li> Client Access Server Role  </li>\r\n<li> Hub Transport Server Role  </li>\r\n<li> Edge Transport Server Role  </li>\r\n<li> Unified Messaging Server Role </li>\r\n</ul>\r\n<b>Release History </b>\r\n<ul>\r\n<li> 12/3/2014 - Update release, version 14.03.0210.002</li>\r\n<li> 8/7/2012 - Update release, version 14.03.0038.003</li>\r\n<li> 6/15/2012 - Updated release, version 14.3.38.2  </li>\r\n<li> 4/6/2011 - Updated release, version 14.02.0071.0 </li>\r\n<li> 11/9/2009 - Original release of the English version and language packs, version 14.0.650.7. </li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "14.3.210.2",
+    "detailsSection_file_name": [
+        "Exchange2010ManagementPackForOpsMgr2007-x86.msi",
+        "Exchange2010ManagementPackForOpsMgr2007-x64.msi",
+        "Exchange2010PowershellFix.msi",
+        "Exchange Server 2010 Management Pack Guide.doc"
+    ],
+    "detailsSection_file_size": [
+        "6.2 MB",
+        "6.2 MB",
+        "1.8 MB",
+        "1.5 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul>\r\n<li><b> Other Software: </b>System Center Operations Manager 2007 or later. </li>\r\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2008",
+        "Windows Server 2003 x64 editions"
+    ],
+    "installInstructionSection": "To use the English version of the Exchange Server 2010 Monitoring Management Pack, you only need to download and install the English (EN) version of the Exchange Server 2010 SP1 Management Pack. The English version of the management pack includes the Exchange Server 2010  SP1 Management Pack application and the required files to use the management pack in English. <br/>\r\n<br/>\r\nIf you want to use a localized version of the management pack, you must first download and install the English version of the management pack. Then, you must download and install the language pack for your respective language. The English version of the management pack includes the Exchange Server 2010 Service Pack 1 Management Pack application that is a prerequisite for all localized versions of the management pack. <br/> \r\n<br/>\r\nFor detailed information about installing and using this management pack, download and read the Exchange Server 2010 Service Pack 1 Management Pack Guide. That guide is available for download on this Web page. <br/><br/>",
+    "relatedResourcesSection": [
+        {
+            "title": "exchange Server TechCenter",
+            "url": "http://go.microsoft.com/fwlink/?linkid=34165"
+        },
+        {
+            "title": "exchange Server Community",
+            "url": "http://go.microsoft.com/fwlink/?linkid=14927"
+        },
+        {
+            "title": "exchange Server 2010 Management Pack Guide",
+            "url": "http://go.microsoft.com/fwlink/?LinkId=167258"
+        },
+        {
+            "title": "system Center Operations Manager 2007 Product Documentation",
+            "url": "http://go.microsoft.com/fwlink/?linkid=85414"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "692",
+    "downloadPreload": true
+}

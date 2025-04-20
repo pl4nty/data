@@ -1,0 +1,71 @@
+{
+    "error": "",
+    "downloadTitle": "HPC Pack 2019 Client Utilities Redistributable Package",
+    "downloadDescription": "A stand-alone, and redistributable, installer for the Microsoft HPC Pack 2019 Client Utilities",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "HpcClient_x86.msi",
+            "url": "https://download.microsoft.com/download/a/e/5/ae594d28-6991-434a-9e7b-0c38ac4d19f7/HpcClient_x86.msi",
+            "size": "25489467",
+            "version": "6.0.7205.0",
+            "datePublished": "7/15/2024 4:24:08 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "HpcClient_x64.msi",
+            "url": "https://download.microsoft.com/download/a/e/5/ae594d28-6991-434a-9e7b-0c38ac4d19f7/HpcClient_x64.msi",
+            "size": "25574849",
+            "version": "6.0.7205.0",
+            "datePublished": "7/15/2024 4:24:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This package installs a subset of the HPC Pack 2019 client utilities that can be installed with the HPC Pack 2019 release. <br/>\r\n <br/>\r\nYou can now develop applications that interact with an HPC Pack 2019-based cluster without requiring your users to already have the HPC Pack client utilities installed on their computers. You can also use the packages to quickly deploy the client utilities to workstations at your organization through your standard application deployment process. <br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "6.0.7205.0",
+    "detailsSection_file_name": [
+        "HpcClient_x86.msi",
+        "HpcClient_x64.msi"
+    ],
+    "detailsSection_file_size": [
+        "24.3 MB",
+        "24.4 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "A computer running one of the supported operating systems: Windows Server 2019, Windows Server 2016, Windows Server 2012 R2, Windows Server 2012, Windows 10, Windows 8.1\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2019",
+        "Windows Server 2016",
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "To install on a workstation: Run either the HpcClient_x64.msi or HpcClient_x86.msi as appropriate to your hardware platform. <br/>\r\nFor redistribution: You must include the entire installer on your installation media. Your setup program can run the MSI to install the client utilities, but you may not bundle any of the individual files in your own installer. Refer to the license agreement for additional information.<br/>\r\n<B>Important:</B> This package installs HPC Job Manager and command-line commands, but does not enable the HPC PowerShell job submission cmdlets for use by default. If you want to run the HPC PowerShell job submission cmdlets on a client computer, see <a href=\"http://technet.microsoft.com/library/dn595130.aspx\">Enable HPC PowerShell with the Client Redistributable Package</a>.\r\n\r\n",
+    "relatedResourcesSection": [
+        {
+            "title": "hpc Pack Documentations",
+            "url": "https://aka.ms/hpcpack"
+        },
+        {
+            "title": "hpc Pack GitHub",
+            "url": "https://aka.ms/hpcgit"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "101361",
+    "downloadPreload": true
+}

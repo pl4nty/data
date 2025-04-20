@@ -1,0 +1,57 @@
+{
+    "error": "",
+    "downloadTitle": "FSLogix 2210 hotfix 2",
+    "downloadDescription": "User Profile Management, Application Control and Masking",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "FSLogix_Apps_2.9.8612.60056.zip",
+            "url": "https://download.microsoft.com/download/9/7/b/97b4c64b-ffc9-447c-b39e-3afba4672ee8/FSLogix_Apps_2.9.8612.60056.zip",
+            "size": "181367457",
+            "version": "2.9.8612.60056",
+            "datePublished": "7/15/2024 5:00:31 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "FSLogix enhances and enables user profiles in Windows remote computing environments. FSLogix may also be used to create more portable computing sessions when using physical devices.\r\n<br></br>\r\n<b>FSLogix includes:</b>\r\n<br></br>\r\n<ul>\r\n<li>Profile Container</li>\r\n<li>Office Container</li>\r\n<li>Application Masking</li>\r\n<li>Java Version Control</li>\r\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.9.8612.60056",
+    "detailsSection_file_name": [
+        "FSLogix_Apps_2.9.8612.60056.zip"
+    ],
+    "detailsSection_file_size": [
+        "173.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "None",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2012 R2",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022"
+    ],
+    "installInstructionSection": "<b>FSLogix</b>\r\n<ol>\r\n<li>From the FSLogix download file, select 32 bit or 64 bit depending on your environment</li>\r\n<li>Run FSLogixAppSetup.exe</li>\r\n<li>Click Options to specify an installation folder</li>\r\n</ol>\r\n<br></br>\r\n<b>Application Masking Rule Editor</b>\r\n<ol>\r\n<li>From the FSLogix download file, select 32 bit or 64 bit depending on your environment</li>\r\n<li>Run FSLogixAppsRuleEditorSetup.exe</li>\r\n<li>Click Options to specify an installation folder</li>\r\n<li>Accept the license agreement and click install</li>\r\n</ol>\r\n<br></br>\r\n<b>Java Version Control Rule Editor</b>\r\n<ol>\r\n<li>From the FSLogix download file, select 32 bit or 64 bit depending on your environment</li>\r\n<li>Run FSLogixAppsJavaRuleEditorSetup.exe</li>\r\n<li>Click Options to specify an installation folder</li>\r\n<li>Accept the license agreement and click install</li>\r\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "release Notes",
+            "url": "https://learn.microsoft.com/en-us/fslogix/overview-release-notes"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "105537",
+    "downloadPreload": true
+}

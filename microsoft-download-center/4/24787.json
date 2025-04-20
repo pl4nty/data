@@ -1,0 +1,66 @@
+{
+    "error": "",
+    "downloadTitle": "Windows Vista Privacy Statement",
+    "downloadDescription": "Microsoft is committed to protecting your privacy, while delivering software that brings you the performance, power and convenience you desire in your personal computing.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows Vista Privacy Statement.rtf",
+            "url": "https://download.microsoft.com/download/7/9/4/7945a146-fc32-48c2-8c14-83b1b36696e5/Windows Vista Privacy Statement.rtf",
+            "size": "423908",
+            "version": "RTM",
+            "datePublished": "7/15/2024 3:07:49 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Windows Vista Privacy Statement (available online at <a href=\"http://www.microsoft.com/windowsvista/privacy/vistartm_full.mspx\">http://www.microsoft.com/windowsvista/privacy/vistartm_full.mspx</a>) along with the included supplemental information provides details about many of the data collection and use practices of Windows Vista, and Microsoft services that you may use.\n\n<ul><br />\n<li><b>Privacy Highlights</b> - This notice provides highlights of the full Windows Vista Privacy Statement and explains at a high level some of the data collection and use practices of Windows Vista.</li><br />\n<li><b>Privacy Statement</b> - This disclosure focuses on features that communicate with the Internet and is not intended to be an exhaustive list. It does not apply to other Microsoft sites, services and products.</li><br />\n<li><b>Privacy Supplement</b> - This section is a supplement to the Windows Vista Privacy Statement. In order to understand the data collection and use practices relevant for a particular feature, site, or service, you should read the Windows Vista Privacy Statement and any applicable supplement.</li><br />\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "RTM",
+    "detailsSection_file_name": [
+        "Windows Vista Privacy Statement.rtf"
+    ],
+    "detailsSection_file_size": [
+        "414.0 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><li>Microsoft Word or <a href=\"http://www.microsoft.com/downloads/details.aspx?FamilyID=95e24c87-8732-48d5-8689-ab826e7b8fdf&DisplayLang=en\">Microsoft Word Viewer 2003</a> (available as a free download) can be used to view Word documents.</li></ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Vista",
+        "Windows Vista Business",
+        "Windows Vista Enterprise"
+    ],
+    "installInstructionSection": "<ol>\n<li>Click the <b>Download</b> button on this page to start the download.</li> \n<li>Do one of the following:<br />\n<ul>\n<li>To start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.</li>\n<li>To copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.</li>\n</ul>\n</li>\n</ol>",
+    "relatedResourcesSection": [
+        {
+            "title": "privacy Guidelines for Developing Software Products and Services",
+            "url": "http://www.microsoft.com/downloads/details.aspx?FamilyId=C48CF80F-6E87-48F5-83EC-A18D1AD2FC1F&displaylang=en"
+        },
+        {
+            "title": "online Safety Resources",
+            "url": "http://www.microsoft.com/athome/security/default.mspx"
+        },
+        {
+            "title": "using Windows Vista or Using Windows XP with Service Pack 2: Controlling Communication with the Internet",
+            "url": "http://www.microsoft.com/downloads/info.aspx?na=22&p=29&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=&u=%2fdownloads%2fdetails.aspx%3fFamilyID%3de6a35441-918f-4022-b973-e7fc0d1d2917%26DisplayLang%3den"
+        },
+        {
+            "title": "online Windows Vista Privacy Statement",
+            "url": "http://www.microsoft.com/windowsvista/privacy/vistartm.mspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "24787",
+    "downloadPreload": true
+}

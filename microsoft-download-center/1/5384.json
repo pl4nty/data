@@ -1,0 +1,56 @@
+{
+    "error": "",
+    "downloadTitle": ".NET Rocks! - Catching up with Charles Petzold",
+    "downloadDescription": "Carl and guest co-host Mark Dunn talk with Charles Petzold about the life of the father of modern computing, Alan Turing. Charles talks about his book, \"The Annotated Turing: A Guided Tour through Alan Turing's Historic Paper on Computability and the Turing Machine.\", and also discusses writing books, blogs, and online media.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "20080911CPetzold.zip",
+            "url": "https://download.microsoft.com/download/a/b/9/ab96edd2-0710-4061-ac83-6ea363dcda56/20080911CPetzold.zip",
+            "size": "53461285",
+            "version": "1.0",
+            "datePublished": "5/15/2024 3:08:03 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Charles Petzold is best known for writing books about Windows programming for the past 20 years. The first one was \"Programming Windows\" and the most recent is \"3D Programming for Windows.\" He also occasionally writes more unusual books. In 1999 Microsoft Press published Petzold's book \"Code: The Hidden Language of Computer Hardware and Software\" -- a unique exploration of digital technologies beginning with Morse code and the telegraph. Just out is a sequel-of-sorts to \"Code\" published by Wiley and entitled \"The Annotated Turing: A Guided Tour through Alan Turing's Historic Paper on Computability and the Turing Machine.\"",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "20080911CPetzold.zip"
+    ],
+    "detailsSection_file_size": [
+        "51.0 MB"
+    ],
+    "detailsSection_file_date": "5/15/2024",
+    "systemRequirementsSection": "Presentations are played using the Microsoft Windows Media Player.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 2000",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "- Select \"Save this Program to Disk\" to copy the download to your machine for installation at a later time.<br />\n- Once the file has been downloaded, execute it in order to extract the media file.",
+    "relatedResourcesSection": [
+        {
+            "title": ".NET Rocks! site",
+            "url": "http://msdn.microsoft.com/dotnetrocks"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "5384",
+    "downloadPreload": true
+}

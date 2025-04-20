@@ -1,0 +1,77 @@
+{
+    "error": "",
+    "downloadTitle": "The Microsoft Approach to Compliance in the Cloud",
+    "downloadDescription": "This paper discusses how the Microsoft approach to cloud compliance enables it to meet important criteria as a cloud service provider committed to delivering trustworthy cloud services",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "The-Microsoft-Approach-to-Compliance-in-the-Cloud.pdf",
+            "url": "https://download.microsoft.com/download/5/9/1/591c94f0-1c43-4a26-80e2-fcc232795454/The-Microsoft-Approach-to-Compliance-in-the-Cloud.pdf",
+            "size": "586994",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:53:06 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        }
+    ],
+    "detailsSection": "Microsoft recognizes that trust is necessary for organizations and individuals to fully embrace and benefit from cloud services. Microsoft is committed to providing customers the compliance information they need in order to have confidence in Microsoft as their preferred cloud service provider (CSP). \r\n\r\nMicrosoft\u2019s cloud compliance practices can be divided into three main areas:\r\n \u00b7 Building the right compliance foundation.\r\n \u00b7 Helping customers meet specific compliance needs when possible.\r\n \u00b7 Partnering with relevant industry leaders, regulators, and lawmakers. \r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "The-Microsoft-Approach-to-Compliance-in-the-Cloud.pdf"
+    ],
+    "detailsSection_file_size": [
+        "573.2 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Any supported Operating System\r\n",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows Vista"
+    ],
+    "installInstructionSection": "Download the PDF.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "42553",
+    "downloadPreload": true
+}

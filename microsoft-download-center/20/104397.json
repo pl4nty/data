@@ -1,0 +1,92 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft SQL Server 2022 Release Candidate Pre-Release License Terms",
+    "downloadDescription": "SQL Server 2022 Release Candidate Pre-Release License Terms",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "SQL2022PreReleaseLicense.htm",
+            "url": "https://download.microsoft.com/download/1/a/3/1a34b6a7-0dd7-4803-9887-dbc9b5f2fb78/SQL2022PreReleaseLicense.htm",
+            "size": "28235",
+            "version": "16.0",
+            "datePublished": "6/15/2024 4:26:08 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "ko-kr",
+            "name": "Korean"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "zh-cn",
+            "name": "Chinese (Simplified)"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "it-it",
+            "name": "Italian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        },
+        {
+            "cultureCode": "pt-br",
+            "name": "Portuguese (Brazil)"
+        },
+        {
+            "cultureCode": "zh-tw",
+            "name": "Chinese (Traditional)"
+        },
+        {
+            "cultureCode": "es-es",
+            "name": "Spanish"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Download the SQL Server 2022 Release Candidate (RC) Pre-Release License Terms",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "16.0",
+    "detailsSection_file_name": [
+        "SQL2022PreReleaseLicense.htm"
+    ],
+    "detailsSection_file_size": [
+        "27.6 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "This file can be opened by any application that supports .htm files",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows 10",
+        "Windows 11",
+        "Linux"
+    ],
+    "installInstructionSection": "Download the file and open with your browser or any application that supports .htm files",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "104397",
+    "downloadPreload": true
+}

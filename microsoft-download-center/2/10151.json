@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "Sharing Data across Microsoft Dynamics CRM Deployments",
+    "downloadDescription": "This release includes two documents, a white paper and a build guide, focused on sharing data across multiple Dynamics CRM organizations.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Sharing_Data_Across_CRM_Deployments_BG.pdf",
+            "url": "https://download.microsoft.com/download/7/a/e/7aee9215-6f4f-4615-a2ca-38e767df1cdc/Sharing_Data_Across_CRM_Deployments_BG.pdf",
+            "size": "1717035",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Sharing_Data_Across_CRM_Deployments_WP.pdf",
+            "url": "https://download.microsoft.com/download/7/a/e/7aee9215-6f4f-4615-a2ca-38e767df1cdc/Sharing_Data_Across_CRM_Deployments_WP.pdf",
+            "size": "804358",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:14:05 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "While using a single CRM instance is probably the simplest way to accommodate the data sharing needs within an organization, using multiple instances of Dynamics CRM may be preferable in a number of scenarios. This release includes two documents, a white paper and a build guide, focused on sharing data across multiple CRM organizations.\r\n\r\nThe white paper provides an overview of the levels of integration available for sharing data across multiple Dynamics CRM organizations, together with details about the techniques that are used for integration at the Application and Data levels, which include Web Services, Web Services-based solutions, Filtered Views, and SQL Server Replication.\r\n\r\nThe build guide explains how to configure the Microsoft Dynamics CRM 4.0 April 2009 VPC base image to enable data sharing between a Publisher organization and multiple Subscriber organizations. The configuration demonstrates how to use Microsoft Dynamics CRM to maintain referential integrity between multiple organizations by leveraging Microsoft SQL Server 2008 transactional replication.\r\n",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Sharing_Data_Across_CRM_Deployments_BG.pdf",
+        "Sharing_Data_Across_CRM_Deployments_WP.pdf"
+    ],
+    "detailsSection_file_size": [
+        "1.6 MB",
+        "785.5 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<br/>\n<b>Additional Requirements</b><br/>\nMicrosoft Dynamics CRM 4.0",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To start the download, click <b>Download</b>, click <b>Go</b>, and then do one of the following:<br />\n<br />\nTo start the installation immediately, click <b>Open</b> or <b>Run this program from its current location</b>.<br />\n<br />\nTo copy the download to your computer for installation at a later time, click <b>Save</b> or <b>Save this program to disk</b>.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "10151",
+    "downloadPreload": true
+}

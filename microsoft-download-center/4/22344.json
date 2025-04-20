@@ -1,0 +1,80 @@
+{
+    "error": "",
+    "downloadTitle": "BizTalk Server Training from Microsoft Customer Service and Support",
+    "downloadDescription": "This set of documents contains training information about BizTalk Server from Microsoft Customer Service and Support.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Learning the New EDI Features of BizTalk Server 2009.docx",
+            "url": "https://download.microsoft.com/download/e/f/d/efd62427-fbdb-4ba3-b52a-f307af075965/Learning the New EDI Features of BizTalk Server 2009.docx",
+            "size": "1032426",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Understanding the New BizTalk Adapter for Oracle E-Business Suite.docx",
+            "url": "https://download.microsoft.com/download/e/f/d/efd62427-fbdb-4ba3-b52a-f307af075965/Understanding the New BizTalk Adapter for Oracle E-Business Suite.docx",
+            "size": "2496919",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "Knowing Deprecated and Removed Features in BizTalk Server 2009.docx",
+            "url": "https://download.microsoft.com/download/e/f/d/efd62427-fbdb-4ba3-b52a-f307af075965/Knowing Deprecated and Removed Features in BizTalk Server 2009.docx",
+            "size": "541826",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        },
+        {
+            "isPrimary": "False",
+            "name": "Understanding the New BizTalk Adapter for SQL Server.docx",
+            "url": "https://download.microsoft.com/download/e/f/d/efd62427-fbdb-4ba3-b52a-f307af075965/Understanding the New BizTalk Adapter for SQL Server.docx",
+            "size": "1244284",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:15:30 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "This set of documents contains training information about BizTalk Server from Microsoft Customer Service and Support.\r\n\r\nDocuments include: <UL><LI>Knowing Deprecated and Removed Features in BizTalk Server 2009</LI><LI> Learning the New EDI Features of BizTalk Server 2009<LI></LI>Understanding the New BizTalk Adapter for Oracle E-Business Suite</LI><LI>Understanding the New BizTalk Adapter for SQL Server</LI></UL>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Learning the New EDI Features of BizTalk Server 2009.docx",
+        "Understanding the New BizTalk Adapter for Oracle E-Business Suite.docx",
+        "Knowing Deprecated and Removed Features in BizTalk Server 2009.docx",
+        "Understanding the New BizTalk Adapter for SQL Server.docx"
+    ],
+    "detailsSection_file_size": [
+        "1008.2 KB",
+        "2.4 MB",
+        "529.1 KB",
+        "1.2 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows Server 2008, Windows Server 2003, Windows Vista, Windows XP",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2003",
+        "Windows Server 2008",
+        "Windows Vista",
+        "Windows XP"
+    ],
+    "installInstructionSection": "To start the download, click the <b>Download</b> button next to the document you want.\r\n\r\n",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "22344",
+    "downloadPreload": true
+}

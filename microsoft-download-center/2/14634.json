@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Test Lab Guide: Demonstrate Forefront UAG SP1 RC DirectAccess with Secure Socket Tunneling Protocol (SSTP) and Remote Desktop Gateway (RDG)",
+    "downloadDescription": "Step by step instructions on how to configure a combined DirectAccess, SSTP VPN and Remote Desktop Gateway Server in a Test Lab",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "TestLabGuide_DemonstrateUAG_DA_SSTP-RDG-SP1-RC-b.docx",
+            "url": "https://download.microsoft.com/download/b/3/8/b38391ba-0887-44e9-adb9-5c596cbef4ef/TestLabGuide_DemonstrateUAG_DA_SSTP-RDG-SP1-RC-b.docx",
+            "size": "391971",
+            "version": "1.0",
+            "datePublished": "7/15/2024 3:11:07 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "DirectAccess is a new feature in the Windows\u00ae 7 and Windows Server\u00ae 2008 R2 operating systems that enables remote users to securely access intranet shared folders, Web sites, and applications without connecting to a virtual private network (VPN). Forefront Unified Access Gateway (UAG) 2010 SP1 RC extends the Windows DirectAccess value by adding support for highly available DirectAccess arrays and integrated support for IPv4 intranet resources.  This paper contains step-by-step instructions for extending the Test Lab Guide: Demonstrate Forefront UAG SP1 RC DirectAccess with Secure Socket Tunneling Protocol (SSTP) to demonstrate a combined DirectAccess, SSTP VPN and Remote Desktop Gateway server role.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "TestLabGuide_DemonstrateUAG_DA_SSTP-RDG-SP1-RC-b.docx"
+    ],
+    "detailsSection_file_size": [
+        "382.8 KB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Microsoft Word.",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Click Download.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "14634",
+    "downloadPreload": true
+}

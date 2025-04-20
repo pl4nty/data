@@ -1,0 +1,47 @@
+{
+    "error": "",
+    "downloadTitle": "Windows 10 in cloud configuration OneDrive Known Folder Move and built-in app removal script",
+    "downloadDescription": "Use this script when deploying Windows 10 in cloud configuration to simplify the end user experience by configuring user data to be stored in OneDrive and removing built-in Windows apps",
+    "downloadFile": [
+        {
+            "isPrimary": "True",
+            "name": "Windows10cloudconfig-KFM-and-app-removal.zip",
+            "url": "https://download.microsoft.com/download/8/0/e/80eedf1c-c79c-49f1-bbc3-7c39260e3bda/Windows10cloudconfig-KFM-and-app-removal.zip",
+            "size": "10295",
+            "version": "1.0",
+            "datePublished": "6/15/2024 4:56:22 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "Windows 10 in cloud configuration simplifies devices and device management with a Microsoft-recommended way to optimize your Windows 10 devices for the cloud. This script is provided by Microsoft to help IT pros deploy cloud config using Microsoft Endpoint Manager, as defined in the Windows 10 in cloud configuration Overview and Setup Guide. \r\n\r\nLearn more about cloud config and download the guide at at https://aka.ms/cloud-config.",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1.0",
+    "detailsSection_file_name": [
+        "Windows10cloudconfig-KFM-and-app-removal.zip"
+    ],
+    "detailsSection_file_size": [
+        "10.1 KB"
+    ],
+    "detailsSection_file_date": "6/15/2024",
+    "systemRequirementsSection": "Windows 10 Pro, Enterprise, Education",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10"
+    ],
+    "installInstructionSection": "Follow the instructions in the Windows 10 in cloud configuration Overview and Setup Guide to deploy this script using Microsoft Endpoint Manager. Learn more about cloud config and download the guide at at https://aka.ms/cloud-config.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "102639",
+    "downloadPreload": true
+}

@@ -1,0 +1,48 @@
+{
+    "error": "",
+    "downloadTitle": "Certification Test Tool for Azure SQL Database",
+    "downloadDescription": "Use the Certification Test Tool for Azure SQL Database to achieve logo certification",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Microsoft Azure Certification Test Tool Preview for Azure SQL Database.msi",
+            "url": "https://download.microsoft.com/download/3/3/f/33f903f9-93c8-4414-8a8c-992ca1f01879/Microsoft Azure Certification Test Tool Preview for Azure SQL Database.msi",
+            "size": "2422784",
+            "version": "0.9",
+            "datePublished": "7/15/2024 4:08:57 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Certification Test Tool for Azure SQL Database is designed to help test your applications for compatibility with Microsoft Azure SQL Database. Use this tool to achieve Application Logo Certification and qualify testing status as part of the Microsoft Partner Network Competency program. The Test Tool is a wizard style tool that execute validation of technical requirements described in the Technical Requirements document. ",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "0.9",
+    "detailsSection_file_name": [
+        "Microsoft Azure Certification Test Tool Preview for Azure SQL Database.msi"
+    ],
+    "detailsSection_file_size": [
+        "2.3 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Windows",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 10",
+        "Windows 8.1"
+    ],
+    "installInstructionSection": "Install the test tool, start and follow instructions from the the wizard style tool.",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "51489",
+    "downloadPreload": true
+}

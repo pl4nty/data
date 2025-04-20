@@ -1,0 +1,108 @@
+{
+    "error": "",
+    "downloadTitle": "Administrative Templates (.admx) for Windows 8.1 Update and Windows Server 2012 R2 Update",
+    "downloadDescription": "This page provides the complete set of Administrative Template (.admx) files for Windows 8.1 Update and Windows Server 2012 R2 Update",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "Windows8.1-Update-ADMX.msi",
+            "url": "https://download.microsoft.com/download/d/f/e/dfe17da4-887e-4eec-a83f-99a8229ea9d4/Windows8.1-Update-ADMX.msi",
+            "size": "7075840",
+            "version": "2.0",
+            "datePublished": "7/15/2024 3:53:24 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "fi-fi",
+            "name": "Finnish"
+        },
+        {
+            "cultureCode": "ru-ru",
+            "name": "Russian"
+        },
+        {
+            "cultureCode": "he-il",
+            "name": "Hebrew"
+        },
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "gl-es",
+            "name": "Galician"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "et-ee",
+            "name": "Estonian"
+        },
+        {
+            "cultureCode": "pt-pt",
+            "name": "Portuguese (Portugal)"
+        },
+        {
+            "cultureCode": "hr-hr",
+            "name": "Croatian"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "Group Policy tools use Administrative template files to populate policy settings in the user interface. This allows administrators to manage registry-based policy settings.<br />This download \nincludes the Administrative templates released for Windows Server 2012 R2 Update, in the following languages:<br />\n<ul>\n<li>de-DE German - Germany</li>\n<li>en-US English - United States</li>\n<li>es-ES Spanish - Spain</li>\n<li>et-EE Estonian - Estonia</li>\n<li>fi-FI Finnish - Finland</li>\n<li>fr-FR French - France</li>\n<li>he-IL Hebrew - Israel</li>\n<li>hr-HR Croatian - Croatia</li> \n<li>ja-JP Japanese - Japan</li>\n<li>pt-PT Portuguese - Portugal</li>\n<li>ru-RU Russian - Russia</li>\n<li>sv-SE Swedish - Sweden</li>\n</ul>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "2.0",
+    "detailsSection_file_name": [
+        "Windows8.1-Update-ADMX.msi"
+    ],
+    "detailsSection_file_size": [
+        "6.7 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<ul><br />\n<li>User rights to run the Group Policy Management Editor (gpme.msc) or the Group Policy Object Editor (gpedit.msc).</li><br />\n</ul>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows 7",
+        "Windows 8",
+        "Windows 8.1",
+        "Windows Server 2008",
+        "Windows Server 2008 R2",
+        "Windows Server 2012",
+        "Windows Server 2012 Essentials",
+        "Windows Server 2012 R2",
+        "Windows Server 2012 R2 Essentials "
+    ],
+    "installInstructionSection": "To download the .msi file that contains the .admx files:<br />\n<ol><br />\n<li>Click the <b>download</b> button</li>.<br />\n<li>In the File Download dialog box, click <b>Save</b>.</li><br />\n<li>In the Save As dialog box, browse to the directory on your computer to which you want to save the .msi file.</li><br />\n<li>To start downloading the .msi file, click <b>Save</b>.</li><br />\n</ol><br />\n<br />",
+    "relatedResourcesSection": [
+        {
+            "title": "administrative Templates (.admx) for Windows 8.1 and Windows Server 2012 R2",
+            "url": "http://www.microsoft.com/en-in/download/details.aspx?id=41193"
+        },
+        {
+            "title": "what's New in Group Policy in Windows Server 2012 R2",
+            "url": "http://technet.microsoft.com/en-us/library/dn265973.aspx"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "43413",
+    "downloadPreload": true
+}

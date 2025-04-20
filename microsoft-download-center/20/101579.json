@@ -1,0 +1,61 @@
+{
+    "error": "",
+    "downloadTitle": "System Center Service Manager Connector 4.1 for Exchange",
+    "downloadDescription": "The System Center Service Manager \u2013 Exchange Connector 4.1 connects Service Manager to Exchange Server for processing incoming emails related to incidents and change requests.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "SystemCenterServiceManager_EC4.1_Deployment_Guide.pdf",
+            "url": "https://download.microsoft.com/download/b/9/a/b9a1d72b-ed86-4f3d-b136-79d66a035a3f/SystemCenterServiceManager_EC4.1_Deployment_Guide.pdf",
+            "size": "1190483",
+            "version": "4.1",
+            "datePublished": "7/15/2024 5:03:44 AM"
+        },
+        {
+            "isPrimary": "True",
+            "name": "System_Center_Service_Manager_Connector_4.1_for_Exchange.exe",
+            "url": "https://download.microsoft.com/download/b/9/a/b9a1d72b-ed86-4f3d-b136-79d66a035a3f/System_Center_Service_Manager_Connector_4.1_for_Exchange.exe",
+            "size": "1072504",
+            "version": "4.1",
+            "datePublished": "7/15/2024 5:03:44 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        }
+    ],
+    "detailsSection": "The Exchange Connector connects Service Manager to Exchange Server for processing incoming emails related to work items. Once the Exchange Connector has been configured to monitor Exchange mailboxes, you can use it to create and update work items based on templates specified by the administrator. By specifying special keywords to look for in the incoming emails, you can configure the Exchange Connector to perform actions like approving or rejecting review activities or enable activity implementers to mark activities assigned to them as completed.<br/>\r\n<br/>\r\nSystem Center Service Manager Connector 4.1 for Exchange contains fixes for various issues which were reported in previous versions.<br/>\r\n<br/>\r\n<b>List of Features & issues which are now fixed</b> -\r\n<ul>\r\n<li>Whenever a Manual activity task is completed, Exchange Connector will update the closing time to the current time of closing, which was not set earlier.</li>\r\n<li>With this fix, when a customer sends a request to close an incident which is already closed, the incident will remain closed which was not happening earlier.</li>\r\n<li>This release contains all the previous fixes and adds support to <b>OAuth 2.0 based authentication</b> for EWS to connect to Exchange Online.</li>\r\n<li>Added support for OAuth in GCC tenants.</li>\r\n</ul>\r\n<br/>\r\n<b>Release History</b>:<br/>\r\n07/2011 - Version 2.0 (supported with System Center Service Manager 2010)<br/>\r\n04/2013 - Version 3.0<br/>\r\n10/2013 - Version 3.0 re-release (supported with System Center Service Manager 2012 SP1)<br/>\r\n11/2014 - Version 3.1<br/>\r\n12/2018 - Version 3.1 re-release<br/>\r\n08/2020 - Version 4.0 release<br/>\r\n05/2021 - Version 4.1 release<br/>\r\n<br/>",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/4558753",
+        "name": "4558753"
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "4.1",
+    "detailsSection_file_name": [
+        "SystemCenterServiceManager_EC4.1_Deployment_Guide.pdf",
+        "System_Center_Service_Manager_Connector_4.1_for_Exchange.exe"
+    ],
+    "detailsSection_file_size": [
+        "1.1 MB",
+        "1.0 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "<b>Requirements</b><br/>\r\nMicrosoft System Center 2016 Service Manager, Microsoft System Center Service Manager 2019<br/>\r\nMicrosoft Exchange Server 2010 SP1, Microsoft Exchange Server 2013, Microsoft Exchange Server 2016 (With Service Manager 2016), Microsoft Office 365<br/>",
+    "systemRequirementsSection_supportedOS": [
+        "Windows Server 2012 R2",
+        "Windows Server 2012",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2008 R2"
+    ],
+    "installInstructionSection": "Download the following files:\r\n<ul>\r\n<li>System_Center_Service_Manager_Connector_4.1_for_Exchange.exe</li>\r\n<li>SystemCenterServiceManager_EC4.1_Deployment_Guide.pdf</li>\r\n</ul>\r\n<br/>\r\nRead the SystemCenterServiceManager_EC4.1_Deployment_Guide.pdf for installation instructions<br/>\r\n<br/><br/>",
+    "relatedResourcesSection": [],
+    "locale": "en-us",
+    "detailsId": "101579",
+    "downloadPreload": true
+}

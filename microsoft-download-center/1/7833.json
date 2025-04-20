@@ -1,0 +1,69 @@
+{
+    "error": "",
+    "downloadTitle": "Microsoft Virtual PC for Mac Version 7.0.2 Update",
+    "downloadDescription": "This update is recommended for all users who are using Virtual PC for Mac Version 7.0 or 7.0.1. This update improves overall stability of Virtual PC and allows Virtual PC to run on Mac OS X Version 10.4.1.",
+    "downloadFile": [
+        {
+            "isPrimary": "False",
+            "name": "VirtualPC702.dmg",
+            "url": "https://download.microsoft.com/download/f/5/2/f5250cb3-0f76-4750-a463-612ddbffd200/VirtualPC702.dmg",
+            "size": "17576820",
+            "version": "1",
+            "datePublished": "7/15/2024 3:14:47 AM"
+        }
+    ],
+    "localeDropdown": [
+        {
+            "cultureCode": "en-us",
+            "name": "English"
+        },
+        {
+            "cultureCode": "fr-fr",
+            "name": "French"
+        },
+        {
+            "cultureCode": "de-de",
+            "name": "German"
+        },
+        {
+            "cultureCode": "sv-se",
+            "name": "Swedish"
+        },
+        {
+            "cultureCode": "ja-jp",
+            "name": "Japanese"
+        }
+    ],
+    "detailsSection": "This update is recommended for all users who are using Virtual PC for Mac Version 7.0 or 7.0.1. This update improves overall stability of Virtual PC and allows Virtual PC to run on Mac OS X Version 10.4.1.<br />\n<b>Applies to:</b> Virtual PC for Mac Version 7.0 and 7.0.1",
+    "detailsSection_kbArticles": {
+        "link": "http://support.microsoft.com/kb/",
+        "name": ""
+    },
+    "detailsSection_securityBulletins": {
+        "link": "http://technet.microsoft.com/en-us/security/Bulletin/",
+        "name": ""
+    },
+    "detailsSection_file_version": "1",
+    "detailsSection_file_name": [
+        "VirtualPC702.dmg"
+    ],
+    "detailsSection_file_size": [
+        "16.8 MB"
+    ],
+    "detailsSection_file_date": "7/15/2024",
+    "systemRequirementsSection": "Before you can install Virtual PC for Mac Version 7.0.2, one or more of the following programs must be installed on your computer: Virtual PC for Mac Version 7.0 or 7.0.1 <br /><br />\nIn addition, your computer must meet the following minimum requirements:<br />\n<b>Processor</b>: 700 MHz native PowerPC G3, G4, or G5 processor<br />\n<b>Operating</b> <b>system</b>: Mac OS X Version 10.2.8; Mac OS X  Version 10.3; Mac OS X Version 10.4.1. G5 processor requires Mac OS X Version 10.3 or 10.4.1 to run Virtual PC for Mac.<br />\n<b>Memory</b>: 512 MB of RAM<br />\n<b>Hard disk</b>: 70 MB of available hard disk space is temporarily required to complete installation; after installation, the program requires 50&nbsp;MB of hard disk space<br />\n<b>Internet access</b>: Internet connection through either an Internet service provider (ISP) or a network. Internet access might require a fee to an ISP; local or long-distance telephone charges might also apply.<br /><br />\n<b>Tip</b>&nbsp;&nbsp; If you're not sure whether your computer meets these requirements, see the System Profiler program included with the Mac OS. You can start System Profiler by double-clicking its program file in the Applications/Utilities folder on your hard disk.",
+    "systemRequirementsSection_supportedOS": [
+        "Apple Mac OS X"
+    ],
+    "installInstructionSection": "<b>Before you install Virtual PC for Mac Version 7.0.2 Update</b><br />\n<ul>\n  <li>Quit any other programs that are running, including virus-protection programs, because they might interfere with installation.</li>\n   <li><b>Important</b>&nbsp;&nbsp; Make sure that your Mac&nbsp;OS&nbsp;X user account has administrator privileges. (You must know both the user name and password for this account.) To check your user account for administrator privileges, on the <b> Apple</b> menu, click <b> System Preferences</b>, and then click <b>Accounts</b>. User accounts with administrator privileges have the word \"Admin\" beside them. For more information about Admin accounts, see Mac Help.</li></ul>\n<br />\n<b>To install Virtual PC for Mac Version 7.0.2 Update</b><ol><li>Print this page if you want to use it as a reference when you are offline.</li>\n  <li>Make sure your computer meets the minimum system requirements.</li>\n  <li>In the preceding table, click the language version you want.</li>\n  <li>Follow the instructions on the screen to save the file to your hard disk.<br />\n  If you are using Safari, the file is downloaded to the desktop unless you specified a different folder in the <b>Preferences</b> dialog box of Safari. (To check your preferences, on the <b>Safari</b> menu, click <b>Preferences,</b> and then click <b>General</b>.)<br />\n  If you are using Internet Explorer, the Download Manager saves the file to the desktop unless you specified a different folder in the <b>Preferences</b> dialog box of Internet Explorer. (To check your preferences, on the <b> Explorer</b> menu, click <b>Preferences</b>, and then click <b>Download Options</b> in the left pane).</li>\n  <li>On your hard disk, double-click the file that you downloaded in step&nbsp;4 to open the disk image.<br />\n  Depending on the Web browser that you are currently using, this step might be performed for you automatically.</li>\n  <li>Double-click <b>Update Virtual PC</b> to start the update. </li>\n <li>Follow the on-screen instructions.</li>\n</ol>\n<b>To remove Virtual PC for Mac Version 7.0.2 Update</b><br />\nVirtual PC for Mac Version 7.0.2 update does not include an uninstall feature.",
+    "additionalInformationSection": "For more information about Virtual PC for Mac Version 7.0.2, after you install it, see Virtual PC Help.<br /><br />\nIf you have technical questions or problems downloading or using Virtual PC for Mac Version 7.0.2, visit the Microsoft <a href=\"http://www.microsoft.com/mac/support.aspx\" target=\"_blank\">Support</a> page at www.microsoft.com/mac/support to learn about the support options that are available to you.",
+    "relatedResourcesSection": [
+        {
+            "title": "more information about Virtual PC for Mac",
+            "url": "http://www.microsoft.com/mac/products/virtualpc/virtualpc.aspx?pid=virtualpc"
+        }
+    ],
+    "locale": "en-us",
+    "detailsId": "7833",
+    "downloadPreload": true
+}
